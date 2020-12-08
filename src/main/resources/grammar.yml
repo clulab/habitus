@@ -1,0 +1,8 @@
+rules:
+    - name: example-rule
+      label: EatingEvent
+      priority: 1
+      pattern: |
+          trigger = [lemma=eat]
+          theme: ^food = >dobj
+          tool: ^tool = >nmod_with >conj?
