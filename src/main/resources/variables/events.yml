@@ -1,0 +1,31 @@
+
+#
+# VARIABLE is VALUE
+#
+- name: ${label}-cop-1
+  priority: ${rulepriority}
+  label: ${label}
+  type: token
+  pattern: |
+    @variable:Variable (?<trigger> [lemma=be]) [tag=IN]? @value:Value
+
+#
+# direct object of verb: "decrease PARAM"
+#
+- name: ${label}-verb-2
+  priority: ${rulepriority}
+  label: ${label}
+  pattern: |
+    trigger = [lemma=/increase/ & tag=/^V/]
+    theme:Param = /dobj|prep_for/ (nn|amod)?    
+
+# 
+# nominal modifiers: "increase of|in PARAM"
+#    
+- name: ${label}-noun-1
+  priority: ${rulepriority}
+  label: ${label}
+  pattern: |
+    trigger = [lemma=/increase/ & tag=/^N/]
+    theme:Param = /prep_of|prep_in|prep_for/ (nn|amod)?
+

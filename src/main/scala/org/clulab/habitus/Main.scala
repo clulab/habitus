@@ -22,7 +22,7 @@ object Main extends App {
   val mentions = extractorEngine.extractMentions(extractors)
   // post-processing step (filtering, linking, ???)
   // TODO
-  val json = JsonSerializer.asJsonString(mentions)
-  mentionsFile.writeString(json)
+  //val json = JsonSerializer.asJsonString(mentions)
+  //mentionsFile.writeString(json)
 
 }

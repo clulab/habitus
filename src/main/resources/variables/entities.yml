@@ -1,0 +1,19 @@
+
+#
+# rules for the basic RAP parameters
+#
+
+- name: variable-1
+  priority: ${rulepriority}
+  label: Variable
+  type: token
+  pattern: |
+    /(?i)(planting|sowing)/ /date|season/
+
+- name: value-1
+  priority: ${rulepriority}
+  label: Value
+  type: token
+  pattern: |
+    [entity='DATE'] [entity='DATE']*
+
