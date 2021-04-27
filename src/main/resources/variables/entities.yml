@@ -1,7 +1,14 @@
 
 #
-# rules for the basic RAP parameters
+# rules for the variables and values
 #
+
+- name: value-from-daterange
+  priority: ${rulepriority}
+  label: Value
+  type: token # TODO: add an action to remove the inner Value for the DATE
+  pattern: |
+    @range:DateRange
 
 - name: variable-1
   priority: ${rulepriority}

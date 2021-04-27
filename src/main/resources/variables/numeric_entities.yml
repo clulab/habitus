@@ -1,0 +1,12 @@
+
+#
+# basic numeric entities that are needed for values
+#
+
+- name: numeric-entity-1
+  priority: ${rulepriority}
+  label: DateRange
+  type: token
+  pattern: |
+    /(?i)(from|between)/? [entity='NUMBER']+ /(?i)(to|and)/ [entity='DATE']+
+
