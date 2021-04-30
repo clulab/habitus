@@ -22,3 +22,20 @@
     variable:Variable = /nsubj/
     value:Value = /nmod_from/
 
+
+- name: ${label}-occur-1
+  priority: ${rulepriority}
+  label: ${label}
+  pattern: |
+    trigger = [lemma=/occur/ & tag=/^V/]
+    variable:Variable = /nsubj/
+    value:Value = /nmod_from/
+
+- name: ${label}-with-1
+  priority: ${rulepriority}
+  label: ${label}
+  pattern: |
+    trigger = [lemma=/in/ & tag=/^IN/]
+    variable:Variable = /nsubj/
+    value:Value = /nmod_from/
+
