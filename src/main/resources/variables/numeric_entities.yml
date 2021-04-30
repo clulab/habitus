@@ -3,16 +3,24 @@
 # basic numeric entities that are needed for values
 #
 
+
 - name: numeric-entity-1
   priority: ${rulepriority}
   label: DateRange
   type: token
   pattern: |
-    /(?i)(from|between)/? [entity='NUMBER']+ /(?i)(to|and)/? [entity='DATE']+
+    /(?i)(from|between)/? [entity='DATE']+ /(?i)(to|and)/ [entity='DATE']+
 
 - name: numeric-entity-2
   priority: ${rulepriority}
   label: DateRange
   type: token
   pattern: |
-    /(?i)(from|between)/? [entity='DATE']+ /(?i)(to|and)/ [entity='DATE']+
+    /(?i)(from|between)/? [entity='NUMBER']+ /(?i)(to|and)/? [entity='DATE']+
+
+- name: numeric-entity-3
+  priority: ${rulepriority}
+  label: DateRange
+  type: token
+  pattern: |
+    [word=/\d+\/\d+/] "-" [word=/\d+\/\d+/] 

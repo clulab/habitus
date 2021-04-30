@@ -15,7 +15,7 @@
   label: Variable
   type: token
   pattern: |
-    /(?i)(planting|sowing)/ /date|season|time|timing/
+    /(?i)(planting|sowing|seeding)/ /date|season|time|timing/?
 
 - name: value-1
   priority: ${rulepriority}
