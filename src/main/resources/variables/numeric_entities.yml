@@ -1,6 +1,7 @@
 
 #
 # basic numeric entities that are needed for values
+# this grammar is no longer needed because processors does all this; it is kept for historical purposes
 #
 
 

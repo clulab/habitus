@@ -6,9 +6,16 @@
 - name: value-from-daterange
   priority: ${rulepriority}
   label: Value
-  type: token # TODO: add an action to remove the inner Value for the DATE
+  type: token
   pattern: |
-    @range:DateRange
+    [entity='B-DATE-RANGE'] [entity='I-DATE-RANGE']*
+
+- name: value-from-date
+  priority: ${rulepriority}
+  label: Value
+  type: token
+  pattern: |
+    [entity='B-DATE'] [entity='I-DATE']*
 
 - name: variable-1
   priority: ${rulepriority}
@@ -17,10 +24,6 @@
   pattern: |
     /(?i)(planting|sowing|seeding)/ /date|season|time|timing/?
 
-- name: value-1
-  priority: ${rulepriority}
-  label: Value
-  type: token
-  pattern: |
-    [entity='DATE'] [entity='DATE']*
+
+
 

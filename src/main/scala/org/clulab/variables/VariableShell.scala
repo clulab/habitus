@@ -2,7 +2,9 @@ package org.clulab.variables
 
 import jline.console.ConsoleReader
 import jline.console.history.FileHistory
+import org.clulab.dynet.Utils
 import org.clulab.odin.{ExtractorEngine, Mention}
+import org.clulab.processors.clu.CluProcessor
 import org.clulab.processors.{Document, Processor}
 import org.clulab.processors.fastnlp.FastNLPProcessor
 import org.clulab.utils._
@@ -34,7 +36,8 @@ object VariableShell extends App {
   )
 
   // create the processor
-  val fast: Processor = new FastNLPProcessor()
+  Utils.initializeDyNet()
+  val processor: Processor = new CluProcessor()
 
   // read rules from general-rules.yml file in resources
   val source = io.Source.fromURL(getClass.getResource("/variables/master.yml"))
@@ -44,7 +47,7 @@ object VariableShell extends App {
   // creates an extractor engine using the rules and the default actions
   val extractor = ExtractorEngine(rules)
 
-  var proc = fast
+  var proc = processor
   reader.setPrompt("(Shell)>>> ")
   println("\nWelcome to the VariableShell!")
   printCommands()
@@ -58,7 +61,7 @@ object VariableShell extends App {
 
       case ":reload" =>
         println("Not supported yet.")
-      // TODO
+        // TODO
 
       case ":exit" | null =>
         running = false
@@ -92,6 +95,8 @@ object VariableShell extends App {
 
     // pretty display
     prettyDisplay(mentions, doc)
+
+    // TODO: add synthesis code here!
   }
 
   def prettyDisplay(mentions:Seq[Mention], doc:Document): Unit = {

@@ -4,8 +4,6 @@
 #
 
 taxonomy:
-  - NumericEntity:
-    - DateRange
   - Entity:
     - Variable
     - Value
@@ -13,11 +11,6 @@ taxonomy:
     - Assignment
 
 rules:
-  - import: variables/numeric_entities.yml
-    vars:
-      # We need some basic numeric entities such as date ranges before the actual entities
-      rulepriority: "1"
-
   - import: variables/entities.yml
     vars:
       # We need our entities before we can match events

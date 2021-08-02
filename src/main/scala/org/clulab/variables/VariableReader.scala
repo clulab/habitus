@@ -1,8 +1,8 @@
 package org.clulab.variables
 
 import org.clulab.odin.ExtractorEngine
+import org.clulab.processors.clu.CluProcessor
 import org.clulab.processors.fastnlp.FastNLPProcessor
-
 import org.clulab.utils._
 
 class VariableReader {
@@ -11,7 +11,7 @@ class VariableReader {
 
 object VariableReader {
   def main(args: Array[String]): Unit = {
-    val proc = new FastNLPProcessor()
+    val proc = new CluProcessor()
     val source = io.Source.fromURL(getClass.getResource("/variables/master.yml"))
     val rules = source.mkString
     source.close()
