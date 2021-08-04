@@ -1,26 +1,33 @@
 package org.clulab.variables
 
-import org.clulab.odin.ExtractorEngine
-import org.clulab.processors.clu.CluProcessor
-import org.clulab.processors.fastnlp.FastNLPProcessor
-import org.clulab.utils._
-
-class VariableReader {
-
-}
+import org.clulab.utils.{FileUtils, StringUtils, displayMentions}
 
 object VariableReader {
-  def main(args: Array[String]): Unit = {
-    val proc = new CluProcessor()
-    val source = io.Source.fromURL(getClass.getResource("/variables/master.yml"))
-    val rules = source.mkString
-    source.close()
-    val extractor = ExtractorEngine(rules)
+  var DEBUG = true
 
-    val text = "Sowing season is in July."
-    val doc = proc.annotate(text)
-    val mentions = extractor.extractFrom(doc)
-    println(s"Found ${mentions.size} mentions.")
-    displayMentions(mentions, doc)
+  def main(args: Array[String]): Unit = {
+    val props = StringUtils.argsToProperties(args)
+
+    val inputDir = props.getProperty("in")
+    assert(inputDir != null)
+    val outputDir = props.getProperty("out")
+    assert(outputDir != null)
+
+    val vp = VariableProcessor()
+    for(file <- FileUtils.findFiles(inputDir, ".txt")) {
+      val text = FileUtils.getTextFromFile(file)
+      val (doc, mentions) = vp.parse(text)
+
+      //
+      // debugging output
+      //
+      if(DEBUG) {
+        println(s"Parsing text:\n$text")
+        println("Found mentions of variable assignments:")
+        displayMentions(mentions, doc)
+      }
+
+      // TODO: normalize and save in TSV format here
+    }
   }
 }

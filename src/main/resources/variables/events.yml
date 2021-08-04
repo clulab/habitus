@@ -22,8 +22,8 @@
     (?<trigger> [lemma=with])? @variable:Variable (@value:Value)+
 
 #
-# VARIABLE ranged|occurred VALUE and VALUE
-# This is a syntactic pattern. Try to use syntactic rules when you can. They generalize better!
+# VARIABLE ranged|occurred from|between VALUE and VALUE
+# This is a syntactic/semantic pattern. Try to use such rules when you can. They generalize better!
 #
 - name: ${label}-range-1
   priority: ${rulepriority}

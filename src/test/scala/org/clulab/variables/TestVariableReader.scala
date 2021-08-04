@@ -1,8 +1,8 @@
 package org.clulab.variables
 
 import org.clulab.odin.{ExtractorEngine, Mention}
+import org.clulab.processors.clu.CluProcessor
 import org.clulab.processors.fastnlp.FastNLPProcessor
-import org.clulab.variables.VariableReader.getClass
 import org.scalatest.{FlatSpec, Matchers}
 
 //
@@ -10,18 +10,13 @@ import org.scalatest.{FlatSpec, Matchers}
 //
 
 class TestVariableReader extends FlatSpec with Matchers {
+  val vp = VariableProcessor()
+
   // the Clu parser breaks on this one, but the SRL works fine!
   val sent1 = "Farmers’ sowing dates ranged from 14 to 31 July for the WS and from 3 to 11 March for the DS."
 
-  val proc = new FastNLPProcessor()
-  val source = io.Source.fromURL(getClass.getResource("/variables/master.yml"))
-  val rules = source.mkString
-  source.close()
-  val extractor = ExtractorEngine(rules)
-
   def getMentions(text: String): Seq[Mention] = {
-    val doc = proc.annotate(text)
-    val mentions = extractor.extractFrom(doc)
+    val (_, mentions) = vp.parse(text)
     mentions
   }
 
