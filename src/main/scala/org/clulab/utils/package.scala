@@ -47,6 +47,11 @@ package object utils {
     mention match {
       case tb: TextBoundMention =>
         println(s"\t${tb.labels.mkString(", ")} => ${tb.text}")
+        val norms = mention.sentenceObj.norms
+        if(norms.nonEmpty) {
+          val norm = norms.get(mention.tokenInterval.start)
+          println(s"\tNorm => $norm")
+        }
       case em: EventMention =>
         println(s"\ttrigger => ${em.trigger.text}")
         displayArguments(em)
