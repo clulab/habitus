@@ -10,9 +10,8 @@ import org.scalatest.{FlatSpec, Matchers}
 //
 
 class TestVariableReader extends FlatSpec with Matchers {
-  // the Clu parser breaks on this one...
-  //val sent1 = "Farmers’ sowing dates ranged from 14 to 31 July for the WS and from 3 to 11 March for the DS."
-  val sent1 = "Farmers’ sowing dates ranged from 14 to 31 July and from 3 to 11 March."
+  // the Clu parser breaks on this one, but the SRL works fine!
+  val sent1 = "Farmers’ sowing dates ranged from 14 to 31 July for the WS and from 3 to 11 March for the DS."
 
   val proc = new FastNLPProcessor()
   val source = io.Source.fromURL(getClass.getResource("/variables/master.yml"))

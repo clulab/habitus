@@ -2,7 +2,7 @@ name := "habitus"
 organization := "org.clulab"
 scalaVersion := "2.12.10"
 libraryDependencies ++= {
-  val procVer = "8.4.4"
+  val procVer = "8.4.5-SNAPSHOT"
 
   Seq(
     "org.scalatest" %% "scalatest" % "3.0.5" % "test",

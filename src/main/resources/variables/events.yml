@@ -22,42 +22,15 @@
     (?<trigger> [lemma=with])? @variable:Variable (@value:Value)+
 
 #
-# VARIABLE ranged VALUE and VALUE
+# VARIABLE ranged|occurred VALUE and VALUE
 # This is a syntactic pattern. Try to use syntactic rules when you can. They generalize better!
 #
 - name: ${label}-range-1
   priority: ${rulepriority}
   label: ${label}
+  graph: "hybrid"
   pattern: |
-    trigger = [lemma=/range/ & tag=/^V/]
+    trigger = [lemma=/range|occur/ & tag=/^V/]
     variable:Variable = /nsubj/
-    value:Value = /nmod_from/
-
-- name: ${label}-range-2
-  priority: ${rulepriority}
-  label: ${label}
-  pattern: |
-    trigger = [lemma=/range/ & tag=/^V/]
-    variable:Variable = /nsubj/
-    value:Value = /nmod_between/
-
-#
-# VARIABLE occur VALUE and VALUE
-# This is a syntactic pattern. Try to use syntactic rules when you can. They generalize better!
-#
-- name: ${label}-occur-1
-  priority: ${rulepriority}
-  label: ${label}
-  pattern: |
-    trigger = [lemma=/occur/ & tag=/^V/]
-    variable:Variable = /nsubj/
-    value:Value = /nmod_from/
-
-- name: ${label}-occur-2
-  priority: ${rulepriority}
-  label: ${label}
-  pattern: |
-    trigger = [lemma=/occur/ & tag=/^V/]
-    variable:Variable = /nsubj/
-    value:Value = /nmod_between/
+    value:Value = /nmod_from|nmod_between|Ax_from|Ax_between/
 
