@@ -3,22 +3,29 @@ nitrogen
 Nitrogen
 nitrate
 P
-P2O5
 phosphorus
 Phosphorus
+P205
 phosphate
 K
-K2O
 Potassium 
 potassium
+K2O
+Potash
 Iron
+Ca
 Calcium
-Magnesium 
+Magnesium
+S 
 Sulphur
+Sulfur
 Sodium 
 Manganese
 Zinc
+B
 Boron
+B203
+Borate
 ammonium
 urea
 organic materials
@@ -31,16 +38,24 @@ Liquid manure
 Compost
 Bark
 Ammonium nitrate
+AS
+21-0-0
 Ammonium sulfate
+Ammonium Sulfate
 Ammonium nitrate sulfate
 Anhydrous ammonia
 Urea
+Diammonium Phosphate
 Diammonium phosphate
+18-46-0
 DAP
 Monoammonium phosphate
 MAP
 Calcium nitrate
 calcium nitrate
+DCP
+0-40-0
+Dicalcium Phosphate
 Aqua ammonia
 Urea ammonium nitrate
 Calcium ammonium nitrate
@@ -49,7 +64,10 @@ Single super phosphate
 Triple super phosphate
 TSP
 Liquid phosphoric acid
+Potassium Chloride 
 Potassium chloride
+KCl
+0-0-60
 muriate of potash
 MOP
 Potassium nitrate
@@ -57,12 +75,29 @@ potassium nitrate
 nitrate of potash
 water soluble potash
 Potassium sulfate
+Potassium Sulfate
+KS
+0-0-50
 Urea super granules
 Dolomitic limestone
 Rock phosphate
+Phosphate Rock
+PR 
+Single Superphosphate
+SSP
+0-20-0
+TSP
+Triple Superphosphate
+0-45-0
 Calcitic limestone
 Urea ammonium sulfate
+Urea
+45-0-0 to 46-0-0
 NPK
+Compound
+compound(NPK)
+compound fertilizer 
+compound fertilizer (NPK) 
 UAN
 slow release
 controlled release
