@@ -47,7 +47,7 @@ package object utils {
     mention match {
       case tb: TextBoundMention =>
         println(s"\t${tb.labels.mkString(", ")} => ${tb.text}")
-        tb.norm.foreach {x =>
+        tb.norms.head.foreach {x =>
           println(s"\tNorm => $x")
         }
       case em: EventMention =>
