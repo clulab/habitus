@@ -1,6 +1,6 @@
 package org.clulab.variables
 
-import org.clulab.utils.{FileUtils, StringUtils, outputMentionsToTSV, writeFile}
+import org.clulab.utils.{FileUtils, StringUtils, outputMentionsToTSV}
 
 import java.io._
 
@@ -16,13 +16,24 @@ object VariableReader {
     val output = new File(outputDir).mkdir()
     val vp = VariableProcessor()
     var seqMention = Seq[String]()
-
+    var outputFile = outputDir+"/mentions.tsv"
+    val pw = new PrintWriter(new FileWriter(new File(outputFile)))
     for(file <- FileUtils.findFiles(inputDir, ".txt")) {
       val text = FileUtils.getTextFromFile(file)
+      val filename = file.toString.split("/").last
       val (doc, mentions) = vp.parse(text)
-      seqMention ++= outputMentionsToTSV(mentions, doc, file.toString.split("/").last)
+      println(s"Writing mentions from doc ${filename} to $outputFile")
+      try {
+        outputMentionsToTSV(mentions, doc, filename, pw)
+      } catch {
+        case e: FileNotFoundException => println(s"Couldn't find file: $filename")
+        case e: IOException => println(s"Had an IOException trying to read file: $filename")
+      } finally {
+        // to not overpopulate the memory. Flush findings once for each document.
+        pw.flush()
+      }
     }
-    assert(seqMention.length >= 1)
-    writeFile(outputDir+"/mentions.tsv", seqMention)
+    pw.close()
+
   }
 }

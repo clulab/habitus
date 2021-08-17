@@ -32,53 +32,32 @@ package object utils {
     }
   }
 
-
-  def outputMentionsToTSV(mentions: Seq[Mention], doc: Document, filename: String): Seq[String] = {
+  // extract needed information and write them to tsv in a desired format. Return nothing here!
+  def outputMentionsToTSV(mentions: Seq[Mention], doc: Document, filename: String, pw: PrintWriter): Unit = {
     val mentionsBySentence = mentions groupBy (_.sentence) mapValues (_.sortBy(_.start)) withDefaultValue Nil
-    var seqMention = Seq[String]()
     for ((s, i) <- doc.sentences.zipWithIndex) {
-
-      val sortedMentions = mentionsBySentence(i).sortBy(_.label)
-      val (events, entities) = sortedMentions.partition(_ matches "Event")
-      val (tbs, rels) = entities.partition(_.isInstanceOf[TextBoundMention])
-      val sortedEntities = tbs ++ rels.sortBy(_.label)
-      // start outputing mentions into tsv files in the given output folder
-      sortedEntities.foreach(
-        entity => {
-          seqMention = seqMention :+ s"${convertMentionToString(entity)} ${s.getSentenceText} \t $filename"
-        }
-      )
+      // to keep only mention labelled as Assignment (these labels are associated with .yml files, e.g. Variable, Value)
+      val sortedMentions = mentionsBySentence(i).filter(_.label matches "Assignment")
+      sortedMentions.foreach{
+          // Format to print: variable \t value text \t value norms \t extracting sentence \t document name \n
+          // Since we only focus on the Assignment mention which includes two submentions in the same format called
+          // ``variable`` and ``value`` we access the two through ``arguments`` attribute of the Mention class.
+          m => pw.println(s"${m.arguments("variable").head.text}\t${m.arguments("value").head.text}\t${m.norms.
+            filter(_.length > 2).get(2)}\t${s.getSentenceText}\t$filename")
+          println(m.norms)
+      }
     }
-    return seqMention
   }
 
 
   def writeFile(filename: String, lines: Seq[String]): Unit = {
     val file = new File(filename)
-    println(s"Wriing mentions to $file")
+    println(s"Writing mentions to $file")
     val bw = new BufferedWriter(new FileWriter(file))
     for (line <- lines) {
       bw.write(line+"\n")
     }
     bw.close()
-  }
-
-
-  def convertMentionToString(mention: Mention): String = {
-    val boundary = "\t"
-    var mentionStr = ""
-    mentionStr += s"${mention.text}" + boundary // add the variable of a mention
-    mention match {
-      case tb: TextBoundMention =>
-        tb.norms.head.foreach { x =>
-          mentionStr += s"$x"
-        }
-      case em: EventMention =>
-        mentionStr += s"${em.trigger.text}"
-      case _ => ()
-    }
-    mentionStr += s"$boundary"
-    return mentionStr
   }
 
 
