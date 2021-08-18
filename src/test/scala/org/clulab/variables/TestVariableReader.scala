@@ -25,6 +25,11 @@ class TestVariableReader extends FlatSpec with Matchers {
 
     mentions.filter(_.label matches "Assignment") should have size (2)
     // TODO: make sure they have the right arguments (see TestActivationsEvents for examples)
+  }
 
+  val sent2 = "Sown cultivar and areaJaya: 15.0 haJaya: 27.5 haJaya: 26.6 haSahel 202: 27.5 haSahel 202: 22.5 haSahel 108: 12.5 haSahel 108: 0.9 haJaya: 5.0 haWeedingtype and rate2 l 2-4D ha–1+ 4 l Propanil ha–12 l 2-4D ha–1+ 4 l Propanil ha–1manual2 l 2-4D ha–1+ 4 l Propanil ha–12 l 2-4D ha–1+ 4 l Propanil"
+  sent2 should "recognize 4 l"  in {
+    val mentions = getMentions(sent2)
+    mentions.filter(_.label matches "Assignment") should have size (3)
   }
 }
