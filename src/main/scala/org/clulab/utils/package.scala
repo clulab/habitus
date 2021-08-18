@@ -55,17 +55,6 @@ package object utils {
   }
 
 
-  def writeFile(filename: String, lines: Seq[String]): Unit = {
-    val file = new File(filename)
-    println(s"Writing mentions to $file")
-    val bw = new BufferedWriter(new FileWriter(file))
-    for (line <- lines) {
-      bw.write(line+"\n")
-    }
-    bw.close()
-  }
-
-
   def printSyntacticDependencies(s:Sentence): Unit = {
     if(s.dependencies.isDefined) {
       println(s.dependencies.get.toString)
