@@ -42,9 +42,14 @@ package object utils {
           // Format to print: variable \t value text \t value norms \t extracting sentence \t document name \n
           // Since we only focus on the Assignment mention which includes two submentions in the same format called
           // ``variable`` and ``value`` we access the two through ``arguments`` attribute of the Mention class.
-          m => pw.println(s"${m.arguments("variable").head.text}\t${m.arguments("value").head.text}\t${m.norms.
-            filter(_.length > 2).get(2)}\t${s.getSentenceText}\t$filename")
-          println(m.norms)
+          m => try {
+            pw.println(s"${m.arguments("variable").head.text}\t${m.arguments("value").head.text}\t${m.arguments("value")
+              .head.norms.filter(_.length > 2).get(0)}\t${s.getSentenceText}\t$filename")
+          } catch {
+            case e: NoSuchElementException => pw.println(s"${m.arguments("variable").head.text}\t${m.arguments("value")
+              .head.text}\t!!!!ERROR!!!${m.norms.filter(_.length > 2)}\t${s.getSentenceText}\t$filename")
+          }
+          println(m.arguments("value").head.norms.filter(_.length > 2))
       }
     }
   }

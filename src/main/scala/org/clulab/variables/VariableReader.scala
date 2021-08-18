@@ -23,17 +23,10 @@ object VariableReader {
       val filename = file.toString.split("/").last
       val (doc, mentions) = vp.parse(text)
       println(s"Writing mentions from doc ${filename} to $outputFile")
-      try {
-        outputMentionsToTSV(mentions, doc, filename, pw)
-      } catch {
-        case e: FileNotFoundException => println(s"Couldn't find file: $filename")
-        case e: IOException => println(s"Had an IOException trying to read file: $filename")
-      } finally {
-        // to not overpopulate the memory. Flush findings once for each document.
-        pw.flush()
-      }
+      outputMentionsToTSV(mentions, doc, filename, pw)
+      // to not overpopulate the memory. Flush findings once for each document.
+      pw.flush()
     }
     pw.close()
-
   }
 }
