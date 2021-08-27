@@ -46,9 +46,8 @@ package object utils {
             pw.println(s"${m.arguments("variable").head.text}\t${m.arguments("value").head.text}\t${m.arguments("value")
               .head.norms.filter(_.length > 2).get(0)}\t${s.getSentenceText}\t$filename")
           } catch {
-            case e: NoSuchElementException => println(s"No normalized value found for ${m.arguments("value").head.text} 
-                                                        in sentence ${s.getSentenceText}!")
-            case e: RunTimeException => println(s"Error occurs for sentence: ${s.getSentenceText}")
+            case e: NoSuchElementException => println(s"No normalized value found for ${m.arguments("value").head.text} in sentence ${s.getSentenceText}!")
+            case e: RuntimeException => println(s"Error occurs for sentence: ${s.getSentenceText}")
           }
           println(m.arguments("value").head.norms.filter(_.length > 2))
       }
