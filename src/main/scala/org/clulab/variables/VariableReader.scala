@@ -1,26 +1,32 @@
 package org.clulab.variables
 
-import org.clulab.odin.ExtractorEngine
-import org.clulab.processors.clu.CluProcessor
-import org.clulab.processors.fastnlp.FastNLPProcessor
-import org.clulab.utils._
+import org.clulab.utils.{FileUtils, StringUtils, outputMentionsToTSV}
 
-class VariableReader {
-
-}
+import java.io._
 
 object VariableReader {
-  def main(args: Array[String]): Unit = {
-    val proc = new CluProcessor()
-    val source = io.Source.fromURL(getClass.getResource("/variables/master.yml"))
-    val rules = source.mkString
-    source.close()
-    val extractor = ExtractorEngine(rules)
 
-    val text = "Sowing season is in July."
-    val doc = proc.annotate(text)
-    val mentions = extractor.extractFrom(doc)
-    println(s"Found ${mentions.size} mentions.")
-    displayMentions(mentions, doc)
+  def main(args: Array[String]): Unit = {
+    val props = StringUtils.argsToProperties(args)
+
+    val inputDir = props.getProperty("in")
+    assert(inputDir != null)
+    val outputDir = props.getProperty("out")
+    assert(outputDir != null)
+    val output = new File(outputDir).mkdir()
+    val vp = VariableProcessor()
+    var seqMention = Seq[String]()
+    var outputFile = outputDir+"/mentions.tsv"
+    val pw = new PrintWriter(new FileWriter(new File(outputFile)))
+    for(file <- FileUtils.findFiles(inputDir, ".txt")) {
+      val text = FileUtils.getTextFromFile(file)
+      val filename = file.toString.split("/").last
+      val (doc, mentions) = vp.parse(text)
+      println(s"Writing mentions from doc ${filename} to $outputFile")
+      outputMentionsToTSV(mentions, doc, filename, pw)
+      // to not overpopulate the memory. Flush findings once for each document.
+      pw.flush()
+    }
+    pw.close()
   }
 }

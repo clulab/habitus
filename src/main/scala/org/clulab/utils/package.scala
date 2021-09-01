@@ -2,11 +2,13 @@ package org.clulab
 
 import org.clulab.odin._
 import org.clulab.processors.{Sentence, Document}
+import java.io._
 
 package object utils {
 
   def displayMentions(mentions: Seq[Mention], doc: Document): Unit = {
     val mentionsBySentence = mentions groupBy (_.sentence) mapValues (_.sortBy(_.start)) withDefaultValue Nil
+    println
     for ((s, i) <- doc.sentences.zipWithIndex) {
       println(s"sentence #$i")
       println(s.getSentenceText)
@@ -30,11 +32,35 @@ package object utils {
     }
   }
 
+  // extract needed information and write them to tsv in a desired format. Return nothing here!
+  def outputMentionsToTSV(mentions: Seq[Mention], doc: Document, filename: String, pw: PrintWriter): Unit = {
+    val mentionsBySentence = mentions groupBy (_.sentence) mapValues (_.sortBy(_.start)) withDefaultValue Nil
+    for ((s, i) <- doc.sentences.zipWithIndex) {
+      // to keep only mention labelled as Assignment (these labels are associated with .yml files, e.g. Variable, Value)
+      val sortedMentions = mentionsBySentence(i).filter(_.label matches "Assignment")
+      sortedMentions.foreach{
+          // Format to print: variable \t value text \t value norms \t extracting sentence \t document name \n
+          // Since we only focus on the Assignment mention which includes two submentions in the same format called
+          // ``variable`` and ``value`` we access the two through ``arguments`` attribute of the Mention class.
+          m => try {
+            pw.println(s"${m.arguments("variable").head.text}\t${m.arguments("value").head.text}\t${m.arguments("value")
+              .head.norms.filter(_.length > 2).get(0)}\t${s.getSentenceText}\t$filename")
+          } catch {
+            case e: NoSuchElementException => println(s"No normalized value found for ${m.arguments("value").head.text} in sentence ${s.getSentenceText}!")
+            case e: RuntimeException => println(s"Error occurs for sentence: ${s.getSentenceText}")
+          }
+          println(m.arguments("value").head.norms.filter(_.length > 2))
+      }
+    }
+  }
+
+
   def printSyntacticDependencies(s:Sentence): Unit = {
     if(s.dependencies.isDefined) {
       println(s.dependencies.get.toString)
     }
   }
+
 
   def displayMention(mention: Mention) {
     val boundary = s"\t${"-" * 30}"
@@ -47,6 +73,9 @@ package object utils {
     mention match {
       case tb: TextBoundMention =>
         println(s"\t${tb.labels.mkString(", ")} => ${tb.text}")
+        tb.norms.head.foreach {x =>
+          println(s"\tNorm => $x")
+        }
       case em: EventMention =>
         println(s"\ttrigger => ${em.trigger.text}")
         displayArguments(em)
