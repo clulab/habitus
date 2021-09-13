@@ -6,6 +6,12 @@ import org.clulab.processors.{Document, Processor}
 import org.clulab.processors.clu.CluProcessor
 import org.clulab.sequences.LexiconNER
 
+
+class Context(var location:String, var entity:String, var relativeDist:Int, var count:Int)
+{
+
+}
+
 class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine) {
   def parse(text: String): (Document, Seq[Mention]) = {
 
@@ -16,6 +22,11 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
     val mentions = extractor.extractFrom(doc).sortBy(m => (m.sentence, m.getClass.getSimpleName))
 
     (doc, mentions)
+  }
+
+  def extractContext(doc: Document): Seq[Mention]
+  {
+
   }
 }
 
