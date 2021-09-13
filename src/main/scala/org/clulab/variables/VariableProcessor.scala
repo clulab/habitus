@@ -25,15 +25,16 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
 
   def extractContext(doc: Document): Unit = {
     for ((s, i) <- doc.sentences.zipWithIndex) {
-
       println(s"sentence #$i")
       println(s.getSentenceText)
       println("Entities: " + s.entities.get.mkString(", "))
-      for (e <- s.entities) {
-        for (x <- e) {
-          println(s"value of x is $x")
-          if (x == "B-LOC") {
-            println("found a location called $x")
+      for (es <- s.entities.get) {
+        val bLocIndexes = es.indices.filter(index => es(index) == "B-LOC")
+        println(s"value of blocindexes is $bLocIndexes")
+        for (e <- es) {
+          println(s"value of e is $e")
+          if (e == "B-LOC") {
+            println(s"found a location called $x")
           }
         }
       }
