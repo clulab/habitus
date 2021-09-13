@@ -28,18 +28,15 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
       println(s"sentence #$i")
       println(s.getSentenceText)
       println("Entities: " + s.entities.get.mkString(", "))
+      val bLocIndexes = s.entities.get.indices.filter(index => s.entities.get(index) == "B-LOC")
+      println(s"value of blocindexes is $bLocIndexes")
       for (es <- s.entities.get) {
-        val bLocIndexes = es.indices.filter(index => es(index) == "B-LOC")
-        println(s"value of blocindexes is $bLocIndexes")
-        for (e <- es) {
-          println(s"value of e is $e")
-          if (e == "B-LOC") {
-            println(s"found a location called $x")
+          if (es == "B-LOC") {
+            println(s"found a location called $es")
           }
-        }
+      }
       }
     }
-  }
 }
 
   object VariableProcessor {
