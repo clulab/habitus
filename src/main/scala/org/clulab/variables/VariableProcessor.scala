@@ -23,14 +23,14 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
       (doc, mentions)
   }
 
-  def extractContext(doc: Document): Seq[Mention] = {
+  def extractContext(doc: Document): Unit = {
     for ((s, i) <- doc.sentences.zipWithIndex) {
 
       println(s"sentence #$i")
       println(s.getSentenceText)
       println("Entities: " + s.entities.get.mkString(", "))
       for (e <- s.entities) {
-        println(e.get.mkstring(","))
+        println(s"value of e is $e")
         if (e == "LOC") {
           println("found a location")
         }
