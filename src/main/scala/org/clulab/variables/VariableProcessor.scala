@@ -32,9 +32,9 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
       println(s"value of blocindexes is $bLocIndexes")
       //val lengths = bLocIndexes.map { start => countLocs(start) }
       println("Tokens: " + (s.words(3)))
-      for ((es) <- s.entities.get) {
+      for ((es,ix) <- s.entities.get.zipWithIndex) {
           if (es == "B-LOC") {
-            println(s"found a location called $s.words[ix]")
+            println(s"found a location called $s.words(ix)")
           }
       }
       }
