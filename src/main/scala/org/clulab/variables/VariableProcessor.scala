@@ -27,16 +27,26 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
     for ((s, i) <- doc.sentences.zipWithIndex) {
       println(s"sentence #$i")
       println(s.getSentenceText)
-      println("Entities: " + s.entities.get.mkString(", "))
-      val bLocIndexes = s.entities.get.indices.filter(index => s.entities.get(index) == "B-LOC")
-      println(s"value of blocindexes is $bLocIndexes")
-      for (es <- s.entities.get) {
-          if (es == "B-LOC") {
-            println(s"found a location called $es")
+      val entities = s.entities.get
+
+      def findLocLength(bLocIndex: Int): Int = entities
+        // TODO: This could be made more efficient.
+        .drop(bLocIndex + 1) // Skip over this many.
+        .takeWhile(entity => entity == "I-LOC") // Use these.
+        .size + 1 // See how many there were plus the B-LOC.
+
+      println("Entities: " + entities.mkString(", "))
+      val bLocIndices = entities.indices.filter(index => entities(index) == "B-LOC")
+      val locLengths = bLocIndices.map(bLocIndex => findLocLength(bLocIndex))
+      println(s"value of blocindexes is $bLocIndices")
+      println(s"lengths of locations is $locLengths")
+      for (e <- entities) {
+          if (e == "B-LOC") {
+            println(s"found a location called $e")
           }
       }
-      }
     }
+  }
 }
 
   object VariableProcessor {
