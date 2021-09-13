@@ -45,7 +45,6 @@ package object utils {
           // Since we only focus on the Assignment mention which includes two submentions in the same format called
           // ``variable`` and ``value`` we access the two through ``arguments`` attribute of the Mention class.
           m => try {
-            println(s"value of mention is: ${m.arguments("value")} ")
             pw.println(s"${m.arguments("variable").head.text}\t${m.arguments("value").head.text}\t${m.arguments("value")
               .head.norms.filter(_.length > 2).get(0)}\t${s.getSentenceText}\t$filename")
           } catch {

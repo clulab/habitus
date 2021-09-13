@@ -23,12 +23,11 @@ object VariableReader {
       val text = FileUtils.getTextFromFile(file)
       val filename = file.toString.split("/").last
       val (doc, mentions) = vp.parse(text)
-      //println(s"Writing mentions from doc ${filename} to $outputFile")
+      println(s"Writing mentions from doc ${filename} to $outputFile")
       outputMentionsToTSV(mentions, doc, filename, pw)
       // to not overpopulate the memory. Flush findings once for each document.
       pw.flush()
     }
-    println(s"mithun end of code")
     pw.close()
   }
 }

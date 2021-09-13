@@ -33,9 +33,14 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
     }
   }
   def checkAddCounter(counter: Map[String, Int], country:String ): Map[String, Int] = {
-    var freq = counter.getOrElse(country, 1)
-    freq = freq + 1
-    counter(country) = freq
+    counter.get(country) match {
+      case Some(i) => {
+        var freq = counter(country)
+        freq = freq + 1
+        counter(country) = freq
+      }
+      case None =>  counter(country) = 1
+    }
     (counter)
   }
 
@@ -56,7 +61,7 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
         if (es == "B-LOC") {
           println("Tokens: " + (s.words(ix)))
           counter=checkAddCounter(counter,s.words(ix))
-          println("Tokens: " + (counter(s.words(ix))))
+          println("value in counter: " + (counter(s.words(ix))))
           val ctxt = new Context(s.words(ix), "LOC", ix, counter(s.words(ix)))
           contexts += ctxt
         }
