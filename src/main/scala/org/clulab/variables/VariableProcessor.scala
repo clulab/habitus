@@ -20,12 +20,13 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
     // extract mentions from annotated document
     val mentions = extractor.extractFrom(doc).sortBy(m => (m.sentence, m.getClass.getSimpleName))
     val allContexts = extractContext(doc)
-    println(s"value of allContexts is $allContexts")
+    for (x<-allContexts){
+    println(s"value of allContexts is $x")}
     (doc, mentions)
   }
 
   def extractContext(doc: Document): Seq[Context] = {
-   var contexts=new ArrayBuffer[Context](3)
+    var contexts = new ArrayBuffer[Context](3)
     for ((s, i) <- doc.sentences.zipWithIndex) {
       println(s"sentence #$i")
       println(s.getSentenceText)
@@ -37,8 +38,8 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
       for ((es, ix) <- s.entities.get.zipWithIndex) {
         if (es == "B-LOC") {
           println("Tokens: " + (s.words(ix)))
-          val ctxt=new Context(s.words(ix),"LOC",ix,1)
-          contexts+=ctxt
+          val ctxt = new Context(s.words(ix), "LOC", ix, 1)
+          contexts += ctxt
         }
       }
     }
@@ -46,30 +47,30 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
   }
 }
 
-  object VariableProcessor {
-    def apply(): VariableProcessor = {
-      // Custom NER for variable reading
-      val kbs = Seq(
-        "variables/FERTILIZER.tsv"
+object VariableProcessor {
+  def apply(): VariableProcessor = {
+    // Custom NER for variable reading
+    val kbs = Seq(
+      "variables/FERTILIZER.tsv"
+    )
+    val lexiconNer = LexiconNER(kbs,
+      Seq(
+        true // case insensitive match for fertilizers
       )
-      val lexiconNer = LexiconNER(kbs,
-        Seq(
-          true // case insensitive match for fertilizers
-        )
-      )
+    )
 
-      // create the processor
-      Utils.initializeDyNet()
-      val processor: Processor = new CluProcessor(optionalNER = Some(lexiconNer))
+    // create the processor
+    Utils.initializeDyNet()
+    val processor: Processor = new CluProcessor(optionalNER = Some(lexiconNer))
 
-      // read rules from yml file in resources
-      val source = io.Source.fromURL(getClass.getResource("/variables/master.yml"))
-      val rules = source.mkString
-      source.close()
+    // read rules from yml file in resources
+    val source = io.Source.fromURL(getClass.getResource("/variables/master.yml"))
+    val rules = source.mkString
+    source.close()
 
-      // creates an extractor engine using the rules and the default actions
-      val extractor = ExtractorEngine(rules)
+    // creates an extractor engine using the rules and the default actions
+    val extractor = ExtractorEngine(rules)
 
-      new VariableProcessor(processor, extractor)
-    }
+    new VariableProcessor(processor, extractor)
   }
+}
