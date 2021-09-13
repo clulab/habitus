@@ -7,8 +7,7 @@ import org.clulab.processors.clu.CluProcessor
 import org.clulab.sequences.LexiconNER
 
 
-class Context(var location:String, var entity:String, var relativeDist:Int, var count:Int)
-{
+class Context(var location: String, var entity: String, var relativeDist: Int, var count: Int) {
 
 }
 
@@ -20,14 +19,25 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
 
     // extract mentions from annotated document
     val mentions = extractor.extractFrom(doc).sortBy(m => (m.sentence, m.getClass.getSimpleName))
-
-    (doc, mentions)
+    val allContexts = extractContext(doc) `` `` `` `` `` `` `` `` ``
+      (doc, mentions)
   }
 
-  def extractContext(doc: Document): Seq[Mention]
-  {
+  def extractContext(doc: Document): Seq[Mention] = {
+    for ((s, i) <- doc.sentences.zipWithIndex) {
 
+      println(s"sentence #$i")
+      println(s.getSentenceText)
+      println("Entities: " + s.entities.get.mkString(", "))
+      for (e <- s.entities) {
+        println(e.get.mkstring(","))
+        if (e == "LOC") {
+          println("found a location")
+        }
+      }
+    }
   }
+
 }
 
 object VariableProcessor {
