@@ -17,16 +17,18 @@ object VariableReader {
     val vp = VariableProcessor()
     var seqMention = Seq[String]()
     var outputFile = outputDir+"/mentions.tsv"
+
     val pw = new PrintWriter(new FileWriter(new File(outputFile)))
     for(file <- FileUtils.findFiles(inputDir, ".txt")) {
       val text = FileUtils.getTextFromFile(file)
       val filename = file.toString.split("/").last
       val (doc, mentions) = vp.parse(text)
-      println(s"Writing mentions from doc ${filename} to $outputFile")
+      //println(s"Writing mentions from doc ${filename} to $outputFile")
       outputMentionsToTSV(mentions, doc, filename, pw)
       // to not overpopulate the memory. Flush findings once for each document.
       pw.flush()
     }
+    println(s"mithun end of code")
     pw.close()
   }
 }

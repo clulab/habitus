@@ -36,6 +36,7 @@ package object utils {
   def outputMentionsToTSV(mentions: Seq[Mention], doc: Document, filename: String, pw: PrintWriter): Unit = {
     val mentionsBySentence = mentions groupBy (_.sentence) mapValues (_.sortBy(_.start)) withDefaultValue Nil
     for ((s, i) <- doc.sentences.zipWithIndex) {
+      println(s"value of entities is: ${s.entities} with index: ${i}")
       // to keep only mention labelled as Assignment (these labels are associated with .yml files, e.g. Variable, Value)
       val sortedMentions = mentionsBySentence(i).filter(_.label matches "Assignment")
       sortedMentions.foreach{
@@ -43,6 +44,7 @@ package object utils {
           // Since we only focus on the Assignment mention which includes two submentions in the same format called
           // ``variable`` and ``value`` we access the two through ``arguments`` attribute of the Mention class.
           m => try {
+            println(s"value of mention is: ${m.arguments("value")} ")
             pw.println(s"${m.arguments("variable").head.text}\t${m.arguments("value").head.text}\t${m.arguments("value")
               .head.norms.filter(_.length > 2).get(0)}\t${s.getSentenceText}\t$filename")
           } catch {
