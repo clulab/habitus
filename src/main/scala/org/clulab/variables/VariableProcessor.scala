@@ -34,7 +34,7 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
       println("Tokens: " + (s.words(3)))
       for ((es,ix) <- s.entities.get.zipWithIndex) {
           if (es == "B-LOC") {
-            println(s"found a location called $s.words(ix)")
+            println("Tokens: " + (s.words(ix)))
           }
       }
       }
