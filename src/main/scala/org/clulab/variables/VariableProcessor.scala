@@ -20,7 +20,7 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
     // extract mentions from annotated document
     val mentions = extractor.extractFrom(doc).sortBy(m => (m.sentence, m.getClass.getSimpleName))
     val allContexts = extractContext(doc)
-      (doc, mentions)
+    (doc, mentions)
   }
 
   def extractContext(doc: Document): Unit = {
@@ -30,40 +30,41 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
       println(s.getSentenceText)
       println("Entities: " + s.entities.get.mkString(", "))
       for (e <- s.entities) {
-        println(s"value of e is $e")
-        if (e == "LOC") {
-          println("found a location")
+        for (x <- e) {
+          println(s"value of x is $x")
+          if (x == "LOC") {
+            println("found a location")
+          }
         }
       }
     }
   }
-
 }
 
-object VariableProcessor {
-  def apply(): VariableProcessor = {
-    // Custom NER for variable reading
-    val kbs = Seq(
-      "variables/FERTILIZER.tsv"
-    )
-    val lexiconNer = LexiconNER(kbs,
-      Seq(
-        true // case insensitive match for fertilizers
+  object VariableProcessor {
+    def apply(): VariableProcessor = {
+      // Custom NER for variable reading
+      val kbs = Seq(
+        "variables/FERTILIZER.tsv"
       )
-    )
+      val lexiconNer = LexiconNER(kbs,
+        Seq(
+          true // case insensitive match for fertilizers
+        )
+      )
 
-    // create the processor
-    Utils.initializeDyNet()
-    val processor: Processor = new CluProcessor(optionalNER = Some(lexiconNer))
+      // create the processor
+      Utils.initializeDyNet()
+      val processor: Processor = new CluProcessor(optionalNER = Some(lexiconNer))
 
-    // read rules from yml file in resources
-    val source = io.Source.fromURL(getClass.getResource("/variables/master.yml"))
-    val rules = source.mkString
-    source.close()
+      // read rules from yml file in resources
+      val source = io.Source.fromURL(getClass.getResource("/variables/master.yml"))
+      val rules = source.mkString
+      source.close()
 
-    // creates an extractor engine using the rules and the default actions
-    val extractor = ExtractorEngine(rules)
+      // creates an extractor engine using the rules and the default actions
+      val extractor = ExtractorEngine(rules)
 
-    new VariableProcessor(processor, extractor)
+      new VariableProcessor(processor, extractor)
+    }
   }
-}
