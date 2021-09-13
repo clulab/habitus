@@ -19,7 +19,7 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
 
     // extract mentions from annotated document
     val mentions = extractor.extractFrom(doc).sortBy(m => (m.sentence, m.getClass.getSimpleName))
-    val allContexts = extractContext(doc) `` `` `` `` `` `` `` `` ``
+    val allContexts = extractContext(doc)
       (doc, mentions)
   }
 
