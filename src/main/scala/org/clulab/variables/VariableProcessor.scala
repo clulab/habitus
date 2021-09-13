@@ -5,7 +5,7 @@ import org.clulab.odin.{ExtractorEngine, Mention}
 import org.clulab.processors.{Document, Processor}
 import org.clulab.processors.clu.CluProcessor
 import org.clulab.sequences.LexiconNER
-
+import scala.collection.mutable.Map
 import scala.collection.mutable.ArrayBuffer
 
 
@@ -20,14 +20,30 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
     // extract mentions from annotated document
     val mentions = extractor.extractFrom(doc).sortBy(m => (m.sentence, m.getClass.getSimpleName))
     val allContexts = extractContext(doc)
-    println(s"value of allContexts is"+allContexts.mkString(" "))
-    for (x<-allContexts){
-    println(s"value of allContexts is $x")}
+    printContexts(allContexts)
     (doc, mentions)
   }
+  def printContexts(allContexts: Seq[Context] ) = {
+    for (x <- allContexts) {
+      println(s"location : ${x.location}")
+      println(s"entity : ${x.entity}")
+      println(s"relativeDist : ${x.relativeDist}")
+      println(s"count : ${x.count}")
+
+    }
+  }
+  def checkAddCounter(counter: Map[String, Int], country:String ): Map[String, Int] = {
+    var freq = counter.getOrElse(country, 1)
+    freq = freq + 1
+    counter(country) = freq
+    (counter)
+  }
+
+
 
   def extractContext(doc: Document): Seq[Context] = {
-    var contexts = new ArrayBuffer[Context](3)
+    var contexts = new ArrayBuffer[Context]()
+    var counter: Map[String, Int] = Map()
     for ((s, i) <- doc.sentences.zipWithIndex) {
       println(s"sentence #$i")
       println(s.getSentenceText)
@@ -39,7 +55,9 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
       for ((es, ix) <- s.entities.get.zipWithIndex) {
         if (es == "B-LOC") {
           println("Tokens: " + (s.words(ix)))
-          val ctxt = new Context(s.words(ix), "LOC", ix, 1)
+          counter=checkAddCounter(counter,s.words(ix))
+          println("Tokens: " + (counter(s.words(ix))))
+          val ctxt = new Context(s.words(ix), "LOC", ix, counter(s.words(ix)))
           contexts += ctxt
         }
       }
