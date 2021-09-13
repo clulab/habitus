@@ -24,6 +24,7 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
     (doc, mentions)
   }
   def printContexts(allContexts: Seq[Context] ) = {
+    println("length of all contexts is "+allContexts.length)
     for (x <- allContexts) {
       println(s"location : ${x.location}")
       println(s"entity : ${x.entity}")
