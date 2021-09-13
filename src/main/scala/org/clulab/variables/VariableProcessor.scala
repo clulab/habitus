@@ -50,18 +50,18 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
     var contexts = new ArrayBuffer[Context]()
     var counter: Map[String, Int] = Map()
     for ((s, i) <- doc.sentences.zipWithIndex) {
-      println(s"sentence #$i")
-      println(s.getSentenceText)
-      println("Entities: " + s.entities.get.mkString(", "))
+      //println(s"sentence #$i")
+      //println(s.getSentenceText)
+      //println("Entities: " + s.entities.get.mkString(", "))
       val bLocIndexes = s.entities.get.indices.filter(index => s.entities.get(index) == "B-LOC")
       println(s"value of blocindexes is $bLocIndexes")
       //val lengths = bLocIndexes.map { start => countLocs(start) }
-      println("Tokens: " + (s.words(3)))
+      //println("Tokens: " + (s.words(3)))
       for ((es, ix) <- s.entities.get.zipWithIndex) {
         if (es == "B-LOC") {
-          println("Tokens: " + (s.words(ix)))
+          //println("Tokens: " + (s.words(ix)))
           counter=checkAddCounter(counter,s.words(ix))
-          println("value in counter: " + (counter(s.words(ix))))
+          //println("value in counter: " + (counter(s.words(ix))))
           val ctxt = new Context(s.words(ix), "LOC", ix, counter(s.words(ix)))
           contexts += ctxt
         }
