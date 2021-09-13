@@ -24,6 +24,20 @@
   pattern: |
     /(?i)(^planting|sowing|seeding)/ /date|season|time|timing/?
 
+# crop variable
+- name: variable-for-crop
+  priority: ${rulepriority}
+  label: Variable
+  type: token
+  pattern: |
+    /(?i)(^crop)/? 
 
+# crop-cultivar value
+- name: value-from-crop
+  priority: ${rulepriority}
+  label: Value
+  type: token
+  pattern: |
+    [word='*']
 
-
+# Will see if I can add tag or lemma or even word
