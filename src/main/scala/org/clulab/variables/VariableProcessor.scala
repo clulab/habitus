@@ -32,8 +32,8 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
       for (e <- s.entities) {
         for (x <- e) {
           println(s"value of x is $x")
-          if (x == "LOC") {
-            println("found a location")
+          if (x == "B-LOC") {
+            println("found a location called $x")
           }
         }
       }
