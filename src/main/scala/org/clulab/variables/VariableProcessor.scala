@@ -107,13 +107,15 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
         val string_entity_sindex = s.words(ix).toLowerCase + "_" + es + "_" + i.toString
         //println("string_entity_sindex: " + (string_entity_sindex))
         counter = checkAddToMap(entitySentFreq, string_entity_sindex)
-        println("value in counter: " + (counter(string_entity_sindex)))
+        //println("value in counter: " + (counter(string_entity_sindex)))
       }
 
     }
+    printEntityFreqMaps(entitySentFreq)
+    println("*****done printing dict1")
     val sf=extractSentIdFreq(entitySentFreq)
     printextractSentIdFreq(sf)
-    //printEntityFreqMaps(entitySentFreq)
+
     //    val ctxt = new Context(s.words(ix), "LOC", ix, counter(s.words(ix)))
     //
     //    contexts += ctxt
