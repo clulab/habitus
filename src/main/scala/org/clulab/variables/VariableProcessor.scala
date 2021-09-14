@@ -74,7 +74,7 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
         val nk = entityName + "_" + entity
         sentIdFreq.get(nk) match {
           case Some(i) => {
-            var freq_new= sentIdFreq(key)
+            var freq_new= sentIdFreq(nk)
             var sentfreqa = Array(sentId,freq_old)
             freq_new += sentfreqa
             sentIdFreq+=(key-> freq_new)
