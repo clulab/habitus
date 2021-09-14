@@ -55,14 +55,15 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
     for ((s, i) <- doc.sentences.zipWithIndex) {
       //println(s"sentence #$i")
       //println(s.getSentenceText)
-      //println("Entities: " + s.entities.get.mkString(", "))
+      println("Entities: " + s.entities.get.mkString(", "))
+      println("tokens: " + s.words.mkString(", "))
       val bLocIndexes = s.entities.get.indices.filter(index => s.entities.get(index) == "B-LOC")
       println(s"value of blocindexes is $bLocIndexes")
       //val lengths = bLocIndexes.map { start => countLocs(start) }
       //println("Tokens: " + (s.words(3)))
       var entitySentFreq: Map[String, Int] = Map()
       for ((es, ix) <- s.entities.get.zipWithIndex) {
-        val string_entity_sindex = s.words(ix) + es + i.toString
+        val string_entity_sindex = s.words(ix).toLowerCase +"_"+ es +"_" +i.toString
         println("string_entity_sindex: " + (string_entity_sindex))
         counter = checkAddToMap(entitySentFreq, string_entity_sindex)
         println("value in counter: " + (counter(string_entity_sindex)))
