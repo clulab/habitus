@@ -40,8 +40,13 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
     }
   }
 
+  def printextractSentIdFreq(entitySentFreq: Map[String, ArrayBuffer[Array[Int]]]) = {
+    for (key <- entitySentFreq.keys) {
+      println(s"${key} : ${entitySentFreq(key)}")
+    }
+  }
   //from the format of entitystring_entity_sentenceid->freq, convert to entitystring_entity->([sentenceid1,freq],)
-  def extractSentIdFreq(entitySentFreq: Map[String, Int]) = {
+  def extractSentIdFreq(entitySentFreq: Map[String, Int])  = {
     var sentIdFreq: Map[String, ArrayBuffer[Array[Int]]] = Map()
     for (key <- entitySentFreq.keys) {
       val ks = key.split("_")
@@ -67,7 +72,7 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
 
       println(s"${key} : ${entitySentFreq(key)}")
     }
-
+    (sentIdFreq)
   }
 
   //if key exists add+1 to its value, else add 1 as its value
@@ -106,7 +111,9 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
       }
       (contexts.toSeq)
     }
-    printEntityFreqMaps(entitySentFreq)
+    val sf=extractSentIdFreq(entitySentFreq)
+    printextractSentIdFreq(sf)
+    //printEntityFreqMaps(entitySentFreq)
     //    val ctxt = new Context(s.words(ix), "LOC", ix, counter(s.words(ix)))
     //
     //    contexts += ctxt
