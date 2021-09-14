@@ -42,13 +42,23 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
 
   def printextractSentIdFreq(entitySentFreq: Map[String, ArrayBuffer[Array[Int]]]) = {
     for (key <- entitySentFreq.keys) {
-      println(s"key=${key} . value=${entitySentFreq(key)(0)}")
+      println(s"key=${key}")
+      val absentfreq = entitySentFreq(key)
+      println(s"length of arraybuffer=${absentfreq.length}")
+      for (a<-absentfreq)
+      {
+        println(s"value of array is $a")
+        for (b<-a)
+          {
+            println(s"value of ints in array is $b")
 
+          }
+      }
     }
   }
   //from the format of entitystring_entity_sentenceid->freq, convert to entitystring_entity->([sentenceid1,freq],)
   def extractSentIdFreq(entitySentFreq: Map[String, Int])  = {
-    var sentIdFreq: Map[String, ArrayBuffer[Array[Int]]] = Map()
+    var sentIdFreq= Map[String, ArrayBuffer[Array[Int]]]()
     for (key <- entitySentFreq.keys) {
 //      println(s"${key} : ${entitySentFreq(key)}")
       val ks = key.split("_")
@@ -59,23 +69,19 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
       var entity = ks(1)
       if (entity.containsSlice("LOC")) {
         entity = "LOC"
-
-        val sentId = ks(2)
-        val freq = entitySentFreq(key)
+        val sentId = ks(2).toInt
+        val freq_old = entitySentFreq(key).toInt
         val nk = entityName + "_" + entity
-        val sentfreq = ArrayBuffer[Array[Int]]()
-
-        sentfreq += Array(sentId.toInt, freq.toInt)
-        println(s"nk=$nk")
-        println(s"sentfreq=$sentfreq")
         sentIdFreq.get(nk) match {
           case Some(i) => {
-            //          var freq = mapper(key)
-            //          freq = freq + 1
-            //          mapper(key) = freq
+            var freq_new= sentIdFreq(key)
+            var sentfreqa = Array(sentId,freq_old)
+            freq_new += sentfreqa
+            sentIdFreq+=(key-> freq_new)
           }
-
           case None => {
+            val sentfreq = ArrayBuffer[Array[Int]]()
+            sentfreq += Array(sentId, freq_old)
             sentIdFreq += (nk -> sentfreq)
           }
         }
