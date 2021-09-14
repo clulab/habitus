@@ -34,3 +34,11 @@
     variable:Variable = /nsubj/
     value:Value = /nmod_from|nmod_between|Ax_from|Ax_between/
 
+#
+# VARIABLE VALUE for Crop
+#
+- name: ${label}-cultivar-name
+  priority: ${rulepriority}
+  label: ${label}
+  pattern: |
+    (?<trigger> @variable:Variable (@value:Value)+

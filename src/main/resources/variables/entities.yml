@@ -38,6 +38,8 @@
   label: Value
   type: token
   pattern: |
-    [word='*']
+    [tag=’B-NN’] [tag=’I-NN’]* |
+    [tag=’B-NN’] [tag=’I-NN’]+ [entity='NUMBER']? + "-"?
+
 
 # Will see if I can add tag or lemma or even word
