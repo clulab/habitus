@@ -42,7 +42,13 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
 
   def printextractSentIdFreq(entitySentFreq: Map[String, ArrayBuffer[Array[Int]]]) = {
     for (key <- entitySentFreq.keys) {
-      println(s"${key} : ${entitySentFreq(key)}")
+      println(s"key=${key} ")
+      for ((x,i) <-entitySentFreq(key).zipWithIndex)
+      {
+        println("value $i=$x")
+
+      }
+
     }
   }
   //from the format of entitystring_entity_sentenceid->freq, convert to entitystring_entity->([sentenceid1,freq],)
@@ -73,8 +79,6 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
 
         case None => {sentIdFreq(nk) = sentfreq}
       }
-
-      println(s"${key} : ${entitySentFreq(key)}")
     }
     (sentIdFreq)
   }
@@ -115,8 +119,8 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
       }
 
     }
-    printEntityFreqMaps(entitySentFreq)
-    println("*****done printing dict1")
+    //printEntityFreqMaps(entitySentFreq)
+
     val sf=extractSentIdFreq(entitySentFreq)
     printextractSentIdFreq(sf)
 
