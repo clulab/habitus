@@ -9,7 +9,7 @@ import scala.collection.mutable.Map
 import scala.collection.mutable.ArrayBuffer
 
 
-class Context(var location: String, var entity: String, var relativeDist: Int, var count: Int)
+class Context(var location: String, var entity: String, var distanceCount:ArrayBuffer[Array[Int]])
 
 class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine) {
   def parse(text: String): (Document, Seq[Mention]) = {
@@ -20,7 +20,7 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
     // extract mentions from annotated document
     val mentions = extractor.extractFrom(doc).sortBy(m => (m.sentence, m.getClass.getSimpleName))
     val allContexts = extractContext(doc)
-    //    printContexts(allContexts)
+    printContexts(allContexts)
     (doc, mentions)
   }
 
@@ -29,8 +29,8 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
     for (x <- allContexts) {
       println(s"location : ${x.location}")
       println(s"entity : ${x.entity}")
-      println(s"relativeDist : ${x.relativeDist}")
-      println(s"count : ${x.count}")
+      println(s"relativeDistance and Count : ${x.distanceCount}")
+
     }
   }
 
@@ -103,9 +103,22 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
     (mapper)
   }
 
-
-  def extractContext(doc: Document): Unit = {
+  def convertMapToContextSeq(sentIdFreq: Map[String, ArrayBuffer[Array[Int]]])=
+  {
     var contexts = new ArrayBuffer[Context]()
+    for (key <- sentIdFreq.keys) {
+      val ks = key.split("_")
+      val name = ks(0)
+      val entity = ks(1)
+      val abSentFreq=sentIdFreq(key)
+      val ctxt = new Context(name, entity,abSentFreq)
+      contexts += ctxt
+    }
+    (contexts.toSeq)
+  }
+
+  def extractContext(doc: Document): Seq[Context] = {
+
     var counter: Map[String, Int] = Map()
     var entitySentFreq: Map[String, Int] = Map()
     for ((s, i) <- doc.sentences.zipWithIndex) {
@@ -129,11 +142,9 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
     //printEntityFreqMaps(entitySentFreq)
 
     val sf=extractSentIdFreq(entitySentFreq)
-    printextractSentIdFreq(sf)
+    val allContexts=convertMapToContextSeq(sf)
 
-    //    val ctxt = new Context(s.words(ix), "LOC", ix, counter(s.words(ix)))
-    //
-    //    contexts += ctxt
+    (allContexts)
   }
 }
 
