@@ -56,7 +56,7 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
         var entity = "LOC"
       }
       val sentId = ks(2)
-      val freq = ks(4)
+      val freq = ks(3)
       val nk = entityName + "_" + entity
       val sentfreq = ArrayBuffer[Array[Int]]()
       sentfreq += Array(sentId.toInt, freq.toInt)
@@ -105,11 +105,11 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
 
       for ((es, ix) <- s.entities.get.zipWithIndex) {
         val string_entity_sindex = s.words(ix).toLowerCase + "_" + es + "_" + i.toString
-        println("string_entity_sindex: " + (string_entity_sindex))
+        //println("string_entity_sindex: " + (string_entity_sindex))
         counter = checkAddToMap(entitySentFreq, string_entity_sindex)
         println("value in counter: " + (counter(string_entity_sindex)))
       }
-      (contexts.toSeq)
+
     }
     val sf=extractSentIdFreq(entitySentFreq)
     printextractSentIdFreq(sf)
