@@ -31,10 +31,14 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
       println(s"entity : ${x.entity}")
       println(s"relativeDist : ${x.relativeDist}")
       println(s"count : ${x.count}")
-
     }
   }
 
+  def printEntityFreqMaps(entitySentFreq:Map[String, Int]) = {
+    for (key <- entitySentFreq.keys) {
+      println(s"${key} : ${entitySentFreq(key)}")
+    }
+  }
   //if key exists add+1 to its value, else add 1 as its value
   def checkAddToMap(mapper: Map[String, Int], key: String): Map[String, Int] = {
     mapper.get(key) match {
@@ -52,6 +56,7 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
   def extractContext(doc: Document): Unit = {
     var contexts = new ArrayBuffer[Context]()
     var counter: Map[String, Int] = Map()
+    var entitySentFreq: Map[String, Int] = Map()
     for ((s, i) <- doc.sentences.zipWithIndex) {
       //println(s"sentence #$i")
       //println(s.getSentenceText)
@@ -61,7 +66,7 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
       println(s"value of blocindexes is $bLocIndexes")
       //val lengths = bLocIndexes.map { start => countLocs(start) }
       //println("Tokens: " + (s.words(3)))
-      var entitySentFreq: Map[String, Int] = Map()
+
       for ((es, ix) <- s.entities.get.zipWithIndex) {
         val string_entity_sindex = s.words(ix).toLowerCase +"_"+ es +"_" +i.toString
         println("string_entity_sindex: " + (string_entity_sindex))
@@ -70,6 +75,7 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
       }
       (contexts.toSeq)
     }
+    printEntityFreqMaps(entitySentFreq )
     //    val ctxt = new Context(s.words(ix), "LOC", ix, counter(s.words(ix)))
     //
     //    contexts += ctxt
