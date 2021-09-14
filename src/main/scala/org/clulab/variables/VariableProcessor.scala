@@ -42,8 +42,8 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
 
   def printextractSentIdFreq(entitySentFreq: Map[String, ArrayBuffer[Array[Int]]]) = {
     for (key <- entitySentFreq.keys) {
-      println(s"key=${key} . value=entitySentFreq(key)(0)")
-      
+      println(s"key=${key} . value=${entitySentFreq(key)(0)}")
+
     }
   }
   //from the format of entitystring_entity_sentenceid->freq, convert to entitystring_entity->([sentenceid1,freq],)
