@@ -58,25 +58,26 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
 //      println(s"ks(0)=${ks(0)} ")
       var entity = ks(1)
       if (entity.containsSlice("LOC")) {
-         entity = "LOC"
-      }
-      val sentId = ks(2)
-      val freq = entitySentFreq(key)
-      val nk = entityName + "_" + entity
-      val sentfreq = ArrayBuffer[Array[Int]]()
+        entity = "LOC"
 
-      sentfreq += Array(sentId.toInt, freq.toInt)
-      println(s"nk=$nk")
-      println(s"sentfreq=$sentfreq")
-      sentIdFreq.get(nk) match {
-        case Some(i) => {
-          //          var freq = mapper(key)
-          //          freq = freq + 1
-          //          mapper(key) = freq
-        }
+        val sentId = ks(2)
+        val freq = entitySentFreq(key)
+        val nk = entityName + "_" + entity
+        val sentfreq = ArrayBuffer[Array[Int]]()
 
-        case None => {
-          sentIdFreq+=(nk-> sentfreq)
+        sentfreq += Array(sentId.toInt, freq.toInt)
+        println(s"nk=$nk")
+        println(s"sentfreq=$sentfreq")
+        sentIdFreq.get(nk) match {
+          case Some(i) => {
+            //          var freq = mapper(key)
+            //          freq = freq + 1
+            //          mapper(key) = freq
+          }
+
+          case None => {
+            sentIdFreq += (nk -> sentfreq)
+          }
         }
       }
     }
