@@ -53,12 +53,12 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
 //      println(s"${key} : ${entitySentFreq(key)}")
       val ks = key.split("_")
 //      println(s"ks=${ks} ")
-      println(s"ks.length=${ks.length} ")
+//      println(s"ks.length=${ks.length} ")
       val entityName = ks(0)
 //      println(s"ks(0)=${ks(0)} ")
       var entity = ks(1)
       if (entity.containsSlice("LOC")) {
-        var entity = "LOC"
+         entity = "LOC"
       }
       val sentId = ks(2)
       val freq = entitySentFreq(key)
