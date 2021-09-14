@@ -33,7 +33,7 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
       println(s"relativeDistance and Count :[")
       for (y<-x.distanceCount)
         {
-          println(s"({$y.mkString(",")})")
+          println(s"(${y.mkString(",")})")
         }
       println(s"]")
     }
