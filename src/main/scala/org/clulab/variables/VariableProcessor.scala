@@ -42,7 +42,7 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
 
   def printextractSentIdFreq(entitySentFreq: Map[String, ArrayBuffer[Array[Int]]]) = {
     for (key <- entitySentFreq.keys) {
-      println(s"key=${key}")
+      println(s"*********key=${key}")
       val absentfreq = entitySentFreq(key)
       println(s"length of arraybuffer=${absentfreq.length}")
       for (a<-absentfreq)
@@ -60,12 +60,12 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
   def extractSentIdFreq(entitySentFreq: Map[String, Int])  = {
     var sentIdFreq= Map[String, ArrayBuffer[Array[Int]]]()
     for (key <- entitySentFreq.keys) {
-      println(s"${key} : ${entitySentFreq(key)}")
+//      println(s"${key} : ${entitySentFreq(key)}")
       val ks = key.split("_")
-      println(s"ks=${ks} ")
-      println(s"ks.length=${ks.length} ")
+//      println(s"ks=${ks} ")
+//      println(s"ks.length=${ks.length} ")
       val entityName = ks(0)
-      println(s"ks(0)=${ks(0)} ")
+//      println(s"ks(0)=${ks(0)} ")
       var entity = ks(1)
       if (entity.containsSlice("LOC")) {
         entity = "LOC"
