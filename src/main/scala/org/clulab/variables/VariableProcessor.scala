@@ -60,7 +60,7 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
         var entity = "LOC"
       }
       val sentId = ks(2)
-      val freq = ks(3)
+      val freq = entitySentFreq(key)
       val nk = entityName + "_" + entity
       val sentfreq = ArrayBuffer[Array[Int]]()
       sentfreq += Array(sentId.toInt, freq.toInt)
