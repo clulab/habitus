@@ -19,12 +19,13 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
 
     // extract mentions from annotated document
     val mentions = extractor.extractFrom(doc).sortBy(m => (m.sentence, m.getClass.getSimpleName))
-    val allContexts = extractContext(doc)
-    printContexts(allContexts)
+//    val allContexts = extractContext(doc)
+//    printContexts(allContexts)
     (doc, mentions)
   }
-  def printContexts(allContexts: Seq[Context] ) = {
-    println("length of all contexts is "+allContexts.length)
+
+  def printContexts(allContexts: Seq[Context]) = {
+    println("length of all contexts is " + allContexts.length)
     for (x <- allContexts) {
       println(s"location : ${x.location}")
       println(s"entity : ${x.entity}")
@@ -33,21 +34,22 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
 
     }
   }
-  def checkAddCounter(counter: Map[String, Int], country:String ): Map[String, Int] = {
-    counter.get(country) match {
+
+  //if key exists add+1 to its value, else add 1 as its value
+  def checkAddToMap(mapper: Map[String, Int], key: String): Map[String, Int] = {
+    mapper.get(key) match {
       case Some(i) => {
-        var freq = counter(country)
+        var freq = mapper(key)
         freq = freq + 1
-        counter(country) = freq
+        mapper(key) = freq
       }
-      case None =>  counter(country) = 1
+      case None => mapper(key) = 1
     }
-    (counter)
+    (mapper)
   }
 
 
-
-  def extractContext(doc: Document): Seq[Context] = {
+  def extractContext(doc: Document): Unit = {
     var contexts = new ArrayBuffer[Context]()
     var counter: Map[String, Int] = Map()
     for ((s, i) <- doc.sentences.zipWithIndex) {
@@ -58,44 +60,45 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
       println(s"value of blocindexes is $bLocIndexes")
       //val lengths = bLocIndexes.map { start => countLocs(start) }
       //println("Tokens: " + (s.words(3)))
+      var entitySentFreq: Map[String, Int] = Map()
       for ((es, ix) <- s.entities.get.zipWithIndex) {
-        if (es == "B-LOC") {
-          //println("Tokens: " + (s.words(ix)))
-          counter=checkAddCounter(counter,s.words(ix))
-          //println("value in counter: " + (counter(s.words(ix))))
-          val ctxt = new Context(s.words(ix), "LOC", ix, counter(s.words(ix)))
-          contexts += ctxt
-        }
+        val string_entity_sindex = s.words(ix) + es + i.toString
+        println("string_entity_sindex: " + (string_entity_sindex))
+        counter = checkAddToMap(entitySentFreq, string_entity_sindex)
+        println("value in counter: " + (counter(string_entity_sindex)))
       }
+      (contexts.toSeq)
     }
-    (contexts.toSeq)
+    //    val ctxt = new Context(s.words(ix), "LOC", ix, counter(s.words(ix)))
+    //
+    //    contexts += ctxt
   }
 }
 
-object VariableProcessor {
-  def apply(): VariableProcessor = {
-    // Custom NER for variable reading
-    val kbs = Seq(
-      "variables/FERTILIZER.tsv"
-    )
-    val lexiconNer = LexiconNER(kbs,
-      Seq(
-        true // case insensitive match for fertilizers
+  object VariableProcessor {
+    def apply(): VariableProcessor = {
+      // Custom NER for variable reading
+      val kbs = Seq(
+        "variables/FERTILIZER.tsv"
       )
-    )
+      val lexiconNer = LexiconNER(kbs,
+        Seq(
+          true // case insensitive match for fertilizers
+        )
+      )
 
-    // create the processor
-    Utils.initializeDyNet()
-    val processor: Processor = new CluProcessor(optionalNER = Some(lexiconNer))
+      // create the processor
+      Utils.initializeDyNet()
+      val processor: Processor = new CluProcessor(optionalNER = Some(lexiconNer))
 
-    // read rules from yml file in resources
-    val source = io.Source.fromURL(getClass.getResource("/variables/master.yml"))
-    val rules = source.mkString
-    source.close()
+      // read rules from yml file in resources
+      val source = io.Source.fromURL(getClass.getResource("/variables/master.yml"))
+      val rules = source.mkString
+      source.close()
 
-    // creates an extractor engine using the rules and the default actions
-    val extractor = ExtractorEngine(rules)
+      // creates an extractor engine using the rules and the default actions
+      val extractor = ExtractorEngine(rules)
 
-    new VariableProcessor(processor, extractor)
+      new VariableProcessor(processor, extractor)
+    }
   }
-}
