@@ -30,12 +30,12 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
       println(s"******")
       println(s"location : ${x.location}")
       println(s"entity : ${x.entity}")
-      println(s"relativeDistance and Count :[")
+      print(s"relativeDistance and Count :{")
       for (y<-x.distanceCount)
         {
-          println(s"(${y.mkString(",")})")
+          print(s"[${y.mkString(",")}],")
         }
-      println(s"]")
+      print(s"}")
     }
   }
 
