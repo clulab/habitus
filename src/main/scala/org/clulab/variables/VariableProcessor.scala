@@ -27,10 +27,15 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
   def printContexts(allContexts: Seq[Context]) = {
     println("length of all contexts is " + allContexts.length)
     for (x <- allContexts) {
+      println(s"******")
       println(s"location : ${x.location}")
       println(s"entity : ${x.entity}")
-      println(s"relativeDistance and Count : ${x.distanceCount}")
-
+      println(s"relativeDistance and Count :[")
+      for (y<-x.distanceCount)
+        {
+          println(s"({$y.mkString(",")})")
+        }
+      println(s"]")
     }
   }
 
