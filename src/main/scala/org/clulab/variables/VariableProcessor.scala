@@ -45,7 +45,7 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
       println(s"key=${key} ")
       for ((x,i) <-entitySentFreq(key).zipWithIndex)
       {
-        println("value $i=$x")
+        println(s"value $i=$x")
 
       }
 
