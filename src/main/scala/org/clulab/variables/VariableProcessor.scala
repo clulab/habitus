@@ -36,7 +36,7 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
           print(s"[${y.mkString(",")}],")
         }
       print(s"}")
-      println(s"*****")
+      
     }
   }
 
