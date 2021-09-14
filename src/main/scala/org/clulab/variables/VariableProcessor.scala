@@ -20,7 +20,7 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
     // extract mentions from annotated document
     val mentions = extractor.extractFrom(doc).sortBy(m => (m.sentence, m.getClass.getSimpleName))
     val allContexts = extractContext(doc)
-//    printContexts(allContexts)
+    //    printContexts(allContexts)
     (doc, mentions)
   }
 
@@ -34,11 +34,42 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
     }
   }
 
-  def printEntityFreqMaps(entitySentFreq:Map[String, Int]) = {
+  def printEntityFreqMaps(entitySentFreq: Map[String, Int]) = {
     for (key <- entitySentFreq.keys) {
       println(s"${key} : ${entitySentFreq(key)}")
     }
   }
+
+  //from the format of entitystring_entity_sentenceid->freq, convert to entitystring_entity->([sentenceid1,freq],)
+  def extractSentIdFreq(entitySentFreq: Map[String, Int]) = {
+    var sentIdFreq: Map[String, ArrayBuffer[Array[Int]]] = Map()
+    for (key <- entitySentFreq.keys) {
+      val ks = key.split("_")
+      val entityName = ks(0)
+      var entity = ks(1)
+      if (entity.containsSlice("LOC")) {
+        var entity = "LOC"
+      }
+      val sentId = ks(2)
+      val freq = ks(4)
+      val nk = entityName + "_" + entity
+      val sentfreq = ArrayBuffer[Array[Int]]()
+      sentfreq += Array(sentId.toInt, freq.toInt)
+      sentIdFreq.get(nk) match {
+        case Some(i) => {
+          //          var freq = mapper(key)
+          //          freq = freq + 1
+          //          mapper(key) = freq
+        }
+
+        case None => {sentIdFreq(nk) = sentfreq}
+      }
+
+      println(s"${key} : ${entitySentFreq(key)}")
+    }
+
+  }
+
   //if key exists add+1 to its value, else add 1 as its value
   def checkAddToMap(mapper: Map[String, Int], key: String): Map[String, Int] = {
     mapper.get(key) match {
@@ -68,44 +99,44 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
       //println("Tokens: " + (s.words(3)))
 
       for ((es, ix) <- s.entities.get.zipWithIndex) {
-        val string_entity_sindex = s.words(ix).toLowerCase +"_"+ es +"_" +i.toString
+        val string_entity_sindex = s.words(ix).toLowerCase + "_" + es + "_" + i.toString
         println("string_entity_sindex: " + (string_entity_sindex))
         counter = checkAddToMap(entitySentFreq, string_entity_sindex)
         println("value in counter: " + (counter(string_entity_sindex)))
       }
       (contexts.toSeq)
     }
-    printEntityFreqMaps(entitySentFreq )
+    printEntityFreqMaps(entitySentFreq)
     //    val ctxt = new Context(s.words(ix), "LOC", ix, counter(s.words(ix)))
     //
     //    contexts += ctxt
   }
 }
 
-  object VariableProcessor {
-    def apply(): VariableProcessor = {
-      // Custom NER for variable reading
-      val kbs = Seq(
-        "variables/FERTILIZER.tsv"
+object VariableProcessor {
+  def apply(): VariableProcessor = {
+    // Custom NER for variable reading
+    val kbs = Seq(
+      "variables/FERTILIZER.tsv"
+    )
+    val lexiconNer = LexiconNER(kbs,
+      Seq(
+        true // case insensitive match for fertilizers
       )
-      val lexiconNer = LexiconNER(kbs,
-        Seq(
-          true // case insensitive match for fertilizers
-        )
-      )
+    )
 
-      // create the processor
-      Utils.initializeDyNet()
-      val processor: Processor = new CluProcessor(optionalNER = Some(lexiconNer))
+    // create the processor
+    Utils.initializeDyNet()
+    val processor: Processor = new CluProcessor(optionalNER = Some(lexiconNer))
 
-      // read rules from yml file in resources
-      val source = io.Source.fromURL(getClass.getResource("/variables/master.yml"))
-      val rules = source.mkString
-      source.close()
+    // read rules from yml file in resources
+    val source = io.Source.fromURL(getClass.getResource("/variables/master.yml"))
+    val rules = source.mkString
+    source.close()
 
-      // creates an extractor engine using the rules and the default actions
-      val extractor = ExtractorEngine(rules)
+    // creates an extractor engine using the rules and the default actions
+    val extractor = ExtractorEngine(rules)
 
-      new VariableProcessor(processor, extractor)
-    }
+    new VariableProcessor(processor, extractor)
   }
+}
