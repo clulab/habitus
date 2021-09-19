@@ -5,8 +5,10 @@ import org.clulab.odin.{ExtractorEngine, Mention}
 import org.clulab.processors.{Document, Processor}
 import org.clulab.processors.clu.CluProcessor
 import org.clulab.sequences.LexiconNER
+
+import scala.collection.mutable
 import scala.collection.mutable.Map
-import scala.collection.mutable.ArrayBuffer
+import scala.collection.mutable.{ArrayBuffer, HashSet}
 
 
 class Context(var location: String, var entity: String, var distanceCount:ArrayBuffer[Array[Int]])
@@ -20,12 +22,19 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
     // extract mentions from annotated document
     val mentions = extractor.extractFrom(doc).sortBy(m => (m.sentence, m.getClass.getSimpleName))
     val allContexts = extractContext(doc)
-    printContexts(allContexts)
+
+    //store all sentence ids where mentions were found
+    var sentIds=new mutable.HashSet[Int]
     for (x<-mentions) {
-      println("*****raw mention value is " + x.raw)
-      println("words=" + x.words)
-      println("id at which this mention occurs  is" + x.sentence)
+      sentIds+= x.sentence
     }
+    println("id at which this mention occurs  is" )
+    for (k<-sentIds)
+    {
+      print(k)
+    }
+
+    printContexts(allContexts)
     (doc, mentions)
   }
 
