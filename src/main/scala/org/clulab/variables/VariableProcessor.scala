@@ -21,7 +21,11 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
     val mentions = extractor.extractFrom(doc).sortBy(m => (m.sentence, m.getClass.getSimpleName))
     val allContexts = extractContext(doc)
     printContexts(allContexts)
-    println("value of mentions is"+mentions)
+    for (x<-mentions) {
+      println("*****raw mention value is " + x.raw)
+      println("words=" + x.words)
+      println("id at which this mention occurs  is" + x.sentence)
+    }
     (doc, mentions)
   }
 
