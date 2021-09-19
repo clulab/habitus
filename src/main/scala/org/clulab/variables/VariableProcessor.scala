@@ -21,6 +21,7 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
     val mentions = extractor.extractFrom(doc).sortBy(m => (m.sentence, m.getClass.getSimpleName))
     val allContexts = extractContext(doc)
     printContexts(allContexts)
+    println("value of mentions is"+mentions)
     (doc, mentions)
   }
 
@@ -36,32 +37,11 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
           print(s"[${y.mkString(",")}],")
         }
       print(s"}")
-      
+
     }
   }
 
-  def printEntityFreqMaps(entitySentFreq: Map[String, Int]) = {
-    for (key <- entitySentFreq.keys) {
-      println(s"${key} : ${entitySentFreq(key)}")
-    }
-  }
 
-  def printextractSentIdFreq(entitySentFreq: Map[String, ArrayBuffer[Array[Int]]]) = {
-    for (key <- entitySentFreq.keys) {
-      println(s"*********key=${key}")
-      val absentfreq = entitySentFreq(key)
-      println(s"length of arraybuffer=${absentfreq.length}")
-      for (a<-absentfreq)
-      {
-        println(s"value of array is $a")
-        for (b<-a)
-          {
-            println(s"value of ints in array is $b")
-
-          }
-      }
-    }
-  }
   //from the format of entitystring_entity_sentenceid->freq, convert to entitystring_entity->([sentenceid1,freq],)
   def extractSentIdFreq(entitySentFreq: Map[String, Int])  = {
     var sentIdFreq= Map[String, ArrayBuffer[Array[Int]]]()
@@ -128,28 +108,14 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
     var counter: Map[String, Int] = Map()
     var entitySentFreq: Map[String, Int] = Map()
     for ((s, i) <- doc.sentences.zipWithIndex) {
-      //println(s"sentence #$i")
-      //println(s.getSentenceText)
-      println("Entities: " + s.entities.get.mkString(", "))
-      println("tokens: " + s.words.mkString(", "))
-      val bLocIndexes = s.entities.get.indices.filter(index => s.entities.get(index) == "B-LOC")
-      println(s"value of blocindexes is $bLocIndexes")
-      //val lengths = bLocIndexes.map { start => countLocs(start) }
-      //println("Tokens: " + (s.words(3)))
-
+      //val bLocIndexes = s.entities.get.indices.filter(index => s.entities.get(index) == "B-LOC")
       for ((es, ix) <- s.entities.get.zipWithIndex) {
         val string_entity_sindex = s.words(ix).toLowerCase + "_" + es + "_" + i.toString
-        //println("string_entity_sindex: " + (string_entity_sindex))
         counter = checkAddToMap(entitySentFreq, string_entity_sindex)
-        //println("value in counter: " + (counter(string_entity_sindex)))
       }
-
     }
-    //printEntityFreqMaps(entitySentFreq)
-
     val sf=extractSentIdFreq(entitySentFreq)
     val allContexts=convertMapToContextSeq(sf)
-
     (allContexts)
   }
 }
