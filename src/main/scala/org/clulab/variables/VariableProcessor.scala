@@ -31,10 +31,10 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
     println("id at which this mention occurs  is" )
     for (k<-sentIds)
     {
-      print(k)
+      println(k)
     }
 
-    printContexts(allContexts)
+    //printContexts(allContexts)
     (doc, mentions)
   }
 
