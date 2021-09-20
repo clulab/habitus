@@ -38,7 +38,7 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
     println("length of all contexts is " + allContexts.length)
     for (x <- allContexts) {
       println(s"\n")
-      println(s"location : ${x.location}")
+      println(s"entity string name : ${x.location}")
       println(s"entity : ${x.entity}")
       print(s"relativeDistance and Count :{")
       for (y<-x.distanceCount)
@@ -58,24 +58,21 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
       val ks = key.split("_")
       val entityName = ks(0)
       var entity = ks(1)
-      if (entity.containsSlice("LOC")) {
-        entity = "LOC"
-        val sentId = ks(2).toInt
-        val freq_old = entitySentFreq(key).toInt
-        val nk = entityName + "_" + entity
-        //if the entity_sentenceid combination already exists in the dictionary, increase its frequency by 1, else add.
-        sentIdFreq.get(nk) match {
-          case Some(i) => {
-            var freq_new= sentIdFreq(nk)
-            var sentfreqa = Array(sentId,freq_old)
-            freq_new += sentfreqa
-            sentIdFreq+=(nk-> freq_new)
-          }
-          case None => {
-            val sentfreq = ArrayBuffer[Array[Int]]()
-            sentfreq += Array(sentId, freq_old)
-            sentIdFreq += (nk -> sentfreq)
-          }
+      val sentId = ks(2).toInt
+      val freq_old = entitySentFreq(key).toInt
+      val nk = entityName + "_" + entity
+      //if the entity_sentenceid combination already exists in the dictionary, increase its frequency by 1, else add.
+      sentIdFreq.get(nk) match {
+        case Some(i) => {
+          var freq_new = sentIdFreq(nk)
+          var sentfreqa = Array(sentId, freq_old)
+          freq_new += sentfreqa
+          sentIdFreq += (nk -> freq_new)
+        }
+        case None => {
+          val sentfreq = ArrayBuffer[Array[Int]]()
+          sentfreq += Array(sentId, freq_old)
+          sentIdFreq += (nk -> sentfreq)
         }
       }
     }
@@ -130,19 +127,28 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
   }
 
   def extractContext(doc: Document,mentionSentIds:mutable.HashSet[Int]): Seq[Context] = {
-
-    var counter: Map[String, Int] = Map()
-
     val mentionSentIdsList =  collection.immutable.SortedSet[Int]()++mentionSentIds
     //Get all the entities and their named entity types along with the number of times they occur in a sentence
     var entitySentFreq: Map[String, Int] = Map()
     for ((s, i) <- doc.sentences.zipWithIndex) {
       val relativeIndex=findRelDist(mentionSentIdsList,i)
-      for ((es, ix) <- s.entities.get.zipWithIndex) {
-        val string_entity_sindex = s.words(ix).toLowerCase + "_" + es + "_" + relativeIndex.toString
-        counter = checkAddToMap(entitySentFreq, string_entity_sindex)
+      var string_entity_sindex = ""
+        for ((es, ws, ns) <- (s.entities.get , s.words , s.norms.get).zipped) {
+          if (es.containsSlice("LOC") || es.containsSlice("DATE")) {
+            var entity = es
+            var entity_name = ws.toLowerCase
+            if (es.containsSlice("LOC")) {
+              entity = "LOC"
+            }
+            if (es.containsSlice("DATE")) {
+              entity = "DATE"
+              entity_name =  ns.split("-")(0)
+            }
+            string_entity_sindex = entity_name + "_" + entity + "_" + relativeIndex.toString
+            entitySentFreq = checkAddToMap(entitySentFreq, string_entity_sindex)
+          }
+        }
       }
-    }
     val sf=filterSignificantEntities(entitySentFreq)
     val allContexts=convertMapToContextSeq(sf)
     (allContexts)
