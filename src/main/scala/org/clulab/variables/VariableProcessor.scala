@@ -9,7 +9,7 @@ import org.clulab.sequences.LexiconNER
 import scala.collection.mutable
 import scala.collection.mutable.Map
 import scala.collection.mutable.{ArrayBuffer, HashSet}
-
+import java.util
 
 class Context(var location: String, var entity: String, var distanceCount:ArrayBuffer[Array[Int]])
 
@@ -21,20 +21,16 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
 
     // extract mentions from annotated document
     val mentions = extractor.extractFrom(doc).sortBy(m => (m.sentence, m.getClass.getSimpleName))
-    val allContexts = extractContext(doc)
 
-    //store all sentence ids where mentions were found
+    //extract all sentence ids where mentions were found
     var sentIds=new mutable.HashSet[Int]
     for (x<-mentions) {
       sentIds+= x.sentence
     }
-    println("id at which this mention occurs  is" )
-    for (k<-sentIds)
-    {
-      println(k)
-    }
 
-    //printContexts(allContexts)
+    //find entities which can serve as context for the mentions e.g.,Senegal
+    val allContexts = extractContext(doc,sentIds)
+    printContexts(allContexts)
     (doc, mentions)
   }
 
@@ -117,16 +113,33 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
     (contexts.toSeq)
   }
 
-  def extractContext(doc: Document): Seq[Context] = {
+  //for all the entities find which the id of sentence which was nearest to it and a mention was extracted from it
+  def findRelDist(mentionSentIdsList:scala.collection.immutable.SortedSet[Int],entityFoundSentId:Int): Int = {
+    //go through all entries in the sorted list of sentence ids where mentions where found. find the difference with the
+    //entityFoundSentId. pick the least/nearest sentence id
+    var nearestSentId=Int.MaxValue
+    for(x<-mentionSentIdsList)
+      {
+        val diff=(x-entityFoundSentId).abs
+        if(diff<nearestSentId)
+          {
+            nearestSentId=diff
+          }
+      }
+    (nearestSentId)
+  }
+
+  def extractContext(doc: Document,mentionSentIds:mutable.HashSet[Int]): Seq[Context] = {
 
     var counter: Map[String, Int] = Map()
 
+    val mentionSentIdsList =  collection.immutable.SortedSet[Int]()++mentionSentIds
     //Get all the entities and their named entity types along with the number of times they occur in a sentence
     var entitySentFreq: Map[String, Int] = Map()
     for ((s, i) <- doc.sentences.zipWithIndex) {
-      //val bLocIndexes = s.entities.get.indices.filter(index => s.entities.get(index) == "B-LOC")
+      val relativeIndex=findRelDist(mentionSentIdsList,i)
       for ((es, ix) <- s.entities.get.zipWithIndex) {
-        val string_entity_sindex = s.words(ix).toLowerCase + "_" + es + "_" + i.toString
+        val string_entity_sindex = s.words(ix).toLowerCase + "_" + es + "_" + relativeIndex.toString
         counter = checkAddToMap(entitySentFreq, string_entity_sindex)
       }
     }
