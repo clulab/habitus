@@ -10,6 +10,7 @@ import scala.collection.mutable
 import scala.collection.mutable.Map
 import scala.collection.mutable.{ArrayBuffer, HashSet}
 import java.util
+import scala.util.Try
 
 class Context(var location: String, var entity: String, var distanceCount:ArrayBuffer[Array[Int]])
 
@@ -37,7 +38,6 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
   def printContexts(allContexts: Seq[Context]) = {
     println("length of all contexts is " + allContexts.length)
     for (x <- allContexts) {
-      println(s"\n")
       println(s"entity string name : ${x.location}")
       println(s"entity : ${x.entity}")
       print(s"relativeDistance and Count :{")
@@ -46,6 +46,7 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
           print(s"[${y.mkString(",")}],")
         }
       print(s"}")
+      println("\n")
 
     }
   }
@@ -139,13 +140,21 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
             var entity_name = ws.toLowerCase
             if (es.containsSlice("LOC")) {
               entity = "LOC"
+              string_entity_sindex = entity_name + "_" + entity + "_" + relativeIndex.toString
+
             }
             if (es.containsSlice("DATE")) {
               entity = "DATE"
-              entity_name =  ns.split("-")(0)
+              val split0 = ns.split("-")(0)
+              if (split0 != "XXXX" && (Try(split0.toInt).isSuccess)) {
+                entity_name = split0
+                string_entity_sindex = entity_name + "_" + entity + "_" + relativeIndex.toString
+              }
             }
-            string_entity_sindex = entity_name + "_" + entity + "_" + relativeIndex.toString
-            entitySentFreq = checkAddToMap(entitySentFreq, string_entity_sindex)
+            if (string_entity_sindex != "") {
+              entitySentFreq = checkAddToMap(entitySentFreq, string_entity_sindex)
+            }
+
           }
         }
       }
