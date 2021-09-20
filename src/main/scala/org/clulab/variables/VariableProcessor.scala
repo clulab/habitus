@@ -55,28 +55,25 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
   }
 
 
-  //from the format of entitystring_entity_sentenceid->freq, convert to entitystring_entity->([sentenceid1,freq],)
-  def extractSentIdFreq(entitySentFreq: Map[String, Int])  = {
+  //from the list of all context words extract only ones you are interested in .eg: extract Senegal_B-LOC_0
+  def filterSignificantEntities(entitySentFreq: Map[String, Int])  = {
     var sentIdFreq= Map[String, ArrayBuffer[Array[Int]]]()
     for (key <- entitySentFreq.keys) {
-//      println(s"${key} : ${entitySentFreq(key)}")
       val ks = key.split("_")
-//      println(s"ks=${ks} ")
-//      println(s"ks.length=${ks.length} ")
       val entityName = ks(0)
-//      println(s"ks(0)=${ks(0)} ")
       var entity = ks(1)
       if (entity.containsSlice("LOC")) {
         entity = "LOC"
         val sentId = ks(2).toInt
         val freq_old = entitySentFreq(key).toInt
         val nk = entityName + "_" + entity
+        //if the entity_sentenceid combination already exists in the dictionary, increase its frequency by 1, else add.
         sentIdFreq.get(nk) match {
           case Some(i) => {
             var freq_new= sentIdFreq(nk)
             var sentfreqa = Array(sentId,freq_old)
             freq_new += sentfreqa
-            sentIdFreq+=(key-> freq_new)
+            sentIdFreq+=(nk-> freq_new)
           }
           case None => {
             val sentfreq = ArrayBuffer[Array[Int]]()
@@ -109,8 +106,12 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
       val ks = key.split("_")
       val name = ks(0)
       val entity = ks(1)
-      val abSentFreq=sentIdFreq(key)
-      val ctxt = new Context(name, entity,abSentFreq)
+
+      //relativeSentDistance it will be of the form [int a,int b], where a=relative distance from the nearest mention
+      // and b=no of times that context word occurs in that sentence
+      val relativeSentDistance=sentIdFreq(key)
+
+      val ctxt = new Context(name, entity,relativeSentDistance)
       contexts += ctxt
     }
     (contexts.toSeq)
@@ -119,6 +120,8 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
   def extractContext(doc: Document): Seq[Context] = {
 
     var counter: Map[String, Int] = Map()
+
+    //Get all the entities and their named entity types along with the number of times they occur in a sentence
     var entitySentFreq: Map[String, Int] = Map()
     for ((s, i) <- doc.sentences.zipWithIndex) {
       //val bLocIndexes = s.entities.get.indices.filter(index => s.entities.get(index) == "B-LOC")
@@ -127,7 +130,7 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
         counter = checkAddToMap(entitySentFreq, string_entity_sindex)
       }
     }
-    val sf=extractSentIdFreq(entitySentFreq)
+    val sf=filterSignificantEntities(entitySentFreq)
     val allContexts=convertMapToContextSeq(sf)
     (allContexts)
   }
