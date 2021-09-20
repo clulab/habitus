@@ -1,15 +1,14 @@
 package org.clulab.variables
 
 import org.clulab.dynet.Utils
-import org.clulab.odin.{ExtractorEngine, Mention}
+import org.clulab.odin.{Attachment, EventMention, ExtractorEngine, Mention, RelationMention, TextBoundMention}
 import org.clulab.processors.{Document, Processor}
 import org.clulab.processors.clu.CluProcessor
 import org.clulab.sequences.LexiconNER
-
+import util.control.Breaks._
 import scala.collection.mutable
 import scala.collection.mutable.Map
 import scala.collection.mutable.{ArrayBuffer, HashSet}
-import java.util
 import scala.util.Try
 
 class Context(var location: String, var entity: String, var distanceCount:ArrayBuffer[Array[Int]])
@@ -25,8 +24,14 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
 
     //extract all sentence ids where mentions were found
     var sentIds=new mutable.HashSet[Int]
+
     for (x<-mentions) {
-      sentIds+= x.sentence
+      breakable {
+        x match {
+          case m: TextBoundMention => break
+          case m: EventMention => sentIds += x.sentence
+        }
+      }
     }
 
     //find entities which can serve as context for the mentions e.g.,Senegal
@@ -34,6 +39,7 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
     printContexts(allContexts)
     (doc, mentions)
   }
+
 
   def printContexts(allContexts: Seq[Context]) = {
     println("length of all contexts is " + allContexts.length)
@@ -47,7 +53,6 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
         }
       print(s"}")
       println("\n")
-
     }
   }
 
