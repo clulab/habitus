@@ -8,7 +8,7 @@
   label: ${label}
   type: token
   pattern: |
-    @variable:Variable (?<trigger> [lemma=be]) @value:Value
+    @variable:Variable [tag=/VBN/]? (?<trigger> [lemma=be]) @value:Value
 
 #
 # [With] Variable Value
