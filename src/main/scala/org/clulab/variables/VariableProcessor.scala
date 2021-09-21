@@ -42,7 +42,8 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
     val allContexts = extractContext(doc)
     val mentionContextMap=mapMentionsToContexts(mentionsSentIds,allContexts)
     printmentionContextMap(mentionContextMap)
-    findMostFreqContextEntities(mentionContextMap, 0)
+    //pick entityType from ["LOC","DATE"]; set n=Int.MaxValue to get overall context/frequency in whole document
+    findMostFreqContextEntities(mentionContextMap, Int.MaxValue, "DATE")
     (doc, mentions)
   }
 
@@ -68,29 +69,47 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
    (mentionsContexts)
  }
 
-
+  //if key exists add+1 to its value, else add 1 as its value
+  def checkAddFreq(mapper: Map[String, Int], key: String,old_freq:Int): Map[String, Int] = {
+    mapper.get(key) match {
+      case Some(i) => {
+        var freq = mapper(key)
+        freq = freq + old_freq
+        mapper(key) = freq
+      }
+      case None => mapper(key) = old_freq
+    }
+    (mapper)
+  }
   //for all events, find most the frequent entity (e.g.,Senegal-LOC) within n sentences.
-  // set n=Int.MaxValue to get overall context/frequency in whole document
-  def findMostFreqContextEntities(mentionContextMap: Map[String, Seq[Context]], n:Int) = {
+
+  def findMostFreqContextEntities(mentionContextMap: Map[String, Seq[Context]], n:Int,entityType:String) = {
     for (mnx <- mentionContextMap.keys) {
-      var maxFreq=0
-      var mostFreqEntity=""
+      var entityFreq = Map[String, Int]()
+      var maxFreq = 0
+      var mostFreqEntity = ""
       for (x <- mentionContextMap(mnx)) {
         for (y <- x.distanceCount) {
-          val sentDist=y(0)
-          val freq=y(1)
-          if(sentDist<=n)
-          {
-            if(freq>maxFreq)
-              {
-                maxFreq=freq
-                mostFreqEntity=x.location
-              }
+          val sentDist = y(0)
+          val freq = y(1)
+          if (sentDist <= n && x.entity.containsSlice(entityType)) {
+            entityFreq = checkAddFreq(entityFreq, x.location, freq)
+            if (entityFreq(x.location) >= maxFreq) {
+              maxFreq = entityFreq(x.location)
+              mostFreqEntity = x.location
+            }
           }
         }
 
       }
-      println(s"most freq entity within ${n} sentences of event mention ${mnx} is ${mostFreqEntity}")
+      if(maxFreq==0) {
+        println(s"no entity of type ${entityType} was found within ${n} sentences of the event mention: ' ${mnx} '")
+      }
+      else
+        {
+          println(s"most freq entity of type ${entityType} within ${n} sentences of event mention ' ${mnx} ' is ${mostFreqEntity}")
+
+        }
     }
   }
 
@@ -172,8 +191,8 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
     //Get all the entities and their named entity types along with the number of times they occur in a sentence
     var entitySentFreq: Map[String, Int] = Map()
     for ((s, i) <- doc.sentences.zipWithIndex) {
-      var string_entity_sindex = ""
         for ((es, ws, ns) <- (s.entities.get , s.words , s.norms.get).zipped) {
+          var string_entity_sindex = ""
           if (es.containsSlice("LOC") || es.containsSlice("DATE")) {
             var entity = es
             var entity_name = ws.toLowerCase
@@ -181,6 +200,7 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
               entity = "LOC"
               string_entity_sindex = entity_name + "_" + entity + "_" + i.toString
             }
+            else
             if (es.containsSlice("DATE")) {
               entity = "DATE"
               val split0 = ns.split("-")(0)
