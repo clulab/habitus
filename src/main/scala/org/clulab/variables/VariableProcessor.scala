@@ -41,9 +41,9 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
     // allContexts= map of all context entities (e.g.,Senegal) to the ids of sentences that they occur at
     val allContexts = extractContext(doc)
     val mentionContextMap=mapMentionsToContexts(mentionsSentIds,allContexts)
-    //printmentionContextMap(mentionContextMap)
+    printmentionContextMap(mentionContextMap)
     //pick entityType from ["LOC","DATE"]; set n=Int.MaxValue to get overall context/frequency in whole document
-    findMostFreqContextEntities(mentionContextMap, Int.MaxValue, "LOC")
+    findMostFreqContextEntities(mentionContextMap,Int.MaxValue, "LOC")
     (doc, mentions)
   }
 
@@ -190,31 +190,53 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
   def extractContext(doc: Document): Seq[Context] = {
     //Get all the entities and their named entity types along with the number of times they occur in a sentence
     var entitySentFreq: Map[String, Int] = Map()
+
     for ((s, i) <- doc.sentences.zipWithIndex) {
-        for ((es, ws, ns) <- (s.entities.get , s.words , s.norms.get).zipped) {
+      var entityCounter = 0
+      var indicesToSkip = ArrayBuffer[Int]()
+        for ((es, ws, ns) <- (s.entities.get, s.words, s.norms.get).zipped) {
           var string_entity_sindex = ""
-          if (es.containsSlice("LOC") || es.containsSlice("DATE")) {
-            var entity = es
-            var entity_name = ws.toLowerCase
-            if (es.containsSlice("LOC")) {
-              entity = "LOC"
-              string_entity_sindex = entity_name + "_" + entity + "_" + i.toString
-            }
-            else
-            if (es.containsSlice("DATE")) {
-              entity = "DATE"
-              val split0 = ns.split("-")(0)
-              if (split0 != "XXXX" && (Try(split0.toInt).isSuccess)) {
-                entity_name = split0
+          if (!indicesToSkip.contains(entityCounter)) {
+            if (es.containsSlice("LOC") || es.containsSlice("DATE")) {
+              var entity = es
+              var entity_name = ws.toLowerCase
+
+              if (es == "B-LOC") {
+                entity = "LOC"
+                // IF  LOC has multiple tokens. (e.g., United States of America.) merge them to form one entity_name
+                var fullName = ArrayBuffer[String]()
+
+                var temp_entity = es
+                var temp = entityCounter
+                while (temp_entity != "O") {
+                  fullName += s.words(temp)
+                  indicesToSkip += temp
+                  temp = temp + 1
+                  temp_entity = s.entities.get(temp)
+                  entity_name = fullName.mkString(" ").toLowerCase()
+                }
+
+
                 string_entity_sindex = entity_name + "_" + entity + "_" + i.toString
               }
-            }
-            if (string_entity_sindex != "") {
-              entitySentFreq = checkAddToMap(entitySentFreq, string_entity_sindex)
+              else if (es.containsSlice("DATE")) {
+                entity = "DATE"
+                val split0 = ns.split("-")(0)
+                if (split0 != "XXXX" && (Try(split0.toInt).isSuccess)) {
+                  entity_name = split0
+                  string_entity_sindex = entity_name + "_" + entity + "_" + i.toString
+                }
+              }
+              if (string_entity_sindex != "") {
+                entitySentFreq = checkAddToMap(entitySentFreq, string_entity_sindex)
+              }
             }
           }
+          entityCounter = entityCounter + 1
         }
-      }
+
+
+    }
     val sf=filterSignificantEntities(entitySentFreq)
     val allContexts=convertMapToContextSeq(sf)
     (allContexts)
