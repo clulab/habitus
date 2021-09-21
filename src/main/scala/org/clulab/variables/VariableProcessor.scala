@@ -5,6 +5,8 @@ import org.clulab.odin.{Attachment, EventMention, ExtractorEngine, Mention, Rela
 import org.clulab.processors.{Document, Processor}
 import org.clulab.processors.clu.CluProcessor
 import org.clulab.sequences.LexiconNER
+
+import java.io.PrintWriter
 import util.control.Breaks._
 import scala.collection.mutable
 import scala.collection.mutable.Map
@@ -24,6 +26,9 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
 
     //map each event mention to its sentence id. useful in extracting contexts
     var mentionsSentIds= Map[String, Int]()
+    //val sentIds = mentions.collect { case m: EventMention => m.sentence }
+
+
     for (x<-mentions) {
       breakable {
         x match {
@@ -37,6 +42,7 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
     val allContexts = extractContext(doc)
     val mentionContextMap=mapMentionsToContexts(mentionsSentIds,allContexts)
     printmentionContextMap(mentionContextMap)
+    findMostFreqContextEntities(mentionContextMap, 0)
     (doc, mentions)
   }
 
@@ -61,18 +67,30 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
    }
    (mentionsContexts)
  }
-  def printContexts(allContexts: Seq[Context]) = {
-    println("length of all contexts is " + allContexts.length)
-    for (x <- allContexts) {
-      println(s"entity string name : ${x.location}")
-      println(s"entity : ${x.entity}")
-      print(s"relativeDistance and Count :{")
-      for (y<-x.distanceCount)
-        {
-          print(s"[${y.mkString(",")}],")
+
+
+  //for all events, find most the frequent entity (e.g.,Senegal-LOC) within n sentences.
+  // set n=Int.MaxValue to get overall context/frequency in whole document
+  def findMostFreqContextEntities(mentionContextMap: Map[String, Seq[Context]], n:Int) = {
+    for (mnx <- mentionContextMap.keys) {
+      var maxFreq=0
+      var mostFreqEntity=""
+      for (x <- mentionContextMap(mnx)) {
+        for (y <- x.distanceCount) {
+          val sentDist=y(0)
+          val freq=y(1)
+          if(sentDist<=n)
+          {
+            if(freq>maxFreq)
+              {
+                maxFreq=freq
+                mostFreqEntity=x.location
+              }
+          }
         }
-      print(s"}")
-      println("\n")
+
+      }
+      println(s"most freq entity within ${n} sentences of event mention ${mnx} is ${mostFreqEntity}")
     }
   }
 
@@ -141,7 +159,6 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
       val ks = key.split("_")
       val name = ks(0)
       val entity = ks(1)
-
       //relativeSentDistance it will be of the form [int a,int b], where a=relative distance from the nearest mention
       // and b=no of times that context word occurs in that sentence
       val relativeSentDistance=sentIdFreq(key)
@@ -151,24 +168,7 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
     (contexts.toSeq)
   }
 
-  //for all the entities find which the id of sentence which was nearest to it and a mention was extracted from it
-  def findRelDist(mentionSentIdsList:scala.collection.immutable.SortedSet[Int],entityFoundSentId:Int): Int = {
-    //go through all entries in the sorted list of sentence ids where mentions where found. find the difference with the
-    //entityFoundSentId. pick the least/nearest sentence id
-    var nearestSentId=Int.MaxValue
-    for(x<-mentionSentIdsList)
-      {
-        val diff=(x-entityFoundSentId).abs
-        if(diff<nearestSentId)
-          {
-            nearestSentId=diff
-          }
-      }
-    (nearestSentId)
-  }
-
   def extractContext(doc: Document): Seq[Context] = {
-
     //Get all the entities and their named entity types along with the number of times they occur in a sentence
     var entitySentFreq: Map[String, Int] = Map()
     for ((s, i) <- doc.sentences.zipWithIndex) {
@@ -192,7 +192,6 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
             if (string_entity_sindex != "") {
               entitySentFreq = checkAddToMap(entitySentFreq, string_entity_sindex)
             }
-
           }
         }
       }
