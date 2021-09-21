@@ -41,9 +41,9 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
     // allContexts= map of all context entities (e.g.,Senegal) to the ids of sentences that they occur at
     val allContexts = extractContext(doc)
     val mentionContextMap=mapMentionsToContexts(mentionsSentIds,allContexts)
-    printmentionContextMap(mentionContextMap)
+    //printmentionContextMap(mentionContextMap)
     //pick entityType from ["LOC","DATE"]; set n=Int.MaxValue to get overall context/frequency in whole document
-    findMostFreqContextEntities(mentionContextMap, Int.MaxValue, "DATE")
+    findMostFreqContextEntities(mentionContextMap, Int.MaxValue, "LOC")
     (doc, mentions)
   }
 
