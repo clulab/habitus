@@ -22,25 +22,45 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
     // extract mentions from annotated document
     val mentions = extractor.extractFrom(doc).sortBy(m => (m.sentence, m.getClass.getSimpleName))
 
-    //extract all sentence ids where mentions were found
-    var sentIds=new mutable.HashSet[Int]
-
+    //map each event mention to its sentence id. useful in extracting contexts
+    var mentionsSentIds= Map[String, Int]()
     for (x<-mentions) {
       breakable {
         x match {
           case m: TextBoundMention => break
-          case m: EventMention => sentIds += x.sentence
+          case m: EventMention => mentionsSentIds += (x.words.mkString(" ")->x.sentence)
         }
       }
     }
 
-    //find entities which can serve as context for the mentions e.g.,Senegal
-    val allContexts = extractContext(doc,sentIds)
-    printContexts(allContexts)
+    // allContexts= map of all context entities (e.g.,Senegal) to the ids of sentences that they occur at
+    val allContexts = extractContext(doc)
+    val mentionContextMap=mapMentionsToContexts(mentionsSentIds,allContexts)
+    printmentionContextMap(mentionContextMap)
     (doc, mentions)
   }
 
-
+  //map each mention to and how far an entity occurs, and no of times it occurs in that sentence
+ def mapMentionsToContexts(mentionsSentIds:Map[String, Int],contexts:Seq[Context])= {
+   val mentionsContexts= Map[String, Seq[Context]]()
+   for (mention <- mentionsSentIds.keys)
+   {
+     var contextsPerMention = new ArrayBuffer[Context]()
+    for (x<-contexts) {
+      val sentfreq = ArrayBuffer[Array[Int]]()
+      for (y <- x.distanceCount) {
+        //take the absolute value of entities in context, and calculate relative distance to this mention
+        val rel_distance = (mentionsSentIds(mention) - y(0)).abs
+        val freq = y(1)
+        sentfreq += Array(rel_distance, freq)
+      }
+      val ctxt = new Context(x.location, x.entity, sentfreq)
+      contextsPerMention += ctxt
+    }
+     mentionsContexts += (mention -> (contextsPerMention.toSeq))
+   }
+   (mentionsContexts)
+ }
   def printContexts(allContexts: Seq[Context]) = {
     println("length of all contexts is " + allContexts.length)
     for (x <- allContexts) {
@@ -53,6 +73,22 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
         }
       print(s"}")
       println("\n")
+    }
+  }
+
+  def printmentionContextMap(mentionContextMap: Map[String, Seq[Context]]) = {
+    for (mnx <- mentionContextMap.keys) {
+      println(s"event : $mnx")
+      for (x <- mentionContextMap(mnx)) {
+        println(s"entity string name : ${x.location}")
+        println(s"entity : ${x.entity}")
+        print(s"relativeDistance and Count :{")
+        for (y <- x.distanceCount) {
+          print(s"[${y.mkString(",")}],")
+        }
+        print(s"}")
+        println("\n")
+      }
     }
   }
 
@@ -109,7 +145,6 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
       //relativeSentDistance it will be of the form [int a,int b], where a=relative distance from the nearest mention
       // and b=no of times that context word occurs in that sentence
       val relativeSentDistance=sentIdFreq(key)
-
       val ctxt = new Context(name, entity,relativeSentDistance)
       contexts += ctxt
     }
@@ -132,12 +167,11 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
     (nearestSentId)
   }
 
-  def extractContext(doc: Document,mentionSentIds:mutable.HashSet[Int]): Seq[Context] = {
-    val mentionSentIdsList =  collection.immutable.SortedSet[Int]()++mentionSentIds
+  def extractContext(doc: Document): Seq[Context] = {
+
     //Get all the entities and their named entity types along with the number of times they occur in a sentence
     var entitySentFreq: Map[String, Int] = Map()
     for ((s, i) <- doc.sentences.zipWithIndex) {
-      val relativeIndex=findRelDist(mentionSentIdsList,i)
       var string_entity_sindex = ""
         for ((es, ws, ns) <- (s.entities.get , s.words , s.norms.get).zipped) {
           if (es.containsSlice("LOC") || es.containsSlice("DATE")) {
@@ -145,15 +179,14 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
             var entity_name = ws.toLowerCase
             if (es.containsSlice("LOC")) {
               entity = "LOC"
-              string_entity_sindex = entity_name + "_" + entity + "_" + relativeIndex.toString
-
+              string_entity_sindex = entity_name + "_" + entity + "_" + i.toString
             }
             if (es.containsSlice("DATE")) {
               entity = "DATE"
               val split0 = ns.split("-")(0)
               if (split0 != "XXXX" && (Try(split0.toInt).isSuccess)) {
                 entity_name = split0
-                string_entity_sindex = entity_name + "_" + entity + "_" + relativeIndex.toString
+                string_entity_sindex = entity_name + "_" + entity + "_" + i.toString
               }
             }
             if (string_entity_sindex != "") {
