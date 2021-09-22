@@ -24,9 +24,14 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
     // extract mentions from annotated document
     val mentions = extractor.extractFrom(doc).sortBy(m => (m.sentence, m.getClass.getSimpleName))
 
+    (doc, mentions)
+  }
+
+  def extractContextAndFindMostFrequentEntity(doc: Document,mentions:Seq[Mention],n:Int,entity_type:String )={
     //map each event mention to its sentence id. useful in extracting contexts
     var mentionsSentIds= Map[String, Int]()
-    //val sentIds = mentions.collect { case m: EventMention => m.sentence }
+    //todo: ask keith how to do collect instead of breakable.
+    // val sentIds = mentions.collect { case m: EventMention => m.sentence }
 
 
     for (x<-mentions) {
@@ -41,12 +46,11 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
     // allContexts= map of all context entities (e.g.,Senegal) to the ids of sentences that they occur at
     val allContexts = extractContext(doc)
     val mentionContextMap=mapMentionsToContexts(mentionsSentIds,allContexts)
-    printmentionContextMap(mentionContextMap)
-    //pick entityType from ["LOC","DATE"]; set n=Int.MaxValue to get overall context/frequency in whole document
-    findMostFreqContextEntities(mentionContextMap,Int.MaxValue, "LOC")
-    (doc, mentions)
-  }
+    //printmentionContextMap(mentionContextMap)
 
+    //pick entityType from ["LOC","DATE"]; set n=Int.MaxValue to get overall context/frequency in whole document
+    findMostFreqContextEntitiesForAllEvents(mentionContextMap,n, entity_type)
+  }
   //map each mention to and how far an entity occurs, and no of times it occurs in that sentence
  def mapMentionsToContexts(mentionsSentIds:Map[String, Int],contexts:Seq[Context])= {
    val mentionsContexts= Map[String, Seq[Context]]()
@@ -79,38 +83,41 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
       }
       case None => mapper(key) = old_freq
     }
-    (mapper)
+    mapper
   }
-  //for all events, find most the frequent entity (e.g.,Senegal-LOC) within n sentences.
 
-  def findMostFreqContextEntities(mentionContextMap: Map[String, Seq[Context]], n:Int,entityType:String) = {
-    for (mnx <- mentionContextMap.keys) {
-      var entityFreq = Map[String, Int]()
-      var maxFreq = 0
-      var mostFreqEntity = ""
-      for (x <- mentionContextMap(mnx)) {
-        for (y <- x.distanceCount) {
-          val sentDist = y(0)
-          val freq = y(1)
-          if (sentDist <= n && x.entity.containsSlice(entityType)) {
-            entityFreq = checkAddFreq(entityFreq, x.location, freq)
-            if (entityFreq(x.location) >= maxFreq) {
-              maxFreq = entityFreq(x.location)
-              mostFreqEntity = x.location
-            }
+  def findMostFreqContextEntitiesForOneEvent(mention:String, contexts:Seq[Context], entityType:String, n:Int)=
+  {
+    var entityFreq = Map[String, Int]()
+    var maxFreq = 0
+    var mostFreqEntity = ""
+    for (x <- contexts) {
+      for (y <- x.distanceCount) {
+        val sentDist = y(0)
+        val freq = y(1)
+        if (sentDist <= n && x.entity.contains(entityType)) {
+          entityFreq = checkAddFreq(entityFreq, x.location, freq)
+          if (entityFreq(x.location) >= maxFreq) {
+            maxFreq = entityFreq(x.location)
+             mostFreqEntity = x.location
           }
         }
-
       }
-      if(maxFreq==0) {
-        println(s"no entity of type ${entityType} was found within ${n} sentences of the event mention: ' ${mnx} '")
-      }
-      else
-        {
-          println(s"most freq entity of type ${entityType} within ${n} sentences of event mention ' ${mnx} ' is ${mostFreqEntity}")
 
-        }
     }
+    if(maxFreq==0) {
+      println(s"no entity of type ${entityType} was found within ${n} sentences of the event mention: ' ${mention} '")
+    }
+    else
+    {
+      println(s"most freq entity of type ${entityType} within ${n} sentences of event mention ' ${mention} ' is ${mostFreqEntity} which occurs ${maxFreq} times")
+
+    }
+    (mostFreqEntity)
+  }
+  //for all events, find most the frequent entity (e.g.,Senegal-LOC) within n sentences.
+  def findMostFreqContextEntitiesForAllEvents(mentionContextMap: Map[String, Seq[Context]], n:Int,entityType:String):Seq[String] = {
+    mentionContextMap.keys.toSeq.map(key=>findMostFreqContextEntitiesForOneEvent(key,mentionContextMap(key), entityType,n))
   }
 
   def printmentionContextMap(mentionContextMap: Map[String, Seq[Context]]) = {
@@ -138,7 +145,7 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
       val entityName = ks(0)
       var entity = ks(1)
       val sentId = ks(2).toInt
-      val freq_old = entitySentFreq(key).toInt
+      val freq_old = entitySentFreq(key)
       val nk = entityName + "_" + entity
       //if the entity_sentenceid combination already exists in the dictionary, increase its frequency by 1, else add.
       sentIdFreq.get(nk) match {
@@ -190,24 +197,22 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
   def extractContext(doc: Document): Seq[Context] = {
     //Get all the entities and their named entity types along with the number of times they occur in a sentence
     var entitySentFreq: Map[String, Int] = Map()
-
     for ((s, i) <- doc.sentences.zipWithIndex) {
       var entityCounter = 0
       var indicesToSkip = ArrayBuffer[Int]()
         for ((es, ws, ns) <- (s.entities.get, s.words, s.norms.get).zipped) {
           var string_entity_sindex = ""
           if (!indicesToSkip.contains(entityCounter)) {
-            if (es.containsSlice("LOC") || es.containsSlice("DATE")) {
+            if (es == "B-LOC" || es=="DATE") {
               var entity = es
               var entity_name = ws.toLowerCase
-
               if (es == "B-LOC") {
                 entity = "LOC"
                 // IF  LOC has multiple tokens. (e.g., United States of America.) merge them to form one entity_name
                 var fullName = ArrayBuffer[String]()
-
                 var temp_entity = es
                 var temp = entityCounter
+                //todo: replace negative check of o with if I-Loc- what if you see another B-LOC
                 while (temp_entity != "O") {
                   fullName += s.words(temp)
                   indicesToSkip += temp
@@ -215,8 +220,6 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
                   temp_entity = s.entities.get(temp)
                   entity_name = fullName.mkString(" ").toLowerCase()
                 }
-
-
                 string_entity_sindex = entity_name + "_" + entity + "_" + i.toString
               }
               else if (es.containsSlice("DATE")) {
