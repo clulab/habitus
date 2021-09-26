@@ -11,16 +11,11 @@ class TestContextExtractor extends FlatSpec with Matchers {
   val vp = VariableProcessor()
 
 
-  val sent1 = """In Matto Grosso, United States  with sowing between 7 and 22 July, in  maturity camein early November ( Tab.I ) .
-    In United States , United States and  Senegal  maturity camein early November ( Tab.I ) .
-In Senegal maturity  camein early November ( Tab.I ) for 1995.
-In Senegal maturity  camein early November ( Tab.I ) for 1995.
-In Senegal maturity  camein early November ( Tab.I ) for 1995.
-In Senegal maturity  camein early November ( Tab.I ) for 1995.
-In Senegal maturity  camein early November ( Tab.I ) for 1995.
-In Senegal maturity  camein early November ( Tab.I ) for 1995.
-In Senegal maturity  camein early November ( Tab.I ) for 1995.
-In the year 1998, in the United States, maturity camein early November ( Tab.I ) .."""
+  val sent1 ="""
+In Matto Grosso, United States  with sowing between 7 and 22 July, in  maturity came in early November ( Tab.I ) .
+In United States , United States and  Senegal  maturity came in early November ( Tab.I ) .
+In Senegal maturity  came in early November ( Tab.I ) for 1995.
+"""
 
   def getMSFreq(text: String): Seq[String] = {
     val (doc, mentions) = vp.parse(text)

@@ -1,16 +1,12 @@
 package org.clulab.variables
 
 import org.clulab.dynet.Utils
-import org.clulab.odin.{Attachment, EventMention, ExtractorEngine, Mention, RelationMention, TextBoundMention}
+import org.clulab.odin.{EventMention,ExtractorEngine,Mention,TextBoundMention}
 import org.clulab.processors.{Document, Processor}
 import org.clulab.processors.clu.CluProcessor
 import org.clulab.sequences.LexiconNER
-
-import java.io.PrintWriter
 import util.control.Breaks._
-import scala.collection.mutable
-import scala.collection.mutable.Map
-import scala.collection.mutable.{ArrayBuffer, HashSet}
+import scala.collection.mutable.{Map,ArrayBuffer}
 import scala.util.Try
 
 class Context(var location: String, var entity: String, var distanceCount:ArrayBuffer[Array[Int]])
@@ -29,7 +25,7 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
 
   def extractContextAndFindMostFrequentEntity(doc: Document,mentions:Seq[Mention],n:Int,entity_type:String )={
     //map each event mention to its sentence id. useful in extracting contexts
-    var mentionsSentIds= Map[String, Int]()
+    val mentionsSentIds=  scala.collection.mutable.Map[String, Int]()
     //todo: ask keith how to do collect instead of breakable.
     // val sentIds = mentions.collect { case m: EventMention => m.sentence }
 
@@ -46,14 +42,14 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
     // allContexts= map of all context entities (e.g.,Senegal) to the ids of sentences that they occur at
     val allContexts = extractContext(doc)
     val mentionContextMap=mapMentionsToContexts(mentionsSentIds,allContexts)
-    //printmentionContextMap(mentionContextMap)
+
 
     //pick entityType from ["LOC","DATE"]; set n=Int.MaxValue to get overall context/frequency in whole document
     findMostFreqContextEntitiesForAllEvents(mentionContextMap,n, entity_type)
   }
   //map each mention to and how far an entity occurs, and no of times it occurs in that sentence
- def mapMentionsToContexts(mentionsSentIds:Map[String, Int],contexts:Seq[Context])= {
-   val mentionsContexts= Map[String, Seq[Context]]()
+ def mapMentionsToContexts(mentionsSentIds: scala.collection.mutable.Map[String, Int],contexts:Seq[Context])= {
+   val mentionsContexts=  scala.collection.mutable.Map[String, Seq[Context]]()
    for (mention <- mentionsSentIds.keys)
    {
      var contextsPerMention = new ArrayBuffer[Context]()
@@ -70,17 +66,16 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
     }
      mentionsContexts += (mention -> (contextsPerMention.toSeq))
    }
-   (mentionsContexts)
+   mentionsContexts
  }
 
   //if key exists add+1 to its value, else add 1 as its value
-  def checkAddFreq(mapper: Map[String, Int], key: String,old_freq:Int): Map[String, Int] = {
+  def checkAddFreq(mapper: scala.collection.mutable.Map[String, Int], key: String,old_freq:Int): scala.collection.mutable.Map[String, Int] = {
     mapper.get(key) match {
-      case Some(i) => {
+      case Some(i) =>
         var freq = mapper(key)
         freq = freq + old_freq
         mapper(key) = freq
-      }
       case None => mapper(key) = old_freq
     }
     mapper
@@ -88,7 +83,7 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
 
   def findMostFreqContextEntitiesForOneEvent(mention:String, contexts:Seq[Context], entityType:String, n:Int)=
   {
-    var entityFreq = Map[String, Int]()
+    var entityFreq = scala.collection.mutable.Map[String, Int]()
     var maxFreq = 0
     var mostFreqEntity = ""
     for (x <- contexts) {
@@ -103,24 +98,22 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
           }
         }
       }
-
     }
     if(maxFreq==0) {
-      println(s"no entity of type ${entityType} was found within ${n} sentences of the event mention: ' ${mention} '")
+      println(s"no entity of type $entityType was found within $n sentences of the event mention: ' $mention '")
     }
     else
     {
-      println(s"most freq entity of type ${entityType} within ${n} sentences of event mention ' ${mention} ' is ${mostFreqEntity} which occurs ${maxFreq} times")
-
+      println(s"most freq entity of type $entityType within $n sentences of event mention ' $mention ' is ${mostFreqEntity} which occurs ${maxFreq} times")
     }
-    (mostFreqEntity)
+    mostFreqEntity
   }
   //for all events, find most the frequent entity (e.g.,Senegal-LOC) within n sentences.
-  def findMostFreqContextEntitiesForAllEvents(mentionContextMap: Map[String, Seq[Context]], n:Int,entityType:String):Seq[String] = {
+  def findMostFreqContextEntitiesForAllEvents(mentionContextMap: scala.collection.mutable.Map[String, Seq[Context]], n:Int,entityType:String):Seq[String] = {
     mentionContextMap.keys.toSeq.map(key=>findMostFreqContextEntitiesForOneEvent(key,mentionContextMap(key), entityType,n))
   }
 
-  def printmentionContextMap(mentionContextMap: Map[String, Seq[Context]]) = {
+  def printmentionContextMap(mentionContextMap: scala.collection.mutable.Map[String, Seq[Context]]) = {
     for (mnx <- mentionContextMap.keys) {
       println(s"event : $mnx")
       for (x <- mentionContextMap(mnx)) {
@@ -138,47 +131,44 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
 
 
   //from the list of all context words extract only ones you are interested in .eg: extract Senegal_B-LOC_0
-  def filterSignificantEntities(entitySentFreq: Map[String, Int])  = {
-    var sentIdFreq= Map[String, ArrayBuffer[Array[Int]]]()
+  def filterSignificantEntities(entitySentFreq: scala.collection.mutable.Map[String, Int])  = {
+    val sentIdFreq= scala.collection.mutable.Map[String, ArrayBuffer[Array[Int]]]()
     for (key <- entitySentFreq.keys) {
       val ks = key.split("_")
       val entityName = ks(0)
-      var entity = ks(1)
+      val entity = ks(1)
       val sentId = ks(2).toInt
       val freq_old = entitySentFreq(key)
       val nk = entityName + "_" + entity
       //if the entity_sentenceid combination already exists in the dictionary, increase its frequency by 1, else add.
       sentIdFreq.get(nk) match {
-        case Some(i) => {
+        case Some(i) =>
           var freq_new = sentIdFreq(nk)
           var sentfreqa = Array(sentId, freq_old)
           freq_new += sentfreqa
           sentIdFreq += (nk -> freq_new)
-        }
-        case None => {
+        case None =>
           val sentfreq = ArrayBuffer[Array[Int]]()
           sentfreq += Array(sentId, freq_old)
           sentIdFreq += (nk -> sentfreq)
-        }
       }
     }
     (sentIdFreq)
   }
 
   //if key exists add+1 to its value, else add 1 as its value
-  def checkAddToMap(mapper: Map[String, Int], key: String): Map[String, Int] = {
+  def checkAddToMap(mapper: scala.collection.mutable.Map[String, Int], key: String): scala.collection.mutable.Map[String, Int] = {
     mapper.get(key) match {
-      case Some(i) => {
+      case Some(i) =>
         var freq = mapper(key)
         freq = freq + 1
         mapper(key) = freq
-      }
       case None => mapper(key) = 1
     }
-    (mapper)
+    mapper
   }
 
-  def convertMapToContextSeq(sentIdFreq: Map[String, ArrayBuffer[Array[Int]]])=
+  def convertMapToContextSeq(sentIdFreq: scala.collection.mutable.Map[String, ArrayBuffer[Array[Int]]])=
   {
     var contexts = new ArrayBuffer[Context]()
     for (key <- sentIdFreq.keys) {
@@ -196,10 +186,10 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
 
   def extractContext(doc: Document): Seq[Context] = {
     //Get all the entities and their named entity types along with the number of times they occur in a sentence
-    var entitySentFreq: Map[String, Int] = Map()
+    var entitySentFreq: scala.collection.mutable.Map[String, Int] = Map()
     for ((s, i) <- doc.sentences.zipWithIndex) {
       var entityCounter = 0
-      var indicesToSkip = ArrayBuffer[Int]()
+      val indicesToSkip = ArrayBuffer[Int]()
         for ((es, ws, ns) <- (s.entities.get, s.words, s.norms.get).zipped) {
           var string_entity_sindex = ""
           if (!indicesToSkip.contains(entityCounter)) {
@@ -225,7 +215,7 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
               else if (es.containsSlice("DATE")) {
                 entity = "DATE"
                 val split0 = ns.split("-")(0)
-                if (split0 != "XXXX" && (Try(split0.toInt).isSuccess)) {
+                if (split0 != "XXXX" && Try(split0.toInt).isSuccess) {
                   entity_name = split0
                   string_entity_sindex = entity_name + "_" + entity + "_" + i.toString
                 }
@@ -237,12 +227,10 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
           }
           entityCounter = entityCounter + 1
         }
-
-
     }
     val sf=filterSignificantEntities(entitySentFreq)
     val allContexts=convertMapToContextSeq(sf)
-    (allContexts)
+    allContexts
   }
 }
 
