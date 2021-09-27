@@ -19,9 +19,10 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
 
     // extract mentions from annotated document
     val mentions = extractor.extractFrom(doc).sortBy(m => (m.sentence, m.getClass.getSimpleName))
-    val mse=extractContextAndFindMostFrequentEntity(doc,mentions,Int.MaxValue,"DATE")
-    (doc, mentions)
+    val contextEntities=extractContextAndFindMostFrequentEntity(doc,mentions,Int.MaxValue,"DATE")
+    (doc, mentions,contextEntities)
   }
+
 
   def extractContextAndFindMostFrequentEntity(doc: Document,mentions:Seq[Mention],n:Int,entity_type:String )={
     //map each event mention to its sentence id. useful in extracting contexts
