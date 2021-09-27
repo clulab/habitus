@@ -47,7 +47,7 @@ In Senegal maturity  came in early November ( Tab.I ) for 1995.
   }
   def getMostFreqYearOverall(text: String): Seq[String] = {
     val (doc, mentions) = vp.parse(text)
-    val mse=vp.extractContextAndFindMostFrequentEntity(doc,mentions,0,"DATE")
+    val mse=vp.extractContextAndFindMostFrequentEntity(doc,mentions,Int.MaxValue,"DATE")
     (mse)
   }
 

@@ -19,7 +19,7 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
 
     // extract mentions from annotated document
     val mentions = extractor.extractFrom(doc).sortBy(m => (m.sentence, m.getClass.getSimpleName))
-    val mse=extractContextAndFindMostFrequentEntity(doc,mentions,Int.MaxValue,"LOC")
+    val mse=extractContextAndFindMostFrequentEntity(doc,mentions,Int.MaxValue,"DATE")
     (doc, mentions)
   }
 
@@ -186,7 +186,7 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
         for ((es, ws, ns) <- (s.entities.get, s.words, s.norms.get).zipped) {
           var string_entity_sindex = ""
           if (!indicesToSkip.contains(entityCounter)) {
-            if (es == "B-LOC" || es=="DATE") {
+            if (es == "B-LOC" || es=="B-DATE") {
               var entity = es
               var entity_name = ws.toLowerCase
               if (es == "B-LOC") {
@@ -205,7 +205,7 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
                 }
                 string_entity_sindex = entity_name + "_" + entity + "_" + i.toString
               }
-              else if (es.containsSlice("DATE")) {
+              else if (es.contains("B-DATE")) {
                 entity = "DATE"
                 val split0 = ns.split("-")(0)
                 if (split0 != "XXXX" && Try(split0.toInt).isSuccess) {
