@@ -50,5 +50,20 @@ In Senegal maturity  came in early November ( Tab.I ) for 1995.
     val mse = getMSFreq0Sent(sent1)
     mse.head should be ("matto grosso")
   }
+  // test document which have more than one event mention  in the document
+  val sent2 ="""
+In Matto Grosso  with sowing between 7 and 22 July, in  maturity came in early November ( Tab.I ) .
+In United States , United States  maturity came in early November ( Tab.I ) .
+In Senegal maturity  came in early November ( Tab.I ) for 1995.
+In Senegal maturity  came in early November ( Tab.I ) for 1995.
+In Matto Grosso  with sowing between 8 and 12 July, in  maturity came in early November ( Tab.I ) .
+In Senegal maturity  came in early November ( Tab.I ) for 1995.
+"""
 
+  sent2 should "for the first event find senegal as the most frequent entity in entire document" in {
+    val mse = getMSFreq(sent2)
+    mse.head should be ("senegal")
+    mse(0) should be ("senegal")
+    mse(1) should be ("senegal")
+  }
 }
