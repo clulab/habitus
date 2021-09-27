@@ -8,7 +8,7 @@ import org.scalatest.{FlatSpec, Matchers}
 //
 
 class TestContextExtractor extends FlatSpec with Matchers {
-  val vp = VariableProcessor()
+  val vp = ContextExtractor()
 
 //pass1: test sentences which have only one event overall in the document
   val sent1 ="""
@@ -20,7 +20,7 @@ In Senegal maturity  came in early November ( Tab.I ) for 1995.
 """
 
   def getMSFreq(text: String): Seq[String] = {
-    val (doc, mentions) = vp.parse(text)
+    val (doc, mentions,contextEntities) = vp.parse(text)
     val mse=vp.extractContextAndFindMostFrequentEntity(doc,mentions,Int.MaxValue,"LOC")
     (mse)
   }
@@ -30,7 +30,7 @@ In Senegal maturity  came in early November ( Tab.I ) for 1995.
     mse.head should be ("senegal")
   }
   def getMSFreq1Sent(text: String): Seq[String] = {
-    val (doc, mentions) = vp.parse(text)
+    val (doc, mentions,contextEntities) = vp.parse(text)
     val mse=vp.extractContextAndFindMostFrequentEntity(doc,mentions,1,"LOC")
     (mse)
   }
@@ -41,12 +41,12 @@ In Senegal maturity  came in early November ( Tab.I ) for 1995.
   }
 
   def getMSFreq0Sent(text: String): Seq[String] = {
-    val (doc, mentions) = vp.parse(text)
+    val (doc, mentions,contextEntities) = vp.parse(text)
     val mse=vp.extractContextAndFindMostFrequentEntity(doc,mentions,0,"LOC")
     (mse)
   }
   def getMostFreqYearOverall(text: String): Seq[String] = {
-    val (doc, mentions) = vp.parse(text)
+    val (doc, mentions,contextEntities) = vp.parse(text)
     val mse=vp.extractContextAndFindMostFrequentEntity(doc,mentions,Int.MaxValue,"DATE")
     (mse)
   }
