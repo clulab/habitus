@@ -45,11 +45,23 @@ In Senegal maturity  came in early November ( Tab.I ) for 1995.
     val mse=vp.extractContextAndFindMostFrequentEntity(doc,mentions,0,"LOC")
     (mse)
   }
+  def getMostFreqYearOverall(text: String): Seq[String] = {
+    val (doc, mentions) = vp.parse(text)
+    val mse=vp.extractContextAndFindMostFrequentEntity(doc,mentions,0,"DATE")
+    (mse)
+  }
 
   sent1 should "find matto grosso  as the most frequent entity within 0 sentence distance" in {
     val mse = getMSFreq0Sent(sent1)
     mse.head should be ("matto grosso")
   }
+
+  sent1 should "find 1995 as the most frequently mentioned year overall in the document" in {
+    val mse = getMostFreqYearOverall(sent1)
+    mse.head should be ("1995")
+  }
+
+
   // test document which have more than one event mention  in the document
   val sent2 ="""
 In Matto Grosso  with sowing between 7 and 22 July, in  maturity came in early November ( Tab.I ) .

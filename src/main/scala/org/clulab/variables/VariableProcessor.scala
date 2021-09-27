@@ -105,7 +105,7 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
   def findMostFreqContextEntitiesForAllEvents(mentionContextMap: scala.collection.mutable.Map[String, Seq[Context]], n:Int,entityType:String):Seq[String] = {
     mentionContextMap.keys.toSeq.map(key=>findMostFreqContextEntitiesForOneEvent(key,mentionContextMap(key), entityType,n))
   }
-
+//todo: ask keith what this is aboutThe first map is keyed by entity name, entity, and sentence index.  In filterSignificantEntities these are aggregated into a key of just entity name and entity.  I don't see any filtering of "significant" things going on there.  Is something missing?  It makes me wonder if two maps are really necessary.
   def printmentionContextMap(mentionContextMap: scala.collection.mutable.Map[String, Seq[Context]]) = {
     for (mnx <- mentionContextMap.keys) {
       println(s"event : $mnx")
