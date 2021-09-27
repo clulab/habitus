@@ -56,14 +56,19 @@ In Matto Grosso  with sowing between 7 and 22 July, in  maturity came in early N
 In United States , United States  maturity came in early November ( Tab.I ) .
 In Senegal maturity  came in early November ( Tab.I ) for 1995.
 In Senegal maturity  came in early November ( Tab.I ) for 1995.
-In Matto Grosso  with sowing between 8 and 12 July, in  maturity came in early November ( Tab.I ) .
+In Burkino Faso with sowing between 8 and 12 July, in  maturity came in early November ( Tab.I ) .
 In Senegal maturity  came in early November ( Tab.I ) for 1995.
 """
 
-  sent2 should "for the first event find senegal as the most frequent entity in entire document" in {
+  sent2 should "for document with two events find senegal as the most frequent entity in entire document" in {
     val mse = getMSFreq(sent2)
-    mse.head should be ("senegal")
     mse(0) should be ("senegal")
     mse(1) should be ("senegal")
+  }
+
+  sent2 should "for document with two events find matto grosso as the most frequent entity in event1 and burkino fast for event 0" in {
+    val mse = getMSFreq0Sent(sent2)
+    mse(0) should be ("matto grosso")
+    mse(1) should be ("burkino faso")
   }
 }

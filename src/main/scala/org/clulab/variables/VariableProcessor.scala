@@ -99,13 +99,6 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
         }
       }
     }
-    if(maxFreq==0) {
-      println(s"no entity of type $entityType was found within $n sentences of the event mention: ' $mention '")
-    }
-    else
-    {
-      println(s"most freq entity of type $entityType within $n sentences of event mention ' $mention ' is ${mostFreqEntity} which occurs ${maxFreq} times")
-    }
     mostFreqEntity
   }
   //for all events, find most the frequent entity (e.g.,Senegal-LOC) within n sentences.
