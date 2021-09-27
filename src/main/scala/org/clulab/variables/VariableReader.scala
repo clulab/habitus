@@ -15,8 +15,10 @@ object VariableReader {
     assert(outputDir != null)
     val output = new File(outputDir).mkdir()
     val vp = VariableProcessor()
+    val ce= ContextExtractor()
     var seqMention = Seq[String]()
     var outputFile = outputDir+"/mentions.tsv"
+    var outputFileCtxt = outputDir+"/contextEntities.tsv"
 
     val pw = new PrintWriter(new FileWriter(new File(outputFile)))
     for(file <- FileUtils.findFiles(inputDir, ".txt")) {
@@ -28,6 +30,18 @@ object VariableReader {
       // to not overpopulate the memory. Flush findings once for each document.
       pw.flush()
     }
+
+    val pwc = new PrintWriter(new FileWriter(new File(outputFileCtxt)))
+    for(file <- FileUtils.findFiles(inputDir, ".txt")) {
+      val text = FileUtils.getTextFromFile(file)
+      val filename = file.toString.split("/").last
+      val (doc, mentions,context) = ce.parse(text)
+      println(s"Writing context from doc ${filename} to $outputFileCtxt")
+      outputMentionsToTSV(mentions, doc, filename, pwc)
+      // to not overpopulate the memory. Flush findings once for each document.
+      pwc.flush()
+    }
+
     pw.close()
   }
 }
