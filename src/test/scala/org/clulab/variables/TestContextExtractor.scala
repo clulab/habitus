@@ -25,7 +25,7 @@ In Senegal maturity  came in early November ( Tab.I ) for 1995.
     (mse)
   }
 
-  sent1 should "find senegal as the most frequent entity overall" in {
+  sent1 should "for the event sowing between 7 and 22 July find senegal as the most frequent entity in entire document" in {
     val mse = getMSFreq(sent1)
     mse.head should be ("senegal")
   }
@@ -35,9 +35,20 @@ In Senegal maturity  came in early November ( Tab.I ) for 1995.
     (mse)
   }
 
-  sent1 should "find united states as the most frequent entity overall" in {
+  sent1 should "find united states as the most frequent entity within 1 sentence distance" in {
     val mse = getMSFreq1Sent(sent1)
     mse.head should be ("united states")
+  }
+
+  def getMSFreq0Sent(text: String): Seq[String] = {
+    val (doc, mentions) = vp.parse(text)
+    val mse=vp.extractContextAndFindMostFrequentEntity(doc,mentions,0,"LOC")
+    (mse)
+  }
+
+  sent1 should "find matto grosso  as the most frequent entity within 0 sentence distance" in {
+    val mse = getMSFreq0Sent(sent1)
+    mse.head should be ("matto grosso")
   }
 
 }
