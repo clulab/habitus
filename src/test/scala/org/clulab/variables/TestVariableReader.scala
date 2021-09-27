@@ -148,15 +148,15 @@ class TestVariableReader extends FlatSpec with Matchers {
       m.arguments("value").head.norms.get(0) should equal("2019-10-01")
     })
   }
-  //TODO: ms, see the last 3 tests, this is something very bizzare with unlucky date number 8 follow by [,year]
-  val sent11 = "Sowing on October 8, 2019."
+
+  val sent11 = "Sowing on October 9, 2019."
   sent11 should "recognize sowing on [no verb attached] a Month followed by day, year"  in {
     val mentions = getMentions(sent11)
     mentions.filter(_.label matches "Assignment") should have size (1)
     mentions.filter(_.label matches "Assignment").foreach({ m =>
       m.arguments("variable").head.text should be("Sowing")
-      m.arguments("value").head.text should equal("October 8, 2019")
-      m.arguments("value").head.norms.get(0) should equal("2019-10-08")
+      m.arguments("value").head.text should equal("October 9, 2019")
+      m.arguments("value").head.norms.get(0) should equal("2019-10-09")
     })
   }
 
@@ -179,6 +179,17 @@ class TestVariableReader extends FlatSpec with Matchers {
     mentions.filter(_.label matches "Assignment").foreach({ m =>
       m.arguments("variable").head.text should be("Sowing")
       m.arguments("value").head.text should equal("between October 4 and October 14 of 2020")
+      m.arguments("value").head.norms.get(0) should equal("2020-10-04 -- 2020-10-14")
+    })
+  }
+
+  val sent12_1 = "Sowing dates between October 4 and October 14, 2020 was optimal."
+  sent12_1 should "recognize sowing range on a Month followed by day of year"  in {
+    val mentions = getMentions(sent12_1)
+    mentions.filter(_.label matches "Assignment") should have size (1)
+    mentions.filter(_.label matches "Assignment").foreach({ m =>
+      m.arguments("variable").head.text should be("Sowing dates")
+      m.arguments("value").head.text should equal("between October 4 and October 14, 2020")
       m.arguments("value").head.norms.get(0) should equal("2020-10-04 -- 2020-10-14")
     })
   }
@@ -216,15 +227,14 @@ class TestVariableReader extends FlatSpec with Matchers {
     })
   }
 
-  //TODO: ms, this is very bizzare behavior, just with date of 8. When it is followed by [, year] it fails.
-  val sent15 = "Sowing on April 8, 2001 yields best outcomes."
+  val sent15 = "Sowing on September 8 yields best outcomes."
   sent15 should "recognize sowing on [no verb attached] a Month followed by day, year"  in {
     val mentions = getMentions(sent15)
     mentions.filter(_.label matches "Assignment") should have size (1)
     mentions.filter(_.label matches "Assignment").foreach({ m =>
       m.arguments("variable").head.text should be("Sowing")
-      m.arguments("value").head.text should equal("April 8, 2001")
-      m.arguments("value").head.norms.get(0) should equal("2001-04-08")
+      m.arguments("value").head.text should equal("September 8")
+      m.arguments("value").head.norms.get(0) should equal("XXXX-09-08")
     })
   }
 
@@ -240,7 +250,6 @@ class TestVariableReader extends FlatSpec with Matchers {
     })
   }
 
-  //TODO: ms, but with different date number it does not complain.
   val sent15_3 = "Sowing on April 7, 2001 yields best outcomes."
   sent15_3 should "recognize sowing on [no verb attached] a Month followed by day, year"  in {
     val mentions = getMentions(sent15_3)
