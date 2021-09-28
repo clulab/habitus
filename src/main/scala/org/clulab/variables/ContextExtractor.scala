@@ -180,7 +180,7 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
 
   }
 
-  //todo dont use _ split. use instead a case class
+
   def convertMapToContextSeq(sentIdFreq: scala.collection.mutable.Map[entityNameEntity, ArrayBuffer[Array[Int]]])=
   {
     var contexts = new ArrayBuffer[Context]()
