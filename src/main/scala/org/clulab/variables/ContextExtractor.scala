@@ -70,7 +70,7 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
   }
 
   //map each mention to and how far an entity occurs, and no of times it occurs in that sentence
-  //todo dont map String as a key in mentionsContexts. Use an object or a case class
+
  def calculateAbsoluteDistance(mentionsSentIds: Seq[EventMention], contexts:Seq[Context])= {
    val mentionsContexts=  scala.collection.mutable.Map[EventMention, Seq[Context]]()
    for (mention <- mentionsSentIds)
@@ -184,7 +184,7 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
   {
     var contexts = new ArrayBuffer[Context]()
     for (key <- sentIdFreq.keys) {
-      val ks = key.split("_")
+      val ks = key.split('_')
       val name = ks(0)
       val entity = ks(1)
       //relativeSentDistance it will be of the form [int a,int b], where a=relative distance from the nearest mention
@@ -216,24 +216,20 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
                 var tempEntity = e
                 var tempCounter = entityCounter
                 //todo: replace negative check of o with if I-Loc- what if you see another B-LOC
-                while (tempEntity != "O") {
+                do {
                   fullName += s.words(tempCounter)
                   indicesToSkip += tempCounter
                   tempCounter = tempCounter + 1
                   tempEntity = s.entities.get(tempCounter)
                   entity_name = fullName.mkString(" ").toLowerCase()
-                }
+                }while (tempEntity == "I-LOC")
                 string_entity_sindex=Some(ContextKey(entity_name,entity,i))
-                //string_entity_sindex = entity_name + "_" + entity + "_" + i
               }
               else if (e.contains("B-DATE")) {
                 entity = "DATE"
-                //todo use head not (0)
-                val split0 = n.split('-')(0)
+                val split0 = n.split('-').head
                 if (split0 != "XXXX" && Try(split0.toInt).isSuccess) {
                   entity_name = split0
-                  //1995_DATE_1
-                  //string_entity_sindex = entity_name + "_" + entity + "_" + i
                   string_entity_sindex=Some(ContextKey(entity_name,entity,i))
                 }
               }
@@ -245,7 +241,7 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
           entityCounter = entityCounter + 1
         }
     }
-    //todo get a more meaningful name than filterSignificantEntities
+
     val sf=filterSignificantEntities(entitySentFreq)
     val allContexts=convertMapToContextSeq(sf)
     allContexts
