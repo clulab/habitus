@@ -18,7 +18,7 @@ object VariableReader {
 
     var seqMention = Seq[String]()
     var outputFile = outputDir+"/mentions.tsv"
-    var outputFileCtxt = outputDir+"/contextEntities.tsv"
+
 
     val pw = new PrintWriter(new FileWriter(new File(outputFile)))
     for(file <- FileUtils.findFiles(inputDir, ".txt")) {
@@ -31,16 +31,6 @@ object VariableReader {
       pw.flush()
     }
 
-//    val pwc = new PrintWriter(new FileWriter(new File(outputFileCtxt)))
-//    for(file <- FileUtils.findFiles(inputDir, ".txt")) {
-//      val text = FileUtils.getTextFromFile(file)
-//      val filename = file.toString.split("/").last
-//      val (doc, mentions,context) = ce.parse(text)
-//      println(s"Writing context from doc ${filename} to $outputFileCtxt")
-//      outputMentionsToTSV(mentions, doc, context, filename, pwc)
-//      // to not overpopulate the memory. Flush findings once for each document.
-//      pwc.flush()
-//    }
 
     pw.close()
   }
