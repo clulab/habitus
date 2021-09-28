@@ -119,20 +119,16 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
       }
     }
   }
-  //todo: ask keith what this is about:
-  // The first map is keyed by entity name, entity, and sentence index.
-  // In filterSignificantEntities these are aggregated into a key of just entity name and entity.
-  // I don't see any filtering of "significant" things going on there.
-  // Is something missing?  It makes me wonder if two maps are really necessary.
+  
 
   //from the list of all context words extract only ones you are interested in .eg: extract Senegal_B-LOC_0
-  def filterSignificantEntities(entitySentFreq: scala.collection.mutable.Map[String, Int])  = {
+  def filterSignificantEntities(entitySentFreq: scala.collection.mutable.Map[ContextKey, Int])  = {
     val sentIdFreq= scala.collection.mutable.Map[String, ArrayBuffer[Array[Int]]]()
     for (key <- entitySentFreq.keys) {
-      val ks = key.split("_")
-      val entityName = ks(0)
-      val entity = ks(1)
-      val sentId = ks(2).toInt
+      //val ks = key.split("_")
+      val entityName = key.entityName
+      val entity = key.entity
+      val sentId = key.index
       val freq_old = entitySentFreq(key)
       val nk = entityName + "_" + entity
       //if the entity_sentenceid combination already exists in the dictionary, increase its frequency by 1, else add.
@@ -152,7 +148,7 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
   }
 
   //if key exists add+1 to its value, else add 1 as its value
-  def checkAddToMap(mapper: scala.collection.mutable.Map[String, Int], key: String): scala.collection.mutable.Map[String, Int] = {
+  def checkAddToMap(mapper: scala.collection.mutable.Map[ContextKey, Int], key: ContextKey):Unit= {
     mapper.get(key) match {
       case Some(i) =>
         var freq = mapper(key)
@@ -160,15 +156,16 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
         mapper(key) = freq
       case None => mapper(key) = 1
     }
-    mapper
+
   }
 
+  //todo dont use _ split. use instead a case class
   def convertMapToContextSeq(sentIdFreq: scala.collection.mutable.Map[String, ArrayBuffer[Array[Int]]])=
   {
     var contexts = new ArrayBuffer[Context]()
     for (key <- sentIdFreq.keys) {
       val ks = key.split("_")
-      val name = key.name
+      val name = ks(0)
       val entity = ks(1)
       //relativeSentDistance it will be of the form [int a,int b], where a=relative distance from the nearest mention
       // and b=no of times that context word occurs in that sentence
@@ -182,7 +179,7 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
 
   def extractContext(doc: Document): Seq[Context] = {
     //Get all the entities and their named entity types along with the number of times they occur in a sentence
-    var entitySentFreq: scala.collection.mutable.Map[String, Int] = Map()
+    var entitySentFreq: scala.collection.mutable.Map[ContextKey, Int] = Map()
     for ((s, i) <- doc.sentences.zipWithIndex) {
       var entityCounter = 0
       val indicesToSkip = ArrayBuffer[Int]()
@@ -220,7 +217,7 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
                 }
               }
               if (string_entity_sindex.isDefined) {
-                entitySentFreq = checkAddToMap(entitySentFreq, string_entity_sindex.get)
+                checkAddToMap(entitySentFreq, string_entity_sindex.get)
               }
             }
           }
