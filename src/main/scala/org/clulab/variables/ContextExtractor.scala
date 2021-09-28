@@ -32,7 +32,7 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
 
     for (x<-mentions) {
         x match {
-          case m: TextBoundMention => 
+          case m: TextBoundMention =>
           case m: EventMention => mentionsSentIds += (x.words.mkString(" ")->x.sentence)
         }
     }
@@ -103,7 +103,7 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
   def findMostFreqContextEntitiesForAllEvents(mentionContextMap: scala.collection.mutable.Map[String, Seq[Context]], n:Int,entityType:String):Seq[String] = {
     mentionContextMap.keys.toSeq.map(key=>findMostFreqContextEntitiesForOneEvent(key,mentionContextMap(key), entityType,n))
   }
-//todo: ask keith what this is aboutThe first map is keyed by entity name, entity, and sentence index.  In filterSignificantEntities these are aggregated into a key of just entity name and entity.  I don't see any filtering of "significant" things going on there.  Is something missing?  It makes me wonder if two maps are really necessary.
+
   def printmentionContextMap(mentionContextMap: scala.collection.mutable.Map[String, Seq[Context]]) = {
     for (mnx <- mentionContextMap.keys) {
       println(s"event : $mnx")
@@ -119,7 +119,11 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
       }
     }
   }
-
+  //todo: ask keith what this is about:
+  // The first map is keyed by entity name, entity, and sentence index.
+  // In filterSignificantEntities these are aggregated into a key of just entity name and entity.
+  // I don't see any filtering of "significant" things going on there.
+  // Is something missing?  It makes me wonder if two maps are really necessary.
 
   //from the list of all context words extract only ones you are interested in .eg: extract Senegal_B-LOC_0
   def filterSignificantEntities(entitySentFreq: scala.collection.mutable.Map[String, Int])  = {
@@ -164,7 +168,7 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
     var contexts = new ArrayBuffer[Context]()
     for (key <- sentIdFreq.keys) {
       val ks = key.split("_")
-      val name = ks(0)
+      val name = key.name
       val entity = ks(1)
       //relativeSentDistance it will be of the form [int a,int b], where a=relative distance from the nearest mention
       // and b=no of times that context word occurs in that sentence
@@ -174,6 +178,7 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
     }
     (contexts.toSeq)
   }
+  case class ContextKey(entityName: String, entity: String, index: Int)
 
   def extractContext(doc: Document): Seq[Context] = {
     //Get all the entities and their named entity types along with the number of times they occur in a sentence
@@ -182,7 +187,7 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
       var entityCounter = 0
       val indicesToSkip = ArrayBuffer[Int]()
         for ((es, ws, ns) <- (s.entities.get, s.words, s.norms.get).zipped) {
-          var string_entity_sindex = ""
+          var string_entity_sindex:Option[ContextKey] = None
           if (!indicesToSkip.contains(entityCounter)) {
             if (es == "B-LOC" || es=="B-DATE") {
               var entity = es
@@ -201,24 +206,28 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
                   temp_entity = s.entities.get(temp)
                   entity_name = fullName.mkString(" ").toLowerCase()
                 }
-                string_entity_sindex = entity_name + "_" + entity + "_" + i.toString
+                string_entity_sindex=Some(ContextKey(entity_name,entity,i))
+                //string_entity_sindex = entity_name + "_" + entity + "_" + i
               }
               else if (es.contains("B-DATE")) {
                 entity = "DATE"
                 val split0 = ns.split("-")(0)
                 if (split0 != "XXXX" && Try(split0.toInt).isSuccess) {
                   entity_name = split0
-                  string_entity_sindex = entity_name + "_" + entity + "_" + i.toString
+                  //1995_DATE_1
+                  //string_entity_sindex = entity_name + "_" + entity + "_" + i
+                  string_entity_sindex=Some(ContextKey(entity_name,entity,i))
                 }
               }
-              if (string_entity_sindex != "") {
-                entitySentFreq = checkAddToMap(entitySentFreq, string_entity_sindex)
+              if (string_entity_sindex.isDefined) {
+                entitySentFreq = checkAddToMap(entitySentFreq, string_entity_sindex.get)
               }
             }
           }
           entityCounter = entityCounter + 1
         }
     }
+    //todo get a more meaningful name than filterSignificantEntities
     val sf=filterSignificantEntities(entitySentFreq)
     val allContexts=convertMapToContextSeq(sf)
     allContexts
