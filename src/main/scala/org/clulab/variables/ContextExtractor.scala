@@ -143,16 +143,17 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
     }
   }
 
-
+  case class entityNameEntity(entityName: String, entity: String)
   //from the list of all context words extract only ones you are interested in .eg: extract Senegal_B-LOC_0
-  def filterSignificantEntities(entitySentFreq: scala.collection.mutable.Map[ContextKey, Int])  = {
-    val sentIdFreq= scala.collection.mutable.Map[String, ArrayBuffer[Array[Int]]]()
+  def filterSignificantEntities(entitySentFreq: scala.collection.mutable.
+  Map[ContextKey, Int]):scala.collection.mutable.Map[entityNameEntity, ArrayBuffer[Array[Int]]]  = {
+    val sentIdFreq= scala.collection.mutable.Map[entityNameEntity, ArrayBuffer[Array[Int]]]()
     for (key <- entitySentFreq.keys) {
       val entityName = key.entityName
       val entity = key.entity
       val sentId = key.index
       val freq_old = entitySentFreq(key)
-      val nk = entityName + "_" + entity
+      val nk = entityNameEntity(entityName, entity)
       //if the entity_sentenceid combination already exists in the dictionary, increase its frequency by 1, else add.
       sentIdFreq.get(nk) match {
         case Some(i) =>
@@ -180,13 +181,12 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
   }
 
   //todo dont use _ split. use instead a case class
-  def convertMapToContextSeq(sentIdFreq: scala.collection.mutable.Map[String, ArrayBuffer[Array[Int]]])=
+  def convertMapToContextSeq(sentIdFreq: scala.collection.mutable.Map[entityNameEntity, ArrayBuffer[Array[Int]]])=
   {
     var contexts = new ArrayBuffer[Context]()
     for (key <- sentIdFreq.keys) {
-      val ks = key.split('_')
-      val name = ks(0)
-      val entity = ks(1)
+      val name = key.entityName
+      val entity = key.entity
       //relativeSentDistance it will be of the form [int a,int b], where a=relative distance from the nearest mention
       // and b=no of times that context word occurs in that sentence
       val relativeSentDistance=sentIdFreq(key)
@@ -215,7 +215,6 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
                 var fullName = ArrayBuffer[String]()
                 var tempEntity = e
                 var tempCounter = entityCounter
-                //todo: replace negative check of o with if I-Loc- what if you see another B-LOC
                 do {
                   fullName += s.words(tempCounter)
                   indicesToSkip += tempCounter
