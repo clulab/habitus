@@ -24,21 +24,21 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
 
   def extractContextAndFindMostFrequentEntity(doc: Document,mentions:Seq[Mention],n:Int,entity_type:String )={
     //map each event mention to its sentence id. useful in extracting contexts
-    val mentionsSentIds=  scala.collection.mutable.Map[String, Int]()
+    //val allEventMentions=  scala.collection.mutable.Map[String, Int]()
     //todo: ask keith how to do collect instead of for loop
-    // val sentIds = mentions.collect { case m: EventMention => m.sentence }
+    val allEventMentions = mentions.collect { case m: EventMention => m }
 
-    for (x<-mentions) {
-        x match {
-          case m: TextBoundMention =>
-          //todo make the map from an envent mention to a sentence. not string to string
-          //todo doc.sentences(x.sentence).getSentenceText instead of x.word.mkstring
-          case m: EventMention => mentionsSentIds += (x.words.mkString(" ")->x.sentence)
-        }
-    }
+//    for (x<-mentions) {
+//        x match {
+//          case m: TextBoundMention =>
+//          //todo make the map from an envent mention to a sentence. not string to string
+//          //todo doc.sentences(x.sentence).getSentenceText instead of x.word.mkstring
+//          case m: EventMention => allEventMentions += (x.words.mkString(" ")->x.sentence)
+//        }
+//    }
     // allContexts= map of all context entities (e.g.,Senegal) to the ids of sentences that they occur at
     val allContexts = extractContext(doc)
-    val mentionContextMap=calculateAbsoluteDistance(mentionsSentIds,allContexts)
+    val mentionContextMap=calculateAbsoluteDistance(allEventMentions,allContexts)
 
     //pick entityType from ["LOC","DATE"]; set n=Int.MaxValue to get overall context/frequency in whole document
     findMostFreqContextEntitiesForAllEvents(mentionContextMap,n, entity_type)
@@ -46,16 +46,16 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
 
   //map each mention to and how far an entity occurs, and no of times it occurs in that sentence
   //todo dont map String as a key in mentionsContexts. Use an object or a case class
- def calculateAbsoluteDistance(mentionsSentIds: scala.collection.mutable.Map[String, Int], contexts:Seq[Context])= {
-   val mentionsContexts=  scala.collection.mutable.Map[String, Seq[Context]]()
-   for (mention <- mentionsSentIds.keys)
+ def calculateAbsoluteDistance(mentionsSentIds: Seq[EventMention], contexts:Seq[Context])= {
+   val mentionsContexts=  scala.collection.mutable.Map[EventMention, Seq[Context]]()
+   for (mention <- mentionsSentIds)
    {
      var contextsPerMention = new ArrayBuffer[Context]()
     for (x<-contexts) {
       val sentfreq = ArrayBuffer[Array[Int]]()
       for (y <- x.distanceCount) {
         //take the absolute value of entities in context, and calculate relative distance to this mention
-        val rel_distance = (mentionsSentIds(mention) - y(0)).abs
+        val rel_distance = (mention.sentence - y(0)).abs
         val freq = y(1)
         sentfreq += Array(rel_distance, freq)
       }
@@ -77,7 +77,7 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
     mapper
   }
 
-  def findMostFreqContextEntitiesForOneEvent(mention:String, contexts:Seq[Context], entityType:String, n:Int)=
+  def findMostFreqContextEntitiesForOneEvent(mention:EventMention, contexts:Seq[Context], entityType:String, n:Int)=
   {
     var entityFreq = scala.collection.mutable.Map[String, Int]()
     var maxFreq = 0
@@ -98,7 +98,7 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
     mostFreqEntity
   }
   //for all events, find most the frequent entity (e.g.,Senegal-LOC) within n sentences.
-  def findMostFreqContextEntitiesForAllEvents(mentionContextMap: scala.collection.mutable.Map[String, Seq[Context]], n:Int,entityType:String):Seq[String] = {
+  def findMostFreqContextEntitiesForAllEvents(mentionContextMap: scala.collection.mutable.Map[EventMention, Seq[Context]], n:Int,entityType:String):Seq[String] = {
     mentionContextMap.keys.toSeq.map(key=>findMostFreqContextEntitiesForOneEvent(key,mentionContextMap(key), entityType,n))
   }
 
