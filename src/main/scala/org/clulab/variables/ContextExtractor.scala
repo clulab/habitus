@@ -18,11 +18,25 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
 
     // extract mentions from annotated document
     val mentions = extractor.extractFrom(doc).sortBy(m => (m.sentence, m.getClass.getSimpleName))
-    val contextEntities=extractContext(doc,mentions,Int.MaxValue,"LOC")
+
+
     val mostFreqLocation0Sent=extractContext(doc,mentions,0,"LOC")
+    val mostFreqLocation1Sent=extractContext(doc,mentions,1,"LOC")
+    val mostFreqLocation=extractContext(doc,mentions,Int.MaxValue,"LOC")
 
+    //map sent-id to event mentions, to each of the best entity locations- useful in printing. until mihai approves eventmention to be modified to hold context
+    var sentidContext=scala.collection.mutable.Map[Int,contextDetails]()
+    createSentidContext(sentidContext,mostFreqLocation0Sent,mostFreqLocation1Sent,mostFreqLocation)
+    (doc,mentions,mostFreqLocation)
+  }
+  case class contextDetails( mention: String,mostFreqLoc0Sent: String,mostFreqLoc1Sent: String, mostFreqLoc: String)
 
-    (doc,mentions,contextEntities)
+  def createSentidContext(sentidContext:scala.collection.mutable.Map[Int,contextDetails],mostFreqLocation0Sent:Seq[MostFreqEntity],mostFreqLocation1Sent:Seq[MostFreqEntity],mostFreqLocation:Seq[MostFreqEntity]): Unit= {
+    for ((zero, one, all) <- (mostFreqLocation0Sent, mostFreqLocation1Sent, mostFreqLocation).zipped) {
+      //for ((z,o,a) <- (zero,one,all).zipped) {
+      val temp = contextDetails(zero.mention, zero.mostFreqEntity, one.mostFreqEntity, all.mostFreqEntity)
+      //}
+    }
   }
 
   def extractContext(doc: Document, mentions:Seq[Mention], n:Int, entity_type:String ):Seq[MostFreqEntity]={
