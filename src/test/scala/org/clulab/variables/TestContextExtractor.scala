@@ -19,46 +19,46 @@ In Senegal maturity  came in early November ( Tab.I ) for 1995.
 In Senegal maturity  came in early November ( Tab.I ) for 1995.
 """
 
-  def getMSFreq(text: String): Seq[String] = {
+  def getMSFreq(text: String): Seq[vp.MostFreqEntity] = {
     val (doc, mentions,contextEntities) = vp.parse(text)
-    val mse=vp.extractContextAndFindMostFrequentEntity(doc,mentions,Int.MaxValue,"LOC")
+    val mse=vp.extractContext(doc,mentions,Int.MaxValue,"LOC")
     (mse)
   }
 
   sent1 should "for the event sowing between 7 and 22 July find senegal as the most frequent entity in entire document" in {
     val mse = getMSFreq(sent1)
-    mse.head should be ("senegal")
+    mse.head.mostFreqEntity should be ("senegal")
   }
-  def getMSFreq1Sent(text: String): Seq[String] = {
+  def getMSFreq1Sent(text: String): Seq[vp.MostFreqEntity] = {
     val (doc, mentions,contextEntities) = vp.parse(text)
-    val mse=vp.extractContextAndFindMostFrequentEntity(doc,mentions,1,"LOC")
+    val mse=vp.extractContext(doc,mentions,1,"LOC")
     (mse)
   }
 
   sent1 should "find united states as the most frequent entity within 1 sentence distance" in {
     val mse = getMSFreq1Sent(sent1)
-    mse.head should be ("united states")
+    mse.head.mostFreqEntity should be ("united states")
   }
 
-  def getMSFreq0Sent(text: String): Seq[String] = {
+  def getMSFreq0Sent(text: String): Seq[vp.MostFreqEntity] = {
     val (doc, mentions,contextEntities) = vp.parse(text)
-    val mse=vp.extractContextAndFindMostFrequentEntity(doc,mentions,0,"LOC")
+    val mse=vp.extractContext(doc,mentions,0,"LOC")
     (mse)
   }
-  def getMostFreqYearOverall(text: String): Seq[String] = {
+  def getMostFreqYearOverall(text: String): Seq[vp.MostFreqEntity] = {
     val (doc, mentions,contextEntities) = vp.parse(text)
-    val mse=vp.extractContextAndFindMostFrequentEntity(doc,mentions,Int.MaxValue,"DATE")
+    val mse=vp.extractContext(doc,mentions,Int.MaxValue,"DATE")
     (mse)
   }
 
   sent1 should "find matto grosso  as the most frequent entity within 0 sentence distance" in {
     val mse = getMSFreq0Sent(sent1)
-    mse.head should be ("matto grosso")
+    mse.head.mostFreqEntity should be ("matto grosso")
   }
 
   sent1 should "find 1995 as the most frequently mentioned year overall in the document" in {
     val mse = getMostFreqYearOverall(sent1)
-    mse.head should be ("1995")
+    mse.head.mostFreqEntity should be ("1995")
   }
 
 
@@ -74,13 +74,13 @@ In Senegal maturity  came in early November ( Tab.I ) for 1995.
 
   sent2 should "for document with two events find senegal as the most frequent entity in entire document" in {
     val mse = getMSFreq(sent2)
-    mse(0) should be ("senegal")
-    mse(1) should be ("senegal")
+    mse(0).mostFreqEntity should be ("senegal")
+    mse(1).mostFreqEntity should be ("senegal")
   }
 
   sent2 should "for document with two events find matto grosso as the most frequent entity in event1 and burkino fast for event 0" in {
     val mse = getMSFreq0Sent(sent2)
-    mse(0) should be ("matto grosso")
-    mse(1) should be ("burkino faso")
+    mse(0).mostFreqEntity should be ("matto grosso")
+    mse(1).mostFreqEntity should be ("burkino faso")
   }
 }
