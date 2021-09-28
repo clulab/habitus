@@ -43,12 +43,13 @@ package object utils {
       //val contextMentions=
 
       sortedMentions.foreach{
-          // Format to print: variable \t value text \t value norms \t extracting sentence \t document name \n
+          // Format to print: variable \t value text \t value norms \t extracting sentence \t document name
+        // \t Most frequent LOC within 0 sentences \t Most frequent LOC within 1 sentences.\t Most frequent LOC anywhere in the doc.\n
           // Since we only focus on the Assignment mention which includes two submentions in the same format called
           // ``variable`` and ``value`` we access the two through ``arguments`` attribute of the Mention class.
           m => try {
             pw.println(s"${m.arguments("variable").head.text}\t${m.arguments("value").head.text}\t${m.arguments("value")
-              .head.norms.filter(_.length > 2).get(0)}\t${s.getSentenceText}\t$filename\t ${Some(context(i).mostFreqLoc0Sent).get}")
+              .head.norms.filter(_.length > 2).get(0)}\t${s.getSentenceText}\t$filename\t${Some(context(i).mostFreqLoc0Sent).get}\t${Some(context(i).mostFreqLoc1Sent).get}\t${Some(context(i).mostFreqLoc).get}")
           } catch {
             case e: NoSuchElementException => println(s"No normalized value found for ${m.arguments("value").head.text} in sentence ${s.getSentenceText}!")
             case e: RuntimeException => println(s"Error occurs for sentence: ${s.getSentenceText}")
