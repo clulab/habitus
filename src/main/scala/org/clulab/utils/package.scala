@@ -31,7 +31,8 @@ package object utils {
       println("=" * 50)
     }
   }
-  case class contextDetails( mention: String,mostFreqLoc0Sent: String,mostFreqLoc1Sent: String, mostFreqLoc: String)
+  case class contextDetails( mention: String,mostFreqLoc0Sent: String,mostFreqLoc1Sent: String, mostFreqLoc: String,
+                             mostFreqDate0Sent: String,mostFreqDate1Sent: String, mostFreqDate: String)
   // extract needed information and write them to tsv in a desired format. Return nothing here!
   def outputMentionsToTSV(mentions: Seq[Mention], doc: Document,context:scala.collection.mutable.Map[Int,contextDetails],
                           filename: String, pw: PrintWriter): Unit = {
@@ -40,7 +41,7 @@ package object utils {
 
       // to keep only mention labelled as Assignment (these labels are associated with .yml files, e.g. Variable, Value)
       val sortedMentions = mentionsBySentence(i).filter(_.label matches "Assignment")
-      //val contextMentions=
+
 
       sortedMentions.foreach{
           // Format to print: variable \t value text \t value norms \t extracting sentence \t document name
@@ -49,7 +50,12 @@ package object utils {
           // ``variable`` and ``value`` we access the two through ``arguments`` attribute of the Mention class.
           m => try {
             pw.println(s"${m.arguments("variable").head.text}\t${m.arguments("value").head.text}\t${m.arguments("value")
-              .head.norms.filter(_.length > 2).get(0)}\t${s.getSentenceText}\t$filename\t${Some(context(i).mostFreqLoc0Sent).get}\t${Some(context(i).mostFreqLoc1Sent).get}\t${Some(context(i).mostFreqLoc).get}")
+              .head.norms.filter(_.length > 2).get(0)}\t${s.getSentenceText}\t$filename\t${Some(context(i)
+              .mostFreqLoc0Sent).get}\t${Some(context(i).mostFreqLoc1Sent).get}\t${Some(context(i)
+              .mostFreqLoc).get}\t${Some(context(i)
+              .mostFreqDate0Sent).get}\t${Some(context(i)
+              .mostFreqDate1Sent).get}\t${Some(context(i)
+              .mostFreqDate).get}")
           } catch {
             case e: NoSuchElementException => println(s"No normalized value found for ${m.arguments("value").head.text} in sentence ${s.getSentenceText}!")
             case e: RuntimeException => println(s"Error occurs for sentence: ${s.getSentenceText}")

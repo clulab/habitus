@@ -25,8 +25,11 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
     val mostFreqLocation0Sent=extractContext(doc,mentions,0,"LOC")
     val mostFreqLocation1Sent=extractContext(doc,mentions,1,"LOC")
     val mostFreqLocation=extractContext(doc,mentions,Int.MaxValue,"LOC")
+    val mostFreqDate0Sent=extractContext(doc,mentions,0,"DATE")
+    val mostFreqDate1Sent=extractContext(doc,mentions,1,"DATE")
+    val mostFreqDATE=extractContext(doc,mentions,Int.MaxValue,"DATE")
 
-    createSentidContext(sentidContext,mostFreqLocation0Sent,mostFreqLocation1Sent,mostFreqLocation)
+    createSentidContext(sentidContext,mostFreqLocation0Sent,mostFreqLocation1Sent,mostFreqLocation,mostFreqDate0Sent,mostFreqDate1Sent,mostFreqDATE)
 
   }
 
@@ -38,9 +41,18 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
     }
 
   }
-  def createSentidContext(sentidContext:scala.collection.mutable.Map[Int,contextDetails],mostFreqLocation0Sent:Seq[MostFreqEntity],mostFreqLocation1Sent:Seq[MostFreqEntity],mostFreqLocation:Seq[MostFreqEntity]): Unit= {
-    for ((zero, one, all) <- (mostFreqLocation0Sent, mostFreqLocation1Sent, mostFreqLocation).zipped) {
-      checkSentIdContextDetails(sentidContext,zero.sentId, contextDetails(zero.mention, zero.mostFreqEntity, one.mostFreqEntity, all.mostFreqEntity))
+  def createSentidContext(sentidContext:scala.collection.mutable.Map[Int,contextDetails],
+                          mostFreqLocation0Sent:Seq[MostFreqEntity],
+                          mostFreqLocation1Sent:Seq[MostFreqEntity],
+                          mostFreqLocation:Seq[MostFreqEntity],
+                          mostFreqDate0Sent:Seq[MostFreqEntity],
+                          mostFreqDate1Sent:Seq[MostFreqEntity],
+                          mostFreqDate:Seq[MostFreqEntity]): Unit= {
+
+    for ((zeroloc, i) <- (mostFreqLocation0Sent).zipWithIndex) {
+      checkSentIdContextDetails(sentidContext,zeroloc.sentId, contextDetails(zeroloc.mention, zeroloc.mostFreqEntity,
+        mostFreqLocation1Sent(i).mostFreqEntity, mostFreqLocation(i).mostFreqEntity,mostFreqDate0Sent(i).mostFreqEntity,
+        mostFreqDate1Sent(i).mostFreqEntity, mostFreqDate(i).mostFreqEntity))
     }
   }
 
