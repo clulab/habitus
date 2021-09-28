@@ -6,7 +6,7 @@ import org.clulab.utils._
 class VariableShell(vp: VariableProcessor) extends Shell {
   override def work(text: String): Unit = {
     // the actual reading
-    val (doc, mentions) = vp.parse(text)
+    val (doc, mentions,context) = vp.parse(text)
 
     // debug display the mentions
     displayMentions(mentions, doc)

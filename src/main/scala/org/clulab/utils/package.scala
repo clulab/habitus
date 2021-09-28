@@ -31,15 +31,17 @@ package object utils {
       println("=" * 50)
     }
   }
-
+  case class contextDetails( mention: String,mostFreqLoc0Sent: String,mostFreqLoc1Sent: String, mostFreqLoc: String)
   // extract needed information and write them to tsv in a desired format. Return nothing here!
-  def outputMentionsToTSV(mentions: Seq[Mention], doc: Document, filename: String, pw: PrintWriter): Unit = {
+  def outputMentionsToTSV(mentions: Seq[Mention], doc: Document,context:scala.collection.mutable.Map[Int,contextDetails],
+                          filename: String, pw: PrintWriter): Unit = {
     val mentionsBySentence = mentions groupBy (_.sentence) mapValues (_.sortBy(_.start)) withDefaultValue Nil
     for ((s, i) <- doc.sentences.zipWithIndex) {
 
-
       // to keep only mention labelled as Assignment (these labels are associated with .yml files, e.g. Variable, Value)
       val sortedMentions = mentionsBySentence(i).filter(_.label matches "Assignment")
+      val contextMentions=context(i)
+
       sortedMentions.foreach{
           // Format to print: variable \t value text \t value norms \t extracting sentence \t document name \n
           // Since we only focus on the Assignment mention which includes two submentions in the same format called

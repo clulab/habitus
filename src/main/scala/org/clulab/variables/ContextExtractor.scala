@@ -5,13 +5,15 @@ import org.clulab.odin.{EventMention, ExtractorEngine, Mention, TextBoundMention
 import org.clulab.processors.clu.CluProcessor
 import org.clulab.processors.{Document, Processor}
 import org.clulab.sequences.LexiconNER
-
+import org.clulab.utils.contextDetails
 import scala.collection.mutable.{ArrayBuffer, Map}
 import scala.util.Try
 import scala.util.control.Breaks._
 
 class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine) {
-  def parse(text: String): (Document, Seq[Mention],Seq[MostFreqEntity]) = {
+
+
+  def parse(text: String,sentidContext:scala.collection.mutable.Map[Int,contextDetails]) = {
 
     // pre-processing
     val doc = processor.annotate(text, keepText = false)
@@ -24,12 +26,10 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
     val mostFreqLocation1Sent=extractContext(doc,mentions,1,"LOC")
     val mostFreqLocation=extractContext(doc,mentions,Int.MaxValue,"LOC")
 
-    //map sent-id to event mentions, to each of the best entity locations- useful in printing. until mihai approves eventmention to be modified to hold context
-    var sentidContext=scala.collection.mutable.Map[Int,contextDetails]()
     createSentidContext(sentidContext,mostFreqLocation0Sent,mostFreqLocation1Sent,mostFreqLocation)
-    (doc,mentions,mostFreqLocation)
+
   }
-  case class contextDetails( mention: String,mostFreqLoc0Sent: String,mostFreqLoc1Sent: String, mostFreqLoc: String)
+
   def checkSentIdContextDetails(sentidContext:scala.collection.mutable.Map[Int,contextDetails], key:Int,value: contextDetails) = {
     sentidContext.get(key) match {
       case Some(value) =>

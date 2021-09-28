@@ -16,7 +16,7 @@ class TestVariableReader extends FlatSpec with Matchers {
   val sent1 = "Farmers’ sowing dates ranged from 14 to 31 July for the WS and from 3 to 11 March for the DS."
 
   def getMentions(text: String): Seq[Mention] = {
-    val (_, mentions) = vp.parse(text)
+    val (_, mentions,_) = vp.parse(text)
     mentions
   }
 

@@ -8,7 +8,8 @@ import org.scalatest.{FlatSpec, Matchers}
 //
 
 class TestContextExtractor extends FlatSpec with Matchers {
-  val vp = ContextExtractor()
+  val vp = VariableProcessor()
+  val ce = ContextExtractor()
 
 //pass1: test sentences which have only one event overall in the document
   val sent1 ="""
@@ -19,9 +20,9 @@ In Senegal maturity  came in early November ( Tab.I ) for 1995.
 In Senegal maturity  came in early November ( Tab.I ) for 1995.
 """
 
-  def getMSFreq(text: String): Seq[vp.MostFreqEntity] = {
+  def getMSFreq(text: String): Seq[ce.MostFreqEntity] = {
     val (doc, mentions,contextEntities) = vp.parse(text)
-    val mse=vp.extractContext(doc,mentions,Int.MaxValue,"LOC")
+    val mse=ce.extractContext(doc,mentions,Int.MaxValue,"LOC")
     (mse)
   }
 
@@ -29,9 +30,9 @@ In Senegal maturity  came in early November ( Tab.I ) for 1995.
     val mse = getMSFreq(sent1)
     mse.head.mostFreqEntity should be ("senegal")
   }
-  def getMSFreq1Sent(text: String): Seq[vp.MostFreqEntity] = {
+  def getMSFreq1Sent(text: String): Seq[ce.MostFreqEntity] = {
     val (doc, mentions,contextEntities) = vp.parse(text)
-    val mse=vp.extractContext(doc,mentions,1,"LOC")
+    val mse=ce.extractContext(doc,mentions,1,"LOC")
     (mse)
   }
 
@@ -40,14 +41,14 @@ In Senegal maturity  came in early November ( Tab.I ) for 1995.
     mse.head.mostFreqEntity should be ("united states")
   }
 
-  def getMSFreq0Sent(text: String): Seq[vp.MostFreqEntity] = {
+  def getMSFreq0Sent(text: String): Seq[ce.MostFreqEntity] = {
     val (doc, mentions,contextEntities) = vp.parse(text)
-    val mse=vp.extractContext(doc,mentions,0,"LOC")
+    val mse=ce.extractContext(doc,mentions,0,"LOC")
     (mse)
   }
-  def getMostFreqYearOverall(text: String): Seq[vp.MostFreqEntity] = {
+  def getMostFreqYearOverall(text: String): Seq[ce.MostFreqEntity] = {
     val (doc, mentions,contextEntities) = vp.parse(text)
-    val mse=vp.extractContext(doc,mentions,Int.MaxValue,"DATE")
+    val mse=ce.extractContext(doc,mentions,Int.MaxValue,"DATE")
     (mse)
   }
 
