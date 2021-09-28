@@ -30,12 +30,17 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
     (doc,mentions,mostFreqLocation)
   }
   case class contextDetails( mention: String,mostFreqLoc0Sent: String,mostFreqLoc1Sent: String, mostFreqLoc: String)
+  def checkSentIdContextDetails(sentidContext:scala.collection.mutable.Map[Int,contextDetails], key:Int,value: contextDetails) = {
+    sentidContext.get(key) match {
+      case Some(value) =>
+        println("Error. repeated key")
+      case None => sentidContext(key) = value
+    }
 
+  }
   def createSentidContext(sentidContext:scala.collection.mutable.Map[Int,contextDetails],mostFreqLocation0Sent:Seq[MostFreqEntity],mostFreqLocation1Sent:Seq[MostFreqEntity],mostFreqLocation:Seq[MostFreqEntity]): Unit= {
     for ((zero, one, all) <- (mostFreqLocation0Sent, mostFreqLocation1Sent, mostFreqLocation).zipped) {
-      //for ((z,o,a) <- (zero,one,all).zipped) {
-      val temp = contextDetails(zero.mention, zero.mostFreqEntity, one.mostFreqEntity, all.mostFreqEntity)
-      //}
+      checkSentIdContextDetails(sentidContext,zero.sentId, contextDetails(zero.mention, zero.mostFreqEntity, one.mostFreqEntity, all.mostFreqEntity))
     }
   }
 
