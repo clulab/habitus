@@ -22,31 +22,31 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
     (doc,mentions,contextEntities)
   }
 
-
   def extractContextAndFindMostFrequentEntity(doc: Document,mentions:Seq[Mention],n:Int,entity_type:String )={
     //map each event mention to its sentence id. useful in extracting contexts
     val mentionsSentIds=  scala.collection.mutable.Map[String, Int]()
-    //todo: ask keith how to do collect instead of breakable.
+    //todo: ask keith how to do collect instead of for loop
     // val sentIds = mentions.collect { case m: EventMention => m.sentence }
-
 
     for (x<-mentions) {
         x match {
           case m: TextBoundMention =>
+          //todo make the map from an envent mention to a sentence. not string to string
+          //todo doc.sentences(x.sentence).getSentenceText instead of x.word.mkstring
           case m: EventMention => mentionsSentIds += (x.words.mkString(" ")->x.sentence)
         }
     }
-
     // allContexts= map of all context entities (e.g.,Senegal) to the ids of sentences that they occur at
     val allContexts = extractContext(doc)
-    val mentionContextMap=mapMentionsToContexts(mentionsSentIds,allContexts)
-
+    val mentionContextMap=calculateAbsoluteDistance(mentionsSentIds,allContexts)
 
     //pick entityType from ["LOC","DATE"]; set n=Int.MaxValue to get overall context/frequency in whole document
     findMostFreqContextEntitiesForAllEvents(mentionContextMap,n, entity_type)
   }
+
   //map each mention to and how far an entity occurs, and no of times it occurs in that sentence
- def mapMentionsToContexts(mentionsSentIds: scala.collection.mutable.Map[String, Int],contexts:Seq[Context])= {
+  //todo dont map String as a key in mentionsContexts. Use an object or a case class
+ def calculateAbsoluteDistance(mentionsSentIds: scala.collection.mutable.Map[String, Int], contexts:Seq[Context])= {
    val mentionsContexts=  scala.collection.mutable.Map[String, Seq[Context]]()
    for (mention <- mentionsSentIds.keys)
    {
@@ -70,10 +70,8 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
   //if key exists add+1 to its value, else add 1 as its value
   def checkAddFreq(mapper: scala.collection.mutable.Map[String, Int], key: String,old_freq:Int): scala.collection.mutable.Map[String, Int] = {
     mapper.get(key) match {
-      case Some(i) =>
-        var freq = mapper(key)
-        freq = freq + old_freq
-        mapper(key) = freq
+      case Some(value) =>
+        mapper(key) = value+old_freq
       case None => mapper(key) = old_freq
     }
     mapper
@@ -119,13 +117,12 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
       }
     }
   }
-  
+
 
   //from the list of all context words extract only ones you are interested in .eg: extract Senegal_B-LOC_0
   def filterSignificantEntities(entitySentFreq: scala.collection.mutable.Map[ContextKey, Int])  = {
     val sentIdFreq= scala.collection.mutable.Map[String, ArrayBuffer[Array[Int]]]()
     for (key <- entitySentFreq.keys) {
-      //val ks = key.split("_")
       val entityName = key.entityName
       val entity = key.entity
       val sentId = key.index
@@ -150,10 +147,8 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
   //if key exists add+1 to its value, else add 1 as its value
   def checkAddToMap(mapper: scala.collection.mutable.Map[ContextKey, Int], key: ContextKey):Unit= {
     mapper.get(key) match {
-      case Some(i) =>
-        var freq = mapper(key)
-        freq = freq + 1
-        mapper(key) = freq
+      case Some(value) =>
+        mapper(key) = value+1
       case None => mapper(key) = 1
     }
 
@@ -173,7 +168,7 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
       val ctxt = new Context(name, entity,relativeSentDistance)
       contexts += ctxt
     }
-    (contexts.toSeq)
+    contexts.toSeq
   }
   case class ContextKey(entityName: String, entity: String, index: Int)
 
@@ -183,32 +178,33 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
     for ((s, i) <- doc.sentences.zipWithIndex) {
       var entityCounter = 0
       val indicesToSkip = ArrayBuffer[Int]()
-        for ((es, ws, ns) <- (s.entities.get, s.words, s.norms.get).zipped) {
+        for ((e, w, n) <- (s.entities.get, s.words, s.norms.get).zipped) {
           var string_entity_sindex:Option[ContextKey] = None
           if (!indicesToSkip.contains(entityCounter)) {
-            if (es == "B-LOC" || es=="B-DATE") {
-              var entity = es
-              var entity_name = ws.toLowerCase
-              if (es == "B-LOC") {
+            if (e == "B-LOC" || e=="B-DATE") {
+              var entity = e
+              var entity_name = w.toLowerCase
+              if (e == "B-LOC") {
                 entity = "LOC"
                 // IF  LOC has multiple tokens. (e.g., United States of America.) merge them to form one entity_name
                 var fullName = ArrayBuffer[String]()
-                var temp_entity = es
-                var temp = entityCounter
+                var tempEntity = e
+                var tempCounter = entityCounter
                 //todo: replace negative check of o with if I-Loc- what if you see another B-LOC
-                while (temp_entity != "O") {
-                  fullName += s.words(temp)
-                  indicesToSkip += temp
-                  temp = temp + 1
-                  temp_entity = s.entities.get(temp)
+                while (tempEntity != "O") {
+                  fullName += s.words(tempCounter)
+                  indicesToSkip += tempCounter
+                  tempCounter = tempCounter + 1
+                  tempEntity = s.entities.get(tempCounter)
                   entity_name = fullName.mkString(" ").toLowerCase()
                 }
                 string_entity_sindex=Some(ContextKey(entity_name,entity,i))
                 //string_entity_sindex = entity_name + "_" + entity + "_" + i
               }
-              else if (es.contains("B-DATE")) {
+              else if (e.contains("B-DATE")) {
                 entity = "DATE"
-                val split0 = ns.split("-")(0)
+                //todo use head not (0)
+                val split0 = n.split('-')(0)
                 if (split0 != "XXXX" && Try(split0.toInt).isSuccess) {
                   entity_name = split0
                   //1995_DATE_1
