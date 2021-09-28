@@ -10,8 +10,6 @@ import scala.collection.mutable.{ArrayBuffer, Map}
 import scala.util.Try
 import scala.util.control.Breaks._
 
-class Context(var location: String, var entity: String, var distanceCount:ArrayBuffer[Array[Int]])
-
 class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine) {
   def parse(text: String): (Document, Seq[Mention],Seq[String]) = {
 
@@ -33,12 +31,10 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
 
 
     for (x<-mentions) {
-      breakable {
         x match {
-          case m: TextBoundMention => break
+          case m: TextBoundMention => 
           case m: EventMention => mentionsSentIds += (x.words.mkString(" ")->x.sentence)
         }
-      }
     }
 
     // allContexts= map of all context entities (e.g.,Senegal) to the ids of sentences that they occur at
@@ -256,3 +252,5 @@ object ContextExtractor {
     new ContextExtractor(processor, extractor)
   }
 }
+
+class Context(var location: String, var entity: String, var distanceCount:ArrayBuffer[Array[Int]])
