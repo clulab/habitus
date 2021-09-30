@@ -107,15 +107,15 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
     var entityFreq = scala.collection.mutable.Map[String, Int]()
     var maxFreq = 0
     var mostFreqEntity = ""
-    for (x <- contexts) {
-      for (y <- x.distanceCount) {
-        val sentDist = y(0)
-        val freq = y(1)
-        if (sentDist <= n && x.entity.contains(entityType)) {
-          entityFreq = checkAddFreq(entityFreq, x.location, freq)
-          if (entityFreq(x.location) >= maxFreq) {
-            maxFreq = entityFreq(x.location)
-            mostFreqEntity = x.location
+    for (ctxt <- contexts) {
+      for (sentFreq <- ctxt.distanceCount) {
+        val sentDist = sentFreq(0)
+        val freq = sentFreq(1)
+        if (sentDist <= n && ctxt.entity.contains(entityType)) {
+          entityFreq = checkAddFreq(entityFreq, ctxt.location, freq)
+          if (entityFreq(ctxt.location) >= maxFreq) {
+            maxFreq = entityFreq(ctxt.location)
+            mostFreqEntity = ctxt.location
           }
         }
       }
@@ -127,21 +127,21 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
     mentionContextMap.keys.toSeq.map(key=>findMostFreqContextEntitiesForOneEvent(key,mentionContextMap(key), entityType,n))
   }
 
-  def printmentionContextMap(mentionContextMap: scala.collection.mutable.Map[String, Seq[Context]]) = {
-    for (mnx <- mentionContextMap.keys) {
-      println(s"event : $mnx")
-      for (x <- mentionContextMap(mnx)) {
-        println(s"entity string name : ${x.location}")
-        println(s"entity : ${x.entity}")
-        print(s"relativeDistance and Count :{")
-        for (y <- x.distanceCount) {
-          print(s"[${y.mkString(",")}],")
-        }
-        print(s"}")
-        println("\n")
-      }
-    }
-  }
+//  def printmentionContextMap(mentionContextMap: scala.collection.mutable.Map[String, Seq[Context]]) = {
+//    for (mnx <- mentionContextMap.keys) {
+//      println(s"event : $mnx")
+//      for (x <- mentionContextMap(mnx)) {
+//        println(s"entity string name : ${x.location}")
+//        println(s"entity : ${x.entity}")
+//        print(s"relativeDistance and Count :{")
+//        for (y <- x.distanceCount) {
+//          print(s"[${y.mkString(",")}],")
+//        }
+//        print(s"}")
+//        println("\n")
+//      }
+//    }
+//  }
 
   case class entityNameEntity(entityName: String, entity: String)
   //from the list of all context words extract only ones you are interested in .eg: extract Senegal_B-LOC_0
@@ -207,10 +207,10 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
           var EntityNameIndex:Option[ContextKey] = None
           if (!indicesToSkip.contains(entityCounter)) {
             if (e == "B-LOC" || e=="B-DATE") {
-              var entity = e
+              var namedEntityTag = ""
               var entityName = w.toLowerCase
               if (e == "B-LOC") {
-                entity = "LOC"
+                namedEntityTag = "LOC"
                 // IF  LOC has multiple tokens. (e.g., United States of America.) merge them to form one entityName
                 var fullName = ArrayBuffer[String]()
                 var tempEntity = e
@@ -222,14 +222,14 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
                   tempEntity = s.entities.get(tempCounter)
                   entityName = fullName.mkString(" ").toLowerCase()
                 }while (tempEntity == "I-LOC")
-                EntityNameIndex=Some(ContextKey(entityName,entity,i))
+                EntityNameIndex=Some(ContextKey(entityName,namedEntityTag,i))
               }
               else if (e.contains("B-DATE")) {
-                entity = "DATE"
+                namedEntityTag = "DATE"
                 val split0 = n.split('-').head
                 if (split0 != "XXXX" && Try(split0.toInt).isSuccess) {
                   entityName = split0
-                  EntityNameIndex=Some(ContextKey(entityName,entity,i))
+                  EntityNameIndex=Some(ContextKey(entityName,namedEntityTag,i))
                 }
               }
               if (EntityNameIndex.isDefined) {
