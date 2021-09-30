@@ -1,0 +1,1340 @@
+
+
+
+
+archives-ouvertes
+
+
+
+
+
+
+Increase  in  rice  productivity  in  the  Senegal  River  valley due  to  improved  collective  
+management  of irrigation schemes
+Jean-Christophe Poussin,  Youssouf  Diallo,  Jean-Claude  Legoupil,  Abdoulaye
+Sow
+
+
+4  To  cite  this  version:
+Jean-Christophe  Poussin,  Youssouf  Diallo,  Jean-Claude  Legoupil,  Abdoulaye  Sow.   Increase  
+in  rice productivity  in the  Senegal River  valley due to improved  collective  management  of  
+irrigation schemes. Agronomy  for  Sustainable  Development,  Springer  Verlag/EDP  Sciences/INRA,  
+2005,  25  (2),  pp.225-
+236.   hal-00886297
+
+
+
+
+
+
+
+
+
+HAL  Id:  hal-00886297
+https://hal.archives-ouvertes.fr/hal-00886297
+Submitted  on  1  Jan  2005
+
+
+
+
+HAL     is   a   multi-disciplinary   open    access archive  for  the  deposit  and  dissemination 
+ of  sci- entific research  documents,  whether  they are pub- lished  or  not.    The  documents   
+may  come  from teaching   and  research   institutions   in  France  or abroad,  or from public or 
+private research  centers.
+L’archive  ouverte  pluridisciplinaire  HAL,  est destinée  au  dépñt  et  a  la  diffusion  de  
+documents scientifiques  de  niveau  recherche,  publiés  ou  non, émanant  des  établissements  
+d'enseignement  et  de recherche  fran  ais  ou  Strangers,  des  laboratoires publics  ou privés.
+
+
+
+Agron. Sustain. Dev. 25 12005) 225-236 O INRA, EDP Sciences, 2005
+DOI: 10.1051/agro:2005021
+225
+
+
+Research article
+
+Increase in rice productivity in the Senegal River valley due to improved collective management of 
+irrigation schemes
+
+Jean-Christophe PoUSSIN"*,  Youssouf  DIALLO",  Jean-Claude LEGOUPIL°,  Abdoulaye Sowᵈ
+
+' Institut de Recherche pour le Développement  (IRD), BP 64501, 34394 Montpellier Cedex 5, France
+Centre National de Recherche Agronomique et de Développement  Agricole (CNRADA),  BP 22, Kaédi, 
+Mauritania
+° Centre International de Coopération pour Ie Développement  (CIRAD), avenue Agropolis,  34398 
+Montpellier Cedex 5, France West Africa Rice Development  Association  (WARDA),  BP 255, 01 Bouaké, 
+Cñte d’Ivoire
+
+(Accepted 27 January 2005)
+
+
+Abstract  — Village irrigation  schemes cover about 25to of  the irrigated area on  the two banks 
+of  the Senegal  River. We analyzed irrigation scheme and rice crop management  practices during 
+the 1998 wet season in this type of irrigation  scheme in Mauritania.  Average  yield  was
+4.8 t ha*'; problems with irrigation rules resulted in great variability of irrigation frequency 
+between fields, and sub-optimal timing of nitrogen fertilizer application  resulted in  yield 
+losses.  Based  on this diagnosis,  we suggested  to farmers  new irrigation  rules and cropping  
+calendars planned on the scale of the irrigation scheme. Planned cropping calendars were built 
+using Ca1Cu1, a software that we designed on the basis of the irrigated rice development model 
+RIDEV. These suggestions of improved collective management  were implemented  in the 1999 and 2000 
+wet seasons. Average yield reached 7.2 t ha*' in 1999 and 8.2 t ha*  in 2000, without any 
+significant increase in production costs. This great increase in rice productivity was mainly due 
+to better collective management obtained through planning cropping calendars. This result showed 
+that technical innovation is not the only way to improve productivity.
+irrigated rice / West Africa / crop management / input efficiency / decision support tool
+
+
+
+
+
+
+
+1. INTRODUCTION
+
+Irrigation  schemes in the Senegal River valley cover about 50 000 ha (SAED, 1997; SONADER, 1998). 
+During the 1998
+wet season, about 759c of this area was used, i.e. 20 000 ha in Senegal  and 18 000 ha in 
+Mauritania,  almost  exclusively  for rice (Oryza  sativa  L.).  Potential  rice grain  yields  
+(limited  by solar  radiation  and  temperature  only)  are  on  average  about 9 t ha  '  in  the  
+wet  growing  season  from  July  to  November (Dingkuhn and Sow, 1997) while actual average farmer 
+yields are  about  5  t  ha  '  (SAED,  1997;  SONADER,  1998).  Agro- nomic  studies  (Le Gal,  
+1997;  Wopereis  et  al.,  1999;  Haefele et al., 2001; Poussin et a1., 2003) identified 
+sub-optimal timing of crop management interventions (i.e. date of sowing or trans- planting, 
+herbicide and fertilizer applications,  and harvest and post-harvest activities)  as major 
+constraints.
+The structural  adjustment  programs  of  the 1990s have  put the responsibility for management of 
+irrigation schemes in Sen- egal and Mauritania mostly back into farmers' hands. Decision- making on 
+irrigation  schedules,  land  preparation,  purchase of inputs (fertilizers and herbicides), 
+harvesting and marketing of
+
+* Corresponding  author: poussin H ird.fr
+
+the product  is done collectively  on  the scale of  the irrigation scheme. Financing of production 
+costs requires credit obtained through  collective  loans,  paid  back  after  harvest.  Moreover, 
+previous loans have to be reimbursed to obtain a new one. Deci- sion-making  at the field  level  
+by individual  farmers is, there- fore, strongly influenced by decisions taken collectively at the 
+irrigation scheme level(Poussin, 1995; Le Gal and Papy, 1998). Moreover, improving the productivity 
+for individual farmers in the collective irrigation  scheme is not sustainable.
+To improve  rice  productivity,  best-bet  cropping  calendars need, therefore,  to be determined  
+collectively  at both scheme and field levels. We hypothesize  that planning crop calendars on  the 
+scale of  the irrigation  scheme  before the beginning  of the crop season can improve input 
+efficiency and rice produc- tivity without any technical innovation.
+The objectives of this study were to (i) investigate determi- nants of rice yield in a village 
+irrigated scheme of the Senegal River valley; (ii) develop and evaluate a decision-support tool for 
+improved cropping calendars at the irrigation scheme level;
+(iii) analyze the effects of changes in collective decision-mak- ing on rice yields and 
+profitability.
+
+
+http //www edpsciences org/aqro      http //dx doi org/10 1051/aqro 2005021
+
+
+226                                                                                   J.-C. Poussin 
+et a1.
+
+
+2. MATERIALS  AND METHODS
+
+2.1. Site description
+Studies  were implemented  in the village irrigation  scheme of  Nakhlet, a small village on the 
+northern bank of the Senegal River, 60 km east of Rosso (16° 29’ N, 15° 12’ W) in Mauri- tania. 
+This type of irrigation scheme (or perimeter), with an area of below 50 ha and cultivated by 
+farmers from a single village, covers about 25% of the irrigated area on the two banks of the 
+Senegal River (SAED, 1997; SONADER, 1998).
+The perimeter of  Nakhlet was built in 1981 for the Mauri- tanian irrigation and extension 
+authority, the “Société Nation- ale de Développement  Rural” (SONADER). It covers 27.5 ha, with 119 
+fields cultivated  by 29 farmers. Irrigation is carried out through pumping from a tributary of the 
+Senegal River. Irri- gated rice is cultivated only during the wet season, from mid- June to the end 
+of November. Crop establishment in all fields is realized using a disk plow  and direct sowing ot 
+pre-germi- nated seed. In 1998, 1999 and 2000, farmers used three indica cultivars  with  slender  
+grain:  Sahel  108  (IR13240-108-2-2-3, short duration), Jaya  (medium  duration)  and Sahel  202 
+(ITA
+306, medium duration). The potential yields of these three cul- tivars are similar and are on 
+average about 8 to 9 t ha  l  in the
+wet season (Dingkuhn and Sow, 1997; WARDA, 1999).
+After  about  10  years  under  semi-public  management,  the Nakhlet farmers' organization took 
+over the perimeter manage- ment  from  1992.  The  farmers'  organization  manages  credit 
+provision, water pumping and irrigation, input supply (i.e. her- bicides, fertilizers, fuel, etc.), 
+and land preparation. Field irri- gation is done by farmers on a rotational basis. This functioning 
+is typical of the village irrigation schemes on the two banks of the Senegal River (Diemer and van 
+der Laan, 1987).
+
+
+2.2.  Agronomic, hydraulic and economic survey
+
+All 119 fields in the Nakhlet perimeter were monitored dur- ing  the  wet  seasons  of   1998,  
+1999  and   2000  (1998WS, I999WS, 2000WS). The survey carried out in the l998WS was used to 
+determine the initial situation in terms of crop and water management, and sources of yield gap and 
+variability. The top- soil  (0  to 0.2 m depth)  from  all fields  was  sampled  in  1998 before 
+the onset of the growing season (one composite sample from 4 samples taken at random per field). 
+Soi1 analyses (clay content, C and N content, P-Olsen, pH, electrical conductivity, CEC and 
+exchangeable K) were conducted in the IRD labora- tory in Dakar, Senegal, following standard  
+methodologies.
+The cultivars sown, type of seed (certified or retained from previous harvest), types and rates of 
+applied fertilizers, type of weed control (manual or chemical) and rates of applied herbi- cides 
+were recorded for each field. The dates of each manage- ment  intervention  (i.e.  land  
+preparation,  irrigation,  sowing, weed control, fertilizer applications and harvesting) were also 
+recorded.  Moreover,  visual  scores  of  weed  infestation  were taken at panicle initation in 
+each field. Four scores, correspond- ing to four classes of surface area coverage by weeds, were 
+dis- tinguished: 0 for none; 1 for weak (less than 10% ot surface area coverage by weeds); 2 for 
+strong (between 10 and 30%), 3 for
+very strong (more than 30% of surface area coverage by weeds). Poussin et al. (2003) showed that a 
+weed surface cover of  less than 10% at panicle initation corresponded  to a dry weed bio- mass of 
+between 0 and 24 g m*², a surface cover between 10 and 309o corresponded  to a weed biomass of 
+between 13 and
+228 g m  2, and a cover  of  more than  309a  corresponded  to a
+biomass greater than 130 g m  2.Grain yield (corrected for l49o
+moisture) was determined at maturity in the center of each field using a sampling area of 25 m*. 
+Grain rice yield of the whole field can be slightly overestimated, but comparisons  between years 
+at the perimeter level are still relevant.
+The volume of water pumped into the Nakhlet perimeter in 1998 and 1999 was monitored daily during 
+the wet season. The discharge  measurement   at  the  head  of   the  perimeter  was ensured  
+through  a  rectangular  weir  installed  at  the  outflow point of the stilling basin of  the 
+pump. The characteristics of this flume (length, width and discharge coefficient) enabled the 
+calculation,  using  the Manning-Strickler formula,  of  the dis- charge  according  to  the  water 
+ level  upstream  of  the  flume,
+measured through a gauge p1aced inside the stilling basin (Bos et a1., 1991): Q = 
+Cd.b.(2.g)0,5.H''5. Where Q is the discharge (in m3 s*¹), b the breadth of the control section (m), 
+Cd the dis-
+charge coefficient, g the gravitational acceleration  (m s²) and H  the  upstream  head  above  the 
+ crest  (m).  A  counter  was installed on the pump to measure the operational hours. Irriga- tion 
+water volume was estimated to be 709c of pumped inflow to allow for conveyance losses (Tuzet and 
+Perrier, 1998). We further assumed that irrigation  water was distributed homoge- neously  in  the  
+irrigated  fields.  No  measurements  were  con- ducted during the 2000 wet season, as similar 
+water allocation rules were applied  to those in 1999.
+Farmers financed their production costs through bank loans obtained  by  the farmers'  
+organization.  The  Nakhlet farmers' organization  purchased inputs and provided farmers with cer- 
+tified seeds, fertilizers and herbicides, according  to the area of their  fields.  After  harvest, 
+ farmers  reimbursed  the  farmers' organization  in  rice  paddy,  which  was  sold  by  the 
+farmers' organization  to pay  back the bank.  Rice paddy  is sold  to the state,  which  
+guarantees  a paddy  price of  between  38 and  45 Uguiya (Mauritanian  currency [UM]) per kg (1 UM 
+= 0.0032 Euro as of March 2004), depending on milling recovery (SON- ADER, 1998). A financial 
+survey was conducted at the perim- eter  level  during  the  1998,  1999  and  2000  wet  seasons. 
+Production costs were calculated for each individual field. Irri- gation costs included fuel, 
+engine oil, maintenance  and pump attendant salary. Cropping costs included land preparation, use 
+of  certified  seeds,  and purchase of  fertilizers  and  herbicides. Their costs corresponded to 
+suppliers' and providers' invoices. Costs  of  seeds  retained  from  the previous  harvest  were 
+esti- mated  as 45  UM  kg*'.  Harvest  was done  manually  by  each farmer in the 1998 and 1999 
+wet seasons and by a combine har- vester through a service provider in the 2000WS. Comparison 
+between  years  was  made excluding  harvest  costs.  Organiza- tional changes in 1999 and 2000 did 
+not modify the amount of work  done  by  the  farmers.  Comparison  between  years  was made 
+excluding labor costs. The gross product of the perimeter corresponded  to  the  total  rice  paddy 
+ production  value.  The average paddy selling price was 42 UM kg*’
+
+
+Increase in rice productivity  in the Senegal River valley due to improved collective management of 
+irrigation scheme             227
+
+
+
+2.3.  Use of models for diagnosis: evapotranspiration, potential yield and development of irrigated 
+rice
+Daily rainfall during the 1998, 1999 and 2000 wet seasons was measured in Nakhlet using a 
+pluviometer. Reference eva- potranspiration  was  calculated   using  the  Penman-Monteith equation 
+ (Smith  et a1.,  1992; Allen et a1.,  1998) and  weather data  recorded  at the experimental  
+station  of  WARDA  (West African Rice Development Association) in Fanaye (16° 33’ N, 15° 46’ W), 
+near  Nakhlet,  on  the Senegalese  bank. The eva- potranspiration of  rice is calculated  by 
+multiplying  the refer- ence evapotranspiration with a varying crop factor (kc). The set of  
+kc-values  given  by FAO (1986)  and Siddeek et al. (1988) are used:  kc  being  1.15 during  the  
+vegetative  growth  phase,
+1.3 during the reproductive phase, and 1.05 after the first week of maturation. Cumulative 
+potential evapotranspiration of rice during the crop season was compared with the total of 
+irrigation water supply and rainfall.
+The  rice  growth  model  ORYZAS  (Dingkuhn  and  Sow, 1997) simulates energy-limited and 
+temperature-limited poten- tial rice yield in the Sahel using daily minimum and maximum 
+temperatures, solar radiation and geographical latitude (to cal- culate photoperiod). This model 
+was used to calculate potential yields  in  the 1998WS,  1999WS  and  2000WS  using  climatic data 
+recorded in Fanaye.
+The rice phenology  model RIDEV (Dingkuhn  et a1., 1995) simulates irrigated rice development in 
+the Sahel and provides crop management recommendations based on crop phenology at the field level. 
+For a cultivar, a sowing date and a planting method  (direct  sowing  or  transplanting),  RIDEV  
+provides
+(i) the percentage of spikelet sterility due to cold or heat during flowering;  (ii)  dates  of  
+critical  stages  in  rice  development (flowering  and  maturity),  and  (iii)  optimal  timing  
+for  trans- planting,  weeding,  fertilizer  application,  last drainage  before harvest and 
+harvest. Input data are geographical latitude of the site, daily  minimum  and maximum  
+temperatures,  and photo- thermal characteristics of the rice cultivar (Dingkuhn and Miezan, 1995). 
+This model was used to reconstruct the rice development and to determine spikelet sterility 
+percentage in each field dur- ing the wet seasons of 1998, 1999 and 2000 using daily tem- peratures 
+recorded in Fanaye. RIDEV was also used to evaluate differences  between optimal and actual 
+cropping calendars in each field.
+
+2.4. Planning cropping calendars at the perimeter level
+RIDEV was used to develop Ca1Cu1(“Ca1endrier Cultural”), a software package written in the C 
+language for the Microsoft Disk Operating System, that provides an optimal cropping cal- endar for 
+irrigated rice on the scale of irrigation schemes in the Sahel   (Poussin,   2000).  This  cropping 
+ calendar   takes  into account  the organization  of  collective  operations  (i.e. opera- tions 
+that are collectively  managed):  mechanized  land prepa- ration,  flooding   before  land  
+preparation   (pre-flooding)  or before  sowing  (flooding),  transplanting  and mechanized  har- 
+vest(manual harvest is often carried out individually, but mech- anised  harvest  is  carried  out  
+collectively).  Input  data  are:
+(i) planned date for the start of the sowing period; (ii) rice cul- tivar sown; (iii) planting 
+method (assumed to be common to all fields); (iv) duration of each collective operation for the 
+whole
+
+
+perimeter,  i.e.  land  preparation,  flooding  and  pre-flooding (assumed  to last  the  same  
+time),  transplanting  (if  this  is  the planting method chosen) and harvest. Moreover, in the 
+case of pre-flooding,  the average duration of soil drainage is needed.
+To prevent leakage, flooding and land preparation are usu- ally not performed at the same time; 
+fields are usually flooded just before sowing or transplanting  and this first flooding can last 2 
+days for each field. The optimal timing of transplanting, fertilizer top-dressed applications and 
+harvest are based on rice phenology.  To  obtain  an  optimal  cropping  calendar  in  each field, 
+operations  (sowing,  transplanting, fertilizer top-dressed applications and harvest) should have 
+the same duration at the perimeter  level.  Without  a  common  duration  (for  example, sowing 
+nursery lasts 2 days and transplanting  lasts 15 days on the scale of the perimeter), timing will 
+be sub-optimal in some fields. The slowest collective operation set is therefore the com- mon 
+duration of all the cultural interventions, particularly sowing.
+Farmers   often   choose   their   rice   cultivar   individually (Poussin, 1995) and direct sowing 
+and transplanting can coexist in the same irrigation  scheme (Poussin,  1997).  Nevertheless, they 
+can agree to choose one or two common cultivars, or cul- tivars with similar duration. The cultivar 
+with the shortest dura- tion  would  then  be sown  at  the end  of  the  sowing  period  to 
+minimize the total crop duration on the scale of the perimeter. Direct sowing and  transplanting  
+lead to different  crop devel- opment duration for the same cultivar. In the case of both plant- 
+ing  methods,  two  cropping  calendars  at  the  perimeter  level should be made.
+Ca1Cu1 uses the phenology  model RIDEV (Dingkuhn et a1., 1995) to simulate rice development  for 
+the first cultivar sown at the beginning of the sowing period (S1), and for the second cultivar 
+sown at the end of the sowing period (S2). The duration of  the sowing  period is the duration  of 
+the slowest collective operation. These 2 simulations (S1 and S2) are made using his- torical 
+weather data recorded near the site. Each simulation pro- vides average and extremes of dates for 
+several stages (Fig. 1): start  of  tillering,  panicle  initiation,  heading,  flowering  and 
+maturity.  Spikelet  sterility  percentages  (average  and  maxi- mum) for S1 and S2 are also 
+calculated.
+At the perimeter level, the timing of each stage will be an average  between the mean of  dates for 
+S1 and S2, and could start at the earliest at the minimum date for SI  and could end at the latest 
+at the  maximum date for S2. The starting and end dates (averages  and extremes)  of crop 
+management  interven- tions (weed management, fertilizer applications,  last drainage and harvest) 
+are based on rice phenology. The first flooding can last 2 days for each field and ends the day  
+before sowing (or transplanting); land preparation ends just before flooding starts (it can end at 
+the latest the day before the end of flooding); pre- flooding starts according  to the duration of 
+soil drainage.
+The weeding and fertilizer  management  suggested  by Cal- Cul  complies   with  WARDA   
+recommendations  (Wopereis et a1., 2001). The first weeding can be done chemically with pre- 
+emergence or post-emergence herbicides, and a second weeding can be done manually before the second 
+N top dressing. Nitro- gen  fertilizer  supply  is suggested  to be split  into  2 or  3 top- 
+dressed applications at the start of tillering, panicle initation and possibly heading. P and K 
+fertilizer management is not specified. Contrary to SONADER and SAED (“Société d’Aménagement
+
+
+228                                                                                             
+J.-C. Poussin et a1.
+
+
+NAKHLET - PLANNED CROPPING CALENDAR FOR THE 1999 WET SEASON
+
+Crop establishment: DIRECT SOWING
+With pre-flooding (soil drainage delay: 20 days)
+Land preparation:  2 days Flooding        : 12 days
+Harvest        : 10 days
+Sowing is staggered according to the duration of flooding (12 days)
+
+Cultivar (first sowing) : Jaya (spikelet sterility  mean: 1.2%, maxi: 11.5%) Cultivar (last sowing) 
+: Jaya (spikelet sterility  mean: 1.0%, maxi: 14.2%)
+
+PLANNED CROPPING CALENDAR
+JUNE                        JULY
+1 1 I  I  T T 1 1 11  2 2 2 2 2 2 2 2 2 2 3                           11  1 1 1 I  I  T T 12  2 2 2 
+2 2 2 2 2 2 3 3
+1234567890123456789012345678901234567890123456789012345678901
+
+Start tiller.                                                         _
+Pre-flooding   .....            ---------->.................................
+Land prepar.   .........................           ---------->.............
+Flooding       .....................................           ............
+Weed. pre-emerg.....................................           ............
+Sowing        ........................................            .........
+Weed. post-emer.                                                      @
+AUGUST                       SEPTEMBER
+1111111111222222222233           111111111122222222223
+1234567890123456789012345678901123456789012345678901234567890
+
+Start tiller.             
+Panicle Init.  ................................<               >...........
+Heading       ....................................................<--       
+post-emery..................................................
+1’ N topdress.               
+Manual weeding ..............................<--           --->.............
+2’ N topdress. ................................<--           --->...........
+3” N topdress.                                                <——       
+OCTOBER                      NOVEMBER
+1111111111222222222233           111111111122222222223
+1234567890123456789012345678901123456789012345678901234567890
+Heading               >....................................................
+Flowering      .<--          --->..........................................
+Maturity      ...............................<----            ---->........
+3” N topdress.     --->....................................................
+Drainage       ................<--           --->...........................
+Harvest        ...............................<----            ---->........
+Irrigation will  last 147 days (pre-flooding included)
+
+Figure 1. Planned cropping calendar at the scheme level determined with CalCul software for the 
+1999 wet season. Averages in rice phenology stages are indicated  with light gray  blocks; averages 
+in crop management interventions are indicated  with dark gray blocks. Earliest and latest dates 
+are indicated by ‘<’ and ‘>’, respectively, it they differ from average dates. Land preparation can 
+be done at the latest 1 day before flooding, and pre-flooding has to be done at the latest 20 days 
+fsoil drainage delay) before land preparation.
+
+
+
+
+et d’Exploitation des terres du Delta et de la vallée du Sénégal”,        each operation in the 
+fields should follow the water allocation Senegalese  irrigation  and  extension  authority)  
+recommenda-        cycle.
+tions, farmers generally  merge P fertilizer with the first N tO  -             CalCul software was 
+used to make the planned cropping cal- dressed   application   (Wopereis  et  a1.,  1999;  Poussin  
+et  al.,        endars of  the 1999 and 2000 wet seasons. Simulation calendars 2003). Basal 
+application of K fertilizer before land preparation        were made taking into account technical 
+choices made by farm- depends  on  soil exchangeable  K status  (Haefele  et a1.,  2001).        
+ers  (cultivar,  sowing  period,  planting  method  and  use of  pre- Cropping  calendars for each 
+field should follow  the cropping        flooding) and using historical  weather data recorded in 
+Rosso calendar built on the scale of the perimeter. The realization of        between  1970 and 
+1984.
+
+
+Increase in rice productivity  in the Senegal River valley due to improved collective management of 
+irrigation scheme             229
+
+2.5. Technical organization changes
+Surveys during the 1998WS showed great variability in irri- gation  frequency  between  fields,  
+and  sub-optimal  timing  of nitrogen fertilizer application  resulted in rice yield losses (see 
+details in results and discussion). This diagnosis of the 1998WS
+
+
+delay  was, therefore,  17 days for Jaya and 20 days for Sahel 108.
+RIDEV simulations indicated no problems with spikelet ste- rility in any field (i.e. simulated  
+spikelet sterility ratio < 59c) and  average  of  potential  yield  calculated   with  the  model
+ORYZAS was 8.7 t ha*’ for Jaya and 8.2 t ha*' for Sahel 108.
+
+was  explained  and  discussed  with  farmers  during  a  general meeting  in  Nakhlet  in  April  
+1999.  Farmers  were  invited  to
+Rice grain yield measured  at maturity  ran to 7.1 t ha*¹, with  an average of 4.8 t ha
+ed from 2.7 t ha*' Low  yields  were
+
+implement  several  changes  in  their  technical  organization.
+These changes were meant to (i) reduce the variability in irri- gation frequency between fields and 
+(ii) reduce the gap between optimal and actual cropping calendars.
+Thus, it was suggested to continue the water allocation cycle after rain (i.e. water allocation is 
+not re-initialized and re-starts alter rain in the next fields). In order to install an information 
+system on field irrigation,  a map of the perimeter (based on a cadastral survey; all the farmers 
+could identify their own fields on this map) was posted showing  weekly  which fields had to be 
+irrigated (based on the irrigation schedule). The farmer who was in charge of field irrigation had 
+to notify on this map which fields were irrigated in order to inform the other farmers (field 
+irrigation is done by farmers on a rotational basis). It was also suggested they should plan 
+cropping calendars at the perimeter level for the next wet season and post a map of the perimeter 
+(based on a cadastral survey) showing weekly which operation had to be done and which field had to 
+be treated (based on the planned cropping calendars and water allocation cycle). Agri- cultural 
+advisors of SONADER, that were present at the general meeting, also suggested in the 1999WS 
+pre-flooding one month before land preparation  in order to reduce early weed infesta- tion,  and  
+using  certified  seed  of  Sahel  202  in  the  2000WS. Farmers accepted  these suggestions.  They 
+chose furthermore to grow only one cultivar (Jaya in the 1999WS and Sahel 202 in the 2000WS) and to 
+delay the sowing period to make sure harvest would be alter the rainy period.
+Planned  cropping  calendars  were  built  for  the  1999  and 2000WS using Ca1Cu1 (Fig. l). 
+Flooding was the slowest collec- tive operation and set the common duration ot crop management 
+interventions  on  the  scale  of  perimeter.  After  this  planning, there was no interference in 
+farmers' practices during the crop- ping season. The surveys  made in the 1999WS  and 2000WS were 
+compared with the 1998WS to evaluate the effects of these changes on yields and profitability.
+
+
+3. RESULTS AND DISCUSSION
+
+3.1. Diagnosis of the 1998 wet season
+In the  I998WS, farmers  sowed Jaya between  20 June and 1 July (Tab. I) on 15.5 ha (65 fields) and 
+Sahel 108 on 12.5 ha (54 fields). Sahel 108 was cultivated in Nakhlet for the first time that  
+year.  Sahel  108  seeds  were  certified;  Jaya  seeds  were retained from the previous harvest. 
+Harvest occurred from 4 to 7 November, an average of 135 days after sowing for Jaya and 129 days 
+after sowing for Sahel 108. All fields were manually harvested. Maturity dates simulated with the 
+model RIDEV for each field were an average of 118 days after sowing for Jaya and 109 days after 
+sowing for Sahel 108. The average harvest
+mainly  localized  in  the  fields  far  away  from  the  irrigation source. The average yield for 
+Jaya (5.5 t ha   ) was significantly higher (Student's test, P < 0.0001) than for Sahel 108 (4.0 t 
+ha° ). Farmers wanted therefore to understand the origins of yield var- iability and the clear 
+differences between cultivars.
+3.1.1. Soif variability
+The results of soil analyses corresponded well with soil char- acteristics  in  irrigated  schemes  
+of  the  Senegal  River  valley described by Haefele et al. (2001). Topsoil clay content varied 
+with distance from the bank, ranging from about 359o to 559c. C content ranged from 4.4 to 7.9 g mg 
+kg    soil, with an average of 6.2 g kg° , and  N content ranged from 0.37 to 0.71 g kg°' soil,  
+with  an average of  0.52 g kg* . CEC varied  from 18  to 29 cmol kg*¹ and  was well correlated  
+with clay content (r² 0.823). Exchangeable K ranged from 0.4 to 0.9 cmol kg*' soil, with an average 
+of 0.7 cmol kg*'. P-Olsen ran  ed from 4.3 to 17 mg kg  ' soil, with an average of 10.2 mg kg°   P 
+and K avail- abilities are above the critical levels for rice (Dobermann et al., 1995; Sanchez, 
+1976). Electrical conductivity ranged from 0.4 to 1.5 mS cm*¹ with an average of 0.9 mS cm*¹, and 
+pH ranged from 5.8 to 6.5 with an average of 6.1, which do not constitute constraints for irrigated 
+ rice cropping  when  irrigation  is well managed (Asch and Wopereis, 2000). We assumed, therefore, 
+that initial soil P and K status, and soil salinity levels when irri- gation is well managed,  were 
+not hampering rice growth.
+3.1.2. Irrigation management
+Irrigation started on 19 June 1998 with flooding before direct sowing  and ended on 30 September  
+1998. The  total  pumped water volume was 265 700 m3, including 79 000 m3 for flood- ing (Tab. II). 
+The average irrigation water supply in the fields was estimated  at 756 mm and rainfall  was 207  
+mm,  whereas evapotranspiration of the rice was estimated  at 802 mm. The total of irrigation water 
+supply and rainfall was about 160 mm above  the  evapotranspiration  of  the  rice,  but  water  
+losses through percolation could be estimated at about 2 mm per day (i.e. more than 200 mm from 
+sowing to maturity) for this type of soil (Raes et a1., 1997).
+Fields were irrigated 4 to 9 times after flooding. Estimated irrigation water supply (flooding 
+included) ranged from 528 mm to 828 mm as a function of irrigation frequency (Tab. III). Irri- 
+gation frequency and irrigation water supply were lower in the fields relatively far away from the 
+irrigation source, that were mostly sown with Sahel 108. Water allocation  rules based on 
+re-initializing the water allocation cycle after rain contributed to  this  irrigation  frequency  
+heterogeneity  (water  allocation cycle started in the fields near to the irrigation source). 
+Effects of irrigation frequency (through irrigation water supply and risk of  water  shortage)  on  
+rice  yield  during  the  1998WS  were strongly significant (Student's  test, P < 0.0001). Fields 
+irrigated
+
+
+230                                                                                             
+J.-C. Poussin et a1.
+
+
+Table I. Actual and planned cropping calendars at the perimeter level during the 1998, 1999 and 
+2000 wet seasons. DAS: days after sowing; SD: standard deviation; PI: panicle initiation; TSP: 
+triple superphosphate (209c P); DAP: diammonium phosphate (18 to N, 209c P).
+
+
+1998 wet season Actual
+
+1999 wet season
+Planned                        Actual
+
+2000 wet season
+Planned                         Actual
+
+Pre-tlooding Land preparation Flooding
+Sowing
+
+
+
+Weeding
+timing                         None                        5/6—17/6                      I 6/5—7/6  
+                       None                            none timing                     14/6-17/6    
+                 25/6-7/7                       5/7-5/7                       7/7-18/7              
+       10/7-14/7 timing                      19/6—1/7                      8/7—19/7                 
+    10/7—22/7                    19/7—30/7                     21/7—4/8 timing                      
+20/6—1/7                     11/7—22/7                    11/7—22/7                     22/7—2/8    
+                  22/7—4/8
+Sown cultivar and area            Jaya: 15.0 ha               Jaya: 27.5 ha               Jaya: 
+26.6 ha          Sahel 202: 27.5 ha      Sahel 202: 22.5 ha
+Sahel  US: 12.5 ha                                           Sahel 108: (1.9 ha                     
+                           Jaya: 5.0 ha
+type and rate             2 1 2-4D ha°'               2 1 2-4D ha°'                    manual       
+             2 1 2-4D ha°’               2 1 2-4D ha°’
++ 4 I Propanil  ha*'      + 4 1 Propanil  ha*'                                          + 4 I 
+Propanil  ha*’      + 4 1 Propanil  ha*'
+timing                      17/7-2/8                      1/8-11/8                     15/7-13/9    
+                11/8-22/8                    19/8-25/8 DAS (days): average (SD)                27 
+(4.2)                            21                            25 (10)                            
+21                            24 (3.6)
+1st fertilizer application:             type and rate          100 kg TSP ha*'         100 kg DAP 
+ha*’         150 kg urea ha*’         100 kg DAP ha*’         150 kg urea ha*’
++ 125 kg urea ha°'       + 50 kg urea ha°’                                            + 50 kg urea 
+ha°'
+timing                      24/7—9/8                      3/8—13/8                      10/8—1/9    
+                 14/8—25/8                     22/8—4/9 DAS (days): average (SD)                36 
+(4.4)                            23                           32 (3.8)                            
+23                           29 (4.4)
+2nd fertilizer application:            type and rate          1 25 kg urea ha°’         150 kg urea 
+ha°’         150 kg urea ha°’         150 kg urea ha°'         150 kg urea ha°’ timing              
+        19/8—6/9                      5/9—15/9                      8/9—19/9                     
+18/9—27/9                    25/9—4/10
+DAS (days): average (SD)           Jaya: 60 (4.2)                       56                          
+ 59 (3.2)                            58                           62 (4.5)
+Sahel 108: 59 (5.5)
+
+Total N applied (kg ha    ):          average (SD)                 117 (11) Total P applied (kg ha  
+ ):           average (SD)                   19 (4) Weed infestation score at PI       average (SD) 
+                1.5 (1.2) Irrigations after flooding:      average (min-max)           6.5 (4—9) 
+Maturity:                                      DAS (days)                 Jaya: 118
+Sahel 108: 109
+IU
+20
+
+
+
+118
+152 (22)
+0
+1.1 (1.6)
+8.2 (8—9)
+116
+110
+20
+152 (23)
+0
+0.8 (1.2)
+8.7 (8—9)
+122
+
+Harvest:
+type                         manual
+timing                    04/11—7/11 DAS (days): average (SD)          Jaya: 135 (2.3)
+Sahel 108: 129 (2.5)
+
+6/11—17/11
+118
+manual
+1 2/11—14/11
+118 (3.3)
+
+20/11—1/12
+121
+combine harvesting 08/12—9/1 2
+133 (4.0)
+
+Actual yield (Mg ha*'):               average (SD)
+4.50 (1.0)
+7.2 (l .4)
+5.2 (l .8)
+
+
+
+less than 7 times after flooding  were mainly  sown  with Sahel 108 (Tab. III); the irrigation  
+water supply  was below 700 mm and the average yield was 4.2  t ha*'. Fields irrigated  at least 7 
+times after flooding were mainly sown with Jaya; the irrigation water supply was above 700 mm and 
+the average yield was 5.3 t ha  '. This could explain the yield gap between Jaya and Sahel
+108. Nevertheless, the average of yield obtained with Jaya was still significantly  higher in the 
+fields irrigated 6 to 7 times after flooding,  where both cultivars  were sown (see Tab. III).
+
+3.1.3. Weeding and fertilizer management
+A total of  IU   liters of propanil and 55 liters of  2,4-D amine were bought by the Nakhlet 
+farmers'  organization  before the 1998WS  and  distributed  to  farmers  according  to  the  
+surface area of their fields. The first weeding was done using herbicides in  all  fields  with  an 
+ average  of  4  liters  of  propanil  ha     and 2 liters of 2,4-D amine ha*  , combined. The 
+timing of herbicide application  was  on  average  27  days  after  sowing.  The  delay between 
+optimal (simulated with the model RIDEV) and actual
+weeding timing ranged from —2 to 17 days. Despite heavy weed infestation observed at panicle 
+initation (average of visual score
+> 1, see Tab. I), a second manual weeding was only done on a minority  of fields. Late weeding  
+with low herbicide rates and virtual  absence  of   manual   weeding   was  also  observed   by 
+Haefele et al. (2001) as a usual practice in Mauritania,  and by Poussin  et  a1.  (2003)  in  
+Senegal.  Moreover,  visual  scores  of weed infestation  at panicle initation  were greater in the 
+fields far  from  the  irrigation  source  (with  low  irrigation  frequency and, therefore, high 
+risk of water shortage), mostly sown with Sahel 108.
+The Nakhlet farmers'  organization  bought 7 tonnes of  urea (46% of  N) and  2.75 tonnes of triple 
+superphosphate (209c  of P). Fertilizers were given to farmers proportionally to their cul- tivated 
+area at the rate of 250 kg urea ha     (115 kg N ha    ) and 100 kg  triple  superphosphate (20 kg  
+P  ha*’),  i.e. close  to the recommendations of  120  kg N ha*’ and  20 kg P ha*’. 117 kg N ha  '  
+and 19 kg P ha°   were applied in two top-dressed appli- cations (Tab. I). Farmers had problems 
+dividing fertilizer bags.
+
+
+Increase in rice productivity  in the Senegal River valley due to improved collective management  
+of irrigation scheme              231
+
+
+Table II. Pumped water volumes and estimated water supply for the entire irrigation scheme of 
+Nakhlet (averages and standard deviations) for pre-flooding, flooding, and irrigation during the 
+1998 and 1999 wet seasons. Evapotranspiration (ETP) of rice, number of irrigations and rainfall 
+contributions are also indicated. Standard deviations (SD) are given between brackets.
+1998 wet season                                                                        1999 wet 
+season
+Pumped water Estimated water supply   Number of irrigations   Pumped water Estimated water supply   
+Number of irrigations volume           in the fields (mm)         after flooding (no)           
+volume           in the fields (mm)         after flooding (no)
+(     3g    1000)           average (SD)            average (min—max)      (   3 x 1000)          
+average (sD)            average (min—max)
+
+Pre-flooding Flooding Irrigation Total Rainfall ETP of rice
+none 79
+216.3
+295.3
+
+202 (18)
+554 (105)
+756 (110)
+207
+802
+
+
+
+6.5 (4—9)
+70.1                    171 (14)
+70.3                    181 (35)
+233.0                   589 (67)
+373.4                   939 (72)
+183
+774
+
+
+
+8.2 (S—9)
+
+Table III. Irrigation water supply, number of fields sown with Jaya and Sahel 108, and rice grain 
+yield during the 1998 wet season as a function of the number of irrigations after flooding. 
+Standard deviations are given between brackets. (***: simple comparison between cultivars with Stu- 
+dent's test and P < 0.001).
+
+Irrigations after flooding (no)
+Average of irrigation water supply (mm) Fields (no)
+Average of yield (Mg ha*¹)
+
+Fields sown with Jaya (no) Average of yield (Mg ha*’)
+Fields sown with Sahel 108 (no) Average of yield (Mg ha*¹)
+4
+528
+11
+4.07
+(0.24)
+
+
+
+10
+5
+602
+21
+4.03
+(0.18)
+6
+5.47*** (0.90)
+15
+3.79*** (0.47)
+
+6
+d66
+26
+4.50
+(0.21)
+11
+
+
+15
+7
+720
+33
+5.04
+(0.14)
+20
+
+
+13
+
+8
+774
+14
+5.37
+(0.17)
+13
+5.41*** (0.79)
+1
+4.48*** (0.55)
+
+9
+828
+14
+5.92
+(0.18)
+14
+
+
+0
+
+
+That  explained  the  variability   of  applied   N  fertilizer,   that ranged from 90 k   N ha  ' 
+to 150 kg N ha  '.  Nevertheless, rates over 90 kg N ha*  did not have a significant effect on rice 
+yield (Fig. 2). This corresponded to a strong variability ofN  fertilizer efficiency  already  
+observed  by  Wopereis  et  a1.  (1999)  and
+Haefele et al. (2001) in similar situations.
+All farmers applied fertilizer  in two top-dressings  (Tab. I). With the first split, on average  
+at 36 days after sowing,  all of the triple superphosphate and half ot the urea were applied. The 
+rest of the urea was applied at about 60 days alter sowing. Opti mal dates simulated  with  RIDEV 
+for these two splits were on average 23 days after sowing and 60 days after sowing for Jaya and  23 
+days  alter  sowing  and  50  days  after  sowing  for Sahel
+108. The delay  between actual and optimal dates ranged from
+
+yield     ' (Mg  ha ')
+
+
+
+4 0
+
+
+
+
+e› oo
+
+O0
+
+
+
+90
+
+
+
+0  Q        I
+
+applied  N   (kg   ha-1)
+
+
+
+
+
+
+
+
+
+
+o   4 99BWS
++  1990WS
+x   2000WS
+2 to 23 days for the first  split and from —9  to 21 days late for        Figure 2. Rice grain  
+yield (Mg ha*') determined  in all fields in the
+
+the second split. Increasing  delay of  N application  led to con- siderable  drops  in  maximum  
+yield  (Fig. 3),  i.e.  decreasing applied  N  efficiency.  The delay  of  the second  split  for 
+Sahel 108 (on average 11 days) was greater than for Jaya (on average 1 day).  Farmers  respected  
+quite  well  agricultural  advice  that
+1998, 1999 and 2000 wet seasons (1998WS, 1999WS, 2000WS) as a function of total applied  N 
+fertilizer (kg ha
+recommended  a  second  split  at  60  days  after  sowing  (SON-             Therefore,    lower   
+irrigation    frequency    combined    with ADER, 1998). However, this recommendation did not 
+concord        stronger  weed  infestation  and  greater  delays  for  N  fertilizer with Sahel  
+108 duration,  which  is on average  10 days shorter        application  in fields sown  with Sahel 
+ 108 than in fields sown than Jaya duration in the wet season (RIDEV simulations  with        with 
+Jaya explained the yield differences observed between the daily temperatures  recorded  in Rosso, 
+1970-1984).                           two cultivars.
+
+
+232                                                                                   J.-C. Poussin 
+et a1.
+
+
+
+
+
+
+
+
++  •’
+
+
+
+
+++
+
+
+
+°°##jg88gj
+O      O      j8
++    Y 8 ’
+supply after pre-flooding was estimated  at 961 mm compared with 951 mm in the 1998WS, whereas 
+evapotranspiration of the rice was estimated  at 774 mm compared  with 802 mm in the 1998WS. The 
+irrigation water supply variability between fields was  lower  in  1999  than  in  1998  (72 mm  
+vs.  1 10  mm,  see Tab. II). Farmers respected the new water allocation rules and the irrigation 
+planning, and all fields were irrigated 8 or 9 times after flooding. The increase in irrigation  
+frequency compared with the 1998WS did not lead to a strong increase in pumped water amount. In the 
+2000WS, farmers  did not pre-flood  and all fields were irrigated 8 or 9 times alter flooding, 
+respecting
+
+®'8
+
+Cirst N fediWzer appWcation delay (days)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8e’,'           8
+7                   0                    7                  14                  21                 
+28
+first   N   fertilizer   application   delay   (days)
+Figure 3. Rice grain yield (Mg ha  ') measured in all fields in the 1998, 1999 and 2000 wet seasons 
+I1998WS, 1999WS, 2000WS) as a func- tion of gap (in days) between actual and optimal N fertilizer 
+applica- tion timing (optimal date for the first split: 21 days after sowing; opti- mal  date  for  
+the  second  split:  panicle  initiation;  optimal  dates determined for each field with RIDEV).
+
+
+
+3.2. Diagnosis of the 1999 and 2000 wet seasons
+In the 1999 and 2000 wet seasons, the   otential rice grain yields were between 8.8 t ha    and 9.2 
+t ha    (i.e. about  I  t ha more than in the 1998WS) whilst the average of the actual yield 
+increased  greatly  (Tab. I). It  reached  7.2  t  ha  '  in  1999  and
+8.2 I ha*   in  2000  (i.e.  2.4  and  3.4  I  ha*'  more  than  in  the I998WS).   Nevertheless,   
+the   standard   deviation   of   yield increased  slightly  (1.4 t ha*  in 1999 and 1.8 t ha*' in 
+2000), indicating continued heterogeneity  between fields.
+3.2.1.  Irrigation management
+In  the  1999WS,  the  total  pumped  water  was  78 100  m3 higher than in the 1998WS (Tab. II). 
+This increase was mainly due to a pre-flooding irrigation that used 70 100 m3 of pumped
+water. The first flooding  used 70 300 m3 (8 700 m3 less than
+in the 1998WS) and irrigation after flooding used 233 000 m (16 700 m3 more than in the 1998WS). 
+The average irrigation water  supply  (excluding  pre-flooding)  in  the fields  was esti- mated  
+at 768 mm. Rainfall  contributed  183 mm. Total water
+the water allocation rules and irrigation plan.
+The increase in irrigation frequency reduced the risk of water shortage. Based on the I998WS 
+results (Tab. III), the increase in irrigation frequency  alone could not explain the increase in 
+rice yield with the Jaya cultivar (1.7 t ha°' in 1999 and 2.7 t ha° in 2000). Irrigation management 
+was therefore not the only fac- tor contributing  to yield increase.
+
+3.2.2. Land preparation,  flooding and sowing
+
+In the 1999 and 2000WS, farmers chose to delay the sowing period to make sure that harvesting would 
+not occur during the rainy period, while keeping a spikelet sterility percentage lower than 10% 
+(simulated with the software CalCul using daily tem- peratures recorded in Rosso, 1970-1984). In 
+the 1999WS, most farmers used the cultivar Jaya, with seeds retained from the pre- vious  harvest  
+(despite  the  recommendations  of  agricultural advisors). With sowing between 7 and 22 July, 
+maturity came in early November (Tab. I). In the 2000WS, they used cultivar Sahel  202, with  
+certified  seeds (as recommended  by agricul- tural  advisors).  With  sowing  between  19 July  
+and 4 August, maturity came at the end of November. Spikelet sterility sim- ulated with the model 
+RIDEV for both wet seasons was lower than 10% in all fields.
+Planned  sowing dates were well respected in the 1999 and 2000WS (see Tab. I). The planned cropping 
+calendar indicated the start of  first flooding  3 days  before  sowing,  but farmers sowed the 
+same day as flooding. Land preparation was realized using disk plows 2 days before flooding in the 
+l 999WS and one week before flooding in the 2000WS, and lasted 3 or 4 days in both wet seasons. The 
+gap between  actual and  planned  dates for land preparation  and flooding  had no effect on 
+following crop management interventions.
+In  the  1999WS,  fields  were  pre-flooded  about  2  weeks before the planned period (from 5 May 
+to 6 June vs. from 5 to 17 June, see Tab. I) to be sure that weeds could come up before land 
+preparation.  Weeds  were eliminated  by land preparation about 1  month after pre-flooding. Early  
+weed infestation  was low and farmers refrained from herbicide use. In spite of its effi- ciency on 
+early weed control and its low cost (fuel consumption was  about  1 000  liters  for  pre-flooding, 
+  corresponding   to 66 000 UM; see Tab. IV), farmers did not repeat pre-flooding in the 2000WS. 
+Pre-flooding requires the farmers'  presence at Nakhlet one month before the beginning of the crop 
+season, but the farmers have other activities as well as irrigated agriculture (Diemer and van der 
+Laan, 1987).
+
+
+Increase in rice productivity  in the Senegal River valley due to improved collective management of 
+irrigation scheme             233
+Table IV. Perimeter tinancial results of the 1998, 1999 and 2000 wet seasons. UM: Mauritanian 
+currency; TSP: triple superphosphate (209c P); DAP: diammonium  phosphate (189c N, 209c P).
+
+
+
+
+
+Fuel
+Engine oil
+Pump driver salary Maintenance
+Sub-total Land preparation
+1998 wet season
+Amount        Unit price          Value           Amount (1 or kg)           (UM)       (UM x 1000) 
+     (I or kg)
+4100               65               266.5             5100
+18.2
+64.0
+55.2
+403.9
+132.4
+1999 wet season                                      2000 wet season
+Unit price          Value           Amount        Unitprice          Value
+(UM)        (UM x 1000)      (1 or kg)            (UM)        (UM x 1000)
+66               336.6             4200               88               369.6
+24.2                                                       23.8
+64.0                                                       64.0
+66.2                                                              78.7
+491.0                                                      536.1
+132.9                                                      134.5
+
+Retained seeds Certified seeds
+2000                 45                  90.0
+1500               90               135.0
+3000
+45               135.0              600                45                27.0
+2280               90               205.2
+
+Herbicides Urea
+Other fertilizers (TSP or DAP)
+Sub-tota1 Micellaneous expenses (transport etc.)
+Total costs
+
+7 000
+2 500
+252.0
+42               294.0
+38                95.0
+
+998.4
+170.5
+
+
+1 652.8
+
+8500
+74.2
+44               374.0
+
+
+716.1
+194.2
+
+
+1 481.3
+233.4
+8500               45               382.5
+
+
+982.6
+226.6
+
+
+1 825.3
+
+Gross product Gross margin
+128 5(JO
+42             5 397.0          197 000
+3 744.2
+42             8 274.0         223 000
+6 792.7
+42             9 366.0
+7 540.7
+
+
+3.2.3. Weed and fertilizer management
+In the 1999WS, early weed infestation levels were low. Most farmers   preferred   manual   weeding  
+ to  save  money   (about 150 000  UM  for  the  whole  perimeter;  see  Tab. IV).  Manual weeding  
+was done at 25 days after sowing (see Tab. I), but it
+
+weeding     ¿ delay (days)     q
+
+O
+O
+O    O
+
+lasted until 13 September in some fields and therefore delayed the  first  N  application.  Visual  
+scores  ot  weed  infestation  at panicle  initation  were on average  lower than  in the 1998WS, 
+but  standard  deviations  (1 .6  in  the   l999WS  vs.  1.2  in  the 1998WS) indicated strong 
+variability  between fields.
+
+
+
+
+
+24 /07
+O O O O    O O
+
+
+
+26/07                       31/07
+sowing  date
+
+
+
+
+
+05/0B
+
+In the 2000WS, farmers applied a combination  of propanil (4 liters ha  ')  and 2,4 D amine (2 
+liters ha   ) as in the I998WS (Tab. I). Herbicides were applied 6 days late compared with the 
+planned timing. This delay is partially due to the delivery date (19 August 2000) of the fertilizer 
+and herbicides. Weeding on fields  sown  before  29  July  was  therefore  inevitably  delayed 
+(Fig. 4). This delay of the herbicide treatment directly induced a delay  of the first N 
+application.  Weed infestation  at panicle initation  was  not  very  serious  in  most  fields  
+(average  visual score < 1), but it was greater in fields sown before 29 July (aver- age visual 
+score  l .8).
+In the 1999 and 2000WS, farmers ordered 3 tonnes of diam- monium-phosphate  (l 89o  N,  209o  P)  
+and  5.5  tonnes  of  urea (469o  N)  with  planned  application  rates  of  100 kg  diammo- 
+nium-phosphate ha*¹ and  200 kg urea ha*¹, i.e. 20 kg P ha*' and  110  kg  N ha*'.  However,  
+diammonium-phosphate ferti- lizer was not available. Thus, 8.5 tonnes of urea were delivered and  
+given  to  farmers  at  the  rate  of  300  kg  urea  ha   .  Total applied N was on average 152 kg 
+ha*' in the 1999 and 2000WS,
+Figure 4. Difference  between  RIDEV  simulated optimal  timing  of weeding and actual weeding 
+(weeding delay) as a function of sowing date during the 2000 wet season.
+
+
+with a standard deviation of about 20 kg ha*  . Compared  with the I998WS, the increase in applied 
+N alone could not explain the increase in rice yield. The relation between  total applied N and 
+rice yield showed, in fact, that the maximum yield (about 10 t ha*', see Fig. 2) was reached in the 
+2000WS with a minimum rate of  about 120 kg N ha*¹, i.e. equal to the average  applied N  rate  in  
+the  1998WS.  This  observation  agrees  well  with WARDA recommendations about N fertilizer rates 
+(Wopereis et  al.,  2001).  Yield  measured  on  samples  overestimated  the yield  of  fields  and 
+ could  therefore  exceed  the potential  yield calculated  with the model ORYZAS.  Nevertheless,  
+the maxi- mum yield observed in the 1999 and 2000WS indicated that the potential  yield  for  Jaya  
+and  Sahel  202  should  be  reached  in many fields.
+
+
+234                                                                                   J.-C. Poussin 
+et a1.
+
+
+As  in  the  1998WS,  N fertilizer  was  applied  in  two equal splits. The planned  timing for the 
+first split was 23 days after sowing  (from 3 to 13 August in the 1999WS and irom 14 to 25 August 
+in the 2000WS, see Tab. I) and the planned timing for  the second split was 56 days after sowing in 
+the 1999WS (from  5  to  15  September)  and  58  days  after  sowing  in  the 2000WS (from 18 to 
+27 September). The delays between opti- mal and actual timings were on average 9 days in the 1999WS 
+and  6 days  in  2000WS  for  the  first  split,  and  2  days  in  the 1999WS  and 4 days in the 
+2000WS for the second split. The first split delay was still greater than the second split delay. 
+In the I 999WS, manual weeding partially explained the delay in the first N; in the 2000WS, the 
+herbicide and fertilizer delivery date partially explain this delay in fields sown before 29 July. 
+Nevertheless, delays were significantly reduced (Fischer's test, P < 0.05)  in  the  1999  and  
+2000WS  as  compared  with  the 1998WS.  As in the  I998WS, N fertilizer application delay in the 
+1999 and 2000WS induced a great drop in maximum yield (Fig. 3).
+
+3.2.4.  Harvest
+Farmers  were able to harvest  their fields on time, close to maturity of the rice plants in the 
+1999WS, with an average grain yield  of 7.2 t ha* . In the 2000Ws, combine  harvesters  were used 
+about 13 days after maturity, and the average grain yield was 8.2 I ha*
+
+3.3. Financial  profits
+During  the  1998WS,  total  costs  at  the  perimeter  level (excluding harvesting) amounted to 
+1.7 million UM, whilst rice paddy production value was 5.4 million UM, and the gross mar- gin was 
+3.7 million UM (Tab. IV). The gross margin increased to 6.8 million UM in the l999WS and to 7.5 
+million UM in the 2000WS. Gross margins roughly doubled, therefore, compared with 1998. Moreover,  
+except for pre-flooding,  organizational changes did not increase labor input: timings of crop 
+interven- tions   were  modified,   but  the  amount  of   work  done  was unchanged.
+Rice yield increase is the main factor contributing to this result. As  compared  with  the  
+1998WS,  production  costs  decreased slightly in 1999 as less herbicides were used despite the 
+intro- duction of pre-flooding. Production costs further increased in the 2000WS  due to  the  use 
+of  certified  seeds  and  the fuel  price increase.   Similar   results   were  obtained   in  
+Mauritania   by WARDA  working  with  large-scale  farmers  cultivating  their own irrigation 
+scheme (Haefele et al., 2001).
+At the field level, gross margins ranged from about 50 000 to   250 000   UM   ha°    in   the   
+I998WS,   from   50 000   to
+375 000 UM   ha*'   in   the   1999WS   and   from   100 000   to 400 000 UM hall in the 2000WS 
+(Fig. 5). The increase in gross margins per hectare was strongly significant (multiple compar-
+ison using Sheffe's test, P < 0.0001). Moreover, gross margin per hectare for the fields sown after 
+29 July in the 2000WS (late arrival of fertilizers and herbicides did not affect these fields) 
+varied from about 250 000 to 400 000 UM ha* , i.e. above the gross margin range in the 1998WS. 
+Combine harvesting in the 2000WS cost about 40 000 UM ha*'. Each farmer could easily pay for this 
+supplementary  expense.
+
+Percentage       ⁵
+of   fields
+)   o          „rws
+5
+
+0
+
+
+
+
+
+
+0    100000  20000G  300000  400000
+gross margiu per hectare (UIM ha")
+
+
+Percentage
+of   fields
+
+
+
+
+
+
+
+
+
+
+gross  margin  per  hectare  (UM  ha”')
+
+
+Percentage      ' of   fields
+
+
+15
+
+
+
+
+
+
+0    100 000  205 OOG  300 000  400 000
+gross margiu per hecare (UW ha")
+Figure S. Frequency distribution of gross margins per hectare in Mau- ritanian  currency  (UM) for  
+the 1998,  1999  and 1999  wet  seasons (1998WS, 1999WS, 2000WS).
+
+
+
+4. CONCLUSION
+Despite roughly similar growth conditions for rice cropping, the gap between potential and actual 
+yield ranged from 2.7 to
+7.1 I ha*¹ in the l998WS. Farmers used two cultivars (Jaya and Sahel 108) that had similar 
+potential yields, but the actual yield obtained with Sahel 108 was lower as compared with Jaya. As 
+shown by another study in the Senegal River valley (Poussin et a1., 2003), variability in crop 
+management practices was the main contributing factor to this heterogeneity. The survey dur- ing  
+the  1998WS  revealed  high  variability  for  irrigation  fre- quency,  for  weeding  and  N 
+application  timing,  and for  total applied  N  rate.  Irrigation  frequency,  through  risk  of  
+water shortage, had a significant effect on yield, and increasing delay ofN application led to 
+large yield drops. Total applied N ranged from 90 to 150 kg ha* , but no direct relation was found 
+with rice yield, suggesting a strong variability of N fertilizer appar- ent recovery rate. The 
+water allocation  rules led to low irriga- tion frequency  in fields far from the irrigation  
+source. These
+
+
+Increase in rice productivity  in the Senegal River valley due to improved collective management  
+of irrigation scheme              235
+
+
+
+fields were mainly sown with Sahel 108. Higher weed infesta- tion (partially due to lower 
+irrigation frequency) combined with greater  delay  toy  a  second  N  application  in  fields  
+sown  with Sahel 108 explained  the yield gap compared  with Jaya.
+Based on this diagnosis, farmers were invited to change their water allocation rules in order to 
+homogenize fields'  irrigation frequency, and to make on the scale of the perimeter a planned 
+cropping calendar for the next season to improve the timing of crop  management  interventions  in 
+all fields. During  the 1999 and 2000WS, all fields were irrigated 8 to 9 times after flooding and 
+delays between optimal and actual N fertilizer application timings  were  reduced.  The  average  
+rice  grain  yield  reached
+7.2 t ha*' in the I 999WS and 8.2 t ha*' in the 2000WS, whereas production  costs at the perimeter 
+level remained stable. Over- all, gross margins at the perimeter level increased by more than 809c 
+as compared  with the  l998WS. This increase in irrigated rice productivity  was mainly due to 
+better collective manage- ment improving  input use efficiencies.
+These results confirm the importance of good crop manage- ment  in  general  in  irrigated  systems 
+ in  the  Sahel  (Wopereis et a1.,  2001).  Current  crop  management  techniques  allow  one to 
+reach the potential yields of the rice cultivars used. However, farmers' collective organization at 
+the perimeter level and farmers' individual  practices  at the field level are often sub-optimal.  
+If herbicide  and  fertilizer  rates  are  often  close  to recommenda- tions,  crop  management  
+operation  timings  are often  delayed. Making a planned cropping calendar can therefore assist 
+farm- ers with crop management.  Technical innovation is, therefore, not the only way to improve 
+agricultural productivity.
+Soil fertility and crop management by farmers in the Senegal River  valley  could  also depend  on 
+other  external  actors,  such as suppliers and motorized service providers. In our study, soil P 
+fertility management depended  on the availability  of P ferti- lizer in the suppliers, and late 
+input delivery led to delayed her- bicide  and  fertilizer  applications.  Le  Gal  (1997)  showed  
+the dependence on combine harvester  availability  for double rice cropping farmers in the Senegal 
+River delta. In order to prepare for  these delivery  delays  or  input  and  agricultural  
+machinery availabilities, planning  cropping  calendars  can  help  farmers' organizations  to 
+enter early into a contract  with  suppliers and providers.
+
+
+Acknowledgements:  We  thank  the  farmers  ol  Nakhlet.  We  also  thank Marco Wopereis for his 
+comments and corrections. This study was financed by the “Pole Regional de Recherche sur les 
+Systemes Irrigués” (PSI, i.e. Regio- nal Research Initiative on irrigated systems) of WECARD/CORAF.
+
+
+REFERENCES
+
+Allen R.G., Pereira L.S., Raes D., Smith M. (1998) Crop evapotranspi- ration Guidelines for 
+computing crop water requirements. FAO Irri- gation and Drainage, Paper 56, Food and Agriculture 
+Organization of the United Nations (UN-FAO), Rome.
+Asch F., Wopereis M.C.S. (2000) Responses of field-grown irrigated rice cultivars  to  varying  
+levels  of  iloodwater  salinity  in  a  semi-arid environment, Field Crops Res. 70, 127—137.
+Bos M.G., Replogle J.A., Clemmens A.J. (1991) Flow Measuring Flumes 1or Open Channel Systems, 
+American Society ofi Agricultural Engi- neers, New York.
+
+
+Diemer G., van der Laan  E. (1957) L’irrigation  au Sahel :  la crise des périmetres  irrigués  et  
+la  voie  haalpulaar,  Karthala/CTA,  Paris/ Wageningen.
+Dingkuhn M., Le Gal P.Y., Poussin J.C. (1995) RIDEV, un modele de développement du riz pour Ie 
+choix des variétés et des calendriers, in: Boivin P., Dia I., Lericollais  A., Poussin J.C., 
+Santoir C., Seek
+S.M. (Eds.), Nianga, laboratoire de l’agriculture  irriguée en moy- enne vallée du Sénégal. 
+Editions de l'ORSTOM,  Coll. Colloques et Séminaires, Paris, France, pp. 205—222.
+Dingkuhn  M., Miézan  K.M. (1995) Climatic  determinants  of  irrigated rice performance in the 
+Sahel, Part II - Validation of photothermal constants  and characterization o1 genotypes,  Agr. 
+Syst. 48, 411— 434.
+Dingkuhn M., Sow A. (1997) Potential yields of irrigated rice in the Sahel, in: Miézan K.M., 
+Wopereis M.C.S., Dingkuhn M., Deckers J., Randolph
+T.F.  (Eds.),  Irrigated  rice in  the Sahel:  Prospects  for sustainable development, West Africa 
+Rice Development Association (WARDA), Bouaké, Ivory Coast, pp. 361-379.
+Dobermann A., Cassman K.G., Sta. Cruz P.C., Neue H.U., Skogley E.O., Pampolino M.F., Adviento 
+M.A.A.  (1995) Dynamic soil tests for rice, in: Fragile  Lives in Fragile Ecosystems.  Proceedings  
+of  the International  Rice  Research  Conference,  13-17  February  1995, International  Rice 
+Research  Institute  (IRRI),  Manila,  the  Philip- pines, pp. 343-365.
+FAO (1986) Yield response to water, FAO Irrigation and Drainage, Paper 33, Food and Agriculture 
+Organization of the United Nations (UN- FAO), Rome.
+Haefele  S.M.,  Wopereis  M.C.S.,  Donovan  C.,  Maubuisson  J.  (2001) Improving the productivity  
+and profitability  of irrigated  rice pro- duction in Mauritania, Eur. J. Agron. 14, 181—19f›.
+Le Gal P.Y. (1997) Le développement  de la double culture irriguée au Sahel : contraintes et 
+perspectives pour les agriculteurs, in: Miézan K.M., Wopereis M.C.S., Dingkuhn M., Deckers J., 
+Randolph T.F. (Eds.), Irrigated rice in the Sahel: Prospects for sustainable devel- opment, West 
+Africa Rice Development  Association  (WARDA), Bouaké, Ivory Coast, pp. 161—189.
+Le Gal P.Y., Papy  F. (1998) Co-ordination  processes  in  a collectively managed cropping system: 
+double cropping of irrigated rice in Sen- egal, Agr. Syst. 57, 135—159.
+Poussin J.C. (1995) Gestion technique dela riziculture irriguée, in: Boivin P., Dia I., Lericollais 
+A., Poussin J.C., Santoir C., Seek S.M. (Eds.), Nianga, laboratoire de l’agriculture irriguée en 
+moyenne vallée du Sénégal, Editions de 1’ORSTOM, Coll. “Colloques et Séminaires”, Paris, France, 
+pp. 153—170.
+Poussin  J.C. (1997) Direct  seeding or transplanting? An example from the  Senegal  middle  
+valley,  in:  Miézan  K.M.,  Wopereis  M.C.S., Dingkuhn M., Deckers J., Randolph T.F. (Eds.), 
+Irrigated rice in the Sahel:  Prospects  for sustanaible  development,  West  Africa  Rice 
+Development   Association   (WARDA),   Bouaké,   Ivory   Coast, pp. 191—200.
+Poussin J.C. (2000) CaICul : un outil pour construire un calendrier cul- tural prévisionnel du riz 
+irrigué au Sahel, in: Legoupil J.C., Dancette C., Godon P., Mai'ga I.M., N’Diaye M.K. (Eds.), Pour 
+un dévelop- pement  durable  de  l’agriculture  irriguée  dans  la  zone  Soudano- Sahélienne. 
+Synthese des résultats du Pole Régional de Recherche sur  les  Systemes   Irrigués  (PSI/CORAF),   
+WECARD-CORAF, Dakar, Senegal, pp. 87—99.
+Poussin J.C., Wopereis M.C.S., Debouzie D., Maeght J.L. (2003) Deter- minants of irrigated  rice 
+yield in the Senegal  River valley, Eur. J. Agron. 19, 341—356.
+Raes D., Sy B., Deckers J. (1997) Simulation of irrigation water require- ments of rice schemes in 
+the Senegal river delta and valley, in: Miézan K.M., Wopereis M.C.S., Dingkuhn M., Deckers J., 
+Randolph T.F. (Eds.), Irrigated rice in the Sahel: Prospects for sustanaible devel- opment, West 
+Africa  Rice Development  Association  (WARDA), Bouaké, Ivory Coast, pp. 411—419.
+SAED  (1997)  Recueil  des statistiques  de la  vallée  du  fleuve Sénégal, annuaire 1995/1996,  
+version détaillée, Ministere de l’Agriculture
+
+
+236                                                                                                 
+  J.-C. Poussin et a1.
+
+
+du Sénéga—l    Société d’Aménagement  et d’Exploitation des terres          Tuzet A., Perrier A. 
+(1998) Les besoins en eau des cultures : analyse et
+du Delta et de la vallée du Sénégal (SAED), St Louis, Senegal.                        applications, 
+in: Tiercelin J.R. (Ed.), Traité d’irrigation, Lavoisier,
+Technique et documentation, Paris, pp. 147-256.
+
+Sanchez P.A. (1976) Properties  and management  of soils in the tropics, Wiley, New York.
+WARDA  (1999)  Returns  to irrigated  cultivar  in Senegal,  West  Africa Rice Research  Brief  No. 
+1, West Africa Rice Development  Asso-
+Siddeek F.Z., Dillaha T.A., Loganathan G.V. (1988) Water management                   ciation 
+(WARDA),  Bouaké.
+for lowland rice irrigation, J. Irrig. Drain. Eng.-ASCE 114a 407—42a            Wopereis  M.C.S.,  
+Donovan  C.,  Nebié  B.,  Guindo  D.,  N’Diaye  M.K.
+
+Smith M., Allen R.G., Monteith J.L., Perrier A., Pereira L., Segeren  A. (1992) Report of the 
+expert consultation on procedures for revision of FAO guidelines for prediction of crop water 
+requirements, Food
+(1999)  Soil  fertility  management  in  irrigated  rice systems  in  the Sahel and Savanna regions 
+of West Africa, Part I — Agronomic anal- ysis, Field Crops Res. 61, 125—145.
+and  Agriculture  Organization  of  the  United  Nations  (UN-FAO),          Wopereis M.C.S., 
+Haefele S.M., Kebbeh  M., Miézan  K.M., Diack B.S. Rome.                                            
+                                                                      (2001) Improving the 
+productivity and profitability of irrigated rice production in Sahelian West Africa, in: 
+Proceedings of the Expert
+
+SONADER (1998) Etude de la filiére riz en Mauritanie, Rapport définitil,
+Société  Nationale  de Développement  Rural  (SONADER)  / CLG Consultants,  Nouakchott / Paris.
+Consultation  Meeting  on  Yield  Gap and  Productivity  Decline  in Rice Production at FAO, 5-7 
+September 2000, Food and Agriculture Organization of the United Nations (UN-FAO), Rome, pp. 
+117—142.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+To access  this journal online: www.edpsciences.org

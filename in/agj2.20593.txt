@@ -1,0 +1,966 @@
+Received: 26 October 2020        Accepted: 5 January  2021         Published  online: 24 March 2021
+DOI: 10. 1002/agj2.20593
+
+
+ARTICLE
+A g r o n o m y,   S o i 1 s ,  a n d  E n v i r o n m e n t a I  Q u a1i t y
+
+
+
+Agronomy Journal
+
+Effect of rice planting date and optimal planting window for Southwest Louisiana
+Tommaso Cerioliˡ t0•    1    Thanos Gentimis²    1    Steven D. Linscombe'     1    Adam N. Famoso' 
+t0•
+
+’ Louisiana State Univ. Agricultural  Center,
+H. Rouse Caffey  Rice Research Station,                   AbStfi£tCt
+Rayne, LA 70578, USA                                    Rice (Oryza  sativa L.) yield and grain 
+quality are highly influenced by the planting
+Dep.of Experimental Statistics, Louisiana          date; thus, it is crucial to determine the 
+optimal planting window for an area of cul-
+
+State Univ. Agricultural Center, Baton Rouge, LA 70803, USA
+
+Correspondence
+Adam N. Famoso, Louisiana State Universit
+tivation. In this study, date of planting experiments conducted at the Louisiana State University 
+(LSU) AgCenter Rice Research Station from 2011 to 2018 were analyzed to quantify  the effect of  
+planting date, genotype, and year on key agronomic  traits.
+Agricultural Center, H. Rouse Caffey Ricey            Planting date was strongly associated with 
+yield across every year, explaining 55.69r
+
+Research Station, Rayne, LA 70578, USA. Email: atñmoso fi agcenter.1su.edu
+Associate Editor: Josh McGinty Funding information
+National Institute of Food and Agricul-
+ture, Grant/Award Numbers: LAB94319, LAB94342; National Science Foundation, Grant/Award Number: 
+1826536; Louisiana Rice Research Board, Grant/Award Number: GR-00006301
+of the overall phenotypic variation. A clear relationship was observed  between later plantings and 
+reduced yields; and the highest yields were observed during plantings between 11 and 31 March. Rice 
+planted after the optimal planting window displays a yield reduction following a cubic regression 
+trend. Planting date was associated with milling yield, explaining  28.6â of the phenotypic  
+variation, however the effect size varied year to year. Milling yields were highest with the early 
+and late planting dates, while reduced milling yields were observed in plantings between mid-April 
+and early June. Days to heading and days to seedling emergence were strongly associated with 
+planting date; with planting date explaining, on average, 86 and 96% of the variation, 
+respectively. Plant height was less influenced by planting date, with genotype being the largest 
+source of variation. The results from this study highlight the importance of choosing  the optimal  
+planting date and identifies an optimal planting window to maximize grain and milling yield for 
+Southwest Louisiana.
+
+
+
+1      INTRODUCTION
+
+Rice (Ory7a  sativa  L.)  productivity  is  highly  influenced  by planting  date.  When  rice  is  
+planted  under  ideal  conditions with favorable air and soil temperatures  and appropriate  soil 
+moisture,  the  performance  of  the crop  drastically  improves. Planting  too  early  can  expose 
+ the  crop  to  cold  tempera- tures and result in poor germination,  low seeding  vigor, and 
+seedling  mortality  (Dou  &  Tarpley,  2012;  Saichuk  et  al.,
+
+Abbreviations:  HRCRRS, H. Rouse Caffey Rice Research Station; PW, planting  window.
+2tJ14). Planting too late often causes reduced yields and grain quality as the reproductive phase 
+coincides with the height of the  summer  heat  and  rice grain  yield  and  quality  are  nega- 
+tively affected (Lanning et a1., 2012; Wu et a1., 2019). Thus, determining the optimal planting 
+time is critical to maximize yield and grain quality.
+In Louisiana, rice can be dry seeded, either drilled in nar- row  rows  or  broadcast,  or  water  
+seeded  (Smith  &  Dilday, 2003).  The  drill seeding  method  requires  the  soil  to be dry for  
+the  utilization  of  planting  equipment,  while  the  water seeding  method  can  be  performed  
+regardless  of  soil  mois- ture. Water seeding rice can result in earlier planting, red rice
+
+This is an open access article under the terms of the Creative Comn«›ns 
+Attribulir›n-NonConiinercial-Nr›Derivs License, which permits  use and distribution in any medium, 
+provided the original work is properly cited, the use is non-commercial and no modifications or 
+adaptations are made.
+k  2021 The Authors. Agroiloiily Journal  published  by Wiley Periodicals LLC on behalf of American 
+Society of Agronomy
+
+1248     1        i1ey‹anlineIibrary.cum/jr›urnal/a  j2                                             
+                                                                                                    
+Agronomv Jon rnal.  2021 ;113: 1245—1257.
+
+CERIOLI  IT AL.
+
+
+suppression,  and  rapid  stand  establishment  (Dunand,  1988; Griffin et al., 1986). Water-seeded 
+rice is usually pre-sprouted to initiate germination and decrease emergence time by soak- ing  the  
+seed  in  water  for  24-36  h  and  then  draining  it  for 24-36  h  (Saichuk  et  a1.,  2(114).  
+Several  studies  have  been conducted  at  the  H.  Rouse  Caffey  Rice  Research  Station 
+(HRCRRS) near Crowley, LA, to determine the optimal plant- ing window dating back to 1933 when 
+Jenkins tested four vari- eties across different  planting  dates for 6 yr (Jenkins,  1944). He 
+concluded that rice performed  the best when planted from April  until  15  May.  Following  
+experiments  were  conducted from 1950 to 1952 (Jodon,  1953), 1953 to 1961 (Adair et al.,
+1973),  and 1963 to 1969 (Jodon  and McIlrath,  1971), which all registered that rice performed  
+best when planted  between late  March  and  early  May.  A  study  (Slaton  et  al.,  2003) 
+conducted  between  1995  and  2000  using  present-day  vari- eties,  which  are shorter  in 
+stature and earlier  maturing,  con- cluded that the optimal planting window for drill-seeded  rice 
+in  Southwest  Louisiana  was  between  mid-February  through March. While previous experiments 
+were drill seeded, a study on water-seeded  rice across different planting dates was con- ducted 
+from 2003 to 2005 at the HRCRRS  (Blanche  & Lin- scombe,  2009;  Sha  &  Linscombe,  2007).  In  
+this  study,  the highest  yields were obtained when the rice was planted from the  beginning  to  
+the  middle  of  April,  which  was  later  than the results of the drill-seeded rice experiments. 
+Water-seeded rice planted later in the season  was also subject  to yield loss and poor grain 
+quality (Sha & Linscombe, 2(J07). These previ- ous experiments highlight the importance of planting 
+as soon as  the  conditions  are  ideal  for  rice  germination  and  growth and that those dates 
+vary based on the planting method. Opti- mal  growing  conditions  at  planting  ensure  better  
+seedling growth  which  reduces  weed  pressure  and  cost  for  its  man- agement (Gravois & 
+Helms,  1998). Higher temperatures  dur- ing  grain  filling  seem  to  negatively  affect  head  
+rice  yield, and  disease  pressure  and  insect  damage  could  increase  dur- ing  later  
+plantings  (Sha  &  Linscombe,  2(Jtl7).  On  the  other hand,  rice  planted  too  early  is  at  
+risk  for  poor  germination and poor stand, which can lead to reduced  yields (Gravois & Helms, 
+1998; Saichuk et al., 2014). Speed and rate of germi- nation are highly temperature dependent, and 
+rice should not be planted when the average air and soil temperature is below 15 ’C (Smith  & 
+Dilday,  2t)fl3).  In  addition,  seedling  growth is highly influenced by temperature, especially 
+during the 1st week of growth (Yoshida,  l9fi I).
+Current     planting     recommendations     for     Southwest Louisiana   are   between   10   
+March   and   15   April;   how- ever,  the  moment  of  planting  has  to  be  chosen  considering 
+specific field conditions  that  might  vary every  year (Harrell et al., 2020; Saichuk et al., 
+2014). Average daily temperatures above  10 ’C,  calculated  by averaging  the daily  high and low 
+temperatures,  are considered  critical  to obtain  an  acceptable stand   (Saichuk   et  al.,   
+2014).   In  practice,   rice  producers
+
+
+Core Ideas
+•  Planting  date  is  a  major  component  in  yield  and agronomic  traits in rice.
+•  The optimal  planting  window  in South Louisiana was from 10 to 31 March.
+•  A  yield  reduction  of  47.8  kg  ha*'   per  day  is observed  for  each  day  planting  is  
+delayed  past 31 March.
+•  The optimal planting date for a specific year varies based on environmental  and soil 
+conditions.
+
+
+
+occasionally   begin  planting  earlier  based  on  existing  and forecasted   weather.   On   
+average,   from   2015   to   2019   in Louisiana   69c   of   the  total  land   area   was   
+planted   before 15 March, 189  before 22 March, 41 to before 29 March, 649 before  5  April,  769a 
+ before  12  April,  829c  before  20  April, and  899c   before  3  May   (NASS,   2()20).  
+Earlier  plantings also  increase   the  possibility   to  harvest   the  second   crop. Along the 
+Gulf Coast the extended growing season facilitates the  production  of  a  second  crop  (ratoon)  
+of  rice  from  the stubble  of  the main  crop.  Upon  harvesting  of  the first crop, the  
+stubble  is  manipulated,   fertilized,  and  reflooded.  The second  crop  typically  matures  in  
+3 mo,  which  is  two-thirds to three-fourths  of the time needed by the main crop to reach 
+maturity  (Bollich  &  Turner,  198fi).  Thus,  if  rice  is  planted before the second half of 
+April (Harrell et al., 2020), it would be  ready  for  harvest  at  mid-August,  the  second  crop  
+could develop  before  the  cold  weather  occurs,  and  an  acceptable ratoon  yield  could  be  
+achieved  (Dou  et  a1.,  2016;  Harrell et  al.,  2020;  Saichuk  et  al.,  2014).  Historically,  
+there  has only  been a 109c chance  that the first frost  would  occur  by 8 November and 509c by 
+29 November in Southwest Louisiana (NOAA,  2020).  On  average  from  2015  to  2019,  469a  of  
+the total Southwest Louisiana rice land area was destined to grow a ratoon crop (Harrell, 2020).
+Every year, the breeding program at the HRCRRS conducts a date of planting experiment that includes 
+current and poten- tial  varieties.  Drill  seeding  is now  the  predominant  planting method in 
+Louisiana, accounting for 629a of the total land area from 2015 to 2019 (Harrell, 202()). Starting 
+in 2011, the date of planting experiment began being drill seeded to reflect the most common 
+production practices. This study focuses on the drill-seeded date of planting data produced from 
+2011 to 2018 and  provides  useful  insights  of  an optimal  planting  window for drill-seeded 
+rice in South Louisiana. The objective of this study is to verify if the current recommended 
+planting window corresponds to empirical data on most current germplasm and quantify the average 
+loss when rice is planted outside the opti- mal window.
+
+CERIOLI  IT AL.
+
+
+2        MATERIAL AND METHODS
+
+The experiments were conducted during the rice-growing sea- son  from  2011  to  2018  at  the  
+HRCRRS  near  Crowley,  LA (30" l4'30” N, 92’20'46”W) on a Crowley silt loam soil (fine, smectitic, 
+hyperthermic Typic Albaqualfl. Each year between 12 and 13 genotypes were planted across eight 
+planting dates except  for  2014  and  2015,  which  had  seven  planting  dates. Planting  dates  
+were  tentatively  spaced  by  2  wk;  see  exact date for each year in supplemental  information  
+(Supplemen- tal Table S1). Across the entirety of the experiment, 38 differ- ent genotypes were 
+tested. The genotypes tested, represented
+ation was observed  with the fixed effect model for genotype and planting date. Further analysis 
+was conducted by treating all  effects  as fixed.  Comparison  between  planting  windows was 
+performed on relative values of every genotype within a year with Tukey's HSD test at a 
+significance level of p < .05. Different regression  models  were fitted  (linear,  quadratic, 
+cubic, and quartic) for relative grain yield for day of the year. The one with the highest R   
+value, the cubic regression, was selected  to predict yield. Yield prediction for different plant- 
+ing dates was estimated by fitting the cubic polynomial equa-
+tion for the selected calendar day:
+
+the common commercial  variety classes grown in Louisiana: long and  medium  grains,  herbicide  
+tolerant  and susceptible,
+F    =  by  +  b  x + b₂x² + b  x’
+(1)
+
+hybrids, and aromatic.
+The  experiments  were  based  on  a  split-plot  design  with planting dates as the main plot and 
+genotypes as subplots. The main plots were not replicated while subplots were completely randomized 
+within the main plots with three replications. The experiments  were conducted on a Crowley silt 
+loam soil, and the  fields  were  fallow  the  previous  season.  Rice  was  drill seeded in plots 
+1.42 m wide and 4.12 m long with an Heavy- Duty Grain Drill (ALMACO) at a seeding rate of 100 kg 
+ha*' for varieties  and 37 kg ha*'  for hybrids,  at a depth of  2 cm. The water management and 
+fertilization followed the standard practices  for Louisiana  rice (Saichuk  et  al.,  2fl14).  No 
+seed treatments or fungicides were applied. Grain yield was deter- mined  by  harvesting  the  
+entire  plot  with  a  Delta  Plot  com- bine (Wintersteiger AG), and a Harvest Master Grain Gauge 
+(Juniper Systems) was used to collect grain weight and mois- ture. Moisture values of each plot 
+were adjusted to 120 g kg*' water content. One milling sample was hand harvested from one plot for 
+each genotype in every planting date. The milling sample  was  split  into  two  technical  
+replicates  (100  g)  and milled  on a PAZ laboratory  mill (ZaccariaUSA)  to measure milling yield 
+expressed as g kg*’ of whole milled kernels over rough rice seed. Days to emergence was measured as 
+the num- ber of days between planting and the date in which 509c of the plot  had  emerged  from  
+the  soil. Seedling  vigor  was  scored based on a visual rating of 1-9, with higher vigor 
+associated with a lower rating number. Days to heading was measured as the number of days between 
+the date of emergence and the day when 509a of the plot has panicles emerging from the sheath of 
+the flag leaf. Plant height was measured as centimeters from the soil surface to the panicle tip at 
+maturity.
+All statistical analyses  were conducted  with the statistical programming language  R (R Core 
+Team, 2020) and package 1me4  (Bates  et  a1.,  2015),  and figures  were  produced  using the 
+package ggplot2 (Wickham,  2016). The portions of vari- ation were calculated as the amount of the 
+sum of squares for each effect divided by the total sum of squares obtained from the ANOVA.  In 
+variation  partitioning across years, an initial model  was  run  with  year treated  as random  
+effect.  No vari-
+where  Y  is  grain  yield,  bp  is  the intercept,  x is  the  planting day of the year, b; is the 
+linear coefficient, b   is the quadratic coefficient, and b   is the cubic coefficient.
+
+
+3        RESULTS AND DISCUSSION
+
+3.1        Planting date effect
+
+3.1.1    1    Planting date and genotype effect
+across years
+
+To  determine  the  effect  of  planting  date  on  key  agronomic traits in rice, an 8 yr data set 
+was analyzed to quantify the por- tions of total variation  explained  by planting date, genotype, 
+and planting date x genotype interaction. As commercial and potential varieties are continuously 
+changing, the set of geno- types tested each year varies; however, some genotypes were tested 
+across multiple years. The analysis was first conducted within each year individually.  Planting 
+date was the primary source of  variation for yield in 7 out of the 8 yr, with values ranging from 
+30.4 to 81.99c  of  the total  variation  explained, averaging 55.69  (Table 1). The genotype 
+effect was the sec- ond largest  source of  variation  for yield in each year, except for Year 
+2014. Genotype accounted for 9.5—36.2% of the total variation  (22.39r  average  over  all  years). 
+ In  Year  2016,  the variance  explained  by  planting  date  was  relatively  smaller because  of 
+ the  greater  amount  of  variation  determined  by genotype.  This was caused  by  the higher 
+number of  hybrids tested which are characterized  by higher grain yield compared to inbred 
+varieties. In Year 2013, the planting date effect was reduced  relative  to  other  years  as  a  
+result  of  unseasonably colder and wetter soil conditions  that occurred in late March and early 
+April, which caused reduced stands and poor growth in the earlier planted rice. These conditions 
+resulted in simi- lar yield values between earlier and later planted trials, which reduced  the  
+effect  of  planting  date.  The  large  difference  in the variance partitioning in Year 2011 was 
+influenced  by the high yield values of rice that was planted in February, which
+
+0
+
+
+
+
+
+
+
+
+
+T A B L E  1      Rice grain yield and milling yield variation explained by planting date, 
+genotype, and their interaction across different years in Crowley, LA
+
+Grain yield
+2011                             2012                             2013                          
+2014                           2015                           2016                          2017    
+                       2018
+Source                                SS               â•              SS               â           
+     SS            â                SS            9r               SS            9               SS 
+           ' r               SS            â                SS            â Planting date (PD)      
+      2,131           81.9           1,238           62              258           30.4           
+830           67.5           783           50.9           458           33.9           502          
+ 50.1           967           67.9
+Genotype (G)                     247              9.5             472              23.6           
+247           29.1           133           10.8           451           29.3           488          
+ 36.2           236           23.5           228           16
+G x PD                              101              3.9             207              10.4          
+ 204           24              161           13.1           165           10.8           173        
+   12.9           134           13.4           133           9.3
+Residual                             125              4.8             81                4           
+     140           16.5           106           8.6             139           9                230  
+         17              131           13              96             6.7
+Milling yield
+2011                           2012                           2013                           2014   
+                        2015                           2016                           2017          
+                 2018
+
+Source Planting date Genotype
+G x PD
+Residual
+Note. SS, Sum of squares.
+SS                               SS                9r            SS                9            SS  
+                             SS                9            SS                               SS     
+           9            SS
+37,3047        59.0        45,3092        42.3        48,401          18.5        20,1372        
+40.3        91,532          12.3        238,298        27.7        160,805        15.2        
+46,608          13.2
+73,954          11.7        165,021        15.4        128,211        49.1        125,290        
+25.1        514,713        68.9        165,280        19.2        196,017        18.5        
+191,252        54.3
+128,348        20.3        288,539        26.9        72,166          27.7        135,057        
+27.0        127,262        17.0        411,176        47.7        543,952        51.4        90,971 
+         25.8
+57,366          9.1          164,570        15.4        12,185          4.7          37,631         
+ 7.5          13,582          1.8          46,593          5.4          157,272        14.9        
+23,452          6.7
+ñ, percentage of SS over the total SS.
+
+CERIOLI  IT AL.
+
+
+was due to the early warm weather and ideal growing condi- tions registered  that year (Saichuk,  
+2013). The lower amount of variation explained by the interaction of planting date with genotype 
+reveal the high stability in performance of the geno- types across different planting dates.
+While grain yield showed a constant trend in which plant- ing date was the main source of variation 
+across years, milling yield did not (Table 1). The different impacts of planting date, genotype, 
+and their interaction within the different years indi- cates that yearly conditions play a 
+determining role in milling yield. In  Years  2011,  2012,  and 2014,  planting  date was  the 
+greatest  source  of  variation,  while  in  2013,  2015,  and 2018, the  genotype  effect  was  
+the  largest  variation  proportion.  In 2016  and  2017,  the  interaction  of  the  genotype  and 
+ plant- ing date effects  was the greatest portion of the variation. The higher incidence of the 
+interaction of planting date and geno- type  indicates  that  some  varieties  are  more  stable  
+than  oth- ers in their milling  yield across different  environmental  con- ditions.
+The variance partitioning for days to heading, plant height, seedling  vigor, and emergence  date 
+were recorded  each year to  quantify   the  influence  of   planting  date  (Supplemental Table  
+S2).  Days  to  heading  was  greatly  affected  by  plant- ing date across all years. Planting  
+date explained  on average 85.59r  of  the  total  variation  with  values  ranging  from  72.5 to 
+94.59r  within each year. Plant height  was less affected  by planting  date,  with  genotype  
+consistently  being  the  largest component  of  variation,  averaging 54.39c and values ranging 
+from 21 to 85.49c  within a given  year. The largest sources of variation for seedling vigor were 
+planting date and genotype, with average values of 30.4 and 31.3%, respectively. The vari- ation  
+of days to emergence  was nearly exclusively  explained by planting date, averaging 95.59r of the 
+total variation within each year.
+
+
+3.1.2      Planting  date, genotype, and year effect
+
+To  investigate  the  effect  of  the  yearly  conditions,  a  sample of  seven  genotypes  that  
+were each  tested  across  4 yr (2015— 2018)  were analyzed  to determine  the contribution  of  
+plant- ing  date,  genotype,  year,  and all  of  the possible  interactions to the overall 
+variance for the key agronomic  traits (Table 2). The  subset  of  genotypes  represented  the  
+common  commer- cial  variety  classes  grown  in  Louisiana:  long  and  medium grains,  herbicide 
+ tolerant  and  susceptible,  and  one  hybrid. Similar to the observations within each year, 
+planting date was the largest  variance component  for grain yield when looking across  years.  
+Planting  date  accounted  for 41.49c  of  the total variation,  while  genotype  was  22.ldc,  and 
+ the interaction  of year and planting date was 12.39. Year effect accounted for a minimal portion 
+of the total variation, 0.8%. The minimal year
+effect can largely be explained  by the fact that these trials are grown under water managed and 
+flooded conditions,  so there is no year effect associated with annual precipitation. Whereas in 
+most rainfed crops, year effects are a large component of the variation and are largely driven by 
+differences in precipitation between years. The interaction  of planting date and genotype was low 
+as well, indicating  that there are no remarkable dif- ferences between genotypes across years and 
+planting dates.
+As observed  within  years,  milling  yield  was significantly influenced  by the year. The largest 
+source of variation across years  was  the  interaction   of   planting  date  with  genotype and  
+year,  explaining  22.89c  of  the  total  variation.  The  sec- ond  largest  effect  was  the 
+interaction  of  genotype  with  year (19.99c) and third was the year effect (14.99c). These 
+observa- tions suggest that there are conditions that occur yearly, within specific genotypes or 
+planting dates, or combinations of both that  reduce  the  relative  variance  explained  by  
+planting  date and genotype alone.
+Days  to  heading  was  largely  influenced  by  planting  date, which accounted for 50.2â of the 
+total variation. In addition, 21 No  was  explained  by  the  interaction  of  planting  date  with 
+year; suggesting that part of the variation due to planting date was  accounted  in  the  variation 
+ of  planting  dates  throughout years when different weather conditions occurred. Year plays a 
+small role in affecting maturity.
+As  expected,  plant  height  is  mainly  determined  by  the genotype effect,  which explains  
+40.89  of  the overall  pheno- typic  variation.  Still, a portion  of  variation  is determined  
+by planting  date  and  its  interaction  with  years,  with  10.8  and 13.1%, respectively. No 
+significant differences were observed across years.
+
+
+3.2        Optimum planting window
+
+As  planting  date significantly  affects  key  economic  traits  in rice  production,  it  is 
+critical  to  choose  the  optimal  planting time to maximize  performance and mitigate risk. The 
+ability to plant rice by drill seeding requires appropriate field condi- tions that are dependent 
+on soil moisture; thus, for this exper- iment,  it was not possible to plant on the same calendar  
+day every year or perfectly space dates between plantings. There- fore, the different  planting  
+dates  were  grouped  into  planting windows to determine  with confidence  the optimum time for 
+planting  rice  in Southwest  Louisiana  (Table  3).  To  account for the variability of the 
+heterogeneous  sets of genotypes and the yearly  environmental  variations,  planting  windows  
+were compared  within each year by calculating  the relative  values for each genotype across 
+planting windows.
+On  average,  rice  showed  the  highest  grain  yield  poten- tial  when  planted  in  planting  
+window  (PW)  2  (PW2)  and PW3 (from  11 to 31 March);  no significant  differences  were recorded 
+ between  these  planting  windows  (Figure  1). Thus,
+
+CERIOLI  IT AL.
+
+
+T A B L E  2     Variation of grain yield, milling yield, days to heading, and plant height across 
+planting date, genotype, year, and all interactions, from 2015 to 2018 in Crowley, LA
+
+Trait Grain yield
+Source of variation            df               Sum of squares            SS â•             Mean 
+square            F value            R value Planting date (PD)               6                
+1,067.8                          41.4               178                            268.9            
+    .000
+Genotype (G)                       6                569.7                             22.1          
+     95                              143.5                .000
+Year (Y)                               3                20.6                               0.8      
+           6.9                             10.4                  .000
+PD x G                                36              71.4                               2.8        
+         2                                3                       .000
+PD x  Y                                18              316.7                             12.3       
+        17.6                           26.6                  .000
+G x  Y                                  16              63.3                               2.5      
+           4                                6                       .000
+PD x G x  Y                         96              228.2                             8.9           
+      2.4                             3.6                    .000
+Residuals                             364            240.9                             9.3          
+       0.7
+
+Milling yield
+Planting date                         6                 62,470.6                          3.1       
+           10,411.8
+Genotype                             6                233,293.5                       11.7          
+     38,882.3
+Year                                     3                297,054.8                      14.9       
+        99,018.3
+PD x G                                36              263,342.9                      13.2           
+    7,315.1
+PD x  Y                                18              174,435.1                      8.7           
+      9,690.8
+G x  Y                                  16              396,646.4                      19.9         
+      24,790.4
+PD x G x Y                         96              455,041.3                      22.8              
+ 4740
+Residuals                             180            112,819.6                      5.7             
+    626.8
+16.6                  .000
+62                     .000
+158                   .000
+11.7                  .000
+15.5                  .000
+39.6                  .000
+7.6                    .000
+
+Days to heading            Planting date                        6                13,010.7           
+             50.2               2,168.5
+Genotype                             6                4,111.2                          15.9         
+      685.2
+Year                                     3                411.4                             1.6     
+            137.1
+PD x G                                36              719.2                             2.8         
+        20
+PD x  Y                                18              5,438.4                          21          
+        302.1
+G x  Y                                  16              347.8                             1.3       
+          21.7
+PD x G x Y                         96              992.9                             3.8            
+     10.3
+Residuals                             364            893.3                             3.4          
+       2.5
+883.6
+279.2
+55.9
+8.1
+123.1
+8.9
+4.2
+.000
+.000
+.000
+.000
+.000
+.000
+.000
+
+Plant height
+Planting date                        6                4,215.6                          10.8         
+      10.8
+Genotype                             6                15,947.7                        40.8          
+     40.8
+Year                                     3                97.4                               0.2    
+             0.2
+PD x G                                36              2,348.7                          6            
+        6
+PD x Y                                16              5,122.3                          13.1         
+      13.1
+G x  Y                                  16              969                                2.5      
+           2.5
+PD x G x Y                         86              2,831.2                          7.2             
+    7.2
+Residuals                             340            7,554                             19.3         
+      19.3
+31.6
+119.6
+1.5
+2.9
+14.4
+2.7
+1.5
+.000
+.000
+.225
+.000
+.000
+.000
+.008
+
+‘Partial variation is expressed  as percentage of sum of squares over the total.
+
+
+
+we  suggest  that  this  planting  window  could  be  considered as   optimal   for   drill-seeded  
+ rice   cultivation   in   Southwest Louisiana. Although not statistically different, PW2 did show 
+higher  average  yields compared  to PW3,  suggesting  that, on average,  planting earlier in the 
+recommended  window is pre- ferred. Lower yield values were observed for PW1 and PW4, with a 
+decrease of  10.89r  for both. No significant  differences were observed between PW1 and PW4. Grain 
+yield decreased considerably  after PW3,  stabilizing  at PW7  and  PW8  which were  not  
+significantly  different.  The  variation  of  the  rela- tive  yields  within  planting  window  
+were the lowest  at PW3, slightly  higher  at  PW2,  and  increased  in  later  plantings.  At
+PW 1 the  variation was one of the highest suggesting that early plantings are the most subjected 
+to fluctuations of grain yield potential  because of  yearly  weather conditions:  in years  with 
+favorable  growing  conditions  very  early  in  the season,  PW1 performed  very  well,  but  in  
+years  with  unfavorable  condi- tions  early  in  the  season,  PW1  did  very  poorly.  
+Conversely, PW3 was the most stable across years, suggesting that in most years this window 
+provides appropriate or optimal conditions for  planting.  It  is  important  to  notice  that  for 
+ Years  2011 and  2017  the  highest  yield  values  were recorded  at the ear- lier  part  of  
+PW1,  while  in  Years  2015  and  2018,  no  signif- icant  differences  were  recorded  within  
+the  optimal  window
+
+CERIOLI  IT AL.
+
+
+(a)
+
+
+1.00
+
+
+
+
+0.75
+b        a        a        b        c        d        e        e          (b
+
+
+
+1.0
+
+
+
+0.9
+
+ab      ab       b        d       cd      cd      bc       a
+
+_   0.B
+
+
+0.50
+
+
+
+
+0.25    *
+
+0.7
+
+
+0.6
+
+
+
+
+
+(c)
+
+
+
+
+
+
+
+
+1.0
+
+
+PW1     PW2     PW3     PW4    PW5     PW6     PW7     PW8
+Planting window
+
+a        b        C         d
+e
+
+
+(d)
+0.5
+
+
+
+
+
+
+
+1.0
+
+
+PW1     PW2     PW3     PW4     PW5     PW6     PW7     PW8
+Planting window
+
+c        b        b        a       ab       c        b        c
+
+
+
+c   0.9
+
+
+
+>   0.8
+
+
+
+0.7
+
+
+
+0.6
+
+6
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PW1     PW2     PW3     PW4     PW5     PW6     PW7     PW8
+Planting window
+
+0.9
+
+
+c  0.B
+
+
+0.7
+
+
+0.6
+
+
+0.5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PW1     PW2     PW3     PW4     PW5     PW6     PW7     PW8
+Planting window
+
+F I G U R E  1     Relative values of genotypes across all years and planting windows for (a) grain 
+yield, 286 (b) milling yield, (c) days to heading, and
+(d) plant height; from 2011 to 2018 in 287 Crowley, LA. Note: Letters represent significant 
+differences across planting windows
+
+
+
+(PW2—PW3)  and  PW4.  In  Years  2013  and  2014,  PW5  was comparable  to  earlier  planting  
+windows.  This  indicates  that the choice of planting must consider year-specific weather and soil 
+conditions  and the  weather forecast.  Planting  is optimal before PW2—PW3 if soil and air 
+temperature are warm or later if cold  and  wet conditions  are present.  When  comparing  the 
+growing cycle of rice planted in different times of the year, it was noticed that PW1, PW2, and PW3 
+flowered with few days of difference,  while for later plantings, the vegetative growth was faster. 
+Previous studies suggested  that the yield losses in rice planted later are related to the shorter 
+length of the veg- etative growth during which plants accumulate  less dry mat-
+ter reducing  yield potential  (Gravois  & Helms,  1998; Slaton et al., 2003). Other explanations 
+given for the higher yield loss during later plantings can be found in the higher blast disease
+{Magnaporthe  grisea) pressure (Gravois & Helms,  l99fi) and heavier  rice  water-weevil  insect 
+{Lissorhaptrus oryzophilus) pressure (Sha & Linscombe,   2007).
+The  observations   of   variation   partitioning   showed   that milling  yield  is  less  
+influenced  by  planting  date  than  grain yield.   However,   statistically   significant   
+differences   were observed  across  planting  windows  (Figure  1).  High  relative values  were  
+reported  when  rice  was  planted  during  PWl, PW2, PW3, and PW8, from late February to the end 
+of March
+
+CERIOLI  IT AL.
+
+
+T A B L E  3     Planting windows (PWs) with relative beginning and
+end date
+T A B L E  4     Predicted relative yield loss with cubic model and day
+of the year
+
+Planting window
+PWl PW2 PW3 PW4 PW5 PW6 PW7 PW8
+Begin window
+23 Feb.
+11 Max.
+27 Mar.
+11 Apr.
+30 Apr.
+11 May
+25 May
+9 June
+End window
+5 Mar.
+22 Mai.
+31 Mar.
+23 Apr.
+1 May
+16 May
+6 June
+20 June
+Potential yield
+
+100
+95
+90
+85
+80
+75
+70
+65
+60
+Day of the year
+
+20 Mar.
+8 Apr.
+17 Apr.
+24 Apr.
+1 May
+7 May
+14 May
+22 May
+1 June
+
+and  at  the last  planting  in June.  After  this  optimal  window, milling yield drops at PW4 and 
+slightly increases with follow- ing plantings.  Similar  to grain yield, earlier plantings  within 
+the optimal window showed higher relative values of milling yield.  As  already  presented  by  Sha 
+ and  Linscombe  (2007), this  trend  is  likely  explained  by  the  period  in  which  grain 
+maturation  occurs  during  the growing  season.  When  rice  is planted in the earlier  windows,  
+it is flowering,  and  the grain is  maturing  before  the extremely  high  temperatures  in  mid- 
+summer.  The  rice  planted  in  mid-April  (PW4)  is  typically maturing during the hottest time 
+of the summer months, which leads to a reduction  in milling  yield. This is reflected also in the 
+highest average values in PW8 when rice matures in lower night and day temperatures  of September 
+and October.
+Rice  maturity  was  significantly  affected  by  planting  date (Figure  1).  The  amount  of  
+days  required  for  flowering  is highly correlated to the amount of growing degree days, which is 
+ the  daily  accumulation  of  heat  units  during  the  crop's growth.  Thus,  the  later  rice  
+is  planted,  the  more  growing degree days it will receive in the early stages of development, 
+resulting in earlier flowering. Differences can be very signif- icant since the same lines can 
+flower 25 d earlier on average if planted during PW8 instead of PW1. This trend is observed in  
+production  fields  when  farmers  plant  their  fields  over  a period  of  a few  weeks,  and 
+then it is all ready  for harvest  at the same time.
+Plant  height   was  slightly   affected   by  planting   window because  it  is  more  genotype  
+dependent  as  observed  in  the explained  variance  portion.  Still,  on  average,  lower  values 
+were observed  in the early  and  late  planting  windows  (PW1 and PW8) (Figure  I). Contrarily,  
+seedling vigor showed  sig- nificant  differences  across  planting  windows  (Supplemen- tal  
+Figure  S1.).  The  highest  value  was  recorded  at  PW6, while  in  the  earlier  plantings  it  
+decreases  to  reach  the  low- est  value   at  PW1.  This   tendency   is  likely   explained   
+by the  colder  and  wetter  weather  and  soil  conditions  that  are more  likely  to  occur  
+during  earlier  planting  windows  and are  responsible  for  slower  germination  and  growth  of 
+ the seedling.
+
+
+3.3        Yield potential and loss
+
+The  choice  of  planting  date  is  critical  in  determining  grain yield  potential;  therefore, 
+ a  model  was  fitted  to  predict  the average  yield for  each  calendar  day  and  define  the 
+potential yield loss for delayed plantings (Figure 2). For each year, the average yield of all 
+genotypes at each planting date expressed in  calendar  day  was  divided  by  the  value  of  the  
+best  per- forming  planting  date for  that  year.  The  use of  relative  val- ues excludes in 
+part the variation related with testing different sets of genotypes across years and yearly 
+environmental  fluc- tuation.  Different  models  were  fitted:  the  polynomial  cubic regression  
+showed  the  best  fit  with  a fi*  of  .565,  compared to the quadratic regression  which had a 
+fi* of .5169 (Supple- mental Figure S2). The polynomial cubic regression  was pre- viously used for 
+analysis in a similar study on rice by Slaton et a1.  (2003)  and  in other crops,  such as corn 
+(Zea  mays  L.) (Lauer  et  al.,  1999)  and  hard  red  winter  wheat  (Blue  et  al., 199()). The 
+shape of the predicted grain yield line is compara- ble with the planting windows results (Figure 
+1): the optimal planting window appears to be between 10 March and the end of March, while 
+potential yield significantly decreases at later plantings. The polynomial formula of the model was 
+used to calculate the theoretical  optimal planting date which resulted to be calendar  Day  79 (20 
+March).  Using  this date as  1009 yield potential, it takes 18 d (8 April) until we see a She 
+reduc- tion in yield (Table 4). However,  the next 59r  yield reduction occurs after only 9 d (17 
+April), and the next 5% reduction is only 7 d after that (24 April). On average, 20% of yield could 
+be lost when rice is planted in early May. When rice is planted after 31 March  the average daily 
+yield loss is 0.549c,  assum- ing the average  yield  of  8,850.2 kg ha*'  during  the optimal 
+planting  window,  every  day  planting  is delayed  equates  to a reduction  of  47.8  kg ha*'. 
+Thus,  grain  yield  is  significantly reduced  with  time  when  rice is  planted  outside  the  
+optimal planting window, underlining the importance of planting rice
+
+CERIOLI  IT AL.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+F I G U R E   2     Relative yield for planting date from 2011 to 2018 in Crowley, LA. The line 
+shows the fitted cubic regression, and the shaded area represents the 954 confidence interval for 
+the line. The formula of the regression resulted:  F  =  —7.49 + â5.079s  — .0474x² + .0001x’
+
+
+as  soon  as  the  optimal  conditions  for  seed  germination  and growth are met.
+
+
+4        CONCLUSION
+
+Throughout   the  years,  the  recommended  optimal  planting window in Southwest Louisiana has 
+changed, from early April to May in the first half of the 1900s to to the current window from  
+mid-March  to  mid-April.  This  study  conducted  on  the current elite varieties  and  across  
+several  years indicates  that producers are encouraged to drill-seed rice between 10 March and  
+the  end  of  March.  Reduced  losses  in  yield  and  grain milling  can  occur  in  the  first  
+half  of  April,  but  significant losses are likely with more delayed plantings. However, each 
+year the choice of date of  planting must consider the specific field  conditions  and  existing  
+and  forecasted  weather  since optimal conditions can occur at different moments across dif- 
+ferent years. If planting requirements are met, earlier planted rice possess the highest yield and 
+grain quality potential, and it has a higher chance to produce a successful ratoon crop.
+
+A C K N O W L E D G M E NT S
+The  authors  thank  Brent  Theunissen,  Karen  Bearb,  Gavin Guidry,  Brady  Williams,  and Corey  
+Conner  for  their  efforts
+in  generating  the  field  data;  and  to  Valerie  Dartez  for  her assistance  in  revising  the 
+ manuscript.  This  work  was  sup- ported by the Louisiana  Rice Research  Board and in-part  by 
+the USDA National Institute of Food and Agriculture, and the
+U.S. National Science Foundation.
+
+C O N F L I C T   O F   I NT E R E S T
+The authors declare no conflict of interest.
+
+O R C I D
+Tommaso Cerioli &• https://orcid.org/0000-0002-1105-8473
+Adam N. Famoso &• https://orcid.org/0000-0002-6461-6504
+
+R E F E R E NC E S
+Adair,  R.  C.,  Atkins,  J.  G.,  Bollich,  C.  N.,  Bowman,  D.  H.,  Evatt,  N.
+S.,  Gifford,  J.  R.,  Jodon,  N.  E., Johnston,  T.  H.,  Mikkelsen,  D. S.,
+Miller, M. D., Seaman, D. E., Smith, R. J., & Webb, B. D. (1973). Rice in the Uniteâ Stutes. 
+Varieties anâ production (Agriculture handbook 289). Washington, DC: USDA  Agricultural  Research 
+Service.  https:
+//doi.org/I I).23tl7/2l)l)G39
+Bates, D., Machler, M., Bolker, B. M., & Walker, S. C. (2015). Fitting lin- ear mixed-effects  
+models using 1me4. Journal of Statistical Software, 67(1).  https://doi.org/1().186.37/ass.vl)67. 
+ill lhttps://dot.or g/ITU 8637/ jss. v0G7.iO1
+Blanche,  S.  B.,  &  Linscombe,  S.  D.  (2009).  Stability  of  rice  grain
+and  whole  kernel  milling  yield  is  affected  by  cultivar  and  date  of
+
+CERIOLI  IT  AL.
+
+
+planting.   Agronomy  Journal,  101(3),  522—528.   https://doi.org/10. 2134/agronj2O08.O I 6Ox
+Blue,   E.   N.,   Masson,   S.   C.,   &   Sander,   D.   H.   (1990).   Influence of   planting   
+date,   seeding   rate,   and   phosphorus   rate   on   wheat yield.  Agronomy  Journal,  82(4),  
+762-768.  https://d‹ii.org/1 O. 1017/ CBO9781I tJ74 15324.()tJ4
+Bollich, C. N., & Turner, F. T. (1988). Commercial  ratoon rice produc- tion  in  Texas,  USA.  In  
+Rice  ratooning  (pp.  257-264).  Los  Banos, Laguna, Philippines:  International Rice Research 
+Institute.
+Dou, F., & Tarpley,  L. (2012). Texas  rice  production  guidelines. Beau- mont: Texas AgriLife 
+Research  and Extension  Center.
+Dou,  F.,  Tarpley,  L.,  Chen,   K.,  Wright,   A.  L.,  &  Mohammed,   A.
+R.  (2016).   Planting   date   and   variety   effects   on   rice   main   and ratoon crop 
+production  in South Texas. Communications in Soil Sci- ence und Plant Anal ysis, 47(21), 
+2414—2420. https://doi.org/1(I.1O8(I/ 00103624.2016.1243705
+Dunand, R. T. (1988). Red  rice - Its imfiact on grain quality and its cul- tural control. A review 
+of research in Louisiana, 1960—1982 (Bulletin 792). Louisiana Agricultural  Experiment Station.
+Gravois,  K.  A.,  &  Helms,  R. S. (1998).  Seeding  date  effects  on  rough rice  yield  and  
+head  rice  and  selection  for  stability.  Euphyticn,  702, 151—159.  https://doi.org/10. 
+1023/A:101 8344615296
+Griffin,  J.  L.,  Baker,  J.  B.,  Dunand,  R.  T.,  &  Sonnier,  E.  A.  (1986). Red  rice 
+control  in rice  rind  soybeans in Southwest  Louisiana  (Bul- letin 776). Louisiana Agricultural 
+Experiment Station. Retrieved from https://digita1commons.1su.edu/agexp/855
+Harrell, D. L. (2020). Louisiana rice acreage. Louisiana State University AgCenter.
+Harrell,  D.  L.,  Fontenot,  K.  A.,  Zaunbrecher,  R.,  Brown,  S.,  Webster,
+E. P., Hebert, J. P., Groth, D. E., Dartez,  V., Oard, J. H., Kongchum, M., & Famoso, A. N. (2020). 
+2020 Rice varieties & management !!F^ Louisiana State University  AgCenter.
+Jenkins,  1.  M.  (1944).  Results  of  experiments  with  rice  in  Louisiana (Report  339).  
+Louisiana  Agricultural  Experiment  Station  Retrieved from 
+http://digita1conimons.lsu.edu/agexp/339
+Jodon, N. E. (1953). Growing period of leading rice varieties when sown on  different  dates  
+(Report  205).  Louisiana  Agricultural  Experiment Station. Retrieved from 
+http://digitalcoinmons.1su.edu/agexp/2(J5
+Jodon, N. E., & McIlrath, W. O. (1971). Response of rice to time of seed- ing in Louisiana (Report 
+75). Louisiana Agricultural Experiment Sta- tion. Retrieved from 
+http://digitalcoinmons.1su.edu/agexp
+Lanning, S. B., Siebenmorgen, T. J., Ambardekar,  A. A., Counce, P. A., &  Bryant,  R.  J.  (2012). 
+ Effects  of  nighttime  air  temperature  during kernel development of field-grown rice on 
+physicochemical and func- tional  properties.  Cereal  Chemistry, 89(3),  168-175.  
+https://doi.org/ 1(J.1 IJ94/CCHEM- 12- 1 l -() 146
+Lauer,  J.  G.,  Carter,  P.  R.,  Wood,  T.  M.,  Diezel,  G.,  Wiersma,  D.  W., Rand, R. E., & 
+Mlynarek, M. J. (1999). Corn hybrid response to plant- ing date in the northern corn belt. Agronomy 
+Journal, 97(5), 834-839. https://dr›i.org/10.2134/agrtinj1999.915834x
+NASS.  (2020).  Crop  progress.  USDA  National  Agricultural  Statistics Service.
+NOAA.   (2020).   Freeze/frost   occurrence   data   (Freeze/Frost   Data   - CLIM20  Supplement   
+no.  1).  National  Oceanic  and  Atmospheric Administration.   Retrieved   from   http://cl 
+innate.sdslate.edu/w  in lix/ frost/frost.shtm
+R Core Team. (2020). R.’ A language and environment for statistical com- puting. Vienna, Austria: R 
+Foundation for Statistical  Computing.
+Saichuk,  J.  (2013).  Field  notes  August  19  2013  (LSU  AgCenter  Field Notes 2013).
+Saichuk,  J.  K.,  Harrell,  D.  L.,  Hollier,  C.  A.,  White,  L.  M.,  Stout,
+M.  J.,   Brown,   S.,   Webster,   E.   P.,   Reagan,   T.   E.,   Schultz,   B., Salassi,  M.,  
+Oard, J. H., Groth,  D.  E.,  & Linscombe,  S. D.,  (2014). Louisiana  rice  firoduction  handbook  
+(LSU  AgCenter  Publication  ID 2327). Louisiana State University  AgCenter. https://doi.org/IO.1 
+U21/ ac6O320a01 6
+Sha,  X. Y., & Linscombe,  S. D. (2007).  Planting date affects  grain  and milling  yields  of  
+water-seeded  clearfield  rice.  Agronomy  Journal, 99(4), 1143—1150.  https://d‹ii.org/10.21 
+34/agronj2006.0298
+Slaton,  N.  A.,  Linscombe,  S.  D.,  Norman,  R.  J.,  &  Gbur,  E.  E.  J. (2003).  Seeding  
+date  effect  on  rice  grain  yields  in  Arkansas  and Louisiana.  Agronomy  Journal,  95(1),  
+218-223.   https://d‹ii.tirg/1O. 2 l.34/agi on J20()3.()218
+Smith, C. W., & Dilday, R. H. (2003). Rice. Origin, history, technolog y, and  production. John 
+Wiley & Sons.
+Wickham,  H. (2016).  ggplot2.  Elegant  graphics  for data analysis. New York: Springer-Verlag.
+Wu, C., Tang, S., Li, G., Wang, S., Fahad, S., & Ding, Y. (2019). Roles of phytohormone  changes in 
+the grain yield of rice plants exposed  to heat: A review. PeerJ, 7, e7792. 
+https://doi.org/10.7717/peerj.7792
+Yoshida, S. (1981). Fundamentals of rice crop science. In  Plan! FrOduc- tion sc'ience Vol. 1, (3). 
+Los Banos, Laguna, Philippines: International Rice Research Institute. Retrieved from 
+https://doi.tirg/1(J.                1.
+199
+
+
+S U P P O R T I N G  I N F O R M A T I O N
+Additional supporting information may be found online in the Supporting Information section at the 
+end of the article.
+
+
+How to cite this article:  Cerioli T, Gentimis T, Linscombe SD, Famoso AN. Effect of rice planting 
+date and optimal planting window for Southwest Louisiana. Agronomy Journal. 2021;113. 1-10. 
+https://doi.org/10.1tJ02/agj2.2(1593
