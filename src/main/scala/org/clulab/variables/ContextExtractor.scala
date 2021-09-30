@@ -9,6 +9,7 @@ import org.clulab.utils.contextDetails
 import scala.collection.mutable.{ArrayBuffer, Map}
 import scala.util.Try
 import scala.util.control.Breaks._
+import org.clulab.processors.Sentence
 
 class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine) {
 
@@ -57,12 +58,11 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
   }
 
   def extractContext(doc: Document, mentions:Seq[Mention], n:Int, entityType:String ):Seq[MostFreqEntity]={
-    //map each event mention to its sentence id. useful in extracting contexts
-
+    //collect all event entities only (and not text bound ones)
     val allEventMentions = mentions.collect { case m: EventMention => m }
 
     // allContexts= map of all context entities (e.g.,Senegal) to the ids of sentences that they occur at
-    val allContexts = extractContext(doc)
+    val allContexts = mapEntityObjFreq(doc)
     val mentionContextMap=calculateAbsoluteDistance(allEventMentions,allContexts)
 
     //pick entityType from ["LOC","DATE"]; set n=Int.MaxValue to get overall context/frequency in whole document
@@ -127,21 +127,6 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
     mentionContextMap.keys.toSeq.map(key=>findMostFreqContextEntitiesForOneEvent(key,mentionContextMap(key), entityType,n))
   }
 
-//  def printmentionContextMap(mentionContextMap: scala.collection.mutable.Map[String, Seq[Context]]) = {
-//    for (mnx <- mentionContextMap.keys) {
-//      println(s"event : $mnx")
-//      for (x <- mentionContextMap(mnx)) {
-//        println(s"entity string name : ${x.location}")
-//        println(s"entity : ${x.entity}")
-//        print(s"relativeDistance and Count :{")
-//        for (y <- x.distanceCount) {
-//          print(s"[${y.mkString(",")}],")
-//        }
-//        print(s"}")
-//        println("\n")
-//      }
-//    }
-//  }
 
   case class entityNameEntity(entityName: String, entity: String)
   //from the list of all context words extract only ones you are interested in .eg: extract Senegal_B-LOC_0
@@ -149,9 +134,9 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
   Map[ContextKey, Int]):scala.collection.mutable.Map[entityNameEntity, ArrayBuffer[Array[Int]]]  = {
     val sentIdFreq= scala.collection.mutable.Map[entityNameEntity, ArrayBuffer[Array[Int]]]()
     for (key <- entitySentFreq.keys) {
-      val entityName = key.entityName
-      val entity = key.entity
-      val sentId = key.index
+      val entityName = key.entityValue
+      val entity = key.tag
+      val sentId = key.sentId
       val freq = entitySentFreq(key)
       val nk = entityNameEntity(entityName, entity)
       //if the entity_sentenceid combination already exists in the dictionary, increase its frequency by 1, else add.
@@ -195,38 +180,46 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
     }
     contexts.toSeq
   }
-  case class ContextKey(entityName: String, entity: String, index: Int)
 
-  def extractContext(doc: Document): Seq[Context] = {
-    //Get all the entities and their named entity types along with the number of times they occur in a sentence
+  //details of each entity: name,nertag
+  case class ContextKey(entityValue: String, tag: String, sentId: Int)
+
+  // IF an LOC entity has multiple tokens. (e.g., United States of America.) merge them to form one entityName
+  def checkForMultipleTokens(nerTag:String,entityCounter:Int,indicesToSkip:ArrayBuffer[Int],entityName:String,sent:Sentence): String ={
+    var newEntityName=entityName
+    var fullName = ArrayBuffer[String]()
+    var tempEntity = nerTag
+    var tempCounter = entityCounter
+    do {
+      fullName += sent.words(tempCounter)
+      indicesToSkip += tempCounter
+      tempCounter = tempCounter + 1
+      tempEntity = sent.entities.get(tempCounter)
+      newEntityName = fullName.mkString(" ").toLowerCase()
+    }while (tempEntity == "I-LOC")
+    return newEntityName
+  }
+
+  //Map each entityObject to the number of times it occurs overall
+  def mapEntityObjFreq(doc: Document): Seq[Context] = {
     var entitySentFreq: scala.collection.mutable.Map[ContextKey, Int] = Map()
     for ((s, i) <- doc.sentences.zipWithIndex) {
       var entityCounter = 0
       val indicesToSkip = ArrayBuffer[Int]()
-        for ((e, w, n) <- (s.entities.get, s.words, s.norms.get).zipped) {
+        for ((nerTag, word, norm) <- (s.entities.get, s.words, s.norms.get).zipped) {
           var EntityNameIndex:Option[ContextKey] = None
           if (!indicesToSkip.contains(entityCounter)) {
-            if (e == "B-LOC" || e=="B-DATE") {
+            if (nerTag == "B-LOC" || nerTag=="B-DATE") {
               var namedEntityTag = ""
-              var entityName = w.toLowerCase
-              if (e == "B-LOC") {
-                namedEntityTag = "LOC"
-                // IF  LOC has multiple tokens. (e.g., United States of America.) merge them to form one entityName
-                var fullName = ArrayBuffer[String]()
-                var tempEntity = e
-                var tempCounter = entityCounter
-                do {
-                  fullName += s.words(tempCounter)
-                  indicesToSkip += tempCounter
-                  tempCounter = tempCounter + 1
-                  tempEntity = s.entities.get(tempCounter)
-                  entityName = fullName.mkString(" ").toLowerCase()
-                }while (tempEntity == "I-LOC")
-                EntityNameIndex=Some(ContextKey(entityName,namedEntityTag,i))
+              var entityName = word.toLowerCase
+              if (nerTag == "B-LOC") {
+                val cleanNerTag = "LOC"
+                val newEntityName=checkForMultipleTokens(nerTag,entityCounter,indicesToSkip,entityName,s)
+                EntityNameIndex=Some(ContextKey(newEntityName,cleanNerTag,i))
               }
-              else if (e.contains("B-DATE")) {
+              else if (nerTag.contains("B-DATE")) {
                 namedEntityTag = "DATE"
-                val split0 = n.split('-').head
+                val split0 = norm.split('-').head
                 if (split0 != "XXXX" && Try(split0.toInt).isSuccess) {
                   entityName = split0
                   EntityNameIndex=Some(ContextKey(entityName,namedEntityTag,i))
