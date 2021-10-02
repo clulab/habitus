@@ -190,7 +190,11 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
       fullName += sent.words(tempCounter)
       indicesToSkip += tempCounter
       tempCounter = tempCounter + 1
-      tempEntity = sent.entities.get(tempCounter)
+      if( !sent.entities.get(tempCounter).isEmpty) {
+        tempEntity = sent.entities.get(tempCounter)
+      }
+      else
+        {break}
       newEntityName = fullName.mkString(" ").toLowerCase()
     } while (tempEntity == "I-LOC")
     newEntityName
@@ -200,6 +204,11 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
   def getEntityFreqPerSent(doc: Document): Seq[entityRelDist] = {
     var entitySentFreq: scala.collection.mutable.Map[Entity, Int] = Map()
     for ((s, i) <- doc.sentences.zipWithIndex) {
+      println(s.words.mkString(" "))
+      println(s"index=$i")
+      if( i>344) {
+        println(s.words.mkString(" "))
+      }
       var entityCounter = 0
       val indicesToSkip = ArrayBuffer[Int]()
         for ((nerTag, word, norm) <- (s.entities.get, s.words, s.norms.get).zipped) {
