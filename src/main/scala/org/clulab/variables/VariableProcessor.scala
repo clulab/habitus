@@ -30,11 +30,13 @@ object VariableProcessor {
   def apply(): VariableProcessor = {
     // Custom NER for variable reading
     val kbs = Seq(
-      "variables/FERTILIZER.tsv"
+      "variables/FERTILIZER.tsv",
+      "variables/CROP.tsv"
     )
     val lexiconNer = LexiconNER(kbs,
       Seq(
-        true // case insensitive match for fertilizers
+        true, // case insensitive match for fertilizers
+        true
       )
     )
 

@@ -8,7 +8,7 @@
   label: ${label}
   type: token
   pattern: |
-    @variable:Variable (?<trigger> [lemma=be]) @value:Value
+    @variable:Variable [tag=/VBN/]? (?<trigger> [lemma=be]) @value:Value
 
 #
 # [With] Variable Value
@@ -22,6 +22,29 @@
     (?<trigger> [lemma=with])? @variable:Variable (@value:Value)+
 
 #
+# VARIABLE ranged|occurred on VALUE
+#
+- name: ${label}-cop-3
+  priority: ${rulepriority}
+  label: ${label}
+  graph: "hybrid"
+  pattern: |
+    trigger = [lemma=/range|occur|be/ & tag=/^V/]
+    variable:Variable = /nsubj/
+    value:Value = /nmod_on|nmod_in|Ax_on|Ax_in/
+
+#
+# VARIABLE on|in VALUE
+# This is a token pattern. Try not to use them. But they are simpler for copulative verbs ("be" verbs)
+#
+- name: ${label}-cop-4
+  priority: ${rulepriority}
+  label: ${label}
+  type: token
+  pattern: |
+    @variable:Variable (?<trigger> [lemma=/on|in/]) @value:Value
+
+#
 # VARIABLE ranged|occurred from|between VALUE and VALUE
 # This is a syntactic/semantic pattern. Try to use such rules when you can. They generalize better!
 #
@@ -30,7 +53,6 @@
   label: ${label}
   graph: "hybrid"
   pattern: |
-    trigger = [lemma=/range|occur/ & tag=/^V/]
+    trigger = [lemma=/range|occur|be/ & tag=/^V/]
     variable:Variable = /nsubj/
     value:Value = /nmod_from|nmod_between|Ax_from|Ax_between/
-
