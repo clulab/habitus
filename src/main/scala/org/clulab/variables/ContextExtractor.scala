@@ -14,13 +14,13 @@ import org.clulab.processors.Sentence
 class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine) {
 
 
-  def parse(text: String,sentidContext:scala.collection.mutable.Map[Int,contextDetails]) = {
+  def parse(doc:Document,mentions:Seq[Mention],sentidContext:scala.collection.mutable.Map[Int,contextDetails]) = {
 
     // pre-processing
-    val doc = processor.annotate(text, keepText = false)
+   // val doc = processor.annotate(text, keepText = false)
 
     // extract mentions from annotated document
-    val mentions = extractor.extractFrom(doc).sortBy(m => (m.sentence, m.getClass.getSimpleName))
+   // val mentions = extractor.extractFrom(doc).sortBy(m => (m.sentence, m.getClass.getSimpleName))
 
 
     val mostFreqLocation0Sent=extractContext(doc,mentions,0,"LOC")

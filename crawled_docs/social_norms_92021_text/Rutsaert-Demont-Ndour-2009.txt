@@ -1,0 +1,1539 @@
+Competitive Rivals: Willingness-to-pay for Senegal River Valley versus Imported Rice 
+
+Pieter Rutsaerta, Matty Demontb,*, Maimouna Ndourb and Eric Tollensa 
+
+a Agricultural and Food Economics Section, Department of Earth and Environmental Sciences, 
+
+Katholieke Universiteit Leuven, Celestijnenlaan 200E bus 2411, B-3001 Leuven, Belgium 
+
+b Africa Rice Center (WARDA), B.P. 96, Saint-Louis, Senegal 
+
+* Corresponding author. Tel.: +221-9626493; fax: +221-9626491. 
+
+E-mail address: m.demont@cgiar.org 
+
+ 
+
+ 
+
+ 
+
+II Workshop on Valuation Methods in Agro-food and Environmental Economics “Experimental 
+Auctions: Theoretical background and empirical applications”, Barcelona, 2nd - 3rd July 2009. 
+
+Abstract 
+This  study  investigates  how  the  Senegalese  consumer  values  quality  rice.  We  use  Vickrey 
+second  price  auctions  to  elicit  the  willingness-to-pay  (WTP)  to  exchange  mediocre  Senegal 
+River  Valley  (SRV)  rice  into  unlabeled  quality  SRV  rice,  labeled  (Rival)  quality  SRV  rice  and 
+labeled  (Thai-25)  imported  rice.  We  include  experimental  interaction  between  participants  by 
+introducing  the  concept  of  collective  willingness-to-pay  (CWTP)  through  consensus  sessions. 
+The participants are willing to pay an 80 percent higher price premium for local quality rice than 
+for imported rice. This indicates that the local quality rice brand Rival is able to compete against 
+imported rice. Bids are influenced by tasting and the time  of the day  during which the rice is 
+auctioned;  socio-demographic  variables  have  very  little  influence  on  bids.  Remarkably,  in 
+contrast  to  individual  bids,  collective  consensus  exhibits  a  significantly  positive  label  effect. 
+These findings are important for designing labeling and marketing strategies and provide useful 
+information  for  rice  traders,  retailers  and  local  rice  farmers  in  the  Senegal  River  Valley  and 
+national  policy  makers  who  are  currently  implementing  an  ambitious  food  self-sufficiency 
+program. Understanding the group estimation process was a second goal of our research and 
+the results show that age is an important factor in collective decision-making. The latter provides 
+useful information for designing collective value chain and generic promotion strategies through 
+exploiting social capital and networks. 
+ 
+Keywords:  willingness-to-pay;  sub-Saharan  Africa;  value  chain;  experimental  auction;  social 
+decision scheme 
+
+JEL classification: C24; C91; C92; D12; D71 
+
+Acknowledgements 
+Financing from the European Union is greatly acknowledged. This research has been possible 
+thanks  to  a  travel  grant  from  the  Flemish  Interuniversity  Council  –  University  Cooperation  for 
+Development (VLIR-UOS). We further would like to thank Jutta Roosen (Technical University of 
+Munich), Jayson L. Lusk (Oklahoma State University), Abdoulaye A. Fall (ISRA – Senegalese 
+Institute  for  Agricultural  Research)  and  Mandiaye  Diagne  (Africa  Rice  Center  –  WARDA)  for 
+their research support, and Racky Diop and El Hadj Gueye (Africa Rice Center – WARDA) for 
+their assistance during the experiment. 
+
+1 
+
+ 
+
+Competitive Rivals: Willingness-to-pay for Senegal River Valley versus Imported Rice 
+
+Establishing efficient value chains is cited by the World Bank as a first policy objective in making 
+
+agriculture  in  developing  countries  more  competitive  and  more  effective  in  supporting 
+
+sustainable  growth  and  reducing  poverty  (World  Bank  2008,  pp.  19,  228).  In  an  increasingly 
+
+competitive  global  agri-food  environment,  businesses  that  are  adept  at  meeting  the  needs  of 
+
+consumers will survive and grow. Hobbs, Cooney and Fulton (2000) argue that it is the demand-
+
+driven strategy which distinguishes value chains from traditional business relationships. Hence, 
+
+the value that consumers attribute to the product in the end-market is the starting point for value 
+
+chain research. 
+
+Food production in Senegal has doubled since 1960 but due to the country’s high level 
+
+of  population  growth,  per  capita  food  production  has  fallen  by  almost  50  percent  (Brüntrup, 
+
+Nguyen  and  Kaps  2006).  No  other  country  in  sub-Saharan  Africa  is  so  dependent  on  food 
+
+imports.  Rice  imports  into  Senegal,  particularly,  consist  almost  entirely  of  broken  rice.  In 
+
+international  markets,  broken  rice  is  considered  an  inferior  product  and  is  therefore  much 
+
+cheaper  than  whole-grain  rice.  However,  Senegalese  consumers  have  developed  a  marked 
+
+preference for imported broken rice. Even in major rice production regions, such as Saint-Louis, 
+
+urban  consumers  are  paying  price  premiums  averaging  15%  relative  to  mixed-grain  rice 
+
+produced in the Senegal River Valley (SRV) as Figure 1 shows. Because of its dominance, in 
+
+this study we focus on broken rice, termed simply ‘rice’ hereafter for brevity. 
+
+A 2007 study surveyed 500 households in Senegal and found that the most important 
+
+consumer determinants for rice were taste, swelling capacity, ease of cooking and the form of 
+
+the grain (Fall and Diagne 2008). Recently, perhaps triggered by high international rice prices, 
+
+value  chain  strategies  are  emerging  in  the  SRV,  where  producers  have  now  joined  efforts  in 
+
+2 
+
+ 
+
+supplying  a  new  enhanced-quality  SRV  rice  brand  Rival  (Riz  de  la  Vallée).  Governance  of 
+
+quality (processing, cleaning and packaging) and provision of micro-financing is conducted by 
+
+the recent Oxfam-funded initiative PINORD (Programme d’appui aux Initiatives du Nord). 
+
+The purpose of our study is to analyze the willingness to pay (WTP) for this new product 
+
+and for its Lancasterian attributes (visual and sensory quality and authenticity/locally produced 
+
+image). The study consists in a first step and feeds into a larger research framework on value 
+
+chain  development  and  generic  advertizing  with  the  aims  of  increasing  competitiveness  and 
+
+self-sufficiency  of  the  SSA  rice  sector  and  reducing  food  insecurity  and  poverty.  More 
+
+specifically,  we  are  interested  in  the  value  added  and  competitiveness  of  quality  SRV  rice 
+
+compared to conventional SRV rice and imported rice. 
+
+We compared the WTP for four different rice qualities/labels on the Saint-Louis market: 
+
+(i) conventional SRV rice (benchmark), (ii) unlabeled quality SRV rice, (iii) labeled (Rival) quality 
+
+SRV rice and (iv) labeled (Thai-25) imported rice. Harrison and Rutström (2008) demonstrated 
+
+that  in  stated  preference  methods  participants  typically  overstate  their  WTP.  To  avoid  this 
+
+positive bias, we used an experimental auction market designed to elicit real differences in WTP 
+
+between the benchmark rice and three alternative rice types. Because real products and real 
+
+money  are  exchanged  in  an  experimental  setting,  participants  have  increased  incentives  to 
+
+reveal their true value for a product.1 In a seminal paper, Shogren et al. (1994) described the 
+
+basic procedure. We used the conventional local mediocre-quality rice as a benchmark and we 
+
+                                                     
+ 
+
+ 
+
+1 See Lusk and Shogren (2007) for an extensive review of the methodology. 
+
+3 
+
+ 
+
+offered  it  as  an  endowment  at  the  beginning of  the  experiment.  Then  we  elicited  consumers’ 
+
+WTP to exchange this endowment for three alternative rice types. 
+
+This  article  contributes  to  the  experimental  auction  literature  on  two  points.  First,  we 
+
+conduct  an  experimental  auction  on  food  in  a  poor,  least  developed  country  (LDC)  under 
+
+challenging conditions of high illiteracy, limited technical possibilities and low education levels. 
+
+With the exception of Masters and Sanogo (2002), no similar market experiments have been 
+
+published in the context of LDCs. While their study is based on a choice experiment, we use the 
+
+auction mechanism as  methodology to elicit WTP values.  Surprisingly, very few experimental 
+
+auctions  have  been  published  on  developing  countries,  where  consumers  are  usually  more 
+
+acquainted  with  negotiable  prices  and  the  market  system,  and  are,  therefore,  more  used  to 
+
+conforming  their  WTP  to  the  food  sellers’  willingness-to-accept  (WTA)  than  consumers  in 
+
+developed countries. Moreover, these consumers typically spend larger shares of their budgets 
+
+on  food  and  demand  for  food  is  more  elastic.  In  other  words,  they  respond  more  actively  to 
+
+market  prices  necessitating  frequent  cognitive  efforts  to  estimate  their  WTP  and  a  better 
+
+knowledge of market prices as the latter directly affect their welfare. 
+
+Secondly,  we  include  experimental  interaction  between  participants  by  introducing  the 
+
+concept of collective willingness-to-pay (CWTP) and, hence, bridging the economic literature on 
+
+experimental  auctions  with  the  psychological  literature  on  random  ad  hoc  groups  and  social 
+
+decision schemes (SDS) that originated with Davis’ (1973) seminal article. To our knowledge, 
+
+the gap between these two distinct disciplinary fields has never been bridged so far. The only 
+
+exception,  and  most  closely  related  study,  is  the  paper  of  Maciejovsky  and  Budescu  (2007), 
+
+who  compared  cooperative  groups  and  competitive  auctions  and  concluded  that  competitive 
+
+auctions  induce  learning  effects  equally  impressive  as  those  of  standard  group  interactions. 
+
+However, the authors oppose both methods and completely separate them in their experimental 
+
+4 
+
+ 
+
+setting by using two distinct samples, while we combine both methods in a single experiment on 
+
+a  single  sample  and  generate  novel  information  on  the  interaction  between  both  methods. 
+
+Moreover, the authors do not directly use the data generated by the auctions, but only use the 
+
+latter to create competitive decision settings among subjects. 
+
+Three  strategic  considerations  led  us  to  introduce  collective  interaction  into  our 
+
+experiment.  First,  studies  on  group  decisions  revealed  that  groups  significantly  outperform 
+
+individuals  in  the  estimation  of  judgmental  variables  (Bonner,  Sillito  and  Baumann  2007; 
+
+Sniezek  and  Henry  1989).  Given  this  bias  argument,  understanding  the  group  estimation 
+
+process  is  of  clear  relevance  to  social  science  and  to  organizations.  Secondly,  this  study  is 
+
+embedded in a larger framework of experimental value chain research, in which it is believed 
+
+that  competitiveness  of  the  food  sector  in  developing  countries  can  be  increased  through 
+
+collective value chain and generic promotion strategies exploiting, to a maximum extent, social 
+
+capital  and  networks.  Finally,  rice  is  the  most  important  staple  crop  in  Senegal  and  more 
+
+important in relative terms to the poorest tercile of consumers than to the richest in urban areas 
+
+(Reardon  1993).  Food  security  and  self-sufficiency  are  public  goods  and,  hence,  social 
+
+normative processes in perceived quality and buying intentions (Obermiller and Spangenberg 
+
+1989) may be successfully deployed in generic promotion programs of local SRV rice. 
+
+Material and methods 
+
+We conducted 10 sessions during 5 days in the youth center of Saint-Louis, which is close to 
+
+the central market. We randomly selected women, going to and returning from the market, on 
+
+the spot and as soon as we had recruited 10 participants, we started the auction. Tomlins et al. 
+
+(2007)  observed  that  women  are  the  most  important  decision  makers  in  rice  purchase.  This 
+
+makes them the target group of our experiment. In our trial session, we offered a participation 
+
+5 
+
+ 
+
+fee of 2,000 FCFA. Because of a low participation rate, we raised the fee to 3,000 FCFA, which 
+
+boosted  the  participation  rate  to  approximately  50  percent,  i.e.  at  this  fee  urban  consumers 
+
+were, on average, indifferent between participating and non-participating.2 We maintained this 
+
+fee for the rest of the sessions and omitted the trial session in our experimental results. 
+
+We ran three auctions simultaneously following Melton et al. (1996) and Roosen et al. 
+
+(1998). Analogously to the latter, we used a fixed benchmark, i.e. conventional mixed-grain SRV 
+
+rice. In terms of quality and price, this rice type is inferior to the three alternatives in the auction. 
+
+Lusk et al. (2004) noticed a difference in subjects’ bids between multiple-good and single-good 
+
+valuation.  We  follow  Alfnes  and  Rickertsen  (2003)  who  argue  that  bidding  on  all  alternatives 
+
+simultaneously  is  an  efficient  method  for  eliciting  WTP  differences:  “[…]  all  bids can  be  used 
+
+and,  furthermore,  the  complete  distribution  of  WTP  differences  can  be  elicited  in  one 
+
+experiment.” (p. 399). 
+
+We  chose  the  Vickrey  (1961)  second-price  auction  mechanism,  because  of  its  weakly 
+
+dominant strategy for the participants to bid their true value for the good. With our interest on 
+
+low value individuals, Lusk and Rousu (2007) suggest that the BDM auction is likely to provide 
+
+more accurate depictions of true WTP than the second-price auction. However, in our context of 
+
+high illiteracy and low education levels, we preferred the second price auction mechanism as it 
+
+is easier to understand. We did not use any manuals or monitors and conducted the experiment 
+
+orally in the national languages Wolof and Pulaar. 
+
+                                                     
+ 
+
+ 
+
+2  At  the  time  of  the  experiments  (November  2008),  the  currency  rate  was  $1  =  469  FCFA  and  hence 
+
+3,000 FCFA = $6. 
+
+ 
+
+6 
+
+Each  participant  was  endowed  with  one  kilogram  of  the  conventional  local  mediocre-
+
+quality mixed-grain rice and had the opportunity to exchange this kilo into the three alternative 
+
+rice types, described above. The benchmark rice is a mix of varieties (Sahel 108 and 201) and 
+
+commonly  available  on  the  market.  The  imported  Thai-25  has  a  grain  quality  somewhere 
+
+between  the  benchmark  and  the  high-quality  SRV  rice  and  contains  some  impurities.  The 
+
+unlabeled and labeled rice types are equal, i.e. high-quality SRV rice (Sahel 108 variety) which 
+
+is purified and carefully shifted. 
+
+Halfway the session, we included a taste treatment of the four rice types and at the end 
+
+we  conducted  a  short  survey  through  a  one-page  questionnaire  to  collect  socio-demographic 
+
+data. We planned the survey after the auction experiment to avoid revealing too much about the 
+
+study’s objectives (Corrigan and Rousu 2008). 
+
+We  paid  considerable  attention  to  explaining  and  training  the  mechanism.  Following 
+
+Shogren  et  al.  (1994),  we  used  commonly  known  brands  of  biscuits  to  familiarize  the 
+
+participants with the Vickrey auction. Each participant received a small package of biscuits and 
+
+was asked to bid for two alternative, superior types of biscuits. We conducted two rounds with 
+
+an  evaluation  after  each  round  to  check  whether  the  participants  understood  the  system  and 
+
+whether more clarification was needed. We learned from the trial session that WTP difference 
+
+estimates  were  more  reliable  after  calibration  and  hence  before  the  first  bidding  round  we 
+
+posted the absolute market price of the benchmark rice, but did not reveal and kindly asked the 
+
+subjects not to reveal any price information on the alternative rice types. Secondly, we used the 
+
+analogy of buying new jewelry in exchange for old jewelry, where only the price for “upgrading” 
+
+is  paid,  a  buying  method  which  is  commonly  applied  by  Senegalese  women  in  the  jewelry 
+
+market. Both calibration and the example of analogy considerably facilitated and enhanced the 
+
+learning process of the difference method. 
+
+7 
+
+ 
+
+Corrigan  and  Rousu  (2006)  state  that  multiple  trials  with  posted  prices  may  influence 
+
+bids and advice to use just one round of bidding or multiple trials without posting prices. In the 
+
+biscuit trials we posted prices to explain the auction mechanism, but during the rice auctions we 
+
+did not reveal any bidding information. We conducted one bidding round before and one round 
+
+after the taste treatment. 
+
+After  the  individual  bidding  rounds,  we  kindly  asked  the  subjects  to  gather  around  a 
+
+round table and attempt to achieve a consensus on their difference in collective WTP (CWTP) 
+
+for  each  alternative  rice  type.  We  left  the  subjects  alone  during  the  discussion  to  avoid 
+
+influencing.  Not  surprisingly  perhaps  in  the  African  context  of  female  social  networking,  the 
+
+group discussions were very lively and democratic as they involved most subjects. We observed 
+
+a certain degree of dominance by elder women and traders, who were more acquainted with 
+
+market prices. Our post-experimental survey revealed that only 4% of the participants did not 
+
+agree with the proposed CWTP estimates. 
+
+At the end of the session, analogously to Roosen et al. (1998), we randomly selected 
+
+one  product  and  one  bidding  round  as  binding.  We  explicitly  explained  this  during  our 
+
+introduction to avoid the substitution effect that could arise if participants could win more than 
+
+one product which could compromise bidding their true value for the products. 
+
+Results 
+
+Table  1  shows  the  socio-demographic  characteristics  and  questionnaire  responses  of  the 
+
+sample. We invited 10 times 10 women to participate in our sessions, of which five were held in 
+
+the  morning  and  five  were  in  the  afternoon.  One  of  the  women  participated  twice  so  we 
+
+canceled the results of her second participation and obtained a dataset of 99 participants. The 
+
+average age was 37, 80% were unemployed and the majority went to primary school or had not 
+
+8 
+
+ 
+
+followed any formal education.3 A consequence of the low education level is the high rate of 
+
+illiteracy which we had to take into account. The average monthly income was around 150,000 
+
+FCFA  (290$)  and  the  average  family  size  was  10  individuals  with  a  minimum  of  two  and  a 
+
+maximum of 30. One fifth of the women had a cooking housemaid and the average time spent 
+
+on dinner preparation, including going to the market, preparation and actual cooking, was more 
+
+than four hours. We also asked if they were aware of local quality SRV rice, which was the case 
+
+for  more  than  80%  of  the  women.  This  is  in  line  with  the  results  from  Fall  et  al.  (2007)  who 
+
+observed that the recognition of local rice is quite high in the areas close to production zones 
+
+like Saint-Louis. We expect a much lower awareness rate remote from the production zones, 
+
+e.g. in the capital Dakar. 
+
+ 
+
+Table 2 presents some descriptive statistics for the bids. Four observations can be made 
+
+about  these  bids.  First,  the  WTP  for  local  unlabeled  and  labeled  quality  rice  is  significantly 
+
+higher than the WTP for imported rice. The participants are willing to pay about 80% more to 
+
+exchange their endowed rice in local quality rice than in imported rice. This can be due to quality 
+
+differences; the imported rice still contains impurities while the local quality rice is almost free 
+
+from  impurities  and  ready  for  boiling.  As  the  experiment  has  been  conducted  in a  production 
+
+zone,  participants  have  a  higher  connection  with  local  rice  than  in  remote  zones  where  we 
+
+expect a higher preference for imported rice (Fall et al. 2007).  
+
+ 
+
+Secondly, against our expectations, our data did not support any evidence of a labeling 
+
+effect. The participants judge the rice on its intrinsic quality attributes and not on extrinsic cues 
+
+                                                     
+ 
+
+ 
+
+3 The education level of our group is consistent with the survey of Fall and Diagne (2008). 
+
+9 
+
+ 
+
+such as region-of-origin labels. This may suggest that urban African women in production zones 
+
+are closely connected to the market and the product due to daily bargaining over food prices in 
+
+relation to quality.  
+
+ 
+
+A third remarkable observation is the negative influence of the taste treatment. The WTP 
+
+to  exchange  the  benchmark  rice  drops  with  20  to  30%  after  the  taste  treatment  for  all  of the 
+
+three  alternatives.  The  benchmark  rice  is  the  raw  form  commonly  supplied  on  the  market, 
+
+contains a high level of impurities and consists in a mix of broken, intermediate and long-grain 
+
+rice. Eaten without any supplements, this rice can taste better because of its mixed composition. 
+
+Moreover, as this rice type needs to be purified before cooking, it was less discounted in cooked 
+
+form than in non-cooked form. In addition, we observe that the difference between labeled and 
+
+unlabeled rice does not change. Tasting does not influence their point of view towards a label. 
+
+Lastly,  we  observe  a  strong  difference  of  WTP  in  the  morning  and  the  afternoon;  the 
+
+WTP  drops  with  more  than  50%  and  the  percentage  of  zero  bids  doubles.  Hoffman  (1993) 
+
+rejected the hypothesis that bids are constant during the day and this is also reflected in our 
+
+results. For most participants the morning sessions entailed an interruption in their daily routine 
+
+of going to the market and preparing céébu jën (rice with fish) for lunch, which is invariably the 
+
+single most important meal of the day in Senegal (Fall et al. 2007). Some of them still having 
+
+rice purchases in mind, these women may value rice more than women who just had their lunch 
+
+and completed all daily rice purchases in the morning. 
+
+To identify the factors that influenced the bids, we estimate random effects tobit models 
+
+because of the mass of bids located at zero FCFA. Analogously to Lusk et al. (2004) we adjust 
+
+the tobit model to incorporate random effects to account for the panel nature of the data. Each 
+
+participant submitted six bids, i.e. for three different rice types in two bidding rounds. The Tobit 
+
+model, incorporating random effects is 
+
+10 
+
+ 
+
+(1)  (cid:1849)(cid:1846)(cid:1842)(cid:3036)
+
+(cid:3404) (cid:2009)(cid:1824)(cid:3036)(cid:3037)(cid:3043)(cid:3045)(cid:3397)(cid:1874) (cid:3045)
+(cid:3036)(cid:3037)(cid:3043) (cid:3397)(cid:1873)(cid:3036)(cid:3037) 
+(cid:3037)(cid:3043)(cid:3045)
+(cid:1849)(cid:1846)(cid:1842)(cid:3036)(cid:3037)(cid:3043)(cid:3404)max(cid:3427)0,(cid:1854)(cid:1861)(cid:1856)(cid:3036)(cid:3037)(cid:3043)(cid:3045)(cid:1499)
+(cid:3431) 
+
+′
+
+(2) 
+
+where bidijt is the auction bid for the ith consumer (i = 1, …, 10), in the jth session (j = 1, …, 10), 
+
+for the pth rice type (imported, non-labeled, labeled) in the rth bidding round (r = before or after 
+
+tasting),  which  is  observed  only  at  positive  levels,  xijpr  is  a  vector  of  independent  variables 
+
+including dummy variables identifying rice types, a dummy variable for bidding round, and socio-
+
+demographic variables, uij is an individual specific disturbance for subject i in session j, and vijpr 
+
+is the overall error term. 
+
+ 
+
+The first column in table 3 presents the determinants of the individual bids. We observe 
+
+a  significantly  positive  impact  of  morning  sessions  and  a  significantly  negative  impact  of  the 
+
+taste treatment on bids. The results indicate that bids on imported rice were significantly smaller 
+
+than  bids  on  unlabeled  rice  but  there  is  no  statistical  evidence  in  support  of  a  labeling  effect 
+
+(similar  to  table  2).  From  the  socio-demographic  variables,  only  indigenous  significantly 
+
+(negatively) affected the bids. This is consistent with the results of Umberger and Feuz (2004) 
+
+who conclude that demographic variables are poor predictors of bids. 
+
+ 
+
+The third column in table 3 reports the determinants of CWTP. As our sample size was 
+
+based on 10 groups and three CWTP values per consensus session, we identified the major 
+
+determinants  through  stepwise  regression.  The  taste  dummy  was  obviously  excluded  as  the 
+
+consensus sessions happened after the taste treatment. Remarkably, in contrast to individual 
+
+bids,  collective  consensus  exhibits  a  significantly  positive  label  effect.  Moreover,  consensus 
+
+groups  with  older  and  more  highly  educated  women  reach  significantly  higher  CWTP  values, 
+
+while groups with more informed people about local rice reach lower CWTP values. 
+
+ 
+
+Next, we regress the absolute differences (distances) within sessions between individual 
+
+and collective WTP estimates to the same set of independent variables: 
+
+11 
+
+ 
+
+(cid:3627)(cid:1849)(cid:1846)(cid:1842)(cid:3036)(cid:3037)(cid:3043)(cid:3045)(cid:3398)(cid:1829)(cid:1849)(cid:1846)(cid:1842)(cid:3036)(cid:3043)(cid:3627)(cid:3404)(cid:2009)′(cid:1824)(cid:3036)(cid:3037)(cid:3043)(cid:3045)(cid:3397)(cid:1873)(cid:3036)(cid:3037) 
+
+(3) (cid:1829)(cid:1849)(cid:1846)(cid:1842)(cid:3036)(cid:3043) is the collective willingness to pay for product p in session i. The distances may reveal 
+
+useful information about collective decision-making. We may reasonably assume that the lower 
+
+the distance between the individual and the group estimate, the higher the intra-group influence 
+
+of the individual. The results are presented in the second column and are more or less similar to 
+
+the WTP regression presented in the first column, the only difference being that labeling has a 
+
+significantly positive effect on the distance. The latter suggests that region-of-origin labels may 
+
+increase  disagreement  among  women  on  whether  these  extrinsic  cues  guarantee  intrinsic 
+
+quality  or  whether  they  deserve  a  higher  price  due  to  patriotic  or  emotional  involvement 
+
+(Obermiller and Spangenberg 1989). 
+
+ 
+
+The results from table 3 warrant an in-depth analysis. Therefore, we adopt an approach 
+
+commonly  used  in  the  psychological  literature  in  which  we  assume  that  group  decision  are 
+
+weighted  sums  of  individual  preferences  and  that  the  individual  weights,  i.e.  the  intra-group 
+
+influence  of  individuals,  is  exponential  in  nature  (Bonner,  Sillito  and  Baumann  2007;  Davis 
+
+1996). First, to eliminate scale biases we standardize the continuous variables to the interval 
+
+[0,1] in two alternative ways by dividing them by the sample maximum and the minimum.4 Next, 
+
+we  take  the  natural  exponential  of  the  continuous  variables  and  leave  the  dummy  variables 
+
+unchanged. We finally predict the CWTPs for each session i (i = 1,…, n = 10) and each product 
+
+p (p = 1,…,3) using each of the alternative socio-demographic variables j (j = 1, …, k = 12): 
+
+                                                     
+ 
+
+ 
+
+4  Dividing  by  the  sample  maximum  diminishes  the  effect  of  the  variables,  dividing  by  the  minimum 
+
+amplifies the effect. 
+
+ 
+
+12 
+
+(cid:1829)(cid:1849)(cid:1846)(cid:1842)_(cid:1868)(cid:1870)(cid:1857)(cid:1856)_(cid:1874)(cid:1853)(cid:1870)(cid:3036)(cid:3043) (cid:3404)(cid:3533)(cid:1874)(cid:1853)(cid:1870)_(cid:1875)(cid:1857)(cid:1861)(cid:1859)(cid:1860)(cid:1872)(cid:3036)(cid:3037)(cid:3043)(cid:1499)(cid:1849)(cid:1846)(cid:1842)(cid:3036)(cid:3037)(cid:3043)
+
+(cid:3038)
+(cid:3037)(cid:2880)(cid:2869)
+
+(cid:3404)(cid:3533) (cid:1857)(cid:3049)(cid:3028)(cid:3045)(cid:3284)(cid:3285)(cid:3291)
+(cid:3038)
+∑
+(cid:1857)(cid:3049)(cid:3028)(cid:3045)(cid:3284)(cid:3285)(cid:3291)
+(cid:3038)(cid:3037)(cid:2880)(cid:2869)
+(cid:3037)(cid:2880)(cid:2869)
+
+(cid:1499)(cid:1849)(cid:1846)(cid:1842)(cid:3036)(cid:3037)(cid:3043) 
+
+(4) 
+
+Table 4 reports the correlation between the observed and predicted CWTPs for each variable. 
+
+We also added three alternative predicting weighting schemes commonly used in the literature. 
+
+Equal  weighing  yields  a  correlation  coefficient  of  0.60;  any  variable  producing  a  weighing 
+
+scheme with a correlation higher than this value is superior to ordinary averaging for predicting 
+
+CWTP  values  and  can  be  considered  as  a  determinant  of  collective  decision-making  on  the 
+
+value of alternative rice types. The median is found to be an inferior predictor (0.55), while the 
+
+“best  rule”,  i.e.  the  bid  closest  to  the  CWTP  gets  all  the  weight,  obviously  yields  a  superior 
+
+correlation  (0.73).  Most  of  the  individual  socio-demographic  variables  are  unobservable  or 
+
+quasi-observable (indigenous, higher education, trader, family income) to other participants in 
+
+the  group  sessions.  Age  is  the  only  strongly  observable  variable  and  our  results  show  that  it 
+
+better  predicts  group  response  than  ordinary  averaging.  This  result  is  robust  under  both 
+
+rescaling  scenarios  (0.64-0.67),  implying  that  women  tend  to  rely  on  this  factor  to  attribute 
+
+influence  weights  to  their  peers  in  group  decision-making.  This  provides  useful  preliminary 
+
+information  for  designing  effective  collective  value  chain  and  generic  promotion  strategies 
+
+relying on social capital and networks. 
+
+Conclusion 
+
+This study investigates how Senegalese consumers value quality rice. We used experimental 
+
+auctions with as auction mechanism the Vickrey second price auction to obtain our data. We 
+
+revisited the auction procedures used in developed countries and adapted them to the context 
+
+of  a  developing  country.  The  participants  bid simultaneously  on  three  alternatives  before  and 
+
+after tasting the products with the knowledge they could only purchase one item. As studies on 
+
+13 
+
+ 
+
+group  decisions  revealed  that  groups  significantly  outperform  individuals  in  the  estimation  of 
+
+judgmental variables, we included a consensus meeting after the experimental auction stage, 
+
+which yielded more precise estimates of the collective valuation of alternative rice types by ad 
+
+hoc women groups. 
+
+ 
+
+Participants, on average, are willing to pay an 80 percent higher price premium, relative 
+
+to imported rice, to exchange their endowed benchmark rice into local quality rice. This indicates 
+
+that  the  local  quality  rice  brand  Rival  is  able  to  compete  against  its  “rival”,  i.e.  imported  rice. 
+
+However, individual bids did not respond significantly to the Rival label. This is in contrast with 
+
+collective  consensus  which  exhibits  a  significantly  positive  label  effect.  These  findings  are 
+
+important for designing labeling and marketing strategies and provide useful information for rice 
+
+traders, retailers and local rice farmers in the Senegal River Valley and national policy makers 
+
+who  are  currently  implementing  an  ambitious  food  self-sufficiency  program.  Labeling  and 
+
+branding significantly and positively affect collective valuation, but not individual valuation. We 
+
+also  observe  a  significant  and  positive  “morning”  effect,  indicating  that  valuation  of  rice  may 
+
+considerably  vary  during  the  day  and  that  it  peaks  during  the  morning  when  women  are 
+
+preparing lunch. Tasting negatively affected individual valuation and did not affect valuation of 
+
+extrinsic  cues  such  as  labeling  and  branding.  Collective  decision-making  on  rice  valuation  is 
+
+largely influenced by age, which provides useful information for designing collective value chain 
+
+and generic promotion strategies through exploiting social capital and networks. 
+
+ 
+
+ 
+
+14 
+
+References 
+
+Alfnes,  F.,  and  K.  Rickertsen.  2003.  "European  consumers'  willingness  to  pay  for  US  beef  in 
+
+experimental auction markets." American Journal of Agricultural Economics 85(2):396-405. 
+
+Bonner, B.L., S.D. Sillito, and M.R. Baumann. 2007. "Collective estimation: Accuracy, expertise, 
+
+and extroversion as sources of intra-group influence." Organizational Behavior and Human 
+
+Decision Processes 103(1):121-133. 
+
+Brüntrup, M., T. Nguyen, and C. Kaps. 2006. "The rice market in Senegal." Agriculture & Rural 
+
+Development 1:22-25. 
+
+Corrigan,  J.R.,  and  M.C.  Rousu.  2006.  "The  effect  of  initial  endowments  in  experimental 
+
+auctions." American Journal of Agricultural Economics 88(2):448-457. 
+
+--- 2008. "Testing whether field auction experiments are demand revealing in practice." Journal 
+
+of Agricultural and Resource Economics 33(2):290-301. 
+
+Davis, J.H. 1973. "Group decision and social interaction: A theory of social decision schemes." 
+
+Psychological Review 80(2):97-125. 
+
+---  1996.  "Group  decision  making  and  quantitative  judgments:  A  consensus  model."  In  Witte, 
+
+E.H.,  and  J.H.  Davis,  eds.  Understanding  group  behavior,  Vol.  1:  Consensual  action  by 
+
+small groups. Mahwah, NJ, USA: Lawrence Erlbaum, pp. 35-59. 
+
+Fall, A.A., and A. Diagne. 2008. "Etude de la relation qualité-prix du riz produit dans la vallee du 
+
+fleuve Senegal." Rapport Projet FNRAA, Fonds National de Recherches Agricoles et Agro-
+
+alimentaires (FNRAA), Dakar. 
+
+Fall, A.A., C.A.K. Fall, D.R. Gningue, B. Ndir, and M. Ndour. 2007. "Etude sur les critères de 
+
+qualité et les modes de consommation du riz au Sénégal." Rapport Projet FNRAA, Fonds 
+
+National de Recherches Agricoles et Agro-alimentaires (FNRAA), Dakar. 
+
+ 
+
+15 
+
+Harrison, G.W., and E.E. Rutström. 2008. "Chapter 81 Experimental evidence on the existence 
+
+of  hypothetical  bias  in  value  elicitation  methods."  In  Charles,  R.P.a.V.,  ed.  Handbook  of 
+
+Experimental Economics Results. Elsevier, pp. 752-767. 
+
+Hobbs, J.E., A. Cooney, and M. Fulton. 2000. Value chains in the agri-food sector. Saskatoon, 
+
+Canada: College of Agriculture, University of Saskatchewan. 
+
+Hoffman,  E.,  D.J.  Menkhaus,  D.  Chakravarti,  R.A.  Field,  and  G.D.  Whipple.  1993.  "Using 
+
+laboratory experimental auctions in marketing-research: A case-study of new packaging for 
+
+fresh beef." Marketing Science 12(3):318-338. 
+
+Lusk, J.L., T. Feldkamp, and T.C. Schroeder. 2004. "Experimental auction procedure: Impact on 
+
+valuation  of  quality  differentiated  goods."  American  Journal  of  Agricultural  Economics 
+
+86(2):389-405. 
+
+Lusk, J.L., and M. Rousu. 2007. "Market Price Endogeneity and Accuracy of Value Elicitation 
+
+Mechanisms." In List, J., ed. Using Experimental Methods in Environmental and Resource 
+
+Economics. Edward Elger, pp. 20-40. 
+
+Lusk,  J.L.,  and  J.F.  Shogren.  2007.  Experimental  auctions:  Methods  and  applications  in 
+
+economic and marketing research., vol. 1, 1 ed. Cambridge University Press. 
+
+Maciejovsky, B., and D.V. Budescu. 2007. "Collective induction without cooperation? Learning 
+
+and  knowledge  transfer  in  cooperative  groups  and  competitive  auctions."  Journal  of 
+
+Personality and Social Psychology 92(5):854-870. 
+
+Masters, W.A., and D. Sanogo. 2002. "Welfare gains from quality certification of infant foods: 
+
+Results  from  a  market  experiment  in  Mali."  American  Journal  of  Agricultural  Economics 
+
+84(4):974-989. 
+
+ 
+
+16 
+
+Melton, B.E., W.E. Huffman, J.F. Shogren, and J.A. Fox. 1996. "Consumer preferences for fresh 
+
+food  items  with  multiple  quality  attributes:  Evidence  from  an  experimental  auction  of  pork 
+
+chops." American Journal of Agricultural Economics 78(4):916-923. 
+
+Obermiller, C., and E. Spangenberg. 1989. "Exploring the effects of country of origin labels: An 
+
+information processing framework." Advances in Consumer Research 16:454-459. 
+
+Reardon,  T.  1993.  "Cereals  demand  in  the  Sahel  and  potential  impacts  of  regional  cereals 
+
+protection." World Development 21(1):17-35. 
+
+Roosen,  J.,  J.A.  Fox,  D.A.  Hennessy,  and  A.  Schreiber.  1998.  "Consumers'  valuation  of 
+
+insecticide use restrictions: An application to apples." Journal of Agricultural and Resource 
+
+Economics 23(2):367-384. 
+
+Shogren,  J.F.,  S.Y.  Shin,  D.J.  Hayes,  and  J.B.  Kliebenstein.  1994.  "Resolving  differences  in 
+
+willingness-to-pay and willingness to accept." American Economic Review 84(1):255-270. 
+
+Sniezek,  J.A.,  and  R.A.  Henry.  1989.  "Accuracy  and  confidence  in  group  judgment." 
+
+Organizational Behavior and Human Decision Processes 43(1):1-28. 
+
+Tomlins,  K.I.,  J.T.  Manful,  J.  Gayin,  B.  Kudjawu,  and  I.  Tamakloe.  2007.  "Study  of  sensory 
+
+evaluation,  consumer  acceptability,  affordability  and  market  price  of  rice."  Journal  of  the 
+
+Science of Food and Agriculture 87:1564-1575. 
+
+Umberger, W.J., and D.M. Feuz. 2004. "The usefulness of experimental auctions in determining 
+
+consumers'  willingness-to-pay  for  quality-differentiated  products."  Review  of  Agricultural 
+
+Economics 26(2):170-185. 
+
+Vickrey,  W.  1961.  "Counterspeculation,  auctions,  and  competitive  sealed  tenders."  Journal  of 
+
+Finance 16(1):8-37. 
+
+World Bank 2008. World development report 2008. Washington, DC: The World Bank. 
+
+ 
+ 
+
+ 
+
+17 
+
+Table 1. Summary Statistics of Socio-Demographic Variables in the Experimental Sample 
+
+Variable 
+Age 
+
+Education 
+
+Definition 
+Age in years 
+
+0 = none; 1 = primary; 2 = secondary; 3 = tertiary 
+
+Employment 
+
+1 = employed; 0 = otherwise 
+
+Indigenous 
+
+1 = indigenous (Wolof, Pulaar); 0 = otherwise 
+
+Family earnings 
+
+Monthly income in FCFAa 
+
+Family size 
+
+Number of individuals in household 
+
+Cooking housemaid 
+
+1 = cooking housemaid; 0 = otherwise 
+
+Cooking time 
+
+Awareness  
+
+Total  hours spent on preparing dinner (market, 
+preparation and cooking) 
+1 = awareness of local quality rice; 0 = otherwise 
+
+Group Member 
+
+1 = member of a group; 0 = otherwise 
+
+ 
+
+1 = daily; 0 = otherwise 
+
+Frequency of rice 
+purchase 
+Number of participants 
+Notes: Standard deviations are shown between brackets.  
+a $1 = 521 FCFA 
+ 
+Table 2. Descriptive Statistics of the Individual and Collective Bids 
+ 
+ 
+
+WTP morning 
+
+CWTP 
+
+ 
+Rice type  Before taste 
+treatment 
+
+After taste 
+treatment 
+
+ 
+  Before taste 
+treatment 
+
+ 
+
+70
+129
+144
+
+100 
+172 
+177 
+
+75 
+150 
+150 
+
+Imported 
+Unlabeled 
+Labeled 
+
+Imported 
+Unlabeled 
+Labeled 
+
+Mean (FCFA) 
+ 
+ 
+Median 
+(FCFA) 
+ 
+ 
+Standard dev. 
+(FCFA) 
+ 
+ 
+Percentage of 
+zero bids 
+ 
+ 
+Notes: WTP = willingness-to-pay; CWTP = collective WTP 
+
+Imported 
+Unlabeled 
+Labeled 
+
+Imported 
+Unlabeled 
+Labeled 
+
+111 
+116 
+128 
+
+50
+125
+100
+
+94
+101
+135
+
+33 
+8 
+8 
+
+47
+14
+18
+
+60
+115
+115
+
+50
+100
+100
+
+26
+20
+20
+
+0
+0
+0
+
+36
+79
+88
+
+0
+50
+75
+
+67
+79
+84
+
+66
+30
+32
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+ 
+
+WTP afternoon 
+
+After taste 
+treatment 
+ 
+ 
+ 
+
+36 
+52 
+62 
+
+Moment 
+
+Morning 
+36.33 
+(11.40) 
+1.16 
+(1.10) 
+0.22 
+(0.41) 
+0.80 
+(0.40) 
+142,653 
+(110,859) 
+
+Afternoon
+36.88 
+(12.55) 
+1.43 
+(1.23) 
+0.20 
+(0.40) 
+0.73 
+(0.44) 
+146,702 
+(110,810) 
+
+9.92 
+(5.31) 
+0.20 
+(0.41) 
+4.39 
+(1.00) 
+0.85 
+(0.37) 
+0.51 
+(0.51) 
+0.26 
+(0.44) 
+
+49 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+0 
+50 
+25 
+
+60 
+61 
+76 
+
+66 
+46 
+48 
+ 
+
+10.54 
+(5.61) 
+0.16 
+(0.37) 
+4.21 
+(1.20) 
+0.80 
+(0.41) 
+0.42 
+(0.50) 
+0.28 
+(0.45) 
+
+50 
+
+CWTP
+
+22
+60
+85
+
+10
+50
+75
+
+23
+26
+41
+
+40
+0
+0
+
+18 
+
+Table 3: Results of the Experimental Auction: Random Effects Tobit Estimates 
+ 
+Independent variables 
+Constant 
+
+Dependent variables 
+
+|WTP – CWTP| 
+
+WTP 
+
+83.632* 
+(34.427) 
+25.973* 
+(10.579) 
+-22.086** 
+(6.318) 
+24.199** 
+(6.194) 
+-10.509* 
+(5.106) 
+-0.416 
+(0.468) 
+-0.001 
+(0.001) 
+0.553 
+(1.053) 
+-14.158 
+(12.826) 
+-16.927 
+(14.010) 
+1.099 
+(20.764) 
+-14.022 
+(18.838) 
+-15.075 
+(18.781) 
+50.324 
+(28.837) 
+13.826 
+(14.761) 
+3.712 
+(4.825) 
+-0.899 
+(10.829) 
+-15.300 
+(11.411) 
+-2.545 
+(11.872) 
+-2794.50 
+
+CWTPa
+-234.149** 
+(63.844) 
+40.488** 
+(6.304) 
+-46.500** 
+(6.393) 
+12.500* 
+(6.393) 
+
+ 
+
+6.670** 
+(1.540) 
+0.001 
+(0.001) 
+0.923 
+(2.983) 
+89.177 
+(29.857) 
+62.790* 
+(32.932) 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+-82.525** 
+(22.496) 
+3.829 
+(32.665) 
+-122.36 
+
+Moment 
+
+Imported 
+
+Labeled 
+
+Taste 
+
+Age 
+
+Family income 
+
+Family size 
+
+Indigenous 
+
+Higher education 
+
+Employed 
+
+Trader 
+
+Housewife 
+
+Student 
+
+Cooking housemaid 
+
+Dinner total 
+
+Group member 
+
+Information 
+
+Daily 
+
+189.136** 
+(67.581) 
+94.924** 
+(22.166) 
+-85.156** 
+(10.696) 
+9.941 
+(9.973) 
+-41.629** 
+(8.460) 
+-0.704 
+(0.876) 
+-0.001 
+(0.001) 
+-0.738 
+(2.109) 
+-48.826* 
+(24.011) 
+-24.020 
+(27.666) 
+-26.367 
+(45.034) 
+-51.989 
+(37.208) 
+-53.841 
+(38.477) 
+97.328 
+(54.996) 
+7.907 
+(35.589) 
+-0.199 
+(11.111) 
+13.562 
+(20.777) 
+-36.756 
+(21.568) 
+-9.979 
+(23.602) 
+-2417.05 
+
+Log likelihood 
+Number of observations 
+Notes:  *  =  significant  at  5%  level;  **  =  significant  at  1%  level;  WTP  =  willingness-to-pay;  CWTP  = 
+collective WTP 
+a  Continuous  variables  are  transformed  to  group  averages  and  dummies  to  group  proportions.  Due  to 
+limitations in degrees of freedom, we only analyze a subset of variables for CWTP, identified through a 
+stepwise regression. 
+ 
+
+576 
+
+576 
+
+30 
+
+ 
+
+ 
+
+19 
+
+Correlation 
+
+ 
+
+ 
+ 
+
+0.60
+0 55 
+0.73 
+
+Table 4: Correlation between Observed and Predicted CWTP 
+Predicted CWTP 
+Equal weightinga 
+Median ruleb 
+Best rulec 
+  
+Dummy variables 
+Information 
+Indigenous 
+Higher Education 
+Trader 
+Housewife 
+Employed 
+Group member 
+Cooking housemaid 
+Daily 
+  
+Continuous variables 
+0.67 
+Age 
+0.29 
+Family income  
+Family size 
+0.43 
+a weight of each bid per session and product is equal 
+b median bid per session and product 
+c result closest to the CWTP per session and product 
+ 
+
+0.56
+0.41
+0.58 
+0.51 
+0.04
+0.41 
+0.56
+0.62
+0.26
+
+rescaled through min 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+rescaled through max 
+
+0.64 
+0.60 
+0.60 
+
+260
+
+240
+
+220
+
+200
+
+180
+
+160
+
+140
+
+/
+
+g
+K
+A
+F
+C
+F
+
+1997
+
+1998
+
+1999
+
+2000
+
+2001
+
+2002
+Year
+Imported broken rice
+
+2003
+
+2004
+
+2005
+
+2006
+
+2007
+
+ 
+Figure 1: Price gap between imported broken rice and SRV rice in Saint-Louis, Senegal 
+Source: CSA (Commissariat à la Sécurité Alimentaire, Dakar) 
+ 
+
+Local rice
+
+ 
+
+20 
+
+

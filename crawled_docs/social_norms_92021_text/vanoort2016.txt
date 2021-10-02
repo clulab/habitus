@@ -1,0 +1,6902 @@
+Europ.  J.  Agronomy  80  (2016)  168–181
+
+Contents  lists  available  at  ScienceDirect
+
+European   Journal   of   Agronomy
+
+j  o u r n a  l  h o  m e   p a g e :  w w w . e l s e v i e r . c o m / l o c a t e / e j a
+
+Intensiﬁcation   of   an   irrigated   rice   system   in   Senegal:   Crop   rotations,
+climate   risks,   sowing   dates   and   varietal   adaptation   options
+P.A.J.   van   Oort a,∗,   A.   Balde b,   M.   Diagne b,   M.   Dingkuhn c,d,   B.   Manneh b,   B.   Muller b,c,
+A.  Sow b,   S.   Stuerz e
+a Africa  Rice  Center  (AfricaRice),  01  BP  2031  Cotonou,  Benin
+b Africa  Rice  Center  (AfricaRice),  Africa  Rice  Center,  P.B.  96,  St.  Louis,  Senegal
+c Centre  International  de  Recherche  Agronomique  pour  le  Développement  (CIRAD),  BIOS  Department,  UMR  AGAP,  Montpellier,  France
+d International  Rice  Research  Institute  (IRRI),  Crop  and  Environment  Science  Division  (CESD),  DAPO  Box  7777,  Metro  Manila,  Philippines
+e University  of  Hohenheim,  Institute  of  Plant  Production  and  Agroecology  in  the  Tropics  and  Subtropics,  Garbenstrasse  13,  70599  Stuttgart,  Germany
+
+a   r   t   i  c   l  e  
+
+i   n   f   o
+
+a   b   s   t   r   a   c   t
+
+Article  history:
+Received  18  December  2015
+Received  in  revised  form  6  June  2016
+Accepted  20  June  2016
+
+Keywords:
+Rice
+Vegetable
+Crop  rotation
+ORYZA2000
+Intensiﬁcation
+Ideotyping
+
+Feeding   the  future   world   population   requires   increased   crop   production.   Here,   we   investigate   the   inten-
+siﬁcation  option   of  increasing   production   by   increasing   cropping   intensity   and   choice   of  varieties   with
+different   crop   duration.   We   developed   a  model   to   generate,   compare   and   visualise   opportunities   for   sin-
+gle/double/triple   cropping   systems   consisting   of  irrigated   rice   and   optionally   a   vegetable.   The   model   was
+applied  in   a  case   study   in   the   Senegal   River   valley.   Results   showed   that  with   appropriate   choice   of   sowing
+dates,   severe   cold   sterility   in   rice   can   be   avoided,   also  in   rice–rice   crop   rotations.   At   optimal   sowing   dates,
+simulated   total   long   term   average   potential   yields   of   single,   double   and   triple   cropping   yields   were   10.3,
+19.0   and   18.9   t/ha   respectively   (total   of   1,2   and   3  yields).   With   a   hypothetical   completely   cold   tolerant
+variety,   yields   could   increase   to  11.2,   20.2   and   20.9   respectively.   Simulated   Triple   crop   yields   are   hardly
+any   higher   than   those   of   a   double   crop   with   two   medium   duration   varieties.   Delay   in   sowing   due   to  late
+availability   of   resources   (machinery,   irrigation   water   allocation   within   a  scheme,   credits   for   pump   fuel)
+is  a  known   problem   in   the   region.   Therefore   we   also   simulated   how   much   delay   was  possible   (width   of
+the   sowing   windows)   whilst   still   allowing   for   double   cropping.   We   found   enough   delay   was   possible   to
+allow   for   a  rice–rice   or   a  rice-vegetable   crop.   A  rice-rice-vegetable   triple   cropping   system   would   only   be
+possible   without   delays   and   with   a  very   short   duration   vegetable   of  2  months.   Most   promising   options
+to   increase   production   are  through   shifting   the   sowing   date   to   facilitate   double   cropping,   adoption   of
+medium   duration   varieties   and   breeding   for   cold   tolerant   varieties.
+
+©   2016   Elsevier   B.V.   All   rights   reserved.
+
+1.  Introduction
+
+Global  demand  for  agricultural  crop  production  is  expected  to
+roughly  double  by  2050  (Kastner  et  al.,  2012).  The  challenge  of
+meeting  demands  of  a  growing  population  can  be  met   by  increas-
+ing  yields  on  existing  land,  bringing  new  land  into  cultivation  or
+imports  from  other  parts  of  the  world  (Van  Oort  et  al.,  2015b).  The
+options  for  bringing  new  land  into  cultivation  may   be  limited,  as
+often  the  suitable  lands  are  already  in  use  (Hall  and  Richards,  2013;
+
+∗ Corresponding  author.
+E-mail  addresses:  p.vanoort@cgiar.org  (P.A.J.  van  Oort),
+
+a.balde@cgiar.org  (A.  Balde),  m.diagne@cgiar.org  (M.   Diagne),  m.dingkuhn@irri.org
+(M.   Dingkuhn),  b.manneh@cgiar.org  (B.  Manneh),  bertrand.muller@cirad.fr
+(B.  Muller),  a.sow@cgiar.org  (A.  Sow),  sabine.stuerz@uni-hohenheim.de  (S.  Stuerz).
+
+http://dx.doi.org/10.1016/j.eja.2016.06.012
+1161-0301/©  2016  Elsevier  B.V.  All  rights  reserved.
+
+Young,  1999).  Reliance  on  imports  can  be  a  solution  only  when
+pressure  on  land  and  water  is  less  in  exporting  countries.  Although
+the  relation  between  high  import  dependency  and  poverty,  price
+ﬂuctuations  and  food  riots  or  political  instability  is  complex  and
+dependent  on  many  factors  (Natalini  et  al.,  2015),  a  number  of  stud-
+ies  suggest  that  such  relations  do  exist  (Sternberg,  2012;  Weinberg
+and  Bakker,  2015;  Wischnath  and  Buhaug,  2014).  To  increase  pro-
+duction,  most  researchers  advocate  increasing  yields  on  existing
+land,  referred  to  as  intensiﬁcation.  The  two   main  intensiﬁcation
+options  are:  (1)  closing  the  yield  gap  and  (2)  increasing  the  number
+of  days  in  the  year  in  which  the  land  is  used  for  crop  cultivation
+(Cassman  et  al.,  2003;  Foley  et  al.,  2011;  Garnett  et  al.,  2013;  Pretty
+et  al.,  2011;  Ramankutty  and  Rhemtulla,  2012;  van  Ittersum  et  al.,
+2013).  Breeding  can  contribute  to  this  through  the  development
+
+P.A.J.  van  Oort  et  al.  /  Europ.  J.  Agronomy  80  (2016)  168–181 
+
+169
+
+of  high  yielding  and  stress  tolerant  varieties  (Evenson  and  Gollin,
+2003)  and  varieties  with  “optimal”  phenology.
+
+In  irrigated  areas  an  important  question  for  breeders  is  whether
+they  should  select  for  shorter  duration  varieties  which  would
+enable  growing  two  or  even  three  crops  per  year,  or  alternatively
+breed  for  medium/long  duration  varieties  that  yield  more  per  indi-
+vidual  crop  but  possibly  restrict  options  for  growing  two  or  three
+crops  per  year.  The  same  question  is  relevant  for  farmers,  who
+decide  on  what  varieties  to  include  in  their  crop  rotations.  The
+answer  to  this  question  on  short  versus  medium  duration  varieties
+depends  on  how  many  days  exist  within  the  year  with  a  favourable
+climate.  At  high  latitude  locations  only  one  crop  may   be  possible
+per  year  because  of  low  temperatures  and  low  radiation  levels  in
+the  colder  half  of  the  year.  There,  extending  the  length  of  the  grow-
+ing  season  of  a  single  crop  may   have  more  prospects.  Or,  when  a
+yield  plateau  is  reached  at  a  certain  crop  duration,  an  intensiﬁcation
+option  is  growing  a  vegetable  crop  or  cover  crop  in  autumn,  after
+harvesting  a  winter  cereal  in  summer.  Moving  closer  to  the  equator
+the  number  of  favourable  days  increases  and  so  the  choice  between
+single/double/triple  cereal  cropping  becomes  more  pertinent;  all
+three  should  be  considered.  Clearly,  when  researching  options  for
+intensiﬁcation  we  should  take  into  consideration  the  climate.  We
+should  not  only  look  at  intensiﬁcation  options  for  individual  crops
+but  also  implications  for  the  viability  of  crop  rotations.
+
+Ideotyping  has  in  the  past  (Dingkuhn  et  al.,  1991)  and  more
+recently  again  (Rötter  et  al.,  2015)  been  proposed  as  a  method  in
+which  crop  growth  models  can  be  used  to  identify  the  optimal  com-
+bination  of  morphological  and/or  physiological  traits  in  a  crop,  for
+optimizing  performance  in  a  particular  biophysical  environment
+and  crop  management  package.  Ideotyping  to  date  has  remained
+very  much  focussed  on  individual  crops.  There  have  been  no  ideo-
+typing  studies  in  which  trait  optimisation  has  been  conducted  in
+the  crop  rotation  context.  A  few  models  have  been  proposed  for
+comparing  crop  rotations  (Dogliotti  et  al.,  2003;  Huong  et  al.,  2014)
+but  with  these  it  is  difﬁcult  to  simulate  in  detail  climatic  risks  and
+effects  of  varietal  differences.  With  other  models  such  as  APSIM  and
+DSSAT  crop  rotations  can  be  simulated  and  climatic  risks  quanti-
+ﬁed  (Jones  et  al.,  2003;  Keating  et  al.,  2003)  (Holzworth  et  al.,  2014;
+Jones  et  al.,  2003),  but  these  models  do  not  allow  for  easily  generat-
+ing  and  comparing  very  large  numbers  of  cropping  calendar  options
+and  varietal  traits.  What  is  missing  is  a  model  that  allows  for  gen-
+×
+erating  and  comparing  large  numbers  of  crop  rotation 
+  ideotype
+options  whilst  at  the  same  time  also  simulating  climatic  risks  of
+crops  in  these  rotations.
+
+In  this  study,  we  analyse  the  scope  for  intensiﬁcation  at  a  site  in
+Senegal,  near  the  town  of  Fanaye,  representing  the  middle  valley
+of  the  Senegal  River  in  the  Sahel.  The  study  area  has  three  seasons:
+a  cold  dry  season  (Nov.–Feb.),  a  hot  dry  season  (Mar.–Jun.)  and  a
+warm  wet  season  (Jul.–Oct).  The  area  is  sparsely  populated  and
+ample  irrigation  water  is  available.  Important  crops  are  rice,  tomato
+and  onion.  These  crops  are  grown  for  home  consumption  and  for
+the  market.  Scope  for  rice  intensiﬁcation  in  this  study  area  has  been
+extensively  studied  in  the  1990s  as  reported  in  the  book  by  (Miezan
+et  al.,  1997).  Reﬂecting  on  the  various  contributions  to  this  book,
+(Matlon,  1997),  noted  a  number  of  knowledge  gaps  including  the
+need  to  look  more  broadly  for  other  options  and  not  only  at  rice–rice
+double  cropping.  The  second  gap  in  the  research  reported  in  the
+book  by  (Miezan  et  al.,  1997)  as  noted  by  Matlon  (1997)  was   the
+lack  of  adequate  consideration  of  the  farmers’  perspective.
+
+Since  these  critical  comments  by  (Matlon,  1997),  there  have
+been  more  studies  on  the  farmers’  perspective.  Causes  of  yield  gaps
+were  identiﬁed  as  poor  supply  of  labour,  unavailability  of  machin-
+ery,  lack  of  credits  to  purchase  inputs  (fertiliser,  herbicides,  certiﬁed
+seeds),  inappropriate  timing  of  fertiliser  application  and  poor  tim-
+ing  of  allocation  of  irrigation  water  within  the  irrigation  scheme
+as  important  constraints  (Haefele  et  al.,  2002;  Krupnik  et  al.,  2012;
+
+Tanaka  et  al.,  2015).  The  original  analysis  of  scope  for  rice–rice  dou-
+ble  cropping  by  Dingkuhn  (1995)  was   later  followed  up  by  (Poussin
+et  al.,  2006,  2005)  who  considered  labour  organisation  of  differ-
+ent  operations  in  rice  cropping  within  an  irrigation  scheme.  Three
+challenges  that  have  not  been  taken  up  are  (1)  broader  systematic
+exploration  of  options  for  intensiﬁcation  including  vegetables,  (2)
+link  to  ideotyping  where  not  only  sowing  dates  of  the  2–3  crops  in
+the  rotation  are  varied,  but  also  crop  traits  such  as  crop  duration  and
+tolerance  to  cold-induced  sterility  and  (3)  analysis  of  ﬂexibility:  is
+double  or  triple  cropping  also  possible  if  sowing  of  crops  is  delayed,
+for  instance  due  to  lack  of  machinery,  seeds  or  water  allocation?  If
+so,  how  much  delay  is  possible?
+
+The  only  previous  study  which  did  look  in  a  systematic  manner
+into  options  for  intensiﬁcation  was   by  Dingkuhn  (1995).  Dingkuhn
+compared  single  and  double  rice  cropping  options.  Speciﬁcally  for
+our  study  area,  he  concluded  that  double  cropping  is  “possible  but
+subject  to  severe  time  constraints”.  These  time  constraints  were
+caused  by  the  difﬁculty  of  ﬁtting  two   crops  in  one  year,  a  required
+period  between  the  two   crops  and  the  need  to  avoid  periods  with
+heat  and  cold  sterility.  It  is  interesting  therefore  in  such  a  site  to
+investigate  if  twenty  years  later  the  situation  has  changed  and
+opportunities  for  double  cropping  have  increased.  Since  the  1990s,
+a  number  of  developments  have  taken  place  on  the  ground  that
+call  for  new  cropping  calendar  research:  (1)  double  cropping  has
+expanded  at  this  site  especially  in  the  last  5  years  with  govern-
+ment  promoting  rice  production  (Diagne  et  al.,  2013)  and  (2)  several
+additional  short  duration  varieties  have  been  introduced.  At  the
+time  of  Dingkuhn  (1995),  medium  variety  Jaya  was   most  popu-
+lar,  with  a  duration  for  direct  seeded  rice  ranging  from  118  to  192
+days  depending  on  sowing  date  (Sié  et  al.,  1998).  Since  then,  short
+duration  variety  Sahel108  with  a  duration  from  sowing  to  maturity
+of  96–155  days  (direct  seeded  rice)  has  become  a  popular  variety
+among  farmers  (Tanaka  et  al.,  2015).  Also  science  has  advanced
+since  the  1990s.  Recently  new  research  on  phenology  (van  Oort
+et  al.  (2011))  and  sterility  (Julia  and  Dingkuhn  (2012,  2013))  has
+been  incorporated  into  the  ORYZA2000  crop  growth  model  (Van
+Oort  et  al.  (2015a))  which  allows  for  simulating  not  only  steril-
+ity  risk  but  also  yield.  One  of  the  ﬁndings  of  this  latest  study  was
+that  good  yields  can  still  be  obtained  at  moderate  levels  of  sterility
+(say  <30%);  this  is  possible  only  if  enough  spikelets  and  biomass
+have  been  formed  at  ﬂowering.  For  a  source  limited  crop,  a  lim-
+ited  reduction  in  the  sink  size  (=fertilised  spikelets)  has  no  effect
+on  yield.  This  ﬁnding  suggests  that  the  previous  selection  of  “safe”
+sowing  windows  by  Dingkuhn  (1995),  based  on  simulated  sterility
+was  perhaps  too  strict.
+
+Farmers  face  many  constraints  and  research  should  consider
+their  objectives  and  constraints.  It  is  impossible  to  include  all  farm-
+ers’  perspectives  here.  And  it  can  also  be  interesting  to  move  beyond
+the  current  situation,  to  systematically  explore  what  would  be  pos-
+sible  if  farmers’  constraints  would  be  alleviated.  We   address  all  the
+above  mentioned  issues  in  the  following  way   in  this  paper.  Firstly,
+we  include  in  a  rudimentary  way   a  vegetable  in  our  analysis  of  pos-
+sible  crop  rotations.  Secondly,  we   consider  two  different  farmers’
+objectives:  yield  maximisation  and  maximisation  of  yield  per  unit
+time.  Thirdly,  we   investigate  not  only  optimal  sowing  dates  but  also
+sowing  windows.  These  sowing  windows  tell  us  how  much  tem-
+poral  ﬂexibility  there  is  in  the  cropping  calendar.  We   developed
+a  model  for  constructing  cropping  calendars,  which  was   linked  to
+the  ORYZA2000  model  for  rice.  For  the  vegetable  crop,  we  sim-
+ply  blocked  a  part  of  the  year.  With  this  part  of  the  year  blocked,
+we  used  ORYZA2000  to  simulate  potential  yields  as  a  function  of
+sowing  dates  of  the  rice  crop(s).
+
+The  biggest  steps  in  intensiﬁcation  can  be  made  by  increasing
+the  number  of  crops  grown  per  year  (cropping  intensity).  Smaller
+steps  in  intensiﬁcation  can  be  made  by  growing  medium  instead  of
+short  duration  varieties.  Both  intensiﬁcations  are  considered  in  this
+
+170 
+
+P.A.J.  van  Oort  et  al.  /  Europ.  J.  Agronomy  80  (2016)  168–181
+
+paper.  In  order  from  least  intensive  to  most  intensive  we  compared
+the  following  crop  rotations:
+
+1.  Rice  only  (single)
+2.  Rice-vegetable  (double)
+3.  Rice-rice  (double)
+4.  Rice-rice-vegetable  (triple)
+5.  Rice-rice–rice  (triple)
+
+In  relation  to  ideotyping,  we  consider  two  traits  relevant  for  the
+current  study  area:  crop  duration  and  tolerance  to  cold  sterility.
+A  logical  follow-up  to  the  current  study  would  be  to  also  quantify
+vegetable  production,  optimise  the  sowing  date  for  vegetables  and
+add  a  gross  margin  calculation.  Such  was  impossible  at  the  time  of
+writing  due  to  lack  of  data  on  vegetables  and  whole  farm  economics.
+
+2.  Materials  &  methods
+
+In  the  following  sections  we  describe  the  methods  for  cropping
+calendar  construction,  the  phenological  models,  the  crop  growth
+model  and  the  weather  data.  We   simulated  potential  yield.  Poten-
+tial  yield  is  yield  of  a  crop  free  from  weeds,  pests  and  diseases,  with
+ample  nutrition  and  water  and  with  no  soil  constraints.  Therefore
+no  soil  data  or  irrigation  data  were  needed.  Although  actual  yields
+are  often  much  lower  than  potential,  phenology  and  response  to
+climatic  risks  is  similar  both  in  actual  and  potential  production.  All
+simulated  yields  reported  in  the  paper  are  long  term  average  poten-
+tial  yields,  i.e.  averaged  over  simulations  of  20  years  of  weather
+data.
+
+2.1.  Cropping  calendar  construction
+
+A  new  cropping  calendar  construction  (CCC)  model  was
+developed  to  investigate  intensiﬁcation  options.  The  CCC  model
+generates  input  data  for  a  stand-alone  crop  growth  model,  in  this
+case  the  ORYZA2000  model.  The  input  ﬁle  for  ORYZA2000  is  the  so
+called  “rerun”  ﬁle  and  is  commonly  used  for  conducting  bulk  simu-
+lations  with  the  “Wageningen”  family  of  crop  growth  models  (van
+Ittersum  et  al.,  2003).  An  earlier  test  (not  shown)  conﬁrmed  that  the
+same  CCC  model  could  also  be  used  to  investigate  options  for  potato
+double  cropping  simulated  with  the  more  widely  used  WOFOST
+model.  For  this  study  cropping  calendars  were  constructed  from  all
+possible  combinations  of  the  following  components.
+
+1.  Site:  Fanaye  in  Senegal,  about  150  km  inland  (16.633N,  14.917W)
+with  20  years  of  weather  data  to  capture  climatic  variability
+(years  1994–2013).  This  site  is  representative  of  the  middle  val-
+ley  of  the  Senegal  River  in  the  Sahel.
+
+2.  36  sowing  dates:  from  day  10  to  day  360  in  steps  of  10  days.
+3.  5  Varieties  with  different  maturity  periods.  We  deﬁned  a  base-
+line  variety  (Sahel108)  and  hypothetical  varieties  that  would
+mature  systematically  earlier  (−20, 
+−10  days)  and  later  (10,
+20  days),  by  adjusting  the  length  of  the  basic  vegetative  phase
+(BVP).  Of  the  different  growth  stages  in  rice  this  phase  is  known
+to  be  the  most  variable  (Vergara  and  Chang,  1985).  As  the  base-
+−10/−20
+line  variety  Sahel108  is  a  short  duration  variety,  the 
+days  varieties  can  be  considered  ultra-short  duration  varieties
+and  the  +10/+20  days  varieties  can  be  considered  medium  dura-
+tion  varieties.
+
+4.  2  Varieties  differing  in  cold  tolerance:  normal  cold  sensitive  and
+newly  developed  completely  cold  tolerant.  The  latter  is  more
+“hypothetical”  and  serves  to  quantify  yield  losses  due  to  cold
+sterility,  or  alternatively,  potential  yield  gains  possible  if  breed-
+ers  develop  or  identify  such  a  suitable  cold  tolerant  variety.
+
+5.  Minimum  20  days  between  harvesting  one  crop  and  sowing  the
+×
+next  (DURHASOW  =  20).  With  two  crops,  2 
+  20  =  40  days  are
+×
+reserved  for  this,  with  3  crops,  3 
+  20=60  days  are  reserved  for
+the  period  in  between  crops.  Note  that  20  days  is  the  minimum,
+actual  duration  between  two   crops  can  be  larger.  One  of  the
+model  outputs  is  the  width  of  the  sowing  window;  a  wide  sow-
+ing  window  indicates  the  rotation  is  possible  even  with  much
+delay  between  two   crops.
+
+6.  Different  parts  of  the  year  were  blocked  for  vegetable  cropping:
+December–April  (5  months)  which  is  a  normal  duration  for  onion
+or  tomato,  December-January  (2  months)  and  January-February
+(2  months).  We   anticipate  that  a  rice-rice-vegetable  rotation  will
+not  be  practically  possible  with  a  5  month  vegetable  crop.  We
+use  the  scenarios  with  2  month  vegetables  to  explore  if  triple
+cropping  would  be  possible  if  such  a  short  duration  vegetable
+could  be  found.
+
+For  each  possible  crop  rotation  two  sets  of  3600  simulations
+(36  sowing  dates,  5  varieties,  20  years)  were  conducted:  one  set
+for  a  cold  sensitive  variety  and  one  for  a  cold  tolerant  variety.
+×
+Thus  in  total  5 
+  2  =  10  varieties  were  compared.  In  total  16  crop
+rotations  were  simulated.  The  CCC  model  constructs  all  possi-
+ble  single/double/triple  sowing  date  conﬁgurations,  taking  into
+account  that:
+
+1.  Growing  periods  may   not  overlap  and  this  should  also  go  well
+
+across  calendar  years.
+
+2.  There  must  be  at  least  DURHASOW  days  between  harvesting  one
+crop  and  sowing  the  next  crop.  This  rule  is  applied  both  for  the
+rice  and  the  vegetable  crop.
+
+3.  We   considered  only  closed  annual  crop  rotations,  i.e.  we  ﬁtted
+two   or  three  crops  into  one  year.  The  option  of  growing  for  exam-
+ple  5  crops  in  2  years  (e.g.  see  Huong  et  al.  (2014))  was   not
+considered  because  of  the  increased  chance  that  one  of  these
+5  crops  would  be  a  rice  crop  exposed  to  severe  cold  sterility  in
+the  cold  dry  season.
+
+After  constructing  all  possible  sowing  date  conﬁgurations  for  a
+given  crop  rotation  the  CCC  model  automatically  sorts  the  selected
+sowing  date  conﬁgurations  either  maximising  total  yield  or  max-
+imising  total  yield  per  total  duration.
+
+2.2.  Phenological  models
+
+To  assess  the  sensitivity  of  cropping  calendar  optimisation  to
+uncertainty  in  phenology  models,  we   compared  simulated  crop
+duration,  simulated  potential  yield  and  optimised  cropping  calen-
+dars  constructed  with  two  different  phenological  models.  Direct
+seeding  is  most  common  in  our  study  area;  therefore  we  consid-
+ered  only  direct  seeding  systems.  From  the  study  site  (Fanaye)  plus
+a  second  site  (Ndiaye),  a  dataset  with  sowing  date  and  emergence
+data  was   available.  This  set  was  used  to  develop  a  model  to  pre-
+dict  the  number  of  days  from  sowing  to  emergence  (Section  2.2.1).
+Simulations  with  ORYZA2000  start  at  emergence.  From  historical
+data  (2008–2014),  n  =  55  data  points  were  available  with  data  on
+sowing  date,  50%  ﬂowering  date  and  maturity  date.  For  this  dataset
+we  ﬁrst  estimated  the  emergence  date  as  in  Section  2.2.1.  Limited
+data  were  available  on  duration  from  panicle  initiation  to  ﬂower-
+ing.  Based  on  earlier  research  by  (de  Vries  et  al.,  2011)  we  estimated
+this  duration  at  28  days.  For  the  phases  from  emergence  to  panicle
+initiation,  panicle  initiation  to  ﬂowering  and  ﬂowering  to  matu-
+rity,  two  phenological  models  were  applied,  one  using  the  more
+common  temperature  sum  based  approach  (Section  2.2.2)  and  one
+with  crop  duration  as  an  empirical  function  of  sowing  date  (Section
+2.2.3).
+
+P.A.J.  van  Oort  et  al.  /  Europ.  J.  Agronomy  80  (2016)  168–181 
+
+171
+
+Fig.  1.  Phenology  models  for  direct-seeded  rice,  baseline  variety  Sahel108.  Fig.  1b:  the  TSUM  simulated  different  crop  duration  for  each  year,  resulting  in  the  scatter  of  black
+points,   the  SOWDOY  model  (dashed  line)  does  not  predict  interannual  variability  in  crop  duration.
+
+2.2.1.  Sowing  to  emergence
+
+ORYZA2000  simulations  start  at  emergence.  A  simple  empirical
+model  was  used  to  predict  emergence  day  as  a  function  of  sow-
+ing  day  (Fig.  1a).  Pre-germinated  seed  was  direct-seeded  (common
+practice  in  our  study  area)  and  duration  to  emergence  recorded.
+Total  duration  from  sowing  to  emergence  (DURSOWEM)  was  pre-
+dicted  as  a  function  of  Sowing  Day  (SOW).  For  the  study  site
+considered  in  this  paper  a  bilinear-exponential  model  proved  to
+give  the  best  ﬁt:
+
+⎧⎨
+⎩
+
+DURSOWEM 
+
+=
+
+(cid:5)
+
++
+  b1SL 
+×
+(cid:5)
+
+durS 
++
+  b1LE 
+×
+
+durL 
++
+  b1LS 
+
+1 
+
+−
+  doyS)
+
+× (SOW 
+−
+  eb2LS×(SOW−doyL)
+1 
+−
+  eb2LS×(SOW−doyL+365)
+
+(cid:6)
+
+durL 
+
+(cid:6)
+
+≤
+  doyL
+≤
+  365
+
+doyS  <  SOW 
+
+doyL  <  SOW 
+≤
+  doyS
+
+0  <  SOW 
+
+(1)
+
+where  durS  and  durL  are  the  shortest  and  longest  durations  from
+sowing  to  emergence  in  days,  doyS  and  doyL  are  the  sowing  days
+on  which  the  shortest  and  longest  durations  occur  and  parameters
+b1SL,  b1LS  and  b2LS  are  estimated  such  that  the  linear  and  expo-
+nential  curves  connect  at  doyS  and  doyL  and  the  best  ﬁt  through
+observed  durations  is  obtained.  Parameters  used  in  this  model  are
+listed  in  Table  1.
+
+2.2.2.  TSUM  model
+
+Emergence  day  EMD   was  calculated  as  SOW  +  DURSOWEM.  To
+simulate  subsequent  phenological  phases  we  used  cardinal  tem-
+peratures  as  reported  by  (van  Oort  et  al.,  2011)  for  the  baseline
+variety  Sahel  108  (IR  13240-108-2-2-3):  TBD  =  15 ◦C,  TOD=34 ◦C
+and  optimal  development  at  temperatures  higher  than  TOD.  Devel-
+opment  rates  reported  by  (van  Oort  et  al.,  2011)  were  originally
+calibrated  for  transplanted  rice  in  two  sites  (Ndiaye  and  Fanaye)
+and  showed  interaction  with  the  estimated  transplanting  shock
+parameter.  To  avoid  bias,  we  proceeded  with  the  abovementioned
+cardinal  temperatures  and  estimated  new  development  rates  DVRI,
+DVRJ,  DVRP  and  DVRR  as  used  in  ORYZA2000,  such  that  average
+predicted  duration  equalled  average  observed  duration  for  the  dif-
+ferent  developmental  stages  in  Fanaye.  These  development  rates
+are  deﬁned  as  follows:
+• DVRI  and  DVRJ  are  for  the  phase  from  emergence  to  panicle
+initiation.  Since  previous  analyses  showed  the  baseline  variety
+Sahel  108  is  not  photoperiod  sensitive  (van  Oort  et  al.,  2011),
+the  same  development  rate  was  assumed  for  the  whole  period
+from  emergence  to  panicle  initiation  (PI),  i.e.  not  making  a  dis-
+tinction  between  development  rate  for  the  basic  vegetative  phase
+(DVRI)  and  the  development  rate  for  the  photoperiod  sensitive
+phase  (DVRJ).  Development  for  this  combined  phase  was  calcu-
+lated  as  DVRI  =  DVRJ  =  (0.65–0)/TTEMDPI with  0  for  development
+
+stage  “Emergence”,  0.65  is  the  development  stage  at  which  PI
+occurs  and  TTEMDPI is  the  minimum  duration  (in  days)  from  emer-
+gence  day  EMD   to  panicle  initiation  day  PI,  which  we   would
+theoretically  ﬁnd  if  the  variety  were  constantly  grown  at  optimal
+temperature;
+• DVRP  =  (1.0-0.65)/TTPIFL =  Development 
+the  panicle
+development  phase,  which  runs 
+from  development  stage
+0.65–1.0,  starting  at  panicle  initiation  (PI)  and  ending  at  50%  ﬂow-
+ering  (FL)  and  TTPIFL is,  in  analogy  with  the  above,  the  minimum
+duration  of  this  phase  in  days,  which  we   would  theoretically  ﬁnd
+if  the  variety  were  constantly  grown  at  optimal  temperature;
+• DVRR  =  (2.0–1.0)/TTFLM =  Development  rate  for  the  grain  ﬁll-
+ing  (reproductive)  phase,  which  runs  from  development  stage
+1.0–2.0,  starting  at  ﬂowering  (FL)  and  ending  at  maturity  (M).
+
+rate 
+
+for 
+
+in 
+
+This 
+
+resulted 
+
+DVRJ  =  0.018712, 
+
+DVRI  =  0.018712,
+DVRP  =  0.019009  and  DVRR  =  0.058208.  Note  that  these  devel-
+opment  rates  were  calculated  not  with  temperature  sums  (unit
+oCd)  but  with  normalised  thermal  time  TT  (unit  d).  Both  approaches
+give  exactly  the  same  results.  Phenology  modellers  prefer  using
+normalised  thermal  time  TT  because  it  allows  for  more  easily
+comparing  models  with  different  cardinal  temperatures  (van  Oort
+et  al.,  2011;  Yin  et  al.,  1995).  Fig.  1b  shows  observed  and  simulated
+duration  from  emergence  to  maturity.
+
+Next,  to  simulate  shorter  and  longer  duration  varieties,  devel-
+opment  rates  DVRJ  and  DVRI  were  multiplied  with  0.7,  0.85,  1,  1.15
+and  1.3  (+/−30%  and  +/−15%).  These  percentages  were  chosen  such
+that  with  1.3,  the  average  increase  in  duration  was   20  days,  same  as
+with  the  SOWDOY  model  below.  Only  DVRJ  and  DVRI  (for  the  veg-
+etative  phase  from  emergence  to  panicle  initiation)  were  adjusted,
+because  it  is  known  that  this  phase  shows  greatest  genetic  variation
+between  varieties  (Vergara  and  Chang,  1985).
+
+2.2.3.  SOWDOY  model
+
+A  similar  model  as  in  Eq.  (1)  but  with  different  parameter  values,
+(Table  1)  was  used  to  predict  the  total  duration  from  emergence
+to  maturity  (DUREMMATb)  for  the  baseline  variety  Sahel  108  as
+follows:
+
+⎧⎨
+⎩
+
+DUREMMATb 
+
+=
+
+(cid:5)
+
++
+  b1SL 
+×
+(cid:5)
+
+durS 
++
+  b1LS 
+×
+
+durL 
++
+  b1LS 
+
+1 
+
+(cid:6)
+
+−
+  doyS)
+
+× (EMD  
+−
+  eb2LS×(EMD−doyL)
+1 
+−
+  eb2LE×(EMD−doyL+365)
+
+durL 
+
+(cid:6)
+
+≤
+  doyL
+≤
+  365
+
+doyS  <  EMD  
+
+doyL  <  EMD  
+≤
+  doyS
+
+0  <  EMD  
+
+For  shorter  or  longer  duration  varieties  we  calculated  DUREM-
+
+MAT   as:
+
+DUREMMAT 
+
+=
+  DUREMMATb 
+
++
+  DELTADUR 
+
+(3)
+
+(2)
+
+172 
+
+P.A.J.  van  Oort  et  al.  /  Europ.  J.  Agronomy  80  (2016)  168–181
+
+)
+)
+)
+L
+y
+o
+d
+− 
+5 
+6
+3
++ 
+S 
+y
+o
+d
+(
+
+× 
+S 
+L
+2
+b
+(
+p
+x
+E
+− 
+1 
+(
+/
+)
+L
+r
+u
+d
+− 
+S 
+r
+u
+d
+(
+
+)
+S
+y
+o
+d
+− 
+L 
+y
+o
+d
+(
+/
+)
+S
+r
+u
+d
+− 
+L 
+r
+u
+d
+(
+
+a
+t
+a
+d
+d 
+e
+v
+r
+e
+s
+b
+o
+o 
+t
+g 
+n
+i
+t
+t
+ﬁ
+e 
+v
+r
+u
+C
+
+L 
+y
+o
+d
+r 
+e
+t
+f
+a
+n 
+o
+i
+t
+a
+r
+u
+d
+n 
+
+i
+e 
+n
+
+i
+l
+c
+e
+d
+l 
+a
+i
+t
+n
+e
+n
+o
+p
+x
+e
+n 
+
+i
+
+r 
+e
+t
+e
+m
+a
+r
+a
+p
+
+S 
+y
+o
+d
+r 
+e
+t
+f
+a
+y 
+a
+d
+r 
+e
+p
+) 
+d
+(
+n 
+o
+i
+t
+a
+r
+u
+d
+n 
+
+i
+e 
+s
+a
+e
+r
+c
+n
+
+i
+
+L 
+y
+o
+d
+r 
+e
+t
+f
+a
+n 
+o
+i
+t
+a
+r
+u
+d
+n 
+
+i
+e 
+n
+
+i
+l
+c
+e
+d
+l 
+a
+i
+t
+n
+e
+n
+o
+p
+x
+e
+n 
+
+i
+
+r 
+e
+t
+e
+m
+a
+r
+a
+p
+
+e
+c
+i
+o
+h
+c
+
+s 
+’
+r
+e
+l
+l
+e
+d
+o
+M
+
+s 
+e
+i
+t
+e
+i
+r
+a
+v
+n 
+o
+i
+t
+a
+r
+u
+d
+r 
+e
+g
+n
+o
+l
+/
+r
+e
+t
+r
+o
+h
+s
+g 
+n
+i
+t
+a
+l
+u
+m
+
+i
+s
+
+r 
+o
+f
+b 
+T
+A
+M
+M
+E
+R
+U
+D
+n 
+
+i
+e 
+g
+n
+a
+h
+c
+e 
+t
+u
+l
+o
+s
+b
+A
+
+n
+o
+i
+t
+a
+m
+
+i
+t
+s
+E
+
+n 
+o
+i
+t
+p
+i
+r
+c
+s
+e
+D
+
+a
+t
+a
+d
+d 
+e
+v
+r
+e
+s
+b
+o
+o 
+t
+g 
+n
+i
+t
+t
+ﬁ
+e 
+v
+r
+u
+C
+
+a
+t
+a
+d
+d 
+e
+v
+r
+e
+s
+b
+o
+o 
+t
+g 
+n
+i
+t
+t
+ﬁ
+e 
+v
+r
+u
+C
+
+a
+t
+a
+d
+f 
+o
+e 
+g
+a
+r
+e
+v
+A
+
+a
+t
+a
+d
+d 
+e
+v
+r
+e
+s
+b
+o
+o 
+t
+g 
+n
+i
+t
+t
+ﬁ
+e 
+v
+r
+u
+C
+
+a
+t
+a
+d
+d 
+e
+v
+r
+e
+s
+b
+o
+o 
+t
+g 
+n
+i
+t
+t
+ﬁ
+e 
+v
+r
+u
+C
+
+a
+t
+a
+d
+f 
+o
+e 
+g
+a
+r
+e
+v
+A
+
+)
+2
+(
+q 
+E
+
+, 
+
+e
+l
+b
+a
+i
+r
+a
+v
+t 
+u
+p
+t
+u
+O
+
+)
+1
+(
+
+. 
+
+q
+E
+
+, 
+
+e
+l
+b
+a
+i
+r
+a
+v
+t 
+u
+p
+t
+u
+O
+
+M
+E
+W
+O
+S
+R
+U
+D
++ 
+W
+O
+S
+
+ 
+
+e
+l
+b
+a
+i
+r
+a
+v
+t 
+u
+p
+n
+I
+
+n 
+o
+i
+t
+a
+r
+u
+d
+t 
+s
+e
+g
+n
+o
+l
+
+n 
+
+i
+g 
+n
+i
+t
+l
+u
+s
+e
+r
+y 
+a
+d
+e 
+c
+n
+e
+g
+r
+e
+m
+e
+/
+g
+n
+w
+o
+S
+
+i
+
+g 
+n
+i
+r
+e
+w
+o
+ﬂ
+o 
+t
+n 
+o
+i
+t
+a
+i
+t
+i
+n
+
+i
+e 
+l
+c
+i
+n
+a
+p
+m 
+o
+r
+f
+
+s 
+y
+a
+D
+
+S 
+y
+o
+d
+t 
+a
+
+, 
+s
+y
+a
+d
+n 
+
+i
+
+n 
+o
+i
+t
+a
+r
+u
+d
+t 
+s
+e
+t
+r
+o
+h
+s
+
+y 
+t
+i
+r
+u
+t
+a
+m
+o 
+t
+g 
+n
+i
+r
+e
+w
+o
+ﬂ
+m 
+o
+r
+f
+
+s 
+y
+a
+D
+
+L 
+y
+o
+d
+t 
+a
+
+, 
+s
+y
+a
+d
+n 
+
+i
+
+n 
+o
+i
+t
+a
+r
+u
+d
+t 
+s
+e
+g
+n
+o
+l
+
+n 
+o
+i
+t
+a
+r
+u
+d
+t 
+s
+e
+t
+r
+o
+h
+s
+h 
+t
+i
+
+w
+y 
+a
+d
+
+y 
+t
+e
+i
+r
+a
+v
+e 
+n
+
+i
+l
+e
+s
+a
+b
+e 
+h
+t
+
+r 
+o
+f
+y 
+t
+i
+r
+u
+t
+a
+m
+o 
+t
+e 
+c
+n
+e
+g
+r
+e
+m
+e
+m 
+o
+r
+f
+
+e 
+c
+n
+e
+g
+r
+e
+m
+e
+o 
+t
+g 
+n
+w
+o
+s
+
+i
+
+m 
+o
+r
+f
+
+s 
+y
+a
+D
+
+s 
+y
+a
+D
+
+y 
+a
+D
+e 
+c
+n
+e
+g
+r
+e
+m
+E
+
+y 
+a
+D
+g 
+n
+w
+o
+S
+
+i
+
+6 
+9
+1
+7
+1
+0
+0
+−
+
+.
+
+8 
+7
+0
+
+.
+
+5 
+2
+3
+
+1 
+5
+2
+
+0 
+5
+1
+
+5 
+2
+
+8 
+2
+
+3 
+9
+
+2.4.  Weather  data
+
+where  DELTADUR  =  [−20,−10,0,10,20]  generates  varieties  with
+20/10  days  shorter  duration  to  10/20  days  longer  duration  rela-
+tive  to  the  baseline  variety  in  time  steps  of  10  days  with  duration
+DUREMMATb.  Phenology  was   modelled  as  three  phases:  vegetative
+(DUREPI,  days  from  emergence  to  panicle  initiation),  reproductive
+(DURPIF,  days  from  panicle  initiation  to  ﬂowering)  and  grain  ﬁlling
+(DURFLM,  days  from  ﬂowering  to  maturity).  According  to  Vergara
+and  Chang  (1985)  durations  DURPIF  and  DURFLM  compared  with
+DURSPI  are  relatively  much  less  sensitive  to  temperature.  We   there-
+fore  ﬁxed  them  as  constants  (DURPIF  =  28d,  DURFLM  =  25d,  Table  1).
+The  duration  of  the  vegetative  phase  was  then  calculated  as:
+
+DUREPI 
+
+=
+  DUREMMAT 
+
+−
+  DURPIF 
+
+−
+  DURFLM 
+
+(4)
+
+Note  that  in  this  way,  varietal  differences  in  crop  duration  (Eq.
+
+(3))  are  only  in  the  duration  of  the  vegetative  phase  (Eq.  (4)).
+
+2.3.  ORYZA2000
+
+2.3.1.  Subversions
+
+Three  adapted  versions  of  the  ORYZA2000  model  were  devel-
+oped,  based  on  model  comparisons  in  Van  Oort  et  al.  (2015a).
+Subversion  ORYZA2000v2n13s14  (s14  in  short)  is  fully  docu-
+mented  in  Van  Oort  et  al.  (2015a).  Subversion  s27  was  newly
+developed  for  this  paper.  This  subversion  is  identical  to  subver-
+sion  s14,  with  one  change,  namely  the  phenological  sub-model  was
+replaced  by  the  SOWDOY  model  (Section  2.2.3).
+
+Subversion  s28  is  similar  to  subversion  s27,  but  with  cold  steril-
+ity  equations  and  parameters  set  back  to  the  original  equations  for
+ORYZA2000.  These  original  equations  predict  no  cold  sterility  in  the
+Fanaye  location  (Van  Oort  et  al.  (2015a)).
+
+Thus  subversions  s14  and  s27  represent  the  normal  variety  and
+subversion  s28  represents  a  hypothetical  completely  cold  tolerant
+variety.  Whether  such  a  variety  can  be  found  in  other  parts  of  the
+world  or  bred  speciﬁcally  for  the  Sahel  region  is  a  topic  for  further
+research.  This  study  is  exploratory  in  the  sense  that  it  shows  what
+yield  gains  and  calendar  modiﬁcations  would  be  possible  if  such  a
+variety  were  found.
+
+2.3.2.  Validation
+
+In  this  paper  we   validated  the  s14  and  s27  models  with  the
+
+following  observed  datasets:
+
+1.  observed  Sahel  108  yield  data  from  (de  Vries  et  al.,  2011)  with
+15  monthly  staggered  sowing  dates  in  Fanaye  in  2006  and  2007
+2.  observed  IR64  yield  data  from  (Stuerz  et  al.,  2014)  with  6  bi-
+monthly  sowing  dates  in  Fanaye  in  2009/2010.  Previously  (de
+Vries  et  al.,  2011)  showed  that  crop  duration  and  yield  levels  of
+Sahel108  and  IR64  are  similar.
+
+Weather  data  were  taken  from  the  AfricaRice  weather  stations
+which  have  over  time  been  operational  at  the  Fanaye  site.  This
+weather  station  dataset  showed  many  gaps.  Missing  data  were
+ﬁlled  in  with  data  from  the  POWER  database  (http://power.larc.
+nasa.gov/).  The  POWER  database  is  known  to  have  systematic  errors
+in  its  minimum  and  maximum  temperature  while  radiation  values
+compare  well  with  station  data  (White  et  al.  (2008);  White  et  al.
+(2011)).  Therefore  daily  Tmin  and  Tmax  were  corrected  following
+the  procedure  described  by  (Van  Wart  et  al.,  2015).  We   are  not
+aware  of  validation  studies  in  which  the  accuracy  of  relative  humid-
+ity  in  the  POWER  database  was   tested.  For  our  study  site  we  found
+a  large  difference  between  long  term  average  mean  daily  relative
+humidity  in  POWER  (32%)  and  our  station  data  (45%),  see  Fig.  2b.
+Therefore,  the  same  method  developed  by  (Van  Wart  et  al.,  2015)
+for  correcting  Tmin(POWER)  and  Tmax(POWER)  was   also  applied
+
+)
+2
+q 
+e
+(
+y 
+t
+i
+r
+u
+t
+a
+m
+
+o
+t
+e 
+c
+n
+e
+g
+r
+e
+m
+E
+
+.
+
+8 
+9
+7
+5
+−
+
+)
+1
+q 
+e
+(
+e 
+c
+n
+e
+g
+r
+e
+m
+E
+
+o
+t
+g 
+n
+w
+o
+S
+
+i
+
+4 
+1
+6
+−
+
+.
+
+.
+
+8
+0
+1
+l
+e
+h
+a
+S
+y 
+t
+e
+i
+r
+a
+v
+r 
+o
+f
+d 
+e
+t
+a
+r
+b
+i
+l
+a
+c
+
+, 
+l
+e
+d
+o
+m
+y 
+g
+o
+l
+o
+n
+e
+h
+p
+e 
+h
+t
+
+f 
+o
+s 
+r
+e
+t
+e
+m
+a
+r
+a
+P
+
+1
+e 
+l
+b
+a
+T
+
+7 
+2
+0
+8
+0
+0
+0
+−
+
+.
+
+5 
+0
+0
+
+.
+
+6 
+6
+3
+
+7 
+6
+2
+
+8 
+
+3 
+
+r 
+e
+t
+e
+m
+a
+r
+a
+P
+
+R 
+U
+D
+A
+T
+L
+E
+D
+
+ 
+
+M
+L
+F
+R
+U
+D
+
+ 
+
+F
+I
+P
+R
+U
+D
+
+ 
+
+S
+r
+u
+d
+
+ 
+
+L
+r
+u
+d
+
+ 
+
+L
+y
+o
+d
+
+ 
+
+S
+y
+o
+d
+
+S 
+L
+1
+b
+
+ 
+
+ 
+
+L
+S
+1
+b
+
+S
+L
+2
+b
+
+b 
+T
+A
+M
+M
+E
+R
+U
+D
+
+M 
+E
+W
+O
+S
+R
+U
+D
+
+ 
+
+D
+M
+E
+
+ 
+
+W
+O
+S
+
+P.A.J.  van  Oort  et  al.  /  Europ.  J.  Agronomy  80  (2016)  168–181 
+
+173
+
+Fig.  2.  Temperature  (a)  and  relative  humidity  (b).  Humidity(ARC  station)  =  AfricaRice  weather  station  in  Fanaye.  Humidity(POWER)  from  http://power.larc.nasa.gov/;  Humid-
+ityCorrected  =  POWER  corrected  based  on  linear  regression  between  station  data  and  (uncorrected)  POWER  data.
+
+Fig.  3.  Simulated  and  observed  rice  yields  (WRR  =  weight  rough  rice,  DM  =  Dry  Matter)  for  Fanaye.  Simulated  with  two  subversions  of  the  ORYZA2000v2n13  model  (s14:
+TSUM   phenology  model,  s27:  SOWDOY  phenology  model)  validation  for  two  experimental  datasets.  Observed  data  are  minimum,  maximum  and  average  over  three  replicates
+per   sowing  date.
+
+to  correct  the  dew  point  temperature  Tdew(POWER).  The  differ-
+ence  between  RH(POWER)  and  station  RH  is  not  that  strange  if  we
+consider  that  RH(POWER)  is  a  spatial  average  over  a  satellite  pixel
+of  approximately  110  km  size,  which  includes  a  lot  of  dry  savannah
+surrounding  the  Senegal  river,  whereas  the  AfricaRice  weather  sta-
+tion  is  located  close  to  the  river  and  surrounded  by  ﬂooded  paddy
+ﬁelds,  from  which  evaporating  water  contributes  to  a  higher  rel-
+ative  humidity.  Annual  CO2  concentrations  were  taken  from  the
+Mauna  Loa  record  and  effects  of  CO2  were  modelled  as  described
+in  (Bouman  et  al.,  2001).
+
+2.5.  Observed  sowing  dates
+
+This  paper  is  exploratory  in  the  sense  of  investigating  which
+crop  rotations  are  viable  and  within  these,  which  sowing  dates
+give  highest  long  term  average  potential  yields.  We   compared  opti-
+mised  sowing  dates  with  observed  sowing  dates.  A  comparison
+of  causes  of  discrepancies,  including  climatic  and  socio-economic
+drivers,  was  beyond  the  scope  of  this  paper.  Farmers’  sowing  dates
+for  the  wet  season  were  extracted  from  unpublished  survey  data  by
+M.  Diagne  (co-author  of  this  paper).  Surveys  were  conducted  from
+2002  to  2010  among  on  average  45  farmers  per  year  in  our  study
+area,  from  these  we  identiﬁed  annual  earliest  and  average  sowing
+dates  per  year.
+
+3.  Results
+
+3.1.  Phenology
+
+shows  observed  and  simulated  duration  from  emergence  to  matu-
+rity.  The  temperature  sum  (TSUM)  based  model  predicted  duration
+from  emergence  to  maturity  with  a  root  mean  square  error  (RMSE)
+of  8.3  days  and  a  maximum  error  of  19  days.  For  sowing  on  day
+100–150  the  TSUM  model  predicted  systematically  shorter  dura-
+tion  than  observed.  During  day  250–300  the  TSUM  model  predicted
+systematically  longer  duration  than  observed.  With  the  SOWDOY
+model  the  duration  from  emergence  to  maturity  is  predicted  with
+a  root  mean  square  error  (RMSE)  of  5.7  days  and  a  maximum  abso-
+lute  error  of  16  days.  Similar  RMSE  values  were  reported  before  in
+(van  Oort  et  al.,  2011).  The  effect  of  biased  phenology  predictions
+was  reported  in  (Van  Oort  et  al.,  2015a),  Fig.  1b  shows  both  phenol-
+ogy  have  little  to  no  bias.  By  reporting  long  term  average  potential
+yields,  one  may   expect  cancelling  out  of  errors  of  overestimation  of
+duration  and  underestimation  of  duration.  We   therefore  consider
+the  accuracy  acceptable  for  the  study  presented  here.
+
+The  SOWDOY  model  predicts  duration  more  accurately  than  the
+TSUM  model  and  avoids  the  systematic  errors  made  by  the  TSUM
+model  during  days  100–150  and  250–300.  Predictions  by  the  two
+phenological  models  are  not  identical  but  are  quite  similar.  There-
+fore  one  may   expect  conclusions  on  intensiﬁcation  options  based
+on  the  two   models  to  be  similar.  To  avoid  duplication  of  results  we
+present  in  the  sections  below  only  the  results  of  the  most  accurate
+(=SOWDOY)  phenology  model.  In  Section  4.2  we  discuss  sensitivity
+of  our  results  to  the  choice  of  the  phenological  model.
+
+3.2.  ORYZA2000
+
+Fig.  1a  shows  days  from  sowing  to  emergence.  Duration  ranges
+from  3  to  8  days  and  is  longer  in  the  colder  part  of  the  year.  Fig.  1b
+
+Fig.  3  shows  validation  results  for  simulated  yields  in  speciﬁc
+years.  Clearly,  model  predictions  are  not  perfect.  Both  the  s14  and
+the  s27  models  underestimate  high  yield  levels  observed  by  De
+
+174 
+
+P.A.J.  van  Oort  et  al.  /  Europ.  J.  Agronomy  80  (2016)  168–181
+
+Fig.  4.  Long  term  average,  minimum  and  maximum  yield  and  fertility  for  the  baseline  variety,  cold  sensitive  (a)  and  cold  tolerant  (b).  Simulated  heat  and  cold  fertility  (c)  and
+yield   gain  (b  minus  a)  for  the  cold  tolerant  variety  (d).  In  ﬁgure  c,  Fertility  is  1  minus  sterility.  SFHEAT  shows  fertility  as  affected  by  heat,  SFCOLD  shows  fertility  as  affected
+by   cold.  Error  bars  show  minimum  and  maximum  over  20  years  of  weather  data.  Simulated  yields  are  in  Dry  Matter  (DM),  i.e.  without  the  standard  14%  moisture  content  at
+physiological  maturity.  Yields  are  potential  yields,  free  from  water  or  nutrient  stress  and  without  losses  due  to  weeds,  pests  and  diseases.
+
+−0.455  t  DM  ha−1 and 
+
+Vries  et  al.  in  2006  for  the  20  March  and  18  April  sowings.  There
+are  also  large  discrepancies  within  and  between  the  two   observed
+datasets.  The  very  high  yield  levels  observed  by  de  Vries  et  al.  for
+the  March/April  2006  (10.2  and  7.6  t  DM  ha−1)  were  not  observed
+in  his  18  March/18  April  2007  sowings  (6.4  and  5.0  t  DM  ha−1)  and
+also  not  by  Stuertz  (19  April  2010  sowing:  7.7  t  DM  ha−1).  Aver-
+age  predicted  yields  for  these  March/April  sowing  dates  were  6.8
+and  5.8  t  ha−1 with  the  s27  and  s14  models.  Mean  errors  (averaged
+−0.642  t  DM  ha−1
+over  all  sowing  dates)  were 
+with  the  two  phenology  models  (SOWDOY  model  s27  and  TSUM
+model  s14).  The  higher  yields  and  higher  accuracy  with  model  s27
+are  consistent  with  the  longer  and  more  accurate  predicted  grow-
+ing  period  for  sowing  in  the  March–April  period  (DOY  80  and  110
+in  Fig.  1b.).  Although  Fig.  3  still  shows  for  a  number  of  data  points
+large  discrepancies  between  observation  and  simulation,  one  can
+also  note  that  both  models  capture  three  general  patterns  well,
+namely  the  period  of  severe  cold  sterility  for  sowing  in  October
+and  November,  the  start  and  the  end  of  the  period  in  which  severe
+cold  sterility  occurs  (sowing  in  September  and  December)  and  the
+decrease  of  yields  with  sowing  date  from  January  to  September.
+Therefore,  we  consider  these  simulations  sufﬁciently  accurate  for
+the  calendar  optimisations  presented  below.
+
+3.3.  Simulated  heat  and  cold  sterility
+
+Fig.  4  shows  that  both  heat  and  cold  sterility  occur  throughout
+the  year.  Heat  sterility  ranges  from  10  to  30%.  Apparently  in  this
+environment  two  adaptations  to  heat,  earlier  ﬂowering  at  higher
+temperatures  and  high  transpirational  cooling  at  low  RH  =  high  VPD
+(Julia  and  Dingkuhn,  2012,  2013;  Van  Oort  et  al.,  2015a,  2014)
+cancel  out  the  expected  increase  in  heat  sterility  at  higher  air  tem-
+peratures  in  the  hot  dry  season  (Fig.  2).  Cold  sterility  occurs  for
+sowing  dates  between  day  230  and  70  (August–March).  As  shown
+by  (Van  Oort  et  al.,  2015a),  small  levels  of  sterility  do  not  nec-
+essarily  cause  yield  loss.  A  crop  that  produces  a  large  number  of
+
+spikelets  would  still  be  source  limited  even  if  the  number  of  fer-
+tilised  spikelets  is  reduced  a  bit  due  to  sterility.  The  period  with
+cold  sterility  (sowing  dates  230-70)  is  therefore  80  days  longer  than
+the  period  with  yield  loss  (sowing  dates  250–10)  (Fig.  4c,  d).  Cold
+sterility  causes  yield  loss  for  sowing  days  250–10  (7  Sept.–10  Jan.,
+125  days),  with  a  peak  for  sowing  in  days  280–310  (October).  The
+long  period  is  due  to  inter-annual  variability  in  temperatures.  Fig.  4
+is  for  the  baseline  short  duration  variety  Sahel108.  For  medium
+duration  varieties  with  20  days  longer  duration,  the  sowing  dates  to
+be  avoided  shift  to  20  days  earlier  and  for  shorter  duration  varieties
+sowing  dates  with  highest  risk  are  20  days  later.
+
+3.4.  Yield  gains  from  cold  tolerant  varieties
+
+We   can  quantify  possible  yield  gains  from  cold  tolerant  varieties
+from  Table  2.  For  example  in  single  cropping  with  the  baseline  short
+duration  variety,  long  term  average  potential  yields  increase  from
+8.7  to  10.4  t/ha  (Table  2,  sim.  2,4),  a  yield  gain  of  +1.7  t/ha  or  +19%.
+These  yield  gains  differ  depending  on  cropping  intensity  and  phe-
+nology  of  the  variety.  The  yield  gain  is  about  1  t/ha  (5–8%)  for  the
+medium  duration  varieties,  1.7  t/ha  (10–19%)  for  the  short  duration
+varieties  and  2.3  t/ha  (13%)  in  triple  cropping.  This  yield  gain  occurs
+because  a  cold  tolerant  variety  can  be  sown  earlier  than  the  cur-
+rent  varieties,  exposing  it  to  a  cooler  climate  with  a  longer  growing
+season.  For  example  comparing  the  baseline  short  duration  variety
+(Table  2,  sim.  2,4),  sowing  date  would  shift  from  day  10  to  day  320
+(45  days  earlier)  and  duration  would  increase  from  141  to  175  days
+(+34  days)  and  for  the  medium  duration  variety  sowing  date  would
+shift  from  day  330  to  day  320  (10  days  earlier)  and  duration  would
+increase  from  186  to  195  days  (+9  days).
+
+It  should  be  noted  that  the  yield  gains  quantiﬁed  here  are  the
+maximum  attainable  yield  gains,  because  we   compared  the  base-
+line  variety  with  a  hypothetical  completely  cold  tolerant  variety.
+For  an  intermediately  cold  tolerant  variety,  also  the  yield  gain
+would  be  less  than  quantiﬁed  here.
+
+P.A.J.  van  Oort  et  al.  /  Europ.  J.  Agronomy  80  (2016)  168–181 
+
+175
+
+Fig.  5.  Possible  sowing  windows  for  double  and  triple  cropping.  a.  Rice-rice,  2x  short  duration  variety,  20  days  between  harvesting  one  rice  crop  and  sowing  the  next.
+Interpretation:  if  crop  1  is  sown  on  day  10  (x-axis),  then  crop  2  can  be  sown  between  day  160  and  260  (left  y-axis)  and  still  mature  before  day  20  days  before  day  10.  If  crop
+1   is  sown  on  day  360  (x-axis)  then  crop  2  can  be  sown  between  day  150  and  day  250  (right  y-axis)  and  still  mature  20  days  before  day  360.  These  sowing  windows  therefore
+come  on  top  of  the  assumed  minimum  duration  of  20  days  between  harvesting  one  crop  and  sowing  the  next.  The  sowing  window  is  70–130  days  wide.  b.  Rice-rice,  2x
+medium  duration  variety.  The  sowing  window  is  40–80  days  wide.  (Table  2,  sim  6).  c.  Rice-vegetable.  Dashed  line  shows  period  blocked  for  the  December-April  Vegetable.
+A   short  duration  crop  can  then  be  sown  from  day  140  to  210  and  still  mature  20  days  before  1  December.  The  sowing  window  is  70  days  wide.  d.  Rice-vegetable.  Dashed  line
+shows  period  blocked  for  the  December-April  Vegetable.  A  medium  duration  crop  can  then  be  sown  from  day  140  to  190  and  still  mature  20  days  before  1  December.  The
+sowing   window  is  50  days  wide.  (Table  2,  sim  10).  e.  Rice-rice-rice.  Triple  rice  cropping  systems  proved  only  to  be  possible  with  varieties  with  shorter  crop  duration  than
+the   baseline.  Even  then,  the  window  is  narrow:  10–40  days  (Table  2,  sim  11).  f.  Rice-rice-vegetable.  January-February  (J-F)  period  reserved  for  vegetable  crop.  Rice  crop  1  is
+sown   between  day  80  and  120,  rice  crop  2  is  sown  between  day  210  and  240.  The  sowing  window  is  30–40  days  wide.  (Table  2,  sim  14).
+
+3.5.  Trade-off  between  ﬂexibility  and  rice  yield
+
+Table  2  presents  a  comparison  of  all  possible  crop  rotations  in
+order  of  increasing  cropping  intensity.  To  the  far  right  the  table
+shows  indicators  at  the  crop  rotation  level:  total  rice  yield,  rice
+yield  per  number  of  days  in  which  rice  is  growing,  total  number
+of  days  in  which  crops  are  growing  including  the  1,  2  or  3  times
+20  days  in  between  crops  and  in  the  last  column  how  much  “ﬂex-
+ibility”  is  in  the  system.  For  example  in  simulation  5,  one  rice
+crop  is  growing  from  day  160–278  (118  days)  and  one  from  day
+×
+330–131  (166  days).  Total  duration  is  118  +  166  +  2 
+  20  =  324  days.
+Thus  there  is  at  most  365–324  =  41  days  “ﬂexibility”.  Sowing  of  both
+crops  might  be  delayed  by  20  days  per  crop  and  it  would  still  be
+possible  to  grow  two  rice  crops  in  one  year.
+
+We  visualise  this  ﬂexibility  in  sowing  windows  in  Fig.  5,  for
+selected  crop  rotations  from  Table  2.  We   can  see  how  the  sowing
+window  becomes  narrower  as  cropping  intensity  increases.  There
+is  a  clear  trade-off  between  ﬂexibility  and  rice  yield.  We   visualise
+this  trade-off  in  Fig.  6.  The  sowing  windows  in  Fig.  5  and  the  ﬂex-
+ibility  in  the  last  column  of  Table  2  show  that  triple  cropping  of
+rice  is  very  difﬁcult  if  not  impossible.  Triple  rice  is  only  possible
+with  shorter  duration  varieties  than  our  baseline  Sahel108  and  even
+then  sowing  windows  are  only  10–40  days  wide  (Fig.  5e).  Rice-rice-
+vegetable  was  only  possible  with  a  2  month  vegetable  and  also  then,
+the  sowing  windows  are  only  30–40  days  wide  (Fig.  5f).  There  is
+more  ﬂexibility  in  sowing  windows  for  double  cropping  (Fig.  5a–d).
+Therefore,  rice–rice  double  cropping  options  seem  most  relevant
+and  will  be  analysed  in  more  detail.
+
+176 
+
+P.A.J.  van  Oort  et  al.  /  Europ.  J.  Agronomy  80  (2016)  168–181
+
+l
+a
+t
+o
+T
+-
+5
+6
+3
+
+)
+d
+(
+
+. 
+r
+u
+d
+
+9
+7
+1
+
+4
+2
+2
+
+0
+7
+1
+
+0
+9
+1
+
+6
+0
+1
+
+1
+4
+
+1
+3
+
+0
+7
+
+6
+5
+
+6
+7
+
+6
+
+5
+
+9
+1
+
+9
+3
+
+5
+4
+
+6
+
+.
+r
+u
+d
+l 
+a
+t
+o
+T
+
+)
+d
+(
+
+6 
+8
+1
+
+1 
+4
+1
+
+5 
+9
+1
+
+5 
+7
+1
+
+4 
+2
+3
+
+9 
+5
+2
+
+4 
+3
+3
+
+5 
+9
+2
+
+9 
+0
+3
+
+9 
+8
+2
+
+9 
+5
+3
+
+0 
+6
+3
+
+6 
+4
+3
+
+6 
+2
+3
+
+9 
+5
+3
+
+0 
+2
+3
+
+r
+u
+D
+/
+d
+l
+e
+i
+Y
+
+)
+d
+/
+a
+h
+/
+g
+k
+(
+
+2 
+6
+
+2 
+7
+
+4 
+6
+
+7 
+6
+
+7 
+6
+
+5 
+7
+
+9 
+6
+
+2 
+7
+
+5 
+7
+
+0 
+8
+
+2 
+6
+
+0 
+7
+
+1 
+7
+
+1 
+7
+
+9 
+6
+
+0 
+7
+
+) 
+a
+h
+/
+t
+(
+
+t 
+o
+t
+Y
+
+) 
+a
+h
+/
+t
+(
+2 
+Y
+
+) 
+d
+(
+2 
+R
+U
+D
+
+) 
+y
+o
+d
+(
+2 
+R
+A
+H
+
+) 
+y
+o
+d
+(
+2 
+W
+O
+S
+
+) 
+a
+h
+/
+t
+(
+1 
+Y
+
+) 
+d
+(
+1 
+R
+U
+D
+
+) 
+y
+o
+d
+(
+1 
+R
+A
+H
+
+) 
+y
+o
+d
+(
+1 
+W
+O
+S
+
+) 
+d
+(
+3 
+r
+u
+D
+
+
+) 
+d
+(
+2 
+r 
+u
+D
+
+
+) 
+d
+(
+1 
+r
+u
+D
+
+
+y 
+t
+e
+i
+r
+a
+V
+
+n 
+o
+i
+t
+a
+t
+o
+R
+
+m 
+i
+S
+
+.
+
+d
+l
+e
+i
+y
+e 
+c
+i
+r
+
+f 
+o
+n 
+o
+i
+t
+a
+s
+i
+
+m
+i
+x
+a
+m
+h 
+t
+i
+
+w
+s 
+n
+o
+i
+t
+p
+o
+r 
+a
+d
+n
+e
+l
+a
+c
+g 
+n
+i
+p
+p
+o
+r
+C
+d 
+e
+s
+i
+
+m
+
+i
+t
+p
+O
+
+2
+e 
+l
+b
+a
+T
+
+.
+
+3 
+0
+1
+
+7 
+8
+
+.
+
+.
+
+2 
+1
+1
+
+.
+
+4 
+0
+1
+
+.
+
+0 
+9
+1
+
+.
+
+4 
+6
+1
+
+.
+
+2 
+0
+2
+
+.
+
+4 
+8
+1
+
+0 
+9
+
+.
+
+9 
+7
+
+.
+
+.
+
+6 
+8
+1
+
+.
+
+9 
+0
+2
+
+.
+
+9 
+5
+1
+
+.
+
+6 
+4
+1
+
+.
+
+5 
+6
+1
+
+.
+
+2 
+4
+1
+
+.
+
+3 
+0
+1
+
+7 
+7
+
+.
+
+.
+
+2 
+1
+1
+
+.
+
+4 
+0
+1
+
+4 
+7
+
+.
+
+.
+
+0 
+7
+
+1 
+7
+
+.
+
+5 
+6
+
+.
+
+6 
+6
+1
+
+8 
+9
+
+5 
+7
+1
+
+5 
+5
+1
+
+7 
+0
+1
+
+7 
+9
+
+6 
+1
+1
+
+7 
+9
+
+1 
+3
+1
+
+8 
+5
+2
+
+0 
+3
+1
+
+0 
+1
+1
+
+7 
+0
+3
+
+7 
+8
+2
+
+6 
+4
+3
+
+7 
+0
+3
+
+0 
+3
+3
+
+0 
+6
+1
+
+0 
+2
+3
+
+0 
+2
+3
+
+0 
+0
+2
+
+0 
+9
+1
+
+0 
+3
+2
+
+0 
+1
+2
+
+.
+
+3 
+0
+1
+
+7 
+8
+
+.
+
+.
+
+2 
+1
+1
+
+.
+
+4 
+0
+1
+
+7 
+8
+
+.
+
+7 
+8
+
+.
+
+.
+
+0 
+9
+
+9 
+7
+
+.
+
+.
+
+0 
+9
+
+9 
+7
+
+.
+
+5 
+8
+
+.
+
+7 
+7
+
+.
+
+4 
+9
+
+.
+
+7 
+7
+
+.
+
+6 
+6
+1
+
+1 
+2
+1
+
+5 
+7
+1
+
+5 
+5
+1
+
+8 
+1
+1
+
+1 
+2
+1
+
+9 
+1
+1
+
+0 
+0
+1
+
+9 
+1
+1
+
+9 
+9
+
+8 
+1
+1
+
+8 
+0
+1
+
+5 
+2
+1
+
+5 
+0
+1
+
+1 
+3
+1
+
+1 
+3
+1
+
+0 
+3
+1
+
+0 
+1
+1
+
+8 
+7
+2
+
+1 
+3
+1
+
+9 
+6
+2
+
+0 
+3
+2
+
+9 
+6
+2
+
+9 
+4
+2
+
+8 
+7
+1
+
+8 
+6
+1
+
+5 
+0
+2
+
+5 
+8
+1
+
+0 
+3
+3
+
+0 
+2
+3
+
+0 
+2
+3
+
+0 
+6
+1
+
+0 
+1
+
+0 
+5
+1
+
+0 
+3
+1
+
+0 
+5
+1
+
+0 
+5
+1
+
+0 
+1
+
+0 
+6
+
+0 
+6
+
+0 
+8
+
+0 
+8
+
+0 
+2
+−
+
+0 
+2
+
+0 
+2
+
+0 
+
+0 
+2
+
+0 
+
+0 
+1
+−
+
+0 
+1
+
+0 
+
+0 
+
+0 
+2
+
+0 
+
+0 
+2
+
+0 
+
+0 
+2
+
+0 
+
+0 
+2
+
+0 
+
+0 
+2
+
+0 
+2
+
+0 
+
+0 
+
+0 
+1
+−
+
+0 
+
+0 
+1
+
+0 
+
+0 
+2
+
+0 
+
+. 
+t
+c
+
+; 
+l
+l
+
+A
+
+. 
+t
+c
+
+; 
+s
+a
+B
+
+. 
+s
+a
+B
+
+l 
+l
+
+A
+
+. 
+t
+c
+
+; 
+l
+l
+
+A
+
+.
+t
+c
+
+; 
+s
+a
+B
+
+. 
+s
+a
+B
+
+l 
+l
+
+A
+
+. 
+t
+c
+
+. 
+s
+a
+B
+
+a
+l
+l
+
+A
+
+; 
+l
+l
+
+A
+
+l 
+l
+
+A
+
+. 
+s
+a
+B
+
+l 
+l
+
+A
+
+. 
+s
+a
+B
+
+l 
+l
+
+A
+
+) 
+J
+-
+D
+(
+g
+e
+V
+-
+e
+c
+i
+R
+-
+e
+c
+i
+R
+
+) 
+J
+-
+D
+(
+g
+e
+V
+-
+e
+c
+i
+R
+-
+e
+c
+i
+R
+
+) 
+F
+-
+J
+(
+g
+e
+V
+-
+e
+c
+i
+R
+-
+e
+c
+i
+R
+
+) 
+F
+-
+J
+(
+g
+e
+V
+-
+e
+c
+i
+R
+-
+e
+c
+i
+R
+
+) 
+A
+-
+D
+(
+g
+e
+V
+-
+e
+c
+i
+R
+
+) 
+A
+-
+D
+(
+g
+e
+V
+-
+e
+c
+i
+R
+
+e 
+c
+i
+R
+-
+e
+c
+i
+R
+-
+e
+c
+i
+R
+
+e 
+c
+i
+R
+-
+e
+c
+i
+R
+-
+e
+c
+i
+R
+
+e 
+c
+i
+R
+-
+e
+c
+i
+R
+
+e 
+c
+i
+R
+-
+e
+c
+i
+R
+
+e 
+c
+i
+R
+-
+e
+c
+i
+R
+
+e 
+c
+i
+R
+-
+e
+c
+i
+R
+
+e 
+c
+i
+R
+
+e 
+c
+i
+R
+
+e 
+c
+i
+R
+
+e 
+c
+i
+R
+
+1 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+ 
+
+0
+1
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+1
+1
+
+2
+1
+
+3
+1
+
+4
+1
+
+5
+1
+
+6
+1
+
+e
+v
+i
+t
+a
+l
+e
+r
+
+) 
+s
+y
+a
+d
+(
+n 
+o
+i
+t
+a
+r
+u
+d
+n 
+
+i
+e 
+g
+n
+a
+h
+c
+= 
+R 
+U
+D
+
+
+. 
+t
+n
+a
+r
+e
+l
+o
+t
+d 
+l
+o
+c
+= 
+
+. 
+t
+c
+
+, 
+
+n
+o
+i
+t
+a
+r
+u
+d
+p 
+o
+r
+c
+
+l 
+l
+a
+= 
+l 
+l
+a
+
+, 
+
+n
+o
+i
+t
+a
+r
+u
+d
+p 
+o
+r
+c
+e 
+n
+
+i
+l
+e
+s
+a
+b
+= 
+
+. 
+s
+a
+b
+: 
+y
+t
+e
+i
+r
+a
+V
+
+. 
+
+y
+r
+a
+u
+r
+b
+e
+F
+-
+y
+r
+a
+u
+n
+a
+J
+= 
+F 
+-
+J
+
+, 
+
+y
+r
+a
+u
+n
+a
+J
+-
+r
+e
+b
+m
+e
+c
+e
+D
+= 
+J 
+-
+D
+
+i
+
+, 
+l
+i
+r
+p
+A
+-
+r
+e
+b
+m
+e
+c
+e
+D
+g 
+n
+w
+o
+r
+g
+e 
+l
+b
+a
+t
+e
+g
+e
+V
+= 
+) 
+A
+-
+D
+(
+g
+e
+V
+: 
+n
+o
+i
+t
+a
+t
+o
+R
+
+l
+a
+t
+o
+T
+/
+d
+l
+e
+i
+y
+e 
+c
+i
+r
+
+l 
+a
+t
+o
+T
+= 
+r 
+u
+D
+/
+d
+l
+e
+i
+Y
+
+. 
+t
+n
+e
+t
+n
+o
+c
+e 
+r
+u
+t
+s
+i
+o
+m
+% 
+4
+1
+t 
+a
+e 
+c
+i
+r
+y 
+d
+d
+a
+p
+= 
+) 
+a
+h
+/
+t
+(
+
+) 
+t
+o
+t
+Y
+
+, 
+
+,
+
+2
+Y
+1
+Y
+(
+d 
+l
+e
+i
+Y
+
+.
+
+g 
+n
+i
+t
+s
+e
+v
+r
+a
+h
+o 
+t
+g 
+n
+w
+o
+s
+
+i
+
+m 
+o
+r
+f
+
+s 
+y
+a
+d
+= 
+R 
+U
+D
+
+. 
+
+e
+t
+a
+D
+t 
+s
+e
+v
+r
+a
+H
+= 
+R 
+A
+H
+
+. 
+
+n
+w
+o
+s
+
+s 
+i
+2 
+/
+1
+p 
+o
+r
+c
+h 
+c
+i
+h
+w
+n 
+
+i
+
+r 
+a
+e
+Y
+f 
+o
+y 
+a
+D
+n 
+a
+i
+l
+
+u
+J
+= 
+W 
+O
+S
+
+. 
+
+n
+o
+i
+t
+a
+r
+u
+d
+e 
+n
+
+i
+l
+e
+s
+a
+b
+o
+t
+
+ 
+
+l
+a
+t
+o
+T
+-
+5
+6
+3
+= 
+y 
+t
+i
+l
+i
+b
+i
+x
+e
+l
+F
+
+. 
+
+n
+o
+i
+t
+a
+r
+a
+p
+e
+r
+p
+d 
+n
+a
+l
+d 
+n
+a
+g 
+n
+i
+t
+s
+e
+v
+r
+a
+h
+r 
+o
+f
+) 
+
+W
+O
+S
+A
+H
+R
+U
+D
+(
+s 
+p
+o
+r
+c
+o 
+w
+
+t
+n 
+e
+e
+w
+t
+e
+b
+d 
+o
+i
+r
+e
+p
+m 
+u
+m
+n
+m
+e 
+h
+t
+g 
+n
+i
+d
+u
+l
+c
+n
+
+i
+
+i
+
+i
+d 
+n
+a
+e 
+l
+b
+a
+t
+e
+g
+e
+v
+e 
+h
+t
+g 
+n
+i
+d
+u
+l
+c
+n
+
+i
+
+, 
+s
+p
+o
+r
+c
+d 
+e
+t
+s
+e
+v
+r
+a
+h
+
+l 
+l
+a
+f 
+o
+n 
+o
+i
+t
+a
+r
+u
+d
+l 
+a
+t
+o
+t
+= 
+n 
+o
+i
+t
+a
+r
+u
+d
+l 
+a
+t
+o
+T
+
+. 
+s
+p
+o
+r
+c
+e 
+c
+i
+r
+e 
+h
+t
+f 
+o
+n
+o
+i
+t
+a
+r
+u
+d
+
+ 
+
+.
+
+y
+t
+e
+i
+r
+a
+v
+e 
+n
+
+i
+l
+e
+s
+a
+b
+e 
+h
+t
+h 
+t
+i
+
+w
+e 
+l
+b
+i
+s
+s
+o
+p
+t 
+o
+n
+s 
+a
+w
+e 
+c
+i
+r
+–
+e
+c
+i
+r
+-
+e
+c
+i
+R
+
+a
+
+.
+
+n
+o
+i
+t
+a
+r
+u
+d
+
+Fig.  6.  Trade-off  between  ﬂexibility  and  total  potential  rice  yield.  Based  on  data
+reported  in  Tables  2  and  3.
+
+3.6.  Optimal  sowing  dates
+
+Fig.  7  shows  a  selection  of  optimised  crop  rotations.  Table  2
+shows  all  optimised  crop  rotations  when  maximising  rice  yields.
+Table  3  shows  all  optimised  crop  rotations  when  maximising  rice
+yield  per  unit  time.  With  yield  maximisation  as  the  objective  a
+long  term  average  potential  rice  yield  of  10.3  t  ha−1 is  obtained
+with  sowing  on  day  330  (26  Nov.)  with  a  medium  duration  vari-
+ety  (Table  2,  sim  1  and  sim  5).  For  the  baseline  short  duration
+variety  optimum  sowing  date  is  45  days  later,  on  day  10  (10  Jan.),
+and  potential  yield  is  8.7  t  ha−1 (Table  2,  sim  2  and  sim  6).  With
+a  completely  cold  tolerant  variety,  optimal  sowing  date  shifts  to
+early  November  (day  320,  16  Nov.)  and  potential  yield  is  11.2  or
+10.4  t  ha−1 for  the  medium/short  duration  variety  (Table  2,  sim
+3,4,7,8).  Thus  crop  genetics  (duration  and  cold  tolerance)  affect
+optimised  sowing  date  and  the  associated  yields  attainable  for
+these  sowing  dates.
+
+Maximising  yield  and  maximising  yield  per  duration  lead  to  dif-
+ferent  optimised  sowing  dates.  Maximum  yield  is  obtained  with
+sowing  on  day  330–10  (Fig.  7a,  Table  2,  sim  1  and  sim  5).  Maximum
+yield  per  crop  duration  is  obtained  with  a  completely  different  sow-
+ing  on  day,  namely  day  140–160  (Fig.  7b,  Table  3,  sim  1  and  sim  5).
+For  the  medium  duration  variety  maximising  yield  per  duration
+leads  to  lower  yields  (8.8  vs  10.3  t  ha−1)  and  higher  yield  per  dura-
+tion,  80  vs  62  kg  ha−1 d-1,  (Table  2  and  3,  sim  1).  Total  duration  is
+less  when  maximising  yield  per  duration  and  therefore  ﬂexibility
+is  higher  (see  also  the  open  symbols  in  Fig.  6,  which  are  shifted
+upwards,  indicating  higher  ﬂexibility).  Thus  the  objective  of  the
+farmer  (what  to  maximise)  affects  optimal  sowing  date  and  the
+associated  yields.
+
+Fig.  4a  shows  that  predicted  long  term  average  potential  yields
+for  the  cold  sensitive  variety  decrease  gradually  for  sowing  after
+day  150.  With  yield  maximisation  the  model  suggests  sowing  the
+second  crop  as  early  as  possible  after  the  cold  dry  season  crop.  Opti-
+mised  sowing  dates  in  the  double  cropping  systems  according  to
+our  modelling  results  are  around  day  160  (early  June)  which  is  one
+to  two  months  before  the  start  of  the  wet  season  (Fig.  7).  Fig.  7
+shows  for  both  the  rice–rice  rotation  and  the  rice-vegetable  rota-
+tion  that  there  is  room  for  delaying  this  crop  by  about  60  days.  There
+is  therefore  enough  time  to  sow  the  wet  season  crop  later  (=at  the
+start  of  the  wet   season)  and  still  sow  a  cold  dry  season  crop  (rice  or
+vegetable)  in  early  December.
+
+3.7.  Observed  sowing  dates
+
+Comparing  optimised  sowing  dates  with  observed  sowing  dates
+for  the  warm  wet  season  we   found  our  model  recommends  sow-
+ing  earlier  than  farmers  do.  Earliest  farmers  sow  around  day  180
+
+P.A.J.  van  Oort  et  al.  /  Europ.  J.  Agronomy  80  (2016)  168–181 
+
+177
+
+Fig.  7.  Optimised  cropping  calendars  for  single,  double  and  triple  cropping  for  different  objectives:  maximise  Yield  (a)  or  maximise  Yield/Duration  (b).  Horizontal  solid
+bars   =  rice  sowing  to  harvesting;  horizontal  dashed  =  vegetable.  The  peak  shows  the  long  term  average  rainfall  distribution  (long  term  average  per  dekad,  right  axis).  From
+top   to  bottom  the  cropping  calendars  shown  correspond  with  simulations  15,  9,  5  and  1,  details  of  which  can  be  found  in  Tables  2  and  3.  Note  the  large  difference  in  optimal
+sowing   date  for  the  rice  and  the  rice–rice  crop  rotations:  with  yield  maximisation  a  rice  crop  is  sown  in  November,  when  yield  per  crop  duration  is  maximised  this  crop  is
+sown   January.
+
+(29  Jun.)  which  is  around  the  start  of  the  wet  season,  the  majority
+sows  around  day  215  (3  August),  some  time  after  the  start  of  the
+wet  season.  Our  model  on  the  contrary  recommends  sowing  around
+day  140–160  i.e.  20  May–9  June  (Tables  2  and  3,  sim  5–10).  Farmers
+sow  on  average  55  days  later  than  proposed  by  our  model.  Even  the
+earliest-sowing  farmers  sow  20  days  later  than  optimal  according
+to  our  model.  For  the  medium  duration  variety  the  long  term  aver-
+age  potential  yield  for  the  optimal  sowing  date  (DOY  160)  in  the
+wet  season  is  8.7  t  ha−1,  whereas  for  farmers’  average  sowing  date
+(around  day  215)  in  the  wet  season  it  is  7.7  t  ha−1,  or  12%  lower.
+For  the  short  duration  variety,  potential  yields  are  7.7  t  ha−1 at  DOY
+160  and  6.5  t  ha−1 for  farmers’  average  sowing  date  (16%  lower).
+The  only  cases  in  which  optimised  sowing  dates  were  closer  to
+actual  farmers  sowing  dates  was  when  in  the  CCC  model,  a  veg-
+etable  prevented  rice  sowing  at  a  date  that  would  give  highest
+yield.
+
+3.8.  Intensiﬁcation  options
+
+Previous  sections  showed  that  triple  cropping  is  very  difﬁcult  to
+realise  because  ﬂexibility  is  small.  It  was  not  possible  to  ﬁt  three
+baseline  varieties  in  one  year,  but  triple  cropping  was   possible  with
+the  baseline  and  two  ultra-short  duration  crops  (Table  2,  sim  11,12).
+Long  term  average  total  potential  yield  for  triple  rice  is  18.6  t  ha−1
+(Table  2  sim  11)  and  20.9  t  ha−1 for  the  cold  tolerant  variety  (Table  2
+sim  12).  A  double  crop  with  medium  duration  varieties  gives  total
+yields  of  19.0  t  ha−1 and  20.1  t  ha−1 for  the  normal  and  cold  tolerant
+variety  (Table  2,  sim  5,7).  Thus  total  yield  gains  of  triple  rice  rela-
+tive  to  double  rice  are  small,  also  with  cold  tolerant  varieties,  while
+ﬂexibility  is  much  lower.  Results  showed  the  possibility  of  triple-
+cropping  rice-rice-vegetable  with  a  2-month  vegetable  (Table  2,
+sim  13–16),  but  also  this  crop  rotation  has  very  narrow  sowing  win-
+dows  (Fig.  5)  and  low  overall  ﬂexibility  (6–45  days,  Table  2).  More
+promising  are  the  double  cropping  systems.  Simulated  rice  poten-
+tial  yields  in  the  double  cropping  systems  are  almost  twice  that  of
+single  cropping  systems:  8.7–10.3  t  ha−1 for  the  normal  cold  sensi-
+tive  varieties  in  single  cropping  and  16.4–19.0  t  ha−1 for  the  double
+crops  (Table  2,  sim  1,2,5,6).  Should  breeders  succeed  at  identify-
+ing  a  cold  tolerant  variety,  the  cold  dry  season  rice  crop  could  be
+sown  earlier  (early  November  instead  of  mid-January),  resulting  in
+a  longer  growing  season  and  higher  total  yields  (18.4–20.2  t  ha−1,
+Table  2  sim  7,8).  In  single  rice  cropping  systems,  a  shift  from  short
+duration  varieties  to  medium  duration  varieties  could  increase
+yields  by  19%  (Table  2,  sim  1  vs  2,  8.7-  >  10.3  t  ha−1).  For  double  rice
+cropping  systems,  a  shift  from  short  duration  varieties  to  medium
+duration  varieties  could  increase  yields  by  16%  (Table  2,  sim  5  vs
+6,  16.4-  >  19.0  t  ha−1).  In  double  cropping  systems,  development  of
+
+a  cold  tolerant  variety  would  allow  yields  to  increase  by  5–10%
+(Table  2,  sim  5  vs  7  and  6  vs  8).
+
+4.  Discussion
+
+Twenty  years  ago  Dingkuhn  (1995)  concluded  for  our  study  area
+that  double  cropping  is  possible  but  subject  to  severe  time  con-
+straints.  This  conclusion  was   drawn  based  on  simulated  sterilities
+and  simulations  with  a  medium  duration  variety.  Since  then  short
+duration  varieties  have  been  released,  which  has  increased  the  via-
+bility  of  double  cropping.  An  important  scientiﬁc  insight  has  been
+the  ﬁnding  that,  if  a  rice  crop  produces  a  large  number  of  spikelets
+and  source  limitation  occurs  due  to  a  short  grain  ﬁlling  period,
+then  a  limited  increase  in  sterility  (reduced  sink  size)  would  not
+lead  to  a  yield  reduction.  This  was  also  shown  in  Section  3.3  of  this
+paper,  where  the  period  with  cold  sterility  was  shown  to  be  80  days
+longer  than  the  period  with  yield  loss  due  to  cold.  According  to  the
+current  study  sowing  is  possible  in  January–February  with  good
+yields  despite  some  sterility  (Fig.  4).  This  is  different  from  previous
+simulations  by  Dingkuhn,  which  led  to  the  current  recommended
+sowing  date  of  15  March  for  the  dry  season.  New  results  on  yields,
+observed  and  simulated,  suggest  that  the  abovementioned  study
+by  Dingkuhn  based  on  minimising  sterility  was  too  restrictive  for
+sowing  dates  in  January  and  February  in  our  study  area.  The  release
+of  short  duration  varieties  and  the  new  insight  on  the  interaction
+between  fertility,  source  limitation  and  spikelet  number  theoret-
+ically  lead  to  a  more  optimistic  view  on  prospects  for  rice  double
+cropping.  But  this  was  to  date  not  quantiﬁed.  The  current  analysis
+ﬁlls  this  gap.
+
+In  the  book  by  (Miezan  et  al.,  1997)  more  analyses  were  pre-
+sented  on  rice  double  cropping.  (Matlon,  1997)  noted  the  need  to
+look  more  broadly  for  other  options  and  not  only  at  rice–rice  double
+cropping  and  the  need  to  include  the  farmers’  perspective.  Twenty
+years  after,  we   ﬁnd  that  while  there  has  been  more  research  on
+farmers’  constraints  and  objectives,  data  collected  are  still  insufﬁ-
+cient  for  whole  farm  economic  analysis  and  are  almost  exclusively
+about  rice  farming  with  little  to  no  data  collection  on  other  crops
+(Haefele  et  al.,  2002;  Krupnik  et  al.,  2012;  Le  Gal  and  Papy,  1998;
+Poussin  et  al.,  2006;  Poussin  et  al.,  2005;  Tanaka  et  al.,  2015).  With
+this  in  mind  we  included  other  crops  in  a  rudimentary  method,  by
+blocking  a  part  of  the  year  for  vegetable  cropping.  We   interviewed
+some  farmers  and  discussed  with  them  the  labour  and  economic
+issues  in  rice-vegetable  cropping  (Section  4.4)  but  readily  admit
+that  a  more  thorough  socio-economic  analysis  is  needed.
+
+We  quantiﬁed  ﬂexibility  as  an  important  indicator  of  the  via-
+bility  of  crop  rotations.  How  much  ﬂexibility  is  needed  will  differ
+between  farmers  and  can  change  over  time  if  progress  is  made  with
+mechanisation  and  improved  access  to  seeds  and  credit.  This  study
+
+178 
+
+P.A.J.  van  Oort  et  al.  /  Europ.  J.  Agronomy  80  (2016)  168–181
+
+l
+a
+t
+o
+T
+-
+5
+6
+3
+
+)
+d
+(
+
+. 
+r
+u
+d
+
+6
+1
+2
+
+6
+4
+2
+
+6
+1
+2
+
+6
+4
+2
+
+9
+8
+
+9
+0
+1
+
+0
+7
+
+6
+0
+1
+
+6
+7
+
+6
+9
+
+6
+
+5
+
+9
+3
+
+9
+5
+
+8
+2
+
+1
+7
+
+.
+r
+u
+d
+l 
+a
+t
+o
+T
+
+)
+d
+(
+
+9 
+4
+1
+
+9 
+1
+1
+
+9 
+4
+1
+
+9 
+1
+1
+
+6 
+7
+2
+
+6 
+5
+2
+
+5 
+9
+2
+
+9 
+5
+2
+
+9 
+8
+2
+
+9 
+6
+2
+
+9 
+5
+3
+
+0 
+6
+3
+
+6 
+2
+3
+
+6 
+0
+3
+
+7 
+3
+3
+
+4 
+9
+2
+
+r
+u
+D
+/
+d
+l
+e
+i
+Y
+
+)
+d
+/
+a
+h
+/
+g
+k
+(
+
+) 
+a
+h
+/
+t
+(
+
+t 
+o
+t
+Y
+
+) 
+a
+h
+/
+t
+(
+2 
+Y
+
+) 
+d
+(
+2 
+R
+U
+D
+
+) 
+y
+o
+d
+(
+2 
+R
+A
+H
+
+) 
+y
+o
+d
+(
+2 
+W
+O
+S
+
+) 
+a
+h
+/
+t
+(
+1 
+Y
+
+) 
+d
+(
+1 
+R
+U
+D
+
+) 
+y
+o
+d
+(
+1 
+R
+A
+H
+
+) 
+y
+o
+d
+(
+1 
+W
+O
+S
+
+) 
+d
+(
+3 
+r
+u
+D
+
+
+) 
+d
+(
+2 
+r 
+u
+D
+
+
+) 
+d
+(
+1 
+r
+u
+D
+
+
+y 
+t
+e
+i
+r
+a
+V
+
+n 
+o
+i
+t
+a
+t
+o
+R
+
+m 
+i
+S
+
+.
+
+n
+o
+i
+t
+a
+r
+u
+d
+p 
+o
+r
+c
+e 
+c
+i
+r
+
+r 
+e
+p
+d 
+l
+e
+i
+y
+e 
+c
+i
+r
+
+f 
+o
+n 
+o
+i
+t
+a
+s
+i
+
+m
+i
+x
+a
+m
+h 
+t
+i
+
+w
+s 
+n
+o
+i
+t
+p
+o
+r 
+a
+d
+n
+e
+l
+a
+c
+g 
+n
+i
+p
+p
+o
+r
+C
+d 
+e
+s
+i
+
+m
+
+i
+t
+p
+O
+
+3
+e 
+l
+b
+a
+T
+
+0 
+8
+
+0 
+8
+
+0 
+8
+
+0 
+8
+
+6 
+7
+
+6 
+7
+
+6 
+7
+
+6 
+7
+
+0 
+8
+
+0 
+8
+
+2 
+6
+
+0 
+7
+
+1 
+7
+
+1 
+7
+
+2 
+7
+
+2 
+7
+
+8 
+8
+
+.
+
+9 
+7
+
+.
+
+8 
+8
+
+.
+
+9 
+7
+
+.
+
+.
+
+3 
+6
+1
+
+.
+
+3 
+6
+1
+
+.
+
+8 
+7
+1
+
+.
+
+6 
+6
+1
+
+9 
+7
+
+.
+
+9 
+7
+
+.
+
+.
+
+6 
+8
+1
+
+.
+
+9 
+0
+2
+
+.
+
+6 
+4
+1
+
+.
+
+6 
+4
+1
+
+.
+
+8 
+5
+1
+
+.
+
+1 
+4
+1
+
+7 
+7
+
+.
+
+7 
+7
+
+.
+
+1 
+9
+
+.
+
+7 
+7
+
+.
+
+.
+
+0 
+7
+
+.
+
+0 
+7
+
+1 
+7
+
+.
+
+2 
+6
+
+.
+
+8 
+9
+
+8 
+9
+
+6 
+2
+1
+
+8 
+9
+
+7 
+9
+
+7 
+9
+
+6 
+0
+1
+
+6 
+9
+
+8 
+5
+2
+
+8 
+5
+2
+
+1 
+9
+
+8 
+5
+2
+
+7 
+8
+2
+
+7 
+8
+2
+
+6 
+3
+3
+
+6 
+3
+3
+
+0 
+6
+1
+
+0 
+6
+1
+
+0 
+3
+3
+
+0 
+6
+1
+
+0 
+9
+1
+
+0 
+9
+1
+
+0 
+3
+2
+
+0 
+4
+2
+
+8 
+8
+
+.
+
+9 
+7
+
+.
+
+8 
+8
+
+.
+
+9 
+7
+
+.
+
+6 
+8
+
+.
+
+6 
+8
+
+.
+
+8 
+8
+
+.
+
+9 
+8
+
+.
+
+9 
+7
+
+.
+
+9 
+7
+
+.
+
+7 
+7
+
+.
+
+7 
+7
+
+.
+
+7 
+8
+
+.
+
+9 
+7
+
+.
+
+9 
+9
+
+9 
+0
+1
+
+9 
+9
+
+9 
+0
+1
+
+8 
+1
+1
+
+8 
+1
+1
+
+9 
+0
+1
+
+1 
+2
+1
+
+9 
+9
+
+9 
+9
+
+8 
+0
+1
+
+8 
+0
+1
+
+3 
+1
+1
+
+0 
+0
+1
+
+9 
+4
+2
+
+9 
+3
+2
+
+9 
+4
+2
+
+9 
+3
+2
+
+8 
+3
+1
+
+8 
+3
+1
+
+9 
+4
+2
+
+1 
+3
+1
+
+9 
+4
+2
+
+9 
+4
+2
+
+8 
+6
+1
+
+8 
+6
+1
+
+3 
+0
+2
+
+0 
+2
+2
+
+0 
+4
+1
+
+0 
+4
+1
+
+0 
+4
+1
+
+0 
+4
+1
+
+0 
+2
+
+0 
+2
+
+0 
+4
+1
+
+0 
+1
+
+0 
+5
+1
+
+0 
+5
+1
+
+0 
+6
+
+0 
+6
+
+0 
+9
+
+0 
+2
+1
+
+0 
+2
+−
+
+0 
+2
+
+0 
+
+0 
+2
+
+0 
+2
+
+0 
+
+0 
+
+0 
+1
+
+0 
+
+0 
+
+0 
+2
+
+0 
+1
+−
+
+0 
+2
+
+0 
+
+0 
+
+0 
+2
+
+0 
+2
+
+0 
+
+0 
+2
+
+0 
+
+0 
+
+0 
+2
+
+0 
+
+0 
+1
+−
+
+0 
+
+0 
+1
+
+0 
+
+0 
+2
+
+. 
+t
+c
+
+; 
+l
+l
+
+A
+
+. 
+t
+c
+
+; 
+s
+a
+B
+
+. 
+s
+a
+B
+
+l 
+l
+
+A
+
+. 
+t
+c
+
+; 
+l
+l
+
+A
+
+.
+t
+c
+
+; 
+s
+a
+B
+
+. 
+s
+a
+B
+
+l 
+l
+
+A
+
+e 
+c
+i
+R
+-
+e
+c
+i
+R
+
+e 
+c
+i
+R
+-
+e
+c
+i
+R
+
+e 
+c
+i
+R
+-
+e
+c
+i
+R
+
+e 
+c
+i
+R
+-
+e
+c
+i
+R
+
+e 
+c
+i
+R
+
+e 
+c
+i
+R
+
+e 
+c
+i
+R
+
+e 
+c
+i
+R
+
+. 
+s
+a
+B
+
+l 
+l
+
+A
+
+l 
+l
+
+A
+
+a
+.
+s
+a
+B
+
+. 
+s
+a
+B
+
+l 
+l
+
+A
+
+. 
+s
+a
+B
+
+l 
+l
+
+A
+
+) 
+J
+-
+D
+(
+g
+e
+V
+-
+e
+c
+i
+R
+-
+e
+c
+i
+R
+
+) 
+J
+-
+D
+(
+g
+e
+V
+-
+e
+c
+i
+R
+-
+e
+c
+i
+R
+
+) 
+F
+-
+J
+(
+g
+e
+V
+-
+e
+c
+i
+R
+-
+e
+c
+i
+R
+
+) 
+F
+-
+J
+(
+g
+e
+V
+-
+e
+c
+i
+R
+-
+e
+c
+i
+R
+
+) 
+A
+-
+D
+(
+g
+e
+V
+-
+e
+c
+i
+R
+
+) 
+A
+-
+D
+(
+g
+e
+V
+-
+e
+c
+i
+R
+
+e 
+c
+i
+R
+-
+e
+c
+i
+R
+-
+e
+c
+i
+R
+
+e 
+c
+i
+R
+-
+e
+c
+i
+R
+-
+e
+c
+i
+R
+
+1 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+ 
+
+0
+1
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+1
+1
+
+2
+1
+
+3
+1
+
+4
+1
+
+5
+1
+
+6
+1
+
+e
+v
+i
+t
+a
+l
+e
+r
+
+) 
+s
+y
+a
+d
+(
+n 
+o
+i
+t
+a
+r
+u
+d
+n 
+
+i
+e 
+g
+n
+a
+h
+c
+= 
+R 
+U
+D
+
+
+. 
+t
+n
+a
+r
+e
+l
+o
+t
+d 
+l
+o
+c
+= 
+
+. 
+t
+c
+
+, 
+
+n
+o
+i
+t
+a
+r
+u
+d
+p 
+o
+r
+c
+
+l 
+l
+a
+= 
+l 
+l
+a
+
+, 
+
+n
+o
+i
+t
+a
+r
+u
+d
+p 
+o
+r
+c
+e 
+n
+
+i
+l
+e
+s
+a
+b
+= 
+
+. 
+s
+a
+b
+: 
+y
+t
+e
+i
+r
+a
+V
+
+. 
+
+y
+r
+a
+u
+r
+b
+e
+F
+-
+y
+r
+a
+u
+n
+a
+J
+= 
+F 
+-
+J
+
+, 
+
+y
+r
+a
+u
+n
+a
+J
+-
+r
+e
+b
+m
+e
+c
+e
+D
+= 
+J 
+-
+D
+
+i
+
+, 
+l
+i
+r
+p
+A
+-
+r
+e
+b
+m
+e
+c
+e
+D
+g 
+n
+w
+o
+r
+g
+e 
+l
+b
+a
+t
+e
+g
+e
+V
+= 
+) 
+A
+-
+D
+(
+g
+e
+V
+: 
+n
+o
+i
+t
+a
+t
+o
+R
+
+l
+a
+t
+o
+T
+/
+d
+l
+e
+i
+y
+e 
+c
+i
+r
+
+l 
+a
+t
+o
+T
+= 
+r 
+u
+D
+/
+d
+l
+e
+i
+Y
+
+. 
+t
+n
+e
+t
+n
+o
+c
+e 
+r
+u
+t
+s
+i
+o
+m
+% 
+4
+1
+t 
+a
+e 
+c
+i
+r
+y 
+d
+d
+a
+p
+= 
+) 
+a
+h
+/
+t
+(
+
+) 
+t
+o
+t
+Y
+
+, 
+
+,
+
+2
+Y
+1
+Y
+(
+d 
+l
+e
+i
+Y
+
+. 
+
+g
+n
+i
+t
+s
+e
+v
+r
+a
+h
+o 
+t
+g 
+n
+w
+o
+s
+
+i
+
+m 
+o
+r
+f
+
+s 
+y
+a
+d
+= 
+R 
+U
+D
+
+. 
+
+e
+t
+a
+D
+t 
+s
+e
+v
+r
+a
+H
+= 
+R 
+A
+H
+
+. 
+
+n
+w
+o
+s
+
+s 
+i
+2 
+/
+1
+p 
+o
+r
+c
+h 
+c
+i
+h
+w
+n 
+
+i
+
+r 
+a
+e
+Y
+f 
+o
+y 
+a
+D
+n 
+a
+i
+l
+
+u
+J
+= 
+W 
+O
+S
+
+. 
+
+n
+o
+i
+t
+a
+r
+u
+d
+e 
+n
+
+i
+l
+e
+s
+a
+b
+o
+t
+
+ 
+
+l
+a
+t
+o
+T
+-
+5
+6
+3
+= 
+y 
+t
+i
+l
+i
+b
+i
+x
+e
+l
+F
+
+. 
+
+n
+o
+i
+t
+a
+r
+a
+p
+e
+r
+p
+d 
+n
+a
+l
+d 
+n
+a
+g 
+n
+i
+t
+s
+e
+v
+r
+a
+h
+r 
+o
+f
+) 
+
+W
+O
+S
+A
+H
+R
+U
+D
+(
+s 
+p
+o
+r
+c
+o 
+w
+
+t
+n 
+e
+e
+w
+t
+e
+b
+d 
+o
+i
+r
+e
+p
+m 
+u
+m
+n
+m
+e 
+h
+t
+g 
+n
+i
+d
+u
+l
+c
+n
+
+i
+
+i
+
+i
+d 
+n
+a
+e 
+l
+b
+a
+t
+e
+g
+e
+v
+e 
+h
+t
+g 
+n
+i
+d
+u
+l
+c
+n
+
+i
+
+, 
+s
+p
+o
+r
+c
+d 
+e
+t
+s
+e
+v
+r
+a
+h
+
+l 
+l
+a
+f 
+o
+n 
+o
+i
+t
+a
+r
+u
+d
+l 
+a
+t
+o
+t
+= 
+n 
+o
+i
+t
+a
+r
+u
+d
+l 
+a
+t
+o
+T
+
+. 
+s
+p
+o
+r
+c
+e 
+c
+i
+r
+e 
+h
+t
+f 
+o
+n
+o
+i
+t
+a
+r
+u
+d
+
+ 
+
+.
+
+y
+t
+e
+i
+r
+a
+v
+e 
+n
+
+i
+l
+e
+s
+a
+b
+e 
+h
+t
+h 
+t
+i
+
+w
+e 
+l
+b
+i
+s
+s
+o
+p
+t 
+o
+n
+s 
+a
+w
+e 
+c
+i
+r
+–
+e
+c
+i
+r
+-
+e
+c
+i
+R
+
+a
+
+.
+
+n
+o
+i
+t
+a
+r
+u
+d
+
+is  an  exploratory  analysis:  we  explore  what  yield  gains  are  pos-
+sible  should  these  constraints  be  alleviated.  It  shows  what  yield
+gains  are  theoretically  possible  by  shifting  to  medium  duration
+varieties,  shifting  sowing  dates,  breeding  for  cold  tolerant  varieties
+and  increasing  the  cropping  intensity.
+
+4.1.  Main  ﬁndings
+
+For  a  site  in  Senegal,  representing  the  middle  valley  of  the  Sene-
+gal  River  in  the  Sahel,  we  investigated  options  for  intensiﬁcation,  by
+varying  sowing  dates,  variety  types  and  number  of  crops  per  year.
+In  summary,  the  analyses  in  this  paper  provide  clear  outcomes  on
+options  for  intensiﬁcation:
+
+1.  Double  cropping  is  possible
+2.  Triple  cropping  is  almost  impossible,  except  with  very  tight  plan-
+ning  or  a  rice-rice-vegetable  rotation  with  a  2  month  vegetable
+3.  Within  single  and  double  cropping  systems,  intensiﬁcation  is
+possible  by  adopting  medium  duration  rice  varieties  instead  of
+short  duration  varieties
+
+The  analysis  was  exploratory  in  the  sense  that  potential  yields
+were  simulated  while  we  are  aware  that  in  many  cases,  farmers  face
+many  constraints  and  actual  yields  are  often  lower  (Tanaka  et  al.,
+2015),  while  unplanted  periods  between  crops  are  often  larger  than
+the  minimum  of  20  days  assumed  in  this  paper.  Our  analysis  shows
+that  double  cropping  (rice–rice  or  rice-vegetable)  is  possible  and
+triple  rice–rice-vegetable  cropping  is  only  possible  where  farm-
+ers  have  good  control  of  the  timing  of  their  operations  and  where
+a  short  (2  months)  duration  vegetable  is  available.  Most  promis-
+ing  options  for  intensiﬁcation  are  therefore  to  shift  from  single  to
+double  cropping  and  to  grow  medium  instead  of  short  duration
+varieties.  Both  are  available  in  the  Senegal  middle  valley,  e.g.,  pop-
+ular  short  duration  cv.  Sahel108  (used  as  the  baseline  variety  in
+this  paper)  and  medium  duration  variety  Sahel202  (Tanaka  et  al.,
+2015).  We   know  that  single  rice,  rice–rice  and  rice-vegetable  rota-
+tions  exist  and  that  double  cropped  area  is  expanding,  but  accurate
+area  estimates  and  dynamics  are  not  available.  The  value  of  the
+exploratory  analysis  presented  here  is  that  it  shows  which  options
+for  intensiﬁcation  are  and  which  ones  are  currently  not  possible.
+Whether  they  can  be  implemented  in  practice  depends  on  timely
+availability  of  labour,  machinery,  water,  seed  and  fertiliser.
+
+Methodologically,  the  approach  developed  adds  something  new
+to  previous  models  for  crop  rotation  optimisation.  Compared  to
+models  like  APSIM  and  DSSAT  (Holzworth  et  al.,  2014;  Jones
+et  al.,  2003;  Keating  et  al.,  2003)  (Holzworth  et  al.,  2014;  Jones
+et  al.,  2003),  our  model  allows  for  systematic  comparison  of  large
+numbers  of  crop  rotations,  including  associated  climatic  risks.  Com-
+pared  to  specialised  models  for  comparing  crop  rotations  (Dogliotti
+et  al.,  2003;  Huong  et  al.,  2014)  our  analysis  adds  a  more  mecha-
+nistic  simulation  of  climatic  risks  and  effects  of  varietal  differences.
+Compared  to  ideotyping  studies,  our  analysis  is  an  ideotyping  study
+at  the  crop  rotation  level,  as  opposed  to  previous  studies  which  only
+considered  single  crops.  As  in  (Dingkuhn,  1995)  we  quantiﬁed  ﬂex-
+ibility,  which  we  visualised  here  by  the  width  of  the  bands  in  Fig.  5.
+Such  ﬂexibility  is  very  important  for  farmers  who   cope  with  having
+to  divide  their  labour  time  over  different  crops  and  who   often  suf-
+fer  from  late  availability  of  machinery  and  other  resources  (Connor
+et  al.,  2008;  Haefele  et  al.,  2002;  Tanaka  et  al.,  2015).
+
+4.2.  Phenology
+
+Two  phenological  models  were  used.  The  SOWDOY  model  more
+accurately  predicted  phenology  for  the  study  site  and  therefore  we
+used  this  model  to  investigate  intensiﬁcation  options.  Disadvan-
+tages  of  this  model  are  that  it  is  site  speciﬁc  and  that  it  did  not
+
+P.A.J.  van  Oort  et  al.  /  Europ.  J.  Agronomy  80  (2016)  168–181 
+
+179
+
+Fig.  8.  Comparison  of  simulated  crop  duration  (a)  and  yield  (b)  for  direct-seeded  baseline  variety  Sahel108,  with  the  SOWDOY  phenology  model  (grey)  and  with  the  TSUM
+model   (black).  Fig.  8a:  the  TSUM  simulated  different  crop  duration  for  each  year,  resulting  in  the  scatter  of  black  points,  the  SOWDOY  model  (grey  line)  does  not  predict
+interannual  variability  in  crop  duration.  (b):  error  bars  show  minimum  and  maximum  over  20  years  of  weather  data.  (c)  and  (d):  totals  calculated  based  on  cropping  calendar
+optimisation  with  the  SOWDOY  model  (Table  2)  and  the  ORYZA2000  simulation  with  the  TSUM  phenology  model  (table  not  shown).
+
+simulate  interannual  variation  in  phenology.  A  TSUM  model  can
+potentially  also  be  used  with  the  same  parameters  for  other  sites,
+pending  successful  validation.  We   investigated  the  sensitivity  of
+our  results  to  the  choice  of  phenological  model.  Fig.  8  presents
+the  comparison  of  yields  and  crop  rotations  simulated  with  these
+two  phenological  sub-models.  The  two  largest  differences  in  sim-
+ulated  yields  (Fig.  8b)  are  that  (i)  for  sowing  dates  10–200,  the
+TSUM  model  predicts  0–1  t  ha−1 lower  yields  and  (ii)  the  period
+with  severe  yield  loss  due  to  cold  sterility  is  shifted  10–20  days
+to  the  right.  Similarities  between  simulated  yields  in  Fig.  8b  are
+the  dates  on  which  highest  yields  are  simulated,  showing  peaks
+at  sowing  dates  10  and  150,  for  which  simulated  potential  yields
+are  very  similar  for  ORYZA2000  subversions  with  the  two  different
+phenological  models.  As  a  result  of  these  two  similarities,  optimised
+cropping  calendars  are  almost  the  same  for  the  two  models  and
+result  in  almost  the  same  total  days  and  total  yield  (Fig.  8c  and  d)
+for  the  20  crop  rotations  considered  in  Table  2.  Both  with  the  SOW-
+DOY  model  and  with  the  TSUM  model,  optimised  sowing  dates  are
+around  sowing  dates  10  and  150.  Therefore  for  this  speciﬁc  site  we
+come  to  the  same  conclusions  on  optimal  sowing  dates,  potential
+yields  and  options  for  intensiﬁcation.  More  detailed  calibrations  of
+a  temperature  sum  based  model,  for  example  with  specialised  cal-
+ibration  models  (van  Oort  et  al.  (2011),  (Archontoulis  et  al.,  2014),
+(Dingkuhn  et  al.,  2015))  could  further  increase  the  accuracy  of  the
+analyses  presented  in  this  paper,  as  would  more  detailed  calibration
+of  the  crop  growth  simulation.
+
+4.3.  ORYZA2000
+
+Models  were  used  in  this  paper  to  answer  two  questions.  Firstly:
+how  many  crops  (including  choice  of  5  varietal  types  with  different
+duration  and  cold  tolerance)  can  be  cultivated  successively  in  one
+year?  And  secondly:  what  are  their  optimal  sowing  dates?  Calendar
+construction  strictly  does  not  require  a  crop  growth  model,  it  can
+be  done  with  phenology  models  alone.  We   are  quite  conﬁdent  on
+the  results  the  possible  number  of  crops  per  year,  as  errors  in  the
+phenology  model  are  small  and  with  two  different  phenological
+
+models,  we  came  to  similar  conclusions.  The  answer  to  the  sec-
+ond  question  was   based  on  simulated  yields  with  the  ORYZA2000
+model.  Yields  and  climatic  risks  were  simulated  with  adapted  sub-
+versions  s14  and  s27  of  the  ORYZA2000v2n13  model,  for  which  we
+previously  assessed  the  accuracy  in  (Van  Oort  et  al.,  2015a)  and  for
+which  we   presented  an  additional  validation  in  Fig.  3.  The  accuracy
+of  the  model  is  not  perfect,  and  simulated  yields  were  also  found
+be  sensitive  to  phenology  simulation,  shifting  the  period  with  peak
+yield  loss  due  to  cold  sterility  by  10–20  days.  Continued  work  on
+model  improvement  and  collection  of  accurate  input  and  validation
+data  is  needed.  However,  approximate  accuracy  and  the  absence  of
+distorting  bias  can  be  a  sufﬁcient  condition  to  answer  speciﬁc  ques-
+tions.  Within  the  framework  of  the  present  hypotheses  and  factors,
+a  perfect  model  would  not  have  changed  the  conclusions.
+
+4.4.  Observed  vs  optimised  sowing  dates
+
+Our  simulations  showed  yield  gains  of  about  1  t/ha  (+12  to  +16%)
+when  sowing  one  to  two   months  earlier  than  farmers  do  now.
+Discrepancies  between  model  optimised  sowing  dates  and  actual
+farmers’  sowing  dates  indicate  the  presence  of  third  factors  that
+were  not  considered,  and  indicate  that  the  model’s  boundaries  need
+to  be  extended,  e.g.  through  participatory  research  on  farmers’  deci-
+sion  criteria.
+
+During  a  recent  ﬁeld  visit  to  the  study  area  (van  Oort  and  Sow,  29
+April  2016)  we  spoke  with  farmers  and  obtained  some  cues  on  why
+farmers  would  sow  later  than  optimal  according  to  the  model  pre-
+sented  here.  Farmers  told  us  that  in  recent  years  tomato  and  onion
+are  more  proﬁtable  than  rice,  so  cultivation  of  these  vegetables  gets
+priority  over  timely  sowing  of  rice.  They  told  us  irrigation  is  expen-
+sive,  thus  increasing  costs  and  risk  when  sowing  rice  before  the
+start  of  the  wet  season,  as  our  model  suggests.  For  the  same  rea-
+son,  many  farmers  prefer  short  duration  Sahel  108  over  medium
+duration  varieties.  According  to  farmers,  the  yield  gain  of  medium
+duration  varieties  is  insufﬁcient  to  offset  the  extra  costs  of  irriga-
+tion.  Our  data  conﬁrm  this  perception:  in  Table  3  simulations  1
+and  2  show  that  going  from  short  to  medium  duration  variety  the
+
+180 
+
+P.A.J.  van  Oort  et  al.  /  Europ.  J.  Agronomy  80  (2016)  168–181
+
+yield  increases  from  7.9  to  8.8  t/ha  (+10%)  while  duration  increases
+from  119  to  149  days  (+25%).  It  shows  that  the  marginal  cost  of
+increased  time  (which  will  be  strongly  correlated  with  irrigation
+water  needs)  is  larger  than  the  marginal  yield  increase.  We   found
+higher  marginal  costs  than  marginal  yield  gains  in  all  comparisons
+between  short  and  medium  duration  varieties  in  Tables  2  and  3.
+Lastly,  farmers  also  mentioned  the  already  well  known  constraints
+of  delayed  planting  due  to  lack  of  seed,  credit,  machinery  and  con-
+straints  of  decisions  at  the  scheme  level  on  when  to  irrigate  (Poussin
+et  al.,  2006;  Poussin  et  al.,  2005;  Tanaka  et  al.,  2015).  This  anecdotal
+experience  highlights  the  limitations  of  sowing  date  optimisation
+for  rice  only  and  highlights  the  need  for  broader  socio-economic
+analysis  including  all  crops  in  the  rotation,  not  only  rice.
+
+4.5.  Carry-over  effects
+
+Our  model  was  selective  in  the  choice  of  process  considered  in
+evaluating  cropping  calendars.  One  simpliﬁcation  was  the  absence
+of  environmental  carry-over  effects  from  one  crop  to  the  next.
+Such  effects  are  common  in  rainfed  systems  where  water  uptake
+of  one  crop  affects  initial  soil  moisture  of  the  following  crop.  In
+irrigated  systems,  this  carry-over  effect  can  be  ignored  as  we   sim-
+ply  assume  that  always  enough  water  is  available.  For  this  reason,
+increasing  cropping  intensity  is  often  more  promising  in  irrigated
+systems  than  in  rainfed  systems.  Likewise,  we  chose  to  ignore
+carry-over  effects  of  soil  nutrients  as  we  assumed  these  would  be
+supplemented  with  fertiliser.  In  systems  where  carry-over  effects
+of  water  and  nutrients  play  an  important  role  it  is  better  to  use
+models  speciﬁcally  designed  for  that  purpose,  using  models  such  as
+APSIM  and  DSSAT,  for  example  see  Singh  et  al.  (2015a);  Singh  et  al.
+(2015b);  (Gaydon  et  al.,  2012a;  Gaydon  et  al.,  2012b).  A  third  impor-
+tant  carry-over  effect  is  that  of  the  build-up  of  pests  and  diseases.
+Such  carry-over  effects  are  less  common  in  continuous  irrigated
+rice  systems  (Dobermann  et  al.,  2000)  in  comparison  with  more
+vulnerable  vegetable  systems.  In  systems  where  carry-over  effects
+of  build-up  of  pests  and  diseases  play  an  important  role  it  is  better
+to  use  models  that  can  simulate  these  effects,  such  as  ROTAT  and
+PermVeg  Dogliotti  et  al.  (2003);  (Huong  et  al.,  2014;  Van  Den  Berg
+and  Rossing,  2005;  Van  Den  Berg  et  al.,  2006).
+
+4.6.  Limitations  and  extensions
+
+This  paper  builds  on  previous  works  reported  in  (Miezan  et  al.,
+1997)  and  knowledge  gaps  identiﬁed  by  (Matlon,  1997).  A  previ-
+ous  similar  study  systematically  assessed  options  for  rice  single  and
+double  cropping  Dingkuhn  (1995)  but  did  not  include  vegetable
+crops,  did  not  include  a  comparison  between  ultra-short,  short  and
+medium  duration  varieties  and  did  not  explicitly  quantify  ﬂexibil-
+ity.  These  are  important  factors  in  farmers’  decision  making.  Since
+these  works  in  the  mid   1990s,  there  have  been  more  studies  into  the
+farmers’  perspective  and  causes  of  yield  gaps,  and  rice  models  have
+been  improved.  The  current  study  builds  on  that  work.  Still,  there
+are  three  important  limitations  not  addressed  in  this  paper  which
+we  hope  to  address  in  follow-up  studies.  Firstly,  we  did  not  quan-
+tify  climate  change  effects.  Secondly,  we  lacked  data  on  vegetables
+in  the  study  area.  There  is  a  large  imbalance  between  rice  and  veg-
+etables  in  terms  of  available  data  and  models  for  the  study  area,
+probably  because  there  is  a  rice  research  institute  and  not  a  veg-
+etable  research  institute  present  in  the  study  region.  The  analyses
+presented  in  this  paper  show  the  potential  importance  of  veg-
+etables  in  local,  intensiﬁed,  rice-based  cropping  systems.  Thirdly,
+we  did  not  include  an  economic  evaluation  of  the  intensiﬁcation
+options.  This,  as  well  as  considering  implications  of  climate  change
+for  rice-based  cropping  systems,  warrants  follow-up  studies.
+
+5.  Conclusions
+
+A  GxExM  cropping  calendar  optimisation  model  was  presented.
+Optimisation  included  genetic  (G)  traits  (crop  duration  and  cold
+tolerance)  and  management  (M)   decisions  (sowing  dates,  time
+between  crops)  in  interaction  and  in  an  environment  (E)  with
+extreme  temperatures.  The  model  optimises  cropping  calendars
+of  rice  single,  double  and  triple  crops.  Next  to  rice  a  second  (veg-
+etable)  crop  was  included  in  a  rudimentary  manner  by  blocking
+part  of  the  year  for  vegetable  cropping.  The  model  also  quantiﬁed
+how  much  ﬂexibility  there  was   in  the  crop  rotations  and  showed
+that  a  clear  trade-off  exists  between  ﬂexibility  and  total  yield.  The
+model  was   applied  to  the  middle  valley  of  the  Senegal  River.  In  this
+site,  farmers  already  practice  double  cropping.  The  value  of  a  mod-
+elling  exercise  such  as  presented  here  is  that  it  allows  for  simulating
+probable  yield  gains  that  arise  from  changes  in  planting  dates,  new
+cold  or  heat  tolerant  varieties  and  choices  between  duration  types.
+Triple  cropping  is  not  practiced  and  it  was   unclear  to  date  whether
+it  would  be  possible.  Our  analysis  showed  that  it  is  almost  impos-
+sible  because  calendar  ﬂexibility  would  be  too  small.  An  expansion
+of  rice  cultivated  area  is  expected  in  the  coming  decades.  For  sites
+newly  brought  into  cultivation  in  the  region,  the  CCC  model  devel-
+oped  here  can  be  used  to  explore  which  rice-based  rotations  would
+be  viable.
+
+Data  and  model  availability
+
+Data  and  model  can  be  downloaded  from  the  following  website:
+
+http://models.pps.wur.nl/node/973.
+
+Acknowledgements
+
+Financial  support  for  cold  tolerance  research  at  AfricaRice  was
+provided  by  the  project  Stress-Tolerant  Rice  for  poor  farmers  in
+Africa  and  South  Asia  (STRASA)  funded  by  the  Bill  and  Melinda  Gates
+Foundation.
+
+References
+
+Archontoulis,  S.V.,  Miguez,  F.E.,  Moore,  K.J.,  2014.  A  methodology  and  an
+
+optimization  tool  to  calibrate  phenology  of  short-day  species  included  in  the
+APSIM  PLANT  model:  application  to  soybean.  Environ.  Model.  Software  62,
+465–477.
+
+Bouman,  B.A.M.,  Kropff,  M.J.,  Tuong,  T.P.,  Wopereis,  M.C.S.,  ten  Berge,  H.F.M.,  van
+
+Laar,  H.H.,  2001.  ORYZA2000:  Modeling  Lowland  Rice.  IRRI,  Los  Ba˜nos.
+Cassman,  K.G.,  Dobermann,  A.,  Walters,  D.T.,  Yang,  H.,  2003.  Meeting  cereal
+
+demand  while  protecting  natural  resources  and  improving  environmental
+quality.  Annu.  Rev.  Environ.  Resour.  28,  315–358.
+
+Connor,  D.,  Comas,  J.,  Macpherson,  H.G.,  Mateos,  L.,  2008.  Impact  of  small-holder
+
+irrigation  on  the  agricultural  production,  food  supply  and  economic  prosperity
+of   a  representative  village  beside  the  Senegal  River,  Mauritania.  Agric.  Syst.  96,
+1–15.
+
+de  Vries,  M.E.,  Leffelaar,  P.A.,  Sakane,  N.,  Bado,  B.V.,  Giller,  K.E.,  2011.  Adaptability
+of  irrigated  rice  to  temperature  change  in  Sahelian  environments.  Exp.  Agric.
+47,   69–87.
+
+Diagne,  M.,   Demont,  M.,   Seck,  P.A.,  Diaw,  A.,  2013.  Self-sufﬁciency  policy  and
+
+irrigated  rice  productivity  in  the  Senegal  River  Valley.  Food  Secur.  5,  55–68.
+
+Dingkuhn,  M.,   Penning  de  Vries,  F.W.T.,  Datta,  S.K.,  van  Laar,  H.H.,  1991.  Concepts
+for   a  new  plant  type  for  direct  seeded  ﬂooded  tropical  rice.  In:  ‘Direct  Seeded
+Flooded  Rice  in  the  Tropics’,  International  Rice  Research  Institute,  Manila,
+Philippines,  Selected  Papers  from  the  International  Rice  Research  Conference,
+27–31  August  1990,  Seoul,  Korea,  pp.  17–38.
+
+Dingkuhn,  M.,   Radanielina,  T.,  Raboin,  L.M.,  Dusserre,  J.,  Ramantsoanirina,  A.,  Sow,
+
+A.,   Manneh,  B.,  Balde,  A.B.,  Soulié,  J.C.,  Shrestha,  S.,  Ahmadi,  N.,  Courtois,  B.,
+2015.  Field  phenomics  for  response  of  a  rice  diversity  panel  to  ten
+environments  in  Senegal  and  Madagascar.  2.  Chilling-induced  spikelet  sterility.
+Field  Crops  Res.  183,  282–293.
+
+Dingkuhn,  M.,   1995.  Climatic  determinants  of  irrigated  rice  performance  in  the
+Sahel.3.  characterizing  environments  by  simulating  crop  phenology.  Agric.
+Syst.  48,  435–456.
+
+Dobermann,  A.,  Dawe,  D.,  Roetter,  R.P.,  Cassman,  K.G.,  2000.  Reversal  of  rice  yield
+
+decline  in  a  long-term  continuous  cropping  experiment.  Agron.  J.  92,  633–643.
+
+Dogliotti,  S.,  Rossing,  W.A.H.,  van  Ittersum,  M.K.,  2003.  ROTAT:  a  tool  for
+systematically  generating  crop  rotations.  Eur.  J.  Agron.  19,  239–250.
+
+Evenson,  R.E.,  Gollin,  D.,  2003.  Assessing  the  impact  of  the  Green  Revolution,  1960
+
+Poussin,  J.C.,  Diallo,  Y.,  Legoupil,  J.C.,  2006.  Improved  collective  decision-making  in
+
+P.A.J.  van  Oort  et  al.  /  Europ.  J.  Agronomy  80  (2016)  168–181 
+
+181
+
+to   2000.  Science  300,  758–762.
+
+Foley,  J.A.,  Ramankutty,  N.,  Brauman,  K.A.,  Cassidy,  E.S.,  Gerber,  J.S.,  Johnston,  M.,
+
+Mueller,  N.D.,  O’Connell,  C.,  Ray,  D.K.,  West,  P.C.,  Balzer,  C.,  Bennett,  E.M.,
+Carpenter,  S.R.,  Hill,  J.,  Monfreda,  C.,  Polasky,  S.,  Rockstrom,  J.,  Sheehan,  J.,
+Siebert,  S.,  Tilman,  D.,  Zaks,  D.P.M.,  2011.  Solutions  for  a  cultivated  planet.
+Nature  478,  337–342.
+
+Garnett,  T.,  Appleby,  M.C.,  Balmford,  A.,  Bateman,  I.J.,  Benton,  T.G.,  Bloomer,  P.,
+Burlingame,  B.,  Dawkins,  M.,   Dolan,  L.,  Fraser,  D.,  Herrero,  M.,   Hoffmann,  I.,
+Smith,  P.,  Thornton,  P.K.,  Toulmin,  C.,  Vermeulen,  S.J.,  Godfray,  H.C.J.,  2013.
+Sustainable  intensiﬁcation  in  agriculture:  premises  and  policies.  Science  341,
+33–34.
+
+Gaydon,  D.S.,  Meinke,  H.,  Rodriguez,  D.,  2012a.  The  best  farm-level  irrigation
+
+strategy  changes  seasonally  with  ﬂuctuating  water  availability.  Agric.  Water
+Manage.  103,  33–42.
+
+Gaydon,  D.S.,  Meinke,  H.,  Rodriguez,  D.,  McGrath,  D.J.,  2012b.  Comparing  water
+options  for  irrigation  farmers  using  Modern  Portfolio  Theory.  Agric.  Water
+Manage.  115,  1–9.
+
+Haefele,  S.M.,  Wopereis,  M.C.S.,  Donovan,  C.,  2002.  Farmers’  perceptions:  practices
+and   performance  in  a  Sahelian  irrigated  rice  scheme.  Exp.  Agric.  38,  197–210.
+
+Hall,  A.J.,  Richards,  R.A.,  2013.  Prognosis  for  genetic  improvement  of  yield  potential
+
+and   water-limited  yield  of  major  grain  crops.  Field  Crops  Res.  143,  18–33.
+
+Holzworth,  D.P.,  Huth,  N.I.,  deVoil,  P.G.,  Zurcher,  E.J.,  Herrmann,  N.I.,  McLean,  G.,
+
+Chenu,  K.,  van  Oosterom,  E.J.,  Snow,  V.,  Murphy,  C.,  Moore,  A.D.,  Brown,  H.,
+Whish,  J.P.M.,  Verrall,  S.,  Fainges,  J.,  Bell,  L.W.,  Peake,  A.S.,  Poulton,  P.L.,
+Hochman,  Z.,  Thorburn,  P.J.,  Gaydon,  D.S.,  Dalgliesh,  N.P.,  Rodriguez,  D.,  Cox,  H.,
+Chapman,  S.,  Doherty,  A.,  Teixeira,  E.,  Sharp,  J.,  Cichota,  R.,  Vogeler,  I.,  Li,  F.Y.,
+Wang,  E.,  Hammer,  G.L.,  Robertson,  M.J.,  Dimes,  J.P.,  Whitbread,  A.M.,  Hunt,  J.,
+van  Rees,  H.,  McClelland,  T.,  Carberry,  P.S.,  Hargreaves,  J.N.G.,  MacLeod,  N.,
+−
+McDonald,  C.,  Harsdorf,  J.,  Wedgwood,  S.,  Keating,  B.A.,  2014.  APSIM 
+Evolution  towards  a  new  generation  of  agricultural  systems  simulation.
+Environ.  Modell.  Softw.  62,  327–350.
+
+Huong,  P.T.T.,  Everaarts,  A.P.,  van  den  Berg,  W.,   Neeteson,  J.J.,  Struik,  P.C.,  2014.
+
+PermVeg:  a  model  to  design  crop  sequences  for  permanent  vegetable
+production  systems  in  the  red  river  delta:  vietnam.  J.  Agron.  Crop  Sci.  200,
+302–316.
+
+Jones,  J.W.,  Hoogenboom,  G.,  Porter,  C.H.,  Boote,  K.J.,  Batchelor,  W.D.,  Hunt,  L.A.,
+
+Wilkens,  P.W.,  Singh,  U.,  Gijsman,  A.J.,  Ritchie,  J.T.,  2003.  The  DSSAT  cropping
+system  model.  Eur.  J.  Agron.  18,  235–265.
+
+Julia,  C.,  Dingkuhn,  M.,   2012.  Variation  in  time  of  day  of  anthesis  in  rice  in  different
+
+climatic  environments.  Eur.  J.  Agron.  43,  166–174.
+
+Julia,  C.,  Dingkuhn,  M.,   2013.  Predicting  temperature  induced  sterility  of  rice
+
+spikelets  requires  simulation  of  crop-generated  microclimate.  Eur.  J.  Agron.  49,
+50–60.
+
+Kastner,  T.,  Rivas,  M.J.I.,  Koch,  W.,   Nonhebel,  S.,  2012.  Global  changes  in  diets  and
+the  consequences  for  land  requirements  for  food.  Proc.  Natl.  Acad.  Sci.  U.  S.  A.
+109,  6868–6872.
+
+Keating,  B.A.,  Carberry,  P.S.,  Hammer,  G.L.,  Probert,  M.E.,  Robertson,  M.J.,
+
+Holzworth,  D.,  Huth,  N.I.,  Hargreaves,  J.N.G.,  Meinke,  H.,  Hochman,  Z.,  McLean,
+G.,   Verburg,  K.,  Snow,  V.,  Dimes,  J.P.,  Silburn,  M.,   Wang,  E.,  Brown,  S.,  Bristow,
+K.L.,  Asseng,  S.,  Chapman,  S.,  McCown,  R.L.,  Freebairn,  D.M.,  Smith,  C.J.,  2003.
+An  overview  of  APSIM:  a  model  designed  for  farming  systems  simulation.  Eur.
+J.   Agron.  18,  267–288.
+
+Krupnik,  T.J.,  Shennan,  C.,  Settle,  W.H.,  Demont,  M.,   Ndiaye,  A.B.,  Rodenburg,  J.,
+
+2012.  Improving  irrigated  rice  production  in  the  Senegal  River  Valley  through
+experiential  learning  and  innovation.  Agric.  Syst.  109,  101–112.
+
+Le  Gal,  P.Y.,  Papy,  F.,  1998.  Co-ordination  processes  in  a  collectively  managed
+
+cropping  system:  double  cropping  of  irrigated  rice  in  Senegal.  Agric.  Syst.  57,
+135–159.
+
+Matlon,  P.J.,  1997.  Closing  comments.  In:  Miezan,  K.M.,  Wopereis,  M.C.S.,
+
+Dingkuhn,  M.,   Deckers,  J.,  Randolph,  T.F.  (Eds.),  Irrigated  Rice  in  the  Sahel:
+Prospects  for  Sustainable  Development:  International  Symposium  Held  at
+WARDA’s  Research  Station  N’Diaye,  Senegal,  27–30  March  1995.  WARDA,
+Dakar,  pp.  465–468.
+
+Miezan,  K.M.,  Wopereis,  M.C.S.,  Dingkuhn,  M.,   Deckers,  J.,  Randolph,  T.F.,  1997.
+
+Irrigated  Rice  in  the  Sahel:  Prospects  for  Sustainable  Development:
+International  Symposium  Held  at  WARDA’s  Research  Station  N’Diaye,  Senegal,
+27–30  March  1995.  WARDA,  Dakar.
+
+Natalini,  D.,  Jones,  A.W.,  Bravo,  G.,  2015.  Quantitative  assessment  of  political
+
+fragility  indices  and  food  prices  as  indicators  of  food  riots  in  countries.
+Sustainability  (Switzerland)  7,  4360–4385.
+
+Poussin,  J.C.,  Diallo,  Y.,  Legoupil,  J.C.,  Sow,  A.,  2005.  Increase  in  rice  productivity  in
+the  Senegal  River  valley  due  to  improved  collective  management  of  irrigation
+schemes.  Agron.  Sustainable  Dev.  25,  225–236.
+
+action  for  irrigated  rice  farmers  in  the  Senegal  River  Valley.  Agric.  Syst.  89,
+299–323.
+
+Pretty,  J.,  Toulmin,  C.,  Williams,  S.,  2011.  Sustainable  intensiﬁcation  in  African
+
+agriculture.  Int.  J.  Agric.  Sustainability  9,  5–24.
+
+Rötter,  R.P.,  Tao,  F.,  Höhn,  J.G.,  Palosuo,  T.,  2015.  Use  of  crop  simulation  modelling
+
+to   aid  ideotype  design  of  future  cereal  cultivars.  J.  Exp.  Bot.
+
+Ramankutty,  N.,  Rhemtulla,  J.,  2012.  Can  intensive  farming  save  nature?  Front.
+
+Ecol.  Environ.  10,  455–455.
+
+Sié,  M.,   Dingkuhn,  M.,   Wopereis,  M.C.S.,  Miezan,  K.M.,  1998.  Rice  crop  duration  and
+
+leaf   appearance  rate  in  a  variable  thermal  environment:  i.  Development  of  an
+empirically  based  model.  Field  Crops  Res.  57,  1–13.
+
+Singh,  Balwinder,  Humphreys,  E.,  Gaydon,  D.S.,  Yadav,  Sudhir,  2015a.  Options  for
+
+increasing  the  productivity  of  the  rice-wheat  system  of  north  west  India  while
+reducing  groundwater  depletion.  Part  2.  Is  conservation  agriculture  the
+answer?  Field  Crops  Res.  173,  81–94.
+
+Singh,  Balwinder,  Humphreys,  E.,  Yadav,  Sudhir,  Gaydon,  D.S.,  2015b.  Options  for
+
+increasing  the  productivity  of  the  rice-wheat  system  of  north-west  India  while
+reducing  groundwater  depletion.  Part  1.  Rice  variety  duration,  sowing  date  and
+inclusion  of  mungbean.  Field  Crops  Res.  173,  68–80.
+
+Sternberg,  T.,  2012.  Chinese  drought:  bread  and  the  Arab  Spring.  Appl.  Geogr.  34,
+
+519–524.
+
+Stuerz,  S.,  Sow,  A.,  Muller,  B.,  Manneh,  B.,  Asch,  F.,  2014.  Yield  components  in
+
+response  to  thermal  environment  and  irrigation  system  in  lowland  rice  in  the
+Sahel.  Field  Crops  Res.  163,  47–54.
+
+Tanaka,  A.,  Diagne,  M.,   Saito,  K.,  2015.  Causes  of  yield  stagnation  in  irrigated
+
+lowland  rice  systems  in  the  Senegal  River  Valley:  application  of  dichotomous
+decision  tree  analysis.  Field  Crops  Res.  176,  99–107.
+
+van  Ittersum,  M.K.,  Leffelaar,  P.A.,  van  Keulen,  H.,  Kropff,  M.J.,  Bastiaans,  L.,
+
+Goudriaan,  J.,  2003.  On  approaches  and  applications  of  the  Wageningen  crop
+models.  Eur.  J.  Agron.  18,  201–234.
+
+van  Ittersum,  M.K.,  Cassman,  K.G.,  Grassini,  P.,  Wolf,  J.,  Tittonell,  P.,  Hochman,  Z.,
+2013.  Yield  gap  analysis  with  local  to  global  relevance-A  review.  Field  Crops
+Res.  143,  4–17.
+
+van  Oort,  P.A.J.,  Zhang,  T.Y.,  de  Vries,  M.E.,  Heinemann,  A.B.,  Meinke,  H.,  2011.
+Correlation  between  temperature  and  phenology  prediction  error  in  rice
+(Oryza  sativa  L.).  Agric.  Forest  Meteorol.  151,  1545–1555.
+
+van  Oort,  P.A.J.,  Saito,  K.,  Zwart,  S.J.,  Shrestha,  S.,  2014.  A  simple  model  for
+
+simulating  heat  induced  sterility  in  rice  as  a  function  of  ﬂowering  time  and
+transpirational  cooling.  Field  Crops  Res.  156,  303–312.
+
+Van  Den  Berg,  W.,   Rossing,  W.A.H.,  2005.  Generalized  linear  dynamics  of  a
+
+plant-parasitic  nematode  population  and  the  economic  evaluation  of  crop
+rotations.  J.  Nematol.  37,  55–65.
+
+Van  Den  Berg,  W.,   Rossing,  W.A.H.,  Grasman,  J.,  2006.  Contest  and  scramble
+
+competition  and  the  carry-over  effect  in  Globodera  spp.  in  potato-based  crop
+rotations  using  an  extended  Ricker  model.  Journal  of  Nematology  38,  210–220.
+
+Van  Oort,  P.A.J.,  De  Vries,  M.E.,  Yoshida,  H.,  Saito,  K.,  2015a.  Improved  climate  risk
+
+simulations  for  rice  in  arid  environments.  PLoS  One  10.
+
+Van  Oort,  P.A.J.,  Saito,  K.,  Tanaka,  A.,  Amovin-Assagba,  E.,  Van  Bussel,  L.G.J.,  van
+
+Wart,  J.,  de  Groot,  H.,  van  Ittersum,  M.K.,  Cassman,  K.G.,  Wopereis,  M.C.S.,
+2015b.  Assessment  of  rice  self-sufﬁciency  in  2025  in  eight  African  countries.
+Global  Food  Secur.  5,  39–49.
+
+Van  Wart,  J.,  Grassini,  P.,  Yang,  H.,  Claessens,  L.,  Jarvis,  A.,  Cassman,  K.G.,  2015.
+
+Creating  long-term  weather  data  from  thin  air  for  crop  simulation  modeling.
+Agric.  Forest  Meteorol.  209–210,  49–58.
+
+Vergara,  B.S.,  Chang,  T.T.,  1985.  The  ﬂowering  response  of  the  rice  plant  to
+
+photoperiod.  A  Review  of  Literature.
+
+Weinberg,  J.,  Bakker,  R.,  2015.  Let  them  eat  cake:  food  prices:  domestic  policy  and
+
+social  unrest.  Conﬂict  Management  and  Peace  Science  32,  309–326.
+
+White,  J.W.,  Hoogenboom,  G.,  Stackhouse,  P.W.,  Hoell,  J.M.,  2008.  Evaluation  of
+
+NASA  satellite-  and  assimilation  model-derived  long-term  daily  temperature
+data  over  the  continental  US.  Agric.  Forest  Meteorol.  148,  1574–1584.
+
+White,  J.W.,  Hoogenboom,  G.,  Wilkens,  P.W.,  Stackhouse,  P.W.,  Hoel,  J.M.,  2011.
+Evaluation  of  satellite-based:  modeled-derived  daily  solar  radiation  data  for
+the   continental  united  states.  Agron.  J.  103,  1242–1251.
+
+Wischnath,  G.,  Buhaug,  H.,  2014.  Rice  or  riots:  on  food  production  and  conﬂict
+
+severity  across  India.  Political  Geogr.  43,  6–15.
+
+Yin,  X.,  Kropff,  M.J.,  McLaren,  G.,  Visperas,  R.M.,  1995.  A  nonlinear  model  for  crop
+development  as  a  function  of  temperature.  Agric.  Forest  Meteorol.  77,  1–16.
+
+Young,  A.,  1999.  Is  there  really  spare  land?  A  critique  of  estimates  of  available
+
+cultivable  land  in  developing  countries.  Environ.  Dev.  Sustainability  1,  3–18.
+
+

@@ -1,0 +1,2095 @@
+www.elsevier.com/locate/worlddev
+
+http://dx.doi.org/10.1016/j.worlddev.2012.11.011
+
+Reversing Urban Bias in African Rice Markets: Evidence from Senegal
+
+World Development Vol. 45, pp. 63–74, 2013
+Ó 2012 Elsevier Ltd. All rights reserved.
+0305-750X/$ - see front matter
+
+Africa Rice Center (AfricaRice), Saint-Louis, Senegal
+
+MATTY DEMONT
+
+PIETER RUTSAERT
+
+Ghent University, Belgium
+
+MAIMOUNA NDOUR
+
+Africa Rice Center (AfricaRice), Saint-Louis, Senegal
+
+and
+
+WIM VERBEKE *
+
+Ghent University, Belgium
+
+Summary. — Urban bias constitutes an important institutional impediment to economic development in poor countries. Some African
+governments now recognize that they should invest in agricultural productivity in order to reverse urban bias, but often forget the
+equally important objective of investing in quality tailored to consumers so as to reverse urban bias’ footprint on food markets. We
+conduct framed ﬁeld experiments in two major urban markets in Senegal and ﬁnd that the majority of urban consumers are willing
+to pay quality premiums for local rice suggesting that investment in post-harvest rice quality is a priority in the reversal of urban bias.
+Ó 2012 Elsevier Ltd. All rights reserved.
+
+Key words — West Africa, Senegal, agricultural policy, value chain upgrading, experimental auction, standards
+
+1. INTRODUCTION
+
+Urban bias is one of the largest institutional impediments to
+the competitiveness of food sectors in the world’s poorest
+countries. The term was ﬁrst popularized by Lipton (1977)
+and later deﬁned by Bezemer and Headey (2008) as the “inef-
+ﬁcient and systemic bias against agriculture and the rural
+economy in the allocation of developmental resources” (p.
+1342). Causes of urban bias include (i) the colonial inheritance
+of a dualistic economy; (ii) the fact that externalities to agricul-
+ture are not internalized; and (iii) the existence of severe mar-
+ket failures in agriculture. Agriculture’s beneﬁts are typically
+external to the sector itself and instead accrue to non-agricul-
+tural investors, who gain from low food prices and an ample
+supply of cheap rural labor. Private investors will therefore
+under-invest relative to the social optimum, which justiﬁes a
+role for government intervention in coordinating the develop-
+ment of the food sector (Bezemer & Headey, 2008).
+
+In the African development literature, urban bias of state-
+led eﬀorts during the two decades following independence is
+often discussed in terms of price controls to beneﬁt urban con-
+sumers and the taxation of agriculture in support of industry
+(Moseley, Carney, & Becker, 2010). Urban-biased policies
+responded to a long-term, structural trend toward rice consump-
+tion linked to urbanization. West African consumers have
+been gradually shifting their consumption patterns from
+traditional coarse grains (maize, millet, and sorghum) to
+non-traditional grains (wheat and rice) due to the increasing
+time spent working outside home. Urban working women
+have less time for food preparation and have a tendency
+toward “convenience” sources of calories (Reardon, 1993).
+Urban-biased policies contributed to this trend by encourag-
+ing food imports and their focus on rice was primarily driven
+
+by a desire to satisfy the demands of growing urban popula-
+tions for aﬀordable food rather than as a goal to improve
+the livelihoods of rural producers (Moseley et al., 2010).
+Indeed, both low food prices and cheap rural labor can also
+be obtained—in the short run, at least—from urban-biased
+policies so that investments in agriculture are not always
+perceived as necessary, despite pervasive market failure in this
+sector
+In particular,
+countries where the primary urban center is also a port—for
+instance Senegal’s Port de Dakar, one of the major seaports
+in West Africa, grants easier access to food imports than food
+grown in the country’s hinterland—are more susceptible to
+urban-biased policies than landlocked countries (Saverimuttu
+& Rempel, 2004).
+
+(Binswanger & Deininger, 1997).
+
+At the international level organizations are beginning to rec-
+ognize the need to invest in agriculture. The World Bank
+named its 2008 World Development Report “Agriculture for
+Development,” i.e., for the ﬁrst time in more than two decades
+agriculture is at the center of attention again. Partly, it is a
+reﬂection of the fact that growth in demand for food is outp-
+acing supply and that without development in agriculture,
+reaching Millennium Development Goals on poverty and hun-
+ger will remain elusive (World Bank, 2008). Some African
+countries now recognize that agricultural growth, and hence
+reversal of urban bias, is a precondition to broader growth.
+
+* Financing from the European Union is greatly acknowledged. We are
+grateful to Racky Diop and El Hadj Gueye for their assistance during the
+experiments and Caitlin Costello for proofreading the manuscript. In
+2011, our experimental auctions were reproduced, staged, ﬁlmed, and b-
+roadcasted by French National TV. Final revision accepted: November
+22, 2012.
+
+63
+
+64
+
+WORLD DEVELOPMENT
+
+However, their food self-suﬃciency programs typically focus
+solely on production, with a disregard to the other changes
+that need to complement such measures.
+
+A large body of literature analyzed the eﬀectiveness of
+price policies in reversing the trend from traditional
+local
+grains to wheat and rice (Akindes, 1999; Diagana, Akindes,
+Savadogo, Reardon, & Staatz, 1999; Diagana & Reardon,
+1999; Ju¨ tting, 2000; Kelly, Reardon, Diagana, & Fall, 1995;
+Reardon, 1993; Reardon et al., 1997; Singare et al., 1999).
+In the past, two methods had been advocated to reduce im-
+ports and shift consumption to domestic cereals, i.e., devalu-
+ation and import tariﬀs. Both methods relied on raising the
+price of imported cereals, and assumed that (i) consumers
+would easily and swiftly substitute away from imported rice
+and wheat and toward local coarse grains; and (ii) that it
+would mainly be the richer consumers who would be aﬀected
+by initial price rises (Diagana et al., 1999). Reardon (1993),
+however challenged these assumptions and predicted that
+“rice price increases, induced by protection or devaluation
+or other measures, will hurt the poorest tercile disproportion-
+ately, and reduce the real incomes of all consumers, espe-
+cially in urban areas but also in some rural areas [. . .]
+before the coarse grain processing industry increases its
+capacity and eﬃciency” (p. 30–31).
+
+The 50% devaluation of the CFA Franc in 1994 provided a
+unique test case to observe the impact of an increase—more
+precisely a doubling in this case—of imported rice prices on
+reversal of urban bias, as the latter was an implicit goal of
+the devaluation. However, instead of reducing imported rice
+intake, consumers responded to the devaluation by de-diversi-
+fying their consumption patterns due to non-price attributes
+such as availability and cooking easiness. Both Senegal and
+Coˆ te d’Ivoire—the biggest rice importers endowed with a
+port—actually increased rice imports after devaluation; only
+Burkina Faso and Mali—both landlocked countries and small
+rice importers—had small reductions or stagnation in rice im-
+ports (Diagana et al., 1999). Kelly et al. (1995) further ob-
+served in Senegal that urban households were hit hardest by
+the devaluation because they consume large quantities of im-
+ported rice and do not earn income from peanut exports.
+Hence, the conclusion from this body of research was that
+price policies did not achieve their goal of reversing urban bias
+due to low price response of West-African rice consumers and
+producers.
+
+The crucial question now becomes how to reverse urban bias
+in African rice markets. In order to respond to this question,
+the paper proceeds as follows. After this introduction, in Sec-
+tion 2 we discuss the main challenge in reversing urban bias
+with a special focus on Senegal. In Section 3 we design a set
+of framed ﬁeld experiments followed by an econometric ap-
+proach in order to analyze this challenge in the case of Sene-
+gal. Section 4 analyzes the data and reports the results.
+Section 5 draws a set of policy recommendations from the pre-
+vious sections and Section 6 concludes.
+
+2. REVERSING URBAN BIAS
+
+The literature reviewed above advances the proposition that
+policies should target intrinsic, non-price characteristics of
+rice. In the early 1990s agricultural economists recommended
+R&D in quality and processing and generic promotion of local
+coarse grains as alternatives to imported rice and wheat
+(Boughton & Reardon, 1997; Kennedy & Reardon, 1994).
+Remarkably, these aspects have been largely ignored in the
+policy debate on local rice, a critique which was already raised
+
+in the 80s by Ross (1983) when criticizing one of the most
+comprehensive books on policy and economics of rice in West
+Africa (Pearson et al., 1981): “The authors do not discuss the
+problem of consumer tastes and responsiveness to the locally
+grown varieties which would replace rice imports. This issue
+is particularly important in Senegal” (p. 336).
+
+While total food production in Senegal has doubled since
+the 1960s, per capita food production has fallen by almost
+50% as it could not keep pace with the country’s high level
+of population growth (Bru¨ ntrup, Nguyen, & Kaps, 2006). Sen-
+egal is the third-largest rice importer in Africa, after Nigeria
+and Coˆ te d’Ivoire (USDA, 2011, 2012). Its high dependence
+on imported rice renders the country vulnerable to interna-
+tional market shocks with severe consequences on food secu-
+rity and political stability, as witnessed during the 2008 food
+crisis (Becker & Yoboue´, 2009; Moseley et al., 2010; Seck,
+Tollens, Wopereis, Diagne, & Bamba, 2010).
+
+Even more problematic is the fact that more than half a cen-
+tury of urban-biased policies and cheap rice imports have
+shaped urban Senegalese consumer patterns. Rice imports into
+Senegal, particularly, consist almost entirely of broken rice. In
+international markets, broken rice is considered an inferior
+product and is therefore cheaper than whole-grain rice. Dur-
+ing the colonial period under the French administration, cheap
+broken rice from Asia was imported in large quantities in or-
+der to keep food prices under control and at the same time
+promote groundnut production as an important cash crop.
+The import policy remained unchanged after independence
+in 1960. Senegal continued to export groundnuts but argued
+that industrialization would oﬀer better prospects for eco-
+nomic development. Senegal has almost no natural resources
+of its own so cheap labor was essential to achieve industriali-
+zation. Cheap labor relies on cheap food and import was the
+easiest way to ensure cheap food (Bru¨ ntrup et al., 2006). Polit-
+ically, urban dwellers were and still are the most important
+voters in post-colonial West Africa; policies that promote local
+food production through price increases and import reduction
+almost always encounter heavy resistance (Moseley et al.,
+2010).
+
+Many attempts have been undertaken by the Government of
+Senegal and donors in order to reverse urban bias. The most
+recent one is the GOANA program (Grand Oﬀensive in Agri-
+culture for Food and Abundance), launched in April 2008 by
+former Senegalese President Abdoulaye Wade (Diagne,
+Demont, Seck, & Diaw, 2013). The goal of the program is
+to make Senegal self-suﬃcient in food by 2015, notably by irri-
+gating and cultivating unused land near the Senegal River Val-
+ley (SRV) and ramping up the production of rice, the staple
+food for millions of Senegalese (Ministe`re de l’Agriculture et
+de l’Elevage, 2008). However, despite past and current pro-
+grams, in 2010–2011 available domestic rice production still
+covered only 39% of domestic demand (ANSD, 2011). The
+problem is that similarly to past programs, GOANA almost
+exclusively focuses on area expansion and production. In
+November 2008, 6 months after the price spikes, local rice
+prices sharply eroded in the SRV when rice farmers were
+bringing the surplus generated by the GOANA program to
+market (Demont & Rizzotto, 2012). If the surplus is not timely
+and suﬃciently picked up by consumers, some of the invest-
+ment eﬀorts and production incentives are lost due to eroded
+prices (Barrett, 2008). Hence, by ignoring the integral compo-
+nents further downstream in the supply chain like processing
+and marketing, some of the upstream investment eﬀorts may
+not yield the anticipated return due to ineﬃciency losses, jeop-
+ardizing the national objective of combating import depen-
+dency and food insecurity.
+
+REVERSING URBAN BIAS IN AFRICAN RICE MARKETS: EVIDENCE FROM SENEGAL
+
+65
+
+400
+
+360
+
+320
+
+280
+
+240
+
+200
+
+160
+
+120
+
+80
+
+40
+
+/
+
+)
+g
+k
+A
+F
+C
+F
+(
+ 
+s
+e
+c
+
+i
+r
+p
+e
+c
+
+ 
+
+i
+r
+ 
+l
+
+a
+u
+n
+n
+A
+
+0
+1997
+
+1998
+
+1999
+
+2000
+
+2001
+
+2002
+
+2003
+
+2004
+
+2005
+
+2006
+
+2007
+
+2008
+
+2009
+
+2010
+
+2011
+
+Imported broken rice price
+
+Year
+Conventional SRV rice price
+
+Price gap (%)
+
+100%
+
+90%
+
+80%
+
+70%
+
+60%
+
+50%
+
+40%
+
+30%
+
+20%
+
+10%
+
+0%
+
+2012
+
+Figure 1. Evolution of annual retail prices of imported broken rice and SRV rice and price gap in Saint-Louis, 1997–2012 (CSA, 2012).
+
+Senegalese policy makers now face the remaining eﬀects of
+the historical urban bias in their rice markets; i.e., consumers
+have assimilated imported rice in their consumption patterns
+and even have developed a marked preference for it. Figure 1
+shows the evolution of annual retail prices for imported bro-
+ken rice and conventional SRV rice and the relative price
+gap between both from 1997 to 2012. 1 In May 2008, world
+rice prices tripled in just a few months’ time to reach a higher
+plateau due to underlying structural trends. The graph further
+suggests that Senegalese consumers consistently pay price pre-
+miums averaging 15% for imported broken rice relative to
+conventional SRV rice. We observe that the relative price
+gap is positively correlated with rice prices, i.e., when the
+latter rise the gap widens and when the latter decline the gap
+narrows. This imperfect price transmission suggests that
+both rice types are perceived by consumers as imperfect
+substitutes. Hence, before urban bias can be reversed, eﬀorts
+will be needed in order to reverse its footprint on rice markets
+ﬁrst.
+
+Some advocate that the reason urban consumers continue to
+prefer imported rice is due to the inferior post-harvest grain
+quality of local rice which is notorious for its heterogeneous
+grain size composition and impurity (Seck et al., 2010). How-
+ever, Batra, Ramaswamy, Alden, Steenkamp, and Ramac-
+hander (2000)
+found that—for reasons that go beyond
+quality—some consumers in less developed economies attitu-
+dinally prefer products perceived as having a non-local origin
+to products seen as local. Indeed, evidence supports the idea
+that products from less developed economies are generally per-
+ceived to be lower in quality, and associated with a larger risk
+of dissatisfaction (Batra et al., 2000; Ehmke, Lusk, & Tyner,
+2008). This suggests that country of origin not only serves as
+a quality halo or summary of product quality (Han, 1989),
+but also possesses an additional dimension of “foreignness”
+that contributes to attitudinal liking for status-enhancing rea-
+sons, a general phenomenon reported in African developing
+economies (e.g., Arnould, 1989; Friedman, 1990; Opoku &
+Akorli, 2009).
+
+The fundamental question for policy makers in the reversal
+of urban bias’ footprint on Senegal’s rice markets—and the
+main motivation of this article—is whether Senegalese urban
+consumers prefer imported rice for its superior post-harvest
+grain quality or for its “foreignness.” In other words, does
+the persistent preference gap revealed through market prices
+(Figure 1) purely reﬂect diﬀerences in quality or is it driven
+by perceived diﬀerences in image of the product and its origin
+and rigid consumption patterns? If only the ﬁrst factor was at
+work, urban bias’ footprint could be reversed through invest-
+ment in quality upgrading alone; if multiple factors were at
+work, reversing urban bias would require additional invest-
+ments in branding, generic advertising and promotion.
+
+Recent events in the SRV provide a potentially interesting
+test case to assess whether urban bias’ footprint on Senegalese
+rice markets can be reversed through investments in quality
+and branding. In 2007, a quality rice brand RivalÒ (Riz de la
+Valle´e) was introduced in the SRV by the Oxfam-funded plat-
+form PINORD (Platforme d’appui aux Initiatives du Nord),
+which governs quality at all stages of the production process
+and provides micro-ﬁnancing to “rural micro-enterprises”
+(RMEs). However, the product was only available in limited
+quantities in rural areas in the SRV, a few urban consumption
+centers (Louga, Kaolack, and Touba) and some Oxfam bou-
+tiques in Dakar during the period 2007–2011. In other words,
+it never managed to gain substantial market share on the mar-
+kets of Saint-Louis, let alone Dakar. 2 Hence, it remains to be
+seen whether and how much urban consumers are willing to
+pay for an emerging product such as quality rice branded
+through a local origin label.
+
+Fall and Diagne (2008) conducted a ﬁrst attempt to estimate
+the willingness-to-pay (WTP) for SRV rice through a stated
+preference survey including 500 households in Senegal. How-
+ever, the crucial question is not how much consumers are will-
+ing to pay for local rice. Such preferences are revealed on the
+market through the price premiums they are willing to pay for
+imported rice (Figure 1). The question is whether they are will-
+ing to pay similar price premiums for local rice if labeled as
+
+66
+
+WORLD DEVELOPMENT
+
+such and if quality is tailored to urban consumer standards.
+Moreover, Harrison and Rutstro¨ m (2008) demonstrate that
+in stated preference methods participants typically overstate
+their WTP. Hence, to answer this question while reducing po-
+sitive bias, we conduct framed ﬁeld experiments based on auc-
+tion markets designed to elicit consumers’ revealed WTP for
+the quality attributes of rice and to empirically test whether ur-
+ban bias can be reversed in urban rice markets in Senegal. Be-
+cause real products and real money are exchanged in
+experimental auctions, participants have increased incentives
+to reveal their true value for the attributes under research. 3
+
+3. DATA AND METHODOLOGY
+
+(a) Framed ﬁeld experiments
+
+We conducted framed ﬁeld experiments 4 in two major ur-
+ban consumption zones, i.e., the capital Dakar, close to the
+port and far from the rice production zones, and Saint-Louis,
+the former capital and major urban pole in the rice production
+zone of the SRV. The experiments were carried out during
+November 2008–February 2009. Each experiment
+lasted
+5 days during which 10 experimental auction sessions were
+conducted, each day one in the morning and one in the after-
+noon. The market segment targeted in our consumer experi-
+ment was female rice shoppers as women are the major
+decision makers in households’ rice purchases in Senegal
+(USAID, 2010) as well as in other rice consuming West-
+African countries (Demont et al., 2012, 2013). The experi-
+ments took place in two urban community centers, one at
+500 m from the central market in Saint-Louis, and one on
+the Tile`ne market, the primary market for local rice in Dakar
+(USAID, 2010). For each session, 10 women were randomly
+selected and recruited on the spot, most of whom were going
+to or returning from the market. In order to include a random
+factor during sampling, every third female passer-by with an
+estimated age between 18 and 65 was approached. We told
+participants they were going to participate in a two-hour mar-
+ket test and receive a participation fee of 3000 FCFA ($6) “for
+their taxi back home.” The latter pretext is commonly used in
+Africa to detach pecuniary endowments from their “gift” or
+“payment-for-service” context. It elegantly avoids the fee
+being seen as a quid pro quo for which participants should
+reciprocate (Lusk & Shogren, 2007), and which may bias the
+bids (Loureiro, Umberger, & Hine, 2003).
+
+We ran three auctions simultaneously and used the endow-
+and-upgrade method with a ﬁxed benchmark following
+Melton, Huﬀman, Shogren, and Fox (1996) and Roosen,
+Fox, Hennessy, and Schreiber (1998). Each participant was en-
+dowed with 1 kg of a “benchmark” rice and was presented
+three times with the option to exchange this kilogram into
+an alternative rice type. Lusk, Feldkamp, and Schroeder
+(2004) noticed a diﬀerence in participants’ bids between multi-
+ple-good and single-good valuation. We follow Alfnes and
+Rickertsen (2003) who argue that bidding on all alternatives
+simultaneously is an eﬃcient method for eliciting WTP diﬀer-
+ences.
+
+We purposely selected a “benchmark” rice and three alter-
+native rice types available in the SRV such that they diﬀered
+only in a bundle of quality attributes which are relevant to rice
+value chain upgrading (Demont & Rizzotto, 2012; Demont
+et al., 2013): (i) conventional SRV rice (benchmark), (ii) unla-
+beled and (iii) labeled (RivalÒ) enhanced-quality SRV rice, and
+(iv) labeled imported Thai rice. The benchmark is the standard
+rice type which can be commonly found on the Saint-Louis
+
+market (lower price curve in Figure 1) and is characterized
+by a heterogeneous grain quality and a high level of foreign
+matter (stones, husks, and dust). In terms of quality and price,
+it is inferior to the three alternatives in the auction. The Thai
+broken rice is the most commonly found imported rice type on
+the market and has a grain quality somewhere between the
+benchmark and the enhanced-quality SRV rice and contains
+some impurities. The unlabeled and labeled rice types are iden-
+tical, i.e., enhanced-quality SRV rice (Sahel 108 variety) which
+was puriﬁed, carefully sifted, and branded and marketed as
+RivalÒ. We presented the four rice types in four bags on a pre-
+sentation table in the front part of a closed conference room in
+the community center. Only the Thai and RivalÒ bags on the
+presentation table were branded; the other rice types were pre-
+sented in plain white bags. We told participants that rice types
+(i), (ii), and (iii) were local and (iv) was imported. The rice
+types were also presented on the participants’ tables in four
+dishes, each one containing 1 kg of uncooked rice of each
+type. Hence, the diﬀerence between (i) and (ii) is grain quality
+(purity and homogeneity), the diﬀerence between (ii) and (iii)
+is the mere presence of a local origin label and the diﬀerence
+between (i) and (iv) is grain quality (purity and homogeneity)
+and a foreign origin label.
+
+We chose the Vickrey (1961) second-price auction mecha-
+nism, because of its weakly dominant strategy for the partici-
+pants to bid their true value for the good. Shogren, Margolis,
+Koo, and List (2001) suggest that the random nth price auc-
+tion works better for oﬀ-margin bidders than the second price
+auction. However, in our context of low education levels (see
+below) and high illiteracy, 5 we preferred the second-price auc-
+tion mechanism, as it is easier to understand by the partici-
+pants. We did not use any manuals or monitors and
+conducted the experiment verbally in the national languages
+Wolof with translations to French and Pulaar when necessary.
+During the experiment, participants could examine the visual
+(purity and homogeneity) and sensory (taste and aroma) qual-
+ity attributes of the uncooked rice types.
+
+We paid considerable attention to explaining the mechanism
+and training participants in its procedure. Following Shogren,
+Shin, Hayes, and Kliebenstein (1994), we used commonly
+known brands of biscuits to familiarize the participants with
+the Vickrey auction. Each participant received a small package
+of biscuits and was asked to bid on two alternative, superior
+types of biscuits. We conducted two rounds with an evaluation
+after each round to check whether all participants understood
+the system or whether more clariﬁcation was needed. We
+learned from the trial session that WTP diﬀerence estimates
+were more reliable after “calibration”; i.e., before the ﬁrst bid-
+ding round we mentioned the absolute market price of the
+benchmark rice (see further), but did not reveal, and asked
+the participants not to reveal, any price information on the
+alternative rice types. Secondly, we used the analogy of buying
+new jewelry in exchange for old jewelry, where only the price
+for “upgrading” is paid, a buying method commonly applied
+by Senegalese women in the jewelry market. Both calibration
+and the use of an analogy considerably accelerated the learn-
+ing process of the endow-and-upgrade method.
+
+Harrison, Harstad, and Rutstro¨ m (2004) state that multiple
+trials with posted prices may inﬂuence bids and advise using
+just one round of bidding or multiple trials without posting
+prices. In the biscuit trials we posted prices to explain the auc-
+tion mechanism, but during the rice auctions we did not reveal
+any bidding information. We conducted two bidding rounds
+separated by a within-subjects treatment in the form of a
+sensory test, aimed at assessing the impact of post-cooking
+quality attributes on WTP. During the sensory test, each
+
+REVERSING URBAN BIAS IN AFRICAN RICE MARKETS: EVIDENCE FROM SENEGAL
+
+67
+
+participant was presented four dishes with cooked samples of
+the four rice types and was asked to taste the rice types and
+rinse her mouth between each tasting. This allowed partici-
+pants to experience the sensory quality attributes (aroma,
+taste, texture, and stickiness) and observe the swelling capacity
+of the cooked rice types. To ensure equal sensory experience,
+the rice representing unlabeled and RivalÒ rice was served
+from the same cooking pot. At the end of the two rounds,
+analogously to Roosen et al. (1998), we randomly selected
+one product and one bidding round as binding. We explicitly
+stated this during our introduction to avoid the substitution
+eﬀect that could arise if participants could win more than
+one product, which could in turn compromise bidding their
+true value for the products. Finally, at the end of the experi-
+ment we conducted a short survey through a one-page ques-
+tionnaire to collect socio-demographic data. We planned the
+survey after the auction experiment to avoid revealing too
+much about the study’s objectives (Corrigan & Rousu, 2008).
+
+(b) Methodology for analyzing the determinants of WTP
+
+Haines, Guilkey, and Popkin (1988) argue that food con-
+sumption decisions should be modeled as a two-stage process.
+Participants ﬁrst decide whether they are willing to upgrade
+their endowed kilogram of rice or not and if yes, they decide
+next how much they are willing to add for the new product.
+The double hurdle model introduced by Cragg (1971) correctly
+represents this two-stage decision process.
+
+Let mijpr be the variable representing the desirability of
+upgrading an endowed kilogram of rice and let WTPijpr be
+the amount spent on the purchase by the ith consumer
+(i = 1, . . ., 10) in the jth session (j = 1, . . ., 10) for the pth rice
+type (p = imported, non-labeled, labeled) in the rth bidding
+round (r = 0 before tasting, r = 1 after tasting):
+ð1Þ
+mijpr ¼ a0xijpr þ uij þ vijpr
+ð2Þ
+WTP ijpr ¼ a0xijpr þ uij þ vijpr
+where xijpr is a vector of independent variables including two
+product dummy variables (imported and labeled) identifying
+the three alternative rice types (unlabeled is set as the refer-
+ence), a dummy variable for the bidding round, the time of
+the day (1 = morning; 0 = afternoon), a dummy variable for
+the market (1 = Saint-Louis; 0 = Dakar) and a vector of so-
+cio-demographic variables xv (v = 1, . . ., s = 14), a is a con-
+formable vector of coeﬃcients, uij is an individual speciﬁc
+disturbance for participant i in session j, and vijpr is the overall
+error term.
+
+Following Cragg (1971), WTPijpr is the consumers’ bid to
+upgrade the mediocre-quality benchmark rice to any of the
+three alternatives. The ﬁrst hurdle is the consumer’s decision
+of whether or not to pay for the three alternatives. The prob-
+ability of the respondent choosing not to bid a positive
+amount (WTPijpr = 0) is expressed by:
+ProbðWTP ijpr ¼ 0Þ ¼ Uð a1xijprÞ
+ð3Þ
+where U is the standard normal density function. The second
+hurdle determines the eﬀect of independent variables on
+WTPijpr, given WTPijpr > 0. The distribution of WTPijpr con-
+ditional on being positive is truncated at zero and assumed
+normal with mean a0
+2xijpr and variance r2. The second hurdle
+is formulated as:
+fðWTP ijprjWTP ijpr > 0Þ ¼ ð1=rÞU½ðWTP ijpr   a0
+2xijpr=rÞ
+
+2xijprÞ=r
+
+Uða0
+
+ð4Þ
+
+where U is the standard normal density function and a2 is a
+vector of coeﬃcients.
+
+4. RESULTS
+
+(a) Descriptive statistics
+
+Table 1 reports some key summary statistics of the socio-
+demographic characteristics of the two samples of female rice
+shoppers. With the exception of three socio-demographic vari-
+ables, i.e., household size, group membership, and awareness,
+the Dakar and Saint-Louis samples do not signiﬁcantly diﬀer.
+Women were on average 37 years old. The majority had com-
+pleted primary school or had not followed any formal educa-
+tion. 6 A third of the women were small traders, a quarter were
+employed, and the rest were housewives or students. The aver-
+age monthly household earnings were more than 150,000
+FCFA (US$300) and a quarter of the women had a cooking
+housemaid. The average time spent on dinner preparation,
+including going to the market, preparation, and actual cook-
+ing, was more than four hours each day. Household sizes
+and group membership rates were signiﬁcantly smaller in Da-
+kar than in Saint-Louis, probably due to the more individual-
+istic lifestyle prevailing in the capital compared to the more
+traditional northern provincial towns. Finally, awareness of
+the existence of enhanced-quality SRV rice was signiﬁcantly
+higher in Saint-Louis (82%) than in Dakar (53%), which is
+in line with the survey of Fall, Fall, Gningue, Ndir, and Ndour
+(2007) who observed that the awareness of local rice is quite
+high in the areas close to production zones.
+
+(b) Determinants of WTP
+
+Table 2 displays and compares the mean bids among the rice
+types in Saint-Louis and Dakar before and after the sensory
+test. Due to the use of the endow-and-upgrade method, bids
+have to be interpreted as diﬀerences in WTP between the
+benchmark rice, priced at 300 FCFA/kg (US$0.60/kg) during
+the period of November 2008–February 2009, and an alterna-
+tive rice type. Due to the mass of bids of zero FCFA, we also
+calculated the mean of all positive bids. Average individual
+positive bids ranged from 86 to 165 FCFA/kg (US$0.17–
+0.33/kg), depending on the product, the market, and the bid-
+ding round. They drop after the sensory test while at the same
+time the number of zero bids increases. Mean post-sensory
+bids for imported rice in Saint-Louis suggest price premiums
+of 18% relative to the benchmark SRV rice, which are consis-
+tent with the premiums observed on the Saint-Louis market
+averaging 15% (Figure 1). The data further suggest that, if
+quality is enhanced and tailored to consumers, price premiums
+for SRV rice may be twice as large (30–34%) on this market.
+Price premiums seem to be lower in Dakar.
+
+Results of the double hurdle model are presented in Table 3.
+The ﬁrst column shows the eﬀect of rice characteristics and
+consumer demographics on the probability that the consumer
+will upgrade conventional SRV rice to enhanced-quality rice,
+while the determinants of the WTP to upgrade conventional
+SRV rice to enhanced-quality rice are presented in the second
+column. The results reveal four major ﬁndings with important
+policy and marketing implications which are discussed in Sec-
+tion 5. First, participants were 43% more likely to upgrade to
+quality SRV rice than to imported rice, which they further dis-
+counted by 45 FCFA/kg (US$0.09/kg). They were further
+willing to add a small price premium of 17 FCFA/kg
+for RivalÒ, compared to unlabeled quality
+(US$0.03/kg)
+
+68
+
+WORLD DEVELOPMENT
+
+Table 1. Descriptive statistics of female rice shoppers’ socio-demographic characteristics in the sample
+
+Variable
+
+Description
+
+Age (years)
+
+Age
+Household income Monthly income (1000 FCFAa)
+Household size
+Cooking housemaid
+Information
+Group membership
+Trader
+Housewife
+Employed
+Student
+Daily
+Education
+Higher education
+Indigenous
+Cooking time
+Awareness
+
+Number of individuals in household
+1 = has a cooking housemaid; 0 = otherwise
+1 = received information on SRV rice; 0 = otherwise
+1 = member of a group; 0 = otherwise
+1 = trader as profession; 0 = otherwise
+1 = housewife; 0 = otherwise
+1 = employed; 0 = otherwise
+1 = student; 0 = otherwise
+1 = daily rice purchase; 0 = otherwise
+0 = none; 1 = primary; 2 = secondary; 3 = tertiary
+1 = secondary and tertiary; 0 = otherwise
+1 = indigenous (Wolof, Pulaar); 0 = otherwise
+Total time (h) spent on preparing lunch (going to the market, preparation and cooking)
+1 = awareness of local quality rice; 0 = otherwise
+No. of participants
+
+Saint-Louis
+
+Dakar
+
+Mean
+
+SD Mean
+
+SD
+
+11.99
+110
+5.44
+0.39
+0.50
+0.50
+0.47
+0.46
+0.41
+0.24
+0.44
+1.11
+0.45
+0.42
+1.10
+0.38
+
+36.60
+145
+10.23
+0.18
+0.58
+0.46
+0.32
+0.30
+0.21
+0.06
+0.27
+1.18
+0.27
+0.77
+4.30
+0.82b
+99c
+
+38.26
+170
+8.60*
+0.29
+0.65
+0.22*
+0.33
+0.26
+0.27
+0.09
+0.26
+1.51
+0.38
+0.66
+4.06
+0.53*
+100
+
+11.85
+112
+4.48
+0.45
+0.48
+0.42
+0.47
+0.45
+0.45
+0.14
+0.44
+1.31
+0.49
+0.48
+1.10
+0.50
+
+* Denotes statistical signiﬁcance of the diﬀerence at the 5% level based on a t-test.
+a The exchange rate during November 2008–February 2009 was US$1 = 502 FCFA.
+b Based on a sample size of 79 participants as during the ﬁrst two sessions in Saint-Louis this question was not yet included.
+c One of the women participated twice, thus we canceled the results of her second participation.
+
+Table 2. Descriptive statistics of consumers’ WTP to upgrade conventional SRV rice to alternative rice types
+
+Rice type
+
+Saint-Louis
+
+Dakar
+
+Mean of all bids (FCFA)
+
+Positive bids (%)
+
+Mean of positive bids (FCFA)
+
+Pre-sensory
+
+Post-sensory
+
+Pre-sensory
+
+Post-sensory
+
+Mean
+
+68
+125
+132
+
+51
+81
+80
+
+134
+155
+165
+
+SD
+
+97
+109
+116
+
+98
+100
+107
+
+Mean
+
+53
+90
+103
+
+43
+70
+67
+
+122
+129
+154
+
+SD
+
+80
+91
+117
+
+80
+83
+112
+
+Mean
+
+30
+97
+114
+
+29
+80
+83
+
+104
+122
+136
+
+SD
+
+57
+85
+89
+
+62
+78
+80
+
+Mean
+
+22
+78
+88
+
+26
+67
+72
+
+86
+116
+123
+
+SD
+
+46
+82
+84
+
+52
+74
+74
+
+Imported
+Unlabeled
+Labeled
+
+Imported
+Unlabeled
+Labeled
+
+Imported
+Unlabeled
+Labeled
+
+The price of
+US$1 = 502 FCFA.
+
+the benchmark rice was about 300 FCFA/kg (US$0.60/kg) during November 2008–February 2009 at an exchange rate of
+
+SRV rice. If we calibrate these econometric coeﬃcients to mar-
+ket prices, we ﬁnd that urban consumers are willing to pay
+price premiums of 35% for quality rice and 41% for branded
+quality rice such as RivalÒ. 7 The price of RivalÒ at the level
+of the milling factories in the SRV (at 50 km from Saint-
+Louis) was 300 FCFA/kg (US$0.60/kg) in 2008–2009. Given
+that manual cleaning, puriﬁcation, and homogenization of rice
+was done at the Saint-Louis market at 7–13% of the price of
+conventional SRV rice, our econometric results suggest that
+value chain initiators have some price ﬂexibility for introduc-
+ing branded quality SRV rice on urban Senegalese markets
+and capturing part of the consumer surplus, particularly in
+Saint-Louis where quality premiums are 50 FCFA (US$0.10/
+kg) higher than in Dakar (Table 3).
+
+Secondly, the likelihood of upgrading from the benchmark
+rice to any of the alternative rice types is 13% lower after tast-
+ing and the WTP drops at the same time with 25 FCFA/kg
+(US$0.05/kg). Several participants told us that if it is eaten
+
+without any supplements, the benchmark rice tastes better be-
+cause of its mixed grain (broken, intermediate, and long) com-
+position. Some of
+the participants considered the mixed
+composition as a plus because through sifting, they can obtain
+diﬀerent grain types from a single rice product. Moreover, as
+this rice type needs to be puriﬁed before cooking, it was less
+discounted in cooked form than in non-cooked form. This
+ﬁnding indicates the existence of a price sensitive market seg-
+ment of consumers with limited time constraints who may pre-
+fer the cheap mediocre-quality rice, despite the additional
+work it involves during preparation. After all, we must not
+forget that in Saint-Louis a large part of the population has
+been exposed to the benchmark rice for a very long time and
+is used to its visual, sensory, and cooking characteristics.
+However, although it performs well when consumed without
+supplements, it is important to note that the heterogeneous
+grain quality of the benchmark rice is less suitable for ce´e´bu
+je¨n (literally “rice with ﬁsh”), the most important dish in
+
+REVERSING URBAN BIAS IN AFRICAN RICE MARKETS: EVIDENCE FROM SENEGAL
+
+69
+
+Table 3. Determinants of consumers’ WTP to upgrade conventional SRV rice to alternative rice types
+
+Independent variables
+
+First hurdle: probability of upgrading
+
+Morning
+Importedb
+Labeledb
+Post-tasting
+Saint-Louis
+Awareness
+Age
+Household income
+Household size
+Indigenous
+Higher education
+Daily
+Employed
+Trader
+Housewife
+Student
+Cooking housemaid
+Cooking time
+Group membership
+Constant
+Sigmac
+Log pseudolikelihood
+No. of observations
+
+SEa
+
+0.149
+0.103
+0.060
+0.073
+0.163
+0.170
+0.007
+0.001
+0.017
+0.166
+0.166
+0.180
+0.394
+0.378
+0.381
+0.450
+0.183
+0.062
+0.172
+0.580
+
+Coeﬃcient
+0.486***
+ 1.153***
+0.037
+ 0.338***
+ 0.123
+0.440***
+ 0.018***
+ 0.001
+ 0.007
+ 0.040
+0.391**
+ 0.084
+ 0.356
+ 0.251
+ 0.378
+ 0.314
+ 0.012
+0.029
+0.152
+1.249**
+ 581.504
+
+1068
+
+Marginal eﬀect
+
+0.183***
+ 0.433***
+0.014
+ 0.128***
+ 0.047
+0.170**
+ 0.007***
+ 0.000
+ 0.003
+ 0.015
+0.144**
+ 0.032
+ 0.138
+ 0.096
+ 0.146
+ 0.123
+ 0.005
+0.011
+0.057
+
+ 3643.843
+
+640
+
+Second hurdle: amount paid
+SEa
+
+Coeﬃcient
+
+15.293
+
+ 44.652***
+17.159***
+ 25.046**
+49.848*
+ 4.937
+ 0.781
+0.033
+1.097
+ 24.979
+ 19.564
+ 0.848
+17.749
+34.893
+31.202
+44.200
+30.713
+0.721
+ 9.872
+89.965
+
+100.400***
+
+17.168
+12.415
+6.183
+11.166
+21.897
+17.866
+0.759
+0.093
+1.912
+18.910
+21.462
+19.104
+28.409
+28.917
+27.327
+39.574
+23.333
+9.235
+19.724
+54.951
+8.661
+
+the benchmark rice was about 300 FCFA/kg (US$0.60/kg) during November 2008–February 2009 at an exchange rate of
+
+The price of
+US$1 = 502 FCFA.
+a Standard errors are robust and cluster corrected.
+b The coeﬃcient of this dummy has to be interpreted as relative to the reference, i.e., unlabeled rice.
+c Sigma is the error variance.
+* Denotes statistical signiﬁcance at the 10% level.
+** Denotes statistical signiﬁcance at the 5% level.
+*** Denotes statistical signiﬁcance at the 1% level.
+
+Senegal which is based on 100% broken rice (Dieng, 2012). In
+other words, by not including any supplements our sensory
+test may have favored grain heterogeneity, while grain homo-
+geneity is the dominant quality criterion in Senegal due to the
+importance of the national ce´e´bu je¨n dish (Fall et al., 2007).
+
+Thirdly, conducting the experiment in the morning increases
+the buying probability by 18%. Our results are consistent with
+similar ﬁndings in Benin (Demont et al., 2012), and suggest
+that time of day aﬀects valuation of rice in the Senegalese con-
+text. For most participants, the morning sessions meant an
+interruption in their daily routine of going to the market
+and preparing ce´ e´ bu je¨n for lunch (Fall et al., 2007; USAID,
+2010). Those still having rice purchases in mind, may value
+rice more than those in the afternoon who just had their lunch
+and completed all daily rice purchases in the morning. 8
+
+Finally and most importantly for marketing research is our
+ﬁnding that consumers familiar with enhanced-quality SRV
+rice were 17% more likely to purchase it; those unfamiliar with
+its characteristics were signiﬁcantly more reluctant to buy it.
+Heinemann, Behrens, and Lanfer-Marquez (2006) found sim-
+ilar evidence in Brazil; the majority of consumers in Sa˜o Paulo
+did not reject the parboiled rice solely based on its sensory
+properties, but for not being familiar with it and so, unaware
+of its characteristics and advantages. Moreover, in our sample
+younger and more educated women were more likely to try out
+enhanced-quality SRV rice than older and less educated wo-
+men. A parallel can be drawn with classical ﬁndings in the
+adoption literature showing that younger and better educated
+farmers have a higher likelihood to adopt new technologies
+(e.g., Chianu & Tsujii, 2005; Demont & Stessens, 2009).
+
+5. POLICY RECOMMENDATIONS
+
+(a) Investment in post-harvest rice quality tailored to urban
+
+consumer standards
+
+In Section 1, we advanced the proposition that research ef-
+forts should be directed to non-price characteristics of rice.
+Our ﬁeld experiments have shown that the majority of Sene-
+galese consumers are willing to pay quality premiums for local
+rice and are further adding premiums for a local rice brand.
+This suggests that the persistent consumer preferences for im-
+ported rice observed on the market (Figure 1) have less to do
+with the product’s foreignness (Opoku & Akorli, 2009) than
+with its superior post-harvest grain quality (Seck et al.,
+2010). Owing to a large percentage of foreign matter and
+low levels of post-harvest grading and sorting, local rice fails
+to meet expectations concerning reduced workload and time
+spent on sorting and cooking rice, and hence falls short rela-
+tive to imported rice in this convenience dimension. The main
+policy lesson that can be drawn from these ﬁndings is that the
+ﬁrst priority in the reversal of urban bias’ footprint on Sene-
+galese rice markets is the investment in post-harvest quality
+tailored to urban consumer standards. Very little research
+has been conducted on non-price characteristics, consumer
+preferences and response to quality of rice in West Africa
+(Demont et al., 2012, 2013; Tomlins, Manful, Gayin,
+Kudjawu, & Tamakloe, 2007; Tomlins, Manful, Larwer, &
+Hammond, 2005). Unnevehr (1986) observed high returns to
+research for quality-enhancing R&D in Southeast Asia, which
+is consistent with evidence from Benin and Nigeria revealing
+
+70
+
+WORLD DEVELOPMENT
+
+that quality is important in the demand for rice, even for the
+poor (Demont et al., 2012; Erhabor & Ojogho, 2011).
+
+We can categorize rice quality criteria in three main groups:
+(i) physical characteristics of the grain (form, length, and col-
+or), (ii) market presentation (cleanliness, absence of outer
+corps, aroma, degree of breaking, and price), and (iii) post-
+cooking and sensory characteristics (swelling capacity, taste,
+texture, and cohesion of the grains after cooking). Surveys re-
+veal that the most important consumer determinants for rice
+in Senegal are taste, swelling capacity, ease of cooking, and
+the form of the grain (Fall & Diagne, 2008; Fall et al., 2007;
+USAID, 2010). But also proper post-harvest processing can
+add value to the product and is important for consumers;
+cleanliness, absence of outer corps, and grain homogeneity
+were consistently mentioned as important criteria. Price, in
+contrast, had a limited inﬂuence on consumer preferences,
+which is consistent with the literature reviewed in the Intro-
+duction.
+
+Consumers’ pre-sensory bids suggest that there are two ma-
+jor market segments of rice consumers: (i) a segment of older,
+less educated, and less aware (Table 3) “non-upgraders,” i.e.,
+consumers who prefer conventional SRV rice to all upgrades
+(14% of the population); and (ii) a segment of younger, more
+educated, and more aware consumers who are willing to up-
+grade from conventional to any rice with superior quality
+(86% of population). Of this second market segment, more
+than half of the consumers (47% of population) are no longer
+willing to upgrade to imported rice after being exposed to
+quality SRV rice, while almost no consumers (1% of popula-
+tion) are only willing to upgrade to imported rice and not to
+quality SRV rice. These results are strikingly similar to ﬁnd-
+ings in Ghana and suggest that they may be applicable to a
+wider range of rice-producing countries in West-Africa. Tom-
+lins et al. (2005), for example, observed that although 86% of
+Ghanaian consumers preferred imported rice to that produced
+locally (similar to our second market segment), due to the
+poor quality of local rice, there exists a niche market segment
+of 14% of older consumers with a clear preference for tradi-
+tional local rice (similar to our ﬁrst market segment). They ar-
+gued that improved local rice might appeal more to younger
+consumers who are most demanding with respect to quality
+(similar to the consumers in our second market segment).
+
+The average quality premium of 35% elicited through our
+experiments indicates that investment in post-harvest quality
+tailored to urban consumer standards can render local SRV
+rice competitive with imported rice. Post-harvest quality infra-
+structure is currently insuﬃcient in order to meet the demand
+for quality rice; most quality rice is currently obtained through
+manual, post-harvest operations (cleaning, sifting, and sort-
+ing). Areas of investment that need attention are enhanced
+(i) milling, (ii) cleaning, (iii) sorting, and (iv) drying infrastruc-
+ture. Our experimental data show that investors in rice value
+chain upgrading have some price ﬂexibility for introducing
+quality SRV rice in urban markets and recovering their invest-
+ment by capturing part of the consumer surplus. However, the
+drop of the propensity of upgrading after sensory experience—
+a proxy for repeat purchase intentions—suggests that there
+may be limits to post-harvest grain quality upgrading, i.e.,
+striving for visual post-harvest quality attributes, such as vari-
+etal and grain homogeneity, may come at the cost of sensory
+quality. 9 Moreover, the existence of a 14% market segment
+of non-upgraders (conventional SRV rice consumers) suggests
+that any strategy of value chain upgrading to increase food
+security for the poor should serve both market segments,
+i.e., conventional and quality rice, in order to consider the
+trade-oﬀ between adding value and maintaining aﬀordability
+
+(Tomlins et al., 2007). Value needs to be added in order to
+make local rice competitive to imported rice and enable
+SRV rice farmers to serve urban markets, while at the same
+time cheap rice needs to be available for price sensitive con-
+sumers.
+
+(b) Labeling and branding
+
+The market provision of quality is notoriously fraught with
+diﬃculties under asymmetric information: when producers
+cannot credibly signal the quality of their products, consum-
+ers’ choices are predicated on the perceived average quality
+on the market, and this pooling equilibrium leads to market
+failures with undesirable welfare properties. Labeling and
+branding can be used as institutions for counteracting the
+eﬀects of quality uncertainty as they not only indicate quality
+but also give the consumer a means of retaliation if the quality
+does not meet expectations (Akerlof, 1970). It has been estab-
+lished that origin and quality labeling entail market diﬀerenti-
+ation potential, which might be noticeable for consumers
+depending on what the labels appeal to (e.g., health, safety,
+taste diﬀerentiation) (Verbeke and Roosen, 2009).
+
+Country-of-origin labeling (COOL) can serve as an extrinsic
+cue that supplements the use of intrinsic quality cues. Dichter
+(1962) was the ﬁrst to argue that COOL may have a “tremen-
+dous inﬂuence on the acceptance and success of products” (p.
+116). However, systematic research on the eﬀect of COOL be-
+gan with the publication of Schooler’s (1965) seminal article
+on product bias in the Central American Common Market.
+Diﬀerent attempts have been made in the literature to analyze
+the generalizability of the eﬀect of COOL through meta-anal-
+ysis (Bilkey & Nes, 1982; Peterson & Jolibert, 1995; Verlegh &
+Steenkamp, 1999). Bilkey and Nes (1982) noted a number of
+serious methodological shortcomings in COOL research.
+Obermiller and Spangenberg (1989) proposed the ﬁrst theoret-
+ical framework for analyzing the eﬀects of COOL, identifying
+three types of processes: cognitive, aﬀective, and normative.
+Han (1989) proposed that COOL could serve as a summary in-
+dex or heuristic that reduces the amount of information pro-
+cessing required in making a decision. In their meta-analysis,
+Peterson and Jolibert (1995) found that country of origin ex-
+plained approximately 26% of the observed variance of con-
+sumer perceptions and intentions. Verlegh and Steenkamp
+(1999) use the theoretical framework of Obermiller and Span-
+genberg (1989) and provide the most comprehensive meta-
+analysis on COOL eﬀects to date, testing seven of the most
+widely researched hypotheses on COOL eﬀects. Relevant to
+our research question is the evidence they provide supporting
+their fourth hypothesis that COOL eﬀects are larger when sub-
+jects are asked to compare products from more developed
+economies with products from less developed economies.
+
+Recently, the attention of researchers has shifted from
+COOL to the use of geographical indications (GIs) by produc-
+ers’ cooperative action in the provision of quality to achieve
+the critical mass required for brand name and trademark
+development. Interest in GIs increased considerably after they
+were recognized as a distinct form of intellectual property (IP)
+rights in the TRIPS agreement of the World Trade Organiza-
+tion (WTO) (Josling, 2006). In the context of GIs, quality
+attributes of interest to consumers are presumed linked to
+the speciﬁc geographic origin 10 of the good and/or particular
+production methods used in that region (the notion of “terr-
+oir”), and such attributes cannot be determined through
+inspection by the consumer prior to purchasing the good.
+The fundamental role of GIs in this setting, therefore, is that
+of providing a credible certiﬁcation mechanism that solves a
+
+REVERSING URBAN BIAS IN AFRICAN RICE MARKETS: EVIDENCE FROM SENEGAL
+
+71
+
+real-world information problem (Moschini, Menapace, &
+Pick, 2008).
+
+We did not ﬁnd any experimental evidence in support of the
+hypothesis that Senegalese consumers prefer imported rice for
+reasons that go beyond quality, e.g., due to its additional
+dimension of “foreignness” (Batra et al., 2000; Opoku &
+Akorli, 2009). As a matter of fact, only a negligible market
+segment of 1% of consumers chose imported rice as their
+exclusive upgrade. Moreover, we found that the local GI label
+RivalÒ (literally “Rice of the Valley”) added 6% to the value of
+enhanced-quality SRV rice. Similar positive response to GIs
+was observed in Ghana (Tomlins et al., 2005), which suggests
+that branding of local rice through GIs can further contribute
+to the reversal of urban bias in African rice markets. Branding
+of local rice only pays oﬀ in countries where a signiﬁcantly
+large segment of consumers purchases rice bags (instead of
+purchasing rice by the kilogram),
+in Senegal.
+Therefore, value chain initiators should not refrain from
+investing in rice brands with local appeal in order to compete
+against imported rice brands and gain market share in urban
+markets.
+
+such as
+
+(c) Generic advertising
+
+Norman, Pepall, and Richards (2008) argue that advertising
+can be treated in two ways. On the one hand, it can be treated
+as a complement to the product being marketed that aﬀects the
+demand for goods without changing the underlying prefer-
+ences of consumers. Consumers may place a greater value
+on a product the greater the advertising is of that product be-
+cause they enjoy knowing that the product they buy is widely
+recognized by lots of others on television, in movies, and on
+billboards. For example, consumers may gain from knowing
+that when they serve their friends local rice for lunch their
+friends will know through advertising that it is “in” to eat local
+rice. Advertising raises consumer WTP because it adds recog-
+nition and prestige to the basic product. In this case, advertis-
+ing “builds value.” On the other hand, advertising can serve as
+a complement to the basic good. Advertising can inform con-
+sumers either about the product’s existence or how to use the
+product more eﬀectively. In this case, the complementary func-
+tion of advertising is informational. Advertising works in this
+context to extend the appeal or “reach” of the product.
+Norman et al. (2008) further demonstrate that a change in
+advertising will alter output but not price in the “extending
+reach” case. On the other hand, the eﬀect of advertising in
+the “building value” case aﬀects price but not output.
+
+We did not ﬁnd any experimental evidence which supports
+the idea that the persistent preference gap between imported
+and local rice (Figure 1) is a result of perceived diﬀerences in
+image of the product or its origin. However, the post-auction
+survey did reveal a signiﬁcant awareness gap in that 18–45% of
+urban consumers were not aware of the existence of enhanced-
+quality SRV rice (Table 1). Similarly, surveys point out that
+45% of the stakeholders in the Senegalese rice sector cite the
+lack of visibility, due to the absence of a marketing strategy,
+as one of the reasons of the limited uptake of local rice by ur-
+ban consumers (Fall et al., 2007). A lack of marketing means a
+lack of notoriety, which also shows a lack of eﬀective political
+communication advertising SRV rice. The majority of partici-
+pants in our experiments (58–65%) had received information
+on SRV rice, mostly through TV and radio (Table 1), but
+the content of this information was limited to the presentation
+of the GOANA program and did not contain any advertise-
+ment on SRV rice. Hence, the type of advertising that will
+be most needed, once the sector suﬃciently increases its scale,
+
+is the “extending reach” type. Before arriving at that point,
+any strategy of value chain upgrading to increase food security
+for the poor in Senegal must ﬁrst build value through invest-
+ment in quality in order to make SRV rice competitive to im-
+ported rice. Only after the industry is able to achieve a critical
+quality standard, it can successfully scale up quality produce
+and rely on advertising in order to extend reach to a wide base
+of consumer segments and gain market share in urban markets
+(Demont & Rizzotto, 2012).
+
+Since women are the major decision makers in rice purchas-
+ing in Senegal (Fall & Diagne, 2008; Fall et al., 2007), adver-
+tising eﬀorts might be more successful if focused on women.
+Moreover, urban markets are the most important target pop-
+ulations because they represent roughly 65% of rice consumers
+(Fall & Diagne, 2008). As the awareness gap (Table 1) is sig-
+niﬁcantly higher in Dakar (47%) than in Saint-Louis (18%),
+signiﬁcantly more promotion eﬀorts should be invested in Da-
+kar. Our econometric results show that making consumers
+aware about the existence of an enhanced-quality rice product
+on the market may increase the likelihood of purchasing and
+hence the market share, not necessarily the WTP for the prod-
+uct (Table 3). These ﬁndings are consistent with Norman
+et al’s. (2008) “extending reach” case. In that case, the value
+of promotion for consumers in these markets is the mere pro-
+vision of information. This suggests that advertising is an
+important complement to investment in quality and branding
+in the reversal of urban bias.
+
+Our results further suggest that generic advertising eﬀorts
+such as messages during television programs, radio programs
+and taste booths on the markets should be executed in the
+morning when women exhibit a higher propensity to try out
+new rice products (Table 3). The weekly morning cooking
+and fashion program FAM (Femme Africaine Moderne) on
+the Senegalese television channel 2STV, for example, could
+be an outlet for regular broadcasts on special recipes based
+on local rice. Moreover, the success of the benchmark rice
+when cooked without supplements in our experiments ad-
+vances the idea that generic advertising strategies should be
+designed according to the target dish for which the rice type
+is used and should play an informative role as a complement
+to the product itself. A good example is the cookbook with
+recipes based on local rice published by the Senegalese Insti-
+tute for Food Technology (ITA) (Gning, Doumouya, Diouf,
+& Aw, 2007).
+
+(d) Value chain upgrading: a role for the public sector?
+
+The policy recommendations presented in the previous sec-
+tions can be embedded in a broader framework of value chain
+upgrading. Establishing eﬃcient value chains, i.e., vertical alli-
+ances between independent business organizations within a
+supply chain (Hobbs, Cooney, & Fulton, 2000), is cited by
+the World Bank as a ﬁrst policy objective in making agricul-
+ture in developing countries more competitive and more eﬀec-
+tive in supporting sustainable growth and reducing poverty
+(World Bank, 2008, pp. 19, 228). In order to upgrade rice va-
+lue chains in Senegal, three areas of investment are needed,
+i.e., (i) investment in post-harvest product-quality infrastruc-
+ture (enhanced milling, cleaning, sorting, and drying infra-
+structure) in order to upgrade quality of local rice to urban
+consumer standards, (ii) investment in productivity, aggrega-
+tion, and storage infrastructure in order to scale-up quality
+produce of local rice, and (iii) investment in advertising and
+generic promotion in order to raise awareness of local quality
+rice and reverse urban bias’ footprint in rice markets (Demont
+& Rizzotto, 2012).
+
+72
+
+WORLD DEVELOPMENT
+
+Branding and labeling are an integral part of value chain
+upgrading and innovation. Quality standards, certiﬁcation
+and quality control become more relevant as value chains
+move from being supplier-driven to increasingly buyer-driven
+(ACI, 2005). COOL or GIs such as RivalÒ can serve as (collec-
+tive) quality certiﬁcation devices, although for their function
+to be credible additional promotion and certiﬁcation costs
+are required. Because COOL or GI certiﬁcation entails ﬁxed
+costs shared by all producers of the high quality good, there
+are external economies of scale at the industry level and the
+competitive equilibrium is not Pareto eﬃcient and underpro-
+vides the high quality good (Moschini et al., 2008). Likewise,
+small ﬁrms cannot aﬀord mass media promotion campaigns
+and therefore depend on generic promotion of their country
+and region of origin. The public good nature of generic pro-
+motion is such that there is underinvestment unless these activ-
+ities are funded collectively (Zhao, Anderson, & Wittwer,
+2003). Hence, both certiﬁcation and generic promotion should
+be subsidized by the public sector.
+
+But also on a broader level, government has an important
+role to play in coordinating the development of food value
+chains. As the large multiplier eﬀects of agriculture to broader
+growth and poverty reduction are externalities to the sector it-
+self, the private sector will typically underinvest relative to the
+social optimum. Moreover, the pervasive nature of market
+failures and distortions in underdeveloped agriculture (Binsw-
+anger & Deininger, 1997) justify a judicious and quite exten-
+sive agricultural policy including direct and indirect support
+for agricultural research, extension, quality management, gen-
+eric promotion, information provision, infrastructural invest-
+ment, and human capital development.
+
+6. CONCLUSION
+
+Some African governments now recognize they must invest
+in agriculture in order to reverse urban bias, but often forget
+the equally important objective of investing in quality tailored
+to consumers, so as to reverse urban bias’ footprint on food
+markets. Our ﬁeld experiments suggest that Senegalese con-
+sumers’ preference for imported rice is primarily due to the
+product’s superior grain quality and that consumers are will-
+ing to pay quality premiums for local rice. This suggests that
+investment in post-harvest grain quality tailored to consumers
+in urban rice markets—in order to enable local rice to compete
+against imported rice—is the ﬁrst step that needs to be under-
+
+taken in the reversal of urban bias’ footprint on Senegalese
+rice markets. Branding and advertising can further contribute
+to the reversal of urban bias as consumers are willing to pay
+price premiums for a local rice brand and awareness of local
+quality rice increases the likelihood of paying quality premi-
+ums. This provides useful information for generic promotion
+programs that need to accompany food self-suﬃciency pro-
+grams, which aim to reverse urban bias.
+
+Our experimental evidence suggests that value chain initia-
+tors have some ﬂexibility for introducing branded quality rice
+in urban markets. Nevertheless, the existence of a small mar-
+ket segment of older, less educated, and less aware consumers
+who are not willing to pay quality premiums suggests that any
+strategy of value chain upgrading to increase food security for
+the poor should serve both market segments and supply a wide
+range of quality-diﬀerentiated local rice products. We expect
+that once post-harvest product-quality infrastructure is up-
+graded, investment in productivity, aggregation, storage infra-
+structure, advertising, and generic promotion will be more
+eﬀective in reversing urban bias than past productivist at-
+tempts.
+
+Finally, focusing on food quality standards in a food inse-
+cure country may seem counterintuitive at ﬁrst. However,
+one of the causes of Africa’s food insecurity is the lack of com-
+petitiveness of domestic rice vis a` vis imported rice due, in part,
+to quality issues. Nearly 40% of the rice consumed in Africa is
+imported. That is about one third of all rice traded in world
+markets. With such high dependence on imports, Africa is
+highly exposed to international market shocks, sometimes
+with grave consequences for its food security and political sta-
+bility as attested by events during the 2008 food crisis (Becker
+& Yoboue´, 2009; Moseley et al., 2010; Seck et al., 2010).
+Greater dependence on local rice markets will make the local
+food economy less vulnerable to the vagaries of international
+rice markets—although, more vulnerable to domestic weather
+ﬂuctuations and production risks such as pest outbreaks (de
+Mey, Demont, & Diagne, 2012). Nevertheless,
+increasing
+dependency on locally grown crops will strengthen the liveli-
+hoods of rural producers and will raise rural household food
+security. If Africa wants to reduce import dependency, it will
+have to invest in value-adding by tailoring quality of its
+domestically produced rice to urban consumer standards—or
+in the words of Moseley et al. (2010)—“the current concern
+for increased rice production [. . .] is more about helping urban
+consumers than rural producers” (p. 5779).
+
+NOTES
+
+1. Because of its dominant market share, e.g., 73% in Dakar (USAID,
+2010), in this study we focus on broken rice, termed simply “rice” hereafter
+for brevity.
+
+In 2007, PINORD marketed 500 tons of milled RivalÒ, produced by
+2.
+10 RMEs. This amount rose to 5,000–6,000 tons in 2008 involving
+108 RMEs, 7,000–8,000 tons in 2009 involving 150 RMEs, and
+12,000 tons in 2010 involving 300 RMEs. This represents only 3% of an
+estimated available production of 359,000 tons of milled rice in the SRV
+in 2010–2011 (ANSD, 2011). In 2011–2012, no RivalÒ was commercialized
+due to discontinued external funding.
+
+3. Shogren et al. (1994) describe the basic procedure. See Lusk and
+Shogren (2007) for an extensive review of the methodology.
+
+4. See Harrison and List (2004) for a classiﬁcation of experiments in
+empirical economics literature.
+
+5. The illiteracy rate among Senegalese women amounts to 67% (ANSD,
+2012).
+
+6. These data are consistent with larger and demographic surveys
+(ANSD, 2008a, 2008b; Fall & Diagne, 2008; USAID, 2010).
+
+7. Prices recorded on the urban Saint-Louis market in November 2008
+were 300 FCFA/kg (US$0.60/kg) for conventional SRV rice (benchmark)
+and 360 FCFA/kg (€0.55/kg) for Thai 100% broken rice. The price
+premium for quality rice = (360 + 45   300)/300 = 35% and the price
+premium for branded quality rice = (360 + 45 + 17   300)/300 = 41%.
+
+REVERSING URBAN BIAS IN AFRICAN RICE MARKETS: EVIDENCE FROM SENEGAL
+
+73
+
+8. More than a quarter of the women purchase rice on a daily basis
+(Table 1). In later experimental auctions, we included three additional
+questions in the questionnaire, i.e., whether women were hungry at the
+time of the experiment, the time since their last meal and whether they had
+been interrupted in their daily activities of preparing lunch or dinner.
+However, none of these variables did a better job in the econometric model
+in explaining the morning eﬀect than the “morning” dummy itself. This
+may suggest that the morning eﬀect may be caused by a hitherto
+unidentiﬁed variable, which happens to be strongly correlated with the
+morning dummy. Further research is needed to determine the psycholog-
+ical causes of this phenomenon in the African context.
+
+9. The uniform decrease of the WTP for all alternative rice types suggests
+an increase of the WTP for the benchmark rice, which has been conﬁrmed
+in later experimental auctions in which we used imported rice as a
+benchmark.
+
+10.
+If the geographic area encompasses a whole country, GI labeling is
+equivalent to COOL and the latter can be interpreted as a subset of the
+former.
+
+REFERENCES
+
+ACI (2005). Northeast Thailand rice value chain study. Policy Brief Series.
+
+Maryland, USA: Agrifood Consulting International.
+
+Akerlof, G. A. (1970). The market for “lemons”: Quality uncertainty and
+the market mechanism. Quarterly Journal of Economics, 84(3),
+488–500.
+
+Akindes, F. (1999). Food strategies of urban households in Coˆte d’Ivoire
+following the 1994 CFA franc devaluation. Food Policy, 24(5),
+479–493.
+
+Alfnes, F., & Rickertsen, K. (2003). European consumers’ willingness to
+pay for US beef in experimental auction markets. American Journal of
+Agricultural Economics, 85(2), 396–405.
+
+ANSD (2008a). Situation e´conomique et social de la re´gion de Dakar de
+l’anne´ e 2007. Agence Nationale de la Statistique et de la De´mographie
+(ANSD): Dakar, Senegal.
+
+ANSD (2008b). Situation e´conomique et social de la re´gion de Saint-Louis.
+Agence Nationale de la Statistique et de la De´mographie (ANSD):
+Dakar, Senegal.
+
+ANSD (2011). Situation e´conomique et sociale du Se´ne´gal en. Agence
+Nationale de la Statistique et de la De´mographie (ANSD): Dakar,
+Senegal.
+
+ANSD (2012). Agence Nationale de la Statistique et de la De´ mographie
+
+(ANSD). Retrieved from http://www.ansd.sn/.
+
+Arnould, E. J. (1989). Toward a broadened theory of preference formation
+and the diﬀusion of innovations: Cases from Zinder Province, Niger
+Republic. Journal of Consumer Research, 16(2), 239–267.
+
+Barrett, C. B. (2008). Smallholder market participation: Concepts and
+evidence from eastern and southern Africa. Food Policy, 33(4),
+299–317.
+
+Batra, R., Ramaswamy, V., Alden, D. L., Steenkamp, J.-B. E. M., &
+Ramachander, S. (2000). Eﬀects of brand local and nonlocal origin on
+consumer attitudes in developing countries. Journal of Consumer
+Psychology, 9(2), 83–95.
+
+Becker, L., & Yoboue´, N. (2009). Rice producer–processor networks in
+
+Coˆte d’Ivoire. Geographical Review, 99(2), 164–185.
+
+de Mey, Y., Demont, M., & Diagne, M. (2012). Estimating bird damage to
+rice in Africa: Evidence from the Senegal River Valley. Journal of
+Agricultural Economics, 63(1), 175–200.
+
+Demont, M., Rutsaert, P., Ndour, M., Verbeke, W., Seck, P. A., &
+Tollens, E. (2013). Experimental auctions, collective induction and
+choice shift: Willingness-to-pay for rice quality in Senegal. European
+Review of Agricultural Economics, in press.
+
+Demont, M., & Rizzotto, A. C. (2012). Policy sequencing and the
+development of rice value chains in Senegal. Development Policy
+Review, 30(4), 451–472.
+
+Demont, M., & Stessens, J. (2009). Food versus cash: Development theory
+and reality in northern Coˆ te d’Ivoire. Review of Business and
+Economics, 54(3), 258–272.
+
+Demont, M., Zossou, E., Rutsaert, P., Ndour, M., Van Mele, P., &
+Verbeke, W. (2012). Consumer valuation of improved rice parboiling
+technologies in Benin. Food Quality and Preference, 23(1), 63–70.
+
+Diagana, B., Akindes, F., Savadogo, K., Reardon, T., & Staatz, J. (1999).
+Eﬀects of the CFA franc devaluation on urban food consumption in
+West Africa: Overview and cross-country comparisons. Food Policy,
+24(5), 465–478.
+
+Diagana, B., & Reardon, T. (1999). Household consumption responses to
+the franc CFA devaluation: Evidence from urban Senegal. Food Policy,
+24(5), 495–515.
+
+Diagne, M., Demont, M., Seck, P. A., & Diaw, M. A. (2013). Self-
+suﬃciency policy and irrigated rice productivity in the Senegal River
+Valley. Food Security, in press.
+
+Dichter, E. (1962). The world customer. Harvard Business Review, 40(4),
+
+113–122.
+
+Dieng, M. (2012). Thiebou dieune: Senegal’s rice and ﬁsh dish. Rice
+
+Today, 11(3), 20.
+
+Ehmke, M. D., Lusk, J. L., & Tyner, W. (2008). Measuring the relative
+importance of preferences for country-of-origin in China, France,
+Niger and the United States. Agricultural Economics, 38(3), 277–285.
+Erhabor, P. O. I., & Ojogho, O. (2011). Eﬀect of quality on the demand
+
+Bezemer, D., & Headey, D. (2008). Agriculture, development, and urban
+
+for rice in Nigeria. Agricultural Journal, 6(5), 207–212.
+
+bias. World Development, 36(8), 1342–1364.
+
+Bilkey, W., & Nes, E.
+
+on
+product evaluation. Journal of International Business Studies, 13(1),
+89–99.
+
+(1982). Country-of-origin
+
+eﬀects
+
+Binswanger, H. P., & Deininger, K. (1997). Explaining agricultural and
+agrarian policies in developing countries. Journal of Economic Liter-
+ature, 35(4), 1958–2005.
+
+Boughton, D., & Reardon, T. (1997). Will promotion of coarse grain
+processing turn the tide for traditional cereals in the Sahel? Recent
+empirical evidence from Mali. Food Policy, 22(4), 307–316.
+
+Bru¨ntrup, M., Nguyen, T., & Kaps, C. (2006). Food-importing countries
+in liberalized world trade. The rice market in Senegal. Agriculture &
+Rural Development, 1, 22–25.
+
+Chianu, J. N., & Tsujii, H. (2005). Determinants of farmers’ decision to
+adopt or not adopt inorganic fertilizer in the savannas of northern
+Nigeria. Nutrient Cycling in Agroecosystems, 70(3), 293–301.
+
+Corrigan, J. R., & Rousu, M. C. (2008). Testing whether ﬁeld auction
+experiments are demand revealing in practice. Journal of Agricultural
+and Resource Economics, 33(2), 290–301.
+
+Cragg, J. G. (1971). Some statistical models for limited dependent
+variables with application to demand for durable goods. Econometrica,
+39(5), 829–844.
+
+Fall, A. A., & Diagne, A. (2008). Etude de la relation qualite´-prix du riz
+produit dans la vallee du ﬂeuve Senegal. Rapport Project FNRAA.
+Dakar, Senegal: Fonds National de Recherches Agricoles et Agro-
+alimentaires (FNRAA).
+
+Fall, A. A., Fall, C. A. K., Gningue, D. R., Ndir, B., & Ndour, M. (2007).
+Etude sur les crite`res de qualite´ et les modes de consommation du riz
+au Se´ne´gal. Rapport Projet FNRAA 010/AP03M010202. Dakar,
+Se´ne´gal: Fonds National de Recherches Agricoles et Agro-alimentaires
+(FNRAA).
+
+Friedman, J. (1990). Being in the world: Globalization and localization.
+
+Theory, Culture & Society, 7(2), 311–328.
+
+Gning, R. D., Doumouya, N. T. T. S., Diouf, F. F., & Aw, A. T. (2007).
+Livret de recettes a` base de riz. Dakar, Se´ne´gal: Institut de Technologie
+Alimentaire (ITA).
+
+Haines, P. S., Guilkey, D. K., & Popkin, B. M. (1988). Modeling food
+consumption decisions as a two-step process. American Journal of
+Agricultural Economics, 70(3), 543–552.
+
+Han, C. M. (1989). Country image: Halo or summary construct?. Journal
+
+of Marketing Research, 26, 222–229.
+
+Harrison, G. W., Harstad, R. M., & Rutstro¨m, E. E. (2004). Experimental
+methods and elicitation of values. Experimental Economics, 7(2),
+123–140.
+
+CSA (2012). Syste` me d’Information sur les Marche´s (SIM). Retrieved
+
+Harrison, G. W., & List, J. A. (2004). Field experiments. Journal of
+
+from http://www.csa.sn.
+
+Economic Literature, 42, 1009–1055.
+
+74
+
+WORLD DEVELOPMENT
+
+Harrison, G. W., & Rutstro¨m, E. E. (2008). Experimental evidence on the
+existence of hypothetical bias in value elicitation methods. In C. R.
+Plott, & V. L. Smith (Eds.). Handbook of experimental economics
+results (Vol. 1, Part 5, pp. 752–767). New York, USA: Elsevier.
+
+Heinemann, R. J. B., Behrens, J. H., & Lanfer-Marquez, U. M. (2006). A
+study on the acceptability and consumer attitude towards parboiled
+rice. International Journal of Food Science and Technology, 41, 627–634.
+Hobbs, J. E., Cooney, A., & Fulton, M. (2000). Value chains in the agri-
+food sector. Saskatoon, Canada: College of Agriculture, University of
+Saskatchewan.
+
+Josling, T. (2006). The war on terroir: Geographical indications as a
+transatlantic trade conﬂict. Journal of Agricultural Economics, 57(3),
+337–363.
+
+Ju¨ tting, J. (2000). Transmission of price shifts in the context of structural
+adjustment: An empirical analysis for staple food after the devaluation
+of the franc CFA in Ivory Coast. Agricultural Economics, 22(1), 67–74.
+Kelly, V., Reardon, T., Diagana, B., & Fall, A. A. (1995). Impacts of
+devaluation on Senegalese households: Policy implications. Food
+Policy, 20(4), 299–313.
+
+Kennedy, E., & Reardon, T. (1994). Shift to non-traditional grains in the
+diets of East and West Africa: Role of women’s opportunity cost of
+time. Food Policy, 19(1), 45–56.
+
+Lipton, M. (1977). Why poor people stay poor: Urban bias in world
+
+development. London, UK: Temple Smith.
+
+Loureiro, M. L., Umberger, W. J., & Hine, S. (2003). Testing the initial
+endowment eﬀect in experimental auctions. Applied Economics Letters,
+10(5), 271–275.
+
+Lusk, J. L., Feldkamp, T., & Schroeder, T. C. (2004). Experimental
+auction procedure: Impact on valuation of quality diﬀerentiated goods.
+American Journal of Agricultural Economics, 86(2), 389–405.
+
+Lusk, J. L., & Shogren, J. F. (2007). Experimental auctions: Methods and
+applications in economic and marketing research. Cambridge: Cam-
+bridge University Press.
+
+Melton, B. E., Huﬀman, W. E., Shogren, J. F., & Fox, J. A. (1996).
+Consumer preferences for fresh food items with multiple quality
+attributes: Evidence from an experimental auction of pork chops.
+American Journal of Agricultural Economics, 78(4), 916–923.
+
+Ministe`re de l’Agriculture et de l’Elevage (2008). Programme national
+d’autosuﬃsance en riz a` l’horizon 2015: Document introductif au Conseil
+Interministeriel du 4 janvier 2008. Dakar: Ministe`re de l’Agriculture et
+de L’Elevage, Re´publique du Se´ne´gal.
+
+Moschini, G., Menapace, L., & Pick, D. (2008). Geographical indications
+and the competitive provision of quality in agricultural markets.
+American Journal of Agricultural Economics, 90(3), 794–812.
+
+Moseley, W. G., Carney, J., & Becker, L. (2010). Neoliberal policy, rural
+livelihoods, and urban food security in West Africa: A comparative
+study of The Gambia, Coˆ te d’Ivoire, and Mali. Proceedings of the
+National Academy of Sciences of the United States of America, 107(13),
+5774–5779.
+
+Norman, G., Pepall, L., & Richards, D.
+
+(2008). Generic product
+advertising, spillovers, and market concentration. American Journal
+of Agricultural Economics, 90(3), 719–732.
+
+Obermiller, C., & Spangenberg, E. (1989). Exploring the eﬀects of country
+of origin labels: An information processing framework. Advances in
+Consumer Research, 16(1), 454–459.
+
+Opoku, R. A., & Akorli, P. A. K. (2009). The preference gap: Ghanaian
+consumers’ attitudes toward local and imported products. African
+Journal of Business Management, 3(8), 350–357.
+
+Pearson, S. R., Stryker, J. D., Humpreys, C. R., Rader, P. L., Monke, E.
+A., Spencer, D. S. C., Craven, K., Tuluy, A. H., McIntire, J., & Page,
+J. M. (Eds.) (1981). Rice in West Africa: Policy and economics.
+Stanford, CA, USA: Stanford University Press.
+
+Peterson, R. A., & Jolibert, A. J. P. (1995). A meta-analysis of country-of-
+origin eﬀects. Journal of International Business Studies, 26(3), 883–900.
+
+Reardon, T. (1993). Cereals demand in the Sahel and potential impacts of
+
+regional cereals protection. World Development, 21(1), 17–35.
+
+Reardon, T., Kelly, V., Crawford, E., Diagana, B., Dione, J., Savadogo,
+K., et al. (1997). Promoting sustainable intensiﬁcation and productiv-
+ity growth in Sahel agriculture after macroeconomic policy reform.
+Food Policy, 22(4), 317–327.
+
+Roosen, J., Fox, J. A., Hennessy, D. A., & Schreiber, A. (1998).
+Consumers’ valuation of insecticide use restrictions: An application to
+apples. Journal of Agricultural and Resource Economics, 23(2),
+367–384.
+
+Ross, C. G. (1983). Review: Rice in West Africa: Policy and Economics.
+
+The Journal of Modern African Studies, 21(2), 335–336.
+
+Saverimuttu, V., & Rempel, H. (2004). The determinants of cereal grain
+imports: Sub-Saharan Africa, 1970–1997. African Development Review,
+16(3), 525–548.
+
+Schooler, R. D. (1965). Product bias in the Central American Common
+
+Market. Journal of Marketing Research, 4, 394–397.
+
+Seck, P. A., Tollens, E., Wopereis, M. C. S., Diagne, A., & Bamba, I.
+(2010). Rising trends and variability of rice prices: Threats and
+opportunities for sub-Saharan Africa. Food Policy, 35(5), 403–411.
+
+Shogren, J. F., Margolis, M., Koo, C., & List, J. (2001). A random nth-
+price auction. Journal of Economic Behavior & Organization, 46(4),
+409–421.
+
+Shogren, J. F., Shin, S. Y., Hayes, D. J., & Kliebenstein, J. B. (1994).
+Resolving diﬀerences in willingness to pay and willingness to accept.
+American Economic Review, 84(1), 255–270.
+
+Singare, K., Reardon, T., Camara, Y., Wanzala, M., Teme, B., & Sanogo,
+O. (1999). Household consumption responses to the franc CFA
+devaluation: Evidence from urban Mali. Food Policy, 24(5), 517–534.
+Tomlins, K. I., Manful, J. T., Gayin, J., Kudjawu, B., & Tamakloe, I.
+(2007). Study of sensory evaluation, consumer acceptability, aﬀord-
+ability and market price of rice. Journal of the Science of Food and
+Agriculture, 87(8), 1564–1575.
+
+Tomlins, K. I., Manful, J. T., Larwer, P., & Hammond, L. (2005). Urban
+consumer preferences and sensory evaluation of locally produced and
+imported rice in West Africa. Food Quality and Preference, 16(1),
+79–89.
+
+Unnevehr, L. J. (1986). Consumer demand for rice grain quality and
+in Southeast Asia.
+
+returns to research for quality improvement
+American Journal of Agricultural Economics, 68(3), 634–641.
+
+USAID (2010). Campagne de marketing social: Sondage sur la perception
+et les habitudes de consommation des ce´re´ales locales. Dakar, Senegal:
+United States Agency for International Development
+(USAID),
+Project Croissance Economique (PCE).
+
+USDA (2011). Nigeria: Grain and feed annual. GAIN Report NI11015:
+
+USDA Foreign Agricultural Service.
+
+USDA (2012). 2012 West Africa: Rice annual. GAIN Report: USDA
+
+Foreign Agricultural Service.
+
+Verbeke, W., & Roosen, J. (2009). Market diﬀerentiation potential of
+country-of-origin, quality and traceability labeling. The Estey Centre
+Journal of International Law and Trade Policy, 10(1), 20–35.
+
+Verlegh, P. W. J., & Steenkamp, J.-B. E. M. (1999). A review and meta-
+analysis of country-of-origin research. Journal of Economic Psychol-
+ogy, 20, 521–546.
+
+Vickrey, W. (1961). Counterspeculation, auctions, and competitive sealed
+
+tenders. Journal of Finance, 16(1), 8–37.
+
+World Bank (2008). World development report 2008. Washington, DC: The
+
+World Bank.
+
+Zhao, X., Anderson, K., & Wittwer, G.
+
+(2003). Who gains from
+Australian generic wine promotion and R&D?. Australian Journal of
+Agricultural and Resource Economics, 47(2), 181–209.
+
+

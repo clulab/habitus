@@ -1,0 +1,1755 @@
+DATE DOWNLOADED: Wed Dec  9 09:30:37 2020
+SOURCE: Content Downloaded from  HeinOnline
+
+Citations:
+
+Bluebook 21st ed.(cid:10)
+Gregory G. A. Tzeutschler, Growing Security: Land Rights and Agricultural Development
+in Northern Senegal, 43 J. AFR. L. 36 (1999).                                        
+
+(cid:9)                                                                
+
+ALWD 6th ed.                                                                         
+Tzeutschler, G. G., Growing security: Land rights and agricultural development in
+northern senegal, 43(1) J. Afr. L. 36 (1999).                                        
+
+APA 7th ed.                                                                          
+Tzeutschler, G. G. (1999). Growing security: Land rights and agricultural development
+in northern senegal. Journal of African Law, 43(1), 36-62.                           
+
+Chicago 7th ed.                                                                      
+Gregory G. A. Tzeutschler, "Growing Security: Land Rights and Agricultural
+Development in Northern Senegal," Journal of African Law 43, no. 1 (1999): 36-62     
+
+McGill Guide 9th ed.                                                                 
+Gregory G A Tzeutschler, "Growing Security: Land Rights and Agricultural Development
+in Northern Senegal" (1999) 43:1 J Afr L 36.                                         
+
+AGLC 4th ed.                                                                         
+Gregory GA Tzeutschler, 'Growing Security: Land Rights and Agricultural Development
+in Northern Senegal' (1999) 43(1) Journal of African Law 36.                         
+
+MLA 8th ed.                                                                          
+Tzeutschler, Gregory G. A. "Growing Security: Land Rights and Agricultural
+Development in Northern Senegal." Journal of African Law, vol. 43, no. 1, 1999, p.
+36-62. HeinOnline.                                                                   
+
+OSCOLA 4th ed.                                                                       
+Gregory G A Tzeutschler, 'Growing Security: Land Rights and Agricultural Development
+in Northern Senegal' (1999) 43 J Afr L 36
+
+Provided by: 
+University of Florida / Lawton Chiles Legal Information Center
+
+-- Your use of this HeinOnline PDF indicates your acceptance of HeinOnline's Terms and 
+   Conditions of the license agreement available at 
+
+https://heinonline.org/HOL/License
+
+-- The search text of this PDF is generated from  uncorrected OCR text.
+-- To obtain permission to use this article beyond the scope of your  license, please use:
+
+Copyright Information
+
+(cid:9)
+(cid:9)
+Journal  of African  Law,  43:  36-62
+
+GROWING  SECURITY:  LAND  RIGHTS  AND
+
+AGRICULTURAL  DEVELOPMENT  IN  NORTHERN
+
+SENEGAL
+
+GREGORY  G.  A.  TZEUTSCHLER*
+
+INTRODUCTION
+
+Are  "traditional"  or  "indigenous"  land  rights  an  obstacle  to  development?
+The  question  seems  simple  enough.  And  the  liberal  economic  perspective
+currently  being  advanced  by  free  market  advocates  such  as  the  Bretton  Woods
+institutions  answers:  yes,  to  the  extent  that  those  traditional  relations  hinder  the
+free  exchange  of land,  they  do  slow  development.  But  of course  the  question  is
+more  complex  and  requires  answers  to  a  number  of subsidiary  and  ancillary
+questions.  Some are  definitional  and  empirical:  what  are  these  "traditional  land
+rights"?  To  what  extent  do  they,  rather  than  codified  law  or  administrative
+practices,  define  the  relationships  of social  actors  and groups  to land and  to each
+other  through  land?  Other  questions  are  more  hypothetical:  what  are  the
+alternatives  to  the  current  regime,  what  costs  would  installing  them  incur,  and
+what would be  their costs  and benefits,  once  in place?  Finally,  there are  ancillary,
+but still  central  questions:  what  other factors,  such  as  ecological  conditions,  state
+policies  and  non-state  institutions,  may  account  for  development  or  the  lack
+thereof, apart  from land  tenure  regimes?
+
+I  address  the  theoretical  questions  first,  in  the  abstract.  This  theoretical
+perspective  frames  the  rest  of  the  article,  which  is  an  examination  of  these
+relationships  and  their effects  on  development  in  the  south  bank  of the  Senegal
+River  Valley,  known  as  the  Fuuta  Tooro.  This  stretches  several  hundred  miles
+from  Richard-Toll  in  the  west,  near  the  head  of  the  Senegal  River  Delta,
+upstream  almost  to  Matam  in  the  east.  It  is  almost  entirely  rural;  its  few  towns
+do  not  exceed  20,000  in  population,  and  most  villages,  themselves  spread  far
+apart,  have  populations  in  the  hundreds.  The  majority  of  the  population  in
+the  region  is  Haalpulaar,  or  Pulaar-speaking,  a  large  ethnolinguistic  group
+characterized  by  lasting  caste  distinctions  and  strong  Islamic  convictions.  The
+historically  sedentary,  agriculturalist  Haalpulaar  are  the  Toucouleur, while  their
+historically  nomadic,  pastoralist  linguistic  cousins  are  the  Peul.'
+
+Traditionally,  the  most fertile  and  prestigious  lands  in  the  region  have  been
+on  the  waalo  floodplain,  while  the  intermediate  foonde  lands  and  the  rain-fed
+dieri  highlands  have  been  less  sought  after,  owing  to  the  unreliability  of rains  in
+the  semi-arid  Western  Sahel.  The  damming  of the  Senegal  River  at  Manantali
+has  disrupted  flood  cycles  and  made  irrigation  possible,  and  the  foonde  lands
+are  now  the  site  of many  irrigation  works,  and  have  become  more  desirable.
+
+Nationally,  land  law  does  not reflect  the  lasting  influence  of traditional  rulers
+in  areas  like  the  Fuuta  Tooro.  The  Senegalese  nation  owns  nearly  all  the  land
+in  the  country,  and  rural  municipalities  administer  it.  The  national  land  law,
+the  Loi relative au Domaine National, passed  in  1964,  dictates  that municipalities  are
+
+J.D.,  Columbia  University  School  of Law.
+Pulaar,  or  Peul,  is  a  language  related  to  Fulani,  various forms  of which  are  spoken  mostly  by
+
+herders  throughout  the  Sahel.
+
+©  1999  School  of Oriental  and  African  Studies
+
+Vol.  43,  No.  I
+
+Growing Securio,
+
+to  give  current  tenants  formal  rights  to  land,  provided  the  tenants  can  put  the
+land to  productive  use.
+
+The municipal  councils  are  democratically  elected,  but  are,  for the  most part,
+firmly entrenched  in  a network of patron-client  relations involving  the Senegalese
+state,  the  ruling  Socialist  Party,  and  local  elites,  who  often  belong  to  traditional
+high-status  religious  classes.  Because  the  sway  of these  religious  elites  remains
+particularly strong  in the  study region,  they  tend to  dominate  the  councils there.
+Historically,  the  Senegalese  state  has  also  involved  itself in  agriculture  through
+parastatals  and  agencies  that  provide  rural  credit  or  monopolize  the  marketing
+of  agricultural  products.  They  often  require  farmers  to  use  certain  techniques
+and  inputs,  but  have  rarely  effected  long-term  improvements  in  productivity.
+The effects  of these  state  activities  must  qualify  statements  on  the  effects  of land
+rights  on  development.
+
+For  the purposes  of this  study,  "development"  is  defined  as  measures  taken-
+
+including  capital,  permanent  and  annual  investments  and  capacity-building
+techniques-that  are  likely  to  result  in long-term  increases  in  crop  yields  and  in
+commensurate  increases  in  net  income  from  farming:  this  is  assumed  to  be  a
+desirable  goal,  given  variable  weather  conditions,  population  pressures  and  the
+monetization  of  the  rural  economy.  Such  development  may  be  hastened  by
+capital  investments  such  as  irrigation  works,  productivity-enhancing  chemicals
+and  machinery,  and  higher-yielding  crop  strains,  and  by  experimentation  with
+various  farming  techniques.  The  intermediate  goals  of these  improvements  are
+shorter fallow periods, multiple crop seasons,  and improved responses  to changing
+climactic  conditions.
+
+Predicting the effects  of the introduction  of such changes  requires  consideration
+of the  dialectic  effects  of the economic  changes  and  the  social  structures  on  each
+other.  Technical  or  social  change  imported  in  the  name  of development  may
+transform  those  structures;  indeed,  this  transformation  may  be  one  of the goals
+of development,  for  example  to  effect  a  more  equitable  distribution  of control
+over resources.  However,  the existing institutions may also affect the development
+such  that  its  effect  may  be  negligible,  or  contrary  to  what  was  intended.  This
+article  primarily  undertakes  a  qualitative  microeconomic  analysis  of  the  effects
+of overlapping  systems  of land  rights  on agricultural  production.  Some study  of
+institutions  and their history is  essential  to this  analysis-inasmuch  as these  affect
+the  choices  of discrete  economic  actors or  of groupings-but  this is  not primarily
+a  study  of institutional  economic  change.
+
+Moreover,  since  this  is  a  primarily  economic  analysis  where  effects  on  land
+use  and  crop  production  and  distribution  are  the  gauge  of any  measure  taken,
+social  change  is  taken  as  important  mainly  in  instrumental  terms,  rather  than
+because  of  the  inherent  value  of  any  existing  social  systems.  This  is  not  to  say
+that  past,  current  or  potential  systems  are  without  relative  inherent  value,  but
+only  that  such judgments  are  not  significant  in  this  analysis.  Inevitably,  values
+do  permeate  the  analysis.  I  consider  that  equitable  distribution  is  desirable  to
+avoid human suffering and promote social stability, and that efficiency is important
+in  preventing  waste  and  making  maximum  use  of  available  resources.  The
+article's  analysis  considers  both  values,  without  privileging  either.
+
+Finally,  to  explain  the  understanding  and  use  of  the  tradition-modernity
+dichotomy:  in the study area, "traditional"  leaders  are usually elders and religious
+figures,  and,  hence,  members  of a  high  caste.  It  is  likely  that  some  aspects  of
+
+38 
+
+Growing Security 
+
+[1999] J.A.L.
+
+the  "traditional"  society  that  they  claim  to  describe,  represent  and  defend,  do
+not  in  fact  date  from  the  pre-colonial  era.  Nevertheless,  these  figures  retain
+considerable  authority  in  the  study  area,  and  their  claims  that  a  practice  is  a
+"tradition"  seem rarely to meet with  challenges on their own terms. This approach
+is  not  analytically  dangerous  because  other  groups  have  rarely  challenged  the
+legitimacy  of traditional  elites by  questioning  the  accuracy  of those  elites'  claims
+that they are defending long-standing  traditions. Of course,  this  trope  of tradition
+is primarily useful  in opposition,  specifically  to the concept  of "modem"  practices
+and modes.  I  will  use  this  latter  term  to  designate  characteristics  and modalities
+that  differ  from  "traditions",  though  they  may  be  bound  by  little  else.
+
+THEORIES  OF  LAND  RIGHTS  AND  AGRICULTURAL  PRODUCTIVrrY
+
+Traditional and modern  tenure:  liberal perspectives
+
+Theories  of  agricultural  development  posit  a  continuum  from  communal
+control  of  land  by  a  lineage  group  or  village,  to  more  individualized  tenure
+by  households  or  individuals.  In  communal  systems,  a  small  elite  frequently
+monopolizes  the authority  to  allocate  all  the land, but those  elites  generally  may
+not  sell  the  land.2  Thus,  an  individual's  or  household's  land  is  not  inalienable,
+but  rather  "exointransmissible":  no-one  may  alienate  usage  rights  to  anyone
+outside  the  relevant  community,  but  those  rights  are  more  mobile  within  it.3
+Social  restrictions,  based  on gender  or  caste,  may limit  the  land  available  to  an
+individual  or  a  family.  Traditional  authorities  are  more  likely  to  enforce  these
+distinctions  for  more  valued  lands,  often  the  most  fertile  ones,  or  where  strict
+religious  or  other  taboos  support  the  distinctions.
+
+Many  communal  systems  in Africa  also  grant  separate  rights  to various  users.
+One  farmer may  be  allowed  to farm  annual  crops  on a tract,  another  may have
+rights  to  its  tree  crops,  and  a  pastoralist  may  have  transhumance  and  grazing
+rights  after  the  annual  harvest.  Noronha  and  Lethem  identify  the  multiple-use
+pattern  as  a  potential  source  of  conflict  over  land  control,  and  of  decreased
+tenure  security,  depressing  the  land's  value.4  But  productivity  for  a  single  use,
+such  as  annual  crops  alone,  especially  in  infertile  areas,  may  be  quite  low.  In
+addition,  flexibility  in  access  to  land  allows  farmers  to  spread  the  risks  of crop
+failure  or  low  yields. 5
+
+Still,  some  requirements  in  multiple-use  systems  do restrict  a  farmer's  ability
+to  experiment.  Supposedly  as  a result  of this  inflexibility,  of under-investment  in
+land  due  to  the  insecurity  of tenure,  and  of the  overuse  of commons  land,  crop
+yields have  contracted to  below  subsistence  levels  in  many  areas.  These  theories
+hold  that  the  regime  of open  access  to  land  creates  a  collective  action  problem,
+
+2  Such  sales  would  be  "unconstitutional",  i.e.,  "they  were  expressly  precluded  from  the covenant
+that  formed  the  basis  of the  social  contract  creating  the  community."  Rogier  van  den  Brink  and
+Daniel  W.  Bromley,  The  Enclosures Revisited:  Privatization, Titling,  and  the  Quest for Advantage  in  Africa,
+Working  Paper  19,  Washington,  DC,  1992,  11.
+
+3 Monique  Caverivihre  and  Marc  Dhbne,  Le  drsitfoncier sdgalais, Paris,  1988,  67.
+4 Raymond  Noronha  and  Francis J. Lethem,  Traditional Land  Tenures  and Land  Use  Systems  in  the
+
+Design of Agricultural Projects, Staff Working Paper  No.  561,  Washington,  DC,  1983,  iii-v  and  16.
+
+5 Van  den  Brink  and Bromley,  op.  cit.,  n.  2,  8-9.
+
+Vol.  43,  No.  I
+
+Growing  Security
+
+in that neither landholders  nor tenants  internalize  the  cost of the  soil degradation
+or  other  results  of misuse  or  overuse. 6
+
+Some  theorists  have  suggested  that  societies  move  spontaneously  along  this
+continuum  from  communal  to  individual  land  tenure  as  populations  grow  and
+demand  for land  increases.  As  population  increases  and the monetized  economy
+penetrates  rural  areas,  the  value of land increases,  encouraging  a long-term  view
+of land's value  and measures  to improve security. Landholders  and users therefore
+invest  in  technological  inputs,  enhancing  both  efficiency  and productivity.'  But
+this  transition  is  in  fact  not  automatic  or  complete,  even  in  situations  of
+commercialization  and  population  growth.  Even  where  the  original  landholder
+"sells"  the land, continued  obligations  to the original  landholders  frequently limit
+the  "buyer's"  own  ability to alienate the land.8 And where tenure has become  more
+individualized,  neither increased investment in land nor improved productivity has
+resulted.'
+
+Increasing  land  scarcity  does  decrease  the  flexibility  required  for  risk-min-
+imization  strategies  such  as  multiple  uses  and  open  access,  as  users  adopt  long-
+term strategies-such  as  tree planting-that  make  assets more  specific  to a single
+user.  Of course,  such  asset  specificity  for  one  party  diminishes  the  flexibility  of
+others.  If  a  community  or  a  landholder  sees  such  activities  as  against  their
+interests,  they  may  block  them  with  the  censure  of traditional  authorities,  where
+these  remain  strong.  Thus,  there  is  pressure  for  the  individualization  of tenure
+to  come  into  effect,  but  the  transition  is  not  automatic.' 0
+
+Liberal  economic  theory  thus  frames  communal  systems  as  adapted  to  sub-
+sistence  farming,  but inadequate  for  cash cropping,  investment  or  development.
+This  position  advocates  titling  property  to  individuals  to  solve  the  problem  of
+rising  external  costs  from  land's  misuse  or  overuse  in  communal  systems.  But
+the  process  of titling creates  opportunities  for rent-seeking  behaviour. And,  once
+
+6 See  generally  Ester  Boserup,  The  Conditions of Agricultural Growth: The Economics  of Agrarian Change
+under  Population Pressure, Chicago,  1965.  Alternatively,  strengthening  the  traditional  institutions  that
+regulate  access  to  and  management  of land,  can ensure  internalization  of costs  by users.  See  Kevin
+Cleaver  and  Gbtz  Schreiber,  "The  population,  environment,  and  agriculture  nexus  in  sub-Saharan
+Africa",  in  Srivastava  and  Alderman  (eds.),  Agriculture and Environmental Challenges, Washington,  DC,
+1992,  204-208.  I  refer  to those  who  traditionally  control  land's  allocation  and  use as  "landholders",
+because  they  do  not  own  the  land;  typically  the  entire  community  does,  but  member(s)  of the  elite
+have  primary  decision-making  authority.  Under  Senegalese  law,  the entire  Senegalese  nation  owns
+most of these  lands.  I  refer  to those  who  farm the land in  exchange  for  rent payments  to landholders
+in  tender  or  in  kind  as  "tenants".  "User"  or  "farmer"  refers  to  anyone  actually  farming  the  land,
+whether  landholder  or tenant, or,  occasionally,  a  low-caste  farmer  who  does  not  have  a  clear  claim
+to  the  land,  but  who  does  not  pay  any  rent.  In  the  study  region,  landholders  are  often  referred  to
+asproprictaires ("owners"), indicating  some permeation  of capitalist notions  of land ownership,  although
+very  few  "owners"  have  freehold  title  to  the  land.
+
+See,  generally,  Boserup,  op.  cit.,  n.  6;  see  also  Hans  P.  Binswanger  and  Mark  R.  Rosenzweig,
+"Behavioral  and  material  determinants  of  production  relations  in  agriculture",  (1986)  3  Journal of
+Development  Studies  503-539;  Gershon  Feder  and  Raymond  Noronha,  "Land  rights  systems  and
+agricultural  development  in  sub-Saharan  Africa",  (1987)  2  World  Bank  Research  Observer  143-167;
+Noronha  and  Lethem,  op.  cit.,  n.  4,  17.
+
+s  Robert  M.  Hecht,  "Immigration,  land  transfer  and  tenure  changes  in  Divo,  Ivory  Coast,
+1940-80",  (1985)  3  Africa  319-336,  331-332.  That  is,  the  "buyer"  has  not  obtained  absolute  tide
+free  of  obligations  to  the  "seller".  The  social  structures  are  often  strong  enough,  as  in  the  study
+region,  that  they  resist  the  prestures  that  would  otherwise  lead  to  the  emergence  of a  market,  or
+adapt  to  those  pressures  without  allowing  a  market  to  develop  fully.  Jean-Philippe  Platteau,  Land
+Reform  and Structural Adjustment in  Sub-Saharan Africa: Controversies and Guidelines,  Economic  and  Social
+Development  Paper  107,  Rome,  1992,  132.
+
+9 John  R.  Heath,  Land Rights  in  C6te  d'Ivoire:  Survey  and Prospects for  Project Intervention, Technical
+
+Paper  No.  238,  Washington,  DC,  1993,  5.
+
+0  Platteau,  op.  cit.,  n.  8,  133-134;  van  den  Brink  and  Bromley,  op.  cit.,  n.  2,  13-16,  19-20.
+
+G~owing Secrity
+
+[1999]  J.A.L.
+
+established,  property  rights  do  not  guarantee  the  security  of  tenure,  but  only
+shift  the  contest  over  that  tenure  out  of the  arena  of the  traditional  authorities.
+When  clearly  defined  and  consistently  enforced,  however,  such  rights  may
+increase  the  predictability  of these  conflicts'  outcomes,  increasing  security  and
+decreasing  transaction  costs and  risk  premiums.  Still,  the  absence  of secure  title
+to  land  as  collateral  may  also  inhibit the  development  of efficient,  private  rural
+credit  markets,  and  the  resulting  absence  of credit  may  slow development."
+
+But  these  and  other  liberal  critiques  overlook  the  significant  adaptability  of
+traditional  systems. These  do, in  fact, have  a capacity for social  control to prevent
+free-riders  in  situations  of land  scarcity,  and  this  secure  tenure  ensures  a  future
+income  stream  and  makes  the  farmer  a  better  credit  risk  even  while  his  land
+may  not  be  mortgaged. 2  Liberal  economic  theories  also  assume  a  wider  range
+of choices  for  actors  than  is  available  to  non-elites  in  rural  African  society.  The
+recommendations  of specialization  in production and minimization of risk through
+the  market  ignore  the  absence  of  developed  and  reliable  markets  for  goods,
+insurance,  credit  and  capital,  and  the  resulting  lack  of transactional  flexibility.
+The traditional systems  are  two steps ahead  of the  economists. The risk-spreading
+strategies  in  traditional  production  techniques  and  tenancy  arrangements  create
+a  production  flexibility  that  substitutes  for  transactional  flexibility."'
+
+The  accuracy  of land  prices  in  a  free  market  in  Africa  and  the  development
+of an  ancillary credit  market  are also basically  questionable.  Land  may also  have
+value  as  a  source  of  social  identity,  and  offers  financial  security  compared  to
+other investments,  including  capital,  in  economies  with high  inflation and  where
+relatively  few  other  investment  opportunities  exist.  Elites  may  thus  accumulate
+land  for  uses  other  than  as  a  productive  resource,  though  they  may  not  be
+efficient  farmers,  moving  the  land's  price  away  from  its  marginal  productivity.
+Speculation  in  land  could  produce  bubbles,  pricing  the  poor  out  of the  market
+and  sacrificing  the  scarce  capital  of inexperienced  buyers  during  bubbles.  Also
+the  ancillary  credit  market  might  not develop  automatically  in  a  system with  an
+incomplete  system  of financial  intermediation  and judicial  enforcement,  as large
+borrowers  with  political  connections  could  block  the  enforcement  of debts. 1
+'
+
+Liberal  economic  theory  also  underestimates  the  rootedness  of land  tenure  in
+broader  society.  It views  many  of these  social  relations  as  simply  giving  rise  to
+market imperfections  such as  externalities  and transaction  costs, and  it measures
+the  simple economic  cost of these relations 5  using  the baseline  of a liberal  system
+of individually  held,  freely  alienable  land,  valued  as  a productive  asset.  In  fact,
+land  also  serves  social  functions,  defining  the  membership  and  status  of its  users
+and  holders,  and  spiritual  ones,  mediating  between  the  living  world  and  the
+sacred.  Liberal  economic  theory  ignores  these  relations,  which  it would upset  in
+the  name  of  efficiency,  and  the  economic  and  social  costs  that  such  change
+would entail.  If wage labourers on large farms feel that they have been dispossessed
+from  ancestral  lands,  their  employers  may  incur  increased  supervision  costs.
+Rural labourers  and even tenant farmers  may be less productive, due to alienation
+
+1  Ibid.,  112-117,  148,  183-187,  239-242; John  W.  Bruce,  Land Tenure  Issues in Project Design and
+Strategies for Agricultural Development in  Sub-Saharan Africa, LTC  Paper  128,  Madison,  1986,  24;  Van  den
+Brink  and  Bromley,  op. cit.,  n.  2,  20-22.
+
+'2  Platteau,  op.  cit.,  n.  8,  120-127;  Bruce,  op.  cit.,  n.  11,  24.
+B  Van  den  Brink  and  Bromley,  op.  cit.,  n.  2,  17-18.
+"4  Platteau,  op.  cit.,  n.  8,  70-80,  196-198,  240-241.
+'5  Bruce,  op. cit.,  n.  11,  24.
+
+Vol.  43,  No.  1 
+
+Growing Security 
+
+41
+
+from  land  and  work.  These  increased  costs  might lead  landowners  to  substitute
+capital  for  labour,  despite  prevailing  low  wages  and  high  capital  costs.  Finally,
+these processes  and government policies  may exacerbate  the gaps between  classes,
+and,  in  extreme  cases,  threaten  political  stability.' 6
+
+Small  landowners  are  also  likely  to  incur  more  debt  than  they  can  repay.
+Inexperienced  debtors  may  have  inadequate  information  about  their  future
+productivity  (especially  after  investment  in  new  improvements),  and  may  be
+pressured  by  predatory  lenders  more  interested  in  the  collateral  (the land) than
+in  the  interest. These  problems  are  internal to  land  and  credit markets  and may
+be  corrected  by  effective  regulation  and  oversight.  But  farmers  also  face  other
+fluctuating  costs,  arising  from  weddings,  funerals  and  other  social  obligations;
+new  state-related  costs,  such  as  fees,  taxes,  and  bribes;  natural  disasters  such  as
+droughts;  and  terms  of  trade  both  internationally  and  with  urban  areas  that
+often  decline  and  always  fluctuate.  All  of these  factors  reduce  farmers'  ability  to
+plan  for  debt  payments,  especially  in  the  absence  of  rural  insurance  markets.
+And  the  poor  peasants  most  at  risk  for  default  are  likely  to  be  excluded  from
+tontines and other  informal  lending  and  savings  schemes. 7
+
+Moreover,  during the  long  period of reform  and tiding,  the  several  competing
+systems  of  tenure  are  likely  to  increase  confusion  and  conflict  and  actually
+decrease  tenure  security.' 8  The  liberal  critiques  also  often  aggregate  the  negative
+individual  effects  of numerous  systems, rather than  examining systems holistically,
+individually  and  comparatively. 9
+
+Thus,  in  the  absence  of  certain  social  and  historical  conditions,  the  market
+may  fail  in  its  most  basic  function-the  efficient  allocation  of resources.  These
+conditions  include  the predominance  of arm's-length  relationships,  both  among
+parties  and  between  parties  and  the  things  contracted  for;  the  establishment  of
+universal  and  objective professional  standards  and procedural norms;  functioning
+free markets for other inputs and outputs; and the relative  autonomy of institutions
+such  as  the market  and various  state  actors. Many  of these  conditions  clearly  do
+not prevail  in  many  African  countries. 20
+
+Tenure  security
+
+The economists'  focus  on  tenure  security is not  entirely misplaced,  as a number
+of forces  may  threaten  small  farmers'  security.  But  the insecurity  of land  tenure
+in  traditional  systems  and  its  detrimental  effects  are  probably  both  overstated.
+The frequent  shifts  in land  usage  in  pre-colonial  tenure  systems  occurred  largely
+because  of  the  abundance  of  land,  not  because  of  insecure  tenure.  Many
+communal systems guarantee  usage  rights on  the  condition of continued  farming,
+providing  security  approximating  that  of freehold  title.  And  some  measures  to
+enhance  productivity,  such  as  fertilizers,  pesticides,  new  strains  of annual  crops
+and  certain  farming  techniques,  do  not  require  tenure  security,  as  they  are  not
+long-term  investments  specific  to  a  piece  of land.2'
+
+16 Platteau,  op. cit.,  n.  8, 206-216;  Caverivire  and  Db~ne, op.  cit.,  n.  3, 300-301.
+'7  Platteau,  op. cit.,  n.  8, 198-204.
+"'  Cheikhou I.  Sylla, Etude de la cuvette  de Cascas: Aspectsfonciers des aminagements hydro-agricoles, Working
+
+Paper  029,  St.  Louis,  Senegal,  1989,  2, 26;  Platteau,  op.  cit.,  n.  8,  148-152.
+
+19  Platteau,  op. cit.,  n.  8,  122-123;  Bruce, op.  cit.,  n.  11,  24.
+20 Platteau,  op. cit.,  n.  8,  233.
+21  Ibid.,  134;  Van  den Brink  and Bromley,  op.  cit.,  n.  2,  7-9.
+
+Growing Secunty
+
+[ 1999] J.A.L.
+
+There  are  nevertheless  some  reasons  to  fear  tenure  insecurity.  Governments
+seek  land  to  lease  to  agribusinesses  and  resort  operators  or  to  expropriate  for
+public  purposes,  such  as  the conservation  of environmental  resources.2  When  a
+household  expands  and  needs  additional  lands,  it  can  obtain  more  via  chiefly
+fiat  or moral  obligation to  family. Similarly,  bmigris, primarily  "sons  of the village"
+who  live  in  African  or northern  cities,  often  request  large  parcels  for prestige  or
+investment.  Village  authorities  rarely  reject  such  requests  because  these  nigrs
+remit wages  and  have  ties  to  urban  and northern  society. 23
+
+Leaving  land  fallow  can  also  threaten  a  landholder's  tenure  security.  As
+demand  for  arable  land  increases,  fallow  periods  decline  and  the land's  fertility
+degrades.  Even  with  fertilizers  or  new  techniques  or  crop  strains,  land  must  lie
+fallow  for  a  time;  this  choice  not  to  farm  land  is  a  form  of investment,  but  one
+which  must  be  secured  by  reliable  tenure.  Users  must  introduce  inputs  and
+techniques  to  keep  pace  with  increases  in  population  and  in  demand  for  land
+and  crops.  But  firm  security  of  tenure  is  important  even  with  shortened  fallow
+periods  if land's long-term fertility is to be conserved by making such investments.24
+Tenure  security  is  vital  because  of the  three  types  of costs  that  landholders
+and  users  incur  in  its  absence.  First,  landholders,  users  and potential  buyers  of
+land  with  insecure  tenure  or  unclear  tide  forgo  investment  in  acquisitions  or
+improvements,  such  as  planting  tree  crops  or  constructing  roads  or  irrigation
+works,  incurring  opportunity  costs.  In  turn,  the  forgoing  of investment  checks
+the  accumulation  of productive  capital.2"  The  lack  of formal  rural  credit  makes
+capital  formation  all  the more  important, especially where  it can  be  accumulated
+and used  through  savings  associations.
+
+Conversely,  current landholders  and users may try to minimize  their insecurity
+by  altering  their  own  investments  or  those  of  tenants.  Landholders  may forbid
+otherwise  efficient  practices  on  loaned  and  leased  land,  including  perhaps
+construction  or  tree-planting  by  tenants,  fearing  that  these  might  strengthen
+tenants'  claims  to  the  land.  Permanent  improvements  to  land  may  themselves
+be  unproductive  and  made  only  to  improve  security.  Pastoralists  and  urban
+entrepreneurs  who  are  inexperienced  at  agriculture  may  take  it  up  seeking  to
+secure  claims  to  land  for  pasture,  prestige  or  asset diversification.  In  all  of  these
+cases,  landholders  and users  are  trying to  ensure  tenure  security  using  ways  that
+do  not  maximize  the  land's  output.26
+
+Thirdly,  litigation  costs  mount  due  to  conflicting  traditional  and  modem
+claims,  unclear  boundaries  between  holdings,  government  takings  and  frequent
+conflicts  between  agriculturalists  and  pastoralists.27  And  there  is  also  a  fourth
+
+22  Platteau,  op.  cit.,  n.  8,  152;  Caverivi~re  and  Db6ne,  op.  cit.,  n.  3,  71.  Justifications  of the
+
+latter  type  may  mask  rent-seeking  behaviour  of the  former.
+
+23 Platteau,  op.  cit.,  n.  8,  170-174;  Bruce,  op.  cit.,  n.  11,  28.
+24 Bruce,  op.  cit.,  n.  11,  28;  Cleaver  and  Schreiber,  op.  cit.,  n.  6,  201.
+25  Platteau,  op.  cit.,  n.  8,  163-167.
+2,  Ibid.,  167-70;  Bruce,  op.  cit.,  n.  11,  29.
+27  Economic  changes  exacerbate  these  conflicts.  Irrigation  has  allowed  crops  to  be  grown  on
+greater  areas  over  more  of the  year,  closing  off  access  to  both  land  and  water  for  pastoralists.
+Conversely,  wells  in  the  rain-fed  highlands have  increased  the  areas where  herds can  graze,  reducing
+the  formerly  abundant  rain-fed  (i.e.,  non-irrigable)  land  usable  by low-caste  growers.  Paul  Mathieu,
+Madiodio  Niasse  and Pierre-Pol  Vinck6,  "Am~nagements  hydro-agricoles, concurrence  pour  l'espace
+et  pratiques  fonci~res  locales  dans  la  vallee  du fleuve  S~n~gal:  Le  cas  de  la zone  du  Lac de  Guiers",
+in  Crousse,  Le  Bris  and  LeRoy  (eds.),  Espaces disputes  en  Afrique  noire: pratiques, foncres locales,  Paris,
+1986,  226-227  and  233.  The  likelihood of such  conflicts  is  increased  where  the  state  explicitly  seeks
+to  "sedentarize"  herders  and where  land  laws  require  residency  on the  land in  order to  secure  usage
+rights.
+
+Vol.  43,  No.  I
+
+Growing  Security
+
+cost,  borne  by  the  entire  economy:  the  downward  effect  of insecurity  on  a plot
+of  land's  price  may  be  exacerbated  where  the  sale  occurs  in  a  black  market
+where  sales  are  officially  prohibited.  The  illegality  of the  transaction  may  itself
+further  increase  the  risk  premium,  depressing  the  land's  price  to  less  than  its
+productive  value.
+
+A residence  requirement protects  landholders  or users from  the  nzgrds, though
+not from  the  pressures  of expanding  high-status  households. But the  bnigris' value
+to  the  community  makes  enforcement  of such  a requirement  difficult  and  rare.2"
+Rather, clearer statements  and  enforcement  of traditional  rules  that protect those
+actually using the land appropriately increase  tenure  security.29 Under-investment
+may  still  result  where  traditional  systems  or  state  laws  prevent  the  free  sale  of
+land,  which would  allow complete  compensation  for investments,  in  comparison
+to  the  institutionally  different  model  of free  exchange  of land.
+
+Evidence  suggests  that  land  rights  per se  affect  agricultural  practices  less  than
+the  overall  framework  of incentives,  including  prices  for  crops,  and  for  inputs
+such  as  fertilizers,  seed  and  capital.  Land  of  higher  value  in  a  given  market
+structure  thus  provides  a  greater  incentive  for  investment."  Nevertheless,  the
+various  rights  in  land  that  a  party  may  have-including  to  security,  alienability
+and  compensation  for improvements-directly  affect price  and value.  The price
+a  landholder  can  charge  and  a  farmer  will  pay  is  partly  an  expression  of  the
+division  of rights  between  the  original  landholder  and the user  or buyer  that  the
+agreement  confers,  explicitly  or  implicitly.  The  value  of  the  land  apart  from
+these  rights-e.g., due to  factors such  as its fertility  and preceding  improvements,
+or  the  scarcity  of  land  in  the  area-may  cause  that  farmer  to  seek  increased
+security.  Cyclically,  that  increased  security  may  encourage  the  farmer  to  adopt
+technologies  that  conserve  or  enhance  resource  yields.  Therefore,  farmers  may
+implement  more  improvements  on  relatively  more  valuable  land,  and  security
+alone  may  not  be  a  sufficient  condition  for  improvements  in  many  cases,  as
+where  the  land  has  inherently  low  value.
+
+In general,  the  inability  of the poor  to  incur  risks  ensures  that  many potential
+conflicts  will  be  precluded  in  favour  of  the  higher-class  actor,  where  such  a
+differential  exists.  Existing landholders'  defensive  attitudes  in  response  to  tenure
+insecurity  also  tend to  restrict potential  tenants'  access  to land  and opportunities
+for  investment  in  it.  Finally,  insecurities  and  conflicts  allow  elites  who  best
+understand  both  the  conflicts  and  the  general  legal  and  political  system  or who
+can  marshal  the  greatest  financial  and  state  resources  to  accumulate  land  for
+themselves.3'
+
+Farm size  and organization
+
+Beyond  a  certain,  fairly  small  size,  there  is  an  inverse  relationship  between
+land's  productivity  and  farm  size  in  developing  countries,  making  large-scale,
+mechanized  agriculture  inefficient.32  A  small  family  farm  of  about  one  to  1.5
+hectares  maximizes  productivity  in  capital-poor  economies.  Smaller  plots  are
+
+28 Platteau,  op.  cit.,  n.  8, 170-174.
+29 Heath,  op.  cit.,  n. 9, 40-41.
+30  Ibid.,  35.
+31 Platteau,  op.  cit.,  n. 8, 175-182;  see  also  Cleaver and  Schreiber,  op.  cit.,  n.  6, 204.
+32  Heath,  op.  cit.,  n.  9, 47-48;  see  also,  R.  A.  Berry  and  W.  R.  Cline,  Agrarian Structure and
+
+Productiviy in Developing Countries, Baltimore,  1979.
+
+Growing  Security
+
+[1999]  J.A.L.
+
+inadequate  to  secure  the  farmer's  livelihood,  while  farms  larger  than  about  2
+hectares  begin  to  see  returns  to  land  decline,  requiring  more  serious machinery,
+and  raising  problems  of access  to  credit  or  costs  of labour.33
+
+In  general,  capital  plays  a  small  role  in  this  development  because  revenues
+may  not  cover  the  costs  of  machinery  or  capital-intensive  improvements  at
+all,  given  often  overvalued  exchange  rates  and  low  world  prices  for  primary
+commodities.  Labour  costs  are  typically  low  enough  that  it  is  not  profitable  to
+substitute  capital  investments  for  labour.  Hence,  large-scale  agriculture  does  not
+achieve  the  usual  economies  of scale.
+
+Large  farms  must  pay  employees  to  farm  their  land,  while  smaller  farms  use
+family  labour,  and  the  market  wage  usually  exceeds  the  opportunity  cost  of
+family  labour,  as long as  agricultural  work does not completely  crowd out  family
+labour's  household  work. 4  These  two  factors  in  combination  explain,  in  turn,
+the  lower  use  of labour  by  large farms,  in  favour  of capital.  Also  contributing  to
+the  lower  costs  of family  labour  are  the  lower disutility  of working  on one's  own
+land;  gender  and  caste  restrictions  on  working  for  a  wage,  the  ease  of  co-
+ordinating  household  and  agricultural  work  on one's  land,  and  a  risk  premium
+attached  to  uncertain  employment  outside  the  family.35
+
+A  second  series  of explanations  for  the  higher  productivity  of  smaller  farms
+focuses  on  costs  such  as  labour  supervision,  vital  on  larger  farms  but  not  on
+smaller  ones.  Large-scale  agriculture  requires  close  supervision  because  the
+quality  of the work  affects  the product.  Moreover,  a piece-wage  system  in  cereal
+culture  is  not  feasible;  under  the  more  common  time-wage  system,  employers
+must  guard  against  theft  of inputs  and  shirking,  but  family  farms  resemble  the
+piece-wage  model  in  their  incentives.  And  small  farmers  may  add  to  the
+productivity  of the  land  if they exercise  exceptional  care  in  its  stewardship  and
+have  close  knowledge  of its  physical  attributes.36
+
+Share-cropping  solves  some  of  the  problems  facing  larger  landholders 
+
+in
+labour-abundant  societies,  by  simulating  the  incentives  of  small-scale  farming.
+By  allowing  tenant  farmers  to  grow  crops  independently,  rather  than  as  wage-
+earning  employees,  the  landholder  thus  reduces  supervision  costs.  With  many
+share-croppers  and  without  having  to  pay  wages,  landholders  also  spread  the
+risk  of poor harvests between  themselves  and their tenants. The lower supervision
+to  engage  in  other  activities,  further
+requirement  also  permits  landholders 
+spreading  their risk.  Share-cropping  may also  compensate  for a lack  of available
+credit  and  crop  insurance  facilities  for  the tenant  farmer,  since  payment  for  use
+of  the  land  and  other  inputs  may  follow  the  harvest,  and  the  tenant  farmer
+assumes  less  risk  than  in  a  fixed-rent  arrangement.3 7
+
+Finally,  realizing  the  economic  advantages  of share-cropping  over  ownership
+by  the  small  farmer  requires  a  competitive  market  for  land-such  that  large
+landholders  could  obtain  rents  from  the  tenants  close  to  the  value  of the  land
+as measured  by  its productivity-and  low  transactions  costs for  arranging leases.
+As  noted,  however,  land  and  credit  markets  in  Africa  are  often  not  developed.
+
+33  Caverivi~re  and  Db~ne, op.  cit.,  n.  3,  299-300.
+34  "Family  labour"  presumably  includes  child  labour,  and  should  include  the  costs  of  forgoing
+education.  In  addition,  women's  labour  has  a low  marginal  opportunity  cost  because  women  are
+undercompensated  in  wage  labour  and  have their  home  labour  undervalued.
+
+35  Platteau,  op.  cit.,  n.  8,  51-55.
+36  Ibid.,  56-58.
+37  Ibid.,  61-63.
+
+Vol.  43,  No.  I
+
+Growing Security
+
+Fixed-rent  small  tenant  farming  therefore  provides  the  strongest  work  incentive,
+since  all  marginal  product  above  the  rent accrues  to  the  tenant.
+
+To  counteract  the  productivity  disincentives  of share-cropping  compared  to
+fixed-rent  tenancy,  the  landholders  must  closely  monitor  the  tenants  to  ensure
+that  the  tenants  use  labour  and  other  inputs  optimally-and  the  costs  of such
+supervision  may  wipe  out  the  gains  from  it.  Since  it is  rare  for  this  condition  to
+be fulfilled,  "total production would increase  and transaction  costs would decrease
+if land could be redistributed  in such  a way as  to allow  only owner-cultivation".38
+It may  be  that,  rather than  small  family farms  or  large  agribusiness  holdings,
+co-operatives  of  small  farmers  might  provide  the  greatest  efficiency."  Small
+private  co-operatives,  often  organized  around  traditional  institutions,  have faced
+few  efficiency  problems  and  have  treated  members  of different  classes  or  castes
+with  remarkable  equality.4"  Such  co-operatives  present  numerous  advantages,
+compared  to  a  system  predominantly  comprised  of small,  private  landowners:
+administering  land is  cheaper  and  easier,  since  there  are  fewer  landholders.  Co-
+operatives  allow greater flexibility in patterns of land use  with minimal transactions
+costs,  thus  diversifying  farmers'  risk, especially  if their land  is in  various  climatic
+and  soil  zones.  And members  may share  some  expensive  resources  such  as  farm
+machinery."
+
+Deeper  integration,  encompassing  labour  and  land  resources,  allows  the  co-
+to  achieve  economies  of  scale  on  labour-intensive  tasks,  such  as
+operative 
+monitoring and guarding.  Pooling of resources  also allows  efficient  specialization,
+including  in  management  tasks,  without  the  usual  increase  in risk  or  supervision
+costs.  Finally, teamwork  may  have  a  morale-boosting  effect,  especially  when  the
+tasks  are  demanding  or  repetitive.  Only  a  limited  degree  of  fragmentation  is
+possible,  however,  if the  co-operative  is  to  remain  manageable  and efficient,  and
+to  realize  some  of  these  economies.  The  inefficiencies  of  land  fragmentation,
+and  the  problem  of incentive  dilution  cut  against large  co-operatives,  especially
+where  production is not homogeneous, but depends  on the quality of the  labour.42
+Nevertheless,  the closer relationship  of workers to both the means of production
+and  managerial  decisions  may  produce  various  incentives  to  refrain  from  un-
+productive  behaviour.  Social  norms  emphasizing  discipline  and  cohesion  and
+recurring  interaction  all  protect  incentives.  The  penetration  of capitalist  modes
+of production  and  exchange,  with  their  arm's-length,  monetized  relations,  may
+erode  some  of these  norms,  but after  the  initial  period  of formation,  personal  trust,
+and  norms  and  understandings  internal  to  the  grouping  are  likely  to  be  self-
+sustaining. Finally,  these hazards  are only greater  than  those  on small, private  farms
+using  family  labour;  there  are  clearly  greater  incentives  to  refrain  from  such
+behaviour as a member of a co-operative  than  as an  employee of a large landholder.43
+
+38 Ibid.,  67.
+"  These  must  be  genuine co-operatives,  not  top-down  imitations  where  the  state  controls  the  co-
+operative.  Certain  Senegalese  parastatals  sought  to  create  farming  co-operatives,  but  treated  the
+farmers  as  labourers  rather  than  as  autonomous  entrepreneurs,  and  so  faced  the  employer's  usual
+costs,  including labour  shirking,  asset  mismanagement,  pilfering  and  underreporting  of output.
+
+40 Platteau,  op.  cit.,  n.  8,  247-252;  Madiodio  Niasse,  Les  acteursfonciers de  l'apris-barrage (rive gauche
+dufleuve  Snzigal): Pesanteurs, tensions, tendances, unpublished  dissertation,  Universit  Cheikh  Anta  Diop-
+Dakar,  1989,  93-94.
+
+4'  Platteau,  op.  cit.,  n.  8,  253-271.
+42 Ibid.,  253-271,  276-278.
+43 Ibid.,  282-289.
+
+C7owing Securi.0
+
+[ 1999] J.A.L.
+
+Technological  inputs and productivity
+
+Use of capital-intensive  technology-especially  chemical fertilizers,  agricultural
+machinery and enhanced crop strains-in developing country agriculture  appears
+to  bring the  productivity  of large  farms  closer  to  that of small  farms.'  But small
+farmers  tend  not  to  use  such  inputs  because  they  are  available  only  to  those
+with  extensive  cash  or  credit  resources.  Large  landholders  are  more  likely  to
+have  the  education,  government  contacts  and  resources  to  be  both  aware  of
+these  inputs and able to take  advantage  of them.  Large farmers  do have  a natural
+advantage  in their  capacity to take  risks  on new  technologies,  given  their superior
+access  to  credit  and  more  diversified  holdings,  and  to  take  advantage  of  scale
+economies.
+
+4 5
+
+The  levelling  of access  to  these  inputs  for  farmers  with  holdings  of all  sizes
+may  be  fiscally  unfeasible,  as  it  would  require  significant  subsidies  to  small
+farmers.  And  the  feasibility  of developing  either  a  market  for  hiring  expensive,
+indivisible  resources  to  small  farmers,  or  institutions  such  as  co-operatives  for
+joint  use  of these  resources  has  not  been  conclusively  demonstrated.'  Most  of
+these  inputs,  besides  machinery,  tend  inherently  to  raise  crop  yields.  The  use
+of machinery  does  not  necessarily  increase  productivity  over  labour-intensive
+practices,  but  it  does  replace  labour,  decreasing  supervision  costs  and  reliance
+on  more  labour-intensive  forms  of production.  If the  land  market  were  com-
+petitive,  those  with  greater  marginal  productivity-i.e.,  small  farmers-would
+simply  purchase  land  from  the  larger  farmers,  but such  markets  rarely  exist  in
+sub-Saharan  Africa.
+
+There  are  clearly  certain  inefficiencies  that  arise  from restrictions  on the  free
+exchange  of land,  but  the  liberal  economic  perspective  probably  overestimates
+both  these  inefficiencies  and the  possibility  for a privatization  and  tiding scheme
+to  correct  them. For example,  efficient  multiple-use  practices  may  restrict a user
+from  capital-intensive,  multiple-season  farming.  Even  without  such  restrictions,
+an  entrepreneur  running a  large  farm  would  probably  incur  high  supervision
+costs  and  low  labour  productivity  compared  to  a  share-cropping  system  with
+better incentives. As  a result, the  entrepreneur might substitute  capital investments
+for  labour,  despite  low  wages.  Unfamiliarity  with  the  land  and  multiple-use
+farming  might  make  the  entrepreneur  a  poor  land  manager;  and  unfamiliarity
+with  the  community  might cause  him to  make  costly errors ofjudgement.  Thus,
+the  baseline  of  the  profit-maximizing  capitalist  is  not  an  appropriate  one  for
+measuring  the  relative  costs  of traditional  land  rights.
+
+Similarly,  the  inefficiencies  of a tenure  system of the  commons,  of open  access
+to  land,  are  well  documented:  no  user  has  incentives  to  improve  the  land,  or
+even  to  ensure  the  maintenance  of  its  long-term  productivity.  Advocates  of
+property  rights  suggest  that  individual  titles  will  improve  tenure  security  and
+encourage  both  sustainable  stewardship  and  investment.  But traditional  systems
+do  provide  tenure  security,  especially where  land is  scarce  and  the user  farms  it
+continually.  Strong  traditional  institutions  can  prevent  overuse  and  abuse  of the
+commons  through  censure  or  punishment.  Finally,  tenure  security  is  not  a
+
+Ibid.,  126-127.
+
+-
+45  Ibid.,  68-70.
+46 Ibid.
+
+Vol.  43,  No.  I
+
+Growing Securit
+
+sufficient  condition  for  investment  in  the  land,  especially  where  the  land's
+marginal  productivity  is  inherently  low.
+
+Moreover,  the process  of titling  presents  opportunities  for costly  rent seeking,
+and  to  make  land  freely  alienable  would  disrupt  social  institutions  centring  on
+land.  Changing  these  social  institutions  could  conceivably  improve  equity  and
+tenure  security,  but a  titling  scheme  is  unlikely  to  produce  this  result,  given  the
+privileged  access  of  elites  to  the  state  apparatus,  and  the  prevalence  of  rent-
+seeking  behaviour  during  titling  programmes.
+
+Property  rights  advocates  nevertheless  insist  that  if African  countries  could
+create  a free  market  for  their land-i.e.,  devise  a  tidling  scheme  mostly  immune
+from  rent-seeking  behaviour  and  profound  inequalities4 7-the 
+resulting  land
+market  would resolve  the  inefficiencies  described  above.  The  emergence  of this
+market  should even  spur  the  development  of rural  credit  and insurance  markets,
+enabling investments and specialization, with transactional  risk-spreading  through
+insurance,  rather  than  production  risk-spreading.  But  non-productive  functions
+of land  are  likely  to  distort  the  market  for land.  Creditors  might  have  excessive
+leverage  over  vulnerable  borrowers,  such  as  small  farmers.  And  the  insurance
+market  is unlikely  to extend  to rural  areas  of countries  that have underdeveloped
+financial  services  in  their  major  cities.
+
+Any  scheme  seeking  to  increase  the  control  of the  small  farmer  over  his  land
+will  involve  some  form  of  official  allocation  or  recognition  of  existing  use  and
+rights  that  will  be  susceptible  to  rent  seeking.  Co-operatives  in  many  situations
+are  now  comprised  of small  farmers  with  only  usage  rights  to  their  land;  even
+where  the  traditional or modem regimes ensure  that these  use rights are  relatively
+secure,  some  remaining  insecurity  may  result  in  under-investment.  They  would
+thus  arguably benefit  from  having  freehold  title  to  the  land.
+
+LAND  TENURE  IN  THE  FUUTA  ToORO
+
+The  current  state  of  land  law,  rights,  tenure  and  policy  in  Senegal  has
+numerous  actors,  and  as  many  meanings.  The  wording  of the  law  on  land  is
+indefinite.  Understanding  land  tenure  requires  an  examination  of  the  im-
+plementation  of the  law  by  the  responsible  bodies-here,  municipalities.  In  the
+study  region,  land  tenure  relationships  still  involve  traditional  social  relations
+centring  on  land.  Traditional  elites  continue  to  enjoy legitimacy,  popularity  and
+electoral  power,  and  can  therefore  sustain,  represent  and defend  these  customs.
+National  policies  relating  to  land  use,  land  rights,  farming  and  other  natural
+resources,  also  affect  land  tenure  relationships,  as  do  other  forms  of social  and
+economic  change.
+
+A  gift  to the  Senegalese  nation: the Loi  relative  au Domaine  National
+
+The  Loi  relative  au Domaine National'  (LDN) sought  to  forge  a  middle  path
+between  "selfish  individual  ownership  and  levelling  collectivism",  typical  of the
+"third  way",  the  "African  socialism"  that  President  Senghor  proclaimed  for
+Senegal.  Senghor  believed  that the  relations  between  traditional  elites and  tenant
+farmers  were  socially  retrograde  and caused  land  degradation.  Hence,  the  LDN
+
+4' See,  for example,  that  suggested  by  Platteau,  in  ibid.,  218.
+4  Loi No.  64-46, relative au Domaine National (1964).
+
+Growing Security
+
+[1999]  J.A.L.
+
+aimed  to  suppress  the  powers  of  traditional  landholders  in  favour  of  current
+tenants.49  The  law  declared  all  land  not  already  privately  owned  to  be  the
+Domaine National, the  property  of  the  Senegalese  nation,  covering  over  95  per
+cent  of the  country's  land  area.  Thereafter,  no  private  actor  could  take  title  to
+lands  from  the  Domaine  National. Most  of  the  unregistered  rural  areas  were
+designated  zones  du  terroir, or  village  land  zones. 50
+
+The  LDN's  framers  imagined  that  decentralized  associations  of  cultivators
+would  administer  the  village  lands,  but  in  the  absence  of administrative  efforts
+supporting such co-operatives,  these did not appear on their own.  The government
+then  created  municipal  units5'  to  administer  the  land,  among  other  local  gov-
+ernmental  responsibilities;  these  have  been  integrated  into  Senegal's  national
+political-administrative  structure  and  are  largely  dominated  by  the  ruling  Parti
+socialiste (PS).
+
+The  reforms  grouped  small  numbers  of villages  into  Rural  Communities
+(Communauts  rurales),  each  of  which  is  governed  by  a  Rural  Council  (Conseil
+rual). The  community  elects  two-thirds  of the  Rural  Council's  members,  while
+representatives  of local  agricultural  co-operatives  comprise  the  remaining  third.
+These  Rural  Councils  "affect"  (i.e.,  allocate),  land  to  parties,  who  then  become
+the  affectaires  of  the  land;  the  councils  thus  take  on  the  role  of  traditional
+land  authorities.  The  council  elects  its  president  and  vice-president  internally.
+Traditional  village  chiefs,  presidents  of  co-operatives  and  councillors  whose
+primary work is not rural-often  urban elites who hail from the Rural Community
+and  have  family there-are  not eligible  for the presidency  and  vice-presidency.5 2
+But  these  exclusions  are  of  marginal  relevance  to  land  allocations,  since  the
+whole  council  votes  on  them;53  the  structure  ensures  that  elites  on  the  council
+can  limit  the  council's  encroachment  on  the  role  of traditional  authorities.  The
+council's  power to affect  land to non-familial  groupings has  allowed  co-operatives
+to  allocate  lands  internally,  but  only  as  long  as  they  comply  with  the  local  PS
+authorities.
+
+Thus, the  LDN  did  not  seek  to  effect  a massive  redistribution  of existing  land
+occupation;  rather,  it  recognizes  the  tenure  of  those  using  the  land.  But  if the
+law  were  fully  implemented  according  to  its  original  intent,  there  would  be  a
+massive  change  in  land  rights,  since  traditional  landholders  would  lose  their
+powers.  The  law  then  presumes  that  the  tenure  it  grants  will  be  passed  down
+within  families,  though  it makes  no  formal  provision  for  this  inheritance.54  The
+councils  may  also  affect  unused  land  to  new  users,  or  "disaffect"  (divest) land
+from  affectaires who  are  not  using  it.  The  councils'  decisions  of affectation  are  to
+be  based  on  the  capacity  of the  applicants,  individual  or  corporate,  for personal
+use  and  mise  en  valeur-i.e., putting  the  land  to  valuable  use  as  an  economically
+
+49  Caverivire  and  Dbne, op.  cit.,  3,  71,  225;  Sylla, op.  cit.,  n.  18,  46.
+50  Caveriviere  and  Dtbne, op.  cit.,  n.  3,  226-227;  Platteau,  op.  cit.,  n.  8,  154-155.
+5'  Loi No.  72-25, 19 juin  1972, sur la rtfome  de  I'administration territriae.
+52 Platteau,  op. cit.,  n.  8,  154,  158-159;  "Les  prerogatives  du  Conseil  rural",  (21  June,  1990)  Le
+Soleil  3;  Sylla,  op.  cit.,  n.  18,  46-47.  The  Rural  Communities  are  often  miles  apart,  and  their
+residents  often do not  know each  other.  The  Rural  Councils also lack  administrative  resources,  often
+allowing  traditional,  village-level  authorities  to wield greater  influence  than  the  councils.  Caverivire
+and  Db  ne,  op.  cit.,  n.  3,  189-190.
+
+53 Loi No. 80-14, 3juin 1980, sur la modication de  I'administration territoriale, cited  in  Caverivi~re  and
+Dbne, op.  cit.,  n.  3,  178.  These  decisions  must  then  be  approved  by  the  sub-prefect,  per  a  1986
+decree.  Dicret No.  86-445, lOjuin  1986, cited  in ibid.,  186.
+
+-
+
+"Les  enjeux  fonciers  dans  le  Delta:  Les  obstacles  A la  r~forme",  (21  June,  1990)  Le  Solil 2;
+
+Caverivi~re  and  D~b~ne,  op. cit.,  n.  3,  73,  207.
+
+Vol.  43,  No.  t
+
+Growing Security
+
+and  physically  productive  resource.  Only  members  of  the  community  may  be
+affectaires, thus  in  principle  preventing  outside  entrepreneurs  from  accumulating
+land  at  the  expense  of locals. 5
+
+The government  established  the  bodies authorized  by  the  1972  reforms  slowly,
+reaching  the  St.  Louis  region,  which  contains  the  study  area,  only  in  1980.56
+The slowness  of this  implementation  added to  the confusion  over tenure  security,
+with no organ to administer  the LDN and decide  land disputes in the meantime.57
+In  this  vacuum  of national  support  for  the  LDN's  implementation,  many  local
+governments  continued  to  accede  explicitly  to  traditional  authorities,  claiming
+to be unaware of the  LDN. Traditional  authorities thus maintained their capacities
+in  land  allocation  unopposed  throughout  the  1970s.Y'
+
+The  government  explicitly  foresaw  the  likelihood  of  resistance  by  traditional
+authorities  as  it contemplated  implementation  of the  law."  It was  aware  of both
+the  need  for  the  dissemination  of  information  on  the  LDN  to  rural  areas,  and
+the  underfunding of the complementary  agricultural  extension  offices,  the  Centres
+d'expansion rurale polyvalents  (CERPs).  The  1972  reforms  sought  to  address  these
+deficiencies.  But almost  20  years  after  the  creation  of the  Rural  Councils  in  the
+St.  Louis  Region,  councillors  still  claim  an  incomplete  acquaintance  with  the
+mandate  and  details  of the  LDN  and  even  with  the  territorial  limits  of their
+jurisdiction,  leading  to conflicts  between councils.60  Rural  Councils  lack  capacity
+largely because  they have  few  resources.  They have  no  funding for a  secretariat,
+or  for  remuneration  of  their  members;  very  few  councils  maintain  a  central
+registry  of affectations.  The  CERPs,  which  might aid  the  councils  in  matters  of
+land  affectation,  also  remain  "sadly  underfunded".6'
+
+The  1972  laws  provided  that  councils  could  affect  and  disaffect  land  because
+of insufficient  productive  use  ("pour insuffsance de mise  en  valeur"), because  of poor
+land  management,  or because  neither  the affectaire nor  his  family  was  exploiting
+the  land  personally.  If  the  council  finds  one  of these  violations,  it  may  put  the
+affectaire on probation;  if the  affectaire does  not remedy  the situation  within  a year,
+the  council  may  disaffect. 62  But  the  law's  acceptance  of  corporate  parties  as
+
+11 Caverivi~re  and Dbne, op. cit.,  n.  3,  73,  201;  Platteau,  op. cit.,  n.  8,  154-157.
+56 Dicret No.  80-085,  29 janvier 1980, sur  l'entrie en  vigueur  de  la  Loi  72-25 dans  [a  Rigion  du 
+
+leuve,
+
+"Les  enjeux  fonciers  dans  le  Delta", op.  cit.,  n.  54.
+
+5'  Mamadou  Niang, "La  rtforme de  l'administration  territoriale  et locale  au  Stn~gal",  (1981)  172
+
+Notes  Africaines  106.
+
+58 See,  for example,  Malal N'Diaye, "Apropos du Domaine  National:  Le Toucouleur,  la  coeltume,
+et la loi",  (20 August,  1976)  Le Soleil  8.  N'Diaye,  an  adjunct  to  the  prefect  of Podor  Department,  in
+the  St.  Louis  Region,  believed  that  this  ignorance  was  wilful  and  protected  the  privileges  of  the
+religious  authorities,  who  convinced  the lower  castes  that  to  contest  traditional  land  allocations  was
+a  sin.  A  response  defended  the  local  system  as  fair  and  maintained  that  the  positions  of traditional
+authority  were  open  to all  members  of a  clan,  not  inherited.  D.  W.  Massy,  "A propos  du  Domain
+National:  Un  Toucouleur  rtpond",  (1 September,  1976)  Le  Soleil 9.
+
+59 Ministre  du  Plan  et  du  Dtveloppement,  Synthise des  rapports du  shminaire des cadres intermidiaires
+
+(1965) relative au Domaine National, Dakar,  1965,  5;  see  also  Minist~re  du Plan  et du  D~veloppement,
+Prblimes et programmes d'application de  la  Loi  no.  64-46  relative  au  Domaine National, Dakar,  1966,  12;
+Ministere  du  Plan et du Developpement,  Commission interministielle d'itude de l'application de la Loi relative
+au  Domaine National, Dakar,  1967;  Secretariat  d'Etat  auprts  du  Premier  Ministre  charg6  du  Plan,
+Communication en conseil  intenninistdriel sur le point actuel de l'application de la  loi  relative au Domaine National,
+Dakar,  1971,  10-  1.  The  1966  report  suggested  various  methods  to  disseminate  the  details  of the
+LDN  to  local  citizens  and administrators,  none  of which  was  widely  implemented.
+
+60 "La  dilimitation,  solution  idoine",  (21  June,  1990) 
+
+.e Soleil  3;  Mathieu,  Niasse,  and  Vinck6,
+
+op. cit.,  n.  27,  235.
+
+61 "Les  prerogatives  du  Conseil  rural",  op.  cit.,  n.  52;  Caveriviare  and  Db  ne,  op.  cit.,  n.  3,
+
+194-195.
+
+62  Caveriviere  and  Db  ne,  op. cit.,  n.  3,  202-203.
+
+Growng Security
+
+[1999]  J.A.L.
+
+affectaires also  allows  traditional  family  groups  to  maintain  their  land  rights.  The
+main  criterion  for  land  affectation,  the  notion of rnise en  valeur, has  also  not been
+defined  adequately,  causing  administrative  inconsistencies.  The  Rural  Councils
+thus have  sufficient latitude to maintain  traditional land tenure relations,  although
+all  uses  of land  where  neither  the  affectaire nor  his  family  are  directly  exploiting
+it,  such  as  share-cropping,  are  technically  illegal.6"
+
+The law also leaves  loopholes  and lacunae.  It generally prohibits  disaffectation
+of  land  that  a  family  has  been  farming,  but  allows  it  in  the  name  of "public
+utility".64  Traditional  authorities  have  used  this  clause  to justify  affectations  to
+their  families  of  land  already  in  use  by  other  parties.  The  requirement  that
+affectation  applications  be  written  further  limits  the  possibility  for  members  of
+low  castes  to  become  affectaires since  most  are  illiterate.65
+
+The  law  does  provide  that,  if the  council  disaffects  land  from  one party  and
+affects  it  to  another,  the  new  affectaire must  compensate  the  former  one  for
+any  improvements  made.  Similarly,  disaffectation  for  public  utility  must  be
+compensated  with  the  affectation  of  parcels  of  equal  value  elsewhere.  This
+counterweight  is of limited  use, however,  in Rural Communities  with  a minimum
+of  arable  land  remaining,  and  in  the  absence  of  a  mechanism  for  measuring  a
+land's  value.6
+
+Thus,  the  LDN  sought  to  strengthen  tenants'  and  users'  claims  to  continued
+tenure  security.  However,  the weak  council presidency  has  ensured that  the elites
+who  typically  populate  the  majority  of the  remaining  council  seats  control  it.
+The  councils'  ineffectiveness  in  implementing  the  law's  intent  is  especially
+unsurprising given that their mandate is unclear, especially the vague requirements
+of  mise  en  valeur.  Furthermore,  the  councils  rarely  have  a  clear  sense  of  the
+territorial  limits  of  their  jurisdiction,  and  lack  funding  to  support  their  ad-
+ministration.  Finally,  there  is  no  effective  oversight  of  the  councils'  activities,
+since  the  elected  elites  are  tied  to  the  prefecture  through  clientelist  networks,
+especially  through  the  Socialist  Party.  As  a  result,  traditional  land  relations  still
+prevail  in  many  parts  of Senegal.
+
+Traditional land rights in the Fuuta Tooro  today
+
+As  they  do  in  many  other  traditional  African  land  tenure  systems,  family
+lineages  traditionally  control  land in  the  Fuuta  Tooro.  In one  type  of traditional
+landholding,  the  diowre, the  landholding  family  is  that which  was  mythically  the
+first  to  appropriate  the land  by  clearing  it  of brush.  The  diom leydi,  or  master  of
+the  land,  is  the  head  of  the  lineage,  and  either  allocates  the  diowre  to  family
+members  or  loans  it  to  the  family's  clients.  The  other  major  type  of traditional
+landholding,  the  kedde  leydi,  is  a  form  of  leasehold,  usually  requiring  that  the
+farmer  pay in advance  of the farming season for  the use.  These  in-kind payments,
+the ndjoldi, are  calculated  as  a  share of the previous  year's  harvest.  Under  a rarer
+
+63  Ibid.,  203-204,  307;  Platteau,  op. cit.,  n.  8, 154-157;  "Les prerogatives  du  Conseil rural",  op.
+
+cit.,  n. 52.
+
+64  Loi No.  64-46, op.  cit.,  art.  13;  D&ret No.  72-1288, 27 octobre 1972, sur la  riforme de l'adninistration
+
+te'toriaL,  Caverivire  and  Dbne, op. cit.,  n.  3,  204.
+
+65 Caverivi~re  and  Db~ne, op.  cit.,  n.  3,  71,  205,  236.
+6  Ibid.,  206-207,  222. The  valuation  of land  is  especially  hard  to effect  and  review  in  the absence
+of a  market  for  land.  Compensation for  capital  improvements  seems  less  problematic,  in theory:  the
+former  affectaire  may at  least  claim  restitution  for  his  costs,  and  perhaps  for  the  expected  benefits  of
+the  improvements.
+
+Vol.  43,  No.  I
+
+Growing Security
+
+type of tenure,  called njimmaandi, the  lowest castes-the  alaaleydi, or landless-can
+lease  land,  paying  a  share  of the  crop,  the  assakal, to  the  landholder  after  the
+harvest, This  arrangement  is called  the  rem pethiem.  The  assakal is  usually a larger
+proportion  of the  crops  than  is  the  ndjoldi.67
+
+The  diom lydi are  usually  toorotobe, a caste of Islamic  Toucouleur cleric-warriors
+that  revolted  against  the  then-ruling  caste,  the farba, in  1776;  the farba remain
+an  elite landholding caste,  though they  lack the political authority  of the toorotobe.68
+The  toorotobe  and  diom  leydi  still  occupy  positions  of  authority  in  Toucouleur
+society,  both  as  traditional  authorities  and  through  more  modern  institutions
+such  as  the  Rural  Councils.  Women  do  not traditionally  hold  land, although  a
+woman  may  be  a  diom  leydi  or  a  tenant  if she  is  widowed  by  a  husband  who
+held  one  of these  positions.  Recently,  however,  women  have  increasingly  taken
+over  the  roles  of  controlling  land  use  and  farming  as  many  of  their  husbands
+migrate  to  African  or Northern  cities.69
+
+The  land  user,  usually  a  tenant  farmer,  also  enjoys  certain  rights.  The
+landholder  may  not  re-appropriate  land  from  the  user,  as  long  as  the  user
+continues  to  farm  or  sublet  the  land  and  to  pay  the  tribute.  Thus,  this  tenure
+system  has  individualized  aspects,  and  is  not  a  pure  communal  tenure  system
+autocratically  managed  by  the  diom  leydi.7°  These  rights  for  users  also  partly
+explain  this caste  system's enduring legitimacy  among non-elites.  Share-cropping
+arrangements,  recently  predominant  in  the  waalo-the  prestigious  and relatively
+fertile  floodplains  of  the  Senegal  River  and  its  tributaries-are  thus  not  a  new
+system.  These  old  share-cropping  arrangements  are,  however,  spreading to  new
+castes,  increasingly  replacing labour tributes  from landless  farmers of slave castes.
+Finally,  like  most  other  indigenous  African  land  tenure  systems,  this  is  a
+multiple-use  system.  Specifically,  herders  traditionally have certain  transhumance
+rights  of access  to  water  and to  crop  stubble  for  their herds  to graze;  in  return,
+the  herds  fertilize  the  land.  These  various  users  may  come  into  conflict  when
+one  of them,  usually the  agriculturalist, asserts  the full  panoply of rights  inherent
+to  affectation.
+
+Facts  on the  ground: operation  and implementation  by  the  Rural
+Councils
+
+The  national  government  has, 
+
+to  some  extent,  pressured  traditional  and
+modem  local  authorities  to  increase  access  to  fertile  lands  for low  castes.  In  the
+traditional  system,  the  slave  castes  only  farmed  millet  and  sorghum  on  the
+occasionally  rain-fed  dieri  highlands.  Now  some  are  farming  plots  in  both  the
+intermediate  foonde  lands,  newly  cultivable  because  of  irrigation  by  farmers'
+associations,  and  in  government-sponsored,  large  irrigated  perimeters  in  the
+waalo floodplain.  Younger  farmers  have formed  new co-operatives.  The  drought
+from  around  1980  to  the  early  1990s,  the  latest  period  in  a  gradual,  century-
+long decline in rainfall  that has relented in recent years,7'  and the disengagement
+of the  state  seem  to  have  engendered  solidarity  and  co-operation  among  low-
+
+67 Sylla,  op.  cit.,  n.  18,  22-24;  Niasse,  op.  cit.,  n.  40,  167-170.
+68 Niasse,  op. cit.,  n. 40,  167-168.
+69 Sylla,  op. cit.,  n.  18,  32-33,  53.
+76 Niasse,  op.  cit.,  n. 40,  168-169.
+71 Platteau,  op.  cit.,  n.  8,  175-178;  interview  with Albert  Sagna  (Director, Centre d'expansion rurale
+polyvalent, N'dioum)  and Mary  Liakos  (Volunteer, Peace  Corps,  Kahel),  in  N'dioum,  23 June,  1996;
+Niasse,  op. cit.,  n.  40,  32-36.
+
+52 
+
+Growing Securiy 
+
+[1999]  J.A.L.
+
+caste  youth,  unlike  the  shorter  drought  in  the  early  1970s,  when  the  state  was
+still  able to borrow and  spend heavily on  parastatals. Farmers also  resist becoming
+employees  of large  farms,  which  they  fear  would  transform  them  into  a  rural
+working  class.72
+
+Still,  this  result  is  unusual,  since  in  Senegal,  as  elsewhere  in Africa,  the trend
+has  been  one  of symbiosis  between  the  dominant  Socialist  Party  (PS) and  the
+local  elites;  the  PS,  through  the regional  prefect's  office,  can  directly  control  the
+Rural  Councils'  decisions  on  land  affectation.73  The  LDN  also  aids  in  the
+patronage  scheme;  its rationality,  requiring  affectaires to  have the  capacity  for mise
+en  valeur, allows  the  councils  to  allocate  land  to  those  who  can  invest  in  it.  In
+many  cases,  small  farmers  have  had  land  affected  to  them  only  because  the
+subsidies  and  loans  of the  state  have  provided  them  with  the  capacity  for  mise
+en  valeur.74
+
+In  other cases,  poor farmers  exaggerate  their capacity for mise en valeur in order
+to  ensure  that  they  meet  the hazy  criteria,  and  their  subsequent  use  of the  land
+does  not  match  the  claims.  Rural  Councils  do  not  have  the  means  to  establish
+and maintain a formal mechanism  for review  of applicants'  capacities.  Moreover,
+the  lower-caste  tenant  farmer  is  rarely  the  applicant  best  able  to  realize  the
+land's  mise en  valeur. This  effect  often  conflicts  with  the  law's  original  purpose  of
+maintaining  tenure  security  for those  actually  working  the  land.75
+
+The  requirement  that  affectaires be  members  of the  Rural  Community  should
+limit  the  Council's  power  to  make  affectations  to  entrepreneurial  outsiders  at
+the  expense  of current  farmers,  though  it  also  prevents  outsiders  from  farming
+lands  that  have  lain fallow  for decades,  held by traditional  elites  as  a secure  asset
+or for prestige.  In  these  instances,  urban entrepreneurs  may  be  better positioned
+than  local  small  farmers  to  persuade  Rural  Councils  to  loosen  traditional  elites'
+hold  on  the  fallow  land.76
+
+Some  Rural  Councils  have  also  organized  Commissions  domaniales, which  seek
+accurately  to  delimit  landholdings  with  the  assistance  of  the  CERPs  and  to
+determine  which  lands  are  currently  occupied  and in  use. 7  These  commissions
+intend  to  improve  those  land  registries  that  do  exist,  which  are  usually  poorly
+maintained  and  inaccurate,  causing  conflicts  over  boundaries.  Some  CERPs
+have  sought  to  improve  the  registries  independently  of the  councils,  but  have
+been  rebuffed.  Few councils  have  created  these  Commissions domaniales, and  almost
+none  have  used  their findings  to  disaffect  current  affectaires from  land  they  were
+not using, despite  occasional  requests  from potential  farmers.78  On the contrary,
+where  traditional  village  chiefs  have  led  the commissions,  they have  ensured  that
+
+72 Platteau,  op.  cit.,  n.  8,  178-179;  interview  with  Sagna  and  Liakos,  op.  cit.,  n.  71;  Caverivi~re
+and  Db~ne,  op.  cit.,  n.  3,  290;  Niasse,  op.  cit.,  n.  40,  92.  Government  officials  are  still  biased  in
+favour of leasing  large tracts to agribusiness  in  the  name of efficiency  and jobs for the  rural population.
+Cheikh  Thiam,  "Am6nagement  et  allocation  des  terres",  (15  November,  1993) Le  Sole'l  9,  quoting
+Alioune  Thioub  Samb,  agricultural  engineer,  SAED-Bakel.
+
+"  Decree  No.  86-445,  of  10 June,  1986,  requires  that  the prefect  approve  all  council  decisions
+
+reaarding  land.
+
+4  Interview  with  Sagna  and  Liakos,  op. cit.,  n.  71;  Caverivirre  and  Db~ne,  op.  cit.,  n.  3,  186.
+75  Interview  with  Sagna  and  Liakos,  op.  cit.,  n.  7 1;  Caverivi~re  and  D36b~ne,  op.,  cit.,  n.  3,  22 1,
+295;  Platteau,  op. cit.,  n. 8,  179-182;  Sylla,  op. cit.,  n.  18,  41;  Mathieu,  Niasse  and  Vinck  , op. cit.,
+n.  27,  230-231,  236.
+
+76  Caverivire  and  Db6ne,  op.  cit.,  n.  3,  298-307.
+77  Article  25  of Law  No.  72-25  authorized  the  councils  to  form  these  bodies.
+78  Interview  with  Sagna  and  Liakos,  op.  cit.,  n.  71.
+
+Vol. 43,  No.  I
+
+Growing Securi y
+
+affectations  to  low-caste  farmers  did  not  trample  any  traditional  landholders'
+interests.79
+
+In  the  few  cases  where  some  councillors  have  attempted  to  disaffect  the land
+from  traditional  elites  who  were  not  using  it  and  reaffect  it  to  lower-caste
+applicants,  conflicts  have  crippled  the  councils;  some  have  found  that  they  can
+only  operate  if they  refuse  to  hear  any questions  regarding  land  affectations.  In
+other  instances,  the  conflicts  have  led to  violence  between councillors  of different
+castes, occasionally requiring police intervention. In general, however, the councils
+have  not interfered  with  land allocations  by  traditional  elites,  because  local elites
+often  control  the  councils. 0
+
+On  the  other  hand,  councils  have  occasionally  affected  land  to  a  traditional
+landholder  who  wanted  to  reclaim  it  from  a  current  tenant;  this  action  directly
+violates  the guiding  principles  of the LDN which  intend for  the users  of the  land
+to  be  the  affectaires. In  one  instance,  a  landholder  threatened  to  seek  affectation
+of  land  traditionally  belonging  to  his  family,  although  the  tenant  had  farmed  it
+and  paid  the  ndoldi for  years,  as  had  his  father  before  him.  The  sub-prefect
+refused  to  approve  the  affectation  to  the  landholder,  rather  than  to  the  user,
+and  the  farmer  stopped  paying  the  ndjoldi. At  harvest  time,  the  landholder's
+family tried  to  take  the  land, and  the  national gendarmerie had  to  intervene.  Such
+disaffectations  from  low-caste  tenants  to  traditional  landholders  do  occur,  but
+only somewhat  more  frequently  than  those  in  the  other  direction;  once  land  is
+affected,  usually  to  a  landholder  but  occasionally  to  a  tenant,  disaffectation  of
+any  kind is  unusual.8'
+
+Still, the  threat of such disaffectations  is  real,  given  that traditional  leaders  are
+often both  elected  councillors  and local  PS leaders,  thus consolidating  traditional
+and  state  authority.  Although  the  minority  Patti denocratique socialiste (PDS) has
+fielded  candidates  in  some  council  elections,  few  PDS  councillors  have  been
+elected,  and  the  PDS  has  boycotted  a  number  of  elections  in  frustration  and
+protest.82  When  conflicts  do  arise  on  the  councils,  different  factions  within  the
+PS  often  find  themselves  in  opposition.  In  Mboumba,  the  national  Political
+Bureau  of the  PS  recognized  a  minority  of PS  councillors-all  members  of the
+traditional  elite-as  the  legitimate  Rural  Council;  the  other,  larger  faction  had
+sought to  loosen  the  hold of the  traditional  authorities  on  the  council.  Following
+this  incident,  the  Mboumba  Rural  Council  did  not  meet  for  over  five  years,
+fearing  violence  among  its  members. 3
+
+Finally, the councils  tend  to simply defer  to  traditional  authorities.  The  latters'
+continued  strength  is  more pronounced  in  the  middle  Senegal  River  valley  than
+in  other  parts of Senegal,  due  to  their religious  position  in  a  region  that has also
+undergone  less  economic  change  than  others.84  The  requirement  that  one-third
+of  the  councillors  be  representatives  of co-operatives  is  intended  to  dilute  the
+
+79  Ibid;  Niang, op.  cit,  n.  57,  106;  "Les  enjeux  fonciers  dans  le  Delta",  op. cit.,  n.  54.
+80  Sylla,  op.  cit.,  n.  18,  60.
+81 Ibid.,  58,  66.
+82  Interview  with  Sagna and  Liakos,  op.  cit.,  n.  71;  Caverivi  re  and  Db~ne, op.  cit.,  n.  3,  180;
+Sylla,  op. cit.,  n.  18,  62. The  toorotobe  do not  always  rule  over  these  towns  in  a  cohesive,  unassailable
+manner. In  Cascas,  a group  of toootobe  from different  parts  of the  village  attempted  an  agricultural
+project,  but,  because  of their  equal  caste  standing,  none  could  assume  a  leadership  role  and  the
+project was  abandoned.  See  Sylla,  op.  cit.,  n.  58.
+
+'  Sylla,  op.  cit.,  n.  18,  48-51,  51-54,  62.
+84  Ibid.,  48-51;  Interview  with  Sagna  and  Liakos,  op.  cit.,  n.  71;  Caveriviere  and  Dbne, op.
+
+cit.,  n.  3,  180.
+
+Growing Security
+
+[1999]  J.A.L.
+
+influence  of traditional  authorities,  but  the  co-operatives  have  usually  been  too
+politically  weak to  perform  this  balancing  function  effectively,  and  are  often  run
+by  parastatals  that  themselves  operate  within  PS  networks.  Some  council  pres-
+idents  admit  that  no  affectation  decision  is  made  without  consulting  with  the
+traditional  chiefs.  Councils  have  rejected  applications  for  unused  land  because
+the  applicants  failed to  contact the proprigaires-i.e., the traditional  landholders-
+before  submitting  the  application."
+
+Even  the  supposedly  technocratic  parastatal,  the  Sociit  d'aminagement et  d'ex-
+ploitation des  terres du  delta du fleuve  Sinigal, de la  vallie dufleuve  Sbnlgal et  de  la Falkme
+(Socit  d'amnagement et d'exploitation du delta,  or  SAED) usually  ensured  that  it  had
+the  acquiescence  of  the  traditional  authorities,  presumably  because  it  has  a
+general  interest  in  avoiding conflict  with  local  elites,  encouraged  by  those  elites'
+place  within  the  PS  apparatus.  As  the  SAED  has  disengaged  itself  from  the
+business  of  co-ordinating  farming,  it  has  left  the  traditional  authorities'  land-
+allocating  functions  intact8 6
+
+On  occasion,  lower-caste  actors,  frustrated  by  the  unresponsiveness  of  the
+Rural  Councils,  resort  to  other  means.  In  Thioubalel,  a  "conseil  de  notables"  of
+elders  formed  in  opposition  to  the  Rural  Council  and  affected  a  vegetable  field
+to  a  women's  grouping.  The  sub-prefect  warned  the  group  that  only  the  Rural
+Council  could  allocate  land,  but  the  head  of the  local  CERP delineated  the  plot
+soon  thereafter.8 7  No  conflict  resulted  from  the  actions  of the  conseil de  notables,
+perhaps  because  the  Rural  Council  did  not see  the  parcel  as  worth  a  fight  or
+the  conseil de  notables as  likely  to  prove  a  substantial  threat  in  the  future.88
+
+Despite  these  occasional  conflicts  and  irregularities,  there  is  a  perception
+among  elites  of  popular  consensus  in  favour  of  these  practices,  for  example,
+granting  land  to  bnigris. There  is  in  fact  a  lack  of consensus  on this  issue  even
+among  administrative  elites.  For  example,  some  councils  have  conflicted  with
+the  administrations  of Communes-non-rural communities,  ranging  in  size  from
+Dakar  (about a  million residents)  to N'Dioum  (about  15,000)-because  residents
+of those  Communes who  had come  from a  Rural  Community  sought to  have their
+land  reaffected  to  them,  but  met  with  opposition  from  the  councils.8 9
+
+In  all,  conflicts  occur  sporadically,  but  not  infrequently.  Municipal  ad-
+ministrations  clash  with  each  other  over  the  limits  of their jurisdiction.  Land-
+holders  or tenant farmers dispute  the limits of their parcels,  due to  the  absence  of
+documented  delineations. Agriculturalists  conflict with pastoralists over traditional
+and LDN usage  rights. Emaris and  those  who have used  the land  in their absence
+conflict  when  the  brnigns wish  to  have  land  reaffected  to  them.  Current  tenant
+farmers  or  low-caste  affectaires sometimes  come  into  conflict  with  entrepreneurs
+or high-caste  landholders when  members of either class seek to have land affected
+to  themselves.  And  Rural  Councils  and  individuals  may  oppose  state  attempts
+
+85  Interview  with  Sagna  and Liakos,  op. cit.,  n.  71;  interview  with  Abdullaye  Gallo  B.  (President,
+Rural  Council  of Gaxnadji-Sar  ),  24 June,  1996,  in  N'Dioum;  "Les  enjeux  fonciers  dans  le  Delta",
+op.  cit.,  n. 54;  Sylla,  op.  cit.,  n.  18,  64. In  Gamadji-Sar6,  the  traditional  elites  are  particularly  well
+entrenched:  Mountoga  Tall,  who  heads  the  national  T"uiane  Muslim  brotherhood  (rivals  of  the
+Mourides) hails  from  this  community;  his  brother,  Kad& Tall,  is  the  most  influential  marabout  in
+Gamadji-Sar.  See  interview  with  Sagna  and Liakos,  op.  cit.,  n.  71.
+
+'6  Niasse,  op.  cit.,  n.  40,  94.
+87  Sylla,  op.  cit.,  n.  18,  63.
+'  The  Rural  Council  appears  to  have  been  right.  I  have  found  no  evidence  of further  activity
+
+by  the  consel de notable.
+
+89  Interview  with Bi,  op.  cit.,  n.  85; see  also  "Les  enjeux  fonciers  dans  le  Delta",  op.  cit.,  n.  54;
+
+"La  d~limitation,  solution  idoine",  op.  cit.,  n.  60.
+
+Vol.  43,  No.  I
+
+Growing Securio
+
+to  redesignate  zones du  terroir as  zones pionires, lands  designated  for  parastatal  use
+or  lease  to  corporations.9"  All  of  these  conflicts  clearly  add  to  the  insecurity  of
+land  tenure  that the  farmers  face,  entailing  direct costs  of litigation  or  mediation
+as  well.
+
+Local  structures  and national  policies:  water, credit  and
+technology
+
+Land  rights  are  also  related  to  state  development  policies.  The governments
+of Mali,  Mauritania  and  Senegal,  through  the  Organisation pour la  mise en  valeur de
+la  valle dufleuve  Sindgal (OMVS),  dammed  the  Senegal  River  at Manantali,  Mali,
+primarily  to  produce  hydro-electric  power;  the  OMVS  completed  the  dam  in
+1988.  The  OMVS's  dam  at  Diama, just  above  the  head  of  the  Senegal  River
+delta,  prevents  salt  water from  the  delta from  leaching  hundreds  of miles  up the
+flat  river.  The  regularity  of flows  and  decreases  in  flooding  and  salinity  due  to
+the  dams  have  enabled  widespread  irrigation.  Early  on,  the  SAED  controlled
+most of the  irrigated  land and primarily  grew rice, but the state  has now returned
+much  of this  land  to  Rural  Councils. 91
+
+Many residents  of the area  have  opposed  the  flood  control,  however,  because
+it makes  traditional  flood-recession  agriculture  impossible,  and  harms  the river's
+ecology.  The OMVS  had  originally  intended  to  decrease  the  flooding  gradually
+to  allow  residents  to  adjust,  but  was  unsuccessful  in  replicating  flood  cycles  in
+the  early  years  of  Manantali's  operation,  especially  in  1989-1991.  During  the
+worst years of drought and inappropriate  flooding, many farmers did not produce
+enough  of their  crops  to  feed  their  families,  let  alone  to  sell.9 2  The  OMVS  is
+quite  autonomous  and  technocratic,  however,  and  did  not  respond  well  to
+farmers'  needs.
+
+The  Senegalese  government  now  favours  continuing  the  floods,  though  Mali
+and  Mauritania  prefer  the  original  policy  of gradually  phasing  them  out.  One
+local  NGO,  the  Senegal  River  Basin  Monitoring  Authority  (SRBMA),  has
+suggested  that flood-recession  agriculture's  low input costs, compared  to  irrigated
+agriculture,  are  better  suited to the  risks  inherent in farming,  including economic
+and  climatic  variations.  Farmers  can  then  devote  remaining  labour  and  capital
+to  diversified  activities  and thus  minimize  the  harm  that would  result from crop
+failure.  Such  self-insurance  might be more  valuable  than  the  increased rice  yields
+from  irrigation;  in  fact,  the  lost  value  of  fish,  sorghum  and  livestock  from  the
+floodplain  might  outweigh  the  gains  in  rice  from  irrigation  in  a  good  year.
+Moreover,  the  increased  labour  burden  for  irrigated  agriculture  is  likely  to  fall
+primarily  on  women  and  children.  And  decreasing  productivity  due  to  high
+production  costs  may  reduce  the  cohesion  and  productivity  of  co-operatives,
+ultimately  leading  to  the  shrinkage  or dissolution  of some  co-operatives. 93
+
+In  addition,  the  SRBMA  found  that  access  to  land  was  not  becoming
+more  equitable  on  irrigated  farmlands,  despite  the  OMVS's  stated  intention  of
+
+9  Di6  Maty  Fall,  "Dbveloppement  de  la  Valle:  Rien  ne  se  fera  sans  les  populations",  (16-17
+April,  1994)  Le  Soleil  4  (interview  with  Thierno  Bi,  president  of Projet  integr4  de  Podor,  a  local
+development  NGO).
+
+9" Mathieu, Niasse  and Vinck6,  op.  cit.,  n. 27,  217,  228;  Muneera Salem-Murdock  and Madiodio
+Niasse,  Land  Use,  Labour  Dynamics,  and  Household Production  Strategies:  The  Senegal River  Valley,  IDA
+Working  Paper  No.  94,  Binghamton,  NY,  1993,  1.
+
+92 Salem-Murdock  and Niasse,  op,  cit.,  n.  91,  6-7,  13.
+93  Ibid.,  8-12,  19.
+
+Growing Securiy1
+
+[1999]  J.A.L.
+
+increasing lower castes'  control  over productive  lands.  The  toorotobe had acquired
+a  disproportionate  quantity  of  the  new  irrigated  perimeters,  as  had  the  sebbe,
+another  high caste.  On the other  hand,  low-caste gniegnbe, artisans, and  mathioube,
+former  slaves,  have  had  limited  access  to  the  new  irrigated  perimeters.  The
+castes  have  thus  remained  stratified  in  their  access  to  land.94
+
+To  the  extent  that  irrigated  land  has  been  transferred  from  former  elites  to
+small farmers,  some  was  illegally  sold.  Because  the  users'  tenure  is  thus  insecure,
+they are  likely  to  under-invest  in  their land.  Higher  castes  have  also  transferred
+some  irrigated  perimeters  to  lower  castes  by  traditional  loans,  which  are  also
+illegal.  Most  of  the  lower  castes'  wealth  derives  from  these  leased  lands,  but
+these  relations  require  the  highest  payment,  the  assakal, to  landholders.  To  the
+extent that lower-caste  farmers have  gained access to the irrigation works, capital-
+poor  farmers  of small  plots  rely  on  credit  from  higher  castes  or  the  state;  the
+SRBMA  concluded  that  these  small  farmers  are  thus  merely  "disguised  wage
+labour".  Finally,  many  of the  new  irrigated  perimeters  are  undertaken  primarily
+to  obtain  governmental  incentives;  they  are  not  independently  sustainable  in-
+vestments  and pursuing them frequently  requires  the  abandonment  of other, still
+viable  perimeters."
+
+Opposition  to  the  flood  control  never  fully  faded,  and  flooding  resumed
+successfully  in  1994.  The  continued  flooding  has  meant  that  only those  parties
+with  resources  sufficient  to  construct  flood-protection  levees,  typically  outside
+entrepreneurs  and foreign  agribusinesses,  can  safely  invest  in  irrigation  works  in
+the  waalo  and  have  multiple  growing  seasons.96  The  demand  for  the  highest
+lands,  the  dieri,  which  are  rain-fed  and  difficult  to  irrigate,  has  not  risen
+significantly.  But  the foonde  lands,  between  the  waalo  and  the  diet/,  have  been
+more  easily  irrigated,  especially  in  village  perimeters.  The  demand for  and value
+of  illegal  leases  on  these  lands  have  risen,  and  farming  has  been  increasingly
+individualized-i.e.,  lease parcels have  become smaller and more numerous--due
+to  the  increased  demand.  Outright  sales,  also  illegal,  do  not  appear  to  have
+increased,  however,  and  landholdings  by  affectation  have  also  not  become
+substantially  more  fragmented. 97
+
+Thus,  the  technological  changes  wrought  by  the  state  have  resulted  in  some
+new patterns  of demand  for and  usability of land. These patterns  have  somewhat
+destabilized  traditional  social  structures  and  their  modes  of  access  to  land,
+especially  where  low-caste  gniegnbe  and  mathioube,  often  in  co-operatives,  have
+gained  access  to  land.  But  these  effects  have  been  limited  and,  because  leases
+are  illegal  under  the  LDN,  tenant  farmers  typically  do  not seek to  have  the land
+affected  to  them.
+
+The  limited  availability of credit clearly  limits  farmers'  opportunities  to  invest
+in  their  lands.  Most  farmers,  including  the affectaires, do not  have  full  title  to the
+land, nor much other property  as collateral.  This lack directly  slows  development
+by  depriving  the  farmers  of  the  means  of  improving  land.  It  also  operates
+indirectly:  elites  with  better  access  to  capital  have  a  greater  capacity  to  effect
+
+94  Ibid.,  16;  Niasse,  op. cit.,  n.  40,  170.
+95  Salem-Murdock  and  Niasse,  op.  cit.,  n.  91,  16-17.
+96Interview  with  Sagna  and Liakos,  op.  cit.,  n.  71;  Mathieu,  Niasse  and  Vinck6,  op.  cit.,  n.  27,
+
+232.
+
+97 Platteau,  op.  cit.,  n.  8,  142-143;  interview  with  Sagna  and  Liakos,  op.  cit.,  n.  71;  interview
+
+with  BA,  op. cit.,  n.  85.
+
+Vol.  43,  No.  I
+
+Growing Security
+
+the land's  mise  en  valeur, and  are  thus  more  likely  to  have  land  affected  to  them,
+reducing  the  tenure  security  of the  (usually poorer)  farmers  on the  land.98
+
+NGOs such  as the Projet Intigri de Podor (PIP) and parastatals  such as  the SAED
+and  the  Socit!  nationale du  cridit rural (SNCR)  have  attempted  to  extend  rural
+credit themselves.99  But these  programmes  have not been  self-sustaining  because
+farmers  facing poor  weather  and unreliable  distribution networks  have  not  been
+able  to  make  regular  payments.  The  loans  are  inadequately  collateralized  by
+design  to  include  farmers without sufficient private  property,  and the NGOs  and
+parastatals  encourage  farmers  to use irrigation,  pesticides  and fertilizers  that  cost
+as  much  as  the  average  annual  earnings  from  crop  sales." °
+
+The  government  has also  promoted  climatically  unsuitable  crops,  such  as rice
+or  groundnuts,  especially  through  the  SAED,  to  meet  high  demand  in  the
+consumer  market.  Rice  in  particular  requires  extensive  irrigation.  In  addition,
+growing  only one  or  two  crops  increases  the  risk  to  the  farmer,  compared  to  a
+more  diversified  portfolio  of  crops.  The  policy  of  financing  and  subsidizing
+irrigation  and  providing  inputs  is  intended  to  decrease  opposition  by  farmers  to
+the  Manantali  Dam: consideration  of agricultural  issues  were  secondary  to power
+generation  in  the  planning  of the  dam  and  intended  mainly  to  counteract  the
+harm  done  by  the  disruption  of the  floods.'
+
+The  early  stages  of government  disengagement  also  contributed  to  farmers'
+indebtedness.  During  this  period,  the  SAED  and  the  Office  national de  coopiration
+et  assistance pour  le  diveloppement  (ONCAD)  undertook  projects  that  could  be
+rentabilisis-i.e., that  could  generate  a  profit-to  defray  the  high  cost  of  the
+Manantali  and  Diama  dams. The  SAED  expanded  its credit operations  and cut
+back  on  its  direct  subsidies,  but  still  endorsed  improvements  as  conditions  for
+obtaining  credit.  These  programmes  failed  to  consider  farmers'  general  lack  of
+access  to  insurance  markets,  or  even  to  the  monetized  economy."2  The  attempt
+to  rentabilize the  projects  has  failed  as  many  farmers  have  defaulted  on  their
+loans. 103
+
+These  failures were  especially  acute  during  the  low-rainfall years  of the  1980s
+and early  1990s; because  of these defaults, the government has often  appropriated
+the land itself and leased  it  to foreign  agribusinesses,  or turned  a blind  eye  when
+Rural  Councils  have  affected  land  to  outside  entrepreneurs.  These  practices
+highlight  the  contradiction  in  the LDN  between  the  goals  of securing  the tenure
+of farmers  already working  the land  and local  control  over  allocation,  and those
+of maximizing  domestic  crop  production.° 4
+
+The  irrigated perimeters  also often  fail  to  increase  crop yields,  in  part  because
+the  farmers  may  lack  adequate  training  in  the  construction  and maintenance  of
+the  perimeters.  Irrigation  works  are  frequently  without  appropriate  drainage
+
+98 Other  factors  also  slow  development  such  as  lack  of access  to  reliable  distribution  networks,
+the  state's appropriation  of large  tracts  of land (though this  practice  has abated  in recent  years),  and
+uncertainty  about  the  status  of Mauritanian  refugees.  See  Fall,  op.  cit.,  n.  90,  4;  Niasse,  op.  cit.,  n.
+40,  93-94.
+
+and  Deb~ne,  op.  cit.,  n.  3, 282-283.
+
+9  Fall,  op.  cit.,  n.  90.
+'0 Interview  with  Sagna  and  Liakos,  op.  cit.,  n.  71;  Niasse,  op.  cit.,  n.  40,  93-94;  Caverivire
+"0I Fall,  op.  cit.,  n.  90;  "Les  enjeux  fonciers  dans  le Delta",  op.  cit.,  n.  54.
+102 Interview  with  Sagna  and  Liakos,  op.  cit.,  n.  71;  interview  with  Amadou  Sow  (president  of
+Gestion villageoise de t'espae naturel de Podor, N'dioum),  24 June,  1996,  in  N'dioum;  Fall,  op  cit.,  n.  90;
+"Les  enjeux fonciers  dans  le Delta",  op. cit.,  n.  54.
+
+:03 Niasse,  op.  cit.,  n.  40,  92.
+'4 Mathieu,  Niasse  and  VinckE,  op. cit.,  n.  27,  236-237.
+
+Growing Secuf1 
+
+[1999]  J.A.L.
+
+A
+
+networks,  and  the  standing  water  causes  salts  to  leach  up  from  beneath  the
+surface.  This  process  facilitates  increased  crop  yields  in  the  short  term,  because
+of  the  more  intensive  use  of the  water,  but  the  rapid  salinization  of  the  soils
+causes  substantial  decreases  in  crop  yields  within  three  to  four  years.  The  land
+then takes  years  to recover  from  this  unproductive state.  Farmers  then leave  this
+land,  and seek  new allocations  of unused  plots  and  subsidies  for their  irrigation,
+resulting in an "itinerant  irrigated agriculture"." 5 In such a system, tenure  security
+becomes  unimportant  because  the  investments  actually  decrease  productivity  in
+the  long  term.
+
+The  state  has  not  adequately  funded  efforts  by  the  CERPs  to  remedy  this
+situation,  and  the  problem  has worsened  since  control  of the  perimeters  passed
+from  the  SAED  to  the  Rural  Communities,  which  lack  any  technical  expertise.
+The  benefits  of increasing  technical  expertise  may  be  limited, however,  as  even
+the  best-drained  irrigation  systems  cause  some  salinization  of  topsoil't 6  Some
+have  suggested  that  the state  should  completely  disengage  from  agriculture  and
+stop  subsidizing  irrigation  entirely." 7
+
+Proponents  of technical  training  insist that  the technical  complexity  of capital
+improvements  and  new  techniques  are  a  significant  but  surmountable  obstacle
+to  development,  and  that  training  complements  development.  Or  farmers  may
+become  intimidated  by  costs  and  the  complexity,  and  decide  not  to  undertake
+the projects. 8  But,  as mentioned,  the  national  government  has  withdrawn  from
+agriculture  since  the  mid-1980s,  under  structural  adjustment  programmes,0 9
+which  at least  promises to  reduce  the  effects  of the costly  and inappropriate  loan
+schemes it has  thrust on  local  farmers.  Still,  many  farmers  remain  indebted,  and
+the  government's  withdrawal  of technical  support  has  led  to  the  degradation  of
+soils.  In  any case,  the withdrawal  of the  state  cannot  improve  the  security  of the
+small  farmer's  tenure  and  private  rural  credit  has  not  appeared  now  that
+conditional  state  credit  has dried  up.
+
+NGOs including  the  Projet Integri de Podor (PIP) and  the  newer  Gestion villageoise
+de 1'espace naturel de Podor (GVEP) probably  cannot change  the  institutional  regimes
+that define  land  rights  in  the  study  region.  They  can,  however,  assist  farmers  in
+improving  their  productivity  and  incomes.  Cyclically,  increased  assets  may  also
+eventually  improve  farmers'  access  to  credit;  and  both  greater  wealth  and  the
+participatory modes of these  NGOs strengthen farmers'  institutions,  their position
+in  rural  society  and the  security  of their  tenure.
+
+Local  NGOs  have  attempted  to  popularize  methods  of resource  conservation
+and  assessment."0  As  a  result,  communities  have  developed  and  implemented
+their  own  natural  resource  management  plans.  The  participatory  assessments
+have  also  led  the  farmers  to  request  further  training  where  they  see  a  need. At
+the  very  least,  farmers  will  presumably  develop  a  sense  of  ownership  of these
+
+105 Thiam,  op.  cit.,  n.  72.
+
+06  Ibid.
+07  Caverivi~re  and  Db6ne,  op.  cit.,  n.  3,  293.
+'0s  Sylla,  op.  cit.,  n.  18,  70.
+09  Dicret No.  87-720, 4  avril  1987, Portant le  reversement de  certaines Zones  pioniires dans  la  Zone  des
+terroirs.  The  report  accompanying  the  decree  suggested  that  local  control  would  provide  better
+resource  management.  Rapport de  la presentation du  projet du  Dicret portat le  reversement  de  certaines Zones
+pionires dans la Zone des  terroirs, Dakar,  1987.  See  also  Salem-Murdock  and  Niasse,  op.  cit.,  n.  91,  7;
+Niasse,  op.  cit.,  n.  40,  82-83.
+
+"'  GVEP has  developed  its  own Mithode accilire de recherche participative (MARP) and Mithode accedlie
+de  planfication participative (MAPP)-a  more  participatory  version  of the  Peace  Corps'  Rapid  Rural
+Appraisal-and  translated  these  tools  into  Pulaar.
+
+Vol.  43,  No.  I
+
+Growing Secuii
+
+tools  they  have  requested,  and  should use  and  maintain  them  more  consistently
+than  they  did  under  state-imposed  plans.  Finally,  GVEP  is  attempting  to
+understand  and catalogue local, traditional  measures for maintaining or increasing
+productivity,  which  may be  transferable."'
+
+These local  actors have developed  such programmes  in response  to the  negative
+effects of the programs  of the SAED,  ONCAD,  and  other development  agencies'
+programmes  on farmers'  motivation,  co-operation  and productivity.  These  effects
+resulted  from  the  agencies'  excessive  intervention  in  the  farmers'  day-to-day
+operations,  often in ignorance  of local  agricultural  conditions  and social  relations.
+In some  instances,  the SAED  usurped  the role  of the  Rural  Councils,  and  made
+affectation  decisions  on  some  of the  zones  des  terroirs. The  ONCAD  did  sponsor
+infrastructure  projects,  including  schools,  markets,  pharmacies  and  clinics,  but
+it  concentrated  these  projects  in  the  larger  towns.  Most  of the  parastatals'  lands
+have  reverted  to  the  zones  des  terroirs, under  the  Rural  Councils'  control." 2  The
+NGOs  have  attempted  to step  into  the  technical  void  left  by the  parastatals  with
+methods they consider  more  appropriate  and  sustainable. Their  long-term  effects
+have  yet  to  be  measured.
+
+There  is also  a major  recent lacuna in  the  state's  control  over rural  lands.  For
+several  years,  farmers  have  been  able  to  buy  land  already  affected  to  them, by
+ceding  a  third  of it  to  the  state  and  acquiring  freehold  title  to  the  rest,  or  by
+paying  the  state  for  title  to  the  whole  tract.  However,  the  existence  of  this
+opportunity is not  widely known,  especially in  the study  region, and most farmers
+can  afford  neither  the  large  fee  for the  purchase  of the  land,  nor  the sacrifice  of
+a  third  of  the  area.  Similarly  many  farmers  work  land  that  is  not  officially
+allocated  to  them,  and  therefore,  land  titling  has  not  yet  become  a  significant
+phenomenon.113
+
+CONCLUSIONS
+
+On paper,  the  Loi relative au Domaine national seems to  provide significant  tenure
+security,  which  should  at  least  result  in  an  optimal  level  of investment  in  land
+by the  affectaire, especially  given  its provision  for compensation  for improvements
+made.  The  administration  of land  by  the  Rural  Councils  and  the  prohibitions
+on  sales,  however,  keep  land  from being  efficiently  distributed  to  those  best  able
+to  use  it.  But this  is  a  choice  of economic  models  and  social  functioning:  rather
+than  allowing  the  often  harsh  free  market  to  operate  in  the  already  difficult
+conditions  of  the  Western  Sahel,  the  LDN  leaves  the  allocation  of land  for
+productive  use to municipal  bodies,  and prohibits  the taking  of land from affectaires
+currently  using  it.
+
+In fact,  the  system as  administered  entails  a number  of additional  costs. Lower
+castes  have  made  some  inroads  into  control  of  irrigated  perimeters,  due  in
+part  to  a  new-found  solidarity  in  some  co-operatives  and  castes.  The  LDN's
+requirement  that  the  affectaire reside  in  the  Rural  Community  strengthens  their
+claim  against  outside  entrepreneurs,  and the  requirement that  the  affectaire or his
+family  farm  the  land  further  buttresses  them  against  elites  seeking  to  invest  in
+the  land.  But  the  Rural  Councils  apply  these  requirements  irregularly,  if at  all,
+
+.. Interview  with  Sagna  and  Liakos,  op.  cit.,  n.  71;  interview  with  Sow,  op, cit.,  n.  102.
+112  Niang, op.  cit.,  n.  57,  107-108;  Caverivi~re  and  Db~ne,  op. cit.,  n.  3,  306.
+113  Interview  with  Gaspar  Goumis  (private  farm  owner,  Casamance),  13  June,  1996,  in  Dakar;
+
+"Les  enjeux  fonciers  dans  le  Delta:  Les  obstacles  A la  rfforme",  (21  June,  1990) Le  Soleit  2.
+
+Growuing Secuiy
+
+[1999] J.A.L.
+
+and the  reading  of the  LDN  dictating  that  the  council  should  affect  land  to  the
+party  able  to  use  it  most  productively  may  be  used  to  support  allocation  to
+wealthy  entrepreneurs.
+
+This  mandate  of  optimal  productive  use  thus  often  conflicts  with  the  re-
+quirement  that  those  using  their  land  be  allowed  to  continue  doing  so,  where
+the current users are  poor farmers,  as well as with the  personal  use and (sometimes)
+the  residency  requirements.  The  contradiction  between  these  mandates  allows
+councils  to  choose  an  outcome  on other  bases  and justify  it as  they  will.  When
+conflicts  do arise  between  users  and  elites,  the  elites almost  always  prevail,  even
+when  the  lower-caste  parties  have  a  faction  of councillors  behind  them.  All  of
+these  patterns  weaken  the  small  tenant  farmer's  tenure  security,  as  do  conflicts
+due  to  unclear  boundaries.
+
+A cadastral survey  could resolve  at least the conflicts  relating to the delineations
+of individuals'  holdings  and  municipalities'  jurisdictions.  To  date,  its  costs  have
+remained  prohibitively high.  But  there  are  also  traditional  methods  to define  the
+limits  of land."'  Thus,  the  absence  of a  cadastral  survey  is  felt  mainly  in  the
+context  of more  modem  situations  and  institutions  that  exceed  the  boundaries
+of  small  traditional  communities,  such  as  Rural  Communities.  In  short,  the
+current  land  tenure  system  needs  a  cadastral  survey  mainly  to  resolve  the
+significant  problems  created  by  modern  land  tenure  issues.
+
+In  a  sense,  the  very  existence  of the  Rural  Council  may  itself generate,  or  at
+least  extend  conflict.  The  possibility  of contesting  another's  claim  to land  before
+the  council, where  this  organ  is distinct  from  the  traditional  authorities,  provides
+an  alternative  arena  for conflicts  over land.  The possibility  of taking  conflicts  to
+this  second arena may extend them beyond the point where traditional  authorities
+would  have  resolved  the  conflicts  in  favour  of one  party.
+
+The  small farmers  can  only rival  the  investment  capabilities  of elites  with  state
+assistance,  which still comes with  strings  of heavy  and often inappropriate  tutelage
+attached.  This  state  involvement  usually  results  in  sub-optimal  productivity,  in
+spite  of the  farmers'  enhanced  investment  capacity.  Alternatively,  small  farmers
+lie  about  their  investment  capacity  in order  to  have  land  affected  to  them,  with
+the  result  that  their  productivity  does  not  meet  the  claims  of  their  affectation
+applications.
+
+Instability,  vagueness  and  insufficient  capacity  seem  endemic  to  state  action
+in  Senegalese  agriculture.  Parastatals,  large  corporations  and  local  actors  have
+been  engaged  in  a  tug-of-war  over  the  last  25  years,  with  decreasing  state
+the  last  decade.  Recently,  the
+involvement  in  agriculture  in  approximately 
+government  has  turned  a  blind  eye  on  the  occasions  where  the  councils  have
+themselves  taken  these  large  tracts  formerly  run  by  parastatals  and  leased  them
+to  corporations.  This  shifting  matrix  of  actors  and  authority.can  only  weaken
+the  perceived  and  actual  security  of the  users  of the  land.
+
+Similarly,  Rural  Councils  could  improve  their  administration  of land  affecta-
+tions by maintaining accurate  registries and by establishing  Commissions domaniales,
+but these tools require unavailable  resources  and political  will.  Where the councils
+have created such commissions,  the latter have  been largely co-opted by traditional
+elites.  The  few  instances  where  the  commissions  have  operated  independently,
+or  where  some  portion  of the  councils  has  sought  to  protect co-operatives  from
+
+"M  Caverivi~re  and  Db  ne,  op.  cit.,  n.  3, 298-299.
+
+Vol.  43,  No.  I
+
+Growing  ecurio
+
+expropriations  by  elites  have  typically  led  to  conflict  and  a  breakdown  in  the
+council's  operations.
+
+Therefore,  land  users'  relative  powerlessness  raises  equity  concerns,  while
+tenants'  traditional  obligations-and  their  insecurity  due to  conflict  and the  legal
+bias  against users  with  lesser  investment capabilities-entail  efficiency  costs.  The
+recent  responses  of  local  NGOs  reflect  this  insecurity:  rather  than  assisting
+farmers  in  installing  land-specific  improvements,  such  as  irrigation  works,  the
+NGOs  have  largely  undertaken  projects  that  build  transferable  capacity  and
+skills.  The  ultimate  removal  of  land  from  the  control  of  local,  small  farmers
+probably  has  its  own,  further  efficiency  costs,  since  small  farms  produce  more
+efficiently,  especially where  the  cost of labour  relative  to capital  is low  and where
+the  small  farm  uses  family  labour.
+
+In  comparison,  a purely  traditional  tenure  system  may actually  provide  more
+secure  tenure, especially where the  reciprocity  of feudal or caste  relations remains
+strong.  The  landholders  have  few opportunities  to  remove  the users  of the land,
+as  long  as  the  latter  continue  to  use  the  land  productively  and  to  pay  the
+appropriate  share  of the crops. The increasing  monetization  of the rural  economy
+and  mobility of rural populations  probably have weakened  the sense  of reciprocal
+obligation  between  elites  and  small  farmers,  but  it  should  not  be  taken  for
+granted that traditional  tenure  systems  are automatically  less secure  than modern
+ones.  The  traditional  tenure  systems  in  the  Fuuta  also  provide  a  form  of credit,
+the njimaandi where  the assakal is paid  after  the land has been  farmed.  In  contrast,
+farmers  of kedde leydi, pay the ndjoldi share  before planting. The difference  between
+the  ndjoldi  and  the  assakal-the latter  is  typically  a  larger  share-represents
+interest.
+
+The  continued  strength  of the  traditional  elite  largely  results  from  the  lower
+castes'  general  support  of  traditional  structures,  in  part  for  religious  reasons.
+Land  users'  strong  resistance  to  becoming  a  "rural  working  class",  especially
+in  the  traditional  system  of  share-
+compared  to  their  relative  acquiescence 
+cropping,  demonstrates  this  support.  That  Rural  Councils  controlled  by  tra-
+ditional  elites  can  resist  the  creation  of  Commissions domaniales plainly  conceived
+to  further  the  explicit  technocratic  ends  of  the  LDN  also  shows  the  strength  of
+these  elites  relative  to  the  state  apparatus.
+
+Creating  a  more  equitable  or  efficient  system  would  require  the  redefinition
+of underlying  social  and  religious  tenets  and  relations,  a  process  that  may  have
+begun.  Some  lower-caste  actors  have  wilfully  challenged  the  traditional  elites.
+Some  elite  landholders'  self-designation  as propriitaires, a concept  that violates  the
+traditional  narrative  of communal  ownership,  may have  emboldened  the  lower-
+caste  claimants.  On  the  other  hand,  the  elites'  symbiotic  relationship  with  the
+national  PS  gives  them  bureaucratic  legitimacy  as  well.  The  costly  current
+conflicts  and  the  insecurities  they  produce  are  proliably  less  than  the  conflicts
+that  could  arise  if traditional  elites'  authority  were  more  seriously  challenged.
+
+Land  users'  resistance  to  becoming  a  "rural  working  class"  also  underlines
+their  sense  of  spiritual  attachment  to  the  land,  which  a  traditional  patron's
+control  does  not  interrupt  while  a  capitalist  employer's  does.  This  attachment
+creates  doubts  as  to  whether  a  system  of  freely  alienable,  individually-owned
+land would,  in  fact,  be  more  efficient,  since  users  value  it  for its  spiritual  worth
+as  well  as  for its  productivity.  Economists  might  view  a  valuation  that  does  not
+reflect  economic  production  as  a  market  failure  that  should  be  corrected.  But
+
+62 
+
+Grou'ng  Secufity 
+
+[1999]  J.A.L.
+
+that  view ignores  that  such  a  change  might be  impossible  to  effect intentionally,
+or that  it would  at least  require  the disintegration  of current  social  relations  and
+trust, at  a  high  cost.
+
+It  is  thus  unclear  that  "modern"  land  rights  of any  sort  are  necessarily  more
+efficient  than  the  traditional  tenure  arrangements  of the  Fuuta  Tooro.  Rather,
+the  instability  of the  current,  overlapping  forms  of authority  lend  themselves  to
+an  unpredictable  and  often  personal  and  subjective  use  of that  authority.  The
+commodification and  monetization  of rural  markets  are  gradually breaking down
+traditional  relations,  but  these  remain  strong  enough.  And  the  Senegalese
+government  has  not yet  articulated  a  coherent  plan for  commodifying land.  The
+state  and  its  Bretton  Woods  tutors  should  undertake  such  a  programme  with
+caution,  however,  given  the  historical  tendencies  for  titling schemes  to  result  in
+inequitable  and  inefficient  concentrations  of land  ownership;  a  system  aiming at
+control  of land  by co-operatives  is  better  suited  to  take  advantage  of low  labour
+costs,  and  to  prevent  the  disenfranchisement  of small  farmers.
+
+Reforms  of  the  system  require  more  participatory,  dialogic  and  capacity-
+building forms  of state  assistance,  careful consideration  of the  ecological  context;
+resistance  against  concentration 
+in  the  process  of  liberalization,  and  the  es-
+tablishment  of a firm,  transparent  and accountable  system  of administration  and
+oversight.  It  may  be  difficult  to  meet  these  conditions,  given  the  influence  of
+urban  and  traditional  elites  and  the  uprooting  of  social  relations  through  land
+that  such  reforms  are  likely  to  entail.  However,  each  of these  conditions  must
+be  met  to  end  this  period  of  unstable  land  regimes  in  the  Fuuta  Tooro  and
+establish  a  system  of  land  tenure  than  allows  the  region  to  produce  food  with
+equity  and  efficiency.
+
+EPILOGUE:  DECENTRALIZATION
+
+Recently,  the  national  government  has  continued  to  downsize,  as  part  of its
+latest  structural  adjustment  plan.  To  this  end,  it  passed  a  series  of  laws  in
+early  1996  decentralizing  authority  and  ceding  more  to  local  political  actors.
+Presumably,  this  reform  will  result  in  fewer  subsidies  to  small  farmers  and
+less  oversight  of  agriculture.  Other  than  this  effect,  it  is  difficult  to  see  how
+decentralization  will  affect  land  rights  in  rural  Senegal.  In  the  rare  instances
+where  a higher administrative  actor, such  as  the prefect,  might have  sided  against
+the elites,  the  reforms will probably constrain  him from doing so  now. Conversely,
+where  co-operatives  or other  groupings  of mostly  lower-caste  actors  successfully
+challenge  elites  at  the  Council  level,  those  elites  will  presumably  have  a  limited
+ability  to  seek  intervention  from  above.  But  these  are  cases  at the  margin,  and
+the  decentralization  is  unlikely  to  change  the  essence  of  land  rights,  given  the
+extent  to  which  they  were  already  decentralized.
+
+

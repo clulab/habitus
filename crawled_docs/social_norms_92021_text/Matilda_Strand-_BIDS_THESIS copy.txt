@@ -1,0 +1,8173 @@
+Bachelor’s in development studies 
+
+Department of Economic History 
+
+Course: EKHK18, 15 hp 
+
+Supervisor: Ellen Hillbom 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+The gender gap in agricultural 
+
+productivity 
+
+~  
+
+A case study of rice farming in the River Delta 
+
+Valley in Senegal 
+
+ 
+
+ 
+
+ 
+
+Matilda Strand 
+
+Bachelor’s Thesis 
+
+August 2019 
+
+ 
+
+Abstract 
+In Senegal, rice plays a crucial role in combatting food insecurity since it is one of the most 
+consumed staple crops. Despite this, national rice-production is insufficient in relation to the 
+domestic demand, making Senegal one of West Africa’s most import-dependent countries in 
+rice. To combat this issue, the Senegalese government aim to reach national self-sufficiency 
+in rice production, primarily focused on the irrigated agricultural sector called the River Delta 
+Valley. Previous research has highlighted that to increase agricultural productivity; it is 
+essential to close the gender gap and to empower female farmers. This thesis has investigated 
+how gendered differences in smallholder rice production in the River Delta Valley impacts 
+agricultural productivity levels, agricultural management, and female farmers socio-economic 
+situation. The study applied a mixed-methods data collection, involving a micro-survey, 
+individual and group interviews and participating observations with both male and female 
+farmers, guided by the methodology and analytical framework called Women’s 
+Empowerment in Agriculture Index (A-WEAI). It was found that while both male and female 
+farmers have increased their rice production in comparison to the last ten years and the 
+preceding generation, gendered differences which limit females’ potential in agricultural 
+productivity remains. Some of these are inheritance and ownership of land, constraints in 
+time and workload, and limited financial resources. Finally, it was observed that while female 
+farmers had enjoyed increased economic opportunities in comparison to the preceding 
+generation, this had resulted in the transfer of economic responsibilities from males to 
+females. Ultimately, females were left with a heavier financial burden than before managing 
+their individual economy. It was concluded that female empowerment is not a linear process 
+since the improvement in one dimension of the concept might result in negative 
+consequences in another dimension. 
+
+ 
+
+ 
+
+Keywords: 
+
+Agricultural productivity, agricultural development, gender gap, empowerment, rice 
+cultivation, food insecurity, Senegal. 
+
+ 
+
+ 
+
+ 
+
+ii 
+
+Acknowledgments 
+To start, I would like to extend my gratitude to my supervisor Ellen Hillbom, for her helpful 
+directions and our inspiring discussions. Continuing, I would also like to express my sincerest 
+gratitude to all the warmhearted and helpful key informants and participant rice farmers in the 
+River Delta Valley, Senegal without whom this thesis would not be laying in your hands. 
+You all made me feel at home throughout the field study leading up to this thesis. Thank you 
+Mame Fama Seye for your big heart, open arms, kindness, and support. Thank you Mme 
+Fatou Dieng Ndiaye for welcoming me into your home as one of your own children. Thank 
+you Thierno Ngamb who helped me with valuable contacts and information. A big thank you 
+to Allison and Alexis, for my luxurious weekends in your apartment including hot showers, 
+cozy dinners, and breakfasts on the balcony. To all of you and everyone else who participated 
+and helped me throughout this process, I am forever grateful.  
+
+ 
+
+ 
+
+ 
+
+ 
+
+iii 
+
+Table of contents 
+Abstract ..................................................................................................................................... ii 
+
+Acknowledgments .................................................................................................................. iii 
+
+Table of contents ..................................................................................................................... iv 
+
+List of Figures .......................................................................................................................... vi 
+
+List of Tables ........................................................................................................................... vi 
+
+List of Abbreviations ............................................................................................................. vii 
+
+1. 
+
+Introduction ...................................................................................................................... 1 
+
+1.1 Aim and research questions.............................................................................................. 2 
+
+1.2 Relevance ......................................................................................................................... 2 
+
+1.3 Outline of the thesis.......................................................................................................... 3 
+
+2 Background ........................................................................................................................... 3 
+
+2.1 The role of rice in West Africa and Senegal .................................................................... 3 
+
+2.2 Senegal’s economy and labor force composition ............................................................. 7 
+
+3 Literature review .................................................................................................................. 8 
+
+3.1 The gender gap in agriculture........................................................................................... 8 
+
+3.2 Academic debates on African agriculture ...................................................................... 10 
+
+3.3 Empowerment of Senegalese female farmers ................................................................ 12 
+
+4 Analytical framework ......................................................................................................... 12 
+
+4.1 Agricultural transformation & the smallholder pro-poor approach ............................... 13 
+
+4.2 Women’s empowerment in agriculture .......................................................................... 14 
+
+4.3 A-WEAI and operationalization..................................................................................... 15 
+
+5 Methodology ........................................................................................................................ 16 
+
+5.1 Research design .............................................................................................................. 16 
+
+5.2 Quantitative methods and sampling- Survey ................................................................. 17 
+
+5.2.1 Micro-survey with male and female farmers ........................................................... 17 
+
+5.3 Qualitative methods and sampling- Interviews and participant observation ................. 17 
+
+5.3.1 Individual and group interviews with male and female farmers ............................. 17 
+
+5.3.2 Interviews with key informants ............................................................................... 18 
+
+5.3.3 Participant observation ............................................................................................ 18 
+
+5.4 Sampling......................................................................................................................... 18 
+
+5.5 Data analysis .................................................................................................................. 19 
+
+5.6 Biases and ethical considerations ................................................................................... 19 
+
+5.7 Delimitations .................................................................................................................. 20 
+
+iv 
+
+ 
+
+6 Analytical results ................................................................................................................. 20 
+
+6.1 The setting of data collection ......................................................................................... 21 
+
+6.2 Gender differences in rice productivity levels ............................................................... 22 
+
+6.2.1 Domain 1- Agricultural productivity ....................................................................... 22 
+
+6.3 Gender differences in agricultural management ............................................................ 24 
+
+6.3.1 Domain 2- Ownership or renting of resources ........................................................ 24 
+
+6.3.2 Domain 3- Access and control of income and credit............................................... 26 
+
+6.3.3 Domain 4- Time and workload ................................................................................ 27 
+
+6.3.4 Domain 5- Group membership ................................................................................ 29 
+
+6.4 Female farmers socio-economic situation as a result of agricultural developments ...... 30 
+
+6.5 Theoretical reflections .................................................................................................... 32 
+
+6.5.1 Agricultural transformation and the smallholder-based approach .......................... 32 
+
+6.5.2 Females empowerment ............................................................................................ 33 
+
+7 Conclusion ........................................................................................................................... 34 
+
+8 Bibliography ........................................................................................................................ 36 
+
+8.1. Printed sources .............................................................................................................. 36 
+
+8.2. Figures ........................................................................................................................... 41 
+
+8.3. Participant interviews .................................................................................................... 42 
+
+8.4. Key informant interviews .............................................................................................. 42 
+
+9 Appendix .............................................................................................................................. 42 
+
+9.1 Micro-survey (English version) ..................................................................................... 42 
+
+9.2 Female Group Interviews- Interview guide (English version) ....................................... 47 
+
+9.3 Male Individual Interview- Interview guide (English version) ...................................... 48 
+
+9.4 Summary of the data collection ...................................................................................... 49 
+
+9.5 Compilation of the micro-survey respondent’s answers ................................................ 50 
+
+ 
+
+ 
+
+ 
+
+ 
+
+v 
+
+List of Figures  
+Figure 1: West African countries’ rice imports…………………………..…………………...4 
+
+Figure 2: West African countries’ rice production…………………………..………………..4 
+
+Figure 3: The role of Rice in Senegal…………………………………………………………5 
+
+Figure 4: Senegal’s labor force composition according to the sectors………………………..7 
+
+Figure 5: The value of Senegal’s economic sectors…………………………………………..7 
+
+Figure 6: Map of locations of data collection……………………………………………….21 
+
+Figure 7: Participant farmers’ area of rice production…………………..……...……….…..23 
+
+Figure 8: Participant farmers' ownership and renting of rice plots………………………….25 
+
+Figure 9: Participant farmers' main activity on a daily basis………………………………..28 
+
+ 
+
+List of Tables 
+Table 1: Analytical framework………………………………………………………………16 
+
+ 
+
+ 
+
+ 
+
+vi 
+
+List of Abbreviations 
+ACSA 
+
+Sécurité alimentaire et Adaptation au Changement Climatique dans les 
+Systèmes Agricoles des Petits Producteurs du Delta du Fleuve 
+
+ 
+
+Food security and climate change adaptation of smallholders’ 
+agricultural systems in the River Delta Valley 
+
+FEPRODES 
+
+Federation de Groupements et Associations des Femmes Productrices 
+de la region de Saint-Louis 
+
+ 
+
+SAED 
+
+The Federation of female producers’ farmers’ collectives and 
+associations in the region of Saint-Louis 
+
+Société National d’Aménagement et d’Exploitation des Terres du Delta 
+du fleuve Sénégal et des vallées du fleuve Sénégal et de la Falémé 
+
+The national institution of construction and land-improvements of the 
+River Delta Valley and the Falémé in Senegal 
+
+UFP-Ross Bethio  Union des Femmes Productrices de Ross Bethio 
+
+ 
+
+ 
+
+The union of female producers in Ross Bethio 
+
+ 
+
+ 
+
+ 
+
+vii 
+
+1. Introduction 
+
+West Africa is largely characterized by agriculture-based economies whose small-scale low-
+productivity result in insufficient agricultural yields and food insecurity (AGRA, 2017; FAO 
+and AfDB, 2015). While at the macro level, GDP growth in African economies has been 
+rapid with some signs of structural transformation, the inclusivity of growth processes can be 
+questioned on several grounds. The prospects for leaving the agricultural sector altogether are 
+small, as shown by income data that demonstrate the persistent role of agriculture in rural 
+livelihoods across Africa as well as the poor opportunities for diversifying into high-return 
+activities outside agriculture (Andersson-Djurfeldt et al. 2018:1-2). This has led to food 
+import dependency and high exposure to international market shocks constraining countries’ 
+food security and political stability (Agarwal, 2015; Seck et al. 2010; Nasrin et al. 2015; Saito 
+et al. 2015). This is the case for the West-African staple food rice (Dawe, 2010). One of the 
+region’s most rice import-dependent countries is Senegal, ranking among the world’s top-ten 
+rice importers due to the growing population and urbanization resulting in consumers 
+increasing demand for rice (Dawe, 2010:149; Diagne et al. 2013; Seck et al. 2010; Ministère 
+de l’Agriculture, 2009). This is problematic since the global rice market is highly unstable 
+and may be magnified by the effects of global climate change, such as the increasing risk of 
+extreme weather events. This is what happened during the economic crisis in 2007–08, when 
+food prices spiraled including both rice types ‘Thai 100%’ and ‘Thai 25’ who tripled in price 
+(Senegal’s most imported rice varieties) (Dawe, 2010; Ministère de l’Agriculture, 2009; 
+Ministère de l’Agriculture et de l’Equipement Rural, 2014:77). Although the 2007–08 price 
+spike was especially dramatic, global food prices continue in an upward trend while price 
+volatility risks remain (Agarwal, 2015). In response to this, the Senegalese government 
+enforced the ‘National Program of Rice Self-Sufficiency’ (PNAR), part of Senegal’s 
+grandiose national development plan ‘Plan Senegal Emergent’ (PSE) (République du 
+Senegal, 2014; FAO, 2015; Ministère de l’Agriculture, 2009). The vision and goal of PNAR 
+is to intensify the domestic rice sector through various investments in order to increase rice 
+harvests and quality to eventually reach self-sufficiency in rice production (République du 
+Senegal, 2014). These endeavors comply well with both academics and international 
+organizations stating that increasing productivity and efficiency in developing countries’ 
+agricultural sectors is key to agricultural transformation, resilience to fluctuating food prices 
+on the global market, food security and ultimately to a nation’s development (FAO, 2011; 
+Timmer in Eicher and Staatz, 1998:113-135; The World Bank, 2007:3,95).  
+
+So, what then is needed to increase the agricultural productivity? While this question has a 
+multitude of answers and solutions, one of them did for a long time remain in the dark. This 
+solution concerns the utility of all farmers’ labor force, regardless of their gender. 
+International organizations and academic researchers agree that to realize increased 
+agricultural productivity, it is essential to close the gender gap and empower female farmers. 
+Doing so would generate development opportunities both for women in agriculture and spill-
+over benefits for their households and communities (FAO, 2011; Quisumbing et al. 2014). If 
+women had the same access to productive resources as men, they could increase agricultural 
+yields on their farms by 20–30%, which could raise the total agricultural output with 2,5-4% 
+which in turn could reduce the number of hungry people with 12-17% globally (FAO, 2011). 
+
+1 
+
+ 
+
+In addition, this can lead to more sustainable farming systems which can meet future 
+demands for food and reduce financial costs of gender inequalities generating win-win 
+opportunities for all stakeholders involved (FAO, 2011; AfDB, 2015; Quisumbing et al. 
+2014; The World Bank, 2007; The World Bank et al. 2009; Maertens and Swinnen, 2012; 
+Lopez-Carlos and Zahidi, 2005). Unfortunately, ‘closing the gender gap’ is often mentioned 
+on paper but not always achieved on the ground. This is the case in Senegal’s northern rice 
+sector the River Delta Valley where female farmers lack the same opportunities as males, 
+while the government’s goal of reaching national self-sufficiency in rice production is not yet 
+within sight (Ministère de l’Agriculture et de l’Equipement Rural, 2014:25-28, 47-50, 58; 
+Ministère de Femme, de la Famille et de l’Enfance, 2016). Given the important role of rice 
+production for Senegal’s agricultural development, this thesis takes its departure in the 
+statement that closing the gender gap in the agricultural sector has the potential to improve 
+productivity and efficiency in agricultural production (Quisumbing et al. 2014; FAO, 2011). 
+
+1.1 Aim and research questions 
+This thesis aims to explore what gendered differences exist between male and female 
+smallholders in Senegal’s irrigated rice region called the River Delta Valley, and how the 
+differences impact agricultural productivity, management, and female farmers socio-
+economic situation. As agricultural development is a slow process, the research has collected 
+participants’ insights from three points in time; present day, 10 years back and the preceding 
+generation. The insights concerning the preceding generation were gathered by interviewing 
+participants about their parents and grandparents. These three points in time were chosen to 
+account for slow changes and not solely to provide the readers with a snapshot of the present-
+day situation. The data was collected using a micro-survey, individual, and group interviews 
+guided by the methodology and analytical framework called Women’s Empowerment in 
+Agriculture Index (A-WEAI). This empirical study connects to the academic discussion on 
+the impacts of the gendered division of labor onto agricultural productivity. This aim will be 
+fulfilled through the research questions below. 
+
+Research question 1 
+
+What gender differences in productivity levels can be observed in Senegal’s 
+smallholder family rice productions in the River Delta Valley over the last 10 
+years and the preceding generation? 
+
+Research question 2 
+
+What gender differences in agricultural management can be observed in 
+Senegal’s smallholder family rice productions in the River Delta Valley over the 
+last 10 years and the preceding generation? 
+
+Research question 3 
+
+What effects have the previous developments in the River Delta Valley’s rice 
+agriculture had on female farmers’ socio-economic situation? 
+
+1.2 Relevance 
+Aside from gender equality which holds intrinsic value as it is a fundamental human right, 
+this thesis applies its relevance to the statement that closing the gender gap has the potential 
+to improve productivity and efficiency in agricultural production. As promoted by the FAO 
+
+2 
+
+ 
+
+and academic research in the field of pro-poor agricultural development; increasing the 
+understanding of women’s role in agriculture is important for social development, 
+agricultural productivity and food security purposes (Quisumbing et al. 2014; FAO, 2011). 
+These motivations are mutually reinforcing as one can help to reinforce the other 
+(Quisumbing et al. 2014:6-7). 
+
+In addition, this thesis is also relevant as it adds new perspectives to the role of female 
+farmers in the River Delta Valley’s rice cultivations by using the A-WEAI framework in a 
+qualitative/mixed method-approach. In contrast to previous research, which has utilized 
+quantitative methods to calculate present levels of female empowerment in agriculture, this 
+thesis provides qualitative insights of female empowerment over time through a mixed-
+methods data collection. The thesis also adds a new perspective by connecting gender 
+differentials in rice cultivation with their effects on smallholders’ agricultural productivity-
+levels over time. Qualitative data on gender differences in rice productivity may be useful to 
+overcome Senegal’s pertaining problems of poverty, food insecurity, inefficient agricultural 
+productivity, subsistence farming, and persisting gender gaps. In combatting these problems, 
+the thesis may prove valuable to both the Senegalese government, state employees, and civil 
+society or organizations addressing gender issues and endeavors of reaching self-sufficiency 
+in rice production. Ultimately, these issues amount to the SDG’s; 1- No Poverty, 2-Zero 
+Hunger, and 5- Gender Equality, which are vital to address in order to assist in developmental 
+processes. 
+
+1.3 Outline of the thesis 
+The thesis is structured according to the following order. While the first section introduced 
+the thesis topic, aim, research questions, and its relevance, the second section gives some 
+background information to the topic, including the role of rice in West Africa and Senegal as 
+well as an overview to Senegal’s economy and labor force composition. The third section 
+discusses the previous literature relevant to the thesis topic. This includes the gender gap in 
+agriculture, academic debates on African agriculture, and empowerment of Senegalese 
+female farmers. The fourth section discusses the thesis analytical framework based on 
+Timmer’s theory of the agricultural transformation, pro-poor agriculture, women’s 
+empowerment, and the operationalization through the A-WEAI framework. The fifth section 
+concerns the thesis methodology, divided into several subsections including, the research 
+design, quantitative and qualitative methods, sampling and analytical strategies, biases and 
+ethical considerations and delimitations. The sixth section contains the analytical results and 
+analysis, divided into five sub-sections, including, an overview of the data collection location, 
+the results according to the A-WEAI framework, and theoretical reflections. The final 
+sections include the conclusion, bibliography, and appendix. 
+
+2 Background 
+
+2.1 The role of rice in West Africa and Senegal 
+Rice is an important staple in West Africa as it is one of the most important sources of 
+calories (Grow Africa, 2019:3). Unfortunately, many West African countries are struggling 
+with increasing rice consumption, in combination with insufficient production levels. 
+Therefore, countries have turned to rice imports, to compensate for these divergent trends. 
+
+3 
+
+ 
+
+West Africa is by far the largest African region of rice imports, accounting for 60 percent of 
+sub-Saharan Africa’s imports in 2005 (Dawe, 2010:175). Looking at rice consumption per 
+capita, West African countries consume the most rice in all of Sub-Saharan Africa. The top 
+five rice-consuming countries in the region from 2000–2003 were Guinea Bissau 
+(86kg/person), Sierra Leone (83kg/person), Guinea (76kg/person), Senegal (74kg/person), 
+and Côte d’Ivoire (60kg/person) (Dawe, 2010:169). As shown in figures 1 and 2 just below, 
+while the most prominent country in the West African rice trade is Nigeria with the highest 
+numbers of both production and imports, Senegal is not far behind. Despite Senegal being 
+amongst the highest rice-consuming countries, their national self-sufficiency ratio in rice is 
+meager in comparison to their neighboring countries. Self-sufficiency ratio, which 
+summarizes the production, consumption, and trade data, has declined in Senegal from about 
+25 percent in the 1960s to nearly 15 percent by 2006 (Dawe, 2010:146). Instead, it is Mali, 
+Guinea, and Sierra Leone, which were in the top of West African rice self-sufficiency in 2016 
+(Grow Africa, 2019:5). 
+
+West African countries' rice imports
+
+(milled rice)
+
+s
+e
+n
+n
+o
+t
+ 
+0
+0
+0
+1
+
+2500
+
+2000
+
+1500
+
+1000
+
+500
+
+0
+
+Burkina Faso
+
+Côte d'Ivoire
+
+Guinea-Bissau
+
+Liberia
+
+Senegal
+
+Sierra Leone
+
+Ghana
+
+Mali
+
+Guinea
+
+Nigeria
+
+Figure 1: West African countries’ rice imports (FAO-STAT, 2019a) 
+
+West African countries' rice production
+
+(milled rice)
+
+s
+e
+n
+n
+o
+t
+ 
+0
+0
+0
+1
+
+3500
+3000
+2500
+2000
+1500
+1000
+500
+0
+
+ 
+
+Burkina Faso
+
+Cote d'Ivoire
+
+Guinea-Bissau
+
+Liberia
+
+Senegal
+
+Sierra Leone
+
+Ghana
+
+Mali
+
+Guinea
+
+Nigeria
+
+ 
+
+ 
+
+4 
+
+Figure 2: West African countries’ rice production (FAO-STAT, 2019b) 
+
+The risks accompanied with the West African nations’ high dependence on rice imports 
+become apparent, given the volatile prices on the global market. Although the price spike in 
+2007/2008, has not yet been surpassed, international prices for all rice types are steadily 
+rising and are now at their highest since 2014 (FAO, 2018a:22-23). Globally, the largest rice 
+exporting countries are situated in Asia, which on average exported 35.8 million tons of rice 
+out of the global production of 43.6 million tons, between the years 2013-2015 (FAO, 
+2018a:33). The major rice export countries include India, Thailand, Vietnam, Pakistan, but 
+also the USA (FAO, 2018a:17,33). These are also the countries who are the major exporters 
+to the Senegalese rice market, with India as the largest exporter, followed by Thailand, 
+Brazil, and Pakistan (in descending order) in the year of 2016 (The Observatory of Economic 
+Complexity, 2019). While most of the West African governments have taken action to 
+decrease dependency on rice imports by enrolling agricultural development plans to expand 
+national rice production, imports still dominate consumption (Dawe, 2010:144). 
+
+Looking at the role of rice in Senegal, this has become more prominent over the last decades. 
+In response to the increasing demands for rice, the domestic supply has also increased. 
+However, this consists predominantly of imports instead of domestically produced rice, as 
+shown in figure 3, below.   
+
+Rice in Senegal
+
+(milled rice)
+
+s
+e
+n
+n
+o
+t
+ 
+0
+0
+0
+1
+
+1200
+
+1000
+
+800
+
+600
+
+400
+
+200
+
+0
+
+Domestic supply
+
+Export
+
+Import
+
+Production
+
+ 
+
+Figure 3: The role of Rice in Senegal (FAO-STAT, 2019c) 
+
+Senegal’s rice cultivation is mainly located to the River Delta Valley in the north, in addition 
+to the Casamance region in the south. While Casamance relies on rain-fed rice due to its 
+tropical climate, the River Delta Valley is today characterized by more advanced forms of 
+agriculture including irrigation systems which were introduced not long after Senegal’s 
+independence from France in 1960 (Devey, 2000). Some decades after that, conventional 
+high-intensive farming techniques were also adopted, including fertilizer, pesticides, 
+improved seed varieties, better infrastructure and formalizations of land rights (Koopman, 
+2009; République du Senegal, 2014). The study focus on the River Delta Valley due to its 
+agricultural developments, and its many efforts to increase rice productivity (from both the 
+Senegalese government’s, private-public partnerships, private investments and many NGO’s) 
+
+5 
+
+ 
+
+in comparison to the Casamance region (Koopman, 2009; République du Senegal, 2014). The 
+Valley region is characterized by its semi-arid climate, which is typical for the Sahel (semi-
+desert) environment. The region has two cultivation season per year, which is the ‘hivernage’ 
+(wet season) and the ‘contre saison chaud’ (dry season) (Devey, 2000:14).  
+
+Historically, rice cultivation in Senegal was characterized by a gendered division of access to 
+irrigation technologies, as women traditionally cultivated rice for domestic consumption 
+being dependent on rain downfall while men cultivate rice for sales on the local market 
+(Ministère de Femme, de la Famille et de l’Enfance, 2016:76). Due to the patriarchal society, 
+men had a monopoly over productive resources (Niang et al. 2017). The beginning of 1965 
+witnessed the creation of the Société d’Aménagements et d’Éxploitation des terres du Delta 
+du fleuve (SAED), a governmental institution which over time transformed the region’s rice 
+cultivation from using rain-fed agricultural practices to using irrigated ones (Devey, 
+2000:42). This development was further motivated by a severe drought in the 1970s, bringing 
+famine to the Valley since food production largely depended on rainfall or floods (Connor et 
+al. 2008; Devey, 2000:44). In the 1990s, the IMF’s and WB’s Structural Adjustment 
+Programs released the state’s monopoly of the Senegalese rice sector in addition to 
+devaluating the national currency (CFA). This imposed a significant economic shock on the 
+River Delta Valley’s rice sector (SAED, 2001). Today, Senegal’s rice sector face many 
+problems such as; drought, soil salinity, unpredictable weather, overall increasing rice 
+consumption due to population growth and urbanization, popularity, availability and low 
+price of imported rice in combination with bad quality and value chain imbalances of 
+domestically produced rice (Ministère de l’Agriculture, 2009:1, 5; Ministère de l’Agriculture 
+et de l’Equipement Rural, 2014:28). Access to agricultural lands is also a significant problem 
+in Senegal due to renewed interest in agriculture by various stakeholders, land saturation and 
+fragmentation resulting in a decreasing number of smallholder farms. These problems seem 
+to be caused by various factors, most notably demographic growth, climate change, large-
+scale land acquisitions, state agricultural projects, and the emergence and expansion of local 
+land markets. Land governance is problematic because local producers are caught between 
+three systems: the legal system; customary norms; and actual practices on the ground (Niang 
+et al. 2017). 
+
+Looking to gender differentials in Senegal’s agricultural sector, rural women are among the 
+groups that find it hardest to access land. Rural women are constrained because of 
+sociocultural factors that deny them control over land resources, but also because the land 
+legislation that does support them is not enforced. Rural women are victims of an inequitable 
+and highly patriarchal social structure that prevents them from accessing and controlling their 
+means of production (Niang et al. 2017:9). For example, the inheritance of land still functions 
+according to customary land rights and is dependent on women’s marital status, meaning that 
+women risk losing their land if they get divorced or widowed (Koopman, 2009). Looking at 
+gender disparity statistics, Senegal’s ranking in the gender inequality index has not witnessed 
+any improvements in women’s rights. The score of 2018 was set to 0.682, in comparison to 
+0.6923 in 2013 (World Economic Forum, 2013;2018). The ranking index states that the 
+higher the score, the more gender-equal the society is. This means that Senegal’s level of 
+gender equality has decreased by 1.49 percent from 2013 to 2018. 
+
+ 
+
+6 
+
+2.2 Senegal’s economy and labor force composition 
+To better understand the role of rice in Senegal, we will now look at Senegal’s economy at 
+large, and its labor force composition, which indicates a growing service sector. While figure 
+4 indicates that the majority of the labor force have transferred from the agricultural sector to 
+the service sector, this corresponds to figure 5 indicating that the economic value of service 
+sector has increased significantly in comparison to the agricultural sector. However, it should 
+be highlighted that the informal sector in Senegal is significantly larger than the formal, 
+meaning that important information may be hidden from official records (World Bank 
+(2019). 
+
+ 
+
+ 
+
+ 
+
+Senegal's labor force composition
+
+60
+
+40
+
+20
+
+0
+
+e
+c
+r
+o
+f
+ 
+r
+u
+o
+b
+a
+
+l
+ 
+f
+o
+%
+
+ 
+
+1
+9
+9
+1
+
+3
+9
+9
+1
+
+5
+9
+9
+1
+
+7
+9
+9
+1
+
+9
+9
+9
+1
+
+1
+0
+0
+2
+
+3
+0
+0
+2
+
+5
+0
+0
+2
+
+7
+0
+0
+2
+
+9
+0
+0
+2
+
+1
+1
+0
+2
+
+3
+1
+0
+2
+
+5
+1
+0
+2
+
+7
+1
+0
+2
+
+Employment in agriculture (% of total employment)
+
+Employment in services (% of total employment)
+
+Employment in industry (% of total employment)
+
+ 
+
+Figure 4: Senegal’s labor force composition 
+according to the sectors (The World Bank Data, 
+2019a) 
+ Figure 5: The value of Senegal’s economic 
+sectors (The World Bank Data, 2019b) 
+
+ 
+
+The value of Senegal's 
+
+economic sectors
+
+s
+r
+a
+
+l
+l
+
+ 
+
+o
+d
+S
+U
+
+0
+1
+0
+2
+ 
+t
+n
+a
+t
+s
+n
+o
+C
+(
+
+)
+
+1,4E+10
+
+1,2E+10
+
+1E+10
+
+8E+09
+
+6E+09
+
+4E+09
+
+2E+09
+
+0
+
+Services
+
+0
+8
+9
+1
+
+5
+8
+9
+1
+
+0
+9
+9
+1
+
+5
+9
+9
+1
+
+0
+0
+0
+2
+
+5
+0
+0
+2
+
+0
+1
+0
+2
+
+5
+1
+0
+2
+
+Industry (including construction)
+
+Agriculture, forestry, and fishing
+
+ 
+
+The World Bank has appointed input intensification as the main driver to Senegal’s 
+agricultural growth and not increasing productivity (The World Bank, 2018:27). Other 
+obstacles to the advancement of the Senegalese economy includes; the large informal sector 
+and the limited impact of recent improvements in agricultural output and job creation, and 
+stagnation in the expansion of the formal sector (République du Senegal, 2014:25-26; The 
+World Bank, 2018:xi). To come to terms with the many obstacles Senegal’s agricultural 
+sector face, the government has initiated a number of development initiatives. The Senegalese 
+government adopted the grand national development strategy called the Emerging Senegal 
+Plan (PSE) in November 2012. PSE aims to make Senegal an emerging economy by 2035 
+through specific development strategies for each economic sector (République du Senegal, 
+2014). The agricultural development plan is called PRACAS, which includes the 
+government’s solution of mono-cropping and production specialization to reach self-
+sufficiency in rice consumption (called PNAR- the ‘National Program of Rice Self-
+Sufficiency’). This contrast sharply with the River Delta Valley’s smallholders’ farming 
+techniques which opt for crop diversification to better manage climate-risks and hunger 
+during the difficult seasons (Niang et al. 2017). On the bright side, the government has a clear 
+focus to improve the role of females in the development process. As an example, the 
+government has established an institution targeting gender equality and the promotion and 
+
+7 
+
+ 
+
+reinforcement of females’ role in Senegal. This is in charge of gender development goals 
+published in the latest report called the SNEEG, covering the period of 2016-2026 (FAO, 
+2018b:25; Ministère de Femme, de la Famille et de l’Enfance, 2016). Within the agricultural 
+sector, the emphasis is made to minimize the gender-gap by improving female farmers 
+inclusion, access to the factors of production such as land, inputs, finances, credit, 
+agricultural infrastructure, and equipment as well as reinforcement of female leadership 
+(FAO, 2018b:20,73). This is mentioned in PRACAS. 
+
+3 Literature review 
+This section of the thesis will in three subsections discuss the previous research and academic 
+debates regarding gender differences in agriculture and their impact on productivity. The first 
+will give an overview of the gender gap in agriculture as well as some academic disparities in 
+the field. The second subsection will discuss academic debates regarding the main tenants in 
+agricultural developmental research and the issue of agricultural productivity. The third 
+subsection will touch upon how female empowerment is regarded as a solution to 
+productivity deficiencies in agriculture, set in the context of Senegal. The literature review 
+has limited its focus to studies in predominantly the West African but also the African 
+context at large. 
+
+3.1 The gender gap in agriculture 
+Esther Boserup was one of the first and pathbreaking researchers on the issue of gender gaps 
+in developmental processes and the field of agricultural development. In her research, 
+Boserup has drawn explicit attention to the gendered division of labor which arises in both 
+‘traditional’ and ‘modern’ agricultural systems meaning that men and women experience the 
+transition to modernity in different ways (Boserup, 1970). Boserup argued that economic 
+development could not be fully evaluated without the recognition of the multitude of ‘hidden 
+contributions’ of women throughout the world, particularly in the form of unpaid work. She 
+discussed the gendered economy by highlighting women’s economic marginalization since 
+they earn less than men in their roles as wage workers, farmers, and traders. She also 
+highlighted that the mechanization of agriculture, which is generally equated with economic 
+development, has resulted in the separation of women’s labor from waged agricultural labor, 
+which in turn undermines their social status (Visvanathan et al. 2011:29). While the 
+complexities of women’s work had previously been ignored or downplayed, Boserup brought 
+them into the academic limelight (Quisumbing et al. 2014:8). Building on Boserup’s work, 
+the liberal feminist researchers called ‘Women In Development’ (WID), have emphasized the 
+importance of women in the development process, both for the benefits of women but also for 
+the efficiency of the development. While the WID approach was criticized for overlooking 
+the importance of social and political structures, it made an important correlation between 
+work and status which previously had been ignored (Visvanathan et al. 2011:29-30).  
+
+Today, most scholars agree that the many constraints faced by women in agriculture hamper 
+their agricultural productivity (Quisumbing et al. 2014; Croppenstedth et al. 2013; Udry, 
+1996; Udry et al. 1995; Goldstein and Udry, 2008; Diiro et al. 2018). The well-cited report 
+from FAO called “The state of food and agriculture – Women in agriculture, closing the 
+gender gap for development” made it clear that agriculture is underperforming because half 
+
+8 
+
+ 
+
+of its farmers-women- do not have equal access to the resources and opportunities in order to 
+reach full productivity (FAO, 2011). The consensus states that women in agriculture face an 
+array of gender-specific constraints based on norms and institutions on all levels of society 
+and which are engrained in the social structure. Such constraints are; limited access and rights 
+to land, credit, production inputs (fertilizer, irrigation, pesticides etc), markets, technology, 
+other agricultural assets, lower access to male labor, oxen, and extension services; and 
+difficulties in ensuring timely ploughing, weeding, or transportation etc. Women often work 
+as unpaid laborers on family farms or other fields under insecure tenure arrangements which 
+hampers investment incentives. Further, women face social restrictions in public participation 
+and mobility, which restricts their ability to function fully as farmers. Women tend to face 
+heavier workloads, while men control the generated cash. While trends differ in relation to 
+age, marital status, access to credit and extension services etc, women are overall less likely 
+to adopt yield-enhancing and soil-restoring strategies such as high yielding crop varieties, 
+improved management systems and agricultural technology (Quisumbing et al. 2014; 
+Andersson-Djurfeldt et al. 2018:2; Agarwal, 2015; World Bank 2009; FAO 2011; Doss, 
+2001; Theriault et al. 2017). These systemic productivity gaps act in favor of male-headed 
+households, while women face dual exclusions, not only because of lacking agricultural 
+assets but also because of their limited access to alternative livelihood sources outside of 
+agriculture (Andersson-Djurfeldt et al. 2018:4, 6). Another important dimension to the 
+gendered differences, throughout all sectors of women’s everyday life is called ‘women’s 
+double burden’ (Hochschild and Machung, 1990). ‘Women’s double burden’ refers to the 
+hidden and unpaid work that women do in comparison to men who only have their paid job. 
+The hidden and unpaid burden which most often is assigned to women revolves around 
+housework and the care of children which occupies their time in addition to their paid work. 
+Due to the ‘double burden,’ women end up having two jobs while men only have one 
+(Hochschild and Machung, 1990). Thus, bridging productivity differentials between male and 
+female farmers, by helping women overcome production constraints is vital as this could 
+significantly increase agricultural output (Agarwal, 2015).  
+
+Although most academics agree that women in general, occupy a disfavored role in 
+agriculture and society at large, several debates exist on the subject. Some scholars have 
+criticized both the academic research and the field at large for spreading ‘stylized facts’ about 
+women’s role in agriculture, especially in the context of Sub-Saharan Africa. Recent research 
+states that commonly cited ‘facts’ about women in agriculture are exaggerated, suggesting 
+that (1) 70% of the worlds poor are women, (2) women produce 60-80% of the world’s food, 
+(3) women own 1% of the world’s land and that (4) women are better stewards for the 
+environment (Doss et al. 2018). Palacios-Lopez et al. (2017) found that the average female 
+labor share in crop production is approximately 40%, by using individual, plot-level labor 
+input data from nationally representative household surveys across six Sub-Saharan African 
+countries. Other ‘stylized facts’ which have been refuted are that; women provide the bulk of 
+labor in African agriculture, agricultural commercialization always enhances nutrition, and 
+that labor in the agricultural sector is much less productive than other sectors (Christiansen, 
+2017). The so-called ‘facts’ are founded on the premise that women control too few resources 
+to fulfill their responsibilities to ensure food and nutrition security for themselves and their 
+families. However, critics are concerned that this promotes stereotypes of women as either 
+victims or saviors, that they treat women as a monolithic group, ignore the role of men, 
+
+9 
+
+ 
+
+communities, and institutions, and that they provide a simplistic and even misleading basis 
+for the design, implementation, and evaluation of policies and programs to promote food 
+security and advance gender equality (Doss et al. 2018; Christiansen, 2017). The confusion 
+that these debates and conflicting information create can be harmful to the continued 
+confidence in reports, publications, and campaigns by NGO’s and IO’s on the issue of the 
+gender gap in agriculture. 
+
+3.2 Academic debates on African agriculture 
+The academic field of agricultural development has been characterized by many debates, 
+resulting in shifting paradigms and new consensus on the debated topic. Three of these 
+debates will be discussed below. 
+
+The first academic debate concerns which factors that are causing the most substantial 
+productivity deficiencies in agriculture. This is complicated by the fact that it is difficult to 
+isolate social, cultural, environmental, and economic factors from one another to know which 
+one has the greatest effect on agricultural productivity. Previous research has had differing 
+results on how the social organization in agriculture, such as the gendered division of labor 
+affects agricultural productivity. Both Quisumbing (1996) and Peterman et al. (2011) 
+criticizes previous research by not accounting for gender-specific constraints when estimating 
+agricultural productivity levels, leading to distorted analytical findings stating that males are 
+more productive than females. They argue that when men and women are given the same 
+opportunities, they are equally as efficient farmers. Previous research has excluded 
+measurements on males’ and females’ differences in agricultural inputs and outputs, controls 
+for individual characteristics, such as education and physical assets, and ignoring other 
+gendered context-specific constraints. Instead, it has often been assumed that female farmers 
+are less productive due to the fact of being women and not because they had fewer resources. 
+These methodological issues have led to gender-biased research (ibid.). 
+
+The second academic debate concerns the previous main tenant of agricultural economics 
+called the ‘Pareto efficiency.’ Since this assumes that farming households share the factors of 
+production in an equal distribution (called the co-operative model), gender-specific 
+constraints remain hidden. ‘Pareto efficiency’ is based on the neoclassical theory, which 
+assumes that people behave according to the most logical reasoning and thus make choices 
+which maximize output. In the case of agricultural production, this means that intrahousehold 
+resources would be equally allocated since it would maximize its’ efficiency. This implies 
+that yields should be the same on all plots within a household in a given year (of course 
+controlling for plot characteristics) since each plot would contain one crop (Quisumbing et al. 
+2014; Croppenstedth et al. 2013; Udry et al. 1995; Udry, 1996; Goldstein and Udry, 2008; 
+Diiro et al. 2018). However, the assumption of ‘Pareto efficiency,’ has been proven wrong as 
+in much of Sub-Saharan Africa since different members of the household simultaneously 
+cultivate the same crop on different plots while gaining different sized harvests and incomes 
+(Udry et al. 1995; Udry, 1996; Quisumbing, 2003:58-62). Further on, the management of 
+African farming households is very complex, including gendered divisions of labor, which 
+more resembles split economies rather than the pooling of resources (called the non-co-
+operative model). In the non-co-operative model, resources are unequally allocated within the 
+household which poses negative effects on the household productivity (Udry et al. 1995; 
+Quisumbing, 2003:58-62; Quisumbing et al. 2014). Economists have come to view 
+
+10 
+
+ 
+
+households as domains of difference, where multiple decision-makers may have different 
+preferences and, in many cases, control separate sets of resources. The distribution of power 
+and resources depends on the bargaining power within the household, which almost always 
+favors men (Quisumbing, 2003:12). The rejection of the ‘Pareto efficiency’ thesis has greatly 
+improved the understanding of household resource allocation behavior. It has demonstrated 
+that heterogeneity among members affects a variety of individual, household, and 
+economywide outcomes (Quisumbing, 2003:11,19,67). However, the debate of the ‘Pareto 
+efficiency’ thesis, continues as some scholars argue that the refusal of ‘Pareto efficiency’ and 
+the emphasis on the ‘non-co-operative model’ of agricultural management has led to an 
+academic tendency to assume that households are only characterized by competing gender 
+interests. Such criticism has been raised by Kabeer (Kabeer in SIDA, 2001), arguing that 
+while intrahousehold gender inequalities about work and crop disposal may be affecting 
+levels of productivity, it cannot be used as the general explanation for low productivity. This 
+is because households consist of joint and competing gender interests (co-operative and non-
+co-operative models) depending on the context and setting. Therefore, Kabeer argues that the 
+focus should lie with the wider economic environment of poor rural households and gender 
+differences in relations to this. 
+
+The third academic debate concerns the assumption that crops are divided according to 
+gender, where cash and export crops are “male crops” while subsistence crops are “female 
+crops.” This is because women primarily are responsible for feeding the family while males 
+are responsible for providing the family with cash income. When agricultural tools and 
+techniques are introduced in the production process, in addition to the commercialization of a 
+crop, this transfers the crop from being a “female crop” to a “male crop.” This assumption 
+was supported by Braun and Webb (1989), who found that rice is becoming more of a male 
+crop since technology and production efficiency tools are incorporated into the production. 
+While this research is now becoming outdated, their findings are interesting to this thesis as 
+Braun and Webb studied rice production in the Gambia, a country which shares many 
+characteristics with Senegal as it is located within Senegal’s borders. Thus, technology inputs 
+can have the impact of moving production out of female into male responsibilities. This 
+assumption was also supported by Smith and Chavas (1997) who found that the 
+commercialization of agricultural productions in West African households was normally done 
+by increasing the production on male managed communal lands, meaning that husbands 
+controlled the increased income. Ultimately this had a negative effect on women because 
+West African households’ functions according to the non-co-operative model of non-pooling 
+meaning that husbands and wives do not share their incomes but have fixed roles and 
+obligations. On the other side of the debate, Doss (2001) problematizes Smith and Chavas 
+(1997) conclusion by arguing that the gendered division of labor cannot simply be explained 
+as the ‘non-sharing of income’ and ‘fixed roles and obligations.’ Doss argues that because 
+African households are complex, heterogeneous, and gender roles change in response to new 
+economic opportunities such as technology insertions, it cannot easily be summarized. 
+Ultimately, gender roles are dependent upon context-specific attributes, which may result in 
+different results. 
+
+ 
+
+11 
+
+3.3 Empowerment of Senegalese female farmers 
+While previous research has appointed various issues and solutions to insufficient agricultural 
+yields, the reader is reminded that the focus of this thesis is the gender gap in the form of the 
+gendered division of labor and its negative effects on agricultural productivity. With this 
+focus in mind, scholars and International Organizations argue that to solve the lack of 
+women’s inclusion in the agricultural field, it is essential to close the gender gap by raising 
+women’s empowerment (Agarwal, 2015;Diiro et al. 2018; FAO, 2011; The World 
+Bank/IFAD/FAO, 2009). Several empirical findings have revealed a positive relationship 
+between women’s empowerment and agricultural productivity. First, the study by Koopman 
+(2009), aims to explain why food insecurity and poverty is so prevailing in the River Delta 
+Valley in northern Senegal despite impressive investments in modernizing the agricultural 
+sector. Part of Koopman’s conclusion is that it is critical to improve women’s access to land 
+and technology in order to improve farm productivity and food security. A similar conclusion 
+is drawn from the study by Bernard et al. (2018), researching female empowerment in 
+decision-making and the relation between decision maker-identity and milk productivity in 
+Senegal’s dairy farming. The study revealed that households in which husbands or wives 
+decide because they are ‘most informed’ produce the most milk (Bernard et al. 2018). Thus, 
+by empowering women through increased knowledge and education, milk productivity has 
+the potential to increase since decisions are made consciously. 
+
+Looking at the most recent evaluation of female empowerment in agriculture set to the River 
+Delta Valley, it was found that women were relatively empowered with an overall score of 
+0.783 out of possible 1.0. However, the main constraints to female farmers empowerment as 
+identified by respondents included a lack of participation in household decision-making on 
+production, lack of involvement in community groups, and inadequate access to and 
+management of agricultural credit (IPAR and RTI International, 2018:1). The data suggested 
+that workload was not a major constraint to empowerment, though it had a greater burden on 
+women in the rainy season when agricultural activities are more time-consuming. While land 
+ownership was not found to be a major contribution to women’s disempowerment based on 
+the quantitative data, women reported in interviews and focus groups that access to land was 
+a major constraint. Not surprisingly, the empowerment score for men was, on average, higher 
+than the score for women (IPAR and RTI International, 2018:1). Finally, these results are 
+supported when looking at an earlier study by Grigsby (2004), researching the gendered 
+nature of subsistence farming and its effect on customary land tenure in Senegal. Grigsby 
+found that men considered women’s contributions to the subsistence enterprise as secondary 
+to their own responsibilities when organizing communal grain production. In addition, when 
+looking into the various measurements of females’ roles in agriculture, Grigsby found that 
+females were worse off in nearly every aspect. 
+
+4 Analytical framework 
+This section, which presents the analytical framework of the thesis, is divided into three parts. 
+The first part will discuss the importance of agricultural transformation and the path of 
+smallholder pro-poor agriculture to create national development. The second part will discuss 
+women’s empowerment and its insertion in the field of agriculture. The third part will present 
+
+ 
+
+12 
+
+the A-WEAI, and its five domains, which, will serve as the analytical framework in the thesis 
+operationalization. 
+
+4.1 Agricultural transformation & the smallholder pro-poor approach 
+The thesis is based on the theoretical premise of agricultural transformation, which states that 
+for a nation to develop, it needs to go through four phases resulting in increased agricultural 
+productivity. In the first phase, agricultural productivity per worker increases which in the 
+second phase means that excess labor and financial surplus gets transferred from the 
+agricultural into other sectors, normally the industrial or service sectors in urban areas. In the 
+third phase, the agricultural sector gets progressively integrated into the macro-economy via 
+improved infrastructure and market-equilibrium linkages. When the third phase is conducted 
+successfully, the fourth phase is barely noticeable as the role of the agricultural sector in 
+industrialized economies is not so different from the industry, housing, or insurance sectors. 
+Finally, agriculture declines in its relative share of total gross domestic product (GDP) over 
+time, even as the absolute value of farm output continues to grow. However, upholding 
+agricultural protection through policies is critical in assuring a thriving agricultural sector as 
+foreign competition from the global market otherwise risk undermining its function (Timmer, 
+1998:116). The theoretical concept of agricultural transformation appoints the factor 
+endowments; land, labor, and capital as the necessary preconditions for economic progress 
+and development pathways (Timmer, 1998).  
+
+The theoretical concept of the agricultural transformation will be used to contextualize 
+Senegal’s rice cultivation in the sense of agricultural development and the importance of 
+increased agricultural productivity. According to this concept, Senegal has to make its 
+agricultural sector more efficient in order to embark on the ‘agricultural transformation’-
+journey. However, two opposite solutions to do so can be distinguished. On the one hand, the 
+smallholder-based approach under the title of pro-poor agricultural growth stands in 
+opposition to the approach of large-scale farming. The first approach draws inspiration from 
+the empirical example of the Asian Green Revolution, which subscribe to two interconnected 
+theoretical assumptions: that small-scale farmers are efficient producers and that increased 
+commercialization among them can encourage broad-based poverty reduction and growth. 
+Thus, raising smallholder productivity, enhancing commercialization, and dealing with weak 
+producer incentives for food staples are seen as the vehicles for achieving broad-based 
+agricultural growth and reducing poverty (Andersson-Djurfeldt et al. 2018). Encouraging 
+smallholder inclusion in agricultural value chains at different scales is in this respect crucial. 
+Diversification within agriculture towards higher-value crops and a gradual movement into 
+the non-farm sector in this way presages a gradual exit out of agriculture as the economy 
+moves through the process of structural transformation (Andersson-Djurfeldt et al. 2018:3). 
+In opposition, the proponents of large-scale farming question the efficiency of small-scale 
+producers since modern technologies, and procurement systems have undermined the inverse 
+relationship between productivity and land size that underpins the notion of superior 
+smallholder efficiency. Other criticisms are the poor fit of an Asian-inspired smallholder 
+model to African conditions and the market optimism of the pro-poor agricultural growth 
+model as the insertion of smallholders into local, and sometimes global value chains 
+encourage polarization of assets and incomes, as accumulation among the more well-
+positioned leads to the marginalization of the poor. As such, both food security and poverty 
+
+13 
+
+ 
+
+reduction are better achieved through large-scale agriculture (Andersson-Djurfeldt et al. 
+2018:4). 
+
+4.2 Women’s empowerment in agriculture 
+The thesis analytical framework is also founded on the premise that to reach increased 
+agricultural productivity; it is necessary to decrease the gender gap in the agricultural labor 
+force. Scholars argue that ‘closing the gender gap has the potential to improve productivity 
+and efficiency in agricultural production’ (Quisumbing et al. 2014; FAO, 2011). In addition, 
+increasing the resources controlled by women and their decision-making power may have 
+several benefits. This is because women tend to reallocate their resources to improve 
+children’s health, nutrition and education as well as other family needs, instead of focusing 
+on their individual needs (Quisumbing, 2003:11,13). Thus, reducing inequalities in human 
+capital, physical capital, and current inputs between male and female farmers in addition to 
+increasing the understanding of women’s role in agriculture are important factors to open up 
+doors for social development, agricultural productivity and food security purposes 
+(Quisumbing et al. 2014; FAO, 2011; Quisumbing, 2003:13). 
+
+While many academics have aimed to conceptualize women’s empowerment in agriculture, 
+this thesis will utilize the ‘external dimension’ of empowerment. The external dimension of 
+empowerment concerns everything which is not connected to an individual or a group’s 
+understanding of their own entitlements and power as it exists in their life-situation. External 
+dimensions which are important to strengthen women's empowerment and to increase their 
+agricultural productivity have been appointed to; land ownership (Lastarria-Cornhiel, 
+Behrman, Meinzen-Dick and Quisumbing in Quisumbing et al. 2014:117-144), the access to 
+credit and savings (Fletschner and Kenney in Quisumbing et al. 2014:187-208), non-land 
+agricultural inputs including technological, natural and human resources such as the 
+implementation of mechanization, extension workers, seed varieties, inorganic fertilizer etc 
+(Peterman, Behrman, Quisumbing in Quisumbing et al. 2014:145-186), group memberships 
+and social networks (Meinzen-Dick, Behrman, Pandolfelli, Peterman, Quisumbing in 
+Quisumbing et al. 2014:235-266). While this thesis will focus on the dimensions as 
+mentioned above, ‘empowerment’ can also be conceptualized through its ‘internal 
+dimensions.’ Internal empowerment has been discussed by both Batliwala and Kabeer as ‘the 
+power within’, also conceptualized as ‘processes’ which engage people in making sense of 
+their worlds, their relationships, their assumptions, beliefs, practices and values, and in 
+questioning what they have come to take for granted, with potentially transformative effects 
+(Cornwall and Edwards, 2014:6). Kabeer (1994:245-246) describes this as “strategies of 
+empowerment from within providing women with new perspectives”, and as “new forms of 
+consciousness arising out of women’s newly acquired access to the intangible resources of 
+analytical skills, social networks, organizational strength, solidarity and sense of not being 
+alone”. Batliwala generated an understanding of power as the control over material assets, 
+intellectual resources, and ideology (Batliwala, 1994:129). Kabeer (Kabeer in SIDA, 
+2001:19) refers to empowerment as ‘the expansion in people’s ability to make strategic life 
+choices in a context where this ability was previously denied to them.’  
+
+However, when discussing empowerment, it is important to highlight that it is a contested 
+concept, criticized as one of the most loosely used terms in the development lexicon, meaning 
+different things to different people or, more dangerously, all things to all people’ (Batliwala, 
+
+14 
+
+ 
+
+1994: 1). What is considered as empowerment for one woman in one specific context might 
+be something entirely different for another woman in another context; thus, empowerment is 
+context-specific (Cornwall and Edwards, 2014:17). There are also political disagreements as 
+to the content and political application of the notion of ‘empowerment’ as a goal and strategy 
+for women’s liberation (Fergusson, 2004). However, academics seem to agree on three 
+statements on empowerment. These are that empowerment ; (1) is fundamentally about 
+changing power relations, (2) is relational, in two senses as it both concerns relations of 
+power in which people are located and the changing empowerment in one's relation to 
+oneself, (3) it is a process (Cornwall and Edwards, 2014:7). Despite this, empowerment is 
+neither a ‘linear process’ nor a ‘destination,’ meaning that a person who is empowered today 
+might be disempowered tomorrow by changes in their circumstances (Tsikata and Darkwah, 
+2014). Likewise, a person is not necessarily empowered in all aspects of its life at once. A 
+person could be economically empowered but have some social disempowerment and vice 
+versa (ibid.). Thus, social, economic, and political empowerment are not mutually exclusive 
+(Eyben et al. 2008). Although both the internal and external dimensions of empowerment are 
+essential in order to fully comprehend the concept, this thesis will mainly focus on the 
+external dimension. Finally, it is the lack of women’s empowerment, which constitutes the 
+gender gap in the agricultural sector. So by closing the gender gap, we can improve 
+productivity and efficiency in agricultural production’ (Quisumbing et al. 2014; FAO, 2011). 
+
+4.3 A-WEAI and operationalization 
+To conceptualize women’s empowerment in agriculture, the thesis has been inspired by the 
+analytical tool called the ‘Abbreviated- Women’s Empowerment in Agriculture Index’ (A-
+WEAI) which was first developed in 2011 by USAID, the International Food Policy Research 
+Institute, and the Oxford Poverty and Human Development Initiative (OPHI). A-WEAI aims 
+to increase the understanding between women’s empowerment, food security and agricultural 
+growth by measuring the roles and extent of women’s engagement in the agricultural sector’s 
+five domains; ‘production- input in productive decisions’, ‘resources- ownership and access 
+to productive assets’, ‘income- control of use of income’, ‘leadership- group membership’, 
+‘time- workload’ (Alkire et al. 2013; Malapit et al. 2015:3, 2017; IFPRI, 2012). The A-WEAI 
+stands out today as the only standardized tool to measure women’s empowerment and gender 
+parity in the agricultural development sector (Alkire et al. 2013). It is a quantitative method 
+for conducting large-scale surveys of female farmers impact in all areas of agriculture, and 
+which incorporates econometric calculations, gender parity indexes, the measuring and 
+categorization of results into the binary categories ‘empowered’ and ‘not empowered’ etc. 
+
+While the A-WEAI has been utilized as the foundation in this thesis analytical framework, 
+several adaptations have been made. First, the thesis has utilized questions with a time 
+perspective of 5-10-years in addition to the preceding generation. This stands in contrast to 
+the original version of the A-WEAI survey, which only asks about the present situation. To 
+capture changes over time is vital in this thesis as it focuses on agricultural processes and 
+developments. Second, the original A-WEAI domains have been somewhat simplified and 
+changed. For example, to correlate with the thesis aim, domain no. 1 was added since no 
+original A-WEAI specifically investigated the gendered differences in agricultural 
+productivity levels. The five analytical domains which will be utilized in this thesis are; 1. 
+Agricultural productivity, 2. Ownership or renting of resources, 3. Access and control of 
+
+15 
+
+ 
+
+income and credit, 4. Time and workload, and 5. Group membership. The purpose of the 
+analytical domains is to function as indicators of the agricultural sector’s gender gap and as 
+guiding principles for the data collection methods (presented in the methodology section). 
+The five analytical domains will be utilized to answer the thesis three research questions in 
+the following way. The first research question will be answered by the first domain, the 
+second research question by the second to fifth domains, and the third research question 
+through a more in-depth analysis of the effects of all five domains. This is illustrated in the 
+model of the analytical framework below. 
+
+Table 1: Analytical framework (inspired from the A-WEAI framework) 
+
+ 
+
+5 Methodology 
+This section will present the thesis methodology, beginning with the research design in the 
+form of a mixed-methods approach guided by a positivist epistemology. This will be 
+followed by the quantitative and qualitative methods, the sampling and deductive data 
+analysis strategies, a short discussion on biases and ethical considerations, and end with a 
+section on the thesis delimitations. 
+
+5.1 Research design 
+To answer the research questions and aim, this thesis has utilized a mixed methods-research 
+design including both quantitative (survey) and qualitative (group and individual interviews), 
+with both male and female farmers, in addition to participatory observation, and key 
+informant interviews (Bryman, 2012:68; Nagy Hesse-Biber, 2014:366). The mixed-methods 
+complement each other by combining fixed-choice and open-ended questions, allowing a 
+
+16 
+
+ 
+
+flexible, personal, and less hierarchical data collection device. In addition, it minimizes the 
+risk of ‘reducing people to simple numbers’ and building oppressing power-structure 
+relationships between the interviewer and respondent (Bryman, 2012:228; Nagy Hesse-Biber, 
+2014:301-302; Sheyvens, 2014:253). Although this thesis does not have an explicit feminist 
+theoretical foundation with emancipatory objectives, it has drawn inspiration from the 
+feminist emphasis on using qualitative methods which are more compatible with gender 
+sensitivity, women’s voices and emancipatory goals (Bryman, 2012:410-411). Looking to the 
+research’s epistemological orientation, this is guided by a positivist approach including both 
+deductive (the analytical framework called A-WEAI and its five domains) and inductive 
+(connection to the theoretical concept of empowerment) elements (Bryman, 2012:26, 27). 
+The ontological orientation is primarily guided by objectivism by viewing social reality as an 
+external objective reality (Bryman, 2012:35,36). 
+
+5.2 Quantitative methods and sampling- Survey 
+
+5.2.1 Micro-survey with male and female farmers 
+The data collection process was initiated by a small-scale survey (henceforth called the 
+micro-survey), giving an overview of farmers status regarding the five analytical domains. 
+The respondents were 18 male and female rice farmers, aged between 35-74 years old and 
+married in both mono-, polygamous, male- and female-headed households. The micro-survey 
+was designed as a structured interview, based on the A-WEAI framework incorporating 
+fixed-choice questions which enabled respondents’ replies to be aggregated and measured 
+(Bryman, 2012:210). Prior to the survey, key informant interviews, participant observations, 
+and two pilot-surveys were conducted in order to ensure its’ quality and context-specific 
+relevance. The time frame of the preceding 10 years was decided upon as many of the 
+changes in female farming conditions started to emerge some 9 years ago and in addition, one 
+of the female farmer association was created roughly 9 years ago. 
+
+The survey was administered by the researcher, by reading the questions out loud to the 
+respondents in a predetermined order upon which they answered by choosing from a fixed set 
+of options. Consequences with researcher-administered surveys include respondents’ lack of 
+being anonymous and researcher-respondent’s misunderstandings. However, reading the 
+questions out loud was deemed necessary since most participants were analphabetic. The 
+English version of the micro-survey questionnaire (the survey exists in both English and 
+French versions), is to be found in the appendix section 9.1. There is also a compilation of the 
+micro-survey respondents’ answers in the appendix section 9.5. 
+
+5.3 Qualitative methods and sampling- Interviews and participant observation 
+
+5.3.1 Individual and group interviews with male and female farmers 
+Since the initial plan of conducting semi-structured group interviews with both male and 
+females separately was not possible, male farmers were interviewed individually and female 
+farmers in groups. The Oral History interviewing format was used as inspiration for both the 
+individual and group interviews (Bryman, 2012:491). These included ‘interview guides’ 
+asking the respondents to recall events from their past concerning rice agriculture, its 
+gendered differences, female farmer’s role in agriculture over several generations as well as 
+the mechanisms behind these developments. Both academic and key informants were 
+consulted to make the questions in the ‘interview-guides’ relevant to both the local context 
+
+17 
+
+ 
+
+and the academic literature (Nagy Hesse-Biber, 2014:193; Smith, 2010; Rubin and Rubin, 
+2012; Bryman, 2012:213, 465-482). The interview-guides can be found in the appendix 
+sections 9.2- Female group interviews, 9.3- Male individual interviews in addition to 
+appendix section 9.4- Summary of the data collection. Participants for the group interviews 
+were selected according to the same sex, similar ages, and socio-economic situation, in order 
+to avoid biases and to make everyone feel comfortable. The interviews complemented the 
+micro-survey responses by collecting ‘unexpected’ answers, exploring new areas of limited 
+knowledge, and to allow respondents to answer in their own terms (Nagy Hesse-Biber, 
+2014:186; Bryman, 2012: 246-249).  
+
+5.3.2 Interviews with key informants 
+Key informant interviews were conducted throughout the fieldwork period. The key 
+informants were working in or were highly knowledgeable on the Valley’s rice cultivation. 
+They held professions such as; the regional officer of SAED, agronomy professor in the 
+University of Gaston-Berger, consultant in agricultural development projects in the River 
+Delta Valley, the president and secretary of FEPRODES, the president and extension worker 
+of UFP-Ross Bethio and extension worker at ACSA (see the list of abbreviations on page 
+vii). All of the key informant interviews assisted in the triangulation of the collected data as 
+well as improving and adapting the designs of the other data collection methods, such as the 
+micro-survey questionnaires and oral history interviews (Nagy Hesse-Biber, 2014:312). For a 
+summary of the data collection, see the appendix section 9.4. 
+
+5.3.3 Participant observation 
+Participant observations were also conducted throughout the data collection process, meaning 
+that the researcher immersed herself in a group for an extended period of time, observing 
+behavior, listening to conversations, asking questions, gather further data through interviews 
+and the collection of documents (Bryman, 2012:432). As the key informant interviews, this 
+method was indispensable in the collection of background and contextual information and to 
+complement and triangulate the above-mentioned data collection methods. Doing so can help 
+to understand why survey-respondents answered the way they did and provide insight into the 
+complexity of the local context. 
+
+5.4 Sampling 
+Overall, the sampling process, which was conducted until theoretical saturation, followed the 
+typical case approach (Bryman, 2012:419,421), given the focus on villages and farmers who 
+could provide a general idea of the area’s gender differences in rice cultivation. The strategies 
+of Purposive and Convenience sampling have intermingled throughout the various stages in 
+the research process. While purposive sampling implies to strategically choose cases or 
+participants relevant to the research questions, convenience sampling simply designates what 
+is available to the researcher (Bryman, 2012:201,418). The strategies were applied by 
+searching for villages and farmers whose main occupation was rice cultivation. However, 
+instead of a fully purposive sampling where the villages and farmers would have been chosen 
+prior to the field-study, these were selected when in the field through convenience sampling 
+since they were available to the researcher through the key informants (Bryman, 2012:418). 
+While the survey participants were accessed, mainly by using convenience sampling, the 
+interview participants were accessed by applying a more purposive sampling strategy as the 
+answers from the surveys helped guiding the sampling process. For the interviews, the goal 
+
+18 
+
+ 
+
+was to find older farmers in order to ask questions about the preceding generation as this 
+would make it easier to acquire relevant information concerning the research questions. It is 
+important not to generalize the thesis analytical findings (Nagy Hesse-Biber, 2014:192). This 
+is because of the inherently selective strategy of both purposive and convenience sampling, 
+and since we do not know if the sample is representative for other villages and farmers in the 
+region due to the small sample size.  
+
+5.5 Data analysis 
+The thesis data analysis procedure can be described as a deductive strategy implying that the 
+interviews and surveys were coded and reviewed continuously throughout the data collection 
+process making it easy to discover potential lack of data and to plan for the continued data 
+collection. On the other hand, having pre-determined analytical categories or codes (the five 
+domains of A-WEAI) easily excludes additional data to be observed. Triangulation was a 
+major part of the data analysis process as the codes were revisited and connected to the 
+theoretical framework and literature review. This allowed to theoretically reflect upon the 
+analytical results and to make conclusions.  
+
+5.6 Biases and ethical considerations 
+This section will begin with a discussion on four important biases; thereafter, there will be a 
+short discussion on ethical considerations such as researcher-respondent’s relationship and 
+participant compensations. First, to account for seasonal biases, differences in factors of 
+production, years of especially bad or good harvest, and gender gaps during the various 
+seasons were discussed with the respondents according to which the survey and interview-
+questions were adapted. Secondly, this cross-cultural empowerment research may have 
+resulted in missing information when translating the concept of ‘empowerment.’ Measuring 
+‘empowerment’ across cultural contexts is difficult since the concept has different meanings 
+to the researcher and the respondents. The same factor can reflect empowerment in the eyes 
+of the researcher but not to the respondent, and vice versa. Besides, there are risks of 
+intrusion of normative indicators reflecting the researcher’s values rather than the 
+respondents (Ohara and Clement, 2018). The triangulation of the various data collection 
+methods helped to minimize the risk of this bias by better understanding what empowerment 
+implies in the context of the River Delta Valley. Third, linguistic bias may have resulted in 
+missing information since the researcher and respondents did not speak the same mother 
+tongue but communicated in French with the help of translation. While professional 
+interpreters proved difficult to find, key informants and individuals who had gone through 
+high school were easily located and could, therefore, assist with translation. An issue with 
+this was the lacking patience of one of the key informant’s when surveys took longer than 
+expected. This was solved by conducting additional surveys with another key informant, and 
+the triangulation of answers. Fourth, Oral History interviews are especially vulnerable to the 
+intrusion of biases since respondents’ memories may be lacking (Bryman, 2012:491). To 
+avoid this bias in this research looking at the past 10 years and the preceding generation, 
+efforts were made to maximize the sample size, in addition to triangulating respondents’ 
+answers with key informant interviews and background research.  
+
+Continuing with ethical considerations in fieldwork studies, there are risks of an unbalanced 
+researcher-respondent’s relationship (Bryman, 2012:39; Nagy Hesse-Biber, 2014:199). This 
+is particularly relevant in this thesis due to its qualitative approach implementing participant 
+
+19 
+
+ 
+
+observation and in-depth interviewing. Answers may be influenced with what the respondent 
+thinks the researcher wants to hear, or be constrained due to females many responsibilities, 
+mistrust or low self-esteem, conflicting values or interests, loyalty to male 
+community/household members or shame of their disadvantages (Sheyvens, 2014:193-
+194,253). Knowledge of respondents’ perceptions and social status differences according to 
+gender, race, ethnicity, class, culture, age, religion, language, and other factors will help to 
+minimize researcher’s unawareness of biased answers (Matthews and Ross, 2010; Nagy 
+Hesse-Biber, 2014:213, 215). Triangulation among the data collection methods, in addition to 
+the provision of gifts after the surveys and interviews in preference of payments to 
+participants, were done to minimize risks. In addition, the researcher took the stance of a 
+‘friendly stranger’ by being polite, kind, showing interest in their lives and language, 
+generous but upfront with the researcher’s limited resources, in order to keep a respectful 
+researcher-respondents relationship (Sheyvens, 2014). To increase the sense of participants 
+comfort and to comply with ethical considerations, participants were able to suggest the 
+interview location, and discuss an information sheet regarding their informed consent etc (see 
+the ‘introduction box’ in appendix sections 9.1, 9.2, 9.3) (Creswell, 2009; Padgett, 1998; 
+Bryman, 2012:217-218). Naturally, all participants were above the age of 18. 
+
+5.7 Delimitations  
+As with all fieldworks and qualitative case studies in general, the generalizability and 
+external validity of this thesis is highly limited due to its specific socio-political and 
+geographical context (Bryman, 2012:69-70). An important limitation stems from the thesis 
+aim, which is guided by the neoclassical economic objective of increasing agricultural 
+productivity. This unavoidably limits the thesis theoretical perspective and analytical results. 
+Another theoretical limitation of the thesis stems from its application of the complex and 
+debated concept of ‘empowerment’ which can be defined and discussed in a multitude of 
+ways. Since this thesis has adopted analytical domains from the A-WEAI framework, this 
+unavoidably limits the thesis analysis to the ‘external dimensions’ of empowerment. In effect, 
+the thesis will not cover the internal dimensions of empowerment such as patriarchal, sexist, 
+capitalist, and neo-colonial structures of economic political and social domination. Therefore, 
+the thesis will not analyze empowerment in its totality. 
+
+6 Analytical results 
+This section will both present and analytically discuss the data collection results drawing on 
+the content of the literature review (section 3) and the analytical framework (section 4). It 
+will do so in four sections, organized according to the research questions and under them the 
+analytical domains from the A-WEAI framework. The first sub-section will give an overview 
+of the setting of the data collection. The second sub-section will answer the first research 
+question using the first analytical domain. The third sub-section will answer the second 
+research question using the second to fifth analytical domains. Finally, the fourth sub-section 
+will answer the third research question by analytically discuss all the five domains. 
+
+Note: In sub-sections 2, 3 and 4, the information which describes the situation 5-10 years back in time was 
+retrieved from the micro-survey while the information describing the previous generation was retrieved from the 
+interviews. Information regarding the current situation was retrieved from both the micro-survey and the 
+interviews. 
+
+20 
+
+ 
+
+6.1 The setting of data collection  
+In the River Delta Valley, stretching 106 km from the cities of St Louis to Richard Toll 
+(Devey, 2000), rice is cultivated for both domestic needs (food crop) and market sales (cash 
+crop). Since most farmers now predominantly cultivate rice during the ‘Contre Saison Chaud’ 
+season (January-March) as it is more profitable than the previous high season called 
+‘Hivernage’ (May-July), the thesis has chosen to focus on the ‘Contre Saison Chaud.’ The 
+data was collected from four different locations, including the three villages; Colonat, 
+Souloul, Ndonba, and the small town of Ross Bethio, all of which are indicated on the map 
+below. 
+
+ 
+
+Figure 6: Map of locations of data collection. The map was retrieved from Google (2019) 
+
+and adapted by the researcher 
+
+While the village of Colonat has been characterized by rice cultivation since 1957, its two 
+major issues are the limited access to both water and land. Water scarcity and farmers 
+irrigation problems are due to low and irregular water levels in the nearby canal as it is 
+owned by a massive sugar plantation which only fills up the canal a few times a month. Land 
+scarcity is due to both soil salination (the accumulation of salt in the soil) and the increasing 
+population. Both of these issues have consequences for female farmers whose only option is 
+to help out on their husbands’ rice plots, as they lack their own land and women’s farming 
+collectives is difficult to manage. In effect, this deprives the women of having their own 
+economy and financial means (which cultivating their own plots would provide them with). 
+While the village of Souloul is inhabited by the ethnic minority called Mhor who traditionally 
+worked as herdsmen, the main occupation today is rice cultivation. Souloul has neither land 
+nor water scarcity, and to irrigate the plots, it suffices to access a shared water pump which 
+runs on gas. In addition, there are several female farming collectives. Like Souloul, the 
+village of Ndonba has sufficient access to water, land, irrigation equipment and female 
+farming collectives. Rice cultivation in Ndonba dates back some 20 years, while also 
+engaging in more diversified agriculture in comparison to the other two villages. The small 
+town of Ross Bethio is the center of the region’s rice production and the access to water, 
+
+ 
+
+21 
+
+land, irrigation equipment varies a great deal depending on the rice fields exact location. 
+However, the city has a female farming collective.  
+
+These four locations were chosen since both agricultural development projects, and two 
+women’s farming collectives were present there. This provided insights into how female 
+farmers’ rice productivity levels and agricultural management had been affected by becoming 
+a member of a female farming collective. It also provided insight into differences in female 
+farmers empowerment before and after being a member of a farmer’s collective. The first 
+collective is called UGP-RB, situated in Ross Bethio and has 1 821 female members. It 
+started with a microfinance activity in 1987 and were provided with plots from the 
+Senegalese government through the Ross Bethio commune in 2009 (Key informant interview, 
+Mme Gaye). The second collective is called FEPRODES, situated in the entire River Delta 
+Valley and has 49 886 female members. Founded in 1997, FEPRODES has helped female 
+farmers with financial support of agricultural inputs, and workshops on a range of subjects 
+such as; rice farming techniques, financial management, leadership, formal legislation 
+regarding land rights, and climate change, etc (Key informant interview, Mme Dieng 
+Ndiaye).  
+
+6.2 Gender differences in rice productivity levels 
+This section answers the first research question regarding gender differences in agricultural 
+productivity levels in the River Delta Valley. In doing so, the same questions were asked to 
+both male and female participants. A compilation of the answers is found in the appendix 
+section 9.5. 
+
+6.2.1 Domain 1- Agricultural productivity 
+While both similarities and differences were discovered according to the participating small-
+scale farmers’ genders, we will begin with the similarities. The findings from the micro-
+survey, including all four locations, indicated that both males and females had increased their 
+rice production in comparison to the previous 10 years. While the preceding generation 
+depended on subsistence farming and little market purchases, today, both male and female 
+farmers apply high-intensive rice production techniques, including irrigation systems, better 
+infrastructure, mechanized tools such as tillers, tractors, threshing machine, and harvest 
+machines, pesticides, fertilizer, and improved seed varieties. Over the last 10 years, male and 
+females have used the same inputs with the same quantity and frequency (see micro-survey 
+results, points 1.5, and 1.6). The interviews found that the main factors determining the use of 
+inputs were location, environmental, and financial factors, and not farmers’ gender per see. 
+The micro-survey and in-depth interviews could not distinguish any gender differences in 
+terms of soil qualities such as salinity, nutrient depletion, and drought (see micro-survey 
+results, points 1.7). Instead, this was dependent on the particular village and specific plots. 
+The results could not support that females were provided with particularly bad plots. During 
+the interviews, both male and female respondents answered that rice cultivation had become 
+more manageable in comparison to the preceding generation, who spent more time on the 
+fields, and everything was done by hand, and nothing was mechanized.  
+
+The productive factors which differentiate the genders in the Valley’s rice productivity can be 
+summarized as; harvest quantity, area of production, number of laborers, and time of labor 
+(see micro-survey results, points 1.1-1.4). The micro-survey concluded that males, in general, 
+
+22 
+
+ 
+
+produce more rice than their female counterparts due to the unequal gendered access to the 
+factors of production; land, labor, and capital. Regarding land, while male respondents most 
+commonly cultivated 2-5 ha, female respondents only cultivated 0.5-1 ha. This is displayed in 
+the figure below. Even though many women had expanded their areas of rice cultivation over 
+the last 10 years, men’s rice plots remained larger than those of females. 
+
+Participant farmers' area of rice production
+
+(micro-survey point 1.1)
+
+s
+l
+a
+u
+d
+i
+v
+i
+d
+n
+
+i
+ 
+f
+o
+ 
+r
+e
+b
+m
+u
+N
+
+9
+8
+7
+6
+5
+4
+3
+2
+1
+0
+
+ 
+
+a
+h
+5
+0
+<
+
+.
+
+ 
+
+a
+h
+1
+-
+5
+0
+
+.
+
+ 
+
+a
+h
+3
+-
+2
+
+ 
+
+a
+h
+5
+-
+4
+
+ 
+
+a
+h
+0
+1
+-
+6
+
+ 
+
+a
+h
+5
+0
+<
+
+.
+
+ 
+
+a
+h
+1
+-
+5
+0
+
+.
+
+ 
+
+a
+h
+3
+-
+2
+
+ 
+
+a
+h
+5
+-
+4
+
+ 
+
+a
+h
+0
+1
+-
+6
+
+ 
+
+a
+h
+5
+0
+<
+
+.
+
+ 
+
+a
+h
+1
+-
+5
+0
+
+.
+
+ 
+
+a
+h
+3
+-
+2
+
+ 
+
+a
+h
+5
+-
+4
+
+ 
+
+a
+h
+0
+1
+-
+6
+
+ 
+
+a
+h
+5
+0
+<
+
+.
+
+ 
+
+a
+h
+1
+-
+5
+0
+
+.
+
+ 
+
+a
+h
+3
+-
+2
+
+ 
+
+a
+h
+5
+-
+4
+
+ 
+
+a
+h
+0
+1
+-
+6
+
+ 
+
+a
+h
+5
+0
+<
+
+.
+
+ 
+
+a
+h
+1
+-
+5
+0
+
+.
+
+ 
+
+a
+h
+3
+-
+2
+
+ 
+
+a
+h
+5
+-
+4
+
+ 
+
+a
+h
+0
+1
+-
+6
+
+ 
+
+a
+h
+5
+0
+<
+
+.
+
+ 
+
+a
+h
+1
+-
+5
+0
+
+.
+
+ 
+
+a
+h
+3
+-
+2
+
+ 
+
+a
+h
+5
+-
+4
+
+ 
+
+a
+h
+0
+1
+-
+6
+
+1 year ago
+
+2 years ago
+
+3 years ago
+
+4 years ago
+
+5 years ago
+
+10 years ago
+
+Males
+
+Females
+
+ 
+
+Figure 7: Participant farmers’ area of rice production 
+
+Over the last 10 years, most male and female respondents estimated their harvest to be 
+between 71-100 bags of rice per ha, depending on the year and environmental situation. 
+However, among the rest of the female respondents, it seemed more common to harvest less 
+than 50 bags of rice per ha, in comparison to male farmers who answered 51-70 bags per ha. 
+The micro-survey observed one exception to males’ more abundant harvests with a married 
+couple in the village of Ndonba. While both the husband and wife had cultivated 
+approximately 3 ha over the last 10 years, the husband had harvested between 60-80 bags of 
+rice per season and the wife between 60-100 bags of rice over the same period. 
+
+Regarding the gendered differences of labor, the micro-survey found that females had less 
+access to extension services and time of labor. While the men were able to spend their entire 
+day on the fields, this was not the case for women who had many household obligations to 
+take care of. According to the Oral history group interviews, females agricultural work is 
+limited due to both their housework and the lack of energy as their bodies would get too tired. 
+To cover their loss of working hours on the fields, female farmers would hire extensions 
+workers. The need for extension workers has also increased due to the individualization and 
+expansion of land plots, in opposition to the preceding generation. Extension services are 
+always performed by private companies and their male staff who are paid by the smallholder 
+farmer per day or per performed agricultural task. Since neither male nor female farmers have 
+enough financial means to buy tillers, tractors, threshing machine, or harvest machines for 
+their own plantations, they are obliged to hire extension services to complete labor-intensive 
+tasks. 
+
+23 
+
+ 
+
+Recalling the literature review and the concept of ‘women’s double burden,’ the findings 
+reflect this since women are obligated to perform both the housework and the remunerative 
+agricultural work. Thus, female farmers in the River Delta Valley are negatively impacted by 
+the prevailing gender gap in agriculture, decreasing their opportunities for productivity. This 
+finding supports the thesis premise that to reach increased agricultural productivity; it is 
+necessary to decrease the gender gap in the agricultural labor force  
+
+6.3 Gender differences in agricultural management 
+This section will answer the second research question, discussing gender differences in 
+agricultural management. First, there will be a description of how the overall organization of 
+rice agriculture in the River Delta Valley has developed from the previous generation until 
+today. Secondly, there will be a description and an in-depth analysis of each analytical 
+domain. 
+
+The results from both female group-, male individual- and key informant interviews revealed 
+that household’s agricultural plots had become individually instead managed of collectively. 
+During the preceding generation, all household members worked on the family plot, resulting 
+in one shared income, which was managed by the husband. This type of management is 
+called the ‘co-operative model’ since resources are pooled, and harvests are shared instead of 
+splitting up into several units amongst the family members. Today, the household’s husband 
+and wife manage and cultivate their own plots individually. This type of management is 
+called the ‘non-cooperative model’ since resources are not shared amongst family members, 
+and the husband and the wife work separately on their respective fields which is their own 
+responsibility (Quisumbing et al. 2014; Croppenstedth et al. 2013; Udry et al. 1995; Udry, 
+1996; Goldstein and Udry, 2008; Diiro et al. 2018). Recalling Section 3.2. in the literature 
+review, the preceding generation’s agricultural management fit into the tenant of ‘Pareto 
+efficiency.’ This assumes that farming households would share the factors of production in an 
+equal distribution (the co-operative model), making it more likely to maximize agricultural 
+efficiency. In the current individualized management system, this is not the case. To 
+exemplify this, one of the female farmers from one of the oral history group interviews said 
+the following. 
+
+“The husbands give nothing to their wives. The wives do not even know how much rice 
+their husbands are harvesting and what they do with their revenues. The husbands only 
+
+“give” to their wives during the night.” 
+
+(Female farmer from Oral history group interview no. 2, in Ross Bethio) 
+
+6.3.1 Domain 2- Ownership or renting of resources 
+The thesis has observed both similarities and differences in genders ownership or renting of 
+productive factors such as land and resources, over the last 10 years and preceding 
+generation. 
+
+Starting with the similarities between the genders regarding the owning or renting of 
+resources. Neither male nor female farmers can afford to buy farming equipment such as 
+tractor, transportation, tools, plow, tiller or irrigation system, which is therefore rented by all 
+farmers (see micro-survey results, point 2.4). Despite this, one exception was noted from a 
+female farmer in the Souloul village as her female farmer collective had previously owned a 
+tractor. However, most farmers cannot afford collective ownership either. Continuing with 
+
+24 
+
+ 
+
+the differences between the genders in regard to the owning or renting of resources. The 
+micro-survey showed that over the previous 10 years, men had owned their plots to a larger 
+extent than females, meaning that females more often had to rent their land of rice production 
+(see micro-survey results, point 2.2). This is displayed in the figure below. 
+
+Participant farmers' ownership and renting of rice 
+
+plots
+
+(micro-survey point 2.2)
+
+8
+7
+6
+5
+4
+3
+2
+1
+0
+
+s
+l
+a
+u
+d
+i
+v
+i
+d
+n
+
+i
+ 
+f
+o
+ 
+r
+e
+b
+m
+u
+N
+
+i
+
+p
+h
+s
+r
+e
+n
+w
+O
+
+t
+n
+e
+R
+
+i
+
+p
+h
+s
+r
+e
+n
+w
+O
+
+t
+n
+e
+R
+
+t
+n
+e
+R
+
+i
+
+p
+h
+s
+r
+e
+n
+w
+O
+
+i
+
+p
+h
+s
+r
+e
+n
+w
+O
+
+t
+n
+e
+R
+
+t
+n
+e
+R
+
+i
+
+p
+h
+s
+r
+e
+n
+w
+O
+
+i
+
+p
+h
+s
+r
+e
+n
+w
+O
+
+t
+n
+e
+R
+
+1 year ago
+
+2 years ago
+
+3 years ago
+
+4 years ago
+
+5 years ago 10 years ago
+
+Males
+
+Females
+
+ 
+
+Figure 8: Participant farmers' ownership and renting of rice plots 
+
+Part of this issue can be appointed to the rules regarding inheritance since females rarely have 
+the opportunity to inherit land from their parents or another relative, whereas men do (see 
+micro-survey results, point 2.5). Even though females and males have equal rights to land and 
+inheritance according to Senegal’s official legislation, this right is often not enforced due to 
+pertaining Senegalese traditions which only allows men to inherit land. The micro-survey 
+revealed that among the respondents, 2 out of 11 female farmers in comparison to 4 out of 7 
+male farmers had inherited land. However, the female group and key informant interviews 
+revealed that while some women today do inherit land, this remains rare. In addition, when 
+females do inherit land, the plots are much smaller than those that men get to inherit. While 
+females restricted access to land dates back to previous generations, it has gotten somewhat 
+better.  
+
+The gender difference regarding land access supports previous research made by IPAR and 
+RTI International (2018) in the River Delta Valley, stating that female farmers limited land 
+access is a major constraint to their agricultural productivity. Another previous study by 
+Grigsby (2004), contains both supportive and contradictory findings in comparison to this 
+thesis. The supportive findings include that; (1) women today have greater economic 
+autonomy than the preceding generation, (2) women’s access to important commons 
+resources was a function of prevailing land use rather than any structure of tenure rights, (3) 
+farmers have an increasing need for cash which has placed a greater emphasis on non-farm 
+sources of income. The contradictory findings include that; tenure formalization and the 
+‘individualization’ of land, including greater equity in terms of statutory land rights, often 
+had adverse effects on women’s rights in agriculture. Grigsby listed several reasons for this 
+including that; land-rights institutions are more accessible to men who have personal contacts 
+and capital, and that women, in general, have insufficient levels of literacy and less 
+
+25 
+
+ 
+
+administrative knowledge. Continuing, women have fewer personal contacts with local 
+officials, fewer opportunities to use transportation systems and vehicles, less income to settle 
+bribes or pay for travel and lodging, and less traditional rights. He also found that women 
+could use the land, but not control it or manage its resources, and they were also subject to 
+eviction and relegated to less fertile areas. While all of these reasons could not be controlled 
+for in this thesis, it was found that the ‘individualization’ of land had rendered in several 
+females expanded economy. Thus, Grigsby’s conclusion could not be supported. To 
+conclude, Senegal’s gendered land distribution results in the fact that women have less 
+capability to produce as much rice as men, due to their restricted financial capacities. 
+Females’ weaker economic position in comparison to men contributes to their economic 
+marginalization and disempowerment.  
+
+6.3.2 Domain 3- Access and control of income and credit 
+Moving on to the third analytical domain, there are several gender differences in farmers 
+access and control of income and credit. Overall, while both male and females have low 
+incomes, and limited opportunities to borrow money, they all hold individual control of the 
+income and credit that they acquire.  
+
+Looking at the opportunities of borrowing money for their agricultural production, the micro-
+survey and in-depth interviews revealed that while women had equal rights to borrow money, 
+their limited finances prevented them from doing so. Over the last 10 years, both genders had 
+borrowed money from a variety of actors in order to conduct their rice production as this was 
+necessary to cover all their costs (see micro-survey results, point 3.4). Males tended to 
+borrow money from the bank, while females were more prone to borrow money from family 
+and friends. While it was difficult for women to borrow from the bank since they cultivated 
+too small plots to make it profitable enough, most banks actually preferred lending money to 
+females (as long as they have sufficient financial security) since males rarely paid off their 
+depths (according to both male and female interviews). Regarding decision-making, both 
+males and females had individual control over the money that they borrowed (see micro-
+survey results, point 3.5). 
+
+Looking at the premises of decision-making in the River Delta Valley, this has evolved 
+significantly from the preceding generation. Today, both males and females make their own 
+agricultural and financial decisions concerning their individual plots, as they are their 
+business alone (see micro-survey results, point 3.1-3.3). While decisions on a general basis 
+are made individually, one of the micro-survey female respondents in the Colonat village 
+diverted from this as all decisions regarding both the household and agriculture were taken 
+collectively between her and her co-wives. In contrast, during the preceding generation, all 
+decisions were taken by the husband. While females’ responsibilities revolved around the 
+housework and family plots, males’ responsibilities covered all financial costs of the 
+household, and work and decision-making on the family plots (according to several key 
+informant and female group interviews). The husband had the authority over all productive 
+resources and the financial responsibility concerning all costs related to the household 
+expenditures. The wife did not have any financial or decision-making responsibilities since 
+she was not considered knowledgeable enough and no personal income.  
+
+The thesis findings are both supporting and contradictory to the previous research on the 
+same topic. In the study by IPAR and RTI International (2018), it was found that female 
+
+26 
+
+ 
+
+farmers in the River Delta Valley lack the opportunity to participate in household decisions 
+regarding agricultural production. This finding is supported by this thesis when looking to the 
+preceding generation’s ‘one family plot’ agricultural organization as females during that time 
+had no power in household decisions. However, when looking to the current individualized 
+agricultural organization, the IPAR and RTI International’s findings are not supported by this 
+thesis as women have sole decision-making power over their own rice plots. In this sense, 
+female farmers today are very empowered. Looking at the economic aspect, despite females 
+having fewer financial means than males, males also have economic issues. First of all, it has 
+become more problematic for males to borrow money from banks and in addition, NGO’s 
+and organizations tend to favor supporting women instead of males since females, in general, 
+are more economically disempowered than males. Therefore, in comparison to the study by 
+IPAR and RTI International (2018) which found that female farmers had inadequate access to 
+and management of agricultural credit, the thesis results are both supportive and conflictual. 
+
+The thesis findings support the claim that when females are provided with the opportunity to 
+manage financial assets, the whole family, and in particular, the children benefit. This stands 
+in stark contrast to when males manage the financial assets as it is more often spent on the 
+male’s personal interest (Quisumbing, 2003:11,13). The data retrieved from the female 
+group, key informant and participant observations mainly collected from the town of Ross 
+Bethio and the village Colonat suggested that when the developments from the rice 
+agriculture resulted in extra income for female farmers they would use the money to invest in 
+their children’s education, build or renovate the house, or expand their businesses. When 
+asked about their husband, all interviewed women both in group and individually responded 
+that their husbands would probably contribute to some household costs but that he would 
+prioritize his own need such as taking another wife for example (writer’s note: males in 
+Senegal has the right to marry up to four women). When the males were asked about this 
+reply, the subject of marrying another wife was not mentioned. However, when verified and 
+triangulated with information from several of the key informants and informal conversations, 
+the male practice of taking another wife when the finances allow doing so is a standard 
+practice with social and religious support in the entire country. When males were asked the 
+same question, they answered that they would prioritize the needs of the household such as 
+adding more food, paying for children’s school and clothes, etc. When asked about their 
+wives, they stated that they would also prioritize the household needs, just like themselves. 
+
+6.3.3 Domain 4- Time and workload 
+The fourth analytical domain regarding time allocation and workload, revealed significant 
+gender differences since an individual’s gender decides what work and for how long time this 
+is to be done. Looking at female’s workload, the individual, group and key informant 
+interviews revealed that while domestic work is only performed by women, the extent and 
+types of activities seemed to be decided by their age, social status and role in the household. 
+For example, cleaning tends to be done by the older children and young wives, whereas the 
+feeding of the younger children seems to a larger extent be done by older women. At the age 
+of retirement, both men and women tend to work less in general. However, in the case of 
+women, this depends on how many younger female household members are available to 
+replace them and the work that they would typically do. Thus, at the time of retirement 
+(approximately from the age of 70), the division of labor both in terms of income generation 
+
+27 
+
+ 
+
+and domestic activities seem to a larger extent fall on the responsibility of women. While 
+older men spend most of their time at the mosque, with friends or resting, their wives were 
+left with both the financial and domestic responsibility of the household. The situation can 
+quickly become dire if the retired couple has no children or grandchildren who can care for 
+them. Looking at this situation from an empowerment perspective, this can be slightly 
+conflictual as retired women, on the one hand, are economically empowered, but on the other 
+hand, are disempowered in terms of time. This is because women are left with the 
+responsibility to make ends meet for the household’s needs. It can be concluded that the 
+concept of ‘women’s double burden’ (Hochschild and Machung, 1990), generally applies in 
+the context of rice agriculture in the River Delta Valley. While men’s responsibility remains 
+to provide rice and finances for the family until the age of retirement, women engage in the 
+same tasks, in addition to taking care of the household and children, even after the age of 
+retirement. Women’s double burden is a major obstacle to increasing their agricultural 
+productivity. This finding stands in contrast to IPAR and RTI International’s study (2018), 
+which found that workload is not a major constraint to female farmers empowerment, though 
+it had a greater burden on women in the rainy season when agricultural activities are more 
+time-consuming. 
+
+Looking at gender differences in time allocation, the results from the micro-survey, 
+concluded that middle-aged men spend most of their time on their rice fields although this 
+was sometimes combined with other economic activities such as growing other crops both for 
+domestic consumption and market sales as well as fishing. The results looking at females’ 
+time allocation varied a lot more as certain spent most of their time on the local market, 
+vending various produce, whereas others spent most of their time in the fields. In general, 
+women seemed more prone than men to engage in several economic activities, combining 
+rice and other crops cultivation and market sales (see micro-survey results, point 4.1). This is 
+displayed in the figure below. 
+
+Participant farmers' main activity on a daily basis
+
+(micro-survey point 4.1)
+
+70%
+60%
+50%
+40%
+30%
+20%
+10%
+0%
+
+p
+u
+o
+r
+g
+-
+r
+e
+d
+n
+e
+g
+h
+c
+a
+e
+
+ 
+
+i
+
+n
+h
+t
+i
+
+ 
+
+w
+e
+g
+a
+t
+n
+e
+c
+r
+e
+P
+
+Males' main activity
+
+Females' main activity
+
+ 
+
+Figure 9: Participant farmers' main activity on a daily basis 
+
+In a sense, this disputes the analytical results from Smith and Chavas (1997) who found that 
+the commercialization of agricultural productions in West African households was typically 
+
+28 
+
+ 
+
+done by increasing the production on male managed communal lands, meaning that husbands 
+controlled the increased income. This is not the case for the participants in this study as 
+women were more prone than men to engage in commercial activities. Due to the households 
+‘non-co-operative model’ in which husbands and wives do not share their incomes, women’s 
+increased revenues were not controlled by their husbands. Thus, the commercialization of 
+agricultural productions had, in fact, a positive effect on women’s empowerment. However, it 
+is true that the land in the Valley which is managed by males is a lot larger than that of 
+females, meaning that males have larger possibilities and economic benefits to reap from 
+expanded commercialization of their production. 
+
+Looking at the gender’s workload and tasks within agriculture, this has evolved from the 
+preceding generation until today. During the preceding generation, women’s agricultural 
+work covered tasks such as seeding, weeding, threshing and harvesting. Male tasks included 
+soil and plots preparation, plants breeding ground, surveillance of the fields to avoid the loss 
+of crops to feeding wild animals, transportations, physical and heavy tasks, in addition to 
+threshing and harvesting which was conducted by the entire family (key informants and in-
+depth interviews). Today, many of the gendered work tasks from the preceding generation 
+remain the same, although this division is becoming more and more blurred as both males 
+and females now have their individual plots which each person manages by themselves. The 
+interviews found that the current division of agricultural tasks including the handling of 
+machines and technical equipment is generally done by males. These include pesticide and 
+herbicide treatment, which traditionally was done by hand by women and without chemicals. 
+This finding is interesting to compare to the previous study by Braun and Webb (1989) who 
+found that when agricultural tools and techniques are introduced in the production process, 
+this transfers the crop from being a “female crop” to a “male crop.” In support of Braun and 
+Webb, one may argue that the nowadays mechanized tasks in rice cultivation are primarily 
+assigned to male extension workers, handling the machines such as tillers, tractors, threshing 
+machine, harvest machine, etc. Thus, the technologization of either a part of an agricultural 
+process or the entire production process of a specific crop may cause the process to become a 
+domain only for males. However, it is unfair to say that the mechanization of rice production 
+in the River Delta Valley has a disempowering effect on female farmers since it has many 
+benefits for them. In addition, rice production in the Valley has not transferred rice-crops 
+from the female to the male domain. On the contrary, female farmers produce much more 
+rice than before. In fact, the mechanized rice cultivation has provided women with the 
+opportunity to create their own finances, resulting in economic empowerment. Therefore, the 
+findings from Braun and Webb (1989), cannot be entirely supported by this thesis. 
+
+6.3.4 Domain 5- Group membership 
+Looking to the fifth and final analytical domain regarding group membership, all female 
+respondents were part of one of the farmers collective; FEPRODES or UGP-RB, which 
+provided them with approximately 0.5 ha per individual. Most of the women had joined the 
+farmers collective about 10 years previously. During the group interviews, female 
+respondents answered that being part of a female farmers association had improved their lives 
+in a variety of ways. It had allowed them to expand their rice production since they now had 
+the opportunity to borrow money through microfinance activities in the farmers collective 
+(although borrowing money from family and friends remained more common). The farmers 
+
+29 
+
+ 
+
+collective had provided them with economic support as it financed their agricultural inputs 
+and the power to decide upon purchases. Thus, being part of a farmer’s collective gave 
+females economic empowerment (external form of empowerment). In addition, the farmer’s 
+collective had provided female farmers with training and workshops of various types. To the 
+question of whether male or female farmers were the most knowledgeable rice producers one 
+female answered that; 
+
+“Our husbands are more knowledgeable since they started with rice production before 
+us, but with the farmers collective and the workshops they hold, we have gotten more 
+
+knowledgeable than before.” 
+
+(Female farmer from Oral history group interview no. 2, in Ross Bethio) 
+
+Female respondents also answered that the farmer’s collective had given them moral support, 
+close friends, extra motivation, and encouragement. Another female farmer said that; 
+
+“Being part of the female farmers collective has given me a second family.” 
+
+(Female farmer from Oral history group interview no. 5, in Ross Bethio) 
+
+Thus, being part of a farmer’s collective gave females internal empowerment since the 
+collective helped to change the female’s mindset to what they were capable of doing. In 
+comparison, the male respondents were not part of any farmers collective. While most of the 
+men were positive to the fact that their wives had financial support for their agricultural 
+production, several of them questioned why they could not get the same financial support. 
+
+The thesis results stand in contrast to previous research from IPAR and RTI International 
+(2018), who found that female farmers had a lack of involvement in community groups. 
+However, since this thesis selectively has chosen women who are members of a female 
+farmers collective, this finding cannot be considered as representative for this region.  
+
+6.4 Female farmers socio-economic situation as a result of agricultural 
+developments 
+The past agricultural developments in the River Delta Valley has had many and various 
+impacts upon female farmers in the region. Looking at the socio-economic situation, rice 
+production in the River Delta Valley today is more profitable both for male and females as a 
+result of the agricultural intensification. However, the high-intensive form of agriculture 
+demands significant investments since inputs are costly. When asked whether they thought 
+they were economically better off today than 10 years previously, both male and female 
+respondents from all four data collection locations were quite unsure. Most respondents 
+answered that although they now had a more substantial income from their rice production, 
+their agricultural expenses had increased significantly as well. So ultimately, they were left 
+with close to nothing at the end of the day. 
+
+Looking at female farmers economic situation in general, they have less capital than males, 
+which is due to several factors. First, females cannot work as many hours as men on the rice 
+fields due to the housework they are assigned to do. Second, since females do not have 
+enough time to work on their rice fields, they need to hire extension workers to perform the 
+tasks they cannot do themselves. Third, women cultivate less ha than male farmers. This 
+results in higher farming expenditures for women than men. When situating these three issues 
+
+30 
+
+ 
+
+in the socio-economic context of Senegal, it should be highlighted that they are mere results 
+from underlying disempowering social structures and institutions which have economically 
+disempowering effects for females. Some of these are the unequal practice of inheritance, 
+engrained patriarchal systems, limiting norms about what each gender should be engaged in 
+doing, etc.  
+
+The group interviews found that female farmers today take a larger economic responsibility 
+for household expenses, in comparison to the preceding generation when all costs had been 
+covered by the husband. In addition to females’ traditional responsibilities of housework and 
+children, they now also cover the financial costs related to these housework tasks. For 
+example, paying for children’s clothes, school fees, detergent, certain foods, etc is now 
+generally the females’ financial responsibility. While females of the preceding generation had 
+no individual money, they now manage and cultivate their individual plots enabling them to 
+have their own economies. Today, Senegalese households tend to have split economies in 
+comparison to the preceding generation, which had one shared economy governed by the 
+husband and utilized to cover the household’s expenditures. The family plots cover family 
+needs and expenditures while governed by the husbands. The husbands have the primary 
+responsibility and power in household-decisions; however, they do not have any 
+responsibility for domestic work or the children-related financial costs and work. Thus, while 
+women’s domestic and children-related work has remained the same in comparison to the 
+preceding generation, they now have a larger financial responsibility. Simultaneously, men’s 
+work has remained more or less constant while their financial responsibility has decreased. 
+The reason for the transfer of the financial responsibility from the husband to the wife can be 
+connected to several explanations. During the Oral history group interview no 3, it was said 
+that the reason to why females had started to cultivate individual plots for rice production was 
+because of the ever-increasing droughts which meant that the harvest was bad and thus they 
+started cultivating their own plots in order to help cover the family needs. The transfer of the 
+financial responsibilities from the husband to the wife can also be connected to women’s 
+expanded economic liberty as they nowadays manage their own individual income. These 
+findings support the previous research by Doss (2001), stating that African households are 
+complex and heterogeneous, and gender roles are not static but change in response to new 
+economic opportunities. In the case of the River Delta Valley, it is a combination of external 
+impacts and new economic opportunities which have rendered in changes in the gendered 
+division of labor and responsibilities. 
+
+Among the interviewed households, it was common to divide the rice production into three 
+parts; female plots, male plots and family plots. The revenues from females’ individual plots 
+cover the household needs and expenditures. In comparison, the revenues from males’ 
+individual plots would also cover parts of the household needs and expenditures in addition to 
+males’ personal needs. This, although male plots tend to be larger than those of women. To 
+reflect this, one female farmer stated that; 
+
+“Our husbands put their money in their pockets. They divide their income into three 
+
+parts; one part for their personal needs, one part of marrying a second wife and another 
+part to marry a third wife. It is, therefore, up to us the wives to care for the household’s 
+
+needs.”  
+
+(Female farmer from Oral history group interview no. 2, in Ross Bethio) 
+
+31 
+
+ 
+
+The current division of financial responsibilities and household work has put a more 
+substantial burden on women compared to the preceding generation. This provides a clear 
+example of women’s double burden where Senegalese wives are in constant lack of financial 
+resources and time in opposition to their husbands. This suggests that although some of the 
+external dimensions of empowerment which are part of the A-WEAI analytical framework 
+shows that female farmers have become more empowered today in comparison to the 
+previous 10 years and preceding generation, the situation seems more complicated than that. 
+This is especially apparent when looking at the limited access to land as women have smaller 
+plots sizes than men (domain 2), limited opportunities to inherit land as women seldom own 
+their land of production (domain 2), women’s limited finances (domain 3), and women’s 
+heavier workload and limited time in comparison to men (domain 4). When looking at these 
+domains, it is clear that female farmers socio-economic situations are different from those of 
+males. In conclusion, the previous developments in the River Delta Valley’s rice cultivation 
+have had significant differences in both genders, leaving females with more limited 
+opportunities in agricultural productivity than males. 
+
+6.5 Theoretical reflections 
+
+6.5.1 Agricultural transformation and the smallholder-based approach 
+While Senegal’s economic development as outlined in the background section through the 
+figures 4 and 5, initially suggests that the Agricultural Transformation (according to Timmer, 
+1998) has been initiated, a more in-depth analysis reveals that this is not the case. As 
+mentioned in that section, the productivity of Senegal’s agricultural sector has not increased 
+but remained low since the main driver to Senegal’s agricultural growth is input 
+intensification and not increasing productivity (The World Bank, 2018:27). While 
+agricultural transformations are characterized by an intensification of grain production, 
+commercial diversification from grains into non-staple crops and income diversification out 
+of agriculture into the non-farm economy leading to increasing land and labor productivity 
+etc (Andersson-Djurfeldt et al. 2018:3), this evolutionary agricultural process seems to be 
+lacking in Senegal and the River Delta Valley. 
+
+The previous decade's agricultural developments in the region have not only resulted in 
+highly intensive farming for smallholders but also the installation of large-scale 
+agribusinesses. Previous research on foreign investments in agribusinesses in the River Delta 
+Valley has highlighted both its’ positive and negative effects on smallholders. On the positive 
+side, agribusinesses can create welfare impacts through employment creation and labor 
+market participation, resulting in higher household income leading to reduced poverty and 
+inequality, especially for the previously poorest households (Van den Broeck et al. 2017; Van 
+den Broeck and Maertens, 2017; Maertens et al. 2011). On the negative side, foreign-
+financed investments in dams and irrigation schemes in conjunction with Northern-influenced 
+(or imposed) policies have had severe adverse effects on the livelihoods and welfare of 
+family farmers, fishers, and pastoralists in the Senegal River Valley (Koopman, 2009). The 
+importation of food crops can weaken the region’s food security by driving down local 
+producers’ prices and incentives for production, causing severe consequences in the event of 
+spiking global food prices, as it did in 2008 (Koopman, 2009). In this thesis, key informant 
+interviews, group and individual interviews, as well as participant observations, also found 
+diverging effects of agribusiness investments onto the smallholder participants. On the 
+
+32 
+
+ 
+
+positive side, the agribusinesses provided the surrounding communities with employment 
+opportunities (although only temporary), transferring workers from the informal to the formal 
+employment sector. On the negative side, many of the agribusinesses do not supply the local 
+market as the products are shipped to Europe, some resources such as land became more 
+difficult for smallholders to access, and many smallholders found it challenging to make their 
+voices heard in comparison to the agribusinesses. The collected data could not support any 
+specific gender differences in terms of agribusinesses consequences onto smallholder 
+farmers. 
+
+6.5.2 Females empowerment 
+Recalling the analytical findings in section 6.4, it was found that many of the household’s 
+economic responsibilities had been transferred from males to females when comparing 
+female farmers socio-economic situation today in comparison to the preceding generation. 
+When situating this finding into an empowerment analytical perspective, one can argue that 
+female farmers in the River Delta Valley today, are both more and less empowered. The 
+factors indicating that female farmers are more empowered are, group membership and 
+females’ individual economies, which have strengthened female farmers ‘internal dimension’ 
+of empowerment. The following statement was supported by the thesis findings 
+“empowerment involves shifts in the way in which we perceive the world and our place 
+within it (…) it expands our horizons of possibility and shifts our consciousness, making 
+other kinds of changes possible” (Cornwall and Edwards, 2014:xi). The group interviews 
+revealed that females saw a clear difference between themselves and the preceding 
+generation, as they had much more power over their lives, larger capabilities to create and 
+expand their businesses and were less dependent on their husbands. This contrasted to the 
+preceding generation whose females were considered as submissive, powerless, and without 
+much knowledge or capabilities to create new opportunities in their lives. These opinions 
+were shared with the responses from the individual male interviews. In this sense, female 
+farmers had a somewhat empowered consciousness about themselves and their roles in both 
+agricultural development and their life situation at large. Through the female farmers' 
+associations, they shared different forms of collective action, activism for their rights and 
+gave mutual support for individual struggles. The factor is indicating that female farmers are 
+equally as disempowered today as the preceding generation is the patriarchal structure, which 
+still remains as males hold the most power in decision-making. Women’s decision-making 
+power is mostly limited to her own agricultural plot and not household decisions. To increase 
+empowerment, it is vital to initiate a structural change in favor of greater equality (Batliwala, 
+1994; Kabeer,1994; Kabeer in SIDA, 2001). Unfortunately, this has not happened in the 
+River Delta Valley, since more or less the same power-relation between males and females 
+still exist.  
+
+However, in support of the thesis theoretical framework, it can be concluded that 
+empowerment is a highly dynamic process since “a person is not necessarily empowered in 
+all aspects of its life at once” (Tsikata and Darkwah, 2014). The thesis revealed that while the 
+gender differences in some of the analytical domains were large (ie; domains 2, 3 and 4), they 
+were nearly absent in other domains (ie; domain 1). In addition, a person who is empowered 
+today might be disempowered tomorrow by changes in their circumstances and vice versa 
+(Tsikata and Darkwah, 2014). This is especially relevant for people living on subsistence 
+
+33 
+
+ 
+
+farming, just like many of the thesis respondents do since small changes from one day to 
+another can have terrible consequences. Also, some developments might result in increased 
+empowerment in one domain but disempowerment in another. An example of this can be 
+observed in the relationship between the domains 3 and 4 where females overall larger access 
+and decision-making over capital has not resulted in them having more money to spend on 
+themselves or more time, but the opposite (see section 6.4.).  
+
+7 Conclusion 
+This thesis aimed to explore the gendered differences between male and female farmers’ 
+smallholder rice production and its impact upon agricultural productivity, management, and 
+female farmers’ socio-economic situation, in the River Delta Valley in Senegal. This is 
+important since previous research has shown that agricultural productivity levels have been 
+hampered due to female farmers marginalization and lack of opportunities in the agricultural 
+sector. The solution to this issue has been appointed to increasing female farmers 
+empowerment. To investigate females empowerment in the case of rice cultivation in the 
+River Delta Valley, the thesis theoretical framework was based on Timmer’s model of the 
+Agricultural Transformation, pro-poor agricultural growth, and the concept of empowerment, 
+which was operationalized through the analytical framework called the ‘Women’s 
+Empowerment in Agriculture Index’ (A-WEAI). This consisted of five analytical domains; 1. 
+Agricultural productivity, 2. Ownership or renting of resources, 3. Access and control of 
+income and credit, 4. Time and workload, and 5. Group membership, which was used to 
+locate gender gaps and to guide the data collection process. The data collection applied a 
+mixed-methods approach involving a micro-survey, individual and group interviews and 
+participating observations with both male and female farmers. To fulfill the aim of the thesis, 
+this was divided into the following three research questions. 
+
+The first question asking about gender differences in productivity levels found both 
+differences and similarities between male and female farmers. The similarities included high-
+intensive rice production techniques, applied by both male and female farmers. The 
+differences included the area of production, number of laborers, and time of labor, resulting 
+in more abundant harvests for males in comparison to females. Contextualized to the model 
+of Timmer’s Agricultural Transformation, these findings are positive since both genders have 
+increased their rice production through high-intensive agriculture while both the labor force 
+and GDP has increased in the service sector. However, when discussed with the help of 
+previous research, Senegal is not on the path of the Agricultural Transformation, partly due to 
+input intensification instead of increasing productivity as the main driver to Senegal’s 
+agricultural growth.  
+
+The second question asking about gender differences in agricultural management also found 
+both similarities and differences depending on the analytical domain. The major gender 
+differences in agricultural management were the limited access to land as women have 
+smaller plots sizes than men (domain 2), limited opportunities to inherit land as women 
+seldom own their land of production (domain 2), women’s limited finances (domain 3), 
+women’s heavier workload and limited time in comparison to men (domain 4) and women’s 
+membership in farmers’ collectives (domain 5). The similarities in agricultural management 
+
+34 
+
+ 
+
+among the genders included the use of intensified agricultural techniques and inputs such as 
+fertilizer, machines, pesticides, etc (domain 1 and 2). Although many gender differences 
+remain within the rice production in the River Delta Valley, today female farmers produce 
+much more rice than they did only 5-10 years ago or even in the preceding generation when 
+they worked for their husbands. This is because women now cultivate their own individual 
+plots over which they have decision-making power, their own economy, access to credit, in 
+addition to organizing themselves into farming collectives including microfinance. These 
+findings revealed that female farmers in the River Delta Valley today are both more and less 
+empowered, depending on which analytical domain one analyzes and how it is analyzed. The 
+factors indicating female’s empowerment are group memberships in farming collectives, 
+females’ decision-making power over their own rice plantations and their individual 
+economies, by strengthening both the ‘external’ and the ‘internal’ dimensions of 
+empowerment. On the other side, the factors indicating female’s lesser empowerment are 
+their marginalized rights concerning inheritance and ownership of land, constraints in time 
+and workload, and limited financial resources in comparison to male farmers. 
+
+The third question asking about the previous rice agriculture developments’ effects on female 
+farmers’ socio-economic situation, found that women’s increased income had transferred 
+financial responsibilities within household’s, from the husband to the wife. This had resulted 
+in a more substantial financial burden for women today in comparison to the preceding 
+generation. Therefore, women’s increased economic empowerment had brought with it a 
+more substantial ‘double burden’ for the women as both their domestic and professional 
+responsibilities had increased due to their expanded financial freedom. This finding serves as 
+an example of the complexity of empowerment, since estimating the level of female farmers 
+empowerment is not as clear cut as we might think. Therefore, this finding confirmed what 
+was stated in the theoretical framework, being that female empowerment is not a linear 
+process as the improvement in one aspect might result in negative consequences in another. 
+
+Part of the thesis findings was that, in opposition to men, female farmers extra incomes were 
+invested in their children’s education, build or renovate the house, or expand their businesses. 
+This confirms the previous research from Quisumbing, (2003), discussed in the literature 
+review, which stated that when females (in opposition to males) are provided with the 
+opportunity to manage financial assets, the whole family and in particular the children 
+benefit. Another finding which refuted previous research was that the female participants 
+seemed more prone than men to engage in several economic activities, including market 
+sales. Due to the households ‘non-co-operative model’ in which husbands and wives do not 
+share their incomes, women’s increased revenues were not controlled by their husbands. 
+Thus, women’s commercialization of agricultural productions had, in fact, a positive effect 
+on their empowerment. In a sense, this disputes the analytical results from Smith and Chavas 
+(1997) who found that the commercialization of agricultural productions in West African 
+households was typically done by increasing the production on male managed communal 
+lands, meaning that husbands controlled the increased income. 
+
+The persisting gender gap among rice farmers in the River Delta Valley can be traced to the 
+patriarchal structures, appointing the elderly males as the person in charge of the household’s 
+decision-making. This stands in contrast to women’s decision-making power, which is mostly 
+limited to her own agricultural plot and individual economy, and not the household and 
+
+35 
+
+ 
+
+family decisions. Thus, more or less the same gendered power-structure from the preceding 
+generation still exist today, meaning that women’s individual rice cultivation rendering in 
+their own economy has not been able to alter patriarchal social structures. In order for female 
+farmers to be more empowered and to close the gender gap, these patriarchal structures need 
+to change. This can be framed through Batliwala’s definition of empowerment as “the 
+process of challenging existing power relations, and of gaining greater control over the 
+sources of power” (Batliwala, 1994:130). In effect, the persistent gender gap in Senegal’s 
+agricultural sector will continue to impose consequences for the Senegalese government’s 
+goal of reaching rice self-sufficiency and its overall developmental path. In addition, it is 
+unclear how large-scale agribusiness will affect smallholder’s possibilities of reaching 
+agricultural growth and gender equality in agricultural management. 
+
+A suggestion for future research on this topic is to investigate how the smallholder-based 
+agricultural growth, in opposition to the large-scale farming approach differs in terms of 
+female empowerment potentials. For example, what indications can be found in the River 
+Delta Valley, supporting that the smallholder-based, in comparison to the large-scale farming 
+approach, have positive effects on female farmers empowerment? Another suggestion is to 
+investigate whether the trend of transferring economic responsibilities from male to females 
+will continue in correlation with females increased individual economies. If this trend does 
+continue, what responsibilities will be transferred to women? Will they only end up with the 
+household’s economic responsibilities, or may this also lead to female’s increasing decision-
+making power? Ultimately, the question remains whether females increased economic 
+empowerment in the form of individual economies hold the potential to decrease the gender 
+gap and assist in taking Senegal forward on the developmental path.  
+
+8 Bibliography 
+
+8.1. Printed sources  
+AfDB (2015) Autonomiser les femmes africaines : Plan d’action. Indice de l’égalité du genre 
+en Afrique 2015. Abidjan 
+
+Agarwal, B. (2015) Food Security, Productivity, and Gender Equality. In Herring, J. The 
+Oxford handbook of food, politics, and society. Oxford: Oxford University Press. 
+
+AGRA (2017) Africa Agriculture Status Report- The business of Smallholder Agriculture in 
+Sub-Saharan Africa (Issue 5). Nairobi, Kenya: Alliance for a green revolution in Africa 
+(AGRA) 
+
+Alkire, S. Meinzen-Dick, R. Peterman, A. Quisumbing, A. Seymour, G. Vaz, A. (2013) The 
+women’s Empowerment in Agriculture Index. OPHI Working Papers 58. University of 
+Oxford 
+
+Andersson-Djurfeldt, A. and Djurfeldt, G. (2013) Structural Transformation and African 
+Smallholders: Drivers of Mobility within and between the Farm and Non-farm Sectors for 
+eight countries. Oxford Development Studies (41:3). PP: 281-306. 
+
+ 
+
+36 
+
+Andersson-Djurfeldt, A. Mawunyo-Dzanku, F. and Cuthbert-Isinika, A. (2018) Agriculture, 
+Diversification, and Gender in Rural Africa- Longitudinal Perspectives from Six Countries. 
+Oxford: Oxford University Press  
+
+Batliwala, S. (1994) ‘The Meaning of Women’s Empowerment: New Concepts from Action’, 
+in G. Sen, A. Germain, and L.C. Chen (eds), Population Policies Reconsidered: Health, 
+Empowerment, and Rights, Boston: Harvard University Press 
+
+Bernard, T. Doss, C. Hidrobo, M. Hoel, J. Kieran, C. (2018) Ask me why- Using vignettes to 
+understand patterns of intrahousehold decision making in rural Senegal. IFPRI Discussion 
+paper 01784. International Food Policy Research Institute. 
+
+Boserup, E. (1970) Women’s Role in Economic Development. New York, NY, St. Martin’s 
+Press.  
+
+Braun, J. and Webb, P.J.R. (1989) The Impact of New Crop Technology on the Agricultural 
+Division of Labor in a West African Setting. Economic Development and Cultural Change, 
+The University of Chicago. PP: 513-534. 
+
+Bryman, A. (2012) Social Research Methods (4th ed.). Oxford: Oxford University Press 
+
+Connor, D. Comas, J. Macpherson, M.G., Mateos, L. (2008) Impact of smallholder irrigation 
+on the agricultural production, food supply, and economic prosperity of a representative 
+village beside the Senegal River, Mauritania. Agricultural Systems (96). PP:1-15 
+
+Christiansen, L. (2017) Agriculture in Africa- Telling myths from facts- A synthesis. Food 
+Policy (67). PP:1-11. 
+
+Cornwall, A. and Edwards, J. (2014) Feminisms, Empowerment, and Development- Changing 
+Women’s lives. London and New York: Zed Books 
+
+Creswell, W.J. (2009) Research design: Qualitative, quantitative, and mixed methods 
+approaches (3rd ed.) United Kingdom: SAGE Publications Ltd. 
+
+Croppenstedth, A. Goldstein, M. Rosas, N. (2013) Gender and Agriculture- Inefficiencies, 
+Segregation, and Low Productivity Traps. The World Bank Research Observer (28:1). PP: 
+79-109 
+
+Dawe, D. (2010) The Rice Crisis- Markets, policies, and food security. London and 
+Washington D.C: The Food and Agriculture Organization of the United Nations and 
+Earthscan 
+
+Devey, M. (2000) Le Sénégal. Éditions KARTHALA: Paris  
+
+Diagne, M. Demont, M. Abdoulaye Seck, P. Diaw, A. (2013) Self Sufficiency policy and 
+irrigated rice productivity in the Senegal River Valley. Springer Science+ Business Media 
+Dordrecht and International Society for Plant pathology. Food Sec. (5), PP:55-68.  
+
+Diiro, GM. Seymour, G. Kassie, M. Muricho, G. Muriithi BW. (2018) Women’s 
+empowerment in agriculture and agricultural productivity- evidence from rural maize farmer 
+households in western Kenya. PLoS ONE (13:5).  
+
+ 
+
+37 
+
+Doss, C.R. (2001) Designing Agricultural Technology for African Women Farmers- Lessons 
+from 25 years of experience. World Development (29:12). PP: 2075-2092. 
+
+Doss, C. Meinzen-Dick, R. Quisumbing, A. Theis, S. (2018) Women in Agriculture- Four 
+myths. Global Food Security (16). PP:69-74. 
+
+Eyben, R. Kabeer,N. and Cornwall, A. (2008) Conceptualizing empowerment and the 
+implications for pro poor growth- A paper for the DAC Poverty Network. IDS Institute of 
+Development Studies. 
+
+FAO (2011) La situation mondiale de l’alimentation et de l’agriculture. Organisation des 
+Nations Unies pour l’alimentation et l’agriculture. Rome 
+
+FAO (2015) Senegal-Country fact sheet on food and agriculture policy trends. The Food and 
+Agriculture Policy Decision Analysis team (FAPDA). Paper no: I4841E/1/07.15 
+
+FAO, (2018a). FAO Rice Market Monitor. Volume XXI, Issue No.1. Trade and Markets 
+Division- Food and Agriculture Organization of the United Nations. 
+
+FAO, (2018b) Profil national genre des secteurs de l’agriculture et du développement rural- 
+Senegal. Série des évaluations Genre des Pays. Organisation des Nations Unies pour 
+l’alimentation et l’agriculture: Dakar. 
+
+FAO and AfDB (2015) Agricultural Growth in West Africa- Market and policy drivers. 
+Rome: Food and Agriculture Organization of the United Nations (FAO). 
+
+Goldstein, M. and Udry, C. (2008) The Profits of Power: Land Rights and Agricultural 
+Investment in Ghana. Journal of Political Economy (116:6). PP: 981-1022. 
+
+Grigsby, W.J. (2004) The Gendered Nature of Subsistence and Its Effect on Customary Land 
+Tenure. Society and Natural Resources (17:3). PP: 207-222.  
+
+Grow Africa (2019) ECOWAS Rice Factbook. Grow Africa and Alliance for a Green 
+Revolution in Africa (AGRA). Online: http://www.nepad.org/publication/ecowas-rice-
+factbook (last accessed: 25.07.2019) 
+
+Hochschild, A. and Machung, A. (1990) The Second Shift. New York: Avon Books 
+
+IFPRI (2012) Women’s Empowerment in Agriculture Index. USAID (United States Agency 
+International Development), IFPRI (International Food Policy Research Institute), OPHI 
+(Oxford Poverty & Human Development Initiative). Feed the Future. 
+
+IPAR (Initiative Prospective Agricole et Rurale) and RTI International (2018) Women’s 
+Empowerment In Agriculture Study- Feed The Future Senegal- Naatal Mbaye. Contract Aid-
+685-C-15-00001. 
+
+Kabeer, N. (2005) Gender equality and women’s empowerment- a critical analysis of the 
+millennium development goal 1. Gender &#x26; Development (13:1). PP: 13-24 
+
+Kabeer, N. (1994) Reversed Realities- Gender hierarchies in development thought. Verso 
+
+Kabeer, N. (2001). Resources, Agency, Achievements: Reflections on the Measurement of 
+Women’s Empowerment. In Swedish International Development Cooperation Agency 
+
+ 
+
+38 
+
+(SIDA). Discussing Women’s Empowerment-Theory and Practice. (page: 17-54). SIDA 
+Studies No. 3. Stockholm. 
+
+Koopman, J. (2009) Globalization, Gender, and Poverty in The Senegal River Valley. 
+Feminist Economics (15:3). PP: 253-285. 
+
+Lopez-Carlos, A. and Zahidi, S. (2005) Women’s Empowerment: Measuring the Global 
+Gender Gap. World Economic Forum, Geneva. 
+
+Malapit, H. Pinkstaff, C. Sproule, K. Kovarik, C. Quisumbing, A. Meinzen-Dick, R. (2017) 
+The abbreviated women’s empowerment in agriculture index (A-WEAI). IFPRI Discussion 
+paper 01647. Online: http://www.ifpri.org/publication/abbreviated-womens-empowerment-
+inagriculture-index-weai (last accessed: 09.03.2019) 
+
+Malapit, H. Kovarik, C. Sproule, K. Meinzen-Dick, R. Quisumbing, A. (2015) Instructional 
+guide on the abbreviated women’s empowerment in agriculture index (A-WEAI). IFPRI. 
+Online: https://www.ifpri.org/sites/default/files/a-weai_instructional_guide_final.pdf (last 
+accessed: 09.03.2019) 
+
+Maertens, M. Colen, L. Swinnen, J.F.M. (2011) Globalisation and poverty in Senegal- A 
+worst-case scenario? European Review of Agricultural Economics (38:1). PP:31-54. 
+
+Maertens, M., and J. F. M. Swinnen. (2012) Gender and modern supply chains in developing 
+countries. Journal of Development Studies (48:10). PP:1412-1430. 
+
+Matthews, B. and Ross, L. (2010) Research Methods: A practical Guide for the social 
+sciences: Pearson Education Limited 
+
+Ministère de l’Agriculture et de l’Equipement Rural (MAER) (2014) Programme 
+d’Accélération de la Cadence de l’Agriculture Sénégalaise – PRACAS, Volet agricole du 
+Plan Sénégal Emergent (PSE) : Dakar. 
+
+Ministère de l’Agriculture (2009) Programme national d’autosuffisance en riz (PNAR). 
+République du Sénégal. Online : www.ipar.sn (last accessed 21.12.2018 
+
+Ministère de Femme, de la Famille et de l’Enfance (2016) Stratégie Nationale pour l’Equité 
+et l’égalité de genre 2016-2026 (SNEEG). République du Sénégal. Dakar. Online : 
+http://www.directiongenre.com/docs/SNEEG%202.pdf (last accessed: 15.01.2019). 
+
+Nasrin, S. Bergman Lodin, J. Jirström, M. Holmquist, B. Andersson Djurfeldt, A. Djurfeldt, 
+G. (2015) Drivers of rice production- evidence from five sub-Saharan African countries. 
+Agriculture and Food Security (4:12). PP: 1-19. 
+
+Niang, A. Mbenda Sarr, N.F. Hathie, I. Diouf, N.C. Oumar Ba, C. Ka, I. Gagné, M. (2017) 
+Understanding changing land access and use by the rural poor in Senegal. London: 
+International Institute for Environment and Development. 
+
+Nagy Hesse-Biber, S. (2014) Feminist Research Practice- A primer. SAGE Publications Inc. 
+
+Ohara, O. and Clement, F. (2018) Power as agency- A critical reflection on the measurement 
+of women’s empowerment in the development sector. World Development (106). PP:111-123 
+
+ 
+
+39 
+
+Padgett, D. (1998) Qualitative methods in social work research: Challenges and rewards. 
+USA: SAGE Publications 
+
+Palacios-Lopez, A. Christiansen, L. Kilic, T. (2017) How much of the labor in African 
+agriculture is provided by women. Food Policy (67). PP: 52-63. 
+
+Peterman, A. Quisumbing, A. Behrman, J. Nkonya, E. (2011) Understanding the 
+complexities surrounding Gender Differences in Agricultural Productivity in Nigeria and 
+Uganda. Journal of Development Studies (47:10). PP: 1482-1509. 
+
+Quisumbing, A.R. (1996) Male-Female Differences in Agricultural Productivity: 
+Methodological Issues and Empirical Evidence. World Development (24:10). PP: 1579-1595. 
+
+Quisumbing, A.R. (2003) Household decisions, Gender, and Development- A recent 
+Synthesis of recent research. Washington DC: International Food and Policy Research 
+Institute. 
+
+Quisumbing, A. Meinzen-Dick, R. Raney, T. Croppenstedth, A. Behrman, J. Peterman, A. 
+(2014) Gender in Agriculture- Closing the Knowledge Gap. Dordrecht: FAO 
+
+République du Sénégal (2014) Plan Sénégal Emergent. Sénégal Emergent- Liguey nguir ëlëk. 
+Online: https://www.sec.gouv.sn/dossiers/plan-s%C3%A9n%C3%A9gal-emergent-pse (last 
+accessed: 25.07.2019). 
+
+Rubin, H.J. and Rubin, I.S. (2012) Designing Main Questions and Probes. In Qualitative 
+Interviewing (2nd ed.) The art of Hearing data. Thousand Oaks: SAGE Publications Inc. 
+
+SAED, (2001) Intensification de la riziculture irriguée dans la Vallée du Fleuve Sénégal : 
+Acquis et Perspectives. Société nationale d’Aménagements et d’exploitation des terres du 
+Delta du Fleuve Sénégal et des Vallées du Fleuve Sénégal et de la Falémé (SAED). 
+République du Sénégal- Ministère de l’agriculture et de l’élevage. 
+
+Saito, K. Dieng, I. Toure, A.A. Somado, E. Wopereis, M.C.S (2015) Rice yield growth 
+analysis for 24 African countries over 1960-2012. Global Food Security (5). PP: 62-69. 
+
+Seck, P.A. Tollens, E. Wopereis, M.C.S. Diagne, A. Bamba, I. (2010) Rising trends and 
+variability of rice prices- Threats and opportunities for sub-Saharan Africa. Food Policy (35). 
+PP:403-411. 
+
+Sheyvens, R. (2014) Development fieldwork- A practical guide. Los Angeles and London: 
+SAGE Publications Ltd. 
+
+Smith, G. (2010) History insights- Focus on Research-Oral History. Coventry: University of 
+Warwick. 
+
+Smith, L.C. and Chavas, J.P. (1997) Commercialization and the Balance of Women’s Dual 
+roles in Non-Income pooling West African Households. American Journal of Agricultural 
+Economics (79). PP: 589-594. 
+
+Timmer, C.P. (1998) The Agricultural Transformation. In Eicher, C.K. and Staatz, J.M. (3rd 
+ed.) International Agricultural Development. Baltimore and London: The John Hopkins 
+University Press 
+
+40 
+
+ 
+
+The Observatory of Economic Complexity, (2019) Where does Senegal import Milled Rice 
+from (1962-2017). Online: 
+https://oec.world/en/visualize/line/sitc/import/sen/show/0422/1962.2017/ (last accessed: 
+24.07.2019) 
+
+The World Bank (2007) Agriculture for Development. World Development Report 2008. 
+Washington. 
+
+The World Bank/IFAD/FAO (International Fund for Agricultural Development/Food and 
+Agriculture Organization for the United Nations) (2009) Gender in Agriculture Sourcebook. 
+World Bank, Washington DC. 
+
+The World Bank, (2018) Senegal Economic Update- Recent Growth Drivers in Senegal, and 
+the Role of Agriculture in Developing a Resilient and Inclusive Economy. The World Bank’s 
+Macro-Fiscal Management-MFM and Agriculture Global Practices. 
+
+Theriault, V. Smale, M. Haider, H. (2017) How does gender affect sustainable intensification 
+of cereal production in the West African Sahel- Evidence from Burkina Faso. World 
+Development (92). PP: 177-191. 
+
+Tsikata, D. and Darkwah, A.K. (2014) Researching empowerment- On methodological 
+innovations, pitfalls, and challenges. Women’s Studies International Forum (45). PP:81-89. 
+
+Udry, C. (1996) Gender, Agricultural Production, and the theory of the household. Journal of 
+Political Economy (104:5). PP:1010-1046 
+
+Udry, C. Hoddinott, J. Alderman, H. Haddad, L. (1995) Gender differentials in farm 
+productivity: implications for household efficiency and agricultural policy. Food Policy 
+(20:5) PP: 407-423. 
+
+Van den Broeck, G. Swinnen, J. Maertens, M. (2017) Global value chains, large-scale 
+farming, and poverty: Long-term effects in Senegal. Food Policy (66). PP: 97-107. 
+
+Van den Broeck, G. and Maertens, M. (2017) Moving Up or Moving Out? Insights into Rural 
+Development and Poverty Reduction in Senegal. World Development (99). PP: 95-109. 
+
+Visvanathan, N. Duggan, L. Nisonoff, L. Wiegersma, N. (2011) The Women, Gender, and 
+Development Reader. London: Zed Books 
+
+World Economic Forum (2013) The Global Gender Gap Report 2013- Insight Report. The 
+World Economic Forum: Geneva 
+
+World Economic Forum (2018) The Global Gender Gap Report 2018- Insight Report. The 
+World Economic Forum: Geneva 
+
+8.2. Figures 
+FAO-STAT, (2019a) Figure 1: West African countries rice imports. Indicators: Import 
+Quantity; Western Africa List. Online: http://www.fao.org/faostat/en/#data/FBS (last 
+accessed: 24.07.2019). 
+
+FAO-STAT, (2019b) Figure 2: West African countries rice production. Indicators: 
+Production Quantity; Western Africa List. Online: http://www.fao.org/faostat/en/#data/FBS 
+(last accessed: 24.07.2019). 
+
+41 
+
+ 
+
+FAO-STAT, (2019c) Figure 3: The role of Rice in Senegal. Indicators: Domestic supply 
+quantity ; Import Quantity ; Export Quantity ; Production Quantity. Online: 
+http://www.fao.org/faostat/en/#data/FBS (last accessed: 24.07.2019). 
+
+Google (2019) Figure 6: Google Maps- Map data. Online: 
+https://www.google.com/maps/@16.3417586,-16.0565189,10z (last accessed: 27.06.2019) 
+
+The World Bank Data, (2019a) Figure 4: Senegal’s labor force composition according to the 
+sectors. Indicators: Employment in Agriculture; Employment in Services; Employment in 
+Industry (% of total employment). Online: 
+https://databank.worldbank.org/reports.aspx?source=2&country=SEN# (last accessed: 
+24.07.2019). 
+
+The World Bank Data, (2019b) Figure 5: The value of Senegal’s economic sectors. 
+Indicators: Agriculture, forestry and fishing; Services; Industry (including construction); 
+(Constant 2010 in US dollars). Online: 
+https://databank.worldbank.org/reports.aspx?source=2&country=SEN# (last accessed: 
+24.07.2019). 
+
+8.3. Participant interviews 
+Oral history group interview no. 2. Conducted in Ross Bethio with four female farmers, aged 
+39-99 years old and members of the UFP-Ross Bethio. 4th of May 2019. 
+
+Oral history group interview no. 3. Conducted in Ross Bethio with two female farmers, aged 
+39 and 60 years old and members of the UFP- Ross Bethio. 4th of May 2019. 
+
+Oral history group interview no. 5. Conducted in Ross Bethio with three female farmers, aged 
+60-69 years old and members of the UFP- Ross Bethio. 5th of May 2019. 
+
+8.4. Key informant interviews 
+Key informant interview. Conducted in Richard Toll with Mme Dieng Ndiaye- The president 
+of FEPRODES. 9th of April 2019. 
+
+Key informant interview. Conducted in Ross Bethio with Mme Gaye- The president of UFP-
+Ross Bethio. 23rd of April 2019. 
+
+9 Appendix 
+
+9.1 Micro-survey (English version) 
+*Requirements: all participants should be above the age of 18 and married, all participants have the right to 
+suggest the interview location 
+
+*Researcher’s note: Explain to the participant how to respond (the different years of interrogation), help the 
+participant by using ‘probes’ when needed 
+
+Respondent’s Number 
+
+Date 
+
+Location 
+
+Translator 
+
+ 
+
+ 
+
+ 
+
+Introduction of survey 
+
+1.  Give thanks to participant 
+2.  Explain the conduct of the micro-survey  
+3. 
+
+Introduce myself 
+
+ 
+
+ 
+
+42 
+
+4.  The thesis objective 
+5.  The survey objective 
+6.  Justify the selection of participants 
+7.  Respondent rights to withdrawal, their confidentiality, and anonymity 
+8.  Participants informed consent 
+
+➔  Ask participant if he/she is okay with the above 
+
+Analytical domain 1- Agricultural Productivity (Status of the factors of production) 
+
+Question 
+
+Answer 
+
+ 
+r
+e
+b
+m
+u
+N
+
+*All questions below concern the season 
+called ‘contre saison chaude’ (January-
+March), since it results in the best harvest 
+and is the most common season of 
+production 
+
+1.1  How many hectares (ha) do you cultivate 
+
+for your rice production? 
+
+1.2  How many kilo/bags of rice do you harvest 
+
+from this land? 
+
+1.3  How many laborers work on this land?  
+
+1.4  How many hours per day do these laborer’s 
+
+work on this land? 
+
+1.5  With what frequency do you irrigate your 
+
+rice plots? 
+
+1.6  What types of inputs 
+
+Inputs 
+
+do you use on your 
+rice plots? 
+
+Fertilizer (Non-Bio) 
+
+Pesticide 
+
+Improved rice seeds 
+
+Tools and machines 
+
+Animals 
+
+Other 
+
+1.7  Which of the 
+
+Factor 
+
+following effects 
+have you observed 
+on your rice plots? 
+
+Soil salinity 
+
+Soil nutrient 
+depletion 
+
+Drought  
+
+1  
+
+2  
+
+3 
+
+4  
+
+5 
+
+10 
+
+years 
+ago 
+
+Years 
+
+ago 
+
+years 
+ago 
+
+years 
+ago 
+
+ years 
+
+ago 
+
+years 
+ago 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Tick the box 
+
+(if you made such inputs) 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Tick the box 
+
+(if you have observed this factor 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+43 
+
+ 
+
+ 
+
+Other 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Analytical domain 2- Resources (Ownership or renting of non-financial resources) 
+
+ 
+r
+e
+b
+m
+u
+N
+
+Question 
+
+*Highlight the 
+difference 
+between 
+property and 
+access 
+
+Answer 
+
+1  
+
+2  
+
+3 
+
+4  
+
+5 
+
+10 
+
+years ago 
+
+years ago 
+
+years ago 
+
+years ago 
+
+ years ago 
+
+ years ago 
+
+2.1  Do you 
+
+Individual 
+
+Individual 
+
+Individual 
+
+Individual 
+
+Individual 
+
+Individual 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Collective 
+
+Collective 
+
+Collective 
+
+Collective 
+
+Collective 
+
+Collective 
+
+ 
+
+Both 
+
+Own 
+
+ 
+
+ 
+
+Both 
+
+Own 
+
+ 
+
+ 
+
+Both 
+
+Own 
+
+ 
+
+ 
+
+Both 
+
+Own 
+
+ 
+
+ 
+
+Both 
+
+Own 
+
+ 
+
+ 
+
+Both 
+
+Own 
+
+ 
+
+Rent 
+
+Rent 
+
+Rent 
+
+Rent 
+
+Rent 
+
+Rent 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+2.2 
+
+2.3 
+
+cultivate 
+individual or 
+collective rice 
+plots? 
+
+ 
+
+If you have 
+individual rice 
+plots, do you 
+own this land, 
+or do you rent 
+it? 
+
+If you cultivate 
+collective 
+land/plots, how 
+have the terms 
+of usage 
+altered over the 
+years? 
+
+2.4  Do you own or 
+
+Ownership 
+
+Ownership 
+
+Ownership 
+
+Ownership 
+
+Ownership 
+
+Ownership 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Access 
+
+Access 
+
+Access 
+
+Access 
+
+Access 
+
+Access 
+
+do you have 
+access to any 
+farming 
+equipment? 
+
+(tractor, 
+transportation, 
+tools, plow, 
+tiller, irrigation 
+system) 
+
+2.5  Have you 
+
+ 
+
+inherited the 
+land or parts 
+of the land that 
+you cultivate 
+for your rice 
+production? 
+
+44 
+
+ 
+
+ 
+
+ 
+
+Analytical domain 3- Access and control of income and credit 
+
+Question 
+
+Answer 
+
+ 
+r
+e
+b
+m
+u
+N
+
+ 
+
+3.1  On all the rice 
+plots that you 
+cultivate 
+(individual 
+and 
+collective), is 
+the harvest 
+used for the 
+household, 
+market sales, 
+or both? 
+
+3.2  On all the rice 
+plots that you 
+cultivate 
+(individual 
+and 
+collective), 
+who take the 
+decisions 
+concerning the 
+rice and rice 
+production 
+destined for 
+market sales? 
+
+3.3  Who take the 
+decisions on 
+how to use the 
+revenues 
+from the rice 
+sold at the 
+market 
+(harvested 
+from your 
+plots)? 
+
+1  
+
+2  
+
+3 
+
+4  
+
+5 
+
+10 
+
+years ago 
+
+years ago 
+
+years ago 
+
+years ago 
+
+ years ago 
+
+ years ago 
+
+Household 
+
+Household 
+
+Household 
+
+Household 
+
+Household 
+
+Household 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Market 
+
+Market 
+
+Market 
+
+Market 
+
+Market 
+
+Market 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Both 
+
+Both 
+
+Both 
+
+Both 
+
+Both 
+
+Both 
+
+You 
+
+ 
+
+You 
+
+ 
+
+You 
+
+ 
+
+You 
+
+ 
+
+You 
+
+ 
+
+You 
+
+ 
+
+Your 
+Spouse 
+
+Your 
+Spouse 
+
+Your 
+Spouse 
+
+Your 
+Spouse 
+
+Your 
+Spouse 
+
+Your 
+Spouse 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Other 
+
+Other 
+
+Other 
+
+Other 
+
+Other 
+
+Other 
+
+You 
+
+ 
+
+You 
+
+ 
+
+You 
+
+ 
+
+You 
+
+ 
+
+You 
+
+ 
+
+You 
+
+ 
+
+Your 
+Spouse 
+
+Your 
+Spouse 
+
+Your 
+Spouse 
+
+Your 
+Spouse 
+
+Your 
+Spouse 
+
+Your 
+Spouse 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Other 
+
+Other 
+
+Other 
+
+Other 
+
+Other 
+
+Other 
+
+ 
+
+ 
+
+Question 
+
+ 
+
+1  
+
+year 
+ago 
+
+ 
+r
+e
+b
+m
+u
+N
+
+years 
+ago 
+
+3.4  Do you have the opportunity to 
+
+Yes 
+
+Yes 
+
+borrow money for your rice 
+cultivation? 
+
+ 
+
+No 
+
+ 
+
+No 
+
+Answer 
+
+2 
+
+3 
+
+4  
+
+5 
+
+10 
+
+ years 
+
+ago 
+
+Yes 
+
+ 
+
+No 
+
+years 
+ago 
+
+Yes 
+
+ 
+
+No 
+
+ years 
+
+ago 
+
+Yes 
+
+ 
+
+years 
+ago 
+
+Yes 
+
+ 
+
+No 
+
+No 
+
+45 
+
+If yes, which one of the following actors have you borrowed money from? 
+
+Governmental institution 
+
+Bank 
+
+NGO 
+
+Farming collective 
+
+Credit or microfinance group 
+
+Mutual help or insurance group 
+
+Religious group 
+
+Family and friends 
+
+Other 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+3.5  Who controls the money you have 
+
+You 
+
+You 
+
+You 
+
+You 
+
+You 
+
+You 
+
+borrowed? 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Your 
+spouse 
+
+Your 
+spouse 
+
+Your 
+spouse 
+
+Your 
+spouse 
+
+Your 
+spouse 
+
+Your 
+spouse 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Other 
+
+Other 
+
+Other 
+
+Other 
+
+Other 
+
+Other 
+
+ 
+
+4.1 
+
+Analytical domain 4- Time and Workload 
+
+Question 
+
+Rank the following activities according to how much time you spend on doing 
+them. The higher the number the more time you spend on doing the chore. 
+
+ 
+
+Males and Females ranking 
+
+Male farmer no 1-7 
+
+Female farmer no 1-11 
+
+Main 
+activity 
+
+Rice agriculture 
+
+Other farming activities 
+
+Selling products on the market 
+
+Domestic work 
+
+Fetching water and wood 
+
+Rest and leisure 
+
+Prayer 
+
+Other 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Note: The analytical domain 5 Leadership- group membership is indirectly included and tested for as all female 
+respondents are part of one of the following farming associations; FEPRODES or UFP-Ross Bethio 
+
+Respondent information 
+
+Respondent’s official status 
+
+Name 
+
+Age 
+
+ 
+
+ 
+
+ 
+
+ 
+
+46 
+
+Relationship status 
+
+single/ married/ divorced/ separated/ widow 
+
+If married, are you a Polygamous or Monogamous 
+household? 
+
+If polygamous, how many wives are there? 
+
+          Polygamous                      Monogamous 
+
+ 
+
+          1                  2                  3                     4 
+
+If you are one of the wives, which number (1-4) are 
+you? 
+
+ 
+
+          1                  2                  3                     4 
+
+           Male-headed                   Female-headed 
+
+ 
+
+ 
+
+ 
+
+What type of household? Female or male-headed 
+household? 
+
+Do you have children? If yes, how many do you 
+have? 
+
+Can you read and write? 
+
+If it was possible for you, would you be interested in 
+adopting or buying new and unknown agricultural 
+techniques (which could potentially be bad for the 
+harvest)? 
+
+Eg: new machines, fertilizer, pesticides, etc. 
+
+9.2 Female Group Interviews- Interview guide (English version) 
+*Description: Oral history group interviews with 4-5 senior women. Preferably, all participants should be 
+above the age of 55 and married. 
+
+*interviewer note: If needed, help respondents with ‘probes’ and follow-up questions. After the interview is 
+finished, write down additional notes regarding the respondent. Eg prompts: Can you please tell me more about 
+that?’ or ‘That is interesting, could you say more about that?’. Encourage responses reflecting over a long time, 
+not only their own but also their mother and grandmother’s lives. 
+
+Respondent’s Number 
+
+Date 
+
+Location 
+
+Translator 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Introduction of interview 
+
+Introduce myself 
+
+1  Give thanks to participant 
+2  Explain the conduct of the micro-survey  
+3 
+4  The thesis objective 
+5  The survey objective 
+6 
+7  Respondent rights to withdrawal, their confidentiality, and anonymity 
+8  Participants informed consent 
+
+Justify the selection of participants 
+
+➔  Ask participant if he/she is okay with the above 
+
+Interview questions 
+
+Do you think that rice production in the River Delta Valley today is more 
+productive and profitable than 5-10 years back as well as in comparison to the 
+previous generation? If yes, then why? 
+
+Corresponding 
+domain in the 
+
+analytical 
+framework 
+
+Domain 1 
+
+ 
+
+47 
+
+ 
+r
+e
+b
+m
+u
+N
+
+1 
+
+ 
+
+ 
+
+2 
+
+How do you think that your lives have changed in comparison to those of your 
+mothers and grandmothers? Looking at both agricultural and economic aspects. 
+
+Domain 2-5 
+
+3  What do you think are the major differences between male and female farmers? 
+
+Domain 1-5 
+
+4 
+
+5 
+
+6 
+
+7 
+
+Looking at both your generation, 5-10 years back as well as in comparison to the 
+previous generation? 
+
+Do you think that males are more productive and efficient rice farmers than 
+females? For example; do males hire more extension workers, use more machines 
+and inputs, etc? Has this changed over time? 
+
+Do you think that males are more talented at rice farming than females? Also, do 
+you and your husband share your knowledge on rice agriculture and has this 
+changed over time? 
+
+How have your lives changed after becoming a member of the female farming 
+association (FEPRODES, UFP-Ross Bethio)? For example, rice production and 
+economy. 
+
+If you would have a much larger harvest, how would you spend your additional 
+income? In comparison, if it would have been your husband who would have had 
+a larger harvest, what would he have done with the additional income? 
+
+8  What has been the best happening in your life so far? 
+
+9  What is your dream for the future? 
+
+Domain 1-3 
+
+Domain 1-3 
+
+Domain 4 
+
+Domain 3 
+
+To end on a 
+good note 
+
+To end on a 
+good note 
+
+9.3 Male Individual Interview- Interview guide (English version) 
+*Description: Oral history individual interviews with senior men. Preferably, all participants should be above 
+the age of 55 and married. 
+
+*interviewer note: If needed, help respondents with ‘probes’ and follow-up questions. After the interview is 
+finished, write down additional notes regarding the respondent. Eg prompts: Can you please tell me more about 
+that?’ or ‘That is interesting, could you say more about that?’. Encourage responses reflecting over a long time, 
+not only their own but also their mother and grandmother’s lives. 
+
+Respondent’s Number 
+
+Date 
+
+Location 
+
+Translator 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Introduction of interview 
+
+Introduce myself 
+
+1  Give thanks to participant 
+2  Explain the conduct of the micro-survey  
+3 
+4  The thesis objective 
+5  The survey objective 
+6 
+7  Respondent rights to withdrawal, their confidentiality and anonymity 
+8  Participants informed consent 
+➔  Ask participant if he/she is okay with the above 
+
+Justify the selection of participants 
+
+ 
+r
+e
+b
+m
+u
+N
+
+ 
+
+ 
+
+Interview questions 
+
+Corresponding 
+domain in the 
+
+analytical 
+framework 
+
+48 
+
+Do you think that rice production in the River Delta Valley today is more 
+productive and profitable than 5-10 years back as well as in comparison to the 
+previous generation? If yes, then why? 
+
+Domain 1 
+
+Do you work more hours on your rice production today than 5-10 years back as 
+well as in comparison to the previous generation? If yes, then why? 
+
+Domain 5 
+
+Do you hire more extension workers for your rice production today than 5-10 
+years back as well as in comparison to the previous generation? If yes, then why? 
+
+Domain 2 and 5 
+
+Is your family richer today than 5-10 years back as well as in comparison to the 
+previous generation? If yes, then why? 
+
+Domain 3 
+
+How do you divide the household’s financial responsibilities between you and 
+your wife (wives)? How has this changed over the last 5-10 years? 
+
+Domain 3 and 5 
+
+1 
+
+2 
+
+3 
+
+4 
+
+5 
+
+6 
+
+How is your household’s division of financial responsibilities different in 
+comparison to previous generations? 
+
+7  What do you think are the major differences between male and female farmers? 
+Looking at both your generation, 5-10 years back as well as in comparison to the 
+previous generation? 
+
+Domain 3 and 5 
+
+Domain 1-5 
+
+8 
+
+If you would have a much larger harvest, how would you spend your additional 
+income? In comparison, if it would have been your wife (wives) who would have 
+had a larger harvest, what would she have done with the additional income? 
+
+Domain 3 
+
+9 
+
+If your wife (wives) could no longer work and bring a financial 
+
+Domain 3 and 5 
+
+contribution to the household expenses, what would you do? 
+
+For example; pay for all household expenses yourself, lend money, make your 
+
+wife (wives) solve the problem… 
+
+10  What has been the best happening in your life so far? 
+
+11  What is your dream for the future? 
+
+9.4 Summary of the data collection 
+
+End on a good 
+
+note 
+
+End on a good 
+
+note 
+
+Data collection 
+
+method 
+
+Summary of the data collection 
+
+Respondents 
+
+Number of 
+
+interviews/surveys 
+
+Micro-surveys 
+
+Male (in total) 
+
+Location of farmers 
+
+Ross Bethio 
+
+Ndonba 
+
+Colonat 
+
+Souloul 
+
+Female (in total) 
+
+Location of farmers 
+
+Ross Bethio 
+
+Ndonba 
+
+Colonat 
+
+ 
+
+7 
+
+0 
+
+2 
+
+3 
+
+2 
+
+11 
+
+4 
+
+2 
+
+3 
+
+49 
+
+Souloul 
+
+Individual female 
+interviews 
+
+Colonat 
+
+Individual male 
+interviews 
+
+Female group 
+interviews 
+
+Ross Bethio 
+
+Ross Bethio 
+
+Couple interview 
+
+Ross Bethio 
+
+Key informant 
+interviews 
+
+Agronomy professor in the University of Gaston-Berger 
+
+SAED regional officer in the zone of Podor 
+
+Consultant in agricultural development projects in the River 
+Delta Valley region 
+
+The president of FEPRODES 
+
+The secretary of FEPRODES 
+
+The president of UFP-Ross Bethio 
+
+Extension worker of UFP-Ross Bethio 
+
+Extension worker at ACSA 
+
+Total number of interviews and surveys 
+
+2 
+
+2 
+
+6 
+
+5 
+
+1 
+
+1 
+
+3 
+
+1 
+
+2 
+
+1 
+
+1 
+
+1 
+
+1 
+
+1 
+
+44 
+
+9.5 Compilation of the micro-survey respondent’s answers 
+Note: the number of male and female survey respondents are not the same. Female respondents were 11 while 
+the male respondents were only 7. In addition, some answers for specific years are inconclusive as respondents 
+could not always answer the question asked due to bad memory and for not farming rice during the particular 
+year which was asked for.  
+
+Analytical domain 1- Agricultural Productivity 
+
+1.1 
+
+How many hectares (ha) do you cultivate for your rice production? 
+
+ 
+
+1 year ago 
+
+<0.5 ha 
+
+0.5-1 ha 
+
+2-3 ha 
+
+4-5 ha 
+
+6-10 ha 
+
+2 years ago 
+
+<0.5 ha 
+
+0.5-1 ha 
+
+2-3 ha 
+
+4-5 ha 
+
+6-10 ha 
+
+ 
+
+Males’ plots 
+
+Females’ plots 
+
+ 
+
+ 
+
+1 
+
+4 
+
+1 
+
+ 
+
+ 
+
+2 
+
+2 
+
+2 
+
+1 
+
+5 
+
+4 
+
+2 
+
+ 
+
+1 
+
+7 
+
+2 
+
+2 
+
+ 
+
+50 
+
+3 years ago 
+
+<0.5 ha 
+
+0.5-1 ha 
+
+2-3 ha 
+
+4-5 ha 
+
+6-10 ha 
+
+4 years ago 
+
+<0.5 ha 
+
+0.5-1 ha 
+
+2-3 ha 
+
+4-5 ha 
+
+6-10 ha 
+
+5 years ago 
+
+<0.5 ha 
+
+0.5-1 ha 
+
+2-3 ha 
+
+4-5 ha 
+
+6-10 ha 
+
+10 years ago 
+
+<0.5 ha 
+
+0.5-1 ha 
+
+2-3 ha 
+
+4-5 ha 
+
+6-10 ha 
+
+ 
+
+ 
+
+2 
+
+2 
+
+2 
+
+ 
+
+ 
+
+2 
+
+2 
+
+2 
+
+ 
+
+ 
+
+3 
+
+2 
+
+1 
+
+ 
+
+1 
+
+2 
+
+2 
+
+1 
+
+2 
+
+6 
+
+4 
+
+ 
+
+ 
+
+1 
+
+8 
+
+3 
+
+ 
+
+ 
+
+1 
+
+8 
+
+2 
+
+1 
+
+ 
+
+1 
+
+6 
+
+ 
+
+ 
+
+ 
+
+Most common choice within each gender-group 
+
+2-3 ha and 4-5 ha 
+
+0.5-1 ha 
+
+1.2 
+
+How many bags of rice do you harvest from this land? 
+
+Note: 1 bag of paddy rice is the equivalent to 60 kilos of eatable rice according to key informant 
+interviews. 
+
+ 
+
+Males’ plots 
+
+Females’ plots 
+
+1 year ago 
+
+<50 bags/ ha 
+
+51-70 bags/ ha 
+
+71-100 bags/ ha 
+
+>100 bags/ ha 
+
+2 years ago 
+
+<50 bags/ ha 
+
+51-70 bags/ ha 
+
+71-100 bags/ ha 
+
+>100 bags/ ha 
+
+3 years ago 
+
+<50 bags/ ha 
+
+51-70 bags/ ha 
+
+1 
+
+ 
+
+5 
+
+ 
+
+1 
+
+1 
+
+4 
+
+ 
+
+1 
+
+1 
+
+3 
+
+4 
+
+4 
+
+ 
+
+4 
+
+ 
+
+7 
+
+ 
+
+3 
+
+3 
+
+51 
+
+ 
+
+ 
+
+71-100 bags/ ha 
+
+>100 bags/ ha 
+
+4 years ago 
+
+<50 bags/ ha 
+
+51-70 bags/ ha 
+
+71-100 bags/ ha 
+
+>100 bags/ ha 
+
+5 years ago 
+
+<50 bags/ ha 
+
+51-70 bags/ ha 
+
+71-100 bags/ ha 
+
+>100 bags/ ha 
+
+10 years ago 
+
+<50 bags/ ha 
+
+51-70 bags/ ha 
+
+71-100 bags/ ha 
+
+>100 bags/ ha 
+
+3 
+
+1 
+
+1 
+
+2 
+
+1 
+
+1 
+
+1 
+
+3 
+
+2 
+
+ 
+
+1 
+
+2 
+
+3 
+
+ 
+
+5 
+
+ 
+
+5 
+
+1 
+
+4 
+
+ 
+
+4 
+
+2 
+
+5 
+
+ 
+
+4 
+
+ 
+
+3 
+
+1 
+
+Most common choice within each gender-group 
+
+51-70 bags/ ha and 71-100 
+
+<50 bags/ ha and 71-100 
+
+bags/ ha 
+
+bags/ ha 
+
+1.3 
+
+How many laborers work on this land during the less labor-intensive season?  
+
+Note: extension workers are always hired for harvest and other labor-intensive seasons, thus asking 
+about the less labor-intensive season indicates how high the workload is on the individual of an 
+everyday basis. In addition, all respondents answering this question had different sizes of plots. 
+
+ 
+
+1 year ago 
+
+1 person 
+
+2 persons 
+
+3 persons 
+
+>3 persons 
+
+2 years ago 
+
+1 person 
+
+2 persons 
+
+3 persons 
+
+>3 persons 
+
+3 years ago 
+
+1 person 
+
+2 persons 
+
+3 persons 
+
+>3 persons 
+
+4 years ago 
+
+1 person 
+
+2 persons 
+
+3 persons 
+
+Males 
+
+Females 
+
+1 
+
+1 
+
+1 
+
+4 
+
+1 
+
+1 
+
+1 
+
+4 
+
+1 
+
+1 
+
+1 
+
+2 
+
+1 
+
+2 
+
+1 
+
+5 
+
+2 
+
+4 
+
+ 
+
+5 
+
+2 
+
+4 
+
+ 
+
+6 
+
+2 
+
+3 
+
+ 
+
+6 
+
+4 
+
+1 
+
+52 
+
+ 
+
+ 
+
+>3 persons 
+
+5 years ago 
+
+1 person 
+
+2 persons 
+
+3 persons 
+
+>3 persons 
+
+10 years ago 
+
+1 person 
+
+2 persons 
+
+3 persons 
+
+>3 persons 
+
+3 
+
+3 
+
+ 
+
+1 
+
+3 
+
+3 
+
+ 
+
+1 
+
+3 
+
+ 
+
+6 
+
+4 
+
+1 
+
+ 
+
+7 
+
+2 
+
+1 
+
+ 
+
+Most common choice within each gender-group 
+
+>3 persons 
+
+1 person 
+
+1.4 
+
+How many hours per day do you work on you land during the less labor-intensive season?  
+
+ 
+
+1 year ago 
+
+>2 hours 
+
+2-4 hours 
+
+5-7 hours 
+
+8-10 hours 
+
+>10 hours 
+
+2 years ago 
+
+>2 hours 
+
+2-4 hours 
+
+5-7 hours 
+
+8-10 hours 
+
+>10 hours 
+
+3 years ago 
+
+>2 hours 
+
+2-4 hours 
+
+5-7 hours 
+
+8-10 hours 
+
+>10 hours 
+
+4 years ago 
+
+>2 hours 
+
+2-4 hours 
+
+5-7 hours 
+
+8-10 hours 
+
+>10 hours 
+
+5 years ago 
+
+>2 hours 
+
+2-4 hours 
+
+5-7 hours 
+
+Males 
+
+Females 
+
+ 
+
+1 
+
+2 
+
+2 
+
+2 
+
+ 
+
+1 
+
+2 
+
+2 
+
+2 
+
+ 
+
+1 
+
+2 
+
+2 
+
+2 
+
+ 
+
+1 
+
+2 
+
+2 
+
+2 
+
+ 
+
+1 
+
+2 
+
+ 
+
+2 
+
+5 
+
+4 
+
+ 
+
+ 
+
+2 
+
+5 
+
+4 
+
+ 
+
+ 
+
+2 
+
+5 
+
+4 
+
+ 
+
+ 
+
+1 
+
+6 
+
+4 
+
+ 
+
+ 
+
+1 
+
+6 
+
+53 
+
+ 
+
+ 
+
+8-10 hours 
+
+>10 hours 
+
+10 years ago 
+
+>2 hours 
+
+2-4 hours 
+
+5-7 hours 
+
+8-10 hours 
+
+>10 hours 
+
+2 
+
+2 
+
+ 
+
+1 
+
+2 
+
+2 
+
+2 
+
+4 
+
+ 
+
+ 
+
+1 
+
+6 
+
+4 
+
+ 
+
+Most common choice within each gender-group 
+
+2-4, 5-7, 8-10 and >10 hours 
+
+5-7 hours 
+
+1.5 
+
+With what frequency do you irrigate your rice plots? 
+
+ 
+
+Number of males 
+
+Number of females 
+
+1 year ago 
+
+<1 time/ week 
+
+1-2 times/ week 
+
+3-4 times/ week 
+
+2 years ago 
+
+<1 time/ week 
+
+1-2 times/ week 
+
+3-4 times/ week 
+
+3 years ago 
+
+<1 time/ week 
+
+1-2 times/ week 
+
+3-4 times/ week 
+
+4 years ago 
+
+<1 time/ week 
+
+1-2 times/ week 
+
+3-4 times/ week 
+
+5 years ago 
+
+<1 time/ week 
+
+1-2 times/ week 
+
+3-4 times/ week 
+
+10 years ago 
+
+<1 time/ week 
+
+1-2 times/ week 
+
+3-4 times/ week 
+
+2 
+
+4 
+
+1 
+
+2 
+
+4 
+
+1 
+
+2 
+
+4 
+
+1 
+
+2 
+
+4 
+
+1 
+
+2 
+
+4 
+
+1 
+
+2 
+
+4 
+
+ 
+
+1 
+
+10 
+
+ 
+
+1 
+
+10 
+
+ 
+
+1 
+
+10 
+
+ 
+
+1 
+
+10 
+
+ 
+
+1 
+
+10 
+
+ 
+
+1 
+
+10 
+
+ 
+
+Most common choice within each gender-group 
+
+1-2 times/ week 
+
+1-2 times/ week 
+
+1.6 
+
+What types of inputs do you use on your rice plots? 
+
+Note: multiple choice question 
+
+ 
+
+Number of males 
+
+Number of females 
+
+1 year ago 
+
+Fertilizer (Non-Bio) 
+
+Pesticide 
+
+7 
+
+7 
+
+11 
+
+11 
+
+54 
+
+ 
+
+ 
+
+ 
+
+Improved rice seeds 
+
+Tools and machines 
+
+Animals 
+
+2 years ago 
+
+Fertilizer (Non-Bio) 
+
+Pesticide 
+
+Improved rice seeds 
+
+Tools and machines 
+
+Animals 
+
+3 years ago 
+
+Fertilizer (Non-Bio) 
+
+Pesticide 
+
+Improved rice seeds 
+
+Tools and machines 
+
+Animals 
+
+4 years ago 
+
+Fertilizer (Non-Bio) 
+
+Pesticide 
+
+Improved rice seeds 
+
+Tools and machines 
+
+Animals 
+
+5 years ago 
+
+Fertilizer (Non-Bio) 
+
+Pesticide 
+
+Improved rice seeds 
+
+Tools and machines 
+
+Animals 
+
+10 years ago 
+
+Fertilizer (Non-Bio) 
+
+Pesticide 
+
+Improved rice seeds 
+
+Tools and machines 
+
+Animals 
+
+7 
+
+7 
+
+1 
+
+7 
+
+7 
+
+7 
+
+7 
+
+1 
+
+7 
+
+7 
+
+7 
+
+7 
+
+1 
+
+7 
+
+7 
+
+7 
+
+7 
+
+1 
+
+7 
+
+7 
+
+7 
+
+7 
+
+1 
+
+7 
+
+7 
+
+7 
+
+7 
+
+1 
+
+11 
+
+11 
+
+1 
+
+11 
+
+11 
+
+11 
+
+11 
+
+1 
+
+11 
+
+11 
+
+11 
+
+11 
+
+1 
+
+11 
+
+11 
+
+11 
+
+11 
+
+1 
+
+11 
+
+11 
+
+11 
+
+11 
+
+1 
+
+11 
+
+11 
+
+11 
+
+11 
+
+1 
+
+ 
+
+ 
+
+1.7 
+
+Which of the following effects have you observed on your rice plots? 
+
+Note: multiple choice question 
+
+ 
+
+1 year ago 
+
+Soil salinity 
+
+Soil nutrient depletion 
+
+Drought  
+
+Number of male participants 
+
+Number of female 
+
+observations 
+
+participants observations 
+
+4 
+
+ 
+
+3 
+
+7 
+
+4 
+
+7 
+
+55 
+
+2 years ago 
+
+Soil salinity 
+
+Soil nutrient depletion 
+
+Drought  
+
+3 years ago 
+
+Soil salinity 
+
+Soil nutrient depletion 
+
+Drought  
+
+4 years ago 
+
+Soil salinity 
+
+Soil nutrient depletion 
+
+Drought  
+
+5 years ago 
+
+Soil salinity 
+
+Soil nutrient depletion 
+
+Drought  
+
+10 years ago 
+
+Soil salinity 
+
+Soil nutrient depletion 
+
+Drought  
+
+ 
+
+4 
+
+1 
+
+3 
+
+3 
+
+2 
+
+2 
+
+3 
+
+2 
+
+2 
+
+3 
+
+3 
+
+2 
+
+3 
+
+2 
+
+1 
+
+7 
+
+4 
+
+7 
+
+6 
+
+4 
+
+7 
+
+6 
+
+4 
+
+7 
+
+6 
+
+5 
+
+7 
+
+6 
+
+3 
+
+7 
+
+Analytical domain 2- Resources (Ownership or renting of non-financial resources) 
+
+2.1 
+
+Do you cultivate individual or/and collective rice plots? 
+
+ 
+
+Number of males 
+
+Number of females 
+
+1 year ago 
+
+Individual plots 
+
+Collective plots 
+
+2 years ago 
+
+Individual plots 
+
+Collective plots 
+
+3 years ago 
+
+Individual plots 
+
+Collective plots 
+
+4 years ago 
+
+Individual plots 
+
+Collective plots 
+
+5 years ago 
+
+Individual plots 
+
+Collective plots 
+
+10 years ago 
+
+Individual plots 
+
+Collective plots 
+
+7 
+
+2 
+
+7 
+
+2 
+
+6 
+
+2 
+
+6 
+
+2 
+
+6 
+
+2 
+
+5 
+
+1 
+
+7 
+
+8 
+
+7 
+
+8 
+
+7 
+
+8 
+
+7 
+
+8 
+
+7 
+
+8 
+
+4 
+
+7 
+
+2.2 
+
+If you have individual rice plots, do you own this land, or/and do you rent it? 
+
+Note: this question does not apply to those who only access to collective lands as these are neither 
+owned nor rented but used and shared as a collective. Therefore, not all respondents have replied to 
+this question. 
+
+56 
+
+ 
+
+ 
+
+ 
+
+Number of males 
+
+Number of females 
+
+1 year ago 
+
+Ownership 
+
+Rent  
+
+2 years ago 
+
+Ownership 
+
+Rent  
+
+3 years ago 
+
+Ownership 
+
+Rent  
+
+4 years ago 
+
+Ownership 
+
+Rent  
+
+5 years ago 
+
+Ownership 
+
+Rent  
+
+10 years ago 
+
+Ownership 
+
+Rent  
+
+7 
+
+1 
+
+7 
+
+1 
+
+6 
+
+1 
+
+6 
+
+1 
+
+6 
+
+1 
+
+6 
+
+ 
+
+5 
+
+4 
+
+4 
+
+5 
+
+4 
+
+5 
+
+4 
+
+5 
+
+4 
+
+5 
+
+ 
+
+4 
+
+2.3 
+
+If you cultivate collective land/plots, has the terms of usage altered over the years? 
+
+Note: this question only apply to those who cultivate collective lands, therefore have not all 
+respondents replied to this question. 
+
+ 
+
+1 year ago 
+
+2 years ago 
+
+3 years ago 
+
+4 years ago 
+
+5 years ago 
+
+10 years ago 
+
+Yes 
+
+No  
+
+Yes 
+
+No 
+
+Yes 
+
+No  
+
+Yes 
+
+No  
+
+Yes 
+
+No  
+
+Yes 
+
+No  
+
+Number of males 
+
+Number of females 
+
+ 
+
+2 
+
+ 
+
+2 
+
+ 
+
+2 
+
+ 
+
+2 
+
+ 
+
+2 
+
+ 
+
+2 
+
+ 
+
+8 
+
+ 
+
+8 
+
+ 
+
+8 
+
+ 
+
+8 
+
+ 
+
+8 
+
+ 
+
+8 
+
+2.4 
+
+Do you own or do you have access to any larger form of farming equipment? 
+
+(Ex. tractor, transportation, tools, plow, tiller, irrigation system) 
+
+ 
+
+Number of males 
+
+Number of females 
+
+1 year ago 
+
+Ownership 
+
+Access   
+
+ 
+
+7 
+
+1 (collective ownership) 
+
+10 
+
+57 
+
+ 
+
+ 
+
+ 
+
+2 years ago 
+
+Ownership 
+
+Access   
+
+3 years ago 
+
+Ownership 
+
+Access   
+
+4 years ago 
+
+Ownership 
+
+Access   
+
+5 years ago 
+
+Ownership 
+
+Access   
+
+10 years ago 
+
+Ownership 
+
+Access   
+
+ 
+
+7 
+
+ 
+
+7 
+
+ 
+
+7 
+
+ 
+
+7 
+
+ 
+
+7 
+
+1 (collective ownership) 
+
+10 
+
+1 (collective ownership) 
+
+10 
+
+1 (collective ownership) 
+
+10 
+
+ 
+
+11 
+
+ 
+
+8 
+
+ 
+
+ 
+
+2.5 
+
+Have you inherited the land or parts of the land that you cultivate for your rice 
+production? 
+
+Note: Inherited from family or friends 
+
+Number of males 
+
+Number of females 
+
+Yes 
+
+No 
+
+4 
+
+3 
+
+2 
+
+9 
+
+Analytical domain 3- Access and control of income and credit 
+
+3.1 
+
+ 
+
+On all the rice plots that you cultivate (individual and collective), is the harvest used for the 
+household, market sales, or both? 
+
+Number of males 
+
+Number of females 
+
+1 year ago 
+
+Household 
+
+Market sales 
+
+Both 
+
+2 years ago 
+
+Household 
+
+Market sales 
+
+Both 
+
+3 years ago 
+
+Household 
+
+Market sales 
+
+Both 
+
+4 years ago 
+
+Household 
+
+Market sales 
+
+Both 
+
+5 years ago 
+
+Household 
+
+Market sales 
+
+ 
+
+ 
+
+ 
+
+7 
+
+ 
+
+ 
+
+7 
+
+ 
+
+ 
+
+7 
+
+ 
+
+ 
+
+7 
+
+ 
+
+ 
+
+1 
+
+ 
+
+10 
+
+1 
+
+ 
+
+10 
+
+1 
+
+ 
+
+10 
+
+1 
+
+ 
+
+10 
+
+1 
+
+ 
+
+58 
+
+Both 
+
+10 years ago 
+
+Household 
+
+Market sales 
+
+Both 
+
+7 
+
+ 
+
+ 
+
+6 
+
+10 
+
+1 
+
+ 
+
+9 
+
+ 
+
+3.2 
+
+ 
+
+On all the rice plots that you cultivate (individual and collective), who make the decisions 
+concerning the rice and rice production destined for market sales? 
+
+Number of males 
+
+Number of females 
+
+1 year ago 
+
+You 
+
+Your spouse 
+
+Other 
+
+2 years ago 
+
+You 
+
+Your spouse 
+
+Other 
+
+3 years ago 
+
+You 
+
+Your spouse 
+
+Other 
+
+4 years ago 
+
+You 
+
+Your spouse 
+
+Other 
+
+5 years ago 
+
+You 
+
+Your spouse 
+
+Other 
+
+10 years ago 
+
+You 
+
+Your spouse 
+
+Other 
+
+7 
+
+ 
+
+ 
+
+7 
+
+ 
+
+ 
+
+7 
+
+ 
+
+ 
+
+7 
+
+ 
+
+ 
+
+7 
+
+ 
+
+ 
+
+7 
+
+ 
+
+ 
+
+9 
+
+ 
+
+1 (collective decision) 
+
+9 
+
+ 
+
+1 (collective decision) 
+
+9 
+
+ 
+
+1 (collective decision) 
+
+9 
+
+ 
+
+1 (collective decision) 
+
+9 
+
+ 
+
+1 (collective decision) 
+
+8 
+
+ 
+
+1 (collective decision) 
+
+ 
+
+3.3 
+
+ 
+
+Who make the decisions on how to use the revenues from the rice sold at the market 
+(harvested from your plots)? 
+
+Note: Since not all respondents sold their rice on the market, all respondents have not answered this 
+question.  
+
+Number of males 
+
+Number of females 
+
+1 year ago 
+
+You 
+
+Your spouse 
+
+Other 
+
+2 years ago 
+
+You 
+
+Your spouse 
+
+ 
+
+7 
+
+ 
+
+ 
+
+7 
+
+ 
+
+9 
+
+ 
+
+1 (collective decision) 
+
+9 
+
+ 
+
+59 
+
+Other 
+
+3 years ago 
+
+You 
+
+Your spouse 
+
+Other 
+
+4 years ago 
+
+You 
+
+Your spouse 
+
+Other 
+
+5 years ago 
+
+You 
+
+Your spouse 
+
+Other 
+
+10 years ago 
+
+You 
+
+Your spouse 
+
+Other 
+
+ 
+
+7 
+
+ 
+
+ 
+
+7 
+
+ 
+
+ 
+
+7 
+
+ 
+
+ 
+
+7 
+
+ 
+
+ 
+
+1 (collective decision) 
+
+9 
+
+ 
+
+1 (collective decision) 
+
+9 
+
+ 
+
+1 (collective decision) 
+
+9 
+
+ 
+
+1 (collective decision) 
+
+8 
+
+ 
+
+ 
+
+ 
+
+3.4 
+
+ 
+
+Do you have the opportunity to borrow money for your rice cultivation? If yes, which ones of 
+the following actors have you borrowed money from and what year? 
+
+Number of males 
+
+Number of females 
+
+1 year ago 
+
+Governmental institution 
+
+Bank 
+
+NGO 
+
+Farming collective 
+
+Credit or microfinance group 
+
+Mutual help or insurance 
+group 
+
+Religious group 
+
+Family and friends 
+
+Other 
+
+2 years ago 
+
+Governmental institution 
+
+Bank 
+
+NGO 
+
+Farming collective 
+
+Credit or microfinance group 
+
+Mutual help or insurance 
+group 
+
+Religious group 
+
+Family and friends 
+
+Other 
+
+ 
+
+ 
+
+4 
+
+ 
+
+1 
+
+ 
+
+ 
+
+ 
+
+4 
+
+ 
+
+ 
+
+4 
+
+ 
+
+1 
+
+ 
+
+ 
+
+ 
+
+4 
+
+ 
+
+ 
+
+2 
+
+ 
+
+3 
+
+ 
+
+ 
+
+ 
+
+7 
+
+ 
+
+ 
+
+3 
+
+ 
+
+3 
+
+ 
+
+ 
+
+ 
+
+8 
+
+ 
+
+60 
+
+3 years ago 
+
+Governmental institution 
+
+Bank 
+
+NGO 
+
+Farming collective 
+
+Credit or microfinance group 
+
+Mutual help or insurance 
+group 
+
+Religious group 
+
+Family and friends 
+
+Other 
+
+4 years ago 
+
+Governmental institution 
+
+Bank 
+
+NGO 
+
+Farming collective 
+
+Credit or microfinance group 
+
+Mutual help or insurance 
+group 
+
+Religious group 
+
+Family and friends 
+
+Other 
+
+5 years ago 
+
+Governmental institution 
+
+Bank 
+
+NGO 
+
+Farming collective 
+
+Credit or microfinance group 
+
+Mutual help or insurance 
+group 
+
+Religious group 
+
+Family and friends 
+
+Other 
+
+10 years ago 
+
+Governmental institution 
+
+Bank 
+
+NGO 
+
+Farming collective 
+
+Credit or microfinance group 
+
+Mutual help or insurance 
+group 
+
+ 
+
+ 
+
+4 
+
+ 
+
+1 
+
+ 
+
+ 
+
+ 
+
+4 
+
+ 
+
+ 
+
+4 
+
+ 
+
+1 
+
+ 
+
+ 
+
+ 
+
+4 
+
+ 
+
+1 
+
+4 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+2 
+
+ 
+
+ 
+
+4 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+3 
+
+ 
+
+3 
+
+ 
+
+ 
+
+ 
+
+8 
+
+ 
+
+ 
+
+2 
+
+ 
+
+3 
+
+ 
+
+ 
+
+ 
+
+8 
+
+ 
+
+ 
+
+2 
+
+ 
+
+3 
+
+ 
+
+ 
+
+ 
+
+8 
+
+ 
+
+ 
+
+2 
+
+ 
+
+2 
+
+ 
+
+ 
+
+61 
+
+Religious group 
+
+Family and friends 
+
+Other 
+
+ 
+
+2 
+
+ 
+
+ 
+
+7 
+
+ 
+
+3.5 
+
+Who controls the money you have borrowed? 
+
+ 
+
+1 year ago 
+
+You 
+
+Your spouse 
+
+Other 
+
+2 years ago 
+
+You 
+
+Your spouse 
+
+Other 
+
+3 years ago 
+
+You 
+
+Your spouse 
+
+Other 
+
+4 years ago 
+
+You 
+
+Your spouse 
+
+Other 
+
+5 years ago 
+
+You 
+
+Your spouse 
+
+Other 
+
+10 years ago 
+
+You 
+
+Your spouse 
+
+Other 
+
+Number of males 
+
+Number of females 
+
+7 
+
+ 
+
+ 
+
+7 
+
+ 
+
+ 
+
+7 
+
+ 
+
+ 
+
+7 
+
+ 
+
+ 
+
+7 
+
+ 
+
+ 
+
+7 
+
+ 
+
+ 
+
+11 
+
+ 
+
+ 
+
+11 
+
+ 
+
+ 
+
+11 
+
+ 
+
+ 
+
+11 
+
+ 
+
+ 
+
+11 
+
+ 
+
+ 
+
+11 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Analytical Domain 4- Time and Workload 
+
+4.1 
+
+Rank the following activities according to how much time you spend on doing them. The 
+higher the number, the more time you spend on doing the chore. 
+
+Note: the focus of this question is to get an estimation of farmers main activity, meaning the activity 
+which they classified as no 1. 
+
+ 
+
+Males ranking 
+
+Rice agriculture 
+
+Other farming activities 
+
+Selling products on the market 
+
+Male 
+
+Male 
+
+Male 
+
+Male 
+
+Male 
+
+Male 
+
+Male 
+
+1 
+
+2 
+
+ 
+
+ 
+
+2 
+
+2 
+
+3 
+
+1 
+
+3 
+
+1 
+
+2 
+
+ 
+
+4 
+
+3 
+
+ 
+
+ 
+
+5 
+
+1 
+
+ 
+
+ 
+
+6 
+
+1 
+
+2 
+
+3 
+
+7 
+
+1 
+
+3 
+
+4 
+
+Main 
+activity 
+
+4/7 
+
+(≈58%) 
+
+ 
+
+1/7 
+
+62 
+
+ 
+
+Domestic work 
+
+Fetching water and wood 
+
+Rest and leisure 
+
+ 
+
+ 
+
+1 
+
+ 
+
+ 
+
+ 
+
+4 
+
+5 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+2 
+
+ 
+
+1 
+
+ 
+
+ 
+
+2 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+2 
+
+ 
+
+ 
+
+(≈14%) 
+
+ 
+
+ 
+
+1/7 
+
+(≈14%) 
+
+ 
+
+1/7 
+
+(≈14%) 
+
+Prayer 
+
+Other 
+
+ 
+
+ 
+
+Rice 
+agricult
+ure 
+
+Other 
+farming 
+activitie
+s 
+
+Selling 
+product
+s on the 
+market 
+
+Domest
+ic work 
+
+Fetchin
+g water 
+and 
+wood 
+
+Rest 
+and 
+leisure 
+
+Prayer 
+
+Other 
+
+ 
+
+ 
+
+Fema
+
+Fema
+
+Fema
+
+Fema
+
+Fema
+
+Fema
+
+Fema
+
+Fema
+
+Fema
+
+Fema
+
+Fema
+
+Females ranking 
+
+le 
+
+1 
+
+ 
+
+1 
+
+ 
+
+2 
+
+ 
+
+3 
+
+ 
+
+ 
+
+ 
+
+4 
+
+ 
+
+ 
+
+le 
+
+2 
+
+ 
+
+1 
+
+le 
+
+3 
+
+ 
+
+1 
+
+le 
+
+4 
+
+ 
+
+2 
+
+ 
+
+ 
+
+ 
+
+ 
+
+3 
+
+ 
+
+4 
+
+ 
+
+2 
+
+ 
+
+ 
+
+ 
+
+ 
+
+3 
+
+ 
+
+2 
+
+ 
+
+4 
+
+ 
+
+5 
+
+ 
+
+ 
+
+ 
+
+1 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+le 
+
+5 
+
+ 
+
+1 
+
+ 
+
+ 
+
+ 
+
+2 
+
+ 
+
+ 
+
+3 
+
+ 
+
+ 
+
+le 
+
+6 
+
+ 
+
+1 
+
+le 
+
+7 
+
+ 
+
+2 
+
+le 
+
+8 
+
+ 
+
+2 
+
+le 
+
+9 
+
+ 
+
+2 
+
+le 
+
+10 
+
+ 
+
+2 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+2 
+
+ 
+
+ 
+
+ 
+
+3 
+
+ 
+
+ 
+
+ 
+
+1 
+
+ 
+
+3 
+
+ 
+
+ 
+
+4 
+
+ 
+
+ 
+
+ 
+
+1 
+
+ 
+
+ 
+
+ 
+
+3 
+
+ 
+
+ 
+
+ 
+
+1 
+
+ 
+
+1 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+le 
+
+11 
+
+ 
+
+2 
+
+ 
+
+3 
+
+ 
+
+1 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Main 
+activi
+
+ty 
+
+ 
+
+5/11 
+
+(≈45
+%) 
+
+ 
+
+ 
+
+6/11 
+
+(≈55
+%) 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+63 
+
+

@@ -1,0 +1,3057 @@
+Journal of Development Economics 137 (2019) 78–92
+
+Contents lists available at ScienceDirect
+
+Journal of Development Economics
+
+journal homepage: www.elsevier.com/locate/devec
+
+Income hiding and informal redistribution: A lab-in-the-ﬁeld experiment in
+Senegal☆
+Marie Boltz a,∗, Karine Marazyan b, Paola Villar c,d
+a Centre d’Économie de la Sorbonne, UMR 8174, Université Paris 1 - CNRS, 112 Boulevard de l’Hôpital, 75013, Paris, France
+b University of Paris 1 - IEDES - UMR “Développement et Sociétés”, 45 bis rue de la Belle Gabrielle, 94700, Nogent sur Marne, France
+c Centre for Research in Economic Development (CRED), University of Namur, Rempart de la Vierge 8, B-5000, Namur, Belgium
+d Paris School of Economics, 48 bd Jourdan, 75014, Paris, France
+
+A R T I C L E
+
+I N F O
+
+A B S T R A C T
+
+We estimate the hidden cost of social obligations to redistribute exploiting data from a controlled setting in
+urban Senegal, which combines lab-in-the-ﬁeld measures and out-of-lab follow-up data. We estimate a social tax
+of about 9 percent. When given the opportunity to get hidden income, individuals decrease by 26 percent the
+share of gains they transfer to kin — mostly outside the household — and increase health and personal expenses.
+We expand on prior literature by both identifying the individual cost of informal redistribution and then relating
+it to postexperiment resource-allocation decisions, and by disentangling intra- and interhousehold redistributive
+pressure.
+
+JEL classiﬁcation:
+C91
+C93
+D13
+O12
+O15
+O17
+
+Keywords:
+Income observability
+Informal redistribution
+Extended families
+Resource allocation decisions
+Lab-in-the-ﬁeld experiment
+Africa
+
+1. Introduction
+
+In developing countries, especially in sub-Saharan Africa, social
+norms of redistribution are particularly prevalent. Individuals fre-
+quently transfer a substantial share of their income to members of
+their social networks, i.e., members of the household or extended fam-
+ily, friends, and neighbors (Baland et al., 2016). This informal redis-
+tribution shapes the social and economic lives of individuals: people
+make resource-allocation choices accounting not only for their personal
+socioeconomic condition but also for the well-being of members of their
+social networks (Platteau, 2000, 2006, 2014).
+
+The economic literature has long focused on the risk-sharing dimen-
+sion of informal redistribution in economies where people have limited
+
+access to ﬁnancial markets and to formal redistribution, and are struc-
+turally vulnerable to income shocks.1 Informal insurance mechanisms
+help people protect against certain risks, in particular idiosyncratic
+ones, although full risk-sharing is almost never achieved due to moral
+hazard and limited-commitment issues (e.g., Kimball, 1988; Fafchamps,
+1992; Coate and Ravallion, 1993; Dercon and Krishnan, 2000). How-
+ever, interpersonal transfers are also linked to other motives, according
+to anthropological and sociological literature: they can be driven by
+traditions, social prestige seeking, pure altruism, or well-internalized
+norms (e.g., Wright, 1994).2
+
+Lately, economists have become more interested in the potential
+adverse eﬀects of this informal redistribution. Akin to a taxation sys-
+tem, informal redistribution can lead to distortions in economic deci-
+
+☆ This paper previously circulated under the title “Preference for hidden income and redistribution to kin and neighbors: A lab-in-the-ﬁeld experiment in Senegal”.
+∗ Corresponding author.
+
+E-mail addresses: marie.boltz@univ-paris1.fr (M. Boltz), karine.marazyan@univ-paris1.fr (K. Marazyan), paola.villar@psemail.eu, paola.villar@unamur.be
+
+(P. Villar).
+
+1 For a review, see Cox and Fafchamps (2007).
+2 See Ligon and Schechter (2012) for experimental evidence on how much sharing behavior depends on innate preferences, and how much it responds to economic
+
+incentives.
+https://doi.org/10.1016/j.jdeveco.2018.11.004
+Received 19 September 2017; Received in revised form 3 October 2018; Accepted 21 November 2018
+Available online 1 December 2018
+0304-3878/© 2018 Elsevier B.V. All rights reserved.
+
+M. Boltz et al.
+
+Journal of Development Economics 137 (2019) 78–92
+
+sions. This kin tax can induce direct disincentive eﬀects on resource-
+accumulation decisions, such as labor supply or investment (Squires,
+2017; Grimm et al., 2017; Jakiela and Ozier, 2016; Hadness et al., 2013;
+Dupas and Robinson, 2013b), and indirect distortions in resource allo-
+cation choices (Boltz, 2017; Goldberg, 2017; di Falco and Bulte, 2011;
+Baland et al., 2011). The latter studies describe resource-allocation
+strategies people adopt to escape the pressure to redistribute, often at
+a high cost: namely favoring non-easily-sharable assets, hastening some
+spending, and hiding income sources and easily shared resources.
+
+We aim to measure the individual costs of social pressure to redis-
+tribute.3 We hence tackle the following three questions. First, how
+much do individuals value being able to relax social obligations to
+redistribute? Second, how does it change people’s resource allocation
+choices when they are oﬀered the opportunity to escape this redistribu-
+tive pressure? Third, from whom are people hiding — their household
+members, their kin outside the household, or their neighbors? We con-
+ducted a controlled experiment to answer these questions in the context
+of urban Senegal.4
+
+Only a few papers in the economic literature have attempted to use
+a controlled experiment to identify the distortive role of social norms of
+redistribution on resource-allocation decisions. Using data from a lab-
+in-the-ﬁeld experiment, Jakiela and Ozier (2016) and Beekman et al.
+(2015), respectively, explore how income observability among partici-
+pants from the same community aﬀects investment decisions in rural
+Kenya and willingness to pay to hide in rural Liberia. Jakiela and
+Ozier (2016) show that women with kin participating in the exper-
+iment were more likely to forgo proﬁtable investment opportunities
+to keep income secret. Beekman et al. (2015) show that participants
+in the experiment with more kin in the community are more willing
+to pay to hide a share of their lottery gains. In a randomized ﬁeld
+experiment, Goldberg (2017) investigates how redistributive pressure
+hastens consumption, as spending money quickly may be a strategy
+for reducing obligatory transfers. She conducted two lotteries among
+agriculture clubs in Malawi, one private and one public. She shows
+that public recipients anticipate spending more of their prize money
+in the week immediately following the transfer than private recipients
+do.
+
+Our work also relates to the literature on intrahousehold noncooper-
+ative behaviors, which underlines a propensity to hide resources within
+the household. For instance, using data from a lab-in-the-ﬁeld experi-
+ment with married couples in the Philippines, Ashraf (2009) ﬁnds that
+husbands allocate more money to their private accounts when their
+decisions are secret.5 Combining experimental variations in lottery-
+gain observability with information from an expenditure survey col-
+lected following the experiment in Ghana, Castilla and Walker (2013)
+ﬁnd also that spouses have a propensity to hide resources from each
+other.
+
+Our controlled experiment combines diﬀerent features of the experi-
+ments mentioned above. These features allow us to investigate the eﬀect
+of the redistributive pressure, measured in the lab through participants’
+willingness to pay to hide income, on their spending patterns recorded
+in a postlab survey, and to test whether people fear pressure more
+
+3 We refer here to gross costs. Our paper does not allow for a net-welfare
+analysis, as we are not able to measure the potential beneﬁts from this informal
+redistribution, such as the potential scope for informal insurance, as stressed
+above.
+
+4 The question of the adverse eﬀects of redistributive obligations is not spe-
+ciﬁc to Senegal. Platteau (2014) provided numerous references from the soci-
+ological and anthropological literature describing the prevalence of redistribu-
+tive norms and of coping strategies — the strategy of hiding income we analyze
+being one of the most widespread — throughout Africa and, more broadly, in
+developing countries.
+
+5 Participants were given money and asked to choose one of three options:
+deposit it in a private account, deposit it in a joint account, or get gift certiﬁ-
+cates for either apparel or food.
+
+79
+
+from household members than from other kin members. To estimate
+the eﬀect of redistributive pressure on individual resource-allocation
+decisions, we exploit the random variation of participants’ opportunity
+to have a share of their lottery gain hidden during the lab, their pref-
+erence for income unobservability, and information on how they spent
+their lottery gain collected a week after the lab experiment.6 We draw a
+link between the literature on intrahousehold noncooperative behavior
+and the literature on the role of redistribution beyond the household,
+within social networks, thanks to two other features of our experiment.
+First, in our postlab expenditure survey, we distinguish between trans-
+fers made to individuals within or outside the household. Second, we
+exogenously selected either one or two individuals per household to
+participate in the survey and the experiment. The combination of these
+features enables us to identify the extent to which the overall results
+are aﬀected by redistribution between household members or across
+households.
+
+We conducted the lab-in-the-ﬁeld experiment in May and June
+2014 in poor, densely populated urban communities in Senegal’s Dakar
+region, on a sample of 814 individuals.
+
+We draw three main results from this experiment. First, we estimate
+a social tax of about 9%, with women facing a lower rate than men.
+Second, we ﬁnd evidence of strong distortions in resource-allocation
+decisions outside the lab due to redistributive pressure. Having the
+opportunity to have hidden income sharply decreases the income share
+spent on transfers to kin. People fearing redistributive pressure, when
+they get the opportunity to escape it by hiding their income, trans-
+fer 26% less to kin than people who get everything in public. They
+spend this extra money on healthcare and private goods. Third, we
+ﬁnd that people fear redistributive pressure from extended family mem-
+bers, but not from within the household or from friends and neigh-
+bors.
+
+By analyzing the linkages between social networks and resource-
+allocation decisions in economies with prevalent redistributive norms
+and limited access to formal ﬁnancial markets, we highlight possible
+causes of poverty traps. We point to the existence of large distortions
+induced by redistributive pressure. Helping people gain more control
+over their own resources appears crucial for avoiding such costs. Our
+study provides strong evidence on how informal institutions shape eco-
+nomic behaviors in the absence of formal ﬁnancial markets and public
+redistribution.
+
+The rest of this paper is organized as follows: Section 2 describes
+the experiment protocol and the experiment sample. Section 3 presents
+the results for the estimation of the cost of informal redistribution, and
+it discusses the correlations between willingness to pay to hide income
+and variations in the pool of participants. Section 4 presents the central
+results of the impact of income hiding on resource allocation outside
+the lab. Section 5 discusses alternative mechanisms and explores the
+heterogeneity of the eﬀects across wealth and gender. Section 6 con-
+cludes.
+
+2. Experiment protocol
+
+2.1. General setting
+
+We conducted our experiment in May and June 2014, in seven poor,
+densely populated urban communities in the department of Pikine,
+in Senegal’s Dakar region..7 Fig. B.1 in the Online Appendix presents
+a timeline of activities in our experiment. The experiment covered
+approximately two weeks in each community. In the ﬁrst week, we
+
+6 We thus did not impose any structure of transfer or investment decisions in
+the lab setting; rather, we left the participants free to choose how to allocate
+their gains outside the lab.
+
+7 We selected communities far enough apart so as to prevent any learning or
+
+overlap in the participant populations.
+
+M. Boltz et al.
+
+Journal of Development Economics 137 (2019) 78–92
+
+selected the sample and administered the household and individual
+baseline questionnaires. The lab took place on the Sunday of the same
+week. One week later, the enumerators went back to administer a short
+follow-up questionnaire.
+
+2.2. Prelab sample selection
+
+The baseline sample consisted of 920 individuals selected using a
+random-walk sampling method.8 One household was selected in every
+other dwelling. Not all streets of the neighborhood were covered. A
+household was selected if at least two members satisﬁed the eligi-
+bility criteria: being between 18 and 60 years old and having ever
+earned some labor income.9 Within selected households, participants
+were randomly selected among the pool of eligible household mem-
+bers.10
+
+We introduced an additional layer of heterogeneity in our study by
+randomly varying the number of individuals selected per household: in
+every second household, only one participant was selected, while two
+participants were selected in the next household.11 This enabled us to
+introduce some exogenous variation in the intrahousehold pressure for
+redistribution.
+
+The household survey includes information on the household com-
+position and household expenditures. The individual questionnaire pro-
+vides us with data on socioeconomic and demographic characteristics,
+social capital held in one’s kinship and community network, and per-
+sonal assets and expenditures for all participants.
+
+2.3. Design of the lab-in-the-ﬁeld experiment
+
+The lab phase took place in a local primary school that was less
+than a 5-min walk from each selected participant’s dwelling. In each
+community, there were four sessions, at 9 a.m., 11 a.m., 1 p.m., and 3
+p.m. Individuals from the same or nearby dwelling blocks were assigned
+to the same sessions. On average, 30 individuals were invited to the
+same session.
+
+Each session was split into three stages (see point 2 in Fig. B.1).
+First, all participants from the same session were gathered in a large
+room where the rules were explained. Second, participants were invited
+into separate small rooms for a private interview followed by a lot-
+tery (see point 3 in Fig. B.1). In this lottery, participants chose cards
+at random from a box; the cards determined their income from the
+experiment and to what extent some of their income was announced
+publicly to other attendees. Before the lottery took place, to reveal
+their preference for income unobservability, participants were asked
+to state their preferences about payoﬀs associated with certain cards.
+These cards, referred to as option cards, gave them a choice between
+receiving a larger amount in public or a smaller amount in private,
+
+8 Each enumerator was assigned one or two blocks of dwellings and a start-
+ing point; he or she had to follow a strict rule: only every other dwelling was
+preselected. If this dwelling had only one ﬂoor, and if more than one household
+was living there, the enumerator would move on to the household to the right
+of the entrance of the preselected dwelling. If a dwelling had several ﬂoors, ﬁrst
+the ﬂoor was randomly selected, and then the right-hand-side household rule
+was followed.
+
+9 These two criteria were added to ensure that people were accustomed
+to managing some resources and to making resource-allocation decisions. If
+these selection criteria were not satisﬁed, the enumerator left the dwelling and
+resumed the random-walk procedure.
+10 In order to guarantee no ex ante manipulation in the selection of partici-
+pants, the enumerator would not mention any lottery gain and would not pro-
+ceed to the random draw of the participants before having established the com-
+plete roster of household members.
+11 As indicated above, to be eligible, a household had to contain at least two
+eligible members so that one-participant households and two-participant house-
+holds were comparable.
+
+as opposed to the no-option cards that were also placed in the lot-
+tery box and that did not rely on people’s preference for hidden
+income. These elicited choices would be enforced if an option card
+was drawn in the lottery. Private gains were distributed at the very
+end of the private interview, and after the lottery. Third, after all
+the private interviews, all participants were gathered again in a large
+room, where the public payoﬀs were distributed in front of all partici-
+pants.
+
+Elicitation of preferences for income unobservability
+During the private interview, the enumerator started by reading
+the informed consent script in French or in Wolof, the dominant local
+language.12,13 The participant learned that she would receive at least
+1000 FCFA in public. She was told she might receive more in pub-
+lic or in private — up to 9000 FCFA in total.14 First, a few ques-
+tions were asked to elicit the relationships shared with other partici-
+pants at the session. Then, the enumerator carefully explained the two
+types of cards that could be drawn from the lottery box (Point 4 in
+Fig. B.1): the option cards and the no-option cards. The gains associ-
+ated with the latter were independent of the participant’s preferences:
+each of the three cards speciﬁed receiving respectively 1000 FCFA in
+public and nothing in private, 9000 FCFA in public and nothing in pri-
+vate, or 1000 FCFA in public and 8000 FCFA in private. Conversely,
+the gains associated with the option cards would follow the choices par-
+ticipants were about to make about their preferences for income pri-
+vacy. The no-option card with only 1000 FCFA in public and nothing
+in private ensured that it was impossible to infer who chose to hide
+to protect the privacy of participants’ choices.15 To elicit preferences
+for income unobservability, we relied on a multiple-price-list method.
+Each participant was asked to make a series of choices illustrated by the
+option cards, as shown in Table A.1. Each card presented two options:
+option A corresponds to receiving 9000 FCFA in public, while option
+B means receiving 1000 FCFA in public and 8000 FCFA, minus some
+price, in private. The price of the income-hiding option p was equal
+to 0, 200, 500, 700, or 1000 FCFA in the diﬀerent choices that were
+presented in ascending order and asked no matter the response to the
+previous choice. The payoﬀs for option B thus amounted to 9000 FCFA
+minus p. The enumerator made clear that some of these cards were in
+the ballot box, meaning that each choice the participant made would
+potentially be implemented after the lottery.16 Choosing A for the ﬁrst
+choice when p = 0 indicates a strong preference for income observabil-
+ity.
+
+Lottery and payoﬀs distribution
+The diﬀerent cards included in the ballot box are presented in
+Table A.2. Only two option cards were actually put in the box, the ones
+with p = 200 and p = 700. However, participants did not know which
+option cards were in the lottery box. Nor did they know about the actual
+distribution of cards — they could not infer how many people had actu-
+ally chosen to hide when the public payoﬀs were distributed.
+
+12 For the ease of presentation, we refer to an enumerator as a man — although
+half of the enumerators were women — and a participant as a woman.
+13 The French and Wolof consents are available upon request.
+14 To put these amounts in context, in this sample, 527 FCFA was the average
+daily per capita food expenditure, and the average household comprised 11
+members. According to the “Poverty and Family Structure” survey, a nationally
+representative survey of Senegal collected in 2006 (DeVreyer et al., 2008), the
+average per capita food expenditure for one day in the department of Pikine
+was 465 FCFA, and the average household size was 13.
+15 Enumerators took care to make this point clear; however, had a partici-
+pant not understood this, the estimated willingness-to-pay to hide would be
+downward-biased.
+16 Before the lottery draw, participants showing multiple switches were reex-
+plained the questions and the stakes of the choices made; if they changed their
+initial choices, the revised choices in addition to the initial ones were recorded.
+
+80
+
+M. Boltz et al.
+
+Journal of Development Economics 137 (2019) 78–92
+
+The ex ante distribution of cards in the lottery box was ﬁxed.17 In
+each session, there were ﬁve no-option cards with 1000 FCFA in public,
+seven no-option cards with 9000 FCFA in public, eight no-option cards
+with 1000 FCFA in public and 8000 FCFA in private, nine option cards
+with the hiding price p set at 200 FCFA, and eight option cards with the
+hiding price p set at 700 FCFA.18
+
+After the rules were explained and choices made, the participant
+drew a card from the lottery box.19 The private gains were distributed
+in the private room in a separate envelope. Once each interviewee had
+played, public gains were disclosed to all participants and distributed
+publicly. No instruction was given about how the money should be
+used, so as not to inﬂuence their answers in the lab or their choices
+out of the lab.
+
+2.4. Postlab survey
+
+Our experimental design is novel in that we surveyed participants
+on both their lottery-gain allocation decisions and expenditures made
+one week after the lab session. This information allows us to measure
+the impact of the observability of personal gains by other participants
+on transfers and resource-allocation decisions.
+
+One week after the lab-in-the-ﬁeld experiment, we visited the partic-
+ipants to administer a short follow-up questionnaire in which we asked
+for the labor income earned and the amounts of the ﬁve largest trans-
+fers received and sent during the previous seven days. These questions
+were asked at the beginning of the questionnaire, with no reference to
+the lottery gains. At the end of the survey, we asked an open question
+about how participants allocated the payoﬀs of their gains.20 When-
+ever a participant mentioned a transfer, we made sure we identiﬁed
+the recipient of the transfer, in particular if he or she was a household
+member, a relative living in the community, or a non-relative. Our main
+results are drawn from the lottery-gains allocation data. To test the fun-
+gibility of the lottery gains (see Section 5.1), we also conduct a similar
+analysis using the measure of total earnings and of the main transfers
+made in the previous week.21
+
+2.5. Sample description
+
+Table A.3 in the Appendix describes the sample of 814 individuals
+who attended the experiment phase and tests whether baseline char-
+acteristics are balanced across the cards giving the opportunity to get
+
+17 However, since participation varied from one location to another and from
+one session to another, the ﬁnal distribution of drawn cards is slightly diﬀerent
+from the distribution in the lottery box. This diﬀerence is nevertheless totally
+random. Moreover, since the private interviews took place simultaneously in
+eight rooms, the 37 cards were distributed randomly in eight small lottery boxes
+in front of all participants when they were all gathered in the large room prior
+to the private interviews.
+18 Note that the number of no-option cards with 1000 FCFA in public is smaller
+than the one of other cards since its primary role was to make sure that people
+could not infer whether participants chose to hide or truly only received 1000
+FCFA.
+19 If it was an option card, the enumerator recalled the participant’s previous
+choice and asked her whether she still agreed with her previous choice. If the
+participant changed her mind after the lottery draw, she could step out of the
+experiment and get 500 FCFA in public.
+20 Enumerators wrote the answer to this question literally; they were speciﬁ-
+cally instructed and trained not to inﬂuence any answer from the respondent.
+We personally took care of the coding of the answers to this question after the
+survey.
+21 As shown in Karlan et al. (2016), collecting spending data on both treat-
+ment and control participants shortly after an exogenous liquidity shock could
+help to better assess the short-term impact of a liquidity increase on spending
+by avoiding (strategic) misreporting issues, which could arise when relying on
+direct-elicitation questions about use of the additional income.
+
+hidden income, private cards, and cards with no opportunity to have
+hidden income public cards.
+
+In the sample, two-thirds of the participants were women.22 The
+average age was 37 years. Household heads accounted for 20% of the
+sample, while their spouses and children each represented a quarter of
+the distribution. Two-thirds of the participants were married, including
+18% in polygamous unions. One-ﬁfth of the sample had no education,
+and 40% contributed to the food expenditures of their households. The
+informal sector represented 86% of the last or current jobs held. Over-
+all, most variables were not signiﬁcantly diﬀerent across groups, but
+some diﬀerences remained — ethnicity, marital status, having a respon-
+sibility in the community — which we control for in the subsequent
+empirical analysis.
+
+Attrition was relatively low: 11.5% between baseline and the lab
+phase and 2.8% between the lab and the follow-up survey. Tables B.1
+and B.2 in the Online Appendix describe the attrition at each step. We
+control for the variables driving attrition in the analysis.
+
+Table A.4 in the Appendix presents the ﬁnal distribution of drawn
+cards: 362 of 814 participants, i.e., 44.5% of participants received a
+share of their payoﬀs in private, either based on their previously elicited
+preferences (Privatep200,O, Privatep700,O) or not (Privatefree,NO).23,24
+
+3. Estimation of the willingness-to-pay to hide income
+
+3.1. Conceptual framework
+
+We posit that the utility, Uik, of participant i for choosing option
+k = A or B takes the form of an additive random utility model:
+Uik = Vik + 𝜀ik, where 𝜀ik is an i.i.d. type 1 extreme-value distributed-
+𝜀 = 𝜋2∕6. Vik is the deterministic util-
+preference shock, with variance 𝜎2
+ity of choosing option k that, for the sake of simplicity, we assume to
+be linear. Therefore, the probability that participant i chooses option
+A over B — and vice versa — takes a standard logit form. We fol-
+low Jakiela and Ozier (2016) by assuming a proportional kin tax 𝜏i,
+such as 𝜏i ≥ 0, and which only applies on observable income. We
+add a new feature by considering a ﬁxed cost ci for hiding income,
+which can be seen as a distaste for hiding income from peers. When ci
+is high, it translates into a strong preference for income observability.
+Therefore, the deterministic utility derived from option A of our exper-
+iment is simply Vi,A = (1 − 𝜏i)9, 000, whereas the one derived from B
+is Vi,B = (1 − 𝜏i)1, 000 + 8, 000 − p − ci.
+As 𝜀iB − 𝜀iA follows a logistic distribution, ℙ(UiA > UiB) = ℙ(ViA −
+ViB > 𝜀iB − 𝜀iA) = exp(p+c−8,000𝜏i)
+.25 At a given price p, the participant
+1+exp(p+c−8,000𝜏i)
+i is indiﬀerent between A and B whenever UiA = UiB, inducing that
+𝜏 − c
+,8,000, and in that case ℙ(UiA > UiB) = 1∕2. Following the
+same reasoning, we ﬁnd that i strictly prefers A over B if 𝜏 − c
+8,000 <
+p
+8,000 and that i strictly prefers B over A if 𝜏 − c
+8,000 . In summary,
+
+8,000 = p
+
+8,000 > p
+
+22 Great care was given to including both men and women in the sample. This
+is why all the experimental sessions took place on Sundays, and enumerators
+were ﬂexible about when to ﬁll out the baseline questionnaire — coming back
+when people, mostly men, were returning home from work, or very early in the
+morning, before they left the house.
+23 Of the participants who drew a card with the possibility to hide for p = 200
+FCFA 57.7% had expressed a willingness-to-pay equal or larger than 200 FCFA,
+meaning that they agreed to pay this price to hide; 49.5% of participants for
+p = 700 FCFA (see Table A.5).
+24 In the subsequent tables and analyses, we removed 26 inconsistent obser-
+vations, in terms of preferences. Results are robust to including these 26 obser-
+vations and are available upon request.
+25 As in Jakiela and Ozier (2016), we assume that participants do not antici-
+pate the 𝜀ik component of their decisions about whether to pay to hide income.
+
+81
+
+M. Boltz et al.
+
+Journal of Development Economics 137 (2019) 78–92
+
+the observable income, the decrease being sharper for women than for
+men.
+Our model predicts that the probability of paying to avoid the pub-
+lic announcement will be greater than one-half when 𝜏 − c
+8,000 .
+In Fig. 1, the horizontal line indicating that the probability of paying
+to avoid the public announcement is 0.5 corresponds to an observable
+payout ratio of approximately 700/8,000, or 0.0875. This implies that
+we ﬁnd a 𝜏 net of the individual cost to hide of around 9%. This net
+social tax is smaller for women (around 8%) and signiﬁcantly larger for
+men (above 13%).
+
+8,000 > p
+
+Another method to recover some WTP statistics is to choose a point
+within the WTP interval. To be conservative, we chose the lower bound
+of the interval as the reference point, but for negative WTP to hide
+income, the value is ﬁxed as 0. Table A.6 in the Appendix displays
+some WTP statistics. The average WTP to hide is 523 FCFA for the
+whole sample, 508 FCFA for women and 555 FCFA for men (the dif-
+ference is statistically not signiﬁcant at any conventional level of conﬁ-
+dence). Conditional on a positive WTP to hide, the WTP is 805 FCFA on
+average, i.e., people are ready to forgo 10% of the gains that could be
+hidden. This share is smaller for women (9.8%) than for men (10.5%)
+(the diﬀerence is statistically signiﬁcant at 10%).
+
+3.3. WTP and experimental variations in the pool of observers of the gains
+
+To back up the idea that our measure of the WTP to hide income
+does indeed capture social pressure to redistribute resources, we inves-
+tigate in this subsection how our measure of WTP to hide income cor-
+relates with three experimental variations in the pool of observers:
+whether a household member is present, the number of other kin mem-
+bers living in the community who are present, and whether a non-kin
+known community member is present. Accounting for these variations
+in one single framework is motivated by recent ﬁndings in the literature
+showing their relevance, one by one. For instance, Ashraf (2009) and
+Castilla and Walker (2012, 2013) have shown that spouses seek to hide
+income from each other.28 Jakiela and Ozier (2016) and Beekman et al.
+(2015) suggest that individuals seek to hide income from their relatives.
+According to Goldberg (2017), acquaintances in the pool of observers
+may suﬃce to drive strategic behaviors to hide income. Finally, Boltz
+and Villar (2013) provide qualitative evidence of people trying to avoid
+redistributive pressure from both neighbors and kin in the context of
+Senegal.
+
+Whether another member of the household was selected for the
+experiment is exogenous by design. However, although individuals
+were selected randomly, from the participant’s viewpoint the eﬀect of
+having nonhousehold kin participating in the experiment is not exoge-
+nous, for at least two reasons. First, individuals with more eligible kin
+living in the community may end up with a higher probability of hav-
+ing a kin in the same session. To avoid any correlation driven by this,
+we need to control our regressions for the number of eligible kin liv-
+ing in the neighborhood at baseline. Unfortunately, our design does
+not allow us to measure the exact number of kin living in the com-
+munity. Instead, we use a close proxy, the minimum number of kin
+living in the neighborhood.29 (We use it in this section, as well as
+in the subsequent analyses conducted in this paper.) Second, not all
+participants attended the experiment, thus some selection bias through
+attrition could aﬀect our results. Ideally, we would like to look at the
+
+28 We did not restrict household pairs to spouses, since pressure to redistribute
+may well come from other household members, given the extended structure of
+Senegalese households.
+29 For each of the following categories, we asked whether the individual has
+a related kin living in the neighborhood: parents, children, siblings, cousins,
+nephews/nieces, uncles/aunts, and other kin. Hence, the measure here is com-
+puted as the sum of dummies for each category and accounts for a lower bound
+of the number of kin living in the neighborhood.
+
+Fig. 1. Paying to hide income, plotted against the ratio of price over observed
+income.
+
+p
+
+p
+
+p
+
+8, 000
+
+c
+
+c
+
+c
+
+8, 000
+
+8, 000
+
+(case 2)
+
+(case 1)
+
+(case 3).
+
+8, 000 >
+8, 000 <
+8, 000 =
+
+⎧
+B ≻ A ↔ 𝜏 −
+⎪
+⎪
+⎪
+A ≻ B ↔ 𝜏 −
+⎨
+⎪
+⎪
+A ∼ B ↔ 𝜏 −
+⎪
+⎩
+Under the assumption of preference stability, the price p for which i is
+indiﬀerent between A and B reﬂects her absolute maximum willingness-
+to-pay (WTP) to hide income. In economic terms, this means that the
+net social tax (net of the idiosyncratic distaste for income hiding) is
+exactly equal to the maximum relative price of the hiding option. There-
+fore, the multiple-price list allows us to estimate the interval in which
+the individual’s WTP lies, by looking at the price at which the partic-
+ipant chooses option A, conditional on having chosen option B at the
+previous price. Moreover, for a null price, we observe that individu-
+als chose option A for two reasons: either because they are indiﬀerent
+between option A and option B and they picked A randomly (case 3),
+or because their kin tax is smaller than the individual cost of hiding
+income (case 2).
+
+3.2. Estimations of the WTP
+
+In Fig. 1, we plot the proportion of individuals choosing to pay to
+hide income, by ratio of the price over observed income levels.26 The
+analysis is split by gender because women and men generally have sep-
+arate social networks, and so the pressure to redistribute may thus come
+from diﬀerent groups.27 Moreover, the literature shows that it is harder
+for women than men in poor communities to accumulate savings (Dupas
+and Robinson, 2013a), making it interesting to explore the gender dif-
+ference in exposure to redistributive pressure.
+
+When the choice is costless, 65% of individuals prefer hidden
+income over public income, a rate that is similar for men and women.
+Demand for unobservability decreases with the ratio of the price over
+
+26 The sample comprises 788 individuals, the 814 who attended the experi-
+ment phase minus the 26 who had inconsistent decisions, in terms of prefer-
+ence.
+27 For qualitative evidence in Senegal, see Moya (2004) and Guerin (2008);
+for quantitative evidence in Ghana and Madagascar, see Castilla and Walker
+(2013) and Nordman and Vaillant (2014), respectively.
+
+82
+
+M. Boltz et al.
+
+eﬀect of the “number of eligible kin invited to the session conditional on
+the number of eligible kin living in the neighborhood”, but this would
+have required eliciting all family links between participants at base-
+line, which would not have been feasible and could have aﬀected how
+people perceived the experiment. However, we can use the “number
+of kin attending the session” controlling for the lower bound of the
+number of kin living in the neighborhood at baseline, acknowledging
+that our results do not reﬂect perfect causal impacts but rather correla-
+tions for which we control for many dimensions.30 Moreover, we check
+whether there is any selective attrition in the lab participation along the
+kin dimensions between the baseline and lab samples using the mea-
+sures available of the minimal number of kin and types of family ties in
+Table B.1 in the Online Appendix. This allows us to verify, for instance,
+whether individuals with larger extended families in the communities
+were more or less likely to attend the experiment. Reassuringly, we do
+not ﬁnd any evidence for it.
+
+To investigate the correlations between experimental variations (in
+the pool of observers) of the gains and the level of WTP, we, ﬁrst,
+use an interval-censored-data regression model, since we observe only
+the interval in which the WTP lies.31 Regarding the extensive mar-
+gin of preference for hidden income, we next estimate a logit model.
+The dependent variable is thus a dummy equal to 1 if the individ-
+ual is willing to hide, i.e., has a positive WTP, and to 0 otherwise.
+We cluster the standard errors at the session level in both speciﬁca-
+tions and we include additional baseline controls. The idea is to test
+whether the extensive margin is predicting most of the correlation
+between experimental variations and the WTP to hide. This will be
+important to back up the empirical strategy developed in Section 4, in
+which we explore the diﬀerential impact of hidden income on resource
+allocation between individuals with and without preference for hidden
+income.
+
+Table 1 presents the results of the interval-censored-data regression
+model in Panel A and of the logit model in Panel B. Column (1) is
+estimated on the whole sample, columns (1w) and (1 m) on the respec-
+tive subsamples of female and male participants.32 The ﬁrst main result
+concerns the eﬀect of the number of kin present in the same session on
+the WTP to hide. We do ﬁnd a signiﬁcant eﬀect in the female sample
+(Column 1w): one additional extended family member attending the
+lab increases the WTP by 955 FCFA. We also ﬁnd that, at the exten-
+sive margin (Panel B) and for the female sample, the presence of one
+more extended family member in the same session increases the proba-
+bility to be willing to hide income by 17 percentage points. Concerning
+men (Column 1 m), we ﬁnd no eﬀect of having a kin in the same ses-
+sion. Looking at the eﬀect of the presence of acquaintances, we ﬁnd
+that men tend to be more willing to hide (13%) when they have a
+non-kin acquaintance in their session (Panel B), while we ﬁnd no eﬀect
+for women along this dimension. A second important result is that the
+
+by
+
+each
+
+thus
+
+except
+
+that
+
+implied
+
+to an ordered probit,
+
+30 For men, we do not look at the number of kin present in the session but
+rather at a dummy variable taking the value 1 if at least one kin is attending
+the session, 0 otherwise. The reason for this change in the explanatory variable
+is that the sample of men is smaller and only seven men had more than two
+relatives present in the session.
+the
+similar
+31 This model
+is
+(2010),
+interval boundaries
+are
+known;
+the WTP inter-
+pages 548–550. The dependent
+vals
+question
+] −
+∞; 0[; [0; 200[; [200; 500[; [500; 700[; [700; 1, 000] ; [1, 000; +∞[.
+par-
+ticipants who prefer having their payoﬀs observable even at a null price, we
+assume that they have a preference for income observability, namely a WTP
+∈ [−∞, 0[. Symmetrically, for individuals who are willing to pay more than
+1000 FCFA, we consider that their WTP is in [1, 000; +∞[.
+32 The whole sample is made of 788 individuals, the 814 who attended the
+experiment phase minus the 26 who had inconsistent decisions, in terms of
+preference. The model is run on a slightly lower number of observations due to
+missing data on some controls.
+
+see Cameron and Trivedi
+variable
+in
+the
+
+is
+experiment,
+
+namely
+For
+
+Journal of Development Economics 137 (2019) 78–92
+
+eﬀect of being selected along with another household member is never
+signiﬁcant, neither for men nor for women. This means that on average,
+being selected with another household member does not aﬀect the WTP
+to hide gains.
+
+In sum, we ﬁnd a social tax of 9%, more than twice as high as the
+one found by Jakiela and Ozier (2016) in the context of rural Kenya.
+In both contexts, pressure to redistribute seem to arise mainly from
+extended family members, especially for women.
+
+4. The impact of income hiding on resource-allocation decisions
+
+In this section, we estimate the distortions in resource-allocation
+choices induced by redistributive obligations. To do so, we test whether
+individuals whose gains might have a hidden component make diﬀerent
+postexperiment choices of transfers, consumption, and investment than
+individuals with observable gains.
+
+4.1. Empirical model and identiﬁcation conditions
+
+We estimate the following system of equations for each commodity
+type g on the sample of participants, excluding those who got only 1000
+FCFA in public and nothing in private:
+
+Yig = 𝛼g + 𝛽g PrivateCardi + 𝜃0,gKin0,i + 𝜃1,gKin1,i + X′
+
+ig 𝛾 + 𝜇c + 𝜇s + uig
+(1)
+where Yig represents the share of the lottery gains dedicated to good g
+by individual i as reported by the individual one week after the lot-
+tery (we discuss the outcomes below). Our key variable of interest,
+PrivateCard, takes the value one when the participant had the possibility
+to have hidden income, either because she drew an option card or the
+no-option 1000 public-8000 private card. Xig is a set of controls including
+sociodemographic and economic characteristics of the individual and
+his/her household, as well as some measure of his/her position in the
+kinship and social networks in the community.33 Following the discus-
+sion in Subsection 3.3 about the experimental variation of the number
+of kin, we control for Kin0, which corresponds to the minimal number
+of kin living in the neighborhood as recorded at baseline and for Kin1
+which is the number of kin in the same session as the participant.34 𝜇c
+and 𝜇s correspond, respectively, to ﬁxed eﬀects of the community and
+of the hour of the attended session. As these expenditure shares are cor-
+related at the individual level (each share can be written as one minus
+the sum of all other shares), the error terms, uig in the regression equa-
+tions are correlated across shares, and we estimate the system through
+a seemingly unrelated OLS regression (SUR) system.
+
+Identiﬁcation
+The coeﬃcient of interest is the one on PrivateCard, 𝛽g. It represents
+the intention-to-treat (ITT) eﬀect for commodity type g, of having hid-
+den income, either by being forced to hide or by having the opportunity
+to hide. Its identiﬁcation relies on the randomness of the opportunity
+to have hidden income in our experiment.
+
+The ITT eﬀect is expected to be low since the opportunity to hide
+income does not translate into hidden income for all participants.
+Indeed, individuals with a higher WTP to hide should be more likely
+to seize the opportunity oﬀered. Therefore, we also look at the eﬀect of
+income observability on resource-allocation decisions focusing on peo-
+ple with a preference for income privacy. We thus estimate equation (1)
+
+33 The full set of controls is listed in Table 3.
+34 Our result are not altered if we vary the deﬁnition of the controls for
+the kinship at baseline, including either a simple dummy “has any kin in the
+neighborhood” or the whole of set of dummies for all categories of kin. Results
+are available upon request.
+
+83
+
+M. Boltz et al.
+
+Journal of Development Economics 137 (2019) 78–92
+
+Table 1
+WTP to hide income and experimental group composition Interval-censored and Logit regressions.
+
+Panel A: Interval-censored estimation on the WTP to hide (in FCFA)a
+Experimental variations
+Selected in household pair
+
+# kin in the session (excl. household pairs)c
+
+Any known non-kin in the session
+
+Mean of the WTP to hide (in FCFA)b
+Number of observations
+Panel B: Logit estimation on the dummy, willing to hide (Yes/No)d
+Experimental variations
+Selected in household pair
+
+# kin in the session (excl. household pairs)c
+
+Any known non-kin in the session
+
+All
+(1)
+
+−51.628
+(198.395)
+[0.795]
+379.619
+(270.907)
+[0.161]
+165.336
+(254.913)
+[0.517]
+523.1
+771
+
+−0.007
+(0.040)
+[0.862]
+0.039
+(0.043)
+[0.368]
+0.028
+(0.042)
+[0.502]
+0.65
+771
+
+Women
+(1w)
+
+−133.597
+(213.629)
+[0.532]
+955.468
+(288.631)
+[0.001]
+−123.449
+(277.849)
+[0.657]
+508.1
+524
+
+Men
+(1m)
+
+−171.332
+(449.436)
+[0.703]
+−146.518
+(701.471)
+[0.835]
+844.612
+(567.562)
+[0.137]
+554.7
+247
+
+−0.002
+(0.045)
+[0.964]
+0.173
+(0.043)
+[0.000]
+−0.014
+(0.057)
+[0.810]
+0.65
+524
+
+−0.061
+(0.072)
+[0.396]
+−0.055
+(0.085)
+[0.515]
+0.131
+(0.080)
+[0.101]
+0.66
+247
+
+Mean of the dummy, willing to hide
+Number of observations
+Standard errors are clustered at the session level in parentheses; pvalue are in brackets. Panel A: Interval-censored-data regression model.
+a Dependent variable: WTP to hide, observed in intervals: p ≤ 1000 FCFA: {] − ∞; 0[; [0; 200[; [200; 500[; [500; 700[; [700; 1000[; [1000; +∞[}.
+b In line with a conservative approach, those means are computed taking the lower bound of the interval, except for observations lying in
+] − ∞; 0[ for which we set the value of the WTP at 0. Panel B: Logit model (average marginal eﬀects).
+c Dependent variable: dummy equal to 1 if the WTP is positive.
+d For men, the variable is diﬀerent, it takes 1 if at least one kin was present in the session (excluding household pairs) and 0 otherwise. Only
+seven men had more than one kin present which does not allow us to exploit variation in the number of kin present in the session. Controls: Age,
+ethnicity wolof, Muslim, French/Arabic education, Koranic schooling, dummy equal to 1 if knows how to read, marital status, dummy equal
+to 1 if individual is working in the formal sector, log of the average income in the last three months, dummy equal to 1 if the individual has
+some savings, dummies for positions within the household (household head, spouse or child of the head), dummy equal to 1 if the individual
+contributes to household food expenditures, dummies equal to 1 if the individual has always lived in the community and has a responsibility
+within the community, minimum number of kin in the community, household size, share of dependent household members, log of daily per
+capita household food consumption, and a dummy equal to 1 if the house is rented.
+
+on the subsample of individuals with positive WTP to hide income.35
+The identiﬁcation of the eﬀect on this subsample relies on the exogene-
+ity of the opportunity to get unobservable income in the lottery draw
+for a given preference. In other words, we posit that, conditional on a
+given ex ante stated preference, the likelihood to pick a private card is
+random. In Table A.3 in the Appendix, we show that the elicited pref-
+erences for hiding income are balanced between individuals who drew
+private and public cards.
+
+By excluding individuals who got only 1000 FCFA in public and
+nothing in private from the estimation, the possible lottery gains are
+8,300, 8,700, and 9000 FCFA. Therefore, participants have approxi-
+mately the same income from the experiment, and we can analyze dif-
+
+35 Table B.1 in the Online Appendix presents the results looking at diﬀerent
+levels of prices, 0, 200, and 700 FCFA — the prices that were on the cards in
+the lottery box. We see that the eﬀect (in absolute value) of the opportunity to
+get hidden income on transfers to kin is globally increasing between a WTP to
+hide at 0 and at 700 FCFA, though the coeﬃcient decreases slightly between
+0 and 200 FCFA. However, globally the diﬀerent coeﬃcients are not statisti-
+cally diﬀerent from each other. We observe a similar pattern on the personal
+expenditures. Therefore, for the sake of simplicity, we focus on the dichotomy
+between negative and positive WTP to hide income in the remaining results,
+which also guarantees the largest samples.
+
+ferences in spending patterns without worrying about wealth eﬀects.36
+Speciﬁcally, we assume that the shares of the lottery gains allocated
+to the various commodities are not directly aﬀected by the windfall-
+income-level diﬀerences — at most 700 FCFA — but are directly
+aﬀected by preferences for hidden income and the random opportunity
+to get hidden income. We test for this assumption by restricting the
+analysis to the subsample of participants who randomly won exactly
+9000 FCFA, and we ﬁnd that results remain unchanged.37
+
+Outcome variables: lottery-gains allocation choices
+We rely here on the response given to the open question raised at
+the end of the follow-up survey about how participants used the money
+
+36 We do not control for the lottery windfall income as certain values — 8300
+and 8700 FCFA — are obtained only when the WTP to hide income is positive.
+37 All of these individuals earned 9, 000 FCFA, but some were randomly
+awarded 8000 FCFA in private while others were not, all regardless of their
+ex ante stated preferences. Hence, the comparison of these two groups is not
+aﬀected by the issue raised above, and the diﬀerence will capture only the
+eﬀect of opportunity to have hidden income. Table C.2 in the Online Appendix
+presents the results, which closely mirror those found in Table 3, in both sign
+and magnitude. We ﬁnd that the opportunity to have hidden income decreases
+by 5.2 percentage points, with a p-value of 0.12 the share of the gains devoted
+to transfers to kin for individuals with a positive WTP to hide income in Panel
+B (the coeﬃcient is −6.45 and signiﬁcant at the 5% level in Table 3).
+
+84
+
+M. Boltz et al.
+
+gained during the lottery.38
+
+Transfers are deﬁned as money given by the lottery winner to
+another individual. Moreover, results of Section 3.3 lead us to investi-
+gating diﬀerences in transfers targeted to kin — within and outside the
+household — and to non-kin. Therefore, we separate transfers made to
+kin and non-kin; in some tables, we reﬁne this deﬁnition and explore
+the diﬀerences between transfers to kin within and outside the house-
+hold.
+
+Besides transfers, we deﬁne seven types of commodities. Private
+goods encompass personal expenses that exclusively concern the lot-
+tery winner, such as personal care or clothes. Health expenditures
+account for all health expenditures made by the individual — both for
+himself/herself and for someone else. We also consider expenditures
+that beneﬁt part or all of the household, distinguishing between food
+expenses (contribution to the usual food pot or purchase of some extras,
+e.g., candies, fruits, juices) and nonfood expenses (e.g., electricity bill
+and detergent). Productive investment accounts for any purchase made
+for an economic activity, be it for direct resale or as an input for any
+income-earning activity; for instance, for women it will often concern
+inputs they need for some homemade preparations that they will sell on
+the street or in the market. Finally, saved gains correspond to gains that
+are not used yet, and other expenses are those that we were not able to
+categorize.
+
+4.2. Main results
+
+Tables 2 and 3 present the main results of the impact of income hid-
+ing on transfers and resource-allocation choices for all participants. In
+Panel A of both tables, we show the results of model (1) estimating on
+the whole sample, the ITT eﬀect of having drawn a private card, namely
+a card giving the opportunity to have hidden income. In Panel B, we
+estimate the same model, restricting it to the subsample of individuals
+with positive WTP to hide. Lastly, in Panel C we present the uncon-
+ditional means for individuals with public cards, and with public cards
+and a positive WTP to hide income.
+
+4.2.1. Transfers
+
+The central ﬁnding of our paper is the eﬀect of the opportunity to
+have unobservable income on transfers, as shown in Table 2.39 A ﬁrst
+observation is the large share of the gains spent on transfers (Panel
+C): on average, individuals who received the lottery money in public
+spent one-quarter of it on transfers, 21% being speciﬁcally intended for
+kin. In Panel A, we consider all individuals and ﬁnd a negative but not
+signiﬁcant eﬀect on the share transferred to kin (Column 2). However,
+distinguishing between transfers within the household and transfers to
+kin outside the household, we ﬁnd that the opportunity to have hidden
+gains decreases by 2 percentage points the share of transfers to kin
+outside the household, accounting for 45% less spent on transfers to
+other kin relative to public card winners.
+
+38 An inherent limitation of our experiment is the nature of the windfall gains,
+as opposed to eﬀort-based income. True, a number of experimental studies have
+shown that people are less generous in dictator games when they ﬁrst need to
+earn their income, rather than when they receive a windfall payment (among
+others, Hoﬀman et al., 1994; Cherry et al., 2002; Cappelen et al., 2013). An
+important answer to this concern is that, in this paper, we are not so much
+interested in the level of redistribution but rather in the diﬀerence in the level
+of redistribution between private and public gain earners. Therefore, under the
+assumption that the pure windfall income eﬀect is the same for private and
+public gains, the fact that gains are not earned should not bias our results.
+39 The table is based on the estimation of the system of equation for all dif-
+ferent commodity shares. Columns (1) and (2) correspond, respectively, to
+Columns (6) and (5) in Table 3 and Columns (3) and (4) correspond to Columns
+(5) and (6) in Table C.3 in the Online Appendix, in which the distinction is made
+between transfers within the household and transfers to other kin.
+
+Journal of Development Economics 137 (2019) 78–92
+
+In Panel B, we focus on people willing to hide. Notably, public card
+winners with preference for income privacy spend on average 4 per-
+centage points more of their gains on transfers to kin than public card
+winners in general (24.9% versus 20.9% in Panel C): this indicates that
+people who were willing to hide but who received their gains in public
+seem to face a higher redistributive pressure. We ﬁnd that the opportu-
+nity to get hidden gains decreases by 26% this share devoted to transfers
+to kin for individuals who prefer income privacy. Indeed, we estimate a
+large decrease (6.4 percentage points) of total gains dedicated to trans-
+fers to kin, signiﬁcant at the 5% level, for individuals with a positive
+WTP to hide. This accounts for a decrease of 580 FCFA for private card
+winners relative to the 2240 FCFA spent on transfers to kin by public
+card winners. As in Panel A, we ﬁnd that this is mainly driven by a
+decrease in transfers to other kin — −3.1 percentage points signiﬁcant
+at the 5% level — which represents a share lowered by 53% for private
+card winners relative to public card winners. We also observe a neg-
+ative eﬀect on transfers to household members with a coeﬃcient of –
+2.3, but this is not statistically signiﬁcant.40
+
+We can draw four main observations from these results. First, the
+WTP to hide income accurately captures the willingness to avoid redis-
+tributive pressure, since the individuals who are willing to pay to
+hide are also the ones who decrease transfers when they have hid-
+den income. Second, we ﬁnd a large eﬀect of income privacy on trans-
+fers, suggesting that people face strong redistribution pressure that con-
+straints their resource-allocation choices. Third, we ﬁnd the same pat-
+tern as in the ﬁrst step of our analysis, namely that people fear the
+pressure to redistribute from kin outside the household more than from
+within. Notably, transfers to non-kin are not aﬀected by the opportu-
+nity to have hidden income and they represent a share more than ﬁve
+times lower. Fourth, even among individuals willing to hide and able
+to hide, we do not observe that they stop transferring totally; in fact
+they still transfer 18% of their gains, about 1600 FCFA. This suggests
+that the social obligations to redistribute which people try to circum-
+vent and for which they are ready to pay a high price concern a quar-
+ter of the value of transfers (26%). The fact that the transfers made
+by people willing and able to hide exceed by 600 FCFA the observed
+1000-FCFA gains suggests that people perform certain transfers out of
+pure altruism, or alternatively, as part of repetitive risk-sharing arrange-
+ments.
+
+4.2.2. Private goods and other outcomes
+
+Table 3 presents the complete results with all commodity shares.41
+Looking ﬁrst at the unconditional means in Panel C, we observe that
+the share devoted to the family, namely household food and nonfood
+expenditures and transfers to kin, accounts for almost 60% of the gains
+for people with public cards (i.e., 5310 out of 9000 FCFA). Transfers
+to non-kin are marginal in comparison (4%). Hence, resources clearly
+appear to be redistributed within one’s kinship networks and only
+marginally beyond. Private goods, or in other words personal expen-
+ditures, account for around one-tenth of the gains, while productive
+investment account for 17%.
+
+40 Table A.7 in Appendix D shows the results for the subsample of people
+who were not willing to hide (Panel C) and for the whole sample, looking at
+the interaction between being willing to hide and having the opportunity to
+receive hidden income (Panel D). We ﬁnd that no signiﬁcant result for the
+subsample with a negative WTP to hide; if anything the coeﬃcient for transfers
+to kin is positive. This shows that people who were not willing to hide do
+not fear redistributive pressure — quite the opposite: they transferred more
+when they got their income in private. A possible interpretation is that they
+wanted to make salient that they are not hiding. In Panel D of this table, we
+observe that the two results in Panels B and C on transfers to kin are statistically
+diﬀerent.
+41 Table C.4 in the Appendix shows the same results with only community and
+session ﬁxed eﬀects and no controls. The results do not change signiﬁcantly.
+
+85
+
+M. Boltz et al.
+
+Journal of Development Economics 137 (2019) 78–92
+
+Table 2
+Eﬀect of the opportunity to have hidden lottery gains on transfers Sample: all individuals.
+
+Share of gains devoted to
+Transfers sent to:
+
+Panel A (N = 654): All
+Card with opportunity to hide
+
+R2
+Chi-2 (p-value)
+Panel B (N = 433): subsample with WTP to hide† ≥ 0
+Card with opportunity to hide
+
+Non-kin
+
+(1)
+
+0.454
+(1.397)
+[0.745]
+0.04
+0.51
+
+2.639
+(1.804)
+[0.143]
+0.07
+0.30
+
+Kin
+All
+(2)
+
+−2.749
+(2.274)
+[0.227]
+0.10
+0.00
+
+HH members
+(3)
+
+−0.183
+(2.026)
+[0.928]
+0.13
+0.00
+
+Other kin
+(4)
+
+−2.144
+(1.158)
+[0.064]
+0.06
+0.12
+
+−6.442
+(2.802)
+[0.021]
+0.13
+0.00
+
+−2.309
+(2.459)
+[0.348]
+0.15
+0.00
+
+−3.136
+(1.572)
+[0.046]
+0.09
+0.04
+
+4.743
+5.93
+
+4.129
+2.933
+
+20.903
+24.854
+
+R2
+Chi-2 (p-value)
+Panel C: Unconditional means
+Public cards (N = 164)
+Public cards & WTP > = 0 (N = 104)
+Standard errors are in parentheses; pvalue are in brackets. Panels A and B: System of linear equations estimated with a SUR model.
+† WTP to hide = Willingness to pay to hide (as measured in the lab experiment).
+Dependent variables: Share of lottery gains allocated to the various commodities. One column per commodity.
+In all panels, individuals who drew the card 1000 FCFA in public are excluded. Panel A: whole sample. Panel B: individuals with positive WTP to hide
+income. Panel C: unconditional means.
+Control variables common in all colums: sex, age, minimum number of kin in the neighborhood (counting the number of types of kin ties for which at
+least one kin lives in the neighborhood in the baseline), selected with another household member (baseline), number of kin present in the lab session
+(excluding household pair), household head, spouse of household head, religion, ethnicity, any Koranic education, any French or Arabic education, marital
+status, household size, share of household members below 15 and above 60 years old, sector of activity, formal or informal salaried worker (i.e., not
+self-employed), average income over previous three months (in log), contributes to household food expenditures, household food expenditures per day per
+capita (in log). Additional control variables in Column (4): holds a responsibility in the community. Community and time-of-session ﬁxed eﬀects included in all
+panels and for all outcomes.
+
+15.483
+17.856
+
+Looking at Panel A, the whole sample, we ﬁnd that the share
+devoted to private goods (Column 1) is 3.8 percentage points larger
+for participants who got the opportunity to receive hidden income, rel-
+ative to public gain winners. For participants willing to hide (Panel B),
+it represents even a 4.9 increase signiﬁcant at the 10% level, accounting
+for an increase of 45% in the share of private goods relative to public
+gain winners. We also ﬁnd evidence of an eﬀect of the opportunity to
+hold unobservable income for the individuals willing to hide on health
+expenditures.42 Health expenses are 1.7 times larger when they can
+hide their lottery gains than when they get everything in public.
+
+In brief, the key result is that exogenously allowing people to hide
+their gains considerably decreases the share they dedicate to transfers
+to kin, notably to kin outside the household. This decrease in transfers
+allows individuals to free up some resources for private expenditures,
+potentially on health. The result on transfers concerns mainly partici-
+pants who show ex ante preferences toward income privacy, meaning
+individuals more subject to redistributive pressure. While the litera-
+ture has focused more on investment as an outcome (e.g., Jakiela and
+Ozier, 2016), we ﬁnd that people turn ﬁrst to expenditures with more
+immediate private returns when they are able to decrease redistributive
+pressure.
+
+5. Discussion
+
+The results presented so far are interpreted as the causal estimation
+of distortions due to income observability on resource allocations. We
+
+42 The Chi-2 test has a p-value of 0.28, which is far from any standard level
+of signiﬁcance. However, the share devoted to health is small — 1.8% in the
+reference group — meaning that we may lack power to properly estimate this
+eﬀect.
+
+86
+
+discuss in turn alternative mechanisms, showing that they are not driv-
+ing our results, and we explore heterogenenous eﬀects along gender
+and wealth dimensions.43
+
+5.1. Testing the fungibility of the gains with other income sources
+
+We conduct an additional test: are the lottery gains and other
+income earned by the participants fungible? Lottery gains are said not
+to be fungible in our context if an increase in the expenditures of an
+item using lottery gains is oﬀset by a decrease in the expenses for this
+item using the other income sources. In presence of such substitution
+in the use of the two types of earnings, our previous results would
+hide general equilibrium eﬀects that would cancel out our estimated
+eﬀects.
+
+To defang this threat, we rely on our postlab survey, in which we
+asked not only for the labor income earned during the past seven days
+but also the amounts of the ﬁve largest transfers received and sent dur-
+ing this timeframe.44 We compute the total earnings received over the
+past seven days by summing the declared labor income, the received
+transfers, and the lottery gains.45 We thus compare our main results
+
+43 An additional competing story might be an aversion to public attention:
+whether fear or distaste of being publicly exposed, regardless of their income
+from the experiment. We think that our experiment does not suﬀer from this.
+Indeed, an important feature of our experiment is that everybody was publicly
+exposed in the lab, and this was public information since the beginning of the
+session. Each participant was named and given at least 1000 FCFA in public
+even when they received some gains in private.
+44 These questions were asked at the beginning of the questionnaire, with no
+reference to the lottery gains. The questions about the use of the lottery gains
+were asked only at the very end of the survey.
+45 For individuals who did not perceive their income in the past seven days
+(e.g., monthly earned income), we compute it from the baseline survey.
+
+M. Boltz et al.
+
+Journal of Development Economics 137 (2019) 78–92
+
+Table 3
+Eﬀect of the opportunity to hide lottery gains on allocation choices Sample: all individuals.
+
+Dependent variables:
+Commodity shares
+
+Panel A (N = 654): Whole sample
+Card with opportunity to hide
+
+R2
+Chi-2 (p-value)
+Panel B (N = 433): WTP to hide† ≥ 0
+Card with opportunity to hide
+
+Private
+Goods
+(1)
+
+3.835
+(2.099)
+[0.068]
+0.11
+0.00
+
+Health
+Care
+(2)
+
+1.348
+(1.325)
+[0.309]
+0.05
+0.32
+
+Household
+Food
+(3)
+
+−0.703
+(3.028)
+[0.816]
+0.12
+0.00
+
+Nonfood
+(4)
+
+−1.463
+(2.157)
+[0.498]
+0.06
+0.04
+
+Transfers to
+Kin
+(5)
+
+−2.749
+(2.274)
+[0.227]
+0.10
+0.00
+
+Non-kin
+(6)
+
+0.454
+(1.397)
+[0.745]
+0.04
+0.51
+
+Productive
+Investment
+(7)
+
+Saved gains
+& Other
+(8)
+
+−1.806
+(2.719)
+[0.506]
+0.10
+0.00
+
+1.004
+(1.827)
+[0.582]
+0.04
+0.48
+
+1.375
+(3.643)
+[0.706]
+0.17
+0.00
+
+−3.408
+(2.609)
+[0.191]
+0.07
+0.35
+
+−6.442
+(2.802)
+[0.021]
+0.13
+0.00
+
+2.639
+(1.804)
+[0.143]
+0.07
+0.30
+
+−2.824
+(3.392)
+[0.405]
+0.13
+0.00
+
+0.913
+(2.282)
+[0.689]
+0.08
+0.14
+
+6.047
+5.823
+
+4.913
+(2.703)
+[0.069]
+0.12
+0.00
+
+3.120
+(1.571)
+[0.047]
+0.07
+0.28
+
+2.724
+1.784
+
+26.589
+24.188
+
+10.952
+11.111
+
+R2
+Chi-2 (p-value)
+Panel C: Unconditional means
+Public cards (N = 164)
+Public cards & WTP >=0 (N = 104)
+Standard errors are in parentheses; pvalue are in brackets. Panels A and B: System of linear equations estimated with a SUR model.
+† WTP to hide = Willingness to pay to hide (as measured in the lab experiment).
+Dependent variables: Share of lottery gains allocated to the various commodities. One column per commodity. Samples: in all panels, individuals who drew
+the card 1000 FCFA in public are excluded. Panel A: whole sample. Panel B: sample with positive WTP to hide income. Control variables common in all
+colums: sex, age, minimum number of kin in the neighborhood (counting the number of types of kin ties for which at least one kin lives in the neighborhood
+in the baseline), selected with another household member (baseline), number of kin present in the lab session (excluding household pair), household head,
+spouse of household head, religion, ethnicity, any Koranic education, any French or Arabic education, marital status, household size, share of household
+members below 15 and above 60 years old, sector of activity, formal or informal salaried worker (i.e., not self-employed), average income over previous
+three months (in log), contributes to household food expenditures, household food expenditures per day per capita (in log). Additional control variables in
+column (2): suﬀers from an illness in baseline, amount of healthcare expenditures spent in the seven days before the baseline (in log). Column (6): holds
+a responsibility in the community. Community and time-of-session ﬁxed eﬀects included in all panels and for all outcomes.
+
+20.903
+24.854
+
+17.388
+17.361
+
+11.607
+12.16
+
+4.129
+2.933
+
+on the eﬀect of the opportunity to have hidden income on the share of
+lottery gains allocated to transfers to kin and non-kin in Table 3, with
+the results on the share of total earnings on the same types of trans-
+fers in Table 4.46 If the lottery gains are fully fungible, we should ﬁnd
+close results between these two tables. In the opposite scenario, under
+nonfungibility of the gains, we should ﬁnd no eﬀect or an eﬀect of
+the opposite sign, driven by the compensation mechanism highlighted
+above.
+
+We ﬁnd comparable eﬀects of the opportunity to have hidden
+income: this opportunity decreases the resources allocated to transfers
+to kin in both cases. The magnitude is even remarkably similar for par-
+ticipants with a positive WTP to hide (Panel B): drawing the card allow-
+ing the participant to have hidden income decreases the share allocated
+to transfers to kin by −5.9 percentage points here in Table 4, versus
+by −6.44 percentage points in the main Table 3. Results in transfers to
+non-kin are also close in magnitude but are not signiﬁcant. Moreover,
+the shares allocated to transfers (Panel C) are very similar between the
+two tables.
+
+This test has strong implications: it suggests that the diﬀerence in
+allocation choices of public and private resource is not aﬀected by the
+nature of the windfall nature of the gains, since the same pattern is
+observed for total income.
+
+5.2. Labor and income received in the week after the experiment
+
+Another possible channel is whether receiving the gains in private
+or in public induced diﬀerent responses in the labor supply and in the
+
+46 We have the information about only the amounts of the ﬁve most important
+transfers made during those seven days and not about other types of expendi-
+tures. Since our main results focus on transfers, we think that this comparison
+provides a convincing test for the fungibility issue.
+
+87
+
+income received in the week after the experiment. The windfall nature
+of the gains and the possibility to hide could imply adverse eﬀects on
+the labor supply in the following week. We investigate this question in
+Table C.5 in the Online Appendix. We look at whether the individual
+worked or not during the seven days after the experiment — with both
+OLS and logit speciﬁcations — and how much he or she earned — with
+both OLS and tobit regressions. We ﬁnd no eﬀect on either in the labor
+supply or the income earned for both Panel A, the whole sample, and
+Panel B, the subsample of people willing to hide.
+
+5.3. Gender analysis
+
+the
+
+We
+
+explore
+
+heterogeneity
+
+Our results relative to the WTP indicate that preferences for income
+privacy diﬀer along the gender dimension. Here, we explore gender
+speciﬁcities in how men and women allocate their resources when given
+the opportunity to have hidden income. Also, we focus on the distinc-
+tion between transfers made to individuals within the household and
+transfers made to kin in the community, since previous results so far
+show that people seem to fear more pressure from kin outside the house-
+hold than within the household.
+
+in
+Table C.6 in the Online Appendix by interacting the variable “Card
+with opportunity to hide” with being a female. There are two main
+takeaways from this table: one concerns the diﬀerential eﬀect across
+gender on transfers, and the second concerns the eﬀect on investment.
+Regarding the ﬁrst outcome, we ﬁnd that on one hand, men increase
+their transfers to other kin more than women do when they cannot
+evade the family tax, but on the other hand, they also decrease
+transfers more than women when they can hide — the diﬀerence being
+signiﬁcant at 10%. The second interesting result is in the diﬀerence
+in investment decisions across gender. Women increase the share of
+their gains they devote to investment drastically more when they are
+not able to hide, relative to men. Moreover, women when they got the
+
+gender
+
+by
+
+M. Boltz et al.
+
+Journal of Development Economics 137 (2019) 78–92
+
+Table 4
+Testing the fungibility of the gains: eﬀect of the opportunity to hide on the share of total income devoted to transfers Sample:
+all individuals.
+
+Commodity shares
+Panel A (N = 667): Whole sample
+Card with opportunity to hide
+
+R2
+Chi-2 (p-value)
+Panel B (N = 438): WTP to hide† ≥ 0
+Card with opportunity to hide
+
+Nontransfer consumption
+
+Transfers to kin
+
+Transfers to non-kin
+
+3.924
+(2.156)
+[0.069]
+0.07
+0.00
+
+−4.297
+(1.931)
+[0.026]
+0.09
+0.00
+
+0.240
+(1.025)
+[0.815]
+0.04
+0.47
+
+4.124
+(2.594)
+[0.112]
+0.07
+0.21
+
+−5.902
+(2.288)
+[0.010]
+0.09
+0.01
+
+17.516
+17.803
+
+1.997
+(1.327)
+[0.132]
+0.06
+0.62
+
+R2
+Chi-2 (p-value)
+Panel C: Unconditional means
+Public cards (N = 164)
+Public cards & WTP >=0 (N = 104)
+Standard errors are in parentheses; pvalue are in brackets. Panels A and B: System of linear equations estimated with a SUR
+model.
+Dependent variables: Share of total postlab income — labor income, received transfers, and lottery gains — allocated to the
+various commodities. One column per commodity. Sample: in all panels, individuals who drew the card 1000 FCFA in public
+are excluded. Panel A: whole sample, Panel B: sample with positive WTP to hide income. Control variables: see Table 3 for
+the full list of regressors. Community and time-of-session ﬁxed eﬀects included in all panels and for all outcomes.
+
+78.705
+78.923
+
+4.033
+3.274
+
+opportunity to have hidden income decrease their investment more
+than men. This strongly suggests that women use investment decision
+as a way to avoid redistributive pressure when they do not have the
+possibility to hide, and that this strategy is not salient for men.
+
+5.4. Wealth heterogeneity among women
+
+Finally, to identify whether vulnerable people react diﬀerently when
+facing redistributive pressure, we explore the impact of hiding, distin-
+guishing between women below and above the median of household
+consumption in Table C.7 in the Online Appendix.47
+
+We ﬁnd that the transfer behaviors strongly depend on whether
+women are living in a poorer or richer household. Women of house-
+holds below median daily food consumption transfer less to their kin
+living outside the household when they can hide their resources, while
+women in richer households do not react to the treatment. Finally, we
+observe that the decrease in the investment share when having the pos-
+sibility to hide is signiﬁcant only for poorer women, while the coeﬃ-
+cient for richer women is also large but not signiﬁcant.
+
+Hence, we see that the poorer women are more responsive to the
+strategy to hide income: they try to escape the pressure to redistribute
+from kin living in the community so as to spend more on themselves
+and their households. Alternatively, when not oﬀered the opportunity
+to have hidden income, women from both poorer and richer households
+invest a larger share of their income, suggestive of an alternative strat-
+egy to avoid redistributive pressure.
+
+6. Conclusion
+
+This paper contributes to the growing but still scarce literature on
+the potential costs of informal redistribution in developing economies
+and sheds light on the possible causes of poverty traps in sub-Saharan
+Africa. We rely on data from an original experiment we conducted
+in urban Senegal that enables us to evaluate demand for income pri-
+vacy and to estimate the consequences of informal redistribution on
+
+resource-allocation decisions. While the ﬁrst measure is obtained in a
+lab setting, the second exploits the random allocation of private income
+and relies on data collected a week after the lab on how lab participants
+used their lottery gains. First, we ﬁnd that two-thirds of the experi-
+ment participants were willing to escape from redistributive pressure,
+and we estimate a social tax of around 9%. Interestingly, we exoge-
+nously varied the presence of household members and kin, and we ﬁnd
+that redistributive pressure essentially comes from the extended family,
+especially from kin living in the community, rather than from house-
+hold members.
+
+Second, we show that people who got the opportunity to have
+hidden gains reduce by one-fourth the share of income they trans-
+fer to kin outside their household. Symmetrically, they increase per-
+sonal and health expenditures. Another important result is that women
+in the poorest households are willing to pay more to hide income
+and further decrease their transfers when they were able to hide
+relative to richer women. Moreover, when given the opportunity to
+have hidden income, women in the poorest households drastically
+decrease their share devoted to the purchase of productive assets.
+This suggests that for these women investing in small inputs rep-
+resents an alternative strategy for gaining more control over their
+resources.
+
+These results show the important distortions induced by kinship tax-
+ation and point to the importance of designing adequate ﬁnancial prod-
+ucts such as savings or insurance, especially when they would protect
+individuals’ secrecy from other kin members and oﬀer more control
+over their resources. This is all the more important since the population
+at stake is the most vulnerable group: poor women. Further research is
+needed to capture the general-equilibrium eﬀects, taking into account
+both the beneﬁts of social redistribution in terms of risk-sharing and the
+distortionary costs of redistributive pressure we have identiﬁed here.
+Understanding the linkages between formal and informal institutions
+would help to assess the eﬀects of introducing a large-scale insurance
+scheme in economies with predominantly family-provided insurance.
+
+Funding resources
+
+47 The smaller size of the sample of men does not allow us to conduct this
+analysis on men.
+
+This work was supported by the CEPREMAP; the PSE Research
+Fund; the Sarah Andrieux Fund; the Chair G-Mond; the IRD; the UMR
+
+88
+
+M. Boltz et al.
+
+Journal of Development Economics 137 (2019) 78–92
+
+Développement et Société; the Agence Nationale pour la Recherche
+[through the program Investissements d’Avenir, ANR-10-LABX-93-01].
+This research is also part of the NOPOOR project, which is funded by
+the European Union under the 7th Research Framework Programme
+(Theme SSH.2011.1) - Grant Agreement No. 290752.
+
+Acknowledgments
+
+We would particularly like to thank Jean-Marie Baland, Cather-
+ine Bros, Pascaline Dupas, Erica Field, Xavier Gine, Laurent Gobil-
+lon, Isabel Günther, Marc Gurgand, Sergei Guriev, Elise Huillery, Ken-
+neth Houngbedji, Pamela Jakiela, Sylvie Lambert, Dan Levin, Karen
+Macours, David Margolis, Alice Mesnard, Owen Ozier, Jean-Noël Senne,
+and numerous conference and seminar participants for their valuable
+comments. We would like also to thank the anonymous referees and
+
+Appendix
+
+the editor, Dean Karlan who kindly helped us to greatly improved the
+present paper. We also thank Virginie Comblon, Rozenn Hotte, Björn
+Nilsson, and Anne-Sophie Robilliard for their technical support in the
+ﬁeld.
+
+We are grateful to seminar audiences at the University of Namur, the
+University Paris-Dauphine, the Paris School of Economics and Sciences
+Po, as well as participants at the 2013 and 2014 SEEDEC Conferences,
+the 2015 CSAE Conference, the 2015 ACDD, the 2015 JMA, the 2015
+AEL Conference, the 2015 DIAL Conference, the 2015 Oxford Devel-
+opment workshop, the 2015 NEUDC, the 2016 LAGV Conference, the
+2016 ABCDE conference, the 2016 NOVA Africa conference, the 2017
+ECINEQ conference.
+
+received the ERB certiﬁcation of J-Pal Europe
+
+This project
+(CE/2014-005).
+
+Table A.1
+Elicitation of preference for income unobservability: “option cards”.
+
+Option A
+Public
+9000
+9000
+9000
+9000
+9000
+
+Private
+0
+0
+0
+0
+0
+
+Total
+9000
+9000
+9000
+9000
+9000
+
+Option B
+p
+0
+200
+500
+700
+1000
+
+Public
+1000
+1000
+1000
+1000
+1000
+
+Private
+8000
+7800
+7500
+7300
+7000
+
+Choice 1
+Choice 2
+Choice 3
+Choice 4
+Choice 5
+
+Type of cards
+Option cards
+
+Table A.2
+Cards in the ballot box and their associated payoﬀs.
+Option
+A: Public
+B: Private
+A: Public
+B: Private
+–
+–
+–
+
+Cards
+Privatep200,O
+Privatep700,O
+Privatefree,NO
+LowPublicNO
+HighPublicNO
+
+No-option cards
+
+Public gain
+9000
+1000
+9000
+1000
+1000
+1000
+9000
+
+Private gain
+0
+7800
+0
+7300
+8000
+0
+0
+
+Total
+9000
+8800
+8500
+8300
+8000
+
+Total
+9000
+8800
+9000
+8300
+9000
+1000
+9000
+
+All gains are given in FCFA. 1000 FCFA ≈ 1.5 EUR.
+“O” stands for option card (i.e., based on the choices made ex ante) and “NO” stands for no-option card (i.e.,
+not based on the choices made ex ante).
+A Private card gives the opportunity to have hidden income, either because the participant drew an option
+card and was willing to pay the corresponding price to hide p200 or p700 (200 and 700 FCFA, respectively)
+or she drew the 1000 public-8000 private card which is free and independent of the previous choices. A Public
+card gives all the gains in public.
+Low refers to small gains, 1000 FCFA. High refers to high gains, 9000 FCFA. All Private cards are high gains.
+
+Table A.3
+Full lottery sample, Private and Public lottery card subsamples.
+
+Positive WTP
+
+Experimental variations
+
+Preferences for hidden income
+
+Selected with another household member
+# kin in the same session
+# friends in the same session
+# neighbors in the same session
+Min # kin in the neighborhood
+Any kin living in the neighborhood
+Any sibling/nephew in the neighborhood
+Any aunt/uncle in the neighborhood
+Any cousin in the neighborhood
+Any parent in the neighborhood
+Any oﬀspring in the neighborhood
+Any other kin in the neighborhood
+
+Full sample
+N
+(0)
+
+Mean
+
+Private card
+N
+(1)
+
+Mean
+
+Public card
+N
+(2)
+
+Mean
+
+Diﬀ.
+P-val.
+(1)–(2)
+
+814
+
+814
+814
+810
+810
+814
+814
+814
+814
+814
+814
+814
+814
+
+0.65
+
+0.65
+0.12
+0.11
+2.40
+0.53
+0.39
+0.10
+0.15
+0.11
+0.06
+0.06
+0.04
+
+89
+
+536
+
+536
+536
+532
+532
+536
+536
+536
+536
+536
+536
+536
+536
+
+0.66
+
+0.67
+0.12
+0.09
+2.40
+0.50
+0.38
+0.09
+0.15
+0.10
+0.06
+0.06
+0.04
+
+278
+
+278
+278
+278
+278
+278
+278
+278
+278
+278
+278
+278
+278
+
+0.62
+
+0.18
+
+0.63
+0.12
+0.13
+2.40
+0.57
+0.42
+0.13
+0.14
+0.13
+0.06
+0.06
+0.05
+(continued on next page)
+
+0.27
+0.80
+0.16
+0.97
+0.22
+0.24
+0.04
+0.73
+0.29
+0.93
+0.93
+0.80
+
+M. Boltz et al.
+
+Table A.3 (continued)
+
+Journal of Development Economics 137 (2019) 78–92
+
+Full sample
+N
+(0)
+
+Mean
+
+Private card
+N
+(1)
+
+Mean
+
+Public card
+N
+(2)
+
+Mean
+
+Diﬀ.
+P-val.
+(1)–(2)
+
+Individual sociodemographic characteristics
+
+Male
+Age
+Muslim
+Wolof
+No education
+Koranic School
+French/Arabic education
+In a monogamous union
+In a polygamous union
+Single
+Other marital status
+
+Individual economic characteristics
+
+Informal sector
+Monthly earnings (in log)
+Contributes to household’s food expenses
+
+Individual position in the household
+
+Household head
+Spouse of household head
+Son or daughter of household head
+
+814
+814
+814
+814
+814
+814
+814
+814
+814
+814
+814
+
+814
+808
+809
+
+813
+813
+813
+
+Individual position in the community and extended family
+
+Has always lived in the community
+Has a responsibility in the community
+Can rely on someone in household
+Can rely on someone in neighborhood
+Can rely on someone outside neighborhood
+Anyone in household can rely on him/her
+Anyone in neighborhood can rely on him/her
+Anyone outside neighborhood can rely on him/her
+
+814
+814
+814
+814
+814
+814
+814
+814
+
+Household characteristics
+
+Household size
+Share of dependent household members (%)
+Household daily food consumption p.c. (log)
+House is rented
+
+813
+813
+810
+814
+
+0.04
+37.38
+0.96
+0.46
+0.23
+0.36
+0.61
+0.48
+0.18
+0.23
+0.10
+
+0.86
+6.58
+0.41
+
+0.19
+0.25
+0.29
+
+0.35
+0.09
+0.65
+0.14
+0.49
+0.63
+0.21
+0.34
+
+11.76
+41.19
+6.09
+0.33
+
+536
+536
+536
+536
+536
+536
+536
+536
+536
+536
+536
+
+536
+530
+533
+
+535
+535
+535
+
+536
+536
+536
+536
+536
+536
+536
+536
+
+536
+536
+535
+536
+
+0.04
+37.71
+0.97
+0.48
+0.23
+0.36
+0.59
+0.44
+0.18
+0.26
+0.12
+
+0.85
+6.51
+0.43
+
+0.21
+0.24
+0.28
+
+0.37
+0.10
+0.64
+0.15
+0.47
+0.64
+0.21
+0.35
+
+11.88
+40.97
+6.09
+0.35
+
+278
+278
+278
+278
+278
+278
+278
+278
+278
+278
+278
+
+278
+278
+276
+
+278
+278
+278
+
+278
+278
+278
+278
+278
+278
+278
+278
+
+277
+277
+275
+278
+
+0.05
+36.74
+0.94
+0.41
+0.21
+0.36
+0.65
+0.56
+0.17
+0.19
+0.07
+
+0.87
+6.70
+0.38
+
+0.17
+0.25
+0.29
+
+0.32
+0.07
+0.67
+0.14
+0.51
+0.61
+0.23
+0.34
+
+11.54
+41.61
+6.11
+0.29
+
+0.80
+0.25
+0.11
+0.06
+0.50
+0.91
+0.12
+0.00
+0.50
+0.05
+0.02
+
+0.45
+0.65
+0.21
+
+0.21
+0.92
+0.91
+
+0.22
+0.09
+0.30
+0.95
+0.32
+0.40
+0.41
+0.80
+
+0.47
+0.62
+0.56
+0.13
+
+Table A.4
+Distribution of cards in the lottery.
+
+Public cards
+LowPublicNO
+No
+
+107
+13.1%
+
+HighPublicNO
+No
+
+171
+21.0%
+
+Private cards
+Privatefree,NO
+No
+
+161
+19.8%
+
+Privatep200,O
+Yes
+
+189
+23.2%
+
+Privatep700,O
+Yes
+
+186
+22.9%
+
+Total
+
+814
+100%
+
+Option cards (O)
+Draws from lotery:
+
+Frequency
+Percentage
+
+NO stands for “no-option” cards, O stands for “option” cards.
+The sample considered includes the 26 observations that presented incoherent choices in the preference elicitation phase.
+
+Table A.5
+Distribution of gains for option cards.
+
+Choice made at given price
+Price
+200 FCFA
+
+Option A (All public)
+
+80
+42.3%
+
+700 FCFA
+
+Option B (Partly private)
+
+109
+57.7%
+
+Total
+
+189
+100%
+
+Card
+
+Privatep200,O
+Frequency
+Percentage∗
+
+Privatep700,O
+Frequency
+Percentage∗
+
+94
+50.5%
+
+186
+100%
+∗ It corresponds to the percentage of individuals having chosen option A (respectively B) for a given card
+and at the corresponding price level. The diﬀerence between the takeups for price = 200 and p = 700 is not
+signiﬁcantly diﬀerent from zero at the 5% level (the p-value is equal to 0.11).
+O stands for “option” cards.
+The sample considered includes the 26 observations that presented incoherent choices in the preference elicitation
+phase.
+
+92
+49.5%
+
+90
+
+M. Boltz et al.
+
+Journal of Development Economics 137 (2019) 78–92
+
+Table A.6
+Measures of the willingness-to-pay (WTP) to hide income.
+
+Whole sample
+All players
+(1)
+788
+523
+600
+476
+
+Women
+(2)
+534
+508
+500
+476
+
+Number of observations
+Mean (in FCFA)
+Median (in FCFA)
+Std. Dev.
+1000 FCFA ≃ 1.5 EUR ≃ 1.7 USD.
+Taking a conservative approach, the WTP statistics are computed at the lower bound of the WTP interval. For example if
+a participant is ready to pay 200 FCFA but not 500 FCFA, her maximum WTP is registered as being equal to 200 FCFA.
+For individuals with a negative WTP, the value is ﬁxed at 0.
+The diﬀerence of the average WTP between men and women is not signiﬁcant at the 5% level in the whole sample, but is
+signiﬁcant at the 10% level in the sample with WTP ≥ 0.
+
+Men
+(3)
+254
+555
+1000
+478
+
+Sample with WTP ≥ 0
+All players
+(4)
+512
+805
+1000
+350
+
+Women
+(5)
+345
+786
+1000
+362
+
+Men
+(6)
+167
+844
+1000
+320
+
+Table A.7
+Eﬀect of the opportunity to hide lottery gains on allocation choices Sample: all individuals.
+
+Dependent variables:
+
+Commodity shares
+
+Panel A (N = 654): Whole sample
+Card with opportunity to hide
+
+R2
+Chi-2 (p-value)
+
+Panel B (N = 433): WTP to hide† ≥ 0
+Card with opportunity to hide
+
+R2
+Chi-2 (p-value)
+
+Panel C (N = 221): WTP to hide† < 0
+Card with opportunity to hide
+
+R2
+Chi-2 (p-value)
+
+Private
+Goods
+
+(1)
+
+3.835
+(2.099)
+[0.068]
+0.11
+0.00
+
+4.913
+(2.703)
+[0.069]
+0.12
+0.00
+
+1.681
+(3.471)
+[0.628]
+0.17
+0.02
+
+Health
+Care
+
+(2)
+
+1.348
+(1.325)
+[0.309]
+0.05
+0.32
+
+3.120
+(1.571)
+[0.047]
+0.07
+0.28
+
+−0.987
+(2.555)
+[0.699]
+0.11
+0.53
+
+Panel D (N = 654): Testing heterogeneity across WTP to hide†
+Card opportunity to hide × WTP to hide ≥0‡
+
+R2
+Chi-2 (p-value)
+
+Household
+
+Transfers to
+
+Productive
+Investment
+
+Saved gains &
+Other
+
+Food
+(3)
+
+−0.703
+(3.028)
+[0.816]
+0.12
+0.00
+
+1.375
+(3.643)
+[0.706]
+0.17
+0.00
+
+−3.537
+(5.631)
+[0.530]
+0.15
+0.12
+
+3.636
+(6.441)
+[0.572]
+0.12
+0.00
+
+Non-food
+(4)
+
+Kin
+(5)
+
+−1.463
+(2.157)
+[0.498]
+0.06
+0.04
+
+−3.408
+(2.609)
+[0.191]
+0.07
+0.35
+
+0.890
+(3.999)
+[0.824]
+0.17
+0.03
+
+−4.140
+(4.591)
+[0.367]
+0.06
+0.05
+
+−2.749
+(2.274)
+[0.227]
+0.10
+0.00
+
+−6.442
+(2.802)
+[0.021]
+0.13
+0.00
+
+4.939
+(3.981)
+[0.215]
+0.20
+0.00
+
+−10.491
+(4.825)
+[0.030]
+0.10
+0.00
+
+Non-kin
+(6)
+
+0.454
+(1.397)
+[0.745]
+0.04
+0.51
+
+2.639
+(1.804)
+[0.143]
+0.07
+0.30
+
+−3.477
+(2.247)
+[0.122]
+0.11
+0.51
+
+6.003
+(2.964)
+[0.043]
+0.05
+0.37
+
+(7)
+
+−1.806
+(2.719)
+[0.506]
+0.10
+0.00
+
+−2.824
+(3.392)
+[0.405]
+0.13
+0.00
+
+1.569
+(4.727)
+[0.740]
+0.19
+0.01
+
+−3.071
+(5.788)
+[0.596]
+0.10
+0.00
+
+(8)
+
+1.004
+(1.827)
+[0.582]
+0.04
+0.48
+
+0.913
+(2.282)
+[0.689]
+0.08
+0.14
+
+−1.785
+(3.198)
+[0.577]
+0.09
+0.81
+
+0.539
+(3.890)
+[0.890]
+0.04
+0.58
+
+4.149
+(4.462)
+[0.352]
+0.11
+0.00
+
+10.952
+11.111
+
+4.217
+(2.816)
+[0.134]
+0.05
+0.31
+
+2.724
+1.784
+
+4.129
+2.933
+
+26.589
+24.188
+
+11.607
+12.16
+
+20.903
+24.854
+
+Panel E: Unconditional means
+Public cards (N = 164)
+Public cards & WTP > =0 (N = 104)
+Standard errors are in parentheses; pvalue are in brackets. Panels A, B, C and D: System of linear equations estimated with a SUR model.
+† WTP to hide = Willingness to pay to hide (as measured in the lab experiment).
+‡ Panel D controls for main eﬀects: WTP to hide and card with opportunity to hide lottery gains. The signiﬁcant interaction term for transfers to kin is identiﬁed on the reference
+group of 29 individuals who did not get the card with the opportunity to hide, were not willing to hide and did send transfers to kin.
+Dependent variables: Share of lottery gains allocated to the various commodities. One column per commodity.
+Samples: in all panels, individuals who drew the card 1000 FCFA in public are excluded. Panel A and D: whole sample. Panel B (respectively C): sample with positive (respectively
+negative) WTP to hide income.
+Control variables common in all colums in Panels A to D: sex, age, minimum number of kin in the neighborhood (counting the number of types of kin ties for which at least
+one kin lives in the neighborhood in the baseline), selected with another household member (baseline), number of kin present in the lab session (excluding household pair),
+household head, spouse of household head, religion, ethnicity, any Koranic education, any French or Arabic education, marital status, household size, share of household
+members below 15 and above 60 years old, sector of activity, formal or informal salaried worker (i.e., not self-employed), average income over previous three months (in log),
+contributes to household food expenditures, household food expenditures per day per capita (in log).
+Additional control variables in column (2): suﬀers from an illness in baseline, amount of health care expenditures spent in the seven days before the baseline (in log). Column
+(6): holds a responsibility in the community.
+Community and time-of-sessions ﬁxed eﬀects included in all panels and for all outcomes.
+
+17.388
+17.361
+
+6.047
+5.823
+
+91
+
+M. Boltz et al.
+
+Appendix A. Supplementary data
+
+Journal of Development Economics 137 (2019) 78–92
+
+Supplementary data to this article can be found online at https://doi.org/10.1016/j.jdeveco.2018.11.004.
+
+Dupas, Pascaline, Robinson, Jonathan, 2013b. “Why don’t the poor save more? Evidence
+
+from health savings experiments. Am. Econ. Rev. 103 (4), 1138–1171.
+
+Fafchamps, Marcel, October 1992. Solidarity networks in preindustrial societies: rational
+
+peasants with a moral economy. Econ. Dev. Cult. Change 41 (1), 147–174.
+
+Goldberg, Jessica, 2017. The eﬀect of social pressure on expenditures in Malawi. J.
+
+Econ. Behav. Organ. 143, 173–185.
+
+Grimm, Michael, Hartwig, Renate, Lay, Jann, 2017. Does forced solidarity hamper
+
+investment in small and micro enterprises? J. Comp. Econ. 45 (4), 827–846.
+
+Guerin, Isabelle, 2008. L’argent des femmes pauvres: entre survie quotidienne,
+
+obligations familiales et normes sociales. Revue Française de Socio-Économie 2,
+59–78.
+
+Hadness, Myriam, Vollan, Björn, Kosfeld, Michael, 2013. The Dark Side of Solidarity.
+
+Unpublished results.
+
+Hoﬀman, Elizabeth, McCabe, Kevin, Keith, Shachat, Smith, Vernon, November 1994.
+
+Preferences, property rights, and anonymity in bargaining games. Game. Econ.
+Behav. 7 (3), 346–380.
+
+Jakiela, Pamela, Ozier, Owen, 1 January 2016. Does Africa need a rotten kin theorem?
+Experimental evidence from village economies. Rev. Econ. Stud. 83 (1), 231–268,
+https://doi.org/10.1093/restud/rdv033.
+
+Karlan, Dean, Adam, Osman, Zinman, Jonathan, 2016. Follow the money not the cash:
+
+comparing methods for identifying consumption and investment responses to a
+liquidity shock. J. Dev. Econ. 121, 11–23.
+
+Kimball, Miles S., March 1988. “Farmers’ cooperatives as behavior toward risk. Am.
+
+Ligon, Ethan, Schechter, Laura, 2012. Motives for sharing in social networks. J. Dev.
+
+Econ. Rev. 78 (1), 224–232.
+
+Econ. 99 (1), 13–26.
+
+vol. 1. Routledge.
+
+Moya, Ismaël, 2004. Démesure, jeu et ironie. Argent et don au féminin à Dakar. (dir.).
+In: Drach, M. (Ed.), L’argent. Croyance, Mesure, Spéculation, pp. 167–180 Paris, La
+Découverte.
+
+Nordman, Christophe Jalil, Vaillant, Julia, March 2014. Inputs, Gender Roles or Sharing
+
+Norms? Assessing the Gender Performance Gap Among Informal Entrepreneurs in
+Madagascar. IZA Discussion Papers 8046. Institute for the Study of Labor (IZA).
+
+Platteau, Jean-Philippe, 2000. Institutions, Social Norms, and Economic Development,
+
+Platteau, Jean-Philippe, 2006. Chapter 12 solidarity norms and institutions in village
+societies: static and dynamic considerations. In: Kolm, Serge-Christophe, Mercier
+Ythier, Jean (Eds.), Foundations, Vol. 1 of Handbook of the Economics of Giving,
+Altruism and Reciprocity. Elsevier, pp. 819–886.
+
+Platteau, Jean-Philippe, 2014. Redistributive pressures in sub-saharan Africa: causes,
+
+consequences, and coping strategies. In: Akyeampong, Emmanuel, Bates, Robert H.,
+Nunn, Nathan, Robinson, James (Eds.), Africa’s Development in Historical
+Perspective. Cambridge University Press, pp. 153–207 (Cambridge Books Online).
+
+Squires, Munir, 2017. Kinship Taxation as an Impediment to Growth:Experimental
+
+Evidence from Kenyan Microenterprises. Unpublished results.
+
+Wright, R., 1994. The Moral Animal - Why We Are the Way We Are: the New Science of
+
+Evolutionary Psychology. Pantheon Books, New York.
+
+References
+
+Ashraf, Nava, 2009. Spousal control and intra-household decision making: an
+experimental study in the Philippines. Am. Econ. Rev. 99 (4), 1245–1277.
+
+Baland, Jean-Marie, Guirkinger, Catherine, Mali, Charlotte, 2011. Pretending to Be poor:
+borrowing to escape forced solidarity in Cameroon. Econ. Dev. Cult. Change 60 (1).
+Baland, Jean-Marie, Bonjean, Isabelle, Guirkinger, Catherine, Ziparo, Roberta, 2016. The
+
+economic consequences of mutual help in extended families. J. Dev. Econ. 123,
+38–56.
+
+Beekman, Gonne, Gatto, Marcel, Nillesen, Eleonora, 2015. Family networks and income
+hiding: evidence from lab-in-the-ﬁeld experiments in rural Liberia. J. Afr. Econ. 24
+(3), 453–469.
+
+Boltz, Marie, 2017. Sharing the Burden or the Burden of Sharing? Intra-family
+
+Redistribution and Personal Savings in Senegal. Unpublished results.
+
+Boltz, Marie, Villar, Paola, 2013. Les liens des migrants internes et internationaux à leur
+
+ménage d’origine: portraits croisés de familles étendues sénégalaises. Autrepart
+67–68 (4), 103–119.
+
+Cameron, Adrian Colin, Trivedi, Pravin K., 2010. Microeconometrics Using Stata, vol. 2.
+
+Stata press, College Station, TX.
+
+Cappelen, Alexander W., James, Konow, Erik, Sorensen, Bertil, Tungodden, 2013. Just
+
+luck: an experimental study of risk-taking and fairness. Am. Econ. Rev. 103 (4),
+1398–1413.
+
+Castilla, Carolina, Walker, Thomas F., August 2012. Gender roles and intra-household
+allocation: identifying diﬀerences in the incentives to hide money across spouses in
+Ghana. In: 2012 Annual Meeting, August 12-14, 2012, Seattle, Washington 124923.
+Agricultural and Applied Economics Association.
+
+Castilla, Carolina, Walker, Thomas, 2013. Is ignorance bliss? The eﬀect of asymmetric
+information between spouses on intra-household allocations. Am. Econ. Rev. 103
+(3), 263–268.
+
+Cherry, Todd L., Frykblom, Peter, Shogren, Jason F., September 2002. Hardnose the
+
+dictator. Am. Econ. Rev. 92 (4), 1218–1221.
+
+Coate, Stephen, Ravallion, Martin, February 1993. Reciprocity without commitment:
+
+characterization and performance of informal insurance arrangements. J. Dev. Econ.
+40 (1), 1–24.
+
+Cox, Donald, Fafchamps, Marcel, 2007. Chapter 58 extended family and kinship
+networks: economic insights and evolutionary directions. In: Paul Schultz, T.,
+Strauss, John A. (Eds.), Vol. 4 of Handbook of Development Economics. Elsevier, pp.
+3711–3784.
+
+Dercon, Stefan, Krishnan, Pramila, 2000. Vulnerability, seasonality and poverty in
+
+Ethiopia. J. Dev. Stud. 36 (6), 25–53.
+
+DeVreyer, Philippe, Lambert, Sylvie, Saﬁr, Abla, Sylla, Momar B., 2008. Pauvreté et
+
+Structure Familiale, pourquoi une nouvelle enquête? Stateco 102, 261–275.
+
+di Falco, Salvatore, Bulte, Erwin, June 2011. A dark side of social capital? Kinship,
+
+consumption, and savings. J. Dev. Stud. 47 (8), 1128–1151.
+
+Dupas, Pascaline, Robinson, Jonathan, 2013a. Savings constraints and microenterprise
+
+development: evidence from a ﬁeld experiment in Kenya. Am. Econ. J. Appl. Econ. 5
+(1), 163–192.
+
+92
+
+

@@ -20,8 +20,7 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
     // map sent-id to event mentions, to each of the best entity locations- useful in printing. until mihai approves eventmention to be modified to hold context
     val sentidContext=scala.collection.mutable.Map[Int,contextDetails]()
     val ce= ContextExtractor()
-    ce.parse(text,sentidContext)
-
+    ce.parse(doc,mentions,sentidContext)
     (doc, mentions,sentidContext)
   }
 }

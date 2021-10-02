@@ -1,0 +1,1301 @@
+Agricultural Water Management 228 (2020) 105890
+
+Contents lists available at ScienceDirect
+
+Agricultural Water Management
+
+journal homepage: www.elsevier.com/locate/agwat
+
+Adaptation of paddy rice in China to climate change: The eﬀects of shifting
+sowing date on yield and irrigation water requirement
+Yimin Dinga,c,d, Weiguang Wanga,b,*, Qianlai Zhuangc,d, Yufeng Luoe
+a State Key Laboratory of Hydrology-Water Resources and Hydraulic Engineering, Hohai University, Nanjing 210098, China
+b College of Water Resources and Hydrology, Hohai University, Nanjing 210098, China
+c Department of Earth, Atmospheric and Planetary Sciences, Purdue University, West Lafayette, IN 47907, USA
+d Department of Agronomy, Purdue University, West Lafayette, IN 47907, USA
+e State Key Laboratory of Water Resources and Hydropower Engineering Science, Wuhan University, Wuhan 430072, China
+
+T
+
+A R T I C L E I N F O
+
+A B S T R A C T
+
+Keywords:
+Climate change
+Adaptation
+Sowing window
+Food security
+Irrigation water requirement
+Rice
+
+Warming and increasing extreme climate events are expected to reduce crop yields including rice production in
+China, threatening the Chinese food security. Shifting sowing date has been considered as a key adaptation
+strategy to sustain rice production in China. However, the extent to which it can mitigate the adverse climate
+change impact on yield and whether more irrigation is required remains unclear. Here, by driving ORYZA v3
+with four climate models (GCMs), we analyzed the impacts of climate change on China rice yield and net
+irrigation water requirement (NIR) at 21 sites under a wide range of sowing date. We found that without altering
+sowing date, weighted average rice yield for all sites will decline 5.1, 7.3 and 15.1% in periods 2011–2040,
+2041–2070 and 2071–2100, respectively. Yields losses in temperate zones are linked to increased crop devel-
+opment rates with higher temperatures, but in subtropical regions, the reduction is more related to the damage
+of heat stress during rice heading or ﬂowering periods. NIR increases notably in all regions (up to 71%) except
+northeastern China, where the shortened growth duration resulted in less time to consume water. When the
+optimized sowing date is applied, average yield losses will be eﬀectively compensated. To achieve these, rice-
+sowing date will be shifted by up to 54 days and on average 17.8–23.4 % more fresh water in future periods are
+needed to meet the water requirement of rice growth. We also found that, due to increasing the frequency of heat
+events, farmers in Chinese rice production regions (e.g., Yangtze River Basin) will have narrow sowing windows
+at the end of this century. This study suggests that adequate irrigation and adjusting sowing dates could mitigate
+the negative climate impacts on rice production in China.
+
+1. Introduction
+
+Rice is the most important cereal crop grown in China, nearly one
+billion people depend on it as their staple food (Tao et al., 2013).
+However, its sustainable production is being faced with many chal-
+lenges, including labor shortage (Shen et al., 2011), the need to reduce
+greenhouse gas emissions such as CH4 (Zhang et al., 2016), and the
+competition for paddy land and water resources from non-agricultural
+sectors (Challinor et al., 2014). Furthermore, climate change, mainly
+characterized by increased temperature, shifted rainfall patterns, and
+more frequent extreme climate events (Piao et al., 2010), has not only
+dramatically altered the climate condition (Godfray et al., 2010; Shen
+et al., 2011; Wang et al., 2014), but also threatened the stable supply of
+irrigation water resources (Sun and Yang, 2012; Zhang and Zhou, 2015;
+Cao et al., 2017). Therefore, it is imperative to project the future
+
+impacts of climate change on Chinses paddy rice production and water
+consumption, and further explore potential adaptation strategies.
+
+Climate change without adaptation is projected to inﬂuence crop
+growth and water use in a number of ways. The elevated temperatures
+have been known to accelerate the growth process of most crops, re-
+sulting in less time for biomass accumulation (Tao et al., 2008; Hawkins
+et al., 2013; Zheng et al., 2012). On the other hand, short periods of
+extreme high temperature during key crop growing stages such as
+ﬂowering and grain ﬁlling are associated with dramatic yield loss by
+reducing the potential grain number or increasing the proportion of
+shrunken grains (Ciais et al., 2005; Fuller et al., 2007; Butler and
+Huybers, 2013). Apart from aﬀecting crop yield, warming also has
+many inﬂuences on crop water use, including the acceleration of crop
+evapotranspiration rate at a higher temperature, as well as the shor-
+tened crop growing duration for water consumption (Wang et al., 2014;
+
+⁎ Corresponding author at: State Key Laboratory of Hydrology-Water Resources and Hydraulic Engineering, Hohai University, Nanjing 210098, China.
+E-mail address: wangweiguang006@126.com (W. Wang).
+
+https://doi.org/10.1016/j.agwat.2019.105890
+Received 16 March 2019; Received in revised form 30 October 2019; Accepted 31 October 2019
+Available online 13 November 2019
+0378-3774/ © 2019 Elsevier B.V. All rights reserved.
+
+Y. Ding, et al.
+
+Agricultural Water Management 228 (2020) 105890
+
+Zhao et al., 2015; Ding et al., 2017). Owing to the adequate irrigation,
+rice production in China is not easily threatened by drought, but in
+recent years, climate change has dramatically shifted the precipitation
+pattern in south China, the main rice planting region, causing severe
+shortages of available irrigation water resources (Tan et al., 2017; Hu
+et al., 2017; Xiao et al., 2018). Unlike the adverse impacts of tem-
+perature increase and precipitation variation, the increasing CO2 con-
+centration is known to have positive eﬀects on crop production. Ele-
+vated CO2 is anticipated to improve crop yield through expressing
+higher thermotolerance of photosynthesis, which is especially the case
+for C3 crops such as rice and soybean (Taub et al., 2000; Chapin et al.,
+2011; Jin et al., 2017). Moreover, by increasing crop stomatal closure,
+elevated CO2 leads to decreased crop transpiration rate, thus beneﬁting
+the reduction in irrigation water requirement (Tao et al., 2008; Elliott
+et al., 2014; Deryng et al., 2016; Wang et al., 2017a).
+
+Expanding cropping area, shifting sowing date, switching to new
+varieties, further optimizing the using of water and fertilizer are stra-
+tegies to cope with climate change for sustaining crop production
+(Lobell et al., 2008, 2015; Rurinda et al., 2015). However, the current
+situation of rice production system in China may limit the application of
+the most aforementioned adaptive strategies. Since the Han Dynasty
+(202CE –220CE), to feed the growing population, Chinese people have
+exploited most of the arable land to maximize food production with
+intensive labor, water and fertilizer inputs, which is known as “In-
+tensive and Meticulous Farming”. Today, with the help of modern ir-
+rigation systems, widely distributed fertilizer plants and high-yield
+hybrid varieties, this intensive farming system has helped to close the
+yield gap between realized and potential (Peng et al., 2009). Statistical
+data showed that China provides 27.8% of global rice production
+within only 18.57% of its planting area (FAOSTAT, 2018). In other
+words, under a changing climate and rising food demand, most of the
+common adaptation strategies lost their brilliance with this farming
+system, as yield cannot be easily increased by reducing water deﬁcit
+and more fertilizer use or expanding arable land like Africa and
+Southeast Asia did, where the shortages of water and nutrients are the
+main limitations in their rice production (Lobell., 2008). Shifting
+sowing date, a low-cost and easy-implement strategy (Waongo et al.,
+2015; Rurinda et al., 2015), is thus the key adaptation strategy, which
+can allow crop growth to occur in the periods with more suitable cli-
+mate conditions (Zheng et al., 2012).
+
+Irrigation, the most paramount factor to maintain the high rice yield
+in China, and by far the largest component (ab. 54%) of national total
+anthropogenic fresh water consumption (Wang et al., 2017b), is ex-
+pected to change signiﬁcantly under the combined eﬀects of climate
+change and shifted sowing date, raising concerns regarding whether
+water resources shortage will be a limiting factor for rice production
+under future optimized sowing date (Elliott et al., 2014; Ye et al., 2015;
+Ding et al., 2017). For instance, although earlier sowing date in
+northeast China may be beneﬁcial to rice yield, the critical water
+consumption period such as heading may miss the rainy season, re-
+sulting in a sharp increase in the amount of water needed for irrigation.
+It also should be noticed that future available irrigation water resources
+could be limited by the increasing water consumption from non-food
+uses (Challinor et al., 2016; Wang et al., 2013; Samani et al., 2018).
+Statistical evidence has been showed that due to the shortage of irri-
+gation water resources, rice cultivation area in the North China Plain
+has decreased dramatically in the past 30 years (National Bureau
+Statistics of China, 2014; Gao and Luo, 2008). Therefore, the projection
+of rice irrigation water requirement under the shifted sowing date is of
+signiﬁcant implications for both food security and water security.
+
+Process-based crop models that can simulate the interactions be-
+tween multiple environmental factors and management practices are
+useful tools to assess the impacts of climate change on crop growth and
+explore potential adaptation strategies (Boote et al., 1996; Keating
+et al., 2003; Van Oijen and Lefelaar, 2008; Chenu et al., 2011; Zhao
+et al., 2016; Liu et al., 2016). By using the crop models, extensive
+
+studies have attempted to evaluate the potential impacts of future cli-
+mate change on rice yield (i.e., Yao et al., 2007; Xiong et al., 2009; Tao
+et al., 2008; Shen et al., 2011; Wang et al., 2014, 2017a; Xu et al., 2015;
+Li et al., 2016; Zhang et al., 2017). However, to our knowledge, existing
+modeling studies have neither given an explicit answer to the extent to
+which shifting sowing date can oﬀset the impacts of climate change on
+rice production, nor given how the corresponding irrigation water re-
+quirement would change. More eﬀorts are thus needed to explore the
+potential adaptation and its impacts on water consumption, in order to
+inform future rice breeding and water resources utilization.
+
+In this study, the ORYZA v3 crop model (Bouman et al., 2001; Li
+et al., 2017) driven by four bias-corrected global climate datasets at 21
+agricultural experimental sites spanning the main rice production re-
+gions in China was used to investigate the comprehensive impacts of
+climate change and shifting sowing date on rice yield and water con-
+sumption in China. The following four questions were addressed: (1)
+how does climate change aﬀect the yield and NIR on Chinses paddy rice
+under current ﬁeld management practices and cultivar choices? (2)
+How will the sowing date be adjusted to optimize rice yield? (3) To
+what extent can changing planting date mitigate the negative eﬀects of
+climate change on rice yield? and (4) How will the corresponding NIR
+change under the altered sowing date?
+
+2. Materials and methods
+
+2.1. Study site and experimental data
+
+Twenty-one Agro-meteorology Experimental Sites (AES) spanning
+the main China rice growing regions from temperate zone to south
+subtropical zone were studied (Fig. 1). These sites were maintained by
+China Meteorological Administration (CMA) and purposefully selected
+to represent diﬀerent rice types (single, early, and late rice) and dif-
+ferent rice planting regions classiﬁed by Mei et al. (1988). Generally,
+single rice is cultivated in southwestern China and the north of the
+Yangtze river, where rice is sown between March 10th and June 15th,
+while double rice (rotation between early and late rice) is the typical
+cropping system in the south of the Yangtze river, with early rice and
+late rice sown around March 20th and July 5th, respectively. However,
+due to the short of labor force or rotation with other crops such as
+sugarcane (Shen et al., 2011), farmers in the double rice cultivation
+regions might only breed early or late rice in one year. Thus, early and
+late rice sites in Guangxi and Fujian provinces are not at the same lo-
+cation (Fig. 1).
+
+Historical data of rice phenology (i.e., sowing, transplanting, ﬂow-
+ering, maturity dates), yields and management practices from 2002 to
+2012 were extracted from the AESs. These experiment data were col-
+lected based on a uniform CMA observation standards and guidelines
+(Liu et al., 2012).
+
+2.2. Current and future climate data
+
+To quantify future climate and its uncertainty impacts, a number of
+climate projections from General Circulation Models (GCMs) were used
+(Xing et al., 2014; Rurinda et al., 2015; Lobell et al., 2015). Speciﬁcally,
+future climate data from 2011 to 2100 were obtained from four GCMs
+including HadGEM2-ES, BCC-CSM1.1 (m), MIROC-ESM-CHEM, and
+GFDL-ESM2M (see Table S1), participating in the coupled model in-
+tercomparsion project phase 5 (CMIP5, Taylor et al., 2012). We con-
+sidered these four GCMs because they fully meet the data required to
+simulate rice yield and paddy water balance at the same time and were
+widely used in climate change studies in China (e.g., Yin et al., 2015;
+Guo et al., 2015; Wang et al., 2017a). Four representative concentration
+pathways (RCP2.6, 4.5, 6.0 and 8.5) were released by CMIP5 (Taylor
+et al., 2012), but we only focus on the high concentration pathway
+(RCP 8.5) for which radiative forcing rise to 8.5 W m−2 by 2100.
+
+Historical daily climate data including minimum and maximum
+
+2
+
+Y. Ding, et al.
+
+Agricultural Water Management 228 (2020) 105890
+
+Fig. 1. Study sites and their weather condition of baseline period in China: (a)-(d): average cumulative precipitation, daily maximum temperature, daily net
+radiation, and killing degree days (KDDs) in the baseline period (1981–2010). KDD is a commonly used measure for the cumulative heat damage a crop has
+experienced, here deﬁned as the sum of daily maximum temperature over 35 °C. (e) rice-growing area sourced from International rice research institute and the
+locations of the 21 sites where the climate change impacts and adaptation were analyzed.
+
+temperatures, sunshine duration, relative humidity, wind speed, and
+precipitation from 1976 to 2013 at each site were obtained from
+National Meteorological Information Centre of China (NMIC) of CMA.
+To meet the data requirement to force crop model, sunshine duration
+and relative humidity were converted to solar radiation and actual
+vapour pressure using the method provided by Prescott (1940) and
+Allen et al. (1998), respectively.
+
+The climate data were bias-corrected against the baseline observed
+data. The minimum and maximum temperature, solar radiation, wind
+speed, and vapour pressure data were corrected by quantile mapping
+(Li et al., 2010; Wang and Chen, 2013). The precipitation data were
+corrected with the method of Piani et al. (2010) that can reproduce
+extreme events and eliminate excessive number of occurrences of
+drizzle. It should be specially noticed that, although the ensemble of
+multiple GCMs improves the projection of climate data, aggregating of
+many climate models directly could shift climate patterns, for instance,
+bringing more wet days and less extreme precipitation. Therefore, in
+this study, we drive the crop model with the individual GCM outputs
+and then average the simulation results across the four GCMs.
+
+2.3. Crop model description
+
+Rice yield and irrigation water requirement in response to future
+climate change and shifting planting date were simulated using ORYZA
+
+v3 (https://sites.google.com/a/irri.org/oryza2000). ORYZA is an ad-
+vanced, dynamic eco-physiological model
+jointly developed by
+International Rice Research Institute (IRRI) and Wageningen University
+(Karim et al., 2012). Driving by weather, soil, crop, and management
+data, the model simulates rice yield, growth stage, dry matter dis-
+tribution and water balance, under water stress, nitrogen stress and
+N × W stress conditions on a daily basis. ORYZA v3 has a detailed
+water balance module, which allows the users to set up complexed ir-
+rigation schemes in modeling experiments (Bouman et al., 2001). The
+model is also more suitable to simulate NIR of lowland rice than other
+models such as CERES-Rice and WOFOST. Meanwhile, the performance
+of ORYZA has been widely validated against the experimental data in a
+wide range of climate regions in Asia (e.g., Karim et al., 2012; Shen
+et al., 2011; Li et al., 2013; Yuan et al., 2017). In recent years, ORYZA
+has been successfully applied in China to evaluate the options to grow
+rice with less water (Bouman et al., 2007), investigate the impacts of
+climate change on rice production (Wang et al., 2014) and irrigation
+(Luo et al., 2015), and monitor large-scale rice growth and development
+by combining remote sensing data (Setiyono et al., 2012; Pazhanivelan
+et al., 2015).
+
+The accurate simulation of rice growth period duration (GPD) is
+crucial for this study since warming over rice growing season causes
+yield change primarily through its eﬀects on the length of life cycle.
+Furthermore, NIR is also highly related to crop life cycle (Zhao et al.,
+
+3
+
+Y. Ding, et al.
+
+Agricultural Water Management 228 (2020) 105890
+
+Fig. 2. The main response functions to simulate the direct and indirect eﬀects of temperature increase on rice yield and irrigation. (a) Relationship between hourly
+temperature and developing rate. (b) Relationship between mean daily maximum temperature during the ﬂowering period (0.96 < DVS < 1.22) and spikelet
+fertility fraction. (c) The inﬂuence of cooling degree days on spikelet sterility fraction during booting and ﬂowering periods (0.75 < DVS < 1.2).
+
+2015). In ORYZA v3, the development stage (DVS), indicating rice
+physiological age, is calculated based on hourly increments in heat
+units (HUH, °Cd h−1). The response of temperature to HUH is simpliﬁed
+as a linear function (Fig. 2a). For temperature below the base tem-
+perature (TBD) or higher than the maximum temperature (TMD), rice
+development will stop, while temperature equals the optimum tem-
+perature (TOD), rice grows fastest. In this study, the values of these
+three cardinal temperatures (TBD, TOD and TMD) are 8, 30, and 42 °C,
+respectively (Gao et al., 1992).
+
+Apart from the length of rice life cycle, spikelet sterile, the key
+factors related to rice yield losses, are also sensitive to extreme high or
+low temperatures (Horie et al., 1992). The cooling degree-days
+(COLDTT; °Cd) during rice panicle stage (0.75 < DVS < 1.2) is used
+to evaluate the impacts of cold temperature on sterility, while the
+average daily maximum temperature (TFERT; °C) over ﬂowering period
+(0.96 < DVS < 1.22) is adopted to describe the relationship between
+high temperature and rice fertility (Bouman et al., 2001). According to
+Horie et al. (1992), when daily mean temperature is less than 22 °C or
+average daily maximum temperature during ﬂowering period is higher
+than 35 °C, the percentage of rice spikelet fertility will be dramatically
+reduced (Fig. 2b and c).
+
+=
+
+R
+
+C
+
+E
+
+T
+
+S
+
+P D
+
++ + − − − − −
+
+Unlike the upland crops such as wheat and maize, rice cultivation in
+China is dominated by paddy ﬁeld farming, the most water-intensive
+type of crop planting. In ORYZA v3, rice irrigation water requirement
+was determined by soil-water balance, which can be brieﬂy described
+as:
+dW IR
+(1)
+Where dW is the change of ﬁeld water stored; IR is irrigation water
+requirement; R, C, E, T, S, P and D represent precipitation, capillary
+rise, evaporation,
+seepage, percolation and evapo-
+transpiration, respectively. The irrigation scheduling (irrigation time
+and amount) is determined by the subroutine IRRIG, which provides
+ﬁve optional manners in which irrigation is applied and computes the
+daily amount of irrigation as a function of user-speciﬁed criteria. The
+ﬁve irrigation criteria are rained, irrigation supplied as input data, ir-
+rigation at critical ponded soil water depth, irrigation at critical soil-
+water tension, irrigation at critical soil water content and irrigation at X
+days after disappearance of ponded water.
+
+transpiration,
+
+2.4. Crop model simulation
+
+To assess the impacts of climate change on rice production and
+water consumption and explore the potential adaptability, we ﬁrst
+conducted the simulation for baseline (1981–2010) and three future
+periods (2011–2040, 2041–2070, and 2071–2100) under current
+sowing date. Subsequently, from 2011 to 2100, the simulation was
+carried out for planting dates at one-day intervals across a wide range of
+
+4
+
+windows. The detailed information about current sowing date and
+growth duration for each site can be found in Figure S1. The sowing
+window for late rice was set to start from 150 Julian days of the year,
+because late rice is widely recognized as sowing after May (Huang
+et al., 2017). To consider the eﬀects of CO2 fertilization, the CO2 con-
+centration for future three stages were set as 449, 541 and 850 ppm,
+respectively. Besides, as nearly 95% of China rice production area is
+fully irrigated and fertilized, all of the simulations in this study were
+performed without any limitation on water and nitrogen. When com-
+puting region-wide aggregate statistics, the rice sites were weighted
+based on the rice production in the region (these weights are shown in
+Figure S2).
+
+Soil data is highly related to deep percolation, a key element in
+water balance processes. However, for the following three reasons, soil
+data for all rice sites were set as default and daily soil percolation for
+each site was set as ﬁxed value provided by a national-scale in-
+vestigation (Chen et al., 1995). Firstly, unlike upland crops, soil per-
+colation in paddy ﬁeld is also highly related to non-soil type factors
+such as groundwater level, spacing of drainage ditches, and drainage
+depth. As a result, it is almost impossible to output an accurate per-
+colation value by point-based crop model. Secondly, considering the
+great diﬀerences in soil properties in diﬀerent regions, the large-scale
+investigation percolation values are more representative than point-
+scale simulation. Thirdly, as paddy ﬁeld is always maintained with a
+certain depth of water, the percolation is almost constant during rice
+growing period. The ﬁxed percolation value for each site can be found
+in Figure S3.
+
+Due to the large diﬀerences in climate conditions, rice varieties vary
+obviously in diﬀerent cultivation regions. For example, to adapt to the
+short growing window in northeastern China, rice life cycle in this re-
+gion is usually less than 155 days, while in the warm southwestern
+China, rice life cycle can be longer than 170 days (Figure S1). Thus, in
+order to simulate the impacts of climate change on China rice pro-
+duction more accurately, we use site-speciﬁc cultivars and not one for
+all sites. For a speciﬁc site, observed phenological and yield data from
+2002 to 2012 were divided into two groups. The data from odd years
+were used for calibration the cultivar parameters, while the rest ex-
+periment data were used for validation. Given the limitation of col-
+lected experimental data, we only adjust the most sensitive parameters
+to rice yield and water consumption such as phenology and dry matter
+distribution parameters (Luo et al., 2015), the other parameters were
+set the same as the experiment we carried out in our previous study
+(Wang et al., 2017a). This setting might bring a certain degree of un-
+certainty to the simulation results. Nevertheless, a recent study on crop
+model uncertainty showed that the uncertainty resulted from crop
+parameters is small when investigating changes in predictions and
+averaging over multiple years decreases the prediction bias by a wide
+margin (Wallach et al., 2016). With the help of two calibration
+
+Y. Ding, et al.
+
+Agricultural Water Management 228 (2020) 105890
+
+signiﬁcant change in the mean annual precipitation (Fig. 4b). The
+change of radiation was similar to that of Tmax, but with more distinct
+spatial variability. For example, in southern China, net radiation would
+increase on average of 7% during 2071–2100, while in northeastern
+China, 15% increment for the same period was found. Killing degree
+days (KDD), the sum of rice growing season maximum temperatures in
+excess of 35 °C, indicates the cumulative of heat events that might have
+adverse impacts on rice development. In the baseline period, apart from
+several sites (i.e., WX and JH) in the middle subtropical regions, most
+sites suﬀer less heat damages (KDD < 20 °C d), which is especially true
+for sites in northeastern China. In line with our study, Sun and Huang
+(2011) showed that global warming in the past 50 years did not en-
+hance high temperature stress in heading-ﬂowering stage for most
+China rice cultivation regions. However, analysis of future climate
+scenarios predicted large variations in the occurrence of heat events
+across the entire China rice cultivation region, ranging from locations
+still with negligible heat events (e.g., northeastern China) to locations
+with severe extreme hot days (e.g., north subtropical climate region)
+(Fig. 4d).
+
+3.2. Impacts on rice yields and NIR under current sowing date
+
+With the consideration of CO2 fertilization, weighted average yields
+(the weight of each site can be found in Figure S2) will decrease 5.1,
+7.3, and 15.1% in 2011–2040, 2041–2070 and 2071–2100, respectively
+(Fig. 5a). Among the single-rice sites, the largest yield decreases (30%)
+was found at WX in Sichuan Basin, which could be explained by the
+most severe heat damage it would experience (Fig. 4d). Compared to
+single rice, the mean yield losses for early rice were small, with the
+largest yield reduction of 14% occurring at JH during 2071–2100.
+Noticeably, slight yield increases were observed at three late rice sites
+(i.e., GY, GP and ZZ) and one single rice site (i.e., ZH) in 2011–2040
+and 2041–2070.
+
+Projected NIR for most sites would continue to increase in three
+future stages, but dramatically decreased NIR was also found (Fig. 5c).
+For single rice in northeastern China and Yunnan-Guizhou Plateau, NIR
+would decrease by up to 31% with the dramatically shortened rice
+growth duration, but at the rest single-rice sites, NIR would increase by
+up to 49%. For early rice, although the growth duration was shortened,
+NIR showed an obviously increasing trend with the value ranging from
+21% to 71% in 2070–2100 period. Similar to that of early rice sites,
+increased NIR was observed across all late rice sites, while the in-
+creasing magnitude was relatively small (less than 19%).
+
+3.3. Changes in yield and NIR under optimized sowing date
+
+When the sowing date was shifted from current to the optimized
+date, yields increased notably for all sites in both near and long-term
+climates periods (Fig. 5a), especially for single rice in subtropical re-
+gions (i.e., JZ, GS, MY, WX), where the yield increase was even higher
+than 40%. While the yield increases in northeastern China (i.e., HL, TH)
+was small (less than 10%), resulting in that the optimized yield in this
+region was still lower than that over the baseline period. Similar to most
+single rice sites, early rice sites also showed dramatically yield increase
+under the optimized sowing date (up to 31%). However, the increase of
+yield for late rice was much smaller across most sites, among which the
+largest increase (11%) was observed at Zhangzhou (ZZ) in 2011–2040.
+In general, apart from northeastern China, shifting sowing date could
+eﬀectively mitigate the negative impacts of climate change on China
+rice yield.
+
+Under optimized sowing date, the increase to average NIR will be
+raised from 7.8, 6.3, and 10.9% to 17.8, 20.6, and 23.4% in 2011–2040,
+2041–2070, and 2071–2100, respectively (Fig. 5c). For most sites,
+shifted sowing date prolonged crop water consumption time, reduced
+the synchronization of the key rice water consumption stage and pre-
+cipitation period, resulting in a large increase in NIR (Fig. 5b and c).
+
+Fig. 3. Test of ORYZA v3 model for rice growth period duration (a) and yield
+(b) of single, early, and late rice at 21 sites. The observed maturity dates and
+yield data were extracted from China Meteorological Administration. The da-
+shed lines correspond to the 1:1 line. The insert indicates the RMSE for rice
+yield and the length rice growth duration.
+
+programs DRATES and PARAM that are built in the ORYZA, we cali-
+brated rice genetic parameters at each site. Then, the calibrated model
+was driven with observed meteorology data from the even years to si-
+mulate crop yields and GPDs for validation. Fig. 3 showed the valida-
+tion results of rice growth duration and yield at 21 sites. Simulated
+yield and growth duration for three types of rice are mostly in agree-
+ment with observational data from China Meteorological Administra-
+tion. Deviations exist at some sites because experimental data are ob-
+tained with assumptions of no weeds, pests or other limiting factors.
+
+3. Results
+
+3.1. Projected climate change
+
+Warming is roughly equal across the sites during rice growing
+season, although the mean temperature of
+the baselined period
+(1981–2010) varied largely among diﬀerent regions. The average daily
+minimum temperatures (Tmax) over growing season for all sites were
+projected to increase by 0.8 °C in 2011–2040, 2.3 °C in 2041–2070, and
+4.6 °C in 2071–2100 (Fig. 4a). By contrast, the directions of changes in
+projected growing season precipitation were less clear, but there was no
+
+5
+
+Y. Ding, et al.
+
+Agricultural Water Management 228 (2020) 105890
+
+Fig. 4. Projected changes in averaged daily maximum temperature (Tmax), cumulative precipitation (Precip), global solar radiation, and killing degree days (KDD)
+for single, early, and late rice. The boxplot shows the variation of climate variables based on the ensemble of the four GCMs used in this study. The black lines with
+red dots indicate the mean values of climate factors for each site during the baseline period (1981–2010). (For interpretation of the references to colour in this ﬁgure
+legend, the reader is referred to the web version of this article.)
+
+Nevertheless, for several late rice sites (e.g., ZZ and GY), the NIR will be
+reduced to a certain degree because of the shortened rice growth
+durations.
+
+3.4. The optimized sowing dates and sowing time windows
+
+The optimal sowing date refers to the breeding date that rice yield
+could be maximized. Considering that rice breeding could be inﬂuenced
+by non-meteorological factors such as rotation with other crops or short
+of irrigation water resources, we also analyzed the potential sowing
+time windows to allow farmers sowing with more ﬂexibilities. The
+possible sowing windows were deﬁned as a group of planting dates that
+the corresponding yields are high than 90% of the maximum yield (see
+the examples in Figure S4).
+
+The optimal sowing date would continue to advance up to 13, 32,
+and 37 days for 2011–2040, 2041–2070, and 2071–2100, respectively,
+at the four northeastern sites, where an early sowing date would pro-
+vide relatively cold environment to slow down rice development rate to
+help dry matter accumulation (Fig. 6). While for the remaining single
+rice sites, to avoid the heat stress during key rice growing periods,
+sowing earlier or later was feasible (Fig. 6a). In case of early rice, the
+optimal sowing dates would be on average 15 days earlier in
+2011–2040, 23 days in 2041–2070, and 28 days in 2071–2100
+(Fig. 6b). However, the shift directions for late rice sites were not
+uniform, and the shift days were much shorter than the other two types
+of rice, especially at GY site, where the optimal sowing date would only
+be 5 days earlier in both 2041–2070 and 2071–2100 periods (Fig. 6c).
+The start date of the potential sowing windows would be earlier at
+all single and early rice sites, but the lengths of these windows were
+much more complicated. In general, with temperature increasing, more
+dates are warm enough for rice growth. This is true for single rice in
+northeastern China, but it is too hot for rice ﬂowering and heading in
+southern China in summer. Rice sowing windows in this region are thus
+divided into two separate narrow periods (Fig. 6a). For early rice, both
+the start and end days of the possible sowing windows are earlier, re-
+sulting in wider sowing windows for farmers (Fig. 6b). For late rice, the
+possible sowing windows started from Julian day of 150 but ended later
+with temperature increasing (Fig. 6c).
+
+4. Discussion
+
+Climate change will inevitably challenge the future production and
+water resource utilization of rice (IPCC, 2007; Piao et al., 2010; Wang
+et al., 2017a). Given the special rice production situation in China,
+shifting sowing date is anticipated to have an important role in miti-
+gating the challenges of climate change on crop production (Lobell
+et al., 2015; Waongo et al., 2015). By using bias-corrected climate
+projections from multiple GCMs and the well-tested ORYZA v3 crop
+model, we explicitly assessed the impacts of climate change on growth
+duration, yield and net irrigation water requirement (NIR) of rice across
+China. This study for the ﬁrst time evaluated the extent to which
+shifting sowing date could mitigate the negative eﬀects of climate
+change on rice yield. We also investigated how NIR would change along
+with the shifted sowing date.
+
+4.1. Climate change is predicted to aﬀect China rice production and water
+utilization diﬀerently depending on the region
+
+In temperate regions (e.g., northeastern China), in spite of the ex-
+tended crop growth windows under the increasing temperature (Tao
+et al., 2008; Wang et al., 2012), rice growth duration was anticipated to
+decease for more than 30 days at the end of this century (Fig. 5). Along
+with the shortened growth duration, rice yields in these regions were
+reduced by up to 19%, as shortened rice life cycle dramatically reduced
+the available time for rice to acquire radiation, CO2 and nutrients for
+biomass accumulation (Dennett, 1999; Springate and Kover, 2014).
+Other modelling studies also predicated the similar shortened growth
+duration for crops (Shen et al., 2011; Wang et al., 2014). For instance, a
+recent study showed that Australia wheat life cycle would anticipated
+to shorten by up to 42 days at 2050 (Zheng et al., 2012). Generally, this
+is a typical form of crop yield loss; most climate change related yield
+loss around the world could be explained by the shortened growth
+duration (Tao et al., 2008; Shen et al., 2011; Zhao et al., 2015). How-
+ever, it should be noticed that although the magnitude of rice yield loss
+in subtropical regions was like that in temperate regions, rice growth
+duration was almost unchanged or even prolonged by up to 12 days at
+some sites (Fig. 5). This seems to be inconsistent with most previous
+modeling studies in this region (e.g., Shen et al., 2011; Wang et al.,
+
+6
+
+Y. Ding, et al.
+
+Agricultural Water Management 228 (2020) 105890
+
+Fig. 5. Simulated yield, irrigation water requirement (NIR), and growth period duration (GPD) at current (red triangle) and optimum sowing dates (box plots) for
+each site. (For interpretation of the references to colour in this ﬁgure legend, the reader is referred to the web version of this article.)
+
+2014). In fact, crop development rate would not accelerate con-
+tinuously with temperature increase (Lu et al., 2008; Zhao et al., 2007),
+which is especially true for rice in subtropical regions, as the growing
+season temperature is close to or even exceeds the optimal development
+temperature during the baseline period (Fig. 4). Thus, yield loss for
+
+single rice in subtropical regions could be largely attributed to the
+dramatically increased heat events that occurred in the key rice growth
+stages (Fig. 4 and Fig. 7). It also needs to be noticed that although the
+average growing season temperature of late rice sites in south sub-
+tropical regions (i.e., Zhangzhou, Gaoyao and Guiping) was obviously
+
+7
+
+Y. Ding, et al.
+
+Agricultural Water Management 228 (2020) 105890
+
+Fig. 6. Target sowing time windows (colored rectangles) and optimum sowing date (red triangles) for single, early, and late rice for future three stages under the
+RCP8.5 scenarios. (For interpretation of the references to colour in this ﬁgure legend, the reader is referred to the web version of this article.)
+
+higher than in other regions (Fig. 4), the yield of late rice in this region
+would increase by up to 10% (Fig. 5). A reasonable explanation is that
+the high temperature here slowed the rice development rate, resulting
+in a longer growth duration for biomass accumulation. Meanwhile, the
+late sowing date made the key rice-growing period avoid the extreme
+heat damage (Fig. 7).
+
+The projected changes in net irrigation water requirement (NIR)
+diﬀered notably across the diﬀerent climate regions (Fig. 5), especially
+between temperate regions and subtropical regions, which was due to
+the large variations in the changes of growth duration. Warming
+shortened single rice growth duration more than 30 days in temperate
+regions, but much less so for rice in other regions. The shortened
+growth duration results in less time for rice to consume water by eva-
+potranspiration. Therefore, although the elevated temperature and
+solar radiation could increase crop evapotranspiration rate, the notably
+shortened growth duration well explained the slightly reduced NIR for
+rice in temperate regions (Fig. 5). By contrast, under combined eﬀects
+of prolonged rice life cycle, increased temperature and solar radiation,
+NIR in subtropical regions (e.g., Sichuan Basin and Middle-lower
+Yangtze River Basin) showed a prominent increase. In line with our
+study, other NIR projection studies also anticipated the increased water
+consumption in subtropical regions (Ye et al., 2015; Zhu et al., 2015).
+However, as they assumed the ﬁxed rice growth duration, the projected
+NIR in those studies was diﬀerent from the results presents here. Thus,
+the vital eﬀect of rice growth length on irrigation water requirement
+implies that phenology simulation is essential in investigating crop
+water consumption (Wriedt et al., 2009; Zhao et al., 2015).
+
+optimized sowing date, rice yield was projected to increase (Fig. 5a).
+However, rice NIR would also increase dramatically under the opti-
+mized sowing date, especially for single-rice sites in northeastern China
+(Fig. 5c). This should be attributed to the following two reasons. First,
+rice growth duration was prolonged at most sites, which resulted in
+more time for rice to consume water by evapotranspiration. Second,
+shifted sowing date also reduced the synchronization of the rice key
+water consumption stage and precipitation period at most sites, leading
+to a large increase in NIR (see examples in Fig. 7). However, it should
+be noticed that shifting sowing date could only partly compensate the
+negative eﬀects on rice yield in northeastern China. More adaptation
+strategies are thus necessary to employ. Fortunately, the response me-
+chanism of rice yield to warming allows using new rice variety to adapt
+to climate change (Liu et al., 2012; Li et al., 2016; Zhang et al., 2017).
+For single rice in northeastern China and Yunnan-Guizhou plateau,
+although the earlier sowing date slowed down the development rate,
+rice growth duration would still be shorter (on average of 12 days) than
+that in the baseline period. Thus, given the negligible heat stress
+(Fig. 7a), longer maturity variety should be adopted. In line with our
+study, a recent study showed that in the past 30 years, rice growth
+duration in northeastern China has increased for more than 5 days with
+the rising temperature, meaning that famers have begun to use longer
+maturity variety in the practice to compensate the negative impacts of
+climate change on rice yield (Tao et al., 2013). For rice in other regions,
+using heat tolerant or shorter maturity variety is imperative, as the
+severe heat stress in booting and heading stages cannot be totally
+avoided by shifting sowing date (Fig. 7b and c).
+
+4.2. Adaptation of China rice production to climate change
+
+4.3. Uncertainty and limitation
+
+Warming shortens rice growth duration in northeastern China and
+increases heat stress in other regions (Figs. 4 and 5). Altering sowing
+date is considered as a useful strategy to slow down development rate
+and avoid heat damage (Zheng et al., 2012). In this study, under the
+
+The projected impacts of heat stress on rice yield highly depend on
+the parameterization of rice spikelet fertility response to temperature.
+However, as limited by experiment data, our study and almost all
+previous studies (i.e., Shen et al., 2011; Wang et al., 2014, 2017a; Tao
+
+8
+
+Y. Ding, et al.
+
+Agricultural Water Management 228 (2020) 105890
+
+study showed that American maize yield in regions with higher tem-
+perature are less sensitive to heat stress (Butler and Huybers, 2013),
+indicating that famers have begun to adapt to heat damage in practice,
+but to what extent do crops adapt to the heat stress is still not clear,
+which is beyond the scope of this study. Thus, it is necessary to obtain
+more robust results of climate change impacts based on the accurate
+parameterization of rice spikelet fertility response to temperature in
+future study. However, only few previous experiments have focused on
+the heat resistance of diﬀerent rice varieties. Although some studies
+have begun to test the response of the heat resistance of local rice
+varieties to high temperatures (e.g., Li et al., 2014; Cheabu et al., 2019;
+Wang et al., 2019), most of them only tested regional varieties. This
+suggests that more comprehensive temperature control experiments
+should be conducted to estimate the current heat resistance range of
+rice in China. Apart from the uncertainty of heat tolerance parameter,
+an experimental study suggested that rice development rate does not
+reduce as quickly at higher temperature as we expected previously (van
+Oort et al., 2011). This might underestimate the yield loss for all three
+types of rice in subtropical regions, as growth duration would not in-
+crease that much compared with our results. It also should be noticed
+that although ORYZA v3 is the most widely used rice model, the eﬀects
+of CO2 concentration on crop transpiration was not considered
+(Bouman et al., 2001). NIR would thus undoubtedly be overestimated,
+since rice leaf transpiration rate would be reduced under elevated CO2
+(Bunce, 2014). Environment-control experiments showed that the re-
+duction of rice evaporation rate under high CO2 concentration
+(640 ppm) varied largely among diﬀerent varieties, ranging from 4 to
+25 % (Lin et al., 1996). Although some crop models (i.e., CERES-Rice)
+have already taken the eﬀects of CO2 concentration on rice evaporation
+into consideration, these environment experiments are necessary to
+improve the model simulation of the variety-speciﬁc response of crop
+transpiration rate to elevated CO2 concentration.
+
+Several other limitations and uncertainties of our study are worth
+pointing out here. First, rice irrigation was simulated under the scenario
+of full irrigation. In reality, water-saving technologies (i.e., control ir-
+rigation, wetting-and-drying and continuous soil saturation) have been
+developed and applied to replace full irrigation (Tabbal et al., 2002).
+These technologies not only dramatically increased water productivity,
+but also reduced irrigation frequency (Belder et al., 2004). Thus, pro-
+moting water-saving irrigation patterns should be a feasible adaption
+strategy to meet the shortage of irrigation water resources. Second, the
+impacts of altering sowing date on crop the rotation system was ig-
+nored. In China, apart from northeastern plain, rice-wheat and rice-
+oilseed rape rotation system dominated agricultural production in
+single rice regions (Cheng et al., 2013; Bai et al., 2016). Altering rice
+sowing date may thus occupy the normal growth windows of wheat or
+oilseed rape, thereby going against the total output of the agricultural
+production system. Finally, this study only applied one crop model in
+the projection of rice yield and NIR, while the simulation results varied
+largely across models (Asseng et al., 2013; Wallach et al., 2018). Re-
+cently, several studies carried out by Agricultural Model
+Inter-
+comparison and Improvement Project (AgMIP) have suggested that
+using model ensembles for simulating the impact of climate change on
+crop yields oﬀers the opportunity to acquire more reliable results
+(Asseng et al., 2013; Bassu et al., 2014; Li et al., 2015). More robust
+multiple models’ analysis through international collaborations should
+be conducted in the future.
+
+5. Conclusion
+
+Shifting sowing date is considered as a useful strategy in dealing
+with the impacts of climate change on Chinese paddy rice production.
+In this study, we explored if shifting sowing dates will compensate the
+reduction of rice yield during 2011–2100, and if more irrigation will be
+needed to meet the water requirement for rice growth. We found that
+under the eﬀects of global warming and elevated consideration of CO2
+
+Fig. 7. Five days average precipitation (pale-yellow shadow) and KDD (pale-
+green shadow), as well as average rice growth process (colored rectangles)
+under current and optimized sowing dates during 2071–2100. Meihe (MH) is a
+single rice site located in in northeastern China with a temperate climate,
+Jinzhou (JZ) is also a single rice site located in the Middle-lower Yangtze River
+Basin with subtropical climate, while Changsha (CS) is a double rice site with
+subtropical climate. (For interpretation of the references to colour in this ﬁgure
+legend, the reader is referred to the web version of this article.)
+
+et al., 2008, 2013; Zhao et al., 2016) assumed that the heat tolerance
+parameter did not vary across the whole study regions and was set as
+default (Fig. 2). Thus, losses of rice yield from heat stress are almost
+certainly overestimated, which is especially true for single rice in sub-
+tropical regions, where some varieties have been found to have stronger
+heat resistance (Cao et al., 2008; Fu et al., 2012). Similarly, a statistical
+
+9
+
+Y. Ding, et al.
+
+Agricultural Water Management 228 (2020) 105890
+
+eﬀects, future rice yield would continue to decrease while irrigation
+water requirement (NIR) would increase dramatically. Yield losses for
+rice in temperate regions (northeastern China and Yunan-Guizhou
+Plateau) were mainly caused by the sharply shortened growth duration,
+while the losses in the other regions were mostly derived from the
+substantial heat stress. To maximize rice yield, the sowing date of single
+and early rice at most sites should be earlier than the current dates.
+However, in regions with sever heat stress such as Yangtze River Basin,
+postponed sowing date was a more appropriate choice to avoid ﬂow-
+ering period occurring in the extreme hot days. Apart from northeastern
+China, the suitable sowing date could improve rice yield dramatically
+and completely compensate the yield losses due to the severe heat
+events. Meanwhile, NIR would further increase under the optimized
+sowing date without exception. To better compensate the negative ef-
+fects of climate change on rice yield and improve the utilization of
+precipitation, breeding longer season varieties in northeastern China
+and heat tolerant varieties in subtropical regions would be the best
+adaptation strategies. The results are of great importance not only for
+food security, but also for the sustainable utilization of water resources.
+
+Declaration of Competing Interest
+
+None.
+
+Acknowledgements
+
+This work was jointly supported by the National Science Foundation
+of China (51779073; 51979071), the Distinguished Young Fund Project
+of Jiangsu Natural Science Foundation (BK20180021), the National
+“Ten Thousand Program” Youth Talent and the Six talent peaks project
+in Jiangsu Province, the Postgraduate Research & Practice Innovation
+Program of Jiangsu Province. Thanks to the National Meteorological
+Information Center, China Meteorological Administration (http://data.
+cma.gov.cn/) for oﬀering the meteorological data and also thanks to the
+Working Group of the World Climate Research Program on Coupled
+Modeling, which is responsible for CMIP5. The study was also logisti-
+cally supported by Purdue University. Cordial thanks are also extended
+to the editor and two anonymous referees for their valuable comments.
+
+Appendix A. Supplementary data
+
+Supplementary material related to this article can be found, in the
+
+online version, at doi:https://doi.org/10.1016/j.agwat.2019.105890.
+
+References
+
+Allen, R., Pereira, L., Raes, D., Smith, M., 1998. Crop Evapotranspiration Guidelines for
+
+Computing Crop Water Requirements-irrigation and Drainage Paper 56. Food and
+Agriculture Organization of the United Station, Rome, Italy.
+
+Asseng, S., Ewert, F., Rosenzweig, C., et al., 2013. Uncertainty in simulating wheat yields
+
+under climate change. Nat. Clim. Change 3 (9), 827–832.
+
+Bai, H., Tao, F., Xiao, D., et al., 2016. Attribution of yield change for rice-wheat rotation
+system in China to climate change, cultivars and agronomic management in the past
+three decades. Clim. Change 135 (3-4), 539–553.
+
+Bassu, S., Brisson, N., Durand, J.L., et al., 2014. How do various maize crop models vary
+
+in their responses to climate change factors? Glob. Change Biol. 20, 2301–2320.
+
+Belder, P., Bouman, B.A.M., Cabangon, R., et al., 2004. Eﬀect of water-saving irrigation
+on rice yield and water use in typical lowland conditions in Asia. Agric. Water Manag.
+65 (3), 193–210.
+
+Boote, K.J., Jones, J.W., Pickering, N.B., 1996. Potential uses and limitations of crop
+
+models. Agron. J. 88 (5), 704–716.
+
+Bouman, B.A.M., Kropﬀ, M.J., Tuong, T.P., Wopereis, M.C.S., ten Berge, H.F.M., van Laar,
+
+H.H., 2001. ORYZA2000: Modeling Lowland Rice. International Rice Research
+Institute, Wageningen University and Research Centre, Los Baños, Philippines
+Wageningen, The Netherlands.
+
+Bouman, B.A.M., Feng, L., Tuong, T.P., et al., 2007. Exploring options to grow rice using
+less water in northern China using a modelling approach : II. Quantifying yield, water
+balance components, and water productivity. Agric. Water Manag. 88 (1-3), 23–33.
+Bunce, J.A., 2014. Limitations to soybean photosynthesis at elevated carbon dioxide in
+free-air enrichment and open top chamber systems. Plant Sci.: Int. J. Exp. Plant Biol.
+226, 131–135.
+
+Butler, E.E., Huybers, P., 2013. Adaptation of US maize to temperature variations. Nat.
+
+Clim. Change 3 (1), 68–72.
+
+Cao, X., Wu, M., Guo, X., et al., 2017. Assessing water scarcity in agricultural production
+system based on the generalized water resources and water footprint framework. Sci.
+Total Environ. 609, 587–597.
+
+Cao, Y.Y., Duan, H., Yang, L.N., et al., 2008. Eﬀect of heat stress during meiosis on grain
+
+yield of rice cultivars diﬀering in heat tolerance and its physiological mechanism.
+Acta Agron. Sin. 34 (12), 2134–2142.
+
+Challinor, A.J., Koehler, A.K., Ramirezvillegas, J., et al., 2016. Current warming will
+
+reduce yields unless maize breeding and seed systems adapt immediately. Nat. Clim.
+Change 6 (10).
+
+Challinor, A.J., Watson, J., Lobell, D.B., et al., 2014. A meta-analysis of crop yield under
+
+climate change and adaptation. Nat. Clim. Change 4 (4), 287–291.
+
+Chapin III, F.S., Matson, P.A., Vitousek, P., 2011. Principles of Terrestrial Ecosystem
+
+Ecology. Springer Science & Business Media, New York, USA.
+
+Cheabu, S., Panichawong, N., Rattanametta, P., et al., 2019. Screening for spikelet fer-
+tility and validation of heat tolerance in a large rice mutant population. Rice Sci. 4,
+229–238.
+
+Chen, Y., Guo, G., Wang, G., Kang, S., Luo, H., Zhang, D., et al., 1995. Main Crop Water
+
+Requirement and Irrigation of China. Water conservancy and electric power press,
+Beijing, China, pp. 129.
+
+Cheng, H., Ren, W., Ding, L., et al., 2013. Responses of a rice–wheat rotation agroeco-
+
+system to experimental warming. Ecol. Res. 28 (6), 959–967.
+
+Chenu, K., Cooper, M., Hammer, G.L., et al., 2011. Environment characterization as an aid
+to wheat improvement: interpreting genotype-environment interactions by modelling
+water-deﬁcit patterns in North-Eastern Australia. J. Exp. Bot. 62 (6), 1743–1755.
+
+Ciais, P., Reichstein, M., Viovy, N., et al., 2005. Europe-wide reduction in primary pro-
+
+ductivity caused by the heat and drought in 2003. Nature 437 (7058), 529–533.
+
+Dennett, M.D., 1999. Eﬀects of sowing date and the determination of optimum sowing
+date. In: Satorre, E.H., Slafer, G.A. (Eds.), Wheat Ecology and Physiology of Yield
+Determination. Food Products Press, New York, USA, pp. 123–140.
+
+Deryng, D., Elliott, J., Folberth, C., et al., 2016. Regional disparities in the beneﬁcial
+
+eﬀects of rising CO2 concentrations on crop water productivity. Nat. Clim. Change
+6 (8).
+
+Ding, Y., Wang, W., Song, R., et al., 2017. Modeling spatial and temporal variability of the
+
+impact of climate change on rice irrigation water requirements in the middle and
+lower reaches of the Yangtze River, China. Agric. Water Manag. 193, 89–101.
+
+Elliott, J., Deryng, D., Muller, et al., 2014. Constraints and potentials of future irrigation
+water availability on agricultural production under climate change. Proc. Natl. Acad.
+Sci. U. S. A. 111 (9), 3239–3244.
+
+Food and Agriculture Organization of the United Nations, 2018. FAOSTAT, in
+
+Agricultural Producer Price Indices. FAO, Rome.
+
+Fu, G., Jian, S., Jie, X., et al., 2012. Thermal resistance of common rice maintainer and
+restorer lines to high temperature during ﬂowering and early grain ﬁlling stages. Rice
+Sci. 19 (4), 309–314.
+
+Fuller, M.P., Fuller, A.M., Kaniouras, S., et al., 2007. The freezing characteristics of wheat
+
+at ear emergence. Eur. J. Agron. 26 (4), 435–441.
+
+Gao, L.Z., Jin, Z.Q., Huang, Y., Zhang, L.Z., 1992. Rice clock model: a computer model to
+
+simulate rice development. Agric. For. Meteorol. 60, 1–16.
+
+Gao, M.J., Luo, Q.Y., 2008. Study on cropping structure optimization in region short of
+
+water—a case study of north China. J. Nat. Resour. 23 (2), 204–210.
+
+Godfray, H.C.J., Beddington, J.R., Crute, I.R., et al., 2010. Food security: the challenge of
+
+feeding 9 billion people. Science 327 (5967), 812.
+
+Guo, S., Guo, J., Hou, Y., Xiong, L., Hong, X., 2015. Prediction of future runoﬀ change
+based on Budyko hypothesis in Yangtze River basin. Adv. Water Sci. 26, 151–160.
+
+Hawkins, E., Osborne, T.M., Ho, C.K., et al., 2013. Calibration and bias correction of
+
+climate projections for crop modelling: an idealised case study over Europe. Agric.
+For. Meteorol. 170 (6), 19–31.
+
+Horie, T., Yajima, M., Nakagawa, H., 1992. Yield forecasting. Agric. Syst. 40, 211–236.
+Hu, K., Xie, S.P., Huang, G., et al., 2017. Orographically-anchored El Niño eﬀect on
+
+summer rainfall in central China. J. Clim. 30 (24), 10037–10045.
+
+Huang, M., Shan, S., Zhou, X., et al., 2017. Agronomic performance of late-season rice in
+
+South China. Plant Prod. Sci. 21 (1), 1–7.
+
+IPCC, 2007. Summary for policymakers, In Climate Change 2007: The Physical Science
+
+Basis, Contribution of Working Group I to the Fourth Assessment Report of the
+Intergovernmental Panel on Climate Change. Cambridge Univ. Press, Cambridge,
+U.K. and New York.
+
+Jin, Z., Zhuang, Q., Wang, J., et al., 2017. The combined and separate impacts of climate
+extremes on the current and future US rainfed maize and soybean production under
+elevated CO2. Glob. Change Biol. 23 (7), 2687–2704.
+
+Karim, M.R., Ishikawa, M., Ikeda, M., Islam, M.T., 2012. Climate change model predicts
+33% rice yield decrease in 2100 in Bangladesh. Agron. Sustain. Dev. 32, 821–830.
+Keating, B.A., Carberry, P.S., Hammer, G.L., et al., 2003. An overview of APSIM, a model
+
+designed for farming systems simulation. Eur. J. Agron. 18 (3), 267–288.
+
+Li, H., Sheﬃeld, J., Wood, E.F., 2010. Bias correction of monthly precipitation and
+
+temperature ﬁelds from Intergovernmental Panel on Climate Change AR4 models
+using equidistant quantile matching. J. Geophys. Res. 115, D10101.
+
+Li, M., Liao, J., Zhang, X., et al., 2014. Evaluation of heat tolerance at the heading-
+
+ﬂowering stages for early season rice varieties in Jiangxi Province. J. Plant Genet.
+Resour. 15 (5), 919–925.
+
+Li, T., Angeles, O., Manalo, E., et al., 2017. From ORYZA2000 to ORYZA (v3): an im-
+proved simulation model for rice in drought and nitrogen-deﬁcient environments.
+Agric. For. Meteorol. 237–238, 246–256.
+
+Li, T., Hasegawa, T., Yin, X., et al., 2015. Uncertainties in predicting rice yield by current
+
+crop models under a wide range of climatic conditions. Glob. Change Biol. 21 (3),
+1328–1341.
+
+10
+
+Y. Ding, et al.
+
+Agricultural Water Management 228 (2020) 105890
+
+van Oort, P.A.J., Zhang, T., de Vries, M.E., Heinemann, A.B., Meinke, H., 2011.
+
+Correlation between temperature and phenology prediction error in rice (Oryza sa-
+tiva L.). Agric. For. Meteorol. 151, 1545–1555.
+
+Wallach, D., Martre, P., Liu, B., et al., 2018. Multi-model ensembles improve predictions
+
+of crop-environment-management interactions. Glob. Change Biol. 24 (11),
+5072–5083.
+
+Wallach, D., Nissanka, S., Karunaratne, A., et al., 2016. Accounting for both parameter
+and model structure uncertainty in crop model predictions of phenology: a case study
+on rice. Eur. J. Agron. 88, 53–62.
+
+Wang, J., Li, Y., Huang, J., et al., 2017b. Growing water scarcity, food security and
+
+government responses in China. Glob. Food Sec. 14, 9–17.
+
+Wang, L., Chen, W., 2013. Equiratio cumulative distribution function matching as an
+
+improvement to the equidistant approach in bias correction of precipitation. Atmos.
+Sci. Lett. 15, 1–6.
+
+Wang, M., Li, X., Liu, X., 2012. Potential of agricultural climatic productivity and re-
+
+quirement rate of climatic resources in northeastern China. Soil Crop 1, 27–33.
+
+Wang, Q., Chen, L., Zhang, X., et al., 2019. Evaluation of heat tolerance at the ﬂowering
+
+stage for high quality rice in southern China. China Rice 25 (3), 80–82.
+
+Wang, W., Ding, Y., Shao, Q., et al., 2017a. Bayesian multi-model projection of irrigation
+requirement and water use eﬃciency in three typical rice plantation region of China
+based on CMIP5. Agric. For. Meteorol. 232, 89–105.
+
+Wang, W., Shao, Q., Yang, T., 2013. Quantitative assessment of the impact of climate
+
+variability and human activities on runoﬀ changes: A case study in four catchments of
+the Haihe River Basin, China. Hydrol. Process. 27 (8), 1158–1174.
+
+Wang, W., Yu, Z., Zhang, W., et al., 2014. Responses of rice yield, irrigation water re-
+
+quirement and water use eﬃciency to climate change in China: historical simulation
+and future projections. Agric. Water Manag. 146, 249–261.
+
+Waongo, M., Laux, P., Kunstmann, H., 2015. Adaptation to climate change: the impacts of
+
+optimized planting dates on attainable maize yields under rainfed conditions in
+Burkina Faso. Agric. For. Meteorol. 205, 23–39.
+
+Wriedt, G., Van Der Velde, M., Aloe, A., Bouraoui, F., 2009. Estimating irrigation water
+
+requirements in Europe. J. Hydrol. 373, 527–544.
+
+Xiao, J., Liu, T., Lin, H., et al., 2018. Weather variables and the El Niño Southern
+
+Oscillation may drive the epidemics of dengue in Guangdong Province, China. Sci.
+Total Environ. 624, 926–934.
+
+Xing, W., Wang, W., Shao, Q., Peng, S., Yu, Z., Yong, B., Taylor, J., 2014. Changes of
+
+reference evapotranspiration in the Haihe River Basin: present observations and fu-
+ture projection from climatic variables through multi-model ensemble. Global Planet
+Change 115, 1–15. https://doi.org/10.1016/j.gloplacha.2014.01.004.
+
+Xiong, W., Conway, D., Lin, E., Xu, Y., Ju, H., Jiang, J., Holman, I., Li, Y., 2009. Future
+cereal production in China: the interaction of climate change, water availability and
+socio-economic scenarios. Glob. Environ. Change 19 (1), 34–44.
+
+Xu, C., Wu, W., Ge, Q., et al., 2015. Simulating climate change impacts and potential
+adaptations on rice yields in the Sichuan Basin, China. Mitigat. Adapt. Strat. Glob.
+Change 22 (4), 1–30.
+
+Yao, F., Xu, Y., Lin, E., Yokozawa, M., Zhang, J., 2007. Assessing the impacts of rice yields
+
+in the main rice areas of China. Clim. Change 80, 395–409.
+
+Ye, Q., Yang, X., Dai, S., Chen, G., Li, Y., Zhang, C., 2015. Eﬀects of climate change on
+
+suitable rice cropping areas, cropping systems and crop water requirements in
+southern China. Agric. Water Manag. 159, 35–44.
+
+Yin, Y., Tang, Q., Liu, X., 2015. A multi-model analysis of change in potential yield of
+
+major crops in China under climate change. Earth Syst. Dyn. 6, 45–59.
+
+Yuan, S., Peng, S., Li, T., 2017. Evaluation and application of the ORYZA rice model under
+diﬀerent crop managements with high-yielding rice cultivars in central China. Field
+Crops Res. 212, 115–125.
+
+Zhang, B., Tian, H., Ren, W., et al., 2016. Methane emissions from global rice ﬁelds:
+
+magnitude, spatiotemporal patterns, and environmental controls. Global
+Biogeochem. Cycles 30 (9), 1246–1263.
+
+Zhang, L., Zhou, T., 2015. Drought over East Asia: a review. J. Clim. 28 (8),
+
+150203142724009.
+
+Zhang, Z., Chen, Y., Wang, C., et al., 2017. Future extreme temperature and its impact on
+
+rice yield in China. Int. J. Climatol. 37 (2), 4814–4827.
+
+Zhao, C., Piao, S., Wang, X., et al., 2016. Plausible rice yield losses under future climate
+
+warming. Nat. Plants 3 (1), 16202.
+
+Zhao, G., Webber, H., Hoﬀmann, H., et al., 2015. The implication of irrigation in climate
+change impact assessment: a European-wide study. Glob. Change Biol. 21 (11), 4031.
+Zhao, H., Yao, F., Zhang, Y., Xu, B., Yuan, J., Hu, Y., Xu, Y., 2007. Correlation analysis of
+
+rice seed setting rate and weight of 1000-Grain and agro-meteorology over the
+middle and lower reaches of the Yangtze River. Agric. Sci. China 6 (4), 430–436.
+
+Zheng, B., Chenu, K., Fernanda, D.M., et al., 2012. Breeding for the future: what are the
+potential impacts of future frost and heat events on sowing and ﬂowering time re-
+quirements for Australian bread wheat (Triticum aestivium) varieties? Glob. Change
+Biol. 18 (9), 2899.
+
+Zhu, X., Zhao, A., Li, Y., Liu, X., 2015. Agricultural irrigation requirements under future
+climate scenarios in China. J. Arid Land 7 (2), 224–237. https://doi.org/10.1007/
+s40333-014-0080-y.
+
+Li, T., Raman, A.K., Iii, M.M., et al., 2013. Simulation of genotype performances across a
+larger number of environments for rice breeding using ORYZA2000. Field Crops Res.
+149, 312–321.
+
+Li, Y., Wu, W., Ge, Q., et al., 2016. Simulating climate change impacts and adaptive
+
+measures for rice cultivation in hunan province, China. J. Appl. Meteorol. Climatol.
+55 (6), 160205104123009.
+
+Lin, W., Bai, K., Kuang, T., 1996. Eﬀects of CO2 enrichment on rice photosynthesis,
+
+transpiration and water use eﬃciency. Eco-Agric. Res. 10 (12), 2509–2519.
+
+Liu, B., Asseng, S., Müller, C., et al., 2016. Similar estimates of temperature impacts on
+
+global wheat yield by three independent methods. Nat. Clim. Change 6 (12).
+
+Liu, Z., Yang, X., Hubbard, K.G., Lin, X., 2012. Maize potential yields and yield gaps in the
+
+changing climate of Northeast China. Glob. Change Biol. 18, 3441–3454.
+
+Lobell, D.B., Hammer, G.L., Chenu, K., et al., 2015. The shifting inﬂuence of drought and
+heat stress for crops in northeast Australia. Glob. Change Biol. 21 (11), 4115–4127.
+Lobell, D.B., Burke, M.B., Tebaldi, C., et al., 2008. Prioritizing climate change adaptation
+
+needs for food security in 2030. Science 319 (5863), 607–610.
+
+Lu, P., Yu, Q., Wang, E., Liu, J., Xu, S., 2008. Eﬀects of climatic variation and warming on
+
+rice development across South China. Clim. Res. 36, 79–88.
+
+Luo, Y., Jiang, Y., Peng, S., et al., 2015. Hindcasting the eﬀects of climate change on rice
+yields, irrigation requirements, and water productivity. Paddy Water Environ. 13 (1),
+81–89.
+
+Mei, F., Wu, X., Yao, C., Li, L., Wang, L., Chen, Q., 1988. Rice cropping regionalization in
+
+China. Chin. J. Rice Sci. 2 (3), 97–110.
+
+National Bureau of Statistics of China, 2014. China Statistical Yearbook 2014. China
+
+Statistics Press, Beijing.
+
+Pazhanivelan, S., Kannan, P., Christy, P., et al., 2015. Rice crop monitoring and yield
+estimation through COSMO Skymed and TerraSAR-X: A SAR-based experience in
+India. International Symposium on Remote Sensing of Environment, XL-7/W3 (7).
+Peng, S., Tang, Q., Ying, Z., 2009. Current status and challenges of rice production in
+
+China. Plant Prod. Sci. 12 (1), 3–8.
+
+Piani, C., Weedon, G.P., Best, M., Gomes, S.M., Viterbo, P., Hagemann, S., Haerter, J.O.,
+
+2010. Statistical bias correction of global simulated daily precipitation and tem-
+perature for the application of hydrological models. J. Hydrol. 395, 199–215.
+
+Piao, S., Ciais, P., Huang, Y., et al., 2010. The impacts of climate change on water re-
+
+sources and agriculture in China. Nature 467, 43–51.
+
+Prescott, J.A., 1940. Evaporation from a water surface in relation to solar radiation.
+
+Trans. R. Soc. Sci.Australia 64, 114–115.
+
+Rurinda, J., Wijk, M.T., Mapfumo, P., et al., 2015. Climate change and maize yield in
+
+southern Africa: what can farm management do? Glob. Change Biol. 21 (12),
+4588–4601.
+
+Samani, S., Ye, M., Zhang, F., et al., 2018. Impacts of prior parameter distributions on
+
+Bayesian evaluation of groundwater model complexity. Water Sci. Eng. 11 (2),
+89–100.
+
+Setiyono, T.D., Nelson, A., Ravis, J., et al., 2012. Application of Remote Sensing in Crop
+
+Growth Simulation and an Ensembles Approach to Reduce Model Uncertainties.
+American Geophysical Union GC13B-1077.
+
+Shen, S.H., Yang, S.B., Zhao, Y.X., et al., 2011. Simulating the rice yield change in the
+middle and lower reaches of the Yangtze River under SRES B2 scenario. Acta Ecol.
+Sin. 31 (1), 40–48.
+
+Springate, D.A., Kover, P.X., 2014. Plant responses to elevated temperatures: a ﬁeld study
+on phenological sensitivity and ﬁtness responses to simulated climate warming. Glob.
+Change Biol. 20, 456–465.
+
+Sun, C., Yang, S., 2012. Persistent severe drought in southern China during winter–spring
+
+2011: Large‐scale circulation patterns and possible impacting factors. J. Geophys.
+Res. Atmos. 117 (D10).
+
+Sun, W., Huang, Y., 2011. Global warming over the period 1961–2008 did not increase
+high-temperature stress but did reduce low-temperature stress in irrigated rice across
+China. Agric. For. Meteorol. 151 (9), 1193–1201.
+
+Tabbal, D.F., Bouman, B.A.M., Bhuiyan, S.I., et al., 2002. On-farm strategies for reducing
+water input in irrigated rice; case studies in the Philippines. Agric. Water Manag. 56
+(2), 93–1121.
+
+Tan, L., Cai, Y., An, Z., et al., 2017. Decreasing monsoon precipitation in southwest China
+during the last 240 years associated with the warming of tropical ocean. Clim. Dyn.
+48 (5–6), 1–10.
+
+Tao, F., Hayashi, Y., Zhang, Z., Sakamoto, T., Yokozawa, M., 2008. Global warming, rice
+production, and water use in China: developing a probabilistic assessment. Agric. For.
+Meteorol. 148, 94–110.
+
+Tao, F., Zhang, Z., Shi, W., et al., 2013. Single rice growth period was prolonged by
+cultivars shifts, but yield was damaged by climate change during 1981–2009 in
+China, and late rice was just opposite. Glob. Change Biol. 19 (10), 3200–3209.
+
+Taub, D.R., Seemann, J.R., Coleman, J.S., 2000. Growth in elevated CO2 protects pho-
+tosynthesis against high-temperature damage. Plant Cell Environ. 23 (6), 649–656.
+Taylor, K.E., Stouﬀer, R.J., Meehl, G.A., 2012. An overview of CMIP5 and the experiment
+
+design. Bull. Am. Meteorol. Soc. 93, 485–498.
+
+Van Oijen, M., Lefelaar, P., 2008. Lintul-2: water limited crop growth: a simple general
+crop growth model for water-limited growing conditions. Plant Sciences. Wageningen
+University, The Netherlands.
+
+11
+
+

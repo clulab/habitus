@@ -1,0 +1,969 @@
+USE OF SATELLITE IMAGERY FOR ESTIMATING SOWING DATES OF 
+
+WHEAT IN UTTARANCHAL, INDIA 
+
+ 
+
+Ajeet S Nain1, K. Christian Kersebaum1 and Vinay K Dadhwal2 
+
+1Centre for Agricultural Landscape and Land Use Research 
+
+Müncheberg, Germany 
+
+2Indian Institute of Remote Sensing (IIRS) 
+
+Dehradun, India 
+
+nain_ajeet@rediffmail.com, ajeet@zalf.de  
+
+ 
+ 
+
+ 
+ 
+
+ABSTRACT 
+The information on sowing dates of crop is an important 
+step  for  the  forecast  of  the  crop  yield.  Remotely  sensed 
+data can be a valuable tool when crop models are applied 
+in a GIS environment for simulating regional behavior of 
+crop.  An  attempt  has  been  made  in  the  present  study  to 
+derive sowing information using satellite-based imageries. 
+LISS-III  (Linear  Imaging  Self-Scanning)  imageries  of 
+Indian  Remote  sensing  Satellite 
+(IRS)  containing 
+information  on  Agriculture-farm  of  GBPUA&T, 
+Pantnagar,  India,  have  been  acquired  for  the  period  of 
+1996-97  to  1999-2000.  A  spectral  profile  of  active 
+vegetative  growth  stage  of  wheat  was  generated  and 
+regressed  with  DAS  (days  after  sowing).  A  Normalized 
+Difference  Vegetation  Index  (NDVI)  based  model  was 
+developed for estimating sowing dates of wheat. The data 
+of  24  plots  were  used  for  obtaining  coefficients  for 
+exponential based model, while performance of the model 
+was tested for independent 12 plots. Analysis showed that 
+model  could  estimate  sowing  date  with  a  minimum 
+difference of 1 day and maximum difference of 24 days 
+with an average deviation of 8 days. The Standard Error 
+of the Estimate was 9.22 for the estimates made after an 
+average of 78 DAS for the all plots, while it was 10.24 in 
+the calibration period and 6.42 in the prediction period. 
+ 
+KEY WORDS 
+Modelling, Remote Sensing, Agriculture, Wheat  
+ 
+1. Introduction 
+Remote  Sensing 
+the  science  of  acquiring  and 
+interpreting  information  about  the  earth’s  environment 
+from  measurements  made  without  physical  contact  with 
+the  object  being  studied  [1].  The  vegetation  indices  are 
+specific  combinations  of  spectral  responses  in  different 
+wavelength  bands,  which  emphasize  a  particular  feature 
+of the vegetation. The vegetation indices are quantitative 
+measurements indicating the vigor of vegetation [2]. They 
+show better sensitivity than individual spectral bands for 
+the  detection  of  biomass  [3].  The  application  of  remote 
+sensing for crop identification and crop yields assessment 
+is  being  done  for  quite  long  time.  In  last  two  decades 
+
+is 
+
+432-051
+
+139
+
+remote  sensing 
+
+some  efforts  have  been  made  to  link  space  borne 
+information  with  process  oriented  dynamic  crop 
+simulation  model.  Moran  et  al.  [4]  evaluated 
+the 
+application  of 
+in  precision  crop 
+management  and  recommended  that  future  work  should 
+be  focused  on  assimilating  remotely  sensed  information 
+into  existing  decision  support  systems  (DSS).  Barnes  et 
+al.  [5]  has  listed  three  major  applications  of  remotely 
+sensed  data  for  crop  models:  a)  Aid  in  the  definition  of 
+zones  that  require  simulation  as  independent  areas;  b) 
+Provide  validation  data  on  crop  development,  canopy 
+density, and evapotranspiration; and c) Serve as a direct 
+input  to  the  model.  There  are  several  options  for 
+integration  of  remotely  sensed  data  and  crop  model 
+predictions, which include: a) Direct comparison of model 
+predictions and remotely sensed estimates [6]; b) Iterative 
+adjustment  of  the  crop  model's  genetic  parameters  and 
+initial conditions by comparing the model's predictions to 
+remotely sensed estimates of ET and LAI [7]; c) Forcing 
+the  crop  model's  predictions  to  match  remotely  sensed 
+estimates  of  actual  field  conditions  [8];  and  d)  Using 
+radiative transfer models so that satellite reflectance data 
+can  be  directly  compared  to  a  crop  model's  predictions 
+[9].  
+The  large  area  (regional)  crop  yield  estimation  requires 
+integration  of 
+in  GIS 
+(Geographical Information System) environment [10, 11, 
+& 12]. The major limitation of this procedure is the large 
+amount  of  information  needed  on  crop  distribution  and 
+management practices. Efforts have been made in the past 
+to  account  for  the  spatial  variability  in  crop  by  using 
+remote  sensing  data.  The  most  efforts  were  focused  on 
+iterative  adjustment  of 
+the  crop  models  genetic 
+parameters  and  initial  conditions  that  affect  leaf  growth 
+and senescence so that simulated LAI matches estimates 
+of LAI determined with remotely sensed observations of 
+crop canopy reflectance [13].   
+The major spatial variability in crop at any given time is 
+mainly due to the varying time of sowing. Thus, iterative 
+adjustment  of  crop  model  parameters  and 
+initial 
+conditions, some time miss the important information of 
+sowing  and  lead  to  wrong  estimates  of  crop  yield.  The 
+information  on  sowing  can  be  generated  using  remote 
+
+simulation  model 
+
+crop 
+
+sensing data by fitting a spectral profile of crop across the 
+growing  season,  which  requires  a  number  of  satellite 
+images at frequent time interval. The use of satellite based 
+data  for  generating  sowing  information  is  restricted  not 
+only  by  the  frequent  obstacle  by  cloud,  haze  etc,  which 
+hinder  /break  the  continuity  of  spectral  data  but  also 
+satellite  data  involve  huge  cost.  In  present  study  we 
+demonstrate  the  use  of  minimal  set  of  remotely  sensed 
+data for generating sowing information on regional scale.  
+ 
+2. Material and Methods 
+Farm Management Data 
+Agricultural-farm  of  Govind  Ballabh  Pant  University  of 
+Agricultural  and  Technology  (GBPUA&T),  Pantnagar, 
+US  Nagar  is  one  of  the  biggest  Agriculture-farm  under 
+single  management  in  India.  The  farm  contains  big 
+agricultural  fields  where  all  agricultural  operations  are 
+fully  mechanized  and  is  ideal  for  remote  sensing  based 
+studies.  Block-L  and  Block-C  (Seed  Production  Centre) 
+of  Agriculture  farm  were  considered  for  study  and  data 
+were acquired for the period 1996-97 to 1999-00.  
+Satellite Observations 
+Indian  Remote  Sensing  (IRS)  satellite’s  LISS-III  sensor 
+data  for  the  study  area  was  procured  from  National 
+Remote Sensing Agency (NRSA), Hyderabad for the crop 
+seasons 
+1999-00. 
+Specifications of IRS LISS-III sensor are given in Table 
+1.  
+Table 1.  IRS (1C & 1D) LISS-III sensor specifications 
+S. No.  Parameter 
+
+Specification 
+
+1996-97, 
+
+1998-99, 
+
+1997-98, 
+
+1 
+
+2 
+
+3 
+
+4 
+
+5 
+
+6 
+
+Spectral 
+bands (µm) 
+
+Ground 
+resolution 
+cell size (m) 
+Swath (km) 
+
+Quantization 
+(bits) 
+Repetivity 
+(days) 
+Band to band 
+registration 
+(pixels) 
+
+B2    0.52 – 0.59   (G) 
+B3    0.62 – 0.68   (R) 
+B4    0.77 – 0.86    (NIR) 
+B5    1.55 – 1.70    (SWIR) 
+23.5 
+70.5 
+
+B2, B3, B4 
+B5 
+
+B2, B3, B4 
+B5 
+
+142 
+148 
+7 
+
+24 
+
+± 0.25 
+
+ 
+Multi-date  IRS-1C  and  1D  satellite  images  of  wheat 
+growing  season  were  acquired.  The  details  of  the  data 
+used in the study have been given in the Table 2. These 
+images were used for estimation of vegetation indices of 
+wheat crop in each individual field on the date of satellite 
+pass.  
+
+=
+
+NIR
+NIR
+
+The  most  widely  used  vegetation  index  i.e.  Normalised 
+Difference  Vegetative  Index  developed  by  Rouse  et  al. 
+[14] has been computed as: 
+NDVI
+where : 
+NIR is reflected radiation in the near infrared range (0.77 
+– 0.86 µm) and RED is reflected radiation in the red range 
+(0.62-0.68 µm) 
+ 
+
+                                         ….[1] 
+
+RED
+RED
+
+ - 
++
+
+S. 
+No 
+
+Table2. The detail of satellite data used in the study 
+of
+
+Satellite Sensor  Path Row Date 
+Image 
+Acquisition
+
+Crop 
+Season 
+
+1.  1996-97 IRS-1C  LISS-III  98 
+
+51  Feb 21,  
+
+2.  1997-98 IRS-1D  LISS-III  98 
+
+3.  1998-99 IRS-1D  LISS-III  98 
+
+4.  1998-99 IRS-1D  LISS-III  98 
+
+5.  1999-00 IRS-1C  LISS-III  98 
+
+1997 
+
+51  Feb 20, 
+1998  
+
+51  Mar 02, 
+
+1999 
+
+51  Mar 27, 
+
+51  Mar 01, 
+
+1999 
+
+2000 
+
+= (DN / Gmax) * (Lmax – Lmin) + Lmin            ….[2] 
+
+ 
+To calculate NDVI all images were geo-referenced using 
+second  order  polynomial  warping  and  cubic  convulsion 
+(cc)  re-sampling 
+techniques.  The  farm  fields  were 
+identified  on  the  geocoded  FCC  image  with  the  help  of 
+farm map having field boundaries and major geographical 
+features  of  study  area.  The  raw  pixel  value  or  digital 
+number was converted to radiance (Rad) value using the 
+following transformation: 
+ 
+Rad 
+where, 
+Rad is radiance in mW cm-2 µm-1 sr-1 
+Gmax is maximum gray value at saturation radiance 
+Lmax is saturation radiance of the detector mW cm-2 µm-1 
+sr-1 
+Lmin is minimum radiance of the detector mW cm-2 µm-1 
+sr-1 
+ 
+The  signal  being  received  by  satellite  sensor  is  the 
+mixture  of  electromagnetic  radiation  reflected  by  object 
+and  by  atmosphere.  It  is  assumed  that  deep-water  body 
+absorbs almost all radiation falling on it. So the amount of 
+radiation received in all band by satellite sensor on deep-
+water  body  is  supposed  to  be  due  to  atmospheric 
+scattering.  The  radiance  values  of  each  band  on  water 
+body  were  subtracted  from  original  radiance  values  of 
+each pixel. 
+As images of two different sensors were used, sensor to 
+senor  calibration  for  each  band  was  applied  using 
+coefficient given by Jaishankar et al. (2001) [15]. 
+
+140
+
+Red band 
+Radiance (IRS-1D) 
+
+NIR band 
+Radiance (IRS-1D) 
+
+= Radiance (IRS-1C) * 0.99 + 
+0.126      
+           ….[3] 
+
+= Radiance (IRS-1C) * 1.04 + 
+           ….[4] 
+0.072      
+
+Model development 
+The  NDVI  values  of  initial  49  agricultural  fields  were 
+plotted  against  the  DAS  and  second  order  polynomial 
+equation  was  fitted.  The  Figure  1  showed  that  satellite 
+images taken in the month of March (the hollow circular 
+points)  force  the  curve  to  go  down  in  the  later  part  as 
+green biomass which is responsible for higher NDVI, start 
+
+that  delay 
+
+in  sowing 
+
+decreasing  with  the  end  of  February  month.  Nain  et  al. 
+[16]  have  observed 
+is  not 
+transformed  (transcript)  into  delay  in  harvesting  and 
+wheat  get  matured  almost  at  same  time  irrespective  to 
+their sowing time. When the NDVI values until February 
+(including the NDVI values of 1st and 2nd March because 
+these  values  are  very  near  to  February  months)  months 
+were  plotted 
+logarithmic 
+relationship  between  crop  age  and  NDVI.  This 
+relationship  explains  that  the  NDVI  values  tend  to  be 
+saturated  after  certain  period  when  land  is fully  covered 
+with leaves. 
+
+the  curve 
+
+represent 
+
+the 
+
+1.0
+
+0.8
+
+I
+
+V
+D
+N
+
+0.6
+
+0.4
+
+0.2
+
+y = 0.44Ln(x) - 1.1707
+
+R2 = 0.7276
+
+Polynomial curve
+
+Logarithmic curve
+
+y = -0.0001x2 + 0.0249x - 0.37
+
+R2 = 0.5278
+
+0
+
+20
+
+40
+
+60
+
+80
+
+100
+
+120
+
+140
+
+160
+
+ 
+Figure 1. Cure fitting in NDVI values. The hollow circles represent the NDVI values of March month and were omit-
+ted from the study while only rectangular squares (represent active growth period of wheat) were considered. Straight 
+
+vertical line shows that there was no NDVI value available until 30 days of the crop age.  
+
+Crop age (days)
+
+ 
+The NDVI values of 13 plots (being satellite observations 
+taken in March month) were excluded from the analysis. 
+The data of 24 plots were used for the model development 
+and model performance was verified on the independent 
+dataset  of  12  plots.  There  is  no  representation  of  early 
+growth  stages  of  wheat  (about  30  days  after  sowing), 
+which  causes  flattening  of  logarithmic  curves,  so  the 
+NDVI  values  were  regressed  with  reduced  crop  age 
+(actual crop age – 30 days). Also the NDVI generated in 
+early crop growth stage may lead to wrong estimate as in 
+early growth stage the contribution of soil reflectance in 
+total  reflected  radiation  is  more  [17].  This  step  could 
+explain  the  variation  in  NDVI  due  to  varying  date  of 
+sowing more accurately (coefficient of determination: R2 
+increases  from  0.73  to  0.80),  hence  the  performance  of 
+model is bettered (Figure 2). The logarithmic relationship 
+between NDVI and crop age (less 30 days) was: 
+NDVI = 0.242 * Ln(X - 30) - 0.1909                    ……..[5] 
+                                                 R2 = 0.7961   
+Where X is DAS (days after sowing or crop age) 
+
+The  logarithmic  relationship  was  used  to  develop  a 
+exponential model to predict the crop age on the basis of 
+NDVI 
+DAS = Exp(3.2898 * NDVI + 1.3959) + 30          .........[6] 
+In  the  equation  (6)  30  has  been  added  because  30  days 
+were  set  off  from  the  analysis  due  to  unavailability  of 
+data. 
+ 
+3. Results and Discussion 
+In  the  present  approach  the  age  of  wheat  crop  was 
+estimated  using  the  NDVI  values  derived  from  satellite 
+data  and  then  crop  age  was  backtracked  to  find  out  the 
+sowing time of wheat. The NDVI values could very well 
+represent the variability in the crop due the difference in 
+age at the time of satellite pass as it varied from 0.295 to 
+0.878  with  an  average  value  of  0.732.  The  relationship 
+between  NDVI  values  and  DAS  (days  after  sowing)  or 
+crop  age  has  been  showed  in  Figure  2.  The  logarithmic 
+model could capture about 80 percent variability in NDVI 
+values (t = 9.27, p<0.0001). 
+
+141
+
+The  difference  between  estimated  sowing  time  and 
+observed sowing time ranged from 1 to 24 days with an 
+average  difference  of  8  days.  The  standard  error  of 
+estimates  was  9.22  days  for  the  estimates  made  after  an 
+average  crop  age  of  78  days  when  all  the  plots  were 
+considered in analysis. The standard error of estimate was 
+little  higher  in  the  fitting  period  with  a  value  of  10.24 
+days  while  it  was  considerably  low  in  estimating  period 
+with a value of 6.42 days. 
+The further analysis of results showed that the year 1996-
+97 was not a good year for wheat growth as the crop age 
+is underestimated by 5 days, while the year 1997-98 was a 
+good  year 
+for  wheat  growth  as  crop  age  was 
+overestimated  by  6  days.  The  deviation  in  weather 
+conditions from  its  average may  cause  error  in  crop  age 
+estimation,  as  there  would  be  different  biomass  of  the 
+same  aged  crop  in  different  year  depending  upon  the 
+prevailing  weather  conditions.  Ritchie  et  al.  [18]  also 
+identified  prevailing  weather  conditions  as  the  primary 
+factors  of  spatial  and  temporal  variability  in  crop.
+
+Observed Crop age during satellite pass
+Estimated Crop age at satellite pass
+
+Results showed that the approach described above could 
+estimate  the  sowing  dates  with  reasonable  accuracy. 
+Figure 3 showed that during different satellite passes there 
+was large variation in crop age which varied from 41 to 
+118  days  with  an  average  age  of  78  days,  while  the 
+estimated  crop  age  varied  from  41  to  103  days  with  an 
+average age of 79 days. 
+
+I
+
+V
+D
+N
+
+1
+0.9
+0.8
+0.7
+0.6
+0.5
+0.4
+0.3
+0.2
+0.1
+0
+
+NDVI
+
+Logarithmic
+
+y = 0.242Ln(x) - 0.1909
+
+R2 = 0.7961
+
+0
+
+20
+
+40
+
+60
+
+80
+
+100
+
+Crop age in days (less 30)
+
+Figure 2. Relationship between crop age and NDVI. 
+
+ 
+
+ 
+
+)
+s
+y
+a
+d
+(
+ 
+e
+g
+a
+ 
+p
+o
+r
+C
+
+140
+
+120
+
+100
+
+80
+
+60
+
+40
+
+20
+
+0
+
+Pl-230-99
+Pl-202-99
+Pl-199-99
+Pl-201-99
+Pl-206-98
+Pl-199-98
+Pl-197-98
+Pl-202-98
+Pl-203-98
+Pl-193-98
+Pl-195-98
+Pl-194-98
+Pl-229-97
+Pl-206-97
+Pl-193-97
+Pl-203-97
+Pl-199-96
+Pl-200-96
+Pl-206-99
+Pl-200-99
+Pl-206-99
+Pl-199-99
+Pl-193-99
+Pl-203-98
+Pl-202-98
+Pl-232-98
+Pl-200-98
+Pl-230-98
+Pl-232-98
+Pl-197-97
+Pl-199-97
+Pl-202-97
+Pl-229-97
+Pl-200-97
+Pl-197-96
+Pl-203-96
+
+Plot
+
+Figure 3. Comparison of observed crop age and estimated crop age using NDVI values generated from satellite 
+
+images. 
+
+ 
+Crop cultivars also have bearing on age estimation due to 
+the varying performance of different cultivars. The age of 
+WH  series  was  over  estimated  by  3  days  while  age  of 
+PBW series was underestimated by 1 day. Which suggest 
+that  cultivars  produces  different  amount  of  biomass  at 
+same age. Soils hydro-physical properties and topography 
+[18]  of  the  field  also  play  a  great  role  in  deciding  the 
+biomass production and resulting the crop age. The crop 
+age was overestimated in the Plot-200 by an average of 6 
+days while crop age was underestimate by 7 days in Plot-
+193.    
+ 
+ 
+
+4. Conclusion 
+Obviously,  there  are  some  limitations  of  using  remote 
+sensing for crop age and/ or sowing date estimation which 
+ranges  differential  response  of  crop  cultivars  in  given 
+environmental  condition,  inter-annual  varying  weather 
+conditions  [19],  different  soils  [20]  in  different  regions 
+and  topography  [21]  of  the  region.  In  addition  to  that, 
+influence  of  management  practices  [19],  and  pest  and 
+disease on crop also causes variation in crop biomass. The 
+issue of different soil conditions and topography of region 
+can  be  addressed  by  mapping  soil  [22  &  23]  through 
+remote sensing and incorporating GIS [24] in the present 
+
+142
+
+[20] 
+
+in  wheat  crop 
+
+in  different  soil  and 
+
+methodology,  which  will  lead  to  separate  fitting  of  crop 
+spectral  curves 
+topographical 
+combinations.  Booltink  et  al. 
+identified  soil 
+variability a major source of crop spatial variability (-30 
+to +32%). They further reported that the use of soil map 
+can  explain  the  variability  in  crop  with  reasonable 
+accuracy.  Lobell  et  al.  [19]  stated  that  majority  of 
+variation 
+is  coming  from  different 
+management practices which may contribute up to 88.6% 
+variability  and  can  be  explained  by  remote  sensing 
+technique.  The  issue of differential  response  of different 
+crop  cultivars  can  also  be  addressed  by  using  remote 
+sensing  by  detecting  crop  cultivars  [25]  and  fitting 
+different cultivars response curves. The impact of pest and 
+disease  on  crop  biomass  can  be  identified  by  remote   
+sensing  [26]  and  the  infected  area  can  be  treated 
+separately.  Navalgund  [27]  and  Maracchi  et  al.  [28] 
+discussed the various applications of remote sensing and 
+GIS  in  agriculture  and  concluded  that  all  kind  of 
+variability in crop can be addressed by remote sensing in 
+conjunction with GIS. Further, accuracy can be increased 
+by  use  of  multi-date  imageries.  In  present  study,  the 
+
+30
+
+20
+
+10
+
+0
+
+-10
+
+-20
+
+-30
+
+)
+s
+y
+a
+d
+(
+ 
+
+ 
+
+e
+g
+a
+p
+o
+r
+C
+
+accuracy  was  also  limited  by  the  availability  of  satellite 
+images, most of imageries were available when crop has 
+attained sufficient age.  It was observed that the accuracy 
+of estimating crop age is higher when the age of crop is 
+less and vice-versa.  This was due the fact that when crop 
+remains  in  uncontrolled  environmental  conditions  for 
+longer period, it has more probability of getting affected 
+by different kind of biotic and abiotic stresses. It can be 
+concluded  from  above  results 
+that  remote  sensing 
+technique is a promising tool in capturing the variability 
+in  crop  vigor  and  biomass  and  resulting  the  crop  stages 
+and  crop  age.  The  estimation  of  crop  sowing  time  with 
+remote sensing technique can be used for large area crop 
+yield forecast / estimates using crop simulation model in 
+GIS  environment.  Until  now, 
+the  remote  sensing 
+technique for large area yield forecast at any given time 
+was  being  used  to  get  the  information  on  crop  biomass 
+and  LAI  and  then  output  of  crop  simulation  models  are 
+matched  with  remote  sensing  based  information  by 
+iterative  adjustment  technique.  Thus,  information  of 
+sowing time can eliminate the iterative adjustment of crop 
+simulation model inputs. 
+
+ 
+
+Errors in sowing date estimation (days)
+
+Pl-206-99
+Pl-200-99
+Pl-199-99
+Pl-199-99
+Pl-201-99
+Pl-203-98
+Pl-202-98
+Pl-202-98
+Pl-203-98
+Pl-194-98
+Pl-193-98
+Pl-195-98
+Pl-197-97
+Pl-193-97
+Pl-199-97
+Pl-203-97
+Pl-197-96
+Pl-203-96
+Pl-230-99
+Pl-202-99
+Pl-206-99
+Pl-193-99
+Pl-206-98
+Pl-199-98
+Pl-197-98
+Pl-232-98
+Pl-200-98
+Pl-206-97
+Pl-229-97
+Pl-230-98
+Pl-232-98
+Pl-229-97
+Pl-202-97
+Pl-200-97
+Pl-199-96
+Pl-200-96
+
+Plot
+
+Figure 4. Errors (Observed – Estimated) in sowing date estimations. 
+
+ 
+5.  Acknowledgements 
+Authors  acknowledge  Chief  General  Manager  (CGM) 
+Agriculture-farm,  Govind  Ballabh  Pant  University  of 
+Agriculture  and  Technology,  Pantnagar, 
+for 
+providing Field observations and Shri J. S. Parihar, Group 
+Director,  ARG,  Space  Applications  Centre  of  Indian 
+Space Research Organization (ISRO), Ahmedabad, India 
+for  encouragement  received  for  the  preparation  of  the 
+manuscript and endowing with satellite images.  ASN also 
+acknowledges  the  DAAD,  Bonn,  Germany  for  the  grant 
+of  Advanced  Research  Fellowship  and  Centre  for 
+Agricultural Landscape and Land Use Research (ZALF), 
+
+India 
+
+Müncheberg, Germany for making available the facilities 
+required for analysis. 
+6. References: 
+[1]  R.N.  Colwell,    Manual  of  remote  sensing  (2nd  Edition), 
+American  Society  of  Photogrammetry,  Falls  Church, 
+Virginia, USA, 1983. 
+[2]  J.G.  Campbell,    Introduction  to  remote  sensing,  The 
+Guilford Press, New York, USA, 1987. 
+[3]  G.  Asrar,  M.  Fuchs,  E.T.  Kanemasu,  &  J.  L  Hatfield, 
+Estimating  absorbed  photosynthetic  radiation  and  leaf  area 
+index from spectral reflectance of wheat. Agronomy Journal, 
+76, 1984, 300-306. 
+
+143
+
+for 
+
+regional 
+
+[4] M.S. Moran, Y. Inoue, & E.M. Barnes, Opportunities and 
+limitations for image based remote sensing in precision crop 
+management, Remote Sensing of Environment, 61 (3), 1997, 
+319-346. 
+[5] E.M. Barnes, P.J. Pinter, Jr., M.S. Moran & T.R. Clarke, 
+Remote  Sensing  techniques  for  the  integration  of  Crop 
+Models  with  GIS,  Presented  at  the  89th  Annual  Meeting  of 
+the  American  Society  of  Agronomy,  Crop  Science  of 
+America,  and  Soil  Society  of  America,  Symposium  on 
+Integrating Simulation Models with GIS for Agricultural and 
+Environmental System Research-III, California, USA, 1997. 
+[6] C.L. Wiegend, A.J. Richardson, & E.T. Kanemasu, Leaf 
+area  index  estimates  for  wheat  from  LANDSAT  and  their 
+implications  for  evapotranspiration  and  crop  modeling, 
+Agronomy Journal, 71, 1979, 336-342.  
+[7]  S.J.  Mass,  M.S.  Moran  &  R.D.  Jackson,  Combining 
+remote  sensing  and  modeling 
+resource 
+monitoring,  Part  II.  A  simple  model  for  estimating  surface 
+evaporation  and  biomass  production,  Proc.  ASPRS/ACSM 
+Convention,  Monitoring  and  Mapping  Global  Change, 
+Washington, USA, 1992, 225-234. 
+[8] E.M. Barnes, P.J. Pinter, B.A. Kimball, G.W. Wall, R.L. 
+LaMorte, D.J. Hunsake, F. Adamsen, S. Leavitt, T. Thopson, 
+& J. Mathius, Modification of CERES-Wheat to accept Leaf 
+Area,  Index  as  an  input  variables,  Presented  at  the  ASAE 
+Annual International Meeting, Paper No. 973016, 1997, MI, 
+USA. 
+[9]  L.  Seen,  D.E.  Mougin,  S.  Rambal,  A.  Gaston,  &  P. 
+Hiernaux, A regional Sahelian grassland model to be coupled 
+with  multispectral  data  II:  Toward 
+it 
+simulations  by  remotely  sensed  indices,  Remote  Sensing  of 
+Environment, 52, 1995, 194-206.  
+[10]  T.  Engel,  G.  Hoogenboom,  J.W.  Jones,  &  P.W. 
+Wilkens,  AEGIS/WIN  –  A  computer  program  for  the 
+application  of  crop  simulation  models  across  geographic 
+areas, Agronomy Journal 89(6), 1997, 919-928. 
+[11] P.K. Thornton, H.W.G. Booltink, & J.J. Stoorvogel, A 
+computer  program  for  geostatistical  and  spatial  analysis  of 
+crop model output, Agronomy Journal 89, 1997, 620-627. 
+[12]  A.D.  Hartkamp,  J.W.  White,  &  G.  Hoogenboom, 
+Interfacing Geographic Information System with Agronomic 
+Modelling:  A  Review,  Agronomy  Journal,  91,  1999,  761-
+772. 
+[13] S.J. Mass, Within-Season calibration of modeled wheat 
+growth using remote sensing and field sampling, Agronomy 
+Journal, 85, 1993, 669-672. 
+[14]  J.W.  Rouse,  R.H.  Haas,  J.A.  Schell,  D.W.  Deering  & 
+J.C.  Harlan,  Monitoring 
+the  vernal  advancement  and 
+retrogradation  (greenwave  effect)  of  natural  vegetation. 
+NASA, Goddard Space Flight Centre Type III Final Report, 
+Greenbelt, MD, USA,1974.   
+[15]  R.  Jaishanker,  V.N.  Sridhar,  &  V.K.  Dadhwal, 
+Generation and analysis of an eleven-year image database for 
+crop  monitoring  in  Kota  district,  Rajasthan,  India,  In:  I.V. 
+Muralikrishna,  (ed),  Proc.  Spatial  Information  technology, 
+Remote  sensing  and  Geophysical  Information  System, 
+ICORG, Vol 1, BS Publ, Hyderabad, India, 2001, 623-628. 
+[16] A.S. Nain, K.C. Kersebaum & V.K Dadhwal, Effect of 
+delayed  sowing  on  wheat  production  in  foot  hills  of 
+Himalaya, India, Accepted for presentation in Agricongress 
+2004  going  to  be  held  in  Kuala  Lumpur,  Malaysia,  4  –  7th 
+October, 2004. 
+
+the  control  of 
+
+from 
+
+in  Mexico 
+
+and  greenness  vegetation 
+
+[17] R.D. Jackson, P.N. Slater, & P.J. Pinter, Discrimination 
+of  growth  and  water  stress  in  wheat  by  various  vegetation 
+indices  through  clear  and  turbid  atmospheres,  Remote 
+Sensing of Environment, 13, 1983, 187–208. 
+[18]  J.T.  Ritchie,  D.C.  Godwin,  &  U.  Singh,  Soil  and 
+weather  input  for  the  IBSNAT  crop  models,  Proc.  of  the 
+IBSNAT  Symposium:  Decision  Support  System 
+for 
+Agrotechnology Transfer, Part I Las Vergas, NV, University 
+of Hawaii, Honolulu, USA, 1989, 31-45. 
+[19] D.B. Lobell, J.I. Ortiz-Monasterio, C.L. Addams & G.P. 
+Asner,  Soil,  climate,  and  management  impacts  on  regional 
+wheat  productivity 
+remote  sensing, 
+Agricultural  and  Forest  Meteorology,  114  (1-2),  2002,  31-
+43. 
+[20]  H.W.  G.  Booltink,  B.J.  van  Alphen,  W.D.  Batchelor, 
+J.O. Pazc, J.J. Stoorvogel, & R.Vargas, Tools for optimizing 
+fields,  Agricultural 
+management  of  spatially  variable 
+Systems, 70, 2001, 445–476. 
+[21]  P.J  Pinter,  G.  Zipoli,  G.  Maracchi,  &  R.J.  Reginato, 
+Influence of topography and sensor view angles on NIR/red 
+ratio 
+indices  of  wheat, 
+International Journal Remote Sensing, 8(6), 1987, 953-957. 
+ [22]  E.M.  Barnes,  M.S.  Moran,  P.J.  Pinter,  Jr.,  &  T.R. 
+Clarke,  Multispectral  Remote  Sensing  and  Site-specific 
+agriculture:  Examples  of  current  technology  and  future 
+possibilities.  Proc.  of  the  3rd  International  Conference  on 
+Precision  Agriculture,  Minneapolis,  MN,  USA,  1996,  845-
+854.   
+[23]  P.J.  Sellers,  C.J.  Tucker,  G.J.  Colatz,  S.O.  Los,  C.O. 
+Justice,  D.A.  Dazlich,  &  D.A.  Randall,  A  Global  10  by  10 
+NDVI data  set for climate studies, Part 2, The generation of 
+Global Fields of Terrestrial Biophysical Parameters from the 
+NDVI,  International  Journal  of  Remote  sensing,  15,  1994, 
+3519-3545. 
+[24]  S.R.  Han,  G.  Evans,  T.  Hodges,  &  S.L.  Rawlins, 
+Linking  a  Geographic  Information  System  with  a  potato 
+simulation model for site-specific crop management, Journal 
+of Environment Quality, 24, 1995, 772-777. 
+[25] A. Jacobsen, N.H. Broge, & B.U. Hansen, Monitoring 
+wheat  fields  and  grasslands  using  spectral  reflectance  data, 
+Proc.  of  International  Symposium  on  Spectral  Sensing 
+Research (ISSSR), Melbourne, Australia,1995 (web address: 
+http://ltpwww.gsfc.nasa.gov/ ISSSR-95/monitori.htm).  
+[26]  B.  Lorenzen,  &  A.  Jensen,  Changes  in  leaf  spectral 
+properties  induced  in  barley  by  cereal  powdery  mildew, 
+Remote Sensing of  Environment, 27, 1989, 201-209.  
+[27]  R.R.  Navalgund,  The  Application  of  Remote  Sensing 
+and  Geographic  Information  System  Techniques  in  Land 
+Resources  Surveys",  Proc.  The  Regional  Seminar  on 
+Integrated Applications of Remote Sensing and Geographic 
+Information  System 
+for  Land  and  Water  Resources 
+Management, 1994, Bangalore, India, 13-21. 
+[28]  G.  Maracchi,  V.  Pérarnaud,  &  A.D.  Kleschenko, 
+Applications  of  geographical 
+information  systems  and 
+remote sensing in agrometeorology, Agricultural and Forest 
+Meteorology, 103(1-2), 2000, 119-136. 
+
+144
+
+

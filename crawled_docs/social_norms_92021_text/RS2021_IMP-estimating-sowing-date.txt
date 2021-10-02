@@ -1,0 +1,928 @@
+ 
+
+E3S Web of Conferences 232, 03020 (2021) 
+IConARD 2020
+
+https://doi.org/10.1051/e3sconf/202123203020
+
+Rice  Crop  Phenology  Model  to  Monitor  Rice 
+Planting  and  Harvesting  Time  using  Remote 
+Sensing Approach 
+
+Hafidh Waldini1, Iqbal Putut Ash Shidiq1,*, Rokhmatuloh Rokhmatuloh1, and Supriatna 
+Supriatna1 
+1 Department of Geography, Faculty of Mathematics and Natural Sciences, University of Indonesia, 
+
+16424, Jawa Barat, Indonesia 
+
+Abstract.  Abstract.  Rice  is  one  of  the  most  significant  food  commodity 
+products in Indonesia. The production of rice in 2019 reached 49.8 million 
+tons. On a global scale, rice is consumed by half of the human population 
+around the world. This study will support the development of sustainable 
+natural resources management, which is an important thing to the realization 
+of  the  Sustainable  Development  Goals  in  zero  poverty  and  zero  hunger. 
+Remote  sensing  is  a  useful  instrument  to  monitor  natural  resources.  This 
+study used Sentinel-2 imageries to extract rice phenology using vegetation 
+indices (NDVI and NDWI), then acquired the planting and harvesting time 
+using the temporal analysis. The NDVI value is showing a parabolic curve 
+regarding the planting stage of the rice. The value of NDVI is high in the 
+transplanting stage but decreases in the harvesting phase. Besides that, in the 
+seedling  and  transplanting  stage,  NDWI  has  a  higher  value  than  NDVI. 
+However,  in  tillering  until  the  harvesting  phase,  NDWI  has  a  similar 
+characteristic but lower value than NDVI. Based on the spatial and temporal 
+distribution of rice planting and harvesting date, it is known that climate is 
+not a resistant factor, especially the irrigated rice field. Nevertheless, in the 
+rainfed rice field, the planting time depends on climate conditions. 
+
+Introduction 
+
+1 
+As one of the primary food commodities, rice is consumed by half of the global population 
+[1]. Throughout a year, 150 million hectares of the rice crop area will averagely produce 500 
+million tons of rice [2]. FAO argued that 90% of rice is planted and consumed by most Asian 
+populations, with 60% are situated in South East Asia like Indonesia, Malaysia, and Vietnam 
+[2]. In Indonesia, rice is the staple food commodity. The most significant production was 
+found in 2019, with 49.8 million tons. However, the number of rice imports in Indonesia 
+continuously increased, where the largest was found in 2018 (2.2 million tons) [3]. 
+
+Rice comes from paddy, a grass plant with a cylindrical hollow trunk with a thin parallel 
+leaf [4]. Based on location and water condition, IRRI classifies paddy within four classes, 
+which are (i) irrigated rice field, (ii) lowland rainfed rice field, (iii) highland rainfed rice field, 
+
+                                                 
+* Corresponding author: iqbalputut@sci.ui.ac.id 
+
+ 
+
+© The Authors, published by EDP Sciences. This is an open access article distributed under the terms of the Creative Commons Attribution License 4.0 (http://creativecommons.org/licenses/by/4.0/). 
+
+E3S Web of Conferences 232, 03020 (2021) 
+IConARD 2020
+
+https://doi.org/10.1051/e3sconf/202123203020
+
+and (iv) flood-prone rice field [5]. Based on the growth period, it can be classified into three 
+types, (i) short period usually in 100 – 120 days, (ii) middle period usually in 120-140 days, 
+and (iii) long period with 160 days or more [6]. According to the stages of development, the 
+paddy development is divided into vegetative, generative, and ripening. Vegetative stages are 
+indicated from sprouts growth until panicle initiation, and it commonly occurs 50 until 60 
+days.  The  generative  phase  is  determined  from  panicle  initiation  until  heading,  and  it 
+commonly occurs in 30 days. Lastly is the ripening stage [4]. 
+
+Spatial data have played an important role in recent times [7]  and to be planned with a 
+quality planning program and quality spatial component  [8]. As the United Nations (UN) 
+Sustainable Development Goals support zero poverty and zero hunger, the development of 
+sustainable  natural  resource  management  is  essential.  Particularly,  when  the  global 
+population is expected to reach nine million people in 2050, it will become a big challenge, 
+especially for sustainable food security.  
+
+Remote sensing is an effective instrument for detecting changes in land-use or land-
+cover [9]. It is labor effective compared to the more conventional terrestrial surveys [10]. 
+Regarding the mapping process, rice has a specific spectral characteristic in the early stages 
+of planting [1], and it keeps changing in every phase of the growing stages [11]. Therefore, 
+information about the rice phenology is important when deciding the planting date, heading 
+date,  and  harvesting  date  for  every  rice  crop  [12]. The  advantages  of  phenological-based 
+research are to give an understanding of how the plant will respond to the climate condition 
+and providing the reference for further food production [13]. This study aims to observe the 
+spatial and temporal distribution of rice planting time and analyze the harvesting time based 
+on phenological data from remote sensing-based vegetation index (NDVI and NDWI) and 
+also to provide a method for creating spatial data in agricultural aspect. 
+
+2  Methods 
+This study uses Sentinel 2 level 2 multispectral satellite with a moderate resolution with 10 
+x 10 meter spatial resolution with 24 images in total for 2019.  The information on rice age 
+and growth phase is extracted from the Normalized Difference Vegetation Index (NDVI) and 
+Normalized Difference Water Index (NDWI) [14,15]. Sentinel 2 (2A and 2B) have five days 
+revisit time, which is reliable for the agricultural monitoring project [16]. This study uses a 
+binary thresholding method and fuzzy overlay for satellite images using ESA SNAP to get 
+the rice planting and harvesting date. 
+
+2.1 Study Area 
+The study is conducted in Parakansalak sub-regency that located in 6° 44’ 34.8” -  6° 49’ 
+40.8” South dan 106° 39’ 54” - 106° 44’ 24” East. Relatively, the location is adjacents to 
+Pamijahan sub-regency in the north,  Cidahu sub-regency in the east,  Bojonggenteng sub-
+regency  in  the  south,  and  Kalapanunggal  sub-regency  in  the  west.  The  total  area  of 
+Parakansalak is 5,571.45 hectares, with more than 600 hectares (12%) are the irrigated rice 
+crop area. The topography and slopes are varied between the low-land area (200 above msl) 
+and the high-land area (more than 700 above msl). 
+
+There are three  main irrigation channels in Parakansalak,  which are Situ  Sukarame, 
+Cipamatutan, and Cinala. The Situ Sukarame is irrigating Lebaksari, Bojongasih, and some 
+areas in Bojonglongok. The water source in Situ Sukarame is from a natural lake called Situ 
+Sukarame, located in eastern Parakansalak village, the northern part of Lebaksari. The rice 
+field irrigated by Cipamatutan is unique because the rice field is aligned linearly with the 
+Cipamatutan river. Cipamatutan is irrigating Sukakersa, some area in Parakansalak, and some 
+area in Bojonglongok, in the north-south direction of the sub-district. 
+ 
+
+2
+
+ 
+
+E3S Web of Conferences 232, 03020 (2021) 
+IConARD 2020
+
+Fig. 1 Parakansalak Administration Maps 
+ 
+ 
+ 
+ 
+
+ 
+
+https://doi.org/10.1051/e3sconf/202123203020
+
+ 
+
+ 
+
+3
+
+ 
+
+E3S Web of Conferences 232, 03020 (2021) 
+IConARD 2020
+
+2.2 Image Acquisition  
+
+2.2.1 
+
+ Sentinel 2 Multispectral Satellite 
+
+https://doi.org/10.1051/e3sconf/202123203020
+
+Sentinel 2 was launched by European Space Agency (ESA) with two satellites (Sentinel 2-A 
+and Sentinel 2-B). The temporal resolution is five days. The sensor is equipped with 10-meter 
+four bands (red, green, blue, and near-infrared), six bands with a 20-meter spatial resolution 
+(red edge and shortwave infrared band), and three bands with 60-meter resolution (aerosols, 
+water vapor, and cirrus) for earth observation [17]. In this study, 24 imageries from 2019 are 
+collected from the month of February until December. Each month has a minimum of one 
+image with a maximum cloud cover of 20 percent. 
+
+ 
+
+2.2.2 
+
+ Normalized Difference Vegetation Index (NDVI) 
+
+The  NDVI  can  be  used  as  an  indicator  of  plant  greenness  [8,14,18].  NDVI  uses  the 
+calculation of near-infrared and red bands. The formula is as follows: 
+
+ NDVI = (NIR – Red) / (NIR + Red)  
+
+ 
+
+ 
+
+ 
+
+ (1) 
+
+2.2.3 
+
+ Normalized Difference Water Index (NDWI) 
+
+The limitation for NDVI in rice  crop identification  is  found in the early stages of paddy, 
+where the rice is planted in inundated land [1] and had only a few leaves. Therefore the water 
+index is needed to determine the early stages of rice [19]. Normalized difference water index 
+(NDWI) [15] using near-infrared and middle infrared/shortwave infrared. The formula is as 
+follows: 
+
+NDWI = (NIR – SWIR) / (NIR + SWIR)   
+
+ 
+
+ 
+
+ 
+
+ (2) 
+
+2.2.4 
+
+ Planting Time and Harvesting Time with Thresholding Method 
+
+To set the planting and harvesting time threshold value, this study using field data collection 
+results and crosschecked with the previous study by Sari [12], Hernawati [20], and Lestari 
+[21]. For phenological identification on the first step is analyzing the heading date [12,20]. 
+Based on Lestari [21] range  of NDVI  value is 0.652 – 0.884 in  the  last  vegetative phase 
+(include heading phase) about 60 days after planting [12]. And based on the field data result 
+in  3.1,  the  threshold  value  at  the  heading  phase  for  NDVI  is  0.6.  After  heading  phase 
+identification, planting date identification is about 60 days past from heading phase. Spectral 
+characteristic in planting time based on Sari [12] and Hernawati [20] NDWI/LSWI value is 
+greater or equal with NDVI value. In harvesting time, from the field data result in 3.1 the 
+NDVI  value  is  0.6.  Based  on  Sari  [12]  and  Hernawati  [20]  and  field  data  result  the 
+NDWI/LSWI value is lower than the NDVI value. The framework of the thresholding method 
+is in Fig 2. 
+
+ 
+
+4
+
+ 
+
+E3S Web of Conferences 232, 03020 (2021) 
+IConARD 2020
+
+https://doi.org/10.1051/e3sconf/202123203020
+
+Fig 2. Rice Planting and Harvesting Time Thresholding Framework 
+
+2.3 Field Data Acquisition 
+
+Field  data  acquisition  is  conducted  for  collecting  rice  age  and  rice  variety.  The  sampling 
+method used for collecting data is purposive grid sampling, with ±100 sample considering 
+the existence of the farmer, the accessibility to the rice field, and the variation of rice field 
+growth phase. A field survey was held from 24 August 2020 until 27 August 2020.  
+
+ 
+
+3  Result and Discussion 
+
+3.1 Rice Phenology Based on NDVI and NDWI Values 
+
+NDVI always has a greater value than NDWI in each phase except land preparation. This is 
+because of the background of the increasing crop canopy. Based on Fig 3., in the early phase 
+of planting, farmers usually do some land preparation. In this stage, the rice crop is inundated, 
+
+ 
+
+5
+
+ 
+
+E3S Web of Conferences 232, 03020 (2021) 
+IConARD 2020
+
+https://doi.org/10.1051/e3sconf/202123203020
+
+lead to the value of NDWI is greater than NDVI because water is saturating the crop in the 
+satellite image. In the planting stage, the NDWI value is approaching the NDVI value. From 
+the planting stage until the heading phase of the rice plant the value of NDVI is increasing 
+until maximum. From the heading phase until harvesting the value of both NDVI and NDWI 
+is  decreasing  because  of  crop  canopy  yellowing  and  draining  of  water  in  rice  crop.  Rice 
+phenology based on Fig 3. Supported with the quadratic graph model based on Fig. 4. and 
+Fig. 5. which the NDVI value always greater than the NDWI value in the same rice age. The 
+special  spectral  characteristic  in  the  heading  phase,  planting,  and  harvesting  stage  can  be 
+analyzed for the threshold of planting and harvesting time.  
+ 
+ 
+
+ 
+
+Heading 
+
+Planting 
+
+Harvesting 
+
+Heading 
+
+ 
+
+Fig.3 Rice Phenology Graph Based on Vegetation Index 
+ 
+
+The rice age model based on NDWI acquired from quadratic regression is in Fig. 4.  
+resulting  in  the  equation  (3).  Then,  the  rice  age  model  based  on  NDVI  acquired  from 
+quadratic regression is in Fig. 5. resulting in the equation (4).  For equations (3) and (4), X is 
+the NDWI and NDVI value and Y is the estimated rice age. The R² of the NDWI model is 
+0.14 with a significance of 0.02 with the RMSE of the model is 27 (days). For the NDVI 
+model, the R² is 0.24 with the significance of the model 0.00 with RMSE of the model is 17 
+(days). Based on R² of both models, NDVI has better goodness of fit rather than NDWI with 
+notes that rice field which hasn’t planted yet (inundated) or in bare soil phase after harvested 
+detected as an  intolerable outlier and removed. But  in NDWI value,  some rice  field  with 
+water background in tillage before transplantation isn’t detected as on outlier which included 
+for regression analysis. Therefore, the NDVI model in this study describing the rice field with 
+only rice planted in it. Whereas the NDWI model describes the rice field from the tillage 
+phase until rice is planted.  
+
+ 
+ 
+
+ 
+ 
+40.833 
+
+ 
+
+(3) 
+
+ 
+
+Y = -308.853 X² + 369.731 X - 35.7 
+
+Y = -231.765 X² + 212.857 X  + 
+
+(4) 
+
+ 
+
+6
+
+ 
+
+E3S Web of Conferences 232, 03020 (2021) 
+IConARD 2020
+
+https://doi.org/10.1051/e3sconf/202123203020
+
+ 
+e
+u
+a
+V
+
+l
+
+ 
+I
+
+W
+D
+N
+
+Fig 4. Rice Age Model Based on NDWI Value 
+ 
+
+Rice Ages 
+
+ 
+ 
+
+ 
+
+l
+
+e
+u
+a
+V
+
+ 
+
+ 
+I
+
+V
+D
+N
+
+ 
+
+Rice Ages 
+
+ 
+ 
+ 
+Fig 5. Rice Age Model Based on NDVI Value 
+ 
+ 
+3.2  Value Distribution of NDVI and NDWI Based on Growth Phase 
+ 
+In this study, Based on Fig. 6. the tendency of NDVI distribution value in planting time is 
+mostly in the Q1 area with 0.12 value until the median with 0.22 value. While the NDWI, the 
+tendency is mostly in Q1 with 0.12 value until median with 0.28 value. But Q3 of NDWI is 
+higher than NDWI in 0.4 and the maximum value of NDWI is greater than  the maximum 
+NDVI  value.  From  this,  the  planting  time  threshold  concept  is  when  the  NDWI  value  is 
+greater or the same as the NDVI value.      
+ 
+ 
+ 
+
+ 
+
+7
+
+ 
+
+E3S Web of Conferences 232, 03020 (2021) 
+IConARD 2020
+
+https://doi.org/10.1051/e3sconf/202123203020
+
+Max = 0.36  
+
+Med = 0.22  
+
+Q3 = 0.27  
+
+Q1 = 0.12  
+
+Min = 0.04  
+
+Max = 0.6  
+
+Q3 = 0.4  
+Med = 0.28  
+Q1 = 0.12  
+
+Min = 0.2  
+
+Fig. 6. Value Distribution in Planting Time   
+ 
+Based on Fig.7. the tendency of NDVI distribution value in the heading phase is mostly 
+ 
+in the median area with 0.73 value until Q3 0.79 value. While the NDWI, the tendency is 
+mostly in Q1 with 0.23 value until median with 0.29 value. Overall NDVI data is greater than 
+NDWI even the outlier data of NDVI value is greater than  the maximum value of NDWI. 
+Based on Lestari [22] range of NDVI value in  the heading phase is 0.652 until maximum 
+value and from the field data, the NDVI toleratable outlier is 0.61. From this, the NDVI value 
+in the heading phase is more than 0.6 and the NDWI value is lower than NDVI. 
+ 
+
+ 
+
+Max = 0.82  
+
+Q3 = 0.79  
+Q1 = 0.67  
+
+Med = 0.73  
+
+Outlier 1 = 0.61  
+Outlier 2  = 0.41  
+
+Max = 0.35  
+
+Med = 0.29  
+
+Q3 = 0.33  
+Q1 = 0.23  
+
+Min = 0.00 
+
+ 
+
+Fig. 7. Value Distribution in Heading Phase 
+
+ 
+
+8
+
+ 
+
+E3S Web of Conferences 232, 03020 (2021) 
+IConARD 2020
+
+https://doi.org/10.1051/e3sconf/202123203020
+
+Based on Fig. 8. the tendency of NDVI distribution value in Harvesting time is mostly 
+in the median area with 0.66 value until Q3 0.78 value. While the NDWI, the tendency is 
+mostly in Q1 with 0.19 value until median with 0.3 value. Overall NDVI data is greater than 
+NDWI, the maximum NDWI is equal to the toleratable outlier in 0.42 value for both indexes. 
+Compared  to  the  maximum  value  of  NDVI  in  Fig.  7.  the  maximum  value  of  NDVI  in 
+harvesting  time  is  lower.  Considering  the  value  of  the  heading  phase  threshold,  for  the 
+harvesting  time,  this  study  set  the  NDVI  Value  with  0.6  in  the  lower  limit  of  Q1  as  the 
+harvesting time threshold. For the NDWI value, set lower than NDVI same as heading phase 
+threshold. The reason this study set 0.6 as the value of harvesting time threshold, because 
+below  0.6  NDVI  value,  most  likely  below  that  value,  paddy  has  not  reached  the  heading 
+phase.  
+ 
+ 
+ 
+
+Max = 0.78  
+
+Med = 0.66  
+
+Q3 = 0.73  
+
+Q1 = 0.61  
+
+LW = 0.475  
+
+Outlier = 0.42  
+
+Max = 0.42  
+
+Med = 0.3  
+
+Q3 = 0.35  
+
+Q1 = 0.19  
+
+Fig. 8. Value Distribution in Harvesting Time 
+
+Min = 0.00 
+
+ 
+
+3.3 Parakansalak 2019 Climate Condition 
+Based on monthly rainfall 2018 and 2019 graph (Fig 4.), there is rainfall value decreasing 
+between 2018 and 2019 in June, July, September, October, and November. In June 2019, the 
+value of rainfall data is dropped from 184 mm to 2,96 mm. And in September 2019, the value 
+of rainfall data is dropped from 80,8 mm to 17,7 mm. This can affect the rice planting season 
+in Parakansalak. Local farmers also said that in 2019, in some rice crop areas, water discharge 
+in some irrigation channels was decreased also caused by rainfall volume decreasing. Some 
+irrigation  that  water discharge  was decreased, rice  crop area in lower elevation,  were not 
+watered, cause the water was infiltrated before reaching the rice crop area. 
+ 
+      
+
+ 
+
+9
+
+ 
+
+E3S Web of Conferences 232, 03020 (2021) 
+IConARD 2020
+
+https://doi.org/10.1051/e3sconf/202123203020
+
+ 
+Fig. 4. 2018 and 2019 Monthly Rainfall Chart 
+
+3.4 Overall Model Accuracy  
+Fig. 5. and Fig. 6. is a comparison graph between estimation and tabular data of planting and 
+harvesting area from BPP  Parakansalak. The result shows that the root mean square error 
+(RMSE)  between  tabular  and  estimation  data  is  145.37  hectares.  June  is  the  highest 
+estimation in planting area with 145 hectares and the lowest planting area estimation is in 
+October with 17 hectares.  Then, in the harvesting area, the root mean square error (RMSE) 
+between tabular and estimation data is 90,9 hectares. The highest harvesting area estimation 
+is in February with 289 hectares, overestimated then tabular data because no crosschecking 
+with fuzzy overlay with heading phase in January. In January there are no available satellite 
+images  with  clear  visibility.  The  lowest  harvesting  area  estimation  is  in  April  with  32 
+hectares. The estimation of harvesting time area is higher compared with the estimation of 
+planting. 
+  
+
+)
+r
+a
+t
+c
+e
+H
+
+(
+ 
+a
+e
+r
+A
+
+300
+
+250
+
+200
+
+150
+
+100
+
+50
+
+0
+
+ 
+
+255
+
+231
+
+167
+
+153
+
+155
+
+145
+
+170
+
+165
+
+175
+
+211
+
+198
+
+185
+
+85
+
+67
+
+45
+
+29
+
+48
+
+24
+
+28
+
+17
+
+27
+
+23
+
+Estimation
+Tabular
+
+Month
+
+10
+
+ 
+
+ 
+
+ 
+
+E3S Web of Conferences 232, 03020 (2021) 
+IConARD 2020
+
+https://doi.org/10.1051/e3sconf/202123203020
+
+Fig. 5. 2019 Monthly Planting Area Estimation and Tabular Data 
+ 
+ 
+
+)
+r
+a
+t
+c
+e
+H
+
+(
+ 
+a
+e
+r
+A
+
+350
+
+300
+
+250
+
+200
+
+150
+
+100
+
+50
+
+0
+
+289
+
+260
+
+220
+
+129
+
+249
+
+167
+
+143
+
+136
+
+153
+
+119
+
+111
+
+32
+
+241
+
+205
+
+230
+
+174
+
+170
+
+134
+
+241
+
+175
+
+77
+
+43
+
+Estimation
+Tabular
+
+ 
+Fig. 6. 2019 Monthly Harvesting Area Estimation and Tabular Data  
+
+Month
+
+ 
+
+4.4 Dry Season Planting and Harvesting Time 
+
+Head of Parakansalak Agricultural Counselling Agency (BPP) argued that in Parakansalak 
+there are two farming seasons, the first one is the dry season from April – September, and the 
+second one is the wet season from October – March (in the next following year.  From Fig. 
+5. and Fig. 6. farmers' tendency to start planting rice is in April, May, June and start to do 
+harvesting  in  July  for  planting  in  April,  August  for  planting  in  May,  and  September  for 
+planting in June. Related to the climate, June, July, August, and September are on dry month 
+status with monthly total rainfall below 50 mm, critically, it ranges from 2 until 17 which is 
+suitable when local farmers do some harvesting, but not enough water supply for rice planting 
+after harvesting in August or September.  
+ 
+ 
+On the  village  scale, the biggest  total area of planting based on thresholding  method 
+within  April, May, and June  is Bojonglonggok  village  with 69.04 hectares total and  with 
+average planting area in April, May, and June is 23.01 hectares. The lowest area of planting 
+area  within  April,  May,  and  June  is  Lebaksari  village  with  31.06  hectares  total  with  an 
+average planting area is  10.35 hectares. For another village, the average planting area in 
+Bojongasih  village  is  17.10  hectares,  Parakansalak  village  is  19.16  hectares,  Sukakersa 
+village  is  17.17  hectares  and  Sukatani  village  is  12.19  hectares.  Based  on  rice  age  in 
+thresholding assumption, if rice field planted in April, the harvest will happen in July, then 
+if rice field planted in May, the harvest will happen in August, and if rice field planted in 
+June the harvest will happen in September.   
+ 
+  Within  July,  August,  and  September,  the  biggest  harvesting  area  based  on  the 
+thresholding method is Sukakersa village with a total harvested area is 115.74 hectares and 
+
+ 
+
+11
+
+ 
+
+E3S Web of Conferences 232, 03020 (2021) 
+IConARD 2020
+
+https://doi.org/10.1051/e3sconf/202123203020
+
+the  average  harvested  area  is  38.58  hectares.  The  lowest  harvesting  area  based  on  the 
+thresholding method is Lebaksari village with a total harvested area of 51.36 hectares with 
+the average harvesting area is 17.12 hectares. For another village, the average planting area 
+in  Bojongasih  village  is  26.34  hectares,  Bojonglonggok  village  is  27.62  hectares, 
+Parakansalak village is 22.68 hectares, and Sukatani village is 33.34 hectares. 
+
+Fig 6. April, May, June 2019 Rice Planting Area  
+ 
+
+Fig 7. July, August, September 2019 Rice Harvesting Area 
+ 
+
+12
+
+ 
+
+ 
+
+ 
+
+E3S Web of Conferences 232, 03020 (2021) 
+IConARD 2020
+
+https://doi.org/10.1051/e3sconf/202123203020
+
+ 
+For the next three months, the biggest total area of planting based on thresholding method 
+within July, August, and September is Sukakersa village with 24.72 hectares total and with 
+average planting area in April, May, and June is 8.24 hectares. The lowest area of planting 
+area within April, May, and June is Lebaksari village with 2.88 hectares total with the average 
+planting area is  0.96 hectares. For another village, the average planting area in Bojongasih 
+village is 3.70 hectares, Bojonglonggok village is 7.40 hectares, Parakansalak village is 7.64 
+hectares, Sukatani village is 5.32 hectares. Based on rice age in thresholding assumption, if 
+rice  field planted in  July, the harvest  will happen in  October, then if rice  field planted  in 
+August,  the  harvest  will  happen  in  November,  and  if  rice  field  planted  in  September  the 
+harvest will happen in December.   
+ 
+  Within  October,  November,  and  December,  the  biggest  harvesting  area  based  on  the 
+thresholding method is Bojonglonggok village with a total harvested area is 59.24 hectares 
+and the average harvested area is 19.75 hectares. The lowest harvesting area based on the 
+thresholding method is Lebaksari village with a total harvested area of 15.45 hectares with 
+the average harvesting area is 5.5 hectares. For another village, the average planting area in 
+Bojongasih village is 9.97 hectares, Parakansalak village is 15.29 hectares, Sukakersa village 
+is 17.76, and Sukatani village is 16.60 hectares. 
+ 
+
+Fig 8. July, August, September 2019 Rice Planting Area 
+ 
+
+ 
+
+ 
+
+13
+
+ 
+
+E3S Web of Conferences 232, 03020 (2021) 
+IConARD 2020
+
+https://doi.org/10.1051/e3sconf/202123203020
+
+Fig 9. July, August, September 2019 Rice Planting Area 
+
+ 
+
+4  Conclusion 
+The  model  of  the  rice  phenology  based  on  NDVI  and  NDWI  has  a  moderate  result  with 
+greater  R²  in  NDVI  than  NDWI.    In  partial  value  distribution,  for  heading  phase  and 
+harvesting time, the value of NDVI is concentrated in a small range of data, and easier to 
+deciding the value threshold for estimating the harvesting time if another index is used. Based 
+on the result of estimated rice planting time and harvesting time with thresholding method 
+using  Sentinel  2  satellite,  the  estimation  of  harvesting  time  has  more  suitable  result  than 
+planting time with lower RMSE value with the monthly tabular data from BPP Parakansalak. 
+If the tabular data is in daily unit, it is possible to know the exact result of the threshold model 
+cause  of  the  limitation  of  Sentinel  2  images  towards  cloud  cover  or  the  result  will  more 
+accurate if the same method is applied in radar remote sensing.  
+
+References 
+1.  J. Dong and X. Xiao, ISPRS J. Photogramm. Remote Sens. 119, 214 (2016). 
+2.  B. Bua and M. Ojirot, Am. J. Exp. Agric. 4, 532 (2014). 
+3.  Kementerian Pertanian, Buletin Konsumsi Pangan 2019 (2018). 
+4.  K. Moldenhauer, P. Counce, and J. Hardke, in Rice Prod. Handbook, Univ. Arkansas 
+
+(University of Arkansas, Arkansas, 2018), pp. 9–20. 
+
+5.  D. J. Greenland, The Sustainability of Rice Farming (CAB International in Association 
+
+with IRRI, Wallingford, 1977). 
+IRRI, Step to Successful Rice Production (2015). 
+
+6. 
+7.  Rokhmatuloh, Supriatna, A. Wibowo, and I. P. A. Shidiq, Int. J. GEOMATE 19, 205 
+
+(2020). 
+
+ 
+
+14
+
+ 
+
+E3S Web of Conferences 232, 03020 (2021) 
+IConARD 2020
+
+https://doi.org/10.1051/e3sconf/202123203020
+
+8.  A. Yudono, Geoplanning J. Geomatics Plan. 5, 131 (2018). 
+9.  M. S, K. SH, K. Zarkesh M, D. F, and A. Safaval P, J. Geogr. Nat. Disasters 08, 1 
+
+(2018). 
+
+10.  Supriatna, Rokhmatuloh, A. Wibowo, I. P. A. Shidiq, G. P. Pratama, and L. 
+
+Gandharum, Int. J. GEOMATE 17, 101 (2019). 
+
+11.  K.-W. Chang, Y. Shen, and J.-C. Lo, Agron. J. 97, 872 (2017). 
+12.  2. D. K. Sari, I. H. Ismullah, W. N. Sulasdi, and A. B. Harto, ITB J. Sci. 42 A, 91 
+
+(2010). 
+
+13.  L. Wang, F. C. Zhang, Y. S. Jing, X. D. Jiang, S. Bin Yang, and X. M. Han, Rice Sci. 
+
+21, 108 (2014). 
+
+14.  J. W. Rouse, R. H. Haas, J. A. Schell, and D. W. Deering, in Goddard Sp. Flight Cent. 
+
+3d ERTS-1 Symp. (NASA, Texas, 1974), pp. 309–317. 
+
+15.  B. Gao, 266, 257 (1996). 
+16.  M. Jia, Z. Wang, C. Wang, D. Mao, and Y. Zhang, Remote Sens. 11, 1 (2019). 
+17.  17. A. Taufik, S. S. Syed Ahmad, and E. F. Azmi, Lect. Notes Networks Syst. 67, 275 
+
+18.  H. Yin, T. Udelhoven, R. Fensholt, D. Pflugmacher, and P. Hostert, Remote Sens. 4, 
+
+(2019). 
+
+3364 (2012). 
+
+19.  K. Chandrasekar, M. V. R. Sesha Sai, P. S. Roy, and R. S. Dwevedi, Int. J. Remote 
+
+Sens. 31, 3987 (2010). 
+
+20.  R. Hernawati, A. B. Harto, and D. K. Sari, Reka Geomatika J. Tek. Geod. Dan 
+
+Geomatika 2017, 91 (2017). 
+
+21.  E. A. P. Lestari, Supriatna, and A. Damayanti, in Life Environ. Sci. Acad. Forum 2018 
+
+(IOP Science, 2020). 
+
+ 
+
+ 
+
+15
+
+

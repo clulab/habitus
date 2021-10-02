@@ -1,0 +1,3276 @@
+Agricultural Systems 150 (2017) 21–33
+
+Contents lists available at ScienceDirect
+
+Agricultural Systems
+
+j o u r n a l h o m e p a g e : w w w . e l s e v i e r . c o m / l o c a t e / a g s y
+
+Planting date and yield beneﬁts from conservation agriculture practices
+across Southern Africa
+Isaiah Nyagumbo a,⁎, Siyabusa Mkuhlani a, Walter Mupangwa a, Daniel Rodriguez b
+
+a CIMMYT, International Maize and Wheat Improvement Centre, Box MP163, Mt. Pleasant, Harare, Zimbabwe
+b Queensland Alliance for Agriculture and Food Innovation (QAAFI), University of Queensland, Toowoomba, Australia
+
+a r t i c l e
+
+i n f o
+
+a b s t r a c t
+
+Article history:
+Received 2 February 2016
+Received in revised form 5 September 2016
+Accepted 21 September 2016
+Available online xxxx
+
+Keywords:
+DSSAT
+Planting date
+Rainfall variability
+Labour requirements
+
+Managing production risks under high rainfall variability remains a research priority in Southern Africa. In this
+region, conservation agriculture (CA) has been promoted as useful set of principles that could improve farmers'
+resilience to climate variability and change. However, matching practices to agro-ecological and farmers' socio-
+economic conditions remain contentious. Here we combine empirical data and results from a cropping system
+model to quantify beneﬁts and trade-offs, in terms of sowing opportunity, yield, and yield variability, from
+adopting CA practices. We hypothesized that CA practices would require less labour, allow farmers to plant ear-
+lier, at times closer to optimum planting times and consequently result in higher maize yields.
+We tested the hypothesis using available household labour and the outputs from a cropping systems model
+(DSSAT) run for six locations in Malawi, Mozambique and Zimbabwe. Thirty years of climate records and soil
+characterisations were available for each site. Modelled CA practices included, a basin planting system prepared
+early during winter (CA-Basins early); a basin planting system prepared late and at the onset of the rains (CA-ba-
+sins late); an animal draught direct seeder e.g. using a Fitarelli animal traction planter (CA-Direct seed); an ani-
+mal traction ripper (CA-Ripper); and a dibble stick manual planting system (CA-Dibble). Check conventional
+cropping systems included conventional mouldboard ploughing prepared early (CMP-early), and late (CMP-
+late), which mimicked farmers having early or late access to draft power, respectively.
+Simulated results showed that CA-Ripper, CA-Direct seeding and CA-Basins improved timeliness of operations
+and enabled earlier planting across all locations compared to conventional systems. Mechanized CA systems po-
+tentially offered farmers ﬂexibility on when to plant. However, timely planting of CA systems did not translate
+into higher yields when carried out during periods of high rainfall variability. Yield beneﬁts of early plantings
+in CA were only apparent in Zimbabwe. Rainfall patterns showed a shift of 0.28 and 0.39 days yr−1 in planting
+dates at Chitala and Chitedze, over the simulated 30 years. However, this was not evident at the other four loca-
+tions. Optimum planting dates established for the six locations were 5th to 27th December for Malawi; 26th De-
+cember to 7th January for Mozambique; and 4th to 7th December for Zimbabwe. For each location, planting
+maize close to the optimum period resulted in higher yields, irrespective of cropping system. Signiﬁcantly
+(P b 0.05) lower yield variability values i.e. 25% compared to 32 and 36%, were observed for optimum date plant-
+ings. Model generated optimum planting dates could be used to provide farmers with site-speciﬁc planting date
+recommendations.
+
+© 2016 Elsevier Ltd. All rights reserved.
+
+1. Introduction
+
+Highly variable rainfall (Fauchereau et al., 2003; Rurinda et al.,
+2014), the cost and availability of agricultural inputs (Anseeuw et al.,
+2012), lack of draught power (Francis et al., 1999), and labour
+(Munhande et al., 2013), are some of the key constraints faced by small-
+holder farmers in Southern Africa. These are also the leading causes of
+delayed and failed planting or lower than achievable plant populations
+and crop yields (Collinson, 1987; Rurinda et al., 2014; Roxburgh and
+
+⁎ Corresponding author.
+
+E-mail address: i.nyagumbo@cgiar.org (I. Nyagumbo).
+
+http://dx.doi.org/10.1016/j.agsy.2016.09.016
+0308-521X/© 2016 Elsevier Ltd. All rights reserved.
+
+Rodriguez, 2016). These challenges contribute to protracted food short-
+ages and malnutrition among smallholder farmers in Zimbabwe
+(FEWSNET, 2014; Makuvaro et al., 2014) and elsewhere.
+
+In semi-arid areas of Zimbabwe, late plantings as a result of missed
+planting opportunities can lead to complete yield losses (Makuvaro et
+al., 2014; Twomlow et al., 2008). For sub-humid regions in Zimbabwe,
+previous ﬁndings suggest maize yield reductions of at least 5% per
+week's delay in planting (Nyagumbo, 2008; Shumba et al., 1992,
+1989); reaching as high as 32% (Shumba et al., 1992). Factors inﬂuenc-
+ing planting time are the onset of rainfall and soil temperature (Savin et
+al., 2007), though operationally, socio-economic factors will ﬁnally de-
+termine when crops are sown. Key socio-economic factors affecting
+
+22
+
+I. Nyagumbo et al. / Agricultural Systems 150 (2017) 21–33
+
+farmers' decision to plant include available power sources (draught
+power, labour (Houmy et al., 2013)), extent of mechanisation for land
+preparation and planting, inputs availability (Rurinda et al., 2014),
+availability of manual labour, and choice of crop. The reduced need for
+land preparation associated with no till practices in CA systems (FAO,
+2001) has the potential to enable early planting, while saving labour
+and conserving soil moisture (Kucharik, 2006; Marongwe et al., 2012;
+Nyamangara et al., 2013). Furthermore, CA has the capacity to reduce
+soil loss and run-off (Nyagumbo, 2008); increase soil moisture conser-
+vation (Thierfelder and Wall, 2009); reduce weeding labour when her-
+bicides are available and used (Muoni et al., 2013); and reduce the
+impact of dry spells (Mkoga et al., 2010). The type of CA system used de-
+pends on the availability of draught power, with manual CA-Basins
+being more dominant among non-draft power users in Zimbabwe
+(ZCATF, 2009) and in central Mozambique. Manual ridge and furrow
+conventional systems are also commonly used in central Mozambique
+and Malawi (Ngwira et al., 2012). CA systems in this region use manual,
+dibble stick based CA planting (Ngwira and Aune, 2011). In contrast, an-
+imal traction in conventional mouldboard ploughing is more common
+in Zimbabwe (ZCATF, 2009) and western parts of Mozambique.
+
+Draught powered mechanized CA systems, have the potential to fur-
+ther reduce labour demands associated with land preparation, though
+they are still uncommon in Southern Africa (ACIAR, 2013; Jaleta et al.,
+2014). Furthermore, the poor livestock condition after the long dry sea-
+son, potentially delays planting in conventional mouldboard plough
+based systems even when farmers have access to some draught
+power. Thus in animal traction cropping systems, greater availability
+of household labour and timely land preparation activities are likely to
+increase the chances of early planting and higher crop yields.
+
+Farmers in drier or semi-arid parts of Southern Africa tend to use
+multiple staggered opportunistic planting to spread the risk associated
+with dry spells (Milgroom and Giller, 2013). However, the merits of
+such practices have not been quantiﬁed. Previous studies in Zimbabwe
+suggest that the time of planting is more important than the type of till-
+age system employed (Nyagumbo, 2008). In Zimbabwe the start of the
+season for different agro-ecologies is deﬁned based on the time of the
+year when precipitation (P) exceeded half the potential evapotranspira-
+tion (PET) i.e. P N 0.5PET (Hussein and Johnson, 1987). Further studies
+by Raes et al. (2004) deﬁned best planting times based on depth of a
+wetting front in the soil, so that planting was recommended whenever
+40 mm of rainfall is received within 4 consecutive days. Such a rule can
+reduce the risk of a “false season starts” from 2 in every 5 years to 1 in
+every 4 years. Other studies in semi-arid Zimbabwe deﬁned the start
+of the rainfall season as the ﬁrst day after 1 October when the rainfall ac-
+cumulated over 1 or 2 days is at least 20 mm and followed by a period of
+not N10 consecutive dry days in the following 30 days (Mupangwa et al.,
+2011). However, none of these criteria takes into account farm labour
+availability (Mhizha et al., 2014). In Zimbabwe farmers practising CA
+are recommended to plant with the ﬁrst rains in order to fully utilize
+the season's rainfall (ZCATF, 2009). Unfortunately, farmers practising
+CA may plant during the ‘false start’ periods of the season with serious
+yield penalties or complete crop failure.
+
+Despite the beneﬁts of early planting (Abdallah, 2012; Gaile, 2012;
+Amjadian et al., 2013), ﬁeld observations in Malawi and Mozambique
+show that farmers rarely plant early in the season. Furthermore, the ad-
+vantages of timely planting are hardly tested in agronomic experiments
+comparing farmer's practice and the different CA cropping systems, as
+these are usually planted at the same time.
+
+Thus the perceived advantage of timely planting can be evaluated in
+essence in farm scale studies, which take into account labour, land size
+and other resources impacting farmers' ability to plant their crop.
+Such ﬁeld experiments to study early planting are complex and re-
+source intensive as they require many years of research and get con-
+founded by other seasonal factors hence a crop modelling approach is
+warranted. This study therefore investigated the value of planting
+time for different CA and non-CA based cropping systems using
+
+previous weather records and the consequent maize yields and their
+variability across six contrasting agro-ecologies of Southern Africa
+using model simulations.
+
+2. Materials and methods
+
+The study used 30-years of climate records (from 1966 to 2001) and
+soil characterisations from six contrasting agro-ecologies across South-
+ern Africa (Supplementary Fig. 1). The data generated emerged from
+three major steps or procedures (Fig. 1), which involved (i) the quanti-
+ﬁcation of household labour availability; (ii) DSSAT model parameteri-
+zation and validation; and (iii) analysis of simulated results (Fig. 1).
+The procedures used at each step are described below.
+
+Two sites representing wet and dry agro-ecologies were selected from
+each of the three countries; Malawi: (Chitedze and Chitala), Mozambique
+(Angonia and Chimoio), and Zimbabwe (Marondera and Matopos), Fig. 2.
+
+2.1. Malawi
+
+Chitedze (13.97°S; 33.65°E and 1150 m.a.s.l.) is a sub-humid region
+receiving a mean of 900 mm of rainfall per annum, predominant soils
+are Ferruginous Alﬁsols. Chitala is a semi-arid region in Malawi's low-
+lands (13.25°S; 34.30°E and 606 m.a.s.l.). Chitala receives a mean of
+1170 mm of rainfall per annum with the majority falling between No-
+vember and May. The site experiences high rainfall variability as well
+as high temperatures (Fig. 2). Predominant soils are sandy clay-loam
+soils (Young and Brown, 1962). Manually prepared ridges and furrows
+and the use of the dibble stick are the most common crop establishment
+techniques in Malawi (Ngwira and Aune, 2011).
+
+2.2. Mozambique
+
+Chimoio (19.12°S; 33.47°E and 750 m.a.s.l.) in Manica Province, re-
+ceives a mean of 1035 mm total rainfall per year (Harrison et al., 2011).
+Typical soils are ﬁne textured, well drained, red in colour and originate
+from acidic metamorphic weathering rocks (Famba et al., 2011). Angonia
+(14.545°S; 34.185°E and 1220 m.a.s.l.) in Tete Province, receives 947 mm
+mean annual rainfall, and the most common soils are Lixisols and Luvisols
+(Geurts, 1997; Amane and Mlay, 2002). Like Malawi, farmers here also
+commonly use manually prepared ridges and furrows for planting.
+
+2.3. Zimbabwe
+
+Marondera is located in agro-ecological region IIa in Zimbabwe's
+Mashonaland East province (18.18°S and 31.55°E and 1689 m.a.s.l.).
+The site receives a mean of 813 mm of rainfall per annum and is domi-
+nated by light textured sands classiﬁed as Ferric Acrisols (Nyamapfene,
+1991). Matopos, (20.378°S; 28.509°E and 1365 m.a.s.l.), is a semi-arid
+area in Zimbabwe's agro-ecological region IV in Matabeleland South
+Province and receives a mean of 557 mm of rainfall per annum
+(Vincent and Thomas, 1961). Predominant soils are Chromic-Leptic
+Cambisols (Mashingaidze et al., 2012). The most common cropping sys-
+tem across Zimbabwe is animal traction powered maize production
+under conventional mouldboard ploughing (ZCATF, 2009).
+
+2.4. Cropping systems
+
+The modelled cropping systems included manual and animal trac-
+tion CA systems. As a control, the conventional mouldboard ploughing
+early (CMP-early) system mimicked a farmer with full access to draught
+oxen, i.e. with the capacity to start land preparation at the onset of the
+cropping season. Also a control without access to draught power in a
+late cropping system (CMP-late) was included. The latter farmer relies
+on hired or borrowed animals only accessible when owners of draught
+animals have ﬁnished their own land preparation and planting. Al-
+though the ridge and furrow system is commonly used in Malawi and
+
+I. Nyagumbo et al. / Agricultural Systems 150 (2017) 21–33
+
+23
+
+Weather data:
+
+30-yr daily rainfall 
+data;  Min/Max T; 
+Solar Rad
+
+Available labour 
+per household
+
+Labour requirements for 
+each cropping system
+
+Determination of time requirements for 
+planting 1 ha by cropping system and site or 
+location using MS-Excel spreadsheet
+
+Determination of planting dates for each cropping 
+system and location over 30 years using an 
+algorithm on condition planting takes place after 
+30 mm in 3 consecutive days prepared in MS-
+Excel
+
+DSSAT model calibrations based on soil, 
+variety, weather and measured experimental 
+yield data from each location
+
+N
+O
+
+I
+T
+A
+D
+I
+L
+A
+V
+
+DSSAT model simulations of 30yr maize 
+yields based on predetermined planting 
+dates for each cropping system and location
+
+DSSAT model simulations of 30yr maize 
+yields based on opportunistic/flexible 
+planting dates for a conventional till 
+cropping system and each location
+
+(i)
+
+S
+I
+S
+Y
+L
+A
+N
+A
+R
+U
+O
+B
+A
+L
+
+ 
+
+(ii)
+
+ 
+
+ 
+
+L
+E
+D
+O
+M
+T
+A
+S
+S
+D
+
+ 
+
+D
+N
+A
+N
+O
+
+ 
+
+I
+T
+A
+Z
+I
+R
+E
+T
+E
+M
+A
+R
+A
+P
+
+(iii) 
+
+ 
+
+S
+T
+U
+P
+T
+U
+O
+A
+T
+A
+D
+
+ 
+
+S
+I
+S
+Y
+L
+A
+N
+A
+D
+N
+A
+
+ 
+
+30 yr Maize 
+yield data 
+generated for 
+each cropping 
+system and 
+location
+
+Optimum planting 
+dates determined 
+from analysis of 
+yield vs time of 
+planting graphs
+and yield 
+variability analysis
+
+30 yr 
+Optimum 
+planting 
+dates shift 
+analysis by 
+location
+
+30 yr planting 
+dates from 
+MS-Excel 
+outputs by 
+cropping 
+system and 
+location
+
+Fig. 1. A schematic illustration of steps and procedures employed to generate data outputs in the study.
+
+parts of Mozambique, this study focused on mouldboard ploughing as
+the conventional farmer practice. The two conventional ploughing sys-
+tems were compared to ﬁve CA systems which included the CA manual
+basins early system (CA-Basins early) which follows the recommended
+practice of preparing basins before the onset of the season (ZCATF,
+2009). CA basins are a commonly used technique in Zimbabwe often en-
+abling farmers to plant timely as also conﬁrmed by other studies
+(Nyamangara et al., 2013). The CA-Basins late system (CA-Basins late)
+assumed that preparation of basins would only commence on receiving
+the ﬁrst rains. In addition, two animal traction CA systems were consid-
+ered. One of these was the Fitarelli Direct seeding system (CA-Direct
+seed), which is capable of seeding, fertilization and covering in one
+pass. The other was based on the Magoye Ripper system (CA-Ripper),
+consisting of a tine attached onto the conventional mouldboard plough
+beam that rips and opens a planting furrow of up to 0.20 m depth. With
+this system, rip-lines are opened using a pair of draft animals, usually at
+the onset of the season. In the CA-Dibble stick system (CA-Dibble), a
+sharp-pointed planting stick is used to manually make shallow holes
+(approximately 4–5 cm diameter and 0.03–0.05 m deep) into which
+seeds are planted (FAO, 2010). The CA-Dibble stick is used by at least
+78% of farmers practising CA in Malawi, and is also used traditionally
+in conventional systems for marking planting holes on top of the ridges
+(Ngwira and Aune, 2011; Nyagumbo et al., 2016).
+
+2.5. Cropping system labour requirements
+
+Values of farm labour availability at each location were derived from
+the results of large household surveys collected across all studied
+
+countries (Supplementary Table 1). The labour days required for plant-
+ing a hectare using the six different CA cropping systems was compiled
+from on farm research trials managed by CIMMYT and ICRISAT in Mala-
+wi, Mozambique and Zimbabwe (Siziba, 2008). Using labour require-
+ments data for each system, the time required to prepare and plant
+1 ha was determined at each location. This was calculated by dividing
+the time in days ha−1 required by each cropping system by the average
+labour per household available in each region assuming an 8-h working
+day (Supplementary Table 1). We assumed that for each location, the
+necessary equipment and draft animals were available.
+
+N.B. CMP-early = Conventional mouldboard ploughing used by
+farmers with early access to draft power or CMP-late, used by farmers
+with delayed access to draft animals; CA-basins early = CA basins pre-
+pared in winter; CA-Basins late = CA Basins prepared at the onset of
+rains; CA Direct seed = CA planted with the Fitarelli animal traction di-
+rect seeder; CA-ripper = CA with animal traction ripper, CA dibble = CA
+seeding using the dibble stick system.
+
+2.6. Earliest planting date
+
+Using 30 years of historical weather (1966–2001) for each of the six
+locations (Fig. 2), the earliest possible planting dates were determined
+in retrospect for each season and cropping system (Fig. 1). We deﬁned
+a planting opportunity as when at least 30 mm of rain were accumulat-
+ed over 3 consecutive days, and that planting would take place within
+3 days after the rain has stopped (Raes et al., 2004). Calculations were
+made using an EXCEL® spreadsheet. We assumed planting beyond
+3 days after a rain event would result in germination failure. In cases
+
+Angonia-Mozambique: Mean total in-crop rainfall = 837 mm
+
+6
+6
+9
+1
+
+7
+6
+9
+1
+
+8
+6
+9
+1
+
+9
+6
+9
+1
+
+0
+7
+9
+1
+
+1
+7
+9
+1
+
+2
+7
+9
+1
+
+3
+7
+9
+1
+
+4
+7
+9
+1
+
+5
+7
+9
+1
+
+6
+7
+9
+1
+
+7
+7
+9
+1
+
+8
+7
+9
+1
+
+9
+7
+9
+1
+
+0
+8
+9
+1
+
+1
+8
+9
+1
+
+2
+8
+9
+1
+
+3
+8
+9
+1
+
+4
+8
+9
+1
+
+5
+8
+9
+1
+
+6
+8
+9
+1
+
+7
+8
+9
+1
+
+8
+8
+9
+1
+
+9
+8
+9
+1
+
+0
+9
+9
+1
+
+1
+9
+9
+1
+
+2
+9
+9
+1
+
+3
+9
+9
+1
+
+4
+9
+9
+1
+
+5
+9
+9
+1
+
+6
+9
+9
+1
+
+Chitala-Malawi: Mean total in-crop rainfall = 689 mm
+
+6
+6
+9
+1
+
+7
+6
+9
+1
+
+8
+6
+9
+1
+
+9
+6
+9
+1
+
+0
+7
+9
+1
+
+1
+7
+9
+1
+
+2
+7
+9
+1
+
+3
+7
+9
+1
+
+4
+7
+9
+1
+
+5
+7
+9
+1
+
+6
+7
+9
+1
+
+7
+7
+9
+1
+
+8
+7
+9
+1
+
+9
+7
+9
+1
+
+0
+8
+9
+1
+
+1
+8
+9
+1
+
+2
+8
+9
+1
+
+3
+8
+9
+1
+
+4
+8
+9
+1
+
+5
+8
+9
+1
+
+6
+8
+9
+1
+
+7
+8
+9
+1
+
+8
+8
+9
+1
+
+9
+8
+9
+1
+
+0
+9
+9
+1
+
+1
+9
+9
+1
+
+2
+9
+9
+1
+
+3
+9
+9
+1
+
+4
+9
+9
+1
+
+5
+9
+9
+1
+
+6
+9
+9
+1
+
+Marondera-Zimbabwe: Mean total in-crop rainfall = 625 mm
+
+24
+
+)
+
+m
+m
+
+(
+ 
+l
+l
+
+a
+f
+n
+a
+R
+
+i
+
+)
+
+m
+m
+
+(
+ 
+l
+l
+
+a
+f
+n
+a
+R
+
+i
+
+1600
+
+1400
+
+1200
+
+1000
+
+800
+
+600
+
+400
+
+200
+
+0
+
+1600
+
+1400
+
+1200
+
+1000
+
+800
+
+600
+
+400
+
+200
+
+0
+
+1600
+
+1400
+
+1200
+
+1000
+
+)
+
+m
+m
+
+(
+ 
+l
+l
+
+a
+f
+n
+a
+R
+
+i
+
+800
+
+600
+
+400
+
+200
+
+0
+
+9
+6
+9
+1
+
+0
+7
+9
+1
+
+1
+7
+9
+1
+
+2
+7
+9
+1
+
+3
+7
+9
+1
+
+4
+7
+9
+1
+
+5
+7
+9
+1
+
+6
+7
+9
+1
+
+7
+7
+9
+1
+
+8
+7
+9
+1
+
+9
+7
+9
+1
+
+0
+8
+9
+1
+
+1
+8
+9
+1
+
+2
+8
+9
+1
+
+3
+8
+9
+1
+
+4
+8
+9
+1
+
+5
+8
+9
+1
+
+6
+8
+9
+1
+
+7
+8
+9
+1
+
+8
+8
+9
+1
+
+9
+8
+9
+1
+
+0
+9
+9
+1
+
+1
+9
+9
+1
+
+2
+9
+9
+1
+
+3
+9
+9
+1
+
+4
+9
+9
+1
+
+5
+9
+9
+1
+
+6
+9
+9
+1
+
+7
+9
+9
+1
+
+8
+9
+9
+1
+
+Year
+
+I. Nyagumbo et al. / Agricultural Systems 150 (2017) 21–33
+
+)
+
+C
+°
+(
+ 
+e
+r
+u
+t
+a
+r
+e
+p
+m
+e
+T
+
+40
+
+30
+
+20
+
+10
+
+0
+
+-10
+
+-20
+
+-30
+
+-40
+
+-50
+
+)
+
+C
+°
+(
+ 
+e
+r
+u
+t
+a
+r
+e
+p
+m
+e
+T
+
+40
+
+30
+
+20
+
+10
+
+0
+
+-10
+
+-20
+
+-30
+
+-40
+
+-50
+
+)
+
+C
+°
+(
+ 
+e
+r
+u
+t
+a
+r
+e
+p
+m
+e
+T
+
+40
+
+30
+
+20
+
+10
+
+0
+
+-10
+
+-20
+
+-30
+
+-40
+
+-50
+
+)
+
+m
+m
+
+(
+ 
+l
+l
+
+a
+f
+n
+a
+R
+
+i
+
+1600
+
+1400
+
+1200
+
+1000
+
+800
+
+600
+
+400
+
+200
+
+0
+
+)
+
+m
+m
+
+(
+ 
+l
+l
+
+a
+f
+n
+a
+R
+
+i
+
+)
+
+m
+m
+
+(
+ 
+l
+l
+
+a
+f
+n
+a
+R
+
+i
+
+1600
+
+1400
+
+1200
+
+1000
+
+800
+
+600
+
+400
+
+200
+
+0
+
+1600
+
+1400
+
+1200
+
+1000
+
+800
+
+600
+
+400
+
+200
+
+0
+
+Chimoio-Mozambique: Mean total in-crop rainfall = 814 mm
+
+6
+6
+9
+1
+
+7
+6
+9
+1
+
+8
+6
+9
+1
+
+9
+6
+9
+1
+
+0
+7
+9
+1
+
+1
+7
+9
+1
+
+2
+7
+9
+1
+
+3
+7
+9
+1
+
+4
+7
+9
+1
+
+5
+7
+9
+1
+
+6
+7
+9
+1
+
+7
+7
+9
+1
+
+8
+7
+9
+1
+
+9
+7
+9
+1
+
+0
+8
+9
+1
+
+1
+8
+9
+1
+
+2
+8
+9
+1
+
+3
+8
+9
+1
+
+4
+8
+9
+1
+
+5
+8
+9
+1
+
+6
+8
+9
+1
+
+7
+8
+9
+1
+
+8
+8
+9
+1
+
+9
+8
+9
+1
+
+0
+9
+9
+1
+
+1
+9
+9
+1
+
+2
+9
+9
+1
+
+3
+9
+9
+1
+
+4
+9
+9
+1
+
+5
+9
+9
+1
+
+Chitedze-Malawi: Mean total in-crop rainfall = 678 mm
+
+6
+6
+9
+1
+
+7
+6
+9
+1
+
+8
+6
+9
+1
+
+9
+6
+9
+1
+
+0
+7
+9
+1
+
+1
+7
+9
+1
+
+2
+7
+9
+1
+
+3
+7
+9
+1
+
+4
+7
+9
+1
+
+5
+7
+9
+1
+
+6
+7
+9
+1
+
+7
+7
+9
+1
+
+8
+7
+9
+1
+
+9
+7
+9
+1
+
+0
+8
+9
+1
+
+1
+8
+9
+1
+
+2
+8
+9
+1
+
+3
+8
+9
+1
+
+4
+8
+9
+1
+
+5
+8
+9
+1
+
+6
+8
+9
+1
+
+7
+8
+9
+1
+
+8
+8
+9
+1
+
+9
+8
+9
+1
+
+0
+9
+9
+1
+
+1
+9
+9
+1
+
+2
+9
+9
+1
+
+3
+9
+9
+1
+
+4
+9
+9
+1
+
+5
+9
+9
+1
+
+Matopos-Zimbabwe: Mean total in-crop rainfall = 353 mm
+
+9
+6
+9
+1
+
+0
+7
+9
+1
+
+1
+7
+9
+1
+
+2
+7
+9
+1
+
+3
+7
+9
+1
+
+4
+7
+9
+1
+
+5
+7
+9
+1
+
+6
+7
+9
+1
+
+7
+7
+9
+1
+
+8
+7
+9
+1
+
+9
+7
+9
+1
+
+0
+8
+9
+1
+
+1
+8
+9
+1
+
+2
+8
+9
+1
+
+3
+8
+9
+1
+
+4
+8
+9
+1
+
+5
+8
+9
+1
+
+6
+8
+9
+1
+
+7
+8
+9
+1
+
+8
+8
+9
+1
+
+9
+8
+9
+1
+
+0
+9
+9
+1
+
+1
+9
+9
+1
+
+2
+9
+9
+1
+
+3
+9
+9
+1
+
+4
+9
+9
+1
+
+5
+9
+9
+1
+
+6
+9
+9
+1
+
+7
+9
+9
+1
+
+8
+9
+9
+1
+
+Year
+
+In crop rainfall (mm)
+
+Tmax (°C)
+
+Tmin (°C)
+
+)
+
+C
+(
+°
+ 
+e
+r
+u
+t
+a
+r
+e
+p
+m
+e
+T
+
+40
+
+30
+
+20
+
+10
+
+0
+
+-10
+
+-20
+
+-30
+
+-40
+
+-50
+
+)
+
+C
+(
+°
+ 
+e
+r
+u
+t
+a
+r
+e
+p
+m
+e
+T
+
+40
+
+30
+
+20
+
+10
+
+0
+
+-10
+
+-20
+
+-30
+
+-40
+
+-50
+
+)
+
+C
+(
+°
+ 
+e
+r
+u
+t
+a
+r
+e
+p
+m
+e
+T
+
+40
+
+30
+
+20
+
+10
+
+0
+
+-10
+
+-20
+
+-30
+
+-40
+
+-50
+
+Fig. 2. 30 year in-crop rainfall patterns of the study sites located in Malawi, Mozambique and Zimbabwe. NB: In crop rainfall refers to precipitation received from planting to harvesting.
+
+where the time required for land preparation and seeding exceeded
+3 days, planting would be considered only feasible in the next planting
+window i.e. when the next 30 mm over three days would be received.
+The labour availability, cropping system labour requirements and rain-
+fall patterns thus determined planting dates for each season and simu-
+lated treatment. Maize yields corresponding to each determined
+planting date and cropping system for each year for the varieties
+MH26 in Malawi, Tsangano in Mozambique and ZS261 in Zimbabwe,
+were then simulated using the validated DSSAT model (Fig. 1).
+
+2.7. DSSAT model parameterisation and validation
+
+DSSAT V4.5, a process based cropping systems model (Jones et al.,
+2003), was used to predict maize crop yields in this study. The model
+has been used previously to simulate maize yields in other studies in
+Southern Africa (Zinyengere et al., 2015). Here the model was set up
+based on measured weather, soil and crop management data. It was
+then validated against a set of measured phenology and maize yield
+data from each of the six locations. The DSSAT model was therefore
+
+set up for each of the six locations to assess the interaction of the key
+variables on planting dates and crop yields. For conventional ploughing
+systems, the model was speciﬁed to till the soil to 0.25 m using the
+mouldboard plough. For CA, the model was speciﬁed to apply 2.5 t
+ha−1 of maize residue mulch, and to only till the planting station in
+the CA-Dibble stick and CA-Direct seed systems. For the ripper system
+the model was speciﬁed to only till the planting row (Jones et al.,
+2003; Porter et al., 2010).
+
+The different tillage systems were simulated on the basis of
+predetermined soil speciﬁc parameters such as (1) fraction of residue
+incorporated, (2) per cent soil surface disturbed, (3) run off curve num-
+ber (Table 2), (4) soil bulk density due to tillage, and (5) soil saturated
+hydraulic conductivity (Jones et al., 2003; Porter et al., 2010). Different
+run-off curve numbers (Endale et al., 2010; Porter et al., 2010), were
+thus used for the different cropping systems (Table 2). Soil types in
+each speciﬁc agro-ecology had a unique initial run off curve number
+that determines erosion, run off and inﬁltration. Tillage equipment
+used in different cropping systems further altered the run off curve
+number within the same soil type and agro-ecology. The presence or
+
+I. Nyagumbo et al. / Agricultural Systems 150 (2017) 21–33
+
+25
+
+absence of soil cover also altered the run off curve number within the
+same soil type, tillage and agro-ecology (WSDOT, 2014).
+
+Within the DSSAT crop management module, the user can specify
+the planting date, sowing depth and related aspects on a daily time
+scale (Jones et al., 2003). The model however does not account for dis-
+eases, pests and socio-economic components such as labour and eco-
+nomics (Jones et al., 2003). To bridge this gap,
+the labour
+requirements for each cropping system were thus computed as stated
+earlier using an EXCEL® spreadsheet based on published household la-
+bour (Supplementary Table 1), land area and tillage system (Table 1).
+The DSSAT model then indirectly accounted for the labour dynamics
+in the different locations through the labour constrained predetermined
+EXCEL® planting dates for each year and cropping system (Jones et al.,
+2003).
+
+2.8. Soil parameterisation
+
+The DSSAT model's soil module was parameterised based on the ob-
+served and measured soil characteristics from each of the six agro-ecol-
+ogies (Table 2).
+
+2.9. Maize agronomy
+
+At Marondera and Matopos, we simulated a basal application of
+compound D (7:14:7) at a rate of 165 kg ha−1, and Ammonium Nitrate
+top dressing (34.5% N) at a rate of 200 kg ha−1 (Supplementary Table
+3). Similarly for Angonia and Chimoio, the model was set to apply a
+basal fertilization (12-24-12) at a rate of 100 kg ha−1, while the top
+dressing was applied at 100 kg ha−1 Urea (46% N)(Nyagumbo et al.,
+2016; SIMLESA, 2010a). At Chitedze, the basal fertilizer was 165 kg
+ha−1 (7:14:7) at planting, and 100 kg ha−1 of Urea (46%N) as top dress-
+ing. At Chitala, a basal dressing (23-21-0 (+4S)) was simulated at a rate
+of 100 kg ha−1 in combination with Urea applied at 150 kg ha−1
+(Nyagumbo et al., 2016; SIMLESA, 2010b). In all cases top dressing
+urea or ammonium nitrate was applied at 4–6 weeks after crop emer-
+gence. An important assumption in this study is that weed control im-
+poses similar labour demands across the tested systems i.e. that
+weeds are controlled effectively using herbicides.
+
+2.10. Model testing
+
+Table 3 shows the results of the model testing for maize phenology
+and yield under both conventional and CA cropping systems obtained
+from experiments previously conducted at each site. The capacity of
+the model to reproduce observed results was determined by calculating
+the Root Mean Square Error (RMSE) (Table 3) which was computed as:
+
+ð1Þ
+
+s
+ﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃ
+Þ2=n
+ð
+Pi–Oi
+
+n
+∑
+i¼1
+
+RMSE ¼
+
+∙ 100
+O
+
+where: Pi represented the predicted values;
+Oi represented the observed values and.
+
+Table 2
+Run off curve numbers applied in DSSAT for different cropping systems for the predomi-
+nant soils from Marondera and Matopos (Zimbabwe), Angonia and Chimoio (Zimbabwe)
+and Chitala and Chitedze (Zimbabwe).
+Source: Curve numbers sourced and adapted from (WSDOT, 2014) and (Endale et al.,
+2010; Porter et al., 2010).
+
+Cropping System Marondera Matopos Angonia Chimoio Chitala Chitedze
+
+(Runoff curve number)
+
+CMP early
+CMP late
+CA-Basins early
+CA-Basins late
+CA-Direct seed
+CA-Ripper
+CA-Dibble
+
+77
+77
+30
+30
+32
+32
+39
+
+77
+77
+30
+30
+32
+32
+39
+
+94
+94
+78
+78
+79
+79
+80
+
+86
+86
+58
+58
+58
+58
+61
+
+91
+91
+71
+71
+72
+72
+74
+
+91
+91
+71
+71
+72
+72
+74
+
+N.B. CMP-early = Conventional mouldboard ploughing used by farmers with early access
+to draft power or CMP-late, used by farmers with delayed access to draft animals; CA-Ba-
+sins early = CA basins prepared in winter; CA-Basins late = CA-Basins prepared at the
+onset of rains; CA-Direct seed = CA planted with the Fitarelli animal traction direct seed-
+er; CA-ripper = CA with animal traction ripper, CA dibble = CA seeding using the dibble
+stick system.
+
+O observed mean value.
+
+2.11. Optimum planting date
+
+The optimum planting date for each location assuming no labour re-
+source constraints, was also established by assuming planting would
+take place whenever the location received 30 mm rainfall within 3 con-
+secutive days in each season. Thus the earliest planting dates (as indi-
+cated in the preceding section) differ from optimum planting dates
+established here in that the former have restrictions imposed on them
+by the labour requirements and available labour in that location as
+well as the cropping system. Here, optimum planting date was deﬁned
+as the median or mean planting date (Julian date) that matched the
+maximum simulated yield over the 30-year period. Yield variability
+within ±4 days of the optimum date were computed as the coefﬁcient
+of variation (CV) of yields from all simulations within that optimum
+planting date period and over the 30 years with no labour constraint
+restrictions.
+
+2.12. Data analysis
+
+The labour constrained planting dates and simulated maize yields
+for each location, were subjected to Analysis of Variance (ANOVA)
+with seasons or years (n = 30) as replicates using GENSTAT version
+17 (VSN, 2011). This enabled statistical comparisons between cropping
+systems of the earliest feasible planting date and yield for each location.
+Linear regressions of planting date versus year, were used to detect
+shifts in planting dates over time for each location. To establish the con-
+sequences of early or late planting across the six locations, mean yield
+variability, measured by coefﬁcient of variation (CV), were computed
+for each site for an 8 day range within the optimum planting date and
+40 days before (early) or after (late) this optimum range. The data
+was then subjected to ANOVA with site or location as a replicate.
+
+Table 1
+Calculated time taken (days ha−1) to seed each cropping system in different locations and
+agro-ecologies in Southern Africa.
+
+3. Results
+
+Cropping System Time (days) required to plant 1 ha
+
+3.1. Seasonal rainfall variability by location
+
+Marondera Matopos Angonia Chimoio Chitala Chitedze
+
+CMP early
+CMP late
+CA-Basins early
+CA-Basins late
+CA-Direct seed
+CA-Ripper
+CA-Dibble
+
+4.0
+18.0
+1.6
+7.0
+0.5
+2.5
+5.1
+
+3.3
+17.3
+1.3
+5.8
+0.4
+2.0
+4.2
+
+2.1
+16.1
+0.9
+3.8
+0.3
+1.3
+3.6
+
+1.5
+15.5
+0.6
+2.7
+0.2
+0.9
+2.6
+
+2.3
+16.3
+0.9
+4.1
+0.3
+1.4
+2.9
+
+2.1
+16.1
+0.9
+3.8
+0.3
+1.3
+3.6
+
+Chitala and Matopos had the highest rainfall variability (CV N 90%)
+featuring mostly in the months of October and May while the other
+four locations had much lower mean monthly CVs (Fig. 3). Angonia,
+Chitedze and Chitala generally have low monthly CVs during the No-
+vember–April period (CVs b 55%). Thus the months of October and
+May, which correspond to the start and end of the season, respectively,
+show the highest variability in rainfall on most locations (Fig. 3).
+
+26
+
+I. Nyagumbo et al. / Agricultural Systems 150 (2017) 21–33
+
+Table 3
+mean square error values (RMSE) between observed and simulated phenology at Angonia (2010/11–12/13), Chimoio (2010/11–12/13), Chitedze (2009/10–11/12), Chitala (2010/11–12/
+13), Marondera (2004/5–10/11) and Matopos (2004/05–7/8) under the conventional (CP) and conservation agriculture (CA) cropping systems.
+
+Parameter
+
+Emergence
+Silking
+Maturity
+Grain yield
+Stover yield
+
+RMSE (%)
+
+Angonia
+
+CP
+
+0
+3.5
+4.1
+16.5
+4.6
+
+CA
+
+0
+3.5
+4.1
+27.3
+13.5
+
+Chimoio
+
+Chitedze
+
+Chitala
+
+Marondera
+
+Matopos
+
+CP
+
+0
+3.5
+4.1
+9.6
+5.5
+
+CA
+
+0
+3.5
+4.1
+4.6
+5.7
+
+CP
+
+0
+6.5
+5.1
+25.7
+26.5
+
+CA
+
+0
+7.6
+5.8
+20.2
+27.5
+
+CP
+
+0
+3.5
+4.1
+25.2
+22.5
+
+CA
+
+0
+3.5
+4.1
+9.3
+18.2
+
+CP
+
+0
+3.3
+1.8
+9.3
+19.8
+
+CA
+
+0
+6.2
+3.8
+25.1
+17.6
+
+CP
+
+0
+3.1
+2.1
+10.1
+14
+
+CA
+
+0
+4.1
+4.2
+17.4
+19.1
+
+3.2. Timeliness of planting
+
+3.3. Cropping system yield and planting date
+
+Results showed that CA-Basins early, CA-Direct seed and CA-Ripper
+systems could be sown signiﬁcantly earlier than CA-Dibble, CMP-early
+and CMP-late cropping systems across all the six locations (Fig. 4). At
+Angonia, over the 30-year period, CA-Basins early, CA-Direct seed and
+CA-Ripper cropping systems, were also seeded earlier than CMP-late
+(1 Dec vs. 24 Dec). A similar pattern was also observed at Chimoio
+where the CA-Basins early, CA-Direct seed and CA-Ripper cropping sys-
+tems, were also sown signiﬁcantly earlier than CMP-late (7 Nov vs. 10
+Dec). The pattern was also similar at Chitala, Chitedze, Marondera and
+Matopos where CMP-late was always seeded last. The CA-Direct seed
+and CA-Ripper cropping systems were always sown with the ﬁrst plant-
+ing opportunity (Fig. 4). At Chitala the earliest planting opportunity was
+6th Dec with the CA-Basins early, the CA-Direct seed systems and the
+CA-Dibble and CMP-early were seeded 3.5 and 4.5 days later, respec-
+tively (Fig. 4). Generally, the CA-Basins early system was seeded in the
+middle of the planting period, this is 8th and 16th Dec. at both Chitedze
+and Chitala, respectively. At Matopos and Marondera the CA-Basins
+early was seeded signiﬁcantly earlier than the other systems i.e. on 8
+and 10 Nov, respectively. Similar to all locations, the CMP-late system
+was sown signiﬁcantly later (P b 0.05), on 15th and 17th Dec, at
+Marondera and Matopos, respectively (Fig. 4).
+
+Linear regression analysis of the earliest planting dates against
+time (years) combining all cropping systems showed a signiﬁcant
+delay (P b 0.05) in planting dates of 0.285 and 0.395 days per year
+over the 30 year time series at Chitala and Chitedze in Malawi
+(Table 4). However, no signiﬁcant trend was observed at the other
+four locations.
+
+Simulations results showed that at Angonia maize yields from CA-
+Basins early, CA-Direct seed, CA-Ripper and CMP-early, were signiﬁ-
+cantly lower than those from CA-Basins late, CMP-late, and the CA-Dib-
+ble cropping systems (Fig. 5). Chimoio also had the lowest yields under
+the CA-Basins early cropping system, while CA-Basins late and CMP-
+late, showed the highest yields (Fig. 5). At Chitala, maize yield differ-
+ences across cropping systems were not signiﬁcant (Fig. 5). Yet the
+CMP-early cropping system at Chitedze in Malawi experienced the low-
+est yield (2951 kg ha−1), which was in sharp contrast to the signiﬁcant-
+ly higher yields (N4000 kg ha−1) in the other cropping systems at that
+location.
+
+However at Matopos and Marondera in Zimbabwe, the CMP-late
+system showed the lowest yields while the CA-Ripper cropping system
+produced the highest yields at both locations (Fig. 5). Thus early plant-
+ing achieved with the CA-Ripper on these two locations translated into
+higher yields as well. The cumulative distribution functions for grain
+yield (Fig. 6) show that out of the six sites, large differences mostly aris-
+ing from different planting dates, were observed at Chimoio, Chitedze
+and the two Zimbabwean locations Marondera and Matopos. At
+Chitedze the CMP-early planting system often caused low yields with
+almost zero probability of exceeding 4000 kg ha−1. On the other hand,
+Angonia and Chitala showed the narrowest differentials in yields be-
+tween systems (Fig. 6). Sites experiencing erratic rainfall patterns dur-
+ing the growing season such as Chimoio and Matopos, had high risk of
+failure having the lowest probabilities of attaining yields higher than
+2500 kg ha−1 (i.e. the minimum yield commonly required by small-
+holder farmers to be food secure) (Supplementary Table 4).
+
+3.4. Optimum planting dates for each location
+
+The optimum planting dates varied from location to location (Fig. 7,
+Table 5). Thus at Angonia the highest yields were obtained from planting
+around 26 Dec (Fig. 7a) while at Chimoio optimum yields (yield CV =
+9%), were obtained with planting on 7 Jan (Table 5). The results from
+Chimoio showed a high likelihood of complete crop failures (Fig. 7b). At
+Chitala, the highest yields were observed on plantings around 27 Dec
+(yield CV = 12%), while early plantings i.e. before 13 Oct, led to complete
+crop failure (Fig. 4c). At Chitedze, optimum yields were obtained on
+plantings around 5 Dec (Table 5, Fig. 7d). At Marondera planting on 4
+Dec. would produce optimum yields (Table 4), in spite of a highly erratic
+pattern (Fig. 7e). At Matopos planting on 7 Dec (yield CV = 77%) would
+give the highest yields (Table 5) while planting earlier than 16 Oct and
+later than 4 May would also lead to complete crop failures. Matopos
+also showed the most erratic yield pattern of the six locations and
+showed fewer planting opportunities than other locations as observed
+by the few and sparse data points in scatter plots of maize grain yield
+against planting date (Fig. 7f). Except for these two sites Chimoio and
+Matopos with highly erratic rainfall patterns, irrespective of cropping
+system, yields generally declined as the number of days before or after
+the optimum date increased for that location (Fig. 8a).
+
+Fig. 3. Coefﬁcient of variability (CV, %) of monthly rainfall for six locations in Southern
+Africa derived from 30 years of observed climatology.
+
+I. Nyagumbo et al. / Agricultural Systems 150 (2017) 21–33
+
+27
+
+CMP-early
+
+CMP-late
+
+CA-Basins-early
+
+CA-Basins-late
+
+CA-Direct seed
+
+CA-Ripper
+
+CA-Dibble
+
+04-Jan
+
+e
+t
+a
+d
+
+ 
+ 
+
+g
+n
+i
+t
+n
+a
+l
+p
+
+ 
+ 
+t
+s
+e
+i
+l
+r
+a
+e
+ 
+ 
+
+n
+a
+e
+M
+
+25-Dec
+
+a
+
+15-Dec
+
+b
+
+b
+
+a
+
+05-Dec
+
+c
+
+c
+
+c
+
+c
+
+b
+
+c
+
+c
+
+d
+
+d
+
+d
+
+25-Nov
+
+15-Nov
+
+05-Nov
+
+26-Oct
+
+a
+
+b
+
+c
+
+c
+
+cd
+
+d
+
+d
+
+a
+
+b
+
+cd
+
+c
+
+cde
+
+de
+
+e
+
+a
+
+ab
+
+a
+
+a
+
+a
+
+b
+
+b
+
+b
+
+c
+
+d
+
+c
+
+cd
+
+d
+
+d
+
+Angonia-Mz
+
+Chimoio-Mz
+
+Chitala-Mw
+
+Chitedze-Mw
+
+Marondera-Zw
+
+Matopos-Zw
+
+Site and Country
+
+Fig. 4. Mean earliest planting dates for different conventional and conservation agriculture cropping systems across agro-ecologies in Malawi, Mozambique and Zimbabwe. N.B. CMP-
+early = Conventional mouldboard ploughing used by farmers with early access to draft power or CMP-late, used by farmers with delayed access to draft animals; CA-basins early =
+CA basins prepared in winter; CA-Basins late = CA Basins prepared at the onset of rains; CA Direct seed = CA planted with the Fitarelli animal traction direct seeder; CA-ripper = CA
+with animal traction ripper, CA dibble = CA seeding using the dibble stick system. Means with the same letter at each location are not signiﬁcantly different at 5% signiﬁcance level.
+
+For each location the calculated median, mean and CV of maize yield
+obtained within ±4 days of optimum planting date, also suggested that
+the most erratic rainfed cropping environment was Matopos with a
+yield CV of 77%, while the most reliable was Angonia with a CV = 8%
+(Table 5). Matopos showed the lowest mean and median yield. Similarly
+assuming a bell shaped yield curve, results suggest that the most reli-
+able environment in terms of rainfall was Angonia (R2 = 85), and that
+the least reliable or highest risk location was Matopos (R2 = 28). Conse-
+quently, yield variability was thus found to be signiﬁcantly lower (P =
+0.007) for optimum date compared to early or late planting practices
+(Fig. 8b).
+
+4. Discussion
+
+4.1. Timely planting merits of different cropping systems at each location
+
+The earlier planting with the CA-Basin early, CA-Direct seed and CA-
+Ripper, compared to the CMP-early, CA Basins late and CMP-late
+cropping systems, were across all locations. This is attributed to differ-
+ences in the required labour and time for land preparation (Kucharik,
+2006). Planting and basal fertilization operations require extra labour
+in manual CA-Basins and CA-Ripper systems but these operations are
+conducted simultaneously in the mechanized CA-Direct seed system
+and this makes the CA-Direct seed the earliest planting cropping system
+(Siziba, 2008). Generally basins are labour intensive (Mazvimavi and
+
+Table 4
+Linear regression results of planting date effects of rainfall patterns at different locations in
+Southern Africa over a 30-year period between 1965 and 2005.
+
+Location
+
+Planting date
+change per year
+(Days yr−1)
+
+R2
+value
+
+P-value of
+regression
+
+t-probability
+(slope,
+Ho: β = 0)
+
+Angonia-Mozambique −0.133
+Chimoio-Mozambique 0.171
+0.285
+Chitala-Malawi
+Chitedze-Malawi
+0.395
+Marondera-Zimbabwe 0.328
+Matopos-Zimbabwe
+0.063
+
+0.0012 0.260
+0.0029 0.438
+0.0253 0.011
+0.0391 0.003
+0.0084 0.094
+0.0006 0.729
+
+n.s
+n.s
+b0.05
+b0.05
+n.s
+n.s
+
+Twomlow, 2009; Nyamangara et al., 2013; Tshuma et al., 2012) hence
+they would normally be planted late if preparation commences at the
+onset of the rainy season as in the CA-Basins late cropping system.
+Field monitoring studies in different parts of Zimbabwe conﬁrm that
+winter prepared basins were always planted 12–23 days earlier than
+conventionally ploughed ﬁelds and resulted in 43% higher yield returns
+to investment compared to conventional plots (Nyamangara et al.,
+2013). Farmers using CA-Basins are generally recommended to make
+them soon after the previous harvest thereby making the basins ready
+for planting upon receiving the ﬁrst rains at the start of the next season
+(ZCATF, 2009). Early preparation of planting basins before the onset of
+the rainfall season enables farmers to spread labour (Ndlovu et al.,
+2014; Twomlow et al., 2008). This facilitates spreading of labour bottle-
+necks associated with land preparation at the start of the season thus
+CA-Basins early could be seeded earlier as observed in this study. This
+pattern was generally consistent across all locations despite variations
+in the available labour. Generally the CMP-early cropping system was
+also seeded relatively earlier in the season across all locations as farmers
+using this system had ready access to draught power which hastened
+land preparation and planting (Mugabe and Banga, 2001).
+
+Despite the mechanized operations from draught power, increased
+land preparation labour requirements associated with ploughing, re-
+sulted in the CMP-early still being seeded later than the manual CA-Ba-
+sins early, animal traction CA-Direct seed and CA-Ripper at Chitala,
+Chitedze, Marondera and Matopos but later than CA-Basins late and
+CMP late systems. The CA-Direct seed system proved to be more advan-
+tageous when labour was limiting as the combined fertilizer application
+and seed placement in one pass, enabled faster planting (Siziba, 2008).
+On the other hand using the ripper which eliminates the need for con-
+ventional ploughing and hence reducing draught power demands, also
+ensured planting was achieved within the earliest planting window
+(FAO, 2001). In addition, CA-Ripper saves time and labour since it only
+takes a ﬁfth of the time required to plant as it disturbs soil only along
+the planting rows whereas the plough disturbs the whole ﬁeld. The
+CMP-late cropping system was seeded signiﬁcantly later than the
+CMP-early system due to the delay in accessing draught power required
+for land preparation. Generally farmers without draft animals have to
+wait at least 2 weeks to access them and only prepare their land when
+
+28
+
+I. Nyagumbo et al. / Agricultural Systems 150 (2017) 21–33
+
+Fig. 5. Simulated maize yields from the earliest planting dates for different conventional and conservation agriculture cropping systems in contrasting agro-ecologies of Malawi,
+Mozambique and Zimbabwe. N.B. CMP-early = Conventional mouldboard ploughing used by farmers with early access to draft power or CMP-late, used by farmers with delayed
+access to draft animals; CA-basins early = CA basins prepared in winter; CA-Basins late = CA Basins prepared at the onset of rains; CA Direct seed = CA planted with the ﬁtarelli
+animal traction direct seeder; CA-ripper = CA with animal traction ripper, CA dibble = CA seeding using the dibble stick system. Vertical bars denote l.s.d(0.05). Bars in the same
+location followed by the same letter are not signiﬁcantly different at P b 0.05.
+
+the draught power owners have ﬁnished land preparation (Ellis-Jones
+and Whitmore, 2004). This delay was often exacerbated by the absence
+of a planting opportunity soon after completion of land preparation due
+to the early or mid-season dry spells in some agro-ecologies.
+
+The CA-Dibble stick cropping system which is one of the predomi-
+nant CA systems in Malawi (Ngwira and Aune, 2011), was seeded rela-
+tively earlier than CA-Basins late and CMP-late, on 8 and 10 Dec. at
+Chitedze and Chitala, respectively. This was 4 and 5 days after seeding
+the CA-Basins early system, whereas the CMP-late was seeded later.
+
+Marondera and Matopos showed 35 and 39 day differences in plant-
+ing dates between the ﬁrst and last planting opportunity in the CA-Ba-
+sins early and CMP-late systems respectively. At Angonia and Chimoio
+these differences amounted to 23 and 20 days, while at Chitala and
+Chitedze it was 27 days. The planting window was wider at Matopos
+and Marondera because of the low rainfall, mid-season droughts and
+high intra and inter-season rainfall variability (Tshuma et al., 2012).
+
+Findings of the study also suggests gradual delays in commencement
+of the planting date by at least 0.285 and 0.395 days yr−1 for Chitala and
+Chitedze sites of Malawi, respectively. This may be attributed to changes
+in rainfall patterns associated with increased rainfall variability during
+the 30-yr simulation period. Climate change forecasts suggest a future
+decrease in rainfall by at least 7% for the Sub Saharan African region
+(Bouba et al., 2013) which would mean cropping systems that increase
+season length would potentially help to mitigate the negative effects of
+such phenomena. An analysis of rainfall seasons in semi-arid Zimbabwe
+however showed no signiﬁcant changes in the length of seasons
+(Mupangwa et al., 2011) as also found here for the Zimbabwean sites.
+
+4.2. Cropping systems and maize yield
+
+Generally early planting extends the maize crop growing period or
+season length, thus potentially increasing maize yields and vice versa
+(Farnham, 1998). Results from this study suggested that CA cropping
+systems enable early planting but this did not necessarily lead to the
+
+highest yields. Furthermore, the optimum planting dates, which can
+give rise to the highest yield as expected (Darby and Lauer, 1996), var-
+ied with location due to agro-ecology differences. The simulated opti-
+mum planting dates established by the study, agreed fairly well with
+observed farmer practices at these sites. The rainfall variability analysis
+(Fig. 3) showed that Angonia, Chitala and Chitedze sites experience high
+rainfall variability in Oct and Nov and hence any planting made before
+Dec could result in crop failure, even if the labour requirements enabled
+such early planting. Thus these 3 locations characterized by high
+monthly rainfall variability exceeding 80% at the start of the season,
+failed to translate the early planting beneﬁts derived from CA cropping
+systems into higher yields. For example, at Angonia the CA-Basin early,
+CA-Ripper, CA-Dibble and CMP-early cropping systems had the lowest
+yields, despite being sown signiﬁcantly earlier than other systems. De-
+layed planting after the earliest planting windows did not result in
+yield losses but instead led to yield gains of at least 8% at this location.
+For the latter 3 CA systems, this yield depression was attributed to
+planting (1 Nov) coinciding with a period of high rainfall variability
+(85%). On the contrary, CA-Dibble stick, CA-Basin late and CMP-late sys-
+tems were seeded later in December (13–24 Dec) but during a month
+characterized by relatively low rainfall variability of 38%. Thus the
+three cropping systems yielding the most were those planted closest
+(24 Dec) to the optimum planting date of 26 Dec. In addition, the simu-
+lated highest yield was obtained with planting on 26 Dec in agreement
+with farmer practices of planting before or after 25 Dec. It is therefore
+clear that maize in early planted CA systems coincided with poor early
+season erratic rains which caused emergence failure and wilting of the
+young maize crop thus giving a ‘false start’ of the season (Lone and
+Warsi, 2009; Raes et al., 2004). Angonia is a high rainfall environment
+usually experiencing peak rainfall during the ﬁrst week of February. In
+such an environment if the selected maize cultivar's growing cycle ﬁts
+within the season, there are less chances of it failing to yield to its poten-
+tial under the imposed management conditions. Furthermore variety
+characteristics could have inﬂuenced maize performance particularly
+
+I. Nyagumbo et al. / Agricultural Systems 150 (2017) 21–33
+
+29
+
+Fig. 6. Probabilities distribution functions for simulated maize yields from 7 cropping systems at two agro-ecologies in Malawi, Mozambique and Zimbabwe. N.B. CMP-early =
+Conventional mouldboard ploughing used by farmers with early access to draft power or CMP-late, used by farmers with delayed access to draft animals; CA-basins early = CA basins
+prepared in winter; CA-Basins late = CA Basins prepared at the onset of rains; CA Direct seed = CA planted with the Fitarelli animal traction direct seeder; CA-ripper = CA with
+animal traction ripper, CA dibble = CA seeding using the dibble stick system.
+
+if severe water stresses were experienced during the ﬂowering period
+when maize is highly sensitive (Tsimba et al., 2013). The variety used
+in this case, a medium maturing open pollinated variety known as
+Tsangano, taking about 140 days to mature.
+
+At Chimoio the mean planting date for CA-Basins early, CA-Ripper,
+CA-Dibble was 7 Nov (rainfall CV = 50%) that is two months before
+the optimum planting date (7 Jan with a rainfall CV of 49%). At this
+site the CA systems, despite being planted early, also failed to translate
+to higher yields. Yet the late planted CA-Basins late and the convention-
+al late which were planted closer (24 Nov and 10 Dec, respectively) but
+
+still well before the optimum planting date (7 Jan), yielded higher than
+the early planted CA systems. This result further highlights the fact that
+early planting using CA systems could only have yield advantages if it
+coincided with the optimum planting date or a month with the low
+rainfall variability (b60%).
+
+Non-signiﬁcant yield differences were realised between the seven
+cropping systems at Chitala in Malawi. This was despite the fact that
+the earliest seeding was conducted on 6 Dec in the CA-Basins early
+whereas the last seeding was conducted on 26 Dec. This 20-day differ-
+ence in planting the CA-Basins early and CMP-late cropping systems
+
+30
+
+I. Nyagumbo et al. / Agricultural Systems 150 (2017) 21–33
+
+Fig. 7. Optimum planting dates from simulated maize yields at six locations in Mozambique (a) Angonia and (b) Chimoio; in Malawi (c) Chitala and (d) Chitedze and in Zimbabwe (e)
+Marondera and (f) Matopos.
+
+Table 5
+Optimal planting dates and corresponding rainfall for simulated maize yields across selected sites in Malawi, Mozambique and Zimbabwe.
+
+Country-Site
+
+Seasonal Rainfall
+(mm yr−1)
+
+Mean Optimum
+planting date
+
+R2 of
+curvea
+
+Mean yield (±4 days of
+planting date)b
+
+Median yield (±4 days of
+planting date)b
+
+CV of mean yield within ±4 days of
+optimum planting date
+
+885
+Malawi-Chitedze
+887
+Malawi-Chitala
+Mozambique-Angonia 947
+Mozambique-Chimoio 1035
+Zimbabwe-Marondera 813
+Zimbabwe-Matopos
+557
+a R2 refers to goodness of ﬁt to dome-shaped curve.
+b Refers to mean and median maize yield simulated within +/−4 days of optimum planting date.
+
+5-December
+27-December
+26-December
+7-January
+4-December
+7-December
+
+73
+59
+85
+34
+56
+28
+
+4414
+3248
+3141
+3328
+3542
+1226
+
+4494
+3300
+3054
+3244
+3691
+2066
+
+16
+12
+8
+9
+30
+77
+
+I. Nyagumbo et al. / Agricultural Systems 150 (2017) 21–33
+
+31
+
+Fig. 8. Maize yield and optimum planting dates over 6 locations in Malawi, Mozambique and Zimbabwe. (a) Relative yield with respect to site mean (%) against Days after the optimum
+planting date and (b) Yield variability (%) means against timing of planting. Note: In Fig. 8(b) error bar represents LSD(0.05). Different letters in each bar represent statistical differences in
+mean yield variability between early optimum and late plantings across the six locations. Optimum denotes planting carried out within ±4 days of optimum planting date. Early and Late
+denotes planting carried out up to 40 days before and after optimum planting date range, respectively.
+
+did not result in yield losses. This lack of signiﬁcant differences was at-
+tributed to high temperatures (FAO, 2006) which are conducive for
+maize development at Chitala such that the delay in planting could not
+cause signiﬁcant maize yield losses because there was sufﬁcient rainfall
+to sustain crop growth. As stated earlier, the Chitala site experienced
+the highest rainfall variability in Oct. and apparently the earliest planting
+at this site was on 6 Dec. Dec had a low rainfall variability of 55% having
+dropped from a high of 96% in Nov, hence rainfall is much more reliable in
+Dec thereby leading to the lack of signiﬁcant differences in yield between
+the cropping systems. The established optimum planting date was 27 Dec
+for Chitala and hence the majority of farmers in that area also planted
+around that time. Similarly, at Chitedze planting was done within
+20 days of the optimum planting date of 5 Dec and mostly within the
+month of Dec which had low rainfall variability of 48%, thereby resulting
+in insigniﬁcant differences between cropping systems. This was consis-
+tent with results from Chitala. The month of Nov had a much higher
+rainfall variability of 69% and so any planting in early Nov could be risky.
+In contrast to the above, the only sites where early planting with CA
+gave yield advantages were Marondera and Matopos which are sub-
+humid and semi-arid locations, respectively (Figs. 2, 5). The highest
+maize yields were obtained from the earliest sown CA-Basins early,
+CA-Ripper and CA-Direct seed cropping systems whereas the lowest
+yields were obtained from the CMP-late cropping systems. At Matopos
+the lowest CV of 60% was in Nov. after which the rainfall CVs dramatical-
+ly increased to N100% by March. (Fig. 3). At Marondera the highest
+yields were derived from the ripper system which was planted on 1
+Dec i.e. only 3 days before the optimum planting date (4 Dec). Planting
+at that time coincided with the lowest rainfall variability of 60% in Dec.
+Here the ripper system was planted on 15 November i.e. the month with
+the lowest rainfall variability at that site of 55% and this took place close
+to the optimum planting date of 7 December. Results thus suggest that
+the early planting advantage of CA only translated to yield beneﬁts
+when planting coincided with the optimum planting period or the
+months with relatively lower rainfall variability.
+
+However, generally the low yields obtained at Matopos are attribut-
+ed to the low annual rainfall (353 mm) and high seasonal rainfall vari-
+ability (N30%) (Vincent and Thomas, 1961). Thus delayed planting,
+coupled with low rainfall, led to signiﬁcant yield losses due to the re-
+duced growing period under reduced soil moisture. Delayed planting
+of the CMP-late system by 21 days led to 15% yield loss at Matopos.
+This was in agreement with ﬁndings by Shumba et al. (1989) who
+realised yield losses of at least 5% per week's delay in planting in
+semi-arid areas of southern Zimbabwe. Similarities between model
+
+simulations and farmer practices in timing of planting, though less pre-
+cise, were also apparent at Marondera and Matopos. The fewer planting
+opportunities at Matopos were attributed to relatively lower rainfall
+and higher intra and inter seasonal rainfall variation of this semi-arid lo-
+cation (Vincent and Thomas, 1961). On the other hand, delayed planting
+at Marondera beyond Dec. caused low yields. This is attributed to the
+low temperatures from Dec. onwards where average summer tempera-
+tures are 27.9 °C which approach 21 °C in January and 7 °C in winter
+(Masaka et al., 2014). Therefore, as the season progresses the tempera-
+tures approach 8 °C, the base temperature for maize development. Each
+phenological stage of maize development requires a certain amount of
+growing degree days (GDD) to be attained. The low temperatures
+characterising Marondera led to the delay in attainment of the required
+GDD for each speciﬁc phenological stage thus reducing maize growth
+rates (White, 2001). This has an impact on the crop which will mature
+when soil moisture will no longer be sufﬁcient for maize development
+(Miller et al., 2001). In contrast early planting enables the crop to pass
+through certain physiological stages at a faster rate (Weinman, 1975),
+thus the grain ﬁlling period will coincide with the period of low temper-
+atures which promotes slow grain ﬁlling which is essential for attaining
+high yields (Badu-Apraku et al., 1983).
+
+The results therefore make two points apparent. Firstly, irrespective
+of cropping system, any planting occurring close to the optimum plant-
+ing date or in the month with the lowest rainfall variability or at least
+lower than 60%, gave the highest yield response. Consequently, planting
+during the optimum date period resulted in signiﬁcantly lower yield
+variability across all the six locations (Fig. 8). These ﬁndings conﬁrm
+ﬁeld based results from experiments in Zimbabwe which suggested
+that the time of planting was much more important to yield than the
+tillage system used (Nyagumbo, 2008). Secondly the early planting ad-
+vantages of CA systems such as CA-Basins early, CA-Direct seeding and
+Ripping, resulted in signiﬁcant yield advantages only if the planting
+month had low rainfall variability or close to the optimum planting
+date. Whenever such planting took place in the high rainfall variability
+months, then chances of crop failure were high with signiﬁcant yield
+penalties. This suggests that if yield maximization is the objective,
+then farmer decisions on when to plant may need to be guided by the
+optimum planting date.
+
+5. Conclusion
+
+It is concluded that draught powered mechanized CA systems and
+winter prepared CA basins, enable earlier planting of maize due to less
+
+32
+
+I. Nyagumbo et al. / Agricultural Systems 150 (2017) 21–33
+
+labour requirements and earlier land preparation. Thus draught power
+mechanized CA systems offer farmers the capacity to plant closer to op-
+timum dates. Optimum planting dates generated from model simula-
+tions for each location matched farmer practices and resulted in the
+lowest CV (%) in yield compared to later or earlier plantings. Hence
+planting maize during periods close to the optimum planting dates re-
+sulted in high yields irrespective of the cropping system, making plant-
+ing date one of the key rainfed maize yield determinants in the region.
+This suggests that the optimum planting dates generated this way
+could potentially be used to provide farmers with location speciﬁc
+guides on when to plant to attain higher yields and lower yield variabil-
+ity between seasons.
+
+The study also made it apparent that there are signiﬁcant shifts in
+planting dates associated with rainfall patterns amounting to average
+delays of 0.28 and 0.39 days yr−1 at Chitala and Chitedze, Malawi over
+the simulated 30 years between 1966 and 2001.
+
+Further, participatory ﬁeld-based studies could be useful to support
+farmers' learning of the ﬁndings from this model based study and to es-
+tablish the key characteristics and boundary conditions necessary for
+regional locations to beneﬁt from early planting of crops. In situations
+where meteorological data is available there is need to invest in model
+simulations studies to establish the optimum planting dates across
+agro-ecologies to support farmers in new regions and other Sub Saharan
+African countries.
+
+Acknowledgements
+
+The authors of this paper would like to acknowledge funding re-
+ceived from the Australian Centre for International Agricultural Re-
+search through the projects ‘Integrating crop and livestock production
+for improved food security and livelihoods in rural Zimbabwe
+(ZimCLIFS)’ project number CSE/2010/022 and the Sustainable Intensi-
+ﬁcation of Maize–Legume Systems in Eastern and Southern Africa
+(SIMLESA) project number CSE/2009/024, which provided the ﬁeld ex-
+periments from which the model calibrations were conducted. We fur-
+ther would like to acknowledge ﬁnancial support received through the
+CGIAR Research Program on Climate Change, Agriculture and Food Se-
+curity (CCAFS) through our CIMMYT colleagues Drs Clare Stirling and
+Santiago Ridaura.
+
+Appendix A. Supplementary data
+
+Supplementary data to this article can be found online at http://dx.
+
+doi.org/10.1016/j.agsy.2016.09.016.
+
+References
+
+Abdallah, Y.E.Y., 2012. Effect of plant traps and sowing dates on population density of
+
+major soybean pests. J. Basic Appl. Zool. 65, 37–46.
+
+ACIAR, 2013. Muscle to machines: cutting labour drudgery in Africa. Partners in Research
+for Development, Winter. Australian Centre for International Agricultural Research,
+pp. 16–19. Available online at: http://aciar.gov.au/ﬁles/part_1306 (accessed 26 Sep
+2016).
+
+Amane, M.I., Mlay, G.I., 2002. Zonas agroecológicas. Análise Temática do Censo
+
+AgroPecuario de Moçambique 1999–2000.
+
+Amjadian, M., Farshadfar, M., Gholipoor, M., 2013. The effects of planting date on the yield
+and yield components of corn (Zea mays L.) cultivar, single cross 704 in Gorgan re-
+gion. Ann. Biol. Res. 4, 38–41.
+
+Anseeuw, W., Kapuya, T., Saruchera, D., 2012. Zimbabwe's agricultural reconstruction:
+present state, ongoing projects and prospects for reinvestment (Working paper no.
+6), Development Planning Division. Johannesburg, South Africa.
+
+Badu-Apraku, B., Hunter, R.B., Tollenaar, M., 1983. Effect of temperature during grain ﬁll-
+ing on whole plant and grain yield in maize (Zea mays L.). Can. J. Plant Sci. 63,
+357–363.
+
+Bouba, T., Corbeels, M., van Wijk, M.T., Ruﬁno, M.C., Giller, K.E., 2013. Effects of climate
+variability and climate change on crop production in southern Mali. Eur. J. Agron.
+49, 115–125.
+
+Collinson, M.P., 1987. Farming systems research: Procedures for technology development.
+
+Darby, H.M., Lauer, J.G., 1996. Planting date and hybrid inﬂuence on corn forage yield and
+
+Exp. Agric. 23, 365–386.
+
+quality. Agron. J. 94, 281–289.
+
+Ellis-jones, J., Whitmore, A., 2004. Animal power for crop production: new tillage or no
+tillage Beneﬁts and challenges in sub Saharan Africa. World Association for Transport
+Animal Welfare and Studies (TAWS) Common Ground: Moving Forward with Ani-
+mals. Silsoe Research Institute, UK.
+
+Endale, D., Schomberg, H., Fisher, D., Jenkins, M., June 27–July 1, 2010. Examination of
+Curve Numbers From a Small Piedmont Catchment Under 33 Years of No-till Crop
+Management. 2nd Joint Federal Interagency Conference, Las Vegas, NV. USDA, Las
+Vegas, p. 8.
+
+Famba, S.I., Loiskandl, W., Thierfelder, C., Wall, P., 2011. Conservation Agriculture for In-
+creasing Maize Yield in Vulnerable Production Systems in Central Mozambique. Afri-
+can Crop Science Proceedings. African Crop Science Society Conservation, Kampala,
+Uganda, pp. 255–262.
+
+FAO, 2001. The Economics of Conservation Agriculture. FAO Document Repository.
+Available online at http://www.fao.org/docrep/004/Y2781E/Y2781E00.HTM,
+(accessed 26 Sep 2016).
+
+FAO, 2006. Malawi's Country Proﬁle. Food and Agricultural Organization. Available online
+
+att http://www.fao.org/countryproﬁles/index/en/?iso3=mwi.
+
+FAO, 2010. Farming for the Future in Southern Africa: An Introduction to Conservation
+Agriculture (No. 1), Regional Emergency Ofﬁce for Southern Africa (REOSA) Technical
+Brief 1. Johannesburg, South Africa.
+
+Fauchereau, N., Trzaska, S., Rouault, M., Richard, Y., 2003. Rainfall Variability and Changes
+in Southern Africa during the 20th Century in the Global Warming Context. Nat. Haz-
+ards 29, 139–154.
+
+Farnham, D.E., 1998. Planting early for optimum yields – integrated crop management.
+
+Integr. Crop Manag. 6.
+
+FEWSNET, 2014. Zimbabwe Food Security Outlook July 2013–March 2014: Reduced In-
+comes and High Food Prices Are Expected to Increase Food Insecurity among Poor.
+Francis, J., Mudamburi, B., Chikwanda, B., 1999. Animal draft power challenges in Zimba-
+bwe. In: Starkey, P., Kaumbutho, P. (Eds.), Meeting the Challenges of Animal Traction.
+A Resource Book of the Animal Traction.
+
+Gaile, Z., 2012. Maize (Zea mays L.) Response to Sowing Timing Under Agro-climatic Con-
+
+ditions of Latvia. 99 pp. 31–40.
+
+Geurts, P.M.H., 1997. Recomendações de adubaçào azotada e fosfórica para as culturas
+anuais alimentares e algodão em Moçambique. Maputo, Série Terra e Água, Instituto
+Nacional de Investigação Agrária, Comunicação No. 88.
+
+Harrison, L., Michaelsen, J., Funk, C., Husak, G., 2011. Effects of temperature changes on
+
+maize production in Mozambique. Clim. Res. 46, 211–222.
+
+Houmy, K., Clarke, L., Ashburner, J., Kienzle, J., 2013. Agricultural mechanization in sub-sa-
+
+haran Africa guidelines for preparing a strategy. Integr. Crop Manag. 22, 105.
+
+Hussein, J., Johnson, P., 1987. Agroclimatological analysis of growing seasons in natural re-
+gions III, IV and V of Zimbabwe. Cropping in the Semiarid Areas of Zimbabwe. Depart-
+ment of Agriculturual, Technical and Extension Services/GTZ/DR&SS, Harare, pp. 1–179.
+Jaleta, M., Krivokapic-skoko, B., Baudron, F., Erenstein, O., 2014. Drivers of Agricultural
+Mechanization and Mechanized Conservation Agriculture: Synthesis from Experience
+of Successful Countries. pp. 1–28.
+
+Jones, J.W., Hoogenboom, G., Porter, C.H., Boote, K.J., Batchelor, W.D., Hunt, L.A., Wilkens,
+P.W., Singh, U., Gijsman, A.J., Ritchie, J.T., 2003. The DSSAT cropping system model.
+Eur. J. Agron. 18, 235–265.
+
+Kucharik, C.J., 2006. A multidecadal trend of earlier corn planting in the central USA.
+
+Agron. J. 98, 1544–1550.
+
+Lone, A.A., Warsi, M.Z.K., 2009. Response of Maize (Zea mays L.) to excess soil moisture
+
+(ESM) tolerance at different stages of life cycle. Bot. Res. Int. 22, 211–217.
+
+Makuvaro, V., Walker, S., Munodawafa, A., Masere, T.P., Murewi, C., Chagonda, I., 2014. An
+overview of current agronomic practices of smallholder farmers in semi-arid Central
+and Western Zimbabwe. Afr. J. Agric. Res. 9, 2710–2720. http://dx.doi.org/10.5897/
+AJAR11.606.
+
+Marongwe, L.S., Nyagumbo, I., Kwazira, K., Kassam, A., Friedrich, T., 2012. Conservation
+Agriculture and Sustainable Crop Intensiﬁcation: A Zimbabwe Case Study, Integrated
+Crop Management. Plant Productionand Protection Division, Food and Agriculture
+Organization of the United Nations, Rome.
+
+Masaka, J., Nyamangara, J., Wuta, M., 2014. Nitrous oxide emissions from wetland soil
+amended with inorganic and organic fertilizers. Arch. Agron. Soil Sci. 60, 1363–1387.
+Mashingaidze, N., Madakadze, C., Twomlow, S.J., Nyamangara, J., Hove, L., 2012. Crop yield
+and weed growth under conservation agriculture in semi-arid Zimbabwe. Soil Tillage
+Res. 124, 102–110.
+
+Mazvimavi, K., Twomlow, S., 2009. Socioeconomic and institutional factors inﬂuencing
+adoption of conservation farming by vulnerable households in Zimbabwe. Agric.
+Syst. 101, 20–29.
+
+Mhizha, T., Geerts, S., Vanuytrecht, E., Makarau, A., Raes, D., 2014. Use of the FAO
+AquaCrop model in developing sowing guidelines for rainfed maize in Zimbabwe.
+Water SA 40 http://dx.doi.org/10.4314/wsa.v40i2.5.
+
+Milgroom, J., Giller, K.E., 2013. Courting the rain: rethinking seasonality and adaptation to
+
+recurrent drought in semi-arid southern Africa. Agric. Syst. 118, 91–104.
+
+Miller, P., Lanier, W., Brandt, S., 2001. Using growing degree days to predict plant stages.
+
+Mont. State Univ. Ext. Serv. 9, 8.
+
+Mkoga, Z.J., Tumbo, S.D., Kihupi, N., Semoka, J., 2010. Extrapolating effects of conservation
+tillage on yield, soil moisture and dry spell mitigation using simulation modelling.
+Phys. Chem. Earth 35, 686–698.
+
+Mugabe, F.T., Banga, D.J., 2001. Assessment of the nitrogen requirements of planted maize
+
+(Zea mays L.) in the semi-arid areas of Zimbabwe. UNISWA J. Agric. 10, 5–11.
+
+Munhande, C., Mapfungautsi, R., Mutanga, P., 2013. Climate risk management: actors,
+strategies and constraints for smallholder farmers in Zimbabwe: a case study of
+Chivi district. J. Sustain. Dev. 15, 57–71.
+
+Muoni, T., Rusinamhodzi, L., Thierfelder, C., 2013. Weed control in conservation agricul-
+ture systems of Zimbabwe: identifying economical best strategies. Crop. Prot. 53,
+23–28.
+
+I. Nyagumbo et al. / Agricultural Systems 150 (2017) 21–33
+
+33
+
+Mupangwa, W., Walker, S., Twomlow, S., 2011. Start, end and dry spells of the growing
+
+season in semi-arid southern Zimbabwe. J. Arid Environ. 75, 1097–1104.
+
+Ngwira, A., Aune, J., 2011. Adaptation of Conservation Agriculture by Smallholder Farmers
+in Malawi: Drivers, Intensity, Beneﬁts and Problems for Upscaling. 5th World Con-
+gress on Conservation Agriculture Incorporating 3rd Farming Systems Design Confer-
+ence, Australia 2011. Brisbane, Australia.
+
+Ngwira, A., Johnsen, F.H., Aune, J.B., Mekuria, M., Thierfelder, C., 2012. Conservation agri-
+culture systems for Malawian smallholder farmers: long term effects on crop produc-
+tivity, proﬁtability and soil quality. Renew. Agric. Food Syst. 28, 350–363.
+
+Nyagumbo, I., 2008. A review of experiences and developments towards conservation ag-
+riculture and related systems in Zimbabwe. In: Goddard, T., Zoebisch, M.A., Gan, Y.T.,
+Ellis, W., Watson, A., Sombatpanit, S. (Eds.), No-till Farming Systems. World Associa-
+tion of Soil and Water Conservation, Bangkok, pp. 345–372.
+
+Nyagumbo, I., Mkuhlani, S., Pisa, C., Kamalongo, D., Dias, D., Mekuria, M., 2016. Maize yield
+effects of conservation agriculture based maize–legume cropping systems in con-
+trasting agro-ecologies of Malawi and Mozambique. Nutr. Cycl. Agroecosyst. 105,
+275–290.
+
+Nyamangara, J., Mashingaidze, N., Masvaya, E.N., Nyengerai, K., Kunzekweguta, M.,
+Tirivavi, R., Mazvimavi, K., 2013. Weed growth and labor demand under hand-hoe
+based reduced tillage in smallholder farmers' ﬁelds in Zimbabwe. Agric. Ecosyst. En-
+viron. 187, 146–154.
+
+Nyamapfene, K., 1991. Soils of Zimbabwe. 1st ed. Nehanda Publishers (Pvt) Ltd., Harare.
+Porter, C.H., Jones, J.W., Adiku, S., Gijsman, A.J., Gargiulo, O., Naab, J.B., 2010. Modeling or-
+ganic carbon and carbon-mediated soil processes in DSSAT v4.5. Oper. Res. 10,
+247–278.
+
+Raes, D., Sithole, A., Makarau, A., Milford, J., 2004. Evaluation of ﬁrst planting dates recom-
+mended by criteria currently used in Zimbabwe. Agric. For. Entomol. 125, 117–185.
+Roxburgh, C.W., Rodriguez, D., 2016. Ex-ante analysis of opportunities for the sustainable
+
+intensiﬁcation of maize production in Mozambique. Agric. Syst. 142, 9–22.
+
+Rurinda, J., Mapfumo, P., van Wijk, M.T., Mtambanengwe, F., Ruﬁno, M.C., Chikowo, R.,
+Giller, K.E., 2014. Sources of vulnerability to a variable and changing climate among
+smallholder households in Zimbabwe: a participatory analysis. Clim. Risk Manag. 3,
+65–78.
+
+Savin, I., Boogaard, H., van Diepen, C., van der Ham, H., 2007. JRC Scientiﬁc and Technical
+
+Reports: Climatically Optimal Planting Dates. Ispara, Italy.
+
+Shumba, E.M., Waddington, S.R., Rukuni, M., 1989. Delayed maize plantings in a small-
+holder farming area of Zimbabwe: problem diagnosis. Zimb. J. Agric. Res. 27,
+103–112.
+
+Shumba, E.M., Waddington, S.R., Rukuni, M., 1992. Use of tine tillage with attrazine weed
+control to permit earlier planting of maize by small-holder farmers in Zimbabwe.
+Exp. Agric. 28, 443–452.
+
+SIMLESA, 2010a. Manica: Sustainable Intensiﬁcation of Maize-Legume Cropping Systems
+for Food Security in Eastern and Southern Africa (SIMLESA). Exploratory Trial Proto-
+col and Data Collection Sheets Manica, Mozambique. International Maize and Wheat
+Improvement Centre (CIMMYT), Harare, Zimbabwe (http://simlesa.cimmyt.org).
+
+SIMLESA, 2010b. Malawi Highlands: Sustainable Intensiﬁcation of Maize-Legume
+Cropping Systems for Food Security in Eastern and Southern Africa (SIMLESA). Ex-
+ploratory Trial Protocol and Data Collection Sheets Malawi. International Maize and
+Wheat Improvement Centre (CIMMYT), Harare, Zimbabwe (http://simlesa.org).
+
+Siziba, S., 2008. Assessing the adoption of conservation agriculture in Zimbabwe’s small-
+holder sector. PhD Thesis. Institute of Agricultural Economics and Social Sciences in
+the Tropics and Sub-tropics. University of Hohenheim, Germany, Stutgart, p. 174.
+
+Thierfelder, C., Wall, P.C., 2009. Effects of conservation agriculture techniques on inﬁltra-
+tion and soil water content in Zambia and Zimbabwe. Soil Tillage Res. 105, 217–227.
+Tshuma, N., Maphosa, M., Ncube, G., Dube, T., Dube, Z.L., 2012. The impact of conservation
+agriculture on food security and livelihoods in Mangwe district. J. Sustain. Dev. Africa
+14.
+
+Tsimba, R., Edmeades, G.O., Millner, J.P., Kemp, P.D., 2013. The effect of planting date on
+
+maize grain yields and yield components. F. Crop. Res. 150, 135–144.
+
+Twomlow, S., Urolov, J.C., Jenrich, M., Oldrieve, B., 2008. Lessons from the ﬁeld –
+
+Zimbabwe's conservation agriculture task force (ZCATF). SAT eJournal 6, 1–11.
+
+Vincent, V., Thomas, R.G., 1961. An Agroecological Survey of Southern Rhodesia: Part 1 –
+
+Agro-Ecological Survey. Government Printer, Salisbury, Rhodesia, p. 125.
+
+VSN, 2011. GenStat for Windows 14th Edition. VSN International, Hemel Hempstead, UK
+
+[www.vsni.co.uk/software/genstat].
+
+Weinman, H., 1975. Agricultural Research and Development in Southern Rhodesia 1924–
+
+1950. University of Rhodesia, Salisbury, p. 240.
+
+White, J.W., 2001. In: White, J.W. (Ed.), Modeling temperature response in wheat and
+maize. Proceedings of a Workshop, CIMMYT, El Batán, Mexico, 23–25 April 2001.
+61, pp. 1405–7484 (El Batan, Mexico).
+
+WSDOT, 2014. TR-55 Curve number tables: Appendix 4B; Washigton Department of
+
+Transport (WSDOT) Highway runoff manual (31-16.04). Washington DC; USA.
+
+Young, A., Brown, P., 1962. The Physical Environment of Northern Nyasaland: With Spe-
+
+cial Reference to Soils and Agriculture. Government Printers, Zomba, Malawi.
+
+ZCATF, 2009. Farming for the Future: A Guide to conservation agriculture in Zimbabwe.
+
+Zimbabwe Conservation Agriculture Task Force, Harare, p. 57.
+
+Zinyengere, N., Crespo, O., Hachigonta, S., Tadross, M., 2015. Crop model usefulness in
+drylands of southern Africa: an application of DSSAT. South African J. Plant Soil 32,
+95–104.
+
+

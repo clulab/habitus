@@ -1,0 +1,1828 @@
+Expanding and intensifying rice production
+
+consequences on agrobiodiversity management and diet
+quality. A situated transdisciplinary gendered analysis
+
+in Senegal Middle Valley River
+
+Clavel Danièle, Eric Verger, Hélène Guetat-Bernard
+
+To cite this version:
+Clavel Danièle, Eric Verger, Hélène Guetat-Bernard. Expanding and intensifying rice production
+consequences on agrobiodiversity management and diet quality. A situated transdisciplinary gendered
+analysis in Senegal Middle Valley River. 2020. ￿hal-02949499￿
+
+HAL Id: hal-02949499
+
+https://hal.archives-ouvertes.fr/hal-02949499
+
+Preprint submitted on 25 Sep 2020
+
+HAL is a multi-disciplinary open access
+archive for the deposit and dissemination of sci-
+entific research documents, whether they are pub-
+lished or not. The documents may come from
+teaching and research institutions in France or
+abroad, or from public or private research centers.
+
+L’archive ouverte pluridisciplinaire HAL, est
+destinée au dépôt et à la diffusion de documents
+scientifiques de niveau recherche, publiés ou non,
+émanant des établissements d’enseignement et de
+recherche français ou étrangers, des laboratoires
+publics ou privés.
+
+ 
+
+ 
+
+HAL, V1 
+ 
+Expanding and intensifying rice production consequences on agrobiodiversity 
+management and diet quality. A  situated transdisciplinary gendered analysis in Senegal 
+Middle Valley River. 
+Danièle Clavela,b, Eric O. Vergerc,  Hélène Guetat-Bernarde,f 
+a CIRAD, UMR AGAP, Montpellier, 34398, France 
+b AGAP, CIRAD, INRA, Montpellier SupAgro, Univ Montpellier, Montpellier, France 
+e UMR LISST, Toulouse Jean-Jaurès University, Toulouse, France 
+
+f UMIFRE 21 CNRS-MEAE, French Institute of Pondicherry, Pondicherry, India 
+
+Corresponding author 
+Danièle Clavel, daniele.clavel@cirad.fr 
+ 
+Funding 
+This research received the financial support of INRA-CIRAD GloFoodS Metaprogram “Transitions for 
+a global food security”. 
+ 
+Abstract 
+After the extensive droughts of the mid70s in the Sahel, the construction of the Diama and Manantali 
+dams materialized the will of the Senegalese State to develop the Senegal River Valley region. From 
+2010 the government accelerated the pace to economically valorize these investments by 
+implementing an ambitious national program of rice self-sufficiency. However, that rapid irrigated rice 
+expansion added to the drought and pushed back the natural floods, endangering the traditional culture 
+system of flood recession in the main riverbed, the Waalo. But the traditional flood recession cropping 
+system is low in inputs: not as labour-intensive as rice (direct planting) and rich in biodiversity, in 
+particular for sorghum. The DIVA project, was conducted in Guédé-Chantier and 2 surrounding 
+villages (Podor Department) and was carried out within the Halpulaar society, the majority in the 
+middle valley. It aimed to comprehensively describe the consequences of these transformations for the 
+agricultural, social, gender and nutritional dimensions. Considering that the convergence of 
+academically distinguished research objects could be better achieved by associating research with 
+various actors involved in local life, thanks to the mediation of the NGO Enda Pronat local peoples, 
+the experimentation in the reality of transdisciplinary was also a scientific objective of the study 
+discussed in this paper. So we applied a gendered transdisciplinary approach to consider three 
+interconnected dimensions: social and family logics, agricultural management of biodiversity and diet 
+quality. Results show that women's initiatives to improve and diversify their diet in response to rice 
+pressure, essentially consisted of organic or non-organic collective irrigated gardeners, established 
+with the help of NGOs but without any technical or financial support from the public policies. 
+Nevertheless, we assessed that the current diet quality of the women was of concern, with an 
+overconsumption of cereals (white rice) to the detriment of other plant-based foods and animal 
+products. Simulations of the dietary changes that have occurred over the past 45 years showed that the 
+diet quality has deteriorated with a significant decrease of nutrient intakes such as thiamin, vitamins B-
+6 and B-12, iron, potassium and zinc. We conclude that the rice intensification is increasing pressure 
+on the flood recession system, which, by disappearing, increases food and environmental problems. 
+Facing these deteriorations, the management of local agricultural biodiversity initiated by women is 
+diverse and localized but limited and not so far supported by any governmental policy.  
+ 
+Keywords:Transdisciplinary; Sustainability Science; Nutrition-Sensitive Agriculture; Gender 
+analysis; Biodiversity Management; Diet quality. 
+
+ 
+
+1 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Introduction  
+Facing increasingly observed paradoxical situations showing disconnections between 
+agricultural production and the different forms of malnutrition, especially in South Saharan 
+Africa and Asia, a growing number of institutions around the world are committed to 
+supporting nutrition-sensitive agriculture to achieve development goals. In a review about this 
+topic, Ruel and Quisumbing (2018) identified six pathways through which agricultural 
+intervention can impact nutrition and three of them relate to women: women's social status, 
+health and workload. In another review, Carletto et al. (2017) recommend as a research 
+priority, in particular for Africa, a better understanding of the transmission channels between 
+crop choices, commercialization and nutritional outcomes through gendered approaches.  
+In the present situation the research gaps found their causes in agricultural development 
+policies shaped by postcolonial and neoliberal policies that have privileged certain groups and 
+neglected other issues, in particular women in agriculture, conservation of agrobiodiversity 
+(Ravera et al. 2016; Zimmerer and de Haan, 2019) and diversity of food habits (Raschke and 
+Cheema, 2008; Guétat-Bernard and Ndami, 2019). Nevertheless, a gender lens is essential 
+because peasant seed selection and food functions are connected with African gender social 
+norms and division of labor which impact food practices and activities (Westholm and 
+Ostwald, 2020). This invisibility and underestimation of the crucial role of rural women in the 
+use and conservation of seeds was pointed out in particular by Patricia Howard (2003). This 
+book documented extensively that the knowledge and use of plant biodiversity is gender-
+differentiated everywhere. It defends the statement that gender perspective change our 
+understanding of people-plant relationships in fundamental ways. In particular, when women 
+select varieties for their fields or gardens, they consider not only agronomic characteristics, 
+but also those related to processing, storage, consumption and the health needs of family 
+members and domestic animals. 
+The present study was based on the hypothesis, which is at the basis of the DIVA research 
+project, that changes in diet are linked to agricultural changes, and proposed to support this 
+hypothesis by connecting surveys involving a transdisciplinary approach (between 
+biotechnical and social sciences: agronomy, genetics, nutrition, socio-anthropology) through a 
+gender analysis. In order to carry out the study in a collaborative way (Pohl and Hirsch 
+Adorn, 2008; Lang et al., 2012; Brandt et al., 2013; Wolff et al., 2019), various local 
+stakeholders, outside academia, including the NGO Enda Pronat, the Senegalese Association 
+of Farmers' Seeds (ASPSP), were solicited as well as the contribution of Senegalese scientists 
+working regularly in this region, particularly with women.  
+The study experimented with a transdisciplinary (TD) research as defined by Jaeger and 
+Scheringer (1998) and Scholz and Steiner (2015): an approach in which the definition of the 
+problem is independent of disciplinary considerations that are no longer able to cope with the 
+increasing complexity of ‘real-world’ and contextualized problems. So, the originality and 
+innovative nature of this project is threefold:  
+1.  It was based on the definition of the research subject established in close collaboration 
+
+with local NGOs, farmers’ organizations and the civil society; 
+
+2.  It was linked to the deep nature of the academic TD effort implemented where the 
+combination of social sciences and biotechnical science presented difficulties, both 
+theoretical and practical;  
+
+ 
+
+2 
+
+ 
+
+ 
+
+3.  It was crossed by a gender analysis that is not only focused on gender relations in the 
+
+family and community but also concerned technical agricultural observations on 
+biodiversity management and nutritionals records.  
+
+The primary aim of this article is to give a multidimensional and comprehensive (relational) 
+view of the consequences of the recent evolution of agriculture in Middle Senegal Valley. The 
+dimensions considered are the cultivated biodiversity, the female agricultural and culinary 
+activities, gender relations within the family and the nutritional quality of family food. The 
+second aim is methodological: as we consider the DIVA project as an experiment in TD 
+research, we make a reflexive return to what is at stake in terms of conception of research, 
+methods and results’ analyses. 
+1 Methods  
+Knowledge integration in TD processes starts with updating specific contextual information 
+drawn from direct consultations with various people involved in the life of the locality. Based 
+on the model developed by Scholz and Steiner (2015), this fine contextualization is connected 
+with the investigation protocols and, therefore, not outside the study’s scope. 
+Contextualization 
+An agro-system historically built on the sorghum based flood recession agriculture  
+The study was conducted in the middle valley of the Senegal River, district of Podor in the 
+North of Senegal. More specifically, our study area was located in three neighboring villages 
+(Guédé-Chantier, Guédé-Village and Lérabé) situated on a branch of the river, the Doué (Fig. 
+1). 
+Two major ecosystems make up the landscape: the Waalo, composed of rich, clayey soil near 
+the river and depressions, and the Dieri, composed of sandy dune-type soil. The traditional 
+mid valley halpulaar territory, called ‘Leydi’ (Fig. 2), is characterized by its geographical 
+discontinuity and by movements of people and herds between the two areas (herds moving 
+into the Waalo during the dry season for example). Floods structure the agricultural, pastoral 
+and fishing activities; the recession cultivation in Waalo is imbricated with agro pastoralism 
+in Dieri and with fishing activities in the river and semi permanent flood basins (Le Roy, 
+2008; Cesaro et al., 2010; Garambois et al., 2018). The queen recession plant species is 
+sorghum (Sorghum bicolor L.), locally called Samme. Sorghum is sown as soon as the 
+recession basins - called Kolangal consisting of a rich hydromorphic soil (Hollaldé type) - 
+have dried out enough for direct seeding, which allows rapid sowing of large areas. Further, in 
+these excellent agro-ecological conditions, recession sorghum has economic, social and 
+nutritional advantages because it has high cultural and nutritional value and does not require 
+monetary loan inputs, ploughing or complicated tools and productivity is high (Le Roy, 2007, 
+2008).  
+An expansion and intensification of rice cultivation disrupting the equilibriums 
+The agricultural system in the mid valley of Senegal River has undergone a major 
+transformation since the climate crisis in the Sahel in the years 70-80s which has 
+compromised hitherto durably rain fed crops and added uncertainties regarding traditional 
+flood recession crops. In response, the Senegalese Government has since the 1950s 
+strengthened the hydraulic installations (the Diama Dam downstream and the Manantali Dam 
+upstream) in an attempt to develop irrigated crops (Seck, 1990). Hence, very visible 
+transformations have taken place in the mid valley through the setting up of irrigated 
+perimeters (locally called PIV), of which the Guédé-Chantier village is an emblematic place, 
+that more and more transform the landscapes by replacing agro-pastoral and fishing systems, 
+deeply anchored in a specific territory, by an intensive production system of irrigated 
+
+ 
+
+3 
+
+ 
+
+ 
+
+cultivation (90% rice). During the 1990s, dams allowed the tripling of the irrigated areas and 
+rice production increased (Fig. S1 in Result S1 in Online Supplementary Material). The 
+widespread use of irrigation and increased drought (rainfall is now stabilized at around max 
+250 mm /year instead of around 300 mm on average before 1970) considerably reducing the 
+natural flooding of the river and jeopardizing the traditional farming system. Most inputs were 
+therefore based on synthetic fertilizers, with consequences both to the rate of soil organic 
+matter and to the dependence of families on input purchases and borrowing (Garambois et al., 
+2018). 
+ As a result of rising cereal prices, the 2008 global food crisis has hit Sahel countries hard and 
+a new wave of an intensive rice program, began in 2010, planned to accelerate the pace of the 
+movement towards the country's rice self-security. This plan called Programme 
+d'Accélération de la Cadence de l'Agriculture Sénégalaise (PRACAS) is the main agricultural 
+element of the economic ‘Plan of Senegal Emergent’. The backbone of PRACAS consists in 
+an extension of irrigated rice areas implemented by the national Société d'aménagement et 
+d'exploitation des terres du Delta et du Fleuve Senegal (SAED) whose assignment by the 
+State is essential since the State controls total irrigated land attribution which conditions the 
+access to bank credit to buy seeds, inputs etc. for the rice cultivation campaign. This has led to 
+such a great transformation in family life regarding food, health and social relations that most 
+of those involved seriously question the ongoing situation.  
+Nutritional context 
+The inhabitants of the middle and lower valleys, which remained isolated rural areas until the 
+end of 1990s, have since changed their food habits by eating more rice instead of local 
+cereals. The World Food Program showed that food insecurity in the Podor department was of 
+concern with only 65% of households considered as food secure while the national prevalence 
+is 83% (WFP, 2017). In addition, it was shown that the diet in Northern Senegal is mainly 
+composed of cereals, roots, vegetables oils and sugar and, to a lesser extent, vegetables, 
+legumes and animal products (WFP, 2014). While this survey seems to indicate an 
+unbalanced diet, accurate data about the food quantities consumed by the household and the 
+individuals are lacking.  
+Intersectionnality and social interaction of caste and gender 
+The majority of the population belongs to the Halpulaar ethnic group hierarchized in castes 
+which define the powers (religious or over land ownership) and craft activities in the 'Leydi’ 
+(Fig. 2). For example, the situation of interdependence of traditional craft trades resulted in 
+exchanges of sorghum, milk and fish at the end of the rainy season (Boutillier and Schmitz, 
+1987; Boutillier, 1989). The system for allocating irrigated private land and the increase in 
+(male) migration have had contradictory effects by favoring less strict caste hierarchies 
+(Boutillier, 1989), and the maintenance of gender inequalities, in particular through the 
+practice of virilocality (the spouses must settle in the place of residence of the husband’s 
+parents). The virilocality is certainly all the more strategic (Feldmann, 2013) in a context of 
+irrigated agriculture where the demand for labor is increasing (Cordell et al., 1996). Access to 
+land is patrilineal and disproportionately favors men over women and high caste women over 
+those at the bottom of the hierarchy (Sall and Thioune, 2012). This is particularly true for 
+access to the most coveted land such as the Waalo and the Falo (on the river banks). Women's 
+individual right to land not being recognized, they have, with the support of NGOs such as 
+ENDA Pronat, recently negotiated access to shared gardens. But the land granted is often 
+remote, not very fertile and not big enough to cover the needs and expectations of the women. 
+Despite the heterogeneity of women's status according to their age, their entry into marriage 
+
+ 
+
+4 
+
+ 
+
+ 
+
+and their relationship to the head of the family, these gardens are often spaces of female 
+solidarity. 
+Study design 
+Field research was conducted from April to June 2019 mainly by three female master students 
+who lived and worked in the three villages jointly with three male Senegalese student-
+facilitators and translators from the local community of Halpulaar. An experimental (non-
+probabilistic) sample was established by local members of Enda Pronat to take advantage of 
+their permanent presence in the area. This sample was constituted by nine families, three 
+families in each village, involved in subsistence-oriented farming and with variations in 
+socio-economic level and number of family members. Within these families, we have worked 
+with 12 households (locally called foyré), considered as a set of people sharing the same meal. 
+The foyré is also a socio-economic space of production and reproduction. This overlapping of 
+status within the productive sphere and within the family explains the invisibility of women’s 
+work, especially as regards irrigated rice cultivation where it is considered as marginal and 
+qualified by the women themselves as ‘help’. Specific surveys related to three domains of 
+research were jointly conducted on different members of the 12 households, as described in 
+the following sections.  
+Agricultural system and biodiversity survey 
+All women and men from the 12 households were asked to provide information about the 
+family functioning of agricultural systems, agricultural production and biodiversity 
+management in semi-directive interviews. The individual interview guidelines were adapted 
+to the respondent and the information collected took into account the differentiation between 
+the fields cultivated by men and the areas cultivated by women. The interviews were analyzed 
+in order to create a typology of farming areas and farmers' strategies (Rahmoun, 2018). In 
+addition, a free listing method was used to obtain from women and men, from the 12 
+households but asked individually, a list of cultivated and/or known plants, present or 
+formerly present, in order to investigate the most important ones in more detail.  
+Dietary survey and diet simulation 
+Women usually responsible for food preparation for the household were asked to provide 
+information about foods and beverages consumed by household members during the previous 
+year using a semi-quantitative Food Frequency Questionnaire (FFQ) co-developed for this 
+study with local members of Enda Pronat (Gueye, 2018). Matching with relevant food 
+composition database, energy and 21 nutrients intakes by household members were estimated. 
+Then the adult male equivalents (AME) method was used to calculate the AME-predicted 
+food and nutrient intakes of the women (Weisell and Dop, 2012) and the AME-predicted 
+nutrient adequacy of the diet was assessed calculating the percentage of women not respecting 
+the international nutrient recommendation (Joint WHO/FAO Expert Consultation, 2004). The 
+complete method is detailed in Method S1in Online Supplementary Material. Based on the 
+main dietary changes identified through semi-directive interviews with men and women more 
+than 65 years old from the 12 households about dietary changes that had occurred over the 
+past 45 years, we simulated the effect of these changes by creating a simulated-past diet for 
+each woman. SAS version 9.4 (SAS Institute) was used to perform the descriptive analyses of 
+food and nutrient intakes and to conduct the simulations. 
+Comprehensive approach to the interaction between garden, yard and kitchen 
+To further understood the specific role of women in the local food system (agricultural 
+production, biodiversity management, food preparation – ingredients and recipes – and 
+sharing, food behavior), comprehensive and ‘conversational interviews’ (Olivier de Sardan, 
+
+ 
+
+5 
+
+ 
+
+ 
+
+1995) were conducted with all the women from the 12 households. The adoption of this socio-
+anthropological and geographical posture had the particularity of creating a ‘listening 
+situation’, where the interview as interaction took place at home, in the concessions or in the 
+fields. Benefiting from a presence of three months in the area and previous stays in Senegal, 
+one of the master student investigators who were making the social geography inquiry 
+(Gardien, 2018) had the possibility of coming back and renewing the ‘conversational 
+interviews’. This investigator, a young unmarried woman (who had been assigned a role 
+related to this status), also used a participative observatory perspective related to specific 
+responsibilities of women such as field and kitchen work (preparation of food, cleaning the 
+yard or the dishes). This research posture had for its ambition to analyze words and gestures, 
+and to take an interest in places (the kitchen, the yard, and the garden) and the way they 
+condition speech. In addition, using the geographical approach of territorialities and the 
+meaning of spaces given by the actors according to their social positions, some landscape 
+readings were conducted during walks. 
+Ways of working the transdisciplinary approach 
+In addition to the specific surveys of agricultural production and biodiversity, diet and role of 
+women in the local food system, peripheral interviews were realized simultaneously with a 
+panel of 17 key informants about these different topics. This panel covered a large range of 
+socioeconomic positions.  
+Several formal meetings were organized in the study area in 2018 and 2019. An initial field 
+meeting was held before the beginning of the study and involved 70 people (with Enda's 
+employees, researcher from Africa Rice, teacher of the Eco-School of Guédé, responsible 
+person from SAED, leader of women’s organizations, peasant organization members ASPSP, 
+medical nurse and traditional nurse ‘badianogo’) to mobilize, explain and discuss the issues at 
+stake in the area.  
+Two workshops were then held during the supervising mission and involved the three student-
+investigators, the three student-facilitators, some Senegalese scientists and some members of 
+the DIVA team (French academic researchers and local members of Enda Pronat).  
+Finally, a festive event called the ‘Diva Fest’ involving more than 75 people was held to share 
+the results from the study with most of the women who were interviewed in the study, and 
+collectively discuss these results. This event was also the opportunity to promote local 
+biodiversity and culinary practices with collective meals. 
+ 
+2 Results and discussion  
+2.1 Multidimensional understanding of the consequences of the transformation of the 
+agricultural system 
+The new agro-system organization, family food strategies and gendered work   organization 
+The two years of the study allowed us to observe the complex design of the agro-system in 
+relation to food strategies (Fig. 3), with the recession culture being absent during the first year 
+and present during the second. The agro-system was geared mainly towards cultivation of 
+irrigated Nerica-type rice varieties (‘New Rice for Africa’ from Africa Rice) and many local 
+actors have mentioned that prioritization of irrigated rice cultivation had disorganized the 
+whole production system so none of the surveyed families cultivated rice in the warm dry 
+season (harvest in July) despite SAED recommendations. Nerica comes from crosses between 
+Oryza sativa (Asian rice) and Oryza glaberrima (African rice) but nutritionally they are 
+varieties of ‘white rice’ improved only to be productive under irrigation. The productive logic 
+
+ 
+
+6 
+
+ 
+
+ 
+
+in the system of the valley is to limit risks, first and foremost the risk of food shortage 
+especially during the lean season. Another cash and food crop in the production system is the 
+local purple variety of onion called ‘Violet de Galmi’. Onion was sold in a structured value 
+chain, which generally helped to maintain a satisfactory selling price, and constituted the most 
+regularly valuable agricultural production. According to families that can produce in the 
+Waalo, the capacity to produce onions (with a surplus from 2 to 15 tons according to the 
+family) seemed decisive for building a cash inflow allowing for buying food and achieving 
+food self-sufficiency in the absence of a recession culture. The last dominant crop in the 
+production system was the Roma non-local variety of tomato, entirely given over to 
+processing by the Société de Conserves Alimentaires au Sénégal, in Ross-Bethio (Senegal 
+River delta). 
+As mentioned earlier, the productive logic in the system of the valley was, always intended to 
+be, oriented mainly toward limiting risks to primarily achieving food self-sufficiency all 
+through the year. The lean period is a constant preoccupation for women. The participatory 
+survey revealed that in the Waalo rice enters into land competition with the traditional flood-
+based organization and that this poses a real problem for families because of the attachment to 
+traditional systems for technical, economic, food and cultural reasons, as other authors have 
+found (Le Roy, 2007; Bruckmann, 2018). As typically in small family farming, the 
+diversification of sources of income and food production is the main strategy of the families. 
+The recession cultivation of sorghum fulfilled this function perfectly because it cost much less 
+to grow (requiring less work and no inputs) and provided more money than rice that is sold by 
+the kilo for twice the price. Nevertheless, such a strategy faced several limitations. Aiming for 
+food security much more than for the achievement of good rice yields placed the families at 
+odds with the demand of the public authorities transmitted by SAED which relates only to the 
+objectives in terms of irrigated area and annual production: the rice production is expected to 
+increase from 455,000 tons in 2018 to 875,000 tons in 2020. As a consequence of this 
+mismatch between local and national objectives, families cannot but deplore the lack of 
+technical and financial support from public authorities for the carrying out of diversification 
+activities. Another important limitation was the land constraint, especially because the Waalo 
+lands prone to flood recession culture are never sold if not occupied by rice, tomato or onion 
+(Bruckmann, 2018). According to the perception of being food secure, defined by families as 
+being able to achieve self-sufficiency in rice and having extra assets from off-farm activities 
+or expatriates, different strategies of production and limitations were described (Table 1).  
+While there were different strategies of diversification, a clear gendered organization of 
+agricultural work was observed (Table 2). Globally, in irrigated plots of the Waalo, under the 
+responsibility of the men, almost exclusively owners of the land, the women were carrying 
+out different strategic tasks (transplanting, weeding, guarding the cultivation against birds, 
+harvesting) for the production of rice, onions and tomatoes. The new agro-system 
+organization has created a novel female status, that of the ‘woman who helps’, which means 
+she loses all family and social recognition. Even when migration kept young men absent and 
+women were involved in many tasks, they very rarely gained recognition with strategic bodies 
+(Top, 2014). When the lack of manpower made it necessary to make choices between crops in 
+the irrigated Waalo or flood basins, the family choice gave priority to irrigated plots and rice 
+that became strategic for the families’ food security and for earning money. The Waalo has 
+thus lost its place as a feeding ground to irrigated areas, and to rice, which is now the staple 
+food of the peasants. Sorghum, on the other hand, was becoming a cash crop for some 
+families, who preferred to sell it when they grew it because: ‘The 50 kg bag is worth 30,000 
+FCFA for sorghum against 15,000 FCFA for rice. The women sell and the profits go to the 
+husband but are shared in the family in the form of food’. 
+
+ 
+
+7 
+
+ 
+
+ 
+
+By contrast, specific women (such as the wife of the head of the household after negotiation 
+and agreement with the land owners of the noble caste (Lawokobé) were responsible for all 
+the agricultural activities in the Falo (along the riverbanks), for six months of the year. The 
+men, at their request, came to their aid. The products from the riverbanks could be used to 
+enhance sauces and accompany dishes such as cowpea. Corn was eaten roasted, especially by 
+children; sweet potatoes, grown on the lowest part of the banks, could be found in lunch 
+dishes, served as a vegetable, as can squash or cherry tomato. The Falo has been gradually 
+abandoned in favor of collective gardens; its cultivation was also more difficult due to the 
+lack of flooding. In the Dieri, the involvement tended to be somewhat more balanced in the 
+sense that both men and women worked in this area but on separate activities: men were more 
+involved in tillage, plowing and weeding while women were more involved in harvesting. 
+This pattern was slightly different depending on whether millet or colocynth and cowpea were 
+cultivated (Table 2). Finally, there were specific areas in irrigated Waalo recently gained by 
+women for shared gardens dedicated to highly diversified productions such as hot pepper, 
+cowpea, squash, cherry tomato, sorrel, eggplant, beetroot, onion, salad, cabbage and okra. 
+Invariably, women were solely responsible for food processing whatever the cultivation and 
+the area where the cultivation came from (Fig. S2 in Result S1 in Online Supplementary 
+Material). 
+Knowledge on biodiversity and breeding in their agro-ecological context 
+While the cultivation of recession sorghum, cowpeas and corns has declined in favor of 
+cultivation of irrigated Nerica-type rice varieties, this did not seem to have consequences for 
+the knowledge of biodiversity or the breeding of traditional species varieties. Having such 
+perennial knowledge was in sharp contrast to Nerica-type rice varieties, which were 
+associated to no specific knowledge and generally known by the name ‘Nerica’ followed by a 
+serial number.  
+When focusing on recession sorghum growing in the Waloo, women listed up to 19 varieties 
+whereas only 5 of them were still cultivated. The other varieties are still available locally, 
+preserved by some families and sold in the bush markets; they are still present, too, in 
+culinary memories. The women were able to accurately describe the characteristics of the 
+grain and flour, the related agricultural practices (e.g. crop cycle, seasonality), the interests 
+and disadvantages of cultivating the variety, and the management of seeds. This was 
+explained by the fact that seed management and breeding were traditionally the responsibility 
+of women. All these varieties were local or peasant. A summarized description of the 8 most 
+cited recession sorghum varieties and photographs can be found in Tables S1 and Fig. S3 in 
+Result S1 in Online Supplementary Material. Briefly, the 3 most frequently cited varieties 
+were Poordi (which means brown, the color of the seed), Mariam Sowdou (from the name of 
+the woman who introduced and spread it) and Balieri (which means white). Yellow variety 
+(Paaca) was also mentioned. The choice of cultivating one or another variety was guided by 
+the length of the crop cycle (e.g. the Poordi cycle was 20 days shorter than the Balieri cycle) 
+and bird attacks (e.g. the Balieri was less sensitive compared to Poordi). As a result, the 
+Poordi variety was the most cultivated while its bitter taste (a protective factor against bird 
+attacks) was less and less appreciated by the families. Among the 19 other varieties 
+mentioned, the cultivation of most of them has been abandoned due to longer cycles (e.g. 
+Bobo jamm and Samba Souké). In addition, the decrease in flooding for several consecutive 
+years has had consequences for the seed conservation of these different varieties. Because the 
+maximum storage time is two years according to women involved in sorghum breeding, and 
+because of the uncertainty of the next floods, women progressively stopped keeping seeds and 
+preferred to buy them at the market or from neighbors. Nevertheless, some women did their 
+best to save sorghum seeds. 
+
+ 
+
+8 
+
+ 
+
+ 
+
+In addition to the recession sorghum or cowpea cultivation in the Waalo, there was 
+traditionally a large biodiversity of edible species allowing families to feed themselves during 
+the year. Women listed varieties of squash and pumpkin (called Déné Boudé) with yellow 
+flesh (called Diayédjé), maize, cornilla (called niébé), and black rice (called Sarna or Maro 
+Balléo, which was cultivated before the Nerica rice), wild grasses with small edible seeds 
+(known locally as Pagguri, locally considered similar to fonio), fruit of the water lily, seeds of 
+Nymphea lotus (called locally Ndayri), or bulb of Gladiolus sp. (Iridaceae locally called 
+Dayeedji). However, the consumption of the previously mentioned species has decreased 
+although some of them are still much appreciated foods, especially for their seeds (called 
+Podé); they are available in the market. One woman explained: ‘The disappearing crops 
+means that people stop eating these foods. Because if you don't grow them anymore, you have 
+to buy them, so you don't prefer to buy them, because before you could get them for free, 
+apart from the trouble of growing them’. Podé was one of the plants and associated dishes 
+constantly evoked and considered as a culinary loss while it was alive in people’s memories. 
+Cooking it is always a celebration: the choice to live in the villages, and sometimes in the 
+concessions, made it possible to ask the families to cook the podé for us. This was an 
+opportunity to measure the emotion involved in making this dish. Wild bush fruits such as 
+jujub (desert date palm (Balanites aegyptica)) and Fulani ngigili (Boscia Senegalensis) have 
+also become rare. The Kelly (Zizyphus Mauritania), a bush fruit resembling the jujub has 
+completely disappeared (according to fieldwork, see also Boëtsch et al., 2012). 
+Consequences of the new organization of the local agro-system on women’s diet 
+Another consequence of the new organization of the local agro-system concerns the quality of 
+the diet of the families, and notably of the women. Data collected through the FFQ in 12 
+households were used to calculate AME-predicted food and the nutrient intake,over the 
+previous year, of 43 women aged from 18 to 65 years. The current diet, described in Table 3, 
+was mainly based on cereals, rice intake representing 61% of the total intake of cereals: wheat 
+18%, maize 8%, sorghum 8% and mil 5%. It also included modest intakes of fruits, 
+vegetables and legumes mainly produced by the women in the shared gardens and the Falo 
+(only 35% of the women followed the advice of consuming 400 g/d of fruits, vegetables and 
+legumes (Joint WHO/FAO Expert Consultation, 2002) and very low intakes of animal 
+products.  
+While the average energy intake of 2791 kcal/d might be relatively adequate as compared 
+with the average energy requirement for women with active lifestyles, the current global 
+nutrient adequacy of the diet was of concern (Table 4). Due to the predominance of refined 
+cereals in the diet, more than half the women were unable to respect the recommendation of 
+eleven nutrients, and a large portion of the sample did not meet the recommendation of two-
+thirds for iron (62.8%), vitamin A (55.8%), vitamin B-12 (48.8%), folate (46.5%), and 
+riboflavin (39.5%) indicating a risk of nutrient inadequacies.  
+Based on interviews with adults older than 65 years, four main dietary changes that have 
+occurred over the past 45 years were identified and we simulated the effect of these changes 
+by creating a simulated-past diet for each women where i) the consumption of meat was 
+raised to 20 g per day; ii) the current consumption of fish was multiplied by ten; iii) the 
+current consumption of legumes was multiplied by two; iv) the associated increase of energy 
+intake was compensated for by the decrease of consumption of cereals; and v) among the 
+consumption of cereals, the consumption of rice and wheat was replaced by a caloric 
+equivalent consumption of sorghum and mil. As a result, the simulated-past diet, richer in 
+meat and fish, was found to be associated with higher average intake of most of the nutrients 
+and a reduction of the prevalence of women not respecting the nutrient recommendation 
+
+ 
+
+9 
+
+ 
+
+ 
+
+(especially for thiamin, vitamins B-6 and B-12, iron, potassium and zinc). Nevertheless, this 
+diet cannot be qualified as healthy due to a low consumption of fruits and vegetables.  
+While our estimations of both current and simulated-past diet might be prone to errors and 
+bias, interviews with local actors about our results and comparison with literature about 
+current and past diet in Sub-Saharan Africa indicated that our results were not too strongly 
+affected by these errors and biases (see Method S1 in Online Supplementary Material for a 
+more detailed discussion). Another question that arose in our work regarding diet has to be 
+mentioned. While the kitchen space was clearly described by local women as a food space in 
+continuity with the agricultural space where the sovereignty of women was exercised and 
+where they expressed and improved a whole series of knowledge dishes (Fig. S4 in Result S1 
+in Online Supplementary Material), it would be desirable to continue investigations into the 
+links between dishes and associated plants, all the more so since these are subjects that arouse 
+great interest among women. We initiated this approach by starting with certain emblematic, 
+such as preparations based on cowpeas or sorghum coucous (niri) whose consumption has 
+fallen sharply due to lower production and higher purchase costs. Different preparations are 
+associated with niri: niri Kosam (with milk), niri bouna (with dried fish) or niri beref. There 
+are emblematic dishes, still prepared for certain occasions such as baptisms and weddings and 
+associated with good health and culinary heritage. This study confirms, notably following 
+Howard (2003), that culinary traditions are a major element in the preservation of wild and 
+cultivated biodiversity. If culinary traditions are diminishing, the reasons for conserving these 
+plants useful for food, as well as the knowledge associated with them (cultivation, processing, 
+and storage) are also being lost. Thus, the work of women in the transmission of culinary 
+knowledge is of great importance, and this makes the kitchen the primary place for 
+maintaining biodiversity. In addition to being a place for conserving plants, the kitchen is also 
+a place for creating emotions and memories. Thus, to evoke food and its evolution is also to 
+evoke the memories associated with it by appealing to the senses.  
+2.2. The DIVA project as an experiment in transdisciplinary research  
+In this part, we stressed a reflexive return to the DIVA experiment of TD research. The study 
+made it possible to confront academic research with a complex object and to observe certain 
+difficulties and limitations in the reality but also the advantages that the TD approach 
+presents. Firstly, complete interdisciplinarity, aiming for a combination of natural and social 
+sciences, is inherently problematic both in its choice of objects and in its methods: the 
+sciences of biology and health are governed by metrics and very delimited objects whereas 
+the objects of socio-anthropology are not measured and the analysis of gender is by definition 
+transverse. Secondly, the TD process, the participation of civil society in knowledge genesis, 
+confronts the motives and values of people (ethics) which are generally different depending 
+on the point of view. If the scientist is interested in producing knowledge that is as 
+generalizable as possible, local actors are motivated by the desire for change or the resolution 
+of a problem. 
+Theoretical foundation of our posture in TD and Sustainability Science 
+A research posture consisting in using all available resources (i.e. any form of knowledge and 
+any way of accessing knowledge) does not represent a break with that which precedes it 
+(tending always towards more specialization and technical progress) but an evolution linked 
+to the profusion of knowledge and the improvement of access to all kinds of knowledge. In 
+this respect, pragmatic philosophy, a philosophical theory of education developed by John 
+Dewey (Dewey, 1925 [2012]; 2005) at the beginning of 20th century in the United States 
+offers a particularly relevant framework to reflect on knowledge management for action 
+science . In his theory of experience and education Dewey postulates that all knowledge 
+
+ 
+
+10 
+
+ 
+
+ 
+
+derives from experience and that new theories become established by and during empirical 
+experiments. These concepts are at the basis of the sustainability science dealing with 
+‘wicked’ or real-world problems (Lang et al., 2012; Wolff et al., 2019). The theoretical 
+framework of Sustainability Science is nowadays certainly of growing interest in the approach 
+to societal demand in the face of the multifaceted environmental crisis that requires designing 
+research processes in a flexible way in order not to be blinded by too focalized objectives 
+(Brandt et al., 2013). The Sustainabilty approach draws on concepts of research, such as eco-
+feminism (Mies and Shiva 1993; Guétat-Bernard, 2020), the French school of contemporary 
+pragmatic sociology that provides important insights into the bounded multiplicity of nature's 
+worth in political modernity (Latour 2005; Thevenot, 2007; Boltanski, 2009), political 
+ecology for food sovereignty in the South and gender justice (Bezner-Kerr et al., 2018; 2019). 
+So, our approach has been situated accordingly and the fine contextualization was part of that. 
+With the DIVA case study, considered as an empirical experiment bringing into play different 
+types of knowledge, we attempted to collect information from diversified sources and to 
+recombine results into a more global answer to the global question emerging from the 
+consultations with local actors, men and women, about what is a more sustainable local food 
+system. Based on this expectation, we emphasize how important it is to implement and share 
+a ‘comprehensive’ understanding of the context in the broad sense (historical, political, 
+geographic, spatiotemporal and cultural). Mutual understanding is only achievable if 
+conditions that led to the observed situation are known to all and in that respect mediation 
+organized by local members of Enda Pronat was instrumental. 
+Added value and limitations of the transdisciplinary research experiment 
+Our main finding concerning context was that cultural agricultural and ecological contexts 
+were interlinked even if this interlinking was less visible today than ‘before rice’. In this 
+regard, Berkes and Folke (1998), Folke et al (2003) and Hölling (2001) described coupled 
+social–ecological systems as co-evolved, with mutually dependent and interacting social and 
+ecological components. Understanding these interactions in our study was key to deciphering 
+the status and positions of actors and investigating their embedded knowledge. For example, 
+the ‘DIVA Fest,’ which was a festive event held to present the results, was one of several 
+opportunities to interact with the community. All the participants (75 people, including most 
+of the women who were interviewed in the study) continued to provide information enriching 
+our own survey. During this event, women further described and discussed their attempts to 
+experiment with a new cultural association of sorghum and cowpea under irrigation. They 
+also took advantage of the event to report the death of seedling plants due to warmer and 
+polluted water. The women farmers also appreciated the synthesis of the researchers' results: 
+they felt that they were understood (the study correctly reflected their point of view), that their 
+knowledge was valued and that their difficulties were publicly expressed in a symbolic place 
+like the town hall.  
+While the dietary survey made it possible to describe the current diet of women as unbalanced 
+in terms of a share of the different food groups and rice overconsumption, the TD approach 
+allowed to go further when linking diet to local environment. This approach validated the 
+intuition of local actors that the traditional dietary pattern based on sorghum and mil 
+consumption was healthier than the current one. Furthermore, cross exchanges with actors 
+allowed us to pose a strong hypothesis of the negative effect of the gradual disappearance of 
+the recession system on transhumant pastoralism in the Waalo. It was confirmed that this 
+disappearance also affected fishing activities practiced in basins flooded during the recession 
+and activities to maintain these basins for the reproduction of fishes, as anticipated by 
+Boutillier and Schmitz (1987). 
+
+ 
+
+11 
+
+ 
+
+ 
+
+Another added value of the TD approach was observed when studying the local biodiversity 
+through gendered interviews. Without information and feedback from local actors about our 
+methods (i.e. design and revision of interview guide and ‘improvised’ women focus groups in 
+the agro ecological planting places, kitchens, etc.), it would have been difficult to collect so 
+precise a description of the varieties of plants like sorghum and cowpea, or the knowledge on 
+the variety diversity of these plants. 
+ 
+3 Conclusion  
+The first goal of our research was, following Pohl and Hirsch Adorn (2008), to enlighten and 
+promote what is perceived to be the common good by the actors, which relates to the value 
+system shared by the Senegal Middle River people. To insure a correct instruction of the 
+multi-dimensional inquiry considering the limited resources, the diverse participants in the 
+DIVA study have endeavored to multiply interactions and mediation to primarily establish 
+links of confidence, to be able to reliably put into perspective the case-specific knowledge 
+gained. So the clear political outcome of our study was that the vision of irrigated rice 
+cultivation, initially designed to ‘valorize’ the Senegal Middle River valley potential, operated 
+a ‘flood marginalization’ far from the vision of all local actors, whether male or female. In 
+this regard, pollution and food problems have already been anticipated for almost 20 years by 
+a committee of researchers and local actors in this area (Adams, 2000; Bruckmann, 2018). 
+However, the public authorities and donors have not taken these warnings into account by 
+adopting an economic development approach where the river is disconnected from its flood 
+and ignoring food traditions, cultural and agri-food function of floods. Our results, deeply 
+locally situated, show the growing negative impacts on the expansion of irrigated intensive 
+rice cultivation on biodiversity, traditional knowledge and nutrition. The ethical dimension of 
+the TD and gendered DIVA study, despite its geographical limitations, consisted in giving 
+value to the heritage and memory of local actors in their quest for food and cultural 
+sovereignty. Women farmers of diverse status have expressed this attachment while at the 
+same time stressing their concern for the disappearance of cultural, agriculture and food 
+habits.  
+ 
+References 
+Adams, A (2000) Social Impacts of an African dam: equity and distributional issues in the 
+
+Senegal River Valley. World Commission on Dams contributing paper prepared for 
+Thematic Review 1: Social Impacts of Large Dams Equity and Distributional Issues. 
+World Commission on Dams, Cape Town. 
+
+Berkes, F and Folke, C (1998) Linking social and ecological systems for resilience and 
+
+sustainability. In: Berkes F and Folke C (eds.), Linking Social and Ecological Systems: 
+Management Practices and Social Mechanisms for Building Resilience. Cambridge 
+University Press, Cambridge:1-26.  
+
+Bezner Kerr R, Nyantakyi- Frimpong H, Dakishoni L, Lupafya E, Shumba L, Luginaah I, 
+
+Snapp SS (2018) Knowledge politics in participatory climate change adaptation research 
+on agroecology in Malawi. Renewable Agriculture and Food Systems 33:238–251. 
+
+Bezner Kerr, R, Hickey, C, Lupafya, E, Dakishoni, L (2019). Repairing rifts or reproducing 
+
+inequalities? Agroecology, food sovereignty, and gender justice in Malawi. The Journal of 
+Peasant Studies: 1-20.  
+
+Boëtsch, G, Guerci, A, Gueye, L, Guisse, A (eds.) (2012) Les plantes du Sahel, usages et 
+
+enjeux sociaux. CNRS Editions, Paris.  
+
+ 
+
+12 
+
+ 
+
+ 
+
+Boltanski, L (2009) De la critique. Précis de sociologie de l’émancipation, Gallimard, Paris. 
+Boutillier, JL (1989) Irrigation et problématique foncière dans la vallée du Sénégal. Cahiers 
+
+des Sciences Humaines 25:469-488. 
+
+Boutillier, JL and Schmitz, J (1987) Gestion traditionnelle des terres (système de décrue/ 
+
+système pluvial) et transition vers l’irrigation. Le cas de la vallée du Sénégal. Cahiers des 
+Sciences Humaines 23:533-554. 
+
+Brandt, P, Ernst, A, Gralla, F, Luederitz, C, Lang, DJ, Newig, J, Reinert, F, Abson, DJ, von 
+
+Wehrden H (2013) A review of transdisciplinary research in sustainability science. 
+Ecological Economics 92:1-15. 
+
+Bruckmann, L (2018) Crue et développement rural dans la vallée du Sénégal : entre 
+marginalisation et résilience. Belgeo 2. doi: https://doi.org/10.4000/belgeo.23158 
+
+Carletto, C, Corral, P and Guelfi, A (2017) Agricultural commercialization and nutrition 
+revisited: Empirical evidence from three African countries. Food Policies 67:108-118. 
+Cesaro, JD, Magrin, G and Ninot, O (2010) Atlas de l’élevage au Sénégal. Commerce et 
+
+territoires. PRODIG, Paris. 
+
+Cordell, DD, Gregory, JW and Piche, V (1996) Hoe and Wage: A Social History of a Circular 
+
+Migration System in West Africa.Westview Press, Colorado. 
+
+Dewey, J (1925 [2012]) Experience et Nature traduced by Joelle Zask, Gallimard, Paris. 
+Dewey, J. (2005) La réalité comme expérience, trad. Saint-Germier P. and Truc J. in Tracés. 
+Revue de Sciences Humaines, n°9. « Expérimenter », Paris, ENS éditions, texte en ligne 
+sur http.//traces.revues.org 
+
+Feldmann, N (2013) Division sexuelle du travail et mobilités géographiques féminines. 
+
+Géocarrefour 88, 97-106.  
+
+Folke, C, Colding, J and Berkes, F (2003) Synthesis: building resilience and adaptive capacity 
+
+in social–ecological systems. In: Berkes F, Colding J and Folke C (eds.), Navigating 
+Social–Ecological Systems: Building Resilience for Complexity and Change. Cambridge 
+University Press, Cambridge : 352-387. 
+
+Garambois, N, El Ouaamari, S, Fert, M, Radzik, L (2018) Politique hydro-agricole et 
+
+résilience de l’agriculture familiale. Le cas du Delta du fleuve Sénégal. Revue 
+internationale des études du développement 4:109-135. 
+
+Gardien C (2018) Evolution des pratiques agricoles et des comportements alimentaires, 
+stratégies et inventivités des femmes. En milieu rural Halpulaar, Moyenne Vallée de 
+Fleuve Sénégal » Master 2 en socio-anthropologie “Gestion des Territoires et 
+Développement Local-Territoires Ruraux” (Université de Toulouse Jean Jaurès), Toulouse. 
+
+ Guétat-Bernard, H (2020) Ecoféminisme. In: Dictionnaire Critique de l'Anthropocène. 
+
+CNRS édition, Paris. 
+
+Guétat-Bernard, H and Ndami, C (2019) Géohistoire du genre et du développement rural en 
+
+Afrique. L’exemple emblématique des régions de l’ouest et du sud du Cameroun. 
+In:Charmain, L and Martinez, A (eds.), Genre, féminismes et développement : une trilogie 
+en construction. University of Ottawa Press, Ottawa, pp. 347-364. 
+
+Gueye D (2018) Evaluation des effets d’un changement de système productif sur la qualité 
+
+nutritionnelle de l’alimentation. Test d’une méthode d’enquêtes et de simulation 
+alimentaires dans la moyenne vallée du fleuve Sénégal. Master 2 en nutrition, spécialité 
+«Nutrition humaine et santé », Université de Bordeaux, Bordeaux.  
+
+Hölling, CS (2001) Understanding the Complexity of Economic, Ecological, and Social 
+Systems. Ecosystems, 4: 390-405. 
+Howard, P (ed.) (2003) Women and Plants. Gender relations in biodiversity management and 
+
+conservation. Zed Books, London and New York. 
+
+ 
+
+13 
+
+ 
+
+ 
+
+Jaeger, J and Scheringer, M (1998) The Structure of Transdisciplinary Research – Six Case 
+Studies (Poster). Available at http://www.env-science.ethz.ch/JaegerScheringer_TD.pdf 
+(Accessed 28 April March 2020). 
+
+Joint WHO/FAO Expert Consultation (2002) Diet, Nutrition and the Prevention of Chronic 
+
+Diseases. WHO, Geneva. 
+
+Joint WHO/FAO Expert Consultation (2004) Vitamin and mineral requirements in human 
+
+nutrition. WHO, Geneva. 
+
+Lang, DJ, Wiek, A, Bergmann, M, Stauffacher, M, Martens, P, Moll, P, Swilling, M, Thomas, 
+
+CJ (2012) Transdisciplinary research in sustainability science: practice, principles, and 
+challenges. Sustainability Science 7:25–43. 
+
+Latour, B (2005) Rassembling the Social: An Introduction to Actor-Network-Theory. Oxford 
+
+University Press, Oxford. 
+
+Le Roy, X (2008) Le sorgho de décrue dans la vallée du Sénégal. In: Mollard E and Walter A 
+
+(eds.), Agricultures singulières. IRD Editions, Paris, pp. 33-38. 
+
+Le Roy, X. 2007. Le sorgho de décrue dans la vallée du Sénégal. http://hal.ird.fr/ird-
+
+00179486 
+
+Mies M and Shiva Vandana (1993). Ecofeminism. London & Atlantic Highlands, Zed Books. 
+
+London and New York. 
+
+Olivier de Sardan, JP (1995) La politique du terrain. Enquête 1, 71-109. 
+
+https://doi.org/10.4000/enquete.263 
+
+Pohl, C and Hirsch Hadorn, G (2008) Methodological challenges of transdisciplinary 
+
+research. Natures Sciences Sociétés 16:111-121. 
+
+Rahmoun T, 2018.  Etude de l’évolution de l’agrobiodiversité et son impact sur l’alimentation 
+
+dans une région d’intensification agricole, la moyenne Vallée du Fleuve Sénégal 
+(Commune de Guédé). Master 2 en agronomie, spécialité « De l’agriculture à 
+l’agroécologie », AgroParisTech/Agreenium, Paris.  
+
+Raschke, V and Cheema, B (2008) Colonisation, the New World Order, and the eradication of 
+
+traditional food habits in East Africa: historical perspective on the nutrition transition. 
+Public Health Nutrition 11: 662-674. 
+
+Ravera, F, Martin-Lopez, B, Pascual, U, Drucker, A (2016) The diversity of gendered 
+adaptation strategies to climate change of Indian farmers: A feminist intersectional 
+approach. Ambio, 45, S335-S351. 
+
+Ruel, MT, Quisumbing, AR and Balagamwala, M (2018) Nutrition-sensitive agriculture: 
+
+What have we learned so far? Global Food Security 17:128-153. 
+
+Sall, FD and Thioune, R (2012) Sénégal : les femmes rurales à l’épreuve d’une citoyenneté 
+
+foncière. Groupe d'Etudes et de Recherches Genre et Sociétés. Dakar. 
+
+Scholz WR, Steiner G. (2015) The real type and ideal type of transdisciplinarity processes: 
+
+Part II-What constraints and obstacles do we meet in practice? Sustainability Science, 
+10:527-544. DOI: 10.1007/s11625-015-0327-3 
+
+Seck, SM (1990) Management and organisation of irrigation on peasant farmer holdings in 
+
+the Senegal valley. Revue de géographie de Lyon 65:38-45. 
+
+Thevenot, L (2007) The Plurality of cognitive formats and engagements. European Journal of 
+
+Social Theory 10:409-423. 
+
+Top, A (2014) Evolution des systèmes de production agricole dans un contexte de 
+
+changement climatique et de migration, et effet de genre, dans les trois zones eco-
+géographiques de la région de Matam au Sénégal, Thèse de sociologie de l’Université de 
+de Saint Louis et l’Université de Toulouse (Dr H. Guetat –Bernard), Saint Louis. 
+
+Weisell, R and Dop, MC (2012) The adult male equivalent concept and its application to 
+
+Household Consumption and Expenditures Surveys (HCES). Food Nutrition Bulletin 33, 
+S157-S162. 
+
+ 
+
+14 
+
+ 
+
+ 
+
+Westholm, L and Ostwald, M (2020) Food production and gender relations in multifunctional 
+
+landscapes: a literature review. Agroforestry System 94:359–374. 
+
+Wolff, MG, Cockburn, JJ, De Wet, C, Bezerra, JC, Weaver, MJT, Finca, A, De Vos, A, 
+
+Ralekhetla, MM, Libala, N, Mkabile, QB, Odume, ON, Palmer, CG (2019) Exploring and 
+expanding transdisciplinary research for sustainable and just natural resource management. 
+Ecology and Society 24:14. doi: https://doi.org/10.5751/ES-11077-240414 
+
+World Food Program (2014) Analyse Globale de la Vulnérabilité, de la Sécurité Alimentaire 
+
+et de la Nutrition (AGVSAN).World Food Program, Rome. 
+
+World Food Program (2017) Revue Stratégique Nationale pour l'Eradication totale de la Faim 
+
+(ODD 2) au Sénégal. World Food Program, Rome. 
+
+Zimmerer, KS and De Haan, S (eds.) (2019) Agrobiodiversity. Integrating Knowledge for a 
+
+Sustainable Future. MIT Press, Cambridge.
+
+ 
+
+15 
+
+ 
+
+ 
+
+Tables and Figures
+Table 1. Farming strategies according to the level of self-sufficiency in rice  
+
+Self-sufficiency in 
+rice 
+Families achieving 
+self-sufficiency in 
+rice (≥5 ares of 
+rice and/or ≤ 20 
+persons in the 
+family) with extra 
+asset 
+
+Families not 
+achieving self-
+sufficiency in rice 
+(large families 
+with ≤5 ares of 
+rice) and without 
+extra asset  
+ 
+
+Objective 
+
+Barriers 
+
+Strategy 
+
+Generate 
+income and 
+maintain food 
+security 
+
+Achieve food 
+security 
+
+- All parcels are 
+not exploitable 
+under irrigation 
+- Due to their 
+family value, 
+Waalo parcels are 
+never sold  
+
+- Plot of limited 
+size 
+- No possibility 
+for financing for 
+diversification 
+projects 
+
+- Combination of irrigated 
+culture and Waalo culture 
+- Money from emigration or 
+extra-agricultural activity 
+invested 
+- Increase size of tomato plots  
+
+- Income from cash crops for 
+financing rice season 
+- Combination of irrigated 
+culture / Waalo culture / Dieri 
+culture 
+- Sale of goats and sheep 
+(women)  
+- Female gardening perimeters 
+(for consumption and sale) 
+- Sale of sorghum (if any) to buy 
+rice (women and man) 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+16 
+
+ 
+
+ 
+
+Table 2. Division of agricultural activities between men and women by agricultural 
+ecosystem.  
+ 
+
+Waalo 
+
+Falo 
+
+Dieri 
+
+Millet 
+cultivation 
+
+Other 
+cultivationsa 
+
+Women  Man  Women  Man  Women  Man  Women  Man 
+
+Agricultural 
+activities 
+
+Tillage, plowing 
+
+- 
+
+++++  +++ 
+
+Sowing 
+
+Weeding 
+
+Guarding 
+(against birds)b 
+Harvesting 
+
+Threshing/ 
+Winnowing 
+Processing 
+
+++ 
+
++ 
+
+++ 
+
+++++ 
+
+++++  +++ 
+
++++ 
+
++ 
+
+ 
+
++ 
+
++ 
+
+++++  ++++ 
+
+++++  ++++ 
+
+++++ 
+
+- 
+
+++++ 
+
++ 
+
+- 
+
++ 
+
+ 
+
+- 
+
+- 
+
+- 
+
++ 
+
+++ 
+
+++ 
+
+++++ 
+
+++++ 
+
+++++ 
+
+++++ 
+
++++ 
+
++ 
+
++++ 
+
+++ 
+
++++ 
+
+++ 
+
++++ 
+
++ 
+
++ 
+
++ 
+
+- 
+
++ 
+
+ 
+
+++++ 
+
+ 
+
+++++ 
+
++++ 
+
+ 
+
++ 
+
+ 
+
+- 
+
+Share agricultural activities between men and women: “-” means 0%; “+” means 0 to 20%; 
+“++” means 20 to 50%; “+++” means 50 to 80% and “++++” means 80 to 100 %. a Other 
+cultivation in the Dieri were cowpea and colocynth. b Guarding against birds was also made 
+by children (on a cycle of 90 days, they performed this work the last 50 days). 
+ 
+ 
+ 
+
+ 
+
+ 
+
+17 
+
+ 
+
+ 
+
+Table 3. AME-predicted food intake in grams and contribution to the total intake of solid 
+foods in women from observed and simulated-past diet. 
+
+ 
+
+Observed diet 
+
+Simulated-past diet 
+
+Food group 
+
+Mean  SD 
+
+% of the total 
+ intake of  
+solid foods 
+
+Mean  SD 
+
+% of the total 
+intake of  
+solid foods 
+
+ 
+ 
+ 
+
+707 
+Cereals 
+189 
+Vegetables 
+63 
+Fruits 
+34 
+Tubers 
+94 
+Legumes 
+4 
+Meat 
+13 
+Fish 
+75 
+Dairy 
+Oils 
+66 
+Sugar and sugar products  89 
+19 
+Miscellaneous 
+Beverages 
+178 
+
+178  52.3 
+54 
+14.0 
+4.6 
+33 
+2.5 
+15 
+60 
+7.0 
+0.3 
+7 
+10 
+0.9 
+5.5 
+55 
+4.9 
+31 
+27 
+6.6 
+1.4 
+7 
+50 
+0 
+
+460 
+189 
+63 
+34 
+189 
+20 
+126 
+75 
+66 
+89 
+19 
+178 
+
+177  34.6 
+54 
+14.2 
+4.7 
+33 
+15 
+2.6 
+120  14.2 
+1.5 
+0 
+98 
+9.5 
+5.6 
+55 
+4.9 
+31 
+27 
+6.7 
+1.4 
+7 
+50 
+0 
+
+ 
+
+18 
+
+ 
+
+ 
+
+Table 4. AME-predicted energy and nutrient intake in women from observed and simulated-
+past diet, and percentage of women not respecting the nutrient recommendation. 
+ 
+
+ 
+
+ 
+
+Observed diet 
+
+Simulated-past diet 
+
+Nutrient 
+
+Energy (kcal) 
+
+Protein (g) 
+
+Protein (% EI) 
+
+Total fat (g) 
+
+Total fat (% EI) 
+
+Available carbohydrates (g) 
+
+ 
+
+Available carbohydrates (% EI)  55-75 
+
+Fiber (g) 
+
+Vitamin A (µg) 
+
+Vitamin E (mg) 
+
+Thiamin (mg) 
+
+Riboflavin (mg) 
+
+Niacin (mg) 
+
+Folate (µg) 
+
+Vitamin B-6 (mg) 
+
+Vitamin B-12 (µg) 
+
+Vitamin C (mg) 
+
+Calcium (mg) 
+
+Iron (mg) 
+
+Magnesium (mg) 
+
+Phosphorus (mg) 
+
+Potassium (mg) 
+
+Sodium (mg) 
+
+Zinc (mg) 
+
+Copper (mg) 
+
+30 
+
+500 
+
+7.5 
+
+1.1 
+
+1.1 
+
+16 
+
+400 
+
+1.3 
+
+2.4 
+
+45 
+
+750 
+
+29.4a 
+
+220 
+
+750 
+
+3510 
+
+2000 
+
+9.8a 
+
+1.5 
+
+Not  
+
+respecting  
+
+reference 
+
+ (%) 
+
+ 
+
+ 
+
+Reference 
+value 
+
+Mean  SD 
+
+2791 
+
+400 
+
+ 
+
+ 
+
+10-15 
+
+ 
+
+15-30 
+
+63.8 
+
+9.13 
+
+102 
+
+32.8 
+
+400 
+
+57.5 
+
+28.4 
+
+308 
+
+20.5 
+
+1.08 
+
+0.97 
+
+22.1 
+
+265 
+
+1.25 
+
+1.78 
+
+66.1 
+
+667 
+
+16.4 
+
+550 
+
+1184 
+
+3423 
+
+14.3 
+
+1.49 
+
+46.5 
+
+27 
+
+6.3 
+
+64 
+
+5.9 
+
+ 
+
+44.2 
+
+ 
+
+18.6 
+
+10.1 
+
+46.5 
+
+122 
+
+5.3 
+
+100 
+
+0 
+
+0.33 
+
+46.5 
+
+0.35 
+
+62.8 
+
+7.4 
+
+70 
+
+11.6 
+
+72.1 
+
+0.43 
+
+53.5 
+
+0.67 
+
+86.0 
+
+24.9 
+
+23.3 
+
+242 
+
+5.7 
+
+212 
+
+351 
+
+990 
+
+62.8 
+
+88.4 
+
+0 
+
+4.7 
+
+67.4 
+
+5523 
+
+2333  100 
+
+8.58 
+
+1.68 
+
+2.18 
+
+69.8 
+
+0.50 
+
+23.3 
+
+Mean 
+
+SD 
+
+2791 
+
+400 
+
+100 
+
+14.4 
+
+122 
+
+39.3 
+
+318 
+
+45.5 
+
+38.9 
+
+324 
+
+24.0 
+
+1.46 
+
+1.14 
+
+34.7 
+
+329 
+
+2.69 
+
+11.5 
+
+66.1 
+
+776 
+
+27.2 
+
+938 
+
+1830 
+
+4574 
+
+5055 
+
+12.7 
+
+2.28 
+
+20 
+
+2.9 
+
+30 
+
+6.9 
+
+60 
+
+8.5 
+
+9.0 
+
+123 
+
+6.3 
+
+0.37 
+
+0.34 
+
+7.77 
+
+106 
+
+0.71 
+
+7.4 
+
+24.9 
+
+234 
+
+6.0 
+
+224 
+
+304 
+
+866 
+
+2287 
+
+2.3 
+
+0.54 
+
+Not 
+respecting  
+
+reference 
+(%) 
+
+ 
+
+ 
+
+51.2 
+
+ 
+
+86.0 
+
+ 
+
+79.1 
+
+20.9 
+
+93.0 
+
+0 
+
+7.0 
+
+62.8 
+
+0 
+
+72.1 
+
+0 
+
+0 
+
+23.3 
+
+62.8 
+
+4.7 
+
+0 
+
+0 
+
+11.6 
+
+93.0 
+
+0 
+
+0 
+
+EI, Energy intake; a Because the simulated-past diet contains more animal products, the recommendations for iron 
+and zinc were selected with a moderate dietary bioavailability, resulting in a recommendation of 19.6 mg/d and 
+4.9 mg/d, respectively. In the simulation, the replacement of rice and wheat by the consumption of sorghum and 
+mil explained 100% of the increase of fiber intake, 52% of the increase of thiamin intake, 38% of the increase of 
+vitamin B-6 intake, 75% of the increase of iron intake, 55% of the increase of magnesium intake, 50% of the 
+increase of phosphorus intake and 33% of the increase of potassium intake. 
+ 
+ 
+
+ 
+
+19 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+
+Fig. 1. Location map of the studies villages (Guédé-Chantier, Guédé-village and Lérabé) 
+situated in the middle valley of the Senegal River, district of Podor in the North of Senegal.  
+ 
+
+ 
+
+ 
+
+ 
+
+20 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Fig. 2. Schematic representation of the 'Leydi', a traditional terroir characterized by its 
+geographical discontinuity. Adapted from Boutillier and Schmitz (1987).
+
+ 
+
+21 
+
+ 
+
+ 
+
+Fig. 3. Annual organization of agricultural production and food availability (case of single crop rice and the possibility to plant recession 
+sorghum).  
+
+ 
+
+ 
+
+22 
+
+

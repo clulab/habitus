@@ -1,0 +1,663 @@
+Field Crops Research 253 (2020) 107832
+
+Contents lists available at ScienceDirect
+Field Crops Research
+
+journal homepage: www.elsevier.com/locate/fcr
+
+Short Communication
+Early sowing increases grain yield of machine-transplanted late-season rice
+under single-seed sowing
+Min Huanga,*, Shengliang Fanga,b, Fangbo Caoa, Jiana Chena, Shuanglü Shana, Yu Liua, Tao Leia,
+Alin Tiana, Zui Taoa, Yingbin Zoua
+a Crop and Environment Research Center, College of Agronomy, Hunan Agricultural University, Changsha, 410128, China
+b Department of Crop Cultivation, Hengyang Academy of Agricultural Sciences, Hengyang, 421101, China
+
+T
+
+A R T I C L E I N F O
+
+Keywords:
+Early sowing
+Grain yield
+Machine transplanting
+Rice
+
+A B S T R A C T
+
+The shift from hand transplanting to machine transplanting has increased seed sowing rates and hence shortened
+seedling age and delayed sowing for late-season rice. The development of a single-seed sowing system for ma-
+chine-transplanted rice can reduce seed sowing rates and provides a possible way to determine the performance
+of machine-transplanted late-season rice with early sowing. In this study, field experiments were conducted in
+two years with two rice cultivars to compare seedling shoot biomass at transplanting (TP), crop growth char-
+acteristics, and yield attributes in machine-transplanted late-season rice under single-seed sowing between two
+sowing dates, i.e., 30 June (SD30) and 15 June (SD15). Averaged across two cultivars and two years, seedling
+shoot biomass at TP under SD15 was 352% higher than those under SD30. Specific leaf weight (SLW) at heading
+(HD), crop growth rate (CGR) and biomass production during TP to HD, harvest index, and translocation of
+biomass accumulated before HD to the grain were higher under SD15 than under SD30 by 4–21%. SD15 had a
+5–6% higher spikelet-filling percentage and grain yield than SD30. These results suggest that early sowing can
+improve the CGR during TP to HD by enhancing seedling growth and increasing SLW, and consequently, increase
+the biomass production during TP to HD, biomass translocation, and grain yield in machine-transplanted late-
+season rice under single-seed sowing.
+
+1. Introduction
+
+Rice is the staple food for more than 65% of the population in China
+(Hsiaoping, 2005). In order to produce enough food, a double-season
+rice (i.e., early- and late-season rice) cropping system has been ex-
+tensively developed in the middle and lower reaches of the Yangtze
+River in China (Zou, 2011). In this cropping system, seeds of the late-
+season rice are generally sown in reserved seedling fields about 30 days
+before the early-season rice is harvested to allow longer crop growth
+durations and hence higher grain yields under hand-transplanted con-
+ditions (Zou and Huang, 2018).
+Over the last three decades, urban expansion in China has led to a
+labor shortage and an increase in wages for agricultural production
+(Peng et al., 2009). As a result, machine transplanting, a labor-saving
+technology, has been quickly developed for rice production in China.
+The development of machine transplanting has brought some changes
+to rice production. In particular, high seed sowing rates are generally
+used for conventional machine-transplanted rice production to avoid
+the potential yield loss from missing plants due to a lack of germination
+
+or poor establishment (Huang and Zou, 2018). This further reduces the
+spacing for seedling growth and shortens the seedling nursery period
+(i.e., seedling age) by 10–15 d for conventional machine-transplanted
+rice compared to hand-transplanted rice. Consequently, delayed sowing
+date (i.e., the date for sowing seeds in the nursery) and unchanged
+transplanting date (i.e., the date for transplanting seedlings in the main
+field) are always employed for conventional machine-transplanted late-
+season rice.
+A possible approach to reverse the above-mentioned changes in rice
+production due to the shift from hand transplanting to conventional
+machine transplanting is to reduce seed sowing rates by selecting high-
+vigor seeds and improving seed sowing accuracy (Huang and Zou,
+2018). In recent years, we have developed a single-seed sowing system
+for machine-transplanted rice, by which seed sowing rates can be re-
+duced by more than 60% compared to conventional sowing (Huang
+et al., 2018; Shan et al., 2020). Single-seedling machine transplanting
+based on this sowing system can produce about 12% higher rice yield
+than conventional multiple-seedling machine transplanting with the
+same sowing and transplanting dates (Huang et al., 2018; Shan et al.,
+
+⁎ Corresponding author.
+E-mail address: mhuang@hunau.edu.cn (M. Huang).
+
+https://doi.org/10.1016/j.fcr.2020.107832
+Received 28 January 2020; Received in revised form 29 April 2020; Accepted 29 April 2020
+Available online 04 May 2020
+0378-4290/ © 2020 Elsevier B.V. All rights reserved.
+
+M. Huang, et al.
+
+2020). This sowing system also provides a possibility of determining the
+performance of machine-transplanted rice with early sowing, rather
+than delayed sowing.
+Here, we hypothesized that early sowing could extend the seedling
+nursey period and improve the seedling growth, and hence improve
+crop growth and grain yield compared with later sowing of machine-
+transplanted late-season rice under the condition of reduced seed
+sowing rates. To test this hypothesis, field experiments were carried out
+in two years to determine the effect of early sowing on seedling growth,
+crop growth characteristics, and yield attributes in machine-trans-
+planted late-season rice under single-seed sowing.
+2. Materials and methods
+
+Field experiments were conducted in Yongan Town (28°09′N,
+113°37′E, 43 m asl), Hunan Province, China in the late rice-growing
+seasons of 2018 and 2019. The soil of the experimental field was a clay
+with the following properties in the upper 20 cm: pH 5.85, 38.4 g kg−1
+organic matter, 158 mg kg−1 NaOH hydrolysable N, 12.8 mg kg−1
+Olsen P, and 164 mg kg−1 NH4OAc extractable K.
+Two hybrid rice cultivars, Taiyou 390 (TY390) and Tianyouhuazhan
+(TYHZ), were used in the experiment. These two cultivars have been
+widely grown by rice farmers in the study region because of their good
+performance in terms of yield and palatability. Two sowing dates, in-
+cluding a commonly recommended sowing date for conventional ma-
+chine transplanting (30 June, SD30) and an early sowing date (15 June,
+SD15), were applied to each cultivar. SD15 and SD30 were set ac-
+cording to the common sowing dates for hand transplanting and con-
+ventional machine transplanting, respectively, in the study region.
+Seedlings were transplanted on 15 July for both SD30 and SD15. The
+experiment was arranged in a randomized block design with three re-
+plicates and a plot size of 30 m2.
+Seedlings were raised according to the procedures described by
+Shan et al. (2020), including a single-seed sowing system, in which a
+commercial seed printing machine (HDBZ-600, Hande Agricultural
+Machinery Co., Ltd., Huaian, China) was used to paste coated seeds on
+water-soluble papers at a cell spacing of 1.4 × 1.7 cm with a single seed
+per cell. Seedlings were transplanted at a hill spacing of 25 × 11 cm
+with a single seedling per hill, using a high-speed rice transplanter
+(PZ80-25, Dongfeng Iseki Agricultural Machinery Co., Ltd., Xiangyang,
+China). Missing plants were replanted by hand at 7 days after trans-
+planting (TP) to ensure a uniform plant population. Nitrogen (150 kg N
+ha−1) was applied in three splits: 50% as basal fertilizer (1 day before
+TP), 30% at early-tillering (7 days after TP), and 20% at panicle in-
+itiation. Phosphorus (75 kg P2O5 ha−1) was applied as basal fertilizer.
+Potassium (150 kg K2O ha−1) was split equally at basal fertilization and
+panicle initiation. The experimental field was kept flooded from TP
+until 7 days before maturity (MA). Insects, diseases, and weeds were
+intensively controlled by chemicals to avoid yield loss.
+Three trays (replicates) were collected for each seedling age and
+cultivar on the TP day. Thirty seedlings were randomly sampled from
+each tray to determine shoot biomass after oven-drying to a constant
+weight at 70 °C. Daily mean temperature and solar radiation during TP
+to MA were monitored using an on-site automatic weather station
+(Vantage Pro2, Davis Instruments Corp. Hayward, CA, USA). Twelve
+hills of rice plants were sampled from each plot at heading (HD) and
+MA. The plant samples at HD were separated into leaves, stems (in-
+cluding sheath), and panicles. Leaf area was measured with a leaf area
+meter (LI-3000C, Li-Cor, Lincoln, NE, USA). The leaves, stems, and
+panicles were oven-dried at 70 °C to a constant weight. Leaf area index
+(LAI), specific leaf weight (SLW) at HD and biomass production and
+crop growth rate (CGR) during TP to HD were calculated. The CGR was
+calculated by dividing biomass production by the number of days
+during the corresponding period. Plants sampled at MA were separated
+into straw and panicles. Panicle number was counted in each hill to
+calculate panicles per m2. Panicles were hand-threshed and the filled
+
+Field Crops Research 253 (2020) 107832
+
+spikelets were separated from unfilled spikelets by submerging them in
+tap water. All filled spikelets were air-dried and weighed, and three
+subsamples of 30 g of filled spikelets were taken to count for calculating
+the number of filled spikelets. All unfilled spikelets were air-dried and
+counted to determine the number of unfilled spikelets. The straw, ra-
+chis, and filled and unfilled spikelets were oven-dried at 70 °C to a
+constant weight. Spikelets per panicle, spikelet-filling percentage, grain
+weight, total biomass production, biomass production and CGR during
+HD to MA, harvest index, and translocation of biomass accumulated
+before HD to the grain (BT) were calculated. BT was calculated ac-
+cording to the following formula described by Yang et al. (2008):
+BT = dry weight of filled grains – biomass production during HD to MA
+
+Grain yield was determined from a 5-m2 area in each plot and ad-
+justed to the standard moisture content of 14%.
+Crop data were analyzed using analysis of variance (ANOVA) in
+Statistix 8.0 (Analytical software, Tallahassee, FL, USA). The statistical
+model for the ANOVA included replication, sowing date, cultivar, year,
+and their two- and three-way interactions. The significance was set at
+the p < 0.05 level. Because no significant interactions were detected for
+grain yield (p = 0.31–0.96), only means of sowing dates, cultivars, and
+years are presented in the subsequent tables.
+
+3. Results
+3.1. Seedling shoot biomass at TP
+
+Seedling shoot biomass at TP was 352 % higher under SD15 than
+under SD30 (Table 1). There was no significant difference in seedling
+shoot biomass at TP between TY390 and TYHZ. Seedling shoot biomass
+at TP in 2018 was 44 % higher than that in 2019.
+
+3.2. Growth duration and weather conditions in the main field
+
+SD15 had an average growth duration from TP to HD that was four
+days shorter than SD30, whereas its average growth duration from HD
+to MA was three days longer than that under SD30 (Fig. 1). The average
+growth duration of TY390 was one day shorter from TP to HD but one
+day longer from HD to MA than TYHZ. Average growth duration from
+TP to HD was the same between 2018 and 2019, while average growth
+duration from HD to MA was two days shorter in 2018 than in 2019.
+Average daily mean temperatures during TP to HD and HD to MA
+were 0.2 and 0.7 °C higher under SD15 than SD30, respectively (Fig. 1).
+Average daily mean temperature during TP to HD was the same be-
+tween TY390 and TYHZ, while average daily mean temperature during
+HD to MA was 0.2 °C higher in TY390 than in TYHZ. Compared with the
+year 2019, 2018 was cooler by 0.6 and 1.0 °C during TP to HD and HD
+to MA, respectively.
+Because of the changed growth duration, average cumulative solar
+radiation during TP to HD was 67 MJ m–2 less under SD15 than SD30,
+whereas SD15 had 44 MJ m–2 more cumulative solar radiation during
+HD to MA than SD30 (Fig. 1). TY390 had 19 MJ m–2 less and 19 MJ m–2
+more average cumulative solar radiation during TP to HD and HD to
+MA than TYHZ, respectively. Compared with the year 2019, 2018 had
+less average cumulative solar radiation by 46 MJ m–2 during TP to HD
+and by 76 MJ m–2 during HD to MA.
+
+3.3. Leaf characteristics, CGR, and biomass production and translocation
+There were no significant differences in LAI at HD; CGR and biomass
+production during HD to MA; or total biomass production between
+SD15 and SD30 (Table 1). SLW at HD, CGR and biomass production
+during TP to HD, harvest index, and BT were respectively 5%, 15 %, 7%,
+4%, and 21 % higher under SD15 than under SD30. The differences in
+
+2
+
+M. Huang, et al.
+
+Field Crops Research 253 (2020) 107832
+
+Table 1
+Seedling shoot biomass at transplanting (TP), leaf area index (LAI) and specific leaf weight (SLW) at heading (HD), crop growth rate (CGR) and biomass production
+during transplanting (TP) to HD and HD to maturity (MA), total biomass production, harvest index, and translocation of biomass accumulated before heading to the
+grain (BT) in machine-transplanted late-season rice affected by sowing date, cultivar, and year.
+Variable
+
+Harvest index
+
+LAI at HD
+
+Seedling shoot biomass at TP
+(mg seedling–1)
+
+SLW at HD
+(g m–2)
+
+BT
+(g m–2)
+
+CGR (g m–2 d–1)
+TP–HD
+
+HD–MA
+
+Biomass production (g m–2)
+TP–HD
+
+HD–MA
+
+Sowing datea
+
+SD30
+SD15
+Cultivarb
+TY390
+TYHZ
+
+23 b
+104 a
+
+63 a
+64 a
+
+4.59 a
+4.80 a
+
+4.79 a
+4.60 a
+
+42.0 b
+44.3 a
+
+42.4 a
+43.9 a
+
+14.9 b
+17.2 a
+
+16.0 a
+16.1 a
+
+10.1 a
+9.8 a
+
+10.2 a
+9.7 a
+
+970 b
+1038 a
+
+989 a
+1019 a
+
+Year
+
+2018
+2019
+
+75 a
+52 b
+
+970 b
+1038 a
+Means within each variable sharing the same letter are not significantly different at the p < 0.05 level.
+
+15.5 b
+16.6 a
+
+43.2 a
+43.1 a
+
+4.60 a
+4.80 a
+
+6.1 b
+13.8 a
+
+426 a
+444 a
+
+452 a
+418 a
+
+257 b
+613 a
+
+Total
+
+1397 a
+1485 a
+
+1443 a
+1439 a
+
+1229 b
+1653 a
+
+0.489 b
+0.508 a
+
+0.505 a
+0.492 a
+
+0.498 a
+0.497 a
+
+256 b
+310 a
+
+278 a
+288 a
+
+356 a
+210 b
+
+a SD30 and SD15 represent sowing dates of 30 and 15 June, respectively.
+b TY390 and TYHZ are cultivars Taiyou 390 and Tianyouhuazhan, respectively.
+all tested parameters of leaf characteristics, CGR, and biomass pro-
+duction and translocation were not significant between TY390 and
+TYHZ. The differences in LAI and SLW at HD and harvest index were
+not significant between 2018 and 2019. CGR and biomass production
+during TP to HD and HD to MA, and total biomass production were
+lower in 2018 than in 2019 by 7%, 56 %, 7%, 58 %, and 26 %, re-
+spectively, whereas BT in 2018 was 70 % higher than that in 2019.
+
+3.4. Grain yield and yield components
+
+SD15 had 6 % higher grain yield than SD30 (Table 2). There were
+no significant differences in panicles per m2 and spikelets per panicle
+between SD15 and SD30. SD15 had 5% higher spikelet-filling percen-
+tage but 2% lower grain weight than SD30. There were no significant
+differences in grain yield, panicles per m2, or spikelets per panicle be-
+tween TY390 and TYHZ. TY390 had 4 % higher spikelet-filling per-
+centage but 3 % lower grain weight than TYHZ. Grain yield, panicles
+per m2, and spikelets per panicle were 14 %, 12 %, and 21 % lower in
+2018 than in 2019, respectively, whereas spikelet-filling percentage
+and grain weight were 3 % and 2 % higher in 2018 than in 2019.
+
+4. Discussion
+
+In the present study, grain yield was increased by early sowing in
+machine-transplanted late-season rice under single-seed sowing. The
+increased grain yield with early sowing was mainly attributable to an
+increase in spikelet-filling percentage. However, unexpectedly, the
+average spikelet-filling percentage was less than 70 % in this study
+(Table 2). For late-season rice, low spikelet-filling percentage is gen-
+erally related to low temperature stress at anthesis (Huang et al.,
+2019a). However, this did not explain the relatively low average spi-
+kelet-filling percentage in the present study because low temperature
+stress at anthesis did not occur in either 2018 or 2019 (data not shown).
+According to our observation at the time of separating filled and un-
+filled spikelets by tap water, we found a large number of partially-filled
+spikelets in each sample, and these partially-filled spikelets floated on
+the water surface and were classified as unfilled spikelets. This indicates
+that poor spikelet filling is likely responsible for the relatively low
+average spikelet-filling percentage in this study.
+The degree of spikelet filling is associated with source capacity and
+partitioning of assimilates to grains in rice crops (Huang et al., 2012;
+Yang et al., 2002). In the present study, we observed that early sowing
+did not significantly affect total biomass production but significantly
+the increased
+increased harvest
+
+index. This result
+
+indicates that
+
+3
+
+spikelet-filling percentage by early sowing was mainly attributable to
+an increase in partitioning of assimilates to grains. Harvest index can be
+increased by increasing the transient photosynthesis during ripening
+and/or increasing the remobilization of stored reserves into grains
+(Blum et al., 1993). In this study, we found that early sowing did not
+significantly alter biomass production during HD to MA but sig-
+nificantly increased BT. This finding suggests that
+increased re-
+mobilization of stored reserves into grains was responsible for the in-
+creased harvest index by early sowing. Recently, Huang et al. (2019b)
+reported that BT was related to the ratio of biomass production pre-
+heading to post-heading. Consistently, the increased BT due to early
+sowing was accompanied by an increase in the ratio of biomass pro-
+duction pre-heading to post-heading in the present study. Specifically,
+biomass production during TP to HD was significantly increased while
+that during HD to MA was not significantly affected by early sowing
+(Table 1).
+Biomass production is the product of intercepted solar radiation by
+the canopy and radiation use efficiency, and the former is determined
+by incident solar radiation and canopy architecture (De Costa et al.,
+2006). In this study, the incident solar radiation did not explain the
+increased biomass production during TP to HD with early sowing, be-
+cause early sowing reduced growth duration from TP to HD and cu-
+mulative solar radiation during TP to HD. The reduced growth duration
+from TP to HD with early sowing was attributable to a prolonged
+seedling age and an increased daily mean temperature during TP to HD
+(Fig. 1). The biomass production during TP to HD due to early sowing
+could be explained as follows: (1) early sowing extended the seedling
+nursery period and enhanced seedling growth, which allowed a higher
+interception of solar radiation at the early growth period in the main
+field; and (2) early sowing increased SLW at HD, which might have
+resulted in a higher leaf photosynthetic capacity and a higher radiation
+use efficiency (Huang et al., 2016). The increased SLW at HD might also
+be responsible for the prolonged duration from HD to MA under early
+sowing (Fig. 1), which allowed the biomass production during HD to
+MA to be maintained under early sowing with increased BT.
+It has been reported that SLW of crops is affected by environmental
+factors such as temperature and solar radiation (Lugg and Sinclair,
+1979; Thiagarajah and Hunt, 1982); namely, SLW is generally increased
+with decreasing daily temperature or increasing daily solar radiation.
+However, in the present study, this did not explain the increased SLW at
+HD by early sowing, because early sowing slightly increased daily mean
+temperature and almost did not affect daily solar radiation during TP to
+HD. This indicates that the increased SLW at HD with early sowing was
+related to the plant’s inherent physiological changes, but further
+
+M. Huang, et al.
+
+Field Crops Research 253 (2020) 107832
+
+Fig. 1. Growth duration, average daily mean temperature, and cumulative solar radiation during transplanting to heading (left-hand side) and heading to maturity
+(right-hand side) in two rice cultivars (TY390, Taiyou 390; TYHZ, Tianyouhuazhan) sown at two dates (SA30, 30 June; SA15, 15 June) and machine-transplanted on
+15 July in the late rice-growing seasons of 2018 and 2019.
+
+investigations are required to confirm this.
+A significant yearly difference in grain yield was observed in this
+study. The lower yield in 2018 than in 2019 was attributable to lower
+CGR and biomass production during TP to HD and HD to MA and less
+panicles per m2 and spikelets per panicle presumably resulting from
+lower daily mean temperature and lower cumulative solar radiation
+(Tables 1 and 2; Fig. 1).
+
+5. Conclusions
+
+Early sowing can improve the CGR during TP to HD by enhancing
+seedling growth and increasing SLW, and consequently, increase the
+biomass production during TP to HD, biomass translocation to increase
+BT, harvest index, spikelet-filling percentage and consequently increase
+grain yield in machine-transplanted late-season rice under single-seed
+sowing.
+
+4
+
+Field Crops Research 253 (2020) 107832
+
+online version, at doi:https://doi.org/10.1016/j.fcr.2020.107832.
+References
+
+De Costa, W.A.J.M., Weerakoon, W.M.W., Herath, H.M.L.K., Amaratunga, K.S.P.,
+
+Blum, A., 1993. Selection for sustained production in water-deficit environments. In:
+Buxton, D.R., Shibles, R., Forsberg, R.A., Blad, B.L., Asay, K.H., Paulsen, G.M.,
+Wilson, R.F. (Eds.), International Crop Science. Crop Science Society of America,
+Madison, Wisconsin, USA, pp. 343–347.
+Abeywardena, R.M.I., 2006. Physiology of yield determination of rice under elevated
+carbon dioxide at high temperature in a subhumid tropical climate. Field Crops Res.
+96, 336–347.
+Hsiaoping, C., 2005. Rice consumption in China: can China change rice consumption from
+quantity to quality? In: Toriyama, K., Heong, K.L., Hardy, B. (Eds.), Rice is Life:
+Scientific Perspectives for the 21st Century. International Rice Research Institute, Los
+Baños, The Philippines, pp. 497–499.
+Huang, M., Zou, Y., Jiang, P., Xia, B., Xiao, A., 2012. Performance of super hybrid rice
+cultivars grown under no-tillage and direct seedling. Sci. Agric. 69, 103–107.
+Huang, M., Shan, S., Zhou, X., Chen, J., Cao, F., Jiang, L., Zou, Y., 2016. Leaf photo-
+synthetic performance related to higher radiation use efficiency and grain yield in
+hybrid rice. Field Crops Res. 193, 87–93.
+Huang, M., Shan, S., Xie, X., Cao, F., Zou, Y., 2018. Why high grain yield can be achieved
+in single seedling machine-transplanted hybrid rice under dense planting conditions?
+J. Integr. Agric. 17, 1299–1306.
+Huang, M., Fang, S., Shan, S., Zou, Y., 2019a. Delayed transplanting reduced grain yield
+due to low temperature stress at anthesis in machine-transplanted late-season rice.
+Exp. Agric. 55, 843–848.
+Huang, M., Tao, Z., Lei, T., Chen, J., Cao, F., Yin, X., Zou, Y., 2019b. Contrasting change
+in biomass translocation with environment in two rice hybrids. PLoS One 14,
+e0220651.
+ensure food security in China. Field Crops Res. 224, 22–27.
+leaf weight. Crop Sci. 19, 887–892.
+China. Plant Prod. Sci. 12, 3–8.
+M., Zou, Y., 2020. Printed sowing improves grain yield with reduced seed rate in
+machine-transplanted hybrid rice. Field Crops Res. 245, 107676.
+Thiagarajah, M.R., Hunt, L.A., 1982. Effects of temperature on leaf growth in corn (Zea
+mays). Can. J. Bot. 60, 1647–1652.
+Yang, J., Peng, S., Zhang, Z., Wang, Z., Visperas, R.M., Zhu, Q., 2002. Grain and dry
+matter yields and partitioning of assimilates in japnonica/indica hybrid rice. Crop Sci.
+42, 766–772.
+Yang, W., Peng, S., Laza, R.C., Visperas, R.M., Dionisio-Sese, M.L., 2008. Yield gap ana-
+lysis between dry and wet season rice crop grown under high-yielding management
+conditions. Agron. J. 100, 1390–1395.
+Zou, Y., 2011. Development of cultivation technology for double cropping rice along the
+Changjiang River valley. Sci. Agric. Sin. 44, 254–262 (in Chinese with English ab-
+stract).
+Zou, Y., Huang, M., 2018. Opportunities and challenges for crop production in China
+during the transition period. Acta Agron. Sin. 44, 791–795 (in Chinese with English
+abstract).
+
+Huang, M., Zou, Y., 2018. Integrating mechanization with agronomy and breeding to
+Lugg, D.G., Sinclair, T.R., 1979. A survey of soybean cultivars for variability in specific
+Peng, S., Tang, Q., Zou, Y., 2009. Current status and challenges of rice production in
+Shan, S., Jiang, P., Fang, S., Cao, F., Zhang, H., Chen, J., Yin, X., Tao, Z., Lei, T., Huang,
+
+M. Huang, et al.
+
+Table 2
+Grain yield and yield components in machine-transplanted late-season rice af-
+fected by sowing date, cultivar, and year.
+Variable
+
+Panicles per
+m2
+
+Spikelets per
+panicle
+
+Spikelet
+filling (%)
+
+Grain
+weight (mg)
+
+Grain
+yield
+(t ha–1)
+
+8.26 b
+8.79 a
+
+8.56 a
+8.49 a
+
+7.90 b
+9.15 a
+
+Sowing datea
+
+SD30
+SD15
+Cultivarb
+TY390
+TYHZ
+
+Year
+
+2018
+2019
+
+298 a
+317 a
+
+320 a
+295 a
+
+288 b
+327 a
+
+154 a
+151 a
+
+146 a
+159 a
+
+135 b
+170 a
+
+63.7 b
+68.6 a
+
+68.1 a
+64.2 b
+
+67.8 a
+64.5 b
+
+27.3 a
+26.8 b
+
+26.7 b
+27.4 a
+
+27.3 a
+26.8 b
+
+Means within each variable sharing the same letter are not significantly dif-
+ferent at the p < 0.05 level.
+a SD30 and SD15 represent sowing dates of 30 and 15 June, respectively.
+b TY390 and TYHZ are cultivars Taiyou 390 and Tianyouhuazhan, respec-
+
+tively.
+CRediT authorship contribution statement
+
+Investigation. Jiana Chen:
+
+Min Huang: Conceptualization, Formal analysis, Writing - original
+draft, Funding acquisition. Shengliang Fang: Investigation. Fangbo
+Investigation. Shuanglü Shan:
+Cao:
+Investigation. Yu Liu: Investigation. Tao Lei: Investigation. Alin Tian:
+Investigation. Zui Tao: Investigation. Yingbin Zou: Conceptualization.
+Declaration of Competing Interest
+
+The authors declare that they have no known competing financial
+interests or personal relationships that could have appeared to influ-
+ence the work reported in this paper.
+Acknowledgements
+
+We thank those who have been at the forefront of the fight against
+the coronavirus disease 2019 (COVID-19) for allowing us to have peace
+of mind to concentrate on writing this paper. This work was supported
+by the National Key R&D Program of China (2017YFD0301503).
+Appendix A. Supplementary data
+
+Supplementary material related to this article can be found, in the
+
+5
+
+

@@ -1,0 +1,1529 @@
+Int J Appl  Earth Obs Geoinformation 75 (2019) 15–28
+
+Contents lists available at ScienceDirect
+
+Int J Appl Earth Obs Geoinformation
+
+journal homepage: www.elsevier.com/locate/jag
+
+Analysing spatial–temporal changes in rice cultivation practices in the
+Senegal River Valley using MODIS time-series and the PhenoRice algorithm
+Lorenzo Busettoa,⁎, Sander J. Zwartb,c, Mirco Boschettia
+
+T
+
+a Institute for Electromagnetic Sensing of the Environment, Italian National Research Council (CNR-IREA), Via Bassini 15, Milan 20133, Italy
+b Faculty of Geo-Information Science and Earth Observation (ITC), University of Twente, Enschede, Netherlands
+c Africa Rice Center (AfricaRice), Cotonou, Benin
+
+A R T I C L E I N F O
+
+A B S T R A C T
+
+Keywords:
+Rice
+MODIS
+PhenoRice
+Phenology
+Cropping intensity
+Agro-practices
+West Africa
+
+In this study we used the PhenoRice algorithm to track recent variations of rice cultivation practices along the
+Senegal River Valley. Time series of MODIS imagery with 250 m spatial resolution and a nominal 8-days fre-
+quency were used as input for the algorithm to map the spatial and temporal variations of rice cultivated area
+and of several important phenological metrics (e.g., crop establishment and harvesting dates, length of season)
+for the 2003–2016 period in both the dry and the wet rice cultivation seasons. Comparison between PhenoRice
+results and ancillary and ﬁeld data available for the Senegal part of the study area showed that the algorithm is
+able to track the interannual variations of rice cultivated area, despite the total detected rice area being con-
+sistently underestimated. PhenoRice estimates of crop establishment and harvesting dates resulted accurate
+when compared with ﬁeld observations available for two sub-regions for a period of 10 years, and thus allow
+assessing interannual variability and tracking changes in agronomic practices. An analysis of interannual trends
+of rice growing practices based on PhenoRice results highlighted a clear shift of rice cultivation from the wet to
+the dry season starting approximately from 2008. The shift was found to be particularly evident in the delta part
+of the SRV. Additionally, a statistically signiﬁcant trend was revealed starting 2006 towards a longer dry season
+(r2 = 0.81; Slope = 1.24 days y−1) and a shorter wet season (r2 = 0.65; Slope = 0.53 days y−1). These ﬁndings
+are in agreement with expert knowledge of changes ongoing in the area. In particular the shorter wet season is
+attributed to shortage of labor and equipment leading to a delay in completion of harvesting operations in the
+dry season, which led to the adoption of short-duration rice varieties by farmers in the wet season to avoid risk of
+yield losses due to climatic constraints. Aforementioned results highlight the usefulness of the PhenoRice al-
+gorithm for providing insights about recent variations in rice cultivation practices over large areas in developing
+countries, where high-quality up to date information about changes in agricultural practices are often lacking.
+
+1. Introduction
+
+Food security is one of the major global challenges in the face of a
+continuously increasing world population and climate change, which
+puts even more pressure on the natural resources we depend on.
+Currently it is estimated that 815 million people were chronically un-
+dernourished by 2016, an increase of 11% to the year before. Worst
+aﬀected areas are Eastern Africa and Central Africa where respectively
+one third and a quarter of the population are undernourished (FAO
+et al., 2017). In 2015, the United Nations deﬁned seventeen sustainable
+development goals (SDGs) for its 2030 Agenda for Sustainable Devel-
+opment. Food security plays a prominent role in SDG2 “Zero Hunger”
+and it is moreover claimed that the agriculture and food sector is key to
+eradicate poverty (SDG1) for many (United Nations General Assembly,
+2015). Accurate information on cropped areas, cropping seasons and
+
+agricultural production is an essential component of the food avail-
+ability pillar of food security. Understanding where, when and how
+much food is produced and available supports governments, com-
+modity traders and international donors in designing, implementing
+and evaluating adequate policies and actions in a timely manner
+(Laborte et al., 2017). In this context, remote sensing is considered an
+important tool for gathering spatial-temporal data on crops, especially
+in those areas where accurate, detailed and recent statistics are absent.
+This requires development and validation of methods that are robust
+and that can be deployed across scales and growing environments
+(Whitcraft et al., 2015). Rice, being one of the three main staple crops
+together with maize and wheat, feeds almost half of the world's popu-
+lation and it is the most important food crop (Krush, 2005; FAO, 2014).
+Rice is grown in over 163 million of hectares and in more than 100
+countries located in temperate to tropical regions (Laborte et al., 2017).
+
+⁎ Corresponding author.
+
+https://doi.org/10.1016/j.jag.2018.09.016
+Received 23 May 2018; Received in revised form 20 September 2018; Accepted 20 September 2018
+0303-2434/ © 2018 Elsevier B.V. All rights reserved.
+
+L. Busetto et al.
+
+Due to its utmost importance, rice prices are subject to high volatility:
+for example, in 2008 the price for rice on the international trade mar-
+kets quadrupled during the global food crisis. This leads to food in-
+security and political instability in several nations in Africa, which is
+the continent that is the largest importer of Asian rice. Nigeria, Côte
+d’Ivoire and Senegal – all located in West Africa – are the three largest
+importers of Asian rice in Africa and their demand for rice is increasing
+faster than that of any other staple crop in West Africa due to increase
+in population, urbanization and to dietary preferences (Seck et al.,
+2010). Across Africa, national governments aim therefore to reduce
+their dependencies on the international rice market through invest-
+ments in the rice sector, many aiming self-suﬃciency in the very near
+future (Wailes et al., 2015).
+
+Remote sensing of paddy rice area has evolved quickly in recent
+years due to the development of improved mapping algorithms, avail-
+ability of remote sensing imagery from public archives and increased
+processing capacity including the use of cloud computing opportunities
+such as provided by Google Engine. In their thorough review of rice
+mapping methods, Dong and Xiao (2016) distinguish four main groups
+of mapping approaches. The ﬁrst two exploit single-date or multi-date
+optical or radar imagery to identify rice ﬁelds exploiting simple or
+complex supervised or unsupervised classiﬁcation algorithms, based on
+spectral (multispectral reﬂectance or Vegetation Indices (VI)) [e.g.
+Turner and Congalton, 1998; Pan et al., 2010; Nguyen et al., 2012] or
+polarimetric features [e.g. Le Toan et al., 1997; Kurosu et al., 1997; Tan
+et al., 2007]. The third group is based on the use of multitemporal data
+acquired throughout an entire growing season to detect rice areas based
+on the analysis of the temporal proﬁles of either VI or radar backscatter
+[e.g. Gumma et al., 2014; Bouvet et al., 2009]. Finally, the fourth group
+comprises phenology-based rice mapping methods, that recognize key
+phases of rice development such as the agronomic ﬂooding of ﬁelds
+prior to sowing or transplanting of rice seedlings, or the periods of
+ﬂowering and harvesting [e.g. Xiao et al., 2002; Nelson et al., 2014;
+Boschetti et al., 2015]. Such methods generally exploit high-frequency
+time series of remote sensing derived vegetation and water indices,
+mostly from the MODIS sensors, to detect ﬂooded ﬁeld conditions that
+are followed by rapid crop development and a relatively sudden ﬁnal
+decrease in VI values related to harvesting [e.g. Xiao et al., 2005, 2006;
+Peng et al., 2011; Zhang et al., 2015; Clauss et al., 2016; Boschetti et al.,
+2017]. Until the launch of the Sentinel 1A and 1B sensors in 2014 and
+2016 respectively, the use of high-frequency time series of radar ima-
+gery, though potentially very useful for rice mapping and monitoring
+purposes at regional scale in particular in cloudy areas, was instead
+restricted by limited availability of imagery and high costs. In their
+review (Dong and Xiao, 2016) also stress the increasing need for re-
+gional to global rice maps to support analyses of food security, water
+consumption patterns, climate change contributions through methane
+emission and disease transmission. Existing global rice maps and da-
+tabases are in fact usually based on statistical approaches and census
+data. Examples are MIRCA2000 (Portmann et al., 2010), SPAM2005
+(You et al., 2014), GAEZ (Fischer et al., 2013) and RiceAtlas (Laborte
+et al., 2017). Subcontinental maps, all based on MODIS imagery, are
+available for Asia (Gumma et al., 2014; Sun et al., 2009; Xiao et al.,
+2005; Zhang et al., 2017) where 90% of all rice is produced, but none
+for the other continents. Of the 44 rice mapping studies reviewed by
+Dong and Xiao (2016) only 3 were conducted outside Asia of which
+only one in Africa (Turner and Congalton, 1998).
+
+1.1. From area mapping to multiyear seasonal crop monitoring
+
+Besides for mapping rice areas, time series of satellite imagery can
+also be used for deriving spatial information about rice cultivation
+practices (e.g. dates of crop establishment and harvesting; water man-
+agement), occurrence of phenological stages (e.g. emergence, tillering
+or ﬂowering), cropping intensity (i.e., number of rice seasons) and their
+interannual trends. Despite this, few studies have exploited multiannual
+
+Int J Appl  Earth Obs Geoinformation 75 (2019) 15–28
+
+satellite time series to analyze spatial–temporal patterns in rice culti-
+vation areas. The majority of these studies focused on the analysis of
+variations in rice area and cropping intensity [e.g. Dong et al., 2015;
+Clauss et al., 2016; Nelson et al., 2014; Nguyen et al., 2015; Wu et al.,
+2010], or identiﬁcation of diﬀerent cropping systems within large areas
+[e.g. Nguyen et al., 2012]. Other studies aimed instead at character-
+izing variations in water management practices related to rice culti-
+vation schemes (Tornos et al., 2015) and their shifts in time [e.g.
+Sakamoto et al., 2009; Ranghetti et al., 2018]. The attention was
+however generally devoted to the possibility of producing thematic
+information useful for characterizing rice cropping systems (e.g., ex-
+tent; single vs double cropping systems; dry vs water seeding) and in
+some cases monitoring their changes in time. Very few studies aimed
+instead at mapping the spatial patterns in the dates of occurrence of
+important agricultural practices or phenological stages over large areas.
+This kind of information are generally derived on a per-pixel basis ex-
+ploiting well-established time series analysis techniques generally based
+on VI thresholding, derivative analysis or curve ﬁtting techniques
+(Shihua et al., 2014). Boschetti et al. (2017) synthesized literature on
+time series analysis for regional to continental rice monitoring and re-
+vealed that only 6 out of 18 studies [e.g. Sakamoto et al., 2005;
+Boschetti et al., 2009; Chumkesornkulkit et al., 2013; Nguyen et al.,
+2012; Manfron et al., 2012; Suwannachatkul et al., 2014] addressed the
+quantitative estimation of occurrence dates of agricultural practices/
+phenological stages. Only one study addressed estimating the length of
+the cropping season (Sakamoto et al., 2005). In general, these analyses
+were performed for a single cropping season, and validated against
+average statistics of crop establishment/harvesting dates or crop ca-
+lendars, or against ﬁeld observations for a limited number of locations.
+To the author's knowledge, only one study performed also an explicit
+analysis of the temporal trends of such variables over a long period
+(Singh et al., 2006). In that study, based on time series of NOAA-
+AVHRR data, the authors identiﬁed a shift of 27 days in the occurrence
+of peak crop growth stage in Punjab (India) from 1982 to 2000.
+
+In this context, the PhenoRice algorithm (Boschetti et al., 2017) was
+recently proposed as a rule-based algorithm speciﬁcally designed for
+assessing the timing of the main rice growing practices (i.e., sowing/
+transplanting and crop harvesting periods) with the explicit objective of
+estimating the occurrence of such events over large areas. The algo-
+rithm can be applied across diﬀerent rice growing conditions in terms of
+genetic, environmental and management factors (G × E × M combi-
+nations), and has been validated in three test sites in Italy, southern
+India and northern Philippines diﬀering in terms of climatic conditions
+– subcontinental temperate in Italy to tropical savanna in the other two
+– and cropping systems – single harvest per year in Italy up to triple
+harvests in Philippines.
+
+1.2. Objectives of the study
+
+The main objective of the present study was to demonstrate how
+multitemporal, coarse resolution satellite time series can be used for
+spatial–temporal monitoring of recent changes in rice cultivation
+practices in the Sahel zone exploiting a 14 years long time series (from
+2000 to 2016) of 250 meter resolution MODIS data. In particular, we
+focused on rice production areas in the Senegal River basin in West
+Africa which we justify for three important reasons. Firstly, as men-
+tioned above, published research on rice mapping using remote sensing
+in Africa is limited to only one publication and no study exists on the
+estimation of timing of agro-practices. The semi-arid climatic condi-
+tions under which rice is grown in the Senegal River Valley are extreme
+with high temperature, low humidity, and low rainfall. Both jointly
+provide a new application domain of the PhenoRice algorithm in terms
+of climate diversity and global coverage. Secondly, rice production in
+this area is highly dynamic. Since approximately 10 years ago, rice
+cultivation on both the Mauritanian and Senegalese banks of the river
+and its delta area is expanding rapidly through public and private
+
+16
+
+L. Busetto et al.
+
+Int J Appl  Earth Obs Geoinformation 75 (2019) 15–28
+
+investments. In the aftermath of the rice crisis in 2008 the government
+of Senegal launched the ambitious program “The Great Oﬀensive for
+Food and Abundance” (GOANA) running from 2008 to 2015. The goal
+of the program was to achieve self-suﬃciency for the major crops that
+are imported by making large investments in the agricultural sector
+targeting productivity improvement, area expansion, mechanization
+and commercialization. Senegal's National Rice Sector Development
+strategy (Senegalese Ministry of Agriculture, 2009) prioritizes devel-
+opment of irrigated rice through intensiﬁcation and area expansion. In
+the framework of the GOANA program, large investments are being
+made in the major irrigated rice production areas in the valley and delta
+regions of the Senegal River targeting area expansion and rehabilita-
+tion, and productivity improvement through use of modern varieties,
+improved crop management, mechanization, dry season cultivation and
+double cropping. Increasingly rice double cropping is reported and each
+year more farmers cultivate rice in the dry season (February–July) ra-
+ther than the wet season (December–February) due to higher attainable
+yields. Thirdly, data about cropped areas and farmers practices required
+for validation purposes are usually of low quality or simply not avail-
+able in developing countries, or cover a short period of a few years and/
+or small areas. However, in this study we were able to access two im-
+portant databases that allowed us to perform a multiannual validation
+of our results. Within this area, we deployed the aforementioned Phe-
+noRice algorithm to: (i) investigate trends in rice cultivated area over
+the considered 14 years’ time span analysing both main rice cultivation
+seasons (dry and wet), and (ii) detect and quantitatively analyse var-
+iations in rice farmer practices such as choice of agricultural season and
+cropping intensity, occurrence of crop establishment (seeding/trans-
+planting) and harvesting dates and length of season as an indicator of
+varietal choice. Resulting data were compared with oﬃcial statistics of
+rice cultivated areas and ﬁeld surveys collected over a period of 10
+years. To our knowledge, this is one of the few studies which addresses
+large scale rice crop monitoring in an African context, and the ﬁrst
+attempting exploiting results of a multiannual analysis for identifying
+recent variations in agricultural practices, in any context.
+
+The paper is organized as follows: Section 2 provides an overview of
+the study area (Senegal River Basin), followed by a description of the
+satellite and ancillary data used for the application and validation of the
+PhenoRice algorithm. We then provide a short description of the al-
+gorithm and its parameterization, and of the methods used to validate
+its results and analyze interannual trends of the main estimated para-
+meters (rice area and timing of agro-practices). In the Results and
+Discussion section we ﬁrst provide a comparison of PhenoRice results
+with reference data. We then present results of an analysis of inter-
+annual trends observed for the 2003–2016 period. Results highlight
+how rice farming practices changed signiﬁcantly in a relatively short
+period as result of government policies and global rice prices. In the
+Conclusions section, we provide a summary of the main ﬁndings, as
+well as some short considerations concerning the pros and cons of the
+proposed methodology and considerations about possible future im-
+provements.
+
+2. Data and methods
+
+2.1. Study area
+
+The headwaters of the Senegal river originate in the highlands of
+Guinea-Conakry that on average receive 2000 mm of rainfall annually.
+For a small part the Senegal river then forms the border between
+Mauritania and Mali, before it becomes the border river between
+Senegal and Mauritania for a distance of more than 800 km until it
+drains in the Atlantic Ocean (Fig. 1). Down from Bakel in Dagana the
+river streams through an alluvial valley divided in the upper valley
+(from Dembagane stream upwards) and the middle valley stretching
+from Dembagane to Dagana. Below Dagana the river ﬂows into the
+delta where the gradient is extremely slight. The middle valley and
+
+delta sections of the Senegal River are located in the Sahel savanna
+vegetation zone where the extremely low rainfall (200 mm/year) occurs
+mainly during the single rainy season from July to September (Agnew
+and Woodhouse, 2010). Soils in the valley and delta areas are dom-
+inantly Eutric Fluvisols with medium to ﬁne-textured soil in the middle
+valley and medium to coarse-textured soils in the delta (Segda et al.,
+2005).
+
+Irrigation systems were developed since the 1980s on both sides of
+the river. Before construction of two major dams in 1987 large ﬂoods
+manifested frequently in the valley and delta areas. The development of
+the Manantali dam and reservoir on the upper part of the SRV allowed
+stabilizing water ﬂow and allowed irrigation year-round. The Diama
+dam was built instead approximately 27 km upstream from the mouth
+of the river to prevent saltwater intrusion. Concurrently to completion
+of the two dams, the inter-state Senegal River Basin Authority (OMVS)
+was setup as a regulating institution for water resources between the
+countries. By construction of the Manantali dam OMVS estimated that
+300,000 ha could be irrigated, a potential that has not been reached till
+date (Agnew and Woodhouse, 2010). Irrigation water is distributed to
+the ﬁelds through canals using mainly electric water pumps. Except for
+some large-scale commercial sugarcane estates near Richard Toll, the
+irrigation schemes are relatively small in size ranging from 25 ha for
+privately developed village schemes to 1000 ha for schemes originally
+developed by the state, but gradually handed over to farmer organi-
+zations (Wester et al., 1995). Farm sizes were reported to be 0.59 ha in
+the middle valley and 2.43 ha in the delta (de Mey et al., 2012). Irri-
+gated rice is the principal crop and it is either cultivated in the wet
+season (July–December) or in the dry season (February–July). In the
+short cold season (December–February) tomatoes and onions are also
+being cultivated. On the banks of the river ﬂood recession agriculture is
+practiced using the remaining soil moisture after the ﬂoods in August
+and September to cultivate crops like watermelons, sorghum and beans
+(Saarnak, 2003). A shift in cultivation practices has been observed in
+recent years (Fig. 2). Farmers increasingly practice double rice cropping
+or they switched from the wet season to the dry season (SAED/DDAC,
+2015; van Oort et al., 2016) to beneﬁt from higher potential yields in
+the latter (Dingkuhn and Sow, 1997). The actual rice yields in both wet
+and dry season are typically between with 5.0 ton/ha in the delta and
+5.6 ton/ha in the middle valley. These ﬁgures are well below the po-
+tential yields of 9 ton/ha and 10 ton/ha of paddy rice respectively. The
+primary factor for the low yields was explained as delayed crop es-
+tablishment related to availability of credit, machinery and irrigation
+water (Tanaka et al., 2015).
+
+2.2. Data used in this study
+
+2.2.1. Satellite data
+
+The analysis was based on time series of MODIS data acquired over
+the SRV in the 2003–2016 period. In particular, a combined time series
+of TERRA and AQUA 16-day Composite Vegetation Indexes (MODIS
+products MOD13Q1 and MYD13Q1, Didan (2015)) at 250 m resolution
+was used as input for the PhenoRice algorithm. The original MODIS
+images were downloaded from the NASA LPDAAC online archive and
+preprocessed by means of the MODIStsp “R” package (Busetto and
+Ranghetti, 2016), to produce time series of the EVI (Enhanced Vege-
+tation Index, Huete et al., 1994) and NDFI (Normalized Diﬀerence
+Flood Index, Boschetti et al. (2014)) spectral indexes, later used by
+PhenoRice in order to identify rice crops and estimate the dates of oc-
+currence of some key agricultural practices. EVI was directly extracted
+from the corresponding MODIS SDS (Scientiﬁc Data Set) layer, while
+NDFI was computed from MODIS reﬂectances in bands as 1 (Red) and 7
+(SWIR), as follows:
+
+NDFI
+
+=
+
+ρ
+ρ
+
+Red
+
+Red
+
+ρ
+SWIR
+ρ
+SWIR
+
+−
+
++
+
+b
+1
+b
+1
+
+−
+
++
+
+b
+7
+b
+7
+
+=
+
+17
+
+L. Busetto et al.
+
+Int J Appl  Earth Obs Geoinformation 75 (2019) 15–28
+
+Fig. 1. (a)Location of the Senegal river in West Africa; Zoom-in on the two validation areas: Boundoum (South-west of Rosso) (b) and Podor (c).
+
+Senegalese public organisation for development and exploitation of
+irrigated agriculture) was used to analyze the performance of
+PhenoRice for identiﬁcation of rice areas and their variation across
+years. The database contains oﬃcial statistics of irrigated rice area in
+the wet and dry seasons for the entire Senegalese part of the Senegal
+River Valley (SAED/DDAC, 2015). Secondly, a database of farm surveys
+collected during the wet season between 2002 and 2010 (Diagne et al.,
+2013) was used to validate PhenoRice crop establishment and har-
+vesting dates. The database contains data about agro-practices related
+to two separate areas: the Boundoum irrigation scheme in the delta
+(surface of about 45 km2, located approximately 30 km south-west of
+Rosso, see Fig. 1), and a larger area around the city of Podor in the
+middle valley covering the irrigation schemes of Fanaye, Nianga, Podor
+and Thiele Boubacar (surface of about 380 km2). Data was collected by
+staﬀ from the Africa Rice Center, SAED and the local non-governmental
+organization UJAK (Union des Jeunes Agriculteurs de Koyli-Wirnde
+(Tanaka et al., 2015)) by interviewing (as much as possible) the same
+set of approximately 100 rice farmers equally divided between the two
+study zones over a period of 9 consecutive years. While the accuracy of
+the survey data concerning crop establishment and harvesting dates can
+be considered very high, its positional accuracy is unfortunately less
+satisfactory. Geographic coordinates of the monitored farmers’ ﬁelds
+are not available, and the only positional information is the name of the
+village to which each ﬁeld belongs. For the sake of our analyses, data
+were therefore spatially aggregated for the Boundoum irrigation area
+(delta) and the Podor zone (middle valley) by averaging the informa-
+tion available for each year.
+
+Table 1 provides a short summary of the datasets used.
+
+Fig. 2. Reported irrigated rice area in the Senegal River Valley between 1999
+and 2013 (Senegal only; SAED/DDAC (2015)).
+
+NDFI is sensitive to surface water content, with values greater than zero
+corresponding generally to areas characterized by the presence of
+standing water (Boschetti et al., 2014).
+
+2.2.2. Validation data
+
+Two databases were used to validate PhenoRice results. Firstly, a
+database of reported rice cultivated area provided by SAED (Société
+Nationale d’Aménagement et d’Exploitation des Terres du Delta du
+Fleuve Sénégal et des Vallées du Fleuve Sénégal et de la Falémé –
+
+Table 1
+Characteristics of the main datasets used in this study.
+
+Dataset
+
+Time span
+
+Spatial extent
+
+Source
+
+MOD13Q1/MYD13Q1 MODIS time series
+Boundaries of areas equipped with irrigation
+
+infrastructure
+
+Cultivated rice area statistics
+Farmer reported dates of crop establishment and
+
+harvesting in the wet season
+
+Digital boundaries of the two surveyed areas
+
+2003–2016
+2015
+
+1965–2015
+2000–2010
+
+–
+
+Entire Senegal River catchment
+Entire Senegal River catchment
+
+Didan (2015)
+Africa Rice Center (Zwart, 2017)
+
+Senegal River Valley, Senegal side only
+Two areas in Senegal: Boundoum irrigation
+scheme (delta), Podor zone (middle valley)
+
+SAED/DDAC (2015)
+Africa Rice Center, SAED, UJAK (Diagne et al., 2013; de
+Mey et al., 2012)
+This study, based on information from reports, Google
+Maps and village names from the database
+
+18
+
+L. Busetto et al.
+
+2.3. Methods
+
+2.3.1. Estimation of rice area and timing of agro-practices
+
+The PhenoRice algorithm (Boschetti et al., 2017) was applied on
+MODIS time series described in Section 2.3 with the objective of ana-
+lysing the interannual variations of phenological metrics such as crop
+establishment, ﬂowering and harvesting dates over large areas. Phe-
+noRice estimates key dates in rice crop cultivation through analysis of
+time series of spectral indices (SIs) derived from moderate resolution
+satellite imagery. It was demonstrated to provide reliable estimates of
+the spatial variability of the dates of crop establishment and ﬂowering
+over large areas, irrespective of the characteristics of rice cultivation in
+diﬀerent environments (Boschetti et al., 2017; Setiyono et al., 2018).
+Conceptually, PhenoRice works in two steps: (i) detection of rice crop
+pixels and (ii) estimation of phenological metrics. In short, for each
+MODIS pixel (except those eventually excluded by an ad-hoc mask),
+PhenoRice ﬁrst determines if it has a high probability of belonging to a
+rice area. This is achieved by using a rule-based method which classiﬁes
+a MODIS pixel as a rice crop if: (1) a clear and unambiguous ﬂood
+condition is detected on the basis of NDFI values. A pixel is considered
+ﬂooded in a given date if its NDFI value is greater than a user-speciﬁed
+threshold (NDFIthresh – see Table 2); (2) the EVI signal (smoothed using a
+two-stage Savitzky and Golay ﬁlter) following the identiﬁed ﬂooding is
+consistent with what expected for a rice crop (e.g., a rapid growth,
+followed by a relatively stationary peak period and a rapid decrease
+related to yellowing and harvesting). If a pixel is considered to belong
+to rice, phenological dates’ estimation is conducted. In particular, (i)
+the date corresponding to the strongest minima of the EVI curve ob-
+served in proximity of the identiﬁed ﬂooding is considered as a proxy of
+crop establishment (Start of Season – SOS), (ii) the midpoint date for
+which the EVI signal remains constantly above 90% of the min/max
+range as a proxy of crop ﬂowering (Peak of Season – POS), and (iii) the
+date at which the signal drops below a user-deﬁned percentage
+threshold of the min/max range as a proxy of crop harvesting (End of
+Season – EOS). The total length of the rice crop season (TLS) from es-
+tablishment to harvesting is also computed as the diﬀerence between
+EOS and SOS. A more detailed description of the PhenoRice algorithm
+and its performance can be found in Boschetti et al. (2017). It is worth
+noting that, with respect to PhenoRice original implementation, an
+additional criteria for rice identiﬁcation was introduced. The new cri-
+teria checks the estimated TLS, and only retains pixels which season
+length is within a speciﬁed range. Additionally, with respect to para-
+meterizations used for analyses reported in Boschetti et al. (2017), the
+NDFI threshold for ﬂood detection was lowered from 0 to −0.1 This
+choice was motivated by the fact that ﬂooded rice ﬁelds in SRV (in
+particular in the dry season) are often adjacent to bright soils. This
+reduces the eﬀect of ﬂooding on the NDFI signal in particular on the
+boundaries of ﬂooded areas, thus aﬀecting PhenoRice capabilities for
+rice crop detection. Lowering the NDFI threshold was found to reduce
+
+Int J Appl  Earth Obs Geoinformation 75 (2019) 15–28
+
+this problem, while not introducing evident misclassiﬁcation problems.
+A useful feature of PhenoRice is that it allows to detect multiple
+growing seasons for a pixel within a cropping year. This is achieved by
+splitting the time series into as many as four periods, each representing
+a possible period when rice ﬂowering may occur, and conducting a
+separate analysis on each one. In the case of the present analysis the
+algorithm was parameterized so to consider two possible rice seasons:
+the dry season (possible ﬂowering period between March 1 and June
+30), and the wet season (possible ﬂowering period between between
+August 1 and December 31). The other processing parameters used for
+PhenoRice parameterization are reported in Table 2, along with a short
+description of their meaning (for further details, see Boschetti et al.
+(2017)). To reduce computation time and avoid processing large desert
+areas alongside the river, the processing was limited to MODIS pixels
+located within areas equipped with irrigation infrastructure, as identi-
+ﬁed in Zwart (2017).
+
+PhenoRice original outputs were successively post-processed to ex-
+tract multi-temporal raster maps at 250 m resolution for SOS, POS, EOS,
+VLS and TLS used as the basis for later geospatial processing aimed at
+comparing PhenoRice results with ancillary data and at extracting and
+analyzing spatial–temporal trends, as explained in the next sections. All
+of
+these processing were performed using the R Language and
+Environment for Statistical Computing (R Core Team, 2018), exploiting
+in particular packages raster (Hijmans, 2017), sp (Bivand et al., 2013), sf
+(Pebesma, 2018), ggplot2 (Wickham, 2016) and sprawl (Busetto and
+Ranghetti, 2018).
+
+2.3.2. Comparison of PhenoRice results against oﬃcial rice area statistics
+and agro-practices ﬁeld data
+
+PhenoRice results were compared with ancillary data to verify the
+performance of the algorithm in tracking the interannual variations of
+both rice area and of establishment and harvesting dates across the
+SRV. We ﬁrst compared the total rice cultivated area detected by
+PhenoRice for the two rice seasons for the period 2003–2016 (14 years,
+28 rice seasons) with the oﬃcial reported rice cultivated area using a
+linear regression analysis. Successively, we compared the phenological
+metrics derived by PhenoRice with the available ﬁeld data concerning
+establishment and harvesting dates described in Section 2.2.2. Since the
+exact location of the ﬁeld samples was unknown, only an analysis ag-
+gregating the data was possible. This was conducted by computing and
+comparing the averages of both the ground-truth dates and PhenoRice
+estimates, for the two main areas where ﬁeld data were collected.
+PhenoRice ability to identify trends in agro-practices was veriﬁed by
+analyzing results of a OLS linear regression analysis between PhenoRice
+and ﬁeld average dates (r2, slope, intercept and p value), while accuracy
+of the estimates was assessed by computing the mean error (ME) and
+root mean square error (RMSE).
+
+Table 2
+PhenoRice parameterization used for the analysis (see Boschetti et al. (2017) for further details concerning the meaning of the diﬀerent parameters).
+
+Dataset
+
+Value
+
+Description
+
+Analyzed period
+Flowering periods
+
+EVImax_th
+EVImin_th
+NDFIth [–]
+winﬂ [days]
+
+2003–2016
+Dry season: 1 March–30 June
+Wet season: 1 August–31 December
+0.35
+0.25
+−0.1
+25
+
+windecr [days]
+decrth [%]
+Δtmin [days]
+Δtmax [days]
+Season length [days] ≥100 and ≤170
+
+90
+0.55
+40
+90
+
+Years analyzed
+Potential ﬂowering periods (start–end)
+
+Minimum value needed for considering a relative EVI maximum as corresponding to a ﬂowering period
+Maximum value needed for considering a relative EVI minimum as corresponding to a sowing period
+Minimum NDFI threshold used to identify ﬂooded conditions
+Maximum possible diﬀerence allowed between a minimum and the closest ﬂooding detected based on NDFI for a
+pixel to be mapped as rice
+Maximum possible diﬀerence allowed between POS and EOS for a pixel to be mapped as rice
+Percentage decrease threshold (with respect to the min/max range) used for EOS estimation
+Minimum possible diﬀerence allowed between SOS and POS for a pixel to be mapped as rice
+Maximum possible diﬀerence allowed between SOS and POS for a pixel to be mapped as rice
+Possible range of TLS allowed for a pixel to be mapped as rice
+
+19
+
+L. Busetto et al.
+
+Int J Appl  Earth Obs Geoinformation 75 (2019) 15–28
+
+Fig. 3. Maps of rice cultivated area, crop establishment date, ﬂowering dates and harvesting dates estimated by PhenoRice for the dry (left panels) and wet (right
+panels) seasons of 2016 (data were cumulated (for area) or averaged (for the other parameters) over a regular hexagon grid with a cell size of 25 km2 to allow a better
+visualization).
+
+2.3.3. Analysis of interannual variations in rice area, rice cropping intensity
+and rice growing practices
+
+PhenoRice results were ﬁnally used to analyze the trends in rice
+cultivation practices occurred in SRV during the last 15 years. We ﬁrst
+analyzed the detected changes in rice cultivation periods, by computing
+the relative proportions of areas detected by PhenoRice as being
+cropped with rice in the dry, in the wet and in both seasons, for each
+analyzed year. The analysis was conducted both on the entire SRV and
+on the cells of a regular hexagonal grid of approximately 25 km2 of
+surface, in order to be able to depict the spatial variability of the oc-
+curred changes. Successively, the existence of statistically signiﬁcant
+
+temporal trends in rice cultivation practices (besides the shift towards
+dry season cropping) was tested by performing a linear OLS regression
+analysis between Year and the yearly averages of the main PhenoRice
+phenological metrics (crop establishment, ﬂowering and harvesting
+dates, and total season length).
+
+3. Results and discussion
+
+Application of the PhenoRice algorithm allowed to derive maps of
+estimated rice area and phenological metrics for the 2003–2016 period.
+Results obtained for 2016 are shown as an example in Fig. 3, which
+
+20
+
+L. Busetto et al.
+
+Int J Appl  Earth Obs Geoinformation 75 (2019) 15–28
+
+highlights the usefulness of PhenoRice outputs for tracking the spatial
+and temporal variability of rice cultivation practices for what concerns
+cultivated area and timing of crop establishment, ﬂowering and har-
+vesting in each season. From the ﬁgure, it is for example evident how
+dry season rice cultivation is currently concentrated mostly in the north
+western part of the SRV, with typical crop establishment in Februar-
+y–March. Wet season cultivation is instead more widespread along the
+river valley.
+
+3.1. Comparison of PhenoRice results with ancillary data
+
+3.1.1. Rice cultivated area
+
+Results of the comparison between oﬃcial statistics of rice culti-
+vated areas reported by SAED/DDAC (2015) and PhenoRice estimates is
+shown in Fig. 4.
+
+The ﬁgure shows that PhenoRice rice areas are reasonably corre-
+lated with the SAED (r2 = 0.71), but also that detected rice area is
+
+Fig. 4. Comparison between oﬃcial statistics (SAED/DDAC, 2015) of cultivated
+rice area during the wet and dry season in Senegal and PhenoRice estimates.
+
+Fig. 5. Time series of MODIS and ﬁeld average crop establishment (top panels) and harvesting (bottom panels) dates for the wet season (error bars correspond to
+plus/minus one standard deviation of MODIS estimates and available ﬁeld data). Left panels show results of the comparison for the Boundoum area, right panels
+those for the Podor area.
+
+21
+
+L. Busetto et al.
+
+Int J Appl  Earth Obs Geoinformation 75 (2019) 15–28
+
+Table 3
+Statistical comparison between PhenoRice and ﬁeld average crop establishment and harvesting dates. Slope, intercept r2 and p: results of a linear regression analysis
+between MODIS and ﬁeld dates; ME: mean error; RMSE: root mean squared error (see Supplementary Materials for a graphical representation).
+
+Site
+
+Metric
+
+Boundoum (delta)
+Podor (middle valley)
+Boundoum (delta)
+Podor (middle valley)
+
+Establishment date
+Establishment date
+Harvesting date
+Harvesting date
+
+Slope
+
+0.829
+1.675
+0.659
+1.507
+
+Intercept
+
+2351.768
+−9271.532
+4731.358
+−7032.646
+
+r2
+
+0.870
+0.799
+0.610
+0.826
+
+p
+
+0.001
+0.003
+0.022
+0.002
+
+ME
+
+4.067
+−0.770
+0.006
+−5.324
+
+RMSE
+
+5.408
+8.240
+6.197
+8.140
+
+was capable to identify a representative sample of rice cultivated pixels
+within the complex study area, and recognize the major shift towards
+dry season cultivation started in 2008.
+
+3.1.2. Timing of agro-practices
+
+Results of the comparison between PhenoRice estimates and timing
+of agronomic practices derived from ﬁeld surveys are shown in Fig. 5
+and Table 3. PhenoRice average estimates of wet season crop estab-
+lishment and harvesting dates show good agreement with average re-
+ported dates for the years 2003–2010. In the Boundoum area, Phe-
+noRice estimates of crop establishment were found to be very well
+correlated with ﬁeld data (r2 = 0.89; p < 0.01) and also very accurate,
+though slightly overestimated (ME = 4.06; RMSE = 5.41). Harvesting
+dates shows a lower correlation (r2 = 0.615; p < 0.02), with almost no
+BIAS and an RMSE of about 6 days. Results obtained in the Podor va-
+lidation area are somehow less satisfactory: despite high correlations (r2
+equal to 0.81 and 0.82 for establishment and harvesting dates, re-
+spectively), the RMSE increases in this case to about 8 days for both
+establishment and harvesting dates (see also Fig. S1 in Supplementary
+Materials for a graphical representation of results of the regression
+analysis). This minor diﬀerence in performances can be explained by
+diﬀerences in both the available ﬁeld data and the landscapes of the
+validation areas. Although the exact location of ﬁeld observations was
+unknown, ﬁeld data for the Boundoum site were collected within a
+relatively small area characterized by a large extension of contiguous
+rice ﬁelds (AfricaRice, pers. commun., 2016). Conversely, in the case of
+Podor ﬁeld data were collected over a much larger and heterogeneous
+area consisting of several irrigation schemes (see Fig. 1). This hetero-
+geneity is testiﬁed by the large variability of ﬁeld-observed establish-
+ment and harvesting dates depicted in Fig. 5 – bottom panel, and may
+aﬀect the accuracy of PhenoRice estimates due to mixed pixel eﬀects.
+Accuracy of retrieved sowing dates is consistent with those reported in
+the original PhenoRice publication (Mean Error between −0.24 and
+12.8 days and MAE between 5.26 and 13.14 days, depending on vali-
+dation area). Those accuracies were reported to be generally higher
+with respect to the few studies available that compared crop estab-
+lishment dates from moderate resolution remote sensing data and ﬁeld
+observations [e.g. Chumkesornkulkit et al., 2013; Suwannachatkul
+et al., 2014; Sakamoto et al., 2005]. It is however important to un-
+derline the very diﬀerent validation scheme exploited in the present
+work. In the aforementioned studies accuracy was assessed on a single
+year of data by comparing EO-based estimations against high-resolution
+reference sowing dates maps or ﬁeld information available over mul-
+tiple points. In this study we instead compared ﬁeld and EO sowing
+dates averaged over two relatively large areas, but for several years. To
+the best of our knowledge, this is the ﬁrst study which analyzed the
+accuracy of remote sensing based methods for identifying interannual
+variations of rice crop phenometrics through comparison with multi-
+annual ﬁeld data. Despite the limitations of the available validation
+datasets due to the unavailability of the precise geographical co-
+ordinates of the ﬁeld information (see Section 2.2.2), our results suggest
+that the obtained accuracy is suﬃcient for characterizing year-to-year
+changes in sowing and harvesting dates.
+
+In summary, results reported in Sections 3.1.1 and 3.1.2 testify that
+PhenoRice is able to consistently map a signiﬁcant share (about 60%,
+
+Fig. 6. Changes in rice area in the dry and wet season in Mauritania and
+Senegal from 2003 to 2016 estimated by PhenoRice.
+
+consistently lower than the oﬃcial one. This tendency towards under-
+estimation was reported before for test areas analyzed in the ﬁrst
+PhenoRice publication (Boschetti et al., 2017), and is attributed to three
+main reasons. First, it is important to remind that when coarse re-
+solution satellite data are used for mapping the so called “low resolu-
+tion bias” is expected (Boschetti et al., 2004), leading to either under- or
+over-estimation of areas when compared with higher resolution in-
+formation. Second, it should be noted that PhenoRice main focus is on
+allowing an accurate estimation of phenological metrics related to rice
+growing practices (e.g., crop establishment dates). The algorithm was
+therefore implemented so to be rather conservative, and retains only
+those pixels for which the analysis of the satellite time series provide a
+rather strong certainty of their belonging to rice cultivated areas. Fi-
+nally, the characteristics of the study area further exacerbate this ten-
+dency towards underestimation, due to the fact that rice ﬁelds have
+generally small dimensions and are often adjacent to very arid/desert
+areas. This introduces further problems for rice identiﬁcation from
+coarse resolution satellite data due to the presence of mixed pixels.
+Despite aforementioned limitations, Fig. 4 shows that interannual var-
+iations of rice area are very correlated with oﬃcial data in the dry
+season (r2 = 0.90; p < 0.01). Correlation is instead very low in the wet
+season. This is probably due to the frequent and persistent cloudiness
+observed in the area during the crop establishment period (average
+accumulated precipitation 500 mm over August and September, with
+more than 90% of days with overcast or partly-cloudy conditions). This
+leads to a lower quality of the satellite signal in the wet season, and may
+prevent PhenoRice from detecting the signal related to agronomic
+ﬂooding particularly in years with persistent cloud cover during the
+period of ﬂooding of ﬁelds for land preparation.
+
+The performance of PhenoRice to detect rice areas appears lower
+compared to previous PhenoRice case studies described in Boschetti
+et al. (2017), and to other studies that compared rice cultivated areas
+derived from coarse resolution data with oﬃcial statistics or higher
+resolution datasets [e.g. Gumma et al., 2011; Zhang et al., 2015, 2017;
+Clauss et al., 2016]. However, the results demonstrate that PhenoRice
+
+22
+
+L. Busetto et al.
+
+Int J Appl  Earth Obs Geoinformation 75 (2019) 15–28
+
+Fig. 7. Variations in detected rice area and crop intensity between 2003 and 2016. In the bottom panels, green colors correspond to areas cultivated only in the wet
+season, red colors to areas cultivated only in the dry season, and blue colors to areas where a signiﬁcant presence of double rice seasons was detected. (For
+interpretation of the references to color in this ﬁgure legend, the reader is referred to the web version of the article.)
+
+on average) of rice cultivated areas within the SRV and, more im-
+portantly, to correctly depict the relative interannual variations of the
+timing of agro-practices observed in the reference data, in the two
+seasons. In particular, considering the 8-days temporal resolution of the
+MODIS data used as inputs and the relatively low spatial resolution of
+MODIS data with respect to average rice ﬁeld dimensions, we consider
+the aforementioned results to be really good, allowing the use of Phe-
+noRice maps for spatial–temporal analysis of variations of rice crop
+practices in the SRV.
+
+3.2. Analysis of interannual variations of rice cultivated area and cropping
+intensity
+
+PhenoRice analysis of the recent period 2003–2016 highlights the
+changes occurred in SRV rice cultivation practices. As clearly shown in
+Figs. 6 and 7 , the practice of cultivating rice only in the wet season is
+rapidly declining. This is particularly evident in rice cultivation areas in
+the delta zone (i.e. downstream of Dagana). In those areas, PhenoRice
+results evidence a shift towards cultivation in the dry season, as well as
+the introduction of rice double-cropping (Fig. 7, bottom panels).
+
+The variations in rice cultivation practices occurred in the analyzed
+period can also be observed from the analysis of Fig. 8. The ﬁgure
+shows the average and 5th and 95th percentiles of the EVI times series
+corresponding to MODIS pixels detected as rice at least in one of the
+
+seasons in 2003, 2009 and 2016. Right panels show the temporal
+proﬁles averaged for the entire SRV area, while right panels are aver-
+aged for the Boundoum irrigation scheme only. The ﬁgure also shows
+the average and 95th percentile of the NDFI signal, for the same areas,
+as well as the average estimated crop establishment, ﬂowering and
+harvesting dates.
+
+When looking at the average for the SRV (Fig. 8, left panels), the EVI
+and NDFI signals in 2003 are representative of what can be expected for
+a single rice crop in the wet season. Average EVI starts increasing
+around the middle of August, in concurrence with a strong increase of
+NDFI (which testiﬁes ﬂooding of the ﬁelds). The situation starts already
+changing in 2009, when the EVI average signal already shows signs of a
+switch towards dry-season or double-season cultivation. In particular,
+the strong increase in the 95th percentiles of EVI in spring testiﬁes the
+“start” of adoption of the new agro-practices. Moreover, the ﬂattening
+of the 5th percentile EVI curve in autumn testiﬁes the presence of both
+areas cultivated only in the wet season (“ﬂat” 5th percentile curve in
+spring/summer) and only in the dry season (“ﬂat” 5th percentile curve
+in autumn/winter). Additionally, the signiﬁcant increase of average
+NDFI values (in particular, of the 95th percentile of the curve) depicts
+the detection of ﬂooded areas in spring, due to the ﬂooding of rice
+ﬁelds. This behavior is further emphasized in 2016, where the strong
+increase of the EVI average and 95th percentile curves in spring and the
+corresponding reduction in autumn testiﬁes the gradual increase of dry
+
+23
+
+L. Busetto et al.
+
+Int J Appl  Earth Obs Geoinformation 75 (2019) 15–28
+
+Fig. 8. EVI and NDFI times series and average estimated crop establishment, ﬂowering and harvesting dates for MODIS pixels detected as rice in at least one of the
+seasons in 2003, 2009 and 2016 for the entire SRV area (left panels) and in the Boundoum validation area (right panels).
+
+season cultivation. The aforementioned observed changes are further
+outlined when focusing on the Boundoum validation area (Fig. 8, right
+panels). While the situation in 2003 is similar to that observed for the
+entire SRV, the 2009 time series highlights a faster adoption of dry
+season cultivation. The 2016 curves also show how rice cultivation in
+this area switched almost entirely towards dry season or double season
+cultivation, with practically no detected rice areas showing signs of
+being cropped only in the wet season: this is testiﬁed by the fact that the
+5th percentile EVI curve shows high and close to the average values in
+spring, while it is almost ﬂat in autumn.
+
+3.3. Interannual variations of timing and length of rice seasons
+
+Fig. 9 shows the frequency distribution of PhenoRice annual esti-
+mates of crop establishment and harvesting dates, from 2003 to 2016.
+The strong increase of rice cultivation in the dry season is testiﬁed by
+the shift, starting from 2008, from a unimodal (rice cultivated only in
+the wet season) to a bimodal distribution, with rice cultivated also in
+the dry season. This shift has been motivated by the higher rice yields
+achievable in the dry season in a large part of the basin, which led
+government organizations to promote the exploitation of available
+water resources in the dry season for rice cultivation.
+
+Results of the analysis of temporal trends for the diﬀerent MODIS-
+
+24
+
+L. Busetto et al.
+
+Int J Appl  Earth Obs Geoinformation 75 (2019) 15–28
+
+Fig. 9. Frequency distribution of PhenoRice estimated annual crop establishment (a) and harvesting (b) dates for the dry and wet seasons between 2003 and 2016.
+
+derived phenological metrics in the 2003–2016 period is shown in
+Fig. 10. The temporal span of the regression analysis was limited to
+2006-onwards, due to the very low number of pixels detected by Phe-
+noRice in the dry-season prior to 2006 as a consequence of the marginal
+adoption of dry season cultivation, which hampers the reliability of the
+estimates. To be able to link trends observed in the dry season to those
+observed in the wet season, we decided to limit the regression analysis
+for the wet season to the same period (2006–2016). Results highlight
+signiﬁcant trends in the average estimated length of the growing sea-
+sons: the average length of the dry season is increasing (r2 = 0.81;
+slope = 1.24 days y−1; p < 0.01), while a decreasing trend in the wet
+season is observed (r2 = 0.65; slope = −0.53 days y−1; p < 0.01)
+(Fig. 10, bottom panels). The trend observed in the dry season appears
+to be driven by a tendency towards later harvesting (r2 = 0.45;
+slope = 1.18 days y−1; p < 0.05), while the shortening of the wet
+season is driven by a delay in crop establishment (r2 = 0.49; slope =
+1.54 days y−1; p < 0.05), with a lower and less signiﬁcant delay ob-
+served in harvesting dates (r2 = 0.32, slope = 0.99 days y−1, p < 0.1).
+The observed changes in the timing of agro-practices and season
+length are explained by a combination of climatic constraints for rice
+cultivation and lack of resources. As the area cultivated in the dry
+season increases, so do the demand for labor, water and equipment for
+harvest. Since these resources are limited, this leads to a delay in
+completion of harvesting operations and thus to the observed increase
+in average TLS in the dry season (Tanaka et al., 2015). However, rice
+cultivation in the wet season is climatically bound by a cold period
+during January and February. For this reason, to avoid yield penalties
+farmers cannot harvest later than in December. However, due to the
+aforementioned delay in harvesting, in the double cropping systems the
+period between the harvest of the dry season and land preparation for
+the wet season is very short. Consequently, with the expansion of
+double cropping areas farmers often cannot comply with recommended
+cultivation practices for medium-duration varieties for reasons of
+shortage of labor and equipment, and they increasingly opt for shorter-
+duration varieties. Particularly in the river delta the preferred medium-
+
+long variety Sahel134 is therefore gradually being substituted by the
+short duration Sahel108 variety that requires only 105 days to maturity.
+This explains well the observed decrease in average length of the
+growing season in the wet season. It is also worth noticing that in recent
+years an increase of air temperature in the October-December period
+has been observed that has led to a shortening of the length of the wet
+season. However, according to crop growth simulations conducted by
+Van Oort (pers. commun., 2018) this increase in air temperatures is not
+suﬃcient to explain the relatively large season shortening detected in
+this study, that can therefore be explained solely by the aforementioned
+variations in agro-practices.
+
+4. Conclusions
+
+In this study, we used the PhenoRice algorithm to track recent
+variations of rice cultivation practices along the Senegal River Valley
+over a 14-year period (2003–2016). Time series of MODIS imagery with
+250 m spatial resolution and a nominal 8-days frequency were used as
+inputs for the algorithm. The spatial and temporal variations of rice
+cultivated area, crop establishment and harvesting dates, length of
+season, and cropping intensity were mapped for both the dry and the
+wet seasons. Comparisons between PhenoRice results and ancillary and
+ﬁeld data available for the Senegal part of the study area showed that
+the algorithm was able to track the spatial–temporal trends of rice
+cultivated area, cropping seasons and timing of agro-practices, despite
+consistently underestimating the total rice area. The analysis of inter-
+annual trends of rice growing practices based on PhenoRice results
+highlighted a clear shift of rice cultivation from the wet to the dry
+season that starts from 2008. The shift was found to be particularly
+evident in the middle valley and delta zones of the SRV. The analysis
+also revealed a statistically signiﬁcant increase in the length of the dry
+season since 2006 and a corresponding decrease in the length of the wet
+season. These changes are attributed to the increase of area under rice
+double cropping, notably in the delta zone. The period for wet season
+land preparation after harvest of the dry season rice crop is short and
+
+25
+
+L. Busetto et al.
+
+Int J Appl  Earth Obs Geoinformation 75 (2019) 15–28
+
+Fig. 10. Trends of MODIS estimated phenological metrics for the 2003–2016 period: crop establishment, ﬂowering and harvesting dates and total season length
+(establishment to harvesting). Points represent the average dates estimated over the whole study area, plus/minus one standard error. Color and size of the point
+depends on PhenoRice total detected rice area for each year and season.
+
+characterized by shortage of labour and machinery. This leads to de-
+layed harvest and land preparation. However, the wet season is cli-
+matically bound by a cold period that starts in December and that may
+lead to yield penalties if crops are harvested late. Therefore, rice
+farmers opt for short-duration varieties for the wet season in order to
+harvest as early as possible (with respect to rice maturity). To the au-
+thors’ knowledge, this is the ﬁrst study of its kind that addresses
+
+mapping, validating and analyzing multiannual trends in rice cultiva-
+tion practices over a large area in the African continent. The compar-
+ison with available rice area statistics and reported rice practices fur-
+ther demonstrates the robustness of the PhenoRice algorithm for rice
+crop monitoring in diﬀerent growing conditions. However, the main
+innovative contribution of the study is the exploitation of long time
+series of maps derived from remote sensing imagery for analyzing
+
+26
+
+L. Busetto et al.
+
+Int J Appl  Earth Obs Geoinformation 75 (2019) 15–28
+
+recent trends in rice cultivation practices over a large area. The results
+highlight the great potential of this approach for characterizing and
+monitoring multiannual trends. The study demonstrated that multi-
+annual maps of parameters such as sowing/harvesting dates and crop
+intensity might allow depicting variations in the characteristics of rice
+production systems in Africa and across the world. Availability of this
+kind of information is of great importance for evaluating the possible
+impact of adverse events on rice production and – as a consequence – on
+rice prices and food security [e.g. Boschetti et al., 2015]. Additionally,
+it may be of help for improving modelling of yields and crop health
+(e.g., Setiyono et al., 2018; Pagani et al., 2018) and better targeting
+interventions to increase the productivity, sustainability and proﬁt-
+ability of rice production (Boschetti et al., 2017).
+
+In conclusion, our ﬁndings highlight
+
+the usefulness of multi-
+temporal remote sensing techniques in general, and of the PhenoRice
+algorithm in particular, for providing insights about recent variations in
+rice cultivation practices over large areas in developing countries,
+where high-quality up to date information about changes in agricultural
+practices are often lacking. A noteworthy limitation of the approach lies
+in its reliance on coarse resolution satellite data, which leads to evident
+underestimation of rice cultivated area. Although we state that this was
+not a huge problem for the present study (which main objective was to
+analyze recent trends in rice agro-practices rather than to obtain un-
+biased estimates of rice area), it may hamper the usefulness of these
+kind of techniques for other studies and applications. However, the
+PhenoRice algorithm can be applied also to dense time series of deca-
+metric optical images (such as those provided by integrating Sentinel 2
+and Landsat-OLI data – Boschetti et al. (2018)): this permits monitoring
+spatial–temporal changes in rice agro-practices with an unprecedented
+accuracy and spatial resolution. Adaptation of PhenoRice to high spatial
+resolution time series is indeed on-going, and will be object of future
+research by the authors.
+
+Acknowledgments
+
+The research leading to these results was partially funded within the
+ERMES FP7 project (http://www.ermes-fp7space.eu) which received
+funding from the European Union Seventh Framework Program (FP7/
+2007-2013) under grant agreement 606983. Sander Zwart acknowl-
+edges the ﬁnancial support from the CGIAR Fund Council, Australia
+(ACIAR), Irish Aid, European Union, International Fund for Agricultural
+Development (IFAD), Netherlands, New Zealand, Switzerland, United
+Kingdom, USAID and Thailand to the CGIAR Research Program on
+Climate Change, Agriculture and Food Security (CCAFS). The authors
+are grateful to Mandiaye Diagne of the Africa Rice Center in Saint-
+Louis, Senegal for sharing the crop establishment and harvesting dates
+from the multi-year farm surveys. We also thank Pepijn van Oort and
+Kazuki Saito of the Africa Rice Center for their valuable insights in the
+interpretation of our ﬁndings. Finally, we thank the two anonymous
+reviewers for their valuable suggestions for improving the quality of the
+paper.
+
+Appendix A. Supplementary Data
+
+Supplementary data associated with this article can be found, in the
+
+online version, at https://doi.org/10.1016/j.jag.2018.09.016.
+
+References
+
+Agnew, C., Woodhouse, P., 2010. Water resources and development. J. Agrarian Change
+
+11, 598–600. https://doi.org/10.1111/j.1471-0366.2011.00328.x.
+
+Bivand, R.S., Pebesma, E., Gomez-Rubio, V., 2013. Applied Spatial Data Analysis with R,
+
+2nd ed. Springer, NY. URL: http://www.asdar-book.org/.
+
+Boschetti, L., Flasse, S., Brivio, P., 2004. Analysis of the conﬂict between omission and
+
+commission in low spatial resolution dichotomic thematic products: the Pareto
+boundary. Remote Sens. Environ. 91, 280–292. https://doi.org/10.1016/j.rse.2004.
+02.015.
+
+Boschetti, M., Busetto, L., Manfron, G., Laborte, A., Asilo, S., Pazhanivelan, S., Nelson, A.,
+2017. PhenoRice: a method for automatic extraction of spatio-temporal information
+on rice crops using satellite data time series. Remote Sens. Environ. 194, 347–365.
+https://doi.org/10.1016/j.rse.2017.03.029.
+
+Boschetti, M., Busetto, L., Ranghetti, L., Haro, F.G., Campos-Taberner, M., Confalonieri,
+
+R., 2018. Testing Multisensors time series on LAI estimates to monitor rice phe-
+nology: preliminary results. Proceedings of the 2018 IEEE International Geoscience
+and Remote Sensing Symposium (IGARSS).
+
+Boschetti, M., Nelson, A., Nutini, F., Manfron, G., Busetto, L., Barbieri, M., Laborte, A.,
+Raviz, J., Holecz, F., Mabalay, M.R.O., Bacong, A.P., Quilang, E.J.P., 2015. Rapid
+assessment of crop status: an application of MODIS and SAR data to rice areas in
+Leyte, Philippines aﬀected by Typhoon Haiyan. Remote Sens. 7, 6535–6557. https://
+doi.org/10.3390/rs70606535.
+
+Boschetti, M., Nutini, F., Manfron, G., Brivio, P.A., Nelson, A., 2014. Comparative analysis
+of normalised diﬀerence spectral indices derived from MODIS for detecting surface
+water in ﬂooded rice cropping systems. PLoS ONE 9, 1–21. https://doi.org/10.1371/
+journal.pone.0088741.
+
+Boschetti, M., Stroppiana, D., Brivio, P., Bocchi, S., 2009. Multi-year monitoring of rice
+crop phenology through time series analysis of MODIS images. Int. J. Remote Sens.
+30, 4643–4662. https://doi.org/10.1080/01431160802632249. Cited By 83.
+
+Bouvet, A., Le Toan, T., Lam-Dao, N., 2009. Monitoring of the rice cropping system in the
+
+Mekong Delta using ENVISAT/ASAR dual polarization data. IEEE Transactions on
+Geoscience and Remote Sensing 47, 517–526. https://doi.org/10.1109/TGRS.2008.
+2007963.
+
+Busetto, L., Ranghetti, L., 2016. MODIStsp: an R package for automatic preprocessing of
+
+MODIS land products time series. Comput. Geosci. 97, 40–48. https://doi.org/10.
+1016/j.cageo.2016.08.020.
+
+Busetto, L., Ranghetti, L., 2018. sprawl: spatial processing. R: Amorphous Wrapper
+
+Library. r package version 0.3.0. URL: https://github.com/lbusett/sprawl.
+
+Chumkesornkulkit, K., Kasetkasem, T., Rakwatin, P., Eiumnoh, A., Kumazawa, I.,
+
+Buddhaboon, C., 2013. Estimated rice cultivation date using an extended Kalman
+ﬁlter on MODIS NDVI time-series data. 2013 10th International Conference on
+Electrical Engineering/Electronics, Computer, Telecommunications and Information
+Technology 1–6. https://doi.org/10.1109/ECTICon.2013.6559573.
+
+Clauss, K., Yan, H., Kuenzer, C., 2016. Mapping paddy rice in China in 2002, 2005, 2010
+
+and 2014 with MODIS time series. Remote Sens. 8. https://doi.org/10.3390/
+rs8050434.
+
+de Mey, Y., Demont, M., Diagne, M., 2012. Estimating bird damage to rice in Africa:
+
+evidence from the Senegal River Valley. J. Agric. Econ. 63, 175–200. https://doi.org/
+10.1111/j.1477-9552.2011.00323.x.
+
+Diagne, M., Demont, M., Seck, P.A., Diaw, A., 2013. Self-suﬃciency policy and irrigated
+
+rice productivity in the Senegal River Valley. Food Security 5, 55–68. https://doi.
+org/10.1007/s12571-012-0229-5.
+
+Didan, K., 2015. MOD13Q1 MODIS/Terra Vegetation Indices 16-Day L3 Global 250m SIN
+
+Grid V006 [Data set]. https://doi.org/10.5067/MODIS/MOD13Q1.006.
+
+Dingkuhn, M., Sow, A., 1997. Potential yield of irrigated rice in African arid environ-
+
+ments. In: Kropﬀ, M.J., Teng, P.S., Aggarwal, P.K., Bouma, J., Bouman, B.A.M., Jones,
+J.W., van Laar, H.H. (Eds.), Applications of Systems Approaches at the Field Level.
+Systems Approaches for Sustainable Agricultural Development. Springer Netherlands,
+Dordrecht, pp. 79–99. https://doi.org/10.1007/978-94-017-0754-1_6.
+
+Dong, J., Xiao, X., 2016. Evolution of regional to global paddy rice mapping methods: a
+review. ISPRS J. Photogram. Remote Sens. 119, 214–227. https://doi.org/10.1016/j.
+isprsjprs.2016.05.010.
+
+Dong, J., Xiao, X., Kou, W., Qin, Y., Zhang, G., Li, L., Jin, C., Zhou, Y., Wang, J., Biradar,
+
+C., Liu, J., Moore, B., 2015. Tracking the dynamics of paddy rice planting area in
+1986–2010 through time series Landsat images and phenology-based algorithms.
+Remote Sens. Environ. 160, 99–113. https://doi.org/10.1016/j.rse.2015.01.004.
+
+FAO, 2014. Production. Rice Market Monitor. URL: http://www.fao.org/3/a-i4147e.pdf.
+FAO, IFAD, UNICEF, WFP, WHO, 2017. The state of food security and nutrition in the
+
+world 2017. Building Resilience for Peace and Food Security. FAO, Rome. URL:
+http://www.fao.org/3/a-I7695e.pdf.
+
+Fischer, G., Nachtergaele, F., Prieler, S., Teixeira, E., That, G., van Velthuizen, H., et al.,
+2013. Global Agro-ecological Zones (GAEZ) Version 3.0 [dataset]. URL: http://www.
+fao.org/nr/gaez/about-data-portal/en/.
+
+Gumma, M.K., Nelson, A., Thenkabail, P.S., Singh, A.N., 2011. Mapping rice areas of
+
+South Asia using MODIS multitemporal data. J. Appl. Remote Sens. 5, 5–27. https://
+doi.org/10.1117/1.3619838.
+
+Gumma, M.K., Thenkabail, P.S., Maunahan, A., Islam, S., Nelson, A., 2014. Mapping
+
+seasonal rice cropland extent and area in the high cropping intensity environment of
+Bangladesh using MODIS 500m data for the year 2010. ISPRS J. Photogram. Remote
+Sens. 91, 98–113. https://doi.org/10.1016/j.isprsjprs.2014.02.007.
+
+Hijmans, R.J., 2017. raster: Geographic Data Analysis and Modeling. r package version
+
+2.6-7. URL: https://CRAN.R-project.org/package=raster.
+
+Huete, A., Justice, C., Liu, H., 1994. Development of vegetation and soil indices for
+
+MODIS-EOS. Remote Sens. Environ. 49, 224–234. https://doi.org/10.1016/0034-
+4257(94)90018-3.
+
+Krush, G.S., 2005. What it will take to feed 5.0 billion rice consumers in 2030. Plant Mol.
+
+Biol. 59, 1–6. https://doi.org/10.1007/s11103-005-2159-5.
+
+Kurosu, T., Fujita, M., Chiba, K., 1997. The identiﬁcation of rice ﬁelds using multi-tem-
+poral ERS-1 C band SAR data. Int. J. Remote Sens. 18, 2953–2965. https://doi.org/
+10.1080/014311697217143.
+
+Laborte, G., Gutierrez, M., B, J.G., Saito, K., Zwart, S.J., Boschetti, M., Murty, M., Villano,
+L., Aunario, J., Reinke, R., Koo, J., Hijmans, R., Nelson, A., 2017. RiceAtlas a spatial
+database of global rice calendars and production. Sci. Data 4. https://doi.org/10.
+1038/sdata.2017.74.
+
+Le Toan, T., Ribbes, F., Wang, L.F., Floury, N., Ding, K.H., Kong, J.A., Fujita, M., Kurosu,
+
+27
+
+L. Busetto et al.
+
+Int J Appl  Earth Obs Geoinformation 75 (2019) 15–28
+
+T., 1997. Rice crop mapping and monitoring using ERS-1 data based on experiment
+and modeling results. IEEE Trans. Geosci. Remote Sens. 35, 41–56. https://doi.org/
+10.1109/36.551933.
+
+paddy rice phenology using time series MODIS data over Jiangxi Province, China. Int.
+J. Agric. Biol. Eng. 7, 28–36. URL: https://ijabe.org/index.php/ijabe/article/view/
+1433.
+
+Manfron, G., Crema, A., Boschetti, M., Confalonieri, R., 2012. Testing automatic proce-
+
+Singh, R.P., Oza, S.R., Pandya, M.R., 2006. Observing long-term changes in rice phe-
+
+dures to map rice area and detect phenological crop information exploiting time
+series analysis of remote sensed MODIS data. SPIE 8531, Remote Sensing for
+Agriculture, Ecosystems, and Hydrology XIV 85311E. https://doi.org/10.1117/12.
+974662. (19 October 2012).
+
+Nelson, A., Setiyono, T., Rala, A., Quicho, E., Raviz, J., Abonete, P., Maunahan, A., Garcia,
+C., Bhatti, H., Villano, L., Thongbai, P., Holecz, F., Barbieri, M., Collivignarelli, F.,
+Gatti, L., Quilang, E., Mabalay, M., Mabalot, P., Barroga, M., Bacong, A., Detoito, N.,
+Berja, G., Varquez, F., Wahyunto, E., Kuntjoro, D., Murdiyati, S., Pazhanivelan, S.,
+Kannan, P., Mary, P., Subramanian, E., 2014. Towards an operational SAR-based rice
+monitoring system in Asia: examples from 13 demonstration sites across Asia in the
+RIICE project. Remote Sens. 6, 10773–10812. https://doi.org/10.3390/rs61110773.
+Nguyen, D.B., Clauss, K., Cao, S., Naeimi, V., Kuenzer, C., Wagner, W., 2015. Mapping
+
+rice seasonality in the Mekong Delta with multi-year Envisat ASAR WSM data.
+Remote Sens. 7, 15868–15893. https://doi.org/10.3390/rs71215808.
+
+Nguyen, T.T.H., Bie, C.A.J.M.D., Amjad, A., Smaling, E.M.A., Chu, T.H., 2012. Mapping
+
+the irrigated rice cropping patterns of the Mekong delta, Vietnam, through hyper-
+temporal SPOT NDVI image analysis. Int. J. Remote Sens. 33, 415–434. https://doi.
+org/10.1080/01431161.2010.532826.
+
+van Oort, P., Balde, A., Diagne, M., Dingkuhn, M., Manneh, B., Muller, B., Sow, A., Stuerz,
+S., 2016. Intensiﬁcation of an irrigated rice system in Senegal: crop rotations, climate
+risks, sowing dates and varietal adaptation options. Eur. J. Agron. 80, 168–181.
+https://doi.org/10.1016/j.eja.2016.06.012.
+
+Pagani, V., Guarneri, T., Busetto, L., Ranghetti, L., Boschetti, M., Movedi, E., Campos-
+Taberner, M., Garcia-Haro, F.J., Katsantonis, D., Stavrakoudis, D., Ricciardelli, E.,
+Romano, F., Holecz, F., Collivignarelli, F., Granell, C., Casteleyn, S., Confalonieri, R.,
+2018. A high-resolution, integrated system for rice yield forecasting at district level.
+Agric. Syst. https://doi.org/10.1016/j.agsy.2018.05.007.
+
+Pan, X.Z., Uchida, S., Liang, Y., Hirano, A., Sun, B., 2010. Discriminating diﬀerent landuse
+types by using multitemporal NDXI in a rice planting area. Int. J. Remote Sens. 31,
+585–596. https://doi.org/10.1080/01431160902894442.
+
+Pebesma, E., 2018. sf: Simple Features for R. URL: https://CRAN.R-project.org/
+
+package=sf ,r package version 0.6-3.
+
+Peng, D., Huete, A.R., Huang, J., Wang, F., Sun, H., 2011. Detection and estimation of
+mixed paddy rice cropping patterns with MODIS data. Int. J. Appl. Earth Observ.
+Geoinform. 13, 13–23. https://doi.org/10.1016/j.jag.2010.06.001.
+
+Portmann, F.T., Siebert, S., Doll, P., 2010. MIRCA2000: global monthly irrigated and
+rainfed crop areas around the year 2000: a new high-resolution data set for agri-
+cultural and hydrological modeling. Global Biogeochem. Cycles 24. https://doi.org/
+10.1029/2008GB003435.
+
+R Core Team, 2018. A Language and Environment for Statistical Computing. R
+
+Foundation for Statistical Computing, Vienna, Austria. URL: https://www.R-project.
+org/.
+
+Ranghetti, L., Cardarelli, E., Boschetti, M., Busetto, L., Fasola, M., 2018. Assessment of
+water management changes in the Italian rice paddies from 2000 to 2016 using sa-
+tellite data: a contribution to agro-ecological studies. Remote Sens. 10https://doi.
+org/10.3390/rs10030416.. URL: http://www.mdpi.com/2072-4292/10/3/416.
+
+Saarnak, N.L., 2003. Flood recession agriculture in the Senegal River Valley. Geograﬁsk
+Tidsskrift-Danish J. Geogr. 103, 99–113. https://doi.org/10.1080/00167223.2003.
+10649483.
+
+SAED/DDAC, 2015. Banque de donnees SAED. Saint Louis, Senegal. URL: http://www.
+
+fao.org/nr/gaez/about-data-portal/en/.
+
+Sakamoto, T., Phung, C.V., Kotera, A., Nguyen, K.D., Yokozawa, M., 2009. Analysis of
+
+rapid expansion of inland aquaculture and triple rice-cropping areas in a coastal area
+of the Vietnamese Mekong Delta using MODIS time-series imagery. Landsc. Urban
+Plan. 92, 34–46. https://doi.org/10.1016/j.landurbplan.2009.02.002.
+
+Sakamoto, T., Yokozawa, M., Toritani, H., Shibayama, M., Ishitsuka, N., Ohno, H., 2005.
+
+A crop phenology detection method using time-series MODIS data. Remote Sens.
+Environ. 96, 366–374. https://doi.org/10.1016/j.rse.2005.03.008. Cited By 441.
+Seck, P.A., Tollens, E., Wopereis, M.C., Diagne, A., Bamba, I., 2010. Rising trends and
+
+variability of rice prices: threats and opportunities for sub-Saharan Africa. Food
+Policy 35, 403–411. https://doi.org/10.1016/j.foodpol.2010.05.003.
+
+Segda, Z., Haefele, S., Wopereis, M., Sedogo, M., Guinko, S., 2005. Combining ﬁeld and
+simulation studies to improve fertilizer recommendations for irrigated rice in Burkina
+Faso. Agron. J. 97, 1429–1437. https://doi.org/10.2134/agronj2004.0275.
+
+Senegalese Ministry of Agriculture, 2009. Programme National D’Autosuﬃsance en Riz –
+
+Stratégie Nationale de Développement de la Riziculture. URL: http://www.
+riceforafrica.net/downloads/NRDS/senegal_en.pdf.
+
+Setiyono, T.D., Quicho, E.D., Gatti, L., Campos-Taberner, M., Busetto, L., Collivignarelli,
+F., García-Haro, J., Boschetti, M., Khan, N.I., Holecz, F., 2018. Spatial rice yield es-
+timation based on MODIS and Sentinel-1 SAR data and ORYZA crop growth model.
+Remote Sens. 10. https://doi.org/10.3390/rs10020293.
+
+Shihua, L., Jiangtao, X., Ping, N., Jing, Z., Hongshu, W., Jingxian, W., 2014. Monitoring
+
+nology using NOAA-AVHRR and DMSP-SSM/I satellite sensor measurements in
+Punjab, India. Curr. Sci. 91, 1217–1221. URL: http://www.jstor.org/stable/
+24094100.
+
+Sun, H., Huang, J., Peng, A.H.D., Zhang, F., 2009. Mapping paddy rice with multi-date
+moderate-resolution imaging spectroradiometer (MODIS) data in China. J. Zhejiang
+Univ.: Sci. A 10, 1509–1522. https://doi.org/10.1631/jzus.A0820536.
+Suwannachatkul, S., Kasetkasem, T., Chumkesornkulkit, K., Rakwatin, P.,
+
+Chanwimaluang, T., Kumazawa, I., 2014. Rice cultivation and harvest date identiﬁ-
+cation based on a hidden Markov model. 2014 11th International Conference on
+Electrical Engineering/Electronics, Computer, Telecommunications and Information
+Technology (ECTI-CON) 1–6. https://doi.org/10.1109/ECTICon.2014.6839856.
+
+Tan, C., Koay, J., Lim, K., Ewe, H., Chuah, H., 2007. Classiﬁcation of multi-temporal SAR
+
+images for rice crops using combined entropy decomposition and support vector
+machine technique. Electromag. Res. 70, 19–39. https://doi.org/10.2528/
+PIER07012903.
+
+Tanaka, A., Diagne, M., Saito, K., 2015. Causes of yield stagnation in irrigated lowland
+rice systems in the Senegal River Valley: application of dichotomous decision tree
+analysis. Field Crops Res. 176, 99–107. https://doi.org/10.1016/j.fcr.2015.02.020.
+
+Tornos, L., Huesca, M., Dominguez, J.A., Moyano, M.C., Cicuendez, V., Recuero, L.,
+
+Palacios-Orueta, A., 2015. Assessment of MODIS spectral indices for determining rice
+paddy agricultural practices and hydroperiod. ISPRS J. Photogram. Remote Sens.
+101, 110–124. https://doi.org/10.1016/j.isprsjprs.2014.12.006.
+
+Turner, M.D., Congalton, R.G., 1998. Classiﬁcation of multi-temporal SPOT-XS satellite
+data for mapping rice ﬁelds on a West African ﬂoodplain. Int. J. Remote Sens. 19,
+21–41. https://doi.org/10.1080/014311698216404.
+
+United Nations General Assembly, 2015. Transforming our world: the 2030 agenda for
+sustainable development. In: Resolution Adopted at the 70th Session of the General
+Assembly. 25 September. . URL: https://www.unfpa.org/resources/transforming-
+our-world-2030-agenda-sustainable-development.
+
+Wailes, E.J., Durand-Morat, A., Diagne, M., 2015. Regional and National Rice
+
+Development Strategies for Food Security in West Africa. pp. 255–268. https://doi.
+org/10.1108/S1574-871520150000015025. (Chapter 17).
+
+Wester, P., During, A., Oorthuizen, J., 1995. Locally managed irrigation in the Senegal
+
+River Valley in the aftermath of state disengagement. In: IWMI Research Reports
+H016786. International Water Management Institute. . URL: https://ideas.repec.org/
+p/iwt/rerpts/h016786.html.
+
+Whitcraft, A.K., Becker-Reshef, I., Justice, C.O., 2015. A framework for deﬁning spatially
+explicit Earth observation requirements for a global agricultural monitoring initiative
+(GEOGLAM). Remote Sens. 7, 1461–1481. https://doi.org/10.3390/rs70201461.
+
+Wickham, H., 2016. ggplot2: Elegant Graphics for Data Analysis. Springer-Verlag, New
+
+York. URL: http://ggplot2.org.
+
+Wu, W., Yang, P., Tang, H., Zhou, Q., Chen, Z., Shibasaki, R., 2010. Characterizing spatial
+patterns of phenology in cropland of china based on remotely sensed data. Agric. Sci.
+China 9, 101–112. https://doi.org/10.1016/S1671-2927(09)60073-0.
+
+Xiao, X., Boles, S., Frolking, S., Li, C., Babu, J.Y., Salas, W., Moore, B., 2006. Mapping
+
+paddy rice agriculture in South and Southeast Asia using multi-temporal MODIS
+images. Remote Sens. Environ. 100, 95–113. https://doi.org/10.1016/830 j.rse.
+2005.10.004.
+
+Xiao, X., Boles, S., Frolking, S., Salas III, W., Li, B.M.C., He, L., Zhao, R., 2002.
+
+Observation of ﬂooding and rice transplanting of paddy rice ﬁelds at the site to
+landscape scales in China using VEGETATION sensor data. Int. J. Remote Sens. 23,
+3009–3022. https://doi.org/10.1080/01431160110107734.
+
+Xiao, X., Boles, S., Liu, J., Zhuang, D., Frolking, S., Li, C., Salas, W., Moore, B., 2005.
+
+Mapping paddy rice agriculture in southern China using multi-temporal MODIS
+images. Remote Sens. Environ. 95, 480–492. https://doi.org/10.1016/j.rse.2004.12.
+009.
+
+You, L., Wood, S., Wood-Sichra, U., Wu, W., 2014. Generating global crop distribution
+maps: from census to grid. Agric. Syst. 127, 53–60. https://doi.org/10.1016/j.agsy.
+2014.01.002.
+
+Zhang, G., Xiao, X., Biradar, C.M., Dong, J., Qin, Y., Menarguez, M.A., Zhou, Y., Zhang, Y.,
+Jin, C., Wang, J., Doughty, R.B., Ding, M., Moore, B., 2017. Spatiotemporal patterns
+of paddy rice croplands in China and India from 2000 to 2015. Sci. Tot. Environ. 579,
+82–92. https://doi.org/10.1016/j.scitotenv.2016.10.223.
+
+Zhang, G., Xiao, X., Dong, J., Kou, W., Jin, C., Qin, Y., Zhou, Y., Wang, J., Menarguez,
+
+M.A., Biradar, C., 2015. Mapping paddy rice planting areas through time series
+analysis of MODIS land surface temperature and vegetation index data. ISPRS J.
+Photogram. Remote Sens. 106, 157–171. https://doi.org/10.1016/j.isprsjprs.2015.
+05.011.
+
+Zwart, S.J., 2017. A detailed map of irrigation infrastructure along the Senegal River by
+2015. AfricaRice GIS Report – 4. Africa Rice Center, Cotonou, Benin. https://doi.org/
+10.13140/RG.2.2.28009.49761.
+
+28
+
+
