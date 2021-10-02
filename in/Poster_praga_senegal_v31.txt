@@ -1,0 +1,217 @@
+See discussions, stats, and author profiles for this publication at: https://www.researchgate.net/publication/312173759
+
+Variations in rice cultivation practices in the Senegal River Valley between
+2003 and 2014: an analysis based on MODIS time series
+
+Poster · May 2016
+
+DOI: 10.13140/RG.2.2.16939.85285
+
+CITATIONS
+0
+
+4 authors, including:
+
+Lorenzo Busetto
+Italian National Research Council
+
+101 PUBLICATIONS   2,900 CITATIONS   
+
+SEE PROFILE
+
+Sander J. Zwart
+International Water Management Institute
+
+108 PUBLICATIONS   2,414 CITATIONS   
+
+SEE PROFILE
+
+READS
+118
+
+Mirco Boschetti
+Italian National Research Council
+
+164 PUBLICATIONS   3,166 CITATIONS   
+
+SEE PROFILE
+
+Some of the authors of this publication are also working on these related projects:
+
+Novel Approaches for Efficient Targeting and Equitable Scaling of Rice Technologies’ (ETES-Rice) View project
+
+Mapping rice production environments in West-Africa View project
+
+All content following this page was uploaded by Lorenzo Busetto on 10 January 2017.
+
+The user has requested enhancement of the downloaded file.
+
+Variations in rice cultivation practices in the Senegal River Valley between 
+
+2003 and 2014: an analysis based on MODIS time series 
+
+Lorenzo Busetto1; Mirco Boschetti1; Sander Zwart2; Francesco Collivignarelli3 
+
+1 Institute for remote Sensing of the Environment, National Research Council, Italy (CNR-IREA); 2Africa Rice Center, 01 BP 2031, Cotonou, Benin;                        
+
+3 sarmap SA, Cascine di Barico 10, 6989 Purasca, Switzerland 
+
+Introduction and Objectives 
+
+Study Area 
+
+•
+
+Irrigated rice cultivation in the Senegal River Valley has shifted to from the 
+wet to the dry season in recent years. Moreover, private and government 
+investments have led to doubling rice acreage since 2007.  
+
+• Temperature extremes (both hot and cold) during the rice growing season 
+frequently  lead  to  yield  losses  or  failure.  Better  knowledge  is  therefore 
+required  on    where  and  when  rice  is  cultivated  and  which  areas  are 
+potentially mostly affected by meteorological extremes. 
+
+• Objective  of  this  work  was  to  analyze  the    inter-annual  variations  of 
+agricultural practices in the Senegal River Valley starting form time series 
+of MODIS images. 
+
+• Analysis  was  conducted  on  the 
+Senegal River Valley (SRV) area. 
+
+•
+
+the 
+
+of 
+
+In  particular,  analysis  was 
+focused  on  areas  classified  as 
+«irrigated  agricultural  areas» 
+on 
+a 
+photointerpretation  of  2014 
+satellite 
+high-resolution 
+imagery  conducted  by  Africa 
+Rice Center personnel.  
+
+basis 
+
+The Senegal River Valley area 
+
+Methods 
+
+• Inter-annual variation of agricultural practices were analyzed applying the PhenoRice algorithm (Boschetti et al., 2014) to 2003-2014 time series of 16-days 
+
+composite vegetation indexes 250m resolution MODIS data. 
+
+• Images were downloaded and pre-processed using the MODIStsp “R” package (https://github.com/lbusett/MODIStsp) to derive time series of EVI 
+
+vegetation index and NDFI flooding index (Boschetti et al., 2009) 
+
+• Rice phenological dates  were then derived as shown in the figure below. The algorithm is able to detect multiple growing seasons, by “splitting” the year 
+
+into  periods defined by the user, and conducting a separate analysis in each period.  This allows to flexibly account for variability in crop calendars and 
+cropping intensity in the different areas of the world.  
+
+Sowing 
+
+ Date at which a minimum 
+followed by a clear «Rice 
+
+Signal» and associated with 
+flooding conditions (NDFI > 0) 
+is found in smoothed EVI time 
+
+series  
+
+Dry Season 
+
+Wet Season 
+
+Flowering 
+
+ Median date for which 
+
+smoothed EVI is above the 
+90°  precentile of the      
+
+min-max range 
+
+Rice Signal 
+
+Fast EVI increase followed 
+
+by a maximum in an 
+agonomically sound 
+period, and by a fast 
+
+decrease 
+
+Retrieval of phenological dates for a pixel with a clear bi-seasonal signal  
+
+Results 
+
+• Results  highlighted  a  clear  shift  in  cultivation  patterns  in  the  SRV  in 
+the  last  years,  with  an  increase  of  rice  area,  in  particular  in  the  dry 
+season (Sowing dates between February and April). 
+
+• PhenoRice results allowed to easily depict the shifting in SRV area 
+
+cultivation practices, and analyze interannual variability in rice 
+seasonality. 
+
+Dry  Wet 
+
+Dry  Wet 
+
+Dry  Wet 
+
+Dry  Wet 
+
+Dry  Wet 
+
+Dry  Wet 
+
+Dry  Wet 
+
+Dry  Wet 
+
+Dry  Wet 
+
+Dry  Wet 
+
+Dry  Wet 
+
+Statistical distribution of retrieved sowing dates 
+
+• Comparison  with  official  statistics  highlighted  that  PhenoRice  was 
+able to correctly follow the inter-annual variations of rice cultivated 
+areas in the two seasons.  
+
+Sowing date maps for 2007 and 2014 on one of the main SRV rice areas 
+
+Wet Season 
+
+Dry Season 
+
+Conclusions 
+
+• Results  highlighted  the  usefulness  of  MODIS  time  series  and  the 
+PhenoRice  algorithm  for  detecting  shifts  in  agricultural  practices  over 
+large areas. 
+
+• Phenological maps derived from PhenoRice allow to  highlight the spatial 
+and temporal variability of rice seasonality, and can be important input 
+sources for spatialized crop modelling studies . 
+
+Comparison between official and PhenoRice interannual variations of  rice area 
+
+View publication stats
+View publication stats
+
+The research leading to these results has received funding from the European Union Seventh Framework Programme 
+
+(FP7/2007-2013) under grant agreement n° 606983 (www.ermes-fp7space.eu/) 
+
+

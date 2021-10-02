@@ -1,0 +1,5509 @@
+ 
+Received: 3 January 2020 |  Revised: 11 April 2020 |  Accepted: 15 May 2020
+DOI: 10.1111/jac.12418  
+
+S P E C I A L   I S S U E   A R T I C L E
+
+Season-specific varietal management as an option to increase 
+rainfed lowland rice production in East African high altitude 
+cropping systems
+
+Bayuh Belay Abera1,2  |   Sabine Stuerz1  |   Kalimuthu Senthilkumar3  |    
+Marc Cotter1  |   Arisoa Rajaona3 |   Folkard Asch1
+
+1University of Hohenheim, Institute 
+of Agricultural Sciences in the Tropics, 
+Stuttgart, Germany
+2Fogera National Rice Research and Training 
+Center/ EIAR, Bahir Dar, Ethiopia
+3Africa Rice Center, Antananarivo, 
+Madagascar
+
+Correspondence
+Bayuh Belay Abera, University of 
+Hohenheim, Institute of Agricultural 
+Sciences in the Tropics, Stuttgart, Germany.
+Email: bayuhb@yahoo.com
+
+Funding information
+Bundesministerium für Wirtschaftliche 
+Zusammenarbeit und Entwicklung, Grant/
+Award Number: BMZ: 14.1432.5-001.00; 
+Deutsche Forschungsgemeinschaft DFG, 
+Grant/Award Number: DFG: 407054468
+
+Abstract
+Due to land expansion and an increase in productivity, rice production in sub-Saharan 
+Africa has been growing at a rate of 6% in the past decade. Rainfed rice production 
+systems have accounted for a large share of this expansion. In these systems, the 
+potential growing period not only depends on the length of the rainy season and thus 
+water availability, but is often, especially in the highlands of East Africa, bordered by 
+the onset of the cool period of the year, when low minimum temperatures compro-
+mise rice yields. The objective of this study was to investigate the yield potential of 
+30 rice varieties contrasting in crop duration and cold tolerance in the highlands of 
+East Africa, with its limited length of growing period. A field trial was conducted in 
+the cropping seasons in 2016 and 2017 at the Fogera rice research station, Ethiopia. 
+As a function of the onset of rains, rice was sown mid-July in 2016 and early July in 
+2017. Early sowing in 2017 led to an extended crop duration and significantly lower 
+yields of the short-duration varieties, and to a shortened duration and significantly 
+higher  yields  of  the  medium-  and  long-duration  varieties,  when  compared  to  late 
+sowing in 2016. Late sowing compromised yield of the medium- and long-duration 
+varieties because of low temperatures during booting stage, which led to high spike-
+let sterility. Early sowing resulted in low yields of the short-duration varieties, prob-
+ably due to low solar radiation during the cloudy rainy season, which coincided with 
+the vegetative stage. Therefore, choice of variety should be a function of the variable 
+onset of the rainy season and related sowing date. However, crop models precisely 
+calibrated for potential varieties and the respective environmental conditions could 
+fully support the selection of a suitable variety, depending on the date of sowing, for 
+example with the help of online tools or smartphone applications.
+
+K E Y W O R D S
+abiotic stress, genotypes, phenology, spikelet sterility, yield components
+
+This is an open access article under the terms of the Creative Commons Attribution-NonCommercial License, which permits use, distribution and reproduction 
+in any medium, provided the original work is properly cited and is not used for commercial purposes.
+© 2020 The Authors. Journal of Agronomy and Crop Science published by Blackwell Verlag GmbH
+
+J Agro Crop Sci. 2020;206:433–443. 
+
+  
+
+wileyonlinelibrary.com/journal/jac
+
+  |  433
+
+434  |    
+
+1 |  INTRODUCTION
+
+Rice production in sub-Saharan Africa has been growing at a rate 
+of  about  6%  over  the  last  decade  (FAO,  2019;  Seck,  Ali,  Toure, 
+Coulibaly, & Wopereis,  2013). The production increase has been 
+due to land expansion (70%) as well as an increase in productiv-
+ity (30%). A large share of this expansion has happened in rainfed 
+lowland systems (Africa Rice Center, 2014). The major determinant 
+for the expansion of rainfed systems is the length of time available 
+for  crop  growth  (Garitty  et  al.,  1986).  However,  in  systems  with 
+strong differences in seasonal water availability, the length of the 
+cropping season is constrained by the onset and length of the rainy 
+period as well as the level of water management employed in the 
+system. Thus, crop exposure to drought or water deficits strongly 
+depends on the sowing date (van Oort, 2018). In addition, rice is a 
+thermophilic crop that in general does not grow well at tempera-
+tures  below  20°C  (Dingkuhn,  Sow,  Samb,  Diack,  &  Asch,  1995). 
+Rice yields are significantly reduced due to spikelet sterility when 
+the  crop  experiences  temperatures  below  18°C  during  the  early 
+reproductive stage (Shrestha, Asch, Dusserre, Ramanantsoanirina, 
+& Brueck,  2012). In East Africa, in contrast to West Africa, rain-
+fed rice systems are not only constrained by water availability due 
+to  seasonal  rainfall  patterns,  but  also  by  low  temperatures  due 
+to  altitude  late  in  the  season.  This  type  of  cold  stress  threatens 
+rice  production  in  the  central  highlands  of  East  Africa  (Uganda, 
+Rwanda, Tanzania and Kenya) and the highlands of Ethiopia (van 
+Oort, 2018). The Fogera Plain is one of the most important rain-
+fed  lowland  rice-producing  areas  in  Ethiopia,  contributing  about 
+30% to national rice production (Astewel 2017). As in all rainfed 
+systems, the onset of the rainy season dictates the actual sowing 
+dates on the Fogera Plain, and the resulting soil moisture reaches 
+levels sufficient for the germination and establishment of the crop. 
+In  the  northern  hemisphere,  sowing  normally  occurs  in  summer 
+(e.g. mid-June) resulting in harvest in October or November. Low 
+temperatures  coinciding  with  critical  reproductive  development, 
+for example for a few days during booting stage, strongly affect 
+seed set and consequently, the yield (Arshad et al., 2017; Dingkuhn 
+et al., 1995; Shrestha et al., 2012).
+
+In  general,  the  yield  potential  of  rice  cultivars  is  determined 
+by  their  phenological  characteristics,  particularly  crop  duration 
+(Dingkuhn & Asch, 1999), since a shortened crop duration has been 
+associated with reduced grain yield via a shorter period of biomass 
+accumulation (Wheeler, Crufurd, Ellis, Porter, & Vara Prasad, 2000). 
+Therefore, to fully exploit the yield potential in a rainfed system, 
+genotypes  are  needed  that  maximize  yield  and  minimize  the  risk 
+of  crop  failure  (Dingkuhn,  1995;  Shrestha,  Asch,  Dingkuhn,  & 
+Becker, 2011). There are potential options for the selection of rice 
+varieties that fit the system and minimize the risk of sterility due 
+to  low  temperatures  towards  the  end  of  the  season.  One  option 
+would be simply using a short-duration variety that will reach phys-
+iological maturity before temperatures drop. In case of early onset 
+of the rainy season, a part of the potential cropping period would 
+
+be lost. Another option would be to use medium-duration rice va-
+rieties that have a relatively high level of cold tolerance that allows 
+them to make full use of the cropping period while minimizing the 
+risk of cold sterility in case temperatures drop early. Using a crop 
+model, such as RIDEV or ORYZA, simulating duration and develop-
+ment using varietal photo-thermal constants would allow choosing 
+a variety targeted for the system even as a function of the onset of 
+rains. However, the simulation of genotypic duration would have to 
+be quite accurate.
+
+The  objective  of  this  study  was  to  investigate  the  effects  of 
+weather during specific development stages on yield and yield com-
+ponents  of  a  large  number  of  rice  genotypes  contrasting  in  crop 
+duration with the aim of widening the management options for va-
+rietal selection to intensify rice cropping in rainfed and temperature 
+limited systems. Ethiopias’ Fogera Plain is used as a case study site 
+representing high altitude rainfed lowland rice production systems.
+
+2 |  MATERIALS AND METHODS
+
+2.1 | Site description and experimental design
+
+A  field  trial  was  conducted  during  the  2016  and  2017  cropping 
+seasons at the Fogera rice research station in Ethiopia, located at 
+11°58'N and 37°41'E and at an altitude of 1,811 m above sea level. 
+Fogera attains unimodal rainfall pattern from June to mid-Septem-
+ber, with a mean annual precipitation of 1,200 mm and mean annual 
+minimum  and  maximum  temperatures  of  13°C  and  25°C,  respec-
+tively. The soil is a vertisol with a clay content of 71.25%. It is slightly 
+acidic (pH 5.90) and the 20 cm soil horizon contains 0.22% total N, 
+12.64 ppm available P (Olsen), 0.93 cmol (+) exchangeable K·kg·soil−1, 
+3% organic carbon and 52.9 cmol (+) kg−1 CEC (Tadesse, Dechassa, 
+Bayu, & Gebeyehu, 2013).
+
+The  experiment  was  laid  out  in  a  randomized  complete  block 
+design with three replications. Plot size was 3 x 4 m and three to 
+four seeds were dibbled with a 0.25 m by 0.15 m spacing between 
+and within rows, respectively. Sowing depended on the available soil 
+moisture and was done on 15.07.2016 and on 05.07.2017. After two 
+weeks, germinated seeds were thinned to one seedling per hill. As 
+per the recommendation, Urea (46% N) and Diammonium Phosphate 
+(DAP) (46% P2O5; 18% N) at the rate of 69 kg N and 23 kg P per ha 
+were applied. One third of N along with the entirety of the P fertil-
+izer was applied as basal application before sowing. The remaining 
+thirds of N were applied as top-dressing at tillering and at panicle ini-
+tiation (PI), respectively. Weeding was done three times, at tillering, 
+PI and late booting stage.
+
+2.2 | Genotypes
+
+Thirty  genotypes  were  included  in  the  study.  Three  genotypes 
+(X-Jigna,  Ediget  and  Hibir)  were  obtained  from  the  Fogera  National 
+
+ABERA Et Al.TA B L E   1  Rice genotypes included in the study
+
+No
+
+Genotype
+
+Type
+
+Source
+
+No
+
+Genotype
+
+Type
+
+Source
+
+No
+
+Genotype
+
+Type
+
+Source
+
+Short (120 to 140 days)
+
+Medium (141 to 160 days)
+
+Long (>160 days)
+
+    |  435
+
+27
+28
+29
+30
+
+FARO−35
+WITA 4
+SIM 2 Sumadel
+Partao
+
+Ind
+Ind
+Ind
+Ind
+
+ARC
+ARC
+ARC
+ARC
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+
+Machapuchre
+Chhomrong
+HS 379
+Duragan
+Merig
+Osmanlik−97
+Kirkpinar
+Demir
+Ediget
+Diamante
+Hibir
+Manjamena
+X-Jigna
+SCRID
+
+Jap
+Jap
+Ind
+Jap
+Jap
+Jap
+Ind
+Jap
+Jap
+Ind
+Jap
+Ind
+Jap
+Ind
+
+ARC
+ARC
+ARC
+ARC
+ARC
+ARC
+ARC
+ARC
+NRRTC
+ARC
+NRRTC
+ARC
+NRRTC
+ARC
+
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+
+Soameva (Soa)
+Yun-Keng (YK)
+Zong-Eng (ZE)
+NERICA L−19 (NL19)
+Mailaka (Mai)
+Kelimamokatra (Kel)
+IR64
+FOFIFA 160 (F160)
+B6144F (B61)
+Silewah (Sil)
+Padisashal (Pad)
+Makalioka 34 (MK34)
+
+Ind
+Jap
+Jap
+Ind
+Jap
+Jap
+Ind
+Ind
+Jap
+Jap
+Ind
+Ind
+
+ARC
+ARC
+ARC
+ARC
+ARC
+ARC
+ARC
+ARC
+ARC
+ARC
+ARC
+ARC
+
+Abbreviations: ARC, Africa Rice Center; DAS, days after sowing; Ind, indica; Jap, japonica; NRRTC, Fogera National Rice Research and Training Center.
+
+Rice Research and Training Center (NRRTC). X-Jigna is a popular geno-
+type in the area for more than 30 years (Gebey, Berhe, Hoekstra, & 
+Alemu, 2012). Ediget and Hibir are recently released varieties by the 
+national rice research system (MoARD, 2011, 2013). The remaining 27 
+
+genotypes, both indica and japonica types, have contrasting durations 
+to maturity and varying levels of tolerance for cold and were obtained 
+from  AfricaRice.  Table  1  shows  all  genotypes  grouped  by  duration: 
+short 120 to 140 days, medium 141 to 160 days and long >160 days.
+
+F I G U R E   1  Daily weather data from 
+June to December 2016 and 2017 in 
+Fogera, Ethiopia. FL, flowering; PI, panicle 
+initiation; PM, physiological maturity of 
+three representative genotypes [Colour 
+figure can be viewed at wileyonlinelibrary.
+com]
+
+ABERA Et Al.436  |    
+
+TA B L E   2  Number of days from sowing to the respective development stage of thirty genotypes in Fogera Plain in 2016 and 2017
+
+Emergence 
+(50%)
+
+Panicle initiation
+
+Booting (50%)
+
+Heading (50%)
+
+Flowering (85%)
+
+Physiological 
+Maturity
+
+2016
+
+2017
+
+2016
+
+2017
+
+2016
+
+2017
+
+2016
+
+2017
+
+2016
+
+2017
+
+2016
+
+2017
+
+12
+10
+11
+11
+11
+12
+14
+11
+11
+11
+14
+13
+12
+14
+14
+12
+15
+13
+15
+14
+14
+15
+14
+16
+15
+15
+14
+14
+16
+14
+
+11
+10
+11
+10
+10
+11
+10
+10
+12
+11
+12
+12
+14
+14
+10
+15
+14
+13
+14
+14
+16
+13
+12
+13
+12
+14
+12
+13
+15
+12
+
+65
+67
+66
+65
+67
+68
+66
+67
+68
+70
+70
+72
+74
+73
+81
+85
+87
+89
+91
+88
+98
+97
+89
+91
+99
+102
+103
+104
+107
+103
+
+66
+68
+67
+68
+70
+70
+66
+71
+69
+71
+73
+72
+75
+75
+83
+81
+82
+84
+91
+90
+92
+94
+88
+90
+93
+96
+95
+97
+103
+99
+
+78
+81
+78
+78
+79
+80
+81
+81
+82
+84
+85
+85
+87
+91
+97
+102
+104
+105
+105
+101
+107
+109
+108
+109
+114
+116
+117
+120
+121
+118
+
+79
+80
+80
+82
+85
+84
+80
+86
+83
+86
+88
+85
+92
+90
+96
+95
+96
+103
+105
+107
+102
+106
+100
+107
+104
+107
+114
+114
+116
+112
+
+90
+92
+91
+92
+92
+94
+95
+93
+96
+97
+98
+96
+100
+104
+110
+116
+118
+116
+120
+119
+120
+122
+124
+122
+127
+127
+133
+140
+139
+140
+
+89
+88
+91
+93
+93
+93
+93
+96
+93
+95
+97
+96
+103
+103
+107
+112
+113
+114
+117
+119
+121
+117
+114
+121
+118
+121
+124
+127
+133
+129
+
+94
+95
+95
+96
+96
+98
+97
+97
+100
+101
+102
+101
+104
+108
+116
+121
+121
+122
+124
+123
+128
+125
+128
+128
+133
+132
+137
+144
+143
+145
+
+92
+91
+96
+97
+97
+97
+97
+100
+97
+99
+102
+99
+106
+107
+110
+116
+117
+119
+122
+123
+125
+121
+117
+125
+121
+124
+128
+131
+139
+134
+
+119
+120
+124
+121
+124
+124
+130
+126
+128
+128
+129
+137
+140
+132
+145
+156
+155
+162
+158
+156
+162
+158
+163
+157
+167
+168
+172
+176
+176
+179
+
+122
+126
+128
+126
+127
+131
+132
+132
+133
+135
+132
+132
+140
+134
+146
+153
+154
+156
+156
+156
+159
+152
+154
+158
+158
+157
+171
+174
+172
+170
+
+Genotypes
+
+Machapuchre
+Chhomrong
+HS 379
+Duragan
+Merig
+Osmanlik−97
+Kirkpinar
+Ediget
+Demir
+Diamante
+Hibir
+Manjamena
+X-Jigna
+SCRID
+Soameva
+Yun-Keng
+Zong-Eng
+NERICA L−19
+Mailaka
+Kelimamokatra
+IR64
+FOFIFA 160
+B6144F
+Silewah
+Padisashal
+Makalioka 34
+FARO−35
+WITA 4
+SIM 2 Sumadel
+Partao
+
+2.3 | Data collection and analysis
+
+Daily mean, minimum, and maximum temperature, rainfall, radiation 
+and relative air humidity were recorded at 2 m height during the ex-
+perimental period with a Delta-T WP-GP1 weather station installed 
+next to the experimental fields (Figure 1).
+
+The phenological development of each genotype was closely mon-
+itored in both seasons. Grain yield was taken from a central 3.15 m2 
+area of each plot. Number of tillers per hill (TPH), percentage of pro-
+ductive tillers (PPT), spikelets per panicle (SPP), percentage of fertile 
+spikelets  (PFS)  and  thousand  grain  weight  (TGW)  were  determined 
+from the central nine hills of the yield area. Data on yield and yield 
+components were subjected to analysis of variance (ANOVA) using the 
+
+statistical analysis system version 9.4 (SAS Institute Inc.). Means were 
+compared using Tukey's test.
+
+3 |  RESULTS
+
+3.1 | Genotypic phenological responses
+
+Tested genotypes showed variable phenological development and dif-
+fered in their duration to maturity from 120 up to 176 days (d) (Table 2). 
+Following duration to physiological maturity, genotypes were catego-
+rized into three groups: 14 were short-duration (120 to 140 d), 12 were 
+medium-duration (141 to 170 d) and four were long-duration (171 to 
+
+ABERA Et Al.    |  437
+
+180 d) (Table 2). The earlier rains in 2017 allowed for sowing ten days 
+earlier than in 2016. Depending on the duration group, genotypes re-
+sponded contrastingly to the shift in planting dates. This difference in 
+phenological development between the duration groups became evi-
+dent at PI. For the short-duration genotypes, earlier sowing increased 
+the duration from emergence to PI and all following phenophases by 
+up to 7 days (maturity), but for the medium- and long-duration geno-
+types it shortened the duration from emergence to PI and all following 
+phenophases by up to 11 days (Figure 2).
+
+To analyse if the differences in duration between the two years 
+resulted from annual differences in weather or from the shift in sow-
+ing date, monthly weather data for both years were statistically com-
+pared (Table 3). In both years, the period between emergence and 
+PI was between July and October for all three groups of genotypes. 
+During  this  period,  mean  temperature  slightly  increased,  resulting 
+from a constant minimum and an increasing maximum temperature. 
+Radiation sharply increased in September at the end of the rainy sea-
+son, while a clear drop in air humidity became evident in October. 
+Between July and October, mean monthly weather hardly differed 
+between the two years. Only in July, Tmax was higher in 2017, and in 
+
+October, VPD was significantly lower in 2017. The largest difference 
+between  years  was  recorded  in  November,  when  it  was  relatively 
+cool and dry, and Tmin dropped quickly in 2016 (also see Figure 1). 
+Over the entire cropping period, 2017 was slightly warmer, cloudier 
+and more humid.
+
+Depending  on  the  crop  duration,  varieties  were  exposed  to 
+different  climatic  conditions.  Further,  early  or  late  sowing  led  to 
+changes in weather conditions for the crop, in addition to the nat-
+urally occurring differences in weather parameters between 2016 
+and 2017. Due to seasonality, between emergence and PI, short-du-
+ration varieties were exposed to lower mean and maximum tempera-
+tures, lower radiation, and higher air humidity than medium- and, to 
+an even greater extent, than long-duration varieties (Figure 3). After 
+early sowing in 2017, short-duration varieties were subjected to a 
+higher mean temperature during vegetative stage, while long-dura-
+tion varieties were subjected to a lower maximum temperature and 
+higher air humidity than after late sowing in 2016. Independent of 
+genotypic crop duration, in 2017, plants was subjected to a higher 
+minimum  temperature  and  lower  radiation  during  the  vegetative 
+stage than in 2016.
+
+3.2 | Yield and yield components
+
+After  late  sowing  in  2016,  grain  yield  was  highest  for  Yun-Keng 
+(7.2 t/ha) and lowest for SIM 2 Sumadel and Partao (both 0.2 t/ha) 
+(Table 4). Average yield of the short-duration varieties in 2016 was 
+5.8 t/ha and thus significantly higher than yield of the medium- and 
+long-duration varieties with 3.6 and 0.5 t ha, respectively. After early 
+sowing  in  2017,  the  yield  was  highest  for  Zong-Eng  and  Mailaka 
+(both 6.6 t/ha), and lowest for SIM 2 Sumadel (2.4 t/ha). Average 
+yield of the medium-duration varieties in 2017 (5.2 t/ha) was signifi-
+cantly higher than of the short- and long-duration varieties with 4.2 
+and 2.9 t/ha, respectively. Early sowing in 2017 led to a significantly 
+lower average yield of the short-duration varieties and a significantly 
+higher average yield of the medium- and long-duration varieties. The 
+difference in grain yield between 2016 and 2017 for the different 
+varieties  was  positively  correlated  with  their  respective  duration 
+from sowing to maturity (Figure 4).
+
+F I G U R E   2  Difference in duration from sowing to emergence, 
+sowing to panicle initiation (PI), sowing to booting, sowing to 
+flowering and sowing to physiological maturity between 2016 
+and 2017 for 30 varieties depending on their duration sowing to 
+physiological maturity
+
+TA B L E   3  Mean monthly weather parameters between July and December in 2016 and 2017
+
+Tmean [°C]
+
+Tmin [°C]
+
+Tmax [°C]
+
+Radiation [W/m2]
+
+RHmin [%]
+
+VPD [kPa]
+
+2016
+
+2017
+
+2016
+
+2017
+
+2016
+
+2017
+
+2016
+
+2017
+
+2016
+
+2017
+
+2016
+
+2017
+
+Jul
+Aug
+Sep
+Oct
+Nov
+Dec
+Mean
+
+18.2 b
+18.3 b
+18.8 b
+19.6 a
+17.0 cB
+17.5 cA
+18.2 B
+
+18.8 ab
+18.2 b
+19.2 ab
+19.5 ab
+18.1 bA
+16.7 cB
+18.4 A
+
+14.7 a
+14.7 a
+14.6 a
+14.1 a
+8.6 bB
+8.4 b
+12.5 B
+
+14.9 a
+14.8 a
+15.0 a
+14.5 a
+10.8 bA
+8.0 c
+13.0 A
+
+23.1 dB
+22.7 d
+24.2 c
+25.9 b
+26.4 ab
+26.9 a
+24.9
+
+24.1 cA
+22.6 d
+24.1 c
+25.2 b
+26.0 ab
+26.3 a
+24.7
+
+196 c
+215 bc
+241 ab
+254 a
+249 a
+243 ab
+233 A
+
+193 b
+194 b
+243 a
+232 a
+229 a
+230 a
+220 B
+
+55.7 ab
+58.5 a
+52.4 b
+37.5 c
+21.7 dB
+17.6 d
+40.6 B
+
+51.3 b
+59.0 a
+55.0 ab
+43.5 c
+28.5 dA
+18.5 e
+42.6 A
+
+0.70 de
+0.63 e
+0.77 d
+1.10 cA
+1.42 bA
+1.59 a
+1.04 A
+
+0.80 d
+0.63 e
+0.74 de
+0.97 cB
+1.28 bB
+1.51 a
+0.99 B
+
+Note: Small letters indicate significance between months, capital letters indicate significance between years, both at p < .05.
+
+ABERA Et Al.438  |    
+
+F I G U R E   3  Average weather conditions 
+in 2016 and 2017 between emergence 
+(EM) and panicle initiation (PI) for 30 
+varieties as related to their duration 
+to physiological maturity. ***, *, NS: 
+significant at p-value ≤.001, ≤.05, non-
+significant, respectively
+
+Number of tillers per hill was highest in IR64 with 18.2 and 14.8, 
+while it was lowest in Silewah with 9.4 and 6.6 in 2016 and 2017, respec-
+tively (Table 4). Late sowing in 2016 resulted with 12.4 in a significantly 
+higher tiller number than in 2017 with 10.8 tillers. The percentage of 
+productive tiller (PPT) varied from 97.3% in Ediget to 83.1% in IR64. 
+While in the short-duration group PPT did not differ between years, 
+with an average of 92.9%, PPT was significantly higher in 2017 for the 
+medium- and long-duration group, with 97.5% and 95.4%, respectively, 
+than in 2016, with 83.8% and 81.9%, respectively. The number of spike-
+lets per panicle (SPP) ranged from 59.7 in Chhomrong to 144.6 in Yun-
+Keng. Early sowing in 2017 led to a severely reduced number of SPP 
+for the short-duration group with 100.1 SPP in 2016 versus 65.1 SPP 
+in 2017. Less pronounced, but still significant was the reduction of SPP 
+for the medium-duration group with 123.7 SPP in 2016 versus 107.8 
+SPP in 2017. Average SPP did not differ between years in the long-du-
+ration group, with 112.6 and 111.9 SPP in 2016 and 2017, respectively. 
+The percentage of fertile spikelet (PFS) ranged from 27.8% in WITA 4 
+to 96.3% in Chhomrong. Whereas in the short-duration group, average 
+
+PFS did not differ between years, with 93.8% and 89.1% in 2016 and 
+2017,  respectively,  it  was  significantly  higher  in  2017  for  the  other 
+groups (Figure 5). In the medium-duration group, PFS increased from 
+65.7% in 2016 to 88.7% in 2017, and from 4.7% in 2016 to 62.8% in 
+2017 in the long-duration group. In 2016, two varieties from the medi-
+um-duration group, FOFIFA 160 and Silewah, displayed a high tolerance 
+to low temperatures (Figure 5). Thousand grain weight (TGW – Table 4) 
+ranged from 22.5 g in SIM 2 Sumadel to 34.0 g in Ediget. TGW was 
+highest in the short-duration group with 30.9 g in 2016 and 30.0 g in 
+2017, followed by the medium-duration group with 25.7 g in 2016 and 
+27.7 g in 2017 and finally, by the long-duration group with 24.8 g in 2016 
+and 25.1 g in 2017. Average TGW by group only differed significantly 
+between years in the medium-duration group.
+
+To evaluate cold tolerance of the 30 genotypes in the two seasons, 
+spikelet  sterility  was  regressed  versus  minimum  temperature  during 
+the  critical  cold-sensitive  phase  one  week  before  and  after  booting 
+(Figure 5). Sterility levels in 2017 (early planting) remained low and min-
+imum temperatures during booting never decreased below 14°C. In 
+
+ABERA Et Al.d
+c
+b
+a
+0
+0
+3
+
+.
+
+c
+b
+a
+8
+1
+3
+
+.
+
+d
+c
+b
+3
+9
+2
+
+.
+
+d
+c
+b
+a
+5
+0
+3
+
+.
+
+b
+a
+2
+
+.
+
+3
+3
+
+d
+c
+b
+a
+3
+1
+3
+
+.
+
+d
+c
+b
+7
+9
+2
+
+.
+
+e
+d
+6
+7
+2
+
+.
+
+.
+
+a
+7
+3
+3
+
+d
+c
+9
+8
+2
+
+.
+
+d
+c
+b
+a
+4
+1
+3
+
+.
+
+.
+
+e
+9
+4
+2
+
+e
+d
+6
+7
+2
+
+.
+
+d
+c
+b
+a
+1
+0
+3
+
+.
+
+.
+
+a
+5
+1
+3
+
+b
+a
+9
+0
+3
+
+.
+
+d
+c
+b
+a
+9
+8
+2
+
+.
+
+e
+d
+4
+5
+2
+
+.
+
+e
+d
+4
+5
+2
+
+.
+
+e
+d
+c
+7
+6
+2
+
+.
+
+e
+d
+c
+b
+a
+2
+
+.
+
+8
+2
+
+e
+d
+c
+b
+4
+7
+2
+
+.
+
+e
+d
+4
+5
+2
+
+.
+
+c
+b
+a
+5
+9
+2
+
+.
+
+e
+d
+c
+b
+a
+7
+8
+2
+
+.
+
+.
+
+e
+9
+4
+2
+
+.
+
+a
+9
+7
+2
+
+b
+a
+1
+4
+2
+
+.
+
+)
+s
+e
+u
+n
+i
+t
+n
+o
+C
+
+(
+
+a
+2
+
+.
+
+3
+3
+
+b
+a
+3
+2
+3
+
+.
+
+c
+b
+a
+8
+1
+3
+
+.
+
+b
+a
+7
+2
+3
+
+.
+
+d
+c
+b
+3
+0
+3
+
+.
+
+b
+a
+8
+1
+3
+
+.
+
+.
+
+a
+1
+3
+3
+
+.
+
+d
+1
+8
+2
+
+.
+
+a
+2
+4
+3
+
+d
+c
+3
+9
+2
+
+.
+
+b
+a
+0
+2
+3
+
+.
+
+.
+
+e
+4
+4
+2
+
+d
+c
+b
+3
+0
+3
+
+.
+
+.
+
+d
+7
+8
+2
+
+.
+
+c
+0
+6
+2
+
+.
+
+a
+2
+1
+3
+
+b
+a
+8
+
+.
+
+8
+2
+
+.
+
+e
+2
+1
+2
+
+d
+c
+4
+4
+2
+
+.
+
+d
+c
+0
+5
+2
+
+.
+
+e
+d
+4
+3
+2
+
+.
+
+d
+c
+7
+4
+2
+
+.
+
+.
+
+e
+5
+1
+2
+
+.
+
+b
+6
+8
+2
+
+b
+a
+3
+0
+3
+
+.
+
+e
+d
+3
+3
+2
+
+.
+
+.
+
+b
+6
+4
+2
+
+b
+a
+7
+4
+2
+
+.
+
+    |  439
+
+c
+b
+a
+4
+4
+9
+
+.
+
+c
+b
+a
+1
+3
+9
+
+.
+
+.
+
+h
+9
+9
+7
+
+f
+e
+d
+2
+
+.
+
+8
+8
+
+e
+d
+c
+b
+5
+1
+9
+
+.
+
+f
+e
+7
+7
+8
+
+.
+
+.
+
+h
+3
+9
+7
+
+d
+c
+b
+7
+1
+9
+
+.
+
+b
+a
+1
+5
+9
+
+.
+
+e
+d
+c
+0
+1
+9
+
+.
+
+h
+g
+5
+
+.
+
+2
+8
+
+e
+d
+c
+b
+6
+1
+9
+
+.
+
+g
+f
+1
+5
+8
+
+.
+
+.
+
+a
+7
+6
+9
+
+d
+c
+b
+5
+3
+9
+
+.
+
+b
+a
+4
+7
+9
+
+.
+
+.
+
+a
+8
+7
+9
+
+c
+b
+a
+0
+4
+9
+
+.
+
+f
+e
+4
+7
+8
+
+.
+
+e
+d
+0
+0
+9
+
+.
+
+f
+
+.
+
+0
+6
+8
+
+e
+d
+c
+0
+1
+9
+
+.
+
+g
+2
+
+.
+
+6
+7
+
+d
+c
+0
+3
+9
+
+.
+
+.
+
+g
+7
+2
+7
+
+f
+
+.
+
+5
+5
+8
+
+.
+
+a
+7
+8
+6
+
+.
+
+c
+3
+3
+5
+
+.
+
+a
+7
+6
+9
+
+.
+
+a
+4
+9
+9
+
+c
+b
+a
+7
+3
+9
+
+.
+
+c
+b
+a
+1
+5
+9
+
+.
+
+c
+b
+a
+4
+1
+9
+
+.
+
+b
+a
+1
+6
+9
+
+.
+
+c
+b
+a
+6
+2
+9
+
+.
+
+c
+b
+a
+4
+4
+9
+
+.
+
+.
+
+a
+6
+6
+9
+
+c
+b
+a
+2
+
+.
+
+3
+9
+
+c
+b
+a
+8
+4
+9
+
+.
+
+.
+
+c
+6
+7
+8
+
+c
+b
+4
+8
+8
+
+.
+
+c
+b
+a
+8
+3
+9
+
+.
+
+.
+
+a
+7
+1
+9
+
+.
+
+a
+1
+1
+9
+
+.
+
+a
+6
+2
+9
+
+.
+
+a
+6
+0
+9
+
+c
+b
+1
+9
+7
+
+.
+
+b
+a
+7
+4
+8
+
+.
+
+.
+
+d
+4
+9
+4
+
+.
+
+c
+8
+2
+7
+
+f
+
+4
+7
+
+.
+
+.
+
+a
+7
+2
+9
+
+f
+
+8
+7
+
+.
+
+.
+
+e
+1
+9
+2
+
+.
+
+a
+5
+1
+1
+
+b
+2
+
+.
+
+2
+
+e
+d
+c
+0
+4
+5
+
+.
+
+e
+d
+c
+8
+4
+5
+
+.
+
+.
+
+e
+9
+3
+4
+
+d
+c
+b
+6
+2
+6
+
+.
+
+c
+b
+6
+1
+7
+
+.
+
+e
+d
+c
+7
+5
+5
+
+.
+
+e
+d
+7
+8
+4
+
+.
+
+e
+d
+c
+4
+5
+5
+
+.
+
+e
+d
+c
+7
+5
+5
+
+.
+
+d
+c
+b
+3
+2
+6
+
+.
+
+.
+
+b
+4
+5
+7
+
+a
+8
+
+.
+
+8
+0
+1
+
+e
+d
+7
+1
+5
+
+.
+
+.
+
+a
+7
+0
+1
+1
+
+e
+d
+7
+2
+9
+
+.
+
+.
+
+c
+b
+6
+0
+2
+1
+
+c
+b
+5
+
+.
+
+2
+2
+1
+
+.
+
+a
+9
+4
+4
+1
+
+.
+
+d
+c
+9
+5
+0
+1
+
+.
+
+b
+3
+4
+2
+1
+
+.
+
+e
+1
+0
+8
+
+e
+d
+7
+1
+9
+
+.
+
+e
+d
+2
+
+.
+
+0
+9
+
+e
+d
+0
+7
+9
+
+.
+
+d
+3
+
+.
+
+8
+9
+
+.
+
+b
+7
+5
+2
+1
+
+.
+
+a
+8
+7
+2
+1
+
+.
+
+b
+6
+8
+9
+
+)
+g
+(
+ 
+
+W
+G
+T
+
+)
+
+%
+
+(
+ 
+
+S
+F
+P
+
+7
+1
+0
+2
+
+6
+1
+0
+2
+
+7
+1
+0
+2
+
+6
+1
+0
+2
+
+7
+1
+0
+2
+
+P
+P
+S
+
+6
+1
+0
+2
+
+d
+c
+5
+5
+9
+
+.
+
+.
+
+e
+6
+4
+6
+
+d
+c
+6
+4
+9
+
+.
+
+d
+c
+b
+2
+
+.
+
+2
+0
+1
+
+d
+c
+b
+6
+0
+0
+1
+
+.
+
+d
+c
+b
+4
+9
+9
+
+.
+
+d
+c
+5
+
+.
+
+8
+8
+
+c
+b
+4
+0
+1
+
+d
+c
+b
+2
+
+.
+
+6
+9
+
+d
+c
+b
+9
+7
+9
+
+.
+
+e
+d
+9
+1
+8
+
+.
+
+d
+c
+b
+5
+9
+9
+
+.
+
+.
+
+b
+5
+7
+1
+1
+
+.
+
+a
+0
+0
+6
+1
+
+.
+
+d
+9
+6
+1
+1
+
+a
+5
+
+.
+
+8
+6
+1
+
+.
+
+b
+a
+2
+1
+6
+1
+
+.
+
+d
+c
+5
+4
+2
+1
+
+.
+
+d
+7
+7
+1
+1
+
+.
+
+d
+c
+0
+3
+2
+1
+
+.
+
+d
+6
+0
+1
+1
+
+.
+
+d
+7
+6
+0
+1
+
+.
+
+d
+c
+3
+5
+2
+1
+
+.
+
+c
+b
+1
+2
+4
+1
+
+.
+
+e
+1
+2
+8
+
+.
+
+d
+8
+5
+0
+1
+
+.
+
+b
+a
+0
+1
+1
+1
+
+.
+
+a
+7
+3
+2
+1
+
+)
+
+%
+
+(
+ 
+
+T
+P
+P
+
+7
+1
+0
+2
+
+6
+1
+0
+2
+
+7
+1
+0
+2
+
+c
+b
+a
+0
+4
+9
+
+.
+
+c
+b
+a
+5
+3
+9
+
+.
+
+.
+
+e
+5
+7
+8
+
+e
+d
+c
+7
+1
+9
+
+.
+
+.
+
+a
+7
+7
+9
+
+e
+d
+c
+6
+9
+8
+
+.
+
+e
+d
+c
+2
+
+.
+
+0
+9
+
+e
+d
+1
+8
+8
+
+.
+
+b
+a
+4
+6
+9
+
+.
+
+.
+
+a
+8
+6
+9
+
+d
+c
+b
+0
+2
+9
+
+.
+
+e
+d
+c
+5
+0
+9
+
+.
+
+d
+c
+b
+2
+
+.
+
+2
+9
+
+.
+
+a
+8
+6
+9
+
+.
+
+a
+0
+8
+9
+
+a
+0
+0
+1
+
+.
+
+a
+4
+9
+9
+
+.
+
+a
+9
+8
+9
+
+a
+0
+0
+1
+
+a
+0
+0
+1
+
+.
+
+b
+1
+3
+9
+
+.
+
+a
+1
+9
+9
+
+.
+
+b
+3
+0
+9
+
+a
+0
+0
+1
+
+.
+
+b
+5
+1
+9
+
+.
+
+a
+3
+9
+9
+
+.
+
+a
+0
+8
+9
+
+.
+
+b
+5
+5
+8
+
+.
+
+a
+6
+6
+9
+
+.
+
+a
+7
+7
+9
+
+.
+
+a
+3
+5
+9
+
+.
+
+a
+4
+5
+9
+
+.
+
+c
+4
+8
+8
+
+c
+b
+5
+9
+8
+
+.
+
+.
+
+a
+4
+5
+9
+
+a
+2
+
+.
+
+8
+9
+
+a
+2
+
+.
+
+8
+9
+
+b
+a
+9
+4
+9
+
+.
+
+.
+
+c
+7
+8
+8
+
+.
+
+d
+9
+0
+8
+
+.
+
+c
+4
+8
+8
+
+.
+
+a
+8
+5
+9
+
+.
+
+g
+7
+2
+7
+
+.
+
+a
+1
+4
+9
+
+c
+b
+a
+4
+9
+8
+
+.
+
+f
+e
+5
+1
+8
+
+.
+
+b
+a
+0
+1
+9
+
+.
+
+b
+a
+8
+3
+9
+
+.
+
+.
+
+g
+0
+3
+7
+
+g
+f
+2
+7
+7
+
+.
+
+e
+d
+c
+6
+4
+8
+
+.
+
+d
+c
+b
+2
+
+.
+
+8
+8
+
+g
+f
+7
+6
+7
+
+.
+
+e
+d
+3
+3
+8
+
+.
+
+.
+
+a
+4
+9
+7
+
+.
+
+a
+9
+1
+8
+
+c
+b
+a
+3
+3
+1
+
+.
+
+c
+b
+9
+2
+1
+
+.
+
+f
+e
+d
+2
+
+.
+
+0
+1
+
+.
+
+a
+1
+5
+1
+
+g
+f
+8
+
+.
+
+8
+
+g
+f
+e
+d
+9
+9
+
+.
+
+e
+d
+c
+2
+1
+1
+
+.
+
+b
+a
+8
+3
+1
+
+.
+
+g
+0
+8
+
+.
+
+b
+a
+8
+3
+1
+
+.
+
+g
+f
+e
+4
+9
+
+.
+
+g
+f
+e
+6
+9
+
+.
+
+d
+c
+b
+0
+2
+1
+
+.
+
+g
+f
+5
+
+.
+
+8
+
+e
+d
+c
+7
+8
+
+.
+
+e
+d
+1
+8
+
+.
+
+d
+c
+b
+7
+9
+
+.
+
+.
+
+b
+5
+1
+1
+
+c
+b
+8
+0
+1
+
+.
+
+.
+
+b
+4
+1
+1
+
+.
+
+a
+8
+4
+1
+
+.
+
+b
+6
+1
+1
+
+c
+b
+6
+0
+1
+
+.
+
+e
+6
+6
+
+.
+
+d
+c
+8
+
+.
+
+8
+
+.
+
+b
+8
+1
+1
+
+b
+a
+2
+1
+1
+
+.
+
+b
+a
+4
+1
+1
+
+.
+
+ 
+
+7
+1
+0
+2
+d
+n
+a
+ 
+6
+1
+0
+2
+n
+
+ 
+
+i
+ 
+
+l
+
+i
+
+n
+a
+P
+ 
+a
+r
+e
+g
+o
+F
+n
+
+ 
+
+i
+
+ 
+
+i
+ 
+s
+e
+p
+y
+t
+o
+n
+e
+g
+d
+e
+d
+u
+t
+s
+ 
+f
+o
+ 
+s
+t
+n
+e
+n
+o
+p
+m
+o
+c
+ 
+d
+e
+
+l
+
+H
+P
+T
+
+6
+1
+0
+2
+
+d
+c
+b
+a
+0
+3
+1
+
+.
+
+f
+d
+c
+5
+0
+1
+
+.
+
+.
+
+a
+2
+5
+1
+
+f
+
+5
+
+.
+
+8
+
+f
+
+1
+9
+
+.
+
+f
+d
+c
+9
+0
+1
+
+.
+
+f
+
+.
+
+7
+8
+
+.
+
+a
+1
+5
+1
+
+f
+
+2
+9
+
+.
+
+c
+b
+a
+0
+3
+1
+
+.
+
+b
+a
+0
+4
+1
+
+.
+
+.
+
+a
+0
+5
+1
+
+d
+c
+b
+9
+1
+1
+
+.
+
+f
+d
+4
+0
+1
+
+.
+
+.
+
+b
+4
+4
+1
+
+c
+4
+9
+
+.
+
+c
+b
+9
+1
+1
+
+.
+
+c
+2
+
+.
+
+0
+1
+
+.
+
+b
+9
+3
+1
+
+.
+
+b
+9
+2
+1
+
+a
+2
+
+.
+
+8
+1
+
+.
+
+b
+5
+3
+1
+
+c
+b
+9
+1
+1
+
+.
+
+c
+4
+9
+
+.
+
+.
+
+c
+1
+0
+1
+
+.
+
+a
+4
+7
+1
+
+.
+
+a
+8
+4
+1
+
+.
+
+b
+0
+2
+1
+
+7
+1
+0
+2
+
+6
+1
+0
+2
+
+)
+a
+h
+/
+t
+(
+ 
+
+d
+
+l
+
+i
+
+e
+Y
+
+b
+a
+3
+5
+
+.
+
+e
+d
+1
+4
+
+.
+
+h
+g
+f
+3
+3
+
+.
+
+e
+d
+2
+4
+
+.
+
+d
+c
+4
+4
+
+.
+
+g
+f
+e
+7
+3
+
+.
+
+h
+0
+3
+
+.
+
+c
+b
+a
+2
+5
+
+.
+
+c
+b
+8
+4
+
+.
+
+f
+e
+d
+9
+3
+
+.
+
+d
+c
+4
+4
+
+.
+
+a
+6
+5
+
+.
+
+h
+g
+3
+3
+
+.
+
+e
+d
+0
+4
+
+.
+
+b
+a
+1
+6
+
+.
+
+a
+4
+6
+
+.
+
+a
+6
+6
+
+.
+
+c
+b
+5
+5
+
+.
+
+a
+6
+6
+
+.
+
+a
+3
+6
+
+.
+
+e
+4
+4
+
+.
+
+e
+5
+4
+
+.
+
+d
+c
+1
+5
+
+.
+
+f
+
+f
+
+3
+3
+
+.
+
+8
+2
+
+.
+
+e
+d
+7
+4
+
+.
+
+a
+2
+
+.
+
+3
+
+b
+a
+8
+2
+
+.
+
+d
+c
+b
+9
+5
+
+.
+
+c
+b
+a
+2
+
+.
+
+6
+
+f
+e
+0
+5
+
+.
+
+e
+d
+c
+6
+5
+
+.
+
+f
+e
+d
+c
+5
+5
+
+.
+
+c
+b
+a
+1
+6
+
+.
+
+f
+
+8
+4
+
+.
+
+a
+7
+6
+
+.
+
+e
+d
+c
+7
+5
+
+.
+
+d
+c
+b
+8
+5
+
+.
+
+b
+a
+5
+
+.
+
+6
+
+e
+d
+c
+7
+5
+
+.
+
+d
+c
+b
+9
+5
+
+.
+
+f
+e
+d
+4
+5
+
+.
+
+b
+9
+5
+
+.
+
+a
+2
+7
+
+.
+
+a
+8
+6
+
+.
+
+e
+9
+2
+
+.
+
+d
+c
+9
+3
+
+.
+
+c
+6
+4
+
+.
+
+f
+
+.
+
+7
+1
+
+d
+7
+3
+
+.
+
+g
+9
+0
+
+.
+
+d
+c
+1
+4
+
+.
+
+g
+5
+0
+
+.
+
+f
+
+6
+1
+
+.
+
+a
+0
+1
+
+.
+
+b
+a
+4
+0
+
+.
+
+i
+
+ 
+
+y
+d
+n
+a
+ 
+d
+e
+Y
+ 
+4
+
+i
+
+l
+
+ 
+
+E
+L
+B
+A
+T
+
+e
+r
+h
+c
+u
+p
+a
+h
+c
+a
+M
+
+g
+n
+o
+r
+m
+o
+h
+h
+C
+
+n
+o
+i
+t
+a
+r
+u
+d
+ 
+t
+r
+o
+h
+S
+
+s
+e
+p
+y
+t
+o
+n
+e
+G
+
+7
+9
+−
+k
+
+i
+l
+
+n
+a
+m
+s
+O
+
+i
+
+r
+a
+n
+p
+k
+r
+i
+K
+
+e
+t
+n
+a
+m
+a
+D
+
+i
+
+r
+i
+b
+H
+
+i
+
+a
+n
+e
+m
+a
+n
+a
+M
+
+j
+
+a
+n
+g
+
+i
+J
+-
+X
+
+I
+
+D
+R
+C
+S
+
+r
+i
+
+m
+e
+D
+
+t
+e
+g
+d
+E
+
+i
+
+9
+7
+3
+S
+H
+
+ 
+
+n
+a
+g
+a
+r
+u
+D
+
+g
+
+i
+r
+e
+M
+
+n
+o
+i
+t
+a
+r
+u
+d
+m
+u
+d
+e
+M
+
+ 
+
+i
+
+a
+v
+e
+m
+a
+o
+S
+
+g
+n
+e
+K
+-
+n
+u
+Y
+
+g
+n
+E
+-
+g
+n
+o
+Z
+
+ 
+
+9
+1
+−
+L
+A
+C
+R
+E
+N
+
+I
+
+a
+r
+t
+a
+k
+o
+m
+a
+m
+
+i
+l
+
+e
+K
+
+0
+6
+1
+A
+F
+
+ 
+
+I
+
+F
+O
+F
+
+4
+6
+R
+
+I
+
+a
+k
+a
+
+l
+i
+
+a
+M
+
+F
+4
+4
+1
+6
+B
+
+h
+a
+w
+e
+
+l
+i
+
+S
+
+4
+3
+ 
+a
+k
+o
+
+i
+l
+
+a
+k
+a
+M
+
+l
+
+a
+h
+s
+a
+s
+i
+d
+a
+P
+
+n
+o
+i
+t
+a
+r
+u
+d
+g
+n
+o
+L
+
+ 
+
+5
+3
+−
+O
+R
+A
+F
+
+ 
+
+4
+A
+T
+W
+
+I
+
+ABERA Et Al.440  |    
+
+7
+1
+0
+2
+
+b
+2
+
+.
+
+2
+2
+
+a
+2
+
+.
+
+6
+2
+
+.
+
+4
+8
+
+*
+*
+
+)
+g
+(
+ 
+
+W
+G
+T
+
+6
+1
+0
+2
+
+.
+
+b
+7
+2
+2
+
+.
+
+a
+1
+7
+2
+
+5
+5
+
+.
+
+*
+*
+
+.
+l
+l
+i
+
+h
+ 
+r
+e
+p
+ 
+s
+r
+e
+
+l
+l
+i
+t
+ 
+,
+
+H
+P
+T
+
+ 
+;
+t
+h
+g
+
+i
+
+7
+1
+0
+2
+
+b
+a
+5
+
+.
+
+6
+6
+
+c
+b
+7
+2
+6
+
+.
+
+8
+2
+
+.
+
+*
+*
+
+)
+
+%
+
+(
+ 
+
+S
+F
+P
+
+6
+1
+0
+2
+
+b
+a
+2
+4
+
+.
+
+b
+9
+0
+
+.
+
+0
+7
+
+.
+
+*
+*
+
+.
+
+b
+1
+9
+0
+1
+
+.
+
+b
+a
+0
+2
+1
+1
+
+7
+1
+0
+2
+
+*
+*
+
+.
+
+4
+2
+1
+
+6
+1
+0
+2
+
+.
+
+b
+9
+4
+9
+
+.
+
+a
+9
+0
+2
+1
+
+*
+*
+
+.
+
+8
+1
+1
+
+P
+P
+S
+
+7
+1
+0
+2
+
+.
+
+a
+0
+9
+9
+
+.
+
+a
+9
+8
+9
+
+.
+
+9
+2
+
+*
+*
+
+)
+
+%
+
+(
+ 
+
+T
+P
+P
+
+6
+1
+0
+2
+
+.
+
+a
+7
+1
+8
+
+.
+
+a
+7
+4
+8
+
+0
+4
+
+.
+
+*
+*
+
+7
+1
+0
+2
+
+.
+
+a
+9
+1
+1
+
+b
+7
+9
+
+.
+
+*
+*
+
+.
+
+1
+2
+1
+
+H
+P
+T
+
+6
+1
+0
+2
+
+.
+
+a
+2
+5
+1
+
+.
+
+b
+1
+1
+1
+
+.
+
+9
+2
+1
+
+*
+*
+
+7
+1
+0
+2
+
+6
+1
+0
+2
+
+)
+a
+h
+/
+t
+(
+ 
+
+d
+
+l
+
+i
+
+e
+Y
+
+b
+4
+2
+
+.
+
+a
+1
+3
+
+.
+
+3
+
+.
+
+8
+
+*
+*
+
+b
+2
+
+.
+
+0
+
+b
+2
+
+.
+
+0
+
+*
+*
+
+.
+
+5
+0
+1
+
+)
+
+d
+e
+u
+n
+i
+t
+n
+o
+C
+ 
+4
+
+(
+
+ 
+
+E
+L
+B
+A
+T
+
+s
+e
+p
+y
+t
+o
+n
+e
+G
+
+l
+
+e
+d
+a
+m
+u
+S
+2
+M
+I
+S
+
+ 
+
+ 
+
+o
+a
+t
+r
+a
+P
+
+)
+
+(
+
+%
+V
+C
+
+r
+p
+
+i
+
+ 
+
+ 
+
+e
+w
+n
+a
+r
+g
+0
+0
+0
+1
+W
+G
+T
+
+ 
+,
+
+,
+
+ 
+;
+
+e
+
+l
+
+c
+i
+n
+a
+p
+ 
+r
+e
+p
+ 
+t
+e
+
+l
+
+i
+
+e
+k
+p
+s
+ 
+,
+
+P
+P
+S
+
+ 
+;
+y
+t
+i
+l
+i
+
+b
+a
+b
+o
+r
+p
+
+ 
+,
+r
+p
+
+ 
+;
+s
+r
+e
+
+l
+l
+i
+t
+ 
+e
+v
+
+ 
+
+i
+t
+c
+u
+d
+o
+r
+p
+ 
+f
+o
+e
+g
+a
+t
+n
+e
+c
+r
+e
+p
+
+ 
+,
+
+T
+P
+P
+
+ 
+;
+t
+e
+
+l
+
+i
+
+e
+k
+p
+s
+ 
+e
+
+ 
+
+l
+i
+t
+r
+e
+f
+ 
+f
+o
+e
+g
+a
+t
+n
+e
+c
+r
+e
+p
+
+ 
+,
+
+S
+F
+P
+
+ 
+;
+
+n
+o
+i
+t
+a
+
+i
+r
+a
+v
+ 
+f
+o
+ 
+t
+n
+e
+
+i
+c
+i
+f
+f
+e
+o
+c
+ 
+,
+
+V
+C
+
+ 
+:
+s
+n
+o
+i
+t
+a
+
+i
+
+v
+e
+r
+b
+b
+A
+
+F I G U R E   4  Difference in grain yield [t/ha] between 2016 and 
+2017 for 30 varieties shown against their duration to physiological 
+maturity
+
+2016, only short-duration genotypes escaped low temperatures, and 
+most medium- and long-duration genotypes suffered from more than 
+80% spikelet sterility. Varieties FOFIFA 160 and Silewah maintained 
+the control level spikelet sterility at temperatures below 12°C during 
+booting, while for cold-sensitive varieties, the threshold for spikelet 
+sterility appeared to be around 13°C during booting.
+
+4 |  DISCUSSION
+
+4.1 | Crop duration
+
+.
+
+5
+0
+
+.
+ 
+
+ 
+
+<
+p
+ 
+t
+a
+ 
+p
+u
+o
+r
+g
+n
+o
+i
+t
+a
+r
+u
+d
+e
+v
+
+ 
+
+ 
+
+i
+t
+c
+e
+p
+s
+e
+r
+ 
+n
+
+ 
+
+i
+ 
+s
+e
+p
+y
+t
+o
+n
+e
+g
+g
+n
+o
+m
+a
+ 
+e
+c
+n
+a
+c
+i
+f
+i
+n
+g
+
+i
+s
+ 
+e
+t
+a
+c
+i
+d
+n
+
+i
+ 
+s
+r
+e
+t
+t
+e
+
+l
+ 
+l
+l
+
+a
+m
+S
+
+ 
+.
+
+1
+0
+
+.
+ 
+
+l
+
+ 
+
+<
+e
+u
+a
+v
+-
+p
+ 
+t
+n
+a
+c
+i
+f
+i
+n
+g
+
+i
+s
+ 
+s
+e
+t
+a
+c
+i
+d
+n
+i
+*
+*
+
+As in all rainfed systems, the sowing date of the rice crop on the 
+Fogera Plain depends on the onset of the rainy season and as a 
+result is variable. Early sowing in 2017, due to an early onset of 
+the rainy season, had different effects on the varieties regarding 
+their  development  in  comparison  with  sowing  2  weeks  later  in 
+2016. While short-duration varieties increased their duration from 
+emergence to PI, most of the medium and all long-duration vari-
+eties decreased their duration after early sowing in 2017. These 
+differences  could  be  either  due  to  different  weather  conditions 
+experienced by the plants resulting from seasonality or explained 
+by different weather conditions between the 2  years. To defini-
+tively answer this question, a phenological model, precisely cali-
+brated for all the varieties used in this study, is needed. However, 
+prevailing  weather  conditions  during  the  cropping  season  were 
+compared and it was found that due to seasonality, short-duration 
+varieties received lower mean and maximum temperatures, while 
+minimum temperatures received depended little on crop duration 
+and seasonality, respectively. The increased cycle length of short-
+duration varieties in 2017 could not be explained with tempera-
+ture,  which  was  slightly  higher  between  emergence  and  PI  than 
+in 2016. For the short-duration genotypes, the only difference in 
+weather between the two years was the lower radiation in 2017, 
+which was a result of both early sowing and differences between 
+
+ABERA Et Al.F I G U R E   5  Relationship between 
+spikelet sterility and the averaged Tmin 
+observed between a week before and 
+after booting (±7 days), individually 
+determined for each genotype and 
+year. The correlation is eye-fitted. For 
+abbreviations of variety names see Table 1
+
+    |  441
+
+years. Stuerz et al. (2020) showed that low radiation can have a 
+prolonging effect on rice development, but they did not find this 
+effect  under  field  conditions.  Since  early  sowing  resulted  in  a 
+longer photoperiod, photoperiodism can also not be excluded in 
+explaining  the  increased  cycle  length.  However,  late  sowing  will 
+result in a larger amount of radiation received by the crop during 
+the vegetative phase, and short-duration varieties seem to profit 
+most of this with regard to crop duration.
+
+Larger differences between years were observed for the medium- 
+and long-duration varieties. In 2017, they grew at a higher Tmin and 
+higher air humidity than in 2016, which could also explain the short-
+ened vegetative phase. However, Tmin never dropped below 13°C 
+during the vegetative phase, which is above the estimated general 
+base temperature of rice, roughly 10°C (Dingkuhn, 1995). Also lower 
+minimum temperatures were compensated by higher maximum tem-
+peratures  in  2017.  Consequently,  for  medium-  and  long-duration 
+varieties, temperature does not explain the observed differences in 
+duration between years very well. Since low air humidity can extend 
+crop duration (Stuerz et al., 2020), the difference in air humidity be-
+tween the two years is the most likely weather parameter explaining 
+the shortened duration in 2017. Since air humidity declined slowly 
+after the end of the rainy season, early sowing could enhance rate 
+of development of medium- and long-duration varieties during the 
+vegetative stage.
+
+4.2 | Yield and yield components
+
+Similar  to  crop  duration,  time  of  sowing  had  different  effects  on 
+short- and medium- long-duration varieties in terms of yield. While 
+early sowing in 2017 led to lower yields for the short-duration va-
+rieties, medium- and long-duration varieties showed higher yields, 
+compared to 2016. Thus, the difference in duration and the differ-
+ence  in  yield  between  the  two  years  were  negatively  correlated 
+(Figure  4).  In  contrast,  in  literature  a  longer  vegetative  phase  and 
+thus a higher biomass production has a positive correlation with crop 
+duration and yield (Chen, Cao, Yin, Huang, & Zou, 2019; Nguyen-Sy, 
+
+Cheng,  Tawaraya,  Sugawara,  &  Kobayashi,  2019;  Vergara,  Tanaka, 
+Lilis, & Puranabhavung, 1966). Therefore, a direct link between the 
+shortened duration and higher yields can be excluded.
+
+Yield  was  positively  correlated  with  the  percentage  of  filled 
+spikelets and the number of productive tillers, and negatively cor-
+related with the number of tillers per hill (Table 3). However, early 
+sowing  in  2017  led  to  less  TPH,  higher  PPT  for  the  medium-  and 
+long-duration varieties, less SPP, which was more pronounced in the 
+short-duration group, a higher PFS in the medium- and long-duration 
+group, and a high TGW in the medium-duration varieties (Figure 6). 
+Lower tiller number could be a result of the lower radiation levels re-
+ceived by the crop in 2017, as shading leads to lower tiller emergence 
+rates (Lafarge et al., 2010). While medium- and long-duration vari-
+eties compensated the lower tiller number in 2017 by a higher PPT, 
+short-duration varieties rather showed lower PPT than TPH, lead-
+ing to a relatively constant panicle number per hill between the two 
+years for all duration groups. However, SPP was lower after early 
+sowing in 2017, with the largest effect seen in short-duration variet-
+ies. Unfortunately, leaf area and biomass were not measured in this 
+experiment, but as low radiation levels primarily affect the carbon 
+gains by the plant (Huang, Shan, Cao, & Zou, 2016), and TPH of the 
+short-duration varieties was little affected in 2017, we hypothesize 
+that leaf area per tiller and dry weight per tiller were lower in 2017 
+than  in  2016,  especially  of  the  short-duration  varieties.  Since  leaf 
+area per tiller is positively correlated with SPP (Stuerz, Sow, Muller, 
+Manneh, & Asch, 2014), the lower radiation levels in 2017 could ex-
+plain the lower SPP.
+
+The most important yield component explaining the differences 
+in  yield  between  the  2  years  is  PFS.  Since  late  sowing  in  combi-
+nation with the earlier drop of Tmin in 2016 led to temperatures 
+below 14°C around booting stage for the medium- and long-dura-
+tion varieties, many of them strongly suffered from cold sterility, in 
+accordance with Shrestha et al. (2013). However, varieties Silewah 
+and  FOFIFA  160  showed  superior  tolerance  to  low  temperature 
+(Figure 5). Sterility of both varieties in contrasting thermal environ-
+ments was assessed by Razafindrazaka et al. (2020), who found a 
+relatively  high  tolerance  to  low  temperature  for  Silewah,  but  not 
+
+ABERA Et Al.442  |    
+
+F I G U R E   6  Correlations between 
+the duration to physiological maturity 
+and the difference in the respective 
+yield components between the 2 years 
+(2017–2016). PFS, percentage of fertile 
+spikelet; PPT, percentage of productive 
+tillers; SPP, spikelet per panicle; TGW, 
+1,000 grain weight; TPH, tillers per hill. 
+***, **, *: significant at p-value ≤.001, ≤.01, 
+≤.05, respectively
+
+for FOFIFA 160. Here, further research is needed to elucidate the 
+difference in performance of FOFIFA 160 in both studies.
+
+Differences in duration, yield and yield components between the 
+2 years were caused by differences in sowing date as well as differ-
+ences in weather between 2016 and 2017. However, short-duration 
+varieties experienced lower radiation in 2017, and early sowing ag-
+gravated this, leading to vegetative phase entirely taking place during 
+the cloudy rainy season. Medium-duration varieties suffered from 
+the early onset of the cool period in 2016, and late sowing led to the 
+cold-sensitive booting phase of these varieties took place during the 
+period when low minimum temperatures were most likely to hap-
+pen. Since the date of sowing depends on the unpredictable onset 
+of the rainy season, either the potential of an irrigated seedbed and 
+transplanting  should  be  investigated  to  extend  the  season,  or  the 
+choice of variety should depend on the sowing date. To avoid the risk 
+
+of cold sterility two rules should be followed, the selected variety 
+should arrive at booting stage latest at the end of October, but to 
+make use of the higher radiation levels in September, it should have 
+the  longest  cycle  length  possible  without  compromising  the  first 
+rule. Therefore, precise knowledge of the duration of the potentially 
+suitable varieties is required and a crop model that is well-calibrated 
+for the varieties as well as for the environment in combination with 
+a  smartphone  application  such  as  RiceAdvice  (Cotter  et  al.,  2020) 
+would be of great help to support farmers’ decision-making.
+
+ACKNOWLEDGEMENTS
+This study was part of the project “Improving rice farmers” decision-
+making  in  lowland  rice-based  systems  in  East  Africa  (East  Africa 
+“RiceAdvice”).  Financial  support  by  the  German  Federal  Ministry 
+of  Economic  Cooperation  and  Development  (BMZ)  through  the 
+
+ABERA Et Al.Deutsche  Gesellschaft  für  Internationale  Zusammenarbeit  (GIZ) 
+is  duly  acknowledged.  The  project  leading  institute,  Africa  Rice 
+Center  (AfricaRice),  and  collaborating  institute,  Ethiopian  Institute 
+of Agricultural Research (EIAR) are highly recognized for the support 
+and facilitation during field experiments.
+
+ORCID
+Bayuh Belay Abera 
+Sabine Stuerz 
+Marc Cotter 
+Kalimuthu Senthilkumar 
+Folkard Asch 
+
+ https://orcid.org/0000-0001-9371-5678 
+
+ https://orcid.org/0000-0003-2982-5500 
+ https://orcid.org/0000-0001-5004-654X 
+
+ https://orcid.org/0000-0002-2862-411X 
+
+ https://orcid.org/000-0001-6589-9916   
+
+REFERENCES
+Africa  Rice  Center.  (2014).  Africa Rice Center (AfricaRice) Annual Report 
+2013: More than Production: Policies for the African rice sector (p. 108). 
+Cotonou, Benin: Africa Rice Center.
+
+Arshad, S., Farooq, M., Asch, F., Krishna, J., Prasad, P. V., & Siddique, K. 
+(2017). Thermal stress impacts reproductive development and grain 
+yield in rice. Plant Physiology and Biochemistry, 115, 57–72. https://
+doi.org/10.1016/j.plaphy.2017.03.011
+
+Astewel, T. (2017). Determinants of rice production and marketing in low 
+producer farmers: The case of Fogera districts, North-Western Ethiopia. 
+International Journal of Environment, Agriculture and Biotechnology., 2(5), 
+2534–2545. https://doi.org/10.22161 /ijeab /2.5.34
+
+Chen, J., Cao, F., Yin, X., Huang, M., & Zou, Y. (2019). Yield performance of 
+early-season rice cultivars grown in the late season of double-season 
+crop production under machine-transplanted conditions. PLoS One, , 
+14(3), e0213075https://doi.org/10.1371/journ al.pone.0213075
+
+Cotter, M., Asch, F., Abera, B. B., Chuma, B. A., Kalimuthu, S., Rajaona, A., 
+…Stuerz, S. (2020). Adapting agricultural decision support tools to new 
+environments, land management and climate change – a case study of 
+the RiceAdvice App, 206:423–432. https://doi.org/10.1111/jac.12421
+Dingkuhn,  M.  (1995).  Climatic  determinants  of  irrigated  rice  perfor-
+mance  in  the  Sahel  –  III.  Characterizing  environments  by  simulat-
+ing  crop  phenology.  Agricultural  Systems,  48,  435–456.  https://doi.
+org/10.1016/0308-521X(94)00029 -K
+
+Dingkuhn, M., & Asch, F. (1999). Phenological responses of Oryza sativa, 
+O.  glaberrima  and  inter-specific  rice  cultivars  on  a  toposquence  in 
+West Africa. Euphytica, 110, 109–126.
+
+Dingkuhn, M., Sow, A., Samb, A., Diack, S., & Asch, F. (1995). Climatic de-
+terments of irrigated rice performance in the Sahel - I. Photothermal 
+and micro-climatic responses of flowering. Agricultural Systems, 48, 
+385–410.
+
+FAO (2019). FAO Statistical Databases. Retrieved on December 12, 2019, 
+
+Retrieved from http://www.fao.org/faost at/en/#data/QC
+
+Garrity, D. P., Oldeman, L. R., & Morris, R. A. (1986). Rainfed lowland rice 
+ecosystems characterization and distribution. In IRRI (Ed.), Progress 
+in rainfed lowland rice (pp. 3–24). Los Banos, Philippines: International 
+Rice Research Institute.
+
+Gebey, T., Berhe, K., Hoekstra, D., & Alemu, B. (2012). Rice value chain de-
+velopment in Fogera woreda based on IPMS experience. Nairobi, Kenya: 
+ILRI.
+
+Huang, M., Shan, S., Cao, F., & Zou, Y. (2016). The solar radiation-related 
+determinants of rice yield variation across a wide range of regions. 
+NJAS - Wageningen Journal of Life Sciences, 78, 123–128. https://doi.
+org/10.1016/j.njas.2016.05.004
+
+Lafarge, T., Seassau, C., Martin, M., Bueno, C., Cĺment-Vidal, A., Schreck, 
+E., & Luquet, D. (2010). Regulation and recovery of sink strength in 
+rice plants grown under changes in light intensity. Functional Plant 
+Biology, 37(5), 413–428. https://doi.org/10.1071/FP09137
+
+    |  443
+
+MoARD  (Ministry  of  Agriculture  and  Rural  Development)  (2011).  Crop 
+variety  register.  Addis  Ababa,  Ethiopia:  Animal  and  Plant  Health 
+Regulatory Directorate.
+
+MoARD  (Ministry  of  Agriculture  and  Rural  Development)  (2013).  Crop 
+variety  register.  Addis  Ababa,  Ethiopia:  Animal  and  Plant  Health 
+Regulatory Directorate.
+
+Nguyen-Sy, T., Cheng, W., Tawaraya, K., Sugawara, K., & Kobayashi, K. 
+(2019). Impacts of climatic and varietal changes on phenology and 
+yield components in rice production in Shonai region of Yamagata 
+Prefecture, Northeast Japan for 36 years. Plant Production Science, 
+22, 382–394. https://doi.org/10.1080/13439 43X.2019.1571421
+
+Razafindrazaka, A., Stuerz, S., Cotter, M., Rajaona, A., & Asch, F. (2020). 
+Genotypic yield responses of lowland rice in high altitude cropping sys-
+tems. 206:444–455. https://doi.org/10.1111/jac.12416
+
+Seck,  P.  A.,  Ali,  A.,  Toure,  J.  Y.,  Coulibaly,  A.  D.,  &  Wopereis,  M.  C.  S. 
+(2013). Africa’s rice economy before and after the 2008 rice crisis. 
+In M. C. S. Wopereis, E. J. David, A. Nourollah, T. Eric, & J. Abdulai 
+(Eds). Realizing Africa’s rice promise (pp. 24–34). Wallingford, UK: CAB 
+International. https://doi.org/10.1079/97818 45938 123.0000
+
+Shrestha,  S.,  Asch,  F.,  Brueck,  H.,  Giese,  M.,  Dusserre,  J.,  & 
+Ramanantsoanirina, A. (2013). Phenological responses of upland rice 
+grown along an altitudinal gradient. Environmental and Experimental 
+Botany, 89, 1–10. https://doi.org/10.1016/j.envex pbot.2012.12.007
+
+Shrestha,  S.,  Asch,  F.,  Dingkuhn,  M.,  &  Becker,  M.  (2011).  Cropping 
+calendar  options  for  rice  –  wheat  production  systems  at  high-alti-
+tudes. Field Crops Research, 121, 158–167. https://doi.org/10.1016/j.
+fcr.2010.12.006
+
+Shrestha, S., Asch, F., Dusserre, J., Ramanantsoanirina, A., & Brueck, H. 
+(2012).  Climate  effects  on  yield  components  as  affected  by  geno-
+typic responses to variable environmental conditions in upland rice 
+systems at different altitudes. Field Crops Research., 134, 216–228. 
+https://doi.org/10.1016/j.fcr.2012.06.011
+
+Stuerz, S., Shrestha, S. P., Schmierer, M., Vu, D. H., Hartmann, J., Sow, A., 
+…Asch, F. (2020). Climatic determinants of lowland rice development, 
+206:466–477. https://doi.org/10.1111/jac.12419
+
+Stuerz, S., Sow, A., Muller, B., Manneh, B., & Asch, F. (2014). Leaf area 
+development  in  response  to  meristem  temperature  and  irrigation 
+system in lowland rice. Field Crops Research, 163, 74–80. https://doi.
+org/10.1016/j.fcr.2014.04.001
+
+Tadesse, T., Dechassa, N., Bayu, W., & Gebeyehu, S. (2013). Effects of 
+farmyard  manure  and  inorganic  fertilizer  application  on  soil  physi-
+co-chemical properties and nutrient balance in rain-fed lowland rice 
+ecosystem. American Journal of Plant Sciences, 4, 309–316. https://
+doi.org/10.4236/ajps.2013.42041
+
+Van  Oort,  P.  A.  J.  (2018).  Mapping  abiotic  stresses  for  rice  in  Africa: 
+Drought, cold, iron toxicity, salinity and sodicity. Field Crops Research, 
+219, 55–75. https://doi.org/10.1016/j.fer.2018.01.016
+
+Vergara, B. S., Tanaka, A., Lilis, R., & Puranabhavung, S. (1966). Relationship 
+between growth duration and grain yield of rice plants. Soil Science 
+and  Plant  Nutrition,  12,  31–39.  https://doi.org/10.1080/00380 
+768.1966.10431180
+
+Wheeler, T. R., Crufurd, P. Q., Ellis, R. H., Porter, J. R., & Vara Prasad, 
+P. V. (2000). Temperature variability and the yield of annual crops. 
+Agriculture, Ecosystems and Enviroment, 82(1–3), 159–167. https://doi.
+org/10.1016/S0167 -8809(00)00224 -3
+
+How to cite this article: Abera BB, Stuerz S, Senthilkumar K, 
+Cotter M, Rajaona A, Asch F. Season-specific varietal 
+management as an option to increase rainfed lowland rice 
+production in East African high altitude cropping systems. J Agro 
+Crop Sci. 2020;206:433–443. https://doi.org/10.1111/jac.12418
+
+ABERA Et Al.

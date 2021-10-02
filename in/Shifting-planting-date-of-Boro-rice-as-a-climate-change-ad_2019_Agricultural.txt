@@ -1,0 +1,1175 @@
+Agricultural Systems 168 (2019) 131–143
+
+Contents lists available at ScienceDirect
+
+Agricultural Systems
+
+journal homepage: www.elsevier.com/locate/agsy
+
+Shifting planting date of Boro rice as a climate change adaptation strategy to
+reduce water use
+Tapos Kumar Acharjeea,c,⁎, Gerardo van Halsemab, Fulco Ludwiga, Petra Hellegersb, Iwan Supita
+
+T
+
+a Water Systems and Global Change Group, Wageningen University, Wageningen, The Netherlands
+b Water Resources Management Group, Wageningen University, Wageningen, The Netherlands
+c Department of Irrigation and Water Management, Bangladesh Agricultural University, Mymensingh, Bangladesh
+
+A R T I C L E I N F O
+
+A B S T R A C T
+
+Keywords:
+Transplanting date
+Water demand
+CropWat
+Heat stress
+Bangladesh
+
+Suitable adaptation strategies for dry season Boro rice cultivation under future climate change scenarios are
+important for future food security in Bangladesh. This study assessed the eﬀect of shifting trans−/planting date
+of dry season Boro rice as an adaptation strategy, with focus on water requirements under future climate sce-
+narios. Potential crop water requirement, eﬀective rainfall and irrigation requirement to satisfy crop evapo-
+transpiration of Boro rice were estimated using CropWat 8.0 for early, normal and late planting dates for 2050s
+and 2080s. Future climate scenarios were constructed using ﬁve global circulation model (GCM) outputs for RCP
+4.5 and 8.5 by statistical downscaling and bias correction. Number of days exceeding the threshold temperatures
+(maximum of 35 °C and minimum of 25 °C) was counted for critical period of Boro rice to understand com-
+patibility of the changed planting dates. Results indicate that late planting can substantially reduce irrigation
+demand by increasing rainfall availability during Boro growth duration, but the option is very limited due to
+both day- and night-time heat stress. An early planting, on the other hand, accounts for high water demand but
+ensures suitable temperature during the critical growth stages of the crop. The normal planting dates show the
+possibility of day-time heat stress. So, late planting of temperature-tolerant cultivars or early planting of high-
+yielding varieties would be recommended based on local water availability. However, adjustment of the planting
+date is currently limited because high temperature-tolerant cultivars are not available in the study region.
+
+1. Introduction
+
+Climate change aﬀects the water requirement of crops. Irrigation
+demand will increase in Europe, USA and some parts of Asia, while the
+irrigated regions in India, Pakistan, and South-Eastern China might
+experience a slight decrease in irrigation demand (Biemans et al.,
+2013). Future irrigation demand is projected to exceed local water
+availability in many places (Wada et al., 2013). According to Hijioka
+et al. (2014), water scarcity due to increased water demand for popu-
+lation growth and higher standard of living will be a major challenge
+for most parts of Asia. Development of water saving technologies, in-
+creased water productivity, and water reuse could be eﬀective in this
+regard (Hijioka et al., 2014). However, irrigation for crop agriculture,
+which is the largest water demand sector in Bangladesh, requires spe-
+cial attention to deal with future water demand management. Improved
+agricultural practices and irrigation management can play a vital role to
+cope with the risk of water shortage.
+
+Climate change induced changes in water demand, availability and
+
+quality will impact water management decisions. Adaptation measures
+to ensure proper water balance requires strategies for supply-side as
+well as demand-side (Bates et al., 2008). One possible solution to re-
+duce water demand for irrigation could be changing the cropping ca-
+lendar. The changes in climatic parameters during recent decades
+contributed to reduce irrigation requirements in North-West Bangla-
+desh (Acharjee et al., 2017; Mojid et al., 2015). However, the water
+demand for crop agriculture has increased due to expansion of irrigated
+agriculture. Water demand for Boro rice will reduce in the future
+(Acharjee et al., 2017). The total annual water demand for crop culti-
+vation, however, may still increase due to increasing cropping intensity
+as rice growth duration will become shorter. A shorter growing season
+of Boro rice due to the crop's phenological responses to climate change
+provides more ﬂexibility to shift planting times.
+
+Climate change will not only result in an increase or decrease in
+diﬀerent climatic parameters, but will also cause changes in seasonality
+and variability of diﬀerent parameters. There will be large seasonal and
+regional variations in climatic parameters in South Asia (Wassmann and
+
+⁎ Corresponding author.
+E-mail address: tapos.acharjee@wur.nl (T.K. Acharjee).
+
+https://doi.org/10.1016/j.agsy.2018.11.006
+Received 10 June 2018; Received in revised form 9 November 2018; Accepted 12 November 2018
+Available online 21 November 2018
+0308-521X/ © 2018 Elsevier Ltd. All rights reserved.
+
+T.K. Acharjee et al.
+
+Agricultural Systems 168 (2019) 131–143
+
+Fig. 1. The location of the study area.
+
+Dobermann, 2007). The contrast in precipitation between wet and dry
+seasons will increase in the future (IPCC, 2013). Change of planting
+date of crops could be a simple and eﬀective way to deal with changes
+in seasonal variability in climatic parameters. Following the climate
+change, a shift in planting date may allow plants to be exposed to more
+favourable conditions (Chun et al., 2016). For under developed coun-
+tries, more emphasis on low-cost strategies is likely to be more eﬀective
+for large-scale implementation. Farmers can adapt to changed climatic
+conditions to some degree by changing planting dates, choosing culti-
+vars of diﬀerent growth duration, or changing crop rotations
+(Wassmann and Dobermann, 2007). Several researchers have indicated
+that shifting the rice planting date could be an eﬀective solution to
+improve rice yields in a changing climate. Simple adaptation options,
+such as shifting planting dates, can be applied to signiﬁcantly increase
+net water productivity (Mainuddin et al., 2011). High-temperature and
+drought stresses can also be avoided by changing the transplanting date
+or growth period (Shelley et al., 2016).
+
+Agricultural production in South Asia may reduce by 30% by 2050s
+if no action is taken to reduce the eﬀects of increasing temperature and
+hydrologic disruption (Parry et al., 2007). As rice cultivation requires a
+large quantity of water, both the yield and water requirements are
+important aspects for optimizing the planting date. Previous studies
+which assessed the impacts of changing planting date of Boro rice in
+Bangladesh focusing only on yield (Basak et al., 2010; Karim et al.,
+
+2012) and disregarded the impact on water use and/or requirements.
+However, it is also important to understand the impacts of changing
+planting date on the water requirements of the crop.
+
+Extreme temperature events aﬀect growth and productivity of crops
+because high temperatures are destructive for plant growth and de-
+velopment. Critical temperatures vary with genotype, duration of cri-
+tical temperature period, diurnal changes and physiological status of
+the plant (Yoshida, 1981). Due to climate changes, the number of days
+with extremely high temperatures will increase potentially reducing
+crop yield. Changing planting dates can both increase and reduce the
+risk of yield loss due to extreme temperatures. This study focused on
+identiﬁcation of suitable planting date of Boro rice that can minimize
+irrigation requirement without damaging the crop during the critical
+period by extreme temperatures.
+
+The objectives of the study were to assess the capacity and suit-
+ability of shifting planting date of rice as a climate change adaptation
+option. Several other studies have focused on yield estimation under
+diﬀerent planting dates of Boro rice. Therefore, we mainly focused on
+the water demand side of the crop for our analysis. We have estimated
+water requirements for early, normal and late planting dates, and re-
+ﬂected on high temperature duration to understand the suitability of
+changing planting date. This study can help with developing strategies
+to adapt Boro rice to climate change and managing water demand for
+crop agriculture. It will enrich our existing knowledge of optimizing
+
+132
+
+T.K. Acharjee et al.
+
+Agricultural Systems 168 (2019) 131–143
+
+planting dates for future climate conditions and be useful for agri-
+cultural specialists and water managers of Bangladesh.
+
+2. Methodology
+
+2.1. Crop, study area and data collection
+
+Three-season rice, namely Aus, Aman and Boro are generally culti-
+vated in Bangladesh. Boro is the dry season rice, grown under a constant
+stagnant-water condition in the ﬁeld. It is planted from December to
+early February, and harvested during April to June (Shelley et al.,
+2016). The most common cropping pattern that includes Boro rice is
+either Boro − T.Aman − Potato or Boro − T.Aman − Fallow. Bangla-
+desh receives plenty of rainfall, which varies from 1527 to 4197 mm/
+year, but it is not well distributed both spatially and temporally
+(Shahid, 2011). Consequently, starting from 1970s, the development of
+groundwater irrigation has dramatically boosted Boro rice cropping
+area (Fujita, 2010). Rice plants encounter both low and high tem-
+perature stress during diﬀerent growing seasons in Bangladesh (Shelley
+et al., 2016).
+
+The North-West part of Bangladesh extends from 23°47′ N to 25°50′
+N latitude and from 88°01′ E to 89°48′ E longitude. Four North-West
+districts − Bogra, Rajshahi, Pabna and Dinajpur – were selected for this
+study (Fig. 1). Crop data related to dry season Boro rice were collected
+from Bangladesh Agricultural Research Institute (BARI). Soil data were
+standardized for a medium average soil for the selected districts from
+FAO standard soil parameter values.
+
+2.2. Development of climate scenarios
+
+de
+
+Five General Circulation Models (GCMs) and two emission scenarios
+(RCP 4.5 and 8.5) were used to construct the future climate scenarios.
+Maximum and minimum temperatures, rainfall, solar radiation and
+wind speed for 2050s and 2080s, i.e. the time series of 2035–2065 and
+2065–2095 were prepared. The ﬁrst GCM employed in this study was
+the CNRM-CM5 model developed by CNRM-GAME (Centre National de
+Recherches Météorologiques—Groupe d'études
+l'Atmosphère
+Météorologique) and Cerfacs (Centre Européen de Recherche et de
+Formation Avancée) to contribute to 5th phase of the Coupled Model
+Inter-comparison Project (CMIP5) that includes atmospheric, land sur-
+face, ocean scheme, and sea ice models (Voldoire et al., 2013). The
+second GCM used in this study was the EC-Earth model which is a
+seamless Earth System Model that includes forecasting and climate
+change studies into a single framework (Hazeleger et al., 2010). The
+third GCM applied in this study was HadGEM2-ES model which is a
+coupled Earth System Model used by the Met Oﬃce Hadley Centre for
+the CMIP5 centennial simulations. The fourth GCM used in this study
+was the IPSL-CM5A-LR model that includes 5 model components:
+LMDz (atmosphere), NEMO (ocean, oceanic biogeochemistry and sea-
+ice), ORCHIDEE (continental surfaces and vegetation), and INCA (at-
+mospheric chemistry), coupled through OASIS. The ﬁfth GCM em-
+ployed in this study was the MPI-ESM-LR model which is a compre-
+hensive Earth-System Model that consists of ocean, atmosphere and
+land surface component models. These models were selected for our
+study because of their important criteria in evaluating the impacts of
+climate change, such as ocean-atmosphere couple, multi-century si-
+mulation capability, well documentation in literature, and participation
+in the Coupled Model Inter-comparison Project (CMIP) (Barrow et al.,
+2004). Two diﬀerent emission scenarios, RCP 4.5 and 8.5 were selected
+for this study since they represent realistically low and high future
+climate change scenarios. RCP 4.5 characterises stabilization without
+overshoot pathway to 4.5 W/m2 (~650 ppm CO2 eq.) at stabilization
+after 2100 and RCP 8.5 characterises rising radiative forcing pathway
+leading to 8.5 W/m2 (~1370 ppm CO2 eq.) by 2100 (Van Vuuren et al.,
+2011).
+
+The future climate data for daily maximum and minimum
+
+temperatures, rainfall, solar radiation and wind speed were generated
+by statistical downscaling. For bias correction, the WATCH Forcing data
+(Weedon et al., 2011) of monthly average maximum and minimum
+temperatures, sunshine hours and wind speed, and monthly total
+rainfall were compared to the observed historical data. Since, the GCM
+outputs do not provide relative humidity; this was estimated following
+the ratio between actual and saturation vapour pressures, which are
+pure functions of temperature and can be calculated by a common
+empirical interpolation function (Holbo, 1981; WMO, 1979). For humid
+temperate climates, when temperature is at its daily minimum, air be-
+comes saturated with water vapour. Hence, the general assumption to
+estimate relative humidity from temperature data is to consider dew
+point temperature as equal to the minimum temperature of the day
+(Eccel, 2012).
+
+2.3. Selection of planting dates and estimation of growth duration
+
+Two normal planting (1 and 11 December), two early planting (1
+and 11 November) and two late planting (31 December and 10
+January) dates were selected for analysis. Following a 35-day nursery
+stage, the corresponding transplanting date for normal, early and late
+planting is: 05-Jan & 15-Jan; 06-Dec & 16-Dec; and 04-Feb & 14-Feb.
+The lengths of four distinguished growth stages of Boro rice were esti-
+mated for each transplanting date and for diﬀerent climate scenarios
+following the growing degree days (GDD) method as:
+GDD
+
+)/2]
+
+(1)
+
+T
+[(
+max
+
+T
+min
+
+T
+base
+
+−
+
+=
+
++
+
+where Tmax is the maximum temperature (°C), Tmin is the minimum
+temperature (°C), and Tbase is the base temperature.
+
+First, the GDD was estimated for four study districts using ﬁve cli-
+mate models and two emission scenarios for each of the transplanting
+dates. Later, the growth stage duration was estimated from GDDs and
+accumulated heat values at the end of each stage as:
+
+Growth stage duration days
+
+(
+
+)
+
+Accumulated heat value at the end of the stage C
+
+(
+
+°
+
+)
+
+GDD for the corrosponding period C
+
+(
+
+°
+
+)
+
+(2)
+
+=
+
+The accumulated heat values (for the base temperature of 15 °C) at
+the end of the growth stages for Boro rice in the North-West zone of
+Bangladesh were taken from Mahmood (1997). The accumulated heat
+values at the end of initial, vegetative, ﬂowering and maturing stages
+were 80, 528, 1052 and 1291 °C, respectively for Bogra, Rajshahi and
+Pabna; and 80, 515, 1032 and 1273 °C, respectively for Dinajpur. The
+growing degree days method can consistently predict the growth
+duration of crops (Miller et al., 2001).
+
+The accumulated heat values for currently used long duration
+varieties (e.g. BRRI dhan29) are about 16% higher compared to short
+duration varieties (e.g. BRRI dhan28). Growth stage days for the pos-
+sible future long-duration cultivars were estimated for Bogra. A 16%
+increased accumulated heat values for each stage with an imposed
+minimum duration for each stage was used. For the long-duration
+cultivar, the accumulated heat values at the end of initial, vegetative,
+ﬂowering and maturing stages were 93, 613, 1221 and 1498 °C, re-
+spectively for Bogra. The imposed minimum number of days for initial,
+development, mid-season and late-season were 22, 45, 36 and 18 days,
+respectively.
+
+2.4. Estimation of water requirements for diﬀerent planting times
+
+CropWat model was used to estimate potential crop water require-
+ment and potential irrigation requirement for crop evapotranspiration
+based on climate, crop and soil data. It has been used extensively as a
+decision-support tool in an international context to estimate regional
+irrigation requirements (Clarke et al., 2001). This model was also suc-
+cessfully applied to evaluate impacts of climate change on water
+
+133
+
+T.K. Acharjee et al.
+
+Agricultural Systems 168 (2019) 131–143
+
+Fig. 2. Growth duration (for the average of ﬁve models) of Boro rice under diﬀerent transplanting dates for four diﬀerent climate change scenarios.
+
+requirements in several previous researches (Chowdhury et al., 2013;
+Doria et al., 2006; Doria, 2010; Shrestha et al., 2013).
+
+Water requirements of Boro rice were estimated using statistically
+downscaled bias-corrected daily climate data from GCMs outputs for
+four districts, ﬁve models and two RCPs for 2050s (average of 2035–65)
+and 2080s (average of 2065–95). Potential crop water requirement is
+calculated as total crop evapotranspiration (∑ETC) during the crop
+growing period by considering changes in the length of growing season.
+The Potential irrigation requirement for crop evapotranspiration is the total
+amount of crop evapotranspiration in excess of eﬀective rainfall, ER, i.e.
+∑ETC-ER. The eﬀective rainfall is the amount of rainfall that is eﬀec-
+tively added and stored in the soil for later use by the crop and is de-
+rived as a simulation output from CropWat.
+
+To assess the impacts of climate change on water requirements
+under diﬀerent trans−/planting dates of Boro rice, the inﬂuence of
+management practices was excluded by modelling the rice growth in
+CropWat under a standardized schedule that provides irrigation water
+as required. The crop co-eﬃcient values were 0.7, 0.3, 0.5, 1.05 and
+0.65 under dry condition, and 1.2, 1.05, 1.1, 1.2 and 0.95 under wet
+condition for nursery, land preparation, initial, mid-season and late-
+season, respectively. The scheduling criteria to estimate the net irri-
+gation requirement was to provide irrigation at 5 mm water depth
+above ground surface and reﬁll to 100 mm standing water.
+
+2.5. Assessment of heat stress during critical periods
+
+Spikelet sterility may occur at diﬀerent temperature thresholds
+(Matthews et al., 1995; Nakagawa et al., 2003) since there is genotypic
+variation in spikelet sterility at high temperature (Matsui et al., 2001;
+Prasad et al., 2006; Satake and Yoshida, 1978). Also, shorter durations
+at very higher temperatures may have the same eﬀect as longer dura-
+tions at relatively less higher temperatures (Satake and Matsuo, 1995).
+According to Laborte et al. (2012), the maximum temperature above
+35 °C for 10 days can cause day time heat stress, and the minimum
+temperature above 25 °C for 15 days can cause night time heat stress to
+rice plant during the critical stages. First, we have identiﬁed the critical
+period to high temperature stress for early, normal and late planting for
+all studied districts, scenarios and climate models. For Bogra, Rajshahi
+and Pabna, the identiﬁed critical stress periods were the days with
+
+accumulated heat values from 659 to 1052 °C. For Dinajpur, the iden-
+tiﬁed critical stress periods were the days with accumulated heat values
+from 644 to 1032 °C. After identiﬁcation of the critical days, we iden-
+tiﬁed the days with maximum temperature above 35 °C and minimum
+temperature above 25 °C within those critical days. The number of days
+with maximum temperature above 35 °C and minimum temperature
+above 25 °C within critical periods were counted and their percentage
+to total number of critical days were estimated for early, normal and
+late planting under all studied districts, scenarios and models to un-
+derstand suitability of changing the planting date of existing (i.e.
+temperature intolerant) cultivars of Boro rice.
+
+3. Results
+
+3.1. Future rainfall in excess of evapotranspiration
+
+The estimated future monthly rainfall in excess of evapotranspira-
+tion, i.e. monthly rainfall minus evapotranspiration (Appendix Fig. A1)
+indicates a ‘wet-get-wetter’ and ‘dry-get-drier’ situation in the North-
+West Bangladesh. However, the annual distribution of future rainfall in
+excess of evapotranspiration is almost similar to recent years in all
+study districts. There will be more dry conditions from November to
+April, which is the Boro growing season. The soil-water deﬁcit or
+drought could be maximum during March–April. The dry months will
+be drier in 2080s compared to 2050s. Also, the dry months will be drier
+for a pronounced climate change (RCP 8.5) than a moderate climate
+change scenario (RCP 4.5).
+
+The ‘dry-get-drier’ situation during the dry winter months could be
+because of less rainfall and/or increased evapotranspiration during this
+period. The Mann-Kendall trends of estimated reference crop evapo-
+transpiration during the dry months of the 2035–2065 and 2065–2095
+time series by Acharjee et al. (2017) indicate a possible future increase
+in daily evapotranspiration. The possible future monthly rainfall reveals
+some increasing trends (Appendix Fig. A2). The study by Shahid (2011)
+also indicates a signiﬁcant increase (6.05 mm/year) in annual pre-
+cipitation in Bogra in the long-term trends during 1958–2007. There-
+fore, the ‘dry-get-drier’ condition will be mainly because of increased
+evapotranspiration despite some expected increase of rainfall amount in
+the North-West Bangladesh.
+
+134
+
+T.K. Acharjee et al.
+
+Agricultural Systems 168 (2019) 131–143
+
+Fig. 3. Potential crop water requirement (for the average of ﬁve models) of Boro rice using six diﬀerent transplanting dates for RCPs 4.5 and 8.5 and two future
+periods 2035e65 (2050s) and 2065e95 (2080s).
+
+Fig. 4. Potential irrigation requirement for crop evapotranspiration (for the average of ﬁve models), ∑ETC − ER (mm) of Boro rice using six diﬀerent transplanting
+dates for RCPs 4.5 and 8.5 and two future periods 2035e65 (2050s) and 2065e95 (2080s).
+
+3.2. Future Boro growth duration under diﬀerent planting dates
+
+3.3. Potential crop water requirements as aﬀected by planting dates
+
+A shorter growth duration under late planting and a longer growth
+duration under early planting compared to normal time planting were
+observed (Fig. 2). The results are consistent for all study districts, em-
+ployed models and scenarios. For the early planting, the rice plant re-
+ceives a long winter period and the crop matures slowly during the low
+temperature period, resulting in longer growth duration. For the late
+panting, the rice plant receives an initial short winter period and
+thereafter a pre-monsoon high temperature period. Hence, the rice
+plant receives more number of high temperature days under the late
+planting compared to early planting and, therefore, matures rapidly.
+
+The potential crop water requirement, ∑ETC, will increase in case of
+early planting and decrease in case of late planting compared to normal
+time planting (Fig. 3). The estimated ∑ETC are consistent for all dis-
+tricts, models and scenarios under consideration except in 2080s for
+RCP 8.5. The ∑ETC for both the early and late planting exhibit an in-
+crease compare to the normal time planting in 2080s for RCP 8.5. The
+diﬀerence between potential crop water requirements for early and
+normal planting is relatively smaller in Dinajpur compared to other
+districts. The potential crop water requirement is consequently higher
+in Pabna for all scenarios compared to other districts; this is not because
+of longer growth duration, but due to higher daily evapotranspiration.
+
+135
+
+T.K. Acharjee et al.
+
+Agricultural Systems 168 (2019) 131–143
+
+The potential crop water requirement is higher in Pabna compared to
+other districts which is because of higher rate of daily evapo-
+transpiration in Pabna.
+
+The estimated potential crop water requirement exhibits a clear link
+with estimated growth duration of Boro rice under diﬀerent planting
+dates. For early planting date, the longer growth duration resulted in
+increased potential crop water requirement; while for late planting,
+shorter growth duration resulted in reduced potential crop water re-
+quirement. However, the potential crop water requirements will in-
+crease for both early and late plantings in 2080s because of a rapid
+climate change. Therefore, for a rapid climate change (RCP 8.5) in the
+long term both early and late planting options would be ineﬀective in
+terms of crop water requirements.
+
+3.4. Potential irrigation requirements as aﬀected by planting dates
+
+The potential irrigation requirement for crop evapotranspiration
+(∑ETC − ER) showed an increase for early planting and a reduction for
+late planting (Fig. 4). These results are consistent for all study districts,
+models and scenarios, including 2080s for RCP 8.5. However, the
+amount of reduction for the late planting is more than the amount of
+increase for the early planting in comparison to normal planting date.
+The estimated eﬀective rainfall during the Boro growth duration
+reveals increased rainfall availability for late planting compared to the
+early or normal planting (Fig. 5). The diﬀerence between rainfall
+availabilities for the early and normal planting dates is less than the
+diﬀerence between rainfall availabilities for the late and normal
+planting dates. Therefore, a shift from normal to early plating dates will
+allow a less change of rainfall availability than a shift from normal to
+late planting. In other words, a shift of planting date from normal to late
+planting can substantially increase the rainfall availability for Boro rice
+cultivation.
+
+3.5. Temperature stress as aﬀected by planting dates
+
+High temperature stress reduces grain yield of rice by reducing the
+percentage of ripened grains as a result of spikelet sterility (Oh-e et al.,
+2007). The ﬂowering and booting are the most sensitive/critical stages
+of rice to high temperature stress (Farrell et al., 2006; Satake and
+
+Yoshida, 1978), which may sometimes lead to complete spikelet steri-
+lity (Shah et al., 2011). For early planting, the critical period will begin
+during 11/Feb – 20/Mar and continue till 11/Mar – 17/Apr depending
+on diﬀerent years, scenarios and model estimates in Bogra. For normal
+planting, the critical period will begin during 05/Mar – 01/Apr and
+continue till 28/Mar – 26/Apr. For late planting, the critical period will
+begin during 22/Mar – 12/Apr and continue till 12/Apr – 06/May. The
+detail results on estimated dates of beginning and end date of critical
+period of Boro rice in Bogra has been presented in Appendix (Fig. A.3).
+For a late planting critical period also begins lately. Other districts also
+show similar kind of results on estimated critical period dates (were
+estimated but has not been presented in this paper). According to
+Laborte et al. (2012), maximum temperature above 35 °C for 10 days
+during the critical period can cause a day-time heat stress and minimum
+temperature exceeding 25 °C for 15 days during critical period can
+cause a night-time heat stress.
+
+Our results indicate that for the late planting, with critical period
+during late-March to early-May, there will be more chance of day-time
+heat stress compared to early planting having critical period during
+early-February to mid-April (Fig. 6). There will be also high risk of day
+time heat stress for normal time planting. Krishnan et al. (2011) also
+commented that, most agronomic interventions for dealing with high-
+temperature stress aim at early sowing of rice or selection of early
+maturing cultivars to avoid high temperatures during the grain ﬁlling
+stage. There will be low risk of day time heat stress in Dinajpur com-
+pared to other study districts because of less number of days with
+maximum temperature above 35 °C in Dinajpur.
+
+For the late planting, there will be more chance of night-time heat
+stress compared to the early and normal time planting (Fig. 7). For most
+of the scenarios, there is no chance of night-time heat stress for the
+early planting. There will also be low risk of night time heat stress in
+Dinajpur compared to other study districts because of less number of
+days with minimum temperature above 25 °C in Dinajpur.
+
+3.6. Long-duration cultivars of Boro rice as aﬀected by planting dates
+
+The results discussed so far is a long-duration cultivar (e.g., BR29)
+in the prevailing climate that will become a short-duration cultivar due
+to accelerated growth under increased temperature in the future; this
+
+Fig. 5. Eﬀective rainfall (for the average of ﬁve models) during Boro rice growth duration using six diﬀerent transplanting dates for RCPs 4.5 and 8.5 and two future
+periods 2035e65 (2050s) and 2065e95 (2080s).
+
+136
+
+T.K. Acharjee et al.
+
+Agricultural Systems 168 (2019) 131–143
+
+Fig. 6. Percentage of critical period days with maximum temperature above 35 °C to total critical period days (for the average of ﬁve models) for early, normal and
+late (trans)planting in 2050s and 2080s under RCP 4.5 and 8.5 in four study districts.
+
+cultivar is hereafter stated as usual cultivar. A longer growth duration,
+usually, allows the tillers to become more mature and produce large
+number of panicles in winter season (Gomosta et al., 2001). Therefore,
+farmers may choose a possible more longer duration variety in the fu-
+ture that has been stated as long-duration cultivar in this study. Growth
+duration is an important aspect for selecting the optimum planting date.
+Therefore, we also presented the results for possible future long-dura-
+tion cultivar of Boro rice (Fig. 8) and compared with the existing cul-
+tivar (Fig. 9).
+
+Similar kind of changes in growth duration of long-duration culti-
+vars of Boro rice were obtained for diﬀerent planting dates like usual/
+short duration cultivars (Appendix, Fig. A.4). However, the percentages
+of increase in estimated growth duration of long duration cultivars are
+diﬀerent for all planting dates. The percentage increase in growth
+duration for the late planting is higher than the percentage increase for
+the early planting. Therefore,
+the diﬀerence in growth duration
+
+between the early planting and late planting for long-duration cultivars
+is lower than that for usual cultivars.
+
+Similar kind of changes in potential crop water requirements, ef-
+fective rainfall and potential irrigation requirements for crop evapo-
+transpiration of long-duration cultivars of Boro rice were obtained for
+diﬀerent planting dates under investigation for the usual cultivars
+(Fig. 8). However, the diﬀerences between potential crop water re-
+quirements of diﬀerent planting dates are smaller for the long-duration
+variety compared to the usual duration variety. The diﬀerences in ef-
+fective rainfall and irrigation requirement between the planting dates
+seem larger for the long-duration variety compared to the usual dura-
+tion variety. Longer growth duration, possibly, may bring more ﬂuc-
+tuations in available rainfall because of changing trans−/planting
+dates.
+
+The diﬀerence in potential crop water requirements between the
+long and short duration cultivars is similar for all planting dates
+
+Fig. 7. Percentage of critical period days with minimum temperature above 25 °C to total critical period days (for the average of ﬁve models) for early, normal and
+late (trans)planting in 2050s and 2080s under RCP 4.5 and 8.5 in four study districts.
+
+137
+
+T.K. Acharjee et al.
+
+Agricultural Systems 168 (2019) 131–143
+
+Fig. 8. Potential crop water requirement (PCWR),
+eﬀective rainfall during crop growing period (ER)
+and potential irrigation requirement for crop eva-
+potranspiration (PIR) for long-duration cultivar of
+Boro rice using six diﬀerent transplanting dates for
+RCPs 4.5 and 8.5 and two future periods 2035e65
+(2050s) and 2065e95 (2080s) in Bogra district.
+
+Fig. 9. Diﬀerence in potential crop water require-
+ment (PCWR), eﬀective rainfall during crop growing
+period (ER) and potential irrigation requirement for
+crop evapotranspiration (PIR) of long-duration cul-
+tivar compared to usual duration cultivar of Boro rice
+using six diﬀerent transplanting dates for RCPs 4.5
+and 8.5 and two future periods 2035e65 (2050s)
+and 2065e95 (2080s) in Bogra district.
+
+(Fig. 9). However, the diﬀerence in eﬀective rainfalls and potential ir-
+rigation requirements between the long and short duration cultivars is
+diﬀerent for all planting dates. In 2080s for RCP 4.5 and in 2050s for
+RCP 8.5, the variation in potential irrigation requirement diﬀerences is
+much more between normal and late planting compared to normal and
+early planting. This indicates that irrigation requirements may change
+drastically from long to short duration cultivars between normal and
+late planting dates for moderate climate change in 2080s or rapid cli-
+mate change in 2050s. The decrease in potential irrigation require-
+ments for long-duration cultivar compared to usual duration cultivar is
+because of more rainfall availability during the later stages of the
+growing season.
+
+4. Discussion
+
+Several factors may aﬀect the choice of the best or optimum
+planting date. One of the main concerns for this choice is the amount of
+
+water needed for cultivation of the crop, especially in water-limited
+areas or drought-prone regions. Since, lack of water during dry season
+is the major concern in the North-West Bangladesh, we have analysed
+water requirements for diﬀerent planting dates of Boro rice.
+
+4.1. Future Boro growth duration: estimates and possibilities
+
+The study by Kabir et al. (2016) indicates that, the growth duration
+of two transplanted Boro varieties (45-days old seedling) in the recent
+climate (2001) varied about 5 and 10 days for one month shifting of
+transplanting date from 15 December to 13 January. In our study, for
+one month shifting of transplanting date from 16 December to 15
+January of 35-days old seedling, the growth duration reduced 19 days
+in the future. The increased variation in growth duration for one month
+shifting of transplanting in our study is because of an accelerated ac-
+cumulation of GDD due to more rapid future climate change compared
+to recent climate change.
+
+138
+
+T.K. Acharjee et al.
+
+Agricultural Systems 168 (2019) 131–143
+
+There are two main aspects of future growth duration of Boro rice:
+ﬁrstly, the changes in growth duration of current cultivars because of
+increased temperature in the future, and, secondly, the growth duration
+of possible new cultivars. Our estimates clearly indicate a considerable
+inﬂuence of temperature diﬀerence, due to shifts in planting date, on
+the growth duration of existing Boro cultivar under future climate
+scenarios (Fig. 2). Rice matures rapidly during the warmer late period
+compared to the cooler earlier period. However, the exact reduced
+number of days for a late planting or increased number of days for an
+early planting may be diﬀerent for diﬀerent Boro cultivars. As the future
+shortening of growth duration can substantially reduce the rice yield,
+farmers may need to change to a long-duration cultivar in the future to
+maintain their yields. However, the inﬂuence of shifting planting date is
+similar for both short and long-duration cultivars.
+
+4.2. Potential crop water and irrigation requirements as inﬂuenced by
+planting date
+
+irrigation requirement
+
+A delay in planting time of Boro rice reduces potential crop water
+and irrigation requirements by enhancing the crop maturity compared
+to early planting. Compared to the early planting, the potential crop
+water requirements (averaged over all districts and models) reduced by
+6.5 and 5.9% in 2050s for RCP 4.5 and 8.5, respectively, and by 5.7 and
+0.6% in 2080s for RCP 4.5 and 8.5, respectively in case of late planting.
+The potential
+for crop evapotranspiration
+(averaged over all districts and models) for late planting was reduced
+by 31 and 21% in 2050s for RCP 4.5 and 8.5, respectively, and by 14%
+in 2080s for both RCP 4.5 and 8.5 compared to normal planting dates.
+The potential irrigation requirement for crop evapotranspiration for
+late planting was reduced by 38 and 27% in 2050s for RCP 4.5 and 8.5,
+respectively, and by 22 and 21% in 2080s for both RCP 4.5 and 8.5
+compared to early planting. The reduction in irrigation requirements
+for late planting is caused by high rainfall availability during the later
+parts of the growing season. Late planting in winter, generally, ensures
+a higher rainfall during the vegetative growth and brings some bene-
+ﬁcial eﬀects by reducing the possibility of water stress (Karim et al.,
+2012). The reduced crop growth duration and better rainfall accessi-
+bility for the late planting dates ensure a much lower irrigation re-
+quirement for Boro rice. Therefore, the late planting is a good choice for
+the future from a water demand perspective.
+
+A later planting date can substantially reduce the amount of irri-
+gation required for Boro cultivation, but may reduce yield due to heavy
+rainfall events before harvesting. Perez and Hosen (1987) reported that
+rain can cause delay in harvest and increase proportion of broken grains
+during milling. The number of heavy rainfall events will increase in the
+future against a decrease in total rainy days in a year (Wassmann and
+Dobermann, 2007); this can potentially reduce water availability for
+crop growth because during heavy rainfall events runoﬀ is relatively
+high and there is only limited water inﬁltration into the soil (Challinor
+et al., 2004). Another major concern for late planting is the reduced
+growth duration. Higher temperatures, by accelerating plant growth
+rate, reduce growth duration leading to shorter grain ﬁlling period,
+varying from 25 days in tropics to 35 days in temperate zones
+(Swaminithan, 1984). However, selection of a suitable crop variety can
+mitigate the impact of higher temperatures (Challinor et al., 2005).
+Therefore, a suitable crop variety that can withstand higher tempera-
+tures and heavy rainfall events is required for late planting strategies.
+
+4.3. Planting date related temperature stress on Boro rice
+
+The panicle initiation stage is sensitive to low-temperature damage,
+whereas the ﬂowering stage is more sensitive to high-temperatures;
+both cases can cause spikelet sterility (Shelley et al., 2016). At present,
+early planted Boro rice in Bangladesh often faces low-temperature stress
+at both vegetative and reproductive stages (Nahar et al., 2009). In
+contrast, the late Boro rice often encounters high temperature stress at
+
+the reproductive stage (Shelley et al., 2016). Our study indicate a high
+chance of temperature stress for normal and late planting. The yield of
+Boro rice may decline with late sowing due to greater exposure to high
+temperature during anthesis (Ahmed et al., 2016). A study in Sri Lanka
+by Dharmarathna et al. (2014) indicates that dry season rice yield
+would increase when the planting date is advanced by one month. Both
+daily maximum and minimum temperatures will increase in the future
+due to global warming, which will reduce the chance of low-tempera-
+ture damage during panicle initiation but increase the risk of high-
+temperature damage during booting and ﬂowering. Both day- and
+night-time high-temperatures are likely to become more crucial in the
+future. Our results indicate that, day time heat stress can be more
+crucial than the night time heat stress for Boro rice in the North-West
+Bangladesh. The night time heat stress can be avoided by selecting an
+early planting date. However, Boro rice may be aﬀected by day time
+heat stress even in case of early planting. More studies on Boro rice
+cultivars are required to minimize the heat stress induced spikelet
+sterility. Studies on heat escape mechanism by early-morning ﬂowering
+(Bheemanahalli et al., 2017; Hirabayashi et al., 2014; Ishimaru et al.,
+2010), heat avoidance through transpiration cooling (Julia and
+Dingkuhn, 2013), and heat tolerance to increase resilience by altering
+cellular metabolites (Jagadish et al., 2009) need more attention. A high-
+temperature tolerant rice variety is, therefore, highly recommended for
+this region and, thereafter, a date between normal and late planting
+may be chosen based on temperature-tolerance capacity of the selected
+cultivar. Otherwise, an early planting would be more suitable to avoid
+the risk of high temperature stress and, in such a case, other options of
+water demand management need to be explored instead of the delayed
+planting option for the reduction of water use.
+
+4.4. Planting date change: an adaptation strategy
+
+For wet season crops like Aman rice, farmers can adjust planting
+date following the availability of rainfall. The erratic intensity and
+distribution of pre-monsoon rainfall contributes to considerable varia-
+tions in sowing dates between diﬀerent areas, sometimes within short
+distances (Brammer, 1987). However, for dry season crops like Boro
+rice, it is more diﬃcult to choose a suitable trans−/planting date, be-
+cause the rainfall availability varies during the time period when the
+rice plant requires it most.
+
+Changing planting date may provide some adaptation options, but
+that will be limited in the Indo-Gangetic plain by low winter tem-
+peratures (Wassmann and Dobermann, 2007). Our results indicate, the
+option of changing planting date, as an adaptation strategy, will be
+limited by high temperature stress, especially in the case of late
+planting choices. In the Indo-Gangetic plain, delayed planting is a well-
+recognized cause of yield reduction in rice and wheat (Wassmann and
+Dobermann, 2007). Therefore, identiﬁcation of the best or optimum
+planting date may be a great challenge for the future, especially in case
+of non-availability of temperature-tolerant varieties.
+
+The risk of yield reduction of Boro rice due to both heat stress and
+heavy rainfall/storm during harvesting period is high for the late
+planting. Since, the heat-stress induced risk may not vary much
+throughout the study region, it can be eliminated by choosing a tem-
+perature-tolerant variety. But, the heavy shower/storm-related risk can
+considerably vary depending on local geographic conditions, drainage
+capacity, etc. in the region. Estimation of return period and better
+forecast of extreme rainfall events/storms can help to reduce this risk.
+Since irrigation demand is much less for late planting, farmers under
+water-limited situation can be recommended to choose a late-planting
+date taking into account of the impacts of high temperature stress.
+Karim et al. (2012) reported signiﬁcant reduction in rice yield due to
+lack of available water for early planting, especially before 28th Jan-
+uary. The main limitation of late planting is the increased chance of
+temperature stress during the critical stage of Boro rice. Climate change
+may expose rice yield more vulnerable to transplanting date, predicting
+
+139
+
+T.K. Acharjee et al.
+
+Agricultural Systems 168 (2019) 131–143
+
+signiﬁcant yield reduction as transplanting date is delayed, especially
+after 15 January (Basak et al., 2009). Another concern for late planting
+is the increased possibility of heavy rainfall during rice harvesting that
+cause crop failure. Late planting may also prevent the next crop from
+being obtained the suitable condition later in the season (Matthews
+et al., 1997). However, the late planting of temperature-tolerant culti-
+vars would be the best choice for water-limited regions. For regions
+with high water availability, the early planting of a long-duration high-
+yielding cultivar would be the optimal choice in the future. Any long-
+duration variety is not recommended for the low-lying Haor areas
+where ﬂash ﬂoods may cause damage to Boro rice before harvesting.
+
+Many investigators at several agricultural research institutes are
+working to improve rice cultivars by incorporating tolerance to
+drought, ﬂood and salinity. Most rice varieties, so far developed in
+Bangladesh, cannot withstand high-temperature stresses (Shelley et al.,
+2016). Development of heat-tolerant rice cultivars is, therefore, highly
+recommended. This will not only increase crop yield but may also re-
+duce irrigation requirement by adjusting planting date.
+
+5. Conclusions
+
+A delay in trans-/planting date enhances maturity of Boro rice and,
+
+Appendix A
+
+consequently, reduces potential crop water requirement compared to
+early planting. Further reduction in irrigation requirement under late
+planting occurs because of increased rainfall availability during the
+later periods of crop growth. Hence, the late planting is a good choice
+for the future from a water demand perspective. However, there will be
+more chances of both day- and night-time heat stress for late compared
+to early planting strategies of Boro rice. Shift of trans−/planting dates
+may bring more ﬂuctuations in available rainfall and irrigation re-
+quirements for long duration cultivars than short duration cultivars.
+Although, shifting the planting date of the crop has the potential to
+substantially reduce irrigation requirement, the option is, however,
+highly limited by the possible high temperature stress. Therefore, de-
+velopment of temperature-tolerant rice variety is a pre-requisite to re-
+duce irrigation requirement by choosing late trans−/planting date.
+
+Acknowledgement
+
+The authors sincerely acknowledge the Nuﬃc NICHE-BGD-155
+project for granting the fellowship to Tapos Kumar Acharjee for his PhD
+study at Wageningen University and Research, the Netherlands.
+
+Fig. A.1. Future changes in monthly rainfall in excess of evapotranspiration.
+
+140
+
+T.K. Acharjee et al.
+
+Agricultural Systems 168 (2019) 131–143
+
+Fig. A.2. Future monthly rainfall distribution and percent change (average of ﬁve models) in Bogra district; the error bars indicate variations by diﬀerent model
+estimates.
+
+Fig. A.3. Estimated beginning and end date of critical period of Boro rice in Bogra under six diﬀerent transplanting dates for RCPs 4.5 and 8.5 and two future periods
+2035e65 (2050s) and 2065e95 (2080s) for ﬁve models (1 = CNRM-CM5, 2 = EC-Earth, 3 = HadGEM2-ES, 4 = IPSL-CM5A-LR, and 5 = MPI-ESM-LR).
+
+141
+
+T.K. Acharjee et al.
+
+Agricultural Systems 168 (2019) 131–143
+
+Fig. A.4. Growth-stage-days and percent increase in growth-stage-days (average of ﬁve models) for long-duration cultivars (top) compared to that for usual cultivars
+(bottom) for six diﬀerent transplanting dates for RCPs 4.5 and 8.5 and two future periods 2035e65 (2050s) and 2065e95 (2080s) in Bogra.
+
+References
+
+Acharjee, T.K., Halsema, G., Ludwig, F., Hellegers, P., 2017. Declining trends of water
+requirements of dry season Boro rice in the North-West Bangladesh. Agric. Water
+Manag. 180, 148–159.
+
+Acharjee, T.K., Ludwig, F., van Halsema, G., Hellegers, P., Supit, I., 2017. Future changes
+
+in water requirements of Boro rice in the face of climate change in North-West
+Bangladesh. Agric. Water Manag. 194, 172–183.
+
+Ahmed, S., Humphreys, E., Chauhan, B.S., 2016. Optimum sowing date and cultivar
+
+duration of dry-seeded boro on the high Ganges river ﬂoodplain of Bangladesh. Field
+Crop Res. 190, 91–102.
+
+Barrow, E., Maxwell, B., Gachon, P., 2004. Climate Variability and Change in Canada:
+
+Past, Present and Future. ACSD science assessment series.
+
+Basak, J.K., Ali, M.A., Islam, M.N., Alam, M.J.B., 2009. Assessment of the eﬀect of climate
+
+change on boro rice production in Bangladesh using CERES-Rice model. In:
+Proceedings of the International Conference on Climate Change Impacts and
+Adaptation Strategies for Bangladesh, pp. 103–113.
+
+Basak, J.K., Ali, M.A., Islam, M.N., Rashid, M.A., 2010. Assessment of the eﬀect of climate
+change on boro rice production in Bangladesh using DSSAT model. J. Civ. Eng. 38,
+95–108 IEB).
+
+Bates, B., Kundzewicz, Z., Wu, S., 2008. Climate Change and Water.
+
+Intergovernmental
+
+Panel on Climate Change Secretariat.
+
+Bheemanahalli, R., Sathishraj, R., Manoharan, M., Sumanth, H., Muthurajan, R.,
+
+Ishimaru, T., Krishna, J.S., 2017. Is early morning ﬂowering an eﬀective trait to
+minimize heat stress damage during ﬂowering in rice? Field Crop Res. 203, 238–242.
+
+Biemans, H., Speelman, L., Ludwig, F., Moors, E., Wiltshire, A., Kumar, P., Gerten, D.,
+
+Kabat, P., 2013. Future water resources for food production in ﬁve South Asian river
+basins and potential for adaptation—A modeling study. Sci. Total Environ. 468,
+S117–S131.
+
+Brammer, H., 1987. Drought in Bangladesh: lessons for planners and administrators.
+
+Disasters 11, 21–29.
+
+Challinor, A., Wheeler, T., Craufurd, P., Slingo, J., 2005. Simulation of the impact of high
+
+temperature stress on annual crop yields. Agric. For. Meteorol. 135, 180–189.
+
+Challinor, A., Wheeler, T., Craufurd, P., Slingo, J., Grimes, D., 2004. Design and opti-
+
+misation of a large-area process-based model for annual crops. Agric. For. Meteorol.
+124, 99–120.
+
+Chowdhury, S., Al-Zahrani, M., Abbas, A., 2013. Implications of Climate Change on Crop
+
+Water Requirements in Arid Region: An Example of Al-Jouf. Journal of King Saud
+University – Engineering Sciences, Saudi Arabia.
+
+Chun, J.A., Li, S., Wang, Q., Lee, W.-S., Lee, E.-J., Horstmann, N., Park, H., Veasna, T.,
+Vanndy, L., Pros, K., 2016. Assessing rice productivity and adaptation strategies for
+Southeast Asia under climate change through multi-scale crop modeling. Agric. Syst.
+143, 14–21.
+
+Clarke, D., Smith, M., El-Askari, K., 2001. CropWat for Windows: User Guide. (IHE.).
+Dharmarathna, W., Herath, S., Weerakoon, S., 2014. Changing the planting date as a
+climate change adaptation strategy for rice production in Kurunegala district, Sri
+Lanka. Sustain. Sci. 9, 103–111.
+
+Doria, R.O., 2010. Impact of Climate Change on Crop Water Requirements in Eastern
+
+Canada. Department of Bioresource Engineering. McGill University.
+
+Doria, R., Madramootoo, C., Mehdi, B., 2006. Estimation of Future Crop Water
+
+Requirements for 2020 and 2050, Using CROPWAT, EIC Climate Change Technology.
+IEEE. pp. 1–6.
+
+Eccel, E., 2012. Estimating air humidity from temperature and precipitation measures for
+
+modelling applications. Meteorol. Appl. 19, 118–128.
+
+Farrell, T., Fox, K., Williams, R., Fukai, S., 2006. Genotypic variation for cold tolerance
+
+during reproductive development in rice: screening with cold air and cold water.
+
+Field Crop Res. 98, 178–194.
+
+Fujita, K., 2010. Re-Thinking Economic Development. The Green Revolution, Agrarian
+
+Structure and Transformation in Bangladesh. Kyoto University Press, Japan.
+
+Gomosta, A., Quayyum, H., Mahbub, A., 2001. Tillering Duration and Yielding Ability of
+Rice Varieties in the Winter Rice Season of Bangladesh. International Rice Research
+Conference, Los Baños, Laguna (Philippines) 31 Mar-3 Apr 2000. IRRI.
+
+Hazeleger, W., Severijns, C., Semmler, T., Stefanescu, S., Yang, S., Wang, X., Wyser, K.,
+Dutra, E., Baldasano, J.M., Bintanja, R., 2010. EC-Earth. Bull. Am. Meteorol. Soc. 91,
+1357.
+
+Hijioka, Y., Lin, E., Pereira, J.J., Corlett, R.T., Cui, X., Insarov, G.E., Lasco, R.D., Lindgren,
+
+E., Surjan, A., 2014. Asia. In: Barros, V.R., Field, C.B., Dokken, D.J., Mastrandrea,
+M.D., Mach, K.J., Bilir, T.E., Chatterjee, M., Ebi, K.L., Estrada, Y.O., Genova, R.C.,
+Girma, B., Kissel, E.S., Levy, A.N., MacCracken, S., Mastrandrea, P.R., White, L.L.
+(Eds.), Climate Change 2014: Impacts, Adaptation, and Vulnerability. Part B:
+Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of
+the Intergovernmental Panel on Climate Change. Cambridge University Press,
+Cambridge, United Kingdom and New York, NY, USA, pp. 1327–1370.
+
+Hirabayashi, H., Sasaki, K., Kambe, T., Gannaban, R.B., Miras, M.A., Mendioro, M.S.,
+
+Simon, E.V., Lumanglas, P.D., Fujita, D., Takemoto-Kuno, Y., 2014. qEMF3, a novel
+QTL for the early-morning ﬂowering trait from wild rice, Oryza oﬃcinalis, to miti-
+gate heat stress damage at ﬂowering in rice, O. sativa. J. Exp. Bot. 66, 1227–1236.
+Holbo, H., 1981. A dew-point hygrometer for ﬁeld use. Agric. Meteorol. 24, 117–130.
+IPCC, 2013. Summary for Policymakers. In: Stocker, T.F., Qin, D., Plattner, G.-K., Tignor,
+
+M., Allen, S.K., Boschung, J., Nauels, A., Xia, Y., Bex, V., Midgley, P.M. (Eds.),
+Climate Change 2013: The Physical Science Basis. Contribution of Working Group I to
+the Fifth Assessment Report of the Intergovernmental Panel on Climate Change.
+Cambridge University Press, Cambridge, United Kingdom and New York, NY, USA.
+Ishimaru, T., Hirabayashi, H., Ida, M., Takai, T., San-Oh, Y.A., Yoshinaga, S., Ando, I.,
+
+Ogawa, T., Kondo, M., 2010. A genetic resource for early-morning ﬂowering trait of
+wild rice Oryza oﬃcinalis to mitigate high temperature-induced spikelet sterility at
+anthesis. Ann. Bot. 106, 515–520.
+
+Jagadish, S., Muthurajan, R., Oane, R., Wheeler, T.R., Heuer, S., Bennett, J., Craufurd,
+
+P.Q., 2009. Physiological and proteomic approaches to address heat tolerance during
+anthesis in rice (Oryza sativa L.). J. Exp. Bot. 61, 143–156.
+
+Julia, C., Dingkuhn, M., 2013. Predicting temperature induced sterility of rice spikelets
+
+requires simulation of crop-generated microclimate. Eur. J. Agron. 49, 50–60.
+
+Kabir, M., Howlader, M., Biswas, J., Mahbub, M., Elahi, M.N.E., 2016. Probability of low
+
+temperature stress at diﬀerent growth stages of Boro rice. Bangladesh Rice J 19,
+19–27.
+
+Karim, M.R., Ishikawa, M., Ikeda, M., Islam, M.T., 2012. Climate change model predicts
+33% rice yield decrease in 2100 in Bangladesh. Agron. Sustain. Dev. 32, 821–830.
+Krishnan, P., Ramakrishnan, B., Reddy, K.R., Reddy, V., 2011. High-temperature eﬀects
+
+on rice growth, yield, and grain quality. In: Advances in Agronomy. Elsevier, pp.
+87–206.
+
+Laborte, A., Nelson, A., Jagadish, K., Aunario, J., Sparks, A., Ye, C., Redoña, E., 2012. Rice
+
+feels the heat. In: Rice Today, July–September, 30–31.
+
+Mahmood, R., 1997. Impacts of air temperature variations on the boro rice phenology in
+
+Bangladesh: implications for irrigation requirements. Agric. For. Meteorol. 84,
+233–247.
+
+Mainuddin, M., Kirby, M., Hoanh, C.T., 2011. Adaptation to climate change for food
+
+security in the lower Mekong Basin. Food Security 3, 433–450.
+
+Matsui, T., Omasa, K., Horie, T., 2001. The diﬀerence in sterility due to high temperatures
+during the ﬂowering period among japonica-rice varieties. Plant Production Science
+4, 90–93.
+
+Matthews, R.B., Kropﬀ, M.J., Bachelet, D., van Laar, H.H., 1995. Modeling the impact of
+climate change on rice production in Asia. Int. Rice Res. Inst.Modeling the impact of
+climate change on rice production in Asia. Int. Rice Res. Inst.
+
+142
+
+T.K. Acharjee et al.
+
+Agricultural Systems 168 (2019) 131–143
+
+Shah, F., Huang, J., Cui, K., Nie, L., Shah, T., Chen, C., Wang, K., 2011. Impact of high-
+temperature stress on rice plant and its traits related to tolerance. J. Agric. Sci. 149,
+545–556.
+
+Shahid, S., 2011. Trends in extreme rainfall events of Bangladesh. Theor. Appl. Climatol.
+
+104, 489–499.
+
+Shelley, I.J., Takahashi-Nosaka, M., Kano-Nakata, M., Haque, M.S., Inukai, Y., 2016. Rice
+
+Cultivation in Bangladesh: Present Scenario, Problems, and Prospects.
+
+Shrestha, S., Gyawali, B., Bhattarai, U., 2013. Impacts of Climate Change on Irrigation
+
+Water Requirements for Rice–Wheat Cultivation in Bagmati River Basin. Nepal.
+
+Swaminithan, M.S., 1984. Rice. Sci. Am 250, 81–93.
+Van Vuuren, D.P., Edmonds, J., Kainuma, M., Riahi, K., Thomson, A., Hibbard, K., Hurtt,
+
+G.C., Kram, T., Krey, V., Lamarque, J.-F., 2011. The representative concentration
+pathways: an overview. Clim. Chang. 109, 5–31.
+
+Voldoire, A., Sanchez-Gomez, E.Y., Mélia, D.S., Decharme, B., Cassou, C., Sénési, S.,
+
+Valcke, S., Beau, I., Alias, A., Chevallier, M., 2013. The CNRM-CM5. 1 global climate
+model: description and basic evaluation. Clim. Dyn. 40, 2091–2121.
+
+Wada, Y., Wisser, D., Eisner, S., Flörke, M., Gerten, D., Haddeland, I., Hanasaki, N.,
+
+Masaki, Y., Portmann, F.T., Stacke, T., 2013. Multimodel projections and un-
+certainties of irrigation water demand under climate change. Geophys. Res. Lett. 40,
+4626–4632.
+
+Wassmann, R., Dobermann, A., 2007. Climate Change Adaptation through Rice
+
+Production in Regions with High Poverty Levels.
+
+Weedon, G., Gomes, S., Viterbo, P., Shuttleworth, W.J., Blyth, E., Österle, H., Adam, J.,
+Bellouin, N., Boucher, O., Best, M., 2011. Creation of the WATCH forcing data and its
+use to assess global and regional reference crop evaporation over land during the
+twentieth century. J. Hydrometeorol. 12, 823–848.
+
+WMO, 1979. Technical Regulations.
+Yoshida, S., 1981. Fundamentals of rice crop science Int. Rice Res. Inst.Fundamentals of
+
+I WMO, Geneva, Switzerland pp. I-Ap-C-3.
+
+rice crop science Int. Rice Res. Inst.
+
+Matthews, R., Kropﬀ, M., Horie, T., Bachelet, D., 1997. Simulating the impact of climate
+change on rice production in Asia and evaluating options for adaptation. Agric. Syst.
+54, 399–425.
+
+Miller, P., Lanier, W., Brandt, S., 2001. Using growing degree days to predict plant stages.
+In: Ag/Extension Communications Coordinator, Communications Services. Montana
+State University-Bozeman, Bozeman, MO.
+
+Mojid, M., Rannu, R., Karim, N., 2015. Climate change impacts on reference crop eva-
+
+potranspiration in North-West hydrological region of Bangladesh. Int. J. Climatol. 35,
+4041–4046.
+
+Nahar, K., Biswas, J., Shamsuzzaman, A., Hasanuzzaman, M., Barman, H., 2009.
+
+Screening of indica rice (Oryza sativa L.) genotypes against low temperature stress.
+Bot. Res. Int 2, 295–303.
+
+Nakagawa, H., Horie, T., Matsui, T., 2003. Eﬀects of climate change on rice production
+and adaptive technologies. In: International Rice Research Conference. International
+Rice Research Institute, Beijing, China 16–19 September 2002.
+
+Oh-E, I., Saitoh, K., Kuroda, T., 2007. Eﬀects of high temperature on growth, yield and
+
+dry-matter production of rice grown in the paddy ﬁeld. Plant Production Sci 10,
+412–422.
+
+Parry, M., Canziani, O., Palutikof, J., van der Linden, P.J., Hanson, C.E., 2007. Climate
+Change 2007: Impacts, Adaptation and Vulnerability. Cambridge University Press,
+Cambridge.
+
+Perez, F., Hosen, A., 1987. Eﬀect of Simulated Rain on Head Rice Yields of Varieties
+Under Delayed Harvest. (International Rice Research Newsletter (Philippines)).
+
+Prasad, P., Boote, K., Allen Jr., L., Sheehy, J., Thomas, J., 2006. Species, ecotype and
+
+cultivar diﬀerences in spikelet fertility and harvest index of rice in response to high
+temperature stress. Field Crop Res. 95, 398–411.
+
+Satake, T., Matsuo, T., 1995. High temperature injury, Science of the rice plant. Food
+
+Agricultural Policy Res Centre 2, 805–812.
+
+Satake, T., Yoshida, S., 1978. High temperature-induced sterility in indica rices at ﬂow-
+
+ering. Japanese J. Crop Science 47, 6–17.
+
+143
+
+

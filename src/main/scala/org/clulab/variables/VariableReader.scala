@@ -24,6 +24,7 @@ object VariableReader {
     for(file <- FileUtils.findFiles(inputDir, ".txt")) {
       val text = FileUtils.getTextFromFile(file)
       val filename = file.toString.split("/").last
+      println(filename)
       val (doc, mentions,context)  = vp.parse(text)
       println(s"Writing mentions from doc ${filename} to $outputFile")
       outputMentionsToTSV(mentions, doc, context, filename, pw)

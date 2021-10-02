@@ -1,0 +1,2055 @@
+Family Prestige as Old-Age Security: 
+
+Evidence from Rural Senegal 
+
+Jean-Luc Demonsant1
+
+May 2007 
+
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+
+ABSTRACT 
+
+The crux of this paper is to find out the motivations of migrants to support their 
+ageing  parents  in  the  village.  I  conducted  a  household  survey  in  the  Senegal 
+River Valley designed to take due account of the local socio-political structure. 
+The empirical results suggest that while belonging to a prestigious family lowers 
+the probability of migrating, it raises the probability of frequently remitting to 
+the  patriarch.  Thus  migration  can  either  be  seen  as  an  individual  decision  to 
+escape  from  a  poor  social  position  or,  conversely,  as  a  family  decision  to 
+maintain its dominant position in the village. 
+
+ 
+ 
+Keywords: Migration; Remittances; Social Stratification; Old-Age Support. 
+ 
+JEL Classification: O12; D12; J62 
+ 
+
+                                                 
+1 ARQADE, Toulouse School of Economics, Manufacture des Tabacs - Aile Jean-Jacques Laffont, 21 allées 
+de  Brienne,  31000  Toulouse,  France;  jean-luc.demonsant@univ-tlse1.fr.  For  my  research  in  Senegal,  I 
+benefited  from  financial  support  from  both  the  ministry  in  charge  of  Higher  Education  (Aires  Culturelles 
+grant, 2001) and the ministry of Foreign Affairs (Lavoisier grant, 2003-04). First of all, I would like to thank 
+my supervisor, Jean-Paul Azam for his encouraging support and insightful suggestions. I also thank seminar 
+participants in Toulouse, Dakar, Paris and Bordeaux for providing useful comments. Last but not least, I am 
+extremely  grateful  to  Monica  Ramirez  and  Anthony  Stenton  for  doing  a  great  job  in  tidying  up  stylistic 
+mistakes on previous drafts of this paper. I am solely responsible for all remaining omissions or errors. 
+
+ 
+
+1
+
+‘When a young man considers migrating, he must keep in mind the day when he will come 
+back.’2
+
+INTRODUCTION 
+
+In  contrast  to  cases  of  elderly  abuse  reported  in  many  developing  countries  (see  WHO 
+2002),  some  migrants  do  make  huge  transfers  to  their  elderly  parents.  What  kind  of 
+enforcement  mechanisms  exist  to  make  them  abide  by  this  sharing  rule  despite 
+geographical distance? What do the older parents have to offer in return? My study does 
+not pretend to draw universal conclusions on migration and remittances behaviour, but is 
+rather  rooted  in  the  local  cultural  context  of  my  fieldwork  in  rural  Northern  Senegal, 
+although it could well be extended to other types of village societies featuring gerontocracy 
+embedded in a social stratification. In a broad sense, it seems rather irrelevant to study rural 
+household  economics  without  taking  due  account  of  the  socio-political  structure  of  the 
+village.  For  instance,  too  often  emphasis  has  been  placed  on  ethnic  diversity,  ignoring 
+social divisions within ethnic groups. However, it is well documented that many Sahelian 
+societies  are  based  on  a  so-called  ‘caste  system’,  which  is  still  very  pervasive  in  some 
+areas.  Strikingly,  ethnic  groups  that  historically  make  up  the  majority  of  Sub-Saharan 
+migrants  in  France,  originate  from  the  same  area  -the  Senegal  River  Valley-  and  are 
+renowned  for  being  very  attached  to  their  traditions,  and  in  particular  their  officially 
+abolished  social  stratification.  Here  is  some  insight  into  why  this  may  not  be  purely 
+fortuitous. On the one hand, the fact that high status families have greater needs in terms of 
+prestige expenses to signal that they deserve their rank has surprisingly been overlooked 
+when  studying  migration  economics3.  Without  any  doubt  this  holds  true  anywhere:  our 
+Western  society’s  consumption  rites  have  great  similarities  with  conspicuous  spending 
+which  has  been  described  by  anthropologists  in  other  non-Western  societies  (i.e.  the 
+‘potlatch’...).  Furthermore,  this  should  even  be  stronger  in  highly  hierarchical  societies, 
+where belonging to a high status family gives rise to substantial privileges. On the other 
+hand, it has previously been argued that the aspiration to inherit may be a strong motive for 
+remittances. If there are no potential valuable physical bequests, the family status becomes 
+the desired symbolic bequest. For instance, in her Ph.D. thesis, Flore Gubert showed how 
+among  the  Soninke,  aristocratic  families  send  out  migrants  to  insure  their  pride  (Gubert 
+2000). I find comparable but slightly different results studying old-age support among the 
+neighbouring Haalpulaaren. These results yield different policy implications. 
+Nevertheless, when studying old-age support, the only relevant case for economists arises 
+when the child leaves his parents’ home. Transfers between separate households have the 
+advantage of being observable whereas daily and continuous exchanges among coresidents 
+are  almost  impossible  to  disentangle,  or  indeed  to  measure.  In  developing  countries  it  is 
+mostly the case that coresidence is the norm, except when migration enters the picture. One 
+cannot conclude that non-migrants are not supporting their parents, but when leaving his 
+parent’s home, the migrant may also turn his back on his family. So, the focus will be on 
+migrants and their remitting behaviour. As in many village societies, gerontocracy is the 
+rule within the local political power. However, this may lead to erroneous predictions as far 
+as old-age support is concerned. Indeed, if elders drew their authority from strong peer and 
+                                                 
+2. Pulaar saying, my translation. 
+3. With the notable exception of Lucas and Stark (1985). 
+
+ 
+
+2
+
+face-to-face pressure in the village, distance should trigger rebellion. 
+Results from my survey data show that both migration and remittance choices of a son are 
+linked with the social ranking of his father4 within the traditional village society. Indeed, it 
+appears that belonging to a low status family raises the probability of migrating, whereas 
+the migrants from high status families are more likely to remit. Why are low status migrants 
+more likely to turn their back on their family while high status migrants often constitute the 
+main  family  support?  In  reality,  two  opposing  motives  for  migrating  seem  to  come  into 
+play, depending on the position of the migrant’s family in the social ladder of the village. 
+Migration  can  be  seen  as  a  means  either  to  escape  from  a  poor  social  position,  or 
+conversely to maintain one’s dominant position. The first case is very similar to Luke and 
+Munshi  (2005),  where  the  most  disadvantaged  group  -  in  the  South  Indian  context,  low 
+caste women - migrates to gain social mobility. By contrast, in the second case, the migrant 
+intends to come back in the village to benefit from the advantageous position of his father. 
+As a result, he will have to keep up his own rank by giving his parents the financial means 
+to sustain their status. As in Gubert (2000), remittances are embedded in a broader family 
+arrangement  aimed  at  insuring  the  pride  of  the  family.  In  this  paper,  I  will  focus  on  the 
+enforcement mechanisms ageing parents have at hand to elicit the loyalty of their migrant 
+son to the family contract. 
+In the second section, I will position my framework in the microeconomics literature on 
+transfer  motives  and,  in  particular,  old-age  support  in  developing  countries.  The  third 
+section draws on the cultural context of the fieldwork, i.e. the Haalpulaaren of the Senegal 
+River Middle Valley, to place this study in perspective with other social sciences, and my 
+own  field  experience.  In  the  fourth  section,  I  will  briefly  describe  the  theoretical 
+framework, emphasizing the role of family prestige as an enforcement device of old-age 
+support  arrangements.  The  fifth  section  displays  the  empirical  strategy  -  from  the  data 
+collection process to the econometric specification - developed to highlight the relevance of 
+this hypothesis. The sixth part will present the results based on my household survey, along 
+with additional qualitative evidence that support this scenario. Finally, I will conclude with 
+some policy implications on migration and development. 
+
+REVIEW OF MICROECONOMIC LITERATURE 
+
+Old-age support and social status 
+
+Cases  of  elder  abuse  can  be  found  in  Africa  despite  mainstream  opinion  that  respect 
+towards elders is the norm (see Ferreira 2005). Miguel (2003), for instance, analyzed the 
+extreme  situation  in  which  elderly  widows  were  either  killed  or  expelled  at  times  of 
+hardships. He highlighted the positive correlation between drought shocks and increases in 
+numbers of witch killings. On the other (brighter!) end of the spectrum, one can reasonably 
+wonder why migrants send substantial parts of their earnings to their ageing parents who 
+stayed behind in the village, and do not seem to be in a position to reciprocate. 
+Indeed,  many  studies  point  out  how  poor  elders’  livelihood  highly  depends  on  family 
+support in many developing countries as highlighted in Lloyd-Sherlock (2000). It has been 
+argued that high fertility rates are due to dependence on children for old-age support (see 
+for  instance  Nugent  1985).This  is  due  to  the  absence  of  any  suitable  social  security 
+schemes,  health  insurance  as  well  as  any  formal  pension  program.  The  elderly  becomes 
+                                                 
+
+4. I will indeed focus on father to son relationship as Haalpulaar is a patrilineal society. 
+
+ 
+
+3
+
+dependent on either their asset stocks, or their own labour income, or else their children’s 
+support.  Nevertheless  in  many  developing  countries  since  both  financial  institutions  and 
+property rights are insecure, and the currency may be subject to inflation or nominal shocks 
+such as devaluation, there exists no reliable form of asset accumulation whatsoever. Hence 
+with low asset stocks, and when they are unable to work any longer, individuals reaching 
+old-age  do  depend  entirely  on  their  children.  The  number  and  gender  of  children,  along 
+with  the  living  arrangements  (inter-generational  coresidence  or  separate  households)  are 
+important  determinants  of  the  welfare  of  the  elders.  These  traditional  family  support 
+systems  for  elderly  people  are  commonly  believed  to  be  working  relatively  well  due  to 
+specific  cultural  behaviour  such  as  respect  for  elders,  and  the  existence  of  strong  family 
+ties.  Such  analysis  is  based  rather  on  intuition  than  on  serious  empirical  research. 
+Furthermore, economic and social change may gradually put more strain on these informal 
+mechanisms. 
+In semi-arid rural areas, incomes from agriculture are rather precarious, because of weather 
+shocks (periodical times of drought during the dry season followed by floods during the 
+rainy season), or parasite invasions such as recent locusts invasions in the Sahel. In these 
+countries,  malnutrition  is  very  common,  particularly  during  the  lean  season  (soudure  in 
+French): the period when the harvest from the previous year has been exhausted and the 
+next season’s harvest is not yet ripe5. 
+The  quasi-absence  of  both  formal  credit  and  insurance  markets  leads  to  a  variety  of 
+informal coinsurance arrangements in village economies6. Given that positive correlations 
+in  weather  outcomes  diminish  with  distance7,  households  can  allocate  some  members  to 
+different  sectors  via  migration.  Rosenzweig  and  Stark  (1989)  found,  in  rural  India,  that 
+marriages of daughters in distant villages provided some kind of insurance mechanism for 
+the family. Furthermore, despite the fact that urban and foreign jobs present some kind of 
+risks too, these are not correlated with local activities. Indeed, the new economics of labour 
+migration  introduced  by  Stark  (1991),  views  migration  as  an  intrafamily  coinsurance 
+arrangement aimed at providing remittances in case of drops in rural incomes in exchange 
+for assistance in case of unemployment, or covering the expensive costs of migrating (i.e. 
+travelling ticket plus smuggling fees for illegal migrations). 
+If this were the case, one should find a negative correlation between amounts transferred 
+and  the  recipient’s  pre-transfer  income.  It  is  noticeable  that,  in  this  regard,  a  perfect 
+insurance mechanism yields the same result as the pure altruism case. What if remittances 
+are  not  linked  with  the  actual  income  of  the  family  who  stayed  behind,  but  rather  their 
+social needs: family or religious expenses? Indeed in Stark’s (1991) framework, the social 
+status  of  the  family  should  not  enter  the  picture.  Nevertheless  it  has  been  long 
+acknowledged  that  individuals  value  the  esteem  of  others.  Adam  Smith  wrote:  ‘It  is  not 
+wealth  that  men  desire  but  the  consideration  and  good  opinions  that  wait  upon  riches’. 
+Expressions just as the rat race or keeping up with the Joneses appear in many influential 
+economists’ writings in different contexts (in both developed and developing countries). In 
+
+                                                 
+
+5. In the sample, over 45% of families had suffered days of forced fasting at least once in past 2 years. 
+6.Some authors suggest it may well be the other way around: efficient intra-familial arrangements prevent 
+
+the formation of those markets (see Stark 1995 and Kranton 1996). 
+
+7. In the words of Rosenzweig (1988). 
+
+ 
+
+4
+
+hierarchical caste societies this becomes even more relevant, as belonging to a high status 
+caste yields broader perspectives. As a consequence, high-status families are eager to keep 
+up with what is expected from their status: they must face high conspicuous spending to 
+signal that they deserve their rank. 
+The survey was conducted among Haalpulaaren families who are known for still being very 
+attached to the strict hierarchical organization of their society. Following Gubert (2000) I 
+found that the family is not only insuring its income but also its pride: 
+The risk against which the family seeks some insurance is not just the loss of utility due to 
+a consumption shortfall entailed by a negative shock. The family is in fact protecting itself 
+against the shame that would affect the whole clan if the family’s standard of living was to 
+fall below some norm, corresponding to it social status (Azam & Gubert 2005). 
+If distance provides some kind of risk diversification, it yields enforcement problems for 
+both parties involved too. Azam and Gubert (2005) studied the moral hazard problem faced 
+by the migrant: in the village, they showed how families who can rely on remittances, tend 
+to shirk on agricultural activities, and underreport their incomes to their migrants. 
+I will now turn carefully to the family issue: how can the family make sure that the migrant 
+will remit? Indeed, when the migrant is a young son, and the family left behind primarily 
+his old parents8 , they do not seem to be in a position to assist him in return as the mutual 
+insurance contract stipulates, in case of unemployment for instance. 
+
+Commitment without reciprocity 
+
+In  village  economies,  it  is  believed  that  low  monitoring  costs,  along  with  concerns  for 
+reputation  due  to  repeated  interactions,  perform  a  good  enforcement  device.  Coate  and 
+Ravallion (1993) describe how enforcement can occur thanks to reciprocity. Nevertheless 
+in  their  model,  there  is  an  a  priori  symmetry  between  agents  coming  into  play.  With  an 
+infinite horizon, at each period they randomly find themselves either in a position to help or 
+in need of help from the other. Thus, if it were the case, one should observe transfers in 
+both directions over time. ‘So, why individual with a high and secure revenue will share it 
+with  others  while  they  do  not  ever  benefit  from  the  mutual assistance  arrangements?’  in 
+Ambec’s  (2000)  words.  The  same  holds  true  in  my  framework,  where  the  situation  is 
+unbalanced as the son cannot expect any support from his old parents who stayed behind in 
+return  for  his  remittances.  Let  us  review  all  the  mechanisms  that  ageing  parents  could 
+possibly use to prevent their migrating son from defaulting. 
+Firstly, all enforcement issues could be wiped out, if altruism or self-enforcing mechanism 
+came into play. Altruism could indeed solve the puzzle, but all empirical studies show that 
+the Pure Altruism model is never robust to data9. This underlines the fact that there is room 
+for other types of motivation. Altruism also has some adverse side effects. First, the love 
+the parents feel towards their son could make their punishment strategies less credible, as 
+mentioned by Bernheim and Stark (1988). Moreover, parents could rely on their children’s 
+altruism,  knowing  that  in  case  of  hardship  they  would  remit  more.  As  a  result,  parents 
+would not even try to take measures aimed at insuring themselves against negative shocks. 
+
+                                                 
+
+8.  Though  we  will  see  that  in  our  sample  survey,  many  migrants  have  also  other  dependants  (wife, 
+
+children) left in the household, so that there is room for some kind of exchange motive described later. 
+9. See Laferrère and Wolff (2006) for a good review of the empirical literature on transfers' motives. 
+
+ 
+
+5
+
+This is the Samaritan’s dilemma issue addressed by Coate (1995)10. So, apart from love and 
+affection, what is the benefit to the son in taking good care of his old parents? Economists 
+have  tried  since  Samuelson  (1958)  to  model  self-enforcing  inter-generational  social 
+contract.  There  is  an  obvious  problem  in  the  Children  as  Old-Age  Security  model:  if 
+parents, who invest in children to elicit their help when reaching old-age, are rational, what 
+is  the  rationale  behind  the  children  paying  back  their  parents?  A  detailed  analysis  of 
+sustainable  selfish  transfers  between  three  generations  is  the  work  of  Cigno  (1993). 
+According to the so-called Family Constitution model, family transfers are seen as informal 
+loan arrangements, adults being the only generation to earn a living. They lend to children 
+and  repay  their  aging  parents.  It  is  sustainable  if  the  following  family  rule  (a  kind  of 
+collective punishment) is applied: One can deny support to one’s own parents if and only if 
+they did not themselves take good care of their own parents. Thus the coresidence of grand-
+children and grand-parents should be observed along with conspicuous spending by the son 
+to take care of his old parents. As Guttman (2001) pointed out, this optimal rule cannot be 
+implemented if changes in future economic conditions are foreseen (e.g. the introduction of 
+a  reliable  pension  system).  This  is  most  likely  to  be  the  case  in  developing  countries. 
+Consequently, this type of model does not seem suitable to our case, though denying the 
+rights to future family solidarity, is a threat that could play some role, as we will see further 
+on. 
+Overall,  this  literature  remains  highly  theoretical  and  has  few  testable  empirical 
+implications. Let us now turn to credible parent strategies which seem relevant to our case 
+study. 
+
+Some credible enforcement mechanisms 
+
+Practically  speaking,  there  are  several  mechanisms  at  play.  All  contribute  to  make  this 
+family arrangement work to some extent and it would be hard and even impossible to say 
+that one plays a greater role than the others. Four credible strategies which parents could 
+develop at several stages of the parent-child relationship will be briefly reviewed. 
+Preference shaping 
+Parents  could  invest  in  shaping  their  children’s  propensity  for  being  loyal.  In  his  Nobel 
+lecture, Becker (1993) argues that economists have excessively relied on altruism for the 
+enforcement  of  inter-generational  contracts  and  suggested  instead  accounting  for  the 
+endogenous formation of preferences within the family (Becker 1993 and 1996). Parents try 
+to instil a feeling of guilt if children do not respect social norms. In this view, investing in 
+religious and traditional educations which inculcate family values would seem promising to 
+shape a son’s loyalty. I will return to this later when describing traditional Koranic schools 
+in  my  area  of  study.  In  Akerlof’s  (1983)  words,  the  Koranic  school  is  a  ‘loyalty  filter’. 
+However,  manipulative  attempts  to  inculcate  loyalty  seem  likely  to  fail.  To  put  it  more 
+simply: ‘Do as I say not as I do’ is notoriously ineffective. So, alternatively, parents could 
+set the example by taking good care of their own parents. We shall see that the presence of 
+own children in the household could induce the migrant to send remittances. 
+Migrants’ selection 
+                                                 
+
+10.  Coate  recommends  to  send  in-kind  transfers,  such  as  building  irrigation  schemes  in  drought-prone 
+areas, instead of cash. Whereas it is implementable from an NGO's point of view, it seems rather unrealistic 
+from the migrant's perspective... 
+
+ 
+
+6
+
+The patriarch holds precise information on his sons’ character type. He could consequently 
+select the most promising ones, i.e. those who combine both high earnings potential and 
+degrees  of  loyalty.  I  try  in  my  econometric  implementation  to  account  for  this  selection 
+issue by estimating simultaneously migration and remitting behaviours. 
+Exchange motive 
+As in Lucas and Stark (1985), remittances can be seen as paying for services to the family 
+who stayed behind to take care of children or assets of the migrant: cattle, land... In my 
+survey  sample,  many  migrants  do  have  dependants  (spouses,  children)  left  in  the 
+household, so that there is room for some kind of exchange motive. 
+Strategic bequest motive 
+Strategic motives can also enter the picture: parents can threaten their children not to leave 
+them any inheritance if they are not grateful. Thus children enter a competition to get the 
+largest  share  of  the  bequest.  Lucas  and  Stark  (1985)  had  mentioned  it,  but  the  strategic 
+bequest  motive11  model  is  thoroughly  described  in  Bernheim,  Schleifer  and  Summers 
+(1985). Remitting here is done to secure the bequest. Hoddinott (1994) tested this model on 
+rural Kenyan data, where land was the inheritable part at stake. What happens then in a 
+changing  society  when  land  ownership  is  no  longer  sought  after?  Furthermore,  in  most 
+countries,  inheritance  division  is  settled  by  law.  Islam  for  instance  has  very  precise 
+inheritance  sharing  rules:  a  son  gets  one  share  and  a  daughter  gets  half  a  share.  My 
+hypothesis  for  the  enforcement  of  this  old-age  support  arrangement  derives  from  the 
+Strategic  Bequest  Motive.  It  departs  from  their  work  by  introducing  a  symbolic  bequest 
+rather than a physical one, namely: the transmission of the status of the family. The migrant 
+values belonging to a prestigious family because it gives him access to the family’s network 
+while on migration and when returning to the village he will reap the benefits of the status 
+of the family by becoming a notable. 
+
+Other mechanisms 
+
+Nevertheless,  apart  from  these  parent  strategies,  if  the  migrant  is  planning  on  returning, 
+reputation concerns may still exist but not as much with the parents as with the community. 
+Lucas  and  Stark  (1985)  show  that  this  plays  an  important  role  too.  In  their  view,  the 
+migrant may remit ‘to enhance prestige or political influence’ for the days when he will 
+return. Taking good care of one’s parents is a hallmark of reliability. We will see later, that 
+this could be an incentive for migrants seeking wives within the community. The loss of 
+prestige incurred by defaulting sons could also prevent their return for retirement, which is 
+central to many African migrants. Last but not least, the desire to be buried at home is an 
+additional motive to maintain the social status of the family. It is essential for many Muslim 
+migrants, and in particular those from the Senegal River Valley. The main concern is more 
+a deep attachment to homeland, than religious grounds. Many migrants associations were 
+indeed created in order to collect money for the repatriation of dead bodies12. 
+Let  us  now  turn  to  some  cultural  features of  the  surveyed  population  to  better  grasp  the 
+intuitions underlying the study. 
+
+THE HAALPULAAR SOCIETY OF MATAM 
+
+11. Not to be mistaken with the strategic motive for remittances specified by Stark (1995) chapter 4, who 
+
+                                                 
+
+refers to high skilled migrants, which is not the case here. 
+
+12. See Petit (2002) in Marseille, France. 
+
+ 
+
+7
+
+Geographical position 
+
+The  Senegal  River  constitutes  the  border  between  Senegal  and  Mauritania.  The  Middle 
+Valley  is  a  semi-arid  savanna  sandwiched  between  arid  zones  of  Ferlo  and  the  Sahara 
+desert. The harsh climate distinguishes two seasons. From June to August is the wet season 
+with  frequent  showers  and  river  floods.  The  rest  of  the  year  is  the  dry  season  with 
+temperature rising up to 50°C before the first rain. On the fringe of the desert, the soil is 
+poor so the most fertile lands lie by the river banks thanks to alluvial deposits due to the 
+river’s natural flood cycles. The three main economic activities have always been fishing, 
+cattle-herding and agriculture. There are 3 kinds of agriculture: the oldest being rain-fed 
+cropping in the uplands (‘diery’) from June to August, and in the lowlands (‘walo’) cereals 
+are planted after flood recession from September to December, and the most recent being 
+irrigated  cropping.  Main  crops  are  cereals  (mostly  millet,  the  traditional  crop),  rice  (the 
+main  cash  crop)  and  various  vegetables  (tomatoes,  squash,  sweet  potatoes...).  The 
+introduction of water management facilities has reshaped the profits of these activities. 
+During  colonization,  the  French,  and  after  independence,  the  state  both  invested  in  huge 
+irrigation projects, and dams. The idea was that floods were unpredictable and sometimes 
+devastating for villages on the river banks. Irrigation provides year-around crops and the 
+dam is planned to provide electricity to the 3 neighbouring countries, i.e. Mali, Mauritania 
+and Senegal. However the results are mitigated as the energy objective is not compatible 
+with natural floods cycles: so far, floods are artificially maintained, but peasants fear it will 
+not  last.  The  dams  have  also  been  devastating  for  the  fishing  activity,  along  with  the 
+frequent droughts, reaching the point where most of the fish consumed in the valley come 
+from  the  ocean,  usually  dried.  Fishing  has  become  a  marginal  secondary  activity  for 
+fishermen who now engage in boat transportation which becomes a necessity when roads 
+are flooded, as is usually the case for 3 to 4 months a year. Initially irrigation was very 
+promising  but  the  cost  of  oil  and  maintenance  for  motor-pumps,  along  with  the  cost  of 
+fertilizers  and  seeds  make  it  profitable  for  rich  farmers  or  efficient  peasant  cooperatives 
+only. For the vast majority of the peasants of the valley it remains impossible to make a 
+self-sustainable business out of it. As a consequence, nowadays, there are many schemes 
+and water supplies that are badly-kept. In fact, conventional wisdom admits that it is rather 
+difficult to make a decent living out of agricultural activities in the valley. In the meantime, 
+migrants engage in conspicuous consumption either for religious celebrations or in housing, 
+after just a few years abroad. 
+Consequently, I collected data on remittance behaviour in the Senegal River middle valley 
+where  migration  has  long  been  considered  a  better  strategy  than  working  in  irrigated 
+schemes. In this context, the value of ‘physical’ bequests has become close to insignificant 
+for a migrant son. 
+
+Historical background of the Haalpulaaren13
+
+The Haalpulaaren14 make up the majority of the inhabitants in the Middle Valley. Towards 
+the river delta lay the former Walo empire of the Wolof whereas in the upper valley are the 
+Soninke. Haalpulaaren can be found on both banks of the river, further North are the Moors 
+                                                 
+
+13. Based on two main sources: MAS (1959) and Wane (1969). 
+14. Meaning ‘those who speak Pulaar’, i.e. the language of the Fulbe (‘Peuls’ in French). They are also 
+
+known as ‘Toucouleurs’ (or ‘Tukulors’) which sounds derogatory nowadays... 
+
+ 
+
+8
+
+and more to the South in the Ferlo Fulani nomads can be found. Indeed, Haalpulaaren are 
+believed to be descendant of Fulani nomads who settled in the valley and mixed with local 
+populations (Serer, Wolof, Moore, Soninke...). In the Xth century, the region was referred to 
+as  Tekrur  which  is  where  the  name  Tukulors  comes  from15.  It  was  first  annexed  by  the 
+Ghana  Empire,  and  then  the  Mali  Empire,  until  Koly  Tengala  Ba  (a  Denyanke  clan  of 
+Fulani) in the XVIth century, freed the region from the Manding domination and founded 
+the Futa Toro16. Islamization began as early as the IXth century in the area and spread until 
+charismatic  religious  leaders  took  power  in  1776.  The  ‘Torrobe’17  revolution  brought  an 
+end to two centuries of Denyanke dynasty. In the XIXth century, El Hajj Futyu Umar Tall 
+led  a  jihad  recruiting  among  the  Futankobe  to  resist  the  French  army  and  founded  the 
+Macina Empire in modern Mali. 
+The Haalpulaaren are responsible for spreading Islam all over West-Africa, and are highly 
+respected  for  that  in  the  sub-region.  Koly  Tenguela  and  El  Hajj  Umar  are  the  icons  of 
+Haalpulaar  pride,  and  descending  from  them  along  with  other  religious  or  political 
+figureheads of the Futa is the most sought-after social recognition. Another very important 
+aspect of the family’s fame is determined by which social category the family belongs to. 
+The Haalpulaar caste system is rather complex, let us now consider its major features. 
+
+Social stratification 
+
+Traditional Haalpulaar society, like many Sahelian societies, (see Tamari, 1991) is based on 
+a division into three main social categories: the ‘free born’, the artisans (musicians, metal 
+workers...) and the (descendants of) slaves. To give an idea about the complexity of this 
+system, Table 1 translated from Wane (1969) summarizes all categories18. 
+The use of the term ‘caste’ is rather controversial, as it usually refers to the different artisan 
+social sub-categories. In this paper, I refer to the caste system as the whole stratified social 
+organization. 
+Of course nowadays slavery has been abolished and artisans do not necessarily work in the 
+branch of their group’s specialization, but still this classification has some meaning today. 
+Indeed both the artisans and the descendants of slaves suffer from discrimination. Today, 
+this caste-based discrimination mainly consists of marriage constraints, as well as denied 
+access to land, and to political and religious leadership19. In the next section, we shall turn 
+to a brief description of each category, and the main subcategories. 
+The  free-born  (sometimes  called  ‘nobles’,  ‘Rimbe’  in  Pulaar)  make  up  the  majority  and 
+consequently are definitely the most heterogeneous group. The standard designation of the 
+‘free-born’  as  ‘nobles’  may  seem  a  little  misleading,  since  this  group  includes  even  the 
+most impoverished peasants. Indeed, the hereditary aristocratic lineages make up a minority 
+within this category: they are the only families entitled to accede to political power (village 
+chieftainship).  Four  main  subgroups  compose  this  first  category  depending  on  the  main 
+                                                 
+
+15. According to Wane (1969). 
+16. Hence another name for the inhabitants of the region: the Futankobe (‘those of Futa (Toro)’). 
+17.  It  means  ‘beggars for  alms’  in  Pulaar,  as  they  were  studying Koran  and  therefore not  economically 
+
+18. Though it is a benchmark in studies of Haalpulaar society, the main criticism of the Wane classification 
+
+productive. 
+
+is that it omits the cattle-breeders, the Fulbe category, as part of the ‘free-born’. 
+
+19. See for instance Sy (2002). I will also report different discrimination experiences towards those groups 
+
+I witnessed during my stays. 
+
+ 
+
+9
+
+activity they relate to. At the top of the hierarchy are the ‘Torrobe’ who are the religious 
+leaders,  along  with  some  ‘Fulbe’  traditionally  cattle  breeders.  Usually  of  lesser  prestige 
+than former sub-categories are the fishermen (‘Subalbe’) and the warriors (‘Sebe’). 
+The artisans (‘Nyenbe’) are referred to as the ‘casted’ (‘les casté s’ in French) as this group 
+matches best the idea of caste with job specialization (along with the usual endogamous 
+feature it shares with the other categories). All the traditional crafts are represented from 
+the  blacksmith  (‘Waylibe’)  to  the  leather  workers  (‘Sakebe’)  and  the  wood  workers  ( 
+‘Laobe’ ). Along with the craftsmen are the bards (‘Griots’ in French, ‘Aolube’ in Pulaar). 
+Nowadays casted families do not necessarily practice in their specialized activity but they 
+usually still have been transmitting the know-how of their job. They cannot have access to 
+the local political power. 
+At the bottom end of the pyramid are the former slaves (‘Maccube’), rather called captives. 
+In fact at times of wars and ‘jihads’, prisoners ended up as slaves. As a result, many family 
+names  of  slaves  are  of  other  ethnic  group  origins20,  and  as  a  consequence  stigmatized, 
+although  many  slaves  took  the  name  of  their  master.  Although  slave  status  was  legally 
+banned  over  a  century  ago21,  their  status  has  evolved  slowly.  Nowadays,  in  Haalpulaar 
+society  descendants  of  slaves  are  still  expected  to  be  deferential  to  nobles,  to  cook  on 
+festive  occasions  and  sometimes  repair  their  former  master’s  house22.  They  distinguish 
+themselves by their willingness to work hard. An illustration of their position in the society 
+can be found in ‘joking relationships’. Depending on one’s family name, one is allowed to 
+tease people from another clan (one’s joking kin) without offending anybody. Usually the 
+jokes are very humiliating and are centred on either greed for food or calling the other your 
+slave (and the other reciprocates) During my fieldwork, I once had the opportunity to work 
+with a man of slave origin who would systematically refuse to interview people belonging 
+to his joking kinship. No matter how bright an educated he was, he explicitly told me how 
+he felt uncomfortable with such jokes, and did not feel like reciprocating. 
+The main form of discrimination is the fact that only the free born and the most important 
+artisans  may  traditionally  own  the  most  valuable  lands  by  the  river  banks  (‘walo’  in 
+Pulaar). Nowadays, cases can be found of slaves’ families that now own such lands after 
+their  former  masters  gave  them  away  but  it  is  still  rather  an  exception.  Regularly  in 
+Senegalese  newspapers,  there  are  articles  about  mixed  marriages  (‘inter-castes’)  which 
+prove that it is still a scandal, even in the capital city, or abroad23. In villages it is all the 
+more  difficult  for  an  artisan  or  the  descendant  of  slaves  to  marry  a  noble  woman.  As  a 
+consequence, before a marriage occurs, there is always a preliminary enquiry led by the in-
+laws, to make sure of the compatibility between both social categories of the groom and the 
+bride. 
+In reality, it is never the case that all these categories can be found in one village. Usually 
+there are villages founded by fishermen others by warriors, or even slaves usually near to 
+nobles’  villages.  Nevertheless,  there  are  some  rules  that  always  apply:  the  Imam  will 
+                                                 
+
+20. …and usually of noble origins, as the artisans were not enslaved but kept their specialization. 
+21. See Klein (2005) for more details. 
+22.  Each  year  after  the  rainy  season,  traditional  mud  houses  need  to  be  repaired,  especially  the  roof.  I 
+
+witnessed this in two different villages during my stay. See for instance Klein (2005) for similar accounts. 
+
+23. It is interesting to look at the frequency of inter-caste marriages as the subject of many discussions in 
+
+Senegalese forums (often of the diaspora). 
+
+ 
+
+10
+
+always be chosen among the Torrobe, the village chief and notables among the dominant 
+free-born category (fishermen, warriors, Torrobe or Fulbe). These important families have 
+usually taken along their dependent families: their former slaves and artisans. 
+It  is  clear  that  all  these  social  categories  were  not  fixed,  but  that  they  evolved  as  some 
+commoners  have  strategically  been  conferred  a  title  of  nobility  as  a  reward  for  good 
+services, or new warriors recruited among former slaves24... It is important to keep in mind 
+that these categories corresponded to a genuine need for a specific job allocation during the 
+former  era.  The  official  abolition  of  slavery  along  with  the  emergence  of  the  modern 
+market economy render this classification outdated on practical grounds. Nevertheless it is 
+striking how relevant this classification remains in contemporary Haalpulaar culture. There 
+is for instance a set of implicit rules that each group must abide by. These rules are mainly 
+driven  by  ‘the  sense  of  honour’  which  is  specific  to  the  nobles.  Let  us  now  turn  to  this 
+aspect in details and in its implications. 
+
+The Nobles’ Code of Honour 
+
+There  are  many  ways  for  higher  status  individuals  to  distinguish  themselves  from  lower 
+status ones. Bodily posture, where one sits and how one addresses others in public meetings 
+are  manners  of  displaying  one’s  rank.  Typically,  although  not  specific  to  Haalpulaar 
+society, lengthy traditional greetings are relevant to the social status of protagonists. One 
+aspect is the repetition of the family name, which is called ‘yetode’ in Pulaar and literally 
+means ‘the name that honours’. 
+Ly (1966) described the attitude of the Haalpulaar aristocrats very precisely in his thesis. 
+According to Ly, they are characterized by their sense of honour which does not exist in 
+other classes. At the core of this principle, is the importance of always being in the position 
+of giving and never asking. It is by giving and being publicly generous that the noble will 
+be able to demonstrate his worthiness. When belonging to such families it is an unbearable 
+shame  to  have  economic  difficulties.  There  are  great  pressures  to  display  generous 
+behaviour. Maintaining a high social status is expensive as it means giving to their griots 
+and many clients (former slaves, artisans...). The size of the clientele represents the power 
+of the family. Along with the warm-glow effect of giving, griots directly raise the utility of 
+the giver by advertising his generosity, which directly improves his reputation25. Important 
+families  ought  to  give  to  their  former  slaves  and  bards  during  baptisms,  weddings  and 
+religious events. 
+In this traditional view, your birth determines your personality (see Wane 1969 who depicts 
+each caste with a specific personal trait). It is said for instance that one should not trust an 
+artisan  because  he  may  just  be  trying  to  seduce  oneself  in  order  to  receive  gifts.  Not 
+knowing the whole genealogy of one’s family is also a problem: it is the case that former 
+slaves  in  particular  have  lost  track  of  their  ancestors...  Hence  the  similarity  between  the 
+Pulaar  word  for  ‘slave’,  ‘maccube’  and  ‘majjube’  meaning  ‘somebody  who  lost  his/her 
+way’ (Wane, 1969). 
+In  a  stratified  society  ruled  as  a  gerontocracy,  an  old  man  may  benefit  from  an 
+advantageous position in local politics if and only if he belongs to a high ranked family. 
+                                                 
+
+24.  The  well-documented  historical  novel  Les  Peuls  by  Tierno  Monénembo  perfectly  illustrates  how 
+
+mobile these social categories were over generations. 
+
+25. See Azam (1995) for an interesting economic interpretation of such norm. 
+
+ 
+
+11
+
+Only a few families have a say in choosing the village leader, and even less have a chance 
+to  become  one.  Hence,  the  family  name  becomes  a  valuable  symbolic  bequest  for  such 
+important families. 
+It  is  well  known  that  nowadays,  many  former  slaves,  or  bards  take  advantage  of  their 
+position  too,  and  like  to  remind  their  former  masters  of  their  duty  to  provide  them  with 
+gifts. Thus respecting this social pressure to give requires high income. Migration appears 
+as a solution to finance these conspicuous expenses. 
+
+The Baraka motive 
+
+I was told many times during my investigations (both in France among the Diaspora, and in 
+Senegal)  that  a  very  strong  motivation  for  remitting  is  to  earn  blessings  and  prayers  for 
+felicity. Here religion and traditional beliefs interfere. 
+Indeed  there  are  some  mystical  practices  in  Haalpulaar,  Wolof  and  Serer  traditions, 
+consisting  in  calling  the  migrant  to  come  back  home  (Sylla  &  M'Baye  1991).  There  are 
+legends26  about  migrants  coming  back  home  in  a  rush  and  losing  memory  of  how  this 
+happened and then going insane. This is said to be adapted as a last resort, a retaliation on 
+an unreliable son. 
+Repeatedly  I  was  told  on  my  first  visit  in  Senegal  and  many  times  afterwards  also  by 
+migrants in France, that it was very important to be near your dying parents as they will 
+transmit the baraka of the whole dynasty through their last blessing27. Indeed a dying old 
+man will call his beloved sons, and give them his final blessing: the ‘duhahu’ (in Pulaar) 
+which gives baraka (or ‘barka’ in Pulaar). This Islamic word could roughly be translated as 
+Allah’s blessing, and it has strong influence throughout the whole Islamic world28. It is a 
+rather complicated concept as many anthropologists are still trying to properly define it. It 
+is important to bear in mind that the final blessing is strongly linked to good luck, wealth, 
+happiness,  health,  fertility,  and  social  success.  Being  rich  and  healthy  is  not  a  sufficient 
+condition to possess baraka: Isn’t he old and abandoned today! Didn’t all his spouses go 
+back to their family! He is so bad-tempered that only one of his grandsons agreed to stay 
+with  him.  To  take  care  of  his  cattle  he  must  hire  shepherds  who  cheat  him  while  he  is 
+unable to catch them. Where do you see baraka here?29 reports a villager talking about his 
+neighbour who is the biggest cattle owner of the area in a Fula region of Cameroon. It can 
+be acquired hereditarily through genealogical link to saints, or their contacts (see Schmitz 
+2000), but also by a strict observance of the five pillars of Islam. It can be transmitted by 
+blessings. Being old and a well known good Muslim puts oneself in a good position to have 
+some.  In  my  different  stays  in  Northern  Senegal  I  witnessed  many  blessings  by  older 
+people: when giving a ride to an old man, he would make me open my palms, murmured 
+Islamic blessings, and blowing in my hands, then I would lay my palms upon my face30. 
+Since  living  abroad  makes  it  rather  difficult  to  be  physically  near  your  dying  parents, 
+                                                 
+
+26. I was told many similar stories during my stay in the region of my survey. 
+27. The importance of the parent's last blessing is not specific to Islam. It is mentionned in many parts of 
+the Bible, and particularly in the Genesis. Think of Jacob's story: he valued so much his father's blessing that 
+he managed to get blessed instead of his brother Esaü. 
+
+28. And beyond, as it can be linked to the Christian word grace or the Jewish word berakhot, or also the 
+
+Polynesian manna, although these related words are comparable they are not completely similar to baraka. 
+
+29. Dognin (1990), my translation. 
+30.This seems quite related to a local Sufi practice, detailed in Schmitz (2000). 
+
+ 
+
+12
+
+sending money appears as one practical alternative. Of course, the value of this baraka in 
+the eyes of the migrant strongly depends on the notability of his patriarch and consequently 
+on the status of the family. Obviously belonging to a prestigious family yields considerable 
+returns  in  terms  of  prospects  for  marriage  and  political  position  in  the  village.  While  on 
+migration, he could also benefit from the status of the family to rely on migrants from the 
+same village. Besides, migrants from the same village usually live in neighbouring rooms 
+in workers’ hostels (‘foyers de travailleurs’) reconstituting the village society. It has been 
+repeatedly  suggested  that  this  is  a  way  of  reproducing  hierarchic  village  society  (for 
+instance see Ba 1996: 207). As this is the anthropological aspect of my research, I will try 
+to translate it into testable empirical evidence from the survey data I collected in the area. 
+
+THEORETICAL FRAMEWORK 
+
+Aware that it may not be the only mechanism at work, I will emphasize here the role of 
+social status. Let us consider a patriarchal stratified society. Within the family the patriarch 
+is the decision-maker. At the village level, there are two groups of families: the nobles and 
+the others (non-nobles). Only the patriarchs from noble families can accede to influential 
+positions.  To  deserve  their  advantageous  dominant  position,  the  nobles  must  pay  non-
+nobles substantial gifts in monetary terms. The non-nobles who benefit from these transfers 
+must in return renounce basic human rights: not choose a spouse among the nobles, give up 
+their political ambitions, and admit the superiority of the nobles in community decision-
+making. 
+There is an implicit family contract between the patriarch and his adult sons. The patriarch 
+sends his most promising sons on migration, expecting them to remit. The motivation of 
+migrant sons is to obtain the father’s position on their return. 
+In this view, remittances should be observed for high ranked migrants only. The migration 
+of the lower status migrants relates to other motivations: trading monetary gifts for social 
+mobility.  They  will  loosen  ties  with  their  community,  and  make  their  new  life  abroad, 
+taking advantage of the anonymity of city life. 
+Let us now turn to the data collected to test this scenario. 
+
+DATA 
+
+The Survey31
+
+Of course, the link between the migrant and his relatives who stayed behind is central to 
+understanding remittance behaviour. This is not an issue in my study, since I focused on the 
+case of sons remitting to their ageing father. So, in the survey sample, all migrants have in 
+common that their father is alive and lives in the village. Hence, remittances are interpreted 
+as old-age support from the migrant sons. 
+The  survey  was  conducted  just  before  the  rainy  season  from  April  to  June  2004,  when 
+weather conditions are particularly tough. It is a time of drought and food scarcity as the 
+granaries are empty. The good thing is that since peasants are preparing the fields for the 
+rain cultivations, all members of the household who are away, but within reach, come back 
+to give a hand. 
+The survey covers 149 patriarchs over 6 villages randomly chosen around Matam32. Three 
+                                                 
+
+31. I must thank Ousmane Ba, Moussa Ly, Abou Sow, Abou Thiam and Hamath Thiam for doing a great 
+
+job in data collection, as well as providing useful assistance in the survey design. 
+
+32. Diery villages are: Thiambe, Galoyabe Toucouleur, Hombo. Walo villages are: Bow, Thiemping and 
+
+ 
+
+ 
+
+13
+
+are located by the Senegal river, in the so-called walo region, the other three are located 
+approximately 10 km away from the river, in the diery region, one of them being right by 
+the  highway  (the  others  being  4km  away  on  a  dirt  track).  Walo  villages  are  isolated  (at 
+least) 3 months a year during the rainy season as roads become unfit for vehicles, which 
+can only be reached by pirogues (2-3 hour instead of 20 minute ride during the dry season). 
+Diery villagers do not own irrigated lands which are located near the river, but some noble 
+families do own ‘walo’ lands by the river. 
+It is an exhaustive survey, as all the men of the selected villages who met chosen criteria 
+were  selected.  The  criteria  are  that  they  must  be  born  before  1939,  and  that  their  eldest 
+living son should have been born before 1979. Information was gathered at 3 levels: 
+
+•  The patriarch level: Information on both his social status and his living conditions 
+were  gathered.  To  measure  social  status  I  gathered  information  on  the  family 
+background such as which caste it belongs to, its tenure in the village, the political 
+and religious role played by the patriarch and his father. Then much emphasis was 
+put on where the patriarch gets support from, but also on his wealth (housing, fields, 
+cattle,  belongings...),  health,  nutrition,  education,  past  migrations  and  economic 
+activities. 
+
+•  The  household  level:  I  define  a  household  as  a  unit  of  consumption  and  income 
+sharing (sometimes several households can coreside in the same compound), which 
+can be made of several nuclear family units33. I collected very precise family links 
+between  household  members,  and  some  basic  information  on  each  one,  such  as: 
+education level, economic activity, sources of revenue... 
+
+•  Finally, information on each child has been collected. Special attention was given to 
+children living outside the household, for which I gathered indirect information with 
+spouses, mother, siblings, or the father. The main focus was on remittances sent by 
+migrant sons and their old father, and the rest of the family. Information on news 
+and visits given to the family were also collected. 
+
+I put much effort on making sure to have at hand the most precise and reliable information 
+on the social status of the families. For double-checking purposes, the status of the family 
+was gathered twice. First, I obtained the information directly by asking the patriarch, then 
+indirectly, on a second round, asking informants (mainly the village chief). As it can be a 
+very sensitive subject, the question was asked towards the end of the survey, in order to 
+prevent the patriarch from being offended or upset, or even from refusing to be surveyed. 
+The question was asked among a series of question on historical background of the family, 
+to make it sound like the family ‘social origin’. For the same reasons, I dared to ask the 
+village chief about the status of my surveyed families, on a second round in September, so 
+that we had already got to know each other better. 
+
+Descriptive Statistics 
+
+A detailed table of descriptive statistics for the initial sample, the migrants and the remitters 
+is shown in table A in the appendix. 
+                                                                                                                                                     
+Thially  Souballo.  All  villagers  and  especially  village  chiefs  must  be  gratefully  acknowledged  for  their 
+cooperation and kind hospitality. I would also like to thank Ousmane Diouf, and Bocar Ba’s family in Matam 
+for their logistic assistance and gracious hospitality. 
+
+33. The Pulaar word is ‘foyre’ (plural: ‘poye’). 
+
+ 
+
+14
+
+Social composition of the sample 
+A table of the caste composition of the different samples studied is displayed in table 2. 
+Only  the  sons  of  the  patriarchs  above  16  years  old  were  considered  as  potential  old-age 
+support  providers.  There  are  470  adult  sons  in  the  initial  sample.  45%  are  on  migration. 
+Among the migrants, 62% regularly remit. It is noteworthy that only 66% of the migrants 
+belong to ‘free-born’ families, whereas they represent 71% of the remitters. 
+Migrants’ destinations  
+The  destination  distribution  is  very  similar  to  previous  studies  of  Haalpulaar  migration: 
+mainly domestic, the international migration is mainly African, and very few have left the 
+continent. 
+44% of all migrations are domestic migrations, or migrations to the neighbouring countries, 
+i.e.  Mauritania,  Mali,  Gambia  and  Guinea.  Dakar  concentrates  77%  of  these  ‘domestic’ 
+(Senegal or neighbouring countries) destinations. However, the capital city is often just a 
+temporary stop on the way to further destinations. 
+38%  of  migrants  went  to  another  African  country.  Most  of  African  migration  (73%)  is 
+directed towards Central Africa: Gabon, Congo, and Cameroon. There is a long tradition of 
+Senegal  River  Valley  migration  in  this  area.  There  are  accounts  of  ‘diamantaires’  who 
+made  quite  a  good  fortune  in  these  countries34.  Côte  d’Ivoire  has  also  been  a  frequent 
+choice of destination, but since 2000 because of the political instability, and xenophobic 
+practices many have fled. 
+In the end, only 18% of the migrants left the African continent (they represent 39 migrants): 
+not surprisingly, most went to France (26 migrants). The USA is the second destination (9 
+migrants), then a few migrants are in Spain or Italy (5). The US is an increasingly attractive 
+destination, but this is still a recent phenomenon, so that the network is still weak, not to 
+mention the cost of migration. During my field investigations, I met returning or visiting 
+migrants  from  Germany  and  Denmark,  and  also  surprisingly  distant  destinations  like 
+Australia  and  even  China!  Even  if  this  is  not  statistically  significant,  it  indicates  that 
+diversification of destinations is used to circumvent tough migration policies. 
+It  is  important  to  bear  in  mind  that  information  about  migrants  is  only  second  hand.  I 
+assumed the best information I could collect about them would be from the mother or the 
+wife of the migrant. I also asked the brothers and the father if necessary. 
+
+Empirical Strategy 
+
+Since only those who have migrated can make transfers, I had to use a two-step Heckman 
+model (generalized for logit models) to take into account the selection bias. The question is 
+: Do the ones with a higher probability of migrating have a higher or lower probability of 
+remitting? As pointed out in the next section, we do not find such effects. 
+Furthermore,  since  I  do  have  migrants  from  the  same  families  (up  to  7  brothers!),  I 
+incorporated  the  correlation  inside  the  family using  a  robust  estimator  of  standard  errors 
+with family clusters. 
+The  descriptive  statistics  evidence  found  in  the  previous  section  need  to  be  checked  ‘all 
+things being equal’. Hence, let us now turn to the regression results. They are displayed in 
+table 3. 
+                                                 
+
+34. Starting in the mid-fifties in Sierra-Leone, near both sides of the Congo rivers by the sixties, they have 
+
+reached Angola and Zambia, striving to avoid being expelled, Bredeloup (1994). 
+
+ 
+
+15
+
+When computing the probability of migrating, in line with Gubert (2000), I decided to take 
+a snapshot of the family when each son migrated. I computed his age and the age of the 
+patriarch when he left the household (‘age when migrating’, ‘age of the patriarch when son 
+migrated’), along with the number of brothers already on migration at that time. In the case 
+of the non-migrant, the age is left unchanged, so the ‘age when migrating’ corresponds in 
+reality to the age at the time of the survey. The same holds for the age of the patriarch. 
+Also, the ‘number of brothers already on migration’ simply corresponds to the total number 
+of brothers in migration at the time of the survey. 
+
+ 
+
+16
+
+RESULTS 
+
+In reality I find that both decisions to migrate and then to remit are not correlated: rho is not 
+significantly different from 0. Therefore, these two regressions can be studied separately. 
+For both regressions, usual results in line with previous studies are found along with other 
+different findings. Results are displayed in Table 3. 
+
+Probability of migrating 
+
+Overall this model correctly predicts 71% of migrating behaviour. Nevertheless only 53% 
+of actual migrants are properly predicted by this model. This highlights the fact that there 
+are in reality many different motives for migrating, which is not in contradiction with the 
+theoretical framework developed here. 
+The variables that appeared not to be significant are notably: years of formal schooling of 
+the migrant35, and the number of migrating brothers. The fact that the number of years in 
+formal schooling is not significant is relevant to the fact that migrants do not need to hold 
+literacy  skills  for  the  job  they  will  find  in  migration.  One  must  keep  in  mind  that  most 
+migrants  work  in  the  informal  sector,  in  Dakar  and  Africa,  and  in  unskilled  jobs  in 
+industrialized  countries  (mainly  in  the  hotel  or  catering  trades).  As  for  the  number  of 
+migrating brothers, there are two opposite effects: a network and a saturation effect. Having 
+a brother can facilitate migration: older brothers can finance their cadets, creating shifts of 
+migrants36. On the other hand, when there are already migrants in the family, the patriarch 
+may require other sons to stay to help him manage the household. Here it seems that both 
+effects are neutralized. 
+Turning  to  significant  variables,  the  fact  that  his  father  spent  many  years  on  migration 
+increases the chance of the son migrating. There are here 2 intertwined positive effects: a 
+wealth  and  a  network  effect.  All  migrations  are  costly  but  especially  for  distant 
+destinations: fares, bribing to get documents, or to get across the border safely. It usually 
+represents far more than what a basic rural household can afford. Then there are some high 
+costs of accommodation: even in Dakar renting a room has become very expensive.... Of 
+patriarchs who have been on migration around 55% receive a pension. However the ones 
+who did not get a formal job usually managed to invest in productive activities financing 
+their  own  sons’  migration  and  settlement.  Consequently,  it  appears  that  sons  of 
+economically better-off families have a higher chance to migrate. Along with this wealth 
+effect,  there  is  a  network  effect:  fathers  who  have  been  on  migration  have  been  able  to 
+build networks in their destination and acquire accordingly easy entry on some job markets. 
+The best illustration of this is that many first migrants of this area started working in the 
+hotel trade in Dakar, many at the airport, then in France. Or even working as boy or cook 
+for the French colonialists who then took them to France to work for them. This result is in 
+line with other studies. 
+Another interesting result is that sons that have received thorough Koranic studies have a 
+higher chance of migrating. Indeed in the area most children, both boys and girls, attend at 
+least  the  first  years  of  Koranic  schools  in  order  to  be  able  to  recite  basic  prayers.  As 
+
+                                                 
+
+35. I had to drop this variable from the regression in order to keep the ‘Koranic studies’ variable: indeed, 
+
+only those without formal schooling may be enrolled in Koranic studies. 
+
+36. In French this is called ‘noria’ (see Ba 1996: 30). This can no longer hold for destinations which have 
+
+become very difficult to reach such as Europe... 
+
+ 
+
+17
+
+mentioned before this central result illustrates the idea that Koranic schools are above all 
+aimed  at  transmitting  moral  values  and  among  them  the  respect  for  one’s  own  parents. 
+However when going up the levels of Koranic schools the two school systems enter into 
+competition,  as  they  are  rarely  compatible.  Parents,  traditionally  fathers,  have  to  decide 
+which education to give to their sons (girls usually do not pursue Koranic studies for many 
+years).  This  must  be  put  in  parallel  with  the  fact  that  having  formal  schooling  does  not 
+improve the probability of migrating. Here a father who wants to send his son on migration 
+will prefer to previously send him to a Koranic school instead of the official Francophone 
+school system. 
+Finally, the age of the father has a negative but decreasing effect, whereas the age of the 
+son when migrating has no effect. 
+Last  but  not  least,  sons  of  families  belonging  to  the  higher  castes  are  less  inclined  to 
+migrate.  This  result  contradicts  Gubert’s  (2000)  findings  among  Soninke:  she  found  that 
+only  aristocrats  migrate.  It  is  necessary  to  turn  to  migrants  remitting  behaviour  to 
+understand  if  migrants  from  high  and  low  status  have  the  same  behaviour  once  in 
+migration. 
+
+Probability of remitting 
+
+Among the migrants, I turn now to their probability of remitting. This model has a good 
+predictive power as overall nearly 80% of migrants are properly predicted to remit or not. 
+First, the age of the migrant appears not to be significant for his remitting behaviour. The 
+size  of  the  household,  as  well  as  the  presence  of  his  own  children  or  spouse  in  the 
+household also has no impact on his probability of remitting. 
+Some  expected  ‘wealth  effects’  are  found:  data  on  the  migrant’s  earnings  were  not 
+available,  but  there  are  some  proxies.  The  time  spent  on  migration  appeared  not  to  be 
+significant at first, but I re-coded it into a dummy variable for migrants who have been on 
+migration  for  over  3  years.  This  dummy  has  a  positive  impact  on  the  probability  of 
+remitting, which is significant at the 10% level. This reflects the idea that it usually takes 
+time  for  a  migrant  to  obtain  a  secure  earning,  i.e.  regular  wages.  Similarly,  living  in  a 
+developed country positively affects his probability of remitting. This is obviously linked to 
+the higher earnings available there: he earns more than his own living expenses and can 
+accordingly send back a part of his earning. 
+Surprisingly, no monitoring effects are found here: having brothers living in the same place 
+of migration has no significant effect on his remitting behaviour. 
+I found that migrants who had followed religious schooling have a higher probability of 
+remitting.  Hence  the  idea  of  migrant’s  selection  by  the  patriarch.  He  will  favour  the 
+migration  of  the  son  who  has  received  a  traditional  Koranic  education,  being  more 
+confident about his loyalty. It is consistent with the preference shaping theory I mentioned 
+earlier. 
+There is a trigger effect from his brothers remitting behaviour too: the more brothers who 
+are remitting there are, the more likely it is that he will remit, and the more who are not 
+remitting, the more likely it is that he will not remit. 
+Finally, central to the main point of this article: belonging to a politically powerful family 
+in the village makes the migrant more likely to remit. Indeed, this status dummy variable is 
+strongly significant at a 5% level (p-value of 3.1%). Here what seems to be central is the 
+fact  that  the  patriarch  plays  a  significant  role  in  the  village  belonging  to  the  circle  of 
+influential notables. Indeed, belonging to the free born category is not precise enough, as 
+
+ 
+
+18
+
+this  is  a  heterogeneous  category.  For  instance,  newly  arrived  free  born  families  may  not 
+have regained a dominant position in the village37. On the contrary, a few families from the 
+artisans or former slaves groups may have acquired a political position being linked with a 
+very  prestigious  family.  One  could  suggest  that  those  families  are  also  more  likely  to 
+possess the most valuable lands, and as a result this is in line with Hoddinott (1994). Indeed 
+having  received  valuable  land  by  bequest  has  no  significant  effect  of  the  probability  of 
+remitting. Therefore it seems that the effect here of the political status variable is mainly a 
+social status effect and not a wealth effect. 
+
+Other Supportive Evidence 
+
+The  econometric  evidence  may  seem  a  little  weak  as  the  survey  does  not  cover  a  huge 
+sample of migrants: there are only 213 migrants in the sample. Unfortunately the lack of 
+social status variables in other larger statistical surveys makes it impossible to compare this 
+result  with  other  studies  so  far.  As  a  complement  to  the  empirical  evidence  some  other 
+qualitative pieces of evidence which confirm the hypothesis made in this paper are listed 
+here. 
+To gain respectability in the village the most efficient way is to contribute to the building of 
+a  mosque.  There  are  several  anecdotes  I  heard  during  my  stay  in  the  valley,  about  the 
+boycott of mosques built by migrant slaves. The Imam who is necessarily a noble, simply 
+refused to lead the prayers... I heard a similar story about a well built by a successful slave 
+that the nobles boycotted, opting for the more distant well. These anecdotes show that it is 
+rather inefficient for a slave to invest in order to raise his respectability in the village: he 
+will  always  be  considered  as  a  slave  and  accordingly  will  be  reminded  to  keep  his  low-
+profile rank. The only way to get rid of these social stigmas is to migrate. In anonymous 
+cities or foreign countries, he will more easily merge into society and be free in his acts. 
+It is noticeable that during my repeated visits at different workers hostels, I met very few 
+descendants  of  slaves  or  artisans38.  This  is  consistent,  with  reported  cases  of  continuing 
+discrimination against slaves on migration. The pattern is that slaves are excluded from any 
+decision-making  position  in  the  migrant’s  association.  Ba  (1996)  reports  such  a  case  in 
+Cameroon (Ba 1996: 238). 
+In Dakar, many people with Haalpulaaren names who do not speak Pulaar happen to be of 
+slave or artisan origins. They seem to be the product of this melting pot. 
+In many previous studies on migration among the Haalpulaaren it has been mentioned that 
+the  desire  to  escape  from  rigid  social  constraints  were  among  the  main  motives  for 
+migration. As they usually refer to the position of younger brothers willing to escape the 
+tyranny of older brothers (see Platteau 2000), it could easily be extended to lower status 
+migrants. The study of Delaunay (1984) goes in the same direction as my results. He finds 
+that  any  type  of  caste  can  be  found  among  the  migrants  from  the  Senegal  valley,  but 
+recognizes that the former slaves are more likely to settle definitively, whereas the nobles 
+go on temporary migration returning to the village, and sending remittances. 
+
+CONCLUDING REMARKS 
+
+                                                 
+
+37. It is the case of many Mauritanian refugees (from the 1989 unrest) who despite being Fulbe have rarely 
+
+gained a position as notable in their new Senegalese settlement. 
+
+38. except the descendants of slaves of the village chief's family, which would tend to prove that former 
+
+slaves of important families have some kind of respectability too. 
+
+ 
+
+19
+
+These empirical findings suggest that migration is available to any social category, but for 
+different aims: it can either be seen as an individual decision to escape from a poor social 
+position with dire prospects in the village or, conversely, as a family decision to maintain 
+its dominant local position. As a consequence, it is obvious that the first type of migrants 
+will not be interested in investing in the development of the village but will benefit from the 
+urban melting pot to get rid of their social stigmas. The good side of this is that they are 
+factors  of  change  as  they  move  from  a  network-based  to  a  modern  market  economy.  In 
+order  to  prevent  rural  exodus  and  urban  concentrations,  an  efficient  policy  would  be  to 
+invest in intensive consciousness-raising campaigns to get rid of the obsolete caste system. 
+This will probably take time and be hard to implement as I found out that this was still a 
+highly taboo subject in contemporary Senegal. 
+Central  to  political  debates  in  France,  republican  values  of  racial  integration  and 
+assimilation  may  differently  appeal  to  both  types  of  migrants  previously  described. 
+France’s model of integration aims to assimilate immigrants by instilling French cultural 
+values.  As  a  result,  keeping  strong  ties  with  the  country  of  origin  is  not  well  received. 
+Accordingly, any attempt to assimilate the migrants of noble origins will fail. Indeed, they 
+see themselves as temporarily migrant and have sound plans to return to the village. When 
+returning  they  will  genuinely  keep  silent  their  shameful  subordinate  occupations39  while 
+abroad  and  turn  into  powerful  notables.  Alternatively,  the  migrants  from  lower  social 
+categories will display strong motivations to fit in. 
+The aim of this study was primarily to draw attention to the local institutions when trying to 
+understand migration in a non-western environment. Economists and econometricians too 
+often  draw  conclusions  from  surveys  that  were  lacking  the  social  context.  As  this  was  a 
+limited study, it would be interesting to pursue on a broader range. The recent World Bank 
+book Culture and Public Action (Rao & Walton, 2006) sends a good signal that things are 
+changing and that more and more cooperation between economists and anthropologists will 
+be expected in the near future. 
+
+Ambec,  Stefan.  2000.  “Income  Sharing  Within  Extended  Families  as  a  Social  Norm.” 
+
+REFERENCES 
+
+Mimeo, University of Salerno. 
+
+Développement 4: 3-19. 
+
+Azam,  Jean-Paul.  1995.  “L’Etat  Autogéré 
+
+  en  Afrique.”  Revue  d'Economie  du 
+
+Azam,  Jean-Paul  and  Flore  Gubert.  2006.  “Migrants’  Remittances  and  the  Household  in 
+Africa: A Review of Evidence.” Journal of African Economies 15 (AERC sup. 2): 426-
+62. 
+
+Ba, Cheikh Oumar. 1996. “Dynamiques Migratoires et Changements Sociaux au Sein des 
+Relations de Genre et des Rapports Jeunes/Vieux des Originaires de la Moyenne Vallée 
+du Fleuve Sénégal.” PhD thesis, Université Cheikh Anta Diop de Dakar. 
+
+Becker,  Gary  S.  1993.  “Nobel  Lecture:  The  Economic  Way  of  Looking  at  Behavior.” 
+
+Journal of Political Economy 101: 385-409. 
+
+----. 1996. Accounting for Tastes. Cambridge: Harvard University Press. 
+                                                 
+
+39. I can witness that it is absolutely taboo to ask a visiting migrant about his job in the host country (or in 
+the capital city). As one might guess such work was not prestigious, it is generally accepted to keep it silent... 
+or to tell it only to a total foreigner away from other villagers! 
+
+ 
+
+20
+
+Bernheim, B. Douglas, Andrei Schleifer and Lawrence H. Summers. 1985. “The Strategic 
+
+Bequest Motive.” Journal of Political Economy 93:1045-76. 
+
+Bernheim, B. Douglas and Oded Stark. 1988. “Altruism within the Family Reconsidered: 
+
+Do nice guys finish last?” American Economic Review 78: 1034-45. 
+
+Bredeloup,  Sylvie.  1994.  “L’Aventure  Contemporaine  des  Diamantaires  Sénégalais” 
+
+Politique Africaine 56: 77-93. 
+
+Cigno, Alessandro. 1993. “Inter-generational Transfers without Altruism: Family, Market 
+
+and State.” European Journal of Political Economy 9: 505-18. 
+
+Coate,  Stephen  and  Martin  Ravallion.  1993.  “Reciprocity  without  Commitment: 
+Characterization  and  Performance  of  Informal  Insurance  Arrangements.”  Journal  of 
+Development Economics 40: 1-24. 
+
+Cox, Donald. 1987. “Motives for Private Income Transfers.” Journal of Political Economy 
+
+95: 508-46. 
+
+Delaunay, Daniel. 1984. De la Captivité  à  l'Exil : Histoire et Démographie des Migrations 
+
+Paysannes dans la Moyenne Vallée du Fleuve Sénégal. Paris: ORSTOM. 
+
+Dognin, René. 1990. “L’Arbre Peul.” Cahiers des Sciences Humaines, 26 (4): 505-29. 
+Ferreira,  Monica.  2005.  “Elder  Abuse  in  Africa:  What  Policy  and  Legal  Provisions  Are 
+
+There to Address the Violence?” Journal of Elder Abuse & Neglect 16, 2: 17-32. 
+
+Gubert, Flore. 2000. “Migration et Gestion Collective des Risques. L'exemple de la région 
+
+de Kayes.” PhD thesis, Université de Clermont-Ferrand I. 
+
+Guttman,  Joel  M.  2001.  “Self-Enforcing  Reciprocity  Norms  and  Inter-generational 
+
+Transfers: Theory and Evidence.” Journal of Public Economics 81:117-51. 
+
+Hoddinott,  John.  1992.  “Rotten  Kids  or  Manipulative  Parents:  Are  Children  Old-Age 
+Security in Western Kenya?” Economic Development and Cultural Change 40:545-65. 
+Klein,  Martin  A.  2005.  “The  Concept  of  Honour  and  the  Persistence  of  Servility  in  the 
+
+Western Soudan.” Cahiers d'Etudes Africaines 45, 179-180: 831-51. 
+
+Laferrère,  Anne  and  François-Charles  Wolff.  2006.  “Microeconomic  Model  of  Family 
+Transfers.” In Handbook of the Economics of Giving, Altruism and Reciprocity, Vol. 2, 
+edited by S.C. Kolm and J.M. Ythier, ch11. Amsterdam: North-Holland/Elsevier.  
+
+Luke, Nancy and Kaivan Munshi. 2005. “Women as Agents of Change: Female Income, 
+Social Affiliation and Household Decisions in South India.” Mimeo, Brown University. 
+Ly,  Boubakar.  1966.  “Honneur  et  Valeurs  Morales  dans  les  Sociétés  Ouolofs  et  Pular.” 
+
+PhD thesis, Université de Paris. 
+
+Miguel, Edward. 2003. “Poverty and Witch Killing.” BREAD Working Paper 41. 
+Mission  d’Aménagement  du  Fleuve  Sénégal  (MAS).  1959. Les  Hommes  du  Fouta  Toro. 
+
+Saint-Louis: MAS. 
+
+Monenembo, Tierno. 2005. Les Peuls. Paris: Seuil. 
+Nugent,  Jeffrey  B.  1985.  “The  Old-Age  Security  Motive  for  Fertility.”  Population  and 
+
+Petit,  Agathe.  2002.  “L’Ultime  Retour  des  Gens  du  Fleuve  Sénégal.”  Hommes  et 
+
+Development Review 11, 1: .75-97. 
+
+Migrations 1236: 44-52. 
+
+Platteau,  Jean-Philippe.  2000.  Institutions,  Social  Norms  and  Economic  Development. 
+
+Amsterdam: Harwood Academic Publisher. 
+
+Rao,  Vijayendra  and  Michael  Walton,  eds.  2006.  Culture  and  Public  Action.  Stanford: 
+
+Stanford University Press. 
+
+Rosenzweig,  Mark  R.  1988.  “Risk,  Implicit  Contracts  and  the  Family  in  Rural  Areas  of 
+
+ 
+
+21
+
+Low-Income Countries.” Economic Journal 98, 393: 1148-70. 
+
+Rosenzweig,  Mark  R.  and  Oded  Stark.  1989.  “Consumption  Smoothing,  Migration  and 
+
+Marriage: Evidence from rural India.” Journal of Political Economy 97: 905-26. 
+
+Samuelson, Paul A. 1958. “An Exact Consumption Loan Model of Interest with or without 
+
+the Social Contrivance of Money.” Journal of Political Economy 66: 467-82. 
+
+Schmitz, Jean. 2000. “Le Souffle de la Parenté. Mariage et Transmission de la Baraka chez 
+
+les Clercs Musulmans de la Vallée du Sénégal.” L'Homme 154-155: 241-77. 
+
+Stark, Oded. 1991. The Migration of Labor. Oxford: Basil Blackwell. 
+----. 1995. Altruism and Beyond: An Economic Analysis of Transfers and Exchanges within 
+
+Families and Groups. Cambridge University Press. 
+
+Sylla, Omar and Mor Mbaye. 1991. “Psychopathologie et Migration: un Cas de Wootal.” 
+
+Psychopathologie Africaine XXIII 3: 353-63. 
+
+Wane,  Yaya.  1969.  Les  Toucouleurs  du  Fouta  Toro:  Stratification  Sociale  et  Structure 
+
+Familiale. Dakar: IFAN. 
+
+World  Bank.  2005.  Global  Development  Finance:  Mobilizing  Finance  and  Managing 
+
+Vulnerability. Washington: World Bank Publications. 
+
+World  Health  Organization  (WHO).  2002.  The  Toronto  Declaration  on  the  Global 
+
+Prevention of Elder Abuse. Geneva: WHO. 
+
+ 
+
+22
+
+The Haalpulaar complex caste system (translated from Wane 1969: 33). 
+
+TABLE 1 
+
+Strata (class) 
+
+Rimbe ardiibe 
+
+(free) 
+
+Rimbe huunybe 
+
+(courtiers) 
+
+Fecciram golle 
+
+(artisans) 
+
+ 
+
+ 
+
+Social 
+Category 
+(order) 
+
+Rimbe 
+
+Nyeenybe 
+
+Jyaabe 
+
+Caste 
+
+Occupation and Title 
+
+Toorobbe Lawakoobe or fileteebe   Temporal power 
+
+ 
+
+Sebbe
+
+Jaawambe
+Subalbe
+
+Jangube or ardiibe diine  Spiritual power : ceerno 
+Miiskineebe 
+Worgankoobe 
+Kolyaabe 
+Mbonaabe 
+Awgalnaabe 
+Helgalagel, etc. 
+
+Free men, farmers: demoowo 
+Former monarchs: farba ceddo 
+Koly’s soldiers : jagaraf 
+
+Local variants of kolyaabe 
+
+Courtiers and advisers: sooma 
+Fishermen: jaaltaabe 
+
+Maabube sanyoobe 
+
+Weavers: jarno 
+
+Wayilbe
+
+Sakkeebe
+
+Lawbe 
+
+Baleebe 
+Sayakoobe 
+Alawbe 
+Wodeebe or garankoobe  Cobblers 
+Laade 
+Worworbe (bobi) 
+
+Blacksmiths: farba baylo 
+Jewelers: farba baylo 
+Shoemakers: foosiri 
+
+Naalankoobe 
+(entertainers) or 
+
+Buurnaabe
+Wambaabe
+Maabube suudu Paate 
+Maabube jaawambe
+Lawbe gumbala (kontimpaaji) 
+Awlube
+Soottiibe (freed slaves) Maccube
+Halfaabe (dependants)  Maccube
+
+nyaagotoobe (praise 
+
+singers) 
+
+Pirogue builders: kalmbaan 
+Kitchen tools’ makers: maalaw 
+Potters and ceramicists 
+Traditional guitar players 
+
+Singers 
+
+Griots genealogists : farba gawlo 
+Free but servile 
+Slaves and servants: jagodiin 
+
+ 
+
+23
+
+Caste composition of samples of interest. 
+ 
+
+Patriarchs (%) 
+
+(N=147) 
+
+TABLE 2 
+
+Categories 
+
+Free-born 
+Artisans 
+Slaves 
+
+ 
+
+All Sons (%) 
+
+(N=470) 
+
+Migrants (%) 
+
+(N=213) 
+
+Remitters (%) 
+
+(N=133) 
+
+70.1 
+12.9 
+17.0 
+
+72.1 
+11.7 
+16.2 
+
+65.7 
+16.9 
+17.4 
+
+70.7 
+15.8 
+13.5 
+
+ 
+
+24
+
+Two-stage probit regression: probability of migrating and then of remitting. 
+ 
+
+TABLE 3 
+
+Est. 
+
+Robust std. 
+Errors (1)
+
+Prob. Values 
+ 
+
+ 
+ 
+
+Probability of migrating (N=470) 
+Intercept 
+Age when migrating 
+Koranic studies 
+Nb. of brothers already on migration 
+Age of the patriarch when son migrated 
+(age of the patriarch)² 
+Nb. of years the father went on migration 
+Family of higher casts 
+Village dummies 
+Probability of remitting (N=213: migrants) 
+Intercept 
+Ages 
+Koranic studies 
+On migration for over 3 years 
+Brothers in region of migration 
+Residing in a developed country 
+Spouse left in the household 
+Nb. of brothers remitting 
+Nb. of brothers who don't remit 
+Age of the patriarch 
+Local power of the lineage 
+Valuable agric land on bequest 
+Number of dependants for patriarch 
+Village dummies 
+Rho 
+95% conf. Interval 
+ 
+(1) adjusted for family clusters. 
+***1%, **5%, *10% significativity levels. 
+
+ 
+
+ 
+
+40.358 
+-0.001 
+0.420 
+-0.065 
+-1.070 
+0.007 
+0.024 
+-0.459 
+Non sig. 
+
+ 
+
+-3.525 
+-0.002 
+0.435 
+0.510 
+0.270 
+1.311 
+0.389 
+0.140 
+-0.365 
+0.046 
+0.493 
+-0.318 
+0.011 
+Non sig. 
+-0.554 
+
+ 
+
+ 
+
+9.843 
+0.010 
+0.177 
+0.061 
+0.270 
+0.002 
+0.008 
+0.216 
+
+ 
+ 
+
+1.532 
+0.017 
+0.251 
+0.278 
+0.263 
+0.413 
+0.246 
+0.085 
+0.120 
+0.021 
+0.228 
+0.250 
+0.034 
+
+ 
+ 
+
+-0.967 
+
+ 
+
+ 
+
+.000  *** 
+.955 
+.018  ** 
+.287 
+.000  *** 
+.000  *** 
+.003  *** 
+.034  ** 
+
+ 
+ 
+
+ 
+ 
+
+.021  ** 
+.926 
+ 
+.084  * 
+.066  * 
+.306 
+ 
+.002  *** 
+.113 
+ 
+.098  * 
+.002  *** 
+.029  ** 
+.031  ** 
+.203 
+.757 
+ 
+ 
+.664 
+
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+
+25
+
+Descriptive statistics for the initial sample, the migrants and the remitters. 
+ 
+ 
+
+Std. Min. Max. Mean 
+
+ 
+
+ 
+
+ 
+
+Initial Adult Sons (N=470) 
+Mean 
+45% 
+
+ 
+
+ 
+
+TABLE A 
+
+ 
+
+ 
+
+On migration 
+Remitting 
+Age
+Age when leaving the household 
+Birth order 
+Koranic studies
+ 
+Formal schooling
+Years of (formal) schooling 
+Years on migration 
+In migration for over 3 years 
+Residing in a developed country 
+Spouse (of the son) left in the household 
+Nb. of brothers already on migration 
+Nb. of brothers remitting 
+Nb. of brothers who don't remit 
+Age of the patriarch 
+Age of the patriarch when son migrated 
+Number of dependants of the patriarch 
+Family in region of migration 
+Nb. of years the father went on migration 
+Family of higher castes 
+Local power of the lineage 
+Valuable agric land on bequest 
+Thiempeng
+Bow 
+ 
+Thially
+Galoyabe
+ 
+Hombo
+ 
+Thiambe
+
+ 
+
+ 
+
+ 
+
+N
+O
+S
+
+ 
+
+Y
+L
+I
+M
+A
+F
+
+ 
+S
+E
+G
+A
+L
+L
+I
+V
+
+ 
+
+ 
+
+30.8 
+28.1 
+2.6 
+53%
+ 
+36%
+ 
+2.4 
+ 
+ 
+ 
+ 
+1.0 
+ 
+ 
+
+73.9 
+71.2 
+7.6 
+ 
+
+10.6 
+72% 
+42% 
+58% 
+31% 
+18% 
+5%
+ 
+ 
+14%
+ 
+16%
+16%
+ 
+
+Migrants (N=213) 
+
+Remitters (N=133) 
+
+Std. Min. Max. Mean 
+
+ 
+
+ 
+
+ 
+
+Std. Min. Max.
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+
+62% 
+33.2
+ 
+27.4 
+2.4 
+58%
+33%
+2.4 
+6.1 
+54% 
+18% 
+41% 
+1.0 
+1.3 
+0.8 
+74.9 
+69.1 
+7.4 
+33% 
+13.9 
+66% 
+46% 
+61% 
+28%
+ 
+15%
+ 
+5%
+ 
+ 
+15%
+ 
+18%
+18%
+ 
+
+ 
+ 
+ 
+8.1
+8.3 
+1.5 
+ 
+ 
+4.2 
+5.7 
+ 
+ 
+ 
+1.3 
+1.5 
+1.0 
+6.4 
+8.4 
+3.7 
+ 
+
+14.2 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+17
+3 
+1 
+ 
+ 
+0 
+0 
+ 
+ 
+ 
+0 
+0 
+0 
+66 
+42 
+2 
+ 
+0 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+61
+50 
+8 
+ 
+ 
+17 
+25 
+ 
+ 
+ 
+6 
+6 
+4 
+91 
+89 
+16 
+ 
+47 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+34.5 
+27.8 
+2.3 
+65%
+27%
+1.8 
+6.9 
+66% 
+26% 
+52% 
+1.0 
+1.6 
+0.4 
+76.2 
+69.5 
+7.0 
+32% 
+15.0 
+71% 
+56% 
+56% 
+ 
+31%
+15%
+ 
+ 
+3%
+ 
+16%
+ 
+18%
+ 
+17%
+
+ 
+ 
+ 
+8.5
+8.3 
+1.6 
+ 
+ 
+3.6 
+5.8 
+ 
+ 
+ 
+1.4 
+1.7 
+0.9 
+6.3 
+8.4 
+3.7 
+ 
+
+15.1 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+18
+ 
+11 
+1 
+ 
+ 
+0 
+0 
+ 
+ 
+ 
+0 
+0 
+0 
+66 
+42 
+2 
+ 
+0 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+61
+50 
+8 
+ 
+ 
+13 
+25 
+ 
+ 
+ 
+5 
+5 
+4 
+91 
+89 
+16 
+ 
+47 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+8.4 
+8.3 
+1.6 
+ 
+ 
+3.7 
+ 
+ 
+ 
+ 
+1.3 
+ 
+ 
+6.3 
+7.5 
+3.8 
+ 
+
+12.9 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+17
+3 
+1 
+ 
+ 
+0 
+ 
+ 
+ 
+ 
+0 
+ 
+ 
+66 
+42 
+2 
+ 
+0 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+61
+51 
+8 
+ 
+ 
+17 
+ 
+ 
+ 
+ 
+7 
+ 
+ 
+91 
+89 
+17 
+ 
+47 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+26
+
+ 
+
+ 
+
+27
+
+

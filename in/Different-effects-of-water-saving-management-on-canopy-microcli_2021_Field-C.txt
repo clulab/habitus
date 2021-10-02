@@ -1,0 +1,1230 @@
+Contents lists available at ScienceDirect 
+Field Crops Research 
+
+journal homepage: www.elsevier.com/locate/fcr 
+
+Different effects of water-saving management on canopy microclimate, 
+spikelet sterility, and rice yield in the dry and wet seasons of the sub-humid 
+tropics in northern Ghana 
+Yasuhiro Tsujimoto a,*, Abraham Fuseini b, Baba I.Y. Inusah b, Wilson Dogbe b, 
+Mayumi Yoshimoto c, Minehiko Fukuoka c 
+a Japan International Research Center for Agricultural Sciences, 1-1 Ohwashi, Tsukuba, Ibaraki 305-8686, Japan 
+b Savanna Agricultural Research Institute, Council for Scientific and Industrial Research, P.O. Box 52, Tamale, Ghana 
+c Institute for Aro-Environmental Sciences, National Agriculture and Food Research Organization, 3-1-3 Kannondai, Tsukuba, Ibaraki 305-8604, Japan   
+
+A R T I C L E  I N F O    
+
+Keywords: 
+Oryza sativa 
+Transpiration cooling 
+Inner-canopy temperature 
+Heat stress 
+Spikelet sterility 
+
+A B S T R A C T    
+Increasing temperatures and water scarcity are concomitant threats to sustainable rice production in future 
+climates. Although both aspects have been widely studied, little is understood about how water-saving man-
+agement might affect heat-induced stress and grain yield of rice under open-field conditions. The objective was to 
+clarify how water management practices affect daily inner-canopy temperature (Tc) dynamics, flowering time, 
+heat-induced spikelet sterility, and rice grain yield. Field experiments were conducted in four consecutive wet 
+and dry seasons in northern Ghana. Two rice varieties, IR64 and Jasmine85, were grown under two water re-
+gimes: 1) continuous flooding (FL), and 2) continuous flooding except for an approximately 20-day drainage 
+treatment at the flowering period (DF). Although the DF treatment was non-flooded, a high moisture content was 
+maintained (>60 % of saturated volumetric water) to avoid any significant drought stress. The effect of water 
+regimes on grain yield and Tc  differed significantly between the dry season (DS) and wet season (WS). DF 
+significantly reduced yields by 13–26 % in the DS but not in the WS. However, the effect of DF on Tc at flowering 
+time (0.2–0.3 ◦C increase) and spikelet sterility (3–5% increase) was relatively small even in the DS. In contrast, 
+DF greatly increased Tc from solar noon to midnight, in particular during the period of ±3 h from sunset in the 
+DS. At this time of the day, DF had a higher Tc than FL by 0.7–0.9 ◦C on average. The Tc did not differ between DF 
+and FL either at flowering time or nighttime in the WS. The Tc changes over the course of the day imply that 
+water-saving management may have a higher risk of yield reduction in the DS of the sub-humid tropics not only 
+by increasing heat-induced sterility but also by increasing late-afternoon-to-nighttime temperatures, which can 
+cause physiological stress and respiration loss. These results can help improve water-saving management prac-
+tices under contrasting climatic conditions in the sub-humid tropics and predict the combined effect of increasing 
+temperatures and water scarcity on rice production.   
+
+1. Introduction 
+
+Global warming is projected to increase both the frequency and in-
+tensity of high temperature events, under all scenarios (Porter et al., 
+2014). The hotter climate is likely to negatively impact rice production 
+in many parts of the world (Nguyen et al., 2014; Teixeira et al., 2013; 
+Wassmann et al., 2009). Moreover, drastic yield reductions induced by 
+high temperature events have been reported in many rice-production 
+
+areas in recent decades (Hasegawa et al., 2011; Ishimaru et al., 2016; 
+Li et al., 2004; Welch et al., 2010). 
+Rice is susceptible to heat stress, particularly in the flowering stage. 
+More specifically, the reproductive processes that occur within one hour 
+of anthesis-dehiscence of the anther are the most sensitive to heat stress 
+(Matsui et al., 2000, 2001; Satake and Yoshida, 1978). The physiological 
+effects of heat stress on sterility have been well studied under controlled 
+conditions in climate chambers and phytotrons. However, the prediction 
+
+Abbreviations: MINCER, Micrometeorological Instruments for Near Canopy Environment of Rice; RH, relative humidity; Ta, ambient temperature above canopy; 
+
+Tc, inner-canopy temperature. 
+* Corresponding author. 
+
+E-mail address: tsjmt@affrc.go.jp (Y. Tsujimoto).  
+
+https://doi.org/10.1016/j.fcr.2020.107978 
+Received 11 May 2020; Received in revised form 7 August 2020; Accepted 7 October 2020   
+
+FieldCropsResearch260(2021)107978Availableonline20October20200378-4290/©2020TheAuthors.PublishedbyElsevierB.V.ThisisanopenaccessarticleundertheCCBYlicense(http://creativecommons.org/licenses/by/4.0/).with the same cropping histories, equivalent soil properties, and the 
+same yield levels were used. The fields were sandy, with pH 5.2–5.5, and 
+extremely low total C and N and exchangeable cation levels, as is typical 
+of the region (Table 1). In the five years preceding the start of the ex-
+periments, both fields had been used for rice–rice cropping, except for 
+one DS with vegetable cultivation in 2013. 
+Rice was grown under continuous flooding (FL) in one field, and the 
+same continuous flooding except for an approximately 20-day drainage 
+treatment at the flowering period (DF) in the other. The DF and FL 
+treatments were fixed in the respective fields across four seasons to 
+ensure precise water management in an economically and logistically 
+feasible manner. There were no replicates in water management because 
+of a limited number of observation systems for canopy microclimates 
+and  field  hydrology.  Before  the  start of  each  season, an  open  ditch 
+(approximately 30 cm in width and 40 cm in depth) was constructed 
+around and in the middle of the DF field to facilitate drainage and 
+maintenance of moisture conditions during the treatment. 
+Two varieties, IR64 and Jasmine85 (Ja85), were arranged in a ran-
+domized complete-block design with four replicates, in both the FL and 
+DF fields. The plot size was 5.7 m  × 4.5 m (25.65 m2). We did not 
+establish  borders  between  plots  within  each  field  and  filled  in  the 
+remaining space outside the plots with Ja85, to minimize border effects 
+on the measurements of canopy microclimates. IR64 is a high-yielding 
+mega variety in the tropics and is considered sensitive to heat stress 
+(Coast et al., 2016). Ja85 is a popular variety in the region, and its 
+sensitivity to heat stress is unknown. Ja85 had consistently longer du-
+rations, by 8–11 days, than IR64 from transplanting to 50 % heading 
+except  in  DF  in  the  2018  DS,  when  the  heading  date  of  Ja85  was 
+significantly delayed by 8 days, relative to FL (Table 2). Apart from the 
+2018 DS, the heading dates of both varieties differed little between FL 
+and DF. 
+The DF field was drained from the start of heading of IR64, for 
+approximately 20 days, which covered the peak flowering days of both 
+varieties. Throughout the drainage treatment, non-flooded but saturated 
+soil moisture conditions were maintained by continuously flowing the 
+water into open ditch, depending on rainfall events, to keep the water 
+table high and to avoid drought stress. Except the treatment period, both 
+the FL and DF fields were continuously flooded in the same manner. This 
+minimized any growth differences prior to flowering that may occur 
+from  water  management  practices  (e.g.,  canopy  development  and 
+structure),  because differences  can alter  the  energy  balances  of  rice 
+canopies. 
+Aside from the different water regimes applied during the flowering 
+periods, the same cultivation management practices were applied to 
+both  fields:  they  were  plowed,  puddled,  and  transplanted  with  two 
+seedlings per hill at a planting density of 22.2 hills per m2 (0.30 m ×
+0.15 m per hill). A commercial NPK complex fertilizer (23:10:5) was 
+
+Y. Tsujimoto et al.                                                                                                                                                                                                                              
+of heat-induced sterility and, thus, of the impact of climate change on 
+rice production, remains uncertain because the inner-canopy tempera-
+ture  can  differ  largely  from  ambient  temperature  under  open-field 
+conditions.  For  instance,  lower-than-expected  spikelet  sterility  has 
+been  reported  from  semiarid  to  arid  regions  in  Senegal  (Julia  and 
+Dingkuhn, 2013) and southeastern Australia (Matsui et al., 2007, 2014), 
+where daily maximum temperatures exceeded 40 ◦C. This was ascribed 
+to a strong transpiration-cooling effect under low relative humidity (RH 
+< 20 %). In contrast, under humid conditions where RH exceeded 75 % 
+at  flowering  time,  the  panicle  or  inner-canopy  temperature  can  be 
+higher than the air temperature (Tian et al., 2010; Yoshimoto et al., 
+2012),. Inner-canopy or panicle temperature is also affected by wind 
+velocity (Matsui et al., 1997) and CO2 concentration (Yoshimoto et al., 
+2005).  Further,  rice  daily  flowering  time  depends  on  field  environ-
+mental conditions such as ambient temperature, humidity (Julia and 
+Dingkuhn, 2012), and solar radiation intensity (Kobayasi et al., 2010, 
+2019), as well as on genetic differences (Ishimaru et al., 2010). Based on 
+these  empirical  observations,  recent  models  have  been  improved  to 
+predict the impacts of increasing temperatures on rice production by 
+taking account into both panicle temperatures as a function of RH (van 
+Oort et al., 2014) or using heat balance equations (Yoshimoto et al., 
+2011) and flowering time, as a function of the aforementioned envi-
+ronmental conditions (Julia and Dingkuhn, 2012; Nguyen et al., 2014). 
+van Oort and Zwart (2018) applied a new heat sterility model for rice 
+production in West Africa and predicted little increase in heat sterility in 
+the future climate; they suggested that more empirical observations and 
+model validations were needed in various climatic conditions. 
+Field hydrological conditions are another factor which can cause air- 
+temperature and panicle-temperature differences, and which are not 
+integrated  into  heat  stress  prediction.  Many  studies  have  been  con-
+ducted on water-saving management practices in direct-seeding, aero-
+bic, and alternate-wet-and-dry (AWD) rice-production systems (Bouman 
+and Tuong, 2001; Kumar and Ladha, 2011; Linquist et al., 2015a). For 
+these  emerging  water-saving  technologies,  Jagadish  et  al.  (2015) 
+warned that rice plants may become more vulnerable to heat-induced 
+sterility as a result of stomatal closure and increased organ tempera-
+tures even under high soil moisture conditions. In a pot experiment in 
+controlled environment chambers, they observed that the canopy tem-
+perature increased by  >2  ◦C at  (cid:0) 10 kPa of soil water potential (not 
+considered a stress which whould reduce rice yields as per Carrijo et al., 
+2017), relative to flooded condition. This is an important consideration 
+in comprehending how to address the concomitant threat of increasing 
+temperature and water scarcity for lowland rice production. However, 
+there is little understanding about how these water-saving management 
+practices, or unexpected water shortages, might affect diurnal changes 
+in canopy temperature, flowering time, and heat-induced sterility in 
+open fields. The lack of information is particularly critical in tropical 
+regions, where the threats to crop production and food security from 
+water  shortage  and  heat  stress  are  increasing  (Gourdji  et  al.,  2013; 
+Porter et al., 2014; de Vries et al., 2010). More data is needed to improve 
+predictions of how these threats will affect rice production in the tropics. 
+Our objectives were, therefore, to evaluate these factors in open rice 
+fields, in the dry and wet seasons, in the sub-humid tropics of northern 
+Ghana. The specific objective was to elucidate the effects of water-saving 
+management practices on diurnal changes in inner-canopy temperature, 
+daily flowering time, spikelet sterility, and grain yield of rice, under 
+various climatic conditions. 
+2. Materials and methods 
+2.1. Experimental design 
+
+FL field 
+12.9 
+11.1 
+76.0 
+sandy loam 
+5.2 
+0.7 
+7.2 
+1.26 
+0.14 
+0.34 
+0.09 
+2.59 
+
+The  experiments  were  conducted  in  the  sub-humid  tropics  of 
+northern Ghana (9◦ 21′ N, 0◦ 57′ W, 108 m above sea level) in four 
+consecutive wet and dry seasons (hereafter, WS and DS, respectively): 
+2016 WS, 2017 DS and WS, and 2018 DS. Two adjacent paddy fields 
+
+Table 1 
+Soil properties (0-15 cm) of experimental fields.  
+Parameter 
+Clay (1) 
+Silt (1) 
+Sand (1) 
+Soil type 
+pH (1:2.5 H2O) 
+Total N (2) 
+Total C (2) 
+Exchangeable Ca (3) 
+Exchangeable K (3) 
+Exchangeable Mg (3) 
+Exchangeable Na (3) 
+eCEC (4) 
+(1) sieving and pipetting method. 
+(2) NC analyzer, Sumigraph NC-220 F (SCAS, Japan). 
+(3) Ammonium acetate extract method at pH 7.0. 
+(4) the sum of exchangeable cations and aluminum. 
+
+Unit 
+% 
+% 
+% 
+– 
+– 
+g kg(cid:0) 1 
+g kg(cid:0) 1 
+cmol kg(cid:0) 1 
+cmol kg(cid:0) 1 
+cmol kg(cid:0) 1 
+cmol kg(cid:0) 1 
+cmol kg(cid:0) 1 
+
+AWD field 
+13.1 
+10.3 
+76.5 
+sandy loam 
+5.5 
+0.7 
+7.7 
+1.96 
+0.19 
+0.85 
+0.42 
+3.49 
+
+FieldCropsResearch260(2021)1079782Y. Tsujimoto et al.                                                                                                                                                                                                                              
+
+Table 2 
+Cropping calendar and phenology development in each season.  
+
+Season 
+
+2016 
+WS 
+
+2017 
+WS 
+
+2017 
+DS 
+
+2018 
+DS 
+
+Variety by 
+Water 
+regime 
+
+IR64 in FL 
+IR64 in DF 
+Ja85 in FL 
+Ja85 in DF 
+IR64 in FL 
+IR64 in DF 
+Ja85 in FL 
+Ja85 in DF 
+IR64 in FL 
+IR64 in DF 
+Ja85 in FL 
+Ja85 in DF 
+IR64 in FL 
+IR64 in DF 
+Ja85 in FL 
+Ja85 in DF 
+
+Phenological development 
+Transplanting 
+Sowing 
+date 
+date (TP) 
+
+10-Jul 
+10-Jul 
+10-Jul 
+10-Jul 
+19-Jun 
+19-Jun 
+19-Jun 
+19-Jun 
+6-Feb 
+6-Feb 
+6-Feb 
+6-Feb 
+20-Jan 
+20-Jan 
+20-Jan 
+20-Jan 
+
+1-Aug 
+1-Aug 
+1-Aug 
+1-Aug 
+13-Jul 
+13-Jul 
+13-Jul 
+13-Jul 
+15-Mar 
+15-Mar 
+15-Mar 
+15-Mar 
+23-Feb 
+23-Feb 
+23-Feb 
+23-Feb 
+
+Days from 
+transplanting to 50 % 
+heading 
+60  
+59  
+71  
+68 
+62  
+61  
+70  
+72 
+54  
+55  
+63  
+65 
+55  
+56  
+64  
+72  
+
+applied at the N rate of 70 kg ha(cid:0) 1 before transplanting, and ammonium 
+sulfate was top-dressed at the N rate of 50 kg ha(cid:0) 1 approximately one 
+month after transplanting (total N applied: 120 kg ha(cid:0) 1). Weeds and 
+pests were controlled when they occurred using chemicals and by hand 
+throughout the growing period. The cropping calendar for each season is 
+summarized in Table 2. 
+
+2.2. Measurements 
+
+Within 10–14 days after reaching physiological maturity, rice plants 
+in an area of 5.76 m2 (2.4 m × 2.4 m) were harvested from the middle of 
+each plot to determine grain yield (t ha(cid:0) 1), which was corrected to a 14 
+% moisture content using a grain moisture sensor (Riceter, Kett Electric 
+Laboratory, Tokyo, Japan). Within the same sampling quadrat, eight 
+average-sized hills were taken as subsamples to determine aboveground 
+biomass, yield components, and spikelet sterility. Spikelet sterility was 
+determined by counting the numbers of sinking and floating spikelets in 
+70 % ethanol, as per Kobata et al. (2010). This parameter is normally 
+lower than the ratio of unfilled grain number to the total grain num-
+ber—which is often used to assess heat stresses on rice production—, but 
+more  directly  relevant  to  high  temperature  events  in  the  anthe-
+sis–pollination-fertilization process (van Oort et al., 2015). 
+Inner-canopy temperature (Tc) was recorded at 2 min intervals, by 
+placing  a  MINCER  (Micrometeorological  Instrument  for  the  Near- 
+Canopy Environment of Rice) (Fukuoka et al., 2012) inside the can-
+opy, from the start of heading to maturity. Briefly, the MINCER enables 
+accurate measurements of Tc, using a solar-cell powered ventilator and 
+micro-datalogger  located  inside  a  ventilated  radiation  shield.  The 
+MINCER  was  placed  in  the  two  most  representative  plots,  having 
+average plant growth and uniform phenological development. The Tc of 
+the two plots was averaged for each variety in each water regime. The 
+differences in Tc between FL and DF (DF (cid:0) FC) was calculated as ΔTc. A 
+positive ΔTc indicates that Tc is higher in DF than in FL. The air intake, 
+where the temperature sensor is located, was kept at panicle height by 
+adjusting the position using the attached tripods. The air intake was 
+located facing south to avoid direct sunlight. The device was set 2.5 m 
+above ground level to record the above-canopy ambient temperature 
+(Ta) and RH. Ambient vapor pressure deficit (VPD) was calculated from 
+Ta and RH using the Tetens formula. In this way, the diurnal microcli-
+matic  changes  above  and  within  the  canopy  were  monitored  at 
+two-minute intervals. 
+
+Daily flowering time was recorded from digital photographs taken at 
+10 min intervals in the most representative plot for each variety, under 
+each  water  regime,  throughout  the  flowering  period.  A  commercial 
+digital  camera  (Optio  WG40,  Ricoh  Ltd.,  Tokyo,  Japan)  was  fixed 
+approximately 60 cm above the canopy and inclined 45◦ from the ho-
+rizon. The captured images were cropped to include the panicles of 
+10–15 hills. From the images, we determined the initial spikelet opening 
+time as the time when more than one spikelet lemma and palea had 
+opened with visible anther extrusion, and peak spikelet opening time as 
+the time when the maximum number of spikelets had opened. Mean 
+initial and peak spikelet opening times for each plot were expressed in 
+terms of hours after sunrise, and as the average over seven peak flow-
+ering days, centered around the day of 50 % heading (including 3 days 
+before and after). Rainy days in which flowering started in the afternoon 
+were excluded, and in this case, post-50 % heading days were added for 
+the calculation. Our observation period corresponded to the flowering of 
+almost all of the spikelets, as per Nguyen et al. (2014). Daily maximum 
+Ta, maximum Ta between initial and peak spikelet opening time, and 
+maximum  Tc  between  initial  and  peak  spikelet  opening  time,  were 
+calculated as the average over the seven observation days for each va-
+riety, water regime, and season. The times of apparent sunrise, apparent 
+sunset, and solar noon at the experimental site, for each observation 
+date,  were  calculated  using  the  online  Solar  Calculator  (National 
+Oceanic & Atmospheric Administration, U.S. Department of Commerce, 
+https://www.esrl.noaa.gov/gmd/grad/solcalc/).  The  50  %  heading 
+date was visually estimated from the same digital photographs. The 50 
+% heading day was defined as the day when approximately half of the 
+panicles in each image visually appeared from the flag leaf sheath. 
+Daily  changes  in  volumetric  soil  moisture  content  (θ,  %)  were 
+monitored by installing soil moisture sensors (EC-5, Meter Group, Inc., 
+WA, USA) and dataloggers (Em5b, Meter Group Inc., WA, USA) 20 cm 
+below the soil surface, with four replicates in the DF field, from trans-
+planting  to  maturity.  Daily  weather  conditions  throughout  growing 
+periods—temperature, RH, solar radiation, and rainfall—were recorded 
+by a Hobo Weather Station (U30-NRC Data Logger, Onset Hobo Inc., 
+MA, USA) in a village near the experimental fields. 
+2.3. Statistical analysis 
+
+JMP 14 software (JMP 14.0.0, SAS Institute Inc.) was used for sta-
+tistical analysis. A generalized linear model was used to determine the 
+effect of variety in each water regime on the variables for each growing 
+season and for all the seasons pooled. The replicate was treated as a 
+random factor within each water regime. When analyzing the effect of 
+season and its interaction with variety in each water regime, observa-
+tions from different years (2016 and 2017 WS, and 2017 and 2018 DS) 
+were treated as repeated measurements. Tukey’s honestly significant 
+difference test was conducted to compare the mean values at the 5% 
+probability level. In the 2016 WS, two replicates of Ja85 located in the 
+southwest  corner  of  the  FL  field  were  excluded  from  data  analysis 
+because of severe damage from flooding stress, caused by intense rainfall 
+soon after planting. The logistic sigmoid function curve was applied to 
+correlate spikelet sterility rate against maximum Tc from initial and peak 
+spikelet  opening  time,  maximum  Ta  from  initial  and  peak  spikelet 
+opening time, and daily maximum Ta, as per Horie et al. (1995). For the 
+nonlinear regression, we assumed that the spikelet sterility rate (%) took 
+a lower limit of 2.2 % from the observed data and an upper limit of 100 
+%. The significance of the adjusted coefficient of determination for the 
+regression model was determined using a Student’s t-test. The threshold 
+above which spikelet sterility increased was assumed as the temperature 
+(◦C) when the derivative of fitted curve was  >10 % of its maximum 
+value.  The  slope  in  the  observation  range  and  above  the  threshold 
+temperature was used to estimate the response of spikelet sterility to a 
+unit of temperature change. 
+
+FieldCropsResearch260(2021)1079783Y. Tsujimoto et al.                                                                                                                                                                                                                              
+3. Results 
+3.1. Weather conditions during the cropping season 
+
+In the 2018 DS, both IR64 and Ja85 were exposed to Tmax continu-
+ously above 35 ◦C, and even above 40 ◦C during their heading periods 
+(Fig.  1). In the 2017 DS, Tmax  was mostly above 35  ◦C; during the 
+heading period, it reached 38.3 ◦C for IR64, and remained at 35 ◦C for 
+Ja85. The significantly higher Tmax in the 2018 DS arose because we 
+transplanted 21 days earlier in 2018 DS than in 2017 DS (Table 2). 
+During the WS, Tmax was mostly below 35 ◦C during the heading periods 
+of both varieties; Tmax gradually increased with decreasing RH during 
+later growth stages, as the hot and dry season approached. In the DS, 
+Tmax decreased as RH increased, especially later in the season. There-
+fore, Ja85, which headed later than IR64, was exposed to higher Tmax 
+and lower RH in the WS, and to lower Tmax and higher RH in the DS. 
+3.2. Hydrological dynamics in alternate wetting-and-drying treatment 
+
+In all cropping seasons, volumetric soil moisture contents (θ,  %) 
+fluctuated between 36 % and 42 % during the flooding period before the 
+start of DF treatment (Fig. 2). After drainage at the start of IR64 heading, 
+θ declined to minima of 35 % in the 2016 WS and 32 % in the 2017 wet 
+and dry seasons, and recovered after reflooding. Consecutive days of θ 
+<38 % occurred at 60–75 DAT in the 2017 WS and 54–70 DAT in the 
+2017 DS, which mostly covered the peak flowering days of both vari-
+eties. The  θ  did not decrease as intended in the 2016 WS, probably 
+because of frequent rainfall events during the treatment period. In the 
+2018 DS, θ followed the same trend as the other seasons at the start of 
+the drainage treatment but declined to as low as 26 % at 86 days after 
+transplanting. This minimum θ occurred 14 days after the 50 % heading 
+date of Ja85. This unexpected reduction in θ, and the prolonged aerobic 
+condition of the soil, was caused by a lack of irrigation at the appropriate 
+time.  Except  for  this  unexpected  reduction  in  the  2018  DS,  θ  was 
+
+Fig. 1. Changes in (A) daily maximum air temperature and (B) daily mean 
+relative humidity from transplanting to physiological maturity for each season 
+at the weather station in the experimental village. 
+Black bars in the figure (A) indicate the range of 50 % heading dates of each 
+variety in wet seasons (WS) and dry seasons (DS). 
+
+Fig. 2. Changes in volumetric soil moisture content at the depth of 20 cm of DF 
+field for each season from transplanting to physiological maturity. 
+
+maintained above 32 % throughout the growing periods in both the wet 
+and dry seasons. 
+3.3. Grain yield, biomass production and spikelet sterility 
+
+There were large variations in grain yields, from 4.7 to 7.7 t ha(cid:0) 1, 
+depending on the variety, water regime, and growing season (Table 4). 
+They were greater in the DS than WS with a significant interaction be-
+tween season and variety in each water regime (Table 3). In the 2017 DS, 
+grain yield was significantly lower in DF than FL, by 15 % for IR64 and 
+13 % for Ja85; in the 2018 DS, the reduction caused by DF was greater, 
+at 26 % for IR64 and 18 % for Ja85. In the WS, however, the yield re-
+sponses  were  not  significantly  different  among  varieties  in  different 
+water regimes (Table 3). In the 2016 WS, Ja85 had significantly greater 
+yield than IR64 in DF, whereas there were no significant differences for 
+the same varieties in different water regimes. In the 2017 WS, there were 
+no significant differences among varieties in different water regimes. 
+Aboveground biomass showed similar changes to grain yield in response 
+to variety in different water regimes and growing seasons (Tables 3 and 
+4). Aboveground biomass averaged over two years was significantly 
+greater in FL than in DF for both varieties in the DS but not in the WS. 
+Spikelet sterility ranged from 2.3%–11.8% between the varieties in 
+different water regimes and growing seasons (Table 4). The effect of 
+season was not significant, but there was a significant interaction on 
+spikelet sterility between the season and variety in different water re-
+gimes (Table 3). Spikelet sterility was significantly higher in DF than FL 
+for both varieties in the DS although the difference was relatively small. 
+On the other hand, spikelet sterility little differed among varieties or 
+water regimes in the WS. 
+
+Table 3 
+Levels of significance in the general linear model test for the effect of variety in 
+water regime V (W) for each season, and the effect of V (W), season (S) and their 
+interactions for all seasons pooled on grain yield, biomass, and spikelet sterility.   
+
+2017 DS 
+
+2018 DS 
+
+All  
+
+*** 
+*** 
+***  
+*** 
+P = 0.07 
+*  
+* 
+ns. 
+** 
+
+ns. 
+– 
+– 
+
+2017 WS 
+
+2016 WS 
+Grain yield 
+** 
+– 
+– 
+Biomass 
+ns. 
+ns. 
+– 
+– 
+– 
+– 
+Spikelet sterility 
+ns. 
+* 
+– 
+– 
+– 
+– 
+
+V (W) 
+S 
+S × V (W) 
+V (W) 
+S 
+S × V (W) 
+ns. 
+V (W) 
+S 
+– 
+S × V (W) 
+– 
+***P < 0.001, **P < 0.01, *P < 0.05, n.s. not significant. 
+
+*** 
+– 
+– 
+
+** 
+– 
+– 
+
+*** 
+– 
+– 
+
+* 
+– 
+– 
+
+*** 
+– 
+– 
+
+FieldCropsResearch260(2021)1079784Y. Tsujimoto et al.                                                                                                                                                                                                                              
+
+Table 4 
+Grain yield, aboveground biomass, and spikelet sterility as affected by variety, 
+water regime, and season.  
+Variety in Water 
+Season 
+regime 
+IR64 in FL 
+IR64 in DF 
+Ja85 in FL 
+Ja85 in DF 
+IR64 in FL 
+IR64 in DF 
+Ja85 in FL 
+Ja85 in DF 
+IR64 in FL 
+IR64 in DF 
+Ja85 in FL 
+Ja85 in DF 
+IR64 in FL 
+IR64 in DF 
+Ja85 in FL 
+Ja85 in DF 
+IR64 in FL 
+IR64 in DF 
+Ja85 in FL 
+Ja85 in DF 
+IR64 in FL 
+IR64 in DF 
+Ja85 in FL 
+Ja85 in DF 
+
+Grain yield (t 
+ha(cid:0) 1) 
+6.1ab 
+5.4b 
+6.6ab 
+7.0a 
+5.2a 
+5.0a 
+5.6a 
+5.5a 
+6.1b 
+5.2c 
+7.4a 
+6.4b 
+6.3b 
+4.7c 
+7.7a 
+6.4b 
+5.6bc 
+5.2c 
+6.0bc 
+6.3b 
+6.2b 
+4.9c 
+7.6a 
+6.4b 
+
+Spikelet 
+sterility (%) 
+2.4b  
+2.3b  
+5.7a  
+2.6b 
+8.9a  
+5.9a  
+10.8a  
+8.2a 
+4.1b†
+7.5ab†
+6.7b  
+11.8a 
+4.0a  
+8.9a  
+4.2a  
+7.2a 
+5.7abc  
+4.1c  
+8.3ab  
+5.4abc 
+4.0c  
+8.3ab  
+5.4bc  
+9.6a 
+
+Biomass (t 
+ha(cid:0) 1) 
+11.5a 
+9.8a 
+11.7a 
+12.0a 
+11.2a 
+9.8a 
+10.9a 
+10.6a 
+12.3ab 
+10.3b 
+13.3a 
+11.4ab 
+12.5a 
+9.7b 
+13.2a 
+10.5b 
+11.3abc 
+9.8c 
+11.4abc 
+11.3abc 
+12.4ab 
+10.0c 
+13.3a 
+10.9bc 
+
+Season × Variety in water regime   
+WS 
+
+2016WS 
+
+2017WS 
+
+2017DS 
+
+2018DS 
+
+DS 
+
+Within each season, season × water regime, or season × variety, values with 
+different alphabets indicate significant differences at P < 0.05. †significant dif-
+ferences at P < 0.1. 
+
+3.4. Flowering time 
+
+The time of sunrise during the peak flowering days differed little 
+among growing seasons or varieties, ranging from 05:43 at the earliest 
+(Ja85 in the 2017 DS) to 05:54 at the latest (IR64 in the 2017 WS) (local 
+standard  time).  Flowering  times  (initial  and  peak  spikelet  opening 
+times) differed significantly between the dry and wet seasons (Fig. 3). 
+Flowering time was earlier in the DS than in the WS, by 37–52 min 
+(mean 42 min) for initial spikelet opening time, and by 35–50 min 
+(mean 44 min) for peak spikelet opening time, regardless of variety and 
+water regime. When pooling the growing seasons and water regimes, 
+initial and peak spikelet opening times were significantly earlier in IR64 
+than in Ja85, by 12 min and 10 min, respectively. There were no sig-
+nificant differences in initial and peak spikelet opening times of the same 
+varieties between FL and DF for any seasons or all seasons pooled. 
+
+3.5. Microclimate at flowering time under different water regimes 
+3.5.1. Wet season 
+Fig. 4 shows the diurnal changes in microclimate averaged over the 
+peak flowering days (n = 7) for each variety in response to water regime 
+in the WS. Ta and VPD for IR64 was missing for 2016 WS due to an 
+instrument  error  (Fig.  4A).  Ta  increased  gradually  after  sunrise  and 
+reached 29.9 ◦C for IR64 in the 2017 WS (Fig. 4 B), 31.3 ◦C for Ja85 in 
+the 2016 WS (Fig. 4C), and 30.2 ◦C for Ja85 in the 2017 WS (Fig. 4D) at 
+maximum  of  around  8.13–8.83  h  after  sunrise  (13:56–14:42  local 
+standard time). Maximum Ta during the flowering time (from initial to 
+peak flowering) was lower by 0.9–2.0 ◦C than the daily maximum Ta. 
+In both FL and DF, Tc was equal to or slightly higher than Ta in the 
+morning, but slightly lower than Ta  in the afternoon. The difference 
+between Tc and Ta in the afternoon was particularly large (up to 1 ◦C) for 
+Ja85 in the 2016 WS. For both varieties, Tc was slightly higher in DF 
+than FL (by 0.1–0.2 ◦C on average) in the afternoon in both years. On the 
+other hand, the effect of water regime on Tc was negligible ((cid:0) 0.1 ◦C <
+ΔTc  < 0.1  ◦C) in the nighttime (sunset to sunrise), morning, and at 
+
+Fig. 3. Variation in initial spikelet opening time and peak spikelet opening time 
+as affected by season and variety. 
+Mean values over FL and DF were shown because there was no significant 
+differences between IR64 in FL and IR64 in DF or Ja85 in FL and Ja85 in DF for 
+any seasons or all seasons pooled. Values attached with different alphabets 
+indicate significant differences in initial and peak spikelet opening times at P < 
+0.05. Error bars indicate the standard deviations of observation days. 
+
+flowering time for both IR64 and Ja85 in the WS. 
+3.5.2. Dry season 
+In the DS, maximum Ta during the flowering time was 31.3 ◦C (IR64, 
+2017 DS), 31.9 ◦C (IR64, 2018 DS), 31.1 ◦C (Ja85, 2017 DS), and 31.6 ◦C 
+(Ja85, 2018 DS) (Fig. 5A–D, respectively), and further increased to daily 
+maxima of 35.3 ◦C, 34.4 ◦C, 34.3 ◦C, and 34.1 ◦C, respectively, around 
+9.57–10.23 h after sunrise or 15:22–15:50 local standard time. Relative 
+to the WS, VPD in the DS was much greater; in the morning, at 0.43–1.63 
+kPa (IR64, 2017 DS), 0.38–1.64 kPa (IR64, 2018 DS), 0.26–1.40 kPa 
+(Ja85, 2017 DS), and 0.35–1.45 kPa (Ja85, 2018 DS); in the afternoon at 
+1.51–2.22  kPa,  1.62–2.14  kPa,  1.02–1.84  kPa,  and  1.26–1.79  kPa, 
+respectively. The difference in VPD between WS and DS was particularly 
+large in the afternoon. 
+The effect of evaporative cooling was much greater in the DS than the 
+WS: Tc was consistently lower than Ta, particularly in the FL treatment, 
+throughout the day. The greatest differences between Tc and Ta observed 
+within the peak flowering days were 5.9  ◦C (IR64, 2017 DS), 5.5  ◦C 
+(IR64, 2018 DS), 5.1 ◦C (Ja85, 2018 DS), and 5.7 ◦C (Ja85, 2018 DS) 
+(data not shown). For both varieties in both years, Tc did not greatly 
+differ between DF and FL in the morning. Averaged ΔTc from initial to 
+
+FieldCropsResearch260(2021)1079785Y. Tsujimoto et al.                                                                                                                                                                                                                              
+
+Fig. 4. Changes in ambient temperature (Ta), 
+inner-canopy temperature (Tc) in FL and DF, Tc 
+differences  between  FL  and  DF  (ΔTc),  and 
+ambient  vapor  pressure  deficit  (VPDa)  from 
+hours after apparent sunrise for each variety in 
+2016 WS and 2017 WS. 
+The average of two replicates over peak flow-
+ering days (7 observation days around the day 
+of 50 % heading excluding any rainy days) in FL 
+was  depicted.  Grey  bars  within  each  figure 
+indicate the period from initial to peak spikelet 
+opening  time.  Orange lines  indicate  the solar 
+noon and apparent sunset time. In 2016 WS, the 
+measurements  of  ambient  temperature  above 
+the  canopy  was  failed  due  to  an  operational 
+error  during  the  heading  periods  of  IR64. 
+Instead, air temperature and VPD measured by 
+the weather station in the experimental village 
+was shown in dotted lines (30-min interval).   
+
+peak flowering times were slightly greater than the WS but only by 
+0.2–0.3  ◦C.  In  contrast,  ΔTc  greatly  increased  from  solar  noon  to 
+midnight relative to the WS for both varieties in the 2017 DS and 2018 
+DS. ΔTc was particularly large in the period ±3 h from sunset. In this 
+time of the day, AWD had higher Tc than FL on average by 0.7 ◦C (IR64, 
+2017 DS), 0.9 ◦C (IR64; 2018 DS), 0.9 ◦C (Ja85; 2017 DS), and 0.7 ◦C 
+(Ja85, 2018 DS). 
+3.6. Relationship between inner-canopy temperature and spikelet sterility 
+Daily maximum Ta during the peak flowering days had a wide range, 
+from  30.2  ◦C  to  35.7  ◦C,  much  higher  in  DS  than  WS.  In  contrast, 
+maximum Tc during the flowering time had a narrower range, from 29.1 
+◦C to 31.1 ◦C, because of the high evaporative-cooling effect and early 
+flowering times in the DS (Fig. 6). Spikelet sterility was significantly 
+fitted to the logistic curve in the function of maximum Tc at flowering 
+time across different growing seasons except 2017 WS (Fig. 6). The 
+estimated  threshold  temperature  above  which  spikelet  sterility 
+increased was 30.2 ◦C or 4.8 % of the estimated spikelet sterility. Using 
+the fitted curve, the spikelet sterility increased by 7.6 % on average per 
+◦C of maximum Tc at flowering time above the threshold temperature 
+and within the observation range. DF had slightly higher spikelet ste-
+rility and higher maximum Tc at flowering time than FL, for both vari-
+eties in the DS (Table 4). In the 2017 WS, spikelet sterility tended to be 
+high relative to the other seasons, despite there being relatively low 
+maximum Ta at flowering time. However, it should be noted that the 
+observation  values  of  spikelet  sterility  were  relatively  low  for  any 
+
+variety,  water  regime  or  growing  season.  Spikelet  sterility  was  not 
+correlated  with  either  the  maximum  Ta  at  flowering  time  or  daily 
+maximum Ta, and thus the data is not shown. 
+4. Discussion 
+4.1. Diurnal changes in inner-canopy temperature and impact on grain 
+yield of different water regimes 
+
+This study provides the first open-field evidence of how different 
+water-saving management practices in lowland rice production can alter 
+inner-canopy temperature over the course of the day and, in turn, affect 
+spikelet sterility and grain yield. Further, we tested these effects under 
+contrasting climatic conditions. Except in the 2018 DS, our drainage 
+treatment (DF) was similar in magnitude to a so-called “mild AWD” (i.e. 
+when soil water potential was ≥ (cid:0) 20 kPa or field water level did not 
+drop below 15 cm from the soil surface as per Carrijo et al., 2017), which 
+has been reported to result in little yield reduction for rice. Given a 
+typical soil moisture retention curve for the sandy loam soils (Gupta and 
+Larson, 1979), the fields should have been saturated or at least above 
+field capacity (> (cid:0) 10 kPa) throughout the DF treatment. In the 2018 DS, 
+an unexpected reduction in soil moisture after the peak flowering days 
+and prolonged drainage treatment might have caused drought stress to 
+rice plants, as indicated by the delayed heading dates for Ja85, and 
+further exacerbated yield reductions in DF. Yet, the lowest reduction of θ 
+at 26 % can be still regarded as a range with little yield penalties from 
+drought stress under the humid summer in Arkansas, USA according to 
+
+FieldCropsResearch260(2021)1079786Y. Tsujimoto et al.                                                                                                                                                                                                                              
+
+Fig. 5. Changes in ambient temperature (Ta), 
+inner-canopy temperature (Tc) in FL and DF, Tc 
+differences  between  FL  and  DF  (ΔTc),  and 
+ambient  vapor  pressure  deficit  (VPDa)  from 
+hours after apparent sunrise for each variety in 
+2017 DS and 2018 DS. 
+The average of two replicates over peak flow-
+ering days (7 observation days around the day 
+of 50 % heading excluding any rainy days) in FL 
+was  depicted.  Grey  bars  within  each  figure 
+indicate the period from initial to peak spikelet 
+opening  time.  Orange lines  indicate  the solar 
+noon and apparent sunset time.   
+
+Linquist et al. (2015b). 
+As indicated by Jagadish et al. (2015), DF certainly increased Tc 
+during the flowering time and increased spikelet sterility. However, the 
+change in spikelet sterility was relatively small by 3–5%, and the effect 
+was found only in the DS but not in the WS. Moreover, the increases in 
+heat-induced sterility were much smaller than expected from the yield 
+penalties observed in the DS. This apparent discrepancy in magnitudes 
+between spikelet sterility and yield reductions with DF is an important 
+finding and might be related to large increases in Tc from solar noon to 
+nighttime,  particularly  ±3  h  from  sunset.  The  adverse  impacts  of 
+increased nighttime temperature on rice production through respiration 
+losses and physiological stresses have been widely reported (Katsura 
+et al., 2009; Mohammed and Tarpley, 2009a,2009b; Peng et al., 2004; 
+Shi et al., 2016; Welch et al., 2010). 
+In the present study, the canopy development and leaf area—which 
+cause differences in canopy transpiration mass and transmissivity of 
+solar radiation on the ground/water surface—should have differed little 
+between DF and FL because both fields had the same water management 
+prior to the start of the treatment. Therefore, a major reason for changes 
+in microclimates with DF is partial stomatal closure and reduction in 
+canopy transpiration. Under aerobic water regimes, Kato and Okami 
+(2010)  observed  that rice  plants  closed  stomata  (indicating  drought 
+stress) even with a soil moisture contents above field capacity. This 
+response should be greater in the afternoon as rice plants generally 
+reduce stomatal conductance and assimilation rates when VPD is high 
+on account of an internal water deficit even under flooded conditions 
+(Hirasawa et al., 1992; Morison and Gifford, 1983). Additionally, under 
+
+Fig. 6. Correlation of spikelet sterility rate with maximum inner-canopy tem-
+perature (Tc) from initial to peak spikelet opening time. 
+The symbols indicate the means over the peak flowering days (7 observation 
+days around the day of 50 % heading excluding any rainy days). Th error bar 
+indicate the standard error of replicates (n = 4). 
+***Significant at P < 0.001. 
+
+FieldCropsResearch260(2021)1079787the flowering time was narrow in the present study. 
+We found that there was no relationship between maximum ambient 
+temperature during the peak flowering days and spikelet sterility. We 
+ascribe this to the large evaporative-cooling effect (temperature differ-
+ence between air and inner-canopy) and early daily flowering time in 
+the DS. This is consistent with previous observations under open-field 
+conditions  and  model  analysis  (e.g.,  Matsui  et  al.,  2007;  van  Oort 
+et al., 2015; Yan et al., 2010). The difference in initial and peak spikelet 
+opening times between the dry and wet seasons is consistent with pre-
+vious studies, which found that flowering time can be advanced by 
+higher  minimum ambient  temperatures in  the preceding seven days 
+(Julia and Dingkuhn, 2012), or by higher mean air temperature and 
+higher solar radiation on the morning of the day (Kobayasi et al., 2019). 
+We found that there was no significant difference in flowering time 
+between DF and FL in either the DS or WS, implying that inner-canopy 
+temperatures from late afternoon to midnight did not affect the flow-
+ering times to a large degree. These open-field observations should help 
+our understanding of how water-saving management practices affect 
+heat-induced  stresses  under  contrasting  climatic  conditions  in  the 
+sub-humid tropics. 
+5. Conclusions 
+
+Y. Tsujimoto et al.                                                                                                                                                                                                                              
+dry climatic conditions, most of the available energy is consumed as 
+latent heat flux, and thus the effect of stomatal closure on energy par-
+titioning can be high, inducing large increases in canopy temperature. 
+These mechanisms may explain the large ΔTc in late afternoon in the DS 
+when VPD is at its highest, while the values were relatively small in the 
+morning and in the WS. By monitoring dry-season paddy field energy 
+fluxes in the tropics, Alberto et al. (2009) also observed higher sensible 
+heat flux and lower latent heat flux (canopy transpiration) under an 
+aerobic water regime, which elevated the air temperature and VPD near 
+the canopy during the daytime particularly in the afternoon. The sto-
+matal closure and increase in ΔTc in the afternoon could have caused 
+more respiration loss and reduced assimilation even under saturated 
+conditions in DF. 
+The mechanism for continuously positive ΔTc after sunset in the DS is 
+not clear but may be related to the dry wind blowing on the experi-
+mental fields (the VPD remained high >1 kPa after sunset in the DS). The 
+time variation of ΔTc at this period of day was almost proportional to the 
+change in wind speed (data not shown). These winds induce evaporation 
+from the water/soil surface, and the evaporation-cooling effect should 
+be larger in FL with water surface than in DF with a wet soil surface. 
+The Tc changes over the course of the day in different water man-
+agement and contrasting climatic conditions imply that non-flooded and 
+saturated water management has a higher risks of yield reduction in the 
+DS of the sub-humid tropics through a combination of small increases in 
+Tc during flowering time, inducing spikelet sterility, and the cumulative 
+effects of reduced assimilation resulting from stomatal closure and high 
+Tc  (high respiration loss) in the afternoon and nighttime. The latter 
+cumulative effect could have increased the yield difference between FL 
+and DF in the 2018 DS under the prolonged non-flooded conditions. This 
+effect may also explain the field observation in de Vries et al. (2010), in 
+which mild AWD during the reproductive growth stage imposed a yield 
+penalty of 9–14 % only in the DS but not in the WS in a similar climate in 
+Senegal. Further studies are needed to quantify how increased Tc in the 
+afternoon to nighttime affect grain yields under water-saving manage-
+ment practices. 
+4.2. Relationship between inner-canopy temperature and spikelet sterility 
+Our findings elucidate the significant and logistic relationship be-
+tween canopy microclimate, as shown by maximum inner-canopy tem-
+perature (Tc) during the flowering time and spikelet sterility under open- 
+field conditions in both wet and dry seasons, with the exception of 2017 
+WS dataset. In the 2017 WS, we observed that spikelet sterility started to 
+increase at a lower threshold; however, the reason for this is unknown. 
+The estimated threshold Tc (30.2 ◦C) is slightly higher by 0.5 ◦C than the 
+previous observations using the same IR64 variety under a temperature- 
+controlled chamber (Jagadish et al., 2007) and open-field conditions 
+(Julia and Dingkuhn, 2013). The estimated increase in spikelet sterility 
+per unit of Tc change (7.6 % per  ◦C) was comparable to previous ob-
+servations  at  the  initial  responding  phase  in  temperature-controlled 
+chambers (Jagadish et al., 2007; Weerakoon et al., 2008) and compa-
+rable to or slightly higher than those under open-field conditions (Julia 
+and Dingkuhn, 2013; Yan et al., 2010). These previous reports support 
+the reliability of the regression model for the spikelet sterility response 
+to a unit increase in Tc. There have been few field-based studies into the 
+relationship between spikelet sterility and organ temperatures which 
+leads to uncertainty in predicting the effect of heat stresses on rice yield 
+(van Oort et al., 2014, 2015; 2018). Thus, the dataset obtained here is 
+valuable for improving the impact assessment of increasing tempera-
+tures  on  lowland  rice  production  in  the  sub-humid  tropics.  If  the 
+extrapolation beyond the observation range is allowed, higher temper-
+ature conditions may enlarge the difference in spikelet sterility between 
+flooded  and  saturated  field  conditions  because  of  the  exponential 
+response  curve.  However,  it  should be noted  that the  magnitude  of 
+spikelet sterility was somewhat lower than those observed even under 
+open-field conditions, and the range of both spikelet sterility and Tc at 
+
+In the context of climate change, the combination of high tempera-
+tures and water shortages poses a threat to rice production in the tropics. 
+However, little is known about how water-saving management affects 
+rice heat stress and grain yield under open-field conditions. We assessed 
+diurnal changes in Tc and its relationship with heat-induced sterility and 
+grain yield of rice, during the wet and dry seasons in the sub-humid 
+tropics  in  northern  Ghana.  Compared  to  the  flooded conditions,  we 
+found  that  (1)  the  non-flooded  and  saturated  conditions  increased 
+flowering-time Tc and heat-induced sterility, but the effect was marginal 
+and only in the DS; (2) the non-flooded and saturated conditions greatly 
+increased dry-season Tc from late afternoon to nighttime, which may 
+explain the greater than expected yield reductions from increases in 
+sterility;  and  (3)  dry-season  heat-induced  sterility  was  lower  than 
+anticipated from the extremely high ambient temperatures, because of 
+the  large  evaporative-cooling  effect  and  early  flowering  time.  The 
+physiological responses of rice to increased Tc from late afternoon to 
+midnight,  and  its  relationship  with  productivity  under  water-saving 
+management, should be further explored. 
+Author contributions 
+
+The authors report no declarations of interest. 
+
+Conceived and designed the experiments: Y.T., W.D., M.F., and M.Y. 
+Performed the experiment: Y.T., A.F., and B.I. Analyzed the data: Y.T., A. 
+B., W.D. Wrote the paper: Y.T., M.Y. All authors have read and approved 
+the final manuscript. 
+Funding 
+
+This  work  was  supported  by  Global  Environmental  Coordination 
+System from the Ministry of the Environment of Japan in FY2015-2017. 
+CRediT authorship contribution statement 
+
+Yasuhiro  Tsujimoto:  Conceptualization,  Methodology,  Investiga-
+tion,  Formal  analysis,  Writing  -  original  draft.  Abraham  Fuseini: 
+Investigation, Formal analysis. Baba I.Y. Inusah: Investigation, Writing 
+-  review  &  editing.  Wilson  Dogbe:  Investigation,  Methodology. 
+Mayumi Yoshimoto: Conceptualization, Data curation, Writing - orig-
+inal draft. Minehiko Fukuoka: Methodology. 
+Declaration of Competing Interest 
+
+FieldCropsResearch260(2021)1079788Y. Tsujimoto et al.                                                                                                                                                                                                                              
+Acknowledgments 
+
+Matsui, T., Omasa, K., Horie, T., 1997. High temperature-induced spikelet sterility of 
+
+Matsui, T., Kobayasi, K., Nakagawa, H., Yoshimoto, M., Hasegawa, T., Reinke, R., 
+
+Mohammed, A.-R., Tarpley, L., 2009a. Impact of high nighttime temperature on 
+
+Mohammed, A.R., Tarpley, L., 2009b. High nighttime temperatures affect rice 
+
+We would like to express our gratitude to farmers in the Golinga 
+village of northern Ghana who provided land for conducting the field 
+experiments  and  to  Ms.  Mayumi  Yonemura  for  the  support  to  soil 
+analysis. We thank Dr. Kensuke Kawamura for his technical advice on 
+additional statistical analysis. We are grateful to two anonymous re-
+viewers for their valuable comments on our original manuscript. 
+References 
+Alberto, M.C.R., Wassmann, R., Hirano, T., Miyata, A., Kumar, A., Padre, A., Amante, M., 
+2009. CO2/heat fluxes in rice fields: comparative assessment of flooded and non- 
+flooded fields in the Philippines. Agric. For. Meteorol. 149, 1737–1750. 
+Bouman, B.A.M., Tuong, T.P., 2001. Field water management to save water and increase 
+its productivity in irrigated lowland rice. Agric. Water Manage. 49, 11–30. 
+Carrijo, D.R., Lundy, M.E., Linquist, B.A., 2017. Rice yields and water use under alternate 
+wetting and drying irrigation: a meta-analysis. Field Crops Res. 203, 173–180. 
+Coast, O., Murdoch, A.J., Ellis, R.H., Hay, F.R., Jagadish, K.S., 2016. Resilience of rice 
+(Oryza spp.) pollen germination and tube growth to temperature stress. Plant Cell 
+Environ. 39, 26–37. 
+de Vries, M.E., Rodenburg, J., Bado, B.V., Sow, A., Leffelaar, P.A., Giller, K.E., 2010. Rice 
+production with less irrigation water is possible in a Sahelian environment. Field 
+Crops Res. 116, 154–164. 
+Fukuoka, M., Yoshimoto, M., Hasegawa, T., 2012. MINCER: a novel instrument for 
+monitoring the micrometeorology of rice canopies. J. Agric. Meteorol. 68, 135–147. 
+Gourdji, S.M., Sibley, A.M., Lobell, D.B., 2013. Global crop exposure to critical high 
+temperatures in the reproductive period: historical trends and future projections. 
+Environ. Res. Lett. 8. 
+Gupta, S.C., Larson, W.E., 1979. Estimating soil water retention characteristics from 
+particle size distribution, organic matter percent, and bulk density. Water Resour. 
+Res. 15, 1633–1635. 
+Hasegawa, T., Ishimaru, T., Kondo, M., Kuwagata, T., Yoshimoto, M., Fukuoka, M., 2011. 
+Spikelet sterility of rice observed in the record hot summer of 2007 and the factors 
+associated with its variation. J. Agric. Meteorol. 67, 225–232. 
+Hirasawa, T., Tsuchida, M., Ishihara, K., 1992. Relationship betweeen rsistance to water 
+transport and exudatino rate and the effect of the resistance on the midday 
+depression of stomatal aperture in rice plants. Jpn. J. Crop Sci. 61 (1), 145–152. 
+Horie, T., Nakagawa, H., Centeno, H.G.S., Kropff, M.J., 1995. The rice simulation model 
+SIMRIW and its testing. In: Matthews, R.B., Kropff, M.J., Bachelet, D., van Laar, H.H. 
+(Eds.), Modeling the Impact of Climate Change on Rice Production in Asia. IRRI and 
+CAB International, Wallingford, UK, pp. 51–66. 
+Ishimaru, T., Hirabayashi, H., Ida, M., Takai, T., San-Oh, Y.A., Yoshinaga, S., Ando, I., 
+Ogawa, T., Kondo, M., 2010. A genetic resource for early-morning flowering trait of 
+wild rice Oryza officinalis to mitigate high temperature-induced spikelet sterility at 
+anthesis. Ann. Bot. 106, 515–520. 
+Ishimaru, T., Xaiyalath, S., Nallathambi, J., Sathishraj, R., Yoshimoto, M., Phoudalay, L., 
+Samson, B., Hasegawa, T., Hayashi, K., Arumugam, G., Muthurajan, R., Jagadish, K. 
+S.V., 2016. Quantifying rice spikelet sterility in potential heat-vulnerable regions: 
+field surveys in Laos and southern India. Field Crops Res. 190, 3–9. 
+Jagadish, S.V., Craufurd, P.Q., Wheeler, T.R., 2007. High temperature stress and spikelet 
+fertility in rice (Oryza sativa L.). J. Exp. Bot. 58, 1627–1635. 
+Jagadish, S.V., Murty, M.V., Quick, W.P., 2015. Rice responses to rising temperatures– 
+challenges, perspectives and future directions. Plant Cell Environ. 38, 1686–1698. 
+Julia, C., Dingkuhn, M., 2012. Variation in time of day of anthesis in rice in different 
+climatic environments. Eur. J. Agron. 43, 166–174. 
+Julia, C., Dingkuhn, M., 2013. Predicting temperature induced sterility of rice spikelets 
+requires simulation of crop-generated microclimate. Eur. J. Agron. 49, 50–60. 
+Kato, Y., Okami, M., 2010. Root growth dynamics and stomatal behaviour of rice (Oryza 
+sativa L.) grown under aerobic and flooded conditions. Field Crops Res. 117, 9–17. 
+Katsura, K., Maeda, S., Horie, T., Shiraiwa, T., 2009. Estimation of respiratory 
+parameters for rice based on long-term and intermittent measurement of canopy 
+CO2 exchange rates in the field. Field Crops Res. 111, 85–91. 
+Kobayasi, K., Matsui, T., Yoshimoto, M., Hasegawa, T., 2010. Effects of temperature, 
+solar radiation, and vapor-pressure deficit on flower opening time in rice. Plant Prod. 
+Sci. 13, 21–28. 
+Kobayasi, K., Sakai, H., Tokida, T., Nakamura, H., Usui, Y., Yoshimoto, M., Hasegawa, T., 
+2019. Effects of free-air CO2 enrichment on flower opening time in rice. Plant Prod. 
+Sci. 22, 367–373. 
+Kumar, V., Ladha, J.K., 2011. Direct seeding of rice: recent developments and future 
+research needs. Adv. Agron. 111, 297–413. 
+Li, C.Y., Peng, C.H., Zhao, Q.B., Xie, P., Chen, W., 2004. Characteristic analysis of the 
+abnormal high temperature in 2003’s midsummer in Wuhan City. J. Central China 
+Normal Univ. 38, 379–381. 
+Linquist, B., Snyder, R., Anderson, F., Espino, L., Inglese, G., Marras, S., Moratiel, R., 
+Mutters, R., Nicolosi, P., Rejmanek, H., Russo, A., Shapland, T., Song, Z., Swelam, A., 
+Tindula, G., Hill, J., 2015a. Water balances and evapotranspiration in water- and 
+dry-seeded rice systems. Irrig. Sci. 33, 375–385. 
+Rosa, E.F., van Kessel, C., 2015b. Reducing greenhouse gas emissions, water use, and 
+grain arsenic levels in rice systems. Glob. Change Biol. 21, 407–417. 
+
+Linquist, B.A., Anders, M.M., Adviento-Borbe, M.A., Chaney, R.L., Nalley, L.L., da 
+
+Matsui, T., Omasa, K., Horie, T., 2001. The difference in sterility due to high 
+
+Morison, J.I., Gifford, R.M., 1983. Stomatal sensitivity to carbon dioxide and humidity: a 
+Nguyen, D.-N., Lee, K.-J., Kim, D.-I., Anh, N.T., Lee, B.-W., 2014. Modeling and 
+
+Japonica Rice at flowering in relation to air temperature, humidity and wind 
+velocity conditions. Jpn. J. Crops Sci. 66, 449–455. 
+Matsui, T., Omasa, K., Horie, T., 2000. High temperature at flowering inhibits swelling of 
+pollen grains, a driving force for thecae dehiscence in rice (Oryza sativaL.). Plant 
+Prod. Sci. 3, 430–434. 
+temperatures during the flowering period among japonica-rice varieties. Plant Prod. 
+Sci. 4, 90–93. 
+Matsui, T., Kobayasi, K., Yoshimoto, M., Hasegawa, T., 2007. Stability of Rice Pollination 
+in The Field Under Hot And Dry Conditions in The Riverina Region of New South 
+Wales, Australia. Plant Prod. Sci. 10, 57–63. 
+Angus, J., 2014. Lower-than-expected floret sterility of rice under extremely hot 
+conditions in a flood-irrigated field in New South Wales, Australia. Plant Prod. Sci. 
+17, 245–252. 
+respiration, membrane stability, antioxidant capacity, and yield of rice plants. Crop 
+Sci. 49. 
+productivity through altered pollen germination and spikelet fertility. Agric. For. 
+Meteorol. 149, 999–1008. 
+comparison of two c(3) and two c(4) grass species. Plant Physiol. 71, 789–796. 
+validation of high-temperature induced spikelet sterility in rice. Field Crops Res. 
+156, 293–302. 
+Peng, S., Huang, J., Sheehy, J.E., Laza, R.C., Visperas, R.M., Zhong, X., Centeno, G.S., 
+Khush, G.S., Cassman, K.G., 2004. Rice yields decline with higher night temperature 
+from global warming. Proc. Natl. Acad. Sci. U. S. A. 101, 9971–9975. 
+Porter, J.R., Xie, L., Challinor, A.J., Cochrane, K., Howden, S.M., Iqbal, M.M., Lobell, D. 
+B., Travasso, M.I., 2014. Food security and food production systems. In: climate 
+change 2014: impacts, adaptation, and vulnerability. In: Field, C.B., Barros, V.R., 
+Dokken, D.J., Mach, K.J., Mastrandrea, M.D., Bilir, T.E., Chatterjee, M., Ebi, K.L., 
+Estrada, Y.O., Genova, R.C., Girma, B., Kissel, E.S., Levy, A.N., MacCracken, S., 
+Mastrandrea, P.R., White, L.L. (Eds.), Part A: Global and Sectoral Aspects. 
+Contribution of Working Group II to the Fifth Assessment Report of the 
+Intergovernmental Panel on Climate Change. Cambridge University Press, 
+Cambridge, United Kingdom and New York, NY, USA, pp. 485–533. 
+Satake, T., Yoshida, S., 1978. High temperature-induced sterility in indica rices at 
+flowering. Jpn. J. Crop. Sci. 47, 6–17. 
+Shi, W., Yin, X., Struik, P.C., Xie, F., Schmidt, R.C., Jagadish, K.S.V., 2016. Grain yield 
+and quality responses of tropical hybrid rice to high night-time temperature. Field 
+Crops Res. 190, 18–25. 
+Teixeira, E.I., Fischer, G., van Velthuizen, H., Walter, C., Ewert, F., 2013. Global hot- 
+spots of heat stress on agricultural crops due to climate change. Agric. For. Meteorol. 
+170, 206–215. 
+induced floret sterility of hybrid rice (Oryza sativaL.) cultivars under humid and low 
+wind conditionsin the field of Jianghan Basin, China. Plant Prod. Sci. 13, 243–251. 
+van Oort, P.A.J., Saito, K., Zwart, S.J., Shrestha, S., 2014. A simple model for simulating 
+heat induced sterility in rice as a function of flowering time and transpirational 
+cooling. Field Crops Res. 156, 303–312. 
+van Oort, P.A., de Vries, M.E., Yoshida, H., Saito, K., 2015. Improved climate risk 
+simulations for rice in arid environments. PLoS One 10 e0118114.  
+van Oort, P.A.J., Zwart, S.J., 2018. Impacts of climate change on rice production in 
+Africa and causes of siumulated yield changes. Glob. Change Biol. 2018, 1029–1045. 
+Wassmann, R., Jagadish, S.V.K., Heuer, S., Ismail, A., Redona, E., Serraj, R., Singh, R.K., 
+Howell, G., Pathak, H., Sumfleth, K., 2009. Chapter 2 Climate Change Affecting Rice 
+Production, pp. 59–122. 
+temperatureinduced grain sterility in rice (Oryza sativa L.). J. Agron. Crop Sci. 194, 
+135–140. 
+Welch, J.R., Vincent, J.R., Auffhammer, M., Moya, P.F., Dobermann, A., Dawe, D., 2010. 
+Rice yields in tropical/subtropical Asia exhibit large but opposing sensitivities to 
+minimum and maximum temperatures. Proc. Natl. Acad. Sci. U. S. A. 107, 
+14562–14567. 
+relative humidity, genotypes and fertilizer application rates on panicle, leaf 
+temperature, fertility and seed setting of rice. J. Agric. Sci. 148, 329–339. 
+Yoshimoto, M., Oue, H., Takahashi, N., Kobayashi, K., 2005. The effects of FACE (Free- 
+Air CO2 enrichment) on temperatures and transpiration of rice panicles at flowering 
+stage. J. Agric. Meteorol. 60, 597–600. 
+Yoshimoto, M., Fukuoka, M., Hasegawa, T., Utsumi, M., Ishigooka, Y., Kuwagata, T., 
+2011. Integrated micrometeorology model for panicle and canopy temperature 
+(IM2PACT) for rice heat stress studies under climate change. J. Agric. Meteorol. 67, 
+233–247. 
+Yoshimoto, M., Fukuoka, M., Hasegawa, T., Matsui, T., Tian, X., Vijayalakshmi, C., 
+Singh, M.P., Myint, T.T., Weerakoon, W.M.W., Lafarge, T., Lur, H.S., Tarpley, L., 
+2012. MINCERnet: a global research alliance to support the fight against heat stress 
+in rice. J. Agric. Meteorol. 68, 149–157. 
+
+Yan, C., Ding, Y., Wang, Q., Liu, Z., Li, G., Muhammad, I., Wang, S., 2010. The impact of 
+
+Tian, X., Matsui, T., Li, S., Yoshimoto, M., Kobayasi, K., Hasegawa, T., 2010. Heat- 
+
+Weerakoon, W.M.W., Maruyama, A., Ohba, K., 2008. Impact of humidity on 
+
+FieldCropsResearch260(2021)1079789

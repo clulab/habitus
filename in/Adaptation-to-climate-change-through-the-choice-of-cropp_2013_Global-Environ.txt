@@ -1,0 +1,2037 @@
+Global Environmental Change 23 (2013) 130–143
+
+Contents lists available at SciVerse ScienceDirect
+
+Global Environmental Change
+
+j o u r n a l h o m e p a g e : w w w . e l s e v i e r . c o m / l o c a t e / g l o e n v c h a
+
+Adaptation to climate change through the choice of cropping system and
+sowing date in sub-Saharan Africa
+
+K. Waha a,*, C. Mu¨ ller a, A. Bondeau b,c, J.P. Dietrich d, P. Kurukulasuriya e, J. Heinke b,f, H. Lotze-Campen a
+a Potsdam Institute for Climate Impact Research (PIK), Research Domain Climate Impacts & Vulnerabilities, P.O. Box 60 12 03, D-14412, Potsdam, Germany
+b Potsdam Institute for Climate Impact Research (PIK), Research Domain Earth System Analysis, P.O. Box 60 12 03, D-14412, Potsdam, Germany
+c Aix-Marseille University, Mediterranean Institute of Marine and Terrestrial Biodiversity and Ecology (IMBE), UMR CNRS/IRD – BP 80, F-13545 Aix-en-Provence cedex 04, France
+d Potsdam Institute for Climate Impact Research (PIK), Research Domain Sustainable Solutions, P.O. Box 60 12 03, D-14412, Potsdam, Germany
+e United Nations Development Programme, Energy & Environment Group/Global Environment Facility Unit, Bureau of Development Policy, UNDP-Asia Paciﬁc Regional Ofﬁce,
+Bangkok, Thailand
+f International Livestock Research Institute, P.O. Box 30709, Nairobi, Kenya
+
+A R T I C L E I N F O
+
+A B S T R A C T
+
+Article history:
+Received 7 March 2012
+Received in revised form 16 October 2012
+Accepted 2 November 2012
+Available online 11 December 2012
+
+Keywords:
+Multiple cropping
+Sequential cropping systems
+Crop modelling
+Agricultural management
+Adaptation options
+
+Multiple cropping systems provide more harvest security for farmers, allow for crop intensiﬁcation and
+furthermore inﬂuence ground cover, soil erosion, albedo, soil chemical properties, pest infestation and
+the carbon sequestration potential. We identify the traditional sequential cropping systems in ten sub-
+Saharan African countries from a survey dataset of more than 8600 households. We ﬁnd that at least one
+sequential cropping system is traditionally used in 35% of all administrative units in the dataset, mainly
+including maize or groundnuts. We compare six different management scenarios and test their
+susceptibility as adaptation measure to climate change using the dynamic global vegetation model for
+managed land LPJmL. Aggregated mean crop yields in sub-Saharan Africa decrease by 6–24% due to
+climate change depending on the climate scenario and the management strategy. As an exception, some
+traditional sequential cropping systems in Kenya and South Africa gain by at least 25%. The crop yield
+decrease is typically weakest in sequential cropping systems and if farmers adapt the sowing date to
+changing climatic conditions. Crop caloriﬁc yields in single cropping systems only reach 40–55% of crop
+caloriﬁc yields obtained in sequential cropping systems at the end of the 21st century. The farmers’
+choice of adequate crops, cropping systems and sowing dates can be an important adaptation strategy to
+climate change and these management options should be considered in climate change impact studies
+on agriculture.
+
+ß 2012 Elsevier Ltd. All rights reserved.
+
+1. Introduction
+
+The number of undernourished people remains highest in sub-
+Saharan Africa compared to other world regions and population
+will be more than doubled in 2050 compared to 2000 (FAO, 2006).
+Among effective strategies like ﬁghting poverty, stabilizing
+economies and ensure access to food, increased food production
+in smallholder agriculture will be a key strategy for ﬁghting hunger
+(FAO, 2008). Agricultural production can be increased by expand-
+ing agricultural land and by increasing the intensiﬁcation of crop
+production through higher crop yields and higher cropping
+intensities. The cropping intensity in less-developed countries
+can be increased by about 5–10% during the next 35 years if
+adequate amounts of input are available (Do¨ o¨ s and Shaw, 1999).
+
+* Corresponding author. Tel.: +49 331 2882627.
+
+E-mail address: Katharina.Waha@pik-potsdam.de (K. Waha).
+
+0959-3780/$ – see front matter ß 2012 Elsevier Ltd. All rights reserved.
+http://dx.doi.org/10.1016/j.gloenvcha.2012.11.001
+
+Multiple cropping systems allow for this intensiﬁcation by
+growing two or more crops on the same ﬁeld either at the same
+time or after each other in a sequence (Francis, 1986b; Norman
+et al., 1995). They already are common farming systems in tropical
+agriculture today (Table 1). In multiple cropping systems the risk of
+complete crop failure is lower compared to single cropping
+systems and monocultures providing a high level of production
+stability (Francis, 1986a). Furthermore the second crop in a
+sequence may beneﬁts from an increased amount of nitrogen
+derived from ﬁxation (Bationo and Ntare, 2000; Sisworo et al.,
+1990) or phosphorous from deep-rooted species (Francis, 1986a)
+as well as from decreased disease pressure (Bennett et al., 2012)
+which helps to reduce the use of mineral fertilizer and pesticides.
+Cropping intensity is not only important in terms of agricultural
+production; the duration crops cover the soil will also inﬂuence
+albedo, ground cover, carbon sequestration potential and soil
+erosion (Keys and McConnell, 2005).
+In sub-Saharan Africa,
+multiple cropping systems mostly consist of cereal-legume mixed
+
+Table 1
+Deﬁnition of terms.
+
+Term
+
+Single cropping
+
+Sequential cropping
+
+Mixed sequential cropping
+
+Growing period
+
+Growing season
+
+Multiple cropping
+
+K. Waha et al. / Global Environmental Change 23 (2013) 130–143
+
+131
+
+Deﬁnition, description
+
+A cropping system with only one crop growing on the ﬁeld (Bennett et al., 2012). Interchangeable with monoculture or continuous
+cropping.
+A cropping system with two crops grown on the same ﬁeld in sequence during one growing season with or without a fallow
+period. A speciﬁc case is double cropping with the same crop grown twice on the ﬁeld.
+A cropping system with two intercropping systems grown on the same ﬁeld in sequence during one growing season with or
+without a fallow period.
+The period of time from sowing to maturity determined by the sum of daily temperatures above a crop-speciﬁc temperature
+threshold = phenological heat unit sum (PHU).
+The period of time in which temperature and moisture conditions are suitable for crop growth, in the sub-tropical and tropical
+zones determined by the start and end of the main rainy season.
+-‘‘[. . .] may refer to either growing more than one crop on a ﬁeld during the same time (intercropping), after each other in a
+sequence (sequential cropping) or with overlapping growing periods (relay cropping)’’ (Francis, 1986b; Norman et al., 1995).
+Examples in sub-Saharan Africa are:
+- groundnut–millet succession in the northern part of central Africa (de Schlippe, 1956)
+- wheat–chickpea succession in Ethiopia (Berrada et al., 2006)
+- maize double cropping in western Nigeria (Francis, 1986b)
+- cowpea–maize sequence cropping in the moist Savannah zone of northern Nigeria (Carsky et al., 2001)
+- soybean and wheat sequences in Zimbabwe (Beets, 1982)
+- sorghum and pigeonpea in northern Nigeria (Francis, 1986a)
+- sorghum double cropping in southern Guinea and Savannah zones of West Africa (Kowal and Kassam, 1978)
+
+cropping dominated by maize, millet, sorghum and wheat (Van
+Duivenbooden et al., 2000). Maize- and cassava-based mixed
+cropping systems are common in humid East and West Africa,
+whereas millet-based mixed cropping is widely applied in dry East
+and West Africa (Francis, 1986b). Intercropping is the traditional
+and most frequently applied multiple cropping system in sub-
+Saharan Africa, however sequential cropping and mixed sequential
+cropping systems are also common indigenous management
+practices (Table 1).
+
+Agricultural activities and consequently the livelihoods of
+people reliant on agriculture will be affected by changes in
+temperature and precipitation conditions in large parts of sub-
+Saharan Africa (Boko et al., 2007; Christensen et al., 2007; Mu¨ ller
+et al., 2011). Under climate change, many areas in sub-Saharan
+Africa are likely to experience a decrease in the length of the
+growing season, while in some highland areas rainfall changes may
+lead to a prolongation of the growing season (Thornton et al.,
+2006). The degree of climate change impacts on agricultural
+production differs between crops (Challinor et al., 2007; Liu et al.,
+2008; Schlenker and Lobell, 2010; Thornton et al., 2011) and
+agricultural systems (Thornton et al., 2010). Therefore the farmers’
+choice of an adequate cropping system and crop cultivar, especially
+in precipitation-limited areas, might be an important adaptation
+strategy to changing climate conditions (O’Brien et al., 2000;
+Thomas et al., 2007). Lobell et al. (2008) note that the identiﬁcation
+of practicable adaptation strategies for cropping systems should be
+prioritized for regions impacted by climate change. However, few
+studies investigate the impact of climate change on agriculture in
+sub-Saharan Africa considering the cropping system applied or
+make an effort to identify the least impacted cropping systems. The
+study of Thornton et al. (2009) is an exception, analysing crop yield
+response to climate change of a maize–bean cropping sequence in
+East Africa under which beans grow in a separate second growing
+season.
+
+Analysing different multiple cropping systems in a climate
+impact study for sub-Saharan Africa requires a dataset reporting
+their spatial distribution in the region, which to our knowledge is
+not available. Some crop calendars available at
+the global
+(Portmann et al., 2010; Sacks et al., 2010) or African scale (FAO,
+2010) report the growing periods of individual crops but lack
+reporting calendars for multiple cropping systems, while some
+others only cover Asian regions (Frolking et al., 2002, 2006). Fischer
+et al. (2002) identiﬁed potential double and triple cropping zones
+by comparing temperature and moisture requirements of four crop
+
+groups with climatic conditions worldwide. Thornton et al. (2006)
+developed a classiﬁcation for agricultural systems in Africa by
+combining a global livestock production classiﬁcation system, a
+farming system classiﬁcation, and global land cover maps. Both
+datasets do not report the crop cultivars or the cropping systems.
+The knowledge about the spatial distribution of multiple
+cropping systems needs to be expanded by more detailed
+information on the sub-national level. We analyse a household
+survey (Dinar et al., 2008) carried out in 385 districts and provinces
+containing more than 8600 households in ten countries of sub-
+Saharan Africa to ﬁll this gap. From this survey we are able to
+identify the traditional rainfed sequential cropping systems with
+two crops grown within one year. As these are advantageous
+management strategies because they allow for risk spreading and
+increased crop productivity, we test their susceptibility to future
+climatic conditions in comparison to alternative management
+strategies by simulating crop yields with the dynamic global
+vegetation model for managed land LPJmL (Bondeau et al., 2007).
+We analyse the ability of each management strategy to maximize
+future crop productivity or lower negative impacts from climate
+change on crops. We perform this analysis in locations where
+sequential cropping systems are already applied by local farmers
+today and also for the entire region of sub-Saharan Africa in order
+to estimate potential beneﬁts.
+
+2. Materials and methods
+
+2.1. Input data for current and future climate data
+
+To describe current climatic conditions, we used time series of
+monthly temperature and precipitation as well as the number of
+wet days from the climate database CRU TS 3.0 (Mitchell and Jones,
+2005) for the 30-year period 1971–2000 on a spatial resolution of
+0.58  0.58. Future climatic conditions for the 30-year period 2070–
+2099 were projected from the three Global Circulation Models
+(GCMs) MPI-ECHAM5 (Jungclaus et al., 2006), UKMO-HadCM3
+(Cox et al., 1999), and NCAR-CCSM3 (Collins et al., 2006) as in the
+World Climate Research Programme’s (WCRP’s) Coupled Model
+Intercomparison Project phase 3 (CMIP3) multi-model dataset
+(Meehl et al., 2007). As there is little consistency between GCM
+projections on precipitation (Boko et al., 2007) they were chosen to
+show a wide range of possible future precipitation patterns
+without being outliers (Fig. 1). NCAR-CCSM3 is among the ‘‘wet
+GCMs’’ projecting mostly increases in annual precipitation while
+
+132
+
+K. Waha et al. / Global Environmental Change 23 (2013) 130–143
+
+Fig. 1. Change in annual mean temperature and annual mean precipitation from the periods 1971–2000 to 2070–2099 projected from three GCMs under the SRES A2. Brown
+and green colours in the lower three panels indicate a decrease or an increase in annual mean precipitation respectively.
+
+MPI-ECHAM5 is among the ‘‘dry GCMs’’, projecting a strong drying
+in southern Africa which is less pronounced in UKMO-HadCM3.
+We choose climate projections for the SRES A2 emission scenario
+as this generally shows highest average global warming of 3.4 8C
+until the end of the 21st century compared to the SRES A1b and B2
+(2.8 8C and 1.8 8C) which are also available in the WCRP CMIP3
+dataset (Meehl et al., 2007). The monthly mean temperature and
+precipitation sums from these three GCMs were interpolated to a
+ﬁner spatial resolution of 0.58  0.58 using bilinear interpolation
+and smoothed using a 30-year running mean. The temperature and
+precipitation anomalies from each GCM were calculated relative to
+the 1971–2000 average climate from CRU TS 3.0 and were then
+applied to this baseline while preserving observed variability
+(Gerten et al., 2011). Daily mean temperatures were obtained by
+linear interpolation between mean monthly temperatures, and
+daily precipitation data were provided by a weather generator
+which distributes monthly precipitation to the number of observed
+wet days in a month, considering the transition probabilities
+between wet and dry phases (Geng et al., 1986; Gerten et al., 2004).
+We kept the number of wet days constant at their average number
+from the time period 1971–2000. Geng et al. (1986) conﬁrms that
+the rainy days as well as the amount of precipitation generated
+from this procedure are in general very close to observations in
+different environments. In this analysis we keep atmospheric CO2
+concentrations constant at 370 ppm. Increasing atmospheric CO2
+concentrations can increase the productivity of plants (especially
+C3 plants), but the effectiveness on increasing crop yields is
+uncertain (Long et al., 2006; Tubiello et al., 2007) and does require
+adaptation in management (Ainsworth and Long, 2005).
+
+2.2. Household survey dataset
+
+A subset of a household survey (Dinar et al., 2008) containing
+8697 households in 10 sub-Saharan African countries (Burkina
+Faso, Cameroon, Ethiopia, Ghana, Kenya, Niger, Senegal, South
+Africa, Zambia, and Zimbabwe) is used to calculate the growing
+
+periods (Table 1) of crops grown in different cropping systems. This
+dataset is the product of a World Bank/Global Environmental
+Facility project that was coordinated by the Centre for Environ-
+mental Economics and Policy for Africa (CEEPA) at the University of
+Pretoria, South Africa.
+
+Half of the households are small-scale farmers, the other half are
+medium- or large-scale farmers. Each farm type was surveyed in
+each country but in Zimbabwe, Zambia and Ghana more than 80% of
+the households are smallholders. In contrast, 73% of all households
+in Senegal belong to a large-scale farm. The household survey
+reports sowing and harvest dates from 56 crops which are grown on
+up to three plots in up to three seasons within 12 months. In the
+households surveyed up to six crops are grown simultaneously on a
+plot. For each of these countries, data from 416 to 1087 households
+in 17 to 61 representative sample units (district or province) were
+collected for only one farming season (2002/2003 or 2003/2004).
+Sowing and harvest dates were reported on a daily, weekly or
+monthly basis and were converted into a uniform date speciﬁcation
+using the day of the year. For weekly data we assumed the ﬁrst day
+of the week, for monthly data the 15th day of the month is assumed.
+The length of the growing period in days is derived from these daily
+sowing and harvest dates for each crop. As harvest sometimes
+occurs shortly after sowing but the year of sowing and harvest
+events is not always reported, we assume a minimum length of 2
+months for the growing period (6 months for cassava).
+
+2.2.1. Identiﬁcation of sequential cropping systems
+
+We identify the sequential cropping and single cropping
+systems applied within one farming season in a sample unit by
+combining the information of the crops’ growing periods in each
+plot and season. As only nine out of 56 crops (cassava, cowpea,
+groundnut, maize, millet, rice, soybean, sunﬂower, and wheat) are
+included in the dynamic global vegetation model we combine the
+remaining crops to a group of ‘‘other crops’’.
+
+We assume sequential cropping systems if two crops are
+reported to be planted one after another without overlaps of more
+
+[
+(
+F
+i
+g
+.
+_
+1
+)
+T
+D
+$
+F
+I
+G
+]
+K. Waha et al. / Global Environmental Change 23 (2013) 130–143
+
+133
+
+Fig. 2. Scheme of possible timing and length of growing periods of crops in single cropping systems (A–C) and sequential cropping systems (D–G) according to the deﬁnition
+used in this study. (A) Two single cropping systems with large overlap, (B) one single cropping system, (C) two single cropping systems, one spanning the turn of the year and
+with the sum of the growing periods exceeding 365 days, (D) sequential cropping system with small overlap, (E) sequential cropping system with long fallow period, (F)
+sequential cropping system with short or no fallow period, (G) sequential cropping system spanning the turn of the year with sum of growing periods below 365 days.
+
+than 15 days and if their growing periods sum up to less than 365
+days (Fig. 2D–G) i.e. the growing period of a crop here is restricted
+by the occurrence of the associated crop on the plot. In contrast, we
+assume single cropping systems if only one single crop is reported
+to grow on a plot (Fig. 2B) or if more than one crop is grown on a
+plot but the sum of their growing periods is larger than 365 days
+and/or their growing periods overlap by more than 15 days (Fig. 2C,
+A), i.e. the conditions for a sequential cropping system are not met.
+An overlap of 15 days corresponds to the maximum possible
+error in sowing and harvest dates owing to the conversion from
+monthly to daily data. We only consider rainfed systems in this
+study because irrigation systems are rarely available in sub-
+Saharan Africa. If various sequential cropping systems exist within
+a district, we identify the most frequently applied sequential
+cropping system in a district and assume this system to be the
+traditionally applied sequential cropping system. Based on the
+distance between the centre coordinates of the districts and those
+of the 0.58  0.58 grid cells, the sequential cropping systems found
+in a district are allocated to the closest grid cell. If a district covers
+more than one grid cell the sequential cropping systems are
+distributed to all corresponding grid cells.
+
+2.3. Management scenarios for adaptation
+
+Farmers choose a cropping system according to economic
+market trends, consumer demands, availability of inputs such as
+seeds, fertilizer and pesticides, agronomy traditions as well as
+current land-use, climatic conditions and soil properties (Bennett
+et al., 2012; Castellazzi et al., 2008) in order to maximize their yield
+and proﬁt and/or to minimize the risk of crop failure through
+diversiﬁcation. Rainy seasons long enough for growing two crops
+in a sequential cropping system allow for intensiﬁcation and more
+harvest security for farmers because crop yields are obtained two
+or more times a year (Andrews and Kassam, 1976). If necessary,
+farmers respond to perceived changes and variability in climate by
+e.g. changing the sowing date of cultivated crops or switching to a
+more suitable crop or crop cultivar with a different growing period,
+heat tolerance or drought resistance. These strategies were already
+observed in Tanzania (O’Brien et al., 2000), semi-arid West Africa
+(Mation and Kristjanson, 1988), and South Africa (Benhin, 2006). It
+can thus be expected that farmers will adapt their traditional
+cropping system to a changing climate to some extent. We deﬁne
+three management scenarios, analysing different cropping system
+with the aim of comparing changes in crop yields with changing
+
+climate of the 21st century in order to ﬁnd the most suitable
+strategy:
+
+- TS: Traditional sequential cropping system: the baseline strategy.
+Farmers grow the sequential cropping system most frequently
+applied in their district composed of two short-growing crop
+cultivars.
+
+- SC: Single cropping system: farmers only grow one long-growing
+cultivar of the ﬁrst crop of the traditional sequential cropping
+system.
+
+- HS: Highest-yielding sequential cropping system: farmers grow
+the sequential cropping system composed of two short-growing
+crop cultivars with the highest yields.
+
+Sowing dates in these scenarios change dynamically with
+changes in the start of the main rainy season allowing for inter-
+annual variability. In order to assess the importance of adapting
+sowing dates to changing climate or weather conditions three
+additional scenarios are designed in which the sowing dates are
+kept constant with the simulated sowing dates in the ﬁrst
+simulation year 1971.
+
+- TSco: Traditional sequential cropping system as described above
+
+with constant sowing dates.
+
+- SCco: Single cropping system as described above with constant
+
+sowing dates.
+
+- HSco: Highest-yielding sequential cropping system as described
+
+above with constant sowing dates.
+
+Accordingly, each of the six management scenarios is a
+combination of a speciﬁc cropping system and sowing date
+setting, as these are important management options for farmers.
+We assume that farmers prefer short-growing crop cultivars in
+sequential cropping systems in order to reduce the risk of crop
+failure in the second half of the growing season (Table 1) or,
+alternatively,
+long-growing crop cultivars in single cropping
+systems in order to increase the yield. Sequential cropping systems
+are advantageous farming systems but cannot be applied if the
+growing season is too short. In this case a single cropping system
+may be the most suitable cropping system. Adapting sowing dates
+to shifts in the start of the rainy season ensures optimal growing
+conditions and low risk of drought at important crop growth stages
+and, therefore, allows for better use of rainwater and potentially
+increased crop yields (Van Duivenbooden et al., 2000).
+
+[
+(
+F
+i
+g
+.
+_
+2
+)
+T
+D
+$
+F
+I
+G
+]
+134
+
+K. Waha et al. / Global Environmental Change 23 (2013) 130–143
+
+Table 2
+Crop-speciﬁc parameters for estimating PHUs in single and sequential cropping systems and calculating fresh matter crop yields in kcal/ha.
+
+Crop
+
+Parameters for estimating PHUsin and PHUseq in LPJmL PHUsin ¼ a þ bT þ gPgs þ dPETgs and PHUgap ¼ PHUaeq
+PHUain
+
+Dry matter DMc
+and calorie
+content Cald
+
+Base
+temperaturea,b
+[8C]
+
+a
+[8Cd]
+
+b
+[d]
+
+g
+[8Cd/mm]
+
+d
+[8Cd/mm]
+
+R
+
+R2
+
+Min
+PHUsin
+[8Cd]
+
+Max
+PHUsin
+[8Cd]
+
+N
+
+PHUgap
+[–]z
+
+N
+
+DM
+[%]
+
+Cal
+[kcal/g]
+
+Cassava
+Cowpea
+Groundnut
+Maize
+Rice
+Wheat
+
+14
+14
+14
+8
+10
+0
+
+ 4910
+ 470
+470
+1740
+250
+ 390
+
+327
+44
+32
+
+0.1
+
+21
+146
+
+0.5
+ 0.2
+ 0.2
+ 0.1
+0
+0.8
+
+ 0.6
+0.9
+0.4
+0.7
+1.3
+ 0.2
+
+0.75
+0.58
+0.48
+0.48
+0.65
+0.76
+
+0.56
+0.34
+0.23
+0.23
+0.42
+0.58
+
+910
+740
+1070
+1880
+1450
+2180
+
+4510
+1910
+1990
+3640
+2700
+4310
+
+213
+190
+336
+472
+102
+61
+
+0.67 0.26***
+0.75 0.21***
+0.99 0.29*
+0.92 0.21***
+0.88 0.19*
+0.87 0.34*
+
+50
+33
+117
+224
+16
+26
+
+35
+90
+94
+88
+87
+88
+
+1.09
+3.41
+4.14
+3.56
+2.80
+3.34
+
+a Bondeau et al. (2007).
+b Neitsch et al. (2002).
+c Wirsenius (2000).
+d FAO (2001).
+z Values are means standard deviation for PHUgap. Level of signiﬁcance (***p < 0.001, **p < 0.01, and *p < 0.05) is given for the hypothesis that PHUseq < PHUsin (Wilcoxon
+
+signed-rank test).
+
+2.4. Dynamic global vegetation model for managed land LPJmL
+
+LPJmL is a process-based global vegetation model for natural
+and agricultural vegetation, simulating biophysical and biogeo-
+chemical processes as well as productivity and yield of the most
+important crops (Bondeau et al., 2007; Sitch et al., 2003).
+Carbohydrates from photosynthesis are allocated to different crop
+organs at daily time steps depending on the phenological stage of
+the crop and environmental conditions. To simulate the pheno-
+logical development of a crop, the heat unit theory is applied
+(Bondeau et al., 2007). Heat units (in degree-days [8Cd]) are
+calculated from daily temperatures above a base temperature
+(Table 2) and are summed over all phenological stages (potential
+heat unit sum, PHU [8Cd]). This empirically derived quantitative
+measurement describes the effect of air temperature on the growth
+of crops (Boswell, 1926) and reﬂects the length of a crop’s growing
+period.
+
+Temperature and water stress inﬂuence crop development and
+growth (Bondeau et al., 2007). Increasing temperatures lead to a
+shortened growing period because crops reach maturity earlier in
+the year and crop yields potentially decrease. Stress due to extreme
+temperatures does not damage the crop irreversibly in the model,
+but temperatures beyond the optimal temperatures for photosyn-
+thesis reduce productivity. A water stress factor is calculated from
+the ratio of water supply through plant water uptake from the soil
+and atmospheric water demand (Sitch et al., 2003) and inﬂuences
+leaf growth (Bondeau et al., 2007). We extended this approach to
+also account for changes in root growth in response to water stress
+(Supporting Material A). Water stress effecting leaf and root
+growth negatively might occur more frequently in the second crop
+cycle because water stored in the soil was already consumed by the
+preceding crop.
+
+It is possible to simulate different crop cultivars with LPJmL for
+wheat and rapeseed (spring and winter cultivar), as well as for
+maize and sunﬂower (temperate and tropical cultivar) by varying
+the PHU (Bondeau et al., 2007). We extend this approach by
+calculating PHUs for a short-growing crop cultivar grown in
+sequential cropping systems (PHUseq) and a long-growing crop
+cultivar grown in single cropping systems (PHUsin) from observed
+growing periods and daily temperatures in sub-Saharan Africa.
+The base temperatures are taken from LPJmL (Bondeau et al.,
+2007) for groundnut, millet, rice, soybean, sunﬂower and wheat
+and from SWAT (Neitsch et al., 2002) for cassava, cowpea and
+maize (Table 2).
+
+The start of the growing season in subtropical and tropical
+environments is determined by the start of the main rainy season
+
+and is simulated dynamically in LPJmL from monthly climatology
+(Waha et al., 2012). This procedure follows the commonly used
+approach of identifying the onset and end of the rainy season with
+a criterion based on the average rainfall or radiation of a speciﬁc
+period, e.g. 5 days (Marengo et al., 2001; Omotosho et al., 2000;
+Wang and Ho, 2002). This criterion is deﬁned here as the 3-month
+averaged ratio between precipitation and potential evapotranspi-
+ration which is based on the methodology for the global scale
+described in Waha et al. (2012) but additionally allows for
+calculating the end of the growing season.
+
+X
+12
+
+X
+mþ3
+
+P
+
+PET
+
+¼ 1
+12
+
+
+
+P
+
+i¼1
+
+m¼i
+
+PETm
+
+where P/PET is the mean 3-month averaged precipitation-to-
+potential evapotranspiration ratio, P/PETm is the precipitation-to-
+potential evapotranspiration ratio of each individual month m.
+Potential evapotranspiration is calculated in LPJmL using the
+Priestley–Taylor equations (Priestley and Taylor, 1972) with a
+Priestley–Taylor coefﬁcient of 1.391 (Gerten et al., 2004).
+
+Consequently, the onset of the growing season is deﬁned as the
+ﬁrst month in a 3-month period where precipitation-to-potential-
+evapotranspiration ratios exceed the mean ratio. Within this
+month the growing period of an individual crop starts at the ﬁrst
+wet day with daily precipitation above 0.1 mm; in sequential
+cropping systems the following crop is assumed to be sown
+immediately after the harvest of the ﬁrst crop. In temperate
+environments such as parts of South Africa the start of the growing
+season is determined by daily temperature as described in Waha
+et al. (2012). The start of the main rainy season in sub-Saharan
+Africa as simulated here agrees well with the observed start of the
+main growing season derived from satellite data (Supporting
+Material B). A second growing season which occurs in areas with a
+bimodal rainfall distribution is not simulated.
+
+The growing period is limited to a maximum of 330 days
+allowing for a short fallow period between two consecutive years.
+The simulated harvested carbon in gC/m2 is converted to crop yield
+in Mcal/ha to allow for a comparison between crops and cropping
+systems with:
+
+Y Mcal ¼ H
+0:45
+
+ 100
+DM
+
+ Cal  105
+
+where Y Mcal is the caloriﬁc yield in Mcal/ha, H the harvested carbon
+in gC/m2, DM the crop-speciﬁc dry matter content in %, and Cal the
+crop-speciﬁc calorie content in Mcal/g fresh matter (Table 2). 0.45
+converts from gC/m2 to gDM (Rojstaczer et al., 2001). Dry matter
+
+K. Waha et al. / Global Environmental Change 23 (2013) 130–143
+
+135
+
+content and calorie content of crop products are taken from
+Wirsenius (2000) and from FAO Food Balance Sheets (FAO, 2001).
+The overall crop yield in sequential cropping systems is the sum of
+two individual crop yields in Mcal/ha.
+
+Management intensity in a cropping system is described by
+three parameters: the maximal attainable leaf area index, the
+maximal harvest index and a parameter scaling leaf-level biomass
+to ﬁeld level as described in Fader et al. (2010). The management
+intensities per crop and country were chosen to match observed
+production levels of FAO in the 5-year-period 1999–2003
+(Supporting Material C).
+
+2.5. Modelling the spatial variation of PHUsin and PHUseq
+
+PHUsin and PHUseq are calculated by accumulating daily
+temperatures above a base temperature threshold (Table 2)
+summed over the growing period that is reported in the household
+survey. In order to estimate PHUsin for each crop in each grid cell in
+sub-Saharan Africa, we use a multiple linear regression model
+
+between PHUsin and climatic parameters in each grid cell. We
+found a correlation, although light for maize and groundnut,
+between PHUsin, mean annual temperature and moisture condi-
+tions during the growing season:
+
+PHUsin ¼ a þ bT þ gPgs þ dPETgs
+
+where T is the annual mean temperature, Pgs the sum of monthly
+precipitation during the growing season, PETgs the sum of monthly
+potential evapotranspiration during the growing season, and a, b, g
+and d are empirical parameters.
+
+Precipitation and potential evapotranspiration represent the
+atmospheric water supply and water demand, respectively. Thus
+their ratio in the growing season represents the water availability
+during the period of high agricultural activity. The start and end of
+the growing season is calculated using the criterion described in
+the previous section.
+
+We compare PHUsin and PHUseq with the aim of verifying the
+assumption that farmers apply short-growing crop cultivars in
+
+Fig. 3. Most frequently applied rainfed sequential cropping systems in districts in sub-Saharan Africa. The classiﬁcation of sequential cropping systems used for legend titles is
+based on the ﬁrst crop grown in the sequence.
+
+[
+(
+F
+i
+g
+.
+_
+3
+)
+T
+D
+$
+F
+I
+G
+]
+136
+
+K. Waha et al. / Global Environmental Change 23 (2013) 130–143
+
+Table 3
+Highest-yielding rainfed sequential cropping systems in the period 1971–2000 in 63 districts in seven sub-Saharan Africa countries depending on the location within the
+country. sequential cropping systems in Niger, Senegal And Zambia are based on some other crop than the crops in this study.
+
+Country
+
+Burkina Faso
+Cameroon
+
+System
+
+Maize–rice, rice–rice
+Wheat–maize, maize–wheat,
+maize–maize, cassava–maize
+
+Ethiopia
+
+Cassava–cowpea
+
+Country
+
+Ghana
+Kenya
+
+South Africa
+Zimbabwe
+
+System
+
+Cassava–cowpea
+Wheat–maize, rice–rice, maize–maize, cassava–maize,
+cassava–cowpea, groundnut–cassava, groundnut–groundnut
+Wheat–maize, maize–wheat, cassava–maize, cassava–cowpea
+Wheat–maize
+
+Results of this analysis are derived by simulating crop yields from 13 sequential cropping systems found in the household survey.
+
+sequential cropping systems and long-growing crop cultivars in
+single cropping systems. We test if PHUsin is statistically greater
+than PHUseq for each crop using the non-parametric Wilcoxon
+signed-rank test (Wilcoxon, 1945). In order to estimate PHUseq for
+each crop in each grid cell, we derive a uniform crop-speciﬁc factor
+PHUgap from the calculated PHUsin and PHUseq to account for the
+deviation between them:
+
+sequential cropping systems are based on maize, whereas in
+Southern Africa wheat-maize systems are additionally applied.
+Systems based on groundnut as the ﬁrst crop can be found in
+Ghana and in Cameroon, which is the country with the highest
+diversity in sequential cropping systems. The highest-yielding
+among all 13 traditional sequential cropping systems are mostly
+based on maize (Table 3).
+
+PHUgap ¼ PHUseq
+PHUstn
+
+2.6. Theoretical potential of sequential cropping systems
+
+In addition to the analysis of climate change impacts on crop
+yields in districts where sequential cropping systems are already
+grown, we apply a similar analysis to the entire region of sub-
+Saharan Africa that currently has growing periods larger than 5
+months (HarvestChoice, 2010) to analyse the adaptation potential
+of sequential cropping systems. Crop yields from 13 sequential
+cropping systems and six single cropping systems are simulated
+with LPJmL and compared in all sub-Saharan Africa grid cells that
+are currently used for crop production following Fader et al. (2010).
+
+3. Results
+
+3.1. Sequential cropping systems in sub-Saharan Africa
+
+In 35% of the surveyed districts one or more sequential cropping
+system exist, but only in seven out of 10 surveyed countries and
+about 17% of the districts sequential cropping systems are
+composed of crops included in our model. The remaining
+sequential cropping systems consist of at least one crop other
+than the LPJmL crops, most of them are vegetables, fruits, beans,
+peas or perennial crops. Fig. 3 shows the distribution of the 13
+traditional sequential cropping systems in the surveyed districts.
+The sequential cropping systems frequently applied are mostly
+based on groundnut and maize and to a smaller extent also on
+cassava, rice, wheat, and cowpea, but only few sequential cropping
+systems exist with sunﬂower or soybean, which are of minor
+importance in the surveyed households. In Eastern Africa all
+
+Table 4
+Time from sowing to harvest in months for different crop cultivars found in
+household survey and in literature.
+
+Crop
+
+Cassava
+Cowpea
+Groundnut
+
+Maize
+Rice
+
+Wheat
+
+Household
+survey
+
+Literature
+
+6–11
+2–9½
+2–10½
+
+2–9
+2–6½
+
+3–6
+
+6–24 (Alves, 2002)
+1½–6 (FAO, 2010; Madamba et al., 2006)
+2½–6 (Ntare, 2006; Schilling and
+Gibbons, 2002; Virmani and Singh, 1986)
+2½–6½ (Badu-Apraku and Fakorede, 2006)
+3–7 (Badu-Apraku and Fakorede, 2006;
+Meertens, 2006)
+3–5½ (Belay, 2006; FAO, 2010;
+Rehm and Espig, 1991)
+
+3.2. Growing periods and PHUs of different crop cultivars
+
+The lengths of the growing periods calculated from the
+household survey of most of the crops lie within the range of
+values found in the literature, except for cowpea, groundnut and
+maize (Table 4). The growing periods from the household survey
+and the corresponding PHUs differ signiﬁcantly between single
+and sequential cropping systems as well as between crops (see
+level of signiﬁcance and PHUgap in Table 2). The results of the
+Wilcoxon signed-rank test indicate that PHUsin signiﬁcantly
+exceeds PHUseq by 900 8Cd on average. The deviation between
+large PHUsin and small PHUseq per individual crop is signiﬁcant as
+well and can be described by the crop-speciﬁc factor PHUgap, which
+accordingly is less than 1 (Table 2).
+
+Using the multiple regression model to determine the heat sum
+requirements for phenological development, simulated growing
+periods from LPJmL differ from growing periods in the household
+survey: for wheat, rice and cowpea simulated growing periods are
+on average 5–32 days shorter than the growing periods in the
+household survey while those for groundnut, cassava and maize
+are on average 7–33 days longer than the growing periods reported
+in the household survey (Fig. 4).
+
+3.3. Changes in crop yields
+
+3.3.1. Decreasing crop yields
+
+Future crop yields averaged over all locations contained in the
+household survey (Fig. 3) decrease between 6% and 24% because of
+climate change depending on the GCM and management scenario
+(Table 5). The decrease is always weakest in the management
+scenarios with traditional sequential cropping systems. There are
+
+Fig. 4. Deviations in days between simulated and observed length of growing period
+in 2002/2003 in single cropping systems (observed – simulated). Each box stretches
+from the 0.25-quantil to the 0.75-quantil of deviation with the bold line showing
+the 0.5-quantil of deviations. Whiskers show the 1.5-fold interquartile range, points
+indicate individual outliers.
+
+[
+(
+F
+i
+g
+.
+_
+4
+)
+T
+D
+$
+F
+I
+G
+]
+K. Waha et al. / Global Environmental Change 23 (2013) 130–143
+
+137
+
+Table 5
+Mean crop yields and crop yield changes per GCM and management scenario in 63 districts of seven sub-Saharan Africa countries in the period 2070–2099 compared to the
+period 1971–2000 in six management scenarios.
+
+Management scenario
+
+Crop yield 1971–2000 [Mcal/ha]
+
+Crop yield 2070–2099 [Mcal/ha]
+
+SCco
+SC
+TSco
+TS
+HSco
+HS
+
+ECHAM5/HadCM3/CCSM3
+
+6660
+7203
+10,748
+11,564
+14,435
+15,368
+
+ECHAM5
+5041 ( 24%)
+5894 ( 18%)
+8942 ( 17%)
+10,132 ( 12%)
+11,180 ( 23%)
+12,796 ( 17%)
+
+HadCM3
+5459 ( 18%)
+6399 ( 11%)
+9427 ( 12%)
+10,677 ( 8%)
+11,676 ( 19%)
+13,266 ( 14%)
+
+CCSM3
+5669 ( 15%)
+6393 ( 11%)
+9799 ( 9%)
+10,927 ( 6%)
+12,688 ( 12%)
+14,095 ( 8%)
+
+TS/TSco: traditional sequential cropping system, SC/SCco: single cropping system, HS/HSco: highest-yielding sequential cropping system, ‘‘co’’ indicating management
+scenarios with constant sowing dates.
+
+differences in mean crop yields and crop yield changes between
+the three GCMs, with the highest crop yields under CCSM3 and the
+lowest under ECHAM5. Southern and Western Africa are the most
+heavily impacted regions with declines in crop yield of up to 45%
+and 18% respectively depending on the management scenario
+(Fig. 5). However, impacts in Southern Africa are diverse and crop
+yields in some locations also increase by up to 6% in the TS scenario.
+Some traditional sequential cropping systems based on rice in
+Burkina Faso and based on groundnut in Ghana and Cameroon are
+most heavily impacted with crop yield declines by at least 25%
+(Supporting Material D). In contrast, some traditional sequential
+cropping systems based on maize and wheat in Kenya and South
+
+Africa gain by at least 25%. Mean future crop yields are higher (+11
+to 17%) in the TS, SC and HS scenarios with adapted sowing dates
+compared to the corresponding TSco, SCco and HSco scenarios with
+constant sowing dates (Table 5). As an exception, adapting sowing
+dates is not beneﬁcial for crop productivity under climate change
+in some single and sequential cropping systems. These are the rice
+single cropping system at Bama/Burkina Faso, maize double
+cropping system in Nyong-et-Kelle/Cameroon, groundnut-maize
+systems in Manyu/Cameroon and several cropping systems in
+Aberdeen/South Africa where crop yields in scenarios with adapted
+sowing dates is lower than in scenarios with constant sowing dates
+under current and future climate (Supporting Material D).
+
+Fig. 5. Mean crop yields [Mcal/ha] per region in the periods 1971–2000 and 2070–2099 if TS/TSco (the traditional sequence cropping systems), SC/SCco (only the ﬁrst crop of
+the traditional sequential cropping systems), or HS/HSco (the highest-yielding sequential cropping systems) are applied, ‘‘co’’ indicating management scenarios with constant
+sowing dates. Vertical lines show the range of minimum to maximum crop yield from three GCMs. The countries of Zimbabwe and South Africa are combined into the region
+Southern Africa, Kenya and Ethiopia are combined into Eastern Africa and Burkina Faso, Cameroon and Ghana are combined into Western Africa.
+
+[
+(
+F
+i
+g
+.
+_
+5
+)
+T
+D
+$
+F
+I
+G
+]
+138
+
+K. Waha et al. / Global Environmental Change 23 (2013) 130–143
+
+Fig. 6. Mean crop yield changes (%) in 2070–2099 compared to 1971–2000 with corresponding standard deviations (%) in six single cropping systems (upper panel) and
+thirteen sequential cropping systems (lower panel). Maps in the last column show the systems with lowest crop yield declines or highest crop yields increases. White areas in
+sub-Saharan Africa are excluded because the crop area is smaller than 0.001% of the grid cell area or the growing season length is less than 5 months. The high standard
+deviation in Southern Africa is mainly determined by the large difference in climate projections.
+
+3.3.2. Sequential cropping systems vs. single cropping systems
+
+Crop caloriﬁc yields in management scenarios with single
+cropping systems (SC/SCco) only reach 38–54% of crop caloriﬁc
+yields obtained in management scenarios with sequential cropping
+systems (TS/TSco and HS/HSco) under current climatic conditions
+averaged over all locations contained in the household survey
+(Table 5). As an exception, the single cropping systems (SC/SCco)
+with maize in Kenya and South Africa yield higher in some
+locations than the traditional sequential cropping system, but only
+under current climatic conditions (Supporting Material D).
+
+Crop yields in the highest-yielding sequential cropping systems
+(HS) exceed crop yields in the traditional sequential cropping
+systems (TS) by 24–28% depending on the GCM (Table 5). However,
+frequently the traditional sequential cropping systems are more
+resilient against negative climate change impacts than the highest-
+yielding sequential cropping systems like e.g. groundnut–cassava
+
+systems in Cameroon, maize–maize systems in some locations in
+Kenya, wheat-maize systems in some locations in South Africa and
+maize–wheat systems in Zimbabwe (Supporting Material D).
+
+3.3.3. Potential of sequential cropping systems in sub-Saharan Africa
+If only the most stable sequential cropping systems would be
+chosen everywhere in sub-Saharan Africa, crop yields would be
+also less impacted by climate change than crop yields in single
+cropping systems in many locations (Fig. 6). Crop yields in both
+systems mostly decline, most severely in western Mali, southern
+Mauritania and Senegal, but increase in small parts of South Africa,
+Kenya and Ethiopia. However, in the last-mentioned locations
+there is also the highest variability of climate change impacts
+on crop yields. The single cropping systems least impacted by
+climate change are cassava and maize, and to a smaller extent
+also rice. The sequential cropping systems least impacted are
+
+[
+(
+F
+i
+g
+.
+_
+6
+)
+T
+D
+$
+F
+I
+G
+]
+K. Waha et al. / Global Environmental Change 23 (2013) 130–143
+
+139
+
+Table 6
+Change in climate and length of the crops’ growing period in the period 2070–2099 compared to the period 1971–2000 in six management scenarios using climate projections
+from three GCMs.
+
+Southern Africa
+
+Eastern Africa
+
+Western Africa
+
+ECHAM5
+
+Change in annual temperature [8C]
+Change in annual precipitation [%]
+Change in growing season precipitation [%]a
+Change in length of crops’ growing periodb
+
+HadCM3
+
+Change in annual temperature [8C]
+Change in annual precipitation [%]
+Change in growing season precipitation [%]a
+Change in length of crops’ growing periodb
+
+CCSM3
+
+Change in annual temperature [8C]
+Change in annual precipitation [%]
+Change in growing season precipitation [%]a
+Change in length of crops’ growing periodb
+
+4.1
+ 4.9
+ 3.3
+ 65 days ( 23%)
+
+4.4
+ 7.0
+ 6.2
+ 60 days ( 22%)
+
+3.6
++11.1
++11.0
+ 43 days ( 15%)
+
+3.8
++11.4
++11.4
+ 35 days ( 14%)
+
+3.6
++9.7
++12.8
+ 31 days ( 12%)
+
+3.1
++24.8
++24.7
+ 29 days ( 12%)
+
+3.8
++12.0
++4.0
+ 36 days ( 18%)
+
+3.8
+ 0.4
++0.4
+ 36 days ( 18%)
+
+3.3
++6.8
++0.5
+ 31 days ( 15%)
+
+a Growing season as indicated from satellite data providing the time of greening-up and greening down (HarvestChoice, 2010).
+b Growing period as simulated from LPJmL for different crops in six management scenarios
+
+groundnut–cassava, rice–maize systems, but also maize–maize
+and maize–groundnut.
+
+4. Discussion
+
+4.1. Changes in crop yield
+
+Crop yield decreases, mostly for single cropping systems, were
+reported by other studies as well (Jones and Thornton, 2003; Lobell
+et al., 2008; Schlenker and Lobell, 2010; Thornton et al., 2011).
+Lobell et al. (2008) show declines in crop yield by up to 30% for
+maize in Southern Africa, millet in Central Africa and cowpea in
+Eastern Africa as early as 2030. In contrast to our results, Thornton
+et al. (2011) report higher mean production decreases for maize in
+2090 in Western Africa than in Southern Africa, but in line with our
+results they project higher declines than in Eastern Africa.
+However, a comparison between these results and our study is
+difﬁcult due
+time horizons, methodological
+approaches, climate projections and crop parameterization.
+
+to different
+
+temperatures in all
+
+Mean crop yield decreases on average are most severe in
+Western and Southern Africa due to climate change (Table 6).
+Increasing annual
+regions lead to an
+accelerated phenological development and thus reduce growing
+periods by 31–65 days. Furthermore, growing season precipitation
+decreases in Southern Africa indicating a higher risk of water
+stress, in contrast to Eastern Africa with considerable increases in
+growing season precipitation. Water stress during the growing
+period affects photosynthesis as well as leaf and root growth,
+depending on the phenological stage (Supporting Material D).
+Therefore, total biomass as well as the biomass of harvested crop
+
+Table 7
+Comparison of simulated crop yields in Cameroon from literature and this study.
+
+Locationa, crop
+
+Reference
+
+Tiko/Moungo, groundnut
+
+Ngaoundere/Vina, maize
+
+Bamenda/Mbam and Bui, maize
+
+Bamenda/Mbam and Bui, groundnut
+
+Tingem and Rivington (2009)
+This study
+Laux et al. (2010)
+This study
+Laux et al. (2010)
+This study
+Laux et al. (2010)
+This study
+
+organs is reduced, depending on the crop type and cropping
+system. In contrast, in the temperate zone of South-East Africa
+precipitation is projected to increase or to remain constant from all
+three GCMs, leading to increased crop yields in some traditional
+sequential cropping systems (Fig. 5) and also in some single
+cropping systems (Supporting Material D).
+
+4.2. Beneﬁt of adapting the sowing date and the cropping system
+
+Farmers can lower the negative impact of changing climate on
+crop yields by adapting the sowing date to the start of the main
+rainy season, which is already done in many locations today. While
+in the Northern provinces of South Africa only 3% (Gbetibouo,
+2009) and in the Nile Basin of Ethiopia only 5% (Deressa et al., 2009)
+of surveyed farmers shift their planting dates to match delayed or
+early rainfall, Hassan and Nhemachena (2008) found that 16% of
+more than 8000 households in 11 African countries change
+planting dates as response to perceived changes in temperature
+and precipitation.
+
+Simulation studies for Cameroon indicated that crop yields of
+maize and groundnut with an optimal planting date are usually
+higher compared to crop yields obtained using traditional planting
+dates if climate changes (Laux et al., 2010; Tingem and Rivington,
+2009). This is in agreement with our ﬁndings, as the adaptation of
+sowing dates in our study usually results in higher crop
+productivity in most regions and cropping systems (Table 7).
+The beneﬁts from adapting sowing dates at two locations in
+Cameroon are even higher in these studies, as they optimize the
+sowing date in order to maximize crop yields whereas in our study
+the sowing date is adapted to a shifted start of the rainy season.
+
+Change to baseline,
+without adaptation
+ 5.1%
+ 25 to 29%
+–
+ 19%
+–
+ 11 to 12%
+–
+ 38%
+
+Change to baseline,
+with adaptation
+
+Deviation between yield
+without and with adaptation
+
++28.9%
+ 22 to 21%
+–
+ 14 to 15%
+–
+ 12%
+–
+ 32%
+
+–
+–
++1%
++10.4 to 12.3%
++16%
+ 1.8 to +2.9%
+ 9%
++9.2%
+
+Attention should be paid to the different GCMs used in the studies in the literature and in this study. Crop yields from literature are shown for only one GCM (GISS), whereas in
+this study the results from three different GCMs are averaged. The SRES scenario and time horizon are identical.
+
+a Locations in literature studies or related district in this study, e.g. the neighbouring district(s).
+
+140
+
+K. Waha et al. / Global Environmental Change 23 (2013) 130–143
+
+There are, however some exceptions with lower crop yields in
+scenarios with adapted/optimized sowing dates in both studies as
+well as in our study. One reason for this is that at some locations,
+temperature and not precipitation is the limiting factor for
+agricultural production like in the case of a mountainous location
+in Cameroon (Laux et al., 2010) and South Africa (this study). At
+other locations, the method of calculating the start of the main
+rainy season might not be detailed enough to adapt sowing dates to
+changing precipitation patterns.
+
+With few exceptions, mean crop yields in sequential cropping
+systems exceed mean crop yields in single cropping systems
+because the second harvest will often also be successful under
+changing climatic conditions. The most productive sequential
+cropping systems are not always the most stable systems against
+negative climate change impacts. Instead the traditional sequential
+cropping systems which are already applied today will provide
+lower but more stable crop yields in many locations and poor
+farmers which rely on stable crop production will prefer them to
+highest-yielding cropping systems.
+
+4.3. Limitations of the modelling approach
+
+LPJmL is a vegetation model for managed land designed and
+parameterized for global or regional studies driven by aggregate
+soil and climate information. Detailed local soil and climatic
+conditions, speciﬁc agronomic practices, the occurrence of pests
+and diseases, various socio-economic aspects – despite their
+importance for local crop yields and farmers management
+decisions – therefore cannot be considered. Crop growth in
+advanced development stages is not terminated in the model by
+severe heat stress or desiccation. Crop yields are expected to
+decline by more than 10% per 8C temperature increase considering
+the effect of heat damage on maize grown in areas with growing
+season temperatures of more than 25 8C (Lobell et al., 2011).
+However, temperature and water stress negatively affect photo-
+synthesis, leaf and root growth and the production of storage
+organs during the growing period in the model and crop growth is
+terminated under poor growing conditions at the beginning of the
+phenological development. Therefore resowing within the same
+month is possible. The crop’s inﬂuence on soil properties is not
+considered in the model but can noticeably beneﬁt the yield of the
+subsequent crop by e.g. leaving nitrogen in the soil if cowpea is
+grown (Madamba et al., 2006) or by improving the P-uptake of
+subsequent maize through mycorrhizal associations (Adjei-Nsiah
+et al., 2007) if cassava is grown. Furthermore crop rotations can
+reduce disease pressure from soil-or root-borne pathogens and
+pests and weed densities (Bennett et al., 2012), which is not
+considered in our study.
+
+As the cultivated area of each cropping system within the study
+area is still unknown, it remains unclear how the total crop
+production will be affected by climate change in each country if
+sequential cropping systems are considered. Furthermore, devel-
+opments in the demand for certain agricultural products, popula-
+tion size and availability of land and water resources must be
+considered when deciding on the most suitable management
+strategy for a location. The positive effects of elevated atmospheric
+CO2 concentrations and technology development on crop yields
+are not considered in this study. Crop yields are expected to
+increase by 10–20% for C3 crops (e.g. wheat, rice) and 0–10% for C4
+crops (e.g. maize, millet) if atmospheric CO2 concentrations rise
+from 380 ppm to 550–600 ppm (Tubiello, 2007), but only if other
+biotic (like pests) or abiotic (like nutrients) factors do not become
+limiting (Long et al., 2006). It is therefore unlikely that CO2
+fertilization will have a strong effect on crop yields at current
+management intensities in sub-Saharan Africa. If effective to some
+extend, the CO2 fertilization effect will potentially reduce the
+
+superiority of maize-based systems, with maize being a less
+affected C4 crop.
+
+4.4. Uncertainties from the household survey
+
+Although the questionnaire used in the household survey only
+asked for crops cultivated within one farming season, the length of
+the growing periods calculated for single and sequential cropping
+systems indicates that farmers also reported agricultural activities
+beyond that period. Despite excluding some obvious cases from
+the study it remains unclear if the reported farming activities refer
+to only one farming season in all cases. Moreover, crop failure was
+not reported in the survey, leading to uncertainty about the
+validity of the reported sowing and harvest dates in cases where
+farmers were forced to resow the chosen crop but did not report
+the new sowing date. In addition some crops, such as cassava,
+maize or legumes might have an extended harvest period because
+of uneven ripening, better in-ground than out-of-ground stor-
+ability or because multiple harvest products can be obtained from
+one crop (green and dry maize) (Fermont and Benson, 2011) This
+might lead to longer growing periods reported in the household
+survey than found in literature (Table 4). The geographic position
+of the households interviewed for the survey is not known, only the
+position of the districts they are located in. These were later used
+for the conversion from districts to grid cells. Therefore a
+considerable range of different cropping systems and growing
+periods can be found in a single grid cell,
+leading to some
+uncertainty in the multiple regression model between PHUsin and
+the climate parameters which were used to describe the crop’s
+development. However, the simulated lengths of growing periods
+differ only slightly between 5 and 33 days on average from those
+reported in the household survey, but with 50% of all values having
+a deviation of up to 58 and 65 days for cassava and groundnut
+respectively (Fig. 4).
+
+4.5. Farmers’ adaptation options
+
+Although sequential cropping systems are advantageous in
+terms of maximizing crop yields and minimizing climate change
+impacts compared to single cropping systems in many locations,
+farmers in 65% of the surveyed administrative units do not apply
+them. The growing season length in e.g. Senegal, Niger and parts of
+Ethiopia is not suitable to grow more than one crop. In districts
+climatically suitable for sequential cropping systems, growing a
+second crop requires sufﬁcient labour and is risky if the rainy
+season ends too early and the crop fails. The ﬁrst crop needs to be
+harvested, processed and stored or sold on the market during the
+period of land preparation and sowing of the second crop, which
+leads to a high demand for labour and possibly for draught animals
+(Gill, 1991). Moreover, introducing an unknown cropping system
+may also require some adjustments to current technology and
+management, which is often made more difﬁcult by a lack of inputs
+like seeds or fertilizer, missing knowledge about cultivation and
+processing of the new cropping system and lacking market access
+to sell the products (Lotze-Campen and Schellnhuber, 2009). It
+therefore remains unclear if farmers will be able to apply the most
+beneﬁcial cropping system.
+
+Farmers will not only decide on the crop and cropping system
+with respect to productivity but also pay attention to other crop
+characteristics, such as its performance on local soils, the colour,
+shape and taste of harvestable organs, bacterial tolerance, market
+acceptability and storability (Haugerud and Collinson, 1990;
+Sperling et al., 1993). In West Africa, farmers prefer e.g. an
+early-maturing millet cultivar at the beginning of the growing
+season because their food supply is very low after a long dry season
+and they need to harvest fast (Kowal and Kassam, 1978). In
+
+K. Waha et al. / Global Environmental Change 23 (2013) 130–143
+
+141
+
+addition to adapting the cropping system and the crops’ growing
+period to the best growing conditions, the farmers’ options for
+adapting to changing climate include managing water resources by
+using e.g. water harvesting techniques (Kahinda et al., 2007; Rost
+et al., 2009), managing biodiversity, integrating animals into farming
+systems (Mortimore and Adams, 2001), diversifying livelihoods
+(Cooper et al., 2008) and diversifying the whole agricultural system
+(Lin, 2011). We consider none of these options in our analysis here. In
+Tanzania, 33 different practices which are potentially suitable for
+adaptation to climate change, ranging from agricultural water
+management practices and adjustments of farm and crop manage-
+ment to diversiﬁcation beyond the farm, are already used by farmers
+today (Below et al., 2011). Indigenous soil conservation techniques
+and agro-forestry practices are additional examples for adaptation
+options not covered in this study. They are well known and already
+applied in local communities, as they conserve soil moisture and soil
+carbon (Nyong et al., 2007) and protect crops from dry spells,
+extreme temperatures and storm events (Lin, 2011).
+
+5. Summary and conclusions
+
+Farmers in sub-Saharan Africa grow a wide range of crops and
+apply different cropping systems, but as shown in our study clearly
+prefer long-growing crop cultivars in single cropping systems and
+short-growing crop cultivars in sequential cropping systems. For the
+ﬁrst time, this study also shows the spatial distribution of sequential
+cropping systems applied in seven sub-Saharan Africa countries and
+enables us to analyse climate change effects on crop yields
+considering the cropping system type. They need to be included
+in climate change impact studies because simulated crop yields
+differ considerably between crops and cropping systems and also
+depend on the timing of sowing. Our newly developed modelling
+approach therefore helps to identify the best management strategy
+for adaptation to climate change. In single cropping systems crops
+grow longer but are only harvested once a year, leading to lower crop
+yields than in sequential cropping systems with shorter growing
+periods but higher cropping intensities. However, only farmers in
+regions with adequate temperature, precipitation and solar radia-
+tion can beneﬁt from higher cropping intensities in sequential
+cropping systems. It is important to note that farmers are able to
+reduce the negative effects of climate change and minimize the risk
+of crop failure by applying low-tech adaptation options on a farm
+level. Despite the advantage of sequential cropping systems over
+single cropping systems in many locations, since both higher crop
+yields and lower declines in crop yield in future are possible, farmers
+might not always be able to apply them if inputs and labour for
+agricultural production are lacking. This implies that farmers would
+beneﬁt from improved knowledge and further ﬁeld studies about
+crops and cropping systems, also ones currently uncommon in their
+country, and from reliable weather and seasonal climate forecasts.
+Furthermore stable economic and political conditions would
+support private trading and the further development of market
+opportunities. Such conditions would strengthen the farmers’
+adaptive capacity, perhaps also allowing them to take advantage
+of sequential cropping systems while at the same time facing the
+challenge of changing climate conditions.
+
+Authors’ contribution
+
+The contribution of the different authors was as follows: K.W.
+and C.M. conceived the original idea of studying the susceptibility
+of multiple cropping systems to climate change, K.W., C.M., A.B.,
+J.P.D. and H.L.-C. were involved in developing the methodology.
+K.W., C.M., A.B. and J.H. implemented the concepts in the model,
+K.W. analysed the household survey supported by P.K. who
+provided the original database of the survey, K.W. did the model
+
+runs, prepared the ﬁgures, did literature research, wrote the
+manuscript and prepared the supporting material. All authors
+were involved in discussing the results.
+
+Acknowledgements
+
+We would like to thank the LPJmL crop modelling team and
+especially Susanne Rolinski
+for valuable discussions on the
+methodology and results. Furthermore we are grateful to Benjamin
+Gaede and Alison Schlums who checked the spelling and grammar.
+K.W. and C.M. gratefully acknowledge ﬁnancial support from
+projects with the International Food Policy Research Institute
+(6012001) and the International Livestock Research Institute
+(81102850) funded through the German Federal Ministry for
+Economic Cooperation and Development. We are grateful to
+HarvestChoice for providing data on growing seasons in sub-
+Saharan Africa and rice yield in Somalia. The Program for Climate
+Model Diagnosis and Intercomparison (PCMDI) and the WCRP’s
+Working Group on Coupled Modelling (WGCM) are acknowledged
+for making available the WCRP CMIP3 multi-model dataset.
+
+Appendix A. Supplementary data
+
+Supplementary data associated with this article can be found, in
+
+the online version, at doi:10.1016/j.gloenvcha.2012.11.001.
+
+References
+
+Adjei-Nsiah, S., Kuyper, T.W., Leeuwis, C., Abekoe, M.K., Giller, K.E., 2007. Evaluating
+sustainable and proﬁtable cropping sequences with cassava and four legume
+crops: effects on soil fertility and maize yields in the forest/savannah transi-
+tional agro-ecological zone of Ghana. Field Crops Research 103, 87–97.
+
+Ainsworth, E.A., Long, S.P., 2005. What have we learned from 15 years of free-air CO2
+enrichment (FACE)? A meta-analytic review of the responses of photosynthesis,
+canopy properties and plant production to rising CO2. The New Phytologist 165,
+351–372.
+
+Alves, A.A.C., 2002. Cassava botany and physiology. In: Hillocks, R.J., Tresh, J.M.,
+Bellotti, A.C. (Eds.), Cassava. Biology, Production and Utilization. CABI, Wall-
+ingford/New York, pp. 67–86.
+
+Andrews, D.J., Kassam, A.H., 1976. The importance of multiple cropping in
+increasing world food supplies. In: Papendick, R.I., Sanchez, P.A., Triplett,
+G.B. (Eds.), Multiple Cropping. American Society of Agronomy, Madison, pp.
+1–10.
+
+Badu-Apraku, B., Fakorede, M.A.B., 2006. Zea mays L. In: Brink, M., Belay, G. (Eds.),
+Plant Resources of Tropical Africa 1 – Cereals and Pulses PROTA Foundation.
+Backhuys Publishers, CTA, Wageningen, pp. 229–237.
+
+Bationo, A., Ntare, B.R., 2000. Rotation and nitrogen fertilizer effects on pearl millet,
+cowpea and groundnut yield and soil chemical properties in a sandy soil in
+the semi-arid tropics, West Africa. The Journal of Agricultural Science 134,
+277–284.
+
+Beets, W.C., 1982. Multiple Cropping and Tropical Farming Systems. Gower Pub-
+
+lishing Ltd., Aldershot.
+
+Belay, G., 2006. Triticum turgidum L. In: Brink, M., Belay, G. (Eds.), Plant Resources of
+Tropical Africa 1 – Cereals and Pulses PROTA Foundation. Backhuys Publishers,
+CTA, Wageningen, pp. 183–187.
+
+Below, T.B., Mutabazi, K.D., Kirschke, D., Franke, C., Sieber, S., Siebert, R., Tscherning,
+K., 2011. Can farmers’ adaptation to climate change be explained by socio-
+economic household-level variables?
+Global Environmental Change 22,
+223–235.
+
+Benhin, J.K.A., 2006. Climate Change and South African Agriculture: Impacts and
+Adaptation Options. Centre for Environmental Economics and Policy in Africa,
+Pretoria, South Africa.
+
+Bennett, A.J., Bending, G.D., Chandler, D., Hilton, S., Mills, P., 2012. Meeting the
+demand for crop production: the challenge of yield decline in crops grown in
+short rotations. Biological Reviews 87, 52–71.
+
+Berrada, A.F., Shivakumar, B.G., Yaduraju, N.T., 2006. Chickpea in cropping systems.
+In: Yadav, S.S., et, al. (Eds.), Chickpea Breeding and Management. CABI, Oxford-
+shire, UK, pp. 193–212.
+
+Boko, M., Niang, I., Nyong, A., Vogel, C., Githeko, A., Medany, M., Osman-Elasha, B.,
+Tabo, R., Yanda, P., 2007. Africa. In: Parry, M.L., et al. (Eds.), Climate Change
+2007: Impacts, Adaptation and Vulnerability. Contribution of Working Group II
+to the Fourth Assessment Report of the Intergovernmental Panel on Climate
+Change. Cambridge University Press, Cambridge UK, pp. 433–467.
+
+Bondeau, A., Smith, P.C., Zaehle, S., Schaphoff, S., Lucht, W., Cramer, W., Gerten, D.,
+Lotze-Campen, H., Mu¨ ller, C., Reichstein, M., Smith, B., 2007. Modelling the role
+of agriculture for the 20th century global terrestrial carbon balance. Global
+Change Biology 13, 679–706.
+
+142
+
+K. Waha et al. / Global Environmental Change 23 (2013) 130–143
+
+Boswell, V.R., 1926. The inﬂuence of temperature upon the growth and yield of
+garden peas. Proceedings of the American Society for Horticultural Sciences 23,
+162–168.
+
+Carsky, R., Singh, J.B., Oyewole, B.B., 2001. Contribution of early season cowpea to
+late season maize in the savanna zone of West Africa. Biological Agriculture and
+Horticulture 18, 303–315.
+
+Castellazzi, M.S., Wood, G.A., Burgess, P.J., Morris, J., Conrad, K.F., Perry, J.N., 2008. A
+
+systematic representation of crop rotations. Agricultural Systems 97, 26–33.
+
+Challinor, A., Wheeler, T., Garforth, C., Craufurd, P., Kassam, A., 2007. Assessing the
+vulnerability of food crop systems in Africa to climate change. Climatic Change
+83, 381–399.
+
+Christensen, J.H., Hewitson, B., Busuioc, A., Chen, A., Gao, X., Held, I., Jones, R., Kolli,
+R.K., Kwon, W.-T., Laprise, R., Magan˜ a Rueda, V., Mearns, L., Mene´ ndez, C.G.,
+Ra¨isa¨ nen, J., Rinke, A., Sarr, A., Whetton, P., 2007. Regional climate projections.
+In: Solomon, S., et al. (Eds.), Climate Change 2007: The Physical Science Basis.
+Contribution of Working Group I to the Fourth Assessment Report of the
+Intergovernmental Panel on Climate Change. Cambridge University Press, Cam-
+bridge, United Kingdom/New York, NY, USA, pp. 849–940.
+
+Collins, W.D., Bitz, C.M., Blackmon, M.L., Bonan, G.B., Bretherton, C.S., Carton, J.A.,
+Chang, P., Doney, S.C., Hack, J.J., Henderson, T.B., Kiehl, J.T., Large, W.G.,
+McKenna, D.S., Santer, B.D., Smith, R.D., 2006. The Community Climate System
+Model Version 3 (CCSM3). Journal of Climate 19, 2122–2143.
+
+Cooper, P.J.M., Dimes, J., Rao, K.P.C., Shapiro, B., Shiferaw, B., Twomlow, S., 2008.
+Coping better with current climatic variability in the rain-fed farming systems
+of sub-Saharan Africa: an essential ﬁrst step in adapting to future climate
+change? Agriculture Ecosystems & Environment 126, 24–35.
+
+Cox, P.M., Betts, R.A., Bunton, C.B., Essery, R.L.H., Rowntree, P.R., Smith, J., 1999. The
+impact of new land surface physics on the GCM simulation of climate and
+climate sensitivity. Climate Dynamics 15, 183–203.
+
+de Schlippe, P., 1956. Shifting Cultivation in Africa. Routledge & K. Paul, London.
+Deressa, T.T., Hassan, R.M., Ringler, C., Alemu, T., Yesuf, M., 2009. Determinants of
+farmers’ choice of adaptation methods to climate change in the Nile Basin of
+Ethiopia. Global Environmental Change 19, 248–255.
+
+Dinar, A., Hassan, R.R., Benhin, M.J., 2008. Climate Change and Agriculture in Africa:
+
+Impact Assessment and Adaptation Strategies. Earthscan, London.
+
+Do¨ o¨ s, B.R., Shaw, R., 1999. Can we predict the future food production? A sensitivity
+
+analysis. Global Environmental Change 9, 261–283.
+
+Fader, M., Rost, S., Mu¨ ller, C., Bondeau, A., Gerten, D., 2010. Virtual water content of
+temperate cereals and maize: present and potential future patterns. Journal of
+Hydrology 384, 218–231.
+
+FAO, 2001. Food Balance Sheets. A Handbook. FAO, Rome.
+FAO, 2006. World agriculture: towards 2030/2050 – Interim Report. Prospects for
+
+food, nutrition, agriculture and major commodity groups. FAO, Rome.
+
+FAO, 2008. The State of Food Insecurity in the World 2008. High food prices and food
+
+security – threats and opportunities. FAO, Rome.
+
+FAO, 2010. Crop calendar – a crop production information tool for decision making
+[Online]. http://www.fao.org/agriculture/seed/cropcalendar/welcome.do (ver-
+iﬁed 14.02.2011).
+
+Fermont, A., Benson, T., 2011. Estimating Yield of Food Crops Grown by Smallholder
+Farmers. A Review in the Uganda Context. IFPRI Discussion Paper Washington
+D.C., Kampala.
+
+Fischer, G., van Velthuizen, H., Shah, M., Nachtergaele, F., 2002. Global Agro-
+Ecological Assessment for Agriculture in the 21st Century: Methodology and
+Results. IIASA, Laxenburg, Rome.
+
+Francis, A., 1986a. Future perspectives of multiple cropping. In: Francis, A. (Ed.),
+Multiple Cropping System. MacMillan Publishing Co., New York, pp. 351–369.
+Francis, C.A., 1986b. Multiple Cropping Systems. Macmillan Publishing Company,
+
+New York.
+
+Frolking, S., Yeluripati, J.B., Douglas, E., 2006. New district-level maps of rice
+cropping in India: a foundation for scientiﬁc input into policy assessment. Field
+Crops Research 98, 164–177.
+
+Frolking, S., Qiu, J., Boles, S., Xiao, X., Liu, J., Zhuang, Y., Li, C., Qin, X., 2002.
+Combining remote sensing and ground census data to develop new maps of
+the distribution of rice agriculture in China. Global Biogeochemical Cycles 16
+38-1–38-10.
+
+Gbetibouo, G.A., 2009. Understanding Farmers’ Perceptions and Adaptations to
+Climate Change and Variability. The Case of the Limpopo Basin, South Africa.
+IFPRI, Washington, D.C..
+
+Geng, S., Vries de, W.T.P., Supit, F., 1986. A simple method for generating daily
+
+rainfall data. Agricultural and Forest Meteorology 36, 363–376.
+
+Gerten, D., Schaphoff, S., Haberlandt, U., Lucht, W., Sitch, S., 2004. Terrestrial
+vegetation and water balance – hydrological evaluation of a dynamic global
+vegetation model. Journal of Hydrology 286, 249–270.
+
+Gerten, D., Heinke, J., Hoff, H., Biemans, H., Fader, M., Waha, K., 2011. Global water
+availability and requirements for future food production. Journal of Hydrome-
+teorology 12, 885–899.
+
+Gill, G.J., 1991. Seasonality and Agriculture in the Developing World. A Problem of
+
+the Poor and Powerless. Cambridge University Press, Cambridge.
+
+HarvestChoice, 2010. Measuring growing seasons [Online]. Available by Interna-
+tional Food Policy Research Institute http://harvestchoice.org/labs/measuring-
+growing-seasons (posted 29.08.2012; veriﬁed 25.08.2011).
+
+Hassan, R., Nhemachena, C., 2008. Determinants of African farmers’ strategies for
+adapting to climate change: multinomial choice analysis. African Journal of
+Agricultural and Resource Economics 2, 83–104.
+
+Haugerud, A., Collinson, M.P., 1990. Plants, genes and people: improving the
+relevance of plant breeding in Africa. Experimental Agriculture 26, 341–362.
+
+Jones, P.G., Thornton, P.K., 2003. The potential impacts of climate change on maize
+production in Africa and Latin America in 2055. Global Environmental Change
+13, 51–59.
+
+Jungclaus, J.H., Keenlyside, N., Botzet, M., Haak, H., Luo, J.J., Latif, M., Marotzke, J.,
+Mikolajewicz, U., Roeckner, E., 2006. Ocean circulation and tropical variability
+in the coupled model ECHAM5/MPI-OM. Journal of Climate 19, 3952–3972.
+
+Kahinda, J.-m.M., Rockstro¨ m, J., Taigbenu, A.E., Dimes, J., 2007. Rainwater harvesting
+to enhance water productivity of rainfed agriculture in the semi-arid
+Zimbabwe. Physics and Chemistry of the Earth, Parts A/B/C 32, 1068–1073.
+
+Keys, E., McConnell, W.J., 2005. Global change and the intensiﬁcation of agriculture
+
+in the tropics. Global Environmental Change 15, 320–337.
+
+Kowal, J.M., Kassam, A.H., 1978. Agricultural Ecology of Savanna: A Study of West
+
+Africa. Clarendon Press, Oxford.
+
+Laux, P., Ja¨ckel, G., Tingem, R.M., Kunstmann, H., 2010. Impact of climate change on
+agricultural productivity under rainfed conditions in Cameroon. A method to
+improve attainable crop yields by planting date adaptations. Agricultural and
+Forest Meteorology 150, 1258–1271.
+
+Lin, B.B., 2011. Resilience in agriculture through crop diversiﬁcation: adaptive
+
+management for environmental change. BioScience 61, 183–193.
+
+Liu, J., Fritz, S., van Wesenbeeck, C.F.A., Fuchs, M., You, L., Obersteiner, M., Yang, H.,
+2008. A spatially explicit assessment of current and future hotspots of hunger in
+Sub-Sahara Africa in the context of global change. Global and Planetary Change
+64, 222–235.
+
+Lobell, D.B., Ba¨nziger, M., Magorokosho, C., Vivek, B., 2011. Nonlinear heat effects on
+African maize as evidenced by historical yield trials. Nature Climate Change 1,
+42–45.
+
+Lobell, D.B., Burke, M.B., Tebaldi, C., Mastrandrea, M.M., Falcon, W.P., Naylor, R.L.,
+2008. Prioritizing climate change adaptation needs for food security in 2030.
+Science 319, 607–610.
+
+Long, S.P., Ainsworth, E.A., Leakey, A.D.B., No¨ sberger, J., Ort, D.R., 2006. Food for
+thought: lower-than-expected crop yield stimulation with rising CO2 concen-
+trations. Science 312, 1918–1921.
+
+Lotze-Campen, H., Schellnhuber, H.J., 2009. Climate impacts and adaptation options
+in agriculture: what we know and what we don’t know. Journal fu¨ r Verbrau-
+cherschutz und Lebensmittelsicherheit 4, 145–150.
+
+Madamba, R., Grubben, G.J.H., Asante, I.K., Akromah, R., 2006. Vigna unguiculata (L.)
+Walp. In: Brink, M., Belay, G. (Eds.), Plant Resources of Tropical Africa 1 –
+Cereals and Pulses PROTA Foundation. Backhuys Publishers, CTA, Wageningen,
+pp. 221–229
+
+Marengo, J.A., Liebmann, B., Kousky, V.E., Filizola, N.P., Wainer, I.C., 2001. Onset and
+end of the rainy season in the Brazilian Amazon basin. Journal of Climate 14,
+833–852.
+
+Mation, P., Kristjanson, P., 1988. Farmer’s Strategies to Manage Crop Risk in the
+West African Semi-Arid Tropics. International Crops Research Institute for the
+Semi Arid Tropics, Patancheru.
+
+Meehl, G.A., Covey, C., Delworth, T., Latif, M., McAvaney, B., Mitchell, J.F.B., Stouffer,
+R.J., Taylor, K.E., 2007. The WCRP CMIP3 multi-model dataset: a new era in
+climate change research. Bulletin of the American Meteorological Society 88,
+1383–1394.
+
+Meertens, H.C.C., 2006. Oryza sativa L. In: Brink, M., Belay, G. (Eds.), Plant Resources
+of Tropical Africa 1 – Cereals and Pulses PROTA Foundation. Backhuys Publish-
+ers,, CTA, Wageningen.
+
+Mitchell, T.D., Jones, P.D., 2005. An improved method of constructing a database of
+monthly climate observations and associated high-resolution grids. Interna-
+tional Journal of Climatology 25, 693–712.
+
+Mortimore, M.J., Adams, W.M., 2001. Farmer adaptation, change and crisis’ in the
+
+Sahel. Global Environmental Change 11, 49–57.
+
+Mu¨ ller, C., Cramer, W., Hare, W.L., Lotze-Campen, H., 2011. Climate change risks for
+African agriculture. Proceedings of the National Academy of Sciences of the
+United States of America 108, 4313–4315.
+
+Neitsch, S., Arnold, J., Kiniry, J., Srinivasan, R., Williams, J., 2002. Soil and Water
+Assessment Tool User’s Manual Version 2000. Texas Water Resources Institute
+TR-192, Temple.
+
+Norman, M.J.T., Pearson, C.J., Searle, P.G.E., 1995. The Ecology of Tropical Food Crops.
+
+Cambridge University Press, Cambridge.
+
+Ntare, B.R., 2006. Arachis hypogaea L. In: Brink, M., Belay, G. (Eds.), Plant Resources
+of Tropical Africa 1 – Cereals and Pulses PROTA Foundation. Backhuys Publish-
+ers, CTA, Wageningen.
+
+Nyong, A., Adesina, F., Osman Elasha, B., 2007. The value of indigenous knowledge in
+climate change mitigation and adaptation strategies in the African Sahel.
+Mitigation and Adaptation Strategies for Global Change 12, 787–797.
+
+O’Brien, K., Synga, L., Naess, L.O., Kingamkono, R., Hochobeb, B., 2000. Is information
+enough? User response to seasonal climate forecasts in Southern Africa. CICERO
+Report. Center for International Climate and Environmental Research, Oslo.
+
+Omotosho, J.B., Balogun, A., Ogunjobi, K., 2000. Predicting monthly and seasonal
+rainfall, onset and cessation of the rainy season in West Africa using only
+surface data. International Journal of Climatology 20, 865–880.
+
+Portmann, F.T., Siebert, S., Do¨ ll, P., 2010. MIRCA2000 – global monthly irrigated and
+rainfed crop areas around the year 2000: a new high-resolution data set for
+agricultural and hydrological modeling. Global Biogeochemical Cycles 24, 1–24.
+Priestley, C.H.B., Taylor, R.J., 1972. Assessment of surface heat-ﬂux and evaporation
+
+using large-scale parameters. Monthly Weather Review 100, 81–92.
+
+Rehm, S., Espig, G., 1991. The Cultivated Plants of the Tropics and Subtropics:
+
+Cultivation, Economic Value, Utilization. Margraf, Weikersheim.
+
+Rojstaczer, S., Sterling, S.M., Moore, N.J., 2001. Human appropriation of photosyn-
+
+thesis products. Science 294, 2549–2552.
+
+K. Waha et al. / Global Environmental Change 23 (2013) 130–143
+
+143
+
+Rost, S., Gerten, D., Hoff, H., Lucht, W., Falkenmark, M., Rockstro¨ m, J., 2009. Global
+potential to increase crop production through water management in rainfed
+agriculture. Environmental Research Letters 4, 044002 (9 pp.).
+
+Sacks, W.J., Deryng, D., Foley, J.A., Ramankutty, N., 2010. Crop planting dates: an
+
+analysis of global patterns. Global Ecology and Biogeography 19, 607–620.
+
+Schilling, R., Gibbons, R., 2002. Groundnut. Macmillan Publishing Company, London.
+Schlenker, W., Lobell, D.B., 2010. Robust negative impacts of climate change on
+
+Thornton, P.K., Jones, P.G., Owiyo, T.M., Kruska, R.L., Herero, M., Kristjanson, P.,
+Notenbaert, A., Bekele, N., 2006. Mapping climate vulnerability and poverty in
+Africa. Report to the Department for International Development, Nairobi.
+
+Tingem, M., Rivington, M., 2009. Adaptation for crop agriculture to climate change
+in Cameroon: turning on the heat. Mitigation and Adaptation Strategies for
+Global Change 14, 153–168.
+
+Tubiello, F.N., 2007. Crop and pasture response to climate change. Proceedings of
+
+African agriculture. Environmental Research Letters 5, 014010 (8 pp.).
+
+the American Society for Horticultural Sciences 104, 19686–19690.
+
+Sisworo, W.H., Mitrosuhardjo, M.M., Rasjid, H., Myers, R.J.K., 1990. The relative roles
+of N ﬁxation, fertilizer, crop residues and soil in supplying N in multiple
+cropping systems in a humid, tropical upland cropping system. Plant and Soil
+121, 73–82.
+
+Sitch, S., Smith, B., Prentice, I.C., Arneth, A., Bondeau, A., Cramer, W., Kaplan, J.O.,
+Levis, S., Lucht, W., Sykes, M.T., Thonicke, K., Venevsky, S., 2003. Evaluation of
+ecosystem dynamics, plant geography and terrestrial carbon cycling in the LPJ
+dynamic global vegetation model. Global Change Biology 9, 161–185.
+
+Sperling, L., Loevinsohn, M.E., Ntabomvura, B., 1993. Rethinking the farmer’s role in
+plant breeding: local bean experts and on-station selection in Rwanda. Experi-
+mental Agriculture 29, 509–519.
+
+Thomas, D.S.G., Twyman, C., Osbahr, H., Hewitson, B., 2007. Adaptation to climate
+change and variability: farmer responses to intra-seasonal precipitation trends
+a South Africa. Climatic Change 83, 301–322.
+
+Thornton, P.K., Jones, P.G., Alagarswamy, G., Andresen, J., 2009. Spatial variation of
+crop yield response to climate change in East Africa. Global Environmental
+Change 19, 54–65.
+
+Thornton, P.K., Jones, P.G., Ericksen, P.J., Challinor, A.J., 2011. Agriculture and food
+systems in sub-Saharan Africa in a 4˚ C+ world. Philosophical Transactions. Series
+A, Mathematical, Physical, and Engineering Sciences 369, 117–136.
+
+Thornton, P.K., Jones, P.G., Alagarswamy, G., Andresen, J., Herrero, M., 2010. Adapt-
+ing to climate change: agricultural system and household impacts in East Africa.
+Agricultural Systems 103, 73–82.
+
+Tubiello, F.N., Amthor, J.S., Boote, K.J., Donatelli, M., Easterling, W., Fischer, G.,
+Gifford, R.M., Howden, M., Reilly, J., Rosenzweig, C., 2007. Crop response to
+elevated CO2 and world food supply: a comment on ‘‘Food for Thought.’’ by Long
+et al., Science 312:1918–1921, 2006. European Journal of Agronomy 26,
+215–223.
+
+Van Duivenbooden, N., Pala, M., Studer, C., Bielders, C.L., Beukes, D.J., 2000. Cropping
+systems and crop complementarity in dryland agriculture to increase soil water
+use efﬁciency: a review. Netherlands Journal of Agricultural Science 48, 213–
+236.
+
+Virmani, S.M., Singh, P., 1986. Agroclimatological characteristics of the groundnut-
+growing regions in the semi-arid tropics. In: Sivakumar, M.V.K., Virmani, S.M.
+(Eds.), Agrometeorology of Groundnut. International Crops Research Institute
+for the Semi-Arid Tropics, Patancheru, pp. 35–45.
+
+Waha, K., van Bussel, L.G.J., Mu¨ ller, C., Bondeau, A., 2012. Climate-driven simula-
+tion of global crop sowing dates. Global Ecology and Biogeography 21,
+247–259.
+
+Wang, B., Ho, L., 2002. Rainy season of the Asian-Paciﬁc summer monsoon. Journal
+
+of Climate 15, 386–398.
+
+Wilcoxon, F., 1945. Individual comparisons by ranking methods. Biometrics Bulletin
+
+1, 80–83.
+
+Wirsenius, S., 2000. Human use of land and organic materials. Modeling the
+turnover of biomass in the global food systems, Thesis, Chalmers University
+of Technology Go¨ teborg.
+
+

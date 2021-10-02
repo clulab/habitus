@@ -1,0 +1,947 @@
+Jamil et al., 
+
+The Journal of Animal & Plant Sciences, 27(3): 2017, Page: 848-854 
+
+The J. Anim. Plant Sci. 27(3):2017 
+
+ISSN: 1018-7081 
+
+RICE YIELD IMPROVEMENT THROUGH VARIOUS DIRECT SEEDING TECHNIQUES 
+
+ON MODERATELY SALT AFFECTED SOIL 
+
+M. Jamil1*, S. S. Hussain1, M. A. Qureshi3*, S. M. Mehdi2, M.Q. Nawaz1 and Q. Javed1 
+
+1Soil Salinity Research Institute, Pindi Bhattian; 2Soil Fertility Research Institute, Lahore 
+
+3Soil Bacteriology Section, Agri. Biotech. Research Institute, AARI Faisalabad. 
+
+Correspondence Author E-mail: qureshifsd@gmail.com 
+
+ABSTRACT 
+
+Rice  is  usually  cultivated  under  flooded  conditions  by  transplanting,  an  expensive,  time  consuming  and  required 
+significant  labour  pool  as  compared  to  the  direct  seeded  rice.  Canal  water  is  not  satisfying  the  required  demand  and 
+ground water at most of the places is unfit for irrigation except some patches. Under prevailing conditions, direct seeded 
+rice  is  the  ultimate  strategy  for  optimum  production  of  rice.  Assessment  of  the  different  sowing  techniques  viz. 
+broadcast,  ridge  and  drill  sowing  and  different  fertilizer  rates  on  the  paddy  yield  on  moderately  salt  affect  soil  was 
+executed  through  field  experiments  at  Research  Farm  of  Soil  Salinity  Research  Institute,  Pindi  Bhattian,  district 
+Hafizabad, Punjab during 2010-2012. Three methods of sowing i.e. ridge, drill and broadcast sowing and five N levels 
+viz. T1: farmer practices (80-60-0 NPK kg ha-1), T2: Recommended dose (RD) (110-90-60 NPK kg ha-1), T3: 75% N of 
+RD, T4: 125% N of RD and T5:150% N of RD.Trial was laid out in split plot arrangement with three replications. Results 
+revealed the better growth and development, yield attributes and ultimately the highest paddy yield (4.46 t ha-1) at 150% 
+N  of  recommended  dose  fromridge  sowing  followed  by  125%  N  of  recommended  dose  with  4.35  t  ha-1  production. 
+Among the sowing techniques,  ridge sowing proved the best  with all growth, development and  yield parameters at the 
+optimum  followed  by  drill  sowing.  Studies  concluded  that  the  effect  of  various  sowing  techniques,  N  rates  and  their 
+interaction  was  significant  on  yield  components  of  direct  seeded  rice.  Nitrogen  rate  @  150  %  N  of  RD  gave  the 
+maximum yield which was statistically at par with the 125% N of RD. Among sowing techniques, ridge sowing proved 
+superior  followed  than  drill  and  broad  cast  sowing.Slight  decrease  in  ECe  and  SAR  was  observed  with  drill  sowing  at 
+higher rates of N i.e. 125 and 150% of RD. 
+
+Keywords: Direct seed rice, nitrogen rates, sowing methods, paddy yield, Salt affected soil, Rice. 
+ 
+
+INTRODUCTION 
+
+traditionally 
+
+ 
+Rice,  the  second  major  cereal  after  wheat,  the 
+staple  feed  for  almost  half  of  the  world  population  has 
+been  cultivated 
+in  flooded  conditions 
+(Bouman, 2003a). Rice is very well known due to its high 
+delta  of  water  requirement.  The  scarcity  of  water  and 
+poor  quality  ground  water  results  a  setback  for  the  crop 
+sector. It is predicted that massive water scarcity reduced 
+sufficient  available  water  for  crop  growth  and  severe 
+decline in rice production under flood conditions. In Asia, 
+it  is  estimated  that  >20%  of  irrigated  rice  would  face 
+severe  water  shortage  up  to  2025  (Tuong  and  Bouman, 
+2003).  Resultantly,  flooded  conditions  are  impractical 
+and no more right choice for rice cultivation.  
+ 
+The  water  shortage  for  rice  production  can  be 
+managed  by  system  of  rice  intensification  (Stoop  et  al., 
+2002),  alternate  wetting  and  drying  (Tabbal  et  al.,  2002; 
+Zhao  et  al.,  2006,  Juraimi  et  al.,  2009),  saturated  soil 
+culture (Juraimi et al., 2010) and aerobic rice cultivation 
+(Bouman,  2003b).  Aerobic 
+rice  cultivation  means 
+growing rice in puddle-less soil without standing water is 
+the  ultimate  approach  to  economize  water  (Anwar  et 
+al.,2010;  Javaid  et  al.,  2012)  and  soil  water  is  kept  at 
+
+field  capacity.  Direct  seeded  rice  reduced  percolation, 
+evaporation 
+losses  and  surface  runoff  (Singh  and 
+Chinnusamy,  2006)  and  saved  significant  amount  water 
+for irrigation (Wang et al., 2002; Zhao et al., 2006). 
+ 
+Rice  seedlings  are  usually  transplanted  after 
+growing  nursery  and  in  puddled  soils  to  avoid  more 
+percolation.  The  puddling  of  rice  fields  besides  its  own 
+benefits  also  degrades  soil  physical  conditions  and 
+creates  problems  for  the  subsequent  upland  crops.  There 
+is dire need of research to establish rice without puddling 
+and  transplanting.  Transplanting  is  expensive,  lengthy 
+and  laborious.  A  rice  establishment  system  is  required 
+which is cost effective and produced paddy yield at par to 
+the conventional transplanting (Ehsanullah et al., 2007).  
+ 
+Direct seeding of rice is an outstanding, efficient 
+substitute  of  transplanting  with  minimum  expenses  and 
+other  related  problems  (Mehmood  et  al.,  2002).  Direct 
+seeded rice also has the same yield potential as compared 
+to  the  conventional  transplanted  rice  with  efficient 
+agronomic  management  strategies  (Ikeda  et  al.,  2008). 
+Direct seeded rice not only save money, time and labour 
+but  also  has  more  seedlings  distributed  uniformly  in  the 
+field (Sarwar et al., 2013). Besides, the benefits of direct 
+seeded rice, many areas need to be explored like nutrient 
+uptake  especially  nitrogen  (Zhang  and  Wang,  2002; 
+
+ 
+
+848 
+
+Jamil et al., 
+
+The J. Anim. Plant Sci. 27(3):2017 
+
+Yadavet  al.,  2007),  weed  management  and  other 
+agronomic issues (Zhao et al., 2006). 
+ 
+Significant high  yields of direct seeded rice can 
+be  obtained  by  applying  optimum  nutrients  at  proper 
+time.  The  cultivation  of  direct  seeded 
+rice  and 
+transplanted rice was compared and concluded that direct 
+seeded  rice  required  proper  management  practices  at 
+proper time to get high yields and nitrogen use efficiency. 
+Strategies  like  balanced  plant  nutrition  involved  site 
+specific  nutrient  management,  timing  and  splitting  of 
+nitrogen must be opted to ensure better yields (Zhang and 
+Wang,  2002).  The  fertilizer  scheme  of  transplanted  rice 
+needs  to  be  re-visited  for  direct  seeded  rice  (Yin  et  al., 
+2004).  Direct  seeded  rice  has  shallow  root  system  and 
+ultimately low N-uptake  would affect the paddy yield. A 
+proper fertilizer scheme for the direct seeded rice should 
+be  followed  for  the  enhanced  paddy  yield  and  proper 
+utilization  of  nitrogen  avoiding  the  losses.  Field  studies 
+(for  three  years)  was  carried  out  to  assess  the  different 
+sowing  techniques  viz.  broadcast,  ridge  and  drill  sowing 
+and  different  fertilizer  rates  on  the  paddy  yield  on 
+moderately salt affected soil. 
+
+MATERIALS AND METHODS 
+
+ 
+Field  experiments  were  conducted  at  Soil 
+Salinity  Research  Institute,  Pindi  Bhattian,  district 
+Hafizabad  during  2010-2012.  The  experimental  site  is 
+placed  on  the  northwestern  border  of  Rechna  Doab  (co-
+ordinates:  73°20′50.2″  E.  31°52′34.2″  N.).  The 
+experimental  site  was  prone  to  salinity  /  sodicity  from 
+year’s having textural class sandy loam and situated at an 
+altitude  of  212  m  above  mean  sea  level  with  mean 
+precipitation  about  500  mm.  Rice-wheat  rotation  is 
+commonly prevails with average rainfall of 500 mm year-
+1  and  phreatic  surface  is  at  2m  depth.  The  average 
+maximum  /  minimum  temperature  and  rainfall  during 
+direct  seeded  rice  crop  growth  period  during  the  entire 
+course of study are presented in Table 1(Ahmad, 2002).  
+Soil samples were analyzed (0-15 cm and 15-30 
+ 
+cm)  to  determine  the  salinity  /  sodicity  level  of  the  field 
+(Table  2).  A  moderately  saline-sodic  field  was  selected, 
+ploughed  and  leveled.  Site  of  the  present  study  was 
+reclaimed  seven  years  earlier  and  followed  rice-wheat 
+rotation  before  conductance  of  experiment.  Experiments 
+comprised of three methods of sowing i.e. ridge, drill and 
+broadcast sowing and five nitrogen levels viz. T1: farmer 
+practices  (80-60  NP  kg  ha-1),  T2:  Recommended  dose 
+(110-90-60 NPK kg ha-1), T3: 75% N of RD, T4: 125% N 
+of RD and T5:150% N of RD laid out in split plot design 
+with  three  repeats.  Rice  cultivar  NIAB-IRRI-9  was  used 
+as test variety. Seeds were sown at 30 cm apart in case of 
+ridges and drill sowing with seed rate @ 37 kg ha-1. Full 
+dose  of  phosphorus  as  SSP  and  potassium  SOP  were 
+applied  at  sowing  time  (on  24th  of  June,  2010  and 
+repeated  in  20th  June  2011  again  repeated  in  27th  June 
+
+2012) while nitrogen as urea in two splits, half at sowing 
+and half after 30 days after sowing. Agronomic practices 
+and  plant  protection  measures  were  kept  uniform.  Soil 
+samples  were  collected  before  sowing  and  after 
+harvesting  of  the  crop  from  depth  of  0-15  cm  and  15-
+30cm for analysis of soil (Table-2). Total numbers of ten 
+irrigations  were  applied  to  direct  seeded  rice  and 
+monitored regularly each year and flooded condition was 
+avoided.  One  spray  of  weedicide  i.e.  Isoproturon  50WP 
+@  500  mL  acre-1  was  applied  on  moist  soil  after  30-35 
+days  of  planting  each  crop.  To  control  the  leaf  folders, 
+insecticide  Confidor  200  SL  (Imidacloprid)  @  300  mL 
+acre-1 and Karate 2.5 EC (lambda-cyhalothrin) @ 300 mL 
+acre-1 was applied to each rice crop. Data regarding yield 
+and  yield  components  were  recorded  at  harvesting 
+(harvesting  dates  for  three  consecutive  years  i.e.  28-10-
+2010, 31-10-2011 and 29-10-2012, respectively). Data of 
+each  parameter  recorded  different  in  each  year  were 
+pooled  and  subjected  to  statistical  analysis.  The  pooled 
+data  were  analyzed  by  analysis  of  variance  (ANOVA) 
+(Steel  et  al.,  1997)  and  differences  among  the  means 
+were compared by applying the Duncan’s multiple range 
+tests (Duncan, 1955).  
+
+RESULTS AND DISCUSSION 
+
+Results  revealed  that  yield  components  like 
+ 
+plant  height,  number  of  tillersm-2,  number  of  grains 
+panicle-1,  panicle  length  and  paddy  yield  increased 
+significantly  with  increasing  nitrogen  rates  (Table  3,  4 
+and Figure 1). While among the sowing techniques, ridge 
+and  drill  sowing  were  found  superior  than  broadcast 
+sowing. 
+ 
+The  highest  level  of  nitrogen  i.e.  150%  N  of 
+recommended  dose  produced  significantly  taller  plants, 
+number  of  tillers  m-2,  panicle  length,  number  of  grains 
+panicle-1  and  resultantly  paddy  yield  than  the  rest  of 
+nitrogen  levels.  Nitrogen  fertilizer  (150%  N  of  RD) 
+produced  maximum  plant  height  (129.8cm),  number  of 
+tillers  (265.0)  plant-1,  number  of  grains  panicle-1  (120), 
+panicle length (29.3cm) and paddy yield (4.46 t ha-1) with 
+ridge sowing technique and at par with 125% N of RD.  
+ 
+Ridge  sowing  exhibited  the  maximum  plant 
+height  (Table  3)  i.e.  113.6  cm  followed  by  drill  sowing 
+i.e. 108.6 cm. Nitrogen levels 150 % RD and 125 % RD 
+were statistically at par and improvement in plant  height 
+than 
+recommended  dose  was  12.6  and  3.29%, 
+respectively. Ridge sowing showed maximum number of 
+tillers  m-2  (Table  3)  i.e.  247.9  followed  by  drill  sowing 
+i.e.  236.4  than  broadcast  i.e.  224.  Percent  increase  in 
+number of tillers than RD with 150 % RD and 125 % RD 
+was 7.17 and 11.44%, respectively. Insufficient supply of 
+nitrogen  demonstrated  poor  plant  height  due  to  less 
+vegetative  growth  and 
+inefficiency  of  chloroplasts 
+(Blumenthal  et  al.,  2008;  Narits,  2010).  Among  the 
+sowing  strategies,  the  ridge  sowing  showed  more  plant 
+
+ 
+
+849 
+
+Jamil et al., 
+
+The J. Anim. Plant Sci. 27(3):2017 
+
+height than other methods because ridge sowing provided 
+better  soil  conditions  and  reduced 
+lodging  while 
+minimum  plant  height  was  observed  with  broadcast 
+method  (Bakht  et  al.,  2011).  The  reduced  tillering  was 
+observed  with  drill  sowing  might  be  due  to  high 
+population  density,  ultimately  competition  for  nutrients 
+and inefficient utilization of nutrients as compared to bed 
+sowing  that  had  higher  tillering  capacity  resultantly 
+paddy yield (Baloch et al., 2007; Ullah et al., 2007; Ikeda 
+et al., 2008). 
+The maximum number of grains panicle-1 (Table 
+ 
+4)  was  produced  with  ridge  sowing  i.e.  109  followed  by 
+drill sowing i.e. 105 that was at par with broadcast i.e. 98. 
+Percent  increase  in  number  of  tillers  was  observed  than 
+RD  with  150%  and  125%  RD  was  10.57  and  6.73%, 
+respectively. The maximum panicle length (Table 4) was 
+recorded  in  ridge  sowing  i.e.  25.58  cm  followed  by  drill 
+sowing  i.e.  23.96  cm  and  followed  by  broadcast  sowing 
+i.e. 20.0 cm. The  maximum panicle length was observed 
+with 150% and 125% N of RD i.e. 26.8 cm and 24.40 cm, 
+respectively.  Our 
+results  corroborated  with  many 
+researchers that increasing trend of nitrogen enhanced the 
+yield  components  regardless  of  sowing  method  used. 
+Application  of  nitrogen  at  high  rates  results  in  higher 
+yield  components  like  number  of  grains  panicle-1and 
+panicle  length  than  lower  rates  might  be  due  to  reduced 
+competition  for  nitrogen  than  other  ordinary  rates  (Jamil 
+and  Hussain,  2000).  Awan  et  al.  (2005)  reported  that 
+panicle grain weight was reduced in direct seeded rice on 
+flat  soil  than  rest  of  sowing  techniques.  Results  showed 
+that all the parameters gradually decreased as the nitrogen 
+levels decreased. 
+ 
+The  paddy  yield  increased  with  the  increasing 
+rates of N (Figure 1). Highest paddy  yield  was observed 
+with  150%  N  and  125%  of  RD  i.e.  4.18  and  4.05  t  ha-1, 
+respectively.  The  ridge  sowing  proved  better  than  drill 
+and broadcast sowing. Ridge sowing exhibited 4.04 t ha-1 
+paddy  yield  followed  by  3.73  t  ha-1  with  drill  sowing. 
+Interaction  effects  between  sowing 
+techniques  and 
+nitrogen  levels  were  found  to  be  significant.  The 
+maximum  paddy  yield  @  150%  N  of  RD  was  due  to 
+more  number  of  grains,  more  number  of  tillers  and 
+panicle  length  resulted  in  more  paddy  yield  than  the 
+remaining  levels  (Manzoor  et  al.,  2006).  The  yield 
+components  viz.  plant  height,  number  of  tillers  m-2, 
+number  of  grains  panicle-1,  panicle  length  and  paddy 
+yield  were registered correlation  with the  nitrogen levels 
+
+regard  of  sowing  methods 
+showed 
+
+and  sowing  techniques  also  the  yield  improvement  by 
+increasing  N  levels  with  ridge  sowing  was  reported  by 
+numerous  researchers  (Awan  et  al.,  2005;  Ullah  et  al., 
+2007; Juraimi et al., 2010; Bakht et al., 2011).  
+ 
+As 
+the  yield 
+parameters 
+that  maximum  plant  height 
+(113.4cm),  number  of  tillers  (247.93m-2)  number  of 
+grains panicle-1 (109), panicle length (25.6cm) and paddy 
+yield  (4.04  t  ha-1)  produced  by  the  ridge  sowing  method 
+as  compared  to  drill  and  broadcast  sowing  method  in 
+saline  sodic  conditions.  Ridge  sowing  proved  to  be 
+superior than other methods because ridges provide better 
+soil  conditions  for  nutrient  acquisition  (Baloch  et  al., 
+2007;  Ullah  et  al.,  2007;  Bakht  et  al.,  2011).  Results 
+revealed  that  direct  seeded  rice  has  been  produced  with 
+ten irrigations and flooding was avoided. Usually flooded 
+rice has been produced with 16-17 irrigations so in direct 
+seeded  rice  6-7  irrigations  have  been  saved.  Literature 
+revealed that about 25% of saving of water was observed 
+(Tuong  and  Bouman,  2003;Bluemlinget  al.,  2007; 
+Bouman et al., 2007; Khan et al., 2009) 
+ 
+The  post-harvest  soil  analysis  was  presented  in 
+(Figure  2,  3  and  4).  Results  regarding  soil  pHs  after 
+harvest  clearly  demonstrated  that  interaction  of  sowing 
+technique and nitrogen levels had not affected the soil pH 
+which  might  be  due  the  buffering  capacity  of  soil. 
+Although  slight  variation  was  observed  in  soil  pHs.  Soil 
+ECe and SAR were reduced under all sowing methods as 
+compared  to  the  soil  initial  status.  Results  demonstrated 
+that  rice  crop  stand  remained  under  moist  /  submerged 
+condition  resultantly  the  soluble  salts  might  have  been 
+dissolved / leached down to free the root zone from salts. 
+The  leaching  of  soluble  salts  reduced  the  ECe  and  SAR 
+and  affected  the  yield  components  positively.  Ridge 
+sowing  improved  the  yield  components  and  reduced  soil 
+chemical properties i.e. ECe and SAR. The supremacy of 
+ridge sowing over drill and flat sowing was also reported 
+(Shafiq et al., 2001; Khan et al., 2004; Khan et al., 2010).  
+ 
+Field studies concluded that the effect of various 
+sowing  techniques,  nitrogen  rates  and  their  interaction 
+was significant on yield components of direct seeded rice. 
+Nitrogen rate @ 150 % N of RD gave the maximum yield 
+which was at par with the 125% N of RD. Among sowing 
+techniques,  ridge  sowing  proved  superior  followed  than 
+drill  and  broad  cast  sowing.  Further  studies  should  be 
+carried out to confer this technology. 
+
+ 
+
+850 
+
+Jamil et al., 
+
+The J. Anim. Plant Sci. 27(3):2017 
+
+Table 1.Meteorological data during the three years (2010-2012) of experiment at Soil Salinity Research Institute, 
+
+Pindi Bhattian 
+
+ 
+Year 
+
+2010-2012 
+
+Month 
+
+Average Low 
+Temperature 
+
+Average High 
+Temperature 
+
+Average Precipitation 
+
+ (mm) 
+
+June 
+July 
+August 
+September 
+October 
+
+(oC) 
+23 
+23 
+22 
+21 
+16 
+
+(oC) 
+39 
+34 
+33 
+33 
+31 
+
+24 
+84 
+81 
+27 
+03 
+
+ 
+Table 2 Pre-sowing soil analysis of the experimental site 
+ 
+S. No. 
+
+Parameters  
+
+Unit 
+
+Depth of soil 
+
+pHs 
+ECe 
+SAR 
+
+1. 
+2. 
+3. 
+ 
+Table 3. Plant height and number of tillers m-2 of direct seeded rice as affected by various sowing techniques in 
+
+(mmol L-1)1/2 
+
+dS m-1 
+
+- 
+
+0-15 cm 
+8.74-8.81 
+4.21- 4.32 
+34.5 – 35.1 
+
+15-30 cm 
+8.61- 8.67 
+4.10- 4.25 
+32.4 - 34.1 
+
+salt affected soils 
+
+ 
+Nitrogen levels 
+(kg NPK ha-1) 
+Ridge 
+T1: Farmer practice (80-60-0 )  100.3fghi 
+115.7c 
+T2: Recommended dose (RD) 
+110- 90-60 
+T3: 75 % N of RD 
+T4: 125 % N of RD 
+T5:150 % N of RD 
+Mean  
+LSD 
+
+Plant height (cm) 
+Drill 
+97.7ghi 
+110.5cde 
+
+Broadcast  Mean 
+96.5C 
+110.5B 
+
+91.6ij* 
+105.4defg 
+
+89.1j 
+
+94.3hi 
+113.6cd 
+126.9ab 
+108.6B 
+
+102.6efgh 
+119.4bc 
+129.8a 
+113.6A 
+LSD (Fertilizer) = 4.6584; LSD (Methods) 
+= 7.1728; LSD (Interaction) = 8.0686 
+
+109.8cdef 
+116.7c 
+102.5B 
+
+95.1C 
+114.1A 
+124.5A 
+
+ 
+
+Number of Tillers m-2 
+
+Ridge 
+227de 
+249c 
+
+Drill 
+220ef 
+234d 
+
+Broadcast  Mean 
+220D 
+234C 
+
+215g 
+220ef 
+
+211fg 
+262b 
+255bc 
+236.4B 
+
+221ef 
+273a 
+265ab 
+247.9A 
+LSD (Fertilizer) =6.4087; LSD (Methods) 
+= 3.5249; LSD (Interaction) = 11.10    
+
+205g 
+249c 
+233d 
+224C 
+
+212E 
+261A 
+251AB 
+
+ 
+
+*Means sharing the same letter(s) in a column do not differ significantly at p<0.05 according to Duncan’s Multiple Range Test  
+ 
+Table  4.Number  of  grains  Panicle-1  and  Panicle  length  of  direct  seeded  rice  as  affected  by  various  sowing 
+
+techniques in salt affected soils 
+
+ 
+Nitrogen levels 
+(kg NPK ha-1) 
+T1: Farmer practice (80-60-0 ) 
+T2: Recommended dose (RD) 
+110- 90-60 
+T3: 75 % N of RD 
+T4: 125 % N of RD 
+T5:150 % N of RD 
+Mean  
+LSD 
+
+Number of grains Panicle-1 
+
+Ridge 
+103defg* 
+110bcd 
+
+Drill 
+100efgh 
+106def 
+
+Broadcast  Mean 
+97 D 
+104C 
+
+89i 
+97gh 
+
+Ridge 
+23.5bcde 
+24.6bcde 
+
+Panicle length (cm) 
+Drill 
+20.7defg 
+22.3cdef 
+
+Broadcast  Mean 
+20.6C 
+22.5BC 
+
+17.7fg 
+20.7defg 
+
+98fgh 
+115abc 
+120a 
+109A 
+
+93hi 
+111bcd 
+117ab 
+105A 
+
+86c 
+
+107cde 
+110bcd 
+98B 
+
+92E 
+111B 
+115A 
+
+ 
+
+LSD (Fertilizer) = 4.1201; LSD (Methods) 
+= 5.5714;  
+LSD (Interaction) = 7.1363 
+
+20.0efg 
+25.1bcd 
+26.7abc 
+23.96B 
+
+16.6g 
+22.3cdef 
+24.4bcde 
+20.0C 
+
+22.7cdef 
+27.8ab 
+29.3a 
+25.58A 
+LSD (Fertilizer) =2.8047; LSD (Methods) 
+= 1.8679;  
+LSD (Interaction) = 4.8578    
+
+19.8C 
+24.4AB 
+26.8A 
+
+ 
+
+*Means sharing the same letter(s) in a column do not differ significantly at p<0.05 according to Duncan’s Multiple Range Test  
+ 
+
+ 
+
+851 
+
+Jamil et al., 
+
+The J. Anim. Plant Sci. 27(3):2017 
+
+Figure 1. Effect of various sowing techniques and N levels on Paddy Yield (t / ha) 
+
+ 
+
+Figure 2. Effect of various sowing techniques on soil pHs in salt affected soils 
+
+ 
+
+ 
+
+Soil ECe (dS m-1) after harvest
+
+T1
+
+ T2
+
+ T3
+
+ T4
+
+ T5
+
+Nitrogen Levels
+
+Ridge sowing
+
+Drill sowing
+
+Broadcast sowing
+
+Figure 3. Effect of various sowing techniques on soil ECe (dS m-1) in salt affected soils 
+
+ 
+
+852 
+
+ 
+
+ 
+
+Jamil et al., 
+
+The J. Anim. Plant Sci. 27(3):2017 
+
+soils
+
+ 
+
+Figure 4. Effect of sowing techniques on soil SAR (mmol L-1)1/2 in salt affected 
+
+ 
+
+REFERENCES 
+
+Ahmad, M.D. (2002). Estimation of net groundwater use 
+in  irrigated  river  basins  using  geo-information 
+techniques:  A  case  study  in  Rechna  Doab, 
+Pakistan  Ph.D.  Thesis,  Wageningen  University, 
+Gelderland, Netherlands 
+
+Anwar,  M.  P.,  A.S.  Juraimi,  A.  Man,  A.  Puteh,  A. 
+Selamat,  M.  Begum  (2010).  Weed  suppressive 
+ability  of  rice  (Oryza  sativa  L.)  germplasm 
+under aerobic soil conditions. Aust. J. Crop Sci., 
+4(9): 706-717. 
+
+Awan,  T.  H.,  I.  Ali,  C.  M.  Anwar,  G.  M.  Sarwar,  C.  M. 
+Ahmad,  Z.  Manzoor  and  M.  Yaqub  (2005). 
+Economic 
+Plant 
+Establishment  Techniques  on  Rice  Production. 
+In: Proc. Int. Seminar on Rice Crop, RRI, KSK, 
+Lahore, Punjab-Pakistan. 2-3, October 2005. pp: 
+226-231. 
+
+of  Different 
+
+Effect 
+
+Bakht,  J.,  M.  Shafi,  H.  Rehman,  Raziudin,  S.  Anwar. 
+2011.  Effect  of  planting  methods  on  growth, 
+phenology and yield of maize varieties. Pakistan 
+J. Bot., 43(3): 1629-1633, 2011.  
+
+Baloch,  M.  S.,  I.  U.  Awan,  G.  Hassan  and  M.  Zubair 
+(2007).  Studies  on  plant  population  and  stand 
+establishment techniques for higher productivity 
+of  rice  in  Dera  Ismail  Khan.  Rice  Sci.,  14  (2): 
+118–124. 
+
+Bluemling,  B.,  H.  Yang,  C.  Pahl-Wostl  (2007).  Making 
+water  productivity  operational—a  concept  of 
+agricultural  water  productivity  exemplified  at  a 
+wheat–maize  cropping  pattern  in  the  North 
+China plain. Agri. Water Manage., 91 (1–3), 11–
+23.  
+
+ 
+
+853 
+
+Blumenthal,  J.M.,  D.D.  Baltensperger,  K.G.  Cassman, 
+S.G.  Mason  and  A.  D.  Pavlista.(2008). 
+Importance  and  effects  of  nitrogen  on  crop 
+quality and health. Published In: Nitrogen in the 
+Environment: 
+and 
+Management, Second Edition. 
+
+Problems, 
+
+Sources, 
+
+Bouman,  B.A.M.  (2003a).  Rice  and  weeds:  the  coming 
+
+crisis. Weed Science, 14(2): 1-6. 
+
+Bouman, B.A.M. (2003b). Examining the water-shortage 
+problem in rice systems:  water saving irrigation 
+technologies.In:  Proc. 
+Inter.  Rice  Res. 
+Conference,  Beijing,  China,  16-19  September 
+(2002).  T.  W.  Mew,  D.  S.  Brar,  S.  Peng,  D. 
+Dawe, B. Hardy (eds), Rice Sci. Innovation and 
+Impact for Livelihood, pp. 519-535. 
+
+Bouman,  B.A.M.,  H.  Wang,  X.Yang,  J.  Zhao,  C.  Wang. 
+(2002).  Aerobic  rice  (Han  Dao):  A  new  way  of 
+growing  rice  in  water-short  areas.  In:  Proc.  of 
+the  12th  Inter.  Soil  Conservation  Organization 
+Conference,  26-31  May  (2002),  Beijing,China. 
+Tsinghua, University Press, pp. 175-181. 
+
+Bouman,  B.A.M.,  Humphreys,  E.,  Tuong,  T.P.,  Barker, 
+R., 2007. Rice and water. Adv. Agron., 92, 187–
+237. 
+
+Ehsanullah,  N.  Akbar,  K.  Jabran  and  T.  Habib  (2007). 
+Comparison  of  different  planting  methods  for 
+optimization  of  plant  population  of  fine  rice 
+(Oryza sativa L.) in Punjab (Pakistan). Pakistan 
+J. Agri. Sci., 44(4), 597-599. 
+
+Ikeda, H., A. Kamoshita, J. Yamagishi, M. Ouk, B.  Lor. 
+(2008).  Assessment  of  management  of  direct 
+seeded  rice  production  under  different  water 
+conditions  in  Cambodia.  Paddy  and  Water 
+Environ., 6: 91-103. 
+
+Jamil et al., 
+
+The J. Anim. Plant Sci. 27(3):2017 
+
+Jamil,  M  and  A.  Hussain.(2000).  Effect  of  different 
+planting  methods and nitrogen levels on  growth 
+and  yield  of  rice  (Basmati-385).  Pakistan  J. 
+Agri. Sci.,37(1-2). 
+
+Javaid,  T.,  I.  U.  Awan,  M.  S.  Baloch,  I.  H.  Shah,  M.  A. 
+Nadim, E. A. Khan, A. A. Khakwani and M. R. 
+Abuzar.  (2012).  Effect  of  planting  methods  on 
+the growth and yield of coarse rice. The J. Anim.  
+Plant Sci., 22(2): 358-362 
+
+Juraimi, A. S., M. Y. M. Najib, M. Begum, A. R. Anuar, 
+A.  Man,  A.  Puteh  (2009).  Critical  period  of 
+weed  competition  in  direct  seeded  rice  under 
+saturated  and  flooded  conditions.  Pertanika  J. 
+Trop. Agric. Sci., 32(2): 305-316. 
+
+Juraimi,  A.S.,  M.  Begum,  M.  N.  M.  Yusuf,  A.  Man. 
+(2010).  Efficacy  of  herbicides  on  the  control 
+weeds  and  productivity  of  direct  seede  rice 
+under  minimal  water  conditions.Plant  Prot.  Q., 
+25(1): 19-25. 
+
+Khan,  M.  J.,  M.  T.  Jan,  A.  U.  Khan,  M.  Arif  and  M. 
+Shafi. (2010). Management of saline sodic soils 
+through  cultural  practices  and  gypsum.Pakistan 
+J. Bot., 42(6): 4143-4155, 2010. 
+
+Khan, M. J., N. Muhammad., M.J. Khan and Irshadullah 
+(2004).  Influence  of  management  practices  and 
+amendments  on  cotton  wheat  cropping  system 
+grown  under  saline  sodic  soil  conditions  at 
+Bannu  basin.  Proceeding  of  the  3rdNational 
+Drainage  Seminar  in  Peshawar,  June  7-8, 
+Pakistan. 
+
+Khan,  S.,  M.  A.  Hanjra  and  J.  Mu  (2009).  Water 
+management  and  crop  production  for  food 
+security 
+in  China:  A  review.  Agri.  Water 
+Manage., 96 (2009) 349–360 
+
+Manzoor,  Z.,  T.  H.  Awan,  M.  A  Zahid  and  F.  A.  Faiz. 
+(2006). Response of rice crop (super basmati) to 
+different  nitrogen  levels.  The  J.  Anim.  Pl.  Sci., 
+16(1-2): 52-55. 
+
+Mehmood,  N.,  Z.A.  Chatha,  B.  Akhtar  and  M.  Saleem 
+(2002).  Response  of  rice  to  different  sowing 
+methods. Asian J. Plant Sci., 1(2):144-145. 
+
+Narits,  L.  (2010).  Effect  of  nitrogen  rate  and  application 
+time to  yield and quality of  winter Oilseed rape 
+(Brassica  napus  L.  Var.  oleiferasubvarbiennis). 
+Jogiva  plant  Breeding  Institute;  Aamisepa  1, 
+48309  Jogeva,  Estonia;  Agron.  Res.,  8  (Special 
+Issue 111), 671-686.  
+
+Sarwar,  N.,  H.  Ali,  A.  Ahmad,  E.  Ullah,  S.  Ahmad,  K. 
+Mubeen  and  J.  E.  Hill.  (2013).  Water  wise  rice 
+cultivation  on  calcareous  soil  with  the  addition 
+of  essential  micronutrients.  The  J.  Anim.  Plant 
+Sci., 23(1):244-250 
+
+Shafiq, M., I. Hussain. S. Ahmad and Z. Hussain. (2001). 
+Spatial variability of soil salinity/sodicity and its 
+effect  on  maize  crop.  Pakistan  J.  Biol.  Sci.,  4: 
+193-196. 
+
+ 
+
+854 
+
+Singh,  A.K.,  and  V.  Chinnusamy.  (2006).  Aerobic  Rice: 
+Prospects  for  Enhancing  Water  Productivity. 
+Indian Farming, October (2006). 
+
+Steel,  R.G.D.  and  J.H.  Torrie  and  D.A.  Dickey.(1997). 
+Principles  and  procedures  of  Statistics-  A 
+biometrical  Approach.3nd  ed.  McGraw  Hill  Co. 
+Inc. NY. PP 400-428. 
+
+Stoop,  W.,  N.  Uphoff  and  A.  Kassam.  (2002).  A  review 
+of  agricultural  research  issues  raised  by  system 
+of  rice  intensification  (SRI)  from  Madagascar: 
+opportunities for improving farming systems for 
+resource-poor farmers. Agric. Syst., 71: 249-274. 
+Tabbal,  D.  F.,  B.  A.  M.  Bouman,  S.  I.  Bhuiyan,  E.  B.  
+Sibayan  and  M.  A.  Sattar.(2002).  On-farm 
+strategies  for  reducing  water  input  in  irrigated 
+rice; case studies in the Philippines.Agric. Water 
+Manage, 56: 93-112. 
+
+Tuong,  T.  P.,  and  B.  A.  M.  Bouman.(2003).  Rice 
+in  water-scarce  environments.In: 
+production 
+Proceedings 
+the  Water  Productivity 
+Workshop.  12-14  November  (2001).  Colombo, 
+Sri  Lanka.  International  Water  Management 
+Institute. Colombo, Sri Lanka. 
+
+of 
+
+Ullah,  M.  A.,  S.  A.  R.  Zaid,  A.  Razzaq  and  S.D.H. 
+Bokhari  (2007).  Effect  of  Planting  Techniques 
+(Direct  seeding  vs.  Transplanting)  on  Paddy 
+Yield in Salt-affected Soil. Int. J. Agri. Biol.,09 
+(1)179–180. 
+
+Wang, H. Q., B.A.M. Bouman, D. L. Zhao, C. Wang and 
+P.  F.  Moya.  (2002).  Aerobic  rice  in  northern 
+In: 
+China:  Opportunities  and  challenges. 
+Bouman  B.A.M.,  H.  Hengsdijk,  B.  Hardy,  P.S. 
+Bindraban,  T.  P.  Tuong,  J.  K.  Ladha  (Eds), 
+Water-wise  rice  production.  Proceedings  of  the 
+International  Workshop  on  Water-wise  Rice 
+Production,  8-11  April  (2002).  Los  Baños, 
+Philippines. 
+(Phlippines): 
+International Rice Res. Institute, pp. 143-154. 
+
+Baños 
+
+Los 
+
+Yadav,  S.,  M.  S.  Gill  and  S.  S.  Kukal.(2007). 
+Performance  of  direct-seeded  basmati  rice  in 
+loamy  sand  in  semi-arid  sub-tropical India.  Soil 
+& Till. Res., 97: 229-238. 
+
+Yin,  X.  Y.,  Y.  C.  Xu,  Q.  R.  Shen,  C.  L.  Zhou  and  K. 
+Dittert.  (2004).  Absorption  and  apparent  budget 
+of  nitrogen  by  direct-seeding  rice  cultivated  in 
+aerobic  soil  with  or  without  mulching.  Acta 
+Ecol. Sin., 24: 1575-1581. 
+
+Zhang,  Q.C.  and  G.  H.  Wang  (2002).  Optimal  nitrogen 
+application for direct seeding early rice. Chinese 
+J. Rice Sci., 16: 346-350. 
+
+Zhao, D.L., G. N. Atlin, L. Bastiaans, and J. H. J. Spiertz. 
+(2006). Developing selection protocols for weed 
+competitiveness  in  aerobic  rice.  Field  Crops 
+Res., 97: 272-285 
+
+

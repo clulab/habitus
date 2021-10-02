@@ -1,0 +1,1292 @@
+See discussions, stats, and author profiles for this publication at: https://www.researchgate.net/publication/348270685
+
+Status of Rice Cultivation and Breeding in Senegal
+
+Article  in  Journal of the Korean Society of International Agriculture · December 2020
+
+DOI: 10.12719/KSIA.2020.32.4.381
+
+CITATIONS
+0
+
+8 authors, including:
+
+READS
+117
+
+Faye Omar Ndaw
+Institut Sénégalais de Recherches Agricoles ISRA
+
+12 PUBLICATIONS   6 CITATIONS   
+
+SEE PROFILE
+
+Kyung-Ho Kang
+National Institute of Crop Science
+
+17 PUBLICATIONS   37 CITATIONS   
+
+SEE PROFILE
+
+Some of the authors of this publication are also working on these related projects:
+
+Sélection assistée par marqueurs de riz pour la teneur en arôme et amylose, la tolérance à la salinité et au froid dans la Vallée du Fleuve Sénégal View project
+
+All content following this page was uploaded by Faye Omar Ndaw on 11 January 2021.
+
+The user has requested enhancement of the downloaded file.
+
+韓國際農誌(J.  Korean  Soc.  Int.  Agric.),  32(4): 381~389(2020)
+https://doi.org/10.12719/KSIA.2020.32.4.381 
+ISSN  1225-8504  (Print)
+ISSN  2287-8165  (Online)
+
+Status of Rice Cultivation and Breeding in Senegal
+
+ Omar Ndaw Faye*, Mamadou Sock**, Jeong-Ho OH**, Woo-Jae Kim***, Jeong-Ran Lee***, 
+
+Eok-Keun Ahn****, Baboucarr Manneh**, and Kyung-Ho Kang****†
+
+* Senegalese Institute of Agricultural Research, B.P.240, Saint-Louis, Sénégal, 
+
+** AfricaRice Sahel Regional Center, B.P. 96, Saint-Louis, Sénégal
+
+*** International Technology Cooperation Center, RDA, ****National Institute of Crop Science, RDA
+
+세네갈의
+
+벼
+
+재배
+
+및
+
+육종
+
+현황
+
+Omar  N.  Faye*  ·  Mamadou  Sock**  ·  오정호**  ·  김우재***  ·  이정란***  ·  안억근****  · 
+
+Baboucarr  Manneh**  ·  강경호****†
+
+*세네갈농업연구청,  B.P.  240,  세네갈,  생루이,  **아프리카벼연구소  사헬지역센타,  B.P.  96,  세네갈,  생루이
+
+***농촌진흥청  기술협력국,  국제기술협력과,  ****농촌진흥청  국립식량과학원,  중부작물부  중부작물과
+
+ABSTRACT: Rice consumption in Senegal is rapidly increasing due to consumer preferences for rice
+and urbanization. Despite having a great potential to increase rice production on account of its vast irri-
+gated areas in the Senegal River Valley and the rainfed and upland areas in the Casamance region, Sen-
+egal still relies on imported rice to supplement around 44% of rice demand in a year. Rice production in
+Senegal has been heavily affected by several biological and institutional constraints, including drought,
+salt, cold, iron toxicity, and diseases and pest. In terms of rice research and development, Senegal has a
+well-established  rice  breeding  system  for  varietal  development  and  releasing  them  to  farmers.  Since
+1994, the country has developed a total of 60 rice varieties in collaboration with international organiza-
+tions. However, for further improvement of grain yield and quality, this paper proposes the use of Japon-
+ica germplasm based on the empirical evidence from the green revolution of IRRI and Korea.
+
+Key words: Rice breeding, Senegal, KAFACI, Tongil-type rice
+
+INTRODUCTION
+
+enegal is one of the countries in West Africa with the
+S
+higher  rice  production  and  consumption  levels  across
+the  African  continent  along  with  Nigeria,  Guinea,  Cote
+d’Ivoire, Sierra Leone, and Mali. The country is bordered
+by Guinea-Bissau, Mali, and Mauritania and surrounds its
+much smaller Anglophone neighbor, Gambia (World bank,
+
+†
+Corresponding author
+(Phone) +82-031-695-4022
+(E-mail) khkang@korea.kr
+<Received Sep. 12, 2020 / Revised Nov. 10, 2020 / Accepted Nov. 20, 2020>
+
+2019).  As  a  Sahelian  country,  Senegal  is  associated  with
+semi-arid and high temperatures due to its proximity to the
+Sahara Desert. Agriculture is the main industry which sup-
+ports 73.8% of the households but contributes only 7.6% to
+its  GDP  (ANDS,  2014;  ANDS,  2017).  The  major  staple
+food crops are rice, millet, corn, and sorghum while indus-
+trial cash crops include peanut, cotton, cassava, cowpea and
+sesame. 
+
+Since the 1980s, rice consumption has surpassed the con-
+sumption  of  more  traditional  crops  such  as  sorghum  and
+millet  in  Senegal  (Colen  et  al.,  2013).  To  meet  the  rapid
+increasing demand, Senegal relies heavily on imported rice.
+For  example,  in  2019,  Senegal  imported  957,222  tons  of
+
+ⓒ  본  학회지의  저작권은  한국국제농업개발학회에  있으며,  이의  무단전재나  복제를  금합니다.
+
+This  is  an  Open-Access  article  distributed  under  the  terms  of  the  Creative  Commons  Attribution  Non-Commercial  License  (http://creativecommons.org/licenses/by-nc/3.0)  which
+
+permits  unrestricted  non-commercial  use,  distribution,  and  reproduction  in  any  medium,  provided  the  original  work  is  properly  cited
+
+381
+
+ 
+ 
+ 
+ 
+ 
+382
+
+韓國際農誌(J.  Korean  Soc.  Int.  Agric.),  32(4),  2020
+
+rice (MAER 2020; ANDS 2020), which represents about
+44%  of  Senegalese  rice  demand  in  a  year.  The  rapid
+increase  in  rice  demand  is  attributed  to  changes  in  con-
+sumer  preferences  and  urbanization  (AfricaRice,  2011).
+Migration  of  rural  people  to  the  towns  and  cities  caused
+changes in diets from those based on other cereals or root
+crops  to  rice  (Hossain,  2007).  The  convenience  of  rice
+storage, low preparation cost, as well as the ease and short
+time of cooking rice are among the key attributes spurring
+rice consumption. Working women have less time for food
+preparation  and  have  a  tendency  towards  convenience
+sources of calories (Reardon, 1993). Considering the advan-
+tages of rice as the convenient and tasty food, its consump-
+tion is projected to continue to rise in the future. 
+
+Faced with the shortage of rice supply to meet the local
+demand and high dependence on imported rice, the Sene-
+galese  government  has  implemented  several  programs
+such  as  GOANA(Grande  offensive  pour  la  nourriture  et
+l’abondance) in 2008 and PRACAS (Programme d’accel-
+eration  de  la  cadence  de  l’agriculture)  in  2013  with  the
+ambitious  objective  of  achieving  self-sufficiency  in  rice
+production  (PRACAS,  2013).  However,  there  have  been
+critiques  that  many  large  scale  irrigation  programs  have
+focuses  primarily  on  extension  of  rice  area  and  failed  to
+improve  rice  productivity  (Diagne  et  al.,  2013).  Demont
+and  Rizzoto  (2012)  recommended  upgrading  of  the  rice
+value chains through investments in post-harvest product-
+quality  infrastructure,  scaling-up  of  quality  produce  by
+investment  in  infrastructure,  and  adoption  of  sector-wide
+marketing  strategies  that  enhance  the  chain  competitive-
+ness of domestic relative to imported rice. He also pointed
+out that increased supply will exist only if there is enough
+demand to absorb the product and if the product character-
+istics fit the demand preferences. Creating an environment
+for improved commercialization of rice will lead to a large
+demand for rice in urban markets and ensuring the increased
+development of the rice supply chain in Senegal (Colen et
+al.,  2013).  So  the  main  challenges  to  rice  production  in
+Senegal  are  :  1)  how  to  improve  the  quality  of  domestic
+rice and 2) how to improve production and marketing mar-
+gins by modernizing production, processing and marketing
+of  domestic  rice  to  satisfy  the  producers,  processors  and
+consumers. 
+
+Therefore, both upgrading rice quality as well as enhanced
+productivity at the same times would be the most import-
+ant factors to create the virtuous cycle from rice production
+in  rural  areas  to  marketing  in  the  urban  areas.  However,
+breeding  has  been  the  primary  source  of  technological
+changes  because  it  provides  the  most  sustainable  way  to
+increase rice production and quality via genetic improve-
+ment (Fisher, 2015).
+
+Rice breeding in South Korea have made breakthrough
+in yield potential that occurred from modifying the exist-
+ing  high  yield  plant  types  to  improve  biomass,  harvest
+index, reaching 7~8 tons/ha in polished rice. This is done
+by  formulating  prototypes  of  semi  dwarf  rice  cultivars
+called ‘Tongil-type’ through wide crosses between indica
+and  japonica  cultivars  (Osman  et  al.,  2020).  With  the
+releases  of  Tongil-type  cultivars,  Korea  has  attained  self-
+sufficiency  in  rice  production  to  date.  Therefore,  Tongil-
+type breeding strategy played a fundamental role to trigger
+the  enhancement  of  rice  productivity  in  Korea  and  this
+could be applied to African situation.
+
+After  Korea’s  experiences  with  Tongil-type  rice  variet-
+ies, the Korea Africa Food Agriculture Cooperation Initia-
+tive  (KAFACI)  launched  a  rice  breeding  programme  to
+assist  19  African  partner  countries  including  Senegal  in
+rice breeding. In this report, we reviewed the rice cultiva-
+tion  and  breeding  status  to  get  the  basic  information  for
+implementation  of  the  KAFACI  rice  breeding  project  in
+Senegal.
+
+RICE CULTIVATION AND 
+
+CONSTRAINTS IN SENEGAL
+
+West  Africa  has  a  long  history  of  rice  (O.glaberrima)
+cultivation  for  2,000~3,000  years.  Still  O.glaberrima  is
+being  cultivated  in  Guinea  Bissau,  Guinea,  Sierra  Leone
+and Casamance region of southern Senegal (Olga, 2002).
+Currently,  O.  glaberrima  is  fast  being  replaced  by  Asian
+varieties.  In  Senegal,  high-yielding  Sahel  rice  varieties
+were first introduced in 1994 and widely adopted by farm-
+ers especially in the irrigated regions of the Senegal River
+Valley.  The  country  produces  rice  in  two  different  areas:
+the  irrigated  Senegal  River  Valley  (SRV)  in  the  northern
+part,  and  the  rainfed  Casamance  in  southern  region  (Fig.
+1). SRV is the principal rice production region which has
+around  240,000  ha  of  the  irrigated  production  systems,
+enabling  double  cropping  and  harvesting  twice  a  year  in
+the region. The SRV has two rice production seasons: the
+dry  hot  season  (mid  Fab/mid~March  June/July)  and  the
+rainy  season  (July~November).  The  dry  season  has  high
+solar  radiation  and  arid  condition  which  is  favorable  for
+rice production. The average rice yields were around 6.4 t/
+ha in the dry season, versus 5.5 t/ha in the wet season for
+the 2003~2010 period (USAID, 2016). Farmers in the SRV
+have access to tractors and other farm equipment and gen-
+erally  cultivate  on  a  larger  area  and  farm  sizes  vary
+between 0.25~2ha (USDA, 2018). The SRV accounted for
+44%  of  the  total  national  rice  production  areas  over  the
+period  of  2007~2011,  and  almost  70%  of  national  rice
+quantity (SAED, 2013).
+
+Status  of  Rice  Cultivation  and  Breeding  in  Senegal
+
+383
+
+Fig. 1. Irrigated and rainfed rice cultivation areas in Senegal
+
+The southern, central, eastern regions (Casamance, Fatic
+and  Kaolock)  are  the  rainfed  lowland  (bas-fond)  and
+upland areas which form the largest rice cultivation areas
+with more than 400,000 ha in Senegal. Upland and rainfed
+lowland  rice  areas  grown  as  a  mono-crop.  Rice  is  culti-
+vated  on  very  small  farms  size  with  less  than  0.1ha  with
+little fertilizer application and without adequate tools and
+appropriate  farm  machinery  for  land  preparation,  trans-
+planting,  harvesting  and  post-harvest  etc.  Rice  yields  are
+much lower at 1~2 t/ha compared to the SRV, contributing
+only 30% of national rice production (USDA, 2018). 
+
+Around 25~30% of rice produced in the SRV are com-
+mercially  distributed  to  other  cities,  whereas  rice  that  is
+produced in the Casamance is primarily grown for subsis-
+tence  purposes  and  very  little  rice  is  distributed  to  other
+regions  or  major  cities  outside  the  Casamance  (USDA,
+2018). Therefore, the SRV region has been the virtual tar-
+get for attaining  the  self-sufficiency in rice  production as
+well as raising the competitiveness of domestic rice. 
+
+The main constraints to rice cultivation differ from one
+rice ecologies to the other. In the rainfed ecology, drought,
+iron toxicity, and pest and diseases constitute the main con-
+straints,  whereas  salinity,  low  temperature,  bird  and  pest
+are the main threats in the irrigated ecology. Atsuko et al
+(2015)  found  out  that  there  was  substantial  yield  gap
+between potential and actual yield obtained by farmers in
+irrigated rice production in the SRV. The sub-optimal weed
+and  fertilizer  management,  delayed  sowing  and  late  har-
+vesting,  bird-control  are  the  major  causes  of  yield  gaps.
+
+Mean rice yields over nine years were 5.0 and 5.6 t/ha in
+the  Delta  and  Middle  Valley  of  the  SRV,  respectively,
+while  mean  attainable  yields  of  upper  10  percentile  were
+7.2 and 8.6 t/ha, respectively. Yield gap between attainable
+yield and mean yield was 2.2~3 t/ha.
+
+As  observed  in  other  African  countries,  there  are  enor-
+mous potential for increasing productivity in Senegal, con-
+sidering  the  vast  rice  areas  and  the  favorable  climate
+conditions.  However,  currently  there  are  huge  challenges
+to overcome biological and institutional constraints in Sen-
+egal which prevent farmers from intensive rice production
+include land preparation, labor, seed quality, fertilizer pro-
+vision, herbicides, credit, varieties, bird control, weed con-
+trol (Mandiaye et al., 2013).
+
+RICE BREEDING AND PRODUCT 
+
+PROFILES IN SENEGAL
+
+Agricultural research has a long history in Senegal. Sen-
+egal  was  the  headquarters  for  agricultural  research  in
+French  West  Africa  for  almost  50  years  starting  in  1921.
+From 1921 to 1974, research was in the hands of special-
+ized French inistitutions. In 1974, the national agricultural
+research institute (ISRA) was created (Tom, 1990). Since
+then,  ISRA  have  conducted  the  rice  improvement  pro-
+grams through the numerous assistance programs of inter-
+national organizations. The primary international organizations
+were IRAT (Institute de Recherche Agronomique Tropicale),
+CIRAD (Ceneter de cooperation Internationale en Recher-
+
+384
+
+韓國際農誌(J.  Korean  Soc.  Int.  Agric.),  32(4),  2020
+
+Table 1. Details of rice varieties released in Senegal since 1994 
+
+Varieties
+
+Growth duration 
+
+(days)
+
+Yield 
+(t/ha)
+
+Origin*
+
+Varieties
+
+Growth duration 
+
+(days)
+
+Yield
+(t/ha)
+
+Origin*
+
+1994 Irrigated
+
+1998 Irrigated
+
+Sahel 108
+Sahel 201
+Sahel 202
+I Kong Pao
+IR 1529-68O-3
+IR8(-2883) 
+JAYA 
+KH 998
+Kwang She Shung
+IR 442
+
+DJ 684 D
+DJ 11-509
+DJ 12-519
+
+IRAT1O 
+DJ 8-341
+
+108
+120
+117
+110
+120
+120
+120
+120
+105
+120
+
+1994 lowland
+
+120
+100
+105
+
+1994 Upland
+100
+100
+
+1995 Irrigated
+
+Sahel 317
+
+122
+
+1997 Irrigated
+
+Sahel 222
+Sahel 328**
+Sahel 329**
+NERICA-S-19
+NERICA-S-21
+
+TOX 728-1
+WAR 1 
+WAR 77-3-2-2
+WAR 81-2-1-3-2
+ROK 5
+BR 51-46-5
+BG 90-2
+BW 248-1
+ITA 123
+
+103
+116
+110
+105
+105
+
+1997 Lowland
+
+105
+120
+120
+120
+120
+120
+120
+125
+120
+
+7.5
+8
+8
+7
+8
+8
+8
+8.5
+8
+8
+
+5.5
+4.5
+4.5
+
+5.5
+4
+
+7.5
+
+7.5
+6.5
+7
+7.5
+7.5
+
+6.5
+5
+3
+3
+3
+5
+8
+6
+7
+
+IRRI
+
+Sri Lanka
+
+IITA
+Taiwan
+IRRI
+IRRI
+India
+India
+China
+IRRI
+
+ISRA
+ISRA
+ISRA
+
+IRAT
+ISRA
+
+AfricaRice
+
+AfricaRice
+AfricaRice
+AfricaRice
+AfricaRice
+AfricaRice
+
+IITA
+
+AfricaRice
+AfricaRice
+AfricaRice
+Sierra Leone
+Bangaldesh
+Sri Lanka
+Sri Lanka
+
+IITA
+
+Sahel 177**
+
+NERICA-S-36
+
+NERICA-S-44
+
+122
+
+122
+
+122
+
+Sahel 134
+
+Sahel 159
+
+Sahel 208
+
+Sahel 209
+
+Sahel 210
+
+Sahel 217
+
+Sahel 305
+
+ITA 150
+
+WAB 56-50
+
+NERICA 1
+
+NERICA 5
+
+NERICA 6
+
+ISRIZ 01**
+
+ISRIZ 02**
+
+ISRIZ 03**
+
+ISRIZ 04
+
+ISRIZ 05
+
+ISRIZ 06
+
+ISRIZ 07**
+
+ISRIZ 08**
+
+ISRIZ 09 H**
+
+ISRIZ 10
+
+ISRIZ 11
+
+ISRIZ 12
+
+ISRIZ 13
+
+ISRIZ 14
+
+ISRIZ 15
+
+2007 Irrigated
+
+110
+
+109
+
+125
+
+120
+
+120
+
+2009 Irrigated
+
+120
+
+124
+
+2009 Upland
+
+110
+
+100
+
+95
+
+90
+
+95
+
+2017 Irrigated
+
+90
+
+90
+
+90
+
+92
+
+104
+
+110
+
+110
+
+100
+
+110
+
+122
+
+110
+
+110
+
+115
+
+115
+
+112
+
+7.5
+
+7.5
+
+7.5
+
+7.5
+
+7.5
+
+8
+
+8
+
+8
+
+8
+
+8
+
+4
+
+4
+
+AfricaRice
+
+AfricaRice
+
+AfricaRice
+
+IRRI
+
+IRRI
+
+IITA
+
+IITA
+
+Latin America
+
+AfricaRice
+
+AfricaRice
+
+IITA
+
+AfricaRice
+
+4.5
+
+AfricaRice
+
+4
+
+5
+
+8.5
+
+8.5
+
+8.6
+
+8.5
+
+8.5
+
+7.5
+
+7.5
+
+7
+
+9
+
+7
+
+7
+
+8
+
+9
+
+9
+
+8
+
+AfricaRice
+
+AfricaRice
+
+ISRA
+
+ISRA
+
+ISRA
+
+Korea
+
+Korea
+
+Korea
+
+Korea
+
+Pakistan
+
+AfricaRice
+
+AfricaRice
+
+IRRI
+
+China
+
+AfricaRice
+
+AfricaRice
+
+Embrapa
+
+*  IRRI(International  Rice  Research  Institute),  IITA(International  Institute  of  Tropical  Agriculture),  IRAT(Institute  de  Recherche
+Agronomique Tropicale), ISRA(Senegalese Agricultural Research Institute)
+** Aromatic rices
+
+Status  of  Rice  Cultivation  and  Breeding  in  Senegal
+
+385
+
+che  Agronomicque  pour  la  Developpement),  WARDA
+(West Africa Rice Development Association), IITA (Inter-
+national Institute for Tropical Agriculture) and IRRI (Inter-
+national Rice Research Institute). 
+
+The  current  rice  varietal  development  and  release  sys-
+tems are as follows: CGIAR research centers provide the
+rice  germplasm  and  varieties  for  use  as  varietal  develop-
+ment  in  Senegal.  Also  ISRA  has  its  own  rice  breeding
+team creating the basic breeding population for the diverse
+ecologies  of  Senegal  with  the  single  seed  descent  (SSD)
+and the molecular marker-aided selection. ISRA conducts
+the advanced yield trials (AYT) for two years at ISRA and
+selects the elite lines. To shorten the varietal development
+time,  the  National  Performance  Test  (NPT)  is  conducted
+for the elite selections at the farmer’s field at the same time
+with AYT. At the end of 2 year’s AYT and NPT tests, the
+best selections are registered as new rice varieties in Sene-
+gal  and  the  showcase  trial  is  conducted  for  1  year  with
+farmer’s  association,  seed  companies,  extension  service
+participated.  After  new  rice  varieties  are  approved  for
+commercialization,  ISRA  produces  foundation  seeds  and
+contracts out to farmer unions or other businesses for seed
+multiplication.  After  multiplication,  first  generation  (R1)
+and  second  generation  (R2)  seeds  are  sold  as  certified
+seeds. The seed department in the ministry of agriculture
+certifies seeds after receiving  test results from seed  treat-
+ment centers (STC) in the Senegal River Valley and in the
+Casamance.
+
+As results, the 60 rice varieties including 9 aromatic and
+1  hybrid  rice  were  developed  and  released  since  1994
+(Table 1). Among them, AfricaRice contributed to the 22
+rice  varietal  development  in  Senegal,  followed  by  IRRI
+(7),  IITA(6),  and  IRAT(1).  The  foreign  national  research
+institutes  of  Sri  Lanka,  India,  China,  Korea,  Pakistan,
+Sierra Leone, Bangladesh, and Brazil also greatly contrib-
+uted  to  the  development  of  17  high-yielding  varieties  in
+Senegal while ISRA developed 7 varieties. 
+
+Also  the  60  varieties  were  well  characterized  for  specific
+ecosystem in Senegal: 41 varieties (68.3%) were released for
+the  irrigated  ecology,  followed  by  12  varieties  for  lowland
+
+(20%) and 7 varieties for upland (11.6%) (Table 1 and 2). 
+
+The results indicate that rice varietal improvement initia-
+tives  in  Senegal  were  more  concentrated  in  the  irrigated
+areas compared to the rainfed ecologies after the release of
+NERICA varieties. Hence there is need for concerted efforts
+to increase investments in the rice breeding program for the
+rainfed areas in the future. 
+
+This  biased  varietal  development  towards  the  irrigated
+areas may be related with the government policy in Sene-
+gal. The government’s goal in rice sector has been attain-
+ing the self-sufficiency of rice production as well as raising
+the  competitiveness  of  domestic  rice.  Therefore,  the  irri-
+gated ecology in the SRV, which has more favorable condi-
+tions to increase rice productivity compared to the lowland
+or  upland  in  the  Casamance  region,  has  been  the  main
+focus for investment in releasing high-yielding quality rice
+varieties.  The  CGIAR  centers  and  other  countries  gener-
+ally  have  been  developing  the  high-yielding  Asian  rice
+varieties mainly for the irrigated ecology in the past green
+revolution era, and ISRA selected the high-yielding variet-
+ies focusing in the irrigated Senegal River Valley. As Mare-
+dia  et  al.  (1999)  argued,  many  research  and  development
+systems  are  biased  towards  crops  and  varieties  demanded
+by  the  more  commercial  or  elite  farmers.  Breeding  and
+varietal release procedures followed by the national agricul-
+tural  research  institutes  may  not  lead  to  the  development
+and  availability  of  a  broad  range  of  varieties  to  meet  the
+needs of all seed users, especially smallholder subsistence
+farmers (Tripp, 1994). 
+
+It  is  also  noteworthy  that  the  mean  paddy  rice  yield
+greatly differed in the three different ecologies of irrigated,
+lowland and upland (Table 3). 
+
+The irrigated rice group averaged 7.8 t/ha, out yielding
+the lowland (5.1 t/ha) and the upland (4.4 t/ha). However,
+it did not make any significant difference between the two
+different maturity groups. In the irrigated rice group (Table
+2),  the  early  maturing  rice  varieties  with  90~110  days  of
+growth duration, had the mean yield of 7.8 t/ha, which is
+almost same with 7.9 t/ha in the late maturing group with
+110~120  days  of  growth  duration.  This  was  the  case  in
+
+Table 2. Rice varieties released in the ecologies of Senegal since 1994
+
+Ecology
+
+Irrigated 
+(41)
+
+Lowland
+(12)
+Upland (7)
+
+Variety names
+
+ISRIZ01, ISRIZ02, ISRIZ03, ISRIZ04, ISRIZ05, ISRIZ06, ISRIZ07, ISRIZ08, ISRIZ09H, ISRIZ11, ISRIZ12, Sahel108, 
+Sahel134, Sahel159, Sahel222, Sahel329, NERICA-S-19, NERICA-S-2, I Kong Pao, Kwang She Shung, ISRIZ10, ISRIZ13, 
+ISRIZ14, ISRIZ15, Sahel177, Sahel201, Sahel202, Sahel208, Sahel209, Sahel210, Sahel217, Sahel305, Sahel317,Sahel328, 
+NERICA-S-36, NERICA-S-44, IR1529-68O-3, IR8, IR442, JAYA, KH 998 
+DJ11-509, DJ12-519, TOX 728-1, Dj 684D, WAR1, WAR 77-3-2-2, WAR 81-2-1-3-2, ROK 5, BR 51-46-5, BG 90-2, BW 
+248-1, ITA 123 
+IRAT 1O, DJ 8-341, ITA 150, WAB56-50, NERICA 1, NERICA 5, NERICA 6 
+
+386
+
+韓國際農誌(J.  Korean  Soc.  Int.  Agric.),  32(4),  2020
+
+Table 3. Mean yields of rice varieties and growth duration in Senegal
+
+Ecology
+
+Paddy rice yield and growth duration* (t/ha)
+
+Early maturing (90-110days)
+
+Late maturing (110-125days)
+
+Average yield
+
+Irrigated
+
+Lowland
+
+Upland
+
+Total
+
+Mean±S.D.
+
+Range
+
+Mean±S.D.
+
+Range
+
+Mean±S.D.
+
+range
+
+Mean±S.D.
+
+range
+
+7.8±0.6
+7.0-9.0
+5.2±0.9
+4.5-6.5
+4.4±0.6
+4.0-5.5
+6.7±1.6
+4.0-9.0
+
+* Growth duration is based on days from transplanting to harvest
+
+lowland rice with 5.2 t/ha with early maturing group ver-
+sus 5.1 t/ha with late maturing group. 
+
+The early maturity combined with high yielding poten-
+tial  would  have  been  the  top  priority  to  rice  breeders  of
+Senegal,  considering  the  importance  of  the  double  crop-
+ping. In Senegal, delayed sowing due to the cold tempera-
+ture in February and the erratic rainfall in July is the main
+cause for the failure in the practice of the double cropping
+system  in  the  SRV,  and  short-growth  duration  is  the  best
+solution to overcome the delayed sowing in the SRV. Oort
+(2016) reported that at optimal sowing dates, simulated total
+long term average potential yields of single, double and tri-
+ple  cropping  yields  were  10.3,  19.0  and  18.9  t/ha,  respec-
+tively. With a hypothetical completely cold tolerant variety,
+yields could increase to 11.2, 20.2 and 20.9, respectively. 
+
+As observed across the Africa continent, farmers prefer
+the  early  maturing  varieties  because  the  earliness  of  rice
+can reduce chances for long exposure to the damages from
+various stresses such as high temperature, drought, flood-
+ing,  weeds,  and  salt,  and  earliness  also  allows  saving  the
+inputs such as labor, water, and cost during rice cultivation
+period. 
+
+However,  the  early  maturing  rice  generally  are  less
+yielding compared to the late maturing rice. Therefore, the
+rice  breeding  accomplishments  for  early  maturing  rice
+varieties with high yielding capacity in Senegal (Table 3) are
+very  remarkable.  Especially,  among  15  varieties  (ISRIZ
+1~ISRIZ 15) released in 2017, 11 varieties are early maturing
+varieties with the ranges of 7~9 t/ha of rice yields, which is
+comparable  to  the  late  maturing  rice  (Table  1).  Also  the
+striking breeding advancement was made in the aromatic
+rice development in 2017. The 7 among 15 varieties were
+the  aromatic  rice  with  early  maturity  and  high  yielding
+(Table 1). Considering the strong demand for the aromatic
+rice of consumers, locally produced aromatic rice will play
+
+7.9±0.5
+6.5-9.0
+5.1±1.7
+3.0-8.0
+
+-
+-
+
+7.1±1.7
+3.0-9.0
+
+7.8±0.6
+6.5-9.0
+5.1±1.7
+3.0-8.0
+4.4±0.6
+4.0-5.5
+6.9±1.7
+3.0-9.0
+
+quite  an  important  role  to  increase  rice  production  and
+raise  the  competitiveness  with  the  imported  rice  in  the
+markets.  The  nine  fragrant  rice  varieties  bred  are  Sahel
+177, Sahel 328, Sahel 329, ISRIZ 01, ISRIZ 02, ISRIZ 03,
+ISRIZ 07, ISRI O8, and ISRIZ 09 are likely to be the entry
+points for the virtuous cycle in domestic value chains and
+further replacing imports with domestic rice. 
+
+In Senegal, about 45 varieties of rice have been popular-
+ized throughout the country from the 1970s to date while
+in  the  Senegal  River  valley,  19  varieties  of  irrigated  rice
+varieties  have  been  approved  since  1994.  However,  only
+five  varieties  are  predominantly  grown  in  the  farmer’s
+fields, namely Sahel 108, Sahel 134, and Sahel 177 for the
+SRV  areas  among  which  Sahel  108  is  known  to  occupy
+around 70% of the SRV. In the rainfed areas, Nerica 4 and
+DJ 11-509 are leading varieties in the region for the supe-
+rior traits of earliness, drought tolerance and disease resis-
+tances. 
+
+Currently, ISRA aims to replace these old varieties with
+new rice varieties. In the survey for the product profiles of
+future  rice  breeding  which  were  conducted  during  the
+KAFACI rice breeding workshops by the AfricaRice Sahel
+regional  center  in  2018  and  2019,  African  rice  breeders
+pointed out the necessity of replacing old varieties with the
+new  rice  varieties  with  enhanced  grain  yield  and  quality.
+The rice breeders from Senegal suggested the product pro-
+files with the following traits: high yielding, earliness, high
+biomass with strong stem, good grain qualities, resistance
+to  various  diseases  including  RYMV  and  abiotic  stresses
+including  cold  and  salt.  So  far,  more  attention  has  been
+given to the grain quality for aroma, soft texture in cooked
+rice, low amylose and high head recovery (Table 4).
+
+However, the implementation plan faced recalcitrance to
+improve grain quality due to the inherent grain quality of
+indica  germplasm.  In  general,  indica  germplasm  has
+
+Status  of  Rice  Cultivation  and  Breeding  in  Senegal
+
+387
+
+Table 4. Summarized product profile for future breeding in Senegal
+Ecology
+Irrigated
+
+Target traits
+
+Varieties to replace
+Yield
+Maturity
+Plant type
+
+Rainfed
+
+Quality
+
+Disease resistance
+Stress tolerance
+Varieties to replace
+Yield
+Maturity
+Plant type
+Quality
+Disease resistance
+
+Stress tolerance
+
+Traits for improvement
+
+Sahel 108, Sahel 177, Sahel 134
+High yield of 8-10 t/ha
+Earliness with 100-120 days
+High biomass, Strong stem
+Aroma, Long and slender grain type, Soft cooked rice, Low amylose with 18-20%,  
+High head rice recovery over 66%
+Resistance to RYMV, Bacterial Blight, Blast
+Tolerance to cold and salt
+Nerica 4, DJ 11-509
+High yield over 5 tones
+Earliness less than 110 days
+High biomass with plant height over 120 cm, Strong stem
+Low amylose of 18-20%
+Resistance to Blast, Brown spot, RYMV, and Bacterial Blight
+Tolerance to Submergence and Drought 
+Weed competitiveness
+
+higher amylose content between 25~30% and the tendency
+of easy grain damage from milling due to its long and slen-
+der grain dimensions etc. Hence, massive characterization
+and  evaluation  for  indica  germplasm  possessing  suitable
+grain quality and yield potential would be basic prerequi-
+site  for  successful  breeding  program.  Also,  another  chal-
+lenge to overcome is that earliness, yield and qualities are
+negatively  correlated  with  each  other  and  hence  it  is  not
+easy to combine earliness with high yield and grain quality.
+
+DISCUSSIONS AND CONCLUSION
+
+In Senegal, rice is the main staple food of which annual
+consumption per capita is around 85 kg. However, Senegal
+is importing rice to compensate the nation’s rice self-suffi-
+ciency  gap despite the  great potential  to  increase  the  rice
+production. The country has vast irrigated rice areas in the
+Senegal River Valley where the double cropping is possi-
+ble  and  in  the  rainfed  area  of  in  the  Casamance  region.
+Rice production in these areas was affected by the several
+biological  and  institutional  constraints  including  drought,
+salt, cold, iron toxicity, and diseases and pest, etc. Despite
+the capacity challenges in human resources and facilities,
+Senegal  has  developed  60  rice  varieties  including  9  aro-
+matic and 1 hybrid in collaboration with the international
+cooperation  partners  such  as  AfricaRice  and  IRRI  since
+1994. Especially, the development of the early-maturing vari-
+eties combined with high-yielding varieties were remarkable
+
+achievements  despite  the  general  observation  that  the  early
+varieties have less biomass and yield due to the short growth
+duration. 
+
+However, it is noted that genetic improvement to achieve
+the  yield  and  grain  quality  at  the  same  times  should  be
+done for the development of the next generation of rice in
+Senegal. To achieve this goal, there is need to develop the
+intermediate  type  through  the  distant  crosses  between
+Japonica  and  African  varieties  which  might  be  the  effec-
+tive  approach  to  increase  the  productivity,  grain  quality
+and taste at the same time as already verified in the IR8 by
+IRRI  and  NERICAS  by  AfricaRice,  and  Tongil-type  rice
+in  Korea.  Historically  japonica  rice  has  had  a  profound
+impact  on  rice  breeding  in  Asian  countries.  IR8,  bred  by
+japonica  ‘Dee-geo-woo-gen’  and  Peta,  led  to  the  green
+revolution in Asia which raised the yield potential of rice
+from a mere 2~3 t/ha to 8~10 t/ha. NERICA varieties is a
+good  example  for  improving  the  rice  productivity  which
+have been bred by crosses of Japonica and O. glaberrima
+in Africa (Saito et al., 2014). In Korea, the so-called ‘Ton-
+gil-type’ developed by the same breeding strategy of Indica
+and  Japonica  crosses  helped  Korea  achieve  and  sustain  its
+rice  self-sufficiency  since  1972  (Kang,  2010).  Besides
+increasing rice productivity, Tongil-type rice could be good
+resource  to  improve  cold  tolerance,  grain  quality  such  as
+grain  shape,  amylose  content,  gelatinization,  resistance  to
+diseases such as blast and bacterial leaf blight, plant stat-
+ure, and leaf senescence, among other traits (Kang, 2010).
+
+388
+
+韓國際農誌(J.  Korean  Soc.  Int.  Agric.),  32(4),  2020
+
+Therefore,  Tongil-type  breeding  tactics  which  adopts  the
+intraspecific  crosses  between  japonica  and  indica  could
+provide the innovative and reasonable approach to achieve
+genetic improvement for yield potential, quality and taste
+together for the next generation of rice cultivar in Africa.
+
+적 요
+
+세네갈은  농촌진흥청의  아프리카  국제협력사업의  일환으로
+수행되는  「아프리카  다수성  벼  품종개발  ·보급」사업의  주
+요  회원국으로  본  사업의  효율적  추진을  위해  세네갈의  쌀의
+중요성,  쌀  생산  및  육종  현황에  대한  기초정보를  얻고자  조
+사하였다.
+
+1.  현재  세네갈의  일인당  연간  쌀  소비량은  85kg로서  인구
+증가, 도시화 및 쌀의  편의성으로 쌀 수요가 급격히 증가하고
+있으나 쌀 생산 부족으로 국내 쌀 전체 수요량의  44%를 해외
+수입쌀에  의존하고  있어  쌀  자급자족은  세네갈의  국가정책의
+가장  중요한  목표이다. 
+
+2. 세네갈에서 쌀 생산은 세네갈 북부에 있는 관개농업과 이
+기작이 가능한  ‘Senegal  River  Valley’와 남부세네갈의 까자망
+스 지역의 천수답지대에서 이루어지고 있으나, 가뭄,  냉해, 염
+해,  철분독성  불량토양,  비료  및  제초제  부족,  조류  및  잡초
+피해  등  생물학적  제한  요인과  수확후  관리  기반시설  부족,
+쌀  운송,  시장형성  등  제도적  제한요인  등으로  쌀  생산이  저
+해되고  있는  실정이다. 
+
+3. 세네갈의 벼 품종개발은  UN산하 농업연구기관인  AfricaRice,
+IRRI  등과  인도,  스리랑카,  중국,  한국  등  국가  협력과  지원으
+로  이루어져  왔으며,  1994년  이래  60개의  품종이  개발·  보급
+되었다.  그러나  2017년  이후  세네갈  국가육종기관에  의한  품
+종개발도  이루어지고  있으며  조생종,  수량성,  향을  보유한  품
+종개발이 주된 육종 목표이다.
+
+4.  현재  세네갈  국내  쌀의  품질과  밥맛에서  수입쌀에  비해
+열악하여  소비자로부터  외면당하고  있는  실정으로  향후  세네
+갈의  품종육성  목표는  쌀의  품질,  밥맛  및  수량을  동시에  올
+리기 위한 전략이 최우선시 되었다. 이를 위해 역사적으로 한
+국의  통일형  품종개발  및  아시아  녹색혁명을  창생시킨  IRRI
+의  IR8에서  증명된  바와 같이  자포니카와  아프리카  품종과의
+교배를 통한 아프리카 적응 통일형 품종을 육성하는 육종전략
+이  필요하다.
+
+ACKNOWLEDGMENTS
+
+The authors appreciate support from a project, “Cooper-
+ative  Research  Program  for  Agriculture  Science  &  Tech-
+nology  Development  (Project  No.  PJ013150022020)”
+Rural Development Administration, Republic of Korea. 
+
+REFERENCES
+
+Africa  Rice  Center  (AfricaRice). 2011. Boosting Africa’s Rice
+Sector: A research for devolpmnet strategy 2011-2010. Coto-
+nou, Benin: 77 pp.
+
+ANDS. 2014. Les comptes nationaux trimestriels, Dakar, Sénégal.
+ANDS. 2017. Les comptes nationaux trimestriels, Dakar, Sénégal.
+ANDS. 2020. Les comptes nationaux trimestriels, Dakar, Sénégal.
+Atsuko T., M. Diagne, K. Saito. 2015. Causes of yield stagnation
+in irrigated lowland rice systems in the Senegal River Valley:
+Application of dichotomous decision tree analysis. Field Crop
+Research 176:99-107.
+
+Colen L., Demont M., Swinnen J. 2013. Samllholder participa-
+tion in value chains: The case of domestic rice in Senegal, In:
+Rebuilding  West  Africa’s  food  Potential,  A.  Elbehri  (ed.),
+FAO/IFAD.
+
+Demont  M.,  Rizzotto  A.C.  2012.  Policy  sequencing  and  the
+development of rice value chains in Seneal. Development Pol-
+icy Review 30(4): 451-472.
+
+Diagne  M.,  M.  Demont,  P.A.  Seck,  A.  Diaw.  2013.  Self-suffi-
+ciency  policy  and  irrigated  rice  productivity  in  the  Senegal
+River Valley. Food Sec. 5:55-68 
+
+Diagne,  A.,  Midingoyi,  G.S.,  Kinkingninhoun-Medagbe,F.M.,
+2013.  Impact  of  NERICA  adoption  of  NERICA  varieties  in
+West Africa. In: An African Green Revolution: Finding Ways
+to Boost Productivity on Small Farms. Wrold Bank, Washing-
+ton, DC. http://dx.doi.org/10.1007/987-94-007-5670-8_7.
+
+Fisher  R.A.  2015.  Definitions  and  determination  of  crop  yield,
+yield gaps and of rates of change. Field Crops research 182:9-
+18
+
+Hossain,  M. 2007. Where now for the global rice market? Rice
+
+Today, 6(4), 37
+
+Kang K.H. 2010, Made fro the tropics. Rice today: 34-35.
+M.A.E.R. 2020. Rapport sur la campagne
+Maredia  M.,  J.  Howard,  D.  Boughton,  A.  Naseem,  M.  Wan-
+zala,  K.  Kajisa.  1999.  Increasing  seed  system  efficiency  in
+Africa:  Concepts,  Strategies  and  issues.  MSU  International
+Development Working Paper No.77 pp1-46.
+
+Olga F. Linares. 2002. African rice (Oryza glaberrima): History
+and  future  potential.  PNAS  99  (25)  16360-16365;  https://
+doi.org/10.1073/pnas.252604599.
+
+Osman K.A., Kyung-Ho Kang, Ahmed A. El-Siddg, Yassir M.
+Ahmed Sara M. Abdalla. 2020. Assessment of genetic vari-
+ability for yield and attributed traits among rice doubled hap-
+loid(DH)  lines  in  semi-arid  zone  Sudan.  African  Journal  of
+Agricultural Research 16(7):939-946
+
+SAED. 2013. Évolution des superficies et productions de riz dans
+la  Vallée  du  FleuveSénégal  (1980/81-2011/12).  Société
+d’Aménagement  et  d’Exploitation  des  terresdu  Delta  et  des
+vallées du fleuve Sénégal et de la Falémé; Direction du Dével-
+oppe-ment et de l’Aménagement Rural (DDAR); Le Centre de
+Suivi Écologique (CSE),Saint-Louis, Senegal
+
+P.A.J. van Oort, A. Balde, M. Diagne, M. Dingkuhn, B. Man-
+nehb, B. Muller, A. Sow, S. Stuerz. 2016. Intensification of an
+irrigated rice system in Senegal: Crop rotations, climate risks,
+sowing  dates  and  varietal  adaptation  options.  European.  J.
+
+Status  of  Rice  Cultivation  and  Breeding  in  Senegal
+
+389
+
+Agronomy 80: 168-181
+
+Programme  d’Aceleration  de  la  Cadence  de  l’agriculture
+Seneglaise (PRACAS), 2013. Volet agricole du Plan Senegal
+Emergent (PSE). Ministere de l’Agriculture et de l’Equipement
+Rural.
+
+Reardon,  T.  (1993).  Cereals  demand  in  the  Sahel  and  potential
+impacts  of  regional  cereals  protection.  World  Development,
+21(1), 17-35.
+
+Tom  Osborn.  1990.  Multi-institutional  approaches  to  participa-
+tory  technology  development:  A  case  study  from  Senegal.
+Overseas  development  Institute  Network  Paper  13.  London:
+Overseas Development Institute.
+
+Tripp,  Robert. 1994. Seed regularity frameworks and resource-
+poor farmers: A literature review. Overseas development Insti-
+tute Network Paper 51. London: Overseas Development Insti-
+tute.
+
+USAID.  2016.  Scaleing  up  of  Sahel  rice  varieties  in  Senegal:
+Review  of  successful  scaling  of  agricultural  technologies.
+pages 1-49.
+
+USDA.  2018.  Senegal  grain  and  feed  annual:  2018  West  Africa
+
+Rice annual . GAIN Report
+
+WorldBank, 2019. The world bank in Senegal, Overview, https://
+
+www.worldbank.org/en/country/senegal
+
+View publication stats
+View publication stats
+
+

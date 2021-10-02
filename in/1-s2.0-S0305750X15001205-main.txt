@@ -1,0 +1,3210 @@
+World Development Vol. 74, pp. 437–452, 2015
+0305-750X/Ó 2015 Elsevier Ltd. All rights reserved.
+
+www.elsevier.com/locate/worlddev
+
+http://dx.doi.org/10.1016/j.worlddev.2015.05.011
+
+Women Leaders and Social Performance: Evidence
+
+from Financial Cooperatives in Senegal
+
+ANAI¨S PE´ RILLEUX a and ARIANE SZAFARZ b,*
+
+a Universite´ Catholique de Louvain (UCL), IRES, CIRTES, and CERMi, Louvain-la-Neuve, Belgium
+
+b Universite´ Libre de Bruxelles (ULB), SBS-EM, CEB, and CERMi, Brussels, Belgium
+
+Summary. — How do women leaders such as board members and top managers inﬂuence the social performance of organizations? This
+paper addresses the question by exploiting a unique database from a Senegalese network of 36 ﬁnancial cooperatives. We scrutinize the
+loan-granting decisions, made jointly by the locally elected board and the top manager assigned by the central union of the network. Our
+ﬁndings are threefold. First, female-dominated boards favor social orientation. Second, female managers tend to align their strategy with
+local boards’ preferences. Third, the central union tends to assign male managers to female-dominated boards, probably to curb the
+boards’ social orientation.
+Ó 2015 Elsevier Ltd. All rights reserved.
+
+Key words — gender, leadership, governance, microﬁnance, Africa, Senegal
+
+1. INTRODUCTION
+
+This paper investigates how women leaders such as elected
+board members and top managers inﬂuence the social perfor-
+mance of organizations. Worldwide, both the percentage of
+women sitting on corporate boards and the proportion of
+female top managers are still well below the share of women
+in the workforce. This
+even within the
+female-oriented not-for-proﬁt sector. Although female partic-
+ipation in leadership roles is often advocated as a signiﬁcant
+driver of performance in for-proﬁt ﬁrms (Krishnan & Park,
+2005; Smith, Smith, & Verner, 2006), the way women leaders
+inﬂuence social performance in not-for-proﬁt and hybrid orga-
+nizations is poorly elucidated. We address this issue by
+exploiting a detailed database compiled from ﬁnancial cooper-
+atives in Senegal.
+
+case
+
+the
+
+is
+
+Financial cooperatives are hybrid organizations combining
+banking activities with democratic governance. 1 This unusual
+combination creates potential trade-oﬀs between ﬁnancial and
+social objectives and makes ﬁnancial cooperatives fertile
+ground for examining the behavior of women in leadership
+positions. On the one hand,
+is
+male-dominated and plagued by gender stereotypes (Ogden,
+McTavish, & McKean, 2006; Petit, 2007); and women access
+(O¨ zbilgin &
+hardly any leadership positions
+Woodward, 2004). On the other hand, organizations beneﬁt-
+ting from internal democracy are more open-minded toward
+female leaders. Gender imbalances in top management also
+exist in not-for-proﬁt and hybrid organizations but are less
+pronounced than in for-proﬁts (Lyon & Humbert, 2012).
+
+the ﬁnancial
+
+in banks
+
+sector
+
+For corporate governance scholars, ﬁnancial cooperatives
+are attractive targets of study since they are made of several
+entities sharing the same business activity and governance fea-
+tures (Jones & Kalmi, 2015). Typically, ﬁnancial cooperatives
+are organized into networks of local cooperatives (LCs) placed
+under the umbrella of a central union (CU). While the level of
+centralization varies across networks, the common structure of
+LCs involves democratically elected boards and similar staﬀ
+hierarchy and employment conditions. From a statistical view-
+point, this conﬁguration produces a sample made up naturally
+of similarly structured organizations, and so constitutes an
+
+437
+
+asset for analyzing and comparing the behavior of economic
+agents in leadership positions, including from the gender per-
+spective.
+
+to
+
+and
+
+their
+
+ability
+
+The unique democratic nature of cooperatives makes it pos-
+sible to identify the impact of women conditionally on their
+place in the decision-making structure of the organization.
+As stressed by Das (2014), there might be a gap between
+women’s motivation
+aﬀect
+decision-making. In cooperatives, two types of leaders coexist:
+the ﬁrst group is made up of elected board members who need
+to please their voters in order to get re-elected; the second
+includes professional top managers. The interests of these
+two groups of stakeholders are not necessarily aligned. Typi-
+cally, the literature examines the inﬂuences of the two groups
+of female leaders separately. Scrutinizing their interactions, we
+acknowledge that gendered action is partly shaped by institu-
+tional constraints and hierarchies (Boehe & Cruz, 2013;
+Goldman & Little, 2015; Razavi, 1997), and by gender
+inequality in social institutions (Branisa, Klasen, & Ziegler,
+2013; Teasdale, McKay, Phillimore, & Teasdale, 2011).
+
+Women are known to diﬀer from men in their leadership
+style. They tend to adopt a more participative, less directive
+style than their male counterparts (Eagly & Johnson, 1990).
+Moreover, gender diﬀerences are sensitive to the type of orga-
+nization and the subordinates’ gender (Cuadrado, Navas,
+
+* The authors thank Leif Beisland, Pascaline Dupas, Supriya Garikipati,
+Isabelle Gue´rin, Valentina Hartarska, Marek Hudon, Susan Johnson,
+Marc Labie, Robert Lensink, Roy Mersland, Kim Oosterlinck, and the
+participants in the Third European Research Conference on Microﬁnance
+(Kristiansand, June 2013), the Economics Seminar at Auburn University
+(September 2013), the CSWEP-sponsored session at the ASSA meetings
+(Philadelphia, January 2014), and the International Research Workshop
+on Microﬁnance Management and Governance (Colombo, April 2014) for
+valuable comments. This research has been carried out through an
+Interuniversity Attraction Pole on Social Enterprise (SOCENT) funded by
+the Belgian Science Policy Oﬃce. Anaı¨s Pe´rilleux has beneﬁted from a
+postdoctoral grant from the AXA Research Fund. The authors are
+grateful
+to UM-PAMECAS for providing the data. Final revision
+accepted: May 18, 2015.
+
+438
+
+WORLD DEVELOPMENT
+
+than in strategic
+
+Ferrer, & Morales, 2012). Although ﬁnancial cooperatives are
+particularly appropriate for addressing the attitude of women
+leaders, few papers take that stance, probably because exhaus-
+tive micro-data are hard to obtain. 2 Exceptions include
+McKillop, Briscoe, McCarthy, Ward, and Ferguson (2003),
+who analyze the impact of female participation in Irish ﬁnan-
+cial cooperatives. The authors provide evidence of male pre-
+dominance in governance bodies. Women are more present
+in member-interface positions
+and
+top-management ones. These results are in line with the gender
+imbalance observed in democratic institutions by Heenan and
+McLaughlin (2002). Closer to our topic, Mayoux (2001) stud-
+ies a Cameroonian network of 22 local LCs. She ﬁnds the
+majority of savers are female whereas women are underrepre-
+sented in the governance bodies. Concurrently, female savings
+are recycled into low-interest loans made to men. The author
+also points out that women leaders sometimes contribute to
+gender inequalities. However, the evidence rests upon two
+female-governed LCs only. By working with a larger network
+and using time variations of both the composition of the LCs’
+governing bodies and the characteristics of the loans granted,
+we deliver a more nuanced—and likely more robust—picture.
+The network studied in this paper, Union des Mutuelles du
+Partenariat pour la Mobilisation de l’Epargne et du Cre´dit au
+Se´ ne´gal (UM-PAMECAS), is one of the largest microﬁnance
+institutions (MFIs) in West Africa. It consists of 36 LCs
+grouped under
+In each LC,
+loan-granting decisions are made jointly by the locally elected
+board members and the top manager, whose career is super-
+vised by the CU. Our exceptionally rich panel database allows
+us to separately evaluate the social performance of board
+members and top managers. In line with the microﬁnance lit-
+erature, we measure social performance by means of average
+loan size and percentage of
+female borrowers (Hermes,
+Lensink, & Meesters, 2011). Our ﬁndings are threefold. First,
+female-dominated
+in
+loan-granting. This result is in line with previous evidence
+on female participation in democratic governance in India
+(Beaman, Duﬂo, Pande, & Topalova, 2011). Second, female
+top managers are not necessarily more socially oriented than
+their male colleagues. Instead, they tend to align their objec-
+tives on those of the local board, even though their superiors
+are based at the CU. By prioritizing consensus with board
+members over social performance, female managers adopt a
+more democratic behavioral pattern than their male counter-
+parts. Third, the CU tends to send male managers to LCs with
+female-dominated boards. We interpret this as evidence that
+the CU management aims to curb social biases that might hin-
+der the consolidated ﬁnancial situation of the network. Over-
+all, gender is a key factor in considering social performance,
+but gender interactions appear far more complex than previ-
+ously thought.
+
+the authority of a CU.
+
+orientation
+
+boards
+
+favor
+
+social
+
+The rest of the paper is organized as follows. Section 2
+depicts the situation of ﬁnancial cooperatives in Senegal. Sec-
+tion 3 reviews the literature on gender and leadership, with a
+special focus on developing countries. Section 4 introduces
+the methodology. Section 5 presents the data, discusses the
+results, and conducts robustness checks. Section 6 concludes.
+
+2. CONTEXT
+
+Throughout the developing world, ﬁnancial cooperatives
+contribute to female access to ﬁnancial services. 3 According
+to Fletschner (2009), of the three major sources of credit in
+rural Eastern Paraguay (State banks, wholesalers, and ﬁnan-
+
+cial cooperatives), only ﬁnancial cooperatives serve women.
+Likewise, Boucher, Barham, and Branch (1993) ﬁnd that Gua-
+temalan credit unions do not suﬀer from major gender biases,
+in contrast to other ﬁnancial institutions, both in Guatemala
+and worldwide.
+
+Gender inequalities in West Africa are lower than in the rest
+of the developing world (Deaton, 1997). Senegalese women
+increasingly engage in economic activities (Gue´rin, 2008) and
+control their own incomes (Howson, 2013) while remaining
+subordinate to men. 4 They are mainly involved in small busi-
+nesses, and they run about one-third of informal-sector activ-
+ities. Senegalese women are ﬁnancially active (Lyons &
+Snoxell, 2005). They routinely participate in traditional rotat-
+ing savings and credit associations (ROSCAs), which enable
+them to borrow and save small amounts of cash. 5 ROSCAs
+reinforce social capital among members. They also act as an
+insurance mechanism against ﬁnancial distress since the mem-
+bers help each other in case of emergency. However, this trend
+toward economic empowerment is associated with an increase
+in intra-household tensions (Perry, 2005; Sow, 2003). In addi-
+tion, customary patriarchal norms exclude women from access
+to both property and formal ﬁnancial services (Gue´rin, 2008;
+Noponen, 1991).
+
+In 1983 the Senegalese government introduced a speciﬁc
+legal status for cooperatives to democratize their structure
+and empower female members. But the impact of this status
+is mixed. On the one hand, traditional cooperatives active in
+agriculture are mostly male-led. As put by Creevey (1991, p.
+353), “By law, women may join the cooperatives but, in prac-
+tice, they seldom do.” On the other hand, a new generation of
+ﬁnancial cooperatives 6 emerged in the wake of the microﬁ-
+nance movement. These organizations pay special attention
+to women, providing them with speciﬁc credit services such
+as micro-loans and micro-savings opportunities. One of the
+leading members of this movement is UM-PAMECAS.
+
+The situation of microﬁnance is common to all member
+states of the West African Economic and Monetary Union
+(WAEMU). 7 In the late 1980’s and early 1990’s, the region
+experienced a major economic and banking crisis (Seck,
+2013). In response, the banking sector was restructured and
+liberalized, including the closure of public development banks,
+which had been a failure (BCEAO, 2012). As a result, credit to
+rural areas and to small and medium enterprises dropped dras-
+tically, prompting international NGOs to promote microﬁ-
+nance projects. In June 1992, the WAEMU central bank,
+BCEAO, and the Canadian institution De´veloppement Interna-
+tional Desjardins (DID), 8 together launched the PARMEC
+project 9 for the development of microﬁnance in West Africa.
+In December 1993, the resulting PARMEC law was enacted
+by the WAEMU Council of Ministers. This law focuses on
+ﬁnancial cooperatives, not only because of environmental
+characteristics, such as the prominence of low-density rural
+areas, but also because of the inﬂuence of DID. In July
+1996, the WAEMU Council of Ministers went one step further
+and adopted a regulatory framework for noncooperative
+MFIs. Still, the legal framework was favoring ﬁnancial coop-
+eratives, which beneﬁtted from permanent licenses, whereas
+noncooperative MFIs needed to renew their license every
+5 years.
+
+The WAEMU microﬁnance legal framework was reformed
+in April 2007. The revisions were threefold. First, in order to
+level the playing ﬁeld, the new law covered all types of MFIs
+equally and provided permanent licensing to NGOs and
+shareholder-owned MFIs. Second,
+it reinforced regulatory
+supervision of large MFIs 10 by making BCEAO its direct
+authority and putting national ministries in charge of monitor-
+
+WOMEN LEADERS AND SOCIAL PERFORMANCE: EVIDENCE FROM FINANCIAL COOPERATIVES IN SENEGAL
+
+439
+
+ing. Third, new prudential norms were adopted to push MFIs
+to professionalize and encourage the development of NGOs
+and shareholder-owned MFIs (Pe´rilleux, 2013).
+
+Nowadays, despite the regulatory changes, microﬁnance in
+Senegal remains largely dominated by cooperatives. For Sene-
+gal, BCEAO (2013) mentions a total of 238 MFIs serving 2.8
+million clients through 958 service points. In 2013, these insti-
+tutions collected EUR 315 million in savings and provided
+EUR 363 million credit. The three largest institutions—Cre´dit
+Mutuel du Se´ ne´gal (CMS), UM-PAMECAS, and Alliance de
+Cre´dit et d’Epargne (ACEP)—are networks of ﬁnancial coop-
+eratives, together representing around 77.7% of the members/-
+clients of the microﬁnance sector in Senegal. 11 The fourth
+largest MFI is MicroCred Se´ne´gal, a shareholder-owned insti-
+tution formed in 2007. The remaining MFIs are small cooper-
+ative networks, individual cooperatives, and NGOs. 12
+
+In
+
+vary:
+
+some
+
+networks,
+
+The governance of WAEMU ﬁnancial cooperatives is ruled
+by law. The structure includes the general assembly and three
+governance bodies: the administration committee, the credit
+committee, and the supervisory committee. While cooperatives
+grow through networking, their levels of centralization and
+integration
+strategic
+decision-making takes place at the local
+level, whereas in
+others, LCs delegate this task to the CU, and deliver harmo-
+nized products. The Senegalese government promotes the cen-
+tralized model and encourages stand-alone cooperatives to
+join existing networks or create new ones (Pe´rilleux, 2013). 13
+Measured by members, UM-PAMECAS is the second lar-
+gest MFI in Senegal. Our choice to analyze this network was
+guided by four factors. First, UM-PAMECAS was willing to
+share its data with our research team. Second, among the
+Big Three, UM-PAMECAS is the only one with a focus on
+women. Third, its highly centralized structure is well-suited
+to our research, based on the similarities between local gover-
+nance bodies. Since human resources management is fully del-
+egated to the CU, the top managers of all LCs have similar
+contracts. The same argument applies to the functioning of
+local boards. Assembling a sample of leaders active in identical
+corporate structures and beneﬁtting from similar working con-
+ditions reduces the occurrence of self-selection biases and pro-
+tects our results against endogeneity issues. Last, the fact that
+UM-PAMECAS ﬁts the cooperative model promoted by the
+Senegalese government will probably add relevance to the con-
+clusions of our study. One can indeed reasonably expect that
+future ﬁnancial cooperatives in Senegal, and more broadly in
+West Africa, will organize themselves into networks and adopt
+a centralized and integrated structure.
+
+The history of UM-PAMECAS helps in understanding its
+current structure. In 1996, DID undertook a microﬁnance
+project to supply ﬁnancial services to the poor in the suburbs
+of the Senegalese capital Dakar. First, DID set up three LCs
+and grouped them under a CU to make economies of scale
+and enhance ﬁnancial sustainability. In 1998, after a 2-year
+experimental phase, UM-PAMECAS became an oﬃcial insti-
+tution. The network grew quickly and extended its activities
+beyond Dakar, notably into rural areas. The current objective
+of UM-PAMECAS is to cover the whole country, and it shows
+strong concern for female participation (Tall Ba & Cisse´,
+2009).
+
+The governance structure of UM-PAMECAS is highly cen-
+tralized, but both the CU and the LCs are legal entities with
+ﬁnancial cooperative status. In principle, LCs are free to leave
+the network; in practice, though, they have limited autonomy.
+So far, no LC has ever asserted its right to stand alone. The
+CU takes care of the ﬁnancial sustainability of the network.
+Each LC has the four legal governance bodies. First, the LC
+
+general meeting brings together all the members annually and
+elects its representatives to the three other bodies. 14 Second,
+the LC board has nine elected directors and establishes local
+policies within the limits drafted by the CU. For instance, it is
+entitled to set priorities regarding credit recovery, sensitization
+to cooperative spirit, and gender empowerment. Third, the LC
+credit committee is composed of ﬁve elected members and
+makes loan-granting decisions on the basis of applications pre-
+viously analyzed by credit oﬃcers and the priorities identiﬁed by
+the board. Last, the LC supervisory committee, with ﬁve elected
+members, controls operations and collects opinions and recom-
+mendations from LC members.
+
+Human resources are managed at CU level for the whole
+network. In particular, the CU sends a top manager to each
+LC. 15 The CU is supervised by two main bodies: the CU
+board, composed of the local board chairpersons, and the
+CU supervisory committee, made up of seven representatives
+elected by the LCs. The CU board determines the strategic ori-
+entations for the network. In particular, it decides upon pro-
+duct design, expansion strategy, and network conﬁguration.
+The CU board appoints an executive committee.
+
+The
+
+adopted
+
+methodology
+
+loan-granting
+
+by
+UM-PAMECAS is in line with that used by the bulk of the
+microﬁnance industry, which typically supplies standardized
+short-to-medium-term loans with ﬁxed interest rates and rigid
+repayment schedules (Armenda´riz & Morduch, 2010). Since
+the interest rate is ﬁxed, larger loans are more cost-eﬀective
+for the lender, given ﬁxed transaction costs (Armenda´riz &
+Szafarz, 2011). Hence, proﬁtability dictates the need to grant
+larger loans, while social concern points in the opposite direc-
+tion.
+
+The decisions are made jointly by the LC board and the top
+manager. The local board logically prioritizes the satisfaction
+of its membership. According to the CU’s vice-president, “the
+employees are more concerned with the proﬁtability of the net-
+work, whereas elected members are more preoccupied by the
+social performances of their local ﬁnancial cooperative”. 16
+Since the staﬀ is managed by the CU executive team, any ten-
+sions between ﬁnancial and social objectives translate into a
+central-versus-local dynamic. 17 In this context, the next sec-
+tions analyze the interplay of female/male-dominated boards
+with female/male managers.
+
+3. LITERATURE REVIEW
+
+the papers
+
+Gender diﬀerences in leadership are still controversial. While
+most authors acknowledge the existence of a female leadership
+style, ongoing controversies question the existence of gender
+advantage in leadership, and the need for quotas to improve
+gender diversity in organizations. Moreover, two separate
+streams of literature deal with women in top-management posi-
+tions and those holding elected mandates, respectively. Inter-
+estingly,
+some
+conclusions, while focusing on speciﬁc issues. A signiﬁcant
+number of papers in the political stream deal with developing
+countries, making them especially relevant to our study. In
+contrast, the bulk of the management stream disregards devel-
+oping countries. In fact, gender concerns are relatively recent in
+the corporate leadership literature (Fine, 2009). In this section,
+we brieﬂy review the literature on female participation in
+developing-country
+in worldwide
+top-management positions. We leave the discussion on quotas
+for Section 5.4 where our results are summarized.
+
+two streams
+
+in the
+
+elected
+
+bodies
+
+share
+
+and
+
+The contributions of female participation to democratic
+governance in emerging economies are increasingly empha-
+
+440
+
+WORLD DEVELOPMENT
+
+sized in the literature. The most relevant pieces of evidence on
+this issue come from India, where the 1993 constitutional
+amendment imposed that at least one-third of the seats in vil-
+lage governments and in the presidential oﬃces should be
+reserved for women. Chattopadhyay and Duﬂo (2004) show
+that in villages reserved for women leaders, public goods are
+more extensively developed, and bribery is less frequent. As
+stated by Beaman et al. (2011, p. 163) “Women who are
+elected leaders diﬀer from men in signiﬁcant ways and (. . .)
+make diﬀerent policy decisions.” The papers suggest that
+female leaders’ action is aligned with the preferences of women
+and delivers pro-social outcomes. For instance, women leaders
+are more likely to invest in drinking water facilities.
+
+Strøm et al. (2014) investigate the impact of female board
+members in MFIs by exploiting an original database with wide
+geographic and time coverage (329 MFIs in 73 countries over
+a 10-year period). The authors ﬁnd that the share of female
+leaders in MFIs worldwide exhibits relatively low dispersion.
+On average, the boards include 29% women members, 23%
+of these boards have at least three women, and 27% of CEOs
+are female. Interestingly, female leaders are more frequent in
+MFIs with a gender bias toward female clients, and in NGOs
+and cooperatives (compared with private ﬁrms). Strøm et al.
+(2014) show that female managers and female board members
+all have a positive
+impact on ﬁnancial performance.
+Hartarska, Mersland, and Nadolnyak (2014) complement
+these results by showing that MFIs with female CEOs manage
+to reach more clients than male-led MFIs. Our study will revi-
+sit the issue of gender and social performance in MFIs, but
+from a micro perspective.
+
+that
+
+Is there such a thing as female leadership style? Based on 17
+studies, the pioneering meta-analysis by Dobbins and Platz
+(1986) concludes that “male and female leaders exhibit equal
+amounts of initiating structure and consideration and have
+equally satisﬁed subordinates” (p. 118). Kolb (1999) notes,
+however,
+leadership stereotypes are predominantly
+described in masculine terms. The argument is supported by
+the observation that, all else equal, men tend to climb the cor-
+porate ladder faster than women do, a phenomenon also
+referred to as the “glass cliﬀ” (Ryan & Haslam, 2007). The
+notion of role model (Eagly, 1987) helps rationalize the facts.
+The role congruity theory developed by Eagly and Karau
+(2002) asserts that women leaders are evaluated more harshly
+than their male counterparts because leadership is associated
+with stereotypically male characteristics, such as power and
+authority. In addition, the intensity of the prejudice relates
+to the perception of incongruity between the female gender
+role and leadership roles.
+
+From an extensive meta-analysis encompassing 162 studies,
+Eagly and Johnson (1990) conclude that women leaders tend
+to adopt a more democratic and collaborative style than
+do men. 18 This distinctive style is people-oriented and “tran
+sformational” rather than task-oriented and “transactional”.
+concerns. According to
+It also embeds higher
+Waldman, Siegel, and Javidan (2006),
+transformational
+leadership implies intellectual stimulation that is signiﬁcantly
+associated with the propensity of ﬁrms to engage in corporate
+social responsibility activities.
+
+social
+
+Forsyth, Heiney, and Wright (1997) show that women opt-
+ing for a task-oriented leadership style are rated negatively by
+agents with conservative views. Likewise, women who opt for
+a more confrontational
+leadership style are judged more
+harshly than their male colleagues (Eagly & Karau, 2002;
+Korabik, Baril, & Watson, 1993). These facts are consistent
+with role congruity theory. Nevertheless, articles in newspa-
+pers often claim that being a woman is an advantage for hold-
+
+ing leadership positions. With more nuances, Vecchio (2002)
+advocates leadership conceptualization that subsumes the
+dichotomy from role congruity theory, arguing that this
+one-dimensional view of leadership has become “simplistic
+and inappropriate” (p. 645). Recalling that Dobbins and
+Platz (1986) fail to detect signiﬁcant sex diﬀerences in leader-
+ship, the author dismisses the gender stereotypes used to claim
+both male advantage (task focus, lower emotionality, and a
+propensity to be directive) and female advantage (participa-
+tion, power sharing, and inclusion).
+
+The lively debate on the relevance of role congruity theory
+for leadership (Eagly & Carli, 2003; Vecchio, 2003) testiﬁes
+to the need for further assessments of leader role models in
+various contexts. From that perspective, this paper explores
+new avenues by scrutinizing the behavior of female leaders
+in West African cooperatives. Theoretical considerations
+aside, getting a better understanding of the actions and moti-
+vations of women leaders in Africa is instrumental to develop-
+ment goals. Barring skilled women from leadership positions
+can indeed constitute a considerable waste of talent, especially
+for countries with a shortage of well-trained managers. More-
+over, female empowerment is typically associated with demo-
+cratic development (Wyndow, Li, & Mattes, 2013). Assessing
+the validity of gender-related leadership theories should help
+address gender gaps and design meaningful policies for equity
+and empowerment (Moser, 1989).
+
+4. METHODOLOGY
+
+We will run multivariate analyses to understand how gender
+dominance in the board and the gender of the top manager
+impact social performance. Following the tradition of the
+microﬁnance literature, we use two typical indicators of social
+performance (D’Espallier, Hudon, & Szafarz, 2013; Hermes
+et al., 2011; Tchakoute-Tchuigoua, 2010). First, we consider
+the share of loans allocated to women, which may capture
+some kind of “gender aﬃnity” rather than pure social orienta-
+tion. Second, we concentrate on average loan size, which is the
+typical proxy for depth of outreach and is directly linked to
+poverty alleviation. The two types of performance are inter-
+twined since women are poorer than men on average. 19
+
+Other indicators are used in the literature to evaluate MFIs’
+social performance: the number of clients served is a proxy for
+breadth of outreach, and the percentage of loans provided in
+rural areas is used to measure the so-called “rurality bias”
+(Strøm et al., 2014). In the case of UM-PAMECAS, however,
+using these two indicators to assess LCs’ social performance
+would make little sense since the network expansion strategy
+is designed by the CU. The LC authorities have little say in
+their location (rural versus urban), while the number of mem-
+bers is mostly a question of population density in the targeted
+area. Although we do not consider LC size as social perfor-
+mance, we control for it in the econometric analysis. Less fre-
+quently used social
+indicators are discussed by Schreiner
+(2002). They include cost to clients (cost supported by clients),
+length of outreach (time frame of the supply), and scope of
+outreach (number of ﬁnancial
+supplied). As
+acknowledged by the author, both the cost to clients and the
+length of outreach are hard to measure. Scope of outreach is
+irrelevant to our study since all LCs supply the same products.
+The models estimated in the next section can be summarized
+
+contracts
+
+as:
+Y it ¼ a1FBit þ a2FM it þ a3FB  FM it þ a4X it þ a5Yeart þ li þ eit
+ð1Þ
+
+WOMEN LEADERS AND SOCIAL PERFORMANCE: EVIDENCE FROM FINANCIAL COOPERATIVES IN SENEGAL
+
+441
+
+where Y it is the social performance—i.e., the share of loans
+allocated to women or the average loan size—for LC i in
+month t, FBit
+is the Female-dominated Board dummy that
+equals 1 if the board has at least 50% of female members
+and 0 otherwise, FM it
+is the Female Manager dummy that
+the manager is a woman and 0 otherwise,
+equals 1 if
+FB  FM it is an interaction term capturing the joint eﬀect of
+female-dominated board and female manager. Vector X it rep-
+resents a set of control variables comprising LCs’ share of
+female members and LCs’ total asset that proxies LC size.
+The speciﬁcation also includes year dummies and LC-speciﬁc
+eﬀects acknowledging for LC’s
+invariant characteristics.
+Finally, eit is the idiosyncratic error term.
+
+To estimate Eqn. (1), we will run robust ﬁxed-eﬀect (FE)
+panel estimation. Controlling for stable LC characteristics,
+whether observable or not, reduces the risk of biases due to
+omitted variables. We will perform FE estimation based on
+mean-diﬀerenced data—also referred to as within-estimation
+(Hausman & Taylor, 1981)—to avoid losing 1 month of obser-
+vations, as would be the case had we chosen an FE model in
+diﬀerences.
+removes
+panel-level averages from each side of the model, thus elimi-
+nating the LC-speciﬁc eﬀect. We will use the robust option
+to correct for potential cross-sectional heteroskedasticity and
+serial correlation.
+
+within-estimation
+
+addition,
+
+In
+
+We will subsequently check the robustness of our results
+along three dimensions. First, we will question the estimation
+method and run random-eﬀect (RE) estimation instead of FE
+panel regressions. Our baseline regressions will use FE panel
+estimation. This choice is guided by prudence. Unlike RE esti-
+mation, FE estimation does not require the assumption that
+individual eﬀects are orthogonal to regressors. In any case,
+FE estimates are unbiased and consistent. Still, under the
+orthogonality assumption, the RE speciﬁcation is preferable
+because it provides estimators that are unbiased, consistent,
+and eﬃcient, whereas the FE estimators are not eﬃcient
+(Hausman, 1978). Second, we will check whether gender dom-
+inance is really necessary for female board members to bring
+their social agenda to the fore. To do so, we will replace the
+majority threshold (50%) by 33%.
+
+Third, endogeneity is a standard concern in the microﬁnance
+literature, at least in nonrandomized studies. 20 Endogeneity
+has two major sources: omitted-variable biases and reverse
+causality. To address those concerns, we refer to Adams and
+Ferreira (2009), who estimate the impact of female board
+members on ﬁnancial performance in for-proﬁt companies.
+The authors recognize that ﬁrm culture can drive signiﬁcant
+omitted-variable biases for example, because more progressive
+ﬁrms can have a larger number of female directors. To over-
+come this issue and control for time-invariant ﬁrms’ character-
+istics such as culture, the authors use ﬁrm ﬁxed eﬀects. In our
+case, the omission of meaningful variables is unlikely because
+all the LCs of UM-PAMECAS belong to the same network
+and share cultural and social norms. However, for the sake
+of caution, we follow Adams and Ferreira (2009)’s recommen-
+dation and insert LC ﬁxed eﬀects in all our regressions. On
+reverse causality, Adams and Ferreira (2009) stress that
+“(. . .) both director compensation structure and ﬁrm perfor-
+mance are likely to aﬀect both the incentives of women to join
+ﬁrms and the incentives of ﬁrms to hire female directors”
+(p. 295). To some extent, the design of our study supported
+by the speciﬁc governance features of UM-PAMECAS makes
+this scenario rather implausible. Board members are elected at
+the general meeting by all the LC’s members from among
+themselves. The interests of the voting members diﬀer accord-
+ing to whether they are men or women, and whether they need
+
+small or large loans. Making the case for endogeneity is diﬃ-
+cult since coordination issues are combined with multiple
+objectives. Furthermore, we control for the proportion of
+female members, who constitute the group more likely to
+share common interests.
+
+In principle, in model (1) reverse causality could also stem
+the
+from social performance aﬀecting the gender of
+manager. However,
+this scenario is implausible because
+UM-PAMECAS human resource management is centralized.
+The CU assigns all the employees to the LCs, and rotates them
+every 5 years or so. UM-PAMECAS female managers willing
+to join more socially oriented LCs are unable to do so. From
+the econometric standpoint, centralization protects our results
+again reverse causality. In this regard, our context is more favor-
+able than that of Adams and Ferreira (2009). Regardless of this
+argument, we will address the concern of reverse causality by
+means of a robustness check exploiting the time dimension. Pre-
+cisely, we will investigate further if the expected changes in
+social performance actually occur within 6 months of a switch
+in manager’s gender. We will thus address the concern of endo-
+geneity by scrutinizing social performance around the transi-
+tions from male/female managers to female/male managers.
+
+Finally, we have no other information on the managers
+besides their gender. One could thus object to our results on
+the grounds that the diﬀerences we capture might be due to
+other characteristics such as age, education, and place of ori-
+gin. While our data exclude these characteristics, the concern
+is again mitigated by the fact that all the managers are hired,
+supervised, and promoted by the same body, the CU executive
+committee. The managers themselves have little to say in their
+workplace. In this way, we can at least exclude the presence of
+a self-selection bias.
+
+Overall, we are dealing with an original hand-collected data-
+base including the characteristics of over 200,000 microloans.
+In addition, to gain conﬁdence in the results, we will submit
+our multivariate panel-based analysis to robustness checks,
+which will question the estimation methodology and address
+the endogeneity concern.
+
+5. DATA, RESULTS, AND DISCUSSION
+
+(a) Data and descriptive statistics
+
+We use monthly data on all the loans granted by the LCs in
+the UM-PAMECAS network over the period stretching from
+January 2007 to May 2010. Altogether, these 36 LCs granted
+204,609 loans over the period under study. For each loan we
+observe the gender of the borrower and the loan size. 21 Our
+dataset is thus made up of an unbalanced panel of 1,158
+monthly observations (36 LCs over 41 months). Appendix A
+features detailed information on the LCs, collected in May
+2010. Table 8 reveals that 61% of the LCs operate in urban
+areas whereas the remaining 39% are located in peri-urban
+and rural areas. The average LC is 10 years old and holds total
+assets of EUR 1.6M. Table 9 provides social characteristics.
+On average, by May 2010, the LCs were serving 11,200 mem-
+bers, of whom 52% were female. The mean percentage of
+women in the LC board 22 reaches 32%, whereas 31% of top
+managers are female. 23
+
+is no exception. To address
+
+Around the world, women are poorer than men on average.
+And Senegal
+reality,
+UM-PAMECAS has designed a special credit product target-
+ing poor women. So-called AFSSEF 24 loans are oﬀered to
+women who ﬁnd it diﬃcult to provide collateral. In addition,
+UM-PAMECAS proposes
+arrangements
+
+various
+
+credit
+
+this
+
+442
+
+WORLD DEVELOPMENT
+
+grouped into four categories: small-business loans, personal
+loans, medium-business loans, 25 and so-called “in ﬁne loans”
+subject to bullet repayment. 26 The credit oﬃcers are in charge
+of directing applicants toward the loan type that ﬁts their
+needs. Table 10 in Appendix B provides the characteristics
+and market shares of each type of loan. Once the category is
+determined, loan size is the sole credit condition tailored to
+the applicant’s proﬁle.
+
+Since it was formed, UM-PAMECAS has shown strong
+concern for female participation. On average over the study
+period, women account for 53% of total membership and
+65% of borrowers. However, they receive signiﬁcantly smaller
+loans. 27 On average, loans to female borrowers are nearly half
+the size of those granted to their male counterparts. The
+gender-blind average loan size is EUR 692, 28 while the
+gender-sensitive averages are EUR 515 for women and EUR
+1,025 for men.
+
+Loan allocation depends on the composition of the board.
+Panel A in Table 1 shows that LCs with female-dominated
+boards, i.e., with at least 50% female members, serve more
+women. The average loan size is also aﬀected by the board
+make-up, but only slightly. These ﬁgures are in line with the
+literature showing that ﬁrms with a higher share of women
+on the board exhibit greater social and ethical orientations
+(Bernardi, Bosco, & Columb, 2009; Smith, Wokutch,
+Harrington, & Dennis, 2001). Logically, female-dominated
+boards are more likely to be found in LCs with a greater num-
+ber of female members. The likelihood of having a female
+manager is much higher in male-dominated boards than in
+female-dominated ones (39% versus 20%). This striking fact
+is further investigated in Table 2.
+
+The descriptive statistics disaggregated by manager gender
+(Table 1, Panel B) contrast with the literature consensus that
+female managers are more socially oriented than their male
+counterparts. Compared with males, female managers are
+associated with fewer loans to women and higher loan sizes.
+Unexpectedly, female top managers are more frequent in
+LCs with a higher share of male members. Importantly,
+Table 1 reveals that the relationship between managers’ gender
+and the gendered composition of LCs and their boards is not
+random.
+
+In Table 2, a Pearson independence test conﬁrms that
+female managers are signiﬁcantly more frequently associated
+with male-dominated boards, and vice versa (p < 0.01). This
+result suggests that the CU makes strategic staﬀ allocations
+and preferably
+to LCs with
+female-dominated boards. While the CU hardly inﬂuences
+the board composition, it fully controls the allocation of top
+managers. Hence, we interpret the outcome of the indepen-
+
+sends male managers
+
+Table 2. Manager’s gender and board composition: contingency table
+
+Male-dominated
+
+Female-dominated
+
+Total
+
+Male Manager
+
+Female Manager
+
+Total
+
+board
+
+559
+
+(595.5)
+
+358
+
+(321.5)
+
+917
+
+board
+
+193
+
+(156.5)
+
+48
+
+(84.5)
+
+241
+
+752
+
+406
+
+1,158
+
+Note: Expected frequencies in parentheses. Pearson independence test:
+v2(1) = 30.65 (p < 0.01).
+
+dence test as evidence that the CU management aims to curb
+social biases that might hinder the consolidated ﬁnancial situ-
+ation of the network. Further econometric analysis is needed
+to disentangle the actions of the manager and the LC board.
+
+(b) Regression analysis
+
+For each explained social performance, we estimate two
+speciﬁcations. In the ﬁrst, the explanatory variables include
+two gender dummies: one for the manager, the other for board
+dominance. In the second speciﬁcation, we add the interaction
+between the two dummies to account for the dependence iden-
+tiﬁed from Table 2. In all equations, the control variables
+include the percentage of female members and the LC size
+proxied by total assets. 29
+
+The baseline results are reported in Table 3. In speciﬁcations
+(1) and (2), the interaction term is absent. Using the share of
+female borrowers as an indicator of social performance, regres-
+sion (1) conﬁrms that female-dominated boards exhibit higher
+social orientation in loan-granting than male-dominated ones.
+Regression (1) also shows that the share of loans granted to
+women is not signiﬁcantly aﬀected by the manager’s gender.
+In line with Agier and Szafarz (2013a), we rule out the “gender
+aﬃnity” hypothesis for the manager. The attitude of female
+managers contrasts with the behavior of same-gender elected
+board members, who have a signiﬁcantly positive inﬂuence on
+the share of loans granted to women. Regression (2) shows that
+the average loan size is hardly aﬀected by gender-speciﬁc vari-
+ables. The results from regression (2) suggest that the diﬀerences
+found in Table 1 are mainly attributable to external shocks cap-
+tured through year dummies.
+
+Speciﬁcations (3) and (4) in Table 3 include an interaction
+term to account for the dependency between the manager’s gen-
+der and gender dominance in the board. The results resolve the
+apparent puzzle detected from the descriptive statistics. In both
+
+Table 1. Descriptive statistics
+
+Panel A: Gender dominance on the
+
+Panel B: Manager’s gender
+
+board
+
+Female
+
+(N = 241)
+
+68.3
+671
+19.9
+56.4
+1,898
+
+Male
+
+(N = 917)
+
+64.1***
+697*
+39.0***
+51.5***
+1,462***
+
+Female
+
+(N = 406)
+
+64.5
+765
+
+49.5
+1,513
+
+Male
+
+(N = 752)
+
+65.2
+653***
+
+54.2***
+1,574
+
+Share of female borrowers (%)
+Average loan size
+Share of female managers (%)
+Share of female members (%)
+Total assets (in EUR ‘000)
+
+Note: The stars indicate the results of t-tests for equal means between female- and male-dominated boards (Panel A) and between female and male
+managers (Panel B).
+*** Signiﬁcant at the 1% level.
+* Signiﬁcant at the 10% level.
+
+WOMEN LEADERS AND SOCIAL PERFORMANCE: EVIDENCE FROM FINANCIAL COOPERATIVES IN SENEGAL
+
+443
+
+Table 3. Impact of women leaders on social performance: ﬁxed-eﬀect panel estimation
+
+(1)
+
+(2)
+
+(3)
+
+(4)
+
+Share of female borrowers Average loan size
+
+Share of female borrowers Average loan size
+
+Female-dominated board
+
+Female manager
+
+Female manager * female-dominated board
+
+Share of female members
+
+Total assets
+
+Year
+Constant
+
+Statistics
+N
+F-Stat
+R2-Within
+R2-Between
+
+Note: Robust standard errors reported in parentheses.
+*** Signiﬁcant at the 1% level.
+** Signiﬁcant at the 5% level.
+
+0.0196***
+(0.00718)
+ 0.00837
+(0.0158)
+
+ 0.00613
+(0.0847)
+3.02e 06
+(1.39e 05)
+
+Yes
+
+0.678***
+(0.0511)
+
+1,158
+19.26***
+0.107
+0.126
+
+ 22.32
+(25.48)
+ 17.16
+(26.37)
+
+53.78
+(180.7)
+0.0568
+(0.0528)
+
+Yes
+
+569.3***
+(134.4)
+
+1,158
+3.98***
+0.0181
+0.0281
+
+0.0168**
+(0.00661)
+ 0.0384***
+(0.00880)
+0.0628***
+(0.0133)
+ 0.0336
+(0.0794)
+ 1.54e 06
+(1.52e 05)
+
+Yes
+
+0.709***
+(0.0488)
+
+1,158
+20.57***
+0.115
+0.0363
+
+ 16.84
+(23.30)
+42.29**
+(17.43)
+ 124.5***
+(18.62)
+
+108.2
+(177.7)
+0.0658
+(0.0513)
+
+Yes
+
+506.5***
+(133.9)
+
+1,158
+21.68***
+0.0220
+0.0872
+
+equations, the loading of the interaction term is highly signiﬁ-
+cant and far surpasses that of the female-manager dummy. As
+a consequence, the empirical results should be interpreted by
+examining
+than
+gender-domination in the board and manager’s gender sepa-
+rately.
+
+combinations
+
+gendered
+
+rather
+
+The results suggest that female top managers associated
+with female-dominated boards favor social performance. In
+contrast, when the board is male-dominated board female
+managers serve fewer women, and grant signiﬁcantly larger
+loans than do their male colleagues. Before discussing those
+results in Subsection 5(d), we will test their robustness.
+
+Next, we re-estimate model (1) with random eﬀects. The
+results in Table 4 align perfectly with those obtained previ-
+ously (Table 3). As testiﬁed by p-values, Hausman tests fail
+to reject the RE speciﬁcations for regressions (1) and (3),
+which explain the share of female borrowers. In contrast, the
+test rejects the RE speciﬁcation at the 10% level for regressions
+(2) and (4), which concern average loan size. The exercise sug-
+gests that our ﬁndings are robust to the estimation method.
+
+To check whether the majority threshold of 50% is necessary
+for female board-members to bring their social agenda to the
+fore, we use the threshold of 33% instead of the 50% used in
+Tables 3 and 4. Table 5 shows that 33% of female board mem-
+bers is an insuﬃcient proportion to produce any signiﬁcant
+impact. This conﬁrms that majorities matter for corporate
+control (Chapelle & Szafarz, 2005).
+
+(c) Addressing endogeneity
+
+As explained in the methodological section, the governance
+structure of UM-PAMECAS protects our results against the
+reverse causality that would go from social performance to
+board gendered composition. To address the concern of
+reverse causality from social performance to the manager’s
+gender, we examine transitions, i.e., the points in time when
+a manager is replaced by a colleague of the opposite sex, as
+an additional check to reject the possibility of reverse causal-
+ity. We have few time variations because boards are elected
+yearly, managers are reshuﬄed every 5 years or so, and our
+
+observation period is limited to 4 years. In total, our data
+include only seven transitions
+in
+manager’s gender. Hence, the check is conﬁned to stylized
+facts.
+
+involving a change
+
+First and most importantly, we observe that in all board
+elections taking place in the year following a transition, the
+board’s gender dominance remained unchanged. Hence, the
+manager’s gender does not seem to have any inﬂuence on
+votes. Second, we scrutinize the two types of social perfor-
+mance (average loan size and share of female borrowers)
+6 months before and after the transitions.
+
+Table 6 summarizes the results in the four possible situa-
+tions. For each transition we compare the average loan sizes
+and the shares of females in the 6-month periods before and
+after the change in manager’s gender. When there is more than
+one case, we report mean values. The transitions from a male
+to a female manager are associated with higher social perfor-
+mance. Speciﬁcally, the average loan size decreases ( EUR
+39), and the share of female borrowers increases slightly
+(+1.3%). However, LCs exhibit contrasted impacts depending
+on whether their board is male- or female-dominated. As pre-
+dicted by our baseline model, in the case where the board is
+male-dominated, replacing a male manager by a female one
+was detrimental to social performance (higher loan size, smal-
+ler share of female borrowers).
+
+The transitions from female to male manager deliver mixed
+social performance. We observe an increase in average loan
+size (+EUR 46) and a positive—but below-1%—variation in
+the share of female borrowers (+0.27%). The increase in aver-
+age loan size is spectacular in the LC with a female-dominated
+board (+EUR 120), where the growth rate surpasses 15%. The
+cases of male-dominated boards are less clear-cut. Although
+the change observed in the share of female borrowers is in line
+with the prediction of our baseline model, the small increase in
+average loan size (+EUR 22) goes in the opposite direction.
+Overall, most ﬁgures are in line with the baseline results pre-
+sented in Subsection 5(b) (precisely, seven out of eight transi-
+tion eﬀects). This is a reasonably good performance given that
+we are dealing with very small numbers.
+
+444
+
+WORLD DEVELOPMENT
+
+Table 4. Impact of gender on social performance: random-eﬀect panel estimation
+
+(1)
+
+(2)
+
+(3)
+
+(4)
+
+Share of female borrowers Average loan size
+
+Share of female borrowers Average loan size
+
+Female-dominated board
+
+Female manager
+
+Female manager * female-dominated board
+
+Share of female members
+
+Total assets
+
+Year
+Constant
+
+Statistics
+N
+Wald v2
+R2-Within
+R2-Between
+
+Hausman test
+v2
+p-Value
+
+Note: Robust standard errors reported in parentheses.
+*** Signiﬁcant at the 1% level.
+** Signiﬁcant at the 5% level.
+* Signiﬁcant at the 10% level.
+
+0.0214***
+(0.00602)
+ 0.00630
+(0.0135)
+
+0.0636
+(0.0969)
+4.92e 06
+(1.03e 05)
+
+Yes
+
+0.633***
+(0.0543)
+
+1,158
+
+162.18***
+
+0.106
+0.202
+
+4.02
+0.674
+
+ 23.88
+(25.10)
+2.240
+(23.27)
+
+ 285.9*
+(162.2)
+0.0590
+(0.0408)
+
+Yes
+
+736.9***
+(109.7)
+
+1,158
+34.32***
+0.0154
+0.274
+
+11.39
+0.077
+
+0.0181***
+(0.00589)
+ 0.0270**
+(0.0109)
+0.0492***
+(0.0129)
+
+0.0418
+(0.0917)
+2.14e 06
+(1.11e 05)
+
+Yes
+
+0.656***
+(0.0520)
+
+1,158
+
+197.42***
+
+0.114
+0.105
+
+7.19
+0.409
+
+ 13.37
+(22.39)
+58.71**
+(23.98)
+ 140.4***
+(27.11)
+ 214.6
+(167.8)
+0.0664*
+(0.0371)
+
+Yes
+
+669.3***
+(112.9)
+
+1,158
+
+134.37***
+0.0198
+0.277
+
+13.78
+0.055
+
+Table 5. Impact of gender on social performance: using the 33% threshold
+
+(1)
+
+(2)
+
+(3)
+
+(4)
+
+Share of female borrowers
+
+Average loan size
+
+Share of female borrowers
+
+Average loan size
+
+Female-33% board
+
+Female manager
+
+Female manager * female-33% board
+
+Share of female members
+
+Total assets
+
+Year
+Constant
+
+Statistics
+N
+F-Stat
+R2-Within
+R2-Between
+
+0.00195
+(0.0128)
+ 0.00636
+(0.0163)
+
+ 0.00354
+(0.0880)
+ 2.49e 06
+(1.32e 05)
+
+Yes
+
+0.686***
+(0.0522)
+
+1,158
+16.62***
+0.104
+0.0958
+
+Note: Robust standard errors reported in parentheses.
+*** Signiﬁcant at the 1% level.
+
+ 6.570
+(24.14)
+ 20.19
+(27.97)
+
+51.30
+(182.5)
+0.0629
+(0.0512)
+
+Yes
+
+561.7***
+(132.3)
+
+1,158
+3.350***
+0.0177
+0.0289
+
+0.00237
+(0.0137)
+ 0.00593
+(0.0183)
+ 0.000775
+(0.0208)
+ 0.00328
+(0.0893)
+ 2.41e 06
+(1.34e 05)
+
+Yes
+
+0.686***
+(0.0549)
+
+1,158
+14.86***
+0.104
+0.0996
+
+7.885
+(37.96)
+ 5.290
+(34.17)
+ 26.75
+(40.94)
+
+60.28
+(182.1)
+0.0658
+(0.0513)
+
+Yes
+
+542.4***
+(139.3)
+
+1,158
+3.830***
+0.0180
+0.0284
+
+(d) Discussion and policy implications
+
+To our knowledge, this is the ﬁrst study involving interac-
+tions of female board members and women top managers in
+developing countries. In the microﬁnance literature, gendered
+attitudes are documented for loan oﬃcers (Agier & Szafarz,
+2013a) and leaders (Mersland & Strøm, 2009), but gender
+interactions remain unaddressed, probably because of the
+
+scarcity of women leaders. We circumvent this problem by
+exploiting a unique database released by a Senegalese network
+of 36 ﬁnancial cooperatives sharing identical operating system
+and governance characteristics. In addition, a number of
+checks attest to the robustness of our panel estimation results,
+including against the thorny issue of endogeneity. The remain-
+der of this section summarizes and discusses our main results
+and suggests policy implications.
+
+WOMEN LEADERS AND SOCIAL PERFORMANCE: EVIDENCE FROM FINANCIAL COOPERATIVES IN SENEGAL
+
+445
+
+Transitions
+M ! F
+Manager
+
+F ! M
+Manager
+
+Table 6. Transitions from male/female manager to female/male manager
+
+Male-dominated board
+
+Female-dominated board
+
+1 case
+
+D ALS = +32
+D SFB =  3%
+
+3 cases
+
+D ALS = +22
+D SFB = +0.5%
+
+2 cases*
+
+D ALS =   77
+D SFB = +3.5%
+
+1 case
+
+D ALS = +120
+D SFB =  0.5%
+
+Global mean
+
+3 cases
+
+D ALS =  39
+D SFB = +1.3%
+
+4 cases
+
+D ALS = +46
+
+D SFB = +0.27%
+
+Note: D ALS (in EUR) is the diﬀerence between the average loan size computed over the 6-month period following the transition and that computed over
+the previous 6-month period. D SFB is the diﬀerence between the share of female borrowers computed over the 6-month period following the transition
+and that computed over the previous 6-month period.
+* In one of the two cases, we use 3-month averages because the transition happened at the very end of the sample period.
+
+To ease comparisons, Table 7 presents the regression results
+with an emphasis on leaders’ gender combinations. 30 The
+benchmark is the situation of male managers associated with
+male-dominated boards. In this conﬁguration, changing the
+manager’s gender has a large and negative impact on the share
+of female borrowers, and a small and positive impact on the
+average loan size. Apparently, female managers favor loans
+to men as well as larger loans, but only when these managers
+are associated with male-dominated boards. In contrast, when
+the board is female-dominated, the eﬀects are reversed: female
+managers associated with female-dominated boards serve
+women preferably, and grant signiﬁcantly smaller loans than
+do their male colleagues under the same circumstances. Table 7
+also shows that male managers mitigate the social orientation
+of female-dominated boards. The average loan size granted by
+male managers is insensitive to gender dominance in the
+board. Still, the impact of female-dominated boards is visible
+through the moderately positive impact on the share of female
+borrowers.
+
+We
+
+boards
+
+show that
+
+female-dominated
+
+adopt
+loan-granting policies that are socially oriented and favorable
+to female borrowers. These results are in line with the ﬁndings
+of Chattopadhyay and Duﬂo (2004) and Beaman et al. (2011)
+on the action of female elected leaders in Indian villages. Less
+expectedly, they also conﬁrm evidence by Matsa and Miller
+(2011) on publicly traded US companies showing that female
+board members support the presence of women in the top
+management. 31 From this perspective, our ﬁndings fuel the
+debate that surrounds the notion of gender aﬃnity (“women
+for women”), sometimes opposed to women’s same-sex con-
+ﬂict, which according to Sheppard and Aquino (2014) is overly
+problematized.
+
+At the same time, our results show that the social perfor-
+mance of women leaders is closely linked to their role in the
+organization they serve. In ﬁnancial cooperatives, the behav-
+ior of female top managers contrasts with the attitude of
+women on the board. Our results suggest that female man-
+agers align their preferences on those of the majority of board
+members they work with. They neither prioritize social out-
+comes nor systematically pursue the ﬁnancial objective of
+
+the CU that appoints them. Rather, they tend to follow the
+policy rules set by their democratically elected local boards.
+In contrast, the average loan size corresponding to male man-
+agers is insensitive to LC board composition.
+
+An alternative explanation could be that female managers
+are powerless when associated with a male-dominated board.
+But this scenario is inconsistent with the facts. Indeed, female
+managers associated with male-dominated boards grant signif-
+icantly larger loans than do male managers associated with
+male-dominated boards. Female managers are thus eﬃcient
+in their work. Aligning their objectives on those of their local
+boards is not necessarily a sign of weakness.
+
+in the microﬁnance
+
+Our study might have policy implications. Prudently, we
+stick to tentative recommendations for ﬁnancial cooperatives
+in West Africa, keeping in mind that this speciﬁc form of gov-
+ernance is sponsored by local regulatory authorities. While the
+cooperative status has proven to deliver eﬀective social perfor-
+mance, it is still exposed to the new commercialization trend
+taking place
+industry (Hudon &
+Sandberg, 2013). 32 Our ﬁndings are in line with the bulk of
+the literature on gender and leadership, which associates
+female elected leaders with prevalence of social outcomes.
+Therefore, we speculate that female presence on the boards
+of ﬁnancial cooperatives act as a natural hedge against mission
+drift since female board members tend to devote more atten-
+tion than men to social performance. However, in this respect
+the evidence reveals that a small female presence is insuﬃcient.
+If socially minded gender quotas are to be imposed on boards,
+they should be close to 50%.
+
+seem to
+
+cooperatives
+
+But do ﬁnancial cooperatives in West Africa need gender
+quotas? Despite a women-friendly orientation associated with
+democratic principles, the governing and executive bodies of
+ﬁnancial
+predominantly
+male-dominated, albeit with a signiﬁcant minority of women
+involved. Overall, the ﬁnancial cooperatives under study have
+52% of female members, but only 32% of female board mem-
+bers and 31% of female top managers (ﬁgures from May
+2010). The shares of female board members and top managers
+are comparable to those provided by Strøm et al. (2014) for
+the microﬁnance
+(29% and 27%,
+
+industry worldwide
+
+be
+
+Table 7. Summary of results
+
+Board dominance
+
+Manager’s gender
+
+Share of female borrowers (SFB)
+
+Average loan size (ALS)
+
+Female
+Female
+Male
+Male
+
+Female
+Male
+Female
+Male
+
+++
++
+- -
+
+Benchmark
+
+- -
+=
++
+
+Note: + Signiﬁcantly positive estimate (at the 5% level) with moderate size (SFB below 3%, ALS below EUR 50), ++ signiﬁcantly positive estimate (at the
+5% level) with high size (SFB above 3%, ALS above EUR 50), - - signiﬁcantly negative estimate (at the 5% level) with high size, = insigniﬁcant estimate.
+
+446
+
+WORLD DEVELOPMENT
+
+respectively). In this respect, the ﬁgures in our study can be
+seen as an encouragement to impose quotas, like in Norway
+(Pande & Ford, 2011), in order to raise the shares of women
+in leadership positions.
+
+capacities
+
+about women’s
+
+However, gender quotas and reservations for women have
+well-known drawbacks, including reinforcement of negative
+stereotypes
+(Franceschet &
+Piscopo, 2008). Klettner, Clarke, and Boersma (2014) advo-
+cate the alternative strategy of soft regulation, such as corpo-
+rate governance codes with voluntary targets. In microﬁnance,
+issuing codes of ethics is common practice (Kleynjans &
+Hudon, 2014). Another concern relates to the availability of
+female leaders, at least in the short run (Adams & Ferreira,
+2009). Arguably, this concern is even more acute in developing
+economies, notably in Africa, than in developed ones. In sum,
+low quotas (around 30%) would be ineﬀective and high quotas
+(around 50%) would be hard to enforce. While gender quotas
+have proved successful in many cases, their application to
+ﬁnancial cooperatives in West Africa is probably premature.
+
+6. CONCLUSION
+
+Taking advantage of the double bottom line and the speciﬁc
+democratic networking structure of ﬁnancial cooperatives
+makes it possible to identify separately the policies followed
+by female-dominated boards and female top managers. First,
+our results suggest that female-dominated boards favor social
+orientation in loan-granting. Second, although careers are
+supervised by the CU, we ﬁnd that female managers behave
+in accordance with local authorities’ policies. This, in turn,
+could explain why the central authority is tempted to assign
+female managers to LCs with male-dominated boards, which
+are more rigid on ﬁnancial discipline. Hence, sending female
+managers to places where men are in the majority on the board
+is a way of pushing these women to serve the CU’s best inter-
+ests. As a result, our ﬁndings partly contradict the common
+wisdom according to which women are systematically more
+socially oriented than men under similar circumstances. While
+female-dominated boards enhance social loan allocation poli-
+cies, female managers associated with male-dominated boards
+do not mitigate the ﬁnancial discipline imposed by the board.
+In fact, they reinforce it.
+
+Admittedly, our database is limited to a single network of
+ﬁnancial cooperatives operating in Senegal. This restricts the
+external validity of our conclusions. Moreover, concerns
+about business conforming to social and ethical norms vary
+across countries (van den Heuvel, Soeters, & Go¨ ssling,
+2014). Further research could investigate how female top man-
+agers inﬂuence the social performance of hybrid institutions in
+both developed and developing countries. 33 In addition, the
+governance of cooperatives is more complex than that of
+for-proﬁt ﬁrms (Cornforth, 2004; Hudon & Pe´rilleux, 2014).
+In particular, aside from securing the ﬁnancial sustainability
+
+of the whole network, the objectives of the CU are not
+clear-cut. Therefore it is diﬃcult, if not impossible, to assess
+whether top managers’ behavior is aligned with their employ-
+er’s objectives. The best we could do is compare the on-ﬁeld
+interactions of male and female managers with their local
+board members. Admittedly, this leaves room for further
+investigation into tensions between social and ﬁnancial perfor-
+mance from a gender perspective.
+
+Worldwide, not-for-proﬁt and hybrid organizations are typ-
+ically less reluctant than for-proﬁts to hire female top man-
+agers. The sector is also known for producing higher job
+satisfaction than for-proﬁt ﬁrms do (Benz, 2005). So far, these
+two features have been observed independently. They may
+possibly be linked. Female managers’ tendency to behave
+consensually can indeed contribute to enhancing overall satis-
+faction, not only among co-workers but also among members
+of governing bodies. 34
+
+Importantly, our dataset comes from Africa whereas exist-
+ing evidence on managerial leadership concentrates on indus-
+trialized countries. While leaders’ attitudes are known to be
+sensitive to corporate context, the way they correlate with
+country-level development is still terra incognita. It is often
+advocated that empowering the female workforce is an eﬃ-
+cient means to reach development goals. Still, empowering
+women within the corporate world is hard without deeper cul-
+tural and legal changes within societies (Duﬂo, 2012; Ganle,
+Afriyie, & Segbeﬁa, 2015; Garikipati, 2008). On the other
+hand, Mersland and Strøm (2009) and D’Espallier, Gue´rin,
+and Mersland (2013) use global data to show that female
+CEOs can make a diﬀerence in the management of MFIs.
+Our results conﬁrm their ﬁndings and detail the mechanisms
+that take place at the micro level. They also enrich the analysis
+by looking at the interaction between managers’ and elected
+members’ leadership.
+
+The leadership literature theory provides rationales for the
+behavioral evidence detected in our analysis. First, female
+managers are less inclined than men to deﬁne career success
+in terms of promotion (Sturges, 1999), and legitimacy is
+known to be a major driver of female managerial action
+(Silverman, Slemrod, & Uler, 2014). 35 Second, female man-
+agers typically adopt a participative style and use their rela-
+tional skills (Buttner, 2001; Eagly, 1987). When they depart
+from this gender role, they are judged more harshly than their
+male colleagues, and they may suﬀer social reprisals. All these
+arguments could explain why female managers tend to adopt
+people-oriented leadership styles and refrain from hurting
+the feelings of local board members even though the latter
+have almost no impact on their careers. From a theoretical
+perspective, our results extend the validity of the gender con-
+gruity theory in leadership beyond industrialized countries.
+Further work is still needed to explore how far women leaders
+in developing countries can bring the social agenda of ﬁnancial
+inclusion to the forefront.
+
+NOTES
+
+1. See Jones and Kalmi (2009) for a worldwide survey of the cooperative
+sector.
+
+2. Nevertheless, Strøm, D’Espallier, and Mersland (2014) show that
+female leadership has a positive impact on the performance of
+microﬁnance institutions.
+
+3. Although ﬁnancial cooperatives serve a fairly high share of women,
+they are surpassed by other types of microcredit providers. In a sweeping
+analysis of the microﬁnance sector, Mersland (2009) shows that ﬁnancial
+cooperative membership is gender-balanced, with an average of 51.9%
+women. Nevertheless, microﬁnance institutions with a for-proﬁt and an
+NGO status manage to obtain higher rates by serving 55% and 82.1% of
+
+WOMEN LEADERS AND SOCIAL PERFORMANCE: EVIDENCE FROM FINANCIAL COOPERATIVES IN SENEGAL
+
+447
+
+female clients, respectively. D’Espallier, Gue´rin, and Mersland (2011) also
+stress that NGOs are more likely than ﬁnancial cooperatives and for-proﬁt
+microﬁnance institutions to adopt women-friendly policies.
+
+4. The situation varies across ethnic groups. Women from originally
+nomadic groups, such as Peulh and Hall Peular, tend to have fewer
+responsibilities than those from Wolof and Serere groups (Creevey, 1991).
+
+5. The ROSCA members meet on a regular basis. In each meeting, the
+members contribute a ﬁxed amount to a common pot. This pot goes to a
+member designated in a strict alternation pattern. As a result, the member
+who gets the pot is a borrower, and the others are savers.
+
+16.
+
+Interview conducted on January 21, 2010.
+
+17. Desrochers and Fischer (2005) conﬁrm that ﬁnancial cooperatives
+that are more closely integrated are more ﬁnancially sustainable.
+
+18. T his analysis was
+su pplem ented by Eagly and
+Johannesen-Schmidt (2001). Druskat (1994) and Meinhard and Foster
+(2003) observe similar characteristics in not-for-proﬁt institutions.
+
+later
+
+19. Women are not only poorer than men on average; they are also better
+credit risks than men (D’Espallier et al., 2011). See Servet (2011) on
+corporate responsibility and social performance.
+
+6. To avoid confusing them with traditional cooperatives, the ﬁnancial
+cooperatives have a speciﬁc name (in French: “Mutuelles d’e´pargne et de
+cre´dit”).
+
+20. See Hermes and Lensink (2007). For a macro perspective, see also
+Imai, Gaiha, Thapa, and Annim (2012).
+
+7. WAEMU is composed of Benin, Burkina Faso, Ivory Coast,
+Guinea-Bissau, Mali, Niger, Senegal, and Togo. It was created in 1994
+to replace the West African Economic and Monetary Union, intensify the
+intra-zone trade, and reinforce the supervision of public deﬁcits (Seck,
+2013). WAEMU has a single currency, the CFA franc (CFAF), which has
+a ﬁxed parity with the euro (EUR 1 = CFAF 655.957). CFAF is regulated
+by BCEAO, the WAEMU Central Bank. The laws enacted by the
+WAEMU Council of Ministers are later enforced in each member state by
+means of national decrees. Regarding microﬁnance, WAEMU countries
+share a common microﬁnance regulatory framework, and BCEAO is in
+charge of supervising large microﬁnance institutions.
+
+8. Created in 1970, DID is the NGO arm of the Desjardins Group, which
+is the largest cooperative ﬁnancial group in Canada (Desrochers &
+Fischer, 2005). Desjardins Group is a network of 376 ﬁnancial
+cooperatives and 864 service points. In 2013, its consolidated total asset
+reached USD 179 billion. DID’s objective is to help disadvantaged
+communities in developing countries to access ﬁnancial services. DID
+develops and supports microﬁnance institutions worldwide, and shares
+Desjardins’ expertise and experience with its sponsored institutions.
+
+9. PARMEC is the acronym (in French) for “Programme d’Appui a` la
+Re´forme des Mutuelles d’Epargne et de Cre´dit.”
+
+10. Large MFIs are those with total savings and/or total credit over
+EUR 3 million.
+
+11. More precisely, 39% for CMS, 30.3% for UM-PAMECAS, and 8.4%
+for ACEP (Direction de la Microﬁnance, June 2013).
+
+12. Over the 50 Senegalese MFIs recorded by the Microﬁnance Infor-
+mation Exchange (MIX) for year 2013, one is shareholder-owned, four are
+NGOs, 15 are networks of ﬁnancial cooperatives, and 30 are small isolated
+ﬁnancial cooperatives, some of which serving around 500 members only
+(http://www.mixmarket.org/).
+
+In developed countries, decentralization is a key feature of social
+
+13.
+banks (Corne´e & Szafarz, 2014).
+
+21. We have omitted the few group loans and those for which the sex of
+the borrower is unclear, leaving us with a total of 193,050 loans.
+
+22.
+In our database, a board member is any elected member of a
+governing body (board, credit committee, or LC supervisory committee).
+
+23. The typical staﬀ of an LC includes one manager, one chief cashier,
+four cashiers and three credit oﬃcers. The top manager supervises
+operations, the chief cashier is in charge of accounting, the cashiers take
+care of ﬁnancial transactions with members, and the credit oﬃcers analyze
+credit applications and subsequently enforce repayment. Overall, LC staﬀs
+are gender balanced. In May 2010, 50% of the LC employees were female.
+However, women are under-represented in top managerial position.
+
+24. AFSSEF means “Access to ﬁnancial services for Senegalese women”
+(in French: Acce`s des Femmes Se´ne´galaises aux Services Financiers).
+
+25. These typically larger loans require an additional approval by the CU
+(1.1% of the sample).
+
+In ﬁne loans are meant to ﬁnance agriculture, stockbreeding, and
+
+26.
+other activities that generate irregular cash ﬂows.
+
+27. Agier and Szafarz (2013b) analyze the multiple causes of gendered
+diﬀerences in loan size.
+
+28. The average loan size represents 50% of the PPP Senegalese GNI per
+capita in 2010 (WBI, 2011). This is in line with the general average size of
+ﬁnancial cooperatives’ loans in microﬁnance, which reaches 51% of the
+GNI per capita (Pe´rilleux, Hudon, & Bloy, 2012).
+
+29.
+In the literature, two variables are typically used to proxy ﬁnancial
+cooperative size:
+total assets and number of members. To avoid
+multicollinearity, only one of
+these variables may be included in
+regressions. Here, we have favored total assets, for which we have
+accurate monthly observations. In contrast, in our database the number of
+members is updated only a few times a year.
+
+30. Table 12 in Appendix C features the FE estimates.
+
+14. One hundred members need to be present to conduct elections. The
+sizes of the local governing body are standardized throughout the
+network. In practice however, these sizes may slightly deviate from their
+target values due to unexpected circumstances.
+
+31. Likewise, Kurtulus and Tomaskovic-Devey (2012) show that female
+top managers promote gender diversity in mid-level management
+positions.
+
+15. Before 2003, the local staﬀ was partly recruited by local boards.
+Centralization is supposed to ensure that wage policy is consistent and
+that staﬀ are independent from the local authorities (Tutunji & Serres,
+2005).
+
+32. Brie`re and Szafarz (2015) mention that
+the convergence of
+microﬁnance toward mainstream ﬁnance can be accompanied by a
+reduction in the proportion of female borrowers served.
+
+448
+
+WORLD DEVELOPMENT
+
+33. The book “Women in Management Worldwide” edited by Davidson
+and Burke (2011) oﬀers interesting international comparisons. However,
+the only African country present in the survey is South Africa.
+
+35. Garcı´a-Pen˜alosa and Konte (2014) suggest that fear of conﬂict could
+explain why African women are reluctant to support democracy as
+strongly as men do.
+
+34. Matsa and Miller (2013) show that the Norwegian ﬁrms aﬀected by
+the 2006 gender quota (i.e., at least 40% women in the board of publicly
+traded companies) undertook fewer workforce reductions.
+
+REFERENCES
+
+Adams, R. B., & Ferreira, D. (2009). Women in the boardroom and their
+impact on governance and performance. Journal of Financial Eco-
+nomics, 94(2), 291–309.
+
+D’Espallier, B., Gue´rin, I., & Mersland, R. (2013). Focus on women in
+microﬁnance institutions. Journal of Development Studies, 49(5),
+589–608.
+
+Agier, I., & Szafarz, A. (2013a). Microﬁnance and gender: Is there a glass
+
+D’Espallier, B., Hudon, M., & Szafarz, A. (2013). Unsubsidized micro-
+
+ceiling on loan size?. World Development, 42, 165–181.
+
+ﬁnance institutions. Economics Letters, 120(2), 174–176.
+
+Agier, I., & Szafarz, A. (2013b). Subjectivity in credit allocation to micro-
+entrepreneurs: Evidence from Brazil. Small Business Economics, 41(1),
+263–275.
+
+Armenda´riz, B., & Morduch, J. (2010). The economics of microﬁnance.
+
+Cambridge, MA: MIT Press.
+
+Armenda´riz, B., & Szafarz, A. (2011). On mission drift in microﬁnance
+institutions. In B. Armendariz, & M. Labie (Eds.), The handbook of
+microﬁnance (pp. 341–366). London-Singapore: World Scientiﬁc Pub-
+lishing.
+
+BCEAO. (2012). Le secteur de la microﬁnance dans l’UMOA depuis 1992.
+
+Dakar, Senegal: Banque Centrale des Etats de l’Afrique de l’Ouest.
+
+BCEAO. (2013). Statistics. December, Dakar, Senegal.
+Beaman, L., Duﬂo, E., Pande, R., & Topalova, P. (2011). Political
+reservation and substantive representation: Evidence from Indian
+village councils. In S. Bery, B. Bosworth, & A. Panagariya (Eds.), India
+Policy Forum 2010–11 (Vol. 7), pp. 159–191.
+
+Benz, M. (2005). Not for the proﬁt, but for the satisfaction? Evidence on
+
+worker well-being in non-proﬁt ﬁrms. Kyklos, 58(2), 155–176.
+
+Bernardi, R. A., Bosco, S. M., & Columb, V. L. (2009). Does female
+representation on boards of directors associate with the ‘most ethical
+companies’ list?. Corporate Reputation Review, 12, 270–280.
+
+Boehe, D. M., & Cruz, L. B.
+
+(2013). Gender and microﬁnance
+performance: Why does the institutional context matter?. World
+Development, 47, 121–135.
+
+Boucher, S., Barham, B., & Branch, B. (1993). Financial market niche:
+Member behavior proﬁle credit unions in Guatemala, 1987–1992.
+World Council of credit unions research monograph series. Madison,
+Wisconsin.
+
+Branisa, B., Klasen, S., & Ziegler, M. (2013). Gender inequality in social
+institutions and gendered development outcomes. World Development,
+45, 252–268.
+
+Brie`re, M., & Szafarz, A. (2015). Does commercial microﬁnance belong to
+the ﬁnancial sector? Lessons from the stock market. World Develop-
+ment, 67, 110–125.
+
+Buttner, E. H. (2001). Examining female entrepreneurs’ management style:
+An application of a relational frame. Journal of Business Ethics, 29(3),
+253–269.
+
+Chapelle, A., & Szafarz, A. (2005). Controlling ﬁrms through the majority
+
+voting rule. Physica A, 355, 509–529.
+
+Chattopadhyay, R., & Duﬂo, E. (2004). Women as policy makers:
+Evidence from a randomized policy experiment in India. Econometrica,
+72(5), 1409–1443.
+
+Corne´e, S., & Szafarz, A. (2014). Vive la diﬀe´rence: Social banks and
+reciprocity in the credit market. Journal of Business Ethics, 125,
+361–380.
+
+Cornforth, C.
+
+(2004). The governance of cooperatives and mutual
+associations: A paradox perspective. Annals of Public and Cooperative
+Economics, 75(1), 11–32.
+
+Creevey, L. E. (1991). The impact of Islam on women in Senegal. Journal
+
+of Developing Areas, 25(3), 347–368.
+
+Cuadrado, I., Navas, M., Ferrer, E., & Morales, J. F. (2012). Gender
+diﬀerences in leadership styles as a function of subordinates’ sex and
+type of organization. Journal of Applied Social Psychology, 42,
+3083–3113.
+
+D’Espallier, B., Gue´rin, I., & Mersland, R. (2011). Women and repayment
+in microﬁnance: A global analysis. World Development, 39(5), 758–772.
+
+Das, P. (2014). Women’s participation in community-level water gover-
+nance in urban India: The gap between motivation and ability. World
+Development, 64, 206–218.
+
+Davidson, M. J., & Burke, R. J. (Eds.) (2011). Women in management
+worldwide: Progress and prospects (2nd ed.). Farnham, UK: Gower
+Publishing Ltd..
+
+Deaton, A. S. (1997). The analysis of household surveys: A microeconomic
+approach to development policy. Baltimore and London: World Bank
+Publication, Johns Hopkins University Press.
+
+Desrochers, M., & Fischer, K. P. (2005). The power of networks:
+Integration and ﬁnancial cooperative performance. Annals of Public
+and Cooperative Economics, 76(3), 307–354.
+
+Direction de la Microﬁnance. (2013). Rapport sur la situation globale du
+secteur de la microﬁnance au 30 juin 2013. Dakar, Senegal: Comite´
+National de Coordination des activite´s de microﬁnance.
+
+Dobbins, G. H., & Platz, S. J. (1986). Sex diﬀerences in leadership: How
+
+real are they?. Academy of Management Review, 11(1), 118–127.
+
+Druskat, V. U. (1994). Gender and leadership style: Transformational and
+transactional leadership in the Roman Catholic Church. Leadership
+Quarterly, 5(2), 99–119.
+
+Duﬂo, E. (2012). Women’s empowerment and economic development.
+
+Journal of Economic Literature, 50(4), 1051–1079.
+
+Eagly, A. H. (1987). Sex diﬀerences in social behavior: A social-role
+
+interpretation. Hillsdale, NJ: Erlbaum.
+
+Eagly, A. H., & Carli, L. L. (2003). The female leadership: An evaluation
+
+of the evidence. Leadership Quarterly, 14(6), 807–834.
+
+Eagly, A. H., & Johannesen-Schmidt, M. C. (2001). The leadership styles
+
+of women and men. Journal of Social Issues, 57(4), 1540–1560.
+
+Eagly, A. H., & Johnson, B. T. (1990). Gender and leadership style: A
+
+meta-analysis. Psychological Bulletin, 108(2), 233–256.
+
+Eagly, A. H., & Karau, S. J. (2002). Role congruity theory of prejudice
+
+toward female leaders. Psychological Review, 109(3), 573–598.
+
+Fine, M. G.
+
+(2009). Women’s leaders’ discursive constructions of
+
+leadership. Women’s Studies in Communication, 32(2), 180–202.
+
+Fletschner, D. (2009). Rural women’s access to credit: Market imperfec-
+tions and intra-household dynamics. World Development, 37(3),
+618–631.
+
+Forsyth, D. R., Heiney, M. M., & Wright, S. S. (1997). Biases in
+appraisals of women leaders. Group Dynamics: Theory, Research, and
+Practice, 1(1), 98–103.
+
+Franceschet, S., & Piscopo, J. M. (2008). Gender quotas and women’s
+substantive representation: Lessons from Argentina. Politics and
+Gender, 4(3), 393–425.
+
+Ganle, J. K., Afriyie, K., & Segbeﬁa, A. Y.
+
+(2015). Microcredit:
+Empowerment and disempowerment of rural women in Ghana. World
+Development, 66, 335–345.
+
+Garcı´a-Pen˜alosa, C., & Konte, M. (2014). Why are women less democratic
+than men? Evidence from Sub-Saharan African countries. World
+Development, 59, 104–119.
+
+Garikipati, S. (2008). The impact of lending to women on household
+vulnerability and women’s empowerment: Evidence from India. World
+Development, 36(12), 2620–2642.
+
+Goldman, M. J., & Little, J. S. (2015). Innovative grassroots NGOs and
+the complex process of women’s empowerment: An empirical inves-
+tigation from Northern Tanzania. World Development, 66, 762–777.
+
+Gue´rin, I. (2008). Women and money: Lessons from Senegal. Development
+
+and Change, 37(3), 549–570.
+
+WOMEN LEADERS AND SOCIAL PERFORMANCE: EVIDENCE FROM FINANCIAL COOPERATIVES IN SENEGAL
+
+449
+
+Hartarska, V., Mersland, R., & Nadolnyak, D. (2014). Are women better
+bankers to the poor? Evidence from rural microﬁnance institutions.
+American Journal of Agricultural Economics (in press).
+
+Hausman, J. A. (1978). Speciﬁcation tests in econometrics. Econometrica,
+
+46(6), 1251–1271.
+
+Hausman, J. A., & Taylor, W. E. (1981). Panel data and unobservable
+
+individual eﬀects. Econometrica, 49(6), 1377–1398.
+
+Heenan, D., & McLaughlin, R. (2002). Re-assessing the role of credit
+unions in community development: A case study of Derry credit union,
+Northern Ireland. Community Development Journal, 37(3), 249–259.
+
+Hermes, N., & Lensink, R. (2007). The empirics of microﬁnance: What do
+
+we know?. Economic Journal, 117(517), F1–F10.
+
+Hermes, N., Lensink, R., & Meesters, A. (2011). Outreach and eﬃciency
+
+of microﬁnance institutions. World Development, 39(6), 938–948.
+
+Howson, C. (2013). Adverse incorporation and microﬁnance among cross-
+
+border traders in Senegal. World Development, 42, 199–208.
+
+Hudon, M., & Pe´rilleux, A. (2014). Surplus distribution and character-
+istics of social enterprises: Evidence from microﬁnance. Quarterly
+Review of Economics and Finance, 54(2), 147–157.
+
+Hudon, M., & Sandberg, J. (2013). The ethical crisis in microﬁnance:
+Issues, ﬁndings, and implications. Business Ethics Quarterly, 23,
+561–589.
+
+Imai, K. S., Gaiha, R., Thapa, G., & Annim, S. K. (2012). Microﬁnance
+and poverty—A macro perspective. World Development, 40(8),
+1675–1689.
+
+Jones, D. C., & Kalmi, P. (2015). Membership and performance in ﬁnnish
+ﬁnancial cooperatives: A new view of cooperatives? Review of Social
+Economy (in press).
+
+Jones, D. C., & Kalmi, P. (2009). Trust, inequality and the size of the
+cooperative sector: Cross-country evidence. Annals of Public and
+Cooperative Economics, 80(2), 165–195.
+
+Klettner, A., Clarke, T., & Boersma, M. (2014). Strategic and regulatory
+approaches to increasing women in leadership: Multilevel targets and
+mandatory quotas as levers for cultural change. Journal of Business
+Ethics, 122, 145–165.
+
+Kleynjans, L., & Hudon, M. (2014). A study of codes of ethics for
+Mexican microﬁnance institutions. Journal of Business Ethics (in
+press).
+
+Kolb, J. A. (1999). The eﬀect of gender role, attitude toward leadership,
+and self-conﬁdence on leader emergence: Implications for leadership
+development. Human Resource Development Quarterly, 10(4), 305–320.
+Korabik, K., Baril, G. L., & Watson, C. (1993). Managers’ conﬂict
+management style and leadership eﬀectiveness: The moderating eﬀects
+of gender. Sex Roles, 29(5–6), 405–420.
+
+Kurtulus, F. D., & Tomaskovic-Devey, D.
+
+Krishnan, H. A., & Park, D. (2005). A few good women—On top
+management teams. Journal of Business Research, 58(12), 1712–1720.
+(2012). Do female top
+managers help women to advance? A panel study using EEO-1
+records. Annals of the American Academy of Political and Social
+Science, 639(1), 173–197.
+
+Lyon, F., & Humbert, A. L. (2012). Gender balance in the governance of
+
+social enterprise. Local Economy, 27(8), 831–845.
+
+Lyons, M., & Snoxell, S. (2005). Sustainable urban livelihoods and
+marketplace social capital: Crisis and strategy in petty trade. Urban
+Studies, 42(8), 1301–1320.
+
+Matsa, D. A., & Miller, A. R. (2011). Chipping away at the glass ceiling:
+Gender spillovers in corporate leadership. American Economic Review,
+101(3), 635–639.
+
+Matsa, D. A., & Miller, A. R. (2013). A female style in corporate
+leadership? Evidence from quotas. American Economic Journal:
+Applied Economics, 5(3), 136–169.
+
+Mayoux, L. (2001). Tackling the down side: Social capital, women’s
+empowerment and micro-ﬁnance in Cameroon. Development and
+Change, 32, 435–464.
+
+McKillop, D. G., Briscoe, R., McCarthy, O., Ward, M., & Ferguson, C.
+(2003). Irish credit unions: Exploring the gender mix. Voluntas:
+International Journal of Voluntary and Nonproﬁt Organizations, 14(3),
+339–358.
+
+Meinhard, A. G., & Foster, M. K. (2003). Diﬀerences in the response of
+women’s voluntary organizations to shifts in Canadian public policy.
+Nonproﬁt and Voluntary Sector Quarterly, 32(3), 366–396.
+
+Mersland, R. (2009). The cost of ownership in microﬁnance organizations.
+
+World Development, 37(2), 469–478.
+
+Mersland, R., & Strøm, R. Ø. (2009). Performance and governance in
+microﬁnance institutions. Journal of Banking & Finance, 33(4),
+662–669.
+
+Moser, C. O. N. (1989). Gender planning in the third world: Meeting
+practical and strategic gender needs. World Development, 17(11),
+1799–1825.
+
+Noponen, H. (1991). The dynamics of work and survival for the urban
+poor: A gender analysis of panel data from Madras. Development and
+Change, 22(2), 233–260.
+
+Ogden, S. M., McTavish, D., & McKean, L. (2006). Clearing the way for
+gender balance in the management of the UK ﬁnancial services
+industry: Enablers and barriers. Women in Management Review, 21(1),
+40–53.
+
+O¨ zbilgin, M. F., & Woodward, D. (2004). ‘Belonging’ and ‘otherness’: Sex
+equality in banking in Turkey and Britain. Gender, Work & Organi-
+zation, 11(6), 668–688.
+
+Pande, R., & Ford, D. (2011). Gender quotas and female leadership: A
+review, Harvard University, Background Paper for the World Devel-
+opment Report on Gender.
+
+Pe´rilleux, A. (2013). Strategic governance lessons from history for West
+African microﬁnance cooperatives: A way to encourage investments in
+rural areas. Strategic Change: Brieﬁngs in Entrepreneurial Finance, 22,
+95–106.
+
+Pe´rilleux, A., Hudon, M., & Bloy, E. (2012). Surplus distribution in
+microﬁnance: Diﬀerences among cooperative, nonproﬁt, and share-
+holder forms of ownership. Nonproﬁt and Voluntary Sector Quarterly,
+41(3), 386–404.
+
+Perry, D. L. (2005). Wolof women, economic liberalization, and the crisis
+
+of masculinity in rural Senegal. Ethnology, 44(3), 207–226.
+
+Petit, P. (2007). The eﬀects of age and family constraints on gender hiring
+discrimination: A ﬁeld experiment in the French ﬁnancial sector.
+Labour Economics, 14(3), 371–391.
+
+Razavi, S. (1997). Fitting gender into development institutions. World
+
+Development, 25(7), 1111–1125.
+
+Ryan, M. K., & Haslam, S. A. (2007). The glass cliﬀ: Exploring the
+dynamics surrounding the appointment of women to precarious
+leadership positions. Academy of Management Review, 32(2), 549–572.
+Schreiner, M. (2002). Aspects of outreach: A framework for discussion of
+the social beneﬁts of microﬁnance. Journal of International Develop-
+ment, 14, 591–603.
+
+Seck, D. (2013). Fifteen years of WAEMU: Results and strategies for the
+(Eds.), Wealth through
+integration and poverty-reduction strategies in
+
+future. In E. T. Ayuk, & S. T. Kabore´
+integration. Regional
+West Africa. New York: Springer.
+
+Servet, J.-M. (2011). Corporate responsibility versus social performance
+and ﬁnancial inclusion. In B. Armendariz, & M. Labie (Eds.), The
+handbook of microﬁnance (pp. 301–322). London-Singapore: World
+Scientiﬁc Publishing.
+
+Sheppard, L. D., & Aquino, K. (2014). Sisters in arms. A theory of female
+same-sex conﬂict and its problematization in organizations. Journal of
+Management (in press).
+
+Silverman, D., Slemrod, J., & Uler, N. (2014). Distinguishing the role of
+authority “in” and authority “to”. Journal of Public Economics, 113,
+32–42.
+
+Smith, N., Smith, V., & Verner, M. (2006). Do women in top management
+aﬀect ﬁrm performance? A panel study of 2,500 Danish ﬁrms.
+International Journal of Productivity and Performance Management,
+55(7), 569–593.
+
+Smith, W. J., Wokutch, R. E., Harrington, K. V., & Dennis, B. S. (2001).
+An examination of the inﬂuence of diversity and stakeholder role on
+corporate social orientation. Business & Society, 40, 266–294.
+
+Sow, F. (2003). Fundamentalisms, globalisation and women’s human
+
+rights in Senegal. Gender & Development, 11(1), 69–76.
+
+Strøm, R. Ø., D’Espallier, B., & Mersland, R. (2014). Female leadership,
+performance, and governance in microﬁnance institutions. Journal of
+Banking & Finance, 42(C), 60–75.
+
+Sturges, J. (1999). What it means to succeed: Personal conceptions of
+career success held by male and female managers at diﬀerent ages.
+British Journal of Management, 10(3), 239–252.
+
+Tall Ba, S., & Cisse´, W. (2009). Rapport social – Evaluation SPI du re´ seau
+
+PAMECAS. Cerise report.
+
+Tchakoute-Tchuigoua, H. (2010). Is there a diﬀerence in performance by
+the legal status of microﬁnance institutions?. Quarterly Review of
+Economics and Finance, 50(4), 436–442.
+
+450
+
+WORLD DEVELOPMENT
+
+Teasdale, S., McKay, S., Phillimore, J., & Teasdale, N. (2011). Exploring
+gender and social entrepreneurship: Women’s leadership, employment
+and participation in the third sector and social enterprises. Voluntary
+Sector Review, 2(1), 57–76.
+
+Tutunji, H., & Serres, P. (2005). PAMECAS, Senegal. Planet rating report.
+
+Saint Ouen, France.
+
+van den Heuvel, G., Soeters, J., & Go¨ssling, T. (2014). Global business,
+global responsibilities. Corporate social responsibility orientations
+within a multinational bank. Business and Society, 53(3), 378–413.
+
+Vecchio, R. P. (2002). Leadership and gender advantage. Leadership
+
+Quarterly, 13, 643–671.
+
+Vecchio, R. P.
+
+(2003). In search of gender advantage. Leadership
+
+Quarterly, 14, 835–850.
+
+Waldman, D. A., Siegel, D. S., & Javidan, M. (2006). Components of
+CEO transformational leadership and corporate social responsibility.
+Journal of Management Studies, 43(8), 1703–1725.
+
+WBI.
+
+(2011). World Bank
+
+Indicators,
+
+Statistics
+
+for
+
+2011.
+
+<http://data.worldbank.org/indicator>.
+
+Wyndow, P., Li, J., & Mattes, E. (2013). Female empowerment as a core
+driver of democratic development: A dynamic panel model from 1980
+to 2005. World Development, 52, 34–54.
+
+APPENDIX A. LC CHARACTERISTICS
+
+Table 8. LC general characteristics (May 2010)
+
+LC
+
+MEC YD
+MEC Bargny
+MEC REST
+MEC Plateau
+MEC ZOR
+MEC MBAO
+MEC TG
+MEC DIAM
+MEC ZOMA
+MEC ZONY
+MEC IB
+MEC GR
+MEC NI
+MEC MAC
+MEC KAW
+MEC ZON
+MEC ZOG
+MEC REL
+MEC PAG
+MEC OUAKAM
+MEC NGOR
+MEC SOM
+MEC BT
+MEC CDGY
+MEC PA
+MEC Y
+MEC MBOUR
+MEC THIES
+MEC TIVAOUANE
+MEC Touba
+MEC Louga
+MEC Dahra
+MEC Kebemer
+MEC Saint-Louis
+MECRT Richard-Tall
+MEC NDIOUM
+
+Mean value
+
+Region
+
+Ruﬁsque
+Ruﬁsque
+Ruﬁsque
+Ruﬁsque
+Ruﬁsque
+
+Pikine
+Pikine
+Pikine
+Pikine
+Pikine
+Pikine
+Pikine
+Pikine
+Pikine
+
+Gue´diawaye
+Gue´diawaye
+Gue´diawaye
+Gue´diawaye
+Gue´diawaye
+
+Dakar
+Dakar
+Dakar
+Dakar
+Dakar
+Dakar
+Dakar
+Thies
+Thies
+Thies
+Touba
+Louga
+Louga
+Louga
+
+Saint-Louis
+Saint-Louis
+Saint-Louis
+
+Location
+
+Rural
+
+Periurban
+Periurban
+Periurban
+Periurban
+Periurban
+
+Urban
+Urban
+
+Periurban
+
+Urban
+Urban
+Urban
+Urban
+Urban
+Urban
+Urban
+Urban
+Urban
+Urban
+Urban
+Urban
+Urban
+Urban
+Urban
+Urban
+Urban
+
+Periurban
+
+Urban
+
+Periurban
+
+Urban
+
+Periurban
+
+Rural
+
+Periurban
+
+Urban
+Rural
+Rural
+
+Creation date
+
+Total asset (in EURk)
+
+1998
+1996
+1996
+1996
+1996
+1999
+1999
+1996
+1996
+1996
+1997
+1996
+1996
+2000
+1996
+1996
+1996
+1997
+1996
+1997
+1999
+1998
+1998
+1999
+1999
+2006
+2003
+2004
+2004
+2007
+2006
+2006
+2006
+2006
+2006
+2006
+
+901
+1,503
+989
+1,408
+1,257
+975
+1,178
+1,545
+2,011
+1,714
+2,570
+1,128
+1,629
+1,280
+1,255
+1,503
+1,444
+942
+2,135
+2,593
+737
+963
+2,500
+2,281
+1,661
+2,055
+3,410
+4,758
+1,599
+1,630
+1,454
+860
+945
+1,212
+705
+651
+
+1,594
+
+WOMEN LEADERS AND SOCIAL PERFORMANCE: EVIDENCE FROM FINANCIAL COOPERATIVES IN SENEGAL
+
+451
+
+LC
+
+Members
+
+Governance
+
+Loans
+
+Table 9. LC social characteristics (May 2010)
+
+Total
+
+Share of female
+
+Share of female board
+
+members
+
+members
+
+Female top
+
+manager
+
+Share of female
+
+Average loan size
+
+borrowers
+
+(EUR)
+
+MEC YD
+MEC Bargny
+MEC REST
+MEC Plateau
+MEC ZOR
+MEC MBAO
+MEC TG
+MEC DIAM
+MEC ZOMA
+MEC ZONY
+MEC IB
+MEC GR
+MEC NI
+MEC MAC
+MEC KAW
+MEC ZON
+MEC ZOG
+MEC REL
+MEC PAG
+MEC OUAKAM
+MEC NGOR
+MEC SOM
+MEC BT
+MEC CDGY
+MEC PA
+MEC Y
+MEC MBOUR
+MEC THIES
+MEC Tivaouane
+MEC Touba
+MEC Louga
+MEC Dahra
+MEC Kebemer
+MEC Saint-Louis
+MEC Richard-Tall
+MEC NDIOUM
+
+Mean value
+
+4,626
+12,644
+10,531
+9,942
+10,037
+7,240
+6,519
+13,973
+17,184
+15,907
+20,212
+9,875
+14,589
+7,387
+10,737
+11,758
+11,673
+7,121
+14,560
+13,785
+4,147
+8,345
+19,228
+18,336
+15,210
+5,819
+24,055
+29,825
+10,772
+10,857
+5,569
+4,141
+4,000
+5,634
+3,585
+3,371
+
+11,200
+
+a Data from December 2009.
+
+0.47
+0.52
+0.53
+0.57
+0.48
+0.46
+0.49
+0.55
+0.46
+0.51
+0.58
+0.51
+0.49
+0.55
+0.46
+0.53
+0.49
+0.53
+0.56
+0.47
+0.38
+0.47
+0.51
+0.50
+0.54
+0.38
+0.48
+0.57
+0.59
+0.83
+0.49
+0.62
+0.51
+0.66
+0.53
+0.55
+
+0.52
+
+0.32
+0.16
+0.32
+0.58
+0.21
+0.36
+0.32
+0.71
+0.19
+0.53
+0.37
+0.36
+0.17
+0.18
+0.36
+0.26
+0.21
+0.37
+0.45
+0.00
+0.37a
+0.29
+0.17
+0.00
+0.33
+0.00
+0.47
+0.58
+0.32
+0.36
+0.36
+0.45
+0.27
+0.55
+0.10
+0.45
+
+0.32
+
+1
+0
+1
+0
+1
+0
+0
+1
+0
+0
+0
+0
+0
+1
+0
+1
+1
+0
+0
+1
+0
+1
+1
+0
+0
+0
+0
+1
+0
+0
+0
+0
+0
+0
+0
+0
+
+0.31
+
+0.49
+0.68
+0.53
+0.63
+0.67
+0.70
+0.29
+0.55
+0.60
+0.68
+0.64
+0.45
+0.75
+0.58
+0.58
+0.58
+0.64
+0.72
+0.64
+0.63
+0.55
+0.66
+0.57
+0.70
+0.74
+0.49
+0.60
+0.55
+0.52
+0.46
+0.47
+0.68
+0.47
+0.55
+0.58
+0.60
+
+0.59
+
+776
+433
+756
+721
+591
+941
+568
+679
+796
+658
+917
+825
+558
+1,055
+858
+673
+808
+719
+1,369
+970
+1,072
+784
+993
+908
+1,035
+1,119
+918
+610
+494
+501
+1,002
+552
+576
+714
+590
+520
+
+780
+
+APPENDIX B. ADDITIONAL DESCRIPTIVE STATISTICS
+
+Loan type
+
+AFSSEF
+
+Small-business
+Personal
+Medium-business
+In ﬁne
+
+Table 10. Loan typology
+
+Purpose
+
+Share of loan
+portfolio (%)
+
+Average loan
+size (EUR)
+
+Average duration
+
+(months)
+
+Interest
+rate (%)
+
+Speciﬁc loans with lower guarantee to
+facilitate female members access to loans
+Regular loans for commercial activities
+Loans for personal purpose
+Larger loans for small enterprises
+Loans with bullet repayment to ﬁnance
+stockbreeding and agriculture
+
+52.6
+
+33.1
+10.4
+1.1
+2.0
+
+308
+
+813
+824
+9,486
+499
+
+12
+
+13
+19
+22
+8
+
+20a
+
+20
+20
+20
+14b
+
+a Decreasing balance installments.
+b Flat balance installments.
+
+452
+
+Share of female borrowers
+Average loan size
+Share of female managers
+Female-dominated board
+Share of female members
+Total assets
+
+Pearson correlation coeﬃcients:
+*** Signiﬁcant at the 1% level.
+** Signiﬁcant at the 5% level.
+
+WORLD DEVELOPMENT
+
+Table 11. Correlation matrix
+
+1
+
+1
+
+ 0.20***
+ 0.04
+0.18***
+0.23***
+0.07**
+
+2
+
+1
+
+0.20***
+ 0.04
+ 0.26***
+0.15***
+
+3
+
+1
+
+ 0.16***
+ 0.31***
+ 0.04
+
+5
+
+4
+
+1
+
+0.28***
+0.24***
+
+1
+
+0.12***
+
+6
+
+1
+
+APPENDIX C. REGRESSIONS WITH GENDER COMBINATIONS
+
+Table 12. Social performance: ﬁxed-eﬀect panel estimation
+
+(1)
+
+Share of female borrowers
+
+(2)
+
+Average loan size
+
+Female-dominated board * female manager
+
+Female-dominated board * male manager
+
+Male-dominated board * female manager
+
+Share of female members
+
+Total assets
+
+Year
+Constant
+
+Statistics
+N
+F-Stat
+R2-Within
+R2-Between
+
+Robust standard errors reported in parentheses.
+*** Signiﬁcant at the 1% level.
+** Signiﬁcant at the 5% level.
+
+0.0413***
+(0.0119)
+0.0168**
+(0.00661)
+ 0.0384***
+(0.00880)
+ 0.0336
+(0.0794)
+ 1.54e 06
+(1.52e 05)
+
+Yes
+
+0.709***
+(0.0488)
+
+1,158
+20.57***
+0.115
+0.0363
+
+ 99.06***
+(17.59)
+ 16.84
+(23.30)
+42.29**
+(17.43)
+108.2
+(177.7)
+0.0658
+(0.0513)
+
+Yes
+
+506.5***
+(133.9)
+
+1,158
+21.68***
+0.0220
+0.0872
+
+Available online at www.sciencedirect.com
+
+ScienceDirect
+
+

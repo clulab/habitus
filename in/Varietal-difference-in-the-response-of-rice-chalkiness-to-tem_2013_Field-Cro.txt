@@ -1,0 +1,1524 @@
+Field  Crops  Research  151  (2013)  85–91
+
+Contents  lists  available  at  ScienceDirect
+
+Field
+
+ 
+
+Crops
+
+ 
+
+Research
+
+j o u  r n  a l  h o m  e p a g e :  w w w . e l s e v i e r . c o m / l o c a t e / f c r
+
+Varietal   difference   in   the   response   of   rice   chalkiness   to   temperature
+during   ripening   phase   across   different   sowing   dates
+Chang   Chen a,   Jianliang   Huang a,   Liyang   Zhu a,   Farooq   Shah b,   Lixiao   Nie a,   Kehui   Cui a,
+Shaobing   Peng a,∗
+
+a National  Key  Laboratory  of  Crop  Genetic  Improvement,  MOA  Key  Laboratory  of  Crop  Ecophysiology  and  Farming  System  in  the  Middle  Reaches  of  the
+Yangtze  River,  College  of  Plant  Science  and  Technology,  Huazhong  Agricultural  University,  Wuhan,  Hubei  430070,  China
+b Department  of  Agriculture,  Abdul  Wali  Khan  University,  Mardan,  23200  Pakhtunkhwa,  Pakistan
+
+a
+
+ 
+
+r
+
+ 
+
+t
+
+ 
+
+i
+
+ 
+
+c
+
+ 
+
+l
+
+ 
+
+e
+
+ 
+
+i
+
+ 
+
+n
+
+ 
+
+f
+
+ 
+
+o
+
+a
+
+ 
+
+b
+
+ 
+
+s
+
+ 
+
+t
+
+ 
+
+r
+
+ 
+
+a
+
+ 
+
+c
+
+ 
+
+t
+
+Article  history:
+Received  6  May   2013
+Received  in  revised  form  18  July  2013
+Accepted  18  July  2013
+
+Keywords:
+Chalkiness
+Grain  quality
+Heading  date
+Rice  variety
+Temperature
+
+Chalkiness,   which   is   highly   inﬂuenced   by   high   temperature   during   ripening   phase,   is   one   of  key   factors
+in   determining   rice   quality   and   commercial   value.   This   study   was   conducted   to  determine   varietal   differ-
+ences  in   chalkiness   and   in   the   response   of   chalkiness   to   temperature   during   ripening   phase.   We   evaluated
+the   chalkiness   of   42  and   7   varieties   with   a  wide   range   of  genetic   background   across   different   sowing   dates
+under   ﬁeld   conditions   in   2009   and   2010,   respectively.   Image   analysis   was   used   to   measure   chalky   grains
+and   chalkiness   was   calculated   as   the  percentage   of   chalky   area   to  projected   grain   area.   A   wide   range   in
+chalkiness   was  observed   among   the  tested   varieties.   These   varieties   also   demonstrated   large   difference
+in   the   response   of  chalkiness   to  temperature   during   ripening   phase.   Overall,   chalkiness   was   positively
+correlated   with   temperature   during   ripening   phase   and   temperature   during   second   week   after   heading
+had   the  closest   correlation   with   chalkiness.   In  some   varieties   such   as   Dongtingwanxian,   Chengnongshui-
+jing,   and   IR64,   their   chalkiness   was   sensitive   to  temperature   and   minimum   chalkiness   could   be   achieved
+through   optimum   sowing   date.   For   these   varieties,   crop   management   practice   is   effective   for   improving
+appearance   quality.   Other   varieties   such   as  Yangdao6,   Gu154,   and   Huanghuazhan   had   low   level   of   chalk-
+iness   regardless   of   sowing   dates.   These   varieties   with   low   and   stable   chalkiness   could   be   considered   as
+parents   in   the   breeding   program   for   developing   new   rice   varieties   with   improved   appearance   quality
+especially   for   the   future   warming   environment.
+
+©  2013   Elsevier   B.V.   All   rights   reserved.
+
+1.  Introduction
+
+Rice  is  the  staple  food  for  more  than  half  of  the  world’s  popu-
+lation  (Maclean  et  al.,  2002).  Increasing  grain  yield  and  improving
+grain  quality  are  equally  important  for  meeting  the  demands  of  rice
+consumers.  However,  projected  increase  in  global  temperature  will
+reduce  not  only  grain  yield  but  also  grain  quality  (Peng  et  al.,  2004;
+IPCC,  2007;  Fitzgerald  and  Resurreccion,  2009).
+
+Rice  quality  includes  appearance,  milling,  cooking,  eating,  and
+nutritional  properties  (Koutroubas  et  al.,  2004).  Chalkiness  of  the
+grains  is  one  of  key  factors  in  determining  rice  quality  and  com-
+mercial  value  (Yoshioka  et  al.,  2007).  Although  the  preference  of
+rice  grain  characteristics  varies  with  consumer  groups  in  different
+countries,  translucent  kernels  without  chalkiness  are  preferred  by
+the  majority  of  rice  consumers  worldwide  (Juliano  and  Villareal,
+1993).  Chalkiness  is  deﬁned  as  the  opaque  parts  in  the  endosperm
+and  can  be  categorized  into  white-cored,  white-belly,  milky-white,
+
+∗ Corresponding  author.  Tel.:  +86  27  8728  8668;  fax:  +86  27  8728  8380.
+E-mail  address:  speng@mail.hzau.edu.cn  (S.  Peng).
+
+0378-4290/$  –  see  front  matter  ©  2013  Elsevier  B.V.  All  rights  reserved.
+http://dx.doi.org/10.1016/j.fcr.2013.07.016
+
+white-back,  and  white-based  types  depending  on  the  site  of  the
+chalky  part  in  the  grain  (Tashiro  and  Wardlaw,  1991).  Appear-
+ance  quality  is  largely  determined  by  chalkiness  (Lisle  et  al.,  2000).
+Chalkiness  also  affects  milling  quality  by  reducing  grain  resistance
+to  forces  applied  during  the  milling  process,  causing  grain  break-
+age  and  consequently  a  decrease  in  head  rice  percentage  (Lisle  et  al.,
+2000;  Counce  et  al.,  2005).  This  is  because  chalky  endosperms  are
+ﬁlled  with  loosely  packed,  round  and  large  compound  starch  gran-
+ules,  while  translucent  endosperms  have  tightly  packed,  polyhedral
+and  small  single  starch  granules  (Singh  et  al.,  2006).  Wang  et  al.
+(2012)  reported  that  the  varietal  difference  in  chalkiness  explained
+the  difference  in  head  rice  percentage  among  varieties.  Further-
+more,  palatability  of  the  cooked  products  is  reduced  by  chalkiness
+because  cracks  develop  readily  when  chalky  grains  is  steamed  or
+boiled  (Cheng  et  al.,  2005).  Chalkiness  is  directly  associated  with
+inferior  cooking  and  eating  qualities  and  is  a  major  cause  of  pro-
+cessing  and  ﬁnancial  losses  (Fitzgerald  and  Resurreccion,  2009).
+
+The  physiological  causes  of  the  chalkiness  are  hypothesized  to
+be  an  insufﬁcient  substrate  supply  to  the  developing  endosperm,
+reduced  ability  to  synthesize  starch  in  the  endosperm,  the  degra-
+␣-amylase  during  ripening,  slower  growth
+dation  of  starch  by 
+
+86 
+
+C.  Chen  et  al.  /  Field  Crops  Research  151  (2013)  85–91
+
+of  starch  granules,  or  different  structures  of  starch  that  interfere
+with  granular  organization  (Sato  and  Inaba,  1976a,b;  Yamakawa
+et  al.,  2007;  Tsukaguchi  and  Iida,  2008;  Fitzgerald  and  Resurreccion,
+2009).  Chalkiness  is  inﬂuenced  by  varieties,  environmental  condi-
+tions,  and  crop  management  practices  (Tan  et  al.,  2000;  Fitzgerald
+et  al.,  2009).  Rice  chalkiness  is  a  complex  quantitative  trait  con-
+trolled  by  polygenes  and  readily  inﬂuenced  by  environment  (Tan
+et  al.,  2000).  Several  QTLs  have  been  found  to  control  the  chalkiness
+of  rice  grains  (Tan  et  al.,  2000;  Guo  et  al.,  2011).  Varietal  differences
+in  chalkiness  were  reported  in  several  studies  (Wang  et  al.,  2006;
+Yamakawa  et  al.,  2007;  Ambardekar  et  al.,  2011).  Among  environ-
+mental  factors,  temperature  has  the  largest  inﬂuence  on  chalkiness
+(Cheng  and  Zhong,  2001).  Formation  of  chalky  grains  is  greatly
+enhanced  by  high  temperature  during  ripening  phase  (Tashiro  and
+Wardlaw,  1991;  Yamakawa  et  al.,  2007),  which  is  recently  occur-
+ring  more  frequently  due  to  global  warming  (Wakamatsu  et  al.,
+2007).  Therefore,  grain  chalkiness  caused  by  high  temperature
+stress  will  become  a  global  problem  for  rice  production  in  the  near
+future  (Ishimaru  et  al.,  2009).  Recent  research  has  shown  that  ele-
+vated  nighttime  temperature  increased  chalkiness  (Fitzgerald  and
+Resurreccion,  2009;  Ambardekar  et  al.,  2011).  Unfavorably  warm
+weather  during  the  grain  ﬁlling  period  results  in  reduced  enzymatic
+activity  related  to  grain  ﬁlling,  increased  respiratory  consumption
+of  assimilation  products,  disturbed  water  balance,  decreased  sink
+activity  of  glumous  ﬂowers,  and  increased  loosely-packed  starch
+granules  (Inaba  and  Sato,  1976;  Sato  and  Inaba,  1976a,b;  Tashiro
+and  Wardlaw,  1991).  Chalkiness  is  also  affected  by  crop  manage-
+ment  practices  such  as  nitrogen  fertilization  (Qiao  et  al.,  2011)  and
+water  management  (Hayashi  et  al.,  2011).
+
+Many  studies  have  been  conducted  about  the  chalkiness  of  rice
+grains.  However,  most  of  them  were  carried  out  for  understanding
+the  physiological  and  genetic  mechanism  underlying  the  chalky
+formation  under  normal  or  high  temperature  (Tan  et  al.,  2000;
+Yamakawa  et  al.,  2007;  Fitzgerald  and  Resurreccion,  2009;  Zhang
+et  al.,  2009;  Zhou  et  al.,  2009).  These  studies  were  often  conducted
+under  controlled-environment  conditions  with  a  few  varieties.  In
+this  study,  we  evaluated  the  chalkiness  of  42  and  7  varieties  with
+a  wide  range  of  genetic  background  across  different  sowing  dates
+under  ﬁeld  conditions  in  2009  and  2010,  respectively.  The  objec-
+tives  were  to  determine  varietal  differences  in  chalkiness  and  in
+the  response  of  chalkiness  to  temperature  during  ripening  phase
+and  to  determine  which  stage  of  grain  ﬁlling  was  most  sensitive  to
+temperature  for  chalky  formation.
+
+2.  Materials  and  methods
+
+Field  experiments  were  conducted  in  Dajin  Township  (29◦51(cid:4) N,
+115◦53(cid:4) E),  Wuxue  County,  Hubei  Province,  China,  during  the  rice-
+growing  season  from  May   to  October  in  2009  and  2010.  Soil  in
+the  ﬁeld  for  2009  experiment  has  the  following  properties:  pH
+5.01,  30.1  g  kg−1 organic  matter,  1.39  g  kg−1 total  N,  5.92  mg   kg−1
+available  P,  and  46.3  mg   kg−1 available  K.  Soil  in  the  ﬁeld  for
+2010  experiment  has  the  following  properties:  pH  5.70,  21.9  g  kg−1
+organic  matter,  1.77  g  kg−1 total  N,  8.75  mg   kg−1 available  P,  and
+66.1  mg   kg−1 available  K.  Monthly  mean  temperature  from  May   to
+October  were  22.5,  28.5,  30.0,  29.5,  25.8,  21.0 ◦C  in  2009,  and  were
+22.2,  25.2,  29.3,  30.1,  25.0,  17.7 ◦C  in  2010,  respectively.
+
+In  2009,  four  sowing  dates  were  used  and  42  varieties  were
+arranged  in  three  replications  within  each  sowing  date.  In  2010,
+six  sowing  dates  were  used  and  seven  varieties  were  arranged  in
+three  replications  within  each  sowing  date.  Sowing  dates  were  May
+5,  May   16,  May   26,  and  June  4  in  2009,  and  April  27,  May   7,  May
+15,  May   26,  June  6,  and  June  15  in  2010.  Forty-two  varieties  used
+in  2009  were  from  rice  core  collection.  Among  the  42  varieties,  12
+varieties  were  japonica  and  the  rest  were  indica.  Most  varieties
+
+were  from  China  except  for  IR64,  IR661-1,  and  Gu154  (from  IRRI
+with  original  name  of  IR837-36-1),  IRAT109  (from  IITA),  and  Gui630
+(from  Gunaya).  Based  on  the  varietal  difference  in  the  response  of
+chalkiness  to  temperature  in  2009,  seven  varieties  were  selected
+for  the  2010  experiment.  Another  selection  criterion  was  the  sim-
+ilarity  in  growth  duration  among  the  varieties.  The  seven  varieties
+were  indica,  and  ﬁve  of  them  were  from  China  and  two   from
+IRRI.
+
+Seedlings  were  raised  in  wet  seedbed  in  both  years.  Seedlings
+×
+were  transplanted  with  a  hill  spacing  of  0.133  m 
+  0.267  m  and  with
+2–3  seedlings  per  hill.  Seedling  age  was  20–25  days  in  2009  and
+25–33  days  in  2010.  Seedling  age  was  variable  across  the  sow-
+ing  dates  in  order  to  reduce  the  differences  in  seedling  size  at
+transplanting.  Phosphorus  in  the  form  of  calcium  superphosphate
+(40  kg  P  ha−1)  and  zinc  in  the  form  of  zinc  sulfate  heptahydrate
+(5  kg  Zn  ha−1)  were  applied  and  incorporated  in  the  ﬁeld  1  day
+before  transplanting.  Potassium  in  the  form  of  potassium  chlo-
+ride  (100  kg  K  ha−1)  was   split  equally  at  basal  and  panicle  initiation.
+Nitrogen  in  the  form  of  urea  (150  kg  N  ha−1)  was   split-applied:  40%
+at  basal,  30%  at  mid-tillering,  and  30%  at  panicle  initiation  in  2009.
+Total  N  rate  was   135  kg  ha−1 with  the  split  application  of  50%  at
+basal,  20%  at  mid-tillering,  and  30%  at  panicle  initiation  in  2010.  The
+ﬁeld  was  kept  5–10  cm  water  depth  from  3  days  after  transplant-
+ing  to  7  days  before  maturity.  Pests,  diseases,  birds,  and  weeds  were
+intensively  controlled  for  avoiding  yield  losses.  Other  crop  manage-
+ment  practices  followed  the  local  recommendation  to  achieve  high
+grain  yield.
+
+Plant  samples  were  taken  from  each  plot  at  crop  maturity  for  the
+measurements  of  various  traits.  Grains  were  threshed  and  ﬁlled
+grains  were  separated  from  unﬁlled  grains  and  debris  using  an
+air  blower.  Two   subsamples  of  air-dried  and  ﬁlled  grain  each  at
+26  g  were  taken  from  each  plot  for  the  measurement  of  chalkiness.
+Rough  rice  was   de-husked  using  a  husker  (SY88-TH,  BRIC,  Korea).
+From  each  subsample,  10  g  brown  rice  was  taken  for  milling  using
+a  Miller  (Pearlest,  Kett,  Japan),  and  then  head  rice  was  divided  from
+broken  rice  using  a  separator  (JFQS-13*20,  China).  Chalkiness  was
+evaluated  following  the  method  of  Yoshioka  et  al.  (2007)  with  some
+modiﬁcation.  A  digital  image  was   created  by  placing  all  head  rice
+of  each  subsample  on  the  scanner  (Epson  Expression  1680  Profes-
+sional,  Epson,  America)  with  a  white  fraction  back  board,  which
+increased  the  contrast  between  chalky  and  translucent  parts  in
+the  images.  Digital  images  were  analyzed  using  an  image  analyz-
+ing  software  (Image  J,  the  National  Institutes  of  Health,  USA).  With
+the  tool  of  “Threshold  Color”  in  the  software,  we  determined  two
+threshold  values  of  brightness  pass  in  hue-saturation-brightness
+color  model  to  separate  chalky,  translucent  and  background  parts.
+Then  the  areas  of  pixel  in  chalky  and  translucent  parts  were  mea-
+sured,  and  chalkiness  was  calculated  as  the  percentage  of  chalky
+area  to  projected  grain  area.
+
+Air  temperature  was  obtained  from  the  temperature  data  log-
+gers  (HOBO  H08-032-08,  Onset  Computer  Corp.,  USA).  Daily  mean
+temperature  was  calculated  as  the  average  of  daily  minimum  and
+maximum  temperature.  Correlation  analysis  was  done  to  deter-
+mine  the  relationship  between  chalkiness  and  average  daily  mean
+temperature  during  different  periods  of  ripening  phase.
+
+3.  Results
+
+Air  temperature  during  rice  growing  seasons  in  2009  and
+2010  followed  normal  pattern  which  increased  from  May   to  June,
+reached  a  peak  in  July  and  August,  and  declined  from  September  to
+October  (Fig.  1).  Monthly  mean  temperature  in  June  and  October
+was  greater  in  2009  than  in  2010.  The  difference  in  temperature
+between  the  two   years  was   relatively  small  in  May,  July,  August,  and
+September.  In  general,  2010  was  cooler  than  2009.  Heading  dates
+
+)
+
+C
+º
+(
+ 
+
+t
+
+e
+r
+u
+a
+r
+e
+p
+m
+e
+
+t
+ 
+
+n
+a
+e
+m
+ 
+y
+
+l
+i
+
+a
+D
+
+40
+
+35
+
+30
+
+25
+
+20
+
+15
+
+10
+
+May 1      
+
+ 
+
+Jun 1        Jul
+
+ 
+
+ 1       
+
+  Aug 1       
+
+  Sep 1      O 
+
+ct   1     O 
+
+ct 31
+
+Date
+
+C.  Chen  et  al.  /  Field  Crops  Research  151  (2013)  85–91 
+
+87
+
+2009 
+2010 
+
+)
+
+%
+
+(
+ 
+s
+s
+e
+n
+k
+a
+h
+C
+
+l
+
+i
+
+gnongshu  ijing 
+
+IR64 
+
+Chen 
+Zhenxia  n232 
+
+Don  gtin  gwan  xia  n 
+Yan  gdao2 
+Xia  ngwan  xia  n1 
+Huangsigui  zhan 
+
+100
+
+80
+
+60
+
+40
+
+20
+
+Fig.  1.  Daily  mean  air  temperature  from  May   to  October  in  2009  and  2010.
+
+spreaded  over  two  months  from  July  12  to  September  12  due  to  a
+wide  range  in  sowing  dates.  There  was  substantial  variation  in  tem-
+perature  over  this  two-month  period  and  subsequent  one  month  so
+that  tested  varieties  could  experience  different  temperature  during
+their  ripening  phase.
+
+Variation  in  chalkiness  across  four  sowing  dates  was  listed
+in  Table  1  for  the  42  varieties  in  2009.  Large  variation  in  chalk-
+iness  was  observed  among  varieties  and  across  sowing  dates.
+Average  chalkiness  ranged  from  1.3%  for  Huanghuazhan  to  78.4%
+for  Sankecun.  The  difference  between  maximum  and  minimum
+chalkiness  across  the  four  sowing  dates  ranged  from  2.0%  for
+Huanghuazhan  to  52.8% 
+for  Dongtingwanxian.  Based  on  the
+response  of  chalkiness  to  sowing  dates  and  minimum  chalkiness,
+42  varieties  were  divided  into  three  groups.  In  Groups  1  and  2,  the
+difference  between  maximum  and  minimum  chalkiness  across  the
+four  sowing  dates  was  greater  than  15%,  while  it  was   below  15%  in
+Group  3.  The  minimum  chalkiness  of  Groups  1  and  2  was  smaller
+and  greater  than  15%,  respectively.  Using  these  criteria,  7,  19,  and
+16  varieties  were  classiﬁed  into  Groups  1,  2,  and  3,  respectively.
+
+The  chalkiness  response  of  varieties  in  Group  1  to  heading  dates
+was  depicted  in  Fig.  2.  In  general,  the  chalkiness  of  these  seven  vari-
+eties  was  sensitive  to  heading  dates  and  chalkiness  decreased  with
+delayed  heading  dates  for  this  group.  Chalkiness  reached  low  level
+(less  than  15%)  when  heading  occurred  after  August  20.  Chalki-
+ness  of  varieties  in  Group  2  was  also  sensitive  to  heading  dates
+(Fig.  3).  In  this  group,  three  varieties  (Guangluai4,  JinghuB,  and
+Aijiaonante)  had  short  growth  duration.  In  these  three  varieties,
+minimum  chalkiness  was  observed  with  heading  date  around  July
+20.  For  the  rest  varieties,  minimum  chalkiness  generally  occurred
+with  the  latest  heading  dates.  Furthermore,  the  19  varieties  in
+Group  2  had  a  minimum  chalkiness  greater  than  15%  across  the
+four  heading  dates.  Chalkiness  of  varieties  in  Group  3  was  rela-
+tively  insensitive  to  heading  dates  (Fig.  4).  Among  this  group,  nine
+varieties  had  chalkiness  greater  than  35%  and  seven  varieties  had
+chalkiness  below  20%  across  the  four  heading  dates.  Huanghuazhan
+demonstrated  most  stable  and  the  lowest  chalkiness  among  the  42
+varieties.
+
+Variation  in  chalkiness  among  varieties  and  across  sowing  dates
+was  also  observed  in  2010  (Table  2).  Based  on  criteria  used  in
+2009,  the  seven  varieties  were  divided  into  the  three  groups,  which
+had  different  responses  of  chalkiness  to  heading  dates  and  min-
+imum  chalkiness.  Group  1  included  three  varieties,  which  were
+
+0
+Jul 10     Jul 20      Jul 30      Aug 9     Aug 19    Aug 29    Sep 8 
+
+Heading d  ate
+
+Fig.  2.  Response  of  chalkiness  to  heading  dates  in  seven  varieties  grown  in  Wuxue,
+Hubei,  China,  in  2009.  The  chalkiness  of  these  seven  varieties  was  sensitive  to  head-
+ing   dates  and  reached  low  level  (less  than  15%)  when  heading  occurred  after  August
+20.
+
+Chengnongshuijing,  IR64,  and  Zhenxian232.  Nanjing11  and  Aimi
+belonged  to  Group  2  while  Gu154  and  Yangdao6  were  in  Group
+3.  Nanjing11  changed  from  Group  3  in  2009  to  Group  2  in  2010,
+and  the  rest  six  varieties  remained  the  same  grouping  across  the
+two  years.  Chalkiness  of  varieties  in  Groups  1  and  2  was  sensi-
+tive  to  heading  dates,  and  minimum  chalkiness  was  observed  when
+heading  occurred  between  August  10  and  25  (Fig.  5).  However,  the
+minimum  chalkiness  was   less  than  10%  in  Group  1  while  it  was
+greater  than  30%  in  Group  2.  Chalkiness  of  varieties  in  Group  3  was
+relatively  insensitive  to  heading  dates,  especially  when  heading
+was  after  August  9.
+
+Correlation  between  chalkiness  and  average  daily  mean  tem-
+perature  during  the  ripening  phase  from  heading  to  maturity  was
+analyzed  for  each  variety  in  2009  (Table  1).  Among  the  42  varieties,
+the  correlation  coefﬁcients  of  13  varieties  between  chalkiness
+
+Guihuahuang
+Bawangbian1
+Aituogu151
+
+Guanglu  ai4
+
+HR5
+Chengdouai3
+PeiC122
+
+Aimi 
+Geshandao 
+Guichao2 
+Gui630 
+Xugunuo 
+
+Qingsia  i16B 
+
+Zhenshan97B 
+IRAT109 
+Teqing 
+
+Jin  ghuB 
+
+Aijiaonante 
+Zaoshunonghu6 
+
+100
+
+80
+
+60
+
+40
+
+20
+
+)
+
+%
+
+(
+ 
+s
+s
+e
+n
+k
+a
+h
+C
+
+l
+
+i
+
+0
+Jul 10     Jul 20      Jul 30     Aug 9     Aug 19    Aug 29    Sep 8         
+
+Heading d  ate
+
+Fig.  3.  Response  of  chalkiness  to  heading  dates  in  19  varieties  grown  in  Wuxue,
+Hubei,  China,  in  2009.  The  chalkiness  of  these  19  varieties  was  sensitive  to  heading
+dates  but  remained  at  high  level  (greater  than  15%).
+
+88 
+
+C.  Chen  et  al.  /  Field  Crops  Research  151  (2013)  85–91
+
+Table  1
+Maximum,  minimum,  mean,  and  range  of  chalkiness  (%)  for  42  varieties  across  four  sowing  dates  in  Wuxue,  Hubei,  China,  in  2009.
+
+Groupa
+
+Variety 
+
+Typeb
+
+Maximum 
+
+Minimum 
+
+Mean 
+
+Range 
+
+rc
+
+1
+
+2
+
+3
+
+All  
+
+Dongtingwanxian 
+Yangdao2 
+Xiangwanxian1 
+Huangsiguizhan 
+Chengnongshuijing 
+IR64  
+Zhenxian232 
+
+Guihuahuang 
+Bawangbian1 
+Aituogu151 
+Guangluai4 
+HR5  
+Chengdouai3 
+PeiC122 
+Aimi  
+Geshandao 
+Guichao2 
+Gui630 
+Xugunuo 
+Qingsiai16B 
+Zhenshan97B 
+IRAT109 
+Teqing 
+JinghuB 
+Aijiaonante 
+Zaoshunonghu6 
+
+Sankecun 
+Taishannuo 
+88B 
+Huke3 
+Aimakang 
+Gongju73 
+IR661-1 
+Nanjing11 
+Liusha1 
+LimingB 
+Dangyu5 
+JWR221 
+Zhonghua8 
+Yangdao6 
+Gu154 
+Huanghuazhan 
+
+I 
+I 
+I 
+I 
+I 
+I 
+I 
+
+I 
+J 
+I 
+I 
+I 
+I 
+J 
+I 
+J 
+I 
+I 
+J 
+I 
+I 
+J 
+I 
+J 
+I 
+J 
+
+I 
+I 
+I 
+I 
+I 
+J 
+I 
+I 
+I 
+J 
+J 
+J 
+J 
+I 
+I 
+I 
+
+57.8 
+47.1
+43.1 
+41.2 
+32.1 
+26.4 
+22.6 
+
+71.3 
+66.8
+65.8 
+65.6 
+62.9 
+62.8 
+62.7 
+60.6 
+59.8 
+59.7 
+59.6 
+58.9
+58.7 
+57.0 
+55.3 
+53.8 
+51.2
+50.1 
+37.5 
+
+80.0 
+79.3 
+77.6 
+76.9
+70.0 
+64.8 
+59.0 
+55.6 
+46.6 
+18.3 
+17.5 
+16.9 
+14.3 
+12.6 
+11.5 
+2.3 
+
+5.0 
+8.9 
+12.4 
+6.3 
+4.2 
+7.1 
+3.1 
+
+50.4 
+33.0 
+35.2 
+39.1 
+47.6 
+35.9 
+31.2 
+34.8 
+37.7 
+38.2 
+44.4 
+36.9 
+39.6 
+32.7 
+31.7 
+23.0 
+24.6
+18.4 
+17.4 
+
+77.5 
+75.3 
+73.7 
+63.6
+61.2 
+56.8 
+48.6 
+45.0 
+37.8 
+15.4 
+5.3 
+4.2 
+2.9 
+3.5 
+1.1 
+0.3 
+
+27.4 
+24.2 
+23.3 
+29.2 
+18.3 
+16.3 
+13.8 
+
+60.4 
+50.8 
+51.3 
+58.0 
+54.4 
+49.2 
+45.5 
+49.6 
+50.8 
+48.4 
+52.1 
+47.5 
+49.4 
+46.6 
+42.4 
+39.7 
+37.5 
+39.4 
+31.2 
+
+78.4 
+77.7 
+75.5 
+69.9 
+66.7 
+60.6 
+53.6 
+49.8 
+42.5 
+16.7 
+11.6 
+8.8 
+7.8 
+7.0 
+6.0 
+1.3 
+
+52.8 
+38.3 
+30.7 
+34.9 
+27.9 
+19.3 
+19.5 
+
+20.9 
+33.8 
+30.6 
+26.5 
+15.3 
+26.9 
+31.5 
+25.8 
+22.0 
+21.5 
+15.2 
+22.1 
+19.0 
+24.3 
+23.5 
+30.8 
+26.6 
+31.7 
+20.0 
+
+2.6 
+4.0 
+3.9 
+13.2 
+8.8 
+8.1 
+10.4 
+10.7 
+8.8 
+2.8 
+12.2 
+12.8 
+11.4 
+9.1 
+10.4 
+2.0 
+
+0.90
+0.76
+0.85
+0.93
+0.86
+0.96*
+0.97*
+
+0.95*
+0.97*
+0.96*
+−0.22
+0.88
+−0.07
+0.90
+0.94
+0.98*
+0.90
+0.17
+0.95*
+0.87
+0.20
+0.31
+0.93
+0.96*
+−0.35
+0.76
+−0.04
+0.99**
+0.82
+0.95*
+0.76
+0.63
+0.29
+0.77
+0.25
+−0.89
+0.97*
+0.83
+0.95*
+0.94
+0.99*
+0.67
+
+0.50**
+
+a Groups  1  and  2  had  larger  ranges  in  chalkiness  across  sowing  dates  than  Group  3.  Group  2  had  higher  minimum  chalkiness  than  Group  1.
+b I  =  indica,  J  =  japonica.
+c Correlation  coefﬁcients  between  chalkiness  and  average  daily  mean  temperature  from  heading  to  maturity.
+* P  <  0.05.
+** P  <  0.01.
+
+and  temperature  were  statistically  signiﬁcant.  Eighteen  varieties
+had  correlation  coefﬁcients  between  0.70  and  0.94,  which  were
+not  statistically  signiﬁcant  due  to  small  sample  size  (n  =  4).  When
+pooled  data  of  the  42  varieties  were  used,  statistically  signiﬁ-
+cant  correlation  was  found  between  chalkiness  and  temperature
+(r  =  0.50,  p  <  0.01).  Similar  correlation  between  chalkiness  and
+
+temperature  was   observed  in  2010  when  the  correlation  analysis
+was  done  across  the  seven  varieties  (Table  3).  The  relationship
+between  chalkiness  and  temperature  was   further  analyzed  using
+average  daily  mean  temperature  during  different  periods  of  ripen-
+ing  phase  in  2010  because  more  data  points  were  available  (i.e.
+six  sowing  dates  in  2010  vs.  four  in  2009).  For  individual  varieties,
+
+Table  2
+Maximum,  minimum,  mean,  and  range  of  chalkiness  (%)  for  seven  varieties  across  six  sowing  dates  in  Wuxue,  Hubei,  China,  in  2010.
+
+Groupa
+
+Variety 
+
+Typeb
+
+Maximum 
+
+Minimum 
+
+1
+
+2
+
+3
+
+Chengnongshuijing 
+IR64  
+Zhenxian232 
+
+Nanjing11 
+Aimi  
+
+Gu154 
+Yangdao6 
+
+I 
+I 
+I 
+
+I 
+I 
+
+I 
+I 
+
+51.8 
+40.2 
+27.4 
+
+71.4 
+65.8 
+
+17.8 
+14.7 
+
+5.6 
+4.1 
+4.3 
+
+34.6 
+34.5 
+
+2.8 
+5.5 
+
+a Groups  1  and  2  had  larger  ranges  in  chalkiness  across  sowing  dates  than  Group  3.  Group  2  had  higher  minimum  chalkiness  than  Group  1.
+b I  =  indica.
+
+Mean 
+
+19.1 
+16.9 
+10.4 
+
+55.7 
+47.7 
+
+7.3 
+8.3 
+
+Range
+
+46.2
+36.1
+23.1
+
+36.8
+31.4
+
+15.0
+9.2
+
+C.  Chen  et  al.  /  Field  Crops  Research  151  (2013)  85–91 
+
+89
+
+Table   3
+Correlation  coefﬁcients  (r)  between  chalkiness  and  average  daily  mean  temperature  during  different  periods  of  ripening  phase  in  Wuxue,  Hubei,  China,  in  2010.
+
+Group 
+
+Variety 
+
+1  WAHa
+
+2  WAH  
+
+3  WAH  
+
+4  WAH  
+
+Ripeningb
+
+1
+
+2
+
+3
+
+All  
+
+Chengnongshuijing 
+IR64  
+Zhenxian232 
+
+Nanjing11 
+Aimi 
+
+Gu154  
+Yangdao6 
+
+0.66 
+0.52
+0.20 
+
+0.73 
+0.73 
+
+0.19 
+0.07 
+
+0.32*
+
+0.84*
+0.78
+0.68 
+
+0.95**
+0.96**
+
+0.36 
+0.51 
+
+0.56**
+
+0.44 
+0.34 
+0.03 
+
+0.89*
+0.74 
+
+0.23 
+0.30 
+
+0.48**
+
+0.17 
+0.32 
+−0.15 
+0.19 
+0.05 
+−0.09 
+−0.12 
+0.30
+
+0.63
+0.50
+0.27
+
+0.93**
+0.63
+
+0.16
+0.22
+
+0.48**
+
+a Weeks  after  heading.
+b From  heading  to  maturity.
+* P  <  0.05.
+** P  <  0.01.
+
+Zhonghua8
+
+4.  Discussion
+
+Gu154
+
+Yan  gdao6
+Huanghua 
+
+zhan
+
+)
+
+%
+
+(
+ 
+s
+s
+e
+n
+k
+a
+h
+C
+
+l
+
+i
+
+Liushan1
+
+Limin  gB
+
+Dangyu5
+JWR221
+
+Sankecun
+
+Tai  shannuo
+
+88B
+Huke3
+Aimakang
+Gongju73
+IR661-1
+Nanjing11
+
+100
+
+80
+
+60
+
+40
+
+20
+
+0
+
+Heading d
+
+ 
+
+ate
+
+Fig.  4.  Response  of  chalkiness  to  heading  dates  in  16  varieties  grown  in  Wuxue,
+Hubei,  China,  in  2009.  The  chalkiness  of  these  16  varieties  was   insensitive  to  heading
+dates.
+
+correlation  coefﬁcient  between  chalkiness  and  average  daily  mean
+temperature  during  second  week  after  heading  was   the  largest
+compared  with  other  periods  in  ripening  phase.  When  data  from
+all  seven  varieties  were  pooled,  the  second  week  after  heading
+had  the  closest  correlation  between  chalkiness  and  temperature,
+followed  by  third  week,  ﬁrst  week,  and  fourth  week  after  heading.
+
+Wide  range  in  chalkiness  was  observed  among  tested  varieties.
+Varietal  difference  in  chalkiness  was   fairly  stable  across  the  two
+years  since  the  average  chalkiness  of  the  seven  varieties  in  2010  was
+similar  to  that  in  2009  (Tables  1  and  2).  Yangdao6  and  Gu154  had
+low  chalkiness,  whereas  Aimi  and  Nanjing  11  had  high  chalkiness
+in  the  two  years.  The  data  from  this  experiment  and  our  previ-
+ous  studies  suggest  that  Huanghuazhan  has  minimum  chalkiness
+across  a  wide  range  of  growing  conditions  although  it  was  tested
+only  in  2009  in  this  study.  Varietal  differences  in  chalkiness  were
+reported  previously.  American  variety  Lemont  and  IRRI-bred  vari-
+ety  IR22  had  no  chalky  grains  while  Chinese  variety  Guangluai4  was
+opposite  across  a  wide  range  of  environmental  conditions  (Wang
+et  al.,  2006).  Among  japonica  varieties  from  Japan,  Koshiibuki  and
+Tentakaku  had  less  chalky  grains  even  when  they  were  exposed  to
+high  temperature,  whereas  Hatsuboshi  and  Sasanishiki  produced
+severely  chalky  grains  (Yamakawa  et  al.,  2007).  In  general,  japonica
+rice  varieties  have  less  chalkiness  than  indica  rice  varieties  (Juliano,
+1992;  Fitzgerald  et  al.,  2009;  Ishimaru  et  al.,  2009).  However,  our
+study  did  not  show  clear  difference  in  chalkiness  between  japon-
+ica  and  indica  rice  varieties.  This  could  be  due  to  large  genotype  by
+environment  interaction  on  chalkiness  because  chalkiness  is  under
+genetic  control,  but  its  extent  can  be  affected  by  weather  condi-
+tions  experienced  during  the  grain  ﬁlling  period  (Yamakawa  et  al.,
+2007).
+
+The  varietal  difference  in  the  response  of  chalkiness  to  temper-
+ature  was   evaluated  by  changing  sowing  dates  so  that  a  variety
+reached  heading  at  different  dates  and  experienced  different  tem-
+perature  during  grain  ﬁlling.  The  advantage  of  this  method  over
+controlled  environment  such  as  growth  chambers  is  that  it  rep-
+resents  actual  ﬁeld  growing  conditions  (Ambardekar  et  al.,  2011).
+
+)
+
+%
+
+(
+ 
+s
+s
+e
+n
+k
+a
+h
+C
+
+l
+
+i
+
+Chengnongshuijing
+IR64
+Zhengxian232
+
+Nanjing11
+ 
+Aimi
+
+100
+
+80
+
+60
+
+40
+
+20
+
+0
+
+4
+
+Gu15 
+
+Yangdao6
+
+Jul 2  0   Jul 3  0   A  ug 9     A  ug 1  9   A  ug 2  9   S  ep   8            
+
+Jul 2  0   Jul 3  0    Aug 9     A  ug 1  9  Aug 2  9  Sep   8            
+
+Jul 2  0   Jul 3  0    Aug 9     A  ug 1  9  Aug 2  9  Sep   8   S  ep   18           
+
+Heading date
+
+Fig.  5.  Response  of  chalkiness  to  heading  dates  in  seven  varieties  grown  in  Wuxue,  Hubei,  China,  in  2010.
+
+90 
+
+C.  Chen  et  al.  /  Field  Crops  Research  151  (2013)  85–91
+
+Furthermore,  this  method  allows  the  evaluation  of  large  number
+of  varieties  at  the  same  time.  The  shortcoming  of  this  system  for
+studying  temperature  response  is  the  potential  confounding  factors
+such  as  solar  radiation  and  relative  humidity.  However,  tempera-
+ture  during  grain  ﬁlling  period  is  the  most  important  environmental
+factor  that  inﬂuences  rice  chalkiness  (Cheng  and  Zhong,  2001).
+
+The  42  varieties  demonstrated  large  difference  in  their  response
+to  temperature  during  ripening  phase  for  chalky  grain  formation.
+Three  groups  of  varieties  were  formed  based  on  the  response  of
+chalkiness  to  temperature  and  minimum  chalkiness.  Groups  1  and
+2  were  sensitive  to  temperature,  whereas  Group  3  was  insensi-
+tive  to  temperature.  Group  1  had  lower  minimum  chalkiness  than
+Group  2  across  sowing  dates.  The  grouping  was  fairly  stable  across
+the  two  years  for  the  seven  varieties  tested  in  both  years,  except  for
+Nanjing  11,  which  belonged  to  Group  3  in  2009  and  Group  2  in  2010.
+Dongtingwanxian,  Chengnongshuijing,  and  IR64  were  representa-
+tives  of  Group  1.  Interestingly,  Group  1  had  no  japonica  varieties.
+For  varieties  in  Group  1,  minimum  chalkiness  could  be  achieved
+through  optimum  sowing  date.  Bawangbian1,  Aimi,  Guichao2  and
+Zhenshan97B  were  the  typical  varieties  of  Group  2.  Changing  sow-
+ing  date  might  result  in  a  reduction  in  chalkiness  for  varieties  in
+Group  2,  but  they  never  reached  the  minimum  chalkiness  that  is
+desirable  for  rice  consumers.  Crop  management  practice  could  be
+more  effective  for  improving  appearance  quality  for  varieties  in
+Group  1  than  these  in  Group  2.  Some  varieties  in  Group  3  such  as
+Sankecun  and  Taishannuo  maintained  a  high  level  of  chalkiness,
+whereas  others  such  as  Yangdao6,  Gu154,  and  Huanghuazhan  had
+a  low  level  of  chalkiness  regardless  of  sowing  dates.  Both  indica
+and  japonica  varieties  existed  in  Groups  2  and  3.  These  varieties
+with  low  and  stable  chalkiness  in  Group  3  could  be  considered
+as  parents  in  the  breeding  program  for  developing  new  rice  vari-
+eties  with  improved  appearance  quality  especially  for  the  future
+warming  environment.
+
+Correlation  between  chalkiness  and  average  daily  temperature
+during  ripening  phase  was   observed  in  majority  of  tested  varieties,
+although  correlation  coefﬁcients  in  some  varieties  were  not  sta-
+tistically  signiﬁcant  due  to  small  sample  size  (n  =  4).  When  polled
+data  from  all  varieties  were  used,  statistically  signiﬁcant  correlation
+was  observed  between  chalkiness  and  temperature  during  ripening
+phase  in  both  years.  There  was  no  clear  difference  among  the  three
+groups  in  the  relationship  between  chalkiness  and  temperature.
+Close  correlation  between  chalkiness  and  temperature  was  found
+even  for  some  varieties  in  Group  3  with  low  and  stable  chalkiness
+across  different  heading  dates.
+
+Various  studies  have  shown  that  high  temperature  during  spe-
+ciﬁc  stages  of  grain  development  tends  to  increase  the  occurrence
+of  chalk  in  rice  grains  more  than  other  stages  (Lisle  et  al.,  2000).
+Chalkiness  is  frequently  found  when  the  average  temperature  dur-
+ing  the  20  days  after  heading  exceeds  27 ◦C  (Wakamatsu  et  al.,
+2007).  The  chalky  grains  were  most  evident  when  the  high  temper-
+ature  commenced  four  days  after  heading  (Tashiro  and  Wardlaw,
+1991).  Tashiro  and  Wardlaw  (1991)  also  stated  that  the  time  when
+the  rice  plant  is  exposed  to  high  temperature  stress  during  ripen-
+ing  determines  the  part  with  chalkiness  in  the  grain.  Eight-day
+exposure  of  rice  plants  to  high  temperature  starting  12  days  after
+heading  induced  mostly  the  milky-white  grains  while  exposure
+for  8  days  starting  16  days  after  heading  formed  more  white-back
+grains.  Ambardekar  et  al.  (2011)  reported  that  the  effects  of  ele-
+vated  nighttime  temperature  on  chalkiness  were  incurred  during
+certain  stages  of  grain  ﬁlling  period  and  were  variety-speciﬁc.  In
+general,  R6  and  R7  grain-ﬁlling  stages,  which  correspond  to  milk
+and  soft  dough  stages,  were  most  sensitive  to  warm  nights  for
+chalky  grain  formation.  Chalkiness  of  medium-grain  varieties  (Ben-
+gal  and  Jupiter)  was  less  sensitive  to  high  night  temperature  than
+long-grain  varieties  (LaGrue,  XL723,  and  Wells).  In  our  study,  we
+found  that  second  week  after  heading  had  the  closest  correlation
+
+between  chalkiness  and  temperature,  followed  by  third  week,  ﬁrst
+week,  and  fourth  week  after  heading.  It  is  fairly  consistent  between
+our  study  and  previous  studies  in  the  ﬁnding  of  the  speciﬁc  stage  of
+grain  development  that  is  more  sensitive  to  temperature  for  chalky
+grain  formation.  Identiﬁcation  of  sensitive  stage  of  grain  ﬁlling  pro-
+vides  important  information  in  determining  optimal  sowing  and
+heading  dates  for  reducing  chalkiness  of  rice  varieties  through  crop
+management  practice.
+
+Acknowledgements
+
+This  work  was  supported  by  the  Program  for  Changjiang  Schol-
+ars  and  Innovative  Research  Team  in  University  of  China  (IRT1247),
+the  Special  Fund  for  Agro-scientiﬁc  Research  in  the  Public  Interest
+of  China  from  the  Ministry  of  Agriculture  (No.  201203096),  and  the
+Key  Technology  Program  R&D  of  Chinese  Ministry  of  Science  and
+Technology  (No.  2012BAD04B12).
+
+References
+
+Ambardekar,  A.A.,  Siebenmorgen,  T.J.,  Counce,  P.A.,  Lanning,  S.B.,  Mauromoustakos,
+A.,   2011.  Impact  of  ﬁeld-scale  nighttime  air  temperatures  during  kernel  devel-
+opment  on  rice  milling  quality.  Field  Crops  Res.  122,  179–185.
+
+Cheng,  F.,  Zhong,  L.,  2001.  Variation  of  rice  quality  traits  under  different  climate
+
+conditions  and  its  main  affected  factors.  Chin.  J.  Rice  Sci.  15,  187–191.
+
+Cheng,  F.,  Zhong,  L.,  Wang,  F.,  Zhang,  G.,  2005.  Differences  in  cooking  and  eating
+properties  between  chalky  and  translucent  parts  in  rice  grains.  Food  Chem.  90,
+39–46.
+
+Counce,  P.A.,  Bryant,  R.J.,  Bergman,  C.J.,  Bautista,  R.C.,  Wang,  Y.,  Siebenmorgen,  T.J.,
+Moldenhauer,  K.A.K.,  Meullenet,  J.F.C.,  2005.  Rice  milling  quality,  grain  dimen-
+sions,  and  starch  branching  as  affected  by  high  night  temperatures.  Cereal  Chem.
+82,  645–648.
+
+Fitzgerald,  M.A.,  McCouch,  S.R.,  Hall,  R.D.,  2009.  Not  just  a  grain  of  rice:  the  quest  for
+
+quality.  Trends  Plant  Sci.  14,  133–139.
+
+Fitzgerald,  M.A.,  Resurreccion,  A.P.,  2009.  Maintaining  the  yield  of  edible  rice  in  a
+
+warming  world.  Funct.  Plant  Biol.  36,  1037–1045.
+
+Guo,  T.,  Liu,  X.,  Wan,  X.,  Weng,  J.,  Liu,  S.,  Liu,  X.,  Chen,  M.,   Li,  J.,  Su,  N.,  Wu,   F.,  Cheng,
+Z.,   Guo,  X.,  Lei,  C.,  Wang,  J.,  Jiang,  L.,  Wan,  J.,  2011.  Identiﬁcation  of  a  stable
+quantitative  trait  locus  for  percentage  grains  with  white  chalkiness  in  rice  (Oryza
+sativa  L).  J.  Integr.  Plant  Biol.  53,  598–607.
+
+Hayashi,  M.,   Sugiura,  K.,  Kuno,  C.,  Endo,  I.,  Tanaka,  Y.,  Yamauchi,  A.,  2011.  Reduction
+of   rice  chalky  grain  by  deep  and  permanent  irrigation  method.  Effect  on  growth
+and  grain  quality  of  rice.  Plant  Prod.  Sci.  14,  282–290.
+
+Inaba,  K.,  Sato,  K.,  1976.  High  temperature  injury  of  ripening  in  rice  plant.  VI.
+Enzyme  activities  of  kernel  as  inﬂuenced  by  high  temperature.  Jpn.  J.  Crop  Sci.
+45,  162–167.
+
+IPCC,  2007.  Climate  change  2007:  synthesis  report.  In:  Summary  for  Policymakers.
+
+http://www.ipcc.ch/pdf/assessment–report/ar4/syr/ar4  syr  spm.pdf
+
+Ishimaru,  T.,  Horigane,  A.K.,  Ida,  M.,   Iwasawa,  N.,  San-oh,  Y.A.,  Nakazono,  M.,
+Nishizawa,  N.K.,  Masumura,  T.,  Kondo,  M.,   Yoshida,  M.,   2009.  Formation  of  grain
+chalkiness  and  changes  in  water  distribution  in  developing  rice  caryopses  grown
+under  high-temperature  stress.  J.  Cereal  Sci.  50,  166–174.
+
+Juliano,  B.O.,  1992.  Structure,  chemistry,  and  function  of  the  rice  grain  and  its  frac-
+
+tions.  Cereal  Foods  World  37,  772–774.
+
+Juliano,  B.O.,  Villareal,  C.P.,  1993.  Grain  Quality  Evaluation  of  World  Rices.  IRRI,
+
+International  Rice  Research  Institute,  pp.  1–205.
+
+Koutroubas,  S.D.,  Mazzini,  F.,  Pons,  B.,  Ntanos,  D.A.,  2004.  Grain  quality  variation  and
+relationships  with  morpho-physiological  traits  in  rice  (Oryza  sativa  L)  genetic
+resources  in  Europe.  Field  Crops  Res.  86,  115–130.
+
+Lisle,  A.J.,  Martin,  M.,   Fitzgerald,  M.A.,  2000.  Chalky  and  translucent  rice  grains  differ
+in  starch  composition  and  structure  and  cooking  properties.  Cereal  Chem.  77,
+627–632.
+
+Maclean,  J.L.,  Dawe,  D.C.,  Hardy,  B.,  Hettel,  G.P.,  2002.  Rice  Almanac,  3rd  ed.  Interna-
+
+tional  Rice  Research  Institute  (IRRI),  Los  Ba˜nos,  Philippines,  pp.  1–253.
+
+Peng,  S.,  Huang,  J.,  Sheehy,  J.,  Laza,  R.C.,  Visperas,  R.M.,  Zhong,  X.,  Centeno,  G.S.,  Khush,
+G.S.,   Cassman,  K.G.,  2004.  Rice  yields  decline  with  higher  night  temperature  from
+global  warming.  Proc.  Natl.  Acad.  Sci.  USA  101,  9971–9975.
+
+Qiao,  J.,  Liu,  Z.,  Deng,  S.,  Ning,  H.,  Yang,  X.,  Lin,  Z.,  Li,  G.,  Wang,  Q.,  Wang,  S.,  Ding,  Y.,
+2011.  Occurrence  of  perfect  and  imperfect  grains  of  six  japonica  rice  cultivars
+as   affected  by  nitrogen  fertilization.  Plant  Soil  349,  191–202.
+
+Sato,  K.,  Inaba,  K.,  1976a.  High  temperature  injury  of  ripening  in  rice  plant.  IV.  Effect
+of   high  temperature  on 14C-assimilation  and  translocation  at  an  early  ripening
+period.  Jpn.  J.  Crop  Sci.  45,  151–155.
+
+Sato,  K.,  Inaba,  K.,  1976b.  High  temperature  injury  of  ripening  in  rice  plant.  V.  On   the
+early  decline  of  assimilate  storing  ability  of  grains  at  high  temperature.  Jpn.  J.
+Crop  Sci.  45,  156–161.
+
+Singh,  N.,  Kaur,  L.,  Sandhu,  K.S.,  Kaur, 
+
+J.,  Nishinari,  K.,  2006.  Relationships
+between  physicochemical,  morphological,  thermal,  rheological  properties  of
+rice   starches.  Food  Hydrocolloids  20,  532–542.
+
+C.  Chen  et  al.  /  Field  Crops  Research  151  (2013)  85–91 
+
+91
+
+Tan,  Y.,  Xing,  Y.,  Li,  J.,  Yu,  S.,  Xu,  C.,  Zhang,  Q.,  2000.  Genetic  bases  of  appearance
+quality  of  rice  grain  in  Shanyou  63,  an  elite  rice  hybrid.  Theor.  Appl.  Genet.  101,
+823–829.
+
+Tashiro,  T.,  Wardlaw,  I.F.,  1991.  The  effect  of  high  temperature  on  kernel  dimensions
+and  the  type  and  occurrence  of  kernel  damage  in  rice.  Aust.  J.  Agric.  Res.  42,
+485–496.
+
+Tsukaguchi,  T.,  Iida,  Y.,  2008.  Effects  of  assimilate  supply  and  high  temperature  dur-
+ing  grain-ﬁlling  period  on  the  occurrence  of  various  types  of  chalky  kernels  in
+rice  plants  (Oryza  sativa  L).  Plant  Prod.  Sci.  11,  203–210.
+
+Wakamatsu,  K.,  Sasaki,  O.,  Uezono,  I.,  Tanaka,  A.,  2007.  Effects  of  high  air  temperature
+during  the  ripening  period  on  the  grain  quality  of  rice  (Oryza  sativa  L.)  in  warm
+regions  of  Japan.  Jpn.  J.  Crop  Sci.,  76.
+
+Wang,  D.,  Huang,  M.,   Gao,  F.Y.,  Lu,  X.J.,  Ren,  G.J.,  2006.  The  inﬂuential  factors  and
+hereditary  improvements  on  the  chalkiness  of  rice  grains.  Southwest  Chin.  J.
+Agric.  Sci.  19,  1189–1194.
+
+Wang,  Q.,  Huang,  J.,  He,  F.,  Cui,  K.,  Zeng,  J.,  Nie,  L.,  Peng,  S.,  2012.  Head  rice  yield
+of   super  hybrid  rice  Liangyoupeijiu  grown  under  different  nitrogen  rates.  Field
+Crops  Res.  134,  71–79.
+
+Yamakawa,  H.,  Hirose,  T.,  Kuroda,  M.,   Yamaguchi,  T.,  2007.  Comprehensive  expres-
+sion  proﬁling  of  rice  grain  ﬁlling-related  genes  under  high  temperature  using
+DNA  microarray.  Plant  Physiol.  144,  258–277.
+
+Yoshioka,  Y.,  Iwata,  H.,  Tabata,  M.,   Ninomiya,  S.,  Ohsawa,  R.,  2007.  Chalkiness  in  rice.
+
+Potential  for  evaluation  with  image  analysis.  Crop  Sci.  47,  2113–2120.
+
+Zhang,  H.,  Tan,  G.,  Wang,  Z.,  Yang,  J.,  Zhang,  J.,  2009.  Ethylene  and  ACC  levels  in
+developing  grains  are  related  to  the  poor  appearance  and  milling  quality  of  rice.
+Plant  Growth  Regul.  58,  85–96.
+
+Zhou,  L.,  Chen,  L.,  Jiang,  L.,  Zhang,  W.,   Liu,  L.,  Liu,  X.,  Zhao,  Z.,  Liu,  S.,  Zhang,  L.,  Wang,  J.,
+Wan,  J.,  2009.  Fine  mapping  of  the  grain  chalkiness  QTL   qPGWC-7  in  rice  (Oryza
+sativa  L).  Theor.  Appl.  Genet.  118,  581–590.
+
+

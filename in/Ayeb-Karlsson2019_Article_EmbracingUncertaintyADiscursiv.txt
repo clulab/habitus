@@ -1,0 +1,1406 @@
+Regional Environmental Change (2019) 19:1585–1596
+https://doi.org/10.1007/s10113-019-01495-7
+
+ORIGINAL ARTICLE
+
+Embracing uncertainty: A discursive approach to understanding
+pathways for climate adaptation in Senegal
+
+Sonja Ayeb-Karlsson 1,2
+
+& Gino Fox 3 & Dominic Kniveton 3
+
+Received: 19 January 2018 /Accepted: 25 March 2019 /Published online: 17 April 2019
+# The Author(s) 2019
+
+Abstract
+Climate change threatens to increase the frequency and intensity of droughts and floods. There are large uncertainties related to
+unknowns around the future and society’s responses to these threats. ‘Uncertainty’ as other words with the prefix ‘un’ (unknown,
+untold, unrest) often has negative connotations. Yet, uncertainty is manifested in virtually everything we do. To many in science,
+uncertainty is akin to error that should be minimised, a lack of knowledge that needs to be rectified. We argue that uncertainty
+rather should be embraced as a starting point for discussing pathways to climate adaptation. Here we follow a definition of
+‘pathways to adaptation’ as representing a set of proactive changes in the present that move people from a climatically unsafe
+place, to positions of safety (self-defined as representing freedom from harm or adverse effect). This article applies an inter-
+discursive analytical approach where (un)certainty and (un)safety are used to deepen the understanding around the positions of
+people in Senegal, and their livelihoods, with respect to climate hazards. We examine the discursive socio-cultural values active
+in the climate adaptive space. Our findings show that people’s adaptive decisions often were not based on climate information,
+but on discursive values and emotions that guided them in the direction of responses that felt right. We conclude that acknowl-
+edging different understandings and perceptions of uncertainty, and the goal of achieving safety, allows issues of power to be
+discussed. We contend that this process helps illuminate how to navigate pathways of adaptation to the impacts of climate
+variability and change.
+
+Keywords Climate change . Discourse . Family therapy . Safe uncertainty . Senegal . Socio-cultural perceptions
+
+Introduction
+
+Conversations around how to adapt to climate variability and
+change often refer to different understandings of current cli-
+mate conditions and future climate change. One widely pub-
+lished and well-referenced source of knowledge on climate
+
+* Sonja Ayeb-Karlsson
+
+S.Ayeb-Karlsson@sussex.ac.uk; ayeb-karlsson@ehs.unu.edu
+
+Gino Fox
+G.Fox@sussex.ac.uk
+
+Dominic Kniveton
+D.R.Kniveton@sussex.ac.uk
+
+1 BSMS, University of Sussex, Room 308, Arts Building C, Arts
+
+Road, Falmer, BN1 9SJ Brighton, UK
+
+2 United Nations University - Institute for Environment and Human
+
+Security (UNU-EHS), Bonn, Germany
+
+3
+
+School of Global Studies, Department of Geography, University of
+Sussex, BN1 9QJ Brighton, UK
+
+change comes from the Intergovernmental Panel on Climate
+Change (IPCC). Established in 1988, the IPCC produces reg-
+ular assessments of the scientific basis of climate change, its
+impacts and future risks. According to the IPCC, these assess-
+ments provide policy-makers with the basis for choosing dif-
+ferent options for adaptation and mitigation.
+
+The Intergovernmental Panel on Climate Change states that
+it has high confidence that the changing climate will continue
+to increase the climate risks of heatwaves, droughts and floods
+(IPCC 2014). Here, the IPCC refers to ‘confidence’ as relating
+to ‘a synthesis of the evaluation of evidence and agreement’
+(IPCC 2014: 6), per the author teams of the IPCC. While risk
+is taken as ‘[t]he potential for consequences where something
+of value is at stake and where the outcome is uncertain, rec-
+ognizing the diversity of values’ (IPCC 2014: 6). Clearly, the
+IPCC warnings of increased risks from the impacts of anthro-
+pogenic climate change are relevant to a wide range of stake-
+holders from policy-makers to decision-takers and those im-
+pacted by both climate changes and the policies to address
+them. In aiming to provide a scientific basis to develop
+
+1586
+
+S. Ayeb-Karlsson et al.
+
+climate-related policies for governments at all levels, the
+IPCC is broadly following a ‘speaking truth to power’ framing
+of science, attempting to act as an independent and objective
+provider of knowledge to policy-makers (Hulme 2010, 2011;
+Eriksen et al. 2015; Baldwin 2016). Without going into an
+evaluation of the validity of such a role, the IPCC process
+involves the conceptualization and communication of the un-
+certainty associated with current climate knowledge. In turn,
+in a policy world, the IPCC’s discourse1 around uncertainty
+and confidence frames the range of options explored and em-
+phasis given to them in the resultant decision-making.
+
+While the issue of uncertainty in science has been widely
+examined, it is only relatively recently that decision-making
+under uncertainty in the arena of climate adaptation has be-
+come popularised within academic circles as a subject of re-
+search. A number of approaches to understanding and
+supporting decision-making under uncertainty have been pro-
+posed, including: processual analysis, applied behaviour anal-
+ysis and organizational behaviour management, foresight, ad-
+aptation pathways, theories of collective action, multiple
+streams framework, decision scaling, structured decision-
+making, robust decision support, and scenario planning (see
+Taylor et al. 2017). While these approaches mainly focus on
+the decision-making process, less attention has been placed on
+how climate knowledge and its uncertainties are framed from
+the perspective of decision-makers. These subjectively de-
+fined understandings of climate variability and change, often
+in terms of their impact on current livelihoods, vary with in-
+dividual values, perspectives, worldviews and beliefs. It is the
+intention of this article to present a framework, to be used with
+decision-makers, and takers, and scientists, to help open up a
+discussion around climate change and pathways to adaptation
+by acknowledging these different framings. While doing so,
+the article introduces the concepts of (un)safe (un)certainty2 to
+frame this discussion. Pathways to adaptation approaches
+have been discussed by a number of authors (e.g. Haasnoot
+et al. 2013; Wilson 2014; Wise et al. 2014; Fischer 2018). In
+particular, Fischer (2018: 237) states:‘ The notion of pathways
+provides a nuanced way to consider adaptation in the context
+[of] past conditions that have shaped vulnerability, specifically
+as a thread within a wider process of societal transition
+through interacting cultural, political, economic, and environ-
+mental change (Haasnoot et al. 2013; Wilson 2014; Wise et al.
+2014)’. In this way, pathways are not seen as static, but evolv-
+ing with continued learning and pluralism in response to
+
+1 In this article, we define discourse as ‘collectively shared domains of state-
+ments’. As discourses can interact, complement or compete with one another,
+we aim to broaden the linguistic analysis beyond one collective narrative,
+attitude or perception (see Foucault 1981 and Fairclough 2003).
+2 In this article, we define safe uncertainty as ‘when a lack of certainty of future
+climate threats is not seen as limiting to feeling and being secure’ and unsafe
+certainty as ‘when certainty (in terms of individuals' understanding of how the
+climate will change) puts them in a situation of potential harm’.
+
+dynamic, complex social–ecological contexts (Armitage
+et al. 2009). The acknowledgement of the benefit of pluralism
+in the process of determining pathways makes explicit the
+need to consider multiple sources of knowledge, values, rules
+and norms (Fazey et al. 2016).
+
+The IPCC and climate science in general presents a set of
+discourses around the issue of climate knowledge and uncer-
+tainty. In this article, we use keywords such as (un)safety and
+(un)certainty to analyse collective descriptions made around
+climate change adaptation by people in Senegal. In doing so,
+we introduce a pathway approach that recognises the inherent
+subjectivity3 of climate knowledge and attempts to harness
+sustainable routes towards climate adaptation (see Armitage
+et al. 2009). In the following text, we purposefully blur the
+distinctions between climate change and variability, seeing
+societal responses to contemporary climate information and
+forecasts as a route for adapting to longer term climate change
+while recognising that climate change might be sudden, irre-
+versible and beyond what is experienced in terms of
+variability.
+
+Climate adaptation and uncertainty
+
+The issue of uncertainty lies at the very heart of climate, if not
+of all predictive science. At the most fundamental level, shed-
+ding light on scientific unknowns is a driving rationale for all
+scientific research. Indeed, a lack of certainty may be thought
+of as extending to the very basis of science in that theories in
+science can only be falsified rather than proved. Within atmo-
+spheric sciences, chaos, and by extension uncertainty, are fun-
+damental characteristics of how the atmosphere varies and
+changes over time. Here, chaos means that even the smallest
+perturbations to the atmosphere can exert large impacts on
+how the atmosphere evolves over time. First shown by
+Edward Lorenz, the atmosphere’s chaotic nature means that
+all forecasts of weather and climate must be treated as proba-
+bilistic and so contain some degree of uncertainty (Slingo and
+Palmer 2010).
+
+Uncertainties in forecasts also arise from a lack of under-
+standing of atmospheric processes and how they are represent-
+ed by forecasting systems. Forecasting systems can be process
+based, statistically based or a mixture of both. Statistical-based
+forecasting systems in general use regression-based equations
+to represent the large-scale linkages between drivers of the
+atmosphere, such as sea surface temperatures and the state of
+the atmosphere. Whereas process-based models attempt to
+numerically account for processes explicitly, at a smaller
+
+3 In this article, we follow Morales and Harris (2014) definition of subjectivity
+as ‘how one understands oneself within a social context—one’s sense of what
+it means and feels like to exist within a specific place, time, or set of relation-
+ships’ Morales and Harris (2014: 706).
+
+Embracing uncertainty: A discursive approach to understanding pathways for climate adaptation in Senegal
+
+1587
+
+scale, either from first principles and/or by the means of pa-
+rametrizations. Process-based dynamical models try to ac-
+count for the chaotic nature of the atmosphere by performing
+multiple simulations with small random perturbations applied
+to the initial conditions of the simulations.
+
+When we move to forecasting the atmosphere at longer
+time scales, the uncertainty of the dynamics of the atmosphere
+from chaos is added to by uncertainties in our understanding
+of other components of the climate system, such as how the
+ocean, biosphere, cryosphere, lithosphere and the sun, change
+and interact with each other and the atmosphere. For example,
+predicting patterns of volcanic activity, which can cause the
+rapid cooling of the planet, is severely limited to lead times of
+days to weeks. Uncertainty also arises from not knowing how
+the composition of the atmosphere in the future will change,
+with different societal pathways giving rise to different emis-
+sions and hence atmospheric concentrations of greenhouse
+gases and aerosols. Uncertainty in climate projections is fur-
+ther magnified when science tries to examine the impact that
+future climate changes will have on socio-ecological systems.
+This scientific perspective on climate change uncertainty has
+been nicely summarised in the work of Wilby and Dessai
+(2009) as the ‘cascade of uncertainty’. Three other sources
+of uncertainty however add to this cascade: namely, uncertain-
+ty over which adaptation responses are chosen to deal with
+climate impacts, uncertainty around how effective these ac-
+tions will be in mediating these impacts, and possibly most
+importantly, how other drivers of change, such as globalisa-
+tion and population change will interact with climate change.
+This last source of uncertainty is potentially large and unpre-
+dictable. For example, agent-based simulations of how migra-
+tion flows might evolve with climate change in West Africa
+showed emergent behaviour when population growth was al-
+so incorporated as a driver of demographic change (Kniveton
+et al. 2012).
+
+While the uncertainty of forecasts as pertaining to inaccu-
+racies in predicting the evolution of the atmosphere over time
+have been widely explored, less attention, particularly in terms
+of the use of climate information, has been focused on other
+dimensions of uncertainty. Specifically authors such as
+MacKenzie (1990), Van der Sluijs (1997, 2002, 2005, 2006)
+and Stirling (2001) have highlighted that uncertainty is at least
+partly socially constructed. This assessment always involves
+subjective judgement and value-based assumptions and thus,
+uncertainty should be assessed qualitatively as well as quan-
+titatively. The social construction of uncertainty of science is
+of particular importance when looking at how science is used
+to make decisions. As highlighted by Van der Sluijs (2006:
+72), the construction of uncertainty can be viewed as ‘the
+product of implicit negotiation processes between scientists,
+policy-makers and the public’.
+
+Decision-making, in the face of unquantifiable uncertainty
+in predicting the impacts of future climate, has highlighted the
+
+use of decision-based heuristics in determining adaptation ef-
+forts. These include ‘flexiblity’, so that adaptation efforts can
+change as new knowledge emerges, ‘robustness’, as in adap-
+tation actions work over a range of climate scenarios, and of
+‘low-regrets’, in terms of what is done today is not regretted in
+the future (Ranger et al. 2013; Haasnoot et al. 2013; Wise et al.
+2014). How people deal with day to day uncertainty, such as
+when to plant seeds or when to harvest crops, is highly uncer-
+tain and collectively bound. Equally, ideas around what is
+considered an appropriate or safe decision in the face of cli-
+mate risks is subjective. For example, in the arena of early
+warning systems around cyclones, it has been shown that in
+some social and cultural contexts, even though a functional
+early warning system is in place, the decision to not evacuate
+to shelters can still be prevalent among certain sections of a
+society. People, for example, explain remaining at home al-
+though having received warning messages of an approaching
+cyclone, due to religious beliefs (Ayeb-Karlsson et al. 2016,
+2019). This example adds to a widely acknowledged notion
+that the barriers or limits to adaptation can be social and cul-
+tural (Adger and Vincent 2005; Adger et al. 2009; Nielsen and
+Reenberg 2010). In this sense, attitudes and knowledge to-
+wards risk and uncertainty becomes critical when trying to
+understand why some people manage to adapt while others
+do not (Oliver-Smith 1996; Wisner et al. 2004; Dessai and
+Hulme 2004). It is however important to acknowledge that
+culture, values and religious beliefs do not simply restrict
+and create barriers or limits to adaptation. Cultural values
+and attitudes rather inform whether people want to adapt,
+how they want to adapt, what is worth saving, and what is
+worth losing. In this way, analysing people’s attitudes and
+values is an effective way to better understand what adaptation
+means to them. It is also important to think of cultural values
+and religion as potential tools for increased disaster prepared-
+ness or adaptive capacity. This is for example the case, when
+sacred buildings are used as cyclone and flood shelters, or
+when influential religious leaders take part in disaster relief
+and preparedness programs (Cheema et al. 2014; McGeehan
+and Baker 2017; Ayeb-Karlsson et al. 2019).
+
+A discursive framework to elaborate
+around climate uncertainty in Senegal
+
+Language and text are core fundaments that give meaning,
+value and understanding to our social lives and realities. In
+this way, they can effectively be analysed to detect changes
+and transformations in collectively shared beliefs, attitudes
+and perceptions. As people are social actors, they have the
+power to influence language and establish relationships be-
+tween words, meanings and values through repeated commu-
+nication (Foucault 1972, 1981; Fairclough 2003). Key me-
+diums of social interaction are spoken and written words. An
+
+1588
+
+Fig. 1 Illustration of the
+conceptual model of safe
+uncertainty, adopted from Mason
+(1993: 195), and exemplifies
+positions of (un)safe (un)certainty
+
+S. Ayeb-Karlsson et al.
+
+effective way of understanding shared storylines is therefore
+through the analysis of discourse (Foucault 1981; Fairclough
+2003). Discourses can be thought of as collective spaces in
+which people communicate and act according to a common
+understanding of collective norms. In other words, they create
+and establish knowledge regimes within a social space. People
+position themselves and their identity within these collectively
+shared spaces. In doing so, they represent a perceived and
+interlinked subjective reality that is constantly transformed
+through social interactions (Foucault 1972, 1981; Fairclough
+2003; Ayeb-Karlsson et al. 2018). Climate adaptation can
+through this lens be understood as a social process within this
+socio-political space (Eriksen and Lind 2009; Eriksen et al.
+2015). The discourse lens within this article will help reveal
+the multi-level connections influencing people’s decision-
+making and the power hierarchies in our Senegalese study
+area. This is because discourses—linked to power and
+knowledge—embrace particular combinations of words, nar-
+ratives and practices that therefore result in specific social
+actions (Adger et al. 2001; Peet and Watts 2002; Meunier
+and Crane 2018). In this article, we will not attempt to detect
+or to identify competing or cooperative discourses, nor carry
+out any in-depth critical discourse analysis. Instead, we ex-
+plore the discursive meanings and values around a few key
+concepts among agricultural stakeholders in Senegal.
+
+The inter-discursive analysis was conducted in the follow-
+ing way: (1) we chose to introduce the key concepts of climate
+change, (un)certainty and (un)safety through a model of safe
+uncertainty (see Fig. 1) within individual interviews and group
+sessions; (2) we then analysed the way these concepts were
+described or given value and meaning inter-discursively or
+through the repeated semantic, grammatical and vocabulary
+relationships (see Fairclough 2003 or Ayeb-Karlsson et al.
+2018 for a similar approach). In this inter-discursive analysis,
+we realised that much of the discussions and descriptions were
+
+aligned around the idea of knowledge and power. We also
+noticed that the framing around (un)certainty and (un)safety
+was binary structured.4
+
+As explained, discourses—including power and knowl-
+edge interactions—regulate people’s adaptive behaviour.
+These knowledge regimes refrain people from accidentally
+or intentionally stepping outside of the collectively established
+social norm. The communicative repetition through spoken
+and written language serves as a reminder of what people
+should think and how to behave. The qualitative dataset from
+Senegal with agricultural stakeholders therefore supports our
+understanding of their perceptions and attitudes around cli-
+mate variability and change, impacts and adaptation.
+
+To give an example, imagine the case of people dealing
+with climatic hazards such as cyclone strikes. Some people
+may consider evacuating to the shelter after receiving the
+warning message. However, this may not feel like a pathway
+towards certainty or safety for all. It is one adaptive pathway
+for some to deal with the environmental stress, but it does not
+necessarily work for all. A young unmarried woman for ex-
+ample, may not find safety in evacuating to the shelter.
+Perhaps she decides not to evacuate to a public shelter because
+this is seen as an ‘inappropriate space’ for a young unmarried
+woman. In this way, it is the social power relations in place
+within this discourse that refrain her from evacuating. In some
+parts of the world, such as in some areas of Bangladesh, a
+woman’s place is at home, she is safe at home, and she should
+therefore not necessarily leave the house even though a cli-
+matic hazard is approaching (Begum 1993; Alam and Rahman
+
+4 Certainty and safety were described as positive, stable, productive and good,
+while uncertainty and unsafety were negative, risky, destructive and bad. This
+dual structuring is sometimes referred to as binary opposites, e.g. white and
+black, good and bad or feminine and masculine. It builds upon the idea that
+people feel a ‘natural’ need to order their reality this way to be able to feel like
+they understand the world (Foucault 2000, 2002).
+
+Embracing uncertainty: A discursive approach to understanding pathways for climate adaptation in Senegal
+
+1589
+
+2014; Ayeb-Karlsson et al. 2016). As an unmarried woman,
+her mind prioritises the knowledge that suggests that if she
+gets sexually assaulted in the shelter, on the way to the shelter,
+or even is thought by others to have been assaulted, she may
+never marry. Instead, she would become an economic ‘bur-
+den’ to her family. She feels safer trying to survive the cyclone
+at home, than by putting her ‘social status’ at risk in the shelter.
+Knowledge, within a discourse, could act constraining or trap-
+ping someone into a seemingly (from another perspective)
+vulnerable position. Knowledge also determines what people
+consider as unsafe and uncertain.
+
+The empirical data analysed was gathered in Senegal5
+through 23 in-depth interviews and eight Focus Group
+Discussions (FGDs) with about 10–15 snowball sampled par-
+ticipants in each (see Table 1). The research sessions were all
+conducted in 2016 by local French-speaking researchers that
+were accompanied by the authors. The sessions were audio
+recorded, transcribed and translated into English.
+Observations and notes were also taken throughout sessions
+that included interactions between people in the group ses-
+sions. The interviewing and group sessions were all carried
+out around the topic of climate variability and change, impacts
+and adaptation, (un)safety and (un)certainty (see model in Fig.
+1). The research sessions were conducted with regional agri-
+cultural stakeholders (including farmers, scientists and policy-
+makers). All the participants represented an agricultural orga-
+nisation in one way or another. Some of them were farmers on
+the side, others are farmers involved in policy or research (see
+Table 1). In this way, the participants were socio-economically
+fairly well off, although they had been through different levels
+of financial loss due to the climatic stressors. A few partici-
+pants were women, although a vast majority of them were
+men. No group sessions were carried out with women only,
+yet in some groups, women attended and engaged in the con-
+versations. The participants were all within the age of 20 to 69.
+The respondents were selected through a form of snowball
+sampling based on the AMMA-2050 projects’ institutional
+contacts. Further research would be required to engage with
+those more marginalised—where we envisage we would re-
+ceive a more polarised response.
+
+Similar theoretical frameworks (of discourse, power and
+knowledge) have been used to show how identity, space and
+subjectivities enable or constrain people’s ability to adapt in
+Kenya and Senegal (Eriksen and Lind 2009; Eriksen et al.
+2015; Meunier and Crane 2018). These studies illustrate how
+
+5 This case study was carried out in Senegal’s Peanut Basin. French colonialist
+first introduced peanut plantations here in the nineteenth century, and the West
+African country has since then become one of the world’s largest producers.
+Around half of Senegal’s cultivated land is dedicated to peanut which has
+resulted in soil degradation, erosion and lack of vital nutrients. Other agricul-
+tural products grown in the area include millet, cowpeas, sorghum, okra and
+tomatoes. The area has recently experienced significant climate-related shocks,
+including drought, wind storms, flooding rain and unseasonable temperature
+changes.
+
+Table 1 Overview of the
+informant’s socio-
+economic background
+including gender,
+occupation and age
+
+Individual
+
+respondents
+Gender
+
+Occupation
+
+Technical advisers
+Policy-makers
+Farmers
+
+(dual roles)
+
+Age
+
+20–29
+30–39
+40–49
+50–59
+60–69
+
+Group respondents
+
+Gender
+
+Occupation
+
+Technical advisers
+Policy-makers
+Farmers
+
+(dual roles)
+
+Other
+
+Age
+
+20–29
+30–39
+40–49
+50–59
+60–69
+
+Male
+17
+
+Female
+6
+
+14
+3
+3
+
+4
+2
+6
+2
+3
+
+2
+4
+1
+
+1
+2
+2
+0
+1
+
+Male
+57
+
+Female
+20
+
+29
+16
+4
+
+8
+
+5
+26
+12
+12
+2
+
+8
+5
+6
+
+1
+
+0
+9
+7
+4
+0
+
+Note that some of the informants carry out
+dual occupations, such as farmers also in-
+volved in drafting and transforming local-
+or regional policy legislations
+
+people’s behaviour, including their adaptive responses to cli-
+matic stress and shocks, are influenced by the social power
+relations and knowledge within the adaptive space. In this con-
+ception, adaptation strategies are viewed as socio-political pro-
+cesses that reveal how individuals and collectives interrelate
+with one another as well as with the environmental and social
+changes or disruptions. In line with this view, we argue that
+there is a need to reframe adaptation policy, practices and anal-
+ysis to involve local and alternative adaptation knowledge.
+Furthermore, we argue that the inclusion of local knowledge
+and meaning enable societies to respond more effectively to
+socially created problems and vulnerabilities. We feel that peo-
+ple’s perceptions of uncertainty are bound up with the dynamic
+outcomes and situations in which uncertainty is expressed. We
+particularly posit the idea that different understandings of cli-
+mate knowledge can position people along a continuum of
+whether the use of this knowledge allows them to be safe,
+
+1590
+
+S. Ayeb-Karlsson et al.
+
+unsafe or in a position in between the two. In every day par-
+lance, the terms certainty and safety are often considered close-
+ly related or even equivalent terms. We however take as a
+starting point the possibility that these characteristics are distinct
+even orthogonal to each other. This is why we use a conceptu-
+alisation of a decision-behaviour space that is contained within
+the axes from certainty to uncertainty and unsafety to safety (see
+Fig. 1 adopted from Mason (1993: 195) where the spectrum of
+certainty to uncertainty pertains to knowledge of climate risks,
+and that of unsafe to safe is associated with how one sees one’s
+livelihood or outcome of a decision.
+
+The conceptual model of safe uncertainty6 is used widely in
+the discipline of family therapy to manage problems, risk and
+change (Mason 1993; Vivian-Byrne 2001). The conceptual
+framework aligns well with our research problem as it repre-
+sents a way of moving away from certainty and the idea that
+solutions will solve all things (Mason 1993: 194). In the sphere
+of therapy, the space of safe uncertainty is seen as the most
+therapeutic or a more ‘reasonable’ emotional state as it allows
+new explanations to emerge alongside the current context rather
+than the new information competing with a fixed or non-
+transformative psychological position (Mason 1993; Vivian-
+Byrne 2001). Likewise, in a changing climate, we characterise
+the safe uncertainty space as one which promotes dialogue and
+learning through the contribution of different stakeholder’s
+views with varying knowledge and purposes to form different
+pathways to adaptation which are flexible, robust and low-
+regrets (Ranger et al. 2013). In this article, we posit that move-
+ments within the larger space of uncertainty to certainty and
+unsafety to safety requires a recognition of the role of knowl-
+edge and power. Uncertainty does not preclude safety, and un-
+derstanding someone’s position in this space benefits from dif-
+ferent perspectives/sources of knowledge through dialogue.
+Clearly, key to this conception is the recognition of the subjec-
+tive element of what is considered certain and uncertain, or safe
+and unsafe. For example, one person living in an urban hotspot
+may define someone-else’s living condition in a climatic high-
+risk rural area as highly unsafe or uncertain. However, that very
+same person may point out that it is much safer to live in a rural
+village than within the urban dangers of a city.
+
+This article will therefore apply the conceptual keywords of
+climate change, (un)safety, and (un)certainty to understand dif-
+ferent pathways of adaptation in Senegal. In doing so, it high-
+lights the idea of safe uncertainty being accepting of uncertainty
+
+6 In the ‘conceptual model of safe uncertainty’, safe certainty represents a
+utopic state, or an unachievable emotional or psychological position as one
+never can be completely certain that they are totally safe. In the area of therapy,
+certainty represents the knowing about the condition to be threated while the
+movement represents the work of the therapist to move the client towards a
+‘better place’. The term safety here refers to containment and protection of the
+client, public and staff throughout the movement. In other words, clients will
+generally seek help from a position of unsafe uncertainty or unsafe certainty
+while believing that the therapist will be able to offer them a position of safe
+certainty (Vivian-Byrne 2001: 109).
+
+and not limiting. This while also acknowledging that power and
+knowledge influence the position of someone, a society or an
+institution within a collective adaptive space, or discursive
+values of how to move (pathways to adaptation) from one
+psycho-emotional space to another in the face of climate risks.
+
+Climate uncertainty and adaptive pathways
+in Senegal
+
+Rainfall variability in West Africa over recent decades has
+been among the most extreme in the world. The drought that
+started at the end of the 1960s is now recognised as one of the
+strongest climatic signals since meteorological measurements
+began (Hulme et al. 2001). The high vulnerability of many in
+the region has meant that past climate extremes have led to
+high losses in lives and livelihoods resulting in the impover-
+ishment and displacement of many. Since the droughts of the
+1970s and 1980s, while there has been a partial recovery of the
+rains, many urban areas now suffer from an increase in severe
+flooding.
+
+While there is a solid physical understanding of the causes
+of historical climate variability in the region, there is a large
+amount of uncertainty in predicting climate variability at sea-
+sonal and longer timescales. Currently, there is no consensus
+on how changes in greenhouse gases, land cover and aerosols
+will impact future rainfall, in terms of the seasonal total and its
+distribution within the wet season. Importantly, in terms of
+societal impact, there is limited knowledge of how high-
+impact weather (HIW) events may change in the near and
+long-term future. This uncertainty, coupled with a weak capa-
+bility to plan investments on varying timescales, results in a
+paucity of climate knowledge being used as a guide to devel-
+opment decision-making.
+
+Applying the conceptual model of safe uncertainty
+to climatic risks in Senegal
+
+In this context, the multi-institutional African Monsoon
+Multidisciplinary Analysis, AMMA-2050 project aims: (1)
+to provide expert judgement on future projections of HIW;
+(2) to create tools and methodologies for using these projec-
+tions for planning within the agricultural and hydrological
+sectors, and (3) to demonstrate the potential for effective ap-
+plication of reliable 5–40-year climate projections and associ-
+ated uncertainties in regional to local scale decision-making.
+One of the focuses of AMMA-2050 is building the resilience
+of agriculture to climate change. Based in Senegal, the rele-
+vant pilot study in the project aims to establish a planning and
+policy framework which bridges the knowledge gap between
+climate scientists and the agricultural planning processes.
+Involving agricultural key actors (farmers, scientists, policy-
+makers), the project has documented and is trialling existing
+
+Embracing uncertainty: A discursive approach to understanding pathways for climate adaptation in Senegal
+
+1591
+
+and new climate resilient agricultural practices, including col-
+laborative cultivar breeding strategies, with the potential to
+increase adaptive capacity in the study area that might be
+up-scaled to other parts of West Africa.
+
+The following results come from some of the research ses-
+sions held with stakeholders from southern and central
+Senegal. These areas experience a Sudano-Sahelian climate,
+characterised by high temperatures (28.1 °C for 1980–2013)
+and low rainfall (474 mm for 1980–2013), with the wet season
+occurring between mid-June and mid-September (Salack et al.
+2011). The area is characterised by a high level of naturally
+saline soil and salinized soil due to land degradation (17% of
+the total land, see Diome 2015). To adapt to high inter-annual
+variability of rainfall, farmers in this area had developed low
+risks strategies (low inputs and low but stable yields) that have
+placed them in what some might consider a position of safe
+uncertainty. However, in the context of climate change with
+fears of increasing variability and extreme weather combined
+with a desire for improved food security and livelihoods,
+farmers of the Peanut Basin are starting to feel, more frequent-
+ly, in an unsafe and uncertain space.
+
+To initiate a discussion, the conceptual model of safe un-
+certainty (shown in Fig. 1) was drawn and its function ex-
+plained to the participants. The authors acknowledged that
+there was a potential risk of influencing the participants’ per-
+ceptions around the key concepts of (un)safety and
+(un)certainty through the examples used to illustrate the mod-
+el. The way the researches dealt with this was by:
+
+(1) Using unfamiliar environmental stressors. The hazards
+used in these examples, tropical cyclones, do not exist
+to a large extent in this region. People here are mainly
+dealing with droughts and dry spells.
+
+(2) The conceptual choice of methodology. This study
+aimed to capture the discursive meanings and values
+around these concepts. In doing so, the researchers in-
+troduced these concepts within an open-ended interview
+or group discussion, but allowed people themselves to
+elaborate, give meaning and deeper describe the socio-
+cultural values around the concepts.
+
+To illustrate the function of the model, hypothetical exam-
+
+ples of people in the four positions were given:
+
+a. Safe certainty was illustrated by people living on a hill by
+
+the sea in a flood risk area.
+
+b. Unsafe uncertainty was portrayed by people living at sea
+level meaning that the village would be inundated by
+storm surges, but they did not know when it might occur.
+c. Unsafe certainty was described as people who presently
+had never been affected by storm surges, while lacking
+knowledge of sea level rise, an intensification of cyclones
+with global warming, and the ability to negate these risks.
+
+d. Safe uncertainty was ultimately explained as people living
+at sea level, but under the protection of early warning
+messages notifying them of the approaching storm surges
+and with risk reduction actions available to them.
+
+After explaining the model, the participants were asked to
+elaborate and debate around their places and situations. They
+were also consulted on how they saw themselves and their
+reality fitting into the four positions. These elaborations relat-
+ed to the climate risks that they currently faced, as well as
+potential future climate impacts on their livelihoods. The par-
+ticipants were also asked what changes they envisage that
+could help them to move within the four position in the model.
+
+Results from the safe uncertainty sessions in Senegal
+
+The rest of this section will present the results of the research
+sessions. According to some participants, salinization of soil
+and extreme events were seen as placing them in an unsafe
+certainty space as extreme events always happen and saliniza-
+tion has always existed. To move from a situation of suffering
+due to these issues to a safe certainty space, the participants
+highlighted the use of a local development plan that restricts
+the use of the salinized land. However, several participants
+expressed how such a move towards safety and greater cer-
+tainty, while desirable, may not be that easy to realise. Some
+even referred to it being a ‘dream’.
+
+Financial capital was referred to as a limiting factor in the
+move towards safer certainty. For example, drought- and
+flood-resistant crops may ensure a greater degree of certainty,
+but these seeds are more expensive and yields can be low.
+
+The problems of food shortages mean that we have very
+little to invest when we need to think of how to deal with
+dryer or wetter conditions. /…/ The special seeds are
+very expensive.
+
+One of the most important ways to reach a safer place was said
+to be through ‘better communication’ of ‘information’ or
+‘knowledge’. However, the participants sometimes felt that
+information was kept from them by the government represen-
+tatives for their benefit. In this way, the issue of climate change
+ended up playing an important role in the power dynamics
+between key actors within the government. As a result, policy
+was seen as a constraining factor of pathways to adaptation.
+This was because the respondents felt as policy was being
+used as a tool against them to control the people, and to in-
+crease the benefits for those already in power. In such in-
+stances, people explained feeling locked into unsafe places,
+or positions with limited adaptation pathway options:
+
+Land [earmarked by the government] for development,
+that we could use, has not been touched for years. We
+
+1592
+
+S. Ayeb-Karlsson et al.
+
+are not even allowed to graze our cattle there. To arrive
+at a safe position even with uncertainty is… [another
+participant interrupts]. A dream, these are dreams. I sup-
+pose we must as a starting point prioritise how we mo-
+bilise [change in speaker].
+
+Improving communication is the best way of making
+changes that are effective, only then can we move to a
+safer place. Though the information is used by govern-
+ment representatives for themselves.
+
+Climate change is transforming the political landscape.
+We see departments who should be working together,
+because of the changes taking place, still not communi-
+cating. Everyone involved is finding their own position.
+
+In terms of why people remain in unsafe uncertainty, respon-
+dents cited the lack of forecasts of the wet season onset and end
+dates, the post-wet season rain spells, the occurrence of long dry
+spells, strong wind events and the rainfall distribution during
+the wet season, as increasing agricultural livelihood vulnerabil-
+ity. Pathways to move to a safe uncertainty space included
+better climate information (knowledge), the establishment of
+windbreaks (including the planting of trees and the develop-
+ment of agroforestry), the adoption of water retention technol-
+ogy such as Zai pits and encouraging plant diversity:
+
+To arrive at a position of greater safety and certainty as in
+the box, we need a good strategy for water resource man-
+agement, a good way of how to deal with climate infor-
+mation, options on the right varieties [of plants], more
+information on how to deal with soil conditions, transfer
+of technologies, improved techniques for adaptation and
+the restoration of ecosystems. Nevertheless, we still face
+obstacles including the implications of de-population,
+lack of available human resources, and financial con-
+straints. There are also issues with the lack of co-
+ordination between NGOs /…/ For many years they
+[naming the National Government Agencies] provided
+lots of information but it is badly used.
+
+Next to technological and financial resources (resources se-
+cured through altered power relations), people pointed out that
+there was a need for knowledge of how to strategically deal
+with climate information. The dissemination of climate infor-
+mation was not seen as enough, without the knowledge about
+how to use the information. Suspicion existed that the knowl-
+edge on how to use climate information was being withheld
+by government officials which presented a barrier to the
+movement of people to a safer space:
+
+When pushed further on the reasons why information was
+seen as irrelevant and difficult to use, many suggested that the
+information did not give a complete picture from which they
+could make decisions. In these instances, they relied on tradi-
+tional knowledge to take decisions. The traditional knowledge
+was mostly available to them, even when the meteorological
+information was absent.
+
+It was also suggested that to move from a situation of un-
+safe uncertainty to one of safe certainty, households, or mem-
+bers of households, could migrate. The ensuing discussion
+from this suggestion included whether such migration might
+however in certain situations lead to people finding them-
+selves in unsafe certainty. This was because households, for
+example, relocated to slum areas that were prone to urban
+flash flooding, or that while reducing climate vulnerability
+suffering further economic vulnerability. Participants also
+highlighted that migration could perhaps move part of a
+household towards greater safety, but position those who are
+left behind, especially women, in deeper unsafe uncertainty:
+
+We need alternative thinking, or for the local NGOs to
+prepare people to leave the countryside and move to the
+city by providing training in non-agricultural activities.
+There is an expectation for those that leave to contribute
+financially to the family back home, and they find it
+extremely hard to survive in the city.
+
+One individual generally takes key decisions. These de-
+cisions are often very socio-cultural. The erosion of the
+family because of food insecurity—such as the migra-
+tion to the cities—can really create problems particular-
+ly for women.
+
+The approach outlined above provides a fertile landscape to start
+the process of identifying discursive pathways of, and barriers to,
+adaptation to climate variability and change as envisaged by
+local stakeholders in Senegal. In this conception, the two dimen-
+sional conceptual space of safety and certainty is influenced by
+the third dimension, power. Power plays a significant role in
+shaping the direction of discursive adaptive pathways. The par-
+ticipants gave a host of reasons why they and most of their peers
+occupied an uncomfortable space of unsafe uncertainty and un-
+safe certainty. Interestingly, the certainties that they identified
+were issues that many saw beyond or outside of their control:
+
+Many problems that relate to climate we have no control
+over. People from the town used to come to us farmers
+to buy produce but our yields have gotten smaller and
+our prices have gone up. They now go to the town for
+their things.
+
+The Meteo [Government Weather Service] rarely give
+us information and when they do it is hard to use.
+
+Access to knowledge was also identified as being beyond the
+participant’s control. Some farmers, for example, explained
+
+Embracing uncertainty: A discursive approach to understanding pathways for climate adaptation in Senegal
+
+1593
+
+the inability to move towards safe certainty by not having
+direct access to climate information or knowledge. Many still
+relied on indigenous knowledge, caught in a space of uncer-
+tainty because of conflicting information.
+
+We never talk to the people giving us the information.
+We get the information and have to decide what to do.
+Too many people tell us different things.
+
+Climate information is provided as only weather [fore-
+casts at daily timescales] as this is what the authorities
+believe local farmers need.
+
+The information we receive is never specific enough to
+our sector.
+
+The participants, also pointed out that decision-makers, such
+as regional government agencies, have direct access to knowl-
+edge. Among ‘regular people’, those with greater social cap-
+ital, due to age or experience, were also better able to access
+knowledge:
+
+What we need from the decision-makers is for the [cli-
+mate] information to be more precise. We must also
+adapt its usage to need.
+
+We need to look at old methods to see what works be-
+cause we do not have the skills or expertise to do what is
+needed. The Regional Government Agency understands
+the importance of giving the information to us producers
+but we need to know what to do with it.
+
+The Elders suggested that their fathers and grandfathers
+knew well how to increase their adaptive capacity. Some
+people find adaptation much easier only because their
+grandfathers passed this knowledge along to them. At a
+local level, some farmers were therefore able to detect,
+integrate and respond to climate variability quicker than
+others.
+
+together or really have power to buy the seeds they think
+they might need.
+
+Trust is critical in the thinking of farmers so not wanting
+to ruin this is very important. Farmers are very percep-
+tive as part of their role and as such approach all things
+with caution. Change is difficult and economics impact
+or compounds on their thinking.
+
+The participants also introduced another interesting element in
+their description of knowledge. To adopt an adaptive pathway,
+and move towards safe certainty, some participants explained
+that they do not need climate information but knowledge rel-
+evant to themselves. Some respondents described how the
+competition between traditional and technological knowledge
+confused them. In this way, traditional knowledge was rein-
+forced as less valued than technological knowledge:
+
+Sometimes the government tells us things that go
+against our indigenous knowledge. What are we sup-
+posed to do? We have to do what is best for our families.
+
+As observed, the descriptions around how to move towards
+greater certainty and safety were strongly influenced by socio-
+cultural values and meanings around knowledge. Even though
+financial capital was mentioned as a potential limitation to
+reach greater safety and certainty, knowledge, and the feeling
+of being at ease with the decisions made, was more important.
+If people felt that they had obtained the traditional knowledge
+to predict a dry spell or drought, they would simply choose not
+to farm, plant drought-resistant seeds, or migrate away tem-
+porarily to a place where they could tend to another livelihood
+activity. This is interesting, as it illustrates that most and fore-
+most it was people’s perceptions around what is safe and how
+one can be certain that drove their adaptive responses.
+
+Discussion
+
+The participants identified social norms and power relations as
+principle factors locking people into an uncertain and unsafe
+space. For example, it was mentioned that people reproduce
+the behaviour of their families and villages even though it may
+be maladaptive. According to the participants, farmers tend to
+mistrust or take great ‘caution’ before trusting other members
+of the society which can act as a block to the transfer of new
+knowledge:
+
+There is a problem with everyone doing different things
+to deal with the changing seasons and climate. The way
+everyone acts is based on how their families and com-
+munities act. This means that people do not always work
+
+This article outlines the development and use of a theoretical
+framework encompassing themes of uncertainty and safety to
+open up the discussion of pathways to adaptation to the im-
+pacts of climate change (Mason 1993; Haasnoot et al.2013 ;
+Fazey et al. 2016). The Senegalese case study used to illustrate
+the approach revealed a variety of perceptions in relation to
+climate hazards, (un)certainty and (un)safety. People pointed
+out that to be able to adapt, and move from unsafe positions,
+the existence of climate information is not enough, while im-
+plicitly acknowledging the role of information and knowledge
+in adaptation. Access to climate information, or the knowl-
+edge of how to obtain climate information, equals power
+and can allow people to move towards greater safety.
+
+1594
+
+S. Ayeb-Karlsson et al.
+
+The participants described different ways that knowledge
+was un-accessible or being kept from them. It was expressed
+that those with power sometimes kept the knowledge to them-
+selves deliberately for their benefit, and to protect their power
+positions. This was, for example, illustrated by the elderly
+participants who claimed that former generations used to
+know very well how to adapt to the observed climatic chang-
+es. This indigenous knowledge was being passed along to
+their children which made people more resilient to the chang-
+es. However, at the same time, a few participants expressed
+how they found it confusing that the meteorological climate
+information and indigenous traditions seemed to be clashing.
+This narrative potentially illustrates a transformative shift in
+the climate adaptation discourse. It is clear that there is a need
+for more, or rather ‘better’, climate information and knowledge.
+This includes climate data at seasonal and long-term scales, in
+order to adapt to the problems presented to people by climate
+hazards, but critical local consultations and need assessments
+also ought to be carried out (Wise et al. 2014; Ayeb-Karlsson
+et al. 2016; McGeehan and Baker 2017). The ideas presented in
+this article aim to open up a critical discussion of how we
+perceive uncertainty and how it is framed. Currently, uncertain-
+ty is continuously framed as something we need to avoid, min-
+imise and work against. This is particularly evident and well
+documented among the science community (Jasanoff et al.
+1998; Keeley and Scoones 2014). In contrast, we posit the idea
+that uncertainty in climate knowledge is not only essential to
+adaptation, but it is something that broadens the discussion of
+alternative knowledge and pathways for adaptation. This is ev-
+idently not a new panacea. As a tool for survival, we need to be
+able to respond to change quickly. Uncertainty, can be thought
+of as the fuel for this trait (Adger and Vincent 2005; Van der
+Sluijs 2006). We argue for embracing uncertainty as it may
+provide constructive solutions for vulnerable people living un-
+der climate uncertainty.
+
+Interestingly, some respondents in this Senegalese study
+suggested that it would be impossible to arrive at a safe and
+certain space. According to the participants, the continuum of
+time with this inherent uncertainty always leaves the door
+open to another unsafe possibility emerging. When applied
+to the model of safe uncertainty, we can envisage that while
+adaptation can move somebody towards a position of greater
+safety, the model will also shift with them because of future
+uncertainty in terms of climate, policy and societal changes. In
+the same way that safe certainty represents a utopic (and un-
+reachable) state that people aim for within family therapy
+(Mason 1993; Vivian-Byrne 2001), people here acknowl-
+edged and expressed similar feelings in the context of climate
+change adaptation. This resulted in placing people in a space
+of further worries, where they found a need to keep adapting
+short-term over and over again.
+
+This flux and constant need to adapt is one explanation of
+why uncertainty should not be viewed as constraining, but in
+
+fact enabling by opening up multiple pathways of change.
+People’s cultural values, reality or knowledge in Senegal, just
+like anywhere else, can be understood as normatively disguised
+through social and dynamic repetition. When a person moves
+from what they feel is an unsafe position to a safe space, the
+decision is based on the values, norms and beliefs reproduced
+within the social discourse. This is also why people do not
+necessarily describe their home or living situation as unsafe.
+People’s perceptions around their reality rules their actions
+and behaviours. These beliefs, or perceptions, can determine
+if someone migrates away from climatic stress, or decides to
+plant drought-resistant crops this year (Foucault 2002; Nielsen
+and Reenberg 2010; Meunier and Crane 2018). In other words,
+discursive values play an important role in how people respond
+to the impact and uncertainty of an upcoming drought. As this
+study has shown, most people operate in the grey of uncertainty
+for many aspects of their lives—what to grow, when to plant,
+when to harvest. In most cases, people’s decisions and actions
+are not based on climate information, but on social reproduction
+and emotions of what feels right to them.
+
+Conclusion
+
+Uncertainty is an inherent characteristic of climate variability
+and change, and the impacts they have on the world. At the
+same time, the climate knowledge used to cope with climate
+hazards comes from a variety of sources including science,
+experience, traditions, socio-cultural norms, observing nature
+and beyond. Understanding and using climate information is
+conditioned by subjectivities and capabilities. This article has
+explored people’s positions, in terms of climate risks and path-
+ways to adaptation through the analytical use of keywords
+such as knowledge, power, (un)safety and (un)certainty.
+
+Acknowledgements We are grateful for the valuable contribution of
+Laure Tall at Institut Sénégalais de Recherches Agricoles in Senegal.
+We also thank the reviewers and editors at Regional Environmental
+Change, and our colleagues at University of Sussex, IDS and UNU-
+EHS for their generous support, advice and guidance leading up to the
+publication of this manuscript.
+
+Funding information This research was partly funded by the Natural
+Environmental Research Council (NERC) and Department for International
+Development (DFID) under the Future Climate for Africa (FCFA) pro-
+gramme (NE/M02024X/1). For the sake of transparency, it should be noted
+that several authors are involved and receive funding from the AMMA-2050
+project (NEC05274).
+
+Open Access This article is distributed under the terms of the Creative
+Comm ons Att ributi on 4 .0 Inte rnati onal Li cense (htt p: //
+creativecommons.org/licenses/by/4.0/), which permits unrestricted use,
+distribution, and reproduction in any medium, provided you give appro-
+priate credit to the original author(s) and the source, provide a link to the
+Creative Commons license, and indicate if changes were made.
+
+Embracing uncertainty: A discursive approach to understanding pathways for climate adaptation in Senegal
+
+1595
+
+References
+
+Adger WN, Vincent K (2005) Uncertainty in adaptive capacity. Compt
+Rendus Geosci 337(4):399–410. https://doi.org/10.1016/j.crte.2004.
+11.004
+
+Adger WN, Benjaminsen TA, Brown K, Svarstad H (2001) Advancing a
+political ecology of global environmental discourses. Dev Chang
+32:681–715. https://doi.org/10.1111/1467-7660.00222
+
+Adger WN, Dessai S, Goulden M, Hulme M, Lorenzoni I, Nelson DR,
+Naess LO, Wolf J, Wreford A (2009) Are there social limits to
+adaptation to climate change? Clim Chang 93(3–4):335–354.
+https://doi.org/10.1007/s10584-008-9520-z
+
+Alam K, Rahman MH (2014) Women in natural disasters: a case study
+from southern coastal region of Bangladesh. Int J Disaster Risk
+Reduct 8:68–82. https://doi.org/10.1016/j.ijdrr.2014.01.003
+
+Armitage DR, Plummer R, Berkes F, Arthur RI, Charles AT, Davidson-
+Hunt IJ, Diduck AP, Doubleday NC, Johnson DS, Marschke M,
+McConney P (2009) Adaptive co-management for social–
+ecological complexity. Front Ecol Environ 7(2):95–102. https://
+doi.org/10.1890/070089
+
+Ayeb-Karlsson S, van der Geest K, Ahmed I, Huq S, Warner K (2016) A
+people-centred perspective on climate change, environmental stress,
+and livelihood resilience in Bangladesh. Sustain Sci 11(4):1–16.
+https://doi.org/10.1007/s11625-016-0379-z
+
+Ayeb-Karlsson S, Smith CD, Kniveton D (2018) A discursive review of
+the textual use of ‘trapped’ in environmental migration studies: the
+conceptual birth and troubled teenage years of trapped populations.
+Ambio 47(5):557–573. https://doi.org/10.1007/s13280-017-1007-6
+Ayeb-Karlsson S, Kniveton D, Cannon T, van der Geest K, Ahmed I,
+Derrington EM, Florano E, Opoiyo Opoyo D (2019) I wont go. I
+cannot go: cultural and social constraints to disaster preparedness in
+Asia, Africa and Oceania. Disasters (Forthcoming)
+
+Baldwin A (2016) Pre-mediation and white affect: climate change and
+migration in critical perspective. Trans Inst Br Geogr 41(1):78–90.
+https://doi.org/10.1111/tran.12106
+
+Begum R (1993) Women in environmental disasters: the 1991 cyclone in
+Bangladesh. Gend Dev 1(1):34–39. https://doi.org/10.1080/
+09682869308519953
+
+Cheema AR, Scheyvens R, Glavovic B, Imran M (2014) Unnoticed but
+important: revealing the hidden contribution of community-based
+religious institution of the mosque in disasters. Nat Hazards 71:
+2207–2229. https://doi.org/10.1007/s11069-013-1008-0
+
+Dessai S, Hulme M (2004) Does climate adaptation policy need proba-
+bilities? Clim Pol 4:107–128. https://doi.org/10.1080/14693062.
+2004.9685515
+
+Diome F (2015) Impact of salinity on the physical soil properties in the
+groundnut basin of Senegal: case study of Ndiaffate. Int J Chem
+7(2):198
+
+Eriksen SH, Lind J (2009) Adaptation as a political process: adjusting to
+drought and conflict in Kenya’s drylands. Environ Manag 43(5):
+817–835. https://doi.org/10.1007/s00267-008-9189-0
+
+Eriksen SH, Nightingale AJ, Eakin H (2015) Reframing adaptation: the
+political nature of climate change adaptation. Glob Environ Chang
+35:523–533. https://doi.org/10.1016/j.gloenvcha.2015.09.014
+
+Fairclough N (2003) Analysing discourse: textual analysis for social re-
+
+search. Routledge, London
+
+Fazey I, Wise RM, Lyon C, Câmpeanu C, Moug P, Davies TE (2016) Past
+and future adaptation pathways. Clim Dev 8(1):26–44. https://doi.
+org/10.1080/17565529.2014.989192
+
+Fischer AP (2018) Pathways of adaptation to external stressors in coastal
+natural-resource-dependent communities: implications for climate
+change. World Dev 108:235–248. https://doi.org/10.1016/j.
+worlddev.2017.12.007
+
+Foucault M (1972) The archeology of knowledge. Routledge, London
+
+Foucault M (1981) The order of discourse (I. McLeod, Trans.) untying
+
+the text: a post-structuralist reader. Routledge, London
+
+Foucault M (2000) In: Rabinow P (ed) Ethics, subjectivity and truth: the
+essential works of Foucault 1954–1984, vol 1. Penguin Books,
+London
+
+Foucault M (2002) The order of things: an archaeology of the human
+
+sciences. Routledge, London and New York
+
+Haasnoot M, Kwakkel JH, Walker WE, ter Maat J (2013) Dynamic adap-
+tive policy pathways: a method for crafting robust decisions for a
+deeply uncertain world. Glob Environ Chang 23(2):485–498.
+https://doi.org/10.1016/j.gloenvcha.2012.12.006
+
+Hulme M (2010) Problems with making and governing global kinds of
+knowledge. Glob Environ Chang 20(4):558–564. https://doi.org/10.
+1016/j.gloenvcha.2010.07.005
+
+Hulme M (2011) Reducing the future to climate: a story of climate deter-
+minism and reductionism. Osiris 26(1):245–266. https://doi.org/10.
+1086/661274
+
+Hulme M, Doherty R, Ngara T, New M, Lister D (2001) African climate
+change: 1900–2100. Clim Res 17(2):145–168. https://doi.org/10.
+3354/cr017145
+
+IPCC (2014) Summary for policymakers. In: climate change 2014: im-
+pacts, adaptation, and vulnerability. Part A: global and sectoral as-
+pects. In: Field CB, Barros VR, Dokken DJ, Mach KJ, Mastrandrea
+MD, Bilir TE, Chatterjee M, Ebi KL, Estrada YO, Genova RC,
+Girma B, Kissel ES, Levy AN, MacCracken S, Mastrandrea PR,
+White LL (eds) Contribution of working group II to the fifth assess-
+ment report of the intergovernmental panel on climate change.
+Cambridge University Press, Cambridge, United Kingdom and
+New York, USA, pp 1–32
+
+Jasanoff S, Wynne B, Buttel F, Charvolin F, Edwards P, Elzinga A, Haas
+P, Kwa C, Lambright WH, Lynch M (1998) Science and
+decisionmaking. In: Rayner S, Malone EL (eds) Human choice
+and climate change. Battelle Press, Ohio
+
+Keeley J, Scoones I (2014) Understanding environmental policy process-
+
+es: cases from Africa. Routledge, London
+
+Kniveton DR, Smith CD, Black R (2012) Emerging migration flows in a
+changing climate in dryland Africa. Nat Clim Chang 2(6):444–447.
+https://doi.org/10.1038/nclimate1447
+
+MacKenzie D (1990) Inventing accuracy. MA, MIT Press, Cambridge
+Mason B (1993) Towards positions of safe uncertainty. Hum Syst 4(3–4):
+
+189–200
+
+McGeehan KM, Baker CK (2017) Religious narratives and their impli-
+cations for disaster risk reduction. Disasters 41:258–281. https://doi.
+org/10.1111/disa.12200
+
+Meunier J, Crane TA (2018) Pastoral adaptation and policy environment:
+how discourses shape knowledge, policy and adaptation. CCAFS
+working paper 225 CGIAR. CCAFS, Wageningen
+
+Morales MC, Harris LM (2014) Using subjectivity and emotion to recon-
+sider participatory natural resource management. World Dev 64:
+703–712. https://doi.org/10.1016/j.worlddev.2014.06.032
+
+Nielsen J, Reenberg A (2010) Cultural barriers to climate change adap-
+tation: a case study from Northern Burkina Faso. Glob Environ
+Chang 20(1):142–152. https://doi.org/10.1016/j.gloenvcha.2009.
+10.002
+
+Oliver-Smith A (1996) Anthropological research on hazards and disas-
+ters. Annu Rev Anthropol 25:303–328. https://doi.org/10.1146/
+annurev.anthro.25.1.303
+
+Peet R, Watts M (2002) Liberation ecologies: environment, development
+
+and social movements. In: Routledge. London, New York
+
+Ranger N, Reeder T, Lowe J (2013) Addressing ‘deep’ uncertainty over
+long-term climate in major infrastructure projects: four innovations
+of the Thames estuary 2100 project. EURO J Decis Process 1(3–4):
+233–262. https://doi.org/10.1007/s40070-013-0014-5
+
+Salack S, Muller B, Gaye AT (2011) Rain-based factors of high agricul-
+tural impacts over Senegal. Part I: integration of local to sub-
+
+1596
+
+S. Ayeb-Karlsson et al.
+
+regional trends and variability. Theor Appl Climatol 106(1–2):1–22.
+https://doi.org/10.1007/s00704-011-0414-z
+
+Slingo J, Palmer T (2010) Uncertainty in weather and climate prediction.
+Philos Trans R Soc A Math Phys Eng Sci 369:4751–4767. https://
+doi.org/10.1098/rsta.2011.0161
+
+Stirling A (2001) Inclusive deliberation and scientific expertise: precau-
+tion, diversity and transparency in the governance of risk. In: PLA
+Notes 40. Deliberative democracy and citizen empowerment. IIED,
+London, pp 67–71
+
+Taylor R, Butterfield RE, Bharwani S, Taylor A, Devisscher T (2017)
+Research methods for understanding and supporting decision pro-
+cesses in African cities. In: FRACTAL Working Paper 5 Stockholm
+Environment Institute. Oxford Centre, Oxford
+
+Van der Sluijs JP (1997) Anchoring amid uncertainty: on the management
+of uncertainties in risk assessment of anthropogenic climate change.
+PhD thesis. Utrecht University, Utrecht, The Netherlands
+
+Van der Sluijs JP (2002) A way out of the credibility crisis of models used
+in integrated environmental assessment. Futures 34:133–146.
+https://doi.org/10.1016/S0016-3287(01)00051-9
+
+Van der Sluijs JP (2005) Uncertainty as a monster in the science policy
+interface: four coping strategies. Water Sci Technol 52(6):87–92.
+https://doi.org/10.2166/wst.2005.0155
+
+Van der Sluijs JP (2006) Uncertainty, assumptions, and value commit-
+ments in the knowledge-base of complex environmental problems.
+
+In: Pereira ÂG, Vaz SG, Tognetti S (eds) Interfaces between science
+and society. Routledge, London, pp 67–84. https://doi.org/10.4324/
+9781351280440
+
+Vivian-Byrne SE (2001) What am I doing here? Safety, certainty and
+expertise in a secure unit. J Fam Ther 23:102–116. https://doi.org/
+10.1111/1467-6427.00171
+
+Wilby RL, Dessai S (2009) Robust adaptation to climate change. Weather
+
+65(7):180–185. https://doi.org/10.1002/wea.543
+
+Wilson GA (2014) Community resilience: path dependency, lock-in ef-
+fects and transitional ruptures. J Environ Plan Manag 57(1):1–26.
+https://doi.org/10.1080/09640568.2012.741519
+
+Wise RM, Fazey I, Stafford Smith M, Park SE, Eakin HC, Archer Van
+Garderen ERM, Campbell B (2014) Reconceptualising adaptation
+to climate change as part of pathways of change and response. Glob
+Environ Chang 28:325–336. https://doi.org/10.1016/j.gloenvcha.
+2013.12.002
+
+Wisner B, Blaikie P, Cannon T, Davis I (2004) At risk: natural hazards,
+people’s vulnerability and disasters, Second edn. Routledge,
+London and New York
+
+Publisher’s note Springer Nature remains neutral with regard to juris-
+dictional claims in published maps and institutional affiliations.
+
+

@@ -1,0 +1,1842 @@
+Field  Crops  Research  176  (2015)  99–107
+
+Contents  lists  available  at  ScienceDirect
+
+Field
+
+ 
+
+Crops
+
+ 
+
+Research
+
+j o u  r n  a l  h o m  e p a g e :  w w w . e l s e v i e r . c o m / l o c a t e / f c r
+
+Causes   of   yield   stagnation   in   irrigated   lowland   rice   systems   in   the
+Senegal   River   Valley:   Application   of   dichotomous   decision   tree
+analysis
+Atsuko   Tanaka a,   Mandiaye   Diagne b,   Kazuki   Saito a,∗
+
+a Africa  Rice  Center  (AfricaRice),  01  BP  2031  Cotonou,  Benin
+b Africa  Rice  Center  (AfricaRice),  BP  96  Saint-Louis,  Senegal
+
+a
+
+ 
+
+r
+
+ 
+
+t
+
+i
+
+ 
+
+ 
+
+c
+
+ 
+
+l
+
+ 
+
+e
+
+ 
+
+i
+
+ 
+
+n
+
+ 
+
+f
+
+ 
+
+o
+
+a
+
+ 
+
+b
+
+s
+
+ 
+
+ 
+
+t
+
+ 
+
+r
+
+ 
+
+a
+
+ 
+
+c
+
+ 
+
+t
+
+Article  history:
+Received  7  August  2014
+Received  in  revised  form  20  February  2015
+Accepted  21  February  2015
+Available  online  24  March  2015
+
+Keywords:
+Integrated  crop  management
+Irrigated  lowland
+Rice
+Senegal  River  Valley
+Yield
+
+In  the   Senegal   River   Valley   (SRV),   there   was  substantial   yield   gap   between   potential   and   actual   yield
+obtained   by   farmers   in   irrigated   rice   production   systems.   Integrated   crop   management   (ICM),   covering
+almost   all   the   agricultural   practices   from   land   preparation   to  harvest,   was   introduced   to  farmers   for
+boosting   yields   since   the   early   2000s.   A   repeated   farm   survey   was   conducted   over   the  period   2002–2010
+to   monitor   farmers’   agricultural   practices   during   the   wet   season   in   the   Delta   and   Middle   Valley   of   the
+SRV.   The   objectives   of  this   study   were   to:   (i)  assess   spatial   and   temporal   variation   in   on-farm   yields,
+and   (ii)   determine   factors   affecting   variation   in   the  yields   through   Classiﬁcation   and   Regression   Tree
+(CART)   analysis.   The   data   set   consists   of   829   farmer-year   observations.   While   mean   yields   across   nine
+years   were  5.0  and   5.6   t/ha   in   the  Delta   and   Middle   Valley,   respectively,   mean   attainable   yields   (upper
+10   percentile)   were   7.2   and  8.6   t/ha,   respectively.   Yield   gap   between   attainable   yield   and  mean   yield   was
+2.2–3   t/ha.   There   were   no   temporal   trends   in   yield   or   yield   gap   in   either   zone.   CART   analysis   identiﬁed   six
+and   eight   yield   determining   factors.   The   primary   factor   was   sowing   time,   and   delayed   sowing   resulted   in
+yield  reduction   by   around   1  t/ha   in   both   zones.   The  major   reasons   behind   delayed   sowing   were   related
+to   availability   of   credit,   machinery,   and   irrigation   water.   The   two   other   commonly   identiﬁed   factors
+were   fertilizer   management   and   bird   control.   We   conclude   that  creating   enabling   environment   through
+institutional   arrangements   for   improving   access   to  resources   and   machineries   is   essential   for   enhancing
+the   adoption   of   ICM   and   breaking   the   yield   stagnation.   Development   of   alternative   agricultural   practices
+such   as   no  tillage   system   is   also  needed   to   help   farmers   practice   timely   sowing.
+
+©  2015   Elsevier   B.V.   All   rights   reserved.
+
+1.  Introduction
+
+Rice  (Oryza  spp.)  has  become  a  major  staple  food  in  many  African
+countries.  Demand  has  been  increasing  dramatically  with  con-
+sumption  growth  rate  at  9%  over  2010–2012  (Seck  et  al.,  2013).
+Although  rice  production  has  been  increasing  since  the  1970s,
+the  self-sufﬁciency  ratio  has  remained  at  around  60%.  Such  heavy
+dependence  on  imports  can  severely  affect  food  security  and  polit-
+ical  stability  as  demonstrated  in  the  2007–2008  rice  price  crisis.
+This  is  true  for  Senegal,  where  rice  is  the  staple  food  for  millions
+of  people.  Domestic  production  satisﬁes  only  30%  of  the  national
+rice  consumption  (Gergely  and  Baris,  2009)  and  the  country  ranks
+as  the  third  largest  rice  importing  country  in  West  Africa  (USDA,
+
+∗ Corresponding  author.  Tel.:  +229  6418  1313.
+E-mail  addresses:  a.tanaka@cgiar.org  (A.  Tanaka),
+
+m.diagne@cgiar.org  (M.   Diagne),  k.saito@cgiar.org  (K.  Saito).
+
+http://dx.doi.org/10.1016/j.fcr.2015.02.020
+0378-4290/©  2015  Elsevier  B.V.  All  rights  reserved.
+
+2012).  As  rice  is  produced  almost  exclusively  by  smallholder  farm-
+ers,  improving  rice  production  is  not  only  important  for  food
+security  but  also  for  the  livelihoods  of  rural  producers.  The  Sene-
+gal  River  Valley  (SRV)  is  the  principal  zone  of  rice  production  in
+this  country,  and  the  crop  is  grown  under  irrigation  in  this  area.
+The  SRV  accounted  for  44%  of  the  total  national  production  area
+(2007–2011)  and  almost  70%  of  national  total  rice  production  quan-
+tity  (SAED,  2013;  USDA,  2013).  In  general,  potential  yield  is  high  in
+irrigated  rice  production  systems  in  the  SRV  due  to  high  solar  radi-
+ation  and  arid  conditions,  the  latter  of  which  may  reduce  the  risk
+of  diseases.  Furthermore,  soil  quality  is  also  better  than  in  other
+agroecological  zones  in  sub-Saharan  Africa,  except  for  soil  salinity
+problems  in  this  arid  and  partially  coastal  environment  (Saito  et  al.,
+2013).  Simulation  modeling  estimated  potential  yield  at  8–9  and
+9–10  t/ha  in  the  wet  and  dry  seasons,  respectively  (Dingkuhn  and
+Sow,  1997).  However,  there  were  substantial  differences  between
+potential  yields  and  mean  on-farm  yields  in  the  1990s  (Becker  et  al.,
+2003;  Dingkuhn  and  Sow,  1997;  Poussin  et  al.,  2003;  Wopereis  et  al.,
+
+100 
+
+A.  Tanaka  et  al.  /  Field  Crops  Research  176  (2015)  99–107
+
+for  direct 
+
+rates:  80–120  kg/ha 
+
+Box  1:  Integrated  crop  management  components  for
+the  Delta  region  of  the  Senegal  River  Valleya.
+• Timely  start  of  cropping  season:  Make   arrangement  with
+service  providers  for  inputs,  check  irrigation  infrastructure,
+and  plan  irrigation  water  supply.
+• Land  preparation:  Cultivate  on  soil  suitable  for  irrigated  rice,
+i.e.  heavy  clay  soils  (Hollaldé)  and  clay  soil  (Faux-Hollaldé
+soils).  Make  sure  the  ﬁeld  is  properly  tilled  and  leveled.
+• Varietal  choice  and  sowing  dates:  Use  pre-germinated  certi-
+ﬁed  seeds;  for  the  wet  season:  Jaya,  IR  1529,  Sahel  201,  Sahel
+202  (before  Aug  1st)  and  Sahel  108  and  Ikong  Pao  (before
+Aug.  15th);  for  dry  season:  Sahel  108  and  I  Kong  Pao  (before
+March  15th).
+• Seeding 
+seeding  and
+30–40  kg/ha  for  transplanting.
+• Maximum  recommended  fertilizer  rates:  Triple  super  phos-
+phate  (TSP:  20%  P)  or  Diammonium  Phosphate  (DAP:  20%  P,
+18%  N)  100  kg/ha  and  urea  (46%  N)  300  kg/hab.  TSP  or  DAP  is
+applied  as  a  basal  fertilizer  or  within  three  weeks  after  sow-
+ing.  Urea  is  applied  in  three  splits  or  two  splits.  The  ﬁrst  dose
+of  40%  is  applied  at  the  start  of  tillering,  and  another  dose  of
+40%  at  panicle  initiation.  A  ﬁnal  dose  of  20%  is  applied  at  the
+booting  stage  of  the  crop.  With  two  splits,  50%  is  applied  at
+start  tillering  and  50%  at  panicle  initiation.  Timing  is  guided
+by  RIDEV  depending  on  the  variety.
+• Weed  management:   A  mixture  of  propanil  6  l/ha  and  2,4D-
+1  l/ha  applied  a  few  days  before  ﬁrst  urea  application  (at  2–3
+leaf  stage  of  the  weeds),  complemented  with  one  manual
+weeding  before  the  second  urea  application.
+• Water  management:   Directed  at  maximizing  the  efﬁciency  of
+fertilizers  and  herbicides,  consists  of  applying  herbicides  in
+completely  drained  ﬁelds  and  reducing  water  levels  in  the
+ﬁeld  to  3  cm  for  about  4–5  days  at  each  fertilizer  application.
+The  rice  ﬁeld  is  completely  drained  15  days  after  ﬂowering
+to  promote  uniform  ripening  of  the  grains,  but  primarily  to
+allow  timely  harvest.
+• Timely  harvest  and  post-harvest:  Harvesting  at  maturity,  i.e.
+when  about  80%  of  the  panicles  are  yellow.  Harvest  at  109
+DAS  for  Sahel  108  and  I  Kong  Pao  and  at  123  DAS  for  Jaya,
+Sahel  201,  Sahel  202,  and  IR  1529.  Threshing  within  7  days
+after  timely  harvest,  preferably  with  the  ASI  thresher–cleaner
+prototype  developed  for  Sahelian  conditions  by  AfricaRice.
+
+a Summary  based  on  information  ﬂyer  for  farmers  in  the  Delta
+region  (ADRAO  et  al.,  2002).b Based  on  the  long  term  fertility
+trials  and  on-farm  fertilizer  trials  conducted  in  SRV,  potassium
+application  was  considered  unnecessary.  Exception  was  inten-
+sive  double-cropped  systems  with  high  yields  (Haefele  and
+Wopereis,  2007).
+
+1999).  The  causes  of  these  yield  gaps  were  farmers’  sub-optimal
+agricultural  practices,  including  weed  and  fertilizer  management,
+as  a  result  of  farmers’  limited  skills  and  knowledge  on  rice  produc-
+tion  (Haefele  et  al.,  2000,  2001,  2013;  Poussin  et  al.,  2003,2005;
+Wopereis  et  al.,  1999).  Other  sub-optimal  agricultural  interven-
+tions  included  delayed  sowing  and  late  harvesting  (Wopereis  et  al.,
+1999).  Delay  in  cropping  in  the  wet  season  results  in  the  risk
+of  spikelet  sterility  caused  by  cold  temperatures.  Integrated  crop
+management  (ICM)  was  developed  in  the  early  2000s  by  Africa
+Rice  Center  (AfricaRice;  formerly  WARDA)  and  Société  Nationale
+d’Aménagement  et  d’Exploitation  des  terres  du  Delta  du  ﬂeuve
+Sénégal  et  des  vallées  du  ﬂeuve  Sénégal  et  de  la  Falémé  (SAED)
+(WARDA  and  SAED,  2001;  Tollens  et  al.,  2013).  Instead  of  impos-
+ing  a  set  of  practices,  ICM  was  developed  to  provide  farmers  and
+extension  workers  with  a  basket  of  good  agricultural  principles  and
+practices  from  land  preparation  to  harvest  (Box  1).  Ex-ante  evalu-
+ation  of  ICM  was  conducted  on  farmers’  ﬁelds.  By  practicing  a  few
+
+ICM  components  such  as  improved  fertilizer,  weed,  and  water  man-
+agement,  higher  yield  and  proﬁtability  was   realized  compared  to
+farmers’  practice.  This  advantage  would  depend  on  the  availabil-
+ity  of  resources,  and  if  farmers  face  socioeconomic  constraints  to
+adopting  ICM,  the  advantage  would  be  smaller  (Kebbeh  and  Miezan,
+2003).  However,  even  in  such  cases,  farmers  would  attain  substan-
+tial  yield  gain  and  net  income  increase  through  the  use  of  ICM
+components  compared  to  observed  farmers’  management  practices
+(Kebbeh  and  Miezan,  2003).
+
+Once  ICM  was   released,  a  systematic  on-farm  survey  was  con-
+ducted  annually  over  the  period  2002–2010  to  monitor  changes
+in  farmers’  agricultural  practices  and  associated  ﬁnancial  informa-
+tion  (de  Mey   et  al.,  2012;  Diagne  et  al.,  2013b).  Using  data  from  the
+ﬁrst  ﬁve  years,  Diagne  et  al.  (2013b)  evaluated  the  technical  efﬁ-
+ciency  of  the  rice  production  system  in  the  SRV.  Technical  efﬁciency
+did  not  change  signiﬁcantly  over  the  period  2002–2006.  However,
+no  analysis  had  been  done  using  the  dataset  for  the  entire  period.
+Meanwhile,  there  have  been  no  reports  of  temporal  changes  in  rice
+yield  and  farmers’  agricultural  practices.  Furthermore,  Diagne  et  al.
+(2013b)  did  not  consider  the  timing  of  fertilizer  applications  and
+weeding,  which  were  determinants  of  rice  yield  in  an  earlier  study
+(Wopereis  et  al.,  1999).  Neither  did  they  assess  technical  and  yield
+change  from  the  1990s.  Therefore,  this  study  aimed  to:  (i)  assess
+spatial  and  temporal  variation  in  on-farm  yields  and  yield  gaps;
+and  (ii)  determine  which  factors  affect  variation  in  the  yields.
+
+2.  Materials  and  methods
+
+2.1.  Area  of  the  study
+
+The  survey  was   conducted  in  the  two   major  rice  production
+zones  of  the  SRV:  the  Delta,  situated  at  the  mouth  of  the  Sene-
+gal  River,  and  the  Middle  Valley,  about  200  km  east  of  the  mouth
+of  the  river.  The  agroecological  zone  of  the  SRV  is  classiﬁed  as  the
+semi-arid  Sahel  savannah  vegetation  zone  (Keay,  1959).  The  zone
+has  erratic  and  low  rainfall  with  an  average  of  250  mm/year  in  the
+period  from  June  to  September.  For  a  large  part  of  the  year,  solar
+radiation  is  high  (20–30  MJ/m2 per  day).  The  dominant  soil  type
+in  the  Delta  and  the  Middle  Valley  is  Eutric  Fluvisol  (FAO-Unesco,
+1977).  In  the  SRV,  most  irrigation  schemes  have  been  developed  on
+heavy  clay  and  silty  clay  soils.
+
+2.2.  Description  of  the  dataset
+
+The  repeated  farm  survey  was  conducted  to  monitor  farmers’
+agricultural  practices  over  nine  years  (2002–2010)  (de  Mey   et  al.,
+2012;  Diagne  et  al.,  2013b).  The  survey  was   conducted  in  col-
+laboration  with  the  national  extension  agency  SAED  and  a  local
+non-governmental  organization  UJAK  (Union  des  Jeunes  Agricul-
+teurs  de  Koyli-Wirnde).  SAED  and  UJAK  used  their  sampling  lists  to
+randomly  select  the  respondents.  The  farmers  who  stopped  grow-
+ing  rice  were  replaced  by  additional  farmers  drawn  at  random  from
+the  list.  For  the  present  study,  we  removed  farmer-year  observa-
+tions  (data  points)  in  which  the  farmer  transplanted  the  rice  from
+the  dataset  since  97%  and  84%  of  data  points  concerned  direct  sow-
+ing  in  the  Delta  and  Middle  Valley,  respectively.  Data  points  for  the
+dry  season  were  also  omitted  as  the  survey  was   conducted  only  for
+one  dry  season  crop.  Also,  data  points  from  areas  where  the  survey
+was  conducted  in  only  one  year  were  excluded.  Thus,  we  used  data
+from  Boundoum  in  the  Delta  and  Fanaye,  Nianga,  Podor,  and  Thiele
+Boubacar  in  the  Middle  Valley  (Fig.  1).
+
+As  a  result,  the  dataset  analyzed  for  this  study  consisted
+of  829  data  points  (398  and  431 
+in  the  Delta  and  Middle
+Valley,  respectively).  Farmers  were  interviewed  using  a  semi-
+structured  questionnaire 
+that  covered  detailed  agricultural
+
+A.  Tanaka  et  al.  /  Field  Crops  Research  176  (2015)  99–107 
+
+101
+
+3.  Results
+
+3.1.  Rice  yields  and  yield  gap
+
+irrigated 
+
+The  overall  mean  yields  of 
+
+lowland  rice  across
+2002–2010  were  5.0  and  5.6  t/ha  in  the  Delta  and  Middle  Valley,
+respectively.  The  yields  ranged  from  0.5  to  10.5  t/ha  in  the  Delta  and
+between  1.2  and  12.0  t/ha  in  the  Middle  Valley  (Fig.  2).  The  year-to-
+year  variation  in  yields  was  pronounced  in  the  Delta  (Table  2)  with
+the  mean  yields  ranging  from  2.7  t/ha  in  2006  to  6.3  t/ha  in  2004.  In
+the  Middle  Valley,  mean  yield  did  not  differ  signiﬁcantly  across  the
+nine  years.  Rice  yield  in  each  year  was  more  variable  in  the  Delta
+(CV  =  18–60%)  than  in  the  Middle  Valley  (CV  =  21–38%).  The  mean
+attainable  yields  across  nine  years  were  7.2  and  8.6  t/ha  in  the  Delta
+and  Middle  Valley,  respectively.  The  mean  yield  gap  between  the
+attainable  yield  and  mean  yield  was   smaller  in  the  Delta  than  in  the
+Middle  Valley  (2.2  vs  3.0  t/ha).
+
+Fig.  1.  Map   of  the  study  sites  in  the  Senegal  River  Valley.  Delta  (1):  Boundoum  in
+the  Delta,  (2):  Fanaye,  (3):  Thiele  Boubacar,  (4):  Nianga,  and  (5):  Podor  in  the  Middle
+Valley.
+
+practices,  economic 
+information  associated  with  agricultural
+practices,  and  rice  yields  (Diagne  et  al.,  2013b).  The  information
+on  the  amount  of  harvested  paddy  (unhusked  rice)  was   collected
+by  asking  the  number  of  bags  with  harvested  paddy  and  typical
+weight  of  one  bag  with  the  paddy.  Rice  yield  was   calculated  by
+dividing  total  weight  of  harvested  paddy  (number  of  bags  x  typical
+weight  of  the  bag  with  the  paddy)  by  ﬁeld  size.
+
+2.3.  Data  analysis
+
+In  each  zone,  mean  rice  yields  across  farmers  surveyed  in  each
+year  were  compared  across  nine  years  using  ANOVA  followed  by  the
+Tukey–Kramer  multiple  comparisons  test.  Attainable  yields  were
+calculated  as  the  mean  of  the  top  ten  percentile  high-yield  data
+points  for  each  year  in  each  zone  following  Tittonel  and  Giller
+(2013),  who  advocated  use  of  high  yield  achieved  by  local  farm-
+ers  as  attainable  yields  for  smallholder  farmers  in  sub-Saharan
+Africa.  The  yield  gaps  were  the  difference  between  the  attainable
+and  mean  yields.  The  temporal  change  in  agricultural  practices  was
+examined  by  Pearson’s  correlation  coefﬁcient  using  averaged  data
+in  each  year  and  cropping  year  (Table  1).  A  positive  (or  negative)
+coefﬁcient  indicates  that  agricultural  practice  on  average  tend  to
+increase  (or  decrease)  over  the  period.
+
+The  factors  determining  yield  variation  were  identiﬁed  by  Clas-
+siﬁcation  and  Regression  Tree  (CART)  analysis.  Effectiveness  of  this
+analysis  at  farm  scale  has  been  demonstrated  in  maize  in  eastern
+India  (Banerjee  et  al.,  2014),  rice  in  southern  France  (Delmotte  et  al.,
+2011),  surgarcane  in  northern  Argentina  (Ferraro  et  al.,  2009),  and
+maize  in  western  Kenya  (Tittonell  et  al.,  2008).  CART  uses  a  binary
+recursive  partitioning  technique  to  split  the  dataset  into  groups
+based  on  the  values  of  explanatory  variables.  The  optimum  splits
+are  determined  by  the  negative  log  of  the  P-value  associated  with
+the  sum  of  squares  due  to  the  difference  in  means.  The  model  is
+developed  in  hierarchy  consisting  of  splitting  nodes  (determin-
+ing  factors)  and  clusters  of  data  points  (terminal  nodes).  All  the
+variables  in  Table  1  were  included  as  candidate  explanatory  vari-
+ables  for  rice  yield  variation  in  the  CART  analysis.  The  dataset  was
+managed  in  Excel  spreadsheets,  and  all  statistical  analyses  were
+conducted  using  JMP   10  (SAS,  2012)  except  for  correlation  analysis
+which  was  conducted  within  Microsoft  Excel  (Microsoft,  2010).
+
+Rice  yields  in  the  1990s’  surveys  are  summarized  in  Table  3.
+Reported  mean  on-farm  yields  in  the  Delta  in  the  1990s  were  4.9
+and  3.8  t/ha  (Wopereis  et  al.,  1999;  Haefele  et  al.,  2000).  For  the  Mid-
+dle  Valley,  the  mean  yields  ranged  from  5.6  to  5.9  t/ha  (Wopereis
+et  al.,  1999;  Poussin  et  al.,  2003).  Between  the  yields  in  the  1990s
+reported  in  the  literature  and  the  present  study,  there  was  no  great
+difference  in  mean  yields.  However,  rice  yield  in  the  SRV  reported
+in  SAED  (2013)  was   lower  in  the  1990s  than  those  in  the  2000s  (5.0
+vs  5.8  t/ha).
+
+3.2.  Agricultural  practices
+
+The  mean  ﬁeld  size  was  2.5  and  0.6  ha  in  the  Delta  and  Middle
+Valley,  respectively  (Table  1).  Single  harrowing  was   the  dominant
+land  preparation  method  in  both  zones.  Leveling  was  performed
+by  half  of  the  selected  farmers  in  the  Delta  and  over  three-quarters
+in  the  Middle  Valley  (79%).  Certiﬁed  seeds  were  used  by  69  and
+82%  of  farmers  in  the  Delta  and  Middle  Valley,  respectively.  More
+than  half  of  the  farmers  grew  medium-duration  cultivars  rather
+than  short-duration  ones  in  both  zones.  In  the  Delta,  Sahel  201  and
+Sahel  108  were  the  dominant  cultivars,  accounting  for  44  and  37%  of
+total  data  points.  In  the  Middle  Valley,  Sahel  202  was  most  popular
+(59%),  followed  by  Sahel  108  (26%).
+
+Some  65%  of  the  farmers  in  the  Delta  reported  that  sowing  was
+delayed  because  of  unavailability  of  credit,  24%  blamed  unavailabil-
+ity  of  machinery  for  land  preparation,  and  11%  delay  in  irrigation
+water  supply  (Table  4).  In  the  Middle  Valley,  39%  blamed  the
+delayed  sowing  on  machine  unavailability,  and  30%  insufﬁcient
+water  supply.  The  ﬁrst  three  reasons  were  all  related  to  collective
+decision  making  at  the  irrigation  scheme  level  which  has  been  run
+by  farmers’  organizations  since  the  structural  adjustment  programs
+in  the  mid   1990s.
+
+Some  26  and  53%  of  the  farmers  respected  the  recommended
+seeding  rate  (80–120  kg/ha)  in  the  Delta  and  Middle  Valley,  respec-
+tively  (Table  1).  Around  half  of  the  farmers  in  both  zones  either
+weeded  manually  or  applied  herbicides  on  the  same  day  as  or  up
+to  ﬁve  days  before  the  ﬁrst  fertilizer  application.  Urea  (46%  N)
+and  diammonium  phosphate  (DAP:  18%  N,  46%  P2O5)  were  the
+commonly  used  fertilizers  in  both  zones.  Potassium-containing  fer-
+tilizer  was   hardly  used  in  the  SRV  (used  by  <1%  of  the  farmers).
+DAP  was  mostly  applied  basally,  and  urea  was  applied  in  two  splits.
+Some  3  and  23%  of  the  farmers  applied  urea  in  three  splits  in  the
+Delta  and  Middle  Valley,  respectively.  The  application  date  of  DAP
+averaged  30  and  28  days  after  sowing  (DAS)  in  the  Delta  and  the
+Middle  Valley,  respectively.  The  average  ﬁrst,  second,  and  third
+applications  of  urea  were  32,  61,  and  71  to  77  DAS  in  the  two
+zones.  The  mean  total  amount  of  N  applied  was  134  and  139  kg/ha
+and  mean  P2O5 application  was  31  and  28  kg/ha  in  the  Delta
+and  the  Middle  Valley,  respectively.  Fertilizer  management  has
+
+102 
+
+A.  Tanaka  et  al.  /  Field  Crops  Research  176  (2015)  99–107
+
+Table  1
+Description  of  agricultural  practices  in  irrigated  lowland  rice  in  the  Delta  and  Middle  Valley  of  the  Senegal  River  Valley  (wet  seasons  2002–2010).
+
+Description 
+
+Mean  ﬁeld  size 
+Soil   type
+
+Horrowing
+
+Leveling 
+Certiﬁed  seeds
+Rice   cultivard
+
+Cropping  season 
+
+Seed   preparation 
+
+Seeding  rate
+
+Weeding 
+
+Fertilizer
+application  rate
+
+Frequency  of  N
+application
+
+Fertilizer
+application  timing
+
+Water-related  problem 
+
+Drainage 
+Bird   control 
+Other  animal  controlf
+Threshing  method 
+Crop   duration 
+
+Heavy  clay  (Hollaldé)  and  Silty
+clay  (Faux  hollaldé)
+Not   harrowed 
+Undertook  horrowing  once 
+Undertook  horrowing  more
+than  once
+Leveled  manually
+Used  certiﬁed  seeds 
+Grew  short-duration  cultivars 
+Grew  medium-duration
+cultivars
+Seeded  without  delay  for  the
+cropping  season
+Soaked  seeds  and  incubated  for
+24  h
+Used  the  seeds  in
+recommended  range
+(80–120  kg/ha)
+Used   more  seeds  than  the
+recommended  range
+Weeded  the  ﬁelds  0–5  days
+prior  to  ﬁrst  fertilizer
+application
+Mean  applied  N  rate 
+Mean  applied  P2O5 rate 
+
+Applied  N  once 
+Applied  N  twice 
+Applied  N  three  times
+Mean  ﬁrst  urea  application
+date
+Mean  second  urea  application
+date
+Mean  third  urea  application
+date
+Mean  P2O5 application  date 
+Had  water  excess  and/or  water
+shortage  in  the  ﬁelds
+Not  able  to  drain  the  ﬁelds 
+Had  bird  damage 
+Had  damage  by  other  animals
+Used  thresher 
+Mean  days 
+
+Parameter 
+
+ha 
+%  of  farmer-year  observationsc
+
+Delta 
+
+±
+  2.3a
+
+2.5 
+94 
+
+%  of  farmer-year  observations 
+%  of  farmer-year  observations 
+%  of  farmer-year  observations 
+
+%  of  farmer-year  observations
+%  of  farmer-year  observations 
+%  of  farmer-year  observations 
+%  of  farmer-year  observations 
+
+%  of  farmer-year  observations 
+
+%  of  farmer-year  observations 
+
+%  of  farmer-year  observations 
+
+%  of  farmer-year  observations 
+
+%  of  farmer-year  observations 
+
+kg/ha 
+kg/ha 
+
+%  of  farmer-year  observations 
+%  of  farmer-year  observations 
+%  of  farmer-year  observations
+DASe
+
+DAS 
+
+DAS 
+
+DAS 
+%  of  farmer-year  observations 
+
+%  of  farmer-year  observations 
+%  of  farmer-year  observations 
+%  of  farmer-year  observations
+%  of  farmer-year  observations 
+Number  of  days  from  sowing
+to  harvest
+
+4 
+95 
+1 
+
+54 
+69 
+39 
+58 
+
+66 
+
+98 
+
+26 
+
+73 
+
+53 
+
+±
+  37 
+±
+  23 
+
+134 
+31 
+
+8 
+89 
+3 
+±
+  10 
+
+±
+  11 
+±
+  14 
+±
+  11 
+15 
+
+9 
+26 
+7 
+84 
+±
+  15 
+
+32 
+
+61 
+
+66 
+
+30 
+
+125 
+
+(0.52)b
+(0.13) 
+
+(0.46) 
+(−0.48) 
+(0.44) 
+
+(0.40) 
+(0.07) 
+(0.17) 
+(−0.09) 
+
+(0.51) 
+(−0.51) 
+(−0.40) 
+
+(0.37) 
+(−0.14) 
+
+(0.49) 
+(−0.33) 
+(−0.57) 
+(0.61) 
+(−0.31) 
+(−0.79**) 
+(−0.46) 
+
+(0.17) 
+(−0.53) 
+(0.65) 
+
+(0.63) 
+(−0.32) 
+(0.48)  49% 
+(0.45) 
+(−0.43) 
+
+Middle  Valley
+
+±
+  0.3 
+
+0.6 
+92 
+
+2 
+89 
+8 
+
+79 
+82 
+27 
+72 
+
+78 
+
+90 
+
+53 
+
+47 
+
+44 
+
+±
+139 
+  37 
+±
+28 
+  26 
+
+6 
+71 
+23 
+30 
+
+59 
+
+77 
+
+28 
+20 
+
+±
+  10 
+±
+  10 
+±
+  8 
+±
+  11 
+
+11 
+49 
+15 
+60 
+122 
+
+±
+  14 
+
+(−0.25)
+(0.01)
+(−0.01)
+(0.40)
+(0.44)
+
+(0.31)
+(−0.42)
+(0.03)
+(−0.03)
+
+(0.06)
+
+(0.11)
+(−0.08)
+
+(0.05)
+(−0.06)
+
+(0.86**)
+(0.72*)
+(−0.37)
+(−0.68*)
+(0.86**)
+(−0.38)
+
+(0.00)
+(−0.07)
+
+(0.26)
+(0.14)
+
+(0.74*)
+(0.54)
+(0.03)
+(0.89**)
+(−0.41)
+
+±
+  standard  deviation  is  shown.
+
+a For  numerical  variables,  mean 
+b The  numbers  in  parentheses  are  correlation  coefﬁcient  between  mean  parameter  value  in  each  year  and  year  (2002–2010).
+* Signiﬁcant  at  P  <  0.05.
+** Signiﬁcant  at  P  <  0.01.
+c %  Of  farmers  who   used  the  described  practice  in  the  total  farmer-year  observations  (n  =  398  for  Delta  and  n  =  431  for  Middle  Valley).
+d Short-duration  varieties  were  Sahel  108,  Sahel  159,  Sahel  134,  and  I  Kong  Pao.  Medium-duration  varieties  were  Jaya,  Sahel  201,  Sahel  202,  Sahel  249,  and  IR  1529.
+e DAS:  days  after  sowing
+f Other  animals  include  rodents,  cattle  and  sheep.
+
+a. Delta
+
+100
+90
+80
+70
+60
+50
+40
+30
+20
+10
+0
+
+)
+s
+n
+o
+Ɵ
+a
+v
+r
+e
+s
+b
+o
+ 
+r
+a
+e
+y
+-
+r
+e
+m
+r
+a
+f
+(
+ 
+
+y
+c
+n
+e
+u
+q
+e
+r
+F
+
+b. Middle
+Valley
+
+100
+90
+80
+70
+60
+50
+40
+30
+20
+10
+0
+
+0 1 2 3 4 5 6 7 8
+ ha-1)
+
+ 
+
+Yield (t
+ 
+
+9
+
+ 
+
+10
+
+11
+
+ 
+
+ 
+
+12
+
+0 1 2 3 4 5 6 7
+ 
+
+Yield (t ha-1)
+
+8
+
+ 
+
+11
+
+9
+
+ 
+
+10
+
+ 
+
+ 
+
+12
+
+Fig.  2.  Frequency  distribution  of  on-farm  yield  in  the  Delta  (a)  (n  =  398)  and  Middle  Valley  (b)  (n  =  431)  of  the  Senegal  River  Valley  (wet  season  over  2002–2010).
+
+A.  Tanaka  et  al.  /  Field  Crops  Research  176  (2015)  99–107 
+
+103
+
+Table   2
+Mean  and  attainable  yields  (mean  over  upper  10  percentile  of  rice  yield)  of  irrigated  lowland  rice,  and  yield  gap  (difference  between  attainable  yield  and  mean  yields)  in  the
+Delta   and  Middle  Valley  of  the  Senegal  River  Valley  (wet  seasons  2002–2010).
+
+Delta 
+
+Middle  Valley
+
+Mean  yield  (t/ha)a
+
+CV  of  yield  (%)  Attainable  yield  (t/ha) 
+
+Yield  gap  (t/ha)b Mean  yield  (t/ha) 
+
+CV  of  yield  (%)  Attainable  yield  (t/ha) 
+
+Yield  gap  (t/ha)
+
+2002 
+2003 
+2004 
+2005 
+2006 
+2007 
+2008 
+2009 
+2010 
+Mean 
+
+4.7  c 
+5.7  ab
+6.3  a 
+5.7  ab 
+2.7  d 
+4.6  c 
+5.6  ab 
+4.0  c
+4.9  bc
+5.0 
+
+30 
+27 
+23 
+20 
+60 
+23 
+18 
+36 
+25 
+29 
+
+7.1 
+8.0 
+8.6 
+7.7 
+6.1 
+6.8 
+7.5 
+6.5 
+6.9 
+7.2 
+
+2.4 
+2.2 
+2.3 
+1.9 
+3.4 
+2.2 
+1.9 
+2.5 
+2.0 
+2.2 
+
+6.1 
+5.6 
+5.7 
+5.7 
+5.2 
+5.9 
+5.6 
+5.2 
+5.6 
+5.6 
+
+29 
+30 
+33 
+32 
+38 
+21 
+26 
+36 
+22 
+30 
+
+9.3 
+8.2 
+9.4 
+9.2 
+9.7 
+7.7 
+8.2 
+8.1 
+7.7 
+8.6 
+
+3.2
+2.6
+3.7
+3.4
+4.6
+1.8
+2.6
+2.9
+2.1
+3.0
+
+a Entries  in  the  column  followed  by  the  same  letter  are  not  signiﬁcantly  different  according  to  Tukey’s  protected  HSD  test  (˛
+b Yield  gap  =  attainable  yield 
+
+−
+  mean  yield.
+
+  =  0.05).
+
+Table  3
+Agricultural  practices  and  mean  yields  of  irrigated  lowland  rice  in  the  Delta  and  Middle  Valley  of  the  Senegal  River  Valley  (wet  seasons  in  the  1990s).
+
+Delta 
+
+Unit 
+
+t/ha 
+t/ha 
+t/ha 
+t/ha 
+kg/ha 
+
+kg/ha 
+
+DAS 
+
+DAS 
+
+Days 
+
+Year 
+Number  of  surveyed
+
+farmers
+
+Crop   establishment
+
+method
+
+Use  of  certiﬁed  seeds 
+Cultivar 
+
+Mean  yield
+SD   of  mean  yield 
+Minimum  yield 
+Maximum  yield 
+Mean   N  application
+
+rate
+
+Mean   P2O5 application
+
+rate
+
+Mean   ﬁrst  top-dressing
+
+timing
+
+Mean   second
+
+top-dressing  timing
+
+Mean   harvest  time
+
+Source 
+
+IKP  =  I  Kong  Pao.
+
+Middle  Valley
+
+Thiagar 
+
+1995 
+10 
+
+Pont  Gendarme 
+
+1998 
+15 
+
+Podor 
+
+1994 
+6 
+
+Direct  seeding 
+
+Direct  seeding 
+
+– 
+Jaya 
+
+4.9 
+0.8 
+3.6 
+6.4 
+101 
+
+50 
+
+45 
+
+71 
+
+125 
+
+Wopereis  et  al.
+(1999)
+
+– 
+Jaya,  IR  13240-
+108-2-2-3
+3.8 
+– 
+– 
+– 
+110 
+
+46 
+
+25–30 
+
+– 
+
+Slightly  varied
+from  recom-
+mendation
+Haefele  et  al.
+(2000)
+
+Direct  seeding,
+Transplanting
+Rarely  used 
+Jaya,  IKP,
+IR1529,  Aiwu
+5.6 
+2.3 
+0.9 
+8.9 
+– 
+
+– 
+
+– 
+
+– 
+
+– 
+
+Podor 
+
+1995 
+6 
+
+Direct  seeding,
+Transplanting
+Rarely  used 
+Jaya,  IKP,  IR
+1529,  Aiwu
+5.9 
+2.1 
+2.4 
+9.6 
+– 
+
+– 
+
+– 
+
+– 
+
+– 
+
+Guédé
+
+1996
+20
+
+Transplanting
+
+–
+Jaya
+
+5.6
+1.1
+2.3
+7.2
+117
+
+49
+
+–
+
+–
+
+142
+
+Poussin  et  al.
+(2003)
+
+Poussin  et  al.
+(2003)
+
+Wopereis  et  al.
+(1999)
+
+demonstrated  most  positive  trend  among  the  ICM  components  over
+the  study  period  (Table  1).  For  example,  the  case  of  urea  application,
+the  percentage  of  farmers  applying  the  urea  only  once  decreased
+although  it  was  not  statistically  signiﬁcant.  The  farmers  also  applied
+urea  earlier  complying  with  the  guideline.  It  was  statistically  sig-
+niﬁcant  in  the  Delta  but  not  in  the  Middle  Valley.  The  farmers  who
+applied  urea  twice  split  the  application  amount  in  50  and  50%  in
+Delta  and  54  and  46%  in  the  Middle  Valley.  Those  who  applied  three
+times  split  the  application  amount  in  41,  39,  and  20%  in  Delta  and
+37,  36,  and  26%  in  the  Middle  Valley.  More  frequent  fertilizer  appli-
+cation  in  the  Middle  Valley  might  be  attributed  to  the  smaller  size
+plot  compared  to  the  Delta.  Less  than  one  quarter  of  all  farmers
+reported  that  there  was  shortage  and/or  excess  of  water  during  the
+cropping  season.
+
+The  Delta  had  less  bird  damage  than  the  Middle  Valley  (26%  vs
+49%).  Mechanical  threshing  was  more  popular  in  the  Delta  than  in
+the  Middle  Valley  (84  vs  60%).  The  temporal  analysis  in  the  Delta
+did  not  show  signiﬁcant  trend  in  agricultural  practices  over  the  nine
+years,  except  for  urea  fertilizer  application  timing,  which  became
+earlier  (Table  1).  In  the  Middle  Valley,  N  and  P2O5 application  rates
+
+were  increased,  more  farmers  applied  urea  three  times  (although
+it  was   still  low  at  28%)  and  used  a  thresher,  and  drainage  problems
+increased  over  the  nine  years.
+
+When  agricultural  practices  were  compared  with  studies  in
+the  1990s  (Table  1  cf.  Table  3),  popular  varieties  had  changed
+from  Jaya  to  the  Sahel  cultivars;  certiﬁed  seed  use  had  become
+more  common;  and  N  application  rate  had  increased  by  30  and
+20  kg/ha  in  the  Delta  and  Middle  Valley,  respectively.  In  contrast,
+P2O5 application  rate  had  decreased  by  20  kg  P2O5/ha  (Wopereis
+et  al.,  1999).  This  is  because  DAP  was  not  easily  accessed  by  farm-
+ers  in  the  market  in  the  2000s  (Diagne  et  al.,  2013a).  P2O5 and
+the  ﬁrst  urea  applications  had  become  around  two   weeks  earlier
+(Wopereis  et  al.,  1999).  In  the  Middle  Valley,  late  harvest  prac-
+ticed  in  the  1990s,  142  DAS,  was  reduced  by  more  than  two   weeks
+in  the  2000s  despite  of  the  fact  that  the  medium  duration  vari-
+eties  were  used  in  the  both  periods.  Late  harvest  may   have  had
+induced  shattering  in  the  hot  and  dry  climate.  Improvement  in
+harvest  time  may   be  due  to  knowledge  dissemination  on  correct
+harvest  timing  by  ICM  as  well  as  more  availability  of  mechanical
+threshing.
+
+104 
+
+A.  Tanaka  et  al.  /  Field  Crops  Research  176  (2015)  99–107
+
+Table  4
+Reasons  for  delayed  sowing  in  the  Delta  and  Middle  Valley  of  the  Senegal  River
+Valley  (wet  seasons  2002–2010).
+
+or  harvesting,  no  animal  damage,  and  no  bird  damage  had  positive
+effect  on  yield.  In  this  zone,  the  predominant  ‘other  animals’  were
+rodents.
+
+Respondent  (%)a
+
+Delta 
+
+Middle  Valley
+
+Credit  (delay  in  reimbursement,
+
+unavailability)
+
+Machine  (tractor  equipped  with  disk
+
+harrow,  unavailability)
+
+Irrigation  (broken  pump,  delay  in  water
+
+supply)
+
+Delay  in  dry  season  cropping 
+Delay  in  ﬁrst  rain
+Others 
+
+65 
+
+24 
+
+11 
+
+0 
+0 
+5 
+
+23
+
+39
+
+30
+
+9
+7
+6
+
+Delta:  n  =  133  respondents,  Middle  Valley:  n  =  94  respondents.
+Data  from  survey  2002  until  2010  in  Senegal  River  Valley,  Senegal.
+
+a Sum  >100%  because  some  respondents  gave  more  than  two   reasons.
+
+3.3.  Factors  affecting  variation  in  on-farm  rice  yield
+
+The  CART  analysis  for  the  rice  yield  as  a  function  of  agricultural
+practices  had  seven  terminal  nodes  with  six  splitting  nodes  in  the
+Delta  (r  =  0.56,  P  <  0.001,  n  =  389)  (Fig.  3a)  and  eight  terminal  nodes
+with  eight  splitting  nodes  Middle  Valley  (r  =  0.48,  P  <  0.001,  n  =  431)
+(Fig.  3b).  Determinant  factors  in  the  Delta  were  timely  start  of  the
+cropping  season,  bird  damage,  P2O5 application  rate,  P2O5 applica-
+tion  timing,  leveling  work,  and  ﬁeld  size.  The  determinant  factors
+in  the  Middle  Valley  were  timely  start  of  the  cropping  season,  weed
+management,  frequency  of  land  preparation,  P2O5 application  rate,
+ﬁrst  urea  application  timing,  threshing  method,  bird  damage,  and
+other  animal  damage.  In  the  Delta,  rice  yields  in  seven  terminal
+nodes  ranged  from  3.6  (delayed  cropping  season  and  with  bird
+damage)  to  7.9  t/ha  (starting  cropping  season  on  time,  applying
+P2O5 at  more  than  44  kg/ha  within  20  DAS).  In  the  Middle  Valley,
+rice  yields  in  eight  terminal  nodes  ranged  from  4.4  (delayed  crop-
+ping  season  with  not  weeding  at  proper  time)  to  7.3  t/ha  (starting
+cropping  season  on  time  with  two  harrowing  passes).
+
+In  the  Delta,  the  timing  of  the  cropping  season  was   the  primary
+splitting  node  (SN  1  in  Fig.  3a):  average  yields  of  4.2  t/ha  in  the  data
+points  reporting  delayed  seeding  and  5.5  t/ha  in  on-time  seeding.
+At  the  second  level  in  the  hierarchy,  the  splitting  criteria  were  bird
+damage  in  the  data  points  with  delayed  seeding  and  P2O5 applica-
+tion  rate  in  the  points  with  on-time  seeding.  Bird  damage  reduced
+rice  yield  by  1.1  t/ha.  Phosphate  application  of  less  than  44  kg/ha
+decreased  yields  (SN  3),  especially  when  leveling  was  not  under-
+taken  (SN  4).  Among  the  farmers  who  applied  at  least  44  kg  P2O5/ha,
+P2O5 application  at  or  before  20  DAS  increased  yields  by  2.1  t/ha  (SN
+6).  Phosphate  application  timing  and  ﬁeld  size  were  yield  deter-
+minants  in  SN  5  and  SN  6  in  Fig.  3a.  Earlier  P2O5 application  and
+smaller  ﬁeld  size  had  positive  effect  on  yield.  When  mean  yields  in
+each  year  were  estimated  using  results  from  the  CART  model  (Fig.  3)
+and  compared  with  observed  mean  yield,  yield  year-to-year  varia-
+tion  in  the  Delta  was  explained  relatively  well  by  the  CART  model
+(r  =  0.76,  P  <  0.05,  n  =  9)  (Fig.  4).
+
+In  the  Middle  Valley,  mean  yields  were  4.8  t/ha  in  the  data  points
+with  delayed  cropping  (SN  1  in  Fig.  3b)  and  5.8  t/ha  in  the  points
+with  on-time  cropping.  At  the  second  level,  the  splitting  criteria
+were  weeding  in  the  group  with  delayed  sowing  (SN  2)  and  hor-
+rowing  in  the  group  with  on-time  cropping  (SN  3).  The  farmers
+who  weeded  their  ﬁelds  either  manually  or  using  herbicides  on  the
+same  day  or  up  to  ﬁve  day  before  the  ﬁrst  fertilizer  application  had
+0.9  t/ha  higher  yield  than  those  who  did  not  weed  at  that  time.  Dou-
+ble  horrowing  increased  the  yield  by  1.6  t/ha  over  the  other  land
+preparation  methods.  In  the  group  with  the  other  land  preparation
+methods,  where  P2O5 application  rate  was  <27  kg/ha,  rice  yield  was
+lower  (SN  4).  Higher  P2O5 application  rate,  mechanical  threshing
+
+4.  Discussion
+
+The  ﬁndings  of  this  study  revealed  that  the  yield  of  irrigated
+rice  production  systems  in  the  Delta  and  Middle  Valley  in  the  SRV
+was  stagnant  in  the  2000s.  Thus,  ICM,  which  had  been  introduced
+in  the  early  2000s,  and  the  food  crisis  in  2007–2008,  in  which  rice
+price  dramatically  increased,  did  not  affect  yield  of  rice  grown  in
+the  wet   season  in  the  SRV  until  2010.  Our  ﬁnding  of  yield  stagna-
+tion  in  the  wet  season  is  in  agreement  with  SAED  (2013),  which
+showed  rice  yield  in  the  wet   season  was  around  5–6  t/ha  in  the
+2000s  and  there  was  no  trend  in  yield  increase.  Such  yield  stagna-
+tion  has  been  observed  in  rice  in  eastern  Asia  (Cassman  et  al.,  2003),
+wheat  in  northwest  Europe,  and  maize  in  North  America  (Grassini
+et  al.,  2013).  In  contract  to  wet  season,  rice  yield  and  production
+area  were  increased  in  the  dry  season,  which  we  did  not  focus  on  in
+this  study.  Rice  area  in  the  dry  season  over  2008–2011  was   around
+20,000  ha—over  four  times  that  during  2002–2006,  and  yield  was
+similarly  higher  (6.8  vs  5.9  t/ha).  This  was  a  result  of  the  GOANA
+program  (Grand  Offensive  in  Agriculture  for  Food  and  Abundance)
+supported  by  Senegal  government  (Diagne  et  al.,  2013b).  Generally,
+rice  yield  in  the  dry  season  is  higher  than  in  the  wet  season,  and
+risk  of  diseases  would  be  lower.  Thus,  farmers  could  have  focused
+on  improving  rice  productivity  in  the  dry  season  rather  than  in
+the  wet  season.  Farmers  might  have  recognized  that  they  can  get
+higher  yield  proﬁtably  in  the  dry  season,  and  therefore  spend  more
+ﬁnancial  resources  in  that  season.
+
+The  agricultural  practices  did  not  differ  largely  during  the
+2000s  except  a  few  practices.  Between  the  1990s  and  2000s,  the
+major  change  was  the  choice  of  variety.  However,  previous  studies
+showed  similar  yield  level  for  Jaya  and  Sahel  cultivars  (Guèye  and
+Becker,  2011;  Traoré  et  al.,  2010).
+
+In  this  study,  the  CART  analysis  identiﬁed  six  and  eight  factors
+affecting  yield  variation  in  the  Delta  and  Middle  Valley,  respec-
+tively,  and  captured  year-to-year  variation  in  the  mean  yield  in
+the  Delta.  This  is  in  line  with  the  previous  studies  that  showed
+the  effectiveness  of  the  CART  analysis  to  identify  production  con-
+straints  (Banerjee  et  al.,  2014;  Delmotte  et  al.,  2011;  Ferraro  et  al.,
+2009;  Tittonell  et  al.,  2008).  Among  the  yield  determining  factors,
+timely  start  of  the  cropping  season,  fertilizer  management,  and  bird
+damage  were  identiﬁed  in  both  zones.  All  of  the  yield-determining
+factors,  except  for  ﬁeld  size  in  the  Delta,  were  agricultural  practices,
+and  ‘sub-optimal’  practices  resulted  in  yield  reduction.  It  has  been
+reported  that  delayed  cropping  reduces  rice  yield  (Dingkuhn  and
+Sow,  1997;  Wopereis  et  al.,  1999).  Fertilizer  management  includ-
+ing  application  timing  and  amount  has  been  identiﬁed  as  a  serious
+constraint  in  previous  studies  (Wopereis  et  al.,  1999;  Haefele  et  al.,
+2000,  2001;  Becker  et  al.,  2003).  Bird  damage  is  a  well-known  con-
+straint  to  rice  production  in  the  SRV  (de  Mey   et  al.,  2012;  Poussin
+et  al.,  2003;  Rodenburg  et  al.,  2014).  Summarizing  previous  studies,
+Rodenburg  et  al.  (2014)  stated  that  bird  damage  on  rice  is  highly
+variable  between  years  and  locations  due  to  biophysical  condi-
+tions  and  crop  management  practices.  Crop  management  practices
+associated  with  bird  damage  includes  delayed  sowing,  delayed  har-
+vesting,  and  poor  bird  control.  In  the  case  of  Delta,  delayed  sowing
+was  the  cause  of  bird  damage  since  bird  damage  was   not  selected
+in  the  CART  model  among  the  farmers  who  did  timely  sowing.  It
+agrees  with  the  ﬁnding  by  Tréca  (1985).  He  reported  that  late  sow-
+ing  in  wet   season  induces  bird  damage  as  the  crop  maturing  stage
+coincides  with  the  arrival  of  migrating  birds  from  Europe.  In  the
+Middle  Valley,  bird  damage  determined  yields  in  the  farmers’  ﬁelds
+where  thresher  or  combine  harvester  was   used.  If  the  farmers  need
+
+A.  Tanaka  et  al.  /  Field  Crops  Research  176  (2015)  99–107 
+
+105
+
+Fig.  3.  Grouping  of  on-farm  yields  of  irrigated  lowland  rice  in  the  Delta  (a)  and  Middle  Valley  (b)  of  the  Senegal  River  Valley  as  a  function  of  agricultural  practices  by  use
+of   CART  model.  Hierarchy  in  the  CART  model  does  not  indicate  the  order  of  practices.  For  instance,  in  the  Middle  Valley,  SN8  indicates  that  in  the  ﬁeld  where  mechanical
+threshing  was   conducted,  bird  damage  reduced  the  yield.
+
+to  wait  for  service  for  threshing  or  harvesting,  the  ﬁelds  would  be
+more  prone  to  bird  damage.  Greater  number  of  service  providers
+located  in  the  Delta  than  Middle  Valley  explains  the  laggardly  pen-
+etration  of  mechanical  threshing  in  the  Middle  Valley.  Unleveled
+ﬁelds  in  the  Delta  could  have  resulted  in  poor  crop  establishment,
+uneven  water  level,  and/or  salinity  problems,  and  consequently
+resulted  in  low  yield  as  observed  in  previous  studies  (Poussin,  1997;
+Sirisena  et  al.,  2010).  The  problem  of  unleveled  ﬁelds  could  be
+clearly  seen,  especially  in  the  Delta,  where  the  average  ﬁeld  size
+was  larger.  In  the  Middle  Valley,  additional  factors  were  weed-
+ing,  frequency  of  horrowing,  other  animal  damage,  and  threshing
+method.  Weeds  are  a  well-known  constraint  in  the  SRV  particularly
+for  direct-sown  rice  (Wopereis  et  al.,  1999;  Haefele  et  al.,  2000;
+Poussin  et  al.,  2003).  Frequency  of  horrowing  was  not  included
+in  ICM.  Double  horrowing  could  be  advantageous  on  heavy  clay
+soils,  which  are  dominant  in  the  Middle  Valley,  and  could  also  be
+
+effective  in  controlling  weeds  (Rao  et  al.,  2007).  Rodent  damage  has
+also  been  reported  elsewhere  in  sub-Saharan  Africa  (Adesina  et  al.,
+1994;  Diagne  et  al.,  2013b;  Tanaka  et  al.,  2013).  The  yield  advantage
+of  using  a  thresher  or  combine  harvester  over  manual  threshing
+may   be  related  to  the  fact  that  mechanical  harvesting/threshing
+can  reduce  the  postharvest  grain  loss  (Lantin,  1999).
+
+We  found  a  negative  relationship  between  ﬁeld  size  and  yield
+in  the  Delta  (Fig.  3a).  In  the  Delta,  ﬁeld  sizes  were  larger  than  in  the
+Middle  Valley.  Better  yields  realized  on  smaller  ﬁelds  might  have
+been  linked  to  labor  input  and  resource  availability  per  unit  area  as
+well  as  better  agricultural  practices  as  reported  previously  (Ali  and
+Deininger,  2014;  Sen,  1966).  However,  the  agricultural  practices
+investigated  in  this  study  were  not  clearly  linked  with  ﬁeld  size.
+For  example  (and  outside  the  scope  of  this  study),  ﬁeld  size  might
+affect  how  uniformly  farmers  are  able  to  manage  their  ﬁelds  (e.g.
+fertilizer  and  herbicide  applications),  which  was   not  addressed  in
+
+106 
+
+A.  Tanaka  et  al.  /  Field  Crops  Research  176  (2015)  99–107
+
+preparation,  while  rice  is  grown  in  nursery  bed.  For  other  yield
+determining  factors  such  as  fertilizer  management,  further  inter-
+view  would  be  required  to  identify  root  causes  why   low-yielding
+farmers  could  not  practice  ICM  components,  despite  of  the  knowl-
+edge  dissemination.
+
+5.  Conclusion
+
+Yield  in  wet-season  irrigated  lowland  rice  production  systems  in
+the  SRV  has  been  stagnant  in  the  2000s.  Despite  the  high  attainable
+yields  realized  in  some  of  the  farmers’  ﬁelds,  yield  gap  of  2.2–3  t/ha
+persisted  in  the  Delta  and  the  Middle  Valley  during  the  study  period.
+We  conﬁrmed  that  use  of  dichotomous  decision  tree  analysis  could
+identify  key  factors  causing  yield  variability.  Timely  sowing,  land
+preparation,  fertilizer,  and  pest  management  are  the  key  deter-
+minants  of  on-farm  yield  variation.  It  suggests  that  correction  of
+low-yielding  farmers’  practices  would  increase  rice  yield  in  the  SRV.
+Institutional  strengthening,  mechanization,  and  introducing  alter-
+native  agricultural  practices  can  alleviate  preliminary  constraint  in
+this  area—delayed  sowing.
+
+References
+
+Adesina,  A.A.,  Johnson,  D.E.,  Heinrichs,  E.A.,  1994.  Rice  pests  in  the  Ivory  Coast
+West  Africa:  farmer’s  perceptions  and  management  strategies.  Int.  J.  Pest
+Manage.  40,  293–299  (INIST-CNRS,  Cote  INIST:  16129,  35400005017877.0020)
+http://cat.inist.fr/?aModele=afﬁcheN&cpsidt=3679003.
+
+ADRAO,  SAED,  ISRA,  2002.  Gestion  intégrée  pour  le  riziculture  irriguée  dans  le  delta
+du   ﬂeuve  Sénégal.  Association  pour  le  développement  de  la  riziculture  en  Afrique
+de   l’Ouest;  Société  Nationale  d’Aménagement  et  d’Exploitation  des  terres  du
+Delta  du  ﬂeuve  Sénégal  et  des  vallées  du  ﬂeuve  Sénégal  et  de  la  Falémé;  Institut
+Sénégalais  de  Recherches  Agricoles,  Saint-Louis,  Senegal.
+
+Ali,  D.A.,  Deininger,  K.,  2014.  Is  there  a  farm-size  productivity  relationship  in  African
+agriculture?  Evidence  from  Rwanda.  In:  World  Bank  Policy  Research  Working
+Paper  6770,  http://elibrary.worldbank.org/doi/pdf/10.1596/1813-9450-6770.
+
+Banerjee,  I.H.,  Goswami,  R.,  Chakraborty,  S.,  Dutta,  S.,  Majumdar,  K.,  Satyanarayana,
+T.,   Jat,  M.L.,  Zingore,  S.,  2014.  Understanding  biophysical  and  socio-economic
+determinants  of  maize  (Zea  mays  L.)  yield  variability 
+India.
+NJAS—Wageningen  J.  Life  Sci.,  http://dx.doi.org/10.1016/j.njas.2014.08.001.
+
+in  eastern 
+
+Becker,  M.,   Johnson,  D.E.,  Wopereis,  M.C.S.,  Sow,  A.,  2003.  Rice  yield  gaps  in  irrigated
+systems  along  an  agro-ecological  gradient  in  West  Africa.  J.  Plant  Nutr.  Soil  Sci.
+166,  61–67,  http://dx.doi.org/10.1002/jpln.200390013.
+
+Cassman,  K.G.,  Dobermann,  A.,  Walters,  D.T.,  Yang,  H.S.,  2003.  Meeting  cereal
+demand  while  protecting  natural  resources  and  improving  environmental  qual-
+ity.  Annu.  Rev.  Environ.  Resour.  28,  315–358.
+
+Delmotte,  S.,  Tittonell,  P.,  Mouret,  J.C.,  Hammond,  R.,  Lopez-Ridaura,  S.,  2011.  On
+farm  assessment  of  rice  yield  variability  and  productivity  gaps  between  organic
+and  conventional  cropping  systems  under  Mediterranean  climate.  Eur.  J.  Agron.
+35,   223–236,  http://dx.doi.org/10.1016/j.eja.2011.06.006.
+
+de  Mey,  Y.,  Demont,  M.,   Diagne,  M.,   2012.  Estimating  bird  damage  to  rice  in
+Africa:  evidence  from  the  Senegal  River  Valley.  J.  Agric.  Econ.  63,  175–200,
+http://dx.doi.org/10.1111/j.1477-9552.2011.00323.x.
+
+Diagne,  A.,  Alia,  D.Y.,  Amovin-Assagba,  E.,  Wopereis,  M.S.C.,  Saito,  K.,  Nakelse,  T.,
+2013a.  Farmer  perceptions  of  the  biophysical  constraints  to  rice  production  in
+sub-Saharan  Africa,  and  potential  impact  of  research.  In:  Wopereis,  M.C.S.,  John-
+son,  D.E.,  Ahmadi,  N.,  Tollens,  E.,  Jalloh,  A.  (Eds.),  Realizing  Africa’s  Rice  Promise.
+CABI  International,  Wallingford,  pp.  46–68.
+
+Diagne,  M.,   Demont,  M.,   Seck,  P.A.,  Diaw,  A.,  2013b.  Self-sufﬁciency  policy  and
+irrigated  rice  productivity  in  the  Senegal  River  Valley.  Food  Secur.  5,  55–68,
+http://dx.doi.org/10.1007/s12571-012-0229-5.
+
+Dingkuhn,  M.,   1997.  Characterizing  irrigated  rice  environments  using  the  rice  phen-
+ology  model  RIDEV.  In:  Miézan,  K.M.,  Wopereis,  M.C.S.,  Dingkuhn,  M.,   Deckers,
+J.,   Randolph,  T.F.  (Eds.),  Irrigated  Rice  in  the  Sahel:  Prospects  for  Sustainable
+Development.  West  Africa  Rice  Development  Association,  Bouaké,  Côte  d’Ivoire,
+pp.   343–360.
+
+Dingkuhn,  M.,   Sow,  A.,  1997.  Potential  yields  of 
+
+in  the  Sahel.
+irrigated  rice 
+J.,  Randolph,
+In:  Miézan,  K.M.,  Wopereis,  M.C.S.,  Dingkuhn,  M.,  Deckers, 
+T.F.  (Eds.),  Irrigated  Rice  in  the  Sahel:  Prospects  for  Sustainable  Develop-
+ment.  West  Africa  Rice  Development  Association  (WARDA),  Bouaké,  Côte
+(cid:4)http://www.scribd.com/doc/79582704/Irrigated-rice-
+d’Ivoire,  pp.  361–379, 
+in-the-Sahel-Prospects-for-sustainable-development(cid:5).
+
+Dingkuhn,  M.,   1995.  Climatic  determinants  of  irrigated  rice  performance  in  the
+Sahel—III.  Characterizing  environments  by  simulating  crop  phenology.  Agric.
+Syst.  48,  435–456.
+
+FAO-Unesco,  1977.  Soil  Map   of  the  World,  1/5000  000,  Volume  VI,  Africa.  UNESCO,
+
+Paris.
+
+Ferraro,  D.O.,  Rivero,  D.E.,  Ghersa,  C.M.,  2009.  An  analysis  of  the  factors  that  inﬂuence
+sugarcane  yield  in  Northern  Argentina  using  classiﬁcation  and  regression  trees.
+Field  Crops  Res.  112,  149–157.
+
+Fig.  4.  Relationship  between  mean  observed  and  predicted  yields  of  irrigated  low-
+land   rice  in  the  Delta  ((cid:2))  and  Middle  Valley  ((cid:3))  of  the  Senegal  River  Valley  (wet
+seasons  2002–2010).  Mean  annual  observed  yields  were  based  on  data  collected  in
+this   study.  Mean  annual  predicted  yields  were  calculated  using  CART  model  of  each
+zone  (Fig.  3).
+
+this  study.  This  study  did  not  capture  information  on  soil  fertility,
+salinity  (which  is  commonly  observed  in  the  Delta),  injuries  due
+to  diseases  and  insect  pests,  water  availability  during  the  cropping
+season,  and  year-to-year  variability  in  climatic  conditions.  Climatic
+variability  might  have  caused  overestimation  of  mean  yield  in  2006
+in  the  Delta  as  minimum  temperature  in  Nov  and  Dec  was  low-
+est  in  2006  during  the  study  period  (NOAA,  2013).  Cold-induced
+spikelet  sterility  has  been  studied  (Dingkuhn,  1995).  However,  as
+this  study  did  not  take  into  account  such  climatic  parameters,  quan-
+tiﬁcation  of  year-to-year  variation  in  relation  to  climate  conditions
+and  its  relationship  with  on-farm  rice  productivity  deserves  further
+research  in  the  SRV.
+
+ICM  consists  of  agricultural  interventions  from  seeds  to  harvest.
+The  result  of  CART  analysis  in  the  present  study  can  help  prioritize
+the  interventions  for  realizing  higher  yield  in  the  SRV.  Furthermore,
+understanding  the  root  causes  of  key  interventions  not  being  prac-
+ticed  will  help  us  move  forward  to  create  enabling  environment.
+In  this  study,  primary  yield  determining  factor  was   sowing  time.
+Delayed  sowing  was  mainly  associated  with  availability  of  credit,
+machinery,  and  irrigation  water.  In  the  Delta,  availability  of  credit
+was  more  problematic  than  in  the  Middle  Valley,  as  farmers  in  the
+Delta  often  did  not  grow  any  crop  in  dry  season,  whereas  most  of  the
+farmers  were  aware  of  the  ICM  components  through  the  extension
+agents  or  by  using  the  materials  distributed  all  around  the  SRV  since
+the  early  2000s.  However,  despite  of  the  knowledge  dissemination,
+these  key  ICM  components  were  not  practiced  by  the  low  yielding
+farmers.  The  credit  for  rice  production  can  be  paid  with  revenues
+from  dry-season  vegetable  farming  (onion,  tomato)  in  the  Middle
+valley  where  vegetable  production  is  widely  adopted  compared  to
+the  Delta.  Therefore,  credit  availability  was  more  problem  in  the
+Delta.  On  the  other  hand,  organizational  problems  with  irrigation
+and  tractor  were  more  pronounced  in  the  Middle  Valley.  Institu-
+tional  arrangements  at  the  irrigation  scheme  level  are  needed  to
+include  a  wide  range  of  stakeholders  such  as  banks,  input  suppliers,
+service  providers  for  machineries,  irrigation  authorities,  and  policy
+makers.  Establishment  of  a  multi-sector  platform  would  enhance
+collective  efforts  in  improving  rice  production.
+
+Development  of  alternative  agricultural  practices  could  also
+help  timely  sowing.  Sowing  window  in  the  wet  season  is  very  tight
+in  the  SRV,  when  farmers  grow  rice  in  the  dry  season  (Dingkuhn,
+1997).  As  number  of  tractor  is  limited  and  sowing  window  is
+narrow,  no-tillage  system  might  help  reducing  time  for  land  prepa-
+ration.  To  reduce  the  competition  of  tractors,  tillage  could  be  done
+after  harvesting  rice  in  the  wet  season  as  there  would  be  2–3
+months  before  the  next  dry  season  crop.  Introducing  leveler  which
+can  be  attached  to  tractor  could  reduce  time  for  land  leveling.  Also,
+transplanting  would  allow  farmers  to  have  more  time  for  land
+
+A.  Tanaka  et  al.  /  Field  Crops  Research  176  (2015)  99–107 
+
+107
+
+Gergely,  N.,  Baris,  P.,  2009.  Étude  sur  la  compétitivité  du  riz  de  la  Vallée  du  Fleuve
+Sénégal  (VFS)  sur  les  marchés  nationaux  et  régionaux.  Agence  Franc¸  aise  de
+Développement  (AFD),  Paris,  France.
+
+Grassini,  P.,  Eskridge,  K.M.,  Cassman,  K.G.,  2013.  Distinguishing  between  yield
+advances  and  yield  plateaus  in  historical  crop  production  trends.  Nat.  Commun.
+4,  1–11,  http://dx.doi.org/10.1038/ncomms3918.
+
+Guèye,  T.,  Becker,  H.,  2011.  Genetic  variation  in  nitrogen  efﬁciency  among  cultivars
+
+of   irrigated  rice  in  Senegal.  J.  Agric.  Biotech.  Sustain.  Dev.  3,  35–43.
+
+Haefele,  S.M.,  Saito,  K.,  N’Diaye,  K.M.,  Mussgnug,  F.,  Nelson,  A.,  Wopereis,  M.C.S.,
+2013.  Increasing  rice  productivity  through  improved  nutrient  use  in  Africa.  In:
+Wopereis,  M.C.S.,  Johnson,  D.E.,  Ahmadi,  N.,  Tollens,  E.,  Jalloh,  A.  (Eds.),  Realizing
+Africa’s  Rice  Promise.  CABI  International,  Wallingford,  pp.  250–264.
+
+Haefele,  S.M.,  Wopereis,  M.C.S.,  2007.  Combining  ﬁeld  and  simulation  studies  to
+improve  fertilizer  recommendations  for  irrigated  rice  in  the  Senegal  River  Valley.
+In:  Dobermann,  A.,  Witt,  C.,  Dawe,  D.  (Eds.),  Increasing  Productivity  of  Intensive
+Rice  Systems  through  Site-Speciﬁc  Nutrient  Management.  International  Rice
+Research  Institute,  Manila,  Philippines,  pp.  265–286.
+
+Haefele,  S.M.,  Wopereis,  M.C.S.,  Donovan,  C.,  Maubuisson,  J.,  2001.  Improving  the
+productivity  and  proﬁtability  of  irrigated  rice  production  in  Mauritania.  Eur.  J.
+Agron.  14,  181–196,  http://dx.doi.org/10.1016/S1161-0301(00)00094-0.
+
+Haefele,  S.M., 
+
+Johnson,  D.E.,  Diallo,  S.,  Wopereis,  M.C.S., 
+
+I.,  2000.
+irrigated
+in  Sahelian  West  Africa.  Field  Crops  Res.  66,  101–113,
+
+Improved  soil  fertility  and  weed  management 
+rice 
+http://dx.doi.org/10.1016/S0378-4290(00)00066-6.
+
+Janin, 
+is  proﬁtable  for 
+
+farmers 
+
+Keay,  R.W.J.,  1959.  Vegetation  Map   of  Africa  South  of  the  Tropic  of  Cancer.  Oxford
+
+University  Press.
+
+Kebbeh,  M.,   Miezan,  K.M.,  2003.  Ex-ante  evaluation  of  integrated  crop  management
+options  for  irrigated  rice  production  in  the  Senegal  River  Valley.  Field  Crops  Res.
+81,   87–94,  http://dx.doi.org/10.1016/S0378-4290(02)00197-1.
+
+Lantin,  R.,  1999.  Rice:  Post-harvest  operations.  FAO,  http://www.fao.org/
+
+ﬁleadmin/user  upload/inpho/docs/Post  Harvest  Compendium  -  RICE.pdf
+
+Microsoft,  2010.  Microsoft  Excel  2010.  Microsoft  Corporation,  Redmond,  WA  [com-
+(cid:4)http://www7.ncdc.noaa.gov/CDO/
+
+puter  software].
+cdoselect.cmd?datasetabbv=GSOD&resolution=40(cid:5).
+
+NOAA,  2013.  NNDC  Climate  Data  Online.  NOAA, 
+
+Poussin,  J.C.,  1997.  Direct  seeding  or  transplanting?  An  example  from  the  Sene-
+gal   middle  valley.  In:  Miézan,  K.M.,  Wopereis,  M.C.S.,  Dingkuhn,  M.,   Deckers,  J.,
+Randolph,  T.F.  (Eds.),  Irrigated  Rice  in  the  Sahel:  Prospects  for  Sustainable  Devel-
+opment.  West  Africa  Rice  Development  Association,  Bouaké,  Côte  d’Ivoire,  pp.
+191–200.
+
+Poussin,  J.C.,  Wopereis,  M.C.S.,  Debouzie,  D.,  Maeght,  J.L.,  2003.  Determinants  of
+irrigated  rice  yield  in  the  Senegal  River  Valley.  Eur.  J.  Agron.  19,  341–356,
+http://dx.doi.org/10.1016/S1161-0301(02)00078-3.
+
+Poussin,  J.C.,  Diallo,  Y.,  Legoupil,  J.C.,  Sow,  A.,  2005.  Increase  in  rice  productivity  in
+the  Senegal  River  valley  due  to  improved  collective  management  of  irrigation
+schemes.  Agron.  Sustain.  Dev.  25,  225–236.
+
+Rao,  A.N., 
+
+Johnson,  D.E.,  Sivaprasad,  B.,  Ladha, 
+
+Weed  management 
+http://dx.doi.org/10.1016/S0065-2113(06)93004-1.
+
+in  direct-seeded 
+
+J.K.,  Mortimer,  A.M.,  2007.
+rice.  Adv.  Agron.  9,  153–225,
+
+Rodenburg,  J.,  Sow,  A.,  Dieng,  I.,  2014.  Bird,  weed  and  interaction  effects  on  yield  of
+irrigated  lowland  rice.  Crop  Prot.  66,  46–52,  http://dx.doi.org/10.1016/j.cropro.
+2014.08.015.
+
+SAED,  2013.  Évolution  des  superﬁcies  et  productions  de  riz  dans  la  Vallée  du  Fleuve
+Sénégal  (1980/81-2011/12).  Société  d’Aménagement  et  d’Exploitation  des  terres
+du   Delta  et  des  vallées  du  ﬂeuve  Sénégal  et  de  la  Falémé;  Direction  du  Développe-
+ment  et  de  l’Aménagement  Rural  (DDAR);  Le  Centre  de  Suivi  Écologique  (CSE),
+Saint-Louis,  Senegal.
+
+Saito,  K.,  Nelson,  A.,  Zwart,  S.J.,  Niang,  A.,  Sow,  A.,  Yoshida,  H.,  Wopereis,  M.C.S.,  2013.
+Towards  a  better  understanding  of  biophysical  determinants  of  yield  gaps  and
+the  potential  for  expansion  of  the  rice  area  in  Africa.  In:  Wopereis,  M.C.S.,  John-
+son,   D.E.,  Ahmadi,  N.,  Tollens,  E.,  Jalloh,  A.  (Eds.),  Realizing  Africa’s  Rice  Promise.
+CABI  International,  Wallingford,  pp.  188–203.
+
+SAS,  2012.  SAS/STAT  Software,  Version  10  of  the  SAS  System  for  Windows.  SAS
+
+Institute  Inc.,  Cary,  NC.
+
+Seck,  P.A.,  Touré,  A.A.,  Coulibaly,  J.Y.,  Diagne,  A.,  Wopereis,  M.C.S.,  2013.  Africa’s  rice
+economy  before  and  after  the  2008  rice  crisis.  In:  Wopereis,  M.C.S.,  Johnson,
+D.E.,  Ahmadi,  N.,  Tollens,  E.,  Jalloh,  A.  (Eds.),  Realizing  Africa’s  Rice  Promise.  CABI
+International,  Wallingford,  pp.  24–34.
+
+Sen,  A.K.,  1966.  Peasants  and  dualism  with  or  without  surplus  labor.  J.  Polit.  Econ.  5,
+
+425–450,  http://dx.doi.org/10.1086/259198.
+
+Sirisena,  D.N.,  Rathnayake,  W.M.U.K.,  Herath,  H.M.A.,  2010.  Productiv-
+in  Angiththamkulam  Yaya,  Sri
+(cid:4)http://pedology.ac.affrc.go.jp/
+
+ity   enhancement  of  saline  paddy  ﬁelds 
+Lanka  a  case  study.  Pedologist  53,  96–100, 
+specialI/SI53  3/sepPDF/009  SIRISENA.pdf(cid:5).
+
+Tanaka,  A.,  Saito,  K.,  Azoma,  K.,  Kobayashi,  K.,  2013.  Factors  affecting  variation  in
+farm   yields  of  irrigated  rice  in  southern-central  Benin.  Eur.  J.  Agron.  44,  46–53,
+http://dx.doi.org/10.1016/j.eja.2012.08.002.
+
+Tittonel,  P.,  Giller,  K.E.,  2013.  When  yield  gaps  are  poverty  traps:  the  paradigm  of  eco-
+logical  intensiﬁcation  in  African  smallholder  agriculture.  Field  Crops  Res.  143,
+76–90,  http://dx.doi.org/10.1016/j.fcr.2012.10.007.
+
+Tittonell,  P.,  Shepherd,  K.D.,  Vanlauwe,  B.,  Giller,  K.E.,  2008.  Unravelling  the
+effects  of  soil  and  crop  management  on  maize  productivity 
+in  small-
+holder  agricultural  systems  of  western  Kenya—an  application  of  classiﬁca-
+tion  and  regression  tree  analysis.  Agric.  Ecosyst.  Environ.  123,  137–150,
+http://dx.doi.org/10.1016/j.agee.2007.05.005.
+
+Tollens,  E.,  Demont,  M.,   Sié,  M.,   Diagne,  A.,  Saito,  K.,  Wopereis,  M.C.S.,  2013.  From
+WARDA  to  AfricaRice:  an  overview  of  rice  research  for  development  activities
+conducted  in  partnership  in  Africa.  In:  Wopereis,  M.C.S.,  Johnson,  D.E.,  Ahmadi,
+N.,  Tollens,  E.,  Jalloh,  A.  (Eds.),  Realizing  Africa’s  Rice  Promise.  CABI  International,
+Wallingford,  pp.  1–23.
+
+Traoré,  K.,  Bado,  B.V.,  Guèye,  T.,  Gaye,  S.,  2010.  Grain  yield  performance  of  inter-
+speciﬁc  irrigated  rice  genotypes  in  the  Senegal  River  Valleys,  as  affected  by  the
+cropping  seasons.  W  Afr  J.  Applied  Ecol.  17,  65–79.
+
+Tréca,  B.,  1985.  Les  possibilités  de  luttecontre  les  oiseauxd’eau  pourprotéger  les
+rizières  en  Afrique  de  l’Ouest.  J.  d’agriculturetraditionnelleet  de  botaniqueap-
+pliquée  32,  191–213.
+
+USDA,  2013.  Production,  Supply  and  Distribution.  Foreign  Agricultural  Service,
+(cid:4)http://www.fas.
+
+United  States  Department  of  Agriculture,  online  [database] 
+usda.gov/psdonline/(cid:5)
+
+  accessed  on  (April  20,  2013).
+
+USDA,  2012.  West  Africa:  Rice  Annual.  GAINReport.  USDA  Foreign  Agricultural
+
+Service.
+
+WARDA,  SAED,  2001.  Manuel  pratique  de  riziculture  irriguée  dans  la  vallée  du
+ﬂeuve  Sénégal,  version  1.  Association  pour  le  Développement  de  la  Riziculture
+en  Afrique  de  l’Ouest;  Société  Nationale  d’Aménagement  et  d’Exploitation  des
+terres  du  Delta  du  ﬂeuve  Sénégal  et  des  vallées  du  ﬂeuve  Sénégal  et  de  la  Falémé,
+(cid:4)http://www.afroweeds.org/network/pg/ﬁle/read/2274/
+Saint-Louis,  Senegal, 
+manuel-pratique-de-riziculture-irrigue-dans-la-valle-du-ﬂeuve-sngal(cid:5).
+
+Wopereis,  M.C.S.,  Donovan,  C.,  Nebié,  B.,  Guindo,  D.,  N’Diaye,  M.K.,  1999.  Soil  fer-
+tility  management  in  irrigated  rice  systems  in  the  Sahel  and  Savanna  regions
+of   West  Africa:  Part  I.  Agronomic  analysis.  Field  Crops  Res.  61,  125–145,
+http://dx.doi.org/10.1016/S0378-4290(98)00154-3.
+
+
