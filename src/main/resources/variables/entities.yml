@@ -26,7 +26,7 @@
 
 - name: fertilizer-values-from-lexicon
   priority: ${rulepriority}
-  label: Value
+  label: Value    
   type: token
   pattern: |
     [entity='B-FERTILIZER'] [entity='I-FERTILIZER']*
