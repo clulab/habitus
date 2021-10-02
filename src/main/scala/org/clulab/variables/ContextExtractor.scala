@@ -186,17 +186,19 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
     var fullName = ArrayBuffer[String]()
     var tempEntity = nerTag
     var tempCounter = entityCounter
-    do {
-      fullName += sent.words(tempCounter)
-      indicesToSkip += tempCounter
-      tempCounter = tempCounter + 1
-      if( !sent.entities.get(tempCounter).isEmpty) {
-        tempEntity = sent.entities.get(tempCounter)
-      }
-      else
-        {break}
-      newEntityName = fullName.mkString(" ").toLowerCase()
-    } while (tempEntity == "I-LOC")
+    breakable {
+      do {
+        fullName += sent.words(tempCounter)
+        indicesToSkip += tempCounter
+        tempCounter = tempCounter + 1
+        if (tempCounter < sent.words.length) {
+          tempEntity = sent.entities.get(tempCounter)
+        }
+        else
+          {break()}
+        newEntityName = fullName.mkString(" ").toLowerCase()
+      } while (tempEntity == "I-LOC")
+    }
     newEntityName
   }
 
