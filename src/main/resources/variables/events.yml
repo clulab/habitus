@@ -9,6 +9,10 @@
   type: token
   pattern: |
     @variable:Variable [tag=/VBN/]? (?<trigger> [lemma=be]) @value:Value
+    
+    # @variable:Variable [tag=/VBN/]? (?<trigger> [lemma=be]) ("," @value:Value)* (and @value:Value)?
+    # Ex1: "The most important planted cash crops are rice and maize in the SRV"
+    # Ex2: "The most important planted cash crops are rice, tomato, onion and maize in the SRV"
 
 #
 # [With] Variable Value
@@ -32,6 +36,7 @@
     trigger = [lemma=/range|occur|be/ & tag=/^V/]
     variable:Variable = /nsubj/
     value:Value = /nmod_on|nmod_in|Ax_on|Ax_in/
+    value:Value = /nmod_on|nmod_in|nmod_such_as|nmod_than|nmod_like|Ax_on|Ax_in/
 
 #
 # VARIABLE on|in VALUE
