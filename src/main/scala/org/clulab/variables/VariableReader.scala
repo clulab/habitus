@@ -29,8 +29,8 @@ object VariableReader {
       println(s"Writing mentions from doc ${filename} to $outputFile")
       outputMentionsToTSV(mentions, doc, context, filename, pw)
       // to not overpopulate the memory. Flush findings once for each document.
-      fw.flush()
       pw.flush()
+      fw.flush()
     }
 
 
