@@ -19,8 +19,8 @@ object VariableReader {
     var seqMention = Seq[String]()
     var outputFile = outputDir+"/mentions.tsv"
 
-
-    val pw = new PrintWriter(new FileWriter(new File(outputFile)))
+    val fw=new FileWriter(new File(outputFile))
+    val pw = new PrintWriter(fw)
     for(file <- FileUtils.findFiles(inputDir, ".txt")) {
       val text = FileUtils.getTextFromFile(file)
       val filename = file.toString.split("/").last
@@ -29,6 +29,7 @@ object VariableReader {
       println(s"Writing mentions from doc ${filename} to $outputFile")
       outputMentionsToTSV(mentions, doc, context, filename, pw)
       // to not overpopulate the memory. Flush findings once for each document.
+      fw.flush()
       pw.flush()
     }
 
