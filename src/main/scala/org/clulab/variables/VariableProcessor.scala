@@ -60,7 +60,7 @@ object VariableProcessor {
       // read file from filesystem
       val rules = FileUtils.readFileToString(master_file, StandardCharsets.UTF_8)
       // creates an extractor engine using the rules and the default actions
-      val extractor = ExtractorEngine(rules, path = Some(resource_dir))
+      val extractor = ExtractorEngine(rules)
       new VariableProcessor(processor, extractor)
     } else {
       // read rules from yml file in resources
