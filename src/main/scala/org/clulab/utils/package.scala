@@ -58,7 +58,9 @@ package object utils {
               .mostFreqDate).get}")
           } catch {
             case e: NoSuchElementException => println(s"No normalized value found for ${m.arguments("value").head.text} in sentence ${s.getSentenceText}!")
+              e.printStackTrace(System.out)
             case e: RuntimeException => println(s"Error occurs for sentence: ${s.getSentenceText}")
+              e.printStackTrace(System.out)
           }
           println(m.arguments("value").head.norms.filter(_.length > 2))
       }
