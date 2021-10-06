@@ -62,8 +62,9 @@ package object utils {
           }
           println(m.arguments("value").head.norms.filter(_.length > 2))
       }
+      pw.flush()
     }
-    pw.flush()
+
   }
 
 

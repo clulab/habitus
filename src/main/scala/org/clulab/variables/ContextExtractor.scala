@@ -16,13 +16,6 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
 
   def parse(doc:Document,mentions:Seq[Mention],sentidContext:scala.collection.mutable.Map[Int,contextDetails]) = {
 
-    // pre-processing
-   // val doc = processor.annotate(text, keepText = false)
-
-    // extract mentions from annotated document
-   // val mentions = extractor.extractFrom(doc).sortBy(m => (m.sentence, m.getClass.getSimpleName))
-
-
     val mostFreqLocation0Sent=extractContext(doc,mentions,0,"LOC")
     val mostFreqLocation1Sent=extractContext(doc,mentions,1,"LOC")
     val mostFreqLocation=extractContext(doc,mentions,Int.MaxValue,"LOC")
@@ -206,11 +199,6 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
   def getEntityFreqPerSent(doc: Document): Seq[entityRelDist] = {
     var entitySentFreq: scala.collection.mutable.Map[Entity, Int] = Map()
     for ((s, i) <- doc.sentences.zipWithIndex) {
-      println(s.words.mkString(" "))
-      println(s"index=$i")
-      if( i>344) {
-        println(s.words.mkString(" "))
-      }
       var entityCounter = 0
       val indicesToSkip = ArrayBuffer[Int]()
         for ((nerTag, word, norm) <- (s.entities.get, s.words, s.norms.get).zipped) {
