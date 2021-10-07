@@ -4,11 +4,11 @@ import org.clulab.utils._
 
 /** Interactive shell for variable reading */
 class VariableShell() extends Shell {
-
+  println("Creating VariableProcessor...\n")
   private var vp: VariableProcessor = VariableProcessor()
 
-  override def reload(): Unit = {
-    println("reloading VariableProcessor")
+  def reload(): Unit = {
+    println("Reloading VariableProcessor...")
     vp = VariableProcessor(vp.processor)
   }
 
@@ -20,6 +20,17 @@ class VariableShell() extends Shell {
     displayMentions(mentions, doc)
   }
 
+  override def mkMenu(): Menu = {
+    val lineReader = new CliReader("(Habitus)>>> ", "user.home", ".habitusshellhistory")
+    val mainMenuItems = Seq(
+      new HelpMenuItem(":help", "show commands"),
+      new SimpleMainMenuItem(":reload", "reload the variable processor", reload _),
+      new ExitMenuItem(":exit", "exit system")
+    )
+    val defaultMenuItem = new SafeDefaultMenuItem(work)
+
+    new Menu("Welcome to the Habitus Shell!", lineReader, mainMenuItems, defaultMenuItem)
+  }
 }
 
 object VariableShell extends App {
