@@ -35,7 +35,6 @@
   pattern: |
     trigger = [lemma=/range|occur|be/ & tag=/^V/]
     variable:Variable = /nsubj/
-    value:Value = /nmod_on|nmod_in|Ax_on|Ax_in/
     value:Value = /nmod_on|nmod_in|nmod_such_as|nmod_than|nmod_like|Ax_on|Ax_in/
 
 #
@@ -48,6 +47,32 @@
   type: token
   pattern: |
     @variable:Variable (?<trigger> [lemma=/on|in/]) @value:Value
+
+#
+# Syntactic rule for crop 
+#
+- name: ${label}-cop-5
+  priority: ${rulepriority}
+  label: ${label}
+  graph: "hybrid"
+  pattern: |
+    trigger = [lemma=be]
+    variable:Variable = <cop
+    value:Value = <cop nsubj
+
+
+# #
+# # VARIABLE attached to VALUE
+# #
+# - name: ${label}-cop-6
+#   priority: ${rulepriority}
+#   label: ${label}
+#   graph: "hybrid"
+#   pattern: |
+#     trigger = [lemma=be]
+#     variable:Variable = /compound/
+#     value:Value = /nmod_such_as|nmod_like/
+
 
 #
 # VARIABLE ranged|occurred from|between VALUE and VALUE

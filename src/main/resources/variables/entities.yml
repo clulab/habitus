@@ -50,7 +50,7 @@
   label: Variable
   type: token
   pattern: |
-    /(?i)(crop|cultivar|seed|sowed|sown|plant|growing|varieties)/
+    /(?i)(crop|cultivar|cultivation|seed|sowed|sown|plant|grown|growing|varieties)/
 
 
 
