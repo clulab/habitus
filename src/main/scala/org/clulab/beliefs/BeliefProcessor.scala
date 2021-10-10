@@ -6,6 +6,7 @@ import org.clulab.odin.{ExtractorEngine, Mention}
 import org.clulab.openie.entities.{CustomizableRuleBasedFinder, RuleBasedEntityFinder}
 import org.clulab.processors.clu.CluProcessor
 import org.clulab.processors.{Document, Processor}
+import org.clulab.utils
 
 import java.io.File
 import java.nio.charset.StandardCharsets
@@ -20,6 +21,8 @@ class BeliefProcessor(val processor: Processor,
 
     // extract syntactic mentions
     val entityMentions = entityFinder.extract(doc)
+    println("Mentions from the entityFinder:")
+    utils.displayMentions(entityMentions, doc)
 
     // TODO: add entityMentions to Odin's state
 
