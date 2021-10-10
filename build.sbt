@@ -19,6 +19,7 @@ libraryDependencies ++= {
     "ai.lum" %% "odinson-core" % "0.4.0",
 
     "org.clulab"          %%  "processors-main"          % procVer,
+    "org.clulab"          %%  "processors-openie"        % procVer,
     "org.clulab"          %%  "processors-corenlp"       % procVer
   )
 }

@@ -1,0 +1,14 @@
+
+#
+# Mention believe that Mention, e.g.: The farmers believe that loans are useful
+#
+- name: ${label}-believe
+  priority: ${rulepriority}
+  label: ${label}
+  graph: "hybrid"
+  pattern: |
+    trigger = [lemma=/believe/ & tag=/^V/]
+    believer:Mention = /nsubj|A0/
+    belief:Mention = /ccomp|A1/
+
+

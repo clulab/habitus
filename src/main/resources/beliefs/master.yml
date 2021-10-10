@@ -1,0 +1,17 @@
+
+#
+# Grammar to extract belief statements, e.g., "The farmers believe that loans are useful."
+# See Odin manual: https://arxiv.org/pdf/1509.07513.pdf
+#
+
+taxonomy:
+  - Entity:
+      - Mention
+  - Event:
+      - Belief
+
+rules:
+  - import: beliefs/events.yml
+    vars:
+      label: Belief
+      rulepriority: "2"
