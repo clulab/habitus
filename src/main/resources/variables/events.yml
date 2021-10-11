@@ -1,4 +1,3 @@
-
 #
 # VARIABLE is VALUE
 # This is a token pattern. Try not to use them. But they are simpler for copulative verbs ("be" verbs)
@@ -60,18 +59,26 @@
     variable:Variable = <cop
     value:Value = <cop nsubj
 
+- name: ${label}-cop-6
+  priority: ${rulepriority}
+  label: ${label}
+  graph: "hybrid"
+  pattern: |
+    trigger = [lemma=include]
+    variable:Variable = /nsubj/
+    value:Value = /dobj/
 
-# #
-# # VARIABLE attached to VALUE
-# #
-# - name: ${label}-cop-6
-#   priority: ${rulepriority}
-#   label: ${label}
-#   graph: "hybrid"
-#   pattern: |
-#     trigger = [lemma=be]
-#     variable:Variable = /compound/
-#     value:Value = /nmod_such_as|nmod_like/
+#
+# VARIABLE attached to VALUE
+#
+- name: ${label}-cop-7
+  priority: ${rulepriority}
+  label: ${label}
+  graph: "hybrid"
+  pattern: |
+    trigger = [lemma=be]?
+    variable:Variable = /nmod_such_as/
+    value:Value = /nmod_such_as/
 
 
 #
