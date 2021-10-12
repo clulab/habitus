@@ -262,7 +262,7 @@ class TestVariableReader extends FlatSpec with Matchers {
   }
 
 
-//   // Tests for CROP var-val reading
+  // Tests for CROPS variables
 
   val sent16 = "The most important planted cash crop is peanut in the SRV."
   sent16 should "recognize crops attached with be verb "in {
@@ -273,15 +273,17 @@ class TestVariableReader extends FlatSpec with Matchers {
       m.arguments("value").head.text should equal("peanut")
     })
   }
-//   val sent16_1 = "The quantity of land in subsistence crops (maize, millet, and sorghum)"
-//   sent16_1 should "recognize list of crops"in {
-//     val mentions = getMentions(sent16_1)
-//     mentions.filter(_.label matches "Assignment") should have size (1)
-//     mentions.filter(_.label matches "Assignment").foreach({ m =>
-//       m.arguments("variable").head.text should be("crop")
-//       m.arguments("value").head.text should equal("peanut")
-//     })
-//   }
+
+  val sent16_1 = "Some farmers use improved variety like Sahel 108"
+  sent16_1 should "recognize list of crops"in {
+    val mentions = getMentions(sent16_1)
+    mentions.filter(_.label matches "Assignment") should have size (1)
+    mentions.filter(_.label matches "Assignment").foreach({ m =>
+      m.arguments("variable").head.text should be("variety")
+      m.arguments("value").head.text should equal("Sahel 108")
+    })
+  }
+
   val sent16_2 = "The productivity of a range of agricultural crops beyond rice"
   sent16_2 should "recognize crops headed by preposition"in {
     val mentions = getMentions(sent16_2)
@@ -292,7 +294,7 @@ class TestVariableReader extends FlatSpec with Matchers {
     })
   }
 
-  // TODO: Write a rule to parse these two sentences
+  // TODO: Write a rule to parse the following two sentences
   val sent16_2_1 = "Fertilizer is only available in blends optimized for other crops such as maize"
   sent16_2_1 should "recognize crops  preceded by adj + prep "in {
     val mentions = getMentions(sent16_2_1)
@@ -369,26 +371,26 @@ class TestVariableReader extends FlatSpec with Matchers {
     })
   }
 
-//   // TODO: I was wondering if this case is for multiple assignments.
-//   // Not sure if we can use Syntactic rules here.
-//   // May be I need to modifiy the token pattern crop-2 rule
+  // TODO: I was wondering if this case is for multiple assignments.
+  // Not sure if we can use Syntactic rules here.
+  // May be I need to modifiy the token pattern crop-2 rule
 
-//   // Anway a list of crops comma separated is detected
+  // Anway a list of crops comma separated is detected
 
-//   val sent16_4_2 = "In the SRV, farmers plant Sahel 108, Sahel 150, Sahel 154, Sahel 134, Nerica"
-//   sent16_4_2 should "recognize crop [attached to dates]"in {
-//     val mentions = getMentions(sent16_4_2)
-//     mentions.filter(_.label matches "Assignment") should have size (1)
-//     mentions.filter(_.label matches "Assignment").foreach({ m =>
-//       m.arguments("variable").head.text should be("plant")
-//       m.arguments("value").head.text should equal("Sahel 108")
-//       // m.arguments("value").head.text.get(0) should equal("Sahel 108")
-//       // m.arguments("value").head.text.get(1) should equal("Sahel 150")
-//       // m.arguments("value").head.text.get(2) should equal("Sahel 154")
-//       // m.arguments("value").head.text.get(3) should equal("Sahel 134")
-//       // m.arguments("value").head.text.get(4) should equal("Nerica")
-//     })
-//   }
+  val sent16_4_2 = "In the SRV, farmers plant Sahel 108, Sahel 150, Sahel 154, Sahel 134, Nerica"
+  sent16_4_2 should "recognize crop [attached to dates]"in {
+    val mentions = getMentions(sent16_4_2)
+    mentions.filter(_.label matches "Assignment") should have size (1)
+    mentions.filter(_.label matches "Assignment").foreach({ m =>
+      m.arguments("variable").head.text should be("plant")
+      m.arguments("value").head.text should equal("Sahel 108")
+      // m.arguments("value").head.text.get(0) should equal("Sahel 108")
+      // m.arguments("value").head.text.get(1) should equal("Sahel 150")
+      // m.arguments("value").head.text.get(2) should equal("Sahel 154")
+      // m.arguments("value").head.text.get(3) should equal("Sahel 134")
+      // m.arguments("value").head.text.get(4) should equal("Nerica")
+    })
+  }
 
 
   val sent17_1 = "Peanut, sugarcane and cotton are important cash crops."
@@ -522,7 +524,6 @@ class TestVariableReader extends FlatSpec with Matchers {
       m.arguments("value").head.text.get(1) should equal("diammonium-phosphate")
     })
   }
-
 
  val sent_20_6 = "Total fertilizer usage was ammonium poly-phosphate on average 152 kg ha–1 in the 1999 and 2000WS"
   sent_20_6 should "recognize fertilizer [attached to be verb]"in {

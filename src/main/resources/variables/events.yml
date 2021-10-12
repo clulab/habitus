@@ -9,11 +9,7 @@
   pattern: |
     @variable:Variable [tag=/VBN/]? (?<trigger> [lemma=be]) @value:Value
     
-    # @variable:Variable [tag=/VBN/]? (?<trigger> [lemma=be]) ("," @value:Value)* (and @value:Value)?
-    # Ex1: "The most important planted cash crops are rice and maize in the SRV"
-    # Ex2: "The most important planted cash crops are rice, tomato, onion and maize in the SRV"
-
-#
+# #
 # [With] Variable Value
 # This is a token pattern.
 #
@@ -59,6 +55,7 @@
     variable:Variable = <cop
     value:Value = <cop nsubj
 
+
 - name: ${label}-cop-6
   priority: ${rulepriority}
   label: ${label}
@@ -67,19 +64,6 @@
     trigger = [lemma=include]
     variable:Variable = /nsubj/
     value:Value = /dobj/
-
-#
-# VARIABLE attached to VALUE
-#
-- name: ${label}-cop-7
-  priority: ${rulepriority}
-  label: ${label}
-  graph: "hybrid"
-  pattern: |
-    trigger = [lemma=be]?
-    variable:Variable = /nmod_such_as/
-    value:Value = /nmod_such_as/
-
 
 #
 # VARIABLE ranged|occurred from|between VALUE and VALUE
@@ -93,3 +77,21 @@
     trigger = [lemma=/range|occur|be/ & tag=/^V/]
     variable:Variable = /nsubj/
     value:Value = /nmod_from|nmod_between|Ax_from|Ax_between/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
