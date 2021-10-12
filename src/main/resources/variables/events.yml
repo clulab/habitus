@@ -65,16 +65,6 @@
     variable:Variable = /nsubj/
     value:Value = /dobj/
 
-
-# - name: ${label}-cop-7
-#   priority: ${rulepriority}
-#   label: ${label}
-#   graph: "hybrid"
-#   pattern: |
-#     trigger = [lemma=be]?
-#     variable:Variable = <compound
-#     value:Value = /compound/
-
 #
 # VARIABLE ranged|occurred from|between VALUE and VALUE
 # This is a syntactic/semantic pattern. Try to use such rules when you can. They generalize better!
