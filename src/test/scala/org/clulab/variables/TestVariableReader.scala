@@ -337,7 +337,7 @@ class TestVariableReader extends FlatSpec with Matchers {
   val sent16_3_1 = "Other crops cultivated include millet, sorghum, maize, cowpea and vegetables"
   sent16_3_1 should "recognize comma separated crops"  in {
     val mentions = getMentions(sent16_3_1)
-    mentions.filter(_.label matches "Assignment") should have size (4)
+    mentions.filter(_.label matches "Assignment") should have size (5)
     var count = 0
     
     for (m <- mentions.filter(_.label matches "Assignment")) {
@@ -428,7 +428,7 @@ class TestVariableReader extends FlatSpec with Matchers {
   val sent17_2 = "Millet, rice, corn and sorghum are the primary food crops grown in Senegal."
   sent17_2 should "recognize comma separated crops"  in {
     val mentions = getMentions(sent17_2)
-    mentions.filter(_.label matches "Assignment") should have size (5)
+    mentions.filter(_.label matches "Assignment") should have size (4)
     var count = 0
     
     for (m <- mentions.filter(_.label matches "Assignment")) {
@@ -519,7 +519,7 @@ class TestVariableReader extends FlatSpec with Matchers {
     val mentions = getMentions(sent_20_6)
     mentions.filter(_.label matches "Assignment") should have size (1)
     mentions.filter(_.label matches "Assignment").foreach({ m =>
-      m.arguments("variable").head.text should be("fertilizer")
+      m.arguments("variable").head.text should be("fertilizer usage")
       m.arguments("value").head.text should equal("ammonium poly-phosphate")
     })
   }
