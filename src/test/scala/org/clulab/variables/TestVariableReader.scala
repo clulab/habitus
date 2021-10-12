@@ -274,6 +274,16 @@ class TestVariableReader extends FlatSpec with Matchers {
     })
   }
 
+    val sent16_0 = "Most farmers in the SRV plant Sahel 108"
+  sent16_0 should "recognize crops attached with be verb "in {
+    val mentions = getMentions(sent16_0)
+    mentions.filter(_.label matches "Assignment") should have size (1)
+    mentions.filter(_.label matches "Assignment").foreach({ m =>
+      m.arguments("variable").head.text should be("plant")
+      m.arguments("value").head.text should equal("Sahel 108")
+    })
+  }
+
   val sent16_1 = "Some farmers use improved variety like Sahel 108"
   sent16_1 should "recognize list of crops"in {
     val mentions = getMentions(sent16_1)
@@ -319,14 +329,14 @@ class TestVariableReader extends FlatSpec with Matchers {
     val mentions = getMentions(sent16_3)
     mentions.filter(_.label matches "Assignment") should have size (1)
     mentions.filter(_.label matches "Assignment").foreach({ m =>
-      m.arguments("variable").head.text should be("cultivated")
+      m.arguments("variable").head.text should be("crops")
       m.arguments("value").head.text should equal("millet")
     })
   }
 
-  val sent16_3 = "Other crops cultivated include millet, sorghum, maize, cowpea and vegetables"
-  sent16_3 should "recognize comma separated crops"  in {
-    val mentions = getMentions(sent16_3)
+  val sent16_3_1 = "Other crops cultivated include millet, sorghum, maize, cowpea and vegetables"
+  sent16_3_1 should "recognize comma separated crops"  in {
+    val mentions = getMentions(sent16_3_1)
     mentions.filter(_.label matches "Assignment") should have size (4)
     var count = 0
     
@@ -418,7 +428,7 @@ class TestVariableReader extends FlatSpec with Matchers {
   val sent17_2 = "Millet, rice, corn and sorghum are the primary food crops grown in Senegal."
   sent17_2 should "recognize comma separated crops"  in {
     val mentions = getMentions(sent17_2)
-    mentions.filter(_.label matches "Assignment") should have size (4)
+    mentions.filter(_.label matches "Assignment") should have size (5)
     var count = 0
     
     for (m <- mentions.filter(_.label matches "Assignment")) {
@@ -473,7 +483,7 @@ class TestVariableReader extends FlatSpec with Matchers {
     })
   }
 
- val sent_20_3 = "The amount of fertilizer N required was averaged at 52 kg ha−1"
+ val sent_20_3 = "The amount of fertilizer N required was averaged at 52 kg ha-1"
   sent_20_3 should "recognize fertilizer [attached to variable]"in {
     val mentions = getMentions(sent_20_3)
     mentions.filter(_.label matches "Assignment") should have size (1)
@@ -499,18 +509,18 @@ class TestVariableReader extends FlatSpec with Matchers {
     mentions.filter(_.label matches "Assignment") should have size (1)
     mentions.filter(_.label matches "Assignment").foreach({ m =>
       m.arguments("variable").head.text should be("fertilizers")
-      m.arguments("value").head.text.get(1) should equal("diammonium phosphate")
+      m.arguments("value").head.text should equal("diammonium phosphate")
     })
   }
 
 
- val sent_20_6 = "Total fertilizer usage was ammonium poly-phosphate on average 152 kg ha–1 in the 1999 and 2000WS"
+ val sent_20_6 = "Total fertilizer usage was ammonium poly-phosphate on average 152 kg ha-1 in the 1999 and 2000WS"
   sent_20_6 should "recognize fertilizer [attached to be verb]"in {
     val mentions = getMentions(sent_20_6)
     mentions.filter(_.label matches "Assignment") should have size (1)
     mentions.filter(_.label matches "Assignment").foreach({ m =>
-      m.arguments("variable").head.text should be("fertilizers")
-      m.arguments("value").head.text.get(1) should equal("ammonium poly-phosphate")
+      m.arguments("variable").head.text should be("fertilizer")
+      m.arguments("value").head.text should equal("ammonium poly-phosphate")
     })
   }
 
@@ -521,17 +531,17 @@ class TestVariableReader extends FlatSpec with Matchers {
     mentions.filter(_.label matches "Assignment") should have size (1)
     mentions.filter(_.label matches "Assignment").foreach({ m =>
       m.arguments("variable").head.text should be("fertilizers")
-      m.arguments("value").head.text.get(1) should equal("diammonium-phosphate")
+      m.arguments("value").head.text should equal("diammonium-phosphate")
     })
   }
 
- val sent_20_6 = "Total fertilizer usage was ammonium poly-phosphate on average 152 kg ha–1 in the 1999 and 2000WS"
-  sent_20_6 should "recognize fertilizer [attached to be verb]"in {
-    val mentions = getMentions(sent_20_6)
+ val sent_20_8 = "Sub-optimal timing of nitrogen fertilizer resulted in yield losses"
+  sent_20_8 should "recognize fertilizer [attached to be var]"in {
+    val mentions = getMentions(sent_20_8)
     mentions.filter(_.label matches "Assignment") should have size (1)
     mentions.filter(_.label matches "Assignment").foreach({ m =>
       m.arguments("variable").head.text should be("fertilizers")
-      m.arguments("value").head.text.get(1) should equal("ammonium poly-phosphate")
+      m.arguments("value").head.text should equal("ammonium poly-phosphate")
     })
   }
 

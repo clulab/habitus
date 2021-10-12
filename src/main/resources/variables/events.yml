@@ -44,7 +44,7 @@
     @variable:Variable (?<trigger> [lemma=/on|in/]) @value:Value
 
 #
-# Syntactic rule for crop 
+# Syntactic rule for crops 
 #
 - name: ${label}-cop-5
   priority: ${rulepriority}
@@ -64,6 +64,16 @@
     trigger = [lemma=include]
     variable:Variable = /nsubj/
     value:Value = /dobj/
+
+
+# - name: ${label}-cop-7
+#   priority: ${rulepriority}
+#   label: ${label}
+#   graph: "hybrid"
+#   pattern: |
+#     trigger = [lemma=be]?
+#     variable:Variable = <compound
+#     value:Value = /compound/
 
 #
 # VARIABLE ranged|occurred from|between VALUE and VALUE
