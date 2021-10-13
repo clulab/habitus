@@ -7,7 +7,7 @@ phosphorus
 P205
 phosphate
 PO4
-K 
+K
 potassium
 K2O
 potash
@@ -44,6 +44,7 @@ ammonium sulfate
 ammonium nitrate sulfate
 anhydrous ammonia
 urea
+diammonium-phosphate
 diammonium phosphate
 18-46-0
 DAP
@@ -56,6 +57,7 @@ dicalcium phosphate
 aqua ammonia
 urea ammonium nitrate
 calcium ammonium nitrate
+ammonium polyphosphate
 ammonium poly-phosphate
 single super phosphate
 triple super phosphate
@@ -96,3 +98,4 @@ compound fertilizer (NPK)
 UAN
 slow release
 controlled release
+mineral
