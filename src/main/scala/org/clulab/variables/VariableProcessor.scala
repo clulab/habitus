@@ -38,20 +38,19 @@ object VariableProcessor {
   val resourcePath = "/variables/master.yml"
   val masterFile = new File(resourceDir, resourcePath.drop(1))
 
-  // TODO: We would like to reload these as well.
-
   // Custom NER for variable reading
   def newLexiconNer(): LexiconNER = {
-    // These are resources.  They cannot be easily reloaded from files.
     val kbs = Seq(
       "variables/FERTILIZER.tsv",
       "variables/CROP.tsv"
     )
+    val isLocal = kbs.forall(new File(resourceDir, _).exists)
     val lexiconNer = LexiconNER(kbs,
       Seq(
         true, // case insensitive match for fertilizers
         true
-      )
+      ),
+      if (isLocal) Some(resourceDir) else None
     )
 
     lexiconNer
