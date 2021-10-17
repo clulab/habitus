@@ -59,17 +59,17 @@ class TestVariableReader extends FlatSpec with Matchers {
     })
   }
 
-  //TODO: ms of year do not captured by our numbers.
-  val sent4 = "Sowing between October 4 and October 14 of 2020 was optimal."
-  sent4 should "recognize sowing date with range Month followed by 4 of year"  in {
-    val mentions = getMentions(sent4)
-    mentions.filter(_.label matches "Assignment") should have size (1)
-    mentions.filter(_.label matches "Assignment").foreach({ m =>
-      m.arguments("variable").head.text should be("Sowing")
-      m.arguments("value").head.text should equal("between October 4 and October 14 of 2020")
-      m.arguments("value").head.norms.get(0) should equal("2020-10-04 -- 2020-10-14")
-    })
-  }
+  // //TODO: ms of year do not captured by our numbers.
+  // val sent4 = "Sowing between October 4 and October 14 of 2020 was optimal."
+  // sent4 should "recognize sowing date with range Month followed by 4 of year"  in {
+  //   val mentions = getMentions(sent4)
+  //   mentions.filter(_.label matches "Assignment") should have size (1)
+  //   mentions.filter(_.label matches "Assignment").foreach({ m =>
+  //     m.arguments("variable").head.text should be("Sowing")
+  //     m.arguments("value").head.text should equal("between October 4 and October 14 of 2020")
+  //     m.arguments("value").head.norms.get(0) should equal("2020-10-04 -- 2020-10-14")
+  //   })
+  // }
 
   val sent5 = "Planting date was October 1."
   sent5 should "recognize sowing date with a date consisting a month followed by 4"  in {
@@ -82,17 +82,17 @@ class TestVariableReader extends FlatSpec with Matchers {
     })
   }
 
-  //TODO: ms of year do not captured by our numbers.
-  val sent6 = "Planting date was October 1 of 2021."
-  sent6 should "recognize sowing date with a date consisting a month followed by day then [of a year]"  in {
-    val mentions = getMentions(sent6)
-    mentions.filter(_.label matches "Assignment") should have size (1)
-    mentions.filter(_.label matches "Assignment").foreach({ m =>
-      m.arguments("variable").head.text should be("Planting date")
-      m.arguments("value").head.text should equal("October 1 of 2021")
-      m.arguments("value").head.norms.get(0) should equal("2021-10-01")
-    })
-  }
+  // //TODO: ms of year do not captured by our numbers.
+  // val sent6 = "Planting date was October 1 of 2021."
+  // sent6 should "recognize sowing date with a date consisting a month followed by day then [of a year]"  in {
+  //   val mentions = getMentions(sent6)
+  //   mentions.filter(_.label matches "Assignment") should have size (1)
+  //   mentions.filter(_.label matches "Assignment").foreach({ m =>
+  //     m.arguments("variable").head.text should be("Planting date")
+  //     m.arguments("value").head.text should equal("October 1 of 2021")
+  //     m.arguments("value").head.norms.get(0) should equal("2021-10-01")
+  //   })
+  // }
 
   val sent7 = "Planting occurred on October 2."
   sent7 should "recognize sowing occurred on with a date consisting a month followed by 4"  in {
@@ -171,28 +171,28 @@ class TestVariableReader extends FlatSpec with Matchers {
     })
   }
 
-  //TODO: ms of year do not captured by our numbers.
-  val sent12 = "Sowing between October 4 and October 14 of 2020 was optimal."
-  sent12 should "recognize sowing range on a Month followed by day of year"  in {
-    val mentions = getMentions(sent12)
-    mentions.filter(_.label matches "Assignment") should have size (1)
-    mentions.filter(_.label matches "Assignment").foreach({ m =>
-      m.arguments("variable").head.text should be("Sowing")
-      m.arguments("value").head.text should equal("between October 4 and October 14 of 2020")
-      m.arguments("value").head.norms.get(0) should equal("2020-10-04 -- 2020-10-14")
-    })
-  }
+  // //TODO: ms of year do not captured by our numbers.
+  // val sent12 = "Sowing between October 4 and October 14 of 2020 was optimal."
+  // sent12 should "recognize sowing range on a Month followed by day of year"  in {
+  //   val mentions = getMentions(sent12)
+  //   mentions.filter(_.label matches "Assignment") should have size (1)
+  //   mentions.filter(_.label matches "Assignment").foreach({ m =>
+  //     m.arguments("variable").head.text should be("Sowing")
+  //     m.arguments("value").head.text should equal("between October 4 and October 14 of 2020")
+  //     m.arguments("value").head.norms.get(0) should equal("2020-10-04 -- 2020-10-14")
+  //   })
+  // }
 
-  val sent12_1 = "Sowing dates between October 4 and October 14, 2020 was optimal."
-  sent12_1 should "recognize sowing range on a Month followed by day of year"  in {
-    val mentions = getMentions(sent12_1)
-    mentions.filter(_.label matches "Assignment") should have size (1)
-    mentions.filter(_.label matches "Assignment").foreach({ m =>
-      m.arguments("variable").head.text should be("Sowing dates")
-      m.arguments("value").head.text should equal("between October 4 and October 14, 2020")
-      m.arguments("value").head.norms.get(0) should equal("2020-10-04 -- 2020-10-14")
-    })
-  }
+  // val sent12_1 = "Sowing dates between October 4 and October 14, 2020 was optimal."
+  // sent12_1 should "recognize sowing range on a Month followed by day of year"  in {
+  //   val mentions = getMentions(sent12_1)
+  //   mentions.filter(_.label matches "Assignment") should have size (1)
+  //   mentions.filter(_.label matches "Assignment").foreach({ m =>
+  //     m.arguments("variable").head.text should be("Sowing dates")
+  //     m.arguments("value").head.text should equal("between October 4 and October 14, 2020")
+  //     m.arguments("value").head.norms.get(0) should equal("2020-10-04 -- 2020-10-14")
+  //   })
+  // }
 
   val sent13 = "Sowing in May, 2019."
   sent13 should "recognize sowing on [no verb attached] a Month followed by day, year"  in {
@@ -260,5 +260,295 @@ class TestVariableReader extends FlatSpec with Matchers {
       m.arguments("value").head.norms.get(0) should equal("2001-04-07")
     })
   }
+
+
+  // Tests for CULTIVARS 
+
+  val sent16 = "The most important planted cash crop is peanut in the SRV."
+  sent16 should "recognize crop attached to be verb "in {
+    val mentions = getMentions(sent16)
+    mentions.filter(_.label matches "Assignment") should have size (1)
+    mentions.filter(_.label matches "Assignment").foreach({ m =>
+      m.arguments("variable").head.text should be("crop")
+      m.arguments("value").head.text should equal("peanut")
+    })
+  }
+
+    val sent16_0 = "Most farmers in the SRV plant Sahel 108"
+  sent16_0 should "recognize crops attached to be verb "in {
+    val mentions = getMentions(sent16_0)
+    mentions.filter(_.label matches "Assignment") should have size (1)
+    mentions.filter(_.label matches "Assignment").foreach({ m =>
+      m.arguments("variable").head.text should be("plant")
+      m.arguments("value").head.text should equal("Sahel 108")
+    })
+  }
+
+ // TODO: Add a rule to catch nmon:like and such as
+
+  // val sent16_1 = "Some farmers use improved variety like Sahel 108"
+  // sent16_1 should "recognize cultivar attached to preposition "in {
+  //   val mentions = getMentions(sent16_1)
+  //   mentions.filter(_.label matches "Assignment") should have size (1)
+  //   mentions.filter(_.label matches "Assignment").foreach({ m =>
+  //     m.arguments("variable").head.text should be("variety")
+  //     m.arguments("value").head.text should equal("Sahel 108")
+  //   })
+  // }
+
+  val sent16_2 = "The productivity of a range of agricultural crops beyond rice"
+  sent16_2 should "recognise cultures preceded by a preposition"in {
+    val mentions = getMentions(sent16_2)
+    mentions.filter(_.label matches "Assignment") should have size (1)
+    mentions.filter(_.label matches "Assignment").foreach({ m =>
+      m.arguments("variable").head.text should be("crops")
+      m.arguments("value").head.text should equal("rice")
+    })
+  }
+
+  // // TODO: Write a rule to capture nmon:like and such as
+  // val sent16_2_1 = "Fertilizer is only available in blends optimized for other crops such as maize"
+  // sent16_2_1 should "recognize crops  preceded by adj + prep "in {
+  //   val mentions = getMentions(sent16_2_1)
+  //   mentions.filter(_.label matches "Assignment") should have size (1)
+  //   mentions.filter(_.label matches "Assignment").foreach({ m =>
+  //     m.arguments("variable").head.text should be("crops")
+  //     m.arguments("value").head.text should equal("maize")
+  //   })
+  // }
+  // val sent16_2_2 = "Staple crops such as rice are characterized by low value"
+  // sent16_2_2 should "recognize crop preceded by adj + prep "in {
+  //   val mentions = getMentions(sent16_2_2)
+  //   mentions.filter(_.label matches "Assignment") should have size (1)
+  //   mentions.filter(_.label matches "Assignment").foreach({ m =>
+  //     m.arguments("variable").head.text should be("crops")
+  //     m.arguments("value").head.text should equal("rice")
+  //   })
+  // }
+
+  val sent16_3 = "Other crops cultivated include millet"
+  sent16_3 should "recognize crops [attached to verb]"in {
+    val mentions = getMentions(sent16_3)
+    mentions.filter(_.label matches "Assignment") should have size (1)
+    mentions.filter(_.label matches "Assignment").foreach({ m =>
+      m.arguments("variable").head.text should be("crops")
+      m.arguments("value").head.text should equal("millet")
+    })
+  }
+
+  val sent16_3_1 = "Other crops cultivated include millet, sorghum, maize, cowpea and vegetables"
+  sent16_3_1 should "recognize comma separated crops"  in {
+    val mentions = getMentions(sent16_3_1)
+    mentions.filter(_.label matches "Assignment") should have size (5)
+    var count = 0
+    
+    for (m <- mentions.filter(_.label matches "Assignment")) {
+      if (count == 0) {
+        m.arguments("variable").head.text should be ("crops")
+        println(m.arguments("value").head.text)
+        m.arguments("value").head.text should equal ("millet")
+      } else if (count == 1) {
+        m.arguments("variable").head.text should be ("crops")
+        m.arguments("value").head.text should equal ("sorghum")
+      } else if (count == 2){
+        m.arguments("variable").head.text should be ("crops")
+        m.arguments("value").head.text should equal ("maize")
+      } else if (count == 3) {
+        m.arguments("variable").head.text should be ("crops")
+        m.arguments("value").head.text should equal ("cowpea")                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+      } else {
+        m.arguments("variable").head.text should be ("crops")
+        m.arguments("value").head.text should equal ("vegetables")
+      }
+      count += 1
+    }
+  }
+
+  val sent16_4 = "In the 1998WS, farmers sowed Jaya between 20 June and 1 July"
+  sent16_4 should "recognize crop attached to var"in {
+    val mentions = getMentions(sent16_4)
+    mentions.filter(_.label matches "Assignment") should have size (1)
+    mentions.filter(_.label matches "Assignment").foreach({ m =>
+      m.arguments("variable").head.text should be("sowed")
+      m.arguments("value").head.text should be("Jaya")
+
+    })
+  }
+
+  val sent16_4_1 = "They chose furthermore to grow only one cultivar groundnut"
+  sent16_4_1 should "recognize other variables for crop such as cultivar"in {
+    val mentions = getMentions(sent16_4_1)
+    mentions.filter(_.label matches "Assignment") should have size (1)
+    mentions.filter(_.label matches "Assignment").foreach({ m =>
+      m.arguments("variable").head.text should be("cultivar")
+      m.arguments("value").head.text should equal("groundnut")
+    })
+  }
+
+  // TODO: I was wondering if this case is for multiple assignments.
+  // Not sure if we can use Syntactic rules here.
+  // May be I need to modifiy the token pattern crop-2 rule
+
+  // Anway a list of crops comma separated is detected
+
+  val sent16_4_2 = "In the SRV, farmers plant Sahel 108, Sahel 150, Sahel 154, Sahel 134, Nerica"
+  sent16_4_2 should "recognize crop [attached to dates]"in {
+    val mentions = getMentions(sent16_4_2)
+    mentions.filter(_.label matches "Assignment") should have size (1)
+    mentions.filter(_.label matches "Assignment").foreach({ m =>
+      m.arguments("variable").head.text should be("plant")
+      m.arguments("value").head.text should equal("Sahel 108") 
+      // m.arguments("value").head.text.get(0) should equal("Sahel 108")
+      // m.arguments("value").head.text.get(1) should equal("Sahel 150")
+      // m.arguments("value").head.text.get(2) should equal("Sahel 154")
+      // m.arguments("value").head.text.get(3) should equal("Sahel 134")
+      // m.arguments("value").head.text.get(4) should equal("Nerica")
+    })
+  }
+
+
+  val sent17_1 = "Peanut, sugarcane and cotton are important cash crops."
+  sent17_1 should "recognize crops comma separated"  in {
+    val mentions = getMentions(sent17_1)
+    mentions.filter(_.label matches "Assignment") should have size (3)
+    var count = 0
+    
+    for (m <- mentions.filter(_.label matches "Assignment")) {
+      if (count == 0) {
+        m.arguments("variable").head.text should be ("crops")
+        println(m.arguments("value").head.text)
+        m.arguments("value").head.text should equal ("Peanut")
+      } else if (count == 1) {
+        m.arguments("variable").head.text should be ("crops")
+        m.arguments("value").head.text should equal ("sugarcane")
+      } else {
+        m.arguments("variable").head.text should be ("crops")
+        m.arguments("value").head.text should equal ("cotton")
+      }
+      count += 1
+    }
+  }
+
+  val sent17_2 = "Millet, rice, corn and sorghum are the primary food crops grown in Senegal."
+  sent17_2 should "recognize comma separated crops"  in {
+    val mentions = getMentions(sent17_2)
+    mentions.filter(_.label matches "Assignment") should have size (4)
+    var count = 0
+    
+    for (m <- mentions.filter(_.label matches "Assignment")) {
+      if (count == 0) {
+        m.arguments("variable").head.text should be ("crops")
+        println(m.arguments("value").head.text)
+        m.arguments("value").head.text should equal ("Millet")
+      } else if (count == 1) {
+        m.arguments("variable").head.text should be ("crops")
+        m.arguments("value").head.text should equal ("rice")
+      } else if (count == 2){
+        m.arguments("variable").head.text should be ("crops")
+        m.arguments("value").head.text should equal ("corn")
+      } else {
+        m.arguments("variable").head.text should be ("crops")
+        m.arguments("value").head.text should equal ("sorghum")
+      }
+      count += 1
+    }
+  }
+
+
+  // Tests for Fertilizer var-val reading
+
+ val sent_20 = "One of the most important farming input is mineral fertilizer"
+  sent_20 should "recognize fertilizer [attached to be verb]"in {
+    val mentions = getMentions(sent_20)
+    mentions.filter(_.label matches "Assignment") should have size (1)
+    mentions.filter(_.label matches "Assignment").foreach({ m =>
+      m.arguments("variable").head.text should be("input")
+      m.arguments("value").head.text should equal("mineral")
+    })
+  }
+
+ val sent_20_1 = "Fertilizer nitrogen (N) has been applied at two or more levels"
+  sent_20_1 should "recognize fertilizer [attached to var]"in {
+    val mentions = getMentions(sent_20_1)
+    mentions.filter(_.label matches "Assignment") should have size (1)
+    mentions.filter(_.label matches "Assignment").foreach({ m =>
+      m.arguments("variable").head.text should be("Fertilizer")
+      m.arguments("value").head.text should equal("nitrogen")
+    })
+  }
+
+ val sent_20_2 = "In fact, use of fertilizer P has declined steadily since 1995"
+  sent_20_2 should "recognize fertilizer [attached to variable label]"in {
+    val mentions = getMentions(sent_20_2)
+    mentions.filter(_.label matches "Assignment") should have size (1)
+    mentions.filter(_.label matches "Assignment").foreach({ m =>
+      m.arguments("variable").head.text should be("fertilizer")
+      m.arguments("value").head.text should equal("P")
+    })
+  }
+
+ val sent_20_3 = "The amount of fertilizer N required was averaged at 52 kg ha-1"
+  sent_20_3 should "recognize fertilizer [attached to variable]"in {
+    val mentions = getMentions(sent_20_3)
+    mentions.filter(_.label matches "Assignment") should have size (1)
+    mentions.filter(_.label matches "Assignment").foreach({ m =>
+      m.arguments("variable").head.text should be("fertilizer")
+      m.arguments("value").head.text should equal("N")
+    })
+  }
+
+ val sent_20_4 = "The most widely used solid inorganic fertilizers are urea, diammonium phosphate and potassium chloride"
+  sent_20_4 should "recognize fertilizer [attached to be verb]"in {
+    val mentions = getMentions(sent_20_4)
+    mentions.filter(_.label matches "Assignment") should have size (1)
+    mentions.filter(_.label matches "Assignment").foreach({ m =>
+      m.arguments("variable").head.text should be("fertilizers")
+      m.arguments("value").head.text should equal("urea")
+    })
+  }
+
+ val sent_20_5 = "The most widely used solid inorganic fertilizers are diammonium phosphate, urea and potassium chloride"
+  sent_20_5 should "recognize fertilizer [attached to be verb]"in {
+    val mentions = getMentions(sent_20_5)
+    mentions.filter(_.label matches "Assignment") should have size (1)
+    mentions.filter(_.label matches "Assignment").foreach({ m =>
+      m.arguments("variable").head.text should be("fertilizers")
+      m.arguments("value").head.text should equal("diammonium phosphate")
+    })
+  }
+
+
+ val sent_20_6 = "Total fertilizer usage was ammonium poly-phosphate on average 152 kg ha-1 in the 1999 and 2000WS"
+  sent_20_6 should "recognize fertilizer [attached to be verb]"in {
+    val mentions = getMentions(sent_20_6)
+    mentions.filter(_.label matches "Assignment") should have size (1)
+    mentions.filter(_.label matches "Assignment").foreach({ m =>
+      m.arguments("variable").head.text should be("fertilizer usage")
+      m.arguments("value").head.text should equal("ammonium poly-phosphate")
+    })
+  }
+
+
+ val sent_20_7 = "However, the most unvalable fertilizer was diammonium-phosphate"
+  sent_20_7 should "recognize fertilizer [attached to be verb]"in {
+    val mentions = getMentions(sent_20_7)
+    mentions.filter(_.label matches "Assignment") should have size (1)
+    mentions.filter(_.label matches "Assignment").foreach({ m =>
+      m.arguments("variable").head.text should be("fertilizer")
+      m.arguments("value").head.text should equal("diammonium-phosphate")
+    })
+  }
+
+// TODO: Look at what rule could capture such sentence
+
+//  val sent_20_8 = "Sub-optimal timing of nitrogen fertilizer resulted in yield losses"
+//   sent_20_8 should "recognize fertilizer [attached to be var]"in {
+//     val mentions = getMentions(sent_20_8)
+//     mentions.filter(_.label matches "Assignment") should have size (1)
+//     mentions.filter(_.label matches "Assignment").foreach({ m =>
+//       m.arguments("variable").head.text should be("fertilizers")
+//       m.arguments("value").head.text should equal("ammonium poly-phosphate")
+//     })
+//   }
 
 }

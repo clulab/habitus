@@ -43,14 +43,14 @@
   label: Variable
   type: token
   pattern: |
-    /(?i)(fertilizer)/ /use|usage/?
+    /(?i)(fertilizer|input)/ /use|usage|application/?
 
 - name: variable-crop
   priority: ${rulepriority}
   label: Variable
   type: token
   pattern: |
-    /(?i)(crop)/
+    /(?i)(crop|cultivar|cultivation|seed|sowed|sown|plant|grown|growing|varieties)/
 
 
 
