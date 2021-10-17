@@ -1,8 +1,9 @@
 package org.clulab.beliefs
 
+import com.typesafe.config.{ConfigFactory, ConfigValueFactory}
 import org.apache.commons.io.FileUtils
 import org.clulab.dynet.Utils
-import org.clulab.odin.{ExtractorEngine, Mention}
+import org.clulab.odin.{ExtractorEngine, Mention, State}
 import org.clulab.openie.entities.{CustomizableRuleBasedFinder, RuleBasedEntityFinder}
 import org.clulab.processors.clu.CluProcessor
 import org.clulab.processors.{Document, Processor}
@@ -19,15 +20,14 @@ class BeliefProcessor(val processor: Processor,
     // pre-processing
     val doc = processor.annotate(text, keepText = false)
 
-    // extract syntactic mentions
+    // extract syntactic mentions, without expansion
     val entityMentions = entityFinder.extract(doc)
-    println("Mentions from the entityFinder:")
-    utils.displayMentions(entityMentions, doc)
-
-    // TODO: add entityMentions to Odin's state
+    //println("Mentions from the entityFinder:")
+    //utils.displayMentions(entityMentions, doc)
 
     // extract mentions from annotated document
-    val eventMentions = extractor.extractFrom(doc).sortBy(m => (m.sentence, m.getClass.getSimpleName))
+    val initialState = State(entityMentions)
+    val eventMentions = extractor.extractFrom(doc, initialState).sortBy(m => (m.sentence, m.getClass.getSimpleName))
 
     (doc, eventMentions)
   }
@@ -39,8 +39,17 @@ object BeliefProcessor {
     Utils.initializeDyNet()
     val processor: Processor = new CluProcessor()
 
-    // the mention finder
-    val finder = CustomizableRuleBasedFinder.fromConfig()
+    // the mention finder, without expansion
+    val config = ConfigFactory.load()
+    val finder = CustomizableRuleBasedFinder.fromConfig(
+      config.withValue(
+        "CustomRuleBasedEntityFinder.maxHops",
+        ConfigValueFactory.fromAnyRef(0)
+      ).withValue(
+        "CustomRuleBasedEntityFinder.entityRulesPath",
+        ConfigValueFactory.fromAnyRef("beliefs/entities.yml")
+      )
+    )
 
     BeliefProcessor(processor, finder)
   }
@@ -57,7 +66,7 @@ object BeliefProcessor {
       // read file from filesystem
       val rules = FileUtils.readFileToString(masterFile, StandardCharsets.UTF_8)
       // creates an extractor engine using the rules and the default actions
-      val extractor = ExtractorEngine(rules, path = Some(resourceDir))
+      val extractor = ExtractorEngine(rules) // , path = Some(resourceDir)) // TODO: do we still need this?
       new BeliefProcessor(processor, finder, extractor)
     } else {
       // read rules from yml file in resources

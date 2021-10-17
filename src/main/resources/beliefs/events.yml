@@ -8,7 +8,7 @@
   graph: "hybrid"
   pattern: |
     trigger = [lemma=/believe/ & tag=/^V/]
-    believer:Mention = /nsubj|A0/
-    belief:Mention = /ccomp|A1/
+    believer:Entity = /nsubj|A0/
+    belief:Entity = /ccomp|A1|dobj/
 
 

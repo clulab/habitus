@@ -15,6 +15,7 @@ package object utils {
       println("Tokens: " + (s.words.indices, s.words, s.tags.get).zipped.mkString(", "))
       println("Entities: " + s.entities.get.mkString(", "))
       println("Norms: " + s.norms.get.mkString(", "))
+      println("Chunks: " + s.chunks.get.mkString(", "))
       printHybridDependencies(s)
       println
 

@@ -4,11 +4,7 @@
 # See Odin manual: https://arxiv.org/pdf/1509.07513.pdf
 #
 
-taxonomy:
-  - Entity:
-      - Mention
-  - Event:
-      - Belief
+taxonomy: beliefs/taxonomy.yml
 
 rules:
   - import: beliefs/events.yml

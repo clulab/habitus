@@ -1,0 +1,10 @@
+- Entity:
+  - NounPhrase
+  - AdjPhrase
+  - VerbPhrase
+
+# references, tables, etc. to avoid in entities
+- Avoid
+
+- Event:
+  - Belief
