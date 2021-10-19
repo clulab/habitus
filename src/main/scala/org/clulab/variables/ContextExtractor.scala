@@ -16,14 +16,21 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
 
   def parse(doc:Document,mentions:Seq[Mention],sentidContext:scala.collection.mutable.Map[Int,contextDetails]) = {
 
+    //output of extractContext is a sequence of MostFreqEntity (sentId,mention, mostFreqEntity)) case classes.
+    // It is a sequence because there can be more than one eventmentions that can occur in the given document
+
+    //todo: load LOC, DATE etc from a list provided by user- once we finalize what all is needed
+    //todo: load 0,1,all from a list provided by user- once we finalize which all we need
     val mostFreqLocation0Sent=extractContext(doc,mentions,0,"LOC")
     val mostFreqLocation1Sent=extractContext(doc,mentions,1,"LOC")
-    val mostFreqLocation=extractContext(doc,mentions,Int.MaxValue,"LOC")
+    val mostFreqLocationOverall=extractContext(doc,mentions,Int.MaxValue,"LOC")
     val mostFreqDate0Sent=extractContext(doc,mentions,0,"DATE")
     val mostFreqDate1Sent=extractContext(doc,mentions,1,"DATE")
-    val mostFreqDATE=extractContext(doc,mentions,Int.MaxValue,"DATE")
+    val mostFreqDATEOverall=extractContext(doc,mentions,Int.MaxValue,"DATE")
 
-    createSentidContext(sentidContext,mostFreqLocation0Sent,mostFreqLocation1Sent,mostFreqLocation,mostFreqDate0Sent,mostFreqDate1Sent,mostFreqDATE)
+
+    //for each event mention, get the sentence id, and map it to a case class called contextDetails, which will have all of mostFreq* information
+    createSentidContext(sentidContext,mostFreqLocation0Sent,mostFreqLocation1Sent,mostFreqLocationOverall,mostFreqDate0Sent,mostFreqDate1Sent,mostFreqDATEOverall)
 
   }
 
@@ -43,8 +50,11 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
                           mostFreqDate1Sent:Seq[MostFreqEntity],
                           mostFreqDate:Seq[MostFreqEntity]): Unit= {
 
-    for ((zeroloc, i) <- (mostFreqLocation0Sent).zipWithIndex) {
-      checkSentIdContextDetails(sentidContext,zeroloc.sentId, contextDetails(zeroloc.mention, zeroloc.mostFreqEntity,
+    //todo assert lengths of all the mostFreq* are same
+    //for each event mention, get the sentence id, and map it to a case class called contextDetails, which will have all of mostFreq* information
+    //zipping through only the list of one mostFreq* since all of them should have same lenghts
+    for ((mostFreq, i) <- (mostFreqLocation0Sent).zipWithIndex) {
+      checkSentIdContextDetails(sentidContext,mostFreq.sentId, contextDetails(mostFreq.mention, mostFreq.mostFreqEntity,
         mostFreqLocation1Sent(i).mostFreqEntity, mostFreqLocation(i).mostFreqEntity,mostFreqDate0Sent(i).mostFreqEntity,
         mostFreqDate1Sent(i).mostFreqEntity, mostFreqDate(i).mostFreqEntity))
     }
@@ -116,7 +126,7 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
     }
     MostFreqEntity(mention.sentence, mention.words.mkString(" "), mostFreqEntity)
   }
-  //for all events, find most the frequent entity (e.g.,Senegal-LOC) within n sentences. note: there can be multiple event mentions per sentence
+  //for each event, find most the frequent X entity (X can be Location , Year etc) within n sentences. note: there can be multiple event mentions per sentence
   def findMostFreqContextEntitiesForAllEvents(mentionContextMap: scala.collection.mutable.Map[EventMention, Seq[entityRelDist]], n:Int, entityType:String):Seq[MostFreqEntity] = {
     mentionContextMap.keys.toSeq.map(key=>findMostFreqContextEntitiesForOneEvent(key,mentionContextMap(key), entityType,n))
   }

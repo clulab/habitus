@@ -50,12 +50,13 @@ package object utils {
           // ``variable`` and ``value`` we access the two through ``arguments`` attribute of the Mention class.
           m => try {
             pw.println(s"${m.arguments("variable").head.text}\t${m.arguments("value").head.text}\t${m.arguments("value")
-              .head.norms.filter(_.length > 2).get(0)}\t${s.getSentenceText}\t$filename\t${Some(context(i)
-              .mostFreqLoc0Sent).get}\t${Some(context(i).mostFreqLoc1Sent).get}\t${Some(context(i)
-              .mostFreqLoc).get}\t${Some(context(i)
-              .mostFreqDate0Sent).get}\t${Some(context(i)
-              .mostFreqDate1Sent).get}\t${Some(context(i)
-              .mostFreqDate).get}")
+              .head.norms.filter(_.length > 2).get(0)}\t${s.getSentenceText}\t$filename\t${
+              Some(context(i).mostFreqLoc0Sent).get}\t${
+              Some(context(i).mostFreqLoc1Sent).get}\t${
+              Some(context(i).mostFreqLoc).get}\t${
+              Some(context(i).mostFreqDate0Sent).get}\t${
+              Some(context(i).mostFreqDate1Sent).get}\t${
+              Some(context(i).mostFreqDate).get}")
           } catch {
             case e: NoSuchElementException => println(s"No normalized value found for ${m.arguments("value").head.text} in sentence ${s.getSentenceText}!")
               e.printStackTrace(System.out)
