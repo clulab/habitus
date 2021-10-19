@@ -13,7 +13,7 @@ class TestContextExtractor extends FlatSpec with Matchers {
 
 //pass1: test sentences which have only one event overall in the document
   val sent1 ="""
-In Matto Grosso  with sowing between 7 and 22 July, in  maturity came in early November ( Tab.I ) .
+In Matto Grosso  with sowing of garlic between 7 and 22 July, in  maturity came in early November ( Tab.I ) .
 In United States , United States  maturity came in early November ( Tab.I ) .
 In Senegal maturity  came in early November ( Tab.I ) for 1995.
 In Senegal maturity  came in early November ( Tab.I ) for 1995.

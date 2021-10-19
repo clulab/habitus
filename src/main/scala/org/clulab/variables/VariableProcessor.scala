@@ -17,12 +17,12 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
     val mentions = extractor.extractFrom(doc).sortBy(m => (m.sentence, m.getClass.getSimpleName))
 
 
-
     //extract contexts:
+    val ce= ContextExtractor()
+
     // sentidContext= a map between sent-id to contexts corresponding to event mentions in that sentence
     // Todo: send context inside mention object itself
     val sentidContext=scala.collection.mutable.Map[Int,contextDetails]()
-    val ce= ContextExtractor()
     ce.parse(doc,mentions,sentidContext)
     (doc, mentions,sentidContext)
   }
