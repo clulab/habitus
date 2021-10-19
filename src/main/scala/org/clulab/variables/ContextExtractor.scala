@@ -15,12 +15,19 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
 
 
   def parse(doc:Document,mentions:Seq[Mention],sentidContext:scala.collection.mutable.Map[Int,contextDetails]) = {
-
+    val searchEntities: List[String] = List("LOC", "DATE", "CROP")
+    val sentenceDistances: List[Int] = List(0, 1, Int.MaxValue)
     //output of extractContext is a sequence of MostFreqEntity (sentId,mention, mostFreqEntity)) case classes.
     // It is a sequence because there can be more than one eventmentions that can occur in the given document
-
-    //todo: load LOC, DATE etc from a list provided by user- once we finalize what all is needed
-    //todo: load 0,1,all from a list provided by user- once we finalize which all we need
+//    var mostFreqLocation0Sent:Seq[MostFreqEntity]=null
+//    for (entity<-searchEntities) {
+//      for(dist<-sentenceDistances) {
+//        dist match
+//          {
+//          case 0=>  extractContext(doc, mentions, dist, entity)
+//        }
+//      }
+//    }
     val mostFreqLocation0Sent=extractContext(doc,mentions,0,"LOC")
     val mostFreqLocation1Sent=extractContext(doc,mentions,1,"LOC")
     val mostFreqLocationOverall=extractContext(doc,mentions,Int.MaxValue,"LOC")
