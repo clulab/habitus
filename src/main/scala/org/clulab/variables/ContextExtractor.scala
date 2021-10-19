@@ -70,7 +70,7 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
     //for each mention find the entity that occurs within n sentences from it.
     val mentionContextMap = getEntityRelDistFromMention(allEventMentions, allContexts)
 
-    //pick entityType from ["LOC","DATE"]; set n=Int.MaxValue to get overall context/frequency in whole document
+    //get seq[MostFreqEntity] where MostFreqEntity=(sentId: Int, mention: String, mostFreqEntity: String)
     findMostFreqContextEntitiesForAllEvents(mentionContextMap, n, entityType)
   }
 
@@ -125,7 +125,7 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
     }
     MostFreqEntity(mention.sentence, mention.words.mkString(" "), mostFreqEntity)
   }
-  //for each event, find most the frequent X entity (X can be Location , Year etc) within n sentences. note: there can be multiple event mentions per sentence
+
   def findMostFreqContextEntitiesForAllEvents(mentionContextMap: scala.collection.mutable.Map[EventMention, Seq[entityRelDist]], n:Int, entityType:String):Seq[MostFreqEntity] = {
     mentionContextMap.keys.toSeq.map(key=>findMostFreqContextEntitiesForOneEvent(key,mentionContextMap(key), entityType,n))
   }
