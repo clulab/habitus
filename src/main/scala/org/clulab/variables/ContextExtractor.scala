@@ -77,20 +77,19 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
   //for each mention find how far away an entity occurs, and no of times it occurs in that sentence
  def getEntityRelDistFromMention(mentionsSentIds: Seq[EventMention], contexts:Seq[entityRelDist])= {
    val mentionsContexts=  scala.collection.mutable.Map[EventMention, Seq[entityRelDist]]()
-   for (mention <- mentionsSentIds)
-   {
+   for (mention <- mentionsSentIds) {
      var contextsPerMention = new ArrayBuffer[entityRelDist]()
-    for (x<-contexts) {
-      val relDistFreq = ArrayBuffer[Array[Int]]()
-      for (y <- x.relDistFreqOfEntity) {
-        //take the absolute value of entities in context, and calculate relative distance to this mention
-        val relDistance = (mention.sentence - y(0)).abs
-        val freq = y(1)
-        relDistFreq += Array(relDistance, freq)
-      }
-      val ctxt = new entityRelDist(x.entityValue, x.nerTag, relDistFreq)
-      contextsPerMention += ctxt
-    }
+     for (x <- contexts) {
+       val relDistFreq = ArrayBuffer[Array[Int]]()
+       for (y <- x.relDistFreqOfEntity) {
+         //take the absolute value of entities in context, and calculate relative distance to this mention
+         val relDistance = (mention.sentence - y(0)).abs
+         val freq = y(1)
+         relDistFreq += Array(relDistance, freq)
+       }
+       val ctxt = new entityRelDist(x.entityValue, x.nerTag, relDistFreq)
+       contextsPerMention += ctxt
+     }
      mentionsContexts += (mention -> (contextsPerMention.toSeq))
    }
    mentionsContexts
@@ -211,33 +210,31 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
     for ((s, i) <- doc.sentences.zipWithIndex) {
       var entityCounter = 0
       val indicesToSkip = ArrayBuffer[Int]()
-        for ((nerTag, word, norm) <- (s.entities.get, s.words, s.norms.get).zipped) {
-          var EntityNameIndex:Option[Entity] = None
-          if (!indicesToSkip.contains(entityCounter)) {
-            if (nerTag == "B-LOC" || nerTag=="B-DATE") {
-              var namedEntityTag = ""
-              var entityName = word.toLowerCase
-              if (nerTag == "B-LOC") {
-                val cleanNerTag = "LOC"
-                val newEntityName=checkForMultipleTokens(nerTag,entityCounter,indicesToSkip,entityName,s)
-                EntityNameIndex=Some(Entity(newEntityName,cleanNerTag,i))
-              }
-              else if (nerTag.contains("B-DATE")) {
-                namedEntityTag = "DATE"
-                val split0 = norm.split('-').head
-                if (split0 != "XXXX" && Try(split0.toInt).isSuccess) {
-                  entityName = split0
-                  EntityNameIndex=Some(Entity(entityName,namedEntityTag,i))
-                }
-              }
-              if (EntityNameIndex.isDefined) {
-                //check if this entity was seen in this sentence before. if yes increase its frequency
-                checkIncreaseFreq(entitySentFreq, EntityNameIndex.get)
-              }
+      for ((nerTag, word, norm) <- (s.entities.get, s.words, s.norms.get).zipped) {
+        var EntityNameIndex: Option[Entity] = None
+        if (!indicesToSkip.contains(entityCounter)) {
+          var namedEntityTag = ""
+          var entityName = word.toLowerCase
+          if (nerTag == "B-LOC") {
+            val cleanNerTag = "LOC"
+            val newEntityName = checkForMultipleTokens(nerTag, entityCounter, indicesToSkip, entityName, s)
+            EntityNameIndex = Some(Entity(newEntityName, cleanNerTag, i))
+          }
+          else if (nerTag.contains("B-DATE")) {
+            namedEntityTag = "DATE"
+            val split0 = norm.split('-').head
+            if (split0 != "XXXX" && Try(split0.toInt).isSuccess) {
+              entityName = split0
+              EntityNameIndex = Some(Entity(entityName, namedEntityTag, i))
             }
           }
-          entityCounter = entityCounter + 1
+          if (EntityNameIndex.isDefined) {
+            //check if this entity was seen in this sentence before. if yes increase its frequency
+            checkIncreaseFreq(entitySentFreq, EntityNameIndex.get)
+          }
         }
+        entityCounter = entityCounter + 1
+      }
     }
     mapEntityToFreq(entitySentFreq)
   }
