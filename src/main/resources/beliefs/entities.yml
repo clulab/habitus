@@ -19,3 +19,12 @@ rules:
       # avoids event triggers, coordinations, refs, etc.
       [chunk='B-ADJP'] [chunk='I-ADJP']*
 
+  - name: simple-vp
+    label: VerbPhrase
+    priority: 1
+    type: token
+    pattern: |
+      # avoids event triggers, coordinations, refs, etc.
+      [chunk='B-VP' & !mention=Avoid]? [chunk='I-VP' & !mention=Avoid]+
+      |
+      [chunk='B-VP' & !mention=Avoid]

@@ -3,7 +3,7 @@ package org.clulab.beliefs
 import com.typesafe.config.{ConfigFactory, ConfigValueFactory}
 import org.apache.commons.io.FileUtils
 import org.clulab.dynet.Utils
-import org.clulab.odin.{ExtractorEngine, Mention, State}
+import org.clulab.odin.{EventMention, ExtractorEngine, Mention, RelationMention, State, TextBoundMention}
 import org.clulab.openie.entities.{CustomizableRuleBasedFinder, RuleBasedEntityFinder}
 import org.clulab.processors.clu.CluProcessor
 import org.clulab.processors.{Document, Processor}
@@ -11,10 +11,34 @@ import org.clulab.utils
 
 import java.io.File
 import java.nio.charset.StandardCharsets
+import scala.collection.JavaConverters.{asJavaIterableConverter, asScalaBufferConverter}
 
 class BeliefProcessor(val processor: Processor,
-                      val entityFinder: RuleBasedEntityFinder,
+                      val entityFinder: CustomizableRuleBasedFinder,
                       val extractor: ExtractorEngine) {
+
+  // fixme: you prob want this to be from a config
+  val maxHops: Int = 3
+
+  def expandArgs(m: Mention): Mention = {
+    def getExpandedArgs(args: Map[String, Seq[Mention]]): Map[String, Seq[Mention]] = {
+      for {
+        (name, argMentions) <- m.arguments
+      } yield (name, argMentions.map(expandMention))
+    }
+
+    m match {
+      case _: TextBoundMention => m   // tbms have no args
+      case rm: RelationMention => rm.copy(arguments = getExpandedArgs(m.arguments))
+      case em: EventMention => em.copy(arguments = getExpandedArgs(m.arguments))
+      case _ => ???
+    }
+  }
+
+  def expandMention(m: Mention): Mention = {
+    entityFinder.expand(m, maxHops)
+  }
+
   def parse(text: String): (Document, Seq[Mention]) = {
 
     // pre-processing
@@ -29,7 +53,12 @@ class BeliefProcessor(val processor: Processor,
     val initialState = State(entityMentions)
     val eventMentions = extractor.extractFrom(doc, initialState).sortBy(m => (m.sentence, m.getClass.getSimpleName))
 
-    (doc, eventMentions)
+    // Expand the arguments, don't allow to cross the trigger
+    val eventTriggers = eventMentions.collect{ case em: EventMention => em.trigger }
+    entityFinder.addToAvoidState(eventTriggers)
+    val expandedMentions = eventMentions.map(expandArgs)
+
+    (doc, expandedMentions)
   }
 }
 
@@ -41,6 +70,7 @@ object BeliefProcessor {
 
     // the mention finder, without expansion
     val config = ConfigFactory.load()
+    val invalidOutgoing = config.getList("CustomRuleBasedEntityFinder.invalidOutgoing").asScala ++ Seq("mark")
     val finder = CustomizableRuleBasedFinder.fromConfig(
       config.withValue(
         "CustomRuleBasedEntityFinder.maxHops",
@@ -48,13 +78,22 @@ object BeliefProcessor {
       ).withValue(
         "CustomRuleBasedEntityFinder.entityRulesPath",
         ConfigValueFactory.fromAnyRef("beliefs/entities.yml")
+      ).withValue(
+        "CustomRuleBasedEntityFinder.ensureBaseTagNounVerb",
+        ConfigValueFactory.fromAnyRef("false")
+      ).withValue(
+        "CustomRuleBasedEntityFinder.avoidRulesPath",
+        ConfigValueFactory.fromAnyRef("beliefs/avoid.yml")
+      ).withValue(
+        "CustomRuleBasedEntityFinder.invalidOutgoing",
+          ConfigValueFactory.fromAnyRef(invalidOutgoing.asJava)
       )
     )
 
     BeliefProcessor(processor, finder)
   }
 
-  def apply(processor: Processor, finder: RuleBasedEntityFinder): BeliefProcessor = {
+  def apply(processor: Processor, finder: CustomizableRuleBasedFinder): BeliefProcessor = {
     // get current working directory
     val cwd = new File(System.getProperty("user.dir"))
     // Find resource dir from project root.
