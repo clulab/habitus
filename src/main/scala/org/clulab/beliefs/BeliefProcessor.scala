@@ -20,23 +20,23 @@ class BeliefProcessor(val processor: Processor,
   // fixme: you prob want this to be from a config
   val maxHops: Int = 3
 
-  def expandArgs(m: Mention): Mention = {
-    def getExpandedArgs(args: Map[String, Seq[Mention]]): Map[String, Seq[Mention]] = {
+  def expandArgs(m: Mention, avoid: State): Mention = {
+    def getExpandedArgs(args: Map[String, Seq[Mention]], avoid: State): Map[String, Seq[Mention]] = {
       for {
-        (name, argMentions) <- m.arguments
-      } yield (name, argMentions.map(expandMention))
+        (name, argMentions) <- args
+      } yield (name, argMentions.map(expandMention(_, avoid)))
     }
 
     m match {
       case _: TextBoundMention => m   // tbms have no args
-      case rm: RelationMention => rm.copy(arguments = getExpandedArgs(m.arguments))
-      case em: EventMention => em.copy(arguments = getExpandedArgs(m.arguments))
+      case rm: RelationMention => rm.copy(arguments = getExpandedArgs(m.arguments, avoid))
+      case em: EventMention => em.copy(arguments = getExpandedArgs(m.arguments, avoid))
       case _ => ???
     }
   }
 
-  def expandMention(m: Mention): Mention = {
-    entityFinder.expand(m, maxHops)
+  def expandMention(m: Mention, avoid: State): Mention = {
+    entityFinder.expand(m, maxHops, avoid)
   }
 
   def parse(text: String): (Document, Seq[Mention]) = {
@@ -55,8 +55,8 @@ class BeliefProcessor(val processor: Processor,
 
     // Expand the arguments, don't allow to cross the trigger
     val eventTriggers = eventMentions.collect{ case em: EventMention => em.trigger }
-    entityFinder.addToAvoidState(eventTriggers)
-    val expandedMentions = eventMentions.map(expandArgs)
+
+    val expandedMentions = eventMentions.map(expandArgs(_, State(eventTriggers)))
 
     (doc, expandedMentions)
   }
