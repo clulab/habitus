@@ -2,29 +2,45 @@ package org.clulab.variables
 
 import org.clulab.utils._
 
-/** Interactive shell for variable reading */
-class VariableShell() extends Shell {
-  println("Creating VariableProcessor...\n")
-  private var vp: VariableProcessor = VariableProcessor()
+class ReloadableVariableProcessor() {
+  protected var variableProcessor: VariableProcessor = VariableProcessor()
 
-  def reload(): Unit = {
+  def get: VariableProcessor = variableProcessor
+
+  def reload(): Unit = variableProcessor = variableProcessor.reloaded
+}
+
+/** Interactive shell for variable reading */
+class VariableShell() extends ReloadableShell {
+  println("Creating VariableProcessor...\n")
+  private val vp: ReloadableVariableProcessor = new ReloadableVariableProcessor()
+
+  override def reload(): Unit = {
     println("Reloading VariableProcessor...")
-    vp = VariableProcessor(vp.processor)
+    try {
+      vp.reload()
+    }
+    catch {
+      case throwable: Throwable =>
+        println(s"The variable processor could not be reloaded!")
+        throwable.printStackTrace
+    }
   }
 
   override def work(text: String): Unit = {
     // the actual reading
-    val (doc, mentions) = vp.parse(text)
+    val (doc, mentions) = vp.get.parse(text)
 
     // debug display the mentions
     displayMentions(mentions, doc)
   }
 
   override def mkMenu(): Menu = {
+    // val lineReader = new IdeReader("(Habitus)>>> ")
     val lineReader = new CliReader("(Habitus)>>> ", "user.home", ".habitusshellhistory")
     val mainMenuItems = Seq(
       new HelpMenuItem(":help", "show commands"),
-      new SimpleMainMenuItem(":reload", "reload the variable processor", reload _),
+      new SafeMainMenuItem(":reload", "reload the variable processor", reload _),
       new ExitMenuItem(":exit", "exit system")
     )
     val defaultMenuItem = new SafeDefaultMenuItem(work)
@@ -34,6 +50,5 @@ class VariableShell() extends Shell {
 }
 
 object VariableShell extends App {
-  val sh = new VariableShell
-  sh.shell()
+  new VariableShell().shell()
 }

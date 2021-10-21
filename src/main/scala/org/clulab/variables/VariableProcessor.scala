@@ -1,15 +1,23 @@
 package org.clulab.variables
 
 import java.io.File
-import java.nio.charset.StandardCharsets
-import org.apache.commons.io.FileUtils
 import org.clulab.dynet.Utils
 import org.clulab.odin.{ExtractorEngine, Mention}
-import org.clulab.processors.{Document, Processor}
+import org.clulab.processors.Document
 import org.clulab.processors.clu.CluProcessor
 import org.clulab.sequences.LexiconNER
+import org.clulab.utils.FileUtils
 
-class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine) {
+class VariableProcessor(val processor: CluProcessor, val extractor: ExtractorEngine) {
+
+  def reloaded(): VariableProcessor = {
+    val newLexiconNer = VariableProcessor.newLexiconNer()
+    val newProcessor = processor.copy(optionalNEROpt = Some(Some(newLexiconNer)))
+    val newExtractorEngine = VariableProcessor.newExtractorEngine()
+
+    new VariableProcessor(newProcessor, newExtractorEngine)
+  }
+
   def parse(text: String): (Document, Seq[Mention]) = {
 
     // pre-processing
@@ -23,22 +31,53 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
 }
 
 object VariableProcessor {
+  val resourceDir = {
+    val cwd = new File(System.getProperty("user.dir"))
+    new File(cwd, "src/main/resources")
+  }
+  val resourcePath = "/variables/master.yml"
+  val masterFile = new File(resourceDir, resourcePath.drop(1))
 
-  def apply(): VariableProcessor = {
-    // Custom NER for variable reading
+  // Custom NER for variable reading
+  def newLexiconNer(): LexiconNER = {
     val kbs = Seq(
       "variables/FERTILIZER.tsv",
       "variables/CROP.tsv"
     )
+    val isLocal = kbs.forall(new File(resourceDir, _).exists)
     val lexiconNer = LexiconNER(kbs,
       Seq(
         true, // case insensitive match for fertilizers
         true
-      )
+      ),
+      if (isLocal) Some(resourceDir) else None
     )
+
+    lexiconNer
+  }
+
+  def newExtractorEngine(): ExtractorEngine = {
+    // We usually want to reload rules during development,
+    // so we try to load them from the filesystem first, then jar.
+    if (masterFile.exists()) {
+      // read file from filesystem
+      val rules = FileUtils.getTextFromFile(masterFile)
+      // creates an extractor engine using the rules and the default actions
+      ExtractorEngine(rules, ruleDir = Some(resourceDir))
+    }
+    else {
+      // read rules from yml file in resources
+      val rules = FileUtils.getTextFromResource(resourcePath)
+      // creates an extractor engine using the rules and the default actions
+      ExtractorEngine(rules)
+    }
+  }
+
+  def apply(): VariableProcessor = {
     // create the processor
     Utils.initializeDyNet()
-    val processor: Processor = new CluProcessor(optionalNER = Some(lexiconNer))
+    val lexiconNer = newLexiconNer()
+    val processor = new CluProcessor(optionalNER = Some(lexiconNer))
     VariableProcessor(processor)
   }
 
@@ -48,29 +87,7 @@ object VariableProcessor {
     * @param processor
     * @return
     */
-  def apply(processor: Processor): VariableProcessor = {
-    // get current working directory
-    val cwd = new File(System.getProperty("user.dir"))
-    // Find resource dir from project root.
-    val resource_dir = new File(cwd, "src/main/resources")
-    val master_file = new File(resource_dir, "variables/master.yml")
-    // We usually want to reload rules during development,
-    // so we try to load them from the filesystem first, then jar.
-    if (master_file.exists()) {
-      // read file from filesystem
-      val rules = FileUtils.readFileToString(master_file, StandardCharsets.UTF_8)
-      // creates an extractor engine using the rules and the default actions
-      val extractor = ExtractorEngine(rules, path = Some(resource_dir))
-      new VariableProcessor(processor, extractor)
-    } else {
-      // read rules from yml file in resources
-      val source = io.Source.fromURL(getClass.getResource("/variables/master.yml"))
-      val rules = source.mkString
-      source.close()
-      // creates an extractor engine using the rules and the default actions
-      val extractor = ExtractorEngine(rules)
-      new VariableProcessor(processor, extractor)
-    }
+  def apply(processor: CluProcessor): VariableProcessor = {
+    new VariableProcessor(processor, newExtractorEngine())
   }
-
 }
