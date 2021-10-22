@@ -27,6 +27,7 @@ object VariableReader {
       println(s"going to parse input file: $filename")
       val (doc, mentions,context)  = vp.parse(text)
       println(s"Writing mentions from doc ${filename} to $outputFile")
+      //todo: simplify context- here you will find sent from location 0 etc
       outputMentionsToTSV(mentions, doc, context, filename, pw)
       // to not overpopulate the memory. Flush findings once for each document.
       pw.flush()

@@ -31,6 +31,7 @@ package object utils {
       println("=" * 50)
     }
   }
+  //todo:context details class should store all histograms
   case class contextDetails( mention: String,mostFreqLoc0Sent: String,mostFreqLoc1Sent: String, mostFreqLoc: String,
                              mostFreqDate0Sent: String,mostFreqDate1Sent: String, mostFreqDate: String)
   // extract needed information and write them to tsv in a desired format. Return nothing here!

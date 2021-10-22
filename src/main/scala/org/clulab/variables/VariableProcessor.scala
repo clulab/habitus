@@ -23,6 +23,8 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
     // sentidContext= a map between sent-id to contexts corresponding to event mentions in that sentence
     // Todo: send context inside mention object itself
     val sentidContext=scala.collection.mutable.Map[Int,contextDetails]()
+
+    //todo: extraction/compressing into loc in 0 distance should happen in output
     ce.parse(doc,mentions,sentidContext)
     (doc, mentions,sentidContext)
   }
