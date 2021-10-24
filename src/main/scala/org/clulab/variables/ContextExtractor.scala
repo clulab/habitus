@@ -63,44 +63,48 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
   }
 
   def extractContext(doc: Document, mentions:Seq[Mention], n:Int, entityType:String ):Seq[MostFreqEntity]= {
-    //collect all event entities only (and not text bound ones)
+    //collect all event mentions only (and not text bound ones)
     val allEventMentions = mentions.collect { case m: EventMention => m }
 
-    //get sequence of all Entity (refer  case class Entity)
+    //get histogram of all Entities (refer  case class Entity)
+    //e.g.,{Senegal, LOC, {[1, 1], [4, 2]}}- The Location Sengal occurs in sentence 1 once,in sentence 4, 2 times setc
     val allContexts = getEntityFreqPerSent(doc)
 
-    //for each mention find the entity that occurs within n sentences from it.
+    //compressing part: for each mention find the entity that occurs within n sentences from it.
+    //todo :this code should not be in the parser/extractor
     val mentionContextMap = getEntityRelDistFromMention(allEventMentions, allContexts)
 
     //for returning all context related data: get seq[MostFreqEntity] where MostFreqEntity=(sentId: Int, mention: String, mostFreqEntity: String)
     // todo: return within Event mention argument
-    //this code should not be in the parser/extractor
+
     findMostFreqContextEntitiesForAllEvents(mentionContextMap, n, entityType)
   }
 
   //for each mention find how far away an entity occurs, and no of times it occurs in that sentence
- def getEntityRelDistFromMention(mentionsSentIds: Seq[EventMention], contexts:Seq[entityAbsDist])= {
-   val mentionsContexts=  scala.collection.mutable.Map[EventMention, Seq[entityAbsDist]]()
+ def getEntityRelDistFromMention(mentionsSentIds: Seq[EventMention], contexts:Seq[entityDistFreq])= {
+   val mentionsContexts=  scala.collection.mutable.Map[EventMention, Seq[entityDistFreq]]()
    for (mention <- mentionsSentIds) {
-     var contextsPerMention = new ArrayBuffer[entityAbsDist]()
-     for (x <- contexts) {
+     var contextsPerMention = new ArrayBuffer[entityDistFreq]()
+     for (context <- contexts) {
        val relDistFreq = ArrayBuffer[(Int,Int)]()
-       //todo rename as distance
-       //todo use a case class or tuple instead of y(0)
-       //dont use x or y
-       for (y <- x.relDistFreqOfEntity) {
-         //take the absolute value of entities in context, and calculate relative distance to this mention
-         val relDistance = (mention.sentence - y._1).abs
-         //second value of the tuple is the freq: how often does that entity occur in this sentence
-         val freq = y._2
-         //todo: replace this with a Tuple2
+       for (absDistFreq <- context.entityDistFrequencies) {
+         //first value of tuple absDistFreq is abs distance. use it to calculate relative distance to this mention
+         val relDistance = (mention.sentence - absDistFreq._1).abs
+         //second value of the tuple absDistFreq is the freq: how often does that entity occur in this sentence
+         val freq = absDistFreq._2
          relDistFreq += (relDistance, freq)
+         context.entityDistFrequencies=relDistFreq
        }
-       val ctxt = new entityAbsDist(x.entityValue, x.nerTag, relDistFreq)
+       //same entityAbsDistFreq is being reused here. But diff is we store relative distance now instead of absolute
+       //val ctxt = new entityDistFreq(context.entityValue, context.nerTag, relDistFreq)
        contextsPerMention += ctxt
      }
-     val a = Map("context"-> (contextsPerMention.toSeq))
-     mention.arguments=a
+     //todo: piggy back as payload on Entity class
+//     val a = Map("context"-> (contextsPerMention.toSeq))
+//     mention.arguments=a
+
+     //create a map between each mention and its corresponding sequence. this will be useful in the reduce/compression part
+     mentionsContexts += (mention -> (contextsPerMention.toSeq))
    }
    mentionsContexts
  }
@@ -116,12 +120,12 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
   }
   case class MostFreqEntity(sentId: Int, mention: String, mostFreqEntity: String)
 
-  def findMostFreqContextEntitiesForOneEvent(mention:EventMention, contexts:Seq[entityAbsDist], entityType:String, n:Int):MostFreqEntity= {
+  def findMostFreqContextEntitiesForOneEvent(mention:EventMention, contexts:Seq[entityDistFreq], entityType:String, n:Int):MostFreqEntity= {
     var entityFreq = scala.collection.mutable.Map[String, Int]()
     var maxFreq = 0
     var mostFreqEntity = ""
     for (ctxt <- contexts) {
-      for (sentFreq <- ctxt.relDistFreqOfEntity) {
+      for (sentFreq <- ctxt.entityDistFrequencies) {
         val sentDist = sentFreq(0)
         val freq = sentFreq(1)
         if (sentDist <= n && ctxt.nerTag.contains(entityType)) {
@@ -136,7 +140,7 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
     MostFreqEntity(mention.sentence, mention.words.mkString(" "), mostFreqEntity)
   }
 
-  def findMostFreqContextEntitiesForAllEvents(mentionContextMap: scala.collection.mutable.Map[EventMention, Seq[entityAbsDist]], n:Int, entityType:String):Seq[MostFreqEntity] = {
+  def findMostFreqContextEntitiesForAllEvents(mentionContextMap: scala.collection.mutable.Map[EventMention, Seq[entityDistFreq]], n:Int, entityType:String):Seq[MostFreqEntity] = {
     mentionContextMap.keys.toSeq.map(key=>findMostFreqContextEntitiesForOneEvent(key,mentionContextMap(key), entityType,n))
   }
 
@@ -145,7 +149,7 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
   case class entityNameEntity(entityValue: String, nerTag: String)
 
   //for each entity, find which sentence they occur in an how many times
-  def mapEntityToFreq(entitySentFreq: scala.collection.mutable.Map[Entity, Int]):Seq[entityAbsDist]  = {
+  def mapEntityToFreq(entitySentFreq: scala.collection.mutable.Map[Entity, Int]):Seq[entityDistFreq]  = {
     val sentIdFreq= scala.collection.mutable.Map[entityNameEntity, ArrayBuffer[Array[Int]]]()
     for (key <- entitySentFreq.keys) {
       val entityName = key.entityValue
@@ -182,14 +186,14 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
 
   def convertMapToSeq(sentIdFreq: scala.collection.mutable.Map[entityNameEntity, ArrayBuffer[Array[Int]]])=
   {
-    var contexts = new ArrayBuffer[entityAbsDist]()
+    var contexts = new ArrayBuffer[entityDistFreq]()
     for (key <- sentIdFreq.keys) {
-      contexts += new entityAbsDist(key.entityValue, key.nerTag,sentIdFreq(key))
+      contexts += new entityDistFreq(key.entityValue, key.nerTag,sentIdFreq(key))
     }
     contexts.toSeq
   }
 
-  //details of each entity: name,nertag, index of sentence it was found in
+  //details of each entity: name,ner tag, index of sentence it was found in
   case class Entity(entityValue: String, tag: String, sentIdx: Int)
 
   // IF an LOC entity has multiple tokens. (e.g., United States of America.) merge them to form one entityName
@@ -214,17 +218,20 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
     newEntityName
   }
 
-  //For each entity find which sentence it occurs in and its overall frequency
-  def getEntityFreqPerSent(doc: Document): Seq[entityAbsDist] = {
+  //For each entity find which sentence it occurs in and its frequency
+  def getEntityFreqPerSent(doc: Document): Seq[entityDistFreq] = {
+    //for each sentence how many times does this entity occur
     var entitySentFreq: scala.collection.mutable.Map[Entity, Int] = Map()
     for ((s, i) <- doc.sentences.zipWithIndex) {
       var entityCounter = 0
+      //some indices have to be skipped if the entity has multiple tokens e.g.,"United States of America"
       val indicesToSkip = ArrayBuffer[Int]()
       for ((nerTag, word, norm) <- (s.entities.get, s.words, s.norms.get).zipped) {
         var EntityNameIndex: Option[Entity] = None
         if (!indicesToSkip.contains(entityCounter)) {
           var namedEntityTag = ""
           var entityName = word.toLowerCase
+          //todo: this needs to be passed from user
           if (nerTag == "B-LOC") {
             val cleanNerTag = "LOC"
             val newEntityName = checkForMultipleTokens(nerTag, entityCounter, indicesToSkip, entityName, s)
@@ -243,9 +250,11 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
             checkIncreaseFreq(entitySentFreq, EntityNameIndex.get)
           }
         }
+        //a counter to keep track of number of entities seen in this sentence- useful in skipindex for multiple tokens
         entityCounter = entityCounter + 1
       }
     }
+    //calculate frequency across all sentences, return as entityAbsDistFreq (e.g.,{Senegal, LOC, {[1, 1], [4, 2]}})
     mapEntityToFreq(entitySentFreq)
   }
 }
@@ -277,10 +286,6 @@ object ContextExtractor {
     new ContextExtractor(processor, extractor)
   }
 }
-
-//For each entity what is relDistFreqOfEntity
-//relDistFreqOfEntity= [int a,int b], where a=relative distance from the nearest mention
-// and b=no of times that context word occurs in that sentence. e.g,: Senegal=[0,3]- means Senegal occurs thrice in sentence 0
-//todo replace Array with Tuple2[Int,Int]
-//todo rename relative dist to absolute
-class entityAbsDist(var entityValue: String, var nerTag: String, val relDistFreqOfEntity:ArrayBuffer[(Int,Int)])
+// histogram of all Entities
+//e.g.,{Senegal, LOC, {[1, 1], [4, 2]}}- The Location Sengal occurs in sentence 1 once,in sentence 4, 2 times setc
+class entityDistFreq(var entityValue: String, var nerTag: String, val entityDistFrequencies:ArrayBuffer[(Int,Int)])
