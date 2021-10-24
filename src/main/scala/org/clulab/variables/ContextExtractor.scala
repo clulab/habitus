@@ -69,7 +69,7 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
     //get histogram of all Entities (refer  case class Entity)
     //e.g.,{Senegal, LOC, {[1, 1], [4, 2]}}- The Location Sengal occurs in sentence 1 once,in sentence 4, 2 times setc
     val allContexts = getEntityFreqPerSent(doc)
-
+ 
     //compressing part: for each mention find the entity that occurs within n sentences from it.
     //todo :this code should not be in the parser/extractor
     val mentionContextMap = getEntityRelDistFromMention(allEventMentions, allContexts)
