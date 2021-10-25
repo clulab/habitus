@@ -4,7 +4,7 @@ import com.typesafe.config.{ConfigFactory, ConfigValueFactory}
 import org.apache.commons.io.FileUtils
 import org.clulab.dynet.Utils
 import org.clulab.odin.{EventMention, ExtractorEngine, Mention, RelationMention, State, TextBoundMention}
-import org.clulab.openie.entities.{CustomizableRuleBasedFinder, RuleBasedEntityFinder}
+import org.clulab.openie.entities.CustomizableRuleBasedFinder
 import org.clulab.processors.clu.CluProcessor
 import org.clulab.processors.{Document, Processor}
 import org.clulab.utils
@@ -20,11 +20,11 @@ class BeliefProcessor(val processor: Processor,
   // fixme: you prob want this to be from a config
   val maxHops: Int = 3
 
-  def expandArgs(m: Mention): Mention = {
+  def expandArgs(m: Mention, avoid: State): Mention = {
     def getExpandedArgs(args: Map[String, Seq[Mention]]): Map[String, Seq[Mention]] = {
       for {
-        (name, argMentions) <- m.arguments
-      } yield (name, argMentions.map(expandMention))
+        (name, argMentions) <- args
+      } yield (name, argMentions.map(m => entityFinder.expand(m, maxHops, avoid)))
     }
 
     m match {
@@ -33,10 +33,6 @@ class BeliefProcessor(val processor: Processor,
       case em: EventMention => em.copy(arguments = getExpandedArgs(m.arguments))
       case _ => ???
     }
-  }
-
-  def expandMention(m: Mention): Mention = {
-    entityFinder.expand(m, maxHops)
   }
 
   def parse(text: String): (Document, Seq[Mention]) = {
@@ -55,8 +51,8 @@ class BeliefProcessor(val processor: Processor,
 
     // Expand the arguments, don't allow to cross the trigger
     val eventTriggers = eventMentions.collect{ case em: EventMention => em.trigger }
-    entityFinder.addToAvoidState(eventTriggers)
-    val expandedMentions = eventMentions.map(expandArgs)
+
+    val expandedMentions = eventMentions.map(expandArgs(_, State(eventTriggers)))
 
     (doc, expandedMentions)
   }
