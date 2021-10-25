@@ -284,17 +284,15 @@ class TestVariableReader extends FlatSpec with Matchers {
     })
   }
 
- // TODO: Add a rule to catch nmon:like and such as
-
-  // val sent16_1 = "Some farmers use improved variety like Sahel 108"
-  // sent16_1 should "recognize cultivar attached to preposition "in {
-  //   val mentions = getMentions(sent16_1)
-  //   mentions.filter(_.label matches "Assignment") should have size (1)
-  //   mentions.filter(_.label matches "Assignment").foreach({ m =>
-  //     m.arguments("variable").head.text should be("variety")
-  //     m.arguments("value").head.text should equal("Sahel 108")
-  //   })
-  // }
+  val sent16_1 = "Some farmers use variety like Sahel 108"
+  sent16_1 should "recognize cultivar attached to preposition "in {
+    val mentions = getMentions(sent16_1)
+    mentions.filter(_.label matches "Assignment") should have size (1)
+    mentions.filter(_.label matches "Assignment").foreach({ m =>
+      m.arguments("variable").head.text should be("variety")
+      m.arguments("value").head.text should equal("Sahel 108")
+    })
+  }
 
   val sent16_2 = "The productivity of a range of agricultural crops beyond rice"
   sent16_2 should "recognise cultures preceded by a preposition"in {
@@ -306,29 +304,48 @@ class TestVariableReader extends FlatSpec with Matchers {
     })
   }
 
-  // // TODO: Write a rule to capture nmon:like and such as
-  // val sent16_2_1 = "Fertilizer is only available in blends optimized for other crops such as maize"
-  // sent16_2_1 should "recognize crops  preceded by adj + prep "in {
-  //   val mentions = getMentions(sent16_2_1)
-  //   mentions.filter(_.label matches "Assignment") should have size (1)
-  //   mentions.filter(_.label matches "Assignment").foreach({ m =>
-  //     m.arguments("variable").head.text should be("crops")
-  //     m.arguments("value").head.text should equal("maize")
-  //   })
-  // }
-  // val sent16_2_2 = "Staple crops such as rice are characterized by low value"
-  // sent16_2_2 should "recognize crop preceded by adj + prep "in {
-  //   val mentions = getMentions(sent16_2_2)
-  //   mentions.filter(_.label matches "Assignment") should have size (1)
-  //   mentions.filter(_.label matches "Assignment").foreach({ m =>
-  //     m.arguments("variable").head.text should be("crops")
-  //     m.arguments("value").head.text should equal("rice")
-  //   })
-  // }
-
-  val sent16_3 = "Other crops cultivated include millet"
-  sent16_3 should "recognize crops [attached to verb]"in {
+  val sent16_3 = "In the SRV where irrigated rice is the most common grown crop"
+  sent16_3 should "recognize crop attached to be verb"in {
     val mentions = getMentions(sent16_3)
+    mentions.filter(_.label matches "Assignment") should have size (1)
+    mentions.filter(_.label matches "Assignment").foreach({ m =>
+      m.arguments("variable").head.text should be("crop")
+      m.arguments("value").head.text should equal("rice") 
+    })
+  }
+
+  val sent16_2_1 = "Farmers use cultivar such as sugarcane which are planted on 80 and 20 percent of total area"
+  sent16_2_1 should "recognize crops  preceded by adj + prep "in {
+    val mentions = getMentions(sent16_2_1)
+    mentions.filter(_.label matches "Assignment") should have size (1)
+    mentions.filter(_.label matches "Assignment").foreach({ m =>
+      m.arguments("variable").head.text should be("cultivar")
+      m.arguments("value").head.text should equal("sugarcane")
+    })
+  }
+  val sent16_2_2 = "AfricaRice, a CGIAR research center, developed the seed Sahel 108"
+  sent16_2_2 should "recognize crop preceded by adj + prep "in {
+    val mentions = getMentions(sent16_2_2)
+    mentions.filter(_.label matches "Assignment") should have size (1)
+    mentions.filter(_.label matches "Assignment").foreach({ m =>
+      m.arguments("variable").head.text should be("seed")
+      m.arguments("value").head.text should equal("Sahel 108")
+    })
+  }
+
+  val sent16_2_3 = "Farmers preferred to use short duration rice varieties like Sahel 108"
+  sent16_2_3 should "recognize crop preceded by adj + prep "in {
+    val mentions = getMentions(sent16_2_3)
+    mentions.filter(_.label matches "Assignment") should have size (1)
+    mentions.filter(_.label matches "Assignment").foreach({ m =>
+      m.arguments("variable").head.text should be("varieties")
+      m.arguments("value").head.text should equal("Sahel 108")
+    })
+  }
+
+  val sent16_2_4 = "Other crops cultivated include millet"
+  sent16_2_4 should "recognize crops [attached to verb]" in {
+    val mentions = getMentions(sent16_2_4)
     mentions.filter(_.label matches "Assignment") should have size (1)
     mentions.filter(_.label matches "Assignment").foreach({ m =>
       m.arguments("variable").head.text should be("crops")
@@ -406,7 +423,6 @@ class TestVariableReader extends FlatSpec with Matchers {
     })
   }
 
-
   val sent17_1 = "Peanut, sugarcane and cotton are important cash crops."
   sent17_1 should "recognize crops comma separated"  in {
     val mentions = getMentions(sent17_1)
@@ -454,6 +470,44 @@ class TestVariableReader extends FlatSpec with Matchers {
     }
   }
 
+  val sent17_3 = "Tomato or onion were the two most labour-consuming crops"
+  sent17_3 should "recognize OR/AND separated crops"  in {
+    val mentions = getMentions(sent17_3)
+    mentions.filter(_.label matches "Assignment") should have size (2)
+    var count = 0
+    
+    for (m <- mentions.filter(_.label matches "Assignment")) {
+      if (count == 0) {
+        m.arguments("variable").head.text should be ("crops")
+        println(m.arguments("value").head.text)
+        m.arguments("value").head.text should equal ("Tomato")
+      } else {
+        m.arguments("variable").head.text should be ("crops")
+        m.arguments("value").head.text should equal ("onion")
+      }
+      count += 1
+    }
+  }
+
+
+  val sent17_4 = "Onion and tomato were the most profitable crops."
+  sent17_4 should "recognize OR/AND separated crops"  in {
+    val mentions = getMentions(sent17_4)
+    mentions.filter(_.label matches "Assignment") should have size (2)
+    var count = 0
+    
+    for (m <- mentions.filter(_.label matches "Assignment")) {
+      if (count == 0) {
+        m.arguments("variable").head.text should be ("crops")
+        println(m.arguments("value").head.text)
+        m.arguments("value").head.text should equal ("Onion")
+      } else {
+        m.arguments("variable").head.text should be ("crops")
+        m.arguments("value").head.text should equal ("tomato")
+      }
+      count += 1
+    }
+  }
 
   // Tests for Fertilizer var-val reading
 
@@ -539,16 +593,25 @@ class TestVariableReader extends FlatSpec with Matchers {
     })
   }
 
-// TODO: Look at what rule could capture such sentence
-
-//  val sent_20_8 = "Sub-optimal timing of nitrogen fertilizer resulted in yield losses"
-//   sent_20_8 should "recognize fertilizer [attached to be var]"in {
-//     val mentions = getMentions(sent_20_8)
-//     mentions.filter(_.label matches "Assignment") should have size (1)
-//     mentions.filter(_.label matches "Assignment").foreach({ m =>
-//       m.arguments("variable").head.text should be("fertilizers")
-//       m.arguments("value").head.text should equal("ammonium poly-phosphate")
-//     })
-//   }
-
+  val sent_20_8 = "Phosphorus, potassium and NPK are important inorganic fertilizers."
+  sent_20_8 should "recognize comma separated fertilizers types"  in {
+    val mentions = getMentions(sent_20_8)
+    mentions.filter(_.label matches "Assignment") should have size (3)
+    var count = 0
+    
+    for (m <- mentions.filter(_.label matches "Assignment")) {
+      if (count == 0) {
+        m.arguments("variable").head.text should be ("fertilizers")
+        println(m.arguments("value").head.text)
+        m.arguments("value").head.text should equal ("Phosphorus")
+      } else if (count == 1) {
+        m.arguments("variable").head.text should be ("fertilizers")
+        m.arguments("value").head.text should equal ("potassium")
+      } else {
+        m.arguments("variable").head.text should be ("fertilizers")
+        m.arguments("value").head.text should equal ("NPK")
+      }
+      count += 1
+    }
+  }
 }
