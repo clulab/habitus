@@ -28,7 +28,7 @@ In Senegal maturity  came in early November ( Tab.I ) for 1995.
 
   sent1 should "for the event sowing between 7 and 22 July find senegal as the most frequent entity in entire document" in {
     val mse = getMSFreq(sent1)
-    mse.head.mostFreqEntity should be ("senegal")
+    mse.head.mostFreqEntity.getOrElse("") should be ("senegal")
   }
   def getMSFreq1Sent(text: String): Seq[ce.MostFreqEntity] = {
     val (doc, mentions,contextEntities) = vp.parse(text)
@@ -38,7 +38,7 @@ In Senegal maturity  came in early November ( Tab.I ) for 1995.
 
   sent1 should "find united states as the most frequent entity within 1 sentence distance" in {
     val mse = getMSFreq1Sent(sent1)
-    mse.head.mostFreqEntity should be ("united states")
+    mse.head.mostFreqEntity.getOrElse("")  should be ("united states")
   }
 
   def getMSFreq0Sent(text: String): Seq[ce.MostFreqEntity] = {
@@ -54,12 +54,12 @@ In Senegal maturity  came in early November ( Tab.I ) for 1995.
 
   sent1 should "find matto grosso  as the most frequent entity within 0 sentence distance" in {
     val mse = getMSFreq0Sent(sent1)
-    mse.head.mostFreqEntity should be ("matto grosso")
+    mse.head.mostFreqEntity.getOrElse("")  should be ("matto grosso")
   }
 
   sent1 should "find 1995 as the most frequently mentioned year overall in the document" in {
     val mse = getMostFreqYearOverall(sent1)
-    mse.head.mostFreqEntity should be ("1995")
+    mse.head.mostFreqEntity.getOrElse("")  should be ("1995")
   }
 
 
@@ -75,13 +75,13 @@ In Senegal maturity  came in early November ( Tab.I ) for 1995.
 
   sent2 should "for document with two events find senegal as the most frequent entity in entire document" in {
     val mse = getMSFreq(sent2)
-    mse(0).mostFreqEntity should be ("senegal")
-    mse(1).mostFreqEntity should be ("senegal")
+    mse(0).mostFreqEntity.getOrElse("")  should be ("senegal")
+    mse(1).mostFreqEntity.getOrElse("")  should be ("senegal")
   }
 
   sent2 should "for document with two events find matto grosso as the most frequent entity in event1 and burkino fast for event 0" in {
     val mse = getMSFreq0Sent(sent2)
-    mse(0).mostFreqEntity should be ("matto grosso")
-    mse(1).mostFreqEntity should be ("burkino faso")
+    mse(0).mostFreqEntity.getOrElse("")  should be ("matto grosso")
+    mse(1).mostFreqEntity.getOrElse("")  should be ("burkino faso")
   }
 }

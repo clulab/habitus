@@ -34,8 +34,9 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
 
     //for each event mention, get the sentence id, and map it to a case class called contextDetails, which will have all of mostFreq* information
     createSentidContext(sentidContext,mostFreqLocation0Sent,mostFreqLocation1Sent,mostFreqLocationOverall,mostFreqDate0Sent,mostFreqDate1Sent,mostFreqDATEOverall)
-
   }
+
+  case class mostFreqEntities01Overall(entityTag:String,mostFreqIn0Sent:Seq[MostFreqEntity],mostFreqIn1Sent:Seq[MostFreqEntity],mostFreqOverall:Seq[MostFreqEntity])
 
   def checkSentIdContextDetails(sentidContext:scala.collection.mutable.Map[Int,contextDetails], key:Int,value: contextDetails) = {
     sentidContext.get(key) match {
@@ -263,7 +264,7 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
           //todo: this needs to be passed from user
           if (nerTag == "B-LOC") {
             val cleanNerTag = "LOC"
-            val newEntityName = checkForMultipleTokens(nerTag, entityCounter, indicesToSkip, entityName, s,"\"I-LOC\"")
+            val newEntityName = checkForMultipleTokens(nerTag, entityCounter, indicesToSkip, entityName, s,"I-LOC")
             EntityNameIndex = Some(Entity(newEntityName, cleanNerTag, i))
           }
 
