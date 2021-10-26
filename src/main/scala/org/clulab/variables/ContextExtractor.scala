@@ -92,11 +92,13 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
          val relDistance = (mention.sentence - absDistFreq._1).abs
          //second value of the tuple absDistFreq is the freq: how often does that entity occur in this sentence
          val freq = absDistFreq._2
-         relDistFreq += (relDistance, freq)
-         context.entityDistFrequencies=relDistFreq
+         relDistFreq.append((relDistance, freq))
+         //context.entityDistFrequencies=relDistFreq
+
        }
        //same entityAbsDistFreq is being reused here. But diff is we store relative distance now instead of absolute
        //val ctxt = new entityDistFreq(context.entityValue, context.nerTag, relDistFreq)
+       val ctxt=context.copy(entityDistFrequencies=relDistFreq)
        contextsPerMention += ctxt
      }
      //todo: piggy back as payload on Entity class
@@ -126,8 +128,8 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
     var mostFreqEntity = ""
     for (ctxt <- contexts) {
       for (sentFreq <- ctxt.entityDistFrequencies) {
-        val sentDist = sentFreq(0)
-        val freq = sentFreq(1)
+        val sentDist = sentFreq._1
+        val freq = sentFreq._2
         if (sentDist <= n && ctxt.nerTag.contains(entityType)) {
           entityFreq = checkAddFreq(entityFreq, ctxt.entityValue, freq)
           if (entityFreq(ctxt.entityValue) >= maxFreq) {
@@ -288,4 +290,4 @@ object ContextExtractor {
 }
 // histogram of all Entities
 //e.g.,{Senegal, LOC, {[1, 1], [4, 2]}}- The Location Sengal occurs in sentence 1 once,in sentence 4, 2 times setc
-class entityDistFreq(var entityValue: String, var nerTag: String, val entityDistFrequencies:ArrayBuffer[(Int,Int)])
+case class entityDistFreq(var entityValue: String, var nerTag: String, val entityDistFrequencies:ArrayBuffer[(Int,Int)])
