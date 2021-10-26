@@ -28,8 +28,8 @@
   label: ${label}
   graph: "hybrid"
   pattern: |
-    trigger = [lemma=/range|occur|be/ & tag=/^V/]
-    variable:Variable = /nsubj/
+    trigger = [lemma=/range|occur|use|contain|be/ & tag=/^V|^J/]
+    variable:Variable = /nsubj|dobj|nsubjpass|nmod_as/
     value:Value = /nmod_on|nmod_in|nmod_such_as|nmod_than|nmod_like|Ax_on|Ax_in/
 
 #
@@ -74,9 +74,9 @@
   label: ${label}
   graph: "hybrid"
   pattern: |
-    trigger = [lemma=/range|occur|be/ & tag=/^V/]
-    variable:Variable = /nsubj/
-    value:Value = /nmod_from|nmod_between|Ax_from|Ax_between/
+    trigger = [lemma=/range|occur|be/ & tag=/^V|^J/]
+    variable:Variable = /nsubj|dobj/
+    value:Value = /nmod_from|nmod_between|nmod_like|Ax_from|Ax_between/
 
 
 
