@@ -33,7 +33,7 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
 
 
     //for each event mention, get the sentence id, and map it to a case class called contextDetails, which will have all of mostFreq* information
-    createSentidContext(sentidContext,mostFreqLocation0Sent,mostFreqLocation1Sent,mostFreqLocationOverall,mostFreqDate0Sent,mostFreqDate1Sent,mostFreqDATEOverall)
+    createSentidContext(sentidContext,mostFreqLocation0Sent,mostFreqLocation1Sent,mostFreqLocationOverall,mostFreqDate0Sent,mostFreqDate1Sent,mostFreqDATEOverall,mostFreqCropOverall)
   }
 
   case class mostFreqEntities01Overall(entityTag:String,mostFreqIn0Sent:Seq[MostFreqEntity],mostFreqIn1Sent:Seq[MostFreqEntity],mostFreqOverall:Seq[MostFreqEntity])
@@ -52,7 +52,8 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
                           mostFreqLocation:Seq[MostFreqEntity],
                           mostFreqDate0Sent:Seq[MostFreqEntity],
                           mostFreqDate1Sent:Seq[MostFreqEntity],
-                          mostFreqDate:Seq[MostFreqEntity]): Unit= {
+                          mostFreqDate:Seq[MostFreqEntity],
+                          mostFreqCropOverall:Seq[MostFreqEntity]): Unit= {
 
     //todo assert lengths of all the mostFreq* are same
     //for each event mention, get the sentence id, and map it to a case class called contextDetails, which will have all of mostFreq* information
@@ -65,7 +66,10 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
           checkIfEmpty(mostFreqLocation(i).mostFreqEntity),
           checkIfEmpty(mostFreqDate0Sent(i).mostFreqEntity),
           checkIfEmpty(mostFreqDate1Sent(i).mostFreqEntity),
-          checkIfEmpty(mostFreqDate(i).mostFreqEntity)))
+          checkIfEmpty(mostFreqDate(i).mostFreqEntity),
+          checkIfEmpty(mostFreqCropOverall(i).mostFreqEntity)
+        )
+      )
     }
   }
 
@@ -262,18 +266,17 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
           var namedEntityTag = ""
           var entityName = word.toLowerCase
           //todo: this needs to be passed from user
+          //todo: change this to a switch statement?
           if (nerTag == "B-LOC") {
             val cleanNerTag = "LOC"
             val newEntityName = checkForMultipleTokens(nerTag, entityCounter, indicesToSkip, entityName, s,"I-LOC")
             EntityNameIndex = Some(Entity(newEntityName, cleanNerTag, i))
           }
-
           if (nerTag == "B-CROP") {
             val cleanNerTag = "CROP"
             val newEntityName = checkForMultipleTokens(nerTag, entityCounter, indicesToSkip, entityName, s,"I-CROP")
             EntityNameIndex = Some(Entity(newEntityName, cleanNerTag, i))
           }
-
           else if (nerTag.contains("B-DATE")) {
             namedEntityTag = "DATE"
             val split0 = norm.split('-').head

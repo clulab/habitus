@@ -33,7 +33,7 @@ package object utils {
   }
   //todo:context details class should store all histograms
   case class contextDetails( mention: String,mostFreqLoc0Sent: String,mostFreqLoc1Sent: String, mostFreqLoc: String,
-                             mostFreqDate0Sent: String,mostFreqDate1Sent: String, mostFreqDate: String)
+                             mostFreqDate0Sent: String,mostFreqDate1Sent: String, mostFreqDate: String, mostFreqCrop:String)
 
 
   // extract needed information and write them to tsv in a desired format. Return nothing here!
@@ -59,7 +59,8 @@ package object utils {
               context(i).mostFreqLoc}\t${
               context(i).mostFreqDate0Sent}\t${
               context(i).mostFreqDate1Sent}\t${
-              context(i).mostFreqDate}")
+              context(i).mostFreqDate}\t${
+              context(i).mostFreqCrop}")
           } catch {
             case e: NoSuchElementException => println(s"No normalized value found for ${m.arguments("value").head.text} in sentence ${s.getSentenceText}!")
               e.printStackTrace(System.out)
