@@ -29,11 +29,14 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
     val mostFreqDate0Sent=extractContext(doc,mentions,0,"DATE")
     val mostFreqDate1Sent=extractContext(doc,mentions,1,"DATE")
     val mostFreqDATEOverall=extractContext(doc,mentions,Int.MaxValue,"DATE")
+    val mostFreqCrop0Sent=extractContext(doc,mentions,0,"CROP")
+    val mostFreqCrop1Sent=extractContext(doc,mentions,1,"CROP")
     val mostFreqCropOverall=extractContext(doc,mentions,Int.MaxValue,"CROP")
 
 
     //for each event mention, get the sentence id, and map it to a case class called contextDetails, which will have all of mostFreq* information
-    createSentidContext(sentidContext,mostFreqLocation0Sent,mostFreqLocation1Sent,mostFreqLocationOverall,mostFreqDate0Sent,mostFreqDate1Sent,mostFreqDATEOverall,mostFreqCropOverall)
+    createSentidContext(sentidContext,mostFreqLocation0Sent,mostFreqLocation1Sent,mostFreqLocationOverall,
+      mostFreqDate0Sent,mostFreqDate1Sent,mostFreqDATEOverall,mostFreqCrop0Sent,mostFreqCrop1Sent,mostFreqCropOverall)
   }
 
   case class mostFreqEntities01Overall(entityTag:String,mostFreqIn0Sent:Seq[MostFreqEntity],mostFreqIn1Sent:Seq[MostFreqEntity],mostFreqOverall:Seq[MostFreqEntity])
@@ -53,6 +56,8 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
                           mostFreqDate0Sent:Seq[MostFreqEntity],
                           mostFreqDate1Sent:Seq[MostFreqEntity],
                           mostFreqDate:Seq[MostFreqEntity],
+                          mostFreqCrop0Sent:Seq[MostFreqEntity],
+                          mostFreqCrop1Sent:Seq[MostFreqEntity],
                           mostFreqCropOverall:Seq[MostFreqEntity]): Unit= {
 
     //todo assert lengths of all the mostFreq* are same
@@ -67,6 +72,8 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
           checkIfEmpty(mostFreqDate0Sent(i).mostFreqEntity),
           checkIfEmpty(mostFreqDate1Sent(i).mostFreqEntity),
           checkIfEmpty(mostFreqDate(i).mostFreqEntity),
+          checkIfEmpty(mostFreqCrop0Sent(i).mostFreqEntity),
+          checkIfEmpty(mostFreqCrop1Sent(i).mostFreqEntity),
           checkIfEmpty(mostFreqCropOverall(i).mostFreqEntity)
         )
       )
