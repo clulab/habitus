@@ -404,9 +404,6 @@ class TestVariableReader extends FlatSpec with Matchers {
 
   // TODO: I was wondering if this case is for multiple assignments.
   // Not sure if we can use Syntactic rules here.
-  // May be I need to modifiy the token pattern crop-2 rule
-
-  // Anway a list of crops comma separated is detected
 
   val sent16_4_2 = "In the SRV, farmers plant Sahel 108, Sahel 150, Sahel 154, Sahel 134, Nerica"
   sent16_4_2 should "recognize crop [attached to dates]"in {
@@ -471,7 +468,7 @@ class TestVariableReader extends FlatSpec with Matchers {
   }
 
   val sent17_3 = "Tomato or onion were the two most labour-consuming crops"
-  sent17_3 should "recognize OR/AND separated crops"  in {
+  sent17_3 should "recognize OR linked crops"  in {
     val mentions = getMentions(sent17_3)
     mentions.filter(_.label matches "Assignment") should have size (2)
     var count = 0
@@ -491,7 +488,7 @@ class TestVariableReader extends FlatSpec with Matchers {
 
 
   val sent17_4 = "Onion and tomato were the most profitable crops."
-  sent17_4 should "recognize OR/AND separated crops"  in {
+  sent17_4 should "recognize AND separated crops"  in {
     val mentions = getMentions(sent17_4)
     mentions.filter(_.label matches "Assignment") should have size (2)
     var count = 0
