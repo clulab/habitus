@@ -29,6 +29,7 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
     val mostFreqDate0Sent=extractContext(doc,mentions,0,"DATE")
     val mostFreqDate1Sent=extractContext(doc,mentions,1,"DATE")
     val mostFreqDATEOverall=extractContext(doc,mentions,Int.MaxValue,"DATE")
+    val mostFreqCropOverall=extractContext(doc,mentions,Int.MaxValue,"CROP")
 
 
     //for each event mention, get the sentence id, and map it to a case class called contextDetails, which will have all of mostFreq* information
@@ -225,7 +226,7 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
   case class Entity(entityValue: String, tag: String, sentIdx: Int)
 
   // IF an LOC entity has multiple tokens. (e.g., United States of America.) merge them to form one entityName
-  def checkForMultipleTokens(nerTag:String,entityCounter:Int,indicesToSkip:ArrayBuffer[Int],entityName:String,sent:Sentence): String = {
+  def checkForMultipleTokens(nerTag:String,entityCounter:Int,indicesToSkip:ArrayBuffer[Int],entityName:String,sent:Sentence,insideTag:String): String = {
     var newEntityName = entityName
     var fullName = ArrayBuffer[String]()
     var tempEntity = nerTag
@@ -241,7 +242,7 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
         else
           {break()}
         newEntityName = fullName.mkString(" ").toLowerCase()
-      } while (tempEntity == "I-LOC")
+      } while (tempEntity == insideTag)
     }
     newEntityName
   }
@@ -262,9 +263,16 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
           //todo: this needs to be passed from user
           if (nerTag == "B-LOC") {
             val cleanNerTag = "LOC"
-            val newEntityName = checkForMultipleTokens(nerTag, entityCounter, indicesToSkip, entityName, s)
+            val newEntityName = checkForMultipleTokens(nerTag, entityCounter, indicesToSkip, entityName, s,"\"I-LOC\"")
             EntityNameIndex = Some(Entity(newEntityName, cleanNerTag, i))
           }
+
+          if (nerTag == "B-CROP") {
+            val cleanNerTag = "CROP"
+            val newEntityName = checkForMultipleTokens(nerTag, entityCounter, indicesToSkip, entityName, s,"I-CROP")
+            EntityNameIndex = Some(Entity(newEntityName, cleanNerTag, i))
+          }
+
           else if (nerTag.contains("B-DATE")) {
             namedEntityTag = "DATE"
             val split0 = norm.split('-').head
