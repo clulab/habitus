@@ -1,0 +1,5357 @@
+ 
+
+SCALING UP OF SAHEL RICE 
+VARIETIES IN SENEGAL  
+
+REVIEW OF SUCCESSFUL SCALING OF 
+AGRICULTURAL TECHNOLOGIES 
+
+NOVEMBER 6, 2016 
+
+This publication was produced for review by the United States Agency for 
+International Development. It was prepared by Dr. Richard Kohl of Management 
+Systems International, a Tetra Tech Company, for the E3 Analytics and Evaluation 
+Project. 
+
+ 
+
+ 
+
+ 
+
+SCALING UP OF SAHEL RICE 
+VARIETIES IN SENEGAL  
+
+REVIEW OF SUCCESSFUL SCALING OF 
+AGRICULTURAL TECHNOLOGIES 
+
+Contracted under AID-OAA-M-13-00017 
+
+E3 Analytics and Evaluation Project 
+
+DISCLAIMER 
+The author’s views expressed in this publication do not necessarily reflect the views of the United States Agency 
+for International Development or the United States Government. 
+
+ 
+
+ 
+
+CONTENTS 
+
+ACRONYMS ...................................................................................................................... II 
+
+EXECUTIVE SUMMARY................................................................................................. IV 
+
+I. 
+
+INTRODUCTION ....................................................................................................... 1 
+A.  Background and Context of This Report ............................................................................... 1 
+B.  Purpose of This Report .............................................................................................................. 2 
+C.  Methodology Used ....................................................................................................................... 2 
+D.  Structure of the Report .............................................................................................................. 5 
+E.  Team Composition ...................................................................................................................... 6 
+
+II. BACKGROUND ON RICE IN SENEGAL .................................................................. 6 
+A.  Geography and Seasonality ........................................................................................................ 7 
+B.  Post Structural Adjustment and the Decline of the Irrigated Rice Value 
+
+Chain ............................................................................................................................................... 9 
+
+C.  The World Food Crisis of 2007–2009 and the Government of Senegal’s 
+
+Policy Response .......................................................................................................................... 10 
+D.  SRV Rice Production Prior to Scaling of Rice Innovation Package ................................. 13 
+
+III.  CHARACTERISTICS OF THE INNOVATION ..................................................... 15 
+A.  Good Agricultural Practices .................................................................................................... 16 
+B.  The Business Case ..................................................................................................................... 18 
+
+IV. ADOPTION DRIVERS AND RESULTS OVER TIME AND SPACE .................... 23 
+A.  Market Potential ......................................................................................................................... 23 
+
+V.   THE EXTERNAL CONTEXT OR SPACES ........................................................... 26 
+A.  Rice Value Chain ........................................................................................................................ 26 
+B.  Credit and Insurance ................................................................................................................. 30 
+C.  Mechanization ............................................................................................................................. 34 
+D.  Politics and Policy ....................................................................................................................... 35 
+E. 
+Institutions and Partnerships ................................................................................................... 37 
+
+VI. SCALING STRATEGY AND ACTIVITES .............................................................. 37 
+A.  Drivers of Introduction and Dissemination of GAPs, Quality ........................................ 37 
+B.  Adoption Rates, Variability, and Continuity ........................................................................ 38 
+C.  Sustainability, Scaling, and Handoff to Commercial or Other Actors ........................... 39 
+D.  Potential Scale of Adoption ..................................................................................................... 40 
+
+CONCLUSIONS ............................................................................................................. 41 
+A.  Characteristics of the Innovation ........................................................................................... 42 
+B. 
+Incentives and the Business Case ........................................................................................... 42 
+C.  Context ........................................................................................................................................ 42 
+D.  Drivers of Adoption and Scaling Strategy ............................................................................ 43 
+
+LESSONS LEARNED ...................................................................................................... 44 
+A.  General Lessons ......................................................................................................................... 44 
+B.  Lessons for USAID and Other Donors ................................................................................ 45 
+
+ANNEX A: STAKEHOLDERS TARGETED FOR INTERVIEWS/FOCUS 
+
+GROUPS .................................................................................................................... 47 
+
+ 
+
+Scaling Up of Sahel Rice Varieties in Senegal  
+
+i 
+
+ 
+
+ACRONYMS 
+
+AECID 
+
+AI 
+
+ 
+
+ANCAR 
+
+BFS 
+
+ 
+
+BNDE  
+
+CBR 
+
+ 
+
+CBSP   
+
+Spanish Agency for International Development Cooperation 
+
+Aménagement Intermédiare (Intermediate Irrigation Scheme) 
+
+Agence Nationale de Conseil Agricole et Rural (National Agricultural and Rural 
+Advisory Agency) 
+
+Bureau for Food Security (USAID) 
+
+Banque National pour le Développement Economique 
+
+Chemin du Bon Riz (Pathway to Good Rice) 
+
+Community-Based Service Providers 
+
+CEDAF 
+
+Union des Femmes Productrices de Ross Bethio 
+
+CFAF   
+
+CGER  
+
+CIRIZ   
+
+CNAAS 
+
+CNCAS 
+
+CNCR  
+
+CNT   
+
+CQR   
+
+CSA 
+
+DAP 
+
+ 
+
+ 
+
+DAPS   
+
+DPSA   
+
+DR 
+
+ 
+
+DRDR  
+
+E3 
+
+ 
+
+FCFA   
+
+FGD 
+
+FPA 
+
+FTF 
+
+GA 
+
+GAP 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+CFA Franc 
+
+Centres de Gestion et d’Economie Rurale 
+
+Comité Interprofessionnel du Riz (Interprofessional Committee on Rice) 
+
+Compagnie National Assurance de Senegal (National Insurance Company of Senegal) 
+
+Caisse Nationale de Crédit Agricole du Sénégal (National Bank for Agricultural Credit 
+in Senegal) 
+
+Conseil National de Concertation et de Coopération des Ruraux (National Council 
+for Discussion and Cooperation with Farmers) 
+
+Coumba Nor Thiam (Rice Miller) 
+
+Controle Qualité Riz (Rice Quality Control) 
+
+Commissariat à la Sécurité Alimentaire (Commissariat for Food Security) 
+
+Diammonium Phosphate (fertilizer) 
+
+Direction de l’Analyse, de la Prévision et des Statistiques (Department of Analysis, 
+Prediction and Statistics)  
+
+Department of Projections and Statistical Analysis 
+
+Document Review 
+
+Direction Régionale du Développment Rural (Regional Department of Rural 
+Development) 
+
+Bureau for Economic Growth, Education, and Environment (USAID) 
+
+CFA Franc (used in quoted text) 
+
+Focus Group Discussion 
+
+Federation du Perimetres Autogerés du Senegal (Federation of Self-Managed Irrigation 
+Areas of Senegal) 
+
+Feed the Future 
+
+Grand Aménagement (Large-Scale Irrigation Scheme) 
+
+Good Agricultural Practice 
+
+Scaling Up of Sahel Rice Varieties in Senegal  
+
+ii 
+
+ 
+
+GIE 
+
+ 
+
+Groupement d'Intérêt Économique (Farmers’ Economic Interest Group) 
+
+GOANA 
+
+Grande Offensive pour la Nourriture et l’Abondance (Grand Offensive for Nutrition 
+and Abundance) 
+
+GOS 
+
+Ha 
+
+IDG 
+
+IMF 
+
+ISRA 
+
+JICA 
+
+Kg 
+
+KII 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+MOA   
+
+MSI 
+
+MT 
+
+ 
+
+ 
+
+NGO   
+
+OPV 
+
+ 
+
+Government of Senegal 
+
+Hectares 
+
+International Development Group 
+
+International Monetary Fund 
+
+Institut Sénégalais de Recherche Agricole (Senegalese Institute for Agricultural 
+Research) 
+
+Japan International Cooperation Agency 
+
+Kilograms 
+
+Key Informant Interview 
+
+Ministry of Agriculture  
+
+Management Systems International 
+
+Metric Tons 
+
+Non-Governmental Organization 
+
+Open Pollinated Varieties 
+
+PAMECAS 
+
+Partenariat pour la Mobilisation de l’Epargne et le Crédit Au Sénégal 
+
+PCE 
+
+PIP 
+
+PIV 
+
+ 
+
+ 
+
+ 
+
+PNAR  
+
+QDSS   
+
+SAED   
+
+SNDR  
+
+SRV 
+
+ 
+
+SUARL 
+
+Projet Croissance Economique (Economic Growth Project) 
+
+Périmètre Irriguée Privée 
+
+Périmètre Irrigué Villageois 
+
+Programme National d’Autosuffisance en Riz 
+
+Quantitative Data Collection from Secondary Sources 
+
+Société d’Aménagement et d’Exploitation des Terres du Delta du fleuve Sénégal et des 
+Vallées du fleuve Sénégal et de la Falémé (National Company for Development and 
+Exploitation of the Senegal River Delta) 
+
+Stratégie Nationale de Développement de la Riziculture (National Rice Development 
+Strategy) 
+
+Senegal River Valley (Vallée du Fleuve Senégal) 
+
+  Société Unipersonnelle à Responsabilité Limitée 
+
+UNACOIS 
+
+Union Nationale des Commerçants et Industriels du Sénégal 
+
+UNIS   
+
+Union Nationale Interprofessionnelle des Semences (National Interprofessional Union 
+of Seeds) 
+
+USAID  
+
+United States Agency for International Development 
+
+Scaling Up of Sahel Rice Varieties in Senegal  
+
+iii 
+
+ 
+
+EXECUTIVE SUMMARY 
+
+A. Introduction and Purpose  
+
+This report examines the scaling up of a package of innovations in the irrigated rice seed sector in 
+Senegal through commercial pathways from 2010 to 2015.1 This package includes: capacity to certify 
+quality rice seed; good agricultural practices (GAPs); the capacity of the value chain in key areas to 
+supply inputs, services and downstream market linkages; and perhaps most importantly, financial 
+innovations. This study focuses only on the irrigated rice value chain in the Senegal River Valley (SRV) 
+region and does not examine the scaling up of Nerica rice varieties in rainfed areas of Senegal. It is one 
+of five studies looking at successful scaling up of agricultural innovations in developing countries. The 
+United States Agency for International Development’s (USAID) Bureau for Food Security (USAID/BFS) 
+has commissioned the E3 Analytics and Evaluation Project to conduct these studies as part of its efforts 
+to scale up the impact of the Feed the Future (FTF) food security initiative. The goal of these studies is 
+to produce lessons learned and ultimately guidance for USAID and its country Missions interested in 
+integrating a commercial pathways approach to scaling up into their FTF project designs, procurements, 
+and implementation. This overall research is designed to provide a better understanding of what types of 
+innovations and country contexts are best suited to scaling up through commercial pathways, and what 
+activities, strategies, and support are necessary to facilitate that successfully. 
+
+B. Background  
+
+The Senegal River Valley is by the far the largest area of irrigated rice production in Senegal, currently 
+around 60,000 hectares (ha) with a potential of at least 120,000 ha. Irrigation was first put in place 
+during the colonial period and expanded from independence through the early 1990s. With structural 
+adjustment in the early 1990s, the Government of Senegal (GOS) disengaged from its primary role in 
+providing inputs, purchasing output, setting prices, and delivering extension and other support services, 
+though it continued to provide credit to farmers who qualified. Disengagement by the state led to the 
+breakdown of the rice value chain, especially extension support, processing, and downstream linkages to 
+formal markets. As a result, up until GOS emergency measures in light of the 2007-2008 food crisis, 
+there was a steady decline in the surface area of irrigated rice that was cultivable and the percentage of 
+potentially cultivable area that was actually planted.  Perhaps more importantly, a number of factors 
+prevented farmers from realizing the full yield potential of Sahel rice varieties introduced in the mid-
+1990s and widely adopted over the ensuing five years.   
+
+Nonetheless, even during this period when the SRV accounted for a fraction of total surface area 
+cultivated in rice, it made up a disproportionately large share of total national rice production. Sahel rice 
+was introduced in the mid-1990s and widely adopted in the SRV by 2000. However, yields were 
+significantly below potential until scaling up of a package of innovations was significantly “completed” 
+between 2010 and 2016. During this period the GOS, USAID, and other donors worked together to 
+rehabilitate and strengthen the irrigated rice value chain. This study focuses on those efforts led by the 
+USAID-financed Economic Growth Project (PCE), which was part of the FTF initiative to scale up a 
+
+                                                      
+
+1 Sahel varieties were initially developed in the early 1990s by Africarice and other international research institutes.  They were 
+bred to be appropriate for the climatic conditions of the Sahel e.g. heat, low rainfall, salinity, while generating much higher yields 
+than indigenous varieties. At the time of their initial introduction they had yield potentials of 10 metric tons per hectare, with 
+average yields of 6-7 mt/ha, much higher than indigenous varieties. The three key varieties introduced at that time were Sahel 
+108, 201 and 202. Sahel 108 was targeted for the dry season when short duration is important for enabling farmers to double-
+crop. Sahel 201 and Sahel 202 are medium duration and therefore targeted for use in the wet season. Sahel 201 was introduced 
+for high yield and moderate tolerance to salinity and Sahel 202 for high yield with good grain quality. More recent Sahel strains 
+introduced since 2005 remain suitable for the region with yield potentials of 10-12 mt/ha. 
+
+Scaling Up of Sahel Rice Varieties in Senegal  
+
+iv 
+
+ 
+
+package of innovations. This involved promoting and facilitating adoption of a mix of improved 
+agricultural practices and rehabilitating and strengthening the rice value chain and relevant aspects of the 
+rice market system. The package ultimately scaled was not introduced in its entirety in 2010, but 
+identified iteratively as binding constraints became apparent in the course of efforts to support the 
+sector as a whole. 
+
+Prior to the intervention of PCE and its donor partners, most farmers were growing one of three Sahel 
+rice varieties. However as there was no system of seed certification in place, farmers used either saved 
+seed of those varieties or seed produced by seed multipliers of often low quality. Most rice was grown 
+only in one season, the rainy season (hivernale), even though yields were lower than in the dry, hot 
+season (principally because of lower costs as less irrigation is needed). Machinery services for land 
+preparation and harvesting were well established in that most farmers were aware of them, though for 
+the majority of farmers actual use of mechanical services was minimal due to limited availability, high 
+costs, and lack of credit.  All farmers already preferred to use fertilizer, but whether they did so in 
+practice, or used the full recommended amounts, was again dependent on access to banking credit.  
+
+Access to credit was and remains central to a relatively capital-intensive form of agriculture (about CFA 
+500-600,000 per ha or $1000/ha).  Until recently, almost all credit was supplied by the state-owned 
+agricultural bank, Caisse Nationale de Crédit Agricole du Sénégal (CNCAS).  Yet in most years 
+significantly less than half of farmers had access to credit, in large part because of their inability to repay 
+previous credit.  Even farmers who received credit were often not able to harvest and especially plant 
+rice on a timely basis because of delays in approval or disbursement of bank credit. As a result, average 
+yields ranged between 4.9 and 6 metric tons per hectare (mt/ha) between 2005 and 2010 for hivernale 
+(rainy, winter season) rice, whereas potential yields were 10–12 mt/ha,2 depending on the variety.  
+Moreover, because of the near collapse of many of the larger rice mills, almost all processing (dehulling) 
+was done by local mills that had neither the economic incentive nor the capacity to clean or sort rice by 
+quality. Rice processed by local millers was below the quality to compete with imported rice in urban 
+markets, so this surplus rice was sold at lower prices in local markets or to informal buyers to be sold in 
+nearby regions.  
+
+C. Characteristics of Scaling  
+
+The story of scaling up of Sahel rice is atypical in several ways. First, maximum potential scale was and 
+remains constrained by the extent of irrigation infrastructure. Second, from the beginning the SRV 
+produced a marketable surplus of rice, and thus the producers who were the target of scaling up always 
+had something of a commercial orientation, even if many consumed the majority of their own 
+production. Third, Senegal has been and remains a huge rice importer, so there has always been a huge 
+potential market for domestic rice, assuming it could compete with imported rice. Fourth, almost all of 
+the institutions needed for a viable commercial rice value chain already existed in the SRV as of 2010, 
+even if many were weak or barely functioning. The same was true for the relevant technology and 
+knowledge of GAPs, with the important exceptions of key financial innovations and large, reliable seed 
+certification process.  Fifth, all rice grown in the SRV is irrigated, substantially mitigating the impact of 
+
+                                                      
+
+2 In farmer interviews conducted for this report, some farmers reported getting 8,9,10 mt/ha in the dry season, consistent with 
+yield potential found in agricultural research stations.  For the latter, see, for example, the chapter, “Potential yield of irrigated 
+rice in African arid environments” by M. Dingkuhn and A. Sow, in Applications of Systems Approaches at the Field Level. pp 79-
+99, Springer Volume 2: Proceedings of the Second International Symposium on Systems Approaches for Agricultural 
+Development, held at IRRI, Los Baños, Philippines, 6–8 December 1995 and “Simulation of potential yields of new rice varieties 
+in the Senegal River Valley” by Vries, M.E. de; Sow, A.; Bado, V.B.; Sakane, N.S. in: Improving soil Fertility Recommendations in 
+Africa using the Decision Support System for Agrotechnology Transfer (DSSAT) edited by Kihara, J., Fatondji, D., Jones, J.W., 
+Hoogenboom, G., Tabo, R., Bationo, A., Dordrecht : Springer Science+Business Media p. 141 - 155. 
+ 
+
+Scaling Up of Sahel Rice Varieties in Senegal  
+
+v 
+
+ 
+
+adverse weather events, which are the primary source of risk to farmers and buyers. Finally, while 
+government subsidies have proved to be important in other cases of agricultural scaling up, they were 
+particularly comprehensive in the PCE case. 
+
+The policy environment in Senegal played a key role in scaling up, both as a driver of scaling and creating 
+a supportive context for scaling activities. Senegal experienced a huge increase in imported rice prices in 
+2007–2008 as well as difficulty getting the necessary import quantities because of export bans by major 
+rice exporters like China, India, and Thailand. Senegal was and remains heavily reliance on imports of 
+this staple food, with imports accounting for 75 percent or better of national consumption.  In response, 
+the GOS subsequently adopted a policy of rice self-sufficiency. This translated programmatically into 
+substantial increases in the size and scope of subsidies to multiple aspects of the rice sector, direct 
+purchases for strategic reserves and state agencies, and an active policy of soliciting donor support for 
+irrigation rehabilitation and new investment. Particularly important were government policies that de 
+facto guaranteed good returns to rice farmers by effectively setting paddy prices well above production 
+costs. These prices also served as a key benchmark that could be used as the basis for financial 
+innovations.  
+
+In this context, USAID and other donors chose to support the rice sector in the SRV. USAID’s PCE 
+took the lead. PCE adopted an adaptive management and virtuous circle approach to reviving the rice 
+value chain. Through this approach, PCE identified the immediate obstacles to increased production, 
+prices, and sales, and promoted and facilitated the adoption of innovations to meet each obstacle, e.g. 
+producing during the saison chaud (hot dry season) when farmers could generate higher yields with 
+lower risks of pest or rain damage, or even growing during both seasons. When these efforts faced new 
+constraints and limitations as the scale of production expanded, it promoted and facilitated the adoption 
+of innovations those in turn: the production of certified seed; mechanization services; crop insurance 
+and other financial innovations; and quality process. Where those innovations were not already present 
+at small scale, it brought them in from other countries, often combining them in creative ways and 
+adapting them to the SRV context, or even innovated de novo. This was particularly the case with 
+financial innovations. Taken as a whole, the two key elements to this approach to innovation and scaling 
+were to: (1) address supply and demand issues simultaneously; and (2) increase both quality and 
+quantity. In other words, PCE worked both on “push” factors to increase yields, area planted, 
+production, and quality, and on “pull” factors to increase demand.  
+
+All of these efforts were complemented by substantial investments in road and irrigation infrastructure 
+by the World Bank, the Millennium Challenge Corporation, the French Agency for Development, and 
+the Korea International Cooperation Agency, among others. Finally, the GOS also put through three 
+important policies that helped increase the supply of credit and market size. They provided debt 
+forgiveness for farmers and processors in 2014 and made additional capital available to the agricultural 
+bank, CNCAS, to increase the supply of commercialization and equipment credit. The GOS required 
+rice importers to purchase domestic rice in proportion to their imports, effectively guaranteeing the 
+competitiveness of domestic rice against cheap foreign imports. 
+
+These activities took a few years to put into place and have an effect. Thus while scaling efforts began in 
+2009–2010 by the GOS and then donors, there was almost no increase in area, yield, production, or 
+quality until 2013–2014. At that point the cumulative effects of these multiple efforts reached critical 
+mass in both scale and scope, along with the equally important debt forgiveness of 2014. 
+
+The three greatest sources of increase in yields and production that occurred after 2014 were: (1) the 
+shift from hivernale to saison chaud planting or double cropping; (2) improved access to certified seed, 
+and; (3) better adherence to a crop calendar (i.e., timeliness in land preparation, planting, and 
+
+Scaling Up of Sahel Rice Varieties in Senegal  
+
+vi 
+
+ 
+
+harvesting).  Adoption and scaling of all three was facilitated by financial innovations that improved 
+access to credit.  
+
+More generally, in terms of scaling up strategy, the key aspects that underlay the success of PCE’s scaling 
+up were: 
+
+  Using a push-pull approach by helping producers to increase yields, production, and quality, 
+
+while also increasing market demand by facilitating linkages to processors and distributors and 
+strengthening those downstream institutions. 
+
+  Kick starting private upstream and downstream investment through subsidies, risk mitigation, 
+
+and market facilitation. PCE’s support for agricultural machinery leasing through Locafrique and 
+innovating crop insurance with the GOS are examples. 
+
+  Translating this push/pull and kick starting into a virtuous spiral that by 2014–2015 had become 
+
+increasingly self-generating.  
+
+  Aligning the incentives for farmers, banks, processors, machinery services, and wholesalers so 
+
+that everyone makes money. In some cases in Senegal, this has been complicated by GOS-
+induced distortions of prices and margins at various stages of the value chain. 
+
+  Addressing and, where possible, lowering risk for key actors. This was particularly true for 
+
+banks and the CNCAS. PCE addressed risk through the innovations of contractualization, crop 
+insurance, and the use of a warehouse receipts system.  
+
+D. Lessons Learned  
+
+The Sahel rice value chain case has many important and positive lessons for scaling up of agricultural 
+innovations through commercial pathways. The principal lesson from this case is that scaling up may not 
+involve introducing one new technology like new rice seed varieties. Multiple innovations may be 
+required to complement new seed varieties, animal breeds, etc. to fully realize the potential benefits for 
+yield, production, and food security, let alone scale, sustainability, and poverty reduction. It needs to be 
+accompanied by technical assistance to encourage the adoption of GAPs. The entire value chain needs 
+to be in place.   
+
+The second lesson is that scaling is multi-dimensional, and time is an often overlooked dimension that 
+can affect both intensive and extensive scaling.  New technology and practices impact the ability of 
+farmers to complete the various activities of the crop cycle at the optimal times. Scaling improves as 
+farmers develop the ability to plant two crops per year, in some cases on the same land, and in a timely 
+way. Scaling up over space, i.e., greater area, is not the only way to go, and in this case was less 
+important, at least to date.  
+
+Context can play a key role in scaling up. Irrigation already existed, seriously mitigating risk to all parties, 
+and almost all rice farmers had a commercial orientation and were accustomed to using improved seeds, 
+fertilizer, and other inputs; employing machinery services; and selling on commercial markets. The 
+majority of rice farmers were already organized into farmers’ organizations, usually “hydraulic unions” 
+or other groups around irrigation, which greatly facilitated provision of inputs, extension services, 
+market linkages, and technical assistance. World and domestic prices for rice have been consistently high 
+since the food crisis of 2008, making a strong business case for irrigated rice.  
+
+Even when scaling through commercial pathways, the public sector can and often does play a significant 
+and necessary role. In the SRV, PCE emphasized wherever possible commercial pathways. Nonetheless, 
+GOS support played a key role through subsidies on inputs, credit, insurance, and purchases of 
+machinery. GOS policy improved profitability significantly for farmers and lowered risks changing the 
+risk-return tradeoff through regulating prices, supporting demand for domestic rice, and the role of 
+
+Scaling Up of Sahel Rice Varieties in Senegal  
+
+vii 
+
+ 
+
+parastatals in agricultural credit and insurance. Arguably, GOS intervention in agricultural credit and 
+insurance, machinery services, etc. and an overall policy stance of encouraging rice self-sufficiency has 
+helped crowd in the private sector through both a demonstration effect and an implicit ‘guarantee” on 
+investments in the sector. As of this writing, the private sector is now the dominant force in machinery 
+services and has a growing share of agricultural credit. Without these policies and programs, scaling up 
+of the package of innovations by PCE and others to increase irrigated rice production in the SRV would 
+have been, much more difficult, expensive, time consuming, and arguably impossible. It is important to 
+note that, at least in this case, GOS subsidies appear to be fiscally sustainable for the foreseeable future. 
+At the same time, the GOS-facilitated price setting has distorted incentives, especially for wholesalers 
+and processors. Exaggerated and inaccurate GOS production and yield statistics have adversely affected 
+planning by rice farmers and processors.  
+
+ 
+
+ 
+
+ 
+
+Scaling Up of Sahel Rice Varieties in Senegal  
+
+viii 
+
+ 
+
+I.  INTRODUCTION 
+
+A. Background and Context of This Report 
+
+The United States Agency for International Development’s Bureau for Food Security (USAID/BFS) and 
+the Agency’s country Missions have been implementing the Feed the Future (FTF) food security initiative 
+since 2010. In many cases, innovations developed and introduced at a small scale have since gone to 
+scale or are in the process of doing so. Yet at the same time it appears that some innovations that 
+potentially could have gone to scale have not done so, have not reached their full scale potential, or are 
+not fully sustainable at scale.  
+
+There are many reasons for this unfulfilled potential, such as a substantial focus on achieving the 
+immediate outcomes and objectives defined in an activity solicitation and award/agreement with an 
+implementing partner. However, there is substantial anecdotal evidence that one of the reasons is that 
+how to scale up through commercial pathways is often not well understood or incompletely integrated 
+into activity designs, procurements, and implementation plans. In other words, it appears that 
+USAID/BFS and Missions could do more in both scaling and sustainability by using commercial pathways. 
+
+In this context, USAID/BFS has commissioned the E3 Analytics and Evaluation Project3 to conduct and 
+synthesize approximately five case studies to better understand how commercial pathways have been 
+used successfully in the scaling up and sustainability of agricultural innovations in developing countries. 
+The goal of this overall study is to produce lessons learned and ultimately guidance for USAID/BFS and 
+Missions interested in integrating this scaling up approach into activity designs, procurements, and 
+implementation. A particularly important goal is to develop a methodology that will allow USAID and its 
+implementing partners: (a) to estimate the speed and level of adoption by farmers; (b) to identify the 
+time and resources required to create the institutional foundations and enabling environment that would 
+allow for a transition to commercially driven and/or spontaneous scaling up and diffusion; (c) to identify 
+critical levels of initial adoption that would allow for such a transition; and (d) to provide for general 
+benchmarks to monitor progress and success in creating the foundations for and a transition to 
+commercially driven and/or spontaneous adoption and scaling. 
+
+This overall study is designed to address five research questions: 
+
+1.  Are there models using commercial innovation and growth mechanisms for bringing new 
+
+agricultural technologies to scale in FTF countries? 
+
+2.  What are the essential characteristics of innovations, value chains, and other spaces for 
+
+identifying where commercial innovation growth and diffusion models are appropriate for 
+reaching potential scale? 
+
+3.  What determines the shape of the S-curve 4(e.g., size of critical mass of adopters, speed and 
+timing of technology adoption and diffusion, peak levels of scale reached), and how can these 
+factors be estimated? 
+
+                                                      
+
+3 The E3 Analytics and Evaluation Project is implemented by team lead Management Systems International, in partnership with 
+Development and Training Services (dTS) and NORC at the University of Chicago. 
+44 The S shaped curve is a curve commonly used to characterize the pathway over time of the number of adopters of new 
+innovations, based on the path breaking work of Everett Rogers and others in the diffusion of innovation. These researchers 
+found that empirically adoption can be thought of as a normal distribution, a few very early adopters, a large number of early 
+and middle adopters, and then a decreasing number of later adopters.  When this normal distribution is graphed against time, it 
+takes the shape of an S.   
+
+Scaling Up of Sahel Rice Varieties in Senegal  
+
+1 
+
+ 
+
+4.  What types of activities are appropriate to implementing or facilitating a commercial scaling 
+
+pathway? Examples may include strengthening value chains and distribution mechanisms, using 
+media and other communication forms, and leveraging and strengthening social networks and 
+channels. 
+
+5.  What are the implications of achieving scale and sustainability using commercial scaling pathways 
+for USAID’s project designs, procurement mechanisms, planning, budgeting, cost/benefit analysis, 
+and monitoring and evaluation of FTF programs? 
+
+B. Purpose of This Report 
+
+This report examines the successful scaling up of a package of innovations to improve irrigated rice 
+production in the Senegal River Valley (SRV) region. High-yielding Sahel rice varieties were first 
+introduced in 1994 and widely adopted by farmers in the SRV over the next five years. This was 
+accompanied by a withdrawal or disengagement of the public sector in supporting irrigated rice 
+production as part of structural adjustment policies. As a result, the introduction of the Sahel varieties 
+was not accompanied by adoption of good agricultural practices (GAPs), and many key parts of the 
+irrigated rice value chain declined in quality, capacity, or both. As a result, the potential impact on yields 
+and production of Sahel rice, not to mention national food security, was never fully realized. Efforts to 
+realize this potential were initiated by the Government of Senegal (GOS) in the midst of the world food 
+crisis of 2007-2008. The GOS commitment to move towards food self-sufficiency led to USAID creating 
+and financing the Projet Croissance Economique (PCE) which, from 2010-2015, in collaboration with 
+other donors, introduced various innovations to fill gaps in, strengthen and rehabilitate the irrigated rice 
+value chain. This study focuses on the 2010–2015 period and PCE’s efforts in particular. 
+
+C. Methodology Used 
+
+The approach developed by the review team for conducting these case studies is grounded in the 
+spaces, drivers, and pathways analytical framework developed by Hartmann and Linn5 and the scaling up 
+framework authored by Cooley and Kohl of Management Systems International (MSI)6. These 
+frameworks detail the roles in which spaces, drivers, and pathways contribute to successful scaling. The 
+term space is multidimensional and encompasses the fiscal/financial, political, policy (legal and 
+regulatory), organizational, socio-cultural, agro-ecological, partnership,7 and learning components that 
+could affect scaling. Drivers are those factors or actors that move an innovation from pilot towards 
+scale, including the individuals or organizations that lead the scaling up effort, their motivation and 
+incentives, and how these interact with the characteristics of the innovation itself and the spaces or 
+context. Pathways are the sector used to take the innovation to scale: the private and public sectors, 
+donors, and other third parties or some combination thereof. This study assesses the respective roles 
+played by each sector, with a special emphasis on the role of the private sector, i.e., the commercial 
+pathway, as that is the primary focus of this research.  
+
+Within this framework, the review team examined the following components in terms of their role in 
+scaling up the innovation: 
+
+                                                      
+
+5 “Scaling up: A framework and Lesons fro development Effectiveness form Literature and practice,” Arntraud Hartmann and 
+Johannes Linn. 2008. https://www.brookings.edu/wp-content/uploads/2016/06/10_scaling_up_aid_linn.pdf  
+6 “Scaling Up – from vision to large scale change,” Larry Cooley and Ricard Kohl, MSI. 2006. 
+http://www.msiworldwide.com/files/scalingup-framework.pdf   
+7 The partnership space looks at the potential organizations whose sponsorship and resources can be enlisted by the lead or 
+driving organizations to support scaling up. 
+
+Scaling Up of Sahel Rice Varieties in Senegal  
+
+2 
+
+ 
+
+  Characteristics of the innovation: The package of components needed to be adopted; 
+
+knowledge and physical input requirements for effective adoption and implementation; cost, 
+complexity, and sophistication required; changes needed, if any, in farmers’ existing agricultural 
+practices; and the relationship to adoption of other innovations, whether complementary, 
+substitutes, or pre-requisites. 
+
+  Adoption drivers and results over time and space: The reasons for adoption; variation in the 
+
+degree of adoption and other patterns; socio-economic and demographic characteristics; and the 
+role of different information sources in affecting adoption.  
+
+  Business case for the innovation: The costs, risks, and returns of adopting, producing, 
+
+marketing, and distributing the innovation (or innovation package) relative to the motivations and 
+incentives of potential adopters and other private actors in the value chain. 
+
+  The external context or spaces: In the case of irrigated rice in the Senegal River Valley, a review 
+
+of the documents collected narrowed the relevant spaces to: the policy enabling environment; the 
+input supply chain; the downstream market; access to credit and insurance;; and institutions and 
+partnerships. The review team determined that the role of gender, was at best marginally relevant 
+to scaling up in this case and therefore these issues are not discussed in this case. (The agro-
+ecological space is covered in the background section). 
+
+  Scaling up strategy and activities: In rice in Senegal, there were a number of complementary 
+
+scaling strategies in place at the same time; those of the GOS for food security, those of donors to 
+support the rice sector, and that of PCE in particular, the lead organization in this case. While the 
+objectives of these actors remained fairly constant, their strategy and activities change over time 
+based on experience and binding constraints as they appeared. Indeed, this is a notable conclusion of 
+this study that strategy needs to be adaptive. In this context, this report focuses primarily on PCE’s 
+strategy and activities to: improve farmers productivity and scale; address gaps or otherwise 
+strengthen the market system and external context; and facilitate other actors both private and 
+public sector, to drive or support the scaling up process, including the state-owned agricultural bank 
+and insurance agency, rice millers, and agricultural machine leasing companies. 
+
+  Potential scale of adoption (the market space): The number of farmers who do or can grow 
+
+rice given agro-ecological conditions; the effect that the innovation may have on the potential 
+number of farmers growing rice or the area of rice planted; the implications of full-scale adoption 
+for the overall production of rice, its absorption by the market, its impact on rice prices, and the 
+profitability of growing rice. 
+
+The methodology for this case study involved four data collection techniques: documents reviews (DR), 
+key informant interviews (KIIs), focus group discussions (FGDs), and analysis of quantitative data from 
+secondary sources (QDSS). These approaches were used to collect qualitative and quantitative data 
+from a diverse and large number of stakeholders associated with the rice value chain and the large 
+enabling environment of Senegal agriculture. The sources and key spaces and drivers for the data 
+collected are summarized in Table 1. Each cell notes whether relevant data was provided for a particular 
+topic, ranked on a scale of 1 (X) to 4 (XXXX) as to the importance and utility of the information 
+gathered. Four (4) represents most important.  
+
+ 
+
+ 
+
+Scaling Up of Sahel Rice Varieties in Senegal  
+
+3 
+
+ 
+
+TABLE 1: DATA COLLECTION OVERVIEW 
+
+Data Source 
+
+Data 
+
+Collection 
+Method-
+ology 
+
+Innovation 
+Character-
+
+Adoption 
+Drivers & 
+
+istics 
+
+Results 
+
+Data Collected 
+Potential 
+Scale & 
+Output 
+Markets 
+
+Business 
+
+Case 
+
+External 
+Context 
+
+Scaling 
+
+Strategy & 
+Activities 
+
+X 
+
+XXX 
+
+ 
+
+ 
+
+X 
+
+ 
+
+ 
+
+X 
+
+ 
+
+XXX 
+
+XX 
+
+X 
+
+X 
+
+XX 
+
+XX 
+
+XX 
+
+XXX 
+
+XX 
+
+XXXX 
+
+XXX 
+
+XXX 
+
+XXXX 
+
+XX 
+
+XX 
+
+KII, DR 
+
+XXXX 
+
+XXXX 
+
+XX 
+
+XXX 
+
+XX 
+
+XXXX 
+
+X 
+
+KII, FGD 
+
+XXX 
+
+XX 
+
+XXX 
+
+XXXX 
+
+XXXX 
+
+XX 
+
+XX 
+
+XXXX 
+
+KII, FGD 
+
+X 
+
+X 
+
+KII, QDSS 
+
+KII, DR, 
+QDSS 
+
+KII, DR, 
+QDSS 
+
+Rice farmers and 
+organizations (CEDAF) 
+Rice research 
+institutions (ISRA, 
+AfricaRice) 
+GOS Ministry of 
+Agriculture Central 
+Office (DAPS) 
+GOS Central Statistical 
+Office 
+NGOs working in 
+agriculture  
+GOS agencies and 
+parastatals (SAED, 
+ANCAR,) 
+Financial institutions 
+(CNCAS, CNAAS) 
+USAID and other 
+donors (JICA) 
+USAID implementing 
+partners (PCE) 
+National and regional 
+farmers’ associations 
+(CNCR, FPA) 
+Rice mills and 
+wholesale buyers 
+(UNACOIS Teranga 
+Enterpise CNT, 
+SUARL) 
+ 
+The data collection took place during a three-week period in January 2016 in Dakar and the major cities 
+and towns along the SRV from Saint Louis to Matam. The majority of rice production in that region is 
+located within 10 km of the river valley. The review team spent six working days conducting field 
+research (KIIs and FGDs) along this route, stopping in all the major commercial towns along the way: 
+Richard Toll, Ross Bethio, Podor, and Dagana. This allowed for a diversity of farmer experience across 
+the region in terms of proximity to markets, different types of irrigation infrastructure and systems, and 
+different quality of agro-ecological micro-zones for growing rice.  
+
+KII, DR, 
+QDSS 
+
+XXXX 
+
+XXX 
+
+XXX 
+
+XXXX 
+
+XXXX 
+
+XXX 
+
+XXXX 
+
+XXXX 
+
+XXX 
+
+XX 
+
+XXXX 
+
+XXXX 
+
+XXX 
+
+XXX 
+
+XX 
+
+XXX 
+
+XX 
+
+ 
+
+XXX 
+
+KII, DR 
+
+XX 
+
+KII 
+
+XX 
+
+X 
+
+XX 
+
+KII 
+
+KII 
+
+XX 
+
+X 
+
+During the three-week period, the review team was able to interview a large number of stakeholders. 
+This included seven FGDs with rice farmers from a variety of public, village, and private irrigation 
+schemes, agricultural research organizations involved in rice breeding (e.g., AfricaRice, ISRA), and several 
+large-scale rice processors. The team met multiple times with relevant GOS ministries, parastatals, and 
+consultative bodies, including Programme National d’Autosuffisance en Riz (PNAR, which coordinates 
+and implements the overall national rice self-sufficiency policy), Société d’Aménagement et d’Exploitation 
+des Terres du Delta du Fleuve Sénégal et des Vallées du Fleuve (SAED, which is in charge of building and 
+maintaining public irrigation infrastructure and providing extension support), Agence Natonal de Conseil 
+
+Scaling Up of Sahel Rice Varieties in Senegal  
+
+4 
+
+ 
+
+Agricole et Rural (ANCAR), Direction Régionale du Développment Rural (DRDR, Ministry of 
+Agriculture central departments in charge of extension), and the central statistical office. In addition to 
+meeting with USAID staff and its PCE/Ntaal Mbay team in both Dakar and the SRV, the review team also 
+met with the Japan International Cooperation Agency (JICA) team which has been heavily involved in 
+improving the quality of rice processing. 
+
+The review team was able to gather some quantitative data on rice production and cultivation from 
+Ntaal Mbay (the successor project to PCE), SAED, the Ministry of Agriculture (MOA), and the PNAR. 
+SAED and Ntaal Mbay provided data in several Excel spreadsheets, which the review team used to 
+create a number of time series (e.g., on production, area planted, and yields) that form the basis for 
+much of the statistical analysis presented below. The team complemented its quantitative analysis with 
+an exhaustive document review, especially of a number of studies that PCE commissioned and PCE’s 
+annual reports.  
+
+D. Structure of the Report 
+
+Section II of this report provides background information on irrigated rice cultivation in the SRV. It 
+covers the history of the introduction of new rice varieties beginning in the mid-1990s amidst the 
+withdrawal of the GOS from an active role in the rice sector, the decline of the rice value chain 
+between 1995 and 2008, and the shift in the policies of the GOS towards targeting rice self-sufficiency. 
+
+In the review team’s other case studies, Section III specifies the technology being scaled. However, in 
+this case Sahel rice varieties, narrowly defined, were already at scale,8 and though PCE introduced some 
+new varieties after 2010—Sahel and others—that was one of its least successful activities. Instead what 
+was being “scaled” was a package of innovations. This package, which was developed over time in 
+response to challenges as they arose and/or were identified, included both a number of GAPs and 
+various innovations to strengthen, rehabilitate or otherwise fills gaps in the value chain. In this case, for 
+the purposes of exposition only, the former are presented in Section II while those pertaining to the 
+value chain are described in Section III. Section III also assesses the business case for Sahel rice 
+production by farmers and other actors in the rice value chain. Given the extensive subsidies from the 
+GOS for multiple aspects of rice production, it could be that scaling was an artificial construct of these 
+subsidies and not really commercially sustainable.  
+
+Section IV looks at the scale that this package of innovations, as embodied in the potential for irrigated 
+rice production in the SRV, has and could have reached as the value chain recovered, in terms of levels 
+of adoption along with their impacts on yields and production levels.  It looks at the issue of whether 
+there were potentially any demand constraints on an increase in the production and supply of rice (e.g., 
+adverse price effects as a result of increased production of irrigated rice).  
+
+Section V describes the status of the value chain at the beginning of scaling efforts post-2008. It identifies 
+where there were gaps or weaknesses constraining scaling (i.e., whether there was adequate space for 
+scaling up). It then goes on to discuss what PCE and others did to create sufficient space and relieve 
+existing constraints, and the success of those efforts. Subsections here include:  
+
+  The production and certification of quality rice seed.  
+  The downstream pathways and institutions for farmers to store, process, and sell rice and 
+
+market linkages.  
+
+                                                      
+
+88 According to Africarice, “The proportion of the total area under the Sahel varieties in the region increased from 3% in 
+1995/96 to 72% in 2000/2001.”  See Africarice, “Irrigated Varieties.  Improved Varieties for Irrigated Rice Farming in Africa” 
+http://www.africarice.org/warda/irrigated.asp  By 2000, Sahel 108 had reached 100% adoption. 
+
+Scaling Up of Sahel Rice Varieties in Senegal  
+
+5 
+
+ 
+
+  The complementary inputs space, including credit, insurance, and mechanization. 
+  The policy and political space (i.e., the policies, laws, and regulations that affect, support, and 
+
+constrain irrigated rice production in the SRV). 
+
+Section VI quantifies scaling up over time and space in terms of the impact of the value chain activities 
+on the area, yields, and productivity of Sahel rice in the SRV.  
+
+The “Conclusions” and “Lessons Learned” sections focus on addressing the overall research questions: 
+the characteristics of the innovation, context, and strategy that facilitated or hindered scaling up and 
+sustainability. Particular emphasis is given to the role of commercial actors versus the omnipresent 
+public sector, and the generalizability of the Senegalese Sahel rice case to other countries, value chains, 
+and innovations. 
+
+E.  Team Composition 
+
+This review was conducted by Dr. Richard Kohl of MSI. Dr. Kohl is an economist and internationally 
+recognized expert on scaling up, and has been working with USAID/BFS and Missions in improving 
+scaling up strategies for FTF programs and innovations for the past two years. Additional research and 
+logistical support was provided by Professor Katim Toure, a Senegalese national and university professor 
+with expertise in agriculture and the irrigated rice value chain in particular. Extensive home office 
+support was also received from Gwynne Zodrow, a technical manager and monitoring and evaluation 
+expert with MSI.  
+
+II. BACKGROUND ON RICE IN SENEGAL 
+
+Senegal is a small country in Francophone West Africa, bordering on both the Atlantic Ocean and the 
+Sahel. Like many developing countries, agriculture accounts for a large share of employment and a small 
+share of GDP. Between 2003 and 2007, prior to the start of scaling, the share of agriculture in GDP 
+fluctuated between 6.7 and 8.3 percent.9 Rice is the staple cereal and is eaten at least twice daily by 
+most Senegalese households; however, because of the country’s historical poverty, the Senegalese 
+historically purchased cheaper rice (e.g., broken rice). While some urban, higher-income households 
+have developed a taste (and the means) for unbroken rice, aromatic varieties, and other higher-priced 
+quality and varieties, broken rice remains the preference of most Senegalese, especially in rural areas.  
+
+Senegal is the second largest rice importer in Africa, ahead of Côte d'Ivoire and 
+behind Nigeria. Senegal's imports reached 1,113,000 MT in 2005, with net imports 
+estimated at 854,000 MT [before declining during the food crisis]. Consumers’ preference 
+is for 100 percent broken rice originating from Asia, mainly Thailand and India…. Per 
+capita rice consumption continues to grow and is estimated at 70 to 75 kilograms and 
+total annual consumption is estimated at 700,000 MT. Local rice production meets about 
+20 percent of the country's needs and 30 percent of this production is used for subsistence. 
+In 2005/06, local production of rice paddy was estimated at 265,000 MT.10  
+
+                                                      
+
+9 Source: Ministere De L’agriculture, Government of Senegal, PROGRAMME AGRICOLE 2008-2009 : La Grande Offensive 
+Agricole pour la Nourriture et l’Abondance. VERSION DU CIM DU 9 MAI 2008, p.13 http://inter-
+reseaux.org/IMG/pdf_Textegoana-mai08.pdf 
+10 Agriculture in Senegal. https://en.wikipedia.org/wiki/Agriculture_in_Senegal 
+
+Scaling Up of Sahel Rice Varieties in Senegal  
+
+6 
+
+ 
+
+A. Geography and Seasonality  
+
+Rice is grown almost exclusively by smallholders and emerging farmers; there is no large-scale 
+commercial production of rice. Most rice is grown either in the Casamance—the part of Senegal south 
+of the Gambia—in areas around Velingara, Goudomp, Kolda, and Bounkiling. Rice in the Casamance is 
+mostly rainfed. Irrigated rice is found almost exclusively in the SRV. While as of 2010 the SRV accounted 
+for only about one-third of total cultivated surface area (around 35,000 ha out of 108,000 nationally), it 
+accounted for almost two-thirds of national rice production (214,000 metric tons (mt) out of 339,000 
+mt) because of much higher productivity. According to the PNAR, average yield in the SRV was 6.1 
+mt/ha in 2010, compared with 1.7 mt/ha in rainfed areas.11  
+
+This yield advantage is reinforced by the fact that there are two seasons in the SRV, the saison hivernale 
+(wet, cooler, rainy winter season) and the saison chaud (hot, dry, summer season). In the saison chaud, 
+as there is no rainfall, crops require irrigation throughout the season, which goes from planting from 
+mid-February and mid-March to harvesting in June-July. Planting in the saison hivernale is in June/July and 
+harvesting from October through December. The hivernale was historically the season when most rice 
+is grown in the SRV, despite the fact that yields have been, and remain, higher in the saison chaud, 
+primarily because it was cheaper as less irrigation and associated pumping expenses were required.12  
+
+Average yields in the SRV for the 2003–2010 period were 5.5 mt/ha in the saison hivernale versus 6.4 
+mt/ha in the saison chaud. Up until the food crisis of 2007-2008, hivernale rice accounted for about 85 
+percent of both production and surface area planted in the SRV. Even after farmers expanded 
+production in the saison chaud following the food crisis, production in that season remained around 60 
+percent as of 2010. Some farmers grew rice in both seasons, and usually not on the same land because 
+they could not harvest and sell their crop, repay their loans, get approved for a new loan, and engage in 
+land preparation in sufficient time. This was due to a combination of factors—delays in credit approval, 
+bottlenecks in payments and processing due to cash flow constraints on processors, and shortages of 
+machinery services for harvesting and land preparation. 
+
+FIGURE 1: SENEGAL RIVER VALLEY AND DAKAR 
+
+                                                      
+
+11 Rice statistics were drawn from a variety of sources and combined to create consistent time series. These sources include 
+Ntaal Mbay, the GOS Department of Projections and Statistical Analysis (DPSA), PNAR, and SAED. 
+12 This is why the saison chaud is also called the contre-saison (loosely translated as the off-season) in the SRV. 
+
+Scaling Up of Sahel Rice Varieties in Senegal  
+
+7 
+
+ 
+
+ 
+
+The SRV begins in the delta region with the regional capital, Saint Louis, and has four sub-regions: 
+Dagana, Podor, Matam, and Bakel. From Dagana to Matam is 216 miles or 260 miles by road. Dagana is 
+in the delta and is the most heavily irrigated, fertile, and appropriate sub-region for growing rice. As one 
+moves upstream from Dagana to Podor to Matam, the intensity of irrigation decreases, as does the 
+density of value chain institutions such as large rice processing mills, machinery service providers, and 
+access to urban markets. As shown in Table 2 below, Dagana accounts for two-thirds of area cultivated 
+and production, with another 21 to 22 percent in Podor. Matam and especially Bakel historically 
+contributed little to SRV rice production, mostly because of the lack of irrigation and value chain 
+infrastructure, and the soil is less suitable for rice, and more suitable for onions, tomatoes, and other 
+horticulture crops which are also more profitable. In sum, most rice is grown in the very small region 
+between Rosso and Podor. 
+
+TABLE 2: SRV RICE PRODUCTION, CULTIVATION AND YIELDS PRIOR TO PCE AND 
+
+OTHER INTERVENTIONS 
+
+ 
+
+ 
+
+Surface Area Cultivated (ha) 
+
+Production (mt) 
+
+Yield (mt/ha) 
+
+Dagana  Podor  Matam  Bakel  Dagana  Podor  Matam  Bakel  Dagana  Podor  Matam  Bakel 
+
+2000/01 
+
+16,738 
+
+5,678 
+
+3,311 
+
+225 
+
+67,287 
+
+22,826 
+
+13,310 
+
+905 
+
+4.02 
+
+4.02 
+
+4.02 
+
+4.02 
+
+2001/02 
+
+16,214 
+
+5,315 
+
+3,215 
+
+226 
+
+91,771 
+
+30,083 
+
+18,197 
+
+1,279 
+
+5.66 
+
+5.66 
+
+5.66 
+
+5.66 
+
+2002/03 
+
+14,244 
+
+5,828 
+
+2,869 
+
+256 
+
+82,045 
+
+33,569 
+
+16,525 
+
+1,475 
+
+5.76 
+
+5.76 
+
+5.76 
+
+5.76 
+
+2003/04 
+
+16,954 
+
+5,779 
+
+3,421 
+
+143 
+
+99,341 
+
+33,946 
+
+20,198 
+
+845 
+
+5.86 
+
+5.87 
+
+5.91 
+
+5.92 
+
+2004/05 
+
+23,255 
+
+6,696 
+
+3,501 
+
+2005/06 
+
+22,023 
+
+6,463 
+
+3,617 
+
+2006/07 
+
+18,983 
+
+5,475 
+
+3,253 
+
+95 
+
+63 
+
+80 
+
+135,909  39,365 
+
+20,551 
+
+331 
+
+5.84 
+
+5.88 
+
+5.87 
+
+3.50 
+
+125,065  37,542 
+
+21,050 
+
+250 
+
+5.68 
+
+5.81 
+
+5.82 
+
+4.00 
+
+96,929 
+
+30,890 
+
+16,462 
+
+320 
+
+5.11 
+
+5.64 
+
+5.06 
+
+4.00 
+
+Average 
+
+18,345 
+
+5,890 
+
+3,312 
+
+155 
+
+99,764 
+
+32,603 
+
+18,042 
+
+772 
+
+5.42 
+
+5.52 
+
+5.44 
+
+4.69 
+
+Share of 
+
+SRV 
+
+66% 
+
+21% 
+
+12% 
+
+0.6% 
+
+66% 
+
+22% 
+
+12% 
+
+0.5% 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Source: Ntaal Mbay 
+
+BOX 1: TYPES OF IRRIGATION IN THE SRV 
+
+Not only is the SRV differentiated as one moves downstream, but there are also important differences in types of 
+
+irrigation infrastructure. There are basically four categories of irrigation: 
+
+1.  Grand aménagement (GA): Large, publicly constructed primary and secondary irrigation canals 
+
+constructed, maintained, and managed by SAED, that irrigate prime land in large areas. Farmers who 
+cultivate land in a GA are members of hydraulic unions set up by the GOS. 
+
+2.  Aménagement intermédiaire (AI): Similar to GA but smaller in size and surface area. 
+3.  Périmètre irrigué villageois (PIV): Small-scale, village-operated and maintained irrigation schemes that 
+were also constructed by SAED but at a scale that allowed for traditional village cultivation practices. 
+4.  Périmètre irriguée privée (PIP): Constructed and maintained by private individuals or private farmers’ 
+
+associations, these vary widely in terms of size and quality depending on the means of the owners. 
+However, the vast majority are more poorly constructed and maintained than the public sector schemes. 
+
+There are some important differences between the four schemes in addition to size. The PIVs and PIPs are usually 
+of lower quality, lack tertiary canals and access roads, and often lack drainage. For these and other reasons, 
+particularly the lack of drainage, they have a tendency to build up mineral salts from repeated irrigation, and the 
+land becomes unusable. 
+
+During the post-structural adjustment period, lack of maintenance from SAED and private actors led 
+significant areas that have irrigation infrastructure to become unusable. Of the remaining usable land, an 
+additional portion was not cultivated, often for lack of financial resources to access inputs. Thus at the 
+
+ 
+
+Scaling Up of Sahel Rice Varieties in Senegal  
+
+8 
+
+ 
+
+beginning of scaling efforts, there were somewhere between 80,000 and120,000 ha aménagée (with 
+infrastructure), out of which 50,000 to 60,000 ha were cultivatable. Between 2000 and 2007, irrigated 
+rice actually planted fluctuated between 23,000 to 33,500 ha.  
+
+B. Post Structural Adjustment and the Decline of the Irrigated Rice 
+
+Value Chain 
+
+The reasons for the stagnation in yields and decline in area cultivated are three-fold: (1) the steady 
+regression of irrigation infrastructure; (2) the elimination of several state-sponsored support institutions; 
+and (3) the failure of private value chain actors to adequately fill the gap left as the state retreated. The 
+disengagement of the state was a consequence of structural adjustment agreements between the GOS 
+and the IMF and World Bank in the first half of the 1990s. Prior to this policy change, the state provided 
+for marketing, distribution, processing, and financial support. In addition,  
+
+… [t]he state’s price stabilization fund operated an import monopoly; it organized the 
+marketing and fixed the prices of both imported and local rice. The price of broken rice 
+was fixed at around 50 percent of the price of whole rice. Within this system, a substantial 
+levy was imposed on imported rice; in 1994/95, the year before the system was abolished, 
+the difference between the cif world market price and the wholesale price in Senegal 
+amounted to 28-31 FCFA/kg (compared with 8-19 FCFA/kg under the liberalized conditions 
+introduced after 1996). Some of the revenue from the import monopoly was used to 
+promote local production; however, a substantial proportion went towards funding the 
+general state budget and the Senegalese Progressive Union party [emphasis added]. 
+
+The currency was devalued by 100 percent, imports were liberalized and privatized, and 
+the role of the rural development associations was reduced to a handful of core tasks such 
+as the granting of loans, agricultural extension and providing support to private producers 
+and processing companies. The transfer of responsibility for rice imports from the state to 
+the private sector proceeded smoothly, despite fears to the contrary, although over time a 
+significant concentration process has occurred. With the liberalization of imports, the 
+state’s levies and quota system were abolished and the basic tariff now stood at around 15 
+percent. Rice imports increased dramatically as a result. [Emphasis added].13 
+
+In the SRV, this meant the privatization of the large rice mills and of agricultural machinery services that 
+had been owned and operated by SAED. Similarly, SAED’s ability to provide infrastructure maintenance, 
+technical assistance, and agricultural extension services was dramatically curtailed both as a matter of 
+policy and because of reductions in their financial and operational capacity (e.g., fewer human resources 
+and agricultural machines). Access to mechanical services became increasingly confined to those farmers 
+working land on GAs and AIs, with limited access by PIPs and almost none by PIVs. 
+
+While the transfer of rice importing to the private sector went smoothly, this was not the case for 
+other parts of the rice market system. By and large this support and these services were not replaced by 
+the private sector as it too declined. Large rice mills declined in number, operating capacity, and the 
+quality of the rice they produced as their cleaning and sorting capabilities decreased. The privatized rice 
+mills suffered from severe cash flow constraints, for investment and especially for operating funds to buy 
+rice, process it, and sell it. Many shut down or limped between 1995 and 2010. As a result, downstream 
+linkages to urban markets were disrupted. Farmers increasingly turned to small, local millers called 
+décortiqueses (literally dehullers) to process their rice for their own consumption and local sales. 
+
+                                                      
+
+13 Michael Brüntrup, Thao Nguyen and Christian Kaps, “The rice market in Senegal” Agriculture & Rural Development 
+1/2006 , pp. 23-24. http://www.rural21.com/fileadmin/_migrated/content_uploads/ELR_The_rice_market_in_Senegal_0106.pdf 
+
+Scaling Up of Sahel Rice Varieties in Senegal  
+
+9 
+
+ 
+
+According to studies done by and interviews with PCE and JICA, the décortiqueses produced much 
+lower quality rice even compared to the degraded large rice mills, as they did not have the facilities to 
+clean, sort, or polish rice. At the time of the food crisis in 2007–2009, there were only 15 large 
+processors active in Dagana compared with 112 décortiqueses; no large processors were active in 
+Podor, Matam, or Bakel. All processing was done in those areas by 143 décortiqueses. 
+
+Rice in the SRV became known for having uneven quality and color and a significant presence of stones 
+and other impurities. Farmers reverted to selling their extra rice on local markets or to local 
+intermediaries (banabana) who transported rice to neighboring areas of Senegal as well as across the 
+Mali and Mauritania borders. While farmers continued to sell surplus rice and did not revert to being 
+subsistence or safety-first farmers, there was effectively a degree of decommercialization of the SRV rice 
+sector.  
+
+The effects of the decline of millers and market access created a vicious circle in terms of credit and 
+production. The state-owned agricultural bank, Caisse Nationale de Crédit Agricole du Sénégal 
+(CNCAS), was also partly privatized as part of structural adjustment. Even though the state and civil 
+society stakeholders retain a majority ownership, CNCAS was put on a more commercial footing. As a 
+result of this tighter policy, farmers and millers who were in arrears or default were unable to access 
+credit, limiting their ability to buy inputs for the next rice season or operate their mills. In years of poor 
+production, millers and farmers were unable to repay their CNCAS loans, so that in the following 
+seasons, CNCAS lending to farmers was largely confined to farmers’ organizations associated with GAs, 
+but not PIVs or PIPs. While the GOS periodically provided resources to CNCAS to forgive bad debt 
+(usually after presidential elections), the resumption of credit lasted only until the next poor harvest. As 
+a result, a very small proportion of rice farmers had access to credit during this period, around one-
+third of the total.14 CNCAS did not during this period offer either commercialization or equipment 
+credit, further constraining the ability of the private sector to offer these services. Without access to 
+credit, indebted farmers and millers were not able to earn enough to repay bank loans, falling further 
+behind. 
+
+The problems with processing, access to credit, and downstream market linkages were compounded by 
+governance issues. The governance structures and resources of the hydraulic unions in the GAs and AIs 
+were (and remain) much stronger than those of PIVs and PIPs. GAs and AIs received significant technical 
+support from SAED and other government agencies; a state-sponsored consulting firm even provided 
+assistance with financial accounting and management, crop calendars, and planning. Nonetheless, a 
+noteworthy characteristic of the SRV—which was to facilitate scaling up and may not be present in 
+other contexts—is that farmer organizations are omnipresent. Almost all rice farmers are highly 
+organized and members of some form of farmers’ association or economic interest group (GIE – 
+groupement d'intérêt économique). 
+
+C. The World Food Crisis of 2007–2009 and the Government of 
+
+Senegal’s Policy Response 
+
+Despite domestic production, Senegal has consistently been one of the largest rice importers in the 
+world15. In Africa, it is second only to Nigeria, and it varies in international rankings between seventh 
+and ninth, depending on the year. In recent years, Senegal has had to import over one million metric 
+
+                                                      
+
+14 Source: SAED Statistical Yearbook. 
+15 See, for example the World Atlas website, http://www.worldatlas.com/articles/the-largest-rice-importers-in-the-world.html   
+According to their data, as of 2015 Senegal was ranked 9th in the world, after China, Nigeria, the Philippines, Iran, Indonesia, 
+Saudia Arabia, the EU and Iraq.  It is noteworthy that the EU imported 1,500 tons of rice vs. Senegal’s 1,100, despite the 
+differences in population. 
+
+Scaling Up of Sahel Rice Varieties in Senegal  
+
+10 
+
+ 
+
+tons to meet domestic demand, and Senegal’s imports have increased steadily over the last decade 
+despite the efforts of the GOS to stimulate increased production since 2006.  
+
+FIGURE 2: SENEGAL RICE IMPORTS IN METRIC TONS, 1995–2015 
+
+Senegal Rice Imports
+
+1300
+
+1200
+
+1100
+
+1000
+
+900
+
+800
+
+700
+
+600
+
+500
+
+400
+
+1995 1996 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015
+
+Source: FAOSTAT, Rice – total (Rice Milled), annual averages 
+
+ 
+
+As can be seen in Figures 2 and 3, the spike in world rice prices between 2006 and 2009 had a substantial impact on Senegal. 
+Moving closely with world prices despite some government intervention, domestic rice prices doubled at their peak in 2008. 
+This caused rice imports to plummet by around 30 percent before resuming their steady climb in 2010. Interestingly enough, 
+Senegal rice prices tended to track Thai prices until Thailand prohibited exports during the crisis. Senegalese importers shifted 
+towards Indian rice, especially as India had large supplies of broken rice that both suited Senegalese tastes and was significantly 
+cheaper. Senegalese importers were also under pressure from the GOS to keep rice prices down, and so substituted the 
+cheaper Indian rice. 
+
+FIGURE 3: PADDY RICE PRICES, SELECTED COUNTRIES 
+
+India 100 27 Producer Price (US $/tonne)
+(USD)
+
+Senegal 195 27 Producer Price (US
+$/tonne) (USD)
+
+Thailand 216 27 Producer Price (US
+$/tonne) (USD)
+
+400
+
+350
+
+300
+
+250
+
+200
+
+150
+
+100
+
+2000
+
+2001
+
+2002
+
+2003
+
+2004
+
+2005
+
+2006
+
+2007
+
+2008
+
+2009
+
+2010
+
+2011
+
+2012
+
+Source: FAOstat 
+
+The price spike spurred the GOS to action. This was because of both concerns about the domestic 
+political backlash of higher prices and a lack of food security among politically all-important urban 
+consumers. 
+
+Scaling Up of Sahel Rice Varieties in Senegal  
+
+ 
+
+11 
+
+ 
+
+The rice crisis led to an increase in the prevalence of food insecurity in urban areas. City 
+dwellers in countries with high rice consumption levels spend 20 to 25% of their income on 
+rice. In such contexts, the spike in rice prices had serious implications for household food 
+security16. 
+
+The change in GOS policy also was driven by the impact on Senegal’s balance of trade. Despite the 
+decline in import volumes, Senegal’s rice import bill jumped from CFAF 130 billion in 2005 to nearly 180 
+billion in 2009 (from $220 million to $308 million at 2016 exchange rates). The GOS embraced a policy 
+of pursuing self-sufficiency in rice, setting a target for domestic production of one million metric tons 
+(mt) of milled rice by 2012 (later reset to 2017 when this quickly showed itself to be unachievable). The 
+GOS expected 800,000 mt to come from irrigated rice (mostly the SRV) and the rest to be rainfed. As 
+milled rice is about two-thirds the weight of paddy rice, this translated into production of around 1.5 
+million mt of paddy rice nationally and 1.25 million mt of irrigated rice. Almost all of the irrigated rice 
+would have to come from the SRV. 
+
+TABLE 3: RICE PRODUCTION BY SEASON, TOTAL IN THE ENTIRE SENEGAL RIVER 
+
+VALLEY, 2006/7 TO 2011/12 
+
+ 
+
+ 
+
+Riz d'hivernage 
+
+Area 
+(ha) 
+
+Prodt° 
+(MT) 
+
+Yield 
+
+(MT/ha) 
+
+Riz de saison chaude 
+Yield 
+
+Area 
+(ha) 
+
+Prodt° 
+(MT) 
+
+2006/07 
+
+24,052  122,770 
+
+2007/08 
+2008/09 
+
+2009/10 
+2010/11 
+
+25,863  144,211 
+37,419  223,094 
+
+35,435  174,163 
+34,657  191,069 
+
+2011/12 
+
+32,623  168,360 
+
+Average  31,675  170,611 
+
+5.1 
+
+5.6 
+6.0 
+
+4.9 
+5.5 
+
+5.2 
+
+5.4 
+
+3,740 
+
+21,832 
+
+13,219  100,141 
+22,764  148,076 
+
+17,415  107,570 
+21,419  145,248 
+
+29,237  200,109 
+
+17,966  120,496 
+
+Source: Ntaal Mbay, SAED and PNAR 
+
+Total 
+
+Area (ha) 
+
+Prodt° (MT) 
+
+Yield 
+
+(MT/ha) 
+
+27,792 
+
+39,082 
+60,183 
+
+52,850 
+56,075 
+
+61,859 
+
+49,640 
+
+144,601 
+
+244,352 
+371,170 
+
+281,733 
+336,316 
+
+368,469 
+
+291,107 
+
+5.2 
+
+6.3 
+6.2 
+
+5.3 
+6.0 
+
+6.0 
+
+5.8 
+
+(MT/ha) 
+
+5.8 
+
+7.6 
+6.5 
+
+6.2 
+6.8 
+
+6.8 
+
+6.6 
+
+To achieve these targets, the GOS initiated the Stratégie Nationale de Développement de la Riziculture 
+(SNDR – National Rice Development Strategy) in 2008. It created the Programme National 
+d’Autosufficanse en Riz (PNAR or National Program for Rice Self-Sufficiency) to translate this strategy 
+into action. This was complemented by emergency campaigns to deal with the crisis, specifically the 
+Grande Offensive pour la Nourriture et l’Abondance (GOANA – Grand Offensive for Nutrition and 
+Abundance) which expected to dramatically accelerate cereal production immediately. The budget for 
+this big push was set at CFAF 355 billion or $600 million, though at the time of the announcement the 
+GOS had funding of only CFAF 32.2 billion.17 For rice, this included CFAF 13 billion for tractors and 2.4 
+billion for combines.  
+
+                                                      
+
+16 Rice crisis, market trends, and food security in West Africa.  http://www.oecd.org/swac/publications/47853480.pdf  It is 
+produced by consortium of organizations, including CILSS, CIRAD, FAO, FEWSNET, and the WFP (World Food Program).  It 
+is funded by the French Ministry of Foreign Affairs. 
+17 GOANA was widely criticized at the time, including by the Conseil National de Concertation et de Coopération des Ruraux 
+(CNCR – the National Council for Rural Cooperation and Consultation), the national quasi-official farmers’ organization. The 
+various criticisms included fact that the goals were way too ambitious, the cost per ton was way too high, there was no way the 
+GOS would be able to obtain and distribute sufficient agricultural inputs in a timely way, and that this was simply opening the 
+door to vast corruption by organizations without distribution networks. It was also seen as a ploy to give land to the politically 
+favored. The word “gabegie” was widely used, meaning defective and dishonest financial management, or waste. 
+
+Scaling Up of Sahel Rice Varieties in Senegal  
+
+12 
+
+ 
+
+TABLE 4: GOANA* PROGRAM GOALS IN METRIC TONS 
+
+Crop 
+Rice 
+Corn 
+Millet 
+
+Sorghum 
+
+Goals 2008-2009  Actual 2007-2008  Percent Change 
+
+500,000 
+2,000,000 
+1,000,000 
+500,000 
+
+195,000 
+160,000 
+320,000 
+100,000 
+
+256% 
+
+12,500% 
+
+312% 
+500% 
+
+*Grande offensive pour la nourriture et l'abondance  
+
+Source: GOS 
+
+The PNAR had, in principle, authority and resources both to implement its own activities and to guide 
+and coordinate the activities of other public actors working in the sector. Its broad areas of operations 
+included:18 
+
+1.  Development of the rice seed sector. 
+2.  Rehabilitation of irrigation schemes in disuse, building of new schemes, and achieving an average 
+
+cropping intensity of at least 1.5 rice crops per year in these schemes (i.e., increasing double 
+cultivation). It targeted putting into production around 115,000 ha of irrigated rice. 
+
+3.  Providing farmers with access to agricultural equipment for irrigation, harvest, and post-harvest 
+
+4. 
+
+activities (specifically irrigation pumps, tractors, and combines) and rice processing plants. 
+Increased diffusion of integrated crop management options to reduce yield gaps in both irrigated 
+and rainfed systems. 
+
+5.  Better organization of marketing, and the creation of private professional agencies in charge of 
+
+buying, processing, and selling milled rice. 
+
+6.  Development of a coherent input subsidy policy. 
+7. 
+
+Improved access to agricultural credit. 
+
+The specific activities of GOANA and PNAR included massive support for the cereals sector. The GOS 
+targeted rehabilitating 35,000 ha in the SRV alone. It spurred CNCAS to increase credit, which went 
+from CFAF 2.1 to 3.2 billion. Forty percent of this credit went to saison chaud in 2008–2009 compared 
+to zero in 2007–2008. The GOS also increased subsidies on inputs, credit, and other costs to the 
+farmers, and instituted two government buying programs. Subsidies covering the costs of fertilizer and 
+plant treatments alone were valued at CFAF 4.8 billion, and irrigation rehabilitation and investment at 
+CFAF 18.1 billion.19 Part of this was the strategic rice reserve, the so-called Commissariat for Food 
+Security (CSA – Commissariat à la Sécurité Alimentaire). This was complemented by the requirement 
+that government agencies, especially the military, purchase domestic rice. 
+
+D. SRV Rice Production Prior to Scaling of Rice Innovation Package 
+
+The result of these policies, at least according to Senegal’s official statistics, was a dramatic surge in 
+cereals production nationally in 2008–2009. As can be seen in Table 3 above, paddy rice production in 
+the SRV increased by 257 percent over two years, from 144,601 mt in 2006–2007 to 244,352 mt in 
+2007–2008 to 371,170 mt in 2008–2009. Among independent experts in research institutions, SAED 
+staff, rice farmers and processors, and implementers of donor-funded projects, not one person 
+interviewed believed that SRV (and national) rice production had increased anywhere to this extent. 
+There was a general judgment that senior policymakers in the GOS pressured the relevant statistical 
+agencies to inflate the numbers to look like the policy targets were being reached. In this view, the fact 
+
+                                                      
+
+18 Source: http://ricepedia.org/senegal  
+19 Source: http://inter-reseaux.org/IMG/pdf_Textegoana-mai08.pdf  
+
+Scaling Up of Sahel Rice Varieties in Senegal  
+
+13 
+
+ 
+
+that production declined in 2009–2010 to 281,000 tons is a more realistic appraisal of the facts on the 
+ground.  
+
+BOX 2: SCALING, NOT SELF-SUFFICIENCY 
+
+It is important to note that this report is about the scaling up and sustainability of a package of innovations in the 
+irrigated rice sector. While designed to increase yields, area planted and production, it was only expected to 
+contribute to national self-sufficiency in rice, not achieve it. Scaling occurred in the context of a GOS strategy and 
+programs to achieve self-sufficiency, and benefited from those programs and policy context. However, national 
+rice self-sufficiency is impossible to achieve in Senegal, and in the rice consuming countries of West Africa writ 
+large. Thus the success of scaling needs to be measured on its own terms. National self-sufficiency was and 
+remains impossible because the required growth rate to catch up to demand is impossibly high given the large 
+initial gap and the continued rapid growth of demand. Rice consumption in Senegal and West Africa has been 
+growing at 5 to 6 percent annually, up 700 percent since 1961. Population growth alone has averaged nearly 3 
+percent annually for decades and has been augmented by increased incomes and urbanization. While potentially 
+the area cultivated in the SRV could double from levels planted in 2006, yields could increase by 50 percent, and 
+yields in rainfed rice could double, this would not be sufficient. Thus, despite the supposed surge in production 
+between 2006 and 2010, rice imports rebounded to over one million metric tons in 2010 and fluctuated between 
+1.0 and 1.2 million mt for the ensuing years, or 1.5 to 1.8 million mt in paddy equivalent. Domestic paddy 
+production of 250,000 to 429,000 mt remained around 25 to 30 percent of total consumption from 2010 to 2012, 
+far from self-sufficiency. As noted by a joint publication of CIRAD, FAO, WFP and others: 
+
+“Following the measures taken in 2008, the annual rate of increase of West Africa’s rice 
+production has risen from 3.8% to 5.4%. However, the increase in consumption remains at 5 to 
+6% per year, a rate that is too high for local production to make a lasting impact on self-
+sufficiency in the region. Thanks to support measures and to an increase in local production, 
+imports slowed in 2008 and 2009. In 2010, imports began to increase again as international rice 
+prices fell [and incentives to local rice farmers to produce declined]. The increase in production 
+has not, as of yet, led to a lasting reduction in the region’s dependence on international imports.” 
+
+The good news for scaling up was that, assuming that domestic rice was competitive on price and quality, 
+there was ample market demand for the increased production resulting from scaling up given the huge 
+potential for import substitution. Because of this, there was no concern about flooding the market or 
+lowering the prices. 
+
+Source: http://inter-reseaux.org/IMG/pdf_Textegoana-mai08.pdf 
+
+ 
+
+One of the other key takeaways from the effort to increase production was that many SRV rice farmers 
+faced binding constraints on the land they could cultivate during the hivernale season and so increased 
+the area cultivated during the saison chaud as an alternative. This led the total cultivated area, as 
+reported in the official statistics, to increase from 27,792 ha in 2006–2007 to between 50,000 and 
+60,000 ha in 2008–2010. Of the increase of approximately 30,000 ha over that period, around two-
+thirds were in saison chaud. The increase in area cultivated during the saison chaud allowed farmers and 
+institutions like SAED to recognize more broadly what had long been true, namely that yields in the 
+saison chaud were much greater than in hivernale, 1.25 to 1.65 mt/ha higher on average. Despite the 
+higher costs of production, especially energy to run irrigation pumps, rice production in saison chaud 
+turned out to be more productive and profitable. By 2009–2010 the share of saison chaud in total 
+production had risen from 15 percent to between 35 and 45 percent, depending on the year. This was 
+the state of play at the beginning of the scaling efforts led by PCE that started in 2010. 
+
+Scaling Up of Sahel Rice Varieties in Senegal  
+
+14 
+
+ 
+
+III.  CHARACTERISTICS OF THE INNOVATION  
+
+A critical component to studying scaling up is having a clear understanding of the innovation (or 
+technology) under consideration. This includes examining how the technology is embodied in a product 
+or service, as well as whether it is bundled with complementary products and services that are either 
+necessary for successful implementation or have positive synergies with the innovation. This section 
+discusses the rice innovation package that was scaled up in the Senegal River Valley.  
+
+For this particular case study, the identification of the technology package was challenging because what 
+was scaled up was a package of innovations, from Sahel rice varieties to GAPs to value chain innovations. 
+Improved Sahel rice varieties were introduced in the 1990s and were widely adopted quickly in the SRV 
+(Figure 4).  
+
+FIGURE 4: ADOPTION RATE OF SAHEL VARIETIES POST 1995 
+
+Adoption rate of new varieties in Senegal 
+
+1
+
+0.5
+
+0
+
+ 
+
+e
+t
+a
+r
+ 
+n
+o
+i
+t
+p
+o
+d
+A
+
+1995
+
+1996
+
+1997
+
+1998
+
+1999
+
+2000
+
+Sahel 108
+
+Sahel 202
+
+Sahel 201
+
+ 
+
+Source: AfricaRice, Improved Varieties for Irrigated Rice Farming in Africa, http://www.africarice.org/warda/irrigated.asp 
+
+In other words, extensive scaling of Sahel rice varieties was already achieved well before 2010 on 
+existing areas of rice cultivation. While PCE did introduce, with its partners such as AfricaRice, a 
+number of new varieties, uptake has been at best uneven and the majority of farmers continue to grow 
+the same three to four Sahel varieties introduced in the 1990s. However, the introduction of Sahel rice 
+varieties did not translate into anywhere near the potential increase in yields that these varieties can 
+produce (intensive scaling), nor in an expansion of land under rice cultivation in the SRV. The 
+innovations that were introduced by PCE and its partners to support scaling and to achieve these results 
+were: 
+
+1.  GAPs, what came to be known as Le Chemin du Bon Riz (CBR – Pathway to Good Rice), with a 
+
+special focus on the importance of adhering to the crop calendar (i.e. timeliness) and using 
+certified seed. 
+
+2.  Double cropping during both saison chaud and hivernale. 
+3.  Financial products: 
+
+  Crop insurance to cover the value of bank loans taken for inputs. 
+  Commercialization/contractualization, a mix of a warehouse receipts system, negotiated 
+
+prices, which facilitated cashless exchanges and economized on cash flow. 
+
+  Machinery leasing. 
+  Credit to millers and processors to provide cash flow in between purchases of paddy and 
+
+sales of processed rice. 
+
+4.  Strengthening of the rice value chain:  
+
+  Quality seed production. 
+
+Scaling Up of Sahel Rice Varieties in Senegal  
+
+15 
+
+ 
+
+  Quality seed processing and certification facilities.  
+  Supply, quality and increased use of mechanical services for land preparation and harvesting. 
+  Rice processing capacity and quality. 
+  Downstream linkages to formal wholesalers and urban markets. 
+
+What is important to note about this list is that it was part of a scaling strategy with two key elements: 
+(1) identifying immediate barriers to or constraints on scaling up, such as lack of ‘space’ for scaling in the 
+Hartman and Linn framework sense, and (2) simultaneously supporting increased production (supply) 
+and demand for rice. This section discusses the promotion of GAP and double cropping. The other 
+innovations will be discussed in Section VI under scaling strategies. 
+
+A. Good Agricultural Practices 
+
+As part of its efforts to improve the quality and quantity of irrigated rice produced in the SRV, PCE 
+introduced two sets of GAPs. The first was the Chemin du Bon Riz (CBR – Pathway to Good Rice) and 
+the second was the Controle Qualité Riz (CQR – Rice Quality Control). PCE helped support rice 
+quality control by teaching farmers how to monitor the quality of the rice as it developed. It trained 
+farmers when to harvest for maximum quality and yield, both by visual inspection and by providing 
+farmer organizations with mini-hullers that could be used to achieve maximum yield (minimum of 63 
+percent polished rice from paddy, 71.7 percent for quality). The CBR contained 12 steps, listed in Table 
+5 below. 
+
+TABLE 5: GOOD AGRICULTURAL PRACTICES INTRODUCED BY PCE 
+
+Chemin du Bon Riz 
+
+Pathway for Good Rice 
+
+Itinéraire technique 
+
+Critères qualité paddy 
+
+  Variété 
+
+  Maturité 
+
+  Propreté 
+  Humidité 
+
+Crop calendar 
+
+Paddy quality criteria 
+
+  Variety 
+
+  Maturity 
+
+  Cleanliness 
+ 
+
+Percent Humidity 
+
+Préparation du sol 
+
+Soil preparation 
+
+Bonne préparation des semences 
+
+Good seed preparation 
+
+Prépare bien tes semences 
+
+Bonne fertilization minerale 
+
+Bien gérer l’eau 
+
+Lutter contre les adventices 
+
+Récoltez á temps 
+
+Coupe et séchage 
+
+Mise en meule et battage 
+
+Vannage et ensachage 
+
+Source: Projet Croissance Economique (PCE) 
+
+Prepare seeds well 
+
+Good chemical fertilizer 
+
+Manage water well 
+
+Fight against weeds 
+
+Harvest at the right time 
+
+Cut and dry 
+
+Stack and thresh 
+
+Winnow (remove chaff) and put in sacks 
+
+Based on interviews with PCE staff and farmers, the most important innovations in terms of their impact 
+on productivity were using certified Sahel rice seed and respecting the crop calendar. Planting on time 
+had a significant impact on yields, and the same was true for harvesting at the optimal time for quality 
+
+Scaling Up of Sahel Rice Varieties in Senegal  
+
+16 
+
+ 
+
+and quantity. As many farmers had effectively been using grain as seed for years, use of certified seed 
+made a significant difference in yield potential. However, as discussed below, at the start of PCE there 
+existed significant constraints to actual implementation of these practices. Planting on time was often 
+affected by delays in approval of farmers’ bank credit or the lack of bank credit. Planting and harvesting 
+were both constrained by timely access to machinery services. 
+
+Other changes in behavior as CBR was scaled up are illustrated by the testimony of the head of a 
+farmers’ association working 300 ha on a PIV: 
+
+After the PCE training, they started levelling the land, turning over the soil, lowered the 
+amount of seeds from 160 to 80-120 kg/ha, did drainage of the land at the right time, and 
+now harvest at the target maturity. 
+
+An interview with a group of GIEs yielded the following insights: 
+
+  They were able to change from a PIV to a GA thanks to SAED’s obtaining donor financing and 
+
+constructing better, state-managed irrigation infrastructure in 2000.  
+
+  Up until they became a GA, only a fraction of their members were able to access bank credit. 
+
+After 2000 they all had access to CNCAS credit. 
+
+  They produced only in hivernale until 2012. After that they started producing in saison chaud 
+
+because the SAED pushed them to adopt double cropping. 
+
+  They have difficulties in respecting the crop calendar that they learned from PCE: they get their 
+
+input coupons late; they often start late because they have rain in the hot season, which 
+interferes with the harvest from the previous season; there have been delays in getting 
+combines onto their land. 
+
+  They started the CBR training with PCE in 2013–2014.  
+  They used the seed varieties 108, 201, and 202 until 2011. After 2011 they began to try other 
+
+seed varieties, such as 134, 177, 328, 329, and AfricaRice varieties. These were excellent 
+varieties, but they were too tall, and they were easily affected by wind. 
+
+Several characteristics of the components facilitated scaling up of the CBR. First, most farmers were 
+familiar with these GAPs, even if the extent to which they actually implemented them varied. The SAED 
+provided most agricultural extension services in the SRV. The GAPs that PCE was promoting were 
+drawn from a manual that SAED and AfricaRice had jointly developed20 and that SAED had supported 
+and used since the 1990s. (The exception to this was the use of mini-hullers to test rice maturity, which 
+was new.) An additional characteristic which facilitated adoption was that farmers could try the GAPs in 
+small amounts (i.e., on only part of their land). 
+
+The major challenges to adoption of the CBR by farmers were complexity, cost, and access to credit. 
+According to group interviews with farmers and PCE staff, it often would take two to three seasons for 
+a farmer to master all of the CBR. PCE, its implementing partners, and partner farm organizations 
+devoted substantial time and human resources to providing extension services and technical assistance.  
+
+Perhaps the other major innovation in rice production was the promotion of double cropping. 
+According to various interviews, farmers favored growing only during the rainy (hivernale) season up 
+until the food crisis. This was because it was cheaper, as less irrigation was necessary, and also it was 
+encouraged by SAED. According to CNCAS, another reason was the deterioration of the formal rice 
+processing sector. As the millers started to go out of business, the farmers had to do milling and selling 
+
+                                                      
+
+20 Manuel Pratique de Riziculture Irrigué dans la Vallée du Fleuve Sénégal 
+
+Scaling Up of Sahel Rice Varieties in Senegal  
+
+17 
+
+ 
+
+for themselves. This was quite time consuming and prevented farmers from having either the time or 
+the cash flow to grow a second crop. 
+
+B. The Business Case 
+
+The various interventions detailed above had both costs and benefits to paddy producers. On the cost 
+side, the shift to saison chaud production increased irrigation costs significantly, as more water is 
+pumped than in the hivernage. Similarly, many farmers increased fertilizer and pesticide usage to the 
+recommended levels as bank financing became more widely available. Higher production also implied 
+higher harvesting, sacking, and transport costs; for example, mechanical harvesters charge 20 percent of 
+the crop. On the benefits side, quality improvements resulted in higher prices negotiated with millers; 
+prices have steadily increased from around CFAF 100 per kg to 120, 125, and now 130 since 2010. 
+
+There are multiple sources for crop budgets for irrigated rice in the SRV. The ones examined in this 
+report are from SAED, Centres de Gestion et d’Economie Rurale (CGER), and a recent study for 
+USAID by the International Development Group (IDG). A comparison between the three sources 
+showed that their results were within 10 percent of each other, with the exception of the IDG analysis 
+which did not take into account the cost of bank charges, interest, and insurance. This report uses the 
+IDG figures, presented in Table 6A below, as the basis for the business case analysis. 
+
+TABLE 6A: CROP BUDGET FOR IRRIGATED RICE IN THE SRV – IDG 
+
+CFAF PER HECTARE 
+
+Costs 
+
+Cost of Inputs 
+Certified seeds 
+Herbicide 
+Fertilizer 
+Fuel 
+Sacks 
+Rental cost of land 
+Total 
+ 
+Cost of Labor 
+Land prep and offset 
+Family labor 
+Harvesting 20% 
+Total 
+ 
+Other Costs 
+Total 
+ 
+Grand Totals 
+in US$ 
+
+IDG report 
+
+ 
+
+CFAF 36,000 
+CFAF 30,000 
+CFAF 66,280 
+CFAF 94,860 
+CFAF 21,000 
+CFAF 10,000 
+
+IDG plus bank and insurance 
+
+charges 
+
+ 
+
+CFAF 36,000 
+CFAF 30,000 
+CFAF 66,280 
+CFAF 94,860 
+CFAF 21,000 
+CFAF 10,000 
+
+CFAF 258,140 
+
+CFAF 258,140 
+
+ 
+ 
+
+CFAF 25,000 
+CFAF 15,000 
+CFAF 153,600 
+CFAF 193,600 
+
+ 
+ 
+
+CFAF 115,700 
+
+ 
+
+CFAF 567,440 
+
+$ 961.76 
+
+ 
+ 
+
+CFAF 25,000 
+CFAF 15,000 
+CFAF 153,600 
+CFAF 193,600 
+
+ 
+ 
+
+CFAF 143,547 
+
+ 
+
+CFAF 595,287 
+
+$ 1,008.96 
+
+Source: International Development Group, “Cost Benefit Analysis of USAID/Senegal’s Rice Value Chains: Draft Report” 
+December 11, 2015 
+
+Scaling Up of Sahel Rice Varieties in Senegal  
+
+18 
+
+ 
+
+TABLE 6B: CROP BUDGET FOR IRRIGATED RICE IN THE SRV – PAPRIZ  
+
+(RESULTS OF CROP BUDGET ANALYSIS FOR DRY SEASON RICE FOR 25 FARMERS 
+
+FROM 5 GIEs IN THE PILOT AREAS OF PODOR)  
+
+Costs and Benefits 
+
+Grain yield (kg/ha)  
+
+Farm gate price of grain (CFAF/kg)  
+
+Gross benefit  
+
+Total production cost (CFAF/ha)  
+
+o  Land preparation  
+
+o  Farm input (seed, fertilizer, agro-chemicals) 
+
+o 
+
+Irrigation  
+
+o  Labor (transplant and harvest)  
+
+o  Threshing (both manual and machine)  
+
+o  Other costs (materials and transport)  
+
+Net benefit 
+
+Unit production cost (CFAF/kg)  
+
+Unit net benefit (CFAF/kg)  
+
+2009 
+
+4,740 
+
+125 
+
+593,000 
+
+433,000 
+
+23,000 
+
+116,000 
+
+130,000 
+
+52,000 
+
+59,000 
+
+54,000 
+
+2013 
+
+5,820 
+
+125 
+
+727,000 
+
+441,000 
+
+25,000 
+
+87,000 
+
+159,000 
+
+57,000 
+
+66,000 
+
+48,000 
+
+160,000 
+
+286,000 
+
+93 
+
+32 
+
+76 
+
+49 
+
+Source: PAPRIZ (Baseline survey in July 2010; interview survey in October – December, 2013) 
+
+TABLE 6C: CROP BUDGET FOR IRRIGATED RICE IN THE SRV – PCE PARTNER 
+
+AVERAGE (20 GROUPS) 
+
+Category 
+
+Average 
+
+St Dev 
+
+Min 
+
+Max 
+
+Land preparation 
+Seeds 
+DAP fertilizer 
+Urea fertilizer (top dressing) 
+Herbicde 1 
+Herbicide 2 
+Irrigation fuel costs 
+Harvest 
+Threshing 
+Bagging 
+Post-harvest transportation 
+Labor 
+TOTAL PRODUCTION COSTS per ha 
+Surface Area 
+Number of producers 
+Average Hectares Per Producer 
+Average yield (mt/ha) 
+Average paddy price received 
+Gross margin per hectare (US$) 
+
+Gross Margin per Hectare (CFAF) 
+
+Production Cost per KG 
+Paddy Quantity used to repay Bank 
+Credit 
+Share of Production Sold 
+
+Source: PCE 
+
+1,225  
+26,000 
+3,919  
+39,225 
+6,161  
+18,975 
+7,172  
+51,745 
+2,819  
+7,550 
+5,384  
+25,315 
+15,230  
+78,658 
+  
+60,000 
+13,408  
+82,258 
+5,987  
+32,119 
+3,618  
+25,138 
+1,090  
+34,750 
+25,004  
+481,733 
+ 610  
+617 
+ 702  
+612 
+ 
+31 
+1.03 
+6.66 
+ 
+123 
+ $ 229  
+ $ 682  
+CFAF 
+CFAF 
+114,482.15 
+340,845.51 
+CFAF 73.81  CFAF 10.44 
+
+1,390 
+
+55% 
+
+1,532 
+
+21% 
+
+25,000 
+36,000 
+8,600 
+33,210 
+0 
+8,000 
+42,800 
+60,000 
+48,840 
+17,806 
+15,263 
+30,000 
+430,509 
+25 
+14 
+0.24 
+4 
+120 
+$ 116 
+
+57,891 
+
+60 
+
+42 
+
+15% 
+
+27,500 
+48,000 
+40,000 
+68,950 
+15,000 
+32,000 
+103,500 
+60,000 
+104,250 
+41,700 
+31,275 
+35,000 
+534,950 
+2,172 
+2,638 
+66 
+8 
+125 
+$ 1,088 
+
+544,075 
+
+106 
+
+5,610 
+
+85% 
+
+Scaling Up of Sahel Rice Varieties in Senegal  
+
+19 
+
+ 
+
+Total costs per hectare are around CFAF 550,000 to 600,000 (approximately $1000); however, this 
+depends on yields, since some costs are variable, such as sacking, land rental (which is a cost for many 
+farmers), and family labor. This is consistent with the anecdotal information provided in farmer group 
+interviews where participants cited between CFAF 525,000 and 550,000.21 For example, the farmers in 
+one union hydraulique stated that: 
+
+… they borrow around CFAF 270,000 per farmer, that doesn’t include harvest, transport, 
+reaping or irrigation. These cost at least CFAF 125,000 additional plus irrigation costs. They 
+harvest around 125-130 sacks per hectare. They pay 20% of their harvest to the combine 
+owner and have to reimburse 25-30 sacks to the bank, that leaves around 50-55 sacks for 
+you. If they have surplus rice, they sell mostly to the banabana [local trader].22  
+
+Paddy prices historically were around CFAF 100 but over the last several years have ranged from CFAF 
+120 to 130 per kilogram23 with improvements in quality.24 Average production levels went from 5.4 
+mt/ha in 2000–2006 to 5.75 in 2007–2010 to over 6 mt/ha since PCE started working. At paddy prices 
+of CFAF 100/kg, breakeven production levels using modern technology would be between 5.05 and 5.33 
+mt/ha depending on whether or not land rental and family labor costs are included, and around 2.7 
+mt/ha if less capital-intensive technology was used. Using the lower figure of 5.05 and assuming the 
+production yields of individual farmers are normally distributed, at a mean of 5.4 mt/ha, about two-thirds 
+of farmers in any given year were making money. This means that one-third of farmers would be unable 
+to repay their bank loans if they borrowed from the bank, and explains why there were persistent 
+problems of bank arrears for rice farmers through the 2000s. 
+
+As average yields rose to 5.75 mt/ha, not only did farming become more profitable, but the probability 
+of negative returns fell to 25 percent and at 6.0 mt/ha to only 13 percent. At current prices, breakeven 
+production levels fall to between 4.4 and 4.75 mt/ha, and profitability for farmers now exceeds 20–30 
+percent on yields above 6 mt/ha. At the same time, risks have decreased. At an average yield of 6 mt/ha, 
+less than 6 percent of farmers are likely to be unprofitable. However it is important to note that this 6 
+mt/ha average combines very high yields of 6–8 mt/ha during the saison chaude with continuing low 
+yields in the hivernage of around 5–5.5 mt/ha, depending on adverse weather, disease, and pests. At 
+these lower yields, 15–20 percent or more of farmers may be unable to repay their loans, levels which 
+are consistent with farmer interviews, where many farmers complained of being unable to repay because 
+of recent adverse events in the hivernage season. As a result, many farmers are increasingly not planting 
+during the hivernage. 
+
+ 
+
+ 
+
+                                                      
+
+21 The likely difference is that many farmers do not take into account, or defer, the costs of family labor, the rental costs of 
+equipment and sprayers, and irrigation maintenance. Taken together these four items account for about CFAF 62,700. 
+22 Group interview with members of a union hydraulique, Rossbechol, January 2016 
+23 As discussed below, paddy prices are set through negotiations between the relevant social partners: farmers, processors, and 
+other interested parties, with the Ministry of Agriculture.  
+24 According to the IDG report, the increase from CFAF 100/kg was due to an increase in milled rice yields from 57 percent to 
+63 percent of paddy. 
+
+Scaling Up of Sahel Rice Varieties in Senegal  
+
+20 
+
+ 
+
+TABLE 7: BREAKEVEN YIELDS, PROFITS, RATES OF RETURN  
+
+Breakeven Yields/Paddy Prices 
+
+IDC report 
+IDC report plus bank charges 
+IDC report less rental/family 
+IDC report plus bank less rental/family labor 
+
+Profits at Varying Yields and Prices (US$) (on 
+production cost of $1,009) 
+
+5 mt/ha 
+5.5 mt/ha 
+6 mt/ha 
+6.5 mt/ha 
+7 mt/ha 
+7.5 mt/ha 
+8.0 mt/ha 
+
+Rate of Return at Varying Yields and Prices (US$) 
+(production cost of $1,009) 
+
+5 mt/ha 
+5.5 mt/ha 
+6 mt/ha 
+6.5 mt/ha 
+7 mt/ha 
+7.5 mt/ha 
+8.0 mt/ha 
+
+ 
+
+Share of 
+farmers 
+
+losing money 
+given average 
+
+yields 
+
+Paddy Rice Prices 
+
+Breakeven production levels 
+
+Average yield 5.00 
+Average yield 5.50 
+Average yield 6.00 
+Average yield 6.50 
+
+Source: Author’s calculations, SAED crop data, and IDG crop budgets 
+
+CFAF 
+
+100 
+
+CFAF 
+
+120 
+
+CFAF 
+
+125 
+
+CFAF 
+
+130 
+
+5.67 
+5.95 
+5.05 
+5.33 
+
+4.73 
+4.96 
+4.21 
+4.44 
+
+CFAF 
+100/kg 
+
+CFAF 
+120/kg 
+
+ $ (161.50) 
+ $ (76.76) 
+ $7.99  
+ $92.73  
+ $ 177.48  
+ $ 262.23  
+ $ 346.97  
+
+ $7.99  
+ $ 109.68  
+ $ 211.38  
+ $ 313.07  
+ $ 414.77  
+ $ 516.46  
+ $ 618.16  
+
+CFAF 
+100/kg 
+
+CFAF 
+120/kg 
+
+-16% 
+-8% 
+1% 
+9% 
+18% 
+26% 
+34% 
+
+1% 
+11% 
+21% 
+31% 
+41% 
+51% 
+61% 
+
+4.54 
+4.76 
+4.04 
+4.26 
+
+CFAF 
+125/kg 
+
+ $50.36  
+ $156.29  
+ $262.23  
+ $368.16  
+ $474.09  
+ $580.02  
+ $685.95  
+
+CFAF 
+125/kg 
+
+4.36 
+4.58 
+3.88 
+4.10 
+
+CFAF 
+130/kg 
+
+ $92.73  
+ $ 202.90  
+ $ 313.07  
+ $ 423.24  
+ $ 533.41  
+ $ 643.58  
+ $ 753.75  
+
+CFAF 
+130/kg 
+
+5% 
+15% 
+26% 
+36% 
+47% 
+57% 
+68% 
+
+9% 
+20% 
+31% 
+42% 
+53% 
+64% 
+75% 
+
+CFAF 
+
+CFAF 
+
+CFAF 
+
+CFAF 
+
+100 
+
+5.33 
+63% 
+43% 
+25% 
+12% 
+
+120 
+
+4.44 
+29% 
+15% 
+6% 
+2% 
+
+125 
+
+4.26 
+23% 
+11% 
+4% 
+1% 
+
+130 
+
+4.10 
+19% 
+9% 
+3% 
+>1% 
+
+The business case is equally important for the rest of the value chain, certified seed producers, millers, 
+and financial intermediaries. The two relevant financial intermediaries, CNCAS and CNAAS, are both 
+majority state-owned and their agricultural loans and insurance are subsidized by the GOS. Interviews 
+with management from both organizations indicates that they evaluate potential loans/customers and set 
+prices to be profitable. However, the large number of non-performing loans, need for regular debt 
+forgiveness and capital infusions suggests that de facto at least CNCAS is loss making. Yet GOS 
+interviewees said that these capital infusions, and subsidies for that matter, are fiscally sustainable 
+(though there are no plans in the future for additional debt forgiveness). 
+
+Certified seed production is profitable and was profitable prior to scaling up. The IDG report found that 
+producers of certified seed were already profitable prior to the PCE intervention, and thanks to 
+improved yields, this increase further:  
+
+Improved yields mean farmers now obtain 5.1 MT of certified seeds per hectare compared 
+to just 3.75 MT per hectare prior to the PCE project, while efficiency gains have raised 
+
+Scaling Up of Sahel Rice Varieties in Senegal  
+
+21 
+
+ 
+
+seed producers’ profitability from 532.8 thousand CFA/ha (US$ 926.6/ha) to 718.5 
+thousand CFA/ha (US$1,249.6/ha).25 
+
+The one area where profitability is uncertain is in rice milling. As noted above, millers suffered severely 
+after privatization, with their capacity, quality, and profitability all declining.  PCE, JICA, and the Spanish 
+Agency for International Development Cooperation (AECID) all provided assistance to millers. This 
+included: equipment and training to improve quality (cleaning, sorting); warehouse construction to lower 
+transactions costs; and cash flow financing for the period between collection from farmers and sales to 
+wholesalers (contractualization, which allowed for a cashless system with farmers roughly based on 
+warehouse receipts). The eight largest mills have a total capacity of 40.5 metric tons per hour. If the 
+mills operated 24 hours, 365 days per year, their capacity would be 355,000 mt per year, compared with 
+the total SRV paddy production in 2015 of around 440,000 mt. Assuming a more realistic capacity 
+utilization of 66 percent, this implies that mills can currently handle about 50 percent of current 
+production. However, the majority of farmers/production—around 77 percent—still goes through the 
+local processors, the décortiqueses, so that the large mills appear to be operating at around 50 percent 
+of capacity. Because of this, many millers complain about shortages of supply and low capacity utilization 
+rates, though others state that they are well-supplied. According to a study done by CGER and 
+commissioned by PCE, capacity and quality of large and medium-sized rice millers will have increased to 
+the point where there will be sufficient capacity to handle all the rice being produced in the SRV by 
+2017.  
+
+TABLE 8: LARGE RICE MILL CAPACITY IN THE SENEGAL RIVER VALLEY 
+
+Mills 
+
+Vital Agro-Industries 
+
+Coumba Nor Thiam Suarl 
+
+GIE Naxadi Deret 
+
+Mbodji et Frères 
+
+Teranga Sarl 
+
+GIE Malal Yoro Guèye 
+
+Groupe Thiaytou 
+
+Pellital  
+
+Total  
+
+Production Capacity (in 
+
+MT/Hour) 
+
+Total Capacity at 66% 
+Capacity Utilization 
+
+10 
+
+6 
+
+5 
+
+5 
+
+5 
+
+5 
+
+3 
+
+1.5 
+
+40.5 
+
+57,816 
+
+34,690 
+
+28,908 
+
+28,908 
+
+28,908 
+
+28,908 
+
+17,345 
+
+13,140 
+
+238,622 
+
+Source: Project Croissance Economique, author’s calculations 
+
+Because of the wide variance in capacity and utilization rates, and the fact that income statements are 
+proprietary, it was not possible to provide a quantitative analysis of miller profitability. In the five 
+interviews with millers, three complained of supply shortages and also constraints on their margins. 
+Specifically, they mentioned that during negotiations around paddy prices they face pressure from the 
+Ministry of Agriculture to pay higher prices to farmers, while at the same time they are squeezed on the 
+other side by wholesalers, who in turn face price pressures from the Ministry of Commerce to keep 
+retail prices low. At the same time, because of recent requirements that importers must make domestic 
+purchases in proportion to their imports, many millers complain that they cannot get enough paddy rice 
+to meet demand. 
+
+                                                      
+
+25 IDG report, op. cit., p. 18 
+
+Scaling Up of Sahel Rice Varieties in Senegal  
+
+22 
+
+ 
+
+Photo: Richard Kohl 
+
+ 
+
+Unfortnatly, financial information for machinery service providers was not accessible. In one interview, a 
+service provider who had purchased both a tractor and combine with credit from Locafrique in 2014 
+explained that he was able to repay 50 percent of the loan within six months. Because of the high 
+profitability, he purchased another three tractors and three combines with Locafrique credit in June/July 
+2015. He has net annual earnings for a tractor of CFAF 28 million ($56,000) versus a purchase price of 
+CFAF 37.5 million, not including interest expenses ($75,000). The comparable figures from this provider 
+were gross sales for a harvester of CFAF 28 million ($56,000) and net profits of CFAF 19.75 million 
+($39,500), versus a purchase price of CFAF 18 million ($136,000). Given that both combines and 
+tractors nearly pay for themselves in a year, they appear to be highly profitable. This service provider 
+noted that tractors are not only used for rice but also for land preparation for higher value added crops 
+such as onions and tomatoes. 
+
+IV.  ADOPTION DRIVERS AND RESULTS OVER TIME AND 
+SPACE 
+
+A. Market Potential 
+
+In many cases of scaling up, the potential for demand to absorb increased supply without adverse price 
+effects is a major challenge. This is not the case in Senegal. As noted in Section II, Senegal has been a 
+major rice importer for decades, and despite government efforts at self-sufficiency since the 2007–2009 
+food crisis, rice imports have continued to increase (see Figure 2). As rice imports have exceeded one 
+million tons since 2012, more than double the current production levels in the SRV, from a purely 
+quantitative perspective, there is no shortage of demand. 
+
+Scaling Up of Sahel Rice Varieties in Senegal  
+
+23 
+
+ 
+
+BOX 3: RICE IMPORTS AND PRICING IN SENEGAL 
+
+Before liberalization under structural adjustment, rice imports were a monopoly under the Caisse de Péréquation 
+et du Stabilization des Prix (the Office or Fund for Price Equalization and Stabilization), which set prices for both 
+local and imported rice. While the import monopoly was eliminated in 1995, it was replaced with price controls 
+which persisted until 2006. A short period of liberalization was followed by a return to price controls on imported 
+ordinary broken rice in 2008, which were then extended to aromatic rice in 2011 and finally the reintroduction of 
+officially fixed prices in 2013. Prices for non-aromatic broken imported rice were set at CFAF 240/kg for importers, 
+CFAF 245/kg for wholesalers, and CFAF 260/kg for retailers. This price freeze led to annual budget allocations of 
+CFAF 25 billion for rice price supports, or roughly $50 million. It also incentivized importers to search out lower 
+and lower price (quality) rice in an attempt to sustain and increase margins, following on the switch from aromatic 
+to ordinary rice. 
+
+Over this same period, post food crisis, prices for paddy were set through price negotiations between millers and 
+producers, with other social partners also participating. Under the guidance of the Comité Interprofessionnel du 
+Riz (CIRIZ – Interprofessional Committee on Rice), prices were set at 125 CFAF/kg in 2013–2014 and 120 CFAF/kg 
+in 2014–2015 in line with declining import prices. The GOS must respond to conflicting pressures to keep prices 
+down for consumers and to increase prices for producers. 
+
+A 2015 study by Dr. Ibrahima Hathie and Oumar Samba  Ndiaye, on behalf of the European Commission, found 
+that, despite  price  controls,  there  is  significant  but  imperfect  transmission  of  international into  domestic  prices. 
+Transmission occurs because imports set the price  at the margin. At the same time, domestic rice markets  are 
+relatively  segmented  between  urban  and  rural,  household  and  commercial, and  even  the  prices  for  rice  used  at 
+different  meals.  This  is  illustrated  by  the  very  different  downstream  market  paths  of  rice  that  is  milled  by 
+décortiqueses  versus  industrial  mills.  Surplus  rice  processed  by  décortiqueses  is  largely  sold  through  informal 
+channels by small traders, as opposed to formal market channels for industrially processed rice. 
+
+ 
+
+This raises the question of whether SRV irrigated rice is competitive at world prices. This question is 
+reinforced by significant government interventions at all stages of the rice value chain and imports. 
+Currently the domestic rice sector benefits from a large number of significant government subsidies, 
+including on inputs, bank credit, crop insurance, and purchases of agricultural machinery, as well as 
+requirements on importers that they buy domestic rice. Studies of competitiveness are complicated by 
+the questions of quality and what is the comparable international product.26 Choosing the comparable 
+import is also complicated by the setting of imported and domestic prices (see Box 3). 
+
+Despite the challenges of quality, there have been a number of studies over the last several years with 
+general conclusions that SRV rice has been competitive since world prices rose during the food crisis 
+and then remained at historically high levels. Interviews with CNCAS, the national agricultural bank, 
+state that domestic rice was not competitive during the period between the mid-1990s and 2007. In one 
+study, GIG Consultants (a Paris-based firm),27 concluded that efforts to improve domestic quality were 
+proving successful and that domestic rice would progressively conquer the national market (“conquérir 
+
+                                                      
+
+26 Prior to the food crisis, most imported rice was aromatic, but with the price jump, consumers—and therefore importers—
+switched to ordinary rice. Senegalese consumers have preferred broken rice, initially because it was cheaper, but now the 
+mouthfeel and texture have become preferences for rural consumers. In the last few years there has been a growing demand by 
+higher-income urban consumers for whole rice and aromatic rice, and many urban consumers prefer whole rice. In general, 
+domestic rice has to compete with imported broken rice. However, internationally marketed broken rice is of a certain quality 
+in terms of uniformity of color, shape, size of the grain, and especially the presence of foreign materials such as dirt, stones, and 
+rice straw. PCE and other donors have therefore undertaken efforts to improve quality as part of scaling up. According to 
+Hathie and Ndaiye, 95 percent of imported rice is broken rice. See Dr. Ibrahima Hathie and Oumar Samba Ndiaye, “Etat des 
+lieux des impacts des importations de riz sur la commercialization du riz local”, RAPPORT FINAL, Iniative Prospective Agricole 
+et Rurale (IPAR), Janvier 2015. p. 14. 
+27 Pierre Baris et Niclas Gergely, “Actualisation de l’etude sur al competitivité du riz de la vallée du fleuve Senegal (VSF) sure les 
+marches regional et national”, GIG Consultants, November 2012 
+ 
+
+Scaling Up of Sahel Rice Varieties in Senegal  
+
+24 
+
+ 
+
+progressivement le marché national”). The GIG study found that production costs were around CFAF 
+100/mt with gross margins between 26 and 32 percent. They found that rice remained profitable even 
+without input subsidies, but gross margins fell to 15 percent (as inputs account for only 18 percent of 
+costs, slightly less than the share of either labor or irrigation costs). They concluded that domestic rice 
+has been profitable because international rice prices remained at historically high levels, even after they 
+came down from their 2008–2009 peak, as shown in Figure 5.28 However, they argued that there was a 
+narrow band of rice prices that made it sufficiently profitable to incentivize sustained and increased 
+production, and to ensure this, there needed to be continued government subsidies, in the form of 
+either tariffs or input subsidies.  
+
+FIGURE 5: WORLD RICE PRICES, US$ PER METRIC TON 
+
+World Rice Prices, USD per ton
+
+Average Price
+
+Thaï 5%
+
+Inde 5%
+
+Inde 25%
+
+Thaï 25%
+
+700
+
+650
+
+600
+
+550
+
+500
+
+450
+
+400
+
+350
+
+300
+
+250
+
+200
+
+150
+
+100
+
+2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016
+
+ 
+
+Source: OSIRIZ, http://www.infoarroz.org/portal/uploadfiles/20160804093456_14_world_prices.htm. Gaps in prices reflect that 
+some countries banned exports in the immediate aftermath of the world food crisis, i.e., from 2008 to 2011. 
+
+These general conclusions were confirmed by other studies. A 2015 study by Dr. Ibrahima Hathie and 
+and Oumar Samba Ndiaye, on behalf of the European Commission,29 also found that production was 
+quite profitable, but very price sensitive, and the same was true for other members of the value chain. 
+
+La marge des producteurs est intéressante mais elle est très sensible au prix pratiqué. Se le 
+prix paddy pratiqué s’écarte beaucoup du prix official, la rentabilité du producteur s’en 
+resent fortement. Cette situation est rendue plus fragile par les volumes relativement 
+faibles sur lesquels opèrent la majorité de ces producteurs ….  
+
+                                                      
+
+28 The French agency, Observatoire de Statistiques Internationales sur le Riz (OSIRIZ) publishes an index of rice prices. The 
+rice price index was around 100 in 2003, and then jumped from 144 in 2007 to 294 in 2008. Since 2009 the OSIRIZ index has 
+hovered in a range between 210 and 255. 
+29 Dr. Ibrahima Hathie and Oumar Samba Ndiaye, “Etat des lieux des impacts des importations de riz sur la commercialization 
+du riz local”, RAPPORT FINAL, Iniative Prospective Agricole et Rurale (IPAR), Janvier 2015. 
+
+Scaling Up of Sahel Rice Varieties in Senegal  
+
+25 
+
+ 
+
+La marges des autres acteurs ne sont pas non plus assez elevées. Ce qui explique sans 
+doute les fortes pressions que ces acteurs de l’aval exercent sur les producteurs afin de 
+revoir à la baisse le prix official du paddy. (Hathie and Ndiaye, p. 7) 
+
+Translation: Producer margins are attractive but very sensitive to actual paddy prices. If the 
+actual paddy price deviates much from the official prices, the profitability for producers 
+would be seriously affected. This situation is even more the case for the majority of 
+producers, i.e., those who cultivate relatively small parcels. 
+
+The margins for other value chain actors are also not much higher. This explains the strong 
+pressures that downstream actors have put on producers to lower official prices. 
+
+Later, in discussing the relationship between imported and domestic prices, Hathie and Ndiaye reinforce 
+the negative impact on rice value chain actors of the price squeeze. They note that the massive 
+importation of low-quality Indian broken ordinary rice has strongly affected the margins for millers and 
+distributors, menacing their profitability.30 The finding that downstream actors face serious pressures on 
+margins was confirmed in the review team’s interviews and by other sources as well.31 
+
+V.  THE EXTERNAL CONTEXT OR SPACES 
+
+Context is usually very important to the success and strategy in scaling up. That was equally true in the 
+Sahel rice case. This section looks at spaces of the rice value chain, including credit and insurance, 
+mechanization, politics and policy, and institutions and partnerships. 
+
+A. Rice Value Chain 
+
+Most of the necessary institutions for a viable commercial rice value chain in the SRV already existed 
+before 2010, but many were weak or barely functioning. There was an inadequate supply of certified rice 
+seed, quality rice milling capacity was very limited, and downstream linkages to formal markets were 
+almost nonexistent. Each of these issues is discussed in more detail below.  
+
+Certified Rice Seed Production 
+
+As noted above, as of 2010 most rice farmers in the SRV were already using improved seeds that had 
+been introduced in the 1990s. A few varieties accounted for nearly all rice planted: Sahel 108 (a short 
+maturity variety of 105–115 days) and Sahel 201 and 202 (medium maturity varieties of around 120–140 
+days) with potential yields of 10 and 11 mt/ha. By 2000 these three varieties accounted for over 70 
+percent of rice planted in the SRV.32  
+
+                                                      
+
+30 Hathie and Ndiaye, op. cit., “Les importations massive”  
+31 See, for example, CGERV (Management Center of Rural Economy of the Valley) in its publication Bulletin Economic Analysis 
+for the Rice Sector. The June 2015 issue, Rice Self-Sufficiency in Senegal, stated “However, in the absence of some 
+opportunities for white rice paddy or milled, distributors, processors and commercants are struggling to make their activities 
+profitable.” P.14 
+32 In 2005, the GOS approved and officially released five additional varieties for use by rice farmers in the Senegal River Valley. 
+These were: Sahel 134, Sahel 159, Sahel 208, Sahel 209, and Sahel 210, with the 100 series being short maturity and the 200 
+series medium/long maturity. These new varieties were supposedly superior, e.g., the new 200 series varieties had 12 mt/ha 
+potential yields, but uptake was limited, and the majority of seed planted remained 108, 201, and 202. According to interviews 
+with most farmers, they stuck with the old varieties for several reasons: they were not getting anywhere close to potential yield 
+on the old varieties; those varieties did well under local conditions, especially in the longer rainy season (hivernale); they 
+ 
+
+Scaling Up of Sahel Rice Varieties in Senegal  
+
+26 
+
+ 
+
+The structure of certified seed production dates back to the late 1980s. The Institut Sénégalais de 
+Recherches Agricoles (ISRA – Senegalese Institute for Agricultural Research) controls rice foundation 
+seed and production of breeder seed. Multiplication is done by an association of seed farmers, the Union 
+Nationale Interprofessionnelle des Semences (UNIS – National Interprofessional Union of Seeds). 
+However, as adoption of new rice seed varieties scaled up over the second half of the 1990s, production 
+of certified rice seed did not keep pace. Most rice planted in the SRV is broadcast after soaking. 
+Recommended seed usage is 130 kg/ha, so surface areas of roughly 25,000 ha during the 2000–2007 
+period would have required approximately 3,500 mt of seed per year. By contrast, only 400 mt of 
+certified rice seed was produced as recently as 2011.Thus by the time PCE started in 2010, the majority 
+of farmers were not only planting saved seeds, but seeds that had become essentially grain. 
+
+The seed sector suffered from numerous challenges detailed in a study conducted by PCE at the 
+beginning of its activities.33 These challenges included: 
+
+  Disorganization of upstream production of foundation seed. 
+  Difficulties in planning for demand with little effective collaboration or communication between 
+
+ISRA, the foundation seed producer, and UNIS-Nord, the union of seed multipliers. 
+
+  Difficulties in controlling the costs of collection, processing, and transaction, making the seeds’ 
+
+sale price unaffordable for many producers. 
+
+  No effectively functioning seed testing and certification laboratories in the SRV. 
+ 
+
+Inadequate and poorly functioning seed conditioning centers. 
+
+As part of its scaling efforts, PCE began by creating “space” for certified rice seed by both increasing 
+supply and increasing demand for certified seed. PCE supported: 
+
+  Upgrading of two ISRA research stations (e.g., cold storage, electricity, facilities, and cost 
+
+accounting system). 
+
+  Construction/rehabilitation and modernization of the equipment at a regional seed lab in the city 
+
+of Richard Toll, boosting seed processing capacity to 6,000 mt. 
+
+  Financial coaching and governance support to UNIS. 
+  Better linkages between ISRA and UNIS-NORD (i.e., three-year procurement plans and 
+
+placement of foundation seed orders with ISRA). 
+
+  Capacity building of UNIS-NORD.  
+  Establishment of a network of seed inspectors to supplement existing government inspectors. 
+  Public-private partnership between Coopérative Semencière du Nord (COOSEN), a seed 
+
+cooperative organized by PCE, and the MOA to manage a seed conditioning center at Richard 
+Toll. 
+Introduction of additional new varieties combined with demonstration and marketing efforts. 
+
+ 
+  Requirement for use of certified seed for farmers involved with contractualization. 
+
+The results of these efforts have been a steady increase in the supply, availability, and adoption of 
+certified rice seed and a better ability to match the three-year multiplication cycle with demand. Roughly 
+2.2 mt of rice seed were produced by UNIS in the 2014 rainy (hivernale) season. As of 2010, and 
+through the period under study, the majority of certified seed used continued to be the three dominant 
+
+                                                      
+
+themselves and consumers like the taste and mouthfeel; and they already owned them as these are all OPVs. See AfricaRice’s 
+note on Irrigated Rice Varieties: http://www.africarice.org/warda/irrigated.asp.  
+33 Economic Growth Project, STRATEGIC OPTIONS FOR THE SEEDS VALUE CHAIN IN SENEGAL, Sept. 2011 
+ 
+
+Scaling Up of Sahel Rice Varieties in Senegal  
+
+27 
+
+ 
+
+varieties first introduced in 1995 -- Sahel 108, 201 and 202.34  It is estimated that certified seed now 
+accounts for about 30 percent of total production in the SRV; this was achieved despite the more 
+than100 percent increase in the surface area planted since 2006. Seed certification and processing 
+capacity has now increased so that it can meet nearly 70 percent of potential demand, though 
+production is nowhere close to that yet. There are some estimates that using certified Sahel seed may 
+increase rice yields by as much as 25–30 percent, which may have contributed significantly to intensive 
+scaling efforts and results.  
+
+TABLE 9: VOLUME OF CERTIFIED RICE PROCESSED AT RICHARD TOLL SEED 
+
+CENTER 
+
+Variety 
+
+Introduction 
+
+Multiplication  Weight (mt) 
+
+R1/R2 seed 
+
+Period of Initial 
+
+Level of 
+
+Share of Certified 
+
+Sahel 108 
+
+Sahel 108 
+
+Sahel 134 
+
+Sahel 201 
+
+Sahel 202 
+
+Sahel 208 
+
+Sahel 209 
+
+Sahel 210 
+
+TOTAL 
+
+Demand 
+(@130kg/ha 
+
+Percent coverage 
+
+1995-2000 
+1995-2000 
+
+2005-2015 
+
+1995-2000 
+
+1995-2000 
+
+2005-2015 
+
+2005-2015 
+
+2005-2015 
+
+ 
+
+ 
+
+ 
+
+Source: Richard Toll Seed center 
+
+Other Input Distribution 
+
+R1 
+
+R2 
+
+R1 
+
+R1 
+
+R1 
+
+R1 
+
+R1 
+
+R2 
+
+ 
+
+60,000 
+
+ 
+
+1,890 
+
+139 
+
+290 
+
+131 
+
+17 
+
+2 
+
+34 
+
+13 
+
+2,516 
+
+8,340 
+
+30.2% 
+
+75.1% 
+
+5.5% 
+
+11.5% 
+
+5.2% 
+
+0.7% 
+
+0.1% 
+
+1.4% 
+
+0.5% 
+
+100.0% 
+
+ 
+
+ 
+
+In terms of the space for other inputs, the supply chain has been less problematic than the supply of 
+certified seeds. There is a fairly dense network of agricultural input suppliers in SRV, though this 
+becomes progressively thinner as one moves upstream from Dagana to Podor and Matam. Farmers with 
+access to bank credit receive something resembling a voucher for the agreed upon inputs from the 
+CNCAS and are able to retrieve the needed inputs from designated depots. The major issue with access 
+to inputs has been the timeliness of availability. As much of the supply of fertilizer in particular is 
+controlled by state entities, as it is subsidized, that supply is not always available in time for optimal 
+planting or secondary top dressings. This also can be caused by delays in approval of bank credit, as 
+farmers are required to submit their applications twice per year if they farm both seasons, but 
+historically the bank has waited until the previous season’s loan has been repaid.  
+
+Processing 
+
+Rice milling was one of the major constraints on scaling up as of 2010. The steady deterioration of the 
+ability of large mills to process sufficient quantities and quality of paddy rice after 1995 meant that SRV 
+rice could not compete in quality with imported rice in urban markets. Thus, despite the huge potential 
+for import substitution and selling in formal urban markets, de facto the market for surplus rice was 
+
+                                                      
+
+34 Sometimes there is a mismatch between the varieties produced and farmers’ preferences as the Senegalese authorities have 
+encouraged the production of seed for the new varieties introduced since 2005 to facilitate their adoption, yet the majority of 
+farmers still prefer the old Sahel varieties. 
+
+Scaling Up of Sahel Rice Varieties in Senegal  
+
+28 
+
+ 
+
+limited to either local village markets, or to those traders who would buy locally and sell in nearby 
+regions.  
+
+In response to these issues, PCE, JICA, and AECID worked together to rehabilitate the processing 
+sector. JICA provided new milling equipment and training that expanded the quantity and quality of rice 
+produced, allowing the large mills to do better cleaning and sorting. PCE subsidized loans to buy new 
+machinery or expand capacity, covering 35 percent of the capital cost, and partnered with CNCAS to 
+provide working capital to millers. 
+
+As a result of these efforts, large milling capacity increased to 155,000 mt at the end of the 2013–2014 
+season as compared with production of around 332,731 mt. Thus large mills could cover around half of 
+the processing, although in reality they are covering somewhere between one-eighth and one-quarter as 
+farmers continue to prefer working with the small décortiqueses. Faced with excess capacity, most 
+larger mills both started to grow their own rice and also directly contracted with farmers, in some cases 
+supplying inputs in advance. For example, one mill in Caoumba produces 1,000 ha of its own rice and 
+finances a network of 13,000 farmers producing on 7,000 ha. Nonetheless, it appears that many farmers 
+still find it more profitable or preferable to use local décortiqueses, possibly because transport and 
+storage costs are lower or because they can process rice in small batches as they need income over the 
+course of the year. 
+
+Marketing and Downstream Linkages 
+
+Marketing SRV rice to domestic markets in Senegal was and remains complicated by the fact that the 
+market is highly segmented. Tastes and preferences differ between urban and rural consumers and even 
+by meal. Historically, urban consumers, especially those with higher incomes, have favored whole, 
+aromatic rice that has been well cleaned and sorted. Rural consumers are more price-sensitive, so that 
+the choice of cheaper broken rice evolved into a taste preference over time. Similarly, rural consumers 
+tend to be less sensitive to uniformity of color, shape, or the presence of foreign materials, and are 
+willing to sort and clean rice themselves.  
+
+The disintegration of the rice value chain since the 1990s meant that rice processors in the SRV had 
+little contact with formal market outlets in urban areas. Urban consumers were completely unaware 
+that domestically produced rice was available, let alone the quality improvements which had taken place 
+after 2010 in processing as well as the introduction of aromatic rice. As of 2010, the vast majority of 
+surplus SRV rice was sold by small traders to surrounding areas, mostly rural consumers. However, 
+there were limits as to how much rice these channels could absorb, as well as the price that they were 
+willing to pay.  
+
+Once the quality of SRV rice had been improved to meet urban market standards, PCE helped with the 
+downstream market linkages from millers to wholesalers. PCE helped millet producers improve their 
+branding and packaging, organized several meetings between millers and wholesalers, and brought SRV 
+rice to several agriculture fairs (e.g., the annual International Fair of Agriculture and Animal Resources). 
+PCE sponsors the participation of both millers and producers in this fair. PCE created a promotional 
+caravan of Senegal origin rice that took place in three major cities, including Dakar. Finally, PCE helped 
+SRV mills in successfully bidding on World Food Program tenders for rice; the Coumba Nor Thiam mill 
+won a tender for 3,000 mt of white rice.  
+
+Demand for domestic rice has also been supported by a number of government policies. The GOS 
+began purchasing domestic rice for a strategic reserve and required that government agencies (e.g., the 
+military and schools) purchase domestic rice. Perhaps most importantly, as importers began shifting to 
+cheaper imported Indian rice, the GOS required that importers purchase domestic rice in proportion to 
+
+Scaling Up of Sahel Rice Varieties in Senegal  
+
+29 
+
+ 
+
+the level of their imports. This latter move has greatly increased the demand for SRV rice, so that many 
+of the large mills and importers cannot get sufficient rice to meet demand. 
+
+B. Credit and Insurance 
+
+Intensive production of irrigated rice requires substantial financial resources to purchase the necessary 
+inputs; for land preparation, harvesting, and threshing services; and to finance supplementary labor. As 
+discussed in Section III-B, farmers spend CFAF 550,000+ per hectare to grow rice.  
+
+Despite the disengagement of the state from providing direct services, up until recently the state 
+remained the sole source of bank lending through the CNCAS. While not a state agency, the CNCAS is 
+majority-owned by the GOS, and many of the remaining shares have been distributed to social partners 
+such as farmers’ associations. Since the 1990s, CNCAS has been providing credit to less than half of rice 
+farmers in the SRV. In large part this is because many small and medium producers regularly become 
+(re)indebted when there is a bad harvest. This has meant that CNCAS regularly carried a large amount 
+of non-performing agricultural loans, or loans in arrears. As CNCAS is not permitted to extend further 
+credit to farmers in arrears, these farmers have had no access to credit and accordingly used lower 
+quantities of seed and other inputs, and less mechanization. In most cases they obtained lower yields.  
+
+ 
+Repeated rounds of debt forgiveness between 1995 and 2010 only proved to be temporary solutions to 
+this problem, as the problem reemerged with the next poor harvest, and there was no crop insurance 
+available during this period. Similarly, the fact that agricultural interest rates are subsidized by the GOS 
+has not solved the availability and creditworthiness problems. Moreover, even for farmers able to access 
+bank loans, the lending amount was limited to the value of tangible inputs and some key services, 
+somewhere between CFAF 250,000 and 350,000. In cases where an adverse weather or pest event 
+
+ 
+
+Scaling Up of Sahel Rice Varieties in Senegal  
+
+30 
+
+ 
+
+required farmers to reapply seeds, fertilizer, or herbicides, this additional cost was not covered by bank 
+loans. This meant that farmers had to find the remaining funds themselves.  
+
+Similar problems plagued processers (e.g., rice mills) and entrepreneurs interested in purchasing 
+agricultural machinery (usually farmers themselves or their associations). Processors suffered from acute 
+shortages of working capital to purchase and store paddy rice until it could be processed and sold to 
+wholesalers, and payment from wholesalers was received. Bank financing for this was not available, nor 
+was financing available for capital investment in equipment and expanding facilities. Mills had difficulty in 
+paying farmers for their production in a timely way, so farmers faced delays in paying off their bank 
+loans, delaying receipt of a loan for the next season, delaying land preparation and timely planting. This 
+delay was particularly problematic for farmers interested in adopting double cropping (i.e., planting in 
+both the saison chaud and the hivernale). Financing for purchases of agricultural machinery was very 
+limited as it required collateral apart from the machine itself, due to the lack of a secondary market.  
+
+Addressing this constraint, the lack of financial “space,” has probably been the most important of all the 
+contributions PCE made to revive the irrigated rice sector. PCE, working with several partners, 
+introduced several financial innovations that increased the availability of financing not only to farmers, 
+but to mills and machinery service providers. PCE did this through a variety of instruments, providing 
+cost sharing or co-financing of investment, to cover the costs. Several common themes emerged in 
+terms of what worked, including: reducing risk to economic actors on both ends of financial 
+transactions; making iterative progress, as solutions required repeated tweaking; and not covering the 
+losses from partners’ poor business decisions (while PCE was willing to absorb some of the risk, they 
+maintained a firm position on this). 
+
+The most important financial innovation introduced by PCE was known by the French term 
+‘contractualization’, a mix of contract farming and a warehouse receipts system. This was introduced 
+beginning with the 2011–2012 season.  
+
+In 2011, a pilot was launched in collaboration with Vital agro-industries [the largest rice 
+processor and foreign investor in the SRV rice sector], CNCAS and water user associations 
+to integrate financial models that would improve CNCAS reimbursement rates while laying 
+the foundation for a formal and solvent rice market. Consolidated in 2012 through a series 
+of meetings and workshops with key stakeholders, these models have enabled the sale of 
+nearly 20,000 T and mobilized more than US $11 million.35 
+
+Contractualization eventually emerged in two forms: (1) between banks and producers, and (2) in a 
+three-way relationship between the bank, producer, and processor. In the first form, farmers were 
+required to find their own purchaser, which often led to delays in sales and in farmers’ receiving 
+payment. In the second form, banks provided credit to farmers who sold the contract on a forward sale 
+to a processor, all of which was done at a price agreed in advance. Once transfer to the processor 
+actually took place, the proceeds were used to repay the loan, with the loan now being between the 
+bank and the processor. In this process, no cash was actually used; repayment was effectively in the form 
+of paddy rice deposited in a warehouse. Bank credit was issued to farmers that allowed them to buy 
+inputs through vouchers; farmers deposited their production in processors’ warehouses and received a 
+warehouse receipt that was considered as payment once it was transferred to the bank. This 
+economized on cash. 
+
+For contractualization to work, PCE had to put in place, with its partners, several foundational pieces. 
+These included:  
+
+                                                      
+
+35 PCE, FY14 Annual Report Final, p. 49 
+
+Scaling Up of Sahel Rice Varieties in Senegal  
+
+31 
+
+ 
+
+  Establishing a fixed forward price. This price could be and ultimately was used by banks, 
+
+ 
+
+producers, and processors as a reference price. Eventually, the price produced by the CIRIZ 
+multi-stakeholder consultative process emerged as the reference price and has been used for 
+the last several years. 
+Improvements in yields and quality from both farmers and processors. Higher average yields 
+increased the likelihood of repayment, and quality improvements made the rice more 
+marketable and allowed SRV rice to be competitive with imported rice. CNCAS bank loans have 
+now for several years required the use of certified seed.  
+
+  Providing storage facilities for paddy and processed rice. Construction of a large number of 
+
+warehouses was financed by the AECID. Unfortunately, construction is slow and expensive, and 
+the existing volume of storage remains much less than need.  As of this writing, storage is a 
+major constraint on further scaling. 
+
+  The innovation of crop insurance. It may appear surprising that crop insurance is needed in the 
+case of irrigated rice, but while drought was rarely a factor, there were several other important 
+risks. These included excess rain or flooding in the hivernale season, and attacks by pests, either 
+birds or insects. (See Box 4). 
+ 
+
+BOX 4: CROP INSURANCE IN THE SRV 
+
+In its initial version, the crop insurance that was developed with CNAAS was designed to protect the lending bank 
+against losses rather than the farmer, as the insurance covered only the amount of the bank loan. It was also limited 
+in  its  coverage  to  very  specific  types  of  water  and  pest  damage.  In  the  2015  hivernale  season,  many  farmers 
+experienced severe damage from bird attacks, but they were the wrong kinds of birds, ordinary birds as opposed 
+to the grain-eating birds (i.e., grainivores) that are specified in the insurance contract. These two characteristics of 
+the  crop  insurance  caused  substantial controversy  in  the  winter  of  2016  when  claims  were  not  being  honored. 
+However, changes are currently under consideration, including expanding coverage to the value of the crop rather 
+than the financed inputs.  
+
+In Figure 6, the subtitle in French says: “I insure my harvest, I secure my revenues.” However, the insurance sold 
+did not insure the harvest, but only the value of the bank loan, which is half of the cost of production, or roughly 
+one-third the value of the harvest. Given this promotional billboard, it is not surprising that farmers were upset by 
+the limited coverage when they filed claims. As with bank interest rates, crop insurance premium are supposedly 
+set  at  actuarially  fair  rates  and  the  subsidized  by  the  GOS;  the  actual  premium  is  CFAF  10,000,  while  the 
+unsubsidized rate would be 20,000. Crop insurance benefitted 5,000 farmers by the end of 2013–2014. 
+
+ 
+
+ 
+
+Scaling Up of Sahel Rice Varieties in Senegal  
+
+32 
+
+ 
+
+FIGURE 6: PROMOTIONAL BILLBOARD FOR CROP INSURANCE IN THE SRV36 
+
+(“I Insure My Harvest, I Secure My Income”) 
+
+ 
+
+The result of these efforts was a substantial increase in bank lending by CNCAS and by other banks such 
+as Banque National pour le Développement Economique (BNDE) and Partenariat pour la Mobilisation 
+de l’Epargne et le Crédit Au Sénégal (PAMECAS) (see Table 10 below). According to PCE, total lending 
+for irrigated rice using contractualization was $14.3 million in 2014, or around CFAF 7 billion.  
+
+GOS policy and intervention played a major role in increasing access to credit. In particular, in 2014 the 
+GOS injected CFAF 8 billion to wipe out the debts of farmers and millers. In 2014, the GOS also 
+created a commercialization fund of CFAF 5 billion that was available to finance working capital for rice 
+mills for the 2015 season. The combination of debt forgiveness and additional access to capital no doubt 
+played an important role in the jump in lending in 2014–2015. However, as the head of one large 
+farmers’ association testified in an interview, the concerns about debt repayment remained: “Right now 
+in 2016 there are seven GIEs [in our association] who are again in debt and can’t fully repay their 
+current loans; there were two to three who benefitted from the debt forgiveness in 2014.” This 
+indebtedness has impeded not only farmers’ access to semi-annual financing for the rice seasons, but 
+also their ability to buy additional agricultural equipment when needed (i.e., tractors).37 
+
+                                                      
+
+36 Ibid., p. 52 
+37 Group interview with members of a Union Hydraulique, January 2016, Rossbechol, Senegal. 
+
+Scaling Up of Sahel Rice Varieties in Senegal  
+
+33 
+
+ 
+
+TABLE 10: VALUE OF CNCAS AGRICULTURAL LOANS IN THE SRV 
+
+Season 
+
+Total Flow of CNCAS 
+
+Loans 
+
+ 
+
+2010/11  
+
+3.9 billion CFAF 
+
+650 million in saison chaud 
+
+2011/12  
+
+4.9 billion CFAF 
+
+2012/13  
+
+4.1 billion CFAF 
+
+2013/14  
+
+5,3 billion CFAF 
+
+ 
+
+ 
+
+ 
+
+2014/15  
+
+10 billion CFAF  
+
+5.6 billion in saison chaud 
+
+Source: Interview with Director of CNCAS office, Saint Louis 
+
+PCE supported increased purchases of agricultural machinery through a partnership with Locafrique, a 
+leasing company. Lease financing by Locafrique was available for combines, tractors, graders, and factory 
+equipment. This was a major innovation as Locafrique was willing to make loans with the machinery 
+itself as collateral. In interviews, Locafrique management said that they found that because of substantial 
+excess demand for machinery services, most loans were relatively risk-free; they were successfully able 
+to make such loans based on business plans and the character of the borrower. Locafrique has steadily 
+expanded the size of its business. According to PCE, by 2014 it was supporting CFAF 1.6 billion (or 
+around $3.4 million) in leasing credit, with additional applications currently in process of CFAF 3 billion 
+($6 million). According to Locafrique, they have been so successful in their activities that they have 
+started to withdraw from lending in the Dagana area, as they believe the agricultural machinery leasing 
+market there is saturated.  
+
+C. Mechanization 
+
+Machinery services for irrigated rice has been available in the SRV for many years, including the use of 
+combine harvesters, tractors, and graders for land preparation. Prior to the disengagement of the state, 
+SAED provided most of these services. Since the mid-1990s, the private sector has provided them, but 
+not necessarily on a timely or affordable basis due to shortages of machinery, financing to purchase 
+machinery, and access to credit so that farmers could pay for machinery services. While there are no 
+statistical data available on the share of farmers using machinery services, by 2010 the share of farmers 
+appears to have been relatively low. For those farmers who could had sufficient funds or access to 
+credit, delays in timing adversely affected productivity. Many farmers planted late while waiting for land 
+preparation, and similarly harvesting was not done at the optimal time. In an interview, a tractor service 
+provider noted that he went into the business to supply his own needs because of the long delays: “The 
+biggest problem for years has been getting services on time, they often have to wait just until they were 
+pushed to the limit of when you can plant. The same thing happens in the harvest.”38 
+
+                                                      
+
+38 Interview with Tractor Service operator. 
+
+Scaling Up of Sahel Rice Varieties in Senegal  
+
+34 
+
+ 
+
+Photo: Richard Kohl 
+
+ 
+
+The GOS has been active since the food crisis in increasing the supply of agricultural machinery in the 
+SRV. The GOS has provided subsidized loans for machinery (subsidies of 60–70 percent of market 
+price). However, according to interviews with farmers and machinery service operators, this program 
+has been at best a mixed success. The quality of the machines provided was low, and many farmers 
+reported mechanical problems after the first year, complicated by the fact that most GOS-subsidized 
+machines came with no service guarantee. In general, repair and servicing have been very limited in the 
+SRV, especially east of Dagana. 
+
+The GOS program, combined with the efforts of Locafrique, led to an enormous expansion of the 
+availability of machinery services in the SRV and has largely eliminated delays and shortages. According 
+to a group interview with farmers from a union hydraulique:  
+
+There are now [January 2016] more than enough tractors in the region for getting the 
+services that they need. It is only since 2014 that there have been enough tractors, many 
+of which came from the state-subsidy program. [They own three themselves, and rent the 
+services of nine more].  
+
+Until this season there haven’t been enough combines to do the double culture because of 
+the delays in harvesting that causes. They are hoping to do both in this season. They 
+themselves only have one combine.  
+
+D. Politics and Policy 
+
+As noted above, the Senegal’s public policy and programming have been tremendously supportive of 
+scaling up of irrigated rice production in the SRV given the government’s commitment to achieving rice 
+self-sufficiency (Figure 7). This alignment at the highest levels of government policy facilitated several 
+critical partnerships for PCE and other donor efforts, such as with SAED, CNCAS, and CNAAS. 
+
+Scaling Up of Sahel Rice Varieties in Senegal  
+
+35 
+
+ 
+
+FIGURE 7: GOVERNMENT OF SENEGAL POSTER “LOCAL RICE FOR FOOD SELF-
+
+SUFFICIENCY” 
+
+In addition to this general support and cooperation, the GOS has provided substantial programmatic 
+support to improving productivity and increasing scale of irrigated rice production in the SRV. First and 
+foremost were subsidies from one end to the other of irrigated rice production. These subsidies 
+included:  
+
+  Subsidized loans: conservative estimate of 12 percent of the loan value, 7.5 percent interest 
+
+ 
+
+from CNCAS. 
+
+  Subsidized insurance: 50 percent of CFAF 20,000. 
+  Subsidized equipment: 60 to 70 percent of the cost. 
+  Subsidized fertilizers: 50 percent on urea and DAP. 
+  Value-added tax (VAT) exemption on local rice. 
+ 
+
+Income tax exemption for millers. 
+
+In addition to these direct subsidies, the GOS also provided various guarantee funds and indemnification 
+for losses to CNCAS and others. It is important to note that, according to interviews with the head of 
+PNAR and other GOS officials involved in the rice sector, the size of these subsidies is small enough 
+relative to the overall GOS budget to be sustainable at least until self-sufficiency is reached, which is 
+likely to be a long time. 
+
+The second major area of support for irrigated rice has been through various efforts to influence and 
+support prices received by producers. The CIRIZ mechanism of consultation by the relevant social 
+partners is facilitated by the Ministry of Agriculture and Rural Equipment, and in general has tended to 
+support higher prices for producers. This has been reinforced by, at various times, export bans, fixed 
+prices for paddy and imported rice, GOS purchases for a strategic rice reserve and by GOS agencies for 
+their own consumption, and, most recently, the requirement that rice importers purchase a certain 
+amount of local rice. 
+
+Finally, GOS support allowed donors, such as JICA and AECID, to come into the sector and support it. 
+In addition to the specific efforts by PCE, JICA, and others, many donors have also been persuaded to 
+invest millions of dollars in rehabilitating or expanding irrigation infrastructure. 
+
+Scaling Up of Sahel Rice Varieties in Senegal  
+
+36 
+
+ 
+
+E.  Institutions and Partnerships 
+
+PCE formed strategic partnerships and undertook capacity building with a number of institutions to 
+strengthen the value chain and policy environment. Particularly important were its partnerships with 
+financial institutions, Africarice and ISRA, and with SAED. Africarice and ISRA are and remain the 
+suppliers of breeder and foundation seed that allowed for the increased supply of certified Sahel seed. 
+SAED played a critical role in supporting technical assistance and extension services to farmer 
+organizations, although SAED’s own human resources are inadequate to sustain this past the USAID 
+project life cycle. PCE’s partnership with SAED was crucial given SAED’s role as the lead government 
+agency in supporting irrigated rice cultivation in the SRV. SAED helped with implementation of PCE 
+activities. To create a sustainable basis for providing ongoing extension support to SRV rice farmers, 
+PCE did extensive capacity building with both SAED and CGER. This included transferring the: 
+
+…various technology packages such as “Le Chemin du Bon Riz”, the quality monitoring 
+framework and the cloud based farmer data management system. In the SRV the project 
+also partnered with Centres de Gestion et d’Economie Rurale (CGER), a team of financial 
+analysts managed by SAED, to improve its databases and include farmer monitoring and 
+profiling capacities that go beyond the monitoring of seasonal loans.39 
+
+PCE had partnerships with CNCAS on contractualization, CNAAS on crop insurance, and Locafrique on 
+cost sharing for agricultural machinery leasing. To increase competition and therefore availability and 
+affordability of bank lending, PCE entered into partnerships with other banks, most notably BNDE, to 
+expand their agricultural loan portfolios. 
+
+Equally important to scaling up were PCE’s partnerships with various farmer organizations in the SRV. 
+Scaling up was facilitated by the fact that farmers receiving irrigated water were organized into either 
+GIEs or water user associations around the infrastructure (unions hydraulique). PCE used these 
+organizations to deliver its various trainings and support in the Chemin du Bon Riz, rice quality training, 
+and distribution of rice quality measurement tools, as well as creating linkages for farmers with financial 
+intermediaries and processors.  
+
+Finally, as part of scaling to Matam and beyond, PCE partnered closely with the USAID Yaajeende 
+project, which had been working closely with farmers in those areas. Both irrigation and input 
+distribution networks are much weaker in those areas than in the SRV, and Yaajeende has been 
+instrumental in innovating and expanding networks of community-based service providers (CBSPs) to fill 
+gaps in input provision. This allowed for creating the foundations for further scaling of PCE’s various 
+activities in the eastern SRV and in the Casamance, which are now taking place under the successor 
+project to PCE, Ntaal Mbay. 
+
+VI.  SCALING STRATEGY AND ACTIVITES 
+
+A. Drivers of Introduction and Dissemination of GAPs, Quality 
+
+There were two major drivers of scaling up of Sahel rice production in the SRV. These were the GOS’s 
+commitment to rice self-sufficiency and the decision by multiple donors, especially USAID and JICA, to 
+support increased domestic rice production with their own programming. In that context, the two 
+organizations that took the lead in operationalizing that effort were PNAR on the GOS side and the 
+USAID-supported PCE program. While donor support came from Japan, Korea, France, and Spain, as 
+
+                                                      
+
+39 PCE, Annual Report, FY2014, p. 83 
+
+Scaling Up of Sahel Rice Varieties in Senegal  
+
+37 
+
+ 
+
+well as the World Bank and the Millennium Challenge Corporation, USAID was widely acknowledged 
+for playing the lead role. Interestingly enough, these agencies worked successfully together without a 
+formal consultation or coordination mechanisms. Perhaps equally important were PCE’s partners on the 
+farmers’ association side, whether union hydrauliques in grand and intermediate amenegements, or GIEs 
+based in other irrigation groups.  
+
+There were several drivers of adoption of CBR and better quality among producers. First, high prices 
+were a major driver, because of both higher international prices and GOS efforts to incentivize farmers 
+through price, import, and export controls. Second, subsidies on everything from inputs to machinery 
+boosted profits for most farmers, at least those with the means or access to finance to afford those 
+inputs and services. Third, successful experience with contre saison yields led to a steady switch to that 
+season and some double cropping, and reinforced the possibility of increased yields and higher quality. 
+Finally, many farmers interviewed expressed that they saw increasing yield and production as their 
+patriotic duty, and are making efforts to support the GOS self-sufficiency policy. The favorable policy 
+environment has reassured both farmers and private investors in the rice value chain that there is a 
+“guaranteed” market for domestic rice (i.e., that there will be ongoing political and financial support). 
+This has substantially reduced the risk perceived by investors, and, for that matter, donors, as well as 
+lengthening the time horizon for investment. 
+
+B. Adoption Rates, Variability, and Continuity 
+
+Adoption of the GAPs contained in the Chemin Du Bon Riz and PCE’s efforts at improving quality 
+control on the production side are difficult to measure. The surface area and number of producers with 
+whom PCE worked directly or through its partners were fairly stable between 2010 and 2015 at 
+14,000–16,000 ha and 14,000–16,000 farmers (clearly implying that average area per farmer was around 
+1 ha). See Table 11. This probably accounts for about 20–25 percent of the farmers in the SRV, and 
+closer to 30–35 percent in the Dagana area. Adoption rates within the population appear to be 
+somewhat variable. While data on adoption of the CBR was not available and would be hard to 
+measure, proxies exist. In Section III, Table 6C, which presents data on PCE partners, shows that the 
+amounts spent per hectare on seeds, fertilizer, herbicide, and threshing were quite variable across 
+farmer organizations. This suggests that adoption of the CBR might be equally variable. On the other 
+hand, there are likely to have been spillover effects (i.e., adoption by non-participants), so the impact is 
+likely on balance to be much greater. 
+
+TABLE 11: PCE ACTIVITIES IN IRRIGATED RICE SUMMARY 2011-2015 
+
+Measure 
+
+FY 2011 
+
+FY 2012 
+
+FY 2013 
+
+FY 2014 
+
+Area (Ha) 
+
+Production (T) 
+
+Yield (T/ha) 
+
+Number of 
+Producers 
+
+Source: PCE 
+
+14,350 
+
+73,474 
+
+5.12 
+
+14,000 
+
+16,286 
+
+88,953 
+
+5.46 
+
+15,340 
+
+10,141 
+
+59,374 
+
+5.85 
+
+14,102 
+
+15,447 
+
+97,220 
+
+6.29 
+
+15,447 
+
+Hivernale 
+
+2014/15 
+
+12,088 
+
+61,476 
+
+5.09 
+
+16,463 
+
+Scale-up in the areas of value chain strengthening shows particularly strong results. As noted above, 
+certified seed production has expanded steadily, though would need to expand further to cover all 
+farmers in the delta part of the SRV. According to PCE’s own data, in FY 2014, 26,530 hectares were 
+being farmed under contractualization across all crops, with probably around half in irrigated rice. 
+Further spread of contractualization is limited by CNCAS’s own capital limits—as of early 2016 it was 
+
+Scaling Up of Sahel Rice Varieties in Senegal  
+
+38 
+
+ 
+
+looking for further capital increases—as well as the limitations of the existing versions of crop insurance. 
+Farmers will also need to be fully insured from adverse events, especially in the hivernale season with 
+the increased frequency of floods, damaging rain, and bird and pest attacks. Until that happens, it is likely 
+that more farmers will fall back into arrears, becoming ineligible for credit, and many others will be less 
+eager to produce in the hivernale season. The same is true of the timeliness of bank credit approval; as 
+of this coming crop year (2016–2017), CNCAS was willing to experiment with approving credit for the 
+entire year, versus the current practice of season by season.  
+
+Quality processing capacity (i.e., big mills) has scaled significantly, and now appears to have excess 
+capacity. Some of the excess capacity is clearly due to poor business decisions by Vital Agro-Industries, 
+the largest miller as measured by capacity. Vital expected to have significant rice production of its own 
+to process, but the land allocated to it proved to be not suitable for rice. On the upside, this 
+development stimulated Vital to be the industry leader in early adoption of contractualization, both 
+directly with its own producers and through CNCAS. It is unclear why many farmers still prefer to sell 
+to the small décortiqueses. One explanation is that it saves on transportation costs; another may be that 
+décortiqueses can pay more since they have lower processing costs, while there remains a significant 
+rural market that is willing to pay less for lower quality. It may be the case that until retail prices are 
+decontrolled and can rise, even with excess demand from processors and importers, farmers will 
+continue to prefer the smaller processors.  
+
+Mechanization now appears to be at full scale in Dagana and Podor, and is clearly one of the success 
+stories of PCE and GOS efforts. However, according to LocAfrique, the Dagana market is now 
+saturated. This has had an important impact on improving yields by allowing farmers to plant and harvest 
+on time, increasing the length of the growing season and allowing for harvesting at the optimal time. 
+
+Taken together, all of these interventions created a virtuous spiral and snowball effect that, after four 
+years of investments (2010–2013) reached critical mass in 2014. Whereas both yields and hectares 
+under rice cultivation were relatively flat between 2010 and 2013, both yields and hectares under 
+cultivation increased in 2014 and 2015, though this was somewhat offset by adverse weather and pest 
+attacks in the hivernale season leading to declining planting in that season. While it is highly likely that 
+the cumulative and combined efforts of the GOS, PCE, and other donors contributed heavily to these 
+results, it is impossible to distinguish how much of the surge in production in the last two years was 
+from the GOS’s injection of funds into CNCAS to finance debt forgiveness or its additional lending for 
+commercialization and equipment. It is difficult to know exactly what production levels were in those 
+two years, as there are widespread reports that SAED and other data collection agencies were under 
+significant political pressure to show results for the increased expenditures associated with subsidies and 
+support for CNCAS. The reported figures show over 63,000 hectares under cultivation in 2015 and 
+yields of around 7 mt/ha, up from 6.4 mt/ha in 2013. The net result was a recorded increase in rice 
+production of 100,000 mt of paddy, but this figure, and the underlying determinants in yields and area, 
+may be exaggerated by as much as 50 percent. 
+
+C. Sustainability, Scaling, and Handoff to Commercial or Other Actors 
+
+The ability to take over sustaining and continuing scaling in the SRV and beyond is currently being put in 
+place. Because seed multiplication is being done by farmer cooperatives and other inputs are provided 
+principally by the GOS, ISRA, or AfricaRice, there is no upstream actor in place to drive or sustain 
+scaling. In the Dagana and Podor regions, where scaling has largely occurred, downstream actors are 
+now driving scaling. These are principally the large, commercial millers, supported by SAED and the 
+CNCAS, with private credit playing a growing role. These actors are more than capable of both 
+sustaining the scale already achieved and filling in scale to the other 50 percent of farmers. However, 
+this will depend on resolving the remaining challenges in access to credit and insurance, storage facilities, 
+
+Scaling Up of Sahel Rice Varieties in Senegal  
+
+39 
+
+ 
+
+and persuading farmers to sell to millers versus décortiqueses. CNCAS in particular is limited by the size 
+of its capital in the amount of loans it can extend, especially now that it has expanded into capital 
+investment in mechanization and processing. 
+
+There are neither commercial nor other actors with the capacity or interest to scale up rice production 
+in the rest of the SRV (e.g. Matam and further east) or in rainfed areas in other parts of Senegal, 
+principally the Casamance. USAID has recognized and accordingly has funded the Ntaal Mbay project, a 
+successor to PCE, to driving scale up in both areas. Scaling up in the upper parts of the SRV will be 
+more challenging as the existing irrigation infrastructure and value chains are much less dense. The land 
+is less suitable for rice versus much more profitable horticulture crops like tomatoes and onions. 
+Perhaps more importantly, crop insurance has not yet been shown to work and still needs to be 
+tweaked, a major challenge throughout the SRV. 
+
+Scaling up in the Casamance will prove much more challenging because of the greater risks involved with 
+rainfed rice, lack of any existing milling capacity, and the fact that relatively few farmers currently 
+produce a commercial surplus. In addition, rice also has to compete with maize and groundnuts. As a 
+result, there are neither downstream processing nor milling capacity nor marketing linkages to Dakar or 
+other urban areas. It is likely that the package of innovations scaled in the SRV will have to be modified 
+or adapted, and potentially new ones innovated. PCE’s approach of working simultaneously on supply 
+and demand (i.e., push and pull) and addressing binding constraints iteratively, is clearly the right overall 
+approach and is being applied by Ntaal Mbay. Whether rain index insurance, even subsidized by the 
+GOS, can be made to work remains to be seen. Quality mechanized processing will have to be 
+introduced along with downstream linkages though the demand is clearly there.  
+
+D.  Potential Scale of Adoption 
+
+Given the challenges present with rainfed rice, this study was confined to the scaling up potential in the 
+SRV. Demand for rice is clearly not an issue, given that there is huge potential for import substitution in 
+the rice market in Senegal and the GOS is committed to controlling imports and prices, as necessary, to 
+ensure the profitability of domestic production. Therefore the question is what is the potential on the 
+supply side?  
+
+Supply is largely constrained by how much irrigated land there is (i.e., irrigation infrastructure). 
+Currently around 60,000 ha have access to irrigation for growing rice. It is difficult to get a precise 
+estimate of how much additional land already has irrigation infrastructure in place that needs to be 
+rehabilitated, and how much new land could be utilized. According to interviews, SAED personnel 
+believe that up to an additional 60,000 ha could be rehabilitated. According to an interview with the 
+head of the PNAR and other sources,40 the total potential in the SRV is 240,000 ha.  
+
+The GOS has committed to a long-term policy of encouraging donors to fund new investment in and 
+rehabilitation of irrigation infrastructure in the SRV. This already met with great success between 2008 
+and 2015, with the World Bank, French Agency for Development, and Gulf Cooperation Council all 
+providing funds to SAED for significant new investment and rehabilitation. Whether additional donor 
+funds will be available remains to be seen, and the GOS itself does not have funding for this kind of 
+expense. Until funds materialize, the goal of 120,000, let alone 240,000 hectares, is a long way off. 
+
+                                                      
+
+40 “[T]hanks to the project [the construction of two dams the Diama and Manantali dams in 1988]), Senegal increased its 
+potential for irrigated agriculture in the s-srv from about 10,000 to 240,000 ha.” [emphasis added] – Stanley Malinowski and 
+Alexandre Strapasson, “Sustainability Assessment of Large Irrigation Dams in Senegal: A Cost-Benefit Analysis for The Senegal 
+River Valley.” Frontiers of Environmental Science, 17 March 2016, Vol. 4, Article 18, p.2. 
+http://dx.doi.org/10.3389/Fenvs.2016.00018  
+
+Scaling Up of Sahel Rice Varieties in Senegal  
+
+40 
+
+ 
+
+Intensive scaling is more likely to be possible and viable in the short to medium run (i.e., the next three 
+to five years). The Sahel varieties in use have yield potential of 10–12 mt/ha depending on the variety. 
+While some farmers are getting 8–10 mt/ha, the majority are in the 6–8 mt/ha range (in saison chaud), 
+and some are getting still less. If credit availability continues to increase, so that more farmers are able 
+to afford the inputs and services necessary, and other constraints are addressed, moving average yields 
+up to 7–8 mt/ha is certainly possible. However, the impact of this on total annual production may be 
+limited, as unless the increasing problems with pests and adverse weather in the hivernale can be 
+addressed, double cropping may be limited or even decrease. 
+
+In addition to pests, adverse weather, and access to credit, constraints that need to be addressed in 
+order to increase yields include: increased access to storage; willingness of farmers to sell to large 
+processors; extending what is covered by crop insurance; and improving servicing and maintenance of 
+machinery. Further scaling will also depend on domestic and world prices continuing to remain near or 
+above current levels. 
+
+CONCLUSIONS 
+
+Before turning to conclusions it is important to note that the story of scaling up of Sahel rice is atypical 
+in several ways. First, maximum potential scale was and remains constrained by the extent of irrigation 
+infrastructure. In this case, current scale is probably limited to 120,000 hectares and some multiple of 
+that in terms of numbers of farmer households affected (i.e., a few hundred thousand farmers at best). 
+Though current efforts are being made to extend what was done in the SRV to other rice growing areas 
+of Senegal, the applicability of what was done with irrigated rice to rainfed areas remains to be seen. 
+Second, scaling up has taken place in two distinct and temporally disparate phases. Sahel rice seed was 
+first introduced in the SRV in 1994 and was widely adopted by most farmers by 2000. As a result of the 
+decline of the irrigated rice value chain, the yield potential of Sahel rice was not realized at that time. 
+Instead, after a decade-long hiatus, this potential has been largely realized by the scaling up of a package 
+of innovations between 2010 and 2015 (and is ongoing) that included both GAPs and strengthening the 
+value chain. This latter effort was driven by the efforts of the USAID-supported PCE, in partnership with 
+other donors and the GOS. This study focuses on those post-2010 efforts led by PCE, which involved a 
+mix of improving agricultural practices and rehabilitating and strengthening the rice value chain and 
+relevant aspects of the rice market system. 
+
+PCE identified the immediate obstacles to increased production, prices, and sales and how to address 
+these. The key elements were to address constraints on supply and demand and increase quality in both 
+production and processing. In other words, PCE worked both on “push” factors to increase yields, area 
+planted, production, and quality, and on “pull” factors to increase demand. Doing these simultaneously 
+proved to be important, as increased supply without demand made no sense, and vice-versa. When the 
+impact of those activities met new obstacles to further scale, PCE and its partners addressed those in 
+turn. Thus what was ‘scaled’ was inter alia the production and certification of quality seed, the use of 
+certified seed, GAPs, increasing the availability and affordability of machinery services, large-scale quality 
+commercial rice milling, and a whole set of financial innovations. Perhaps most important was this overall 
+‘virtuous spiral’ approach to scaling.  
+
+These activities took a few years to implement and have a perceivable effect. Efforts to increase rice 
+production by the GOS, PCE and others began in 2009–2010, but there was almost no increase in area, 
+yield, production, or quality until 2013–2014. At that point the multi-pronged strategy reached critical 
+mass in both scale and scope (e.g., there was adequate supply of both certified rice seed and processing 
+capacity to allow for a significant increase in production). This was complemented, importantly, by a 
+
+Scaling Up of Sahel Rice Varieties in Senegal  
+
+41 
+
+ 
+
+program of debt forgiveness and an injection of additional capital by the GOS to increase the availability 
+of credit throughout the value chain.  
+
+The greatest sources of increase in yields were the shift from hivernale to saison chaud planting, use of 
+certified seed, and farmers’ preparing their land, planting, and harvesting at optimal times. Respecting the 
+crop calendar was made possible through increased access to and more timely availability of credit and 
+greater availability of machinery services. In turn, greater availability of credit was significantly driven by 
+financial innovations introduced by PCE and its partners, principally crop insurance and 
+contractualization. As is perhaps obvious, this required a layered approach, as one innovation built upon 
+another. 
+
+A.  Characteristics of the Innovation 
+
+It is difficult to draw any lessons from the irrigated rice case about the characteristics of innovations that 
+facilitate scaling up because it was large and diverse package of innovations. For Sahel rice alone, it is 
+clear that getting the benefits of Sahel rice required significant changes in agricultural practices by 
+farmers, especially the timeliness of the various activities during the season. Helping farmers to acquire 
+these GAPs required a significant investment of time; in most cases it appears to take a farmer several 
+seasons to master the new approaches. As no existing actor, public or private, had the resources or 
+capacity to provide the necessary technical assistance and extension services, this had to be provided by 
+donor-funded projects. While PCE did significant capacity building with SAED and other relevant actors, 
+it remains unclear whether any of them can either take over this role or provide such support on an 
+ongoing basis.  
+
+B. Incentives and the Business Case 
+
+The success in helping farmers adopt GAPs and in getting other value chain actors to adopt new 
+innovations is clearly linked to the fact that adopting these innovations has been profitable for several 
+key actors. This includes seed multipliers, rice farmers, and (to a lesser extent) rice processors. Both 
+seed multipliers and rice farmers have very solid returns on investment, especially given current 
+international and domestic rice prices and subsidies on inputs. While some rice processors are clearly 
+doing well and making money, the inability of others to find adequate supplies of rice suggests that many 
+farmers still find it more profitable or preferable to use local décortiqueses. 
+
+Risk has also clearly played a role in farmers’ decisions and those of other actors. One of the major 
+appeals of several of the GAPs adopted—certified seed, respecting the crop calendar, changing to the 
+saison chaud—is that they have decreased the risk of a poor harvest. While crop insurance was 
+intended to decrease risk for both CNCAS and farmers, in its current form it has largely worked only 
+for CNCAS.  
+
+C. Context 
+
+The context in Senegal played an essential role in scaling up. Extensive irrigation infrastructure already 
+existed and the use of irrigation seriously mitigated risk to all actors in the value chain. Even prior to 
+2010, many rice farmers were producing at least a small surplus and were commercially orientated.  
+Those who could afford it were accustomed to using improved seed varieties, fertilizer, and other 
+capital-intensive inputs; employing machinery services; and selling in commercial markets. Even those 
+who could not afford all of these used some of these inputs and aspired to use more. The majority of 
+rice farmers were already organized into farmers’ organizations based on “hydraulic unions” which 
+greatly facilitated provision of inputs, extension services, market linkages, and technical assistance; 
+
+Scaling Up of Sahel Rice Varieties in Senegal  
+
+42 
+
+ 
+
+others were members of GIEs or other farmers’ organizations. Without these farmer organizations, 
+scaling up in the SRV would have been much more difficult, expensive, and time consuming; yet there 
+are many contexts where such organizations are nonexistent or neither as strong or widespread as they 
+were in the SRV.  
+
+World and domestic prices for rice have been consistently high since the food crisis of 2008, making a 
+strong business case for irrigated rice. Close physical proximity to key urban markets like Dakar was 
+helpful, as well as excess demand for rice and the opportunity for import substitution. While the rice 
+value chain had notable weaknesses at the start of scaling, especially seed supply, certification and 
+processing, many of the institutions necessary were in place to some degree (e.g., mechanized services 
+providers, processing, input distribution, access to credit). This stands in marked contrast to, just for 
+example, the situation with rain-fed rice in the Casamance region of Senegal. 
+
+Even though PCE emphasized wherever possible commercial pathways, the huge role of the GOS in the 
+irrigated rice value chain meant that the public sector played a key role. Overall strong GOS policy 
+support for rice self-sufficiency has provided private investors with a high comfort level for investment 
+in the sector. Government subsidies on inputs, credit, insurance, and purchases of machinery improved 
+returns and lowered risks for many actors, even though rice production was already profitable for 
+farmers. At the same time, the GOS affected price setting, which has distorted incentives, especially for 
+wholesalers and processors, and exaggerated and inaccurate statistics have adversely affected planning 
+by rice farmers and processors.  
+
+D. Drivers of Adoption and Scaling Strategy 
+
+The major drivers of scaling up at the macro level were GOS policy and programs around rice self-
+sufficiency, USAID’s PCE program, and the complementary activities of other donors. At the micro level, 
+the fact that irrigated rice has been profitable and competitive with imports since the world food crisis 
+has been key. This was supported by the large potential market based on import substitution. 
+
+In terms of scaling up strategy, the key aspects that underlay the success of PCE’s scaling up were: 
+
+  Using a push-pull approach by helping producers to increase yields, production, and quality; 
+
+increasing market demand through facilitating linkages to processors and distributors; and 
+strengthening those downstream institutions. 
+
+  Kick starting private upstream and downstream investment through subsidies, risk mitigation, 
+
+and market facilitation. PCE’s support for agricultural machinery leasing through Locafrique and 
+innovating crop insurance with the GOS are examples. 
+
+  Translating this push/pull and kick starting into a virtuous spiral that by 2014–2015 has become 
+
+increasingly self-generating. 
+
+  Aligning the incentives for farmers, banks, processors, machinery services, and wholesalers so 
+
+that everyone makes money. In some cases in Senegal, this has been complicated by GOS-
+induced distortions of prices and margins at various stages of the value chain. The fact that 
+profitability for processors still remains a mixed situation may affect scaling in the future. 
+
+  Addressing risk for key actors. This was particularly true for banks (e.g., CNCAS) and 
+
+processors and was addressed through the innovations of contractualization, crop insurance, 
+and the use of a warehouse receipts system. As noted above, reducing risks for farmers is still a 
+work in progress. 
+
+Scaling Up of Sahel Rice Varieties in Senegal  
+
+43 
+
+ 
+
+LESSONS LEARNED  
+
+A. General Lessons 
+
+Despite the relatively small potential scale and the many favorable aspects of the SRV context, the Sahel 
+rice case has many important and positive lessons for scaling up of agricultural innovations through 
+commercial pathways.  
+
+The principal lesson from this case is that introducing a new technology like improved seed varieties is 
+only a small part of what needs to be done if its potential benefits for yield, production, and food 
+security are to be realized, let alone at scale and sustainably. The entire value chain needs to be in place.  
+
+Second, a virtuous spiral/snowball approach can be highly effective in addressing constraints on scaling 
+sequentially. However, to implement this effectively requires flexibility in annual work planning with a 
+strong formal and informal monitoring system that can both identify new constraints as they become 
+binding and assess progress in addressing existing constraints. 
+
+Third, there is often a need for complementary or supporting innovations in addition to new seeds (or 
+other inputs) and GAPs. In this case, financial innovation (e.g., contractualization) was probably the most 
+important complementary innovation, even if other innovations, such as crop insurance, remain works in 
+progress. 
+
+Fourth, context matters, a lot. A context where there is already a market orientation, most value chain 
+institutions are in place (even if quite weak), and risks are lower because of irrigation is quite different 
+from scaling in a situation where those factors are not present. Similarly, a context where there is a 
+huge existing demand and a potential market (in this case because of the possibility of import 
+substitution) is very different from where demand is small, has to be created, and where there is a risk 
+of increased supply putting downward pressure on prices. 
+
+Fifth, a supportive policy environment makes a huge difference. This was the case not only in terms of 
+specific programs and subsidies, but in creating an overall favorable atmosphere. While subsidies can 
+(and in this case have) created distortions, their role in reducing the risks of adoption and crowding in 
+the private sector, if done well, is undeniable. 
+
+Sixth, scaling is multi-dimensional. In this case, increases in yield were largely driven by the time 
+dimension of scaling up. New technology and practices impact the ability of farmers to complete the 
+various activities of the crop cycle at the optimal times (i.e., timeliness) and has been shown in many 
+research studies to be a major influence on yields. Yields improve as farmers are able to plant two crops 
+per year, in some cases on the same land. Scaling up over space (i.e., greater area), while usually how 
+one thinks about scaling, in this case was more limited, by access to both irrigation and credit. 
+
+Seventh, it is key for commercial scaling not only to make sure that production is profitable for farmers 
+and downstream and upstream actors, but it is perhaps even more important to reduce risk. Crop 
+insurance can help, but the Senegal case shows there are many challenges in making this viable and 
+sustainable, even with government support. In this case, GOS support, programs, and subsidies played a 
+key role. While it is natural to treat subsidies as unsustainable, in this case there is both the political will 
+and fiscal space to sustain these in the medium term, though this could change if world fertilizer or rice 
+prices change. 
+
+Finally, innovations whose adoption takes substantial technical assistance and extension support may be 
+hard to make sustainable. In the case of Senegal, PCE has worked hard to embed the needed capacity in 
+
+Scaling Up of Sahel Rice Varieties in Senegal  
+
+44 
+
+ 
+
+SAED, hydraulic unions, and other farmer organizations. However, whether these organizations have 
+sufficient human resources and institutional capacity to sustain this at the scale needed remains to be 
+seen.  
+
+B. Lessons for USAID and Other Donors 
+
+From the perspective of USAID, there are a number of larger lessons, some of which duplicate those 
+listed above. These are: 
+
+1.  The innovation, or package of innovations, cannot easily be identified in advance but are more 
+
+likely to reveal themselves as constraints and obstacles to scaling a basic innovation. Flexibility in 
+both what and how scaling is conducted is preferable. 
+
+2.  Actual potential scale can be significantly below potential scale based on agro-ecological 
+
+considerations alone. Access to irrigation, inputs, markets, credit, labor, and other resources all 
+can significantly constrain actual potential scale. 
+
+3.  Scaling is multi-dimensional, and strategies need to consider the relative importance of each 
+
+dimension, even though this can evolve in unpredictable ways based on the responses of various 
+private sector actors. The intensive impact of scaling (e.g., increasing yields) can be as important 
+as extensive scaling (e.g., spreading to more farmers, more surface area cultivated). Time and 
+timeliness can be a key dimension of both types of scaling, and should be an explicit focus. 
+
+4.  A scaling up strategy that combines three metaphors—virtuous spiral, snowball, and push-pull—
+
+can be highly effective in reaching critical mass for scaling and allowing scaling to become 
+significantly self-generating. At the same time, it appears that there may be stages or thresholds 
+of scaling in some cases, at which point new constraints appear that impede further self-
+generating scaling. Addressing these often involves public goods or externalities that private 
+actors may not have the resources or incentives to address themselves. 
+
+5.  Commercial ownership and sustainability can be achieved by combining kick starting private 
+
+sector involvement with an explicit view to creating sustainable institutions that can function at 
+scale. This requires an ongoing process of identifying bottlenecks and incentives, providing some 
+initial incentives and risk mitigation, and iterative monitoring and problem solving. 
+
+6.  Focusing on risk for all actors is equally important as profitability. Key risks that can and should 
+
+be addressed include: timely, affordable, and accessible inputs and mechanization; affordable, 
+timely access to credit, liquidity, and insurance throughout the value chain; and ensuring that 
+there is demand for increased supply and supply for increased processing capacity and demand. 
+Public or donor subsidies for inputs, credit, and services can be critical for kick starting 
+increased production and private investment in key parts of the value chain, but as time goes on 
+can create distortions that inhibit private sector efforts from snowballing and becoming self-
+generating. This was the case with GOS subsidies on agricultural machinery purchases, which 
+undercut private efforts. 
+
+7.  Aligning with public sector strategies and programs, as PCE did, is both essential and 
+
+problematic. It often brings as many challenges as it does benefits. The GOS has regularly 
+exaggerated rice performance for political reasons even though this has significantly complicated 
+planning for farmers, processors, seed producers, donors, and others. Nonetheless, PCE could 
+not have achieved its successes if it had not worked effectively with the government, and this 
+often required substantial and ongoing advocacy and consultation. Further, governments are not 
+monolithic and can have different interests varying across ministries, agencies, and parastatals. In 
+
+Scaling Up of Sahel Rice Varieties in Senegal  
+
+45 
+
+ 
+
+this case, the Ministry of Agriculture wanted to ensure high prices for farmers to encourage 
+production, whereas the Ministry of Commerce wanted low consumer prices. The result has 
+been a squeeze on margins for processors, wholesalers, and importers. 
+
+8.  Even in a highly favorable environment like the SRV (e.g., an existing value chain, GOS support, 
+
+access to irrigation), it can take four to five years to achieve results and for self-generating 
+scaling to begin. Based on this case, donors should target (and be able to reach) 20–35 percent 
+scale (i.e., critical mass). However, even this may be sufficient only to reach the next plateau, in 
+this case around 50 percent of potential scale. 
+
+9.  Scaling up, especially when it requires strengthening multiple aspects of the value chain and 
+
+market system, is expensive and, even at this limited scale, beyond the resources of one donor. 
+USAID was in the lead and was able to scale a number of innovations. Nonetheless PCE’s efforts 
+would have had little impact without the substantial complementary assistance from French, 
+Spanish (warehouses), Japanese (crop and milling quality equipment), and World Bank (irrigation 
+infrastructure) sources. Interestingly enough, this functioned extremely well without formal 
+coordination mechanisms, as each donor took a niche and pursued it without duplication. 
+
+10.  Despite these clear successes, a number of challenges remain to further scaling. PCE’s follow-up 
+
+project, Ntaal Mbay, is addressing these, including the need for increased warehouse storage, 
+problems with the design of crop insurance, the continued predominance of local processors, 
+and lack of servicing and maintenance for the much larger supply of agricultural machinery. At 
+least some of these issues are due to distortions introduced by the sector-wide support policies 
+of the GOS (e.g., machinery subsidies). 
+
+ 
+
+Scaling Up of Sahel Rice Varieties in Senegal  
+
+46 
+
+ 
+
+ANNEX A: STAKEHOLDERS TARGETED FOR 
+INTERVIEWS/FOCUS GROUPS 
+
+TABLE 12: STAKEHOLDERS TARGETED 
+
+Stakeholder 
+
+Market 
+
+Innovation 
+
+System and 
+
+Characteristics 
+
+Enabling 
+
+Scaling Up and 
+Market System 
+Strengthening- 
+
+Environment 
+
+Strategies 
+
+Drivers and 
+Pathways of 
+
+Diffusion 
+
+Farmers: broad demographic 
+representation 
+
+Local farmers’ associations 
+
+Other grassroots organizations (co-ops) 
+
+Retail distributors 
+
+Wholesale distributors 
+
+Field sales agents 
+
+Government extension agents 
+
+Local level agricultural research stations 
+
+Donor project field staff 
+
+Donor project field managers 
+
+Rural development relevant local NGOs 
+
+Local VIPs 
+
+Local government officials 
+
+Local Ministry of Agriculture officials 
+
+Local media 
+
+Producing company local agents 
+
+Downstream buyers and processors 
+
+Local agricultural financial institutions 
+
+National or regional farmers’ associations 
+
+National level producing company 
+management and sales staff 
+
+National Ministry of Agriculture officials 
+
+*Other relevant National Ministry officials 
+
+National or regional agricultural research 
+stations 
+
+National or regional media 
+
+National level donor project management 
+
+Other donors working in agri/relevant 
+projects 
+
+National distributors’ associations 
+
+National agriculture relevant NGOs 
+
+National agricultural financial institution 
+management 
+
+3 
+
+2 
+
+2 
+
+1 
+
+2 
+
+2 
+
+2 
+
+2 
+
+2 
+
+2 
+
+2 
+
+0 
+
+0 
+
+2 
+
+0 
+
+2 
+
+1 
+
+0 
+
+0 
+
+3 
+
+1 
+
+0 
+
+3 
+
+0 
+
+1 
+
+0 
+
+0 
+
+0 
+
+0 
+
+3 
+
+2 
+
+2 
+
+2 
+
+2 
+
+0 
+
+0 
+
+0 
+
+2 
+
+2 
+
+0 
+
+0 
+
+0 
+
+0 
+
+0 
+
+1 
+
+2 
+
+1 
+
+2 
+
+2 
+
+2 
+
+0 
+
+0 
+
+0 
+
+1 
+
+1 
+
+1 
+
+1 
+
+1 
+
+2 
+
+2 
+
+2 
+
+2 
+
+2 
+
+2 
+
+1 
+
+0 
+
+2 
+
+2 
+
+2 
+
+0 
+
+1 
+
+1 
+
+0 
+
+3 
+
+2 
+
+1 
+
+2 
+
+3 
+
+2 
+
+0 
+
+1 
+
+1 
+
+1 
+
+0 
+
+1 
+
+0 
+
+0 
+
+3 
+
+2 
+
+2 
+
+2 
+
+2 
+
+3 
+
+2 
+
+0 
+
+2 
+
+1 
+
+2 
+
+0 
+
+0 
+
+0 
+
+0 
+
+2 
+
+1 
+
+0 
+
+1 
+
+2 
+
+1 
+
+0 
+
+0 
+
+1 
+
+2 
+
+0 
+
+2 
+
+1 
+
+0 
+
+Scaling Up of Sahel Rice Varieties in Senegal  
+
+47 
+
+ 
+
+TABLE 13: STAKEHOLDERS MET IN SENEGAL 
+
+Organization Name 
+
+Date 
+
+Location 
+
+Personnel 
+
+Description 
+
+USAID Mission 
+
+11-Jan-16 
+
+Dakar 
+
+Ntaal MBay 
+
+11-Jan-16 
+
+Dakar 
+
+JICA 
+
+12-Jan-16 
+
+Dakar 
+
+12-Jan-16 
+
+Dakar 
+
+Anne Williams, Ronit 
+Gerard 
+Jean-Michel Voisard, 
+Matar  
+Mr. Koji SUNAZAKI,  
+Takashi KIMIJIMA, 
+Marina BAMBARA 
+Mouhamadou 
+Moustapha Fall, DG 
+Ajdoint 
+
+  
+
+Follow-up to USAID PCE project 
+
+  
+
+National insurance company 
+
+12-Jan-16 
+
+Dakar 
+
+Dr. Waly DIOUF 
+
+GOS overarching program for rice 
+self-sufficiency 
+
+13-Jan-16 
+
+Dakar 
+
+Gilbert Ndong, 
+Directeur de Credit 
+et du Réseau 
+Marième DIOP, 
+Directerur Adjoint de 
+la MicroFinace 
+
+State-owned agricultural bank 
+
+13-Jan-16 
+
+Dakar 
+
+Moises Gning 
+
+National Statistical Agency 
+
+13-Jan-15 
+
+Dakar 
+
+Fatou 
+
+  
+
+13-Jan-15 
+
+Dakar 
+
+Ousmane NDIAYE 
+
+Rice buyers’ trade association 
+
+14-Jan-15 
+
+Dakar 
+
+Mariama Drame 
+
+GOS farm support agency 
+
+CNAAS – Compagnie 
+National Assurance de 
+Senegal 
+PNAR – Programme 
+National d’Autosuffisance 
+en Riz, Coordinator 
+
+CNCAS – Caisse Nationale 
+de Credit Agricole du 
+Senegal 
+
+ANSD – Agence National 
+de Statistique 
+DPSA  
+UNACOIS Buyers 
+association 
+ANCAR – Agence National 
+de Conseil Agricole et 
+Rural 
+Ntaal Mbay – Saint Louis 
+office 
+
+AfricaRice 
+
+18-Jan-15 
+
+Saint Louis 
+
+18-Jan-15 
+
+Saint Louis 
+
+Amadou SOUARE, 
+Assane DIEYE 
+
+Mandiaye Diagne, 
+Mamadou NDIAYE 
+
+CGER 
+
+CNCAS 
+
+ISRA 
+
+SAED 
+
+18-Jan-15 
+
+Saint Louis 
+
+  
+
+19-Jan-16 
+
+Saint Louis  Cheikh Ndiaye 
+
+19-Jan-16 
+
+Saint Louis  Madiama Cisse 
+
+19-Jan-16 
+
+Saint Louis 
+
+  
+
+Teranga Enterpise 
+
+19-Jan-16 
+
+Saint Louis  Caty Lo, Directrice 
+
+GIE  
+
+20-Jan-16  Ross Bethio 
+
+  
+
+CEDAF Union des Femmes 
+Productrices de Ross 
+Bethio 
+
+20-Jan-16  Ross Bethio 
+
+20-Jan-16  Ross Bethio 
+
+Ndeye Gaye, 
+President 
+
+Ndiawar Diop, 
+President 
+
+Current USAID project supporting 
+cereal production in Senegal 
+Senegal branch of international 
+rice research organization for 
+Africa 
+Parastatal accounting to support 
+irrigated rice producer 
+organizations 
+Government agricultural bank, 
+local branch 
+Research institution on rice and 
+other crops 
+Government agency in charge of 
+irrigation support in SRV 
+Rice milling business 
+Private paddy buying and selling, 
+rice milling business, also 
+machinery services 
+
+Women’s irrigation union 
+composed of 7 GIEs 
+
+Federation of irrigation unions and 
+GIEs in rice production in SRV 
+
+Scaling Up of Sahel Rice Varieties in Senegal  
+
+48 
+
+ 
+
+Organization Name 
+
+Date 
+
+Location 
+
+Personnel 
+
+Description 
+
+CIRIZ-FPA – Federation du 
+Perimetres Autogerés du 
+Senegal 
+
+CNT – SUARL 
+
+21- Jan -16 
+
+Mboudj et Freres 
+
+21- Jan -16 
+
+Vital 
+
+Pelitel 
+
+22-Jan-16 
+
+23-Jan-16 
+
+Richard 
+
+Toll 
+
+Richard 
+
+Toll 
+
+Richard 
+
+Toll 
+Podor 
+
+  
+
+Ousmane Ka, 
+Economist 
+
+Oumar Diop,  
+Ibrahima Sall 
+
+Rice miller 
+
+Alioune Mbodj  
+
+Rice miller 
+
+Birame Ndiaye 
+
+Rice miller 
+
+SP1 Fanaye 
+
+23-Jan-16 
+
+Podor 
+
+Amadou Tall 
+
+Podor Fegina 
+Ousmane Ndiaye 
+UNACOIS 
+
+ 
+
+23-Jan-16 
+
+Podor 
+
+25-Jan 
+
+Dakar 
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+Scaling Up of Sahel Rice Varieties in Senegal  
+
+49 
+
+

@@ -1,0 +1,2291 @@
+The Journal of Development Studies
+
+ISSN: 0022-0388 (Print) 1743-9140 (Online) Journal homepage: https://www.tandfonline.com/loi/fjds20
+
+Bride Price and Fertility Decisions: Evidence from
+Rural Senegal
+
+Linguère Mously Mbaye & Natascha Wagner
+
+To cite this article: Linguère Mously Mbaye & Natascha Wagner (2017) Bride Price and Fertility
+Decisions: Evidence from Rural Senegal, The Journal of Development Studies, 53:6, 891-910, DOI:
+10.1080/00220388.2016.1208178
+To link to this article:  https://doi.org/10.1080/00220388.2016.1208178
+
+© 2017 The Author(s). Published by Informa
+UK Limited, trading as Taylor & Francis
+Group.
+
+Published online: 21 Jul 2016.
+
+Submit your article to this journal 
+
+Article views: 3418
+
+View related articles 
+
+View Crossmark data
+
+Citing articles: 3 View citing articles 
+
+Full Terms & Conditions of access and use can be found at
+
+https://www.tandfonline.com/action/journalInformation?journalCode=fjds20
+
+The Journal of Development Studies, 2017
+Vol. 53, No. 6, 891–910, http://dx.doi.org/10.1080/00220388.2016.1208178
+
+Bride Price and Fertility Decisions: Evidence from
+Rural Senegal
+
+LINGUÈRE MOUSLY MBAYE* & NATASCHA WAGNER**
+*African Development Bank, Immeuble du Centre de commerce International d’Abidjan CCIA, Abidjan, Côte d’Ivoire,
+**International Institute of Social Studies of Erasmus University Rotterdam, The Hague, The Netherlands
+
+(Original version submitted October 2015; Final version accepted May 2016)
+
+ABSTRACT This paper provides evidence about the relationship between bride price payments and fertility
+decisions in Senegal. Higher bride price payments reduce the fertility pressure for women with results
+being robust to confounding socio-economic and contextual factors. The fertility-reducing impact is greater
+for women who are economically dependent on their husbands. In polygamous households and for
+arranged marriages, a lower bride price increases fertility pressure while in monogamous households
+and for non-arranged marriages, the bride price does not affect fertility. As bride price payments have less
+power over (economically) independent women, empowerment will give leeway to girls in traditional
+societies.
+
+1. Introduction
+
+In many sub-Saharan African countries, particularly in Senegal, the bride price payment is a key
+element of the marriage contract. Contrary to a dowry payment, where the bride and her family give
+the marriage payment to the groom and his family, a bride price payment is defined as the money or
+wealth transfer given by or on behalf of the groom to the bride and her family upon the marriage of the
+couple. Such a bride price system raises several concerns related to the economics of the marriage
+market, gender empowerment and intra-household bargaining power. The anthropological literature
+has shown that bride price payments strengthen normative constraints on women’s autonomy in the
+reproductive domain (Horne, Dodoo, & Dodua Dodoo, 2013). We consider a woman’s role in
+marriage as represented by the fertility decisions of the couple. Previous research for the case of
+Indonesia has shown that women who perceive more household assets as being their own have a
+greater say in fertility decisions (Beegle, Frankenberg, & Thomas, 2001). Thus, fertility choices, as
+measured by the number of children at a given age, can be taken as an indicator of female bargaining
+power and a woman’s relative position within the household.
+
+This paper is an important contribution to the existing literature as most of the studies about
+marriage payments have been carried out in South Asia. The African context, in which a bride price
+is paid, is substantially different and the dynamics that apply in many parts of Asia cannot be
+extrapolated to the African continent. To the best of our knowledge, our study is the first large-scale
+analysis of bride price dynamics in Africa and the first study that is interested in the relationship
+between bride price payments and fertility decisions in general and in rural Africa in particular.
+
+Correspondence Address: Natascha Wagner Email: wagner@iss.nl
+
+© 2017 The Author(s). Published by Informa UK Limited, trading as Taylor & Francis Group.
+This is an Open Access article distributed under the terms of the Creative Commons Attribution-NonCommercial-NoDerivatives
+License (http://creativecommons.org/licenses/by-nc-nd/4.0/), which permits non-commercial re-use, distribution, and reproduc-
+tion in any medium, provided the original work is properly cited, and is not altered, transformed, or built upon in any way.
+
+892 L. M. Mbaye and N. Wagner
+
+For the purpose of this study, we employ a unique dataset of married couples from rural Senegal
+consisting of 2241 observations. The data were collected in two survey rounds in 2009 and 2011 as
+part of a gender and female empowerment module of a larger survey on rural infrastructure develop-
+ment in Senegal. The dataset is representative for rural Senegal in seven out of 14 regions and allows
+us to quantify the effect of the bride price on the number of children a woman gives birth to.
+Employing Ordinary Least Squares (OLS) and Poisson regressions controlling for region and marriage
+cohort effects, we find a negative relationship between bride price payments and the number of
+children indicating that women who receive a higher bride price have fewer children. At the mean
+bride price, a woman reduces her number of children by 0.55. The main dynamic stems from the
+difference in birth outcomes of those women receiving only a symbolic bride price and those
+representing the top 5 per cent of the bride price distribution. Their difference in realised fertility is
+about 0.2 children. This is a small but robust difference indicating that bride price payments have a
+lasting implication on the life of women. We also address potential endogeneity bias stemming from
+omitted variables by controlling for income and wealth dynamics. Simultaneity bias is accounted for
+by including measures of bargaining power of both husband and wife at the time of the marriage.
+Measurement error in the recall of the bride price is controlled for by including the mean bride price
+between 2009 and 2011, instead of the actually reported values in every year. We demonstrate that our
+findings are not driven by these sources of bias. Furthermore, we carry out a detailed heterogeneity
+analysis by exploring various variables through which the marriage payments influence the fertility
+decisions such as the age of the bride at marriage, the age difference between husband and wife,
+income generating activities of the wife, the type of union (polygamy) and distance to the couple’s
+parents.
+
+The remainder of the paper is structured as follows: Section 2 reviews the existing literature. A
+simple theoretical framework of the link between bride price payments and fertility outcomes is
+presented in Section 3. In Section 4 we present the study context and the data. Section 5 introduces
+the empirical strategy and the main results. Sources of endogeneity and corresponding robustness
+checks are discussed in Section 6. Heterogeneous effects are presented in Section 7. Section 8
+concludes and presents the implications of our results.
+
+2. Background on Marriage Payments and Fertility Decisions
+
+Family and marriage dynamics have first been extensively studied in economics by Becker (1981).
+Becker’s model of marriage rests upon the equilibrium of a matching exercise, which fits men and
+women together as couples. This assortative mating model can explain the existence of dowries and
+bride price payments. The latter arises particularly in polygynous societies where women are relatively
+scarce. These payments allow, for example, to differentiate between single and divorced women with the
+former being more highly valued on the marriage market (Goldschmidt, 1974; Papps, 1980). Thus,
+Becker views the bride price payment as an investment. According to his analysis, bride price payments
+are forfeited if husbands divorce their wives without cause. This explains why husbands have an
+incentive to maintain the social contract they have engaged in. Wives, in turn, have to repay their ex-
+husbands if they leave them for no reason (Kaye, Mirembe, Bantebya, Ekstrom, & Johansson, 2005).
+Marriage payments are a known concept in almost all societies. Although they are hardly ever
+practiced in the West, they are still prominent in many developing countries (Anderson, 2007). To
+date, most of the studies about marriage payments have been carried out in South Asia. In this region,
+marriage payments are mostly found in the form of dowries meaning that the bride’s parents give the
+marriage payment to the groom. Several studies in the literature analyse the relationship between
+dowry payments and various other factors such as the surplus of women in the marriage market (Rao,
+1993), the caste system (Anderson, 2003), domestic violence (Srinivasan & Bedi, 2007), female
+human capital endowment (Sharma & Frijters, 2009) and family planning (Peters, 2011).
+
+Most African countries base the marriage contract upon bride price payments instead of dowries.1 A
+plethora of reasons for this difference in marriage systems has been discussed (Botticini & Siow,
+
+Bride price and fertility 893
+
+2003): first, Africa is characterised by collective rights that prevent a dowry system from evolving
+since possibilities for parents to transfer individual wealth to their children are limited. Second, Africa
+has a non-plough agricultural system where female labour is more important than in the plough
+agricultural system that exists in Asia (Boserup, 1970). Such a system of agricultural production limits
+the possibilities to introduce dowries and bequests. Third, dowries are found in monogamous societies
+whereas African societies have a polygynous structure (Bergstrom, 1994; Tertilt, 2005).
+
+In recent years, the economics of bride price systems have received increasing attention. For
+instance, it has been shown that higher bride price payments do not influence the behaviour of
+husbands towards their wives whereas higher dowries do (Zhang & Chan, 1999). Kaye et al. (2005)
+similarly argue that bride price payments in Uganda enhance the social status of women, but due to the
+economic dependence of women on their husbands they cannot expect less domestic violence. In a
+different study using Ugandan data, Bishai and Grossbard (2010) interpret the bride price as the
+women’s sexual fidelity to men because this marriage payment is associated with a lower rate of extra-
+marital sexual relationships for women, yet not so for men. In the specific case of Senegal, Gaspart and
+Platteau (2010), Platteau and Gaspart (2007) show that the value of the bride price is determined not
+only by a woman’s socio-economic characteristics but also by strategic behaviour by herself and her
+parents. The bride and her altruistic parents can prefer a (relatively) low bride price in the case of a
+love marriage or to reduce the risk of ill-treatment and failure of the marriage. Yet, the persistence of
+the bride price system even under changing socio-economic conditions has been documented for the
+case of Indonesia and Zambia where females with a higher level of education upon marriage results in
+higher bride prices (Ashraf, Bau, Nunn, & Voena, 2015).
+
+The ancient practice of bride price payments is performed in many sub-Saharan African countries.2
+In the specific case of Senegal, the value of the bride price is determined in negotiations between the
+two families. The bargaining process preceding a marriage may only involve the couple or may even
+take into consideration the advice given by the extended family. Before the actual marriage celebra-
+tion, several consultative visits and mutual invitations take place between the future spouses and/or
+close family members. To conclude this period of negotiations, the bride’s parents have to choose a
+date for the marriage ceremony and announce the desired value of the bride price. This bride price can
+be composed of cash and material goods such as furniture and jewels. Moreover, most Senegalese are
+Muslims and according to Islamic law, a minimum amount is necessary to validate the marriage.
+However, this amount is low enough to be only of symbolic value (less than 23 Euros). It is common
+practice that people pay a higher bride price than that which is required by their religion. The bride
+price is given to the bride and her family. In this context it is impossible to disentangle which share of
+the marriage payment goes to the bride herself and which share her family keeps (Horne et al., 2013).3
+Moreover, in sub-Saharan African countries bride price payments result from tribal traditions and are
+practiced regardless of religious affiliations; Muslims as well as Christians adhere to these traditions.
+As the bride price that exceeds the amount set by Islamic law is not fixed, its precise amount depends
+on the appreciation of the bride by her family and in-laws, the bride’s socio-economic conditions, her
+relative bargaining power, the prestige of both families as well as customary law. In the extreme case,
+the bride price payment asked for by the girl’s family might be prohibitively high to prevent the union
+with an unpopular man. In a different context, the girl’s family might abstain from any claim for
+altruistic reasons. As the actual negotiation is a dynamic process that depends upon the socio-
+economic conditions of the two families,
+the value of the realised bride price payment varies
+considerably across couples.
+
+Next to the literature on marriage dynamics in developing countries this paper also draws upon the
+literature on the fertility transition and factors that shape fertility preferences and decisions. Over
+recent decades we see a global decline in fertility (United Nations, 2015). Female education has been
+identified as an important driver for the fertility transition (Baird, Chirwa, McIntosh, & Özler, 2010;
+Baird, McIntosh, & Özler, 2011; Drèze & Murthi, 2001; Fafchamps & Shilpi, 2014; Osili & Long,
+2008). It is suggested that the fertility reducing effect of education works through delayed marriage
+and birth of the first child (Marchetta & Sahn, 2016) as well as increased female labour market
+participation (Bbaale, 2011). For Senegal, existing evidence points to delayed marriage and
+
+894 L. M. Mbaye and N. Wagner
+
+motherhood but findings about labour market participation are mixed. A study by Beguy (2009)
+suggests that women’s participation in the labour market is not associated with a decline in fertility in
+the city of Dakar. In turn, in rural, northern Senegal an increase in female off-farm labour due to a
+boom in horticulture exports led to a lower fertility rate (Van den Broeck & Maertens, 2015).
+
+Next to education, there is widespread agreement that social norms regulate fertility across societies
+and changes of these norms due to shocks, social programmes and over time can lead to fertility
+transitions. One such change in social norms, such as the introduction of contraceptives, has been
+studied by Munshi and Myaux (2006). The open question that the study at hand addresses is related to
+the social norm of bride price payments, which is deeply embedded in Senegalese culture. We assess
+whether the amount of the bride price influences the fertility pressure on women and along which
+channels. To answer this question, we start with a simple theoretical model of a husband’s demand for
+a wife and children.
+
+3. Theoretical Framework
+
+We set up a basic, static model depicting the relationship between bride price payments and realised
+fertility. In line with anthropological evidence we argue that with the full payment of the bride price a
+woman loses her reproductive autonomy and subordinates her fertility preferences to the husband
+(Horne et al., 2013). Then, every man in a traditional society maximises the following utility function:
+
+U ¼ UðW ; N Wð
+
+Þ; CÞ
+
+(1)
+
+where W denotes the direct utility from being married. This contains the services a wife provides
+for her husband, such as taking care of the household, and her level of education but also less
+tangible traits such as her beauty and her reputation within the local community. This builds on
+existing evidence that the amount of the bride price reflects a woman’s socio-economic character-
+istics (Gaspart and Platteau, 2010; Horne et al., 2013; Platteau and Gaspart, 2007). The second
+component entering male utility is his number of children, which is a function of a woman’s traits
+W. Building on existing anthropological evidence we argue that men in traditional societies aim for
+large families as it increases their standing within the community (Caldwell & Caldwell, 1990). A
+priori, we remain agnostic about the relationship between a woman’s traits W and the number of
+children.4 Lastly, men derive utility from a composite consumption good. We impose the standard
+assumption that utility is increasing in all its factors at a decreasing rate, that is Ui > 0 and Uii < 0
+for i = W, N, C.
+
+A man wants to maximise utility subject to his budget constraint:
+
+I ¼ pW W þ pN N Wð
+
+Þ þ pC;
+
+where I is the combined income from all sources. The income is used to come up with the marriage
+payment with the bride price being captured by pW, the costs of raising a child as denoted by pN and
+the costs of consumption p. The costs of raising a child contain expenditures for nutrition, health care,
+and the time devoted to the child.5 The price associated with the composite consumption good is set
+to 1.
+
+From the maximisation we obtain the following expression for the relationship between a woman’s
+
+traits and her number of children:
+
+¼ UW   pW UC
+pN UC   UN
+
+dN
+dW
+
+0
+
+<
+>
+
+(2)
+
+This expression together with the budget constraint allow us to draw two conclusions about the impact
+of the bride price on the number of children: first, for a given level of income I a man has to reduce the
+
+Bride price and fertility 895
+
+number of children in response to a marriage with an ‘expensive’ bride, for whom he pays pw. This is
+the income effect. Second, from Equation (2) we obtain that an increase in the bride price increases the
+dW < 0 suggesting that women with more ‘expensive’ traits want a smaller number of
+probability that dN
+children. Based on the literature about the fertility transition and the impact of education on fertility we
+refer to this latter effect as the education effect, which has already been observed by Ashraf et al.
+(2015).
+
+In this admittedly simple model we have only considered the role of women as perceived by men.
+However, by making the number of children dependent on a woman’s traits we implicitly model a
+woman’s bargaining power, which is low for women whose traits are not valued by the husband.
+Concomitantly, an increase in female bargaining power will result in a decreasing fertility pressure as
+the woman is more valued for who she is as captured by W. Thus, whenever the groom pays a high
+bride price, he demonstrates his willingness to treat his wife well and to avoid the risk of divorce,
+which would correspond to a financial failure of his investment. In consequence, a husband who has
+paid a higher bride price gives more independence to his wife by reducing the pressure on her to
+produce offspring. Put differently, a lower bride price reduces a woman’s bargaining power in the
+household, which in turn increases the fertility pressure on her.6
+
+Our model is a simple formalisation of the evidence provided by Beegle et al. (2001) showing for
+the case of Indonesia that the more assets a woman owns, the bigger her say on fertility decisions. In
+what follows we will empirically disentangle if, controlling for income, higher bride prices imply a
+reduction in realised fertility.
+
+4. Survey Context and Data
+
+4.1. The Survey
+Data are provided by a household survey carried out in rural areas of seven regions of Senegal.7 The
+survey was part of the programme evaluation of a rural electrification initiative by the United Nations
+Development Programme (UNDP) known as multifunctional platform. The dataset includes two
+waves: the baseline survey was carried out between May and July 2009 and the second survey
+between April and June 2011. Villages were randomly selected based on the criterion of not having
+access to the national grid, which is not a severely restricting criterion as the overall rural electrifica-
+tion rate was only roughly above 20 per cent in 2008 including off-grid solutions (Mawhood & Gross,
+2014). Within the villages, households were also selected at random from the list of resident house-
+holds supplied by the head of the village. The sample can therefore be considered representative for
+rural Senegal in seven out of 14 regions, in which subsistence agriculture is the most prevalent form of
+income generation.
+
+For the purpose of our analysis, we restrict the sample to married individuals at the time of the
+survey, who responded to the gender questionnaire. Consequently, we establish an unbalanced panel
+of married couples, which allows us to compare the dynamics of marriage payments across regions.
+While at the household level we have a balanced panel, at the level of the individual couple it is
+unbalanced. This is because within a household the same couple was not necessarily interviewed
+during both survey rounds. We employ a dataset that consists of 2241 responses by married couples,
+with repeated observations for 58.19 per cent of the sample. Put differently, 1304 of the observations
+in our sample represent 652 couples that were interviewed twice. The remaining 937 couples were
+interviewed once either in 2009 or in 2011. The subsample of repeated observations at the couple
+level shows that the amount of the bride price recalled by the same woman can differ from one
+survey round to the next. We exploit the variation in women’s declaration about their bride price to
+address recall bias, which is a novel aspect of this study that has not yet been addressed in the
+literature.
+
+896 L. M. Mbaye and N. Wagner
+
+4.2. Descriptive Statistics
+
+We present summary statistics in Table 1. The ethnic and socio-economic composition of the
+sample underlines the representativeness of the dataset. An important majority of households
+declare their ethnic group as being Wolof (43%), Pular (24%) or Serere (18%). Moreover, almost
+one fifth of the households are casted8 and 42 per cent of the couples report living in a polygamous
+union.
+
+Household ownership of farmland, durable goods and livestock is reported by 86 per cent, 89 per
+cent and 93 per cent of households, respectively. On average, households own 2.51 plots of arable land
+indicating that they are in agriculture and derive their living from farming. In order to capture the
+economic conditions at the time of the marriage, we build five cohorts derived from the difference
+
+Table 1. Summary statistics
+
+Mean
+
+Std. Dev.
+
+Min
+
+Max
+
+Number of children
+Bride price
+Mean bride price (years 2009 and 2011)
+Characteristics of the wife
+Age of the wife
+Age of the wife at marriage
+Literacy of the wife
+Income generating activity (IGA) of the wife
+Wife occupation before marriage
+Wife owns livestock at marriage
+Wife owns durable goods at marriage
+Characteristics of the husband
+Age of the husband
+Age difference between husband and wife
+Literacy of the husband
+IGA of the husband
+Husband occupation before marriage
+Household characteristics
+Polygamy household
+Distance to wife’s parents
+Distance to husband’s parents
+Household owns farmland
+Number of plots
+Household owns durable goods
+Household owns livestock
+Ethnicity
+Pular
+Serere
+Manding
+Soninké
+Diakhanke
+Other ethnicity
+Caste
+Year of marriage cohort
+Year of marriage cohort [0, 5[
+Year of marriage cohort [5, 10[
+Year of marriage cohort [10, 15[
+Year of marriage cohort [15, 20[
+Year of marriage cohort [20, 25[
+
+5.20
+240,917.5
+263,343.3
+
+3.10
+340,149.2
+276,150.9
+
+37.00
+17.85
+0.16
+0.47
+0.07
+0.14
+0.16
+
+51.03
+14.89
+0.44
+0.91
+0.45
+
+0.42
+20.00
+2.55
+0.86
+2.51
+0.89
+0.93
+
+0.24
+0.18
+0.06
+0.04
+0.02
+0.03
+0.18
+
+0.13
+0.16
+0.15
+0.14
+0.14
+
+12.18
+4.63
+0.37
+0.5
+0.25
+0.34
+0.37
+
+14.33
+10.61
+0.50
+0.29
+0.5
+
+0.49
+62.12
+29.17
+0.34
+1.73
+0.31
+0.25
+
+0.43
+0.38
+0.23
+0.21
+0.15
+0.17
+0.39
+
+0.34
+0.37
+0.35
+0.35
+0.35
+
+0
+0
+0
+
+16
+10
+0
+0
+0
+0
+0
+
+15
+0
+0
+0
+0
+
+0
+0
+0
+0
+0
+0
+0
+
+0
+0
+0
+0
+0
+0
+0
+
+0
+0
+0
+0
+0
+
+16
+1,000,000
+1,000,000
+
+90
+55
+1
+1
+1
+1
+1
+
+94
+68
+1
+1
+1
+
+1
+908
+900
+1
+10
+1
+1
+
+1
+1
+1
+1
+1
+1
+1
+
+1
+1
+1
+1
+1
+
+Notes: Pooled summary statistics for the survey years 2009 and 2011. The total number of observations is
+2241. The reference group for the ethnicity is Wolof. The reference group for the year of marriage cohort is
+the cohort [25, .].
+
+Bride price and fertility 897
+
+between the year of the survey and the year of marriage. For instance, the year of marriage cohort [0, 5[
+is an indicator variable equal to one if the marriage was celebrated less than five years before the survey.
+The year of marriage cohort [5, 10[ codes for women who were married between five and 10 years
+before the survey. We further construct the year of marriage cohorts [10, 15[, [15, 20[ and [25,.] by
+following the same logic; 13 per cent of the marriages were celebrated between 0 and 5 years before the
+survey.
+
+At the level of the individual couple we derive most information from the woman’s questionnaire.
+Women have on average 5.20 children. This number includes children who are alive and those who
+have died. The average woman is almost 37 years old. Considering the span of reproductive age is 15–
+49 years old, which is applied by the Demographic and Health Surveys, the average woman has
+already completed almost two-thirds of her reproductive life. Thus, we have a considerable share of
+women in the sample with (almost) completed fertility profiles. Nevertheless, in the empirical analysis
+we will control for current age and age at marriage. Moreover, the sampled women are on aver-
+age14 years younger than their husbands. This gender age gap is not surprising in rural Senegal and
+gives an indication of the timing of marriages and the underlying marriage market processes: men first
+need to acquire the necessary assets to set up a family. The bride price paid at the wedding constitutes
+a non-negligible part of these assets. From our survey we have detailed self-reported bride price
+information reflecting the complete amount of the bride price that was paid. While the average bride
+price in the sample is FCFA 240,917 (367 Euros), there is considerable variation and the mean is
+driven by some large amounts as the median of FCFA 75,000 (114 Euros) shows.9 All bride prices are
+denoted in nominal terms. Our analysis shares this feature with a similar study by Gaspart and Platteau
+(2010) who also had to rely on nominal values.
+
+Women marry young as the average age at first marriage indicates; they are below 18 years of age
+on average. Similarly to the anthropological literature discussed above, we find that women’s position
+is weak: only 16 per cent of women know how to read and write, whereas 44 per cent of their
+husbands are alphabetised. Yet, almost 47 per cent of the women in the sample are economically active
+beyond household chores and family farm work and 91 per cent of men pursue additional economic
+activities. At the time of their marriage, some 14 and 16 per cent of women own livestock and durable
+goods, respectively. A relatively low share of women (7%) have had an occupation before getting
+married while this proportion is as high as 45 per cent for men. Women’s subordinate position is also
+demonstrated with respect to their living arrangements. Women live close to their in-laws since on
+average the couples live only 2.55 kilometres away from the husband’s parents. This distance is
+estimated at 20 kilometres for the woman’s parents. This last pair of descriptive statistics represents
+virilocality in the rural communities where wives have to take care of their parents-in-law and the
+domestic activities in the in-laws’ home. Last, but not least, these descriptive statistics also show that
+the majority of couples come from the same region as indicated by the relatively short distances to the
+parents in general.
+
+Overall, summary statistics leave no doubt that the sample at hand represents rural villages in
+Senegal, in which women are in a considerably weaker position in terms of education and (economic)
+empowerment compared to men.
+
+5. Econometric Framework and Main Results
+
+5.1. Empirical Strategy
+
+We set up a linear model for the theoretically derived link between bride price payments and fertility
+decisions to empirically analyse whether realised fertility is indeed a function of the bride price along
+with other female and overall socio-economic characteristics. We specify the model in terms of its
+conditional mean:
+
+EðyihrtjConditionihrtÞ ¼ β
+
+þ β
+
+1log BPð
+
+Þ
+
+0
+
+ihrt
+
+þ β
+
+2Wihrt þ β
+
+3Hihrt þ β
+
+4HHhrt þ μ
+
+t
+
+þ λr;
+
+(4)
+
+898 L. M. Mbaye and N. Wagner
+
+where the subscript i denotes wife, h household, t year and r region. The dependent variable yihrtis the
+number of children a woman has given birth to at the moment of the survey. It is conditioned on all
+right-hand side variables, which are collected in Conditionihrt. The variable of interest is the logarithm
+of the bride price log(BP)ihrt. More specifically, we use log(1 + BP)ihrt to take into account amounts of
+bride price equal to zero. We also control for the socio-demographic characteristics of the women Wihrt
+such as contemporaneous age and its square, the age of the women at her current marriage and its
+square, and a binary variable equal to one if the women is literate. The variable literacy is used to
+proxy for the education level. Similarly, we control for the husband’s characteristics Hihrt such as his
+age and its square, and a binary variable equal to one if he is literate. In addition, we take into account
+household characteristics HHhr by controlling for ethnicity and caste as well as the type of marriage
+practiced.10 The marriage form is captured by an indicator variable coding for polygamous unions. We
+further control for household wealth by including the number of plots owned by the household.
+
+In addition, we include µt in our basic regression model to capture year of marriage cohort fixed
+effects. Economic conditions at the time of the marriage are considered as underlying factors that can
+influence both the amount of the bride price and the ensuing number of children. In order to deal with
+this source of omitted variable bias, we include year of marriage cohort fixed effects. Controlling for
+the marriage cohorts allows us to take into account positive or negative shocks such as weather events
+that prevailed around the wedding period and economic variables such as the level of prices.
+Furthermore, we need to control for marriage cohort fixed effects as all bride prices are denoted in
+nominal terms. Alternatively, we could have included information about the inflation history of
+Senegal but since this information is at the national level and does not change within marriage cohort,
+we opted for cohort-fixed effects. Gaspart and Platteau (2010) in their analysis of bride price dynamics
+face the same problem and present a detailed discussion of the evolution of bride prices over time.
+Moreover, our data highlight that the recalled bride price information is susceptible to recall bias and
+reported relative to current conditions. Therefore, controlling for inflation at the time of marriage
+would not necessarily do justice to the data.
+
+We employ five-year windows for the cohorts to rule out any impact of the economic context at the
+beginning of the marriage on both the bride price negotiations and the initial fertility decisions. Finally,
+regional heterogeneity is controlled for by including region fixed effects λr in Equation (4). Standard
+errors are clustered at the regional level to account for intra-cluster correlations.
+
+While the linear fixed effects model is our benchmark model, we also employ a fixed effects
+Poisson model as robustness test. The Poisson model better encompasses our outcome variable,
+number of children, which is a count variable that is censored at zero and skewed to the right. The
+conditional mean of the Poisson model is defined as follows:
+
+EðyihrtjConditionihrtÞ ¼ expðδ0 þ δ1log BPð
+
+Þ
+
+þ δ2Wihrt þ δ3Hihrt þ δ4HHhrt þ μ
+
+þ λrÞ;
+
+t
+
+ihrt
+
+(5)
+
+where the variables are the same as described above. Since coefficient estimates from the linear model
+and the Poisson model differ by construction, we assess the robustness of the OLS coefficient
+estimates relative to the comparable marginal effects from the Poisson model.
+
+Moreover, endogeneity is a key concern in our analysis. First, it is important to disentangle between
+the income or wealth effect and the bride price effect on the number of children while at the same time
+income and wealth are considered endogenous themselves. However, even if these variables tend to be
+endogenous, by not controlling for them we may introduce omitted variable bias. Therefore, we
+compare our results with and without income variables. At the very least, it allows us to see whether
+our findings are robust to their inclusion. As we do not have detailed information on income, we have
+to use proxy variables. A primary candidate to proxy for income is the number of plots owned by the
+household. We believe that this variable is a good proxy for permanent income and can be considered
+exogenous due to the lack of active land markets in rural Senegal. In addition, land is considered as a
+suitable wealth indicator because inheritance is patrilineal in rural Senegal. However, a concern is
+whether the number of plots is a good predictor of wealth that controls for income adequately.
+
+Bride price and fertility 899
+
+Therefore, we use alternative measures of income such as ownership of durable goods and livestock to
+challenge the robustness of our results to the introduction of these variables.
+
+Second, the year of marriage cohort fixed effects help us to address another source of endogeneity
+introduced by measurement error in the amount of bride price due to the recall nature of the data. As
+with all analyses that employ recall data we face the challenge that human memories are adaptive. It is
+likely that the precise amount of the bride price is not correctly expressed by the interviewed women.
+These variations in the amount can be due to the duration between the year of the survey and the year
+of the marriage. Although we address the potential measurement error in the recalled amount of the
+bride price by including year of marriage cohort dummies, we further use an alternative specification,
+which considers the mean bride price between 2009 and 2011.
+
+Third, by including region fixed effects, we can rule out sources of bias stemming from regional
+
+characteristics that are common across couples residing in a particular area.
+
+A fourth source of endogeneity is simultaneity bias arising from the fact that both bride price
+payments and the number of children are driven by the bargaining power of the bride. We control for
+the bargaining power of both husband and wife at the time of the marriage by including a proxy of the
+husband’s income and the assets of the bride at the time of marriage.
+
+Lastly, to gain a more precise picture of the differential impact of bride price payments we carry out a
+heterogeneity analysis with respect to five variables: (i) the age of the bride at the time of the marriage, (ii) the
+age difference between husband and wife, (iii) the income generating activities (IGA) of the wife, (iv) the type
+of union (polygamy) and (v) the distance to the couple’s parents. We allow the coefficient associated with
+bride price to vary with these different sets of variables and split the sample between these categories. We
+replace log BPð
+with j being
+equal to any of the five variables, for which we assess heterogeneous effects. Consequently, we report the
+interaction term of bride price with these different categories of variables and directly interpret the differences
+in coefficient estimates by means of the F-test. Since we interact both categories (Dummyihrtj ¼ 1 and
+Dummyihrtj ¼ 0) with bride price, the bride price itself is no longer directly included in the regressions as this
+would result in perfect multicollinearity.
+
+ 
+ Dummyihrtj ¼ 1
+
+ 
+ Dummyihrtj ¼ 0
+
+and log BPð
+
+Þ
+
+ihrt
+
+ihrt with log BPð
+Þ
+
+Þ
+
+ihrt
+
+
+
+
+
+5.2. Main Results
+
+The main results are presented in Table 2 and clearly show that the bride price is negatively related to
+the number of children.
+
+We start the analysis by assessing a simple correlation between bride price and the number of
+children. In Column 1 of Table 2, the OLS framework yields a significant (α = 5%) and negative
+coefficient associated with the log bride price payment, namely −0.164. Column 2 of Table 2 shows
+the results with regional and year of marriage cohort fixed effects. The coefficient associated with
+bride price remains significant and negative. Yet, the magnitude and the size of the coefficient is lower
+as compared to Column 2 indicating that the overall economic conditions around the wedding play a
+role in ensuing fertility decisions. In addition to these fixed effects, we control for wife and husband
+characteristics, polygamy, ethnicity and caste and confirm the significant (α = 5%) and negative
+relationship between bride price and the number of children (Column 3 of Table 2). The coefficient is
+−0.044 indicating that at the mean bride price of FCFA 240,917 a woman gives birth to 0.55 children
+less. At the median bride price, a woman has 0.49 children less on average. Put differently, every other
+woman who receives a bride price between the median and the mean value of our sample compared to
+a woman who does not receive a marriage payment, gives birth to one child less. While the effects
+seem to be large at first glance, they need to be qualified relative to the model we employ. The main
+dynamic stems from the difference in birth outcomes of those women receiving only a symbolic bride
+price of up to FCFA 10,000 or less, which make up for the bottom 5 per cent, and the top 5 per cent,
+which receive a bride price of FCFA 650,000 and above. Their difference in realised fertility is about
+0.2 children. This is a small but robust difference that is found across all specifications and consistent
+with the theoretical model. Given that the bride price is paid at the beginning of the marriage and is a
+
+900 L. M. Mbaye and N. Wagner
+
+Table 2. Bride price and fertility: main results
+
+Dependent variable: number of children
+
+OLS
+
+OLS
+
+OLS
+
+OLS
+
+Poisson
+
+Poisson
+
+Poisson
+
+Poisson
+
+Marginal effects
+
+Variables
+
+(1)
+
+(2)
+
+(3)
+
+(4)
+
+(5)
+
+(6)
+
+(7)
+
+(8)
+
+−0.164** −0.054* −0.044**
+(0.06)
+
+(0.02)
+
+−0.151*** −0.055** −0.044*** −0.043**
+(0.05)
+
+(0.02)
+
+−0.043**
+(0.02)
+0.444***
+(0.07)
+
+(0.02)
+0.442***
+(0.07)
+−0.004*** −0.004***
+(0.00)
+−0.255**
+(0.08)
+0.004**
+(0.00)
+−0.275
+(0.18)
+0.041
+(0.03)
+−0.000
+(0.00)
+0.152
+(0.26)
+−0.165
+(0.15)
+
+(0.00)
+−0.258**
+(0.08)
+0.004**
+(0.00)
+−0.281
+(0.18)
+0.045
+(0.02)
+−0.000
+(0.00)
+0.161
+(0.25)
+−0.185
+(0.16)
+0.085**
+(0.02)
+Yes
+Yes
+Yes
+
+(0.02)
+0.557***
+(0.08)
+
+(0.02)
+0.558***
+(0.08)
+−0.005*** −0.005***
+(0.00)
+−0.277***
+(0.09)
+0.004***
+(0.00)
+−0.310
+(0.21)
+0.055*
+(0.03)
+−0.000
+(0.00)
+0.152
+(0.26)
+−0.131
+(0.14)
+
+(0.00)
+−0.281***
+(0.08)
+0.004***
+(0.00)
+−0.315
+(0.21)
+0.060*
+(0.03)
+−0.000*
+(0.00)
+0.161
+(0.26)
+−0.153
+(0.15)
+0.077***
+(0.03)
+Yes
+Yes
+Yes
+
+Bride price (log)
+
+Age of the wife
+
+Age2 of the wife
+
+Age of the wife at
+
+marriage
+
+Age2 of the wife at
+
+marriage
+
+Literacy of the
+
+wife
+
+Age of the
+husband
+Age2 of the
+husband
+
+Literacy of the
+
+husband
+
+Polygamous
+household
+
+Number of plots
+
+Ethnicity and caste
+Region dummies
+Year of marriage
+
+cohort dummies
+
+Observations
+R2
+
+No
+No
+No
+
+No
+Yes
+Yes
+
+Yes
+Yes
+Yes
+
+No
+No
+No
+
+No
+Yes
+Yes
+
+Yes
+Yes
+Yes
+
+2,241
+0.01
+
+2,241
+0.31
+
+2,241
+0.36
+
+2,241
+0.37
+
+2,241
+
+2,241
+
+2,241
+
+2,241
+
+Notes: The reference group for the ethnicity is Wolof. The reference group for the year of marriage cohort is the
+cohort [25, .]. All OLS regressions include a constant. Robust standard errors clustered at the region level are in
+parentheses. ***, **, * indicate significance at the 1, 5, 10 per cent level, respectively.
+
+sunk cost at the time of child bearing, this early marriage decision has a considerable long-term
+impact.
+
+We have not yet accounted for wealth in the analysis although assets and wealth clearly influence
+both bride price payments and fertility decisions. Therefore, we include the number of plots owned in
+Column 4 of Table 2. This does not affect the coefficient associated with bride price (compare Column
+3 of Table 2). At the same time, the wealth effect is non-negligible and is represented by the positive
+impact that the number of plots has on realised fertility. The coefficient is twice as big as the one
+associated with the bride price indicating the importance of contemporaneous income streams for
+raising children. Moreover, this positive effect associated with land also has to be understood as a
+demand for labour, as households owning more farmland need more hands to work on it (Jacoby,
+1995).
+
+As the analysis is an ex post analysis of realised fertility at the time of the survey and we rely on
+contemporaneously observed fertility outcomes, we control for the age of the husband and wife as well
+as their age at marriage. Unsurprisingly, older women have given birth to more children but this
+relationship is non-linear. The turning point is at the age of 55, which roughly corresponds to the
+average age of natural menopause according to medical research (McKinlay, 1996). At the same time,
+
+Bride price and fertility 901
+
+we observe that the younger a bride was at her marriage, the more children she has given birth to at the
+date of the survey. However, the relationship between the age at marriage and the fertility decisions is
+U-shaped with 32 years marking the threshold. Since the average woman in our survey is 37 years old,
+our analysis seems to be a valid representation of the fertility-age dynamics. Similarly, literacy has the
+expected negative sign showing that more educated women tend to have fewer children. Yet, the
+coefficient associated with literacy is not significant.
+
+While we do not find any significant differences in fertility patterns across castes, the ethnic group
+of the Serere tends to have one more child on average. This result has also been found in the
+Demographic and Health Surveys and confirms the representativeness of our dataset for rural
+Senegal (see the Appendix for the full set of results of Table 2). As motivated above, the Poisson
+model might be more suited for the analysis as our dependent variable is a count variable. We
+employ the Poisson model akin to the linear model. Marginal effects are presented in Column 5–8 of
+Table 2 and show identical results. Therefore, in the remainder of the paper we only present the OLS
+results.
+
+Turning to the impact of the covariates on fertility decisions, the contextual dimension of both
+marriage arrangements and ensuing family planning is emphasised. The analysis demonstrates that the
+individual characteristics of husband and wife and the timing of their marriage jointly shape fertility
+decisions. In what follows, we test the robustness of our results by considering various sources of
+endogeneity. We also look at the extent to which the characteristics of the couple are linked to bride
+price payments. By carrying out a differential analysis we improve our understanding of the institu-
+tional settings of the marriage market in rural Senegal.
+
+6. Endogeneity Bias and Robustness Checks
+
+In our econometric approach we use the detailed information provided by the household survey
+and control for the characteristics of the couple and the household. We rule out sources of biases
+that possibly come from time-invariant regional characteristics and trends in bride price through
+the region and the marriage-year cohort fixed effects. Although we pay attention to all these
+elements, we may still face endogeneity problems due to the omission of relevant variables such as
+income.
+
+6.1. Omitted Variable Bias
+
+One concern related to the use of the number of plots as a measure for wealth is that a household with
+one large plot can be richer than a household with many small plots. To address this, we replace the
+variable number of plots with a dummy taking the value 1 if the household owns any land (Column 1
+of Table 3). The coefficient associated with bride price remains significant and negative and of
+identical magnitude as before. The ownership of land is insignificant.
+
+We further disentangle the income from the bride price effect by including income generating
+activities (IGA) undertaken by the wife and the husband in our empirical specification jointly with
+the number of plots and two additional dummy variables equal to 1 if the household owns durable
+goods or livestock, respectively. By including IGAs, we control for the labour market participation
+of women and men. We construct two indicator variables, the first variable is binary and equal to
+one if the wife is economically active, the second one is similarly constructed for economically
+active husbands. The coefficient associated with the bride price remains negative and significant,
+although at the 10 per cent level (Column 2 of Table 3). The magnitude of the coefficient is
+smaller probably due to the demanding specification. We observe that income-generating activities
+by the wife increase her number of children while such activities by the husband have no impact
+on fertility decisions. This result demonstrates that women provide most of the resources for
+
+902 L. M. Mbaye and N. Wagner
+
+Table 3. Bride price and fertility: robustness checks
+
+Dependent variable: number of children
+
+OLS
+
+(1)
+
+OLS
+
+(2)
+
+OLS
+
+(3)
+
+OLS
+
+(4)
+
+OLS
+
+(5)
+
+Wildboot-
+
+strap
+
+(6)
+
+−0.044** −0.038*
+(0.02)
+
+(0.02)
+
+−0.045*
+(0.02)
+
+−0.107
+(0.15)
+
+−0.043*
+(0.02)
+
+−0.043**
+(0.02)
+
+−0.059**
+(0.02)
+
+0.078***
+(0.02)
+
+0.085**
+(0.02)
+
+0.085**
+(0.02)
+
+0.085***
+(0.02)
+
+Variables
+
+Bride price (log)
+
+Mean bride price
+
+Ownership of farmland
+
+Number of plots
+
+IGA of the wife
+
+IGA of the husband
+
+Household owns durable goods
+
+Household owns livestock
+
+Husband had an occupation before
+
+marriage
+
+Wife had an occupation before marriage
+
+Wife owns livestock at marriage
+
+Wife owns durable goods at marriage
+
+Repeated observations dummy
+
+0.086***
+(0.02)
+0.305***
+(0.07)
+0.038
+(0.13)
+−0.118
+(0.11)
+−0.012
+(0.29)
+
+−0.340**
+(0.12)
+0.010
+(0.31)
+0.033
+(0.11)
+−0.633***
+(0.12)
+
+−0.057
+(0.09)
+2,241
+0.37
+
+2,241
+0.37
+
+Observations
+R-squared
+
+2,241
+0.36
+
+2,241
+0.37
+
+2,241
+0.37
+
+2,241
+0.37
+
+Notes: All regressions include a constant and control for age of the wife and its square, age of the wife at marriage
+and its square, literacy of the wife, age of the husband and its square, polygamy in the household, ethnicity and
+caste, region and year of marriage cohort dummies. Robust standard errors clustered at the region level are in
+parentheses. ***, **, * indicate significance at the 1, 5, 10 per cent level, respectively.
+
+raising their children themselves and paternal contributions are limited (Desai, 1992). The own-
+ership of durables or livestock is not significantly different from 0.
+
+6.2. Simultaneity Bias
+
+A second concern is simultaneity bias since it is female bargaining power that drives both bride price
+and fertility decisions. Therefore, we checked the robustness of our results to the inclusion of variables
+that proxy for the bargaining power between husband and wife at the time of the marriage. In Column
+3 of Table 3, we control for labour market participation of the husband before getting married and the
+economic activity of the woman before getting married. To further capture the bargaining power of
+women, we add dummy variables for her ownership of livestock and durable goods at the time of
+marriage. The results are robust to the inclusion of these variables. Moreover, a husband with an
+
+occupation before getting married and a wife with durable goods at the time of marriage reduce their
+number of children.
+
+Bride price and fertility 903
+
+6.3. Bias from Measurement Error
+
+the average bride price in 2009 is different
+
+Although we control for the economic conditions at the time of the marriage, we want to make sure
+that the measurement error resulting from the recall of the bride price does not invalidate our
+results. We note that
+from the one in 2011.
+Consequently, we implement an alternative specification that uses the log of the mean bride
+price between 2009 and 2011 instead of the actually reported values in every year. In Column 4
+of Table 3, the relationship between the mean bride price and the number of children is shown to
+be similarly negative and significant. The magnitude of the coefficient is higher in absolute terms
+when we use the mean bride price rather than the values reported for every period. However, we
+prefer being conservative in assessing the magnitudes and focus on the results in Table 2, which
+are lower in absolute terms.
+
+6.4. Other Robustness Checks
+
+For about half of the couples, we have two observations. In order to make sure that it does not affect
+our results, we include a dummy for the repeated observations and the results do not change (Column
+5 of Table 3).
+
+All our estimates are clustered at the region level. However, given the small number of regions, a
+simple clustering of standard errors can underestimate them. Following Cameron, Gelbach, and Miller
+(2011), we present in Column 6 of Table 3 the main result controlling for multi-way clustered standard
+errors. The latter option allows us to account for the small number of clusters by implementing Wild
+boostrapping. The results remain statistically significant at the 5 per cent level.
+
+7. Heterogeneous Effects
+
+To gain a more precise picture of the differential impact of bride price payments we consider
+heterogeneous effects. We report the interaction term of bride price with five different categories of
+variables. We allow the coefficient associated with bride price to vary with these different sets of
+variables and split the sample between these categories. The coefficient estimates are directly inter-
+preted by means of the F-test. Since we interact both categories with bride price the latter is no longer
+directly included in the regressions as this would result in perfect multicollinearity.
+
+7.1. Age at Marriage and Age Difference Between Husband and Wife
+First of all, we consider the woman’s age at the time of the marriage. We split the sample into brides
+below and above 20 years of age at the time of their marriage (Column 1 of Table 4). At first glance,
+results suggest that there is a difference between older and younger women in the relationship between
+bride price payments and pressure for offspring. However, the F -test of 20.34 per cent reveals that the
+dynamics and expectations linked to the bride price are similar for women who get married very young
+(below the age of 20) and at a slightly older age (above the age of 20). We also tried other thresholds
+for the age of marriage subsamples. The results did not change.
+
+Bride price dynamics can be further nuanced by analysing the nature of the marriage, namely an
+arranged versus a love marriage. While we cannot directly control for these two types of marriage, we
+have information on the age difference between husband and wife. By controlling for the age
+difference of the couple, we build on anthropological evidence that
+in rural Senegal arranged
+marriages between young girls and older men are not uncommon (Foley & Drame, 2013). In
+Column 2 of Table 4, we present the results controlling for age difference and its interaction with
+
+904 L. M. Mbaye and N. Wagner
+
+Table 4. Bride price and fertility: heterogeneity analysis
+
+Variables
+
+Age of the wife at marriage
+
+Age2 of the wife at marriage
+
+BP*Married below 20
+
+BP*married above 20
+
+Age difference
+
+Age difference2
+
+BP*high age difference
+
+BP*Low age difference
+
+IGA
+
+BP*IGA
+
+BP*No IGA
+
+Polygamous household
+
+BP*Polygamous household
+
+BP*Monogamous household
+
+Distance to wife’s parents
+
+BP*Distance to wife’s parents
+
+BP*No distance to wife’s parents
+
+Distance to husband’s parents
+
+BP*distance to husband’s parents
+
+BP*No distance to husband’s parents
+
+Dependent variable: number of Children
+
+OLS
+
+(2)
+
+OLS
+
+(3)
+
+OLS
+
+(4)
+
+OLS
+
+(5)
+
+OLS
+
+(1)
+
+−0.203**
+(0.07)
+0.003**
+(0.00)
+−0.035*
+(0.02)
+−0.063**
+(0.02)
+
+0.046*
+(0.02)
+−0.001**
+(0.00)
+−0.047**
+(0.02)
+−0.029
+(0.02)
+
+−0.599
+(0.39)
+0.001
+(0.02)
+−0.078**
+(0.03)
+
+1.020**
+(0.37)
+−0.259**
+(0.09)
+−0.013
+(0.01)
+
+0.000
+(0.00)
+−0.019
+(0.03)
+−0.001
+(0.00)
+0.003**
+(0.00)
+−0.454**
+(0.17)
+−0.040**
+(0.01)
+2,241
+0.37
+0.576
+0.038
+
+Observations
+R-squared
+F-test (p-value)
+
+2,241
+0.37
+0.203
+
+2,241
+0.37
+0.047
+
+2,241
+0.37
+0.050
+
+2,241
+0.37
+0.025
+
+Notes: All regressions include a constant and control for age of the wife and its square, age of the wife at marriage
+and its square, literacy of the wife, age of the husband and its square, polygamy in the household, ethnicity and
+caste, region and year of marriage cohort dummies. Robust standard errors clustered at the region level are in
+parentheses. ***, **, * indicate significance at the 1, 5, 10 per cent level, respectively. At the bottom of column 5,
+the values 0.576 and 0.038 represent the p-value from the F-test of the bride price interacted distance to the wife’s
+and the husband’s parents, respectively.
+
+Bride price and fertility 905
+
+the bride price payment. We find a direct effect of age difference: the bigger the difference is, the more
+pressure the woman has to give birth. Yet, there is a threshold at which a higher age difference
+decreases the number of children. When the age gap exceeds 23 years, fertility is decreasing again. In
+addition to including the age difference, we interact the bride price payments with a dummy variable
+equal to one if the age difference is higher than 10 years. The interaction term further reinforces the
+finding that higher bride prices reduce the number of children a woman has to give birth to in arranged
+marriages. The coefficient is similar in size and significance to the one found in the main model
+(Column 2 of Table 2). The interaction between bride price payments and (almost) no age difference is
+not statistically significant. This term, which represents a marriage between individuals of similar age,
+is considered to code for marriages out of mutual affection. In love marriages, bride price payments are
+not needed to regulate fertility decisions taken by the couple. Yet, for arranged marriages, in which a
+considerably older husband has chosen a young girl, the bride price is decisive for the woman’s
+pressure for offspring (p-value of the F -test 4.65%). In this type of marriage, if the bride and her
+family can negotiate a substantial payment for her, she will face less pressure for reproductive success.
+
+7.2. Income Generating Activities of the Wife
+
+Results in Column 3 of Table 4 show that women who are economically dependent on their husbands
+while having received a low bride price tend to have more children, indicating that the concerned
+women are less valued and have to gain respect through reproductive success (p-value of the F-test
+5.4%). This finding highlights that economically inactive, poor women are at a considerable risk of not
+being honoured with a bride price and face pressure to gain respect through offspring. Poor women
+have little bargaining power to ask for high bride price payments. This limits them in their choice of a
+husband and might result in less affectionate but rather affordable marriage arrangements. Being in
+such a marriage of convenience puts a high reproductive pressure on them.
+
+7.3. Polygamous Versus Monogamous Households
+
+Being in a polygamous household increases the number of children a woman gives birth to (Column 4
+of Table 4). This result comes from the competition between wives particularly with respect to
+inheritance. The higher the number of children of any individual wife, the higher will be the share
+she and her children inherit upon the death of the husband. For women living in a polygamous
+household, a lower bride price payment increases fertility pressure while in a monogamous household
+the bride price payment has no effect on the couple’s decisions concerning fertility (p-value of the
+F-test 2.46%). Indirectly, this finding also supports the results about age difference: whenever a couple
+is close due to affection, marriage payments have no significance and thus do not influence fertility
+decisions. In turn, if a woman is just an addition, her value and appreciation is defined by the bride
+price she receives.
+
+7.4. Distance to Parents
+
+We also examined the geographical distance between the married couple and their parents. While the
+first variable has no effect on the fertility decisions of the couple, we find an inverse relationship between
+the number of children and the distance to her in-laws. Put differently, women who live near their in-
+laws encounter higher reproductive pressure. However, the magnitude of the coefficient is close to 0 and
+despite being precisely estimated the coefficient has no economic significance (Column 5 of Table 4).
+In addition, we split the sample between women living more than 20 kilometres from their parents
+and those who live within a radius of 20 kilometres from their parents. We find no differential effects
+with respect to the impact of bride price payments on fertility decisions (p-value of the F-test 57.55%).
+However, when we compare women living far from their parents-in-law, which means that their
+residence is at least located 20 kilometres from them, to those who live closer, bride price dynamics
+with respect to distance appear. In response to high bride price payments, women close to their
+
+906 L. M. Mbaye and N. Wagner
+
+parents-in-law reduce the number of children considerably less as compared to women who live far
+away from their in-laws (p-value of the F -test 3.78%). In other words, the fertility pressure is stronger
+for women who receive a low bride price and live close to their in-laws compared to those who live far
+from their parents-in-law. When women live close to their in-laws, they are pressured by the family
+and judged according to the number of children they give birth to. Living further away from the in-
+laws implies a higher level of (economic) independence and concomitantly less fertility pressure.
+
+8. Conclusion
+
+The bride price system has a long tradition in many sub-Saharan African countries and to this day is deeply
+embedded in local cultures. This system of marriage payments has considerable implications for the
+bargaining power and status of women. This paper contributes to the existing anthropological literature
+suggesting that upon receipt of the full bride price payment a woman loses her reproductive autonomy
+(Horne et al., 2013). The literature to date mainly assesses the role of bride price payments per se but not
+whether differences in the amount of the bride price paid have differential effects on fertility. We
+complement this literature with an assessment of the relationship between the size of the bride price
+payment and related fertility decisions. Our econometric results suggest that a woman’s say in her marriage,
+as captured by her realised fertility, is crucially influenced by the payment from the groom’s family to the
+bride and her family upon the marriage. As outlined by the anthropological literature, a marriage represents
+a social contract between a man and a woman and their respective families. Whenever the groom is
+disposed to pay a high bride price, he demonstrates his willingness to treat his wife well and to avoid the
+risk of divorce, which would correspond to a financial failure of the investment. The woman, in turn, can
+judge from the bride price payment she received how much she is appreciated and whether she needs to
+gain reputation within the groom’s family by giving birth to many children.
+
+Bride price payments are not only an African phenomenon. In recent years they have gained
+increasing importance in China and marriage migration for high bride prices is not uncommon
+(Davin, 2005). Thus, bride prices are an important marriage market
+institution that remains in
+existence even as countries and regions develop.
+
+This type of marriage contract seems odd to Western observers. Yet, in poor rural societies this
+mutual insurance is prominent, covering not only the spouses but also their families. Therefore, efforts
+to eradicate the tradition of bride price payments and formalise marriages according to national legal
+standards might make the concerned women particularly worse off.
+
+Already to date, bride price payments have less power over women who are economically
+independent. A direct change of the bride price system might be too challenging a task. But economic
+empowerment will give leeway to girls even in traditional societies. The established marriage contract
+can be broken indirectly by giving women more possibilities for economic independence. Another
+possible entry point to counteract the continuance of this tradition are family planning programmes.
+On the one hand, our findings suggest that these programmes may be inefficient if they do not take
+into account norms and values, which define women’s behaviour with regard to fertility decisions in
+traditional societies. At the same time, these programmes can be used to educate women. Moreover,
+family planning programmes, which are integrated in broader support structures, can offer women
+opportunities to increase their (economic) independence such that the social contract that stipulates the
+marriage arrangements is a tool of empowerment for young couples and also fosters marriages of
+mutual affection.
+
+Acknowledgments
+
+We are grateful to Alpaslan Akay for valuable comments and suggestions on earlier versions of this
+paper. This paper benefited from discussions with Robert A. Pollack, Mark Rosenzweig and the input
+of two anonymous referees. We also thank seminar and conference participants at
+the CSAE
+Conference 2014, Oxford, United Kingdom, the 8th IZA/World Bank Conference on Employment
+
+and Development, Bonn, Germany, the 18th Annual Conference on Econometric Analysis and Policy
+Challenges in Africa, Accra, Ghana,
+the Western Economic
+Association, Seattle, USA, the IZA Brown Bag Seminar, Bonn, Germany, and the 27th Annual
+Conference of the European Society for Population Economics, Aarhus, Denmark. Data and codes
+are made available by the authors upon request. The usual disclaimer applies.
+
+the 88th Annual Conference of
+
+Bride price and fertility 907
+
+Disclosure statement
+
+No potential conflict of interest was reported by the authors.
+
+Notes
+
+1. Bride price payments are also practiced in some Asian countries such as Thailand (Cherlin & Chamratrithirong, 1988) or
+rural China where it is possible to find the two systems of marriage payments to coexist (Anderson, 2007; Brown, 2009).
+2. The following sub-Saharan African countries practice bride price payments: Ghana, Kenya, Nigeria, Rwanda, Senegal,
+South Africa, Tanzania, and Uganda. The list is non-exclusive. The mentioned countries participated in an international
+conference about the system of bride price payments in Uganda in 2004.
+
+3. It is important to keep in mind that in African societies, particularly in traditional societies, the group is more important
+and valued than the individual taken on her own. Consequently, the specific share received by the bride is of minor
+importance since she is initially considered as part of her family of origin. What is of importance is the transaction from
+one family to another. Whenever the family of the bride receives a transfer, the bride will be considered as the one who
+received the payment and was valued by her in-laws regardless of the share of the transfer that she has direct control
+over.
+
+4. In contrast, Bergstrom (1994) assumes in his model of polygamy that fertility increases in the bride price.
+5. We abstain from directly modelling child health since we are only interested in child ‘quantity’ and not in ‘quality’.
+6. An historical overview of marriage laws in early African societies reveals that marriage payments have not always been
+perceived as ‘bride price’. According to Kanji and Camara (2000), the term ‘prenuptial gift’ is more appropriate than
+bride price. Historically, marriage payments were not viewed as a price or compensation. Such transfers were of
+symbolic nature and represented the engagement of the groom towards his bride and her family. Yet, these nuptial
+transfers were interpreted as bride price as time evolved and the concept bride price was further shaped by tribal,
+religious and political influences.
+
+7. The regions are Diourbel, Fatick, Kaolack, Kolda, Louga, Tambacounda, and Thies. The newly established region
+
+Kedougou is also part of the survey but is here considered as part of the region of Tambacounda.
+
+8. Senegal has a caste system, which is historically based on labour division. The dummy caste equals 1 if households belong
+to the Ñeeño, who work in handcraft jobs and music; being a member of the Geer caste is coded with 0. The latter are not
+bounded by job categories (Mbow, 2000).
+
+9. Very few bride prices are higher than FCFA 1,000,000. To avoid deleting these outliers and losing some observations, we
+
+associate them to an amount of FCFA 1,000,000.
+
+10. We cannot systematically disentangle lineage in the analysis since Senegalese society shifted from a matrilineal to a
+patrilineal one, although matrilineal traditions still exist. Therefore, we proxy for different tribal and regional occur-
+rences by including ethnicity and regional fixed effects in the analysis. Yet, even based on these indicators we are not in
+a position to disentangle lineage effects since a variety of matrilineal and patrilineal
+traditions are found across
+Senegalese society, which cannot be clearly attributed to one tribe or another inhibiting us from assessing lineage per
+se. In line with Horne et al. (2013) we argue that in both contexts, matrilineal and patrilineal societies, the marriage
+payment from the groom to his wife affects the woman’s reproductive autonomy while bride price payments tend to be
+lower in matrilineal societies.
+
+References
+
+Ashraf, N., Bau, N., Nunn, N., & Voena, A. (2015). Bride price and the returns to education for women (Working Paper).
+
+Unpublished manuscript.
+
+Anderson, S. (2007). The economics of dowry and brideprice. Journal of Economic Perspectives, 21(4), 151–174. doi:10.1257/
+
+jep.21.4.151
+
+Anderson, S. (2003). Why dowry payments declined with modernization in Europe but are rising in India. Journal of Political
+
+Economy, 111(2), 269–310. doi:10.1086/367679
+
+Baird, S., McIntosh, C., & Özler, B. (2011). Cash or condition? Evidence from a randomized cash transfer program. Quarterly
+
+Journal of Economics, 126(4), 1709–1753. doi:10.1093/qje/qjr032
+
+908 L. M. Mbaye and N. Wagner
+
+Baird, S., Chirwa, E., McIntosh, C., & Özler, B. (2010). The short-term impacts of a schooling conditional cash transfer program
+
+on the sexual behavior of young women. Health Economics, 19, 55–68. doi:10.1002/hec.v19.1s
+
+Bbaale, E. (2011). Female education, labour-force participation and fertility: Evidence from Uganda (Report submitted to the
+
+African Economic Research Consortium). Nairobi. Unpublished manuscript.
+
+Becker, G. S. (1981). A treatise on the family. Cambridge: Harvard University Press.
+Beegle, K., Frankenberg, E., & Thomas, D. (2001). Bargaining power within couples and use of prenatal and delivery care in
+
+Indonesia. Studies in Family Planning, 32(2), 130–146. doi:10.1111/sifp.2001.32.issue-2
+
+Beguy, D. (2009). The impact of female employment on fertility in Dakar (Senegal) and Lomé (Togo). Demographic Research,
+
+20(7), 97–128. doi:10.4054/DemRes.2009.20.7
+
+Bergstrom, T. (1994). On the economics of polygyny. Unpublished manuscript.
+Bishai, D., & Grossbard, S. (2010). Far above rubies: Bride price and extramarital sexual relations in Uganda. Journal of
+
+Population Economics, 23(4), 1177–1187. doi:10.1007/s00148-008-0226-3
+
+Boserup, E. (1970). Woman’s role in economic development. London: George Allen and Unwin Limited.
+Botticini, M., & Siow, A.
+
+(2003). Why dowries? American Economic Review, 93(4), 1385–1398. doi:10.1257/
+
+000282803769206368
+
+Brown, P. H. (2009). Dowry and intrahousehold bargaining: Evidence from China. Journal of Human Resources, 44(1), 25–46.
+
+doi:10.1353/jhr.2009.0016
+
+Caldwell, J. C., & Caldwell, P. (1990). High fertility in Sub-Saharan Africa. Scientific American, 262(5), 118–125. doi:10.1038/
+
+scientificamerican0590-118
+
+Cameron, A. C., Gelbach, J. B., & Miller, D. L. (2011). Robust inference with multiway clustering. Journal of Business &
+
+Economic Statistics, 29(2), 238–249. doi:10.1198/jbes.2010.07136
+
+Cherlin, A., & Chamratrithirong, A. (1988). Variations in marriage patterns in central Thailand. Demography, 25(3), 337–353.
+
+doi:10.2307/2061536
+
+Davin, D. (2005). Marriage migration in China: The enlargement of marriage markets in the era of market reforms. Indian
+
+Journal of Gender Studies, 12(2–3), 173–188. doi:10.1177/097152150501200202
+
+Desai, S. (1992). Children at risk: The role of family structure in Latin America and West Africa. Population and Development
+
+Review, 18(4), 689–717. doi:10.2307/1973760
+
+Drèze, J., & Murthi, M. (2001). Fertility, education, and development: Evidence from India. Population and Development
+
+Review, 27(1), 33–63. doi:10.1111/j.1728-4457.2001.00033.x
+
+Fafchamps, M., & Shilpi, F. (2014). Education and household welfare. Economic Development and Cultural Change, 63(1), 73–
+
+115. doi:10.1086/677805
+
+Foley, E. E., & Drame, F. M. (2013). Mbaraan and the shifting political economy of sex in urban Senegal. Culture, Health &
+
+Sexuality, 15(2), 121–134. doi:10.1080/13691058.2012.744849
+
+Gaspart, F., & Platteau, J.-P. (2010). Strategic behavior and marriage payments: Theory and evidence from Senegal. Economic
+
+Development and Cultural Change, 59(1), 149–185. doi:10.1086/655457
+
+Goldschmidt, W. (1974). The economics of bride price among the Sebei and in East Africa. Ethnology, 13(4), 311–331.
+
+doi:10.2307/3773049
+
+Horne, C., Dodoo, F. N.-A., & Dodua Dodoo, N. (2013). The shadow of indebtedness: Bridewealth and norms constraining
+
+female reproductive autonomy. American Sociological Review, 78(3), 503–520. doi:10.1177/0003122413484923
+
+Jacoby, H. G. (1995). The economics of polygyny in Sub-Saharan Africa: Female productivity and the demand for wives in Côte
+
+d’Ivoire. Journal of Political Economy, 103(5), 938–971. doi:10.1086/262009
+
+Kanji, S. S. M., & Camara, F. K. (2000). L’union matrimoniale dans la tradition des peuples noirs. Harmattan.
+Kaye, D. K., Mirembe, F., Bantebya, G., Ekstrom, A. M., & Johansson, A. (2005). Implications of bride price for domestic
+
+violence and reproductive health in Wakiso District, Uganda. African Health Sciences, 5(4), 300–303.
+
+Marchetta, F., & Sahn, D. E.. (2016). The role of education and family background in marriage, childbearing and labor market
+
+participation in Senegal. Economic Development and Cultural Change, 64(2), 369–403. doi:10.1086/683982
+
+Mawhood, R., & Gross, R. (2014). Institutional barriers to a ‘perfect’ policy: A case study of the Senegalese rural electrification
+
+plan. Energy Policy, 73, 480–490. doi:10.1016/j.enpol.2014.05.047
+
+Mbow, P. (2000). Démocratie, droits humains et castes au Sénégal [Democracy, human rights and castes in Senegal]. Journal des
+
+africanistes, 70(1), 71–91. doi:10.3406/jafr.2000.1220
+
+McKinlay, S. M. (1996). The normal menopause transition: An overview. Maturitas, 23(2), 137–145. doi:10.1016/0378-5122
+
+(95)00985-X
+
+Munshi, K., & Myaux, J. (2006). Social norms and the fertility transition. Journal of Development Economics, 80, 1–38.
+
+doi:10.1016/j.jdeveco.2005.01.002
+
+Osili, U. O., & Long, B. T. (2008). Does female schooling reduce fertility? Evidence from Nigeria. Journal of Development
+
+Economics, 87, 57–75. doi:10.1016/j.jdeveco.2007.10.003
+
+Papps, I. (1980). For love or money?: A preliminary analysis of the economics of marriage and the family. London: Institute of
+
+Economic Affairs.
+
+Peters, C. (2011). Effects of family planning and health services on women’s welfare: Evidence on dowries and intra-household
+
+bargaining in Bangladesh. Review of Economics of the Household, 9(3), 327–348. doi:10.1007/s11150-010-9100-7
+
+Platteau, J.-P., & Gaspart, F. (2007). The perverse effects of high brideprices. World Development, 35(7), 1221–1236.
+
+doi:10.1016/j.worlddev.2006.09.017
+
+Bride price and fertility 909
+
+Rao, V. (1993). The rising price of husbands: A hedonic analysis of dowry increases in rural India. Journal of Political Economy,
+
+101(4), 666–677. doi:10.1086/261892
+
+Sharma, A., & Frijters, P. (2009). Groom price – female human capital: Some empirical evidence. The Journal of Socio-
+
+Economics, 38(2), 270–279. doi:10.1016/j.socec.2008.09.002
+
+Srinivasan, S., & Bedi, A. S. (2007). Domestic violence and dowry: Evidence from a South Indian Village. World Development,
+
+35(5), 857–880. doi:10.1016/j.worlddev.2006.08.005
+
+Tertilt, M. (2005). Polygyny, fertility, and savings. Journal of Political Economy, 113(6), 1341–1371. doi:10.1086/498049
+United Nations, Department of Economic and Social Affairs, Population Division. (2015). World Fertility Patterns 2015 – Data
+
+Booklet (ST/ESA/SER.A/370).
+
+Van den Broeck, G., & Maertens, M. (2015). Female employment reduces fertility in rural Senegal. PLoS ONE, 10(3), 1–15.
+
+Zhang, J., & Chan, W. (1999). Dowry and wife’s welfare: A theotrical and empirical analysis. Journal of Political Economy, 107
+
+doi:10.1371/journal.pone.0122086
+
+(4), 786–808. doi:10.1086/250079
+
+Appendix
+
+Table A1. Full set of results presented in Table 2. Bride price and fertility: main results
+
+Dependent variable: number of children
+
+OLS
+
+OLS
+
+OLS
+
+OLS
+
+Poisson
+
+Poisson
+
+Poisson
+
+Poisson
+
+Marginal effects
+
+Variables
+
+(1)
+
+(2)
+
+(3)
+
+(4)
+
+(5)
+
+(6)
+
+(7)
+
+(8)
+
+–0.151***
+(0.05)
+
+–0.055**
+(0.02)
+
+–0.164**
+(0.06)
+
+–0.054*
+(0.02)
+
+Bride price
+
+(log)
+
+Age of the
+
+wife
+
+Age2 of the
+
+wife
+
+Age of the
+
+wife at
+marriage
+Age2 of the
+
+wife at
+marriage
+Literacy of
+the wife
+Age of the
+husband
+Age2 of the
+husband
+Literacy of
+
+the
+husband
+
+Polygamous
+household
+
+Number of
+
+plots
+
+Ethnicity
+Pular
+
+Serere
+
+Manding
+
+Soninke
+
+–0.044**
+(0.02)
+0.442***
+(0.07)
+–0.004***
+(0.00)
+–0.255**
+(0.08)
+
+–0.043**
+(0.02)
+0.444***
+(0.07)
+–0.004***
+(0.00)
+–0.258**
+(0.08)
+
+0.004**
+(0.00)
+
+0.004**
+(0.00)
+
+–0.275
+(0.18)
+0.041
+(0.03)
+–0.000
+(0.00)
+0.152
+(0.26)
+
+–0.165
+(0.15)
+
+–0.408
+(0.33)
+0.822**
+(0.23)
+0.237
+(0.39)
+–0.602
+(0.34)
+
+–0.281
+(0.18)
+0.045
+(0.02)
+–0.000
+(0.00)
+0.161
+(0.25)
+
+–0.185
+(0.16)
+0.085**
+(0.02)
+
+–0.382
+(0.32)
+0.805**
+(0.24)
+0.230
+(0.38)
+–0.556
+(0.32)
+
+–0.044***
+(0.02)
+0.558***
+(0.08)
+–0.005***
+(0.00)
+–0.277***
+(0.09)
+
+–0.043**
+(0.02)
+0.557***
+(0.08)
+–0.005***
+(0.00)
+–0.281***
+(0.08)
+
+0.004***
+(0.00)
+
+0.004***
+(0.00)
+
+–0.310
+(0.21)
+0.055*
+(0.03)
+–0.000
+(0.00)
+0.152
+(0.26)
+
+–0.131
+(0.14)
+
+–0.433
+(0.36)
+0.776***
+(0.20)
+0.259
+(0.37)
+–0.652*
+(0.35)
+
+–0.315
+(0.21)
+0.060*
+(0.03)
+–0.000*
+(0.00)
+0.161
+(0.26)
+
+–0.153
+(0.15)
+0.077***
+(0.03)
+
+–0.411
+(0.35)
+0.763***
+(0.20)
+0.246
+(0.36)
+–0.608*
+(0.33)
+
+(continued )
+
+910 L. M. Mbaye and N. Wagner
+
+Table A1. (Continued)
+
+Dependent variable: number of children
+
+OLS
+
+OLS
+
+OLS
+
+OLS
+
+Poisson
+
+Poisson
+
+Poisson
+
+Poisson
+
+Variables
+
+(1)
+
+(2)
+
+(3)
+
+–0.597
+(0.35)
+–0.186
+(0.36)
+0.041
+(0.18)
+
+(4)
+
+–0.557
+(0.33)
+–0.169
+(0.35)
+0.036
+(0.18)
+
+Marginal effects
+
+(5)
+
+(6)
+
+(7)
+
+–0.648*
+(0.36)
+–0.206
+(0.33)
+0.025
+(0.18)
+
+(8)
+
+–0.611*
+(0.34)
+–0.192
+(0.33)
+0.021
+(0.18)
+
+Diakhanke
+
+Other ethnic
+
+groups
+
+Caste
+
+Year of
+
+marriage
+cohort
+
+Year of
+
+marriage
+cohort
+
+[0, 5]
+Year of
+
+marriage
+cohort
+[5,10]
+Year of
+
+marriage
+cohort
+[10, 15]
+
+Year of
+
+marriage
+cohort
+[15,20]
+
+Year of
+
+marriage
+cohort
+[20,25]
+
+Region
+
+dummies
+
+Observations
+R-squared
+
+–4.829***
+(0.29)
+
+–0.766
+(1.02)
+
+–0.702
+(1.01)
+
+–6.070***
+(0.35)
+
+–1031
+
+(1.09)
+
+–0.990
+(1.09)
+
+–3.306***
+(0.19)
+
+–0.326
+(0.86)
+
+–0.269
+(0.85)
+
+–3.354***
+(0.16)
+
+0.434
+(0.95)
+
+0.473
+(0.94)
+
+–2.299***
+(0.29)
+
+–0.298
+(0.75)
+
+–0.252
+(0.74)
+
+–2.094***
+(0.29)
+
+0.474
+(0.79)
+
+0.505
+(0.78)
+
+–1.267***
+(0.21)
+
+–0.104
+(0.47)
+
+–0.074
+(0.46)
+
+–1.055***
+(0.18)
+
+0.474
+(0.46)
+
+0.495
+(0.46)
+
+–0.444
+(0.31)
+
+0.102
+(0.47)
+
+0.133
+(0.46)
+
+–0.340
+(0.24)
+
+0.407
+(0.40)
+
+0.436
+(0.39)
+
+No
+
+Yes
+
+Yes
+
+Yes
+
+No
+
+Yes
+
+2,241
+0.01
+
+2,241
+0.31
+
+2,241
+0.36
+
+2,241
+0.37
+
+2,241
+
+2,241
+
+Yes
+
+2,241
+
+Yes
+
+2,241
+
+Notes: The reference group for the ethnicity is Wolof. The reference group for the year of marriage cohort is the
+cohort [25,.]. All OLS regressions include a constant. Robust standard errors clustered at the region level are in
+parentheses. ***, **, * indicate significance level at the 1, 5, 10 per cent level, respectively.
+
+

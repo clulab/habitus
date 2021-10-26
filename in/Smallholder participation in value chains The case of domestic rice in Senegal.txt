@@ -1,0 +1,1617 @@
+Chapter 12
+
+Smallholder participation in value chains:
+The case of domestic rice in Senegal*
+
+Liesbeth COLEN1 Matty DEMONT2 and Johan SWINNEN1
+
+* Correct citation: Colen, L., M. Demont, and J. Swinnen (2013), Smallholder participation in value chains: The
+case of domestic rice in Senegal, In: Rebuilding West Africa’s Food Potential, A. Elbehri (ed.), FAO/IFAD.
+
+1 LICOS – Centre for Institutions and Economic Performance and Department of Economics, University of Leuven (KUL) 
+.
+2 Africa Rice Center (AfricaRice) Saint-Louis, Senegal
+
+Table of Contents 
+
+1. 
+
+Introduction
+
+2.  Overview of consumption, production and trade 
+
+2.1  Consumption
+2.2  Production 
+2.3  Import and export
+2.4  National rice policies
+2.5  Farmer organizations
+2.6  Consumer preferences
+
+ 
+3.  Supply chains of rice 
+
+3.1  Import market chain
+3.2  Domestic rice channel: Senegal River Valley
+3.3  Domestic rice channel: southern Senegal
+
+4.  Constraints to smallholder market participation
+
+4.1  Conceptual framework
+4.2  Constraints to market participation for Senegalese rice farmers
+4.3  Constraints on access to local and urban markets
+
+5. 
+
+Implications, policy recommendations and perspectives
+5.1  Focus on demand and private sector involvement
+5.2  Quality upgrading
+5.3  Vertical linkages
+5.4  Reducing transaction costs
+5.5  Promotion of domestic rice
+5.6  Increasing productivity in southern rain-fed rice production areas
+
+6.  Annex: Description of the survey and interviews organized in  
+ 
+
+the Senegal River Delta in 2006
+
+7.  References
+
+393
+
+393
+393
+394
+395 
+395
+396
+397
+
+397
+398
+398
+399
+
+399
+399
+401
+404
+
+407
+407
+408
+409
+410
+411
+411
+
+412
+
+413
+
+393
+
+1. Introduction
+
+Since 1985, rice production in West Africa has doubled, but consumption of rice has increased even more 
+rapidly. This has resulted in the increasing dependence of West African countries on rice imports (Seck et al., 
+2010). Rice is the most consumed cereal in Senegal (about 1.1 million tonnes in 2009). However, only 45 
+percent of consumption is covered by domestic production; the rest is imported from India, Thailand, and Viet 
+Nam (FAO, 2011). This large import dependency makes Senegal vulnerable to volatility in the international 
+rice market (Seck et al., 2010). In response to the 2008 food crisis, the government in Senegal has placed rice 
+on higher priority for self-sufficiency and increased investments to boost production. However, to successfully 
+achieve self-sufficiency, Senegal will not only have to invest in productivity (supply push), but will need to 
+tackle the demand side as well (demand pull). One of the major challenges will consist of linking smallholder 
+farmers to large urban consumption markets by: (i) increasing marketable surplus; (ii) consolidating supply; 
+and (iii) adapting quality of rice to conform to urban consumer standards (Demont and Rizzotto, 2012).
+
+In this chapter we analyse current and potential participation of smallholders in rice value chains in 
+Senegal.  We  formulate  policy  recommendations  to  reduce  the  constraints  for  smallholder  market 
+participation, especially with respect to integration in the rapidly growing urban markets.
+
+2. Overview of consumption, production and trade
+
+Before  starting  a  more  detailed  analysis  of  the  value  chain  of  rice,  we  give  a  short  overview  of  the 
+production and consumption patterns, the imports and the national policies in the Senegalese rice sector.
+
+2.1 Consumption
+
+Since the 1980s, rice consumption has surpassed the consumption of more traditional crops such as 
+sorghum and millet and has become the main staple food consumed in Senegal (Table 1). In 2005 the 
+consumption of rice was 68.5 kg per capita, compared to 42.3 kg in 1975.2 More than 30 percent of 
+the daily calorie intake in Senegal currently comes from rice.
+
+Table 1. Consumption of cereals and share of total calorie intake in Senegal in 1975, 1990 and 2005
+
+1975
+kg/cap/yr
+89.3
+42.3
+23.6
+18.5
+10.3
+ 
+2,109
+
+% of kcal
+28.4
+19.7
+8.9
+6.4
+4
+ 
+
+1990
+kg/cap/yr
+58.3
+62.1
+17.2
+25.5
+15.9
+ 
+2,135
+
+% of kcal
+18.4
+28.5
+6.4
+8.7
+6.1
+ 
+
+2005
+kg/cap/yr
+21
+68.5
+10.2
+29
+33.8
+
+2,199
+
+% of kcal
+6.4
+30.8
+3.7
+9.6
+12.6
+
+ 
+
+Millet
+Rice
+Sorghum
+Wheat
+Maize
+ 
+Total kcal/cap/day
+
+Source:  FAOSTAT (2010)
+
+2 By 2013, these consumption rates have reached 86.6 kg per capita.
+
+Chapter 12. Smallholder participation in value chains: The case of rice in Sénégal394
+
+This shift towards rice consumption began with the large and cheap imports of broken rice from the French 
+colonies in Asia during the period of the French administration. The low processing and cooking costs of 
+rice and the popularity of street-vendor sales of rice dishes enhanced the preference for rice in urban 
+areas (Reardon, 1993). However, the shift to rice and especially the preference for broken rice—which is 
+considered an inferior product on the international market—is much more pronounced in urban than in 
+rural areas. As population growth is especially strong in urban areas, it is clear that urban consumption 
+patterns have had and will continue to have an important impact on national demand and trade.
+
+Today,  Senegalese  rice  consumption  still  largely  exceeds  domestic  production,  but  important  shifts 
+are taking place (Figure 1). Up to 2007, rice demand and imports had been increasing because of 
+population growth, increasing incomes, urbanization and the increasing share of rice in the Senegalese 
+diet. However, since the 2008 food crisis, domestic production is progressively overtaking rice imports.
+
+Figure 1. Consumption, production and trade of rice in Senegal, 2000–2009
+
+1,400
+
+1,200
+
+1,000
+
+s
+e
+n
+n
+o
+t
+ 
+
+d
+n
+a
+s
+u
+o
+h
+T
+
+800
+
+600
+
+400
+
+200
+
+0
+
+0
+0
+0
+2
+
+1
+0
+0
+2
+
+2
+0
+0
+2
+
+3
+0
+0
+2
+
+4
+0
+0
+2
+
+5
+0
+0
+2
+
+Consumption
+
+Production
+
+6
+0
+0
+2
+
+Import
+
+7
+0
+0
+2
+
+8
+0
+0
+2
+
+Export
+
+9
+0
+0
+2
+
+Source: FAOSTAT (2011) and ANSD (2006–2009)
+Note: Consumption is calculated as production plus imports, minus exports.
+
+2.2 Production
+
+During the food crisis in 2008, import prices of rice increased sharply. This led to high domestic prices for 
+local rice and promoted important area expansion and increased double cropping.1 Together with good 
+weather conditions, these resulted in a boost to domestic production in 2008. Rice is produced almost 
+exclusively  by  smallholder  farmers.  Senegal’s  rice  production  consists  of  two  major  rice  production 
+systems in two different ecosystems and yields vary significantly between these systems (Rodenburg 
+and Demont, 2009).
+
+First—and  most  important  in  terms  of  commercial  rice—are  the  irrigated  production  systems  which 
+are situated primarily in the Senegal River Valley (SRV) in the regions of Saint-Louis, Podor and Matam 
+(Figure 2). Seventy percent of national rice production is irrigated rice and yields reach an average of 
+5 to 6 tonnes/ha. Several public investment schemes have contributed to the development of large-
+scale irrigation schemes (GA – grands aménagements) and village irrigation schemes (PIV – périmètres 
+
+1 Double cropping refers to the production of rice both in the rainy and in the dry season, resulting in two harvests per year. 
+
+Rebuilding West Africa’s food potential395
+
+irrigués villageois). In addition, after the disengagement of the government from the rice industry, private 
+investors built private irrigation schemes (PIP – périmètres irrigués privés) in the Senegal River Valley.
+
+Second, rain-fed lowland (bas-fond) rice cultivation is concentrated in the southern region of Casamance, 
+and in the central and eastern regions of Fatick and Kaolack which together form the largest areas of rice 
+cultivation. Rain-fed production contributes around 30 percent of national rice production and is based 
+on very small plots (less than 0.1 ha). Average yields, at 1 to 2 tonnes/ha, are much lower than in the SRV.
+
+Figure 2. Rice area harvested by region
+
+Senegal River Valley
+
+Rain-fed lowlands
+
+Source: USAID (2009), based on harvest data from Centre Régional Agrhymet, 2000.
+
+ 
+
+2.3 Import and export
+
+Thailand used to be the main provider of rice to Senegal with some 42 percent share in 2010. Since 
+then, Thailand’s share has fallen to 11.5% in 2012. Brazil, India,Pakistan and Viet Nam account for 
+smaller imports of rice. More than 95 percent of Senegalese imports are of broken rice. With 22 percent 
+of the world market, Senegal is the largest market for broken rice worldwide (USAID, 2009).
+
+Rice exports from Senegal are small; they mainly consist of the re-export of imported rice to neighbouring 
+countries. In addition, there is some unreported export of rice to neighbouring countries, mainly along 
+the border with Mauritania. The Senegalese government estimates that volumes of informal rice exports 
+correspond to 20–30 percent of official exports (USAID, 2009).
+
+2.4 National rice policies
+
+In 1994, after a period of heavy state involvement, Senegal started to liberalize its rice sector as part of its 
+Structural Adjustment Program. The state disengaged from processing and marketing activities in 1994. 
+In 1995 the state discontinued setting support prices for paddy 3 rice. The parastatal agency, SAED (Société 
+
+3 ‘Paddy rice’ (sometimes called rough rice) is the term used for rice that is obtained by threshing after harvest, but 
+still contains the husk surrounding the rice grain. Through the milling process, the husk is removed and the ‘paddy’ 
+is converted into ‘milled rice.’
+
+Chapter 12. Smallholder participation in value chains: The case of rice in Sénégal396
+
+d’Aménagement et d’Exploitation des terres du Delta et des vallées du fleuve Sénégal et de la Falémé), 
+which was responsible for management and commercialization of SRV rice in the pre-reform period, was 
+converted during the mid-1990s into an independent organization responsible for technical assistance and 
+the maintenance of irrigation infrastructure. 
+
+In 2000, the Senegalese government adopted a new vision for the development of agriculture, including 
+the  Strategy  of  Accelerated  Growth  (SCA  -  Stratégie  de  Croissance  Accélérée)  which  aims  to  reduce 
+poverty by 50 percent by 2015 and achieve the Millennium Development Goals. In 2005 the Senegalese 
+president set a target of 1.5 million tonnes of paddy rice (equivalent to 1 million tonnes of white rice) 
+produced by 2015 in order to reach self-sufficiency (PNAR –Programme National d’Autosuffisance en Riz).
+
+In April 2008, the president launched the GOANA program (Grande Offensive Agricole pour la Nourriture 
+et l’Abondance) in order to achieve this ambitious target. This program implements massive investments 
+in the national rice sector, notably by irrigating and cultivating unused land in the SRV and intensifying 
+production of rice through double cropping. The program reaffirmed the 1.5 million tonnes of paddy 
+rice to be produced by 2015 (MoA, 2008). Additional components of the program include: (i) input 
+subsidies; (ii) provision of certified seed; (iii) financing of production and post-harvest machinery; and 
+(iv) creation of a private sector marketing agency responsible for collecting, processing and marketing 
+local rice production.
+
+Over the past decades, state involvement in the import of rice has also decreased, and trade policies 
+have become more liberalized. While import of rice is now organized by the private sector, until 1995 
+the Senegalese government had a monopoly on imports of broken rice and all rice imports were subject 
+to  a  quota.  In  1994,  when  the  currency  was  devalued,  tariffs  were  reduced  from  38  percent  to  16 
+percent (Lançon and Benz, 3007). In 2000 the Common External Tariff of the West African Economic 
+and Monetary Union was implemented; this consists of a fixed duty equivalent to a 12.7 percent ad 
+valorem tariff (Masters, 2007). Given the large dependence on imports, it is not surprising that Senegal’s 
+import tariffs are relatively low. Compared to other major rice-importing West African countries, such 
+as Nigeria and Ghana, Senegal applies much lower border protection. In response to the food crisis 
+in 2007–2008, Senegal temporarily eliminated tariffs and even subsidized imports to keep prices low. 
+Exports were prohibited and consumer prices were fixed (Aker et al., 2009).
+
+2.5 Farmer organizations
+
+Rice farmers in the SRV region are organized into a structure of farmer organizations that are primarily 
+involved  in  land  management,  provision  and  reimbursement  of  credit,  purchase  of  inputs  for  rice 
+farming, and management and maintenance of the irrigation infrastructure.
+
+In order to have access to credit from the agricultural bank (CNCAS—Caisse National de Crédit Agricole 
+du  Sénégal),  farmers  need  to  be  organized  in  an  Economic  Interest  Group  (GIE—Groupement  d’Intérêt 
+Economique). A GIE can consist of several farmers or one larger individual farmer. These GIEs are usually part 
+of village-level unions (UV - Unions Villagois), which are headed by a president and assisted by a secretary-
+general and a treasurer, and which - at their turn - are part of larger farmer organizations or federations.
+
+The demand for credit is collectively formulated at the level of the GIE and transmitted to the UV, which 
+submits the collective requirements to the CNCAS - after the submission is approved by the former 
+parastatal SAED. The credit can be used for purchasing inputs (fertilizers, pesticides and seeds) which 
+are distributed among the members.
+
+Rebuilding West Africa’s food potential397
+
+Each year, CIRIZ (Comité Interprofessionnel du Riz), a committee of farmers, farmer organizations, CNCAS 
+and SAED representatives, determines a reference paddy price for the reimbursement of loans. Based on 
+this price, farmer organizations calculate the number of paddy rice bags they must recover from farmers 
+in order to repay the loan. After harvest, each GIE collects the corresponding volumes of rice, which is sold 
+to traders by the GIE itself or by the UV, either as paddy rice or milled.
+
+Most GIEs and unions do not engage in any more advanced form of processing or storage of rice and 
+most of them sell the rice as paddy immediately after harvesting. Even at higher levels, such as village 
+unions and federations, involvement of farmer organizations in processing and marketing is limited. 
+With some exceptions such as the well-organized union of female rice growers in Ross Béthio, a few 
+strong village-level unions, and the PINORD platform (see below), these organizations do not engage in 
+collective processing and marketing beyond the sale of rice for loan repayments.
+
+2.6. Consumer preferences
+
+Consumer preferences differ significantly across urban and rural markets. In both markets there are four rice 
+types: broken, intermediary, whole and ungraded rice. Senegalese consumers a high degree of preference for 
+broken rice, but this preference is much more pronounced in urban markets than in rural markets (Rutsaert 
+et al., 2013). Especially in Dakar, consumers are accustomed to imported, aromatic broken rice. In semi-urban 
+centres located in the SRV rice-producing region, such as Saint-Louis and Podor, consumers are familiar with 
+local rice and most of them prefer it to imported rice. In these semi-urban centres, the preference for broken rice 
+is much less pronounced than in Dakar, but still higher than in rural areas. In rural areas, whole grain rice is much 
+more appreciated and only 10 percent of rural rice consumption is imported. Rural consumers often purchase 
+ungraded rice, and do the sorting into broken, intermediate and whole grains at home.
+
+The preference for broken imported rice among the large - and growing - group of urban consumers, 
+clearly  does  not  match  the  objective  of  reducing  the  import  dependence  by  increasing  domestic 
+production. Fall et al. (2007) analysed the opinions of sellers, consumers and producers on the reasons 
+for the weak position of local rice in urban markets. While producers mainly blame unfair competition 
+from Asian rice as well as difficulties selling their surplus production, consumers and sellers emphasize 
+differences in quality and poor marketing of domestic rice.
+
+3. Supply chains of rice
+
+The  previous  section  shows  there  is  a  strong  segmentation  of  markets,  corresponding  to  different 
+consumer  preferences.  This  is  consistent  with  the  fact  that  the  supply  chains  of  rice  in  Senegal  are 
+organized separately for imported and domestic rice, with very little overlap; only a few actors - some 
+large traders in the urban areas- are involved in both supply chains. In addition, domestic rice production 
+systems are very different in the SRV from those in the southern regions.
+
+In the following section we analyse the supply chains of imported and domestic rice, both in the SRV 
+and in southern Senegal. For imported rice, we briefly describe how imports and commercialization 
+are  organized.  For  domestically  produced  rice,  we  describe  the  functioning  of  input  markets,  the 
+organization of rice production and processing, and whether - and through which channels - rice is 
+commercialized.
+
+Chapter 12. Smallholder participation in value chains: The case of rice in Sénégal398
+
+3.1 Import market chain
+
+Given that 65 percent of rice consumed is sourced abroad, the import market chain is the most important 
+one in terms of volume. Imported rice dominates the rice market in Dakar and in some of the other 
+large cities.
+
+In 1996, 43 importers were active in the Dakar market. After significant consolidation during the past 
+decade,  there  are  currently  only  about  ten  regular  importers,  and  four  of  them  are  responsible  for 
+66 percent of the imports (USAID, 2009). Large importers buy huge quantities (ships) of rice, while a 
+number of smaller importers buy rice by the container. Rice is then sold to wholesalers in Dakar. An 
+important share of imported rice passes through only four large wholesalers and is then distributed to 
+semi-wholesalers and finally to retailers and small shops in Dakar and towns further inland. Often semi-
+wholesalers also own trucks and organize the transport.
+
+3.2 Domestic rice channel: Senegal River Valley
+
+As described earlier, virtually all of the marketed domestic rice is produced in the SRV. A state run 
+monopoly  supplies  subsidized  fertilizer,  sold  at  40  percent  below  the  market  price.  A  number  of 
+private actors are authorized to multiply seeds, which must then be tested by public laboratories and 
+conditioned in Seed Sorting Centers (USAID, 2009). In order to obtain credit from the agricultural 
+bank (CNCAS) farmers are required to be part of a GIE and to use certified seed. In addition to this 
+system of subsidized credit through GIEs, private lenders may provide credit at substantially higher 
+interest rates. While the organization of credit provision through GIEs facilitates farmers’ access to 
+credit, the monopoly of the agricultural bank, and of the state-run supplier of fertilizer and seed, 
+along with the associated bureaucracy, results in an inefficient provision of inputs. 
+
+After the rice for credit reimbursement is collected by the GIE, each individual farmer chooses what 
+to do with the remainder of his production. Overall, about one third of SRV rice is sold collectively for 
+the reimbursement of credit, one third is sold individually to small traders and one third is kept for 
+consumption (USAID, 2009). 
+
+Transformation of paddy into rice happens through two parallel processing systems. Small, informal mills, 
+often at the village level, simply process paddy to rice by removing the husk of the grain. However, in response 
+to higher prices and demand for quality from urban end-markets, larger semi-industrial mills are expanding 
+capacity to produce processed rice. Both types of rice mills usually act as service providers. Farmers or (more 
+often) traders bring the paddy to the mills and pay a fixed amount per tonne for milling.
+
+Most farmers sell paddy or rice through small, informal intermediary traders (banabanas). These traders 
+often buy small quantities of paddy at the field and process them through the small village mills. They sell 
+the rice at weekly markets in the interior of the country, or to wholesalers in the cities. These intermediary 
+traders are responsible for a large number of uncoordinated, small scale transactions. Traders selling in 
+urban markets often buy higher quality rice at the industrial mills or buy larger quantities of paddy rice 
+from intermediary traders or farmers and have it processed at the industrial mills themselves.
+
+These different types of traders correspond to different markets. Less than half of the local commercialized rice 
+reaches the urban and semi-urban markets. The other half is sold in rural areas further inland. While production 
+systems are quite similar for these two markets - both originating from the same type of smallholder farmers 
+in the SRV—the degree of processing and the marketing channels are different. Rice for urban markets is 
+
+Rebuilding West Africa’s food potential399
+
+purified and sifted into homogeneous size categories and sold to traders who buy larger volumes at the rice 
+mills. For rice sold to rural areas, quality and sifting is less important. The marketing is less organized and 
+consists of small volumes sold by producers or producer groups to small, informal traders.
+
+3.3 Domestic rice channel: southern Senegal
+
+In the southern regions of Senegal where rice production is rain-fed, yields are low, and the market chain 
+of rice is not well developed. The system of GIEs providing access to credit (through the CNCAS bank) and 
+inputs also exists in this region, but the volume of credit transactions is substantially smaller due to lower 
+external input use and lower financial resources of farmers. Farmers generally use traditional rice seeds, 
+although since 2009 improved rice seeds such as Nerica varieties are increasingly being adopted. In most 
+of these regions women are responsible for rice cultivation and handle the primarily manual operations. 
+The cultivation of rain-fed rice is labor intensive, which limits the cultivated area (USAID, 2009).
+
+The processing of rice in these regions is usually done manually; small mechanical rice mills are rarely 
+available. Households keep almost all of the rice for their own consumption. Rice production is considered 
+a supplementary, non-commercial activity, although households might occasionally sell small quantities 
+to local traders when they are in need of cash.
+
+4. Constraints to smallholder market participation
+
+In  Senegal,  as  has  been  observed  all  over  Africa,  a  large  number  of  staple  crop  producers  do  not 
+participate significantly - or at al - in the marketing of their produce. Many farmers produce mainly for 
+subsistence purposes and only a small number often with larger farms, have a commercially oriented 
+strategy.  Of  those  farmers  participating  in  commercial  rice  production,  it  is  notable  how  little  they 
+participate in the urban markets, which contain the largest group of rice consumers.
+
+We begin this section with a conceptual framework on the factors that determine market participation. 
+Then  we  discuss  two  issues  concerning  the  participation  of  Senegalese  farmers  in  rice  markets:  (i) 
+constraints for increased participation of farmers in commercial markets in general, and (ii) constraints for 
+participation in the higher value rice markets in urban areas.
+
+4.1 Conceptual framework 
+
+In  many  poor  rural  areas,  many  small  farmers  do  not  participate  in  markets  at  all.  Several  studies  have 
+looked empirically at determinants of market participation by African farmers in traditional export crops (e.g. 
+Fafchamps and Hill, 2005; Poulton et al., 2004) and high value crops (e.g. Minot and Ngigi, 2004; Humphrey 
+et al. 2004; Minten et al., 2009). Goetz (1992) has analysed market participation for coarse grains in Senegal.
+
+For staple crops in general, researchers found that many producers purchase more food grains than 
+they sell, and that only a small share of food grain growers sell anything to the market at all. Three 
+groups of influential factors can be identified: (1) assets (2) household specific transaction costs, and 
+(3) regional conditions (Barrett, 2008).
+
+Chapter 12. Smallholder participation in value chains: The case of rice in Sénégal400
+
+(1).  Those households that do participate in the market typically have larger land and non-land asset 
+holdings. Larger land (and other productive) assets are associated with higher yields and a higher 
+marketable surplus (Barrett, 2008). The positive link between land assets and market participation 
+is found all over Africa: for rice markets in Madagascar (Barrett and Dorosh, 1996), for wheat in 
+Ethiopia (Bernard et al., 2008), and for maize in Kenya (Nyoro et al., 1999). 
+
+(2).  Household specific transaction costs for market participation naturally lead some households to 
+decide  to  participate  and  other  households  not  to  enter  the  market  at  all  but  to  opt  for  self-
+sufficiency  instead  (De  Janvry  et  al.,  1991;  Key  et  al.,  2000).  Transaction  costs  that  are  highly 
+household  specific  include,  among  other  things:  experience  and  negotiation  skills  related  to 
+education level, gender or age; land assets and access to agricultural equipment; access to credit 
+or liquidity availability.
+
+(3).  Finally, commercial households are more likely to be located in zones with better market access, 
+better physical and institutional infrastructure and higher potential agro-ecological characteristics. 
+Regional differences in transport costs, costs of commerce, degree of competition among traders, 
+etc., may also contribute to variation in the level of commercially-oriented farming (Fackler and 
+Goodwin,  2001).  More  remote  locations  may  be  associated  with  bad  road  accessibility,  limited 
+information on market prices and demand, and low population density, which results in limited 
+aggregate demand and poor integration with broader markets.
+
+Which of these factors most inhibit market participation - geographic factors or household specific 
+transaction  costs  -  is  mainly  an  empirical  question.  Especially  when  surplus  production  volume  is 
+limited, per unit transaction costs are high and market participation may be low.
+
+Increasing  productivity  through  technological  improvement  can  contribute  to  increased  marketable 
+volumes,  thereby  reducing  per  unit  costs  and  making  commercially  oriented  farming  profitable. 
+However, Barrett (2008) points out that technology and market participation influence each other; 
+technology adoption - for example, fertilizer use or the processing of paddy into rice - will only become 
+profitable if there is a market for absorbing the surplus created. In poorly connected markets, increased 
+production volumes might not reach broader markets, and local market flooding will cause adverse 
+effects through rapidly falling prices.
+
+Farmer  cooperatives  offer  another  opportunity  for  reducing  farmers’  individual  transaction  costs. 
+Through joint input purchases, common storage facilities and collective marketing, fixed production or 
+marketing costs can be divided over larger volumes, thereby reducing per-unit transaction costs and 
+enhancing market participation.
+
+In the remainder of this section we concentrate on market participation in Senegal. First, we look at 
+market participation in general versus subsistence rice production. Following that, we discuss in more 
+detail the specific constraints to rural versus urban market access.
+
+Rebuilding West Africa’s food potential401
+
+4.2 Constraints to market participation for Senegalese rice farmers
+
+Regional factors clearly affect the market participation rates for rice farmers in Senegal. The degree of 
+market participation differs largely across regions. The rain fed lowland ecosystem in southern Senegal, 
+is a net buying region, where virtually all rice production is consumed within the region and even within 
+households.  Hence, market participation is very low. The SRV is the main area of commercial irrigated 
+rice production with about two thirds of rice produced being marketed. These regional differences are 
+primarily  due  to  the  different  production  systems.  The  lack  of  commercial  orientation  in  the  southern 
+regions is both a reason for and a consequence of poor access to credit, irrigation, inputs and consumer 
+markets.  These  limiting  factors  work  against  increasing  yields  and  surplus  production  which  could  be 
+marketed, although this may change with the advent of higher-yielding Nerica varieties which are being 
+increasingly  adopted  in  this  region.  On  the  other  hand,  the  return  on  investment  in  improving  water 
+management and input markets is clearly higher in the SRV, which explains the government’s interest in 
+investing in rice production in the SRV.
+
+Apart from these large regional differences between the irrigated SRV and the rainfed lowlands in the 
+south of Senegal, there are also important differences between households situated in the same region. 
+Although the SRV region is on average much more commercially oriented than the southern regions, not 
+all SRV rice farmers are involved in commercial rice production and the volumes of rice sold vary greatly 
+among farmers. In order to identify household specific determinants of market participation among SRV 
+rice farmers, we conducted a representative household survey in the Senegal River Delta in February 2006.4 
+The choice of a homogenous production area, well connected to the main road and close to Saint-Louis, 
+largely cuts out market access as a source of variation, and makes it possible to isolate the household 
+level determinants of smallholder market participation among SRV rice farmers.
+
+Farmers who participate in the GIE system (including the majority of farmers in our survey area) are selling at 
+least part of their production in order to repay the credit they obtained and so this system guarantees a certain 
+minimum share of rice production being commercialized in the entire SRV region. But the GIEs do not collect 
+more rice than is needed for reimbursement. Every farmer decides individually what he/she wants to do with 
+the remainder of his/her produce.5  Some will keep it all for consumption, some will sell immediately to traders, 
+while others will store some of their production to sell later. In the remainder of this section we will use the 
+terms  market participation and selling farmers for those farmers who decide to sell rice individually, meaning 
+in addition to the rice which is sold collectively by the farm organization to reimburse credit. To account for the 
+rice which is not consumed by the households, one should add both types of sale.
+
+In what follows, we first give a general description of the characteristics of rice farmers in our sample. Then we 
+discuss how these characteristics differ between farmers who are selling rice individually, and farmers who are 
+not selling rice (apart from the collective sales of paddy rice for credit reimbursement). Out of the 245 farmers 
+in our sample, 182 farmers are selling rice individually.
+
+Senegalese  rice  production  is  almost  entirely  through  smallholder  agriculture,  including  in  the  SRV 
+region.  The  average  amount  of  land  assets  of  rice  farmers  in  our  sample  is  3  ha.  The  average  area 
+cultivated is 2.5 ha in the rainy season (Table 2), and more than half of the farmers cultivate an area of 
+less than 1.5 ha. The average production of rice over the whole year was about 11 tonnes. Most farmers 
+
+4 The sample includes 245 rice producing households and is representative of the Delta region of the Senegal river 
+(zone Gandon, Ross Béthio and Ronkh), the region of the SRV closest to Saint-Louis. More details on the survey can 
+be found in the Annex.
+5  Only  in  a  few  exceptional  cases  do  GIEs  go  beyond  the  repayment  of  loans,  by  collectively  organizing  the 
+processing and sale of rice.
+
+Chapter 12. Smallholder participation in value chains: The case of rice in Sénégal402
+
+produce in the rainy season only, but 14.5 percent of rice farmers produce rice both in the rainy and the 
+dry season (double cropping).
+
+Table 2. Area of rice cultivation, production, and distribution of production to different destinations by farmers 
+
+in the Senegal River Delta, 2005
+
+Area (average) (ha)
+
+Area (median) (ha)
+
+Production (tonnes) 
+
+Double cropping (%)
+
+% sold collectively for credit reimbursement
+
+% consumed
+
+% sold
+
+% donated
+
+Source: Authors’ calculation based on own survey.
+
+Rainy season
+
+(July-Jan)
+
+Dry season
+(Febr-June)
+
+Total
+
+(2005–2006)
+
+2.49
+
+1.5
+
+9.8
+
+57.7
+
+21.8
+
+16.4
+
+4.1
+
+100
+
+1.37
+
+1
+
+6.3
+
+38.0
+
+30.9
+
+24.3
+
+6.7
+
+100
+
+10.8
+
+14.5
+
+55.2
+
+22.5
+
+17.9
+
+4.4
+
+100
+
+Overall,  more  than  half  of  the  production  (55.2  percent)  in  2005  was  sold  through  the  farmer 
+organizations in order to pay back the loans.6 Apart from these sales for reimbursing credit, on average 
+18 percent of rice production was sold by farmers individually. Hence, total sales came to more than 70 
+percent. About 22.5 percent of rice production was consumed by the farming household itself.
+
+In our sample, 75 percent of rice farmers were selling rice individually (Table 4). The large majority (62 
+percent) of these had first sold some rice collectively through the farmer organization to repay loans 
+while 13 percent did not participate in the credit system of the GIEs and sold rice only on an individual 
+basis. Most of these are larger farmers who could probably rely on other sources of financing. Of the 
+25 percent not selling rice individually, 3 percent sold rice through the farmer organization for loan 
+repayment and kept the rest for subsistence. The other 22 percent of farmers produced purely for 
+subsistence purposes and did not even sell rice collectively for credit reimbursement.
+
+Because  of  the  relatively  high  rice  productivity  in  the  Senegal  River  Delta  and  the  relatively  good 
+road connection to the rest of the country, it is not surprising that the share of farmers selling rice 
+individually (75 percent) in our sample is high compared to the rest of the country and compared to 
+percentages of staple food sellers reported in other studies.7  Note that this is considerably higher than 
+the one third of rice production sold for credit reimbursement that was estimated by USAID (2009), 
+which might be related to our survey data corresponding to a year of low production.
+
+Yet even within this commercially-oriented region, nearly one quarter of farmers are producing for 
+subsistence. And also among farmers participating in the marketing of rice, there are large differences 
+in the volumes of rice sold.
+
+6 Note that this is considerably higher than the one third of rice production sold for credit reimbursement that was 
+estimated by USAID (2009), which might be related to our survey data corresponding to a year of low production. 
+7 In East and South Africa, percentages of sellers among staple food producers vary between 10 and 40 percent 
+(Barrett, 2008).
+
+Rebuilding West Africa’s food potential403
+
+Table  3  illustrates  some  general  characteristics  of  farmers  selling  (commercially  oriented  farmers)  and 
+farmers not selling rice. Sellers tend to have larger areas of cultivation and higher output and yields. There 
+seems to be no difference in age or education level. Members of farmer organizations are more likely to 
+be rice sellers, as are double cropping farmers. Commercially oriented farmers have a higher income and 
+more land and non-land assets. A larger population corresponds to a higher percentage of sellers in the 
+village. The insignificant difference in distances to a paved road and to Saint-Louis confirms our initial 
+hypothesis that market access is fairly homogenous among farmers in the Senegal River Delta.
+
+Table 3. Household assets and characteristics of farmers selling and farmers not selling rice
+
+Area of rice cultivation (ha)a
+
+Total rice production (kg)
+
+Yield (tonnes/ha)
+
+Double cropping (% of farmers)
+
+Age 
+
+Elementary education
+
+Female household head
+
+Union member
+
+Total land owned (ha)
+
+Non-land assets 
+
+Total income (FCFA)
+
+Per capita income (FCFA)
+
+Agricultural income (FCFA)
+
+Village population 
+
+Distance to Saint Louis (km)
+
+Distance to paved road (km)
+
+Number of observations (n=245)
+
+t-test
+
+***
+
+***
+
+***
+
+***
+
+***
+
+**
+
+***
+
+**
+
+***
+
+*
+
+***
+
+***
+
+Farmers not 
+selling rice
+
+Farmers 
+selling rice
+
+1.40
+
+4,538
+
+3.43
+
+6.3%
+
+55.7
+
+7.9%
+
+0%
+
+38.1%
+
+1.94
+
+207.1
+
+719,723
+
+136,487
+
+397,027
+
+977.5
+
+59.3
+
+9.6
+
+63
+
+(25.7%)
+
+3.53
+
+12,920
+
+4.78
+
+29.7%
+
+56.1
+
+9.3%
+
+5.5%
+
+51.1%
+
+3.32
+
+1125.6
+
+1,233,208
+
+169,877
+
+727,632
+
+1287.4
+
+57.2
+
+7.9
+
+182
+
+(74.3%)
+
+Source: Authors’ calculations based on own survey.
+Notes: Fixed exchange rate: euro1 = 655.957 FCFA. Significant differences (two-sided t-test) are indicated by *: 
+p=0.10, **: p=0.05, ***: p=0.01.
+
+a Area, production and yield refer to total area and production, i.e. the sum of area and production of wet and 
+dry season.
+
+Chapter 12. Smallholder participation in value chains: The case of rice in Sénégal404
+
+These descriptive statistics indicate that in areas with much commercial activity, household assets are 
+an  important  determinant  of  market  participation.  This  is  in  line  with  other  studies  showing  that 
+privately  held  assets  impose  important  constraints  to  market  participation  (Boughton  et  al.  2006; 
+Cadot et al. 2006; Minten and Barrett, 2006). We do find that a large village - reflecting larger local 
+demand - increases the likelihood of selling rice. While distances to the road and to Saint-Louis are 
+not found to be important within our study area, infrastructural constraints at the regional level  are 
+obviously very important in explaining major differences between the two main rice producing regions 
+(Senegal River Valley and southern rainfed low-lands).
+
+The majority of farmers in the Senegal River Delta (74.3 percent) participate in individual sales of rice, 
+yet volumes traded are very unequally distributed. Only 2 percent of farmers account for 25 percent of 
+total rice sales; 7 percent of farmers sell 50 percent of the total volume sold, and 26 percent of farmers 
+account for 75 percent of rice sold. We refer to those in that 26 percent as large sellers.
+
+Differences  in  household  characteristics  and  assets  between  sellers  and  non-sellers  are  also  found 
+when comparing large sellers and small sellers. 
+
+Table 4. Characteristics of large and small individual rice sellers
+
+Small sellers 
+
+Large sellers 
+
+(accounting for 
+25% of total 
+
+(accounting for 
+75% of total 
+
+sales)
+
+sales)
+
+Area rice cultivation (ha)
+
+Yield in rainy season (tonnes/ha)
+
+Yield in dry season (tonnes/ha)
+
+Double cropping (% of farmers)
+
+% of total farm production sold
+
+Average volume sold (kg)
+
+Average price (FCFA/kg)
+
+% of farmers selling to intermediary traders
+
+% of farmers selling to traders in urban market
+
+Number of observations (n=182)
+
+Source: Authors’ calculations based on own survey.
+
+1.84
+
+4.14
+
+4.82
+
+26.3
+
+14.2
+
+952
+
+99.4
+
+86.5
+
+2
+
+137
+
+5.98
+
+5.08
+
+5.30
+
+40.0
+
+28.4
+
+8,840
+
+101.2
+
+80.9
+
+6
+
+45
+
+Total
+
+(2005–2006)
+
+10.8
+
+14.5
+
+55.2
+
+22.5
+
+17.9
+
+4.4
+
+100
+
+Table 4 also indicates the importance of farmer organizations in the commercial orientation of farmers. 
+Farmer organizations usually only oversee the demand for credit and the distribution of inputs and 
+irrigation water. Without personal funds or individual access to credit, it is necessary to be part of a 
+farmer organization in order to be able to cultivate a significant area. Through facilitating access to 
+credit and inputs, and thereby increasing production, union membership can enhance individual market 
+participation, even when the farmer organizations usually do not arrange for the commercialization of 
+surplus production. The main reason for the limited commercial activity of farmer organizations is the 
+heterogeneity of producers. While some farmers are in urgent need of cash at the end of the season 
+
+Rebuilding West Africa’s food potential405
+
+and prefer to sell the paddy rice immediately after (or even before) harvesting, others have the option 
+to postpone sales and transform the paddy into sorted rice themselves and store it for a higher price 
+season. The credit provided to farmer organizations can only be used for the purchase of seeds and 
+inputs. Farmer organizations do not negotiate marketing credit which would allow them to collect, 
+transform and store all surplus rice production and advance some of the total sales revenue to farmers. 
+Moreover, farmer organizations often lack the management and marketing skills to perform these tasks.
+
+PINORD (Platforme d’Appui aux Initiatives du Nord), an Oxfam-funded platform of farmer organizations, 
+is trying to improve the commercial activity of farmer organizations by providing credit and monitoring 
+quality  of  a  newly  created  rice  brand,  Rival®.  However,  while  PINORD’s  model  for  the  increased 
+commercialization of quality SRV rice may be a good preliminary step toward competitiveness, the 
+operational scale is currently too small to have a significant impact on the market. PINORD marketed 
+500 tonnes of milled Rival® rice, produced by 10 rural micro-enterprises (RMEs)8 in 2007, 1800 tonnes 
+by 108 RMEs in 2008, 2 600 tonnes by 150 RMEs in 2009, and 6 200 tonnes by 350 RMEs in 2010. 
+However, the product was only available as far as the milling factories in the Senegal River Delta (50 
+km from Saint-Louis) and did not reach the urban market of Saint-Louis. In 2011–2012, no Rival® was 
+commercialized due to discontinued external funding (Demont et al., forthcoming).
+
+4.3 Constraints on access to local and urban markets
+
+Not  all  farmers  who  produce  a  marketable  surplus  of  rice  and  are  willing  to  sell  it  have  access  to 
+the same market channels. In the rain-fed zones there is hardly any commercial activity at all, even 
+locally. In the SRV, local rice markets are better developed - more so in the Delta region than further 
+inland  -  although  transaction  costs  are  still  considerable  and  markets  are  highly  fragmented.  The 
+organization of input and credit provision by farmer organizations results in a minimum volume of 
+rice being sold in order to repay loans. Usually farmer organizations sell to local intermediary traders 
+(banabanas) who sell the rice on local or regional markets further inland and (less frequently) to traders 
+in urban markets. Sales made by farmers individually are often smaller, more irregular transactions. 
+Most farmers sell a part of their production to bana-banas after harvesting and store another part for 
+consumption or for sales at a later time. Farmers and farmer organizations usually do not have long 
+term relationships or agreements with these traders, and transactions are ad hoc. These irregular, small 
+sales keep transaction costs rather high and reduce market efficiency.
+
+Transactions with traders who are active in urban markets concern larger volumes but are less frequent. 
+Some bana-banas have connections with traders in urban markets, but these transactions are also 
+fragmented and irregular. Some retailers or larger urban traders buy directly from producers, but the 
+total volume of SRV rice reaching urban markets remains small.
+
+The data from our survey in the Senegal River Delta confirm this picture. In our sample, 85 percent 
+of  rice  farmers  selling  individually  market  their  produce  through  intermediary  traders  (bana-banas) 
+and only 8 to 9 percent sell to traders in weekly markets (Table 5). Only 3 percent (8 percent in the 
+dry season) sell directly to traders in urban markets, although the price those traders pay is 15 to 20 
+percent higher.9 
+
+8 These rural micro-enterprises refer to various actors in rice production, such as farmers, service providers and 
+input suppliers.
+9 Note that our sample concerns the zone of the SRV that is best connected to urban markets and where farmers’ 
+commercial  orientation  is  higher  than  in  other  parts  of  the  SRV  region.  Hence,  overall  percentages  of  farmers 
+selling their produce to urban markets will be even lower.
+
+Chapter 12. Smallholder participation in value chains: The case of rice in Sénégal406
+
+Table 5. Share of farmers and prices by type of trader for the rice sold by farmers individually
+
+Rainy season 
+(July-January)
+
+Total
+
+(2005–2006)
+
+% rice farmers 
+
+average price
+
+% rice farmers 
+
+selling to
+
+(FCFA/kg)
+
+selling to
+
+average price
+
+85.1
+
+8.5
+
+2.8
+
+2.8
+
+103.5
+
+91.3
+
+123.8
+
+95.5
+
+80.3
+
+9.2
+
+7.9
+
+-
+
+98.6
+
+91.4
+
+111.7
+
+-
+
+Intermediary traders
+
+Traders in weekly markets
+
+Traders in urban markets
+
+Sold directly on the market
+
+Source: Authors’ calculations based on own survey.
+
+There are two reasons for the low penetration of SRV rice in urban markets. First of all, as documented 
+earlier, urban consumers prefer broken rice, sorted into categories of homogenous size and they value 
+the cleanness and visual presentation of rice (Fall et al., 2007; Demont et al., forthcoming). In contrast, 
+most of the local paddy rice is only transformed into milled rice at a small informal mill, but not cleaned 
+and sorted (which rural women usually do at home) and it involves mainly intermediary and whole grain 
+rice. Although studies show that urban consumers are willing to pay a higher price for good quality local 
+rice, consumers in Dakar generally believe that local rice is of inferior quality (Fall et al., 2007). There 
+clearly is a mismatch between the product demanded by the majority of Senegalese consumers and the 
+product characteristics of domestic rice that is supplied to them.
+
+Second,  transaction  costs  related  to  getting  local  supply  to  urban  consumers  are  very  high.  Road 
+infrastructure  and  transportation  should  not  be  major  constraints.  A  national  road  runs  parallel  to 
+the  Senegal  River,  where  irrigated  rice  production  is  concentrated.  In  fact,  limited  information  and 
+unreliable quality and quantity are the main problems. Traders in Dakar have little information on the 
+marketable volumes of local rice, its quality and prices. The most important constraint is probably the 
+fact that transactions in local markets pass through a high number of small intermediary traders and 
+there are very few actors in the chain who collect, store and sell rice in large volumes. Neither farmer 
+organizations, rice millers nor local traders succeed in concentrating transactions into larger volumes.
+
+As we have seen, farmer organizations have not been successful in collectively processing or storing 
+rice in order to market better quality rice in larger quantities. The diversity of farmers makes it difficult 
+to develop common marketing strategies.
+
+Industrial rice mills could potentially serve as places to store larger volumes of rice which could then be 
+sold in large quantities to traders further down the chain. Currently both small village level mills and 
+industrial rice mills act only as service providers. Industrial rice millers do not have sufficient working 
+capital to purchase paddy rice and they have very limited access to commercialization credit. This is 
+in part because local branches of the national bank for agriculture are not allowed to provide credit 
+above a certain amount without agreement from national headquarters. An earlier attempt to provide 
+government supported loans to millers failed because millers could not sell the rice within the period 
+of credit reimbursement and trust has not been restored since that experience.
+
+Local traders do not have the means to buy larger quantities. The small informal traders buy very small 
+quantities and focus on trading low quality, unsorted rice to the rural markets. The lack of coordination 
+between  the  different  actors,  combined  with  the  small  transaction  volumes,  significantly  reduces 
+
+Rebuilding West Africa’s food potential407
+
+marketing margins for local rice, which reduces their incentive to invest in facilitating the flow of SRV 
+rice to urban consumers. However, the recent price volatility and concomitant business risk since the 
+food crisis in 2008 have led some Senegalese importers to begin gravitating toward SRV rice (Demont 
+and Rizzotto, 2012).
+
+5. Implications, policy recommendations and perspectives
+
+Senegal is extremely dependent on imports of rice, its main staple crop. National programs to promote 
+self-sufficiency,  such  as  GOANA,  are  investing  in  the  expansion  of  irrigated  plots  and  technology 
+improvement in order to increase domestic rice production and reduce import dependency. 
+
+However,  the  issue  is  not  merely  how  to  increase  production,  but  how  to  increase  the  market 
+participation  of  smallholders  and  especially  how  to  integrate  rice  produced  in  the  SRV  into  urban 
+markets. Our main policy recommendations start with the recognition of this mismatch between the 
+characteristics of local rice and the preferences of urban consumers. Below, we offer recommendations 
+to address the main constraints related to the development of rice value chains in Senegal.
+
+5.1 Focus on demand and private sector involvement
+
+The current set of strategies put forward by the Senegalese government in the GOANA program emphasizes 
+production and fails to include significant efforts to involve private sector actors. The government’s focus 
+is on production and farmer organizations, with very little attention to creating an environment to assist 
+private actors in post-harvest activities and marketing.
+
+Improved  commercialization  of  rice  will  require  establishing  conditions  that  are  more  favorable  to 
+the private sector. A stable investment climate, transparent policies, large infrastructure investments 
+such as irrigation, and guaranteed access to resources such as land and water, are necessary to attract 
+private  investment  and  encourage  risk-averse  producers  to  engage  in  commercial  rice  production. 
+More transparent criteria for land concession could motivate more commercially-oriented farmers to 
+invest in land preparation and irrigation infrastructure themselves.
+
+The  most  successful  new  development  models  start  from  the  perspective  of  demand    rather  than 
+supply.10  Sustainable  incentives  for  investing  in  increased  supply  will  exist  only  if  there  is  enough 
+demand to absorb the product and if the product characteristics fit the demand preferences (Demont 
+and Rizzotto, 2012).
+
+Given the large demand for rice in urban markets, there should be considerable opportunity for the 
+increased development of the rice supply chain in Senegal. The potential market is much larger than 
+the current level of domestic production and an increased supply of rice should therefore easily be 
+absorbed by the large number of consumers in urban areas.
+
+10 See, for example, the successful approach of the European Bank for Reconstruction and Development (EBRD) in 
+its lending operations in Eastern Europe and the former Soviet Union.
+
+Chapter 12. Smallholder participation in value chains: The case of rice in Sénégal408
+
+However, there are two important problems: (i) the quality of locally-produced rice currently does not 
+correspond to what consumers want to buy; and (ii) transaction costs to bring locally-produced rice 
+to the urban markets are high, which reduces marketing margins and makes it difficult for domestic 
+rice  to  compete  with  the  price  of  imports.  So  the  main  challenges  are:  (i)  to  upgrade  the  quality 
+of  domestic  rice  and  (ii)  to  organize  production,  processing  and  marketing  of  domestic  rice  more 
+efficiently so as to reduce transaction costs.
+
+5.2 Quality upgrading
+
+The first challenge is how to produce the quality and type of rice that urban consumers want to buy. 
+Problems related to improving quality seem not to be insurmountable, as they are not inherent to the 
+country or the production system as such. Rather the main problems are due to poor processing, which 
+does not conform to consumer preferences. Currently the largest share of local production passes through 
+small  informal  mills  at  the  village  level,  which  are  unable  to  sort  the  rice  mechanically  or  to  remove 
+foreign matter. Policies should stimulate private investments in improved processing and sorting of rice. 
+Another way to improve quality is to speed up the drying process of paddy rice. Due to poor storage 
+facilities, rice often is not dried quickly enough, which reduces quality or may even cause the rice to rot.
+
+Recent evidence from experimental auctions in the urban markets of Dakar and Saint Louis confirms 
+that  there  is  a  willingness  among  urban  consumers  to  pay  a  price  premium  for  local  high-quality 
+rice (Demont et al., 2013; forthcoming). Under experimental conditions, the majority of Senegalese 
+consumers were willing to pay an 18 percent price premium for imported Thai 100 percent broken 
+rice  relative  to  conventional,  ungraded  SRV  rice.  However,  they  were  willing  to  pay  an  even  larger 
+price premium, 35 percent, to obtain enhanced-quality SRV broken rice. Conventional, ungraded SRV 
+rice  is  a  mix  of  varieties,  has  a  mediocre  grain  quality,  and  is  commonly  available  on  the  market. 
+Imported Thai 100 percent broken rice has a grain quality somewhere between the conventional and 
+the enhanced-quality SRV broken rice and contains some impurities. Enhanced quality SRV broken rice 
+is purified and homogenized through one or two sifting operations. On top of the price premium of 
+35 percent for enhanced quality SRV broken rice, the majority of Senegalese consumers were willing 
+to add another 6 percent for a branded rice product, paying an overall price premium of 41 percent for 
+PINORD’s Rival® (see Box 1) relative to conventional SRV rice. These findings suggest that Senegalese 
+consumers are willing to pay for intrinsic food quality attributes and that SRV rice is able to compete 
+against imported rice if post-harvest quality is tailored to consumer preferences. 11
+
+But also breeding currently plays a role in tailoring quality to urban consumer preferences. In 2011, 
+three  fragrant  rice  varieties  bred  by  AfricaRice  (Sahel  177,  328  and  329)  have  been  introduced  in 
+the SRV. Given that an important market segment of urban consumers (particularly in Dakar) prefers 
+imported fragrant rice, this introduction opens the door for the development of domestic value chains 
+of fragrant rice and further replacing imports with domestic rice. 
+
+11 Enhancing quality in the context of a food insecure country may seem counterintuitive at first, but is consistent 
+with similar findings in Asia revealing that even the very poor have more income elastic demand for food quality than 
+for food quantity (Shah, 1983).
+
+Rebuilding West Africa’s food potential409
+
+Box 1. Recent initiatives for quality upgrading of SRV rice
+
+The  quality  upgrading  of  rice  might  create  opportunities  for  the  development  of  a  certain  degree  of 
+coordination over the value chain. Recently, SRV producers have combined their efforts to supply a new 
+enhanced-quality  SRV  broken-rice  brand  Rival®  (Riz  de  la  Vallée).  Governance  of  quality  (processing, 
+cleaning and packaging) and provision of micro-financing for rural micro-enterprises in the rice sector are 
+conducted by the Oxfam-funded platform PINORD. Since its inception, PINORD recognized that absence 
+of marketing for local rice was a major obstacle to the mobilization of quality SRV rice onto the market. 
+PINORD’s promotion strategy is fourfold: improving packaging, improving transport, increasing market 
+share and points of sale in urban markets (especially in Dakar), and multimedia publicity surrounding the 
+label Rival® (PINORD, 2007).
+
+Although this initiative still faces several obstacles, and the establishment of strong relations with traders is still a 
+challenge that must be addressed, it’s clear that it is possible to produce domestic rice that is perfectly acceptable 
+to urban consumers. However, as hypothesized earlier, successful governance of value chains may have to come 
+from downstream stakeholders closer to the demand side. Recent developments confirm this hypothesis. On 25 
+November 2010, 14 Senegalese rice importers officially launched a joint venture with producers and processors 
+under the name SPCRS (Société de Promotion et de Commercialisation du Riz Sénégalais). The SPCRS aims to 
+buy the entire SRV paddy rice production, mill it and market it to Senegalese consumers by governing quality 
+along  the  chain  through  quality  contracts  with  milling  factories  and  farmers  (Mohapatra,  2011).  Two  other 
+smaller scale value chain initiatives have emerged, targeting different consumer segments in important urban 
+end markets. Since 2010 importer Marieme Diouck, in partnership with USAID, has contracted with SRV farmers 
+to market high quality SRV rice – branded Bourou thieb yi (the king of rices) – on the Dakar market, and the 
+Belgian investor Durabilis is currently contracting with SRV farmers and millers to market medium quality SRV 
+rice, branded Terral, through its local subsidiary, Secosen. These recent developments clearly illustrate the interest 
+and potential of the private sector to play a lead role in the development of rice value chains in Senegal.
+
+5.3 Vertical linkages
+
+Industrial or semi-industrial processors of rice can play an important role in improved storing and process-
+ing of rice. But industrial rice mills can only operate efficiently at a large scale and therefore a significant 
+part of rice production needs to pass through the industrial mills.
+
+While there is probably insufficient value in a staple food market such as the current rice market, and 
+too  much  competition  from  local  traders  and  alternative  uses  to  make  extensive  vertical  coordination 
+possible, there should be some room for supply chain-based financial innovations in the chain (see Box 
+2). Supply chain-based financial instruments, such as reverse factoring – which transfer the credit risk of 
+small suppliers to their more credit worthy customers – might offer a solution. A focus on lending and co-
+financing of rice processors and traders might stimulate vertical linkages.
+
+Chapter 12. Smallholder participation in value chains: The case of rice in Sénégal410
+
+Box 2. Can the supply chain governance of high-value agricultural products be
+
+used as a model for the development of supply chains of staple food?
+
+In a context of imperfect markets such as in Senegal, where smallholder producers have limited or no access 
+to inputs and credit, rice traders with better access to credit could solve this constraint by providing the farmer 
+with a contract: the buyer would provide the required inputs (e.g. certified seed of a particular rice variety) and 
+in turn the farmer would sell a specified quantity of the product to the trader at an agreed price. There are 
+two different models possible: either the trader purchases rice already milled or buys paddy rice and processes 
+it into milled rice using a miller as service provider. Because establishment of the contract would now allow the 
+farmer to produce more and/or to produce higher quality, the contract creates a surplus. This type of chain 
+governance model has been very successful in high value chains, such as the export of fresh fruit and vegetables 
+in Senegal. The development and organization of these supply chains are described in detail in Chapter 9 of 
+this volume. The question is whether this chain governance model could also be successful for the Senegalese 
+rice sector. A number of constraints present in the rice sector make it less likely for these governance structures 
+to be established.
+
+When contract enforcement is costly, there are risks of contract breach. The farmer may decide to divert the 
+inputs to other uses or he may sell to another buyer at a higher price (since this buyer does not need to recover 
+the credit that was provided). On the other hand, the buyer can breach the contract by paying a lower price 
+than was agreed on. If the contract creates enough surplus, compared to the situation without a contract, then 
+none of the parties will be better off by breaching it and a credible commitment can be established. Only if 
+enough value can be created in the chain will it be possible to develop interlinked contracts between traders or 
+millers and farmers.
+
+Staple crops such as rice are characterized by low value and the potential for quality upgrading is limited. In 
+addition, the low perishability of rice makes it possible for a farmer to store his product, anticipating higher prices 
+in the future, rather than respecting the contract. The large number of small intermediary traders gives farmers 
+multiple selling opportunities and reduces potential reputation costs of contract breach. These factors make it 
+less likely for chain governance to arise spontaneously. However, the chance of successful vertical coordination 
+is likely to increase with enhanced quality and demand.
+
+5.4 Reducing transaction costs
+
+When investments in quality upgrading and vertical linkages have been stimulated, it is important to focus 
+on improving the supply side of the market by reducing transaction costs. Aggregation points need to be 
+established, where rice can be collected such that transaction volumes in the chain are sufficiently large 
+and per-unit transaction costs can be reduced. Several approaches could be taken to address this need. 
+Investment in physical market infrastructure could lead to the emergence of larger traders. Aggregation 
+points could be established, either at the level of producer organizations (which would require better 
+coordination) or at the level of industrial mills. This would allow traders to transact larger volumes, thereby 
+reducing trading costs. Investment in transport infrastructure could reduce the cost for small traders to 
+bring rice to the mills, thereby increasing the volumes of adequately processed rice.
+
+Rebuilding West Africa’s food potential411
+
+5.5 Promotion of domestic rice
+
+Once a sufficient supply of clean, quality rice at a competitive price is ensured, investment in promoting 
+Senegalese rice would be one possible strategy to stimulate the demand for local rice (see the case of 
+Rival® above). However, local production must offer the characteristics demanded by consumers and 
+the  major  transaction  costs  must  be  addressed.  Data  from  recent  experimental  auctions  point  to  an 
+increased likelihood of consumers purchasing quality SRV rice when they are aware of it (Demont et al., 
+forthcoming). The most promising channels for promotion campaigns are television and radio (Demont 
+and Rizzotto, 2012), but marketing strategies based on word-of-mouth, i.e. buzz and viral processes that 
+exploit influential existing social networks (female networks, tontines, trader associations, religious and 
+social networks, etc.), can also have a large impact (Demont et al., 2013).
+
+5.6 Increasing productivity in southern rain-fed rice production areas
+
+A  different  set  of  policy  recommendations  is  needed  for  the  very  different  production  system  in 
+southern Senegal. In the rain-fed rice production areas, the first concern is to increase productivity. In 
+contrast to rice farmers in the SRV regions, farmers in the southern regions have very limited access 
+to input and credit. If better seeds and appropriate fertilizer can be provided at an acceptable price, 
+farmers may be willing to invest more in rice production than they do now. Increasing the efficiency of 
+private suppliers who supply inputs for other crops could improve the accessibility and lower the price 
+of inputs. Rain-fed rice production is labour-intensive so labour availability and competition for labour 
+with other crops may also pose constraints to increasing production.
+
+Finally, improving the ability to cope with risk could stimulate farmers to invest in strategies to increase 
+productivity.  Risk-averse  households  are  reluctant  to  make  investments  such  as  purchasing  inputs. 
+Investment  in  inputs  and  techniques  for  increasing  productivity  requires  a  willingness  to  cope  with 
+risks. Building up savings and insurance mechanisms can help to stimulate more risky investments, 
+including productivity enhancing strategies for rain-fed rice production.
+
+Since the introduction of improved rice varieties, such as Nerica, productivity is dramatically increasing 
+in  the  Casamance  region  to  the  extent  that  rice  production  systems  are  progressively  generating 
+marketable surpluses. Moreover, consumers already prefer local rice in that region. Recent experimental 
+auctions carried out by AfricaRice and USAID have shown that Nerica not only boosts productivity, but 
+is also preferred by consumers in urban markets (e.g. Kolda) relative to imported rice. The more these 
+production systems evolve from purely subsistence to surplus-based, the more attention will need to 
+be given to value chain upgrading.
+
+Chapter 12. Smallholder participation in value chains: The case of rice in Sénégal412
+
+6. Annex: Description of the survey and interviews
+
+organized in the Senegal River Delta in 2006
+
+From  February  to  April  2006,  a  representative  household  survey  was  organized  in  the  delta  area 
+of  the  SRV  region.  The  survey  covers  400  households  living  in  the  rural  communities  of  Gandon, 
+Ross  Béthio  and  Ronkh.  The  sample  includes  245  rice-  producing  households.  Survey  data  include 
+demographic  characteristics,  land  and  non-land  asset  holdings,  agricultural  production  and  inputs, 
+off-farm employment, non-labor income, credit and savings.
+
+The average household income in the region is around 1 million CFA, or 179 000 CFA per capita. The 
+poverty rate in the area is 56 percent, which is comparable to the national average. Households in 
+the region have diversified income portfolios. More than half of the total household income is derived 
+from agriculture, mainly from crop production. Income from fishing and livestock is limited. Other main 
+income sources are agricultural employment, self-employment and unearned income (Figure 3).
+
+Figure 3. Income sources for households in the survey region (authors’ calculations)
+
+Unearned income
+
+Self-employment
+
+Non agricultural employment
+
+Agricultural employment
+
+Fishing
+
+Livestock
+
+Crop producƟon
+
+Total income
+
+0
+
+200
+
+400
+
+600
+
+800
+
+1000
+
+1200
+
+Yearly income in 1,000 CFA 
+
+ 
+
+In addition, stakeholders from the different levels of farmer organizations, traders, importers, government 
+representatives at SAED, and researchers at the Africa Rice Center in Saint-Louis were interviewed.
+
+Rebuilding West Africa’s food potential413
+
+7. References 
+
+Aker, J.C., Block, S., Ramachandran, V. & Timmer C.P., 2009. West African Experience with the World Rice 
+Crisis 2007–2008. Prepared for a Workshop on the World Rice Crisis, Chiang Mai, February 2009.
+
+ANSD, 2006–2009. Note d’Analyse du Commerce Extérieur (NACE). Agence Nationale de la Statistique 
+
+et de la Démographie (ANSD), Dakar, Senegal, http://www.ansd.sn/publications_NACE.html.
+
+Barrett, C.B., 2008. Smallholder market participation: Concepts and evidence from eastern and southern 
+
+Africa, Food Policy 33, pp. 229–317.
+
+Danielou, M. and Ravry, C., 2005. The rise of Ghana’s pineapple industry. Africa Region Working Paper 
+
+Series 93. Washington DC: The World Bank, Africa Region.
+
+Bernard, T., Taffesse, A.S. & Gabre-Madhin E.2008. Impact of cooperatives on smallholder’s commercialization 
+
+behavior: evidence from Ethiopia, Agricultural Economics, 39(2): 147-161.
+
+de Janvry, A., Fafchamps, M. & Sadoulet, E., 1991. Peasant household behaviour with missing markets: 
+
+some paradoxes explained. Economic Journal 101, 1400–1417.
+
+Demont, M. & Rizzotto, A.C., 2012. Policy sequencing and the development of rice value chains in 
+
+Senegal, Development Policy Review 30(4): 451-472.
+
+Demont,  M.,  Rutsaert,  P.,  Ndour,  M.  &  Verbeke,  W.  Reversing  Urban  Bias  in  African  Rice  Markets: 
+
+Evidence from Senegal, World Development, forthcoming.
+
+Demont, M., Rutsaert, P., Ndour, M., Verbeke, W., Seck, P.A. & Tollens, E. 2013. Experimental Auctions, 
+Collective  Induction  and  Choice  Shift:  Willingness-to-pay  for  Rice  Quality  in  Senegal,  European 
+Review of Agricultural Economics, in press.
+
+Fackler, P. & Goodwin, B.K., 2001. Spatial price analysis. In Gardner, B., Rausser, G., eds.  Handbook of 
+
+Agricultural Economics, vol. 2A. Elsevier, Amsterdam.
+
+Fafchamps, M. & Hill, R.V., 2005. Selling at the farmgate or travelling to the market, American Journal 
+
+of Agricultural Economics 87 (3): 717–734.
+
+Fall, A.A., Fall, C.A.K., Gningue, D.R., Ndir, B. & Ndour, M. 2007. Etude sur les critères de qualité et les 
+modes de consommation du riz au Sénégal. Rapport Projet FNRAA, n° 010/AP03M010202, Fonds 
+National de Recherches Agricoles et Agro-alimentaires (FNRAA), Dakar, Senegal.
+
+Fall, A.A., & Diagne, A. 2008. Etude de la relation qualité-prix du riz produit dans la Vallée du fleuve 
+
+Senegal., Fonds National de Recherches Agricoles et Agro-alimentaires (FNRAA), Dakar, Senegal.
+
+FAO. 2010. FAOSTAT agriculture data, FAO, http://faostat.fao.org/.
+
+Goetz, S.J. 1992. A selectivity model of household food marketing behaviour in sub-Saharan Africa, 
+
+American Journal of Agricultural Economics 74(2): 444–452.
+
+Chapter 12. Smallholder participation in value chains: The case of rice in Sénégal414
+
+Humphrey, J., McCulloch, N. & Ota, M., 2004. The impact of European market changes on employment 
+
+in the Kenyan horticulture sector. Journal of International Development 16 (1), 63–80.
+
+Key, N., Sadoulet, E. & de Janvry, A., 2000. Transaction costs and agricultural household supply response. 
+
+American Journal of Agricultural Economics 82 (2), 245–259.
+
+Lançon, F. & Benz. H.D., 2007. Rice imports in West Africa: trade regimes and food policy formulation, Poster 
+
+prepared for presentation at the 106th seminar of EAAE, Montpellier, France.
+
+Masters, W.A., 2007. Distortions to Agricultural Incentives in Senegal, Agricultural Distortions Working 
+
+Paper 41, World Bank, Washington DC.
+
+Minot, N. & Ngigi, M., 2004. Are horticultural exports a replicable success story? Evidence from Kenya and 
+
+Côte d’Ivoire. EPTD/MTID discussion paper. Washington DC: IFPRI.
+
+Minten, B., Randrianarison, L. & Swinnen, J.F.M., 2009. Global Retail Chains and Poor Farmers: Evidence 
+
+from Madagascar, World Development, vol. 37(11), pages 1728–1741.
+
+Mohapatra, S. 2011. Quality Matters, Rice Today 10 (1): 36-37.
+
+MoA, 2008. Programme national d’autosuffisance en riz à l’horizon 2015: Document introductif au Conseil 
+
+Interministeriel du 4 janvier 2008, Ministry of Agriculture (MoA), Dakar, Senegal.
+
+Nyoro, J., Kiiru, M.W. & Jayne, T.S., 1999. Evolution of Kenya’s Maize Marketing Systems in the Post-
+
+Liberalization Era. Tegemeo Institute of Agricultural Policy and Development Working Paper 2A.
+
+PINORD 2007. Charte de qualité du riz de la Valleé du fleuve Sénégal, Platforme d’Appui des Initiatives 
+
+du Nord (PINORD), Saint-Louis, Senegal.
+
+Poulton, C., Gibbon, P., Hanyani-Mlambo, B., Kydd, J., Maro, W., Larsen, M.N., Osorio, A., Tschirley, D. 
+& Zulu, B., 2004. Competition and coordination in liberalized African cotton market systems, World 
+Development 32 (3), 519–536.
+
+Reardon, T. 1993. Cereals demand in the Sahel and potential impacts of regional cereals protection. 
+
+World Development 21(1):17-35.
+
+Rodenburg, J. & Demont, M., 2009. Potential of herbicide-resistant rice technologies for sub-Saharan 
+
+Africa. AgBioForum 12(3–4), 313–325.
+
+Rutsaert, P., Demont, M. & and Verbeke, W. 2013. Consumer preferences for rice in Africa. In Wopereis, M.C.S., 
+
+D. Johnson, T. Horie, E. Tollens, and A. Jalloh, eds. Realizing Africa’s Rice Promise. 
+
+Wallingford, UK: CABI Publishing. Seck, P.A., Tollens, E., Wopereis, M.C.S., Diagne, A. & and Bamba, I. 
+2010. Rising trends and variability of rice prices: Threats and opportunities for sub-Saharan Africa. 
+Food Policy 35(5):403-411.
+
+Shah, C.H. 1983. Food preferences, poverty and the nutrition gap. Economic Development and Cultural 
+
+Change 32(1):121–148.
+
+Rebuilding West Africa’s food potential415
+
+Swinnen, J., Vandeplas, A. & Maertens, M., 2010. Governance and surplus distribution in commodity 
+value chains in Africa, In Sarris, A. & Morrison J., eds. Food security in Africa: Market and trade 
+policy in staple foods in Eastern and Southern Africa, Food and Agriculture Organization of the 
+United Nations, Rome, Italy.
+
+USAID, 2009. Global food security response: Senegal rice study, United States Agency for International 
+
+Development (USAID), Washington, D.C., USA. 
+
+Chapter 12. Smallholder participation in value chains: The case of rice in Sénégal

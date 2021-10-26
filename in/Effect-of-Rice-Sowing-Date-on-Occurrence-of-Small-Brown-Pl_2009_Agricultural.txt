@@ -1,0 +1,980 @@
+Agricultural Sciences in China
+2009, 8(3): 332-341
+
+March 2009
+
+Effect of Rice Sowing Date on Occurrence of Small Brown Planthopper and
+Epidemics of Planthopper-Transmitted Rice Stripe Viral Disease
+
+ZHU Jin-liang1, ZHU Zeng-rong2,  ZHOU Yin2, LU Qiang3, SUN Xiang-liang3, TAO Xian-guo4, CHEN Yue1,
+WANG Hua-di5 and CHENG Jia-an2
+
+1 Jiaxing Plant Protection Station, Bureau of Agricultural Economy of Jiaxing City, Jiaxing 314050, P.R.China
+2 State Key Laboratory of Rice Biology/Institute of Insect Sciences, Zhejiang University, Hangzhou 310029, P.R.China
+3 Jiaxing Academy of Agricultural Sciences, Jiaxing 314016, P.R.China
+4 Food and Oil Station, Xiuzhou District, Jiaxing 314031, P.R.China
+5 Bureau of Plant Protection and Quarantine, Department of Agriculture of Zhejiang Province, Hangzhou 310020, P.R.China
+
+Abstract
+
+To understand the relationship between rice sowing date and occurrence of the rice small brown planthopper (SBPH)
+Laodelphax striatellus Fallen and the epidemics of the planthopper-transmitted rice stripe viral (RSV) disease, four
+sowing dates of rice were evaluated in 2006 and 2007.  The results showed that the peak density of SBPH and RSV
+incidence in the nursery and in the transplanted field decreased with the delay of sowing date in single crop of japonica
+rice in north Zhejiang Province of China.  The relationship between seedling RSV incidence at the end of the nursery trial
+with sowing date was well described by Weibull equation.  The area under the curve of population dynamics (AUCPD or
+planthopper-day accumulation) or the peak density of the planthopper in the nursery could be summarized by a logistic
+equation.  RSV incidence in the transplanted fields could be characterized quantitatively by a multivariate regression
+equation, including the variables of sowing date, peak density of the vector, and RSV incidence at the end of the nursery
+trial.  That the descriptive model excluded the AUCPD in transplanted field implies that this variable is not necessary in
+forecasting disease epidemics in the field.  The 2-year experiments sufficiently indicated that suitable sowing of rice could
+be used as one of the effective measures to control the vector population and therefore the planthopper-transmitted RSV
+on a larger scale.  The optimal sowing date for the single-cropped transplanted japonica rice is recommended from late
+May to early June in north Zhejiang, China.
+
+Key words: rice, sowing date, Laodelphax striatellus, rice stripe viral disease, epidemics
+
+INTRODUCTION
+
+The rice stripe disease is caused by rice stripe virus
+(RSV) (Hibino 1996).  In the 1960s, it was prevalent in
+China, Japan, Korea, and other countries; the popula-
+tion had gradually decreased since then, even disap-
+pearing in some regions (Hibino 1996; Jin et al. 1985).
+
+But in the 1990s, the prevalence of rice stripe disease in
+Jiangsu, Liaoning, Henan, Zhejiang provinces and Shang-
+hai City, China,  became worse than before, posing a
+serious threat to the security of rice production and the
+country’s food supplies (Zhu et al. 2005).  In Jiaxing,
+in the northern part of Zhejiang Province of China, in-
+cidence of the disease has been increasing year by year
+(Zhu et al. 2005, 2007; Sun et al. 2007; Zhang et al.
+
+This paper is translated from its Chinese version in Scientia Agricultura Sinica.
+ZHU Jin-liang, E-mail: jxcbz331@126.com; Correspondence ZHU Zeng-rong, E-mail: zrzhu@zju.edu.cn
+
+© 2009, CAAS. All rights reserved. Published by Elsevier Ltd.
+
+Effect of Rice Sowing Date on Occurrence of Small Brown Planthopper and Epidemics of Planthopper-Transmitted Rice
+
+333
+
+2006; Wang 2006; Cheng et al. 2002; Wang et al.
+2008).  In 2007, the infected rice fields reached 17.6
+thousand ha.  Besides, the disease vector, small brown
+planthopper (SBPH) Laodelphax striatellus (Homoptera:
+Delphacidae) sucks rice plant’s sap along all growth
+stages (but particularly at the milk stage) during which
+it excretes honeydew, and honeydew causes further
+fungal infection (Zhu et al. 2005).
+
+Chemical insecticides are the main tools used to con-
+trol SBPH and therefore to prevent the RSV disease.
+Because of the chemicals’ harmful side effects on farm-
+ers health, water quality, and rice quality in the com-
+plex rice-based production systems, there is an urgent
+need to explore and enhance the inherent control ability
+of the crop ecosystem.
+
+In general, the occurrence and prevalence of an in-
+sect-vectored plant virus disease is affected by host
+plant availability, growth stage, population dynamics,
+transmission rate of the insect vector, and virulence
+variation of virus.  The host plant availability, to a cer-
+tain extent, is a time resource, which is exhibited by the
+matching intensity among the vector, virus, and recep-
+tor crop.  This matching intensity would be affected by
+resistance variations in the host plant cultivar, sowing
+and transplanting date (Cheng et al. 2002; Holt and
+Chancellor 1999; Krell et al. 2005), soil nutrition con-
+dition in the field, other previous pest occurrence and
+injury, etc.
+
+Among the factors affecting RSV, farming system
+in a region, especially continuous cropping or even par-
+tial intercropping of rice-wheat/barley year by year, sow-
+ing date of directly sown rice and transplanting date of
+transplanted rice (Zhu et al. 2005; Zhu et al. 2007;
+Cheng et al. 2002), directly affect the destination and
+transfer rate of SBPH from maturing winter crops, such
+as wheat and barley.  Normally, the earlier the sowing,
+the higher the density of SBPH.  Nevertheless, when
+the viruliferous rate of the vector is high, the effective
+density of SBPH population would directly affect the
+incidence rate of RSV.  Only a simple description can
+be found in the literature about the hypothesis that
+“rice sowing date affects the occurrence of rice stripe
+disease”, and we found a remarkable difference in inci-
+dence rate in rice fields sown on different dates in 2005.
+A theoretical model of simulation analysis exists too
+(Holt and Chancellor 1999), but no experimental proof
+
+has been reported.  We therefore carried out a 2-year
+field study to verify the effect of different sowing and
+transplanting dates on incidence rate of RSV in the
+single-season cropping of japonica rice in Jiaxing, north
+of Zhejiang Province, where the disease has been an
+ever-growing problem, and to find out the suitable sow-
+ing/transplanting dates of single-season cropped rice to
+avoid or reduce the incidence of RSV.
+
+MATERIALS AND METHODS
+
+Experiment site
+
+The field experiment was carried out in Nanhu District,
+Jiaxing City, Zhejiang Province, China.  Field plots were
+set up in Yangzhuang village, Xinfeng, in 2006 and in
+Qianliu village, Xinhuang, in 2007.  The rice variety
+used was Xiushui 09, a japonica subspecies.  It was
+transplanted under a single rice cropping system.
+
+Experiment design
+
+There was no insecticide treatment during seed prepa-
+ration before sowing.  According to the experimental
+design, seeds were sown on four dates: May 16, May
+23, May 30, and June 6, with 7-d intervals in both 2006
+and 2007.  Seedlings were transplanted to experimental
+fields 30 d after sowing.  Three neighboring fields with
+an area of 1340 m2 each was used as three replications.
+Four plots in one field with 330 m2, each was used in
+the four treatments of different transplanting dates (June
+16, June 23, June 30, and July 5).  The experiment was
+randomized complete block design of four treatments
+with three replications each.  The usual fertilization and
+water management measures were applied in the rice
+nursery and during the early growth stage in the trans-
+planted field; these were kept pesticide-free to obtain
+the occurrence of the disease under natural conditions.
+Normal management measures were given to the rice
+crop in all plots from early August, when disease devel-
+opment was maintained on a stable level.
+
+Sampling method
+
+The incidence of infected tillers in the nursery before
+
+© 2009, CAAS. All rights reserved. Published by Elsevier Ltd.
+
+334
+
+ZHU Jin-liang et al.
+
+transplanting was estimated from three batches of
+seedlings, with each batch including at least 2 000
+seedlings, from each plot sown on a different date.
+The incidence of infected tillers and hills during the
+stable period of the disease in the transplanted field
+was determined using the following procedure.  Five
+sampling points were chosen by a five-point sampling
+method in each plot, 40 hills in each sampling point;
+so a total of 200 hills per plot were carefully checked
+and the number of infected and healthy tillers in each
+hill were counted.  The percentages of infected hills
+and infected tillers were computed.  Sampling was con-
+ducted every 3 or 5 d until the stable period of inci-
+dence development is achieved, approximately 40 d
+after transplanting.
+
+Yield assessment
+
+When rice grain was mature, 200 hills were harvested
+in the central part of each plot; the acreage of 200 hills
+was measured.  Fresh weight was determined, and 1.5
+kg of fresh grains from each plot were dried at 65oC
+for 24 h for calculation of water content.  Grain yield
+was transformed into dry weight.
+
+Data analysis
+
+Since the incidence rates were lower than 30%, the
+data were square-root-transformed and analyzed us-
+ing analysis of variance (ANOVA ) module in the widely
+used Data Processing System (DPS) Statistical Pro-
+gram (Tang and Feng 2007).  Means of treatments
+were compared by the least significant difference
+(LSD).  In the figure illustrating SBPH population
+dynamics, the area under the curve of the population
+dynamics (AUCPD, i.e, planthopper-day accumulation)
+(Nutter 1997) in the rice nursery and in the early stages
+of transplanted rice field until July 15 was calculated.
+The logistic regression equations of the incidence rate
+of the disease in late rice nursery (Inurs) against AUCPD
+were obtained using the regression analysis module in
+DPS.  Stepwise regression analysis was used to es-
+tablish incidence in transplanted field (Ifield) against
+AUCPD and incidence (Inurs) in nursery and AUCPD in
+the early growth stage in transplanted field.  Yield data
+were analyzed by ANOVA.
+
+RESULTS
+
+Population dynamics of SPBH in the rice nursery
+
+In rice nursery sown on May 15, 2006, the SBPH mi-
+grants were found during the first sampling time, and
+the number increased linearly since then, reaching the
+peak around June 10; with the delay of sowing date,
+immigration of SBPH was naturally delayed and obser-
+vation of peak population was postponed, resulting in a
+remarkable decrease in peak density (Fig.1-A).  The
+AUCPD in the four sowing dates in 2006 was 3432.5,
+2 056.0, 1 025.0, 431.0 planthopper days, showing re-
+markable decrease as sowing or transplanting date was
+postponed.  The proportion of adult planthoppers
+in the first and second transplanting date (91.20
+and 85.43%) was also higher than the latter two
+cases (65.58 and 75.47%).  In other words, most of
+the planthopper individuals sampled in the nursery sown
+earlier were immigrants.  The viruliferous rate in the
+immigrants was detected as 2.43% in 2006; the den-
+sity of effectively infected adults at peak population
+was calculated as 4.76, 3.01, 1.07, and 0.53 individu-
+als m-2.  Although only the peak density was sampled
+(June 15) in 2007, the densities of SBPH in the nursery
+sown on May 15 and May 22 were higher than those in
+the nursery sown on May 29 and June 5 (Fig.1-B).
+
+Incidence at the end of the seedling stage in the
+nursery
+
+Remarkable differences in disease incidence could be
+found among sowing dates at the seedling stage (Table
+1).  In 2006, the percentages of infected tillers in nurs-
+ery sown on May 15 and May 22 were the highest at
+3.26 and 2.25%, respectively.  The former was sig-
+nificantly higher than the latter, and the both were sig-
+nificantly higher than those in the nursery sown on
+May 29 (0.24%) and June 5 (0%).  Similar results were
+seen in 2007, suggesting that at the seedling stage, the
+earlier the seedlings were sown, the more severe the
+disease.
+
+The incidence (percentage of infected tillers, Inurs) rate
+at the end of the seedling stage and the AUCPD or peak
+density of the planthopper population at the seedling stage
+
+© 2009, CAAS. All rights reserved. Published by Elsevier Ltd.
+
+Effect of Rice Sowing Date on Occurrence of Small Brown Planthopper and Epidemics of Planthopper-Transmitted Rice
+
+335
+
+could be described using these logistic equations:
+
+2006: Inurs = 3.3116/(1 + exp (6.3519 - 0.003489Anurs)), F = 5 600.3, P = 0.0094
+         Inurs = 4.5275/(1 + exp (4.1711 - 0.025070Dnurs)), F = 367.2125, P = 0.0369
+2007: Inurs = 7.0514/(1 + exp (4.0887 - 0.010615Dnurs)), F = 294.0, P = 0.0412
+
+(1)
+(2)
+(3)
+
+The Inurs in the equation was incidence rate at the end
+of the seedling stage, Anurs was the AUCPD in the seed-
+ling stage in 2006. Dnurs is the peak density at the seed-
+ling stage in 2006 and 2007.
+
+When the data of 2006 and 2007 were combined, a
+united nonlinear regression analysis was established to
+be the following equation (Fig.2):
+
+Inurs = 4.7234/(1 + exp (6.6395 - 0.037441Dnurs)), F (2, 7) = 65.863; r = 0.9815, P = 0.0003
+
+(4)
+
+Eq. 4 could describe the change in incidence rate
+along with the change in peak density of the SBPH.
+Incidence rate was very low at low insect density and
+increased rapidly after that.  The inflection point of this
+logistic curve was a density of 200 individuals per m2.
+After that, incidence rate did not increase remarkably
+
+Table 1  Rice stripe disease incidence (% infected tillers) at the end
+of the seedling stage in the nursery
+
+Sowing date (mon-d)
+
+5-15
+5-22
+5-29
+6-5
+F
+P
+
+2006
+
+3.26 ± 0.37 a A
+2.25 ± 0.22 b B
+0.24 ± 0.23 c C
+0.00 ± 0.00 d  D
+
+434.11
+
+0.0001
+
+Year
+
+2007
+
+4.20 ± 0.52 a A
+5.30 ± 0.17 a A
+0.37 ± 0.02 b B
+0.33 ± 0.09 b B
+
+118.41
+
+0.0001
+
+Means in a column within the same year followed by a common letter are not
+different significantly (small case, P<0.05; large case, P<0.01, LSD).  The same as
+below.
+
+along with the density increase.
+
+Incidence of the disease in its epidemic stable
+period in transplanted field
+
+According to the incidence values sampled at the stable
+period of the disease epidemics, a close relationship
+between sowing date and disease occurrence could be
+seen (Table 2).  Such relations existed across years, i.e.,
+sowing date affected the incidence rate remarkably (in
+2006: F (3, 11) = 63.0, P = 0.0001; in 2007: F (3, 11) =
+256.6, P = 0.0001).  The results demonstrated the close
+relationship between sowing/transplanting date and in-
+cidence degree: the earlier the sowing, the more seri-
+ous the disease.  This trend was similar to that noted in
+the nursery.
+
+Fig. 1  Ppopulation dynamics of the small brown planthoppers in the rice seedling nursery in 2006 (A), and peak density of planthoppers
+sampled on June 15, 2007 (B).
+
+© 2009, CAAS. All rights reserved. Published by Elsevier Ltd.
+
+336
+
+ZHU Jin-liang et al.
+
+Table 2  Comparison of RSV incidence in rice fields transplanted
+on different dates
+
+Year
+
+2006
+
+2007
+
+Sowing date
+
+Infected hills (%)
+
+Infected tillers (%)
+
+(mon-d)
+5-15
+5-22
+5-29
+6-5
+5-15
+5-22
+5-29
+6-5
+
+Mean±SE
+
+18.50 ± 1.53 a A
+10.00 ± 0.50 b B
+  5.67 ± 0.60 c C
+  1.50 ± 0.50 d D
+16.17 ± 0.44 a A
+16.67 ± 0.73 a A
+  2.67 ± 0.33 b B
+  1.50 ± 0.29 c B
+
+Mean±SE
+4.07 ± 0.50 a A
+2.69 ± 0.34 ab AB
+1.89 ± 0.44 b B
+0.42 ± 0.15 c C
+5.18 ± 0.61 a A
+7.31 ± 1.04 a A
+1.90 ± 0.51 b B
+0.70 ± 0.04 c B
+
+two sowing dates were not remarkably different, start-
+ing on July 10 both in 2006 and 2007, whereas such
+stages began on July 15 in the third and fourth sowing
+dates, indicating the end of symptom-performance-pro-
+cess appearance of the primitively infected virus in the
+earlier growth stage of rice; since then, the incidence
+lasted for a long time or it decreased slowly because of
+infected tillers dying out (Fig.3-B).
+
+The relationship between sowing data and RSV inci-
+dence was clearly shown in Fig.3.  Incidence decreased
+along with a delay of sowing.  The incidence was not
+significantly different in the first two sowing dates, and
+each of them was significantly more severe than the
+latter two.  In 2006, incidence (% hills infected) reached
+50%  on  June  30,  July  3,  July  10,  and  July  10,
+respectively; whereas in 2007, it was on July 6, July 6,
+July 8, and July 10, respectively, which was delayed
+along with the delay in sowing/transplanting in general.
+The relationship between the incidence of RSV disease
+in the transplanted rice field (Ifield) and sowing date (S,
+number of days after May 1) could be described using
+a Weibull function:
+
+Fig. 2  Logistic regression of rice stripe disease incidence (%, Inurs)
+at the end of the seedling stage against peak density of the disease
+vector, small brown planthopper in the nursery. Blank and filled
+circles refer to data in 2006 and 2007, respectively.
+
+Dynamics  of  RSV  disease  incidence  in
+transplanted rice fields
+
+The development of RSV disease in the transplanted
+field occurred in four stages: initiation stage, rapidly
+increasing stage, stable stage, and decreasing stage.
+From Fig.3, the starting time of disease development
+(starting date) was different, along with the different
+sowing data.  With earlier sowing, the disease occurred
+earlier, with disease symptoms appearing 2-7 d after
+transplanting.  The rapidly increasing stages in the fields
+of different sowing dates were similar-they lasted 15 d
+from June 25 to July 10 in 2006 and 14 d from June 28
+to July 12 in 2007.  The stable stages across the first
+
+Stepwise regression analysis of RSV incidence
+in stable period against vector density and
+incidence at seedling stage and vector density in
+early growth stage in transplanted field
+
+Ifield = 17.3334 × (1 - exp (-((S + 7.3395)/29.4974)^(- 7.8111))), F (3, 23) = 71.5721, r = 0.9564, P = 0.0001(5)
+The incubation period (IP) of the virus in the rice
+field could therefore be calculated from the disease epi-
+demic curves (Fig.3).  In 2006, the SBPH in the nurs-
+ery sown on May 15 increased rapidly on June 12,
+whereas the peak of disease symptom increased sud-
+denly on July 3.  Therefore, IP was 21 d; similarly, an
+IP of 21 d was noted (June 15 and July 10) in rice
+sown on May 29; the IP was 22 d for rice sown on
+June 5, suggesting that along with the delay of sowing,
+IP was shortened gradually.  This phenomenon may be
+related to temperature increase in the days correspond-
+ing to delayed sowing dates (Jin et al. 1985).
+
+First, a series of symbols in the following equations
+have been annotated: Ifield, incidence (% hills infected)
+in the stable period in transplanted field; S, sowing date
+(number of days after May 1st); Anurs, AUCPD of the
+planthopper in the seedling stage; Inurs, incidence (%
+tillers infected) at the end of seedling stage; Afield, the
+area under the curve of the population dynamics of the
+
+© 2009, CAAS. All rights reserved. Published by Elsevier Ltd.
+
+Effect of Rice Sowing Date on Occurrence of Small Brown Planthopper and Epidemics of Planthopper-Transmitted Rice
+
+337
+
+planthopper in transplanted field; Dnurs, the population
+peak density of the planthopper at the seedling stage.
+
+Polynomial regression was conducted for the experi-
+mental data obtained in 2006; it is shown as follows:
+
+Ifield =31.221358 - 0.836401S - 0.113684Dnurs+ 6.407682Inurs + 0.002808Afield
+
+(6)
+
+Where the partial correlation coefficients r (Ifield, S)=
+-0.7769, t = 3.2644, P = 0.0115; r (Ifield, Dnurs) = -0.6168,
+t = 2.0735, P = 0.0718; r (Ifield, Inurs) = 0.6084, t = 2.0284,
+P=0.0771; r (Ifield, Afield)=0.2248, t=0.6105, P=0.5585.
+Multiple correlation coefficient r = 0.9818; F (4,7) =
+
+4.6722; P = 0.0001; and correlation coefficient after
+adjustment ra=0.9712; adjusted determinant coefficient
+r2 = 0.9433.
+
+A stepwise regression equation was established for
+
+the same data set as follows:
+
+Ifield = 32.676532 - 0.872762S - 0.125540Dnurs + 7.255288Inurs
+
+(7)
+
+Where the partial coefficients r (Ifield, S) = -0.7903,
+t =3.6482, P=0.0053; r (Ifield, Dnurs)=-0.6697, t=2.5505,
+P=0.0312; r (Ifield, Inurs)=0.6856, t=2.6634, P=0.0259.
+Multiple correlation coefficient r = 0.9808, F (3, 8)
+= 6.74617, P = 0.0001; and the correlation coefficient
+after adjustment ra = 0.9735; adjusted determinant co-
+efficient r2 = 0.9477.
+
+When Eq.(7) was compared with Eq.(6), it was clear
+that without the Afield in transplanted field, all the signifi-
+
+cant levels of the partial correlation coefficients between
+Ifield, S, Dnurs, and Inurs, multiple correlation coefficients,
+and correlation coefficient after adjustment of these three
+independent variables (S, Dnurs, and Inurs) increased, sug-
+gesting that the description and prediction ability of the
+regression equation increased.
+
+On the basis of experimental results of 2007, the
+polynomial regression equation was established as
+follows:
+
+Ifield = 15.587254 - 0.431861S - 0.013564Dnurs + 3.133022Inurs- 0.003224Afield
+
+(8)
+
+Where the partial regression coefficients r (Ifield,
+S) = -0.7898, t = 3.4072, P = 0.0093; r (Ifield, Dnurs)
+= -0.4004, t= 1.1560, P= 0.2810; r (Ifield, Inurs)=0.8247,
+t = 3.8582, P = 0.0048; r (Ifield, Afield) = -0.2045, t =
+0.5528, P = 0.5955.  Multiple correlation coeffi-
+
+cient r = 0.9955; F (4, 7) = 19.2128; P = 0.0001,
+and correlation coefficient after adjustment ra =
+0.9929; and adjusted determinant coefficient r2 =
+0.9858.
+
+Its stepwise regression equation is:
+
+Fig. 3  RSV progress curves in rice transplanted on different dates in 2006 (A), and dots in the figure are averages of three replicates, bars
+around the symbols are standard errors in 2007(B).
+
+© 2009, CAAS. All rights reserved. Published by Elsevier Ltd.
+
+338
+
+ZHU Jin-liang et al.
+
+Ifield = 13.75446084 - 0.3808448414S - 0.011416049454Dnurs + 2.9881405779Inurs
+
+(9)
+
+Where the partial regression coefficients r (Ifield, S)=
+-0.8512, t= 4.5872, P = 0.0013; r (Ifield, Dnurs)= -0.3564,
+t = 1.0790, P = 0.3087; r (Ifield, Inurs)= 0.8211, t = 4.0685,
+P =0.0028.  Multiple correlation coefficient r=0.9953;
+F (3, 8) = 28.0410; P = 0.0001, correlation coefficient
+after adjustment ra = 0.9935; and adjusted determinant
+coefficient r2 = 0.9871.
+
+It was obvious that, similar to the stepwise regres-
+sion equation of 2006, the exclusion of the factor Afield
+
+in the stepwise equation of 2007 increased the signifi-
+cant level of all partial regression coefficients, correla-
+tion coefficient after adjustment, and multiple correla-
+tion coefficient.
+
+Since the independent variables screened in the equa-
+tions of both 2006 and 2007 were the same, the data
+of both years were pooled for analysis; the regression
+equation including four factors were obtained as
+follows:
+
+Ifield = 15.045572S - 0.404805Dnurs - 0.017606Inurs + 3.264654Inurs + 0.002715Afield
+
+(10)
+
+Where partial regression coefficients r (Ifield, S)
+= -0.7132, t = 4.4347, P = 0.0003; r (Ifield, Dnurs) =
+-0.4879, t = 2.4363, P = 0.0243; r (I field, I nurs) =
+0.7363, t = 4.7425, P = 0.0001; r (I field, A field) =
+0.1764, t = 0.7813, P = 0.4438.  Multiple correla-
+
+tion coefficient r = 0.9824; F(4, 19) = 13.1065,
+P = 0.0001, correlation coefficient after adjustment
+ra = 0.9786; and adjusted determinant coefficient
+r2 = 0.9577.
+
+Its stepwise regression equation is:
+
+Ifield = 16.733407 - 0.451974S- 0.02056Dnurs + 3.484801Inurs
+
+(11)
+
+Its partial regression coefficient r (Ifield, S) =-0.8305,
+t=6.6667, P=0.0001; r (Ifield, Dnurs)=-0.6021, t=3.3724,
+P=0.0029; r (Ifield, Inurs)=0.7816, t=5.6032, P=0.0001;
+multiple correlation coefficient, r = 0.9818; F (3, 20) =
+17.8017; P = 0.0001, correlation coefficient after ad-
+justment ra = 0.9790; and adjusted determinant coeffi-
+cient r2 = 0.9577.
+
+With the exclusion of Afield in the new equation (Eq.
+11), both partial regression coefficients and the F value
+of three included factors increased.  So the incidence (%
+hills infected) of RSV disease in transplanted field could
+be described on the basis of sowing data S (number of
+days after May 1), the peak density of the SBPH at the
+seedling stage Dnurs, and RSV incidence at the end of
+seedling stage Inurs; whereas the AUCPD calculated from
+the density of SBPH in the early growth stage in trans-
+planted field was an unnecessary factor for the descrip-
+tion of RSV incidence rate in the transplanted field.
+
+Table 3  Actual yield in harvest (2006 and 2007)
+
+Sowing date (mon-d)
+
+5-15
+5-22
+5-29
+6-5
+F (3, 11)
+P
+
+Yield (mean ± SE, kg ha-1)
+
+2006
+
+2007
+
+7 801 ± 399 a A
+
+8 229 ± 634 a
+9 484± 1 165 a                       6 881± 298 ab AB
+9 072 ± 760 a
+7 170 ± 271 a AB
+5 813 ± 201 b B
+8 359 ± 134 a
+6.72
+0.639
+0.617
+0.024
+
+Yield assessment
+
+The statistical analysis of actual yield showed that the
+final yield of each sowing date was not significantly
+different (P > 0.05) in 2006; the grain yields among
+either the former three or the last three sowing dates in
+2007 were significantly different from each other, al-
+though the yield of first sowing was remarkably higher
+than that of last (Table 3).
+
+DISCUSSION
+
+The results described in this research clearly proved
+the hypothesis that rice sowing/transplanting date sig-
+nificantly affects RSV incidence.  Under insecticide-
+free conditions, RSV incidence was serious in early-
+sown and transplanted rice fields, which was mainly
+related to the viral transmission characteristics and im-
+migration period of the virus-bearing vectors.  If the
+sensitive period of rice seedlings in the nursery was
+consistent with the immigration peak period of the high
+virus-born adults of the SBPH of the first generation,
+which emerged from wheat, barley, and other over-
+wintering crops/grasses, the disease would be more
+serious.  In Jiaxing, north Zhejiang Province, the immi-
+
+© 2009, CAAS. All rights reserved. Published by Elsevier Ltd.
+
+Effect of Rice Sowing Date on Occurrence of Small Brown Planthopper and Epidemics of Planthopper-Transmitted Rice
+
+339
+
+gration peak of the first generation of adult planthoppers
+is around mid-late May (Wang et al. 2008).  If rice was
+sown and seedlings emerged in this period, the virus-
+carrying SBPH from the wheat, rye grass, and gramin-
+eous weeds nearby would transfer to the rice nursery
+or to the directly sown rice field.  With a smaller sow-
+ing area holding the planthoppers, the vectors could
+aggregate in the nursery and transmit the virus in high
+concentrations.  Nevertheless, seedlings at growth
+stages from the 2 leaf and 1 leaflet to the 4 leaf and 1
+leaflet are the most sensitive to infection of RSV dis-
+ease (Jin et al. 1985; Wang et al. 2008) and thus could
+be highly infected with the first peak of transmission.
+The first batch of infected young seedlings showed
+RSV symptoms at the early growth stage in transplanted
+field after 20-30 d of latent period.  From early June,
+the main components of the SBPH population were the
+small nymphs that are too weak to move.  With in-
+creasing  temperature,  its  population  decreased.
+Therefore, viral transmission rate decreased largely in
+the seedlings sown during this period, and the disease
+had low incidence.  The difference in sowing date would
+result in a difference in virus-bearing vector density in
+the seedlings and correspondingly a significant differ-
+ence in RSV incidence in seedlings and transplanted
+plants.
+
+Sowing early to avoid the dispersal peak of the SBPH
+had historically been used to reduce incidence of viral
+diseases.  In Japan, for instance, the incidence of RSV
+was low when sowing was done in early April and was
+most serious when sowing done in May; incidence
+would be lower again if sowing is done after May (Hibino
+1996).  Actually, it was caused by the different degrees
+of overlapping and matching between the activity peaks
+of adults and larger nymphs’ viral transmission peak
+and the critical vulnerable growth stage of rice.  Those
+early sown rice seedlings were in the 5-leaf stage with
+low sensitivity to RSV infection when the first-genera-
+tion adults transferred from the wheat fields during
+harvest.  This particular case and our experiment had
+demonstrated that “availability of host plants has a re-
+markable effect on the SBPH population and its trans-
+mitted RSV disease”. The essential mechanism is to vary
+the chances of the SBPH population to use the host plant
+resources, i.e., matching between dispersal peak of the
+vector and the sensitive growth stage of rice.
+
+This availability concept could be used in pest con-
+trol effectively.  Sowing and transplanting on the ap-
+propriate date is one of the most effective methods of
+controlling disease epidemics.  Even if the field is not
+put in fallow for a long time and on a large scale, a
+suitable date of planting can reduce vector density and
+the viral diseases they transmit.  Some successful ex-
+amples of control are those of the tabacci whitefly and
+cases involving eggplant and tobacco in India, okra and
+cotton in Mexico, tomato and common bean in Egypt,
+and cantaloupe in California (Hilje et al. 2001).  Sowing
+at the proper time has been used in the agricultural con-
+trol of anthracnose and viral disease of water yam,
+Dioscorea alata L. (Egesi et al. 2007).  A field experi-
+ment showed that late sowing can reduce soybean beetle
+Cerotoma trifurcate population density, but its role in
+the control of the bean pod mottle virus transmitted by
+the beetle was found to be not consistent among differ-
+ent years (Egesi et al. 2007).  In Nigeria, if bean sow-
+ing was done after June 1, the frogeye leaf spot disease
+would be more serious and yield would decrease (Akem
+and Dashiell 1994).
+
+Current tactics to control RSV include using pesti-
+cides to control vector density and the transmission
+process and to deploy resistant varieties.  If resistant
+varieties are lacking for large-scale extension, chemical
+control  remains  as  the  main  management  tactic.
+Unfortunately, the insecticides used generally did not
+show results as promised.  Therefore other agronomic
+tactics should take on the major role.  The successful
+cases of other crop vector disease systems mentioned
+earlier could be duplicated, and the results from this
+study can be further used to design a proper rice sow-
+ing/transplanting scheme to control the RSV disease
+effectively.
+
+For this purpose, other factors such as geographical
+condition, light and temperature regime, characteris-
+tics of rice variety, virus-carrying rate of the vector,
+and density during peak viral transmission of the vec-
+tor (Wen 2003) should be thoroughly considered.  The
+yield loss caused by different pests and diseases and
+the benefit-cost trade-off of control tactics should be
+considered.  For the current period and in the near fu-
+ture in Jiaxing, Zhejiang, single-season cropping of
+japonica rice has been the main cropping system, and
+this  will  not  have  any  significant  effect  on  rice
+
+© 2009, CAAS. All rights reserved. Published by Elsevier Ltd.
+
+340
+
+ZHU Jin-liang et al.
+
+development, yield, and quality.  Optimal sowing date
+can be late May to early June to avoid immigration of
+large viruliferous SBPH population.  This sowing “win-
+dow” is experimentally supported from other indepen-
+dent agronomic experimental data in the Yangtze Delta
+region, e.g., Jiaixang of Zhejiang (Gao and Zhang 2005),
+Changzhou of Jiangsu (Chen et al. 2003), Fengxian of
+Shanghai (Shen 2003), which indicated that the suit-
+able sowing date for single-cropped japonica rice is from
+mid May to mid June.  Rice sown during this suitable
+period can avoid overgrowing of rice population caused
+by sowing too early, and the damage of low tempera-
+ture during heading stage in mid to late September in
+over-late sown field.  Rice sown in late May can give
+the largest yield, with the best quality (Shen 2003),
+though some experimental results suggest that sowing
+on May 15 could give the largest harvest.  Mean yields
+from fields sown from May 10 to May 30 were not
+significant.  On the basis of the yield assessed as re-
+ported in this article, there is no significant difference
+between May 15 and May 29 sowing in 2 years, and
+the yield from rice sown in this period was not remark-
+ably different from that sown in early June in one year.
+This result demonstrates the suitability of the simple
+rule of “sowing from late May to early June”, which is
+not only to reduce RSV transmission but also to fall
+within the proper range of sowing period for normal
+years proposed by agronomists (Mao et al. 2001).
+
+Because of the complexity of determining optimal
+sowing date, which is affected by multiple factors as
+mentioned above, we applied the stepwise regression
+equations established in this study to predict actual in-
+cidence and validate its effectiveness.  Through a com-
+bination of the experimental results of the effect of sow-
+ing and transplanting dates on the occurrence and the
+damage caused by other rice pests such as rice stem
+borer, rice leaffolder, brown planthopper, and the rice
+yield components and final yield, we analyzed the inte-
+grative profit of the different sowing and transplanting
+dates.  At the same time, by using experimental data on
+rice variety with characteristics of different light and
+temperature requirements, development rate, potential
+yield, different responses to pest injury, and through
+the development of a rice production simulation model,
+we input the submodels describing the interrelation
+among sowing/transplanting date, density of planthopper
+
+population, viruliferous and viral transmission rates, and
+final incidence rates of RSV disease established in this
+experiment.  The modeling analysis will optimize the
+owing/transplanting date of different varieties and fur-
+ther support optimal decisions for multiple objectives,
+which  include  economic  profit,  environmental
+soundness, and human health.
+
+CONCLUSION
+
+The hypothesis “sowing/transplanting date has signifi-
+cant effects on the incidence of rice stripe disease”
+was experimentally verified in this article.  From the
+point of view of integrated pest management, rice sow-
+ing/transplanting within a proper range of time is one
+of the most effective ways to control rice stripe disease.
+The optimal sowing date of single-season cropped
+japonica rice is recommended to be from late May to
+early June in north Zhejiang, China.
+
+Acknowledgements
+The research was financially supported by the National
+High-Tech R&D Program of China (863 Program,
+2007AA10Z220), National Key Technologies R&D Pro-
+gram during the 11th Five-Year Plan period of China
+(2006BAD17B06), the National Basic Research Pro-
+gram of China (973 Program, 2002CB111400), Zhejiang
+Provincial Key Project (2009CB119203), Zhejiang
+Yangtze Delta Key Sci & Tech Collaborative Program,
+China (2004E60055), and Jiaxing City Key Sci & Tech
+Project, China (2005AZ3002).
+
+References
+Akem C N, Dashiell K E. 1994. Effect of planting date on severity
+of frogeye leaf spot and grain yield of soybeans. Crop
+Protection, 13, 607-610.
+
+Chen J L, Lu F J, Zhou J P, Peng X, Lu X Z, Xu Y X. 2003.
+Effect of sowing and transplanting date on development and
+growth of a Japonica hybrid rice variety, Changyou 1. Jiangsu
+Agricultural Sciences, (5), 29-30. (in Chinese)
+
+Cheng Z B, Yang R M, Zhou Y J. 2002. Some new rules of the
+rice stripe disease in rice production regions in Jiangsu.
+Jiangsu Agricultural Sciences, (1), 39-41. (in Chinese)
+
+Egesi C N, Onyeka T J, Asiedu R. 2007. Severity of anthracnose
+and virus diseases of water yam (Dioscorea alata L.) in
+Nigeria I: Effects of yam genotype and date of planting.
+
+© 2009, CAAS. All rights reserved. Published by Elsevier Ltd.
+
+Effect of Rice Sowing Date on Occurrence of Small Brown Planthopper and Epidemics of Planthopper-Transmitted Rice
+
+341
+
+Crop Protection, 26, 1259-1265.
+
+Gao T D, Zhang C. 2005. Conditional analysis of effect of sowing
+and transplanting date on occurrence of rice stripe virus
+disease. China Plant Protection, 25, 13-14. (in Chinese)
+
+Hibino H. 1996. Biology and epidemiology of rice viruses. Annual
+
+Review of Phytopathology, 34, 249-274.
+
+Hilje L, Costa H S, Stansly P A. 2001. Cultural practices for
+managing Bemisia tabaci and associated viral diseases. Crop
+Protection, 20, 801-812.
+
+Holt J, Chancellor T C B. 1999. Modelling the spatio-temporal
+deployment of resistant varieties to reduce the incidence of
+rice tungro disease in a dynamic cropping system. Plant
+Pathology, 48, 453-461.
+
+Jin D D, Ruan Y L, Xu R Y. 1985. The latent period of the rice
+stripe disease and transmission characteristics of its vector
+the  small  brown  planthopper  Laodelphax  striatellus.
+Zhejiang Agricultural Sciences, (5), 227-228. (in Chinese)
+Krell R K, Pedigo L P, Rice M E, Westgate M E, Hill J H. 2005.
+Using planting date to manage bean pod mottle virus in
+soybean. Crop Protection, 24, 909-914.
+
+Mao G J, Zhao W M, Wen H N, Chen J H. 2001. Population
+structure and cultivation techniques of high yielding single
+crop rice in barley (or wheat)-rice system: Acta Agriculturae
+Zhejiangensis, 13, 184-189. (in Chinese)
+
+Nutter Jr F W. 1997. Quantifying the temporal dynamics of
+plant virus epidemics: a review. Crop Protection, 16, 603-
+618.
+
+Shen Y F. 2003. Effect of sowing date on grain yield and quality
+of rice. Shanghai Agricultural Science and Technology, (6),
+35. (in Chinese)
+
+Sun X L, Wang H D, Zhu J L, Cao G R, Zhao J P, Dai D J. 2007.
+
+Detection of rice stripe virus in the small brown planthopper.
+China Plant Protection,  (7), 7-9. (in Chinese)
+
+Tang QY, Feng M G. 2007. DPS-Data Processing System:
+Experimental Design, Statistical Analysis and Data Mining.
+Science Press, Beijing. p. 1100. (in Chinese)
+
+Wang H D, Chen J P, Zhu Z R, Sun X L, Shen W X. 2008.
+Epidemics of the rice stripe viral disease in Northern Zhejiang,
+China. Acta Phytophylacica Sinica, 35, 487-492. (in Chinese)
+Wang H D. 2006. Forecast and Control of Insect and Disease
+Pests in Grain Crops. China Agricultural SciTech Press,
+Beijing. pp. 81-89. (in Chinese)
+
+Wen H N. 2003. Cultivation techniques for high quality and
+yield rice of single – cropping season japonica rice in Northern
+Zhejiang Province. Shanghai Agricultural Science and
+Technology, (3), 23-24. (in Chinese)
+
+Wen H N, Mao G J. 1998. Development and reproduction
+performance of a Japonica Xiushui 63 as affected by sowing
+and transplanting date. Zhejiang Agricultural Sciences, (6),
+262-263, 264. (in Chinese)
+
+Zhang G M, Wang H D, Dai D J. 2006. Preliminary report on
+trends and management tactics of rice stripe disease in
+Zhejiang. China Plant Protection, 26, 21-23. (in Chinese)
+
+Zhu J L, Sun X L, Wang H D, Cao G R, Zhong X M. 2007.
+Relationship of rice stripe disease and rice grain yield loss.
+China Rice, (4), 60-61. (in Chinese)
+
+Zhu Z R, Li H Y, Wang H D, Cheng J A. 2005. The small brown
+planthopper Laodelphax striatellus: To be latent or to
+eruptive? In: Cheng Z M, ed, Prevention and Control of
+Agricultural Biodisasters. China Agricultural SciTech Press,
+Beijing. pp. 356-363. (in Chinese)
+
+(Edited by ZHANG Yi-min)
+
+© 2009, CAAS. All rights reserved. Published by Elsevier Ltd.
+
+

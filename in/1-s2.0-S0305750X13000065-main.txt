@@ -1,0 +1,2328 @@
+www.elsevier.com/locate/worlddev
+
+http://dx.doi.org/10.1016/j.worlddev.2012.12.018
+
+The Eﬀect of Women’s Bargaining Power on Child Nutrition
+
+World Development Vol. 45, pp. 17–30, 2013
+Ó 2013 Elsevier Ltd. All rights reserved.
+0305-750X/$ - see front matter
+
+in Rural Senegal
+
+AURE´ LIA LE´ PINE
+
+University of Otago, Dunedin, New Zealand
+
+and
+
+ERIC STROBL *
+
+Ecole Polytechnique, Paris, France
+Ipag Research Lab, Paris, France
+
+Summary. — We examine how women’s bargaining power aﬀects child nutritional status using data from rural Senegal. In order to cor-
+rect for the potential endogeneity of women’s bargaining power we use information on a mother’s ethnicity relative to that of the com-
+munity she resides in order to construct an arguably exogenous exclusion restriction. While standard OLS estimates suggest that if a
+mother has more bargaining power, her children will have a better nutritional status, our IV estimates indicate that the true impact
+is underestimated if the endogeneity of bargaining power is not taken into account.
+Ó 2013 Elsevier Ltd. All rights reserved.
+
+Key words — woman’s bargaining power, child nutrition, instrumental variable, Senegal, Africa
+
+1. INTRODUCTION
+
+Since the Beijing conference on women in 1995 the increase
+in women’s relative to men’s power in the household, usually
+known as women’s bargaining power, has become a primary
+policy goal in developing countries. This willingness to em-
+power women in developing countries is based on the idea that
+social justice is an important aspect of human welfare and has
+been reinforced by the ﬁnding that an increase in women’s
+power relative to men’s confers beneﬁts on child health
+(Ahmed, 2006; Duﬂo, 2003; Hoddinott & Haddad, 1991;
+Lundberg, Pollak, & Wales, 1997; Maitra, 2004; Quisumbing
+& Maluccio, 2000; Thomas, Contreras, & Frankenberg,
+1999). Such a link is generally explained by several factors.
+First, as stated in Smith, Ramakrishnan, Ndiaye, Haddad,
+and Martorell (2003), women are the main caretakers of chil-
+dren, and the quality of caring practices for children is one of
+the three key determinants of their nutritional status, the other
+two being household food security and health environment.
+Women’s power to make decisions in this domain thus has a
+direct impact on child nutrition. Second, women’s power has
+an indirect eﬀect because it inﬂuences women’s own health
+and nutritional status, both of which are vital for proper care
+for children and, during pregnancy,
+for children’s birth
+weights. A third explanation that is valid in the absence of in-
+come pooling relies on the fact that men and women have dis-
+tinct income allocations: men tend to use a larger proportion
+of income for production, household maintenance, social
+investment and personal consumption, while women’s income
+is used more to meet daily consumption, such as food, cloth-
+ing, and health care (Blumberg, 1989; Lele, 1986).
+
+Although, there is now a large literature indicating a positive
+eﬀect of women’s bargaining power on child nutrition, much
+of the existing studies suﬀer from two potentially important
+weaknesses. Firstly, many studies rely on very indirect proxies
+of female bargaining power. Indeed, an accurate measure of
+
+women’s bargaining power is diﬃcult to obtain because of
+its context-speciﬁcity, multidimensionality, and the diﬃculty
+in measuring a “process” (Malhotra, Schuler, & Boender,
+2002, Section 2). In this regard, commonly used proxies have
+ranged from measures of woman’s economic possessions, such
+as earned (Browning, Bourguignon, Chiappori, & Lechene,
+1994) or unearned income (Schultz, 1990; Thomas, 1990),
+inheritance (Quisumbing, 1994), assets brought into the mar-
+riage (Thomas et al., 1999), and current assets (Quisumbing
+& De La Briere, 2000). However, such measures are also likely
+to capture other aspects of a household. For example,
+earned income inherently also reﬂects labor supply decisions
+(Lundberg & Pollak, 1996), while unearned income, such as
+pensions, unemployment insurance, or interest on earnings
+accumulated over the life cycle, is most likely related to past
+or present household behavior (Behrman, 1997; Lundberg &
+Pollak, 1996) and may depend on tastes and labor market
+conditions (Quisumbing & Maluccio, 2000). Moreover, asset
+ownership might be correlated with other household choices,
+for instance, traditional households could at the same time
+prevent women from owning assets and have less healthy
+children (Behrman, Pollak, & Taubman, 1995 cited in;
+Duﬂo, 2003). Finally, in the presence of assortative matching,
+a woman’s asset level could aﬀect child health through her
+spouse’s characteristics (Duﬂo, 2003). For these reasons,
+more recent studies (Ahmed, 2006; Allendorf, 2007; Becker,
+
+* Data collection was supported by the Microinsurance Innovation Faci-
+lity of the International Labour Organization (Grant No. PO40052422).
+We thank David Fielding, Murat Gencß, and Alexis Le Nestour from the
+University of Otago as well as the three anonymous reviewers from World
+Development for their excellent comments and suggestions. We also thank
+Robert Johnston from UNICEF for providing the MUAC bracelets as
+well as information on their use. Final revision accepted: December 19,
+2012.
+
+17
+
+18
+
+WORLD DEVELOPMENT
+
+Fonseca-Becker, & Schenck-Yglesias, 2006; Elder & Rudolph,
+2003; Friedberg & Webb, 2006; Hindin, 2000; Mullany,
+Hindin, & Becker, 2005; Woldemicael, 2010) have relied on
+“direct evidence of power” indicators (Kishor, 2000) that
+capture the nature of decision-making or control of resources
+by each spouse in the household. However, even when the re-
+searcher uses such direct proxies, there might be measurement
+error in women’s bargaining power that could result in an
+attenuation bias. For instance, an important issue in correctly
+measuring women’s bargaining power might be whether the
+husband of a nonpowerful woman was present during the
+interview and biased the responses of the woman.
+
+The second major weakness in much of the existing literature is
+the failure to take account of the potential endogeneity of women’s
+bargaining power in econometrically estimating its eﬀect on child
+health. More speciﬁcally, even in the case where direct measures
+of women’s power in the household are available, these are likely
+to be correlated with other unobservable (to the econometrician)
+variables that aﬀect child health, and hence estimates of its eﬀect
+may be biased. Of particular concern in this regard is unobserved
+parenting ability of the spouses. For instance, one could argue that
+women who have a greater bargaining power are likely to have bet-
+ter intrinsic characteristics since they managed to achieve a greater
+power in the household thanks to their good maternal skills, but that
+these characteristics also result in greater health in their children. In
+contrast, one could argue that in countries where social norms dic-
+tate that males are the guarantors of the well being of the household
+members and in this respect, are expected to make decisions for their
+members, women who have a high bargaining power are more likely
+to belong to deviant households. Indeed, a woman could have a
+greater bargaining power as a result of the disengagement of
+her husband in household’s decisions, that is, when the husband
+does not invest his money and time toward his wife and his chil-
+dren. In this situation we would observe that women who have
+greater bargaining power have children who do worse. Thus the
+endogeneity bias could, depending on the context, lead to an
+over- or an under-estimation of the eﬀect of women’s bargaining
+power on child nutrition. To the best of our knowledge this issue
+has as of yet not been speciﬁcally examined.
+
+In this paper we address these measurement and estimation
+concerns using the case study of Senegal. The choice of Senegal
+is motivated by a number of reasons. Firstly, chronic malnutri-
+tion (stunting) and acute malnutrition (wasting) aﬀects 16% and
+8% of the children under-5 and cause 31% of all deaths that oc-
+cur among children under-5 (Demographic and Health Survey,
+2006). Secondly, average Senegalese women’s relative decision-
+making power is among the lowest in the world, well below the
+South Asian average (Smith et al., 2003).
+
+Our data set consists of a rich sample of 505 farming house-
+holds located in the Saint Louis region of Senegal. These data
+allow us to ﬁrstly, as do some of the more recent studies, focus
+on direct measures of female power as speciﬁcally incorporated
+in the questionnaire as shown in Appendix 1. To control for the
+potential endogeneity of our bargaining power measure, we
+take advantage of the fact that for historical reasons, women
+of diﬀerent ethnicities have diﬀerent bargaining power inside
+the household and that the extent of this may depend on the eth-
+nicity of the neighborhood that they are living in, but that rela-
+tive ethnicity, as we shall argue, is not directly related to
+children’s nutritional status. Our econometric results indicate
+that women’s bargaining power is a strong determinant of child
+nutrition. An increase in one standard deviation of the women’s
+bargaining power index improves the child Mid-Upper Arm
+Circumference (MUAC) z-score by 0.81 standard deviations
+after controlling for the endogeneity of women’s bargaining
+power.
+
+The remainder of the paper is organized as follows. In the
+following section we outline our theoretical framework. The
+third section describes the Senegalese background, our data
+and the construction of variables used in our estimation. In
+Section 4, we outline our empirical speciﬁcation and describe
+the econometric results of its estimation. Finally, concluding
+remarks are contained in the last section.
+
+2. THEORETICAL FRAMEWORK
+
+In order to demonstrate the potential importance of control-
+ling for the endogeneity of bargaining power in estimating its
+impact on child nutrition, we adapt to our context the non-
+uniﬁed preferences framework that determines the eﬀect of a
+mother’s bargaining power on child health as proposed by
+Maitra (2004). Accordingly, changes in child health result
+not only from a change in the budget constraint but also from
+changes in the utility function due to relative changes in power
+inside the household. It is assumed that parents i.e. the
+mother(m) and the father(f) make decisions regarding the
+quality of child health attainment. More speciﬁcally, consider
+a general household’s utility maximization problem where the
+two parents choose commodities purchased on the market (X)
+and non-market goods (Z) to maximize the diﬀerence between
+their utility level U and their reserve utility, (U*), the latter of
+which represents the utility of each parent outside the union.
+We assume that this reserve utility depends on factors that af-
+fect bargaining power inside the union (u), and here for con-
+venience sake deﬁned as the relative bargaining power of the
+mother. The bargaining power itself depends on each spouse’s
+characteristics (An = m, f), such as his/her ability on the labor
+market
+(productivity, occupation, educational attainment,
+etc.), his/her social status, the wife’s rank in the household
+in the context of polygamy, extra-household environmental
+factors (E) that include marriage market characteristics, laws
+(e.g., labor laws, property rights, and divorce law), and social
+norms in the neighborhood, and a vector of prices (p) that is
+assumed to proxy the prices in the area mainly the prices of
+medical services and food. We also assume that bargaining
+power may be inﬂuenced by other potentially unobserved
+parental characteristics such as parenting ability, cn = m, f.
+In this regard one might be inclined to expect that mothers
+who have better intrinsic characteristics may be able to have
+greater power as husbands may feel less urgency to interfere
+in the child’s upbringing. However, in the Senegalese context
+this is a priori not necessarily true since “women should be
+submissive to male authority” (Sow, 1996). 1 Deviant, more
+independent behavior on the part of the mother may thus be
+associated with more bargaining power. Similarly, it might
+be that household heads who do not seriously take their
+socially expected role as guarantor of the well-being of the
+household may also allow greater power to the woman. In
+this case we would observe that children in those households
+would have poorer access to food, poorer care, and a worse
+health environment. Thus, a priori, the relationship between
+good/bad parenting ability and bargaining power is not clear.
+
+The two parents choose to maximize:
+
+Max V ¼ ½U fðX ; ZÞ   U
+
+fðAf ; E; p; cfÞ  ½U mðX ; ZÞ
+
+  U
+
+mðAm; E; p; cmÞ
+
+ð1Þ
+Subject to the full
+income constraint pX = wmTm + wfTf,
+where wn is the wage rate and Tn is the time endowment for
+parent n. As a solution to this maximization problem, one ob-
+tains a reduced form demand equation for child health (H),
+
+THE EFFECT OF WOMEN’S BARGAINING POWER ON CHILD NUTRITION IN RURAL SENEGAL
+
+19
+
+which depends on prices (p), the household eﬃciency param-
+eter (X), unobserved parenting ability of the spouses, cn, and
+the factors determining bargaining power:
+H ¼ HðAn; E; p; cn; XÞ
+ð2Þ
+Or alternatively, if one has some proxy of bargaining power:
+H ¼ Hðp; cn; X; uÞ
+ð3Þ
+Note that we continue to allow for a direct eﬀect of parenting
+ability on child health, not just through bargaining power. If
+we also assume that child health may depend on exogenous
+child characteristics (I), household and parental characteristics
+(P), and community characteristics (S), then (3) can be rewrit-
+ten as:
+H ¼ Hðp; cn; X; u; I; P ; SÞ
+ð4Þ
+The important stumbling block in terms of estimating the true
+causal eﬀect of bargaining power on child health from (4) is
+the role of unobserved parenting ability, cn, which, as we as-
+sume, determines the bargaining power of the woman as well
+as child health. As noted earlier,
+if greater female ability
+means that the husband allows her greater power, then one
+would expect an upward bias in terms of the estimated eﬀect
+of female bargaining power. However, if husbands who do
+not feel the pressure of being the dominant person in the
+household also feel less obligation toward maintaining child’s
+health, then one would expect a downward bias in terms of the
+estimated eﬀect of female bargaining power. Thus this is an is-
+sue to be resolved empirically.
+
+3. DATA, VARIABLES, AND DESCRIPTIVE
+
+STATISTICS
+
+(a) Background
+
+Senegal is a West African country with a population of
+approximately 12 million of which 7 million live in rural areas.
+According to the Demographic and Health Survey conducted
+in 2005, child malnutrition appears to be a major health con-
+cern as 16% of the children under-5 are stunted, 8% are
+wasted, and 17% are underweight (Demographic & Health
+Survey, 2006). The traditional Senegalese family is made of
+a household head, his wives, and the children of his wives.
+In the sample, 11.1% of the individuals are household heads
+and 13% are household head spouses. About half of the sam-
+ple is made up of children of the head of the household and
+among these 2123 children, 745 are less than 5 years old.
+Members who are not genetically aﬃliated to the household
+can also be household members; it is the case of the fostered
+children who represent 1.3% of the sample.
+
+In the sample, 32% of married women have a co-wife.
+Polygamy is socially organized in Senegal in order to reduce
+
+conﬂicts and tensions within the household. In rural areas,
+co-wives live under the same concession, but are autonomous
+as each wife and her children have a space in the concession
+called “ro` q” in Wolof. Each household is thus made up of sev-
+eral wife–children nucleus and in order to reconstitute the
+wife–children nucleus, children were matched to their mother.
+Ro`q includes a personal kitchen and a small land area that is
+used to cultivate food for breakfast. Co-wives however main-
+tain social interactions; they eat together, do collective chores
+and they keep company (Diop, 1985). The population in the
+sample is divided into two main ethnic groups: 57% are Wolof,
+40% are Fula while only 2% are Moorish. Fula people are
+over-represented in the sample since they represent only 17%
+of the population in Senegal while 40% of Senegalese are Wo-
+lof. Wolof mainly live in the western part of Senegal, they are
+mostly farmers who grow rice, millet, and groundnuts. Fula
+are found essentially in Eastern Senegal; they are by tradition
+pastoral nomads but many Fula have now settled permanently
+in rural areas and live on agriculture. All of these ethnicities
+are Muslim and most of the Muslims (96%) belong to the Tij-
+anyyah Muslim brotherhood in the sample. Figure 1 shows
+evidence that women’s decision-power in Senegal is particu-
+larly low, since all the decisions except food based decisions
+are commonly made by the husband alone, even those related
+to wife outcomes.
+
+(b) Data
+
+We collected data within the context of the implementation of
+a health insurance project
+targeting farming households.
+Thanks to the presence of the Senegal River allowing the prac-
+tice of irrigated agriculture, a large share of the population lo-
+cated in the Saint Louis region lives on agriculture. Our study
+was conducted in Ross Be´thio, Gae¨, and Gue´de´, that is, three
+rural communities of the Saint-Louis region. Most of the
+110,000 inhabitants of these rural communities derive their live-
+lihoods from subsistence farming, with an annual adult equiva-
+lent 2 median household consumption expenditure of 848 USD,
+of which on average 3.9% is spent on health. Note that in this area
+18% of the children under-5 are mildly wasted (z-score <  1)
+and 4% are moderately wasted (z-score <  2). The low malnu-
+trition rate in the Saint Louis region has been highlighted in the
+Enqueˆte Se´ne´galaise Aupre`s des Me´nages (Ministry of Econ-
+omy, 2004) and may be explained by the lower poverty rate in
+the Saint Louis region (Dramani, 2011). However, the ﬁnding
+that women’s power is extremely low in Senegal may not vary
+much between regions. Indeed, cultural factors determining
+the low women’s power such as the prevalence of Muslims
+and polygamy remain high and constant between and within
+Senegalese regions. In order to know how ﬁndings could be ex-
+tended to regions with diﬀerent levels of malnutrition, the paper
+looks if the eﬀect of women’s bargaining power on nutrition is
+linear within the distribution of children under-5.
+
+Figure 1. Decision-power within the household (n = 837 married women).
+
+20
+
+WORLD DEVELOPMENT
+
+The survey was carried out during May and June 2009, at
+the end of the dry and warm agricultural season. Note that
+in the survey area, nutritional situation appears to vary
+depending on the season and is found to deteriorate during
+the rainy season (Beneﬁce, Chevassus-Agnes, & Barral,
+1984). Given that there are seasonal diﬀerences in anthropo-
+metric indicators and that our study focuses on the dry season
+that lasts 9–10 months, our results may not be extendable to
+the rainy season. The survey targeted rural households, who
+live on agriculture and belong to a farmer organization; a local
+grassroots organization managed by an elected farmer. Farms
+are owned and run by families and most of the farmers in
+Senegal belong to a farmer organization, which appears to
+be a very important social structure in Senegal (DeJanvry &
+Sadoulet, 2004). Farmer organizations aim to furnish techni-
+cal assistance to farmers, help in the management of collective
+goods (rough grazing, water), help with training and informa-
+tion transmission, are involved in external representation and
+in the defence of the interest of their members, in this sense
+they act as labor unions. But most importantly, farmer
+organizations provide insurance and social cohesion to their
+members
+the Senegalese Agricultural Development
+Bank (CNCAS) only allocates collective loans to ﬁnance agri-
+cultural inputs to farmer organizations’ members. To sample
+the 505 households, 3 a two-stage stratiﬁed sampling proce-
+dure was used, where ﬁrst 93 farmer organizations using the
+Probability-Proportional-to-Size (PPS) method were ran-
+domly selected and second households were randomly selected
+from the farmer organization, which ensures that each house-
+hold has the same probability of inclusion in the sample. All
+the children under-5 of the households sampled are included
+in the analysis.
+
+since
+
+(c) Dependent variable (H)
+
+We measure child nutritional status by the MUAC that is
+the circumference of the left upper arm, measured at the
+mid-point between the tip of the shoulder and the tip of the
+elbow. Note that we received MUAC brassards as well as
+information on their use and on standardization methods
+from a Nutrition specialist of the UNICEF and this informa-
+tion was communicated to interviewers through training ses-
+sions. The MUAC is expressed in terms of z-scores from
+international references curves developed by the WHO/
+NCHS, 4 and is computed using the LSM method 5 since
+anthropometric indicators are found to have a right-skewed
+distribution (Kuczmarski et al., 2000). One may want to note
+that the MUAC z-score based indicator, which adjusts for age
+and sex, is arguably preferable over a single cut-oﬀ value for
+several reasons. Firstly, the use of a ﬁxed cut-oﬀ may result
+in wasting being over-diagnosed among young children and
+under-diagnosed among older children (Briend, Wojtyniak,
+& Rowland, 1987; Hall, Chowdhury, & Bloem, 1993). Sec-
+ondly, a single cut-oﬀ point for boys and girls may not be
+appropriate since there is a diﬀerence between their MUAC
+z-scores in WHO reference curves. Finally, there is still a de-
+bate on the appropriate cut-oﬀ points. More precisely, while
+moderate wasting is commonly deﬁned as a ﬁxed cut-oﬀ point
+of 12.5 cm and severe wasting is ﬁxed at 11.5 cm (World
+Health Organization, 2009), the cut-oﬀ points may, however,
+change since they are generally calculated with respect to the
+mortality probability or in relation to another wasting indica-
+tor (generally, the weight-for-height indicator). One may also
+want to note that the MUAC indicator is often preferred to
+the weight-for-height indicator in nonemergency situations
+(Berkley et al., 2005; Briend et al., 1987; Chen, Chowdhury,
+
+& Huﬀman, 1980; Trowbridge & Sommer, 1981; Van den
+Broeck, Eeckels, & Massa, 1996) since it has been found to
+be a better predictor of child mortality in developing countries
+(Bairagi, 1981; Briend & Zimicki, 1986; De Onis, Yip, & Mei,
+1997).
+
+(d) Measure of women’s bargaining power (uf)
+
+The data set includes several questions that aim to measure
+women’s bargaining power; details of which are presented in
+Appendix 1. Broadly these ascertain who makes decisions con-
+cerning the wife’s health, the children’s health, the schooling of
+the children, daily expenditures,
+large expenditures, food
+cooked, visits to the wife’s relatives, and whether the wife
+can go out without the permission of her husband. Based on
+this set of questions, we constructed a direct multidimensional
+measure via Multiple Correspondence Analysis (MCA) by
+using the Burt matrix approach on four categorical variables
+describing who made the decision (the woman alone, her hus-
+band alone, or both spouses). More speciﬁcally, MCA indi-
+cated that questions concerning the woman’s labor status
+and decision-making regarding the health of the respondent,
+the visits to the respondent’s relatives, and the ability to leave
+the house without permission (Q1, Q4, Q10, and Q11 in
+Appendix 1) best captured common features across the set
+of questions. Indeed, this may be explained by the fact that
+the bargaining power of the respondent would be very low if
+she cannot decide on outcomes that directly aﬀect her well-
+being.
+
+Weights and contribution of the diﬀerent variables included
+in the MCA are presented in Appendix 2. The constructed
+summary variable Multidim_wom provides our base indicator
+of women’s bargaining power, although we also experiment
+with other indicators in order to check the robustness of the
+results.
+
+(e) Child characteristics (I)
+
+In Sub-Saharan African countries it has been found that
+young boys are more likely to suﬀer from malnutrition than
+young girls (Svedberg, 1990; Wamani, Astrom, Peterson,
+Tumwine, & Tylleskar, 2007), while the opposite is found in
+South Asia because of the high discrimination against girls
+(Gupta, 1987), and we thus include a gender dummy in our
+analysis. We also control for child’s age. Child rank or birth
+order has also been discovered to aﬀect child health in that
+it can determine the amount of resources allocated relative
+to siblings (Gupta, 1990). However, since children with a high
+rank necessarily belong to larger households, one needs to
+purge family size eﬀects from any measure of birth order.
+The method employed here to determine the relative rank of
+the child among siblings follows Booth and Kee (2009) and
+consists of dividing the birth order by the average birth order.
+Importantly, the consideration of gender in addition to the
+birth order eﬀect can bring additional information on parental
+preferences. For instance, Pande (2003) showed that in India
+the preference for sons explains why girls born after multiple
+daughters are more likely to be severely undernourished and
+less immunized, while boys who were born after multiple
+daughters have signiﬁcantly better health outcomes. To con-
+trol for the gender of siblings, we thus include the number
+of brothers and sisters. Since the number of brothers and sis-
+ters is added at the child level, the number of other individuals
+in the household also needs to be included in order to take ac-
+count of total household size. One might also expect that chil-
+dren who are not the children of the head of household will
+
+THE EFFECT OF WOMEN’S BARGAINING POWER ON CHILD NUTRITION IN RURAL SENEGAL
+
+21
+
+receive fewer resources, so a binary variable is included to con-
+trol for this. Finally, we also control for the health insurance
+status of the children. Note that this variable is not a choice
+variable since 89% of the children who have a health insurance
+are covered by a compulsory scheme because one of their par-
+ents is working in the formal sector.
+
+(f) Household and parental characteristics (P)
+
+In terms of household characteristics, given its well estab-
+lished relationship with child nutrition, income is captured
+through the logarithm of monthly total household expenditure
+expressed in adult equivalents. Since the method to collect
+household expenditure data may aﬀect household expenditure
+level (Beegle, De Weerdt, Friedman, and Gibson, 2012), one
+has to consider several elements when computing household
+expenditures. Firstly, concerning the recall period, household
+expenditures were computed by using a 30 day recall period
+since we assume that memory lapse is more likely to be an is-
+sue than telescoping bias. Note that when no expenditure was
+spent the month prior to the survey, the question on expendi-
+ture level was asked in reference to the last 12 months. Sec-
+ondly, concerning the items
+included in the household
+expenditure index we followed the recommendations of Dea-
+ton and Zaidi (1999) who suggest excluding lumpy expendi-
+tures and nonfood expenditures that do not contribute to
+household wealth and deﬁned as regrettable necessities (e.g.,
+health expenditure) in order to consider consumption in refer-
+ence to a “usual month.” Since farming households were self-
+employed, consumption expenditure also includes the value of
+home-produced food. Regarding nonfood items, the index in-
+cludes the amount spent on clothing, transports, communica-
+tion, energy, and education as well as remittances. Finally, the
+expenditure index was deﬂated by the household size and
+household composition (Deaton & Zaidi, 1999). The relative
+cost of a child relative to that of an adult was set at 0.3 and
+the extent of economies of scale at 0.8. 6
+
+Rather than using a socio-economic index that may capture
+both income and housing quality simultaneously, we instead
+control for income and housing quality directly. We use a
+summary variable Housing for the latter as created by using
+a factor analysis based on household characteristics (access
+to electricity, the type of sanitary facilities, and the type of en-
+ergy used for cooking). One may want to note that the corre-
+lation between the income and housing variable is low
+(coeﬃcient correlation = 0.06), so the two variables are likely
+to capture diﬀerent things and can be included together. In or-
+der to control for the preference for health of the household,
+the percentage of monthly health expenditure in total monthly
+expenditure is also added as a control. We expect that children
+in households who allocate a higher proportion of their budget
+toward health will be more likely to have a greater MUAC
+z-score.
+
+In terms of parental characteristics, spouses’ age, spouses’
+education, and the rank of the mother among other wives
+are likely to matter. More speciﬁcally, spouses’ age can posi-
+tively inﬂuence child health status as experience and informa-
+tion may be lacking among youngest parents. But the eﬀect of
+age on child nutrition may also depend on the assumption that
+parents may rely on their children for old age support and we
+do not know if younger or older parents may have a stronger
+utility in relying on their children for old age support.
+
+The eﬀect of parent’s education is also undetermined a
+priori. In some papers, women’s education is found to aﬀect
+positively child nutrition (Wamani, Tylleskar, Astrom,
+Tumwine, & Peterson, 2004) through the use of preventive
+
+and curative modern health care (Glewwe, 1999) and the bet-
+ter use of information received by reading newspapers, listen-
+ing to a radio, or watching TV (Thomas, Strauss, &
+Henriques, 1991). Nevertheless, since education is also a proxy
+of the socio-economic status and geographical location of the
+household, it is hard to conclude that there is a causality link
+between educational attainment and child health (Desai &
+Alva, 1998). Indeed, economic improvement associated with
+education, such as the use of drinkable water, latrine facility,
+and housing quality, aﬀects child health. There could also be
+a heterogeneous eﬀect of parent’s education on child nutrition
+depending on the child’s sex (Thomas, 1994). To capture edu-
+cational attainment of the mother and father, we include a cat-
+egorical variable of their ability to write a letter.
+
+In the area of the survey divorce and separation are extre-
+mely rare, that is, only 1% of the sample is divorced or sepa-
+rated. In contrast, polygamy is fairly common, where 32% of
+married women are in a polygamous union in our data. As
+a matter of fact, Senegal has the second highest rate of polyg-
+amy in Western Africa after Guinea (Dalton & Leung, 2011)
+and most polygamous males follow the Islamic and legal rules
+that limit the number of wives to four. It is suspected that re-
+sources might be scarcer when the child lives under a polyga-
+mous union, although it is not clear in the literature if they do
+better than those in monogamous unions. For instance,
+Gibson and Mace (2007) found in Southern Ethiopia that chil-
+dren of the ﬁrst wives in polygamous unions have a better
+nutritional status than those in monogamous unions and ex-
+plain this by the possibility that older wives may beneﬁt from
+polygamy by “exploiting junior co-wives or experiencing a
+long period of monogamy with a high status male, conse-
+quently maximize both oﬀspring quality and quantity.”
+Amankwaa (1996, 2001) also found that polygamy enhanced
+child survivorship through longer breastfeeding patterns, in-
+ter-birth interval, and co-wives’ cooperation. In contrast, in
+Ghana Gyimah (2003) discovered that children in polygamous
+unions were more likely to have diarrhea than their monoga-
+mous counterparts. Strassmann (1997) found among Dogon
+in Mali that the odds of childhood deaths were 7–11 times
+higher in groups with polygamy and suggests that this may
+be due to lower paternal investment toward each child when
+the number of children increases. Similar conclusions were
+found by Gyimah (2009), Gage, Sommerfelt, and Piani
+(1997), Ntozi and Nakanaabi (1997) and Brahmbhatt et al.
+(2002).
+
+The eﬀect of a wife’s rank on child outcome also remains
+inconclusive in the literature. With regard to the context of
+polygamous unions, some studies claim that there is equality
+in treatment between wives (Mulder, 1989), while others found
+that senior wives receive higher contributions than junior
+wives (Gibson & Mace, 2007; Munro, Kebede, Tarazona-
+Gomez, & Verschoor, 2010). In Senegal, ﬁrst wives and last
+wives have speciﬁc roles in the household. First wives are rec-
+ognized to have a higher social status than other wives, where
+their role is to serve as an example to other wives. Although
+there is a diﬀerence in status and role between ﬁrst and other
+wives, there should not be any diﬀerence in treatment in Mus-
+lim societies. Nonetheless, we want to allow for the possibility
+that, ﬁrst, children under polygamous unions are treated dif-
+ferently than children under monogamous unions and, second,
+if under polygamous unions they are treated diﬀerently
+depending on their mother’s rank. In the sample, only two
+children are the children of a middle wife, which is due to
+the fact that the percentage of children under-5 who have a
+father married to three wives is very low. Since the middle
+and last wives both joined a polygamous union, the middle
+
+22
+
+WORLD DEVELOPMENT
+
+wives’ children are considered as last wives’ children. The var-
+iable Rank of the wife is coded 0 for children whose mother is
+in a monogamous union (reference category), 1 for children
+whose mother entered a monogamous marriage but became
+a ﬁrst wife when her spouse remarried an additional wife,
+and 2 for children whose mother is the last wife. There are nev-
+ertheless 9% of the children who cannot enter in any of the
+previous categories since they belong to households whose
+male head has no wife, either because the head is a woman
+or because the children are not the children of the head. 7
+For this reason, the variable rank of the wife will be coded
+ 1 for such children. 8 The rank of the wife is entered at the
+child level, where in our sample 9% of the children have a
+mother who is the ﬁrst wife and 13% are the children of the
+last wife. Finally, 69% of the children live under a monoga-
+mous union. To control for the fact that women might be
+more autonomous when the husband does not live in the
+household; the sex of the household head was also added as
+a control variable.
+
+(g) Extra-household environmental factors, community
+
+characteristics, household eﬃciency, and prices (E, S, X, p)
+
+In order to control
+
+for extra-household environmental
+factors and community characteristics we include a set of 16
+community dummies controlling for extra-household environ-
+mental factors that vary across communities. For relevant
+prices, such as the price of food and medical services, we as-
+sume, which seems reasonable given that all our surveyed
+community lie within the same geographical area that these
+are homogenous and are captured by the constant. Finally,
+we make the assumption that household eﬃciency does also
+not diﬀer across households in our survey so that this is simi-
+larly captured by the intercept. 9
+
+(h) Final sample
+
+The dataset consists of information on 742 children aged be-
+tween 91 and 1856 days. 10 Among these, 641 were measured,
+where the loss is commonly due to an error from the inter-
+viewer. More precisely, only rarely were there missing cases
+
+due to the absence of the mother’s consent to measure her chil-
+dren either because she refused, she was absent, or the absence
+of the child on the day of the interview. Among the 641 chil-
+dren, 591 were matched to their mother, where missing values
+are due to the absence of the mother either because the mother
+was dead or because the child was not the child of the head of
+household (e.g., foster children). Finally, of the remaining
+sample the mother’s bargaining power information was non-
+missing for 578 children. Descriptive statistics of our variables
+are provided in Table 1. Descriptive statistics indicate that on
+average in the sample, 18% are mildly wasted (z-score <  1)
+and 4% are moderately wasted (z-score <  2). The minimum
+MUAC z-score is  5.6 standard deviations and the maximum
++4 standard deviations.
+
+4. ESTIMATION
+
+(a) Empirical model
+
+Following Eqn. (4), child health is assumed to depend on:
+ð5Þ
+ijkl ¼ b0 þ b1umkl þ b2P jkl þ b3I ijkl þ b4V l þ eijkl
+H
+where H is the nutritional status of child i of parent j in family
+k in community l measured by the MUAC z-score. u is a mea-
+sure of the endogenous bargaining power of the mother, P is a
+vector of parental and household’s characteristics, I is a vector
+of child’s characteristics, V is a set of dummy variables meant
+to capture community characteristics, b0 is a constant across
+all observations capturing, among other common factors,
+prices, household eﬃciency, and e is a standard error term.
+The error term is assumed to be uncorrelated with all regres-
+sors except u, which leads to an inconsistent estimator of b1.
+For instance, a high women’s bargaining power could be asso-
+ciated with a positive health context for the child if mothers
+with better intrinsic characteristics are found to be more
+powerful. In this case, there will be a positive bias in the esti-
+mated b1 and regression estimates will overstate the positive
+eﬀect of women’s bargaining power on child nutrition. On
+the contrary, if it is assumed that “neglected wives” are more
+autonomous, a high bargaining power would be associated
+
+Table 1. Descriptive statistics on sample of children with nonmissing information on malnutrition and matched to their mother
+
+Variables
+
+Obs.
+
+Mean and proportion
+
+Standard deviation
+
+MUAC z-score
+Women’s bargaining power
+Child’s age (in years)
+Child’s sex (reference: boys)
+Son of head of household (HH)
+Relative rank of the child among siblings
+Number of brothers
+Number of sisters
+Health insurance status
+Number of other individuals
+Sex of HH (reference: male)
+Mother rank =  1 (Reference: Monogamy)
+Mother rank = 1 (ﬁrst wife)
+Mother rank =2 (last wife)
+Mother’s age (in years)
+Mother’s literacy
+Father’s age (in years)
+Father’s literacy
+Share health in expenditure
+Log of total expenditure
+Housing quality
+
+578
+578
+578
+578
+578
+578
+578
+578
+575
+578
+578
+578
+578
+578
+578
+578
+578
+577
+576
+578
+578
+
+0.09
+ 0.127
+2.536
+0.481
+0.649
+1.34
+1.952
+1.817
+0.064
+7.204
+0.069
+0.095
+0.087
+0.125
+32.026
+0.249
+49.615
+0.246
+0.065
+4.302
+0.088
+
+1.273
+0.979
+1.386
+0.5
+0.478
+0.324
+1.454
+1.316
+0.246
+4.099
+0.254
+0.294
+0.281
+0.331
+7.287
+0.433
+12.638
+0.431
+0.086
+0.436
+0.961
+
+Min
+ 5.661
+ 1.499
+0.25
+0
+0
+0.4
+0
+0
+0
+2
+0
+0
+0
+0
+16
+0
+24
+0
+0
+3.063
+ 5.322
+
+Max
+
+4.048
+1.687
+5.085
+1
+1
+1.8
+7
+6
+1
+17
+1
+1
+1
+1
+51
+1
+87
+1
+0.75
+5.823
+2.937
+
+THE EFFECT OF WOMEN’S BARGAINING POWER ON CHILD NUTRITION IN RURAL SENEGAL
+
+23
+
+with a negative context for child nutrition and regression
+estimates will underestimate the positive eﬀect of women’s
+bargaining power on child nutrition.
+
+To obtain a consistent estimator, we assume the existence of
+an Instrumental Variable (IV) z that ﬁrstly, satisﬁes the
+assumption that Cov(zmkl , eijkl) = 0, so that the IV is uncor-
+related with the error term. The second requirement involves
+the relationship between the IV and the endogenous variable:
+umkl ¼ d0 þ d1P jkl þ d2I ijkl þ d3V l þ h1zmkl þ rijkl
+ð6Þ
+– 0, suggesting that the IV is partially correlated
+where h1
+with the endogenous variable once the exogenous variables
+have been considered. Thus, the instrument z needs to be
+strongly correlated with female bargaining power once the
+explanatory variables have been included, but uncorrelated
+with other unobservable factors captured in the child health
+error term.
+
+Our construction of a plausible instrumental variable relates
+to the role of ethnicity of the mother of the child in terms of
+her bargaining power. More speciﬁcally, diﬀerent ethnic
+groups may have diﬀerent social norms that will inﬂuence
+threat points in intra-household bargaining (McElroy, 1990).
+For example, women from diﬀerent ethnic groups of Burkina
+Faso are found to have diﬀerent labor allocations and to re-
+ceive diﬀerent resources for health from their spouse depend-
+ing on their bargaining power (Kevane & Wydick, 2001;
+Nikie`ma, Haddad, & Potvin, 2008). In the Senegalese context,
+we take advantage of the fact that generally Tukulor Fula wo-
+men are less autonomous than Wolof women because of his-
+torical reasons. That is, Wolof women have always played
+an important political role since their society relies on a matri-
+lineal political system, and this dates back to the pre-colonial
+period (Diouf, 1990). In contrast, Fula societies, which were
+Islamized before Wolof, have been characterized by a patrilin-
+eal political system in which women do not play any role (Syl-
+la, 2001). As highlighted in the Ethnographic Atlas of
+Murdock (1967), in contrast to the Wolof, Tukulor Fula do
+not have any matrilineal kin group as they always belong to
+the father’s lineage.
+
+In this regard, however, when one regresses the variable eth-
+nicity (Fula) coded 1 if the mother of the child is Fula and 0 if
+she is Wolof on women’s bargaining power, as captured by
+our proxy variable, the sign is positive but not statistically sig-
+niﬁcant—see the ﬁrst column in Table 2. 11 However, as soon
+as we control for whether the woman lives in a community
+where her ethnicity is minority in the second column of
+Table 2, the ethnicity variable becomes signiﬁcantly negative.
+This is due to the fact that it is not the ethnicity per say that
+matters for female bargaining power, but the context in which
+this ethnicity is placed. More precisely, Fula households are
+more likely to live in a diﬀerent ethnic community (10%
+
+Table 2. Association between women’s bargaining power and the proposed
+
+instrumental variable
+
+Variables
+
+Ethnicity (Fula = 1, Wolof = 0)
+
+Ethnicity is minority in the community
+
+Relative_ethnicity
+
+R2
+
+(1)
+
+0.068
+(0.255)
+
+(2)
+ 0.419*
+(0.228)
+0.788***
+(0.257)
+
+0.237
+
+0.252
+
+(3)
+
+ 0.406*
+(0.1226)
+0. 249
+
+Observations = 446, Robust standard errors in parentheses.
+*** p < 0.01.
+**p < 0.05.
+* p < 0.1.
+
+among Fula live in a Wolof community while only 1% of
+Wolof live in a Fula community) and Fula women living in
+a Wolof community are found to have the strongest bargain-
+ing power among the women of the data set, as conﬁrmed by
+simple t-tests. One could wonder about the reason why Fula
+women who live in Wolof communities have a greater bargain-
+ing power than their Wolof counterparts. Such a ﬁnding is, for
+example, not explained by religious reasons since Wolof and
+Fula households belong to the same Muslim brotherhood
+(Tijaniyyah). Rather we think that, Fula living in a Wolof
+community are less exposed to social norms of the community
+and thus these Fula women are less likely to receive social pen-
+alties for failing to conform to the norms in the community
+than Wolof women.
+
+To capture the eﬀect of ethnicity on bargaining power
+conditional on whether the ethnicity is a minority in the
+community of residence, we constructed a variable Relative_
+ethnicity, 12 which takes the value of 1 if the mother is Fula
+and lives in a Wolof village, which is the reference category
+(5.2% of children are in this category), of 2 if the mother is
+Wolof and lives in a Wolof village (60.4%), and of 3 if the
+mother is Fula and lives in a Fula village (34.4%). The 1%
+of Wolof who lives in a Fula neighborhood is included in
+the last category since we make the assumption that the ethnic-
+ity of the community has more eﬀect on woman’s relative
+status than the ethnicity of the woman. Note that because
+inter-ethnic marriage is not common and concerns only two
+households in the sample, the ethnicity of the woman is the
+same as household ethnicity. As it can be seen from Table 2,
+this variable is a signiﬁcant predictor of women’s bargaining
+power and takes on the expected negative sign.
+
+It is important to state the underlying identifying assump-
+tion of using Relative_ethnicity as instrument z. More speciﬁ-
+cally, the identifying assumption is that there are no other
+factors correlated with our variable that we will not control
+for that are directly correlated with child nutrition. Given
+the nature of our variable, this would refer to other factors
+that are correlated with the decision to migrate as well as with
+the relative ethnicity of women, but for convenience sake we
+discuss these two factors separately.
+
+One could argue that there might be a selection bias among
+the households who live in a diﬀerent ethnic area, particularly
+if the household is a ﬁrst-generation migrant. More speciﬁ-
+cally, it seems reasonable to think that households who mi-
+grate within rural areas may have diﬀerent observable and
+unobservable characteristics that can also directly aﬀect child
+nutritional status. In the literature, it appears that rural migra-
+tions are mostly explained by marital reasons and that “among
+farm households with equal endowments of wealth, those af-
+ﬂicted with more variable proﬁts from cultivation are more
+likely to initiate arrangement conducive to income risk pooling
+that encompass greater distances, via both temporary mi-
+grants and longer-distance migration associated with mar-
+riage” (Rosenzweig & Stark, 1989). For this reason, we
+further questioned Fula households who are currently living
+in Wolof rural communities about the time and the reason
+of their migration. The most important ﬁnding was that
+migration has not occurred recently. Indeed, Fula households
+surveyed had been in the Wolof communities already for a
+long time, since their nomad descendants, coming from North
+Africa, decided to settle in Wolof areas in order to conduct
+agricultural work centuries ago. In this regard, one may also
+want to note that our data set only covers farming households
+who own agricultural land and belong to a farmer organiza-
+tion. Although in theory, land use rights in Senegal are attrib-
+uted by local land committees and thus cannot be sold or
+
+24
+
+WORLD DEVELOPMENT
+
+bequeathed (Caverivie´re, 1986), Lambert, Ravallion, and Van
+de Walle (2011) have found that among a national representa-
+tive sample of Senegalese, 48% of them reported that land was
+inherited and 71% among the sample whose father has died.
+Thus, one can be fairly conﬁdent that Fula households have
+inherited their lands many generations ago. It is then unlikely
+that the Fula households within our sample who live in Wolof
+communities have migrated any time recently and that we
+therefore need to worry about unobservable factors that af-
+fected their migration and current child nutritional status.
+
+One may also want to note that ethnicity per say could of
+course be questioned as an identifying factor if, for instance,
+ethnic background aﬀects anthropometric indicators through
+genetic predispositions. One should note that this question
+has been widely discussed in the literature, notably in order
+to know if the reference standards drawn from a sample of
+well nourished white children from developed countries could
+be applicable to children from developing countries. The fa-
+mous paper of Habicht, Martorell, Yarbrough, Malina, and
+Klein (1974) brought evidence that the diﬀerence of growth
+of preschool children of diﬀerent ethnicities were determined
+mostly by environmental rather than genetic factors.
+
+We also ran a number of supplementary regressions to pro-
+vide some evidence for the absence of a direct relationship be-
+tween child malnutrition and the instrument. More speciﬁcally
+we analyzed the eﬀect of the instrument on the main nutrition
+status determinants according to the UNICEF, that is, on
+health environment, food security, and quality of caring.
+
+In order to investigate the eﬀect of the instrument on the
+health environment, we looked at the eﬀect of the instrument
+on the likelihood of being sick the month prior to the survey
+assuming that the health environment has an impact on the dis-
+ease frequency. In the sample, 36% of the children had an illness
+the month prior to the survey, however once one controls for the
+district speciﬁc eﬀects the eﬀect of the Relative_ethnicity vari-
+able is not found to be diﬀerent from 0. We also looked at the
+eﬀect of the instrument on the access to drinking water, and
+after controlling for socio-economic characteristics and district
+ﬁxed eﬀects, the instrument was also not found to be a predictor
+of the quality of water used for drinking.
+
+Concerning the eﬀect of the instrument on the quality of car-
+ing, ethnicity could also directly aﬀect child nutritional status
+through a cultural belief system regarding infant feeding. In-
+deed food taboos, maternal attitude, and the recognition of
+a special diet for children can vary depending on the ethnicity
+and have a direct eﬀect on child nutritional status and some
+evidences of this are present in the anthropology of health lit-
+erature. In Zaria in Nigeria, for example, Jinadu, Ojofeitimi,
+and Osifor (1986) ﬁnds that 83% of the mothers never give
+meat or ﬁsh to their children since they believe that rich pro-
+tein aliments cause intestinal worm and stomach pains, while
+70% think that giving eggs to a child would make the child
+steal. In a poor area of Mali, Dettwyler (1986) found that
+when a child does not come to eat, the mother will never force
+him since she will consider he is not hungry. Mothers also be-
+lieve that a child does not need to eat solid food before 8
+months. Opposite results were found in Togo where mothers
+use the practice of infant force-feeding that has a negative ef-
+fect on child health. Among Ibo and Ewe ethnicities, children
+will probably have a better nutritional status, ceteris paribus,
+since they have special food for infants that is known to be
+of high-protein content (Cantrelle & Locoh, 1990). To the best
+of our knowledge, there are no food taboos that could diﬀer
+between Wolof and Fula ethnic groups. Male genital mutila-
+tion has a direct eﬀect on infant health as circumcision is
+found to reduce urinary tract infections but is also found to
+
+be a source of infection (Singh-Grewal, Macdessi, & Craig,
+2005). Murdock (1967) highlighted that there was no anthro-
+pological diﬀerences concerning male genital mutilations be-
+tween Wolof and Tukulor Fula men.
+
+We also analyzed the likelihood of seeking treatment from a
+qualiﬁed provider during the last illness by including the vari-
+ables presented in Table 1 as well as variables measuring sup-
+ply side aspect such as the accessibility of health facilities and
+prices and quality of medical services oﬀered in the closest pri-
+mary health care facility as modelled in Le´pine & Le Nestour
+(2013). Results indicated that the instrument was not a signif-
+icant predictor of the likelihood of visiting a qualiﬁed health
+worker during the last illness. We also investigated the eﬀect
+of the instrument on several health inputs that had a good var-
+iability in the sample. We found that the instrument was nei-
+ther a signiﬁcant predictor of
+the likelihood of being
+immunized against DCT nor of the likelihood of receiving
+assistance from a qualiﬁed health worker during delivery nor
+of the likelihood of delivering at home.
+
+In order to test for a diﬀerence in diet and food security, several
+food expenditures 13 were regressed on a set of socio-economic
+determinants (household size, nonfood expenditure amount,
+and self-consumption expenditure amount), district dummies
+and on the instrument. Results showed that the instrument was
+not a predictor of most of food expenditures, which suggests that
+the Fula living in Wolof areas and Fula and Wolof living in their
+area do not spend diﬀerent amounts of money on several food
+expenditures after accounting for household size. Thus, the
+quantity of food consumed may be similar among the house-
+holds. We also analyzed the eﬀect of the instrument on the pro-
+portion of speciﬁc food expenditures in total food expenditures
+in order to test its eﬀect on dietary quality. Following the food
+pyramid of the U.S. Department of Agriculture, we created the
+share of food recommended for frequent consumption (fresh
+fruits and vegetables), food not recommended for frequent con-
+sumption (fats and oils, desserts, and sugar) and other foods
+(grain, meat, dairy, and ﬁsh). While controlling, for household
+size, income, and location dummies, the instrument was also
+not found to be a predictor of these diﬀerent categories of food.
+Finally, the nutritional status was regressed on the endoge-
+nous bargaining power measure and its instrument. Similarly,
+the relative ethnicity is not found to be a direct determinant of
+child nutrition, but aﬀects child nutrition through bargaining
+power, since it is not signiﬁcant in explaining child nutrition
+and as well as because the coeﬃcient of the bargaining power
+variable is lower once the instrument is added as a control (see
+column 2 of Table 3), a more formal identiﬁcation test con-
+ducted later in the paper conﬁrms the instrument validity.
+Thus, there is little reason to believe that the distribution of
+well nourished under-5 children is directly aﬀected by the rel-
+ative ethnicity variable. Consequently, after controlling for
+environmental factors, there should not be any eﬀect of the rel-
+ative ethnicity on the anthropometric indicator.
+
+(b) Results
+
+In terms of estimating the eﬀect of women’s bargaining
+power on child nutrition, one should note that mothers have
+several children on average, so that, since estimates are con-
+ducted at the child level, the error term might not be indepen-
+dently and identically distributed. We thus calculate standard
+errors that are clustered by the mother in order to obtain a
+cluster–robust covariance matrix estimator.
+
+Column (1) of Table 3 ﬁrst presents the determinants of
+child nutritional status without controlling for the endogeneity
+of woman’s bargaining power using Ordinary Least Squared
+
+THE EFFECT OF WOMEN’S BARGAINING POWER ON CHILD NUTRITION IN RURAL SENEGAL
+
+25
+
+Table 3. Determinants of child nutrition
+
+Variables
+
+Multidim_wom
+Child’s age (in years)
+Child’s sex (ref: boys)
+Child of head
+Health insurance
+Relative rank of the child among siblings
+Number of brothers
+Number of sisters
+Number of other individuals
+Gender of HH (ref: male)
+Rank wife =  1 (ref: monogamy)
+First wife (ref: monogamy)
+Last wife (ref: monogamy)
+Age of mother (in years)
+Mother literacy (ref: illiterate)
+Age of father (in years)
+Father literacy (ref: illiterate)
+Log of expenditure
+Share health in expenditure
+Housing quality
+Relative_ethnicity (ref: Fula mother in Wolof community)
+Observations
+R2
+F-test of instrument in ﬁrst stage
+
+Robust standard errors in parentheses.
+* p < 0.1.
+** p < 0.05.
+*** p < 0.01.
+
+(1)
+OLS
+
+Coeﬀ.
+0.237***
+ 0.161***
+0.220**
+0.243
+0.068
+0.070
+0.056
+0.095*
+0.021
+ 0.262
+0.546
+ 0.029
+ 0.385*
+ 0.012
+0.172
+0.012*
+ 0.119
+0.409***
+1.748**
+0.052
+
+572
+0.18
+
+(2)
+OLS
+
+(3)
+2SLS
+
+SE
+
+Coeﬀ.
+0.216***
+0.065
+0.043  0.153***
+0.229**
+0.112
+0.242
+0.243
+0.232  0.009
+0.109
+0.217
+0.053
+0.055
+0.094*
+0.056
+0.020
+0.024
+0.414  0.288
+0.589
+0.363
+0.239  0.095
+0.217  0.417*
+0.012  0.010
+0.148
+0.158
+0.013**
+0.006
+0.150  0.108
+0.415***
+0.129
+1.749**
+0.779
+0.076
+0.064
+ 0.350
+565
+0.18
+
+SE
+
+Coeﬀ.
+0.806**
+
+0.064
+0.044  0.167***
+0.204*
+0.114
+0.243
+0.065
+0.237
+0.355
+0.219
+0.033
+0.053
+0.051
+0.113*
+0.057
+0.020
+0.018
+0.414  0.277
+0.362
+0.378
+0.231
+0.060
+0.213  0.253
+0.012  0.014
+0.148
+0.112
+0.006
+0.008
+0.150  0.045
+0.369**
+0.136
+1.068
+0.797
+0.078
+0.015
+0.214
+
+565
+0.04
+
+(4)
+2SLS
+
+Coeﬀ.
+
+SE
+
+0.023
+0.042
+0.302
+
+0.341
+0.047
+0.123
+0.309
+0.313  0.618**
+0.233
+0.129
+0.057
+0.006
+0.064  0.031
+0.009
+0.022
+0.510  0.019
+0.358
+0.414
+0.260  0.263
+0.243  0.278
+0.006
+0.012
+0.161
+0.078
+0.007
+0.008
+0.164  0.107
+0.078
+0.155
+1.156**
+0.922
+0.077
+0.083
+ 0.594***
+565
+0.28
+
+SE
+
+0.033
+0.081
+0.218
+0.281
+0.170
+0.049
+0.052
+0.019
+0.317
+0.253
+0.188
+0.178
+0.009
+0.112
+0.005
+0.123
+0.142
+0.487
+0.072
+0.164
+
+13.15***
+
+(OLS). As it can be seen, a unit increase in our female bargain-
+ing power proxy, Multidim_wom, increases child nutritional
+status, as measured by the MUAC z-score, by 0.24 standard
+deviations. Note that in column (3), once we use the two-stage
+least squares (2SLS) 14 to instrument for the potential endoge-
+neity of this variable using our instrument Relative_ethnicity,
+the estimated impact more than triples, rising to 0.81 for each
+unit increase in bargaining power. This suggests that not con-
+trolling for endogeneity of female bargaining power tends to
+under-estimate its eﬀect on child nutrition. In other words,
+in rural Senegal women with a high bargaining power are
+more likely to live in a bad environment for child nutrition.
+The most plausible explanation for this ﬁnding is that, less
+attention by husband is associated with more powerful moth-
+ers, but that these powerful mothers receive fewer resources
+from their partner. Our results on the eﬀect of female bargain-
+ing power on child nutrition rest of course on the validity of
+the instrument. In this regard one may ﬁrst note that the F-sta-
+tistic in the ﬁrst-stage is big enough to pass the weak instru-
+ment test (F = 13.7, P-value < 0.01) and thus suggests that
+our instrument has a considerable predictive power on the
+endogenous variable.
+
+Although not the main focus of our study, the results of our
+estimation also highlight other important determinants of the
+child nutritional status. More speciﬁcally, malnutrition in-
+creases with child age, where an additional year decreases
+the MUAC z-score by around 0.17 standard deviations. Girls
+have a greater MUAC z-score than boys by 0.2 standard devi-
+ations. Child’s rank and the number of brothers have no eﬀect
+on malnutrition, while the number of sisters is positively cor-
+related with the MUAC. One plausible explanation is that
+girls usually take care of their younger siblings. For instance,
+
+if older sisters allocate time to their younger brothers they will
+be more able to satisfy the child’s needs. 15 Income measured
+by total monthly expenditure is a strong determinant of a
+child’s nutritional status, where an increase of one point in
+the logarithm improves the MUAC z-score by 0.37 points.
+Since expenditure could be endogenous, the asset index was
+used as a proxy for permanent income. The weights used to
+construct the indicator are derived from the ﬁrst dimension
+of MCA and includes the assets owned by the household
+(fridge, air conditioner, fan, radio, TV, and vehicle). The use
+of the asset index did not alter the results as we ﬁnd that an
+increase in one standard deviation in the asset index increases
+the MUAC z-score by 0.14 standard deviations (P-va-
+lue < 0.05) under IV and the eﬀect of one standard deviation
+in the bargaining power index increases the MUAC z-score
+by 0.79 standard deviations.
+
+We also experimented with employing other measures of
+women’s bargaining power with Relative_ethnicity as instru-
+ment. More speciﬁcally, we employed a categorical measure
+of women’s bargaining power that gives information on who
+is the decision maker concerning child health, where this bin-
+ary variable is coded 1 if the mother is involved in the decision
+process concerning child health, that is, either because she de-
+cides alone or she decides with her husband, and zero other-
+wise. OLS results with this proxy indicated that when the
+mother is involved in the decision making, the MUAC z-score
+increases by 0.41 standard deviations. However, unfortunately
+Relative_ethnicity was not suﬃciently correlated to this binary
+variable (F-stat = 0) to serve as a valid predictor of it in the
+ﬁrst-stage. We then analyzed the eﬀect on child nutrition of
+several other multidimensional measures of women’s bargain-
+ing power. For example, one measure used was based on the
+
+26
+
+WORLD DEVELOPMENT
+
+women’s decision-making power on expenditure Multi-
+dim_exp, while another captured the power to make decisions
+concerning child schooling and child health Multidim_child
+and a last measure Multidim included all the variables pre-
+sented in Appendix 1. Again, although the coeﬃcients based
+on OLS regression were similar to the one found with the
+proxy of women’s bargaining power of choice, (b1 = 0.27,
+P < 0.01; b1 = 0.18, P < 0.01 and b1 = 0.23, P < 0.01 respec-
+tively), the instrument did not have enough predictive power
+with these measures
+(F-stat = 3.7 and F-stat = 0.7 and
+F-stat = 0.9 respectively).
+
+To allow for nonlinearity in the bargaining power eﬀect
+depending on the child nutritional status, we also employed
+IV and nonIV quantile regression methods, where the esti-
+mated eﬀect can be measured along the distribution of the
+MUAC values. We depict the estimated coeﬃcients and their
+95% conﬁdence bands along the 18th until the 89th quantiles
+of the distribution of the MUAC in Figures 2 and 3. 16 Under
+OLS, the impact of women’s bargaining power is stronger for
+children with a greater MUAC z-score. Under IV, the graphs
+indicate that the eﬀect of bargaining power, when signiﬁcant,
+is greater for all the children, no matter what their MUAC
+level. Perhaps more importantly, there appears to be a greater
+bargaining enhancing eﬀect for the children with extreme
+MUAC z-scores. After correcting for endogeneity, the down-
+ward bias is found to be the greatest for the children with a
+low MUAC z-score.
+
+(c) Robustness checks
+
+Instead of using our ordered variable as instrumental vari-
+able, we alternatively tried decomposing it into a dummy for
+the ethnicity; a dummy if the ethnicity is minority in the com-
+munity and their interaction and then utilizing them jointly as
+instrumental variables. Although the signiﬁcance on these
+instrumental variables in the ﬁrst-stage was found to be some-
+what weaker, they were still highly statistically signiﬁcant
+(F-stat = 6). Moreover, having several instruments allows us
+to run a test for overidentiﬁcation 17 (P-value = 0.33) using
+the same model, which provided further support for the valid-
+ity of our instrumental variable approach. The resultant esti-
+mated coeﬃcient on (instrumented) bargaining power proxy
+in the second stage was found to be very close (0.82) to the
+one where we used the ordered variable as instrument and sim-
+ilarly was statistically signiﬁcant at the 5% level. 18
+
+Figure 2. NonIV quantile regression estimates.
+
+Figure 3. IV quantile regression estimates.
+
+Following Duﬂo and Udry (2004), we also used climatic
+shocks; rain and evapotranspiration shocks occurring the year
+before the survey in reference to the 10 years period average
+and their interaction term, as instruments for bargaining
+power. In the sample the shocks had an eﬀect on the likelihood
+for women of working in household ﬁelds and diﬀerent eﬀects
+on the productivity of women’s and men’s ﬁelds. However, be-
+cause of the low variability in evapotranspiration in the area,
+the district dummies were replaced by several variables captur-
+ing the characteristics of the community, so we were not able
+to introduce those IV in the same model. 19 We also controlled
+for the agricultural revenue, 20 computed by multiplying the
+quantity in kilos of each crop produced by the household dur-
+ing the last year by its price at the time of the sale, in order to
+take into account the fact that a climatic shock could aﬀect
+nutrition through a change in food availability in the house-
+hold. By doing so, we found that an increase in one standard
+deviation in the woman’s bargaining power increases the
+MUAC z-score by 0.5 standard deviations, conﬁrming the
+ﬁnding of the downward bias. 21 The F-stat was 12 and the
+overidentiﬁcation test P-value was 0.18.
+
+The analysis was also conducted for the sub-sample of
+women whose husband was absent during the interview. On
+average,
+it was found that the presence of the husband
+increases the average women’s power. In the sample, the
+average of women’s power was  0.05 but it was only  0.14
+in the sample of women whose husbands did not attend the
+interview. The coeﬃcient of woman’s bargaining power was
+stronger when the analysis only focused on the 439 women
+whose husbands were absent during the interview, as an
+increase in one standard deviation in the woman’s power index
+was shown to increase the MUAC z-score by 0.96 standard
+deviations (F-stat = 25). However, it should be noted that
+there might be a selection bias in that the presence of the hus-
+band at the woman’s interview may not have been random.
+
+5. CONCLUDING REMARKS
+
+We investigated whether mother’s bargaining power im-
+proves child nutritional status using data on a rural Senegalese
+region. To estimate this, we employ an instrumental variable
+strategy, which corrects for the potential endogeneity of the
+mother’s bargaining power. Although, in the literature it is
+generally assumed that unobservable characteristics of the
+
+THE EFFECT OF WOMEN’S BARGAINING POWER ON CHILD NUTRITION IN RURAL SENEGAL
+
+27
+
+tend to over-estimate the coeﬃcient of
+
+mother will
+the
+mother’s bargaining power, our results indicate that the coef-
+ﬁcient is downward biased under standard OLS, especially for
+children with a low MUAC z-score. A possible reason for the
+downward bias is that in Senegal a high mother’s bargaining
+power may be associated with a low investment of fathers in
+their wives and children, resulting in an unfavorable context
+for child health. In our data set, the woman’s bargaining
+power measure may thus capture the lack of paternal invest-
+ment, which would justify that male spouse’s unobserved par-
+enting ability is negatively correlated with mother’s bargaining
+power and positively correlated with the child MUAC z-score.
+The ﬁndings presented in this paper corroborate those of
+previous studies where women’s bargaining power is discov-
+ered to be a strong determinant of child nutrition. However,
+although women’s bargaining power is found to always have
+a positive eﬀect on child nutrition under OLS and IV, the
+ﬁnding that OLS estimates are downward biased may suggest
+that more women’s power is associated with a worse environ-
+ment for child nutrition. This ﬁnding is counterintuitive and
+probably due to social norms in Senegal. Indeed, this result
+may not be relevant to diﬀerent settings, especially where a
+high woman’s decision power is widely accepted by society.
+The estimated impact presented here may also vary in other
+settings and may depend on the measure of women’s bargain-
+ing power.
+
+Although our results are robust to the use of diﬀerent mea-
+sures of bargaining power and instruments, our paper suﬀers
+from several limitations. A main limitation is that our data
+set only included information on the MUAC so it was not pos-
+sible to test if women’s bargaining power also has an eﬀect on
+stunting and other measures of wasting. The paper also did
+not address how a change in woman’s bargaining power over
+
+time aﬀects child nutrition. Indeed, an explicit investigation of
+the main determinants of a change in bargaining power in a
+society as well as their eﬀect on child outcomes would be of
+a particular interest.
+
+Future studies could undertake similar analysis in diﬀerent
+settings in order to see if the downward bias is conﬁrmed in
+other low-income countries. It would also be very useful to test
+the coherence of the results under diﬀerent measures of bar-
+gaining power using an identical instrumental variable strat-
+egy or any other appropriate method to correct for the
+endogeneity of women’s bargaining power. Finally, as stated
+before, the eﬀect of women’s bargaining power on several
+nutrition and health outcomes could be explored in future
+works.
+
+Our results have several implications. Firstly, results indi-
+cate that women’s bargaining power is an important determi-
+nant of child nutrition and policies that aim to increase
+women’s power such as microﬁnance projects could appear
+to be very eﬀective as they will not only increase the well-being
+of women but will also generate positive externalities toward
+children, especially toward the most vulnerable ones. How-
+ever, the ﬁnding that high women’s power is currently associ-
+ated with a negative context of child health supports the idea
+that high woman’s power is currently looked down upon in
+Senegalese society. Thus, policies aiming to increase women’s
+bargaining power should point at a change in social norms. Fi-
+nally, since women’s power is assumed to aﬀect child health
+through health inputs, arguably eﬀorts should still be deployed
+on policies aiming to prevent and cure severe malnutrition, so
+the increase in women’s power as a strategy to ﬁght child mal-
+nutrition should not take the place of nutrition policies but
+rather should be seen as complementary.
+
+NOTES
+
+1. As a matter of fact, for many Senegalese women ﬁnancial responsi-
+bility of the husband is a matter of honor, where ﬁnancially independent
+women are often associated with sex-workers (Gue´rin, 2008; Pilon, Seidou
+Mama, & Tichit, 1997).
+
+7. Among those children 60% have a mother who is the head of the
+household and is not married. For the rest of the children whose the head
+of the household is a male, they are not the children of the head, they are
+usually the children of a woman who live in the household but who is not
+the wife of the head, usually the sister of the head.
+
+2. As households diﬀer in size and demographic composition, equiva-
+lence scales are used to make comparable consumption indicators.
+
+3. The sample-size requirement was calculated in the framework of the
+impact study of the agro-sylvo-pastoral insurance scheme by following the
+methodology described in Duﬂo, Glennerster, and Kremer (2007, chap. 4)
+to determine the Minimum Detectable size Eﬀect (MDE).
+
+8. This variable is only weakly correlated with the presence of the father
+in the household (coeﬃcient correlation =  0.36) or to the variable
+capturing the gender of the head (coeﬃcient correlation =  0.34).
+
+9. This could not be tested empirically.
+
+4. World Health Organization and National Centre for Health Statistics.
+
+10. References curves of WHO are computed for children aged between
+91 and 1856 days.
+
+½
+ð
+z score ¼ ðX
+MÞL
+SL
+
+ 1
+Þ
+
+5.
+of the distribution, L is skewness, and S is the coeﬃcient of variation.
+
+where X is the MUAC of the child, M is the median
+
+6. We regressed monthly total expenditure over the number of adults and
+the number of kids and by dividing the two coeﬃcients obtained we found
+that an adult costs about three times more than a child. Concerning the
+presence of economies of scale, we assumed very low economies of scale
+since households consume more private goods but not the absence of
+economies of scale since there might be some economies of scale in food
+preparation if larger households are more likely to have a more eﬃcient
+cook or if they are more eﬃcient at eliminating waste assuming that they
+are more likely to own a fridge.
+
+11. Estimates are conducted for women who have at least one child
+under-5. Standard errors clustered at the household level are presented in
+parentheses. Control variables include wife characteristics (age, literacy,
+health status, share of earned income, work status, and farming worker),
+husband characteristics (age, literacy, health status, and farming worker)
+household characteristics (land area, number of kids, and polygamy) and
+16 district dummies.
+
+12. Note that seven Moorish children are excluded from the total sample
+to simplify the construction and interpretation of
+the instrumental
+variable.
+
+28
+
+WORLD DEVELOPMENT
+
+13. Several estimates were run for rice, poultry, meat, ﬁsh cereal, dairy
+products, vegetable, fruit, sugar, and oil expenditures.
+
+14.
+In the ﬁrst stage, women’s bargaining power is regressed over all
+exogenous variables and the instrument and predicted values are saved. In
+the second stage, the women’s bargaining power variable is replaced by its
+predicted value of the ﬁrst stage.
+
+15. Estimates were also conducted by including the presence of younger
+and older brothers and sisters, but due to a lack of observations, the
+standard errors associated with the variable capturing the number of older
+sisters increases substantially, resulting in nonsigniﬁcance of the variable
+although the coeﬃcient remains constant at 0.1 (coeﬃcients of the variable
+number of younger sisters is lower at 0.07) which suggests that this
+explanation might be plausible.
+
+16. Unfortunately for quantiles lower than the 18th and greater than the
+89th the maximum likelihood estimation for the IV model did not
+converge due to the small number of observations within these ranges.
+
+17. An overidentiﬁcation test is used in overidentiﬁed equations (i.e.,
+when the number of instruments is greater than the number of endogenous
+variables)
+to test whether the excluded instrumental variables are
+
+independent of the error terms and can be considered as valid. The test
+is conducted by regressing the residuals from the IV regression on all
+instrumental variables. The nonrejection of the null hypothesis leads to the
+conclusion that the overidentifying restriction is valid. The overidentiﬁ-
+cation test used is the Hansen’s J test, which is the appropriate
+overidentiﬁcation test when one has clustered SE.
+
+18. Detailed results are available from the authors.
+
+19. Variables include the distance to paved road, presence of electricity,
+quality of care in the closest primary health care facility, and distance to
+the closest low-level and high-level provider.
+
+20. Note that when the variable agricultural revenue was removed the
+coeﬃcient of women’s bargaining power was 0.46 instead of 0.51.
+
+21. When the largest multidimensional indicator Multidim that includes
+all the variables presented in Appendix 1 in the MCA was used, the
+coeﬃcient was 0.86, the F-stat was 5 and the overidentiﬁcation test P-value
+was 0.31.
+
+REFERENCES
+
+Ahmed, M. (2006). Intra-household bargaining and investment in child
+
+health. Mimeo.
+
+Allendorf, K. (2007). Do women’s land rights promote empowerment and
+
+child health in Nepal?. World Development, 35(11), 1975–1988.
+
+Amankwaa, A. A. (1996). Prior and proximate causes of infant survival in
+Ghana, with special attention to polygyny. Journal of Biosocial
+Science, 28(3), 281–295.
+
+Amankwaa, A. A. (2001). Polygyny and infant morality in Western
+Africa: Evidence from Ghana. African Population Studies, 16(1), 1–13.
+Bairagi, R. (1981). On validity of some anthropometric indicators as
+predictors of mortality. The American Journal of Clinical Nutrition,
+34(11), 2592.
+
+Becker, S., Fonseca-Becker, F., & Schenck-Yglesias, C. (2006). Husbands’
+and wives’ reports of women’s decision-making power in Western
+Guatemala and their eﬀects on preventive health behaviors. Social
+Science & Medicine, 62(9), 2313–2326.
+
+Beegle, K., De Weerdt, J., Friedman, J., & Gibson, J. (2012). Methods of
+household consumption measurement through surveys: Experimental
+results from Tanzania. Journal of Development Economics, 98(1), 3–18.
+Behrman, J. R. (1997). Intrahousehold distribution and the family.
+
+Handbook of Population and Family Economics, 1, 125–187.
+
+Behrman, J. R., Pollak, R. A., & Taubman, P. (1995). From parent to
+child: Intrahousehold allocations and intergenerational relations in the
+United States. University of Chicago Press.
+
+Beneﬁce, E., Chevassus-Agnes, S., & Barral, H. (1984). Nutritional
+situation and seasonal variations for pastoralist populations of the
+Sahel
+(Senegalese Ferlo). Ecology of Food and Nutrition, 14(3),
+229–247.
+
+Berkley, J., Mwangi, I., Griﬃths, K., Ahmed, I., Mithwani, S., English,
+M., et al. (2005). Assessment of severe malnutrition among hospital-
+ized children in rural Kenya. The Journal of the American Medical
+Association, 294(20), 2577–2578.
+
+Briend, A., & Zimicki, S. (1986). Validation of arm circumference as an
+indicator of risk of death in one to four year old children. Nutrition
+Research, 6(3), 249–261.
+
+Browning, M., Bourguignon, F., Chiappori, P. A., & Lechene, V. (1994).
+Income and outcomes: A structural model of intrahousehold alloca-
+tion. The Journal of Political Economy, 102(6), 1067–1096.
+
+Cantrelle, P., & Locoh, T. (1990). Facteurs culturels et sociaux de la sante
+
+en Afrique Sub-Saharienne. Les dossiers du CEPED n°10, Paris.
+
+Caverivie´re, M. (1986). Incertitudes et devenir du droit foncier se´ne´galais.
+
+Revue internationale de droit compare´, 38(1), 95–115.
+
+Chen, L. C., Chowdhury, A., & Huﬀman, S. L. (1980). Anthropometric
+assessment of energy–protein malnutrition and subsequent risk of
+mortality among preschool aged children. The American Journal of
+Clinical Nutrition, 33(8), 1836.
+
+Dalton, J. T., & Leung, T. C. (2011). Why is polygyny more prevalent in
+
+Western Africa? An African slave trade perspective. Mimeo.
+
+De Onis, M., Yip, R., & Mei, Z. (1997). The development of MUAC-for-
+age reference data recommended by a WHO Expert Committee.
+Bulletin of the World Health Organization, 75(1), 11.
+
+Deaton, A., & Zaidi, S. (1999). Guidelines for constructing consumption
+aggregates for welfare analysis. Princeton, Woodrow Wilson School—
+Development Studies.
+
+DeJanvry, A., & Sadoulet, E. (2004). Organisations Paysannes et De´ vel-
+oppement Rural Au Se´ne´ gal. Berkeley: Universite´ de Berkeley, Banque
+mondiale.
+
+Demographic and Health Survey (2006). Enqueˆte De´mographique et de
+Sante´ 2005 au Senegal: Rapport de synthe`se. Calverton: Macro
+International.
+
+Desai, S., & Alva, S. (1998). Maternal education and child health: Is there
+
+a strong causal relationship?. Demography, 35(1), 71–81.
+
+Dettwyler, K. A. (1986). Infant feeding in Mali, West Africa: Variations in
+
+belief and practice. Social Science & Medicine, 23(7), 651–664.
+
+Blumberg, R. L.
+
+(1989). Making the case for the gender variable.
+
+Diouf, M. (1990). Le Kajoor au XIXe sie`cle. Pouvoir ceddo et conqueˆte
+
+Washington, DC: AID.
+
+Booth, A. L., & Kee, H. J. (2009). Birth order matters: The eﬀect of family
+size and birth order on educational attainment. Journal of Population
+Economics, 22(2), 367–397.
+
+Brahmbhatt, H., Bishai, D., Wabwire-Mangen, F., Kigozi, G., Wawer,
+M., & Gray, R. H. (2002). Polygyny, maternal HIV status and child
+survival: Rakai, Uganda. Social Science & Medicine, 55(4), 585–592.
+
+Briend, A., Wojtyniak, B., & Rowland, M. G. (1987). Arm circumference
+and other factors in children at high risk of death in rural Bangladesh.
+The Lancet, 330(8561), 725–728.
+
+coloniale. Paris: Editions Karthala.
+
+Diop, A. B. (1985). La famille Wolof: Tradition et changement. Paris:
+
+Editions Karthala.
+
+Duﬂo, E. (2003). Grandmothers and granddaughters: Old age pension and
+intra-household allocation in South Africa. The World Bank Economic
+Review, 17(1), 1–25.
+
+Duﬂo, E., Glennerster, R., & Kremer, M. (2007). Using randomization in
+development economics research: A toolkit. In T. P. Schultz, & A. S.
+John
+(Vol. 4,
+pp. 3895–3962). Elsevier.
+
+(Eds.). Handbook of development
+
+economics
+
+THE EFFECT OF WOMEN’S BARGAINING POWER ON CHILD NUTRITION IN RURAL SENEGAL
+
+29
+
+Duﬂo, E., & Udry, C. (2004). Intrahousehold resource allocation in Cote
+d’Ivoire: Social norms, separate accounts and consumption choices.
+National Bureau of Economic Research. Working Paper No. 10498.
+Dramani, L. (2011). Poverty spatial polarization in Senegal. Journal of
+
+Geography and Regional Planning, 4(12), 664–671.
+
+Elder, H. W., & Rudolph, P. M. (2003). Who makes the ﬁnancial decisions
+in the households of older Americans. Financial Services Review, 12(4),
+293–308.
+
+Friedberg, L., & Webb, A. (2006). Determinants and consequences of
+in households. National Bureau of Economic
+
+bargaining power
+Research. Working Paper No. 12367.
+
+Gage, A. J., Sommerfelt, A. E., & Piani, A. L. (1997). Household structure
+and childhood immunization in Niger and Nigeria. Demography, 34(2),
+295–309.
+
+Gibson, M. A., & Mace, R. (2007). Polygyny, reproductive success and
+child health in rural Ethiopia: Why marry a married man?. Journal of
+Biosocial Science, 39(2), 287.
+
+Glewwe, P. (1999). Why does mother’s schooling raise child health in
+developing countries? Evidence from Morocco. The Journal of Human
+Resources, 34(1), 124–159.
+
+Gue´rin, I. (2008). L’argent des femmes pauvres: Entre survie quotidienne,
+obligations familiales et normes sociales. Revue francßaise de socio-
+e´conomie, (2), 59–78.
+
+Gupta, M. D. (1987). Selective discrimination against female children in
+rural Punjab, India. Population and Development Review, 13(1),
+77–100.
+
+Gupta, M. D. (1990). Death clustering, mothers’ education and the
+determinants of child mortality in rural Punjab, India. Population
+Studies, 44(3), 489–505.
+
+Gyimah, S. O. (2003). Interaction eﬀects of maternal education and
+household facilities on childhood diarrhea in Sub-Saharan Africa: The
+case of Ghana. Journal of Health and Population in Developing
+Countries, 1–17.
+
+Gyimah, S. O. (2009). Polygynous marital structure and child survivorship
+in sub-Saharan Africa: Some empirical evidence from Ghana. Social
+Science & Medicine, 68(2), 334–342.
+
+Habicht, J., Martorell, R., Yarbrough, C., Malina, R., & Klein, R. (1974).
+Height and weight standards for preschool children: How relevant are
+ethnic diﬀerences in growth potential?. The Lancet, 1(7858), 611–614.
+Hall, G., Chowdhury, S., & Bloem, M. (1993). Use of mid-upper-arm
+in nutritional assessment. The Lancet,
+
+circumference Z scores
+341(8858), 1481.
+
+Hindin, M. J. (2000). Women’s power and anthropometric status in
+
+Zimbabwe. Social Science & Medicine, 51(10), 1517–1528.
+
+Hoddinott, J., & Haddad, L.
+
+(1991). Household expenditures, child
+anthropometric status and the intrahousehold division of
+income:
+Evidence from the Coˆte D’Ivoire. Research Program in Development
+Studies, Woodrow Wilson School, Princeton University.
+
+Jinadu, M., Ojofeitimi, E., & Osifor, E. (1986). Feeding patterns of
+children with protein–energy malnutrition in Nigeria. Tropical Doctor,
+16(2), 82–85.
+
+Kevane, M., & Wydick, B. (2001). Social norms and the time allocation of
+women’s labor in Burkina Faso. Review of Development Economics,
+5(1), 119–129.
+
+Kishor, S. (2000). Empowerment of women in Egypt and links to the
+survival and health of their infants. In Harriet Presser, & Gita Sen
+(Eds.), Women’s empowerment and demographic processes. Oxford
+University Press.
+
+Kuczmarski, R. J., Ogden, C. L., Grummer-Strawn, L. M., Flegal, K. M.,
+Guo, S. S., Wei, R., et al. (2000). CDC growth charts: United States.
+Advance Data, (314), 1.
+
+Lambert, S., Ravallion, M., & Van de Walle, D. (2011). Is it what you
+inherited or what you learnt? Intergenerational linkage and interpersonal
+inequality in Senegal. World Bank Policy Research, Working Paper
+No. 5658.
+
+Maitra, P. (2004). Parental bargaining, health inputs and child mortality
+
+in India. Journal of Health Economics, 23(2), 259–291.
+
+Malhotra, A., Schuler, S. R., & Boender, C. (2002). Measuring women’s
+empowerment as a variable in international development. In D.
+Narayan (Ed.), Measuring empowerment. The World Bank.
+
+McElroy, M. B.
+
+(1990). The empirical content of Nash-bargained
+household behavior. The Journal of Human Resources, 25(4), 559–583.
+Ministry of Economy and Finance. (2004). Rapport de synthe`se de la
+
+deuxie`me Enqueˆte Se´ne´ galaise Aupre`s des Me´nages (ESAM II).
+
+Mulder, M. B. (1989). Marital status and reproductive performance in
+Kipsigis women: Re-evaluating the polygyny–fertility hypothesis.
+Population Studies, 43(2), 285–304.
+
+Mullany, B. C., Hindin, M. J., & Becker, S. (2005). Can women’s
+autonomy impede male involvement in pregnancy health in Kat-
+mandu, Nepal?. Social Science & Medicine, 61(9), 1993–2006.
+
+Munro, A., Kebede, B., Tarazona-Gomez, M., & Verschoor, A. (2010).
+The lion’s share. An experimental analysis of polygamy in Northern
+Nigeria. GRIPS Discussion Papers.
+
+Murdock, G. P. (1967). Ethnographic atlas: A summary. Ethnology, 6(2),
+
+109–236.
+
+Nikie`ma, B., Haddad, S., & Potvin, L. (2008). Women bargaining to seek
+healthcare: Norms, domestic practices, and implications in rural
+Burkina Faso. World Development, 36(4), 608–624.
+
+Ntozi, J., & Nakanaabi, I. (1997). The AIDS epidemic and infant and child
+mortality in six districts of Uganda. Health Transition Review, 7, 189–206.
+Pande, R. P. (2003). Selective gender diﬀerences in childhood nutrition
+and immunization in rural India: The role of siblings. Demography,
+40(3), 395–418.
+
+Pilon, M., Seidou Mama, M., & Tichit, C. (1997). Les femmes chefs de
+me´nage: Apercßu ge´ne´ral et e´tudes de cas. Me´nages et familles en
+Afrique. Approches des dynamiques contemporaines, Paris, E´ tudes du
+Ceped, (15), 167–191.
+
+Quisumbing, A. R. (1994). Intergenerational transfers in Philippine rice
+villages: Gender diﬀerences in traditional inheritance customs. Journal
+of Development Economics, 43(2), 167–195.
+
+Quisumbing, A. R., & De La Briere, B. (2000). Women’s assets and
+intrahousehold allocation in rural Bangladesh: Testing measures of
+bargaining power. International Food Policy Research Institute, Food
+Consumption Nutrition Division.
+
+Quisumbing, A. R., & Maluccio, J. A. (2000). Intrahousehold allocation
+and gender relations: New empirical evidence from four developing
+countries. International Food Policy Research Institute.
+
+Rosenzweig, M. R., & Stark, O.
+
+(1989). Consumption smoothing,
+migration, and marriage: Evidence from rural India. The Journal of
+Political Economy, 97(4), 905–926.
+
+Schultz, T. P. (1990). Testing the neoclassical model of family labor supply
+
+and fertility. The Journal of Human Resources, 25(4), 599–634.
+
+Singh-Grewal, D., Macdessi, J., & Craig, J. (2005). Circumcision for the
+prevention of urinary tract infection in boys: A systematic review of
+randomised trials and observational studies. Archives of Disease in
+Childhood, 90(8), 853–858.
+
+Smith, L. C., Ramakrishnan, U., Ndiaye, A., Haddad, L., & Martorell, R.
+(2003). The importance of women’s status for child nutrition in
+developing countries, Vol. 131. International Food Policy Research
+Institute.
+
+Sow, F. (1996). Famille et loi au Se´ne´gal. Les Frontie`res mouvantes du
+mariage et du divorce dans les communau-te´s musulmanes. Dossier
+Spe´cial volume 1, 128.
+
+Strassmann, B. I. (1997). Polygyny as a risk factor for child mortality
+
+among the Dogon. Current Anthropology, 38(4), 688–695.
+
+Svedberg, P. (1990). Undernutrition in sub-Saharan Africa: Is there a
+
+gender bias?. Journal of Development Studies, 26(3), 469–486.
+
+Sylla, S. N. (2001). Femmes et politique au Senegal: Contribution a`
+
+la
+re´ﬂexion sur la participation des femmes se´ne´galaises a` la vie politique de
+1945 a` 2001. Universite de Paris 1—Pantheon-Sorbonne.
+
+Lele, U. (1986). Women and structural transformation. Economic Devel-
+
+Thomas, D. (1990). Intra-household resource allocation: An inferential
+
+opment and Cultural Change, 34(2), 195–221.
+
+approach. The Journal of Human Resources, 25(4), 635–664.
+
+Le´pine, A., & Le Nestour, A. (2013). The determinants of health care
+utilisation in rural Senegal. Journal of African Economies, 22(1),
+163–186.
+
+Thomas, D. (1994). Like father, like son; like mother, like daughter:
+Parental resources and child height. The Journal of Human Resources,
+29(4), 950–988.
+
+Lundberg, S., & Pollak, R. A. (1996). Bargaining and distribution in
+
+Thomas, D., Contreras, D., & Frankenberg, E. (1999). Distribution of
+
+marriage. The Journal of Economic Perspectives, 10(4), 139–158.
+
+power within the household and child health. RAND.
+
+Lundberg, S. J., Pollak, R. A., & Wales, T. J. (1997). Do husbands and
+wives pool their resources? Evidence from the United Kingdom child
+beneﬁt. The Journal of Human Resources, 32(3), 463–480.
+
+Thomas, D., Strauss, J., & Henriques, M.-H. (1991). How does mother’s
+education aﬀect child height?. The Journal of Human Resources, 26(2),
+183–211.
+
+30
+
+WORLD DEVELOPMENT
+
+Trowbridge, F. L., & Sommer, A. (1981). Nutritional anthropometry and
+mortality risk. The American Journal of Clinical Nutrition, 34(11), 2591.
+Van den Broeck, J., Eeckels, R., & Massa, G. (1996). Validity of single-
+weight measurements to predict current malnutrition and mortality in
+children. The Journal of Nutrition, 126(1), 113.
+
+Wamani, H., Astrom, A., Peterson, S., Tumwine, J., & Tylleskar, T. (2007).
+Boys are more stunted than girls in Sub-Saharan Africa: A meta-analysis
+of 16 demographic and health surveys. BMC Pediatrics, 7(1), 17.
+
+Wamani, H., Tylleskar, T., Astrom, A., Tumwine, J., & Peterson, S. (2004).
+Mothers’ education but not fathers’ education, household assets or land
+ownership is the best predictor of child health inequalities in rural
+Uganda. International Journal for Equity in Health, 3(9).
+
+Woldemicael, G. (2010). Do women with higher autonomy seek more
+maternal health care? Evidence from Eritrea and Ethiopia. Health Care
+for Women International, 31(7), 599–620.
+
+World Health Organization, & UNICEF. (2009). WHO child growth standards
+
+and the identiﬁcation of severe acute malnutrition in infants and children.
+
+APPENDIX 1. WOMAN’S POWER SECTION IN THE
+
+SURVEY QUESTIONNAIRE
+
+The section includes 11 questions that were asked to the fe-
+male married respondents and one question that was ﬁlled in
+by the interviewer.
+
+APPENDIX 2. CONSTRUCTION OF WOMEN’S
+
+BARGAINING POWER USING MULTIPLE
+CORRESPONDENCE ANALYSIS (N = 758)
+
+Categories
+
+Weight Contribution
+
+to index
+
+No
+Yes
+
+Have you worked during the last 12 months?
+
+ 0.621 0.03
+0.014
+0.281
+Who makes decision on woman’s health?
+1.514
+0.129
+0.61
+0.028
+ 1.108 0.145
+
+Respondent alone
+Respondent and husband
+Husband alone
+
+Who makes decision concerning the visit of respondents’
+relatives?
+
+Respondent alone
+Respondent and husband
+Husband alone
+
+1.455
+0.105
+0.762
+0.054
+ 1.132 0.188
+
+Does the respondent can go out without any permission?
+
+Yes
+It depends where she goes
+No
+
+Percentage explained by dimension
+
+1.456
+0.052
+0.979
+0.099
+ 1.129 0.155
+72.71
+
+Dimension
+Respondent Economic
+
+Question
+Q1. Have you worked during the last 12 months? 1: Yes, 0: No
+Q2. How much does your income make up in
+total household income?
+Q3. What is the share of total household
+expenditures that you control?
+
+Code
+
+Decision-power Q4. Who usually makes decisions concerning
+
+your health?
+Q5. Who usually makes decisions concerning the
+health of children?
+Q6. Who usually makes decisions concerning the
+schooling of children?
+Q7. Who usually makes decisions concerning
+daily expenditures?
+Q8. Who usually makes decisions concerning
+large expenditures of the household?
+Q9. Who usually makes decisions concerning the
+food cooked every day?
+Q10. Who usually makes decisions concerning
+the visit to your relatives?
+Q11. Can you go out without the permission of
+your husband?
+
+Q12. How did the husband react during the
+interview?
+
+Mobility
+
+Interviewer
+
+1: Nothing, 2: Less than half, 3: Half, 4:
+More than half
+1: Nothing, 2: Less than half, 3: Half, 4:
+More than half
+1: The respondent, 2: Both spouses, 3:
+Husband alone, 4: Another person
+1: The respondent, 2: Both spouses, 3:
+Husband alone, 4: Another person
+1: The respondent, 2: Both spouses, 3:
+Husband alone, 4: Another person
+1: The respondent, 2: Both spouses, 3:
+Husband alone, 4: Another person
+1: The respondent, 2: Both spouses, 3:
+Husband alone, 4: Another person
+1: The respondent, 2: Both spouses, 3:
+Husband alone, 4: Another person
+1: The respondent, 2: Both spouses, 3:
+Husband alone, 4: Another person
+1: Yes, 2: depends where I go, 3: No
+
+1: Husband was absent, 2: Husband said
+nothing, 3: Husband said something
+quietly, 4: Husband said something
+violently, 5: Husband answered for his
+wife
+
+

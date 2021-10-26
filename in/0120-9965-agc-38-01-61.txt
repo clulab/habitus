@@ -1,0 +1,2145 @@
+Selection of sowing date and biofertilization as alternatives to 
+
+improve the yield and profitability of the F68 rice variety
+
+Selección de fecha de siembra y biofertilización como alternativas para 
+
+mejorar el rendimiento y rentabilidad de la variedad de arroz F68
+
+Yeison Mauricio Quevedo-Amaya1, José Isidro Beltrán-Medina1, José Álvaro Hoyos-Cartagena1, 
+
+John Edinson Calderón-Carvajal1, and Eduardo Barragán-Quijano1*
+
+ABSTRACT
+Multiple factors influence rice yield. Developing management 
+practices that increase crop yield and an efficient use of re-
+sources are challenging to modern agriculture. Consequently, 
+the aim of this study was to evaluate biological nitrogen fixa-
+tion and bacterial phosphorous solubilization (biofertilization) 
+practices with the selection of the sowing date. Three sowing 
+dates (May, July and August) were evaluated when interacting 
+with two mineral nutrition treatments using a randomized 
+complete block design in a split-plot arrangement. Leaf car-
+bon balance, leaf area index, interception and radiation use 
+efficiency, harvest index, dry matter accumulation, nutritional 
+status, and yield were quantified. Results showed that the 
+maximum yield was obtained in the sowing date of August. 
+Additionally, yield increased by 18.92% with the biofertiliza-
+tion treatment, reaching 35.18% of profitability compared to 
+the local production practice. High yields were related to a 
+higher carbon balance during flowering, which was 11.56% and 
+54.04% higher in August than in July and May, respectively, due 
+to a lower night temperature. In addition, a high efficient use 
+of radiation, which in August was 17.56% and 41.23% higher 
+than in July and May, respectively, contributed to obtain higher 
+yields and this behavior is related to the selection of the sow-
+ing date. Likewise, a rapid development of the leaf area index 
+and an optimum foliar nitrogen concentration (>3%) were 
+observed. This allowed for greater efficient use of radiation and 
+is attributed to the activity of nitrogen-fixing and phosphate 
+solubilizing bacteria that also act as plant growth promoters.
+
+Key words: Azotobacter chroococcum, plant growth promoters, 
+respiration, biological nitrogen fixation, photosynthetically 
+active radiation, night temperature.
+
+RESUMEN
+El  rendimiento  del  arroz  está  influenciado  por  múltiples 
+factores. Desarrollar prácticas de manejo que aumenten el 
+rendimiento y sean más eficientes en el uso de los recursos es 
+un reto de la agricultura. En consecuencia, el objetivo de este 
+estudio fue evaluar las prácticas fijación biológica de nitrógeno 
+y solubilización de fosforo por bacterias (biofertilización) con 
+la selección de fecha de siembra. Se evaluaron tres fechas de 
+siembra (mayo, julio y agosto) en interacción con dos trata-
+mientos de nutrición mineral empleando un diseño en bloques 
+completos al azar en arreglo de franjas divididas. Se cuantificó 
+el balance de carbono, índice de área foliar, intercepción y 
+uso eficiente de radiación, índice de cosecha, acumulación de 
+masa seca, estado nutricional y rendimiento. Los resultados 
+mostraron que el máximo rendimiento se obtuvo en la fecha 
+de siembra de agosto; adicionalmente, con la biofertilización 
+el rendimiento se incrementó en 18.92%, alcanzando una ren-
+tabilidad del 35.18% en comparación con la práctica local de 
+producción. El alto rendimiento se relacionó con un mayor ba-
+lance de carbono durante la floración, que fue un 11.56 y 54.04% 
+mayor en agosto, comparado con julio y mayo respectivamente, 
+debido a una menor temperatura nocturna. Asimismo, un alto 
+uso eficiente de la radiación que en agosto fue un 17.56 and 
+41.23% mayor que julio y mayo respectivamente, contribuyó 
+a mayores rendimientos y este comportamiento se relacionó 
+con la selección de la fecha de siembra. Además, se observó un 
+rápido desarrollo del índice de área foliar y de la concentración 
+optima del nitrógeno foliar (>3%). Esto permitió alcanzar un 
+mayor uso eficiente de la radiación y se atribuye a la actividad de 
+las bacterias fijadoras de nitrógeno y solubilizadoras de fosforo 
+que también son promotoras del crecimiento. 
+Palabras clave: Azotobacter chroococcum, promotores del cre-
+cimiento vegetal, respiración, fijación biológica del nitrógeno, 
+radiación fotosintéticamente activa, temperatura nocturna.
+
+Introduction
+
+Rice is an essential commodity for more than 60% of the 
+world population (Patel et al., 2010). The crop yield is 
+
+influenced by climatic factors, physical and chemical soil 
+conditions, water management, sowing date, variety, sow-
+ing rate, weed control, and fertilization (Yosef Tabar, 2013). 
+Furthermore, climate change is considered a potential 
+
+Received for publication: 21 May, 2019. Accepted for publication: 19 March, 2020 
+1  Corporación colombiana de investigación agropecuaria - AGROSAVIA, Centro de investigación Nataima, El Espinal, (Colombia).
+* Corresponding author: ebarragan@agrosavia.co
+
+Doi: 10.15446/agron.colomb.v38n1.79803
+
+Agronomía Colombiana 38(1), 61-72, 2020
+
+limitation for rice producers from the socio-economic point 
+of view (Delerce et al., 2016). For Colombia, an increase of 
+up to 7°C in temperature and a decrease in precipitation 
+of 10% (IPCC, 2014) could generate crop yield instability 
+between 5% and 29% (Iizumi et al., 2014).
+
+Crop management practices maintain or improve yield in 
+function of the environmental offer through the selection 
+of sowing dates based on the varietal requirements. With 
+this strategy, it is possible to escape abiotic stress during 
+critical growth phases or to ensure maximum solar radia-
+tion uptake by the crop (Van Ittersum et al., 2008; Zhu et 
+al., 2013). Studies have been carried out around the world 
+to identify optimal sowing dates for different rice variet-
+ies to maximize their yield (Akbar et al., 2010; Khalifa et 
+al., 2014; Osman et al., 2015; Pal et al., 2017). However, 
+in Colombia, there are only two evaluation reports that 
+include this practice (Garcés and Restrepo, 2015; Quevedo 
+et al., 2019). Nonetheless, these were evaluated with other 
+varieties that are no longer available for producers and in 
+localities with different edaphoclimatic characteristics; 
+moreover, the impact of these practices was not evaluated 
+in economic terms.
+
+Currently, the increase in crop productivity is due to an 
+increase in fertilization rates. However, in the context of cli-
+mate change and with limited resources, the indiscriminate 
+application of fertilizers will be a limiting factor in produc-
+tion (Han et al., 2018). In rice crops, nitrogen fertilization 
+is carried out with high doses generating a low efficiency 
+in the use of nitrogen and further pollution problems 
+(Tilman, 2001; Ju et al., 2015). Regarding phosphorus, this 
+element is not available for the plant because it is easily 
+fixed, i.e., through adsorption or precipitation (Roberts 
+and Johnston, 2015). Considering the above and that the 
+majority of the agricultural soils worldwide are deficient 
+in phosphorus (Velázquez et al., 2017), producers usually 
+apply high amounts of this element, generating eutrophica-
+tion, contamination with heavy metals, and depletion of 
+the resource (Krüger and Adam, 2017).
+
+Based on this problem, several practices have been de-
+veloped using biological nitrogen fixation processes to 
+increase the availability of the element for the plant (Re-
+inhold and Hurek, 2011). These practices are implemented 
+in addition to the use of phosphorus solubilizing bacteria 
+that transforms the insoluble phosphorus into assimilable 
+forms for the plants (Lavakush et al., 2014). Some of these 
+microorganisms act as plant growth promoters by releasing 
+phytohormones such as auxins, gibberellins, and cytoki-
+nins (Castanheira et al., 2014; Shabanamol et al., 2018). This 
+
+62
+
+practice is considered eco-friendly and effective to reduce 
+crop fertilization costs (Hallmann et al., 1997), and has also 
+been evaluated with promising results because it increases 
+yield and reduces the fertilization with phosphorus up to 
+40% (Roger and Ladha, 1992; Lavakush et al., 2014). The 
+use of Azospirillum brasilense and Pseudomonas fluorescens 
+in rice crops increase aerial biomass production, harvest 
+index, and grain yield. This behavior was attribuited to 
+their performance as plant growth promoters (García de 
+Salamone et al., 2012). In Colombia, some products act as 
+nitrogen fixers and phosphorus solubilizers in rice crops. 
+However, there is only one report in Colombia of the effect 
+of Azotobacter chroococcum Beijerinck acting as nitrogen 
+fixating bacteria and plant growth promoter on cotton 
+crops (Romero et al., 2017). However, the effect of this 
+practice at the agronomic and physiological level is not 
+known for rice crops in addition to the financial benefits 
+with its application. Therefore, it was necessary to evaluate 
+some of the products used by rice producers in the country 
+such as the biofertilizer Monibac® based on the nitrogen 
+fixating bacteria A. chroococcum and a biofertilizer under 
+development based on Rhizobium pusense, which operates 
+as a phosphorus solubilizer and plant growth promoter.
+
+Considering the previously mentioned state of the art and 
+that currently there is no knowledge of the effect of the 
+integration of practices, such as the selection of sowing 
+date and biofertilization on rice crops, at the agronomic, 
+physiological and financial levels, our hypothesis is as 
+follows: the selection of the optimal sowing date with the 
+implementation of a biofertilization practice increases the 
+yield and profitability of rice crop. Accordingly, the aim of 
+this study was to evaluate the agronomic, physiological, and 
+financial behavior of variety Fedearroz 68 at three sowing 
+dates with and without biofertilization.
+
+Materials and methods
+
+Study site and plant material
+This research was carried out in the municipality of El 
+Espinal, located in the center of the province of Tolima, 
+Colombia, during the year 2017. The experimental site was 
+the Nataima research center of AGROSAVIA georeferenced 
+with coordinates 4°11’28.7” N and 74°57’39.2” W. The soil 
+of the area has a clay-loam texture and is of an alluvial 
+origin. It belongs to the order inceptisol.
+
+The plant material used was the variety Fedearroz 68 that 
+was selected because it is one of the most cultivated variet-
+ies in this agro-ecological zone and for its high yield and 
+precocity. 
+
+Agron. Colomb. 38(1) 2020The climatic variables were monitored with a Davis Van-
+tage Pro 2 meteorological station (Davis Instruments, San 
+Francisco, USA).
+
+Experimental design
+The study employed a randomized complete block design 
+in a split-plot arrangement. The main plot corresponded to 
+the three sowing dates (SD): May 26, July 7, and August 8, 
+2017. The subplot corresponded to two mineral nutrition 
+treatments (biofertilization and local production practice). 
+Each treatment was comprised of the SD x nutrition treat-
+ment interaction with three replicates, each with an area 
+of 1600 m2.
+
+Application of treatments
+Two mineral nutrition treatments were assessed in this 
+study. The first was a local production practice that in-
+cluded the application of chemically synthetized fertilizers 
+in the following rates usually applied by the local producers: 
+120 kg ha-1 of nitrogen, 80 kg ha-1 of P2O5, and 120 kg ha-1 
+of K2O. The second is the biofertilization treatment that 
+included the 100% chemical synthesis fertilization applied 
+by the local producers, plus the inoculation with nitrogen-
+fixing bacteria (A. chroococcum strain AC1 and AC10) at a 
+concentration 1x9 colony forming units (CFU) cm-3, whose 
+commercial name is Monibac® with a dose of 1000 cm3 ha-1. 
+Additionally, phosphorus and zinc solubilizing bacteria (R. 
+pusense strain B02) obtained from the germplasm bank of 
+AGROSAVIA microorganisms at a concentration of 1x10 
+CFU cm-3. These microorganisms were applied at a dose 
+of 500 g ha-1. The bacteria was sprayed to the soil between 
+21 and 23 d after plant emergence.
+
+Agronomic management of the crop
+Mechanized planting was carried out in furrows with a 
+sowing rate of 120 kg ha-1. Additionally, mineral nutrition 
+was divided into four applications administered in the same 
+quantities for both treatments. Agronomic crop manage-
+ment was used at the scale of a commercial crop. Tillage of 
+primary and secondary soil was performed. A mechanized 
+planting by furrows was carried out. Control of weeds us-
+ing pre-emergent and post-emergent herbicides selective to 
+the crop was also performed: pendimethalin 2500 cm3 ha-1, 
+clomazone 1200 cm3 ha-1, buthaclor 3000 cm3 ha-1, sodium 
+bispiribac 150 cm3 ha-1, cyhalofop 1500 cm3 ha-1. Pest and 
+disease controls were carried out with chemical synthesis 
+products based on periodic monitoring. At phenological 
+stages 30 and 61 the following active ingredients were ap-
+plied: lambdacihalotrina + thiamethoxam (insecticide) at 
+a dose of 125 cm3 ha-1 and azoxystrobin + diphenoconazole 
+(fungicide) at a dose of 500 cm3 ha-1.
+
+Estimation of gas exchange variables
+Net photosynthesis was estimated at phenological stage 65 
+(i.e., complete flowering: anthers visible in most panicles) 
+and evaluated in completely expanded young leaves using 
+an open system portable gas exchange meter LI-6400 XT 
+(Li-Cor, Lincoln, USA). The photosynthetic photon flux 
+density was 1600 μmol photons m-2 s-1, the concentration 
+of CO2 inside the chamber was 400 µmol CO2 mol-1, and 
+the vapor pressure deficit remained between 1.5 and 1.7 
+kPa. Data were collected after reaching the steady-state 
+equilibrium (~10 min). Further, the leaf area inside the 
+chamber was measured to correct the data (Quevedo et 
+al., 2019). For the evaluation of respiration and leaf carbon 
+balance (LCB), the methodologies described by Da Silva et 
+al. (2017) were followed, using an open system portable gas 
+exchange meter LI-6400 XT (Li-Cor, Lincoln, USA). The 
+photosynthetic photon flux density was 0 μmol photons 
+m-2 s-1, with a concentration of CO2 inside the chamber of 
+400 μmol CO2 mol-1. The plants were previously adapted 
+to darkness for 30 min, and the temperature was adjusted 
+inside the chamber with the maximum night temperature 
+of the previous night to simulate field conditions. With the 
+net photosynthesis and respiration data, Equation 1 was 
+used to calculate LCB.
+
+LCB =
+
+Net photosynthesis
+
+Respiration
+
+(1)
+
+Leaf area index (LAI)
+From phenological stages 21 (i.e., start of tillering: first 
+visible tillers) up to 99 (i.e., harvest), the leaf area index 
+(LAI) was estimated every 10 d. To perform such task, a 
+ceptometer ACCUPAR LP-80 (Decagon devices, Hopkins, 
+USA) was used. The evaluation was conducted between 
+11:00 and 13:00 h. The ceptometer was calibrated according 
+to the manufacturer’s instructions, and a leaf distribution 
+value of 0.96 was established. The sensor was located at 
+approximately 45 degrees from the direction of the furrow 
+(Fang et al., 2014).
+
+Interception of photosynthetically active radiation (IPAR), 
+radiation use efficiency (RUE) and harvest index
+With the LAI data, third-order logistic regressions were 
+performed, and the daily LAI value was calculated by 
+replacing data in this regression equation. With daily ac-
+cumulated solar radiation data, daily photosynthetically 
+active radiation (PAR) was estimated, which is equivalent 
+to 50% of the global solar radiation (Garcés and Restrepo, 
+2015). With this data, Equation 2 was applied to calculate 
+the daily intercepted photosynthetically active radiation 
+(IPAR). The extinction coefficient (k) was assumed to be 
+
+63
+
+Quevedo-Amaya, Beltrán-Medina, Hoyos-Cartagena, Calderón-Carvajal, and Barragán-Quijano: Selection of sowing date and biofertilization as alternatives to improve the yield and profitability of the F68 rice variety0.55, and the calculation of the total IPAR of the crop was 
+carried out by adding the daily IPAR.
+
+IPAR = PAR × exp (-k × LAI) 
+
+(2)
+
+Further, Equation 3 was used to calculate the radiation use 
+efficiency (RUE) using the sum of the total solar radiation 
+and the total dry weight obtained at phenological stage 
+99, as follows:
+
+RUE =
+
+Dry weight
+
+Accumulated solar radiation
+
+(3)
+
+The harvest index was estimated at phenological stage 99 
+and the aereal dry matter and the grain weigth were also 
+quantified. Once this information was recorded, the har-
+vest index was calculated (Zhang et al., 2013).
+
+Concentration of nutrients in tissue
+One hundred g of foliar tissue were collected from the 
+two youngest leaves during phenological stage 65. These 
+samples were analyzed by spectrophotometry in the Soil 
+and Water Laboratory of the Tibaitata research center 
+(AGROSAVIA),  where  the  nitrogen  and  phosphorus 
+contents were estimated in percentage, in addition to 
+zinc in mg kg-1.
+
+Yield 
+At phenological stage 99, four samples of 1 m2 were col-
+lected per experimental unit (Garcés and Restrepo, 2015). 
+From these samples, the whole grains were weighed and the 
+green paddy yield was calculated in kg ha-1, and adjusted 
+to a grain moisture content of 22% (Quevedo et al., 2019).
+
+Financial analysis
+Financial analysis exercises of SD and nutrition practices as 
+well as their interaction were carried out. In this analysis, 
+cost structures were elaborated where the direct and indi-
+rect costs were included. The green paddy rice sale price in 
+US dollars was set at US$0.960 kg-1. With this information, 
+the total utility, profitability, monthly profitability, unit 
+production cost, and unit utility were calculated.
+
+Data analysis
+Data analysis was performed using general and mixed 
+linear models considering SD and nutrition as a fixed ef-
+fect, and the block as a random factor. These models were 
+selected according to the Akaike and Bayesian information 
+criteria. The mean comparison test used was Di Rienzo, 
+Guzmán and Casanoves (DGC). The results show that 
+only the factor or interaction had statistical significance 
+(P≤0.05). Linear and quadratic regression analyses were 
+
+64
+
+also performed among the variables LCB, nitrogen content, 
+and yield. The selection of these variables that are highly 
+related to yield was performed using Pearson’s correlation 
+coefficient and its P-value. The analyzes described were car-
+ried out with the software RStudio version 3.5.1 (RStudio 
+Inc, Boston, USA). 
+
+Results
+
+Environmental offer
+Table 1 shows the diurnal and nocturnal temperature, and 
+accumulted solar radiation conditions to which the rice 
+plants were subjected. It is noteworthy that the maximum 
+night temperature was lower in the August SD (26.18°C) 
+because it was 0.98°C and 1.24°C below the SD conditions 
+of May and July, respectively. The accumulated solar radia-
+tion at the fruit development stage (71-79) was higher for 
+the August SD (4,307.08 Cal cm-2/d) than in July (3,877.34 
+Cal cm-2/d) and May (4,156.56 Cal cm-2/d).
+
+Crop yield
+Crop yield values showed significant differences for SD 
+factors and nutrition treatments; however, the interaction 
+of these factors did not show significant differences. The 
+SD of August showed the highest yield (8,744.43 kg ha-1 ± 
+259.24) being 10.22% and 33.43% higher than in July and 
+May, respectively (Fig. 1A). Regarding the nutrition treat-
+ments, the biofertilization treatment obtained the highest 
+yield (8,251.88 kg ha-1 ± 178.14), which is 18.92% higher 
+compared to the local production treatment (Fig. 1B).
+
+Dry matter accumulation and harvest index
+The dry matter accumulation showed significant differ-
+ences for SD. The effect of nutrition treatments was not 
+significative. The higher dry matter was for the August SD 
+(4051.95 g m-2 ± 168.31) and the lower dry matter was for 
+the May SD (2830.59 g m-2 ± 113.16) (Fig. 2A). The harvest 
+index showed significative diferences among SD. The Au-
+gust (0.52 ± 0.01) and July (0.53 ± 0.01) SD were equal to 
+a significant level, whereas the May SD showed the lowest 
+harvest index (0.47 ± 0.01) (Fig. 2B).
+
+Radiation use efficiency (RUE) 
+The RUE showed significant differences for SD factors and 
+nutrition treatments, but not for the interaction of these 
+factors. The SD of August showed the highest RUE (1.31 
+mg MJ-1 ± 0.03), namely, 17.56 and 41.23% higher than the 
+values obtained in July and May, respectively (Fig. 3A). For 
+the nutrition treatments factor, the biofertilization treat-
+ment obtained higher RUE values (1.13 mg MJ-1 ± 0.02) 
+which are 14.16% higher than those obtained with the local 
+production practices treatment (Fig. 3B).
+
+Agron. Colomb. 38(1) 2020TABLE 1. Temperature conditions between 70 and 100 days after the emergence of the rice plants established on three different sowing dates.
+
+Sowing date
+
+May
+May
+May
+July
+July
+July
+August
+August
+August
+
+Phenological 
+
+state*
+51-59
+61-69
+71-77
+51-59
+61-69
+71-77
+51-59
+61-69
+71-77
+
+Days after 
+emergence
+
+Maximum day 
+temperature (°C)
+
+Minimum night 
+temperature (°C)
+
+Maximum night 
+temperature (°C)
+
+Accumulated solar 
+radiation (Cal cm-2/day
+
+70-80
+81-90
+91-100
+70-80
+81-90
+91-100
+70-80
+81-90
+91-100
+
+34.56
+35.80
+32.97
+34.28
+34.31
+32.90
+32.40
+33.56
+30.97
+
+23.33
+23.88
+23.60
+24.47
+24.24
+23.16
+23.08
+23.17
+22.47
+
+26.79
+28.21
+26.48
+27.43
+27.62
+27.22
+26.49
+26.43
+25.62
+
+4,210.01
+4,565.91
+4,156.56
+4,510.17
+3,775.17
+3,877.34
+3,928.64
+4,139.45
+4,307.08
+
+*indicated phenological state according to the BBCH scale (Lancashire et al., 1991). Beginning of panicle emergence: 51; end of panicle emergence: 59; beginning of flowering: 61; end of flower-
+ing: 69; watery ripe: 71; late milk: 77.
+
+10000 A
+
+A
+
+9000 B
+
+A
+
+)
+1
+-
+a
+h
+ 
+g
+k
+(
+ 
+d
+l
+e
+i
+Y
+
+8000
+
+6000
+
+4000
+
+2000
+
+B
+
+August
+
+July
+
+Sowing date
+
+)
+1
+-
+a
+h
+ 
+g
+k
+(
+ 
+d
+l
+e
+i
+Y
+
+8000
+
+7000
+
+6000
+
+5000
+
+4000
+
+3000
+
+2000
+
+C
+
+May
+
+B
+
+Biofertilization
+
+Local farm practice
+
+FIGURE 1. Rice yield obtained at three sowing dates with two nutrition treatments. A) rice yield for three planting dates, and B) rice yield for two 
+nutrition treatments. Error bars correspond to the standard error. Different letters indicate treatments with significant differences (P≤0.05). 
+
+5000 A
+
+A
+
+0.56 B
+0.54
+
+A
+
+A
+
+)
+2
+-
+
+m
+ 
+g
+(
+ 
+r
+e
+t
+t
+a
+m
+ 
+y
+r
+D
+
+4000
+
+3000
+
+2000
+
+1000
+
+0
+
+B
+
+C
+
+August
+
+July
+
+Sowing date
+
+May
+
+x
+e
+d
+n
+i
+ 
+t
+s
+e
+v
+r
+a
+H
+
+0.52
+
+0.50
+
+0.48
+
+0.46
+
+0.44
+
+0.42
+
+0.40
+
+B
+
+May
+
+August
+
+July
+
+Sowing date
+
+FIGURE 2. Dry matter accumulation and harvest index in rice plants at three sowing dates. A) dry matter, and B) harvest index. Error bars correspond 
+to the standard error. Different letters indicate treatments with significant differences (P≤0.05). 
+
+65
+
+Quevedo-Amaya, Beltrán-Medina, Hoyos-Cartagena, Calderón-Carvajal, and Barragán-Quijano: Selection of sowing date and biofertilization as alternatives to improve the yield and profitability of the F68 rice variety)
+1
+-
+J
+M
+ 
+g
+m
+
+(
+ 
+y
+c
+n
+e
+i
+c
+i
+f
+f
+e
+ 
+e
+s
+u
+ 
+n
+o
+i
+t
+a
+d
+a
+R
+
+i
+
+1.6 A
+1.4
+
+A
+
+1.2
+
+1.0
+
+0.8
+
+0.6
+
+0.4
+
+0.2
+
+0
+
+B
+
+August
+
+July
+
+Sowing date
+
+B
+
+)
+1
+-
+J
+M
+ 
+g
+m
+
+(
+ 
+y
+c
+n
+e
+i
+c
+i
+f
+f
+e
+ 
+e
+s
+u
+ 
+n
+o
+i
+t
+a
+d
+a
+R
+
+i
+
+1.4
+
+1.2
+
+1.0
+
+0.8
+
+0.6
+
+0.4
+
+0.2
+
+0
+
+C
+
+May
+
+A
+
+B
+
+Biofertilization
+
+Local farm practice
+
+FIGURE 3. Radiation use efficiency in rice plants obtained at three sowing dates with two nutrition treatments. A) radiation use efficiency in three 
+sowing dates, and B) radiation use efficiency for two nutrition treatments. Error bars correspond to the standard error. Different letters indicate 
+treatments with significant differences (P≤0.05). 
+
+Leaf carbon balance (LCB)
+The LCB showed statistical differences at a significant level 
+only regarding the effect of SD. The SD of August and July 
+are equal at the statistical level (Fig. 4). However, the LCB 
+in the SD of August is 11.56 and 54.04% higher than that 
+of July and May, respectively.
+
+l
+
+e
+c
+n
+a
+a
+b
+ 
+n
+o
+b
+r
+a
+c
+ 
+f
+a
+e
+L
+
+)
+n
+o
+i
+t
+a
+r
+i
+p
+s
+e
+r
+ 
+
+2
+
+O
+C
+
+ 
+l
+o
+m
+µ
+ 
+/
+ 
+d
+e
+t
+a
+
+l
+i
+
+m
+i
+s
+s
+a
+ 
+
+2
+
+O
+C
+
+ 
+l
+o
+m
+µ
+(
+
+30
+
+25
+
+20
+
+15
+
+10
+
+5
+
+0
+
+A
+
+A
+
+B
+
+May
+
+August
+
+July
+
+Sowing date
+
+FIGURE  4.  Leaf  carbon  balance  in  rice  plants  at  phenological  phase 
+65 (i.e., complete flowering: anthers visible in most panicles) at three 
+sowing dates. Error bars correspond to the standard error. Different let-
+ters indicate treatments with significant differences (P≤0.05). 
+
+Leaf area index (LAI) and interception of 
+photosynthetically active radiation (IPAR)
+The LAI varied significantly only by the SD factor. The SD 
+of August reached a LAI of 10.38, while in May and July it 
+was lower, reaching values of 7.84 and 5.7, respectively; these 
+two SD are statistically equal (Fig. 5). Figure 6 shows the ef-
+fect of nutrition treatments on the LAI variable. Figures 6A, 
+6B and 6C show that although the maximum LAI is very 
+similar in each of the SD, with the biofertilization treatment 
+leaf area development is more accelerated compared to the 
+local production practice treatment.
+
+66
+
+x
+d
+e
+n
+i
+ 
+a
+e
+r
+a
+ 
+f
+a
+e
+L
+
+12
+
+10
+
+8
+
+6
+
+4
+
+2
+
+0
+
+A
+
+B
+
+August
+
+July
+
+Sowing date
+
+B
+
+May
+
+FIGURE 5. Leaf area index of rice plants at phenological stage 65 (i.e., 
+complete flowering: anthers visible in most panicles) at three sowing 
+dates. Error bars correspond to the standard error. Different letters indi-
+cate treatments with significant differences (P≤0.05). 
+
+Regarding the IPAR, Table 2 shows that this variable was 
+lower for the SD of August compared to the ones of May 
+and July, which showed similar behaviors. Interestingly, the 
+biofertilization treatment in the SD of August increased 
+the IPAR by 10.05%.
+
+TABLE 2. Interception of photosynthetically active solar radiation (IPAR) 
+on three sowing dates under two mineral nutrition treatments.
+
+Sowing 
+
+date
+May
+May
+July
+July
+August
+August
+
+Nutrition treatment
+
+Local farm practice
+
+Biofertilization
+
+Local farm practice
+
+Biofertilization
+
+Local farm practice
+
+Biofertilization
+
+MJ:Megajoule.
+
+IPAR
+
+(MJ m-2)
+732,740.0
+735,393.0
+742,940.4
+759,110.4
+634,755.5
+698,553.7
+
+Effect of 
+
+biofertilization (%)
+
+0.36
+
+2.18
+
+10.05
+
+Agron. Colomb. 38(1) 202012 A
+
+10
+
+x
+e
+d
+n
+i
+ 
+a
+e
+r
+a
+ 
+f
+a
+e
+L
+
+8
+
+6
+
+4
+
+2
+
+0
+
+0
+
+20
+
+40
+
+60
+
+80
+
+100
+
+120
+
+Day after emergence
+
+7 B
+
+x
+e
+d
+n
+i
+ 
+a
+e
+r
+a
+ 
+f
+a
+e
+L
+
+6
+
+5
+
+4
+
+3
+
+2
+
+1
+
+0
+
+0
+
+20
+
+40
+
+60
+
+80
+
+100
+
+120
+
+140
+
+Day after emergence
+
+12 C
+
+10
+
+x
+e
+d
+n
+i
+ 
+a
+e
+r
+a
+ 
+f
+a
+e
+L
+
+8
+
+6
+
+4
+
+2
+
+0
+
+0
+
+20
+
+40
+
+60
+
+80
+
+100
+
+120
+
+Day after emergence
+
+Biofertilization
+
+Local farm practice
+
+4.0 A
+
+)
+
+%
+
+(
+ 
+n
+e
+g
+o
+r
+t
+i
+
+N
+
+3.5
+
+3.0
+
+2.5
+
+2.0
+
+1.5
+
+1.0
+
+0.25 B
+
+)
+
+%
+
+(
+ 
+s
+u
+o
+r
+o
+h
+p
+s
+o
+h
+P
+
+0.20
+
+0.15
+
+0.10
+
+0.05
+
+0
+
+25 C
+
+)
+1
+-
+g
+k
+ 
+g
+m
+
+(
+ 
+c
+n
+i
+Z
+
+20
+
+15
+
+10
+
+5
+
+0
+
+A
+
+B
+
+August
+
+July
+
+Sowing date
+
+A
+
+B
+
+August
+
+A
+
+July
+
+Sowing date
+
+B
+
+C
+
+May
+
+A
+
+May
+
+B
+
+August
+
+July
+
+Sowing date
+
+May
+
+FIGURE  6.  Leaf  area  index  for  rice  plants  obtained  with  two  nutrition 
+treatments in three sowing dates (SD). A) May SD, B) July SD, and C) 
+August SD. Error bars correspond to the standard error. Different letters 
+indicate treatments with significant differences (P≤0.05). 
+
+Nutritional status
+The nutritional status of the rice plants evaluated by the 
+content of nitrogen, phosphorus, and zinc, only showed 
+significant differences for the SD factor. The effect of 
+nutritional treatments was not significant. The nitrogen 
+content was significantly higher in the SD of August, 
+
+FIGURE 7. Nutritional status of rice plants at phenological stage 65 (i.e., 
+complete flowering: anthers visible in most panicles). A) foliar nitrogen 
+content in rice plants in three sowing dates, B) foliar phosphorus con-
+tent in rice plants in three sowing dates, and C) foliar zinc content in 
+rice plants in three sowing dates. Error bars correspond to the standard 
+error.  Different  letters  indicate  treatments  with  significant  differences 
+(P≤0.05). 
+
+while the lowest content was observed in May (Fig. 7A). 
+Regarding the phosphorus content, the SD of July and 
+May are equal at a significant level, but higher compared 
+to August (Fig. 7B). As for the zinc content, the SD of May 
+
+67
+
+Quevedo-Amaya, Beltrán-Medina, Hoyos-Cartagena, Calderón-Carvajal, and Barragán-Quijano: Selection of sowing date and biofertilization as alternatives to improve the yield and profitability of the F68 rice varietyand July showed equal values at a significant level, while 
+in the one of August it was significantly higher compared 
+to the other SD (Fig. 7C).
+
+Relationship between leaf carbon balance (LCB) 
+and nitrogen concentration with yield
+Figure 8 shows the two variables that were most related to 
+yield (LCB and nitrogen concentration). In Figure 8A, a 
+positive linear relationship between LCB and yield is ob-
+served. Figure 8B shows a quadratic relationship between 
+nitrogen content and yield, with 3.2% nitrogen at the leaf 
+level observed at the inflection point.
+
+Financial analysis of the treatments assessed
+The financial analysis showed that the economic benefit 
+was affected by the effect of the agronomic management 
+practices (treatments) evaluated. Table 3 shows the financial 
+analysis for the SD x nutrition treatment interaction. This 
+interaction showed that the SD of August with the biofer-
+tilization practice showed the highest profit (US$800.73), 
+
+in which 35.18% profitability was reached; this contrasts 
+with the local production practice that showed 50% lower 
+profitability for this SD. On the other hand, the May SD 
+was highlighted for not obtaining any financial profit, for 
+this reason, negative profitability was found for each of the 
+nutrition treatments, reaching 1.63% and 19.47% for the 
+biofertilization and local production practices, respectively. 
+This allows observing that the exercise of producing rice in 
+this SD is completely unviable in terms of economic effi-
+ciency for the evaluated variety (Fedearroz 68). Proof of this 
+is the high production cost per kg of paddy rice produced, 
+which is higher than US¢9 for the biofertilization practice, 
+and US¢12 for the local production practice compared to 
+the SD of the month of August.
+
+Additionally, the July SD must be highlighted as it showed 
+a negative return of 3.34% with the local production prac-
+tice. However, this contrasts with what was obtained with 
+the biofertilization practice that yields a positive return of 
+20.35%, that is, a net profit of US$483.63. This is mainly 
+
+12000 A
+
+10000
+
+)
+1
+-
+a
+h
+ 
+g
+k
+(
+ 
+d
+l
+e
+i
+Y
+
+8000
+
+6000
+
+4000
+
+2000
+
+0
+
+0
+
+r2 = 0.6223
+Yield = 3519.94 + 209.11×LCB
+
+5
+
+10
+
+15
+
+20
+
+25
+
+30
+
+Leaf carbon balance (µmol CO2 assimilated / µmol CO2 respiration)
+
+B
+
+12000
+
+10000
+
+)
+1
+-
+a
+h
+ 
+g
+k
+(
+ 
+d
+l
+e
+i
+Y
+
+8000
+
+6000
+
+4000
+
+2000
+
+0
+2.4
+
+2.6
+
+2.8
+
+r2 = 0.5692
+Yield = -78955.18 + 52761.7×N - 7890×N2
+
+3.2
+
+3.0
+3.4
+Nitrogen content (%)
+
+3.6
+
+3.8
+
+4.0
+
+Leaf carbon balance vs. Yield
+
+Linear regression
+
+Leaf carbon balance vs. Yield
+
+Quadratic regression
+
+FIGURE 8. Correlation of yield with two variables evaluated at phenological stage 65 (i.e., complete flowering: anthers visible in most panicles). A) 
+correlation of yield with leaf carbon balance, and B) correlation of yield with foliar nitrogen content. Dots correspond to the original data. Solid lines 
+refer to the linear and quadratic regressions. 
+
+TABLE 3. Financial analysis of the interaction between sowing date and mineral nutrition treatment. 
+
+Sowing 
+date
+May
+May
+July
+July
+August
+August
+
+Nutrition treatment
+
+Biofertilization
+
+Local farm practice
+
+Biofertilization
+
+Local farm practice
+
+Biofertilization
+
+Local farm practice
+
+Total sales
+
+($)*
+
+Total costs
+
+($)*
+
+Accumulated
+
+profit ($)*
+
+2104.14
+1681.14
+2871.63
+2236.16
+3076.70
+2612.04
+
+2139.10
+2087.64
+2388.00
+2313.36
+2275.97
+2219.96
+
+-34.96
+-406.49
+483.63
+-77.21
+800.73
+392.09
+
+Profitability 
+
+(%)
+-1.63
+-19.47
+20.25
+-3.34
+35.18
+17.66
+
+Monthly profitability 
+
+(%)
+-0.33
+-3.89
+4.05
+-0.67
+7.04
+3.53
+
+Unit cost
+
+(kg)
+0.33
+0.40
+0.27
+0.34
+0.24
+0.28
+
+Unit profit 
+
+(kg)
+-0.01
+-0.08
+0.05
+-0.01
+0.08
+0.05
+
+*Values are given in United States dollars (USD) with an average exchange rate for 2017. 
+
+68
+
+Agron. Colomb. 38(1) 2020due to a lower unit production cost (US¢27 kg-1 of rice) 
+which generated US¢5 of net profit (Tab. 3).
+
+In the analysis of the SD practice as an independent fac-
+tor (Tab. 4), the SD in May showed a negative level of 
+profitability (-10.55%) compared to the SD in July and 
+August. Notably, in August, a higher profit of US$1,193 
+and a 26.42% profitability were obtained. 
+
+TABLE  4.  Results  of  the  accumulated  profit  and  profitability  in  three 
+sowing dates under two mineral nutrition treatments.
+
+Sowing 
+date
+
+May
+July
+August
+
+Profit
+(US$)*
+
+-441.46
+406.43
+1192.81
+
+Profitability 
+
+(%)
+
+Monthly profit
+
+(US$)*
+
+-10.55
+8.45
+26.42
+
+-88.29
+81.28
+238.56
+
+Monthly 
+
+profitability 
+
+(%)
+-2.11
+1.691
+5.28
+
+*Values are given in United States dollars (USD) with an average exchange rate of 2017. 
+
+Considering the differential result of the yield with the 
+biofertilization practice in the SD evaluated, it was found 
+that it increases a 0.22% in production costs. However, 
+this excess cost allowed achieving 17.93% profitability in 
+the three assessed SD, while the implementation of the lo-
+cal production practice showed a loss of 1.71%. With this 
+exercise, it can be inferred that the implementation of the 
+biofertilization practice allowed achieving US$1,249.4 in 
+profit, while with the local production practice, losses of 
+US$91.62 were obtained in the three SD evaluated, as can 
+be seen in Table 5.
+
+TABLE  5. Accumulated  profit  and  profitability  for  two  mineral  nutrition 
+treatments during three sowing dates.
+
+Nutrition 
+treatment
+Biofertilization
+Local farm 
+practice
+
+Profit
+(US$)*
+1249.4
+
+Profitability 
+
+(%)
+17.93
+
+Monthly profit
+
+(US$)*
+249.88
+
+-91.62
+
+-1.71
+
+-18.324
+
+Monthly 
+
+profitability (%)
+
+3.58
+
+-0.34
+
+*Values are given in United States dollars (USD) with an average exchange rate of 2017. 
+
+Discussion
+
+Rice yield is influenced significantly by the effect of the SD. 
+The highest yield was obtained in the August SD, so the 
+environmental offer in this SD is optimal for the Fedearroz 
+68 variety. Nonetheless, high RUE values were observed, 
+and this variable is related to the amount of solar radiation, 
+the capacity of the canopy to capture solar radiation and 
+the efficiency of its conversion into phytomass (Parry et 
+al., 2011; Ceotto et al., 2013). In this case, the accumulated 
+solar radiation at the late milk stage in the August SD 
+
+(4,307.08 Cal cm-2/day) was higher than other SD. The so-
+lar radiation collection capacity estimated by the LAI was 
+higher than 10 during the August SD, which is considered 
+the optimal LAI for rice plants to obtain a maximum yield 
+(Mae et al., 2006; Quevedo et al., 2019). However, it is note-
+worthy that the lowest IPAR was obtained during this SD, 
+which is contradictory to what was found by Garcés and 
+Restrepo (2015) in the municipality of Saldaña (province of 
+Tolima), where they identified that the SD where the highest 
+IPAR value was obtained was the one with the maximum 
+yield (7000 kg ha-1). This may be because the Fedearroz 68 
+variety in the presence of high radiation suffers a photo-
+inhibition phenomenon.
+
+For the efficiency in the conversion of solar radiation into 
+carbohydrates, the LCB was directly related to the yield. 
+For this reason, in the SD of August, the highest yield and 
+ respiration; this, 
+the LCB reached 25 μmol CO2 / μmol CO2
+however, is explained by the lower nighttime temperature 
+that occurred in this SD. The above is favorable for rice 
+plants since this environmental condition decreases their 
+respiration rate (Alvarado et al., 2017). Furthermore, this 
+condition affects the availability of carbohydrates for 
+grain filling, so the magnitude of respiration can increase 
+or reduce yield (Peraudeau et al., 2015). The high night 
+temperature could generate damage of cell membrane by 
+the generation of reactive species of oxygen (Xue et al., 
+2012). The partitioning to developing sink (grain) was 
+determinated through the harvest index which is affected 
+by the high night temperature (Zhang et al., 2013). In this 
+research, it was observed that the harvest index and dry 
+matter accumulation were higher on the August and July 
+SD, when the night temperature was lower than in the May 
+SD. This is related with the high yield on the August SD 
+and the low yield on the May SD.
+
+Regarding the ability to fix CO2, no clear relationship was 
+found between the net photosynthesis evaluated at the 
+leaf level and crop yield, which is contradictory to what 
+Hidayati et al. (2016) found. However, it is hypothesized 
+that in the SD of August the photosynthesis at the canopy 
+level was higher than in the other SD, given that only in this 
+SD a nitrogen concentration higher than 3% was reached, 
+which is considered ideal (Ray, 2013). Nonetheless, this can 
+be related to a high concentration of chlorophyll (Lee et al., 
+2011) and RuBisCO (Imai et al., 2008). In addition to this, 
+authors as Mae et al. (2006) consider that the optimal LAI 
+has a value of 10.38, so considering the above mentioned, 
+the photosynthesis at the canopy level may be higher com-
+pared to the other SD. However, this hypothesis must be 
+verified in future studies.
+
+69
+
+Quevedo-Amaya, Beltrán-Medina, Hoyos-Cartagena, Calderón-Carvajal, and Barragán-Quijano: Selection of sowing date and biofertilization as alternatives to improve the yield and profitability of the F68 rice varietyThe nitrogen content was related to yield in a quadratic 
+way; hence, the maximum yield was found with a foliar 
+nitrogen content of 3.3%. However, if the content is higher 
+than this value, the yield shows a decreasing tendency. This 
+can be attributed to the higher availability of the element in 
+the soil solution, which increases vegetative development, 
+and specifically, the development of late tillers that affect 
+the IPAR and the distribution of carbohydrates (Wang et 
+al., 2017).
+
+Regarding the effect of the nutrition treatments on yield, 
+biofertilization was found to increase yield by 18.92%; this 
+was similar to what was found in other studies in which 
+this practice increased yield between 19.8% and 29.32% 
+(Roger and Ladha, 1992; Lavakush et al., 2014). However, 
+no significant changes were observed in the concentration 
+of nitrogen, phosphorus, and zinc in tissue at phenological 
+stage 65 as a result of this practice. This suggested that the 
+biofertilization did not increase the availability in soil of 
+nitrogen, phosphorus and zinc. Despite this, biofertiliza-
+tion affected the growth level because the plants under 
+this treatment developed their LAI more quickly, which 
+allowed increasing IPAR up to 10.05%. This behavior can 
+be attributed to the fact that the phosphate solubilizing 
+bacterium R. pusense strain B02 and A. chroococcum act 
+as plant growth promoters as they produce indole acetic 
+acid that is an auxin (Castanheira et al., 2014; Romero et 
+al., 2017) controlling cell division and foliar expansion 
+processes (Li et al., 2007). Moreover, they have also been 
+found to affect the degree of foliar inclination, which gener-
+ates a higher leaf area exposed to light (Zhao et al., 2013). 
+For these reasons, it is believed that leaf development and 
+IPAR were higher with the biofertilization treatment. By 
+increasing the uptake of light, the CO2 fixation capacity 
+increases (Garcés and Restrepo, 2015), so the plant would 
+have greater availability of photoassimilates to fill a higher 
+number of demanding organs, producing the increase in 
+yield that was observed in this study.
+
+The financial analysis of the evaluated practices allowed 
+estanblishing the level of productivity of the local pro-
+duction practice in economic terms. In this practice, low 
+percentages of profitability were obtained, which in many 
+cases generates economic losses. The above was evidenced 
+in two of the three SD evaluated; the SD of May showed a 
+negative return of 10.55% with losses of US$441.4, while 
+in  the  SD  of  July  there  was  a  positive  profitability  of 
+8.45% and a profit of US$406.46. The latter differs with 
+the results found by Akbar et al. (2010), who evaluated 
+the Super Basmati variety in six SD, estimating a loss of 
+
+70
+
+US$40.47 ha-1. Additionally, Bashir et al. (2010) also re-
+ported that the July SD cultivated with the KS-282 variety 
+recorded a loss of US$184.54. In contrast, Osman et al. 
+(2015) stated that this SD shows a higher net profit with 
+US$746.07  ha-1  in  the  semi-arid  conditions  of  Sudan, 
+which reach a yield of 2900 kg ha-1 with the Nerica 4 va-
+riety. A 17.66% profitability was obtained in the August 
+SD with the local production practice, However, with 
+the implementation of the biofertilization practice, the 
+profitability increased up to 35.18%. This practice was 
+also crucial in the July SD, given that it showed a return 
+of 20.25% yielding a cumulative profit of US$1,284.36 ha-1, 
+while with the local production practice, a negative return 
+of -3.34% was obtained. Considering the above, we can 
+conclude that the use of biofertilizers is a viable alternative 
+from the technical and economic points of view, which is 
+similar to what was stated by Mohammadi and Sohrabi 
+(2012), who also reported that the use of biofertilizers 
+plays a key role in soil productivity and sustainability.
+
+Conclusions 
+
+Crop yield and profitability was affected by the manage-
+ment practices evaluated. With the selection of the sowing 
+date, it was possible to maximize the yield of the Fedear-
+roz 68 variety, given by the occurrence of low nocturnal 
+temperatures during flowering and an ideal range of solar 
+radiation. With the biofertilization practice, plant growth 
+was improved allowing a better light interception and, 
+therefore, higher radiation use efficiency.
+
+The selection of the sowing date does not change the pro-
+duction costs but increases the profitability of up to 26.42%. 
+Further, with the biofertilization practice, the production 
+cost increases by 0.22%, while the profitability increases 
+by up to 35.18%. This allowed reducing the production 
+unit cost to US$0.24 kg-1. For this reason, we conclude that 
+these practices are viable from the technical and economic 
+points of view because they increase productivity and eco-
+nomic benefit. However, this should be evaluated in other 
+varieties and agroecological zones, to allow the elaboration 
+of recommendations for a large part of the rice producing 
+areas of Colombia.
+
+Acknowledgments
+The authors would like to thank Corporación Colombiana 
+de Investigación Agropecuaria - AGROSAVIA and Min-
+isterio de Agricultura y Desarrollo Rural (MADR) who 
+provided the resources to finance this research.
+
+Agron. Colomb. 38(1) 2020Literature cited
+Akbar, N., A. Iqbal, H.Z. Khan, M.K. Hanif, and U. Bashir. 2010. 
+Effect of different sowing dates on the yield and yield compo-
+nents of direct seeded fine rice (Oryza sativa L.). J. Plant Breed. 
+Crop Sci. 2(10), 312-315.
+
+Alvarado, O., G. Garces, and H. Restrepo. 2017. The effects of night-
+time temperatures on physiological and biochemical traits in 
+rice. Not. Bot. Horti. Agrobot. Cluj-Napoca 45(1), 157-163. Doi: 
+10.15835/nbha45110627
+
+Bashir, M.U., N. Akbar, A. Iqbal, and H. Zaman. 2010. Effect of dif-
+ferent sowing dates on yield and yield components of direct 
+seeded coarse rice (Oryza sativa L). Pak. J. Agri. Sci. 47(4), 
+361-365.
+
+Castanheira, N., A. Dourado, P. Alves, A. Cortés, A. Delgado, Â. 
+Prazeres, B. Nuno, C. Sánchez, M. Barreto, and P. Freleira. 
+2014. Annual ryegrass-associated bacteria with potential for 
+plant growth promotion. Microbiol. Res. 169(9-10), 768-779. 
+Doi: 10.1016/j.micres.2013.12.010
+
+Ceotto, E., M. Di, F. Castelli, F. Badeck, F. Rizza, C. Soave, A. Volta, 
+G. Villani, and V. Marletto. 2013. Comparing solar radiation 
+interception and use efficiency for the energy crops giant 
+reed (Arundo donax L.) and sweet sorghum (Sorghum bicolor 
+L. Moench). Field Crops Res. 149, 159-166. Doi: 10.1016/j.
+fcr.2013.05.002
+
+Da Silva, J.R., A.E. Patterson, W.P. Rodrigues, E. Campostrini, and 
+K.L. Griffin. 2017. Photosynthetic acclimation to elevated CO2 
+combined with partial rootzone drying results in improved 
+water use efficiency, drought tolerance and leaf carbon balance 
+of grapevines (Vitis labrusca). Environ. Exp. Bot. 134, 82-95. 
+Doi: 10.1016/j.envexpbot.2016.11.007
+
+Delerce, S., H. Dorado, A. Grillon, M.C. Rebolledo, S.D. Prager, V.H. 
+Patiño, G. Garcés, and D. Jiménez. 2016. Assessing weather-
+yield relationships in rice at local scale using data mining 
+approaches. PLOS ONE 11(8), 1-25. Doi: 10.1371/journal.
+pone.0161620
+
+Fang, H., W. Li, S. Wei, and C. Jiang. 2014. Seasonal variation of 
+leaf area index (LAI) over paddy rice fields in NE China: 
+Intercomparison of destructive sampling, LAI-2200, digital 
+hemispherical  photography  (DHP),  and  AccuPAR  meth-
+ods. Agr. Forest. Meteorol. 198-199, 126-141. Doi: 10.1016/j.
+agrformet.2014.08.005
+
+Garcés,  G.  and  H.  Restrepo.  2015.  Growth  and  yield  of  rice 
+cultivars  sowed  on  different  dates  under  tropical  condi-
+tions. Cienc. Investig. Agrar. 42(2), 217-226. Doi: 10.4067/
+S0718-16202015000200008
+
+García de Salamone, I.E., J.M. Funes, L.P. Di Salvo, J.S. Escobar-
+Ortega, F. D’Auria, L. Ferrando, and A. Fernandez-Scavino. 
+2012. Inoculation of paddy rice with Azospirillum brasilense 
+and Pseudomonas fluorescens: Impact of plant genotypes on 
+rhizosphere microbial communities and field crop production. 
+Appl. Soil Ecol. 61, 196-204. Doi: 10.1016/j.apsoil.2011.12.012
+Hallmann, J., A. Quadt, W.F. Mahaffee, and J. Kloepper. 1997. 
+Bacterial endophytes in agricultural crops. Can. J. Microbiol. 
+43(10), 895-914. Doi: 10.1139/m97-131
+
+Han, H., C. Building, S. Campus, and S. Bonington. 2018. Ap-
+praisal  of  biofertilizers  in  rice:  To  supplement  inorganic 
+
+chemical fertilizer. Rice Sci. 25(6), 357-362. Doi: 10.1016/j.
+rsci.2018.10.006
+
+Hidayati, N., T. Triadiati, and I. Anas. 2016. Photosynthesis and 
+transpiration rates of rice cultivated under the system of sice 
+intensification and the effects on growth and yield. HAYATI J. 
+Biosci. 23(2), 67-72. Doi: 10.1016/j.hjb.2016.06.002
+
+Iizumi, T., J. Luo, A. Challinor, G. Sakurai, M. Yokozawa, H. Sakuma, 
+M. Brown, and T. Yamagata. 2014. Impacts of El Niño Southern 
+Oscillation on the global yields of major crops. Nat. Commun. 
+5(3712), 1-7. Doi: 10.1038/ncomms4712
+
+Imai, K., Y. Suzuki, T. Mae, and A. Makino. 2008. Changes in the 
+synthesis of Rubisco in rice leaves in relation to senescence and 
+N influx. Ann. Bot. 101(1), 135-144. Doi: 10.1093/aob/mcm270
+IPCC - Intergovernmental Panel on Climate Change. 2014. Cam-
+bio  Climático  2014:  Informe  de  síntesis.  IPCC,  Geneva, 
+Switzerland.
+
+Ju, C., R. Buresh, Z. Wang, H. Zhang, L. Liu, J. Yang, and J. Zhang. 
+2015. Root and shoot traits for rice varieties with higher grain 
+yield and higher nitrogen use efficiency at lower nitrogen 
+rates application. Field Crops Res. 175, 47-55. Doi: 10.1016/j.
+fcr.2015.02.007
+
+Khalifa, A., W. Elkhoby, and E. Okasha. 2014. Effect of sowing dates 
+and seed rates on some rice cultivars. Afr. J. Agric. Res. 9(2), 
+196-201. Doi: 10.5897/ajar08.233
+
+Krüger, O. and C. Adam. 2017. Phosphorus in recycling fertilizers 
+-  analytical  challenges.  Environ.  Res.  155,  353-358.  Doi: 
+10.1016/j.envres.2017.02.034
+
+Lavakush, J., J. Yadav, J. Verma, D. Jaiswal, and A. Kumar. 2014. 
+Evaluation of PGPR and different concentration of phos-
+phorus level on plant growth, yield and nutrient content of 
+rice (Oryza sativa L). Ecol. Eng. 62, 123-128. Doi: 10.1016/j.
+ecoleng.2013.10.013
+
+Lee, Y., C. Yang, K. Chang, and Y. Shen. 2011. Effects of nitrogen 
+status on leaf anatomy, chlorophyll content and canopy reflec-
+tance of paddy rice. Bot. Stud. 52, 295-303.
+
+Li, L., D. Kang, Z. Chen, and L. Qu. 2007. Hormonal regulation of 
+leaf morphogenesis in Arabidopsis. J. Integr. Plant Biol. 49(1), 
+75-80. Doi: 10.1111/j.1744-7909.2006.00410.x
+
+Mae, T., A. Inaba, Y. Kaneta, S. Masaki, M. Sasaki, M. Aizawa, S. 
+Okawa, S. Gasegawa, and A. Makino. 2006. A large-grain 
+rice cultivar, Akita 63, exhibits high yields with high physi-
+ological N-use efficiency. Field Crops Res. 97(2-3), 227-237. 
+Doi: 10.1016/j.fcr.2005.10.003
+
+Mohammadi, K. and Y. Sohrabi. 2012. Bacterial biofertilizers for 
+sustainable crop production: a review. ARPN J. Agric. Biol. 
+Sci. 7(5), 307-316.
+
+Osman, K., A. Mustafa, Y. Elsheikh, E. Idris, and P. Box. 2015. Influ-
+ence of different sowing dates on growth and yield of direct 
+seeded rice (Oryza sativa L.) in semi-arid zone (Sudan). Int. J. 
+Agron. Agric. Res. 6(6), 38-48.
+
+Pal, R., G. Mahajan, V. Sardana, and B. Chauhan. 2017. Impact of 
+sowing date on yield, dry matter and nitrogen accumulation, 
+and  nitrogen  translocation  in  dry-seeded  rice  in  North-
+West India. Field Crops Res. 206, 138-148. Doi: 10.1016/j.
+fcr.2017.01.025
+
+71
+
+Quevedo-Amaya, Beltrán-Medina, Hoyos-Cartagena, Calderón-Carvajal, and Barragán-Quijano: Selection of sowing date and biofertilization as alternatives to improve the yield and profitability of the F68 rice varietyParry, M., M. Reynolds, M. Salvucci, C. Raines, P. Andralojc, X. Zhu, 
+D. Price, A. Condon, and R.T. Furbank. 2011. Raising yield 
+potential of wheat. II. Increasing photosynthetic capacity and 
+efficiency. J. Exp. Bot. 62(2), 453-467. Doi: 10.1093/jxb/erq304
+Patel, D., A. Das, G. Munda, P. Ghosh, J. Sandhya, and M. Kumar. 
+2010.  Evaluation  of  yield  and  physiological  attributes  of 
+high-yielding rice varieties under aerobic and flood-irrigated 
+management practices in mid-hills ecosystem. Agric. Water 
+Manage. 97(9), 1269-1276. Doi: 10.1016/j.agwat.2010.02.018
+
+Peraudeau, S., T. Lafarge, S. Roques, C.O. Quiñones, A. Clement, 
+P. Ouwerkerk, J. Van Rie, D. Fabre, K. Jagadish, and M. Ding-
+kuhn. 2015. Effect of carbohydrates and night temperature on 
+night respiration in rice. J. Exp. Bot. 66(13), 3931-3944. Doi: 
+10.1093/jxb/erv193
+
+Quevedo, Y., J. Beltrán, and E. Barragán. 2019. Identification of cli-
+matic and physiological variables associated with rice (Oryza 
+sativa L.) yield under tropical conditions. Rev. Fac. Nac. Agron. 
+Medellín 72(1), 8699-8706. Doi: 10.15446/rfnam.v72n1.72076
+Ray, C. 2013. Reference sufficiency ranges for plant analysis in the 
+southern region of the United States. URL: www.ncagr.gov/
+agronomi/saaesd/scsb394.pdf (accessed January 2019).
+
+Reinhold, B. and T. Hurek. 2011. Living inside plants: bacterial en-
+dophytes. Curr. Opin. Plant Biol. 14(4), 435-443. Doi: 10.1016/j.
+pbi.2011.04.004
+
+Roberts, T. and A. Johnston. 2015. Phosphorus use efficiency and 
+management in agriculture. Resour. Conserv. Recycl. 105, 
+275-281. Doi: 10.1016/j.resconrec.2015.09.013
+
+Roger, P. and J. Ladha. 1992. Biological N2 fixation in wetland rice 
+fields: estimation and contribution to nitrogen balance. Plant 
+Soil 141(1-2), 41-55. Doi: 10.1007/bf00011309
+
+Romero, F., J. Abril, M. Camelo, A. Moreno-Galván, I. Pastrana, D. 
+Rojas-Tapias, and R. Bonilla. 2017. Azotobacter chroococcum 
+as a potentially useful bacterial biofertilizer for cotton (Gossy-
+pium hirsutum): Effect in reducing N fertilization. Rev. Argent. 
+Microbiol. 49(4), 377-383. Doi: 10.1016/j.ram.2017.04.006
+
+Shabanamol, S., K. Divya, T. George, K. Rishad, T. Sreekumar, and 
+M. Jisha. 2018. Characterization and in planta nitrogen fixation 
+of plant growth promoting endophytic diazotrophic Lysini-
+bacillus sphaericus isolated from rice (Oryza sativa). Physiol. 
+Mol. Plant Pathol. 102, 46-54. Doi: 10.1016/j.pmpp.2017.11.003
+
+Tilman, D. 2001. Diversity and productivity in a long-term grass-
+land experiment. Science 294(5543), 843-845. Doi: 10.1126/
+science.1060391
+
+Van Ittersum, M.K., F. Ewert, T. Heckelei, J. Wery, J. Alkan Ols-
+son, E. Andersen, I. Bezlepkina, F. Brouwer, M. Donatelli, 
+G. Flichman, L. Olsson, A. Rizzoli, T. Van der Wal, E. Wien, 
+and  J.  Wolf.  2008.  Integrated  assessment  of  agricultural 
+systems - a component-based framework for the European 
+Union (SEAMLESS). Agr. Syst. 96(1-3), 150-165. Doi: 10.1016/j.
+agsy.2007.07.009
+
+Velázquez, M., M. Cabello, L. Elíades, M. Russo, N. Allegrucci, and 
+S. Schalamuk. 2017. Combinación de hongos movilizadores 
+y solubilizadores de fósforo con rocas fosfóricas y materiales 
+volcánicos para la promoción del crecimiento de plantas de 
+lechuga (Lactuca sativa L.). Rev. Argent. Microbiol. 49(4), 
+347-355. Doi: 10.1016/j.ram.2016.07.005
+
+Wang, Y., J. Lu, T. Ren, S. Hussain, C. Guo, S. Wang, R. Cong, and 
+X. Li. 2017. Effects of nitrogen and tiller type on grain yield 
+and physiological responses in rice. AoB Plants 9(2), 1-14. Doi: 
+10.1093/aobpla/plx012
+
+Xue, D.W., H. Jiang, J. Hu, X.Q. Zhang, L.B. Guo, D.L. Zeng, G.J. 
+Dong, G.C. Sung, and Q. Qian. 2012. Characterization of 
+physiological response and identification of associated genes 
+under heat stress in rice seedlings. Plant Physiol. Biochem. 61, 
+46-53. Doi: 10.1016/j.plaphy.2012.08.011
+
+Yosef Tabar, S. 2013. Role of biological nitrogen fixation in rice. Int. 
+
+J. Geol. Agric. Environ. Sci. 1(1), 9-12. 
+
+Zhang, Y., Q. Tang, S. Peng, Y. Zou, S. Chen, W. Shi, J. Quin, and 
+M.R.C. Laza. 2013. Effects of high night temperature on yield 
+and agronomic traits of irrigated rice under field chamber 
+system condition. Aust. J. Crop Sci. 7(1), 7-13.
+
+Zhao, S., J. Xiang, and H. Xue. 2013. Studies on the rice leaf incli-
+nation1 (LC1), an IAA-amido synthetase, reveal the effects of 
+auxin in leaf inclination control. Mol. Plant 6(1), 174-187. Doi: 
+10.1093/mp/sss064
+
+Zhu, L., F. Shah, L. Nie, K. Cui, T. Shah, W. Wu, Y. Chen, C. Chen, 
+K. Wang, Q. Wang, Y. Lian, and J. Huang. 2013. Efficacy of 
+sowing date adjustment as a management strategy to cope with 
+rice (Oryza sativa L.) seed quality deterioration due to elevated 
+temperature. Aust. J. Crop Sci. 7(5), 543-549. 
+
+72
+
+Agron. Colomb. 38(1) 2020

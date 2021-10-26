@@ -1,0 +1,1825 @@
+Agricultural Systems 110 (2012) 152–161
+
+Contents lists available at SciVerse ScienceDirect
+
+Agricultural Systems
+
+j o u r n a l h o m e p a g e : w w w . e l s e v i e r . c o m / l o c a t e / a g s y
+
+Why has small-scale irrigation not responded to expectations with traditional
+subsistence farmers along the Senegal River in Mauritania?
+Jordi Comas a,⇑
+Helena Gómez-Macpherson d
+a Universitat Politècnica de Catalunya, Campus del Baix Llobregat, c/Esteve Terrades 8, 08860 Castelldefels, Spain
+b School of Land and Environment, The University of Melbourne, Victoria 3010, Australia
+c Société Nationale pour le Développement Rural, B.P. 321, Nouakchott, Mauritania
+d Instituto de Agricultura Sostenible, Consejo Superior de Investigaciones Cientíﬁcas, Alameda del Obispo s/n, 14080 Córdoba, Spain
+
+, David Connor b, Mohamed El Moctar Isselmou c, Luciano Mateos d,
+
+a r t i c l e
+
+i n f o
+
+a b s t r a c t
+
+Article history:
+Received 16 November 2011
+Received in revised form 13 February 2012
+Accepted 10 April 2012
+Available online 19 May 2012
+
+Keywords:
+Farming system
+Food security
+Irrigation
+Mauritania
+Senegal River Valley
+Subsistence agriculture
+
+The objective of this paper is to evaluate why small-scale farmers do not persist with irrigation along the
+Senegal River Valley of Mauritania. Surveys of all households of 12 villages that combine traditional agri-
+culture with irrigated rice production collected information on workload, inputs and productivity of crop-
+ping systems together with food requirement and costs in local markets. Analyses revealed that, at the
+scale of farming attempted, there is no shortage of labor within most households when irrigated rice is
+combined with traditional rain fall cropping in the wet season and ﬂood-recession crops in the cold,
+dry season. There is, however, a major limitation to successful combination in the generally negative
+return of rice production to labor and inputs. While input costs for traditional systems are very small, real
+costs of rice production (4000 kg paddy/ha) exceed returns in most cases. Farmers only persist with irri-
+gation for as long as the infrastructure functions with minimum maintenance. This explains the observed
+gradual abandonment of many irrigation schemes unless additional investment is available to repay ini-
+tial loans and renew infrastructure. While operational, the schemes do add signiﬁcantly to food security
+in the villages and offer paid labor to landless residents. Greater yields of rice, greater irrigation water-use
+efﬁciency through improved irrigation management, crops that demand less water and more intensive
+use of irrigated land are options to increase return to inputs. Success here would remove the food con-
+tribution from traditional agriculture currently required to sustain irrigated rice production, and establish
+a continuing and proﬁtable contribution from irrigated agriculture.
+
+Ó 2012 Elsevier Ltd. All rights reserved.
+
+1. Introduction
+
+Mauritania is a large country of 1.03 million km2 with a small
+population of 3.4 million of whom 59% live in rural areas (World
+Bank, 2011). Low rainfall limits rural settlement and crop produc-
+tion to the south of the country, along the valley of the Senegal Riv-
+er. There, 17% of national land area receives on average, from west
+to east, annual rainfall ranging between 200 and 500 mm that is
+concentrated during the wet season (June–September). High tem-
+peratures combined with dry conditions in spring and autumn
+make the climate uniquely harsh (van Keulen and Breman, 1990).
+Traditional crops are grown under rain fed conditions in the wet
+season on land away from the river (known locally as Dieri) and in
+the cold dry season on low lying land close to the river, as ﬂoods
+⇑ Corresponding author.
+
+E-mail addresses: jordi.comas-angelet@upc.edu (J. Comas), djconnor@unimelb.
+edu.au (D. Connor), moctarissell@yahoo.fr (M.E.M. Isselmou), ag1mainl@uco.es
+(L. Mateos), ag1gomah@uco.es (H. Gómez-Macpherson).
+
+0308-521X/$ - see front matter Ó 2012 Elsevier Ltd. All rights reserved.
+http://dx.doi.org/10.1016/j.agsy.2012.04.002
+
+recede annually (known locally as Falo), and in more extensive
+areas that ﬂood intermittently (known locally as Walo). Average
+cultivated areas of rain fed and ﬂood-recession crops in the
+south-west are 42,500 and 13,500 ha (DPCSE, 2009), respectively,
+representing 13% of potentially arable land of the country.
+
+Irrigated rice was introduced in Mauritania to improve food
+security following a prolonged period with frequent episodes of
+low rainfall that started in the early 1970s. Following construction
+of the Diama Dam near the river mouth in 1986 that retains ample
+fresh water throughout the year and avoids salt intrusion during
+the dry season, irrigation schemes were developed on Walo land
+and protected from ﬂooding by banks constructed for the purpose.
+One third (40,261 ha) of potentially irrigable area of around
+135,000 ha has been developed to irrigation. Of this, 26% is in small
+and medium collective schemes (<100 ha) managed by associa-
+tions of smallholder farmers within individual villages (FAO,
+2005). Despite this substantial investment, less than 40% of the irr-
+igable area remains in production (FAO, 2005; DPCSE, 2009).
+
+J. Comas et al. / Agricultural Systems 110 (2012) 152–161
+
+153
+
+Despite these developments, Mauritania remains a net importer
+of cereals. National annual cereal consumption is 545,600 t, i.e.
+176 kg/cap (40% wheat, 34% sorghum and maize and 26% rice). Al-
+most all wheat and about 48% of rice are imported (FAO, 2007). Per
+capita cereal production (50 kg/person) is well below African aver-
+age of 136 kg/person (FAO, 2007).
+
+Various reasons have been proposed to explain abandonment of
+irrigation schemes, including, high investment for construction,
+operating and maintenance costs, absence of mechanization for
+land preparation, sowing and harvesting, low yields related to
+unsuitable planting dates and inadequate supply of fertilizer and
+herbicide, lack of extension advice, the mandated concentration
+on rice production compulsory to obtain credit, and deterioration
+of the schemes due to lack of maintenance and occasional ﬂooding
+(MDRE, 1999; Haefele et al., 2001; García-Bolaños et al., 2011).
+There have, however, been few studies that help identify the
+causes at a time when international donors continue with develop-
+ment of new, and renovation of existing, irrigation schemes (Con-
+nor et al., 2008; Mateos et al., 2010; García-Bolaños et al., 2011).
+The aim of this study is to evaluate two, nonexclusive, hypoth-
+eses to explain why irrigation has not responded to expectations in
+many villages of small-scale subsistence farmers. The ﬁrst is that
+the workload and calendar of irrigated rice cropping does not ﬁt
+with traditional rain fed and ﬂood-recession cropping. The second
+is that return to effort of irrigated rice compares unfavorably with
+traditional cropping. For either reason, householders would behave
+rationally by giving priority to traditional crops that are the major
+supply of household cereal staples. Analyses are based on surveys
+of workload in traditional and irrigated cropping together with
+food production, requirement and costs in villages spaced along
+the length of the Senegal River Valley.
+
+This study is presented at a time when irrigation is regaining
+attention as means for enhancing food security and hastening rural
+development in poor counties particularly in Sub-Saharan Africa
+(World Bank 2008a,b). This renewed interest is based in studies
+that have reviewed linkages between irrigation and poverty in Asia
+and some Sub-Saharan countries (e.g. Hanjra et al., 2009). These
+studies have identiﬁed increased agricultural productivity and less
+inequality (due primarily to more employment, higher wages and
+cheaper food) as the main pathways through which irrigation con-
+tributes to reduce poverty. While many authors advocate that
+external (namely socio-economic) factors also inﬂuence the suc-
+cess of irrigation in arid and semiarid agricultural systems (Rijsber-
+man, 2003; Hussain, 2007), the effect of internal factors such as
+competition between irrigated cropping and traditional rain fed
+systems that conform livelihood in the same community have been
+studied more rarely.
+
+2. Material and methods
+
+2.1. Agricultural systems of target area
+
+The target population is subsistence farmers living by tradi-
+tional farming practices in small villages scattered on a strip of
+land, 580 km long and 40 km wide, along the north bank of the
+Senegal River. A small or medium collective irrigation scheme
+had been developed in each village in the late 1980s together with
+a farmers’ association created to manage it.
+
+All traditional crops are grown using local landraces without fer-
+tilizers or pesticides. Most operations are performed by hand; mech-
+anization is practically nonexistent. In rain fed cropping, polycultures
+of sorghum (or pearl millet in areas of lowest rainfall) with cowpea
+and watermelon are sown once or twice after the ﬁrst soaking rains,
+usually in July, and are harvested in October. Flood-recession crops
+are sown gradually during October–November as ﬂoods retreat and
+
+are harvested in February–March. Common combinations are sor-
+ghum–cowpea on Walo and maize–cowpea on Falo (Ba, 2002).
+
+Irrigation is by ﬂood in small plots managed by individual house-
+holds with water pumped from the river and delivered by channels
+according to community agreements. Typical irrigated area man-
+aged by individual households is 0.2–1 ha (García-Bolaños et al.,
+2011). This system was developed for its suitability for rice. Most
+work is done manually, although in a few instances a tractor may
+be available to assist in land preparation, particularly in the west
+where rice is harvested by machine also. Rice cultivars are Sahel
+108, Sahel 201 and Sahel 202 (FAO, 2003). Recommended fertiliza-
+tion rates are 100 kg/ha di-ammonium phosphate and 300 kg/ha
+urea but much lower doses are used in practice (Poussin et al., 2003).
+
+2.2. Surveys
+
+All households of 12 representative villages spaced along the
+Senegal River Valley were surveyed, 10 in 2008 and two in 2009
+(1584 households in total). Survey information was recorded dur-
+ing personal interviews conducted by trained local technicians.
+Fig. 1 shows locations of all villages and distribution of annual rain-
+fall across the region.
+
+Information was collected on (1) land and crop areas of tradi-
+tional and irrigated crops and (2) household characteristics, includ-
+ing number of adults, children, men and women active in
+agriculture, and emigrants. The latter, are members living away
+who contribute to household funds. Additional information was
+collected in all villages in 2009 using a stratiﬁed random subsam-
+ple of 10% of each household type as established previously. De-
+tailed information was collected on (3) crop yields, (4) workload
+calendar by crop and operation, (5) quantities and costs of inputs
+and investments, (6) household consumption of cereals and pulses
+(sorghum, maize, wheat, rice and cowpea). A weekly retail survey
+(7) of cereal prices for rice, sorghum, maize and wheat was main-
+tained from October 2008 to October 2009 in the riverside towns of
+Rosso, Boghé, and Kaedi to supplement ofﬁcial statistics.
+
+2.3. Analytical procedures
+
+Analyses were made for individual households in each village
+classiﬁed into four groups according to activity in traditional (T)
+and irrigated (I) cropping, thus providing four categories, viz. 0
+(no cropping), T, I, and TI. Derived parameters, included in analy-
+ses, were calculated from survey data as follows:
+
+Net production of grain was calculated as gross production less
+costs including, by religious tradition, about 10% of harvest from
+traditional crops and 5% of paddy to people who support with their
+work and to the neediest people of the village. For traditional crops
+the only other cost is for seed. For rice, additional costs comprise
+direct input costs for individual crops and annual amortization of
+the irrigation infrastructure. Therefore two estimates of net pro-
+duction were made for rice, one using direct costs only, the other
+total costs including amortization.
+
+The costs for rice were calculated as follows: direct input costs
+are incurred for consumption of diesel fuel, fertilizer, seed, and
+pesticides, machine hire for harvesting in villages (1–3) of Trarza
+Region, plus a credit charge of 15% p.a. for 5 months (sowing to
+harvest). Mean values were calculated and used for the four Re-
+gions individually. Amortization costs comprise two components
+and were applied equally to all
+irrigation schemes. First,
+46,250 UM/ha that includes 15% interest according to national
+rules (UNCACEM, 2008) for a pump capable of irrigating 20 ha for
+4 years. Second, 480,000 UM/ha that over 10 years repays 30% of
+construction cost, the remainder is government subsidy according
+to establishment conditions of the World Bank in Mauritania
+(World Bank, 2005).
+
+154
+
+J. Comas et al. / Agricultural Systems 110 (2012) 152–161
+
+Fig. 1. Rainfall zones of southwestern Mauritania and location of 12 surveyed villages in four regions along the northern bank of the Senegal River. Village details are
+presented in Table 1.
+
+Ratio of household production of human digestible energy to con-
+sumption provides an index of adequacy of food supply in subsis-
+tence agriculture. It was calculated from net production based on
+input costs only and consumption of cereal and cowpea ﬂour. Flour
+yield, as proportion of grain mass produced, and its digestibility
+were taken as 0.85 and 14.6 MJ/kg for sorghum and maize, 0.85
+and 13.9 MJ/kg for cowpea, and 0.62 and 15.1 MJ/kg for paddy rice
+(Burgess and Glasauer, 2004).
+
+Return to labor was calculated as the ratio of value of net pro-
+duction to cost of labor at 800 UM/d. Prices received by farmers
+(selling price) were considered 80% of market price. In this case,
+calculation of gross production included straw as well as grain,
+using straw yield at 2.5  grain for
+traditional crops and
+1.3  grain for paddy.
+
+Statistical analyses were made using statistical program of R
+
+Development Core Team (2005).
+
+3. Results
+
+3.1. Survey overview
+
+The survey sampled traditional farming systems on 1584 ha and
+448 ha under irrigation, in 12 villages along the length of the river
+valley, with a population of 16,328, including 6930 children. Adults
+active in agriculture numbered 3680 men and 3593 women, i.e.
+80% of adults and 45% of all residents.
+
+Crop area varied greatly between villages as presented in Fig. 2,
+largely reﬂecting differences in population size. Smallest cropped
+areas were in villages close to ocean (Trarza Region, west) where
+reliance on irrigation reﬂects low rainfall and hence low productiv-
+ity of rain fed cropping that are combined with relative absence of
+ﬂood-recession crops due to local topography. Irrigated areas also
+vary widely between villages (15.5–70.2 ha) but total cropped area
+per resident is less variable with an average of 0.25 ha. The small-
+est cropped areas per resident are found in the extreme west (vil-
+lages 1 and 2) where there is little land for traditional cropping, but
+also in the extreme east (Guidimaka Region, villages 11 and 12)
+where villages have large populations. Together, the 12 villages re-
+ﬂect wide variation in food production and dependence on subsis-
+tence farming.
+
+3.2. Household types
+
+The distribution of the 1585 households in the survey within
+the four groups used for analysis is presented for each village in
+
+)
+a
+h
+(
+ 
+
+ 
+
+a
+e
+r
+a
+d
+e
+p
+p
+o
+r
+C
+
+ 
+
+Irrigated
+Flood-recession
+Rain fed
+
+1000
+
+800
+
+600
+
+400
+
+200
+
+0
+
+1
+
+2
+
+3
+
+6
+
+5
+
+4
+9
+Villages along the valley
+
+7
+
+8
+
+10
+
+11
+
+12
+
+Fig. 2. Areas of traditional and irrigated crops, and total cropped area per resident,
+in 12 villages along the Senegal River Valley.
+
+Fig. 3. The average proportions of household types, 0, T, I, and TI
+are 24%, 24%, 5%, and 47%, but with large variation between vil-
+lages. The most common type is TI while few households practice
+irrigation (I) alone. The analysis also reveals that villages 1 and 2 in
+the extreme west have the greatest proportion of households with-
+out crops (type 0). To evaluate impact of irrigation on traditional
+cropping, analyses presented here focus on the comparison be-
+tween household types T and TI, across the 12 villages in the
+survey.
+
+3.3. Cropped areas and crop intensity
+
+There are large differences in areas cropped between household
+types within the villages. The distribution presented in Fig. 4 is
+positively skewed revealing that few households crop large areas
+compared to the overall median. Overall, TI households crop great-
+er areas than T households, such that median values for TI and T
+households are 3.1 and 1.8 ha, respectively. While total cropped
+
+J. Comas et al. / Agricultural Systems 110 (2012) 152–161
+
+155
+
+Traditional & irrigated
+Irrigated only
+Traditional only
+No land
+
+l
+
+s
+d
+o
+h
+e
+s
+u
+o
+h
+ 
+f
+o
+ 
+r
+e
+b
+m
+u
+N
+
+250
+
+200
+
+150
+
+100
+
+50
+
+0
+
+1
+
+2
+
+3
+
+6
+
+5
+
+4
+Villages along the valley
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+Fig. 3. Distribution of household types, according to cropping activity, in 12 villages
+along the Senegal River Valley.
+
+l
+
+)
+a
+h
+(
+ 
+d
+o
+h
+e
+s
+u
+o
+h
+ 
+r
+e
+p
+ 
+a
+e
+r
+A
+
+30
+
+25
+
+20
+
+15
+
+10
+
+5
+
+0
+
+Traditional & irrigated
+Traditional only
+
+1
+
+2
+
+3
+
+6
+
+5
+
+4
+9
+Villages along the valley
+
+7
+
+8
+
+10 11
+
+12
+
+Fig. 4. Cultivated area of households with traditional crops alone (T) or combined
+with irrigated crops (TI) in 12 villages along the Senegal River Valley. Box plots
+show smallest observations, quartiles 1, 2 (median) and 3, largest observations, and
+outliers.
+
+area exceeds 5 ha in one TI household in village 10, it is less than
+1 ha in village 2. Median irrigated area per household is 0.5 ha
+and is relatively constant along the valley because schemes were
+developed along standard lines to offer irrigation to as many
+households as possible.
+
+Villagers do not crop all land available to them every year. Dur-
+ing the 2 years of the survey, the proportion cropped averaged
+0.80 in Dieri (rain fed), 0.81 in Falo and 0.58 in Walo (ﬂood reces-
+sion). Curiously, crop intensity for irrigated rice at 0.76 was lower
+than that for rain fed crops.
+
+3.4. Workload in traditional systems and irrigated rice
+
+Analysis of workload in both traditional cropping and irrigated
+rice is presented in Fig. 5 and Table 1 for successive 15-d periods
+starting from June 1. Table 1 identiﬁes the individual activities
+while Fig. 5 emphasizes timing and potential for clashes between
+competing activities. Interpretation is limited, however, because
+the survey does not capture variation between years in starting
+dates for cropping activities. Traditional cropping depends, respec-
+tively, on opening of wet season rains and ﬂood recession in the
+dry season. The start of rice campaigns also depends on opening
+rains because they facilitate land preparation for planting and
+avoid costs of pre-irrigation. In practice, however, availability of
+credit also determines when rice cropping can commence. Data
+in Fig. 5 do, however, capture the major persistent issues of com-
+petition between cropping activities because workload for each
+operation is stable from year to year.
+
+The data reveal that the two components of traditional agricul-
+ture are largely complementary. Work on rain fed land starts with
+wet season rains (June–July) and harvest is well underway or com-
+plete (October) when ﬂood-recession crops are progressively sown
+(October–November). Traditional cropping lands are often located
+2–5 km from villages so considerable time is devoted to transport
+on foot or by donkey. Overall, annual workloads in rain fed and
+ﬂood-recession cropping require 115 and 97 person-d/ha, respec-
+tively (Table 1). Operations that demand most time are weeding,
+bird control and harvesting. Analysis in Fig. 5 reveals that maxi-
+mum area manageable by an active household member is around
+0.5 ha in rain fed and 0.7 ha in ﬂood-recession cropping due mainly
+to requirements for late weeding and bird control in the second
+fortnight of September (28 person-d) in rain fed cropping and for
+bird control and harvest in the second fortnight of February (21
+person-d) in ﬂood-recession cropping. However, because these
+operations are well separated in time, the same people may under-
+take these tasks and in that way one person active in cropping can
+manage about 1.2 ha over the entire year (0.5 ha in rain fed and
+0.7 ha in ﬂood-recession).
+
+Rice, however, adds considerable competition, clashing with
+sowing and management of both rain fed and ﬂood-recession crop-
+ping. Rice planting overlaps with sowing of rain fed crops and rice
+bird control with thinning and weeding of ﬂood-recession crops.
+
+Rain fed
+Flood-recession
+Irrigated rice
+
+)
+d
+o
+i
+r
+e
+p
+ 
+y
+a
+d
+5
+1
+
+ 
+
+ 
+r
+e
+p
+
+ 
+
+a
+h
+/
+y
+a
+d
+-
+n
+o
+s
+r
+e
+p
+(
+ 
+
+l
+
+d
+a
+o
+k
+r
+o
+W
+
+40
+
+35
+
+30
+
+25
+
+20
+
+15
+
+10
+
+5
+
+0
+
+Jun
+
+Jul
+
+Aug Sep Oct Nov Dec
+
+Jan
+
+Feb Mar
+
+Month
+
+Fig. 5. Average workload (person-d/ha) with standard deviations required in rain
+fed, ﬂood recession and irrigated (rice) cropping in 12 villages along the Senegal
+River Valley.
+
+156
+
+J. Comas et al. / Agricultural Systems 110 (2012) 152–161
+
+Table 1
+Mean and standard deviation of workload (person-d/ha) required in rain fed, ﬂood recession and wet season irrigated rice cropping in 12 villages along the Senegal River Valley.
+
+Fig. 5 displays the high workload during land preparation and
+transplanting (June–July) and later during bird control (Novem-
+ber–December) and harvesting (December). Total workload for
+irrigated rice of 163 person-d/ha is also greater than for either tra-
+ditional crop. In the west (villages 1–3, Trarza region), however,
+rice is sown (broadcast) rather than transplanted and harvesting
+is done mechanically, workload there is about 85 person-d/ha.
+Peak activity in rice, except in the west region, restricts manage-
+able crop area to around 0.5 ha per active member mainly due to
+crop transplanting. In the west, by comparison (villages 1–3),
+where weeding is the most demanding operation, the correspond-
+ing area is 0.70 ha. Also, in practice, rice production requires a ded-
+icated worker full-time.
+
+3.5. Impact of irrigated rice on workload in traditional crops
+
+Farmers who grow traditional crops and rice do report that they
+prioritize irrigation in response to the large investment they have
+made in their crops. Therefore, comparison of areas of traditional
+
+crops managed per active member in T and TI households allows
+assessment of the effect of irrigation on allocation of work capacity
+to traditional crops. Such an analysis of workload in T and TI
+households is presented in Fig. 6 using log-transformed scale be-
+cause the distribution of workload is highly skewed. The horizontal
+line in the diagram presents full activity per active member
+(1.2 ha) and so deﬁnes when demand exceeds labor available from
+households, and hence where external assistance is required. De-
+spite the variation within villages, two features stand out. First,
+TI households have larger areas (more effort) of traditional crops
+per active member than do those in T households. Overall, the
+median area of traditional crops managed per active member is
+0.7 ha in TI compared with 0.4 ha in T households. Second, work-
+load on traditional crops exceeds the maximum of 1.2 ha per active
+member less frequently in T than in TI households. The mean prob-
+abilities are 0.17 and 0.31, respectively, revealing the frequency
+when outside assistance is required with traditional crops.
+
+Survey data also reveal that 74% of households without access
+to land report work in cropping activities. The proportion of active
+
+J. Comas et al. / Agricultural Systems 110 (2012) 152–161
+
+157
+
+Traditional & irrigated
+Traditional only
+
+)
+a
+h
+(
+ 
+r
+e
+b
+m
+e
+m
+ 
+e
+v
+i
+t
+c
+a
+ 
+r
+e
+p
+ 
+a
+e
+r
+a
+ 
+l
+a
+n
+o
+i
+t
+i
+d
+a
+r
+T
+
+4
+
+3
+
+2
+
+1
+
+5
+
+.
+
+0
+
+2
+
+.
+
+0
+
+1
+
+.
+
+0
+
+5
+0
+
+.
+
+0
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9 10 11 12
+
+Villages along the valley
+
+Fig. 6. Average managed area of traditional crops per active member and standard
+deviations, required throughout the year by households with traditional crops alone
+(T) or combined with irrigated rice (TI) in 12 villages along the Senegal River Valley.
+The horizontal line depicts 1.2 ha that is the maximum area of traditional crops that
+can be managed by one person.
+
+members of such households is on average 48%, which is the same
+as for other household types. Payment for extra-household labor is
+included later in analyses of household performance.
+
+3.6. Crop production and consumption
+
+The survey recorded consistently increasing grain yield of rain
+fed crops with increasing rainfall from west to east (villages 1–
+12). In Trarza Region (west), mean yields are smallest, 220 and
+70 kg/ha for sorghum and cowpea, respectively, but increased
+gradually through the central regions of Brakna and Gorgol to
+reach 495 and 220 kg/ha in Guidimaka Region (village 12). Flood-
+recession crops show similar trends with sorghum yield ranging
+from 320–600 and cowpea from 96 to 380 kg/ha, respectively, over
+the west–east transect. Rice crops present a reverse trend in yield,
+ranging from 3800 kg/ha in west to 3300 kg/ha in east. On average
+standard deviations of intra-annual yield values were about 62%,
+88% and 26% of average grain yields in rain fed, ﬂood-recession
+and irrigated rice, respectively.
+
+Human consumption is similar for all food items along the val-
+ley. Cereals form the household staple food of two meals daily,
+supplemented by pulses, meat, ﬁsh and milk. Midday meals are
+based on rice and evening meals on sorghum, maize or wheat.
+Average annual consumption of cereal and pulses per household
+member is 86 kg of cereal ﬂour (sorghum, maize or wheat), 75 kg
+rice, and 15 kg cowpea. The daily digestible energy and protein
+content of that diet is 7.1 MJ and 46.2 g protein, respectively. These
+values include children and represent a reasonable proportion of
+energy (61%) and protein (94%) requirements for medium-framed
+adults of 11.7 MJ and 49 g of protein, respectively (Burgess and
+Glasauer, 2004). The balance of required nutrition comes mainly
+from meat and fresh and powdered milk for which the annual con-
+sumption is 30, 39 and 11 kg respectively.
+
+Survey data on average crop production costs, without labor,
+and average market prices for products are presented in Table 2.
+Comparison of selling prices (80% market price) with costs for
+
+Table 2
+Mean costs of production of rain fed, ﬂood recession and irrigated crops relative to
+surveyed yields and mean market prices for those grains and their straw in four
+regions of the Senegal River Valley, Mauritania.
+
+Region (from west to east)
+
+Trarza
+
+Brakna
+
+Gorgol
+
+Guidimaka
+
+Costs of production (UM/kg grain)
+Rain fed
+
+Sorghum
+Cowpea
+
+Flood-recession
+
+Sorghum/maize
+Cowpea
+
+Irrigated paddy
+
+Inputs
+Pump
+Scheme
+
+Market prices (UM/kg)
+Grain
+
+Sorghum
+Maize
+Cowpea
+Paddy
+
+Straw
+
+Sorghum and maize
+Cowpea
+Paddy
+
+10
+64
+
+7
+51
+
+55
+12
+13
+
+164
+150
+180
+74
+
+32
+60
+9
+
+7
+47
+
+7
+34
+
+47
+13
+13
+
+148
+145
+160
+90
+
+25
+50
+12
+
+6
+44
+
+5
+18
+
+49
+13
+14
+
+165
+163
+170
+89
+
+25
+50
+12
+
+4
+19
+
+7
+12
+
+53
+14
+14
+
+130
+120
+140
+95
+
+12
+20
+5
+
+385 UM = 1 € (http://www.mauritania.mr/fr/index.php).
+
+rice is 90% of production cost. Average cost of
+
+traditional crops, reveal a signiﬁcant advantage for villagers on
+cost of food. Sorghum selling prices are 15 times greater than
+production costs as collected in the survey. Average selling price
+for
+rice
+production, expressed in kg of paddy/ha, is 2650 kg/ha when
+only direct inputs costs are considered. If additional amortization
+costs of pump and scheme, 670 and 695 kg/ha, respectively, are
+included, the break-even yield is around 4000 kg/ha compared
+with actual average yield of 3500 kg/ha (3800–3300 kg/ha, west
+to east).
+
+The ratio of household production of net human digestible en-
+ergy to consumption provides an index of adequacy of food supply
+in subsistence agriculture. Here, that ratio, calculated to compare T
+with TI households in the 12 villages, is presented in Fig. 7. Again,
+the distribution of data is heavily skewed requiring scale transfor-
+mation before analysis.
+
+Regardless of variation within villages, the results reveal clearly
+that, as a sole activity, traditional cropping provides insufﬁcient
+digestible energy for recorded household consumption. The aver-
+age probability of success is 0.16, although for villages located in
+the central region of Gorgol (villages 7–10) the probability is high-
+er at 0.35. In TI households, the food supply situation is improved
+but still generally inadequate because the ratio of net production
+to consumption approaches unity. For this scenario, average prob-
+ability of sufﬁcient household production is 0.20 overall, but is 0.44
+in the central villages. The graph also reveals that if rice yield were
+increased by 60% to 5600 kg/ha (yield achieved in the best per-
+forming scheme of the sample evaluated by García-Bolaños et al.,
+2011, also in 2008), then within the established cost structure
+most, but not all, households could produce adequate food. For this
+scenario, average probability of success would be 0.46 and 0.61 in
+the villages of Gorgol, the central region.
+
+3.7. Return to cropping from inputs and labor
+
+Whereas, traditional agriculture has virtually no cost apart from
+seed, irrigated rice has signiﬁcant direct operating costs plus an-
+
+158
+
+J. Comas et al. / Agricultural Systems 110 (2012) 152–161
+
+4
+
+2
+
+1
+
+5
+
+.
+
+0
+
+2
+
+.
+
+0
+
+1
+
+.
+
+0
+
+5
+0
+
+.
+
+0
+
+n
+o
+
+i
+t
+
+p
+m
+u
+s
+n
+o
+c
+/
+n
+o
+
+i
+t
+c
+u
+d
+o
+r
+p
+
+ 
+t
+
+e
+N
+
+Traditional & irrigated (yield plus 60%)
+Traditional & irrigated
+Traditional only
+
+r
+o
+b
+a
+
+l
+ 
+f
+
+o
+
+ 
+t
+s
+o
+c
+/
+
+n
+o
+
+i
+t
+c
+u
+d
+o
+r
+p
+
+ 
+t
+
+e
+N
+
+4
+
+3
+
+2
+
+1
+
+5
+
+.
+
+0
+
+2
+
+.
+
+0
+
+1
+
+.
+
+0
+
+5
+0
+
+.
+
+0
+
+Traditional & irrigated (yield plus 60%) all costs
+Traditional & irrigated (yield plus 60%) only input costs
+Traditional only
+
+10
+
+11
+
+12
+
+1
+
+2
+
+3
+
+6
+
+5
+
+4
+9
+Villages along the valley
+
+7
+
+8
+
+10 11 12
+
+1
+
+2
+
+3
+
+6
+
+5
+
+4
+9
+Villages along the valley
+
+7
+
+8
+
+Fig. 7. Ratio of net cereal production to cereal consumption with standard
+deviations for households in 12 villages along the Senegal River Valley with
+traditional crops alone (T) or combined with irrigated rice (TI). The horizontal line
+depicts equality of production with consumption.
+
+nual amortization costs for irrigation pump and scheme construc-
+tion. However, even in these subsistence systems it is of interest to
+evaluate the ratio of net production to labor because it is a measure
+of the opportunity cost of agricultural labor. Two analyses of return
+to labor are presented. The ﬁrst in Fig. 8 compares T with TI house-
+holds with net production calculated for either total or for direct
+input costs only. The second in Fig. 9 repeats the comparison for
+TI households but with paddy yields set 60% greater than currently
+achieved values. Here, variation within villages is smaller because
+irrigation dominates total costs and the areas involved are less var-
+iable than for traditional crops.
+
+Fig. 8 shows the trend in return to labor. For T households, on
+average, the return is below cost for the western villages (1–3), po-
+
+Traditional & irrigated all costs
+Traditional & irrigated only inputs
+Traditional only
+
+r
+o
+b
+a
+
+l
+ 
+f
+
+o
+
+ 
+t
+s
+o
+c
+/
+
+n
+o
+
+i
+t
+c
+u
+d
+o
+r
+p
+
+ 
+t
+
+e
+N
+
+4
+
+3
+
+2
+
+1
+
+5
+
+.
+
+0
+
+2
+
+.
+
+0
+
+1
+
+.
+
+0
+
+5
+0
+
+.
+
+0
+
+1
+
+2
+
+3
+
+6
+
+5
+
+4
+9
+Villages along the valley
+
+7
+
+8
+
+10
+
+11
+
+12
+
+Fig. 8. Ratio of value of net cereal production to costs of production and standard
+deviations, for households in 12 villages along the Senegal River Valley that practice
+traditional cropping alone (T) or in combination with irrigation (TI). Rice yields are
+analyzed at current values with all costs and with input costs only.
+
+Fig. 9. Ratio of value of net cereal production to costs and standard deviations, for
+households in 12 villages along the Senegal River Valley that practice traditional
+cropping alone (T) or in combination with irrigation (TI). Rice yields are analyzed
+for current values plus 60% with all costs and with input costs only.
+
+sitive for central villages 7–10 and zero for villages 11 and 12. The
+overall probability of recovering labor cost is 0.52, ranging from a
+small value of 0.07 in the western villages (1–3) to 0.96 for the cen-
+tral villages. When irrigated rice production at current yield levels
+and total costs is added to traditional cropping, the result for TI
+households is always a ﬁnancial loss, although least in central vil-
+lages 7–10, with the level of contribution from traditional cropping
+increasing from west to east as rainfall and productivity of rain fed
+crops increases. Average probability of recovering labor cost in TI
+households is 0.26, but almost zero in western villages where tra-
+ditional agriculture has smallest productivity. By comparison, if
+infrastructure costs are ignored, TI households perform compara-
+bly to T households because under that condition (only inputs con-
+sidered), the net beneﬁt to irrigated cropping is close to zero.
+Overall for this scenario, the probability of recovering labor cost
+is 0.40 but is close to zero in the western villages (1–3) even
+though the net production ratio approaches unity (value of net pro-
+duction equals cost of labor).
+
+To further investigate the impact of irrigated rice on proﬁtabil-
+ity of TI households, analysis of return to labor was extended to
+evaluate the impact of increasing rice yield by 60%, again consider-
+ing direct input costs only or total costs including amortization.
+The results, presented in Fig. 9, reveal that increasing yield offers
+major beneﬁts across the entire valley. Return to labor is positive
+in all locations with the biggest beneﬁts achieved in the western
+villages where the relative contribution of irrigation to TI house-
+holds is greatest. Average probability of success while accounting
+for all costs is 0.80, rising to 0.97 for input costs only.
+
+4. Discussion
+
+4.1. Surveys
+
+This study aimed to extend analysis of interaction between tra-
+ditional agricultural practices and irrigation made previously in
+one village (Connor et al., 2008) to other villages along the Senegal
+River Valley. The objective was to obtain reliable ﬁeld data to sup-
+port a broader analysis of development scenarios with a particular
+focus on the question of why small-scale irrigation undertaken
+
+J. Comas et al. / Agricultural Systems 110 (2012) 152–161
+
+159
+
+there alongside traditional cropping has not responded to expecta-
+tions such that many schemes have been progressively abandoned.
+Data are presented from 12 villages that cover the length of the
+valley and a range of annual rainfall (200–500 mm) that, together
+with small-scale topography and socioeconomic factors, determine
+relative distribution and productivity of land resources. The vil-
+lages are tribal communities with traditions of self-help and
+auto-sufﬁciency. Until the advent of irrigation, following the seri-
+ous droughts of 1970s, farmers survived by traditional activities
+of raising livestock and cultivating rain fed and ﬂood-recession
+crops. As activities have expanded to include irrigated farming,
+the population of the area has increased along with possibilities
+for non-agricultural activities in larger towns. The resident popula-
+tion in the survey comprises 2.7% of the rural population, 7% of tra-
+ditional farming and 2.7% of irrigated areas of the south-west
+region. The mean proportion of household members that are active
+in agriculture (45%) is quite stable in all household types along the
+valley and is slightly less than the national average of 52% (ONS/
+MAED, 2008).
+
+Surveys also identiﬁed a substantial number of adult emigrants,
+i.e. non-resident members who contribute funds to their respective
+households, 1690 in total, equivalent to 10% of overall population,
+although with differences along the valley. Households in the cen-
+tral valley had the largest proportion (13%) while the western areas
+of lower rainfall (Trarza Region) had the least (2%). Overall, house-
+holds with irrigation have more emigrants than their counterparts
+without irrigation. The survey was not able to collect information
+on their ﬁnancial contributions to households, but it is judged to
+be the most important source of cash, apart from credit obtained
+for rice production.
+
+4.2. Traditional cropping
+
+Analyses reveal important features of traditional cropping. First,
+the high degree of compatibility of workload between its compo-
+nents viz. wet season rain fed and cold, dry season ﬂood-recession
+cropping. Second, the low productivity of these activities (average
+0.3–0.7 t/ha) and reported high variability from year to year, espe-
+cially of wet season rain fed crops, as supported by simulation
+studies (Connor et al., 2008). Yield is, however, just one component
+of production, the other being area of crops established. Here, an
+important additional feature of traditional cropping is the small
+area of land that can be managed by hand labor. The survey dem-
+onstrates that one person can manage the required tasks of sowing,
+weeding, protection, and harvest of around 1.2 ha annually by
+combining compatible activities in wet and dry seasons crops. Con-
+sequently, production is also small and variable (360–840 kg/ac-
+tive person) at the mercy of small or late wet season rains and/or
+failure of ﬂooding.
+
+Despite the differences between households and villages, the
+survey results reveal clearly that, on average, traditional cropping
+does not provide auto-sufﬁciency of grains in terms of human
+digestible energy in all locations (Fig. 7). Supply is inadequate at
+both ends of the surveyed transect. The performance of western
+villages (1–4) is explicable by low rainfall and productivity; in
+the east (villages 11 and 12) where rain fed productivity is greater,
+the cause is found in large household size. Despite low yields, the
+relative return to inputs and labor in traditional cropping is large,
+except in western villages (1–4), because cost of seed is small and
+no fertilizer or other agrichemicals are applied. Interestingly, in
+three decades since irrigation was established, there has been little
+if any development work on the productivity of rain fed and ﬂood-
+recession crops, or on range management to improve productivity
+for grazing, despite activity in related environments. In comparable
+locations in the Sahel, improved techniques have been evaluated
+for rain fed (Tabor, 1995; Ouédraogo et al., 2007; Yamoah et al.,
+
+2002; Marteau et al., 2011), and ﬂood recession (Comas and
+Gómez-Macpherson, 2002) crops. Animal husbandry on common
+grazing land is the strategy for survival through years of low rain-
+fall in such systems (Kosgey et al., 2008) even though its utility is
+then limited by low productivity and loss of animals when buffer-
+ing of household production is most needed. Although not included
+as part of the present analysis, positive interactions between crop
+and livestock production for fodder supply and nutrient transfers
+are recurring themes contributing to success in analyses of small-
+holder farming systems of Sub-Saharan Africa (e.g. Kaya et al.,
+2000; Tittonell et al., 2009; van Wijk et al., 2009).
+
+4.3. Combining rice with traditional crops
+
+Reported paddy yields in the range 3300–3800 kg/ha are close
+to those measured by García-Bolaños et al. (2011), below those re-
+corded in ofﬁcial statistics (4, 6 t/ha, DPCSE, 2009), and well below
+attainable levels of 8–10 t/ha (Haefele et al., 2001; Wopereis et al.,
+1999; de Vries et al., 2010). Reports identify the cause of low yields
+as delays beyond optimal time in farming operations of sowing or
+transplanting, weeding, and irrigation, often a result of difﬁculty in
+accessing credit (Kebbeh and Miezan, 2003). In addition, fertilizer
+applications are often too small, also contributing to large yield
+loss (Wopereis et al., 1999; Haefele et al., 2000, 2004).
+
+When irrigated rice is combined with traditional crops there are
+signiﬁcant potential clashes with workload, and data presented
+here demonstrate the extent of that overlap. In order to minimize
+water demand and assist in preparation of soil, rice cropping com-
+mences with the same wet season rains that require quick atten-
+tion to establishment of rain fed crops. Analyses reveal, however,
+that there is little evidence of labor shortage in those households
+that combine irrigation with traditional cropping (Fig. 6).
+
+The average area of 0.5 ha of irrigated rice per household pro-
+duces around the same human digestible energy as the 2-ha aver-
+age of traditional farming (1 ha rain fed and 1 ha ﬂood-recession
+cropping), and with much less year-to-year variability. The
+workload is, however, considerably less at 82 d (163 d/ha in rice
+production) compared with 212 d (115 and 97 d/ha in rain fed
+and ﬂood-recession, respectively). The main problem, therefore,
+with combining irrigated rice with traditional is not labor but high
+cost of producing rice at the relatively low yields achieved. When
+all costs are included, viz. amortization of the scheme and pumping
+equipment and annual costs of seed, fertilizer and irrigation, aver-
+age cost of production, estimated at 4000 kg/ha, exceeds achieved
+yields that according to the survey range from 3300 to 3800
+kg/ha from Trarza Region (west) to Guidimaka Region (east).
+Therein lies the explanation to the lack of success; returns to rice
+cropping are insufﬁcient to meet the required payments so that,
+without proper maintenance, condition of
+irrigation schemes
+gradually declines (García-Bolaños et al., 2011). As some farmers
+abandon their land, the challenge of maintenance for those who
+remain increases until failure is complete. Under those conditions,
+it is rational for farmers to give priority to traditional crops because
+the larger areas involved provide around half household food sup-
+ply. Without intervention by government or donor agencies to for-
+give debt and ultimately in the form of major rehabilitation,
+individual schemes are lost to production. Without intervention,
+contribution of schemes to food security is temporary and during
+that time, under current systems of production, irrigated rice is
+subsidized by the much higher relative productivity of traditional
+cropping to inputs and labor.
+
+4.4. Future directions
+
+Solutions can be found within the current social order by
+increasing the productivity of irrigated rice, growing alternative
+
+160
+
+J. Comas et al. / Agricultural Systems 110 (2012) 152–161
+
+crops that require less water, and additional crops out of the wet
+season. The key to success is to ﬁnd irrigated crops, or combina-
+tions, that yield more and/or cost less to grow. This will require a
+major effort to recommence agronomic research and extension
+activities that have fallen into disrepair.
+
+Greater yield of rice is possible, including during the dry season.
+Irrigation requirement is a major contributor because cost of
+pumping water is high, being on average 28% of operating cost.
+Restriction of paddy rice to soils of low inﬁltration rate is critical
+to reduce loss of water to inﬁltration. Current work in the local area
+(Garcia-Ponce et al., submitted for publication) has shown the
+advantage of diversiﬁcation of cropping using appropriate cultivars
+of grain sorghum to produce high yields of a valued grain crop at
+around 60% of the water requirement of rice. But more work is re-
+quired, including evaluation of double cropping, either in the wet
+season or extending into the dry season. None of this is new. Anal-
+ysis of crop performance and in one village (# 10 of this study)
+made the same recommendations to resolve the poor performance
+of irrigation there (Connor et al., 2008). In the case of that village,
+the original proposal to establish the irrigation scheme was predi-
+cated on a FAO ﬁnancial analysis that projected rice yields of
+6000 kg/ha and two crops per year.
+
+The analysis presented here provides guidance to further devel-
+opment work by demonstrating that different solutions are needed
+along the length of the Senegal River Valley. The driving force to
+crop productivity is the gradient of increasing rainfall from west
+to east that increases yield of rain fed crops and reduces water
+requirement of irrigated crops. That also explains the greater prof-
+itability of traditional agriculture, alone and in combination with
+irrigation, in the eastern villages. The likely consequence is the
+need for different solutions to proﬁtable irrigation along that tran-
+sect also.
+
+Solutions might also be found outside the current social order.
+The analyses presented here reveal the need for a change of atti-
+tude to development of irrigation schemes. Traditional farmers
+have demonstrated that they do not have incentive to increase
+attainable yields and/or extend irrigation into the dry season. The
+ﬁnancial analysis explains why that is so at current yield levels,
+but greater yields are possible and, if achieved, the rules of engage-
+ment may change radically. The question is how to achieve that
+and make better use of investments in irrigation to improve food
+security with greater and less variable grain production. Perhaps
+a trained and dedicated irrigation work force is required to better
+manage irrigation, and seek proﬁtable yields by gradually applying
+more inputs and with mechanization to optimize crop production
+practices at an affordable cost to farmers.
+
+5. Conclusions
+
+Analysis of survey data demonstrates that while there are po-
+tential clashes and overlaps in the workload of traditional and irri-
+gated rice cropping, the majority of households that combine both
+activities were working within the capacity of their household
+members active in cropping. The reason why irrigated rice crop-
+ping does not combine successfully with traditional cropping for
+small-scale farmers in the Senegal River Valley of Mauritania is be-
+cause it is uneconomic. When all costs are included, viz. amortiza-
+tion of the scheme and pumping equipment, and annual costs of
+seed, fertilizer and irrigation, the average cost of production was
+estimated at 4000 kg/ha, which exceeds the achieved yields,
+according to the survey, of 3500 kg/ha. Therein lies the explanation
+to the lack of success; returns to rice cropping are insufﬁcient to
+meet the required payments and maintenance of infrastructure,
+without which condition of schemes gradually declines until fail-
+ure results.
+
+Solutions to negative ﬁnancial impact of rice production on
+household economy can be found in increasing productivity of irri-
+gated farming, e.g. approaching achievable yield of 8000 kg/ha
+from the current 3500 kg/ha by respecting advocated planting
+dates, using suitable cultivars, improving weed control and fertil-
+izer management (Haefele et al., 2001; Poussin et al., 2003, 2006;
+Saito and Futakuchi, 2009; Traoré et al., 2010); ﬁnding more prof-
+itable alternatives, including dry season crops; and, changing pro-
+duction systems away from small hand-worked plots to larger,
+shared areas that can be managed with machinery. Greater yields
+would also increase returns to labor and investment but this is only
+possible within an institutional environment that is sufﬁciently ro-
+bust to ensure that research, extension and suppliers of inputs and
+credit function properly. This in turn allows more time for other
+activities. Otherwise, villagers cannot compete with the low price
+of imported rice (Seck et al., 2010) and, where land is available,
+would be better advised to dedicate more time to traditional rain
+fed or ﬂood-recession crops than continue irrigation under the
+present system of production and price structure for rice.
+
+Acknowledgements
+
+The work reported here was ﬁnanced by the Agencia Española
+Cooperación Internacional para el Desarrollo (AECID) and the
+in Mauritania (MDR). Diallo
+Ministère du Développement Rural
+Oumar, Mohamed Djibril Sall, Cheik Baba and Hadi Amou are
+acknowledged for carrying out the village surveys and Issa
+Mohamed Talhata, for coordinating local technicians.
+
+References
+
+Ba, M.Y.B., 2002. La culture du sorgho de décrue en Mauritanie. In: Comas, J.,
+Gómez-Macpherson, H. (Eds.), La culture du sorgho de décrue dans l’Afrique de
+l’Ouest et du Centre. Agencia Española de Cooperación Internacional para el
+Desarrollo, Madrid, pp. 81–90.
+
+Burgess, A., Glasauer, P., 2004. Family Nutrition Guide. Food and Agriculture
+
+Organization of the United Nations, Rome, Italy, p. 119.
+
+Comas, J., Gómez-Macpherson, H. (Eds.), 2002. La culture du sorgho de décrue dans
+l’Afrique de l’Ouest et du Centre. Agencia Española de Cooperación
+Internacional para el Desarrollo, Madrid, p. 247.
+
+Connor, D., Comas, J., Gómez Macpherson, H., Mateos, L., 2008. Impact of small-
+holder irrigation on the agricultural production, food supply and economic
+prosperity of a representative village beside the Senegal river, Mauritania. Agric.
+Syst. 96, 1–15.
+
+de Vries, M.E., Rodenburg, J., Bado, B.V., Sow, A., Leffelaar, P.A., Giller, K.E., 2010. Rice
+production with less water is possible in a Sahelian environment. Field Crop
+Res. 116, 154–164.
+
+DPCSE, 2009. Enquête auprès des Ménages et Exploitants Agricoles. Résultats
+déﬁnitifs de la campagne agricole 2008/2009. Direction des Politiques, de la
+Coopération et du Suivi Evaluation, Ministère Développement Rural,
+Nouakchott, Mauritania.
+<http://dpcse.agriculture.gov.mr/DEPC/Sims/emea.
+htm> (accessed October 2011)
+
+FAO, 2003. FAO Rice Information, 3. Food and Agriculture Organization of the
+
+United Nations, Rome, Italy, 222 p.
+
+FAO, 2005. AQUASTAT Database. Food and Agriculture Organization of the United
+Nations, Rome. <http://www.fao.org/NR/WATER/AQUASTAT/main/index.stm>
+(accessed October 2011).
+
+FAO, 2007. FAOSTAT Database. Food Balance Sheets. <http://faostat.fao.org/site/
+
+368/DesktopDefault.aspx?PageID=368#ancor> (accessed October 2011).
+
+García-Bolaños, M., Borgia, C., Poblador, N., Dia, M., Seyid, O.M.V., Mateos, L., 2011.
+Performance assessment of small irrigation schemes along the Mauritanian
+banks of the Senegal river. Agric. Water Manage. 98, 1141–1152.
+
+García-Ponce, E., Gómez-Macpherson, H., Diallo, O., Djibril, O., Baba, C., Porcel, O.,
+Mathieu, B., Comas, J., Mateos, L., Connor, D. Contribution of sorghum to
+sustainability of small-holder irrigation schemes: On-farm research in the
+Senegal River Valley, Mauritania. Agric. Syst. submitted for publication.
+
+Haefele, S.M., Johnson, D.E., Diallo, S., Wopereis, M.C.S., Janin, I., 2000. Improved soil
+fertility and weed management is proﬁtable for irrigated rice farmers in
+Sahelian West Africa. Field Crops Res. 66, 101–113.
+
+Haefele, S.M., Wopereis, M.C.S., Donovan, C., Maubuisson, J., 2001. Improving the
+productivity and proﬁtability of irrigated rice production in Mauritania. Eur. J.
+Agron. 14, 181–196.
+
+Haefele, S.M., Wopereis, M.C.S., Schloebohm, A.M., Wiechmann, H., 2004. Long-term
+fertility experiments for irrigated rice in the West African Sahel: effect on soil
+characteristics. Field Crops Res. 85, 61–77.
+
+J. Comas et al. / Agricultural Systems 110 (2012) 152–161
+
+161
+
+Hanjra, M.A., Ferede, T., Gutta, D.G., 2009. Reducing poverty in sub-Saharan Africa
+through investment in water and other priorities. Agric. Water Manage. 96,
+1062–1070.
+
+Hussain, I., 2007. Direct and indirect beneﬁts and potential disbeneﬁts of irrigation:
+
+Seck, P.A., Tollens, E., Wopereis, M.C.S., Diagne, A., Bamba, I., 2010. Rising trends and
+variability of rice prices: threads and opportunities for sub-Saharan Africa. Food
+Policy 35, 403–411.
+
+Tabor, J.A., 1995. Improving crop yields in the Sahel by means of water-harvesting. J.
+
+evidence and lessons. Irrig. Drain. 56, 179–194.
+
+Kaya, B., Hildebrand, P.E., Nair, P.K.R., 2000. Modeling changes in farming systems
+with the adoption of improved fallows in southern Mali. Agric. Syst. 66, 51–68.
+Kebbeh, M., Miezan, K.M., 2003. Ex-ante evaluation of integrated crop management
+options of irrigated rice production in the Senegal valley. Field Crops Res. 81,
+87–89.
+
+Kosgey, I.S., Rowlands, G.J., van Arendonk, J.A.M., Baker, R.L., 2008. Small ruminant
+production in smallholder and pastoral/extensive farming systems in Kenya.
+Small Ruminant Res. 77, 11–24.
+
+Marteau, R., Sultan, B., Moron, V., Alhassane, A., Baron, C., Traoré, S.B., 2011. The
+onset of the rainy season and farmers’ sowing strategy for pearl millet
+cultivation in Southwest Niger. Agric. For. Meteorol. 151, 1356–1369.
+
+Mateos, L., Lozano, D., Baghil, A.B.O., Diallo, O.A., Gómez-Macphersona, H., Comas, J.,
+Connor, D., 2010. Irrigation performance before and after rehabilitation of a
+representative, small irrigation scheme besides the Senegal river, Mauritania.
+Agric. Water Manage. 97, 901–909.
+
+MDRE, 1999. Lettre de Politique de Développement de l’Agriculture Irrigué. Horizon
+2010. Ministère du Développement Rural et de l’Environnement, Mauritania.
+<http://dpcse.agriculture.gov.mr/DEPC/Left/Ressources/documentation.htm>
+(accessed October 2011).
+
+ONS/MAED, 2008. Ofﬁce National de la Statistique/Ministère des Affaires
+Economiques et du Développement, Annuaire Statistique 2007, Nouakchott,
+Mauritania. <www.ons.mr> (accessed October 2011).
+
+Ouédraogo, E., Stroosnijder, L., Mando, A., Brussaard, L., Zougmoré, R., 2007.
+Agroecological analysis and economic beneﬁt of organic resources and fertiliser
+in till and no-till sorghum production after a 6-year fallow in semi-arid West
+Africa. Nutr. Cycl. Agroecosyst. 77, 245–256.
+
+Poussin, J.C., Wopereis, M.C.S., Debouzie, D., Maeght, J.L., 2003. Determinants of
+
+irrigated rice yield in the Senegal River Valley. Eur. J. Agron. 19, 341–356.
+
+Poussin, J.C., Diallo, Y., Legoupil, J.C., 2006. Improved collective decision-making in
+action for irrigated rice farmers in the Senegal River Valley. Agric. Syst. 89, 299–
+323.
+
+R Development Core Team, 2005. R: A Language and Environment for Statistical
+Computing. R Foundation for Statistical Computing, Vienna, Austria. <http://
+www.r-project.org./>.
+
+Rijsberman, F., 2003. Can development of water resources reduce poverty? Water
+
+Policy 5, 399–412.
+
+Saito, K., Futakuchi, K., 2009. Performance of diverse upland rice cultivars in low and
+
+high fertility conditions in West Africa. Field Crop Res. 111, 243–250.
+
+Arid Environ. 30, 83–106.
+
+Tittonell, P., van Wijk, M.T., Herrero, M., Ruﬁno, M.C., de Ridder, N., Giller, K.E., 2009.
+Beyond resource constraints – exploring the biophysical feasibility of options
+for the intensiﬁcation of smallholder crop-livestock systems in Vihiga district,
+Kenya. Agric. Syst. 101, 1–19.
+
+Traoré, K., Bado, B.V., Guèye, T., Gaye, S., 2010. Grain yield performance of
+interspeciﬁc irrigated rice genotypes in the Senegal River Valley, as affected by
+the cropping seasons. West African Journal of Applied Ecology 17, 65–80.
+
+UNCACEM, 2008. Rapport des audits ﬁnanciers de l’UNCACEM, Union Nationale des
+Caisses Agricoles de Crédit et d’Épargne de Mauritanie, Nouakchott, Mauritania,
+p. 28.
+
+van Keulen, H., Breman, H., 1990. Agricultural development in the West African
+Sahelian region: a cure against land hunger? Agric. Ecosyst. Environ. 32, 177–
+197.
+
+van Wijk, M.T., Tittonell, P., Ruﬁno, M.C., Herrero, M., Pacini, C., de Ridder, N., Giller,
+K.E., 2009.
+strategic management of
+smallholder farming systems in sub-Saharan Africa using the dynamic farm-
+scale simulation model NUANCES-FARMSIM. Agric. Syst. 102, 89–101.
+
+Identifying key entry-points
+
+for
+
+Wopereis, M.C.S., Donovan, C., Nebié, B., Guindo, D., N’Diaye, D.M.K., 1999. Soil
+fertility management in irrigated rice systems in the Sahel and Savanna regions
+of West Africa: Part I. Agronomic analysis. Field Crops Res. 61, 125–145.
+
+World Bank, 2005. Document d’évaluation du projet de la phase II du programme de
+développement intégré de l’agriculture irriguée en Mauritanie. Rapport n°
+31638 MR, Mauritania, p. 88.
+
+World Bank, 2008a. World Development Report: Agriculture for Development. The
+
+World Bank, Washington, DC.
+
+World Bank, 2008b. Synthesis Report: Investment in Agricultural Water for Poverty
+Reduction and Economic Growth in Sub-Saharan Africa. The World Bank,
+Washington, DC.
+
+World Bank, 2011. Mauritania. Data and Statistics. The World Bank, Washington,
+DC.
+<http://web.worldbank.org/WBSITE/EXTERNAL/COUNTRIES/AFRICAEXT/
+MAURITANIAEXTN/0,menuPK:362366~pagePK:141132~piPK:141109~theSite
+PK:362340,00.html> (accessed October 2011).
+
+Yamoah, C.F., Bationo, A., Shapiro, B., Kaola, S., 2002. Trend and stability analyses of
+millet yield treated with fertilizer and crop residues in the Sahel. Field Crops
+Res. 75, 53–62.
+
+

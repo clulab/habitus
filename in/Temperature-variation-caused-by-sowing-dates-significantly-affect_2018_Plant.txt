@@ -1,0 +1,1852 @@
+Plant Science 271 (2018) 40–51
+
+Contents lists available at ScienceDirect
+
+Plant Science
+
+journal homepage: www.elsevier.com/locate/plantsci
+
+Temperature variation caused by sowing dates signiﬁcantly aﬀects ﬂoral
+initiation and ﬂoral bud diﬀerentiation processes in rapeseed (Brassica napus
+L.)
+Tao Luo, Jing Zhang, Mohammad Nauman Khan, Jiahuan Liu, Zhenghua Xu, Liyong Hu⁎
+
+T
+
+MOA Key Laboratory of Crop Ecophysiology and Farming System in the Middle Reaches of the Yangtze River, College of Plant Science and Technology, Huazhong
+Agricultural University, Wuhan 430070, Hubei, China
+
+A R T I C L E I N F O
+
+A B S T R A C T
+
+Keywords:
+Rapeseed
+Temperature
+Sowing date
+Primordia formation
+Floral initiation
+Yield
+
+To understand the inﬂuence of temperature on ﬂoral initiation and to reveal the relationship between ﬂoral bud
+development and yield potential of rapeseed (Brassica napus L.), early- (“1358”), intermediate- (“Zhongshuang
+No.11”) and late- (“Zheshuang No.8”) maturity genotypes were sown on diﬀerent sowing dates under ﬁeld
+conditions during four crop seasons. A multiplicative model was introduced to distinguish and quantify the
+eﬀects of photoperiod and temperature on pre-ﬂoral initiation phase. Parameters in this model showed that
+early-maturity genotype was more sensitive to photoperiod; while late-maturity genotype was more sensitive to
+vernalization. The relationships between cumulative temperature and mean temperature of pre-ﬂoral initiation
+phase could be well descried by exponential equation. The developmental rate of pre-ﬂoral initiation phase
+against mean daily temperature displayed an asymmetrical distribution, and it decreased rapidly when the mean
+temperature exceeded the optimum. Leaf primordia diﬀerentiated from the shoot apical meristem showed sig-
+niﬁcant linear relationship with the thermal time at pre-ﬂoral initiation phase; dynamic change of ﬂoral bud
+diﬀerentiated from the shoot apical meristem robustly ﬁtted to a sigmoidal logistic curve. According to the ﬁtted
+logistic equation, the maximum diﬀerentiation rate varied from 1.7 to 4.1 per 10 °Cd due to diﬀerent sowing
+dates and genotypes. Averaged across growing seasons, sowing dates and genotypes, bud degeneration rate was
+33% on the main raceme, and varied from 58% to 99% on the seven primary branches. The yield showed a
+signiﬁcant correlation with ﬂoral bud number although the latter showed serious degeneration. In conclusion,
+the ﬂoral bud quantity largely determines rapeseed yield, and thus the genotypes with strong vernalization
+requirement should be planted early to extend the vegetative stage to achieve more fertile ﬂoral buds while the
+genotypes with weak vernalization requirement should be planted late to avoid ﬂowering in chilling environ-
+ment.
+
+1. Introduction
+
+Rapeseed is one of the most important edible oil sources in the
+world, and increasing seed yield remains an important objective in
+rapeseed production. Considering yield components of rapeseed, pod
+number per unit area is an important factor determining rapeseed yield
+[1,2]. The pod formation is derived from the pistil of ﬂoral organs with
+successful pollination and development, and therefore pod number is
+signiﬁcantly aﬀected by the time of ﬂoral initiation and the develop-
+ment of ﬂoral bud [3,4]. Floral initiation, a visible transition to a ﬂoral
+meristem, is thought to be induced by an intricate network with various
+genetic regulators responding to environmental and endogenous trig-
+gers [5–7]. Time of ﬂoral
+initiation is normally an important
+
+determinant of grain yield in areas where the growing season is of
+limited duration [8].
+
+Floral initiation of rapeseed is mainly modulated by basic vegetative
+growth and vernalization requirement undergoing a period of low
+temperature. Late-maturity genotypes show a greater response to ver-
+nalization than early-maturity genotypes [9]. Previous literatures show
+that spring rapeseed requires to experience about 20 days at 15–20 °C to
+trigger ﬂoral initiation; semi-winter rapeseed requires to experience
+about 30 days at 5–15 °C [10]. The controlled environment experiments
+indicate that plants exposed to prolonged periods of low temperature
+treatment from cotyledon expansion onwards initiated fewer main stem
+leaves during a relatively short pre-ﬂoral growth phase and their yield
+potential was limited by a reduction in branch and ﬂower numbers [4].
+
+⁎ Corresponding author.
+E-mail address: liyonghu@mail.hzau.edu.cn (L. Hu).
+
+https://doi.org/10.1016/j.plantsci.2018.03.004
+Received 8 November 2017; Received in revised form 27 February 2018; Accepted 2 March 2018
+Available online 07 March 2018
+0168-9452/ © 2018 Elsevier B.V. All rights reserved.
+
+T. Luo et al.
+
+It is a long-known fact that Brassica species are long-day plants. The
+duration from seedling emergence to ﬂoral initiation is shortened when
+photoperiod extends beyond a critical photoperiod [9,11,12]. Photo-
+period response and vernalization requirement interact with tempera-
+ture to inﬂuence the development rate of pre-ﬂoral initiation phase
+[13,14].
+
+Floral bud number determines seed yield potential of rapeseed.
+Most fertile ﬂoral buds diﬀerentiate from ﬂoral initiation to bud visible
+stage, and abortion of ﬂoral buds occurs predominantly at the end of
+the ﬂowering period, which is most prevalent on the later-developing
+inﬂorescences [3,15,16]. The suitable temperature, photoperiod and
+nutrient supply reduce the degradation of the ﬂower bud, and thus
+increase the eﬀective pod number, ovule number per pod and yield
+[17]. Temperature below 16 °C has a negative eﬀect on the develop-
+ment of ovule and percentage of ﬁlled seeds [18]. It is important to
+adjust the time of ﬂoral initiation to avoid adverse environment by crop
+managements, in which change of sowing dates is thought to be the
+most simple and eﬀective way.
+
+Sowing date should match the growing cycle to the best possible
+environmental conditions for the crop. Successful crop establishment
+depends on several factors at the time of sowing, including soil water
+content, temperature, seed viability and presence of pests, and there-
+fore decisions regarding the sowing date will be critical [19–21].
+Temperature variability resulted by sowing dates directly inﬂuences the
+growth period of rapeseed in the ﬁeld conditions [22–24]. Delayed
+planting date negatively aﬀects agronomic traits and yield components
+such as plant height, stem diameter, number of branches per plant, pod
+length, number of pods plant−1, number of seeds pod−1, and 1000
+seeds weight [25,26]. However, there are still few quantitative re-
+searches about how diﬀerent genotypes and sowing time would aﬀect
+ﬂoral initiation and ﬂoral bud number of rapeseed and thus the yield,
+especially under ﬁeld conditions.
+
+In Yangtze River basin, the rice–rapeseed rotation is the major
+cropping system and the sowing date of rapeseed was generally from
+10th September to 10th November. During this period, the mean daily
+temperature ranges from 10 to 30 °C, and subsequently mean daily
+temperature is ﬂuctuant to decrease in winter [27,28]. Making a rea-
+sonable matching of diﬀerent maturity genotypes according to sowing
+dates is the key to obtain high seed yield of rapeseed. In this scenario,
+the present study was designed to compare diﬀerent types (winter,
+semi-winter and spring) of rapeseed genotypes grown as a winter crop
+in the temperate Northern Hemisphere. We investigated the beginning
+time of ﬂoral initiation of three genotypes with diﬀerent maturities
+under diﬀerent sowing dates. Furthermore, we examined the leaf pri-
+mordia and ﬂoral bud diﬀerentiation patterns of shoot apical meristem
+at pre- and post- ﬂoral initiation phases. More specially, we examined
+ﬂoral bud number and its degradation to uncover the yield gap between
+current and potential yields in rapeseed (Brassica napus L.). The ob-
+jective of the study was to evaluate how and up to what extent the
+genotypes and temperature variability resulted by sowing dates aﬀect
+ﬂoral initiation and to determine the appropriate sowing date for the
+genotypes with diﬀerent maturities in Yangtze River basin. The results
+also have implications for other similar environments around the world.
+
+2. Material and methods
+
+2.1. Experimental design
+
+The experiment was carried out at the Agricultural Research Center
+of Huazhong Agricultural University, Wuhan, China (114°22′E,
+30°29′N) during four growing seasons from 2011 to 2015 and
+2016–2017. At the beginning of September every year, twelve blocks in
+experimental site were sampled for soil analysis. In each block, ﬁve sub-
+samples at depth of 0–30 cm were taken and mixed as a composite
+sample for soil nutrient analysis with three replications. The air-dried
+and sieved soil samples were analyzed for organic matter by potassium
+
+41
+
+Plant Science 271 (2018) 40–51
+
+bichromate oxidation; for NO3-N by 2 mol L−1 KCl extraction and ul-
+traviolet spectrophotometry; for NH4-N by indophenol blue colori-
+metric method; for available P by 0.5 mol L−1 NaHCO3 extraction and
+molybdophosphoric blue method; and for available K by the 1.0 mol
+L−1 CH3COONH4 extraction and ﬂame photometric method [29,30].
+The 0–30 cm soil layer contained about 10.08–12.86 g organic matter
+kg−1, 8.56–13.56 mg NO3–N kg−1, 8.36–11.96 mg NH4–N kg−1,
+11.25–16.51 mg Olsen-P kg−1, and 116.24–140.32 mg NH4OAc-ex-
+tractable K kg−1 across these growing seasons. In Yangtze River basin,
+the local normal sowing date of rapeseed is from 1th October to 15th
+October. Three rapeseed genotypes “1358” (early maturity) from
+Hunan Agricultural University, “Zhongshuang No.11” (intermediate
+maturity) from Oil Crops Research Institute, Chinese Academy of
+Agricultural Sciences and “Zheshuang No.8” (late maturity) from In-
+stitute of Crop and Nuclear Technology, Zhejiang Academy of Agri-
+cultural Sciences were sown at 15-day intervals on 15th September
+(SD1), 30th September (SD2), 15th October (SD3) and 30th October
+(SD4) in growing seasons of 2011–2015 and were sown at 10 days in-
+tervals from 10th September to 30th October in growing season of
+2016–2017. Urea was used for N, single superphosphate for P, po-
+tassium chloride for K and borax for B. The doses were 180 kg N ha−1,
+75 kg P2O5 ha−1, 120 kg K ha−1 and 7.5 kg B ha−1, respectively. P, K
+and B were applied as basal fertilizers before sowing while N was split-
+applied with 70% at basal and 30% at bud initiation.
+
+times
+
+Randomized complete block design (RCBD) with split plot ar-
+rangement was used in which sowing dates were assigned to main plots
+and genotypes were assigned to sub-plots. The sub-plot area was 20 m2
+(4 × 5 m2) with no replication in growing season of 2011–2012. The
+sub-plot area was 10 m2 (2 × 5 m2) and each treatment was repeated
+in growing season of 2012–2013, 2013–2014 and
+four
+2016–2017. Plots were over-seeded in rows with 20 cm spacing.
+Seedlings in each sub-plot were hand-thinned after emergence and
+determined to accommodate about 30 plants m−2 at ﬁve leaf stage. All
+plots were kept well-watered to avoid drought stress during the whole
+growing seasons. Pesticides were used to prevent diseases and insect
+damage, and weeds were manually removed.
+
+2.2. Measurement, sampling and harvest
+
+Three or ﬁve plants were sampled every 3 or 7 days to record the
+development of shoot apical meristem (SAM) at pre-ﬂoral initiation
+phase. After that, sampling interval was every 7 days with three plants
+until the termination of ﬂoral bud diﬀerentiation. The diﬀerentiation
+patterns of shoot apical meristem at pre-ﬂoral initiation stage and post-
+ﬂoral initiation stage were shown in Fig. 1. The number of leaf pri-
+mordia observed by light microscope (Leica S8 APO, made by Ger-
+many) and the leaf emergence on main shoot were counted. The ﬂoral
+initiation was determined when the small ﬁnger-like protrusions ap-
+peared on SAM [14,31]. Then the ﬂoral bud number on raceme and on
+eight primary branches from apical to basal position of stem were
+dissected to count during the growing seasons 2012–2013 and
+2013–2014. At maturity, 10 plants were sampled from each plot to
+evaluate yield component traits such as branch number plant−1, main
+raceme pods plant−1, branch raceme pods plant−1, 1000-seeds weight.
+The fertile ﬂoral bud was counted as the pod developing from this bud
+produced at least one seed. Seed yield was determined by harvesting
+the central six rows of each sub-plot (4 m long). The meteorological
+information of experimental ﬁeld during rapeseed growth period was
+provided by a local weather station which is 11 km away from the
+experimental site. The thermal time was calculated considering a base
+temperature of 0 °C [14,32,33], and temperatures higher than 30 °C
+were adjusted to 30 °C.
+
+2.3. Process-oriented model description
+
+A multiplicative model was applied to quantify the eﬀects of
+
+T. Luo et al.
+
+Plant Science 271 (2018) 40–51
+
+Fig. 1. The images made with a scanning electron microscope for diﬀerentiation patterns of the shoot apical meristem at pre-ﬂoral initiation stage (A) and post-ﬂoral initiation stage (B).
+
+)
+
+R
+
+opt
+
+×
+
+×
+
+×
+
+f T
+(
+
+f V
+(
+
+f P
+( )
+
+temperature, photoperiod and vernalization on the development pro-
+cess from the seedling emergence to ﬂoral initiation for the three
+genotypes. The development rate of vegetative stage was described by
+the following function [12,34]:
+=
+R
+)
+where Ropt is the development rate under optimum temperature-pho-
+toperiod combination. Under this optimum condition, the number of
+days for vegetative phase is minimized, which is deﬁned as physiolo-
+gical development time (PDT) [34,35]. PDT is a constant parameter for
+), f P( ) and
+a certain genotype and Ropt is the reciprocal of PDT. f T(
+f V(
+) are functions that represents the daily developmental response to
+temperature, photoperiod and vernalization, respectively.
+
+(1)
+
+The thermal eﬀectiveness driven by temperature was described by
+
+function [36]:
+
+f T
+(
+
+)
+
+=
+
+(
+
+⎧
+⎡
+⎪
+⎢⎢
+⎨
+⎣
+⎩⎪
+
+−
+T
+T
+i
+min
+−
+T
+T
+opt
+mim
+
+)(
+
+−
+T
+T
+max
+i
+−
+T
+T
+max
+opt
+
+)
+
+0
+
+−
+−
+
+Tmax Topt
+Topt Tmin
+
+Ts
+
+⎤
+⎥⎥
+⎦
+
+T
+i
+
+≤ ≤
+T
+i
+
+T
+min
+
+or T
+i
+
+T
+min
+<
+
+T
+max
+>
+
+T
+max
+
+(2)
+where Ti is the hourly temperature described by the sine-exponential
+model with the data of daily maximum temperature, daily minimum
+temperature and day length[37,38]. Ts is thermal sensitivity factor
+varying with genotypes. The daily thermal eﬀectiveness was calculated
+by the average of 24 hourly values per day. Tmin, Topt and Tmax are
+minimum, optimal and maximum temperatures during vegetative
+phase, which were set
+respectively
+[12,36,39,40].
+
+to 0 °C, 20 °C and 35 °C,
+
+The photoperiod eﬀectiveness driven by day length was by function
+
+[34]:
+
+f P
+( )
+
+−
+
+e
+
+1
+
+= ⎧
+⎨⎩
+
+(
+
+−
+−
+*
+Ps P P
+0
+
+crit
+
+=
+
+P
+opt
+
+−
+
+P
+crit
+
+4.0
+Ps
+
+)
+
+≥
+<
+
+P
+P
+
+P
+crit
+P
+crit
+
+(3)
+
+(4)
+
+where P is the day length in hours. Pcrit is the critical day length under
+which no development occurs. Ps is the photoperiod sensitivity factor
+varying with genotypes. The optimal day length Popt was considered to
+be 17.1 for rapeseed [41].
+
+The vernalization eﬀectiveness driven by temperature was de-
+
+scribed by function [42]:
+
+= −
+2
+= −
+
+Vef
+
+T
+bv
+
+f V
+(
+
+)
+
+=
+
+1
+
+ol
+
+0.0167*
+PVT T
+;
+12
+∑
+⎧
+⎨⎩
+
+min
+
+i
+n
+
+PVT
+= −
+5
+
+V T
+(
+
+=
+1
+PVT
+
+=
+
+−
+
+17
+
+PVT T
+5
+
+;
+
+mv
+
+=
+
+−
+
+22
+
+PVT
+12
+
+(6)
+
+(7)
+
+(8)
+
+ou
+
+PVT T
+;
+12
+⎫
+⎬⎭
+, 1
+
+)
+
+where daily vernalization eﬀectiveness were calculated by the average
+of 24 hourly values per day. Vef is the vernalization eﬀectiveness fac-
+tor.Physiological vernalization time PVT is deﬁned as the minimum
+duration to completely fulﬁll vernalization requirement [34]. Tbv,Tol,Tou
+and Tmv represent the base temperature, the lower and the upper of
+optimal temperature and the maximum temperature for vernalization,
+respectively, which are quantiﬁed by Eq. (7).The vernalization eﬀec-
+tiveness is calculated by the ratio of actual vernalization time to PVT
+following Eq. (8), and the vernalization requirement is completely sa-
+tisﬁed when it equals to 1.
+
+The multiplicative model were parameterized and tested by em-
+ploying an iterative process that minimizes the sum of squares residuals
+between estimated and observed days of vegetative stage for diﬀerent
+sowing dates. Normalized root mean square error (NRMSE) was used to
+test the goodness of ﬁt for model [43,44]. The NRMSE value was cal-
+culated by the following equation:
+
+NRSME
+
+n
+
+∑=
+
+i
+
+−y
+(
+obs
+
+y
+pred
+
+) /n /
+2
+
+y
+obs
+
+(9)
+
+where yobs and ypred are the observed and predicted values, n is the
+number of observations, and yobs
+is the average across the observed
+values.
+
+2.4. Statistical analysis
+
+Analysis of variance (ANOVA) among growing seasons, genotypes
+and sowing dates was performed using the mixed model procedure in
+SAS statistical software (SAS 8.1). Blocks and block interactions were
+considered as random eﬀects. Diﬀerences in treatment means were
+compared by LSD test (P ≤ 0.05). Dynamic changes of bud numbers on
+raceme responding to cumulative temperature were ﬁtted by logistic
+curve using Origin 8.0. Graphics were drawn using R 3.1.3 (http://
+www.r-project.org/)[45]. Regression coeﬃcient (slope) of linearity re-
+gression for these genotypes were conducted by F-test [46].
+
+3. Results
+
+V T
+(
+
+)
+
+=
+
+sin
+
+−
+T
+i
+−
+T
+ol
+
+T
+bv
+T
+bv
+
+*
+
+π
+2
+
+−
+T
+T
+i
+ou
+−
+T
+T
+mv
+ou
+
+*
+
+π
+2
+
+(
+(
+
+1
+
+⎧
+⎡⎣
+⎪⎪
+⎨
+⎡⎣
+⎪⎪
+⎩
+
+sin
+0
+
+0.5
+
+)
+⎤⎦
+)
+⎤⎦
+
+Vef
+
+≤ <
+T
+T
+ol
+i
+≤ <
+T
+T
+ou
+i
+≤ <
+T
+T
+i
+mv
+<
+T or T
+bv
+i
+
+T
+bv
+T
+ol
+T
+ou
+T
+i
+
+>
+
+T
+mv
+
+3.1. The meteorological conditions during four growing seasons
+
+(5)
+
+In Yangtze River Basin, temperature during the rapeseed growth
+and development period changed dramatically on diﬀerent sowing
+
+42
+
+T. Luo et al.
+
+Plant Science 271 (2018) 40–51
+
+Fig. 2. Dynamic change of mean daily temperature and photoperiod during the rapeseed growth and development period for four growing seasons. The beginning and end of arrows
+correspond to date of emergence and onset of ﬂoral initiation for diﬀerent sowing dates and genotypes, respectively. Three arrows in left aligned columns from up to down represent the
+genotypes of “1358”, “Zhongshuang No.11” and “Zheshuang No.8”, respectively.
+
+dates. The temperature reached over 28 °C in September, dropped to
+below 0 °C in December and January. The mean daily temperature once
+rapidly decreased by about 10 °C during September and October in
+these four growing seasons. The photoperiod, determined by latitude,
+showed a regular change among years in our experimental site. The
+shortest day length (about 10.1 h) occurred on 22th December with a
+small diﬀerence among years. The photoperiod was shortened by a
+delay in sowing date from 15th September (SD1) to 30th October (SD4),
+decreasing from 12.3 to 11.0 h (Fig. 2).
+
+The climatic variation, largely caused by changes in temperature
+and photoperiod, during growing seasons and sowing dates had an
+obvious eﬀect on beginning of ﬂoral initiation for the three genotypes.
+The early-maturity genotype “1358” showed a shorter pre-ﬂoral in-
+itiation phase compared with intermediate- and late-maturity geno-
+types. Meanwhile, the variation in pre-ﬂoral initiation phase among
+three genotypes decreased as sowing date delayed. The calendar days
+from seedling emergence to ﬂoral initiation (pre-ﬂoral initiation phase)
+ranged from 18 to 49d for “1358”, from 48 to 68d for “Zhongshuang
+No.11” and from 54 to 76d for “Zheshuang No.8” across the four
+growing seasons (Fig. 2). Among the four growing seasons, the days to
+begin ﬂoral initiation was shortest at SD1 or SD2 for “1358”, then ex-
+tended as sowing dates delayed; for “Zhongshuang No.11” and “Zhe-
+shuang No.8”, it decreased as sowing dates delayed from SD1 to SD3,
+then extended at SD4.
+
+3.2. The response patterns to temperature and photoperiod
+
+The sowing dates provided the pre-ﬂoral initiation of these three
+genotypes to a wide range of photoperiod and temperature combina-
+tions. In order to distinguish the eﬀects of photoperiod and temperature
+on development process, a multiplicative model was introduced to
+
+quantify photoperiod eﬀectiveness, thermal eﬀectiveness and vernali-
+zation eﬀectives for early-, intermediate- and late-maturity genotypes.
+The results showed that the physiological developmental times (PDT) at
+pre-ﬂoral initiation phase were 10.8d, 23.9d and 25.1d for “1358”,
+“Zhongshuang No.11” and “Zheshuang No.8”, respectively. The three
+genotypes showed a small diﬀerence in relative thermal eﬀectiveness
+driven by temperature (Fig. 3A). The genotype “1358” had a higher
+critical day length than “Zhongshuang No.11” and “Zheshuang No.8”
+(Fig. 3B). The shorten of photoperiod by delayed sowing from SD1 to
+SD4 decreased the relative photoperiod eﬀectiveness from 0.74 to 0.51
+for “1358”, from 0.87 to 0.80 for “Zhongshuang No.11”, and from 0.89
+to 0.82 for “Zheshuang No.8”, suggesting that the ﬂoral initiation of
+genotype “1358” was more sensitive to change in photoperiod. The
+relative vernalization eﬀectiveness driven by temperature had an ob-
+vious variation among genotypes (Fig. 3C), and the late- and inter-
+mediate- maturity genotypes “Zhongshuang No.11” and “Zheshuang
+No.8” had a higher physiological vernalization time and needed a lower
+temperature range to satisfy the vernalization requirement, compared
+to the early-maturity genotype “1358” (Table 1). Diﬀerences between
+simulated and observed days of pre-ﬂoral initiation phase were small
+(R2 > 0.90 and NRSME = 10.7%, Fig. 3 D).
+
+3.3. The thermal time from seedling emergence to ﬂoral initiation
+
+As sowing dates delayed, the cumulative temperature from seedling
+emergence to ﬂoral initiation diﬀered among the three genotypes.
+“1358” showed relatively consistent tendency in the cumulative tem-
+perature, ranging from 353 to 436 °Cd in 2012–2013 and from 465 to
+546 °Cd in 2013–2014; while “Zhongshuang No.11” and “Zheshuang
+No.8” showed an obvious decrease from 933 to 363 °Cd and
+1010–415 °Cd in 2012–2013, from 1248 to 523 °Cd and 1330–566 °Cd
+
+43
+
+T. Luo et al.
+
+Plant Science 271 (2018) 40–51
+
+Fig. 3. The developmental patterns in response to temperature and photoperiod of the three genotypes descripted by a multiplicative model, and the goodness-of-ﬁt of this model (A,
+Relative thermal eﬀectiveness response to temperature; B, Relative photoperiod eﬀectiveness response to photoperiod; C, Relative vernalization eﬀectiveness response to temperature; D,
+Comparison of simulated and observed values).
+
+Table 1
+The optimal parameters estimated by a multiplicative model for three genotypes of dif-
+ferent maturities. Ts, Ps, PVT and PDT represent thermal sensitivity factor, photoperiod
+sensitivity factor, physiological vernalization time and physiological developmental time
+at pre-ﬂoral initiation phase, respectively.
+
+Variety
+
+1358
+Zhongshuang No.11
+Zheshuang No.8
+
+Ts
+
+0.93
+0.79
+0.81
+
+Ps
+
+0.49
+0.36
+0.34
+
+PVT
+
+1.2
+9.4
+14.3
+
+PDT
+
+10.8
+23.9
+25.1
+
+in 2013–2014, respectively (Fig. 4). Compared between same sowing
+dates, the mean daily temperature at pre-ﬂoral initiation phase in
+2013–2014 was higher than that in 2012–2013, contributing to the
+increase of cumulative temperature in 2013–2014 (Fig. 4).
+
+Pooling the data across four growing seasons, accumulated tem-
+perature increased as mean temperature increased at pre-ﬂoral
+
+initiation phase (Fig. 5). The relationships between cumulative tem-
+perature and mean temperature at pre-ﬂoral initiation phase could be
+well descried by exponential equation for the three genotypes (Fig. 5).
+The equation of ﬁtted curve were evaluated by F-test with high sig-
+niﬁcance for the three genotypes (P ≤ 0.01). At pre-ﬂoral initiation
+phase, “1358” showed a less sensitive to mean temperature resulting in
+the adjusted coeﬃcient of determination (Adj.R2) being very small for
+“1358”; while “Zhongshuang No.11” and “Zheshuang No.8” showed a
+strong sensitivity to mean temperature. The developmental rate at pre-
+ﬂoral initiation phase, calculating as the inverse of days for pre-ﬂoral
+initiation stage, varied with temperature. The optimum temperatures
+for the maximum developmental rate during pre-ﬂoral initiation phase
+to switch to ﬂoral initiation quickly were about 23.9 °C, 11.1 °C and
+10.6 °C for “1358”, “Zhongshuang No.11” and “Zheshuang No.8”, re-
+spectively (Fig. 4). The change of accumulated temperature response to
+temperature was characterized by the slope variation of the ﬁtting
+curve. Under optimum temperatures,
+the cumulative temperature
+
+Fig. 4. Cumulative temperature of pre-ﬂoral initiation phase for the three genotypes under diﬀerent sowing dates in 2012–2013 (white bar) and 2013–2014 (grey bar). SD1, SD2 SD3 and
+SD4 represent the sowing date on 15th September, 30th September, 15th October and 30th October, respectively. Values are mean ± SD for n = 4 replications.
+
+44
+
+T. Luo et al.
+
+Plant Science 271 (2018) 40–51
+
+Fig. 5. Cumulative temperature response to the mean
+temperature of pre-ﬂoral initiation phase across the
+four growing seasons. The ﬁtted values are re-
+presented by the solid curves. The goodness of ﬁtted
+curves are evaluated by adjusted coeﬃcient of de-
+termination (R2). The equations of ﬁtted curves are
+evaluated by F-test with high signiﬁcances for the
+three genotypes (P ≤ 0.01).The dash lines going
+through origin point are tangential
+lines of solid
+curves, except for “1358”, and red dots represent the
+point of tangency. The values of the X-axis for red
+points represent the optimum temperature corre-
+sponding to the minimum days to trigger ﬂoral in-
+itiation. (For interpretation of the references to colour
+in this ﬁgure legend, the reader is referred to the web
+version of this article.)
+
+would increase by 3.5 °Cd, 51.0 °Cd and 62.7 °Cd for “1358”, “Zhong-
+shuang No.11” and “Zheshuang No.8”, respectively, when the mean
+temperature of pre-ﬂoral initiation increased by a unit of 1 °C.
+
+3.4. Leaf emergence and leaf primordia development at pre-ﬂoral initiation
+phase
+
+At the beginning of ﬂoral initiation, leaf primordia diﬀerentiation
+from SAM ceased and the number of total leaves are determined.
+Diﬀerence in sowing time had no profound eﬀect on the emerged leaf
+quantity (4.0–5.6 plant−1) for genotype “1358” during the two growing
+seasons. As sowing dates delayed from SD1 to SD4, the emerged leaf
+quantity in “Zhongshuang No.11” and “Zheshuang No.8” decreased by
+71.4% and 66.7% in 2012–2013; and by 66.7% and 63.9% in
+2013–2014, respectively (Table 2). The diﬀerence in emerged leaf
+number among genotypes decreased as sowing dates delayed, demon-
+strating that the variation in plant growth among genotypes became
+small when sowing late (Table 2). Across the sowing dates of two
+growing seasons, the lowest number of emerged leaf at the beginning of
+ﬂoral initiation occurred in SD4, season 2012–2013.
+
+The quantity of leaf primordia varied with sowing dates, and the
+lowest variation was observed in “1358”. Its leaf primordia quantity
+ranged from 17.2 to 21.4 in 2012–2013 and 18.8-23.4 in 2013–2014.
+The variability in leaf primordia quantity among four sowing dates was
+much higher in “Zhongshuang No.11” and “Zheshuang No.8”. As
+leaf primordia decreased in “Zhongshuang
+sowing dates delayed,
+No.11” by 48.6% in 2012–2013 and 48.5% in 2013k2014;
+in
+“Zheshuang No.8” by 43.8% in 2012–2013 and 48.7% in 2013–2014.
+Leaf primordia number was signiﬁcantly correlated with the thermal
+time calculated from seedling emergence (r = 0.76 [P ≤ 0.01],
+r = 0.92 [P ≤ 0.01] and r = 0.98 [P ≤ 0.01], respectively) for all
+combinations of sowing dates and growing seasons (Fig. 6). The linear
+regression equation between leaf primordia and thermal time demon-
+strated that the rate of leaf primordia diﬀerentiation from SAM was
+
+constant for genotypes regardless of sowing dates, and the plastochron
+calculated as the reciprocal of leaf primordia diﬀerentiation rate were
+46.3 °Cd, 38.2 °Cd and 37.9 °Cd for “1358”, “Zhongshuang No.11” and
+“Zheshuang No.8”, respectively. But the slope test showed no sig-
+niﬁcant diﬀerence in plastochron among genotypes with a common
+plastochron of 37.7 °Cd per leaf primordia. The thermal time during
+pre-ﬂoral initiation phase in 2013–2014 was higher than in 2012–2013
+for the same sowing dates, resulting in a higher number of leaf pri-
+mordia in 2013–2014 than 2012–2013.
+
+3.5. The dynamic change in ﬂoral bud number on raceme at post-ﬂoral
+initiation phase
+
+The dynamic change in ﬂoral bud numbers on raceme could be
+ﬁtted by sigmoidal logistic curve (Fig. 7). The parameters of logistic
+curve represent agronomic characteristics of diﬀerent genotypes. The
+maximum bud number and ﬂoral diﬀerentiation rate on raceme varied
+among genotypes and sowing dates. At the same sowing date, the lar-
+gest number of ﬂoral bud was produced by “Zheshuang No.8”. The
+maximum and minimum numbers of ﬂoral bud on raceme in “1358”
+were recorded at SD2 (106 plant−1 and 120 plant−1) and SD1 (85
+in growing seasons 2012–2013 and
+plant−1 and 95 plant−1)
+2013–2014, respectively. As sowing date delayed, ﬂoral bud number on
+raceme decreased in “Zhongshuang No.11” from 109 to 81 in
+2012–2013 and 118–97 in 2013–2014 and in “Zheshuang No.8” from
+127 to 103 in 2012–2013 and 135–101 in 2013–2014, respectively
+(Table 3). Floral diﬀerentiation rate was not constant and was slow at
+the beginning of ﬂoral initiation and then increased to the maximum,
+and ﬁnally declined to 0 when the diﬀerentiation terminated. Averaged
+across sowing dates, maximum ﬂoral diﬀerentiation rates in “1358”,
+“Zhongshuang No.11” and “Zheshuang No.8” were 2.88, 2.76 and 3.78,
+respectively, when measured with a unit of 10 °Cd.
+
+Table 2
+The number of leaf emergence and leaf primordia at the beginning of ﬂoral initiation among sowing dates in two growing seasons. .
+
+Year
+
+Sowing date
+
+1358
+
+Zhongshuang No.11
+
+Zheshuang No.8
+
+Leaf emerged
+
+Total primordia initiated
+
+Leaf emerged
+
+Total primordia initiated
+
+Leaf emerged
+
+Total primordia initiatedmmmm
+
+2012–2013
+
+2013–2014
+
+SD1
+SD2
+SD3
+SD4
+SD1
+SD2
+SD3
+SD4
+
+4.2 ± 0.45
+5.4 ± 0.55
+4.8 ± 0.45
+4.0 ± 0.00
+5.6 ± 0.55
+4.2 ± 0.45
+5.6 ± 0.55
+4.2 ± 0.45
+
+17.8 ± 1.30
+19.6 ± 1.95
+21.4 ± 1.34
+17.2 ± 1.09
+20.4 ± 2.07
+23.4 ± 0.55
+22.4 ± 1.52
+18.8 ± 0.84
+
+Values are mean ± SD (n = 4).
+
+14.0 ± 0.71
+12.2 ± 0.84
+8.0 ± 0.71
+4.0 ± 0.00
+15.0 ± 0.71
+12.4 ± 1.14
+9.0 ± 0.71
+5.0 ± 0.00
+
+34.6 ± 1.52
+32.0 ± 1.22
+27.8 ± 1.30
+17.8 ± 0.84
+40.8 ± 1.79
+34.0 ± 1.87
+30.0 ± 1.00
+21.0 ± 2.45
+
+12.0 ± 1.00
+10.4 ± 1.82
+7.8 ± 0.45
+4.0 ± 0.00
+14.4 ± 1.14
+11.4 ± 0.89
+8.4 ± 0.55
+5.2 ± 0.45
+
+35.2 ± 1.64
+34.0 ± 1.00
+28.8 ± 0.84
+19.8 ± 1.30
+44.8 ± 1.92
+38.2 ± 2.16
+29.8 ± 1.64
+23.0 ± 1.00
+
+45
+
+T. Luo et al.
+
+Plant Science 271 (2018) 40–51
+
+Fig. 6. Correlation between the number of leaf primordia diﬀerentiated from shoot apical meristem and the thermal time calculated from seedling emergence. Data from all sowing dates
+and growing seasons were pooled and regressed against cumulative temperature for each genotype. Values are mean ± SD (n = 4). “**” indicates signiﬁcant diﬀerence at P < 0.01.
+
+3.6. Eﬀects of sowing dates on fertile ﬂoral bud formation
+
+A portion of ﬂoral buds were degenerated and thus fertile ﬂoral
+buds which may successively develop to pods with seeds were much
+less than the total ﬂoral bud number. The ﬂoral bud degeneration on
+raceme and branches varied among genotypes, sowing dates and
+growing seasons. Averaged across growing seasons, sowing dates and
+genotypes, degeneration rate on raceme was 33% and, that on seven
+primary branches counted from apical to basal position of stem were
+60%, 58%, 59%, 68%, 79%, 93% and 99%, respectively. The bud de-
+generation was much more serious on branches than on raceme, espe-
+cially the basal branches. As sowing date delayed, the ratio of fertile
+ﬂoral bud to total ﬂoral bud number calculated from the raceme and
+seven primary branches tended to decrease. Across the two growing
+seasons the rate ranged from 0.49 to 0.26 for “1358”, from 0.44 to 0.25
+for “Zhongshuang No.11”, and from 0.47 to 0.24 for “Zheshuang No.8”
+(Fig. 8). The variability in total ﬂoral buds on raceme and seven pri-
+mary branches was lower than that of total fertile ﬂoral buds. The ra-
+ceme and the ﬁrst three primary branches counted from apical to basal
+position of stem contributed mostly to yield.
+
+3.7. Floral bud number and yield components
+
+Yield and yield components varied among growing seasons, sowing
+dates and genotypes. As sowing date delayed from SD1 to SD4, seed
+yields in “Zhongshuang No.11” and “Zheshuang No.8” decreased while
+the highest yield in “1358” was observed in SD2 (Fig. 9). Averaged
+across genotypes and sowing dates, seed yield in 2013–2014 was higher
+
+by 496 kg ha−1 than that in 2012–2013. ANOVA analysis indicated that
+genotypes, sowing dates and their interaction showed signiﬁcant eﬀects
+on pods number, 1000-seed weight and seed yield (Table 4). When
+averaged across the growing seasons and sowing dates, the highest
+yield was obtained in “Zhongshuang No.11” (2102 kg ha−1), followed
+by “Zheshuang No.8” (1958 kg ha−1) and “1358” (1814 kg ha−1). The
+relationships among leaf number, ﬂoral bud number, pod number,
+seeds per pod, 1000-seeds weight and seed yield in three genotypes
+were displayed using a network (Fig. 10). A signiﬁcant and positive
+correlation was observed among leaf number, ﬂoral bud number, pod
+number and seed yield in the tested genotypes, except that the re-
+lationship between leaf number and seed yield is not signiﬁcant for
+“1358”.
+
+4. Discussion
+
+Sowing dates exposed rapeseed to a wide range of thermo-photo-
+period conditions, aﬀecting the phonological development of diﬀerent
+genotypes. The thermal and vernalization eﬀectiveness both driven by
+temperature, and photoperiod eﬀectiveness driven by day length, sy-
+nergistically aﬀected the development rate of pre-ﬂoral initiation phase
+in rapeseed. The controlled environment experiment revealed that
+transition from vegetative to reproductive growth was delayed by slow
+accumulation of vernalization requirement at relative high tempera-
+ture, and appeared to be delayed by limited leaf production, dry matter
+accumulation and/or assimilate availability in plants grown at relative
+low temperature [47–49]. Such a temperature balance between ver-
+nalization requirement and growth rate was found to be primarily
+
+Fig. 7. The sigmoidal logistic curve ﬁtted between ﬂoral bud numbers of raceme and cumulative temperature among sowing dates during two growing seasons. Values are mean for n = 4
+replications.
+
+46
+
+T. Luo et al.
+
+Plant Science 271 (2018) 40–51
+
+Table 3
+Characteristic parameters calculated from the ﬁtted logistic equation.
+
+Variety
+
+Sowing date
+
+Maximum ﬂoral buds
+(number/plant)
+
+1358
+
+Zhongshuang No.11
+
+Zheshuang No.8
+
+SD1
+SD2
+SD3
+SD4
+SD1
+SD2
+SD3
+SD4
+SD1
+SD2
+SD3
+SD4
+
+2012–2013
+
+85.6 ± 3.93
+106.6 ± 2.50
+101.7 ± 2.16
+89.6 ± 2.02
+109.4 ± 4.12
+106.5 ± 2.79
+97.1 ± 3.14
+81.2 ± 2.31
+127.8 ± 4.48
+119.4 ± 1.93
+106.3 ± 2.46
+103.8 ± 1.85
+
+2013–2014
+
+95.7 ± 4.26
+120.0 ± 4.16
+112.3 ± 2.69
+98.9 ± 5.67
+118.1 ± 3.57
+115.4 ± 2.98
+110.2 ± 2.79
+97.7 ± 1.73
+135.1 ± 3.95
+134.6 ± 2.92
+124.8 ± 3.38
+101.1 ± 3.69
+
+Maximum diﬀerentiation speed
+(number/10 °Cd)
+
+2012–2013
+
+2013–2014
+
+2.3
+3.6
+2.7
+3.4
+2.4
+2.7
+3.0
+2.3
+3.8
+3.8
+4.3
+3.5
+
+1.7
+2.5
+3.4
+3.4
+2.8
+2.8
+2.9
+3.2
+3.9
+4.1
+3.5
+3.4
+
+The logistic equation is = +
+
+y
+
+K represents the maximum ﬂoral buds; Maximum diﬀerentiation speed was calculated by the maximum slope of the ﬁtted curve. The goodness of ﬁt
+by logistic equation was evaluated by adjusted coeﬃcient of determination (R2 > 0.98). The parameters in this logistic equation were evaluated by t-test with a high signiﬁcance
+(P ≤ 0.01).
+
+1
+
+K
+−
+a e bx
+*
+
+.
+
+responsible for rapeseed adaptation to the environment [50].
+In
+Yangtze River basin, during the growing seasons the temperature
+ﬂuctuated and a decreasing trend was observed as the sowing time
+delayed from 10th September to 30th October. The photoperiod, de-
+termined by latitude, showed a regular decrease with sowing date de-
+laying among years. Under the meteorological conditions of our ex-
+periment, the early sowing date resulted in the increase of thermal
+eﬀectiveness and photoperiod eﬀectiveness; while the late sowing date
+resulted in the increase of vernalization eﬀectiveness. A model pooling
+data from four years was introduced to distinguish and quantify the
+response of varieties to temperature and photoperiod with a good sta-
+tistical ﬁt and reasonable biological processes. Parameters in this model
+showed that physiological development time (PDT) in early-maturity
+genotype in pre-ﬂoral initiation phase was shorter than that of inter-
+mediate- and late-maturity genotypes, resulting in that the beginning of
+ﬂoral initiation for “1358” was always earlier than “Zhongshuang
+No.11” and “Zheshuang No.8” under the same sowing date; meanwhile
+the early-maturity genotype had lower physiological vernalization time
+(PVT), and its optimal temperature for vernalization was higher than
+intermediate- and late-maturity genotypes. Modeling results indicate
+intermediate- (“Zhongshuang No.11”) and late- (“Zheshuang
+that
+No.8”) maturity genotypes had lower critical photoperiod requirement
+than early-maturity genotype (“1358”), suggesting that the diﬀerence
+in ﬂoral initiation could be attributed largely to temperature in the
+intermediate- and late-maturity genotypes (Fig. 3). The model also in-
+dicates that photoperiod could have some role in determining ﬂoral
+initiation time in early-maturity genotype. The diﬀerence in photo-
+period among sowing dates may have resulted in early-maturity geno-
+type taking much shorter time to reach ﬂoral initiation when sown in
+the longer photoperiod time (ﬁrst sowing date) than when sown in the
+shorter photoperiod time (last sowing date) (Fig. 2). As intermediate-
+and late-maturity genotypes had a strong vernalization requirement,
+the shortest days for them to begin ﬂoral initiation occurred at SD3.
+Due to the limitation of thermal and photoperiod eﬀectiveness at SD4,
+the days at pre-ﬂoral initiation phase for the three genotypes were
+extended when compared to SD3.
+
+The mean temperature across the sowing date, which showed the
+shortest time to complete transition from seedling emergence to ﬂoral
+initiation, could be considered as the optimum temperature for this
+transition [12,34]. Our results showed that the optimum temperature
+for the maximum developmental rate to switch into ﬂoral initiation
+quickly was about 23.9 °C, 11.1 °C and 10.6 °C for “1358”, “Zhong-
+shuang No.11” and “Zheshuang No.8”, respectively. The developmental
+rate at pre-ﬂoral
+initiation phase against mean daily temperature
+
+displayed an asymmetrical distribution, and it decreased rapidly when
+mean temperature exceeded the optimum. The duration from plant
+emergence to the bud-visible stage measured in thermal time was
+progressively reduced as mean temperature declined from 24 °C to 12 °C
+and the reduction in thermal time ranged from 22 °Cd to 41 °Cd for
+every 1 °C, depending on Brassica species [51], but the thermal time
+from seedling emergence to ﬂoral initiation has been rarely reported.
+The thermal time from seedling emergence to ﬂoral initiation diﬀered
+greatly due to sowing dates, and across the four crop seasons it ranged
+from 353 to 550 °Cd for “1358”; for “Zhongshuang No.11” and “Zhe-
+shuang No.8”, the cumulative temperature at pre-ﬂoral initiation phase
+decreased signiﬁcantly from 1330 to 363 °C as sowing dates delayed,
+which could largely attribute to the increased vernalization eﬀective-
+ness driven by temperature. The present results revealed an exponential
+equation between mean temperature and thermal time during pre-ﬂoral
+initiation phase. The coeﬃcient of mean temperature in this equation
+were 0.007, 0.089 and 0.094 for “1358”, “Zhongshuang No.11” and
+“Zheshuang No.8”, respectively, suggesting that the temperature at pre-
+ﬂoral initiation phase had a large eﬀect on cumulative temperature for
+intermediate- and late-maturity genotypes. Across the four growing
+seasons, rapeseed required to accumulate at least about 350–400 °Cd to
+satisfy their basic vegetative growth, then began ﬂoral initiation.
+
+At the beginning of ﬂoral initiation, rapeseed genotypes displayed
+variability in leaf emergence number due to diﬀerent sowing dates. It
+has been widely reported that the low temperature occurred at vege-
+tative stage reduced the leaf number at ﬂowering stage or ﬁnal leaf
+number of rapeseed [52,53]. However, there were few researches on
+plant growth threshold to trigger ﬂoral initiation of rapeseed. Based on
+our experiment, it can be concluded that the emerged leaf number at
+ﬂoral initiation decreased as the temperature was declined under pre-
+ﬂoral phase. Furthermore, the results indicated that the lowest emerged
+leaf (4 leaves) was observed at SD4 with no genotype variability in
+2012–2013. It may be because that the extreme low temperature oc-
+curred under SD4 and the mean temperatures of pre-ﬂoral phases were
+7.5 °C, 6.7 °C and 6.4 °C for early,
+intermediate- and late-maturity
+genotypes, respectively. The extreme low temperature condition fa-
+cilitated the saturation of vernalization requirement, and therefore
+ﬂoral initiation of these genotypes was triggered once basic vegetative
+growth was satisﬁed [48,54]. Therefore, the basic vegetative growth to
+begin ﬂoral initiation can be represented by four leaf age of rapeseed
+plant.
+
+The quantity of leaf primordia was signiﬁcantly correlated with
+thermal time calculated from seedling emergence, supporting the
+ﬁnding that absolute leaf number was positively correlated with days
+
+47
+
+T. Luo et al.
+
+Plant Science 271 (2018) 40–51
+
+Fig. 8. The number of fertile and infertile ﬂoral buds on raceme and branches (A. 2012–2013; B. 2013–2014). R represents the raceme and B1 represents the ﬁrst primary branch counted
+from apical to basal position of stem, B2 represents the second primary branch, and so on. Diﬀerent letters indicate signiﬁcant diﬀerence between total ﬂoral buds and fertile ﬂoral buds at
+P ≤ 0.05 by LSD.
+
+from sowing to ﬂoral initiation [55]. However, our study indicates that
+thermal time is more reasonable to describe this relationship than ca-
+lendar days. In most cases the relationship between leaf emergence
+number and thermal time was described by a bilinear model with
+earlier leaves emerging slower than the later ones, which attributed to
+
+the change in leaf morphology from petiolar to sessile shape [14,56].
+There was no morphological distinction in leaf primordia of long- and
+short-petiole leaves and sessile leaf. In our experiment, the relationship
+between number of leaf primordia and thermal time was described by a
+linear model with a constant rate of leaf primordia diﬀerentiation for
+
+48
+
+T. Luo et al.
+
+Plant Science 271 (2018) 40–51
+
+Fig. 9. The seed yield of three genotypes under diﬀerent sowing dates in 2012–2013 (white bar) and 2013–2014 (grey bar). SD1, SD2 SD3 and SD4 represent sowing date on 15th
+September, 30th September, 15th October and 30th October, respectively. Values are mean ± SD for n = 4 replications.
+
+Table 4
+Analyses of variance for yield and yield components in growing season of 2012–2014.
+
+Source
+
+Pod number
+plant−1
+
+Seeds
+pod−1
+
+1000 seeds
+weight (g)
+
+Yield
+(kg ha−1)
+
+Growing season
+
+(GS)
+
+Sowing date (SD)
+Genotype (GT)
+GS×SD
+GS×GT
+SD×GT
+GS×SD×GT
+
+**
+
+**
+**
+NS
+**
+**
+*
+
+NS
+
+**
+*
+**
+NS
+**
+**
+
+**
+
+**
+**
+**
+**
+**
+**
+
+**
+
+**
+**
+**
+*
+**
+NS
+
+“NS”: non-signiﬁcant.
+“*”: signiﬁcant diﬀerence at P ≤ 0.05.
+“**”: signiﬁcant diﬀerence at P ≤ 0.01.
+
+genotypes in the temperature range of 6–24 °C regardless of sowing
+dates. Low temperature reduced the thermal time of pre-ﬂoral initiation
+phase, and thus number of leaves initiated in the apex.
+
+The relationship between ﬂoral bud number on raceme and thermal
+time calculated from ﬂoral initiation was robustly ﬁtted by sigmoidal
+logistic curve. Logistic regression models were widely used to describe
+plant development, including dry matter accumulation [57], leaf area
+dynamics [39,58], and temporal variability of nutrient uptake [59,60].
+The maximum ﬂoral bud number and diﬀerentiation speed, estimated
+by sigmoidal logistic equation, reﬂect the eﬀects of genotypes and
+temperature on dynamic change of ﬂoral bud number. The slope of the
+logistic curve showed that ﬂoral bud diﬀerentiation rate from shoot
+apical meristem was slower at the beginning of ﬂoral initiation, then
+increased to a maximum, and ﬁnally declined to 0 when the diﬀer-
+entiation terminated. The ﬂoral bud number was positively correlated
+with cumulative temperature at pre-ﬂoral initiation stage. It is con-
+sistent with the ﬁnding that the spikelet number was closely and po-
+sitively related to the number of days to ﬂoral initiation in wheat [61].
+Therefore, prolonging cumulative temperature at pre-ﬂoral initiation
+stage contributes to the formation of more ﬂoral buds.
+
+The degeneration ratio of total ﬂoral bud number calculated from
+the raceme and seven primary branches showed an increasing trend as
+sowing date delayed, exceeding more than 70% at SD4 in the present
+experiment. Number of ﬂoral bud, as a fructiﬁcation organ representing
+the sink-capacity, determines the potential seed yield. Since a portion of
+ﬂoral buds are degenerated, actual yield is much less than the potential
+yield because of the limitation of growing environment and plant nu-
+trient accumulation, supporting the hypothesis that rapeseed yield is
+predominantly source-limited, especially during the late reproductive
+phase [62,63]. Open ﬂowers and young pods underwent normal de-
+velopment on a basal medium of minerals, vitamins, and sucrose but
+the development of buds was less successful in vitro [64], which de-
+monstrates that ﬂoral buds are more vulnerable to environment and
+
+nutritional status of the plants. The bud degeneration is much more
+serious on branches than on raceme, which is especially true with basal
+branches because the ﬂoral bud on basal branches developed later than
+that on apical position and was shaded by apical braches, which may
+cause a less carbohydrate availability and limited photosynthesis
+[4,65]. This ﬁnding is in line with the previous ﬁnding that the number
+of ﬂorets and grains on tillers were less than on main shoots and only
+about 28% of all ﬂorets developed into grains [17]. Increasing assim-
+ilate partitioning to spikes during pre-anthesis period gives the chance
+to less developed ﬂoret primordia to become fertile ﬂorets at anthesis,
+increasing the ﬁnal number of grains per spike in wheat [66]. There-
+fore, agronomic practices with the aim to increase bud quantity or to
+reduce bud degeneration may improve rapeseed yield.
+
+Deep-understanding of the ﬂoral initiation and ﬂoral bud develop-
+ment will help to improve our knowledge about yield formation process
+and to optimize agronomic management for diﬀerent rapeseed geno-
+types. Agronomic traits and yield with its components varied with
+growing seasons, sowing dates and genotypes. The yield for the geno-
+type with strong vernalization decreased as sowing date delayed during
+the two-year experiment, while the genotype with weak vernalization
+gained a higher yield in an intermediate sowing date. Rapeseed yield
+hampers mainly due to shortened vegetative growth, and varies sig-
+niﬁcantly due to inter-annual climate variability [67]. The ﬁrst sowing
+date of 10th September in Yangtze River basin may expose early-ma-
+turity genotypes to chilling environment during anthesis. Exposure to
+sub- or super-optimal temperatures during anthesis reduced yields be-
+cause of the production of infertile ﬂoral buds [68–70]. Strong verna-
+lization requirement maintains intermediate- and late-maturity geno-
+types in vegetative state during the winter [52]. Due to this fact
+“Zhongshuang No.11” and “Zheshuang No.8” achieved their highest
+yield at the ﬁrst sowing date while “1358” achieved its highest yield at
+the second sowing date. Seed yield showed a signiﬁcant correlation
+with ﬂoral bud number although serious degeneration of ﬂoral bud
+occurred. The genotypes with strong vernalization requirement should
+be planted at an early sowing date in order to extend the pre-ﬂoral
+initiation stage to achieve more fertile ﬂoral buds and high yield, while
+the genotypes with weak vernalization requirement should be planted
+at a late sowing date to avoid ﬂowering in chilling environment.
+
+5. Conclusions
+
+Floral initiation is a decisive moment for rapeseed development,
+which determines the number of leaf primordia in life cycle and the
+beginning of ﬂoral bud diﬀerentiation. The development rate model in
+the present study have well descried the responses of ﬂoral initiation to
+temperature and photoperiod, and can be used to predict ﬂoral initia-
+tion time and design production schedules for diﬀerent maturity gen-
+otypes. The results of this study with three genotypes revealed the eﬀect
+of temperature on the ﬂoral initiation and ﬂoral bud quantity. Our
+study elucidated the diﬀerentiation pattern of SAM at pre- and post-
+
+49
+
+T. Luo et al.
+
+Plant Science 271 (2018) 40–51
+
+Fig. 10. Network analyses among leaf number, ﬂoral bud number, pod number, seeds per pod, 1000 seeds weight and seed yield of three genotypes (A. 1358; B. Zhongshuang No.11; C.
+Zheshuang No.8). Red lines indicate positive correlation (0 < r ≤ 1) and black lines indicate negative correlation (−1 ≤ r ≤ 0). Solid and dash lines indicate P ≤ 0.05 and P > 0.05,
+respectively. (For interpretation of the references to colour in this ﬁgure legend, the reader is referred to the web version of this article.)
+
+ﬂoral initiation phases. Floral bud dynamics on raceme response to
+thermal time is ﬁtted by sigmoidal logistic curve with a high coeﬃcient
+of determination. The parameters calculated by logistic equation reﬂect
+the eﬀects of the agronomic environment and rapeseed genotypes on
+ﬂoral bud dynamics. High ﬂoral bud quantity is a guarantee of high
+yield, meanwhile the raceme and the ﬁrst three primary branches
+counted from apical to basal position of the stem contributed mostly to
+yield with less ﬂoral degeneration. Consequently, agronomic manage-
+ments including suitable sowing date and reasonable plant density
+control that could increase ﬂower bud number and reduce ﬂoral bud
+degeneration are promising approaches to improve seed yield.
+
+Acknowledgments
+
+thanks
+
+System. Our
+
+This work was supported by the Modern Agricultural Industry
+Technology
+should be given to Hubei
+Meteorological Bureau for providing the meteorological data, to Jiajia
+Xin and Mengzhu Xian for their assistance in the ﬁeld, and to Drs.
+Deming Jin and Yunbi Xu for their helpful discussion and careful
+manuscript revision that improved this work signiﬁcantly. Useful sug-
+gestions given by the expert reviewers are also acknowledged.
+
+References
+
+[1] H.A. Sadat, G.A. Nematzadeh, N.B. Jelodar, O.G. Chapi, Genetic evaluation of yield
+and yield components at advanced generations in rapeseed (Brassica napus L.), Afr.
+J. Agric. Res. 5 (2010) 1958–1964.
+
+[2] W. Diepenbrock, Yield analysis of winter oilseed rape (Brassica napus L): a review,
+
+50
+
+Field Crops Res. 67 (2000) 35–49.
+
+[3] Y. Zhang, D. Zhang, H. Yu, B. Lin, Y. Fu, S. Hua, Floral initiation in response to
+
+planting date reveals the key role of ﬂoral meristem diﬀerentiation prior to budding
+in canola (Brassica napus L.), Front. Plant Sci. 7 (2016) 1369.
+
+[4] A.M. Tommey, E.J. Evans, The inﬂuence of pre-ﬂoral growth and development on
+the pathway of ﬂoral development, dry matter distribution and seed yield in oilseed
+rape (Brassica napus L.), Ann. Appl. Biol. 121 (1992) 687–696.
+
+[5] M. Blumel, N. Dally, C. Jung, Flowering time regulation in crops-what did we learn
+
+from Arabidopsis? Curr. Opin. Biotechnol. 32 (2015) 121–129.
+
+[6] X. Zou, I. Suppanz, H. Raman, J. Hou, J. Wang, J. Meng, Comparative analysis of
+FLC homologues in Brassicaceae provides insight into their role in the evolution of
+oilseed rape, PLoS One 7 (2012).
+
+[7] J. Wang, Y. Long, B. Wu, J. Liu, C. Jiang, L. Shi, J. Zhao, G.J. King, J. Meng, The
+evolution of Brassica napus FLOWERING LOCUS T paralogues in the context of in-
+verted chromosomal duplication blocks, BMC Evol. Biol 9 (2009) 271.
+
+[8] N. Thurling, L.D.V. Das, The relationship between pre-anthesis development and
+seed yield of spring rape (Brassica napus L.), Aust. J. Agric. Res. 31 (1979) 25–36.
+
+[9] M.J. Robertson, S. Asseng, J.A. Kirkegaard, N. Wratten, J.F. Holland,
+
+A.R. Watkinson, T.D. Potter, W. Burton, G.H. Walton, D.J. Moot, I. Farre,
+Environmental and genotypic control of time to ﬂowering in canola and Indian
+mustard, Aust. J. Agric. Res. 53 (2002) 793–809.
+
+[10] L. Hu, Y. Ding, Crops Cultivation, Higher Education Press, Beijing, 2008, pp.
+
+387–388.
+
+[11] D.J. Major, Photoperiod response cheracteristics controlling ﬂowering of nine crop
+
+species, Can. J. Plant Sci. 60 (1980) 778–784.
+
+[12] B. Habekotté, A model of the phenological development of winter oilseed rape
+
+(Brassica napus L.), Field Crops Res. 54 (1997) 127–136.
+
+[13] F.G. Gonzalez, G.A. Slafer, D.J. Miralles, Vernalization and photoperiod responses
+in wheat pre-ﬂowering reproductive phases, Field Crops Res. 74 (2002) 183–195.
+
+[14] D.J. Miralles, B.C. Ferro, G.A. Slafer, Developmental response to sowing date in
+
+wheat, barely and rapeseed, Field Crops Res. 71 (2001) 211–233.
+
+[15] D.I. Mcgregor, Pattern of ﬂower and pod development in rapeseed, Can. J. Plant Sci.
+
+61 (1981) 275–282.
+
+[16] C. Guan, A preliminary analysis of the yield formation of rapeseed (B. napus), Acta
+
+Agron. Sin. 6 (1980) 35–43.
+
+T. Luo et al.
+
+Plant Science 271 (2018) 40–51
+
+simulating canola growth and yield at West Nipissing in Eastern Canada, Agron. J.
+108 (2016) 575–584.
+
+[44] D. He, E. Wang, J. Wang, M.J. Robertson, Data requirement for eﬀective calibration
+
+of process-based crop models, Agric. For. Meteorol. 234–235 (2017) 136–148.
+
+[45] R. Ihaka, R. Gentleman, R: a language for data analysis and graphics, J. Comput.
+
+Graph Stat. 5 (1996) 299–314.
+
+[46] H. Mo, Agricultural Experiment Statistics, Shanghai Scientiﬁc and Technical
+
+Publishers, Shanghai, 1984, pp. 371–372.
+
+[47] L.A. Murphy, R. Scarth, Vernalization response in spring oilseed rape (Brassica
+
+napus L.) cultivars, Can. J. Plant Sci. 74 (1994) 275–277.
+
+[48] T.M. Andrew, E.J. Eric, Temperature and daylength control of ﬂower initiation in
+
+winter oilseed rape (Brassica napus L.), Ann. Appl. Biol. 118 (1991) 201–208.
+
+[49] L.B. Windauer, E.L. Ploschuk, R.L. Benech-Arnold, The growth rate modulates time
+to ﬁrst bud appearance in Physaria mendocina, Ind. Crops Prod. 49 (2013) 188–195.
+[50] N. Thurling, L.D.V. Das, Variation in the pre-anthesis development of spring pape
+
+(Brassica napus L.), Aust. J. Agric. Res. 28 (1977) 597–607.
+
+[51] R. Nanda, S.C. Bhargava, D.P.S. Tomar, H.M. Rawson, Phenological development of
+
+Brassica campestris, B., juncea, B. napus and B. carinata grown in controlled en-
+vironments and from 14 sowing dates in the ﬁeld, Field Crops Res. 46 (1996)
+93–103.
+
+[52] W.M. Wendy, J.A. Stavang, J.E. Olsen, O.A. Rognli, The relationship between
+
+vernalization saturation and the maintenance of freezing tolerance in winter ra-
+peseed, Environ. Exp. Bot. 106 (2014) 164–173.
+
+[53] E.J.M. Kirby, A ﬁeld study of the number of main shoot leaves in wheat in relation
+
+to vernalization and photoperiod, J. Agric. Sci. 118 (2009) 271–278.
+
+[54] H.M. Rawson, M. Zajac, L.D.J. Penrose, Eﬀect of seedling temperature and its
+
+duration on development of wheat cultivars diﬀering in vernalization response,
+Field Crops Res. 57 (1998) 289–300.
+
+[55] R. Nanda, S.C. Bhargava, H.M. Rawson, Eﬀect of sowing date on rates of leaf ap-
+pearance, ﬁnal leaf numbers and areas in Brassica campestris, B., juncea, B. napus and
+B. carinata, Field Crops Res. 42 (1995) 125–134.
+
+[56] G.A. Dalmago, E. Fochesatto, S. Kovaleski, I.F. Tazzo, L.M. Bolis, G.R. da Cunha,
+
+A.H. Nied, H. Bergamaschi, A. Santi, Phyllochron and number of leaves of canola in
+diﬀerent environmental conditions, Pesqui. Agropecu. Bras. 48 (2013) 573–581.
+[57] J.E. Olesen, B.M. Petersen, J. Berntsen, S. Hansen, P.D. Jamieson, A.G. Thomsen,
+Comparison of methods for simulating eﬀects of nitrogen on green area index and
+dry matter growth in winter wheat, Field Crops Res. 74 (2002) 131–149.
+
+[58] A.M. Ferreira, F.G. Abreu, Description of development, light interception and
+
+growth of sunﬂower at two sowing dates and two densities, Math. Comput. Simul.
+56 (2001) 369–384.
+
+[59] N.K. Moustakas, H. Ntzanis, Dry matter accumulation and nutrient uptake in ﬂue-
+
+cured tobacco (Nicotiana tabacum L.), Field Crops Res. 94 (2005) 1–13.
+
+[60] G.Y.G. Axel, D.-N. Durval, B.M. d. Valle, L.O.R. Fernando, F.J. Laércio, Logistic rice
+
+model for dry matter and nutrient uptake, Sci. Agric. 60 (2003) 481–488.
+
+[61] N.J. Halse, R.N. Weir, Eﬀects of vernalization, photoperiod, and temperature on
+
+phenological development and spikelet number of Australian wheat, Aust. J. Agric.
+Res. 21 (1970) 383–393.
+
+[62] W. Weymann, U. Böttcher, K. Sieling, H. Kage, Eﬀects of weather conditions during
+diﬀerent growth phases on yield formation of winter oilseed rape, Field Crops Res.
+173 (2015) 41–48.
+
+[63] A. Faraji, Flower formation and pod/ﬂower ratio in canola (Brassica napus L.) af-
+fected by assimilates supply around ﬂowering, Int. J. Plant Prod. 4 (2010) 271–280.
+[64] C. Bouttier, D.G. Morgan, Development of oilseed rape buds, ﬂowers, and pods in
+
+Vitro, J. Exp. Bot. 43 (1992) 1089–1096.
+
+[65] X. Wang, A. Mathieu, P.-H. Cournède, J.-M. Allirand, A. Jullien, P. d. Reﬀye,
+
+B.G. Zhang, Variability and regulation of the number of ovules, seeds and pods
+according to assimilate availability in winter oilseed rape (Brassica napus L.), Field
+Crops Res. 122 (2011) 60–69.
+
+[66] D.J. Miralles, S.D. Katz, G.A. Slafer, Floret development in near isogenic wheat lines
+
+diﬀering in plant height, Field Crops Res. 59 (1998) 21–30.
+
+[67] S. Wang, E.L. Wang, F. Wang, L. Tang, Phenological development and grain yield of
+canola as aﬀected by sowing date and climate variation in the Yangtze River Basin
+of China, Crop Pasture Sci. 63 (2012) 478–488.
+
+[68] M.J. Morrison, Heat stress during reproduction in summer rape, Can. J. Bot. 71
+
+(1993) 303–308.
+
+[69] S.V. Angadi, H.W. Cutforth, P.R. Miller, B.G. Mcconkey, M.H. Entz, S.A. Brandt,
+
+K.M. Volkmar, Response of three Brassica species to high temperature stress during
+reproductive growth, Can. J. Plant Sci. 80 (2000) 693–701.
+
+[70] P.L. Polowick, V.K. Sawhney, High temperature induced male and female sterility
+
+in canola (Brassica napus L.), Ann. Bot. 62 (1988) 83–86.
+
+[17] E.E. Whingwiri, W.R. Stern, Floret survival in wheat: signiﬁcance of the time of
+
+ﬂoret initiation relative to terminal spikelet formation, J. Agric. Sci. Camb. 98
+(1982) 257–268.
+
+[18] S. Leng, G. Zhu, Inﬂuence of temperature and podding position on percentage of
+
+ﬁlled seed in spring rape, Chin. J. Oil Crop Sci. 2 (1993) 57–59.
+
+[19] F.J. Villalobos, F. Orgaz, E. Fereres, Sowing and planting, in: F.J. Villalobos,
+
+E. Fereres (Eds.), Principles of Agronomy for Sustainable Agriculture, Springer
+International Publishing, Cham, 2016, pp. 217–227.
+
+[20] H. Zhang, J.D. Berger, S.P. Milroy, Genotype×environment interaction studies
+
+highlight the role of phenology in speciﬁc adaptation of canola (Brassica napus L.) to
+contrasting Mediterranean climates, Field Crops Res. 144 (2013) 77–88.
+
+[21] E.J.J. Momoh, W. Zhou, Growth and yield responses to plant density and stage of
+
+transplanting in winter oilseed rape (Brassica napus L.), J. Agron. Crop Sci. 186
+(2001) 253–259.
+
+[22] E.J.M. Kirby, M. Appleyard, Eﬀect of sowing date on the temperature response of
+
+leaf emergence and leaf size in barley, Plant Cell Environ. 5 (1982) 477–484.
+
+[23] R. Ferrise, A. Triossi, P. Stratonovitch, M. Bindi, P. Martre, Sowing date and ni-
+
+trogen fertilisation eﬀects on dry matter and nitrogen dynamics for durum wheat:
+an experimental and simulation study, Field Crops Res. 117 (2010) 245–257.
+
+[24] M.J. Robertson, J.F. Holland, R. Bambach, Response of canola and Indian mustard
+to sowing date in the grain belt of north-eastern Australia, Aust. J. Exp. Agric. 44
+(2004) 43–52.
+
+[25] A.H. Shirani Rad, Z. Bitarafan, F. Rahmani, T. Taherkhani, A. Moradi Aghdam,
+S. Nasresfahani, Eﬀects of planting date on spring rapeseed (Brassica napus L.)
+cultivals under diﬀerent irrigation regimes, Turk. J. Field Crops 19 (2014) 153–157.
+[26] H. Ozer, Sowing date and nitrogen rate eﬀects on growth, yield and yield compo-
+
+nents of two summer rapeseed cultivars, Eur. J. Agron. 19 (2003) 453–463.
+
+[27] Q. Wang, M. Zhang, S. Wang, Q. Ma, M. Sun, Changes in temperature extremes in
+
+the Yangtze River Basin, 1962–2011, J. Geogr. Sci. 24 (2013) 59–75.
+
+[28] B.D. Su, T. Jiang, W.B. Jin, Recent trends in observed temperature and precipitation
+
+extremes in the Yangtze River basin, China, Theor. Appl. Climatol. 83 (2005)
+139–151.
+
+[29] S.D. Bao, Soil and agricultural chemistry analysis, Soil Agro-Chemistrical Analysis,
+
+China Agriculture Press, Beijing, 2000, pp. 30–107.
+
+[30] P.A. Cawse, The determination of nitrate in soil solutions by ultraviolet spectro-
+
+photometry, Analyst 92 (1967) 311–315.
+
+[31] D.K.Y. Tan, A.H. Wearing, K.G. Rickert, C.J. Birch, Detection of ﬂoral initiation in
+
+broccoli (Brassica oleracea L. var. italica Plenck) based on electron micrograph
+standards of shoot apices, Aust. J. Exp. Agric. 38 (1998) 313–318.
+
+[32] B. Gabrielle, P. Denoroy, G. Gosse, E. Justes, M.N. Andersen, Development and
+evaluation of a CERES-type model for winter oilseed rape, Field Crops Res. 57
+(1998) 95–111.
+
+[33] N.V. Gomez, D.J. Miralles, Factors that modify early and late reproductive phases in
+oilseed rape (Brassica napus L.): Its impact on seed yield and oil content, Ind. Crops
+Prod. 34 (2011) 1277–1285.
+
+[34] E. Wang, T. Engel, Simulation of phenological development of wheat crops, Agric.
+
+Syst. 58 (1998) 1–24.
+
+[35] Z. Ya-Jie, L. Jing, P. Hong-Kun, C. Xiu-Bin, Z. Hong-Yu, C. Sheng-Bei, L. An-Guo,
+H. Li-Yong, Dynamic simulation model for growth duration of rapeseed (Brassica
+napus L.), Acta Agron. Sin. 41 (2015) 766–777.
+
+[36] L. Tang, Y. Zhu, T.-m. Liu, W.-x. Cao, A process-based model for simulating phe-
+
+nological development in rapeseed, Sci. Agric. Sin. 41 (2008) 2493–2498.
+
+[37] J.E. Ephrath, J. Goudriaan, A. Marani’, Modelling diurnal patterns of air tempera-
+
+ture, radiation wind speed and relative humidity by equations from daily char-
+acteristics, Agric. Syst. 5 (1996) 377–393.
+
+[38] W.-d. Yu, X.-h. Tang, Simulation and modiﬁcation of daily variation of air tem-
+
+perature, Chin. J. Agrometeorol. 30 (2009) 35–40.
+
+[39] T. Tian, L. Wu, M. Henke, B. Ali, W. Zhou, G. Buck-Sorlin, Modeling allometric
+relationships in leaves of young rapeseed (Brassica napus L.) grown at diﬀerent
+temperature treatments, Front. Plant Sci. 8 (2017) 313.
+
+[40] P.A. Deligios, R. Farci, L. Sulas, G. Hoogenboom, L. Ledda, Predicting growth and
+yield of winter rapeseed in a Mediterranean environment: model adaptation at a
+ﬁeld scale, Field Crops Res. 144 (2013) 100–112.
+
+[41] D.J. Major, J.R. Kiniry, Predicting daylength eﬀects on phenological processes,
+
+Predicting Crop Phenology, CRC Press, Boca Raton, Ann Arbor, Boston, 1991, pp.
+15–28.
+
+[42] W.-x. Cao, W.-h. Luo, Simulation of crop stage development, Crop System
+
+Simulation and Intelligent Management, Sino-Culture Press, Beijing, 2000, pp.
+28–30.
+
+[43] J. Qi, J.L. Shang, B.D. Qian, G. Hoogenboom, T. Huﬀman, J.G. Liu, B.L. Ma,
+
+X.Y. Geng, X.F. Jiao, J. Kovacs, Evaluation of the CSM-CROPGRO-Canola model for
+
+51
+
+
