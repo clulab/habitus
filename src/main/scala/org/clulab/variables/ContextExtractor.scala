@@ -191,7 +191,7 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
     var contexts = new ArrayBuffer[entityDistFreq]()
     for (key <- sentIdFreq.keys) {
       contexts += new entityDistFreq(key.entityValue, key.nerTag,sentIdFreq(key))
-    }
+    } 
     contexts.toSeq
   }
 
