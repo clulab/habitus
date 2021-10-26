@@ -152,7 +152,7 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
 
   //for each entity, find which sentence they occur in an how many times
   def mapEntityToFreq(entitySentFreq: scala.collection.mutable.Map[Entity, Int]):Seq[entityDistFreq]  = {
-    val sentIdFreq= scala.collection.mutable.Map[entityNameEntity, ArrayBuffer[Array[Int]]]()
+    val sentIdFreq= scala.collection.mutable.Map[entityNameEntity, ArrayBuffer[(Int,Int)]]()
     for (key <- entitySentFreq.keys) {
       val entityName = key.entityValue
       val entity = key.tag
@@ -163,12 +163,12 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
       sentIdFreq.get(nk) match {
         case Some(i) =>
           var freqNew = sentIdFreq(nk)
-          var sentfreqa = Array(sentId, freq)
-          freqNew += sentfreqa
+          var sentfreqa = (sentId, freq)
+          freqNew.append(sentfreqa)
           sentIdFreq += (nk -> freqNew)
         case None =>
-          val sentfreq = ArrayBuffer[Array[Int]]()
-          sentfreq += Array(sentId, freq)
+          val sentfreq = ArrayBuffer[(Int,Int)]()
+          sentfreq.append((sentId, freq))
           sentIdFreq += (nk -> sentfreq)
       }
     }
@@ -186,7 +186,7 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
   }
 
 
-  def convertMapToSeq(sentIdFreq: scala.collection.mutable.Map[entityNameEntity, ArrayBuffer[Array[Int]]])=
+  def convertMapToSeq(sentIdFreq: scala.collection.mutable.Map[entityNameEntity, ArrayBuffer[(Int,Int)]])=
   {
     var contexts = new ArrayBuffer[entityDistFreq]()
     for (key <- sentIdFreq.keys) {
