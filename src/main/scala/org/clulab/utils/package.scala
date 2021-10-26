@@ -34,6 +34,8 @@ package object utils {
   //todo:context details class should store all histograms
   case class contextDetails( mention: String,mostFreqLoc0Sent: String,mostFreqLoc1Sent: String, mostFreqLoc: String,
                              mostFreqDate0Sent: String,mostFreqDate1Sent: String, mostFreqDate: String)
+
+
   // extract needed information and write them to tsv in a desired format. Return nothing here!
   def outputMentionsToTSV(mentions: Seq[Mention], doc: Document,context:scala.collection.mutable.Map[Int,contextDetails],
                           filename: String, pw: PrintWriter): Unit = {
@@ -52,12 +54,12 @@ package object utils {
           m => try {
             pw.println(s"${m.arguments("variable").head.text}\t${m.arguments("value").head.text}\t${m.arguments("value")
               .head.norms.filter(_.length > 2).get(0)}\t${s.getSentenceText}\t$filename\t${
-              Some(context(i).mostFreqLoc0Sent).get}\t${
-              Some(context(i).mostFreqLoc1Sent).get}\t${
-              Some(context(i).mostFreqLoc).get}\t${
-              Some(context(i).mostFreqDate0Sent).get}\t${
-              Some(context(i).mostFreqDate1Sent).get}\t${
-              Some(context(i).mostFreqDate).get}")
+              context(i).mostFreqLoc0Sent}\t${
+              context(i).mostFreqLoc1Sent}\t${
+              context(i).mostFreqLoc}\t${
+              context(i).mostFreqDate0Sent}\t${
+              context(i).mostFreqDate1Sent}\t${
+              context(i).mostFreqDate}")
           } catch {
             case e: NoSuchElementException => println(s"No normalized value found for ${m.arguments("value").head.text} in sentence ${s.getSentenceText}!")
               e.printStackTrace(System.out)

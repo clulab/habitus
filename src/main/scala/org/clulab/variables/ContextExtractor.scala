@@ -54,11 +54,26 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
 
     //todo assert lengths of all the mostFreq* are same
     //for each event mention, get the sentence id, and map it to a case class called contextDetails, which will have all of mostFreq* information
-    //zipping through only the list of one mostFreq* since all of them should have same lenghts
+    //note: zipping through only the list of one mostFreq* since all of them should have same lenghts.
     for ((mostFreq, i) <- (mostFreqLocation0Sent).zipWithIndex) {
-      checkSentIdContextDetails(sentidContext,mostFreq.sentId, contextDetails(mostFreq.mention, mostFreq.mostFreqEntity,
-        mostFreqLocation1Sent(i).mostFreqEntity, mostFreqLocation(i).mostFreqEntity,mostFreqDate0Sent(i).mostFreqEntity,
-        mostFreqDate1Sent(i).mostFreqEntity, mostFreqDate(i).mostFreqEntity))
+      checkSentIdContextDetails(sentidContext,mostFreq.sentId,
+        contextDetails(mostFreq.mention,
+          checkIfEmpty(mostFreq.mostFreqEntity),
+          checkIfEmpty(mostFreqLocation1Sent(i).mostFreqEntity),
+          checkIfEmpty(mostFreqLocation(i).mostFreqEntity),
+          checkIfEmpty(mostFreqDate0Sent(i).mostFreqEntity),
+          checkIfEmpty(mostFreqDate1Sent(i).mostFreqEntity),
+          checkIfEmpty(mostFreqDate(i).mostFreqEntity)))
+    }
+  }
+
+  //if none, return "", else return String value of entity e.g.:"SENEGAL"
+  def checkIfEmpty(mostFreqEntity:Option[String]): String =
+  {
+    mostFreqEntity match
+      {
+      case Some(i)=> return mostFreqEntity.get
+      case None => return "N/A"
     }
   }
 
@@ -76,15 +91,14 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
 
     //for returning all context related data: get seq[MostFreqEntity] where MostFreqEntity=(sentId: Int, mention: String, mostFreqEntity: String)
     // todo: return within Event mention argument
-
     findMostFreqContextEntitiesForAllEvents(mentionContextMap, n, entityType)
   }
 
   //for each mention find how far away an entity occurs, and no of times it occurs in that sentence
- def getEntityRelDistFromMention(mentionsSentIds: Seq[EventMention], contexts:Seq[entityDistFreq])= {
-   val mentionsContexts=  scala.collection.mutable.Map[EventMention, Seq[entityDistFreq]]()
+ def getEntityRelDistFromMention(mentionsSentIds: Seq[EventMention], contexts:Seq[EntityDistFreq])= {
+   val mentionsContexts=  scala.collection.mutable.Map[EventMention, Seq[EntityDistFreq]]()
    for (mention <- mentionsSentIds) {
-     var contextsPerMention = new ArrayBuffer[entityDistFreq]()
+     var contextsPerMention = new ArrayBuffer[EntityDistFreq]()
      for (context <- contexts) {
        val relDistFreq = ArrayBuffer[(Int,Int)]()
        for (absDistFreq <- context.entityDistFrequencies) {
@@ -120,9 +134,9 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
     }
     mapper
   }
-  case class MostFreqEntity(sentId: Int, mention: String, mostFreqEntity: String)
+  case class MostFreqEntity(sentId: Int, mention: String, mostFreqEntity: Option[String])
 
-  def findMostFreqContextEntitiesForOneEvent(mention:EventMention, contexts:Seq[entityDistFreq], entityType:String, n:Int):MostFreqEntity= {
+  def findMostFreqContextEntitiesForOneEvent(mention:EventMention, contexts:Seq[EntityDistFreq], entityType:String, n:Int):MostFreqEntity= {
     var entityFreq = scala.collection.mutable.Map[String, Int]()
     var maxFreq = 0
     var mostFreqEntity = ""
@@ -139,26 +153,38 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
         }
       }
     }
-    MostFreqEntity(mention.sentence, mention.words.mkString(" "), mostFreqEntity)
+
+    MostFreqEntity(mention.sentence, mention.words.mkString(" "), checkIfNoName(mostFreqEntity))
   }
 
-  def findMostFreqContextEntitiesForAllEvents(mentionContextMap: scala.collection.mutable.Map[EventMention, Seq[entityDistFreq]], n:Int, entityType:String):Seq[MostFreqEntity] = {
+  def checkIfNoName(s:String):Option[String]=
+    {
+      if (s==""){
+        return None
+      }
+      else
+        {
+          return Some(s)
+        }
+    }
+
+  def findMostFreqContextEntitiesForAllEvents(mentionContextMap: scala.collection.mutable.Map[EventMention, Seq[EntityDistFreq]], n:Int, entityType:String):Seq[MostFreqEntity] = {
     mentionContextMap.keys.toSeq.map(key=>findMostFreqContextEntitiesForOneEvent(key,mentionContextMap(key), entityType,n))
   }
 
 
   // a case class to hold the entity value and its ner tag together
-  case class entityNameEntity(entityValue: String, nerTag: String)
+  case class EntityNameNerTag(entityValue: String, nerTag: String)
 
   //for each entity, find which sentence they occur in an how many times
-  def mapEntityToFreq(entitySentFreq: scala.collection.mutable.Map[Entity, Int]):Seq[entityDistFreq]  = {
-    val sentIdFreq= scala.collection.mutable.Map[entityNameEntity, ArrayBuffer[(Int,Int)]]()
+  def mapEntityToFreq(entitySentFreq: scala.collection.mutable.Map[Entity, Int]):Seq[EntityDistFreq]  = {
+    val sentIdFreq= scala.collection.mutable.Map[EntityNameNerTag, ArrayBuffer[(Int,Int)]]()
     for (key <- entitySentFreq.keys) {
       val entityName = key.entityValue
       val entity = key.tag
       val sentId = key.sentIdx
       val freq = entitySentFreq(key)
-      val nk = entityNameEntity(entityName, entity)
+      val nk = EntityNameNerTag(entityName, entity)
       //if the entity_sentenceid combination already exists in the dictionary, increase its frequency by 1, else add.
       sentIdFreq.get(nk) match {
         case Some(i) =>
@@ -186,12 +212,12 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
   }
 
 
-  def convertMapToSeq(sentIdFreq: scala.collection.mutable.Map[entityNameEntity, ArrayBuffer[(Int,Int)]])=
+  def convertMapToSeq(sentIdFreq: scala.collection.mutable.Map[EntityNameNerTag, ArrayBuffer[(Int,Int)]])=
   {
-    var contexts = new ArrayBuffer[entityDistFreq]()
+    var contexts = new ArrayBuffer[EntityDistFreq]()
     for (key <- sentIdFreq.keys) {
-      contexts += new entityDistFreq(key.entityValue, key.nerTag,sentIdFreq(key))
-    } 
+      contexts += new EntityDistFreq(key.entityValue, key.nerTag,sentIdFreq(key))
+    }
     contexts.toSeq
   }
 
@@ -221,7 +247,7 @@ class ContextExtractor(val processor: Processor, val extractor: ExtractorEngine)
   }
 
   //For each entity find which sentence it occurs in and its frequency
-  def getEntityFreqPerSent(doc: Document): Seq[entityDistFreq] = {
+  def getEntityFreqPerSent(doc: Document): Seq[EntityDistFreq] = {
     //for each sentence how many times does this entity occur
     var entitySentFreq: scala.collection.mutable.Map[Entity, Int] = Map()
     for ((s, i) <- doc.sentences.zipWithIndex) {
@@ -290,4 +316,4 @@ object ContextExtractor {
 }
 // histogram of all Entities
 //e.g.,{Senegal, LOC, {[1, 1], [4, 2]}}- The Location Sengal occurs in sentence 1 once,in sentence 4, 2 times setc
-case class entityDistFreq(var entityValue: String, var nerTag: String, val entityDistFrequencies:ArrayBuffer[(Int,Int)])
+case class EntityDistFreq(var entityValue: String, var nerTag: String, val entityDistFrequencies:ArrayBuffer[(Int,Int)])
