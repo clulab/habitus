@@ -1,6 +1,6 @@
 package org.clulab.variables
 
-import org.clulab.odin.Mention
+
 import org.scalatest.{FlatSpec, Matchers}
 
 //
@@ -9,7 +9,7 @@ import org.scalatest.{FlatSpec, Matchers}
 
 class TestContextExtractor extends FlatSpec with Matchers {
   val vp = VariableProcessor()
-  val ce = ContextExtractor()
+  val ce = EntityHistogramExtractor()
 
 //pass1: test sentences which have only one event overall in the document
   val sent1 ="""

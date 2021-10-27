@@ -1,14 +1,12 @@
 package org.clulab.variables
-
 import org.clulab.dynet.Utils
-import org.clulab.odin.{ExtractorEngine, Mention}
+import org.clulab.odin.{EventMention, ExtractorEngine, Mention}
 import org.clulab.processors.{Document, Processor}
 import org.clulab.processors.clu.CluProcessor
 import org.clulab.sequences.LexiconNER
-import org.clulab.utils.contextDetails
 
 class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine) {
-  def parse(text: String): (Document, Seq[Mention],scala.collection.mutable.Map[Int,contextDetails]) = {
+  def parse(text: String): (Document, Seq[Mention],Seq[EventMention],Seq[EntityDistFreq]) = {
 
     // pre-processing
     val doc = processor.annotate(text, keepText = false)
@@ -16,17 +14,10 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
     // extract mentions from annotated document
     val mentions = extractor.extractFrom(doc).sortBy(m => (m.sentence, m.getClass.getSimpleName))
 
-
-    //extract contexts:
-    val ce= ContextExtractor()
-
-    // sentidContext= a map between sent-id to contexts corresponding to event mentions in that sentence
-    // Todo: send context inside mention object itself
-    val sentidContext=scala.collection.mutable.Map[Int,contextDetails]()
-
-    //todo: extraction/compressing into loc in 0 distance should happen in output
-    ce.parse(doc,mentions,sentidContext)
-    (doc, mentions,sentidContext)
+    //get histogram of all entities:
+    val ce = EntityHistogramExtractor()
+    val (allEventMentions, histogram) = ce.extractContext(doc, mentions)
+    (doc, mentions, allEventMentions, histogram)
   }
 }
 
