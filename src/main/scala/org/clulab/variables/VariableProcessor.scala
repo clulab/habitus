@@ -16,7 +16,7 @@ class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine
 
     //get histogram of all entities:
     val ce = EntityHistogramExtractor()
-    val (allEventMentions, histogram) = ce.extractContext(doc, mentions)
+    val (allEventMentions, histogram) = ce.extractHistogramEventMentions(doc, mentions)
     (doc, mentions, allEventMentions, histogram)
   }
 }

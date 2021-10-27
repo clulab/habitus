@@ -22,7 +22,7 @@ class EntityHistogramExtractor(val processor: Processor, val extractor: Extracto
 
 
 
-  def extractContext(doc: Document, mentions:Seq[Mention]):(Seq[EventMention],Seq[EntityDistFreq])= {
+  def extractHistogramEventMentions(doc: Document, mentions:Seq[Mention]):(Seq[EventMention],Seq[EntityDistFreq])= {
     //collect all event mentions only (and not text bound ones)
     val allEventMentions = mentions.collect { case m: EventMention => m }
 

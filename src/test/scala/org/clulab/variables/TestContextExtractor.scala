@@ -1,6 +1,7 @@
 package org.clulab.variables
 
 
+import org.clulab.variables.VariableReader.extractContext
 import org.scalatest.{FlatSpec, Matchers}
 
 //
@@ -10,6 +11,7 @@ import org.scalatest.{FlatSpec, Matchers}
 class TestContextExtractor extends FlatSpec with Matchers {
   val vp = VariableProcessor()
   val ce = EntityHistogramExtractor()
+  val vr= VariableReader
 
 //pass1: test sentences which have only one event overall in the document
   val sent1 ="""
@@ -20,9 +22,9 @@ In Senegal maturity  came in early November ( Tab.I ) for 1995.
 In Senegal maturity  came in early November ( Tab.I ) for 1995.
 """
 
-  def getMSFreq(text: String): Seq[ce.MostFreqEntity] = {
-    val (doc, mentions,contextEntities) = vp.parse(text)
-    val mse=ce.extractContext(doc,mentions,Int.MaxValue,"LOC")
+  def getMSFreq(text: String): Seq[vr.MostFreqEntity] = {
+    val (doc, mentions,allEventMentions, histogram) = vp.parse(text)
+    val mse=vr.extractContext(doc,allEventMentions,Int.MaxValue,"LOC",histogram)
     (mse)
   }
 
@@ -30,9 +32,9 @@ In Senegal maturity  came in early November ( Tab.I ) for 1995.
     val mse = getMSFreq(sent1)
     mse.head.mostFreqEntity.getOrElse("") should be ("senegal")
   }
-  def getMSFreq1Sent(text: String): Seq[ce.MostFreqEntity] = {
-    val (doc, mentions,contextEntities) = vp.parse(text)
-    val mse=ce.extractContext(doc,mentions,1,"LOC")
+  def getMSFreq1Sent(text: String): Seq[vr.MostFreqEntity] = {
+    val (doc, mentions,allEventMentions, histogram) = vp.parse(text)
+    val mse=vr.extractContext(doc,allEventMentions,1,"LOC",histogram)
     (mse)
   }
 
@@ -41,16 +43,20 @@ In Senegal maturity  came in early November ( Tab.I ) for 1995.
     mse.head.mostFreqEntity.getOrElse("")  should be ("united states")
   }
 
-  def getMSFreq0Sent(text: String): Seq[ce.MostFreqEntity] = {
-    val (doc, mentions,contextEntities) = vp.parse(text)
-    val mse=ce.extractContext(doc,mentions,0,"LOC")
+
+  def getMSFreq0Sent(text: String): Seq[vr.MostFreqEntity] = {
+    val (doc, mentions,allEventMentions, histogram) = vp.parse(text)
+    val mse=vr.extractContext(doc,allEventMentions,0,"LOC",histogram)
     (mse)
   }
-  def getMostFreqYearOverall(text: String): Seq[ce.MostFreqEntity] = {
-    val (doc, mentions,contextEntities) = vp.parse(text)
-    val mse=ce.extractContext(doc,mentions,Int.MaxValue,"DATE")
+  
+
+  def getMostFreqYearOverall(text: String): Seq[vr.MostFreqEntity] = {
+    val (doc, mentions,allEventMentions, histogram) = vp.parse(text)
+    val mse=vr.extractContext(doc,allEventMentions,Int.MaxValue,"DATE",histogram)
     (mse)
   }
+
 
   sent1 should "find matto grosso  as the most frequent entity within 0 sentence distance" in {
     val mse = getMSFreq0Sent(sent1)
