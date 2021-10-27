@@ -71,11 +71,7 @@ package object utils {
               e.printStackTrace(System.out)
             case e: RuntimeException => println(s"Error occurs for sentence: ${s.getSentenceText}")
               e.printStackTrace(System.out)
-          }
-            println(m.arguments("variable").head.text)
-            println(m.arguments("value").head.text)
-            println(m.arguments("value").head.norms.filter(_.length > 2))
-            println(m.arguments("value").head.norms)
+          }           
       }
     }
   }

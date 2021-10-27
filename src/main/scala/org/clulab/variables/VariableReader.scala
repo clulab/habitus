@@ -100,7 +100,6 @@ object VariableReader {
         }
       }
     }
-
     MostFreqEntity(mention.sentence, mention.words.mkString(" "), checkIfNoName(mostFreqEntity))
   }
 

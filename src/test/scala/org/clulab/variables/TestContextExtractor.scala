@@ -49,7 +49,7 @@ In Senegal maturity  came in early November ( Tab.I ) for 1995.
     val mse=vr.extractContext(doc,allEventMentions,0,"LOC",histogram)
     (mse)
   }
-  
+
 
   def getMostFreqYearOverall(text: String): Seq[vr.MostFreqEntity] = {
     val (doc, mentions,allEventMentions, histogram) = vp.parse(text)
