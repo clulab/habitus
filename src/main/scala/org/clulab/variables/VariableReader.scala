@@ -32,7 +32,6 @@ object VariableReader {
       val (doc, mentions,allEventMentions, entityHistogram)  = vp.parse(text)
       val context=compressContext(doc,allEventMentions,entityHistogram)
       println(s"Writing mentions from doc ${filename} to $outputFile")
-      //todo: simplify context- here you will find sent from location 0 etc
       outputMentionsToTSV(mentions, doc, context, filename, pw)
       // to not overpopulate the memory. Flush findings once for each document.
       pw.flush()

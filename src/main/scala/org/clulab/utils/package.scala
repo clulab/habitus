@@ -71,7 +71,7 @@ package object utils {
               e.printStackTrace(System.out)
             case e: RuntimeException => println(s"Error occurs for sentence: ${s.getSentenceText}")
               e.printStackTrace(System.out)
-          }           
+          }
       }
     }
   }
