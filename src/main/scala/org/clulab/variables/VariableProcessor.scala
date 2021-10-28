@@ -2,10 +2,13 @@ package org.clulab.variables
 import java.io.File
 import org.clulab.dynet.Utils
 import org.clulab.odin.{EventMention, ExtractorEngine, Mention}
-import org.clulab.processors.{Document, Processor}
+import org.clulab.processors.{Document}
 import org.clulab.processors.clu.CluProcessor
 import org.clulab.sequences.LexiconNER
 import org.clulab.utils.FileUtils
+import sourcecode.Text.generate
+
+
 
 class VariableProcessor(val processor: CluProcessor, val extractor: ExtractorEngine) {
 
@@ -18,7 +21,7 @@ class VariableProcessor(val processor: CluProcessor, val extractor: ExtractorEng
   }
 
 
-class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine) {
+
   def parse(text: String): (Document, Seq[Mention],Seq[EventMention],Seq[EntityDistFreq]) = {
 
     // pre-processing

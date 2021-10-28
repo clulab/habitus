@@ -80,8 +80,7 @@ package object utils {
 
             //println(s"NORMS for ${valText}: [$norm]")
 
-            pw.println(s"$varText\t$valText\t$norm\t$sentText\t$filename
-            \t${
+            pw.println(s"$varText\t$valText\t$norm\t$sentText\t$filename\t${
               context(i).mostFreqLoc0Sent}\t${
               context(i).mostFreqLoc1Sent}\t${
               context(i).mostFreqLoc}\t${
