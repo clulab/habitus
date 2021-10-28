@@ -13,7 +13,7 @@ import org.clulab.processors.Sentence
 import org.clulab.variables.VariableReader.MostFreqEntity
 
 class EntityHistogramExtractor(val processor: Processor, val extractor: ExtractorEngine) {
-  case class mostFreqEntities01Overall(entityTag:String,mostFreqIn0Sent:Seq[MostFreqEntity],mostFreqIn1Sent:Seq[MostFreqEntity],mostFreqOverall:Seq[MostFreqEntity])
+
   def extractHistogramEventMentions(doc: Document, mentions:Seq[Mention]):(Seq[EventMention],Seq[EntityDistFreq])= {
     //collect all event mentions only (and not text bound ones)
     val allEventMentions = mentions.collect { case m: EventMention => m }

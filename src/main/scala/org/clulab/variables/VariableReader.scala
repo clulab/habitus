@@ -47,8 +47,6 @@ object VariableReader {
       //sentidContext is a data structure created just to carry contextdetails to the code which writes output to disk
       //note: value=Seq[contextDetails] because there can be more than one mentions in same sentence
       val sentidContext = scala.collection.mutable.Map[Int, ArrayBuffer[contextDetails]]()
-      val searchEntities: List[String] = List("LOC", "DATE", "CROP")
-      val sentenceDistances: List[Int] = List(0, 1, Int.MaxValue)
 
       // for each of the event mentions, find most frequent entityType within the distance of howManySentAway
       //  e.g.,(LOC,1) means find which Location occurs most frequently within 1 sentence of this event
@@ -151,7 +149,6 @@ object VariableReader {
 
         }
         //same entityAbsDistFreq case class is being reused here. But diff is we store relative distance now instead of absolute
-
         val ctxt=context.copy(entityDistFrequencies=relDistFreq)
         contextsPerMention += ctxt
       }
@@ -170,16 +167,10 @@ object VariableReader {
         val oldList=sentidContext(key)
         oldList.append(value)
         sentidContext(key) = oldList
-
       case None =>
-//        //first time a (sentid,mention) combination is seen, store its frequency as 1, else frequency+1
-//        sentIdMentionFreq(key)=1
-
         //the combination of (sentid,freq) becomes the key for the value
         sentidContext(key) = ArrayBuffer(value)
-
     }
-
   }
   case class MostFreqEntity(sentId: Int, mention: String, mostFreqEntity: Option[String])
 
@@ -196,9 +187,6 @@ object VariableReader {
                           mostFreqCropOverall:Seq[MostFreqEntity]): Unit= {
 
     //todo assert lengths of all the mostFreq* are same
-
-//    //there are cases where multiple event mentions occur in the same sentence. creating a datastructure to keep track of that.
-//    val sentIdMentionFreq = scala.collection.mutable.Map[Int, Int]()
 
     //for each event mention, get the sentence id, and map it to a case class called contextDetails, which will have all of mostFreq* information
     //note: zipping through only the list of one mostFreq* since all of them should have same lenghts.
