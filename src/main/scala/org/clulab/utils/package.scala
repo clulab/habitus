@@ -1,8 +1,10 @@
 package org.clulab
 
 import org.clulab.odin._
-import org.clulab.processors.{Sentence, Document}
+import org.clulab.processors.{Document, Sentence}
+
 import java.io._
+import scala.collection.mutable.ArrayBuffer
 
 package object utils {
 
@@ -38,9 +40,26 @@ package object utils {
                              mostFreqCrop1Sent:String,
                              mostFreqCrop:String)
 
+  //some sentences might have multiple event mentions in it, and
+  def getAllContextForGivenSentId(context:scala.collection.mutable.Map[Int,ArrayBuffer[contextDetails]],
+                                  sentId:Int,allContexts:ArrayBuffer[String]) ={
+
+    for (ctxt <-context(sentId)) {
+      allContexts.append(ctxt.mostFreqLoc0Sent)
+    }
+     // {mostFreqLoc0Sent}\t${
+    //              context(i).mostFreqLoc1Sent}\t${
+    //              context(i).mostFreqLoc}\t${
+    //              context(i).mostFreqDate0Sent}\t${
+    //              context(i).mostFreqDate1Sent}\t${
+    //              context(i).mostFreqDate}\t${
+    //              context(i).mostFreqCrop0Sent}\t${
+    //              context(i).mostFreqCrop1Sent}\t${
+    //              context(i).mostFreqCrop}
+  }
 
   // extract needed information and write them to tsv in a desired format. Return nothing here!
-  def outputMentionsToTSV(mentions: Seq[Mention], doc: Document,context:scala.collection.mutable.Map[Int,contextDetails],
+  def outputMentionsToTSV(mentions: Seq[Mention], doc: Document, contexts:scala.collection.mutable.Map[Int,ArrayBuffer[contextDetails]],
                           filename: String, pw: PrintWriter): Unit = {
     val mentionsBySentence = mentions groupBy (_.sentence) mapValues (_.sortBy(_.start)) withDefaultValue Nil
     for ((s, i) <- doc.sentences.zipWithIndex) {
@@ -63,7 +82,7 @@ package object utils {
             val valNorms = value.norms
 
             val norm =
-              if(valNorms.isDefined && valNorms.get.size > 2) {
+              if (valNorms.isDefined && valNorms.get.size > 2) {
                 valNorms.filter(_.length > 2).get(0)
               } else {
                 //
@@ -71,25 +90,30 @@ package object utils {
                 //   For example, DATEs have norms, but CROPs do not
                 // in the latter case, we revert to the lemmas or to the actual text as a backoff
                 //
-                if(value.lemmas.isDefined) {
+                if (value.lemmas.isDefined) {
                   value.lemmas.get.mkString(" ")
                 } else {
                   value.text
                 }
               }
 
-            //println(s"NORMS for ${valText}: [$norm]")
+            if (contexts.contains(i)) {
+              for (context <-contexts(i)) {
+                pw.println(s"$varText\t$valText\t$norm\t$sentText\t$filename\t${
+                  context.mostFreqLoc0Sent}\t${
+                  context.mostFreqLoc1Sent}\t${
+                  context.mostFreqLoc}\t${
+                  context.mostFreqDate0Sent}\t${
+                  context.mostFreqDate1Sent}\t${
+                  context.mostFreqDate}\t${
+                  context.mostFreqCrop0Sent}\t${
+                  context.mostFreqCrop1Sent}\t${
+                  context.mostFreqCrop}")
+              }
+            }
+            else {
 
-            pw.println(s"$varText\t$valText\t$norm\t$sentText\t$filename\t${
-              context(i).mostFreqLoc0Sent}\t${
-              context(i).mostFreqLoc1Sent}\t${
-              context(i).mostFreqLoc}\t${
-              context(i).mostFreqDate0Sent}\t${
-              context(i).mostFreqDate1Sent}\t${
-              context(i).mostFreqDate}\t${
-              context(i).mostFreqCrop0Sent}\t${
-              context(i).mostFreqCrop1Sent}\t${
-              context(i).mostFreqCrop}")            
+            }
           } catch {
             case e: NoSuchElementException =>
               println(s"No normalized value found for ${m.arguments("value").head.text} in sentence ${s.getSentenceText}!")

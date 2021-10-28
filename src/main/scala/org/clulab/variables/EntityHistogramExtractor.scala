@@ -1,5 +1,6 @@
 package org.clulab.variables
 
+import scala.collection.mutable
 import org.clulab.dynet.Utils
 import org.clulab.odin.{EventMention, ExtractorEngine, Mention}
 import org.clulab.processors.clu.CluProcessor
@@ -12,7 +13,7 @@ import org.clulab.processors.Sentence
 import org.clulab.variables.VariableReader.MostFreqEntity
 
 class EntityHistogramExtractor(val processor: Processor, val extractor: ExtractorEngine) {
-  //case class mostFreqEntities01Overall(entityTag:String,mostFreqIn0Sent:Seq[MostFreqEntity],mostFreqIn1Sent:Seq[MostFreqEntity],mostFreqOverall:Seq[MostFreqEntity])
+  case class mostFreqEntities01Overall(entityTag:String,mostFreqIn0Sent:Seq[MostFreqEntity],mostFreqIn1Sent:Seq[MostFreqEntity],mostFreqOverall:Seq[MostFreqEntity])
   def extractHistogramEventMentions(doc: Document, mentions:Seq[Mention]):(Seq[EventMention],Seq[EntityDistFreq])= {
     //collect all event mentions only (and not text bound ones)
     val allEventMentions = mentions.collect { case m: EventMention => m }
@@ -36,24 +37,24 @@ class EntityHistogramExtractor(val processor: Processor, val extractor: Extracto
 
   //for each entity, find which sentence they occur in an how many times
   def mapEntityToFreq(entitySentFreq: scala.collection.mutable.Map[Entity, Int]):Seq[EntityDistFreq]  = {
-    val sentIdFreq= scala.collection.mutable.Map[EntityNameNerTag, ArrayBuffer[(Int,Int)]]()
+    val sentIdFreq= mutable.Map[EntityNameNerTag, ArrayBuffer[(Int,Int)]]()
     for (key <- entitySentFreq.keys) {
       val entityName = key.entityValue
       val entity = key.tag
       val sentId = key.sentIdx
       val freq = entitySentFreq(key)
-      val nk = EntityNameNerTag(entityName, entity)
+      val newkey = EntityNameNerTag(entityName, entity)
       //if the entity_sentenceid combination already exists in the dictionary, increase its frequency by 1, else add.
-      sentIdFreq.get(nk) match {
+      sentIdFreq.get(newkey) match {
         case Some(i) =>
-          var freqNew = sentIdFreq(nk)
-          var sentfreqa = (sentId, freq)
+          val freqNew = sentIdFreq(newkey)
+          val sentfreqa = (sentId, freq)
           freqNew.append(sentfreqa)
-          sentIdFreq += (nk -> freqNew)
+          sentIdFreq += (newkey -> freqNew)
         case None =>
           val sentfreq = ArrayBuffer[(Int,Int)]()
           sentfreq.append((sentId, freq))
-          sentIdFreq += (nk -> sentfreq)
+          sentIdFreq += (newkey -> sentfreq)
       }
     }
     convertMapToSeq(sentIdFreq)
