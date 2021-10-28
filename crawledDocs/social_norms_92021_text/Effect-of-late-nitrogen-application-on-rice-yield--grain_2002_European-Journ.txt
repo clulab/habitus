@@ -1,0 +1,2628 @@
+European Journal of Agronomy 17 (2002) 191–198
+
+www.elsevier.com/locate/eja
+
+Effect of late nitrogen application on rice yield, grain
+quality and proﬁtability in the Senegal River valley
+
+M.M. Wopereis-Pura a,*, H. Watanabe a, J. Moreira b, M.C.S Wopereis a
+
+b Socie´te´ National d’Ame´nagement et d’Exploitation des Terres du Delta du Fleu6e Se´ne´gal et des Valle´es du Fleu6e Se´ne´gal et de l
+
+a West Africa Rice De6elopment Association (WARDA), 01 BP 2551, Bouake´, Coˆte d’I6oire
+
+a Fale´me´ (SAED), BP 74, St. Louis, Senegal
+
+Received 3 October 2000; received in revised form 20 November 2001; accepted 21 January 2002
+
+Abstract
+
+The effect of an additional nitrogen (N) application of 30 kg N ha − 1 at booting on rice yield and grain quality was
+investigated with 30 farmers in the Senegal River valley during the 1997 wet season (WS) and 23 farmers during the
+1998 dry season (DS). Rice yields increased signiﬁcantly as a result of an extra late N application on top of two
+N-dressings with a total of about 120 kg N ha − 1 in farmer ﬁelds. Yield gains were about 1.0 t ha − 1 during the 1998
+DS and about 0.4 t ha− 1 during the 1997 WS. Grain quality was improved through a higher milling recovery (3%
+increase in both seasons) and a higher percentage of head rice (30% higher in the 1997 WS and 60% higher in the 1998
+DS). Beneﬁt to cost ratios of the third nitrogen application for farmers ranged from 2.8 in the WS to 5.4 in the DS.
+Sorting milled rice resulted in net additional beneﬁts for rice millers, especially in the DS, due to a higher head rice
+ratio. It was concluded that a third N application can raise both yield levels and grain quality in the Senegal River
+valley, with potential beneﬁts for farmers and rice millers. © 2002 Elsevier Science B.V. All rights reserved.
+
+Keywords: Grain quality; Rice; Oryza sati6a L.; Irrigation; Senegal
+
+1. Introduction
+
+About 100,000 ha of irrigation schemes have
+been developed along the Senegal River in Mauri-
+tania and Senegal. During the 1998 wet season
+(WS) (July to December) about 20,000 ha were in
+use in Senegal and 17,000 ha in Mauritania.
+
+Potential yield (limited by radiation and tem-
+perature only) is about 9 t ha− 1 for WS sowing in
+
+* Corresponding author.
+E-mail address: p.wopereis@cgiar.org (M.M. Wopereis-
+
+Pura).
+
+July and about 9–10 t ha− 1 for dry season (DS)
+sowing in February in the Senegal River delta
+(Dingkuhn and Sow, 1997). Wopereis et al. (1999)
+showed that yield gaps between potential and
+actual farmers’ yields in the 1997 WS ranged from
+1 to 8 t ha− 1 in the Senegal River valley. Major
+biophysical constraints included phosphorus (P)
+deﬁcient soils, weed competition, relatively low
+nitrogen (N) application rates and sub-optimal
+timing of N application. Despite these constraints,
+fertilizer N use proved highly proﬁtable in irri-
+gated systems in the Sahel (Donovan et al., 1999).
+
+1161-0301/02/$ - see front matter © 2002 Elsevier Science B.V. All rights reserved.
+PII: S 1 1 6 1 - 0 3 0 1 ( 0 2 ) 0 0 0 0 9 - 6
+
+192
+
+M.M. Wopereis-Pura et al. /Europ. J. Agronomy 17 (2002) 191–198
+
+Wopereis et al. (1999) proposed to improve rice
+productivity and proﬁtability by increasing N re-
+covery (through improved crop management
+practices) or increasing the amount of N applied.
+Ha¨fele et al.
+(2000, 2001) demonstrated the
+proﬁtability of improved soil fertility and weed
+management for small and large scale rice farmers
+in Senegal and Mauritania. Another possibility to
+raise proﬁtability would be to improve the quality
+of rice produced. Price differences in Senegal be-
+tween low and high quality rice are huge. Whole
+grain American rice is sold in the Senegalese
+capital Dakar for 380 CFA1 kg− 1, whole grain
+rice imported from India of lower quality (dark
+color, relative high percentage of impurities) sells
+for 190 CFA kg − 1. Imported broken rice from
+Vietnam, Thailand, India, Pakistan and Argentina
+for 160–175 CFA kg − 1. An estimated
+sells
+350,000–450,000 t of rice is consumed annually in
+Senegal, of which 15,000 tons is whole grain rice.
+The Mauritanian and Senegalese governments
+consider raising the quality of domestically pro-
+duced rice as a prerequisite to improve its compet-
+itiveness vis a` vis imports. In Senegal, the national
+irrigation and extension authority for the Senegal
+River valley (SAED) has launched a rice quality
+program since 1998. Its objective is to increase
+production and value of locally produced rice.
+
+Most farmers in the Senegal River valley apply
+N fertilizer only twice, i.e. roughly at the start of
+tillering and panicle initiation (PI). The quantities
+applied are often below recommended levels
+(Wopereis et al., 1999). The Japanese Food
+Agency (1998) recommended to apply N fertilizer
+around booting to enhance photosynthesis rate
+during the grain ﬁlling period, leading to a de-
+crease in the percentage of immature grains and
+an increase in the percentage of whole grains. The
+objectives of this study were to: (i) explore the
+effect of a third N application around booting on
+rice yield and grain quality; and (ii) to determine
+potential ﬁnancial beneﬁts of a third N applica-
+tion for farmers and rice millers in the Senegal
+River valley.
+
+1 The Franc CFA (CFA) is the currency used in Senegal and
+is pegged to the French Franc and the Euro. The exchange
+rates to convert CFA are: 100 CFA=1 French franc; 1
+euro=6.55957 French francs.
+
+2. Materials and methods
+
+2.1. Experimental sites and sampling
+methodologies
+
+Debi and Tiguet (16°29% N, 16°17% W) are two
+arid coastal villages in the Senegal River delta.
+Topography is ﬂat. The soil type is a salic Fluvi-
+sol according to FAO soil classiﬁcation (FAO,
+1990), local name Hollalde´. Texture is heavy clay.
+The climate is characterized by a WS (about 200
+mm rainfall) from July to September, a cold dry
+season from October to February and a hot dry
+season from March to June.
+
+Debi–Tiguet is a modern irrigation scheme of
+about 1000 ha, cultivated by 400 farmers. Irriga-
+tion and drainage structures were constructed in
+1996 through Japanese government funding. The
+irrigation scheme is divided into two areas, i.e.
+Debi (farmers from the Debi village) and Tiguet
+(farmers from Tiguet village). These two areas are
+further subdivided into sections. A trained village
+technician supervises each section. An extension
+agent of SAED (Socie´te´ National d’Ame´nagement
+et d’Exploitation des Terres du Delta du Fleuve
+Se´ne´gal et des Valle´es du Fleuve Se´ne´gal et de la
+Fale´me´) advises each village technician on various
+crop management
+interventions using RIDEV.
+RIDEV is a decision support tool developed by
+WARDA (Dingkuhn, 1997). It advises extension
+agents and farmers on optimal timing of crop
+management interventions, i.e. timing of sowing,
+weeding,
+fertilizer application, drainage before
+harvest and harvest.
+
+Rice cultivation and management are auto-
+sufﬁcient in terms of seed supply, irrigation and
+rice grain milling. The mill
+is managed by the
+farmers’ union of the Debi and Tiguet villages
+(Moreira, 1999).
+
+We selected 30 farmers in the 1997 WS and 23
+in the 1998 DS that participated in previous
+SAED surveys and followed RIDEV recommen-
+dations. Each farmer’s ﬁeld was relatively free of
+weeds, and had good irrigation and drainage fa-
+cilities. Farmers applied N fertilizer twice, i.e. at
+the start of tillering and at PI, following RIDEV
+timing. Each farmer’s plot was divided into two
+except for some special cases where plots were too
+
+M.M. Wopereis-Pura et al. /Europ. J. Agronomy 17 (2002) 191–198
+
+193
+
+large for the experiment. In such cases, a portion
+of the farmer’s ﬁeld was divided and marked into
+two plots. One part, selected at random, was left
+as farmers’ practice (T0). A third nitrogen appli-
+cation was applied at booting stage at a rate of 30
+kg ha − 1 (T1) on the other part of the ﬁeld.
+Farmers used two rice cultivars (IR1529 and
+Jaya) during the 1997 WS, and exclusively
+IR13240-108-2-2-3 (released as Sahel 108 in Sene-
+gal
+in 1994) during the 1998 DS. All rice was
+direct-seeded.
+
+Harvesting was done at physiological maturity
+from a 6 m2 sampling area at three sites within
+each plot. Grain yield was adjusted to 14% mois-
+ture content. Yield components were estimated
+from a sampling area of 0.30 m2 repeated three
+times within each plot. Threshing was completed
+2 weeks after harvest. Grain moisture content was
+taken at harvest and twice weekly during storage
+by Kett riceter moisture meter. Temperature and
+relative humidity of
+the storage room were
+recorded periodically. Grain samples from the
+1997 WS were analyzed in June 1998 and grain
+samples from the 1998 DS were analyzed by the
+end of October 1998 in WARDA’s grain quality
+laboratory in Ndiaye, Senegal. WS samples were
+stored for 7 months. DS samples were stored for
+only 4 months.
+
+2.2. Grain quality analysis
+
+Each grain sample was processed as follows.
+Grain moisture content was measured before
+husking using a Kett PM 600 moisture meter for
+1997 WS samples, and a Kett PM 700 m for the
+1998 DS samples. Test weight of paddy (a mea-
+sure of the fullness of grains) for the 1997 WS
+were taken directly from measurements made with
+the Kett PM 600 moisture meter. Test weight for
+1998 DS samples were derived from the weight of
+240 ml paddy in grams divided by 240 ml and
+multiplied by 1000. Three measurements were
+made for each sample.
+
+Husking recovery was measured by husking 300
+gram of paddy and dividing resulting brown rice
+weight in grams by 300 and multiplying by 100%.
+Brown rice thickness was determined by passing
+
+100 g of brown rice through 1.6, 1.7, 1.8 and 1.9
+mm sieves. Brown rice was calculated as the sum
+of brown rice weight in grams multiplied by the
+corresponding sieve width used, divided by 100 g.
+Composition of brown rice was determined from
+a 20 g brown rice sample. Complete, dead (includ-
+ing damaged and discolored grains), green and
+broken (less than 2/3 length of complete grains)
+grains were separated manually. The percentage
+of cracked brown rice was measured by counting
+the number of cracked grains through a Kett
+mirror reﬂector tray. For the grain hardness test,
+50 brown rice grains were tested using a grain
+rigidity (hardness) tester Kiya type no. 140.
+
+Milling recovery was measured by milling 150 g
+brown rice using a Yamamoto vertical type labo-
+ratory rice mill (VP 31T) and calculating the
+weight of milled rice in grams divided by 150
+gram, and multiplying by 100%. Twenty gram
+milled rice was separated manually in head rice
+(including grains with more than 2/3 length of
+whole grains), large (grains between head rice and
+small broken) and small broken (grains that
+passed through a mesh of 2×2 mm2), and dam-
+aged (by insects or disease) grains. Rice grain
+whiteness was measured using a whiteness tester
+Kett C-300.
+
+Grain nitrogen content was measured by stan-
+dard macro-Kjeldahl procedure. Grain protein
+content was calculated by multiplying grain nitro-
+gen content by 5.95, the nitrogen–protein conver-
+sion factor (Yasui and Tsutsumi, 1982).
+
+Statistical analysis was done using Statistica
+and SPSS. Analysis was done by season and by
+variety.
+
+2.3. Calculating beneﬁts from late N application
+
+The additional costs of applying a third split of
+30 kg N ha − 1 were based on: (a) urea price of
+9000 CFA per bag of 50 kg; (b) transport costs of
+200 CFA per bag of 50 kg; (c) additional labor
+costs for the third fertilizer application of 1000
+CFA ha − 1; (d) an interest rate of 12% for the
+1997 WS and 7.5% for the 1998 DS; and (e)
+additional harvest costs due to increased yield, i.e.
+calculated as 10% of additional yield and costs of
+
+194
+
+M.M. Wopereis-Pura et al. /Europ. J. Agronomy 17 (2002) 191–198
+
+extra bags. Additional beneﬁts for farmers were
+calculated as the yield difference between T1
+and T0 multiplied by a paddy price of 100 CFA
+kg − 1. Net beneﬁts were determined as addi-
+tional beneﬁts minus
+costs.
+Beneﬁt cost ratios of late N application was de-
+termined as additional beneﬁts divided by addi-
+tional costs.
+
+total additional
+
+Potential ﬁnancial
+
+returns of high quality
+paddy as a result of late N application for rice
+millers were determined as well. Price ranges for
+different rice qualities were taken from SIMRIZ
+(Senegal government rice market management
+and survey unit) weekly market surveys. For
+this study, prices were taken from the survey
+conducted during the ﬁrst week of August 1998
+in St. Louis (closest
+from
+Debi–Tiguet, at a distance of about 80 km).
+Non-aromatic broken rice prices ﬂuctuated be-
+tween 180 and 225 CFA kg− 1. Non-aromatic
+head rice minimum prices were between 360 and
+380 CFA kg − 1.
+
+large rice market
+
+We used the minimum price of non-aromatic
+broken and head rice to calculate beneﬁts for
+rice millers assuming they sell 1 t of milled rice
+from a farmers’ ﬁeld (T0) and 1 t of milled rice
+from a ﬁeld where a third split of 30 kg N
+ha− 1 was applied at booting (T1)
+for both
+sorted (in head rice and brokens) and non-
+sorted rice. Sorting was assumed to be per-
+formed manually at a cost of 3000 CFA t− 1.
+
+Farmers’ sowing dates ranged from 14 to 31
+July for the WS and from 3 to 11 March in the
+DS. Total N applied in the T0 plots during the
+WS was 116 kg N ha − 1 and for the DS 127 kg
+N ha− 1. Farmers applied the ﬁrst N split (a
+mixture of di-ammonium phosphate and urea)
+on average at 27 days after sowing (DAS), and
+the second split (urea only) at 61 DAS during
+the WS, and at 30 and 63 DAS during the DS.
+The third nitrogen application of 30 kg N ha− 1
+as urea in the T1 plots was applied on average
+at 75 DAS during the 1997 WS and at 79 DAS
+during the DS. Harvesting time ranged from 110
+to 124 DAS during the WS (average: at 117
+DAS) and from 118 to 132 DAS (average 125
+DAS) for the DS.
+
+3. Results and discussions
+
+3.1. Farmers’ crop management practices
+
+Average WS T0 yield was high, i.e. 7.3 ha− 1
+(ranging from 5.0 to 9.4 t ha− 1), considering the
+region’s potential yield of about 9 t ha− 1. Yield
+gain due to the third N application was relatively
+small, i.e. about 0.4 t ha− 1, but statistically sig-
+niﬁcant. There were some varietal differences with
+slightly higher yields for IR1529 as compared to
+Jaya. Average DS T0 yield was relatively low, i.e.
+4.4 t ha− 1 (ranging from 2.5 to 6.0 t ha− 1), due
+to poor water control and weed infestation. The
+yield gain due to the third N application was
+important, i.e. almost 1 t ha− 1 and statistically
+signiﬁcant. Yield component analyses showed that
+there were clear problems with spikelet sterility
+during the DS (average of 24% as compared to
+11% in the WS), partly explaining low DS yields.
+The third N application increased husking re-
+covery by 1% in the WS but did not affect husk-
+ing recovery in the DS. The percentage of green
+grains in T1 was signiﬁcantly higher for IR 1529
+in the DS and Sahel 108 in the WS (Table 1).
+
+WS samples accumulated some moisture during
+the ﬁrst week after harvest. Moisture content
+(MC) increased by about 1%, from 17 to 18% MC
+and declined sharply afterwards to 13% MC at 35
+days after harvest (DAH). From 35 DAH on-
+wards, grain moisture content decreased in an
+erratic way to about 12% MC, caused by rapid
+changes in temperature and relative humidity in
+the storage area. Storage conditions during the
+1998 DS were more homogeneous and grain mois-
+ture content declined more gradually, i.e. from 19
+to 14% MC in 110 days.
+
+Although test weight and grain thickness did
+not increase signiﬁcantly in T1, husking recovery
+increased in both varieties in WS (Table 1). This
+was likely brought by later maturity caused by
+late N application. Cracked grain content de-
+creased remarkably in T1 except in Sahel 108.
+Cracked grain content was 10 times higher during
+the WS as compared to the DS (Table 1). This
+may be due to longer storage time of the WS
+samples (7 months as opposed to 4 months for the
+DS samples) and the abrupt changes in relative
+
+M.M. Wopereis-Pura et al. /Europ. J. Agronomy 17 (2002) 191–198
+
+195
+
+8
+9
+9
+1
+
+n
+o
+s
+a
+e
+s
+
+y
+r
+D
+
+8
+0
+1
+
+l
+e
+h
+a
+S
+
+D
+S
+
+1
+T
+
+D
+S
+
+0
+T
+
+D
+S
+
+1
+T
+
+D
+S
+
+a
+y
+a
+J
+
+0
+T
+
+D
+S
+
+1
+T
+
+D
+S
+
+0
+T
+
+7
+9
+9
+1
+
+n
+o
+s
+a
+e
+s
+
+t
+e
+
+W
+
+9
+2
+5
+1
+R
+
+I
+
+s
+i
+s
+y
+l
+a
+n
+a
+
+e
+c
+i
+r
+
+n
+w
+o
+r
+b
+
+d
+n
+a
+
+s
+d
+l
+e
+i
+y
+
+1
+
+e
+l
+b
+a
+T
+
+n
+i
+a
+r
+G
+
+3
+3
+.
+1
+
+9
+
+3
+0
+.
+0
+
+0
+7
+.
+0
+
+8
+1
+.
+1
+
+9
+3
+.
+1
+
+2
+4
+.
+5
+
+3
+4
+5
+
+9
+6
+.
+1
+
+2
+1
+.
+7
+7
+
+7
+8
+.
+0
+
+0
+9
+.
+8
+
+7
+9
+.
+0
+
+3
+0
+.
+0
+
+9
+5
+.
+0
+
+2
+3
+.
+1
+
+1
+8
+.
+0
+
+3
+1
+
+s
+n
+9
+8
+.
+6
+7
+
+s
+n
+9
+6
+.
+1
+
+s
+n
+3
+1
+.
+1
+
+s
+n
+0
+6
+.
+8
+
+b
+3
+4
+.
+4
+
+s
+n
+7
+4
+5
+
+6
+8
+.
+0
+
+2
+0
+.
+0
+
+6
+8
+.
+0
+
+4
+6
+.
+6
+
+4
+8
+.
+1
+
+6
+1
+
+1
+5
+.
+7
+
+9
+2
+5
+
+0
+8
+.
+1
+
+2
+6
+.
+9
+7
+
+5
+3
+.
+8
+
+5
+5
+.
+0
+1
+
+1
+6
+.
+0
+
+3
+0
+.
+0
+
+2
+8
+.
+0
+
+3
+8
+.
+5
+
+3
+3
+.
+1
+
+5
+1
+
+b
+8
+0
+.
+7
+
+s
+n
+2
+3
+5
+
+s
+n
+9
+7
+.
+1
+
+b
+1
+6
+.
+8
+7
+
+c
+1
+7
+.
+2
+1
+
+s
+n
+9
+7
+.
+9
+
+5
+8
+.
+0
+
+3
+0
+.
+0
+
+0
+0
+.
+1
+
+6
+5
+.
+3
+
+2
+5
+.
+1
+
+6
+1
+
+1
+0
+.
+8
+
+3
+3
+5
+
+0
+8
+.
+1
+
+3
+7
+.
+9
+7
+
+0
+0
+.
+4
+
+1
+4
+.
+9
+
+6
+5
+.
+0
+
+2
+0
+.
+0
+
+4
+6
+.
+0
+
+3
+4
+.
+3
+
+7
+1
+.
+1
+
+2
+1
+
+b
+5
+5
+.
+7
+
+s
+n
+3
+2
+5
+
+s
+n
+9
+7
+.
+1
+
+b
+8
+8
+.
+8
+7
+
+b
+8
+0
+.
+9
+
+s
+n
+0
+3
+.
+9
+
+8
+8
+.
+5
+
+0
+3
+.
+1
+
+1
+3
+.
+2
+
+6
+2
+.
+3
+
+1
+5
+.
+2
+
+3
+8
+.
+3
+
+1
+2
+.
+8
+
+8
+9
+.
+5
+8
+
+6
+0
+.
+3
+
+7
+9
+.
+1
+
+4
+5
+.
+1
+
+9
+6
+.
+2
+
+s
+n
+6
+5
+.
+7
+8
+
+a
+2
+4
+.
+4
+
+c
+0
+5
+.
+2
+
+b
+0
+5
+.
+5
+
+8
+3
+.
+4
+
+6
+2
+.
+5
+
+3
+5
+.
+3
+
+3
+5
+.
+3
+
+1
+7
+.
+8
+7
+
+3
+1
+.
+0
+1
+
+7
+9
+.
+7
+
+7
+9
+.
+7
+
+5
+5
+.
+7
+
+2
+4
+.
+6
+
+7
+4
+.
+2
+
+7
+4
+.
+2
+
+s
+n
+1
+1
+.
+5
+7
+
+s
+n
+4
+5
+.
+2
+1
+
+s
+n
+8
+0
+.
+8
+
+s
+n
+8
+0
+.
+8
+
+2
+6
+.
+4
+
+8
+3
+.
+4
+
+8
+8
+.
+2
+
+1
+2
+.
+3
+
+8
+2
+.
+6
+
+1
+4
+.
+9
+
+3
+7
+.
+6
+
+9
+5
+.
+7
+7
+
+4
+9
+.
+5
+
+7
+2
+.
+6
+
+1
+8
+.
+2
+
+2
+9
+.
+1
+
+s
+n
+4
+4
+.
+0
+8
+
+s
+n
+2
+5
+.
+9
+
+s
+n
+0
+8
+.
+9
+
+a
+5
+5
+.
+2
+
+)
+%
+(
+
+n
+o
+i
+t
+i
+s
+o
+p
+m
+o
+c
+
+d
+e
+g
+a
+m
+a
+d
+
+r
+o
+
+n
+i
+a
+r
+g
+
+n
+e
+k
+o
+r
+B
+
+d
+a
+e
+D
+
+n
+e
+e
+r
+G
+
+e
+c
+i
+r
+
+n
+w
+o
+r
+B
+
+e
+t
+e
+l
+p
+m
+o
+C
+
+)
+
+%
+
+(
+
+y
+r
+e
+v
+o
+c
+e
+r
+
+)
+1
+
+−
+a
+h
+
+)
+1
+
+−
+
+l
+
+t
+(
+
+g
+(
+
+d
+l
+e
+i
+y
+
+n
+i
+a
+r
+G
+
+t
+h
+g
+i
+e
+w
+
+t
+s
+e
+T
+
+)
+
+m
+m
+
+(
+
+s
+s
+e
+n
+k
+c
+i
+h
+t
+
+n
+i
+a
+r
+G
+
+)
+
+%
+
+(
+
+)
+g
+k
+(
+
+n
+i
+a
+r
+g
+
+t
+s
+e
+t
+
+s
+s
+e
+n
+d
+r
+a
+H
+
+i
+
+g
+n
+k
+s
+u
+H
+
+d
+e
+k
+c
+a
+r
+C
+
+8
+9
+9
+1
+
+n
+o
+s
+a
+e
+s
+
+y
+r
+D
+
+8
+0
+1
+
+l
+e
+h
+a
+S
+
+D
+S
+
+1
+T
+
+D
+S
+
+0
+T
+
+D
+S
+
+1
+T
+
+D
+S
+
+a
+y
+a
+J
+
+0
+T
+
+D
+S
+
+1
+T
+
+D
+S
+
+0
+T
+
+7
+9
+9
+1
+
+n
+o
+s
+a
+e
+s
+
+t
+e
+
+W
+
+9
+2
+5
+1
+R
+
+I
+
+3
+6
+.
+1
+
+1
+8
+.
+9
+7
+
+6
+7
+.
+1
+
+b
+2
+9
+.
+6
+7
+
+2
+3
+.
+2
+
+7
+6
+.
+4
+8
+
+6
+8
+.
+2
+
+a
+7
+9
+.
+0
+8
+
+4
+5
+.
+2
+
+1
+9
+.
+3
+8
+
+1
+9
+.
+1
+
+b
+9
+5
+.
+1
+8
+
+)
+
+%
+
+(
+
+y
+r
+e
+v
+o
+c
+e
+r
+
+g
+n
+
+i
+l
+l
+i
+
+M
+
+.
+e
+c
+n
+e
+d
+ﬁ
+n
+o
+c
+
+f
+o
+
+l
+e
+v
+e
+l
+
+%
+1
+.
+0
+
+.
+e
+c
+n
+e
+d
+ﬁ
+n
+o
+c
+
+f
+o
+
+l
+e
+v
+e
+l
+
+%
+1
+
+t
+a
+
+t
+a
+
+t
+n
+a
+c
+ﬁ
+n
+g
+i
+s
+
+i
+
+y
+l
+h
+g
+i
+H
+
+a
+
+t
+n
+a
+c
+ﬁ
+n
+g
+i
+s
+
+i
+
+y
+l
+h
+g
+i
+H
+b
+
+.
+e
+c
+n
+e
+d
+ﬁ
+n
+o
+c
+
+f
+o
+
+l
+e
+v
+e
+l
+
+%
+5
+
+t
+a
+
+i
+
+t
+n
+a
+c
+ﬁ
+n
+g
+i
+S
+c
+
+.
+t
+n
+a
+c
+ﬁ
+n
+g
+i
+s
+
+i
+
+t
+o
+n
+
+,
+s
+n
+
+s
+c
+i
+t
+s
+i
+r
+e
+t
+c
+a
+r
+a
+h
+c
+
+g
+n
+
+i
+l
+l
+i
+
+m
+n
+i
+a
+r
+G
+
+2
+
+e
+l
+b
+a
+T
+
+3
+6
+.
+3
+1
+
+9
+1
+.
+3
+1
+
+6
+8
+.
+0
+
+4
+5
+.
+0
+
+7
+6
+.
+7
+5
+
+4
+9
+.
+8
+3
+
+1
+0
+.
+2
+
+8
+6
+.
+0
+
+0
+6
+.
+1
+1
+
+6
+1
+.
+1
+1
+
+9
+0
+.
+1
+
+9
+3
+.
+0
+
+b
+1
+1
+.
+4
+3
+
+b
+7
+6
+.
+1
+6
+
+b
+1
+9
+.
+2
+
+c
+3
+4
+.
+0
+
+9
+9
+.
+4
+1
+
+7
+9
+.
+5
+1
+
+9
+1
+.
+8
+
+1
+4
+.
+2
+
+0
+8
+.
+6
+4
+
+7
+6
+.
+8
+4
+
+0
+8
+.
+1
+
+3
+7
+.
+2
+
+0
+6
+.
+5
+1
+
+2
+4
+.
+3
+1
+
+7
+1
+.
+3
+
+9
+0
+.
+1
+
+b
+3
+1
+.
+6
+3
+
+b
+8
+1
+.
+7
+5
+
+a
+3
+0
+.
+5
+
+c
+6
+6
+.
+1
+
+4
+3
+.
+9
+
+5
+7
+.
+0
+1
+
+7
+5
+.
+2
+
+7
+5
+.
+5
+
+5
+2
+.
+9
+5
+
+6
+9
+.
+3
+3
+
+1
+4
+.
+1
+
+8
+3
+.
+5
+
+8
+6
+.
+6
+1
+
+6
+2
+.
+7
+1
+
+2
+8
+.
+1
+
+3
+6
+.
+1
+
+a
+8
+8
+.
+5
+4
+
+a
+7
+1
+.
+8
+4
+
+a
+0
+7
+.
+3
+
+c
+2
+2
+.
+2
+
+)
+%
+(
+
+n
+o
+i
+t
+u
+b
+i
+r
+t
+s
+i
+d
+
+y
+t
+i
+l
+a
+u
+q
+
+e
+c
+i
+r
+
+d
+e
+l
+l
+i
+
+M
+
+n
+e
+k
+o
+r
+b
+
+n
+e
+k
+o
+r
+b
+
+e
+c
+i
+r
+
+d
+a
+e
+H
+
+e
+g
+r
+a
+L
+
+l
+l
+a
+m
+S
+
+d
+e
+g
+a
+m
+a
+D
+
+1
+5
+.
+2
+
+9
+3
+.
+4
+4
+
+4
+9
+.
+2
+
+b
+9
+9
+.
+9
+4
+
+8
+3
+.
+3
+
+6
+5
+.
+8
+4
+
+8
+0
+.
+5
+
+s
+n
+1
+0
+.
+0
+5
+
+8
+4
+.
+3
+
+7
+7
+.
+4
+4
+
+3
+7
+.
+4
+
+s
+n
+3
+1
+.
+8
+4
+
+e
+c
+i
+r
+
+d
+e
+l
+l
+i
+
+M
+
+.
+e
+c
+n
+e
+d
+ﬁ
+n
+o
+c
+%
+1
+
+n
+a
+h
+t
+
+s
+s
+e
+l
+
+.
+e
+c
+n
+e
+d
+ﬁ
+n
+o
+c
+%
+1
+
+t
+a
+
+t
+a
+
+t
+n
+a
+c
+ﬁ
+n
+g
+i
+s
+
+i
+
+y
+l
+h
+g
+i
+H
+
+a
+
+t
+n
+a
+c
+ﬁ
+n
+g
+i
+s
+
+i
+
+y
+l
+h
+g
+i
+H
+b
+
+.
+e
+c
+n
+e
+d
+ﬁ
+n
+o
+c
+%
+5
+
+t
+a
+
+i
+
+t
+n
+a
+c
+ﬁ
+n
+g
+i
+S
+c
+
+.
+t
+n
+a
+c
+ﬁ
+n
+g
+i
+s
+
+i
+
+t
+o
+n
+
+y
+l
+l
+a
+c
+i
+t
+s
+i
+t
+a
+t
+s
+
+,
+s
+n
+
+196
+
+M.M. Wopereis-Pura et al. /Europ. J. Agronomy 17 (2002) 191–198
+
+humidity and temperature during storage. Rice
+grain quality was signiﬁcantly improved by the
+third N application (Table 2). Milling recovery
+increased by 3% in both seasons. Head rice ratio
+increased by 12% in the WS and by 24% in the
+DS. The effect was especially high with IR1529
+and Sahel 108. The percentage of large and small
+broken rice decreased accordingly.
+
+are
+
+relatively
+
+low,
+
+coefﬁcients
+
+Head rice ratio is affected by various pre- and
+post-harvest factors. The correlations of head rice
+ratio with major variables in milling characteris-
+tics is summarized in Table 3. Although correla-
+tion
+some
+observations can still be made. Milling recovery
+had the highest value, followed by green grain
+ratio and complete grain. Higher correlation is
+seen with percent cracked grain. Green grain ratio
+is an indicator of rice plant’s juvenility, showing
+that late N application can delay the rice plant’s
+senescence. This improves grain yield and grain
+quality through lower grain crack ratio and
+higher head ratio.
+
+Fig. 1 shows that WS head rice ratios declined
+the more brown rice samples were cracked. WS
+head rice was signiﬁcantly different (P=0.004)
+between treatments (T0=40 and T1=52% head
+rice). No effect was seen for DS samples as brown
+rice grains were hardly cracked during this season.
+Milled rice whiteness was about 2–5% higher for
+T0 samples as compared to T1 samples across
+cultivars and seasons because grains broke more
+easily. Nitrogen content in the grain was higher
+for the T1 treatment as compared to the T0
+treatment (Fig. 2).
+
+Table 3
+Correlation coefﬁcients of head rice ratio with several vari-
+ables in milling characteristics (WS 1997 and DS 1998)
+
+Variable
+
+1. Milling recovery
+2. Complete grain ratio
+3. Green grain ratio
+4. Grain thickness score
+5. Cracked grain
+6. Grain’s protein content
+
+R value
+
+0.38*
+0.20*
+0.23*
+0.02
+−0.35*
+0.38*
+
+* Marked correlations are signiﬁcant at PB0.05.
+
+Fig. 1. The percentage of head rice after milling declines the
+more brown rice is cracked after husking (WS samples). DS
+data not shown as brown rice from that season was hardly
+cracked. T0: no third N application; T1: third N application of
+30 kg ha − 1 at booting.
+
+3.2. Financial beneﬁts for farmers
+
+Beneﬁt: cost ratios of the third nitrogen appli-
+cation for farmers were relatively high for both
+seasons. The 1997 WS beneﬁt: cost ratio was 2.8
+and the 1998 DS beneﬁt: cost ratio was 5.4 (Table
+4). Additional harvest cost were slightly higher in
+the 1998 DS as compared to the 1997 WS due to
+the larger yield gain from the third N application.
+Total additional cost of the third nitrogen appli-
+
+Fig. 2. Percentage of head rice as a function of grain nitrogen
+content for wet and dry seasons and with (T1) and without
+(T0) a third N application of 30 kg ha − 1 at booting.
+
+M.M. Wopereis-Pura et al. /Europ. J. Agronomy 17 (2002) 191–198
+
+197
+
+Table 4
+Summary of the ﬁnancial analysis
+
+1997 WS
+
+1998 DS
+
+Yield gain from third N split
+
+0.5
+
+(t ha−1)
+
+Interest rate (% per year)
+Extra urea cost (1000 CFA ha−1)
+Extra harvest cost
+
+(1000 CFA ha−1)
+Total additional cost
+(1000 CFA ha−1)
+
+Additional beneﬁt
+
+(1000 CFA ha−1)
+
+12
+12
+2
+
+16
+
+45
+
+Net beneﬁt (1000 CFA ha−1)
+Beneﬁt/cost ratio
+
+29
+2.8
+
+0.9
+
+7.5
+12
+5
+
+18
+
+99
+
+81
+5.4
+
+cation was about 16,000 for the WS and 18,000
+CFA ha − 1 for the DS. The net beneﬁt for the WS
+was 29,000 and during the DS 81,000 CFA ha− 1
+(Table 4).
+
+3.3. Financial beneﬁts for rice millers
+
+The third nitrogen fertilizer application at boot-
+ing stage showed a signiﬁcant increase in paddy
+yield and rice grain quality. Sorting milled rice
+from farmer’s practice (T0) resulted in net addi-
+tional beneﬁts of 45,000 for the WS and 37,800
+CFA t − 1 for the DS. Sorting milled rice from
+farmers who applied a third N split (T1) resulted
+in net additional beneﬁts of about 69,000 in the
+WS and 77 000 CFA t− 1 in the DS due to a
+higher head rice ratio. Millers also will proﬁt
+slightly from the increase in milling recovery due
+to a third N application (Table 2).
+
+4. Conclusions
+
+A late additional nitrogen application of 30 kg
+N ha− 1 increased yield by about 0.4 t ha− 1
+during the wet season and by about 1.0 t ha− 1
+during the dry season. It also improved grain
+quality (higher head rice ratio) and milling recov-
+ery. Farmers can get an additional net beneﬁt of
+between 30,000 and 80,000 CFA ha− 1. Millers
+can also beneﬁt from a late N application. Head
+rice ratios increased by 12–24%. Results showed
+
+the importance of proper storage. Wet season
+samples were not stored properly, affecting the
+percentage of head rice. The percentage of N in
+the grains was improved through late N applica-
+tion. Farmers and millers in the Senegal River
+delta can proﬁt from these results to produce high
+quality rice. To arrive at a quality product, a
+sequence of activities from sowing to milling
+should be done correctly. Rice seed quality, weed-
+ing, fertilizer applications, timely harvest, proper
+storage and good mill maintenance will all affect
+grain quality. Improved interaction between rice
+miller and rice farmer is crucial to improve grain
+quality and proﬁtability of irrigated rice produc-
+tion in the Senegal River delta.
+
+Acknowledgements
+
+We thank the farmers of the Debi and Tiguet
+villages. This study was ﬁnanced by a JICA grant
+from the Government of Japan.
+
+References
+
+Dingkuhn, M., 1997. Characterizing irrigated rice environ-
+ments using the rice phenology model RIDEV. In: Mie´zan,
+K.M., Wopereis, M.C.S., Dingkuhn, M., Deckers, J., Ran-
+dolph, T. (Eds.), Irrigated Rice in the Sahel: Prospects for
+Sustainable Development, West Africa Rice Development
+Association (WARDA), 01 Bouake´, BP 2551, Coˆte d’I-
+voire, pp. 343–460.
+
+Dingkuhn, M., Sow, A., 1997. Potential yields of irrigated rice
+in the Sahel.
+In: Mie´zan, K.M., Wopereis, M.C.S.,
+Dingkuhn, M., Deckers, J., Randolph, T. (Eds.), Irrigated
+Rice in the Sahel: Prospects for Sustainable Development,
+West Africa Rice Development Association (WARDA), 01
+Bouake´, BP 2551, Coˆte d’Ivoire, pp. 361–379.
+
+Donovan, C., Wopereis, M.C.S., Guindo, D., Ne´bie´, B., 1999.
+Soil fertility management in irrigated rice systems in the
+Sahel and Savanna regions of West Africa. Part II.
+Proﬁtability and risk analysis. Field Crops Research 61,
+147–162.
+
+FAO, 1990. FAO—Unesco Soil Map of the World. Revised
+
+Legend. Soils Bulletin 60, FAO, Rome, Italy.
+
+Ha¨fele, S., Johnson, D.E., Diallo, S., Wopereis, M.C.S., Janin,
+I., 2000. Improved soil fertility and weed management is
+proﬁtable for irrigated rice farmers in Sahelian Africa.
+Field Crops Research 66, 101–113.
+
+Ha¨fele, S., Wopereis, M.C.S., Donovan, C., Maubuisson, J.,
+2001. Improving productivity and proﬁtability of irrigated
+
+198
+
+M.M. Wopereis-Pura et al. /Europ. J. Agronomy 17 (2002) 191–198
+
+rice production in Mauritania. European Journal of
+Agronomy 14 (3), 181–196.
+
+Moreira, J., 1999. Le programme riz de qualite´. Paper pre-
+sented during the workshop on irrigated rice in the Senegal
+River valley organized by CIFA, Ndiaye, Senegal, 6–7
+May 1999, SAED, BP 74, St. Louis, Senegal, 16 pp.
+
+The Food Agency, 1998. Rice inspection Technology. The
+Food Agency, Ministry of Agriculture, Forestry and Fish-
+eries, Japan, 269 pp.
+
+Wopereis, M.C.S., Donovan, C., Nebie´, B., Guindo, D., N’Di-
+aye, M.K., 1999. Soil fertility management in irrigated rice
+systems in the Sahel and Savanna regions of West Africa.
+Part I. Agronomic analysis. Field Crops Research 61,
+125–145.
+
+Yasui, T., Tsutsumi, A., 1982. Food analysis method.
+Ed. Editorial committee of food analysis method, Japan
+Food
+94–105
+(Japanese).
+
+Industry Association, Kohrin,
+
+pp.
+
+

@@ -1,0 +1,1648 @@
+Contents lists available at ScienceDirect 
+
+LWT 
+
+journal homepage: www.elsevier.com/locate/lwt 
+
+Comprehensive evaluation of high temperature tolerance of six rice 
+varieties during grain-filling period based on key starch 
+physicochemical indexes 
+Dongping Yao a,1, Jun Wu a,1, Qiuhong Luo b,1, Hong Shen a, Wen Zhuang a, Gui Xiao a, 
+Jianwu Li a, Yingge Li c, Qiyun Deng a,c,***, Dongyang Lei b,**, Bin Bai a,* 
+a State Key Laboratory of Hybrid Rice, Hunan Hybrid Rice Research Center, Changsha, Hunan, 410125, China 
+b College of Agronomy, Hunan Agricultural University, Changsha, Hunan, 410128, China 
+c BioRice (Hunan) Co., Ltd., Changsha, Hunan, 410323, China   
+
+A R T I C L E  I N F O    
+
+Keywords: 
+Rice 
+Comprehensive evaluation 
+High temperature tolerance 
+Grain-filling stage 
+Starch physicochemical indexes 
+
+A B S T R A C T    
+In order to compare the high temperature tolerance of six rice varieties, field experiments using interval sowing 
+population were conducted to select sowing batches at high temperature and normal temperature during grain 
+filling period. High filling temperature decreased significantly head milled rice rate, setback, amylose content 
+and the proportion of the short chain of amylopectin, and increased obviously chalkiness, breakdown, gelati-
+nization temperature, gelatinization enthalpy, and the proportion of the medium chain of amylopectin. Analysis 
+of variance indicated significant differences with respect to physicochemical indexes of the starches from six rice 
+varieties under high temperature during grain filling stage. In addition, five starch physicochemical indexes 
+including apparent amylose content, setback, breakdown, chalkiness and gelatinization enthalpy showed more 
+sensitivity to high temperature. These indexes could be considered as key indexes to evaluate the high tem-
+perature tolerance of these six rice varieties. The experimental results showed that the high temperature toler-
+ance  of  the  six  varieties  –  Huanghuazhan,  Y  liangyou  957,  Taiyou  390,  Tianyouhuazhan,  Zhongzao  39,  Y 
+liangyou NO 1 – ranged from strong to weak. The regression equation showed similar results and indicated that 
+the high temperature tolerance of different varieties could be preliminarily evaluated using the key physico-
+chemical indexes of starch.   
+
+1. Introduction 
+
+Rice (Oryza sativa L.) is one of the most important cereal crops, 
+feeding more than half of the world’s population to meet their dietary 
+requirements (Zeng et al., 2017). Starch is the major component of rice 
+grain  accounting  for  more  than  80%  of  its  total  constituents,  and 
+therefore  its  physicochemical  parameters  such  as  amylose  content, 
+gelatinization temperature (GT), gelatinization enthalpy (ΔH), pasting 
+properties including peak viscosity (PV), the trough viscosity (TV), the 
+cool-paste viscosity (CPV), the setback (SB) and the breakdown (BD), are 
+usually used to predict cooking and eating quality of rice (ECQ) (Kong, 
+Zhu, Sui, & Bao, 2015; Calingacion et al., 2014). In general, the amylose 
+
+content measured is mainly apparent amylose content (AAC), which 
+cannot truly reflect the rice quality. The combined assay of AAC and 
+pasting properties being measured using a Rapid Visco-Analyzer (RVA) 
+were reported to be more effective method of evaluating the rice quality 
+(Jia, Ding, Wang, & Deng, 2008). BD and SB could be used to distinguish 
+different rice varieties with variations in AAC (Wu, Shu, & Xia, 2001). 
+GT and ΔH measured by DSC are closely related to the crystal structure 
+of rice, which determines the cooking time, and also two of the most 
+important starch physicochemical indexes to evaluate ECQ (Yao et al., 
+2020). 
+Global warming has increased the mean daily average temperature 
+at  rice  growing  season  therefore  being  a  threat  to  rice  production, 
+
+* Corresponding author. State Key Laboratory of Hybrid Rice, Hunan Hybrid Rice Research Center, Changsha, Hunan, 410125, China. 
+** Corresponding author. College of Agronomy, Hunan Agricultural University, Changsha, Hunan, 410128, China. 
+*** Corresponding author. State Key Laboratory of Hybrid Rice, Hunan Hybrid Rice Research Center, Changsha, Hunan, 410125, China. 
+E-mail addresses: dqy100@163.com (Q. Deng), leidongyang1980@126.com (D. Lei), baibin87@163.com (B. Bai).   
+1  Dongping Yao, Jun Wu and Qiuhong Luo contributed equally to this work. 
+https://doi.org/10.1016/j.lwt.2021.111804 
+Received 26 January 2021; Received in revised form 21 May 2021; Accepted 24 May 2021   
+
+LWT-FoodScienceandTechnology148(2021)111804Availableonline27May20210023-6438/©2021ElsevierLtd.Allrightsreserved.experimental  field  of  the  Hunan  Hybrid  Rice  Research  Center  in 
+Changsha City, Hunan Province. The rice materials were respectively 
+sowed on March 30, April 9, April 19, April 29, May 9, May 19, May 29, 
+June 8, June 18, June 28 and transplanted accordingly on April 27, May 
+4, May 15, May 27, June 5, June 14, June 25, July 4, July 14, July 23, 
+and all varieties were arranged in three replications within each sowing 
+batches. The field sowing, transplanting, management and taking sam-
+ples methods were the same for all varieties of the three batches of rice 
+used on our experiment (Yao et al., 2020). Air temperature was recorded 
+by the temperature data log (HOBO, Onset Computer Corp, Bourne, MA, 
+USA) being installed 100 cm above the soil in the field. 
+2.2. Experimental samples preparation 
+
+D. Yao et al.                                                                                                                                                                                                                                     
+especially because rice varieties are most sensitive to high temperature 
+during the grain filling period (Fan et al., 2019). The daily average 
+filling temperature higher than 27 ◦C will greatly influence the physi-
+cochemical properties of rice starch, resulting to the deterioration of rice 
+quality (Deng et al., 2015; Wakamatsu, Sasaki, Uezono, & Tanaka, 2007; 
+Zhu et al., 2019). Previous studies showed that high temperature at 
+grain-filling stage could increase chalkiness degree (CHA), GT, ΔH and 
+significantly  changed  the  relative  crystallinity,  while  there  was  no 
+change in crystal type and the ratio of length and width (Yao et al., 2020; 
+Yamakawa,  Hirose,  Kuroda,  &  Yamaguchi,  2007;  Lin  et  al.,  2010; 
+Umemoto  &  Terashima,  2002;  Zhong,  Cheng,  Wen,  Sun,  &  Zhang, 
+2005).  The  starch  pasting  property  detected  by  RVA  analysis  was 
+affected by high temperature at grain-filling stage, but the response of 
+RVA profiles characteristics to high temperature was different and the 
+changes of SB and BD were more significant than PV, TV and CPV, which 
+meant that SB and BD might be more sensitive to high temperature 
+(Zhong et al., 2005; Chun, Lee, Hamaker, & Janaswamy, 2015; Liu et al., 
+2013). One of the most effective measures of preventing high temper-
+ature stress is to breed and select rice varieties that are tolerant to high 
+temperature. Therefore, the accurate identification and evaluation of 
+the high temperature tolerance of rice germplasms are very important 
+for breeders, as this will help them in properly selecting which rice 
+varieties to use. However, a lot of researches focused on the effect of 
+high  temperature  on  rice  quality  and  rice  starch  physicochemical 
+properties using greenhouse temperature control conditions, which was 
+recently  controversial,  since  extrapolating  results  from  greenhouse 
+could not be fully adopted in actual production (Zhang et al., 2016). We 
+investigated the effect of high temperature on rice quality by means of 
+natural field temperature via sowing on different dates and the results 
+could provide more comprehensive and practical data to breeders. 
+Previous studies revealed that complex relationships were associated 
+with rice quality indexes and each index had a different response to high 
+temperature, so it was difficult to evaluate the high temperature toler-
+ance of different rice varieties comprehensively and accurately with a 
+single  index.  Multiple  indexes  must  be  adopted  for  comprehensive 
+evaluation and these related indexes need to be transformed into new 
+independent comprehensive indexes based on the principal component 
+analysis (PCA) method, and the comprehensive evaluation can be made 
+according to the contribution rate of each comprehensive index (Liu, 
+Zhao, Li, & Chen, 2018; Liu, Zheng, & Ding, 2008; Maione & Barbosa, 
+2019). Therefore, the objective of this study was to measure physico-
+chemical properties of rice starch at grain filling period via sowing on 
+different dates to illustrate the effect mechanism of high temperature at 
+grain-filling stage and further identify the key physicochemical indexes 
+of starch being used to evaluate the high temperature tolerance among 
+different rice varieties (Lange et al., 2019; Yang, Wang, & Zhou, 2003; 
+Yano et al., 2019). Based on our previous work, we had reported the 
+effect of high temperature on the physicochemical properties of rice 
+starch during the grain filling period (Yao et al., 2020). In 2019, the ten 
+sowing batches with six rice varieties were conducted to select sowing 
+batches at high temperature and normal temperature during grain filling 
+period to evaluate the high temperature tolerance of the varieties based 
+on key starch physiochemical indexes. 
+2. Materials and methods 
+2.1. Plant material and field arrangement 
+
+After physiological maturation, six individual plants were randomly 
+selected for each variety in each sowing period, and all the panicles on 
+the six individual plants were collected, then immediately placed in a 
+35 ◦C oven to dry until the rice moisture reached 14% (Zhu et al., 2019). 
+All rice panicles were then threshed, dehulled, milled, and polished. The 
+polished rice was analyzed for appearance and milling qualities. Starch 
+extracted  from  the  rice  flour  was  used  to  measure  a  series  of 
+starch-related physicochemical indexes. Starch was extracted using the 
+alkaline steeping method (Yao et al., 2020). In brief, the dried polished 
+rice sample was immersed in a 0.14% sodium bisulfate solution at room 
+temperature for 24 h. The steeped grain sample was mixed with enough 
+0.14% sodium bisulfate solution and ground into a slurry. The milled 
+slurry was filtered through a 200-mesh sieve and then centrifuged at 3, 
+000 rpm for 20 min. The faint-colored supernatant was removed, while 
+the remaining sediment was re-suspended in MilliQ water and centri-
+fuged at 3,000 rpm for 20 min; this process was repeated five times. The 
+isolated starch was placed in an oven at 55 ◦C to dry rapidly, and then 
+the dried starch was ground to pass through a 200-mesh sieve and kept 
+in a dryer. 
+2.3. Determination of starch physicochemical indexes 
+
+According  to  the  temperature  data,  the  sowing  batches  at  high 
+temperature  and  normal  temperature  during  the  filling  period  were 
+screened, and the physicochemical indexes of starch of six rice varieties 
+at high temperature and normal temperature were determined. At the 
+same time, the response difference of the same starch physicochemical 
+index to high temperature and normal temperature was determined by 
+random sampling respectively in all plots of sowing batches of the high 
+temperature and normal temperature of six rice varieties with three 
+replicates in each sowing batch. 
+Brown rice rate, polished rice rate, head milled rice rate, the ratio of 
+grain  length  to  width,  and  CHA  were  determined  to  evaluate  grain 
+milling and appearance quality according to our previous method (Yao 
+et  al.,  2020).  Rice  starch  isolation,  AAC,  gelatinization  properties, 
+pasting property were determined to evaluate the effect of the physi-
+cochemical properties of rice starch using the methods described by Yao 
+et al. (2020). 
+Starch chain  length  distribution was  determined  by  ICS5000  ion 
+chromatography  system  (ICS-5000,  Thermo  Fisher  Scientific,  Sunny-
+vale, America) as performed by Nishi, Nakamura, Tanaka, and Satoh 
+(2001) with a minor modification. The Dionex™  CarboPac™  PA200 
+(3.0  × 250 mm, Thermo Fisher Scientific, Sunnyvale, America) ionic 
+column was used according to the properties of the glucose chain. Mo-
+bile phase A (aqueous solution), mobile phase B (100 mM NaOH, 1M 
+NaAC) and mobile phase C (100 mM NaOH) were used, the flow rate 
+controlled at 0.4 ml/min, and the column temperature at 30 ◦C. 
+2.4. Comprehensive evaluation of high temperature tolerance 
+
+In order to eliminate the influence of variety specificity, character 
+stress indexes (I) of physicochemical properties for all rice varieties were 
+
+Six rice varieties – Huanghuazhan, Y liangyou 957, Tianyouhuazhan, 
+Taiyou 390, Y liangyou NO 1, and Zhongzao 39 – were used as the 
+experimental  materials  in  this  study  and  respectively  numbered 
+19Q001, 19Q002, 19Q003, 19Q004, 19Q005 and 19Q006, all of which 
+were provided by Hunan Hybrid Rice Research Centre. In 2019, ten 
+sowing batches were set up in order to cover sowing dates of all kinds of 
+rice varieties and help select the maximum temperature difference be-
+tween two sowing batches. Field experiments were conducted at the 
+
+LWT148(2021)1118042D. Yao et al.                                                                                                                                                                                                                                     
+calculated  as  the  experimental  data  to  evaluate  high  temperature 
+tolerance of different rice varieties. These physicochemical properties 
+were respectively measured at high temperature and normal tempera-
+ture treatment, viz character values under high temperature (PVHT) and 
+character values under normal temperature (PVCT). Character stress 
+indexes were calculated by means of previous methods (Nachimuthu 
+et al., 2014; Huang, Luo, Huang, Rao, & Liu, 1999) with minor modi-
+fications  as  follows:  I  = PVHT/PVCT  or  I=PVCT/PVHT.  If  physico-
+chemical  properties  under  high  temperature  increased,  the  former 
+formula was used, the latter was used if otherwise. PCA was used to 
+change key physicochemical indexes relevant to each other into several 
+independent comprehensive indexes by SPSS 24.0 software (Yano et al., 
+2019).  The  corresponding  subordinative  function  value  (U)  of  each 
+comprehensive 
+formula:  UX  =
+(X-Xmin)/(Xmax -Xmin). X is a comprehensive index of a certain variety in 
+one  rice  varieties’  group  and  Ux  is  its  corresponding  subordinative 
+function value. Xmax and Xmin are respectively the maximum and the 
+
+minimum value of the comprehensive index for all the test variety in this 
+group (Jiang et al., 2014). Further, the weight (W) was determined by 
+the ratio of each principal component contribution to the total contri-
+bution rate of all principal components, and the comprehensive evalu-
+ation value (D) was determined by the accumulation of the product of UX 
+value and WX, and the formula: D =
+[Ux∗Wx] (x = 1, 2, ……n), where 
+n represented the last comprehensive index. 
+2.5. Statistical analysis 
+
+All parameters shown in the tables and figures used in this article 
+represented the mean values of the experimental data obtained from 
+triplicate tests for all varieties sown during the ten sowing batches. The 
+analysis of all data was performed using the SPSS 24.0 statistical soft-
+ware program. One-way analysis of variance and Tukey’s tests were 
+used to determine whether statistically significant differences (P < 0.05) 
+
+∑n
+x=1
+
+index  was  calculated  by 
+
+the 
+
+Fig. 1. The daily mean temperature of the six varieties with three sowing batches 30 days after the heading stage (MDT). A, B, C, D, E, F are MDT of Huanghuazhan, 
+Y liangyou 957, Tianyouhuazhan, Taiyou 390, Y liangyou NO 1 and Zhongzao 39, respectively. Blue line (HT1) and red line (HT2) represent sowing batches 
+processed under high temperature whereas the green line represents sowing batches under normal temperature (CT).(For interpretation of the references to color in 
+this figure legend, the reader is referred to the Web version of this article.) 
+
+LWT148(2021)1118043D. Yao et al.                                                                                                                                                                                                                                     
+existed among the means. 
+3. Results 
+3.1. Sowing and selection for the study materials 
+
+Table 1 
+The effects of high temperature on AAC and gelatinization property.  
+No. 
+
+Temperature 
+level 
+19Q001  HT1 
+
+AAC 
+
+T0 
+
+Tp 
+
+Tc 
+
+±
+
+±
+
+12.69 
+0.89b 
+13.80 
+± 0.13 
+ab 
+15.70 
+± 0.19a 
+12.95 
+± 0.36c 
+13.69 
+0.15b 
+18.35 
+± 0.10a 
+21.54 
+± 1.13a 
+22.14 
+± 1.76a 
+24.46 
+± 0.41a 
+12.21 
+0.15b 
+13.14 
+± 1.25 
+ab 
+16.08 
+± 0.27a 
+12.93 
+1.25b 
+13.43 
+0.43b 
+20.00 
+± 1.01a 
+26.21 
+± 0.08a 
+26.07 
+± 0.05a 
+26.97 
+± 0.28a 
+
+±
+
+±
+
+±
+
+±
+
+±
+
+±
+
+±
+
+±
+
+±
+
+±
+
+±
+
+±
+
+75.32 
+0.93a 
+66.55 
+0.67b 
+62.87 
+0.34c 
+75.25 
+0.37a 
+72.46 
+0.46b 
+64.30 
+0.65c 
+76.06 
+0.22a 
+74.49 
+0.38a 
+71.19 
+1.20b 
+77.07 
+0.82a 
+75.43 
+0.50a 
+71.53 
+0.64b 
+68.40 
+0.40a 
+66.37 
+0.62b 
+61.55 
+0.32c 
+72.30 
+0.30a 
+71.64 
+0.10b 
+71.00 
+0.29b 
+
+±
+
+±
+
+±
+
+±
+
+±
+
+±
+
+±
+
+±
+
+±
+
+±
+
+±
+
+±
+
+±
+
+±
+
+±
+
+±
+
+±
+
+±
+
+80.89 
+0.41a 
+71.43 
+0.64b 
+67.72 
+0.54c 
+80.74 
+0.67a 
+78.53 
+0.45b 
+71.90 
+0.30c 
+80.81 
+0.54a 
+79.60 
+0.50a 
+75.66 
+0.93b 
+82.21 
+0.44a 
+80.94 
+0.51a 
+78.38 
+0.60b 
+74.44 
+0.50a 
+71.99 
+0.64b 
+66.22 
+0.35c 
+79.36 
+0.61a 
+77.33 
+0.41b 
+75.62 
+0.39c 
+
+±
+
+±
+
+±
+
+±
+
+±
+
+±
+
+±
+
+±
+
+±
+
+ΔH 
+
+±
+
+±
+
+±
+
+±
+
+±
+
+10.12 
+0.38a 
+9.19 ±
+0.24b 
+8.35 ±
+0.29c 
+12.77 
+0.22a 
+11.07 
+0.20b 
+9.34 ±
+0.34c 
+12.97 
+0.41a 
+12.93 
+0.35a 
+9.76 ±
+0.29b 
+12.74 
+0.37a 
+12.69 
+0.59a 
+10.74 
+0.24b 
+12.43 
+0.19a 
+11.22 
+0.13b 
+6.82 ±
+0.73c 
+11.08 
+0.11a 
+10.50 
+0.05b 
+8.40 ±
+0.28c 
+
+±
+
+±
+
+±
+
+±
+
+±
+
+±
+
+±
+
+±
+
+±
+
+±
+
+84.85 
+± 0.33a 
+77.53 
+0.44b 
+71.38 
+± 0.67c 
+85.05 
+± 0.73a 
+80.93 
+0.36b 
+77.80 
+± 0.57c 
+85.80 
+± 0.63a 
+85.23 
+± 0.64a 
+81.71 
+0.81b 
+86.34 
+± 0.61a 
+85.15 
+0.88b 
+82.49 
+0.73b 
+82.66 
+± 0.55a 
+79.03 
+0.20b 
+71.68 
+± 0.63c 
+84.05 
+± 0.18a 
+81.50 
+1.24b 
+81.86 
+± 0.73 
+ab 
+
+±
+
+±
+
+±
+
+±
+
+19Q001  HT2 
+
+19Q001 
+
+CT 
+
+19Q002  HT1 
+
+19Q002  HT2 
+
+19Q002 
+
+CT 
+
+19Q003  HT1 
+
+19Q003  HT2 
+
+19Q003 
+
+CT 
+
+19Q004  HT1 
+
+19Q004  HT2 
+
+19Q004 
+
+CT 
+
+19Q005  HT1 
+
+19Q005  HT2 
+
+19Q005 
+
+CT 
+
+19Q006  HT1 
+
+19Q006  HT2 
+
+19Q006 
+
+CT 
+
+The first, the sixth, and the tenth sowing batches were selected as 
+experimental materials based on their obviously different mean daily 
+average temperature of 30 days (MDT) after the heading stage except 
+19Q006 (Fig. 1 and Supplementary Table 1). The first and sixth sowing 
+batches of all the other varieties except 19Q006 were considered as high 
+temperature treatment groups (HT1 and HT2) with MDT higher than 
+27  ◦C,  and  the  MDT  of  the  tenth  sowing  batch  was  22–27  ◦C  and 
+considered as the normal temperature treatment (CT). For 19Q006 with 
+a short growth period compared with the other five varieties, the sixth, 
+the seventh and the tenth sowing batches were selected as the experi-
+mental  materials,  represented  as  HT1,  HT2,  and  CT,  respectively. 
+Obviously, the daily average temperature of HT1 was higher than HT2, 
+and the highest daily average temperature difference existed between 
+HT1 and CT. Meanwhile, the daily mean temperature of 30 days after 
+heading was higher than 29 ◦C for all varieties at HT1 treatment group, 
+meaning that the duration time of high temperature stress lasted up to 
+30 days, while the continuous time of the daily mean temperature higher 
+than 29 ◦C for all varieties at HT2 treatment group exceeded 12 days, 
+showing that all varieties had suffered with continuous high tempera-
+ture for more than 12 days. 
+3.2. Effects of high temperature on rice milling and appearance qualities 
+The  effects  of  high  temperature  on  the  indexes  of  milling  and 
+appearance qualities were shown in Supplementary Table 2. As per our 
+previous studies (Yao et al., 2020), high temperature at grain filling 
+stage did not change brown rice rate and polished rice rate, but signif-
+icantly increased (P < 0.05) CHA and decreased head milled rice rate. 
+Except for 19Q004 and 19Q006, the ratio of grain length to width had a 
+significant decline under high temperature, which was contradictory 
+with our previous study showing that high temperature had no signifi-
+cant effect on ratio of grain length to width. Except for 19Q004, CHA 
+showed a deterioration under both HT1 and HT2 for the other varieties. 
+Especially, as the temperature rose, the CHA increased even more for 
+19Q002 and 19Q006. Head milled rice rate showed only a decreasing 
+trend under HT1 treatment for 19Q002, 19Q003, 19Q004, 19Q005. The 
+above results indicated that CHA was more sensitive to high temperature 
+comparing with other indexes of milling and appearance qualities. 
+3.3. Effects of high temperature on the physicochemical characteristics of 
+rice starch 
+
+Table 1 showed that high temperature significantly decreased AAC 
+for 19Q001, 19Q002, 19Q004 and 19Q005. The AAC did not obviously 
+change  under  HT1  and  HT2  for  19Q003  and  19Q006.  Moreover, 
+different varieties were affected on different degrees by high tempera-
+ture, for example, 19Q002 showed a significant decrease as the tem-
+perature rose, while the other varieties did not exhibit this trend. High 
+temperature caused little or no significant change in PV, TV and CPV, 
+but significantly increased BD except 19Q003, GT (onset, T0; peak, Tp; 
+conclusion, Tc) and  ΔH, and decreased SB for all varieties (Table 1, 
+Table 2). SB of RVA were calculated by a relative value (setback value/ 
+peak value). Setback value equal peak viscosity minus trough viscosity. 
+For amylopectin chain length distribution (Fig. 2), except for 19Q001, 
+the proportion of the short chain, ranging from DP 6-18, significantly 
+decreased with the increasing filling-grain temperature. The amount of 
+medium chain ranging from DP 21 to 33 clearly increased, while the 
+longer chain above DP 34 did not obviously change when the filling- 
+grain temperature increased further. For 19Q001, the chain with DP 
+6-10  obviously  decreased  and  the  chain  ranging  from  DP  11  to  20 
+
+Data  are  shown  as  the  mean  ± standard  error  of  triplicate  measurements. 
+Different letters are followed after standard deviation to express significantly 
+different (P < 0.05). 19Q001, 19Q002, 19Q003, 19Q004, 19Q005 and 19Q006 
+represent  respectively  the  rice  varieties  of  Huanghuazhan,  Y  liangyou  957, 
+Tianyouhuazhan, Taiyou 390, Y liangyou NO 1 and Zhongzao 39. HT1 and HT2 
+represent the corresponding high temperature processed sowing batches, while 
+CT represents nomal temperature sowing batch. 
+
+significantly increased, and the longer chain with above DP 21 had a 
+little change with the increasing filling-grain temperature. Similarly for 
+19Q005,  the  chain  above  DP  20  did  not  have  a  significant  change. 
+Therefore, the proportion of the short chain of amylopectin obviously 
+decreased,  while  the  proportion  of  the  medium  chain  significantly 
+increased as the filling-grain temperature increased, which promoted 
+the formation of more perfect crystals (Xiong et al., 2021). Additionally, 
+the proportion of the medium and long chain of amylopectin was highly 
+positive correlated with gelatinization properties measured by DSC (Lin 
+
+LWT148(2021)1118044D. Yao et al.                                                                                                                                                                                                                                     
+
+Table 2 
+The effect of high temperature on pasting property by RVA.  
+NO. 
+SB 
+19Q001 
+0.40 ± 0.00c 
+19Q001 
+0.56 ± 0.04b 
+19Q001 
+0.81 ± 0.03a 
+19Q002 
+0.36 ± 0.04c 
+19Q002 
+0.46 ± 0.03b 
+19Q002 
+0.82 ± 0.02a 
+19Q003 
+0.54 ± 0.04b 
+19Q003 
+0.59 ± 0.00b 
+19Q003 
+0.76 ± 0.04a 
+19Q004 
+0.34 ± 0.02b 
+19Q004 
+0.37 ± 0.00b 
+19Q004 
+0.44 ± 0.01a 
+19Q005 
+0.54 ± 0.02c 
+19Q005 
+0.64 ± 0.01b 
+19Q005 
+0.77 ± 0.04a 
+19Q006 
+0.59 ± 0.02b 
+19Q006 
+0.77 ± 0.02b 
+19Q006 
+0.85 ± 0.02a 
+Data are shown as the mean ± standard error of triplicate measurements. Different letters are followed after standard deviation to express significantly different (P <
+0.05). 19Q001, 19Q002, 19Q003, 19Q004, 19Q005 and 19Q006 represent respectively the rice varieties of Huanghuazhan, Y liangyou 957, Tianyouhuazhan, Taiyou 
+390, Y liangyou NO 1 and Zhongzao 39. HT1 and HT2 represent the corresponding high temperature processed sowing batches, while CT represents nomal temperature 
+sowing batch. SB is calculated by a relative value (setback value/peak value). Setback value equal peak viscosity minus trough viscosity. 
+
+CPV 
+1029.00 ± 22.61a 
+1034.00 ± 12.53a 
+1021.33 ± 43.32a 
+1103.67 ± 42.59a 
+1180.33 ± 39.70a 
+968.67 ± 45.35b 
+1259.00 ± 46.36a 
+1207.33 ± 25.93a 
+1024.33 ± 136.87a 
+1203.33 ± 27.21a 
+1128.67 ± 34.53a 
+1121.00 ± 148.09a 
+1324.33 ± 138.17a 
+1104.67 ± 18.93a 
+1225.33 ± 59.21a 
+1056.50 ± 200.11a 
+969.67 ± 96.69a 
+988.00 ± 152.74a 
+
+Temperature level 
+HT1 
+HT2 
+CT 
+HT1 
+HT2 
+CT 
+HT1 
+HT2 
+CT 
+HT1 
+HT2 
+CT 
+HT1 
+HT2 
+CT 
+HT1 
+HT2 
+CT 
+
+PV 
+864.33 ± 11.02a 
+791.00 ± 22.87b 
+613.33 ± 11.02c 
+930.00 ± 50.21a 
+947.33 ± 55.14a 
+607.33 ± 26.73b 
+870.33 ± 35.23a 
+813.00 ± 16.09a 
+688.33 ± 38.03b 
+1010.67 ± 12.34a 
+982.00 ± 29.72a 
+986.00 ± 35.09a 
+945.33 ± 51.81a 
+838.00 ± 29.21b 
+850.67 ± 9.71b 
+631.50 ± 51.62a 
+565.67 ± 38.00a 
+599.50 ± 23.33a 
+
+TV 
+682.33 ± 26.65a 
+593.33 ± 29.01a 
+589.33 ± 51.64a 
+766.67 ± 30.01a 
+742.67 ± 39.32a 
+771.33 ± 17.67a 
+768.00 ± 27.62a 
+711.33 ± 12.34 ab 
+595.67 ± 70.60b 
+861.67 ± 16.74a 
+765.67 ± 25.54b 
+684.33 ± 92.40 ab 
+707.67 ± 46.61a 
+607.67 ± 25.42a 
+603.33 ± 44.79a 
+578.00 ± 22.63a 
+535.00 ± 31.80a 
+547.00 ± 50.91a 
+
+BD 
+197.50 ± 21.92a 
+197.67 ± 10.41a 
+157.33 ± 10.02b 
+189.17 ± 18.56a 
+187.33 ± 22.28a 
+154.00 ± 2.83b 
+102.33 ± 31.56a 
+101.67 ± 20.43a 
+92.67 ± 40.28a 
+226.00 ± 14.50a 
+216.33 ± 11.02a 
+165.00 ± 10.15b 
+262.33 ± 41.20a 
+209.67 ± 28.73 ab 
+114.00 ± 46.77b 
+73.50 ± 28.99a 
+59.67 ± 10.07b 
+33.45 ± 27.58c 
+
+et al., 2016), which indicated polished rice treated at high temperature 
+during grain-filling period might need more energy and higher tem-
+perature to melt starch crystals, resulting to the polished rice being more 
+difficult to cook. 
+
+3.4. Physicochemical indexes of rice starch closely related to high- 
+temperature tolerance 
+
+The response difference of the same starch physicochemical index to 
+high temperature and normal temperature was determined on 54 plots 
+of six varieties with three sowing batches (the first, sixth and tenth 
+sowing batches of 19Q001-19Q005 and the sixth, seventh and tenth 
+sowing batches of 19Q006) and three replicates in each sowing batch to 
+study the effects of HT1 and HT2 on the same physicochemical indexes 
+(Table 3). The results showed that there were no significant changes in 
+brown rice rate, polished rice rate and length-width ratio under the two 
+temperature conditions (the data were not provided), while PV and CPV 
+only  increased  significantly  under  HT1  stress,  but  did  not  change 
+significantly under HT2 stress. However, AAC, BD and SB increased 
+significantly under HT1 and HT2 conditions, especially AAC and SB 
+reached an extremely significant level, indicating that AAC, BD and SB 
+were  more  sensitive  to  high  temperature  than  PV  and  CPV.  From 
+Table 3, we could find that chalkiness degree in HT2 reached significant 
+levels and extremely significant levels by HT1 stress, while head milled 
+rice rate, T0, Tp, Tc and ΔH reached significant levels under these two 
+kinds of high temperature. The analysis of variation coefficients (CV) of 
+all the indexes measured for two consecutive years using different va-
+rieties with different sowing dates showed that AAC, BD, SB, CHA and 
+ΔH  had  higher  coefficients  of  variation  (Supplementary  Table  3). 
+Meanwhile, these indexes had more significant changes under higher 
+grain-filling temperature indicating that they were more sensitive than 
+the other indexes. Therefore, combining the significance analysis and CV 
+analysis under high temperature conditions, AAC, BD, SB, CHA and ΔH 
+were considered as the key physicochemical indexes of rice starch to 
+evaluate the high temperature tolerance of different varieties. 
+
+3.5. Comprehensive evaluation of high temperature tolerance of different 
+varieties 
+
+PCA  was  used  to  transform  multiple  indexes  into  independent 
+comprehensive indexes to evaluate accurately high temperature toler-
+ance of different varieties to provide more reliable theoretical data to 
+
+breeders (Deepa et al., 2009). Taking CT as control, HT1 and HT2 were 
+considered as two high temperature treatment conditions so that the 
+experiments  could  be  divided  into  two  comparison  groups,  namely 
+HT1/CT and HT2/CT. The stress degree of each physicochemical index 
+under high temperature was evaluated by character stress index under 
+two treatment groups and the standard data analyzed using the SPSS 
+software were shown in Supplementary Table 4. The D value was ob-
+tained by the PCA by changing ΔH, BD, SB, CHA, AAC relevant to each 
+other into two or three independent comprehensive indexes to estimate 
+the extent to resist high temperature. At HT1/CT treatment group, three 
+principal components including F1, F2 and F3 were obtained by PCA 
+with cumulative contribution rate of 96%, which could cover almost all 
+the information of key physiological index. F1 explained 40.9% of the 
+total variance (Table 4), and CHA and SB showed respectively high 
+positive  loading  (0.958)  and  negative  loading  ((cid:0) 0.910),  which  sug-
+gested that the varieties with high principal component value of F1 
+exhibited high chalkiness and low SB values after high temperature 
+treatment. F2 explained 34.4% of the total variance and the loading of 
+BD was high on F2 (0.968), indicating that F2 was representative of BD. 
+F3 explained 24.7% of the total variance and represented AAC (0.972). 
+This component was also loaded with △H (0.669), which was consistent 
+with the previous results that varieties with high AAC needed more 
+energy to melt starch crystals (Lacerda, Leite, & da Silveira, 2019). Due 
+to the high variance contribution rate of F1 and F2, CHA, SB and BD 
+contributed  the  most  to  evaluate  the  high  temperature  tolerance  of 
+different varieties. For the HT2/CT treatment group, three principal 
+components were obtained with cumulative contribution rate of 98%. 
+The principal components and its coefficient were shown in Table 4 at 
+two groups. F1, F2 and F3 represented respectively BD and SB, CHA and 
+△H,  AAC.  According  to  the  high  variance  contribution  rates  of  F1 
+(47.4%) and F2 (31.4%), CHA, SB and BD were the most key indexes to 
+evaluate the high temperature tolerance of different rice varieties, which 
+was consistent with the results from the HT1/CT treatment group. Ac-
+cording to the standard data of character stress index and principal 
+component coefficient of each index, the principal component value was 
+calculated. U, W and D value was shown in Table 5. According to D 
+value,  the  high  temperature  tolerance  of  the  cultivars  ranging  from 
+strong to weak was evaluated, viz the high temperature tolerance of the 
+six  varieties  was  evaluated  in  the  same  order  under  HT1  and  HT2 
+treatment, with the following varieties arranged from strong to weak – 
+19Q001, 19Q002, 19Q004, 19Q003, 19Q006, 19Q005. The same results 
+of high temperature tolerance were obtained in the two groups, which 
+
+LWT148(2021)1118045D. Yao et al.                                                                                                                                                                                                                                     
+
+Fig. 2. Starch chain distribution of the three sowing batches of Huanghuazhan (A), Y liangyou 957 (B), Tianyouhuazhan (C), Taiyou 390 (D), Y liangyou NO 1 (E), 
+and Zhongzao 39 (F). Green bar (HT1) and yellow bar (HT2) represent sowing batches processed under high temperature whereas the orange bar represents sowing 
+batches under normal temperature (CT). The black arrows indicate the change in the trend of amylopectin chain length proportion with different polymerization 
+degrees in CT, HT2 and HT1 directions. (For interpretation of the references to color in this figure legend, the reader is referred to the Web version of this article.) 
+
+Table 3 
+Effects of HT1 and HT2 stress at grain filling stage on main physicochemical indexes of rice.  
+Treatment 
+BD 
+
+AAC 
+
+CPV 
+
+PV 
+
+SB 
+
+ΔH 
+
+T0 
+
+Tc 
+
+Tp 
+
+Head milled 
+rice rate/% 
+61.31 ± 5.43 
+69.88 ± 2.45 
+8.57* 
+67.69 ± 2.35 
+69.88 ± 2.45 
+2.19* 
+
+Chalkiness 
+degree/% 
+4.36 ± 0.93 
+2.48 ± 0.39 
+1.88** 
+3.79 ± 0.95 
+2.48 ± 0.39 
+1.31* 
+
+HT1 
+CT 
+Difference 
+HT2 
+CT 
+Difference 
+Data are shown as the mean ± standard error of triplicate measurements. Level of significance is expressed as * for P < 0.05 and ** for P < 0.01 between temperature 
+treatments. HT1 and HT2 represent the corresponding high temperature processed sowing batches of six rice varieties, while CT represents nomal temperature sowing 
+batches of six rice varieties. 
+
+1162.64 ±
+118.06 
+1058.11 ±
+97.29 
+104.53* 
+1104.11 ±
+89.51 
+1058.11 ±
+97.29 
+46.00 
+
+393.51 ±
+77.08 
+520.72 ±
+72.38 
+127.22** 
+448.14 ±
+56.16 
+520.72 ±
+72.38 
+72.58** 
+
+875.36 ±
+131.00 
+724.19 ±
+159.58 
+151.17* 
+822.83 ±
+147.18 
+724.19 ±
+159.58 
+98.64 
+
+175.28 ±
+72.71 
+122.67 ±
+51.08 
+52.61* 
+162.06 ±
+65.06 
+122.67 ±
+51.08 
+39.39* 
+
+16.42 ±
+5.96 
+20.26 ±
+4.58 
+3.84** 
+17.04 ±
+5.61 
+20.26 ±
+4.58 
+3.22** 
+
+12.02 ±
+1.15 
+8.90 ±
+1.36 
+3.11* 
+11.27 ±
+1.40 
+8.90 ±
+1.36 
+2.37* 
+
+74.07 ±
+3.20 
+67.07 ±
+4.65 
+7.00* 
+71.16 ±
+3.88 
+67.07 ±
+4.65 
+4.09* 
+
+84.79 ±
+1.31 
+77.82 ±
+5.14 
+6.97* 
+81.56 ±
+3.14 
+77.82 ±
+5.14 
+3.74* 
+
+79.74 ±
+2.75 
+72.59 ±
+4.83 
+7.16* 
+76.64 ±
+4.00 
+72.59 ±
+4.83 
+4.05* 
+
+LWT148(2021)1118046D. Yao et al.                                                                                                                                                                                                                                     
+
+Table 4 
+Principal components and its coefficient based on character stress index of the key physiological items obtained by SPSS software under HT1 and HT2 at grain filling 
+stage.  
+Treatment 
+
+Physiological items 
+
+Physiological items 
+
+HT1 
+
+HT2 
+
+BD 
+SB 
+AAC 
+CHA 
+ΔH 
+Contribution rate 
+BD 
+SB 
+AAC 
+CHA 
+ΔH 
+Contribution rate 
+
+Principal components and its coefficient 
+F1 
+0.064 
+(cid:0) 0.573 
+0.058 
+0.670 
+0.464 
+0.409 
+0.432 
+0.529 
+0.393 
+0.260 
+0.558 
+0.474 
+
+F3  
+0.597 
+0.191 
+(cid:0) 0.736 
+0.236 
+(cid:0) 0.096 
+0.247     
+0.602 
+0.046 
+(cid:0) 0.765 
+0.212 
+(cid:0) 0.071 
+0.212     
+
+F2 
+0.561 
+0.401 
+0.443 
+(cid:0) 0.135 
+0.556 
+0.344 
+(cid:0) 0.321 
+(cid:0) 0.441 
+(cid:0) 0.119 
+0.717 
+0.418 
+0.314 
+
+BD 
+SB 
+AAC 
+CHA 
+ΔH 
+BD 
+SB 
+AAC 
+CHA 
+ΔH 
+
+Corresponding variance contribution ratios of five variables 
+F1 
+(cid:0) 0.102 
+(cid:0) 0.910 
+(cid:0) 0.142 
+0.958 
+0.392 
+0.974 
+0.853 
+0.072 
+(cid:0) 0.081 
+0.266 
+
+F3 
+(cid:0) 0.032 
+(cid:0) 0.037 
+0.972 
+(cid:0) 0.074 
+0.669 
+(cid:0) 0.105 
+0.473 
+0.990 
+(cid:0) 0.131 
+0.411 
+
+F2 
+0.968 
+0.351 
+(cid:0) 0.089 
+0.229 
+0.686 
+0.107 
+(cid:0) 0.027 
+0.073 
+0.985 
+0.871 
+
+F1, F2, F3 are respectively three principal components obtained by PCA. HT1 and HT2 represent the corresponding high temperature processed sowing batches. 
+
+Table 5 
+The principal component values, UX, WX, comprehensive evaluation value(D), forecast value (FV) under HT1 and HT2 at grain filling stage.   
+D 
+
+NO. 
+
+Treatment 
+
+HT1 
+
+HT2 
+
+19Q001 
+19Q002 
+19Q003 
+19Q004 
+19Q005 
+19Q006 
+WX    
+19Q001 
+19Q002 
+19Q003 
+19Q004 
+19Q005 
+19Q006 
+WX    
+
+Principal component values 
+F1 
+1.772 
+0.875 
+(cid:0) 1.787 
+0.403 
+(cid:0) 1.564 
+0.302 
+1.485 
+0.640 
+0.982 
+0.055 
+(cid:0) 2.814 
+(cid:0) 0.348 
+
+F2 
+0.332 
+(cid:0) 0.505 
+1.888 
+0.556 
+(cid:0) 1.977 
+(cid:0) 0.293 
+0.836 
+0.448 
+(cid:0) 2.350 
+1.049 
+(cid:0) 0.298 
+0.314 
+
+F3 
+0.351 
+0.903 
+0.156 
+0.354 
+0.397 
+(cid:0) 2.161 
+0.088 
+1.072 
+0.009 
+0.224 
+0.536 
+(cid:0) 1.928 
+
+Ux 
+F1 
+1.000 
+0.748 
+0.000 
+0.615 
+0.063 
+0.587 
+0.409 
+1.000 
+0.804 
+0.883 
+0.667 
+0.000 
+0.574 
+0.474 
+
+F2 
+0.597 
+0.381 
+1.000 
+0.655 
+0.000 
+0.436 
+0.344 
+0.937 
+0.823 
+0.000 
+1.000 
+0.604 
+0.784 
+0.314 
+
+F3  
+0.820 
+1.000 
+0.756 
+0.821 
+0.835 
+0.000 
+0.247   
+0.672 
+1.000 
+0.646 
+0.717 
+0.821 
+0.000 
+0.212   
+
+0.817 
+0.684 
+0.531 
+0.680 
+0.232 
+0.390 
+0.911 
+0.851 
+0.555 
+0.782 
+0.364 
+0.518 
+
+FV 
+
+0.818 
+0.691 
+0.527 
+0.683 
+0.231 
+0.388 
+0.812 
+0.686 
+0.514 
+0.694 
+0.252 
+0.387 
+
+19Q001, 19Q002, 19Q003, 19Q004, 19Q005 and 19Q006 represent respectively the rice varieties of Huanghuazhan, Y liangyou 957, Tianyouhuazhan, Taiyou 390, Y 
+liangyou NO 1 and Zhongzao 39. F1, F2, F3 are respectively three principal components obtained by PCA. HT1 and HT2 represent the corresponding high temperature 
+processed sowing batches. 
+
+indicated that the high temperature tolerance of the varieties had similar 
+internal response mechanism under these two kinds of high temperature 
+conditions. Taking the comprehensive evaluation value as the depen-
+dent  variable  and  the  character  stress  indexes  of  five  key  physico-
+chemical  indexes  as  the  independent  variables,  the  multiple  linear 
+regression equation was established under HT1 stress, D  = -0.961  +
+0.582*BD-0.174*SB-0.115*AAC+1.144*CHA+0.910*ΔH.  The  deter-
+mining coefficient of the equation was 0.99, viz R2 = 0.99,meaning that 
+these key indexes could comprehensively evaluate high temperature 
+tolerance of these six rice varieties. The regression equation under HT2 
+stress  was  obtained 
+same  way,  D  = -1.893  +
+1.463*BD-0.484*SB+1.430*AAC+2.604*CHA-1.454*ΔH, 
+the 
+determining coefficient of the equation was 0.99, viz R2  = 0.99. The 
+predicted high temperature tolerance (FV) of the six rice varieties ac-
+cording to the regression equation was shown in Table 5 being almost 
+the same as the D value obtained. The above results showed that the 
+regression equation based on the character stress index of the five key 
+indexes of the six varieties could be used to quantitatively evaluate the 
+high temperature tolerance of the six varieties, and the reliability of the 
+method used in this study was also demonstrated. 
+4. Discussion 
+
+and 
+
+the 
+
+in 
+
+High temperature seriously affected the physicochemical character-
+istics of rice starch, which resulted in poor rice quality, but different 
+physicochemical indexes had different responses to high temperature 
+
+stress (Mishra, Shekhar, Agrawal, Chakraborty, & Chakraborty, 2017). 
+We obtained five key physicochemical indexes including AAC, BD, SB, 
+Chalkiness and △H that were significantly affected by high temperature 
+at grain filling stage and had large CV during different varieties and 
+different sowing periods. With these five key indexes, the high tem-
+perature tolerance of six rice varieties were evaluated by means of PCA, 
+respectively from strong to weak 19Q001, 19Q002, 19Q004, 19Q003, 
+19Q006, 19Q005. 
+The frequency of hot weather during grain filling stage dramatically 
+decreased  head  polished  rate,  and  increased  CHA  caused  by  the 
+impairment of starch accumulation or other biosynthetic pathways in 
+the grain (Sreenivasulu et al., 2015). At the same time, the physico-
+chemical  properties  of  milled  rice  starch,  including  gelatinization 
+characteristics, pasting property, starch chain length distribution and so 
+on, were also significantly affected by high temperature (Chun et al., 
+2015). Starch is the main component of milled rice and its physico-
+chemical properties determine cooking and eating quality. The five key 
+indexes  obtained  were  all  closely  related  to  starch  physicochemical 
+properties in this paper, so we demonstrated that starch-related physi-
+cochemical indexes could be used to  evaluate the  high temperature 
+tolerance of different rice varieties. 
+The composition and structure of rice starch are mainly affected by 
+genetic and environmental factors. The changes of starch composition 
+and structure under high temperature are mainly related to enzymes 
+involved in starch synthesis. High temperature during grain filling stage 
+inhibited  the  activities  of  adenosine  diphosphate  glucose  (ADPG) 
+
+LWT148(2021)1118047Acknowledgements 
+
+D. Yao et al.                                                                                                                                                                                                                                     
+enzyme,  soluble  starch  synthase  and  granule-bound  starch  synthase 
+(GBSS), which was not conducive to the accumulation of starch, thus 
+leading to a significant decrease for amylose content (Yan et al., 2008). 
+In addition, high temperature during grain-filling stage could promote 
+the activity of soluble starch branching enzyme (soluble Q enzyme), but 
+the activity of starch debranching enzyme (DBE) decreased. Therefore, 
+high temperature at grain filling stage could promote short chain of 
+amylopectin to synthesize the medium and long chains of amylopectin 
+(Bao et al., 2020). 
+Changes in starch composition and structure led to the according 
+changes in starch physicochemical properties (Bao et al., 2020). Our 
+results showed that high temperature during grain-filling stage signifi-
+cantly increased chalkiness, mainly because 6–20 days after anthesis 
+was the key period for the formation of rice chalkiness. During this 
+period, rice varieties exposed to high temperature would increase the 
+space between starch granules, leading to the increase of chalkiness 
+(Sheng, Tao, & Chen, 2007). Studies have shown that GT was negatively 
+correlated with the content of amylose, and positively correlated with 
+the proportion of medium and long chains of amylopectin. Therefore, 
+the increase of GT and ΔH might be due to the decrease of amylose 
+content and the increase of the medium chains of amylopectin under 
+high temperature (Kong et al., 2015; Dou et al., 2018). Previous studies 
+showed that the branching structure of amylopectin mainly affected GT 
+and  crystallinity,  while  amylose  was  the  main  factor  affecting  the 
+pasting  properties  measured  by  RVA  (Rehmani  et  al.,  2014).  The 
+amylose content of the six rice varieties used in this study was different, 
+so the changes of relevant parameters of pasting properties under high 
+temperature were varieties dependent, which indicated that a single 
+index could not evaluate the high temperature tolerance of different rice 
+varieties. Generally, rice varieties with low SB, CHA, ΔH and high BD 
+had better ECQ (Mo et al., 2020). Meantime, BD, SB and CHA were 
+thought to be biggest contribution in comprehesive evaluation of high 
+temperature tolerance of different rice varieties. Therefore, PCA of the 
+key physicochemical indexes should be carried out in the comprehensive 
+evaluation of high temperature tolerance. The variance contribution 
+rate of each key index in the principal component should be weighed, 
+which can better help breeders to develop high-temperature tolerance 
+rice varieties with good rice quality. 
+CRediT authorship contribution statement 
+
+Calingacion, M., Laborte, A., Nelson, A., Resurreccion, A., Concepcion, J. C., 
+
+among starch biosynthesizing protein content, fine structure and functionality in 
+rice. Carbohydrate Polymers, 237, 116118.1–116118.9. 
+Daygon, V. D., … Mumm, R. (2014). Diversity of global rice markets and the science 
+required for consumer-targeted rice breeding. PloS One, 9(1), Article e85106. 
+Chun, A., Lee, H. J., Hamaker, B. R., & Janaswamy, S. (2015). Effects of ripening 
+temperature on starch structure and gelatinization, pasting, and cooking properties 
+in rice (Oryza sativa L.). Journal of Agronomy and Crop Science, 63, 3085–3093. 
+Deepa, G., Venkatachalam, L., Bhagyalakshmi, N., Shashidhar, H. E., Singh, V., & 
+Naidu, K. A. (2009). Physicochemical and genetic analysis of an endemic rice 
+variety, Njavara (Oryza sativa L.), in comparison to two popular south Indian 
+cultivars, Jyothi (PTB 39) and IR 64. Journal of Agricultural and Food Chemistry, 57, 
+11476–11483. 
+Deng, N. Y., Ling, X. X., Sun, Y., Zhang, C. D., Fahad, S., Peng, S. B., … Huang, J. L. 
+(2015). Influence of temperature and solar radiation on grain yield and quality in 
+irrigated rice system. European Journal of Agronomy, 64, 37–46. 
+Dou, Z., Tang, S., Chen, W. Z., Zhang, H. X., Li, G. H., Liu, Z. H., … Ding, Y. F. (2018). 
+Effects of open-field warming during grain-filling stage on grain quality of two 
+japonica rice cultivars in lower reaches of Yangtze River delta. Journal of Cereal 
+Science, 81, 118–126. 
+Fan, X. L., Li, Y. Q., Zhang, C. Q., Li, E. P., Chen, Z. Z., Li, Q. F., … Liu, Q. Q. (2019). 
+Effects of high temperature on the fine structure of starch during the grain-filling 
+stages in rice: Mathematical modeling and integrated enzymatic analysis. Journal of 
+the Science of Food and Agriculture, 99, 2865–2873. 
+Huang, Y. J., Luo, Y. F., Huang, X. Z., Rao, Z. M., & Liu, Y. B. (1999). Varietal difference 
+of heat tolerance at grain filling stage and its relationship to photosynthetic 
+characteristics and endogenous polyamine of flag leaf in rice. Chinese Journal of Rice 
+Science, 13, 205–210. 
+Jia, L., Ding, X. Y., Wang, P. R., & Deng, X. J. (2008). Rice RVA profile characteristics and 
+correlation with the physical/chemical quality. Acta Agronomica Sinica, 34, 790–794. 
+Jiang, L. N., Ma, J. H., An, T. T., Song, F., Liu, P., Yu, H. B., … Li, C. X. (2014). Effects of 
+low temperature at booting stage on physiological cold resistance of wheat. Journal 
+of Triticeae Crops, 10, 73–84. 
+Kong, X. L., Zhu, P., Sui, Z. Q., & Bao, J. S. (2015). Physicochemical properties of starches 
+from diverse rice cultivars varying in apparent amylose content and gelatinisation 
+temperature combinations. Food Chemistry, 172, 433–440. 
+Lacerda, L. D., Leite, D. C., & da Silveira, N. P. (2019). Relationships between enzymatic 
+hydrolysis conditions and properties of rice porous starches. Journal of Cereal Science, 
+89, 102819.1–102819.10. 
+Ferreira, C. S., … Batista, B. L. (2019). Mineral profile exploratory analysis for rice 
+grains traceability. Food Chemistry, 300, 125145. 
+Lin, L. S., Cai, C. H., Gilbert, R. G., Li, E. P., Wang, J., & Wei, C. X. (2016). Relationships 
+between amylopectin molecular structures and functional properties of different- 
+sized fractions of normal and highamylose maize starches. Food Hydrocolloids, 52, 
+359–368. 
+Lin, C. J., Li, C. Y., Lin, S. K., Yang, F. H., Huang, J. J., Liu, Y. H., et al. (2010). Influence 
+of high temperature during grain filling on the accumulation of storage proteins and 
+grain quality in rice (Oryza sativa L.). Journal of Agricultural and Food Chemistry, 58, 
+10545–10552. 
+temperature on rice grain quality and yield under field condition. Agronomy Journal, 
+105, 446–454. 
+Liu, K. L., Zhao, S., Li, Y., & Chen, F. S. (2018). Analysis of volatiles in brown rice, 
+germinated brown rice, and selenised germinated brown rice during storage at 
+different vacuum levels. Journal of the Science of Food and Agriculture, 98, 
+2295–2301. 
+Liu, C. H., Zheng, X. Z., & Ding, N. Y. (2008). Principal component analysis of cooked rice 
+texture qualities. Journal of Northeast Agricultural University, 15, 70–74. 
+Maione, C., & Barbosa, R. M. (2019). Recent applications of multivariate data analysis 
+methods in the authentication of rice and the most analyzed parameters: A review. 
+Critical Reviews in Food Science and Nutrition, 59, 1868–1879. 
+Mishra, D., Shekhar, S., Agrawal, L., Chakraborty, S., & Chakraborty, N. (2017). Cultivar- 
+specific high temperature stress responses in bread wheat (Triticum aestivum L.) 
+associated with physicochemical traits and defense pathways. Food Chemistry, 221, 
+1077–1087. 
+
+Lange, C. N., Monteiro, L. R., Freire, B. M., Franco, D. F., de Souza, R. O., Dos Reis 
+
+Liu, Q., Wu, X., Ma, J. Q., Li, T., Zhou, X. B., & Guo, T. (2013). Effects of high air 
+
+This  research  was  financially  supported  by  the  National  Natural 
+Science Foundation of China (U19A2032), the projects from the Gov-
+ernment  of  Hunan  Province,  China  (2019  TJ-N03,  19KFXM09, 
+HHRRC20190303). 
+Appendix A. Supplementary data 
+
+Supplementary data to this article can be found online at https://doi. 
+
+org/10.1016/j.lwt.2021.111804. 
+References 
+Bao, J. S., Ying, Y. N., Zhou, X., Xu, Y. J., Wu, P., Xu, F. F., et al. (2020). Relationships 
+
+Dongping  Yao:  Conceptualization,  Formal  analysis,  Funding 
+acquisition, Investigation, Visualization, Methodology, Writing – orig-
+inal  draft,  Writing  –  review  &  editing.  Jun  Wu:  Conceptualization, 
+Formal  analysis,  Funding  acquisition,  Investigation,  Visualization, 
+Methodology,  Writing  –  original  draft,  Writing  –  review  &  editing. 
+Qiuhong Luo: Conceptualization, Formal analysis, Funding acquisition, 
+Investigation,  Visualization,  Methodology,  Writing  –  original  draft, 
+Writing – review & editing. Hong Shen: Conceptualization, Methodol-
+ogy, Resources, Supervision, Writing – review & editing. Wen Zhuang: 
+Conceptualization, Methodology, Resources, Supervision, Writing – re-
+view & editing. Gui Xiao: Conceptualization, Methodology, Resources, 
+Supervision, Writing – review & editing. Jianwu Li: Formal analysis, 
+Methodology,  Resources.  Yingge  Li:  Formal  analysis,  Methodology, 
+Resources. Qiyun Deng: Funding acquisition, Project administration, 
+Resources,  Supervision,  Writing  –  review  &  editing. Dongyang  Lei: 
+Funding  acquisition,  Project  administration,  Resources,  Supervision, 
+Writing  –  review  &  editing.  Bin  Bai:  Conceptualization,  Funding 
+acquisition, Methodology, Project administration, Supervision, Writing 
+– review & editing. 
+Declaration of competing interest 
+
+The authors declare no competing financial interest. 
+
+LWT148(2021)1118048D. Yao et al.                                                                                                                                                                                                                                     
+
+Mo, W. W., Kuang, N., Zheng, H. B., Wang, X. M., Zhou, W., & Tang, Q. Y. (2020). 
+
+Nachimuthu, V. V., Robin, S., Sudhakar, D., Raveendran, M., Rajeswari, S., & 
+
+Comparative study on quality and RVA profile parameters of ratoon rice and late 
+rice. Journal of Hunan Agricultural University (Natural Sciences), 46, 271–277. 
+Manonmani, S. (2014). Evaluation of rice genetic diversity and variability in a 
+population panel by principal component analysis. Indian Journal of Science and 
+Technology, 7, 1555–1562. 
+Nishi, A., Nakamura, Y., Tanaka, N., & Satoh, H. (2001). Biochemical and genetic 
+analysis of the effects of amylose-extender mutation in rice endosperm. Plant 
+Physiology, 127, 459–472. 
+Rehmani, M. I. A., Wei, G. B., Hussain, N., Ding, C. Q., Li, G. H., Liu, Z. H., et al. (2014). 
+Yield and quality responses of two indica rice hybrids to post-anthesis asymmetric 
+day and night open-field warming in lower reaches of Yangtze River delta. Field 
+Crops Research, 156, 231–241. 
+Sheng, J., Tao, H. J., & Chen, L. G. (2007). Response of seedsetting and grain quality of 
+rice to temperature at different time during grain filling period. Chinese Journal of 
+Rice Science, 21, 396–402. 
+Sreenivasulu, N., Butardo, V. M., Misra, G., Cuevas, R. P., Anacleto, R., & Kishor, P. B. 
+(2015). Designing climate-resilient rice with ideal grain quality suited for high- 
+temperature stress. Journal of Experimental Botany, 66, 1737–1748. 
+synthase is an important determinant of amylose content in rice endosperm. 
+Functional Plant Biology, 29, 1121–1124. 
+Wakamatsu, K., Sasaki, O., Uezono, I., & Tanaka, A. (2007). Effects of high air 
+temperature during the ripening period on the grain quality of rice in warm regions 
+of Japan. Japanese Journal of Crop Science, 76, 71–78. 
+Wu, D. X., Shu, Q. Y., & Xia, Y. W. (2001). Assisted-selection for early Indica rice with 
+good eating quality by RVA profile. Acta Agronomica Sinica, 27, 165–172. 
+Xiong, R. Y., Xie, J. X., Chen, L. M., Yang, T. T., Tan, X. M., Zhou, Y. J., … Zeng, Y. H. 
+(2021). Water irrigation management affects starch structure and physicochemical 
+properties of indica rice with different grain quality. Food Chemistry, 347, 129045. 
+
+Umemoto, T., & Terashima, K. (2002). Research note: Activity of granule-bound starch 
+
+Yamakawa, H., Hirose, T., Kuroda, M., & Yamaguchi, T. (2007). Comprehensive 
+
+Yao, D. P., Wu, J., Luo, Q. H., Li, J. W., Zhuang, W., Xiao, G., … Bai, B. (2020). Influence 
+
+expression profiling of rice grain filling-related genes under high temperature using 
+DNA microarray. Plant Physiology, 144, 258–277. 
+Yang, Z. M., Wang, W. J., & Zhou, Z. Q. (2003). Principal component analysis for quality 
+characters of 5 varieties of rice which are planted in 8 seasons. Journal of 
+Biomathematics, 18, 491–496. 
+Yano, K., Morinaka, Y., Wang, F., Huang, P., Takehara, S., Hirai, T., … Matsuoka, M. 
+(2019). GWAS with principal component analysis identifies a gene comprehensively 
+controlling rice architecture. Proceedings of the National Academy of Sciences of the 
+United States of America, 116, 21262–21267. 
+Yan, S. H., Wang, Z. L., Yin, Y. P., Li, W. Y., Liang, T. B., Li, Y., … Dai, Z. M. (2008). Effect 
+of high temperature during grain filling on starch accumulation, starch granule 
+distribution, and activities of related enzymes in wheat grains. Acta Agronomica 
+Sinica, 34, 1092–1096. 
+of high natural field temperature during grain filling stage on the morphological 
+structure and physicochemical properties of rice (Oryza sativa L.) starch. Food 
+Chemistry, 310, 125817.1–125817.7. 
+Zeng, D. L., Tian, Z. X., Rao, Y. C., Dong, G. J., Yang, Y. L., Huang, L. C., … Qian, Q. 
+(2017). Rational design of high-yield and superior-quality rice. Nature Plants, 3, 
+17031.1–17031.5. 
+Characterization of grain quality and starch fine structure of two Japonica rice 
+(Oryza sativa L.) cultivars with good sensory properties at different temperatures 
+during the filling stage. Journal of Agricultural and Food Chemistry, 64, 4048–4057. 
+Zhong, L. J., Cheng, F. M., Wen, X., Sun, Z. X., & Zhang, G. P. (2005). The deterioration of 
+eating and cooking quality caused by high temperature during grain filling in early- 
+season indica rice cultivars. Journal of Agronomy and Crop Science, 191, 218–225. 
+Zhu, D. W., Qian, Z. H., Wei, H. Y., Guo, B. W., Xu, K., Dai, Q. G., et al. (2019). The effects 
+of field pre-harvest sprouting on the morphological structure and physicochemical 
+properties of rice (Oryza sativa L.) starch. Food Chemistry, 278, 10–16. 
+
+Zhang, C. Q., Zhou, L. H., Zhu, Z. B., Lu, H., Zhou, X. Z., Qian, Y. T., … Liu, Q. Q. (2016). 
+
+LWT148(2021)1118049

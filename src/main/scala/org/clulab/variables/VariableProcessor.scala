@@ -1,9 +1,8 @@
 package org.clulab.variables
-
 import java.io.File
 import org.clulab.dynet.Utils
-import org.clulab.odin.{ExtractorEngine, Mention}
-import org.clulab.processors.Document
+import org.clulab.odin.{EventMention, ExtractorEngine, Mention}
+import org.clulab.processors.{Document, Processor}
 import org.clulab.processors.clu.CluProcessor
 import org.clulab.sequences.LexiconNER
 import org.clulab.utils.FileUtils
@@ -18,7 +17,9 @@ class VariableProcessor(val processor: CluProcessor, val extractor: ExtractorEng
     new VariableProcessor(newProcessor, newExtractorEngine)
   }
 
-  def parse(text: String): (Document, Seq[Mention]) = {
+
+class VariableProcessor(val processor: Processor, val extractor: ExtractorEngine) {
+  def parse(text: String): (Document, Seq[Mention],Seq[EventMention],Seq[EntityDistFreq]) = {
 
     // pre-processing
     val doc = processor.annotate(text, keepText = false)
@@ -26,7 +27,10 @@ class VariableProcessor(val processor: CluProcessor, val extractor: ExtractorEng
     // extract mentions from annotated document
     val mentions = extractor.extractFrom(doc).sortBy(m => (m.sentence, m.getClass.getSimpleName))
 
-    (doc, mentions)
+    //get histogram of all entities:
+    val ce = EntityHistogramExtractor()
+    val (allEventMentions, histogram) = ce.extractHistogramEventMentions(doc, mentions)
+    (doc, mentions, allEventMentions, histogram)
   }
 }
 

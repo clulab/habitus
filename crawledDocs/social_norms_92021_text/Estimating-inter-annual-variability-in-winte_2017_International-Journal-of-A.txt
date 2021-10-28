@@ -1,0 +1,1751 @@
+International  Journal  of  Applied  Earth  Observation  and  Geoinformation  57  (2017)  190–201
+
+International
+
+ 
+
+Observation
+
+and
+
+ 
+
+Contents  lists  available  at  ScienceDirect
+Earth
+
+Applied
+
+Journal
+
+of
+
+ 
+
+ 
+
+ 
+
+ 
+
+Geoinformation
+
+j o  u r  n a l  h o m e  p  a g e :  w w w . e l s e v i e r . c o m / l o c a t e /  j a g
+
+Estimating   inter-annual   variability   in   winter   wheat   sowing   dates
+from   satellite   time   series   in   Camargue,   France
+Giacinto   Manfron a,∗,   Sylvestre   Delmotte b,   Lorenzo   Busetto a,   Laure   Hossard b,
+Luigi   Ranghetti a,   Pietro   Alessandro   Brivio a,   Mirco   Boschetti a
+a IREA  CNR,  Institute  for  Electromagnetic  Sensing  of  the  Environment,  Italian  National  Research  Council,  Via  Corti  12,  Milan,  Italy
+b INRA  UMR0951  Innovation,  French  National  Institute  for  Agricultural  Research,  2  Place  Pierre  Viala,  34060  Montpellier  Cedex  2,  France
+
+a
+
+ 
+
+r
+
+ 
+
+t
+
+ 
+
+i
+
+ 
+
+c
+
+ 
+
+l
+
+ 
+
+e
+
+ 
+
+i
+
+ 
+
+n
+
+ 
+
+f
+
+ 
+
+o
+
+a
+
+ 
+
+b
+
+ 
+
+s
+
+ 
+
+t
+
+ 
+
+r
+
+ 
+
+a
+
+ 
+
+c
+
+ 
+
+t
+
+Article  history:
+Received  26  May   2016
+Received  in  revised  form  7  October  2016
+Accepted  4  January  2017
+Available  online  10  January  2017
+
+Keywords:
+Durum  wheat
+Seasonal  distribution
+MODIS
+Time  series  analyses
+Weather  conditions
+Preceding  crop
+
+Crop   simulation   models   are   commonly   used   to  forecast   the   performance   of   cropping   systems   under   dif-
+ferent   hypotheses   of   change.   Their   use   on   a  regional   scale   is  generally   constrained,   however,   by   a   lack
+of   information   on  the   spatial   and   temporal   variability   of   environment-related   input   variables   (e.g.,   soil)
+and   agricultural   practices   (e.g.,   sowing   dates)   that   inﬂuence   crop   yields.   Satellite   remote   sensing   data
+can   shed   light   on   such   variability   by   providing   timely   information   on   crop   dynamics   and   conditions   over
+large   areas.   This   paper   proposes   a  method   for   analyzing   time   series   of   MODIS   satellite   data   in   order   to
+estimate   the  inter-annual   variability   of   winter   wheat   sowing   dates.   A   rule-based   method   was  developed
+to  automatically   identify   a  reliable   sample   of  winter   wheat   ﬁeld   time   series,   and   to   infer   the  correspond-
+ing   sowing   dates.   The   method   was   designed   for   a  case   study   in   the  Camargue   region   (France),   where
+winter   wheat   is  characterized   by   vernalization,   as  in   other   temperate   regions.   The   detection   criteria
+were   chosen   on   the   grounds   of   agronomic   expertise   and   by   analyzing   high-conﬁdence   time-series   veg-
+etation  index   proﬁles   for   winter   wheat.   This   automatic   method   identiﬁed   the   target   crop   on   more   than
+56%   (four-year   average)   of   the   cultivated   areas,   with   low   commission   errors   (11%).   It  also   captured   the
+±16   days   in   46%   and   66%   of   cases,   respectively.
+seasonal   variability   in  sowing   dates   with   errors   of  
+Extending   the  analysis   to  the   years   2002–2012   showed   that  sowing   in   the   Camargue   was   usually   done
+on   or   around   November   1st   (±4   days).   Comparing   inter-annual   sowing   date   variability   with   the   main
+local   agro-climatic   drivers   showed   that   the   type   of   preceding   crop   and  the   weather   conditions   during
+the   summer   season   before   the   wheat   sowing   had  a  prominent   role   in   inﬂuencing   winter   wheat   sowing
+dates.
+
+±8   and  
+
+©   2017   Elsevier   B.V.   All   rights   reserved.
+
+1.  Introduction
+
+The  management  of  agricultural  systems  in  European  regions
+varies  considerably  in  space  and  time  due  to  differences  in  envi-
+ronmental  conditions  (e.g.,  pedo-climatic  conditions),  available
+technologies  (e.g.,  crop  varieties),  agricultural  policies  (e.g.  subsi-
+dies,  environmental  regulations),  and  market  prices  (Bakker  et  al.,
+2005;  Dury  et  al.,  2012;  Pettorelli  et  al.,  2005).  Monitoring  and
+understanding  the  diversity  and  dynamics  of  agricultural  systems
+on  a  regional  scale  is  crucial  to  support  their  evolution  towards  a
+more  sustainable  future  (Zheng  et  al.,  2012).
+
+Various  tools  and  approaches  can  be  adopted  to  monitor  agri-
+cultural  systems  and  support  their  adaptation  (Basso  et  al.,  2013),
+
+∗ Corresponding  author.
+E-mail  address:  manfron.g@irea.cnr.it  (G.  Manfron).
+
+http://dx.doi.org/10.1016/j.jag.2017.01.001
+0303-2434/©  2017  Elsevier  B.V.  All  rights  reserved.
+
+including  crop  simulation  models,  which  are  commonly  used  to
+understand  the  current  performance  of  cropping  systems,  and  to
+predict  future  trends  under  different  hypotheses  of  change  (Soltani
+et  al.,  2016).  These  hypotheses  may   relate  to:  (1)  the  development
+and  adoption  of  new  crop  varieties  more  resistant  to  diseases  or
+thermal  stresses,  or  hybrids,  for  instance  (Bregaglio  and  Donatelli,
+2015;  Webber  et  al.,  2016);  (2)  new  cropping  systems,  such  as  direct
+seeding,  intercropping,  or  agroforestry  (Khaledian  et  al.,  2009;  Miao
+et  al.,  2016;  van  der  Werf  et  al.,  2007);  and  (3)  the  impact  of  climate
+change  on  cropping  systems,  and  consequent  adaptation  strategies,
+such  as  changing  the  sowing  dates  (Holzkämper  et  al.,  2015;  Nendel
+et  al.,  2014).
+
+When  simulating  the  future  of  cropping  systems,  particularly  on
+a  regional  scale,  a  key  issue  concerns  the  availability  of  appropriate
+information  on  crucial  crop  cultivation  variables  to  be  provided  as
+input  in  crop  models  (Moulin  et  al.,  1998;  Therond  et  al.,  2011;
+Yuping  et  al.,  2008).  Retrieving  details  on  crop  management  is
+
+G.  Manfron  et  al.  /  International  Journal  of  Applied  Earth  Observation  and  Geoinformation  57  (2017)  190–201 
+
+191
+
+often  challenging  (Clavel  et  al.,  2011;  Jiang  et  al.,  2014)  because
+they  vary  considerably  within  and  between  regions,  and  year  by
+year  (Therond  et  al.,  2011;  Vyas  et  al.,  2013;  Yuping  et  al.,  2008).
+Among  the  possible  sources  of  information,  censuses  conducted  by
+governmental  agencies  or  regional  institutions  provide  aggregated
+data  that  may   not  be  detailed  enough  for  crop  modelling  purposes
+(Grassini  et  al.,  2015).  Data  coming  from  interviews  with  farmers
+are  more  complete,  but  limited  in  number  and  related  to  a  given
+year,  so  they  are  not  always  sufﬁciently  representative  of  the  spatial
+and  temporal  diversity  of  a  region  (Chen  et  al.,  2002).  The  sow-
+ing  date  is  an  essential  information  to  the  accuracy  of  simulations
+obtained  with  crop  models  (Folberth  et  al.,  2012;  Van  Wart  et  al.,
+2015).  For  most  crops,  the  sowing  date  is  crucial  to  explain  crop  per-
+formance  variables,  such  as  yield  (Delmotte  et  al.,  2011;  Kogan  et  al.,
+2013).  Sowing  date  variability  can  span  several  months  for  some
+plant  species,  depending  on  the  inter-annual  climate  variability  in
+the  region  and  on  local  agricultural  practices.
+
+In  this  setting,  analyzing  long-term  time  series  of  satellite
+images  is  an  efﬁcient  way  to  elucidate  inter-  and  intra-annual  sow-
+ing  date  variability  (Bradley  et  al.,  2007;  Guyet  and  Nicolas,  2015).
+Earth  Observation  satellite  data  archives  can  be  used  to  estimate
+this  variable  as  they  provide  regular  and  synoptic  information  on
+crop  characteristics  (Justice  et  al.,  2002;  Kumar  and  Monteith,  1981;
+Rembold  et  al.,  2013).  In  particular,  time  series  of  spectral  vegeta-
+tion  indexes  (VIs),  such  as  the  Enhanced  Vegetation  Index  (EVI)
+(Huete  et  al.,  2002),  can  be  used  to  characterize  vegetation  dynam-
+ics  and  retrieve  information  on  key  phenological  stages  by  various
+means,  such  as  thresholding,  curve  ﬁtting,  derivatives’  analysis,  etc.
+(Curnel  and  Oger,  2007).  This  approach  was  ﬁrst  used  to  moni-
+tor  natural  ecosystems  and  is  often  termed  land  surface  phenology
+(LSP)  (Ganguly  et  al.,  2010).
+
+Many  studies  have  focused  on  estimating  the  timing  of  crop
+phenological  stages  like  emergence,  ﬂowering  or  senescence,  for
+example  (e.g.  Sakamoto  et  al.,  2005;  Boschetti  et  al.,  2009;  Manfron
+et  al.,  2012;  Pan  et  al.,  2015).  In  agricultural  applications,  a  fur-
+ther  and  more  challenging  step  is  to  use  the  same  approach  to
+investigte  more  speciﬁc  information  about  farming  practices.  For
+instance,  agricultural  ﬂooding  and  the  duration  of  rice  paddy  ﬂood-
+ing  were  investigated  by  Sakamoto  et  al.  (2007)  and  by  Ranghetti
+et  al.  (2016),  while  crop  management  practices  such  as  forage  cut-
+ting  were  examined  by  Halabuk  et  al.  (2015).
+
+As  claimed  by  (Jin  et  al.  (2016)  it  is  generally  accepted  that  this  is
+virtually  impossible  to  detect  sowing  dates  on  the  basis  of  remote
+sensing  data  alone  as  there  is  a  period  after  crop  sowing  and  before
+crop  emergence  in  which  the  crop  cannot  be  detected  with  remote
+sensing.  Sowing  dates  must  therefore  be  inferred  from  satellite  data
+on  the  basis  of  crop-  and  region-speciﬁc  assumptions.  Successful
+applications  can  be  found  for  rice  sown/transplanted  in  ﬂooded
+ﬁelds  because  the  presence  of  the  water  prior  to  any  vegetative
+growth  can  be  detected  on  satellite  images  (Sakamoto  et  al.,  2005;
+Boschetti  et  al.,  2015b).
+
+For  other  crops,  previous  studies  often  focused  on  identifying
+the  so-called  “green-up”  date  (i.e.,  coinciding  with  the  earliest  reli-
+able  evidence  of  vegetation  on  satellite  images),  from  which  sowing
+dates  could  be  inferred  using  various  methods.  In  an  application  for
+monitoring  wheat  in  northern  India,  Lobell  et  al.  (2013)  assumed
+that  green-up  coincided  with  crop  emergence  and  calculated  sow-
+ing  dates  by  going  back  a  ﬁxed  time  (three  weeks)  from  this  date.
+Green-up  was  established  as  the  point  where  the  curve  ﬁtted  to
+the  VIs  reached  10%  of  its  maximum  amplitude  for  the  year  in
+question.  A  similar  approach  was  taken  by  Vyas  et  al.  (2013)  in
+the  same  geographical  area,  exploiting  daily  normalized  difference
+VI  (NDVI)  produced  by  the  Indian  geostationary  satellite  INSAT  3A
+CCD.  Green-up  was  identiﬁed  using  a  threshold  method  and  the
+sowing  date  was  set  at  7  days  prior  to  green-up.  These  methods
+proved  efﬁcient  for  the  subtropical  areas  of  northern  India,  where
+
+wheat  is  sown  between  October  and  November,  then  undergoes  a
+rapid,  monotonic  increase  in  biomass  up  to  the  ﬂowering  phase,
+and  the  total  growing  period  lasts  from  100  to  170  days.
+
+In  temperate  climates,  winter  wheat  is  sown  in  autumn  and
+takes  from  180  to  300  days  to  mature  (Asseng  et  al.,  2012).  After
+emerging,  winter  wheat  undergoes  a  tillering  stage,  then  requires
+a  period  of  cold  for  up  to  90  days  (until  the  end  of  winter),  dur-
+ing  which  it  remains  dormant.  This  is  followed  by  a  rapid  stem
+elongation  and  subsequent  plant  growth.  Hence  the  “double  hump”
+pattern  observed  in  winter  wheat  time  series  by  Pan  et  al.  (2012)
+and  by  Chu  et  al.  (2016),  makes  it  rather  difﬁcult  to  use  the  previ-
+ously  mentioned  solutions  based  on  identifying  green-up  and  then
+backtracking  a  ﬁxed  number  of  days  to  estimate  the  sowing  date.
+The  green-up  typically  detectable  from  coarse-resolution  satellite
+data  relates  to  the  post-dormancy  vegetative  phase,  and  the  dura-
+tion  of  the  dormancy  period  varies  both  spatially  and  temporally,
+depending  on  crop  variety,  for  instance,  and  winter  weather  con-
+ditions.
+
+Jin  et  al.  (2016)  analyzed  winter  wheat  in  Shanxi  province
+(China),  based  on  images  with  a  30  m  resolution  acquired  every  two
+days  by  the  HJ-1  a/b  multispectral  sensor.  They  could  identify  two
+green-up  times,  one  after  sowing  (before  dormancy),  and  another
+more  robust  one  preceding  the  head  development  phase.  They  were
+thus  able  to  estimate  winter  wheat  sowing  dates  by  applying  the
+relation  proposed  by  Lobell  et  al.  (2013)  to  the  ﬁrst  green-up  iden-
+tiﬁed.  This  was  made  possible  by  their  use  of  data  with  a  very  high
+spatial  and  temporal  resolution.  Such  data  are  not  readily  avail-
+able  worldwide  and  none  dating  back  long  enough  for  use  it  in
+medium-  to  long-term  analyses.  The  feasibility  of  reliably  detecting
+the  weaker  green-up  preceding  dormancy  is  however  not  demon-
+strated,  particularly  when  moderate-resolution  satellite  data  are
+used.
+
+Employing  the  same  satellite  data,  Pan  et  al.  (2015)  used  met-
+rics  derived  from  NDVI  signals  to  map   the  phenological  stages  of
+winter  and  summer  crops  in  China.  These  authors  estimated  only
+the  green-up  after  dormancy  for  winter  wheat,  without  retrieving
+sowing  dates.
+
+Based  on  this  literature  review,  we  decided  to  develop  a  spe-
+ciﬁc  algorithm  to  estimate  winter  wheat  sowing  dates  in  temperate
+climates  from  moderate-resolution  satellite  data.  The  study  was
+conducted  in  the  Camargue  region  (France).  Durum  wheat  sowing
+conditions  vary  greatly  in  this  region,  inﬂuenced  by  environmental
+conditions,  agricultural  practices  and  subsidies,  and  sowing  may
+take  place  in  appropriate  conditions  over  a  time  frame  of  about  ten
+weeks  (Mouret  J.C.,  pers.  comm.,  Dec.  5,  2015).  No  data  are  currently
+available  on  the  local  intra-  and  inter-annual  variability  of  win-
+ter  wheat  sowing  dates,  but  this  variability  needs  to  be  analyzed,
+and  the  factors  inﬂuencing  the  timing  of  this  operation  need  to  be
+clariﬁed  in  order  to  improve  the  crop  models  used  to  character-
+ize  the  present  conditions  and  simulate  future  scenarios  (including
+e.g.,  climate  change).  In  this  context,  the  aims  of  the  present  study
+are  twofold:  (1)  developing  an  approach  based  on  remote  sensing
+capable  of  identifying  a  robust  sample  of  areas  where  winter  wheat
+is  grown  from  MODIS  time  series  with  a  250  m  spatial  resolution,
+and  estimating  the  corresponding  sowing  dates;  (2)  analyzing  the
+inter-annual  variability  of  winter  wheat  sowing  dates  in  the  Camar-
+gue  over  the  years  2002–2012  in  relation  to  meteorological  and
+anthropic  drivers.
+
+2.  Materials  and  methods
+
+The  study  involved  three  main  phases  to  develop,  apply  and
+validate  the  proposed  method  (Fig.  1).  MODIS  data  were  ﬁrst
+preprocessed  and  representative  temporal  crop  signatures  were
+extracted  by  exploiting  reference  information  (Sections  2.2.1  and
+
+192 
+
+G.  Manfron  et  al.  /  International  Journal  of  Applied  Earth  Observation  and  Geoinformation  57  (2017)  190–201
+
+Fig.  1.  Flow  chart  representing  the  key  steps  in  the  method  described  and  the  datasets  involved  in  each  phase.
+
+2.2.2).  A  rule-based  algorithm  for  detecting  a  robust  sample  of  areas
+where  winter  wheat  is  grown,  and  identifying  the  corresponding
+sowing  dates  was  developed,  applied  to  the  years  2002–2012  (Sec-
+tion  2.2.3)  and  validated  (Section  2.3).  The  inter-annual  variability
+of  the  sowing  dates  thus  estimated  was  then  analyzed  in  relation
+to  meteorological  data  and  main  farming  practices  (Section  2.4).
+
+2.1.  Study  area
+
+The  Camargue  is  a  region  in  south-eastern  France,  at  the
+mouth  of  the  Rhône  River.  The  Natural  Regional  Park  of  Camar-
+gue  (PNRC:  Parc  Naturel  Régional  de  Camargue  in  French)   is  a
+protected  area  covering  about  108,000  ha  and  including  almost
+all  the  land  between  the  two  branches  of  the  Rhône  (Grande
+Camargue),  plus  some  areas  further  east  and  west  (Fig.  2).  Based
+on  the  PNRC  land  use  maps,  which  also  provide  in  vector  for-
+mat   information  on  individual  crops  on  a  scale  of  1:5000  (http://
+www.pnrpaca.org/,  last  accessed  September  2016),  the  areas  being
+cultivated  in  2006  and  2011  accounted  for  33%  and  29%  of  the
+park’s  surface,  respectively  (Fig.  2A  and  Fig.  2B).  The  two   main
+crops  are:  rice  (Oryza  sativa  L.),  covering  36%  (11,684  ha)  and
+56%  (16,037  ha)  of  the  area  under  cultivation  in  2006  and  2011,
+respectively;  and  winter  wheat  (Triticum  durum  L.),  occupying  22%
+(7350  ha),  and  10%  (2927  ha)  of  the  cultivated  area  in  2006  and
+2011,  respectively.  The  average  size  of  the  winter  wheat  ﬁelds
+
+was  2.73  ha  (min  =  0.21  ha;  max   =  30.26  ha;  median  =  2.26  ha)  in
+2006,  and  2.83  ha  (min  =  0.38  ha;  max   =  23.69  ha;  median  =  2.31  ha)
+in  2011.
+
+While  rice  is  sown  within  a  narrow  time  frame  (usually  from
+the  end  of  April  to  the  middle  of  May),  the  winter  wheat  sowing
+dates  span  a  longer  period,  from  late  September  to  early  December.
+The  timing  depends  largely  on  climatic  and  anthropic  factors:  it
+rains  more  frequently  in  autumn,  and  this  can  delay  sowing;  and
+winter  wheat  is  usually  less  remunerable  than  rice  in  terms  of  mar-
+ket  price  and/or  common  agricultural  policy  (CAP)  subsidies,  so
+farmers  tend  to  give  priority  to  their  rice  farming  schedule  (e.g.,
+postponing  their  wheat  sowing  if  they  need  to  delay  harvesting
+their  rice  crop)  (Mouret  J.C.,  pers.  comm.,  Dec.  5,  2015).
+
+2.2.  Data  processing
+
+2.2.1.  MODIS  data  pre-processing
+
+MOD13Q1  (MODIS/Terra)  and  MYD13Q1  (MODIS/Aqua)  v.005
+Level-3  composite  products  with  a  nominal  250  m  spatial  reso-
+lution  (the  pixel  size  at  the  nadir  is  231.65  m,   corresponding  to
+an  area  of  5.37  ha)  and  sinusoidal  projection  (Didan,  2015)  were
+used  to  identify  winter  wheat  growing  areas  and  to  estimate  when
+they  were  sown.  These  products  are  based  on  a  maximum  value
+compositing  method  that  considers  a  time  span  of  16  days  and
+retrieves  the  best  observation  obtained  during  the  compositing
+
+G.  Manfron  et  al.  /  International  Journal  of  Applied  Earth  Observation  and  Geoinformation  57  (2017)  190–201 
+
+193
+
+Fig.  2.  Camargue,  France  (Europe):  cultivated  areas  according  to  the  Parc  Naturel  Régional  de  Camargue  (PNRC)  land  use  maps.  Main  crops  in  2006  (A),  and  2011  (B):  rice
+(green),  winter  wheat  (blue),  and  other  crops  (orange).  Bodies  of  water,  non-agricultural  areas,  and  areas  of  no  interest  are  colored  black,  white  and  grey,  respectively.  (For
+interpretation  of  the  references  to  colour  in  this  ﬁgure  legend,  the  reader  is  referred  to  the  web  version  of  this  article.)
+
+period  (Solano  et  al.,  2010).  They  are  provided  with  an  eight-day
+nominal  time  shift  between  TERRA  and  AQUA,  and  combining
+them  enables  VI  time  series  to  be  constructed  with  a  nominal
+eight-day  temporal  frequency.  In  particular,  a  time  series  of  484
+MODIS  MOD/MYD  13Q1  images  covering  the  period  2002–2013,
+from  DOY  177  in  2002  (end  of  June)  to  DOY  361  in  2013  (end
+of  December)  was  downloaded  for  pre-processing  from  the  NASA
+Land  Processes  Distributed  Active  Archive  Center  (LP  DAAC)  at
+the  USGS  Earth  Resources  Observation  and  Science  (EROS)  Cen-
+ter  (https://lpdaac.usgs.gov/),  using  the  MODIStsp  package  (Busetto
+and  Ranghetti,  2016)  of  the  R  software  (R  Core  Team,  2016).  The  pro-
+posed  approach  is  based  on  the  analysis  of  MODIS  EVI  time  series
+(Eq.  (1)).
+
+EVI
+
+ 
+
+=
+  2.0 
+
+∗
+
+(cid:2)NIR
+
+ 
+
++
+  6.0 
+
+−
+(cid:2)Red
+−
+(cid:2)Red
+  7.5 
+
+(cid:2)NIR
+∗
+
+ 
+
+ 
+
+ 
+
+ 
+
+∗
+
+ 
+
+(cid:2)Blue
+
+ 
+
++
+  1
+
+(1)
+
+The  EVI  was  chosen  for  its  well-known  suitability  for  monitor-
+ing  vegetation  dynamics  (e.g.,  Dubovyk  et  al.,  2015;  Sakamoto  et  al.,
+2007,  2005;  Son  et  al.,  2013).  Information  on  EVI  were  extracted
+from  the  MOD/MYD  13Q1  product  and  stacked  to  create  a  multi-
+temporal  array.  Information  was  also  obtained  on  EVI  quality  ﬂags,
+reﬂectance  in  the  blue  band,  the  DOY  of  acquisition,  and  pixel
+−
+quality.  A  weighted  Savitzky-Golay  smoothing  ﬁlter  (SAV-GOL 
+Savitzky  and  Golay,  1964)  was  then  applied  to  the  EVI  time  series
+to  remove  residual  noise  from  the  data  (Pettorelli  et  al.,  2005).  The
+SAV-GOL  ﬁlter  has  been  widely  used  for  smoothing  time  series  of
+MODIS-derived  VIs  (Boschetti  et  al.,  2015a,  2015b;  Chen  et  al.,  2004;
+Geng  et  al.,  2014;  Manfron  et  al.,  2012;  Ren  et  al.,  2008;  White  et  al.,
+2009).
+
+2.2.2.  EVI  temporal  crop  signature  extraction
+
+The  available  PNRC  land  use  maps  were  used  to  identify  winter
+wheat  ﬁelds  in  the  MODIS  250  m  pixels  covering  the  study  area.
+Geographic  Information  System  (GIS)  analyses  were  run  to  extract
+polygons  corresponding  to  agricultural  areas,  and  then  calculate
+the  fractions  covered  by  speciﬁc  crops  in  each  MODIS  pixel  for  the
+years  2006  and  2011.  MODIS  pixels  with  at  least  80%  of  their  sur-
+face  covered  by  a  particular  crop  (rice,  winter  wheat,  etc.)  were
+considered  homogeneous.  These  were  used  to  calculate  statistical
+descriptors  (median  and  standard  deviation)  for  each  date  in  the
+EVI  time  series,  and  thus  obtain  representative  temporal  signatures
+for  the  various  crops.  Our  aim  was  to  identify  the  more  important
+descriptors  for  the  purpose  of  distinguishing  winter  wheat  from
+the  other  crops,  and  estimating  when  it  was  sown.
+
+Fig.  3.  Typical  EVI  temporal  signature  for  winter  wheat  in  the  Camargue.  The  graph
+shows  median  values  (red  line)  and  the  interquartile  range  (red  shadow)  for  479
+winter  wheat  time  series  in  2006  and  2011,  considering  MODIS  pixels  with  a  frac-
+tional  cover  exceeding  80%.  (For  interpretation  of  the  references  to  colour  in  this
+ﬁgure  legend,  the  reader  is  referred  to  the  web  version  of  this  article.)
+
+A  preliminary  analysis  (see  Supplementary  Material  S1)  showed
+that  the  small  green-up  identiﬁed  by  Jin  et  al.  (2016)  using  high-
+resolution  data,  which  coincided  with  the  emergence-tillering
+period  (a  few  weeks  after  sowing),  could  not  be  pointed  reliably  on
+the  MODIS  time  series.  The  green-up  automatically  identiﬁed  on
+the  strength  of  a  10%  increase  in  the  EVI  signal  (Lobell  et  al.,  2013;
+Vyas  et  al.,  2013;  Dong  et  al.,  2016)  was   mainly  related  to  the  faster
+growth  of  the  vegetation  after  dormancy,  in  spring  (see  Supplemen-
+tary  material  S1).  It  is  therefore  not  easy  to  compute  the  sowing
+date  by  going  back  a  given  number  of  days  from  the  green-up  date
+because  the  duration  of  the  dormancy  period  depends  largely  on
+winter  temperatures  (vernalization  requires  a  certain  number  of
+chilling  days).  We   thus  developed  and  tested  a  rule-based  approach
+for  estimating  sowing  dates  that  can  cope  with:  i)  the  peculiarity  of
+the  winter  wheat  signal  in  temperate  areas  (long  interval  between
+sowing  and  green-up);  and  ii)  the  speciﬁc  characteristics  of  the
+case  study  area  (fragmented  agricultural  environment)  in  relation
+to  moderate-resolution  satellite  data.
+
+2.2.3.  Algorithm  development  and  implementation
+
+On  the  basis  of  expert  agronomic  knowledge,  a  set  of  rules  for
+automatically  detecting  winter  wheat  growing  areas  and  estimat-
+ing  sowing  dates  was  obtained  by  analyzing  the  crop’s  temporal
+signatures  (Fig.  3  and  Supplementary  Material  S2).  The  main  fea-
+tures  of  the  phenological  cycle  of  winter  wheat  in  the  Camargue
+can  be  summarized  as  follows:
+
+194 
+
+G.  Manfron  et  al.  /  International  Journal  of  Applied  Earth  Observation  and  Geoinformation  57  (2017)  190–201
+
+is 
+
+• the  seeding  period 
+in  Autumn  (late  September  to  early
+December),  followed  by  crop  emergence  after  6-10  days;
+• the  plant  reaches  the  three-leaf  stage  after  a  vegetative  period  of
+2–3  weeks,  then  the  tillering  period  begins,  with  a  long  ensuing
+period  of  dormancy  in  winter  (December-February,  ending  when
+the  need  for  chilling  has  been  met);
+• the  tillering  phase  is  completed  at  the  end  of  the  winter,  and
+followed  by  a  green-up  phase  (February–March),  during  which
+the  plant  rapidly  increases  in  biomass  and  leaf  area;
+• the  crop  heading  period,  when  plants  reach  their  maximum  Leaf
+Area  Index,  and  the  subsequent  reproductive  phase  take  place
+between  April  and  May;
+• grain  ﬁlling  and  ripening,  leading  to  the  plant’s  drying  and  senes-
+cence,  generally  occur  in  late  June.
+
+The  detection  of  some  of  these  distinctive  features  in  EVI  time
+series  (Fig.  3)  enables  winter  wheat  to  be  distinguished  from  other
+crops  (Huang  and  Lu,  2009;  Lu  et  al.,  2013;  Pan  et  al.,  2012)  (see
+Supplementary  Material  S2).  The  most  signiﬁcant  features  for  this
+purpose  are  crop  heading  in  late  spring,  and  the  duration  of  the  crop
+cycle.  In  fact,  heading  generally  occurs  in  May   for  winter  wheat,  and
+in  July  (nearly  two  months  later)  for  summer  crops.  Winter  wheat
+−
+also  has  a  much  longer  growing  cycle 
+  lasting  up  to  8  months,  from
+−
+autumn  to  late  spring 
+  than  summer  crops  (though  it  is  shorter
+than  for  perennial  crops  like  alfalfa).  Bare-soil  conditions  due  to
+ploughing  in  late  September  to  early  October  were  also  judged  to
+be  an  important  feature  to  consider  in  estimating  the  sowing  date.
+The  above-mentioned  features  were  formalized  in  rules  and
+implemented  in  an  algorithm  to  automatically  generate,  from
+MODIS  time  series,  raster  maps  of  winter  wheat  ﬁelds  and  sowing
+dates.
+
+It  is  widely  accepted  in  the  literature  that  speciﬁc  local  min-
+ima   (MIN)  and  maxima  (MAX)  points  in  a  time  series  respectively
+indicate  the  start  of  active  crop  growth  (Pan  et  al.,  2015;  Sakamoto
+et  al.,  2005)  and  of  the  crop  heading  period  (Atzberger  and  Rembold,
+2013;  Curnel  and  Oger,  2007).  A  pixel  was  thus  recognized  as  win-
+ter  wheat  if  its  time  series  featured  a  MAX   point  (crop  heading)  in
+the  second  quarter  of  the  year  associated  with  a  MIN   point  preced-
+ing  the  MAX   within  a  time  window  compliant  with  the  length  of  a
+winter  wheat  crop  cycle.
+
+In  particular,  a  MAX   point  was  assumed  to  correspond  to  crop
+
+heading  if  the  following  requirements  were  simultaneously  met:
+
+1.  crop  calendar:  the  MAX   occurs  in  the  second  quarter  of  the  year
+
+(early  April  to  late  June);
+
+2.  rapid  growth:  the  MAX   is  preceded  by  a  rapid  EVI  growth  typi-
+cal  of  the  vegetative  phase  (February–March),  identiﬁable  from
+the  presence  of  at  least  three  positive  derivatives  in  a  temporal
+window  of  40  days  (5  composites)  before  the  MAX;
+
+3.  senescence:  the  MAX   is  followed  by  a  relatively  fast  EVI  decrease
+typical  of  the  senescence  phase,  and  identiﬁable  from  the  pres-
+ence  of  at  least  three  negative  derivatives  in  a  temporal  window
+of  40  days  (5  composites)  after  the  MAX,  associated  with  a  drop
+of  at  least  33%  in  the  EVI  vis-à-vis  the  MAX   value;
+
+4.  high  biomass:  the  EVI  of  the  MAX   is  greater  than  0.42  (see  Sup-
+
+plementary  Material  S4).
+
+A  MIN   point  was  assumed  to  correspond  to  the  wheat  sowing
+period  (Pan  et  al.,  2015)  because  it  is  characterized  by  ﬁeld  prepara-
+tion,  i.e.  bare  soil  conditions  (ploughing)  indicated  by  a  low  EVI,  and
+crop  growth  after  sowing  corresponding  to  a  moderate  increase  in
+EVI.  The  identiﬁcation  of  a  suitable  MIN   was  based  on  the  following
+conditions:
+
+1.  crop  calendar:  the  MIN   point  occurs  in  a  temporal  window  at
+
+least  three  months  before  the  crop  heading  date  identiﬁed;
+
+2.  bare  soil  conditions:  the  MIN   has  an  EVI  lower  than  0.3,  indicative
+
+of  bare  soil  conditions  (Vyas  et  al.,  2013);
+
+3.  subsequent  crop  growth:  the  MIN   is  followed  by  the  presence
+of  at  least  three  positive  derivatives  in  a  temporal  window  of
+40  days  (5  composites).
+
+If  a  suitable  MIN   is  identiﬁed,  the  pixel  analyzed  is  then  assumed
+
+to  correspond  to  winter  wheat.
+
+Additional  rules  were  used  to  estimate  the  sowing  date  near  the
+MIN   identiﬁed  as  outlined  above.  The  procedure  involved  ﬁnding
+the  most  likely  sowing  date  within  a  time  window  ranging  between
+September  30th  (the  date  that  agronomists  consider  the  earliest
+possible  sowing  date  in  the  study  area)  and  140  days  before  the
+estimated  crop  heading  (MAX),  140  days  being  considered  by  the
+experts  the  shortest  possible  interval  between  sowing  and  heading
+for  winter  wheat  (Mouret  J.C.,  pers.  comm.,  Dec.  5,  2015).
+
+All  the  MIN   points  falling  within  this  period  are  checked  accord-
+ing  to  a  “ﬂatness”  criterion.  Previous  experiments  (data  not  shown)
+showed  that  “false”  sowing  dates  were  identiﬁed  in  line  with  ran-
+dom  minima  points  generated  as  a  result  of  residual  noise  in  the
+smoothed  EVI  time  series  obtained  for  periods  containing  several
+consecutive  low  EVI  values.  The  ﬂatness  criterion  is  formalized  by
+checking  the  4  EVI  values  centered  on  the  local  MIN   points  within
+the  sowing  dates  search  window.  A  MIN   point  surrounded  by  EVI
+values  of  similar  magnitude  (±5%)  is  identiﬁed  as  noise  and  dis-
+carded.  Once  these  points  have  been  detected  and  discarded,  the
+earliest  MIN   point  retained  is  considered  the  ﬁnal  estimate  of  the
+sowing  date.
+
+The  above-described  rule-based  algorithm  (implemented  in
+IDL-Interactive  Data  Language  v8.3)  was   applied  to  the  MODIS  time
+series  for  the  years  2002–2012  to  generate  annual  maps  of  wheat
+growing  areas  and  associated  sowing  dates.
+
+2.3.  Validation
+
+The  results  obtained  with  the  algorithm  (years  2002–2012)  were
+validated  by  comparing:  (1)  the  winter  wheat  raster  maps  obtained
+for  2003,  2006,  2009  and  2012  with  Landsat  data;  and  (2)  the  sow-
+ing  dates  estimated  in  2010,  2011,  2012  with  ground  reference
+data.
+
+2.3.1.  Landsat  validation  of  winter  wheat  growing  areas
+
+The  MODIS-derived  winter  wheat  growing  areas  were  validated
+against  independent  reference  data  obtained  from  a  visual  inter-
+pretation  of  Landsat  satellite  images  for  the  years  2003,  2006,
+2009  and  2012.  The  visual  interpretation  of  high-resolution  satellite
+images  is  a  widely  accepted  practice  in  remote  sensing,  especially
+when  in  situ  data  suitable  for  building  reference  datasets  are  lack-
+ing.  The  method  is  particularly  useful  when  applied  to  large  areas
+(from  regional  to  continental),  where  collecting  data  on  the  ground
+becomes  too  expensive  (Stroppiana  et  al.,  2015;  Chen  et  al.,  2002;
+Sun  et  al.,  2012;  Wulder  and  Franklin,  2012;  Zhao  et  al.,  2014).
+
+A  set  of  Landsat-7  ETM+  images  (spatial  resolution  of  30  m)   was
+therefore  used  to  build  an  independent  reference  dataset  for  valida-
+tion  purposes.  Judging  from  the  land  cover  information  provided  by
+the  PNRC,  winter  wheat  is  the  only  winter  crop  grown  in  the  study
+area,  so  Landsat  images  were  selected  in  the  most  suitable  periods
+for  distinguishing  it  from  summer  crops.  Two   Landsat  images  were
+selected  for  the  years  2003,  2006,  2009  and  2012,  one  obtained
+around  mid-April  (when  winter  wheat  is  nearing  its  seasonal  head-
+ing  and  summer  crops  are  only  just  starting  to  grow),  and  the  other
+in  the  second  half  of  July  (when  winter  wheat  is  harvested  and
+summer  crops  are  in  the  heading  phase)  (Table  1).
+
+G.  Manfron  et  al.  /  International  Journal  of  Applied  Earth  Observation  and  Geoinformation  57  (2017)  190–201 
+
+195
+
+Table   1
+List  of  Landsat-7  ETM+  images  used  to  build  the  reference  dataset  for  validating
+the   MODIS-derived  winter  wheat  growing  area  maps.  SLC  refers  to  the  Scan  Line
+Corrector  device  of  Landsat  7,  which  failed  on  May   31,  2003.
+
+ACQUISITION  DATE 
+
+DOY 
+
+SLC  status 
+
+April-22–2003 
+August-12–2003 
+April-14–2006 
+July-19–2006 
+April-22–2009
+August-28–2009
+April-14–2012 
+July-20–2012 
+
+112 
+224 
+104 
+200 
+112 
+240 
+105 
+201 
+
+On 
+Off 
+Off 
+Off 
+Off 
+Off 
+Off 
+Off 
+
+CLOUD
+COVER%
+
+2
+1
+0
+15
+2
+2
+18
+23
+
+Then  300  MODIS  pixels  were  randomly  chosen  in  the  study  area
+and  labelled  as  “winter  wheat”  or  “other  crops”  based  on  the  visual
+interpretation  of  the  Landsat  images.  Where  fragmented  condi-
+tions  were  detected  by  Landsat  at  MODIS  pixel  level,  the  pixel  was
+skipped.  The  random  selection  of  MODIS  pixels  was   then  repeated
+recursively,  for  the  four  years  considered  for  validation  purposes
+(2003,  2006,  2009,  and  2012),  if  fewer  than  50  MODIS  pixels  were
+labelled  as  winter  wheat.  The  ﬁnal  database  of  1200  labelled  MODIS
+pixels  was  used  as  the  reference  data  set  for  assessing  winter  wheat
+detection  performance  using  standard  validation  accuracy  met-
+rics  calculated  from  error  matrices  (Congalton,  1991;  Brivio  et  al.,
+2006):  overall  accuracy  (OA),  class  omission  and  commission  errors
+(OE,  CE),  and  Cohen’s  kappa  coefﬁcient  (K)  (Cohen,  1960).
+
+2.3.2.  Ground  reference  validation  of  sowing  dates
+
+The  reliability  of  the  sowing  dates  estimated  from  the  MODIS
+data  was  assessed  by  comparison  with  ﬁeld  information  on  agro-
+nomic  practices.  The  available  ﬁeld  survey  data  included  ﬁeld-scale
+winter  wheat  sowing  dates  for  three  different  farms,  which
+accounted  for  a  total  of  1334  ha,  corresponding  to  4.6%  of  the  area
+under  cultivation  in  2011  according  to  the  PNRC.  The  information
+concerned  83  winter  wheat  ﬁelds  (261  ha)  in  2011,  94  (343  ha)  in
+2012,  and  111  (363  ha)  in  2013.
+
+The  information  associated  with  the  different  ﬁelds  was   ﬁrst
+aggregated  at  the  spatial  resolution  of  MODIS  by  means  of  a  GIS
+spatial  averaging  procedure.  The  averaged  sowing  dates  were  then
+associated  with  the  time  of  the  nearest  MODIS  8-day  temporal  com-
+posite,  and  a  comparison  was  drawn  between  the  averaged  ﬁeld
+data  and  the  MODIS-estimated  sowing  dates  for  the  years  2010,
+2011  and  2012.  A  total  of  146  pixels  were  involved  in  this  compar-
+ison:  52  for  2010,  30  for  2011  and  64  for  2012.
+
+2.4.  Analysis  of  inter-annual  variability  in  sowing  dates
+
+The  results  obtained  with  the  algorithm  for  the  years  2002–2012
+were  analyzed  to:  (1)  describe  the  inter-annual  variability  in  sow-
+ing  dates;  and  (2)  link  this  variability  with  the  main  drivers
+inﬂuencing  farmers’  sowing  practices,  i.e.  weather  conditions  (rain-
+fall,  temperature)  and  preceding  crops.
+
+For  the  ﬁrst  point,  two  analyses  were  performed  to  investigate
+the  diversity/similarity  in  the  distribution  of  the  winter  wheat  sow-
+ing  dates  obtained  for  the  various  years.  First,  the  non-parametric
+Kolmogorov-Smirnov  test  (Young,  1977)  was  applied  to  each  pair
+of  years  considered  in  order  to  highlight  the  years  exhibiting  sig-
+niﬁcantly  different  distributions.  Then  a  more  qualitative  analysis
+was  conducted  to  compare  the  relative  earliness  and  skewness  of
+the  cumulative  annual  sowing  dates  (see  Supplementary  Material
+S3).
+
+Regarding  the  second  point,  our  analyses  were  based  on  daily
+measurements  obtained  by  the  weather  station  at  Fourques  from
+2002  to  2012.  The  inter-annual  variability  in  the  estimated  sowing
+dates  was  analyzed  ﬁrst  in  relation  to  rainfall  patterns,  then  in  rela-
+
+tion  to  temperatures  recorded  during  the  preceding  crop’s  growth
+season.  For  this  latter  analysis,  the  preceding  crop  was  identiﬁed
+as  wheat  (adopting  the  algorithm  described  here),  or  rice,  which  is
+the  only  summer  crop  to  precede  wheat  in  the  study  area.  The  rice
+ﬁelds  were  identiﬁed  by  applying  the  PhenoRice  algorithm  on  the
+MODIS  time  series  (Boschetti  et  al.,  2015a;  Manfron  et  al.,  2012).
+
+Finally,  a  signiﬁcant  relationship  was   sought  between  varia-
+tions  in  the  weather  conditions  during  the  rice-growing  season
+and  variations  in  the  winter  wheat  sowing  dates.  This  was   done
+by  characterizing  the  temperatures  recorded  during  rice  growth
+by  cumulating  the  mean  daily  temperatures  (from  May,  1st  to
+September,  30th)  for  each  year,  then  ﬁtting  linear  regression  mod-
+els  between  the  cumulative  temperatures  and  the  different  deciles
+of  the  distributions  of  the  MODIS-estimated  sowing  dates  for  the
+year  concerned.  The  signiﬁcance  of  the  explanatory  variable  (the
+cumulative  mean  temperature)  was   assessed  with  Student’s  statis-
+tical  tests.  Regression  analyses  were  run  separately  for  each  decile,
+and  for  areas  characterized  by  different  preceding  crops,  i.e.  win-
+ter  wheat  preceded  by  winter  wheat  (Wheat->  Wheat),  or  winter
+wheat  preceded  by  rice  (Rice-  >  Wheat).
+
+3.  Results
+
+3.1.  Accuracy  of  winter  wheat  ﬁeld  identiﬁcation  and  sowing
+dates
+
+The  outcome  of  our  validation  process  concerning  the  detection
+of  areas  where  winter  wheat  was  grown  is  shown  in  Table  2,  in  the
+form  of  error  matrices  for  the  years  2003,  2006,  2009  and  2012,  and
+for  all  four  years  together.  The  results  were  good,  with  annual  OA
+values  ranging  between  84%  (2006)  and  93%  (2009),  and  Cohen’s  K
+coefﬁcient  in  the  range  of  0.54  (2006)  to  0.76  (2009).  Concerning
+the  winter  wheat  class,  the  commission  error  ranged  between  3%
+and  19%  (mean  11%),  and  the  omission  error  between  28%  and  56%
+(mean  44%);  this  means  that,  on  average,  the  method  can  identify
+56%  of  winter  wheat  ﬁelds,  with  quite  low  misclassiﬁcation  rates.
+Fig.  4  shows  a  comparison  between  the  MODIS-derived  sowing
+dates  and  information  provided  by  farmers:  66%  of  the  esti-
+±
+mates  fell  within 
+  16  days  of  the  true  sowing  dates,  and  46%
+±
+within 
+  8  days  (Fig.  4A  and  B).  The  errors  were  centered  on  zero
+(Fig.  4B  and  C).  Fig.  4C  shows  the  distribution  of  the  residual  errors
+as  a  function  of  the  true  sowing  date.  Predictions  were  more  likely
+to  be  too  early  for  late  sowing  dates  (e.g.  from  November  25th  to
+December  19th),  and  too  late  for  early  sowings  (from  October  16th
+to  24th).  Overall,  the  method  estimated  the  sowing  dates  with  a
+mean  absolute  error  of  16.5  days,  and  a  root  mean  square  error  of
+22.05  days.
+
+3.2.  Analysis  of  inter-annual  variability
+
+The  analysis  conducted  on  the  years  2002–2012  showed  that,  on
+average,  winter  wheat  was   sown  on  November  1st,  with  50%  of  the
+estimated  sowing  dates  falling  within  a  25-day  interval  between
+October  16th  and  November  9th  (see  Supplementary  material  S2).
+Year-to-year  comparisons  drawn  with  the  Kolmogorov-Smirnov
+test  revealed  signiﬁcantly  different  distributions  of  winter  wheat
+estimated  sowing  date  (at  p  =  0.05)  for  almost  all  years,  the  excep-
+tions  (distributions  were  not  signiﬁcantly  different)  being  the  pairs
+2002–2009,  2002–2011,  2006–2009,  and  2009–2012  (Fig.  5,  and
+Table  S3.2  in  Supplementary  material  S3).  Qualitative  analyses
+using  logit  curves  showed  that  sowing  was   done  earlier  in  2003,
+2005  and  2008,  and  later  in  2007  and  2012,  and  also  that  the  sow-
+ing  period  was   more  concentrated  in  the  middle  of  the  possible
+time  window  (late  September  to  early  December)  in  2004,  2008
+and  2011  (See  Table  S3.3  and  Fig.  S3.1).
+
+196 
+
+G.  Manfron  et  al.  /  International  Journal  of  Applied  Earth  Observation  and  Geoinformation  57  (2017)  190–201
+
+Table  2
+Accuracy  matrix  obtained  by  comparing  the  reference  dataset  (based  on  a  visual  interpretation  of  Landsat  images)  with  the  winter  wheat  maps  based  on  MODIS  EVI  time
+series  analyses.  CE:  commission  error,  OE:  omission  error,  OA:  overall  accuracy,  K:  coefﬁcient  of  agreement.
+
+MODIS  ESTIMATION
+
+REFERENCE  DATASET 
+
+winter  wheat
+
+other 
+
+2003
+
+2006
+
+2009
+
+2012
+
+All
+
+winter  wheat
+
+other 
+
+winter  wheat 
+
+other 
+
+winter  wheat 
+
+other 
+
+winter  wheat
+
+other 
+
+winter  wheat 
+
+other 
+
+44 
+23 
+40 
+45 
+39 
+15 
+28 
+35 
+151 
+118 
+
+10 
+223 
+2 
+213 
+5 
+241 
+1 
+236 
+18 
+913 
+
+ACCURACY
+
+CE 
+
+19% 
+9% 
+5% 
+17% 
+11% 
+6% 
+3% 
+13% 
+11% 
+11% 
+
+OE 
+
+34%
+4%
+53%
+1%
+28%
+2%
+56%
+0%
+44%
+2%
+
+OA  
+
+89% 
+
+84% 
+
+93%
+
+88%
+
+89% 
+
+K
+
+0.66
+
+0.54
+
+0.76
+
+0.55
+
+0.62
+
+Fig.  4.  Comparison  between  true  winter  wheat  sowing  dates  and  MODIS-based  estimates  for  three  farms  in  the  years  2011,  2012  and  2013  (n  =  146).  (A)  Scatter  plot  between
+observed  and  estimated  dates,  with  8-day  and  16-day  conﬁdence  intervals  in  dashed  red  lines.  The  grey  scale  indicates  the  number  of  pixels  in  each  binning  square  spanning
+8   days.  (B)  Distribution  of  residual  errors.  (C)  Distribution  of  residual  errors  as  a  function  of  true  sowing  date.  (For  interpretation  of  the  references  to  colour  in  this  ﬁgure
+legend,  the  reader  is  referred  to  the  web  version  of  this  article.)
+
+3.3.  Relationship  between  inter-annual  sowing  date  variability
+and  external  factors
+
+3.3.1.  Inﬂuence  of  rainfall  distribution
+
+Fig.  5  also  presents  the  estimated  winter  wheat  sowing  dates
+in  relation  to  the  distribution  of  rainfall  events  in  the  Camargue
+for  the  years  2002–2012.  In  some  seasons  (e.g.  2004,  2006,  and
+2012),  most  of  the  rain  fell  before  the  main  sowing  periods,  while
+in  others  (e.g.  2007,  2008  and  2011),  much  of  the  rainfall  occurred
+after  sowing,  and  in  2003  the  rainfall  was  evenly  distributed  before
+and  after  the  estimated  sowing  period.  There  was   no  evidence  of
+any  correlation  between  the  estimated  sowing  dates  and  the  inter-
+annual  variability  in  rainfall  events.
+
+3.3.2.  Inﬂuence  of  preceding  crop  and  temperature
+
+Fig.  6  shows  the  average  distribution  of  the  estimated  sowing
+dates  grouped  by  the  type  of  crop  preceding  the  winter  wheat.
+Clearly,  the  Wheat->  Wheat  areas  tended  to  be  sown  earlier  than
+the  Rice->  Wheat  areas  (Fig.  6).  Sowing  between  September  30th
+and  October  16th  was  done  less  frequently  (-16%  the  sum  of  sow-
+
+ings  in  the  period)  in  Rice->  Wheat  ﬁelds  than  in  Wheat->  Wheat
+ﬁelds,  whereas  late  sowing  (e.g.  November  9th  to  25th)  was  more
+common  in  Rice->  Wheat  areas  (+16%  the  sum  of  sowings  in  the
+period).
+
+A  signiﬁcant  relationship  emerged  between  the  ﬁrst  deciles
+of  the  sowing  date  distributions  in  Rice->  Wheat  ﬁelds  and  the
+temperature  during  the  preceding  rice  growing  season.  In  partic-
+ular,  the  earliest  40%  of  the  wheat  sowing  dates  in  Rice->  Wheat
+ﬁelds  showed  a  signiﬁcant  negative  correlation  with  the  cumu-
+lative  temperatures  during  the  rice  growing  season  (p  <  0.01;  R2
+−
+ranging  between  0.6  and  0.9  depending  on  the  decile 
+  Table  3).
+In  other  words,  wheat  was   sown  earlier  in  Rice->Wheat  ﬁelds  in
+warmer  years,  when  the  rice  was   harvested  earlier.  The  effect  of
+temperature  on  wheat  sowing  dates  in  Rice->  Wheat  ﬁelds  was  no
+longer  signiﬁcant,  however,  beyond  the  5th  decile  (p  >  0.05)  of  the
+distribution.
+
+In  Wheat->  Wheat  areas,  the  effect  of  summer  temperatures  on
+winter  wheat  sowing  dates  was   never  signiﬁcant  (p  >  0.05;  Table  3).
+
+G.  Manfron  et  al.  /  International  Journal  of  Applied  Earth  Observation  and  Geoinformation  57  (2017)  190–201 
+
+197
+
+Fig.  5.  Frequency  histograms  of  estimated  winter  wheat  sowing  dates  in  the  Camargue  from  2002  to  2012.  The  lower-right  histogram  (in  dark  grey)  shows  the  mean
+frequencies  for  the  years  considered.  Black  vertical  lines  superimposed  on  each  histogram  indicate  the  median  (dashed  line)  and  the  ﬁrst  and  third  quartiles  (continuous
+lines)   of  the  distributions.  Rainfall  (mm)   recorded  at  the  Fourques  weather  station  is  also  shown  for  each  year,  and  the  mean  for  the  11-year  period.
+
+198 
+
+G.  Manfron  et  al.  /  International  Journal  of  Applied  Earth  Observation  and  Geoinformation  57  (2017)  190–201
+
+winter wheat sown aŌer winter wheat
+
+ 
+
+winter wheat sown aŌer rice
+
+0.2
+
+0.15
+
+0.1
+
+0.05
+
+0
+
+y
+c
+n
+e
+u
+q
+e
+r
+F
+
+30-Sep 8-Oct 16-Oct 24-Oct 1-Nov 9-Nov 17-Nov 25-Nov 3-Dec 11-Dec
+
+EsƟmated sowing date
+
+Fig.  6.  Frequency  histograms  of  winter  wheat  sowing  dates  for  Wheat->  Wheat  areas  (light  grey  histograms,  n  =  1771)  and  Rice->  Wheat  areas  (dark  grey  histograms,
+n   =  1286).  Data  refer  to  the  years  2002–2012.
+
+Table  3
+Summary  statistics  of  the  regression  models  ﬁtting  Rice->  Wheat  and  Wheat 
+R2:  coefﬁcient  of  determination.  D1-D5:  1st  to  5th  decile  of  the  winter  wheat  sowing  date  distribution.
+
+−>  Wheat  sowing  dates  with  the  cumulative  mean  temperatures  during  the  rice-growing  season.
+
+Preceding  crop 
+
+Regression  model 
+
+Rice 
+Wheat 
+Rice  
+Wheat 
+Rice  
+Wheat 
+
+Slope 
+Slope 
+p-value 
+p-value 
+
+R2
+R2
+
+D1 
+
+−0.068
+−0.005 
+<0.001 
+0.759 
+0.779 
+
+0 
+
+D2 
+
+−0.057
+0.007 
+0.001 
+0.681 
+0.722 
+
+0 
+
+D3 
+
+−0.074
+−0.004 
+<0.001 
+0.851 
+0.91 
+
+0 
+
+D4 
+
+−0.054 
+−0.015 
+0.005 
+0.541 
+0.606 
+
+0 
+
+D5
+
+−0.046
+0.026
+0.076
+0.172
+0.259
+0.122
+
+In  this  case,  farmers  were  in  a  position  to  schedule  the  sowing  of
+winter  wheat  in  the  most  suitable  period.
+
+4.  Discussion
+
+4.1.  The  method’s  performance
+
+The  method  developed  for  this  study  was  able  to  identify  winter
+wheat  ﬁelds  with  overall  omission  and  commission  errors  of  44%
+and  11%,  respectively.  This  means  that,  although  not  all  the  win-
+ter  wheat  ﬁelds  were  identiﬁed,  the  areas  detected  by  our  method
+have  a  very  high  likelihood  of  being  accurate.  Since  the  aim  of  the
+method  is  to  automatically  identify  a  reliable  and  representative
+sample  of  winter  wheat  ﬁelds,  the  automatic  detection  of  56%  of
+the  target  area  with  a  low  probability  of  commission  errors  is  more
+than  adequate  for  this  purpose.
+
+Our  validation  of  the  estimated  sowing  dates  showed  that  the
+method  detected  the  sowing  date  variability  with  a  margin  of  error
+of  8  days  in  46%  of  cases,  and  16  days  in  66%  of  cases.  Bearing  in
+mind  that  sowing  dates  in  the  Camargue  can  span  a  period  of  more
+than  ten  weeks,  our  method  provided  useful  information  for  the
+purpose  of  analyzing  inter-annual  variability  in  crop  management
+practices  over  the  course  of  a  decade.
+
+4.2.  Sowing  date  variability  and  consequences  for  crop  modelling
+
+Our  analysis  identiﬁed  a  marked  inter-annual  variability  in  win-
+ter  wheat  sowing  dates,  with  two  main  sowing  seasons,  one  in  early
+October  (as  in  2003,  2005  and  2008),  the  other  in  late  October  (as
+in  2007  and  2012).  Rainfall  patterns  did  not  appear  to  inﬂuence  the
+sowing  dates  in  the  Camargue,  though  some  authors  have  reported
+such  a  relationship  in  other  Mediterranean  areas  (e.g.,  Bassu  et  al.,
+2009).
+
+The  winter  wheat  sowing  dates  did  instead  correlate  with  the
+preceding  crop  (rice  vs.  wheat)  and  the  summer  temperatures.  With
+climate  change,  weather-related  constraints  may   play  a  fundamen-
+tal  role  in  changing  agricultural  practices,  strongly  inﬂuencing  the
+growth  cycles  of  crops  such  as  rice  (Bregaglio  et  al.,  2016).  Other
+sources  of  variability  may   affect  winter  wheat  sowing  dates  includ-
+
+ing  type  of  soil,  differences  in  soil  moisture  and  ﬁeld  accessibility,
+as  well  as  organizational  constraints  at  farm  level  (e.g.  Mailly  et  al.,
+2013;  Schaller  et  al.,  2012),  grain  prices  and  CAP  subsidies.
+
+Our  method’s  ability  to  provide  information  on  winter  wheat
+sowing  dates  (hitherto  unavailable  for  the  study  area  considered
+here)  and  on  their  inter-annual  variability  marks  a  step  forward  in
+the  characterization  of  spatially  explicit  and  yearly  variable  crop
+calendars.  Such  information  may   be  crucial  for  yield  forecasting,
+for  instance,  because  durum  wheat  sowing  dates  strongly  inﬂuence
+the  ﬁnal  grain  yield  (Bassu  et  al.,  2009;  Ferrise  et  al.,  2010).  It  can
+have  positive  implications  for  the  performance  of  crop  models  too,
+because  sowing  date  parameters  strongly  inﬂuence  the  simulation
+of  leaf  appearance  dynamics  (Bassu  et  al.,  2009;  Ferrise  et  al.,  2010)
+and  nitrogen  uptake  (Ehdaie  and  Waines,  2001).
+
+4.3.  Method’s  exportability,  limits  and  future  prospects
+
+The  proposed  method  relies  mainly  on  expert-derived  rules
+and  thresholds.  While,  in  the  speciﬁc  context  considered  here,  the
+choices  made  were  the  only  feasible  options  to  ensure  the  robust-
+ness  of  our  data,  they  might  limit  the  exportability  of  our  method
+to  other  areas.  The  temporal  signature  of  winter  wheat  on  MODIS
+images  may   differ,  for  example,  in  the  presence  of  different  crop
+species  (e.g.  Triticum  durum  vs  Triticum  aestivum),  with  different
+dormancy  and  vegetative  periods,  or  due  to  snow  cover  in  win-
+ter.  It  is  worth  noting,  however,  that  the  method  could  easily  be
+replicated  for  other  areas  because:  (i)  MODIS  data  are  available
+worldwide;  and  (ii)  local  experts  can  adapt  the  agronomic-based
+rules  to  their  own  settings.  A  source  of  uncertainty  in  the  results
+obtained  with  our  model  stems  from  the  rather  coarse  resolution  of
+MODIS  data  in  relation  to  the  dimensions  of  the  ﬁelds  (the  MODIS
+pixel  area  of  5.37  ha  is  almost  twice  the  size  of  a  typical  wheat  ﬁeld
+in  the  Camargue,  which  is  2.73–2.83  ha),  and  to  the  fragmentation
+of  the  landscape  (the  ﬁelds  have  irregular  shapes,  and  wheat  ﬁelds
+are  often  interspersed  with  ﬁelds  with  other  crops).  This  leads  to
+the  well-known  “low  resolution  bias”  and  “mixed-pixel”  effects,
+which  introduce  noise  in  time  series  of  moderate-resolution  satel-
+lite  images  (Boschetti  et  al.,  2004;  Mingwei  et  al.,  2008;  Pan  et  al.,
+2015;  Sakamoto  et  al.,  2005),  making  it  more  difﬁcult  to  identify
+reliable  time  series  for  the  crops  of  interest.  Another  source  of
+
+G.  Manfron  et  al.  /  International  Journal  of  Applied  Earth  Observation  and  Geoinformation  57  (2017)  190–201 
+
+199
+
+uncertainty  derives  from  the  effect  of  the  bi-directional  reﬂectance
+distribution  function  (BRDF),  which  can  be  pronounced  for  wide-
+angle  sensors  like  MODIS,  further  adding  to  the  noise  in  time-series
+data  (Hansen  and  Loveland,  2012;  Huete  et  al.,  2002;  Sakamoto
+et  al.,  2010).
+
+For  the  purpose  of  analyzing  long-term  past  dynamics  of  crop
+practices,  the  spatial  and  temporal  resolution  of  archival  data  could
+be  enhanced  by  combining  heterogeneous  satellite  data  (e.g.  from
+MODIS  and  Landsat)  using  “data  fusion”  techniques  to  simulate
+time  series  with  a  higher  spatio-temporal  resolution  (Bisquert  et  al.,
+2015;  Dong  et  al.,  2016).  An  interesting  opportunity  for  present  and
+future  analyses  could  also  come  from  examining  improved  multi-
+sensor  time  series  obtained  from  datasets  with  a  higher  spatial
+resolution,  by  making  a  combined  use  of  Landsat  8  and  Sentinel-2
+data,  for  instance.
+
+5.  Conclusions
+
+In  this  study,  expert  agronomic  knowledge  was  combined  with
+an  analysis  of  the  temporal  signatures  of  crops  on  MODIS  satellite
+images  to  design  a  method  for  estimating  the  inter-annual  vari-
+ability  of  winter  wheat  sowing  dates.  To  our  knowledge,  no  studies
+have  yet  focused  on  deriving  winter  wheat  sowing  dates  from  the
+analysis  of  moderate-resolution  satellite  data.
+
+MODIS  spatial  and  temporal  resolutions  proved  adequate  for
+depicting  inter-annual  winter  wheat  sowing  date  variability,  pro-
+information  previously  unavailable  for  the  study  area
+viding 
+considered,  thus  representing  a  step  forward  vis-à-vis  currently
+available  static  crop  calendars.  Our  ﬁndings  revealed  a  marked  vari-
+ability  in  sowing  date  distributions  from  one  year  to  the  other,  with
+differences  in  the  timing  and  range  of  the  sowing  period.  They  also
+showed  that  sowing  dates  in  ﬁelds  where  wheat  was  sown  after
+rice  correlated  strongly  with  summer  temperatures  (i.e.,  winter
+wheat  sowing  could  be  delayed  by  late  rice  harvests).  Identify-
+ing  the  seasonal  distribution  of  sowing  dates  can  also  be  useful  for
+assessing  regional-scale  winter  wheat  yield  variability  by  means  of
+crop  modelling.  While  our  proposed  method  is  suitable  for  depict-
+ing  variability  over  large  areas,  satellite  time  series  with  higher
+spatial  and  temporal  resolutions  would  be  needed  for  more  detailed
+analyses  on  crop  management  practices.  A  better  spatial  resolution
+would  reduce  the  noise  in  time  series  due  to  mixed  pixel  con-
+tamination,  while  improving  the  temporal  resolution,  would  reveal
+further  characteristics  of  winter  wheat  time  signatures  that  could
+be  associated  with  the  crop’s  phenological  features.
+
+Acknowledgements
+
+This  research  was  conducted  within  the  Scenarice  project  (no.
+1201-008)  funded  by  the  Agropolis  and  Cariplo  foundations.  It
+was  supported  by  the  French  National  Research  Agency  under
+the  program  “Investments  for  the  future”  ANR-10-LABEX-0001-01.
+Field  data,  land  cover  data  and  agronomical  expertise  were  kindly
+shared  by  Vincent  Couderc,  Jean-Claude  Mouret  and  Jean-Marc  Bar-
+bier  from  INRA  UMR  Innovation.  The  authors  are  very  grateful  to
+Francesco  Nutini,  Daniela  Stroppiana,  Paolo  Villa  and  Simone  Bre-
+gaglio  for  their  support  in  the  preparation  of  this  work.
+
+Appendix  A.  Supplementary  data
+
+Supplementary  data  associated  with  this  article  can  be  found,  in
+the  online  version,  at  http://dx.doi.org/10.1016/j.jag.2017.01.001.
+
+References
+
+Asseng,  S.,  Milroy,  S.,  Bassu,  S.,  Abi  Saa,  M.T.,  2012.  Wheat.  In  Crop  yield  response  to
+
+water  (Steduto  P.,  Hsiao  T.C.,  Fereres  E.,  Raes  D.)  FAO-Rome,  Irrigation  and
+Drainage  Paper  66,  92–100,  ISBN  978-92-5-107274-5.
+
+Atzberger,  C.,  Rembold,  F.,  2013.  Mapping  the  spatial  distribution  of  winter  crops
+
+at   sub-pixel  level  using  AVHRR  NDVI  time  series  and  neural  nets.  Remote  Sens.
+5,   1335–1354,  http://dx.doi.org/10.3390/rs5031335.
+
+Bakker,  M.M.,   Govers,  G.,  Ewert,  F.,  Rounsevell,  M.,   Jones,  R.,  2005.  Variability  in
+regional  wheat  yields  as  a  function  of  climate,  soil  and  economic  variables:
+assessing  the  risk  of  confounding.  Agric.  Ecosyst.  Environ.  110,  195–209,  http://
+dx.doi.org/10.1016/j.agee.2005.04.016.
+
+Basso,  B.,  Cammarano,  D.,  Carfagna,  E.,  2013.  Review  of  crop  yield  forecasting
+methods  and  early  warning  systems.  First  Meet.  Sci.  Advis.  Comm.  Glob.
+Strateg.  Improv.  Agric.  Rural  Stat.,  1–56.
+
+Bassu,  S.,  Asseng,  S.,  Motzo,  R.,  Giunta,  F.,  2009.  Optimising  sowing  date  of  durum
+
+wheat  in  a  variable  Mediterranean  environment.  Food  Crop.  Res.  111,  109–118,
+http://dx.doi.org/10.1016/j.fcr.2008.11.002.
+
+Bisquert,  M.,  Bordogna,  G.,  Bégué,  A.,  Candiani,  G.,  Teisseire,  M.,   Poncelet,  P.,  2015.
+
+A  simple  fusion  method  for  image  time  series  based  on  the  estimation  of  image
+temporal  validity.  Remote  Sens.  7,  704–724,  http://dx.doi.org/10.3390/
+rs70100704.
+
+Boschetti,  L.,  Flasse,  S.P.,  Brivio,  P.A.,  2004.  Analysis  of  the  conﬂict  between
+
+omission  and  commission  in  low  spatial  resolution  dichotomic  thematic
+products:  the  Pareto  Boundary.  Remote  Sens.  Environ.  91,  280–292,  http://dx.
+doi.org/10.1016/j.rse.2004.02.015.
+
+Boschetti,  M.,   Stroppiana,  D.,  Brivio,  P.  a.,  Bocchi,  S.,  2009.  Multi-year  monitoring  of
+
+rice  crop  phenology  through  time  series  analysis  of  MODIS  images.  Int.  J.
+Remote  Sens.  30,  4643–4662,  http://dx.doi.org/10.1080/01431160802632249.
+
+Boschetti,  M.,   Busetto,  L.,  Nutini,  F.,  Manfron,  G.,  Crema,  A.,  Confalonieri,  R.,
+
+Bregaglio,  S.,  Pagani,  V.,  Guarneri,  T.,  Brivio,  P.A.,  2015a.  Assimilating
+seasonality  information  derived  from  satellite  data  time  series  in  crop
+modelling  for  rice  yield  estimation.  Geosci.  Remote  Sens.  Symp.  (IGARSS).  IEEE
+Int.,  157–160,  http://dx.doi.org/10.1109/IGARSS.2015.7325723.
+
+Boschetti,  M.,  Nelson,  A.,  Nutini,  F.,  Manfron,  G.,  Busetto,  L.,  Barbieri,  M.,   Laborte,  A.,
+
+Raviz,  J.,  Holecz,  F.,  Mabalay,  M.,   Bacong,  A.,  Quilang,  E.,  2015b.  Rapid
+assessment  of  crop  status:  an  application  of  MODIS  and  SAR  data  to  rice  areas
+in  Leyte,  Philippines  Affected  by  Typhoon  Haiyan.  Remote  Sens.  7,  6535–6557,
+http://dx.doi.org/10.3390/rs70606535.
+
+Bradley,  B.A.,  Jacob,  R.W.,  Hermance,  J.F.,  Mustard,  J.F.,  2007.  A  curve  ﬁtting
+procedure  to  derive  inter-annual  phenologies  from  time  series  of  noisy
+satellite  NDVI  data.  Remote  Sens.  Environ.  106,  137–145,  http://dx.doi.org/10.
+1016/j.rse.2006.08.002.
+
+Bregaglio,  S.,  Donatelli,  M.,   2015.  A  set  of  software  components  for  the  simulation
+of   plant  airborne  diseases.  Environ.  Model.  Softw.  72,  426–444,  http://dx.doi.
+org/10.1016/j.envsoft.2015.05.011.
+
+Bregaglio,  S.,  Hossard,  L.,  Capelli,  G.,  Resmond,  R.,  Bocchi,  S.,  Barbier,  J.M.,  Ruget,  F.,
+Delmotte,  S.,  2016.  Identifying  trends  and  asociated  uncertainties  in  potential
+rice  production  under  climate  change  in  Mediterranean  areas.  Climatic  Change
+(Submitted).
+
+Brivio,  P.A.,  Zilioli,  E.,  Lechi,  G.L.,  2006.  Principi  E  Metodi  Di  Telerilevamento.
+
+CittaStudi.
+
+Busetto,  L.,  Ranghetti,  L.,  2016.  Computers  &  geosciences  MODIStsp:  an  r  package
+
+for  automatic  preprocessing  of  MODIS  land  products  time  series.  Comput.
+Geosci.  97,  40–48,  http://dx.doi.org/10.1016/j.cageo.2016.08.020.
+
+Chen,  J.,  Pavlic,  G.,  Brown,  L.,  Cihlar,  J.,  Leblanc,  S.,  White,  H.,  Hall,  R.,  Peddle,  D.,  King,
+
+D.,   Trofymow,  J.,  Swift,  E.,  Van  der  Sanden,  J.,  Pellikka,  P.K.,  2002.  Derivation
+and   validation  of  Canada-wide  coarse-resolution  leaf  area  index  maps  using
+high-resolution  satellite  imagery  and  ground  measurements.  Remote  Sens.
+Environ.  80,  165–184,  http://dx.doi.org/10.1016/S0034-4257(01)00300-5.
+
+Chen,  J.,  Johnsson,  P.,  Tamura,  M.,   Gu,  Z.,  Matsushita,  B.,  Eklundh,  L.,  2004.  A  simple
+
+method  for  reconstructing  a  high-quality  NDVI  time-series  data  set  based  on
+the   Savitzky-Golay  ﬁlter.  Remote  Sens.  Environ.  91,  332–344,  http://dx.doi.org/
+10.1016/j.rse.2004.03.014.
+
+Chu,  L.,  Huang,  C.,  Liu,  Q.,  Liu,  G.,  2016.  Estimation  of  Winter  Wheat  Phenology
+
+Under  the  Inﬂuence  of  Cumulative  Temperature  and  Soil  Salinity  in  the  Yellow
+River  Delta,  China,  Using  MODIS  Time-series  Data  1161.,  http://dx.doi.org/10.
+1080/01431161.2015.1131871.
+
+Clavel,  L.,  Soudais,  J.,  Baudet,  D.,  Leenhardt,  D.,  2011.  Integrating  expert  knowledge
+
+and   quantitative  information  for  mapping  cropping  systems.  Land  Use  Policy
+28,  57–65,  http://dx.doi.org/10.1016/j.landusepol.2010.05.001.
+
+Cohen,  J.,  1960.  A  coefﬁcient  of  agreement  for  nominal  scales.  Educ.  Psychosocial
+
+Meas.  20,  37–46.
+
+Congalton,  R.,  1991.  A  review  of  assessing  the  accuracy  of  classiﬁcations  of
+
+remotely  sensed  data.  Remote  Sens.  Environ.  46,  35–46.
+
+Curnel,  Y.,  Oger,  R.,  2007.  Agrophenology  Indicators  From  Remote  Sensing:  State  of
+
+the   Art.  Isprs.  Org.,  pp.  31–38.
+
+Delmotte,  S.,  Tittonell,  P.,  Mouret,  J.C.,  Hammond,  R.,  Lopez-Ridaura,  S.,  2011.  On
+
+farm  assessment  of  rice  yield  variability  and  productivity  gaps  between
+organic  and  conventional  cropping  systems  under  Mediterranean  climate.  Eur.
+J.   Agron.  35,  223–236,  http://dx.doi.org/10.1016/j.eja.2011.06.006.
+
+Didan,  K.,  2015.  MOD13Q1  MODIS/Terra  Vegetation  Indices  16-Day  L3  Global
+
+250   m  SIN  Grid  V005.  Dataset  accessed  2014-01-01  at  10.5067/MODIS/
+MOD13Q1.006.
+
+Dong,  T.,  Liu,  J.,  Qian,  B.,  Zhao,  T.,  Jing,  Q.,  Geng,  X.,  Wang,  J.,  Huffman,  T.,  Shang,  J.,
+
+2016.  Estimating  winter  wheat  biomass  by  assimilating  leaf  area  index  derived
+
+200 
+
+G.  Manfron  et  al.  /  International  Journal  of  Applied  Earth  Observation  and  Geoinformation  57  (2017)  190–201
+
+from  fusion  of  Landsat-8  and  MODIS  data.  Int.  J.  Appl.  Earth  Obs.  Geoinf.  49,
+63–74,  http://dx.doi.org/10.1016/j.jag.2016.02.001.
+
+Dubovyk,  O.,  Landmann,  T.,  Erasmus,  B.F.N.,  Tewes,  A.,  Schellberg,  J.,  2015.
+
+Monitoring  vegetation  dynamics  with  medium  resolution  MODIS-EVI  time
+series  at  sub-regional  scale  in  southern  Africa.  Int.  J.  Appl.  Earth  Obs.  Geoinf.
+38,  175–183,  http://dx.doi.org/10.1016/j.jag.2015.01.002.
+
+Dury,  J.,  Schaller,  N.,  Garcia,  F.,  Reynaud,  A.,  Bergez,  J.E.,  2012.  Models  to  support
+cropping  plan  and  crop  rotation  decisions.  A  review.  Agron.  Sustain.  Dev.  32,
+567–580,  http://dx.doi.org/10.1007/s13593-011-0037-x.
+
+Ehdaie,  B.,  Waines,  J.,  2001.  Sowing  date  and  nitrogen  rate  effects  on  dry  matter
+and  nitrogen  partitioning  in  bread  and  durum  wheat.  F.  Crop.  Res.  73,  47–61,
+http://dx.doi.org/10.1016/S0378-4290(01)00181-2.
+
+exploiting  time  series  analysis  of  remote  sensed  MODIS  data.  In:  Stein,  K.,
+Gonglewski,  J.  (Eds.),  Proc.  of  SPIE,  http://dx.doi.org/10.1117/12.974662,  p.
+85311E–85311E–11.
+
+Miao,  Q.,  Rosa,  R.D.,  Shi,  H.,  Paredes,  P.,  Zhu,  L.,  Dai,  J.,  Gonc¸  alves,  J.M.,  Pereira,  L.S.,
+
+2016.  Modeling  water  use,  transpiration  and  soil  evaporation  of  spring
+wheat-maize  and  spring  wheat-sunﬂower  relay  intercropping  using  the  dual
+crop  coefﬁcient  approach.  Agric.  Water  Manag.  165,  211–229,  http://dx.doi.
+org/10.1016/j.agwat.2015.10.024.
+
+Mingwei,  Z.,  Qingbo,  Z.,  Zhongxin,  C.,  Jia,  L.,  Yong,  Z.,  Chongfa,  C.,  2008.  Crop
+
+discrimination  in  Northern  China  with  double  cropping  systems  using  Fourier
+analysis  of  time-series  MODIS  data.  Int.  J.  Appl.  Earth  Obs.  Geoinf.  10,  476–485,
+http://dx.doi.org/10.1016/j.jag.2007.11.002.
+
+Ferrise,  R.,  Triossi,  A.,  Stratonovitch,  P.,  Bindi,  M.,   Martre,  P.,  2010.  Sowing  date  and
+
+Moulin,  S.,  Bondeau,  A.,  Delecolle,  R.,  1998.  Combining  agricultural  crop  models
+
+nitrogen  fertilisation  effects  on  dry  matter  and  nitrogen  dynamics  for  durum
+wheat:  an  experimental  and  simulation  study.  F.  Crop.  Res.  117,  245–257,
+http://dx.doi.org/10.1016/j.fcr.2010.03.010.
+
+Folberth,  C.,  Yang,  H.,  Wang,  X.,  Abbaspour,  K.C.,  2012.  Impact  of  input  data
+
+resolution  and  extent  of  harvested  areas  on  crop  yield  estimates  in  large-scale
+agricultural  modeling  for  maize  in  the  USA.  Ecol.  Modell.  235–236,  8–18,
+http://dx.doi.org/10.1016/j.ecolmodel.2012.03.035.
+
+Ganguly,  S.,  Friedl,  M.A.,  Tan,  B.,  Zhang,  X.,  Verma,  M.,   2010.  Remote  Sensing  of
+Environment  Land  surface  phenology  from  MODIS:  Characterization  of  the
+Collection  5  global  land  cover  dynamics  product.  Remote  Sens.  Environ.  114,
+1805–1816,  http://dx.doi.org/10.1016/j.rse.2010.04.005.
+
+Geng,  L.,  Ma,   M.,   Wang,  X.,  Yu,  W.,   Jia,  S.,  Wang,  H.,  2014.  Comparison  of  eight
+
+techniques  for  reconstructing  multi-satellite  sensor  time-series  NDVI  data  sets
+in   the  heihe  river  basin.  China.  Remote  Sens.  6,  2024–2049,  http://dx.doi.org/
+10.3390/rs6032024.
+
+Grassini,  P.,  van  Bussel,  L.G.J.,  Van  Wart,  J.,  Wolf,  J.,  Claessens,  L.,  Yang,  H.,  Boogaard,
+
+H.,   de  Groot,  H.,  van  Ittersum,  M.K.,  Cassman,  K.G.,  2015.  How  good  is  good
+enough?  Data  requirements  for  reliable  crop  yield  simulations  and  yield-gap
+analysis.  Food  Crop.  Res.  177,  49–63,  http://dx.doi.org/10.1016/j.fcr.2015.03.
+004.
+
+Guyet,  T.,  Nicolas,  H.,  2015.  Long  term  analysis  of  time  series  of  satellite  images.
+Pattern  Recognit.  Lett.  70,  17–23,  http://dx.doi.org/10.1016/j.patrec.2015.11.
+005.
+
+Halabuk,  A.,  Mojses,  M.,   Halabuk,  M.,   David,  S.,  2015.  Towards  detection  of  cutting
+
+in   hay  meadows  by  using  of  NDVI  and  EVI  time  series.  Remote  Sens.  7,
+6107–6132,  http://dx.doi.org/10.3390/rs70506107.
+
+Hansen,  M.C.,  Loveland,  T.R.,  2012.  A  review  of  large  area  monitoring  of  land  cover
+
+change  using  Landsat  data.  Remote  Sens.  Environ.  122,  66–74,  http://dx.doi.
+org/10.1016/j.rse.2011.08.024.
+
+Holzkämper,  A.,  Calanca,  P.,  Honti,  M.,   Fuhrer,  J.,  2015.  Projecting  climate  change
+
+impacts  on  grain  maize  based  on  three  different  crop  model  approaches.  Agric.
+For.  Meteorol.  214–215,  219–230,  http://dx.doi.org/10.1016/j.agrformet.2015.
+08.263.
+
+and  satellite  observations:  from  ﬁeld  to  regional  scales.  Int.  J.  Remote  Sens.  19,
+1021–1036,  http://dx.doi.org/10.1080/014311698215586.
+
+Nendel,  C.,  Kersebaum,  K.C.,  Mirschel,  W.,   Wenkel,  K.O.,  2014.  Testing  farm
+management  options  as  climate  change  adaptation  strategies  using  the
+MONICA  model.  Eur.  J.  Agron.  52,  47–56,  http://dx.doi.org/10.1016/j.eja.2012.
+09.005.
+
+Pan,  Y.,  Li,  L.,  Zhang,  J.,  Liang,  S.,  Zhu,  X.,  Sulla-Menashe,  D.,  2012.  Winter  wheat
+area  estimation  from  MODIS-EVI  time  series  data  using  the  Crop  Proportion
+Phenology  Index.  Remote  Sens.  Environ.  119,  232–242,  http://dx.doi.org/10.
+1016/j.rse.2011.10.011.
+
+Pan,  Z.,  Huang,  J.,  Zhou,  Q.,  Wang,  L.,  Cheng,  Y.,  Zhang,  H.,  Blackburn,  G.A.,  Yan,  J.,
+Liu,  J.,  2015.  Mapping  crop  phenology  using  NDVI  time-series  derived  from
+HJ-1A/B  data.  Int.  J.  Appl.  Earth  Obs.  Geoinf.  34,  188–197,  http://dx.doi.org/10.
+1016/j.jag.2014.08.011.
+
+Pettorelli,  N.,  Vik,  J.O.,  Mysterud,  A.,  Gaillard,  J.M.,  Tucker,  C.J.,  Stenseth,  N.C.,  2005.
+
+Using  the  satellite-derived  NDVI  to  assess  ecological  responses  to
+environmental  change.  Trends  Ecol.  Evol.  20,  503–510,  http://dx.doi.org/10.
+1016/j.tree.2005.05.011.
+
+R   Core  Team,  2016.  R:  A  Language  and  Environment  for  Statistical  Computing.
+Ranghetti,  L.,  Busetto,  L.,  Crema,  A.,  Fasola,  M.,   Cardarelli,  E.,  2016.  International
+
+Journal  of  Applied  Earth  Observation  and  Geoinformation  Testing  estimation
+of   water  surface  in  Italian  rice  district  from  MODIS  satellite  data.  Int.  J.  Appl.
+Earth  Obs.  Geoinf.  52,  284–295,  http://dx.doi.org/10.1016/j.jag.2016.06.018.
+Rembold,  F.,  Atzberger,  C.,  Savin,  I.,  Rojas,  O.,  2013.  Using  low  resolution  satellite
+
+imagery  for  yield  prediction  and  yield  anomaly  detection.  Remote  Sens.  5,
+1704–1733,  http://dx.doi.org/10.3390/rs5041704.
+
+Ren,  J.,  Chen,  Z.,  Zhou,  Q.,  Tang,  H.,  2008.  Regional  yield  estimation  for  winter
+wheat  with  MODIS-NDVI  data  in  Shandong.  China.  Int.  J.  Appl.  Earth  Obs.
+Geoinf.  10,  403–413,  http://dx.doi.org/10.1016/j.jag.2007.11.003.
+
+Sakamoto,  T.,  Yokozawa,  M.,   Toritani,  H.,  Shibayama,  M.,   Ishitsuka,  N.,  Ohno,  H.,
+
+2005.  A  crop  phenology  detection  method  using  time-series  MODIS  data.
+Remote  Sens.  Environ.  96,  366–374,  http://dx.doi.org/10.1016/j.rse.2005.03.
+008.
+
+Huang,  Y.H.Y.,  Lu,  L.L.L.,  2009.  Monitoring  winter  wheat  phenology  using  time
+
+Sakamoto,  T.,  Van  Nguyen,  N.,  Kotera,  A.,  Ohno,  H.,  Ishitsuka,  N.,  Yokozawa,  M.,
+
+series  of  remote  sensing  data.  Second  Int.  Conf.  Inf.  Comput.  Sci.  1,  http://dx.
+doi.org/10.1109/icic.2009.412009.
+
+Huete,  A.,  Didan,  K.,  Miura,  T.,  Rodriguez,  E.,  Gao,  X.,  Ferreira,  L.,  2002.  Overview  of
+the   radiometric  and  biophysical  performance  of  the  MODIS  vegetation  indices.
+Remote  Sens.  Environ.  83,  195–213,  http://dx.doi.org/10.1016/S0034-
+4257(02)00096-2.
+
+Jiang,  Z.,  Chen,  Z.,  Chen,  J.,  Liu,  J.,  Ren,  J.,  Li,  Z.,  Sun,  L.,  Li,  H.,  2014.  Application  of
+Crop  Model  Data  Assimilation  With  a  Particle  Filter  for  Estimating  Regional
+Winter  Wheat  Yields,  vol.  7.,  pp.  4422–4431.
+
+Jin,  N.,  Tao,  B.,  Ren,  W.,   Feng,  M.,   Sun,  R.,  He,  L.,  Zhuang,  W.,   Yu,  Q.,  2016.  Mapping
+irrigated  and  rainfed  wheat  areas  using  multi-temporal  satellite  data.  Remote
+Sens.   8,  207,  http://dx.doi.org/10.3390/rs8030207.
+
+Justice,  C.O.,  Townshend,  J.R.G.,  Vermote,  E.F.,  Masuoka,  E.,  Wolfe,  R.E.,  Saleous,  N.,
+Roy,  D.P.,  Morisette,  J.T.,  2002.  An  overview  of  MODIS  Land  data  processing  and
+product  status.  Remote  Sens.  Environ.  83,  3–15,  http://dx.doi.org/10.1016/
+S0034-4257(02)00084-6.
+
+Khaledian,  M.R.,  Mailhol,  J.C.,  Ruelle,  P.,  Rosique,  P.,  2009.  Adapting  PILOTE  model
+
+for   water  and  yield  management  under  direct  seeding  system:  the  case  of  corn
+and  durum  wheat  in  a  Mediterranean  context.  Agric.  Water  Manag.  96,
+757–770,  http://dx.doi.org/10.1016/j.agwat.2008.10.011.
+
+Kogan,  F.,  Kussul,  N.,  Adamenko,  T.,  Skakun,  S.,  Kravchenko,  O.,  Kryvobok,  O.,
+
+Shelestov,  A.,  Kolotii,  A.,  Kussul,  O.,  Lavrenyuk,  A.,  Delmotte,  P.S.,  2013.  Winter
+wheat  yield  forecasting  in  Ukraine  based  on  Earth  observation,  meteorological
+data  and  biophysical  models.  Int.  J.  Appl.  Earth  Obs.  Geoinf.  23,  192–203,
+http://dx.doi.org/10.1016/j.jag.2013.01.002.
+
+Kumar,  M.,  Monteith,  J.L.,  1981.  Remote  sensing  of  crop  growth.  Plants  Daylight
+
+Spectr.,  133–144.
+
+Lobell,  D.B.,  Ortiz-Monasterio,  J.I.,  Sibley,  A.M.,  Sohu,  V.S.,  2013.  Satellite  detection
+of   earlier  wheat  sowing  in  India  and  implications  for  yield  trends.  Agric.  Syst.
+115,  137–143,  http://dx.doi.org/10.1016/j.agsy.2012.09.003.
+
+Lu,  L.,  Wang,  C.,  Guo,  H.,  Li,  Q.,  2013.  Detecting  winter  wheat  phenology  with
+
+SPOT-VEGETATION  data  in  the  North  China  Plain.  Geocarto  Int.  1–12,  http://dx.
+doi.org/10.1080/10106049.2012.760004.
+
+Mailly,  F.,  Delmotte,  S.,  Schaller,  N.,  Mouret,  J.C.,  Lopez-Ridaura,  S.,  Barbier,  J.M.,
+2013.  Un  modèle  de  décision  d’assolement  en  riziculture  conventionnelle  et
+biologique  pour  prédire  les  usages  des  sols  sous  différents  scénarios:  cas  de  la
+Camargue  (Sud  de  la  France).  Cahiers  d’Agricultures  22,  424–431.
+
+Manfron,  G.,  Crema,  A.,  Boschetti,  M.,   Confalonieri,  R.,  2012.  Testing  automatic
+
+procedures  to  map  rice  area  and  detect  phenological  crop  information
+
+2007.  Detecting  temporal  changes  in  the  extent  of  annual  ﬂooding  within  the
+Cambodia  and  the  Vietnamese  Mekong  Delta  from  MODIS  time-series  imagery.
+Remote  Sens.  Environ.  109,  295–313,  http://dx.doi.org/10.1016/j.rse.2007.01.
+011.
+
+Sakamoto,  T.,  Wardlow,  B.D.,  Gitelson,  A.A.,  Verma,  S.B.,  Suyker,  A.E.,  Arkebauer,
+
+T.J.,  2010.  A  Two-Step  Filtering  approach  for  detecting  maize  and  soybean
+phenology  with  time-series  MODIS  data.  Remote  Sens.  Environ.  114,
+2146–2159,  http://dx.doi.org/10.1016/j.rse.2010.04.019.
+
+Savitzky,  A.,  Golay,  M.J.E.,  1964.  Smoothing  and  differentiation  of  data  by
+
+simpliﬁed  least  squares  procedures.  Anal.  Chem.  36,  1627–1639.
+
+Schaller,  N.,  Lazrak,  E.G.,  Martin,  P.,  Mari,  J.F.,  Aubry,  C.,  Benoit,  M.,   2012.  Combining
+
+farmers’  decision  rules  and  landscape  stochastic  regularities  for  landscape
+modelling.  Landscape  Ecol.  27,  433–446.
+
+Solano,  R.,  Didan,  K.,  Jacobson,  A.,  Huete,  A.,  2010.  MODIS  Vegetation  Index  User’s
+
+Guide  (MOD13  series).  Veg.  Index  Phenol.  Lab.
+
+Soltani,  A.,  Bakker,  M.,   Veldkamp,  A.,  Stoorvogel,  J.J.,  2016.  Comparison  of  three
+
+modelling  approaches  to  simulate  regional  crop  yield:  a  case  study  of  winter
+wheat  yield  in  western  Germany.  J.  Agric.  Sci.  Technol.  JAST  Islam.  Repub.  Iran
+18,   191–206.
+
+Son,  N.T.,  Chen,  C.F.,  Chen,  C.R.,  Duc,  H.N.,  Chang,  L.Y.,  2013.  A  phenology-based
+classiﬁcation  of  time-series  MODIS  data  for  rice  crop  monitoring  in  Mekong
+Delta.  Vietnam  Remote  Sens.  6,  135–156,  http://dx.doi.org/10.3390/rs6010135.
+Stroppiana,  D.,  Azar,  R.,  Calò,  F.,  Pepe,  A.,  Imperatore,  P.,  Boschetti,  M.,  Silva,  J.M.N.,
+
+Brivio,  P.A.,  Lanari,  R.,  2015.  Integration  of  Optical  and  SAR  Data  for  Burned
+Area  Mapping  in  Mediterranean  Regions.,  pp.  1320–1345,  http://dx.doi.org/10.
+3390/rs70201320.
+
+Sun,  H.,  Xu,  A.,  Lin,  H.,  Zhang,  L.,  Mei,  Y.,  2012.  Winter  wheat  mapping  using
+
+temporal  signatures  of  MODIS  vegetation  index  data.  Int.  J.  Remote  Sens.  33,
+5026–5042.
+
+Therond,  O.,  Hengsdijk,  H.,  Casellas,  E.,  Wallach,  D.,  Adam,  M.,   Belhouchette,  H.,
+
+Oomen,  R.,  Russell,  G.,  Ewert,  F.,  Bergez,  J.E.,  Janssen,  S.,  Wery,  J.,  Van  Ittersum,
+M.K.,  2011.  Using  a  cropping  system  model  at  regional  scale:  low-data
+approaches  for  crop  management  information  and  model  calibration.  Agric.
+Ecosyst.  Environ.  142,  85–94,  http://dx.doi.org/10.1016/j.agee.2010.05.007.
+
+Van  Wart,  J.,  Grassini,  P.,  Yang,  H.,  Claessens,  L.,  Jarvis,  A.,  Cassman,  K.G.,  2015.
+
+Creating  long-term  weather  data  from  thin  air  for  crop  simulation  modeling.
+Agric.  For.  Meteorol.  209–210,  49–58,  http://dx.doi.org/10.1016/j.agrformet.
+2015.02.020.
+
+G.  Manfron  et  al.  /  International  Journal  of  Applied  Earth  Observation  and  Geoinformation  57  (2017)  190–201 
+
+201
+
+van  der  Werf,  W.,   Keesman,  K.,  Burgess,  P.,  Graves,  A.,  Pilbeam,  D.,  Incoll,  L.D.,
+Metselaar,  K.,  Mayus,  M.,   Stappers,  R.,  van  Keulen,  H.,  Palma,  J.,  Dupraz,  C.,
+2007.  Yield-SAFE:  A  parameter-sparse,  process-based  dynamic  model  for
+predicting  resource  capture,  growth,  and  production  in  agroforestry  systems.
+Ecol.  Eng.  29,  419–433,  http://dx.doi.org/10.1016/j.ecoleng.2006.09.017.
+
+Vyas,  S.,  Nigam,  R.,  Patel,  N.K.,  Panigrahy,  S.,  2013.  Extracting  regional  pattern  of
+
+wheat  sowing  dates  using  multispectral  and  high  temporal  observations  from
+indian  geostationary  satellite.  J.  Indian  Soc.  Remote  Sens.  41,  855–864,  http://
+dx.doi.org/10.1007/s12524-013-0266-3.
+
+Wulder,  M.,  Franklin,  S.E.,  2012.  Remote  sensing  of  forest  environments:  concepts
+
+and  case  studies.  Springer  Sci.  Bus.  Media.
+
+Young,  I.T.,  1977.  Proof  without  prejudice:  use  of  the  Kolmogorov-Smirnov  test  for
+the  analysis  of  histograms  from  ﬂow  systems  and  other  sources.  J.  Histochem.
+Cytochem.  25,  935–941,  http://dx.doi.org/10.1177/25.7.894009.
+
+Yuping,  M.,   Shili,  W.,   Li,  Z.,  Yingyu,  H.,  Liwei,  Z.,  Yanbo,  H.,  Futang,  W.,   2008.
+
+Monitoring  winter  wheat  growth  in  North  China  by  combining  a  crop  model
+and  remote  sensing  data.  Int.  J.  Appl.  Earth  Obs.  Geoinf.  10,  426–437,  http://dx.
+doi.org/10.1016/j.jag.2007.09.002.
+
+Webber,  H.,  Ewert,  F.,  Kimball,  B.A.,  Siebert,  S.,  White,  J.W.,  Wall,  G.W.,  Ottman,
+
+Zhao,  Y.,  Gong,  P.,  Yu,  L.,  Hu,  L.,  Li,  X.,  Li,  C.,  Zhang,  H.,  Zheng,  Y.,  Wang,  J.,  Zhao,  Y.,
+
+M.J.,   Trawally,  D.N.A.,  Gaiser,  T.,  2016.  Simulating  canopy  temperature  for
+modelling  heat  stress  in  cereals.  Environ.  Model.  Softw.  77,  143–155,  http://dx.
+doi.org/10.1016/j.envsoft.2015.12.003.
+
+White,  M.A.,  Beurs  de,  K.M.,  Didan,  K.,  Inouye,  D.W.,  Richardson,  A.D.,  Jensen,  O.P.,
+Magnuson,  J.,  O’Keefe,  J.,  Zhang,  G.,  Nemani,  R.R.,  Leeuwen  van,  W.J.D.,  Brown,
+J.F.,   Wit   de,  A.J.W.,  Schaepman,  M.E.,  Lin,  X.,  Dettinger,  M.,  Bailey,  A.,  Kimball,  J.,
+Schwartz,  M.D.,  Baldocchi,  D.D.,  Lee,  J.T.,  Lauenroth,  W.K.,  2009.
+Intercomparison,  interpretation,  and  assessment  of  spring  phenology  in  North
+America  estimated  from  remote  sensing  for  1982–2006.  Glob.  Change  Biol.  15,
+2335–2359.
+
+Cheng,  Q.,  Liu,  C.,  Liu,  S.,  Wang,  X.,  2014.  Towards  a  common  validation  sample
+set   for  global  land-cover  mapping.  Int.  J.  Remote  Sens.  3513,  4795–4814,
+http://dx.doi.org/10.1080/01431161.2014.930202.
+
+Zheng,  B.,  Campbell,  J.B.,  de  Beurs,  K.M.,  2012.  Remote  sensing  of  crop  residue
+cover  using  multi-temporal  Landsat  imagery.  Remote  Sens.  Environ.  117,
+177–183,  http://dx.doi.org/10.1016/j.rse.2011.09.01.
+
+

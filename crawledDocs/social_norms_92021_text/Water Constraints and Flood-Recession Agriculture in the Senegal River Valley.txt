@@ -1,0 +1,879 @@
+Article
+Water Constraints and Flood-Recession Agriculture in
+the Senegal River Valley
+
+Mamadou Sall 1,*, Jean-Christophe Poussin 2, Aymar Yaovi Bossa 3,4, Ramatoulaye Ndiaye 1,
+Madiama Cissé 1, Didier Martin 2, Jean-Claude Bader 2, Benjamin Sultan 5
+Andrew Ogilvie 2
+1 Centre de Recherches Agricoles de Saint-Louis/Institut Sénégalais de Recherches Agricoles,
+
+and
+
+Saint-Louis 32000, Senegal; toulaye@gmail.com (R.N.); sbamand@yahoo.com (M.C.)
+
+2 UMR G-EAU, AgroParisTech, Cirad, INRAE, IRD, Montpellier SupAgro, University of Montpellier,
+
+CEDEX 5, 34196 Montpellier, France; jean-christophe.poussin@ird.fr (J.-C.P.); didier.martin@ird.fr (D.M.);
+jean-claude.bader@ird.fr (J.-C.B.); andrew.ogilvie@ird.fr (A.O.)
+Institut National de l’Eau/Université d’Abomey-Calavi; Cotonou 01 BP 526, Benin; aymar.bossa@gmail.com
+or contact@hcs-in.org
+
+3
+
+4 Hydro-Climate Services, Ouagadougou BV/30051, Burkina Faso
+5 UMR ESPACE-DEV, Université Montpellier, IRD, Université Guyane, Université Réunion,
+
+Université Antilles, Université Avignon, CEDEX 5, 34196 Montpellier, France; benjamin.sultan@ird.fr
+
+* Correspondence: mamadou.sall@isra.sn; Tel.: +221-77-468-29-54
+
+Received: 3 August 2020; Accepted: 22 September 2020; Published: 3 November 2020
+
+Abstract: Flood recession farming practiced in ﬂood-prone areas and on the banks of rivers and
+lakes in arid or semi-arid environments essentially depends on the soil water stock after the ﬂood
+has receded. During these last few decades, this coveted agriculture is increasingly challenged by
+severe water constraints, due to increased hydrological hazards and development projects aimed
+at controlling ﬂoods. These challenges are diﬃcult to anticipate, and are the subject of a great deal
+of uncertainty regarding the sustainability of development projects in the concerned areas. In this
+study, recent hydraulic data of the Senegal River were analyzed to understand the constraints related
+to the river management in ﬂood-prone areas. Satellite imagery analysis techniques were used to
+estimate ﬂooded areas and establish relationships with the river regime. Agricultural practices
+implemented by farmers were also analyzed to evaluate the resilience of this cropping system to the
+risk of water stress. The results conﬁrmed many constraints of diﬀerent importance related to the
+objectives assigned to the management of dams under multiple water use context. It clearly came out
+that the water resource management rules relegate ﬂood-recession agriculture to the lowest priorities.
+In addition, there are safety issues related to unexpected eﬀects of ﬂooding on the water structures
+and in the nearby inhabited localities of ﬂood-prone areas. Knowing some characteristics of the
+ﬂooding and of the river’s levels and their relationships can be useful within the framework of an
+organized climate service that would help farmers and communities to better anticipate constraints.
+
+Keywords: ﬂood; ﬂood recession agriculture; Senegal River
+
+1. Introduction
+
+Natural or artiﬁcial constraints on river regimes have implications for various sectors, such as
+agriculture, habitat or ecosystem health [1,2]. These constraints are linked to hydrological hazards
+ampliﬁed by climate change, but also by human action [3,4]. Regulating the ﬂow of rivers considerably
+improves living conditions, but it can have a negative impact on downstream production systems and
+ecosystems and the populations that depend on them as well. In a study of 120 rivers and 7000 large
+dams, Richter et al. [5] estimated that more than 472 million rural populations were negatively impacted
+
+Atmosphere 2020, 11, 1192; doi:10.3390/atmos11111192
+
+www.mdpi.com/journal/atmosphere
+
+atmosphere# &!*-0+/ .Atmosphere 2020, 11, 1192
+
+2 of 21
+
+downstream of these dams, including more than 40 million in Africa. Traditional production systems
+depending on the ﬂooded surface areas are the most vulnerable to changes in hydro-climatic conditions
+and water allocation policies [6]. In the Senegal River valley, the Manantali dam had adverse impacts
+on traditional production systems used by between 500–800,000 people [7]. Studies involving several
+disciplines report adverse eﬀects in ﬂood areas often used for ﬂood-recession agriculture and for
+ﬁshing [5–8].
+
+Flood recession agriculture without rainfall or irrigation, which consists of planting crops (by
+sowing, transplanting or cutting) in a ﬂood-prone area (the major riverbeds or the banks of large lakes)
+a few days after the land has been exposed to ﬂooding [9]. Crops then take advantage of the water
+stored in the soil, usually clay, during the ﬂood, and try to complete their cycle in the middle of the dry
+season. This age-old method of production [10] is mainly practiced in tropical alluvial plains with
+a very marked dry season that ensures that the ﬂood decline will be continuous. Flood-recession
+agriculture is still widespread throughout Asia, Africa and America, in ﬂood-prone areas under tropical
+climates with a marked dry season [11]. Flood-recession farming is practiced in almost all West African
+countries [12]. Practices are diverse and farmers often combine rainfed, ﬂood-recession and irrigated
+crops within agrarian systems. However, this practice is rapidly declining due to natural or artiﬁcial
+constraints linked to the ﬂooding regime in ﬂood-prone areas [8–13]. The installation of dams on
+large tropical rivers allows for the regulation of ﬂows, laminating ﬂood peaks and maintaining of
+a minimum ﬂow. Subsequently, this regulation reduces the ﬂooded area, as well as the duration of
+the ﬂood, and thus aﬀects the practice of ﬂood-recession agriculture [8]. However, the development
+of irrigation, made possible by maintaining a minimum ﬂow, can be seen as an alternative to this
+traditional agriculture [14].
+
+In the agro-ecological region of the Senegal River valley, various ecosystems and production
+activities coexist (irrigated system, ﬂood-recession farming, rainfed agriculture, ﬁshing, livestock
+activity). Flood-recession agriculture is mainly practiced in Podor, Matam, Kanel and Bakel. One of
+the most important of these crops which is sorghum (Sorghum bicolor L. Moench) grown after the
+ﬂood recedes completely during the dry season is called ﬂood-recession sorghum. Despite a low and
+very uncertain production (0 to 800 kg/ha), ﬂood-recession sorghum is an important element of an
+integrated agro-ecological system. Sorghum, along with cowpea (Vigna unguiculata), are important
+in culinary traditions and food security strategies [15]. Other crops such as sweet potato (Ipomoea
+batatas) or maize (Zea mays) are also grown in areas closer to the river. In Podor, Matam and Kanel,
+where sorghum is more widely cultivated, ﬂood-recession crops were practiced, respectively, by 43.4%,
+36.7% and 21.7% of rural households in 2013 [16–18]. The ﬂooded areas were estimated at 95,000
+ha on average from 1987 to 2015, and the areas sown annually reached 49,816 ha between 1988 and
+2000 [19]. Together with irrigated and rainfed crops, it contributes to food security of populations (and
+their herds) and their resilience. The most limiting factor for this crop is the water stored in the soil,
+which depends on climatic and hydrological hazards, as well as on the management of dams installed
+upstream and downstream of the area. This management of dams generally prioritizes hydroelectric
+production and irrigation support at the expense of ﬂood [20]. This cropping system appears to have
+been neglected in political choices and has beneﬁted from little research in recent decades. As part of a
+program aimed at optimizing the reservoirs’ management, several studies have been carried out on
+the propagation of ﬂows, as well as on the satisfaction of the objectives assigned to the management
+of dams according to the available water resource [21,22]. Other studies focused on modeling of the
+rainfall-discharge relationship in the upper basin [23,24] and on the impacts of the Manantali dam on
+downstream production systems [8–13]. In the region, there is also a hydrological data sharing system
+that provides information on the river level of the day before and whether the level is rising or falling.
+However, more information on the relationships between the river level and the ﬂooded area would be
+useful to support early warning of ﬂood and farmers’ adaptation strategies. The objective of this study
+is to seek such information in a case study that could then be applied and extrapolated across other
+
+Atmosphere 2020, 11, 1192
+
+3 of 21
+
+parts of the ﬂoodplain. Another contribution of this study is also the use of high spatial resolution
+satellite imagery in the analysis of ﬂooded surfaces.
+
+In the study of ﬂood areas, the use of satellite images, GIS and other image-processing tools can
+be of great help. Wang et al. 2018 [25] review the application of these methods for water resources and
+ﬂood risk management. Modes of climate variability have been shown to control the magnitude [26]
+and timing [27] of the annual ﬂood. In this study, an analysis of recent hydraulic data of the Senegal
+River was carried out to better understand their impact on agriculture. An analysis of high spatial and
+temporal resolution satellite images (Sentinel-2A) was performed on one of the large basins (Podor)
+to estimate the ﬂooded areas using the Normalized Diﬀerence Water Index (NDWI). In a context of
+increased climate variability, the need to reduce uncertainties justiﬁes seeking the possibility of using
+climate services able to provide localized information to help farmers and communities to better adapt
+their resilience strategies. This information should be based on a good knowledge of the relationships
+between ﬂoods and hydro-climatic variables, such as rainfall and river levels. The study explored
+potential relationships between estimated ﬂooded areas and the river level. Finally, an analysis of
+agricultural practices was carried out to better understand the resilience of this cropping system to the
+prevailing water constraints.
+
+2. Materials and Methods
+
+The middle valley is located along the Senegal River (Figure 1a) in its north-eastern part and
+covers a vast alluvial plain 10 to 20 km wide [28]. The major bed has a complex system of distributaries
+and depressions (basins) that are ﬂooded during the annual ﬂood (Figure 2). Among the basins,
+that of Podor surrounded on three sides by the Senegal River (Figure 1b) covers about 3000 ha.
+Podor commune, which gives its name to the basin, is located on the eastern side and has a dyke for
+protection against ﬂooding.
+
+Figure 1. Senegal River Basin and Valley with the Podor basin in red square (a); Google Earth image of
+the Podor basin of 12 September 2019 (b).
+
+Atmosphere 2020, 11, x FOR PEER REVIEW 3 of 20  In the study of flood areas, the use of satellite images, GIS and other image-processing tools can be of great help. Wang et al. 2018 [25] review the application of these methods for water resources and flood risk management. Modes of climate variability have been shown to control the magnitude [26] and timing [27] of the annual flood. In this study, an analysis of recent hydraulic data of the Senegal River was carried out to better understand their impact on agriculture. An analysis of high spatial and temporal resolution satellite images (Sentinel-2A) was performed on one of the large basins (Podor) to estimate the flooded areas using the Normalized Difference Water Index (NDWI). In a context of increased climate variability, the need to reduce uncertainties justifies seeking the possibility of using climate services able to provide localized information to help farmers and communities to better adapt their resilience strategies. This information should be based on a good knowledge of the relationships between floods and hydro-climatic variables, such as rainfall and river levels. The study explored potential relationships between estimated flooded areas and the river level. Finally, an analysis of agricultural practices was carried out to better understand the resilience of this cropping system to the prevailing water constraints. 2. Materials and Methods The middle valley is located along the Senegal River (Figure 1a) in its north-eastern part and covers a vast alluvial plain 10 to 20 km wide [28]. The major bed has a complex system of distributaries and depressions (basins) that are flooded during the annual flood (Figure 2). Among the basins, that of Podor surrounded on three sides by the Senegal River (Figure 1b) covers about 3000 ha. Podor commune, which gives its name to the basin, is located on the eastern side and has a dyke for protection against flooding.  Figure 1. Senegal River Basin and Valley with the Podor basin in red square (a); Google Earth image of the Podor basin of 12 September 2019 (b). Atmosphere 2020, 11, 1192
+
+4 of 21
+
+Figure 2. Proﬁle of a ﬂood-recession farming basin.
+
+The climate of the area is marked by the alternation of three distinct seasons: a cool dry season
+from November to February, a hot dry season from March to June and ﬁnally, a rainy season from
+July to October. The rainfall (R) is concentrated between August and September and varied over
+the last decades between less than 300 mm in the downstream part (Podor) and more than 500 mm
+in the upstream part (Bakel) [29]. The high reference evapotranspiration (ET0) exceeds 1500 mm
+per year [30], and a warm and dry wind (Harmattan) is observed between March and June. Figure 3
+shows the diﬀerent climatic parameters and the Reference Evapotranspiration computed using the FAO
+(Food and Agriculture Organization) guidelines [31]. These climatic conditions are marked by high
+inter-annual variability and have experienced signiﬁcant variations over the last decades (Figure 3a,b).
+
+Figure 3. Climatic parameters and reference evapotranspiration (computed using the FAO (Food and
+Agriculture Organization) guidelines) in Podor (1980–2009); inter-annual variation in temperature and
+relative humidity (a), rainfall and reference evapotranspiration (b); monthly minimum and maximum
+temperature (c) and relative humidity (d); monthly and cumulative reference evapotranspiration (e) and
+rainfall (f). Data source: Agence Nationale de l’Aviation Civile et de la Météorologie (ANACIM).
+
+Atmosphere 2020, 11, x FOR PEER REVIEW 4 of 20   Figure 2. Profile of a flood-recession farming basin. The climate of the area is marked by the alternation of three distinct seasons: a cool dry season from November to February, a hot dry season from March to June and finally, a rainy season from July to October. The rainfall (R) is concentrated between August and September and varied over the last decades between less than 300 mm in the downstream part (Podor) and more than 500 mm in the upstream part (Bakel) [29]. The high reference evapotranspiration (ET0) exceeds 1500 mm per year [30], and a warm and dry wind (Harmattan) is observed between March and June. Figure 3 shows the different climatic parameters and the Reference Evapotranspiration computed using the FAO (Food and Agriculture Organization) guidelines [31]. These climatic conditions are marked by high inter-annual variability and have experienced significant variations over the last decades (Figure 3a,b).  Figure 3. Climatic parameters and reference evapotranspiration (computed using the FAO (Food and Agriculture Organization) guidelines) in Podor (1980–2009); inter-annual variation in temperature and relative humidity (a), rainfall and reference evapotranspiration (b); monthly minimum and maximum temperature (c) and relative humidity (d); monthly and cumulative reference evapotranspiration (e) and rainfall (f). Data source: Agence Nationale de l’Aviation Civile et de la Météorologie (ANACIM). Atmosphere 2020, 11, x FOR PEER REVIEW 4 of 20   Figure 2. Profile of a flood-recession farming basin. The climate of the area is marked by the alternation of three distinct seasons: a cool dry season from November to February, a hot dry season from March to June and finally, a rainy season from July to October. The rainfall (R) is concentrated between August and September and varied over the last decades between less than 300 mm in the downstream part (Podor) and more than 500 mm in the upstream part (Bakel) [29]. The high reference evapotranspiration (ET0) exceeds 1500 mm per year [30], and a warm and dry wind (Harmattan) is observed between March and June. Figure 3 shows the different climatic parameters and the Reference Evapotranspiration computed using the FAO (Food and Agriculture Organization) guidelines [31]. These climatic conditions are marked by high inter-annual variability and have experienced significant variations over the last decades (Figure 3a,b).  Figure 3. Climatic parameters and reference evapotranspiration (computed using the FAO (Food and Agriculture Organization) guidelines) in Podor (1980–2009); inter-annual variation in temperature and relative humidity (a), rainfall and reference evapotranspiration (b); monthly minimum and maximum temperature (c) and relative humidity (d); monthly and cumulative reference evapotranspiration (e) and rainfall (f). Data source: Agence Nationale de l’Aviation Civile et de la Météorologie (ANACIM). Atmosphere 2020, 11, 1192
+
+5 of 21
+
+Despite its agricultural and pastoral potential, the region is one of the poorest in the country and
+is experiencing a signiﬁcant rural exodus. Agriculture is the main source of employment and income
+for more than 70% of the population estimated in 2013 at 1,018,213 inhabitants for the departments of
+Podor, Matam, Kanel and Bakel [16–18]. Sorghum is a staple food and crop residues provide fodder at
+a time of year when pasture is scarce. For many farmers who do not have access to irrigated facilities,
+these ﬂood-recession crops are a complement to rainfed crops that are subject to the quality of rainy
+season. For those who practice it, ﬂood-recession farming remains attractive, because it does not
+require any ﬁnancial investment that leads to debt, or any collective organization, a source of constraint
+in the realization of agricultural work [15].
+
+Soils used for ﬂood-recession sorghum have a good percentage of clay (more than 30%), and the
+most clayey soils where shrinkage cracks develop when they dry out, have more than 50% clay.
+Their depth is variable (0.5 to more than 2 m) and their permeability is low, with a saturated hydraulic
+conductivity ranging from 1 mm/d for the most clayey soil, to more than 10 cm/d for soil with less
+clay [32].
+
+The ﬂood importance (duration and extent of areas), which is a function of the river regime,
+varies greatly from year to year and determines the areas that can be sown. The ﬂooding of numerous
+settling basins allows the soil to be recharged with water and ﬁne fertilizing sediments for ﬂood-recession
+crops and then sowing takes place at the rhythm of ﬂood receding. The cropping campaign takes place
+between October (in the upstream part) or November (in the downstream part) and March, when the
+climate is dry and cool, especially between December and February (Figure 3c,d).
+
+The Senegal River originates at the conﬂuence of the Baﬁng and Bakoye tributaries, and is fed a little
+further downstream by the Faleme. Two large dams (Diama and Manantali) were constructed in the
+1980s to regulate the river regime with several objectives: the Diama dam built towards the mouth (27 km
+upstream of Saint-Louis) aims to prevent salinization of water during low water periods and to keep the
+water level high enough (reducing pumping costs); the Manantali reservoir-dam (capacity 11.3 billion m3
+and useful volume of 8 billion m3) is intended for hydroelectric production, while supporting other uses
+(drinking water supply, irrigation, ﬂooding and later navigation). Downstream the Manantali dam,
+the Felou dam was then built, and another one (Gouina) is under construction. Two other dams are also
+planned, one (Koukoutamba) on the Baﬁng and the other (Gourbassi) on the Faleme. It should be noted
+that in 2003, a breach was made 19 km upstream of the natural river mouth, i.e., 7 km downstream of
+Saint-Louis, to reduce the risk of ﬂooding in this city. Prior to this development, the water discharged
+into the ocean through the natural mouth contributed to reducing the salinity of the water resources
+downstream of the Diama dam, particularly in the Gandiolais area, where major market gardening
+activities use the water table.
+
+Information on the water resources and river management was obtained from OMVS (Organisation
+pour la Mise en Valeur du Fleuve Sénégal), the international basin agency that groups the four bordering
+countries (Guinea, Mali, Mauritania, Senegal), from Agriculture and Hydraulic Services and within the
+framework of various research projects (Agricora/Generia, WEFE-Senegal). Hydraulic data on the river
+are shared by the Saint-Louis Regional Hydraulic Division with water sector actors (administrations,
+producers, local communities, research structures). This monitoring is particularly important to
+provide alerts related to ﬂood risks in localities close to the river (Bakel, Matam, Podor and Saint-Louis)
+during the rainy season. The daily hydraulic data of the last ﬁve years (2015–2019) used concern ﬁve
+localities located from upstream to downstream of the river (Manantali, Bakel, Matam, Podor and
+Diama). The parameters analyzed are river level at limnimetric scales (recorded at 8:00 a.m. and
+6:00 p.m.) and ﬂows at the Manantali and Diama dams. River levels based on the National Geographic
+Institute (IGN) system, were obtained knowing altitudes of the zero of limimetric scales.
+
+Relationships between variables related to the river regime were analyzed. A regression analysis
+between river levels at Bakel and Matam was performed using root mean square error (RMSE) and the
+R2 determination coeﬃcient. A value of R2 close to 1 indicates a good regression model between two
+considered variables. The volumes of water released at the Diama and Manantali dams were obtained
+
+Atmosphere 2020, 11, 1192
+
+6 of 21
+
+by considering the ﬂow measured at 8 a.m. as the daily average and multiplying it by the duration of
+one day.
+
+Analysis of the Podor Basin ﬂooding was performed using satellite images (Sentinel-2A) from
+years 2015 to 2019. For a good estimate of the ﬂooded surface, it is important to have images with high
+spatial and temporal resolution and this is why we have chosen the Sentinel-2A images. The used
+images have a spatial resolution of 10 × 10 m2 (B03 band (GREEN 560 nm) and B08 band (near infrared
+(NIR) 842 nm)) and a temporal resolution of 10 days (Tile Number: T28QED). The dates of the selected
+images range from July to December to target the ﬂood-recession period of the river. Some images
+with high cloud cover could not be used. These images provided by the European Space Agency [33],
+are also available at the United States Geological Survey website [34]. To visualize the area of interest,
+the QGIS 3.12 (Quantum Geographical Information System, version 3.12) open source software was
+used, but due to constraints of area’s cutting shape, a portion of the river is included in the area
+(Figure 4b). The NDWI index (Equation (1)) deﬁned by McFeeters [35] was used to estimate the ﬂooded
+area. This index uses green and near infrared (NIR) wavelengths to detect changes in water bodies
+and a value of NDWI > 0 indicates the presence of a water body. Hanqiu Xu et al. [36] proposed the
+Modiﬁed Normalized Diﬀerence Water Index (MNDWI), which improves results in built-up areas,
+but in our case, it was not considered necessary to use this modiﬁcation, because the agricultural area
+studied is not built-up. There is another index also noted NDWI [37] but it is used for plant-water.
+Other methods such as NDX (spectral mixing model) [38] or DVEL (value diﬀerence between EVI
+(enhanced vegetation index) and LSWI (land surface water index)) [39] require diﬀerent data from those
+used in this study. A test performed on images of the lake Guiers and the Podor basin (Figure 4) shows
+that NDWI values greater than or equal to 0 makes it possible to clearly distinguish the water body.
+
+NDWI =
+
+Green − NIR
+Green + NIR
+
+(1)
+
+Figure 4. Use of Normalized Diﬀerence Water Index (NDWI) tested on the images of Lake Guiers
+(a) and Podor basin (b). (In Figure 4b, a portion of the river is included due to the constraints of area’s
+cutting shape).
+
+Atmosphere 2020, 11, x FOR PEER REVIEW 6 of 20  obtained by considering the flow measured at 8 a.m. as the daily average and multiplying it by the duration of one day. Analysis of the Podor Basin flooding was performed using satellite images (Sentinel-2A) from years 2015 to 2019. For a good estimate of the flooded surface, it is important to have images with high spatial and temporal resolution and this is why we have chosen the Sentinel-2A images. The used images have a spatial resolution of 10 × 10 m2 (B03 band (GREEN 560 nm) and B08 band (near infrared (NIR) 842 nm)) and a temporal resolution of 10 days (Tile Number: T28QED). The dates of the selected images range from July to December to target the flood-recession period of the river. Some images with high cloud cover could not be used. These images provided by the European Space Agency [33], are also available at the United States Geological Survey website [34]. To visualize the area of interest, the QGIS 3.12 (Quantum Geographical Information System, version 3.12) open source software was used, but due to constraints of area’s cutting shape, a portion of the river is included in the area (Figure 4b). The NDWI index (Equation (1)) defined by McFeeters [35] was used to estimate the flooded area. This index uses green and near infrared (NIR) wavelengths to detect changes in water bodies and a value of NDWI > 0 indicates the presence of a water body. Hanqiu Xu et al. [36] proposed the Modified Normalized Difference Water Index (MNDWI), which improves results in built-up areas, but in our case, it was not considered necessary to use this modification, because the agricultural area studied is not built-up. There is another index also noted NDWI [37] but it is used for plant-water. Other methods such as NDX (spectral mixing model) [38] or DVEL (value difference between EVI (enhanced vegetation index) and LSWI (land surface water index)) [39] require different data from those used in this study. A test performed on images of the lake Guiers and the Podor basin (Figure 4) shows that NDWI values greater than or equal to 0 makes it possible to clearly distinguish the water body. NDWI(cid:3404)Green(cid:3398)NIRGreen(cid:3397)NIR (1)  Figure 4. Use of Normalized Difference Water Index (NDWI) tested on the images of Lake Guiers (a) and Podor basin (b). (In Figure 4b, a portion of the river is included due to the constraints of area’s cutting shape). However, in the Podor basin, we can distinguish points located in the flooded zone but whose index value is between 0 and −0.05. These points correspond to trees found in the basin and are Atmosphere 2020, 11, 1192
+
+7 of 21
+
+However, in the Podor basin, we can distinguish points located in the ﬂooded zone but whose
+index value is between 0 and −0.05. These points correspond to trees found in the basin and are
+therefore part of the ﬂooded area. A value of NDWI greater than or equal to −0.05, was thus considered
+to estimate the ﬂooded area. A numerical analysis of the images was performed, and the total ﬂooded
+area was calculated knowing the number of pixels respecting the NDWI threshold and the area of a
+pixel which is 100 m2. Finally, a comparison of river levels and calculated ﬂooded areas (at the same
+day or with a time lag) was performed to analyse potential relationship between these parameters.
+The Excel and R software were used in these analyses.
+
+A simulation was performed for a hypothetical sorghum crop by comparing the crop potential
+evapotranspiration with the available soil water at sowing. Potential evapotranspiration (ETP) of
+a crop for a given period is estimated by the relation ETP = Kc × ET0 [31], where Kc and ET0 are,
+respectively, the crop coeﬃcient and the reference evapotranspiration. Water stress risk exists if soil
+water conditions do not allow ETP to be met. In the region, there are diﬀerent sorghum varieties
+which have diﬀerent growing cycles ranging from 80 days to 140 days. In our hypothesis, a sorghum
+crop with 120 day growing cycle is considered and ET0 is computed using the FAO method for the
+mean climate conditions. Values of minimum ETP (ETPmin) and maximum ETP (ETPmax) are also
+calculated using Kc values suggested by Allen et al. [31]. In this example, we consider a soil proﬁle of
+thickness z = 1 m with a ﬁeld capacity θfc = 35% and a wilting point θwp = 17%, corresponding to the
+main soil types used for sorghum in the area [32]. We assume that there is not precipitation, not runoﬀ
+and not drainage (the soil is at ﬁeld capacity at sowing) and, thus, the change in soil water corresponds
+to the actual evapotranspiration (ETR). The soil water balance can then be written as ∆S = ETR, where
+∆S is the soil’s water stock variation with ETR = ETP under the simulation conditions.
+
+In order to analyze strategies adopted by farmers to cope with water stress risk, ﬁeld campaigns
+were carried out for observations and diagnosis of the used practices [40]. These investigations [40]
+(not presented here) included the use of agro-meteorological stations and soil moisture measuring
+devices provided by the IAEA/RAF 5079 project. Information was also obtained during workshops and
+interviews with farmers in Podor and Matam. The results of this study, as well as other innovations
+proposed by agronomic research, are discussed, with a view to their use by a climate service.
+
+3. Results
+
+3.1. Flood Management at Dams
+
+Upstream levels of the river and ﬂows measured at 8 a.m. at the Manantali and Diama dams,
+
+as well as volumes released annually between 2016 and 2019 are shown in Figure 5.
+
+At the Manantali reservoir-dam, river levels varied between 193.24 and 208.23 m, whereas normal
+and exceptional elevations are, respectively, 208.05 and 211 m (IGN). The river levels drop regularly
+(Figure 5a) until the end of dry season, before rising again during the rainy season. The regular ﬂow
+(Figure 5c) is explained by regulation eﬀorts related to its hydroelectric function.
+
+Volumes released at Manantali (Figure 5e) are lower than those at Diama, which means that
+other tributaries, particularly the Faleme, contribute for a large part of inﬂows found downstream
+and to the ﬂooding. In fact, the contributions of the other tributaries are much more important than
+the simple diﬀerence between the volumes ﬂowing through Diama and Manantali, as explained by
+Bader et al. [28]. These authors found that on average over the period 1950–2011, the volume ﬂowing
+through Manantali represented 49% of the volume ﬂowing through Bakel. Thus, half of the ﬂow in
+the valley does not come from the Baﬁng basin at Manantali, but from other tributaries, of which the
+Faleme and Bakoye are the most important. Finally, on average, over the period 1995–2010, the volume
+ﬂowing through Diama represented 77% of the volume ﬂowing through Bakel. The missing is mainly
+due to evaporation losses in the valley [28]. We can therefore retain that a large part of the ﬂood is still
+natural, but the planned construction of new reservoir-dams on these tributaries would make this ﬂood
+totally artiﬁcial. Dam’s management at Manantali is based on a manual that recommends real-time
+
+Atmosphere 2020, 11, 1192
+
+8 of 21
+
+hydrological monitoring, as well as safety and management instructions, notably the minimum and
+maximum ﬂows to be maintained [41]. At the Diama anti-salt dam, the river levels (IGN) varied
+between 1.5 in rainy season and 2.29 m in the dry season (Figure 5b). For reasons related to the dam
+safety and to avoid ﬂood risks, the water level is kept low during the rainy season. In the dry season
+the river level is kept high without exceeding 2.5 m, to support upstream irrigation activities. This river
+level management at the Diama dam has upstream eﬀects at Podor mainly when the river level is
+low [42], and opening the dam during rainy season is not favorable to ﬂooding of ﬂood-recession
+farming areas. On the other hand, dam management made it possible to have fairly good levels (more
+than 2.2 m) to support irrigation during the dry season following the low rainfall of 2017 rainy season
+(Figure 6). However, it can be seen that, in 2019, rainfall was also low in the downstream areas, yet this
+did not prevent a good level of the river and a good ﬂooding of the basin. In Kedougou, closer to the
+upper basin, rainfall in 2017 was 1192 mm, compared to 1423 mm in 2019. This shows the important
+impact of the hydro-meteorological conditions in the upper basin, as well as the land and water use
+developments that are being carried out there. At the Diama dam, ﬂows were highly variable from 0 to
+more than 1900 m3/s (Figure 5d) and released volumes (Figure 5f) exceeded 10 km3 except in 2017.
+
+Figure 5. River levels (a,b), Flows (c,d) and volumes (e,f) at the Manantali and Diama dams (2016–2019).
+Data source: Regional Hydraulic Division of Saint-Louis/Senegal.
+
+Atmosphere 2020, 11, x FOR PEER REVIEW 8 of 20  season. In the dry season the river level is kept high without exceeding 2.5 m, to support upstream irrigation activities. This river level management at the Diama dam has upstream effects at Podor mainly when the river level is low [42], and opening the dam during rainy season is not favorable to flooding of flood-recession farming areas. On the other hand, dam management made it possible to have fairly good levels (more than 2.2 m) to support irrigation during the dry season following the low rainfall of 2017 rainy season (Figure 6). However, it can be seen that, in 2019, rainfall was also low in the downstream areas, yet this did not prevent a good level of the river and a good flooding of the basin. In Kedougou, closer to the upper basin, rainfall in 2017 was 1192 mm, compared to 1423 mm in 2019. This shows the important impact of the hydro-meteorological conditions in the upper basin, as well as the land and water use developments that are being carried out there. At the Diama dam, flows were highly variable from 0 to more than 1900 m3/s (Figure 5d) and released volumes (Figure 5f) exceeded 10 km3 except in 2017.  Figure 5. River levels (a,b), Flows (c,d) and volumes (e,f) at the Manantali and Diama dams (2016–2019). Data source: Regional Hydraulic Division of Saint-Louis/Senegal. Atmosphere 2020, 11, 1192
+
+9 of 21
+
+Figure 6. Annual rainfall in Bakel, Matam and Podor (2015–2019). Data source: Agence Nationale
+de l’Aviation Civile et de la Météorologie (ANACIM).
+
+3.2. River Level at the Main Stations in the Middle Valley
+
+Figure 7a–c shows variations in the river levels at the three stations of Bakel, Matam, and Podor
+located upstream to downstream the river. Threshold alert levels (at the limnimetric scale) are 10 m
+for Bakel, 8 m for Matam and 5 m for Podor, and correspond, respectively, to IGN levels of 21.16 m,
+14.32 m and 4.56 m. The alert level is reached in September to early-October in 2015, 2016, 2018 and
+2019 in Matam and Podor, which is located on the edge of a basin. The beneﬁt of having a large ﬂooded
+area for ﬂood recession farming in Podor basin is therefore limited by the risks of reaching the alert
+level, and we can note the low river levels in 2017, which was a low rainy year in the Senegal River
+Basin. On Figure 7d–f, we observe a correlation in the river levels recorded at Bakel and Matam on
+the same day or with a time lag. The highest coeﬃcient of determination R2 = 0.98 is obtained for
+correlation between levels in Bakel at day d and the levels in Matam, four days later (d + 4). This type
+of relation can be useful to predict levels of the river in Matam from those in Bakel and, in particular,
+the risks of reaching the alert level. On the other hand, a correlation is not noted between the river
+levels in Matam and Podor where the riverbed widens considerably. This lack of correlation could be
+explained by the fact that the Matam limnigram is only linked to the ﬂows coming from upstream,
+whereas the Podor limnigram depends both on the ﬂows coming from upstream and, in case of low
+ﬂows, on the level maintained at Diama. On the other hand, the propagation time of the level signal
+between the two stations is much longer in high water periods than in low water periods, because of
+the ﬂooding of the major bed.
+
+Atmosphere 2020, 11, x FOR PEER REVIEW 9 of 20   Figure 6. Annual rainfall in Bakel, Matam and Podor (2015–2019). Data source: Agence Nationale de l’Aviation Civile et de la Météorologie (ANACIM). 3.2. River Level at the Main Stations in the Middle Valley Figure 7a–c shows variations in the river levels at the three stations of Bakel, Matam, and Podor located upstream to downstream the river. Threshold alert levels (at the limnimetric scale) are 10 m for Bakel, 8 m for Matam and 5 m for Podor, and correspond, respectively, to IGN levels of 21.16 m, 14.32 m and 4.56 m. The alert level is reached in September to early-October in 2015, 2016, 2018 and 2019 in Matam and Podor, which is located on the edge of a basin. The benefit of having a large flooded area for flood recession farming in Podor basin is therefore limited by the risks of reaching the alert level, and we can note the low river levels in 2017, which was a low rainy year in the Senegal River Basin. On Figure 7d–f, we observe a correlation in the river levels recorded at Bakel and Matam on the same day or with a time lag. The highest coefficient of determination R2 = 0.98 is obtained for correlation between levels in Bakel at day d and the levels in Matam, four days later (d + 4). This type of relation can be useful to predict levels of the river in Matam from those in Bakel and, in particular, the risks of reaching the alert level. On the other hand, a correlation is not noted between the river levels in Matam and Podor where the riverbed widens considerably. This lack of correlation could be explained by the fact that the Matam limnigram is only linked to the flows coming from upstream, whereas the Podor limnigram depends both on the flows coming from upstream and, in case of low flows, on the level maintained at Diama. On the other hand, the propagation time of the level signal between the two stations is much longer in high water periods than in low water periods, because of the flooding of the major bed. Atmosphere 2020, 11, 1192
+
+10 of 21
+
+Figure 7. River levels (IGN) at the Bakel, Matam and Podor stations from 2015 to 2019 (a–c); river levels
+correlations for Bakel and Matam stations at the same day or with a time lag (d–f). Data source:
+Regional Hydraulic Division of Saint-Louis/Senegal.
+
+3.3. River Level and Flooded Area at Podor
+
+This section presents the relations between river levels previously analyzed and the ﬂooded areas
+for the Podor basin case study. Using the NDWI index ≥−0.05, evolution of the annually ﬂooded area
+in the Podor basin is shown in Figure 8 (NDWI) and Figure 9 (water and non-water). Depending on the
+availability of satellite images, left images show the period just before the ﬂood, images in the middle
+are close to the maximum ﬂood while images on right are at the end of the ﬂood receding. Flood comes
+from the southwestern part of the basin and gradually spreads eastward to reach a maximum in late
+September/early-October. In 2017, the low ﬂood magnitude compromised the sorghum campaign
+throughout the valley. Ideally, the areas should remain ﬂooded for a fairly long time (at least 2 weeks),
+but also be released before November, but some parts of the basins may remain covered by water until
+the ﬁrst or second week of November (2015 and 2016). This delays sowing, with the risk that crop cycle
+lasting up to periods of high evaporation demand. The area that is the ﬁrst to be ﬂooded is also the last
+to be released and can remain under water for more than two months. Figure 10 shows in red color,
+the areas ﬂooded less than 15 days in 2016, and which are mostly located on the edge of the basin.
+
+Atmosphere 2020, 11, x FOR PEER REVIEW 10 of 20   Figure 7. River levels (IGN) at the Bakel, Matam and Podor stations from 2015 to 2019 (a–c); river levels correlations for Bakel and Matam stations at the same day or with a time lag (d–f). Data source: Regional Hydraulic Division of Saint-Louis/Senegal. 3.3. River Level and Flooded Area at Podor This section presents the relations between river levels previously analyzed and the flooded areas for the Podor basin case study. Using the NDWI index ≥−0.05, evolution of the annually flooded area in the Podor basin is shown in Figure 8 (NDWI) and Figure 9 (water and non-water). Depending on the availability of satellite images, left images show the period just before the flood, images in the middle are close to the maximum flood while images on right are at the end of the flood receding. Flood comes from the southwestern part of the basin and gradually spreads eastward to reach a maximum in late September/early-October. In 2017, the low flood magnitude compromised the sorghum campaign throughout the valley. Ideally, the areas should remain flooded for a fairly long time (at least 2 weeks), but also be released before November, but some parts of the basins may remain covered by water until the first or second week of November (2015 and 2016). This delays sowing, with the risk that crop cycle lasting up to periods of high evaporation demand. The area that is the first to be flooded is also the last to be released and can remain under water for more than two months. Figure 10 shows in red color, the areas flooded less than 15 days in 2016, and which are mostly located on the edge of the basin. Atmosphere 2020, 11, 1192
+
+11 of 21
+
+Figure 8. Flooding of the Podor basin based on NDWI on Sentinel-2A imagery (2015–2019). (a–o): left
+images show the period just before the ﬂood, images in the middle are close to the maximum ﬂood
+while images on right are at the end of the ﬂood receding.
+
+Atmosphere 2020, 11, x FOR PEER REVIEW 11 of 20   Figure 8. Flooding of the Podor basin based on NDWI on Sentinel-2A imagery (2015–2019). (a–o): left images show the period just before the flood, images in the middle are close to the maximum flood while images on right are at the end of the flood receding.  Atmosphere 2020, 11, 1192
+
+12 of 21
+
+Figure 9. Flooding of the Podor basin: (water and non-water (2015–2019)). (a–o): left images show the
+period just before the ﬂood, images in the middle are close to the maximum ﬂood while images on
+right are at the end of the ﬂood receding.
+
+Atmosphere 2020, 11, x FOR PEER REVIEW 12 of 20   Figure 9. Flooding of the Podor basin: (water and non-water (2015–2019)). (a–o): left images show the period just before the flood, images in the middle are close to the maximum flood while images on right are at the end of the flood receding.  Atmosphere 2020, 11, 1192
+
+13 of 21
+
+Figure 10. Surface areas ﬂooded for less (and more) than 15 days in the Podor basin in 2016.
+
+Figure 11 shows the annual evolution of the ﬂooded area S (ha) and that of the river level h (cm)
+and a similar evolution can be seen between the two curves. The lack of images at certain periods or
+the existence of clouds did not allow a higher accuracy on the maximum surface reached. In order to
+take into account the portions of the watercourse present in the image, an estimated constant value of
+150 ha was subtracted from the calculated area to obtain the ﬂooded area The duration of submersion
+depends on the spread of the ﬂood (duration of the maintenance of the high river level). For a given
+surface, the minimum duration of submersion can be estimated by joining horizontally the rising and
+falling parts of the ﬂooded surface curve. Looking for a relationship between the river level and the
+ﬂooded area, the best correlation (R2 = 0.92) was obtained between the river level at day 1 and the
+ﬂooded surface at day 5 (Figure 11f).
+
+Atmosphere 2020, 11, x FOR PEER REVIEW 13 of 20   Figure 10. Surface areas flooded for less (and more) than 15 days in the Podor basin in 2016. Figure 11 shows the annual evolution of the flooded area S (ha) and that of the river level h (cm) and a similar evolution can be seen between the two curves. The lack of images at certain periods or the existence of clouds did not allow a higher accuracy on the maximum surface reached. In order to take into account the portions of the watercourse present in the image, an estimated constant value of 150 ha was subtracted from the calculated area to obtain the flooded area The duration of submersion depends on the spread of the flood (duration of the maintenance of the high river level). For a given surface, the minimum duration of submersion can be estimated by joining horizontally the rising and falling parts of the flooded surface curve. Looking for a relationship between the river level and the flooded area, the best correlation (R2 = 0.92) was obtained between the river level at day 1 and the flooded surface at day 5 (Figure 11f). Atmosphere 2020, 11, 1192
+
+14 of 21
+
+Figure 11. River level (IGN) and ﬂooded surface in the Podor basin from 2015 to 2019 (a–e); river level
+and ﬂooded surface correlation (f).
+
+3.4. Resilience of Agricultural Practices to the Water Stress Risks
+
+This section provides the results of simulating a hypothetical sorghum crop considering the
+calculated reference ET0 values and the usual sorghum crop coeﬃcient values to estimate the crop
+evapotranspiration [31]. This simulation shows that the soil moisture over a depth of one meter
+theoretically allows only 35 to 50 days (depending on ETPmin or ETPmax) of evapotranspiration
+without water stress (Figure 12). This result is discussed (Section 4) in relation to the values of the
+simulation parameters and the sorghum’s ability to withstand water stress.
+
+Atmosphere 2020, 11, x FOR PEER REVIEW 14 of 20   Figure 11. River level (IGN) and flooded surface in the Podor basin from 2015 to 2019 (a–e); river level and flooded surface correlation (f). 3.4. Resilience of Agricultural Practices to the Water Stress Risks This section provides the results of simulating a hypothetical sorghum crop considering the calculated reference ET0 values and the usual sorghum crop coefficient values to estimate the crop evapotranspiration [31]. This simulation shows that the soil moisture over a depth of one meter theoretically allows only 35 to 50 days (depending on ETPmin or ETPmax) of evapotranspiration without water stress (Figure 12). This result is discussed (Section 4) in relation to the values of the simulation parameters and the sorghum’s ability to withstand water stress. The performed diagnosis [40] showed that farmers have developed relevant strategies for resilience to the water stress risks. Sorghum as the main crop is a good option, as this species is known for its ability to tolerate water stress. Several seeds are sown to cope with the lack of certainty about seed quality and lack of phytosanitary treatment and this reduces the risk of having to reseed when the soil begins to be dry. However, a germination test is not carried out by farmers, although it can also help to avoid this risk. Seeds are placed at a depth of about 20 cm and covered with a light layer of sand; this increases the chances of the plant to germinate and to continue root development in a humid zone less exposed to the sun. Limiting plant population density with a spacing of more than 1 m between seedling holes, thinning and weeding are also practiced to optimize soil moisture availability. Agronomical research [40] suggests innovations such as: the use of shorter cycle varieties (80–90 days); the optimization of population density with a spacing of 90 to 100 cm between seedling holes; or a local application of nitrogen at a certain distance from the seed hole. The beneficial effect of fertilization on flood-recession sorghum in Mali is also reported by Kalifa et al. [43]. With fertilization, it can be feared that rapid crop development may deplete soil’s water stock before the sensitive reproduction phase, but it also allows the plant to make better use of the soil moisture, thanks to a deeper rooting and better exploration of the soil [14]. Knowledge on the relationship between the Atmosphere 2020, 11, 1192
+
+15 of 21
+
+Figure 12. Simulation of potential evapotranspiration (ETP) and soil’s water stock depletion for a
+hypothetical sorghum crop.
+
+The performed diagnosis [40] showed that farmers have developed relevant strategies for resilience
+to the water stress risks. Sorghum as the main crop is a good option, as this species is known for its
+ability to tolerate water stress. Several seeds are sown to cope with the lack of certainty about seed
+quality and lack of phytosanitary treatment and this reduces the risk of having to reseed when the soil
+begins to be dry. However, a germination test is not carried out by farmers, although it can also help
+to avoid this risk. Seeds are placed at a depth of about 20 cm and covered with a light layer of sand;
+this increases the chances of the plant to germinate and to continue root development in a humid zone
+less exposed to the sun. Limiting plant population density with a spacing of more than 1 m between
+seedling holes, thinning and weeding are also practiced to optimize soil moisture availability.
+
+Agronomical research [40] suggests innovations such as:
+
+the use of shorter cycle varieties
+(80–90 days); the optimization of population density with a spacing of 90 to 100 cm between seedling
+holes; or a local application of nitrogen at a certain distance from the seed hole. The beneﬁcial eﬀect of
+fertilization on ﬂood-recession sorghum in Mali is also reported by Kalifa et al. [43]. With fertilization,
+it can be feared that rapid crop development may deplete soil’s water stock before the sensitive
+reproduction phase, but it also allows the plant to make better use of the soil moisture, thanks to a
+deeper rooting and better exploration of the soil [14]. Knowledge on the relationship between the river
+level and ﬂooding (duration, extension and period) and on soils (texture, depth) can help in adaptation
+strategies (sowing period, crop varieties...).
+
+Atmosphere 2020, 11, x FOR PEER REVIEW 15 of 20  river level and flooding (duration, extension and period) and on soils (texture, depth) can help in adaptation strategies (sowing period, crop varieties...).  Figure 12. Simulation of potential evapotranspiration (ETP) and soil’s water stock depletion for a hypothetical sorghum crop. 4. Discussion Many of the natural and artificial water constraints mentioned above explain that the flooding of flood-recession areas is increasingly uncertain. Uncertainties about the flood magnitude, the dates of flooding onset and flood-receding etc. explain the high variability in production in the flood-recession farming system. These constraints could be accentuated with the river water retention project to improve navigability on the river, which will require to maintain a substantial level of the river. At the same time, the large volumes released into the ocean are causes for concern, as part of these ‘lost’ resources’ could be used to revitalize watercourses located in the Ferlo upstream (Figure 1a), which are practically no longer functioning [44]. All four countries share a common interest in giving priority to electricity generation. These countries have a vital need for electricity, the demand for which is growing by almost 10% per year. Power outages in large cities are expensive and are very badly perceived by urban populations. Guinea and Mali, the two states located upstream of the watershed, are little concerned by agriculture in the valley, and even less by flood recession agriculture [45]; they are mainly interested in hydroelectricity. The Guinean territory of the watershed, located in the Fouta Djalon mountains, provides a good part of the river’s flows and will be home to Koukoutamba, the largest dam in the basin, but Guinea’s main need is for electricity. Mali hosts the two existing hydroelectric dams, Manantali and Felou, and soon to the Gouina dam. Mali obtains most of the electricity produced by Atmosphere 2020, 11, 1192
+
+4. Discussion
+
+16 of 21
+
+Many of the natural and artiﬁcial water constraints mentioned above explain that the ﬂooding of
+ﬂood-recession areas is increasingly uncertain. Uncertainties about the ﬂood magnitude, the dates of
+ﬂooding onset and ﬂood-receding etc. explain the high variability in production in the ﬂood-recession
+farming system. These constraints could be accentuated with the river water retention project to
+improve navigability on the river, which will require to maintain a substantial level of the river. At the
+same time, the large volumes released into the ocean are causes for concern, as part of these ‘lost’
+resources’ could be used to revitalize watercourses located in the Ferlo upstream (Figure 1a), which are
+practically no longer functioning [44].
+
+All four countries share a common interest in giving priority to electricity generation.
+These countries have a vital need for electricity, the demand for which is growing by almost 10%
+per year. Power outages in large cities are expensive and are very badly perceived by urban populations.
+Guinea and Mali, the two states located upstream of the watershed, are little concerned by agriculture in
+the valley, and even less by ﬂood recession agriculture [45]; they are mainly interested in hydroelectricity.
+The Guinean territory of the watershed, located in the Fouta Djalon mountains, provides a good part
+of the river’s ﬂows and will be home to Koukoutamba, the largest dam in the basin, but Guinea’s main
+need is for electricity. Mali hosts the two existing hydroelectric dams, Manantali and Felou, and soon
+to the Gouina dam. Mali obtains most of the electricity produced by Manantali. Mali’s irrigable
+areas are mainly irrigated from the Niger River, while those irrigated from the Senegal River are very
+small. Finally, donors, major actors in the landscape, appreciate loans for hydroelectric investments,
+because they are easier to repay than loans for agriculture [46]. In this context, the requests for support
+for ﬂood peaks are not unanimous, even in the two downstream countries that could beneﬁt from
+them. There is a high risk that several years of drought will cause the water level in the Manantali
+dam to drop below the minimum. Moreover, the support by hydropower turbines in the Manantali
+dam for preventing low water ﬂow already favors hot dry season irrigation in downstream countries.
+Although many OMVS studies and documents consider ﬂood support, few believe that ﬂood-recession
+farming justiﬁes such support.
+
+The economic value of losses on ﬁshing and on ﬂood-recession farming is not evaluated, but in
+some cases, it can be imploring as pointed out by Wymenga et al. [47] in their study concerning the
+Selingue dam on the Niger River in Mali. In a study in Nigeria, Barbier and Thompson [48] also found
+that beneﬁts derived from the development of irrigated systems replace only part of the lost proﬁts
+on ﬂoodplains.
+
+With regard to peasant farming practices to cope with water stress risk, it appears that, even if they
+are based on empirical knowledge, some of them appear to be very relevant for water management.
+The fact that sorghum manages to complete its cycle despite the very limited water availability
+can be explained: (i) on the one hand, by an actual evapotranspiration much lower than potential
+evapotranspiration, and therefore by sorghum varieties that are very resistant to water stress; (ii) and
+on the other hand, by the actual Kc of these varieties being much lower than those considered in our
+simulation. Indeed, in this cropping system where the soil surface is dry for a large part of the crop
+cycle, a more adequate way would be to estimate Kc using the dual crop coeﬃcient [31] deﬁned as Kc
+= Kcb + Ke, where Ke is related to evaporation and Kcb to crop transpiration. In this context, it is the
+Kcb component that would prevail once the soil surface has become dry, even though evaporation may
+occur through the soil cracks.
+
+Information on ﬂoods (period, extension and duration) can be used as part of a climatological
+service by performing image and water level analyses during the appropriate periods of the rainy
+season, which can help for a more eﬃcient alert system.
+Instrumentation of other basins with
+limnimetric scales and other probes would provide information on a larger scale and take into account
+other parameters (rainfall, soil moisture, groundwater table), which may inﬂuence ﬂooding at the local
+level. More could be done for a climatological service and for early warning of ﬂood with the possibility
+of forecasting upstream inﬂow at Manantali dam [24]. To help predict years such as 2017, there is
+
+Atmosphere 2020, 11, 1192
+
+17 of 21
+
+reliable skill in seasonal forecasting of a wet June/July/August precipitation in West Africa [49], which is
+relevant to this study. For the Sahelian zone, forecast bulletins are produced regularly by the Agrhymet
+regional center during the rainy season. This skill can be used with seasonal hydro-meteorological
+forecast systems, some of which are freely-available globally [50]. This information can guide farmers
+on the most suitable growing sites, the timing of sowing or the opportunity to use varieties of diﬀerent
+growing cycle. With a view to improving the basins by equipping them with hydraulic gates to better
+manage the inﬂow and outﬂow of water, the use of this information could help to better manage these
+facilities. Improvement can also be done through a better use of information and communication
+tools (ICT), as is already the case for the irrigation advisory platform developed in the framework of
+the Irriwest project [51]. At the level of communities near to ﬂood-prone areas and decision-makers,
+this information can improve their anticipation capacities for risk prevention, as well as for management
+of rescue and water releases at dams.
+
+The NDWI, satellite imagery and processing tools used have proved to be very useful as a source
+of information for a climate service. They should be used on a larger scale in the valley, even if
+sometimes the presence of clouds or the unavailability of images over a period of time aﬀects the
+results. More generally, these high spatial and temporal resolution images should be better used in the
+study of ﬂoods and the development of water points in the Sahelian zone.
+
+5. Conclusions
+
+Flood-recession farming in the Senegal River Valley is conditioned by the ﬂood that replenishes the
+soil’s water reserve, but the occurrence of this ﬂood is increasingly uncertain, due to many constraints,
+in addition to those related to natural hydrological hazards.
+
+Another constraint is the highly variable spatiotemporal evolution of the ﬂooded area,
+which threatens agriculture when the ﬂood magnitude is too low or when the basins remain covered
+by water too long, delaying sowings and compromised the sorghum campaigns. However, our results
+showed that farmers have developed relevant strategies for resilience to the water stress risks (drought
+tolerant crops, multiple seeds, low planting density). This may even be improved by using innovations
+from agronomical research results such as the use of short cultivars, the optimization of population
+density and/or a local application of nitrogen at a certain distance from the seed hole.
+
+Our results showed that an important constraint is the safety issue in localities close to the basins
+and at risk of being ﬂooded with alert levels that have been reached in 4 of the 5 years in Matam and
+Podor. Indeed, the beneﬁt of having a large ﬂooded area for ﬂood recession farming in Podor basin is
+therefore limited by the risks of reaching the alert level. The high correlation found between levels in
+Bakel at day d and the levels in Matam, four days later (d + 4) could be an important indicator to be
+included in a decision support tools, based on climate services to anticipate ﬂood issues and reduce
+this constraint.
+
+Finally, an important constraint remains the intensiﬁcation of multiple water uses leading to the
+reduction of water resources available for the ﬂooding. Releases of water to support the ﬂood are
+controlled according to water levels in the reservoir-dams upstream, and with the need to satisfy
+the various uses. The construction of new dams upstream will accentuate the problem if priorities
+remain the same.
+In essence, the future of ﬂood recession farming depends above all on water
+management and allocation practices decided by OMVS and its member countries, i.e., whether
+additional dams (such as Gourbassi on the Faleme) are built and whether adequate water releases
+continue to support ﬂood recessing farming. If and when the three reservoir dams of Manantali,
+Gourbassi and Koukoutamba are in operation, almost the entire ﬂow of the river downstream from
+Kayes will be regulated. These decisions must be supported by the results of further research and
+adequate policies must seek for compromises between the sometimes contradictory needs of the
+water-energy-food-ecosystems nexus. In such a context, the large volumes released by the Diama dam
+should also be better used both for the areas upstream and downstream of the dam.
+
+Atmosphere 2020, 11, 1192
+
+18 of 21
+
+Despite the relevant practices developed by farmers to deal with the risk of water stress, it appears
+that the continuity of this kind of agriculture in the valley is called into question. As an alternative,
+the development of the basins to better control ﬂooding or supplemental irrigation, which consists of
+providing additional water to strengthen the soil’s water reserve during periods of water stress risks,
+can be considered. However, this should be accompanied by investment at the individual or collective
+level and it would then be necessary to intensify the cropping system to make it more productive.
+In any case, a better use of climate information will also be necessary. The hydraulic data sharing
+system on the Senegal River is a very important initiative that deserves to be reinforced and sustained.
+It is an important part of an early warning system, while allowing researchers who have this data to
+analyze it for better use.
+
+Author Contributions: Conceptualization, M.S.; Formal analysis, M.S., J.-C.P., A.Y.B., J.-C.B., B.S. and A.O.;
+Investigation, J.-C.P., R.N., M.C. and D.M.; Methodology, M.S., J.-C.P., A.Y.B., R.N., M.C. and A.O.; Visualization,
+A.O.; Writing—original draft, M.S.; Writing—review & editing, A.Y.B., R.N., M.C., J.-C.B. and B.S. All authors
+have read and agreed to the published version of the manuscript.
+Funding: West African Science Service Centre on Climate Change and Adapted Land Use (AGRICORA/
+GENERIA project) and European Union-Italian Agency for Development Cooperation (WEFE-Senegal project)
+and International Atomic Energy Agency (RAF 5079 project).
+Acknowledgments: The authors are grateful for the ﬁnancial support provided by the AGRICORA FSP initiative
+and the WEFE-Senegal project. They thank the Research Institute for Development (IRD) for supporting the
+‘Institut Sénégalais de Recherches Agricoles’ (ISRA). We are grateful for the ﬁnancial support and equipment and
+training provided by the IAEA/RAF 5079 project.
+Conﬂicts of Interest: The authors declare no conﬂict of interest.
+
+References
+
+1.
+
+2.
+
+3.
+
+4.
+
+5.
+
+6.
+
+7.
+
+8.
+
+9.
+
+10.
+
+11.
+
+Jun, X.; Chen, Y.D. Water problems and opportunities in the hydrological sciences in China. Hydological Sci. J.
+2001, 46, 907–921. [CrossRef]
+Rosegrant, M.W.; Cai, X. Water constraints and environmental impacts of agricultural growth. Am. J.
+Agric. Econ. 2002, 84, 832–838. [CrossRef]
+Speth, P.; Christoph, M.; Diekkrugger, B. Impact of Global Change on the Hydrological Cycle in Western and
+Northern Africa; Springer: Berlin/Heidelberg, Germany, 2010; p. 675. [CrossRef]
+Compagnucci, R.; da Cunha, L.; Hanaki, K.; Howe, C.; Mailu, G.; Shiklomanov, I.; Stakhiv, E.
+Hydrology and water resources. In Climate Change 2001-Impacts, Adaptation and Vulnerability; McCarthy, J.J.,
+Canziani, O.F., Leary, N.A., Dokken, D.J., White, K.S., Eds.; Cambridge University Press: London, UK,
+2001; pp. 191–233. Available online: https://www.ipcc.ch/site/assets/uploads/2018/03/wg2TARchap4.pdf
+(accessed on 30 June 2020).
+Richter, B.D.; Postel, S.; Revenga, C.; Scudder, T.; Lehner, B.; Churchill, A.; Chow, M. Lost in development’s
+shadow: The downstream human consequences of dams. Water Altern. 2010, 3, 14–42. Available online:
+http://www.water-alternatives.org/index.php/volume3/v3issue2/80-a3-2-3/ﬁle (accessed on 28 May 2020).
+Tilmant, A.; Pina, J.; Salman, M.; Casarotto, C.; Ledbi, F.; Pek, E. Probabilistic trade-off assessment between
+competing and vulnerable water users-the case of the Senegal river basin. J. Hydrol. 2020, 587, 124915. [CrossRef]
+Degeorges, A.; Reilly, B.K. Dams and large scale irrigation on the Senegal river: Impacts on man and the
+environment. Int. J. Environ. Sci. 2006, 63, 633–644. [CrossRef]
+Scudder, T. The Future of Large Dams-Dealing with Social, Environmental, Institutional and Political Costs, 1st ed.;
+Taylor and Francis Group: London, UK, 2006; p. 408. [CrossRef]
+Adams, W.M. Wasting the Rain-Rivers, People and Planning in Africa; University of Minnesota Press:
+Minneapolis, MN, USA, 1992; p. 256. [CrossRef]
+Scudder, T. The need and justiﬁcation for maintaining transboundary ﬂood regimes: The Africa case.
+Nat. Resour. J. 1991, 31, 75–107. Available online: https://digitalrepository.unm.edu/nrj/vol31/iss1/5
+(accessed on 28 May 2020).
+Fox, J.; Ledgerwood, J. Dry-Season ﬂood-recession rice in the Mekong delta: Two thousand years of sustainable
+agriculture? Asian Perspect. 1999, 38, 37–50. Available online: https://core.ac.uk/download/pdf/5105389.pdf
+(accessed on 27 May 2020).
+
+Atmosphere 2020, 11, 1192
+
+19 of 21
+
+12. Dièye, M.; Dia, D.; Barbier, B.; Sylla, E.H.M.; Sall, M.; Bader, J.C.; Bossa, A.Y.; Sanfo, S.; Fall, C.S.
+L’agriculture de décrue en Afrique de l’ouest et du centre une certaine résilience face à la variabilité
+climatique et à la régulation des ﬂeuves. In Risques Climatiques et Agriculture en Afrique de L’ouest;
+Sultan, B., Bossa, A.Y., Salack, S., Sanon, M., Eds.; IRD Editions: Marseille, France, 2020; pp. 121–132.
+Available online: https://www.editions.ird.fr/produit/576/9782709928229/Risques%20climatiques%20et%
+20agriculture%20en%20Afrique%20de%20lOuest/comment/29 (accessed on 1 July 2020).
+Saarnak, N.L. Flood recession agriculture in the Senegal river valley. Geogr. Tidsskr. 2013, 103, 99–113. [CrossRef]
+Jamin, J.Y. L’agriculture de Décrue dans la Vallée du Fleuve Senegal-Les Cultures Traditionnelles du Waalo et du Falo;
+ISRA: Saint-Louis, Senegal, 1986; p. 26. Available online: http://intranet.isra.sn/aurifere/opac_css/docnum/
+CI0000259.pdf (accessed on 29 May 2020).
+
+13.
+14.
+
+15. Le Roy, X. Le sorgho de décrue dans la vallée du Sénégal. In Agriculture Singulières; Mollard, E., Walter, A.,
+
+Eds.; IRD Editions: Marseille, France, 2008; pp. 33–38. [CrossRef]
+
+16. Agence Nationale de la Statistique et de la Démographie (ANSD). Rapport Régional Déﬁnitif RGPHAE 2013;
+Service Régional de la Statistique et de la Démographie de Saint-Louis: Région de Saint-Louis, Dakar,
+Senegal, 2017; p. 89. Available online: https://www.ansd.sn/ressources/RGPHAE-2013/ressources/doc/pdf/
+RGPHAE-Rapport-regional_ST-LOUIS_vf.pdf (accessed on 25 August 2020).
+
+17. Agence Nationale de la Statistique et de la Démographie (ANSD). Rapport Régional Déﬁnitif RGPHAE 2013;
+Service Régional de la Statistique et de la Démographie de Matam: Région de Matam, Dakar, Senegal,
+2017; p. 96. Available online: https://www.ansd.sn/ressources/RGPHAE-2013/ressources/doc/pdf/RGPHAE-
+Rapport-regional_MATAM_vf.pdf (accessed on 25 August 2020).
+
+18. Agence Nationale de la Statistique et de la Démographie (ANSD). Rapport Régional Déﬁnitif RGPHAE 2013;
+Service Régional de la Statistique et de la Démographie de Tambacounda: Région de Tambacouda, Dakar,
+Senegal, 2017; p. 89. Available online: https://www.ansd.sn/ressources/RGPHAE-2013/ressources/doc/pdf/
+RGPHAE-Rapport-regional_TAMBA_vf.pdf (accessed on 25 August 2020).
+
+19. Bruckmann, L. Crue et développement rural dans la vallée du Sénégal: Entre marginalisation et résilience.
+
+Belg. Rev. Belg. Géographie 2018, 2, 1–25. [CrossRef]
+
+20. Dickmann, M.; Ficatier, M.; Schmidt, M. Evaluation ex Post Conjointe du Barrage de Manantali; EIB: Dakar, Senegal,
+2009; p. 52. Available online: https://www.eib.org/attachments/ev/ev_manantali_rapport_de_synthese_fr.pdf
+(accessed on 1 July 2020).
+
+21. Bader, J.C.; Lamagat, J.P.; Guiguen, N. Management of the Manantali dam on the Senegal river: Quantitative
+
+analysis of a conﬂict of objectives. Hydrol. Sci. J. 2003, 48, 525–538. [CrossRef]
+
+22. Lamagat, J.P. Programme D’optimisation de la Gestion des Réservoirs: Phase 3: Crue Artiﬁcielle et Cultures de
+Décrue: Synthèse Finale; IRD-OMVS: Dakar, Senegal, 2001; p. 67. Available online: http://www.documentation.
+ird.fr/hor/fdi:010051101 (accessed on 12 September 2020).
+
+23. Bodian, A. Approche par Modélisation Pluie-Débit de la Connaissance Régionale de la Ressource en eau:
+Application au Haut Bassin du Fleuve Sénégal. Ph.D. Thesis, UCAD, Dakar, Senegal, 26 November 2011.
+Available online: http://hydrologie.org/THE/BODIAN.pdf (accessed on 12 September 2020).
+
+24. Ndione, D.M.; Sambou, S.; Kane, S.; Diatta, S.; Sane, M.L.; Leye, I. Ensemble forecasting system for the
+management of the Senegal river discharge: Application upstream the Manantali dam. Appl. Water Sci. 2020,
+10, 1–15. [CrossRef]
+
+25. Wang, X.; Xie, H. A review on applications of remote sensing and geographic information systems (GIS) in
+
+water resources and ﬂood risk management. Water 2018, 10, 608. [CrossRef]
+
+26. Emerton, R.E.; Stephens, E.M.; Cloke, H.L. What is the most useful approach for forecasting hydrological
+
+27.
+
+extremes during El Niño? Environ. Res. Commun. 2019, 1, 031002. [CrossRef]
+Ficchì, A.; Stephens, L. Climate variability alters ﬂood timing across Africa. Geophys. Res. Lett. 2019, 46,
+8809–8819. [CrossRef]
+
+28. Bader, J.C.; Cauchy, S.; Duﬀar, L.; Saura, P. Monographie Hydrologique du Fleuve Sénégal-De L’origine des Mesures
+Jusqu’en 2011; IRD Editions: Marseille, France, 2014; p. 920. Available online: https://horizon.documentation.
+ird.fr/exl-doc/pleins_textes/divers16-01/010065190.pdf (accessed on 28 May 2020).
+
+29. Ba, D.; Ndiaye, P.M.; Faye, C. Variabilité pluviométrique et évolution de la sécheresse climatique dans vallée du
+ﬂeuve Sénégal. Inrs/Rts-Togo 2018, 12, 57–71. Available online: https://hal.archives-ouvertes.fr/hal-02158313
+(accessed on 30 May 2020).
+
+Atmosphere 2020, 11, 1192
+
+20 of 21
+
+30. Dancette, C. Mesures d’évapotranspiration potentielle et d’évaporation d’une nappe d’eau libre au Sénégal.
+orientations des travaux portant sur les besoins en eau des cultures CNRA Bambey. L’agronomie Trop. 1976,
+31, 321–338.
+
+31. Allen, R.G.; Pereira, L.S.; Raes, D.; Smith, M. Crop Evaporation-Guidelines for Computing Crop Water Requirements;
+FAO: Rome, Italy, 1998; p. 333. Available online: http://www.fao.org/docrep/x0490e/x0490e00.htm (accessed on
+13 May 2020).
+
+32. Wade, M. Etudes sur L’hydraulique Agricole dans la Vallée du Fleuve Sénégal-Synthèse des Acquis de la Recherche;
+ISRA/PSI: Saint-Louis, Sénégal, 2003; p. 27. Available online: http://intranet.isra.sn/aurifere/opac_css/
+docnum/CI0000400.pdf (accessed on 30 May 2020).
+
+33. Copernicus Open Access Hub. Available online: https://scihub.copernicus.eu/dhus/#/home (accessed on
+
+27 May 2020).
+
+34. USGS EarthExplorer. Available online: https://earthexplorer.usgs.gov (accessed on 27 May 2020).
+35. Mcfeeters, S.K. The use of the normalized diﬀerence water index (NDWI) in the delineation of open water
+
+features. Int. J. Remote Sens. 1996, 17, 1425–1432. [CrossRef]
+
+36. Hanqiu, X. Modiﬁcation of normalised diﬀerence water index (NDWI) to enhance open water features in
+
+remotely sensed imagery. Int. J. Remote Sens. 2006, 27, 3025–3033. [CrossRef]
+
+37. Gao, B.-C. NDWI a normalized diﬀerence water index for remote sensing of vegetation liquid water from
+
+space. Remote Sens. Environ. 1996, 58, 257–266. [CrossRef]
+
+38. Rogers, A.S.; Kearney, M.S. Reducing signature variability in unmixing coastal marsh thematic mapper
+
+39.
+
+40.
+
+scenes using spectral indices. Int. J. Remote Sens. 2003, 25, 2317–2335. [CrossRef]
+Sakamoto, T.; Cao, P.V.; Nguyen, N.V.; Kotera, A.; Yokozawa, M. Agro-ecological interpretation of rice cropping
+systems in flood-prone areas using MODIS imagery. Photogramm. Eng. Remote Sens. 2009, 75, 413–424. [CrossRef]
+Sall, M.; Ndiaye, R.; Cissé, M.; Sine, B.; Ndiaye, M.; Ndongo, H. Amélioration des pratiques culturales du
+sorgho de décrue dans la moyenne vallée du ﬂeuve Sénégal. In Risques Climatiques et Agriculture en Afrique de
+l’Ouest; Sultan, B., Bossa, A.Y., Salack, S., Sanon, M., Eds.; IRD Editions: Marseille, France, 2020; pp. 121–132.
+Available online: https://www.editions.ird.fr/produit/576/9782709928229/Risques%20climatiques%20et%
+20agriculture%20en%20Afrique%20de%20lOuest/comment/29 (accessed on 1 July 2020).
+
+41. Bader, J.C. Programme d’Optimisation de la Gestion des Réservoirs Phase III. Manuel de Gestion du Barrage de
+Manantali. Version Finale; IRD Editions: Montpellier, France, 2001; p. 110. Available online: https://horizon.
+documentation.ird.fr/exl-doc/pleins_textes/divers11-03/010051122.pdf (accessed on 21 August 2020).
+
+42. Bader, J.C. Evaluation du Niveau de Plan D’eau du Fleuve Sénégal en Période de Crue à La Déﬂuence du Ndiorol,
+Sous L’inﬂuence du Barrage de Manantali, 2nd ed.; IRD Editions: Montpellier, France, 2007; p. 40. Available
+online: http://www.documentation.ird.fr/hor/fdi:010046994 (accessed on 28 May 2020).
+
+44.
+
+43. Traore, K.; Aune, J.B.; Traore, B. Eﬀect of organic manure to improve sorghum productivity in ﬂood recession
+farming in Yelimane, western Mali. ASRJETS 2016, 23, 232–251. Available online: http://asrjetsjournal.org/
+index.php/American_Scientiﬁc_Journal/article/download/1981/855 (accessed on 27 May 2020).
+Stancioﬀ, A.; Staljanssens, M.; Tappan, G. Cartographie et Télédétection des Ressources de la République du
+Sénégal-Etude de la Géologie, de L’hydrogéologie, des Sols, de la Végétation et des Potentiels D’utilisation des Sols;
+RSI-SDSU: San Diego, CA, USA, 1984; p. 653. Available online: https://library.wur.nl/WebQuery/ﬁle/isric/
+fulltext/ISRIC_16108.pdf (accessed on 7 July 2020).
+Seck, S.M.; Lericollais, A.; Magrin, G. L’aménagement de la vallée du Sénégal—Lozzgiques nationales, crises
+et coopération entre les Etats riverains. In Des Fleuves Entre Conﬂits et Compromis: Essais D’hydropolitique
+Africaine; Raison, J.P., Magrin, G., Eds.; Karthala: Paris, France, 2009; pp. 31–76. [CrossRef]
+
+45.
+
+46. Meublat, G.; Ingles, J. L’éternel retour des grands projets. L’aménagement du ﬂeuve Sénégal en perspective.
+In Regards Interdisciplinaires sur les Politiques de Développement; Bare, J.-F., Ed.; L’Harmattan: Paris, France,
+1997; pp. 163–199. Available online: https://horizon.documentation.ird.fr/exl-doc/pleins_textes/divers14-07/
+010013320.pdf (accessed on 1 July 2020).
+
+47. Wymenga, E.; van der Kamp, J.; Fofana, B.; Zwarts, L. Ecological evaluation of dams and irrigation in
+the upper Niger. In The Niger, a Lifeline. Eﬀective Water Management in the Upper Niger Basin; Zwarts, L.,
+van Beukering, P., Kone, B., Wymenga, E., Eds.; Institute for Inland Water Management and Waste Water
+Treatment: Lelystad, The Netherlands, 2005; pp. 211–222. Available online: https://www.altwym.nl/wp-
+content/uploads/2005/11/The-Niger-a-lifeline-verkleind.pdf (accessed on 1 July 2020).
+
+Atmosphere 2020, 11, 1192
+
+21 of 21
+
+48. Barbier, E.B.; Thompson, J.R. The value of water: Flood-plain versus large scale irrigation beneﬁts in northern
+
+Nigeria. Ambio 1998, 27, 434–440. [CrossRef]
+
+49. Weisheimer, A.; Palmer, T.N. On the reliability of seasonal climate forecasts. J. R. Soc. Interface 2014, 11,
+
+20131162. [CrossRef] [PubMed]
+
+50. Emerton, R.; Zsoter, E.; Arnal, L.; Cloke, H.L.; Muraro, D.; Prudhomme, C.; Pappenberger, F.
+Developing a global operational seasonal hydro-meteorological forecasting system: GloFAS-Seasonal
+v1.0. Geosci. Model Dev. 2018, 11, 3327–3346. [CrossRef]
+Irriwest. Available online: http://irriwest.com/the-irriwest-irrigation-advisory-service-web-platform-has-
+been-developed/ (accessed on 29 May 2020).
+
+51.
+
+© 2020 by the authors. Licensee MDPI, Basel, Switzerland. This article is an open access
+article distributed under the terms and conditions of the Creative Commons Attribution
+(CC BY) license (http://creativecommons.org/licenses/by/4.0/).
+
+

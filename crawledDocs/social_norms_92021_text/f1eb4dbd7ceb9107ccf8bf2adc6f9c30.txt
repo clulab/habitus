@@ -1,0 +1,1317 @@
+Nutr Cycl Agroecosyst (2010) 88:133–141
+DOI 10.1007/s10705-010-9355-7
+
+R E S E A R C H A R T I C L E
+
+Long-term effect of continuous cropping of irrigated rice
+on soil and yield trends in the Sahel of West Africa
+
+B
+
+.V. Bado
+
+• A. Aw • M. Ndiaye
+
+Received: 13 May 2009 / Accepted: 23 February 2010 / Published online: 9 March 2010
+Ó Springer Science+Business Media B.V. 2010
+
+Abstract The effects of 18 years continuous crop-
+ping of irrigated rice on soil and yields were studied
+in two long-term fertility experiments (LTFE) at
+Ndiaye and Fanaye in the Senegal River Valley
+(West Africa). Rice was planted twice in a year
+during the hot dry season (HDS) and wet season
+(WS) with different fertilizer treatments. Soil organic
+carbon (SOC) under fallow varied from 7.1 g kg-1 at
+Fanaye to 11.0 g kg-1 at Ndiaye. Rice cropping
+maintained and increased SOC at Ndiaye and Fanaye,
+respectively and fertilizer treatments did not affect
+SOC. Soil available P and exchangeable K were
+maintained or increased with long-term application of
+NPK fertilizers. Without
+any fertilizer, yields
+decreased by 60 kg ha-1 (1.5%) and 115 kg ha-1
+(3%) per year at Fanaye and Ndiaye, respectively.
+The highest annual yield decreases of 268 kg ha-1
+(3.6%) and 277 kg ha-1 (4.1%) were observed at
+Fanaye and Ndiaye,
+respectively when only N
+fertilizer was applied. Rice yields were only main-
+tained with NPK fertilizers supplying at least 60 kg
+N, 26 kg P and 50 kg K ha-1. It was concluded that
+the double cropping of
+irrigated rice does not
+decrease SOC and the application of the recom-
+mended doses of NPK fertilizer maintained rice
+yields for 18 years.
+
+B. V. Bado (&)  A. Aw  M. Ndiaye
+Africa Rice Center (AfricaRice), Sahel Regional Station,
+Saint-Louis BP 96, Senegal
+e-mail: V.Bado@cgiar.org
+
+Keywords Fertilizer  Organic carbon 
+Oryza sativa  Phosphorous  Potassium 
+Soil
+
+Introduction
+
+Weak soil buffering capacity due to low soil organic
+carbon (SOC) and clay content, low cation exchange
+capacity (CEC) and P deﬁciency are the main
+limiting factors to agricultural productivity of the
+upland soils of West Africa. Data from many long-
+term experiments in upland soils usually show yield
+declines over time as a consequence of a decrease in
+soil organic carbon (SOC), soil acidiﬁcation and a
+decrease of nutrient use efﬁciency (Bationo and
+Mokwunye 1991; Bado et al. 1997; Bationo 2008). In
+contrast to the poor upland soils, lowland soils of the
+inland valleys have generally higher organic carbon
+and clay contents, a better CEC and water retention
+capacity,
+crop
+production.
+
+conditions
+
+for
+
+offering
+
+better
+
+As with Asia, rice has become the most important
+cereal crop of the inland valleys of West Africa. Rice
+is cultivated as a staple food by farmers in the small
+inland valleys, or as a cash crop in many irrigated
+schemes. Consequently,
+the cropping systems are
+becoming more and more intensiﬁed and, whenever
+possible, many farmers grow two rice crops (during
+the wet and hot dry seasons) per year. While the
+simulated potential yield of
+is
+123
+
+irrigated rice
+
+This article has been previously published in the journal “Nutrient Cycling in Agroecosystems” Volume 88 Issue 1.  
+A. Bationo et al. (eds.), Innovations as Key to the Green Revolution in Africa: Exploring the Scientific Facts. © 2010 Springer.
+
+A. Bationo et al. (eds.), Innovations as Key to the Green Revolution in Africa,
+DOI 10.1007/978-90-481-2543-2_13, © Springer Science+Business Media B.V. 2011
+
+145
+
+146
+
+134
+
+8–12 tonnes ha-1 (Dingkuhn and Sow 1997),
+the
+average yields in farmers’ ﬁelds vary from 4 to 6
+tonnes ha-1 (Haefele et al. 2002; Kebbeh and Miezan
+2003). This means that there is scope for increasing
+rice yields with the sustainable intensiﬁcation of the
+existing cropping systems.
+
+The long-term and intensive cultivation of rice
+with periodical ﬂooding can affect the dynamics of
+SOC, soil pH, cation exchange capacity and nutrient
+use efﬁciency (Kenneth et al. 1997). A key research
+question is whether long-term intensive lowland rice-
+rice cropping in the irrigated schemes is sustainable.
+Some results from long-term experiments in Asia
+showed yield declines of 70 to more
+than
+200 kg ha-1 with best management practices over a
+period of 10–24 years (Flinn and De Datta 1984;
+Cassman et al. 1995; Kenneth et al. 1997). There is
+very little information on soil changes and rice crop
+yields in long-term intensive rice cultivation in
+Africa. Working with only 10 years data on two
+long-term fertility experiments (LTFE)
+in West
+Africa, Haefele et al. (2002, 2004) found a slight
+but not signiﬁcant yield decline (-27 kg ha-1 per
+season) at one site and a signiﬁcant yield increase
+(?86 kg ha-1 per season) at other site. A non-
+signiﬁcant decrease in SOC was also observed. The
+authors recognized that because of the short duration
+of the experiments (10 years) and climatic inﬂuences,
+the observed yield trends could not give an accurate
+indication of the biophysical sustainability of the
+cropping system.
+
+The overall objective of this study was to assess the
+sustainability of rice cropping in terms of soil fertility
+and yield stability using more data (18 years or 36
+cropping seasons) from the same LTFE. This research
+is mainly focussed on soil P and K, SOC and yield
+trends under long-term intensive cropping of rice.
+
+Materials and methods
+
+Experimental sites
+
+Two long-term fertility experiments (LTFE) were
+carried out over a period of 18 years (1991–2008) at
+AfricaRice’s research farms in Ndiaye and Fanaye,
+both located in the Senegal River Valley. Ndiaye
+(16°140 N, 16°140 W) is located close to the coast
+(about 40 km inland) in the Senegal River delta. Soil
+
+123
+
+Nutr Cycl Agroecosyst (2010) 88:133–141
+
+salinity at the site and in the river delta is generally
+high, due to the occurrence of marine salt deposits in
+the subsoil (Haefele et al. 2002). The soil proﬁle at
+Ndiaye corresponds to a typical Orthithionic Gleysol
+(FAO 1998). The original soil contained at
+least
+10 mg C kg-1 of soil and 5 mg P kg-1 (P-Bray1).
+Fanaye (16°330 N, 15°460 W) is located in the middle
+valley of the Senegal River, *240 km inland, where
+natural soil salinity is low or absent. The soil proﬁle
+in Fanaye belongs to a Eutric Vertisol (FAO 1998).
+The original soil contained at least 6.5 mg C kg-1 of
+soil and 4 mg P kg-1 (P-Bray1). The climate of the
+two sites is characterized by a wet season (WS) with
+*200 mm rainfall per year from July to October, a
+cold dry season from November to February and a hot
+dry season (HDS) from March to June (Dingkuhn and
+Sow 1997; Haefele et al. 2002).
+
+Agronomic experiments
+
+The LTFE was established at Ndiaye during the hot
+dry season (HDS) of 1991. The ﬁrst rice crop was
+cultivated to homogenize soil fertility variability with
+the rice cultivar SIPI 692033, planted with a uniform
+application of NPK fertilizer supplying 120, 26 and
+50 kg ha-1 of N, P and K, respectively. At Fanaye,
+soil fertility variability was homogenized by growing
+different cultivars of rice during the cold dry season
+with the same uniform dose of NPK fertilizer used at
+Ndiaye. From 1991 to 1997, the medium duration
+cultivar Jaya was used in the WS and the short
+duration cultivar IR 50 in the HDS. From the WS of
+1997 (Ndiaye) and the HDS of 1998 (Fanaye), both
+cultivars were replaced by Sahel 108, a short duration
+cultivar (Mie´zan and Diack 1994).
+
+Six fertilizer treatments with four
+
+replications
+were laid out in a randomized complete block design.
+Experimental plots measured 25 m2 (5 9 5 m) and
+were separated by small 30 cm high dikes. The six
+fertilizer treatments were: a control (without any
+fertilizer); the recommended dose of N without PK
+fertilizer (120 kg N ha-1, 0 kg P ha-1, 0 kg K ha-1);
+the recommended dose of NPK fertilizer (R_NPK)
+supplying 120 kg N ha-1, 26 kg P ha-1 and 50 kg K
+ha-1); low dose of N-medium PK fertilizer (L_NPK:
+60 kg N ha-1, 26 kg P ha-1 and 50 kg K ha-1); high
+dose of N-medium PK fertilizer (H_NPK: 180 kg N
+ha-1, 26 kg P ha-1 and 50 kg K ha-1); and medium
+dose of N-high PK fertilizer (M_NPK: 120 kg N
+
+Nutr Cycl Agroecosyst (2010) 88:133–141
+
+ha-1, 52 kg P ha-1 and 100 kg K ha-1). Urea (46%
+N), ammonium phosphate (18% N and 20% P) and
+potassium chloride (47% K) were used.
+
+Rice seedlings were transplanted at the rate of 25
+hills m-2. Crop management was adjusted to the
+farmers’ practice. For all fertilizer treatments, 50% N,
+100% P and 100% K were broadcast at 21 days after
+transplanting. The remaining N dose was split-
+applied at panicle initiation (25%) and 10 days
+before ﬂowering (25%). Herbicide (6 l ha-1 Propa-
+nyl) and manual weeding were used for weed control.
+Herbicide was applied once at 21 days after sowing,
+1 day before the ﬁrst N application; thereafter, plots
+were kept weed-free by manual weeding. Insecticides
+(Furadan) were sometimes used at 25 kg ha-1 for
+pest control at
+tillering, maximum
+tillering, panicle initiation and ﬂowering. A constant
+water layer of 10-15 cm was maintained during the
+whole cropping season and the harvested straw was
+removed from the plots every season. Rice grain
+yields were determined from a 4 m2 harvest area in
+each plot at maturity and reported at a standard water
+content of 140 g water kg-1 fresh weight.
+
+the start of
+
+Soil sampling and analysis
+
+in the absence of
+
+Soil from each of the six fertilizer treatments were
+sampled at the end of the dry season of 2007 (after
+17 years of cultivation). Data of the original soils of
+the two sites are already published (Haefele et al.
+2002). However,
+the original
+database with repeated values, it was not possible to
+conduct an analysis of variance in comparison with
+soil samples from the experimental plots. We have
+selected some uncultivated areas (native fallow)
+around the experiments to serve as a reference. These
+areas also received the same water regimes (ﬂooding
+and aeration) as the experimental plots. The sub-
+samples were mixed thoroughly to get a composite
+sample, air-dried immediately after collection and
+dried in the laboratory at 60°C for 1 week. The
+samples were analyzed in the soil
+laboratory at
+AfricaRice. Soil organic C was determined using the
+wet digestion method (Walkley and Black 1934).
+Available soil phosphorous was determined by the
+Bray-P1 method using the extractant 0.03 N NH4F in
+0.025 N HCl (Bray and Kurtz 1945). Soil exchange-
+able K (Kexch) was extracted with 1 M NH4OACc
+solution (Helmke and Sparks 1996).
+
+147
+
+135
+
+Statistical data analysis
+
+The statistical analyses of the rice yields were ﬁrstly
+done using the four factors: year, site, season and
+fertilizer treatments (Gomez and Gamez 1983). The
+SAS software was used for data calculations (SAS
+Inst. 1995). The relationships between rice yield
+variations and years of cultivation were tested with
+different models before selecting the simple linear
+model which better described the
+relationship
+between the two factors (Eq. 1):
+ 
+Y Mg ha 1
+
+¼ aX þ b 1 X  18
+
+
+
+ð1Þ
+
+where Y = rice grain yields (dependent variable), X =
+number of years of cultivation (independent variable), a
+and b = the coefﬁcient and the intercept of the linear
+regression, respectively (Gomez and Gamez 1983).
+
+Results and discussion
+
+Soil organic carbon, phosphorous and potassium
+
+The mean soil organic carbon (SOC) of the uncultivated
+soil was higher (P \ 0.01) at Ndiaye (11.0 g kg-1) than
+Fanaye (7.1 g kg-1) (Table 1). Data of the original soil
+also indicated that the site of Ndiaye contained more
+carbon (10.0 g kg-1) than Fanaye (6.6 g kg-1) (Haef-
+ele et al. 2004). At Ndiaye, SOC varied from
+10.6 g kg-1 in the control (without fertilizer) plots to
+12.3 g kg-1 in the high N fertilizer-medium PK
+treatment, with no signiﬁcant differences between the
+fertilizer treatments. At Fanaye, SOC ranged from
+12.9 g kg-1 in the control plots to 13.6 g kg-1 in the
+plots receiving the recommended NPK treatment. SOC
+was not decreased by long-term cultivation at either site
+but was even increased at Fanaye.
+
+Soil extractable P-Bray 1 of the uncultivated soil
+was very low (3.8 mg P kg-1 at Fanaye and 4.9 mg P
+kg-1 at Ndiaye). All NPK fertilizer
+treatments
+increased soil extractable P at the two sites (Table 1).
+The soil available P ranged from 5.3 mg P kg-1
+(control without any fertilizer) to 19.7 mg kg-1 in the
+medium N fertilizer-high PK treatment at Ndiaye and
+from 3.8 (control) to 7.1 mg kg-1 in the medium N
+fertilizer-high PK treatment at Fanaye.
+
+While soil exchangeable K (Kexch) was affected by
+fertilizer application at Fanaye, Kexch was not
+affected by fertilizer treatments at Ndiaye. In general,
+
+123
+
+148
+
+136
+
+Nutr Cycl Agroecosyst (2010) 88:133–141
+
+Table 1 Effects of 18 years of continuous lowland irrigated rice mono cropping with NPK chemical fertilizer application on soil K,
+organic carbon and extractable Bray 1-P) (0–20 cm surface layer), at two experimental sites (Ndiaye and Fanaye)
+
+Sites
+
+N–P-K fertilizer
+(kg ha-1)
+
+Organic carbon
+(g kg-1)
+
+Extractable
+P (mg P kg-1)
+
+Exchangeable
+K (cmol kg-1)
+
+Ndiaye
+
+Control (0 N-0 P-0 K)
+
+60 N-26 P-50 K
+
+120 N-0 P-0 K
+
+120 N-26 P-50 K
+
+120 N-52 P-100 K
+
+180 N-26 P-50 K
+
+Uncultivated soil
+
+Fanaye
+
+Control (0 N-0 P-0 K)
+
+60 N-26 P-50 K
+
+120 N-0 P-0 K
+
+120 N-26 P-50 K
+
+120 N-52 P-100 K
+
+180 N-26 P-50 K
+
+Uncultivated soil
+
+10.6
+
+11.4
+
+11.7
+
+11.0
+
+10.5
+
+12.3
+
+11.0
+12.9a
+13.3a
+13.5a
+13.6a
+13.2a
+13.3a
+7.1b
+
+5.3c
+9.9b
+4.2c
+9.7b
+19.7a
+8.9b
+4.9c
+4.2b
+6.2a
+2.8c
+6.8a
+7.1a
+5.2b
+3.8c
+
+0.56
+
+0.59
+
+0.64
+
+0.53
+
+0.66
+
+0.49
+
+0.61
+0.58a
+0.55ab
+0.45c
+0.48bc
+0.63a
+0.45c
+0.57ab
+
+Values followed by the same letters on the same site and the same column are not signiﬁcantly different (P \ 0.001) according the
+Fisher test. Signiﬁcant differences were not observed for soil organic carbon at Ndiaye
+
+soil Kexch was increased at the two sites with the
+application of K fertilizers. The lowest levels of Kexch
+were also noted at the two sites with the high doses
+(180 kg N ha-1) of N fertilizers (Table 1).
+
+Yield variations and trends
+
+(P \ 0.001)
+
+and
+
+year
+
+(P \ 0.001),
+
+Grain yields were highly affected by fertilizer applica-
+tion
+site
+(P \ 0.0001). However, grain yields were not affected
+by the season (Table 2). Signiﬁcant simple interactions
+(site-season; site-year; site-fertilizer; year-site; season-
+site and year-fertilizer), triple interactions (site-year-
+season; site-season-fertilizer; year-season-fertilizer and
+site-year-fertilizer), and quadruple interaction (site-
+year-season-fertilizer) were observed on grain yields.
+
+The parameters of the linear regression models
+used to analyze grain yield trends over the 18 years
+are presented in Table 3. The intercepts of the linear
+regression summarize the mean grain yields during
+the ﬁrst year of cultivation. Considering the yield
+trends (Table 3; Figs. 1, 2),
+two main groups of
+fertilizer treatments were identiﬁed: (1) the control
+treatment and the recommended N dose alone
+without PK, and (2) the NPK treatments.
+
+123
+
+Long-term cultivation without fertilizer application
+decreased grain yields—by 115 kg ha-1 per year, with
+a conﬁdence interval of 59–259 kg ha-1 (P \ 0.05) at
+Ndiaye during the WS (Table 3). The same practice
+induced an annual yield loss of 60 kg ha-1 at Fanaye
+during the same WS. Thus,
+long-term cultivation
+without fertilizer decreased rice yields by 1.5% per
+year at Fanaye and 3% at Ndiaye during the WS. While
+a high yield of 7 Mg ha-1 was obtained in the ﬁrst year
+of cultivation, N-fertilizer application alone induced
+the highest annual yield decreases at both sites during
+the two seasons (Table 1; Figs. 1, 2). The rice yield
+decreased by268 kg ha-1 (-3.6%) at Fanaye and
+277 kg ha-1 (-4.1%) at Ndiaye during the WS. A
+signiﬁcant yield decrease of 147 kg ha-1 was
+observed during the HDS at Ndiaye (Table 3). With
+the NPK treatments, there was no signiﬁcant linear
+relationship (P [ 0.05) between yield variations and
+years. Otherwise, no signiﬁcant yield decline was
+observed at the two sites when NPK fertilizers were
+applied (Table 3; Figs. 1, 2). However, slight (and
+(P [ 0.05) were
+nonsigniﬁcant) yield decreases
+always observed during the WS at both sites while
+NPK fertilizers
+seemed to increase rice yields
+(P [ 0.05) during the HDS.
+
+Nutr Cycl Agroecosyst (2010) 88:133–141
+
+149
+
+137
+
+Table 2 Inﬂuence of year,
+site, season and fertilizer on
+rice grain yields at Ndiaye
+and Fanaye between 1991
+and 2008
+
+Source of variations
+
+Degree of freedom
+
+F value
+
+Probability level
+
+Site
+
+Year
+
+Season
+
+Fertilizer
+
+Site 9 Season
+
+Site 9 Year
+
+Site 9 Fertilizer
+
+Season 9 Fertilizer
+
+Year 9 Fertilizer
+
+Site 9 Year 9 Season
+
+Site 9 Season 9 Fertilizer
+
+Year 9 Season 9 Fertilizer
+
+Site 9 Year 9 Fertilizer
+
+Site 9 Year 9 Season 9 Fertilizer
+
+1
+
+17
+
+1
+
+5
+
+1
+
+17
+
+5
+
+5
+
+85
+
+13
+
+5
+
+75
+
+85
+
+65
+
+41.84
+
+38.95
+
+0.02
+
+1002.47
+
+207.32
+
+23.55
+
+10.19
+
+20.30
+
+4.55
+
+18.81
+
+3.47
+
+3.13
+
+3.41
+
+2.57
+
+\.0001
+\.0001
+0.8939
+\.0001
+\.0001
+\.0001
+\.0001
+\.0001
+\.0001
+\.0001
+0.0041
+\.0001
+\.0001
+\.0001
+
+Discussion
+
+In comparison with the uncultivated soil, SOC was
+maintained at
+the same level at Ndiaye or even
+increased at Fanaye with rice cropping. Working on
+the same two LTFE, Haefele et al. (2004) also
+reported a higher SOC in cultivated soils at one site
+(Fanaye), while a slight but nonsigniﬁcant decreasing
+trend of SOC was observed at the other site (Ndiaye).
+Probably because of the limited amount of data (three
+sample dates) and special variability,
+the authors
+recognized that they could not conclude that SOC did
+not change. Unfortunately, soil samples were not
+taken every year in the LTFE and there are insufﬁ-
+cient data to assess the trends of SOC over years. Our
+data also conﬁrm higher SOC in the cultivated soil at
+Fanaye and treatments with NPK fertilizer applica-
+tions always had higher SOC. Consequently, we can
+at least conclude that SOC did not decrease with rice
+cropping and this is true at the two sites but was
+rather increased at one site (Fanaye).
+
+The recycling of crop residues and roots in the
+ﬂooded conditions of
+irrigated rice systems can
+explain the status of SOC. The decomposition of
+plant residues is typically slower in submerged than
+in aerated soil (Powlson and Olk 2000; Regmi et al.
+2002; Sahrawat 2004; Zhang and He 2004; Mirasol
+et al. 2008). Crop residues are continuously recycled in
+the soil twice a year as a source of carbon, which are
+incorporated into young soil organic matter fraction
+
+(Cassman et al. 1995; Olk et al. 1996, 2000; Bronson
+et al. 1997; Witt et al. 2000). A signiﬁcant increase of
+SOC was observed at Fanaye, probably because of the
+initial low level of SOC. After 17 years of cultivation,
+there was no signiﬁcant difference in SOC between the
+cultivated soils at the two sites. The SOC had increased
+in the low C content soil at Fanaye to the same level as
+at Ndiaye. The buildup of SOC by periodical anaerobic
+conditions seamed to raise SOC to an equilibrium of
+11–13 mg C kg-1. More signiﬁcant increases of SOC
+would probably not occur during the forthcoming
+years.
+
+Low yields and signiﬁcant decreases in yields over
+the years in the control treatment and N fertilizer
+without PK plots may be explained by the initial poor
+soil fertility status. The low levels of extractable P in
+the original soil conﬁrmed the need for P-fertilizer
+applications to overtake the critical limit of soil P for
+rice (Bado et al. 2008). The high yields obtained with
+N-fertilizer alone without PK treatment during the
+ﬁrst 3 years, followed by the quick yield decline,
+showed the limiting effect of these nutrients with
+time of cultivation.
+
+In general, most of the irrigated lowland valleys in
+the Sahel and Sudan savannah have considerable soil
+K reserves (Buri et al. 1999; Wopereis et al. 1999;
+Haefele et al. 2004). Probably because of
+the
+relatively high soil K status, the exchangeable K of
+the LTFE did not show any signiﬁcant depletion with
+the recommended doses of NPK fertilizer as already
+
+123
+
+150
+
+138
+
+Nutr Cycl Agroecosyst (2010) 88:133–141
+
+Table 3 Rice grain yields in the ﬁrst year of cultivation,
+annual variations in yield and correlation coefﬁcient of the
+linear equations between years of cultivation for each season
+
+(hot dry and wet season) and rice grain yields during 18 years
+(1991–2008) in the delta (Ndiaye) and middle (Fanaye) valley
+of the Senegal River
+
+Sites
+
+Seasons
+
+NPK fertilizer
+(kg ha-1 nutrients)
+
+Intercept
+Mg ha-1
+(b)
+
+Yield trends
+Kg ha-1
+(a)
+
+Yield variations
+% per year
+
+Coefﬁcient of
+determination
+(R2)
+
+Number of
+values
+(n)
+
+Ndiaye Hot dry season Control (0-0-0)
+
+120-0-0
+
+60-26-50
+
+120-26-50
+
+120-52-100
+
+180-26-50
+
+Wet season
+
+Control (0-0-0)
+
+120-0-0
+
+60-26-50
+
+120-26-50
+
+120-52-100
+
+180-26-50
+
+Fanaye Hot dry season Control (0-0-0)
+
+120-0-0
+
+60-26-50
+
+120-26-50
+
+120-52-100
+
+180-26-50
+
+Wet season
+
+Control (0-0-0)
+
+120-0-0
+
+60-26-50
+
+120-26-50
+
+120-52-100
+
+180-26-50
+
+3.3
+
+6.1
+
+5.1
+
+6.9
+
+6.6
+
+7.3
+
+3.9
+
+6.8
+
+6.1
+
+7.3
+
+7.3
+
+7.1
+
+2.2
+
+4.7
+
+4.9
+
+6.1
+
+6.0
+
+6.8
+
+4.0
+
+7.4
+
+5.9
+
+7.3
+
+7.3
+
+7.9
+
+-49
+-1.5
+-147 (-258; -37)a -2.8
+1.8
+92
+
+19
+
+32
+
+13
+
+0.3
+
+0.5
+
+0.2
+
+-115 (-173; -59)
+
+-2.9
+
+-277 (-362; -188) -4.1
+
+-59
+
+-78
+
+-100
+
+-54
+
+-47
+
+-46
+
+-44
+
+24
+
+60
+
+70
+
+-0.1
+
+-1.1
+
+-1.4
+
+-0.8
+
+-2.1
+
+-0.9
+
+-0.9
+
+0.4
+
+1.0
+
+1.0
+
+-60 (-124; 3)
+
+-1.5
+
+-268 (-372; -166) -3.6
+
+-23
+
+-68
+
+-42
+
+-62
+
+-0.4
+
+-0.9
+
+-0.6
+
+-0.8
+
+Each n value represents the mean yield of 4 values of the 4 replications
+a Conﬁdence interval of yield variations at 95% probability level
+
+*, **, *** Signiﬁcant at 0.05, 0.01 or 0.001 probability levels according the Fisher test
+
+0.15
+
+0.37*
+
+0.15
+
+0.01
+
+0.01
+
+0.03
+
+0.58**
+
+0.77***
+
+0.14
+
+0.20
+
+0.20
+
+0.08
+
+0.14
+
+0.06
+
+0.05
+
+0.01
+
+0.06
+
+0.08
+
+0.22*
+
+0.67***
+
+0.02
+
+0.10
+
+0.07
+
+0.06
+
+13
+
+16
+
+17
+
+17
+
+17
+
+17
+
+16
+
+16
+
+16
+
+16
+
+16
+
+16
+
+16
+
+16
+
+16
+
+15
+
+16
+
+16
+
+17
+
+17
+
+17
+
+17
+
+17
+
+17
+
+noted by Haefele et al. (2004). However, the high-
+est doses of N fertilizers (180 kg N ha-1 or more)
+can probably induce K depletion with long-term
+cropping.
+
+As important factor of soil fertility, the mainte-
+nance or buildup of SOC in ﬂooded conditions,
+coupled with the improvement of soil chemical
+properties (Sahrawat 2004) and better use of nutrients
+both from soil and fertilizers, can explain the yield
+trends during the 18 years of cropping. Except for the
+control
+treatment (without any fertilizer) and the
+control without PK fertilizer, rice grain yields were
+
+maintained during the 18 years with the seasonal
+applications of chemical NPK fertilizers. Using the
+yields of the best NPK treatment, Haefele et al.
+(2002) observed a slight and nonsigniﬁcant yield
+decline (-27 kg ha-1 per season) at Ndiaye and
+signiﬁcant yield increase at Fanaye (?86 kg ha-1 per
+season). Otherwise, no yield declines were observed
+when the three NPK nutrients were applied. The
+authors recognized that because of the short duration
+of the experiments (10 years) and extreme conditions
+of the Sahelian climate, the observed yield trends
+could not give an accurate indication of
+the
+
+123
+
+151
+
+139
+
+Nutr Cycl Agroecosyst (2010) 88:133–141
+
+Fig. 1 Inﬂuence of
+fertilizer application on rice
+grain yields during the hot
+dry season (HDS) and wet
+season (WS) at Ndiaye in
+the delta valley of the
+Senegal River over 18 years
+(1991–2008)
+
+Fig. 2 Inﬂuence of
+fertilizer application on rice
+grain yields during the hot
+dry season (HDS) and wet
+season (WS) at Fanaye in
+the middle valley of the
+Senegal River over 18 years
+(1991–2008)
+
+biophysical sustainability of the cropping system.
+They probably did not observe the interactions within
+the factors site, season and fertilizer as we did with 36
+cropping seasons (Table 2). The climatic variability
+and site-speciﬁc crop management at the two sites
+may explain the inﬂuence of sites and season on grain
+yield (Dingkuhn and Sow 1997). Compared to the
+continental zone (Fanaye), the hot dry season was
+found to be most productive in the coastal zone of the
+delta (Ndiaye) because of the moderate air temper-
+atures in the proximity of the sea. Cold-induced
+spikelet sterility that frequently affects rice yield
+
+(Dingkuhn and Sow 1997), climatic variations and
+harvest operation may explain the diverse effects of
+site and season on biomass and grain yields.
+
+The data conﬁrmed that rice yields were main-
+tained over 18 years (36 seasons) of continuous
+cropping, probably because of the improvement of
+soil chemical fertility with ﬂooding (Sahrawat 1998)
+and the maintenance of SOC and NPK nutrient status
+with the seasonal applications of NPK fertilizers.
+This is conﬁrmed for all the three treatments of NPK
+fertilizer and not only for the best
+treatment per
+season as observed by Haefele et al. (2002).
+
+123
+
+152
+
+140
+
+Conclusions
+
+Soil organic carbon was always maintained or
+increased irrespective of fertilizer application and
+rice yields declined only when rice was cultivated
+without NPK fertilizer or when only N-fertilizer was
+used. However, these data suggest research axes to
+develop alternative and better management options of
+chemical fertilizers to improve irrigated rice produc-
+tivity and proﬁtability. While N should be applied
+each season, it is probably not necessary to apply P
+and K each season. For example, seasonal applica-
+tions of N (each cropping season) and annual
+applications (one season per year) of P and K can
+be an option to improve fertilizer management, rice
+production and proﬁtability.
+
+References
+
+Bado BV, Sedogo MP, Cescas MP, Lompo F (1997) Effet a`
+long terme des fumures sur le sol et les rendements du
+mais au Burkina Faso. Cah Agric 6:571–575
+
+Bado BV, DeVries ME, Haefele SM, Marco MCS, Ndiaye MK
+(2008) Critical
+limit of extractable phosphorous in a
+Gleysol for rice production in the Senegal River valley of
+West Africa. Comm Soi Sci Plant Anal 39:202–206
+
+Bationo A (2008) Organic amendments for sustainable agri-
+cultural production in Sudano-Sahelian West Africa. In:
+Bationo A (ed) Integrated soil fertility management options
+for agricultural intensiﬁcation in Sudano-Sahelian zone of
+West Africa. Academy Science Publishers, Nairobi
+
+Bationo A, Mokwunye AU (1991) Role of manure and crop
+residues in alleviating soil fertility constraints to crop
+production: with special reference to the Sahelian and
+Sudanian zone of West Africa. Fert Res 29:117–125
+
+Bray RM, Kurtz LT (1945) Determination of total, organic and
+available forms of phosphorous in soils. Soil Sci 59:39–45
+Bronson KF, Cassman KG, Wassmann R, Olk DC, van Noo-
+rdwijk M, Garrity DP (1997) Soil carbon dynamics in
+different cropping systems in principal ecoregions of
+Asia. In: Lal R et al (eds) Management of carbon
+sequestration in soil. CRC Press, Boca Raton
+
+Buri MM, Ishida F, Kubota D, Masunaga T, Wakatsuki T
+(1999) Soils of ﬂood plains of West Africa: general fer-
+tility status. Soil Sci Plant Nutr 45:37–50
+
+Cassman KG, De Datta SK, Olk DC, Alcantara J, Samson M,
+Descalsota J, Dizon M (1995) Yield decline and the
+nitrogen economy of long-term experiments on continu-
+ous,
+irrigated rice systems in the tropics. In: Lal R,
+Stewart BA (eds) Soil management: experimental basis
+for sustainability and environmental quality. CRC Press,
+Boca Raton
+
+Nutr Cycl Agroecosyst (2010) 88:133–141
+
+Deckers J, Randolph TF (eds) Irrigated rice in the Sahel:
+prospects for sustainable development. West Africa Rice
+Development Association, Bouake
+
+FAO (1998) World references base for soil resources. World
+
+soil resource 84. FAO, Rome
+
+Flinn JC, De Datta SK (1984) Trends in irrigated-rice yields
+under intensive cropping at Philippine research stations.
+Field Crops Res 9:1–15
+
+Gomez KA, Gamez AA (1983) Statistical procedure for agri-
+
+cultural research, 2nd edn. IRRI, Los Banos
+
+Haefele SM, Wopereis MCS, Wiechmann H (2002) Long-term
+fertility experiments for irrigated rice in the West African
+Sahel: agronomic results. Field Crop Res 78:119–131
+
+Haefele SM, Wopereis MCS, Schloebohm AM, Wiechmann H
+(2004) Long-term fertility experiments for irrigated rice in
+the West African Sahel: effects on soil characteristics.
+Field Crop Res 83:61–77
+
+Helmke PA, Sparks DL (1996) Lithium, sodium, potassium,
+rubidium and cesium. In: Bigham JM (ed) Method of soil
+analysis. Part 3. Chemical methods. Soil Science Society
+of America/American Society of Agronomy, Madison,
+WI, pp 551–574
+
+Kebbeh M, Miezan K (2003) Ex-ante evaluation on integrated
+crop management options for irrigated rice production in
+the Senegal River Valley. Field Crop Res 81:87–94
+
+Kenneth G, Cassman Shaobing, Peng DobermannA (1997)
+Nutritional physiology of the rice plant and productivity
+decline of irrigated rice systems in the tropics. In: Ando T
+et al (eds) Plant nutrition for sustainable food production
+and environment. Kluwer Academic Publishers, Japan
+
+Mie´zan KM, Diack S (1994) Senegal releases three new cul-
+tivars selected by WARDA. West Africa rice develop-
+ment association, Annual report 1994, Bouake´
+
+Mirasol FP, Eufrocino VL, Gines HC, Buresh JR (2008) Soil
+carbon and nitrogen changes in long-term continuous
+lowland rice cropping. Soil Sci Soc Am J 72:798–807
+
+Olk DC, Cassman KG, Randall EW, Kinchesh P, Sanger LJ,
+Anderson JM (1996) Changes in chemical properties of
+organic matter with intensiﬁed rice cropping in tropical
+lowland soil. Eur J Soil Sci 47:293–303
+
+Olk DC, Brunetti G, Senesi N (2000) Decrease in humiﬁcation
+of organic matter with intensiﬁed lowland rice cropping: a
+wet chemical and spectroscopic investigation. Soil Sci
+Soc Am J 64:1337–1347
+
+Powlson DS, Olk DC (2000) Long-term soil organic matter
+dynamics. In: Kirk GJD, Olk DC (eds) Carbon and
+nitrogen dynamics in ﬂooded soils. Paper presented at the
+Workshop on carbon and nitrogen dynamics in ﬂooded
+soils. IRRI, Los Ban˜os, 19–22 April 1999
+
+Regmi AP, Ladha JK, Pathak H, Pasuquin E, Bueno C, Dawe
+D, Hobbs PR, Joshy D, Maskey SL, Pandey SP (2002)
+Yield and soil fertility trends in a 20-year rice-rice-wheat
+experiment in Nepal. Soil Sci Soc Am J 66:857–867
+
+Sahrawat KL (1998) Flooding soil: a great equalizer of
+
+diversity in soil chemical fertility. Oryza 35:300–305
+
+Sahrawat KL (2004) Organic matter accumulation in sub-
+
+merged soils. Adv Agron 81:169–201
+
+SAS Institute (1995) SAS system for windows. Release 6.11.
+
+SAS Inst, Cary, NC
+
+Dingkuhn M, Sow A (1997) Potential yields of irrigated rice in
+the Sahel. In: Miezan KM, Wopereis MCS, Dingkuhn M,
+
+Walkley A, Black JA (1934) An examination of the Detjareff
+method for determining soil organic matter and a
+
+123
+
+Nutr Cycl Agroecosyst (2010) 88:133–141
+
+153
+
+141
+
+proposed modiﬁcation of the chromatic acid titration
+method. Soil Sci 37:29–38
+
+Witt C, Cassman KG, Olk DC, Biker U, Liboon SP, Samson
+MI, Ottow JCG (2000) Crop rotation and residue man-
+agement effects on carbon sequestration, nitrogen cycling
+and productivity of irrigated rice systems. Plant Soil
+225:263–278
+
+Wopereis MCS, Donovan C, Nebie´ B, Guindo D, Ndiaye MK
+(1999) Soil fertility management in irrigated rice systems
+in the sahel Savanna region of West Africa. Part 1.
+Agronomic analysis. Field Crops Res 61:125–145
+
+Zhang M, He Z (2004) Long term changes in organic carbon
+and nutrients of an Ultisol under rice cropping in south-
+east China. Geoderma 118:167–179
+
+123
+
+

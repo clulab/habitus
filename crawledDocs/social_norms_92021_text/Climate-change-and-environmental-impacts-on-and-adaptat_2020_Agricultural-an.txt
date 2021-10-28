@@ -1,0 +1,1496 @@
+Agricultural and Forest Meteorology 292–293 (2020) 108136
+
+Contents lists available at ScienceDirect
+
+Agricultural and Forest Meteorology
+
+journal homepage: www.elsevier.com/locate/agrformet
+
+Climate change and environmental impacts on and adaptation strategies for
+production in wheat-rice rotations in southern China
+Chuang Liua,b,c,d, Li Wanga,b, Kate Le Cocqd, Changlong Change, Zhiguo Lia,b,⁎, Fang Chena,b,
+Yi Liua,b,⁎, Lianhai Wud
+
+T
+
+a Key Laboratory of Aquatic Botany and Watershed Ecology, Wuhan Botanical Garden, Chinese Academy of Sciences, Wuhan 430074, China
+b Center of Plant Ecology, Core Botanical Gardens, Chinese Academy of Sciences, Wuhan 430074, China
+c University of Chinese Academy of Sciences, Beijing 100049, China
+d Rothamsted Research, North Wyke, Okehampton, Devon EX20 2SB, United Kingdom
+e Soil and Fertilizer station, Agricultural Bureau of Jingmen City, Jingmen 448000, China
+
+A R T I C L E I N F O
+
+A B S T R A C T
+
+Keywords:
+Climate change
+Crop modeling
+N cycling
+Wheat-rice rotation
+Yield
+
+Process-based agricultural simulation models are eﬀective tools which can be applied to assess the potential
+impact of climate change and agronomic practices on yield and nutrient cycling. This study investigates the
+eﬀects of climate change and fertilization on yield, nitrogen (N) contribution eﬃciency (the percentage of re-
+mobilized N from the vegetative material in grains out of total N content in grains at harvest, (ANCE)), N loss to
+water and nitrous oxide (N2O) emissions in the wheat (Triticum aestivum L.) – rice (Oryza sativa L.) cropping
+system in southern China, using the SPACSYS (v6.0) model. The model was ﬁrst evaluated using crop production
+and N accumulation data from three-year ﬁeld experiments, and then applied to simulate production and N
+processes under three representative concentration pathway (RCP) scenarios for the wheat-rice cropping region,
+with projections for the years 2020 to 2100. Results indicated that N management as well as shifting sowing or
+transplantation dates could greatly mitigate the yield losses and N contribution eﬃciency (ANCE) reduction in
+the winter wheat-rice rotation system. Delaying sowing dates of wheat and transplanting rice earlier could
+reduce N leaching losses. Unexpectedly, climate change indirectly increased N2O emissions, showing signiﬁcant
+variation depending on the interaction with high N fertilization for rice pre-anthesis, indicating that emissions
+can be limited by restricting fertilizer application. Changing growing season start dates, along with im-
+plementing appropriate N management practice is a potential way to increase resilience to climate change in the
+wheat-rice cropping system of China.
+
+1. Introduction
+
+Sustainable production of both wheat (Triticum aestivum L.) and rice
+(Oryza sativa L.) continues to be challenging because of on-going in-
+crease in demand (Porter et al., 2014). With climate change, increased
+overall climatic variability, (e.g., change in frequency, intensity, timing
+and duration of events), occurs, which adversely aﬀects food security in
+developing countries where rice is mainly grown (Gupta and
+Nair, 2012; Lal, 2019; Arunrat et al., 2020). Higher seasonal mean
+temperatures over the ﬂowering and grain-ﬁlling periods threaten
+wheat growth and production (Rashid et al., 2018; Asseng et al., 2019).
+Frequent and high intensity of rainfall events accelerate nitrogen (N)
+losses
+through surface runoﬀ and leaching
+(Wang and Li, 2019). In addition, it has been suggested that high
+
+to the environment
+
+temperatures would indirectly increase N loss through N2O emissions
+(Xiao et al., 2019).
+
+Crop yields have potential to vary greatly in the future because of
+climate change, being aﬀected by factors such as an increase in tem-
+perature, uneven seasonal distribution of precipitation and reduced
+incident solar radiation (Liu et al., 2019; Hoegh-Guldberg et al., 2019).
+Both ﬁeld and controlled experiments suggest that high temperatures
+increase transpiration, decrease water use eﬃciency, and further lower
+leaf assimilation by winter wheat (Rashid et al., 2018). Atmospheric
+CO2 fertilization eﬀects on crop yields are likely to reduce because of
+increasing temperature and drought over the growing season (Jin et al.,
+2018). Predicted ﬂuctuations in temperature and precipitation lead to
+acceleration of the growth and development of cereal crops and in-
+crease in water demand, which ultimately has an important impact on
+
+⁎ Corresponding authors.
+E-mail addresses: lzg360@wbgcas.cn (Z. Li), liuyi@wbgcas.cn, lyle3521@126.com (Y. Liu).
+
+https://doi.org/10.1016/j.agrformet.2020.108136
+Received 29 January 2020; Received in revised form 22 July 2020; Accepted 26 July 2020
+Available online 14 August 2020
+0168-1923/ © 2020 Elsevier B.V. All rights reserved.
+
+C. Liu, et al.
+
+Agricultural and Forest Meteorology 292–293 (2020) 108136
+
+crop production (Kim et al., 2013; Tao et al., 2016; Xiao et al., 2020).
+Accumulation of N in plants at the vegetative stage and its redis-
+tribution to the economically valuable organs (expressed, in this study,
+as accumulated N contribution eﬃciency, ANCE) at the reproductive
+stage, which is essential to cereal crop yield and quality, are known to
+be aﬀected by agronomic practices and weather conditions (Wei et al.,
+2008). The majority of the N in grains of winter wheat is translocated
+from leaves and stems, where N accumulates before anthesis
+(Mackown et al., 1992; Bertheloot et al., 2008). Previous studies sug-
+gest that this source accounts for 60 – 92% of the N accumulated in
+grain at harvest, and the ability of a plant to accumulate N as well as its
+quantity are mainly dependent on indigenous soil nutrient supply, N
+fertilization rates and growing conditions over the vegetative period as
+well as genotype (Rodgers and Barneix, 1988; Papakosta and
+Gagianas, 1991; Barbottin et al., 2005). Fertilizer application increases
+nutrient uptake and utilization by aﬀecting the capacity of the rhizo-
+sphere to supply nutrients and moisture to plant roots (Yang et al.,
+2004). However, higher N fertilization rates during the vegetative stage
+cause a decrease in ANCE as the resulting higher level of N availability
+during the reproductive stage renders N remobilization unnecessary
+(Cox et al., 1986; Barbottin et al., 2005). Moreover, water stress, ele-
+vated CO2 and high temperature signiﬁcantly aﬀect N uptake, which
+decreases N translocation to economic organs before anthesis
+(Halloran, 1981; Macabuhay, 2016).
+
+Process-based modeling is an eﬀective tool to assess the impacts of
+climate change and agronomic practices not only on yield and N uptake
+but also nutrient cycling. The SPACSYS model is able to simulate crop
+growth and development, soil carbon (C), N and phosphorus (P) cy-
+cling, water redistribution and heat transformation (Wu et al., 2007,
+2015; Wu, 2019). In this study, the model was calibrated and validated
+using the results of our ﬁeld experiments on a winter wheat-rice rota-
+tion, then the validated model was run for the baseline and three cli-
+mate change scenarios along with various agronomic practices. The
+objectives are to: 1) quantitatively predict and evaluate the impacts of
+climate change on grain yield, ANCE, N losses in water and N2O
+emissions in the typical cropping system in southern China using the
+SPACSYS model, and 2) to suggest adaptation strategies to oﬀset the
+negative impacts of the change.
+
+2. Materials and methods
+
+2.1. Study site and experimental design
+
+A ﬁeld experiment involving a winter wheat-rice cropping system
+was conducted at a site at Jingshan (112°48′54″E, 30°54′14″N) in the
+middle of the Yangtze river basin in China from 2015 to 2018. The
+experimental site has a typical subtropical monsoon climate and soil
+type for the region. The soil is classiﬁed as a yellow-brown soil in the
+Chinese soil classiﬁcation, equivalent to Haplic Luvisols in the USDA Soil
+Taxonomy. Soil physical-chemical properties at the beginning of the
+experiment are given in Table 1.
+
+Winter wheat was rainfed, while rice was irrigated using an average
+of 505 mm throughout the growing season. Treatments included no N
+fertilizer input (N0) and three urea application rates (wheat: 120, 150
+and 180 kg N ha−1, and rice: 150, 180 and 210 kg N ha−1), with 70% of
+
+Table 1
+Soil physical and chemical properties at Jingshan in 2015.
+
+the N delivered in basal fertilizer and 30% as topdressing applied at the
+tiller stage. All the treatments received the same amount of calcium
+superphosphate (75 P2O5 kg ha−1) and potassium chloride (120 K2O kg
+ha−1) in the form of basal fertilizer over a crop growing season. Local
+cultivars (E'mai596 for wheat and Huanghuazhan for rice), and ﬁeld
+management practices including tillage, weed and pest control were
+adopted. Plots were tilled before the crop was sown or transplanted
+using a ﬁeld cultivator to a depth of 10–15 cm for seed bed preparation.
+In a plot, winter wheat was sown in early November and harvested in
+late May and then rice was transplanted in mid-June and harvested in
+late September. Each treatment was replicated three times. The plots
+were arranged in a randomized complete block design. The plot size
+was 5 m × 8 m for both rice and wheat.
+
+2.2. Plant sampling and analyses
+
+The following datasets were used to evaluate the resultant simula-
+tions for wheat and rice: grain yield at maturity, total aboveground dry
+matter at diﬀerent times, N accumulation in grain and biomass. The dry
+matter was collected and dried during key growing stages – tillering,
+booting, grain ﬁlling and maturity for both wheat and rice. Grain yields
+were determined by harvesting the whole plot area and weighing all the
+grain in parallel to the harvesting operation. Plant samples were wa-
+shed thoroughly with deionized water to remove any soil contamina-
+tion. The material was pre-dried for 1 h at 105 °C followed by oven
+drying at 80 °C to constant weight. After dry weight determination,
+dried samples were ground to a powder before N concentration was
+determined using an elemental analyzer (Vario Max CN, Elemetar
+Analysensysteme GmbH, Hanau, Germany). Grain and above ground N
+uptake were calculated by multiplying N concentration by grain or
+above-ground dry matter production, respectively.
+
+2.3. Model description
+
+A detailed description of the ﬁeld-scale, daily time step and process-
+based simulation model, SPACSYS, has been published previously
+(Wu et al., 2007; 2011; 2015; 2019). Soil N cycling including N2O
+emissions has been calibrated and validated in various environmental
+conditions including Chinese climates and soil types (Bingham and
+Wu, 2011; Wu et al., 2015; Zhang et al., 2018), which indicated that the
+model could generate reasonable N dynamics for our study. Thus, only
+a brief summary of recently integrated processes that are closely related
+to this study are presented here. A biochemical Farquhar-based model
+(Yin et al., 2009; Yin and Struik, 2017) to estimate the leaf photo-
+synthesis rate was introduced to replace the algorithm previously used.
+Transplant shock was quantiﬁed as a function of the seedling age ( °C d)
+at transplanting.
+
+2.4. Weather data and climate change scenarios
+
+Historic weather data for Jingshan were downloaded from the
+National Meteorological Information Center (http://data.cma.cn). To
+predict the impacts of climate change on grain yield and ANCE of the
+wheat-rice system in the area between 2020 and 2100, the datasets for
+four climate scenarios – Representative Concentration Pathway (RCP)
+
+Depth
+M
+
+0 - 0.16
+0.16 - 0.26
+0.26 - 0.40
+0.40 - 0.95
+
+Clay
+%
+
+21.9
+34.0
+25.8
+27.9
+
+Sand
+%
+
+25.9
+22.1
+30.8
+35.1
+
+Silt
+%
+
+52.3
+43.9
+43.5
+37.0
+
+BD
+g cm−3
+
+1.10
+1.24
+1.34
+1.37
+
+pH
+
+6.1
+7.0
+7.4
+7.0
+
+SOM
+g kg−1
+
+23.1
+12.2
+4.8
+4.2
+
+TN
+g kg−1
+
+1.1
+0.7
+0.4
+0.3
+
+TP
+g kg−1
+
+0.25
+0.21
+0.20
+0.20
+
+TK
+g kg−1
+
+14.2
+13.8
+12.9
+15.0
+
+BD, bulk density; SOM, soil organic matter; TN, soil total N; TP, soil total phosphorous; TK, soil total potassium.
+
+2
+
+C. Liu, et al.
+
+Agricultural and Forest Meteorology 292–293 (2020) 108136
+
+Table 2
+Mean, coeﬃcients of variation (CV) and ranges of daily values of precipitation (Pr), minimum daily temperature (Tmin), maximum daily temperature (Tmax) and daily
+global radiation (Rs) under the baseline (1980 – 2018) and future scenarios.
+
+Baseline
+
+Mean
+
+988
+21
+13
+14
+
+CV
+
+0.2
+0.0
+0.1
+0.1
+
+RCP2.6
+
+Range
+
+Mean
+
+0 - 182
+−4 - 39
+−10–30
+5 - 30
+
+1269
+23
+15
+14
+
+CV
+
+0.9
+0.6
+0.4
+1.4
+
+Range
+
+0.0 - 153
+−6 - 50
+−11 - 36
+0 - 30
+
+RCP4.5
+
+Mean
+
+1225
+23.3
+15.1
+13.7
+
+CV
+
+1.2
+0.5
+0.5
+1.8
+
+Range
+
+0 - 145
+−6 - 49
+−13 - 36
+0.1 - 30
+
+RCP6.0
+
+Mean
+
+1195
+23
+15
+13
+
+CV
+
+1.4
+0.7
+0.6
+0.8
+
+Range
+
+0 - 193
+−4 - 52
+−11 - 38
+0.1 - 29
+
+RCP8.5
+
+Mean
+
+1314
+25
+16
+14
+
+CV
+
+1.1
+0.6
+0.6
+1.4
+
+Range
+
+0 - 199
+−4 - 53
+−9 - 39
+0.2 - 29
+
+Pr (mm)
+Tmax ( °C)
+Tmin ( °C)
+Rs
+
+(MJ)
+
+2.6, RCP4.5, RCP6.0 and RCP8.5 (Van Vuuren et al., 2011) were ex-
+tracted from the bias corrected HadGEM2-ES model (0.5 × 0.5°)
+(ISIMIP, www.isimip.org, Collins et al., 2011; Jones et al., 2011;
+Arneth et al., 2017) for the study site. Average values and variations in
+precipitation, temperature and global radiation over the period for each
+climate scenario (2020–2100) and the baseline (1980–2018) are given
+in Table 2 and Fig. S1. As there were no great diﬀerences in tempera-
+ture and solar radiation between RCP4.5 and RCP6.0, we did not run
+simulations under RCP6.0. The atmospheric CO2 concentration was set
+to 380 ppm initially and increased progressively to 425.4, 538.1 and
+923.7 ppm for RCP2.6, RCP4.5 and RCP8.5 in 2100, respectively.
+
+2.5. Model calibration, validation and prediction
+
+The parameters related to soil water redistribution and heat trans-
+formation were based on previous studies (Bingham and Wu, 2011;
+Wu et al., 2015; Liang et al., 2018), whilst those relating to soil C and N
+cycling, plant photosynthesis, development and N translocation were
+determined through calibration (Table S1 and S2). The model was ca-
+librated with the data collected from the ﬁrst year of the experiment
+(2016 for wheat and 2017 for rice) using the trial and error method and
+the Multi-Objective Shuﬄed Complex Evolution Metropolis algorithm
+(Vrugt et al., 2003) implemented within the model. The model was then
+validated using the remaining data collected during the experiment.
+
+To estimate the impacts of climate change on the cropping system,
+the model was run for each climate scenario with the same ﬁeld man-
+agement practices, cultivars and initial values of C, N, water and tem-
+peratures in the soil proﬁle as those in the ﬁeld experiment. However,
+sowing dates for winter wheat and transplanting dates for rice were
+automatically determined by the model in which an algorithm was
+implemented. The sowing date was set when the 5-day rolling average
+daily air temperature is below the temperature for germination plus
+2 °C in the autumn (Wu, 2019). To determine transplanting dates, the
+model was run once to determine proper sowing dates in spring based
+on the suitable temperature for rice germination. When simulated ac-
+cumulated temperatures reach the required accumulated temperatures
+for transplanting, the date was treated as a transplanting date. Both
+winter wheat and rice were harvested when they reached physiological
+maturity. The changes in transplanting and sowing dates under various
+climate scenarios compared with the dates in the ﬁeld experiment are
+given in Fig. S2.
+
+2.6. Data analysis
+
+ANCE was calculated following Xie et al. (2007).
+
+ANCE
+
+=
+
+NA
+
+−
+
+anthesis
+NA
+
+NA
+grain
+
+maturity
+
+100
+
+×
+
+where NAanthesis and NAmaturity are N contents (kg N ha−1) in stems and
+leaves at anthesis and maturity, respectively; and NAgrain is N content in
+grains at maturity.
+
+The following statistical indices were used to assess model perfor-
+mance when the SPACSYS model was calibrated and validated: 1) the
+
+3
+
+coeﬃcient of determination (CD, the closer to 1, the better), which
+describes the goodness of ﬁt between simulated and measured data; 2)
+the root mean squared error (RMSE), which reﬂects the average size of
+error between simulated and measured data; 3) modeling eﬃciency
+(EF, the closer to 1, the better), which quantiﬁes the accuracy and
+conﬁdence of simulation; 4) the correlation coeﬃcient (r), which tests
+the degree of association between simulated and measured data; and 5)
+the relative error (RE), which represents the total diﬀerence between
+simulated and measured data. These diagnostics are a subset of that
+proposed by Smith et al. (1997) for evaluating process-based models.
+For the result of the predicted process between 2020 and 2100, two-
+way ANOVA and Tukey's honestly signiﬁcant diﬀerence (HSD) (** for P
+< 0.01; * for P < 0.05) were used to test the signiﬁcance of the eﬀects
+of N fertilizer treatments and climate change scenarios on average va-
+lues of grain yields, ANCE, N losses and residual N of winter wheat and
+rice, respectively. The analyses were conducted in SPSS 20.0 (SPSS,
+Inc., 2011, Chicago, USA).
+
+3. Results
+
+3.1. Model calibration and validation
+
+The SPACSYS model is able to adequately simulate the dynamics of
+crop growth and yields in the wheat and rice cropping system (Fig. 1,
+Table 3), and the patterns and magnitude of the modelled dry matter
+accumulation agreed well with the observed data for each treatment
+(Fig. S3). The observed values of wheat biomass ranged from 2340 to
+8520 kg ha−1 and the range of simulated values was from 2780 to
+8590 kg ha−1; the observed rice biomass ranged between 1460 and
+13,930 kg ha−1 whilst the simulated values were in the range 2190 to
+13,890 kg ha−1.
+
+The overall accuracy of the model's performance is shown in
+Table 3, based on the statistical indices for calibration and validation.
+For instance, the average EF for simulated and observed values of the
+model components for wheat and rice were 0.72 and 0.77, respectively,
+with 9.2% and 9.6% for RMSE, 0.98 and 1.81 for CD, and 0.89 and 2.82
+for RE. For validation the values were 0.69 and 0.78, with 15.6% and
+10.2% for RMSE, 0.95 and 1.9 for CD, and −2.54 and −0.02 for RE. In
+addition, there was a statistically signiﬁcant linear regression between
+the observed and simulated values, and R2 (the variation of observation
+can be explain by simulated data using a linear regression.) ranged from
+0.71 to 0.86 and 0.69 to 0.93 (P < 0.05) for the model components for
+wheat and rice, respectively (Fig. 1). Although the statistical tests va-
+lidated the model and indicated good calibration, discrepancies re-
+mained between simulated and observed data. Simulated aboveground
+N content for winter wheat was overestimated by 22.2%, and the
+averages of simulated and observed values were 71.3 kg ha−1 and
+58.3 kg ha−1, respectively (Fig. 1g).
+
+3.2. Yield variations
+
+The model revealed a decline in average yields for both winter
+wheat and rice under the three RCP scenarios across the fertilization
+
+C. Liu, et al.
+
+Agricultural and Forest Meteorology 292–293 (2020) 108136
+
+Fig. 1. Relationship between simulated and observed crop yields (a & b), N content in grains (c & d), aboveground biomass (AGB, e & f) and N content in AGB (g & h)
+from 2015 to 2018 (**, P < 0.01). The solid line is the ﬁtted line between observation and simulation; the dashed line is the 1:1 relationship; R2 is the coeﬃcient of
+correlation between simulation and observations.
+
+4
+
+C. Liu, et al.
+
+Agricultural and Forest Meteorology 292–293 (2020) 108136
+
+Table 3
+Statistical indices for model performance compared with actual observations for wheat and rice.
+
+Crop
+
+Index
+
+Calibration
+
+Aboveground
+biomass
+
+Grain
+yield
+
+N content in
+grains
+
+N content in
+aboveground
+
+Wheat
+
+Rice
+
+r
+RMSE (%)
+EF
+CD
+RE
+n
+r
+RMSE (%)
+EF
+CD
+RE
+n
+
+0.88
+9.94
+0.75
+1.19
+−3.09
+8
+0.98
+13.12
+0.93
+0.95
+9.04
+14
+
+0.83
+5.72
+0.66
+1.63
+1.55
+3
+0.94
+4.94
+0.61
+1.91
+3.73
+4
+
+1.00
+8.36
+0.82
+0.56
+4.99
+3
+0.96
+9.39
+0.69
+2.68
+−5.62
+4
+
+0.91
+12.95
+0.64
+0.55
+0.12
+3
+0.94
+11.04
+0.84
+1.69
+4.13
+4
+
+Validation
+
+Aboveground
+biomass
+
+0.94
+13.08
+0.83
+1.11
+−6.39
+24
+0.98
+12.96
+0.93
+1.45
+3.43
+16
+
+Grain yield N content in
+
+grains
+
+0.94
+15.60
+0.74
+0.59
+3.39
+9
+0.95
+8.87
+0.88
+1.29
+3.92
+4
+
+0.96
+10.10
+0.87
+1.68
+−3.40
+9
+0.99
+4.83
+0.85
+1.61
+3.79
+4
+
+N content in
+aboveground
+
+0.88
+23.68
+0.32
+0.42
+−3.77
+9
+0.99
+14.11
+0.44
+3.25
+−11.21
+4
+
+r, correlation coeﬃcient; RMSE, root mean square error; EF, modeling eﬃciency; CD, coeﬃcient of determination; RE, relative error; n, number of samples.
+
+Fig. 2. Boxplots summarizing variation in wheat (a) and rice (b) grain yield from the baseline and three climate change scenarios (RCP2.6, RCP4.5 and RCP8.5)
+under diﬀerent N treatments between 2020 and 2100. For each boxplot, the central mark is the median, the red square indicates the mean value, the edges of the box
+are the 25th and 75th percentiles, and the whiskers extend to the extreme data points not considered to be outliers. Extreme events are indicated by both minimum
+and maximum values (ﬁlled circles). Diﬀerent lowercase letters represent signiﬁcant diﬀerences (P < 0.05) under diﬀerent climate scenarios in each individual N
+treatment. Diﬀerent capital letters represent signiﬁcant diﬀerences (P < 0.05) between the diﬀerent N treatments under the three climate scenarios. (For inter-
+pretation of the references to colour in this ﬁgure legend, the reader is referred to the web version of this article.)
+
+treatments compared with the baseline, and the risk of yield loss in-
+creased signiﬁcantly, amounting to 8.7% and 18.6% for wheat and for
+rice, respectively under the RCP8.5 scenario (Fig. 2 and Table S3). The
+lowest average grain yields for wheat (1937 kg ha−1) and rice (5508 kg
+ha−1) among the N treatments were found under RCP8.5. Among the
+climate change scenarios, the model suggests that yield losses could be
+signiﬁcantly alleviated by fertilization and shifting sowing or trans-
+planting dates. For example, the grain yield of winter wheat could in-
+crease 210 kg ha−1 between the N180 and N150 treatments (Fig. 2a)
+while rice yield could increase by 440 kg ha−1 between the N210 and
+N180 treatments (Fig. 2b) under RCP8.5. Delaying the sowing date for
+wheat could increase grain yield by the average of 5% under the N150
+treatment (Fig. 6b) while rice yield with an earlier transplanting date
+signiﬁcantly increased by 10.4% under RCP 8.5 (Fig. 6c, P < 0.05).
+
+3.3. Climate change and fertilization impacts on ANCE
+
+The contribution of accumulated aboveground N before anthesis to
+the N content in grains of both winter wheat and rice was signiﬁcantly
+aﬀected by climate change and N management (Fig. 3, Table S3). The
+average ANCE for all the climate scenarios and N treatments varied
+between 50 and 55% for winter wheat and from 20 to 40% for rice. For
+all the N treatments, the ANCE for winter wheat decreased as follows:
+
+RCP8.5 < RCP4.5 < RCP2.6 < Baseline, but for rice the order was
+followed by: RCP2.6 < RCP4.5 < RCP8.5 < Baseline. The average
+values of ANCE for both crops were signiﬁcantly enhanced with in-
+creasing N application rate under each individual climate scenario (P <
+0.05).
+
+3.4. Nitrogen losses in water
+
+Simulated N losses in water (through leaching and surface runoﬀ)
+over the vegetative and reproductive periods for each crop growing
+season are shown in Fig. 4. The losses for winter wheat over each of the
+periods increased signiﬁcantly with increasing N application rate under
+the baseline and each climate scenario (Fig. 4a and 4b, P < 0.05).
+Compared with the baseline, N losses in water over the vegetative and
+reproductive stages were −15.3 and 37.5% for wheat, and 56.7 and
+45.2% for rice, respectively (Fig. 4). Increasing N fertilization had no
+signiﬁcant eﬀect on the losses over the whole growing period for rice
+but there was a slight, non-signiﬁcant, increase (Fig. 4c and 4d, P >
+0.05). Furthermore, N losses over the vegetative stage for rice ac-
+counted for over 60% of the total over the whole season. For all ferti-
+lization treatments, N losses over the reproductive stage in rice and
+winter wheat were signiﬁcantly increased under RCP2.6 and 8.5 com-
+pared with the baseline (Fig. 4b and 4d, P < 0.05). For all the climate
+
+5
+
+C. Liu, et al.
+
+Agricultural and Forest Meteorology 292–293 (2020) 108136
+
+Fig. 3. Variations in contribution eﬃciency of N transferred before anthesis to grain (ANCE,%) for winter wheat (a) and rice (b) from the baseline and three climate
+change scenarios (RCP2.6, RCP4.5 and RCP8.5) under N application treatments from 2020 to 2100. For each boxplot, the central mark is the median, the red square
+indicates the mean value, the edges of the box are the 25th and 75th percentiles, and the whiskers extend to the extreme data points not considered to be outliers.
+Extreme events are given by both minimum and maximum values (ﬁlled circles). Diﬀerent lowercase letters represent signiﬁcant diﬀerences (P < 0.05) under the
+Baseline and diﬀerent climate scenarios in each individual N treatment. Diﬀerent capital letters represent signiﬁcant diﬀerences (P < 0.05) between diﬀerent N
+treatments under the Baseline and three climate scenarios. (For interpretation of the references to colour in this ﬁgure legend, the reader is referred to the web
+version of this article.)
+
+Fig. 4. Variation in N loss between pre-anthesis and post-anthesis in wheat (a & b) and rice (c & d) under diﬀerent fertilization rates and the baseline and three
+climate change scenarios (RCP2.6, RCP4.5 and RCP8.5) from 2020 to 2100. For each boxplot, the central mark is the median, the red square represents the mean
+value, the edges of the box are the 25th and 75th percentiles, and the whiskers extend to the extreme data points not considered to be outliers. Extreme events are
+indicated by both minimum and maximum values (ﬁlled circles). Diﬀerent lowercase letters represent signiﬁcant diﬀerences (P < 0.05) under diﬀerent climate
+scenarios in each individual fertilization treatment. Diﬀerent capital letters represent signiﬁcant diﬀerences (P < 0.05) under three climate scenarios between
+fertilization treatments. (For interpretation of the references to colour in this ﬁgure legend, the reader is referred to the web version of this article.)
+
+scenarios, delaying sowing dates of wheat and earlier rice transplan-
+tation dates could reduce N leaching 11.4% and 3.0% over the vege-
+tative period (Fig. S7a and S7c).
+
+rice growing season under N210 and RCP4.5 were signiﬁcantly higher
+than those under the baseline, RCP2.6 and RCP8.5, by 44.3%, 52.0%
+and 62.6%, respectively.
+
+3.5. N2O emissions
+
+Nitrogen addition and climate change signiﬁcantly increased N2O
+emissions before anthesis (Fig. 5, Table S3). N2O emissions during the
+vegetative stage for wheat and rice increased signiﬁcantly with in-
+creasing N application rates (Fig. 5a and 5c, P < 0.05), while average
+emission rates over the reproductive stage for crops could be negligible
+under the baseline and all three RCP scenarios (Fig. 5b and 5d). For all
+the fertilization treatments, N2O emissions during the vegetative period
+for winter wheat under RCP2.6 increased by 18.4 ∼ 54.4% compared
+with the baseline and the other climate change scenarios but the dif-
+ference was not statistically signiﬁcant. However, the emissions in the
+
+4. Discussion
+
+4.1. Model performance
+
+Previous studies have reported that SPACSYS can accurately simu-
+late yields and N uptake of wheat and maize under various N man-
+agement practices in other areas (Zhang et al., 2016; Yin et al., 2017).
+Bingham and Wu (2011) used SPACSYS to predict aboveground bio-
+mass of winter wheat in the UK (24% for the average RMSE and 0.91 for
+the average r). Our study proved that the new version of the model is
+capable of simulating N accumulation and redistribution in plants and
+rice growth in paddy soils and can successfully predict aboveground
+
+6
+
+C. Liu, et al.
+
+Agricultural and Forest Meteorology 292–293 (2020) 108136
+
+Fig. 5. Variation in N2O emissions between pre-anthesis and post-anthesis in the wheat (a & b) and rice (c & d) under diﬀerent fertilization rates and the baseline and
+three climate change scenarios (RCP2.6, RCP4.5 and RCP8.5) from 2020 to 2100. For each boxplot, the central mark is the median, the red square represents the
+mean value, the edges of the box are the 25th and 75th percentiles, and the whiskers extend to the extreme data points not considered to be outliers. Extreme events
+are indicated by both minimum and maximum values (ﬁlled circles). Diﬀerent lowercase letters represent signiﬁcant diﬀerences (P < 0.05) under diﬀerent climate
+scenarios in each individual fertilization treatment. Diﬀerent capital letters represent signiﬁcant diﬀerences (P < 0.05) under three climate scenarios between
+fertilization treatments. (For interpretation of the references to colour in this ﬁgure legend, the reader is referred to the web version of this article.)
+
+biomass and N accumulation and grain yield. The calibration and va-
+lidation suggest that the model is able to predict aboveground biomass
+and N content and grain yields responding to diﬀerent environmental
+conditions and fertilizer application rates. Therefore, it can provide
+reliable predictions for various climate change scenarios. However, the
+model still exhibited discrepancies compared with real observations.
+This may be because of 1) simpliﬁcation processes in the model; 2) the
+assumptions related to the impacts of pests, pathogens, diseases and
+weeds on crop growth; and 3) measurement errors. Indeed, during
+model development, N translocation to grain chaﬀ during the re-
+productive stage was simpliﬁed; this caused the aboveground N content
+in the simulation to be overestimated by 23.7% in winter wheat and
+14.1% in rice compared to actual observations (Fig. 1g and 1h).
+
+climate
+
+and upland
+
+soil
+
+including Chinese
+
+The SPACSYS model has been validated in various environmental
+conditions
+type
+(Bingham and Wu, 2011; Wu et al., 2015; Zhang et al., 2018). Because
+of the original design of the described ﬁeld experiment, it is impossible
+to validate the N2O emissions using the existing experimental data.
+More frequent soil drying-rewetting cycling in paddy soils could aﬀect
+processes of mineralization, nitriﬁcation and denitriﬁcation in N cy-
+cling (Luster et al., 2014). Previous simulations on nutrient cycling in
+paddy soils with the SPACSYS model suggested that N2O emissions are
+reasonably estimated (Wu and Wu, 2020, unpublished). Furthermore,
+the average of simulated annual N2O emissions under the baseline is
+within the reporting range for the same cropping system with a similar
+climate (Kou et al., 2015; Lan et al., 2020). Therefore, to acquire reli-
+able estimation on the emission in paddy soils, more validations should
+be made in the future.
+
+4.2. Nitrogen loss under diﬀerent climate change scenarios
+
+Our simulations indicated that climate change will have negative
+impacts on the environment in terms of N emitted from soils in the
+wheat-rice rotation cropping system in China. This is in agreement with
+previous studies that focused on upland cropping systems (Xue et al.,
+2014; Øygarden et al., 2014; Liang et al., 2019). The abundant rainfall
+over the growing period may trigger considerable N losses via surface
+runoﬀ and leaching (Xie et al., 2019). N losses in water over the whole
+growing season under the diﬀerent RCP scenarios increased for each
+treatment in the order: RCP2.6 > RCP8.5 > Baseline > RCP4.5 for
+wheat and Baseline > RCP2.6 > RCP4.5 > RCP8.5 for rice. This may
+
+7
+
+be because the conditions result in a later sowing date and earlier
+transplantation date, meaning that the intensity and distribution of
+rainfall shifted between wheat and rice compared with ﬁxed sowing or
+transplantation dates (Fig. S6–8). Accordingly, the average accumu-
+lated precipitation under the diﬀerent climate scenarios at pre-anthesis
+and post-anthesis were −7.2 and 37.8% for wheat, and 17.6 and 21.7%
+for rice, respectively (Fig. 4, S4j, k and S5j, k). In addition, with in-
+creased N fertilization rates, application tended to occur before an-
+thesis, and N losses via surface runoﬀ and leaching occurred when large
+amounts of N application coincided with heavy precipitation
+(Liang et al., 2017; Zhou et al., 2019). We found that N loss over the
+vegetative and reproductive stages with application of 180 kg N ha−1
+for wheat increased by 19.3% compared with 150 kg N ha−1 – a sta-
+tistically signiﬁcantly diﬀerence – whilst with an application of 180 kg
+N ha−1 to rice the increase was only 3% compared with 150 kg N ha−1.
+Therefore, by adopting appropriate rates of N application under the
+prevailing climate conditions, losses of N can be minimized.
+
+For N losses through N2O emissions, the highest cumulative values
+for the wheat and rice cropping system were found in the high N
+treatment during pre-anthesis under the three RCP scenarios (Fig. 5,
+S11 and S12). The application of chemical fertilizer (e.g. urea) provides
+suﬃcient substrate (e.g. NH4+- N) to activate nitriﬁcation in the soil,
+and also provides a large amount of substrate for denitriﬁcation, which
+greatly increases the risk of N2O emissions from agricultural systems
+(Stein, 2011; Shang et al., 2019). Although the impacts of climate
+change were not the dominant factor aﬀecting N2O emissions from
+cropland, high levels of N fertilizer application (e.g. 210 kg N ha−1 for
+rice) interacted with speciﬁc climate scenarios, resulting in higher N2O
+emissions (i.e. RCP4.5: 1.9 kg N ha−1) and N losses to the environment
+emissions (i.e. RCP8.5: 3.8 kg N ha−1) (Fig. 5 and S12, Table S3). This
+may be because climate change is associated with reduced precipitation
+and relatively high temperatures, which would improve soil physical
+conditions for the microbial activity associated with nitriﬁcation and
+denitriﬁcation, and further promote N2O production because of the
+ready supply of N. This would be particularly the case in anaerobic
+environments such as paddy soil (Table 2, Fig. 5b and S5, Qin et al.,
+2019).
+
+Residual fertilizer N could aﬀect succeeding crop growth and N
+losses to environment (Xu et al., 2015). In our simulations, the amount
+of residual fertilizer N from the wheat season was 21 ∼28% higher than
+that from the rice season under the diﬀerent RCP scenarios (Fig. 7,
+
+C. Liu, et al.
+
+Agricultural and Forest Meteorology 292–293 (2020) 108136
+
+Fig. 6. Framework for the adaptive strategy for the wheat-rice cropping system (a). Variation in wheat and rice grain yield (b & c) between with (Auto) and without
+(Non-auto) adaption strategies (shift in sowing or transplantation dates, d and e; duration of wheat and rice across the growing period, f & g) employed for both
+wheat and rice with N application rate of 150 kg ha−1 under three climate scenarios (RCP2.6, RCP4.5 and RCP8.5). For each boxplot, the central mark is the median,
+the red square indicates the mean value, the edges of the box are the 25th and 75th percentiles, and the whiskers extend to the extreme data points not considered to
+be outliers. Extreme events are given by both minimum and maximum values (ﬁlled circles). ns, P > 0.05; *, P < 0.05. (For interpretation of the references to colour
+in this ﬁgure legend, the reader is referred to the web version of this article.)
+
+Fig. 7. Variation in residual nitrogen at harvest in the wheat (a) and rice (b) under diﬀerent fertilization rates and the baseline and three climate change scenarios
+(RCP2.6, RCP4.5 and RCP8.5) from 2020 to 2100. For each boxplot, the central mark is the median, the red square represents the mean value, the edges of the box are
+the 25th and 75th percentiles, and the whiskers extend to the extreme data points not considered to be outliers. Extreme events are indicated by both minimum and
+maximum values (ﬁlled circles). Diﬀerent lowercase letters represent signiﬁcant diﬀerences (P < 0.05) under diﬀerent climate scenarios in each individual ferti-
+lization treatment. Diﬀerent capital letters represent signiﬁcant diﬀerences (P < 0.05) under three climate scenarios between fertilization treatments. (For inter-
+pretation of the references to colour in this ﬁgure legend, the reader is referred to the web version of this article.)
+
+Table S3, P < 0.05), which would enhance grain yield and lead to an
+increase in N losses via N2O emissions over the succeeding rice season
+(Fig. 2 and 5, Jiang et al., 2020). Unused N applied during the wheat
+season could be temporally ﬁxed by microbes (Bristow et al., 1987) and
+subsequently released in the succeeding rice season through re-
+
+8
+
+mineralization, which can increase substrate for the nitriﬁcation and
+denitriﬁcation (Ferchaud et al., 2016; Jiang et al., 2020).
+
+C. Liu, et al.
+
+4.3. Climate change and adaptation strategies
+
+Predicted yields under the three RCP scenarios declined (Fig. 2, 3,
+S9, S10 and Table 2). Wheat and rice yields under RCP scenarios may
+decrease signiﬁcantly, averaging 4.7% and 10.6% less, respectively
+compared with baseline. This is in agreement with a previous study
+which reported that average yield across the major crops in Asia could
+decline by 14.0% (Porter et al., 2019). An increase in temperature
+under RCP8.5 would shorten the growing season and delay wheat
+sowing into the cold and dry season when there are low temperatures,
+thus inducing vernalization, which would represent an adaptation to
+future climate warming. With respect to rice yield under the various
+climate change scenarios, the average solar radiation at increasingly
+later transplantation dates would be 4.2% higher during the re-
+productive stage compared with the baseline. This would enhance the
+radiation use eﬃciency during the grain-ﬁlling stage and further de-
+crease the yield loss, although heat stress caused by the higher tem-
+peratures would simultaneously decrease the yield (Fig. S5k, Xing et al.,
+2017; Ali et al., 2019). Our simulation results also suggest that average
+wheat and rice ANCE during the vegetative stage under the RCP sce-
+narios signiﬁcantly decreased, by an average of 9.4% and 11.9%, re-
+spectively, compared with the baseline (Fig. 3). Previous studies have
+demonstrated the environmental changes, such as an increase in tem-
+perature and elevated CO2 concentrations, adversely aﬀect nutrient
+mobilization to leaves or economic organs (Fangmeier et al., 1999;
+Maillard et al., 2015). Additionally, for an 80-year simulation, the ex-
+treme low grain yield for wheat (i.e. 100 and 156 kg ha−1 for 2023 and
+2054, respectively) occurred in RCP4.5 scenario. This may be because
+low-temperature (i.e. < 2 °C) around the jointing and booting stage
+resulted in spring frost, which has negative eﬀects on crop growth and
+grain yield (Fig. S4d and S9, Liu et al., 2020).
+
+Here, we developed an integrated SPACSYS management approach
+to adapt to climate change factors (including solar radiation, tem-
+perature, precipitation, and CO2 concentration), allowing the model to
+determine crop sowing and transplantation dates in order to maximize
+the use of resources and periods with favourable temperatures (Fig. 6a).
+Our simulations suggest that the average yield could be higher than that
+with ﬁxed sowing or transplantation dates under each climate scenario
+(Fig. 6b-c), with delayed sowing dates for winter wheat and earlier
+transplantation dates for rice (Fig. 6d and e). Crop yields under such an
+adaptive strategy increased by 3.8 and 4.8% for wheat and rice, re-
+spectively, on average among all the climate scenarios. Compared with
+the yields under the baseline, those under the projected scenarios are
+still lower (Fig. 2a and b) partly because of shorter growing seasons
+(Fig. 6f and g) and thus reduced photosynthesis and grain-ﬁlling per-
+iods, as conﬁrmed by a previous study (Zhao et al., 2015). For wheat
+under RCP4.5, grain yield was projected to be slightly lower with ﬁxed
+date, possibly because of a slight increase in radiation (0.5%) and
+precipitation (14.4%) during the prolonged growing season compared
+with delayed wheat sowing and earlier rice transplantation (Fig. 6f and
+S5).
+
+The adaptive strategy suggested by the model could also eﬀectively
+reduce N losses in water and through gaseous emissions under climate
+change scenarios by an average of 5.4% and 5.8% in the wheat-rice
+rotation system (Fig. S7 and S8). N fertilization (150 kg N ha−1 for
+wheat and 180 kg N ha−1 for rice) signiﬁcantly increased yield (13%
+for wheat and 7% for rice) and ANCE (3% for wheat and 7% for rice)
+compared with the 120 kg N ha−1 for wheat or 150 kg N ha−1 for rice,
+respectively. However, higher N fertilization (e.g. 180 kg N ha−1 for
+wheat and 210 kg N ha−1 for rice) increased the amount and the
+probability of high N load events through surface runoﬀ and emissions
+in the wheat-rice rotation system, as found in previous studies (Fig. 4,
+Zhang et al., 2016; Hou et al., 2019). Thus, suitable fertilization and
+changing sowing or transplantation dates could be optimized to ﬁt fu-
+ture climate change, resulting in reduced N loss and alleviation of yield
+loss in the wheat-rice rotation system. It is essential to increase crop N
+
+9
+
+Agricultural and Forest Meteorology 292–293 (2020) 108136
+
+use eﬃciency and ANCE over the vegetative period and reduce N losses
+from farmland to the environment as climate change occurs
+(Venterea et al., 2012). In addition, combined with advances in crop
+simulation models, breeding technology and genetic improvement, it is
+necessary to develop new wheat and rice cultivars that deliver high
+ANCE before anthesis, are temperature tolerant and prolong the dura-
+tion of both wheat and rice in order to tackle the challenge of climate
+change.
+
+Conclusion
+
+Simulation results based on three climate change scenarios showed
+that N management and shifting sowing or transplantation dates could
+greatly mitigate the yield losses and ANCE reduction in the winter
+wheat-rice rotation system. Delaying sowing dates of winter wheat and
+advancing transplantation dates of rice in the future could reduce N
+losses via leaching and surface runoﬀ. However, combined higher fer-
+tilizer application rates (180 kg N ha−1 for wheat and 210 kg N ha−1
+for rice) and climate change scenarios in the model signiﬁcantly in-
+creased N losses to the environment. Careful N management practices
+(150 kg N ha−1 for wheat and 180 kg N ha−1 for rice) can eﬀectively
+reduce N pollution and maintain a higher level of crop yields in the
+future. Changing commencement of growing seasons along with proper
+N management practices have the potential to increase resilience of
+agricultural systems to climate change.
+
+Declaration of Competing Interest
+
+The authors declare that they have no known competing ﬁnancial
+interests or personal relationships that could have appeared to inﬂu-
+ence the work reported in this paper.
+
+Acknowledgements
+
+This research was ﬁnancially supported by the National Key
+Research and Development Program of China (2016YFD0200108) and
+Special Fund for Agro-scientiﬁc Research in the Public Interest of China
+(20150312203). Chuang Liu received funds from the China Scholarship
+Council (China - UK Joint Research and Innovation Partnership Fund
+PhD Placement Programme, No. 201802527008). Kate Le Cocq and
+Lianhai Wu were supported by the BBSRC Institute Strategic
+Programme grant, “Soils to Nutrition” (S2N, BBS/E/C/000I0320 and
+BBS/E/C/000I0330). Yi Liu was supported by the Young Backbone
+Talents Project of Wuhan Botanical Garden, Chinese Academy of
+Sciences. Scientists from the Soil and Fertilizer Station of in Jingmen in
+Hubei province provided valuable ﬁeld experimental data for use in our
+investigation.
+
+Supplementary materials
+
+Supplementary material associated with this article can be found, in
+
+the online version, at doi:10.1016/j.agrformet.2020.108136.
+
+References
+
+Ali, F., Waters, D.L.E., Ovenden, B., Bundock, P., Raymond, C.A., Rose, T.J., 2019. Heat
+stress during grain ﬁll reduces head rice yield through genotype dependant increased
+husk biomass and grain breakage. J. Cereal Sci. 90, 102820. https://doi.org/10.
+1016/j.jcs.2019.102820.
+
+Arneth, A., Balkovic, J., Ciais, P., de Wit, A., Deryng, D., Elliott, J., Folberth, C., Glotter,
+
+M., Iizumi, T., Izaurralde, R.C., Jones, A.D., Khabarov, N., Lawrence, P., Liu, W.,
+Mitter, H., Müller, C., Olin, S., Pugh, T.A.M., Reddy, A.D., Sakurai, G., Schmid, E.,
+Wang, X., Wu, X., Yang, H., Büchner, M., 2017. ISIMIP2a simulation data from
+agricultural sector. GFZ Data Serv. http://doi.org/10.5880/PIK.2017.006.
+
+Arunrat, N., Pumijumnong, N., Sereenonchai, S., Chareonwong, U., Wang, C., 2020.
+
+Assessment of climate change impact on rice yield and water footprint of large-scale
+and individual farming in Thailand. Sci. Total Environ. 726, 137864. https://doi.
+org/10.1016/j.scitotenv.2020.137864.
+
+C. Liu, et al.
+
+Agricultural and Forest Meteorology 292–293 (2020) 108136
+
+Asseng, S., Martre, P., Maiorano, A., Rötter, R.P., O'leary, G.J., Fitzgerald, G.J., Girousse,
+C., Motzo, R., Giunta, F., Babar, M.A., 2019. Climate change impact and adaptation
+for wheat protein. Glob. Change Biol. 25 (1), 155–173. https://doi.org/10.1111/gcb.
+14481.
+
+Barbottin, A., Lecomte, C., Bouchard, C., Jeuﬀroy, M.-.H., 2005. Nitrogen remobilization
+during grain ﬁlling in wheat. Crop Sci. 45 (3), 1141–1150. https://doi.org/10.2135/
+cropsci2003.0361.
+
+Bertheloot, J., Andrieu, B., Fournier, C., Martre, P., 2008. A process-based model to si-
+mulate nitrogen distribution in wheat (Triticum aestivum) during grain-ﬁlling. Funct.
+Plant Biol. 35 (10), 781–796. https://doi.org/10.1071/FP08064.
+
+Bingham, I.J., Wu, L.H., 2011. Simulation of wheat growth using the 3D root architecture
+model SPACSYS: validation and sensitivity analysis. Eur. J. Agron. 34 (3), 181–189.
+https://doi.org/10.1016/j.eja.2011.01.003.
+
+Bristow, A.W., Ryden, J.C., Whitehead, D.C., 1987. The fate at several time intervals of
+15N-labelled ammonium nitrate applied to an established grass sward. Eur. J. Soil Sci.
+38 (2), 245–254. https://doi.org/10.1111/j.1365-2389.1987.tb02142.x.
+
+Collins, W., Bellouin, N., Doutriaux-Boucher, M., Gedney, N., Halloran, P., Hinton, T.,
+
+Hughes, J., Jones, C., Joshi, M., Liddicoat, S., 2011. Development and evaluation of
+an earth-system model–HadGEM2. Geosci. Model Dev. 4 (4), 1051–1075. https://doi.
+org/10.5194/gmd-4-1051-2011.
+
+Cox, M.C., Qualset, C.O., Rains, D.W., 1986. Genetic variation for nitrogen assimilation
+and translocation in wheat. III. Nitrogen translocation in relation to grain yield and
+protein1. Crop Sci. 26 (4), 737–740. https://doi.org/10.2135/cropsci1986.
+0011183X002600040022x.
+
+Fangmeier, A., De Temmerman, L., Mortensen, L., Kemp, K., Burke, J., Mitchell, R., van
+
+Oijen, M., Weigel, H.J., 1999. Eﬀects on nutrients and on grain quality in spring
+wheat crops grown under elevated CO2 concentrations and stress conditions in the
+European, multiple-site experiment ‘ESPACE-wheat’. Eur. J. Agron. 10 (3), 215–229.
+https://doi.org/10.1016/S1161-0301(99)00012-X.
+
+Ferchaud, F., Vitte, G., Machet, J.-.M., Beaudoin, N., Catterou, M., Mary, B., 2016. The
+
+fate of cumulative applications of 15N-labelled fertiliser in perennial and annual
+bioenergy crops. Agric. Ecosyst. Environ. 223, 76–86. https://doi.org/10.1016/j.
+agee.2016.02.030.
+
+Gupta, A.K., Nair, S.S., 2012. Environmental Extremes Disaster Risk
+
+Management–Addressing Climate Change. National Institute of Disaster
+Management, New Delhi, pp. 40.
+
+Halloran, G., 1981. Cultivar diﬀerences in nitrogen translocation in wheat. Aust. J. Agric.
+
+Res. 32 (4), 535–544. https://doi.org/10.1071/AR9810535.
+
+Hoegh-Guldberg, O., Jacob, D., Taylor, M., Guillén Bolaños, T., Bindi, M., Brown, S.,
+
+Camilloni, I.A., Diedhiou, A., Djalante, R., Ebi, K., Engelbrecht, F., Guiot, J., Hijioka,
+Y., Mehrotra, S., Hope, C.W., Payne, A.J., Pörtner, H.O., Seneviratne, S.I., Thomas, A.,
+Warren, R., Zhou, G., 2019. The human imperative of stabilizing global climate
+change at 1.5°C. Science 365 (6459), eaaw6974. https://doi.org/10.1126/science.
+aaw6974.
+
+Hou, C., Chu, M.L., Guzman, J.A., Acero Triana, J.S., Moriasi, D.N., Steiner, J.L., 2019.
+
+Field scale nitrogen load in surface runoﬀ: impacts of management practices and
+changing climate. J. Environ. Manag. 249, 109327. https://doi.org/10.1016/j.
+jenvman.2019.109327.
+
+Jiang, J., Jiang, S., Xu, J., Wang, J., Li, Z., Wu, J., Zhang, J., 2020. Lowering nitrogen
+
+inputs and optimizing fertilizer types can reduce direct and indirect greenhouse gas
+emissions from rice-wheat rotation systems. Eur. J. Soil Biol. 97, 103152. https://
+doi.org/10.1016/j.ejsobi.2020.103152.
+
+Jin, Z., Ainsworth, E.A., Leakey, A.D.B., Lobell, D.B., 2018. Increasing drought and di-
+
+minishing beneﬁts of elevated carbon dioxide for soybean yields across the US
+Midwest. Global Change Biol 24 (2), e522–e533. https://doi.org/10.1111/gcb.
+13946.
+
+Jones, C., Hughes, J., Bellouin, N., Hardiman, S., Jones, G., Knight, J., Liddicoat, S.,
+O'Connor, F., Andres, R.J., Bell, C., 2011. The HadGEM2-ES implementation of
+CMIP5 centennial simulations. Geosci. Model Dev. 4 (3), 543–570. https://doi.org/
+10.5194/gmd-4-543-2011.
+
+Kim, H.-.Y., Ko, J., Kang, S., Tenhunen, J., 2013. Impacts of climate change on paddy rice
+yield in a temperate climate. Glob. Change Biol. 19 (2), 548–562. https://doi.org/10.
+1111/gcb.12047.
+
+Kou, T.J., Cheng, X.H., Zhu, J.G., Xie, Z.B., 2015. The inﬂuence of ozone pollution on
+
+CO2, CH4, and N2O emissions from a Chinese subtropical rice–wheat rotation system
+under free-air O3 exposure. Agric. Ecosyst. Environ. 204, 72–81. https://doi.org/10.
+1016/j.agee.2015.02.013.
+
+Lal, R., 2019. Adaptation and mitigation of climate change by improving agriculture in
+India. Editor In: Sheraz Mahdi, S. (Ed.), Climate Change and Agriculture in India:
+Impact and Adaptation. Springer International Publishing, Cham, pp. 217–227.
+https://doi.org/10.1007/978-3-319-90086-5_17.
+
+Lan, T., Li, M., Han, Y., Deng, O., Tang, X., Luo, L., Zeng, J., Chen, G., Yuan, S., Wang, C.,
+Gao, X., 2020. How are annual CH4, N2O, and NO emissions from rice–wheat system
+aﬀected by nitrogen fertilizer rate and type? Appl. Soil Ecol. 150, 103469. https://
+doi.org/10.1016/j.apsoil.2019.103469.
+
+Liang, K., Zhong, X., Huang, N., Lampayan, R.M., Liu, Y., Pan, J., Peng, B., Hu, X., Fu, Y.,
+
+2017. Nitrogen losses and greenhouse gas emissions under diﬀerent N and water
+management in a subtropical double-season rice cropping system. Sci. Total Environ.
+609, 46–57. https://doi.org/10.1016/j.scitotenv.2017.07.118.
+
+Liang, S., Li, Y., Zhang, X., Sun, Z., Sun, N., Duan, Y., Xu, M., Wu, L., 2018. Response of
+
+crop yield and nitrogen use eﬃciency for wheat-maize cropping system to future
+climate change in northern China. Agric. For. Meteorol. 262, 310–321. https://doi.
+org/10.1016/j.agrformet.2018.07.019.
+
+Liang, S., Zhang, X., Sun, N., Li, Y., Xu, M., Wu, L., 2019. Modeling crop yield and ni-
+trogen use eﬃciency in wheat and maize production systems under future climate
+change. Nutr. Cycl. Agroecosyst. 115 (1), 117–136. https://doi.org/10.1007/s10705-
+
+019-10013-4.
+Liu, B., Martre, P., Ewert, F., Porter, J.R., Challinor, A.J., Müller, C., Ruane, A.C., Waha,
+K., Thorburn, P.J., Aggarwal, P.K., Ahmed, M., Balkovič, J., Basso, B., Biernath, C.,
+Bindi, M., Cammarano, D., De Sanctis, G., Dumont, B., Espadafor, M., Eyshi Rezaei,
+E., Ferrise, R., Garcia-Vila, M., Gayler, S., Gao, Y., Horan, H., Hoogenboom, G.,
+Izaurralde, R.C., Jones, C.D., Kassie, B.T., Kersebaum, K.C., Klein, C., Koehler, A.-.K.,
+Maiorano, A., Minoli, S., Montesino San Martin, M., Naresh Kumar, S., Nendel, C.,
+O'Leary, G.J., Palosuo, T., Priesack, E., Ripoche, D., Rötter, R.P., Semenov, M.A.,
+Stöckle, C., Streck, T., Supit, I., Tao, F., Van der Velde, M., Wallach, D., Wang, E.,
+Webber, H., Wolf, J., Xiao, L., Zhang, Z., Zhao, Z., Zhu, Y., Asseng, S., 2019. Global
+wheat production with 1.5 and 2.0°C above pre-industrial warming. Glob. Change
+Biol. 25 (4), 1428–1444. https://doi.org/10.1111/gcb.14542.
+
+Liu, L., Xia, Y., Liu, B., Chang, C., Xiao, L., Shen, J., Tang, L., Cao, W., Zhu, Y., 2020.
+Individual and combined eﬀects of jointing and booting low-temperature stress on
+wheat yield. Eur. J. Agron. 113, 125989. https://doi.org/10.1016/j.eja.2019.
+125989.
+
+Luster, J., Kalbitz, K., Lennartz, B., Rinklebe, J., 2014. Properties, processes and ecolo-
+gical functions of ﬂoodplain, peatland, and paddy soils. Geoderma 228-229, 1–4.
+https://doi.org/10.1016/j.geoderma.2014.04.010.
+
+Macabuhay, A.A., 2016. Physiological and Biochemical Responses of Wheat to Combined
+
+Heat Stress and Elevated CO2 During Grain-Filling. Master Research Thesis, The
+University of Melbourne. pp. pp 2–3.
+
+Mackown, C.T., Van Sanford, D.A., Zhang, N., 1992. Wheat vegetative nitrogen compo-
+sitional changes in response to reduced reproductive sink strength. Plant Physiol. 99
+(4), 1469–1474. https://doi.org/10.1104/pp.99.4.1469.
+
+Maillard, A., Diquelou, S., Billard, V., Laine, P., Garnica, M., Prudent, M., Garcia-Mina,
+J.M., Yvin, J.C., Ourry, A., 2015. Leaf mineral nutrient remobilization during leaf
+senescence and modulation by nutrient deﬁciency. Front. Plant Sci. 6, 317. https://
+doi.org/10.3389/fpls.2015.00317.
+
+Øygarden, L., Deelstra, J., Lagzdins, A., Bechmann, M., Greipsland, I., Kyllmar, K.,
+
+Povilaitis, A., Iital, A., 2014. Climate change and the potential eﬀects on runoﬀ and
+nitrogen losses in the Nordic–Baltic region. Agric. Ecosyst. Environ. 198, 114–126.
+https://doi.org/10.1016/j.agee.2014.06.025.
+
+Papakosta, D.K., Gagianas, A., 1991. Nitrogen and dry matter accumulation, re-
+
+mobilization, and losses for mediterranean wheat during grain ﬁlling. Agron. J. 83
+(5), 864–870. https://doi.org/10.2134/agronj1991.00021962008300050018x.
+
+Porter, J.R., Xie, L., Challinor, A.J., Cochrane, K., Howden, S.M., Iqbal, M.M., Travasso,
+
+M., Barros, V., Field, C., Dokken, D., 2014. Climate Change 2014: Impacts,
+Adaptation, and Vulnerability. Part A: Global and Sectoral Aspects. pp. 485–533
+Contribution of Working Group II to the Fifth Assessment Report of the
+Intergovernmental Panel on Climate Change Cambridge University Press, Cambridge,
+United Kingdom and New York, NY, USA.
+
+Porter, J.R., Challinor, A.J., Henriksen, C.B., Howden, S.M., Martre, P., Smith, P., 2019.
+
+Invited review: intergovernmental Panel on Climate Change, agriculture, and
+food—A case of shifting cultivation and history. Glob. Change Biol. 25 (8),
+2518–2529. https://doi.org/10.1111/gcb.14700.
+
+Qin, X., Li, Y., Goldberg, S., Wan, Y., Fan, M., Liao, Y., Wang, B., Gao, Q., Li, Y.e., 2019.
+Assessment of indirect N2O emission factors from agricultural river networks based
+on long-term study at high temporal resolution. Environ. Sci. Technol. 53 (18),
+10781–10791. https://doi.org/10.1021/acs.est.9b03896.
+
+Rashid, M.A., Andersen, M.N., Wollenweber, B., Zhang, X., Olesen, J.E., 2018.
+
+Acclimation to higher VPD and temperature minimized negative eﬀects on assim-
+ilation and grain yield of wheat. Agric. For. Meteorol. 248, 119–129. https://doi.org/
+10.1016/j.agrformet.2017.09.018.
+
+Rodgers, C., Barneix, A., 1988. Cultivar diﬀerences in the rate of nitrate uptake by intact
+wheat plants as related to growth rate. Physiol. Plantarum 72 (1), 121–126. https://
+doi.org/10.1111/j.1399-3054.1988.tb06632.x.
+
+Shang, Z., Zhou, F., Smith, P., Saikawa, E., Ciais, P., Chang, J., Tian, H., Del Grosso, S.J.,
+
+Ito, A., Chen, M., Wang, Q., Bo, Y., Cui, X., Castaldi, S., Juszczak, R., Kasimir, Å.,
+Magliulo, V., Medinets, S., Medinets, V., Rees, R.M., Wohlfahrt, G., Sabbatini, S.,
+2019. Weakened growth of cropland-N2O emissions in China associated with na-
+tionwide policy interventions. Glob. Change Biol. 25 (11), 3706–3719. https://doi.
+org/10.1111/gcb.14741.
+
+Stein, L.Y., 2011. Surveying N2O-producing pathways in bacteria. Method. Enzymol. 486,
+
+131–152. https://doi.org/10.1016/B978-0-12-381294-0.00006-7.
+
+Tao, F., Zhang, Z., Zhang, S., Rötter, R.P., Shi, W., Xiao, D., Liu, Y., Wang, M., Liu, F.,
+
+Zhang, H., 2016. Historical data provide new insights into response and adaptation of
+maize production systems to climate change/variability in China. Field Crop. Res.
+185, 1–11. https://doi.org/10.1016/j.fcr.2015.10.013.
+
+Van Vuuren, D.P., Edmonds, J., Kainuma, M., Riahi, K., Thomson, A., Hibbard, K., Hurtt,
+G.C., Kram, T., Krey, V., Lamarque, J.-.F., Masui, T., Meinshausen, M., Nakicenovic,
+N., Smith, S.J., Rose, S.K., 2011. The representative concentration pathways: an
+overview. Clim. Change 109 (1), 5. https://doi.org/10.1007/s10584-011-0148-z.
+
+Venterea, R.T., Halvorson, A.D., Kitchen, N., Liebig, M.A., Cavigelli, M.A., Grosso, S.J.D.,
+
+Motavalli, P.P., Nelson, K.A., Spokas, K.A., Singh, B.P., 2012. Challenges and op-
+portunities for mitigating nitrous oxide emissions from fertilized cropping systems.
+Front. Ecol. Environ. 10 (10), 562–570. https://doi.org/10.1890/120062.
+
+Vrugt, J.A., Gupta, H.V., Bastidas, L.A., Bouten, W., Sorooshian, S., 2003. Eﬀective and
+
+eﬃcient algorithm for multiobjective optimization of hydrologic models. Water
+Resour. Res. 39 (8). https://doi.org/10.1029/2002WR001746.
+
+Wang, Z.-.H., Li, S.-.X., 2019. Nitrate N loss by leaching and surface runoﬀ in agricultural
+land: a global issue (a review). Adv. Agron. 156, 159. https://doi.org/10.1016/bs.
+agron.2019.01.007.
+
+Wei, H., Zhang, H., Hang, J., Dai, Q., Huo, Z., Xu, K., Zhang, S., Ma, Q., Zhang, Q., Zhang,
+J., 2008. Characteristics of N accumulation and translocation in rice genotypes with
+diﬀerent N use eﬃciencies. Acta Agron. Sin. 34 (1), 119. https://doi.org/10.3724/SP.
+
+10
+
+C. Liu, et al.
+
+J.1006.2008.00119.
+
+Wu, L., McGechan, M., McRoberts, N., Baddeley, J., Watson, C., 2007. SPACSYS: in-
+
+tegration of a 3D root architecture component to carbon, nitrogen and water
+cycling—Model description. Ecol. Modell. 200 (3–4), 343–359. https://doi.org/10.
+1016/j.ecolmodel.2006.08.010.
+
+Wu, L., Shepherd, A., 2011. Special features of the SPACSYS modeling package and
+
+procedures for parameterization and validation. In: Ahuja, L.R., Ma, L. (Eds.),
+Methods of Introducing System Models into Agricultural Research. Advances in
+Agricultural Systems Modeling. American Society of Agronomy, Crop Science Society
+of America, Soil Science Society of America, Madison, WI, pp. 117–154. https://doi.
+org/10.2134/advagricsystmodel2.c4.
+
+Wu, L., Rees, R., Tarsitano, D., Zhang, X., Jones, S., Whitmore, A., 2015. Simulation of
+nitrous oxide emissions at ﬁeld scale using the SPACSYS model. Sci. Total Environ.
+530, 76–86. https://doi.org/10.1016/j.scitotenv.2015.05.064.
+
+Wu, L., 2019. SPACSYS (v6.00) - Installation and Operation Manual. Rothamsted
+
+Research. North Wyke, UK. http://www.rothamsted.ac.uk.
+
+Wu, L., Blackwell, M., Dunham, S., Hernandez-Allica, J., McGrath, S.P., 2019. Simulation
+
+of phosphorus chemistry, uptake and utilisation by winter wheat. Plants (Basel) 8
+(10). https://doi.org/10.3390/plants8100404.
+
+Wu, L. and Wu, L., 2020. Simulating nutrient cycling in paddy ﬁelds with SPACSYS.
+
+(Unpublished).
+
+Xiao, D., Liu, D.L., Wang, B., Feng, P., Bai, H., Tang, J., 2020. Climate change impact on
+yields and water use of wheat and maize in the North China Plain under future cli-
+mate change scenarios. Agric. Water Manag. 238, 106238. https://doi.org/10.1016/
+j.agwat.2020.106238.
+
+Xiao, Q., Xu, X., Zhang, M., Duan, H., Hu, Z., Wang, W., Xiao, W., Lee, X., 2019.
+
+Coregulation of nitrous oxide emissions by nitrogen and temperature in China's third
+largest freshwater lake (Lake Taihu). Limnol. Oceanogr. 64 (3), 1070–1086. https://
+doi.org/10.1002/lno.11098.
+
+Xie, H., Dong, J., Shen, Z., Chen, L., Lai, X., Qiu, J., Wei, G., Peng, Y., Chen, X., 2019.
+Intra- and inter-event characteristics and controlling factors of agricultural nonpoint
+source pollution under diﬀerent types of rainfall-runoﬀ events. Catena 182, 104105.
+https://doi.org/10.1016/j.catena.2019.104105.
+
+Xie, W.-x., Wang, G.-h., Zhang, Q.-c., Guo, H.-c., 2007. Eﬀects of nitrogen fertilization
+
+strategies on nitrogen use eﬃciency in physiology, recovery, and agronomy and re-
+distribution of dry matter accumulation and nitrogen accumulation in two typical
+rice cultivars in Zhejiang, China. J. Zhejiang Univ., Sci., B 8 (3), 208–216. https://
+doi.org/10.1631/jzus.2007.B0208.
+
+Xing, Z.-p., Wu, P., Zhu, M., Qian, H.-j., Hu, Y.-j., Guo, B.-w., Wei, H.-y., Xu, K., Huo, Z.-y.,
+Dai, Q.-g., Zhang, H.-c., 2017. Temperature and solar radiation utilization of rice for
+yield formation with diﬀerent mechanized planting methods in the lower reaches of
+the Yangtze River, China. J. Integr. Agric. 16 (9), 1923–1935. https://doi.org/10.
+1016/S2095-3119(16)61596-4.
+
+Agricultural and Forest Meteorology 292–293 (2020) 108136
+
+Xu, H., Zhong, G., Lin, J., Ding, Y., Li, G., Wang, S., Liu, Z., Tang, S., Ding, C., 2015. Eﬀect
+of nitrogen management during the panicle stage in rice on the nitrogen utilization of
+rice and succeeding wheat crops. Eur. J. Agron. 70, 41–47. https://doi.org/10.1016/
+j.eja.2015.06.008.
+
+Xue, L., Yu, Y., Yang, L., 2014. Maintaining yields and reducing nitrogen loss in rice–-
+
+wheat rotation system in Taihu Lake region with proper fertilizer management.
+Environ. Res. Lett. 9 (11), 115010. https://doi.org/10.1088/1748-9326/9/11/
+115010.
+
+Yang, C., Yang, L., Yang, Y., Ouyang, Z., 2004. Rice root growth and nutrient uptake as
+inﬂuenced by organic manure in continuously and alternately ﬂooded paddy soils.
+Agric. Water Manag. 70 (1), 67–81. https://doi.org/10.1016/j.agwat.2004.05.003.
+Yin, X., Struik, P.C., Romero, P., Harbinson, J., Evers, J.B., Van Der Putten, P.E., Vos, J.,
+2009. Using combined measurements of gas exchange and chlorophyll ﬂuorescence
+to estimate parameters of a biochemical C3 photosynthesis model: a critical appraisal
+and a new integrated approach applied to leaves in a wheat (Triticum aestivum) ca-
+nopy. Plant Cell Environ. 32 (5), 448–464. https://doi.org/10.1111/j.1365-3040.
+2009.01934.x.
+
+Yin, X., Kersebaum, K.C., Kollas, C., Baby, S., Beaudoin, N., Manevski, K., Palosuo, T.,
+Nendel, C., Wu, L., Hoﬀmann, M., Hoﬀmann, H., Sharif, B., Armas-Herrera, C.M.,
+Bindi, M., Charfeddine, M., Conradt, T., Constantin, J., Ewert, F., Ferrise, R., Gaiser,
+T., de Cortazar-Atauri, I.G., Giglio, L., Hlavinka, P., Lana, M., Launay, M., Louarn, G.,
+Manderscheid, R., Mary, B., Mirschel, W., Moriondo, M., Öztürk, I., Pacholski, A.,
+Ripoche-Wachter, D., Rötter, R.P., Ruget, F., Trnka, M., Ventrella, D., Weigel, H.-.J.,
+Olesen, J.E., 2017. Multi-model uncertainty analysis in predicting grain N for crop
+rotations in Europe. Eur. J. Agron. 84, 152–165. https://doi.org/10.1016/j.eja.2016.
+12.009.
+
+Yin, X., Struik, P.C., 2017. Can increased leaf photosynthesis be converted into higher
+
+crop mass production? A simulation study for rice using the crop model GECROS. J.
+Exp. Bot. 68 (9), 2345–2360. https://doi.org/10.1093/jxb/erx085.
+
+Zhang, X., Xu, M., Sun, N., Xiong, W., Huang, S., Wu, L., 2016. Modelling and predicting
+
+crop yield, soil carbon and nitrogen stocks under climate change scenarios with
+fertiliser management in the North China Plain. Geoderma 265, 176–186. https://
+doi.org/10.1016/j.geoderma.2015.11.027.
+
+Zhang, X., Sun, Z., Liu, J., Ouyang, Z., Wu, L., 2018. Simulating greenhouse gas emissions
+and stocks of carbon and nitrogen in soil from a long-term no-till system in the North
+China Plain. Soil Tillage Res 178, 32–40. https://doi.org/10.1016/j.still.2017.12.
+013.
+
+Zhao, G., Webber, H., Hoﬀmann, H., Wolf, J., Siebert, S., Ewert, F., 2015. The implication
+
+of irrigation in climate change impact assessment: a European‐wide study. Global
+Change Biol 21 (11), 4031–4048. https://doi.org/10.1111/gcb.13008.
+
+Zhou, W., Lin, J., Tang, Q., Wei, Z., Schwenke, G., Li Liu, D., Yan, X., 2019. Indirect N2O
+
+emissions from groundwater under high nitrogen-load farmland in eastern China.
+Environ. Pollut. 248, 238–246. https://doi.org/10.1016/j.envpol.2019.02.027.
+
+11
+
+

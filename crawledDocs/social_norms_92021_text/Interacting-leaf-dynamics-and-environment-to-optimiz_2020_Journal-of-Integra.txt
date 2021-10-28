@@ -1,0 +1,3080 @@
+Journal of Integrative Agriculture  2020, 19(5): 1227–1240
+
+Interacting leaf dynamics and environment to optimize maize 
+sowing date in North China Plain 
+
+TIAN Bei-jing1*, ZHU Jin-cheng2*, LIU Xi-wei1, HUANG Shou-bing1, WANG Pu1   
+
+1 College of Agronomy and Biotechnology, China Agricultural University, Beijing 100193, P.R.China
+2 Hebei Academy of Agriculture and Forestry Sciences, Shijiazhuang 050035, P.R.China
+
+Abstract
+Leaf growth and its interaction with the growing environment critically affect leaf area, distribution, and function, and ultimately 
+affects grain yield of maize (Zea mays L.).  To detect the effects of leaf area dynamics, growth periods, and the environment 
+on maize grain yield, a three-year field experiment was conducted using two maize varieties, medium plant-size variety 
+Zhengdan 958 (ZD958) and large plant-size variety Zhongnongda 4 (ZND4), and three to five sowing dates.  The sowing 
+date significantly affected maize yield as a result of changes in leaf area, growth stage, and growing environment.  Prior 
+to the 12th leaf stage, significant correlations between leaf area dynamics, environment, and yield were seldom detected.  
+The expansion of leaf area from 12th leaf stage to silking stage was significantly positively correlated with growing degree 
+days (GDD), solar radiation, and grain yield, indicating the importance of leaf area dynamics during this period.  After silking, 
+solar radiation played a more important role in inducing leaf senescence than GDD, particularly in the 2nd half of the grain 
+filling stage.  Accelerated leaf senescence in late growth period can increase maize yield.  The environment affected leaf 
+area dynamics and yield of the large plant-size variety (ZND4) more easily than the medium plant-size variety (ZD958) at 
+the optimum plant density, reflecting the difference in varietal capacity to adapt to the growing environment.  This study 
+indicates that optimizing the interaction among leaf area dynamics, growth periods, and environment is a sound strategy to 
+increase maize yield.  Favorable interactions are useful to determine the optimal sowing date of a given variety. 
+
+Keywords: canopy structure, leaf dynamics, growing environment, maize, yield
+
+Received  21 January, 2019    Accepted  30 September, 2019
+TIAN  Bei-jing,  E-mail:  tianbeijing07@126.com;  ZHU  Jin-cheng, 
+E-mail:  1925387146@qq.com;  Correspondence  HUANG  Shou-
+bing,  Tel/Fax:  +86-10-62732561,  E-mail:  huangshoubing@cau.
+edu.cn; WANG Pu, Tel/Fax: +86-10-62733611, E-mail: wangpu@
+cau.edu.cn
+* These authors contributed equally to this study.
+©  2020  CAAS.  Published  by  Elsevier  Ltd.  This  is  an  open 
+access  article  under  the  CC  BY-NC-ND  license  (http://
+creativecommons.org/licenses/by-nc-nd/4.0/).
+doi: 10.1016/S2095-3119(19)62831-5
+
+1. Introduction
+
+Leaf area and the distribution and function of leaves play 
+an important role in intercepting solar radiation, converting 
+light energy, increasing biomass productivity, and ultimately 
+improving yield in many crop plants (Maddonni and Otegui 
+1996; Sinclair and Muchow 1999; Long et al. 2006; Pantin 
+et al. 2012).  The optimization of spatial and temporal light 
+distribution  in  the  canopy  layers  is  associated  with  plant 
+architecture,  plant  density,  and  row  arrangement,  which 
+are important strategies to increase crop yield (Maddonni 
+et al. 2001; Ma et al. 2014; Liu et al. 2017).  Over the past 
+
+RESEARCH  ARTICLEAvailable online at www.sciencedirect.comScienceDirect1228
+
+TIAN Bei-jing et al.   Journal of Integrative Agriculture  2020, 19(5): 1227–1240
+
+century, the grain yield from cereal crops has almost doubled 
+accompanied  by  an  unchanged  rate  of  photosynthesis 
+per unit leaf area.  The increase in grain yield is attributed 
+to the increased leaf area and growth duration (Richards 
+et al.  2000;  Long  et al.  2006).    The  understanding  of 
+photosynthetic  mechanisms  continues  to  improve,  but 
+improving photosynthetic efficiency with genetic engineering 
+is an issue that still requires investigation (Ort et al. 2015).  
+Consequently, optimizing leaf dynamics and their interaction 
+with different environments is of great importance to increase 
+crop yield, particularly in the context of increasing demands 
+for food, animal feed, and bioenergy (Godfray et al. 2010; 
+Tilman and Clark 2015).  
+
+Maize (Zea mays L.) is one of the most important foods 
+and  animal  feed  crops  worldwide,  and  the  grain  yield  of 
+maize is distinctly determined by the size and distribution 
+of leaf area (Maddonni and Otegui 1996; Maddonni et al. 
+2001; Stewart et al. 2003; Huang et al. 2017).  It is widely 
+accepted that leaves near and above the ear contribute to 
+more than 50% of the grain yield in maize (Shaver 1983), 
+and this contribution can reach up to approximately 80% 
+(Subedi and Ma 2005).  To optimize light distribution in the 
+canopy, improving the distribution of leaf area in the middle 
+and upper leaf layers is essential to increase the biomass 
+production and yield of maize.  One strategy that is currently 
+used  to  improve  maize  yield  is  increasing  plant  density, 
+which increases the leaf area of the population, as modern 
+maize varieties develop erect leaves quickly (Duvick et al. 
+2004;  Lauer  et al.  2012;  Ma  et al.  2014).    However,  this 
+strategy can lead to over-crowding, causing to a decline in 
+grain yield due to lodging (Xue et al. 2016), poor canopy 
+structure (Sangoi et al. 2002), and increased barrenness 
+(Tollenaar  et al.  1992).   Therefore,  at  the  optimum  plant 
+density,  further  optimization  of  the  canopy  structure  and 
+function should be a feasible strategy to increase the grain 
+yield in maize. 
+
+The  entire  growth  period  of  maize  can  be  divided 
+into  specific  growth  stages  (Birch  et al.  2003).    Due  to 
+the  importance  of  leaves  near  and  above  the  ears,  the 
+appearance of an ear leaf should be a critical timing when 
+dividing the growing period.  Ear leaf positions range from 
+the 13th to 15th leaves, depending on the variety (Ma et al. 
+2014), so the duration of time from the 12th leaf stage to 
+the silking stage is an important period for the development 
+of canopy structure.  Favorable middle and upper canopy 
+layers  that  are  established  before  the  silking  stage  can 
+optimize  light  distribution  and  contribute  a strong source 
+for  the  post-silking  dry  matter  production  over  time.    In 
+maize, most of the dry matters in the grain are produced 
+post-silking, and the dry matter stored in stem and leaves 
+during  pre-silking  stage  has  a  limited  contribution  to  the 
+grain yield (Allison and Watson 1966; Tollenaar 1991).  This 
+
+suggests that the time from the appearance of the ear leaf to 
+silking plays an important role in building canopy structure, 
+producing dry matter, and increasing grain yield in maize.  
+Maintenance  of canopy  structure at post-silking  and  leaf 
+senescence in the late growing period determine dry matter 
+accumulation,  partitioning,  and  grain  yield  (Rajcan  and 
+Tollenaar 1999a, b; Escobar-Gutiérrez and Combe 2012; 
+Kosgey et al. 2013).
+
+The size and distribution of leaf area affect environmental 
+effects  and  the  environment  can  in  turn  affect  leaf 
+dynamics (Muchow and Carberry 1989; Bos et al. 2000; 
+Liu et al. 2013).  Morphological traits of maize leaf growth 
+respond  closely  to  temperature  and  light  intensity  (Bos 
+et al. 2000); the leaf elongation rate is closely related to 
+temperature (Ben-Haj-Salah and Tardieu 1995; Poiré et al. 
+2010), whereas leaf widening shows a strong sensitivity 
+to  light  intensity  and  evaporative  demand  (Granier  and 
+Tardieu  1999;  Lacube  et al.  2017).    In  this  context,  a 
+suitable  match  between  leaf  dynamics  and  different 
+growing environments can establish a favorable canopy 
+structure and simultaneously increase the use efficiency of 
+environmental resources.  However, significant knowledge 
+gaps  remain  in  understanding  the  interaction  between 
+maize leaf dynamics at different canopy layers and growing 
+environments, especially in the field.  In addition, study on 
+the use of these interactions to increase maize grain yield 
+is particularly limited.  Therefore, the aims of this study 
+are as follows: 1) to detect the interaction between leaf 
+dynamics  at  different  canopy  layers  and  environments 
+during different growing periods and 2) to better match leaf 
+growth to temperature and solar radiation to increase maize 
+yield.  To realize these aims, a field experiment with several 
+sowing dates was conducted over a three-year period to 
+simulate  different  interactions  between  leaf  growth  and 
+different growing environments.
+
+ 
+
+2. Materials and methods
+
+2.1. Experimental site
+
+Field experiments were conducted in 2009, 2010, and 2012 
+at the Wuqiao Experimental Station (37°41´N, 116°36´E) of 
+China Agricultural University, Hebei Province, China.  The 
+experimental station is located in eastern part of the North 
+China Plain.  This region has a continental monsoon climate, 
+with a mean annual temperature, cumulative solar radiation, 
+and  precipitation during  1981–2015  of 13.2°C,  5 152  MJ 
+m–2, and 535.7 mm, respectively.  Precipitation is mainly 
+concentrated from June to September.  The experimental 
+field has loam soil and the soil fertility in 0–20 cm contained 
+12.1 g kg−1 organic matter, 0.91 g kg−1 total nitrogen, 45.0 mg  
+kg−1  available  phosphorus,  and  236  mg  kg−1  available 
+
+TIAN Bei-jing et al.   Journal of Integrative Agriculture  2020, 19(5): 1227–1240
+
+1229
+
+potassium.  Weather variables during the 2009, 2010, and 
+2012 maize growing seasons are shown in Fig. 1.
+
+2.2. Experimental design
+
+The experiments were conducted in a split-plot design with the 
+sowing date as the main factor and variety as the 2nd factor.  
+Each treatment had three replicates.  The field trials contained 
+five sowing dates in 2009 and three sowing dates in both 2010 
+and 2012 (Table 1).  Severe lodging occurred in 2011, so 
+the experiment in 2011 was not proceeded after the lodging.  
+They were sown at their respective optimum plant densities 
+of 82 500 (Zhengdan 958 (ZD958)) and 67 500 plants ha–1 
+
+(Zhongnongda 4 (ZND4)) in the present study.  The plot size 
+was 50.4 m2 (6 m×8.4 m) in 2009, 40.0 m2 (5 m×10 m) in 
+2010, and 50.4 m2 (6 m×8.4 m) in 2012.
+
+Prior  to  sowing,  30  m3  ha–1  of  chicken  manure  was 
+applied, followed by tillage using a rototiller.  At the time of 
+sowing, 60 kg N ha−1, 120 kg P2O5 ha−1, 100 kg K2O ha−1, 
+and 30 kg ZnSO4 ha−1 were applied to the fields.  At the 
+12th  leaf  stage,  an  additional  120  kg  N  ha–1  of  nitrogen 
+fertilizer was applied.  Ten days after silking, 60 kg N ha–1 
+was applied to the fields.  Water management was optimized 
+during  the  whole  growing  season.  Optimal  management 
+was  conducted  to  control  weeds,  insects,  and  diseases 
+throughout the growing season. 
+
+Tmax
+
+Tmin
+
+Solar
+
+Precipitation
+
+2009
+
+2010
+
+2012
+
+40
+
+30
+
+20
+
+10
+
+0
+
+300
+
+200
+
+100
+
+0
+
+40
+
+30
+
+20
+
+10
+
+0
+
+300
+
+200
+
+100
+
+0
+
+40
+
+30
+
+20
+
+10
+
+0
+
+300
+
+200
+
+100
+
+)
+
+m
+m
+
+(
+ 
+
+n
+o
+
+i
+t
+
+a
+
+t
+i
+
+i
+
+p
+c
+e
+r
+P
+
+0
+
+4
+
+5
+
+6
+
+7
+
+Month
+
+8
+
+9
+
+10
+
+4
+
+5
+
+6
+
+7
+
+Month
+
+8
+
+9
+
+10
+
+4
+
+5
+
+6
+
+7
+
+Month
+
+8
+
+9
+
+10
+
+)
+
+C
+°
+(
+ 
+
+e
+r
+u
+
+t
+
+a
+r
+e
+p
+m
+e
+T
+
+)
+2
+–
+
+m
+ 
+J
+M
+
+(
+ 
+r
+a
+o
+S
+
+l
+
+Fig. 1  The average monthly maximum temperature (Tmax; °C), minimum temperature (Tmin; °C), solar radiation (Solar; MJ m–2), and 
+precipitation (mm) during the 2009, 2010, and 2012 maize growing seasons.
+
+Table 1  Sowing date, silking date, maturity date, and crop duration (days) of the medium plant-size maize variety Zhengdan 958 
+(ZD958) and large plant-size variety Zhongnongda 4 (ZND4) in 2009, 2010 and 2012
+Year
+2009
+
+Silking date (mon/d) Maturity date (mon/d)
+
+Sowing date (mon/d)
+
+Crop duration (d)
+
+Variety
+ZD958
+
+6/30
+7/08
+7/17
+7/30
+8/09
+7/05
+7/11
+7/19
+7/31
+8/11
+7/06
+7/20
+8/04
+7/09
+7/23
+8/07
+6/30
+7/17
+8/04
+7/01
+7/18
+8/07
+
+8/30
+9/14
+9/26
+10/05
+10/10
+9/09
+9/14
+9/26
+10/05
+10/10
+9/04
+9/22
+10/03
+9/04
+9/22
+10/03
+8/30
+9/16
+10/04
+8/30
+9/16
+10/04
+
+132
+132
+129
+123
+114
+142
+132
+129
+123
+114
+127
+124
+114
+127
+124
+114
+123
+119
+114
+123
+119
+114
+
+2010
+
+2012
+
+ZND4
+
+ZD958
+
+ZND4
+
+ZD958
+
+ZND4
+
+4/20
+5/05
+5/20
+6/04
+6/18
+4/20
+5/05
+5/20
+6/04
+6/18
+4/30
+5/21
+6/11
+4/30
+5/21
+6/11
+4/29
+5/20
+6/12
+4/29
+5/20
+6/12
+
+1230
+
+TIAN Bei-jing et al.   Journal of Integrative Agriculture  2020, 19(5): 1227–1240
+
+2.3. Sampling and measurements
+
+Thermal time and solar radiation  Weather data include 
+daily maximum and minimum air temperature, daily solar 
+radiation  and  precipitation  over  the  three  experimental 
+years were obtained from the Wuqiao County Bureau of 
+Meteorology.  The growing degree days (GDD, °C d) during 
+five different growth periods, sowing (S) to 6th leaf (6L), 
+6L to 12L, 12L to silking (SL), SL to 25 days after silking 
+(25 DAS), and 25 DAS to maturity (M), were calculated 
+according to McMaster and Wilhelm (1997):
+
+GDD=
+
+∑
+
+–Tb
+
+Tmax+Tmin
+
+2
+
+where Tmax is the daily maximum temperature, Tmin is the 
+daily minimum temperature, and Tb is the base temperature, 
+defined  as  10°C.   The  accumulated  solar  radiation  was 
+summed during respective growth stages.
+
+Leaf area, leaf area change amount, leaf area growth/
+senescence rate, and SPAD value  The leaf length and 
+width  of  individual  leaves  from  three  randomly  selected 
+plants in each plot were measured at five different points 
+(6L and 12L, SL, 25 DAS, and M).  Leaf area was calculated 
+as follows (Montgomery 1911): 
+
+Leaf area=Ʃ(Leaf length×Maximum leaf width)×0.75 for 
+
+expanded leaves                                           
+
+Leaf area=Ʃ(Leaf length×Maximum leaf width)×0.5 for 
+
+rolled leaves                                                       
+
+Leaf area change amount was expressed as leaf area 
+change between two adjacent timings of measurement, i.e., 
+leaf area increases before the silking stage and leaf area 
+reductions after the silking stage. 
+
+Leaf  area  growth/Senescence  rate  was  calculated  as 
+
+follows:
+
+ 
+
+Leaf area growth/Senescence rate (cm2 d–1)=
+
+Leaf area change amount (cm2)
+
+Time between two adjacent measurements (d)
+
+The  relative  chlorophyll  content  of  ear  leaves  from 
+five  plants  was  measured  with  a  hand-held  SPAD-502 
+chlorophyll meter developed by Minolta (SPAD model 502; 
+Minolta corporation, Ltd., Osaka, Japan) at the silking stage 
+in  each  plot.   Ten  SPAD  values  were  recorded  with  five 
+values measured on each leaf side. 
+Grain yield  Ears were harvested when the kernel black layer 
+was visible in more than 50% of the ears.  All ears in four 
+adjacent, 5 m long rows were collected and counted in an 
+
+undisturbed area of each plot.  All of the ears were then weighed 
+and the mean weight of each ear was calculated.  According to 
+the mean ear weight, 20 ears were selected in each plot, and 
+their weight was equal to the mean ear weight multiplied by 20.  
+Kernels were threshed, then oven-dried at 80°C to a constant 
+weight.  The grain yield per hectare was calculated and adjusted 
+to 14% moisture content based on the dry kernel weight and 
+ear number in the harvested area per plot.
+The formula of yield calculation was:
+
+ 
+
+Yield (Mg ha–1)=
+
+Dry grain weight of 20 ears (kg)
+×
+
+20
+
+Ear number per plot (ear numbers per 12 m2)
+
+Harvest area per plot (12 m2)
+
+×
+
+10 000 (m2 ha–1)
+
+1 000 (kg Mg–1)×(1–14%)
+
+2.4. Statistical analysis
+
+Statistical analyses were conducted using SPSS 17.0 (SPSS 
+Inc., Chicago, IL, USA).  Differences were determined to be 
+significant using the least significant differences test at a 
+probability level of 0.05. 
+
+3. Results
+
+3.1. Single leaf area, leaf length, and leaf width 
+
+Varying distributions of leaf area were observed between 
+the varieties ZND4 (large plant-size) and ZD958 (medium 
+plant-size) in terms of single leaf area, leaf length, and leaf 
+width (Fig. 2).  The position of the ear leaf in ZD958 was 
+the 14th leaf and in ZND4, it was the 13th leaf.  ZND4 had a 
+larger single leaf area and leaf width around the ear and in 
+
+the upper canopy layer (11th–17th leaves), but had smaller 
+values at the lower canopy layer than ZD958.  Leaf length 
+was similar between the two varieties.
+
+3.2. Leaf area dynamics at different growth stages 
+and grain yield
+
+The area of each individual leaf increased with time and 
+reached  the  highest  area  at  the  silking  stage  (Table 2).  
+On average, across the year and treatment sowing date, 
+the mean leaf area of ZD958 was 5.4% higher than that of 
+ZND4 before the 12L stage.  However, the accumulated leaf 
+area of ZND4 from the 12L stage to silking was larger than 
+that of ZD958.  The leaf senescence rate was slower in the 
+period from the silking stage to 25 DAS for ZND4 than for 
+ZD958, but the leaf senescence rate was similar for both 
+varieties after 25 DAS. 
+
+TIAN Bei-jing et al.   Journal of Integrative Agriculture  2020, 19(5): 1227–1240
+
+1231
+
+ZND4
+
+ZD958
+
+n
+o
+i
+t
+i
+s
+o
+p
+ 
+f
+a
+e
+L
+
+19
+
+17
+
+15
+
+13
+
+11
+
+9
+
+7
+
+5
+
+19
+
+17
+
+15
+
+13
+
+11
+
+9
+
+7
+
+5
+
+19
+
+17
+
+15
+
+13
+
+11
+
+9
+
+7
+
+5
+
+0
+
+300
+
+600
+
+900
+
+Single leaf area (cm2)
+
+0
+
+60
+
+30
+90
+Leaf length (cm)
+
+120
+
+0
+
+6
+
+3
+9
+Leaf width (cm)
+
+12
+
+Fig. 2  Average single leaf area, leaf length and leaf width of the medium plant-size maize variety Zhengdan 958 (ZD958) and 
+large plant-size variety Zhongnongda 4 (ZND4).  The 14th column represents the ear leaf position of ZD958 and the 13th column 
+represents the ear leaf position of ZND4.  Bars represent standard deviation of mean (n=3); results are the mean values across 
+treatments of sowing dates and year.
+
+Table 2  Leaf area dynamics at different growth stages of Zhengdan 958 (ZD958) and Zhongnongda 4 (ZND4) in 2009, 2010, 
+and 2012 
+
+Year
+
+2009
+
+2010
+
+2012
+
+Sowing date
+
+(mon/d)
+
+4/20
+5/05
+5/20
+6/04
+6/18
+Mean
+4/30
+5/21
+6/11
+Mean
+4/29
+5/20
+6/12
+Mean
+
+Overall mean
+
+6L
+1 081
+1 059
+1 037
+1 117
+1 145
+1 088
+933
+981
+1 019
+978
+1 311
+1 247
+1 213
+1 257
+1 104
+
+Leaf area of ZD958 (cm2)1)
+12L
+3 896
+3 210
+3 464
+3 755
+4 109
+3 687
+3 609
+3 563
+3 647
+3 606
+4 433
+3 968
+3 854
+4 085
+3 773
+
+25 DAS
+6 407
+6 787
+7 200
+7 555
+7 299
+7 050
+5 885
+6 171
+6 553
+6 203
+6 300
+6 022
+6 745
+6 356
+6 629
+
+SL
+7 469
+7 898
+7 917
+8 216
+7 772
+7 854
+6 110
+6 819
+6 974
+6 634
+6 701
+6 721
+7 737
+7 053
+7 303
+
+M
+3 463
+2 369
+2 956
+3 676
+3 919
+3 277
+3 355
+2 397
+3 656
+3 136
+2 321
+3 402
+3 037
+2 920
+3 141
+
+6L
+996
+1 050
+994
+1 063
+1 015
+1 024
+768
+931
+863
+854
+1 201
+1 057
+1 118
+1 125
+1 005
+
+Leaf area of ZND4 (cm2)1)
+12L
+3 540
+3 677
+3 662
+3 662
+3 515
+3 611
+3 255
+3 323
+2 872
+3 150
+3 923
+4 168
+3 769
+3 953
+3 579
+
+25 DAS
+7 315
+7 937
+7 511
+7 618
+7 534
+7 583
+6 428
+6 151
+6 850
+6 476
+6 402
+6 284
+6 796
+6 494
+6 984
+
+SL
+7 567
+8 234
+7 830
+7 878
+8 198
+7 941
+6 615
+6 475
+7 248
+6 779
+6 673
+6 949
+7 627
+7 083
+7 390
+
+M
+
+3 001
+3 375
+2 276
+2 323
+4 575
+3 110
+2 884
+2 395
+3 588
+2 956
+3 504
+3 744
+4 552
+3 933
+3 292
+
+1) 6L, 12L, SL, 25 DAS, and M indicate 6th leaf, 12th leaf, silking, 25 days after silking, and maturity stage, respectively.
+
+Sowing  date,  variety,  and  experimental  year  all  had 
+significant effects on the grain yield of maize (Fig. 3).  In 
+2009,  the  grain  yield  showed  a  significantly  decreasing 
+trend with the delayed sowing date, but in 2010 and 2012, 
+yield increased with the delayed sowing date for ZD958, 
+and the maximum yield was achieved with the mid-June 
+sowing time.  No significant trend was observed for ZND4 
+in  2010  and  2012.    The  maximum  yield  for  ZND4  was 
+achieved with the sowing dates of 30 April 2010 and of 
+
+12 June 2012.
+
+3.3. GDD and accumulated solar radiation at different 
+growth stages
+
+On average, across the year and sowing dates, the maximum 
+GDD (Table 3) and solar radiation (Table 4) occurred in the 
+period from sowing to the 6L stage or 25 DAS to maturity, 
+and the minimum GDD and solar radiation were observed 
+
+1232
+
+TIAN Bei-jing et al.   Journal of Integrative Agriculture  2020, 19(5): 1227–1240
+
+)
+1
+–
+a
+h
+ 
+g
+M
+
+l
+
+(
+ 
+d
+e
+Y
+
+i
+
+)
+1
+–
+a
+h
+ 
+g
+M
+
+l
+
+(
+ 
+d
+e
+Y
+
+i
+
+F-test:
+Year (Y)** 
+Variety (V)** 
+Sowing date (S)** 
+Y×V** 
+Y×S** 
+V×S**
+Y×V×S* 
+
+16
+
+14
+
+12
+
+10
+
+8
+
+6
+16
+14
+12
+10
+8
+6
+
+a
+
+b
+
+bc
+
+bc
+
+c
+
+a
+
+a
+
+b
+
+b
+
+a
+
+a
+
+a
+
+ab b
+
+c
+
+c
+
+ZD958
+
+a
+
+b
+
+ab
+
+ab
+
+b
+
+a
+
+0
+2
+/
+4
+
+5
+0
+/
+5
+
+0
+2
+/
+5
+
+4
+0
+/
+6
+
+8
+1
+/
+6
+
+0
+3
+/
+4
+
+1
+2
+/
+5
+
+1
+1
+/
+6
+
+9
+2
+/
+4
+
+0
+2
+/
+5
+
+2
+1
+/
+6
+
+2009
+
+2010
+
+2012
+
+ZND4
+
+Fig. 3  Maize yield (Mg ha–1) of Zhengdan 958 (ZD958) and Zhongnongda 4 (ZND4) at different sowing dates in 2009, 2010, and 
+2012.  Different letters within a year indicate significant differences (P<0.05).  Bars represent standard deviation of mean (n=3).   
+* and **, significant at P<0.05 and P<0.01, respectively. 
+
+Table 3  GDD at different growth stages of Zhengdan 958 (ZD958) and Zhongnongda 4 (ZND4) in 2009, 2010, and 2012
+
+GDD of ZD958 (°C d)1)
+
+GDD of ZND4 (°C d)1)
+
+Year
+
+2009
+
+2010
+
+2012
+
+Sowing date 
+
+(mon/d)
+
+4/20
+5/05
+5/20
+6/04
+6/18
+Mean
+4/30
+5/21
+6/11
+Mean
+4/29
+5/20
+6/12
+Mean
+
+Overall mean
+
+S–6L 6L–12L 12L–SL SL–25 DAS 25 DAS–M S–6L 6L–12L 12L–SL SL–25 DAS 25 DAS–M
+460
+457
+455
+480
+454
+461
+471
+489
+508
+489
+432
+484
+451
+456
+467
+
+405
+400
+404
+392
+355
+391
+451
+445
+377
+424
+427
+425
+373
+408
+405
+
+581
+530
+525
+446
+343
+485
+508
+496
+370
+458
+554
+454
+369
+459
+471
+
+321
+320
+300
+289
+282
+302
+266
+240
+300
+269
+234
+234
+286
+251
+279
+
+196
+182
+183
+170
+169
+180
+219
+251
+187
+219
+219
+234
+202
+218
+201
+
+232
+274
+270
+272
+248
+259
+212
+188
+247
+216
+217
+216
+240
+224
+238
+
+552
+576
+560
+459
+370
+503
+561
+546
+415
+507
+554
+454
+396
+468
+495
+
+460
+457
+455
+480
+454
+461
+471
+489
+508
+489
+432
+484
+451
+456
+467
+
+196
+182
+183
+170
+169
+180
+219
+251
+187
+219
+219
+234
+202
+218
+201
+
+419
+401
+400
+396
+363
+396
+451
+447
+385
+428
+427
+425
+367
+406
+407
+
+1) S–6L, 6L–12L, 12L–SL, SL–25 DAS, and 25 DAS–M indicate sowing to 6th leaf, 6th to 12th leaf, 12th leaf to silking, silking to 25 days 
+
+after silking, and 25 days after silking to maturity stage, respectively.
+
+in the period from the 6L to 12L stages.  The accumulated 
+GDD during the maize growth season ranked as follows: 
+2010>2009>2012,  and  the  accumulated  solar  radiation 
+ranked  differently:  2009>2010>2012.   The  difference  in 
+GDD and solar radiation between the two varieties mainly 
+occurred from the 12L stage to silking and from 25 DAS 
+to maturity.  For ZND4, GDD and the accumulated solar 
+radiation were higher than that of ZD958 from the 12L  stage 
+to silking, but were lower from 25 DAS to maturity. 
+
+3.4. Relationship between leaf area dynamics and 
+grain yield
+
+The relationships among grain yield, leaf area growth, and 
+leaf area growth rate became stronger with the duration of 
+leaf development, but this varied with the variety (Fig. 4).  
+From  the  6L  to  12L  stages,  grain  yield  correlations  with 
+leaf  area  growth  and  growth  rate  were  negative  and/or 
+significant.  The relationships among grain yield, leaf area 
+
+TIAN Bei-jing et al.   Journal of Integrative Agriculture  2020, 19(5): 1227–1240
+
+1233
+
+Table 4  Accumulated solar radiation at different growth stages of Zhengdan 958 (ZD958) and Zhongnongda 4 (ZND4) in 2009, 
+2010, and 2012 
+
+Accumulated solar radiation of ZND4 (MJ m–2)1)
+
+Accumulated solar radiation of ZD958 (MJ m–2)1)
+S–6L 6L–12L 12L–SL SL–25 DAS 25 DAS–M S–6L 6L–12L 12L–SL SL–25 DAS 25 DAS–M
+990
+840
+730
+689
+620
+774
+915
+780
+659
+785
+790
+753
+550
+698
+756
+
+455
+397
+384
+338
+322
+379
+343
+269
+346
+319
+228
+234
+244
+235
+324
+
+494
+454
+464
+398
+421
+446
+510
+482
+409
+467
+463
+381
+428
+424
+446
+
+990
+840
+730
+689
+620
+774
+915
+780
+659
+785
+790
+753
+550
+698
+756
+
+289
+243
+267
+233
+178
+242
+295
+323
+204
+274
+338
+241
+233
+271
+259
+
+604
+677
+731
+656
+559
+645
+596
+609
+521
+575
+575
+548
+527
+550
+600
+
+289
+243
+267
+233
+178
+242
+295
+323
+204
+274
+338
+241
+233
+271
+259
+
+314
+397
+359
+316
+292
+336
+271
+196
+290
+252
+228
+234
+218
+227
+283
+
+525
+470
+439
+408
+423
+453
+529
+496
+412
+479
+463
+381
+418
+421
+451
+
+Year
+
+2009
+
+2010
+
+2012
+
+Sowing date 
+
+(mon/d)
+
+4/20
+5/05
+5/20
+6/04
+6/18
+Mean
+4/30
+5/21
+6/11
+Mean
+4/29
+5/20
+6/12
+Mean
+
+Overall mean
+
+636
+632
+680
+645
+531
+625
+542
+541
+468
+517
+575
+548
+517
+547
+574
+
+1) S–6L, 6L–12L, 12L–SL, SL–25 DAS, and 25 DAS–M indicate sowing to 6th leaf, 6th to 12th leaf, 12th leaf to silking, silking to 25 days 
+
+after silking, and 25 days after silking to maturity stage, respectively.
+
+growth, and growth rate became significant from the 12L 
+stage to silking, except for the relationship between yield and 
+leaf growth rate for ZND4.  After silking, for ZD958, there was 
+a significant positive correlation between grain yield and leaf 
+area change amount and leaf senescence rate from silking 
+to 25 DAS and from 25 DAS to maturity.  However, grain 
+yield was not significantly correlated in ZND4 in the period 
+from silking to 25 DAS.  Compared to ZND4, the grain yield 
+of ZD958 was strongly correlated with leaf area dynamics.
+
+3.5. Relationships among GDD, solar radiation, and 
+leaf area dynamics 
+
+Both GDD and solar radiation can alter leaf area dynamics, 
+and  the  extent  of  the  alteration  was  dependent  on  the 
+growing  period  (Fig. 5).    There  were  positive  and/or 
+significant correlations between GDD, solar radiation, and 
+leaf area change from the 6L to 12L stages, from the 12L 
+stage to silking, and from 25 DAS to maturity, respectively 
+(Fig. 5).   The  expansion  of  the  leaf  area  prior  to  silking 
+showed the highest correlations from the 12L stage to silking, 
+and the correlations were particularly weak in the period 
+from the 6L to the 12L stages for both varieties.  Negative 
+correlations were detected from sowing to the 6L stage and 
+these correlations became significant from silking to 25 DAS.  
+The expansion of the leaf area had a higher correlation with 
+GDD than with solar radiation before the silking stage, but 
+after sillking, the expansion of the leaf area was correlated 
+more closely with solar radiation.  On average, across the 
+growth  periods,  the  correlations  between  the  expansion 
+of the leaf area, GDD, and solar radiation were higher for 
+ZND4 than for ZD958.
+
+3.6. Relationships among GDD, solar radiation, and 
+grain yield
+
+The correlations between GDD, solar radiation, and grain 
+yield  were  inconsistent  in  the  different  growth  periods 
+(Fig. 6).    Both  GDD  and  solar  radiation  were  positively 
+correlated with grain yield in the 12L stage to silking and 
+were  significantly  positively  correlated  from  25  DAS  to 
+maturity.    The  highest  correlations  were  detected  from 
+the  12L  stage  to  silking  for  both  varieties.    During  the 
+other growth periods, the correlations were negative and 
+only the correlations between grain yield and GDD in the 
+periods from sowing to the 6L stage and from the 6L stage 
+to the 12L stage were significant.  Our data indicated that 
+GDD was more closely correlated to grain yield than solar 
+radiation before the silking stage, whereas solar radiation 
+was more closely correlated with grain yield after silking, 
+especially  from  25  DAS  to  maturity.    In  regards  to  the 
+varieties,  ZND4  showed  closer  correlations  with  GDD, 
+solar radiation, and grain yield than ZD958 in the different 
+growth periods. 
+
+3.7.  Relationships  among  GDD,  solar  radiation, 
+growth  days,  and  leaf  SPAD  values  during  leaf 
+development
+
+The SPAD values (referred to here as the photosynthetic 
+ability  of  the  leaves)  showed  a  significantly  positive 
+correlation with GDD, solar radiation, and growth days in 
+the growth period from the 12L stage to silking (Fig. 7).  The 
+duration of plant growth had the highest correlation with the 
+SPAD value (r2=0.5 for ZND4 and r2=0.4 for ZD958), followed 
+
+1234
+
+TIAN Bei-jing et al.   Journal of Integrative Agriculture  2020, 19(5): 1227–1240
+
+ZND4
+
+ZD958
+
+r2=0.02 ns
+r2=0.02 ns
+
+S–6L
+
+15
+
+25
+
+35
+
+45
+
+6L–12L
+
+r2=0.08 ns
+r2=0.21**
+
+150
+
+200
+
+250
+
+300
+
+r2=0.38**
+r2=0.00 ns
+
+12L–SL
+
+160
+
+200
+r2=0.52**
+r2=0.09 ns
+
+240
+
+280
+
+320
+
+SL–25 DAS
+
+0
+
+20
+
+10
+r2=0.13*
+r2=0.19*
+
+30
+
+40
+
+50
+
+60
+
+25 DAS–M
+
+15
+14
+13
+12
+11
+10
+9
+
+15
+
+14
+
+13
+
+12
+
+11
+
+10
+
+9
+
+15
+
+14
+
+13
+
+12
+
+11
+
+10
+
+9
+
+15
+
+14
+
+13
+
+12
+
+11
+
+10
+
+9
+
+15
+
+14
+
+13
+
+12
+
+11
+
+10
+
+9
+
+15
+14
+13
+12
+11
+10
+9
+700
+
+15
+
+14
+
+13
+
+12
+
+11
+
+10
+
+9
+1 800
+15
+
+14
+
+13
+
+12
+
+11
+
+10
+
+9
+1 800
+15
+
+)
+1
+–
+a
+h
+
+ 
+
+g
+M
+
+(
+ 
+
+l
+
+d
+e
+Y
+
+i
+
+r2=0.04 ns
+r2=0.03 ns
+
+ZD958
+
+ZND4
+
+S–6L
+
+900
+
+1 100
+
+1 300
+
+6L–12L
+
+r2=0.18*
+r2=0.02 ns
+
+2 300
+
+2 800
+
+3 300
+
+r2=0.26**
+r2=0.23**
+
+12L–SL
+
+2 800
+
+3 800
+
+4 800
+
+r2=0.52**
+r2=0.09 ns
+
+SL–25 DAS
+
+14
+
+13
+
+12
+
+11
+
+10
+
+9
+
+15
+
+14
+
+13
+
+12
+
+11
+
+10
+
+0
+
+400
+r2=0.16*
+r2=0.38**
+
+800
+
+1 200
+
+1 600
+
+25 DAS–M
+
+9
+1 800
+
+2 800
+
+3 800
+
+4 800
+
+5 800
+
+Amount of leaf area change (cm2)
+
+Fig. 4  Relationship between the amount of leaf area change, leaf area growth/ senescence rate at different growth stages, and 
+grain yield of Zhengdan 958 (ZD958) and Zhongnongda 4 (ZND4).  S–6L, 6L–12L, 12L–SL, SL–25 DAS, and 25 DAS–M represent 
+the growth periods of sowing to 6th leaf, 6th to 12th leaf, 12th leaf to silking, silking to 25 days after silking, and 25 days after silking 
+to maturity, respectively.  * and **, significant at P<0.05 and P<0.01, respectively; ns, no significance. 
+
+60
+
+80
+
+100
+
+120
+
+140
+
+Leaf area growth/Senescence rate (cm2 d–1)
+
+TIAN Bei-jing et al.   Journal of Integrative Agriculture  2020, 19(5): 1227–1240
+
+1235
+
+   ZD958
+
+   ZND4
+
+ZD958
+
+ZND4
+
+)
+2
+
+m
+c
+(
+ 
+
+e
+g
+n
+a
+h
+c
+ 
+
+a
+e
+r
+a
+
+ 
+f
+
+a
+e
+
+l
+ 
+f
+
+o
+
+ 
+t
+
+n
+u
+o
+m
+A
+
+1 400
+
+1 200
+
+1 000
+
+800
+
+600
+
+420
+
+3 300
+
+3 000
+
+2 700
+
+2 400
+
+2 100
+
+1 800
+
+160
+
+4 800
+
+4 200
+
+3 600
+
+3 000
+
+2 400
+
+1 800
+
+180
+
+1 600
+
+1 200
+
+800
+
+400
+
+0
+340
+
+5 500
+
+4 500
+
+3 500
+
+2 500
+
+1 500
+
+300
+
+S–6L
+
+r2=0.22**
+r2=0.36**
+
+440
+
+460
+
+480
+
+500
+
+520
+
+6L–12L
+
+r2=0.02 ns
+r2=0.05 ns
+
+180
+
+200
+
+220
+
+240
+
+260
+
+12L–SL
+
+r2=0.66**
+r2=0.73**
+
+220
+
+260
+
+300
+
+340
+
+r2=0.06 ns
+r2=0.28**
+
+SL–25 DAS
+
+370
+
+400
+
+430
+
+460
+
+r2=0.22**
+r2=0.06 ns
+
+25 DAS–M
+
+400
+
+500
+
+600
+
+GDD (°C d)
+
+1 400
+
+1 200
+
+1 000
+
+800
+
+600
+
+500
+
+3 400
+
+3 000
+
+2 600
+
+2 200
+
+1 800
+
+160
+
+5 300
+
+4 600
+
+3 900
+
+3 200
+
+2 500
+
+1 800
+
+150
+
+1 600
+
+1 200
+
+800
+
+400
+
+0
+350
+
+5 800
+
+4 800
+
+3 800
+
+2 800
+
+1 800
+
+450
+
+r2=0.10 ns
+r2=0.08 ns
+
+S–6L
+
+700
+r2=0.02 ns
+r2=0.02 ns
+
+900
+
+6L–12L
+
+210
+
+260
+
+310
+
+360
+
+12L–SL
+
+r2=0.48**
+r2=0.44**
+
+250
+
+350
+
+450
+
+r2=0.00 ns
+r2=0.34**
+
+SL–25 DAS
+
+400
+r2=0.67**
+r2=0.35**
+
+450
+
+500
+
+550
+
+25 DAS–M
+
+550
+
+650
+
+750
+
+Solar radiation (MJ m–2)
+
+Fig. 5  Relationship between growing degree days (GDD), solar radiation, and amount of leaf area change at the different growth 
+stages of Zhengdan 958 (ZD958) and Zhongnongda 4 (ZND4).  S–6L, 6L–12L, 12L–SL, SL–25 DAS, and 25 DAS–M represent the 
+growth periods of sowing to 6th leaf, 6th to 12th leaf, 12th leaf to silking, silking to 25 days after silking, and 25 days after silking 
+to maturity, respectively.  * and **, significant at P<0.05 and P<0.01, respectively; ns, no significance.
+
+1236
+
+TIAN Bei-jing et al.   Journal of Integrative Agriculture  2020, 19(5): 1227–1240
+
+   ZD958
+
+   ZND4
+
+ZD958
+
+ZND4
+
+r2=0.04 ns
+r2=0.23**
+
+S–6L
+
+440
+
+460
+
+r2=0.04 ns
+r2=0.30**
+
+480
+
+500
+
+520
+
+6L–12L
+
+180
+r2=0.17*
+r2=0.55**
+
+200
+
+220
+
+240
+
+260
+
+12L–SL
+
+220
+
+260
+
+300
+
+340
+
+r2=0.07 ns
+r2=0.04 ns
+
+SL–25 DAS
+
+370
+
+400
+
+430
+
+460
+
+r2=0.01 ns
+r2=0.24**
+
+25 DAS–M
+
+15
+
+14
+
+13
+
+12
+
+11
+
+10
+
+9
+420
+
+15
+
+14
+
+13
+
+12
+
+11
+
+10
+
+9
+160
+
+15
+
+14
+
+13
+
+12
+
+11
+
+10
+
+9
+180
+
+15
+
+14
+
+13
+
+12
+
+11
+
+10
+
+9
+340
+
+15
+
+14
+
+13
+
+12
+
+11
+
+10
+
+)
+1
+–
+a
+h
+
+ 
+
+g
+M
+
+(
+ 
+
+l
+
+d
+e
+Y
+
+i
+
+r2=0.00 ns
+r2=0.16*
+
+S–6L
+
+700
+r2=0.02 ns
+r2=0.00 ns
+
+900
+
+1 100
+
+6L–12L
+
+210
+r2=0.14*
+r2=0.57**
+
+260
+
+310
+
+360
+
+12L–SL
+
+300
+
+240
+r2=0.02 ns
+r2=0.11 ns
+
+360
+
+420
+
+480
+
+SL–25 DAS
+
+400
+
+450
+
+500
+
+550
+
+r2=0.03 ns
+r2=0.60**
+
+25 DAS–M
+
+15
+
+14
+
+13
+
+12
+
+11
+
+10
+
+9
+500
+
+15
+
+14
+
+13
+
+12
+
+11
+
+10
+
+9
+160
+
+15
+
+14
+
+13
+
+12
+
+11
+
+10
+
+9
+180
+
+15
+
+14
+
+13
+
+12
+
+11
+
+10
+
+9
+350
+
+15
+
+14
+
+13
+
+12
+
+11
+
+10
+
+9
+300 350 400 450 500 550 600
+
+9
+450 500 550 600 650 700 750
+
+GDD (°C d)
+
+Solar radiation (MJ m–2)
+
+Fig. 6  Relationship between growth degree days (GDD), solar radiation at different growth stages, and grain yield of Zhengdan 958  
+(ZD958) and Zhongnongda 4 (ZND4).  S–6L, 6L–12L, 12L–SL, SL–25 DAS, and 25 DAS–M represent the growth periods of sowing 
+to 6th leaf, 6th to 12th leaf, 12th leaf to silking, silking to 25 days after silking, and 25 days after silking to maturity, respectively.  * 
+and **, significant at P<0.05 and P<0.01, respectively; ns, no significance.
+
+TIAN Bei-jing et al.   Journal of Integrative Agriculture  2020, 19(5): 1227–1240
+
+1237
+
+   ZD958
+
+   ZND4
+
+ZD958
+
+ZND4
+
+A
+
+D
+A
+P
+S
+
+64
+62
+60
+58
+56
+54
+52
+
+180
+
+r2=0.31**
+r2=0.29**
+
+230
+
+280
+GDD (°C d)
+
+330
+
+B
+
+64
+62
+60
+58
+56
+54
+52
+
+180
+
+r2=0.19**
+r2=0.16**
+
+300
+
+420
+240
+Solar radiation (MJ m–2)
+
+360
+
+C
+64
+62
+60
+58
+56
+54
+52
+
+480
+
+10
+
+r2=0.40**
+r2=0.50**
+
+12
+
+16
+
+14
+Day (d)
+
+18
+
+Fig. 7  Relationship between growth degree days (GDD) (A), solar radiation (B), and number of days of growth from 12th leaf 
+to silking (C) and ear leaf SPAD values at silking of Zhengdan 958 (ZD958) and Zhongnongda 4 (ZND4).  * and **, significant at 
+P<0.05 and P<0.01, respectively.
+
+by  GDD  and  then  solar  radiation.   The  SPAD  values  of 
+ZND4 were higher than that of ZD958, but the correlations 
+among GDD, solar radiation, and leaf SPAD values for both 
+varieties were similar.
+
+4. Discussion
+
+This  study  showed  that  maize  sowing  time  altered  leaf 
+morphology and physiological processes associated with 
+the environment, eventually influencing grain yield (Cirilo 
+and Andrade 1994a, b; Tsimba et al. 2013a, b; Bonelli et al. 
+2016).  Maize yield ultimately depends on leaf position and 
+leaf interaction with the growing environment (Figs. 4–6). 
+
+4.1. Leaf development prior to silking
+
+Leaf area, leaf growth rate, and the days of growth prior to 
+the 6L stage had no distinct impact on the maize yield, but 
+the impacts became more obvious in the following period 
+prior to silking.  A larger accumulated leaf area and a faster 
+leaf growth at low canopy layer appeared to negatively affect 
+maize yield that developed from 6L to 12L stages.  Lower 
+canopy leaves at high plant densities have been shown to 
+be unproductive in maize (Acciaresi et al. 2014) due to less 
+incident radiation (Stewart et al. 2003; Huang et al. 2017).  In 
+contrast, the speed of leaf area expansion from the 6L to 12L 
+stages was significantly positively correlated with the final 
+maize yield, particularly for large plant-size variety ZND4. 
+Compared to growing period from sowing to 12L stage, 
+growing  period  from  12L  stage  to  silking  made  a  lager 
+contribution to maize grain yield due to the high production 
+of leaves that appeared in this period (Shaver 1983; Subedi 
+and Ma 2005).  For ZD958, a faster leaf growth during this 
+period resulted in an increased maize yield but a longer 
+growth duration increased grain yield of ZND4 (Fig. 4).  This 
+
+inconsistence is probable because of plant-size differences 
+between  varieties.    ZND4  is  a  large  plant-size  variety 
+especially at and above ear layer (Fig. 2).  A longer growth 
+period can optimize leaf capacity for biomass production by 
+accumulating more chlorophyll content in leaves (Fig. 7).  
+ZD958 had small leaf size (Fig. 2) and small leaf angle (data 
+not shown) in the middle and upper canopy layers; a faster 
+leaf growth can finalize the canopy development in a shorter 
+period of time, thus rapidly attaining the maximum leaf area 
+index  (Stone  et al.  1999),  increasing  the  interception  of 
+accumulated radiation and increasing canopy productivity, 
+especially at high plant density. 
+
+4.2. Leaf senescence post silking
+
+Varieties ZD958 and ZND4 showed different relationships 
+between  leaf  senescence  rate  and  yield  from  silking  to 
+25 DAS (Fig. 4).  The significantly  positive correlation  of 
+ZD958 indicated that adequate leaf senescence seemed to 
+increase maize yield for medium plant-size maize variety.  
+This study agrees with the results of Mi et al. (2003) and 
+Pommel et al. (2006) who compared carbon and nitrogen 
+allocation  in  senescent  and  stray-green  maize  hybrids, 
+indicating  that  increasing  leaf  senescence  at  the  lower 
+canopy layer in maize can advance and increase biomass 
+accumulation in grains.  Variety ZND4 showed no significant 
+correlation between leaf senescence and grain yield from 
+siking to 25 DAS, reflecting that the yield variation of ZND4 
+was attributed to leaf productivity rather than leaf area in 
+the early grain-filling period.
+
+Leaf senescence in the late grain filling period significantly 
+increased grain yield for both varieties used in the present 
+study,  reflecting  the  unfavorable  conditions  such  as  low 
+temperature  at  the  late  maize  growing  period  at  the 
+experimental region.  A fast transport of biomass from stem 
+
+1238
+
+TIAN Bei-jing et al.   Journal of Integrative Agriculture  2020, 19(5): 1227–1240
+
+and leaf to ear should be concerned when choosing varieties 
+and  crop  management.    For  the  large  plant-size  variety, 
+a longer growing period was more essential to transport 
+accumulated biomass, which is consistent with the results 
+of Huang et al. (2018).
+
+to be more sensitive to the environment in the late growth 
+period, which is possibely because of the lower tolerance 
+to a high plant density (Maddonni et al. 2001; Zhang et al. 
+2014).   Thus,  the  yield  stability  of  ZND4  is  more  easily 
+influenced by the environment.
+
+4.3. The interactions among growing environment, 
+leaf area dynamics, and yield
+
+5. Conclusion
+
+The present results confirmed that environmental impacts 
+on leaf area dynamics and yield were closely associated 
+with the growth stage (Sánchez et al. 2014).  Prior to the 
+12L stage, high GDD can reduce leaf area and then reduce 
+grain yield, but accumulated solar radiation showed positive 
+effects on yield; these interactions were more distinct for 
+large plant-size variety ZND4.
+
+The growth period from 12L stage to silking was most 
+sensitive to environments in regards to leaf growth and yield 
+formation.  High GDD and accumulated solar radiation can 
+significantly increase leaf area and yield for both varieties, 
+which  was  especially  evident  in  ZND4.    Leaves  that 
+contribute most to maize yield emerge and expand during 
+this  period  (Maddonni  et al.  2001;  Stewart  et al.  2003; 
+Huang et al. 2017), and their morphology and physiology 
+can be altered by the environment (Muchow and Carberry 
+1989; Reymond et al. 2003; Sadok et al. 2007).  Our results 
+clearly showed that leaf productivity can be optimized by 
+environment, and the optimized leaves in middle and upper 
+canopy layers can increase maize yield (Fig. 4), indicating 
+that  a  suitable  match  between  leaf  growth  and  growing 
+environment in this period is the key to increasing maize 
+yield. 
+
+High GDD and solar radiation can maintain leaf area at 
+a stable level from silking to 25 DAS, but can accelerate 
+leaf senescence after 25 DAS, especially for ZND4 (Fig. 5).  
+Previous results of Valentinuz and Tollenaar (2004) indicated 
+that maintaining leaf area in the first half of the grain filling 
+period  increased  maize  yield.    In  the  second  half  of  the 
+grain filling period, GDD and solar radiation in the late grain 
+filling period had positive correlations with leaf area decline 
+and  yield,  especially  for  the  ZND4,  which  is  consistent 
+with results of Borrás et al. (2003).  With the relationships 
+among GDD, solar radiation, leaf dynamics, and yield in 
+mind, environmental impacts in the late growing period on 
+the increase of maize yield could be achieved by changing 
+leaf dynamics.  Acciaresi et al. (2014) and Antonietta et al. 
+(2014)  indicated  that  leaf  senescence,  especially  for  the 
+low canopy leaves in the late growth period of maize, might 
+be beneficial for assimilate translocation and result in an 
+increase in yield.  The different varieties showed different 
+leaf senescence responses to growing environments; leaf 
+dynamics and yield of the large plant-size variety appeared 
+
+The interaction between leaf area dynamics and growing 
+environment (mainly GDD and solar radiation) impact maize 
+grain yield differently in different growth periods.  The most 
+important periods in which grain yield is affected are from 
+the 12L stage to silking and during the 2nd half of the grain 
+filling period.  Optimizing the match between leaf area growth 
+and the environment during the 12L stage to silking can 
+promote the development of a favorable canopy structure 
+and increase maize yield.  Given the difficulty in increasing 
+maize yield by increasing the sowing density, optimizing the 
+interaction among growth periods, leaf area dynamics, and 
+growing environments is considered a strategy to further 
+increase maize yield.  This study provides an important guide 
+for the determination of a suitable sowing date.
+
+Acknowledgements
+
+This work was supported by the National Key Research and 
+Development Program of China (2017YFD0300603) and 
+the Special Fund for Agro-scientific Research in the Public 
+Interest of China (201203031).
+
+References
+
+Acciaresi  H  A,  Tambussi  E  A,  Antonietta  M,  Zuluaga  M  S, 
+Andrade F H, Guiamét J J. 2014. Carbon assimilation, leaf 
+area  dynamics,  and  grain  yield  in  contemporary  earlier-
+and later-senescing maize hybrids. European Journal of 
+Agronomy, 59, 29–38.
+
+Allison J C S, Watson D J. 1966. The production and distribution 
+of dry matter in maize after flowering. Annals of Botany, 
+30, 365–381.
+
+Antonietta M, Fanello D D, Acciaresi H A, Guiamet J J. 2014. 
+Senescence and yield responses to plant density in stay 
+green and earlier-senescing maize hybrids from Argentina. 
+Field Crops Research, 155, 111–119.
+
+Ben-Haj-Salah  H,  Tardieu  F.  1995.  Temperature  affects 
+expansion rate of maize leaves without change in spatial 
+distribution  of  cell  length  (analysis  of  the  coordination 
+between cell division and cell expansion). Plant Physiology, 
+109, 861–870.
+
+Birch C J, Vos J, Putten P E L V D. 2003. Plant development and 
+leaf area production in contrasting cultivars of maize grown 
+in  a  cool  temperate  environment  in  the  field.  European 
+Journal of Agronomy, 19, 173–188.
+
+TIAN Bei-jing et al.   Journal of Integrative Agriculture  2020, 19(5): 1227–1240
+
+1239
+
+Bonelli L E, Monzon J P, Cerrudo A, Rizzalli R H, Andrade F 
+H. 2016. Maize grain yield components and source-sink 
+relationship as affected by the delay in sowing date. Field 
+Crops Research, 198, 215–225.
+
+Borrás L, Maddonni G A, Otegui M E. 2003. Leaf senescence 
+in maize hybrids: Plant population, row spacing and kernel 
+set effects. Field Crops Research, 82, 13–26.
+
+Bos H J, Tijanieniola H, Struik P C. 2000. Morphological analysis 
+of leaf growth of maize: Responses to temperature and light 
+intensity. NJAS-Wageningen Journal of Life Sciences, 48, 
+181–198.
+
+Cirilo  A  G,  Andrade  F  H.  1994a.  Sowing  date  and  maize 
+productivity: I. Crop growth and dry matter partitioning. Crop 
+Science, 34, 1039–1043.
+
+Cirilo  A  G,  Andrade  F  H.  1994b.  Sowing  date  and  maize 
+productivity: II. Kernel number determination. Crop Science, 
+34, 1044–1046.
+
+Duvick D N, Smith J S C, Cooper M. 2004. Long-term selection 
+in  a  commercial  hybrid  maize  breeding  program.  Plant 
+Breeding Reviews, 24, 109–151. 
+
+Escobar-Gutiérrez A J, Combe L. 2012. Senescence in field-
+grown  maize:  From  flowering  to  harvest.  Field  Crops 
+Research, 134, 47–58.
+
+Godfray C J, Beddington J R, Crute I R, Haddad L, Lawrence 
+D, Muir J F, Pretty J, Robinson S, Thomas S M, Toulmin 
+C. 2010. Food security: The challenge of feeding 9 billion 
+people. Science, 327, 812–818.
+
+Granier C, Tardieu F. 1999. Leaf expansion and cell division 
+are affected by reducing absorbed light before but not after 
+the decline in cell division rate in the sunflower leaf. Plant 
+Cell and Environment, 22, 1365–1376.
+
+Huang S B, Gao Y B, Li Y B, Xu L N, Tao H B, Wang P. 2017. 
+Influence of plant architecture on maize physiology and yield 
+in the Heilonggang River valley. The Crop Journal, 5, 52–62.
+Huang S B, Lv L H, Zhu J C, Li Y B, Tao H B, Wang P. 2018. 
+Extending growing period is limited to offsetting negative 
+effects of climate changes on maize yield in the North China 
+Plain. Field Crops Research, 215, 66–73.
+
+Kosgey J R, Moot D J, Fletcher A L, McKenzie B A. 2013. Dry 
+matter accumulation and post-silking N economy of ‘stay-
+green’ maize (Zea mays L.) hybrids. European Journal of 
+Agronomy, 51, 43–52.
+
+Lacube S, Fournier C, Palaffre C, Millet E J, Tardieu F, Parent 
+B. 2017. Distinct controls of leaf widening and elongation 
+by light and evaporative demand in maize. Plant Cell and 
+Environment, 40, 2017–2028.
+
+Lauer S, Hall B D, Mulaosmanovic E, Anderson S R, Nelson B, 
+Smith S. 2012. Morphological changes in parental lines of 
+pioneer brand maize hybrids in the US Central Corn Belt. 
+Crop Science, 52, 1033–1043.
+
+Liu G Z, Hou P, Xie R Z, Ming B, Wang K R, Xu W J, Liu W 
+M, Yang Y S, Li S K. 2017. Canopy characteristics of high-
+yield maize with yield potential of 22.5 Mg ha–1. Field Crops 
+Research, 213, 221–230.
+
+Liu Y E, Xie R Z, Hou P, Li S K, Zhang H B, Ming B, Long H 
+L, Liang S M. 2013. Phenological responses of maize to 
+
+changes in environment when grown at different latitudes 
+in China. Field Crops Research, 144, 192–199.
+
+Long S P, Zhu X G, Naidu S L, Ort D R. 2006. Can improvement 
+in  photosynthesis  increase  crop  yields?  Plant  Cell  and 
+Environment, 29, 315–330.
+
+Ma D L, Xie R Z, Niu X K, Li S K, Long H L, Liu Y E. 2014. 
+Changes in the morphological traits of maize genotypes in 
+China between the 1950s and 2000s. European Journal of 
+Agronomy, 58, 1–10.
+
+Maddonni G A, Otegui M E. 1996. Leaf area, light interception, 
+and  crop  development  in  maize.  Field  Crops  Research, 
+48, 81–87. 
+
+Maddonni G A, Otegui M E, Cirilo A G. 2001. Plant population 
+density, row spacing and hybrid effects on maize canopy 
+architecture and light attenuation. Field Crops Research, 
+71, 183–193.
+
+McMaster G S, Wilhelm W W. 1997. Growing degree-days: 
+One equation, two interpretations. Agricultural and Forest 
+Meteorology, 87, 291–300. 
+
+Mi G H, Liu J A, Chen F J, Zhang F S, Cui Z L, Liu X. 2003. 
+Nitrogen  uptake  and  remobilization  in  maize  hybrids 
+differing in leaf senescence. Journal of Plant Nutrition, 26, 
+237–247.
+
+Montgomery E G. 1911. Correlation studies in corn. In: 24th 
+Annual Report. Agricultural Experiment Station, Nebraska. 
+pp. 109–159.
+
+Muchow R C, Carberry P S. 1989. Environmental control of 
+phenology and leaf growth in a tropically adapted maize. 
+Field Crops Research, 20, 221–236.
+
+Ort D R, Merchant S S, Alric J, Barkan A, Blankenship R E, Bock 
+R, Croce R, Hanson M R, Hibberd J M, Long S P, Moore 
+T  A.  2015.  Redesigning  photosynthesis  to  sustainably 
+meet global food and bioenergy demand. Proceedings of 
+the National Academy of Sciences of the United States of 
+America, 112, 8529–8536.
+
+Pantin F, Simonneau T, Muller B. 2012. Coming of leaf age: 
+Control of growth by hydraulics and metabolics during leaf 
+ontogeny. New Phytologist, 196, 349–366.
+
+Poiré R, Wiese-Klinkenberg A, Parent B, Mielewczik M, Schurr 
+U,  Tardieu  F,  Walter  A.  2010.  Diel  time-courses  of  leaf 
+growth in monocot and dicot species: Endogenous rhythms 
+and temperature effects. Journal of Experimental Botany, 
+61, 1751–1759.
+
+Pommel B, Gallais A, Coque M, Quillere I, Hirel B, Prioul J L, 
+Andrieu B, Floriot M. 2006. Carbon and nitrogen allocation 
+and  grain  filling  in  three  maize  hybrids  differing  in  leaf 
+senescence. European Journal of Agronomy, 24, 203–211.
+Rajcan  I,  Tollenaar  M.  1999a.  Source:  Sink  ratio  and  leaf 
+senescence  in  maize:  I.  Dry  matter  accumulation  and 
+partitioning during grain filling. Field Crops Research, 60, 
+245–253.
+
+Rajcan  I,  Tollenaar  M.  1999b.  Source:  Sink  ratio  and  leaf 
+senescence in maize: II. Nitrogen metabolism during grain 
+filling. Field Crops Research, 60, 255–265.
+
+Reymond M, Muller B, Leonardi A, Charcosset A, Tardieu F. 
+2003.  Combining  quantitative  trait  loci  analysis  and  an 
+
+1240
+
+TIAN Bei-jing et al.   Journal of Integrative Agriculture  2020, 19(5): 1227–1240
+
+ecophysiological model to analyze the genetic variability 
+of the responses of maize leaf growth to temperature and 
+water deficit. Plant Physiology, 131, 664–675.
+
+Richards  R  A.  2000.  Selectable  traits  to  increase  crop 
+photosynthesis  and  yield  of  grain  crops.  Journal  of 
+Experimental Botany, 51, 447–458.
+
+Sadok W, Naudin P, Boussuge B, Muller B, Welcker C, Tardieu 
+F. 2007. Leaf growth rate per unit thermal time follows QTL- 
+dependent daily patterns in hundreds of maize lines under 
+naturally fluctuating conditions. Plant Cell and Environment, 
+30, 135–146.
+
+Sangoi  L,  Gracietti  M  A,  Rampazzo  C,  Bianchetti  P.  2002. 
+Response of Brazilian maize hybrids from different eras to 
+changes in plant density. Field Crops Research, 79, 39–51.
+Sánchez B, Rasmussen A, Porter J R. 2014. Temperatures and 
+the growth and development of maize and rice: A review. 
+Global Change Biology, 20, 408–417.
+
+Shaver D L. 1983. Genetics and breeding of maize with extra 
+leaves above the ear. In: Proceedings of the 38th Annual 
+Corn and Sorghum Research Conference. pp. 161–180.
+
+Sinclair  T  R,  Muchow  R  C.  1999.  Radiation  use  efficiency. 
+
+Advances in Agronony, 65, 215–265.
+
+Stewart D W, Costa C, Dwyer L M, Smith D L, Hamilton R I, 
+Ma  B  L.  2003.  Canopy  structure,  light  interception,  and 
+photosynthesis in maize. Agronmy Journal, 95, 1465–1474.
+Stone P J, Sorensen I B, Jamieson P D. 1999. Effect of soil 
+temperature on phenology, canopy development, biomass 
+and yield of maize in a cool-temperate climate. Field Crops 
+Research, 63, 169–178.
+
+Subedi  K  D,  Ma  B  L.  2005.  Ear  position,  leaf  area,  and 
+
+contribution of individual leaves to grain yield in conventional 
+and leafy maize hybrids. Crop Science, 45, 2246–2257.
+
+Tilman D, Clark M. 2015. Food, agriculture & the environment: 
+Can we feed the world & save the Earth? Daedalus, 144, 
+8–23.
+
+Tollenaar M. 1991. Physiological basis of genetic improvement 
+of  maize  hybrids  in  Ontario  from  1959  to  1988.  Crop 
+Science, 31, 119–124.
+
+Tollenaar M, Dwyer L M, Stewart D W. 1992. Ear and kernel 
+formation  in  maize  hybrids  representing  three  decades 
+of grain yield improvement in Ontario. Crop Science, 32, 
+432–438.
+
+Tsimba  R,  Edmeades  G  O,  Millner  J  P,  Kemp  P  D.  2013a. 
+The effect of planting date on maize grain yields and yield 
+components. Field Crops Research, 150, 135–144.
+
+Tsimba R, Edmeades G O, Millner J P, Kemp P D. 2013b. The 
+effect of planting date on maize: Phenology, thermal time 
+durations  and  growth  rates  in  a  cool  temperate  climate. 
+Field Crops Research, 150, 145–155.
+
+Valentinuz  O  R,  Tollenaar  M.  2004.  Vertical  profile  of  leaf 
+senescence during the grain-filling period in older and newer 
+maize hybrids. Crop Science, 44, 827–834.
+
+Xue J, Gou L, Zhao Y S, Yao M N, Yao H S, Tian J S, Zhang W 
+F. 2016. Effects of light intensity within the canopy on maize 
+lodging. Field Crops Research, 188, 133–141.
+
+Zhang Q, Zhang L S, Evers, J, Werf W V D, Zhang W Q, Duan 
+L  S.  2014.  Maize  yield  and  quality  in  response  to  plant 
+density and application of a novel plant growth regulator. 
+Field Crops Research, 164, 82–89.
+
+Executive Editor-in-Chief  LI Shao-kun
+Managing editor  WANG Ning
+
+

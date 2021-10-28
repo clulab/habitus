@@ -31,18 +31,31 @@ package object utils {
       println("=" * 50)
     }
   }
+  //todo:context details class should store all histograms
+  case class contextDetails( mention: String,mostFreqLoc0Sent: String,mostFreqLoc1Sent: String, mostFreqLoc: String,
+                             mostFreqDate0Sent: String,mostFreqDate1Sent: String, mostFreqDate: String,
+                             mostFreqCrop0Sent:String,
+                             mostFreqCrop1Sent:String,
+                             mostFreqCrop:String)
+
 
   // extract needed information and write them to tsv in a desired format. Return nothing here!
-  def outputMentionsToTSV(mentions: Seq[Mention], doc: Document, filename: String, pw: PrintWriter): Unit = {
+  def outputMentionsToTSV(mentions: Seq[Mention], doc: Document,context:scala.collection.mutable.Map[Int,contextDetails],
+                          filename: String, pw: PrintWriter): Unit = {
     val mentionsBySentence = mentions groupBy (_.sentence) mapValues (_.sortBy(_.start)) withDefaultValue Nil
     for ((s, i) <- doc.sentences.zipWithIndex) {
+
       // to keep only mention labelled as Assignment (these labels are associated with .yml files, e.g. Variable, Value)
       val sortedMentions = mentionsBySentence(i).filter(_.label matches "Assignment")
+
+
       sortedMentions.foreach{
-          // Format to print: variable \t value text \t value norms \t extracting sentence \t document name \n
+          // Format to print: variable \t value text \t value norms \t extracting sentence \t document name
+        // \t Most frequent LOC within 0 sentences \t Most frequent LOC within 1 sentences.\t Most frequent LOC anywhere in the doc.\n
           // Since we only focus on the Assignment mention which includes two submentions in the same format called
           // ``variable`` and ``value`` we access the two through ``arguments`` attribute of the Mention class.
           m => try {
+
             val varText = m.arguments("variable").head.text
             val value = m.arguments("value").head
             val valText = value.text
@@ -67,7 +80,17 @@ package object utils {
 
             //println(s"NORMS for ${valText}: [$norm]")
 
-            pw.println(s"$varText\t$valText\t$norm\t$sentText\t$filename")
+            pw.println(s"$varText\t$valText\t$norm\t$sentText\t$filename
+            \t${
+              context(i).mostFreqLoc0Sent}\t${
+              context(i).mostFreqLoc1Sent}\t${
+              context(i).mostFreqLoc}\t${
+              context(i).mostFreqDate0Sent}\t${
+              context(i).mostFreqDate1Sent}\t${
+              context(i).mostFreqDate}\t${
+              context(i).mostFreqCrop0Sent}\t${
+              context(i).mostFreqCrop1Sent}\t${
+              context(i).mostFreqCrop}")            
           } catch {
             case e: NoSuchElementException =>
               println(s"No normalized value found for ${m.arguments("value").head.text} in sentence ${s.getSentenceText}!")
@@ -75,11 +98,12 @@ package object utils {
             case e: RuntimeException =>
               println(s"Error occurs for sentence: ${s.getSentenceText}")
               e.printStackTrace()
+
           }
-          println(m.arguments("value").head.norms.filter(_.length > 2))
       }
     }
   }
+
 
 
   def printSyntacticDependencies(s:Sentence): Unit = {

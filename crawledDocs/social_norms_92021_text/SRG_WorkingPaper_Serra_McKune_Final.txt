@@ -1,0 +1,1437 @@
+  
+
+Climate information services and behavioral change: 
+
+The case of Senegal 
+
+Renata Serra 
+Sarah McKune 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+Working Paper No. 010 
+
+Sahel Research Group Working Paper No. 010 
+
+Working Paper Series for Development, Security and  Climate  Change 
+in the Sahel: Exchange Program between UF, Sciences Po and    UCAD 
+
+Climate information services and behavioral change: The case of Senegal 
+
+Renata Serra 
+Sarah McKune 
+
+June 2016 
+
+The Sahel Research Group, of the University of Florida’s Center for African Studies, is a collaborative effort to 
+understand the political, social, economic, and cultural dynamics of the countries which comprise the West African 
+Sahel. It focuses primarily on the six Francophone countries of the region—Senegal, Mauritania, Mali, Burkina 
+Faso, Niger, and Chad—but also on developments in neighboring countries, to the north and south, whose dy- 
+namics frequently intersect with those of the Sahel. The Sahel Research Group brings together faculty and gradu- 
+ate students from various disciplines at the University of Florida, in collaboration with colleagues from the region. 
+
+More information is available here: http://sahelresearch.africa.ufl.edu/ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+Working Paper Series for Development, Security and Climate Change in the 
+
+Sahel: Exchange Program between UF, Sciences Po and UCAD 
+
+The Sahel is an expansive region on the southern edge of the Saharan Desert characterized 
+by intense environmental change, political and economic instability, and rapid population 
+growth – all of which contribute to various security challenges in the region. Despite this 
+complex confluence of issues, development initiatives have often failed to employ a systems 
+approach, which would be well suited to tackle interaction and feedback between sectors, 
+scales, and states. 
+
+The aim of the project, which has involved faculty and graduate students from the University 
+of Florida, Sciences Po (Paris) and Université Cheikh Anta Diop (Senegal), is to shed light on 
+the interplay between these different challenges and to generate development-based 
+interventions and solutions aimed at alleviating social, environmental, economic and 
+political insecurity. 
+
+Project participants met three times during the 2014-15 academic year, once in each 
+location (UF, Sciences Po, and UCAD). Periodic virtual conferences were scheduled 
+throughout the year to facilitate long-distance collaboration. The culmination of the project 
+was the organization of a panel at the third International Conference on Sustainable 
+Development Practice, held at Columbia University, New York (September 23-24, 2015), 
+where the results from the project were presented. Some of this output has been reviewed 
+for this Working Paper Series. 
+
+The PI for this project was Dr. Renata Serra (UF and affiliate to the Sahel Research Group). The 
+project was funded by the Cultural Services of the French Embassy in the US, the UF Sahel 
+Research Center, and the UF Center for African Studies. 
+
+ 
+
+ 
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+Abstract: 
+
+ 
+
+ 
+
+This paper reviews preliminary evidence from two villages in the Kaffrine region of Senegal, which has 
+witnessed a substantial effort to provide quality coverage of climate information services to facilitate the uptake 
+of climate smart agricultural practices. Data indicate that while most respondents receive radio messages about 
+weather and climate predictions, only a small minority utilizes those messages in decision making about adop 
+tion of climate smart practices. A framework for interpreting these data is proposed, which focuses on the role 
+of psychological factors in constraining behavior change, as distinct from other factors, such as financial, tech- 
+nological, and social. We argue that ideology, social norms, and mental frames all affect the way information is 
+processed and risk is appreciated; and a pessimistic outlook on future prospects and associated psychological 
+factors may prevent individuals from undertaking seemingly “SMART” decisions, because they present 
+difficult trade-offs between immediate and long-term gains - or even between individual interests and collective 
+wel- fare. While much attention has focused on improving coverage of CISs, we should equally invest 
+resources and efforts in tackling the complex domain of individual and collective perception of information, 
+and consequent behavioral change – through innovative approaches to social learning and social marketing. 
+
+Key Terms: Climate information services; climate smart agriculture; information processing and decision- 
+making under uncertainty; behavioral change; Senegal. 
+
+About the Authors: 
+
+Dr Renata Serra is a Lecturer in the Center for African Studies and core Faculty in the Master in Development 
+Program at the University of Florida. An economist by training, she has conducted research on the political 
+economy of agriculture, cotton value chain analysis, women's access to agricultural markets, and child labor in 
+cocoa with a focus on the Francophone countries in West Africa. 
+
+Dr. Sarah McKune is the Director of Public Health Programs and an Assistant Professor in the Department of 
+Epidemiology at the University of Florida. Her research is in applied public health, with a focus on food 
+security, nutrition, and livelihood security in the Sahel region of West Africa, Ethiopia and Nepal. 
+
+ 
+
+ 
+
+ 
+ 
+
+Acknowledgements: 
+
+ 
+This paper is an output of the "Development, Security and Climate Change in the Sahel" project, which was made 
+possible thanks to funding from the UF France Florida Research Institute, the Sahel Research Group and the Center 
+for African Studies. This research was supported in part by the CGIAR Research Program on Climate Change, 
+Agriculture and Food Security. The paper draws from work previously conducted within the CGIAR’s research 
+program on Climate Change, Agriculture, and Food Security, and data collected by a UF team led by Drs. Sandra 
+Russo and Sarah McKune, and composed by Taryn Devereux, Simone Faas, Chesney McOmber, Liz Poulsen, and 
+Therese Ryley. The views expressed in this document cannot be taken to reflect the official opinions of CGIAR or 
+Future Earth. The authors would like to also thank participants at the third International Conference on Sustainable 
+Development at Columbia University on Sept. 23-24, 2015, where an earlier version of this paper was presented; 
+and Liz Poulsen and Therese Ryley for their comments on this version.	  
+ 
+
+1. Introduction	  
+
+term and climate events over the longer-term is referred to as climate information services (CIS). 
+
+Climate	  predictions	  for	  the	  African	  Sahel	  indicate	  rising	  temperatures,	  increases	  in	  average	  
+rainfall,	  higher	  frequency	  of	  extreme	  events,	  and	  greater	  evapotranspiration	  (IPCC,	  2014).	  
+These	  types	  of	  changes	  have	  specific	  implications	  on	  food	  production	  systems,	  population	  
+mobility,	  and	  health	  wherever	  they	  occur.	  In	  a	  region	  already	  considered	  as	  one	  of	  the	  most	  
+vulnerable	  in	  the	  world	  due	  to	  its	  fragile	  environmental	  basis,	  high	  fertility	  rates,	  and	  
+undiversified	  economic	  sectors,	  it	  is	  likely	  such	  impacts	  will	  have	  lasting	  effects	  on	  future	  
+development	  trajectories	  (OECD	  2014).	  
+Adaptation	  to	  climate	  change	  represents	  a	  key	  response	  in	  Sahelian	  countries.	  It	  is	  
+conditional	  on	  the	  availability	  of	  information	  on	  what	  to	  adapt	  to	  and	  how	  to	  adapt	  and	  the	  
+availability	  of	  resources	  necessary	  to	  implement	  the	  adaptation	  measures	  (Füssell	  and	  
+Klein,	  2006).	  The	  provision	  of	  data	  and	  information	  on	  both weather conditions over the short 
+Investing	  in	  effective	  CIS	  has	  become	  an	  important	  priority	  in	  development,	  and	  is	  viewed	  
+as	  the	  prePcondition	  for	  establishing	  successful	  adaptation	  efforts,	  even	  more	  so	  in	  the	  areas	  
+in	  the	  world	  most	  likely	  to	  experience	  the	  severe	  effects	  of	  climate	  change,	  such	  as	  the	  Sahel.	  
+However,	  these	  efforts	  face	  multiple	  challenges	  in	  terms	  of	  both	  reaching	  intended	  
+beneficiaries	  with	  relevant	  and	  meaningful	  messages	  and	  in	  making	  sure	  that	  the	  targeted	  
+individuals	  and	  communities	  are	  willing	  and	  able	  to	  act	  upon	  that	  information	  by	  
+implementing	  sustainable	  practices.	  
+The	  present	  paper	  discusses	  some	  of	  these	  challenges	  by	  reviewing	  evidence	  from	  a	  
+pioneering	  initiative	  launched	  in	  2011	  in	  Senegal	  by	  the	  CGIAR	  program	  on	  Climate	  Change,	  
+Agriculture	  and	  Food	  Security	  (CCAFS)	  in	  collaboration	  with	  the	  National	  Civil	  Aviation	  and	  
+Meteorology	  Agency	  of	  Senegal	  (ANACIM)	  to	  improve	  the	  use	  of	  climate	  information	  
+services	  among	  farmers	  in	  rural	  Senegal.	  The	  project,	  piloted	  in	  the	  Kaffrine	  region,	  has	  
+been	  scaled	  nationally	  through	  partnership	  with	  the	   Union	   des	   Radios	   Associatives	   et	  
+Communautaires	  du	  Senegal	  (URAC),	  an	  association	  of	  community	  based	  radio	  stations	  
+spread	  throughout	  the	  country	  (CCAFS	  2015).	  This	  is	  an	  innovative	  and	  successful	  project	  in	  
+many	  respects,	  thanks	  to	  the	  strong	  leadership	  manifested	  by	  the	  ANACIM,	  the	  institutional	  
+format	  (collaboration	  between	  ANACIM,	  local	  radios,	  and	  extension	  agents)	  to	  reach	  out	  
+communities	  in	  a	  vast	  rural	  area,	  and	  the	  efforts	  spent	  in	  making	  messages	  relevant	  in	  the	  
+local	  context,	  through	  training	  of	  local	  radio	  broadcasters	  and	  facilitation	  of	  dialogue	  
+between	  scientists	  and	  extension	  workers	  (Lo	  and	  Dieng,	  2015).	  
+The	  paper	  presents	  a	  closer	  analysis	  of	  some	  data	  collected	  by	  CCAFS	  in	  the	  project	  area,	  
+consisting	  of	  both	  a	  quantitative	  survey	  from	  2014	  and	  qualitative	  interviews	  with	  a	  variety	  
+of	  local	  actors	  conducted	  during	  summers	  2014	  and	  2015.	  We	  show	  that,	  despite	  the	  wide	  
+coverage	  of	  CIS,	  especially	  through	  radio	  messages,	  only	  a	  minority	  of	  the	  people	  surveyed	  
+indicate	  these	  services	  as	  instrumental	  in	  their	  decisions	  to	  adopt	  climate	  smart	  agricultural	  
+(CSA)	  practices;	  furthermore,	  the	  rate	  of	  CSA	  adoption	  remains	  pretty	  low,	  despite	  CIS.	  
+While	  these	  findings	  may	  be	  consistent	  with	  an	  explanation	  based	  on	  inaccurate	  or	  poorly	  
+delivered	  CIS,	  we	  argue	  this	  is	  not	  the	  whole	  story.	  Even	  when	  CIS	  messages	  are	  correct	  and	  
+effectively	  conveyed,	  they	  may	  fail	  to	  positively	  affect	  individual	  behavior	  due	  to	  key	  
+constraints	  affecting	  people’s	  reception	  of	  information	  and	  choices	  in	  the	  presence	  of	  
+uncertainty.	  These	  challenges	  are	  not	  only	  of	  technical,	  financial	  or	  social	  nature	  –	  and	  thus	  
+go	  beyond	  the	  known	  problems	  of	  identifying	  costPeffective	  ways	  of	  transmitting	  messages	  
+to	  vast	  regions,	  adequately	  training	  extension	  agents,	  and	  inducing	  whole	  communities	  to	  
+6	  
+
+	  
+
+2. The	  Senegal	  case	  study	  
+
+pay	  attention	  to	  the	  messages	  –	  but	  also	  involve	  dealing	  with	  the	  messier	  nature	  of	  human	  
+psychology	  and	  decisionPmaking	  in	  uncertain	  situations.	  
+The	  paper	  thus	  contributes	  to	  the	  literature	  on	  climate	  information	  services	  and	  adaptation	  
+practices	  by	  incorporating	  findings	  from	  recent	  studies	  in	  experimental	  and	  behavioral	  
+economics,	  which	  demonstrate	  that	  individuals	  are	  not	  always	  rational	  in	  the	  way	  standard	  
+theories	  would	  have	  them	  to	  be,	  and	  they	  instead	  absorb	  and	  filter	  information,	  and	  
+perceive	  and	  react	  to	  risks,	  in	  nonPpredictable	  ways.	  This	  is	  due	  to	  not	  only	  differences	  in	  
+culture	  and	  context,	  but	  also	  differences	  in	  individual	  traits,	  such	  as	  personal	  risk	  aversion,	  
+literacy,	  and	  past	  experiences.	  We	  conclude	  by	  emphasizing	  the	  need	  to	  incorporate	  more	  
+specific	  considerations	  of	  behavioral	  and	  psychological	  factors	  when	  devising	  the	  provision	  
+of	  CIS,	  so	  to	  enhance	  the	  effectiveness	  of	  current	  interventions.	  
+The	  case	  of	  Senegal	  is	  an	  appropriate	  choice	  for	  examining	  the	  role	  of	  climate	  information	  
+services	  in	  adaptation	  practices.	  The	  country	  has	  laid	  out	  a	  mediumPterm	  plan	  with	  the	  goal	  
+to	  become	  an	  emerging	  economy	  by	  2050	  (Plan	  Senegal	  Emergent).	  Senegal	  has	  pioneered	  a	  
+number	  of	  initiatives	  in	  the	  context	  of	  climate	  change	  and	  sustainable	  development,	  
+including	  leading	  work	  on	  the	  equitable	  distribution	  of	  climate	  information	  services	  among	  
+poor	  and	  disenfranchised	  farmers	  and	  the	  significant	  role	  of	  gender	  in	  effective	  climate	  
+science.	  The	  project	  launched	  in	  2011	  by	  the	  CGIAR’s	  research	  program	  on	  Climate	  Change,	  
+Agriculture,	  and	  Food	  Security	  (CCAFS),	  in	  partnership	  with	  the	  National	  Civil	  Aviation	  and	  
+Meteorology	  Agency	  of	  Senegal	  (ANACIM),	  represents	  one	  such	  effort	  to	  improve	  the	  
+provision	  and	  use	  of	  climate	  information	  services	  among	  farmers	  in	  rural	  Senegal.	  The	  
+project,	  piloted	  in	  the	  Kaffrine	  region,	  has	  been	  scaled	  nationally	  through	  partnership	  with	  
+the	  Union	  des	  Radios	  Associatives	  et	  Communautaires	  (URAC),	  an	  association	  of	  community	  
+based	  radio	  stations	  spread	  throughout	  the	  country	  (CCAFS	  2015).	  
+Baseline	  data	  from	  2011	  indicated	  that	  farmers	  used	  traditional	  knowledge	  rather	  than	  
+seasonal	  forecasts	  to	  plan	  for	  appropriate	  adaptations	  to	  climate	  and	  weather	  events	  
+(Kristjanson	  et	  al.,	  2011;	  CCAFS	  Baseline	  Indicators	  for	  Kaffrine,	  2015).	  This	  evidence	  
+supported	  efforts	  on	  the	  ground	  aimed	  to	  pursue	  greater	  integration	  of	  sources	  of	  
+knowledge.	  Indeed,	  multiPdisciplinary	  teams	  of	  farmers,	  extension	  agents,	  climatologists,	  
+NGO	  representatives,	  and	  the	  media	  met	  to	  discuss	  farmer	  perceptions	  and	  needs	  with	  
+regards	  to	  climate	  information.	  In	  this	  venue,	  facilitators	  described	  how	  traditional	  
+forecasting,	  as	  described	  by	  farmers,	  could	  be	  and	  was	  in	  fact	  represented	  by	  some	  of	  the	  
+technical	  weather	  forecasts,	  demonstrating	  important	  complementarity	  and	  possibilities	  for	  
+integration	  of	  both	  types	  of	  information	  sources,	  thus	  diminishing	  skepticism	  among	  
+farmers	  about	  technical	  forecasts	  (Ndiaye	  et	  al.,	  2013;	  Jay,	  2014;	  Lo	  and	  Dieng,	  2015).	  
+As	  part	  of	  the	  broader	  CCAFS	  research	  initiatives,	  UF	  researchers	  returned	  to	  Kaffrine	  from	  
+May	  through	  July	  2014	  to	  collect	  both	  quantitative	  and	  qualitative	  data	  to	  examine	  the	  
+relationship	  between	  climate	  information	  services	  and	  the	  use	  of	  climate	  smart	  agricultural	  
+(CSA)	  practices.	  Specifically,	  the	  research	  sought	  to	  identify	  what	  access	  farmers	  had	  to	  
+climate	  information	  services	  and	  what	  climate	  smart	  agricultural	  practices	  had	  been	  
+adopted	  by	  farmers	  in	  two	  communities	  in	  Kaffrine.	  Another	  aspect	  to	  investigate	  was	  if	  
+there	  were	  any	  relevant	  gender	  differences.	  Researchers	  at	  the	  University	  of	  Florida	  have	  
+been	  working	  with	  CCAFS	  since	  2012	  to	  understand	  how	  gender	  intersects	  and	  affects	  
+climate	  information	  services,	  in	  its	  content,	  distribution,	  and	  utilization	  for	  change	  at	  the	  
+7	  
+
+	  	  
+
+	  
+
+household	  level	  (McOmber	  et	  al.	  2013;	  McKune	  and	  McOmber	  2013;	  Devereux	  and	  McKune	  
+2014;	  Ryley	  and	  McKune	  2014;	  Poulsen	  et	  al.	  2015;	  McKune	  et	  al	  2016).	  
+Survey	  data	  utilized	  here	  come	  from	  two	  communities:	  	  Kahi	  	  and	  	  Malem	  	  Thierign,	  	  both	  	  
+located	  in	  the	  semiParid	  Kaffrine	  region	  of	  Senegal	  (see	  Figure	  1).	  Previous	  research	  showed	  
+that	  Kaffrine	  is	  especially	  prone	  to	  climate	  	  disaster,	  	  and	  	  has	  	  experienced	  	  increasing	  	  floods	  
+and	  other	  extreme	  weatherPrelated	  events	  in	  recent	  years	  (Tall	  et	  al.	  2014).	  The	  	  main	  	  
+livelihood	  in	  Kaffrine	  is	  rainfed	  agriculture	  (peanuts,	  millet,	  and	  maize).	  Wolof	  is	  the	  major	  
+ethnic	  and	  language	  group	  found	  in	  Kaffrine	  (and	  is	  the	  ethnic	  identity	  of	  all	  of	  the	  survey	  
+respondents),	  although	  the	  town	  of	  Malem	  Thierign	  also	  receives	  many	  Fulani	  pastoral	  and	  
+semiPpastoral	  herders.	  
+In	  addition,	  responses	  to	  qualitative	  interviews	  conducted	  during	  two	  different	  visits,	  in	  
+2014	  and	  2015	  (see	  Poulsen	  et	  al.	  2015),	  were	  also	  taken	  into	  account,	  as	  well	  as	  a	  series	  of	  
+reports	  from	  CCAFS	  project	  (McOmber	  et	  al.	  2013;	  Tall	  et	  al.	  2014;	  Lo	  and	  and	  Dieng,	  2015).	  
+
+Figure	  1.	  Location	  of	  the	  Kaffrine	  region,	  Senegal	  
+
+	  
+
+	   Though	  both	  communities	  have	  moderate	  rates	  of	  food	  insecurity,	  Kahi	  had	  not	  received	  
+any	  CCAFS	  climate	  information,	  while	  the	  village	  of	  Malem	  Thierign	  had	  been	  a	  site	  of	  
+multiple	  research	  projects,	  including	  ongoing	  CCAFS	  work	  since	  2010,	  and	  various	  research	  
+projects	  conducted	  by	  World	  Vision.	  Previous	  research	  has	  highlighted	  genderPspecific	  
+vulnerabilities	  to	  climatePrelated	  shocks,	  endogenous	  adaptation	  strategies,	  and	  coping	  
+mechanisms	  (Tall	  et	  al.	  2014).	  CCAFSPrelated	  interventions	  in	  the	  site	  include	  the	  provision	  
+of	  climate	  information	  services.	  
+A	  total	  of	  49	  surveys	  were	  administered	  to	  women	  and	  men	  across	  34	  households,	  including	  
+15	  intraPhousehold	  couples	  where	  both	  male	  and	  female	  heads	  of	  house	  were	  surveyed	  (see	  
+Table	  1).	  
+Malem	  Thierign	  
+(ongoing	  interv)	  
+
+Table	  1.	  Samples	  size	  in	  the	  two	  villages	  sites,	  Kaffrine,	  Senegal	  
+
+	  
+
+Village	  
+
+Men	  (n=22)	  
+Women	  (n=27)	  
+Total	  (n=49)	  
+
+Kahi	  
+(No	  interv)	  
+10	  
+14	  
+24	  
+
+12	  
+13	  
+25	  
+
+Source:	  UF/CCFAS	  data,	  Kaffrine,	  Senegal	  
+
+	  
+
+8	  
+
+Kahi 
+
+9.1	  
+90.9	  
+27.3	  
+4.5	  
+40.9	  
+4.5	  
+9.1	  
+
+0 
+0 
+0 
+
+Source_Trad 
+Source_Radio 
+Source_TV 
+Source_Phone 
+Source_Pamphlet 
+Source_ExtOffice 
+Source_Schools 
+Source_Neighbors 
+Source_Family 
+Source_Leaders 
+Source_OwnExp 
+Source_Groups 
+Source_Barazas 
+Source:	  UF/CCFAS	  data,	  Kaffrine,	  Senegal	  
+
+0 
+0 
+0 
+
+Malem	  Thierign	  
+8 
+92 
+4 
+16 
+0 
+0 
+0 
+24 
+8 
+16 
+0 
+0 
+0 
+
+All 
+
+8.5	  
+91.5	  
+14.9	  
+10.6	  
+31.9	  
+6.4	  
+12.8	  
+
+0 
+0 
+0 
+
+0 
+0 
+0 
+
+Nearly	  all	  respondents	  reported	  receiving	  climate	  information	  (including	  the	  “control	  site”	  
+of	  Kahi)	  (McKune	  et	  al.	  2016),	  thus	  eliminating	  access	  to	  climate	  information	  as	  a	  primary	  
+concern	  in	  these	  communities.	  However,	  only	  8%	  of	  respondents	  reported	  changing	  crop	  
+varieties.	  
+The	  leading	  sources	  of	  climate	  information	  by	  village	  are	  reported	  in	  Table	  2	  (where	  figures	  
+denote	  percentages,	  and	  each	  respondent	  could	  mention	  more	  than	  one	  source):	  
+
+2.1 Sources	  of	  climate	  information	  
+
+Table	  2.	  Sources of climate information reported among household in Kaffrine, Senegal by 
+community (percentages, n=49) 
+
+	  
+ 	  
+
+	   The	  predominant	  source	  of	  climate	  information	  in	  both	  villages	  is	  the	  radio,	  followed	  by	  
+‘neighbors’.	  The	  major	  differences	  in	  source	  of	  information	  between	  communities	  are	  that:	  
+in	  Kahi	  there	  is	  a	  more	  widespread	  use	  of	  TV	  (reported	  among	  27%	  of	  respondents	  
+compared	  to	  4%	  in	  Malem	  Thierign)	  whereas	  cell	  phones	  are	  relatively	  more	  important	  in	  
+Malem	  Thierign	  (16%	  compared	  to	  4.5%	  in	  Kahi);	  and	  in	  Kahi	  there	  is	  a	  greater	  reliance	  on	  
+neighbors	  (41%	  vs.	  24%),	  but	  a	  lower	  reliance	  on	  family	  (4.5%	  vs.	  8%)	  and	  community	  
+leaders	  (9%	  vs.	  16%)	  than	  in	  Malem	  Thierign.	  
+Table	  3	  reveals	  the	  leading	  sources	  of	  climate	  information	  by	  gender	  of	  the	  respondent.	  Men	  
+and	  women	  comparably	  report	  radio	  as	  the	  most	  important	  source	  of	  climate	  information.	  
+The	  major	  differences,	  instead,	  are	  not	  only	  men’s	  greater	  use	  of	  TV	  and	  phones	  	  than	  
+women	  (which	  could	  be	  expected),	  but	  also	  their	  higher	  reliance	  on	  more	  traditional	  
+sources	  of	  information,	  including	  traditional	  sources	  of	  information,	  family,	  and	  community	  
+leaders.	  By	  contrast,	  women	  report	  a	  greater	  reliance	  on	  neighbors.	  
+These	  data	  suggest	  some	  interesting	  points.	  First,	  the	  main	  channel	  through	  which	  
+individuals	  hear	  about	  climate	  and	  weather	  forecasts	  is	  the	  radio.	  The	  advantage	  of	  the	  
+latter	  is	  its	  ubiquity,	  since	  most	  people	  in	  rural	  Senegal	  are	  likely	  to	  listen	  to	  the	  radio	  on	  a	  
+daily	  basis	  and	  to	  perceive	  it	  as	  nonPintrusive.	  ANACIM	  has	  pioneered	  novel	  approaches	  to	  
+make	  radio	  messages	  relevant	  to	  farmers	  –	  for	  instance	  by	  facilitating	  backstage	  meetings	  
+between	  scientists	  and	  farmers,	  so	  that	  the	  former	  may	  become	  aware	  of	  how	  information	  
+needs	  to	  incorporate	  local	  knowledge	  and	  understanding;	  and	  by	  facilitating	  meeting	  
+between	  	  farmers	  	  and	  	  radio	  	  conductors,	  	  so	  	  that	  	  the	  	  latter	  	  may	  	  be	  	  able	  	  to	  	  transmit	  
+9	  
+
+	  
+
+appropriate	  messages	  to	  the	  right	  audience	  (Tall	  et	  al.	  2014).	  The	  survey	  responses	  confirm	  
+the	  claim	  made	  by	  the	  CCFAS	  team	  that	  CIS	  has	  attained	  wide	  coverage	  in	  Kaffrine,	  reaching	  
+potentially	  two	  millions	  people	  (Lo	  and	  Dieng,	  2015).	  
+
+Table	   3.	   Sources  of  climate  information  reported  among  household  in  Kaffrine,  Senegal  by 
+gender (percentages, n=49) 
+Men 
+
+All 
+
+ 	  
+
+8.5	  
+91.5	  
+14.9	  
+10.6	  
+31.9	  
+6.4	  
+12.8	  
+
+0 
+0 
+0 
+
+0 
+0 
+
+	  
+
+13.6	  
+90.9	  
+18.2	  
+18.2	  
+27.3	  
+9.1	  
+18.2	  
+
+0 
+0 
+0 
+
+Source_Trad 
+Source_Radio 
+Source_TV 
+Source_Phone 
+Source_Pamphlet 
+Source_ExtOffice 
+Source_Schools 
+Source_Neighbors 
+Source_Family 
+Source_Leaders 
+Source_OwnExp 
+Source_Groups 
+Source_Barazas 
+Source:	  UF/CCFAS	  data,	  Kaffrine,	  Senegal	  
+
+0 
+0 
+0 
+
+Women 
+4 
+92 
+12 
+4 
+0 
+0 
+0 
+36 
+4 
+8 
+0 
+0 
+0 
+
+	   At	  the	  same	  time,	  selected	  inPdepth	  interviews	  conducted	  in	  the	  field	  also	  suggest	  there	  are	  
+challenges	  in	  translating	  this	  level	  of	  “potential	  use”	  into	  “real	  use”	  of	  information.	  Some	  
+respondents	  stated	  the	  information	  is	  not	  always	  	  useful	  	  or	  	  accurate	  	  enough;	  	  others	  	  stated	  
+that	  since	  their	  time	  is	  very	  limited,	  they	  preferred	  to	  listen	  to	  other	  and	  more	  entertaining	  
+programs	  than	  weather	  forecasts	  on	  radio	  and	  TV	  (McKune	  et	  al.	  2016).	  When	  asked	  how	  
+climate	  information	  services	  could	  be	  made	  more	  useful	  to	  farmers,	  respondents	  offered	  a	  
+variety	  of	  suggestions	  such	  as:	  	  make	  	  information	  	  more	  	  relevant	  	  to	  	  their	  	  agricultural	  	  
+activities	  (52%),	  increase	  the	  frequency	  with	  which	  climate	  information	  	  is	  	  shared	  	  (45%),	  	  
+make	  the	  presentation	  of	  the	  information	  more	  clear	  (40%),	  make	  the	  informationPsharing	  
+method	  more	  accessible	  (23%),	  among	  other	  suggestions	  (McKune	  et	  al.	  2016).	  
+Thus	  radio	  is	  a	  wellPknown	  channel	  of	  information	  and	  communication,	  yet	  it	  has	  some	  
+limits:	  radio	  messages	  are	  not	  personalized	  (as	  those	  that	  would	  be	  provided	  through	  interP	  
+personal	  interaction)	  and	  cannot	  take	  advantage	  of	  visual	  images,	  which	  are	  often	  powerful	  
+tool	  in	  effective	  communication.	  Furthermore,	  there	  are	  important	  gender	  differences,	  as	  
+evidenced	  in	  Table	  3.	  
+If	  rural	  women/men	  are	  to	  be	  appropriately	  reached,	  it	  is	  necessary	  to	  understand	  how	  
+information	  circulates	  among	  their	  respective	  social	  networks.	  If	  women	  are	  not	  individual	  
+consumers	  of	  information,	  but	  they	  are	  more	  likely	  than	  men	  to	  access	  it,	  and	  possibly	  
+process	  it	  and	  discuss	  it,	  collectively,	  then	  information	  campaigns	  and	  extension	  services	  
+that	  reach	  out	  to	  groups,	  rather	  than	  to	  individuals,	  are	  more	  likely	  to	  be	  effective	  for	  this	  
+particular	  group.	  Extension	  and	  sensitization	  campaigns	  that	  regularly	  reach	  out	  to	  
+communities	  and	  enable	  participants	  to	  revise	  their	  expectations	  and	  strategies	  appear	  to	  
+be	  very	  promising,	  even	  if	  requiring	  a	  higher	  cost	  than	  radio	  programs.	  
+
+	  
+
+10	  
+
+On	  the	  other	  hand,	  traditional	  knowledge	  seems	  to	  be	  more	  important	  to	  men	  than	  to	  
+women	  –	  this	  also	  needs	  to	  be	  factored	  in,	  so	  that	  information	  can	  be	  rendered	  more	  
+genderPsensitive.	  
+Finally,	  another	  important	  challenge	  from	  a	  gender	  perspective	  is	  that	  if/when	  women	  are	  
+not	  the	  main	  agricultural	  decisionPmakers,	  they	  are	  not	  too	  interested	  in	  weather	  and	  
+climate	  information	  (Poulsen	  et	  al.	  2015).	  This	  means	  that,	  unless	  CIS	  is	  relevant	  to	  women	  
+to	  start	  with,	  any	  innovative	  way	  of	  bringing	  information	  to	  them	  is	  being	  lost.	  
+Therefore,	  even	  if	  ANACIM	  has	  put	  in	  effort	  to	  make	  seasonal	  forecasts	  as	  relevant	  as	  
+possible	  to	  its	  intended	  audience,	  the	  messages	  (content	  or	  format)	  may	  still	  not	  appear	  as	  
+significant	   for	   farmers’	   daily	   experiences	   as	   those	   that	   are	   transmitted	   through	  
+interpersonal	  encounters	  with	  family	  and	  neighbors;	  and	  they	  do	  not	  sufficiently	  
+differentiate	  between	  genders’	  preferences.	  This	  would	  suggest	  the	  need	  for	  interventions	  
+to	  pay	  greater	  attention	  to	  the	  mental	  frames	  and	  psychological	  attitudes	  of	  the	  different	  
+groups	  on	  the	  receiving	  end	  of	  the	  message	  –	  a	  topic	  that	  is	  discussed	  later	  in	  Section	  3.	  
+Table	  4	  gives	  some	  evidence	  on	  the	  extent	  to	  which	  the	  implementation	  of	  CSA	  practices	  are	  
+linked	  to	  the	  CIS	  received.	  Over	  half	  (57%)	  of	  the	  respondents	  stated	  they	  implemented	  any	  
+of	  the	  CSA	  practices	  as	  a	  consequence	  of	  the	  climate	  information	  received	  (50%	  of	  the	  
+sample	  in	  Kahi	  and	  64%	  in	  Malem).	  The	  practices	  most	  frequently	  reported	  include	  (in	  
+order	  of	  frequency	  mentioned):	  manure	  management,	  intercropping,	  crop	  rotation,	  and	  
+improved	  storage.	  In	  both	  villages,	  more	  men	  than	  women	  in	  the	  sample	  stated	  that	  climate	  
+information	  led	  to	  changes	  in	  practices	  on	  their	  farms.	  There	  are	  no	  major	  differences	  in	  the	  
+frequencies	  with	  which	  men	  and	  women	  mention	  their	  use	  of	  practices,	  except	  that	  
+rotational	  grazing	  is	  used	  more	  by	  women	  than	  men	  in	  Kahi.	  
+
+2.2 Adoption	  of	  CSA	  practices	  
+
+Table 4. Implementation of CSA practices 
+
+	  
+	  
+
+Climate info has led to changes on 
+
+farms (%) 
+
+CSA Practice Used 
+(% of those who 
+made to changes) 
+
+Manure 
+
+Management 
+Intercropping 
+
+Crop Rotation 
+
+Improved storage 
+
+Conservation 
+
+tillage 
+Residue 
+
+Management 
+
+Rotational Grazing 
+
+Improved breeds 
+
+of cattle 
+
+Source:	  UF/CCFAS	  data,	  Kaffrine,	  Senegal	  
+
+Kahi 
+
+(pre-intervention) 
+Men 
+Women 
+(n=10) 
+(n=14) 
+70% 
+(n=7) 
+100% 
+
+93% 
+
+36% (n=5) 
+
+Malem Thierign 
+
+(ongoing intervention) 
+Men 
+Women (n=13) 
+(n=12) 
+75% 
+(n=9) 
+100% 
+
+54% (n=7) 
+
+100% 
+
+92% 
+
+100% 
+
+69% 
+
+62% 
+
+	  
+
+	  
+
+90% 
+
+90% 
+
+80% 
+
+50% 
+
+25% 
+
+25% 
+
+100% 
+
+100% 
+
+86% 
+
+64% 
+
+100% 
+
+33% 
+
+92% 
+
+83% 
+
+92% 
+
+50% 
+
+	  
+	  
+	  
+
+	  
+	  
+	  
+
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+
+Total 
+
+49 
+
+57% 
+
+11	  
+
+	  	  
+
+ 	  
+	  
+
+	  
+
+When	  respondents	  were	  asked	  what	  was	  the	  main	  source	  of	  information	  that	  induced	  them	  
+to	  adopt	  the	  mentioned	  CSA	  practices,	  a	  surprising	  pattern	  emerges.	  Most	  of	  the	  
+information	  relevant	  to	  the	  adoption	  of	  practices	  came	  from	  family,	  traditional	  knowledge,	  
+personal	  experience,	  social	  networks	  and	  community	  leaders	  (Table	  5).	  Neither	  radio	  
+messages	  nor	  extension	  services	  were	  ever	  mentioned,	  despite	  they	  were	  listed	  in	  the	  
+questionnaire	  as	  possible	  responses.	  Thus,	  evidence	  from	  Tables	  4	  and	  5	  does	  not	  appear	  to	  
+support	  the	  claim	  that	  CSA	  practices	  emerge	  as	  the	  result	  of	  climate	  information	  provision.	  
+
+Table 5. Sources of knowledge about CSA practices 
+
+Kahi, Senegal 
+
+(pre-intervention) 
+
+Malem Thierign, Senegal 
+(ongoing intervention) 
+
+Women 
+
+Men 
+
+Women 
+
+64% family, 21% 
+
+58% family, 25% 
+
+61% family, 23% 
+
+traditional 
+
+knowledge, 7% 
+
+community groups 
+
+community 
+groups, 8% 
+traditional 
+
+traditional 
+
+knowledge, 8% 
+neighbors, 8% 
+
+knowledge, 8% 
+
+community groups 
+
+	  
+
+77% family, 8% 
+neighbors, 8% 
+
+personal experience 
+
+69% family, 23% 
+
+traditional 
+
+knowledge, 8% 
+
+neighbors 
+
+31% family, 15% 
+personal experience, 
+8% neighbors, 8% 
+local leaders, 8% 
+
+barazas 
+
+46% family, 8% 
+
+traditional 
+
+knowledge, 8% 
+
+neighbors 
+
+	  
+	  
+
+	  
+	  
+	  
+	  
+	  
+
+Manure 
+
+Management 
+
+Intercropping 
+
+Crop Rotation 
+
+Improved 
+storage 
+
+Conservation 
+
+Tillage 
+
+Residue 
+
+Management 
+
+Rotational 
+Grazing 
+
+Men 
+
+50% traditional 
+knowledge, 30% 
+
+family, 20% 
+
+community groups 
+
+30% family, 30% 
+
+personal 
+
+experience, 30% 
+
+traditional 
+knowledge 
+
+50% traditional 
+knowledge, 20% 
+
+family, 10% 
+
+personal 
+
+experience, 10% 
+community groups 
+40% family, 40% 
+
+personal 
+experience 
+
+	  
+	  
+
+	  
+	  
+
+30% traditional 
+knowledge, 30% 
+
+family, 20% 
+
+personal 
+
+experience, 10% 
+community groups 
+
+10% barazas 
+
+64% family, 29% 
+
+traditional 
+knowledge 
+
+57% traditional 
+knowledge, 43% 
+
+family 
+
+42% family, 21% 
+
+traditional 
+
+knowledge, 7% 
+
+neighbors, 7% local 
+
+leaders, 7% 
+
+personal experience 
+
+42% family, 21% 
+
+traditional 
+
+knowledge, 7% 
+
+personal 
+
+experience, 7% 
+
+community groups 
+7% barazas, 7% 
+
+family 
+
+barazas 
+
+50% family, 17% 
+
+traditional 
+
+knowledge, 17% 
+
+personal 
+
+experience, 8% 
+
+neighbors 
+
+42% family, 25% 
+
+personal 
+
+experience, 17% 
+
+traditional 
+knowledge 
+
+33% personal 
+experience, 25% 
+
+family, 8% 
+traditional 
+
+knowledge, 8% 
+neighbors, 8% 
+
+25% family, 8% 
+neighbors, 8% 
+
+	  
+community groups 	  
+community groups 	  
+	  
+	  
+
+experience, 8% 
+
+personal 
+
+	  
+	  
+
+Source:	  UF/CCFAS	  data,	  Kaffrine,	  Senegal	  
+
+12	  
+
+ 	  
+	  
+	  
+	  
+	  
+	  
+
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+
+	  
+
+	  	  
+
+3. Cognitive	  processes	  and	  behavioral	  changes	  
+
+Overall,	  two	  main	  findings	  emerge	  from	  this	  preliminary	  analysis	  from	  the	  two	  villages.	  
+First,	  although	  more	  than	  90%	  of	  respondents	  receive	  climate	  seasonal	  forecasts	  through	  
+radio	  and	  other	  means,	  only	  half	  put	  in	  practice	  adaptation	  measures	  to	  minimize	  farm	  
+losses	  from	  drought	  and	  other	  extreme	  weather	  events.	  Furthermore,	  the	  source	  of	  CSAP	  
+related	  information	  is	  to	  be	  located	  mostly	  in	  traditional	  knowledge,	  family	  and	  neighbors	  –	  
+and	  only	  to	  a	  very	  minor	  extent	  in	  radio	  campaigns	  and	  extension	  services.	  
+The	  ANACIM	  agency	  in	  Senegal	  is	  highly	  praised	  for	  their	  effort	  in	  providing	  meaningful	  and	  
+effective	  climate	  information	  services.	  Evidence	  from	  farmers’	  responses	  reviewed	  in	  the	  
+previous	  section,	  as	  well	  as	  from	  similar	  studies	  in	  the	  Kaffrine	  region,	  suggests	  that	  CIS	  
+reach	  out	  to	  many	  people,	  and	  the	  messages	  are	  positively	  valued	  by	  recipients.	  Why	  is	  it	  
+then	  that	  the	  implementation	  of	  CSA	  is	  so	  limited	  on	  the	  ground	  –	  and	  even	  those	  who	  put	  
+them	  in	  practice	  appear	  to	  be	  informed	  more	  by	  traditional	  channels	  of	  knowledge	  and	  less	  
+by	  CIS	  messaging?	  The	  present	  section	  tries	  to	  address	  these	  questions	  by	  examining	  the	  
+role	  of	  uncertainty	  in	  decisionPmaking	  and	  evidence	  from	  studies	  of	  behavior	  under	  risk.	  
+An	  explicit	  focus	  on	  uncertainty1	  is	  particularly	  useful	  to	  understanding	  the	  limits	  to	  climate	  
+messaging	  and	  implementation	  of	  climate	  adaptation	  (Jones	  and	  Preston,	  2011;	  Dow	  et	  al.,	  
+2013b).	  Climate	  changes	  and	  weather	  events	  are	  intrinsically	  uncertain,	  so	  perfect	  
+predictions	  are	  impossible.	  What	  climate	  and	  weather	  modeling	  and	  projections	  attempt	  to	  
+achieve	  is	  to	  reduce	  the	  degree	  of	  uncertainty	  of	  future	  events	  and	  produce	  predictions	  for	  
+outcomes	  and	  associated	  probabilities	  that	  are	  as	  close	  as	  possible	  to	  the	  underlying	  values.	  
+The	  investment	  in	  climate	  information	  services	  is	  based	  on	  the	  premise	  that	  the	  production	  
+of	  reliable	  sciencePbased	  information	  about	  uncertain	  events	  can	  help	  endPusers	  make	  more	  
+informed	  decisions,	  that	  is,	  decisions	  that	  are	  most	  likely	  to	  generate	  their	  desired	  outcome	  
+(e.g.,	  higher	  crop	  production)	  given	  the	  predictions.	  For	  instance,	  correct	  and	  timely	  CIS	  are	  
+considered	  essential	  for	  food	  producers	  in	  the	  Sahel	  –	  including	  farmers,	  fishers	  and	  
+livestock	  holders	  –in	  order	  to	  strategically	  plan	  activities	  as	  to	  minimize	  climate	  change	  
+impact	  and	  maximize	  production.	  
+At	  their	  basic	  core,	  CIS	  share	  a	  common	  premise,	  that	  there	  exists	  a	  defined	  and	  linear	  
+relationship	  between	  predictions	  of	  uncertain	  events	  and	  decisions	  taken	  by	  actors	  (Figure	  
+2).	  The	  depicted	  model	  also	  implies	  a	  number	  of	  assumptions	  about	  the	  objectivity	  of	  
+sciencePbased	  knowledge;	  the	  possibility	  of	  clearly	  conveying	  that	  information,	  and	  the	  
+rationality	  of	  actors	  who	  receive	  the	  information.	  
+The	  sense	  of	  urgency	  attached	  to	  the	  need	  to	  act	  now	  in	  the	  face	  of	  the	  threats	  from	  climate	  
+change	  (IPCC	  2014)	  can	  possibly	  account	  for	  the	  high	  expectations	  placed	  on	  climate	  
+information	  provisioning.	  Once	  the	  scientific	  community	  finally	  agreed	  that	  climate	  change	  
+was	  real	  and	  was	  already	  affecting	  many	  aspects	  of	  life,	  especially	  in	  highPrisk	  areas	  such	  as	  
+the	  African	  Sahel	  (Parry	  et	  al.	  2007;	  UNEP	  2011;	  Diffenbaugh	  and	  Giorgi	  2012;	  and	  IPCC	  
+2014),	  much	  of	  the	  policy	  efforts	  was	  then	  oriented	  towards	  reinforcing	  the	  climate	  
+messaging	  and	  assisting	  individuals	  and	  communities	  in	  these	  highPrisk	  areas	  to	  adapt.	  It	  
+has	  been	  natural	  to	  presume	  that,	  if	  that	  information	  is	  appropriately	  conveyed,	  rational	  
+	  	  1 The	  terms	  risk	  and	  uncertainty	  both	  imply	  lack	  of	  knowledge	  about	  a	  given	  outcome	  but	  there	  is	  a	  
+main	  difference:	  in	  situations	  with	  risk,	  one	  knows	  the	  probability	  distribution	  of	  outcomes,	  while	  
+with	  uncertainty	  one	  does	  not	  know	  the	  possible	  outcomes	  nor	  their	  probability	  distribution.	  
+13	  
+	  
+
+agents	  would	  then	  respond	  by	  changing	  behavior	  in	  ways	  that	  adapt	  livelihood	  practices	  
+and	  mitigate	  the	  impact	  of	  these	  events.	  Adaptation	  policy	  assessments	  aim	  thus	  to	  turn	  
+nonPadaptive	  farmers	  into	  ‘smart’	  ones	  (Füssell	  and	  Klein,	  2006),	  for	  instance,	  encouraging	  
+them	  to	  adopt	  droughtPresistant	  crops	  and	  seeds	  and	  to	  develop	  locally	  appropriate	  
+irrigation	  solutions;	  or	  livestock	  holders	  to	  alter	  herding	  corridors,	  diversify	  incomes	  
+sources,	  and	  utilize	  new	  drought	  hardy	  species	  of	  livestock.	  
+
+Figure	  2.	  Linear	  Relationship	  often	  assumed	  to	  be	  representative	  of	  the	  generation	  and	  
+transmission	  of	  information	  
+
+If	  behavioral	  change	  consistent	  with	  scientific	  knowledge	  does	  not	  take	  place,	  it	  is	  mostly	  
+assumed	  that	  this	  is	  because	  scientific	  information	  is	  not	  appropriately	  delivered	  to	  endP	  
+users	  and	  information	  services	  are	  inadequate	  (the	  third	  node	  in	  Figure	  2).	  In	  the	  case	  of	  
+developing	  countries,	  this	  is	  often	  attributed	  to	  lack	  of	  resources	  and	  biased	  policy	  priorities	  
+at	  national	  or	  local	  level,	  which	  lead	  to	  underinvestment	  in	  public	  goods’	  provision,	  such	  as	  
+climate	  information	  services.	  It	  is	  to	  address	  this	  gap	  that	  experts	  and	  development	  
+partners	  have	  intensified	  theirs	  calls	  for	  the	  need	  to	  reinforce	  extension	  services	  in	  rural	  
+Africa,	  and	  scale	  up	  knowledge	  and	  information	  campaigns	  that	  sensitize	  the	  public	  about	  
+climate	  change.	  
+Recent	  research	  has	  shown	  that	  these	  assumptions	  may	  be	  too	  simplistic.	  To	  be	  clear,	  
+investment	  in	  climate	  information	  services	  is	  an	  essential	  public	  good,	  and	  represents	  a	  key	  
+policy	  priority.	  There	  is	  indeed	  an	  underinvestment	  in	  information	  provision	  in	  many	  
+countries,	  especially	  those	  in	  the	  African	  Sahel,	  and	  at	  all	  levels	  (not	  only	  regarding	  climate	  
+change),	  suggesting	  that	  the	  returns	  from	  scaling	  up	  information	  campaigns	  and	  extension	  
+services	  are	  probably	  very	  high.	  However,	  this	  by	  itself	  will	  not	  suffice.	  
+There	  are	  substantial	  limits	  to	  adaptation,	  which	  include	  not	  only	  biophysical	  and	  
+technological	  factors,	  but	  also	  cognitive,	  behavioral,	  social	  and	  cultural	  factors	  (IPCC,	  2014).	  
+Social	  and	  cultural	  factors,	  including	  political	  affiliation	  (Hamilton,	  2011;	  McCright	  and	  
+Dunlap,	  2011)	  and	  educational	  attainment	  (McCright	  and	  Dunlap,	  2011),	  can	  influence	  the	  
+degree	  of	  confidence	  that	  individuals	  place	  on	  different	  information	  sources,	  as	  well	  as	  the	  
+distribution	  of	  vulnerability	  and	  adaptive	  capacity	  among	  different	  individuals	  and	  groups.	  
+Social	  and	  cultural	  factors	  combine	  with	  psychological	  traits	  in	  affecting	  people’s	  values,	  
+worldviews,	  and	  cultural	  norms	  and	  behaviors	  (O’Brien,	  2009;	  Moser	  and	  Ekstrom,	  2010;	  
+O’Brien	  and	  Wolf,	  2010;	  HartzellPNichols,	  2011),	  in	  turn	  influencing	  their	  perceptions	  of	  risk	  
+as	  well	  as	  evaluation	  of	  adaptation	  options.	  Several	  studies	  from	  Africa	  explicitly	  explore	  the	  
+influence	  of	  some	  of	  these	  elements	  in	  driving	  awareness,	  uptake,	  and	  use	  of	  adaptation	  
+technologies	  for	  agriculture	  (Nhemachena	  and	  Hassan,	  2007;	  Hassan	  and	  Nhemachena,	  
+2008;	  Deressa	  et	  al.,	  2009,	  2011).	  
+This	  evidence	  suggests	  that	  addressing	  knowledge	  deficits	  may	  not	  necessarily	  lead	  to	  
+adaptive	  responses.	  Indeed,	  recent	  models	  of	  adaptation	  to	  climate	  change	  have	  recognized	  
+some	   of	  
+these	   complexities.	   SecondPgeneration	   vulnerability	   assessments	  
+thus	  
+“acknowledge	  that	  it	  is	  not	  the	  mere	  availability	  of	  adaptation	  options	  but	  the	  capacity	  of	  
+14	  
+
+	  
+
+	  
+
+people	  to	  actually	  implement	  these	  options	  that	  determines	  their	  vulnerability	  to	  climate	  
+change”	  (Füssell	  and	  Klein,	  2006:	  319)	  and	  that	  adaptive	  capacity	  includes	  both	  climatic	  and	  
+nonPclimatic	  factors.	  “Improved”	  adaptation	  policy	  assessments	  recognize	  that	  effective	  
+implementation	  of	  adaptation	  strategies	  require	  interventions	  beyond	  the	  provision	  of	  
+scientific	  information	  and	  data	  collection,	  to	  include	  facilitation	  through	  awareness	  raising	  
+and	  capacity	  building	  (Füssell	  and	  Klein,	  2006).	  
+Psychological	  factors	  are	  known	  to	  play	  a	  large	  role	  in	  shaping	  individuals’	  perceptions	  of	  
+risks,	  including	  climate	  change	  (Leiserowitz,	  2004;	  2006;	  Norgaard,	  2009).	  In	  2011,	  the	  
+American	  Psychological	  Association	  devoted	  an	  entire	  issue	  of	  its	  leading	  journal	  to	  address	  
+the	  psychological	  dimensions	  of	  climate	  change,	  and	  analyze	  the	  links	  between	  climate	  
+mitigation	  and	  adaptation,	  on	  the	  one	  hand,	  and	  cognitive,	  affective	  and	  motivational	  
+responses	  and	  processes	  on	  the	  other	  hand.2	  
+When	  it	  comes	  to	  the	  applied	  policy	  debate,	  however,	  there	  seems	  to	  be	  insufficient	  
+discussion	  about	  the	  influence	  of	  psychological	  factors,	  as	  distinct	  from	  social	  and	  cultural	  
+ones,	  in	  affecting	  behavioral	  change.	  Interventions	  on	  the	  ground	  thus	  may	  lack	  the	  
+resources	  to	  try	  and	  activate	  the	  link	  between	  information	  and	  behavioral	  change,	  and	  
+investigate	  more	  closely	  the	  challenges	  to	  behavioral	  uptake	  that	  come	  from	  mental	  and	  
+emotional	  factors.	  By	  incorporating	  insights	  from	  behavioral	  and	  experimental	  studies,	  we	  
+propose	  a	  more	  expanded	  model	  for	  use	  in	  policyPmaking	  than	  the	  one	  in	  Figure	  2,	  which	  
+recognizes	  the	  role	  of	  psychological	  factors,	  at	  least	  at	  two	  levels	  (see	  Figure	  3).	  
+
+Figure	  3.	  The	  role	  of	  psychological	  factors	  in	  the	  relationship	  between	  information	  and	  
+behavior	  change	  
+
+	  
+
+	  
+
+The	  first	  pertains	  to	  cognitive	  processes,	  that	  is,	  with	  how	  people	  receive	  and	  process	  the	  
+information.	   Field	   experiments	   and	   other	   empirical	   psychological	   methods	   have	  
+demonstrated	  that	  the	  average	  individual	  is	  far	  more	  irrational	  than	  what	  previous	  models	  
+had	  assumed;	  and	  filters	  information	  in	  ways	  that	  dramatically	  depart	  from	  the	  predictions	  
+based	  on	  the	   homo	   economics	  model	  (Mullainathan	  and	  Thaler	  2001;	  Cardenas	  and	  
+Carpenter	  2008).	  Behavioral	  studies	  have	  shown	  that	  as	  humans,	  we	  are	  subject	  to	  
+emotions	  when	  making	  decisions,	  even	  while	  using	  rational	  tools,	  so	  that	  the	  way	  a	  piece	  of	  
+information	  is	  “framed”	  influence	  the	  way	  it	  is	  received	  and	  acted	  upon	  (World	  Bank,	  2015).	  
+	  2 See	  Swim	  et	  al	  (2011)	  for	  the	  introductory	  article	  to	  the	  special	  issue	  of	  the	  American	  Psychologist.	  
+15	  
+	  
+
+Individuals	  are	  also	  affected	  by	  what	  people	  in	  their	  social	  networks	  believe	  and	  do.	  If	  some	  
+information	  appears	  to	  require	  actions	  that	  are	  contrary	  to	  one’s	  group	  interests	  or	  to	  favor	  
+the	  interests	  of	  a	  group	  that	  is	  perceived	  to	  be	  inimical,	  then	  people	  filter	  the	  information	  in	  
+ways	  that	  only	  reinforce	  their	  initial	  hypotheses.	  In	  other	  words,	  more	  information	  does	  not	  
+necessarily	  lead	  to	  a	  change	  in	  behavior.	  This	  speaks	  to	  the	  force	  of	  ideology	  and	  of	  
+cognitive	  illusions,	  which	  are	  implicit	  and	  often	  unconscious	  assumptions	  that	  individuals	  
+make	  about	  complex	  realities	  around	  them	  (World	  Bank,	  2015).	  
+Among	  the	  reasons	  why	  people	  may	  not	  fully	  process	  a	  given	  piece	  of	  information	  available	  
+to	  them	  is	  the	  coexistence	  of	  multiple	  sources	  of	  knowledge.	  Besides	  ‘scientific	  knowledge’,	  
+other	  sources	  of	  knowledge	  exist	  which	  individuals	  and	  communities	  utilize	  in	  order	  to	  
+make	  sense	  of	  the	  complex	  world	  around	  them.	  In	  the	  context	  of	  climate	  change,	  the	  most	  
+relevant	  is	  probably	  locally	  owned	  knowledge	  or	  what	  is	  called	  often	  “indigenous	  
+knowledge”.	  This	  comes	  through	  many	  channels	  and	  conduits	  (traditional	  leaders,	  oral	  
+traditions,	  folk	  tales,	  diviners,	  etc.)	  and	  involves	  several	  bodies	  of	  knowledge,	  including	  
+spiritual	  and	  religious.	  It	  plays	  an	  important	  role	  in	  the	  way	  individuals	  and	  communities	  
+see	  and	  interpret	  the	  environment	  around	  them.	  It	  has	  also	  been	  proven	  that	  ignoring	  this	  
+kind	  of	  knowledge	  is	  counterproductive;	  while	  integrating	  this	  into	  the	  process	  of	  climate	  
+information	  service	  may	  lead	  to	  better	  incorporation	  of	  relevant	  information	  into	  actual	  
+decisionPmaking	  	  and	  practices.	  
+The	  second	  and	  important	  level	  at	  which	  psychological	  factors	  can	  exercise	  their	  influence	  
+is	  on	  how	  people	  act	  upon	  the	  information	  received	  (Fig.	  3).	  Behavioral	  change	  is	  known	  
+to	  suffer	  from	  inertia	  at	  all	  levels,	  even	  when	  the	  information	  about	  the	  need	  to	  change	  and	  
+adapt	  has	  been	  apparently	  absorbed	  and	  understood.	  This	  is	  true	  in	  many	  domains,	  
+including	  public	  health,	  where	  individuals	  are	  expected	  to	  make	  choices	  that	  are	  beneficial	  
+to	  them	  and	  their	  communities.	  In	  the	  domain	  of	  climate	  adaptation	  strategies,	  inertia	  has	  
+been	  noted	  at	  the	  level	  of	  the	  environment,	  implying	  that	  increases	  in	  temperatures	  are	  
+likely	  to	  occur	  even	  after	  sustainable	  practices	  are	  put	  in	  place;	  and	  of	  technology	  and	  
+infrastructure,	  which	  are	  costly	  and	  slow	  to	  replace.	  Inertia	  is	  also	  at	  the	  level	  of	  individuals	  
+and	  communities,	  and	  is	  due	  to	  technological,	  institutional	  and	  financial	  constraints	  that	  
+prevent	  actors	  from	  responding	  quickly	  to	  the	  flow	  of	  new	  information	  (World	  Bank,	  2015,	  
+Ch.	  9).	  Examples	  include	  lack	  of	  access	  to	  credit	  or	  family	  labor	  (due	  to	  migration	  for	  
+instance),	  which	  may	  make	  some	  desired	  adaptations	  strategies	  too	  costly	  to	  implement.	  
+However,	  there	  is	  another	  type	  of	  inertia,	  which	  has	  received	  less	  attention	  in	  the	  CIS	  
+domain,	  which	  derives	  from	  psychological	  factors	  creating	  hurdles	  that	  inhibit	  behavioral	  
+change.	  Evidence	  from	  studies	  in	  many	  developing	  countries	  show	  that	  when	  people	  are	  
+poor	  and	  have	  been	  afflicted	  by	  many	  episodes	  of	  hardship	  and	  failures,	  they	  may	  feel	  
+overly	  pessimistic	  about	  their	  future	  options.	  In	  turn,	  this	  leads	  them	  to	  underestimate	  their	  
+options	  to	  save	  and	  invest,	  and	  not	  see	  the	  point	  of	  it	  –	  in	  the	  language	  of	  economics,	  they	  
+tend	  to	  heavily	  discount	  potential	  distant	  benefits	  and	  instead	  give	  more	  weight	  to	  small	  but	  
+immediate	  rewards	  (Banerjee	  and	  Duflo,	  2011,	  Ch.	  6).	  There	  is	  no	  reason	  to	  suppose	  these	  
+concerns	  do	  not	  affect	  other	  types	  of	  behavior,	  such	  as	  those	  in	  the	  realm	  of	  adaptation	  
+strategies.	  If	  so,	  the	  obstacles	  to	  adoption	  may	  appear	  at	  times	  more	  psychological	  than	  
+technological	  or	  even	  financial.	  This	  does	  not	  make	  these	  instances	  easier	  to	  tackle,	  
+however,	  since	  these	  constraints	  are	  no	  less	  real	  to	  people,	  whose	  life	  circumstances	  have	  
+imbued	  them	  with	  a	  sense	  of	  hopelessness	  about	  their	  future	  options,	  and	  led	  them	  to	  
+believe	  that	  adopting	  a	  shortPterm	  horizon	  may	  serve	  them	  better	  overall.	  
+Overlooking	  mental	  frames	  and	  emotions	  as	  minor	  issues	  may	  be	  very	  consequential.	  It	  is	  
+tempting	  to	  believe	  that	  psychological	  factors	  are	  due	  to	  stickiness,	  which	  time	  can	  help	  	  	  	  to	  
+16	  
+
+	  
+
+dissipate,	  and	  that	  people	  are	  just	  used	  to	  their	  ways	  of	  life	  and	  acting.	  It	  is	  really	  more	  than	  
+that.	  People	  who	  are	  poor	  and	  have	  experienced	  institutions	  that	  have	  failed	  them	  in	  the	  
+past	  may	  need	  a	  good	  dose	  of	  extra	  incentives	  to	  convince	  them	  to	  implement	  actions	  that,	  
+though	  beneficial	  in	  the	  longPterm,	  do	  not	  appear	  feasible	  nor	  attractive	  in	  the	  short	  term.	  
+While	  scant	  empirical	  evidence	  exists	  on	  how	  psychological	  factors	  may	  affect	  climate	  
+adaptation	  initiatives,	  they	  are	  appear	  to	  resonate	  with	  what	  Tschaket	  (2007)	  noted	  in	  her	  
+study	  in	  central	  Senegal,	  which	  she	  identified	  as	  “generic	  vulnerability”,	  manifested	  in	  
+“…weakened	  disposition	  of	  its	  people,	  stressed	  by	  sickness,	  scant	  incomePgenerating	  
+sources,	  and	  the	  utterly	  poor	  conditions	  of	  their	  village	  infrastructure”	  (p.	  393).	  The	  author	  
+notes	  that:	  “Compared	  to	  this	  pervasive	  manifestation	  of	  social	  vulnerability,	  climate	  
+extremes	  appear	  to	  be	  a	  minor	  hazard”	  (p.393),	  which	  can	  be	  interpreted	  as	  evidence	  of	  
+how	  mental	  attitudes	  due	  to	  overall	  difficult	  life	  conditions	  may	  reduce	  people’s	  
+appreciation	  of	  climate	  risks,	  diminishing	  the	  incentive	  to	  act.	  In	  these	  circumstances,	  it	  
+appears	  obvious	  that	  only	  focusing	  on	  refining	  the	  climate	  information	  messaging	  is	  
+destined	  to	  have	  limited	  impact.	  Not	  surprisingly,	  the	  author	  goes	  on	  to	  suggest	  that	  
+livelihood	  enhancement	  initiatives	  that	  directly	  reflect	  people’s	  views	  and	  tackle	  identified	  
+conditions	  of	  their	  risks	  and	  responses	  may	  be	  both	  more	  urgent	  and	  more	  effective	  than	  
+narrow	  solutions	  targeted	  at	  adapting	  to	  specific	  climate	  events.	  
+In	  the	  Kaffrine	  context	  studied	  in	  this	  paper,	  individuals	  who	  receive	  the	  information	  from	  
+the	  ANACIM	  services	  process	  it	  together	  with	  other	  sources	  of	  information,	  and	  filter	  it	  in	  
+ways	  that	  make	  sense	  to	  them,	  in	  their	  current	  mindset	  and	  mental	  frame.	  This	  can	  explain	  
+the	  apparent	  puzzling	  evidence	  that,	  while	  respondents	  state	  in	  qualitative	  interviews	  that	  
+the	  climate	  messages	  are	  relevant	  and	  interesting,	  at	  the	  same	  time	  they	  rely	  for	  all	  practical	  
+purposes	  on	  other	  information	  sources.	  Traditional	  sources	  of	  knowledge	  and	  neighbors	  are	  
+characterized	  by	  a	  language,	  format	  and	  content	  that	  better	  fit	  people’s	  values	  and	  shared	  
+social	  norms.	  
+The	  Kaffrine	  case	  study	  suggests	  that	  information	  that	  is	  at	  odd	  with	  known	  mental	  models,	  
+and	  that	  cannot	  be	  shared	  within	  social	  networks,	  is	  more	  difficult	  to	  act	  upon,	  because	  
+there	  are	  no	  examples	  in	  the	  community,	  nor	  ways	  to	  derive	  lessons	  easily.	  There	  are	  no	  
+major	  differences	  by	  gender	  in	  this	  respect.	  Both	  men	  and	  women	  seem	  to	  relate	  better	  to	  
+locally	  grounded	  and	  socially	  shared	  channels	  than	  to	  radio	  and	  extension	  services.	  
+Conveying	  climate	  information	  to	  farmers	  and	  livestock	  holders	  and	  ensuring	  that	  climate	  
+information	  is	  translated	  into	  sustainable	  practices	  is	  fraught	  by	  challenges	  operating	  at	  
+different	  scales	  and	  impinging	  several	  development	  domains	  at	  once	  (livelihood,	  health,	  
+social	  relationship,	  etc).	  This	  paper	  reviews	  preliminary	  evidence	  from	  Kaffrine	  region	  of	  
+Senegal,	  which	  has	  witnessed	  a	  substantial	  effort	  to	  provide	  quality	  coverage	  of	  CIS	  to	  the	  
+whole	  region.	  The	  data	  analysis	  indicates	  that	  while	  most	  respondents	  receive	  radio	  
+messages	  about	  weather	  and	  climate	  predictions,	  only	  a	  tiny	  minority	  relies	  on	  those	  
+messages	  in	  their	  decisions	  to	  adopt	  climate	  smart	  practices.	  
+By	  incorporating	  insights	  from	  behavioral	  and	  experimental	  studies,	  the	  paper	  proposes	  a	  
+framework	  that	  emphasizes	  the	  role	  of	  mental	  frames	  and	  emotions	  in	  accounting	  for	  how	  
+people	  process	  the	  information	  and	  act	  upon	  that	  information	  to	  make	  choices.	  Our	  paper	  
+identifies	  two	  ways	  in	  which	  psychological	  factors	  may	  constrain	  the	  adoption	  of	  CSA	  
+practices.	  
+17	  
+
+4. Concluding	  reflections	  and	  policy	  implications	  
+
+	  	  
+
+	  
+
+attention	  to	  the	  design	  of	  CIS,	  to	  make	  them	  more	  relevant	  to	  people’s	  mental	  frames,	  
+
+First,	  it	  is	  possible	  that	  information	  delivered	  is	  not	  appropriately	  framed	  (people	  respond	  
+differently	  according	  to	  how	  information	  is	  presented	  and	  whether	  it	  appears	  to	  conflict	  
+with	  existing	  values	  and	  social	  norms),	  or	  that	  it	  is	  too	  detailed	  and	  complex,	  or	  
+alternatively	  too	  vague	  for	  people	  to	  consider	  it	  seriously.	  If	  this	  is	  the	  case,	  delivering	  more	  
+of	  the	  same	  information	  may	  not	  bring	  about	  the	  desired	  change.	  Taking	  into	  account	  
+people’s	  cognitive	  processes	  and	  thus	  understanding	  how	  people	  in	  a	  given	  context	  are	  
+likely	  to	  receive	  and	  process	  that	  information	  is	  absolutely	  essential	  for	  CIS	  to	  be	  effective.	  
+This	  set	  of	  problems	  thus	  leads	  to	  our	  first	  policy	  recommendation,	  which	  is	  to	   pay	  
+and	   more	   in	   line	   with	   their	   ideology	   and	   social	   norms.	  For	  instance,	  if	  the	  radio	  is	  to	  
+remain	  the	  main	  channel	  for	  climate	  communication	  in	  Senegal,	  it	  is	  imperative	  to	  increase	  
+the	  appeal	  and	  demand	  for	  programming	  that	  innovatively	  and	  effectively	  conveys	  the	  
+information.	  A	  possibility	  would	  be	  to	  adopt	  a	  format	  of	  a	  radio	  drama	  program,	  which	  
+portrays	  scenes	  from	  rural	  life	  and	  where	  recognized	  actors	  feature	  farmers	  and	  livestock	  
+holders	  interacting	  and	  discussing	  of	  their	  own	  problems	  as	  in	  real	  life.	  
+Second,	  there	  may	  be	  complicating	  factors	  at	  the	  level	  of	  decisionPmaking	  and	  action	  
+implementation.	  Even	  when	  people	  have	  a	  good	  understanding	  of	  risks	  involved	  in	  a	  certain	  
+climate	  scenarios	  and	  a	  theoretical	  understanding	  of	  desirable	  actions,	  they	  may	  not	  be	  able	  
+to	  put	  them	  in	  place.	  This	  is	  due	  not	  only	  to	  technical	  difficulties	  and	  financial	  costs	  and	  
+risks,	  but	  also	  to	  the	  possible	  psychological	  consequences	  (including	  fear	  of	  social	  
+disapproval).	  Our	  second	  recommendation	  is	  thus	  to	   make	   it	   easy	   for	   individuals	   to	  
+existing	   social	   norms.	  This	  might	  be	  accomplished	  through	  a	  social	  marketing	  campaign	  
+that	  focused	  on	  normalizing	  language	  around	  climate	  change,	  adaptation,	  and	  resilience.	  
+Priming	  the	  population	  so	  that	  they	  are	  ready	  to	  receive	  the	  messages	  is	  as	  important	  as	  
+making	  sure	  the	  messages	  are	  available.	  
+The	  findings	  that	  individuals	  and	  groups	  do	  not	  always	  make	  rational	  choices,	  which	  has	  
+been	  common	  assumption	  in	  much	  of	  economics	  and	  mainstream	  development	  thinking,	  
+clearly	  complicates	  the	  relationship	  between	  information	  source	  and	  behavioral	  change	  and	  
+leads	  to	  the	  more	  complex	  diagram	  in	  Figure	  3.	  
+While	  much	  attention	  has	  focused	  on	  improving	  the	  quantity	  and	  quality	  of	  CIS,	  one	  should	  
+equally	  invest	  resources	  and	  efforts	  in	  tackling	  the	  complex	  domain	  of	  individual	  and	  
+collective	  perception	  of	  information,	  and	  consequent	  behavioral	  change.	  Interventions	  
+could	  build	  on	  the	  experiences	  of	  social	  marketing	  in	  the	  field	  of	  public	  health	  (Kotler	  and	  
+Zaltman,	  1971;	  Serrat,	  2010),	  or	  use	  the	  idea	  of	  institutional	  nudges	  proposed	  by	  Banerjee	  
+and	  Duflo	  (2010)	  in	  the	  realm	  of	  broader	  development	  interventions.	  Ultimately,	  behavioral	  
+change	  needs	  to	  be	  primed	  and	  accommodated	  by	  innovative	  features	  that	  encourage	  users	  
+to	  adopt	  certain	  practices,	  normalize	  the	  message	  around	  them	  and	  make	  them	  more	  
+appealing.	  
+
+implement	   desired	   set	   of	   actions	   not	   only	   by	   reducing	   the	   technical	   costs	   of	  
+implementation	   and	   lowering	   the	   financial	   risks,	   but	   also	   by	   enhancing	   the	  
+psychological	  and	  social	  acceptability	  of	  certain	  practices	  and	  by	  aligning	  them	  with	  
+
+	  
+
+18	  
+
+REFERENCES	  
+
+	  Banerjee,	  Abhijit	  and	  Sendhil	  Mullainathan.	  2010.	  “The	  Shape	  of	  Temptation:	  Implications	  
+for	  the	  Economic	  Lives	  of	  the	  Poor.”	  NBER	  Working	  Papers	  15973.	  
+	  Banerjee,	  A.	  and	  Duflo,	  E.,	  2011.	  Poor	  economics:	  A	  radical	  rethinking	  of	  the	  way	  to	  fight	  
+	  Cardenas,	  JC	  and	  J	  Carpenter.	  2008.	  “Behavioural	  Development	  Economics:	  Lessons	  from	  
+global	  poverty.	  PublicAffairs.	  
+field	  labs	  in	  the	  Developing	  World”	  Journal	  of	  Development	  Studies,	  44	  (3):	  311P338.	  
+CCAFS.	  2015.	  The	  impact	  of	  Climate	  Information	  Services	  in	  Senegal.	  CCAFS	  Outcome	  Study	  
+No.	  3.	  Copenhagen:	  CGIAR	  Research	  Program	  on	  Climate	  Change,	  Agriculture	  and	  
+Food	  Security	  (CCAFS).	  
+Deressa,	  T.T.,	  R.M.	  Hassan,	  C.	  Ringler,	  T.	  Alemu,	  and	  M.	  Yesuf,	  2009.	  “Determinants	  of	  
+farmers’	  choice	  of	  adaptation	  methods	  to	  climate	  change	  in	  the	  Nile	  Basin	  of	  
+Ethiopia.”	  Global	  Environmental	  Change,	  19(2),	  248P	  255.	  
+	  Deressa,	  T.T.,	  R.M.	  Hassan,	  and	  C.	  Ringler,	  2011.	  “Perception	  of	  and	  adaptation	  to	  climate	  
+change	  by	  farmers	  in	  the	  Nile	  basin	  of	  Ethiopia.”	  Journal	  of	  Agricultural	  Science,	  149,	  
+23P31.	  
+	  Devereux,	  T.	  and	  McKune,	  S.	  2014.	  “Gender,	  power	  and	  climate	  information	  in	  Nyando,	  
+Kenya”.	  Climate	  Change,	  Agriculture,	  and	  Food	  Security.	  CGIAR.	  1	  Aug	  2014.	  Web.	  
+Dow,	  K.,	  F.	  Berkhout,	  B.L.	  Preston,	  R.J.T.	  Klein,	  G.	  Midgley,	  and	  R.	  Shaw,	  2013b.	  “Limits	  to	  
+adaptation”	  Nature	  Climate	  Change,	  3,	  305P307.	  
+	  Diffenbaugh,	  N.S.	  and	  F.	  Giorgi,	  2012.	  “Climate	  change	  hotspots	  in	  the	  CMIP5	  global	  climate	  
+model	  ensemble”	  Climatic	  Change,	  114(3P4),	  813P822.	  
+	  Füssell,	  H.M.	  and	  Klein,	  R.	  J.	  T.	  2002.	  “Vulnerability	  and	  Adaptation	  Assessments	  to	  Climate	  
+Change:	  An	  Evolution	  of	  Conceptual	  Thinking”,	  in	  UNDP	  Expert	  Group	  Meeting	  
+“Integrating	  Disaster	  Reduction	  and	  Adaptation	  to	  Climate	  Change”,	  Havana,	  Cuba.	  
+	  Füssell,	  H.M.	  and	  R.J.T.	  Klein	  (2006)	  “Climate	  change	  vulnerability	  assessment:	  An	  evolution	  
+of	  conceptual	  thinking”	  Climate	  Change,	  75:	  301P329.	  
+Hamilton,	  L.C.,	  2011.	  “Education,	  politics	  and	  opinions	  about	  climate	  change	  evidence	  for	  
+interaction	  effects.”	  Climatic	  Change,	  104(2),	  231P242.	  
+	  HartzellPNichols,	  L.,	  2011.	  “Responsibility	  for	  meeting	  the	  costs	  of	  adaptation.”	  Wiley	  
+Interdisciplinary	  	  Reviews:	  	  Climate	  	  Change,	  	  2(5),	  687P700.	  
+	  Hassan,	  R.	  and	  C.	  Nhemachena,	  2008.	  “Determinants	  of	  African	  farmers’	  strategies	  for	  
+adapting	  to	  climate	  change:	  multinomial	  choice	  analysis.”	  African	  Journal	  of	  
+Agricultural	  and	  Resource	  Economics,	  2(1),	  83P104.	  
+	  IPCC	  (Intergovernmental	  Panel	  on	  Climate	  Change).	  2014.	  Climate	  change	  2014:	  Impacts,	  
+adaptation,	  	  and	  	  vulnerability.	  	  Contribution	  	  of	  	  Working	  	  Group	  	  II	  	  to	  	  the	  	  Fifth	  
+	  
+
+19	  
+
+Assessment	  Report	  of	  the	  Intergovernmental	  Panel	  on	  Climate	  Change.	  Cambridge,	  
+UK:	  Cambridge	  University	  Press.	  
+Jay.	  A.	  2014.	  How	  can	  we	  turn	  climate	  information	  into	  action?	  Copenhagen:	  CCAFS.	  
+Available	  at:	  http://bit.ly/1O340u9	  
+Jones,	  R.N.	  and	  Preston,	  B.L.,	  2011.	  Adaptation	  and	  risk	  management.	  Wiley	  Interdisciplinary	  
+Reviews:	  Climate	  Change,	  2(2),	  pp.296P308.	  
+	  Kotler,	  P.	  and	  Zaltman,	  P.	  	  1971.	  “Social	  Marketing:	  An	  Approach	  to	  Planned	  Social	  	  	  Change”	  
+Journal	  of	  Marketing.	  Vol.	  35,	  No.	  3	  pp.	  	  	  3P12.	  
+Kristjanson	  P,	  Garlick	  C,	  Ochieng	  S,	  Förch	  W,	  Thornton	  PK.	  2011.	  Global	  Summary	  of	  
+Baseline	  Household	  Survey	  Results.	  CGIAR	  Research	  Program	  on	  Climate	  Change,	  
+Agriculture	  and	  Food	  Security	  (CCAFS).	  Copenhagen:	  Denmark.	  
+Leiserowitz,	  Anthony	  A.	  2004.	  “Day	  after	  Tomorrow:	  Study	  of	  Climate	  Change	  Risk	  
+Perception.”	  Environment:	  Science	  and	  Policy	  for	  Sustainable	  Development	  46	  (9):	  22–
+39.	  
+	  Leiserowitz,	  Anthony	  A.	  2006.	  “Climate	  Change	  Risk	  Perception	  and	  Policy	  Preferences:	  The	  
+Role	  of	  Affect,	  Imagery,	  and	  Values.”	  Climatic	  Change	  77:	  45–72.	  
+	  Lo	  HM	  and	  Dieng	  M.	  2015.	  Impact	  assessment	  of	  communicating	  seasonal	  climate	  forecasts	  
+in	  Kaffrine,	  Diourbel,	  Louga,	  Thies	  and	  Fatick	  (niakhar)	  regions	  in	  Senegal.	  CCAFS.	  
+McCright,	  A.	  M.	  and	  R.E.	  Dunlap,	  2011.	  “The	  politicization	  of	  climate	  change	  and	  polarization	  
+in	  the	  American	  public's	  views	  of	  global	  warming,	  2001–2010.”	  The	  Sociological	  
+Quarterly,	  	  52(2),	  155P194.	  
+	  McKune,	  S.	  and	  McOmber,	  C.	  2013.	  “Is	  gender	  being	  considered	  within	  climate	  services?”	  
+Climate	   Change,	   Agriculture,	   and	   Food	   Security.	  CGIAR.	  24th	  April	  2013.	  Web.	  	  29	  
+April	  2013.	  
+McKune,	  S.,	  Poulsen,	  L.,	  Devereux,	  T.,	  Russo,	  S.,	  Faas,	  S.,	  McOmber,	  and	  C.	  Ryley,	  T.	  2016.	  
+“Reaching	  the	  end	  goal:	  Do	  interventions	  to	  improve	  climate	  information	  services	  
+lead	  to	  greater	  food	  security?”	  Climate	  Risk	  Management,	  Forthcoming.	  
+McOmber,	  C.,	  Panikowski,	  A.,	  McKune,	  S.,	  Bartels,	  W.,	  Russo,	  S.	  2013.	  Investigating	  Climate	  
+Information	  Services	  through	  a	  Gendered	  Lens.	  CCAFS	  Working	  Paper	  no.	  42.	  CGIAR	  
+Research	  Program	  on	  Climate	  Change,	  Agriculture	  and	  Food	  Security	  (CCAFS).	  
+Copenhagen,	  Denmark.	  
+Moser,	  S.C.	  and	  J.A.	  Ekstrom,	  2010.	  “A	  framework	  to	  diagnose	  barriers	  to	  climate	  change	  
+adaptation.”	  Proceedings	  of	  the	  National	  Academy	  of	  Sciences	  of	  the	  United	  States	  of	  
+America,	  	  107(51),	  22026P22031.	  
+	  Mullainathan,	  S.	  and	  Thaler,	  R.	  2001.	  “Behavioral	  Economics.”	  International	  Encyclopedia	  of	  
+Social	  Sciences.	  Pergamon	  Press	  (1st	  ed.):	  1094P1100.	  
+Ndiaye	  O,	  Moussa	  A,	  Seck	  M,	  Zougmoré	  R	  and	  Hansen	  J.	  2013.	  Communicating	  seasonal	  
+forecasts	  to	  farmers	  in	  Kaffrine,	  Senegal	  for	  better	  agricultural	  management.	  In:	  
+Hunger	  –	  Nutrition	  –	  Climate	  Justice	  2013.	  A	  New	  Dialogue:	  Putting	  People	  at	  the	  
+Heart	  of	  Global	  Development.	  
+20	  
+
+	  
+
+Ndiaye,	  O.,	  Zougmoré,	  R.,	  Hansen,	  J.,	  Diongue,	  A,.	  Seck,	  E.M.	  2012.	  Using	  probabilistic	  
+seasonal	  forecasting	  to	  improve	  farmers’	  decision	  in	  Kaffrine,	  Senegal.	  Risk	  
+ManagementPCurrent	  Issues	  and	  	  	  	  	  Challenges,	  497P504,	  21.	  doi:	  10.5772/2568.	  
+Nhemachena,	  C.	  and	  R.	  Hassan,	  2007.	  “MicroPLevel	  Analysis	  of	  Farmers'	  Adaptation	  to	  
+Climate	  Change	  in	  Southern	  Africa.”	  IFPRI	  Discussion	  Paper	  No.	  00714.	  International	  
+Food	  Policy	  Research	  Institute,	  Washington,	  DC,	  USA.	  
+	  Norgaard,	  Kari	  Marie.	  2009.	  “Cognitive	  and	  Behavioral	  Challenges	  in	  Responding	  to	  Climate	  
+Change.”	  Policy	  Research	  Working	  Paper	  4940,	  World	  Bank,	  Washington,	  DC.	  
+	  O'Brien,	  K.,	  2009:	  Do	  values	  subjectively	  define	  the	  limits	  to	  climate	  change	  adaptation?	  In:	  
+Adapting	  to	  Climate	  Change:	  Thresholds,	  Values,	  Governance.	  [Adger,	  N.W.,	  I.	  
+Lorenzoni,	  and	  K.	  O'Brien	  (eds.)].	  Cambridge	  University	  Press,	  Cambridge,	  UK,	  pp.	  
+164P180.	  
+	  O'Brien,	  K.L.	  and	  J.	  Wolf,	  2010:	  A	  valuesPbased	  approach	  to	  vulnerability	  and	  adaptation	  to	  
+climate	  change.	  Wiley	  Interdisciplinary	  Reviews:	  Climate	  Change,	  1(2),	  232P242.	  
+	  OECD	  (2014).	  An	  Atlas	  of	  the	  SaharaNSahel:	  Geography,	  Economics	  and	  Security,	  West	  African	  
+Studies,	  	  OECD	  	  Publishing,	  Paris.	  
+	  Parry,	  M.L.,	  O.	  F.	  Canziani,	  J.	  P.	  Palutikof,	  P.	  J.	  van	  der	  Linden,	  and	  C.E.Hanson,	  IPCC	  Fourth	  
+Assessment	  Report:	  Climate	  Change	  2007:	  Impacts,	  Adaptation	  and	  Vulnerability.	  
+Contribution	  of	  Working	  Group	  II	  to	  the	  Fourth	  Assessment	  Report	  of	  the	  
+Intergovernmental	  Panel	  on	  Climate	  Change.	  Cambridge,	  U.K.:	  Cambridge	  Unv.,	  
+2007.	  
+Poulsen	  E,	  M.	  Sakho,	  S.	  McKune,	  S.	  Russo	  and	  O.	  Ndiaye.	  2015.	  Exploring	  synergies	  between	  
+health	   and	   climate	   services:	   Assessing	   the	   feasibility	   of	   providing	   climate	  
+information	  to	  women	  farmers	  through	  health	  posts	  in	  Kaffrine,	  Senegal.	  CCAFS	  
+Working	  Paper	  no.	  131.	  Copenhagen,	  Denmark:	  CGIAR	  Research	  Program	  on	  
+Climate	  Change,	  Agriculture	  and	  Food	  Security	  (CCAFS).	  
+Ryley,	  T.	  and	  McKune	  S.	  2014.	  “Climate	  change	  and	  social	  networks	  in	  Senegal's	  peanut	  
+basin”.	  Climate	  Change,	  Agriculture,	  and	  Food	  Security.	  CGIAR.	  2	  Oct	  2014.	  Web.	  
+Serrat,	   Olivier.	   2010.	   Future	   of	   Social	   Marketing.	   Asian	   Development	   Bank.	  
+http://hdl.handle.net/11540/566.	  License:	  CC	  BY	  3.0	  IGO.	  
+	  Swim,	  Janet	  K.;	  Stern,	  Paul	  C.;	  Doherty,	  Thomas	  J.;	  Clayton,	  Susan;	  Reser,	  Joseph	  P.;	  Weber,	  
+Elke	  U.;	  Gifford,	  Robert;	  Howard,	  George	  S.	  2011.	  “Psychology's	  contributions	  to	  
+understanding	  and	  addressing	  global	  climate	  change”.	  American	  Psychologist,	  66(4):	  
+241P250.	  
+	  Tall,	  A.,	  P.	  Kristjanson,	  M.	  Chaudhury,	  S.	  McKune	  and	  R.	  Zougmore,	  2014.	  Who	  gets	  the	  
+Information?	  Gender,	  power	  and	  equity	  considerations	  in	  the	  design	  of	  climate	  
+services	  for	  farmers.	  CCAFS	  Working	  Paper	  No.	  89.	  CGIAR	  Research	  Program	  on	  
+Climate	  Change,	  Agriculture	  and	  Food	  Security	  (CCAFS).	  Copenhagen,	  Denmark.	  
+	  Tschakert,	  P.	  (2007)	  “Views	  from	  the	  vulnerable:	  understanding	  climatic	  and	  other	  
+stressors	  in	  the	  Sahel”	  Global	  Environmental	  Change,	  17	  (3P4):	  381P396.	  
+21	  
+	  
+
+United	  Nations	  Environment	  Program,	  Livelihood	  Security:	  Climate	  Change,	  Migration	  and	  
+World	  Bank	  (2015)	  World	  Development	  Report:	  Mind,	  Society	  and	  Behavior,	  Washington	  DC:	  
+
+Conflict	  in	  the	  Sahel,	  Nairobi,	  Kenya,	  2011.	  
+The	  World	  Bank.	  
+
+	  
+
+22	  
+
+
