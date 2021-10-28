@@ -55,8 +55,33 @@ package object utils {
           // Since we only focus on the Assignment mention which includes two submentions in the same format called
           // ``variable`` and ``value`` we access the two through ``arguments`` attribute of the Mention class.
           m => try {
-            pw.println(s"${m.arguments("variable").head.text}\t${m.arguments("value").head.text}\t${m.arguments("value")
-              .head.norms.filter(_.length > 2).get(0)}\t${s.getSentenceText}\t$filename\t${
+
+            val varText = m.arguments("variable").head.text
+            val value = m.arguments("value").head
+            val valText = value.text
+            val sentText = s.getSentenceText
+            val valNorms = value.norms
+
+            val norm =
+              if(valNorms.isDefined && valNorms.get.size > 2) {
+                valNorms.filter(_.length > 2).get(0)
+              } else {
+                //
+                // not all NEs have meaningful norms set
+                //   For example, DATEs have norms, but CROPs do not
+                // in the latter case, we revert to the lemmas or to the actual text as a backoff
+                //
+                if(value.lemmas.isDefined) {
+                  value.lemmas.get.mkString(" ")
+                } else {
+                  value.text
+                }
+              }
+
+            //println(s"NORMS for ${valText}: [$norm]")
+
+            pw.println(s"$varText\t$valText\t$norm\t$sentText\t$filename
+            \t${
               context(i).mostFreqLoc0Sent}\t${
               context(i).mostFreqLoc1Sent}\t${
               context(i).mostFreqLoc}\t${
@@ -65,12 +90,15 @@ package object utils {
               context(i).mostFreqDate}\t${
               context(i).mostFreqCrop0Sent}\t${
               context(i).mostFreqCrop1Sent}\t${
-              context(i).mostFreqCrop}")
+              context(i).mostFreqCrop}")            
           } catch {
-            case e: NoSuchElementException => println(s"No normalized value found for ${m.arguments("value").head.text} in sentence ${s.getSentenceText}!")
-              e.printStackTrace(System.out)
-            case e: RuntimeException => println(s"Error occurs for sentence: ${s.getSentenceText}")
-              e.printStackTrace(System.out)
+            case e: NoSuchElementException =>
+              println(s"No normalized value found for ${m.arguments("value").head.text} in sentence ${s.getSentenceText}!")
+              e.printStackTrace()
+            case e: RuntimeException =>
+              println(s"Error occurs for sentence: ${s.getSentenceText}")
+              e.printStackTrace()
+
           }
       }
     }
