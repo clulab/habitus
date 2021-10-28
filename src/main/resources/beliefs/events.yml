@@ -7,7 +7,7 @@
   label: ${label}
   graph: "hybrid"
   pattern: |
-    trigger = [lemma=/believe|think/ & tag=/^V/]
+    trigger = [lemma=/believe|think|accept|consider|conclude|doubt|reject|suppose|suggest|submit|theorize|offer/ & tag=/^V/]
     believer:Entity = /nsubj|A0/
     belief:Entity = /ccomp|A1|dobj/
 
