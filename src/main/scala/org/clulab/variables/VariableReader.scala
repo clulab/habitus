@@ -1,5 +1,5 @@
 package org.clulab.variables
-
+import scala.util.control.NonFatal
 import org.clulab.habitus.Main.mentions
 import org.clulab.odin.{EventMention, Mention}
 import org.clulab.processors.Document
@@ -21,23 +21,27 @@ object VariableReader {
     val vp = VariableProcessor()
 
     var seqMention = Seq[String]()
-    var outputFile = outputDir+"/mentions.tsv"
+    var outputFile = outputDir + "/mentions.tsv"
 
-
-    val pw = new PrintWriter(new FileWriter(new File(outputFile)))
-    for(file <- FileUtils.findFiles(inputDir, ".txt")) {
-      val text = FileUtils.getTextFromFile(file)
-      val filename = file.toString.split("/").last
-      println(s"going to parse input file: $filename")
-      val (doc, mentions,allEventMentions, entityHistogram)  = vp.parse(text)
-      val context=compressContext(doc,allEventMentions,entityHistogram)
-      println(s"Writing mentions from doc ${filename} to $outputFile")
-      outputMentionsToTSV(mentions, doc, context, filename, pw)
-      // to not overpopulate the memory. Flush findings once for each document.
-      pw.flush()
+    try {
+      val pw = new PrintWriter(new FileWriter(new File(outputFile)))
+      for (file <- FileUtils.findFiles(inputDir, ".txt")) {
+        val text = FileUtils.getTextFromFile(file)
+        val filename = file.toString.split("/").last
+        println(s"going to parse input file: $filename")
+        val (doc, mentions, allEventMentions, entityHistogram) = vp.parse(text)
+        val context = compressContext(doc, allEventMentions, entityHistogram)
+        println(s"Writing mentions from doc ${filename} to $outputFile")
+        outputMentionsToTSV(mentions, doc, context, filename, pw)
+        // to not overpopulate the memory. Flush findings once for each document.
+        pw.flush()
+      }
     }
-
-
+    catch {
+      case e: Exception =>
+        println(s"Exception occurred. Stack trace below:")
+        e.printStackTrace()
+    }
     pw.close()
   }
 
