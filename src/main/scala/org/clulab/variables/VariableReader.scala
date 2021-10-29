@@ -35,6 +35,7 @@ object VariableReader {
         outputMentionsToTSV(mentions, doc, context, filename, pw)
         // to not overpopulate the memory. Flush findings once for each document.
         pw.flush()
+        pw.close()
       }
     }
     catch {
@@ -42,7 +43,7 @@ object VariableReader {
         println(s"Exception occurred. Stack trace below:")
         e.printStackTrace()
     }
-    pw.close()
+
   }
 
 
