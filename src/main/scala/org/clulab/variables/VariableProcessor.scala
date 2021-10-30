@@ -24,7 +24,7 @@ class VariableProcessor(val processor: CluProcessor, val extractor: ExtractorEng
 
   def parse(text: String): (Document, Seq[Mention],Seq[EventMention],Seq[EntityDistFreq]) = {
 
-    
+
       // pre-processing
       val doc = processor.annotate(text, keepText = false)
 
