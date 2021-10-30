@@ -24,9 +24,15 @@ class VariableProcessor(val processor: CluProcessor, val extractor: ExtractorEng
 
   def parse(text: String): (Document, Seq[Mention],Seq[EventMention],Seq[EntityDistFreq]) = {
 
-    // pre-processing
-    val doc = processor.annotate(text, keepText = false)
-
+    try {
+      // pre-processing
+      val doc = processor.annotate(text, keepText = false)
+    }
+    catch {
+      case e: Exception =>
+        println(s"Exception occurred. Stack trace below:")
+        e.printStackTrace()
+    }
     // extract mentions from annotated document
     val mentions = extractor.extractFrom(doc).sortBy(m => (m.sentence, m.getClass.getSimpleName))
 

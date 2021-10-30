@@ -23,7 +23,7 @@ object VariableReader {
     var seqMention = Seq[String]()
     var outputFile = outputDir + "/mentions.tsv"
 
-    try {
+
       val pw = new PrintWriter(new FileWriter(new File(outputFile)))
       for (file <- FileUtils.findFiles(inputDir, ".txt")) {
         val text = FileUtils.getTextFromFile(file)
@@ -36,13 +36,9 @@ object VariableReader {
         // to not overpopulate the memory. Flush findings once for each document.
         pw.flush()
         pw.close()
-      }
+
     }
-    catch {
-      case e: Exception =>
-        println(s"Exception occurred. Stack trace below:")
-        e.printStackTrace()
-    }
+
 
   }
 
