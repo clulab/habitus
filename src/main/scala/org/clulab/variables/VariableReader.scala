@@ -1,11 +1,15 @@
 package org.clulab.variables
-import scala.util.control.NonFatal
-import org.clulab.habitus.Main.mentions
-import org.clulab.odin.{EventMention, Mention}
-import org.clulab.processors.Document
-import org.clulab.utils.{FileUtils, StringUtils, contextDetails, outputMentionsToTSV}
 
-import java.io._
+import org.clulab.odin.EventMention
+import org.clulab.processors.Document
+import org.clulab.utils.Closer.AutoCloser
+import org.clulab.utils.FileUtils
+import org.clulab.utils.StringUtils
+import org.clulab.utils.ThreadUtils
+import org.clulab.utils.ContextDetails
+import org.clulab.utils.outputMentionsToTSV
+
+import java.io.File
 import scala.collection.mutable.ArrayBuffer
 
 object VariableReader {
@@ -15,60 +19,70 @@ object VariableReader {
 
     val inputDir = props.getProperty("in")
     assert(inputDir != null)
+
     val outputDir = props.getProperty("out")
     assert(outputDir != null)
-    val output = new File(outputDir).mkdir()
+    new File(outputDir).mkdir()
+    val tsvOutputFile = outputDir + "/mentions.tsv"
+    val jsonOutputFile = outputDir + "/mentions.json"
+
+    val threads = Option(props.getProperty("threads")).map(_.toInt).getOrElse(1)
+
     val vp = VariableProcessor()
+    val files = FileUtils.findFiles(inputDir, ".txt")
+    val parFiles = if (threads > 1) ThreadUtils.parallelize(files, threads) else files
 
-    var seqMention = Seq[String]()
-    var outputFile = outputDir + "/mentions.tsv"
+    new JsonPrinter(jsonOutputFile).autoClose { jsonPrinter =>
+      FileUtils.printWriterFromFile(tsvOutputFile).autoClose { tsvPrintWriter =>
+        for (file <- parFiles) {
+          try {
+            val text = FileUtils.getTextFromFile(file)
+            val filename = StringUtils.afterLast(file.getName, '/')
+            println(s"going to parse input file: $filename")
+            val (doc, mentions, allEventMentions, entityHistogram) = vp.parse(text)
+            val context = compressContext(doc, allEventMentions, entityHistogram)
 
+            synchronized {
+              println(s"Writing mentions from doc ${filename} to $tsvOutputFile")
+              outputMentionsToTSV(mentions, doc, context, filename, tsvPrintWriter);
+              tsvPrintWriter.flush()
 
-    val pw = new PrintWriter(new FileWriter(new File(outputFile)))
-    for (file <- FileUtils.findFiles(inputDir, ".txt")) {
-      try {
-        val text = FileUtils.getTextFromFile(file)
-        val filename = file.toString.split("/").last
-        println(s"going to parse input file: $filename")
-        val (doc, mentions, allEventMentions, entityHistogram) = vp.parse(text)
-        val context = compressContext(doc, allEventMentions, entityHistogram)
-        println(s"Writing mentions from doc ${filename} to $outputFile")
-        outputMentionsToTSV(mentions, doc, context, filename, pw)
-        // to not overpopulate the memory. Flush findings once for each document.
-        pw.flush()
-      }
-      catch {
-        case e: Exception => e.printStackTrace()
+              jsonPrinter.outputMentions(mentions, doc, context, filename)
+            }
+          }
+          catch {
+            case e: Exception => e.printStackTrace()
+          }
+        }
       }
     }
-    pw.close()
   }
 
 
-    def compressContext(doc:Document, allEventMentions:Seq[EventMention], entityHistogram:Seq[EntityDistFreq]) = {
+  def compressContext(doc:Document, allEventMentions:Seq[EventMention], entityHistogram:Seq[EntityDistFreq]) = {
 
-      //sentidContext is a data structure created just to carry contextdetails to the code which writes output to disk
-      //note: value=Seq[contextDetails] because there can be more than one mentions in same sentence
-      val sentidContext = scala.collection.mutable.Map[Int, ArrayBuffer[contextDetails]]()
+    //sentidContext is a data structure created just to carry contextdetails to the code which writes output to disk
+    //note: value=Seq[contextDetails] because there can be more than one mentions in same sentence
+    val sentidContext = scala.collection.mutable.Map[Int, ArrayBuffer[ContextDetails]]()
 
-      // for each of the event mentions, find most frequent entityType within the distance of howManySentAway
-      //  e.g.,(LOC,1) means find which Location occurs most frequently within 1 sentence of this event
-      val mostFreqLocation0Sent = extractContext(doc, allEventMentions, 0, "LOC", entityHistogram)
-      val mostFreqLocation1Sent = extractContext(doc, allEventMentions, 1, "LOC", entityHistogram)
-      val mostFreqLocationOverall = extractContext(doc, allEventMentions, Int.MaxValue, "LOC", entityHistogram)
-      val mostFreqDate0Sent = extractContext(doc, allEventMentions, 0, "DATE", entityHistogram)
-      val mostFreqDate1Sent = extractContext(doc, allEventMentions, 1, "DATE", entityHistogram)
-      val mostFreqDateOverall = extractContext(doc, allEventMentions, Int.MaxValue, "DATE", entityHistogram)
-      val mostFreqCrop0Sent = extractContext(doc, allEventMentions, 0, "CROP", entityHistogram)
-      val mostFreqCrop1Sent = extractContext(doc, allEventMentions, 1, "CROP", entityHistogram)
-      val mostFreqCropOverall = extractContext(doc, allEventMentions, Int.MaxValue, "CROP", entityHistogram)
+    // for each of the event mentions, find most frequent entityType within the distance of howManySentAway
+    //  e.g.,(LOC,1) means find which Location occurs most frequently within 1 sentence of this event
+    val mostFreqLocation0Sent = extractContext(doc, allEventMentions, 0, "LOC", entityHistogram)
+    val mostFreqLocation1Sent = extractContext(doc, allEventMentions, 1, "LOC", entityHistogram)
+    val mostFreqLocationOverall = extractContext(doc, allEventMentions, Int.MaxValue, "LOC", entityHistogram)
+    val mostFreqDate0Sent = extractContext(doc, allEventMentions, 0, "DATE", entityHistogram)
+    val mostFreqDate1Sent = extractContext(doc, allEventMentions, 1, "DATE", entityHistogram)
+    val mostFreqDateOverall = extractContext(doc, allEventMentions, Int.MaxValue, "DATE", entityHistogram)
+    val mostFreqCrop0Sent = extractContext(doc, allEventMentions, 0, "CROP", entityHistogram)
+    val mostFreqCrop1Sent = extractContext(doc, allEventMentions, 1, "CROP", entityHistogram)
+    val mostFreqCropOverall = extractContext(doc, allEventMentions, Int.MaxValue, "CROP", entityHistogram)
 
-      //for each event mention, get the sentence id, and map it to a case class called contextDetails, which will have all of mostFreq* information
-      createSentidContext(sentidContext, mostFreqLocation0Sent, mostFreqLocation1Sent, mostFreqLocationOverall,
-        mostFreqDate0Sent, mostFreqDate1Sent, mostFreqDateOverall, mostFreqCrop0Sent, mostFreqCrop1Sent, mostFreqCropOverall)
+    //for each event mention, get the sentence id, and map it to a case class called contextDetails, which will have all of mostFreq* information
+    createSentidContext(sentidContext, mostFreqLocation0Sent, mostFreqLocation1Sent, mostFreqLocationOverall,
+      mostFreqDate0Sent, mostFreqDate1Sent, mostFreqDateOverall, mostFreqCrop0Sent, mostFreqCrop1Sent, mostFreqCropOverall)
 
-      sentidContext
-    }
+    sentidContext
+  }
 
   def findMostFreqContextEntitiesForAllEvents(mentionContextMap: scala.collection.mutable.Map[EventMention, Seq[EntityDistFreq]], howManySentAway:Int, entityType:String):Seq[MostFreqEntity] = {
     mentionContextMap.keys.toSeq.map(key=>findMostFreqContextEntitiesForOneEvent(key,mentionContextMap(key), entityType,howManySentAway))
@@ -162,7 +176,7 @@ object VariableReader {
     mentionsContexts
   }
 
-  def checkSentIdContextDetails(sentidContext:scala.collection.mutable.Map[Int,ArrayBuffer[contextDetails]], key:Int, value: contextDetails) = {
+  def checkSentIdContextDetails(sentidContext:scala.collection.mutable.Map[Int,ArrayBuffer[ContextDetails]], key:Int, value: ContextDetails) = {
     sentidContext.get(key) match {
       case Some(i) =>
         println(s"Found that multiple event mentions occur in the same sentence with sentence id {key}. " +
@@ -178,7 +192,7 @@ object VariableReader {
   case class MostFreqEntity(sentId: Int, mention: String, mostFreqEntity: Option[String])
 
 
-  def createSentidContext(sentidContext:scala.collection.mutable.Map[Int,ArrayBuffer[contextDetails]],
+  def createSentidContext(sentidContext:scala.collection.mutable.Map[Int,ArrayBuffer[ContextDetails]],
                           mostFreqLocation0Sent:Seq[MostFreqEntity],
                           mostFreqLocation1Sent:Seq[MostFreqEntity],
                           mostFreqLocationOverall:Seq[MostFreqEntity],
@@ -195,7 +209,7 @@ object VariableReader {
     //note: zipping through only the list of one mostFreq* since all of them should have same lenghts.
     for ((mostFreq, i) <- (mostFreqLocation0Sent).zipWithIndex) {
       checkSentIdContextDetails(sentidContext,mostFreq.sentId,
-        contextDetails(mostFreq.mention,
+        ContextDetails(mostFreq.mention,
           checkIfEmpty(mostFreq.mostFreqEntity),
           checkIfEmpty(mostFreqLocation1Sent(i).mostFreqEntity),
           checkIfEmpty(mostFreqLocationOverall(i).mostFreqEntity),
