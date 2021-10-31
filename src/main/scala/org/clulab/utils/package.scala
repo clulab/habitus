@@ -34,15 +34,15 @@ package object utils {
     }
   }
   //todo:context details class should store all histograms
-  case class contextDetails( mention: String,mostFreqLoc0Sent: String,mostFreqLoc1Sent: String, mostFreqLoc: String,
-                             mostFreqDate0Sent: String,mostFreqDate1Sent: String, mostFreqDate: String,
-                             mostFreqCrop0Sent:String,
-                             mostFreqCrop1Sent:String,
-                             mostFreqCrop:String)
+  case class ContextDetails(mention: String, mostFreqLoc0Sent: String, mostFreqLoc1Sent: String, mostFreqLoc: String,
+                            mostFreqDate0Sent: String, mostFreqDate1Sent: String, mostFreqDate: String,
+                            mostFreqCrop0Sent:String,
+                            mostFreqCrop1Sent:String,
+                            mostFreqCrop:String)
 
   //some sentences might have multiple event mentions in it, and
-  def getAllContextForGivenSentId(context:scala.collection.mutable.Map[Int,ArrayBuffer[contextDetails]],
-                                  sentId:Int,allContexts:ArrayBuffer[String]) ={
+  def getAllContextForGivenSentId(context:scala.collection.mutable.Map[Int,ArrayBuffer[ContextDetails]],
+                                  sentId:Int, allContexts:ArrayBuffer[String]) ={
 
     for (ctxt <-context(sentId)) {
       allContexts.append(ctxt.mostFreqLoc0Sent)
@@ -59,7 +59,7 @@ package object utils {
   }
 
   // extract needed information and write them to tsv in a desired format. Return nothing here!
-  def outputMentionsToTSV(mentions: Seq[Mention], doc: Document, contexts:scala.collection.mutable.Map[Int,ArrayBuffer[contextDetails]],
+  def outputMentionsToTSV(mentions: Seq[Mention], doc: Document, contexts:scala.collection.mutable.Map[Int,ArrayBuffer[ContextDetails]],
                           filename: String, pw: PrintWriter): Unit = {
     val mentionsBySentence = mentions groupBy (_.sentence) mapValues (_.sortBy(_.start)) withDefaultValue Nil
     for ((s, i) <- doc.sentences.zipWithIndex) {
