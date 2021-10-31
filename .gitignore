@@ -14,3 +14,9 @@ project/plugins/project/
 .history
 .cache
 .lib/
+
+# running/testing
+in/
+out/
+mentions.json
+mentions.tsv
