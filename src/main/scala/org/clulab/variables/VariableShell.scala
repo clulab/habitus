@@ -15,7 +15,7 @@ class VariableShell() extends ReloadableShell {
   println("Creating VariableProcessor...\n")
   private val vp: ReloadableVariableProcessor = new ReloadableVariableProcessor()
 
-  override def reload(): Unit = {
+    override def reload(): Unit = {
     println("Reloading VariableProcessor...")
     try {
       vp.reload()
@@ -29,7 +29,7 @@ class VariableShell() extends ReloadableShell {
 
   override def work(text: String): Unit = {
     // the actual reading
-    val (doc, mentions) = vp.get.parse(text)
+    val (doc, mentions,eventMentions,histogram) = vp.get.parse(text)
 
     // debug display the mentions
     displayMentions(mentions, doc)
