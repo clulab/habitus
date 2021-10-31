@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/clulab/habitus.svg?branch=master)](https://travis-ci.com/clulab/habitus)
+
 # habitus
 
 We're using the latest snapshot of Odinson.
