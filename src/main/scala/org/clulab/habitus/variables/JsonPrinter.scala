@@ -1,10 +1,10 @@
-package org.clulab.variables
+package org.clulab.habitus.variables
 
+import org.clulab.habitus.utils.ContextDetails
 import org.clulab.odin.Mention
 import org.clulab.processors.Document
 import org.clulab.serialization.json.stringify
 import org.clulab.utils.FileUtils
-import org.clulab.utils.ContextDetails
 import org.json4s.JsonDSL._
 
 import java.io.PrintWriter

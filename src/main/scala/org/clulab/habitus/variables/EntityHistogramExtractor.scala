@@ -1,16 +1,21 @@
-package org.clulab.variables
+package org.clulab.habitus.variables
+
+import org.clulab.dynet.Utils
+import org.clulab.habitus.variables.VariableReader.MostFreqEntity
+import org.clulab.odin.EventMention
+import org.clulab.odin.ExtractorEngine
+import org.clulab.odin.Mention
+import org.clulab.processors.Document
+import org.clulab.processors.Processor
+import org.clulab.processors.Sentence
+import org.clulab.processors.clu.CluProcessor
+import org.clulab.sequences.LexiconNER
 
 import scala.collection.mutable
-import org.clulab.dynet.Utils
-import org.clulab.odin.{EventMention, ExtractorEngine, Mention}
-import org.clulab.processors.clu.CluProcessor
-import org.clulab.processors.{Document, Processor}
-import org.clulab.sequences.LexiconNER
 import scala.collection.mutable.{ArrayBuffer, Map}
 import scala.util.Try
 import scala.util.control.Breaks._
-import org.clulab.processors.Sentence
-import org.clulab.variables.VariableReader.MostFreqEntity
+
 
 class EntityHistogramExtractor(val processor: Processor, val extractor: ExtractorEngine) {
 

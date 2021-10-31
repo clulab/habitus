@@ -1,4 +1,4 @@
-package org.clulab.variables
+package org.clulab.habitus.variables
 
 import org.clulab.odin.{ExtractorEngine, Mention}
 import org.clulab.processors.clu.CluProcessor

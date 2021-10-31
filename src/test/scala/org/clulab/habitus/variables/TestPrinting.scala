@@ -1,4 +1,4 @@
-package org.clulab.variables
+package org.clulab.habitus.variables
 
 import org.clulab.habitus.utils.Test
 import org.clulab.utils.FileUtils

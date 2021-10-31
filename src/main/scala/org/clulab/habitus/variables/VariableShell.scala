@@ -1,6 +1,13 @@
-package org.clulab.variables
+package org.clulab.habitus.variables
 
-import org.clulab.utils._
+import org.clulab.habitus.utils._
+import org.clulab.utils.CliReader
+import org.clulab.utils.ExitMenuItem
+import org.clulab.utils.HelpMenuItem
+import org.clulab.utils.Menu
+import org.clulab.utils.ReloadableShell
+import org.clulab.utils.SafeDefaultMenuItem
+import org.clulab.utils.SafeMainMenuItem
 
 class ReloadableVariableProcessor() {
   protected var variableProcessor: VariableProcessor = VariableProcessor()
