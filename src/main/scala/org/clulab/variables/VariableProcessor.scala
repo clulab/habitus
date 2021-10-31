@@ -6,7 +6,7 @@ import org.clulab.processors.{Document}
 import org.clulab.processors.clu.CluProcessor
 import org.clulab.sequences.LexiconNER
 import org.clulab.utils.FileUtils
-import sourcecode.Text.generate
+import scala.util.{Try, Success,Failure}
 
 
 
@@ -21,20 +21,24 @@ class VariableProcessor(val processor: CluProcessor, val extractor: ExtractorEng
   }
 
 
-
-  def parse(text: String): (Document, Seq[Mention],Seq[EventMention],Seq[EntityDistFreq]) = {
-
-
+  def parse(text: String): (Document, Seq[Mention], Seq[EventMention], Seq[EntityDistFreq]) = {
+    var doc = None: Option[Document]
+    try {
       // pre-processing
-      val doc = processor.annotate(text, keepText = false)
+      doc = Some(processor.annotate(text, keepText = false))
+    }
+    catch {
+      case e: Exception => e.printStackTrace()
+    }
 
     // extract mentions from annotated document
-    val mentions = extractor.extractFrom(doc).sortBy(m => (m.sentence, m.getClass.getSimpleName))
+    val mentions = extractor.extractFrom(doc.get).sortBy(m => (m.sentence, m.getClass.getSimpleName))
 
     //get histogram of all entities:
     val ce = EntityHistogramExtractor()
-    val (allEventMentions, histogram) = ce.extractHistogramEventMentions(doc, mentions)
-    (doc, mentions, allEventMentions, histogram)
+    val (allEventMentions, histogram) = ce.extractHistogramEventMentions(doc.get, mentions)
+    (doc.get, mentions, allEventMentions, histogram)
+
   }
 }
 
