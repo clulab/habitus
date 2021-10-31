@@ -1,9 +1,9 @@
-package org.clulab
+package org.clulab.habitus
 
-import org.clulab.odin._
+import org.clulab.odin.{EventMention, Mention, RelationMention, TextBoundMention}
 import org.clulab.processors.{Document, Sentence}
 
-import java.io._
+import java.io.PrintWriter
 import scala.collection.mutable.ArrayBuffer
 
 package object utils {
@@ -33,21 +33,22 @@ package object utils {
       println("=" * 50)
     }
   }
+
   //todo:context details class should store all histograms
   case class ContextDetails(mention: String, mostFreqLoc0Sent: String, mostFreqLoc1Sent: String, mostFreqLoc: String,
                             mostFreqDate0Sent: String, mostFreqDate1Sent: String, mostFreqDate: String,
-                            mostFreqCrop0Sent:String,
-                            mostFreqCrop1Sent:String,
-                            mostFreqCrop:String)
+                            mostFreqCrop0Sent: String,
+                            mostFreqCrop1Sent: String,
+                            mostFreqCrop: String)
 
   //some sentences might have multiple event mentions in it, and
-  def getAllContextForGivenSentId(context:scala.collection.mutable.Map[Int,ArrayBuffer[ContextDetails]],
-                                  sentId:Int, allContexts:ArrayBuffer[String]) ={
+  def getAllContextForGivenSentId(context: scala.collection.mutable.Map[Int, ArrayBuffer[ContextDetails]],
+                                  sentId: Int, allContexts: ArrayBuffer[String]) = {
 
-    for (ctxt <-context(sentId)) {
+    for (ctxt <- context(sentId)) {
       allContexts.append(ctxt.mostFreqLoc0Sent)
     }
-     // {mostFreqLoc0Sent}\t${
+    // {mostFreqLoc0Sent}\t${
     //              context(i).mostFreqLoc1Sent}\t${
     //              context(i).mostFreqLoc}\t${
     //              context(i).mostFreqDate0Sent}\t${
@@ -59,7 +60,7 @@ package object utils {
   }
 
   // extract needed information and write them to tsv in a desired format. Return nothing here!
-  def outputMentionsToTSV(mentions: Seq[Mention], doc: Document, contexts:scala.collection.mutable.Map[Int,ArrayBuffer[ContextDetails]],
+  def outputMentionsToTSV(mentions: Seq[Mention], doc: Document, contexts: scala.collection.mutable.Map[Int, ArrayBuffer[ContextDetails]],
                           filename: String, pw: PrintWriter): Unit = {
     val mentionsBySentence = mentions groupBy (_.sentence) mapValues (_.sortBy(_.start)) withDefaultValue Nil
     for ((s, i) <- doc.sentences.zipWithIndex) {
@@ -68,12 +69,13 @@ package object utils {
       val sortedMentions = mentionsBySentence(i).filter(_.label matches "Assignment")
 
 
-      sortedMentions.foreach{
-          // Format to print: variable \t value text \t value norms \t extracting sentence \t document name
+      sortedMentions.foreach {
+        // Format to print: variable \t value text \t value norms \t extracting sentence \t document name
         // \t Most frequent LOC within 0 sentences \t Most frequent LOC within 1 sentences.\t Most frequent LOC anywhere in the doc.\n
-          // Since we only focus on the Assignment mention which includes two submentions in the same format called
-          // ``variable`` and ``value`` we access the two through ``arguments`` attribute of the Mention class.
-          m => try {
+        // Since we only focus on the Assignment mention which includes two submentions in the same format called
+        // ``variable`` and ``value`` we access the two through ``arguments`` attribute of the Mention class.
+        m =>
+          try {
 
             val varText = m.arguments("variable").head.text
             val value = m.arguments("value").head
@@ -98,17 +100,26 @@ package object utils {
               }
 
             if (contexts.contains(i)) {
-              for (context <-contexts(i)) {
+              for (context <- contexts(i)) {
                 pw.println(s"$varText\t$valText\t$norm\t$sentText\t$filename\t${
-                  context.mostFreqLoc0Sent}\t${
-                  context.mostFreqLoc1Sent}\t${
-                  context.mostFreqLoc}\t${
-                  context.mostFreqDate0Sent}\t${
-                  context.mostFreqDate1Sent}\t${
-                  context.mostFreqDate}\t${
-                  context.mostFreqCrop0Sent}\t${
-                  context.mostFreqCrop1Sent}\t${
-                  context.mostFreqCrop}")
+                  context.mostFreqLoc0Sent
+                }\t${
+                  context.mostFreqLoc1Sent
+                }\t${
+                  context.mostFreqLoc
+                }\t${
+                  context.mostFreqDate0Sent
+                }\t${
+                  context.mostFreqDate1Sent
+                }\t${
+                  context.mostFreqDate
+                }\t${
+                  context.mostFreqCrop0Sent
+                }\t${
+                  context.mostFreqCrop1Sent
+                }\t${
+                  context.mostFreqCrop
+                }")
               }
             }
             else {
@@ -128,9 +139,8 @@ package object utils {
   }
 
 
-
-  def printSyntacticDependencies(s:Sentence): Unit = {
-    if(s.dependencies.isDefined) {
+  def printSyntacticDependencies(s: Sentence): Unit = {
+    if (s.dependencies.isDefined) {
       println(s.dependencies.get.toString)
     }
   }
@@ -147,7 +157,7 @@ package object utils {
     mention match {
       case tb: TextBoundMention =>
         println(s"\t${tb.labels.mkString(", ")} => ${tb.text}")
-        tb.norms.head.foreach {x =>
+        tb.norms.head.foreach { x =>
           println(s"\tNorm => $x")
         }
       case em: EventMention =>

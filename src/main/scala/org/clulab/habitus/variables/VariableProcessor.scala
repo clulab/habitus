@@ -1,4 +1,4 @@
-package org.clulab.variables
+package org.clulab.habitus.variables
 import java.io.File
 import org.clulab.dynet.Utils
 import org.clulab.odin.{EventMention, ExtractorEngine, Mention}

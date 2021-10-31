@@ -1,7 +1,7 @@
-package org.clulab.variables
+package org.clulab.habitus.variables
 
 
-import org.clulab.variables.VariableReader.extractContext
+import org.clulab.habitus.variables.VariableReader.extractContext
 import org.scalatest.{FlatSpec, Matchers}
 
 //
