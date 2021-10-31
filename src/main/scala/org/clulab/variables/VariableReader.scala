@@ -24,28 +24,24 @@ object VariableReader {
     var outputFile = outputDir + "/mentions.tsv"
 
 
-      val pw = new PrintWriter(new FileWriter(new File(outputFile)))
-      for (file <- FileUtils.findFiles(inputDir, ".txt")) {
-        try {
-          val text = FileUtils.getTextFromFile(file)
-          val filename = file.toString.split("/").last
-          println(s"going to parse input file: $filename")
-          val (doc, mentions, allEventMentions, entityHistogram) = vp.parse(text)
-          val context = compressContext(doc, allEventMentions, entityHistogram)
-          println(s"Writing mentions from doc ${filename} to $outputFile")
-          outputMentionsToTSV(mentions, doc, context, filename, pw)
-          // to not overpopulate the memory. Flush findings once for each document.
-          pw.flush()
-          pw.close()
-        }
-        catch
-          {
-            case e : Exception=> e.printStackTrace()
-          }
-
+    val pw = new PrintWriter(new FileWriter(new File(outputFile)))
+    for (file <- FileUtils.findFiles(inputDir, ".txt")) {
+      try {
+        val text = FileUtils.getTextFromFile(file)
+        val filename = file.toString.split("/").last
+        println(s"going to parse input file: $filename")
+        val (doc, mentions, allEventMentions, entityHistogram) = vp.parse(text)
+        val context = compressContext(doc, allEventMentions, entityHistogram)
+        println(s"Writing mentions from doc ${filename} to $outputFile")
+        outputMentionsToTSV(mentions, doc, context, filename, pw)
+        // to not overpopulate the memory. Flush findings once for each document.
+        pw.flush()
+      }
+      catch {
+        case e: Exception => e.printStackTrace()
+      }
     }
-
-
+    pw.close()
   }
 
 
