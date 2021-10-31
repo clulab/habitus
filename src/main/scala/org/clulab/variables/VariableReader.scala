@@ -15,15 +15,10 @@ import scala.collection.mutable.ArrayBuffer
 object VariableReader {
 
   def main(args: Array[String]): Unit = {
-    val props = StringUtils.argsToProperties(args)
-
-    val inputDir = props.getProperty("in")
-    assert(inputDir != null)
-
-    val outputDir = props.getProperty("out")
-    assert(outputDir != null)
-
-    val threads = Option(props.getProperty("threads")).map(_.toInt).getOrElse(1)
+    val props = StringUtils.argsToMap(args)
+    val inputDir = props("in")
+    val outputDir = props("out")
+    val threads = props.get("threads").map(_.toInt).getOrElse(1)
 
     run(inputDir, outputDir, threads)
   }
