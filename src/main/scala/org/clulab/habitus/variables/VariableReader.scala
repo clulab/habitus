@@ -1,7 +1,6 @@
 package org.clulab.habitus.variables
 
 import org.clulab.habitus.utils.ContextDetails
-import org.clulab.habitus.utils.outputMentionsToTSV
 import org.clulab.odin.EventMention
 import org.clulab.processors.Document
 import org.clulab.utils.Closer.AutoCloser
@@ -33,7 +32,7 @@ object VariableReader {
     val parFiles = if (threads > 1) ThreadUtils.parallelize(files, threads) else files
 
     new JsonPrinter(jsonOutputFile).autoClose { jsonPrinter =>
-      FileUtils.printWriterFromFile(tsvOutputFile).autoClose { tsvPrintWriter =>
+      new TsvPrinter(tsvOutputFile).autoClose { tsvPrinter =>
         for (file <- parFiles) {
           try {
             val text = FileUtils.getTextFromFile(file)
@@ -43,10 +42,7 @@ object VariableReader {
             val context = compressContext(doc, allEventMentions, entityHistogram)
 
             synchronized {
-              println(s"Writing mentions from doc ${filename} to $tsvOutputFile")
-              outputMentionsToTSV(mentions, doc, context, filename, tsvPrintWriter);
-              tsvPrintWriter.flush()
-
+              tsvPrinter.outputMentions(mentions, doc, context, filename);
               jsonPrinter.outputMentions(mentions, doc, context, filename)
             }
           }
