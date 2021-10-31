@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/clulab/habitus.svg?branch=master)](https://travis-ci.com/clulab/habitus)
+[![Build Status](https://app.travis-ci.com/clulab/habitus.svg?token=y6u9S2o13oppQYpzc5oB&branch=main)](https://app.travis-ci.com/clulab/habitus)
 
 # habitus
 
