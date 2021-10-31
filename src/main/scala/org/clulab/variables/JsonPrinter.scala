@@ -17,6 +17,8 @@ class JsonPrinter(outputFilename: String) {
   printWriter.println("[")
 
   def close(): Unit = {
+    if (dirty)
+      printWriter.println()
     printWriter.println("]")
     printWriter.close()
   }
@@ -59,7 +61,10 @@ class JsonPrinter(outputFilename: String) {
       val json = stringify(jObject, pretty = true)
       val indentedJson = "  " + json.replace("\n", "\n  ")
 
-      printWriter.println(indentedJson)
+      // Each JSON element in the array needs to be separated from the others.
+      if (dirty) printWriter.println(",")
+      else dirty = true
+      printWriter.print(indentedJson)
     }
   }
 
@@ -70,20 +75,13 @@ class JsonPrinter(outputFilename: String) {
     inputFilename: String
   ): Unit = {
     println(s"Writing mentions from doc $inputFilename to $outputFilename")
-
-    val mentionsToPrint = mentions
+    mentions
         .filter { mention => mention.label.matches("Assignment") }
         .filter { mention => contexts.contains(mention.sentence) }
         .sortBy { mention => (mention.sentence, mention.start) }
-
-    if (mentionsToPrint.nonEmpty) {
-      // Each JSON element in the array needs to be separated from the others.
-      if (dirty) printWriter.println("  ,")
-      else dirty = true
-      mentionsToPrint.foreach { mention =>
-        outputMention(mention, doc, contexts(mention.sentence), inputFilename)
-      }
-      printWriter.flush()
-    }
+        .foreach { mention =>
+          outputMention(mention, doc, contexts(mention.sentence), inputFilename)
+        }
+    printWriter.flush()
   }
 }

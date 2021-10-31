@@ -22,11 +22,16 @@ object VariableReader {
 
     val outputDir = props.getProperty("out")
     assert(outputDir != null)
+
+    val threads = Option(props.getProperty("threads")).map(_.toInt).getOrElse(1)
+
+    run(inputDir, outputDir, threads)
+  }
+
+  def run(inputDir: String, outputDir: String, threads: Int) {
     new File(outputDir).mkdir()
     val tsvOutputFile = outputDir + "/mentions.tsv"
     val jsonOutputFile = outputDir + "/mentions.json"
-
-    val threads = Option(props.getProperty("threads")).map(_.toInt).getOrElse(1)
 
     val vp = VariableProcessor()
     val files = FileUtils.findFiles(inputDir, ".txt")
@@ -57,7 +62,6 @@ object VariableReader {
       }
     }
   }
-
 
   def compressContext(doc:Document, allEventMentions:Seq[EventMention], entityHistogram:Seq[EntityDistFreq]) = {
 
