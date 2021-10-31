@@ -17,6 +17,8 @@ class JsonPrinter(outputFilename: String) {
   printWriter.println("[")
 
   def close(): Unit = {
+    if (dirty)
+      printWriter.println()
     printWriter.println("]")
     printWriter.close()
   }
@@ -60,9 +62,9 @@ class JsonPrinter(outputFilename: String) {
       val indentedJson = "  " + json.replace("\n", "\n  ")
 
       // Each JSON element in the array needs to be separated from the others.
-      if (dirty) printWriter.println("  ,")
+      if (dirty) printWriter.println(",")
       else dirty = true
-      printWriter.println(indentedJson)
+      printWriter.print(indentedJson)
     }
   }
 
