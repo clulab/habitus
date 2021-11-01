@@ -1,12 +1,14 @@
 package org.clulab.habitus.variables
 import java.io.File
 import org.clulab.dynet.Utils
+import org.clulab.habitus.HabitusProcessor
 import org.clulab.odin.{EventMention, ExtractorEngine, Mention}
-import org.clulab.processors.{Document}
+import org.clulab.processors.Document
 import org.clulab.processors.clu.CluProcessor
 import org.clulab.sequences.LexiconNER
 import org.clulab.utils.FileUtils
-import scala.util.{Try, Success,Failure}
+
+import scala.util.{Failure, Success, Try}
 
 
 
@@ -85,7 +87,8 @@ object VariableProcessor {
     // create the processor
     Utils.initializeDyNet()
     val lexiconNer = newLexiconNer()
-    val processor = new CluProcessor(optionalNER = Some(lexiconNer))
+    val processor = new HabitusProcessor(lexiconNer)
+    // val processor = new CluProcessor(optionalNER = Some(lexiconNer))
     VariableProcessor(processor)
   }
 
