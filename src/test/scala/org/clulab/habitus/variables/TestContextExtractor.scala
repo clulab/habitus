@@ -85,9 +85,14 @@ In Senegal maturity  came in early November ( Tab.I ) for 1995.
     mse(1).mostFreqEntity.getOrElse("")  should be ("senegal")
   }
 
-  sent2 should "for document with two events find matto grosso as the most frequent entity in event1 and burkino fast for event 0" in {
+  sent2 should "for document with two events find matto grosso as the most frequent entity in event1 and burkino faso for event 0" in {
     val mse = getMSFreq0Sent(sent2)
-    mse(0).mostFreqEntity.getOrElse("")  should be ("matto grosso")
-    mse(1).mostFreqEntity.getOrElse("")  should be ("burkino faso")
+    val mse0 = mse(0).mostFreqEntity.getOrElse("") // used to be "matto grosso"
+    val mse1 = mse(1).mostFreqEntity.getOrElse("") // used to be "burkino faso"
+    val mseSeq = Seq(mse0, mse1).sorted
+
+    // The frequencies are tied, so it is essential to have sorted them before the comparison.
+    mseSeq(0) should be ("burkino faso")
+    mseSeq(1) should be ("matto grosso")
   }
 }
