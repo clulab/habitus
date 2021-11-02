@@ -26,7 +26,7 @@ To run the image with Java configured and default arguments of `-in /input -out 
 docker run --env _JAVA_OPTIONS=-Xmx10g --volume `pwd`/in:/input --volume `pwd`/out:/output --user nobody habitus:latest
 ```
 
-This is assuming then that there is a directory `./in` containing the input files and an `./out` for receiving the output files.  This is a typical configuration during development.  These are mapped in the command to `/input` and `/output` directories in the container.
+This is assuming then that there is a directory `./in` on the docker host containing the input files and an `./out` for receiving the output files.  This is a typical configuration during development.  The input directory should be readable by `nobody` and the output directory should be writable by `nobody`.  These are mapped by the command to `/input` and `/output` directories in the container.
 
 
 For testing from the container's command line, it may be useful to insert these arguments as well: `-it --entrypoint /bin/bash`.
@@ -34,7 +34,7 @@ For testing from the container's command line, it may be useful to insert these 
 To replace the default arguments with your own, follow this template:
 
 ```shell
-docker run --env _JAVA_OPTIONS=-Xmx10g --volume `pwd`/in:/input --volume `pwd`/out:/output --user nobody habitus:latest -in [inputDir] -out [outputDir] -threads [threadCount]
+docker run --env _JAVA_OPTIONS=[javaMemorySpec] --volume [hostInputDir]:[containerInputDir] --volume [hostOutputDir]:[containerOutputDir] --user [user] habitus:latest -in [containerInputDir] -out [containerOutputDir] -threads [threadCount]
 ```
 
-The `threadCount` should probably not be more than 6.
+The `threadCount` should probably max out at 4.  More doesn't help much.
