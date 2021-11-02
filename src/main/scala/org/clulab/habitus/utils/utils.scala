@@ -17,7 +17,8 @@ package object utils {
       println("Tokens: " + (s.words.indices, s.words, s.tags.get).zipped.mkString(", "))
       println("Entities: " + s.entities.get.mkString(", "))
       println("Norms: " + s.norms.get.mkString(", "))
-      printSyntacticDependencies(s)
+      println("Chunks: " + s.chunks.get.mkString(", "))
+      printHybridDependencies(s)
       println
 
       val sortedMentions = mentionsBySentence(i).sortBy(_.label)
@@ -57,6 +58,12 @@ package object utils {
     //              context(i).mostFreqCrop0Sent}\t${
     //              context(i).mostFreqCrop1Sent}\t${
     //              context(i).mostFreqCrop}
+  }
+
+  def printHybridDependencies(s:Sentence): Unit = {
+    if (s.hybridDependencies.isDefined) {
+      println(s.hybridDependencies.get.toString)
+    }
   }
 
   def printSyntacticDependencies(s: Sentence): Unit = {
