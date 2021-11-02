@@ -7,7 +7,6 @@ import org.clulab.odin.{EventMention, ExtractorEngine, Mention, RelationMention,
 import org.clulab.openie.entities.CustomizableRuleBasedFinder
 import org.clulab.processors.clu.CluProcessor
 import org.clulab.processors.{Document, Processor}
-import org.clulab.utils
 
 import java.io.File
 import java.nio.charset.StandardCharsets

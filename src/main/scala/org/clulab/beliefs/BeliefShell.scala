@@ -1,6 +1,7 @@
 package org.clulab.beliefs
 
-import org.clulab.utils.{CliReader, ExitMenuItem, HelpMenuItem, Menu, SafeDefaultMenuItem, Shell, SimpleMainMenuItem, displayMentions}
+import org.clulab.utils.{CliReader, ExitMenuItem, HelpMenuItem, Menu, SafeDefaultMenuItem, Shell, SimpleMainMenuItem}
+import org.clulab.habitus.utils.displayMentions
 
 class BeliefShell extends Shell {
   println("Creating BeliefProcessor...\n")
