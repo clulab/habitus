@@ -174,7 +174,7 @@ object VariableReader {
   def checkSentIdContextDetails(sentidContext:scala.collection.mutable.Map[Int,ArrayBuffer[ContextDetails]], key:Int, value: ContextDetails) = {
     sentidContext.get(key) match {
       case Some(i) =>
-        println(s"Found that multiple event mentions occur in the same sentence with sentence id {key}. " +
+        println(s"Found that multiple event mentions occur in the same sentence with sentence id $key. " +
           s"going to add to chain of values")
         val oldList=sentidContext(key)
         oldList.append(value)
