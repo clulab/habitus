@@ -7,8 +7,38 @@
   label: ${label}
   graph: "hybrid"
   pattern: |
-    trigger = [lemma=/believe|think|accept|consider|conclude|doubt|reject|suppose|suggest|submit|theorize|offer/ & tag=/^V/]
+    trigger = [lemma=/believe|think|accept|consider|trust|mistrust|conclude|doubt|reject|suppose|suggest|submit|theorize|offer/ & tag=/^V/]
+    believer:Entity = /nsubj|A0/
+    belief:Entity = /ccomp|A1|dobj/
+
+#
+# We will look at how to merge these grammars to avoid repetition
+#
+
+- name: ${label}-believe-1
+  priority: ${rulepriority}
+  label: ${label}
+  graph: "hybrid"
+  pattern: |
+    trigger = [lemma="not"]? [lemma=/credible|convince|believable|skeptical|credible|likely|unlikely|provable|possible|impossible|probable|improbable|plausible|implausible|reasonable|unreasonable|conclusive|unsupportable|questionable|unquestionable|axiomatic|true|false|established|debatable|equivocal|unequivocal|dubious|suspect|inconceivable|incontrovertible|indubitable/ & tag=/^V|^J/]
     believer:Entity = /nsubj|A0/
     belief:Entity = /ccomp|A1|dobj/
 
 
+- name: ${label}-believe-2
+  priority: ${rulepriority}
+  label: ${label}
+  graph: "hybrid"
+  pattern: |
+    trigger = [lemma=/explain|predict|mistrust|consistent|skeptical/ & tag=/^V|^J/]
+    believer:Entity = /nsubjpas|nsubj|A1/
+    belief:Entity = /ccomp|A0|dobj|nmod_of|nmod_by|nmod_with/
+
+- name: ${label}-believe-3
+  priority: ${rulepriority}
+  label: ${label}
+  graph: "hybrid"
+  pattern: |
+    trigger = [lemma=/neg/]? [tag=/JJ|NN/] [tag="TO"] [tag=/^V/] 
+    believer:Entity = /nsubj|expl/
+    belief:Entity = /ccomp|A1|dobj|xcomp/
