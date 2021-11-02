@@ -1,13 +1,15 @@
-# habitus
+# Habitus Odinson framework
 
-We're using the latest snapshot of Odinson.
+The `org.clulab.odinson` package includes a simple framework for using Odinson.
+
+This code uses the latest snapshot of Odinson.
 Please clone the odinson repository and publish it to your local ivy repository.
 
     git clone git@github.com:lum-ai/odinson.git
     cd odinson
     sbt publishLocal
 
-## setting up the corpus
+## Setting up the corpus
 
 First we need to configure the desired location of our data folder in `application.conf`.
 By default, it is `~/data/habitus`. In that directory, there should be another dir called
@@ -24,11 +26,11 @@ text files and then call
 
 This command will populate the `docs` directory, and then you can build the index.
 
-## running the project
+## Running the project
 
 To run the rules type
 
-    sbt 'runMain org.clulab.habitus.Main'
+    sbt 'runMain org.clulab.odinson.Main'
 
 The output mentions will be stored in the `mentions.json` file, as specified in `application.conf`.
 

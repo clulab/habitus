@@ -1,4 +1,4 @@
-package org.clulab.habitus
+package org.clulab.odinson
 
 object ExampleDocs {
   val json = Map(

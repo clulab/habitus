@@ -1,4 +1,4 @@
-package org.clulab.habitus
+package org.clulab.odinson
 
 import org.scalatest._
 import ai.lum.odinson._

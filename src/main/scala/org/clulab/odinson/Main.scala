@@ -1,4 +1,4 @@
-package org.clulab.habitus
+package org.clulab.odinson
 
 import java.io.File
 import ai.lum.odinson.ExtractorEngine

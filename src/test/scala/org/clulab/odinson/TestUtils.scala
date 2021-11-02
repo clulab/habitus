@@ -1,4 +1,4 @@
-package org.clulab.habitus
+package org.clulab.odinson
 
 import com.typesafe.config.Config
 import org.scalatest._
