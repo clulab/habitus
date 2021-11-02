@@ -14,3 +14,14 @@ project/plugins/project/
 .history
 .cache
 .lib/
+.bsp/
+
+# running/testing
+in/
+out/
+mentions.json
+mentions.tsv
+
+# docker
+docker/bin/
+docker/lib/

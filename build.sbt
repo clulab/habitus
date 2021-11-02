@@ -2,6 +2,9 @@ name := "habitus"
 organization := "org.clulab"
 scalaVersion := "2.12.10"
 
+lazy val core: Project = (project in file("."))
+  .enablePlugins(JavaAppPackaging)
+
 pomIncludeRepository := { (repo: MavenRepository) =>
   repo.root.startsWith("http://artifactory.cs.arizona.edu")
 }
@@ -10,7 +13,7 @@ pomIncludeRepository := { (repo: MavenRepository) =>
 resolvers += "Artifactory" at "http://artifactory.cs.arizona.edu:8081/artifactory/sbt-release"
 
 libraryDependencies ++= {
-  val procVer = "8.4.6-SNAPSHOT"
+  val procVer = "8.4.6"
 
   Seq(
     "org.scalatest" %% "scalatest" % "3.0.5" % "test",

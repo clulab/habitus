@@ -1,8 +1,10 @@
-package org.clulab
+package org.clulab.habitus
 
-import org.clulab.odin._
-import org.clulab.processors.{Sentence, Document}
-import java.io._
+import org.clulab.odin.{EventMention, Mention, RelationMention, TextBoundMention}
+import org.clulab.processors.{Document, Sentence}
+
+import java.io.PrintWriter
+import scala.collection.mutable.ArrayBuffer
 
 package object utils {
 
@@ -33,32 +35,40 @@ package object utils {
     }
   }
 
-  // extract needed information and write them to tsv in a desired format. Return nothing here!
-  def outputMentionsToTSV(mentions: Seq[Mention], doc: Document, filename: String, pw: PrintWriter): Unit = {
-    val mentionsBySentence = mentions groupBy (_.sentence) mapValues (_.sortBy(_.start)) withDefaultValue Nil
-    for ((s, i) <- doc.sentences.zipWithIndex) {
-      // to keep only mention labelled as Assignment (these labels are associated with .yml files, e.g. Variable, Value)
-      val sortedMentions = mentionsBySentence(i).filter(_.label matches "Assignment")
-      sortedMentions.foreach{
-          // Format to print: variable \t value text \t value norms \t extracting sentence \t document name \n
-          // Since we only focus on the Assignment mention which includes two submentions in the same format called
-          // ``variable`` and ``value`` we access the two through ``arguments`` attribute of the Mention class.
-          m => try {
-            pw.println(s"${m.arguments("variable").head.text}\t${m.arguments("value").head.text}\t${m.arguments("value")
-              .head.norms.filter(_.length > 2).get(0)}\t${s.getSentenceText}\t$filename")
-          } catch {
-            case e: NoSuchElementException => println(s"No normalized value found for ${m.arguments("value").head.text} in sentence ${s.getSentenceText}!")
-            case e: RuntimeException => println(s"Error occurs for sentence: ${s.getSentenceText}")
-          }
-          println(m.arguments("value").head.norms.filter(_.length > 2))
-      }
+  //todo:context details class should store all histograms
+  case class ContextDetails(mention: String, mostFreqLoc0Sent: String, mostFreqLoc1Sent: String, mostFreqLoc: String,
+                            mostFreqDate0Sent: String, mostFreqDate1Sent: String, mostFreqDate: String,
+                            mostFreqCrop0Sent: String,
+                            mostFreqCrop1Sent: String,
+                            mostFreqCrop: String)
+
+  //some sentences might have multiple event mentions in it, and
+  def getAllContextForGivenSentId(context: scala.collection.mutable.Map[Int, ArrayBuffer[ContextDetails]],
+                                  sentId: Int, allContexts: ArrayBuffer[String]) = {
+
+    for (ctxt <- context(sentId)) {
+      allContexts.append(ctxt.mostFreqLoc0Sent)
+    }
+    // {mostFreqLoc0Sent}\t${
+    //              context(i).mostFreqLoc1Sent}\t${
+    //              context(i).mostFreqLoc}\t${
+    //              context(i).mostFreqDate0Sent}\t${
+    //              context(i).mostFreqDate1Sent}\t${
+    //              context(i).mostFreqDate}\t${
+    //              context(i).mostFreqCrop0Sent}\t${
+    //              context(i).mostFreqCrop1Sent}\t${
+    //              context(i).mostFreqCrop}
+  }
+
+  def printHybridDependencies(s:Sentence): Unit = {
+    if (s.hybridDependencies.isDefined) {
+      println(s.hybridDependencies.get.toString)
     }
   }
 
-
-  def printHybridDependencies(s:Sentence): Unit = {
-    if(s.hybridDependencies.isDefined) {
-      println(s.hybridDependencies.get.toString)
+  def printSyntacticDependencies(s: Sentence): Unit = {
+    if (s.dependencies.isDefined) {
+      println(s.dependencies.get.toString)
     }
   }
 
@@ -74,7 +84,7 @@ package object utils {
     mention match {
       case tb: TextBoundMention =>
         println(s"\t${tb.labels.mkString(", ")} => ${tb.text}")
-        tb.norms.head.foreach {x =>
+        tb.norms.head.foreach { x =>
           println(s"\tNorm => $x")
         }
       case em: EventMention =>
