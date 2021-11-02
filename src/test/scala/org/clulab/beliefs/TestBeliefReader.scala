@@ -103,19 +103,19 @@ class TestBeliefReader extends FlatSpec with Matchers {
     m.arguments("belief").head.text should be ("Troeg’s might know a thing or two about beer")
   }
 
-  // Hubert
-  // It’s credible / not credible / convincing / unconvincing
-  //  / believable / likely / unlikely / provable / possible /
-  //   impossible / probable / improbable / plausible /
-  //   implausible / reasonable / unreasonable / conclusive /
-  //   unsupportable / questionable / unquestionable / axiomatic /
-  //    true / false / established / debatable / equivocal / 
-  //    unequivocal / dubious / suspect  / incontrovertible / 
-  //    indubitable that Rudy Giuliani broke the law
-
   val sent10 = "It's credible that Rudy Giuliani broke the law"
   sent10 should "contain one belief" in {
     val mentions = getMentions(sent10)
+    mentions should have size(1)
+
+    val m = mentions.head
+    m.arguments("believer").head.text should be ("It")
+    m.arguments("belief").head.text should be ("Rudy Giuliani broke the law")
+  }
+
+  val sent10_0 = "It's not credible that Rudy Giuliani broke the law"
+  sent10_0 should "contain one belief" in {
+    val mentions = getMentions(sent10_0)
     mentions should have size(1)
 
     val m = mentions.head
@@ -233,17 +233,16 @@ class TestBeliefReader extends FlatSpec with Matchers {
     m.arguments("belief").head.text should be ("Trump’s claims")
   }
 
-  // TODO: Look at this trigger expression which is a Compound Words "no reason to think"
+  // // TODO: 
   // val sent13 = "There’s no reason to think that Mu is worse than Delta"
   // sent13 should "contain one belief" in {
   //   val mentions = getMentions(sent13)
   //   mentions should have size(1)
 
   //   val m = mentions.head
-  //   m.arguments("believer").head.text should be ("I")
-  //   m.arguments("belief").head.text should be ("Rudy Giuliani broke the law")
+  //   m.arguments("believer").head.text should be ("There")
+  //   m.arguments("belief").head.text should be ("Mu is worse than Delta")
   // }
-
 
   val sent14_1 = "Violent storms are consistent with climate change"
   sent14_1 should "contain one belief" in {
@@ -254,7 +253,6 @@ class TestBeliefReader extends FlatSpec with Matchers {
     m.arguments("believer").head.text should be ("Violent storms")
     m.arguments("belief").head.text should be ("climate change")
   }
-
 
   val sent14_2 = "Violent storms are explained by climate change"
   sent14_2 should "contain one belief" in {
@@ -276,16 +274,15 @@ class TestBeliefReader extends FlatSpec with Matchers {
     m.arguments("belief").head.text should be ("climate change")
   }
 
-  // TODO: I am wondering if the trigger should be "hard to see" or only "hard"
-  // val sent15 = "It’s hard to see how burning coal helps the environment"
-  // sent15 should "contain one belief" in {
-  //   val mentions = getMentions(sent15)
-  //   mentions should have size(1)
+ val sent14_4 = "It's hard to see how burning coal helps the environment"
+  sent14_4 should "contain one belief" in {
+    val mentions = getMentions(sent14_4)
+    mentions should have size(1)
 
-  //   val m = mentions.head
-  //   m.arguments("believer").head.text should be ("Its")
-  //   m.arguments("belief").head.text should be ("burning coal helps the environment")
-  // }
+    val m = mentions.head
+    m.arguments("believer").head.text should be ("It")
+    m.arguments("belief").head.text should be ("how burning coal helps the environment")
+  }
 
   // TODO: Returns many believes associations
   // val sent16 = "Senator Harris mistrusts Trump’s medical recommendations but trusts Fauci’s"
