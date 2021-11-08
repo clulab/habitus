@@ -3,7 +3,7 @@ organization := "org.clulab"
 scalaVersion := "2.12.10"
 
 lazy val core: Project = (project in file("."))
-  .enablePlugins(JavaAppPackaging)
+    .enablePlugins(JavaAppPackaging, DockerPlugin)
 
 pomIncludeRepository := { (repo: MavenRepository) =>
   repo.root.startsWith("http://artifactory.cs.arizona.edu")
@@ -27,4 +27,4 @@ libraryDependencies ++= {
   )
 }
 
-
+addCommandAlias("dockerize", ";compile;test;docker:publishLocal")

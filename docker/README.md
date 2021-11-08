@@ -2,7 +2,21 @@
 
 ## build
 
-To build the image, do
+The image can be built with a single `sbt` command or a series of shell commands.
+
+### sbt
+
+This option uses no files from this directory, so it is independent of instructions in `Dockerfile`.  Instead, it uses `docker.sbt` from the main project directory.
+
+* To perform tests before containerization, execute `sbt dockerize`.
+* If you are in a hurry and don't need to (re)test, use `sbt docker:publishLocal`.
+
+This should result in images `habitus:[version]` and `habitus:latest`.  The version number is specified in `docker.sbt`.
+
+
+### shell
+
+To build the image, execute these commands:
 
 ```shell
 sbt dist
@@ -15,7 +29,8 @@ rm variable-reader.bat
 cd ../..
 mv habitus*/bin habitus*/lib .
 cd ../..
-docker build -f ./docker/Dockerfile -t habitus:latest .
+docker build -f ./docker/Dockerfile -t habitus:[version] .
+docker image tag habitus:[version] habitus:latest
 ```
 
 ## run
@@ -38,3 +53,14 @@ docker run --env _JAVA_OPTIONS=[javaMemorySpec] --volume [hostInputDir]:[contain
 ```
 
 The `threadCount` should probably max out at 4.  More doesn't help much.
+
+## publish
+
+Add "clulab" to the tag and push to dockerhub.
+
+```shell
+docker image tag habitus:[version] clulab/habitus:[version]
+docker image tag habitus:latest clulab/habitus:latest
+docker push clulab/habitus:[version]
+docker push clulab/habitus:latest
+```
