@@ -1,6 +1,5 @@
-package org.clulab.habitus.variables
+package org.clulab.habitus.utils
 
-import org.clulab.habitus.utils.ContextDetails
 import org.clulab.odin.Mention
 import org.clulab.processors.Document
 import org.clulab.utils.FileUtils

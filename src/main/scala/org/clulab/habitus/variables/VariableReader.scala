@@ -3,10 +3,11 @@ package org.clulab.habitus.variables
 import org.clulab.habitus.utils.ContextDetails
 import org.clulab.odin.EventMention
 import org.clulab.processors.Document
-import org.clulab.utils.Closer.AutoCloser
+import org.clulab.habitus.utils.{ JsonPrinter, TsvPrinter}
 import org.clulab.utils.FileUtils
 import org.clulab.utils.StringUtils
 import org.clulab.utils.ThreadUtils
+import org.clulab.utils.Closer.AutoCloser
 
 import java.io.File
 import scala.collection.mutable.ArrayBuffer
