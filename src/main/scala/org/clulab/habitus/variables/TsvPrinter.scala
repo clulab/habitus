@@ -23,7 +23,7 @@ class TsvPrinter(outputFilename: String) {
     inputFilename: String
   ): Unit = {
     println(s"Writing mentions from doc ${inputFilename} to $outputFilename")
-    outputMentions(mentions, doc, contexts, inputFilename, printWriter);
+    outputMentions(mentions, doc, contexts, inputFilename, printWriter)
     printWriter.flush()
   }
 
