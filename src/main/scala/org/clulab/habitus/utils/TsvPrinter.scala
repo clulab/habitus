@@ -139,7 +139,7 @@ class TsvPrinter(outputFilename: String) {
             val believer = m.arguments("believer").head.text
             val belief = m.arguments("belief").head.text
             pw.println(s"$believer\t$belief")
-          }
+          }   
           catch {
             case e: NoSuchElementException =>
               println(s"No normalized value found for ${m.arguments("value").head.text} in sentence ${s.getSentenceText}!")
