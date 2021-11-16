@@ -1,9 +1,12 @@
 package org.clulab.beliefs
 
-import org.clulab.habitus.utils.{JsonPrinter,TsvPrinter}
+import org.clulab.habitus.utils.{ContextDetails, JsonPrinter, TsvPrinter}
 import org.clulab.utils.{FileUtils, StringUtils, ThreadUtils}
 import org.clulab.utils.Closer.AutoCloser
+
 import java.io.File
+import scala.collection.mutable
+import scala.collection.mutable.ArrayBuffer
 
 
 object BeliefReader {
@@ -35,10 +38,10 @@ object BeliefReader {
             println(s"going to parse input file: $filename")
             val (doc, mentions) = vp.parse(text)
 
-
+            val contexts= mutable.Map.empty[Int, ArrayBuffer[ContextDetails]]
             synchronized {
-              tsvPrinter.outputMentions(mentions, doc, _, filename);
-              jsonPrinter.outputMentions(mentions, doc, _, filename)
+              tsvPrinter.outputMentions(mentions, doc, contexts, filename);
+              jsonPrinter.outputMentions(mentions, doc, contexts, filename)
             }
           }
           catch {
