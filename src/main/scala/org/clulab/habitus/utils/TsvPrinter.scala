@@ -136,9 +136,10 @@ class TsvPrinter(outputFilename: String) {
         // ``variable`` and ``value`` we access the two through ``arguments`` attribute of the Mention class.
         m =>
           try {
+            val sentence=doc.sentences(i).words.mkString(" ")
             val believer = m.arguments("believer").head.text
             val belief = m.arguments("belief").head.text
-            pw.println(s"$believer\t$belief")
+            pw.println(s"$believer\t$belief\t$sentence")
           }
           catch {
             case e: NoSuchElementException =>
