@@ -43,7 +43,7 @@ object VariableReader {
             val context = compressContext(doc, allEventMentions, entityHistogram)
 
             synchronized {
-              tsvPrinter.outputMentions(mentions, doc, context, filename);
+              tsvPrinter.outputMentions(mentions, doc, context, filename)
               jsonPrinter.outputMentions(mentions, doc, context, filename)
             }
           }

@@ -1,36 +1,17 @@
-[![Build Status](https://app.travis-ci.com/clulab/habitus.svg?token=y6u9S2o13oppQYpzc5oB&branch=main)](https://app.travis-ci.com/clulab/habitus)
-
 # habitus
 
-We're using the latest snapshot of Odinson.
-Please clone the odinson repository and publish it to your local ivy repository.
+This repository contains CLU lab's NLP software for the DARPA HEURISTICS project.
 
-    git clone git@github.com:lum-ai/odinson.git
-    cd odinson
-    sbt publishLocal
+## Requirements
 
-## setting up the corpus
+This software requires:
+- Java 8 
+- sbt 1.x
 
-First we need to configure the desired location of our data folder in `application.conf`.
-By default, it is `~/data/habitus`. In that directory, there should be another dir called
-`docs` and it should store all the documents in the corpus as Odinson documents.
+## Variable reading
 
-To index the odinson documents:
+This component reads for values assigned to variables that are important for crop modeling such as planting date and fertilizer usage.
 
-    sbt 'runMain ai.lum.odinson.extra.IndexDocuments'
+## Reading for propositional attitudes
 
-If you only have text files, make a directory called `text` in the datadir with your
-text files and then call
-
-    sbt 'runMain ai.lum.odinson.extra.AnnotateText'
-
-This command will populate the `docs` directory, and then you can build the index.
-
-## running the project
-
-To run the rules type
-
-    sbt 'runMain org.clulab.habitus.Main'
-
-The output mentions will be stored in the `mentions.json` file, as specified in `application.conf`.
-
+This component reads for statements such as WHO believes WHAT.
