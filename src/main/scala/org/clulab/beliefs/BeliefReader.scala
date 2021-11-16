@@ -40,8 +40,7 @@ object BeliefReader {
 
             val contexts= mutable.Map.empty[Int, ArrayBuffer[ContextDetails]]
             synchronized {
-              tsvPrinter.outputMentions(mentions, doc, contexts, filename);
-              jsonPrinter.outputMentions(mentions, doc, contexts, filename)
+              tsvPrinter.outputBeliefMentions(mentions, doc, contexts, filename);
             }
           }
           catch {

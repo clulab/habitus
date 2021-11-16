@@ -107,4 +107,51 @@ class TsvPrinter(outputFilename: String) {
 
 
 
+
+  def outputBeliefMentions(
+                      mentions: Seq[Mention],
+                      doc: Document,
+                      contexts: mutable.Map[Int, ArrayBuffer[ContextDetails]],
+                      inputFilename: String
+                    ): Unit = {
+    println(s"Writing mentions from doc ${inputFilename} to $outputFilename")
+    outputBeliefMentions(mentions, doc, contexts, inputFilename, printWriter);
+    printWriter.flush()
+  }
+
+  // extract needed information and write them to tsv in a desired format. Return nothing here!
+  protected def outputBeliefMentions(mentions: Seq[Mention], doc: Document, contexts: scala.collection.mutable.Map[Int, ArrayBuffer[ContextDetails]],
+                               filename: String, pw: PrintWriter): Unit = {
+    val mentionsBySentence = mentions groupBy (_.sentence) mapValues (_.sortBy(_.start)) withDefaultValue Nil
+    for ((s, i) <- doc.sentences.zipWithIndex) {
+
+      // to keep only mention labelled as Assignment (these labels are associated with .yml files, e.g. Variable, Value)
+      val sortedMentions = mentionsBySentence(i).filter(_.label matches "Belief")
+
+
+      sortedMentions.foreach {
+        // Format to print: variable \t value text \t value norms \t extracting sentence \t document name
+        // \t Most frequent LOC within 0 sentences \t Most frequent LOC within 1 sentences.\t Most frequent LOC anywhere in the doc.\n
+        // Since we only focus on the Assignment mention which includes two submentions in the same format called
+        // ``variable`` and ``value`` we access the two through ``arguments`` attribute of the Mention class.
+        m =>
+          try {
+            val believer = m.arguments("believer").head.text
+            val belief = m.arguments("belief").head.text
+            pw.println(s"$believer\t$belief")
+          }
+          catch {
+            case e: NoSuchElementException =>
+              println(s"No normalized value found for ${m.arguments("value").head.text} in sentence ${s.getSentenceText}!")
+              e.printStackTrace()
+            case e: RuntimeException =>
+              println(s"Error occurs for sentence: ${s.getSentenceText}")
+              e.printStackTrace()
+
+          }
+      }
+    }
+  }
+
+
 }
