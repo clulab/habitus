@@ -14,4 +14,4 @@ This component reads for values assigned to variables that are important for cro
 
 ## Reading for propositional attitudes
 
-This component reads for statements such as Who believes What.
+This component reads for statements such as WHO believes WHAT.
