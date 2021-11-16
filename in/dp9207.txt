@@ -1,0 +1,4408 @@
+
+
+
+I  Z A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+IZA DP No. 9207
+
+
+
+Building Trust in Rural Producer Organizations in Senegal:
+Results from a Randomized Controlled Trial
+
+
+Tanguy Bernard Markus Frolich Andreas Landmann
+
+July 2015
+Pia Naima Unte Angelino Viceisza Fleur Wouterse
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Forschungsinstitut
+zur Zukunft der Arbeit Institute for the Study of Labor
+
+Building Trust in Rural Producer Organizations in Senegal:
+Results from a Randomized Controlled Trial
+
+
+
+Tanguy Bernard
+lFPRl and UniVersity  of Bordeaux  IV
+
+Markus Fri?lich
+University of Mannheim and IZA
+
+Andreas Landmann
+Universlty of Mannheim
+Pia Naima Unte
+UniVersity  of Mannheim
+
+Angelino Viceisza
+Spelman College
+
+Fleur Wouterse
+lFPRl
+
+
+
+
+Discussion Paper No. 9207 July 2015
+
+
+IZA
+
+P.O. Box 7240 53072 Bonn
+Germany
+
+Phone: +49-228-3894-0
+Fax: +49-228-3894-180
+E-mail: iza@iza.org
+
+
+
+
+
+Any opinions  expressed  here are those of the author(s)  and not those of IZA. Research  published 
+ in this  series  may  include  views  on policy,  but  the  institute  itself  takes  no  
+institutional  policy  positions. The IZA research network is committed to the IZA Guiding 
+Principles of Research Integrity.
+
+The Institute  for the  Study  of Labor  (IZA) in Bonn is a local  and virtual  international  
+research  center and a place of communication between science, politics and business. IZA is an 
+independent  nonprofit organization  supported  by Deutsche  Post Foundation.  The center  is 
+associated  with the University  of Bonn and offers a stimulating  research environment  through 
+its international  network,  workshops  and conferences,  data  service,  project  support,  
+research  visits  and  doctoral  program.  IZA  engages  in (i) original  and  internationally 
+competitive  research  in  all  fields  of  labor  economics,  (ii)  development  of policy 
+concepts, and (iii) dissemination of research results and concepts to the interested public.
+
+IZA Discussion  Papers  often represent  preliminary  work and are circulated  to encourage  
+discussion. Citation  of  such  a  paper  should  account  for  its  provisional  character.  A  
+revised  version  may  be available directly from the author.
+
+IZA Discussion Paper No. 9207 July 2015
+
+
+
+
+
+
+
+ABSTRACT
+
+Building Trust in Rural Producer Organizations in Senegal: Results from a Randomized Controlled 
+Trial*
+
+Trust    is    crucial    for    successful    collective    action.    A    prime    example    is 
+   collective commercialization  of  agricultural  produce  through  producer  organizations.  We  
+conduct  a cluster-randomized controlled trial in rural Senegal in which we vary the number and the 
+type of smallholder farmers — members and/or leaders of local producer  organizations  — invited to 
+a three-day  training  on collective  commercialization. We  use this variation  to identify  
+effects on  intra-group  trust,  both  direct  treatment  effects  of  having  participated  in  
+the  training  and spillover  effects  on  farmers  who  did  not  partake.  Looking  at  different 
+ measures  of  trust  in leaders'  competence  and  motives  and  of  trust  in  members  we  find  
+that  participating  in  the training significantly enhances both trust in leaders and trust in 
+members. For trust in leaders, we also find a strong spillover  effect. Our findings  suggest  that 
+relatively  soft and non-costly interventions  such  as  a  group  training  appear  to  be  able  
+to  positively  affect  trust  within producer organizations.
+
+
+JEL Classification:      D71, O12, Q13
+
+Keywords:        rural producer organizations, smallholder farmers, trust, Senegal
+
+
+Corresponding  author:
+
+Markus Frolich University of Mannheim L7, 3-5
+68131 Mannheim Germany
+E-mail: froeIich@uni-mannheim.de
+
+
+
+
+
+
+
+
+
+”  We  gratefully  acknowledge   financial  support  from  the  German  Federal  Ministry  for  
+Economic Cooperation  and  Development  through  the  funding  initiative  for  International  
+Agricultural  Research Centers  and  from  the  International  Food  Policy  Research  Institute  
+Mobile  Experimental  Economics Laboratory.  We  are  also  grateful  to  FONGS,  GRET  and  PINORD 
+ for  a  fruitful  collaboration.  We acknowledge   valuable  comments   of  participants   at  the 
+ 2015  Development   Economics   Network Workshop,  Berlin,  and  at  the  2015  Conference  on  
+Development  Economics,  Kiel.  Shaikh  Tanvir Hossain and Katrin Reich provided excellent research 
+assistance.
+
+
+1    Introduction
+Rural  Producer  Organizations  (RPOs)¹ can  provide  smallholders  in developing countries  with 
+better access to input and output markets (Markelova et al., 2009; Rondot  and Collion,  2001; The 
+World Bank,  2008).  Acting collectively  within RPOs is often seen as an effective means to reduce 
+transactions costs, to gain bar- gaining power, to obtain necessary market information, and to get 
+access to new technologies  and high value markets  (Devaux  et al., 2009;  Poulton  et al., 2010; 
+Stockbridge  et al., 2003).  While examples  of  successful  collective  action  exist, such as 
+coffee production, grading and export in Ethiopia (Kodama, 2007), green bean exports in Kenya 
+(Narrod et al., 2009) and cotton production and exports in Mali (Tefft, 2004), many RPOs in 
+developing countries struggle to offer the type of  services  that  would  lead  to higher  output  
+prices for their  members  (Bernard et a1., 2008a, 2010; Fafchamps and Hill, 2005; Markelova et 
+al., 2009). Instead of commercializing their produce collectively,  smallholders frequently  opt 
+for sell- ing it individually  to traders at the farmgate (Fafchamps and Hill, 2005).'
+Whether collective commercialization takes place or not is highly correlated with  the  ability  to 
+ coordinate  and  the  prevalence  of  trust³  within  a  RPO  (Hill et al., 2014; Shiferaw  et 
+al., 2011).  Mistrust  between  farmers  can even  lead  to the disintegration of  RPOs (Masakure  
+and Henson,  2005).  Typically,  RPOs  are member-driven  organizations  whose success depends on 
+their members'  partici- pation in joint activities.  Reasons for members  being  reluctant to 
+participate  in collective commercialization largely play out at the intra-RPO level (Bernard and 
+Wouterse, 2015). First, farmers may struggle with liquidity constraints and hence
+'“Producer organizations are membership-based organizations or federations of organizations with  
+elected  leaders  accountable  to  their  constituents.   They  take  on  various  legal  forms,  
+such as cooperatives,  associations,  and societies”  (The World  Bank,  2008,  p.  154).  In this 
+paper,  we analyze farmer  groups  in Senegal  that  provide  members  with services.  Hence,  they 
+ differ from NGOs which also provide services to non-members (Bernard and Wouterse, 2015).
+2This  paper  implicitly  builds  on  the  assumption  that  collective  commercialization  is  
+more
+efficient  than  individual  marketing.   See,  for example,  Bernard  et a1.  (2008b)  for 
+evidence  that cooperatives’  members  achieve  higher  prices  for  their  produce  than  
+non-members  in  Ethiopia, Shiferaw et al. (2008) for evidence that collective commercialization 
+achieves higher output prices than individual sales to traditional  buyers in Kenya,  and Wollni 
+and Zellner (2007) for evidence that  commercialization  through  cooperatives  achieves  higher  
+output  prices  in  Costa  Rica.   See Section 2.2 for details about prices achieved by farmers in 
+our sample.
+3We define  trust as “a particular  level of  the subjective  probability  with  which  an agent  
+as- sesses that another agent or group of agents will perform a particular action” (Gambetta, 2003, 
+p. 277) and hence  do not regard  it as being a form of  social capital  in itself,  but rather as 
+being a measurable link between social capital and collective action (Ostrom and Ahn, 2003).
+
+
+3
+
+
+
+decide  against  participating  in  collective  commercialization as  it  involves  sub- stantial 
+delays in payment as compared  to individual farmgate sales (Fafchamps and Hill, 2005). Second, 
+farmers need to have sufficient trust in their leaders'  mo- tives and competences.  The sales 
+processes  of collective  commercialization are typically executed by few leaders and are not 
+transparent for members.  Members may  fear to not  be paid at all or that price increases  that 
+occur through  bulking will not  be shared  with them fairly  (Buck and  Alwang,  2011;  Hill et 
+al., 2014). Third, a farmer's decision to participate in collective commercialization is likely to 
+be affected by her belief about the behavior of fellow farmers.  Trust in fellow members'  and  
+their  commitment  is  needed  to  believe  that  the  minimum  num- ber of produce will be reached 
+for bulk sales and, hence, to decide to participate (Bernard et a1., 2014).
+According to the theoretical framework provided by Ostrom and Ahn (2003), success  and  failure  of 
+ collective  action  is determined  by  a complex  configura- tion  of  various  forms  of  social  
+capital—trustworthiness⁴, networks  and  institu- tions⁵—which enhance trust.  Trust is seen as the 
+core link between  social capi- tal and collective  action.  It reduces opportunistic  behavior  
+and transaction  costs (Collier,  2002;  Ostrom  and  Ahn,  2003;  Putnam,  1993).   “Trust  
+lubricates  co- operation”  (Pretty  and Ward,  2001,  p.211).  We expect  that  a training  
+interven- tion can strengthen existing horizontal and vertical networks and may even create new 
+ones through  repeated  interaction  of  farmers.  We further expect  a training intervention  to 
+clarify  the process  of collective  commercialization and the rules involved and, thus, to create 
+a common understanding of the relevant institutions. We hypothesize  that such increases in social 
+capital will lead to a positive effect of a training intervention on trust in members and on trust 
+in leaders.
+We conduct  a cluster-randomized controlled  trial to test these hypotheses  in the context of RPOs 
+in Senegal.  We randomly invited members and/or leaders to participate in a three-day training to 
+build social capital in order to induce mem- bers and leaders  to coordinate  towards  successful  
+collective  commercialization. The training itself  consisted  of  three days of interactive  
+discussion  on the bene- fits, conduct and constraints of collective commercialization and was 
+executed in
+⁴The term trustworthiness refers to intrinsic motivation as an independent reason for behaving 
+cooperatively (Ostrom and Ahn, 2003).
+⁵Institutions are the rules of the game that people devise (North, 1990).  They specify  which 
+actions and outcomes are required,  prohibited,  or permitted,  and which sanctions  are authorized 
+(Ostrom and Ahn, 2003).
+
+
+4
+
+
+
+collaboration with GRET (a French NGO) and PINORD (a Senegalese NGO). In all treated  RPOs,  a 
+general  assembly  was convened  shortly  after the training  to discuss its content with 
+non-participants.  All participating  RPOs had stated col- lective commercialization as one of 
+their main objectives despite facing important difficulties in aggregating their members'  
+produce.⁶
+We assess how this intervention  affects trust in a sample of 798 smallholder farmers from 73 RPOs. 
+ We analyze both intention-to-treat effects, i.e., the treat- ment effect  of  the invitation  to 
+participate  in the training,  and  treatment  effects of  the  training  itself.   Our  main  
+outcome  variables  of  interest  are  survey  mea- sures  of  trust in leaders'  competence  and 
+motives  and survey  measures  of  trust in members  (Twyman et al., 2008).  We distinguish  
+between  trust in leaders'  in- tegrity, informational advantage, efficiency and negotiation 
+skills, and general and farming-specific trust in members.⁷ In each RPO we randomly varied the 
+number of  members  and leaders invited  to the training and interviewed  both invited and 
+non-invited individuals.  This enables us to analyze (i) the average treatment effect of whether or 
+not a RPO was selected for training, (ii) the direct treatment effect of  whether  or not  an 
+individual  was selected  for training,  and  (iii) the spillover effect on non-treated individuals 
+in treated RPOs.
+Our  results  suggest  a  positive  treatment  effect  of  the  training  on  measures of  both  
+trust in leaders  and  trust in  members.   For trust in leaders,  the effect  is especially  
+pronounced  for trust in their integrity  and their informational  advan- tage.   Moreover,  
+results  suggest  a  strong  spillover  effect  on  trust  in  leaders  of non-treated members, 
+i.e., that the sizable positive average treatment effect is not to be attributed solely to personal 
+treatment. The spillover effect is especially pro- nounced for trust in leaders'  integrity and 
+their negotiation  skills.  We show that while RPOs may face several constraints with respect to 
+coordination towards col- lective commercialization, a relatively simple and non-costly group 
+training may contribute  to a substantial  change in  trust  in leaders  and  trust  in  members  
+and, thus, to clearing a barrier to collective commercialization and other collective en- deavors.  
+ Social  capital  is often  thought  to increase  with  use,  thus,  the training may well have 
+been the starting point for more collective endeavors to come.⁸
+’See Section 3 for details on the training intervention  and the sample.
+⁷See Section 4.2 for details on the measures of trust.
+8 Bernard et al. (2014) show for a subsample of groundnut farmers that the training intervention 
+indeed  had a positive effect on  the quantity  of  produce  commercialized collectively  through  
+the RPOs.
+
+
+
+The  remainder  of  this  paper  is organized  as follows:  We  begin,  in Section 2, by describing 
+ the institutional  background  of RPOs in Senegal  and the issues with collective  
+commercialization through such organizations.  In Section  3, we describe  the  cluster-randomized  
+controlled  trial.   In  Section  4,  we  develop  the hypotheses  tested in this paper and 
+describe our measures of trust.  In Section 5, we present our empirical strategy and estimates of 
+the treatment effects on RPO- level and, in Section 6, on individual level. We conclude in Section 
+7.
+
+2    Background:  RPOs in Senegal
+2.1    Institutional  setting
+Seven out of  ten rural households  in Senegal  are members  of  RPOs,  and RPOs have expanded  
+rapidly in number and membership in the last decades.  Between 1982 and 2002, the percentage of 
+villages with RPOs rose from 8 to 65 percent in Senegal (The World Bank, 2008).  Senegal is a 
+country with a vast array of rural institutions in thousands  of villages and with strong 
+national-level organizations (Bernard and Wouterse, 2015).
+The history of agricultural  and development policy in Senegal since indepen- dence can  be divided 
+ into  two main  periods:  two decades  of  state intervention followed by two decades of 
+liberalization.  Like in many other developing  coun- tries,  the Senegalese  government  initiated 
+ cooperatives  in the 1960s  which  pri- marily  dealt  with the commercialization of  groundnuts.  
+ The entire  value chain of agricultural production of groundnuts and cotton was organized and 
+controlled by state entities such  as producer cooperatives  that were in charge  of  providing 
+extension,  inputs  and  credit  to farmers  as  well  as of  collecting,  processing  and 
+exporting  output.  Farmers typically considered  cooperatives  as an extended arm of  the  
+government  rather  than  as  an  organization  that  they  owned.   Support  of the international 
+community  led to the creation  and development of regional or- ganizations for rural development  
+which aimed at specializing  and transforming agricultural  systems  in  the different  
+agro-ecological  zones.   However,  these  or- ganizations  focused on the cultivation  of  a 
+particular  type of  crop which was in contrast  to the reality of rural smallholders  typically  
+cultivating  several types of crops (Bernard et al., 2014; Bernard and Wouterse, 2015).
+In the 1970s,  this system of  rural development  went into crisis.  Throughout
+
+
+6
+
+
+
+the country, farmers founded the first independent farmers'  organizations  to rep- resent their 
+own interests. In 1978, the Federation of Senegalese NGOs (FONGS) was established to reinforce 
+solidarity and communication  among farmer groups, to  foresee  their  training  needs  and  to  
+interact  with  the  outside  world  on  their behalf.  Foreign  stakeholders  became increasingly  
+interested  in farmers'  organi- zations as partners for development  projects.  In the 1980s,  the 
+new agricultural policy which followed  the near bankruptcy  of the country and a bail-out deal by 
+the International Monetary Fund advocated the complete withdrawal of the state from  agriculture.   
+Consequently,  the government  facilitated  the emergence  of  a new  category  of  organizations  
+with  a  more  flexible  legal  status.   These  groups grew rapidly due to the support of their 
+creation  and their preferential  treatment for obtaining  credit.  To defend  its own interests,  
+FONGS  undertook  ambitious projects at the national level such as cereal banks.  In 1993, FONGS 
+initiated the creation of a platform (CNCR) consisting of seven national federations of farm- ers, 
+livestock producers, fishermen, horticultural producers and rural women.  Its objective  was  to 
+promote  dialogue  and  the exchange  of  experience  between  its members,  to encourage  pooling  
+of  resources  and  competences  and  to serve  as voice for the farmer  movement  versus the state 
+and donors.  In 1995,  two other federations joined bringing the platform's total number of members 
+up to about 3 million rural dwellers.  In 1996, an NGO (ASPRODEB)  was founded  that could disburse 
+funds of  various  donors  and  offer services  to rural  producers  (Bernard et al., 2014;  
+Bernard  and Wouterse,  2015; Mercoiret,  nd; Réseau  des Organisa- tions Paysannes et Pastorales 
+du Sénégal, 2008; The World Bank, 2008).
+The  role,  functioning  and  capacity  of  RPOs  has  changed  significantly  with
+the gradual  liberalization of  the agricultural  sector.  They  have evolved  towards independent 
+member-controlled entities capable of dealing with various kinds of partners.   Yet,  these  RPOs  
+face  new  challenges  in ensuring  the commitment  of members.  This is particularly  true for 
+activities related to collective commercial- ization  of  agricultural  output.   In fact,  while  
+RPOs  remain  active  in  input  and credit  provision,  their  capacity  to aggregate  output  has 
+ been  weakened  consid- erably.   At time of  harvest,  producers  are now  visited  by  private  
+collectors  and traders.   This  has  led  to important  side-selling,  produce  is  not  marketed  
+solely through the RPOs.  As a result, RPOs are seldom able to aggregate the necessary amount of 
+produce to trigger economies of scale and bargaining  power at time of commercialization.  This  is 
+despite isolated  evidence  that  RPOs in Senegal  can
+
+7
+
+
+
+in fact provide their members with profitable and reliable output commercializa- tion services.  In 
+sum, in the absence of a sufficient amount of aggregated output, RPOs are not in a position to 
+effectively obtain higher output prices which leads to further  side-selling  and  a lack of  
+interest  of  members  for commercialization services offered by these organizations (Bernard et 
+a1., 2014).
+
+2.2    Collective action in Senegalese RPOs
+Generally, problems of collective action arise “whenever individuals face alterna- tive courses of 
+actions between short-term self-regarding choices and one that, if followed  by a large enough  
+number of individuals  in a group,  benefits all” (Os- trom and Ahn, 2003, p.  xiv).  In the 
+context of commercialization of agricultural produce,  farmers  who  are organized  in RPOs  can  
+choose  between  selling  their produce  directly  at the farmgate  to a local  trader  with 
+immediate  payment  and selling it collectively  through  their RPO. Farmers in our sample 
+cultivate either groundnuts, rice, or onions as their main crop.’ While groundnut farmers primar- 
+ily sell their groundnuts either individually or collectively for private gains, onion farmers  
+have been observed  to engage in joint collection and commercialization of firewood.  Rice farmers 
+use part of their gains from selling their rice (privately or collectively) for financing 
+irrigation systems.
+For collective  commercialization of  any  type of  produce,  the RPO's leaders will typically  
+negotiate  with a contract  buyer who offers a higher price than the local traders if a minimum 
+amount of  produce is sold.  This quantity is typically too large to be reached  by  just one 
+individual  farmer  such  that complying  with the contract  requires  coordination  among  the  
+members  of  the  RPO.  Moreover, these contracts tend to be rather discrete in the sense that they 
+are void if a certain threshold of aggregated produce is not met and payments are usually made some 
+time after the farmers delivered their produce to the RPO for collective commer- cialization  
+(Bernard  et a1.,  2014).  In our sample,  two thirds of  the farmers  who report to have sold to 
+traders in the 2010/2011  agricultural  season  (March  2010 to March 2011) state that they 
+received the payment on the day of the transaction while only one quarter of  the farmers  who sold 
+through  the RPO report to have received the payment on the day the transaction took place.
+Senegalese  RPOs  appear  to be facing  significant  constraints  when  it comes
+9There is no heterogeneity  within any RPO in our sample regarding the main crops cultivated by 
+members and leaders.
+
+8
+
+
+
+to  collective  action  in  the form  of  collective  commercialization of  agricultural produce.  
+Although  RPOs in our sample were selected  based on collective com- mercialization being one of  
+their main objectives,  only  roughly one third of  the RPOs  in  our  sample  report  to  have  
+engaged  in  collective  commercialization in the 2010/2011 agricultural season.¹⁰ On average, 
+farmers who sold their produce through  the  RPO in  the 2010/2011  season  achieved  higher  
+prices  per  kilogram than  those  who  sold  their  produce  individually.   Only  one quarter  of 
+ the farm- ers  who sold their produce individually  to local  traders  regularly  dealt  with the 
+same traders.  When asked about difficulties faced when selling their produce in- dividually, only 
+20 percent of the respondents indicated that there were no major problems.  For the remaining 
+respondents,  the main issue was lack of transporta- tion  means  to  reach  more  lucrative  
+markets  (cited  by  48  percent)  followed  by insufficient  visits by potential buyers (17 
+percent), lack of knowledge about cur- rent  prices  (15 percent) and lack of  sufficient  quantity 
+ of  produce  to be able to negotiate a better price (8 percent).
+While lack of  financial  means  and  technical  capacities  at the RPO level  are likely to be 
+significant constraints to collective commercialization, members'  per- ception of collective 
+commercialization and issues of coordination between mem- bers also seem to represent important 
+constraints, independent of the type of crop to be sold collectively.  Leadership  has been shown 
+to be a key element of  suc- cessful coordination  within RPOs (Agrawal, 2001; Bernard and 
+Wouterse,  2015; Markelova  et al., 2009).'    On the one hand, leaders  need to have the necessary 
+skills for the collective  marketing  and relevant  links  to outsiders.  On  the other hand, 
+members need to trust their leaders (Arcand, 2002; Markelova et al., 2009). In those RPOs that 
+engaged  in collective  commercialization, only 44 percent of the farmers  delivered  part  of  
+their  produce  to  the  RPO  to  be  sold  collectively. Respondents  state three main reasons  
+for why  they chose  to sell individually  in spot market-like transactions to local traders rather 
+than collectively  through their RPO:  most  find  collective  commercialization to  be  too  risky 
+ (without  specify-
+'⁰We consider a RPO to be engaged in collective commercialization if at least one farmer sold his 
+or her main produce (groundnut, onion, or rice) through the RPO.
+''A   commonly  found  organizational structure  in  Senegalese  RPOs  involves  a  relatively  
+cir- cumscribed sub-group of members bearing more responsibilities and more influence than others. 
+Leadership status is often associated  with traditional social roles (Arcand, 2002).
+
+
+
+
+
+9
+
+
+
+ing the exact nature of this risk),'² some do not believe that it offers them a better price then 
+selling individually, and to others collective commercialization appears to be a complicated  
+process that takes up too much time.'3
+RPOs engaging in collective commercialization differ significantly from those who did not engage in 
+collective sales in the 2010/2011 agricultural  season (see Table 1).¹⁴ Their members are younger, 
+own more motorcycles, are more likely to have savings accounts with banks and MFIs, and have larger 
+fields. They cultivate groundnuts  and  rice  more  often  than  onions.   Moreover,  we  find  
+significantly higher average trust levels in RPOs that engaged in collective commercialization than 
+in those that did not.
+Farmers who contributed part of their produce to collective commercialization in the season prior 
+to the baseline data collection appear to be significantly  more trusting  than  those  who  did  
+not  contribute  (see  Table  2).   Moreover,  they  are more  likely  to be literate  than  those  
+who did  not contribute,  less likely  to be  a member, less likely to be related to a leader, more 
+likely to have a savings account, have larger  fields and  more  motorcycles,  and  are  younger.   
+They  are also  more likely to come from ethnically heterogeneous  RPOs, have been members of their 
+RPO for a shorter time period,  are more likely  to be cultivating  groundnuts  and less likely  to 
+be cultivating  onions.  Looking  at different  measures  for trust,  we find  a significantly  
+positive  pairwise correlation  between  several  trust  measures and  an  indicator  for  whether  
+a  RPO  engaged  in  collective  commercialization. Similary,  we  find  a  significantly  positive 
+ pairwise  correlation  between  several trust  measures  and individual  participation  in 
+collective  commercialization  (see Table 3).
+
+
+
+
+
+'°The risk inherent in collective commercialization may be categorized into two types of risk: the 
+price risk associated with freely working markets and the risk associated with being dependent on 
+others’ behavior. On the intra-RPO level, the outcome of collective commercialization depends on 
+the number of fellow farmers  who participate as well as the competence  and behavior of the 
+leaders involved in the transactions.
+'’50  percent  of  the  respondents  stated  risk  as  a reason,  30 percent  the  price  and  26 
+percent the inconvenience  (numbers do not add up to 100 percent as answers  were given in free 
+text and each  person  could  provide several reasons).  Information on this question is only  
+available for a subsample of groundnut farmers.
+’⁴See Appendix A for a definition of all variables used in the empirical analysis.
+
+10
+
+
+
+
+
+
+
+
+Table  1:   Descriptive  statistics  by  collective  commercialization  activity  on RPO level (RPO 
+characteristics and RPO averages of individual  character- istics)
+
+
+Variable
+Mean          Standard        Mean if RPO not            Mean if RPO deviation      active in 
+collective      active in collective
+commercialization      commercialization
+Difference
+
+
+trust outcomes
+(N=69)
+(N=49)                        (N=20)
+
+efficiency farming general information integrity negotiation trust_factor trust_sum
+additional covariutes
+0.69      0.22
+0.64      0.21
+002       0.23
+070       0.21
+070       0.22
+0.64      0.21
+—0.04      0.50
+3.99      1 18
+0.66
+0.62
+0.59
+0.67
+0.68
+0.61
+—0.11
+382
+0.77
+0.69
+0.70
+0.78
+0.77
+0.71
+—0.15
+4.42
+-0.11*
+—0.08
+—0.11*
+-0.11””
+—0.09
+-0.10”
+—0.26“
+—0.61”
+age°                                  55.50            10.44                   57.33                
+          51.16                                 6.18*“
+bicycles                               0.17              0.25                     0.14              
+              0.22                              —0.07
+distance to market             10.38            29.71                  11.49                        
+    7.68                                 3.81
+distance to storage            11.94            18.56                   12.08                       
+   11.58                                 0.51
+groundnut                            0.41              0.49                     0.31                
+            0.65                              —0.34***
+hectares                               3.56               2.88                     2.91             
+               5.30                              —2. 40***
+heterogeneity                       0.36              0.48                     0.31                 
+           0.50                              —0.19
+household size                  12.71              4.09                   12.58                     
+     13.05                              —0. 46
+literate                                 0.42              0.31                     0.40            
+                0.47                              —0.08
+male                                    0.42              0.29                     0.41             
+               0.46                              —0.06
+member                               0.79              0.15                     0.81                
+            0.75                                 0.06
+members'  initiative             0.30              0.25                     0.30                    
+        0.33                              —0.03
+motorcycles                         0.16              0.21                     0.13                 
+           0.23                              —0.10*
+onion                                   0.46              0.50                     0.61             
+               0.10                                 0.51***
+phone                                  0.95              0.07                     0.94              
+              0.96                              —0.02
+related to leader                  0.63              0.35                     0.64                  
+          0.60                                 0.04
+rice                                      0.13              0.34                     0.08           
+                 0.25                              —0.17*
+savings in  bank                   0.13              0.15                     0.10                  
+          0.21                              —0.11*““
+savings in MFI                    0.32              0.18                     0.28                   
+         0.40                              —0.12***
+size°                                  31.83              8.28                   31.73              
+            32.05                              —0.32
+vehicles                               0.09              0.19                     0.09              
+              0.12                              —0.03
+year of creation°           1996.70            10.30              1996.40                      
+1997.42                           —  1.02
+year joined                    1999.53              7.54              1999.54                      
+1999.49                                 0.05
+Notes:  Information  on collective  commercialization in the 2010/2011  season  is only  available  
+for 69 out of  73 RPOs. We report averages and standard deviations in the sample of 69 RPOs, 
+averages in the subsamples of RPOs that did and did not engage in collective commercialization in 
+the 2010/2011 season and results of two-sample t tests with the null of equal means in RPOs not 
+having engaged and having engaged in collective commercialization.
+°  Information  on  these  variables  is  only  available  for  64  out  of  69  RPOs  of  which  
+45  did  not  engage  in  collective commercialization in the 2010/2011  season and 19 did.
+I'  Information  on  these  variables  is  only  available  for  62  out  of  69  RPOs  of  which  
+45  did  not  engage  in  collective
+commercialization in the 2010/2011 season and 17 did.
+* p <  0.10, ** p  <  0.05, *** p <  0.01
+
+
+
+
+
+
+
+
+11
+
+
+
+
+
+
+
+
+Table 2:  Descriptive statistics by collective commercialization activity on in- dividual level
+
+
+Variable
+
+
+
+trust outcomes
+Mean          Standard deviation
+
+(N=538)
+Mean if farmer not active in collective commercialization (N=467)
+Mean if farmer active in collective commercialization (N=71)
+Difference
+
+efficiency farming general information integrity negotiation trust  factor trust_sum
+addition‹il  covariates
+0.69
+0.fi4 0.62 0.70 0.71 0.63
+—0.04
+3.99
+0.46                     0.67
+0.48                     0.fi3
+0.49                     0.61
+0.46                     0.67
+0.4fi                     0.fi9
+0.48                     0.60
+1.03                  —0.09
+2.41                     3.87
+0.85
+0.70
+0.70
+0.86
+0.03
+0.83
+0.30
+4.77
+—0.18“**
+—0.07
+—0.10
+_    Age•
+—0.14**
+—0. 23***
+—0.39““*
+—0. 91***
+age°                                  55.4ñ               9.85                   5ñ.1ñ              
+             51.03                                5.13“**
+bicycles                               0.15              0.49                     0.14              
+              0.21                             —0.07
+distance to market             12.90            52.43                   13.55                       
+     8.64                                 4.91
+distance to storage            14.32            24.24                   14.22                       
+   15.00                              —0. 78
+groundnut                            0.47              0.50                     0.42                
+            0.82                              —0.40““*
+hectares                               4.27              5.27                     3.85              
+              6.88                              —3.02***
+heterogeneity                       0.35              0.48                     0.31                 
+           0.58                              —0. 27***
+household sized                              12.97              7.02                   12.96        
+                  13.06                              —0.10
+literate*                                    0.44                0.50                        0.40   
+                              0.69                                  -0.28”””
+male                                    0.49              0.50                     0.50             
+                0.46                                 0.03
+member                               0.75              0.43                     0.77                
+            0.62                                 0.15***
+members'  initiative             0.31              0.24                     0.31                    
+        0.32                              —0.02
+motorcycles                         0.16              0.45                     0.14                 
+           0.28                              —0.14**
+onion                                   0.42              0.49                     0.47             
+               0.07                                0.40***
+phone                                  0.95              0.21                     0.95              
+              0.99                              —0.04
+related to leader                  0.65              0.48                     0.67                  
+          0.53                                0.13**
+rice                                      0.12              0.32                     0.12           
+                 0.11                                0.00
+savings in bank                   0.12              0.32                     0.10                   
+          0.24                             —0.14***
+savings in MFI                    0.36              0.48                     0.32                   
+         0.56                              —0. 24***
+size"                                  31.49              6.54                   31.56              
+             31.09                                 0.4T
+vehicles                               0.06              0.33                     0.05              
+              0.11                             —0.06
+year of creation°           1997.14            10.49              1997.32                      
+1995.99                                 1.34
+year joined                    1999.79              8.90               2000.23                      
+1997.06                                 3.16***
+Notes:  Information  on collective  commercialization  in the 2010/2011  season is only  available  
+for 538 of  795 farmers belonging to 69 out of 73 RPOs. We report averages and standard deviations 
+for a sample of those 538 farmers, averages in the subsamples  of farmers that did and did not 
+engage in collective  commercialization in the 2010/2011  season and results  of  two-sample  t 
+tests  with  the  null of  equal  means  among  farmers  not  having  engaged  and  having  engaged 
+ in collective commercialization.
+°  Information  on these variables is only available for 493 out of 538 farmers of  which 426 did 
+not engage in collective commercialization in the 2010/2011 season and 67 did.
+Information  on these variables is only available for 468 out of 538 farmers of  which 404 did not 
+engage in collective commercialization in the 2010/2011 season and 64 did.
+* p      0.10, ** p      0.05, ***  p      0.01
+
+
+
+
+
+
+
+
+12
+
+
+
+
+
+Table 3: Correlation  between trust and collective commercialization
+
+Panel A (N=538):  Pairwise correlation between different measures of trust and individual 
+participation in collective commercialization
+negotiation     integrity      information     efficiency     general      farming     trust_sum    
+ trust_factor
+contribution     0.1609“**       0.1067**     0.1362“**        0.1297“**     0.0685      0.0512     
+ 0.1271***     0.1271***
+Panel B (N=69): Pairwise correlation between averages of different measures of trust and collective 
+commercialization activity on RPO level
+negotiation     integrity      information     efficiency     general      farming     trust_sum    
+ trust_factor
+sales                0.2202*          0.1820        0.2452**         0.2327*        0.2297*     
+0.1709      0.2344*        0.2343*
+Notes:  In Panel A we report pairwise correlation coefficients  between a binary indicator for 
+individual contribution  to collective commercial- ization  in the 2010/2011  season and individual 
+ trust measures  and, in Panel  B, between  a binary indicator  for having engaged  in collective 
+commercialization at RPO level in the 2010/2011 season and averages of trust measures at baseline.
+*  p     0.10,**  p     0.05, ***  p     0.01
+
+
+
+Overall,  results  from  this  section  support  the idea  that  trust  in  leaders  and in  
+members  may  play  a  significant  role  in  fostering  collective  commercializa- tion.  Aiming  
+at enhancing  trust  within  RPOs  to encourage  collective  commer- cialization, we organized a 
+three-day training and discussion around the potential benefits and difficulties  of coordinating  
+towards  collective commercialization in partnership with GRET and PINORD.
+
+3    Intervention
+We  investigate  issues  of  intra-group  coordination  and  trust  using  a  sample  of Senegalese 
+village-level RPOs for which we conducted a baseline survey in Novem- ber and December 2011. At 
+that time people may have assumed that there would be subsequent  activities  following  the 
+survey,  but no details on the intervention were given.  On the contrary, it was intentionally  
+left unclear that there would be an intervention  for some  interviewees  in  the future.  The 
+sample for  which  the baseline  survey  was conducted  was  drawn  from  a dataset  of  204 RPOs  
+from 9 federations  belonging  to FONGS  collected  in 2009 from  which  we selected  all 
+organizations  that stated collective  commercialization as one of  their main  pur- poses. 73 RPOs 
+belonging to 7 federations satisfied this criterion. Figure 1 shows the location of the sampled 
+RPOs.
+We randomly  assigned  an invitation  to the training  intervention  to those 73 RPOs as follows:
+•   23 RPOs served as pure control group, they were not invited to participate in the training 
+intervention
+•   50 RPOs received an invitation to participate in the training intervention
+
+—  in 12 RPOs,  between one and four leaders but no members  were in- vited to the training
+—  in 15 RPOs,  between one and four members  but no leaders were in- vited to the training
+—  in 23 RPOs, between one and four members and between one and four leaders were invited to the 
+training
+In each of the treated RPOs, at least two persons received an invitation.  Invitees were  randomly  
+selected  from  lists  of  members  and  leaders  obtained  from  the
+
+14
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Figure 1: Location of sample RPOs in Senegal.
+Map    file     downloaded     from     hL Cp : / /www . maprna k er   dafi a . eo . uk .
+s3—website—eu—west—1.amazonaws.com/library/stacks/
+Af ri  ca  / S eve  ga 1/ i   nde x . htm, retrieved on 6 March 2015.
+
+2009 survey.  In all treated RPOs, a general assembly  was convened shortly after the training  to 
+discuss  its content  with non-participants.  To be able to consider both  direct as well  as 
+spillover  effects,  we interviewed  both  invitees  as  well  as non-invited individuals.  In each 
+RPO, 10 non-invited individuals  were randomly selected for interviewing  purposes.
+The treatment and interview assignments were not fully respected in all RPOs. In some RPOs, more 
+than four members (leaders) were invited.  There were also instances  where  some  invitees  did  
+not  participate  in  the  training,  where  more than  the  intended  number  of  individuals  
+participated  in  the  training,  or  where the distribution  of  members  and leaders was not 
+fully respected.  Moreover,  the number  of  actually  interviewed  individuals  (including  
+invitees)  ranges  from  4 to  16  per  RPO  instead  of  the  targeted  10  to  18.   Furthermore, 
+ due  to  missing information  on outcome variables,  we have to drop 8 individuals  belonging  to 
+7 RPOs  from our  sample.   All in all,  we  work  with a sample  of  798 interviewed individuals  
+consisting  of  150 invitees,  447  non-invited  individuals  from  treated
+
+
+
+15
+
+
+
+RPOs, and 201 individuals from control RPOs.¹⁵
+The intervention consisted of a three-day training conducted in January 2012. During  the  
+training,  all  participants  were treated  the same,  i.e.,  members  were not  treated  
+differently  from  leaders.   The  purpose  of  the  training  was  to create awareness of the 
+(potential) advantage of working together towards commercial- ization of  agricultural  produce  
+and highlight  particular  group dynamics  that are conducive  to collective action.  In terms of 
+content, role plays, simple games and group exercises were to demonstrate the advantages of working 
+together in terms of  the benefits  that can be generated  and the costs that can be saved.  
+Particular focus  was put on sharing information  and increasing  transparency.   Participants were 
+encouraged  to communicate the message they took away from the training to non-trained fellow 
+farmers from their RPO upon return.  One part of the train- ing was to put together a plan for how 
+these messages can be communicated  and discussed with other group members.
+The training sessions were organized in three modules, one for each day:  (1) the potential and 
+pitfalls of collective commercialization, (2) coordination  within organizations—the role of  
+communication  in collective  commercialization, and
+(3) motivation for coordination—members and leaders.'⁶  An endline survey was conducted 2 to 4 
+weeks after the training.
+In this paper we focus on estimating immediate effects of the intervention  on intra-group 
+relations. We do not capture long-term effects which would also have been interesting  considering  
+that trust  may need time to grow.  We cannot fully preclude a courtesy  bias, i.e., that the 
+respondents  give the socially desirable an- swer when reporting higher trust levels after the 
+intervention.  However,  baseline and endline data were collected via independent interviewers.  
+They were not per- ceived as being related to GRET and PINORD,  the organizations  implementing the 
+training,  and were ignorant  of  the treatment  status of RPOs  as well as indi- viduals.  This 
+separation of implementation and data collection should  minimize the risk of a courtesy  bias.  If 
+we found a spillover effect on trust of non-invited individuals  in treated  RPOs,  we would be 
+even less concerned  about a courtesy bias.  Indeed, our findings suggest that the intervention  
+had an impact on trust of non-invited  individuals  (see Section 6), thus mitigating concerns  
+related to such
+’⁵See Appendix  B.1 for  more  details  on  the  one-sided  noncompliance.   The  distribution  of 
+RPOs  and  farmers  by  intended  and  actual  treatment  status  as  shown  in  Tables  B.1 and  
+B.2  in Appendix B.1 underline that treatment assignment is balanced which we further assess in 
+Table 4.
+'⁶The complete training manual is available from the authors upon request.
+
+16
+
+
+
+bias.
+Table 4: Balancing tests at RPO level
+
+
+Variable
+Mean          Standard           Mean in                Mean in deviation      control group      
+treatment group
+Difference
+
+
+trust outcomes
+(N=73)
+(N=23)                  (N=50)
+
+efficiency farming general information integrity negotiation trust_factor trust_sum
+additional covariutes
+070
+0.64
+0.%3
+070
+0.71
+0.63
+—0.03
+4.01
+023       0.69
+021       062
+023       062
+020       0.73
+022        072
+020        0.61
+050       —0.04
+1.I7               3.98
+0.70
+0.65
+0.64
+0.69
+0.71
+0.64
+—0.02
+4.0’3
+—0.02
+—0.03
+—0.02
+0.04
+0.01
+—0.03
+—0.02
+—0.04
+age°                                  55.65            10.18               53.78                    
+56.60                                  —2.82
+bicycles                               0.21              0.34                 0.15                  
+    0.24                                  —0.09
+collective  sales                   0. 29              0.46                 0.18                    
+  0.34                                  —0.16
+distance to market             10.16             28.91                 5.59                    
+12.26                                  —6.67
+distance to storage*          12.88            20.45                 5.62                    16.51  
+                              — 10.89**
+groundnut                            0.38              0.49                 0.26                    
+  0.44                                  —0.18
+hectares*                             3.84              4.34                 2.64                   
+   4.43                                  —1. 79
+heterogeneity                       0.36              0.48                 0.30                     
+ 0.38                                  —0.08
+household size*                12.70              4.01              11.61                    13.25  
+                                — 1.64
+literate*                               0.43              0.31                0.46                  
+    0.41                                     0.05
+male                                    0.41              0.29                 0.41                 
+     0.42                                  —0.01
+member                               0.79              0.15                 0.81                    
+  0.7O                                     0.03
+members'  initiative             0.62              0.49                 0.52                      
+0.66                                  —0.14
+motorcycles                         0.18              0.30                 0.14                     
+ 0.20                                  —0.07
+onion                                   0.47              0.50                 0.57                 
+     0.42                                     0.15
+phon               0.95      007        0.94         0.95               001
+related to leader*                 0.fi3              0.35                 0.73                     
+ 0.58                                     0.15
+rice                                      0.15              0.36                 0.17               
+       0.14                                     0.03
+savings in bank                   0.14              0.16                 0.13                      
+0.15                                  —0.02
+savingsinMFI                    0.33              0.19                 0.30                      
+0.35                                  —0.05
+size°                                  31.38              8.37               31.48                  
+  31.33                                     0.14
+vehicles                               0.11              0.21                0.13                   
+   0.10                                     0.04
+year of creation°           1996.69            10.08          1994.96                1997.58        
+                          —2.62
+year joined“                  1999.48               7.40          1998.87               1999.78     
+                             —0.90
+Notes:  We report averages and standard deviations for the full sample of 73 RPOs, averages in the 
+subsamples of RPOs in  treatment  and  control  group and  results  of  two-sample  t tests  with  
+the null  of  equal  means  in control  and  treatment group at baseline.
+°  Information on these variables is only available for 68 out of 73 RPOs of  which 45 belong to 
+the treatment group and 23 to the control  group.
+I'  Information on this variable is only available for 69 out of 73 RPOs of  which 47 belong to the 
+treatment group and 22
+to the control group.
+° Information on these variables is only available for 66 out of 73 RPOs of  which 44 belong to the 
+treatment group and 22 to the control  group.
+* p      0.10,** p  <  0.05, *** p  <  0.01
+
+
+To ensure that the assignment  of the treatment is independent of any baseline characteristics,  we 
+ run  a series  of  balancing  tests  relating  RPO's  invitations  to participate in the training 
+to individual and RPO-level characteristics. In Table 4 we report means of individual and RPO-level 
+characteristics in invited and non- invited RPOs at baseline as well as results from two-sample t 
+tests with the null of equal means in invited and non-invited RPOs.  Results suggest that the 
+treatment
+17
+
+
+
+allocation is fully independent  of  average baseline  trust levels,¹⁷ and a range of further  
+covariates.   Treatment  and  control  group  only  differ  significantly  with respect to the 
+average walking distance of the farmers to the RPO's storage site.¹⁸ Multivariate tests for 
+equality of means of baseline trust in invited and non-invited groups reveal no significant 
+differences between  treatment  and control groups.¹⁹ Within invited RPOs, we find no significant 
+differences in average baseline trust when comparing invitees and non-invitees  (see Table 5 for 
+details on binary trust measures and Table B.4 in Appendix B.2 for details on ordinal trust 
+measures).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+'⁷See Table B.3 in Appendix B.2 for balancing tests using ordinal trust measures. ’⁸Information on 
+this variable is only available for 66 out of 73 RPOs.
+'⁹Wilks’ lambda statistic 0.8651, Pillai's trace statistic 0.1349, Lawley-Hotelling trace statistic 
+and Roy's largest root statistic 0.1560, p-value 0.1311.
+
+18
+
+
+
+
+
+
+
+
+Table 5: Changes in trust by intended treatment status at individual level
+
+
+Trust outcomes      Sample                             N        Baseline (BL)      Endline (EL)
+negotiation             A. Invitees                      150              0.68                     
+0.77
+B. Non-Invitees  inT       447              0.63                     0.75
+C. Non-Invitees  in C      201              0.61                     0.62
+Diff.  A B P-value                             0.2999                 0.7531
+Diff. B C P-value                             0.6070                 0.0006
+integrity                 A. Invitees                      150              0.74                    
+ 0.79
+B. Non-Invitees  inT       447              0.69                     0.69
+C. Non-Invitees  in C      201              0.71                     0.59
+Diff.  A B P-value                             0.2807                 0.0251
+Diff. B C P-value                             0.6459                 0.0096
+information            A. Invitees                      150              0.71                     
+0.82
+B. Non-Invitees  in T      447              0.68                     0.74
+C. Non-Invitees  in C      201              0.72                     0.68
+Diff.  A B P-value                             0.5117                 0.0546
+Diff. B C P-value                             0.2677                 0.0824
+Diff. BL EL P-value
+0.0940
+0.0001
+0.8379
+
+
+0.3433
+0.9423
+0.0089
+
+
+0.0209
+0.0325
+0.3290
+
+efficiency
+
+
+
+
+general
+
+
+
+
+farming
+
+
+
+
+trust_sum
+A. Invitees                      150              0.75                     0.83
+B. Non-Invitees  in T      447              0.68                     0.70
+C. Non-Invitees  in C      201              0.68                     0.64
+Diff.  A B P-value                             0.1378                 0.0012
+Diff. B C P-value                             0.9852                 0.1232
+A. Invitees                      150              0.64                     0.78
+B. Non-Invitees  inT       447              0.62                     0.65
+C. Non-Invitees  in C      201              0.61                     0.54
+Diff.  A B P-value                             0.7289                 0.0032
+Diff. B C P-value                             0.6773                 0.0084
+A. Invitees                      150              0.66                     0.78
+B. Non-Invitees  in T      447              0.64                     0.67
+C. Non-Invitees  in C      201              0.61                     0.56
+Diff.  A B P-value                             0.6556                 0.0136
+Diff. B C P-value                             0.4970                 0.0064
+A. Invitees                      150              4.17                     4.77
+B. Non-Invitees  in T      447              3.95                     4.21
+C. Non-Invitees  in C      201              3.95                     3.63
+Diff.  A B P-value                             0.3311                 0.0087
+Diff. B C P-value                             0.9785                 0.0036
+0.0657
+0.6131
+0.5448
+
+
+0.0074
+0.4043
+0.1906
+
+
+0.0206
+0.2913
+0.3123
+
+
+0.0162
+0.1062
+0.1730
+
+trust_factor             A. Invitees                      150              0.04                     
+0.29
+B. Non-Invitees  in T      447             -0.05                    0.05
+C. Non-Invitees  in C      201             -0.05                   -0.19 Diff.  A B P-value         
+                    0.3266                 0.0080
+Diff. B C P-value                             0.9994                 0.0041
+0.0168
+0.1178
+0.1652
+Notes: We report averages of  different trust measures in subsamples of invitees, non-invitees in 
+the treatment group (T— treatment  group),  non-invitees  in  the control  group (C—control  group) 
+ at  baseline  (BL—baseline)  and endline  (EL— endline) as well as p-values of two-sample t tests 
+with the null of equal means.
+
+
+
+
+
+
+
+
+19
+
+
+4    Experimental  design
+4.1    Hypotheses
+Ostrom and Ahn (2003) provide a theoretical  framework for analyzing issues of collective action 
+which can be applied to analyzing collective commercialization as an example of collective action.  
+Success and failure of collective action is de- termined by a complex configuration  of various 
+factors which they categorize as forms  of  social  capital.   They  argue  that  the different  
+forms  of  social  capital— trustworthiness,  networks and institutions—enhance trust  which they  
+see as the core link  between  social capital  and collective  action.  Figure  2 shows the rela- 
+tionships between the forms of social capital, trust, and collective action.
+
+Forms of Social Capital
+
+Trustworthiness               Contextual Variables
+
+
+
+
+Networks
+
+
+
+Institutions
+Trust
+Collective Action
+
+Figure 2: Social capital, trust, and collective action.
+(Ostrom and Ahn, 2003, p. xvii)
+
+Trust reduces opportunistic behavior and, thus, transaction costs (Collier, 2002; Putnam, 1993).  
+Applied to the context of collective commercialization in RPOs, farmers  who are organized in RPOs 
+need to be trustworthy  and sufficiently  con- nected  with each other,  and  the RPO needs  to 
+provide  adequate institutions  for trust to be prevalent  within  the RPO and for collective  
+commercialization to be successful.  Trust in leaders allows the trusting farmer to commit to 
+commercial- ization despite the risk of loss if the leaders do not behave as the trusting farmer 
+expected.  Trust in members allows the trusting farmer to commit to commercial- ization despite the 
+risk of loss if the fellow farmers do not participate in the joint endeavors as expected by the 
+trusting farmer.
+If  the training  intervention  increases  the different  forms  of  social capital,  it
+
+20
+
+
+
+will enhance trust and ultimately lead to more successful collective commercial- ization and 
+potentially other collective endeavors in treated RPOs. Putnam (1993) distinguishes between 
+horizontal networks bringing together individuals of equiv- alent status, e.g. fellow members or 
+fellow leaders, and vertical networks bringing together individuals from different hierarchical  
+levels, e.g. members and leaders. Dense  horizontal  networks  with  the capability  of  
+efficiently  transmitting  infor- mation  across  individuals  create  incentives  to  behave  in  
+a  trustworthy  manner. Repeated  interactions  among  individuals  are  seen  as  a sign  of  
+robust  networks (Ostrom  and  Ahn,  2003).   We expect  that  the  training  intervention  
+strengthens existing horizontal  and vertical networks and may even create new ones through 
+repeated  interactions  of  farmers.   Put  differently,  we expect  the intervention  to have a 
+positive effect on participating leaders’ trust in other leaders and on partic- ipating  members’  
+trust in other members  through  tightening  existing  bonds  and creating  new ones during  and 
+after the joint field trip to the training.  Similarly, in RPOs where both members and leaders 
+participate,  the training may increase trust between leaders and members through strengthening 
+and/or creating vertical networks. We hypothesize that such increases in social capital will 
+materialize in a positive treatment effect on trust in members and on trust in leaders.
+Both  networks  and institutions  change the incentive  structure  of  individuals
+with institutions creating incentives for both the trusting and the trusted party to behave  in  a  
+trustworthy  manner  (Ostrom  and  Ahn,  2003).   We  expect  that  the intervention  clarifies the 
+process of collective commercialization as one form of collective action and the rules involved 
+and, thus, creates a common understand- ing  of  the relevant  institutions.   In other  words,  
+trained  members  (leaders)  may obtain a better understanding of leaders’ (members’) role and 
+position which may increase members’ (leaders’) trust in leaders (members) even if no leaders (mem- 
+bers)  are  present  during  the training.   Further,  the intervention  may  also create positive 
+spillover effects, i.e., increase non-participants’ trust in leaders and mem- bers. Participants 
+may convey their newly acquired understanding of leaders’ and members’ role and position to 
+non-participants during the general assembly held shortly after the training. We hypothesize that 
+such increases in social capital will again  materialize  in a positive treatment  effect on trust 
+in members  and on trust in leaders.
+
+
+
+
+21
+
+
+4.2    Measures of trust
+We  consider  six  survey  measures  of  trust  capturing  different  aspects  of  trust within  a  
+RPO  that  we  consider  to  be  important  for  successful  collective  com- mercialization. We 
+distinguish between trust in leaders and trust in members.
+Measuring general trust²⁰ in unknown others based on the standard trust ques- tion used in the 
+General Society Survey (GSS)²¹ or the World Values Survey²² has been challenged on the grounds that 
+it is unclear what this question actually mea- sures  (Beugelsdijk,  2006;  Durlauf,  2002; Sobel,  
+2002;  Yamagishi  et al.,  1999). Results from relating general trust in strangers as stated in the 
+survey question to behavior in experimental  trust games are mixed.²3
+However,  survey  measures  are  commonly  used  for  studying  trust  as  a col- lective property 
+of organizations, i.e., for studying trust in known others.  In the management  literature,  the 
+perception  of the characteristics of significant  others within the working context is looked at 
+for studying trust between and within or- ganizational  levels (Tschannen-Moran and Hoy, 2000).  We 
+borrow from this lit- erature to asses how characteristics of members and leaders are perceived 
+within the RPO context.²⁴ For trust in leaders, we distinguish  between trust in their mo- tives 
+and trust  in their competence  with regard  to collective  commercialization. Trust  in leaders'  
+motives  refers  to a farmer's  beliefs  that  the leaders  are  other- regarding or not, i.e., 
+that the leaders have motives to perform an action beneficial to others or not. Trust in leaders'  
+competence refers to a farmer's beliefs that the leaders have credible expertise  (Buck and Alwang, 
+ 2011; Twyman  et a1., 2008).
+20General trust is a baseline expectation of others' trustworthiness (Yamagishi, 2001).
+²'“Generally  speaking,  would you say that most people can be trusted or that you can't be too 
+careful in dealing with people?”—“Most people can be trusted.”  or “Can't be too careful.”
+22  Generally  speaking,  would  you say that most  people can be trusted  or that you  need to be
+very careful in dealing with people?”—“Most people can be trusted.” or “Need to be very careful.” 
+²³Glaeser et al. (2000) find in a sample of students at Harvard University that trust as stated in 
+the survey  has no predictive power for trust elicited from the trust game, but for 
+trustworthiness. For a representative sample of the German  population,  Fehr et al. (2002) find a 
+relation of  trust as  measured  in  the  survey  and  experimental  trust,  but  not for  
+trustworthiness.   Sapienza  et  al. (2007)  find  that  trust  as  stated  in  the  survey  
+predicts  experimental  trust  for  a  sample  of  MBA students at the University of Chicago.  For 
+a heterogeneous  Dutch sample, Bellemare and Kroger (2007)  find  no significant  link  between  
+trust  as  measured  in  the survey  to neither experimental trust nor trustworthiness. Naef and 
+Schupp (2009) have developed a new survey measure for trust in strangers  that is  more  precise  
+that  the GSS  question  and  have  used  it in  the  German  Socio-
+Economic  Panel  showing  that  survey  and  experimental  measures  of  trust  are  connected  in  
+the sense that the trust game measures trust in strangers.
+²⁴See Kramer (1999) and Mollering  et al. (2004) for reviews of the conceptualization of trust in 
+organizational theory and the benefits of and conditions for trust in organizational systems. See 
+Seppanen et al. (2007) for a review of the empirical research of inter-organizational trust.
+
+22
+
+
+
+We consider four aspects of  trust in leaders  asking  respondents  to which extent they agree with 
+the following statements:
+(1)  “The RPO's  board  is capable  of  negotiating  better prices for our  produce than I am 
+capable of myself.”
+(2)  “Board members defend the RPO's interests and their own interests in equal measure.”
+(3)  “If  the RPO's  board  says that I can achieve  better prices if  I wait a little, they do so 
+because they have adequate information.”
+(4)  “If I invest my money or my produce in the RPO, it will be used efficiently.”
+For trust in members,  we consider both general trust and trust specific to the farming context 
+asking respondents to which extent they agree with the following statements:
+(5)  “The majority of people in my RPO are trustworthy.”
+
+(6)  “I can trust the people from the RPO to look after my field during  an ab- sence of two 
+months.”
+Originally,  all trust measures  are recorded  on a four-point Likert-type  scale. The items to 
+choose from are (1) “Do not agree at all”, (2) “Do not really agree”,
+(3) “Agree”,  and (4) “Fully agree”.  However,  given that the average trust levels at baseline are 
+well above 3 for all measures of trust (see Table B.4 in Appendix B.2), we use binary  variables  
+as regressands  in the empirical analysis  which are equal to one if respondents fully agree with 
+one of the above statements.
+Hence, for trust in leaders, we create a binary variable negotiation equal to one if the respondent 
+fully agrees  with the first statement,  a binary  variable integrity equal to one if  the 
+respondent  fully  agrees  with the second  statement,  a binary variable  information  equal  to  
+one  if  the  respondent  fully  agrees  with  the  third statement,  and  a binary  variable  
+efficienc y equal  to one if  the respondent  fully agrees with the fourth statement. For trust in 
+members, we create a binary variable general equal to one if the respondent fully agrees with the 
+fifth statement, and a binary variable jarring equal to one if the respondent fully agrees with the 
+sixth statement.
+Moreover,  we create two comprehensive  indices  of  trust.  For trust_sum  we take  the  sum  over 
+ the  six  binary  trust  measures  such  that  values  of  trust_sum
+23
+
+
+
+range from 0 to 6.²⁵ For trust factor we run a factor analysis with the six binary trust measures.  
+Values of the resulting index of trust range from -1.74 to 0.81.²⁶
+
+5    Treatment effects at RPO level
+In  this  section  we  present  our empirical  strategy  and  regression  results  for  the causal 
+treatment effects of the (invitation to the) training on average trust.
+Table 6: Changes in trust by intended treatment status at RPO level
+
+
+Trust outcomes negotiation
+
+
+integrity
+
+
+information
+
+
+efficiency
+
+
+general
+
+
+farming
+
+
+trust_sum
+
+
+trust_factor
+Sample                       N       Baseline (BL)      Endline (EL)
+Control(C)                23              0.61                     0.63
+Treatment(T)            50              0.64                     0.76
+Diff. C T P-value                      0.5877                 0.0113
+Control(C)                23              0.72                     0.60
+Treatment(T)            50              0.71                     0.72
+Diff. C T P-value                      0.8566                 0.0783
+Control(C)                23              0.73                     0.69
+Treatment(T)            50              0.69                     0.77
+Diff. C T P-value                      0.3965                 0.2044
+Control(C)                23              0.69                     0.66
+Treatment(T)            50              0.70                     0.73
+Diff. C T P-value                      0.7572                 0.2345
+Control(C)                23              0.62                     0.56
+Treatment(T)            50              0.64                     0.69
+Diff. C T P-value                      0.7215                 0.0708
+Control(C)                23              0.62                     0.57
+Treatment(T)            50              0.65                     0.70
+Diff. C T P-value                      0.5602                 0.0558
+Control(C)                23              3.98                     3.71
+Treatment(T)            50              4.03                     4.38
+Diff. C T P-value                      0.8838                 0.0657
+Control(C)                23             -0.04                   -0.15
+Treatment(T)            50             -0.02                    0.12
+Diff. C T P-value                      0.8976                 0.0691
+Diff. BL EL P-value
+0.8413
+0.0029
+
+0.1156
+0.7788
+
+0.5575
+0.0670
+
+0.6719
+0.5387
+
+0.4360
+0.3513
+
+0.5411
+0.2368
+
+0.4762
+0.1843
+
+0.4682
+0.1944
+Notes:  We report averages of different trust measures in treatment group (T—treatment  group)  and 
+control  group (C— control group) at baseline (BL—baseline)  and endline (EL—endline)  as well as 
+p-values of two-sample  t tests with  the null of equal means.
+
+
+Descriptive evidence suggests a positive impact of the training intervention on intra-RPO  trust.  
+Table 6 reports two-sample t tests with the null of equal means in  baseline  and  endline  for  
+treatment  and  control  group.   Moreover,  we  report two-sample t tests with the null of equal 
+means for treatment and control group in both baseline and endline.  Treatment RPOs report higher 
+levels of average trust
+25iru5i_sHm has a mean of 4.08 and a standard deviation of 2.35.
+26trust factor has a mean of 0 and a standard deviation of 1.
+
+24
+
+
+
+at endline compared to baseline for all measures of trust. We observe statistically significant  
+differences  between  average  trust  in  leaders'  negotiation  skills  and their informational  
+advantages.  While we find no significant differences between average trust  in treatment  and 
+control group at baseline,  treatment  RPOs report significantly  higher levels of trust at endline 
+compared  to control  RPOs for trust in leaders'  negotiation skills and their integrity,  for 
+general and farming-specific trust in members, and for both comprehensive  trust indices.²⁷
+
+5.1    Empirical strategy
+To further study the intervention's impact on trust, we estimate treatment effects on RPO level. To 
+account for the one-sided noncompliance²⁸ that may be related to individual  and  RPO-level  
+characteristics,  we first  present  estimations  of  the intention-to-treat effect,  i.e.,  the 
+treatment  effect  of  the invitation  to participate in  the training  intervention.   We draw  on 
+ the random  assignment  of  the invita- tions (and the time dimension of our data) to identify the 
+causal effect of such an invitation at the RPO level on our different measures of trust.
+In our main regressions  we will allow for fixed effects to pick up differences in unobservable 
+characteristics between individuals and/or RPOs. Although treat- ment  was  randomly  assigned,  
+the relatively  small  number  of  RPOs  may  entail some small sample imbalances in observed 
+and/or unobserved characteristics. To be on the safe side, we include fixed effects.  Since our 
+analysis is based on two time periods, fixed effects regressions are identical to taking first 
+differences in a regression with no further covariates.²⁹ Thus, we estimate:
+
+(1)
+
+where  Atrust    ——  trush ,_t     trust„,q₀ is the difference between average trust
+²⁷For descriptive evidence on the intervention's impact on ordinal trust measures see Table B.4 in 
+Appendix B.2.
+28Participation in the training  intervention  was voluntary  among  those who  were invited,  but
+no one from the control RPOs had access to the training intervention.  For details on the one-sided 
+noncompliance  see Appendix B.1.
+²’Double differencing not only removes biases in an endline comparison between the treatment and 
+control  group resulting from permanent differences,  but also biases from a comparison  over time 
+in the treatment  group resulting from time trends that are unrelated  to the intervention.  The 
+key identifying  assumption  (common  trend assumption)  for the estimation of a causal treatment 
+effect is that trends in development of trust would on average be the same in treatment and control 
+groups in the absence of the training intervention (Imbens and Wooldridge,  2009).
+
+
+25
+
+
+
+in RPO p at endline 1     1 and baseline I =  0 and  RPO  invitation   is a binary variable equal 
+to one if at least one member or leader of RPO p has received  an invitation  to participate in the 
+training intervention.   v, is a random  disturbance term for RPO p.  Given  the random assignment  
+of  the invitations,  the estimated coefficient      is our main coefficient of interest, the 
+causal effect of the invitation to the  training  on  average  trust.   It captures  both  the  
+treatment  effect  for those individuals  who have personally  been invited (direct  treatment  
+effect) and those who have only been interviewed  (spillover effect)  which  we will disentangle  
+in Section 6.
+For illustrative  purposes,  we  also report  results  of  level  regressions,  i.e.,  of 
+regressions  without fixed effects.  Using endline data, we estimate the following linear model:
+
+(2)
+
+where  true „‹-   is  a  measure  of  average  trust  in RPO  p at endline  t  =  1 and 
+fififi_tnrttatiou, is defined as above.  Hence,  fit  is our main coefficient  of in- terest in 
+this model,  the average causal effect of the invitation to the training  on average trust. e   is 
+a random disturbance term for RPO p.
+To  address  concerns  with  regard  to  statistical  inference  in  the  small  cross- section 
+sample of 73 RPOs, we provide both OLS standard errors and classical in- ference as well as 
+randomization  inference. For the intention-to-treat estimations based  on  equations  (1)  and  
+(2),  we  implement  permutation  tests  which  do  not rely on asymptotic approximation and whose 
+properties are hence independent of sample size.'⁰  Randomization  inference is based on the sharp 
+null hypothesis of no treatment  effect for anybody  and provides exact finite sample inference.  
+We conduct randomization inference by forming 9000 randomly drawn permutations of the randomization 
+ vector for the 73 RPOs and calculating the regression esti- mates using regressions  as presented 
+in equations (1) and (2).  For each outcome of interest, this provides the finite sample 
+distribution of the estimated  treatment effect under the null of no effect, upon which we base our 
+two-sided test of zero effect.   For  recent  applications  of  this  approach  see  for  example  
+Bloom  et  a1.
+*⁰Randomization  inference is typically  only done for intention-to-treat estimations.  Random- 
+ization inference in the instrumental variable regression context would required modeling assump- 
+tions since the compliance type is not known for all observations,  i.e. the counterfactual value 
+of RPO    troininp if ISO     inritotion was changed.
+
+
+26
+
+
+
+(2013) and Landmann and Frolich (2015).
+In next step, we estimate the effect of treatment on the treated, i.e., the causal effect of the 
+training intervention  on those who participated,  using the randomly assigned  invitations  as  an 
+ instrumental  variable  for  training  received.   We esti- mate:
+
+(3)
+(4)
+
+where  RPO_training    is  a  binary  variable  equal  to one  if  at  least  one  mem- ber or 
+leader  of  RPO  p participated  in the training  which  we instrument  for by RPG_inritation  . 
+The first stage regression coefficient is 0.88.  Since both the treatment  variable  and  the  
+instrument  are  binary,  the  instrumental  variable  re- gression is identical to the Wald (or 
+LATE) estimator.  The estimated effects are identical  to those of equations  (1) and (2) divided  
+by 0.88.  We therefore  report randomization  inference  only  for  the  reduced  form  
+regressions,  estimates  only differ  by  this  scaling  factor.   The  F statistic  from  the  
+first-stage  regressions  is 351.60, the adjusted fi² is 0.6937.  trust, ,_t  and fitrust, are 
+defined as above. c,  and in,  are random  disturbance  terms  for RPO  p.  Thus,  the estimated  
+coef- ficients      and      are our  main  coefficients  of  interest,  the causal effects  of  
+the training on average trust in those RPOs who participated.
+
+5.2    Regression results
+In Table 7 we report estimated  treatment effects on average trust.  In panel A we report  results  
+from  regressions  using  endline  data  while  panel  B  shows  results from first differences 
+estimations.  We present intention-to-treat effects based on reduced  form  regressions  as 
+specified  in equations  (1) and  (2),  and  we present treatment  on  the  treated  effects  based 
+ on  instrumental  variable  regressions  as specified in equations (3) and (4).
+The regression results confirm the descriptive evidence  presented above.  An invitation  to the  
+training  significantly  increases  both  comprehensive  trust  mea- sures.  The estimated  
+treatment  effect  becomes  even larger  when  looking  at the effect of the training itself on 
+average trust. In detail, we find a significantly  pos- itive intention-to-treat effect of between 
+11 and 13 percentage points for average trust in leaders'  negotiation  skills,  their integrity  
+and their informational  advan-
+
+27
+
+
+
+tage."  We further find a significantly positive intention-to-treat effect of between 10 and 13 
+percentage  points for both measures of trust in members.  These posi- tive treatment effects 
+increase to 12 to 15 percentage points when considering the effect of the training itself.
+We run several robustness  checks to confirm  these results.  First, we enlarge the model in first 
+differences by allowing for onion-specific and rice-specific time trends  and  by controlling  for 
+the number  of  invited/trained persons  per RPO.³° Qualitatively,  results  remain  unchanged  
+compared  to  the  model  in  first  differ- ences without covariates.  Second,  we follow  
+McKenzie  (2012) who argues that large improvements  in power can arise when estimating  treatment  
+effects via an Analysis of Covariance (ANCOVA) estimation compared to using the difference- 
+in-differences  specification.   We  estimate  the  ANCOVA  specifications  without covariates,  
+with controls for onion and rice cultivation  and with a control for the number of invited/trained 
+persons per RPO. Results are similar to those from the difference-in-differences estimations and 
+robust to controlling for onion and rice cultivation  and to controlling  for the number of 
+invitees/participants.  For details on these robustness checks see Appendix B.3.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*'Recall that baseline trust averages range between 0.63 for trust in leaders’  negotiation skills 
+and general trust in members and 0.71 for trust in leaders’ integrity (see Table 4.)
+’²Note that when including covariates to the model in first differences, it is no longer equivalent 
+to a fixed effects model.
+
+28
+
+
+
+
+
+Table 7: Treatment effects at RPO level
+
+
+
+Panel A: outcome variable trust
+(1)
+negotiation
+(2)
+in‹egñg
+(3)
+information
+(4)
+efficiency
+(5)
+general
+(6)
+farming
+(8)
+trust_factor
+
+
+Reduced form regressions  (conventional  and randomization inference)
+RPO_invitation                                                         0. 1333 ** '
+(0.0546)
+
+0. 1154* ' ^ (0. 0640)
+
+0.0770
+(0.0585)
+
+0.0779
+(0.0643)
+
+0.1258"
+(0.0682)
+
+0.1323* ’ ^ (0.0695)
+
+
+0.6617* ' ^ (0.3514)
+
+0. 2786* '
+(0. 1497)
+
+[p-value conventional inference]
+(p-vaJuerandonñzañoninference)
+[0.0I71]
+{0.0I38}
+[0.0755]
+{0. 0809}
+[0.1924]
+{0.2073}
+[0.2298]
+{0.2413}
+[0.0693]
+(0.0802}
+[0.0608]
+{o.oso9}
+[0.0637]
+(0.0733}
+[0.0669]
+{0. 0789}
+
+
+Instrumental variable refijressians  (conventional  inference)
+RPO_training                                                 0.1515*”
+(0.0608)
+
+0.1311* (0. 0709)
+
+0.0875
+(0.0650)
+
+0.0885
+(0.0713)
+
+0.1429*
+(0.0749)
+
+0.1504*”
+(0.0766)
+
+0.7520”
+(0.3878)
+
+0.3166* (0. 1653)
+
+[p-value conventional inference]
+
+Pm=1B:ou2omevañaMeArmr
+[0.0126]
+[0.0644]
+[0.1783]
+[0.2144]
+[0.0564]
+[0.0496]
+Afarming
+[0.0525]
+[0.0554]
+z^ktrust_factor
+
+
+Reduced form regressions  (conventional  and randomization inference)
+RPO_1nVit8t1O11                                                                   0.  1051   ^
+(0.0645)
+
+0.1257"
+(0.0649)
+
+
+0. 1208* '
+(0.0648)
+
+0.0602
+(0.0733)
+
+0.1048"’
+(0.0614)
+
+0.1017
+(0.0676)
+
+
+0.6182"”
+(0.3488)
+
+0.2623"
+(0.1489)
+
+[p-value conventional inference] (p-value randomization inFetence]
+[0.1075)
+{0.0575}
+[0.0566]
+(0.0202}
+[0.0662]
+(0.0367)
+[0.4143]
+{0.  2902 }
+[0.0922]
+(0.0555)
+[0.1368)
+{0.0707}
+[0.0805]
+{0.0331}
+[0.0823]
+(0.0340)
+
+
+Instrumental vorioble regressions (conventional inference)
+RPO_training                                                            0. 1194
+(0.0729)
+[0.1014)
+
+0.1428”
+(0.0732)
+[0.0510]
+
+0.1373’
+(0.0730)
+{0.0602]
+
+0.0684
+(0.0821)
+[0.4051)
+
+0.1191”
+(0.0686)
+[0.0826]
+
+0.1156
+(0.0757)
+[0.1271]
+
+0.7025’
+(0.3923)
+[0.0733]
+
+0.2981”
+(0. 1674)
+[0.0750]
+
+N                                73
+73                   73
+73              73                73                 73                   73
+
+Notes:  In panel A we report coetticients  from regressions using endline data regressing trust on 
+a constant and a binary treatment indicator.  In panel B we report coetttcients trom regressions 
+using  hoth baseline and endline data regressing changes in trust on  a constant and a binary 
+treatment indicator.  For instrumental variable regressions we report coefficients from two-stage 
+estimations using IP    O_*nr   it at*or as instrument for fi P O_tra*n s ng. Standard errors are 
+reported in parentheses (clustered at RPO level), p-values for conventional  inference are reported 
+in brackets, p-values for randomization  inference with 9000 random permutations are reported in 
+curly brackets.
+* p  <   0. 10,   * p  <   0. 05,    ** p  <   0. 01, for conventional  inference
+p      0. 10,         p      0. 05,     ^     p  <   0. 01, for randomization  inference
+
+
+6    Treatment effects at individual level
+In this section  we present  treatment  effects of  the (invitation  to the) training  on trust 
+based on individual-level regressions permitting us to disentangle the effect of having personally 
+been invited from a potential spillover effect on non-invited farmers  within  treated  RPOs.  We 
+start  by  assessing  descriptively  whether  trust has evolved  between  the baseline and endline 
+survey and whether it has evolved differently  in  treatment  and  control  groups.   Table  5  
+reports  two-sample  t tests with the null of equal means in baseline and endline for invitees, 
+non-invitees in invited RPOs and for non-invitees in non-invited RPOs. Moreover, we report two- 
+sample t tests with the null of equal means for invitees and non-invitees in invited RPOs in both 
+baseline and endline and for non-invitees in invited and non-invited RPOs in both baseline and 
+endline. Invitees report higher levels of trust at endline compared  to  baseline  for  all  
+measures  for trust.   This  difference  is  statistically significant for all measures except for 
+trust in leaders' integrity.  Further indication of a positive direct treatment  effect comes from 
+the comparison  of invitees with non-invitees  from invited  RPOs.  While  we observe  no 
+significant  difference  at baseline,  we observe  significant  differences  for all  measures  of  
+trust  in  leaders but negotiation at endline.  We also find descriptive evidence for a positive 
+spill- over effect within invited RPOs.  Comparing  non-invitees  from invited and non- invited 
+RPOs, we find no significant differences at baseline. At endline, however, non-invitees  in invited 
+ RPOs  report  significantly  higher  trust  levels  for all trust measures but efficienc y 
+compared to non-invitees from non-invited RPOs.
+
+6.1    Empirical strategy
+To further study spillover effects and direct treatment effects, we estimate:
+
+
+
+
+
+where  fitrust„        tr ust„ ,_t      kms!,  ,‹-   is  the  difference  between  trust  of person 
+i in RPO p at endline I =  1 and baseline t =  0, spillover_incitation,  is a binary  variable 
+equal to one if some member or leader from RPO p other than person  i  has  received  an  
+invitation,  personal   invitation,  is  a  binary  variable equal  to one if  person  (  has  
+received  an invitation  to participate  in  the training
+
+30
+
+
+
+intervention,  and  r„   is  a  random  disturbance  term  for  individual  i  in  RPO  p. Hence, 
+the estimated coefficient ct  captures any potential spillover effects while 2 captures the effect 
+of having personally been invited.
+Again, we also estimate the causal effect of the training using an instrumental
+variable strategy. We estimate:
+
+
+
+where  spillover_training,   is  a  binary  variable  equal  to  one  if  some  member or  leader  
+from  RPO  p  other  than  person  i  has  participated  in  the  training  and personal_training,  
+is  a  binary  variable  equal  to  one  if  person  i  has  partici- pated  in  the training  
+intervention.   We instrument  for spi//orer_tra?Hf Hp„  and personal   trnininp,  using  RPG    
+inritntton,  and personal  inritotion,.”  The F  statistic  from  the  first-stage  regression  of  
+spillover_!roining,   amounts  to 174.18,  the  adjusted  fi²  to  0.6062.   For  persona/   
+/raininp,  the  F  statistic  is
+240.95  and the adjusted  fi² is 0.6403.  a„  is a random  disturbance  term for in- dividual  i  
+in  RPO  p,  and  fitrust„  is  defined  as  above.   Hence,  the  estimated coefficient 8t  
+captures any potential spillover effects while 32 captures the effect of having personally been 
+trained.
+To  gain  further  insights  into  spillover  effects,  we  also  estimate  regressions as 
+specified  in equation  (6) separately  for subsamples  containing  only  members or  only  
+leaders.   For  the  subsample  of  members,  we further  split  the  spillover effect by treatment 
+ type, i.e., by whether only members  were treated, only lead- ers,  or both.   In  these  
+regressions,  we instrument  for  spillorer_!rainrug,   and personnl_trnininp, by fifiO_inritatton, 
+and  personol_ini:iIation .'⁴  We in- strument for spi/lorer_tratninp  fi L,p, spillorer_tratninp  
+OM,p, spillorer_ trnininp   LM,  and persona/   training, using  RPO   invitation  GT   , RPG
+?ft F?/O/f.OTt_OM„ R PO_invitation.  LMS and personal_invi/ation;. The highly
+significant correlation coefficients range between -0.2863 and 0.9021.
+33The  highly   significant   correlation   coefficients   are  0.5702  for   spill over_training   
+and RPO   inritotion,    0.2700   for    personal   trnininp   and   ISO     inritotion,    -0.3509 
+  for personal   inritot/on   and   spill over  traiu/np   and   0.7993   for   personal   
+invitation   and
+
+3⁴The  highly   significant   correlation   coefficients   are  0.6328  for   spill o1 e.r_trainiup 
+ and RPO   inritotion,    0.2190   for    personal   trnininp   and   ISO     inritotion,    
+-0.2940   for personal   invitation   and   spill over  training   and   0.7813   for   per sonal  
+invitation   and per sonal_train ing.
+
+
+
+31
+
+
+6.2    Regression results
+In Table 8 we report estimated  treatment  effects on individual  trust.  We present 
+intention-to-treat effects based on reduced form regressions as specified in equa- tion (5), and 
+results from instrumental  variable estimations  as specified in equa- tion  (6).   Results  hint  
+at  a significantly  positive  treatment  effect  of  having  per- sonally received an invitation.  
+In detail, we find a significant personal intention- to-treat effect of 13 to 20 percentage points 
+for all individual  trust measures  but trust in leaders'  negotiation skills.'⁵ These effects 
+increase to 15 to 24 percentage points when considering  the treatment effect of the training.
+To gain further insights into spillover effects and direct treatment effects, we rerun  estimations 
+ as  specified  in equations  (5)  and  (6)  on  subsamples  contain- ing only members or only 
+leaders.  Results are presented in Tables 9 (members) and  10  (leaders).   In  Table  9 we  
+present  intention-to-treat  effects  based  on  re- duced form regressions  on a subsample  of 
+members as specified in equation  (5) and  results from instrumental  variable estimations  on  a 
+subsample  of  members as specified  in equation  (6).  For members  we find both  a significantly  
+positive personal  treatment  effect  as  well  as a  significantly  positive  spillover  effect.   
+In particular,  we find significantly  positive direct treatment  effects of  19 to 20 per- centage 
+points for trust in leaders'  integrity and their informational advantage as well as a significant  
+personal intention-to-treat effect of 18 percentage points on general  trust and farming  specific  
+trust in members.  For trust  in leaders'  nego- tiation  skills,  their  integrity,  and  their  
+informational  advantages,  results  appear to  be indicating  a  significantly  positive  
+spillover  effect  of  15  to  16  percentage points.  This may be attributed  to untrained members 
+ believing that trained lead- ers have gained relevant skills (trust in competence)  and that 
+trained leaders are less  likely  to  privately  capture  rents  (trust  in  motives).   We  
+further  split  these spillover effects into spillovers in RPOs where only leaders were invited 
+(partic- ipated), RPOs where only members were invited (participated) and RPOs where both leaders 
+and members were invited (participated). Results presented in Table 9 hint at the spillover effects 
+in trust in leaders being most pronounced in RPOs where either only leaders or only members were 
+invited (participated). Given the small sample size in the subsample  containing only leaders 
+(N=168),  results for this subsample present inconclusive (see Table 10).
+3⁵The  average  baseline  trust levels  range from 0.62 for general  trust  in  members  to 0.71 
+for trust in leaders'  integrity.
+
+32
+
+
+
+
+
+Table 8: Treatment effects at individual level
+
+
+(1)                      (2)                        (3)                       (4)                   
+     (5)
+finegotiation         fiintegrity          fiinformation        fiefficiency             figeneral
+Reduced  form regressions
+(6)                         (7)                         (8)
+fifarming            fitrust_sum         fitrust_factor
+
+spillover  invitation personal  invitation
+0.1109
+(0.0686) 0.0T67 (0.0765)
+0.1221”
+(0.0692)
+0.1710””
+(0.0723)
+0.1097
+(0.0702)
+0.1581““
+(0.0753)
+0.0604 (00T78) 01314’
+(0.0786)
+0.0915
+(0.0649)
+0.2047““
+(00186)
+0.0833
+(0.0721)
+0.1698””
+(0.0811)
+0.5779
+(0.3792)
+0.9117”“
+(0.3946)
+0.2451
+(0.1618)
+0.3892””
+(0.1682)
+Instrumental  variable regressions
+spillover_training               0.1289                0.1362*                 0.1220               
+  0.0643                  0.0970                    0.0894                  0.6378                  
+0.2703
+(0.0792)     (0.0795)      (0.0808)     (0.0887)      (0.0735)       (0.0820)      (0.4332)      
+(0.1849)
+
+personal  training
+0.0743       0.1891”      0.1754”      0.1516’       0.2365’”      0.1948”      1.0217”      
+0.4364”
+(0.0852)     (0.0782)      (0.0829)     (0.0841)      (0.0873)       (0.0890)      (0.4248)      
+(0.1808)
+N                                       798                     798                       798       
+              798                       798                        798                       798    
+                   798
+Notes:  The number of invited/trained persons in treated RPOs ranges from  2 to 16.  Hence,  it is 
+impossible  to be the only invited/treated person in a treated RPO. We report  coefficients  from 
+regressions  using  both  baseline  and endline  data regressing  changes  in trust  on a constant, 
+ a  binary  indicator  for personal  treatment and a binary indicator for treatment of others.  For 
+instrumental  variable regressions  we report coefficients from two-stage estimations  using  RPO  
+invitation and personal   inritotion as instruments for spillover  brain in g and personal  brain 
+in g. Standard errors are reported in parentheses (clustered at RPO level).
+*  p     0.10, **  p     0.05, ***  p     0.01
+
+Table 9: Treatment effects at individual level—subsample of members
+
+Reduced  form regressions
+(1)
+Anegotiation
+(2)
+Aintegrity
+(3)                          (4)
+Ainformation           Aefficiency
+(5)
+Ageneral
+(6)
+fifarming
+(7)
+fitrust_sum
+(8)
+fitrust_factor
+
+spillover  invitation personaI_invitation
+Instrumental  variable  repressions
+spilIover_training persona1_training
+Reduced  form regressions
+spillover_invitation_OL spillover_invitation_OM spillover  invitation   LM personaI_invitation
+Instrumental  variable  regressions
+0.1614““
+(0.0T09) 0.1351 (0.00TT)
+
+0.1873** (0.0531)
+0.1381
+(0.1165)
+
+0l67T’ (00850) 0.1829** (0.0832)
+0.1429“
+(0.0814)
+0.1351
+(0.0979)
+0.15T5““
+(0.0701)
+0.1881“”
+(0.0806)
+
+0.1801”
+(0.0817) 0.20T5” (0.0917)
+
+0.1859””
+(0.0810)
+0.1844“”
+(0.0880)
+0.1225“
+(0.0732)
+0.1881””
+(0.080T)
+0.1508“* (0.0694)
+0.2020**
+(0.0843)
+
+0.1714“* (0.0808)
+0.2271**
+(0.0973)
+
+0.1414
+(0.0915) 0.1771* (0.0920) 0.1382* (0.0743) 0.2020** (0.0844)
+0.09T9 (0.0823)
+01342
+(0.09Li7)
+
+0.1111
+(0.0945)
+0.1514
+(0.1093)
+
+0.0747
+(0.0934)
+0.1193
+(0.1018)
+0.0967
+(0.0864)
+01342
+(0.0968)
+0.0805
+(0.0667)
+0.1838”
+(0.0601)
+
+0.0879 (0.0T62) 0.2196*” (0.0923)
+
+0.0626
+(00764)
+01072
+(00830)
+00727
+(00747)
+01838”
+(00803)
+0.0849
+(0.0710)
+0.1778““
+(0.0646)
+
+0.0934
+(0.0613)
+0.2108””
+(0.0965)
+
+0.11T2 (0.0796) 0.083U (0.0830)
+0.0667 (0.07T0) 0.1M8” (0.0849)
+0.7330“
+(0.3758)
+1.0211““
+(0.4289)
+
+0.8311“
+(0.4335) 1.1545** (0.4817)
+
+0.T495” (0.4222)
+0.8549“ (0.471T) 0.639T (0.39T8)
+1.0211””
+(0.4296)
+0.3118“
+(0.1605) 0.4351** (0.1830)
+
+0.3535* (0.1852) 0.4921* (0.2055)
+
+0.3181* (0.1806)
+0.3fi39* (0.2017)
+0.2723
+(0.1696) 0.4351** (0.1833)
+
+spillover_training_OL spillover_training_OM spillover_training_LM personal   training
+0.2000”                 0.2217””               0.1687                0.0892                0.0747   
+               0.1398                  0.8940”                   0.3795”
+(0.1054)               (0.I0I3)               (0.t066)             (0.1080)              (0.0876)   
+             (0.0003)                (0.4930)                  (0.2112)
+0.3245“                 0.3279““               0.3307“               0.2105                0.2197   
+               0.1780                  1.5914“                   0.6769”
+(0.1690)                (0.1515)                (0.1809)              (0.1800)              
+(0.1466)                (0.1567)                (0.8499)                  (0.3630)
+0.1282                  0.1030                  0.1113                0.08J4                0.0434  
+                0.0J82                  0.5075                    0.2162
+(0.08T6)                (0.0737)                (0.0780)              (0.0859)              
+(0.0775)                (0.0764)                (0.4039)                  (0.1720)
+0.1306                  0.2008““               0.2176“”             0.144G                0.2113’“  
+             0.2080““               1.1129““                 0.4743“*
+(0.1153)               (0.0904)                (0.0958}              (0.1078)              (0.0910) 
+               (0.0944)                (0.4756)                  (0.2028)
+N                                                     630                           630             
+              630                         630                         630                           
+630                          6308                             630
+Notes:  We  report  coefficients  from  regressions  on  the subsample  of  members  using  both  
+baseline  and  endline  data regressing  changes  in trust  on a constant,  a binary  indicator  
+for personal treatment and a binary indicator for treatment of others (binary indicators for 
+treatment of others by group type). For instrumental  variable regressions  we report coefficients  
+from two-stage esti- mations using  RPO_inritotion and personn/_tnritotIon as instruments for spit 
+I or er_tr aiming and personn/_troininp and from two-stage estimations  using  RPO_inritotion_O L, 
+RPO_inritntion_OM,  RPO_inritntIon_fiM   and  per sonol_inr ttatton  as  instruments  for  spoil I 
+or er_tr aininp_OL,  spi I I ouer_troininq_OM,  spil 1orer_troininp_LM   and personof_troininp. 
+Standard errors are reported in parentheses (clustered at RPO level).
+* p      0.10, ** p      0.05, *** p      0.01
+
+
+
+
+Table 10: Treatment effects at individual level—subsample of leaders
+
+(1)                      (2)                      (3)                      (4)                     
+(5)                      (6)                      (7)                         (8)
+finegotiation        fiintegrity        fiinformation       fiefficiency          figeneral         
+  fifarming         fitrust_sum          fitrust_factor
+Reduced  form regressions
+
+spillover  invitation           —0.1270            —0.0159             —0.0714             —0.1071  
+             0.1706               0.0992            —0.0516
+(0.1281)            (0.1091)             (0.1212)             (0.1101)             (0.1099)         
+    (0.1262)             (0.5918)
+personal  invitation           —0.1498            —0.0242             —0.0507             —0.0085   
+            0.2017               0.1027               0.0713
+(0.1291)            (0.1085)             (0.1287)             (0.1120)             (0.1248)         
+    (0.1313)             (0.6108)
+Instrumental variable  regressions
+—0.0260
+(0.2516)
+0.0296
+(0.2595)
+spillover_training             —0.1318             —0.0155             —0.0804             —0.1333  
+             0.1771               0.1057            —0.0783                —0.0382
+(0.1421)            (0.1189)             (0.1322)             (0.1177)             (0.1208)         
+    (0.1382)             (0.6382)                (0.2712)
+
+personal  training
+—0.1595            —0.0264             —0.0498                0.0059               0.2149           
+    0.1075               0.0926                   0.0392
+(0.13T2)            (0.1141)             (0.1373)             (0.1169)             (0.1337)         
+    (0.1396)             (0.6425)                (0.2729)
+N                                         168                    168                     168        
+             168                    168                    168                    168               
+         168
+Notes:  We report coefficients from regressions on the subsample of leaders using both baseline and 
+endline data regressing changes in trust on a constant, a binary indicator  for personal treatment  
+and a binary indicator  for treatment of others.  For instrumental  variable regressions  we report 
+coefficients  from two-stage estimations using RPO    inritntion and  personal   invitation as 
+instruments for spillover  training and  per sonal   trnininp. Standard errors are reported in 
+parentheses (clustered at RPO level).
+*  p     0.10, *“  p     0.05, *““  p     0.01
+
+
+We  run  similar  robustness  checks  on  the full  sample  of  798 farmers  as  we did for the 
+treatment  effects  on  RPO level.  First,  we enlarge  the model  in first differences  by  
+allowing  for  onion-specific  and  rice-specific  time  trends  and  by controlling for the number 
+of invited/trained persons per RPO. Qualitatively, re- sults  remain  unchanged  compared  to the  
+model  in first differences  without  co- variates.  Second,  we estimate ANCOVA  specifications 
+without covariates,  with controls  for  onion  and  rice  cultivation  and  with  controlling  for 
+ the  number  of invited/trained persons per RPO. Results are similar to those from the difference- 
+in-differences estimations and robust to controlling for onion and rice cultivation and  to 
+controlling  for  the number  of  invitees/participants.   For details  on  these robustness 
+checks, see Appendix B.4.
+Besides  having  an impact  on intra-RPO  trust  in both  members  and  leaders, the training 
+intervention may have also affected farmers' perception of their RPO. Data about the true and 
+perceived level of  information  is scarce in our data set. We have information on how well farmers 
+know their own RPO, namely whether they believe to know how many members their RPO has. This 
+question was only included in the endline survey.  In Table 11 we report the percentage of farmers 
+stating  that  they  know  the size of  their  RPO  by  intended  treatment  status.   On average,  
+farmers from invited  RPOs feel significantly  better informed  about the size of their RPO than 
+farmers in the control group. This difference is dominated by farmers who were personally invited, 
+but also non-invited farmers in the treat- ment group fare better than farmers in the control 
+group.  Apparently, the training was able  to provide farmers  with information  they  were 
+previously  lacking.  In line with this, we find that farmers in invited RPOs appear better 
+informed about the potential benefits of an efficiently working RPO, and also a significant differ- 
+ence when looking at the evaluation of the actual RPOs (see Table 11).  Farmers from invited RPOs 
+are significantly  more confident than farmers from the control group that their RPO can help to 
+overcome hindrances  that they encounter when selling individually.
+
+
+
+
+
+
+
+
+36
+
+
+
+Table 11: Perception of RPO at endline by intended treatment status
+
+
+Panel A (N=798):  Do you know how many members  there are in your group (approximately)?
+treatment                                                                                      
+control       total
+52.93                                                                                          
+33.83       48.12
+invitees                        non-invitees
+
+
+p-value 0.0000
+74.67                               45.64                                                           
+                          0.0000
+Panel B (N=532):  Do you think an efficient group could overcome hindrances you encounter selling 
+individually? treatment                                                                             
+         control       total                               p-value
+97.96                                                                                          
+95.68       97.37                              0.1493
+invitees                        non-invitees
+95.61                               98.92                                                           
+                          0.0350
+Panel C (N=533):  Do you think your group could overcome hindrances you encounter selling 
+individually? treatment                                                                             
+         control       total                              p-value
+67.18                                                                                          
+52.86       63.41                              0.0025
+invitees                        non-invitees
+67.26                               67.14                                                           
+                          0.9827
+Notes:  We report  the  percentage  of  persons  answering  the questions  affirmatively  at 
+endline  as well  as the p-value  of two-sample  t-tests  with  the null of equal  means.  Samples  
+in  panels B and C are smaller  than  the sample in  panel  A as people who stated to not be facing 
+any constraints  when selling individually  did not answer these questions.
+
+7    Concluding remarks
+Although many positive examples from both developed and developing countries exist,  many  RPOs  
+still  struggle  to offer  the type of  commercialization services that would lead to higher output 
+prices for their members.  In this paper, we have argued that trust in leaders'  motives and 
+competence as well as trust in members are  crucial  for  successful  collective  commercialization 
+ as  a form  of  collective action.
+We conduct  a cluster-randomized controlled  trial in  the context  of  RPOs  in Senegal.  We 
+randomly  invited  members  and/or leaders to participate in a three- day training to induce 
+members and leaders to coordinate towards successful col- lective commercialization.  The training 
+itself  consisted  of three days of interac- tive discussion on the benefits, conduct and 
+constraints of collective commercial- ization.  In all treated  RPOs,  a general  assembly  was 
+convened  shortly  after the training to discuss its content with non-participants.
+We find a positive treatment effect of the training on both trust in leaders and trust  in  
+members.   For  trust  in  leaders,  the  effect  is  especially  pronounced  for trust  in  
+leaders'  integrity  and  their  informational  advantage.   Moreover,  results suggest a strong 
+spillover effect on non-treated members for trust in leaders, i.e., that the sizable positive  
+average treatment  effect is not to be attributed  solely to personal  invitation.  This may  be 
+attributed  to untrained  members  believing  that
+
+37
+
+
+
+trained leaders have gained relevant skills (trust in competence)  and that trained leaders are 
+less likely  to privately capture rents (trust in motives).  These results are robust to the 
+inclusion of different covariates and to different specifications of the underlying model.
+These findings  suggest  that relatively  soft and non-costly  interventions  such as a group 
+training appear to be able to positively affect intra-RPO  trust and the farmer's perception of 
+coordination towards successful collective action. Further- more,  social  capital  is  often  
+thought  to increase  with  use,  i.e.,  it is  thought  of as being self-reinforcing when  
+reciprocity  connects  people leading  to increased trust and confidence  (Pretty and Ward,  2001). 
+ Thus, the training  may  well have been  the  starting  point  for  more  collective  endeavors  
+to  come.   Bernard  et  al. (2014) show for a subsample of groundnut farmers that the training 
+intervention indeed  had a positive  effect  on  the quantity  of  produce commercialized collec- 
+tively through the RPOs.  While being the motivation for this research, collective 
+commercialization is only one dimension  along  which smallholders  can  benefit from  the training 
+intervention.  Smallholders  can benefit from  the newly  gained intra-RPO trust in many ways; RPOs 
+also engage in various other joint activities aside from collective  commercialization all of  
+which require  trust among  mem- bers and leaders.  For example,  RPOs lend farming equipment  or 
+provide credit to their members.  In case of  the rice farmers,  there is good case to believe  
+that they benefit from increased trust when jointly managing irrigation systems. With 
+well-developed social capital,  local  water-users’  groups  are able to use existing resources 
+more efficiently than individuals  working alone or in competition.  The same holds true for forest 
+management practiced by some RPOs (Pretty and Ward, 2001).
+
+
+
+
+
+
+
+
+
+
+
+
+
+38
+
+
+References
+Agrawal,  A. (2001).  Common  Poperty  Institutions and Sustainable  Governance of Resources.  
+World  Development, 29(10):1649—1672.
+Arcand,  J.-L. (2002).   Producer  Organizations  in Burkina  Faso and Senegal:  A Synthesis of 
+Case Studies in Twenty Villages.  Mimeo, CERDI - CNRS, Cler- mont Fernand.
+Bellemare,  C. and Kroger, S. (2007).  On representative social capital.  European Economic Review, 
+51(1):183—202.
+Bernard, T., Collion, H., de Janvry, A., Rondot, P., and Sadoulet, E. (2008a).  Do Village  
+Organizations  Make  a Difference  in African  Rural  Development?   A Study for Senegal and 
+Burkina Faso. World  Development, 36(11):2188-2204.
+Bernard,  T.,  Sene,  L.,  Viceisza,  A.,  and  Wouterse,  F. (2014).   Leaders  needed. 
+Experimental  Evidence  from  Rural  Producer  Organizationations  in  Senegal. Mimeo, 
+International Fool Policy Research Institute, Washington, D.C.
+Bernard, T., Spielman, D., Taffesse, A., and Gabre-Madhin, E. (2010).  Coopera- tives for Staple 
+Crop Marketing. Evidence from Ethiopia. Research Monograph 164, International Food Policy Research 
+Institute, Washington, D. C.
+Bernard,  T.,  Taffesse,  S.,  and  Gabre-Madhin,  E.  (2008b).   Impact  of  coopera- tives on 
+smallholders'  commercialization behaviour:  evidence from Ethiopia. Agricultural  Economics, 
+39(2):147—161.
+Bernard, T. and Wouterse, F. (2015). Triggering collective action: Evidence from farmer groups in 
+Senegal. Mimeo, International Food Policy Research Institute, Washington, D.C.
+Beugelsdijk,  S.  (2006).    A  Note  on  the  Theory  and  Measure  of  Trust  in  Ex- plaining 
+Differences in Economic Growth.  Cambridge  Journal of Economics, 30(3):371—387.
+Bloom,  N., Eifert, B., Mahajan, A., McKenzie, D., and Roberts, J. (2013).  Does Management  
+Matter?   Evidence  from  India.   The  Quarterly  Journal  of  Eco- nomics, 128(1):1—51.
+Buck,  S.  and  Alwang,  J.  (2011).    Agricultural  extension,  trust,  and  learning: results  
+from  economic  experiments  in  Ecuador.     Agricultural   Economics, 42(6):685-699.
+Collier,  P. (2002).  Social capital and poverty:  a microeconomic  perspective.  In Grootaert, C. 
+and van Bastelaer, T., editors, The role of social capital in devel- opment:  an empirical 
+assessment, chapter 1, pages 19W1. Cambridge Univer- sity Press, Cambridge.
+
+39
+
+
+
+Devaux, A., Horton, D., Velasco, C., Thiele, G., Lopez, G., Bernet, T., Reinoso, I., and Ordinola,  
+M. (2009).  Collective  action for market chain innovation  in the Andes.  Food Polic y, 
+34(1):31-38.
+Durlauf, S. (2002).  On the Empirics of Social Capital.  The  Economic  Journal,
+112(483):459—479.
+Fafchamps, M. and Hill, R. (2005).  Selling at the Farmgate or Traveling to Mar- ket.  American 
+Journal ofA gricultural Economics, 87(3):717-734.
+Fehr, E., Fischbacher, U., von Rosenbladt, B., Schupp, J., and Wagner, G. (2002). A  nationwide  
+laboratory  -  Examining  trust  and  trustworthiness  by  integrat- ing behavioural experiments 
+into representative surveys.  Schmollers Jahrbuch, 122:519-542.
+Gambetta,  D.  (2003).   Can  We  Trust  Trust?     In  Ostrom,  E.  and  Ahn,  T.  K., editors,  
+Foundations  of  Social  Capital,  chapter  13,  pages  274—290.  Edward Elgar, Northampton, MA.
+Glaeser, E., Laibson, D., Scheinkman, J., and Soutter, C. (2000). Measuring trust.
+Quarterly Journal of Economics, 115(3):811-846.
+Hill,  R.  V.,  Maruyama,  E.,  Olapade,  M.,  and  Frolich,  M.  (2014).   Strengthen- ing 
+producer organizations to increase market access of smallholder farmers in Uganda.  Mimeo.
+Imbens, G. W. and Wooldridge, J. M. (2009). Recent Developments in the Econo- metrics of Program 
+Evaluation.  Journal of Economic Literature, 47(1):5—86.
+Kodama, Y. (2007). New Role of Cooperatives in Ethiopia: The Case of Ethiopian Coffee Farmers 
+Cooperatives.  African Stud y Monographs, 35:87-109.
+Kramer, R. M. (1999).  Trust and Distrust in Organizations:  Emerging  Perspec- tives, Enduring 
+Questions.  Annual Review of Psycholog y, 50:569—598.
+Landmann,  A. and Frolich, M. (2015).  Can health-insurance help prevent child labor?   An  impact  
+evaluation  from  Pakistan.   Journal  of  Health  Economics, 39:51—59.
+Map  Maker  Ltd  (2014).    Map  Library:   Sengal  Level  1 divisions  latitude  and longitude  
+coordinates.    Retrieved  on  6  March  2015  from  htfip : / / www . 
+mapmakerdata.co.uk.s3—website—eu—west—1.amazonaws. com/library/stacks/Africa/Senegal/index.htm.
+Markelova,  H.,  Meinzen-Dick,  R.,  Hellin,  J., and Dohrn,  S. (2009).   Collective action for 
+smallholder market access.  Food Polic y, 34(1):1—7.
+
+
+40
+
+
+
+Masakure, 0.  and Henson, S. (2005).  Why Do Small-Scale Producers Choose to Produce under 
+Contract? Lessons from Nontraditional Vegetable Exports from Zimbabwe.  World  Development, 
+33(10):1721-1733.
+McKenzie, D. (2012).  Beyond Baseline and Follow-Up:  The Case for More T in Experiments.  Journal 
+of Development  Economics, 99(2):210—221.
+Mercoiret,  M.-R.  (n.d.).  Enhancing  the Capacities  of  Rural Producer  Organisa- tions:  The 
+case of the Agricultural  Services and Producer  Organisations  Sup- port Program (PSAOP) - 
+Senegal.  Report, World Bank, Washington, D.C.
+Mollering, G., Bachmann, R., and Lee, S. H. (2004). Introduction:  Understanding organizational 
+trust—foundations, constellations, and issues of operationalisa- tion.  Journal of Managerial  
+Psycholog y, 19(6):556-570.
+Naef, M. and Schupp,  J. (2009).  Measuring Trust:  Experiments  and Surveys in Contrast and 
+Combination.  Discussion Paper 4087, IZA, Bonn.
+Narrod, C., Roy, D., Okello, J., Avendaño,  B., Rich,  K., and Thorat,  A. (2009). Public-private 
+partnerships  and  collective  action  in  high  value fruit  and  veg- etable supply chains.  Food 
+ Polic y, 34(1):8-15.
+North,  D. C. (1990).   Institutions,  Institutional  Change,  and  Economic  Perfor- mance. 
+Cambridge University Press, Cambridge.
+Ostrom, E. and Ahn, T. K. (2003). Introduction. In Ostrom, E. and Ahn, T. K., ed- itors, 
+Foundations of Social Capital, pages xi—xxxix. Edward Elgar, Northamp- ton, MA.
+Poulton, C., Dorward, A., and Kydd, J. (2010).  The Future of Small Farms:  New Directions  for 
+services,  Institutions, and Intermediation.  World  Development, 38(10):1413-1428.
+Pretty,  J. and Ward,  H. (2001).  Social Capital and the Environment.  World  De- velopment, 
+29(2):209—227.
+Putnam,  R. D. (1993).   The Prosperous  Community:  Social  Capital  and  Public Life.  American 
+Prospect, 13:35—42.
+Réseau  des Organisations  Paysannes  et Pastorales du Sénégal (2008).  Coopéra- tives  au  
+Sénégal.    Retrieved  on  11  September  2014  from  htfip : / / www . 
+resopp—sn.org/rubrique.php3?id_rubrique=l8.
+Rondot,  P.  and  Collion,  M.-H.  (2001).    Agricultural  Producer  Organizations: Their 
+Contribution  to Rural Capacity Building and Poverty Reduction.  Work- shop Report, World Bank, 
+Washington, D.C.
+
+
+41
+
+
+
+Sapienza, P., Toldra, A., and Zingales,  L. (2007).  Understanding  trust.  Working Paper 13387, 
+National Bureau of Economic Research, Washington, D.C.
+Seppanen,   R.,  Blomqvist,   K.,  and  Sundqvist,   S.  (2007).     Measuring  inter- 
+organizational trust—a criticial review of the empirical research in 1990—2003. Industrial 
+Marketing  Management, 36:249—265.
+Shiferaw,  B., Hellin, J., and Muricho,  G. (2011).  Improving  market access  and agricultural 
+productivity growth in Africa: what role for producer organizations and collective action 
+institutions?  Food Security, 3(4):475-489.
+Shiferaw,  B.,  Obare,  G.,  and  Muricho,  G. (2008).   Rural  market  imperfections and the role 
+of institutions in collective action to improve markets for the poor. Natural Resources  Forwm, 
+32(1):25-38.
+Sobel,  J. (2002).  Can  we trust social capital?   Journal  of  Economic  Literature,
+40(1):139—154.
+Stockbridge,  M.,  Dorward,  A.,  and Kydd,  J. (2003).   Farmer  Organisations  For Market Access: 
+ Learning from Success.  Briefing Paper, Department for Inter- national Development,  London.
+Tefft, J. (2004).  Building on Success in African Agriculture:  Mali's White Rev- olution:  
+Smallholder  Cotton from 1960 to 2003.  2020 Vision Focus Brief  12, International Food Policy 
+Research Institute, Washington, D.C.
+The World Bank (2008).  World Development  Report 2008:  Agriculture  for De- velopment.  Report, 
+The World Bank, Washington, D.C.
+Tschannen-Moran, M. and Hoy, W. K. (2000).  A Multidisciplinary Analysis  of the Nature, Meaning, 
+and Measure of Trust.  Review of Educational  Research, 70(4):547-593.
+Twyman, M., Harvey, N., and Harries, C. (2008).  Trust in motives, trust in com- petence: Separate 
+factors determining the effectiveness of risk communication. Judgment and Decision Making, 
+3(1):111-120.
+Wollni,  M.  and  Zellner,  M.  (2007).    Do  farmers  benefit  from  participating  in specialty  
+markets  and  cooperatives?   The  case  of  coffee  marketing  in  Costa Rica.  Agricultural  
+Economics, 37(2—3):243—248.
+Yamagishi, T. (2001).  Trust as a Form of Social Intelligence.  In Cook, C., editor,
+Trust in Society, pages 121-147. Russel Sage Foundation, New York.
+Yamagishi, T., Kikuchi, M., and Kosugi, M. (1999).  Trust, gullibility, and social Intelligence.  
+Asian Journal of Social Psycholog y, 2(1):145—161.
+
+
+42
+
+
+Appendix
+A    Definition of variables
+
+
+
+Variable
+age
+bicycles contribution
+Wave
+baseline endline endline
+Description
+age of the respondent in years
+number of bicycles the respondent owns
+binary  variable  equal  to  one  if  the respondent  has  delivered agricultural  produce  for  
+collective  commercialization  to  the RPO in the agricultural  season 2010/2011, zero otherwise
+
+distance to market      endline
+distance to storage     baseline
+
+efficienc y                     both
+
+
+efficienc y  ordinal       both
+
+
+
+farming                        both
+
+
+
+(arming  ordinal          both
+
+
+
+general                        both
+
+
+general  ordinal          both
+distance to nearest crop market in kilometers
+distance  to  the  RPO's  storage  facilities  (meeting  place,  if there are no storage 
+facilities) in walking minutes
+Binary  variable  equal  to  one  if  the  respondent  fully  agrees to  the  following  statement, 
+ zero  otherwise:   “If  I  invest  my money or my produce in the RPO, it will be used efficiently” 
+trust in leaders'  efficiency  measured  on a scale from 1 (low- est) to 4 (highest) based on the 
+level of agreement to the fol- lowing  statement:   “If  I invest  my  money  or  my  produce  in 
+the RPO, it will be used efficiently”.
+binary  variable  equal  to  one  if  the  respondent  fully  agrees to  the following  statement,  
+zero  otherwise:   “I can  trust  the people from my RPO to look after my field during an absence 
+of two months”
+farming-specific trust in members measured on a scale from 1 (lowest) to 4 (highest) based on the 
+level of agreement to the following statement:  “I can trust the people from my RPO to look after 
+my field during an absence of two months”
+binary  variable  equal  to  one  if  the  respondent  fully  agrees to the following statement, 
+zero otherwise:  “The majority  of people from the RPO are trustworthy”
+general trust in members measured on a scale from 1 (lowest) to 4 (highest) based on the level of 
+agreement to the following statement:  “The  majority  of  people from  the RPO are trust- worthy”
+
+groundnut
+
+hectares heterogeneity
+both
+
+baseline endline
+binary variable equal to one if farmers organized  in the RPO cultivate groundnuts,  zero otherwise
+size of managed land in hectares
+binary  variable equal to one if farmers organized in the RPO belong to more than one ethnicity,  
+zero if  they  all  belong to the same ethnicity
+
+household  size            baseline
+information                 both
+household size
+binary  variable equal to one if the respondent  fully agrees to the following statement, zero 
+otherwise:  “If the RPO's board says  that I can achieve better  prices if I wait a little, they  
+do so because they have adequate information”
+
+
+
+
+
+43
+
+
+
+
+Variable                        Wave
+information_ordinal     both
+
+
+
+
+integrit y                        both
+
+
+
+integrity  ordinal           both
+Description
+trust  in  leaders'  informational   advantage  measured  on  a scale  from  1 (lowest)  to  4 
+(highest)  based  on  the  level  of agreement  to the following statement:  “If the RPO's board 
+says that I can achieve better prices if I wait a little, they do so because they have adequate 
+information”
+binary variable equal to one if the respondent fully agrees to the following  statement,  zero 
+otherwise:  “Board  members defend the RPO's interests and their own interests in equal measure”
+trust in leaders'  integrity  measured on a scale from 1 (low- est)  to  4  (highest)  based  on  
+the  level  of  agreement  to  the following statement:  “Board members defend the RPO's in- 
+terests and their own interests in equal measure”
+
+literate male member
+baseline baseline baseline
+binary variable equal to one if the respondent is literate, zero otherwise
+binary  variable equal to one if the respondent  is male, zero if she is female
+binary variable equal  to one if  the respondent  is a member, zero if (s)he is a leader
+
+members'  initiative       baseline
+binary  variable  equal  to one if  the creation  initiative  came from group members, zero 
+otherwise
+
+motorcycles negotiation
+endline both
+number of motorcycles the respondent owns
+binary variable equal to one if the respondent fully agrees to the following statement, zero 
+otherwise:  “The RPO's board is capable of negotiating better prices for our products than I am 
+capable of myself”
+
+negotiation  ordinal      both
+
+
+
+
+both personal  invitation       both personal  training         both
+phone                            endline
+
+related to leader           baseline
+
+rice                               both
+
+RPO  invitation             both
+trust in leaders'  negotiation skills measured on a scale from 1 (lowest) to 4 (highest) based on 
+the level of agreement  to the following  statement:  “The  RPO's  board  is  capable  of 
+negotiating better prices for our products than I am capable of myself”
+binary variable equal to one if farmers organized in the RPO cultivate onions, zero otherwise
+binary  variable equal  to one if  the respondent  was invited, zero otherwise
+binary  variable  equal  to one if  the  respondent  participated in the training, zero otherwise
+binary  variable  equal  to  one  if  any  of  the  respondent's household's members owns a mobile 
+phone, zero otherwise binary variable equal to one if the respondent is related to a leader
+binary variable equal to one if farmers organized in the RPO cultivate rice, zero otherwise
+binary variable equal to one if at least one member or at least one leader of the RPO has been 
+invited to participate in the training intervention,  zero if nobody was invited
+
+
+
+
+
+
+44
+
+
+
+
+Variable                               Wave
+RPO_invitation_LM            both
+
+
+RPO  invitation  OL            both
+
+
+RPO  invitation  OM            both
+Description
+binary variable equal to one if at least one member and at least one leader of the RPO has been 
+invited to par- ticipate in the training intervention, zero otherwise binary  variable  equal  to 
+one if  at least  one leader  and no member  of  the RPO has been  invited  to participate in the 
+training intervention,  zero otherwise
+binary variable equal to one if at least one member and no leader of the RPO has been invited to 
+participate in the training intervention,  zero otherwise
+
+RPO  training
+
+
+sales
+
+
+
+savings in bank savings in MFI
+
+site spillover_invitation
+both
+
+
+endline
+
+
+
+endline endline
+
+baseline both
+binary variable equal to one if at least one member or at least one leader of the RPO participated 
+in the training intervention, zero if nobody participated
+binary variable equal to one if the RPO engaged in col- lective sales in the agricutural season 
+2010/2011, i.e., if at least one farmer  sold produce  to the RPO,  zero if it did not
+binary variable equal to one if the respondent has a sav- ings account with a bank, zero otherwise
+binary  variable  equal  to  one  if  the  respondent  has  a savings  account  with  a société  
+d’assurance,  mutuelle, caisse or microfinance organization, zero otherwise number of farmers that 
+are part of the RPO
+binary variable equal to one if somebody other than the respondent  was invited, zero otherwise
+
+spillover  invitation  LM      both
+
+
+spillover  invitation  OL      both
+
+
+spillover  invitation  OM      both
+
+
+spillover  training                both
+
+spillover  training   LM        both
+
+
+spillover  training   OL        both
+
+
+spillover  training   OM        both
+binary variable equal to one if somebody other than the respondent  was  invited  under  the  
+“leaders  and  mem- bers” scheme, zero otherwise
+binary  variable equal  to one if  some leader  other than the  respondent  was  invited  under  
+the  “leaders  only” scheme, zero otherwise
+binary variable equal to one if some member other than the respondent  was invited  under the  
+“members  only” scheme, zero otherwise
+binary variable equal to one if somebody other than the respondent participated in the training, 
+zero otherwise binary variable equal to one if somebody other than the respondent  participated in 
+the training under the “lead- ers and members” scheme, zero otherwise
+binary  variable equal  to one if  some leader  other than the  respondent  participated  in  the  
+training  under  the “leaders only” scheme, zero otherwise
+binary variable equal to one if some member other than the  respondent  participated  in  the  
+training  under  the “members only” scheme, zero otherwise
+
+trust factor trust  sum vehicles
+both both endline
+factor variable containing the six binary trust measures sum over the six binary trust measures
+number  of  motorized  vehicles  other  than  motorcycles the respondent owns
+
+
+
+
+45
+
+
+
+
+Variable
+year of creation year joined number  invited
+Wave
+baseline baseline both
+Description
+year in which the RPO was created
+year in which the respondent joined the RPO
+number of people other than the respondent who were invited from a RPO
+
+number  invited  leaders         both number  invited  members      both number  trained            
+          both number  trained  leaders        both number  trained_members     both
+Notes:     Data   collection   took   place uary/February  2012 (endline).
+number of leaders other than the responden twho were invited from a RPO
+number  of  members  other  than  the  respondent  who were invited from a RPO
+number  of  people  other  than  the  respondent  from  a RPO who participated in the training
+number of leaders from a RPO who participated in the training
+number of members from a RPO who participated  in the training
+November/December   2011   (baseline)   and   Jan-
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+46
+
+
+B    Supplementary analyses
+In this appendix  we provide  additional  analyses  on selected  issues  discussed  in the paper.
+
+B.1    One-sided noncompliance
+While invitations  were distributed according  to the randomization  protocol, one- sided 
+noncompliance  regarding  training  participation  was frequent.  While none of the control RPOs 
+participated in the training, some of the invited RPOs chose not  to participate.   From  those  
+RPOs  that  did  participate,  not  always  the exact farmers  that had personally  been invited  
+to the training  participated,  sometimes others came to the training instead.  In the empirical 
+analysis, we deal with this by estimating intention-to-treat effects, i.e. the treatment effect of 
+the invitation, and by estimating  treatment effects of the training by instrumenting for the 
+participa- tion using the invitation as instrument.  Tables B.1 and B.2 provide details on the 
+one-sided noncompliance.
+In Table B.1 we provide details based on the distribution of invitations  while we consider  actual 
+ participation  in  the  training  in  Table  B.2.   In  Table  B.1  we report the intended 
+distribution of 798 interviewed farmers from 73 RPOs on 50 invited and 23 non-invited RPOs, and the 
+intended distribution of 597 interviewed farmers from 50 invited RPOs on 150 invitees and 447 
+non-invitees.  Further, we report  how  the invitations  were allocated  to RPOs in  which  only  
+leaders  (OL), only members (OM), or both leaders and members (LM) were invited. We report both the 
+number of farmers and the number of RPOs (in parentheses).
+In Table B.2 we report the actual distribution of 798 interviewed farmers from 73 RPOs  on  44  
+treated  and  23  non-treated  RPOs,  and  the  distribution  of  534 interviewed  farmers  from  
+44 treated  RPOs  on 142 trained  and  392 non-trained farmers. Further, we report how the 
+participation was allocated to RPOs in which only leaders (OL), only members (OM), or both leaders 
+and members (LM) were trained. We report both the number of farmers and the number of RPOs (in 
+paren- theses).
+
+
+
+
+
+
+48
+
+
+
+
+
+
+
+
+Table B.1: Sample by intended treatment status
+
+
+treatment 597
+(50)
+
+
+
+invitees 150
+
+
+
+
+
+OL      OM     LM 22        29       99
+(12)     (15)     (23)
+
+
+
+non-invitees 447
+
+
+
+
+
+OL     OM     LM 115     131     201
+control      total
+201         798
+(23)        (73)
+Notes:  We  report  the  intended  distribution  of  798  interviewed  individuals  from  73 RPOs  
+on treatment and control group, and the intended distribution of 597 interviewed individuals from 
+50 treatment RPOs on invitees and non-invitees from different types of groups (OM—only members were 
+ invited,  OL—only  leaders  were  invited,  LM—both  members  and  leaders  were  invited). Values 
+in parentheses are the number of RPOs.
+
+
+
+
+
+
+
+
+
+
+
+Table B.2: Sample by actual treatment status
+
+
+treatment 534
+(44)
+
+
+
+trainees 142
+
+
+
+
+
+OL      OM     LM 20       16      106
+(10)      (9)      (25)
+
+
+
+non-trainees 392
+
+
+
+
+
+OL     OM     LM 95       86      211
+control      total
+264         798
+(29)         (73)
+Notes:  We report the actual distribution of 798 interviewed individuals from 73 RPOs on treat- 
+ment and control  group,  and the distribution  of 534 interviewed  individuals  from 44 treatment 
+RPOs  on  trainees  and  non-trainees  from  different  types  of  groups  (OM—only  members  were 
+trained, OL—only  leaders  were trained, LM—both  members and leaders were trained).  Values in 
+parentheses are the number of RPOs.
+
+
+
+
+
+
+49
+
+
+B.2    Descriptive statistics for ordinal measures of trust
+Originally,  responses  to all trust survey  questions  were recorded  on a four-point Likert-type  
+scale.   The  items  to choose  from  are  (1)  “Do  not agree  at all”,  (2) “Do not really  
+agree”,  (3) “Agree”,  and (4) “Fully  agree”.  However,  given  that the average trust levels at 
+baseline are well above 3 for all measures of trust, we use binary  variables  as regressands  in 
+the empirical  analysis  which are equal to one if respondents  fully agree with one of the asked 
+statements.  Here, we report additional descriptive statistics for trust measures using the 
+original coding.
+In Table B.3 we show that the assignment of the invitations is also independent of ordinal  trust  
+measures  at baseline.  The two-sample  Wilcoxon  rank-sum  tests with the null of equal means in 
+control and treatment groups at baseline reveal no significant differences.
+Table B.3: Balancing tests of ordinal trust measures at RPO level
+
+Variable                Mean       Standard         Mean in               Mean in           
+Difference
+deviation     control group     treatment group (N=73)                             (N=23)           
+      (N=50)
+negotiation  ordinal          3.41           0.37                3.34                     3.44      
+           —0.10
+integrity_ordinal              3.51           0.42                3.51                     3.50     
+              0.01
+information   ordinal         3.54           0.34                3.60                     3.51      
+             0.09
+efficiency  ordinal            3.50           0.42                3.48                     3.51     
+           —0.03
+general_ordinal                3.48           0.35                3.48                     3.48     
+           —0.01
+farming  ordinal               3.43           0.37                3.36                     3.46     
+           —0.09
+Notes:  We  report  averages  and  standard  deviations  for  the full  sample  of  73 RPOs,  aver- 
+ages in the subsamples  of  RPOs  in treatment  and control  group  and results  of  two-sample 
+Wilcoxon  rank-sum  tests  with  the  null  of  equal  means  in  control  and  treatment  groups  
+at baseline.
+*  p     0.10,“*  p     0.05, “‘   p     0.01
+
+Descriptive  statistics  reveal  a positive  impact of  the intervention  on ordinal measures of 
+trust.  In Table B.4 we report results of two-sample Wilcoxon rank- sum tests with the null of 
+equal means in ordinal trust in baseline and endline for invitees, non-invitees in invited RPOs and 
+for non-invitees in non-invited  RPOs. Moreover,  we report two-sample Wilcoxon  rank-sum tests 
+with the null of equal means in ordinal trust for invitees and non-invitees in invited RPOs in both 
+base- line  and  endline  and  for  non-invitees  in  invited  and  non-invited  RPOs  in  both 
+baseline  and endline.  Results are similar to those  when using binary trust mea- sures  (see 
+Table 5).  Invitees report higher levels of trust at endline compared  to baseline  for  all  
+ordinal  measures  for  trust.   Further  indication  of  a  positive  di-
+50
+
+
+
+rect  treatment  effect  comes  from  the  comparison  of  invitees  with  non-invitees from 
+invited  RPOs.  While  we observe  no significant  difference  at baseline,  we observe significant 
+differences for all ordinal measures of trust in leaders but ne- gotiation_ordinal  at  endline.   
+We  also  find  descriptive  evidence  for  a  positive spill-over  effect within invited RPOs.  
+Comparing  non-invitees  from invited and non-invited RPOs, we find no significant differences at 
+baseline. At endline, how- ever,  non-invitees  in invited  RPOs report  significantly  higher 
+trust levels for all ordinal trust measures but efficienc y  ordinal compared to non-invitees from 
+non- invited RPOs.
+Table  B.4:  Changes  in ordinal  trust  by  intended  treatment  status  at RPO
+level
+
+
+Ordinal Trust Outcomes negotiation_ordinal
+Sample                             N        Baseline (BL)      Endline(EL)           Diff. BL EL 
+P-value
+A. Invitees                      150              3.49                    3.53                      
+      0.1960
+B. Non-Invitees  in T      447              3.43                    3.50                            
+0.0029
+C. Non-Invitees in C      201              3.35                    3.24                            
+0.6423
+Diff.  A B P-value                             0.3362                0.7642
+Diff. B C P-value                             0.4157                0.0008
+
+integrity_ordinal
+
+
+
+
+information_ordina1
+
+
+
+
+efficiency_ordinaI
+
+
+
+
+general_ordinal
+
+
+
+
+farming_ordinal
+A. Invitees                      150              3.59                    3.59
+B. Non-Invitees in T      447              3.47                    3.39
+C. Non-Invitees  in C      201              3.49                    3.21
+Diff.  A B P-value                             0.1939                0.0236
+Diff. B C P-value                             0.7073                0.0168
+A. Invitees                      150              3.57                    3.71
+B. Non-Invitees inT       447              3.49                    3.57
+C. Non-Invitees  in C      201              3.59                    3.43
+Diff.  A B P-value                             0.3902                0.0531
+Diff. B C P-value                             0.2187                0.0661
+A. Invitees                      150              3.56                    3.71
+B. Non-Invitees  in T      447              3.49                    3.48
+C. Non-Invitees in C      201              3.48                    3.36
+Diff.  A B P-value                             0.1990                0.0016
+Diff. B C P-value                             0.9008                0.1114
+A. Invitees                      150              3.51                    3.69
+B. Non-Invitees  in T      447              3.46                    3.52
+C. Non-Invitees  in C      201              3.46                    3.31
+Diff.  A B P-value                             0.5608                0.0053
+Diff. B C P-value                             0.8025                0.0029
+A. Invitees                      150              3.47                    3.63
+B. Non-Invitees in T      447              3.45                    3.45
+C. Non-Invitees  in C      201              3.36                    3.22
+Diff.  AB P-value                             0.6632                0.0166
+Diff. BC P-value                              0.3500                0.0036
+0.4830
+0.5975
+0.0059
+
+
+0.0310
+0.0499
+0.1928
+
+
+0.0698
+0.8127
+0.2672
+
+
+0.0123
+0.2967
+0.1068
+
+
+0.0372
+0.5494
+0.1758
+Notes:  We report  averages  of  different  ordinal  trust  measures  in subsamples  of  invitees,  
+non-invitees  in  the  treatment group (T—treatment group), non-invitees in the control group 
+(C—contro1 group) at baseline (BL—baseline) and endline (EL—endline)  as well as p-values of 
+two-sample Wilcoxon rank-sum tests with the null of equal means.
+
+
+
+
+
+
+51
+
+
+B.3    Robustness checks for treatment effects on RPO level
+We run several robustness checks to confirm our main findings reported in Section
+
+First, we enlarge the model in first differences  (see equations (1) and (4)) by allowing for 
+onion-specific and rice-specific  time trends  (see Table B.5) and by controlling for the number of 
+invited/trained persons per RPO (see Table B.6).³⁶ Table B.5 shows results for regressing changes 
+in trust on a binary treatment in- dicator, a binary indicator for rice cultivation,  a binary 
+indicator for onion culti- vation and a constant.  We report both intention-to-treat effects as 
+well as results from  two-stage  regressions  using invitation  status  as an instrument  for 
+training participation. We use RPLC   tn uttatton as instrument for RPO  training in Ta- ble B.S.   
+The  highly  significant  correlation  coefficient  between  these  two  vari- ables  amounts  to 
+0.8354.  Qualitatively, results  remain  unchanged  compared  to the model in first differences  
+without covariates.  We find a significantly  positive treatment  effect of the training of 12 to 
+13 percentage points on trust in leaders' integrity and their informational  advantage. For the 
+reduced form regressions, we provide  conventional  inference  and randomization  inference.   We 
+find  a similar pattern as we did in our main analysis,  p-values for the randomization  inference 
+are smaller  than those for the conventional  inference for all regressions.  Hence, for reasons of 
+clarity,  we refrain from presenting  randomization  inference in the following.
+Table B.6 shows results for regressing changes in trust on a binary treatment
+indicator, the number of invited farmers and a constant.  We also run a specifica- tion where we 
+consider the number of invited members and the number of invited leaders.  Again,  we report  both 
+intention-to-treat effects  as well as results from two-stage regressions using invitation status 
+as an instrument for training partici- pation. We use RPO  invitation and n umber_inri!ed  as 
+instruments for RPO_trained  and numher_trained  (highly significant  correlation  coefficients 
+range between 0.6467 and 0.9054) as well as fififi_tnrttation, number_inri!ed_ members and 
+number_inrited_l eader s as instruments for RPO_trained, HUW$Cf_tFOf R.Cd_members and 
+number_tfOf.HHd_leaders in Table B.6 (highly significant  correlation  coefficients  between  
+0.2458  and  0.9045).   Qualitatively, results  remain  unchanged  compared  to  our  main  
+results.    The  number  of  in-
+*⁶Note that when including covariates to the model in first differences, it is no longer equivalent 
+to a fixed effects model.
+
+52
+
+
+
+vited/trained  persons  has  no  additional  effect  on  trust  outcomes  on  top  of  the effect 
+of the binary treatment measure.  We find a significantly  positive intention- to-treat effect of 
+14 to 16 percentage points on trust in leaders' integrity and their informational advantage.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+53
+
+
+
+
+
+Table B.5: Treatment effects at RPO level controlling for crop type
+
+
+(1)                                 (2)
+finegotiation                   fiintegrity
+Reduced  form regressions (conventional arid randomi Nation inference)
+(3)                          (4)                         (5)
+Ainformation           Aefficiency             Ageneral
+(6)                          (7)                           (8)
+Afarming             Atrust_sum           fitrust_factor
+
+RPO_invitation                                               0.0921 ^                       0.1109* 
+ ^ ^ (0.0623)                       (0.0615)
+[p-value conventional inference]                   {0.1440]                        {0.0756] p-value 
+randomization inference)               (0.0947}                      (0.03fi0}
+Instrumental  variable  regrc•ssions (conventional inference)
+0.1019“
+(0.0619)
+{0.1043]
+{0.0fi64}
+0.0329
+(0.0688)
+{0.6340]
+{0. 5499}
+00810
+(00586)
+}01668]
+{0 213}
+0.0TT5 (0.0632)
+0.2239]
+(0.1438}
+0.4972 ^
+(0.3217)
+{0.1266]
+(0.0742}
+0.2105’
+(0.1372)
+0.1294]
+{0.0767}
+RPO  training                                          0.1082                     0.1303”           
+         0.1197“              0.0386               0.0962               0.0911               0.5841 
+               0.2473
+(0.0725                    (0.0716)                   (0.07IP)             (0.0T8g)             
+(0.0670)            (0.0726)             (0.3726)              (0.1669)
+[p-value conventional inference]                   {0.1355]                        {0.0687]         
+               {0.0959]                 {0.6242]                {0.1512a                {0. 2098]   
+              {0.1169]                  {0.1196]
+N                                                                     73                            
+     73                                 73                          73                          73  
+                       73                          73                           73
+Notes:  We report coefficients from regressions  using both baseline and endline data regressing 
+changes in trust on a constant, a binary treatment indicator and binary indicators for onion and 
+rice cultivation.  For instrumental  variable  regressions  we report coefficients  from two-stage  
+estimations  using  R PO_inr itotion as instrument  for  fiPO_troininq.  Standard  errors are 
+reported in parentheses  (clustered  at RPO level), p-values for conventional inference  are 
+reported  in brackets, p-values for randomization  inference  with 9000 random permutations  are 
+reported  in curly brackets.
+* p  <  0.10, ** p  <  0.05, *** p  <  0.01, for conventional inference
+^  p  <  0.10,  ^ ^  p  <  0.05,  ^ ^ ^  p  <  0.01, for randomization inference
+
+
+
+
+
+Table B.6:  Treatment effects at RPO level controlling for treatment intensity
+
+
+
+
+Reducedfonn repressions
+(1)
+
+finegotiation
+(3)
+(4)
+(6)
+(7)
+
+fiefficiency
+(8)
+
+RPO  invitation
+
+number  invited
+
+number invited members
+number  invited  leaders
+0.1182 (0.0Y6Y)
+—0.0022
+(0.0062)
+0. 1185
+(0.0768)
+
+
+0.0020
+(0.0074)
+-0.0072
+(0. 0090)
+0.1560** (0.0757)
+—0.0051
+(0.0052)
+0. 1560*”
+(0.0763)
+
+—0.0058
+(0.0069)
+—0.0042
+(0.0080)
+0.1428”
+(0.0826)
+—0.0037
+(0.0069)
+0.1431’
+(0.0827)
+
+0.OO1Y (0.0083)
+—0.0100
+(o.o1oo)
+0. 0387
+(0. 0840)
+0.0036
+(o.oosi)
+0.0389
+(0.0845)
+
+0.0074
+(0.0055)
+—0.0I00 (0.0089)
+
+
+RPO_training
+
+number  trained
+
+number lined members number lined leaders
+0.1Y13 (0.1153)
+—0.0080
+(ooioz)
+
+
+
+(9)
+2Lgeneral
+0. 1765
+(o. I tsz)
+
+—0.0025
+(0.0107)
+—0.0160
+(0.0139)
+(10)
+0.2274””
+(0.1145)
+—0.0131
+(0.0095)
+
+
+
+
+(11)
+Alarming
+0.2274”
+(0.1150)
+
+—0.0131
+(0. 0111)
+—0.0131
+(0. 0123)
+(*z)
+0.2075
+(0. 1267)
+—0.0109
+(0. 0120)
+
+
+
+
+(13)
+0.2140’
+(0.1267)
+
+—0.0040
+(0.0123)
+—0.0208
+(0.0158)
+(14)
+0. 0532
+(0. 1206)
+0.0023
+(0. 0085)
+
+
+
+
+(15)
+A trust_factor
+0.0578
+(0.1214)
+
+0.0072
+(0.0079)
+—0.0046
+(0.0132)
+(16)
+
+
+Reducedfarm  repressions
+RPO_invitation number_invited
+number_]nvited_members numbei_invited_leaders
+Instrumental variable  regressions
+RPO_baining
+
+number_trained numbe_Wâned_membeis numbei_kâned_leaders
+N
+
+0.0740
+(0.0766)
+0.0051
+(0.0075)
+
+
+
+
+
+0.1030
+(0. 1117)
+0.0025
+(0.0114)
+
+
+
+
+73
+
+0. 0739
+(0. 0772)
+
+0.0023
+(0. 0090)
+0.0085
+(0. 0112)
+
+0.1007
+(0. 1125)
+
+0.0001
+(0. 0120)
+0.0059
+(0. 0155)
+73
+
+0. 1225
+(0. 0790)
+—0. 0035
+(0. 0060)
+
+
+
+
+
+0.1783 (0.111g)
+—0.009g (0.0095)
+
+
+
+
+73
+
+0.  1224
+(0.0795)
+
+—0.0062
+(0.0071)
+—0.0002
+(0.0093)
+
+0. 1760
+(0. 1159)
+
+
+—0.0122 (0.OO9g)
+—0.0062
+(0.0135)
+73
+
+0.6523
+(0. 4069)
+—0.0057
+(0. 0283)
+
+
+
+
+
+0.9407
+(0.6046)
+—0.0369
+(0. 0492)
+
+
+
+
+73
+
+0.6ñ27 (0.4096)
+
+0.0014
+(0.0330)
+—0.0141
+(0.0448)
+
+0. 9525
+(0.6092)
+
+
+—0.0244 (0.0ñ03)
+—0.0ñ4g (0.0685)
+73
+
+0. 2769
+(0. 1737)
+—0.0024
+(0. 0121)
+
+
+
+
+
+0. 3994
+(0. 2581)
+—0.0157
+(0. 0210)
+
+
+
+
+73
+
+0.2gg1 (0.1g49)
+
+0.0007
+(0.0141)
+—0.0062
+(0.0191)
+
+0.404ñ (0.2601)
+
+
+—0.0102
+(0.0214)
+—0.0235
+(0.0292)
+73
+
+Notes:  We report coefficients  trom regressions  using  both  baseline  and endline  data 
+regressing  changes  in mist on a constant,  a  binary  treatment  indicator  and controls  tor the 
+number of farmers  (members and  leaders)  invited.   For instrumental  variable  regressions  we 
+report  coefficients  from  two-stage  estimations  using  ft P  O_*nr*t ati on and  n umber_énc*t 
+ed  as  instruments  for  R  P  O_t   r a i n e d and  no  rn ber_rt   a*n  ed  in  odd-numbered  
+columns.   In  even-numbered  columns  we report  coefficients  from  two-stage  estimations  using 
+ ftP   O_én c*t at*on,  number_inr*t ed_rn em ber s  and n umber_inc*t ed_f ea d eds as instruments 
+for ftP   O_tra*n ed, n umber_tra*n ed_m em bre   s and n'   rn ber_rt   a*n  e d_i ea der s.  
+Standard errors are reported in parentheses (clustered at RPO level).
+p  c   0. 10,  * *  p  <   0. 05,  * * *  p  <   0. 01
+
+
+
+Second,  we follow McKenzie  (2012) who argues that large improvements  in power can arise when 
+estimating treatment effects via an Analysis of Covariance (ANCOVA) estimation compared to using 
+the difference-in-differences specifica- tion.  While difference-in-differences fully corrects for 
+potential  baseline imbal- ances  between  treatment  and  control  groups,  which  may  be 
+inefficient  if  base- line data have little predictive  power for future outcomes,  ANCOVA reduces 
+the variance  of  the  treatment  effect  estimator  by  conditioning  on  a  variable  that  is 
+correlated  with  the outcome  of  interest.   ANCOVA  includes  the mean  value of the outcome 
+over all available pre-treatment rounds as a covariate when estimat- ing the treatment effect.  In 
+our case of one pre-treatment  and one post-treatment survey, it includes the baseline value of the 
+outcome as a covariate.
+Thus,  we regress  trust at endline on a constant,  a binary  treatment  indicator and on trust at 
+baseline.  We estimate these regressions  without covariates,  with controls  for onion  and  rice 
+cultivation  (see Table B.7)  and  with control  for the number of invited/trained persons per RPO 
+(see Table B.8).
+We use RPO_invi!a!ion as instrument for RPO_!‹•!•!•9    in Table B.7 and RPO  invitation  and  
+numher  invited  as  instruments  for  RPG  trntned  and number_!rained in Table B.8.  Results are 
+similar to those from the difference-
+in-differences  estimations.   Without  covariates,  we  find  a  significantly  positive 
+intention-to-treat effect of 10 to 12 percentage points for trust in leaders'  negoti- ation 
+skills, their integrity,  and their informational  advantage.  We find a (signifi- cantly) positive 
+intention-to-treat effect of 11 percentage points on both measures of  trust in  members.  The 
+treatment  effect  of  the training  itself  is again  slightly larger. These results are robust to 
+controlling for onion and rice cultivation and to controlling for the number of 
+invitees/participants.
+
+
+
+
+
+
+
+
+
+
+
+
+
+56
+
+
+
+
+
+
+
+Table B.7: Treatment effects at RPO level—ANCOVA
+
+
+
+Panel A: no covariates
+Reduced [orm regrc•ssions
+RPO  invitation
+
+trust outcome at baseline
+
+Instrumental  variable  regressions
+RPO_training
+
+trust outcome at baseline
+
+Panel B: controls for crop type
+Reduced  form regressions
+RPO_invitation
+
+trust outcome at baseline
+
+Instrumental  variable  regressions
+(1)
+negotiation
+
+0.1210** (0.0549)
+0.4369*** (0.1161)
+
+0.1392””
+(0.0Li16)
+0.3815*** (0.1315)
+
+
+
+0.0940”
+(0.0494) 0.2826** (0.1098)
+(2)
+integrity
+
+0.1228”“
+(0.dSPg)
+0.7222”””
+(0.1099)
+
+01390”
+(00658)
+0.6721*** (0.1127)
+
+
+
+0.0840’
+(0.0488)
+0.4694”’
+(0.1250)
+(3)
+information
+
+0.1034* (d.055S)
+0.6014”””
+(0.1299)
+
+0.1152* (0.0601)
+0.5558*** (0.1330)
+
+
+
+0.0490
+(0.0450)
+0.330”
+(0.1313)
+(4)
+efficiency
+
+00666 (0065J) 0.6380”’
+(01266)
+
+0.0T62 (00131
+06113”’
+(0.1308)
+
+
+
+0.0234
+(0.0486)
+0.3327’
+(0.1326)
+(5)
+general
+
+0.1096* (0.0592)
+0.7705*** (0.0926)
+
+0.125T (0.0656)
+0.T254”’
+(0.0972)
+
+
+
+0.0681
+(0.0498)
+0.4148***
+(0.0998)
+(6)
+farming
+
+0.1074
+(d.065S)
+0.8141”””
+(0.1419)
+
+0.1239* (0.0736)
+0.7599***
+(0.1481)
+
+
+0.0690
+(0.0530)
+0.3609““
+(0.1658)
+(7)
+trust_sum
+
+06281’
+(0t31) 07T36”’ (0150)
+
+0.7165”
+(0.3664)
+0.7178***
+(01241)
+
+
+
+0.3966
+(02540)
+0. 4283***
+(0.1308)
+(8)
+trust_factor
+
+02660’
+(0145)
+07735”’
+(01153)
+
+0.3033” (0.15Li2)
+0.T183*“”
+(0.1242)
+
+
+
+0.1665
+(0.1080)
+0.4278*** (0.1310)
+
+RPO_training
+
+trust outcome at baseline
+0.1106*                        0.0973*                        0.0562                          
+0.0274                          0.0795                          0.0807                          0. 
+4602
+(0.0561)         (00546)         (0.0497)         (0.0541)         (00555)         (0.0595)         
+(02834) 0.249J””                  0.4452***                 0.2974“*                  0.3255””      
+            0.3944**“                 0.3J39””                  0.4004”** (0.1142)                  
+ (0.1234)                   (0.1267)                   (0.1304)                   (0.0967)          
+         (0.1595)                   (0.1302)
+0.1931
+(0.1205)
+0.4005*“”
+(0.1301)
+N                                                                  73                               
+  73                                 73                                 73                          
+       73                                 73                                 73                     
+            73
+Notes: We report coefficients from regressing trust at endline on a constant and a binary treatment 
+indicator including the trust level at baseline as covariate. In panel B we report coefficients 
+from regressions additionally including binary indicators for onion and rice cultivation.  For 
+instrumental  variable regressions we report coefficients from two-stage estimations using 
+fiPO_iuritoti on as instrument for fiPO_traintnp. Standard errors are reported in parentheses 
+(clustered at RPO level).
+“ p  <  0.10, ““ p  <  0.05, “““ p  <  0.01
+
+
+
+
+
+
+
+
+Table B.8: Treatment effects at RPO level controlling for treatment intensity—ANCOVA
+
+
+
+Panel A
+Reduced  form regressions
+RPO  invitation number_invited
+trust outcome at baseline
+(1)
+negotiation
+
+0.1385”“
+(0.0656)
+—0.0033
+(0.0070)
+0.4342”*“
+(0.1152)
+(2)
+integrity
+
+0.1435““
+(0.0703)
+—0.0039
+(0.0061)
+0.T235““”
+(0.1095)
+(3)
+information
+
+0.1188 (0.0T26)
+—0.0029
+(0.0076)
+0.6008”’
+(0.1304)
+(4)
+efficiency
+
+0.0398
+(0.0766)
+0.0051
+(0.0064)
+0.6359”’
+(0.1284)
+(5)
+general
+
+0.0833
+(0.0714)
+0.0050
+(0.0075)
+0.7712*** (0.0945)
+(6)
+farming
+
+01216
+(00746)
+—0.0027
+(0.0063)
+0.8159”’
+(0.1425)
+(7)
+trust_sum
+
+0b362 (0 3864)
+—0.0015
+(00325) 0T736”’ (01157)
+(8)
+trust_factor
+
+0.2693
+(0.1649)
+—0.0006
+(0.0139)
+0.T735””*
+(0.1160)
+
+Instrumental  variable  regressions
+RPO_training number_trained
+trust outcome at baseline
+
+0.1998**                      0.2007**                      0.1643                          0.0514  
+                        0.1135                          0.1720*                        0.8876       
+                   0.3754
+(0.0956)                   (0.0994)                   (0.1026)                   (0.1052)           
+        (0.0986)                   (0.1022)                   (0.5405)                   (0.2306)
+—0. 0105                      —0.0108                      —0. 0087                          0.0043 
+                         0.0021                      —0. 0054                      —0.0298          
+            —0.0125
+(0.0108)                   (0.0100)                   (0.01t8)                   (0.0093)           
+        (0.0107)                   (0.0093)                   (0.0514)                   (0.0219)
+0.3669”““                 0.6677““”                 0.5449”””                 0.6118’““             
+    0.7270““”                 0.7577””“                 0.7137“““                 0.7143“””
+(0.1318)                   (0.1119)                   (0.1364)                   (0.1326)           
+        (0.0976}                   (0.1446)                   (0.1243)                   (0.1243)
+N                                                        73                                 73      
+                           73                                 73                                 73 
+                                73                                 73                               
+  73
+Notes:  We report  coefficients  from  regressing  trust at endline  on a constant  and a binary  
+treatment  indicator  including  the trust  level at baseline  and the  number of invited  persons  
+per RPO as covariates. For instrumental  variable regressions we report coefficients  from 
+two-stage estimations using BPO    inrztation and nurriber_invi ted as instrument for BPO    
+trainznp and nttmbrr_trained.    Standard errors are reported in parentheses (clustered  at RPO 
+level).
+* p      0.10, ** p      0.05, *** p      0.01
+
+
+B.4    Robustness checks for treatment effects on individual level
+To confirm  our main findings  on treatment  effects  on individual  level presented in Section 6, 
+we run similar robustness checks as we did for the treatment effects on RPO level.
+First, using the full sample of 798 farmers, we enlarge the model in first differ- ences (see 
+equations (5) and (6)) by allowing for onion-specific and rice-specific time  trends  (see Table 
+B.9) and by controlling  for the number  of  invited/trained persons  per  RPO  (see  Table  
+B.10).³⁷   Table  B.9  shows  results  for  regressing changes  in trust on a binary  treatment 
+indicator  for personal  treatment,  a binary indicator  for treatment  of  others,  a binary 
+indicator  for rice cultivation,  a binary indicator  for onion cultivation  and a constant.  We 
+report  both  intention-to-treat effects as well as results from two-stage regressions using 
+invitation  status as an instrument for training participation. We instrument for spt/f 
+orer_!raining and personnl_trnininp using  RPO_inritation and personn/_tnr(/ntion as instru- 
+ments.³'   Qualitatively, results remain  unchanged  compared  to the model in first differences  
+without  covariates.   We find  a significantly  positive  effect of  having personally been 
+invited of 13 to 18 percentage points on trust in leaders' integrity and their informational  
+advantages  as well as on both measures  of trust in mem- bers. The direct treatment effect of the 
+training is again slightly larger.
+Table B.10 shows results for regressing changes in trust on a binary treatment indicator  for  
+personal  treatment,  a  binary  indicator  for  treatment  of  others,  the number of invited 
+farmers and a constant.  We report both intention-to-treat effects as well as results from 
+two-stage regressions  using invitation  status as an instru- ment for training  participation.  We 
+use fiT'O_f HLf tO/tON, TtHTFtber_invited and personal  inri/n/ton  as instruments  for  spillover  
+ train(np,  n mutter  trained and  personal_trnininp. The highly significant correlation 
+coefficients range be- tween 0.2700 and 0.9004.  Qualitatively, results remain  unchanged  compared 
+ to the model in first differences  without covariates.  We find a significantly  positive effect 
+of having personally  been invited of 19 to 22 percentage points on trust in leaders'  integrity 
+and their informational  advantages  as well as on both measures
+3⁷Note that when including covariates to the model in first differences, it is no longer equivalent 
+to a fixed effects model.
+*⁸The  highly   significant   correlation   coefficients   are  0.5702  for   spill over  training  
+ and RPO    invil ation,    0.2700   for    per sonal_traininp   and    RPO  _invi!ation,    
+-0.3509   for personal   inritntion   and   spill over  training   and   0.7993   for   per sonal  
+inritntion   and
+
+
+
+59
+
+
+
+of  trust in members.  The direct treatment  effect of  the training is again slightly larger.
+Second, we estimate ANCOVA specifications. We regress trust at endline on a constant, a binary 
+treatment indicator for personal treatment, a binary indicator for treatment  of  others,  and  on 
+trust at baseline.  We estimate these regressions without covariates,  with controls  for onion and 
+rice cultivation  (see Table B.11) and with controlling for the number of invited/trained persons 
+per RPO (see Ta- ble B.12). In the regressions reported in Table B.11 we use RPO  inri/a/ion and
+personaf_inritation as instruments for spillover_Iraininp and personal_traininp. For table B.12 we 
+use RPO  ini itotion, mm her  invited and personal  invitation as instruments for 
+spillover_traininp, number_trained and personal_traininp.
+Results are similar to those from the difference-in-differences estimations.  With- out  
+covariates,  we  find  a  significantly  positive  treatment  effect  of  having  per- sonally  
+been invited of  13 to 23 percentage  points for all measures  of  trust and indication for a 
+spillover effect of 11 to 13 percentage points for trust in leaders' negotiation skills and their 
+integrity.  The treatment effect of the training itself is again  slightly  larger.  Results  are 
+again  robust  to controlling  for onion  and rice cultivation and to controlling for the number of 
+invitees/participants.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+60
+
+
+
+
+
+Table B.9: Treatment effects on individual level controlling for crop type
+
+(1)                       (2)                        (3)                      (4)                   
+    (5)                        (6)                        (7)                             (8)
+finegotiation          fiintegrity         fiinformation       fiefficiency            figeneral    
+         fifarming           fitrust_sum             fitrust_factor
+Reduced  form regressions
+
+spillover  invitation              0.0930
+(0.0657)
+0.1045
+(0.0657)
+0.0842                0.0324
+(0.0662)             (0.0727)
+0.0662
+(0.0618)
+0.0565
+(0.0673)
+0.4368
+(0.3496)
+0.1849
+(0.1492)
+
+personal  invitation
+0.0617
+(0.0716)
+0.1535””
+(0.0679)
+0.1323”              0.1050
+(0.0703)             (0.0759)
+01794”
+(0.0747)
+0.1427*
+(0.0765)
+0.7746**
+(0.3611)
+0.3306””
+(0.1539)
+Instrumental  variable  regressions
+spillover_training                0.1124                 0.1210                  0.0715             
+   0.0338                 0.0970                 0.0616                 0.4973                      
+0.2103
+(0.0796)     (0.0793)     (0.0798)     (0.0864)     (0.0T27)     (0.0796)     (0.4184)       
+(0.1785)
+
+personal  training
+0.0623       0.1748”      0.155’     0.1256       0.229“     0.1668’      0.8959”        0.3826”
+(0.0821)     (0.0761)     (0.0798)     (0.0827)     (0.0862)     (0.0865)     (0.4025)       
+(0.1715)
+N                                           798                       798                        
+798                      798                       798                       798                    
+   798                             798
+Notes:  The number of invited/trained persons in treated  RPOs ranges from  2 to 16.  Hence,  it is 
+impossible  to be the only invited/treated person  in a treated  RPO. We report  coefficients  from 
+ regressions  using  both  baseline  and  endline  data  regressing  changes  in  trust  on  a 
+constant,  a  binary  treatment  indicator  for  personal treatment and for treatment of others and 
+binary indicators for onion and rice cultivation.  For instrumental variable regressions we report 
+coefficients from two-stage estimations  using  RPO    in vi!ation  and  per sonal  inr/totion  as  
+instruments  for  spillover  bra ining  and  personal   training.   Standard  errors  are reported  
+in parentheses (clustered at RPO level).
+p     0.10, **  p <  0.05, ’““  p     0.01
+
+
+
+
+
+
+
+Table B.10:  Treatment effects on individual level controlling for treatment intensity
+
+
+(1)                         (2)                           (3)                       (4)             
+           (5)
+finegotiation           fiintegrity            fiinformation        fiefficiency           
+figeneral
+Reduced form regressions
+(6)                         (7)                         (8)
+fifarming             fitrust  sum          fitrust  factor
+
+spillover  invitation personal   invitation number  invited
+0.1132
+(0.0761)
+0.0795
+(0.0886)
+—0.0004
+(0.0059)
+0.1647””
+(00774)
+0.2224***
+(0.0807)
+—0.0072
+(0.0050)
+0.1369
+(0.0836) 0.1910** (00858)
+—0 0046
+(0 0064)
+0.0549
+(0.0866)
+0.1247
+(00847)
+00009
+(00048)
+0.0787
+(0.0817) 0.1892** (0.0842)
+0.0022
+(0.0077)
+0.1164
+(0.0825)
+0.2097”
+(0.0903)
+—0.0056
+(0.0060)
+0.6647
+(0.4254) 1.0166** (0.4273)
+—0.0148
+(0.0264)
+0.2828
+(0.1817)
+0.4348”
+(0.1821)
+—0.0064
+(0.0113)
+Instrumental  variable regressions
+spillover  training                 0.1613                   0.2364**                  0.1949       
+           0.0731                  0.1035                    0.1651                    0.9344       
+             0.3976
+(0.1136)                (0.1163)                  (0.1270)              (0.1242)              
+(0.1204)                (0.1191)                (0.6259)                (0.2673)
+
+personal   training
+number  trained
+0.1118                  0.3048”””               0.2596““             0.1618                0.2441”* 
+              0.2823””               1.3644””               0.5835“”
+(0.1216)                 (0.1137)                   (0.1221)               (0.1173)               
+(0.1174)                 (0.1241)                 (0.5993)                 (0.2555)
+—0.0052                —0.0159*                —0.0116              —0.0014              —0.0010    
+            —0.0120                —0.0471                —0.0202
+(0.0095)      (0.0090)       (0.0111)     (0.0082)     (0.0120)      (0.0096)      (0.0467)      
+(0.0200)
+N                                           798                         798                         
+  798                       798                       798                         798               
+          798                         798
+Notes:  The number of invited/trained persons in treated RPOs ranges from 2 to 16. Hence, it is 
+impossible to be the only invited/treated person in a treated RPO. We report coefficients from 
+regressions using both baseline and endline data regressing changes in trust on a constant  a 
+binary treatment indicator for personal treatment and for treatment  of  others  and on  the  
+number  of  invited/trained persons    For instrumental  variable  regressions'  we  report  
+coefficients  from  two-stage  estimations using  RPO    inritotion,  numfier   invited and  
+personal   inritetion as instruments for spi I for er   troininp, number   trained  and  personal   
+training. Standard errors are reported in parentheses  (clustered at RPO level)
+*  p      0.10, **  p      0.05, ***  p      0.01
+
+Table B.11:  Treatment effects on individual level—ANCOVA
+
+
+
+Panel A: no covariates
+Reduced  form regressions
+spi11over_invitation personal_invitation
+trust outcome at baseline
+
+Instrumental  variable  regressions
+spil1over_training persona1_training
+trust outcome at baseline
+
+Panel B:  controls for crop type
+Reduc'ed  form regressions
+spil1over_invitation personal  invitation
+trust outcome at baseline
+
+Instrumental  variable  regressions
+
+(1)
+negotiation
+
+0.1280’* (0.0539)
+0.1319”
+(0.063Z)
+0.1897”’
+(0.0375
+
+0.1461”
+(0.0613) 0.1402’* (0.0T2)
+0.1801***
+(0.0380)
+
+
+
+0.0844* (0.0502) 0.0923* (0.0549)
+0.1564*** (0.0386)
+
+(2)
+integrity
+
+01 107*
+(0.0611)
+0.1893”’
+(0.0680)
+0.3599”’
+(0.0397)
+
+0.1209’
+(0.0694)
+0.2144”’
+(0.0744)
+0.347Li”““
+(0.0411)
+
+
+
+0.0553 (0.052T) 0.1380”
+(0.0563)
+0.2825”’
+(0.0396)
+
+(3)
+information
+
+0.0787
+(0.0594)
+0.1476““
+(0.0fi44)
+0.2893*** (0.0406)
+
+0.0848 (0.06T5)
+0.1661“”
+(0.0703)
+0.2798““”
+(0.0421)
+
+
+
+0.0201
+(0.0496)
+0.0909“
+(0.0512)
+0.2282”””
+(0.0398)
+
+(4)
+efficiency
+
+0.0609
+(0.0651)
+0.1763”’
+(0.0663)
+0.3111”’
+(0.0489)
+
+0.0619
+(0.0740)
+0.2079”””
+(0.070g)
+0.301I”””
+(0.0503)
+
+
+
+—0.0005 (0.0G5) 0.1202”
+(0.0516) 0.229M” (0.0449)
+
+(5)
+general
+
+0.1029
+(0.0625)
+0.2265“““
+(0.0T1I)
+0.3380*””
+(0.0436)
+
+0.1096
+(0.0704)
+0.2620”’
+(0.0777)
+0.3241”’
+(0.0455)
+
+
+
+0.0G50 (0.0520)
+0.1613”’
+(0.0576)
+0.2403”’
+(0.0360)
+
+
+(6)
+farming
+
+0.100T (0.0662)
+0.1998“””
+(0.07ILi)
+0.3744*** (0.0417)
+
+0.1088
+(0.0747) 0.22U4”* (0.0773)
+0.3627'”’
+(0.0429)
+
+
+
+0.0362
+(0.0542)
+01380”
+(0.0580)
+0.2821”’
+(0.0390)
+
+
+(7)
+trust_sum
+
+0582’
+(0.3389)
+1.0487””*
+(0.3645)
+0.399T””*
+(0.0430)
+
+0.6326’
+(0.3832)
+I  1g50’”
+(0.3944)
+0.3846’”
+(0.0452)
+
+
+
+0.2460
+(0.2752)
+0.7401””
+(0.2816)
+0.3035””“
+(0.0421)
+
+(8)
+trust_factor
+
+0.2450*
+(0.1446)
+0.4464*** (0.1552)
+0.4008*** (0.0431)
+
+0.2663
+(0.1635)
+0.50P1*“”
+(0.1679)
+03851”’
+(00453)
+
+
+
+0.1020
+(0.1173)
+0.3148““
+(0.1199)
+0.3043”””
+(0.0422)
+
+spilIover_training personal_training
+trust outcome at baseline
+0.0996”                    0.0600                     0.0190                   —0.0085              
+       0.0332                     0.0363                     0.2582
+(0.0600)                   (0.0625)                   (0.0590)                   (0.0611)           
+        (0.0609)                   (0.0637)                   (0.J250)
+0.1019                     0.1631”*                  0.1098“                    0.1497**”           
+      0.1951*““                 0.1661“”                  0.8825***
+(0.0630)                   (0.0630)                   (0.0574)                   (0.0571)           
+        (0.0644)                   (0.0646)                   (0.3125)
+6.1520”””                 0.2776”**                 0.223P”””                 0.224g”””             
+    0.2J34**”                 0.2775”””                 0.296g””*
+(0.0379)         (00396)         (0.0397)         (0.0447)         (0.0363)         (0.0386)        
+ (0.0419)
+0.1067 (0.I385) 0.3757’
+(0.1330) 02P77”’ (0.0420)
+
+N                                                                 798                               
+798                               798                               798                             
+  798                               798                               798
+Notes:  The number of invited/trained persons in treated RPOs ranges from 2 to 16.  Hence, it is 
+impossible  to be the only invited/treated person  in a treated RPO. We report coefficients from 
+regressions regressing  trust at endline on a constant, a binary  treatment indicator for personal 
+treatment and for treatment of others including  the trust level at baseline as covariate.  In 
+panel B we report coefficients from regressions  additionally  including  binary indicators for 
+onion and rice cultivation.  For instrumental  variable regressions  we report  coefficients  from 
+two-stage  estimations  using  R PO_inri I aI ion and persona/  inr2totzen as instruments for spilt 
+over  tra2n2ng and persenof   trozninq. Standard errors are reported in parentheses (clustered at 
+RPO level).
+* p      0.10, ** p      0.05, *** p      0.01
+798
+
+
+
+
+
+
+Table B.12: Treatment effects on individual level controlling for treatment intensity—ANCOVA
+
+
+
+
+
+Reduced  form regressions
+spil1over_invitation persona1_invitation number_invited
+trust outcome at baseline
+(1)
+negotiation
+
+0.1656** (0.0675) 0.1773** (0.0714)
+—0.0064
+(0.0078)
+0.1877*** (0.0377)
+(2)
+integrity
+
+0.1550* (0.0780)
+0.2429*** (0.0719)
+—0.0075
+(0.0080)
+0.3597*** (0.0382)
+(3)
+information
+
+0.1198
+(0.0806)
+0.1973”’
+(0.0742)
+—0.0070
+(0.0084)
+02882”
+(0.0401)
+(4)
+efficiency
+
+0.0546
+(0.0818)
+01686”
+(00740)
+0.0011
+(0.0081)
+03111”’
+(00491)
+(5)
+general
+
+0.1038
+(0.0817)
+0.2277***
+(0.0749)
+—0.0002
+(0.0092)
+0.3380*** (0.0433)
+(6)
+farming
+
+0.1307
+(0.0800)
+0.2359***
+(00803)
+—0.0051
+(0.0084)
+03746”’
+(0041)
+(7)
+trust_sum
+
+0.7163* (0.4234)
+1.2119***
+(03885)
+—00230
+(00428)
+0.3991“““
+(0.0424)
+(8)
+trust_factor
+
+0.3024* (0.1808)
+0.5157***
+(0.166)
+—0.0097
+(0.0182)
+0.4002”’
+(0042%)
+
+Instrumental  variable regressions
+spillover  training personal_training number_trained
+trust outcome at baseline
+0.2403*”                 0.2213“                   0.1T16                    0.0T05                 
+   0.1415                    0.1846                    1.0108                    0.4265
+(0.101J)                  (0.115T)                  (0.1203)                  (0.1176)              
+    (0.1162)                  (0.1138)                  (0.6158)                  (0.26J0)
+0.2493’”                 0.330T”””                0.2687”                 0.2179*”                 
+0.2990””’                0.31T0””                1.633”*                 0.6947””
+(0.1001)                  (0.1021)                  (0.1059)                  (0.1038)              
+    (0.1022)                  (0.1109)                  (0.5460)                  (0.2329)
+—0.0149                     —0.0150                     —0.013D                     —0.0014         
+            —0.0051                     —0.0120                     —0.0500                     
+—0.0254
+(0.0118)                  (0.0125)                  (0.0132)                  (0.0118)              
+    (0.0130)                  (0.0122)                  (0.0646)                  (0.0275)
+0.1741*““                0.3436““”                0.2798”””                0.3008“““                
+0.3222““*                0.3604”*“                0.3803“““                0.3815“””
+(00382)        (0.0383)        (0.0421)        (00499)        (0.0455)        (00419)        
+(00436)        (0.0437)
+N                                                    798                             798            
+                 798                             798                             798                
+             798                             798                             798
+Notes:  The number  of invited/trained persons  in treated RPOs ranges from 2 to 16.  Hence, it is 
+impossible  to be the only invited/treated person in a treated RPO. We report coefficients  from 
+regressions regressing trust at endline on a constant, a binary treatment indicator for personal 
+treatment and for treatment of others including the trust level at baseline and the number of 
+invited/trained persons as covariate. For instrumental  variable  regressions  we report 
+coefficients  from two-stage  estimations  using  RPO_invitation, number_inrtted and pens 
+onal_inritation as instruments  for  spill or er_tro*ninq, number_trained and personn/_tro2ntnq. 
+Standard errors are reported in parentheses (clustered at RPO level).
+* p <  0.10, ** p <  0.05, *** p <  0.01
