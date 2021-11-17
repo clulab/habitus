@@ -48,12 +48,37 @@ class BeliefProcessor(val processor: Processor,
     val initialState = State(entityMentions)
     val eventMentions = extractor.extractFrom(doc, initialState).sortBy(m => (m.sentence, m.getClass.getSimpleName))
 
-    // Expand the arguments, don't allow to cross the trigger
+    // expand the arguments, don't allow to cross the trigger
     val eventTriggers = eventMentions.collect{ case em: EventMention => em.trigger }
-
     val expandedMentions = eventMentions.map(expandArgs(_, State(eventTriggers)))
 
+    // keep only beliefs that look like propositions
+    val propBeliefMentions = expandedMentions.filter(containsPropositionBelief)
+
     (doc, expandedMentions)
+  }
+
+  private def containsPropositionBelief(m: Mention): Boolean = {
+    m.isInstanceOf[EventMention] &&
+      m.arguments.contains("belief") &&
+      m.arguments("belief").nonEmpty &&
+      isProposition(m.arguments("belief").head)
+  }
+
+  /** True if this mention contains a proposition */
+  private def isProposition(mention: Mention): Boolean = {
+    val sent = mention.sentenceObj
+    val tags = sent.tags.get
+    val span = mention.tokenInterval
+
+    var hasNoun = false
+    var hasVerb = false
+    for(i <- span.start until span.end) {
+      if(tags(i).startsWith("NN")) hasNoun = true
+      else if(tags(i).startsWith("VB")) hasVerb = true
+    }
+
+    hasNoun && hasVerb
   }
 }
 
