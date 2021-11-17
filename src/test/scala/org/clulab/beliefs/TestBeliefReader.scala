@@ -31,17 +31,15 @@ class TestBeliefReader extends FlatSpec with Matchers {
     m.arguments("belief").head.text should be ("Trump")
   }
 
-  // TODO: Mentions of this sentence has size 2
-  
-  // val sent3 = "Most women think Trump is a bad person"
-  // sent3 should "contain one belief" in {
-  //   val mentions = getMentions(sent3)
-  //   mentions should have size(1)
+  val sent3 = "Most women think Trump is a bad person"
+  sent3 should "contain one belief" in {
+     val mentions = getMentions(sent3)
+     mentions should have size(1)
 
-  //   val m = mentions.head
-  //   m.arguments("believer").head.text should be ("Most women")
-  //   m.arguments("belief").head.text should be ("Trump is a bad person")
-  // }
+     val m = mentions.head
+     m.arguments("believer").head.text should be ("Most women")
+     m.arguments("belief").head.text should be ("Trump is a bad person")
+   }
 
   val sent4 = "Allegra accepts that Paul makes good beer"
   sent4 should "contain one belief" in {

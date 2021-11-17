@@ -4,9 +4,9 @@ import com.typesafe.config.{ConfigFactory, ConfigValueFactory}
 import org.apache.commons.io.FileUtils
 import org.clulab.dynet.Utils
 import org.clulab.habitus.HabitusProcessor
+import org.clulab.habitus.actions.HabitusActions
 import org.clulab.odin.{EventMention, ExtractorEngine, Mention, RelationMention, State, TextBoundMention}
 import org.clulab.openie.entities.CustomizableRuleBasedFinder
-import org.clulab.processors.clu.CluProcessor
 import org.clulab.processors.{Document, Processor}
 
 import java.io.File
@@ -36,7 +36,6 @@ class BeliefProcessor(val processor: Processor,
   }
 
   def parse(text: String): (Document, Seq[Mention]) = {
-
     // pre-processing
     val doc = processor.annotate(text, keepText = false)
 
@@ -95,13 +94,14 @@ object BeliefProcessor {
     // Find resource dir from project root.
     val resourceDir = new File(cwd, "src/main/resources")
     val masterFile = new File(resourceDir, "beliefs/master.yml")
+    val actions = new HabitusActions
     // We usually want to reload rules during development,
     // so we try to load them from the filesystem first, then jar.
     if (masterFile.exists()) {
       // read file from filesystem
       val rules = FileUtils.readFileToString(masterFile, StandardCharsets.UTF_8)
       // creates an extractor engine using the rules and the default actions
-      val extractor = ExtractorEngine(rules) // , path = Some(resourceDir)) // TODO: do we still need this?
+      val extractor = ExtractorEngine(rules, actions, actions.cleanupAction) // , path = Some(resourceDir)) // TODO: do we still need this?
       new BeliefProcessor(processor, finder, extractor)
     } else {
       // read rules from yml file in resources
@@ -109,7 +109,7 @@ object BeliefProcessor {
       val rules = source.mkString
       source.close()
       // creates an extractor engine using the rules and the default actions
-      val extractor = ExtractorEngine(rules)
+      val extractor = ExtractorEngine(rules, actions, actions.cleanupAction)
       new BeliefProcessor(processor, finder, extractor)
     }
   }
