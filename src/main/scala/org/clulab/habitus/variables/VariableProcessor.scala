@@ -24,9 +24,8 @@ class VariableProcessor(val processor: CluProcessor, val extractor: ExtractorEng
 
 
   def parse(text: String): (Document, Seq[Mention], Seq[EventMention], Seq[EntityDistFreq]) = {
-
-      // pre-processing
-      val doc = (processor.annotate(text, keepText = false))
+    // pre-processing
+    val doc = processor.annotate(text, keepText = false)
 
     // extract mentions from annotated document
     val mentions = extractor.extractFrom(doc).sortBy(m => (m.sentence, m.getClass.getSimpleName))
@@ -35,8 +34,6 @@ class VariableProcessor(val processor: CluProcessor, val extractor: ExtractorEng
     val ce = EntityHistogramExtractor()
     val (allEventMentions, histogram) = ce.extractHistogramEventMentions(doc, mentions)
     (doc, mentions, allEventMentions, histogram)
-
-
   }
 }
 
@@ -87,7 +84,7 @@ object VariableProcessor {
     // create the processor
     Utils.initializeDyNet()
     val lexiconNer = newLexiconNer()
-    val processor = new HabitusProcessor(lexiconNer)
+    val processor = new HabitusProcessor(Some(lexiconNer))
     // val processor = new CluProcessor(optionalNER = Some(lexiconNer))
     VariableProcessor(processor)
   }

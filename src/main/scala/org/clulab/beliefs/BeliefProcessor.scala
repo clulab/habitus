@@ -3,10 +3,10 @@ package org.clulab.beliefs
 import com.typesafe.config.{ConfigFactory, ConfigValueFactory}
 import org.apache.commons.io.FileUtils
 import org.clulab.dynet.Utils
+import org.clulab.habitus.HabitusProcessor
 import org.clulab.habitus.actions.HabitusActions
 import org.clulab.odin.{EventMention, ExtractorEngine, Mention, RelationMention, State, TextBoundMention}
 import org.clulab.openie.entities.CustomizableRuleBasedFinder
-import org.clulab.processors.clu.CluProcessor
 import org.clulab.processors.{Document, Processor}
 
 import java.io.File
@@ -36,7 +36,6 @@ class BeliefProcessor(val processor: Processor,
   }
 
   def parse(text: String): (Document, Seq[Mention]) = {
-
     // pre-processing
     val doc = processor.annotate(text, keepText = false)
 
@@ -49,12 +48,37 @@ class BeliefProcessor(val processor: Processor,
     val initialState = State(entityMentions)
     val eventMentions = extractor.extractFrom(doc, initialState).sortBy(m => (m.sentence, m.getClass.getSimpleName))
 
-    // Expand the arguments, don't allow to cross the trigger
+    // expand the arguments, don't allow to cross the trigger
     val eventTriggers = eventMentions.collect{ case em: EventMention => em.trigger }
-
     val expandedMentions = eventMentions.map(expandArgs(_, State(eventTriggers)))
 
-    (doc, expandedMentions)
+    // keep only beliefs that look like propositions
+    val propBeliefMentions = expandedMentions.filter(containsPropositionBelief)
+
+    (doc, propBeliefMentions)
+  }
+
+  private def containsPropositionBelief(m: Mention): Boolean = {
+    m.isInstanceOf[EventMention] &&
+      m.arguments.contains("belief") &&
+      m.arguments("belief").nonEmpty &&
+      isProposition(m.arguments("belief").head)
+  }
+
+  /** True if this mention contains a proposition */
+  private def isProposition(mention: Mention): Boolean = {
+    val sent = mention.sentenceObj
+    val tags = sent.tags.get
+    val span = mention.tokenInterval
+
+    var nounCount = 0
+    var verbCount = 0
+    for(i <- span.start until span.end) {
+      if(tags(i).startsWith("NN")) nounCount += 1
+      else if(tags(i).startsWith("VB")) verbCount += 1
+    }
+
+    nounCount > 1 || (nounCount > 0 && verbCount > 0)
   }
 }
 
@@ -62,7 +86,7 @@ object BeliefProcessor {
   def apply(): BeliefProcessor = {
     // create the processor
     Utils.initializeDyNet()
-    val processor: Processor = new CluProcessor()
+    val processor: Processor = new HabitusProcessor(None)
 
     // the mention finder, without expansion
     val config = ConfigFactory.load()
