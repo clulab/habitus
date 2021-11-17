@@ -55,7 +55,7 @@ class BeliefProcessor(val processor: Processor,
     // keep only beliefs that look like propositions
     val propBeliefMentions = expandedMentions.filter(containsPropositionBelief)
 
-    (doc, expandedMentions)
+    (doc, propBeliefMentions)
   }
 
   private def containsPropositionBelief(m: Mention): Boolean = {
@@ -71,14 +71,14 @@ class BeliefProcessor(val processor: Processor,
     val tags = sent.tags.get
     val span = mention.tokenInterval
 
-    var hasNoun = false
-    var hasVerb = false
+    var nounCount = 0
+    var verbCount = 0
     for(i <- span.start until span.end) {
-      if(tags(i).startsWith("NN")) hasNoun = true
-      else if(tags(i).startsWith("VB")) hasVerb = true
+      if(tags(i).startsWith("NN")) nounCount += 1
+      else if(tags(i).startsWith("VB")) verbCount += 1
     }
 
-    hasNoun && hasVerb
+    nounCount > 1 || (nounCount > 0 && verbCount > 0)
   }
 }
 
