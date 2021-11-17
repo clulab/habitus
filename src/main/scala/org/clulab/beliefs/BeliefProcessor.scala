@@ -3,6 +3,7 @@ package org.clulab.beliefs
 import com.typesafe.config.{ConfigFactory, ConfigValueFactory}
 import org.apache.commons.io.FileUtils
 import org.clulab.dynet.Utils
+import org.clulab.habitus.HabitusProcessor
 import org.clulab.odin.{EventMention, ExtractorEngine, Mention, RelationMention, State, TextBoundMention}
 import org.clulab.openie.entities.CustomizableRuleBasedFinder
 import org.clulab.processors.clu.CluProcessor
@@ -61,7 +62,7 @@ object BeliefProcessor {
   def apply(): BeliefProcessor = {
     // create the processor
     Utils.initializeDyNet()
-    val processor: Processor = new CluProcessor()
+    val processor: Processor = new HabitusProcessor(None)
 
     // the mention finder, without expansion
     val config = ConfigFactory.load()
