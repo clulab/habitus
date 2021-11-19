@@ -44,7 +44,7 @@ object VariableReader {
             val printVars = PrintVariables("Assignment","variable","value")
             synchronized {
               tsvPrinter.outputMentions(mentions, doc, context, filename,printVars)
-              jsonPrinter.outputMentions(mentions, doc, context, filename)
+              jsonPrinter.outputMentions(mentions, doc, context, filename,printVars)
             }
           }
           catch {
