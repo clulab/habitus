@@ -35,36 +35,38 @@ class JsonPrinter(outputFilename: String) {
     val sentenceText = doc.sentences(mention.sentence).getSentenceText
     val valueNormsOpt = valueMention.norms
     val valueNorm =
-        if (valueNormsOpt.isDefined && valueNormsOpt.get.length > 2)
-          valueNormsOpt.get.head
-        else
-          valueMention.lemmas
-            .map(_.mkString(" "))
-            .getOrElse(valueMention.text)
-
-    contextDetailsSeq.foreach { contextDetails =>
-      val jObject =
+      if (valueNormsOpt.isDefined && valueNormsOpt.get.length > 2)
+        valueNormsOpt.get.head
+      else
+        valueMention.lemmas
+          .map(_.mkString(" "))
+          .getOrElse(valueMention.text)
+    if (!contextDetailsSeq.isEmpty) {
+      contextDetailsSeq.foreach { contextDetails =>
+        val jObject =
           ("variableText" -> variableText) ~
-          ("valueText" -> valueText) ~
-          ("valueNorm" -> valueNorm) ~
-          ("sentenceText" -> sentenceText) ~
-          ("inputFilename" -> inputFilename) ~
-          ("mostFreqLoc0Sent"  -> contextDetails.mostFreqLoc0Sent) ~
-          ("mostFreqLoc1Sent"  -> contextDetails.mostFreqLoc1Sent) ~
-          ("mostFreqLoc"       -> contextDetails.mostFreqLoc) ~
-          ("mostFreqDate0Sent" -> contextDetails.mostFreqDate0Sent) ~
-          ("mostFreqDate1Sent" -> contextDetails.mostFreqDate1Sent) ~
-          ("mostFreqDate"      -> contextDetails.mostFreqDate) ~
-          ("mostFreqCrop0Sent" -> contextDetails.mostFreqCrop0Sent) ~
-          ("mostFreqCrop1Sent" -> contextDetails.mostFreqCrop1Sent) ~
-          ("mostFreqCrop"      -> contextDetails.mostFreqCrop)
-      val json = stringify(jObject, pretty = true)
-      val indentedJson = "  " + json.replace("\n", "\n  ")
+            ("valueText" -> valueText) ~
+            ("valueNorm" -> valueNorm) ~
+            ("sentenceText" -> sentenceText) ~
+            ("inputFilename" -> inputFilename) ~
+            ("mostFreqLoc0Sent" -> contextDetails.mostFreqLoc0Sent) ~
+            ("mostFreqLoc1Sent" -> contextDetails.mostFreqLoc1Sent) ~
+            ("mostFreqLoc" -> contextDetails.mostFreqLoc) ~
+            ("mostFreqDate0Sent" -> contextDetails.mostFreqDate0Sent) ~
+            ("mostFreqDate1Sent" -> contextDetails.mostFreqDate1Sent) ~
+            ("mostFreqDate" -> contextDetails.mostFreqDate) ~
+            ("mostFreqCrop0Sent" -> contextDetails.mostFreqCrop0Sent) ~
+            ("mostFreqCrop1Sent" -> contextDetails.mostFreqCrop1Sent) ~
+            ("mostFreqCrop" -> contextDetails.mostFreqCrop)
 
-      // Each JSON element in the array needs to be separated from the others.
-      if (dirty) printWriter.println(",")
-      else dirty = true
-      printWriter.print(indentedJson)
+        val json = stringify(jObject, pretty = true)
+        val indentedJson = "  " + json.replace("\n", "\n  ")
+
+        // Each JSON element in the array needs to be separated from the others.
+        if (dirty) printWriter.println(",")
+        else dirty = true
+        printWriter.print(indentedJson)
+      }
     }
   }
 
