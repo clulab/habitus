@@ -15,8 +15,6 @@ class TsvPrinter(outputFilename: String) {
     printWriter.close()
   }
 
-  case class PrintVariables(mentionLabel:String, mentionType:String, mentionExtractor:  String)
-
 
   def outputMentions(
     mentions: Seq[Mention],

@@ -1,6 +1,6 @@
 package org.clulab.beliefs
 
-import org.clulab.habitus.utils.{ContextDetails, JsonPrinter, TsvPrinter}
+import org.clulab.habitus.utils.{ContextDetails, JsonPrinter, TsvPrinter,PrintVariables}
 import org.clulab.utils.{FileUtils, StringUtils, ThreadUtils}
 import org.clulab.utils.Closer.AutoCloser
 
@@ -37,8 +37,7 @@ object BeliefReader {
             val filename = StringUtils.afterLast(file.getName, '/')
             println(s"going to parse input file: $filename")
             val (doc, mentions) = vp.parse(text)
-            //tsvPrinter.PrintVariables("Assignment","Variable","Value")
-            val printVars = tsvPrinter.PrintVariables("Belief", "believer", "belief")
+            val printVars = PrintVariables("Belief", "believer", "belief")
             val contexts = mutable.Map.empty[Int, ArrayBuffer[ContextDetails]]
             synchronized {
               tsvPrinter.outputBeliefMentions(mentions, doc, contexts, filename, printVars);
