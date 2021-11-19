@@ -15,6 +15,9 @@ class TsvPrinter(outputFilename: String) {
     printWriter.close()
   }
 
+  case class PrintVariables(mentionLabel:String, mentionType:String, mentionExtractor:  String)
+
+
   def outputMentions(
     mentions: Seq[Mention],
     doc: Document,
@@ -112,21 +115,22 @@ class TsvPrinter(outputFilename: String) {
                       mentions: Seq[Mention],
                       doc: Document,
                       contexts: mutable.Map[Int, ArrayBuffer[ContextDetails]],
-                      inputFilename: String
+                      inputFilename: String,
+                      printVars:PrintVariables
                     ): Unit = {
     println(s"Writing mentions from doc ${inputFilename} to $outputFilename")
-    outputBeliefMentions(mentions, doc, contexts, inputFilename, printWriter);
+    outputBeliefMentions(mentions, doc, contexts, inputFilename, printWriter,printVars);
     printWriter.flush()
   }
 
   // extract needed information and write them to tsv in a desired format. Return nothing here!
   protected def outputBeliefMentions(mentions: Seq[Mention], doc: Document, contexts: scala.collection.mutable.Map[Int, ArrayBuffer[ContextDetails]],
-                               filename: String, pw: PrintWriter): Unit = {
+                               filename: String, pw: PrintWriter,printVars:PrintVariables): Unit = {
     val mentionsBySentence = mentions groupBy (_.sentence) mapValues (_.sortBy(_.start)) withDefaultValue Nil
     for ((s, i) <- doc.sentences.zipWithIndex) {
 
       // to keep only mention labelled as Assignment (these labels are associated with .yml files, e.g. Variable, Value)
-      val sortedMentions = mentionsBySentence(i).filter(_.label matches "Belief")
+      val sortedMentions = mentionsBySentence(i).filter(_.label matches printVars.mentionLabel)
 
 
       sortedMentions.foreach {
@@ -137,8 +141,8 @@ class TsvPrinter(outputFilename: String) {
         m =>
           try {
             val sentence=doc.sentences(i).words.mkString(" ")
-            val believer = m.arguments("believer").head.text
-            val belief = m.arguments("belief").head.text
+            val believer = m.arguments(printVars.mentionType).head.text
+            val belief = m.arguments(printVars.mentionExtractor).head.text
             pw.println(s"$believer\t$belief\t$sentence")
           }
           catch {

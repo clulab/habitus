@@ -37,10 +37,11 @@ object BeliefReader {
             val filename = StringUtils.afterLast(file.getName, '/')
             println(s"going to parse input file: $filename")
             val (doc, mentions) = vp.parse(text)
-
-            val contexts= mutable.Map.empty[Int, ArrayBuffer[ContextDetails]]
+            //tsvPrinter.PrintVariables("Assignment","Variable","Value")
+            val printVars = tsvPrinter.PrintVariables("Belief", "believer", "belief")
+            val contexts = mutable.Map.empty[Int, ArrayBuffer[ContextDetails]]
             synchronized {
-              tsvPrinter.outputBeliefMentions(mentions, doc, contexts, filename);
+              tsvPrinter.outputBeliefMentions(mentions, doc, contexts, filename, printVars);
             }
           }
           catch {
@@ -50,5 +51,4 @@ object BeliefReader {
       }
     }
   }
-
 }
