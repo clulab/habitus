@@ -49,15 +49,6 @@ package object utils {
     for (ctxt <- context(sentId)) {
       allContexts.append(ctxt.mostFreqLoc0Sent)
     }
-    // {mostFreqLoc0Sent}\t${
-    //              context(i).mostFreqLoc1Sent}\t${
-    //              context(i).mostFreqLoc}\t${
-    //              context(i).mostFreqDate0Sent}\t${
-    //              context(i).mostFreqDate1Sent}\t${
-    //              context(i).mostFreqDate}\t${
-    //              context(i).mostFreqCrop0Sent}\t${
-    //              context(i).mostFreqCrop1Sent}\t${
-    //              context(i).mostFreqCrop}
   }
 
   def printHybridDependencies(s:Sentence): Unit = {
