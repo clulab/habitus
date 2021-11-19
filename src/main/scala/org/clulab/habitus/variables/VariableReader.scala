@@ -41,9 +41,9 @@ object VariableReader {
             println(s"going to parse input file: $filename")
             val (doc, mentions, allEventMentions, entityHistogram) = vp.parse(text)
             val context = compressContext(doc, allEventMentions, entityHistogram)
-
+            val printVars = tsvPrinter.PrintVariables("Assignment","Variable","Value")
             synchronized {
-              tsvPrinter.outputMentions(mentions, doc, context, filename)
+              tsvPrinter.outputMentions(mentions, doc, context, filename,printVars)
               jsonPrinter.outputMentions(mentions, doc, context, filename)
             }
           }

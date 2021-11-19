@@ -22,21 +22,22 @@ class TsvPrinter(outputFilename: String) {
     mentions: Seq[Mention],
     doc: Document,
     contexts: mutable.Map[Int, ArrayBuffer[ContextDetails]],
-    inputFilename: String
+    inputFilename: String,
+    printVars:PrintVariables
   ): Unit = {
     println(s"Writing mentions from doc ${inputFilename} to $outputFilename")
-    outputMentions(mentions, doc, contexts, inputFilename, printWriter)
+    outputMentions(mentions, doc, contexts, inputFilename, printWriter,printVars)
     printWriter.flush()
   }
 
   // extract needed information and write them to tsv in a desired format. Return nothing here!
   protected def outputMentions(mentions: Seq[Mention], doc: Document, contexts: scala.collection.mutable.Map[Int, ArrayBuffer[ContextDetails]],
-                          filename: String, pw: PrintWriter): Unit = {
+                          filename: String, pw: PrintWriter,printVars:PrintVariables): Unit = {
     val mentionsBySentence = mentions groupBy (_.sentence) mapValues (_.sortBy(_.start)) withDefaultValue Nil
     for ((s, i) <- doc.sentences.zipWithIndex) {
 
       // to keep only mention labelled as Assignment (these labels are associated with .yml files, e.g. Variable, Value)
-      val sortedMentions = mentionsBySentence(i).filter(_.label matches "Assignment")
+      val sortedMentions = mentionsBySentence(i).filter(_.label matches printVars.mentionLabel)
 
 
       sortedMentions.foreach {
@@ -47,8 +48,8 @@ class TsvPrinter(outputFilename: String) {
         m =>
           try {
 
-            val varText = m.arguments("variable").head.text
-            val value = m.arguments("value").head
+            val varText = m.arguments(printVars.mentionType).head.text
+            val value = m.arguments(printVars.mentionExtractor).head
             val valText = value.text
             val sentText = s.getSentenceText
             val valNorms = value.norms
