@@ -23,12 +23,12 @@ class JsonPrinter(outputFilename: String) {
   }
 
   protected def outputMention(
-    mention: Mention,
-    doc: Document,
-    contextDetailsSeq: Seq[ContextDetails],
-    inputFilename: String,
-    printVars:PrintVariables
-  ): Unit = {
+                               mention: Mention,
+                               doc: Document,
+                               contextDetailsSeq: Seq[ContextDetails],
+                               inputFilename: String,
+                               printVars:PrintVariables
+                             ): Unit = {
     val variableText = mention.arguments(printVars.mentionType).head.text
     val valueMention = mention.arguments(printVars.mentionExtractor).head
     val valueText = valueMention.text
@@ -41,33 +41,38 @@ class JsonPrinter(outputFilename: String) {
         valueMention.lemmas
           .map(_.mkString(" "))
           .getOrElse(valueMention.text)
-    if (!contextDetailsSeq.isEmpty) {
+    val jObject = if (!contextDetailsSeq.isEmpty) {
       contextDetailsSeq.foreach { contextDetails =>
-        val jObject =
-          ("variableText" -> variableText) ~
-            ("valueText" -> valueText) ~
-            ("valueNorm" -> valueNorm) ~
-            ("sentenceText" -> sentenceText) ~
-            ("inputFilename" -> inputFilename) ~
-            ("mostFreqLoc0Sent" -> contextDetails.mostFreqLoc0Sent) ~
-            ("mostFreqLoc1Sent" -> contextDetails.mostFreqLoc1Sent) ~
-            ("mostFreqLoc" -> contextDetails.mostFreqLoc) ~
-            ("mostFreqDate0Sent" -> contextDetails.mostFreqDate0Sent) ~
-            ("mostFreqDate1Sent" -> contextDetails.mostFreqDate1Sent) ~
-            ("mostFreqDate" -> contextDetails.mostFreqDate) ~
-            ("mostFreqCrop0Sent" -> contextDetails.mostFreqCrop0Sent) ~
-            ("mostFreqCrop1Sent" -> contextDetails.mostFreqCrop1Sent) ~
-            ("mostFreqCrop" -> contextDetails.mostFreqCrop)
-
-        val json = stringify(jObject, pretty = true)
-        val indentedJson = "  " + json.replace("\n", "\n  ")
-
-        // Each JSON element in the array needs to be separated from the others.
-        if (dirty) printWriter.println(",")
-        else dirty = true
-        printWriter.print(indentedJson)
+        ("variableText" -> variableText) ~
+          ("valueText" -> valueText) ~
+          ("valueNorm" -> valueNorm) ~
+          ("sentenceText" -> sentenceText) ~
+          ("inputFilename" -> inputFilename) ~
+          ("mostFreqLoc0Sent" -> contextDetails.mostFreqLoc0Sent) ~
+          ("mostFreqLoc1Sent" -> contextDetails.mostFreqLoc1Sent) ~
+          ("mostFreqLoc" -> contextDetails.mostFreqLoc) ~
+          ("mostFreqDate0Sent" -> contextDetails.mostFreqDate0Sent) ~
+          ("mostFreqDate1Sent" -> contextDetails.mostFreqDate1Sent) ~
+          ("mostFreqDate" -> contextDetails.mostFreqDate) ~
+          ("mostFreqCrop0Sent" -> contextDetails.mostFreqCrop0Sent) ~
+          ("mostFreqCrop1Sent" -> contextDetails.mostFreqCrop1Sent) ~
+          ("mostFreqCrop" -> contextDetails.mostFreqCrop)
       }
     }
+    else
+    {
+      ("variableText" -> variableText) ~
+        ("valueText" -> valueText) ~
+        ("sentenceText" -> sentenceText)
+    }
+
+    val json = stringify(jObject, pretty = true)
+    val indentedJson = "  " + json.replace("\n", "\n  ")
+
+    // Each JSON element in the array needs to be separated from the others.
+    if (dirty) printWriter.println(",")
+    else dirty = true
+    printWriter.print(indentedJson)
   }
 
   def outputMentions(
