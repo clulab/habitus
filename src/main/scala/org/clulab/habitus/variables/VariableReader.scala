@@ -42,11 +42,6 @@ object VariableReader {
             val (doc, mentions, allEventMentions, entityHistogram) = vp.parse(text)
             val context = compressContext(doc, allEventMentions, entityHistogram)
 
-
-            val printConditions=Map(
-              "mentionLabel"-> "variable"
-              "value"->
-            )
             synchronized {
               tsvPrinter.outputMentions(mentions, doc, context, filename)
               jsonPrinter.outputMentions(mentions, doc, context, filename)
