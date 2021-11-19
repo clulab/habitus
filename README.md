@@ -56,9 +56,59 @@ The same code can be called in batch mode with the command:
 ./var-read
 ```
 
-This command expects a collection of documents, each saved as a `.txt` file in the directory `in/`. The software produces its output in the directory `out/`, using two formats. For each input file it produces a `.tsv` file, which contains a tab-separated output. Similarly, it produces a `.json` file, which contains the same output in JSON format, which might be more suitable for programmatic ingestion. For example, 
+This command expects a collection of documents, each saved as a `.txt` file in the directory `in/`. The software produces its output in the directory `out/`, using two formats. The first output files is called `mentions.tsv`, and it contains a tab-separated output. Similarly, it produces a `mentions.json` file, which contains the same output in JSON format, which might be more suitable for programmatic ingestion. As a simple example, let's assume that the `in/` directory contains a single file called `1.txt`, which contains the same text as the above example:
 
+> Farmers’ sowing dates ranged from 14 to 31 July for the WS and from 3 to 11 March for the DS.
+
+Running the `./var-read` command produces two files in the `out/` directory: `mentions.tsv` and `mentions.json`, where the former contains:
+
+```
+sowing dates    from 3 to 11 March      XXXX-03-03 -- XXXX-03-11        Farmers ’ sowing dates ranged from 14 to 31 July for the WS and from 3 to 11 March for the DS . 1.txt   N/A     N/A     N/A     N/A     N/A     N/A     N/A     N/A     N/A
+sowing dates    from 14 to 31 July      XXXX-07-14 -- XXXX-07-31        Farmers ’ sowing dates ranged from 14 to 31 July for the WS and from 3 to 11 March for the DS . 1.txt   N/A     N/A     N/A     N/A     N/A     N/A     N/A     N/A     N/A
+```
+
+The `mentions.json` file contains:
+
+```
+[
+  {
+    "variableText" : "sowing dates",
+    "valueText" : "from 3 to 11 March",
+    "valueNorm" : "XXXX-03-03 -- XXXX-03-11",
+    "sentenceText" : "Farmers ’ sowing dates ranged from 14 to 31 July for the WS and from 3 to 11 March for the DS .",
+    "inputFilename" : "1.txt",
+    "mostFreqLoc0Sent" : "N/A",
+    "mostFreqLoc1Sent" : "N/A",
+    "mostFreqLoc" : "N/A",
+    "mostFreqDate0Sent" : "N/A",
+    "mostFreqDate1Sent" : "N/A",
+    "mostFreqDate" : "N/A",
+    "mostFreqCrop0Sent" : "N/A",
+    "mostFreqCrop1Sent" : "N/A",
+    "mostFreqCrop" : "N/A"
+  },
+  {
+    "variableText" : "sowing dates",
+    "valueText" : "from 14 to 31 July",
+    "valueNorm" : "XXXX-07-14 -- XXXX-07-31",
+    "sentenceText" : "Farmers ’ sowing dates ranged from 14 to 31 July for the WS and from 3 to 11 March for the DS .",
+    "inputFilename" : "1.txt",
+    "mostFreqLoc0Sent" : "N/A",
+    "mostFreqLoc1Sent" : "N/A",
+    "mostFreqLoc" : "N/A",
+    "mostFreqDate0Sent" : "N/A",
+    "mostFreqDate1Sent" : "N/A",
+    "mostFreqDate" : "N/A",
+    "mostFreqCrop0Sent" : "N/A",
+    "mostFreqCrop1Sent" : "N/A",
+    "mostFreqCrop" : "N/A"
+  }
+]
+```
+
+The description of the columns in the `.tsv` file (or the equivalent fields in the `.json` file is:
+TODO Mithun.
 
 ## 3. Reading for propositional attitudes
 
-This component reads for statements such as WHO believes WHAT.
+This component reads for statements such as WHO believes WHAT. TODO Mihai.
