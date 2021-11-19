@@ -4,7 +4,7 @@ import org.clulab.odin.Mention
 import org.clulab.processors.Document
 import org.clulab.serialization.json.stringify
 import org.clulab.utils.FileUtils
-import org.json4s.{JArray, JObject, JValue}
+import org.json4s.{JArray, JValue}
 import org.json4s.JsonDSL._
 
 import java.io.PrintWriter
@@ -43,31 +43,30 @@ class JsonPrinter(outputFilename: String) {
           .map(_.mkString(" "))
           .getOrElse(valueMention.text)
     val jValue: JValue =
-        if (!contextDetailsSeq.isEmpty) {
+        if (contextDetailsSeq.nonEmpty) {
           val jObjects = contextDetailsSeq.map { contextDetails =>
-              ("variableText" -> variableText) ~
-              ("valueText" -> valueText) ~
-              ("valueNorm" -> valueNorm) ~
-              ("sentenceText" -> sentenceText) ~
-              ("inputFilename" -> inputFilename) ~
-              ("mostFreqLoc0Sent" -> contextDetails.mostFreqLoc0Sent) ~
-              ("mostFreqLoc1Sent" -> contextDetails.mostFreqLoc1Sent) ~
-              ("mostFreqLoc" -> contextDetails.mostFreqLoc) ~
-              ("mostFreqDate0Sent" -> contextDetails.mostFreqDate0Sent) ~
-              ("mostFreqDate1Sent" -> contextDetails.mostFreqDate1Sent) ~
-              ("mostFreqDate" -> contextDetails.mostFreqDate) ~
-              ("mostFreqCrop0Sent" -> contextDetails.mostFreqCrop0Sent) ~
-              ("mostFreqCrop1Sent" -> contextDetails.mostFreqCrop1Sent) ~
-              ("mostFreqCrop" -> contextDetails.mostFreqCrop)
+            ("variableText" -> variableText) ~
+            ("valueText" -> valueText) ~
+            ("valueNorm" -> valueNorm) ~
+            ("sentenceText" -> sentenceText) ~
+            ("inputFilename" -> inputFilename) ~
+            ("mostFreqLoc0Sent" -> contextDetails.mostFreqLoc0Sent) ~
+            ("mostFreqLoc1Sent" -> contextDetails.mostFreqLoc1Sent) ~
+            ("mostFreqLoc" -> contextDetails.mostFreqLoc) ~
+            ("mostFreqDate0Sent" -> contextDetails.mostFreqDate0Sent) ~
+            ("mostFreqDate1Sent" -> contextDetails.mostFreqDate1Sent) ~
+            ("mostFreqDate" -> contextDetails.mostFreqDate) ~
+            ("mostFreqCrop0Sent" -> contextDetails.mostFreqCrop0Sent) ~
+            ("mostFreqCrop1Sent" -> contextDetails.mostFreqCrop1Sent) ~
+            ("mostFreqCrop" -> contextDetails.mostFreqCrop)
           }
 
           JArray(jObjects.toList)
         }
         else
-            ("variableText" -> variableText) ~
-            ("valueText" -> valueText) ~
-            ("sentenceText" -> sentenceText)
-
+          ("variableText" -> variableText) ~
+          ("valueText" -> valueText) ~
+          ("sentenceText" -> sentenceText)
     val json = stringify(jValue, pretty = true)
     val indentedJson = "  " + json.replace("\n", "\n  ")
 
