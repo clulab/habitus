@@ -109,6 +109,18 @@ The `mentions.json` file contains:
 The description of the columns in the `.tsv` file (or the equivalent fields in the `.json` file is:
 TODO Mithun.
 
+### 2.3. Programmatic access
+
+The key class for variable reading is [`org.clulab.habitus.variables.VariableProcessor`](https://github.com/clulab/habitus/blob/main/src/main/scala/org/clulab/habitus/variables/VariableProcessor.scala).
+Instantiate it with the `apply` method, e.g.: `val vp = VariableProcessor`. The key method is `parse`, which produces a tuple with four elements as follows:
+
+1. The first tuple element is a `Document`, which contains all sentences extracted from the corresponding text as well as various NLP preprocessing such as part-of-speech (POS) tagging, dependency parsing, and semantic roles.
+2. The second element is a list of *all* extractions from this document.
+3. The third element is the actual list of event mentions, where each mention associates one variable with one value (see example above).
+4. The last element is a histogram of context elements (e.g., locations, years) and distance from event mentions.
+
+For an example on how these data structures are used, take a look at the method [`org.clulab.habitus.variables.VariableReader.run`](https://github.com/clulab/habitus/blob/main/src/main/scala/org/clulab/habitus/variables/VariableReader.scala#L25).
+
 ## 3. Reading for propositional attitudes
 
 This component reads for statements such as WHO believes WHAT. TODO Mihai.
