@@ -50,6 +50,13 @@ List(Assignment, Event) => sowing dates ranged from 14 to 31 July
 
 ### 2.2. Batch mode
 
+The same code can be called in batch mode with the command:
+
+```
+./var-read
+```
+
+This command expects a collection of documents, each saved as a `.txt` file in the directory `in/`. The software produces its output in the directory `out/`, using two formats. For each input file it produces a `.tsv` file, which contains a tab-separated output. Similarly, it produces a `.json` file, which contains the same output in JSON format, which might be more suitable for programmatic ingestion. For example, 
 
 
 ## 3. Reading for propositional attitudes
