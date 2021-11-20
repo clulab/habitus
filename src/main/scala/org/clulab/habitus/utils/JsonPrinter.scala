@@ -26,7 +26,7 @@ class JsonPrinter(outputFilename: String) {
   protected def outputMention(
      mention: Mention,
      doc: Document,
-     contextDetailsSeq: mutable.Map[Int, ArrayBuffer[ContextDetails]],
+     contextDetailsSeq: Seq[ContextDetails],
      inputFilename: String,
      printVars: PrintVariables
    ): Unit = {
@@ -44,7 +44,7 @@ class JsonPrinter(outputFilename: String) {
           .getOrElse(valueMention.text)
     val jValue: JValue =
         if (contextDetailsSeq.nonEmpty) {
-          val jObjects = contextDetailsSeq(mention.sentence).map { contextDetails =>
+          val jObjects = contextDetailsSeq.map { contextDetails =>
               ("variableText" -> variableText) ~
               ("valueText" -> valueText) ~
               ("valueNorm" -> valueNorm) ~
@@ -88,9 +88,10 @@ class JsonPrinter(outputFilename: String) {
     mentions
         .filter { mention => mention.label.matches(printVars.mentionLabel) }
         //.filter { mention => contexts.contains(mention.sentence) }
+      .filter { mention => contexts.isEmpty || contexts.contains(mention.sentence) }
         .sortBy { mention => (mention.sentence, mention.start) }
         .foreach { mention =>
-          outputMention(mention, doc, contexts, inputFilename, printVars)
+          outputMention(mention, doc, contexts(mention.sentence), inputFilename, printVars)
         }
     printWriter.flush()
   }
