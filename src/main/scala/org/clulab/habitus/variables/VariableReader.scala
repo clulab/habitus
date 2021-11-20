@@ -3,10 +3,11 @@ package org.clulab.habitus.variables
 import org.clulab.habitus.utils.ContextDetails
 import org.clulab.odin.EventMention
 import org.clulab.processors.Document
-import org.clulab.utils.Closer.AutoCloser
+import org.clulab.habitus.utils.{JsonPrinter, TsvPrinter,PrintVariables}
 import org.clulab.utils.FileUtils
 import org.clulab.utils.StringUtils
 import org.clulab.utils.ThreadUtils
+import org.clulab.utils.Closer.AutoCloser
 
 import java.io.File
 import scala.collection.mutable.ArrayBuffer
@@ -40,10 +41,10 @@ object VariableReader {
             println(s"going to parse input file: $filename")
             val (doc, mentions, allEventMentions, entityHistogram) = vp.parse(text)
             val context = compressContext(doc, allEventMentions, entityHistogram)
-
+            val printVars = PrintVariables("Assignment","variable","value")
             synchronized {
-              tsvPrinter.outputMentions(mentions, doc, context, filename)
-              jsonPrinter.outputMentions(mentions, doc, context, filename)
+              tsvPrinter.outputMentions(mentions, doc, context, filename,printVars)
+              jsonPrinter.outputMentions(mentions, doc, context, filename,printVars)
             }
           }
           catch {
