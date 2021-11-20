@@ -108,8 +108,8 @@ The `mentions.json` file contains:
 
 The description of the columns in the `.tsv` file (or the equivalent fields in the `.json` file is as follows:
 - "variableText" : The trigger word/phrase in the sentence which created this extraction. 
- -    "valueText" : The part of sentence which was recognized to contain the intended output of the trigger.
- -     "valueNorm" : The normalized values of the valueText. In case of of dates/date-ranges, the dates in text format is convert to the format YYYY-MM-DD
+ - valueText" : The part of sentence which was recognized to contain the intended output of the trigger.
+ - "valueNorm" : The normalized values of the valueText. In case of of dates/date-ranges, the dates in text format is convert to the format YYYY-MM-DD
  -    "sentenceText" : The particular sentence in which this trigger was found.
  -    "inputFilename" : Name of the file which contained the sentenceText,
  -    "mostFreqLoc0Sent" : Most frequently mentioned location within the same sentence as that of the trigger (e.g.,Senegal). This context is helpful in understanding which location, if any, that particular sentence is talking about.
