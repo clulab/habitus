@@ -64,9 +64,9 @@ class JsonPrinter(outputFilename: String) {
           JArray(jObjects.toList)
         }
         else
-            ("variableText" -> variableText) ~
-            ("valueText" -> valueText) ~
-            ("sentenceText" -> sentenceText)
+            ("Believer" -> variableText) ~
+            ("Belief" -> valueText) ~
+            ("Sentence" -> sentenceText)
 
     val json = stringify(jValue, pretty = true)
     val indentedJson = "  " + json.replace("\n", "\n  ")
