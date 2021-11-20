@@ -52,7 +52,7 @@ class TsvPrinter(outputFilename: String) {
             val sentText = s.getSentenceText
             val valNorms = value.norms
 
-            if (!contexts.isEmpty) {
+            if (contexts.nonEmpty) {
               val norm =
                 if (valNorms.isDefined && valNorms.get.size > 2) {
                   valNorms.filter(_.length > 2).get(0)
