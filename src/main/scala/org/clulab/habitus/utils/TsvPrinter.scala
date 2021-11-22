@@ -40,7 +40,7 @@ class TsvPrinter(outputFilename: String) {
 
       sortedMentions.foreach {
         // Format to print: variable \t value text \t value norms \t extracting sentence \t document name
-        // \t Most frequent LOC within 0 sentences \t Most frequent LOC within 1 sentences.\t Most frequent LOC anywhere in the doc.\n
+        // \t Most frequent X within 0 sentences \t Most frequent X within 1 sentences.\t Most frequent X anywhere in the doc.\n
         // Since we only focus on the Assignment mention which includes two submentions in the same format called
         // ``variable`` and ``value`` we access the two through ``arguments`` attribute of the Mention class.
         m =>
