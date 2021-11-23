@@ -72,29 +72,29 @@ class TsvPrinter(outputFilename: String) {
               if (contexts.contains(i)) {
 
                 pw.println(s"$varText\t$valText\t$norm\t$sentText\t$filename\t${
-                  contexts(i)(0).mostFreqLoc0Sent
+                  contexts(i).head.mostFreqLoc0Sent
+                    .head}\t${
+                  contexts(i).head.mostFreqLoc1Sent
                 }\t${
-                  contexts(i)(0).mostFreqLoc1Sent
+                  contexts(i).head.mostFreqLoc
                 }\t${
-                  contexts(i)(0).mostFreqLoc
+                  contexts(i).head.mostFreqDate0Sent
                 }\t${
-                  contexts(i)(0).mostFreqDate0Sent
+                  contexts(i).head.mostFreqDate1Sent
                 }\t${
-                  contexts(i)(0).mostFreqDate1Sent
+                  contexts(i).head.mostFreqDate
                 }\t${
-                  contexts(i)(0).mostFreqDate
+                  contexts(i).head.mostFreqCrop0Sent
                 }\t${
-                  contexts(i)(0).mostFreqCrop0Sent
+                  contexts(i).head.mostFreqCrop1Sent
                 }\t${
-                  contexts(i)(0).mostFreqCrop1Sent
+                  contexts(i).head.mostFreqCrop
                 }\t${
-                  contexts(i)(0).mostFreqCrop
+                  contexts(i).head.mostFreqFertilizer0Sent
                 }\t${
-                  contexts(i)(0).mostFreqFertilizer0Sent
+                  contexts(i).head.mostFreqFertilizer1Sent
                 }\t${
-                  contexts(i)(0).mostFreqFertilizer1Sent
-                }\t${
-                  contexts(i)(0).mostFreqFertilizerOverall
+                  contexts(i).head.mostFreqFertilizerOverall
                 }")
 
               }

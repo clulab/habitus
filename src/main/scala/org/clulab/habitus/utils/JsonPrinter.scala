@@ -45,7 +45,7 @@ class JsonPrinter(outputFilename: String) {
     val jValue: JValue =
         if (contextDetailsSeq.nonEmpty) {
           val jObjects = contextDetailsSeq(mention.sentence).map { contextDetails =>
-              ("variableText" -> variableText) ~
+            ("variableText" -> variableText) ~
               ("valueText" -> valueText) ~
               ("valueNorm" -> valueNorm) ~
               ("sentenceText" -> sentenceText) ~
@@ -58,7 +58,10 @@ class JsonPrinter(outputFilename: String) {
               ("mostFreqDate" -> contextDetails.mostFreqDate) ~
               ("mostFreqCrop0Sent" -> contextDetails.mostFreqCrop0Sent) ~
               ("mostFreqCrop1Sent" -> contextDetails.mostFreqCrop1Sent) ~
-              ("mostFreqCrop" -> contextDetails.mostFreqCrop)
+              ("mostFreqCrop" -> contextDetails.mostFreqCrop)~
+              ("mostFreqFert0Sent" -> contextDetails.mostFreqFertilizer0Sent) ~
+              ("mostFreqFert1Sent" -> contextDetails.mostFreqFertilizer1Sent) ~
+              ("mostFreqFert" -> contextDetails.mostFreqFertilizerOverall)
           }
 
           JArray(jObjects.toList)

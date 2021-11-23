@@ -100,9 +100,11 @@ In Senegal maturity  came in early November ( Tab.I ) for 1995.
 
 
 
-    // test document which have more than one event mention in the document
+
+  // sample sentences to test fertilizer. Note: the sentence wrt the query is calculated (mse.head)
+  //happens to be the 8th sentence: Phosphorus, potassium and NPK are important inorganic fertilizers
     val sent4 ="""
-One of the most important farming input is mineral fertilizer.
+With sowing between 7 and 22 July, one of the most important farming input is potassium mineral fertilizer.
 Fertilizer nitrogen (N) has been applied at two or more levels.
 In fact, use of fertilizer potassium has declined steadily since 1995.
 The amount of fertilizer potassium required was averaged at 52 kg ha-1.
@@ -110,7 +112,7 @@ The most widely used solid inorganic fertilizers are potassium, diammonium phosp
 The most widely used solid inorganic fertilizers are diammonium phosphate, urea and potassium chloride.
 Total fertilizer usage was ammonium poly-phosphate on average 152 kg ha-1 in the 1999 and 2000WS.
 However, the most unvalable fertilizer was diammonium-phosphate.
-Phosphorus, potassium and NPK are important inorganic fertilizers
+Phosphorus, potassium, potassium and NPK are important inorganic fertilizers
 """
 
     def getFertMaxFreqOverall(text: String): Seq[vr.MostFreqEntity] = {
@@ -119,7 +121,7 @@ Phosphorus, potassium and NPK are important inorganic fertilizers
       (mse)
     }
 
-    sent4 should " find potassium as the most frequent entity in entire document" in {
+    sent4 should " for the sentence Phosphorus,potassium, potassium and NPK are important inorganic fertilizers, find potassium as the most frequent entity in entire document" in {
       val mse = getFertMaxFreqOverall(sent4)
       mse.head.mostFreqEntity.getOrElse("") should be ("potassium")
     }
@@ -129,9 +131,10 @@ Phosphorus, potassium and NPK are important inorganic fertilizers
 //      (mse)
 //    }
 //
-//    sent4 should "find united states as the most frequent entity within 1 sentence distance" in {
+//    sent4 should " for the sentence Phosphorus,potassium, potassium and NPK are important inorganic fertilizers,  " +
+//      "find npk as the most frequent entity within 1 sentence distance" in {
 //      val mse = getFertMaxFreq1Sent(sent4)
-//      mse.head.mostFreqEntity.getOrElse("")  should be ("united states")
+//      mse.head.mostFreqEntity.getOrElse("")  should be ("nitrogen")
 //    }
 //
 //
@@ -141,9 +144,9 @@ Phosphorus, potassium and NPK are important inorganic fertilizers
 //      (mse)
 //    }
 //
-//    sent4 should "find united states as the most frequent entity within 1 sentence distance" in {
-//      val mse = getFertMaxFreq1Sent(sent4)
-//      mse.head.mostFreqEntity.getOrElse("")  should be ("united states")
+//    sent4 should "for the sentence Phosphorus, potassium, potassium and NPK are important inorganic fertilizers, " +
+//      "find npk  as the most frequent entity within same sentence " in {
+//      val mse = getFertMaxFreq0Sent(sent4)
+//      mse.head.mostFreqEntity.getOrElse("")  should be ("potassium")
 //    }
-//
 }
