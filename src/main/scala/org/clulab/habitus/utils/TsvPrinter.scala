@@ -40,7 +40,7 @@ class TsvPrinter(outputFilename: String) {
 
       sortedMentions.foreach {
         // Format to print: variable \t value text \t value norms \t extracting sentence \t document name
-        // \t Most frequent LOC within 0 sentences \t Most frequent LOC within 1 sentences.\t Most frequent LOC anywhere in the doc.\n
+        // \t Most frequent X within 0 sentences \t Most frequent X within 1 sentences.\t Most frequent X anywhere in the doc.\n
         // Since we only focus on the Assignment mention which includes two submentions in the same format called
         // ``variable`` and ``value`` we access the two through ``arguments`` attribute of the Mention class.
         m =>
@@ -70,27 +70,27 @@ class TsvPrinter(outputFilename: String) {
                 }
 
               if (contexts.contains(i)) {
-                for (context <- contexts(i)) {
+
                   pw.println(s"$varText\t$valText\t$norm\t$sentText\t$filename\t${
-                    context.mostFreqLoc0Sent
+                    contexts(i)(0).mostFreqLoc0Sent
                   }\t${
-                    context.mostFreqLoc1Sent
+                    contexts(i)(0).mostFreqLoc1Sent
                   }\t${
-                    context.mostFreqLoc
+                    contexts(i)(0).mostFreqLoc
                   }\t${
-                    context.mostFreqDate0Sent
+                    contexts(i)(0).mostFreqDate0Sent
                   }\t${
-                    context.mostFreqDate1Sent
+                    contexts(i)(0).mostFreqDate1Sent
                   }\t${
-                    context.mostFreqDate
+                    contexts(i)(0).mostFreqDate
                   }\t${
-                    context.mostFreqCrop0Sent
+                    contexts(i)(0).mostFreqCrop0Sent
                   }\t${
-                    context.mostFreqCrop1Sent
+                    contexts(i)(0).mostFreqCrop1Sent
                   }\t${
-                    context.mostFreqCrop
+                    contexts(i)(0).mostFreqCrop
                   }")
-                }
+
               }
             }
             else
