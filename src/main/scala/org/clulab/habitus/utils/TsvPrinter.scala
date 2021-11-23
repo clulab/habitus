@@ -17,12 +17,12 @@ class TsvPrinter(outputFilename: String) {
 
 
   def outputMentions(
-    mentions: Seq[Mention],
-    doc: Document,
-    contexts: mutable.Map[Int, ArrayBuffer[ContextDetails]],
-    inputFilename: String,
-    printVars:PrintVariables
-  ): Unit = {
+                      mentions: Seq[Mention],
+                      doc: Document,
+                      contexts: mutable.Map[Int, ArrayBuffer[ContextDetails]],
+                      inputFilename: String,
+                      printVars:PrintVariables
+                    ): Unit = {
     println(s"Writing mentions from doc ${inputFilename} to $outputFilename")
     outputMentions(mentions, doc, contexts, inputFilename, printWriter,printVars)
     printWriter.flush()
@@ -30,7 +30,7 @@ class TsvPrinter(outputFilename: String) {
 
   // extract needed information and write them to tsv in a desired format. Return nothing here!
   protected def outputMentions(mentions: Seq[Mention], doc: Document, contexts: scala.collection.mutable.Map[Int, ArrayBuffer[ContextDetails]],
-                          filename: String, pw: PrintWriter,printVars:PrintVariables): Unit = {
+                               filename: String, pw: PrintWriter,printVars:PrintVariables): Unit = {
     val mentionsBySentence = mentions groupBy (_.sentence) mapValues (_.sortBy(_.start)) withDefaultValue Nil
     for ((s, i) <- doc.sentences.zipWithIndex) {
 
@@ -40,7 +40,7 @@ class TsvPrinter(outputFilename: String) {
 
       sortedMentions.foreach {
         // Format to print: variable \t value text \t value norms \t extracting sentence \t document name
-        // \t Most frequent LOC within 0 sentences \t Most frequent LOC within 1 sentences.\t Most frequent LOC anywhere in the doc.\n
+        // \t Most frequent X within 0 sentences \t Most frequent X within 1 sentences.\t Most frequent X anywhere in the doc.\n
         // Since we only focus on the Assignment mention which includes two submentions in the same format called
         // ``variable`` and ``value`` we access the two through ``arguments`` attribute of the Mention class.
         m =>
@@ -70,33 +70,33 @@ class TsvPrinter(outputFilename: String) {
                 }
 
               if (contexts.contains(i)) {
-                for (context <- contexts(i)) {
-                  pw.println(s"$varText\t$valText\t$norm\t$sentText\t$filename\t${
-                    context.mostFreqLoc0Sent
-                  }\t${
-                    context.mostFreqLoc1Sent
-                  }\t${
-                    context.mostFreqLoc
-                  }\t${
-                    context.mostFreqDate0Sent
-                  }\t${
-                    context.mostFreqDate1Sent
-                  }\t${
-                    context.mostFreqDate
-                  }\t${
-                    context.mostFreqCrop0Sent
-                  }\t${
-                    context.mostFreqCrop1Sent
-                  }\t${
-                    context.mostFreqCrop
-                  }")
-                }
+
+                pw.println(s"$varText\t$valText\t$norm\t$sentText\t$filename\t${
+                  contexts(i)(0).mostFreqLoc0Sent
+                }\t${
+                  contexts(i)(0).mostFreqLoc1Sent
+                }\t${
+                  contexts(i)(0).mostFreqLoc
+                }\t${
+                  contexts(i)(0).mostFreqDate0Sent
+                }\t${
+                  contexts(i)(0).mostFreqDate1Sent
+                }\t${
+                  contexts(i)(0).mostFreqDate
+                }\t${
+                  contexts(i)(0).mostFreqCrop0Sent
+                }\t${
+                  contexts(i)(0).mostFreqCrop1Sent
+                }\t${
+                  contexts(i)(0).mostFreqCrop
+                }")
+
               }
             }
             else
-              {
-                pw.println(s"$varText\t$valText\t$sentText")
-              }
+            {
+              pw.println(s"$varText\t$valText\t$sentText")
+            }
           } catch {
             case e: NoSuchElementException =>
               println(s"No normalized value found for ${m.arguments("value").head.text} in sentence ${s.getSentenceText}!")
