@@ -1,3 +1,5 @@
+[![Build Status](https://app.travis-ci.com/clulab/habitus.svg?token=y6u9S2o13oppQYpzc5oB&branch=main)](https://app.travis-ci.com/clulab/habitus)
+
 # HEURISTICS
 
 This repository contains CLU lab's NLP software for the DARPA HEURISTICS project, which is part of the [HABITUS program](https://www.darpa.mil/program/habitus).
