@@ -97,12 +97,45 @@ In Senegal maturity  came in early November ( Tab.I ) for 1995.
     // The frequencies are tied, so it is essential to have sorted them before the comparison.
     mseSeq(0) should be("burkino faso")
     mseSeq(1) should be("matto grosso")
+
   }
 
+
+
+
+
+
+  // sample sentences to test fertilizer. Note: the sentence wrt the query is calculated (mse.head)
+  //happens to be the 8th sentence: Phosphorus, potassium and NPK are important inorganic fertilizers
+    val sent4 ="""
+With sowing between 7 and 22 July, one of the most important farming input is potassium mineral fertilizer.
+Fertilizer nitrogen (N) has been applied at two or more levels.
+In fact, use of fertilizer potassium has declined steadily since 1995.
+The amount of fertilizer potassium required was averaged at 52 kg ha-1.
+The most widely used solid inorganic fertilizers are potassium, diammonium phosphate and potassium.
+The most widely used solid inorganic fertilizers are diammonium phosphate, urea and potassium chloride.
+Total fertilizer usage was ammonium poly-phosphate on average 152 kg ha-1 in the 1999 and 2000WS.
+However, the most unvalable fertilizer was diammonium-phosphate.
+Phosphorus, potassium, potassium and NPK are important inorganic fertilizers
+"""
+
+    def getFertMaxFreqOverall(text: String): Seq[vr.MostFreqEntity] = {
+      val (doc, mentions,allEventMentions, histogram) = vp.parse(text)
+      val mse=vr.extractContext(doc,allEventMentions,Int.MaxValue,"FERTILIZER",histogram)
+      (mse)
+    }
+
+    sent4 should " for the sentence Phosphorus,potassium, potassium and NPK are important inorganic fertilizers, find potassium as the most frequent entity in entire document" in {
+      val mse = getFertMaxFreqOverall(sent4)
+      mse.head.mostFreqEntity.getOrElse("") should be ("potassium")
+    }
+
+  
   val sent3 = "Farmers’ sowing dates ranged from 14 to 31 July for the WS and from 3 to 11 March for the DS."
     sent3 should "for this sentence which has no context should return 2 mentions" in {
       val mse = getMSFreq(sent3)
       mse should have length 2
     }
-  }
+  
 
+}

@@ -59,7 +59,10 @@ class JsonPrinter(outputFilename: String) {
             ("mostFreqDate" -> contextDetails.mostFreqDate) ~
             ("mostFreqCrop0Sent" -> contextDetails.mostFreqCrop0Sent) ~
             ("mostFreqCrop1Sent" -> contextDetails.mostFreqCrop1Sent) ~
-            ("mostFreqCrop" -> contextDetails.mostFreqCrop)
+              ("mostFreqCrop" -> contextDetails.mostFreqCrop)~
+              ("mostFreqFert0Sent" -> contextDetails.mostFreqFertilizer0Sent) ~
+              ("mostFreqFert1Sent" -> contextDetails.mostFreqFertilizer1Sent) ~
+              ("mostFreqFert" -> contextDetails.mostFreqFertilizerOverall)
           }
 
           JArray(jObjects.toList)

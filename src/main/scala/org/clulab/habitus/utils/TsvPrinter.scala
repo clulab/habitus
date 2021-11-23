@@ -17,12 +17,12 @@ class TsvPrinter(outputFilename: String) {
 
 
   def outputMentions(
-    mentions: Seq[Mention],
-    doc: Document,
-    contexts: mutable.Map[Int, ArrayBuffer[ContextDetails]],
-    inputFilename: String,
-    printVars:PrintVariables
-  ): Unit = {
+                      mentions: Seq[Mention],
+                      doc: Document,
+                      contexts: mutable.Map[Int, ArrayBuffer[ContextDetails]],
+                      inputFilename: String,
+                      printVars:PrintVariables
+                    ): Unit = {
     println(s"Writing mentions from doc ${inputFilename} to $outputFilename")
     outputMentions(mentions, doc, contexts, inputFilename, printWriter,printVars)
     printWriter.flush()
@@ -30,7 +30,7 @@ class TsvPrinter(outputFilename: String) {
 
   // extract needed information and write them to tsv in a desired format. Return nothing here!
   protected def outputMentions(mentions: Seq[Mention], doc: Document, contexts: scala.collection.mutable.Map[Int, ArrayBuffer[ContextDetails]],
-                          filename: String, pw: PrintWriter,printVars:PrintVariables): Unit = {
+                               filename: String, pw: PrintWriter,printVars:PrintVariables): Unit = {
     val mentionsBySentence = mentions groupBy (_.sentence) mapValues (_.sortBy(_.start)) withDefaultValue Nil
     for ((s, i) <- doc.sentences.zipWithIndex) {
 
@@ -71,32 +71,40 @@ class TsvPrinter(outputFilename: String) {
 
               if (contexts.contains(i)) {
 
-                  pw.println(s"$varText\t$valText\t$norm\t$sentText\t$filename\t${
-                    contexts(i)(0).mostFreqLoc0Sent
-                  }\t${
-                    contexts(i)(0).mostFreqLoc1Sent
-                  }\t${
-                    contexts(i)(0).mostFreqLoc
-                  }\t${
-                    contexts(i)(0).mostFreqDate0Sent
-                  }\t${
-                    contexts(i)(0).mostFreqDate1Sent
-                  }\t${
-                    contexts(i)(0).mostFreqDate
-                  }\t${
-                    contexts(i)(0).mostFreqCrop0Sent
-                  }\t${
-                    contexts(i)(0).mostFreqCrop1Sent
-                  }\t${
-                    contexts(i)(0).mostFreqCrop
-                  }")
+
+                pw.println(s"$varText\t$valText\t$norm\t$sentText\t$filename\t${
+                  contexts(i).head.mostFreqLoc0Sent
+                    .head}\t${
+                  contexts(i).head.mostFreqLoc1Sent
+                }\t${
+                  contexts(i).head.mostFreqLoc
+                }\t${
+                  contexts(i).head.mostFreqDate0Sent
+                }\t${
+                  contexts(i).head.mostFreqDate1Sent
+                }\t${
+                  contexts(i).head.mostFreqDate
+                }\t${
+                  contexts(i).head.mostFreqCrop0Sent
+                }\t${
+                  contexts(i).head.mostFreqCrop1Sent
+                }\t${
+                  contexts(i).head.mostFreqCrop
+                }\t${
+                  contexts(i).head.mostFreqFertilizer0Sent
+                }\t${
+                  contexts(i).head.mostFreqFertilizer1Sent
+                }\t${
+                  contexts(i).head.mostFreqFertilizerOverall
+                }")
+
 
               }
             }
             else
-              {
-                pw.println(s"$varText\t$valText\t$sentText")
-              }
+            {
+              pw.println(s"$varText\t$valText\t$sentText")
+            }
           } catch {
             case e: NoSuchElementException =>
               println(s"No normalized value found for ${m.arguments("value").head.text} in sentence ${s.getSentenceText}!")
