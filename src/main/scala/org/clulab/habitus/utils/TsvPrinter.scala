@@ -70,27 +70,27 @@ class TsvPrinter(outputFilename: String) {
                 }
 
               if (contexts.contains(i)) {
-                for (context <- contexts(i)) {
+
                   pw.println(s"$varText\t$valText\t$norm\t$sentText\t$filename\t${
-                    context.mostFreqLoc0Sent
+                    contexts(i)(0).mostFreqLoc0Sent
                   }\t${
-                    context.mostFreqLoc1Sent
+                    contexts(i)(0).mostFreqLoc1Sent
                   }\t${
-                    context.mostFreqLoc
+                    contexts(i)(0).mostFreqLoc
                   }\t${
-                    context.mostFreqDate0Sent
+                    contexts(i)(0).mostFreqDate0Sent
                   }\t${
-                    context.mostFreqDate1Sent
+                    contexts(i)(0).mostFreqDate1Sent
                   }\t${
-                    context.mostFreqDate
+                    contexts(i)(0).mostFreqDate
                   }\t${
-                    context.mostFreqCrop0Sent
+                    contexts(i)(0).mostFreqCrop0Sent
                   }\t${
-                    context.mostFreqCrop1Sent
+                    contexts(i)(0).mostFreqCrop1Sent
                   }\t${
-                    context.mostFreqCrop
+                    contexts(i)(0).mostFreqCrop
                   }")
-                }
+
               }
             }
             else
