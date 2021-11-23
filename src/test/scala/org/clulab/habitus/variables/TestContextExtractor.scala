@@ -92,7 +92,58 @@ In Senegal maturity  came in early November ( Tab.I ) for 1995.
     val mseSeq = Seq(mse0, mse1).sorted
 
     // The frequencies are tied, so it is essential to have sorted them before the comparison.
-    mseSeq(0) should be ("burkino faso")
-    mseSeq(1) should be ("matto grosso")
+    mseSeq(0) should be("burkino faso")
+    mseSeq(1) should be("matto grosso")
   }
+
+
+
+
+
+    // test document which have more than one event mention in the document
+    val sent4 ="""
+One of the most important farming input is mineral fertilizer.
+Fertilizer nitrogen (N) has been applied at two or more levels.
+In fact, use of fertilizer potassium has declined steadily since 1995.
+The amount of fertilizer potassium required was averaged at 52 kg ha-1.
+The most widely used solid inorganic fertilizers are potassium, diammonium phosphate and potassium.
+The most widely used solid inorganic fertilizers are diammonium phosphate, urea and potassium chloride.
+Total fertilizer usage was ammonium poly-phosphate on average 152 kg ha-1 in the 1999 and 2000WS.
+However, the most unvalable fertilizer was diammonium-phosphate.
+Phosphorus, potassium and NPK are important inorganic fertilizers
+"""
+
+    def getFertMaxFreqOverall(text: String): Seq[vr.MostFreqEntity] = {
+      val (doc, mentions,allEventMentions, histogram) = vp.parse(text)
+      val mse=vr.extractContext(doc,allEventMentions,Int.MaxValue,"FERTILIZER",histogram)
+      (mse)
+    }
+
+    sent4 should " find potassium as the most frequent entity in entire document" in {
+      val mse = getFertMaxFreqOverall(sent4)
+      mse.head.mostFreqEntity.getOrElse("") should be ("potassium")
+    }
+//    def getFertMaxFreq1Sent(text: String): Seq[vr.MostFreqEntity] = {
+//      val (doc, mentions,allEventMentions, histogram) = vp.parse(text)
+//      val mse=vr.extractContext(doc,allEventMentions,1,"FERTILIZER",histogram)
+//      (mse)
+//    }
+//
+//    sent4 should "find united states as the most frequent entity within 1 sentence distance" in {
+//      val mse = getFertMaxFreq1Sent(sent4)
+//      mse.head.mostFreqEntity.getOrElse("")  should be ("united states")
+//    }
+//
+//
+//    def getFertMaxFreq0Sent(text: String): Seq[vr.MostFreqEntity] = {
+//      val (doc, mentions,allEventMentions, histogram) = vp.parse(text)
+//      val mse=vr.extractContext(doc,allEventMentions,0,"LOC",histogram)
+//      (mse)
+//    }
+//
+//    sent4 should "find united states as the most frequent entity within 1 sentence distance" in {
+//      val mse = getFertMaxFreq1Sent(sent4)
+//      mse.head.mostFreqEntity.getOrElse("")  should be ("united states")
+//    }
+//
 }
