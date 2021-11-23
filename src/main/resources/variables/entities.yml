@@ -24,6 +24,13 @@
   pattern: |
     /(?i)(^planting|sowing|seeding)/ /date|season|time|timing/?
 
+- name: variable-bird-attacks
+  priority: ${rulepriority}
+  label: Variable
+  type: token
+  pattern: |
+    /(?i)(^bird|avian)/ [lemma=/attack/]
+
 - name: fertilizer-values-from-lexicon
   priority: ${rulepriority}
   label: Value
