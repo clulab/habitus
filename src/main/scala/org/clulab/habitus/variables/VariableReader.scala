@@ -3,7 +3,8 @@ package org.clulab.habitus.variables
 import org.clulab.habitus.utils.ContextDetails
 import org.clulab.odin.EventMention
 import org.clulab.processors.Document
-import org.clulab.habitus.utils.{JsonPrinter, TsvPrinter,PrintVariables}
+import org.clulab.habitus.utils.{JsonPrinter, PrintVariables, TsvPrinter}
+import org.clulab.habitus.variables.VariableReader.checkIfEmpty
 import org.clulab.utils.FileUtils
 import org.clulab.utils.StringUtils
 import org.clulab.utils.ThreadUtils
@@ -72,10 +73,15 @@ object VariableReader {
     val mostFreqCrop0Sent = extractContext(doc, allEventMentions, 0, "CROP", entityHistogram)
     val mostFreqCrop1Sent = extractContext(doc, allEventMentions, 1, "CROP", entityHistogram)
     val mostFreqCropOverall = extractContext(doc, allEventMentions, Int.MaxValue, "CROP", entityHistogram)
+    val mostFreqFertilizer0Sent = extractContext(doc, allEventMentions, 0, "FERTILIZER", entityHistogram)
+    val mostFreqFertilizer1Sent = extractContext(doc, allEventMentions, 1, "FERTILIZER", entityHistogram)
+    val mostFreqFertilizerOverall = extractContext(doc, allEventMentions, Int.MaxValue, "FERTILIZER", entityHistogram)
 
     //for each event mention, get the sentence id, and map it to a case class called contextDetails, which will have all of mostFreq* information
     createSentidContext(sentidContext, mostFreqLocation0Sent, mostFreqLocation1Sent, mostFreqLocationOverall,
-      mostFreqDate0Sent, mostFreqDate1Sent, mostFreqDateOverall, mostFreqCrop0Sent, mostFreqCrop1Sent, mostFreqCropOverall)
+      mostFreqDate0Sent, mostFreqDate1Sent, mostFreqDateOverall, mostFreqCrop0Sent, mostFreqCrop1Sent,
+      mostFreqCropOverall,mostFreqFertilizer0Sent, mostFreqFertilizer1Sent,
+      mostFreqFertilizerOverall)
 
     sentidContext
   }
@@ -197,7 +203,11 @@ object VariableReader {
                           mostFreqDateOverall:Seq[MostFreqEntity],
                           mostFreqCrop0Sent:Seq[MostFreqEntity],
                           mostFreqCrop1Sent:Seq[MostFreqEntity],
-                          mostFreqCropOverall:Seq[MostFreqEntity]): Unit= {
+                          mostFreqCropOverall:Seq[MostFreqEntity],
+                          mostFreqFertilizer0Sent:Seq[MostFreqEntity],
+                          mostFreqFertilizer1Sent:Seq[MostFreqEntity],
+                          mostFreqFertilizerOverall:Seq[MostFreqEntity]
+                         ): Unit= {
 
     //todo assert lengths of all the mostFreq* are same
 
@@ -214,7 +224,10 @@ object VariableReader {
           checkIfEmpty(mostFreqDateOverall(i).mostFreqEntity),
           checkIfEmpty(mostFreqCrop0Sent(i).mostFreqEntity),
           checkIfEmpty(mostFreqCrop1Sent(i).mostFreqEntity),
-          checkIfEmpty(mostFreqCropOverall(i).mostFreqEntity)
+          checkIfEmpty(mostFreqCropOverall(i).mostFreqEntity),
+          checkIfEmpty(mostFreqFertilizer0Sent(i).mostFreqEntity),
+          checkIfEmpty(mostFreqFertilizer1Sent(i).mostFreqEntity),
+          checkIfEmpty(mostFreqFertilizerOverall(i).mostFreqEntity)
         )
       )
     }

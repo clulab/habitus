@@ -89,6 +89,12 @@ class TsvPrinter(outputFilename: String) {
                   contexts(i)(0).mostFreqCrop1Sent
                 }\t${
                   contexts(i)(0).mostFreqCrop
+                }\t${
+                  contexts(i)(0).mostFreqFertilizer0Sent
+                }\t${
+                  contexts(i)(0).mostFreqFertilizer1Sent
+                }\t${
+                  contexts(i)(0).mostFreqFertilizerOverall
                 }")
 
               }
