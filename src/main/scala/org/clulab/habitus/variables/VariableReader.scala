@@ -4,13 +4,16 @@ import org.clulab.habitus.utils.ContextDetails
 import org.clulab.odin.EventMention
 import org.clulab.processors.Document
 import org.clulab.habitus.utils.{JsonPrinter, PrintVariables, TsvPrinter}
+
 import org.clulab.habitus.variables.VariableReader.checkIfEmpty
+
 import org.clulab.utils.FileUtils
 import org.clulab.utils.StringUtils
 import org.clulab.utils.ThreadUtils
 import org.clulab.utils.Closer.AutoCloser
 
 import java.io.File
+import scala.collection.mutable
 import scala.collection.mutable.ArrayBuffer
 
 object VariableReader {
@@ -41,7 +44,9 @@ object VariableReader {
             val filename = StringUtils.afterLast(file.getName, '/')
             println(s"going to parse input file: $filename")
             val (doc, mentions, allEventMentions, entityHistogram) = vp.parse(text)
-            val context = compressContext(doc, allEventMentions, entityHistogram)
+
+            //if there was no context, i.e none of the CROP, LOC etc are present, pass an empty context
+            val context =  if (entityHistogram.length==0)   mutable.Map.empty[Int, ArrayBuffer[ContextDetails]] else compressContext(doc, allEventMentions, entityHistogram)
             val printVars = PrintVariables("Assignment","variable","value")
             synchronized {
               tsvPrinter.outputMentions(mentions, doc, context, filename,printVars)

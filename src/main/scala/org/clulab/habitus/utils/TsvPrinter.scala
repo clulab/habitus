@@ -71,6 +71,7 @@ class TsvPrinter(outputFilename: String) {
 
               if (contexts.contains(i)) {
 
+
                 pw.println(s"$varText\t$valText\t$norm\t$sentText\t$filename\t${
                   contexts(i)(0).mostFreqLoc0Sent
                 }\t${
@@ -96,6 +97,7 @@ class TsvPrinter(outputFilename: String) {
                 }\t${
                   contexts(i)(0).mostFreqFertilizerOverall
                 }")
+
 
               }
             }
