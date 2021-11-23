@@ -8,7 +8,7 @@ import scala.collection.mutable.ArrayBuffer
 
 package object utils {
 
-  case class PrintVariables(mentionLabel:String, mentionType:String, mentionExtractor:  String)
+  case class PrintVariables(mentionLabel: String, mentionType: String, mentionExtractor: String)
 
   def displayMentions(mentions: Seq[Mention], doc: Document): Unit = {
     val mentionsBySentence = mentions groupBy (_.sentence) mapValues (_.sortBy(_.start)) withDefaultValue Nil
