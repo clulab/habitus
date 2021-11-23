@@ -393,8 +393,8 @@ class TestVariableReader extends FlatSpec with Matchers {
   }
 
   val birdattack_1 = "Bird attacks occurred between July 1st and August 31st"
-  sent16_4 should "recognize bird attacks attached to var"in {
-    val mentions = getMentions(sent16_4)
+  birdattack_1 should "recognize bird attacks attached to var"in {
+    val mentions = getMentions(birdattack_1)
     mentions.filter(_.label matches "Assignment") should have size (1)
     mentions.filter(_.label matches "Assignment").foreach({ m =>
       m.arguments("variable").head.text should be("Bird attacks")
