@@ -8,7 +8,7 @@ import scala.collection.mutable.ArrayBuffer
 
 package object utils {
 
-  case class PrintVariables(mentionLabel:String, mentionType:String, mentionExtractor:  String)
+  case class PrintVariables(mentionLabel: String, mentionType: String, mentionExtractor: String)
 
   def displayMentions(mentions: Seq[Mention], doc: Document): Unit = {
     val mentionsBySentence = mentions groupBy (_.sentence) mapValues (_.sortBy(_.start)) withDefaultValue Nil
@@ -42,7 +42,10 @@ package object utils {
                             mostFreqDate0Sent: String, mostFreqDate1Sent: String, mostFreqDate: String,
                             mostFreqCrop0Sent: String,
                             mostFreqCrop1Sent: String,
-                            mostFreqCrop: String)
+                            mostFreqCrop: String,
+                            mostFreqFertilizer0Sent: String,
+                            mostFreqFertilizer1Sent: String,
+                            mostFreqFertilizerOverall: String)
 
   //some sentences might have multiple event mentions in it, and
   def getAllContextForGivenSentId(context: scala.collection.mutable.Map[Int, ArrayBuffer[ContextDetails]],

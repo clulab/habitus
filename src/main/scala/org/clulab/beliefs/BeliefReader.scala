@@ -38,7 +38,7 @@ object BeliefReader {
             println(s"going to parse input file: $filename")
             val (doc, mentions) = vp.parse(text)
             val printVars = PrintVariables("Belief", "believer", "belief")
-            val context = mutable.Map.empty[Int, ArrayBuffer[ContextDetails]]
+            val context = mutable.Map.empty[Int, ContextDetails]
             synchronized {
               tsvPrinter.outputMentions(mentions, doc, context, filename, printVars)
               jsonPrinter.outputMentions(mentions, doc, context, filename,printVars)
