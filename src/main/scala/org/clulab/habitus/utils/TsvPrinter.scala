@@ -19,7 +19,7 @@ class TsvPrinter(outputFilename: String) {
   def outputMentions(
                       mentions: Seq[Mention],
                       doc: Document,
-                      contexts: mutable.Map[Int, ArrayBuffer[ContextDetails]],
+                      contexts: mutable.Map[Int, ContextDetails],
                       inputFilename: String,
                       printVars:PrintVariables
                     ): Unit = {
@@ -29,7 +29,7 @@ class TsvPrinter(outputFilename: String) {
   }
 
   // extract needed information and write them to tsv in a desired format. Return nothing here!
-  protected def outputMentions(mentions: Seq[Mention], doc: Document, contexts: scala.collection.mutable.Map[Int, ArrayBuffer[ContextDetails]],
+  protected def outputMentions(mentions: Seq[Mention], doc: Document, contexts: scala.collection.mutable.Map[Int, ContextDetails],
                                filename: String, pw: PrintWriter,printVars:PrintVariables): Unit = {
     val mentionsBySentence = mentions groupBy (_.sentence) mapValues (_.sortBy(_.start)) withDefaultValue Nil
     for ((s, i) <- doc.sentences.zipWithIndex) {
@@ -73,32 +73,31 @@ class TsvPrinter(outputFilename: String) {
 
 
                 pw.println(s"$varText\t$valText\t$norm\t$sentText\t$filename\t${
-                  contexts(i).head.mostFreqLoc0Sent
+                  contexts(i).mostFreqLoc0Sent
                     .head}\t${
-                  contexts(i).head.mostFreqLoc1Sent
                 }\t${
-                  contexts(i).head.mostFreqLoc
+                  contexts(i).mostFreqLoc1Sent
                 }\t${
-                  contexts(i).head.mostFreqDate0Sent
+                  contexts(i).mostFreqLoc
                 }\t${
-                  contexts(i).head.mostFreqDate1Sent
+                  contexts(i).mostFreqDate0Sent
                 }\t${
-                  contexts(i).head.mostFreqDate
+                  contexts(i).mostFreqDate1Sent
                 }\t${
-                  contexts(i).head.mostFreqCrop0Sent
+                  contexts(i).mostFreqDate
                 }\t${
-                  contexts(i).head.mostFreqCrop1Sent
+                  contexts(i).mostFreqCrop0Sent
                 }\t${
-                  contexts(i).head.mostFreqCrop
+                  contexts(i).mostFreqCrop1Sent
                 }\t${
-                  contexts(i).head.mostFreqFertilizer0Sent
+                  contexts(i).mostFreqCrop
                 }\t${
-                  contexts(i).head.mostFreqFertilizer1Sent
+                  contexts(i).mostFreqFertilizer0Sent
                 }\t${
-                  contexts(i).head.mostFreqFertilizerOverall
+                  contexts(i).mostFreqFertilizer1Sent
+                }\t${
+                  contexts(i).mostFreqFertilizerOverall
                 }")
-
-
               }
             }
             else

@@ -46,7 +46,7 @@ object VariableReader {
             val (doc, mentions, allEventMentions, entityHistogram) = vp.parse(text)
 
             //if there was no context, i.e none of the CROP, LOC etc are present, pass an empty context
-            val context =  if (entityHistogram.length==0)   mutable.Map.empty[Int, ArrayBuffer[ContextDetails]] else compressContext(doc, allEventMentions, entityHistogram)
+            val context =  if (entityHistogram.length==0)   mutable.Map.empty[Int, ContextDetails] else compressContext(doc, allEventMentions, entityHistogram)
             val printVars = PrintVariables("Assignment","variable","value")
             synchronized {
               tsvPrinter.outputMentions(mentions, doc, context, filename,printVars)
@@ -65,7 +65,7 @@ object VariableReader {
 
     //sentidContext is a data structure created just to carry contextdetails to the code which writes output to disk
     //note: value=Seq[contextDetails] because there can be more than one mentions in same sentence
-    val sentidContext = scala.collection.mutable.Map[Int, ArrayBuffer[ContextDetails]]()
+    val sentidContext = scala.collection.mutable.Map[Int, ContextDetails]()
 
     // for each of the event mentions, find most frequent entityType within the distance of howManySentAway
     //  e.g.,(LOC,1) means find which Location occurs most frequently within 1 sentence of this event
@@ -183,7 +183,7 @@ object VariableReader {
     mentionsContexts
   }
 
-  def checkSentIdContextDetails(sentidContext:scala.collection.mutable.Map[Int,ArrayBuffer[ContextDetails]], key:Int, value: ContextDetails) = {
+  def checkSentIdContextDetails(sentidContext:scala.collection.mutable.Map[Int,ContextDetails], key:Int, value: ContextDetails) = {
     sentidContext.get(key) match {
       case Some(i) =>
 //        println(s"Found that multiple event mentions occur in the same sentence with sentence id $key. " +
@@ -193,13 +193,13 @@ object VariableReader {
 //        sentidContext(key) = oldList
       case None =>
         //the combination of (sentid,freq) becomes the key for the value
-        sentidContext(key) = ArrayBuffer(value)
+        sentidContext(key) = value
     }
   }
   case class MostFreqEntity(sentId: Int, mention: String, mostFreqEntity: Option[String])
 
 
-  def createSentidContext(sentidContext:scala.collection.mutable.Map[Int,ArrayBuffer[ContextDetails]],
+  def createSentidContext(sentidContext:scala.collection.mutable.Map[Int,ContextDetails],
                           mostFreqLocation0Sent:Seq[MostFreqEntity],
                           mostFreqLocation1Sent:Seq[MostFreqEntity],
                           mostFreqLocationOverall:Seq[MostFreqEntity],
