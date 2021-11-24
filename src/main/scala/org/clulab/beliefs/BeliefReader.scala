@@ -1,6 +1,6 @@
 package org.clulab.beliefs
 
-import org.clulab.habitus.utils.{ContextDetails, JsonlPrinter, PrintVariables, TsvPrinter}
+import org.clulab.habitus.utils.{ContextDetails, JsonPrinter, JsonlPrinter, MultiPrinter, PrintVariables, TsvPrinter}
 import org.clulab.utils.{FileUtils, StringUtils, ThreadUtils}
 import org.clulab.utils.Closer.AutoCloser
 
@@ -20,31 +20,31 @@ object BeliefReader {
 
   def run(inputDir: String, outputDir: String, threads: Int) {
     new File(outputDir).mkdir()
-    val tsvOutputFile = outputDir + "/mentions.tsv"
-    val jsonlOutputFile = outputDir + "/mentions.jsonl"
+
+    def mkOutputFile(filename: String): String = outputDir + "/" + filename
 
     val vp = BeliefProcessor()
     val files = FileUtils.findFiles(inputDir, ".txt")
     val parFiles = if (threads > 1) ThreadUtils.parallelize(files, threads) else files
 
-    new JsonlPrinter(jsonlOutputFile).autoClose { jsonlPrinter =>
-      new TsvPrinter(tsvOutputFile).autoClose { tsvPrinter =>
-        for (file <- parFiles) {
-          try {
-            val text = FileUtils.getTextFromFile(file)
-            val filename = StringUtils.afterLast(file.getName, '/')
-            println(s"going to parse input file: $filename")
-            val (doc, mentions) = vp.parse(text)
-            val printVars = PrintVariables("Belief", "believer", "belief")
-            val context = mutable.Map.empty[Int, ContextDetails]
-            synchronized {
-              tsvPrinter.outputMentions(mentions, doc, context, filename, printVars)
-              jsonlPrinter.outputMentions(mentions, doc, context, filename, printVars)
-            }
-          }
-          catch {
-            case e: Exception => e.printStackTrace()
-          }
+    new MultiPrinter(
+      () => new TsvPrinter(mkOutputFile("mentions.tsv")),
+      () => new JsonPrinter(mkOutputFile("mentions.json")),
+      () => new JsonlPrinter(mkOutputFile("mentions.jsonl"))
+    ).autoClose { multiPrinter =>
+      for (file <- parFiles) {
+        try {
+          val text = FileUtils.getTextFromFile(file)
+          val filename = StringUtils.afterLast(file.getName, '/')
+          println(s"going to parse input file: $filename")
+          val (doc, mentions) = vp.parse(text)
+          val printVars = PrintVariables("Belief", "believer", "belief")
+          val context = mutable.Map.empty[Int, ContextDetails]
+
+          multiPrinter.outputMentions(mentions, doc, context, filename, printVars)
+        }
+        catch {
+          case e: Exception => e.printStackTrace()
         }
       }
     }
