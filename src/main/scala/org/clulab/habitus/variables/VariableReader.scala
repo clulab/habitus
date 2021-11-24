@@ -46,7 +46,9 @@ object VariableReader {
             val (doc, mentions, allEventMentions, entityHistogram) = vp.parse(text)
 
             //if there was no context, i.e none of the CROP, LOC etc are present, pass an empty context
-            val context =  if (entityHistogram.length==0)   mutable.Map.empty[Int, ContextDetails] else compressContext(doc, allEventMentions, entityHistogram)
+            val context =
+                if (entityHistogram.isEmpty) mutable.Map.empty[Int, ContextDetails]
+                else compressContext(doc, allEventMentions, entityHistogram)
             val printVars = PrintVariables("Assignment", "variable", "value")
             synchronized {
               tsvPrinter.outputMentions(mentions, doc, context, filename,printVars)
