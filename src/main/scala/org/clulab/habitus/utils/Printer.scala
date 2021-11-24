@@ -6,6 +6,7 @@ import org.clulab.processors.Document
 import scala.collection.mutable
 
 trait Printer {
+
   def outputMentions(
     mentions: Seq[Mention],
     doc: Document,
@@ -17,8 +18,8 @@ trait Printer {
   def close(): Unit
 }
 
-class MultiPrinter(values: MultiCloser.Constructor[Printer]*) extends MultiCloser[Printer](values: _*) with Printer {
-  val printers = constructeds
+class MultiPrinter(constructors: MultiCloser.Constructor[Printer]*) extends MultiCloser[Printer](constructors: _*) with Printer {
+  val printers = values
 
   def outputMentions(
     mentions: Seq[Mention],

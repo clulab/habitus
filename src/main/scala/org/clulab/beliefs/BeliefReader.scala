@@ -21,16 +21,16 @@ object BeliefReader {
   def run(inputDir: String, outputDir: String, threads: Int) {
     new File(outputDir).mkdir()
 
-    def mkOutputFile(filename: String): String = outputDir + "/" + filename
+    def mkOutputFile(extension: String): String = outputDir + "/mentions" + extension
 
     val vp = BeliefProcessor()
     val files = FileUtils.findFiles(inputDir, ".txt")
     val parFiles = if (threads > 1) ThreadUtils.parallelize(files, threads) else files
 
     new MultiPrinter(
-      () => new TsvPrinter(mkOutputFile("mentions.tsv")),
-      () => new JsonPrinter(mkOutputFile("mentions.json")),
-      () => new JsonlPrinter(mkOutputFile("mentions.jsonl"))
+      () => new TsvPrinter(mkOutputFile(".tsv")),
+      () => new JsonPrinter(mkOutputFile(".json")),
+      () => new JsonlPrinter(mkOutputFile(".jsonl"))
     ).autoClose { multiPrinter =>
       for (file <- parFiles) {
         try {
