@@ -4,12 +4,10 @@ import org.clulab.odin.Mention
 import org.clulab.processors.Document
 import org.clulab.serialization.json.stringify
 import org.clulab.utils.FileUtils
-import org.json4s.JObject
 import org.json4s.JsonDSL._
 
 import java.io.PrintWriter
 import scala.collection.mutable
-import scala.collection.mutable.ArrayBuffer
 
 class JsonPrinter(outputFilename: String) {
   protected var dirty = false
@@ -26,7 +24,7 @@ class JsonPrinter(outputFilename: String) {
   protected def outputMention(
     mention: Mention,
     doc: Document,
-    contextDetailsMap: mutable.Map[Int, ArrayBuffer[ContextDetails]],
+    contextDetailsMap: mutable.Map[Int, ContextDetails],
     inputFilename: String,
     printVars: PrintVariables
   ): Unit = {
@@ -42,11 +40,9 @@ class JsonPrinter(outputFilename: String) {
           valueMention.lemmas
               .map(_.mkString(" "))
               .getOrElse(valueMention.text)
-    val jObject: JObject = contextDetailsMap
+    val jObject = contextDetailsMap
         .get(mention.sentence) // Get it, optionally, if it is there.
-        .map { contextDetailsSeq => // If there, do this.
-          val contextDetails = contextDetailsSeq.head // This is apparently guaranteed.
-
+        .map { contextDetails => // If there, do this.
           ("variableText" -> variableText) ~
           ("valueText" -> valueText) ~
           ("valueNorm" -> valueNorm) ~
@@ -83,7 +79,7 @@ class JsonPrinter(outputFilename: String) {
   def outputMentions(
     mentions: Seq[Mention],
     doc: Document,
-    contextDetailsMap: mutable.Map[Int, ArrayBuffer[ContextDetails]],
+    contextDetailsMap: mutable.Map[Int, ContextDetails],
     inputFilename: String,
     printVars: PrintVariables
   ): Unit = {
