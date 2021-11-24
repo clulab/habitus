@@ -1,6 +1,6 @@
 package org.clulab.beliefs
 
-import org.clulab.habitus.utils.{ContextDetails, JsonPrinter, JsonlPrinter, MultiPrinter, PrintVariables, TsvPrinter}
+import org.clulab.habitus.utils.{ContextDetails, JsonPrinter, JsonlPrinter, Lazy, MultiPrinter, PrintVariables, TsvPrinter}
 import org.clulab.utils.{FileUtils, StringUtils, ThreadUtils}
 import org.clulab.utils.Closer.AutoCloser
 
@@ -28,9 +28,9 @@ object BeliefReader {
     val parFiles = if (threads > 1) ThreadUtils.parallelize(files, threads) else files
 
     new MultiPrinter(
-      () => new TsvPrinter(mkOutputFile(".tsv")),
-      () => new JsonPrinter(mkOutputFile(".json")),
-      () => new JsonlPrinter(mkOutputFile(".jsonl"))
+      Lazy(new TsvPrinter(mkOutputFile(".tsv"))),
+      Lazy(new JsonPrinter(mkOutputFile(".json"))),
+      Lazy(new JsonlPrinter(mkOutputFile(".jsonl")))
     ).autoClose { multiPrinter =>
       for (file <- parFiles) {
         try {

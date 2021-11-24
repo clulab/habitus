@@ -18,7 +18,7 @@ trait Printer {
   def close(): Unit
 }
 
-class MultiPrinter(constructors: MultiCloser.Constructor[Printer]*) extends MultiCloser[Printer](constructors: _*) with Printer {
+class MultiPrinter(lazies: Lazy[Printer]*) extends MultiCloser[Printer](lazies: _*) with Printer {
   val printers = values
 
   def outputMentions(
