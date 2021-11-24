@@ -86,6 +86,7 @@ class JsonPrinter(outputFilename: String) {
     println(s"Writing mentions from doc $inputFilename to $outputFilename")
     mentions
         .filter { mention => mention.label.matches(printVars.mentionLabel) }
+        .filter { mention => contextDetailsMap.isEmpty || contextDetailsMap.contains(mention.sentence) }
         .sortBy { mention => (mention.sentence, mention.start) }
         .foreach { mention =>
           outputMention(mention, doc, contextDetailsMap, inputFilename, printVars)
