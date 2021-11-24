@@ -1,12 +1,8 @@
 package org.clulab.habitus.variables
 
-import org.clulab.habitus.utils.ContextDetails
+import org.clulab.habitus.utils.{ContextDetails, JsonlPrinter, PrintVariables, TsvPrinter}
 import org.clulab.odin.EventMention
 import org.clulab.processors.Document
-import org.clulab.habitus.utils.{JsonPrinter, PrintVariables, TsvPrinter}
-
-import org.clulab.habitus.variables.VariableReader.checkIfEmpty
-
 import org.clulab.utils.FileUtils
 import org.clulab.utils.StringUtils
 import org.clulab.utils.ThreadUtils
@@ -30,13 +26,13 @@ object VariableReader {
   def run(inputDir: String, outputDir: String, threads: Int) {
     new File(outputDir).mkdir()
     val tsvOutputFile = outputDir + "/mentions.tsv"
-    val jsonOutputFile = outputDir + "/mentions.json"
+    val jsonlOutputFile = outputDir + "/mentions.jsonl"
 
     val vp = VariableProcessor()
     val files = FileUtils.findFiles(inputDir, ".txt")
     val parFiles = if (threads > 1) ThreadUtils.parallelize(files, threads) else files
 
-    new JsonPrinter(jsonOutputFile).autoClose { jsonPrinter =>
+    new JsonlPrinter(jsonlOutputFile).autoClose { jsonlPrinter =>
       new TsvPrinter(tsvOutputFile).autoClose { tsvPrinter =>
         for (file <- parFiles) {
           try {
@@ -51,8 +47,8 @@ object VariableReader {
                 else compressContext(doc, allEventMentions, entityHistogram)
             val printVars = PrintVariables("Assignment", "variable", "value")
             synchronized {
-              tsvPrinter.outputMentions(mentions, doc, context, filename,printVars)
-              jsonPrinter.outputMentions(mentions, doc, context, filename,printVars)
+              tsvPrinter.outputMentions(mentions, doc, context, filename, printVars)
+              jsonlPrinter.outputMentions(mentions, doc, context, filename, printVars)
             }
           }
           catch {

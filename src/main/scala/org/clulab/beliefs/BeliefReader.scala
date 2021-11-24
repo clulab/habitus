@@ -1,13 +1,11 @@
 package org.clulab.beliefs
 
-import org.clulab.habitus.utils.{ContextDetails, JsonPrinter, TsvPrinter,PrintVariables}
+import org.clulab.habitus.utils.{ContextDetails, JsonlPrinter, PrintVariables, TsvPrinter}
 import org.clulab.utils.{FileUtils, StringUtils, ThreadUtils}
 import org.clulab.utils.Closer.AutoCloser
 
 import java.io.File
 import scala.collection.mutable
-import scala.collection.mutable.ArrayBuffer
-
 
 object BeliefReader {
 
@@ -23,13 +21,13 @@ object BeliefReader {
   def run(inputDir: String, outputDir: String, threads: Int) {
     new File(outputDir).mkdir()
     val tsvOutputFile = outputDir + "/mentions.tsv"
-    val jsonOutputFile = outputDir + "/mentions.json"
+    val jsonlOutputFile = outputDir + "/mentions.jsonl"
 
     val vp = BeliefProcessor()
     val files = FileUtils.findFiles(inputDir, ".txt")
     val parFiles = if (threads > 1) ThreadUtils.parallelize(files, threads) else files
 
-    new JsonPrinter(jsonOutputFile).autoClose { jsonPrinter =>
+    new JsonlPrinter(jsonlOutputFile).autoClose { jsonlPrinter =>
       new TsvPrinter(tsvOutputFile).autoClose { tsvPrinter =>
         for (file <- parFiles) {
           try {
@@ -41,7 +39,7 @@ object BeliefReader {
             val context = mutable.Map.empty[Int, ContextDetails]
             synchronized {
               tsvPrinter.outputMentions(mentions, doc, context, filename, printVars)
-              jsonPrinter.outputMentions(mentions, doc, context, filename,printVars)
+              jsonlPrinter.outputMentions(mentions, doc, context, filename, printVars)
             }
           }
           catch {
