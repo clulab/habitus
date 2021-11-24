@@ -24,20 +24,49 @@ class JsonPrinter(outputFilename: String) {
   }
 
   protected def outputMention(
-    mention: Mention,
-    doc: Document,
-    contextDetailsMap: mutable.Map[Int, ArrayBuffer[ContextDetails]],
-    inputFilename: String,
-    printVars: PrintVariables
-  ): Unit = {
+     mention: Mention,
+     doc: Document,
+     contextDetailsSeq: mutable.Map[Int, ContextDetails],
+     inputFilename: String,
+     printVars: PrintVariables
+   ): Unit = {
     val variableText = mention.arguments(printVars.mentionType).head.text
     val valueMention = mention.arguments(printVars.mentionExtractor).head
     val valueText = valueMention.text
     val sentenceText = doc.sentences(mention.sentence).getSentenceText
     val valueNormsOpt = valueMention.norms
     val valueNorm =
-        if (valueNormsOpt.isDefined && valueNormsOpt.get.length > 2)
-          valueNormsOpt.get.head
+      if (valueNormsOpt.isDefined && valueNormsOpt.get.length > 2)
+        valueNormsOpt.get.head
+      else
+        valueMention.lemmas
+          .map(_.mkString(" "))
+          .getOrElse(valueMention.text)
+    val jValue: JValue =
+        if (contextDetailsSeq.nonEmpty) {
+          val jObjects = contextDetailsSeq(mention.sentence).map {
+            ("variableText" -> _.variableText) ~
+              ("valueText" -> valueText) ~
+              ("valueNorm" -> valueNorm) ~
+              ("sentenceText" -> sentenceText) ~
+              ("inputFilename" -> inputFilename) ~
+              ("mostFreqLoc0Sent" -> contextDetails.mostFreqLoc0Sent) ~
+              ("mostFreqLoc1Sent" -> contextDetails.mostFreqLoc1Sent) ~
+              ("mostFreqLoc" -> contextDetails.mostFreqLoc) ~
+              ("mostFreqDate0Sent" -> contextDetails.mostFreqDate0Sent) ~
+              ("mostFreqDate1Sent" -> contextDetails.mostFreqDate1Sent) ~
+              ("mostFreqDate" -> contextDetails.mostFreqDate) ~
+              ("mostFreqCrop0Sent" -> contextDetails.mostFreqCrop0Sent) ~
+              ("mostFreqCrop1Sent" -> contextDetails.mostFreqCrop1Sent) ~
+              ("mostFreqCrop" -> contextDetails.mostFreqCrop)~
+              ("mostFreqFert0Sent" -> contextDetails.mostFreqFertilizer0Sent) ~
+              ("mostFreqFert1Sent" -> contextDetails.mostFreqFertilizer1Sent) ~
+              ("mostFreqFert" -> contextDetails.mostFreqFertilizerOverall)
+          }
+
+          JArray(jObjects.toList)
+        }
+
         else
           valueMention.lemmas
               .map(_.mkString(" "))
@@ -83,7 +112,7 @@ class JsonPrinter(outputFilename: String) {
   def outputMentions(
     mentions: Seq[Mention],
     doc: Document,
-    contextDetailsMap: mutable.Map[Int, ArrayBuffer[ContextDetails]],
+    contexts: mutable.Map[Int, ContextDetails],
     inputFilename: String,
     printVars: PrintVariables
   ): Unit = {
