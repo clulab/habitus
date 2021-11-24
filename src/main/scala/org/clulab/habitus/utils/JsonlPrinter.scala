@@ -9,7 +9,7 @@ import org.json4s.JsonDSL._
 import java.io.PrintWriter
 import scala.collection.mutable
 
-class JsonlPrinter(outputFilename: String) {
+class JsonlPrinter(outputFilename: String) extends Printer {
   protected val printWriter: PrintWriter = FileUtils.printWriterFromFile(outputFilename)
 
   def close(): Unit = {

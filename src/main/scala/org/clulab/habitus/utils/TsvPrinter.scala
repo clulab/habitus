@@ -6,9 +6,8 @@ import org.clulab.utils.FileUtils
 
 import java.io.PrintWriter
 import scala.collection.mutable
-import scala.collection.mutable.ArrayBuffer
 
-class TsvPrinter(outputFilename: String) {
+class TsvPrinter(outputFilename: String) extends Printer {
   protected val printWriter: PrintWriter = FileUtils.printWriterFromFile(outputFilename)
 
   def close(): Unit = {
