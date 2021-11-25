@@ -12,14 +12,23 @@ class MultiCloser[T <: MultiCloser.Closeable](lazies: Lazy[T]*)(implicit ev: Cla
       arrayBuffer.toArray
     }
     catch {
-      case throwable: Throwable =>
-        close(arrayBuffer.toArray) // Suppress any exceptions here.
-        throw throwable
+      case exception: Throwable =>
+        val exceptions = close(arrayBuffer.toArray).reverse // Report in opposite order of lazies.
+        throw withMultiException(exception, exceptions)
     }
   }
 
-  protected def close(values: Array[T]): Array[Option[Throwable]] = {
-    values.reverse.map { value =>
+  protected def withMultiException(throwable: Throwable, exceptions: Array[Throwable]): Throwable = {
+    if (exceptions.nonEmpty) {
+      val multiException = new MultiCloser.MultiException(exceptions)
+      throwable.addSuppressed(multiException)
+    }
+    throwable
+  }
+
+  // Close in reverse order, but return exceptions in the same order as the values.
+  protected def close(values: Array[T]): Array[Throwable] = {
+    val result = values.reverse.map { value =>
       try {
         value.close()
         None
@@ -27,12 +36,21 @@ class MultiCloser[T <: MultiCloser.Closeable](lazies: Lazy[T]*)(implicit ev: Cla
       catch {
         case throwable: Throwable => Some(throwable)
       }
-    }.reverse
+    }.reverse.flatten
+
+    result
   }
 
-  def close(): Unit = close(values)
+  def close(): Unit = {
+    val exceptions = close(values).reverse // Report in opposite order of lazies.
+
+    if (exceptions.nonEmpty)
+      throw withMultiException(exceptions.head, exceptions.tail)
+  }
 }
 
 object MultiCloser {
   protected type Closeable = {def close() : Unit}
+
+  class MultiException(val exceptions: Array[Throwable]) extends RuntimeException("There were problems closing.")
 }
