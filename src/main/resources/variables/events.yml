@@ -46,7 +46,7 @@
 #
 # Syntactic rule for crops 
 #
-- name: ${label}-cop-5
+- name: ${label}-cop-5                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
   priority: ${rulepriority}
   label: ${label}
   graph: "hybrid"
