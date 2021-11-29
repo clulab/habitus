@@ -292,6 +292,16 @@ class TestBeliefReader extends FlatSpec with Matchers {
   //   val m = mentions.head
   //   m.arguments("believer").head.text should be ("Senator Harris")
   //   m.arguments("belief").head.text should be ("Trump’s medical recommendations")
-  // }
+  // Mistrust is particularly high in Senegal
+  //(83a) and Liberia (78P‹).}
 
+
+  val sent15 = "Only three in 10 respondents (31a) say they trust their government somewhat or a lot to ensure that any vaccine is safe before it is offered to citizens.."
+  sent15 should "contain one belief" in {
+    val mentions = getMentions(sent15)
+    mentions should have size(1)
+
+    val m = mentions.head
+    m.arguments("believer").head.text should be ("they")
+  }
 }

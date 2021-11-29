@@ -3,12 +3,17 @@ package org.clulab.habitus.variables
 import org.clulab.habitus.utils.ContextDetails
 import org.clulab.odin.EventMention
 import org.clulab.processors.Document
-import org.clulab.utils.Closer.AutoCloser
+import org.clulab.habitus.utils.{JsonPrinter, PrintVariables, TsvPrinter}
+
+import org.clulab.habitus.variables.VariableReader.checkIfEmpty
+
 import org.clulab.utils.FileUtils
 import org.clulab.utils.StringUtils
 import org.clulab.utils.ThreadUtils
+import org.clulab.utils.Closer.AutoCloser
 
 import java.io.File
+import scala.collection.mutable
 import scala.collection.mutable.ArrayBuffer
 
 object VariableReader {
@@ -39,11 +44,15 @@ object VariableReader {
             val filename = StringUtils.afterLast(file.getName, '/')
             println(s"going to parse input file: $filename")
             val (doc, mentions, allEventMentions, entityHistogram) = vp.parse(text)
-            val context = compressContext(doc, allEventMentions, entityHistogram)
 
+            //if there was no context, i.e none of the CROP, LOC etc are present, pass an empty context
+            val context =
+                if (entityHistogram.isEmpty) mutable.Map.empty[Int, ContextDetails]
+                else compressContext(doc, allEventMentions, entityHistogram)
+            val printVars = PrintVariables("Assignment", "variable", "value")
             synchronized {
-              tsvPrinter.outputMentions(mentions, doc, context, filename)
-              jsonPrinter.outputMentions(mentions, doc, context, filename)
+              tsvPrinter.outputMentions(mentions, doc, context, filename,printVars)
+              jsonPrinter.outputMentions(mentions, doc, context, filename,printVars)
             }
           }
           catch {
@@ -58,7 +67,7 @@ object VariableReader {
 
     //sentidContext is a data structure created just to carry contextdetails to the code which writes output to disk
     //note: value=Seq[contextDetails] because there can be more than one mentions in same sentence
-    val sentidContext = scala.collection.mutable.Map[Int, ArrayBuffer[ContextDetails]]()
+    val sentidContext = scala.collection.mutable.Map[Int, ContextDetails]()
 
     // for each of the event mentions, find most frequent entityType within the distance of howManySentAway
     //  e.g.,(LOC,1) means find which Location occurs most frequently within 1 sentence of this event
@@ -71,10 +80,15 @@ object VariableReader {
     val mostFreqCrop0Sent = extractContext(doc, allEventMentions, 0, "CROP", entityHistogram)
     val mostFreqCrop1Sent = extractContext(doc, allEventMentions, 1, "CROP", entityHistogram)
     val mostFreqCropOverall = extractContext(doc, allEventMentions, Int.MaxValue, "CROP", entityHistogram)
+    val mostFreqFertilizer0Sent = extractContext(doc, allEventMentions, 0, "FERTILIZER", entityHistogram)
+    val mostFreqFertilizer1Sent = extractContext(doc, allEventMentions, 1, "FERTILIZER", entityHistogram)
+    val mostFreqFertilizerOverall = extractContext(doc, allEventMentions, Int.MaxValue, "FERTILIZER", entityHistogram)
 
     //for each event mention, get the sentence id, and map it to a case class called contextDetails, which will have all of mostFreq* information
     createSentidContext(sentidContext, mostFreqLocation0Sent, mostFreqLocation1Sent, mostFreqLocationOverall,
-      mostFreqDate0Sent, mostFreqDate1Sent, mostFreqDateOverall, mostFreqCrop0Sent, mostFreqCrop1Sent, mostFreqCropOverall)
+      mostFreqDate0Sent, mostFreqDate1Sent, mostFreqDateOverall, mostFreqCrop0Sent, mostFreqCrop1Sent,
+      mostFreqCropOverall,mostFreqFertilizer0Sent, mostFreqFertilizer1Sent,
+      mostFreqFertilizerOverall)
 
     sentidContext
   }
@@ -171,23 +185,23 @@ object VariableReader {
     mentionsContexts
   }
 
-  def checkSentIdContextDetails(sentidContext:scala.collection.mutable.Map[Int,ArrayBuffer[ContextDetails]], key:Int, value: ContextDetails) = {
+  def checkSentIdContextDetails(sentidContext:scala.collection.mutable.Map[Int,ContextDetails], key:Int, value: ContextDetails) = {
     sentidContext.get(key) match {
       case Some(i) =>
-        println(s"Found that multiple event mentions occur in the same sentence with sentence id $key. " +
-          s"going to add to chain of values")
-        val oldList=sentidContext(key)
-        oldList.append(value)
-        sentidContext(key) = oldList
+//        println(s"Found that multiple event mentions occur in the same sentence with sentence id $key. " +
+//          s"going to add to chain of values")
+//        val oldList=sentidContext(key)
+//        oldList.append(value)
+//        sentidContext(key) = oldList
       case None =>
         //the combination of (sentid,freq) becomes the key for the value
-        sentidContext(key) = ArrayBuffer(value)
+        sentidContext(key) = value
     }
   }
   case class MostFreqEntity(sentId: Int, mention: String, mostFreqEntity: Option[String])
 
 
-  def createSentidContext(sentidContext:scala.collection.mutable.Map[Int,ArrayBuffer[ContextDetails]],
+  def createSentidContext(sentidContext:scala.collection.mutable.Map[Int,ContextDetails],
                           mostFreqLocation0Sent:Seq[MostFreqEntity],
                           mostFreqLocation1Sent:Seq[MostFreqEntity],
                           mostFreqLocationOverall:Seq[MostFreqEntity],
@@ -196,7 +210,11 @@ object VariableReader {
                           mostFreqDateOverall:Seq[MostFreqEntity],
                           mostFreqCrop0Sent:Seq[MostFreqEntity],
                           mostFreqCrop1Sent:Seq[MostFreqEntity],
-                          mostFreqCropOverall:Seq[MostFreqEntity]): Unit= {
+                          mostFreqCropOverall:Seq[MostFreqEntity],
+                          mostFreqFertilizer0Sent:Seq[MostFreqEntity],
+                          mostFreqFertilizer1Sent:Seq[MostFreqEntity],
+                          mostFreqFertilizerOverall:Seq[MostFreqEntity]
+                         ): Unit= {
 
     //todo assert lengths of all the mostFreq* are same
 
@@ -213,7 +231,10 @@ object VariableReader {
           checkIfEmpty(mostFreqDateOverall(i).mostFreqEntity),
           checkIfEmpty(mostFreqCrop0Sent(i).mostFreqEntity),
           checkIfEmpty(mostFreqCrop1Sent(i).mostFreqEntity),
-          checkIfEmpty(mostFreqCropOverall(i).mostFreqEntity)
+          checkIfEmpty(mostFreqCropOverall(i).mostFreqEntity),
+          checkIfEmpty(mostFreqFertilizer0Sent(i).mostFreqEntity),
+          checkIfEmpty(mostFreqFertilizer1Sent(i).mostFreqEntity),
+          checkIfEmpty(mostFreqFertilizerOverall(i).mostFreqEntity)
         )
       )
     }

@@ -135,6 +135,11 @@ class EntityHistogramExtractor(val processor: Processor, val extractor: Extracto
             val newEntityName = checkForMultipleTokens(nerTag, entityCounter, indicesToSkip, entityName, s,"I-CROP")
             EntityNameIndex = Some(Entity(newEntityName, cleanNerTag, i))
           }
+          if (nerTag == "B-FERTILIZER") {
+            val cleanNerTag = "FERTILIZER"
+            val newEntityName = checkForMultipleTokens(nerTag, entityCounter, indicesToSkip, entityName, s,"I-FERTILIZER")
+            EntityNameIndex = Some(Entity(newEntityName, cleanNerTag, i))
+          }
           else if (nerTag.contains("B-DATE")) {
             namedEntityTag = "DATE"
             val split0 = norm.split('-').head
