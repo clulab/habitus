@@ -9,15 +9,10 @@ import org.json4s.JsonDSL._
 import java.io.PrintWriter
 import scala.collection.mutable
 
-class JsonPrinter(outputFilename: String) extends Printer {
-  protected var dirty = false
+class JsonlPrinter(outputFilename: String) extends Printer {
   protected val printWriter: PrintWriter = FileUtils.printWriterFromFile(outputFilename)
-  printWriter.println("[")
 
   def close(): Unit = {
-    if (dirty)
-      printWriter.println()
-    printWriter.println("]")
     printWriter.close()
   }
 
@@ -67,13 +62,10 @@ class JsonPrinter(outputFilename: String) extends Printer {
           ("valueText" -> valueText) ~
           ("sentenceText" -> sentenceText)
         }
-    val json = stringify(jObject, pretty = true)
-    val indentedJson = "  " + json.replace("\n", "\n  ")
+    val json = stringify(jObject, pretty = false)
+    val jsonl = json.replace('\n', ' ') // just in case
 
-    // Each JSON element in the array needs to be separated from the others.
-    if (dirty) printWriter.println(",")
-    else dirty = true
-    printWriter.print(indentedJson)
+    printWriter.println(jsonl)
   }
 
   def outputMentions(
