@@ -73,12 +73,11 @@ class BeliefProcessor(val processor: Processor,
   private def checkNumberCount(mention: Mention): Boolean = {
     var numberCounter = 0
     for (word <- mention.sentenceObj.words) {
-      //todo: add for float also
-      if (Try(word.toInt).isSuccess) {
-          numberCounter = numberCounter + 1
-        }
+      if (Try(word.toInt).isSuccess || Try(word.toFloat).isSuccess || Try(word.toDouble).isSuccess || Try(word.toLong).isSuccess ) {
+        numberCounter = numberCounter + 1
+      }
   }
-  numberCounter > mention.sentenceObj.words.length / 2
+  numberCounter < mention.sentenceObj.words.length / 2
 }
 
   //keep only beliefs which have less than 150 tokens
