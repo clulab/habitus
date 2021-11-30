@@ -312,4 +312,11 @@ class TestBeliefReader extends FlatSpec with Matchers {
       val mentions = getMentions(sent16)
       mentions should have size (0)
     }
+
+  //to check if sentences less than 150 tokens are only let through
+  val sent17 = "20 45 Trump 20 45 believes 20 45 all  20 45 are losers"
+  sent17 should "have no beliefs" in {
+    val mentions = getMentions(sent17)
+    mentions should have size (0)
+  }
 }
