@@ -283,6 +283,29 @@ class TestBeliefReader extends FlatSpec with Matchers {
     m.arguments("belief").head.text should be ("how burning coal helps the environment")
   }
 
+  val sent15 = "Trump is thought to be a narcissist"
+  sent15 should "contain one belief" in {
+    val mentions = getMentions(sent15)
+    mentions should have size(1)
+
+    val m = mentions.head
+    m.arguments("beliefTheme").head.text should be ("Trump")
+    m.arguments("belief").head.text should be ("narcissist")
+  }
+
+  val sent16 = "Paul is sure that bleach kills covid."
+  sent16 should "contain one belief" in {
+    val mentions = getMentions(sent16)
+    mentions should have size(1)
+
+        val m = mentions.head
+        m.arguments("believer").head.text should be ("Paul")
+        m.arguments("belief").head.text should be ("bleach kills covid")
+  }
+
+
+
+
   // TODO: Returns many believes associations
   // val sent16 = "Senator Harris mistrusts Trump’s medical recommendations but trusts Fauci’s"
   // sent16 should "contain one belief" in {

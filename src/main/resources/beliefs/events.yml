@@ -42,3 +42,24 @@
     trigger = [lemma=/neg/]? [tag=/JJ|NN/] [tag="TO"] [tag=/^V/] 
     believer:Entity = /nsubj|expl/
     belief:Entity = /ccomp|A1|dobj|xcomp/
+
+
+- name: ${label}-believe-4
+  priority: ${rulepriority}
+  label: ${label}
+  graph: "hybrid"
+  example: "Trump is believed to be a narcissist"
+  pattern: |
+    trigger = [lemma=/think|believe/ & tag=/^V/]
+    beliefTheme:Entity = /nsubjpass|A1/
+    belief:Entity = /xcomp/
+
+- name: ${label}-believe5
+  priority: ${rulepriority}
+  label: ${label}
+  graph: "hybrid"
+  example: "Paul is sure that bleach kills covid."
+  pattern: |
+    trigger = [lemma=/sure/ & tag=/^J/]
+    believer:Entity = /nsubj/
+    belief:Entity = /ccomp|A1|dobj/
