@@ -345,8 +345,3 @@ class TestBeliefReader extends Test {
     m.arguments("believer").head.text should be ("they")
   }
 }
-
-
-
-
-
