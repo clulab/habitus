@@ -64,12 +64,3 @@
     believer:Entity = /nsubj/
     belief:Entity = /ccomp|A1|dobj|advcl/
 
-- name: ${label}-believe6
-  priority: ${rulepriority}
-  label: ${label}
-  graph: "hybrid"
-  example: "Paul is sure that bleach kills covid."
-  pattern: |
-    trigger = [lemma=/question/ & tag=/^V/]
-    believer:Entity = /nsubj|A0/
-    belief:Entity = /ccomp|A1|dobj|advcl/
