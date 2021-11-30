@@ -235,7 +235,7 @@ class TestBeliefReader extends Test {
 
   // fixme: expand on nmod_than
    val sent13 = "There’s no reason to think that Mu is worse than Delta"
-   failingTest should s"contain one belief in ${sent13} " in {
+   failingTest should s"contain one belief in '${sent13}'" in {
      val mentions = getMentions(sent13)
      mentions should have size(1)
      val m = mentions.head
@@ -314,7 +314,7 @@ class TestBeliefReader extends Test {
   }
 
   val sent18 = "Paul questions the popular theory that Trump is an idiot."
-  brokenSyntaxTest should s"contain one belief in ${sent18}" in {
+  brokenSyntaxTest should s"contain one belief in '${sent18}'" in {
     val mentions = getMentions(sent18)
     mentions should have size(1)
 
@@ -323,18 +323,30 @@ class TestBeliefReader extends Test {
     m.arguments("belief").head.text should be ("Trump is an idiot")
   }
 
-
-
   // TODO: Returns many believes associations
    val sent19 = "Senator Harris mistrusts Trump’s medical recommendations but trusts Fauci’s"
-   failingTest should s"contain one belief in ${sent19}" in {
+   failingTest should s"contain one belief in '${sent19}'" in {
      val mentions = getMentions(sent19)
      mentions should have size(1)
 
      val m = mentions.head
      m.arguments("believer").head.text should be ("Senator Harris")
      m.arguments("belief").head.text should be ("Trump’s medical recommendations")
+     // Mistrust is particularly high in Senegal
+     //(83a) and Liberia (78P‹).}
    }
 
+  val sent20 = "Only three in 10 respondents (31a) say they trust their government somewhat or a lot to ensure that any vaccine is safe before it is offered to citizens.."
+  sent20 should "contain one belief" in {
+    val mentions = getMentions(sent20)
+    mentions should have size(1)
+
+    val m = mentions.head
+    m.arguments("believer").head.text should be ("they")
+  }
 }
+
+
+
+
 

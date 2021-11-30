@@ -41,8 +41,6 @@ class BeliefProcessor(val processor: Processor,
 
     // extract syntactic mentions, without expansion
     val entityMentions = entityFinder.extract(doc)
-    //println("Mentions from the entityFinder:")
-    //utils.displayMentions(entityMentions, doc)
 
     // extract mentions from annotated document
     val initialState = State(entityMentions)

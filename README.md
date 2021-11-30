@@ -1,3 +1,5 @@
+[![Build Status](https://github.com/clulab/habitus/workflows/Habitus%20CI/badge.svg)](https://github.com/clulab/habitus/actions)
+
 # HEURISTICS
 
 This repository contains CLU lab's NLP software for the DARPA HEURISTICS project, which is part of the [HABITUS program](https://www.darpa.mil/program/habitus).
@@ -106,8 +108,21 @@ The `mentions.json` file contains:
 ]
 ```
 
-The description of the columns in the `.tsv` file (or the equivalent fields in the `.json` file is:
-TODO Mithun.
+The description of the columns in the `.tsv` file (or the equivalent fields in the `.json` file is as follows:
+- "variableText" : The trigger word/phrase in the sentence which created this extraction. 
+ - valueText" : The part of sentence which was recognized to contain the intended output of the trigger.
+ - "valueNorm" : The normalized values of the valueText. In case of of dates/date-ranges, the dates in text format is convert to the format YYYY-MM-DD
+ -    "sentenceText" : The particular sentence in which this trigger was found.
+ -    "inputFilename" : Name of the file which contained the sentenceText,
+ -    "mostFreqLoc0Sent" : Most frequently mentioned location within the same sentence as that of the trigger (e.g.,Senegal). This context is helpful in understanding which location, if any, that particular sentence is talking about.
+ -    "mostFreqLoc1Sent" : Most frequently mentioned location (e.g.,Senegal)found within 1 sentences of the trigger . This context is helpful in understanding which location, if any, that particular sentence is talking about.
+ -    "mostFreqLoc" : Most frequently mentioned location overall in the file. This context is helpful in understanding which location, if any, that particular file is talking about.
+ -    "mostFreqDate0Sent" : Most frequent date (e.g,1995) mentioned within the same sentence as that of the trigger . This context is helpful in understanding what time frame, if any, that particular sentence is talking about.
+ -    "mostFreqDate1Sent" :  Most frequent date found within 0 sentences of the trigger. This context is helpful in understanding what time frame, if any, that particular sentence is talking about
+ -    "mostFreqDate" : Most frequent date found within 0 sentences of the trigger. This context is helpful in understanding what time frame, if any, that particular file is talking about
+ -    "mostFreqCrop0Sent" : Most frequent crop (e.g.,rice) mentioned within the same sentence as that of the trigger . This context is helpful in understanding what crop, if any, that particular sentence is talking about.
+ -    "mostFreqCrop1Sent" :  Most frequent crop mentioned within the same sentence as that of the trigger . This context is helpful in understanding what crop, if any, that particular sentence is talking about.
+ -    "mostFreqCrop" : Most frequently mentioned crop overall in the file. This context is helpful in understanding which crop, if any, that particular file is talking about.
 
 ### 2.3. Programmatic access
 

@@ -8,6 +8,8 @@ import scala.collection.mutable.ArrayBuffer
 
 package object utils {
 
+  case class PrintVariables(mentionLabel: String, mentionType: String, mentionExtractor: String)
+
   def displayMentions(mentions: Seq[Mention], doc: Document): Unit = {
     val mentionsBySentence = mentions groupBy (_.sentence) mapValues (_.sortBy(_.start)) withDefaultValue Nil
     println
@@ -41,7 +43,10 @@ package object utils {
                             mostFreqDate0Sent: String, mostFreqDate1Sent: String, mostFreqDate: String,
                             mostFreqCrop0Sent: String,
                             mostFreqCrop1Sent: String,
-                            mostFreqCrop: String)
+                            mostFreqCrop: String,
+                            mostFreqFertilizer0Sent: String,
+                            mostFreqFertilizer1Sent: String,
+                            mostFreqFertilizerOverall: String)
 
   //some sentences might have multiple event mentions in it, and
   def getAllContextForGivenSentId(context: scala.collection.mutable.Map[Int, ArrayBuffer[ContextDetails]],
@@ -50,15 +55,6 @@ package object utils {
     for (ctxt <- context(sentId)) {
       allContexts.append(ctxt.mostFreqLoc0Sent)
     }
-    // {mostFreqLoc0Sent}\t${
-    //              context(i).mostFreqLoc1Sent}\t${
-    //              context(i).mostFreqLoc}\t${
-    //              context(i).mostFreqDate0Sent}\t${
-    //              context(i).mostFreqDate1Sent}\t${
-    //              context(i).mostFreqDate}\t${
-    //              context(i).mostFreqCrop0Sent}\t${
-    //              context(i).mostFreqCrop1Sent}\t${
-    //              context(i).mostFreqCrop}
   }
 
   def printHybridDependencies(s:Sentence): Unit = {
