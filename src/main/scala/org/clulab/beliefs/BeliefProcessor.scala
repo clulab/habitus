@@ -68,6 +68,8 @@ class BeliefProcessor(val processor: Processor,
   private def containsPropositionBeliefWithTheme(m: Mention): Boolean = {
     m.isInstanceOf[EventMention] &&
       m.arguments.contains("belief") &&
+      m.arguments("belief").nonEmpty &&
+      m.arguments.contains("beliefTheme") &&
       m.arguments("beliefTheme").nonEmpty &&
       isPropositionWithTheme(m.arguments("belief").head, m.arguments("beliefTheme").head)
   }
