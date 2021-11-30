@@ -8,7 +8,7 @@
   graph: "hybrid"
   pattern: |
     trigger = [lemma=/believe|think|accept|consider|trust|mistrust|conclude|doubt|reject|suppose|suggest|submit|theorize|offer/ & tag=/^V/]
-    believer:Entity = /nsubj|A0/
+    believer:Entity? = /nsubj|A0/ # note: optional to accommodate examples with no explicit believer
     belief:Entity = /ccomp|A1|dobj/
 
 #
@@ -60,6 +60,16 @@
   graph: "hybrid"
   example: "Paul is sure that bleach kills covid."
   pattern: |
-    trigger = [lemma=/sure/ & tag=/^J/]
+    trigger = [lemma=/(sure|certain|convinced|confident|positive|hesitant)$/ & tag=/^J/]
     believer:Entity = /nsubj/
-    belief:Entity = /ccomp|A1|dobj/
+    belief:Entity = /ccomp|A1|dobj|advcl/
+
+- name: ${label}-believe6
+  priority: ${rulepriority}
+  label: ${label}
+  graph: "hybrid"
+  example: "Paul is sure that bleach kills covid."
+  pattern: |
+    trigger = [lemma=/question/ & tag=/^V/]
+    believer:Entity = /nsubj|A0/
+    belief:Entity = /ccomp|A1|dobj|advcl/

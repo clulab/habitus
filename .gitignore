@@ -25,3 +25,6 @@ mentions.tsv
 # docker
 docker/bin/
 docker/lib/
+
+# For MacOS filesystem
+.DS_Store
