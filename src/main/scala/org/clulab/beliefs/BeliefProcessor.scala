@@ -53,7 +53,7 @@ class BeliefProcessor(val processor: Processor,
 
     // keep only beliefs that have less than 150 tokens
     val shortBeliefMentions = expandedMentions.filter(containsLessThan150Tokens)
-
+ 
     // keep only beliefs that look like propositions
     val propBeliefMentions = shortBeliefMentions.filter(containsPropositionBelief)
 
