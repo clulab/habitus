@@ -88,10 +88,11 @@ class BeliefProcessor(val processor: Processor,
   }
 
   private def isPropositionWithTheme(belief: Mention, beliefTheme: Mention): Boolean = {
+    // accounts for examples like <Belief theme> is believed to <belief>, e.g., `This politician is believed to be a narcissist.`
     val sent = belief.sentenceObj
     val tags = sent.tags.get
     val beliefSpan = belief.tokenInterval
-    val believerSpan = beliefTheme.tokenInterval
+    val beliefThemeSpan = beliefTheme.tokenInterval
     var nounCount = 0
     var verbCount = 0
     for(i <- beliefSpan.start until beliefSpan.end) {
@@ -99,7 +100,7 @@ class BeliefProcessor(val processor: Processor,
       else if(tags(i).startsWith("VB")) verbCount += 1
     }
 
-    for(i <- believerSpan.start until believerSpan.end) {
+    for(i <- beliefThemeSpan.start until beliefThemeSpan.end) {
       if(tags(i).startsWith("NN")) nounCount += 1
       else if(tags(i).startsWith("VB")) verbCount += 1
     }
