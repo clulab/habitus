@@ -8,6 +8,7 @@ import org.clulab.habitus.actions.HabitusActions
 import org.clulab.odin.{EventMention, ExtractorEngine, Mention, RelationMention, State, TextBoundMention}
 import org.clulab.openie.entities.CustomizableRuleBasedFinder
 import org.clulab.processors.{Document, Processor}
+import ujson.IndexedValue.False
 
 import java.io.File
 import java.nio.charset.StandardCharsets
@@ -50,10 +51,21 @@ class BeliefProcessor(val processor: Processor,
     val eventTriggers = eventMentions.collect{ case em: EventMention => em.trigger }
     val expandedMentions = eventMentions.map(expandArgs(_, State(eventTriggers)))
 
+    // keep only beliefs that have less than 150 tokens
+    val shortBeliefMentions = expandedMentions.filter(containsLessThan150Tokens)
+
     // keep only beliefs that look like propositions
-    val propBeliefMentions = expandedMentions.filter(containsPropositionBelief)
+    val propBeliefMentions = shortBeliefMentions.filter(containsPropositionBelief)
 
     (doc, propBeliefMentions)
+  }
+
+  //keep only beliefs which have less than 150 tokens
+  private def containsLessThan150Tokens(m: Mention): Boolean = {
+    m.isInstanceOf[EventMention] &&
+      m.arguments.contains("belief") &&
+      m.arguments("belief").nonEmpty &&
+      (m.sentenceObj.words.length < 150)
   }
 
   private def containsPropositionBelief(m: Mention): Boolean = {
@@ -78,6 +90,7 @@ class BeliefProcessor(val processor: Processor,
 
     nounCount > 1 || (nounCount > 0 && verbCount > 0)
   }
+
 }
 
 object BeliefProcessor {
