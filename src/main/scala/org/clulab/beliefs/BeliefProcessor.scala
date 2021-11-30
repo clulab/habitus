@@ -13,6 +13,7 @@ import ujson.IndexedValue.False
 import java.io.File
 import java.nio.charset.StandardCharsets
 import scala.collection.JavaConverters.{asJavaIterableConverter, asScalaBufferConverter}
+import scala.util.Try
 
 class BeliefProcessor(val processor: Processor,
                       val entityFinder: CustomizableRuleBasedFinder,
@@ -29,7 +30,7 @@ class BeliefProcessor(val processor: Processor,
     }
 
     m match {
-      case _: TextBoundMention => m   // tbms have no args
+      case _: TextBoundMention => m // tbms have no args
       case rm: RelationMention => rm.copy(arguments = getExpandedArgs(m.arguments))
       case em: EventMention => em.copy(arguments = getExpandedArgs(m.arguments))
       case _ => ???
@@ -48,17 +49,38 @@ class BeliefProcessor(val processor: Processor,
     val eventMentions = extractor.extractFrom(doc, initialState).sortBy(m => (m.sentence, m.getClass.getSimpleName))
 
     // expand the arguments, don't allow to cross the trigger
-    val eventTriggers = eventMentions.collect{ case em: EventMention => em.trigger }
+    val eventTriggers = eventMentions.collect { case em: EventMention => em.trigger }
     val expandedMentions = eventMentions.map(expandArgs(_, State(eventTriggers)))
 
-    // keep only beliefs that have less than 150 tokens
-    val shortBeliefMentions = expandedMentions.filter(containsLessThan150Tokens)
+    // keep only beliefs that have less than 150 tokens and <50% of tokens being numbers
+    val shortBeliefMentions = expandedMentions.filter(containsLessThan150Tokens).filter(halfOfTokensAreNumbers)
 
     // keep only beliefs that look like propositions
     val propBeliefMentions = shortBeliefMentions.filter(containsPropositionBelief)
 
     (doc, propBeliefMentions)
   }
+
+
+  //keep only beliefs Sentences with <50% of tokens being numbers
+  private def halfOfTokensAreNumbers(m: Mention): Boolean = {
+    m.isInstanceOf[EventMention] &&
+      m.arguments.contains("belief") &&
+      m.arguments("belief").nonEmpty &&
+      checkNumberCount(m)
+  }
+
+  private def checkNumberCount(mention: Mention): Boolean = {
+    var numberCounter = 0
+    for (word <- mention.sentenceObj.words) {
+      if (Try(word.toInt).isSuccess) {
+        if (Try(word.toFloat).isSuccess) {
+          numberCounter = numberCounter + 1
+        }
+      }
+  }
+  numberCounter > mention.sentenceObj.words.length / 2
+}
 
   //keep only beliefs which have less than 150 tokens
   private def containsLessThan150Tokens(m: Mention): Boolean = {
