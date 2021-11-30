@@ -8,7 +8,6 @@
   type: token
   pattern: |
     @variable:Variable [tag=/VBN/]? (?<trigger> [lemma=be]) (","? @value:Value)+ ","? ("and" @value:Value)?
-
 # #
 # [With] Variable Value
 # This is a token pattern.
@@ -18,9 +17,9 @@
   label: ${label}
   type: token
   pattern: |
-    (?<trigger> [lemma=with])? @variable:Variable (","? @value:Value)+ ","? ("and" @value:Value)?
+    (?<trigger> [lemma=with])? @variable:Variable (("," | "and")? @value:Value)+
 
-#
+#                              
 # VARIABLE ranged|occurred on VALUE
 #
 - name: ${label}-cop-3
