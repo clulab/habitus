@@ -51,7 +51,7 @@ class BeliefProcessor(val processor: Processor,
     val expandedMentions = eventMentions.map(expandArgs(_, State(eventTriggers)))
 
     // keep only beliefs that look like propositions
-    val propBeliefMentions = expandedMentions.filter(containsPropositionBelief)
+    val propBeliefMentions = expandedMentions.filter(m => containsPropositionBelief(m) || containsPropositionBeliefWithTheme(m))
 
     (doc, propBeliefMentions)
   }
@@ -63,15 +63,44 @@ class BeliefProcessor(val processor: Processor,
       isProposition(m.arguments("belief").head)
   }
 
+  private def containsPropositionBeliefWithTheme(m: Mention): Boolean = {
+    m.isInstanceOf[EventMention] &&
+      m.arguments.contains("belief") &&
+      m.arguments("belief").nonEmpty &&
+      m.arguments.contains("beliefTheme") &&
+      m.arguments("beliefTheme").nonEmpty &&
+      isPropositionWithTheme(m.arguments("belief").head, m.arguments("beliefTheme").head)
+  }
+
   /** True if this mention contains a proposition */
   private def isProposition(mention: Mention): Boolean = {
     val sent = mention.sentenceObj
     val tags = sent.tags.get
     val span = mention.tokenInterval
-
     var nounCount = 0
     var verbCount = 0
     for(i <- span.start until span.end) {
+      if(tags(i).startsWith("NN")) nounCount += 1
+      else if(tags(i).startsWith("VB")) verbCount += 1
+    }
+
+    nounCount > 1 || (nounCount > 0 && verbCount > 0)
+  }
+
+  private def isPropositionWithTheme(belief: Mention, beliefTheme: Mention): Boolean = {
+    // accounts for examples like <Belief theme> is believed to <belief>, e.g., `This politician is believed to be a narcissist.`
+    val sent = belief.sentenceObj
+    val tags = sent.tags.get
+    val beliefSpan = belief.tokenInterval
+    val beliefThemeSpan = beliefTheme.tokenInterval
+    var nounCount = 0
+    var verbCount = 0
+    for(i <- beliefSpan.start until beliefSpan.end) {
+      if(tags(i).startsWith("NN")) nounCount += 1
+      else if(tags(i).startsWith("VB")) verbCount += 1
+    }
+
+    for(i <- beliefThemeSpan.start until beliefThemeSpan.end) {
       if(tags(i).startsWith("NN")) nounCount += 1
       else if(tags(i).startsWith("VB")) verbCount += 1
     }
