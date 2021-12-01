@@ -17,7 +17,7 @@
   label: ${label}
   type: token
   pattern: |
-    (?<trigger> [lemma=with])? @variable:Variable (("," | "and")? @value:Value)+
+    (?<trigger> [lemma=with])? @variable:Variable (("," | "and")* @value:Value)+
 
 #                              
 # VARIABLE ranged|occurred on VALUE
