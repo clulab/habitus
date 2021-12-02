@@ -73,7 +73,7 @@ class BeliefProcessor(val processor: Processor,
       isPropositionWithTheme(m.arguments("belief").head, m.arguments("beliefTheme").head)
   }
 
-  def countStartWith(strings: Array[String], prefix: String, tokenIntervals: Interval*): Int =
+  def countStartsWith(strings: Array[String], prefix: String, tokenIntervals: Interval*): Int =
       tokenIntervals.foldLeft(0) { (sum, tokenInterval) =>
         sum + ArrayView(strings, tokenInterval.start, tokenInterval.end).count(_.startsWith(prefix))
       }
@@ -82,8 +82,8 @@ class BeliefProcessor(val processor: Processor,
   private def isProposition(mention: Mention): Boolean = {
     val tags = mention.sentenceObj.tags.get
     val span = mention.tokenInterval
-    val nounCount = countStartWith(tags, "NN", span)
-    val verbCount = countStartWith(tags, "VB", span)
+    val nounCount = countStartsWith(tags, "NN", span)
+    val verbCount = countStartsWith(tags, "VB", span)
 
     nounCount > 1 || (nounCount > 0 && verbCount > 0)
   }
@@ -93,8 +93,8 @@ class BeliefProcessor(val processor: Processor,
     val tags = belief.sentenceObj.tags.get
     val beliefSpan = belief.tokenInterval
     val beliefThemeSpan = beliefTheme.tokenInterval
-    val nounCount = countStartWith(tags, "NN", beliefSpan, beliefThemeSpan)
-    val verbCount = countStartWith(tags, "VB", beliefSpan, beliefThemeSpan)
+    val nounCount = countStartsWith(tags, "NN", beliefSpan, beliefThemeSpan)
+    val verbCount = countStartsWith(tags, "VB", beliefSpan, beliefThemeSpan)
 
     nounCount > 1 || (nounCount > 0 && verbCount > 0)
   }
