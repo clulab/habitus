@@ -14,7 +14,7 @@ class TestVariableReader extends FlatSpec with Matchers {
 
   def getMentions(text: String): Seq[Mention] = {
     val (_, mentions,_,_) = vp.parse(text)
-    mentions
+    mentions              
   }
 
   // the Clu parser breaks on this one, but the SRL works fine!
@@ -362,7 +362,6 @@ class TestVariableReader extends FlatSpec with Matchers {
     for (m <- mentions.filter(_.label matches "Assignment")) {
       if (count == 0) {
         m.arguments("variable").head.text should be ("crops")
-        println(m.arguments("value").head.text)
         m.arguments("value").head.text should equal ("millet")
       } else if (count == 1) {
         m.arguments("variable").head.text should be ("crops")
@@ -413,21 +412,28 @@ class TestVariableReader extends FlatSpec with Matchers {
     })
   }
 
-  // TODO: I was wondering if this case is for multiple assignments.
-  // Not sure if we can use Syntactic rules here.
-
   val sent16_4_2 = "In the SRV, farmers plant Sahel 108, Sahel 150, Sahel 154, Sahel 134, Nerica"
   sent16_4_2 should "recognize crop [attached to dates]"in {
     val mentions = getMentions(sent16_4_2)
     mentions.filter(_.label matches "Assignment") should have size (1)
     mentions.filter(_.label matches "Assignment").foreach({ m =>
-      m.arguments("variable").head.text should be("plant")
-      m.arguments("value").head.text should equal("Sahel 108") 
-      // m.arguments("value").head.text.get(0) should equal("Sahel 108")
-      // m.arguments("value").head.text.get(1) should equal("Sahel 150")
-      // m.arguments("value").head.text.get(2) should equal("Sahel 154")
-      // m.arguments("value").head.text.get(3) should equal("Sahel 134")
-      // m.arguments("value").head.text.get(4) should equal("Nerica")
+      var count = 0
+      m.arguments("value") should have size (5)
+      
+      for (v <- m.arguments("value")) {
+        if (count == 0) {
+          v.text should equal ("Sahel 108")
+        }else if (count == 1) {
+          v.text should equal ("Sahel 150")
+        }else if (count == 2) {
+          v.text should equal ("Sahel 154")
+        }else if (count == 3) {
+          v.text should equal ("Sahel 134")
+        }else {
+          v.text should equal ("Nerica")
+        }
+        count += 1
+      }      
     })
   }
 
@@ -440,7 +446,6 @@ class TestVariableReader extends FlatSpec with Matchers {
     for (m <- mentions.filter(_.label matches "Assignment")) {
       if (count == 0) {
         m.arguments("variable").head.text should be ("crops")
-        println(m.arguments("value").head.text)
         m.arguments("value").head.text should equal ("Peanut")
       } else if (count == 1) {
         m.arguments("variable").head.text should be ("crops")
@@ -462,7 +467,6 @@ class TestVariableReader extends FlatSpec with Matchers {
     for (m <- mentions.filter(_.label matches "Assignment")) {
       if (count == 0) {
         m.arguments("variable").head.text should be ("crops")
-        println(m.arguments("value").head.text)
         m.arguments("value").head.text should equal ("Millet")
       } else if (count == 1) {
         m.arguments("variable").head.text should be ("crops")
@@ -487,7 +491,6 @@ class TestVariableReader extends FlatSpec with Matchers {
     for (m <- mentions.filter(_.label matches "Assignment")) {
       if (count == 0) {
         m.arguments("variable").head.text should be ("crops")
-        println(m.arguments("value").head.text)
         m.arguments("value").head.text should equal ("Tomato")
       } else {
         m.arguments("variable").head.text should be ("crops")
@@ -496,7 +499,6 @@ class TestVariableReader extends FlatSpec with Matchers {
       count += 1
     }
   }
-
 
   val sent17_4 = "Onion and tomato were the most profitable crops."
   sent17_4 should "recognize AND separated crops"  in {
@@ -507,7 +509,6 @@ class TestVariableReader extends FlatSpec with Matchers {
     for (m <- mentions.filter(_.label matches "Assignment")) {
       if (count == 0) {
         m.arguments("variable").head.text should be ("crops")
-        println(m.arguments("value").head.text)
         m.arguments("value").head.text should equal ("Onion")
       } else {
         m.arguments("variable").head.text should be ("crops")
@@ -574,9 +575,68 @@ class TestVariableReader extends FlatSpec with Matchers {
     val mentions = getMentions(sent_20_5)
     mentions.filter(_.label matches "Assignment") should have size (1)
     mentions.filter(_.label matches "Assignment").foreach({ m =>
-      m.arguments("variable").head.text should be("fertilizers")
-      m.arguments("value").head.text should equal("diammonium phosphate")
-    })
+      var count = 0
+      m.arguments("value") should have size (3)
+      
+      for (v <- m.arguments("value")) {
+        if (count == 0) {
+          v.text should equal ("diammonium phosphate")
+        }else if (count == 1) {
+          v.text should equal ("urea")
+        }else {
+          v.text should equal ("potassium chloride")
+        }
+        count += 1
+      }
+    }) 
+  }
+
+ val sent_20_5_1 = "The main nutrient elements present in the fertilizers are nitrogen, phosphorus, and potassium"
+  sent_20_5_1 should "recognize fertilizer [attached to be verb]"in {
+    val mentions = getMentions(sent_20_5_1)
+    mentions.filter(_.label matches "Assignment") should have size (1)
+    mentions.filter(_.label matches "Assignment").foreach({ m =>
+      var count = 0
+      m.arguments("value") should have size (3)
+      
+      for (v <- m.arguments("value")) {
+        if (count == 0) {
+          v.text should equal ("nitrogen")
+        }else if (count == 1) {
+          v.text should equal ("phosphorus")
+        }else {
+          v.text should equal ("potassium")
+        }
+        count += 1
+      }
+    }) 
+  }
+
+ val sent_20_5_2 = "The nitrogenous chemical fertilizers are urea, calcium, ammonium nitrate, ammonium sulfate, basic calcium nitrate, calcium cyanamide"
+  sent_20_5_2 should "recognize fertilizer [attached to be verb]"in {
+    val mentions = getMentions(sent_20_5_2)
+    mentions.filter(_.label matches "Assignment") should have size (1)
+    mentions.filter(_.label matches "Assignment").foreach({ m =>
+      var count = 0
+      m.arguments("value") should have size (6)
+      
+      for (v <- m.arguments("value")) {
+        if (count == 0) {
+          v.text should equal ("urea")
+        }else if (count == 1) {
+          v.text should equal ("calcium")
+        }else if (count == 2){
+          v.text should equal ("ammonium nitrate")
+        }else if (count == 3) {
+          v.text should equal ("ammonium sulfate")
+        }else if (count == 4) {
+          v.text should equal ("basic calcium nitrate")
+        }else {
+          v.text should equal ("calcium cyanamide")
+        }
+        count += 1
+      }
+    }) 
   }
 
 
@@ -610,7 +670,6 @@ class TestVariableReader extends FlatSpec with Matchers {
     for (m <- mentions.filter(_.label matches "Assignment")) {
       if (count == 0) {
         m.arguments("variable").head.text should be ("fertilizers")
-        println(m.arguments("value").head.text)
         m.arguments("value").head.text should equal ("Phosphorus")
       } else if (count == 1) {
         m.arguments("variable").head.text should be ("fertilizers")
@@ -622,4 +681,26 @@ class TestVariableReader extends FlatSpec with Matchers {
       count += 1
     }
   }
+
+  val sent_20_9 = "Some organic fertilizers include nitrogen, phosphorus, and potassium as the three most important elements for plant nutrition"
+  sent_20_9 should "recognize comma separated fertilizers types"  in {
+    val mentions = getMentions(sent_20_9)
+    mentions.filter(_.label matches "Assignment") should have size (3)
+    var count = 0
+    
+    for (m <- mentions.filter(_.label matches "Assignment")) {
+      if (count == 0) {
+        m.arguments("variable").head.text should be ("fertilizers")
+        m.arguments("value").head.text should equal ("nitrogen")
+      } else if (count == 1) {
+        m.arguments("variable").head.text should be ("fertilizers")
+        m.arguments("value").head.text should equal ("phosphorus")
+      } else {
+        m.arguments("variable").head.text should be ("fertilizers")
+        m.arguments("value").head.text should equal ("potassium")
+      }
+      count += 1
+    }
+  }
+
 }
