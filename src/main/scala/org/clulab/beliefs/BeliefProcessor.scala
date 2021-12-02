@@ -5,9 +5,11 @@ import org.apache.commons.io.FileUtils
 import org.clulab.dynet.Utils
 import org.clulab.habitus.HabitusProcessor
 import org.clulab.habitus.actions.HabitusActions
+import org.clulab.habitus.utils.ArrayView
 import org.clulab.odin.{EventMention, ExtractorEngine, Mention, RelationMention, State, TextBoundMention}
 import org.clulab.openie.entities.CustomizableRuleBasedFinder
 import org.clulab.processors.{Document, Processor}
+import org.clulab.struct.Interval
 
 import java.io.File
 import java.nio.charset.StandardCharsets
@@ -56,54 +58,43 @@ class BeliefProcessor(val processor: Processor,
     (doc, propBeliefMentions)
   }
 
+  def hasArguments(mention: Mention, keys: String*): Boolean =
+      keys.forall(mention.arguments.get(_).exists(_.nonEmpty))
+
   private def containsPropositionBelief(m: Mention): Boolean = {
     m.isInstanceOf[EventMention] &&
-      m.arguments.contains("belief") &&
-      m.arguments("belief").nonEmpty &&
+      hasArguments(m, "belief") &&
       isProposition(m.arguments("belief").head)
   }
 
   private def containsPropositionBeliefWithTheme(m: Mention): Boolean = {
     m.isInstanceOf[EventMention] &&
-      m.arguments.contains("belief") &&
-      m.arguments("belief").nonEmpty &&
-      m.arguments.contains("beliefTheme") &&
-      m.arguments("beliefTheme").nonEmpty &&
+      hasArguments(m, "belief", "beliefTheme") &&
       isPropositionWithTheme(m.arguments("belief").head, m.arguments("beliefTheme").head)
   }
 
+  def countStartWith(strings: Array[String], prefix: String, tokenIntervals: Interval*): Int =
+      tokenIntervals.foldLeft(0) { (sum, tokenInterval) =>
+        sum + ArrayView(strings, tokenInterval.start, tokenInterval.end).count(_.startsWith(prefix))
+      }
+
   /** True if this mention contains a proposition */
   private def isProposition(mention: Mention): Boolean = {
-    val sent = mention.sentenceObj
-    val tags = sent.tags.get
+    val tags = mention.sentenceObj.tags.get
     val span = mention.tokenInterval
-    var nounCount = 0
-    var verbCount = 0
-    for(i <- span.start until span.end) {
-      if(tags(i).startsWith("NN")) nounCount += 1
-      else if(tags(i).startsWith("VB")) verbCount += 1
-    }
+    val nounCount = countStartWith(tags, "NN", span)
+    val verbCount = countStartWith(tags, "VB", span)
 
     nounCount > 1 || (nounCount > 0 && verbCount > 0)
   }
 
   private def isPropositionWithTheme(belief: Mention, beliefTheme: Mention): Boolean = {
     // accounts for examples like <Belief theme> is believed to <belief>, e.g., `This politician is believed to be a narcissist.`
-    val sent = belief.sentenceObj
-    val tags = sent.tags.get
+    val tags = belief.sentenceObj.tags.get
     val beliefSpan = belief.tokenInterval
     val beliefThemeSpan = beliefTheme.tokenInterval
-    var nounCount = 0
-    var verbCount = 0
-    for(i <- beliefSpan.start until beliefSpan.end) {
-      if(tags(i).startsWith("NN")) nounCount += 1
-      else if(tags(i).startsWith("VB")) verbCount += 1
-    }
-
-    for(i <- beliefThemeSpan.start until beliefThemeSpan.end) {
-      if(tags(i).startsWith("NN")) nounCount += 1
-      else if(tags(i).startsWith("VB")) verbCount += 1
-    }
+    val nounCount = countStartWith(tags, "NN", beliefSpan, beliefThemeSpan)
+    val verbCount = countStartWith(tags, "VB", beliefSpan, beliefThemeSpan)
 
     nounCount > 1 || (nounCount > 0 && verbCount > 0)
   }
