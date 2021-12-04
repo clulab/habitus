@@ -38,7 +38,6 @@ class HabitusProcessor(lexiconNer: Option[LexiconNER]) extends CluProcessor(opti
       breakable {
         for (char <- word) {
           if (char.isDigit) {
-            print("found that there is atleast one character in the word that is a digit")
             numbersCounter += 1
             break
           }
