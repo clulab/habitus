@@ -31,13 +31,11 @@ class HabitusProcessor(lexiconNer: Option[LexiconNER]) extends CluProcessor(opti
 
   /** Returns true if this is a malformed sentence */
   private def isBadSentence(sentence: Sentence): Boolean = {
-
     // keep only beliefs that have less than 150 tokens and <50% of tokens being numbers
     val shortBeliefMentions = ""
-var numbersCounter=0
-
-      for (word <- sentence.words) {
-        breakable {
+    var numbersCounter = 0
+    for (word <- sentence.words) {
+      breakable {
         for (char <- word) {
           if (char.isDigit) {
             print("found that there is atleast one character in the word that is a digit")
@@ -47,7 +45,7 @@ var numbersCounter=0
         }
       }
     }
-    !(numbersCounter < sentence.words.length / 2)
+    numbersCounter > (sentence.words.length/2)
   }
 
 
