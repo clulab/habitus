@@ -52,41 +52,13 @@ class BeliefProcessor(val processor: Processor,
     val eventTriggers = eventMentions.collect { case em: EventMention => em.trigger }
     val expandedMentions = eventMentions.map(expandArgs(_, State(eventTriggers)))
 
-    // keep only beliefs that have less than 150 tokens and <50% of tokens being numbers
-    val shortBeliefMentions = expandedMentions.filter(containsLessThan150Tokens).filter(halfOfTokensAreNumbers)
-
     // keep only beliefs that look like propositions
-    val propBeliefMentions = shortBeliefMentions.filter(containsPropositionBelief)
+    val propBeliefMentions = expandedMentions.filter(containsPropositionBelief)
 
     (doc, propBeliefMentions)
   }
 
 
-  //keep only beliefs Sentences with <50% of tokens being numbers
-  private def halfOfTokensAreNumbers(m: Mention): Boolean = {
-    m.isInstanceOf[EventMention] &&
-      m.arguments.contains("belief") &&
-      m.arguments("belief").nonEmpty &&
-      checkNumberCount(m)
-  }
-
-  private def checkNumberCount(mention: Mention): Boolean = {
-    var numberCounter = 0
-    for (word <- mention.sentenceObj.words) {
-      if (Try(word.toInt).isSuccess || Try(word.toFloat).isSuccess || Try(word.toDouble).isSuccess || Try(word.toLong).isSuccess ) {
-        numberCounter = numberCounter + 1
-      }
-  }
-  numberCounter < mention.sentenceObj.words.length / 2
-}
-
-  //keep only beliefs which have less than 150 tokens
-  private def containsLessThan150Tokens(m: Mention): Boolean = {
-    m.isInstanceOf[EventMention] &&
-      m.arguments.contains("belief") &&
-      m.arguments("belief").nonEmpty &&
-      (m.sentenceObj.words.length < 150)
-  }
 
   private def containsPropositionBelief(m: Mention): Boolean = {
     m.isInstanceOf[EventMention] &&
