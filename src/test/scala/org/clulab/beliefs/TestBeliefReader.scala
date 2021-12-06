@@ -347,23 +347,23 @@ class TestBeliefReader extends Test {
 
 
     //to check if sentences less than 150 tokens are only let through
-    val sent16 = "The New York Times is skeptical of Trump’s claims that Ron Johnson views demonstrations about the George Floyd killing as terrorismRon Johnson views demonstrations about the George Floyd killing as terrorismRon Johnson views demonstrations about the George Floyd killing as terrorismRon Johnson views demonstrations about the George Floyd killing as terrorismRon Johnson views demonstrations about the George Floyd killing as terrorismRon Johnson views demonstrations about the George Floyd killing as terrorismRon Johnson views demonstrations about the George Floyd killing as terrorismRon Johnson views demonstrations about the George Floyd killing as terrorismRon Johnson views demonstrations about the George Floyd killing as terrorismRon Johnson views demonstrations about the George Floyd killing as terrorismRon Johnson views demonstrations about the George Floyd killing as terrorismRon Johnson views demonstrations about the George Floyd killing as terrorismRon Johnson views demonstrations about the George Floyd killing as terrorismRon Johnson views demonstrations about the George Floyd killing as terrorismRon Johnson views demonstrations about the George Floyd killing as terrorismRon Johnson views demonstrations about the George Floyd killing as terrorismRon Johnson views demonstrations about the George Floyd killing as terrorismRon Johnson views demonstrations about the George Floyd killing as terrorismRon Johnson views demonstrations about the George Floyd killing as terrorismRon Johnson views demonstrations about the George Floyd killing as terrorism"
-    sent16 should "have no beliefs" in {
-      val mentions = getMentions(sent16)
+    val sent21 = "The New York Times is skeptical of Trump’s claims that Ron Johnson views demonstrations about the George Floyd killing as terrorismRon Johnson views demonstrations about the George Floyd killing as terrorismRon Johnson views demonstrations about the George Floyd killing as terrorismRon Johnson views demonstrations about the George Floyd killing as terrorismRon Johnson views demonstrations about the George Floyd killing as terrorismRon Johnson views demonstrations about the George Floyd killing as terrorismRon Johnson views demonstrations about the George Floyd killing as terrorismRon Johnson views demonstrations about the George Floyd killing as terrorismRon Johnson views demonstrations about the George Floyd killing as terrorismRon Johnson views demonstrations about the George Floyd killing as terrorismRon Johnson views demonstrations about the George Floyd killing as terrorismRon Johnson views demonstrations about the George Floyd killing as terrorismRon Johnson views demonstrations about the George Floyd killing as terrorismRon Johnson views demonstrations about the George Floyd killing as terrorismRon Johnson views demonstrations about the George Floyd killing as terrorismRon Johnson views demonstrations about the George Floyd killing as terrorismRon Johnson views demonstrations about the George Floyd killing as terrorismRon Johnson views demonstrations about the George Floyd killing as terrorismRon Johnson views demonstrations about the George Floyd killing as terrorismRon Johnson views demonstrations about the George Floyd killing as terrorism"
+  sent21 should "have no beliefs" in {
+      val mentions = getMentions(sent21)
       mentions should have size (0)
     }
 
   //to check if sentences with less than half integer numbers are only let through
-  val sent17 = "20 45 Trump 20 45 believes 20 45 all  20 45 are losers"
-  sent17 should "have no beliefs" in {
-    val mentions = getMentions(sent17)
+  val sent22 = "20 45 Trump 20 45 believes 20 45 all  20 45 are losers"
+  sent22 should "have no beliefs" in {
+    val mentions = getMentions(sent22)
     mentions should have size (0)
   }
 
   //to check if sentences with less than half  numbers (float or integers) are only let through
-  val sent18 = "20.45 Trump 2.045 believes 20 45 20 45 20 45 20 45 all  20 45 are losers"
-  sent18 should "have no beliefs" in {
-    val mentions = getMentions(sent18)
+  val sent23 = "20.45 Trump 2.045 believes 20 45 20 45 20 45 20 45 all  20 45 are losers"
+  sent23 should "have no beliefs" in {
+    val mentions = getMentions(sent23)
     mentions should have size (0)
   }
 
