@@ -1,15 +1,10 @@
 package org.clulab.habitus
 
-import org.clulab.odin.{EventMention, Mention}
+
 import org.clulab.processors.{Document, Sentence}
 import org.clulab.processors.clu.CluProcessor
 import org.clulab.processors.clu.tokenizer.Tokenizer
 import org.clulab.sequences.LexiconNER
-import ujson.IndexedValue.False
-
-import scala.collection.mutable.ArrayBuffer
-import scala.util.Try
-import scala.util.control.Breaks.{break, breakable}
 
 class HabitusProcessor(lexiconNer: Option[LexiconNER]) extends CluProcessor(optionalNER = lexiconNer) {
   /** Our own tokenizer to clean up some nasty characters */
