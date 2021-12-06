@@ -1,4 +1,5 @@
 [![Build Status](https://github.com/clulab/habitus/workflows/Habitus%20CI/badge.svg)](https://github.com/clulab/habitus/actions)
+[![Docker Version](https://shields.io/docker/v/clulab/habitus?sort=semver&label=docker&logo=docker)](https://hub.docker.com/r/clulab/habitus/tags)
 
 # HEURISTICS
 

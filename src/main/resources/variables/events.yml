@@ -3,12 +3,11 @@
 # This is a token pattern. Try not to use them. But they are simpler for copulative verbs ("be" verbs)
 #
 - name: ${label}-cop-1
-  priority: ${rulepriority}
-  label: ${label}
+  priority: ${rulepriority} 
+  label: ${label} 
   type: token
   pattern: |
-    @variable:Variable [tag=/VBN/]? (?<trigger> [lemma=be]) @value:Value
-    
+    @variable:Variable [tag=/VBN/]? (?<trigger> [lemma=be]) (","? @value:Value)+ ","? ("and" @value:Value)?
 # #
 # [With] Variable Value
 # This is a token pattern.
@@ -18,9 +17,9 @@
   label: ${label}
   type: token
   pattern: |
-    (?<trigger> [lemma=with])? @variable:Variable (@value:Value)+
+    (?<trigger> [lemma=with])? @variable:Variable (("," | "and")* @value:Value)+
 
-#
+#                              
 # VARIABLE ranged|occurred on VALUE
 #
 - name: ${label}-cop-3
@@ -46,7 +45,7 @@
 #
 # Syntactic rule for crops 
 #
-- name: ${label}-cop-5
+- name: ${label}-cop-5                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
   priority: ${rulepriority}
   label: ${label}
   graph: "hybrid"
@@ -61,7 +60,7 @@
   label: ${label}
   graph: "hybrid"
   pattern: |
-    trigger = [lemma=include]
+    trigger = [lemma=/include|be/]
     variable:Variable = /nsubj/
     value:Value = /dobj/
 
@@ -77,11 +76,6 @@
     trigger = [lemma=/range|occur|be/ & tag=/^V|^J/]
     variable:Variable = /nsubj|dobj/
     value:Value = /nmod_from|nmod_between|nmod_like|Ax_from|Ax_between/
-
-
-
-
-
 
 
 
