@@ -33,18 +33,7 @@ class HabitusProcessor(lexiconNer: Option[LexiconNER]) extends CluProcessor(opti
     * malformed= either > 150 tokens or
     * more than 50% of tokens are numbers*/
   private def isBadSentence(sentence: Sentence): Boolean = {
-    val shortBeliefMentions = ""
-    var numbersCounter = 0
-    for (word <- sentence.words) {
-      breakable {
-        for (char <- word) {
-          if (char.isDigit) {
-            numbersCounter += 1
-            break
-          }
-        }
-      }
-    }
-    numbersCounter > (sentence.words.length/2) || (sentence.words.length > 150)
+    val alphaCounter = sentence.words.count(_.exists(_.isLetter))
+    alphaCounter < (sentence.words.length / 2) || (sentence.words.length > 150)
   }
 }
