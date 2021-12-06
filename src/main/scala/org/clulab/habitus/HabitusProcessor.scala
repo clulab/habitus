@@ -38,6 +38,6 @@ class HabitusProcessor(lexiconNer: Option[LexiconNER]) extends CluProcessor(opti
     * malformed= either > 150 tokens or
     * more than 50% of tokens are numbers */
   private def isBadSentence(sentence: Sentence): Boolean = {
-    if (sentence.words.length > 150) true else {getAlphaCount(sentence)< (sentence.words.length / 2)}
+    sentence.words.length > 150 || getAlphaCount(sentence) < sentence.words.length / 2
   }
 }
