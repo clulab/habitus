@@ -29,9 +29,10 @@ class HabitusProcessor(lexiconNer: Option[LexiconNER]) extends CluProcessor(opti
     cleanDoc
   }
 
-  /** Returns true if this is a malformed sentence */
+  /** Returns true if this is a malformed sentence
+    * malformed= either > 150 tokens or
+    * more than 50% of tokens are numbers*/
   private def isBadSentence(sentence: Sentence): Boolean = {
-    // keep only beliefs that have less than 150 tokens and <50% of tokens being numbers
     val shortBeliefMentions = ""
     var numbersCounter = 0
     for (word <- sentence.words) {
@@ -44,33 +45,6 @@ class HabitusProcessor(lexiconNer: Option[LexiconNER]) extends CluProcessor(opti
         }
       }
     }
-    numbersCounter > (sentence.words.length/2)
-  }
-
-
-  //keep only beliefs Sentences with <50% of tokens being numbers
-  private def halfOfTokensAreNumbers(m: Mention): Boolean = {
-    m.isInstanceOf[EventMention] &&
-      m.arguments.contains("belief") &&
-      m.arguments("belief").nonEmpty &&
-      checkNumberCount(m)
-  }
-
-  private def checkNumberCount(mention: Mention): Boolean = {
-    var numberCounter = 0
-    for (word <- mention.sentenceObj.words) {
-      if (Try(word.toInt).isSuccess || Try(word.toFloat).isSuccess || Try(word.toDouble).isSuccess || Try(word.toLong).isSuccess ) {
-        numberCounter = numberCounter + 1
-      }
-    }
-    numberCounter < mention.sentenceObj.words.length / 2
-  }
-
-  //keep only beliefs which have less than 150 tokens
-  private def containsLessThan150Tokens(m: Mention): Boolean = {
-    m.isInstanceOf[EventMention] &&
-      m.arguments.contains("belief") &&
-      m.arguments("belief").nonEmpty &&
-      (m.sentenceObj.words.length < 150)
+    numbersCounter > (sentence.words.length/2) || (sentence.words.length > 150)
   }
 }
