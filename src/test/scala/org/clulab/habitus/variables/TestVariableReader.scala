@@ -622,4 +622,23 @@ class TestVariableReader extends FlatSpec with Matchers {
       count += 1
     }
   }
+
+
+  // test cases from SAED bulletings Dec 2021
+
+  //
+  // Early sowing (before July 15) covers 1% of the total areas developed, ie 242 ha. -
+  // Sowing (15 July - 15 August) concentrates 20% of the sown areas, or 4,239 ha; -
+  // Late sowing (beyond August 15) accounts for 79% of the projects, ie 17,043 ha.
+  val sent21 = "Sowing (15 July - 15 August) concentrates 20% of the sown areas, or 4,239 ha;"
+  sent21 should "recognize range"  in {
+    val mentions = getMentions(sent21)
+    mentions.filter(_.label matches "Assignment") should have size (1)
+    for (m <- mentions.filter(_.label matches "Assignment")) {
+        m.arguments("variable").head.text should be ("sowing")
+        m.arguments("value").head.text should equal ("15 July - 15 August")
+        m.arguments("value").head.norms.get(0) should equal("XXXX-07-15 -- XXXX-08-15")
+    }
+  }
+
 }
