@@ -344,4 +344,235 @@ class TestBeliefReader extends Test {
     val m = mentions.head
     m.arguments("believer").head.text should be ("they")
   }
+
+  val sent21 = "I expect my investments to do well"
+  passingTest should s"contain one belief in '${sent21}'" in {
+    val mentions = getMentions(sent21)
+    mentions should have size(1)
+
+    val m = mentions.head
+    m.arguments("believer").head.text should be ("I")
+    m.arguments("belief").head.text should be ("my investments to do well")
+
+  }
+
+  val sent22 = "I look forward to my investments doing well"
+  passingTest should s"contain one belief in '${sent22}'" in {
+    val mentions = getMentions(sent22)
+    mentions should have size(1)
+
+    val m = mentions.head
+    m.arguments("believer").head.text should be ("I")
+    m.arguments("belief").head.text should be ("my investments doing well")
+
+  }
+
+  val sent23 = "We are all worried about global warming."
+  passingTest should s"contain one belief in '${sent23}'" in {
+    val mentions = getMentions(sent23)
+    mentions should have size(1)
+
+    val m = mentions.head
+    m.arguments("believer").head.text should be ("We")
+    m.arguments("belief").head.text should be ("global warming")
+
+  }
+
+  val sent24 = "The IPCC is pessimistic about countries meeting their Paris targets."
+  passingTest should s"contain one belief in '${sent24}'" in {
+    val mentions = getMentions(sent24)
+    mentions should have size(1)
+
+    val m = mentions.head
+    m.arguments("believer").head.text should be ("IPCC")
+    m.arguments("belief").head.text should be ("countries meeting their Paris targets")
+
+  }
+
+  val sent25 = "We fear another Trump presidency."
+  passingTest should s"contain one belief in '${sent25}'" in {
+    val mentions = getMentions(sent25)
+    mentions should have size(1)
+
+    val m = mentions.head
+    m.arguments("believer").head.text should be ("We")
+    m.arguments("belief").head.text should be ("another Trump presidency")
+
+  }
+
+  val sent26 = "Paul is hopeful that Breyer will step down."
+  passingTest should s"contain one belief in '${sent26}'" in {
+    val mentions = getMentions(sent26)
+    mentions should have size(1)
+
+    val m = mentions.head
+    m.arguments("believer").head.text should be ("Paul")
+    m.arguments("belief").head.text should be ("Breyer will step down")
+
+  }
+
+  val sent27 = "We are optimistic about the future of this research."
+  passingTest should s"contain one belief in '${sent27}'" in {
+    val mentions = getMentions(sent27)
+    mentions should have size(1)
+
+    val m = mentions.head
+    m.arguments("believer").head.text should be ("We")
+    m.arguments("belief").head.text should be ("future of this research")
+
+  }
+
+  val sent28 = "The Government of Senegal and other key stakeholders acknowledge that a major issue in the country is that despite the existence of an enabling policy framework"
+  passingTest should s"contain one belief in '${sent28}'" in {
+    val mentions = getMentions(sent28)
+    mentions should have size(1)
+
+    val m = mentions.head
+    m.arguments("believer").head.text should be ("Government of Senegal and other key stakeholders")
+    m.arguments("belief").head.text should be ("a major issue in the country is that despite the existence of an enabling policy framework")
+
+  }
+
+  val sent29 = "the Government of Senegal is giving highest priority to rice self-sufficiency"
+  passingTest should s"contain one belief in '${sent29}'" in {
+    val mentions = getMentions(sent29)
+    mentions should have size(1)
+
+    val m = mentions.head
+    m.arguments("believer").head.text should be ("Government of Senegal")
+    m.arguments("belief").head.text should be ("rice self-sufficiency")
+
+  }
+
+  val sent30 = "Although progress in the art and science of seasonal forecasting and other climate information services is being made, ANACIM acknowledges that the approximately 70% accuracy of its seasonal forecasts leave considerable room for improvement."
+  passingTest should s"contain one belief in '${sent30}'" in {
+    val mentions = getMentions(sent30)
+    mentions should have size(1)
+
+    val m = mentions.head
+    m.arguments("believer").head.text should be ("ANACIM")
+    m.arguments("belief").head.text should be ("approximately 70% accuracy of its seasonal forecasts leave considerable room for improvement")
+
+  }
+
+  val sent31 = "It is very positive that the Mission has already begun to identify and fill some initial critical gaps related to the context-specific climate change risks in Senegal in its Feed the Future portfolio"
+  passingTest should s"contain one belief in '${sent31}'" in {
+    val mentions = getMentions(sent31)
+    mentions should have size(1)
+
+    val m = mentions.head
+    m.arguments("belief").head.text should be ("Mission has already begun to identify and fill some initial critical gaps")
+
+  }
+
+  val sent32 = "Most interviewed farmers expressed the desire and ambition to free up time to participate in family and community events."
+  passingTest should s"contain one belief in '${sent32}'" in {
+    val mentions = getMentions(sent32)
+    mentions should have size(1)
+
+    val m = mentions.head
+    m.arguments("believer").head.text should be ("interviewed farmers")
+    m.arguments("belief").head.text should be ("desire and ambition to free up time to participate in family and community events")
+
+  }
+
+  val sent33 = "Farmers perceived that rice intensification was driven by political and financial incentives"
+  passingTest should s"contain one belief in '${sent33}'" in {
+    val mentions = getMentions(sent33)
+    mentions should have size(1)
+
+    val m = mentions.head
+    m.arguments("believer").head.text should be ("Farmers")
+    m.arguments("belief").head.text should be ("rice intensification was driven by political and financial incentives")
+
+  }
+
+  val sent34 = "The farmers stated that the low production levels of crops and post-harvest losses originated primarily from lack of well-functioning machinery, storage facilities (especially for vegetables), poor infrastructure and insufficient tillage and field preparation techniques."
+  passingTest should s"contain one belief in '${sent34}'" in {
+    val mentions = getMentions(sent34)
+    mentions should have size(1)
+
+    val m = mentions.head
+    m.arguments("believer").head.text should be ("farmers")
+    m.arguments("belief").head.text should be ("low production levels of crops and post-harvest losses originated primarily from lack of well-functioning machinery, storage facilities (especially for vegetables), poor infrastructure and insufficient tillage and field preparation techniques")
+
+  }
+
+  val sent35 = "Farmers also explained the ongoing shift of rice cultivation from WS to HDS due to biophysical and environmental constraints."
+  passingTest should s"contain one belief in '${sent35}'" in {
+    val mentions = getMentions(sent35)
+    mentions should have size(1)
+
+    val m = mentions.head
+    m.arguments("believer").head.text should be ("Farmers")
+    m.arguments("belief").head.text should be ("ongoing shift of rice cultivation from WS to HDS")
+
+  }
+
+  val sent36 = "Despite farmers' willingness to diversify crop production, growing new crops is risky and self-financed."
+  passingTest should s"contain one belief in '${sent36}'" in {
+    val mentions = getMentions(sent36)
+    mentions should have size(1)
+
+    val m = mentions.head
+    m.arguments("believer").head.text should be ("farmers")
+    m.arguments("belief").head.text should be ("diversify crop production")
+
+  }
+
+  val sent37 = "The Kissal Patim manager expressed surprise that the percentage of severely food insecure households in Round 1 (76 percent) was not in fact higher due to the high level of vulnerability in her zone."
+  passingTest should s"contain one belief in '${sent37}'" in {
+    val mentions = getMentions(sent37)
+    mentions should have size(1)
+
+    val m = mentions.head
+    m.arguments("believer").head.text should be ("Kissal Patim manager")
+    m.arguments("belief").head.text should be ("percentage of severely food insecure households in Round 1 (76 percent) was not in fact higher due to the high level of vulnerability in her zone")
+
+  }
+
+  val sent38 = "However, FEPROMAS detected a cultural norm of negative stigma attached with receiving food aid, which may explain the disconnect between the high proportion of members who were experiencing moderate food insecurity but who said they did not need any food aid."
+  passingTest should s"contain one belief in '${sent38}'" in {
+    val mentions = getMentions(sent38)
+    mentions should have size(1)
+
+    val m = mentions.head
+    m.arguments("believer").head.text should be ("FEPROMAS")
+    m.arguments("belief").head.text should be ("receiving food aid")
+
+  }
+
+  val sent39 = "most of their members who borrowed did not perceive that the original source of the credit was the banks."
+  passingTest should s"contain one belief in '${sent39}'" in {
+    val mentions = getMentions(sent39)
+    mentions should have size(1)
+
+    val m = mentions.head
+    m.arguments("believer").head.text should be ("most of their members")
+    m.arguments("belief").head.text should be ("original source of the credit was the banks")
+
+  }
+
+  val sent40 = "The networks recognized the importance of maintaining extension services to ensure that their farmer members applied best practices."
+  passingTest should s"contain one belief in '${sent40}'" in {
+    val mentions = getMentions(sent40)
+    mentions should have size(1)
+
+    val m = mentions.head
+    m.arguments("believer").head.text should be ("networks")
+    m.arguments("belief").head.text should be ("importance of maintaining extension services")
+
+  }
+
+  val sent41 = "The focus group results also demonstrated that, despite the pandemic, climate and short-term weather information was considered a priority value-added service for which network members demonstrated a willingness to pay, even during these difficult times."
+  passingTest should s"contain one belief in '${sent41}'" in {
+    val mentions = getMentions(sent41)
+    mentions should have size(1)
+
+    val m = mentions.head
+    m.arguments("believer").head.text should be ("network members")
+    m.arguments("belief").head.text should be ("pay")
+
+  }
+
 }
