@@ -14,6 +14,7 @@ import org.clulab.struct.Interval
 import java.io.File
 import java.nio.charset.StandardCharsets
 import scala.collection.JavaConverters.{asJavaIterableConverter, asScalaBufferConverter}
+import scala.util.Try
 
 class BeliefProcessor(val processor: Processor,
                       val entityFinder: CustomizableRuleBasedFinder,
@@ -30,7 +31,7 @@ class BeliefProcessor(val processor: Processor,
     }
 
     m match {
-      case _: TextBoundMention => m   // tbms have no args
+      case _: TextBoundMention => m // tbms have no args
       case rm: RelationMention => rm.copy(arguments = getExpandedArgs(m.arguments))
       case em: EventMention => em.copy(arguments = getExpandedArgs(m.arguments))
       case _ => ???
@@ -49,7 +50,7 @@ class BeliefProcessor(val processor: Processor,
     val eventMentions = extractor.extractFrom(doc, initialState).sortBy(m => (m.sentence, m.getClass.getSimpleName))
 
     // expand the arguments, don't allow to cross the trigger
-    val eventTriggers = eventMentions.collect{ case em: EventMention => em.trigger }
+    val eventTriggers = eventMentions.collect { case em: EventMention => em.trigger }
     val expandedMentions = eventMentions.map(expandArgs(_, State(eventTriggers)))
 
     // keep only beliefs that look like propositions
@@ -58,8 +59,10 @@ class BeliefProcessor(val processor: Processor,
     (doc, propBeliefMentions)
   }
 
+
   def hasArguments(mention: Mention, keys: String*): Boolean =
       keys.forall(mention.arguments.get(_).exists(_.nonEmpty))
+
 
   private def containsPropositionBelief(m: Mention): Boolean = {
     m.isInstanceOf[EventMention] &&
@@ -98,6 +101,7 @@ class BeliefProcessor(val processor: Processor,
 
     nounCount > 1 || (nounCount > 0 && verbCount > 0)
   }
+
 }
 
 object BeliefProcessor {
