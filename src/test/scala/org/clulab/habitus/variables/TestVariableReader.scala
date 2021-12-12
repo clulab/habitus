@@ -727,7 +727,7 @@ class TestVariableReader extends FlatSpec with Matchers {
     for (m <- mentions.filter(_.label matches "Assignment")) {
       m.arguments("variable").head.text should be("sowing")
       m.arguments("value").head.text should equal("before July 15")
-      m.arguments("value").head.norms.get(0) should equal("XXXX-01-01 -- XXXX-07-15")
+      m.arguments("value").head.norms.get(0) should equal("XXXX-XX-XX -- XXXX-07-15")
     }
   }
 
@@ -738,7 +738,7 @@ class TestVariableReader extends FlatSpec with Matchers {
     for (m <- mentions.filter(_.label matches "Assignment")) {
       m.arguments("variable").head.text should be("sowing")
       m.arguments("value").head.text should equal("beyond August 15")
-      m.arguments("value").head.norms.get(0) should equal("XXXX-08-15 -- XXXX-12-31")
+      m.arguments("value").head.norms.get(0) should equal("XXXX-08-15 -- XXXX-XX-XX")
     }
   }
 }
