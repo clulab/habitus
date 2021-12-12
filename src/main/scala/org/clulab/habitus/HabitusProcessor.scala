@@ -1,11 +1,10 @@
 package org.clulab.habitus
 
+
 import org.clulab.processors.{Document, Sentence}
 import org.clulab.processors.clu.CluProcessor
 import org.clulab.processors.clu.tokenizer.Tokenizer
 import org.clulab.sequences.LexiconNER
-
-import scala.collection.mutable.ArrayBuffer
 
 class HabitusProcessor(lexiconNer: Option[LexiconNER]) extends CluProcessor(optionalNER = lexiconNer) {
   /** Our own tokenizer to clean up some nasty characters */
@@ -13,7 +12,7 @@ class HabitusProcessor(lexiconNer: Option[LexiconNER]) extends CluProcessor(opti
   override lazy val tokenizer: Tokenizer = habitusTokenizer
 
   /** Our own mkDocument, which removes some malformed sentences */
-  override def mkDocument(text:String, keepText:Boolean = false): Document = {
+  override def mkDocument(text: String, keepText: Boolean = false): Document = {
     val doc = super.mkDocument(text, keepText)
     removeBadSentences(doc)
   }
@@ -26,9 +25,14 @@ class HabitusProcessor(lexiconNer: Option[LexiconNER]) extends CluProcessor(opti
     cleanDoc
   }
 
-  /** Returns true if this is a malformed sentence */
+  private def getAlphaCount(sentence: Sentence): Int = {
+    sentence.words.count(_.exists(_.isLetter))
+  }
+
+  /** Returns true if this is a malformed sentence
+    * malformed= either > 150 tokens or
+    * more than 50% of tokens are numbers */
   private def isBadSentence(sentence: Sentence): Boolean = {
-    // TODO: Mithun, please implement, see notes from meeting
-    false
+    sentence.words.length > 150 || getAlphaCount(sentence) < sentence.words.length / 2
   }
 }
