@@ -43,18 +43,6 @@
     @variable:Variable (?<trigger> [lemma=/on|in/]) @value:Value
 
 
-#
-# VARIABLE on|in VALUE
-# This is a token pattern. Try not to use them. But they are simpler for copulative verbs ("be" verbs)
-#
-- name: ${label}-parenthesis-1
-  priority: ${rulepriority}
-  label: ${label}
-  type: token
-  pattern: |
-    @variable:Variable (?<trigger> [lemma="("]) @value:Value
-
-
 
 #
 # Syntactic rule for crops 
@@ -77,6 +65,21 @@
     trigger = [lemma=/include|be/]
     variable:Variable = /nsubj/
     value:Value = /dobj/
+
+
+#
+# VARIABLE ( VALUE
+#- e.g., sowing (before Aug 15
+#
+#
+- name: ${label}-parenthesis-1
+  priority: ${rulepriority}
+  label: ${label}
+  type: token
+  pattern: |
+    @variable:Variable (?<trigger> [lemma="("]) @value:Value
+
+
 
 #
 # VARIABLE ranged|occurred from|between VALUE and VALUE
