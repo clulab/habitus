@@ -714,7 +714,7 @@ class TestVariableReader extends FlatSpec with Matchers {
     val mentions = getMentions(sent21_1)
     mentions.filter(_.label matches "Assignment") should have size (1)
     for (m <- mentions.filter(_.label matches "Assignment")) {
-      m.arguments("variable").head.text should be("sowing")
+      m.arguments("variable").head.text should be("Sowing")
       m.arguments("value").head.text should equal("15 July - 15 August")
       m.arguments("value").head.norms.get(0) should equal("XXXX-07-15 -- XXXX-08-15")
     }
@@ -733,7 +733,7 @@ class TestVariableReader extends FlatSpec with Matchers {
 
   val sent21_3 = "Late sowing (beyond August 15) accounts for 79% of the projects, ie 17,043 ha."
   sent21_3 should "recognize range" in {
-    val mentions = getMentions(sent21_3) 
+    val mentions = getMentions(sent21_3)
     mentions.filter(_.label matches "Assignment") should have size (1)
     for (m <- mentions.filter(_.label matches "Assignment")) {
       m.arguments("variable").head.text should be("sowing")
