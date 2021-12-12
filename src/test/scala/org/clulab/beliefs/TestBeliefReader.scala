@@ -1,9 +1,10 @@
 package org.clulab.beliefs
 
+import org.clulab.habitus.utils.Test
 import org.clulab.odin.Mention
 import org.scalatest.{FlatSpec, Matchers}
 
-class TestBeliefReader extends FlatSpec with Matchers {
+class TestBeliefReader extends Test {
   val bp = BeliefProcessor()
 
   def getMentions(text: String): Seq[Mention] = {
@@ -232,16 +233,14 @@ class TestBeliefReader extends FlatSpec with Matchers {
     m.arguments("belief").head.text should be ("Trump’s claims")
   }
 
-  // // TODO: 
-  // val sent13 = "There’s no reason to think that Mu is worse than Delta"
-  // sent13 should "contain one belief" in {
-  //   val mentions = getMentions(sent13)
-  //   mentions should have size(1)
-
-  //   val m = mentions.head
-  //   m.arguments("believer").head.text should be ("There")
-  //   m.arguments("belief").head.text should be ("Mu is worse than Delta")
-  // }
+  // fixme: expand on nmod_than
+   val sent13 = "There’s no reason to think that Mu is worse than Delta"
+   failingTest should s"contain one belief in '${sent13}'" in {
+     val mentions = getMentions(sent13)
+     mentions should have size(1)
+     val m = mentions.head
+     m.arguments("belief").head.text should be ("Mu is worse than Delta")
+   }
 
   val sent14_1 = "Violent storms are consistent with climate change"
   sent14_1 should "contain one belief" in {
@@ -283,22 +282,63 @@ class TestBeliefReader extends FlatSpec with Matchers {
     m.arguments("belief").head.text should be ("how burning coal helps the environment")
   }
 
-  // TODO: Returns many believes associations
-  // val sent16 = "Senator Harris mistrusts Trump’s medical recommendations but trusts Fauci’s"
-  // sent16 should "contain one belief" in {
-  //   val mentions = getMentions(sent16)
-  //   mentions should have size(1)
-
-  //   val m = mentions.head
-  //   m.arguments("believer").head.text should be ("Senator Harris")
-  //   m.arguments("belief").head.text should be ("Trump’s medical recommendations")
-  // Mistrust is particularly high in Senegal
-  //(83a) and Liberia (78P‹).}
-
-
-  val sent15 = "Only three in 10 respondents (31a) say they trust their government somewhat or a lot to ensure that any vaccine is safe before it is offered to citizens.."
+  val sent15 = "Trump is thought to be a narcissist"
   sent15 should "contain one belief" in {
     val mentions = getMentions(sent15)
+    mentions should have size(1)
+
+    val m = mentions.head
+    m.arguments("beliefTheme").head.text should be ("Trump")
+    m.arguments("belief").head.text should be ("narcissist")
+  }
+
+  val sent16 = "Paul is sure that bleach kills covid."
+  sent16 should "contain one belief" in {
+    val mentions = getMentions(sent16)
+    mentions should have size(1)
+
+        val m = mentions.head
+        m.arguments("believer").head.text should be ("Paul")
+        m.arguments("belief").head.text should be ("bleach kills covid")
+  }
+
+  // fixme: full mention span does not include `sterility`
+  val sent17 = "Paul is unsure about whether covid vaccination causes sterility."
+  sent17 should "contain one belief" in {
+    val mentions = getMentions(sent17)
+    mentions should have size(1)
+
+    val m = mentions.head
+    m.arguments("believer").head.text should be ("Paul")
+    m.arguments("belief").head.text should be ("covid vaccination causes sterility")
+  }
+
+  val sent18 = "Paul questions the popular theory that Trump is an idiot."
+  brokenSyntaxTest should s"contain one belief in '${sent18}'" in {
+    val mentions = getMentions(sent18)
+    mentions should have size(1)
+
+    val m = mentions.head
+    m.arguments("believer").head.text should be ("Paul")
+    m.arguments("belief").head.text should be ("Trump is an idiot")
+  }
+
+  // TODO: Returns many believes associations
+   val sent19 = "Senator Harris mistrusts Trump’s medical recommendations but trusts Fauci’s"
+   failingTest should s"contain one belief in '${sent19}'" in {
+     val mentions = getMentions(sent19)
+     mentions should have size(1)
+
+     val m = mentions.head
+     m.arguments("believer").head.text should be ("Senator Harris")
+     m.arguments("belief").head.text should be ("Trump’s medical recommendations")
+     // Mistrust is particularly high in Senegal
+     //(83a) and Liberia (78P‹).}
+   }
+
+  val sent20 = "Only three in 10 respondents (31a) say they trust their government somewhat or a lot to ensure that any vaccine is safe before it is offered to citizens.."
+  sent20 should "contain one belief" in {
+    val mentions = getMentions(sent20)
     mentions should have size(1)
 
     val m = mentions.head

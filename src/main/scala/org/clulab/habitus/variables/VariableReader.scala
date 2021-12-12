@@ -1,12 +1,8 @@
 package org.clulab.habitus.variables
 
-import org.clulab.habitus.utils.ContextDetails
+import org.clulab.habitus.utils.{ContextDetails, JsonPrinter, JsonlPrinter, Lazy, MultiPrinter, PrintVariables, TsvPrinter}
 import org.clulab.odin.EventMention
 import org.clulab.processors.Document
-import org.clulab.habitus.utils.{JsonPrinter, PrintVariables, TsvPrinter}
-
-import org.clulab.habitus.variables.VariableReader.checkIfEmpty
-
 import org.clulab.utils.FileUtils
 import org.clulab.utils.StringUtils
 import org.clulab.utils.ThreadUtils
@@ -29,35 +25,35 @@ object VariableReader {
 
   def run(inputDir: String, outputDir: String, threads: Int) {
     new File(outputDir).mkdir()
-    val tsvOutputFile = outputDir + "/mentions.tsv"
-    val jsonOutputFile = outputDir + "/mentions.json"
+
+    def mkOutputFile(extension: String): String = outputDir + "/mentions" + extension
 
     val vp = VariableProcessor()
     val files = FileUtils.findFiles(inputDir, ".txt")
     val parFiles = if (threads > 1) ThreadUtils.parallelize(files, threads) else files
 
-    new JsonPrinter(jsonOutputFile).autoClose { jsonPrinter =>
-      new TsvPrinter(tsvOutputFile).autoClose { tsvPrinter =>
-        for (file <- parFiles) {
-          try {
-            val text = FileUtils.getTextFromFile(file)
-            val filename = StringUtils.afterLast(file.getName, '/')
-            println(s"going to parse input file: $filename")
-            val (doc, mentions, allEventMentions, entityHistogram) = vp.parse(text)
+    new MultiPrinter(
+      Lazy{new TsvPrinter(mkOutputFile(".tsv"))},
+      Lazy(new JsonPrinter(mkOutputFile(".json"))),
+      Lazy(new JsonlPrinter(mkOutputFile(".jsonl")))
+    ).autoClose { multiPrinter =>
+      for (file <- parFiles) {
+        try {
+          val text = FileUtils.getTextFromFile(file)
+          val filename = StringUtils.afterLast(file.getName, '/')
+          println(s"going to parse input file: $filename")
+          val (doc, mentions, allEventMentions, entityHistogram) = vp.parse(text)
 
-            //if there was no context, i.e none of the CROP, LOC etc are present, pass an empty context
-            val context =
-                if (entityHistogram.isEmpty) mutable.Map.empty[Int, ContextDetails]
-                else compressContext(doc, allEventMentions, entityHistogram)
-            val printVars = PrintVariables("Assignment", "variable", "value")
-            synchronized {
-              tsvPrinter.outputMentions(mentions, doc, context, filename,printVars)
-              jsonPrinter.outputMentions(mentions, doc, context, filename,printVars)
-            }
-          }
-          catch {
-            case e: Exception => e.printStackTrace()
-          }
+          //if there was no context, i.e none of the CROP, LOC etc are present, pass an empty context
+          val context =
+              if (entityHistogram.isEmpty) mutable.Map.empty[Int, ContextDetails]
+              else compressContext(doc, allEventMentions, entityHistogram)
+          val printVars = PrintVariables("Assignment", "variable", "value")
+
+          multiPrinter.outputMentions(mentions, doc, context, filename, printVars)
+        }
+        catch {
+          case e: Exception => e.printStackTrace()
         }
       }
     }
