@@ -261,6 +261,124 @@ class TestVariableReader extends FlatSpec with Matchers {
     })
   }
 
+  val sent15_4 = "The first sowing dates started on July 1st in 2010 and on July 8th in 2011"
+  sent15_4 should "recognize range"  in {
+    val mentions = getMentions(sent15_4)
+    mentions.filter(_.label matches "Assignment") should have size (4)
+    var count = 0
+    for (m <- mentions.filter(_.label matches "Assignment")) {
+      if (count == 0) {
+        m.arguments("variable").head.text should be ("sowing dates")
+        m.arguments("value").head.text should equal ("July 1st")
+        m.arguments("value").head.norms.get(0) should equal("XXXX-07-01")
+      } else if (count == 1){
+        m.arguments("variable").head.text should be ("sowing dates")
+        m.arguments("value").head.text should equal ("2010")
+        m.arguments("value").head.norms.get(0) should equal("2010-XX-XX")
+      }
+      else if (count == 2) {
+        m.arguments("variable").head.text should be ("sowing dates")
+        m.arguments("value").head.text should equal ("July 8th")
+        m.arguments("value").head.norms.get(0) should equal("XXXX-07-08")
+      } else {
+        m.arguments("variable").head.text should be ("sowing dates")
+        m.arguments("value").head.text should equal ("2011")
+        m.arguments("value").head.norms.get(0) should equal("2011-XX-XX")
+      }
+      count += 1
+    }
+  }
+
+  val sent15_5 = "sowing ( July 15 )"
+  sent15_5 should "recognize sowing on [no verb attached] date in parentheses"  in {
+    val mentions = getMentions(sent15_5)
+    mentions.filter(_.label matches "Assignment") should have size (1)
+    mentions.filter(_.label matches "Assignment").foreach({ m =>
+      m.arguments("variable").head.text should be("sowing")
+      m.arguments("value").head.text should equal("July 15")
+      m.arguments("value").head.norms.get(0) should equal("XXXX-07-15")
+    })
+  }
+
+  val sent16_5 = "Sowing (July 15 - August 15)"
+  sent16_5 should "recognize sowing on [no verb attached] date range in parentheses"  in {
+    val mentions = getMentions(sent16_5)
+    mentions.filter(_.label matches "Assignment") should have size (1)
+    mentions.filter(_.label matches "Assignment").foreach({ m =>
+      m.arguments("variable").head.text should be("Sowing")
+      m.arguments("value").head.text should equal("July 15 - August 15")
+      m.arguments("value").head.norms.get(0) should equal("XXXX-07-15 -- XXXX-08-15")
+    })
+  }
+  
+
+  //TODO: these will pass after updating processors for date ranges
+  
+  // val sent15_6 = "Early sowing (before July 15)"
+  // sent15_6 should "recognize sowing on [no verb attached] date range"  in {
+  //   val mentions = getMentions(sent15_6)
+  //   mentions.filter(_.label matches "Assignment") should have size (1)
+  //   mentions.filter(_.label matches "Assignment").foreach({ m =>
+  //     m.arguments("variable").head.text should be("sowing")
+  //     m.arguments("value").head.text should equal("before July 15")
+  //     m.arguments("value").head.norms.get(0) should equal("XXXX-01-01 -- XXXX-07-15")
+  //   })
+  // } 
+  
+
+  // val sent15_7 = "Late sowings (beyond August 15) total 82% achievements either 19,762 ha."
+  // sent15_7 should "recognize sowing on [no verb attached] date range"  in {
+  //   val mentions = getMentions(sent15_7)
+  //   mentions.filter(_.label matches "Assignment") should have size (1)
+  //   mentions.filter(_.label matches "Assignment").foreach({ m =>
+  //     m.arguments("variable").head.text should be("sowings")
+  //     m.arguments("value").head.text should equal("beyond August 15")
+  //     m.arguments("value").head.norms.get(0) should equal("XXXX-08-15 -- XXXX-12-31")
+  //   })
+  // } 
+  
+  val sent16_7 = "sowing was done on 25th October"
+  sent16_7 should "recognize sowing on [be verb in PP]"  in {
+    val mentions = getMentions(sent16_7)
+    mentions.filter(_.label matches "Assignment") should have size (1)
+    mentions.filter(_.label matches "Assignment").foreach({ m =>
+      m.arguments("variable").head.text should be("sowing")
+      m.arguments("value").head.text should equal("25th October")
+      m.arguments("value").head.norms.get(0) should equal("XXXX-10-25")
+    })
+  }
+  val sent16_8 = "sowing date began on July 8th"
+  sent16_8 should "recognize sowing on [with verb]"  in {
+    val mentions = getMentions(sent16_8)
+    mentions.filter(_.label matches "Assignment") should have size (1)
+    mentions.filter(_.label matches "Assignment").foreach({ m =>
+      m.arguments("variable").head.text should be("sowing date")
+      m.arguments("value").head.text should equal("July 8th")
+      m.arguments("value").head.norms.get(0) should equal("XXXX-07-08")
+    })
+  }
+  //TODO: these will pass after updating processors for dates
+
+  // val sent16_9 = "planting around July 15th led to the highest aerial biomass and grain yield for both years"
+  // sent16_9 should "recognize sowing with the word [around]"  in {
+  //   val mentions = getMentions(sent16_9)
+  //   mentions.filter(_.label matches "Assignment") should have size (1)
+  //   mentions.filter(_.label matches "Assignment").foreach({ m =>
+  //     m.arguments("variable").head.text should be("sowing")
+  //     m.arguments("value").head.text should equal("July 15th")
+  //     m.arguments("value").head.norms.get(0) should equal("XXXX-07-15")
+  //   })
+
+  // val sent16_10 = "Sowing after July 15 th reduced aerial biomass and grain yield"
+  // sent16_10 should "recognize sowing with the word [after]"  in {
+  //   val mentions = getMentions(sent16_10)
+  //   mentions.filter(_.label matches "Assignment") should have size (1)
+  //   mentions.filter(_.label matches "Assignment").foreach({ m =>
+  //     m.arguments("variable").head.text should be("Sowing")
+  //     m.arguments("value").head.text should equal("after July 15")
+  //     m.arguments("value").head.norms.get(0) should equal("XXXX-07-15 -- XXXX-12-31")
+  //   })
+
 
   // Tests for CULTIVARS 
 
