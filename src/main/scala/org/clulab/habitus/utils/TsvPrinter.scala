@@ -69,8 +69,6 @@ class TsvPrinter(outputFilename: String) extends Printer {
                 }
 
               if (contexts.contains(i)) {
-
-
                 pw.println(s"$varText\t$valText\t$norm\t$sentText\t$filename\t${
                   contexts(i).mostFreqLoc0Sent
                     .head}\t${
@@ -101,7 +99,8 @@ class TsvPrinter(outputFilename: String) extends Printer {
             }
             else
             {
-              pw.println(s"$varText\t$valText\t$sentText")
+              //if there are no contexts found, print N/A
+              pw.println(s"$varText\t$valText\t'N/A'\t$sentText\t'N/A'\t'N/A'\t'N/A'\t'N/A'\t'N/A'\t'N/A'\t'N/A'\t'N/A'\t'N/A'\t'N/A'\t'N/A'\t'N/A'\t'N/A'\t'N/A'")
             }
           } catch {
             case e: NoSuchElementException =>
