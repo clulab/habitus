@@ -5,10 +5,6 @@ import org.clulab.processors.clu.CluProcessor
 import org.clulab.processors.fastnlp.FastNLPProcessor
 import org.scalatest.{FlatSpec, Matchers}
 
-//
-// TODO: write tests for all sentences, similar to this: https://github.com/clulab/reach/blob/master/main/src/test/scala/org/clulab/reach/TestActivationEvents.scala
-//
-
 class TestVariableReader extends FlatSpec with Matchers {
   val vp = VariableProcessor()
 
@@ -59,17 +55,16 @@ class TestVariableReader extends FlatSpec with Matchers {
     })
   }
 
-  // //TODO: ms of year do not captured by our numbers.
-  // val sent4 = "Sowing between October 4 and October 14 of 2020 was optimal."
-  // sent4 should "recognize sowing date with range Month followed by 4 of year"  in {
-  //   val mentions = getMentions(sent4)
-  //   mentions.filter(_.label matches "Assignment") should have size (1)
-  //   mentions.filter(_.label matches "Assignment").foreach({ m =>
-  //     m.arguments("variable").head.text should be("Sowing")
-  //     m.arguments("value").head.text should equal("between October 4 and October 14 of 2020")
-  //     m.arguments("value").head.norms.get(0) should equal("2020-10-04 -- 2020-10-14")
-  //   })
-  // }
+  val sent4 = "Sowing between October 4 and October 14 of 2020 was optimal."
+  sent4 should "recognize sowing date with range Month followed by 4 of year"  in {
+    val mentions = getMentions(sent4)
+    mentions.filter(_.label matches "Assignment") should have size (1)
+    mentions.filter(_.label matches "Assignment").foreach({ m =>
+      m.arguments("variable").head.text should be("Sowing")
+      m.arguments("value").head.text should equal("between October 4 and October 14 of 2020")
+      m.arguments("value").head.norms.get(0) should equal("2020-10-04 -- 2020-10-14")
+    })
+  }
 
   val sent5 = "Planting date was October 1."
   sent5 should "recognize sowing date with a date consisting a month followed by 4" in {
@@ -82,17 +77,16 @@ class TestVariableReader extends FlatSpec with Matchers {
     })
   }
 
-  // //TODO: ms of year do not captured by our numbers.
-  // val sent6 = "Planting date was October 1 of 2021."
-  // sent6 should "recognize sowing date with a date consisting a month followed by day then [of a year]"  in {
-  //   val mentions = getMentions(sent6)
-  //   mentions.filter(_.label matches "Assignment") should have size (1)
-  //   mentions.filter(_.label matches "Assignment").foreach({ m =>
-  //     m.arguments("variable").head.text should be("Planting date")
-  //     m.arguments("value").head.text should equal("October 1 of 2021")
-  //     m.arguments("value").head.norms.get(0) should equal("2021-10-01")
-  //   })
-  // }
+  val sent6 = "Planting date was October 1 of 2021."
+  sent6 should "recognize sowing date with a date consisting a month followed by day then [of a year]"  in {
+    val mentions = getMentions(sent6)
+    mentions.filter(_.label matches "Assignment") should have size (1)
+    mentions.filter(_.label matches "Assignment").foreach({ m =>
+      m.arguments("variable").head.text should be("Planting date")
+      m.arguments("value").head.text should equal("October 1 of 2021")
+      m.arguments("value").head.norms.get(0) should equal("2021-10-01")
+    })
+  }
 
   val sent7 = "Planting occurred on October 2."
   sent7 should "recognize sowing occurred on with a date consisting a month followed by 4" in {
@@ -171,28 +165,27 @@ class TestVariableReader extends FlatSpec with Matchers {
     })
   }
 
-  // //TODO: ms of year do not captured by our numbers.
-  // val sent12 = "Sowing between October 4 and October 14 of 2020 was optimal."
-  // sent12 should "recognize sowing range on a Month followed by day of year"  in {
-  //   val mentions = getMentions(sent12)
-  //   mentions.filter(_.label matches "Assignment") should have size (1)
-  //   mentions.filter(_.label matches "Assignment").foreach({ m =>
-  //     m.arguments("variable").head.text should be("Sowing")
-  //     m.arguments("value").head.text should equal("between October 4 and October 14 of 2020")
-  //     m.arguments("value").head.norms.get(0) should equal("2020-10-04 -- 2020-10-14")
-  //   })
-  // }
+  val sent12 = "Sowing between October 4 and October 14 of 2020 was optimal."
+  sent12 should "recognize sowing range on a Month followed by day of year"  in {
+    val mentions = getMentions(sent12)
+    mentions.filter(_.label matches "Assignment") should have size (1)
+    mentions.filter(_.label matches "Assignment").foreach({ m =>
+      m.arguments("variable").head.text should be("Sowing")
+      m.arguments("value").head.text should equal("between October 4 and October 14 of 2020")
+      m.arguments("value").head.norms.get(0) should equal("2020-10-04 -- 2020-10-14")
+    })
+  }
 
-  // val sent12_1 = "Sowing dates between October 4 and October 14, 2020 was optimal."
-  // sent12_1 should "recognize sowing range on a Month followed by day of year"  in {
-  //   val mentions = getMentions(sent12_1)
-  //   mentions.filter(_.label matches "Assignment") should have size (1)
-  //   mentions.filter(_.label matches "Assignment").foreach({ m =>
-  //     m.arguments("variable").head.text should be("Sowing dates")
-  //     m.arguments("value").head.text should equal("between October 4 and October 14, 2020")
-  //     m.arguments("value").head.norms.get(0) should equal("2020-10-04 -- 2020-10-14")
-  //   })
-  // }
+  val sent12_1 = "Sowing dates between October 4 and October 14, 2020 was optimal."
+  sent12_1 should "recognize sowing range on a Month followed by day of year"  in {
+    val mentions = getMentions(sent12_1)
+    mentions.filter(_.label matches "Assignment") should have size (1)
+    mentions.filter(_.label matches "Assignment").foreach({ m =>
+      m.arguments("variable").head.text should be("Sowing dates")
+      m.arguments("value").head.text should equal("between October 4 and October 14, 2020")
+      m.arguments("value").head.norms.get(0) should equal("2020-10-04 -- 2020-10-14")
+    })
+  }
 
   val sent13 = "Sowing in May, 2019."
   sent13 should "recognize sowing on [no verb attached] a Month followed by day, year" in {
@@ -300,43 +293,28 @@ class TestVariableReader extends FlatSpec with Matchers {
     })
   }
 
-  // TODO: The shell does not execute this test from the lqst updates
-  // val sent16_5 = "Sowing (July 15 - August 15)"
-  // sent16_5 should "recognize sowing on [no verb attached] date range in parentheses"  in {
-  //   val mentions = getMentions(sent16_5)
-  //   mentions.filter(_.label matches "Assignment") should have size (1)
-  //   mentions.filter(_.label matches "Assignment").foreach({ m =>
-  //     m.arguments("variable").head.text should be("Sowing")
-  //     m.arguments("value").head.text should equal("July 15 - August 15")
-  //     m.arguments("value").head.norms.get(0) should equal("XXXX-07-15 -- XXXX-08-15")
-  //   })
-  // }
-  
+  val sent15_6 = "Early sowing (before July 15)"
+  sent15_6 should "recognize sowing on [no verb attached] date range"  in {
+    val mentions = getMentions(sent15_6)
+    mentions.filter(_.label matches "Assignment") should have size (1)
+    mentions.filter(_.label matches "Assignment").foreach({ m =>
+      m.arguments("variable").head.text should be("Early sowing")
+      m.arguments("value").head.text should equal("before July 15")
+      m.arguments("value").head.norms.get(0) should equal("XXXX-XX-XX -- XXXX-07-15")
+    })
+  }
 
-  //TODO: these will pass after updating processors for date ranges
-  
-  // val sent15_6 = "Early sowing (before July 15)"
-  // sent15_6 should "recognize sowing on [no verb attached] date range"  in {
-  //   val mentions = getMentions(sent15_6)
-  //   mentions.filter(_.label matches "Assignment") should have size (1)
-  //   mentions.filter(_.label matches "Assignment").foreach({ m =>
-  //     m.arguments("variable").head.text should be("sowing")
-  //     m.arguments("value").head.text should equal("before July 15")
-  //     m.arguments("value").head.norms.get(0) should equal("XXXX-01-01 -- XXXX-07-15")
-  //   })
-  // } 
-  
 
-  // val sent15_7 = "Late sowings (beyond August 15) total 82% achievements either 19,762 ha."
-  // sent15_7 should "recognize sowing on [no verb attached] date range"  in {
-  //   val mentions = getMentions(sent15_7)
-  //   mentions.filter(_.label matches "Assignment") should have size (1)
-  //   mentions.filter(_.label matches "Assignment").foreach({ m =>
-  //     m.arguments("variable").head.text should be("sowings")
-  //     m.arguments("value").head.text should equal("beyond August 15")
-  //     m.arguments("value").head.norms.get(0) should equal("XXXX-08-15 -- XXXX-12-31")
-  //   })
-  // } 
+  val sent15_7 = "Late sowings (beyond August 15) total 82% achievements either 19,762 ha."
+  sent15_7 should "recognize sowing on [no verb attached] date range"  in {
+    val mentions = getMentions(sent15_7)
+    mentions.filter(_.label matches "Assignment") should have size (1)
+    mentions.filter(_.label matches "Assignment").foreach({ m =>
+      m.arguments("variable").head.text should be("Late sowings")
+      m.arguments("value").head.text should equal("beyond August 15")
+      m.arguments("value").head.norms.get(0) should equal("XXXX-08-15 -- XXXX-XX-XX")
+    })
+  }
   
   val sent16_7 = "sowing was done on 25th October"
   sent16_7 should "recognize sowing on [be verb in PP]"  in {
@@ -358,8 +336,8 @@ class TestVariableReader extends FlatSpec with Matchers {
       m.arguments("value").head.norms.get(0) should equal("XXXX-07-08")
     })
   }
-  //TODO: these will pass after updating processors for dates
 
+  // TODO: recognize around July 15th as DATE-RANGE
   // val sent16_9 = "planting around July 15th led to the highest aerial biomass and grain yield for both years"
   // sent16_9 should "recognize sowing with the word [around]"  in {
   //   val mentions = getMentions(sent16_9)
@@ -370,15 +348,16 @@ class TestVariableReader extends FlatSpec with Matchers {
   //     m.arguments("value").head.norms.get(0) should equal("XXXX-07-15")
   //   })
 
-  // val sent16_10 = "Sowing after July 15 th reduced aerial biomass and grain yield"
-  // sent16_10 should "recognize sowing with the word [after]"  in {
-  //   val mentions = getMentions(sent16_10)
-  //   mentions.filter(_.label matches "Assignment") should have size (1)
-  //   mentions.filter(_.label matches "Assignment").foreach({ m =>
-  //     m.arguments("variable").head.text should be("Sowing")
-  //     m.arguments("value").head.text should equal("after July 15")
-  //     m.arguments("value").head.norms.get(0) should equal("XXXX-07-15 -- XXXX-12-31")
-  //   })
+  val sent16_10 = "Sowing after July 15 th reduced aerial biomass and grain yield"
+  sent16_10 should "recognize sowing with the word [after]"  in {
+    val mentions = getMentions(sent16_10)
+    mentions.filter(_.label matches "Assignment") should have size (1)
+    mentions.filter(_.label matches "Assignment").foreach({ m =>
+      m.arguments("variable").head.text should be("Sowing")
+      m.arguments("value").head.text should equal("after July 15")
+      m.arguments("value").head.norms.get(0) should equal("XXXX-07-15 -- XXXX-XX-XX")
+    })
+  }
 
 
   // Tests for CULTIVARS 
@@ -844,7 +823,7 @@ class TestVariableReader extends FlatSpec with Matchers {
     val mentions = getMentions(sent21_2)
     mentions.filter(_.label matches "Assignment") should have size (1)
     for (m <- mentions.filter(_.label matches "Assignment")) {
-      m.arguments("variable").head.text should be("sowing")
+      m.arguments("variable").head.text should be("Early sowing")
       m.arguments("value").head.text should equal("before July 15")
       m.arguments("value").head.norms.get(0) should equal("XXXX-XX-XX -- XXXX-07-15")
     }
@@ -855,7 +834,7 @@ class TestVariableReader extends FlatSpec with Matchers {
     val mentions = getMentions(sent21_3)
     mentions.filter(_.label matches "Assignment") should have size (1)
     for (m <- mentions.filter(_.label matches "Assignment")) {
-      m.arguments("variable").head.text should be("sowing")
+      m.arguments("variable").head.text should be("Late sowing")
       m.arguments("value").head.text should equal("beyond August 15")
       m.arguments("value").head.norms.get(0) should equal("XXXX-08-15 -- XXXX-XX-XX")
     }
