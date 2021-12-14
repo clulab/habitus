@@ -10,4 +10,5 @@ rules:
   - import: beliefs/events.yml
     vars:
       label: Belief
+      factLabel: LikelyFact
       rulepriority: "2"

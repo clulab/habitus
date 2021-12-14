@@ -10,12 +10,15 @@ import scala.collection.mutable
 object BeliefReader {
 
   def main(args: Array[String]): Unit = {
-    val props = StringUtils.argsToMap(args)
-    val inputDir = props("in")
-    val outputDir = props("out")
-    val threads = props.get("threads").map(_.toInt).getOrElse(1)
-
-    run(inputDir, outputDir, threads)
+//    val props = StringUtils.argsToMap(args)
+//    val inputDir = props("in")
+//    val outputDir = props("out")
+//    val threads = props.get("threads").map(_.toInt).getOrElse(1)
+//    val inputDir = "/Users/alexeeva/Desktop/habitus_related/docs_i_downloaded_output"
+    val inputDir = "/Users/alexeeva/Downloads/Masha-Hubert fr-en-txt SAED BULLITINS/en-txt"
+//    val outputDir = "/Users/alexeeva/Desktop/habitus_related/docs_i_downloaded_extracted_beliefs"
+    val outputDir = "/Users/alexeeva/Downloads/Masha-Hubert fr-en-txt SAED BULLITINS/en-txt/output"
+    run(inputDir, outputDir, 1)
   }
 
   def run(inputDir: String, outputDir: String, threads: Int) {

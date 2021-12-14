@@ -2,11 +2,23 @@ package org.clulab.habitus.actions
 
 import org.clulab.odin.{Actions, Mention, State}
 
+import scala.collection.mutable.ArrayBuffer
+
 class HabitusActions extends Actions {
   //
   // local actions
   //
+  def uniqueArguments(mentions: Seq[Mention]): Seq[Mention] = {
+    val toReturn = new ArrayBuffer[Mention]()
+    for (m <- mentions) {
+      val allArgs = m.arguments.values.flatten.toSeq
+      if (allArgs.distinct.length == allArgs.length) {
+        toReturn.append(m)
+      }
+    }
+    toReturn
 
+  }
 
 
   //
@@ -37,6 +49,7 @@ class HabitusActions extends Actions {
       }
     }
 
-    filteredBeliefs ++ nonBeliefs
+    uniqueArguments(filteredBeliefs ++ nonBeliefs)
+//    uniqueArguments(mentions)
   }
 }

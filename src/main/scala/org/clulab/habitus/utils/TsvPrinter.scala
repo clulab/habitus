@@ -34,7 +34,7 @@ class TsvPrinter(outputFilename: String) extends Printer {
     for ((s, i) <- doc.sentences.zipWithIndex) {
 
       // to keep only mention labelled as Assignment (these labels are associated with .yml files, e.g. Variable, Value)
-      val sortedMentions = mentionsBySentence(i).filter(_.label matches printVars.mentionLabel)
+      val sortedMentions = mentionsBySentence(i).filter(_.labels contains printVars.mentionLabel)
 
 
       sortedMentions.foreach {
@@ -50,6 +50,7 @@ class TsvPrinter(outputFilename: String) extends Printer {
             val valText = value.text
             val sentText = s.getSentenceText
             val valNorms = value.norms
+            val foundBy = m.foundBy
 
             if (contexts.nonEmpty) {
               val norm =

@@ -7,4 +7,5 @@
 - Avoid
 
 - Event:
-  - Belief
+  - Belief:
+    - LikelyFact
