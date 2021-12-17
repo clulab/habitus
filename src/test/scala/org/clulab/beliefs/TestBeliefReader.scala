@@ -342,7 +342,7 @@ class TestBeliefReader extends Test {
     mentions should have size(1)
 
     val m = mentions.head
-    m.arguments("believer").head.text should be ("they")
+    m.arguments("believer").head.text should be("they")
   }
 
   val sent21 = "I expect my investments to do well"
@@ -575,5 +575,27 @@ class TestBeliefReader extends Test {
 //    m.arguments("belief").head.text should be ("pay")
 //
 //  }
+
+
+    //to check if sentences less than 150 tokens are only let through
+    val sent41 = "The New York Times is skeptical of Trump’s claims that Ron Johnson views demonstrations about the George Floyd killing as terrorismRon Johnson views demonstrations about the George Floyd killing as terrorismRon Johnson views demonstrations about the George Floyd killing as terrorismRon Johnson views demonstrations about the George Floyd killing as terrorismRon Johnson views demonstrations about the George Floyd killing as terrorismRon Johnson views demonstrations about the George Floyd killing as terrorismRon Johnson views demonstrations about the George Floyd killing as terrorismRon Johnson views demonstrations about the George Floyd killing as terrorismRon Johnson views demonstrations about the George Floyd killing as terrorismRon Johnson views demonstrations about the George Floyd killing as terrorismRon Johnson views demonstrations about the George Floyd killing as terrorismRon Johnson views demonstrations about the George Floyd killing as terrorismRon Johnson views demonstrations about the George Floyd killing as terrorismRon Johnson views demonstrations about the George Floyd killing as terrorismRon Johnson views demonstrations about the George Floyd killing as terrorismRon Johnson views demonstrations about the George Floyd killing as terrorismRon Johnson views demonstrations about the George Floyd killing as terrorismRon Johnson views demonstrations about the George Floyd killing as terrorismRon Johnson views demonstrations about the George Floyd killing as terrorismRon Johnson views demonstrations about the George Floyd killing as terrorism"
+  sent41 should "have no beliefs" in {
+      val mentions = getMentions(sent41)
+      mentions should have size (0)
+    }
+
+  //to check if sentences with less than half integer numbers are only let through
+  val sent42 = "20 45 Trump 20 45 believes 20 45 all  20 45 are losers"
+  sent42 should "have no beliefs" in {
+    val mentions = getMentions(sent42)
+    mentions should have size (0)
+  }
+
+  //to check if sentences with less than half  numbers (float or integers) are only let through
+  val sent43 = "20.45 Trump 2.045 believes 20 45 20 45 20 45 20 45 all  20 45 are losers"
+  sent43 should "have no beliefs" in {
+    val mentions = getMentions(sent43)
+    mentions should have size (0)
+  }
 
 }

@@ -14,10 +14,10 @@ object BeliefReader {
 //    val inputDir = props("in")
 //    val outputDir = props("out")
 //    val threads = props.get("threads").map(_.toInt).getOrElse(1)
-//    val inputDir = "/Users/alexeeva/Desktop/habitus_related/docs_i_downloaded_output"
-    val inputDir = "/Users/alexeeva/Downloads/Masha-Hubert fr-en-txt SAED BULLITINS/en-txt"
-//    val outputDir = "/Users/alexeeva/Desktop/habitus_related/docs_i_downloaded_extracted_beliefs"
-    val outputDir = "/Users/alexeeva/Downloads/Masha-Hubert fr-en-txt SAED BULLITINS/en-txt/output"
+    val inputDir = "/Users/alexeeva/Desktop/habitus_related/docs_i_downloaded_output"
+//    val inputDir = "/Users/alexeeva/Downloads/Masha-Hubert fr-en-txt SAED BULLITINS/en-txt"
+    val outputDir = "/Users/alexeeva/Desktop/habitus_related/docs_i_downloaded_extracted_beliefs_dec14"
+//    val outputDir = "/Users/alexeeva/Downloads/Masha-Hubert fr-en-txt SAED BULLITINS/en-txt/output"
     run(inputDir, outputDir, 1)
   }
 
@@ -37,7 +37,11 @@ object BeliefReader {
     ).autoClose { multiPrinter =>
       for (file <- parFiles) {
         try {
-          val text = FileUtils.getTextFromFile(file)
+
+          val text1 = FileUtils.getTextFromFile(file)
+          val text = text1.replace("\n", "" +
+            " ").replace("- ", "")
+          println(f"======\n${text1}\n++++++\n${text}\n-------")
           val filename = StringUtils.afterLast(file.getName, '/')
           println(s"going to parse input file: $filename")
           val (doc, mentions) = vp.parse(text)
