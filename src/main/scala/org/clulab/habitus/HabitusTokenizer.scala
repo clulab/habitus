@@ -25,7 +25,7 @@ class HabitusTokenizer(tokenizer: Tokenizer) extends Tokenizer(tokenizer.lexer, 
 object HabitusTokenizer {
   val dash = "-"
   val endash = "\u2013"
-  val regex = {
+  val regex: Regex = {
     val start = "^"
     val end = "$"
     val notDigit = "[^\\d]"

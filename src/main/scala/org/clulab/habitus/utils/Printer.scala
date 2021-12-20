@@ -19,7 +19,7 @@ trait Printer {
 }
 
 class MultiPrinter(lazies: Lazy[Printer]*) extends MultiCloser[Printer](lazies: _*) with Printer {
-  val printers = values
+  val printers: Array[Printer] = values
 
   def outputMentions(
     mentions: Seq[Mention],
