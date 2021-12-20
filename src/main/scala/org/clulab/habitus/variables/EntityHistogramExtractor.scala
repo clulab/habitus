@@ -1,7 +1,6 @@
 package org.clulab.habitus.variables
 
 import org.clulab.dynet.Utils
-import org.clulab.habitus.variables.VariableReader.MostFreqEntity
 import org.clulab.odin.EventMention
 import org.clulab.odin.ExtractorEngine
 import org.clulab.odin.Mention
@@ -10,9 +9,10 @@ import org.clulab.processors.Processor
 import org.clulab.processors.Sentence
 import org.clulab.processors.clu.CluProcessor
 import org.clulab.sequences.LexiconNER
+import org.clulab.utils.FileUtils
 
 import scala.collection.mutable
-import scala.collection.mutable.{ArrayBuffer, Map}
+import scala.collection.mutable.ArrayBuffer
 import scala.util.Try
 import scala.util.control.Breaks._
 
@@ -41,7 +41,7 @@ class EntityHistogramExtractor(val processor: Processor, val extractor: Extracto
   case class EntityNameNerTag(entityValue: String, nerTag: String)
 
   //for each entity, find which sentence they occur in an how many times
-  def mapEntityToFreq(entitySentFreq: scala.collection.mutable.Map[Entity, Int]):Seq[EntityDistFreq]  = {
+  def mapEntityToFreq(entitySentFreq: mutable.Map[Entity, Int]):Seq[EntityDistFreq]  = {
     val sentIdFreq= mutable.Map[EntityNameNerTag, ArrayBuffer[(Int,Int)]]()
     for (key <- entitySentFreq.keys) {
       val entityName = key.entityValue
@@ -51,7 +51,7 @@ class EntityHistogramExtractor(val processor: Processor, val extractor: Extracto
       val newkey = EntityNameNerTag(entityName, entity)
       //if the entity_sentenceid combination already exists in the dictionary, increase its frequency by 1, else add.
       sentIdFreq.get(newkey) match {
-        case Some(i) =>
+        case Some(_) =>
           val freqNew = sentIdFreq(newkey)
           val sentfreqa = (sentId, freq)
           freqNew.append(sentfreqa)
@@ -66,24 +66,14 @@ class EntityHistogramExtractor(val processor: Processor, val extractor: Extracto
   }
 
   //if key exists add+1 to its value, else add 1 as its value
-  def checkIncreaseFreq(mapper: scala.collection.mutable.Map[Entity, Int], key: Entity):Unit= {
-    mapper.get(key) match {
-      case Some(value) =>
-        mapper(key) = value+1
-      case None => mapper(key) = 1
-    }
+  def checkIncreaseFreq(map: mutable.Map[Entity, Int], key: Entity): Unit =
+      map(key) = map.getOrElse(key, 0) + 1
 
-  }
-
-
-  def convertMapToSeq(sentIdFreq: scala.collection.mutable.Map[EntityNameNerTag, ArrayBuffer[(Int,Int)]])=
-  {
-    var contexts = new ArrayBuffer[EntityDistFreq]()
-    for (key <- sentIdFreq.keys) {
-      contexts += new EntityDistFreq(key.entityValue, key.nerTag,sentIdFreq(key))
-    }
-    contexts.toSeq
-  }
+  def convertMapToSeq(sentIdFreq: mutable.Map[EntityNameNerTag, ArrayBuffer[(Int,Int)]]): Seq[EntityDistFreq] = sentIdFreq
+      .map { case (key, value) =>
+        EntityDistFreq(key.entityValue, key.nerTag, value)
+      }
+      .toSeq
 
   //details of each entity: name,ner tag, index of sentence it was found in
   case class Entity(entityValue: String, tag: String, sentIdx: Int)
@@ -91,7 +81,7 @@ class EntityHistogramExtractor(val processor: Processor, val extractor: Extracto
   // IF an LOC entity has multiple tokens. (e.g., United States of America.) merge them to form one entityName
   def checkForMultipleTokens(nerTag:String,entityCounter:Int,indicesToSkip:ArrayBuffer[Int],entityName:String,sent:Sentence,insideTag:String): String = {
     var newEntityName = entityName
-    var fullName = ArrayBuffer[String]()
+    val fullName = ArrayBuffer[String]()
     var tempEntity = nerTag
     var tempCounter = entityCounter
     breakable {
@@ -113,7 +103,7 @@ class EntityHistogramExtractor(val processor: Processor, val extractor: Extracto
   //For each entity find which sentence it occurs in and its frequency
   def getEntityFreqPerSent(doc: Document): Seq[EntityDistFreq] = {
     //for each sentence how many times does this entity occur
-    var entitySentFreq: scala.collection.mutable.Map[Entity, Int] = Map()
+    val entitySentFreq = mutable.Map.empty[Entity, Int]
     for ((s, i) <- doc.sentences.zipWithIndex) {
       var entityCounter = 0
       //some indices have to be skipped if the entity has multiple tokens e.g.,"United States of America"
@@ -177,12 +167,8 @@ object EntityHistogramExtractor {
     // create the processor
     Utils.initializeDyNet()
     val processor: Processor = new CluProcessor(optionalNER = Some(lexiconNer))
-
     // read rules from yml file in resources
-    val source = io.Source.fromURL(getClass.getResource("/variables/master.yml"))
-    val rules = source.mkString
-    source.close()
-
+    val rules = FileUtils.getTextFromResource("/variables/master.yml")
     // creates an extractor engine using the rules and the default actions
     val extractor = ExtractorEngine(rules)
 
@@ -191,4 +177,4 @@ object EntityHistogramExtractor {
 }
 // histogram of all Entities
 //e.g.,{Senegal, LOC, {[1, 1], [4, 2]}}- The Location Sengal occurs in sentence 1 once,in sentence 4, 2 times setc
-case class EntityDistFreq(var entityValue: String, var nerTag: String, val entityDistFrequencies:ArrayBuffer[(Int,Int)])
+case class EntityDistFreq(entityValue: String, nerTag: String, entityDistFrequencies:ArrayBuffer[(Int,Int)])

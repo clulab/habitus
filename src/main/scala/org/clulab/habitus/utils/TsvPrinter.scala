@@ -28,7 +28,7 @@ class TsvPrinter(outputFilename: String) extends Printer {
   }
 
   // extract needed information and write them to tsv in a desired format. Return nothing here!
-  protected def outputMentions(mentions: Seq[Mention], doc: Document, contexts: scala.collection.mutable.Map[Int, ContextDetails],
+  protected def outputMentions(mentions: Seq[Mention], doc: Document, contexts: mutable.Map[Int, ContextDetails],
                                filename: String, pw: PrintWriter,printVars:PrintVariables): Unit = {
     val mentionsBySentence = mentions groupBy (_.sentence) mapValues (_.sortBy(_.start)) withDefaultValue Nil
     for ((s, i) <- doc.sentences.zipWithIndex) {

@@ -5,7 +5,6 @@ import ai.lum.odinson.ExtractorEngine
 import ai.lum.odinson.serialization.JsonSerializer
 import ai.lum.common.ConfigFactory
 import ai.lum.common.ConfigUtils._
-import ai.lum.common.FileUtils._
 
 object Main extends App {
 

@@ -1,14 +1,10 @@
 package org.clulab.habitus.utils
 
-import scala.collection.mutable
-
 // Array.view(from, until) is no longer available in Scala 2.13+.
-class ArrayView[T](array: Array[T], from: Int, until: Int) extends IndexedSeq[T] with mutable.IndexedSeq[T] {
-  val length = until - from
+class ArrayView[T](array: Array[T], from: Int, until: Int) extends IndexedSeq[T] {
+  val length: Int = until - from
 
   override def apply(index: Int): T = array(from + index)
-
-  override def update(index: Int, elem: T): Unit = array(from + index) = elem
 }
 
 object ArrayView {
