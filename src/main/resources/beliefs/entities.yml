@@ -28,3 +28,13 @@ rules:
       [chunk='B-VP' & !mention=Avoid]? [chunk='I-VP' & !mention=Avoid]+
       |
       [chunk='B-VP' & !mention=Avoid]
+
+
+#  - name: proposition
+#    label: Proposition
+#    priority: 2
+#    type: dependency
+#    pattern: |
+#      trigger = [word = "eat"]
+#      subj:NounPhrase = nsubj
+#      obj:NounPhrase = dobj

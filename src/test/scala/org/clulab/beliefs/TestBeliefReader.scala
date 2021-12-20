@@ -561,7 +561,7 @@ class TestBeliefReader extends Test {
 
     val m = mentions.head
     m.arguments("believer").head.text should be ("networks")
-    m.arguments("belief").head.text should be (" to ensure that their farmer members applied best practices")
+    m.arguments("belief").head.text should be ("importance of maintaining extension services to ensure that their farmer members applied best practices")
 
   }
 

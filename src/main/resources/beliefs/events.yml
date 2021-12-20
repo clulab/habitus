@@ -7,7 +7,7 @@
   label: ${label}
   graph: "hybrid"
   pattern: |
-    trigger = [lemma=/believe|think|accept|consider|trust|mistrust|conclude|doubt|reject|suppose|suggest|submit|theorize|fear|perceive/ & tag=/^V/]
+    trigger = [lemma=/believe|think|accept|consider|trust|mistrust|conclude|doubt|suppose|suggest|theorize|fear|perceive/ & tag=/^V/] # exclude: reject|submit
     believer:Entity = /nsubj|A0/ # note: optional to accommodate examples with no explicit believer
     belief:Entity = /ccomp|A1|dobj/
 
@@ -43,6 +43,7 @@
     believer:Entity = /nsubjpass|A1/
     belief:Entity = /ccomp|A0|dobj|nmod_of|nmod_by|nmod_with|nmod_about/
 
+# too generic (no specific triggers), disable for now
 #- name: ${label}-believe-3
 #  priority: ${rulepriority}
 #  label: ${label}
@@ -112,7 +113,7 @@
   pattern: |
     trigger = [lemma=/recognize/] (?= [word = "the"] [word="importance"])
     believer:Entity = nsubj
-    belief:Entity = dobj acl
+    belief:Entity = dobj
 
 #- name: ${label}-believe9
 #  priority: ${rulepriority}
@@ -128,7 +129,7 @@
   priority: ${rulepriority}
   label: ${factLabel}
   graph: "hybrid"
-  example: "The Government of Senegal and other key stakeholders acknowledge that a major issue in the country is that despite the existence of an enabling policy framework."
+  example: "The Government of Senegal and other key stakeholders acknowledge that a major issue in the country is that there is a lack of effective concerted planning of the climate change efforts."
   pattern: |
     trigger = [lemma=/acknowledge|state/]
     believer:Entity = /nsubj/
