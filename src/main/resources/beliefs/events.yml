@@ -9,7 +9,7 @@
   pattern: |
     trigger = [lemma=/believe|think|accept|consider|trust|mistrust|conclude|doubt|suppose|suggest|theorize|fear|perceive/ & tag=/^V/] # exclude: reject|submit
     believer:Entity = /nsubj|A0/ # note: optional to accommodate examples with no explicit believer
-    belief:Entity = /ccomp|A1|dobj/
+    belief:Entity = /ccomp|A1|dobj|xcomp/
 
 #
 # We will look at how to merge these grammars to avoid repetition
@@ -39,7 +39,7 @@
   label: ${label}
   graph: "hybrid"
   pattern: |
-    trigger = [lemma=/explain|predict|mistrust/ & tag=/^VBN|^J/]
+    trigger = [lemma=/explain|predict|mistrust|worry/ & tag=/VBN|^J/]
     believer:Entity = /nsubjpass|A1/
     belief:Entity = /ccomp|A0|dobj|nmod_of|nmod_by|nmod_with|nmod_about/
 
@@ -93,7 +93,7 @@
   pattern: |
     trigger = [lemma=/expect/]
     believer:Entity = /nsubj/
-    belief:Entity = nsubj /xsubj$/ A3
+    belief:Entity = xcomp | nsubj /xsubj$/ A3
 
 - name: ${label}-believe8
   priority: ${rulepriority}
@@ -114,6 +114,24 @@
     trigger = [lemma=/recognize/] (?= [word = "the"] [word="importance"])
     believer:Entity = nsubj
     belief:Entity = dobj
+
+- name: ${label}-believe10
+  priority: ${rulepriority}
+  label: ${label}
+  graph: "hybrid"
+  example: "However, FEPROMAS detected a cultural norm of negative stigma attached with receiving food aid."
+  pattern: |
+    trigger = [lemma=/stigma/]
+    belief:Entity = A1 | acl advcl
+
+- name: ${label}-believe-11
+  priority: ${rulepriority}
+  label: ${label}
+  graph: "hybrid"
+  pattern: |
+    trigger = [lemma=/hard|easy/] [word = "to"] [word="see"]
+    believer:Entity = /nsubj|expl/
+    belief:Entity = /ccomp|A1|dobj|xcomp/
 
 #- name: ${label}-believe9
 #  priority: ${rulepriority}

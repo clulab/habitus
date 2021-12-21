@@ -9,7 +9,7 @@ class TestBeliefReader extends Test {
 
   def getMentions(text: String): Seq[Mention] = {
     val (_, mentions) = bp.parse(text)
-    mentions.filter(_.label matches "Belief")
+    mentions.filter(_.labels contains "Belief")
   }
 
   val sent1 = "farmers believe that loans are useful."
@@ -538,7 +538,6 @@ class TestBeliefReader extends Test {
     mentions should have size(1)
 
     val m = mentions.head
-    m.arguments("believer").head.text should be ("FEPROMAS")
     m.arguments("belief").head.text should be ("receiving food aid")
 
   }
@@ -549,7 +548,7 @@ class TestBeliefReader extends Test {
     mentions should have size(1)
 
     val m = mentions.head
-    m.arguments("believer").head.text should be ("most of their members who borrowed")
+    m.arguments("believer").head.text should be ("most of their members")
     m.arguments("belief").head.text should be ("original source of the credit was the banks")
 
   }

@@ -35,6 +35,6 @@ rules:
 #    priority: 2
 #    type: dependency
 #    pattern: |
-#      trigger = [word = "eat"]
-#      subj:NounPhrase = nsubj
-#      obj:NounPhrase = dobj
+#      trigger = [word = "do"]
+#      subj:NounPhrase = A1
+##      obj:NounPhrase = dobj
