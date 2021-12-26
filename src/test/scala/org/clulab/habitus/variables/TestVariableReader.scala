@@ -911,4 +911,15 @@ class TestVariableReader extends FlatSpec with Matchers {
     }
   }
 
+  val sent21_10 = "In fact, early sowing (month of January) occupies a small proportion of cultivated areas."
+  sent21_10 should "recognize month of January" in {
+    val mentions = getMentions(sent21_10)
+    mentions.filter(_.label matches "Assignment") should have size (1)
+    for (m <- mentions.filter(_.label matches "Assignment")) {
+      m.arguments("variable").head.text should be("sowing")
+      m.arguments("value").head.text should equal("month of January")
+      m.arguments("value").head.norms.get(0) should equal("XXXX-01-XX")
+    }
+  }
+
 }
