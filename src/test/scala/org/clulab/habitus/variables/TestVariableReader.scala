@@ -13,6 +13,8 @@ class TestVariableReader extends FlatSpec with Matchers {
     mentions
   }
 
+  behavior of "VariableReader"
+
   // the Clu parser breaks on this one, but the SRL works fine!
   val sent1 = "Farmers’ sowing dates ranged from 14 to 31 July for the WS and from 3 to 11 March for the DS."
   sent1 should "recognize range" in {
@@ -897,7 +899,7 @@ class TestVariableReader extends FlatSpec with Matchers {
   }
 
   val sent21_9 = "In fact, early sowing (month of January) occupies a small proportion of cultivated areas."
-  sent21_10 should "recognize month of January" in {
+  sent21_9 should "recognize month of January" in {
     val mentions = getMentions(sent21_10)
     mentions.filter(_.label matches "Assignment") should have size (1)
     for (m <- mentions.filter(_.label matches "Assignment")) {
