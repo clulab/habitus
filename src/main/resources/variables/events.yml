@@ -74,7 +74,7 @@
   label: ${label}
   type: token
   pattern: |
-    @variable:Variable []{, 4} (?<trigger> [lemma="("]) @value:Value (("," | "and")* @value:Value)*
+    @variable:Variable [! (mention = "Value")]{, 4} (?<trigger> [lemma="("]) @value:Value (("," | "and")* @value:Value)*
 
 #
 # VALUE ( VARIABLE )
