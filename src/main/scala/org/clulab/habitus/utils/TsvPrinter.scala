@@ -99,8 +99,9 @@ class TsvPrinter(outputFilename: String) extends Printer {
             }
             else
             {
+              val norm=valNorms.get.head
               //if there are no contexts found, print N/A
-              pw.println(s"$varText\t$valText\t'N/A'\t$sentText\t$filename\t'N/A'\t'N/A'\t'N/A'\t'N/A'\t'N/A'\t'N/A'\t'N/A'\t'N/A'\t'N/A'\t'N/A'\t'N/A'\t'N/A'")
+              pw.println(s"$varText\t$valText\t$norm\t'N/A'\t$sentText\t$filename\t'N/A'\t'N/A'\t'N/A'\t'N/A'\t'N/A'\t'N/A'\t'N/A'\t'N/A'\t'N/A'\t'N/A'\t'N/A'\t'N/A'")
             }
           } catch {
             case e: NoSuchElementException =>

@@ -60,6 +60,7 @@ class JsonlPrinter(outputFilename: String) extends Printer {
           // These keys should match the ones used above.
           ("variableText" -> variableText) ~
             ("valueText" -> valueText) ~
+            ("valueNorm" -> valueNorm) ~
             ("sentenceText" -> sentenceText) ~
             ("inputFilename" -> inputFilename) ~
             ("mostFreqLoc0Sent" -> "N/A") ~

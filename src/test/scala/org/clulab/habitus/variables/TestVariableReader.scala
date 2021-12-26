@@ -862,4 +862,16 @@ class TestVariableReader extends FlatSpec with Matchers {
       count += 1
     }
   }
+
+  //todo: remove this sent22_7 test cASE. this is already included above.
+  val sent22_7 = "9 % of the areas currently cultivated are sown before February 15 , 2020 , i.e. 3,146.92 ha "
+  sent22_7 should "recognize before feb" in {
+    val mentions = getMentions(sent22_7)
+    mentions.filter(_.label matches "Assignment") should have size (1)
+    for (m <- mentions.filter(_.label matches "Assignment")) {
+      m.arguments("variable").head.text should be("sown")
+      m.arguments("value").head.text should equal("before February 15 , 2020")
+      m.arguments("value").head.norms.get(0) should equal("XXXX-XX-XX -- 2020-02-15")
+    }
+  }
 }
