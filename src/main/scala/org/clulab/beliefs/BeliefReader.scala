@@ -18,7 +18,7 @@ object BeliefReader {
     run(inputDir, outputDir, threads)
   }
 
-  def run(inputDir: String, outputDir: String, threads: Int) {
+  def run(inputDir: String, outputDir: String, threads: Int): Unit = {
     new File(outputDir).mkdir()
 
     def mkOutputFile(extension: String): String = outputDir + "/mentions" + extension
