@@ -44,6 +44,7 @@ class HabitusActions extends Actions {
     val filteredBeliefs = beliefs.filterNot { outerBelief =>
       beliefs.exists { innerBelief =>
         innerBelief != outerBelief &&
+          innerBelief.tokenInterval != outerBelief.tokenInterval && // to avoid filtering of same span mentions
           innerBelief.sentence == outerBelief.sentence &&
           innerBelief.tokenInterval.contains(outerBelief.tokenInterval)
       }

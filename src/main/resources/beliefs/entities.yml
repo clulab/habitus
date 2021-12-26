@@ -29,12 +29,17 @@ rules:
       |
       [chunk='B-VP' & !mention=Avoid]
 
+  - name: agent-rule
+    label: Agent
+    priority: 1
+    type: token
+    pattern: |
+      [entity='B-ACTOR' & !mention=Avoid] [entity='I-ACTOR' & !mention=Avoid]?
 
-#  - name: proposition
-#    label: Proposition
-#    priority: 2
-#    type: dependency
-#    pattern: |
-#      trigger = [word = "do"]
-#      subj:NounPhrase = A1
-##      obj:NounPhrase = dobj
+  - name: generic-agent-rule
+    label: Agent
+    priority: 1
+    type: token
+    pattern: |
+      [word=/(?i)^(I|he|she|they|we)$/]
+
