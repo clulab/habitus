@@ -882,17 +882,18 @@ class TestVariableReader extends FlatSpec with Matchers {
   sent21_7 should "recognize 3 ranges in the same sentences" in {
     val mentions = getMentions(sent21_7)
     mentions.filter(_.label matches "Assignment") should have size (2)
+    var count = 0
     for (m <- mentions.filter(_.label matches "Assignment")) {
-      var count = 0
-      if(count == 0) {
+      if(count == 1) {
         m.arguments("variable").head.text should be("late sowing")
         m.arguments("value").head.text should equal("beyond September 15, 2020")
         m.arguments("value").head.norms.get(0) should equal("2020-09-15 -- XXXX-XX-XX")
-      } else if(count == 1) {
+      } else if(count == 0) {
         m.arguments("variable").head.text should be("sown")
         m.arguments("value").head.text should equal("between July 15 and August 15")
         m.arguments("value").head.norms.get(0) should equal("XXXX-07-15 -- XXXX-08-15")
       }
+      count += 1
     }
   }
 
