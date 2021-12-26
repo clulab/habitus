@@ -804,9 +804,9 @@ class TestVariableReader extends FlatSpec with Matchers {
     }
   }
 
-
-
+  //
   // test cases for sentences found in SAED bulletins Dec 2021
+  //
   val sent21_1 = "Sowing (15 July - 15 August) concentrates 20% of the sown areas, or 4,239 ha;"
   sent21_1 should "recognize range" in {
     val mentions = getMentions(sent21_1)
@@ -873,7 +873,7 @@ class TestVariableReader extends FlatSpec with Matchers {
     }
   }
 
-//todoMithun: this testcase needs more work. Ideally i was expecting the reader to extract 3 ranges, but it gave 0. can/will modify test cases once it starts giving some results.
+  //todoMithun: this testcase needs more work. Ideally i was expecting the reader to extract 3 ranges, but it gave 0. can/will modify test cases once it starts giving some results.
   val sent21_7 = "Overall, it is noted that 65% of the areas are developed beyond September 15, 2020 (late sowing), the areas sown during the recommended period (between July 15 and August 15) cover 34% of the plantings and early sowing (before mid-July) represents 1% of the total development."
   sent21_7 should "recognize 3 ranges in the same sentences" in {
     val mentions = getMentions(sent21_7)
@@ -884,8 +884,6 @@ class TestVariableReader extends FlatSpec with Matchers {
       m.arguments("value").head.norms.get(0) should equal("2020-09-15 -- XXXX-XX-XX")
     }
   }
-
-
 
   val sent21_8 = "2% of the areas currently cultivated are sown before February 15, 2020, i.e. 783 ha ;"
   sent21_8 should "recognize range before February 15, 2020" in {
@@ -898,20 +896,7 @@ class TestVariableReader extends FlatSpec with Matchers {
     }
   }
 
-
-  //todoMithun: this testcase needs more work. Ideally i was expecting the reader to extract 3 ranges, but it gave 0. can/will modify test cases once it starts giving some results.
-  val sent21_9 = "To date , the distribution according to the cropping calendar , of the sowing carried out at the level of the Dagana delegation is as follows :  -  -  -  9 % of the areas currently cultivated are sown before February 15 , 2020 , i.e. 3,146.92 ha ;  Between the date of February 15 to March 15 , 2020 , are sown 66 % areas developed , i.e. 21,900.73 ha ;  Areas sown beyond March 15 , 2020 cover 25 % of the entire development , i.e. 8,278.18 ha ."
-  sent21_9 should "recognize 3 ranges" in {
-    val mentions = getMentions(sent21_9)
-    mentions.filter(_.label matches "Assignment") should have size (3)
-    for (m <- mentions.filter(_.label matches "Assignment")) {
-      m.arguments("variable").head.text should be("sown")
-      m.arguments("value").head.text should equal("before February 15 , 2020")
-      m.arguments("value").head.norms.get(0) should equal("XXXX-XX-XX -- 2020-02-15")
-    }
-  }
-
-  val sent21_10 = "In fact, early sowing (month of January) occupies a small proportion of cultivated areas."
+  val sent21_9 = "In fact, early sowing (month of January) occupies a small proportion of cultivated areas."
   sent21_10 should "recognize month of January" in {
     val mentions = getMentions(sent21_10)
     mentions.filter(_.label matches "Assignment") should have size (1)
@@ -922,4 +907,26 @@ class TestVariableReader extends FlatSpec with Matchers {
     }
   }
 
+  val sent21_10 = "To date , the distribution according to the cropping calendar , of the sowing carried out at the level of the Dagana delegation is as follows : - - - 9 % of the areas currently cultivated are sown before February 15 , 2020 , i.e. 3,146.92 ha ; Between the date of February 15 to March 15 , 2020 , are sown 66 % areas developed , i.e. 21,900.73 ha ; Areas sown beyond March 15 , 2020 cover 25 % of the entire development , i.e. 8,278.18 ha"
+  sent21_10 should "recognize three sowing dates" in {
+    val mentions = getMentions(sent21_10)
+    mentions.filter(_.label matches "Assignment") should have size (3)
+    var count = 0
+    for (m <- mentions.filter(_.label matches "Assignment")) {
+      if(count == 2) {
+        m.arguments("variable").head.text should be("sown")
+        m.arguments("value").head.text should equal("before February 15 , 2020")
+        m.arguments("value").head.norms.get(0) should equal("XXXX-XX-XX -- 2020-02-15")
+      } else if(count == 0) {
+        m.arguments("variable").head.text should be("sown")
+        m.arguments("value").head.text should equal("February 15 to March 15 , 2020")
+        m.arguments("value").head.norms.get(0) should equal("2020-02-15 -- 2020-03-15")
+      } else if(count == 1) {
+        m.arguments("variable").head.text should be("sown")
+        m.arguments("value").head.text should equal("beyond March 15 , 2020")
+        m.arguments("value").head.norms.get(0) should equal("2020-03-15 -- XXXX-XX-XX")
+      }
+      count += 1
+    }
+  }
 }
