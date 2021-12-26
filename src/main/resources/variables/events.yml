@@ -76,6 +76,17 @@
   pattern: |
     @variable:Variable (?<trigger> [lemma="("]) @value:Value (("," | "and")* @value:Value)*
 
+#
+# VALUE ( VARIABLE )
+#   beyond September 15, 2020 (late sowing)
+#
+- name: ${label}-parenthesis-2
+  priority: ${rulepriority}
+  label: ${label}
+  type: token
+  pattern: |
+    @value:Value (?<trigger> [lemma="("]) @variable:Variable [lemma=")"]
+
 
 #
 # VARIABLE ranged|occurred from|between VALUE and VALUE
