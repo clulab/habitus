@@ -898,4 +898,17 @@ class TestVariableReader extends FlatSpec with Matchers {
     }
   }
 
+
+  //todoMithun: this testcase needs more work. Ideally i was expecting the reader to extract 3 ranges, but it gave 0. can/will modify test cases once it starts giving some results.
+  val sent21_9 = "To date , the distribution according to the cropping calendar , of the sowing carried out at the level of the Dagana delegation is as follows :  -  -  -  9 % of the areas currently cultivated are sown before February 15 , 2020 , i.e. 3,146.92 ha ;  Between the date of February 15 to March 15 , 2020 , are sown 66 % areas developed , i.e. 21,900.73 ha ;  Areas sown beyond March 15 , 2020 cover 25 % of the entire development , i.e. 8,278.18 ha ."
+  sent21_9 should "recognize 3 ranges" in {
+    val mentions = getMentions(sent21_9)
+    mentions.filter(_.label matches "Assignment") should have size (3)
+    for (m <- mentions.filter(_.label matches "Assignment")) {
+      m.arguments("variable").head.text should be("sown")
+      m.arguments("value").head.text should equal("before February 15 , 2020")
+      m.arguments("value").head.norms.get(0) should equal("XXXX-XX-XX -- 2020-02-15")
+    }
+  }
+
 }
