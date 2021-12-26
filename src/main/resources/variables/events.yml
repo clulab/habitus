@@ -104,6 +104,16 @@
     @variable:Variable (?<trigger> [lemma=be]) [tag=/VBN|IN/] ("on"? @value:Value)+ 
 
 
+#
+# VALUE , be VARIABLE
+#
+- name: ${label}-cop-9
+  priority: ${rulepriority} 
+  label: ${label} 
+  Example: "Between the date of February 15 to March 15 , 2020 , are sown 66 % areas developed"
+  type: token
+  pattern: |
+    @value:Value ","? (?<trigger> [lemma=be]) @variable:Variable
 
 
 
