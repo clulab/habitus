@@ -13,7 +13,7 @@ pomIncludeRepository := { (repo: MavenRepository) =>
 resolvers += "Artifactory" at "http://artifactory.cs.arizona.edu:8081/artifactory/sbt-release"
 
 libraryDependencies ++= {
-  val procVer = "8.4.8-SNAPSHOT"
+  val procVer = "8.4.7"
 
   Seq(
     "org.scalatest" %% "scalatest" % "3.0.5" % "test",
