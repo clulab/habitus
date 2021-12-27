@@ -70,7 +70,7 @@ class TsvPrinter(outputFilename: String) extends Printer {
 
               if (contexts.contains(i)) {
                 pw.println(s"$varText\t$valText\t$norm\t$sentText\t$filename\t${
-                  contexts(i).mostFreqLoc0Sent                   
+                  contexts(i).mostFreqLoc0Sent
                 }\t${
                   contexts(i).mostFreqLoc1Sent
                 }\t${
@@ -100,7 +100,14 @@ class TsvPrinter(outputFilename: String) extends Printer {
             {
               val norm=valNorms.get.head
               //if there are no contexts found, print N/A
-              pw.println(s"$varText\t$valText\t$norm\t'N/A'\t$sentText\t$filename\t'N/A'\t'N/A'\t'N/A'\t'N/A'\t'N/A'\t'N/A'\t'N/A'\t'N/A'\t'N/A'\t'N/A'\t'N/A'\t'N/A'")
+              // in some cases (e.g., crop) norm might be empty
+              if(norm.isEmpty) {
+                pw.println(s"$varText\t$valText\tN/A\t$sentText\t$filename\tN/A\tN/A\tN/A\tN/A\tN/A\tN/A\tN/A\tN/A\tN/A\tN/A\tN/A\tN/A")
+              }
+              else
+                {
+                  pw.println(s"$varText\t$valText\t$norm\tN/A\t$sentText\t$filename\tN/A\tN/A\tN/A\tN/A\tN/A\tN/A\tN/A\tN/A\tN/A\tN/A\tN/A\tN/A")
+                }
             }
           } catch {
             case e: NoSuchElementException =>
