@@ -28,6 +28,7 @@ project/project/
 in/
 out/
 mentions.json
+mentions.jsonl
 mentions.tsv
 
 # docker
