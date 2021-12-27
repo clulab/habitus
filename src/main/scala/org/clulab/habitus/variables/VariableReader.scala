@@ -34,7 +34,6 @@ object VariableReader {
 
     new MultiPrinter(
       Lazy{new TsvPrinter(mkOutputFile(".tsv"))},
-      Lazy(new JsonPrinter(mkOutputFile(".json"))),
       Lazy(new JsonlPrinter(mkOutputFile(".jsonl")))
     ).autoClose { multiPrinter =>
       for (file <- parFiles) {
