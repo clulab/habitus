@@ -70,8 +70,7 @@ class TsvPrinter(outputFilename: String) extends Printer {
 
               if (contexts.contains(i)) {
                 pw.println(s"$varText\t$valText\t$norm\t$sentText\t$filename\t${
-                  contexts(i).mostFreqLoc0Sent
-                    .head}\t${
+                  contexts(i).mostFreqLoc0Sent                   
                 }\t${
                   contexts(i).mostFreqLoc1Sent
                 }\t${
