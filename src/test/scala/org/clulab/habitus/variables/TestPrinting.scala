@@ -8,7 +8,7 @@ import org.json4s.jackson.JsonMethods
 class TestPrinting extends Test {
   implicit val formats: DefaultFormats.type = org.json4s.DefaultFormats
 
-  behavior of "JsonPrinter"
+  behavior of "JsonlPrinter"
 
   it should "print something valid and non-empty" in {
     val inputDir = "./src/test/resources"
@@ -17,7 +17,7 @@ class TestPrinting extends Test {
 
     VariableReader.run(inputDir, outputDir, threads)
 
-    val json = FileUtils.getTextFromFile("./mentions.json")
+    val json = FileUtils.getTextFromFile("./mentions.jsonl")
     val jValue = JsonMethods.parse(json)
     val jValues = jValue.extract[JArray].arr
 
