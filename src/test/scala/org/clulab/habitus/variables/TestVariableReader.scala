@@ -943,4 +943,10 @@ class TestVariableReader extends FlatSpec with Matchers {
       count += 1
     }
   }
+
+  val sent21_11 = "2 Others : cassava , melon , peanuts , eggplant , watermelon , pepper , carrot , cabbage , jaxatu , beans , bissap , banana plantation , fruit trees , white onion , cucumber , squash …"
+  sent21_11 should "not contain and events" in {
+    val mentions = getMentions(sent21_11)
+    mentions.filter(_.label matches "Assignment") should have size (0)
+  }
 }
