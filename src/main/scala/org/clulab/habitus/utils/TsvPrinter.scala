@@ -106,6 +106,7 @@ class TsvPrinter(outputFilename: String) extends Printer {
             }
           } catch {
             case e: NoSuchElementException =>
+              println("Something went wrong here: " + m.text + " | label " + m.label + " sent: " + m.sentenceObj.getSentenceText)
               println(s"No normalized value found for ${m.arguments("value").head.text} in sentence ${s.getSentenceText}!")
               e.printStackTrace()
             case e: RuntimeException =>

@@ -34,7 +34,7 @@ rules:
     priority: 1
     type: token
     pattern: |
-      [entity='B-ACTOR' & !mention=Avoid] [entity='I-ACTOR' & !mention=Avoid]?
+      [entity=/B-ACTOR|B-ORG/ & !mention=Avoid] [entity=/I-ACTOR|I-ORG/ & !mention=Avoid]?
 
   - name: generic-agent-rule
     label: Agent

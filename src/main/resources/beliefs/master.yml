@@ -11,4 +11,4 @@ rules:
     vars:
       label: Belief
       factLabel: LikelyFact
-      rulepriority: "3"
+      rulepriority: "4"

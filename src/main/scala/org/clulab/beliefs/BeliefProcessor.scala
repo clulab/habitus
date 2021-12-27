@@ -16,6 +16,7 @@ import org.clulab.struct.Interval
 import java.io.File
 import java.nio.charset.StandardCharsets
 import scala.collection.JavaConverters.{asJavaIterableConverter, asScalaBufferConverter}
+import scala.collection.mutable.ArrayBuffer
 import scala.util.Try
 
 class BeliefProcessor(val processor: Processor,
@@ -52,14 +53,32 @@ class BeliefProcessor(val processor: Processor,
     val eventMentions = extractor.extractFrom(doc, initialState).sortBy(m => (m.sentence, m.getClass.getSimpleName))
     // expand the arguments, don't allow to cross the trigger
     val eventTriggers = eventMentions.collect { case em: EventMention => em.trigger }
+//    for (e <- eventMentions) println("before exp: " + " " + e.text + " " + e.label + " " + e.foundBy)
+    println
     val expandedMentions = eventMentions.map(expandArgs(_, State(eventTriggers)))
-    for (e <- expandedMentions) println("ee: " + e.text + " " + e.label + " " + e.foundBy)
+//    for (e <- expandedMentions) println("after exp: " + " " + e.text + " " + e.label + " " + e.foundBy)
     // keep only beliefs that look like propositions
     val propBeliefMentions = expandedMentions.filter(m => containsPropositionBelief(m) || containsPropositionBeliefWithTheme(m))
+    val triggerFilered = triggerBetweenBelieverAndBelief(propBeliefMentions)
 
-    (doc, propBeliefMentions)
+    (doc, triggerFilered.distinct)
   }
 
+
+  def triggerBetweenBelieverAndBelief(mentions: Seq[Mention]): Seq[Mention] = {
+    val triggerInBetween = new ArrayBuffer[Mention]()
+    val (believerAndBeliefMentions, other) = mentions.partition(m => (m.arguments.keys.toList.contains("belief") && m.arguments.keys.toList.contains("believer"))
+     )
+    for (m <- believerAndBeliefMentions) {
+      val triggerSpan = m.asInstanceOf[EventMention].trigger.tokenInterval
+      val args = m.arguments
+      if (args("believer").head.tokenInterval.start < triggerSpan.start && args("belief").head.tokenInterval.end > triggerSpan.end) {
+        triggerInBetween.append(m)
+      }
+
+    }
+    triggerInBetween ++ other
+  }
 
   def hasArguments(mention: Mention, keys: String*): Boolean =
       keys.forall(mention.arguments.get(_).exists(_.nonEmpty))

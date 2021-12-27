@@ -50,7 +50,26 @@ class HabitusActions extends Actions {
       }
     }
 
-    uniqueArguments(filteredBeliefs ++ nonBeliefs)
+    keepOneOfSameSpan(uniqueArguments(filteredBeliefs ++ nonBeliefs))
 //    uniqueArguments(mentions)
+//    uniqueArguments(filteredBeliefs ++ nonBeliefs)
+  }
+
+  def keepOneOfSameSpan(mentions: Seq[Mention]): Seq[Mention] = {
+    val toReturn = new ArrayBuffer[Mention]()
+    val groupedBySent = mentions.groupBy(_.sentence)
+    for (sentGroup <- groupedBySent) {
+//      for (sg <- sentGroup._2) println("sg1: " + sg.text)
+      val groupedByLabel = sentGroup._2.groupBy(_.label)
+      for (labelGroup <- groupedByLabel) {
+//        for (sg <- labelGroup._2) println("sg2: " + sg.text)
+        val groupedBySpan = labelGroup._2.groupBy(_.tokenInterval)
+        for (spanGroup <- groupedBySpan) {
+//          for (sg <- spanGroup._2) println("sg: " + sg.text)
+          toReturn.append(spanGroup._2.head)
+        }
+      }
+    }
+    toReturn
   }
 }

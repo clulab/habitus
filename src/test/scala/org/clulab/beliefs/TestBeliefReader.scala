@@ -93,14 +93,14 @@ class TestBeliefReader extends Test {
     m.arguments("belief").head.text should be ("premises of Social Darwinism")
   }
 
-  val sent9 = "I suppose that Troeg’s might know a thing or two about beer"
+  val sent9 = "I suppose that Tröegs might know a thing or two about beer"
   sent9 should "contain one belief" in {
     val mentions = getMentions(sent9)
     mentions should have size(1)
 
     val m = mentions.head
     m.arguments("believer").head.text should be ("I")
-    m.arguments("belief").head.text should be ("Troeg’s might know a thing or two about beer")
+    m.arguments("belief").head.text should be ("Tröegs might know a thing or two about beer")
   }
 
   val sent10 = "It's credible that Rudy Giuliani broke the law"
