@@ -2,25 +2,44 @@ package org.clulab.habitus.variables
 
 import org.clulab.habitus.utils.Test
 import org.clulab.utils.FileUtils
-import org.json4s.{DefaultFormats, JArray}
+import org.json4s.{DefaultFormats, JArray, JObject}
 import org.json4s.jackson.JsonMethods
+
+import java.io.File
 
 class TestPrinting extends Test {
   implicit val formats: DefaultFormats.type = org.json4s.DefaultFormats
 
-  behavior of "JsonlPrinter"
+  val inputDir = "./src/test/resources"
+  val outputDir = "."
+  val threads = 2
+  val jsonOutputFile = "./mentions.json"
+  val jsonlOutputFile = "./mentions.jsonl"
 
-  it should "print something valid and non-empty" in {
-    val inputDir = "./src/test/resources"
-    val outputDir = "."
-    val threads = 2
+  new File(jsonOutputFile).delete()
+  new File(jsonlOutputFile).delete()
+  VariableReader.run(inputDir, outputDir, threads)
 
-    VariableReader.run(inputDir, outputDir, threads)
+  behavior of "JsonPrinter"
 
-    val json = FileUtils.getTextFromFile("./mentions.jsonl")
+  ignore should "print something valid and non-empty" in {
+    val json = FileUtils.getTextFromFile(jsonOutputFile)
     val jValue = JsonMethods.parse(json)
     val jValues = jValue.extract[JArray].arr
 
     jValues should not be empty
+   }
+
+  behavior of "JsonlPrinter"
+
+  it should "print something valid and non-empty" in {
+    val jsonls = FileUtils.getTextFromFile(jsonlOutputFile).split('\n')
+
+    jsonls.foreach { json =>
+      val jValue = JsonMethods.parse(json)
+      val jObject = jValue.extract[JObject].obj
+
+      jObject should not be empty
+    }
   }
 }
