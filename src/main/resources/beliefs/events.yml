@@ -55,7 +55,7 @@ rules:
   label: ${label}
   graph: "hybrid"
   pattern: |
-    trigger = [lemma=/${active_believer_triggers}/ & tag=/^V|^J/]
+    trigger = [lemma=/${active_believer_triggers}/ & tag=/^V|^J/] (?![word="tank"])
     believer:Agent = /nsubj|A0/
     belief:Proposition = /ccomp|A1|dobj|xcomp|advcl/
 
@@ -64,7 +64,7 @@ rules:
   label: ${label}
   graph: "hybrid"
   pattern: |
-    trigger = [lemma=/${active_believer_triggers}/ & tag=/^V|^J/]
+    trigger = [lemma=/${active_believer_triggers}/ & tag=/^V|^J/] (?![word="tank"])
     believer:Agent = /nsubj$|A0/
     belief:Entity = /ccomp|A1|dobj|xcomp|advcl|nmod_about/
 
