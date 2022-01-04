@@ -64,8 +64,22 @@ class JsonPrinter(outputFilename: String) extends Printer {
         .getOrElse { // If it wasn't there, do this instead.
           // These keys should match the ones used above.
           ("variableText" -> variableText) ~
-          ("valueText" -> valueText) ~
-          ("sentenceText" -> sentenceText)
+            ("valueText" -> valueText) ~
+            ("valueNorm" -> valueNorm) ~           
+            ("sentenceText" -> sentenceText) ~
+            ("inputFilename" -> inputFilename) ~
+            ("mostFreqLoc0Sent" -> "N/A") ~
+            ("mostFreqLoc1Sent" -> "N/A") ~
+            ("mostFreqLoc" -> "N/A") ~
+            ("mostFreqDate0Sent" -> "N/A") ~
+            ("mostFreqDate1Sent" -> "N/A") ~
+            ("mostFreqDate" -> "N/A") ~
+            ("mostFreqCrop0Sent" -> "N/A") ~
+            ("mostFreqCrop1Sent" -> "N/A") ~
+            ("mostFreqCrop" -> "N/A") ~
+            ("mostFreqFert0Sent" -> "N/A") ~
+            ("mostFreqFert1Sent" -> "N/A") ~
+            ("mostFreqFert" -> "N/A")
         }
     val json = stringify(jObject, pretty = true)
     val indentedJson = "  " + json.replace("\n", "\n  ")

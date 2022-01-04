@@ -17,7 +17,7 @@ import java.io.File
 import java.nio.charset.StandardCharsets
 import scala.collection.JavaConverters.{asJavaIterableConverter, asScalaBufferConverter}
 import scala.collection.mutable.ArrayBuffer
-import scala.util.Try
+
 
 class BeliefProcessor(val processor: Processor,
                       val entityFinder: CustomizableRuleBasedFinder,

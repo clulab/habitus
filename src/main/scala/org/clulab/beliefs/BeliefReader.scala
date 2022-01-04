@@ -1,6 +1,6 @@
 package org.clulab.beliefs
 
-import org.clulab.habitus.utils.{ContextDetails, JsonPrinter, JsonlPrinter, Lazy, MultiPrinter, PrintVariables, TsvPrinter}
+import org.clulab.habitus.utils.{ContextDetails, JsonlPrinter, Lazy, MultiPrinter, PrintVariables, TsvPrinter}
 import org.clulab.utils.{FileUtils, StringUtils, ThreadUtils}
 import org.clulab.utils.Closer.AutoCloser
 
@@ -21,7 +21,7 @@ object BeliefReader {
     run(inputDir, outputDir, 1)
   }
 
-  def run(inputDir: String, outputDir: String, threads: Int) {
+  def run(inputDir: String, outputDir: String, threads: Int): Unit = {
     new File(outputDir).mkdir()
 
     def mkOutputFile(extension: String): String = outputDir + "/mentions" + extension
@@ -32,7 +32,6 @@ object BeliefReader {
 
     new MultiPrinter(
       Lazy(new TsvPrinter(mkOutputFile(".tsv"))),
-      Lazy(new JsonPrinter(mkOutputFile(".json"))),
       Lazy(new JsonlPrinter(mkOutputFile(".jsonl")))
     ).autoClose { multiPrinter =>
       for (file <- parFiles) {

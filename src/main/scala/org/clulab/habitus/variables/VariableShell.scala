@@ -30,13 +30,13 @@ class VariableShell() extends ReloadableShell {
     catch {
       case throwable: Throwable =>
         println(s"The variable processor could not be reloaded!")
-        throwable.printStackTrace
+        throwable.printStackTrace()
     }
   }
 
   override def work(text: String): Unit = {
     // the actual reading
-    val (doc, mentions,eventMentions,histogram) = vp.get.parse(text)
+    val (doc, mentions, _, _) = vp.get.parse(text)
 
     // debug display the mentions
     displayMentions(mentions, doc)

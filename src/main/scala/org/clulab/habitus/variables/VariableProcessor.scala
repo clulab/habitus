@@ -1,5 +1,5 @@
 package org.clulab.habitus.variables
-import java.io.File
+
 import org.clulab.dynet.Utils
 import org.clulab.habitus.HabitusProcessor
 import org.clulab.odin.{EventMention, ExtractorEngine, Mention}
@@ -8,13 +8,11 @@ import org.clulab.processors.clu.CluProcessor
 import org.clulab.sequences.LexiconNER
 import org.clulab.utils.FileUtils
 
-import scala.util.{Failure, Success, Try}
-
-
+import java.io.File
 
 class VariableProcessor(val processor: CluProcessor, val extractor: ExtractorEngine) {
 
-  def reloaded(): VariableProcessor = {
+  def reloaded: VariableProcessor = {
     val newLexiconNer = VariableProcessor.newLexiconNer()
     val newProcessor = processor.copy(optionalNEROpt = Some(Some(newLexiconNer)))
     val newExtractorEngine = VariableProcessor.newExtractorEngine()
@@ -38,7 +36,7 @@ class VariableProcessor(val processor: CluProcessor, val extractor: ExtractorEng
 }
 
 object VariableProcessor {
-  val resourceDir = {
+  val resourceDir: File = {
     val cwd = new File(System.getProperty("user.dir"))
     new File(cwd, "src/main/resources")
   }

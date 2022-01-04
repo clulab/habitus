@@ -16,10 +16,19 @@ project/plugins/project/
 .lib/
 .bsp/
 
+# from VS Code
+.bloop/
+.metals/
+.vscode/
+project/.bloop/
+project/metals.sbt
+project/project/
+
 # running/testing
 in/
 out/
 mentions.json
+mentions.jsonl
 mentions.tsv
 
 # docker

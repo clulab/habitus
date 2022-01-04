@@ -28,7 +28,7 @@ class TsvPrinter(outputFilename: String) extends Printer {
   }
 
   // extract needed information and write them to tsv in a desired format. Return nothing here!
-  protected def outputMentions(mentions: Seq[Mention], doc: Document, contexts: scala.collection.mutable.Map[Int, ContextDetails],
+  protected def outputMentions(mentions: Seq[Mention], doc: Document, contexts: mutable.Map[Int, ContextDetails],
                                filename: String, pw: PrintWriter,printVars:PrintVariables): Unit = {
     val mentionsBySentence = mentions groupBy (_.sentence) mapValues (_.sortBy(_.start)) withDefaultValue Nil
     for ((s, i) <- doc.sentences.zipWithIndex) {
@@ -70,11 +70,8 @@ class TsvPrinter(outputFilename: String) extends Printer {
                 }
 
               if (contexts.contains(i)) {
-
-
                 pw.println(s"$varText\t$valText\t$norm\t$sentText\t$filename\t${
                   contexts(i).mostFreqLoc0Sent
-                    .head}\t${
                 }\t${
                   contexts(i).mostFreqLoc1Sent
                 }\t${
@@ -102,7 +99,16 @@ class TsvPrinter(outputFilename: String) extends Printer {
             }
             else
             {
-              pw.println(s"$varText\t$valText\t$sentText")
+              val norm=valNorms.get.head
+              //if there are no contexts found, print N/A
+              // in some cases (e.g., crop) norm might be empty
+              if(norm.isEmpty) {
+                pw.println(s"$varText\t$valText\tN/A\t$sentText\t$filename\tN/A\tN/A\tN/A\tN/A\tN/A\tN/A\tN/A\tN/A\tN/A\tN/A\tN/A\tN/A")
+              }
+              else
+                {
+                  pw.println(s"$varText\t$valText\t$norm\tN/A\t$sentText\t$filename\tN/A\tN/A\tN/A\tN/A\tN/A\tN/A\tN/A\tN/A\tN/A\tN/A\tN/A\tN/A")
+                }
             }
           } catch {
             case e: NoSuchElementException =>

@@ -74,7 +74,18 @@
   label: ${label}
   type: token
   pattern: |
-    @variable:Variable (?<trigger> [lemma="("]) @value:Value (("," | "and")* @value:Value)*
+    @variable:Variable [! (mention = "Value")]{, 4} (?<trigger> [lemma="("]) @value:Value (("," | "and")* @value:Value)*
+
+#
+# VALUE ( VARIABLE )
+#   beyond September 15, 2020 (late sowing)
+#
+- name: ${label}-parenthesis-2
+  priority: ${rulepriority}
+  label: ${label}
+  type: token
+  pattern: |
+    @value:Value (?<trigger> [lemma="("]) @variable:Variable [lemma=")"]
 
 
 #
@@ -104,6 +115,16 @@
     @variable:Variable (?<trigger> [lemma=be]) [tag=/VBN|IN/] ("on"? @value:Value)+ 
 
 
+#
+# VALUE , be VARIABLE
+#
+- name: ${label}-cop-9
+  priority: ${rulepriority} 
+  label: ${label} 
+  Example: "Between the date of February 15 to March 15 , 2020 , are sown 66 % areas developed"
+  type: token
+  pattern: |
+    @value:Value ","? (?<trigger> [lemma=be]) @variable:Variable
 
 
 

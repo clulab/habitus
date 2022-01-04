@@ -3,7 +3,7 @@ package org.clulab.habitus
 import org.clulab.odin.{EventMention, Mention, RelationMention, TextBoundMention}
 import org.clulab.processors.{Document, Sentence}
 
-import java.io.PrintWriter
+import scala.collection.mutable
 import scala.collection.mutable.ArrayBuffer
 
 package object utils {
@@ -49,8 +49,8 @@ package object utils {
                             mostFreqFertilizerOverall: String)
 
   //some sentences might have multiple event mentions in it, and
-  def getAllContextForGivenSentId(context: scala.collection.mutable.Map[Int, ArrayBuffer[ContextDetails]],
-                                  sentId: Int, allContexts: ArrayBuffer[String]) = {
+  def addAllContextForGivenSentId(context: mutable.Map[Int, ArrayBuffer[ContextDetails]],
+                                  sentId: Int, allContexts: ArrayBuffer[String]): Unit = {
 
     for (ctxt <- context(sentId)) {
       allContexts.append(ctxt.mostFreqLoc0Sent)
@@ -70,7 +70,7 @@ package object utils {
   }
 
 
-  def displayMention(mention: Mention) {
+  def displayMention(mention: Mention): Unit = {
     val boundary = s"\t${"-" * 30}"
     println(s"${mention.labels} => ${mention.text}")
     println(boundary)

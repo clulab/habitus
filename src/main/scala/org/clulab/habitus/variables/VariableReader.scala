@@ -23,7 +23,7 @@ object VariableReader {
     run(inputDir, outputDir, threads)
   }
 
-  def run(inputDir: String, outputDir: String, threads: Int) {
+  def run(inputDir: String, outputDir: String, threads: Int): Unit = {
     new File(outputDir).mkdir()
 
     def mkOutputFile(extension: String): String = outputDir + "/mentions" + extension
@@ -34,7 +34,6 @@ object VariableReader {
 
     new MultiPrinter(
       Lazy{new TsvPrinter(mkOutputFile(".tsv"))},
-      Lazy(new JsonPrinter(mkOutputFile(".json"))),
       Lazy(new JsonlPrinter(mkOutputFile(".jsonl")))
     ).autoClose { multiPrinter =>
       for (file <- parFiles) {
@@ -59,11 +58,11 @@ object VariableReader {
     }
   }
 
-  def compressContext(doc:Document, allEventMentions:Seq[EventMention], entityHistogram:Seq[EntityDistFreq]) = {
+  def compressContext(doc: Document, allEventMentions: Seq[EventMention], entityHistogram: Seq[EntityDistFreq]): mutable.Map[Int, ContextDetails] = {
 
     //sentidContext is a data structure created just to carry contextdetails to the code which writes output to disk
     //note: value=Seq[contextDetails] because there can be more than one mentions in same sentence
-    val sentidContext = scala.collection.mutable.Map[Int, ContextDetails]()
+    val sentidContext = mutable.Map[Int, ContextDetails]()
 
     // for each of the event mentions, find most frequent entityType within the distance of howManySentAway
     //  e.g.,(LOC,1) means find which Location occurs most frequently within 1 sentence of this event
@@ -89,25 +88,23 @@ object VariableReader {
     sentidContext
   }
 
-  def findMostFreqContextEntitiesForAllEvents(mentionContextMap: scala.collection.mutable.Map[EventMention, Seq[EntityDistFreq]], howManySentAway:Int, entityType:String):Seq[MostFreqEntity] = {
+  def findMostFreqContextEntitiesForAllEvents(mentionContextMap: mutable.Map[EventMention, Seq[EntityDistFreq]], howManySentAway:Int, entityType:String):Seq[MostFreqEntity] = {
     mentionContextMap.keys.toSeq.map(key=>findMostFreqContextEntitiesForOneEvent(key,mentionContextMap(key), entityType,howManySentAway))
   }
 
 
   //if key exists add+1 to its value, else add 1 as its value
-  def checkAddFreq(mapper: scala.collection.mutable.Map[String, Int], key: String, freq:Int): scala.collection.mutable.Map[String, Int] = {
-    mapper.get(key) match {
-      case Some(value) =>
-        mapper(key) = value+freq
-      case None => mapper(key) = freq
-    }
-    mapper
+  def checkAddFreq(map: mutable.Map[String, Int], key: String, freq: Int): Int = {
+    val newFreq = map.getOrElse(key, 0) + freq
+
+    map(key) = newFreq
+    newFreq
   }
 
   //given a user input (e.g.,LOC,1-- which means find which Location occurs most frequently within 1 sentence of this
   // event), calculate it from available frequency and sentence data
   def findMostFreqContextEntitiesForOneEvent(mention:EventMention, contexts:Seq[EntityDistFreq], entityType:String, howManySentAway:Int):MostFreqEntity= {
-    var entityFreq = scala.collection.mutable.Map[String, Int]()
+    val entityFreq = mutable.Map[String, Int]()
     var maxFreq = 0
     var mostFreqEntity = ""
     //go through each of the contexts and find if any of them satisfies the condition in the query
@@ -116,9 +113,9 @@ object VariableReader {
         val sentDist = sentFreq._1
         val freq = sentFreq._2
         if (sentDist <= howManySentAway && ctxt.nerTag.contains(entityType)) {
-          entityFreq = checkAddFreq(entityFreq, ctxt.entityValue, freq)
-          if (entityFreq(ctxt.entityValue) >= maxFreq) {
-            maxFreq = entityFreq(ctxt.entityValue)
+          val newFreq = checkAddFreq(entityFreq, ctxt.entityValue, freq)
+          if (newFreq >= maxFreq) {
+            maxFreq = newFreq
             mostFreqEntity = ctxt.entityValue
           }
         }
@@ -127,17 +124,7 @@ object VariableReader {
     MostFreqEntity(mention.sentence, mention.words.mkString(" "), checkIfNoName(mostFreqEntity))
   }
 
-
-  def checkIfNoName(s:String):Option[String]=
-  {
-    if (s==""){
-      return None
-    }
-    else
-    {
-      return Some(s)
-    }
-  }
+  def checkIfNoName(s: String): Option[String] = if (s.isEmpty) None else Some(s)
 
   //note: output of extractContext is a sequence of MostFreqEntity (sentId,mention, mostFreqEntity)) case classes.
   // It is a sequence because there can be more than one eventmentions that can occur in the given document
@@ -155,10 +142,10 @@ object VariableReader {
   }
 
   //for each mention find how far away an entity occurs, and no of times it occurs in that sentence
-  def getEntityRelDistFromMention(mentionsSentIds: Seq[EventMention], contexts:Seq[EntityDistFreq]):scala.collection.mutable.Map[EventMention, Seq[EntityDistFreq]]= {
-    val mentionsContexts=  scala.collection.mutable.Map[EventMention, Seq[EntityDistFreq]]()
+  def getEntityRelDistFromMention(mentionsSentIds: Seq[EventMention], contexts:Seq[EntityDistFreq]): mutable.Map[EventMention, Seq[EntityDistFreq]]= {
+    val mentionsContexts = mutable.Map[EventMention, Seq[EntityDistFreq]]()
     for (mention <- mentionsSentIds) {
-      var contextsPerMention = new ArrayBuffer[EntityDistFreq]()
+      val contextsPerMention = new ArrayBuffer[EntityDistFreq]()
       for (context <- contexts) {
         val relDistFreq = ArrayBuffer[(Int,Int)]()
         for (absDistFreq <- context.entityDistFrequencies) {
@@ -176,14 +163,14 @@ object VariableReader {
       }
 
       //create a map between each mention and its corresponding sequence. this will be useful in the reduce/compression part
-      mentionsContexts += (mention -> (contextsPerMention.toSeq))
+      mentionsContexts += (mention -> contextsPerMention)
     }
     mentionsContexts
   }
 
-  def checkSentIdContextDetails(sentidContext:scala.collection.mutable.Map[Int,ContextDetails], key:Int, value: ContextDetails) = {
+  def checkSentIdContextDetails(sentidContext: mutable.Map[Int,ContextDetails], key:Int, value: ContextDetails): Unit = {
     sentidContext.get(key) match {
-      case Some(i) =>
+      case Some(_) =>
 //        println(s"Found that multiple event mentions occur in the same sentence with sentence id $key. " +
 //          s"going to add to chain of values")
 //        val oldList=sentidContext(key)
@@ -197,7 +184,7 @@ object VariableReader {
   case class MostFreqEntity(sentId: Int, mention: String, mostFreqEntity: Option[String])
 
 
-  def createSentidContext(sentidContext:scala.collection.mutable.Map[Int,ContextDetails],
+  def createSentidContext(sentidContext: mutable.Map[Int,ContextDetails],
                           mostFreqLocation0Sent:Seq[MostFreqEntity],
                           mostFreqLocation1Sent:Seq[MostFreqEntity],
                           mostFreqLocationOverall:Seq[MostFreqEntity],
@@ -216,7 +203,7 @@ object VariableReader {
 
     //for each event mention, get the sentence id, and map it to a case class called contextDetails, which will have all of mostFreq* information
     //note: zipping through only the list of one mostFreq* since all of them should have same lenghts.
-    for ((mostFreq, i) <- (mostFreqLocation0Sent).zipWithIndex) {
+    for ((mostFreq, i) <- mostFreqLocation0Sent.zipWithIndex) {
       checkSentIdContextDetails(sentidContext,mostFreq.sentId,
         ContextDetails(mostFreq.mention,
           checkIfEmpty(mostFreq.mostFreqEntity),
@@ -235,13 +222,6 @@ object VariableReader {
       )
     }
   }
-  //if none, return "", else return String value of entity e.g.:"SENEGAL"
-  def checkIfEmpty(mostFreqEntity:Option[String]): String =
-  {
-    mostFreqEntity match
-    {
-      case Some(i)=> return mostFreqEntity.get
-      case None => return "N/A"
-    }
-  }
+  //if none, return "N/A", else return String value of entity e.g.:"SENEGAL"
+  def checkIfEmpty(mostFreqEntity: Option[String]): String = mostFreqEntity.getOrElse("N/A")
 }
