@@ -1,56 +1,15 @@
 vars: beliefs/triggers.yml
 #
 # Mention believe that Mention, e.g.: The farmers believe that loans are useful
+#
+
+## We will look at how to merge these grammars to avoid repetition
 ##
 
 rules:
 
-- name: proposition-rule1
-  label: Proposition
-  priority: 2
-  type: dependency
-  pattern: |
-    trigger = [lemma = "be"]
-    subj:NounPhrase = <cop nsubj
-    obj:NounPhrase = <cop
-
-- name: proposition-rule1b
-  label: Proposition
-  priority: 2
-  type: dependency
-  pattern: |
-    trigger = [word="there"] [lemma = "be"]
-    subj:NounPhrase = nsubj
-#    obj:Entity = ccomp
-
-- name: proposition-rule1c
-  label: Proposition
-  priority: 3
-  type: dependency
-  pattern: |
-    trigger = [lemma = "be"]
-    subj:NounPhrase = nsubj
-    obj: Proposition = ccomp
-
-- name: proposition-rule2
-  label: Proposition
-  priority: 2
-  type: dependency
-  pattern: |
-    trigger = (?<![word="there"]) [tag = /VB/]
-    subj:NounPhrase = nsubj
-    obj:NounPhrase? = dobj
-
-#- name: proposition-control
-#  label: Proposition
-#  priority: 2
-#  type: dependency
-#  pattern: |
-#    trigger = [lemma = "be"]
-#    subj:NounPhrase = <cop nsubj
-#    obj:NounPhrase = <cop
-
-- name: ${label}-believe
+# Note: prop vs entity rule pairs may be redundant; todo: compare extractions, eliminate prop rules if redundant
+- name: ${label}-believe-active-believer-prop
   priority: ${rulepriority}
   label: ${label}
   graph: "hybrid"
@@ -59,7 +18,7 @@ rules:
     believer:Agent = /nsubj|A0/
     belief:Proposition = /ccomp|A1|dobj|xcomp|advcl/
 
-- name: ${label}-believe1
+- name: ${label}-believe-active-believer-entity
   priority: ${rulepriority}
   label: ${label}
   graph: "hybrid"
@@ -68,25 +27,25 @@ rules:
     believer:Agent = /nsubj$|A0/
     belief:Entity = /ccomp|A1|dobj|xcomp|advcl|nmod_about/
 
-- name: ${label}-believe2
+- name: ${label}-believe-impersonal-believer-prop
   priority: ${rulepriority}
   label: ${label}
   graph: "hybrid"
   pattern: |
-    trigger = [lemma=/${impersonal_belief_triggers}/ & tag=/^J|VBG|VBN/]   #(?<=[word = /(?i)it/] [lemma = /be|s/] [tag="RB"]? [word="not"]?)
+    trigger = [lemma=/${impersonal_belief_triggers}/ & tag=/^J|VBG|VBN/]
     believer:Entity = /nsubj|nsubjpass|A0/ [word=/(?i)it/]
     belief:Proposition = /ccomp|A1|dobj|xcomp|advcl|nmod_about/
 
-- name: ${label}-believe3
+- name: ${label}-believe-impersonal-believer-ent
   priority: ${rulepriority}
   label: ${label}
   graph: "hybrid"
   pattern: |
-    trigger = [lemma=/${impersonal_belief_triggers}/ & tag=/^J|VBG|VBN/] #(?<=[word = /(?i)it/] [lemma = /be|s/] [word="not"]?)
+    trigger = [lemma=/${impersonal_belief_triggers}/ & tag=/^J|VBG|VBN/]
     believer:Entity = /nsubj|nsubjpass/  [word=/(?i)it/]
     belief:Entity = /ccomp|A1|dobj|xcomp|advcl|nmod_about/
 
-- name: ${label}-believe-4
+- name: ${label}-believe-split-belief
   priority: ${rulepriority}
   label: ${label}
   graph: "hybrid"
@@ -96,7 +55,7 @@ rules:
     beliefTheme:Entity = /nsubjpass|A1/
     belief:Entity = /xcomp/
 
-- name: ${label}-believe5
+- name: ${label}-believe-impersonal-it
   priority: ${rulepriority}
   label: ${label}
   graph: "hybrid"
@@ -105,35 +64,7 @@ rules:
     believer:Entity = /nsubj|nsubjpass/  [word=/(?i)it/]
     belief:Entity = /xcomp/
 
-
-#
-##
-## We will look at how to merge these grammars to avoid repetition
-##
-#
-#- name: ${label}-believe-1
-#  priority: ${rulepriority}
-#  label: ${label}
-#  graph: "hybrid"
-#  pattern: |
-#    trigger = [lemma="not"]? [lemma=/credible|convince|believable|skeptical|credible|likely|unlikely|provable|possible|impossible|probable|improbable|plausible|implausible|reasonable|unreasonable|conclusive|unsupportable|questionable|unquestionable|axiomatic|true|false|established|debatable|equivocal|unequivocal|dubious|suspect|inconceivable|incontrovertible|indubitable|worry|hopeful/ & tag=/^V|^J/]
-#    believer:Entity = /nsubj|A0/
-#    belief:Entity = /ccomp|A1|dobj|xcomp|nmod_about/
-#
-#
-
-
-#- name: ${label}-believe6
-#  priority: ${rulepriority}
-#  label: ${label}
-#  graph: "hybrid"
-#  example: "I look forward to my investments doing well."
-#  pattern: |
-#    trigger = [lemma=/look/] (?= [word = "forward"])
-#    believer:Agent = /nsubj/
-#    belief:Entity = /ccomp|A1|dobj|advcl/
-#
-- name: ${label}-believe7
+- name: ${label}-believe-control
   priority: ${rulepriority}
   label: ${label}
   graph: "hybrid"
@@ -142,8 +73,8 @@ rules:
     trigger = [lemma=/expect/]
     believer:Agent = /nsubj/
     belief:Entity = xcomp | nsubj /xsubj$/ A3
-#
-- name: ${label}-believe8
+
+- name: ${label}-believe-willingness
   priority: ${rulepriority}
   label: ${label}
   graph: "hybrid"
@@ -152,8 +83,8 @@ rules:
     trigger = [lemma=/willingness/]
     believer:Agent = "nmod:poss"
     belief:Entity = acl
-#
-- name: ${label}-believe9
+
+- name: ${label}-believe-recognize
   priority: ${rulepriority}
   label: ${label}
   graph: "hybrid"
@@ -162,8 +93,8 @@ rules:
     trigger = [lemma=/recognize/] (?= [word = "the"] [word="importance"])
     believer:Entity = nsubj
     belief:Entity = dobj
-#
-- name: ${label}-believe10
+  #
+- name: ${label}-believe-stigma
   priority: ${rulepriority}
   label: ${label}
   graph: "hybrid"
@@ -171,8 +102,8 @@ rules:
   pattern: |
     trigger = [lemma=/stigma/]
     belief:Entity = A1 | acl advcl
-#
-- name: ${label}-believe-11
+  #
+- name: ${label}-believe-impersonal-adj
   priority: ${rulepriority}
   label: ${label}
   graph: "hybrid"
@@ -189,7 +120,28 @@ rules:
     trigger = [lemma=/likely|unlikely/]
     beliefTheme:Entity = /nsubj/ [!word=/(?i)(it|this)/]
     belief:Entity = /ccomp|xcomp/
-#
+
+# Temporarily disabled, to review
+
+#- name: ${label}-believe-1
+#  priority: ${rulepriority}
+#  label: ${label}
+#  graph: "hybrid"
+#  pattern: |
+#    trigger = [lemma="not"]? [lemma=/credible|convince|believable|skeptical|credible|likely|unlikely|provable|possible|impossible|probable|improbable|plausible|implausible|reasonable|unreasonable|conclusive|unsupportable|questionable|unquestionable|axiomatic|true|false|established|debatable|equivocal|unequivocal|dubious|suspect|inconceivable|incontrovertible|indubitable|worry|hopeful/ & tag=/^V|^J/]
+#    believer:Entity = /nsubj|A0/
+#    belief:Entity = /ccomp|A1|dobj|xcomp|nmod_about/
+
+#- name: ${label}-believe6
+#  priority: ${rulepriority}
+#  label: ${label}
+#  graph: "hybrid"
+#  example: "I look forward to my investments doing well."
+#  pattern: |
+#    trigger = [lemma=/look/] (?= [word = "forward"])
+#    believer:Agent = /nsubj/
+#    belief:Entity = /ccomp|A1|dobj|advcl/
+
 ##- name: ${label}-believe9
 ##  priority: ${rulepriority}
 ##  label: ${label}
