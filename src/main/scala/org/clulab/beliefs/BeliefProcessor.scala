@@ -6,21 +6,25 @@ import org.clulab.dynet.Utils
 import org.clulab.habitus.HabitusProcessor
 import org.clulab.habitus.actions.HabitusActions
 import org.clulab.habitus.utils.ArrayView
+import org.clulab.habitus.variables.VariableProcessor.resourceDir
 import org.clulab.odin.{EventMention, ExtractorEngine, Mention, RelationMention, State, TextBoundMention}
 import org.clulab.openie.entities.CustomizableRuleBasedFinder
 import org.clulab.processors.{Document, Processor}
+import org.clulab.sequences.LexiconNER
 import org.clulab.struct.Interval
 
 import java.io.File
 import java.nio.charset.StandardCharsets
 import scala.collection.JavaConverters.{asJavaIterableConverter, asScalaBufferConverter}
+import scala.collection.mutable.ArrayBuffer
+
 
 class BeliefProcessor(val processor: Processor,
                       val entityFinder: CustomizableRuleBasedFinder,
                       val extractor: ExtractorEngine) {
 
   // fixme: you prob want this to be from a config
-  val maxHops: Int = 3
+  val maxHops: Int = 5
 
   def expandArgs(m: Mention, avoid: State): Mention = {
     def getExpandedArgs(args: Map[String, Seq[Mention]]): Map[String, Seq[Mention]] = {
@@ -47,17 +51,33 @@ class BeliefProcessor(val processor: Processor,
     // extract mentions from annotated document
     val initialState = State(entityMentions)
     val eventMentions = extractor.extractFrom(doc, initialState).sortBy(m => (m.sentence, m.getClass.getSimpleName))
-
     // expand the arguments, don't allow to cross the trigger
     val eventTriggers = eventMentions.collect { case em: EventMention => em.trigger }
     val expandedMentions = eventMentions.map(expandArgs(_, State(eventTriggers)))
-
     // keep only beliefs that look like propositions
     val propBeliefMentions = expandedMentions.filter(m => containsPropositionBelief(m) || containsPropositionBeliefWithTheme(m))
+    val triggerFilered = triggerBetweenBelieverAndBelief(propBeliefMentions)
 
-    (doc, propBeliefMentions)
+    (doc, triggerFilered.distinct)
   }
 
+
+  def triggerBetweenBelieverAndBelief(mentions: Seq[Mention]): Seq[Mention] = {
+    // filters out belief mentions where believer and belief are not on different sides of the trigger
+    val triggerInBetween = new ArrayBuffer[Mention]()
+    val (believerAndBeliefMentions, other) = mentions.partition { m =>
+      val args = m.arguments.keys.toList
+      args.contains("belief") && args.contains("believer")
+    }
+    for (m <- believerAndBeliefMentions) {
+      val triggerSpan = m.asInstanceOf[EventMention].trigger.tokenInterval
+      val args = m.arguments
+      if (args("believer").head.tokenInterval.start < triggerSpan.start && args("belief").head.tokenInterval.end > triggerSpan.end) {
+        triggerInBetween.append(m)
+      }
+    }
+    triggerInBetween ++ other
+  }
 
   def hasArguments(mention: Mention, keys: String*): Boolean =
       keys.forall(mention.arguments.get(_).exists(_.nonEmpty))
@@ -86,7 +106,6 @@ class BeliefProcessor(val processor: Processor,
     val span = mention.tokenInterval
     val nounCount = countStartsWith(tags, "NN", span)
     val verbCount = countStartsWith(tags, "VB", span)
-
     nounCount > 1 || (nounCount > 0 && verbCount > 0)
   }
 
@@ -97,17 +116,35 @@ class BeliefProcessor(val processor: Processor,
     val beliefThemeSpan = beliefTheme.tokenInterval
     val nounCount = countStartsWith(tags, "NN", beliefSpan, beliefThemeSpan)
     val verbCount = countStartsWith(tags, "VB", beliefSpan, beliefThemeSpan)
-
     nounCount > 1 || (nounCount > 0 && verbCount > 0)
   }
 
 }
 
 object BeliefProcessor {
+
+  // Custom NER for variable reading
+  def newLexiconNer(): LexiconNER = {
+    val kbs = Seq(
+      "variables/ACTOR.tsv"
+    )
+    val isLocal = kbs.forall(new File(resourceDir, _).exists)
+    val lexiconNer = LexiconNER(kbs,
+      Seq(
+        true, // case insensitive match for fertilizers
+        true
+      ),
+      if (isLocal) Some(resourceDir) else None
+    )
+
+    lexiconNer
+  }
+
   def apply(): BeliefProcessor = {
     // create the processor
     Utils.initializeDyNet()
-    val processor: Processor = new HabitusProcessor(None)
+    val lexiconNER = newLexiconNer()
+    val processor: Processor = new HabitusProcessor(Some(lexiconNER))
 
     // the mention finder, without expansion
     val config = ConfigFactory.load()

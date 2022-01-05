@@ -50,6 +50,7 @@ class TsvPrinter(outputFilename: String) extends Printer {
             val valText = value.text
             val sentText = s.getSentenceText
             val valNorms = value.norms
+            val foundBy = m.foundBy
 
             if (contexts.nonEmpty) {
               val norm =
@@ -111,7 +112,7 @@ class TsvPrinter(outputFilename: String) extends Printer {
             }
           } catch {
             case e: NoSuchElementException =>
-              println(s"No normalized value found for ${m.arguments("value").head.text} in sentence ${s.getSentenceText}!")
+              println(s"Something went wrong while extracting a ${m.label} mention from this sentence: ${m.sentenceObj.getSentenceText}")
               e.printStackTrace()
             case e: RuntimeException =>
               println(s"Error occurs for sentence: ${s.getSentenceText}")

@@ -1,66 +1,183 @@
-
+vars: beliefs/triggers.yml
 #
 # Mention believe that Mention, e.g.: The farmers believe that loans are useful
 #
-- name: ${label}-believe
+
+## We will look at how to merge these grammars to avoid repetition
+##
+
+rules:
+
+# Note: prop vs entity rule pairs may be redundant; todo: compare extractions, eliminate prop rules if redundant
+- name: ${label}-believe-active-believer-prop
   priority: ${rulepriority}
   label: ${label}
   graph: "hybrid"
   pattern: |
-    trigger = [lemma=/believe|think|accept|consider|trust|mistrust|conclude|doubt|reject|suppose|suggest|submit|theorize|offer/ & tag=/^V/]
-    believer:Entity? = /nsubj|A0/ # note: optional to accommodate examples with no explicit believer
-    belief:Entity = /ccomp|A1|dobj/
+    trigger = [lemma=/${active_believer_triggers}/ & tag=/^V|^J/] (?![word="tank"])
+    believer:Agent = /nsubj|A0/
+    belief:Proposition = /ccomp|A1|dobj|xcomp|advcl/
 
-#
-# We will look at how to merge these grammars to avoid repetition
-#
-
-- name: ${label}-believe-1
+- name: ${label}-believe-active-believer-entity
   priority: ${rulepriority}
   label: ${label}
   graph: "hybrid"
   pattern: |
-    trigger = [lemma="not"]? [lemma=/credible|convince|believable|skeptical|credible|likely|unlikely|provable|possible|impossible|probable|improbable|plausible|implausible|reasonable|unreasonable|conclusive|unsupportable|questionable|unquestionable|axiomatic|true|false|established|debatable|equivocal|unequivocal|dubious|suspect|inconceivable|incontrovertible|indubitable/ & tag=/^V|^J/]
-    believer:Entity = /nsubj|A0/
-    belief:Entity = /ccomp|A1|dobj/
+    trigger = [lemma=/${active_believer_triggers}/ & tag=/^V|^J/] (?![word="tank"])
+    believer:Agent = /nsubj$|A0/
+    belief:Entity = /ccomp|A1|dobj|xcomp|advcl|nmod_about/
 
-
-- name: ${label}-believe-2
+- name: ${label}-believe-impersonal-believer-prop
   priority: ${rulepriority}
   label: ${label}
   graph: "hybrid"
   pattern: |
-    trigger = [lemma=/explain|predict|mistrust|consistent|skeptical/ & tag=/^V|^J/]
-    believer:Entity = /nsubjpas|nsubj|A1/
-    belief:Entity = /ccomp|A0|dobj|nmod_of|nmod_by|nmod_with/
+    trigger = [lemma=/${impersonal_belief_triggers}/ & tag=/^J|VBG|VBN/]
+    believer:Entity = /nsubj|nsubjpass|A0/ [word=/(?i)it/]
+    belief:Proposition = /ccomp|A1|dobj|xcomp|advcl|nmod_about/
 
-- name: ${label}-believe-3
+- name: ${label}-believe-impersonal-believer-ent
   priority: ${rulepriority}
   label: ${label}
   graph: "hybrid"
   pattern: |
-    trigger = [lemma=/neg/]? [tag=/JJ|NN/] [tag="TO"] [tag=/^V/] 
-    believer:Entity = /nsubj|expl/
-    belief:Entity = /ccomp|A1|dobj|xcomp/
+    trigger = [lemma=/${impersonal_belief_triggers}/ & tag=/^J|VBG|VBN/]
+    believer:Entity = /nsubj|nsubjpass/  [word=/(?i)it/]
+    belief:Entity = /ccomp|A1|dobj|xcomp|advcl|nmod_about/
 
+- name: ${label}-believe-participle
+  priority: ${rulepriority}
+  label: ${label}
+  graph: "hybrid"
+  example: "We are all worried about global warming"
+  pattern: |
+    trigger = [lemma=/${participial_belief_triggers}/ & tag=/^VBN/]
+    believer:Entity = /nsubjpass|A0/
+    belief:Entity = /nmod_about/
 
-- name: ${label}-believe-4
+- name: ${label}-believe-split-belief
   priority: ${rulepriority}
   label: ${label}
   graph: "hybrid"
   example: "Trump is believed to be a narcissist"
   pattern: |
-    trigger = [lemma=/think|believe/ & tag=/^V/]
+    trigger = [lemma=/think|believe|expect/ & tag=/^VBN/]
     beliefTheme:Entity = /nsubjpass|A1/
     belief:Entity = /xcomp/
 
-- name: ${label}-believe5
+- name: ${label}-believe-impersonal-it
   priority: ${rulepriority}
   label: ${label}
   graph: "hybrid"
-  example: "Paul is sure that bleach kills covid."
   pattern: |
-    trigger = [lemma=/(sure|certain|convinced|confident|positive|hesitant)$/ & tag=/^J/]
-    believer:Entity = /nsubj/
-    belief:Entity = /ccomp|A1|dobj|advcl/
+    trigger = [lemma=/^trust/ & tag=/^V/]
+    believer:Entity = /nsubj|nsubjpass/  [word=/(?i)it/]
+    belief:Entity = /xcomp/
 
+- name: ${label}-believe-control
+  priority: ${rulepriority}
+  label: ${label}
+  graph: "hybrid"
+  example: "I expect my investments to do well."
+  pattern: |
+    trigger = [lemma=/expect/]
+    believer:Entity = /nsubj/
+    belief:Entity = dobj| xcomp | nsubj /xsubj$/ A3
+
+- name: ${label}-believe-willingness
+  priority: ${rulepriority}
+  label: ${label}
+  graph: "hybrid"
+  example: "Despite farmers' willingness to diversify crop production, growing new crops is risky and self-financed."
+  pattern: |
+    trigger = [lemma=/willingness/]
+    believer:Agent = "nmod:poss"
+    belief:Entity = acl
+
+- name: ${label}-believe-recognize
+  priority: ${rulepriority}
+  label: ${label}
+  graph: "hybrid"
+  example: "The networks recognized the importance of maintaining extension services to ensure that their farmer members applied best practices."
+  pattern: |
+    trigger = [lemma=/recognize/] (?= [word = "the"] [word="importance"])
+    believer:Entity = nsubj
+    belief:Entity = dobj acl
+
+- name: ${label}-believe-stigma
+  priority: ${rulepriority}
+  label: ${label}
+  graph: "hybrid"
+  example: "However, FEPROMAS detected a cultural norm of negative stigma attached with receiving food aid."
+  pattern: |
+    trigger = [lemma=/stigma/]
+    belief:Entity = A1 | acl advcl
+  #
+- name: ${label}-believe-impersonal-adj
+  priority: ${rulepriority}
+  label: ${label}
+  graph: "hybrid"
+  pattern: |
+    trigger = [lemma=/hard|easy/] [word = "to"] [word="see"]
+    believer:Entity = /nsubj|expl/ [word=/(?i)it/]
+    belief:Entity = /ccomp|A1|dobj|xcomp/
+
+- name: ${label}-believe-likely
+  priority: ${rulepriority}
+  label: ${label}
+  graph: "hybrid"
+  pattern: |
+    trigger = [lemma=/likely|unlikely/]
+    beliefTheme:Entity = /nsubj/ [!word=/(?i)(it|this)/]
+    belief:Entity = /ccomp|xcomp/
+
+# Temporarily disabled, to review
+
+#- name: ${label}-believe-1
+#  priority: ${rulepriority}
+#  label: ${label}
+#  graph: "hybrid"
+#  pattern: |
+#    trigger = [lemma="not"]? [lemma=/credible|convince|believable|skeptical|credible|likely|unlikely|provable|possible|impossible|probable|improbable|plausible|implausible|reasonable|unreasonable|conclusive|unsupportable|questionable|unquestionable|axiomatic|true|false|established|debatable|equivocal|unequivocal|dubious|suspect|inconceivable|incontrovertible|indubitable|worry|hopeful/ & tag=/^V|^J/]
+#    believer:Entity = /nsubj|A0/
+#    belief:Entity = /ccomp|A1|dobj|xcomp|nmod_about/
+
+#- name: ${label}-believe6
+#  priority: ${rulepriority}
+#  label: ${label}
+#  graph: "hybrid"
+#  example: "I look forward to my investments doing well."
+#  pattern: |
+#    trigger = [lemma=/look/] (?= [word = "forward"])
+#    believer:Agent = /nsubj/
+#    belief:Entity = /ccomp|A1|dobj|advcl/
+
+##- name: ${label}-believe9
+##  priority: ${rulepriority}
+##  label: ${label}
+##  graph: "hybrid"
+##  example: "The Kissal Patim manager expressed surprise that the percentage of severely food insecure households in Round 1 (76 percent) was not in fact higher due to the high level of vulnerability in her zone."
+##  pattern: |
+##    trigger = [lemma=/surprise/]
+##    believer:Entity = >dobj nsubj
+##    belief:Entity = A1
+#
+#- name: ${factLabel}-likely-fact1
+#  priority: ${rulepriority}
+#  label: ${label}  #${factLabel}
+#  graph: "hybrid"
+#  example: "The Government of Senegal and other key stakeholders acknowledge that a major issue in the country is that there is a lack of effective concerted planning of the climate change efforts."
+#  pattern: |
+#    trigger = [lemma=/acknowledge|state|explain/]
+#    believer:Agent = /nsubj/
+#    belief:Entity = ccomp
+
+#- name: ${factLabel}-likely-fact2
+#  priority: ${rulepriority}
+#  label: ${label}  #${factLabel}
+#  graph: "hybrid"
+#  example: "The Government of Senegal and other key stakeholders acknowledge that a major issue in the country is that there is a lack of effective concerted planning of the climate change efforts."
+#  pattern: |
+#    trigger = [lemma=/positive/]
+#    believer:Entity = /nsubj/ [word=/(?i)it/]
+#    belief:Entity = ccomp

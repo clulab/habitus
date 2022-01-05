@@ -28,3 +28,18 @@ rules:
       [chunk='B-VP' & !mention=Avoid]? [chunk='I-VP' & !mention=Avoid]+
       |
       [chunk='B-VP' & !mention=Avoid]
+
+  - name: agent-rule
+    label: Agent
+    priority: 1
+    type: token
+    pattern: |
+      [entity=/B-ACTOR|B-ORG/ & !mention=Avoid] [entity=/I-ACTOR|I-ORG/ & !mention=Avoid]?
+
+  - name: generic-agent-rule
+    label: Agent
+    priority: 1
+    type: token
+    pattern: |
+      [word=/(?i)^(I|he|she|they|we)$/]
+

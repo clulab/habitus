@@ -33,7 +33,10 @@ object BeliefReader {
     ).autoClose { multiPrinter =>
       for (file <- parFiles) {
         try {
-          val text = FileUtils.getTextFromFile(file)
+          val unfiltered = FileUtils.getTextFromFile(file)
+          // fixme: temporary, simple text cleanup
+          val text = unfiltered.replace("\n",
+            " ").replace("- ", "")
           val filename = StringUtils.afterLast(file.getName, '/')
           println(s"going to parse input file: $filename")
           val (doc, mentions) = vp.parse(text)

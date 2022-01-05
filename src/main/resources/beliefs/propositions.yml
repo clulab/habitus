@@ -1,0 +1,43 @@
+vars: beliefs/triggers.yml
+#
+# Mention believe that Mention, e.g.: The farmers believe that loans are useful
+#
+
+rules:
+
+# proposition rules are intended to help capture more complete propositions/assist with expansion
+
+- name: proposition-rule-cop
+  label: Proposition
+  priority: ${priority}
+  type: dependency
+  pattern: |
+    trigger = [lemma = "be"]
+    subj:NounPhrase = <cop nsubj
+    obj:NounPhrase = <cop
+
+- name: proposition-rule-expl
+  label: Proposition
+  priority: ${priority}
+  type: dependency
+  pattern: |
+    trigger = [word="there"] [lemma = "be"]
+    subj:NounPhrase = nsubj
+
+- name: proposition-rule-verb
+  label: Proposition
+  priority: ${priority}
+  type: dependency
+  pattern: |
+    trigger = (?<![word="there"]) [tag = /VB/]
+    subj:NounPhrase = nsubj
+    obj:NounPhrase? = dobj
+
+- name: nested-proposition-rule
+  label: Proposition
+  priority: ${nestedPriority}
+  type: dependency
+  pattern: |
+    trigger = [lemma = "be"]
+    subj:NounPhrase = nsubj
+    obj: Proposition = ccomp

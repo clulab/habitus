@@ -7,7 +7,16 @@
 taxonomy: beliefs/taxonomy.yml
 
 rules:
+
+  # proposition mentions are intended to capture more complete beliefs than the expansion handler can
+  - import: beliefs/propositions.yml
+    vars:
+      label: Proposition
+      priority: "2"
+      nestedPriority: "3"
+
   - import: beliefs/events.yml
     vars:
       label: Belief
-      rulepriority: "2"
+      factLabel: LikelyFact
+      rulepriority: "4"
