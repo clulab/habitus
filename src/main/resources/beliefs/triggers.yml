@@ -1,3 +1,4 @@
 active_believer_triggers: "believe|think|feel|trust$|doubt|fear|skeptical|pessimistic|optimistic|hopeful|worry|^sure$|^unsure$|convinced|confident|positive|hesitant|suppose|suspect|perceive|predict" # exclude: reject|submit|certain
 impersonal_belief_triggers: "credible|convincing|believable|conceivable|inconceivable|plausible|questionable|dubious|conclusive|hard|likely|believe|feel|think|expect|difficult|unlikely"
+participial_belief_triggers: "worry"
 

@@ -8,6 +8,7 @@ taxonomy: beliefs/taxonomy.yml
 
 rules:
 
+  # proposition mentions are intended to capture more complete beliefs than the expansion handler can
   - import: beliefs/propositions.yml
     vars:
       label: Proposition

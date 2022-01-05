@@ -9,6 +9,7 @@ class HabitusActions extends Actions {
   // local actions
   //
   def uniqueArguments(mentions: Seq[Mention]): Seq[Mention] = {
+    // filter out mentions where one mention acts as two types of argument (e.g., one tbd extracted as both believer and belief arg)
     val toReturn = new ArrayBuffer[Mention]()
     for (m <- mentions) {
       val allArgs = m.arguments.values.flatten.toSeq
@@ -17,7 +18,6 @@ class HabitusActions extends Actions {
       }
     }
     toReturn
-
   }
 
 
@@ -51,21 +51,18 @@ class HabitusActions extends Actions {
     }
 
     keepOneOfSameSpan(uniqueArguments(filteredBeliefs ++ nonBeliefs))
-//    uniqueArguments(mentions)
-//    uniqueArguments(filteredBeliefs ++ nonBeliefs)
   }
 
   def keepOneOfSameSpan(mentions: Seq[Mention]): Seq[Mention] = {
+    // if there are two mentions of same span and label, keep one
+    // fixme: maybe pick one with longer arg spans
     val toReturn = new ArrayBuffer[Mention]()
     val groupedBySent = mentions.groupBy(_.sentence)
     for (sentGroup <- groupedBySent) {
-//      for (sg <- sentGroup._2) println("sg1: " + sg.text)
       val groupedByLabel = sentGroup._2.groupBy(_.label)
       for (labelGroup <- groupedByLabel) {
-//        for (sg <- labelGroup._2) println("sg2: " + sg.text)
         val groupedBySpan = labelGroup._2.groupBy(_.tokenInterval)
         for (spanGroup <- groupedBySpan) {
-//          for (sg <- spanGroup._2) println("sg: " + sg.text)
           toReturn.append(spanGroup._2.head)
         }
       }

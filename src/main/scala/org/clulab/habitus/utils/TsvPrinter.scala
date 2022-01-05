@@ -34,7 +34,7 @@ class TsvPrinter(outputFilename: String) extends Printer {
     for ((s, i) <- doc.sentences.zipWithIndex) {
 
       // to keep only mention labelled as Assignment (these labels are associated with .yml files, e.g. Variable, Value)
-      val sortedMentions = mentionsBySentence(i).filter(_.labels contains printVars.mentionLabel)
+      val sortedMentions = mentionsBySentence(i).filter(_.label matches printVars.mentionLabel)
 
 
       sortedMentions.foreach {
@@ -112,8 +112,7 @@ class TsvPrinter(outputFilename: String) extends Printer {
             }
           } catch {
             case e: NoSuchElementException =>
-              println("Something went wrong here: " + m.text + " | label " + m.label + " sent: " + m.sentenceObj.getSentenceText)
-              println(s"No normalized value found for ${m.arguments("value").head.text} in sentence ${s.getSentenceText}!")
+              println(s"Something went wrong while extracting a ${m.label} mention from this sentence: ${m.sentenceObj.getSentenceText}")
               e.printStackTrace()
             case e: RuntimeException =>
               println(s"Error occurs for sentence: ${s.getSentenceText}")

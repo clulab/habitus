@@ -45,6 +45,16 @@ rules:
     believer:Entity = /nsubj|nsubjpass/  [word=/(?i)it/]
     belief:Entity = /ccomp|A1|dobj|xcomp|advcl|nmod_about/
 
+- name: ${label}-believe-participle
+  priority: ${rulepriority}
+  label: ${label}
+  graph: "hybrid"
+  example: "We are all worried about global warming"
+  pattern: |
+    trigger = [lemma=/${participial_belief_triggers}/ & tag=/^VBN/]
+    believer:Entity = /nsubjpass|A0/
+    belief:Entity = /nmod_about/
+
 - name: ${label}-believe-split-belief
   priority: ${rulepriority}
   label: ${label}
@@ -71,8 +81,8 @@ rules:
   example: "I expect my investments to do well."
   pattern: |
     trigger = [lemma=/expect/]
-    believer:Agent = /nsubj/
-    belief:Entity = xcomp | nsubj /xsubj$/ A3
+    believer:Entity = /nsubj/
+    belief:Entity = dobj| xcomp | nsubj /xsubj$/ A3
 
 - name: ${label}-believe-willingness
   priority: ${rulepriority}
@@ -92,8 +102,8 @@ rules:
   pattern: |
     trigger = [lemma=/recognize/] (?= [word = "the"] [word="importance"])
     believer:Entity = nsubj
-    belief:Entity = dobj
-  #
+    belief:Entity = dobj acl
+
 - name: ${label}-believe-stigma
   priority: ${rulepriority}
   label: ${label}
@@ -109,7 +119,7 @@ rules:
   graph: "hybrid"
   pattern: |
     trigger = [lemma=/hard|easy/] [word = "to"] [word="see"]
-    believer:Entity = /nsubj|expl/ [word="it"]
+    believer:Entity = /nsubj|expl/ [word=/(?i)it/]
     belief:Entity = /ccomp|A1|dobj|xcomp/
 
 - name: ${label}-believe-likely

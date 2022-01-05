@@ -7,7 +7,7 @@ rules:
 
 # proposition rules are intended to help capture more complete propositions/assist with expansion
 
-- name: proposition-rule1
+- name: proposition-rule-cop
   label: Proposition
   priority: ${priority}
   type: dependency
@@ -16,7 +16,7 @@ rules:
     subj:NounPhrase = <cop nsubj
     obj:NounPhrase = <cop
 
-- name: proposition-rule1b
+- name: proposition-rule-expl
   label: Proposition
   priority: ${priority}
   type: dependency
@@ -24,7 +24,7 @@ rules:
     trigger = [word="there"] [lemma = "be"]
     subj:NounPhrase = nsubj
 
-- name: proposition-rule2
+- name: proposition-rule-verb
   label: Proposition
   priority: ${priority}
   type: dependency
