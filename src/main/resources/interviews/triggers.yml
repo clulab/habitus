@@ -1,0 +1,4 @@
+statement_triggers: "state|acknowledge|say"
+query_triggers: "ask|request|inquire"
+association_triggers: "link|associate|cooccur|correlate"
+

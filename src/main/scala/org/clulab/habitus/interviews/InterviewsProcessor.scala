@@ -1,27 +1,24 @@
-package org.clulab.habitus.beliefs
+package org.clulab.habitus.interviews
 
 import com.typesafe.config.{ConfigFactory, ConfigValueFactory}
 import org.apache.commons.io.FileUtils
 import org.clulab.dynet.Utils
 import org.clulab.habitus.HabitusProcessor
 import org.clulab.habitus.actions.HabitusActions
-import org.clulab.habitus.utils.ArrayView
 import org.clulab.habitus.variables.VariableProcessor.resourceDir
-import org.clulab.odin.{EventMention, ExtractorEngine, Mention, RelationMention, State, TextBoundMention}
+import org.clulab.odin._
 import org.clulab.openie.entities.CustomizableRuleBasedFinder
 import org.clulab.processors.{Document, Processor}
 import org.clulab.sequences.LexiconNER
-import org.clulab.struct.Interval
 
 import java.io.File
 import java.nio.charset.StandardCharsets
 import scala.collection.JavaConverters.{asJavaIterableConverter, asScalaBufferConverter}
-import scala.collection.mutable.ArrayBuffer
 
 
-class BeliefProcessor(val processor: Processor,
-                      val entityFinder: CustomizableRuleBasedFinder,
-                      val extractor: ExtractorEngine) {
+class InterviewsProcessor(val processor: Processor,
+                          val entityFinder: CustomizableRuleBasedFinder,
+                          val extractor: ExtractorEngine) {
 
   // fixme: you prob want this to be from a config
   val maxHops: Int = 5
@@ -54,74 +51,16 @@ class BeliefProcessor(val processor: Processor,
     // expand the arguments, don't allow to cross the trigger
     val eventTriggers = eventMentions.collect { case em: EventMention => em.trigger }
     val expandedMentions = eventMentions.map(expandArgs(_, State(eventTriggers)))
-    // keep only beliefs that look like propositions
-    val propBeliefMentions = expandedMentions.filter(m => containsPropositionBelief(m) || containsPropositionBeliefWithTheme(m))
-    val triggerFilered = triggerBetweenBelieverAndBelief(propBeliefMentions)
-
-    (doc, triggerFilered.distinct)
+    (doc, expandedMentions.distinct)
   }
 
-
-  def triggerBetweenBelieverAndBelief(mentions: Seq[Mention]): Seq[Mention] = {
-    // filters out belief mentions where believer and belief are not on different sides of the trigger
-    val triggerInBetween = new ArrayBuffer[Mention]()
-    val (believerAndBeliefMentions, other) = mentions.partition { m =>
-      val args = m.arguments.keys.toList
-      args.contains("belief") && args.contains("believer")
-    }
-    for (m <- believerAndBeliefMentions) {
-      val triggerSpan = m.asInstanceOf[EventMention].trigger.tokenInterval
-      val args = m.arguments
-      if (args("believer").head.tokenInterval.start < triggerSpan.start && args("belief").head.tokenInterval.end > triggerSpan.end) {
-        triggerInBetween.append(m)
-      }
-    }
-    triggerInBetween ++ other
-  }
 
   def hasArguments(mention: Mention, keys: String*): Boolean =
       keys.forall(mention.arguments.get(_).exists(_.nonEmpty))
-
-
-  private def containsPropositionBelief(m: Mention): Boolean = {
-    m.isInstanceOf[EventMention] &&
-      hasArguments(m, "belief") &&
-      isProposition(m.arguments("belief").head)
-  }
-
-  private def containsPropositionBeliefWithTheme(m: Mention): Boolean = {
-    m.isInstanceOf[EventMention] &&
-      hasArguments(m, "belief", "beliefTheme") &&
-      isPropositionWithTheme(m.arguments("belief").head, m.arguments("beliefTheme").head)
-  }
-
-  def countStartsWith(strings: Array[String], prefix: String, tokenIntervals: Interval*): Int =
-      tokenIntervals.foldLeft(0) { (sum, tokenInterval) =>
-        sum + ArrayView(strings, tokenInterval.start, tokenInterval.end).count(_.startsWith(prefix))
-      }
-
-  /** True if this mention contains a proposition */
-  private def isProposition(mention: Mention): Boolean = {
-    val tags = mention.sentenceObj.tags.get
-    val span = mention.tokenInterval
-    val nounCount = countStartsWith(tags, "NN", span)
-    val verbCount = countStartsWith(tags, "VB", span)
-    nounCount > 1 || (nounCount > 0 && verbCount > 0)
-  }
-
-  private def isPropositionWithTheme(belief: Mention, beliefTheme: Mention): Boolean = {
-    // accounts for examples like <Belief theme> is believed to <belief>, e.g., `This politician is believed to be a narcissist.`
-    val tags = belief.sentenceObj.tags.get
-    val beliefSpan = belief.tokenInterval
-    val beliefThemeSpan = beliefTheme.tokenInterval
-    val nounCount = countStartsWith(tags, "NN", beliefSpan, beliefThemeSpan)
-    val verbCount = countStartsWith(tags, "VB", beliefSpan, beliefThemeSpan)
-    nounCount > 1 || (nounCount > 0 && verbCount > 0)
-  }
-
 }
 
-object BeliefProcessor {
+
+object InterviewsProcessor {
 
   // Custom NER for variable reading
   def newLexiconNer(): LexiconNER = {
@@ -131,7 +70,7 @@ object BeliefProcessor {
     val isLocal = kbs.forall(new File(resourceDir, _).exists)
     val lexiconNer = LexiconNER(kbs,
       Seq(
-        true, // case insensitive match for fertilizers
+        true, // case insensitive
         true
       ),
       if (isLocal) Some(resourceDir) else None
@@ -140,7 +79,7 @@ object BeliefProcessor {
     lexiconNer
   }
 
-  def apply(): BeliefProcessor = {
+  def apply(): InterviewsProcessor = {
     // create the processor
     Utils.initializeDyNet()
     val lexiconNER = newLexiconNer()
@@ -155,28 +94,28 @@ object BeliefProcessor {
         ConfigValueFactory.fromAnyRef(0)
       ).withValue(
         "CustomRuleBasedEntityFinder.entityRulesPath",
-        ConfigValueFactory.fromAnyRef("beliefs/entities.yml")
+        ConfigValueFactory.fromAnyRef("interviews/entities.yml")
       ).withValue(
         "CustomRuleBasedEntityFinder.ensureBaseTagNounVerb",
         ConfigValueFactory.fromAnyRef("false")
       ).withValue(
         "CustomRuleBasedEntityFinder.avoidRulesPath",
-        ConfigValueFactory.fromAnyRef("beliefs/avoid.yml")
+        ConfigValueFactory.fromAnyRef("interviews/avoid.yml")
       ).withValue(
         "CustomRuleBasedEntityFinder.invalidOutgoing",
-          ConfigValueFactory.fromAnyRef(invalidOutgoing.asJava)
+        ConfigValueFactory.fromAnyRef(invalidOutgoing.asJava)
       )
     )
 
-    BeliefProcessor(processor, finder)
+    InterviewsProcessor(processor, finder)
   }
 
-  def apply(processor: Processor, finder: CustomizableRuleBasedFinder): BeliefProcessor = {
+  def apply(processor: Processor, finder: CustomizableRuleBasedFinder): InterviewsProcessor = {
     // get current working directory
     val cwd = new File(System.getProperty("user.dir"))
     // Find resource dir from project root.
     val resourceDir = new File(cwd, "src/main/resources")
-    val masterFile = new File(resourceDir, "beliefs/master.yml")
+    val masterFile = new File(resourceDir, "interviews/master.yml")
     val actions = new HabitusActions
     // We usually want to reload rules during development,
     // so we try to load them from the filesystem first, then jar.
@@ -185,15 +124,15 @@ object BeliefProcessor {
       val rules = FileUtils.readFileToString(masterFile, StandardCharsets.UTF_8)
       // creates an extractor engine using the rules and the default actions
       val extractor = ExtractorEngine(rules, actions, actions.cleanupAction) // , path = Some(resourceDir)) // TODO: do we still need this?
-      new BeliefProcessor(processor, finder, extractor)
+      new InterviewsProcessor(processor, finder, extractor)
     } else {
       // read rules from yml file in resources
-      val source = io.Source.fromURL(getClass.getResource("/beliefs/master.yml"))
+      val source = io.Source.fromURL(getClass.getResource("/interviews/master.yml"))
       val rules = source.mkString
       source.close()
       // creates an extractor engine using the rules and the default actions
       val extractor = ExtractorEngine(rules, actions, actions.cleanupAction)
-      new BeliefProcessor(processor, finder, extractor)
+      new InterviewsProcessor(processor, finder, extractor)
     }
   }
 
