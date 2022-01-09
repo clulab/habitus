@@ -1,4 +1,4 @@
-package org.clulab.beliefs
+package org.clulab.habitus.beliefs
 
 import com.typesafe.config.{ConfigFactory, ConfigValueFactory}
 import org.apache.commons.io.FileUtils
@@ -126,7 +126,7 @@ object BeliefProcessor {
   // Custom NER for variable reading
   def newLexiconNer(): LexiconNER = {
     val kbs = Seq(
-      "variables/ACTOR.tsv"
+      "beliefs/ACTOR.tsv"
     )
     val isLocal = kbs.forall(new File(resourceDir, _).exists)
     val lexiconNer = LexiconNER(kbs,

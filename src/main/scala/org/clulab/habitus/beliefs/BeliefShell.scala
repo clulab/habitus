@@ -1,4 +1,4 @@
-package org.clulab.beliefs
+package org.clulab.habitus.beliefs
 
 import org.clulab.utils.{CliReader, ExitMenuItem, HelpMenuItem, Menu, SafeDefaultMenuItem, Shell, SimpleMainMenuItem}
 import org.clulab.habitus.utils.displayMentions

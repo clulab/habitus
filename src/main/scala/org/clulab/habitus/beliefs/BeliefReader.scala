@@ -1,4 +1,4 @@
-package org.clulab.beliefs
+package org.clulab.habitus.beliefs
 
 import org.clulab.habitus.utils.{ContextDetails, JsonlPrinter, Lazy, MultiPrinter, PrintVariables, TsvPrinter}
 import org.clulab.utils.{FileUtils, StringUtils, ThreadUtils}

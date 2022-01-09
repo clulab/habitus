@@ -1,8 +1,7 @@
-package org.clulab.beliefs
+package org.clulab.habitus.beliefs
 
 import org.clulab.habitus.utils.Test
 import org.clulab.odin.Mention
-import org.scalatest.{FlatSpec, Matchers}
 
 class TestBeliefReader extends Test {
   val bp = BeliefProcessor()
