@@ -24,8 +24,7 @@ libraryDependencies ++= {
     "org.clulab"    %% "processors-openie"   % procVer,
     "org.clulab"    %% "processors-corenlp"  % procVer,
 
-    // Eidos wants version 8.4.5 of processors, but defer to the one above.
-    "org.clulab"    %% "eidos"               % "1.5.1-SNAPSHOT",
+    "org.clulab"    %% "eidos"               % "1.5.1",
 
     "org.scalatest" %% "scalatest"           % "3.0.5" % "test"
   )
