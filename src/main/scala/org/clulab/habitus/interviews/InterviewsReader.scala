@@ -1,5 +1,6 @@
 package org.clulab.habitus.interviews
 
+import org.clulab.odin.TextBoundMention
 import org.clulab.utils.Closer.AutoCloser
 import org.clulab.utils.{FileUtils, StringUtils, ThreadUtils}
 import org.clulab.wm.eidos.SimpleEidos
@@ -10,8 +11,8 @@ import java.io.{File, PrintWriter}
 object InterviewsReader {
 
   def main(args: Array[String]): Unit = {
-    val inputDir = ""
-    val outputDir = ""
+    val inputDir = "path/to/input/dir"
+    val outputDir = "path/to/output/dir"
     val threads = 1
 
     example()
@@ -30,7 +31,8 @@ object InterviewsReader {
   def run(inputDir: String, outputDir: String, threads: Int): Unit = {
     new File(outputDir).mkdir()
 
-    val vp = InterviewsProcessor()
+    val interviewReader = InterviewsProcessor()
+
     val files = FileUtils.findFiles(inputDir, ".txt")
     val parFiles = if (threads > 1) ThreadUtils.parallelize(files, threads) else files
 
@@ -44,10 +46,8 @@ object InterviewsReader {
             " ").replace("- ", "")
           val filename = StringUtils.afterLast(file.getName, '/')
           println(s"going to parse input file: $filename")
-          val (_, mentions) = vp.parse(text)
-          val contentMentions = mentions.filter(m => m.labels.contains("Event"))
-          for (m <- contentMentions) println("Men: " + m.label + " " + m.text)
-
+          val (_, mentions) = interviewReader.parse(text)
+          val contentMentions = mentions.filter(m => m.labels.contains("Event") & !m.isInstanceOf[TextBoundMention])
           for (m <- contentMentions) {
             pw.print(s"${filename}\t${m.label}\t${m.foundBy}\t${m.sentenceObj.getSentenceText}\t${m.text}")
             for ((key, values) <- m.arguments) {
