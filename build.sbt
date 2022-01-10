@@ -11,19 +11,23 @@ pomIncludeRepository := { (repo: MavenRepository) =>
 
 // for processors-models
 resolvers += "Artifactory" at "http://artifactory.cs.arizona.edu:8081/artifactory/sbt-release"
+// for ontologies related to eidos
+resolvers += "jitpack" at "https://jitpack.io"
 
 libraryDependencies ++= {
   val procVer = "8.4.7"
 
   Seq(
-    "org.scalatest" %% "scalatest" % "3.0.5" % "test",
-    "ai.lum" %% "common" % "0.1.5",
+    "ai.lum"        %% "odinson-core"        % "0.4.0",
 
-    "ai.lum" %% "odinson-core" % "0.4.0",
+    "org.clulab"    %% "processors-main"     % procVer,
+    "org.clulab"    %% "processors-openie"   % procVer,
+    "org.clulab"    %% "processors-corenlp"  % procVer,
 
-    "org.clulab"          %%  "processors-main"          % procVer,
-    "org.clulab"          %%  "processors-openie"        % procVer,
-    "org.clulab"          %%  "processors-corenlp"       % procVer
+    // Eidos wants version 8.4.5 of processors, but defer to the one above.
+    "org.clulab"    %% "eidos"               % "1.5.1-SNAPSHOT",
+
+    "org.scalatest" %% "scalatest"           % "3.0.5" % "test"
   )
 }
 
