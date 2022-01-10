@@ -1,6 +1,8 @@
 package org.clulab.habitus.interviews
 
 import org.clulab.utils.{FileUtils, StringUtils, ThreadUtils}
+import org.clulab.wm.eidos.SimpleEidos
+import org.clulab.wm.eidos.serialization.simple.SimpleSerializer
 
 import java.io.{File, PrintWriter}
 
@@ -11,7 +13,17 @@ object InterviewsReader {
     val outputDir = ""
     val threads = 1
 
+    example()
     run(inputDir, outputDir, threads)
+  }
+
+  def example(): Unit = {
+    val text = "This is a test.  Water trucking in Ethiopia has decreased over August due to the cost of fuel."
+    val eidosSystem = SimpleEidos(useGeoNorm = false, useTimeNorm = false)
+    val annotatedDocument = eidosSystem.extractFromText(text)
+    val simpleSerializer = SimpleSerializer(annotatedDocument)
+
+    simpleSerializer.serialize()
   }
 
   def run(inputDir: String, outputDir: String, threads: Int): Unit = {
