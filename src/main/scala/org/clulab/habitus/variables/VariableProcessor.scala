@@ -46,8 +46,8 @@ object VariableProcessor {
   // Custom NER for variable reading
   def newLexiconNer(): LexiconNER = {
     val kbs = Seq(
-      "variables/FERTILIZER.tsv",
-      "variables/CROP.tsv"
+      "lexicons/FERTILIZER.tsv",
+      "lexicons/CROP.tsv"
     )
     val isLocal = kbs.forall(new File(resourceDir, _).exists)
     val lexiconNer = LexiconNER(kbs,
