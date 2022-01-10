@@ -10,4 +10,4 @@ rules:
   pattern: |
     trigger = [lemma=/${association_triggers}/ & tag=/^V|^J/]
     mainEntity:Entity = /nsubjpass|A0/
-    associatedEntity:Entity = /xcomp|nmod_to|A1/
+    associatedEntity:Entity = /xcomp|nmod_to|A1|nmod_with/
