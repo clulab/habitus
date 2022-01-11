@@ -1,0 +1,3 @@
+#!/bin/bash
+sbt 'runMain org.clulab.habitus.interviews.InterviewsShell'
+

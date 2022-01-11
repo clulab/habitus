@@ -156,7 +156,7 @@ object EntityHistogramExtractor {
   def apply(): EntityHistogramExtractor = {
     // Custom NER for variable reading
     val kbs = Seq(
-      "variables/FERTILIZER.tsv"
+      "lexicons/FERTILIZER.tsv"
     )
     val lexiconNer = LexiconNER(kbs,
       Seq(

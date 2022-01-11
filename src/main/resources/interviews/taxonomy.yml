@@ -1,0 +1,15 @@
+- Entity:
+  - Agent
+  - NounPhrase
+  - AdjPhrase
+  - VerbPhrase
+  - Proposition
+
+# references, tables, etc. to avoid in entities
+- Avoid
+
+- Event:
+  - InteractionEvent:
+      - Statement
+      - Query
+  - Association
