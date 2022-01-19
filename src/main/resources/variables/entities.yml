@@ -24,6 +24,13 @@
   pattern: |
     ([lemma=/early|late/])? /(?i)(^planting|sowing|seeding)/ /date|season|time|timing/?
 
+- name: variable-area
+    priority: ${rulepriority}
+    label: Variable
+    type: token
+    pattern: |
+      ([lemma=/cultivate|plant|sown/])? [lemma=/area/] ([lemma=/sown/])?
+
 - name: variable-bird-attacks
   priority: ${rulepriority}
   label: Variable
