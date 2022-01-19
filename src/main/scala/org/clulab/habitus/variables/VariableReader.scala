@@ -18,6 +18,7 @@ object VariableReader {
     val props = StringUtils.argsToMap(args)
     val inputDir = props("in")
     val outputDir = props("out")
+    val masterResource = props.getOrElse("grammar", "/variables/master.yml")
     val threads = props.get("threads").map(_.toInt).getOrElse(1)
 
     run(inputDir, outputDir, threads)

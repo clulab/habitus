@@ -1,0 +1,15 @@
+- name: value-from-areas
+  priority: ${rulepriority}
+  label: Value
+  type: token
+  pattern: |
+    [entity='B-MEASUREMENT'] [entity='I-MEASUREMENT']*    
+
+- name: variable-area
+  priority: ${rulepriority}
+  label: Variable
+  type: token
+  pattern: |
+    ([lemma=/cultivate|plant|sown/])? [lemma=/area/] ([lemma=/sown/])?
+
+# TODO: add percentages

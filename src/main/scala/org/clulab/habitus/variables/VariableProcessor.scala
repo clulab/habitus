@@ -10,14 +10,16 @@ import org.clulab.utils.FileUtils
 
 import java.io.File
 
-class VariableProcessor(val processor: CluProcessor, val extractor: ExtractorEngine) {
+class VariableProcessor(val processor: CluProcessor, 
+  val extractor: ExtractorEngine, 
+  val masterResource: String) {
 
   def reloaded: VariableProcessor = {
     val newLexiconNer = VariableProcessor.newLexiconNer()
     val newProcessor = processor.copy(optionalNEROpt = Some(Some(newLexiconNer)))
-    val newExtractorEngine = VariableProcessor.newExtractorEngine()
+    val newExtractorEngine = VariableProcessor.newExtractorEngine(masterResource)
 
-    new VariableProcessor(newProcessor, newExtractorEngine)
+    new VariableProcessor(newProcessor, newExtractorEngine, masterResource)
   }
 
 
@@ -40,8 +42,6 @@ object VariableProcessor {
     val cwd = new File(System.getProperty("user.dir"))
     new File(cwd, "src/main/resources")
   }
-  val resourcePath = "/variables/master.yml"
-  val masterFile = new File(resourceDir, resourcePath.drop(1))
 
   // Custom NER for variable reading
   def newLexiconNer(): LexiconNER = {
@@ -61,9 +61,10 @@ object VariableProcessor {
     lexiconNer
   }
 
-  def newExtractorEngine(): ExtractorEngine = {
+  def newExtractorEngine(masterResource: String): ExtractorEngine = {
     // We usually want to reload rules during development,
     // so we try to load them from the filesystem first, then jar.
+    val masterFile = new File(resourceDir, masterResource.drop(1)) // the resource path must start with /
     if (masterFile.exists()) {
       // read file from filesystem
       val rules = FileUtils.getTextFromFile(masterFile)
@@ -72,19 +73,21 @@ object VariableProcessor {
     }
     else {
       // read rules from yml file in resources
-      val rules = FileUtils.getTextFromResource(resourcePath)
+      val rules = FileUtils.getTextFromResource(masterResource)
       // creates an extractor engine using the rules and the default actions
       ExtractorEngine(rules)
     }
   }
 
-  def apply(): VariableProcessor = {
+  def apply(masterResource: String = "/variables/master.yml"): VariableProcessor = {
+    assert(masterResource.startsWith("/"))
+
     // create the processor
     Utils.initializeDyNet()
     val lexiconNer = newLexiconNer()
     val processor = new HabitusProcessor(Some(lexiconNer))
     // val processor = new CluProcessor(optionalNER = Some(lexiconNer))
-    VariableProcessor(processor)
+    VariableProcessor(processor, masterResource)
   }
 
   /**
@@ -93,7 +96,7 @@ object VariableProcessor {
     * @param processor
     * @return
     */
-  def apply(processor: CluProcessor): VariableProcessor = {
-    new VariableProcessor(processor, newExtractorEngine())
+  def apply(processor: CluProcessor, masterResource: String): VariableProcessor = {
+    new VariableProcessor(processor, newExtractorEngine(masterResource), masterResource)
   }
 }
