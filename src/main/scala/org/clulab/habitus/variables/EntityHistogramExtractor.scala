@@ -69,6 +69,9 @@ class EntityHistogramExtractor(val processor: Processor, val extractor: Extracto
   def checkIncreaseFreq(map: mutable.Map[Entity, Int], key: Entity): Unit =
       map(key) = map.getOrElse(key, 0) + 1
 
+  def trackEntityTags(map: mutable.Map[String,String], key: Entity): Unit =
+    map(key.entityValue) = key.tag
+
   def convertMapToSeq(sentIdFreq: mutable.Map[EntityNameNerTag, ArrayBuffer[(Int,Int)]]): Seq[EntityDistFreq] = sentIdFreq
       .map { case (key, value) =>
         EntityDistFreq(key.entityValue, key.nerTag, value)
@@ -104,6 +107,7 @@ class EntityHistogramExtractor(val processor: Processor, val extractor: Extracto
   def getEntityFreqPerSent(doc: Document): Seq[EntityDistFreq] = {
     //for each sentence how many times does this entity occur
     val entitySentFreq = mutable.Map.empty[Entity, Int]
+    val entityTagTracker = mutable.Map.empty[String, String]
     for ((s, i) <- doc.sentences.zipWithIndex) {
       var entityCounter = 0
       //some indices have to be skipped if the entity has multiple tokens e.g.,"United States of America"
@@ -115,13 +119,13 @@ class EntityHistogramExtractor(val processor: Processor, val extractor: Extracto
           var entityName = word.toLowerCase
           //todo: this needs to be passed from user
           //todo: change this to a switch statement?
-          if (nerTag == "B-LOC") {
-            val cleanNerTag = "LOC"
+          if (nerTag == "B-ORG") {
+            val cleanNerTag = "ORG"
             val newEntityName = checkForMultipleTokens(nerTag, entityCounter, indicesToSkip, entityName, s,"I-LOC")
             EntityNameIndex = Some(Entity(newEntityName, cleanNerTag, i))
           }
-          if (nerTag == "B-CROP") {
-            val cleanNerTag = "CROP"
+          if (nerTag == "B-PER") {
+            val cleanNerTag = "PER"
             val newEntityName = checkForMultipleTokens(nerTag, entityCounter, indicesToSkip, entityName, s,"I-CROP")
             EntityNameIndex = Some(Entity(newEntityName, cleanNerTag, i))
           }
@@ -140,7 +144,7 @@ class EntityHistogramExtractor(val processor: Processor, val extractor: Extracto
           }
           if (EntityNameIndex.isDefined) {
             //check if this entity was seen in this sentence before. if yes increase its frequency
-            checkIncreaseFreq(entitySentFreq, EntityNameIndex.get)
+            trackEntityTags(entityTagTracker, EntityNameIndex.get)
           }
         }
         //a counter to keep track of number of entities seen in this sentence- useful in skipindex for multiple tokens
