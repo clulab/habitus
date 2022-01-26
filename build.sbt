@@ -32,5 +32,7 @@ libraryDependencies ++= {
 
 addCommandAlias("dockerize", ";compile;test;docker:publishLocal")
 
-// This seems to help with Ctrl+C processing.
-run / fork := true
+// This with true seems to help with Ctrl+C processing.
+// run / fork := true
+// However, it has the side-effect of causing the BeliefShell to fall through and exit. 
+run / fork := false
