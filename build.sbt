@@ -1,6 +1,6 @@
 name := "habitus"
 organization := "org.clulab"
-scalaVersion := "2.12.10"
+scalaVersion := "2.12.15"
 
 lazy val core: Project = (project in file("."))
     .enablePlugins(JavaAppPackaging, DockerPlugin)
@@ -10,7 +10,7 @@ pomIncludeRepository := { (repo: MavenRepository) =>
 }
 
 // for processors-models
-resolvers += "Artifactory" at "http://artifactory.cs.arizona.edu:8081/artifactory/sbt-release"
+resolvers += ("Artifactory" at "http://artifactory.cs.arizona.edu:8081/artifactory/sbt-release").withAllowInsecureProtocol(true)
 // for ontologies related to eidos
 resolvers += "jitpack" at "https://jitpack.io"
 
@@ -31,3 +31,6 @@ libraryDependencies ++= {
 }
 
 addCommandAlias("dockerize", ";compile;test;docker:publishLocal")
+
+// This seems to help with Ctrl+C processing.
+run / fork := true
