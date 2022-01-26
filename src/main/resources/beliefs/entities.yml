@@ -29,6 +29,13 @@ rules:
       |
       [chunk='B-VP' & !mention=Avoid]
 
+  - name: inf-vp
+    label: InfPhrase
+    priority: 1
+    type: token
+    pattern: |
+      [word = "to"] [chunk = "I-VP"]+
+
   - name: agent-rule
     label: Agent
     priority: 1

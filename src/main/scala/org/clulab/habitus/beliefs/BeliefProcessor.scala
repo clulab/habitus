@@ -54,8 +54,9 @@ class BeliefProcessor(val processor: Processor,
     // expand the arguments, don't allow to cross the trigger
     val eventTriggers = eventMentions.collect { case em: EventMention => em.trigger }
     val expandedMentions = eventMentions.map(expandArgs(_, State(eventTriggers)))
+//    for (m <- eventMentions) println("M: " + m.label + " " + m.text)
     // keep only beliefs that look like propositions
-    val propBeliefMentions = expandedMentions.filter(m => containsPropositionBelief(m) || containsPropositionBeliefWithTheme(m))
+    val propBeliefMentions = expandedMentions.filter(m => containsPropositionBelief(m) || containsPropositionBeliefWithTheme(m) || m.arguments.keys.toList.length > 2)
     val triggerFilered = triggerBetweenBelieverAndBelief(propBeliefMentions)
 
     (doc, triggerFilered.distinct)

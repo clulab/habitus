@@ -18,6 +18,15 @@ rules:
     believer:Agent = /nsubj|A0/
     belief:Proposition = /ccomp|A1|dobj|xcomp|advcl/
 
+- name: ${label}-consider-active-believer
+  priority: ${rulepriority}
+  label: ${label}
+  graph: "hybrid"
+  pattern: |
+    trigger = [lemma=/consider/ & tag=/^V|^J/] 
+    believer:Agent = /nsubj|A0/
+    belief:Proposition = /xcomp/
+
 - name: ${label}-believe-active-believer-entity
   priority: ${rulepriority}
   label: ${label}
@@ -27,23 +36,24 @@ rules:
     believer:Agent = /nsubj$|A0/
     belief:Entity = /ccomp|A1|dobj|xcomp|advcl|nmod_about/
 
-- name: ${label}-believe-impersonal-believer-prop
-  priority: ${rulepriority}
-  label: ${label}
-  graph: "hybrid"
-  pattern: |
-    trigger = [lemma=/${impersonal_belief_triggers}/ & tag=/^J|VBG|VBN/]
-    believer:Entity = /nsubj|nsubjpass|A0/ [word=/(?i)it/]
-    belief:Proposition = /ccomp|A1|dobj|xcomp|advcl|nmod_about/
+# these are for author beliefs
+#- name: ${label}-believe-impersonal-believer-prop
+#  priority: ${rulepriority}
+#  label: ${label}
+#  graph: "hybrid"
+#  pattern: |
+#    trigger = [lemma=/${impersonal_belief_triggers}/ & tag=/^J|VBG|VBN/]
+#    believer:Entity = /nsubj|nsubjpass|A0/ [word=/(?i)it/]
+#    belief:Proposition = /ccomp|A1|dobj|xcomp|advcl|nmod_about/
 
-- name: ${label}-believe-impersonal-believer-ent
-  priority: ${rulepriority}
-  label: ${label}
-  graph: "hybrid"
-  pattern: |
-    trigger = [lemma=/${impersonal_belief_triggers}/ & tag=/^J|VBG|VBN/]
-    believer:Entity = /nsubj|nsubjpass/  [word=/(?i)it/]
-    belief:Entity = /ccomp|A1|dobj|xcomp|advcl|nmod_about/
+#- name: ${label}-believe-impersonal-believer-ent
+#  priority: ${rulepriority}
+#  label: ${label}
+#  graph: "hybrid"
+#  pattern: |
+#    trigger = [lemma=/${impersonal_belief_triggers}/ & tag=/^J|VBG|VBN/]
+#    believer:Entity = /nsubj|nsubjpass/  [word=/(?i)it/]
+#    belief:Entity = /ccomp|A1|dobj|xcomp|advcl|nmod_about/
 
 - name: ${label}-believe-participle
   priority: ${rulepriority}
@@ -59,18 +69,20 @@ rules:
   priority: ${rulepriority}
   label: ${label}
   graph: "hybrid"
-  example: "Trump is believed to be a narcissist"
+  example: "Trump is believed to be a narcissist" # doesn't work: The rainy season starting date and seasonal forecasts are considered by farmers as the most important type of information .
+
   pattern: |
-    trigger = [lemma=/think|believe|expect/ & tag=/^VBN/]
+    trigger = [lemma=/think|believe|expect|consider/ & tag=/^VBN/]
     beliefTheme:Entity = /nsubjpass|A1/
-    belief:Entity = /xcomp/
+    belief:Entity = /xcomp| nmod_as/
+    believer:Agent? = nmod_by  #include explicit believer?
 
 - name: ${label}-believe-impersonal-it
   priority: ${rulepriority}
   label: ${label}
   graph: "hybrid"
   pattern: |
-    trigger = [lemma=/^trust/ & tag=/^V/]
+    trigger = [lemma=/^trust|believe/ & tag=/^V/]
     believer:Entity = /nsubj|nsubjpass/  [word=/(?i)it/]
     belief:Entity = /xcomp/
 
@@ -112,24 +124,43 @@ rules:
   pattern: |
     trigger = [lemma=/stigma/]
     belief:Entity = A1 | acl advcl
-  #
-- name: ${label}-believe-impersonal-adj
-  priority: ${rulepriority}
-  label: ${label}
-  graph: "hybrid"
-  pattern: |
-    trigger = [lemma=/hard|easy/] [word = "to"] [word="see"]
-    believer:Entity = /nsubj|expl/ [word=/(?i)it/]
-    belief:Entity = /ccomp|A1|dobj|xcomp/
 
-- name: ${label}-believe-likely
+- name: ${label}-popular
+  priority: ${rulepriority}
+  label: ${label}
+  type: "token"
+  example: "manual threshing is popular"
+  pattern: |
+    @beliefTheme:NounPhrase (?<trigger> [lemma = "be"]) (?<belief> [word = "popular"])
+
+- name: ${label}-prefer
   priority: ${rulepriority}
   label: ${label}
   graph: "hybrid"
+  example: "Abduland Salin (2005) reported that farmers preferred the modified pedal thresher to the unmodified model"
   pattern: |
-    trigger = [lemma=/likely|unlikely/]
-    beliefTheme:Entity = /nsubj/ [!word=/(?i)(it|this)/]
-    belief:Entity = /ccomp|xcomp/
+    trigger = [lemma=/expect|want|prefer|hope/]
+    believer:Agent = nsubj
+    belief:Entity = /dobj|xcomp/
+  # this is author's belief
+#- name: ${label}-believe-impersonal-adj
+#  priority: ${rulepriority}
+#  label: ${label}
+#  graph: "hybrid"
+#  pattern: |
+#    trigger = [lemma=/hard|easy/] [word = "to"] [word="see"]
+#    believer:Entity = /nsubj|expl/ [word=/(?i)it/]
+#    belief:Entity = /ccomp|A1|dobj|xcomp/
+
+# this is author's belief; even in "famers are likely to plant ...", it's the belief of the author, right?
+#- name: ${label}-believe-likely
+#  priority: ${rulepriority}
+#  label: ${label}
+#  graph: "hybrid"
+#  pattern: |
+#    trigger = [lemma=/likely|unlikely/]
+#    beliefTheme:Entity = /nsubj/ [!word=/(?i)(it|this)/]
+#    belief:Entity = /ccomp|xcomp/
 
 # Temporarily disabled, to review
 

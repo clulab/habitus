@@ -3,6 +3,7 @@
   - NounPhrase
   - AdjPhrase
   - VerbPhrase
+  - InfPhrase
   - Proposition
 
 # references, tables, etc. to avoid in entities

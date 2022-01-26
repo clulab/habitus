@@ -4,6 +4,20 @@ rules:
 
 # proposition rules are intended to help capture more complete propositions/assist with expansion
 
+- name: proposition-rule-inf-nom-pred
+  label: Proposition
+  priority: ${priority}
+  type: token
+  pattern: |
+    @NounPhrase "to" "be" @AdjPhrase | @NounPhrase "to" "be" [tag = "DT"]? @NounPhrase
+
+- name: proposition-rule-inf-verb-pred
+  label: Proposition
+  priority: ${priority}
+  type: token
+  pattern: |
+    @NounPhrase "to" @VerbPhrase
+
 - name: proposition-rule-cop
   label: Proposition
   priority: ${priority}
