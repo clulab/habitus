@@ -2,6 +2,7 @@ package org.clulab.habitus.variables
 
 import org.clulab.dynet.Utils
 import org.clulab.habitus.HabitusProcessor
+import org.clulab.habitus.actions.HabitusActions
 import org.clulab.odin.{EventMention, ExtractorEngine, Mention}
 import org.clulab.processors.Document
 import org.clulab.processors.clu.CluProcessor
@@ -26,7 +27,7 @@ class VariableProcessor(val processor: CluProcessor,
   def parse(text: String): (Document, Seq[Mention], Seq[EventMention], Seq[EntityDistFreq]) = {
     // pre-processing
     val doc = processor.annotate(text, keepText = false)
-
+    val actions = new HabitusActions
     // extract mentions from annotated document
     val mentions = extractor.extractFrom(doc).sortBy(m => (m.sentence, m.getClass.getSimpleName))
 
@@ -68,8 +69,9 @@ object VariableProcessor {
     if (masterFile.exists()) {
       // read file from filesystem
       val rules = FileUtils.getTextFromFile(masterFile)
+      val actions = new HabitusActions
       // creates an extractor engine using the rules and the default actions
-      ExtractorEngine(rules, ruleDir = Some(resourceDir))
+      ExtractorEngine(rules, actions, ruleDir = Some(resourceDir))
     }
     else {
       // read rules from yml file in resources

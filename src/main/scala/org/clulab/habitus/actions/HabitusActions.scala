@@ -1,6 +1,6 @@
 package org.clulab.habitus.actions
 
-import org.clulab.odin.{Actions, Mention, State}
+import org.clulab.odin.{Actions, EventMention, Mention, RelationMention, State, TextBoundMention}
 
 import scala.collection.mutable.ArrayBuffer
 
@@ -49,13 +49,38 @@ class HabitusActions extends Actions {
           innerBelief.tokenInterval.contains(outerBelief.tokenInterval)
       }
     }
-
     keepOneOfSameSpan(uniqueArguments(filteredBeliefs ++ nonBeliefs))
   }
 
+  def copyWithArgs(orig: Mention, newArgs: Map[String, Seq[Mention]]): Mention = {
+    orig match {
+      case tb: TextBoundMention => ???
+      case rm: RelationMention => rm.copy(arguments = newArgs)
+      case em: EventMention => em.copy(arguments = newArgs)
+      case _ => ???
+    }
+  }
+
+  def splitIfTwoValues(mentions: Seq[Mention]): Seq[Mention] = {
+    // for area rules; if there is an extraction with multiple value args,
+    // split it into binary var-value mentions
+    val (assignmentMentions, other) = mentions.partition(_ matches "Assignment")
+    val toReturn = new ArrayBuffer[Mention]()
+    for (am <- assignmentMentions) {
+      val valueArgs = am.arguments("value")
+      if (valueArgs.length > 1) {
+        for (valueArg <- valueArgs) {
+          val newArgs = Map("variable" -> Seq(am.arguments("variable").head), "value" -> Seq(valueArg))
+          toReturn.append(copyWithArgs(am, newArgs))
+        }
+      } else toReturn.append(am)
+    }
+    toReturn ++ other
+  }
+
+
   def keepOneOfSameSpan(mentions: Seq[Mention]): Seq[Mention] = {
     // if there are two mentions of same span and label, keep one
-    // fixme: maybe pick one with longer arg spans
     val toReturn = new ArrayBuffer[Mention]()
     val groupedBySent = mentions.groupBy(_.sentence)
     for (sentGroup <- groupedBySent) {
@@ -63,7 +88,11 @@ class HabitusActions extends Actions {
       for (labelGroup <- groupedByLabel) {
         val groupedBySpan = labelGroup._2.groupBy(_.tokenInterval)
         for (spanGroup <- groupedBySpan) {
-          toReturn.append(spanGroup._2.head)
+          // pick the one that has most args to avoid filtering out mentions that allow for
+          // more than one arg of the same type
+          //todo: add 'by longest arg span' as an alternative way to pick which overlapping mention to keep?
+          val menToKeep = spanGroup._2.maxBy(_.arguments.values.flatten.toSeq.length)
+          toReturn.append(menToKeep)
         }
       }
     }

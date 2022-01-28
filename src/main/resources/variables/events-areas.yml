@@ -1,14 +1,17 @@
 
 - name: ${label}-var-val
   priority: ${rulepriority} 
-  label: ${label} 
+  label: ${label}
+  action: splitIfTwoValues
   type: token
   pattern: |
-    @variable:Variable ( [word=/.+/]{, 10} @value:Value )+ 
+    @variable:Variable ( [word=/.+/]{, 10}) @value:Value ( [word=/.+/]{, 10}) @value:Value
+#    @variable:Variable ( [word=/.+/]{, 10} @value:Value )+  # does not work this way
 
 - name: ${label}-val-var
   priority: ${rulepriority} 
-  label: ${label} 
+  label: ${label}
+  action: splitIfTwoValues
   type: token
   pattern: |
     ( @value:Value [word=/.+/]{, 10} )+ @variable:Variable  
