@@ -60,7 +60,7 @@ class VariableShell(val masterResource: String) extends ReloadableShell {
 
 object VariableShell extends App {
   val props = StringUtils.argsToMap(args)
-  val masterResource = props.getOrElse("grammar", "/variables/master.yml")
+  val masterResource = props.getOrElse("grammar", "/variables/master-areas.yml")
   
   new VariableShell(masterResource).shell()
 }
