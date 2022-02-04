@@ -1,5 +1,6 @@
 package org.clulab.habitus.utils
 
+import org.clulab.habitus.variables.VariableProcessor
 import org.clulab.odin.Mention
 import org.clulab.processors.Document
 import org.clulab.utils.FileUtils
@@ -27,14 +28,45 @@ class TsvPrinter(outputFilename: String) extends Printer {
     printWriter.flush()
   }
 
+  def findClosestDate(mention: Mention, dates: Seq[Mention]): Mention = {
+    var minDist = 100
+    var minDistDate = dates.head
+    for (date <- dates) {
+      if (math.abs(mention.tokenInterval.start - date.tokenInterval.end ) < minDist | math.abs(mention.tokenInterval.end - date.tokenInterval.start) < minDist) minDistDate = date
+    }
+    minDistDate
+  }
+
+  def findClosestNextLocation(mention: Mention, locations: Seq[Mention]): Mention = {
+    if (locations.length == 1) return locations.head
+   val nextLocations = locations.filter(_.tokenInterval.start > mention.arguments("value").head.tokenInterval.start)
+    println("Sent: " + mention.sentenceObj.getSentenceText + "<<<")
+    println("Men: " + mention.arguments("value").head.text)
+    println("All locations: " + locations.map(_.text).mkString("||"))
+    println("After locations: " + nextLocations.map(_.text).mkString("||"))
+     if (nextLocations.nonEmpty) nextLocations.minBy(_.tokenInterval)
+     else null
+  }
+
   // extract needed information and write them to tsv in a desired format. Return nothing here!
   protected def outputMentions(mentions: Seq[Mention], doc: Document, contexts: mutable.Map[Int, ContextDetails],
                                filename: String, pw: PrintWriter,printVars:PrintVariables): Unit = {
+
     val mentionsBySentence = mentions groupBy (_.sentence) mapValues (_.sortBy(_.start)) withDefaultValue Nil
     for ((s, i) <- doc.sentences.zipWithIndex) {
 
+      val thisSentMentions = mentionsBySentence(i).distinct
       // to keep only mention labelled as Assignment (these labels are associated with .yml files, e.g. Variable, Value)
-      val sortedMentions = mentionsBySentence(i).filter(_.label matches printVars.mentionLabel)
+      val sortedMentions = thisSentMentions.filter(_.label matches printVars.mentionLabel)
+      val dates = thisSentMentions.filter(_.label == "Date")
+      val locations = thisSentMentions.filter(_.label == "Location")
+//      if (sortedMentions.nonEmpty) {
+//        if (locations.nonEmpty) {
+//          println("sent: " + sortedMentions.head.sentenceObj.getSentenceText)
+//          println("locs: " + locations.map(_.text).mkString("::") + "\n")
+//        }
+//      }
+
 
 
       sortedMentions.foreach {
@@ -51,50 +83,68 @@ class TsvPrinter(outputFilename: String) extends Printer {
             val sentText = s.getSentenceText
             val valNorms = value.norms
             val foundBy = m.foundBy
+            val date = dates.length match {
+              case 0 => "N/A"
+              case 1 => dates.head.text
+              case _ => findClosestDate(m, dates).text
+            }
+            val location = locations.length match {
+              case 0 => "N/A"
+              case _ => {
+                val nextLoc = findClosestNextLocation(m, locations)
+                if (nextLoc != null) nextLoc.text else "N/A"
+              }
+            }
 
             if (contexts.nonEmpty) {
-              val norm =
-                if (valNorms.isDefined && valNorms.get.size > 2) {
-                  valNorms.filter(_.length > 2).get(0)
+              val norm = {
+                // todo: what is the size > 2 for?
+                if (valNorms.isDefined && valNorms.get.size >= 2) {
+                  valNorms.filter(_.length >= 2).get(0)
                 } else {
                   //
                   // not all NEs have meaningful norms set
                   //   For example, DATEs have norms, but CROPs do not
                   // in the latter case, we revert to the lemmas or to the actual text as a backoff
                   //
-                  if (value.lemmas.isDefined) {
-                    value.lemmas.get.mkString(" ")
+                  if (value.words.nonEmpty) {
+                    value.words.mkString(" ")
                   } else {
                     value.text
                   }
                 }
+              }
 
               if (contexts.contains(i)) {
-                pw.println(s"$varText\t$valText\t$norm\t$sentText\t$filename\t${
-                  contexts(i).mostFreqLoc0Sent
-                }\t${
-                  contexts(i).mostFreqLoc1Sent
-                }\t${
-                  contexts(i).mostFreqLoc
-                }\t${
-                  contexts(i).mostFreqDate0Sent
-                }\t${
-                  contexts(i).mostFreqDate1Sent
-                }\t${
-                  contexts(i).mostFreqDate
-                }\t${
-                  contexts(i).mostFreqCrop0Sent
-                }\t${
-                  contexts(i).mostFreqCrop1Sent
-                }\t${
-                  contexts(i).mostFreqCrop
-                }\t${
-                  contexts(i).mostFreqFertilizer0Sent
-                }\t${
-                  contexts(i).mostFreqFertilizer1Sent
-                }\t${
-                  contexts(i).mostFreqFertilizerOverall
-                }")
+                val relative = Seq("vs", "vs.", "respectively")
+                val comparative = if (m.sentenceObj.words.intersect(relative).nonEmpty) "1" else "0"
+                pw.println(s"$varText\t$valText\t$norm\t$sentText\t$filename\t$date\t$location\t$comparative")
+
+//                  s"$varText\t$valText\t$norm\t$sentText\t$filename\t${
+//                  contexts(i).mostFreqLoc0Sent
+//                }\t${
+//                  contexts(i).mostFreqLoc1Sent
+//                }\t${
+//                  contexts(i).mostFreqLoc
+//                }\t${
+//                  contexts(i).mostFreqDate0Sent
+//                }\t${
+//                  contexts(i).mostFreqDate1Sent
+//                }\t${
+//                  contexts(i).mostFreqDate
+////                }\t${
+////                  contexts(i).mostFreqCrop0Sent
+////                }\t${
+////                  contexts(i).mostFreqCrop1Sent
+////                }\t${
+////                  contexts(i).mostFreqCrop
+////                }\t${
+////                  contexts(i).mostFreqFertilizer0Sent
+////                }\t${
+////                  contexts(i).mostFreqFertilizer1Sent
+////                }\t${
+////                  contexts(i).mostFreqFertilizerOverall
+//                }")
               }
             }
             else

@@ -3,7 +3,18 @@
   label: Value
   type: token
   pattern: |
-    [entity='B-MEASUREMENT'] [entity='I-MEASUREMENT']*    
+    (?<=[entity='B-MEASUREMENT' & word = "-"]) [entity='I-MEASUREMENT']+ [entity='I-MEASUREMENT' & word = /^(ha|he)/]+
+    |
+    [entity='B-MEASUREMENT' & !word = "-"] [entity='I-MEASUREMENT']* [entity='I-MEASUREMENT' & word = /^(ha|he)/]+
+    
+     
+
+- name: value-from-areas-percentage
+  priority: ${rulepriority}
+  label: Value
+  type: token
+  pattern: |
+    [entity='B-PERCENTAGE'] [entity='I-PERCENTAGE']*    
 
 - name: variable-area
   priority: ${rulepriority}
@@ -11,5 +22,28 @@
   type: token
   pattern: |
     ([lemma=/cultivate|plant|sown/])? [lemma=/area/] ([lemma=/sown/])?
+
+- name: date-range
+  priority: ${rulepriority}
+  label: Date
+  type: token
+  pattern: |
+    [entity='B-DATE-RANGE'] [entity='I-DATE-RANGE']*
+
+- name: date-standalone
+  priority: ${rulepriority}
+  label: Date
+  type: token
+  pattern: |
+    [entity='B-DATE'] [entity='I-DATE']*
+
+- name: location
+  priority: ${rulepriority}
+  label: Location
+  type: token
+  pattern: |
+    [entity='B-LOC'] [entity='I-LOC']*
+    
+
 
 # TODO: add percentages

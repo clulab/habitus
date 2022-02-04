@@ -1,7 +1,7 @@
 package org.clulab.habitus.variables
 
 import org.clulab.habitus.utils._
-import org.clulab.odin.EventMention
+import org.clulab.odin.{EventMention, Mention}
 import org.clulab.processors.Document
 import org.clulab.utils.Closer.AutoCloser
 import org.clulab.utils.{FileUtils, StringUtils, ThreadUtils}
@@ -14,20 +14,20 @@ object PlantingAreaReader {
 
   def main(args: Array[String]): Unit = {
     val props = StringUtils.argsToMap(args)
-    val inputDir = "/home/alexeeva/Downloads/some_saed_bulletins/sample"//props("in")
-    val outputDir = "/home/alexeeva/Downloads/some_saed_bulletins/sample/output"//props("out")
+    val inputDir = props("in")//"/home/alexeeva/Downloads/some_saed_bulletins/sample"//props("in")
+    val outputDir = props("out")//"/home/alexeeva/Downloads/some_saed_bulletins/sample/output"//props("out")
     val masterResource = props.getOrElse("grammar", "/variables/master-areas.yml")
     val threads = 1//props.get("threads").map(_.toInt).getOrElse(1)
 
-    run(inputDir, outputDir, threads)
+    run(inputDir, outputDir, threads, masterResource)
   }
 
-  def run(inputDir: String, outputDir: String, threads: Int): Unit = {
+  def run(inputDir: String, outputDir: String, threads: Int, masterResource: String): Unit = {
     new File(outputDir).mkdir()
 
     def mkOutputFile(extension: String): String = outputDir + "/mentions" + extension
 
-    val vp = VariableProcessor()
+    val vp = VariableProcessor(masterResource)
     val files = FileUtils.findFiles(inputDir, ".txt")
     val parFiles = if (threads > 1) ThreadUtils.parallelize(files, threads) else files
 
@@ -37,7 +37,7 @@ object PlantingAreaReader {
     ).autoClose { multiPrinter =>
       for (file <- parFiles) {
         try {
-          val text = FileUtils.getTextFromFile(file)
+          val text = FileUtils.getTextFromFile(file).replace(";", ".")
           val filename = StringUtils.afterLast(file.getName, '/')
           println(s"going to parse input file: $filename")
           val (doc, mentions, allEventMentions, entityHistogram) = vp.parse(text)
@@ -46,6 +46,8 @@ object PlantingAreaReader {
           val context =
               if (entityHistogram.isEmpty) mutable.Map.empty[Int, ContextDetails]
               else compressContext(doc, allEventMentions, entityHistogram)
+
+//          println("CONTEXT" + context)
           val printVars = PrintVariables("Assignment", "variable", "value")
 
           multiPrinter.outputMentions(mentions, doc, context, filename, printVars)
@@ -57,8 +59,8 @@ object PlantingAreaReader {
     }
   }
 
-  def compressContext(doc: Document, allEventMentions: Seq[EventMention], entityHistogram: Seq[EntityDistFreq]): mutable.Map[Int, ContextDetails] = {
-
+  def compressContext(doc: Document, allEventMentions: Seq[Mention], entityHistogram: Seq[EntityDistFreq]): mutable.Map[Int, ContextDetails] = {
+//    println("COMPRESSING CONTEXT")
     //sentidContext is a data structure created just to carry contextdetails to the code which writes output to disk
     //note: value=Seq[contextDetails] because there can be more than one mentions in same sentence
     val sentidContext = mutable.Map[Int, ContextDetails]()
@@ -87,7 +89,7 @@ object PlantingAreaReader {
     sentidContext
   }
 
-  def findMostFreqContextEntitiesForAllEvents(mentionContextMap: mutable.Map[EventMention, Seq[EntityDistFreq]], howManySentAway:Int, entityType:String):Seq[MostFreqEntity] = {
+  def findMostFreqContextEntitiesForAllEvents(mentionContextMap: mutable.Map[Mention, Seq[EntityDistFreq]], howManySentAway:Int, entityType:String):Seq[MostFreqEntity] = {
     mentionContextMap.keys.toSeq.map(key=>findMostFreqContextEntitiesForOneEvent(key,mentionContextMap(key), entityType,howManySentAway))
   }
 
@@ -102,7 +104,7 @@ object PlantingAreaReader {
 
   //given a user input (e.g.,LOC,1-- which means find which Location occurs most frequently within 1 sentence of this
   // event), calculate it from available frequency and sentence data
-  def findMostFreqContextEntitiesForOneEvent(mention:EventMention, contexts:Seq[EntityDistFreq], entityType:String, howManySentAway:Int):MostFreqEntity= {
+  def findMostFreqContextEntitiesForOneEvent(mention:Mention, contexts:Seq[EntityDistFreq], entityType:String, howManySentAway:Int):MostFreqEntity= {
     val entityFreq = mutable.Map[String, Int]()
     var maxFreq = 0
     var mostFreqEntity = ""
@@ -127,7 +129,7 @@ object PlantingAreaReader {
 
   //note: output of extractContext is a sequence of MostFreqEntity (sentId,mention, mostFreqEntity)) case classes.
   // It is a sequence because there can be more than one eventmentions that can occur in the given document
-  def extractContext(doc: Document, allEventMentions:Seq[EventMention], howManySentAway:Int,
+  def extractContext(doc: Document, allEventMentions:Seq[Mention], howManySentAway:Int,
                      entityType:String, entityHistogram:Seq[EntityDistFreq] ):Seq[MostFreqEntity]= {
     //compressing part: for each mention find the entity that occurs within n sentences from it.
     val mentionContextMap = getEntityRelDistFromMention(allEventMentions, entityHistogram)
@@ -141,9 +143,11 @@ object PlantingAreaReader {
   }
 
   //for each mention find how far away an entity occurs, and no of times it occurs in that sentence
-  def getEntityRelDistFromMention(mentionsSentIds: Seq[EventMention], contexts:Seq[EntityDistFreq]): mutable.Map[EventMention, Seq[EntityDistFreq]]= {
-    val mentionsContexts = mutable.Map[EventMention, Seq[EntityDistFreq]]()
+  def getEntityRelDistFromMention(mentionsSentIds: Seq[Mention], contexts:Seq[EntityDistFreq]): mutable.Map[Mention, Seq[EntityDistFreq]]= {
+//    println("men len: " + mentionsSentIds.length)
+    val mentionsContexts = mutable.Map[Mention, Seq[EntityDistFreq]]()
     for (mention <- mentionsSentIds) {
+//      println("m: " + mention.label + " " + mention.text)
       val contextsPerMention = new ArrayBuffer[EntityDistFreq]()
       for (context <- contexts) {
         val relDistFreq = ArrayBuffer[(Int,Int)]()
@@ -164,6 +168,7 @@ object PlantingAreaReader {
       //create a map between each mention and its corresponding sequence. this will be useful in the reduce/compression part
       mentionsContexts += (mention -> contextsPerMention)
     }
+//    println("MEN CONTEXTS: " + mentionsContexts.mkString("|"))
     mentionsContexts
   }
 

@@ -3,6 +3,8 @@ taxonomy:
   - Entity:
     - Variable
     - Value
+    - Date
+    - Location
   - Event:
     - Assignment
 

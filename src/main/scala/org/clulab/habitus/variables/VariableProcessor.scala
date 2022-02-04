@@ -24,9 +24,21 @@ class VariableProcessor(val processor: CluProcessor,
   }
 
 
-  def parse(text: String): (Document, Seq[Mention], Seq[EventMention], Seq[EntityDistFreq]) = {
+  def parse(text: String): (Document, Seq[Mention], Seq[Mention], Seq[EntityDistFreq]) = {
     // pre-processing
     val doc = processor.annotate(text, keepText = false)
+    val actions = new HabitusActions
+    // extract mentions from annotated document
+    val mentions = extractor.extractFrom(doc).sortBy(m => (m.sentence, m.getClass.getSimpleName))
+
+    //get histogram of all entities:
+    val ce = EntityHistogramExtractor()
+    val (allEventMentions, histogram) = ce.extractHistogramEventMentions(doc, mentions)
+    (doc, mentions, allEventMentions, histogram)
+  }
+
+  def parse(doc: Document): (Document, Seq[Mention], Seq[Mention], Seq[EntityDistFreq]) = {
+    // pre-processing
     val actions = new HabitusActions
     // extract mentions from annotated document
     val mentions = extractor.extractFrom(doc).sortBy(m => (m.sentence, m.getClass.getSimpleName))

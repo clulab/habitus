@@ -1,9 +1,7 @@
 package org.clulab.habitus.variables
 
 import org.clulab.dynet.Utils
-import org.clulab.odin.EventMention
-import org.clulab.odin.ExtractorEngine
-import org.clulab.odin.Mention
+import org.clulab.odin.{EventMention, ExtractorEngine, Mention, TextBoundMention}
 import org.clulab.processors.Document
 import org.clulab.processors.Processor
 import org.clulab.processors.Sentence
@@ -19,13 +17,14 @@ import scala.util.control.Breaks._
 
 class EntityHistogramExtractor(val processor: Processor, val extractor: ExtractorEngine) {
 
-  def extractHistogramEventMentions(doc: Document, mentions:Seq[Mention]):(Seq[EventMention],Seq[EntityDistFreq])= {
+  def extractHistogramEventMentions(doc: Document, mentions:Seq[Mention]):(Seq[Mention],Seq[EntityDistFreq])= {
     //collect all event mentions only (and not text bound ones)
-    val allEventMentions = mentions.collect { case m: EventMention => m }
-
+//    val allEventMentions = mentions.collect { case m: EventMention => m }
+    val allEventMentions = mentions.filter(!_.isInstanceOf[TextBoundMention])
     //get histogram of all Entities (refer  case class Entity)
     //histogram e.g.,{Senegal, LOC, {[1, 1], [4, 2]}}-
     // which means, the Location Sengal occurs in sentence 1 once,in sentence 4, 2 times setc
+
     (allEventMentions,getEntityFreqPerSent(doc))
   }
 
@@ -105,6 +104,7 @@ class EntityHistogramExtractor(val processor: Processor, val extractor: Extracto
     //for each sentence how many times does this entity occur
     val entitySentFreq = mutable.Map.empty[Entity, Int]
     for ((s, i) <- doc.sentences.zipWithIndex) {
+//      println("s: " + s.entities.get.mkString("::"))
       var entityCounter = 0
       //some indices have to be skipped if the entity has multiple tokens e.g.,"United States of America"
       val indicesToSkip = ArrayBuffer[Int]()

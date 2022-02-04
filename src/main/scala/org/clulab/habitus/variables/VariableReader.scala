@@ -1,7 +1,7 @@
 package org.clulab.habitus.variables
 
 import org.clulab.habitus.utils.{ContextDetails, JsonPrinter, JsonlPrinter, Lazy, MultiPrinter, PrintVariables, TsvPrinter}
-import org.clulab.odin.EventMention
+import org.clulab.odin.{EventMention, Mention}
 import org.clulab.processors.Document
 import org.clulab.utils.FileUtils
 import org.clulab.utils.StringUtils
@@ -59,7 +59,7 @@ object VariableReader {
     }
   }
 
-  def compressContext(doc: Document, allEventMentions: Seq[EventMention], entityHistogram: Seq[EntityDistFreq]): mutable.Map[Int, ContextDetails] = {
+  def compressContext(doc: Document, allEventMentions: Seq[Mention], entityHistogram: Seq[EntityDistFreq]): mutable.Map[Int, ContextDetails] = {
 
     //sentidContext is a data structure created just to carry contextdetails to the code which writes output to disk
     //note: value=Seq[contextDetails] because there can be more than one mentions in same sentence
@@ -89,7 +89,7 @@ object VariableReader {
     sentidContext
   }
 
-  def findMostFreqContextEntitiesForAllEvents(mentionContextMap: mutable.Map[EventMention, Seq[EntityDistFreq]], howManySentAway:Int, entityType:String):Seq[MostFreqEntity] = {
+  def findMostFreqContextEntitiesForAllEvents(mentionContextMap: mutable.Map[Mention, Seq[EntityDistFreq]], howManySentAway:Int, entityType:String):Seq[MostFreqEntity] = {
     mentionContextMap.keys.toSeq.map(key=>findMostFreqContextEntitiesForOneEvent(key,mentionContextMap(key), entityType,howManySentAway))
   }
 
@@ -104,7 +104,7 @@ object VariableReader {
 
   //given a user input (e.g.,LOC,1-- which means find which Location occurs most frequently within 1 sentence of this
   // event), calculate it from available frequency and sentence data
-  def findMostFreqContextEntitiesForOneEvent(mention:EventMention, contexts:Seq[EntityDistFreq], entityType:String, howManySentAway:Int):MostFreqEntity= {
+  def findMostFreqContextEntitiesForOneEvent(mention:Mention, contexts:Seq[EntityDistFreq], entityType:String, howManySentAway:Int):MostFreqEntity= {
     val entityFreq = mutable.Map[String, Int]()
     var maxFreq = 0
     var mostFreqEntity = ""
@@ -129,7 +129,7 @@ object VariableReader {
 
   //note: output of extractContext is a sequence of MostFreqEntity (sentId,mention, mostFreqEntity)) case classes.
   // It is a sequence because there can be more than one eventmentions that can occur in the given document
-  def extractContext(doc: Document, allEventMentions:Seq[EventMention], howManySentAway:Int,
+  def extractContext(doc: Document, allEventMentions:Seq[Mention], howManySentAway:Int,
                      entityType:String, entityHistogram:Seq[EntityDistFreq] ):Seq[MostFreqEntity]= {
     //compressing part: for each mention find the entity that occurs within n sentences from it.
     val mentionContextMap = getEntityRelDistFromMention(allEventMentions, entityHistogram)
@@ -143,8 +143,8 @@ object VariableReader {
   }
 
   //for each mention find how far away an entity occurs, and no of times it occurs in that sentence
-  def getEntityRelDistFromMention(mentionsSentIds: Seq[EventMention], contexts:Seq[EntityDistFreq]): mutable.Map[EventMention, Seq[EntityDistFreq]]= {
-    val mentionsContexts = mutable.Map[EventMention, Seq[EntityDistFreq]]()
+  def getEntityRelDistFromMention(mentionsSentIds: Seq[Mention], contexts:Seq[EntityDistFreq]): mutable.Map[Mention, Seq[EntityDistFreq]]= {
+    val mentionsContexts = mutable.Map[Mention, Seq[EntityDistFreq]]()
     for (mention <- mentionsSentIds) {
       val contextsPerMention = new ArrayBuffer[EntityDistFreq]()
       for (context <- contexts) {
