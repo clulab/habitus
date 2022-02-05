@@ -26,23 +26,18 @@ class ContextExtractor {
 
   def getContextPerMention(mentions: Seq[Mention], entityHistogram: Seq[EntityDistFreq], doc: Document, label: String, masterResource: String): Seq[Mention] = {
     val toReturn = new ArrayBuffer[Mention]()
-
-
-    val contentMentions = mentions.filter(_.label matches label)
     val frequencyContext =
       if (entityHistogram.isEmpty) mutable.Map.empty[Int, ContextDetails]
-      else compressContext(doc, contentMentions, entityHistogram)
+      else compressContext(doc, mentions, entityHistogram)
     val mentionsBySentence = mentions groupBy (_.sentence) mapValues (_.sortBy(_.start)) withDefaultValue Nil
     for ((s, i) <- doc.sentences.zipWithIndex) {
-
       val thisSentMentions = mentionsBySentence(i).distinct
-      // to keep only mention labelled as Assignment (these labels are associated with .yml files, e.g. Variable, Value)
-
+      val contentMentions = mentions.filter(_.label matches label)
       val thisSentDates = thisSentMentions.filter(_.label == "Date")
       val thisSentLocs = thisSentMentions.filter(_.label == "Location")
-      for (m <- thisSentMentions.filter(_.label == label)) {
-
-
+      // to keep only mention labelled as Assignment (these labels are associated with .yml files, e.g. Variable, Value)
+      for (m <- contentMentions) {
+        // depending on the type of reader (fixme: there should be a better way to pick than checking which rule file is used?)
         val context = masterResource match {
           case "/variables/master-areas.yml" => AreaContext(
             getDate(m, thisSentDates, frequencyContext.toMap),
@@ -56,10 +51,10 @@ class ContextExtractor {
           case _ => ???
         }
 
+        // store context as a mention attachment
         val withAtt = m.withAttachment(context)
         toReturn.append(withAtt)
       }
-
 
     }
     toReturn
@@ -73,8 +68,8 @@ class ContextExtractor {
   }
 
   def getLocation(m: Mention, thisSentLocs: Seq[Mention], frequencyContext: Map[Int, ContextDetails]): String = {
-
     val location = thisSentLocs.length match {
+      // if no locations in sentence, use the most freq one in +/- 1 sent window
       case 0 => frequencyContext(m.sentence).mostFreqLoc1Sent
       case 1 => thisSentLocs.head.text
       case _ => {
@@ -87,7 +82,7 @@ class ContextExtractor {
 
 
   def getDate(m: Mention, thisSentDates: Seq[Mention], frequencyContext: Map[Int, ContextDetails]): String = {
-
+    // if no dates in sentence, use the most freq one in +/- 1 sent window
     val date = thisSentDates.length match {
       case 0 => frequencyContext(m.sentence).mostFreqDate1Sent // because there are no dates in this sentence, take most freq in -/+ 1 window
       case 1 => thisSentDates.head.text
@@ -181,10 +176,8 @@ class ContextExtractor {
 
   //for each mention find how far away an entity occurs, and no of times it occurs in that sentence
   def getEntityRelDistFromMention(mentionsSentIds: Seq[Mention], contexts:Seq[EntityDistFreq]): mutable.Map[Mention, Seq[EntityDistFreq]]= {
-    //    println("men len: " + mentionsSentIds.length)
     val mentionsContexts = mutable.Map[Mention, Seq[EntityDistFreq]]()
     for (mention <- mentionsSentIds) {
-      //      println("m: " + mention.label + " " + mention.text)
       val contextsPerMention = new ArrayBuffer[EntityDistFreq]()
       for (context <- contexts) {
         val relDistFreq = ArrayBuffer[(Int,Int)]()
@@ -205,7 +198,6 @@ class ContextExtractor {
       //create a map between each mention and its corresponding sequence. this will be useful in the reduce/compression part
       mentionsContexts += (mention -> contextsPerMention)
     }
-    //    println("MEN CONTEXTS: " + mentionsContexts.mkString("|"))
     mentionsContexts
   }
 
