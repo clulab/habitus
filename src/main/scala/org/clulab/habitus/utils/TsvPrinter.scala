@@ -40,10 +40,10 @@ class TsvPrinter(outputFilename: String) extends Printer {
   def findClosestNextLocation(mention: Mention, locations: Seq[Mention]): Mention = {
     if (locations.length == 1) return locations.head
    val nextLocations = locations.filter(_.tokenInterval.start > mention.arguments("value").head.tokenInterval.start)
-    println("Sent: " + mention.sentenceObj.getSentenceText + "<<<")
-    println("Men: " + mention.arguments("value").head.text)
-    println("All locations: " + locations.map(_.text).mkString("||"))
-    println("After locations: " + nextLocations.map(_.text).mkString("||"))
+//    println("Sent: " + mention.sentenceObj.getSentenceText + "<<<")
+//    println("Men: " + mention.arguments("value").head.text)
+//    println("All locations: " + locations.map(_.text).mkString("||"))
+//    println("After locations: " + nextLocations.map(_.text).mkString("||"))
      if (nextLocations.nonEmpty) nextLocations.minBy(_.tokenInterval)
      else null
   }

@@ -6,7 +6,7 @@ import org.clulab.processors.Document
 import org.clulab.utils.Closer.AutoCloser
 import org.clulab.utils.{FileUtils, StringUtils, ThreadUtils}
 
-import java.io.File
+import java.io.{File, PrintWriter}
 import scala.collection.mutable
 import scala.collection.mutable.ArrayBuffer
 
@@ -30,33 +30,63 @@ object PlantingAreaReader {
     val vp = VariableProcessor(masterResource)
     val files = FileUtils.findFiles(inputDir, ".txt")
     val parFiles = if (threads > 1) ThreadUtils.parallelize(files, threads) else files
+    val contextExtractor = new ContextExtractor()
 
-    new MultiPrinter(
-      Lazy{new TsvPrinter(mkOutputFile(".tsv"))},
-      Lazy(new JsonlPrinter(mkOutputFile(".jsonl")))
-    ).autoClose { multiPrinter =>
+    new PrintWriter(new File(outputDir + "/mentions1.tsv")).autoClose { pw =>
+      pw.println("Writing somethin")
       for (file <- parFiles) {
         try {
           val text = FileUtils.getTextFromFile(file).replace(";", ".")
           val filename = StringUtils.afterLast(file.getName, '/')
           println(s"going to parse input file: $filename")
           val (doc, mentions, allEventMentions, entityHistogram) = vp.parse(text)
+          val mentionsWithContexts = contextExtractor.getContextPerMention(mentions, entityHistogram, doc, "Assignment")
+          for (m <- mentionsWithContexts) {
+//            pw.println(m.text)
+            if (m.attachments.nonEmpty) {
+              val att = m.attachments.head.asInstanceOf[Context].getArgs()
 
-          //if there was no context, i.e none of the CROP, LOC etc are present, pass an empty context
-          val context =
-              if (entityHistogram.isEmpty) mutable.Map.empty[Int, ContextDetails]
-              else compressContext(doc, allEventMentions, entityHistogram)
+              for (a <- att) {
+                println("-> " + a._1 + ">>" + a._2)
+              }
+//              println(att)
+              pw.println(s"${m.text}\t${att.values.mkString("\t")}")
+            } else {
+              println("Attachment empty")
+            }
 
-//          println("CONTEXT" + context)
-          val printVars = PrintVariables("Assignment", "variable", "value")
-
-          multiPrinter.outputMentions(mentions, doc, context, filename, printVars)
-        }
-        catch {
+          }
+        } catch {
           case e: Exception => e.printStackTrace()
         }
       }
     }
+//    new MultiPrinter(
+//      Lazy{new TsvPrinter(mkOutputFile(".tsv"))},
+//      Lazy(new JsonlPrinter(mkOutputFile(".jsonl")))
+//    ).autoClose { multiPrinter =>
+//      for (file <- parFiles) {
+//        try {
+//          val text = FileUtils.getTextFromFile(file).replace(";", ".")
+//          val filename = StringUtils.afterLast(file.getName, '/')
+//          println(s"going to parse input file: $filename")
+//          val (doc, mentions, allEventMentions, entityHistogram) = vp.parse(text)
+//
+//          //if there was no context, i.e none of the CROP, LOC etc are present, pass an empty context
+//          val context =
+//              if (entityHistogram.isEmpty) mutable.Map.empty[Int, ContextDetails]
+//              else compressContext(doc, allEventMentions, entityHistogram)
+//
+////          println("CONTEXT" + context)
+//          val printVars = PrintVariables("Assignment", "variable", "value")
+//
+//          multiPrinter.outputMentions(mentions, doc, context, filename, printVars)
+//        }
+//        catch {
+//          case e: Exception => e.printStackTrace()
+//        }
+//      }
+//    }
   }
 
   def compressContext(doc: Document, allEventMentions: Seq[Mention], entityHistogram: Seq[EntityDistFreq]): mutable.Map[Int, ContextDetails] = {
