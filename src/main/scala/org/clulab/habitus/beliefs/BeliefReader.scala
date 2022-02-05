@@ -11,9 +11,9 @@ object BeliefReader {
 
   def main(args: Array[String]): Unit = {
     val props = StringUtils.argsToMap(args)
-    val inputDir = "/home/alexeeva/Desktop/habitus_related/data/fileForEncodingIssue"//props("in")
-    val outputDir ="/home/alexeeva/Desktop/habitus_related/data/fileForEncodingIssue/output"// props("out")
-    val threads = 1//props.get("threads").map(_.toInt).getOrElse(1)
+    val inputDir = props("in")
+    val outputDir = props("out")
+    val threads = props.get("threads").map(_.toInt).getOrElse(1)
 
     run(inputDir, outputDir, threads)
   }
@@ -43,7 +43,7 @@ object BeliefReader {
           val printVars = PrintVariables("Belief", "believer", "belief")
           val context = mutable.Map.empty[Int, ContextDetails]
 
-          multiPrinter.outputMentions(mentions, doc, context, filename, printVars)
+          multiPrinter.outputMentions(mentions, doc, filename, printVars)
         }
         catch {
           case e: Exception => e.printStackTrace()

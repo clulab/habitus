@@ -10,7 +10,6 @@ trait Printer {
   def outputMentions(
     mentions: Seq[Mention],
     doc: Document,
-    contextDetailsMap: mutable.Map[Int, ContextDetails],
     inputFilename: String,
     printVars: PrintVariables
   ): Unit
@@ -24,14 +23,13 @@ class MultiPrinter(lazies: Lazy[Printer]*) extends MultiCloser[Printer](lazies: 
   def outputMentions(
     mentions: Seq[Mention],
     doc: Document,
-    contextDetailsMap: mutable.Map[Int, ContextDetails],
     inputFilename: String,
     printVars: PrintVariables
   ): Unit = synchronized {
     // Prevent not only overlapping output within a printer,
     // but ensure each printer has the same order of output.
     printers.foreach { printer =>
-      printer.outputMentions(mentions, doc, contextDetailsMap, inputFilename, printVars)
+      printer.outputMentions(mentions, doc, inputFilename, printVars)
     }
   }
 }
