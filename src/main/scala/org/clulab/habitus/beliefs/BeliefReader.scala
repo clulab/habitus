@@ -13,8 +13,8 @@ object BeliefReader {
     val props = StringUtils.argsToMap(args)
 //    val inputDir = "/home/alexeeva/Desktop/habitus_related/data/Rice_growing_in_Senegal_River_Valley/txt"//props("in")
 //    val outputDir = "/home/alexeeva/Desktop/habitus_related/data/Rice_growing_in_Senegal_River_Valley/output"//props("out")
-    val inputDir = "/home/alexeeva/Desktop/habitus_related/data/fileForEncodingIssue"
-    val outputDir = "/home/alexeeva/Desktop/habitus_related/data/fileForEncodingIssue/output"
+    val inputDir = "/home/alexeeva/Desktop/habitus_related/data/interviews"
+    val outputDir = "/home/alexeeva/Desktop/habitus_related/data/interviews/output"
 
     val threads = 1 //props.get("threads").map(_.toInt).getOrElse(1)
 
