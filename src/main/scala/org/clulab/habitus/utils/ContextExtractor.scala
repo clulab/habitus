@@ -52,13 +52,13 @@ trait ContextExtractor {
 
   def getCropContext(m: Mention, frequencyContext: Map[Int, ContextDetails]): String = {
     if (frequencyContext.nonEmpty) {
-      frequencyContext(m.sentence).mostFreqCrop0Sent
+      frequencyContext(m.sentence).mostFreqCrop
     } else "N/A"
   }
 
   def getFertilizerContext(m: Mention, frequencyContext: Map[Int, ContextDetails]): String = {
     if (frequencyContext.nonEmpty) {
-      frequencyContext(m.sentence).mostFreqFertilizer1Sent
+      frequencyContext(m.sentence).mostFreqFertilizerOverall
     } else "N/A"
   }
 

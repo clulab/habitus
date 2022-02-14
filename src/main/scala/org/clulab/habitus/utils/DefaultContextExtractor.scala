@@ -17,10 +17,12 @@ class DefaultContextExtractor extends ContextExtractor {
     }.toMap
     val mentionsBySentence = mentions groupBy (_.sentence) mapValues (_.sortBy(_.start)) withDefaultValue Nil
     for ((s, i) <- doc.sentences.zipWithIndex) {
+
       val thisSentMentions = mentionsBySentence(i).distinct
-      val contentMentions = mentions.filter(_.label matches label)
+      val contentMentions = thisSentMentions.filter(_.label matches label)
       val thisSentDates = thisSentMentions.filter(_.label == "Date")
       val thisSentLocs = thisSentMentions.filter(_.label == "Location")
+
       // to keep only mention labelled as Assignment (these labels are associated with .yml files, e.g. Variable, Value)
       for (m <- contentMentions) {
         val context = DefaultContext(

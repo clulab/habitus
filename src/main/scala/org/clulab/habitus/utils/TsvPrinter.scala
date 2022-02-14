@@ -55,7 +55,7 @@ class TsvPrinter(outputFilename: String) extends Printer {
                 }
               }
             }
-              val contextString = m.attachments.head.asInstanceOf[Context].getTSVContextString//getArgValuePairs().map(_._2).mkString("\t")
+              val contextString = m.attachments.head.asInstanceOf[Context].getTSVContextString
             pw.println(s"$varText\t$valText\t$norm\t$sentText\t$filename\t$contextString")
 
           }

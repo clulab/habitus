@@ -1,6 +1,6 @@
 package org.clulab.habitus.actions
 
-import org.clulab.odin.{Actions, EventMention, Mention, RelationMention, State, TextBoundMention}
+import org.clulab.odin.{Actions, EventMention, Mention, RelationMention, State, TextBoundMention, mkTokenInterval}
 
 import scala.collection.mutable.ArrayBuffer
 
@@ -28,7 +28,8 @@ class HabitusActions extends Actions {
   /** Global action for the numeric grammar */
   def cleanupAction(mentions: Seq[Mention], state: State): Seq[Mention] =
     cleanupAction(mentions)
-
+      .sortBy(_.sentence)
+      .sortBy(_.tokenInterval)
 
   def cleanupAction(mentions: Seq[Mention]): Seq[Mention] = {
     val r1 = keepLongestMentions(mentions)
@@ -50,14 +51,15 @@ class HabitusActions extends Actions {
           innerBelief.tokenInterval.contains(outerBelief.tokenInterval)
       }
     }
-    keepOneOfSameSpan(uniqueArguments(filteredBeliefs)) ++ nonBeliefs
+    keepOneOfSameSpan(uniqueArguments(filteredBeliefs ++ nonBeliefs))
   }
 
   def copyWithArgs(orig: Mention, newArgs: Map[String, Seq[Mention]]): Mention = {
+    val newTokInt = mkTokenInterval(newArgs)
     orig match {
       case tb: TextBoundMention => ???
-      case rm: RelationMention => rm.copy(arguments = newArgs)
-      case em: EventMention => em.copy(arguments = newArgs)
+      case rm: RelationMention => rm.copy(arguments = newArgs, tokenInterval = newTokInt)
+      case em: EventMention => em.copy(arguments = newArgs, tokenInterval = newTokInt)
       case _ => ???
     }
   }

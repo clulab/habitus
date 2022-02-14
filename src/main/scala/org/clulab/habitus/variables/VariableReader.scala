@@ -26,7 +26,6 @@ object VariableReader {
     def mkOutputFile(extension: String): String = outputDir + "/mentions" + extension
 
     val vp = VariableProcessor()
-    val contextExtractor = new DefaultContextExtractor()
     val files = FileUtils.findFiles(inputDir, ".txt")
     val parFiles = if (threads > 1) ThreadUtils.parallelize(files, threads) else files
 
@@ -43,10 +42,6 @@ object VariableReader {
 
 
           val printVars = PrintVariables("Assignment", "variable", "value")
-          // note: passing all mentions because some (e.g., date and loc) are used for building context,
-          // but return only content mentions---only those get contextualized
-//          val contentMentionsWithContexts = contextExtractor.getContextPerMention(mentions, entityHistogram, doc, "Assignment")
-
           multiPrinter.outputMentions(allEventMentions, doc, filename, printVars)
         }
         catch {

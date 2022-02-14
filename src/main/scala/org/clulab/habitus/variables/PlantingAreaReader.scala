@@ -1,14 +1,11 @@
 package org.clulab.habitus.variables
 
 import org.clulab.habitus.utils._
-import org.clulab.odin.{EventMention, Mention}
-import org.clulab.processors.Document
+import org.clulab.odin.Mention
 import org.clulab.utils.Closer.AutoCloser
 import org.clulab.utils.{FileUtils, StringUtils, ThreadUtils}
 
-import java.io.{File, PrintWriter}
-import scala.collection.mutable
-import scala.collection.mutable.ArrayBuffer
+import java.io.File
 
 object PlantingAreaReader {
 
@@ -30,7 +27,6 @@ object PlantingAreaReader {
     val vp = VariableProcessor(masterResource)
     val files = FileUtils.findFiles(inputDir, ".txt")
     val parFiles = if (threads > 1) ThreadUtils.parallelize(files, threads) else files
-    val contextExtractor = new DefaultContextExtractor()
 
     new MultiPrinter(
       Lazy{new TsvPrinter(mkOutputFile(".tsv"))},
@@ -42,16 +38,20 @@ object PlantingAreaReader {
           val filename = StringUtils.afterLast(file.getName, '/')
           println(s"going to parse input file: $filename")
           val (doc, mentions, allEventMentions, entityHistogram) = vp.parse(text)
-
-//          val mentionsWithContexts = contextExtractor.getContextPerMention(mentions, entityHistogram, doc, "Assignment")
           val printVars = PrintVariables("Assignment", "variable", "value")
-
-          multiPrinter.outputMentions(allEventMentions, doc, filename, printVars)
+          val withoutNegValues = filterNegativeValues(allEventMentions)
+          multiPrinter.outputMentions(withoutNegValues, doc, filename, printVars)
         }
         catch {
           case e: Exception => e.printStackTrace()
         }
       }
     }
+  }
+
+  def filterNegativeValues(mentions: Seq[Mention]): Seq[Mention] = {
+    for (m <- mentions
+      if !m.arguments("value").head.norms.head.head.startsWith("-"))
+      yield m
   }
 }

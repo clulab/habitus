@@ -38,7 +38,7 @@ class VariableProcessor(val processor: CluProcessor,
     val (allEventMentions, histogram) = ce.extractHistogramEventMentions(doc, mentions)
     val contentMentionsWithContexts = contextExtractor.getContextPerMention(mentions, histogram, doc, "Assignment")
 
-    (doc, mentions, contentMentionsWithContexts, histogram)
+    (doc, mentions.distinct, contentMentionsWithContexts, histogram)
   }
 
   def parse(doc: Document): (Document, Seq[Mention], Seq[Mention], Seq[EntityDistFreq]) = {
@@ -89,7 +89,7 @@ object VariableProcessor {
       val rules = FileUtils.getTextFromFile(masterFile)
       val actions = new HabitusActions
       // creates an extractor engine using the rules and the default actions
-      ExtractorEngine(rules, actions, ruleDir = Some(resourceDir))
+      ExtractorEngine(rules, actions, actions.cleanupAction, ruleDir = Some(resourceDir))
     }
     else {
       // read rules from yml file in resources
