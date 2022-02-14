@@ -39,7 +39,6 @@ class TsvPrinter(outputFilename: String) extends Printer {
             val valText = value.text
             val sentText = m.sentenceObj.getSentenceText
             val valNorms = value.norms
-            val foundBy = m.foundBy
             val norm = {
               if (valNorms.isDefined && valNorms.get.size >= 2) {
                 valNorms.filter(_.length >= 2).get(0)
@@ -56,7 +55,7 @@ class TsvPrinter(outputFilename: String) extends Printer {
                 }
               }
             }
-              val contextString = m.attachments.head.asInstanceOf[Context].getArgs().map(_._2).mkString("\t")
+              val contextString = m.attachments.head.asInstanceOf[Context].getTSVContextString//getArgValuePairs().map(_._2).mkString("\t")
             pw.println(s"$varText\t$valText\t$norm\t$sentText\t$filename\t$contextString")
 
           }

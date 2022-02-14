@@ -38,8 +38,9 @@ class VariableShell(val masterResource: String) extends ReloadableShell {
 
   override def work(text: String): Unit = {
     // the actual reading
-    val (doc, mentions, _, _) = vp.get.parse(text)
+    val (doc, mentions, contentMentions, _) = vp.get.parse(text)
 
+    // note: to see attachment, display contentMentions
     // debug display the mentions
     displayMentions(mentions, doc)
   }

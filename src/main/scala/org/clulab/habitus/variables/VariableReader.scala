@@ -43,9 +43,11 @@ object VariableReader {
 
 
           val printVars = PrintVariables("Assignment", "variable", "value")
-          val mentionsWithContexts = contextExtractor.getContextPerMention(mentions, entityHistogram, doc, "Assignment", masterResource)
+          // note: passing all mentions because some (e.g., date and loc) are used for building context,
+          // but return only content mentions---only those get contextualized
+//          val contentMentionsWithContexts = contextExtractor.getContextPerMention(mentions, entityHistogram, doc, "Assignment")
 
-          multiPrinter.outputMentions(mentionsWithContexts, doc, filename, printVars)
+          multiPrinter.outputMentions(allEventMentions, doc, filename, printVars)
         }
         catch {
           case e: Exception => e.printStackTrace()

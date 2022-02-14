@@ -43,7 +43,7 @@ class JsonlPrinter(outputFilename: String) extends Printer {
       ("inputFilename" -> inputFilename)
 
     // add key-value pairs from the context attachment
-    mention.attachments.head.asInstanceOf[Context].getArgs()
+    mention.attachments.head.asInstanceOf[Context].getArgValuePairs()
       .foreach {
         i =>
           jObject = jObject ~ (i._1 -> i._2.toString)
@@ -64,7 +64,6 @@ class JsonlPrinter(outputFilename: String) extends Printer {
     println(s"Writing mentions from doc $inputFilename to $outputFilename")
     mentions
         .filter { mention => mention.label.matches(printVars.mentionLabel) }
-//        .filter { mention => contextDetailsMap.isEmpty || contextDetailsMap.contains(mention.sentence) }
         .sortBy { mention => (mention.sentence, mention.start) }
         .foreach { mention =>
           outputMention(mention, doc, inputFilename, printVars)

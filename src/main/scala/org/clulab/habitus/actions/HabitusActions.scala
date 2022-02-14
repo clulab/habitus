@@ -29,6 +29,7 @@ class HabitusActions extends Actions {
   def cleanupAction(mentions: Seq[Mention], state: State): Seq[Mention] =
     cleanupAction(mentions)
 
+
   def cleanupAction(mentions: Seq[Mention]): Seq[Mention] = {
     val r1 = keepLongestMentions(mentions)
     r1
@@ -49,7 +50,7 @@ class HabitusActions extends Actions {
           innerBelief.tokenInterval.contains(outerBelief.tokenInterval)
       }
     }
-    keepOneOfSameSpan(uniqueArguments(filteredBeliefs ++ nonBeliefs))
+    keepOneOfSameSpan(uniqueArguments(filteredBeliefs)) ++ nonBeliefs
   }
 
   def copyWithArgs(orig: Mention, newArgs: Map[String, Seq[Mention]]): Mention = {

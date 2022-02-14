@@ -9,7 +9,7 @@ import scala.collection.mutable.ArrayBuffer
 
 class DefaultContextExtractor extends ContextExtractor {
 
-  def getContextPerMention(mentions: Seq[Mention], entityHistogram: Seq[EntityDistFreq], doc: Document, label: String, masterResource: String): Seq[Mention] = {
+  def getContextPerMention(mentions: Seq[Mention], entityHistogram: Seq[EntityDistFreq], doc: Document, label: String): Seq[Mention] = {
     val toReturn = new ArrayBuffer[Mention]()
     val frequencyContext = {
       if (entityHistogram.isEmpty) mutable.Map.empty[Int, ContextDetails]
@@ -36,6 +36,6 @@ class DefaultContextExtractor extends ContextExtractor {
         toReturn.append(withAtt)
       }
     }
-    toReturn
+    toReturn.distinct
   }
 }

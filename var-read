@@ -6,7 +6,7 @@
 
 #sbt 'runMain org.clulab.habitus.variables.VariableReader -in in -out out -grammar /variables/master.yml'
 
-#sbt 'runMain org.clulab.habitus.variables.PlantingAreaReader -in /home/alexeeva/Desktop/habitus_related/data/saed-bulletins-as-of-jan28/in -out /home/alexeeva/Desktop/habitus_related/data/saed-bulletins-as-of-jan28/out -grammar /variables/master-areas.yml'
+sbt 'runMain org.clulab.habitus.variables.PlantingAreaReader -in /home/alexeeva/Desktop/habitus_related/data/saed-bulletins-as-of-jan28/in -out /home/alexeeva/Desktop/habitus_related/data/saed-bulletins-as-of-jan28/out -grammar /variables/master-areas.yml'
 
 
-sbt 'runMain org.clulab.habitus.variables.VariableReader -in /home/alexeeva/Desktop/habitus_related/data/saed-bulletins-as-of-jan28/in -out /home/alexeeva/Desktop/habitus_related/data/saed-bulletins-as-of-jan28/out -grammar /variables/master.yml'
+#sbt 'runMain org.clulab.habitus.variables.VariableReader -in /home/alexeeva/Desktop/habitus_related/data/saed-bulletins-as-of-jan28/in -out /home/alexeeva/Desktop/habitus_related/data/saed-bulletins-as-of-jan28/out -grammar /variables/master.yml'

@@ -9,9 +9,10 @@ import java.io.{File, PrintWriter}
 object InterviewsReader {
 
   def main(args: Array[String]): Unit = {
-    val inputDir = "/home/alexeeva/Downloads/some_saed_bulletins/sample"
-    val outputDir = "/home/alexeeva/Downloads/some_saed_bulletins/sample/output"
-    val threads = 1
+    val props = StringUtils.argsToMap(args)
+    val inputDir = props("in")
+    val outputDir = props("out")
+    val threads = props.get("threads").map(_.toInt).getOrElse(1)
 
     run(inputDir, outputDir, threads)
   }
@@ -24,7 +25,7 @@ object InterviewsReader {
     val files = FileUtils.findFiles(inputDir, ".txt")
     val parFiles = if (threads > 1) ThreadUtils.parallelize(files, threads) else files
 
-    new PrintWriter(new File(outputDir + "/mentions2.tsv")).autoClose { pw =>
+    new PrintWriter(new File(outputDir + "/mentions.tsv")).autoClose { pw =>
       pw.println("filename\tmention type\tfound by\tsentence\tmention text\targs in all next columns (argType: argText)")
       for (file <- parFiles) {
         try {

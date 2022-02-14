@@ -43,10 +43,10 @@ object PlantingAreaReader {
           println(s"going to parse input file: $filename")
           val (doc, mentions, allEventMentions, entityHistogram) = vp.parse(text)
 
-          val mentionsWithContexts = contextExtractor.getContextPerMention(mentions, entityHistogram, doc, "Assignment", masterResource)
+//          val mentionsWithContexts = contextExtractor.getContextPerMention(mentions, entityHistogram, doc, "Assignment")
           val printVars = PrintVariables("Assignment", "variable", "value")
 
-          multiPrinter.outputMentions(mentionsWithContexts, doc, filename, printVars)
+          multiPrinter.outputMentions(allEventMentions, doc, filename, printVars)
         }
         catch {
           case e: Exception => e.printStackTrace()
@@ -54,5 +54,4 @@ object PlantingAreaReader {
       }
     }
   }
-
 }

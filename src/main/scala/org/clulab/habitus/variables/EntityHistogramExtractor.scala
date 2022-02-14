@@ -19,7 +19,7 @@ class EntityHistogramExtractor(val processor: Processor, val extractor: Extracto
 
   def extractHistogramEventMentions(doc: Document, mentions:Seq[Mention]):(Seq[Mention],Seq[EntityDistFreq])= {
     //collect all event mentions only (and not text bound ones)
-//    val allEventMentions = mentions.collect { case m: EventMention => m }
+    // exclude text bound mentions; content extractions can be both events and relations
     val allEventMentions = mentions.filter(!_.isInstanceOf[TextBoundMention])
     //get histogram of all Entities (refer  case class Entity)
     //histogram e.g.,{Senegal, LOC, {[1, 1], [4, 2]}}-
@@ -104,7 +104,6 @@ class EntityHistogramExtractor(val processor: Processor, val extractor: Extracto
     //for each sentence how many times does this entity occur
     val entitySentFreq = mutable.Map.empty[Entity, Int]
     for ((s, i) <- doc.sentences.zipWithIndex) {
-//      println("s: " + s.entities.get.mkString("::"))
       var entityCounter = 0
       //some indices have to be skipped if the entity has multiple tokens e.g.,"United States of America"
       val indicesToSkip = ArrayBuffer[Int]()

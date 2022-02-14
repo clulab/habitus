@@ -3,6 +3,7 @@ package org.clulab.habitus.variables
 import org.clulab.dynet.Utils
 import org.clulab.habitus.HabitusProcessor
 import org.clulab.habitus.actions.HabitusActions
+import org.clulab.habitus.utils.{ContextExtractor, DefaultContextExtractor}
 import org.clulab.odin.{EventMention, ExtractorEngine, Mention}
 import org.clulab.processors.Document
 import org.clulab.processors.clu.CluProcessor
@@ -12,7 +13,8 @@ import org.clulab.utils.FileUtils
 import java.io.File
 
 class VariableProcessor(val processor: CluProcessor, 
-  val extractor: ExtractorEngine, 
+  val extractor: ExtractorEngine,
+  val contextExtractor: DefaultContextExtractor,
   val masterResource: String) {
 
   def reloaded: VariableProcessor = {
@@ -20,7 +22,7 @@ class VariableProcessor(val processor: CluProcessor,
     val newProcessor = processor.copy(optionalNEROpt = Some(Some(newLexiconNer)))
     val newExtractorEngine = VariableProcessor.newExtractorEngine(masterResource)
 
-    new VariableProcessor(newProcessor, newExtractorEngine, masterResource)
+    new VariableProcessor(newProcessor, newExtractorEngine, contextExtractor, masterResource)
   }
 
 
@@ -34,7 +36,9 @@ class VariableProcessor(val processor: CluProcessor,
     //get histogram of all entities:
     val ce = EntityHistogramExtractor()
     val (allEventMentions, histogram) = ce.extractHistogramEventMentions(doc, mentions)
-    (doc, mentions, allEventMentions, histogram)
+    val contentMentionsWithContexts = contextExtractor.getContextPerMention(mentions, histogram, doc, "Assignment")
+
+    (doc, mentions, contentMentionsWithContexts, histogram)
   }
 
   def parse(doc: Document): (Document, Seq[Mention], Seq[Mention], Seq[EntityDistFreq]) = {
@@ -46,7 +50,9 @@ class VariableProcessor(val processor: CluProcessor,
     //get histogram of all entities:
     val ce = EntityHistogramExtractor()
     val (allEventMentions, histogram) = ce.extractHistogramEventMentions(doc, mentions)
-    (doc, mentions, allEventMentions, histogram)
+    val contentMentionsWithContexts = contextExtractor.getContextPerMention(mentions, histogram, doc, "Assignment")
+
+    (doc, mentions, contentMentionsWithContexts, histogram)
   }
 }
 
@@ -111,6 +117,7 @@ object VariableProcessor {
     * @return
     */
   def apply(processor: CluProcessor, masterResource: String): VariableProcessor = {
-    new VariableProcessor(processor, newExtractorEngine(masterResource), masterResource)
+    val contextExtractor = new DefaultContextExtractor()
+    new VariableProcessor(processor, newExtractorEngine(masterResource), contextExtractor, masterResource)
   }
 }

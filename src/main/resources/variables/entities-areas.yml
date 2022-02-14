@@ -6,8 +6,6 @@
     (?<=[entity='B-MEASUREMENT' & word = "-"]) [entity='I-MEASUREMENT']+ [entity='I-MEASUREMENT' & word = /^(ha|he)/]+
     |
     [entity='B-MEASUREMENT' & !word = "-"] [entity='I-MEASUREMENT']* [entity='I-MEASUREMENT' & word = /^(ha|he)/]+
-    
-     
 
 - name: value-from-areas-percentage
   priority: ${rulepriority}
@@ -43,7 +41,3 @@
   type: token
   pattern: |
     [entity='B-LOC'] [entity='I-LOC']*
-    
-
-
-# TODO: add percentages

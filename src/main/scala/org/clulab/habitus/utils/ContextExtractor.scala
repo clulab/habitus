@@ -9,22 +9,26 @@ import scala.collection.mutable
 import scala.collection.mutable.ArrayBuffer
 
 trait Context extends Attachment {
-  def getArgs() = this.getClass.getDeclaredFields.toList
-    .map(i => {
-      i.setAccessible(true)
-      (i.getName, i.get(this))
+  def getArgValuePairs() = this.getClass.getDeclaredFields.toList
+    .map(arg => {
+      arg.setAccessible(true)
+      (arg.getName, arg.get(this))
     })
 
-  //get header as tsv string
-  // get context as tsv string
-  // seq[key, value] (because we want to keep preference on the order)
+  def getTSVContextHeader() = {
+    getArgValuePairs().map(_._1).mkString("\t")
+  }
 
+  def getTSVContextString() = {
+    getArgValuePairs().map(_._2).mkString("\t")
+  }
 }
 
 case class DefaultContext(location: String, date: String, crop: String, fertilizer: String, comparative: Int) extends Context
 
-
 trait ContextExtractor {
+
+  def getContextPerMention(mentions: Seq[Mention], entityHistogram: Seq[EntityDistFreq], doc: Document, label: String): Seq[Mention]
 
   def getComparative(mention: Mention): Int = {
     val relative = Seq("vs", "vs.", "respectively")
@@ -34,7 +38,9 @@ trait ContextExtractor {
   def getLocation(m: Mention, thisSentLocs: Seq[Mention], frequencyContext: Map[Int, ContextDetails]): String = {
     val location = thisSentLocs.length match {
       // if no locations in sentence, use the most freq one in +/- 1 sent window
-      case 0 => frequencyContext(m.sentence).mostFreqLoc1Sent
+      case 0 => if (frequencyContext.nonEmpty) {
+        frequencyContext(m.sentence).mostFreqLoc1Sent
+      } else "N/A"
       case 1 => thisSentLocs.head.text
       case _ => {
         val nextLoc = findClosestNextLocation(m, thisSentLocs)
@@ -45,17 +51,23 @@ trait ContextExtractor {
   }
 
   def getCropContext(m: Mention, frequencyContext: Map[Int, ContextDetails]): String = {
-    frequencyContext(m.sentence).mostFreqCrop0Sent
+    if (frequencyContext.nonEmpty) {
+      frequencyContext(m.sentence).mostFreqCrop0Sent
+    } else "N/A"
   }
 
   def getFertilizerContext(m: Mention, frequencyContext: Map[Int, ContextDetails]): String = {
-    frequencyContext(m.sentence).mostFreqFertilizer1Sent
+    if (frequencyContext.nonEmpty) {
+      frequencyContext(m.sentence).mostFreqFertilizer1Sent
+    } else "N/A"
   }
 
   def getDate(m: Mention, thisSentDates: Seq[Mention], frequencyContext: Map[Int, ContextDetails]): String = {
     // if no dates in sentence, use the most freq one in +/- 1 sent window
     val date = thisSentDates.length match {
-      case 0 => frequencyContext(m.sentence).mostFreqDate1Sent // because there are no dates in this sentence, take most freq in -/+ 1 window
+      case 0 => if (frequencyContext.nonEmpty) {
+        frequencyContext(m.sentence).mostFreqDate1Sent
+      } else "N/A"// because there are no dates in this sentence, take most freq in -/+ 1 window
       case 1 => thisSentDates.head.text
       case _ => findClosestDate(m, thisSentDates).text
     }
@@ -63,7 +75,6 @@ trait ContextExtractor {
   }
 
   def compressContext(doc: Document, allEventMentions: Seq[Mention], entityHistogram: Seq[EntityDistFreq]): mutable.Map[Int, ContextDetails] = {
-    //    println("COMPRESSING CONTEXT")
     //sentidContext is a data structure created just to carry contextdetails to the code which writes output to disk
     //note: value=Seq[contextDetails] because there can be more than one mentions in same sentence
     val sentidContext = mutable.Map[Int, ContextDetails]()
@@ -95,7 +106,6 @@ trait ContextExtractor {
   def findMostFreqContextEntitiesForAllEvents(mentionContextMap: mutable.Map[Mention, Seq[EntityDistFreq]], howManySentAway:Int, entityType:String):Seq[MostFreqEntity] = {
     mentionContextMap.keys.toSeq.map(key=>findMostFreqContextEntitiesForOneEvent(key,mentionContextMap(key), entityType,howManySentAway))
   }
-
 
   //if key exists add+1 to its value, else add 1 as its value
   def checkAddFreq(map: mutable.Map[String, Int], key: String, freq: Int): Int = {

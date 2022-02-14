@@ -1,7 +1,7 @@
 package org.clulab.habitus.variables
 
 
-import org.clulab.habitus.utils.{ContextExtractor, DefaultContextExtractor}
+import org.clulab.habitus.utils.DefaultContextExtractor
 import org.scalatest.{FlatSpec, Matchers}
 
 //
