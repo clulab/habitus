@@ -12,11 +12,9 @@ class TsvPrinter(outputFilename: String) extends Printer {
     printWriter.close()
   }
 
-
   def outputMentions(
                       mentions: Seq[Mention],
                       doc: Document,
-//                      contexts: mutable.Map[Int, ContextDetails],
                       inputFilename: String,
                       printVars:PrintVariables
                     ): Unit = {
@@ -27,7 +25,6 @@ class TsvPrinter(outputFilename: String) extends Printer {
 
   // extract needed information and write them to tsv in a desired format. Return nothing here!
   protected def outputMentions(mentions: Seq[Mention], doc: Document,
-//                               contexts: mutable.Map[Int, ContextDetails],
                                filename: String, pw: PrintWriter,printVars:PrintVariables): Unit = {
 
     mentions.foreach {
@@ -37,7 +34,6 @@ class TsvPrinter(outputFilename: String) extends Printer {
         // ``variable`` and ``value`` we access the two through ``arguments`` attribute of the Mention class.
         m =>
            {
-            println(m.label + ">>>>" + m.arguments.keys.mkString("|"))
             val varText = m.arguments(printVars.mentionType).head.text
             val value = m.arguments(printVars.mentionExtractor).head
             val valText = value.text
@@ -60,7 +56,7 @@ class TsvPrinter(outputFilename: String) extends Printer {
                 }
               }
             }
-              val contextString = m.attachments.head.asInstanceOf[Context].getArgs().values.mkString("\t")
+              val contextString = m.attachments.head.asInstanceOf[Context].getArgs().map(_._2).mkString("\t")
             pw.println(s"$varText\t$valText\t$norm\t$sentText\t$filename\t$contextString")
 
           }

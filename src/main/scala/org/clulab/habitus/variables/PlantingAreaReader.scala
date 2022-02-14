@@ -30,7 +30,7 @@ object PlantingAreaReader {
     val vp = VariableProcessor(masterResource)
     val files = FileUtils.findFiles(inputDir, ".txt")
     val parFiles = if (threads > 1) ThreadUtils.parallelize(files, threads) else files
-    val contextExtractor = new ContextExtractor()
+    val contextExtractor = new DefaultContextExtractor()
 
     new MultiPrinter(
       Lazy{new TsvPrinter(mkOutputFile(".tsv"))},
@@ -44,7 +44,6 @@ object PlantingAreaReader {
           val (doc, mentions, allEventMentions, entityHistogram) = vp.parse(text)
 
           val mentionsWithContexts = contextExtractor.getContextPerMention(mentions, entityHistogram, doc, "Assignment", masterResource)
-//          println("CONTEXT" + context)
           val printVars = PrintVariables("Assignment", "variable", "value")
 
           multiPrinter.outputMentions(mentionsWithContexts, doc, filename, printVars)

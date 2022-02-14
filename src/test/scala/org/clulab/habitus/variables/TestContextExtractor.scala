@@ -1,7 +1,7 @@
 package org.clulab.habitus.variables
 
 
-import org.clulab.habitus.variables.VariableReader.extractContext
+import org.clulab.habitus.utils.{ContextExtractor, DefaultContextExtractor}
 import org.scalatest.{FlatSpec, Matchers}
 
 //
@@ -9,9 +9,8 @@ import org.scalatest.{FlatSpec, Matchers}
 //
 
 class TestContextExtractor extends FlatSpec with Matchers {
+  val ce = new DefaultContextExtractor()
   val vp = VariableProcessor()
-  val ce = EntityHistogramExtractor()
-  val vr = VariableReader
 
   //pass1: test sentences which have only one event overall in the document
   val sent1 =
@@ -23,9 +22,9 @@ In Senegal maturity  came in early November ( Tab.I ) for 1995.
 In Senegal maturity  came in early November ( Tab.I ) for 1995.
 """
 
-  def getMSFreq(text: String): Seq[vr.MostFreqEntity] = {
+  def getMSFreq(text: String): Seq[ce.MostFreqEntity] = {
     val (doc, mentions, allEventMentions, histogram) = vp.parse(text)
-    val mse = vr.extractContext(doc, allEventMentions, Int.MaxValue, "LOC", histogram)
+    val mse = ce.extractContext(doc, allEventMentions, Int.MaxValue, "LOC", histogram)
     (mse)
   }
 
@@ -34,9 +33,9 @@ In Senegal maturity  came in early November ( Tab.I ) for 1995.
     mse.head.mostFreqEntity.getOrElse("") should be("senegal")
   }
 
-  def getMSFreq1Sent(text: String): Seq[vr.MostFreqEntity] = {
+  def getMSFreq1Sent(text: String): Seq[ce.MostFreqEntity] = {
     val (doc, mentions, allEventMentions, histogram) = vp.parse(text)
-    val mse = vr.extractContext(doc, allEventMentions, 1, "LOC", histogram)
+    val mse = ce.extractContext(doc, allEventMentions, 1, "LOC", histogram)
     (mse)
   }
 
@@ -46,16 +45,16 @@ In Senegal maturity  came in early November ( Tab.I ) for 1995.
   }
 
 
-  def getMSFreq0Sent(text: String): Seq[vr.MostFreqEntity] = {
+  def getMSFreq0Sent(text: String): Seq[ce.MostFreqEntity] = {
     val (doc, mentions, allEventMentions, histogram) = vp.parse(text)
-    val mse = vr.extractContext(doc, allEventMentions, 0, "LOC", histogram)
+    val mse = ce.extractContext(doc, allEventMentions, 0, "LOC", histogram)
     (mse)
   }
 
 
-  def getMostFreqYearOverall(text: String): Seq[vr.MostFreqEntity] = {
+  def getMostFreqYearOverall(text: String): Seq[ce.MostFreqEntity] = {
     val (doc, mentions, allEventMentions, histogram) = vp.parse(text)
-    val mse = vr.extractContext(doc, allEventMentions, Int.MaxValue, "DATE", histogram)
+    val mse = ce.extractContext(doc, allEventMentions, Int.MaxValue, "DATE", histogram)
     (mse)
   }
 
@@ -119,9 +118,9 @@ However, the most unvalable fertilizer was diammonium-phosphate.
 Phosphorus, potassium, potassium and NPK are important inorganic fertilizers
 """
 
-    def getFertMaxFreqOverall(text: String): Seq[vr.MostFreqEntity] = {
+    def getFertMaxFreqOverall(text: String): Seq[ce.MostFreqEntity] = {
       val (doc, mentions,allEventMentions, histogram) = vp.parse(text)
-      val mse=vr.extractContext(doc,allEventMentions,Int.MaxValue,"FERTILIZER",histogram)
+      val mse=ce.extractContext(doc,allEventMentions,Int.MaxValue,"FERTILIZER",histogram)
       (mse)
     }
 

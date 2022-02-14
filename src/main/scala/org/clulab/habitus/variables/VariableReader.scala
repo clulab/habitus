@@ -1,6 +1,6 @@
 package org.clulab.habitus.variables
 
-import org.clulab.habitus.utils.{ContextExtractor, JsonlPrinter, Lazy, MultiPrinter, PrintVariables, TsvPrinter}
+import org.clulab.habitus.utils.{ContextExtractor, DefaultContextExtractor, JsonlPrinter, Lazy, MultiPrinter, PrintVariables, TsvPrinter}
 import org.clulab.utils.FileUtils
 import org.clulab.utils.StringUtils
 import org.clulab.utils.ThreadUtils
@@ -26,7 +26,7 @@ object VariableReader {
     def mkOutputFile(extension: String): String = outputDir + "/mentions" + extension
 
     val vp = VariableProcessor()
-    val contextExtractor = new ContextExtractor()
+    val contextExtractor = new DefaultContextExtractor()
     val files = FileUtils.findFiles(inputDir, ".txt")
     val parFiles = if (threads > 1) ThreadUtils.parallelize(files, threads) else files
 

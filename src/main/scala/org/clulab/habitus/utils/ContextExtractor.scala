@@ -12,59 +12,23 @@ trait Context extends Attachment {
   def getArgs() = this.getClass.getDeclaredFields.toList
     .map(i => {
       i.setAccessible(true)
-      i.getName -> i.get(this)
-    }).toMap
+      (i.getName, i.get(this))
+    })
+
+  //get header as tsv string
+  // get context as tsv string
+  // seq[key, value] (because we want to keep preference on the order)
+
 }
 
-case class AreaContext(location: String, date: String, comparative: Int) extends Context
+case class DefaultContext(location: String, date: String, crop: String, fertilizer: String, comparative: Int) extends Context
 
-// fixme: add the other types of context needed, e.g., crop/fertilizer
-case class PlantingDateContext(location: String, date: String) extends Context
 
-class ContextExtractor {
-  // todo: can get basic/shared context but should also be able to add type-specific context?
-
-  def getContextPerMention(mentions: Seq[Mention], entityHistogram: Seq[EntityDistFreq], doc: Document, label: String, masterResource: String): Seq[Mention] = {
-    val toReturn = new ArrayBuffer[Mention]()
-    val frequencyContext =
-      if (entityHistogram.isEmpty) mutable.Map.empty[Int, ContextDetails]
-      else compressContext(doc, mentions, entityHistogram)
-    val mentionsBySentence = mentions groupBy (_.sentence) mapValues (_.sortBy(_.start)) withDefaultValue Nil
-    for ((s, i) <- doc.sentences.zipWithIndex) {
-      val thisSentMentions = mentionsBySentence(i).distinct
-      val contentMentions = mentions.filter(_.label matches label)
-      val thisSentDates = thisSentMentions.filter(_.label == "Date")
-      val thisSentLocs = thisSentMentions.filter(_.label == "Location")
-      // to keep only mention labelled as Assignment (these labels are associated with .yml files, e.g. Variable, Value)
-      for (m <- contentMentions) {
-        // depending on the type of reader (fixme: there should be a better way to pick than checking which rule file is used?)
-        val context = masterResource match {
-          case "/variables/master-areas.yml" => AreaContext(
-            getDate(m, thisSentDates, frequencyContext.toMap),
-            getLocation(m, thisSentLocs, frequencyContext.toMap),
-            getComparative(m)
-          )
-          case "/variables/master.yml" => PlantingDateContext(
-            getDate(m, thisSentDates, frequencyContext.toMap),
-            getLocation(m, thisSentLocs, frequencyContext.toMap)
-          )
-          case _ => ???
-        }
-
-        // store context as a mention attachment
-        val withAtt = m.withAttachment(context)
-        toReturn.append(withAtt)
-      }
-
-    }
-    toReturn
-
-  }
+trait ContextExtractor {
 
   def getComparative(mention: Mention): Int = {
     val relative = Seq("vs", "vs.", "respectively")
     if (mention.sentenceObj.words.intersect(relative).nonEmpty) 1 else 0
-
   }
 
   def getLocation(m: Mention, thisSentLocs: Seq[Mention], frequencyContext: Map[Int, ContextDetails]): String = {
@@ -80,6 +44,13 @@ class ContextExtractor {
     location
   }
 
+  def getCropContext(m: Mention, frequencyContext: Map[Int, ContextDetails]): String = {
+    frequencyContext(m.sentence).mostFreqCrop0Sent
+  }
+
+  def getFertilizerContext(m: Mention, frequencyContext: Map[Int, ContextDetails]): String = {
+    frequencyContext(m.sentence).mostFreqFertilizer1Sent
+  }
 
   def getDate(m: Mention, thisSentDates: Seq[Mention], frequencyContext: Map[Int, ContextDetails]): String = {
     // if no dates in sentence, use the most freq one in +/- 1 sent window
@@ -275,3 +246,5 @@ class ContextExtractor {
   }
 
 }
+
+
