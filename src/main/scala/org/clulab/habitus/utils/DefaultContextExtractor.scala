@@ -26,8 +26,9 @@ class DefaultContextExtractor extends ContextExtractor {
       // to keep only mention labelled as Assignment (these labels are associated with .yml files, e.g. Variable, Value)
       for (m <- contentMentions) {
         val context = DefaultContext(
-          getDate(m, thisSentDates, frequencyContext),
+          getDate(m, thisSentDates, frequencyContext, mentions),
           getLocation(m, thisSentLocs, frequencyContext),
+          getProcess(m),
           getCropContext(m, frequencyContext),
           getFertilizerContext(m, frequencyContext),
           getComparative(m)

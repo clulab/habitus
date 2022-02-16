@@ -1,11 +1,12 @@
 package org.clulab.habitus.utils
 
 import org.clulab.habitus.variables.EntityDistFreq
-
 import org.clulab.odin.{Attachment, Mention}
-import org.clulab.processors.Document
+import org.clulab.processors.{Document, Sentence}
+import org.clulab.struct.Interval
+import scala.util.control.Breaks._
 
-import scala.collection.mutable
+import scala.collection.{breakOut, mutable}
 import scala.collection.mutable.ArrayBuffer
 
 trait Context extends Attachment {
@@ -24,11 +25,34 @@ trait Context extends Attachment {
   }
 }
 
-case class DefaultContext(location: String, date: String, crop: String, fertilizer: String, comparative: Int) extends Context
+case class DefaultContext(location: String, date: String, process: String, crop: String, fertilizer: String, comparative: Int) extends Context
 
 trait ContextExtractor {
 
+  val NA = "N/A"
+
   def getContextPerMention(mentions: Seq[Mention], entityHistogram: Seq[EntityDistFreq], doc: Document, label: String): Seq[Mention]
+
+  def getProcess(mention: Mention): String = {
+    val stopVerbs = Seq("be", "go")
+    val sentVerbs = new ArrayBuffer[String]()
+    val sentLemmas = mention.sentenceObj.lemmas.get
+    for ((tag, i) <- mention.tags.get.zipWithIndex) {
+//      println(tag + " " + sentLemmas(i))
+      if (tag.startsWith("V")) {
+        sentVerbs.append(sentLemmas(i))
+      }
+    }
+    val lemmas = mention.sentenceObj.lemmas.get
+    val process = if (lemmas.contains("plant") || lemmas.contains("sow")) {
+      "planting"
+    } else if (lemmas.contains("harvest")) {
+      "harvesting"
+    } else if (lemmas.contains("credit")) {
+      "credit"
+    } else sentVerbs.filter(w => !stopVerbs.contains(w)).mkString("::")
+    process
+  }
 
   def getComparative(mention: Mention): Int = {
     val relative = Seq("vs", "vs.", "respectively")
@@ -40,11 +64,11 @@ trait ContextExtractor {
       // if no locations in sentence, use the most freq one in +/- 1 sent window
       case 0 => if (frequencyContext.nonEmpty) {
         frequencyContext(m.sentence).mostFreqLoc1Sent
-      } else "N/A"
+      } else NA
       case 1 => thisSentLocs.head.text
       case _ => {
         val nextLoc = findClosestNextLocation(m, thisSentLocs)
-        if (nextLoc != null) nextLoc.text else "N/A"
+        if (nextLoc != null) nextLoc.text else NA
       }
     }
     location
@@ -53,25 +77,69 @@ trait ContextExtractor {
   def getCropContext(m: Mention, frequencyContext: Map[Int, ContextDetails]): String = {
     if (frequencyContext.nonEmpty) {
       frequencyContext(m.sentence).mostFreqCrop
-    } else "N/A"
+    } else NA
   }
 
   def getFertilizerContext(m: Mention, frequencyContext: Map[Int, ContextDetails]): String = {
     if (frequencyContext.nonEmpty) {
       frequencyContext(m.sentence).mostFreqFertilizerOverall
-    } else "N/A"
+    } else NA
   }
 
-  def getDate(m: Mention, thisSentDates: Seq[Mention], frequencyContext: Map[Int, ContextDetails]): String = {
+  def getDate(m: Mention, thisSentDates: Seq[Mention], frequencyContext: Map[Int, ContextDetails], allMentions: Seq[Mention]): String = {
     // if no dates in sentence, use the most freq one in +/- 1 sent window
     val date = thisSentDates.length match {
-      case 0 => if (frequencyContext.nonEmpty) {
-        frequencyContext(m.sentence).mostFreqDate1Sent
-      } else "N/A"// because there are no dates in this sentence, take most freq in -/+ 1 window
+      case 0 => getMostFrequentInContext(m, "date", 2, allMentions)
+//      case 0 => if (frequencyContext.nonEmpty) {
+//        frequencyContext(m.sentence).mostFreqDate1Sent
+//      } else NA// because there are no dates in this sentence, take most freq in -/+ 1 window
       case 1 => thisSentDates.head.text
       case _ => findClosestDate(m, thisSentDates).text
     }
     date
+  }
+
+  def getSentIDsInSpan(m: Mention, sentenceSpan: Int): Interval = {
+    val docSents = m.document.sentences
+    println(docSents.length + " <--")
+    val currentSent = m.sentence
+    println("cur sent " + currentSent)
+    val potentialSpanEnd = currentSent - sentenceSpan
+    println("potential start: " + potentialSpanEnd)
+    val contextSpanStart = if (currentSent - sentenceSpan >= 0) currentSent - sentenceSpan else currentSent
+    val contextSpanEnd = if (currentSent + sentenceSpan < docSents.length) currentSent + sentenceSpan else docSents.length - 1
+    println("cont span start " + contextSpanStart)
+    println("cont span end " + contextSpanEnd)
+//    val contextSentences = m.document.sentences.slice(contextSpanStart, contextSpanEnd)
+    Interval(contextSpanStart, contextSpanEnd)
+  }
+  def getInstancesInContext(contextType: String, contextSentences: Interval, allMentions: Seq[Mention]): Seq[String] = {
+    val instances = contextType match {
+      case "date" => {
+        val dateMentions = allMentions.filter(_.label == "Date")
+        for (m <- dateMentions) println("date men: " + m.label + " " + m.text)
+        println(contextSentences + "<<<")
+        dateMentions.filter(m => contextSentences.intersect(Seq(m.sentence)).nonEmpty).map(_.text)
+      }
+      case _ => ???
+    }
+    for (i <- instances) println("instance: " + i)
+    instances
+  }
+
+  def getMostFrequentInContext(mention: Mention, contextType: String, maxWindow: Int, allMentions: Seq[Mention]): String = {
+    val instancesInContext = new ArrayBuffer[String]()
+//    breakable {
+    for (windowSize <- 1 to maxWindow) {
+      val contextSentences = getSentIDsInSpan(mention, windowSize)
+      val instances = getInstancesInContext(contextType, contextSentences, allMentions)
+      if (instances.nonEmpty) {
+        return instances.groupBy(identity).map(i => i._1 -> i._2.length).max._1
+
+      }
+
+     }
+    NA
   }
 
   def compressContext(doc: Document, allEventMentions: Seq[Mention], entityHistogram: Seq[EntityDistFreq]): mutable.Map[Int, ContextDetails] = {
@@ -236,8 +304,8 @@ trait ContextExtractor {
       )
     }
   }
-  //if none, return "N/A", else return String value of entity e.g.:"SENEGAL"
-  def checkIfEmpty(mostFreqEntity: Option[String]): String = mostFreqEntity.getOrElse("N/A")
+  //if none, return NA, else return String value of entity e.g.:"SENEGAL"
+  def checkIfEmpty(mostFreqEntity: Option[String]): String = mostFreqEntity.getOrElse(NA)
 
   def findClosestNextLocation(mention: Mention, locations: Seq[Mention]): Mention = {
     if (locations.length == 1) return locations.head
