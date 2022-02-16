@@ -29,8 +29,9 @@ class DefaultContextExtractor extends ContextExtractor {
           getDate(m, thisSentDates, frequencyContext, mentions),
           getLocation(m, thisSentLocs, frequencyContext),
           getProcess(m),
-          getCropContext(m, frequencyContext),
-          getFertilizerContext(m, frequencyContext),
+//          getCropContext(m, frequencyContext),
+          getContextFromHistogramInWindow(m, "crop", maxContextWindow, entityHistogram),
+          getContextFromHistogramInWindow(m, "fertilizer", maxContextWindow, entityHistogram),
           getComparative(m)
         )
 

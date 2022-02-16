@@ -7,6 +7,10 @@ taxonomy:
   - Entity:
     - Variable
     - Value
+    - Date
+    - Location
+    - Fertilizer
+    - Crop
   - Event:
     - Assignment
 

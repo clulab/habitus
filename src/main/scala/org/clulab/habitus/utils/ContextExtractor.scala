@@ -30,6 +30,7 @@ case class DefaultContext(location: String, date: String, process: String, crop:
 trait ContextExtractor {
 
   val NA = "N/A"
+  val maxContextWindow = 2
 
   def getContextPerMention(mentions: Seq[Mention], entityHistogram: Seq[EntityDistFreq], doc: Document, label: String): Seq[Mention]
 
@@ -76,68 +77,80 @@ trait ContextExtractor {
 
   def getCropContext(m: Mention, frequencyContext: Map[Int, ContextDetails]): String = {
     if (frequencyContext.nonEmpty) {
-      frequencyContext(m.sentence).mostFreqCrop
+      frequencyContext(m.sentence).mostFreqCrop0Sent
     } else NA
   }
 
-  def getFertilizerContext(m: Mention, frequencyContext: Map[Int, ContextDetails]): String = {
-    if (frequencyContext.nonEmpty) {
-      frequencyContext(m.sentence).mostFreqFertilizerOverall
-    } else NA
+  def getFromHistogram(contextType: String, contextSentences: Interval, entityHistogram: Seq[EntityDistFreq] ): Option[String] = {
+    val onlyFertsOccurringInInterval = entityHistogram.filter(_.nerTag == contextType).filter(_.entityDistFrequencies.exists(i => contextSentences.contains(i._1)))
+    val onlyWithinInterval = onlyFertsOccurringInInterval.map(e => e.entityValue -> e.entityDistFrequencies.filter(i => contextSentences.contains(i._1)).map(_._2).sum)
+    if (onlyWithinInterval.nonEmpty) Some(onlyWithinInterval.maxBy(_._2)._1) else None
+  }
+
+  def getContextFromHistogram(contextType: String, contextSentences: Interval, entityHistogram: Seq[EntityDistFreq] ): Option[String] = {
+    contextType match {
+      case "fertilizer" => getFromHistogram("FERTILIZER", contextSentences, entityHistogram)
+      case "crop" => getFromHistogram("CROP", contextSentences, entityHistogram)
+      case _ => None
+    }
+
+  }
+
+  def getContextFromHistogramInWindow(m: Mention, contextType: String, maxWindow: Int, entityHistogram: Seq[EntityDistFreq]): String = {
+//        if (frequencyContext.nonEmpty) {
+//          frequencyContext(m.sentence).mostFreqFertilizer0Sent
+//        } else NA
+//        getMostFrequentInContext(m, "fertilizer", maxContextWindow, allMentions, entityHistogram)
+//     check if this works for only current sentence - will maybe need to redo the interval
+    for (windowSize <- 0 to maxWindow) {
+      val contextSentences = getSentIDsInSpan(m, windowSize)
+
+      val toReturn =  getContextFromHistogram(contextType, contextSentences, entityHistogram)
+      if (toReturn.isDefined)  {
+        return  toReturn.get
+      }
+    }
+    NA
   }
 
   def getDate(m: Mention, thisSentDates: Seq[Mention], frequencyContext: Map[Int, ContextDetails], allMentions: Seq[Mention]): String = {
-    // if no dates in sentence, use the most freq one in +/- 1 sent window
+    // if no dates in sentence, use the most freq one in sentence window equal to +/- maxContextWindow
     val date = thisSentDates.length match {
-      case 0 => getMostFrequentInContext(m, "date", 2, allMentions)
-//      case 0 => if (frequencyContext.nonEmpty) {
-//        frequencyContext(m.sentence).mostFreqDate1Sent
-//      } else NA// because there are no dates in this sentence, take most freq in -/+ 1 window
+      case 0 => getMostFrequentInContext(m, "date", maxContextWindow, allMentions)
       case 1 => thisSentDates.head.text
-      case _ => findClosestDate(m, thisSentDates).text
+      case _ => findClosest(m, thisSentDates).text
     }
     date
   }
 
   def getSentIDsInSpan(m: Mention, sentenceSpan: Int): Interval = {
+    //provides sentence window interval for a given mention
     val docSents = m.document.sentences
-    println(docSents.length + " <--")
     val currentSent = m.sentence
-    println("cur sent " + currentSent)
-    val potentialSpanEnd = currentSent - sentenceSpan
-    println("potential start: " + potentialSpanEnd)
     val contextSpanStart = if (currentSent - sentenceSpan >= 0) currentSent - sentenceSpan else currentSent
-    val contextSpanEnd = if (currentSent + sentenceSpan < docSents.length) currentSent + sentenceSpan else docSents.length - 1
-    println("cont span start " + contextSpanStart)
-    println("cont span end " + contextSpanEnd)
-//    val contextSentences = m.document.sentences.slice(contextSpanStart, contextSpanEnd)
+    val contextSpanEnd = if (currentSent + sentenceSpan < docSents.length) currentSent + sentenceSpan + 1 else docSents.length
     Interval(contextSpanStart, contextSpanEnd)
   }
   def getInstancesInContext(contextType: String, contextSentences: Interval, allMentions: Seq[Mention]): Seq[String] = {
     val instances = contextType match {
       case "date" => {
         val dateMentions = allMentions.filter(_.label == "Date")
-        for (m <- dateMentions) println("date men: " + m.label + " " + m.text)
-        println(contextSentences + "<<<")
         dateMentions.filter(m => contextSentences.intersect(Seq(m.sentence)).nonEmpty).map(_.text)
       }
+
       case _ => ???
     }
-    for (i <- instances) println("instance: " + i)
+//    for (i <- instances) println("instance: " + i)
     instances
   }
 
   def getMostFrequentInContext(mention: Mention, contextType: String, maxWindow: Int, allMentions: Seq[Mention]): String = {
-    val instancesInContext = new ArrayBuffer[String]()
-//    breakable {
     for (windowSize <- 1 to maxWindow) {
       val contextSentences = getSentIDsInSpan(mention, windowSize)
       val instances = getInstancesInContext(contextType, contextSentences, allMentions)
       if (instances.nonEmpty) {
         return instances.groupBy(identity).map(i => i._1 -> i._2.length).max._1
-
       }
-
      }
     NA
   }
@@ -314,13 +327,22 @@ trait ContextExtractor {
     else null
   }
 
-  def findClosestDate(mention: Mention, dates: Seq[Mention]): Mention = {
-    var minDist = 100
-    var minDistDate = dates.head
-    for (date <- dates) {
-      if (math.abs(mention.tokenInterval.start - date.tokenInterval.end ) < minDist | math.abs(mention.tokenInterval.end - date.tokenInterval.start) < minDist) minDistDate = date
-    }
-    minDistDate
+//  def findClosestDate(mention: Mention, dates: Seq[Mention]): Mention = {
+//    var minDist = 100
+//    var minDistDate = dates.head
+//    for (date <- dates) {
+//      if (math.abs(mention.tokenInterval.start - date.tokenInterval.end ) < minDist || math.abs(mention.tokenInterval.end - date.tokenInterval.start) < minDist) minDistDate = date
+//    }
+//    minDistDate
+//  }
+
+  def getDistance(m1: Mention, m2: Mention): Int = {
+    val sorted = Seq(m1, m2).sortBy(_.tokenInterval)
+    sorted.last.tokenInterval.start - sorted.head.tokenInterval.end
+  }
+
+  def findClosest(mention: Mention, mentions: Seq[Mention]): Mention = {
+    mentions.map(m => (m, getDistance(mention, m))).minBy(_._2)._1
   }
 
 }

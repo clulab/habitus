@@ -38,6 +38,7 @@ object PlantingAreaReader {
           val filename = StringUtils.afterLast(file.getName, '/')
           println(s"going to parse input file: $filename")
           val (doc, mentions, allEventMentions, entityHistogram) = vp.parse(text)
+          println(entityHistogram + "<<<<")
           val printVars = PrintVariables("Assignment", "variable", "value")
           val withoutNegValues = filterNegativeValues(allEventMentions)
           multiPrinter.outputMentions(withoutNegValues, doc, filename, printVars)
