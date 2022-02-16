@@ -60,28 +60,28 @@
     /(?i)(crop|cultivar|cultivation|seed|sowed|sown|^plant|grown|growing|variety|varieties)/
 
 ### Used for context extraction###
-- name: date-standalone
+- name: date-standalone-vars
   priority: ${rulepriority}
   label: Date
   type: token
   pattern: |
     [entity='B-DATE'] [entity='I-DATE']*
 
-- name: location
+- name: location-vars
   priority: ${rulepriority}
   label: Location
   type: token
   pattern: |
     [entity='B-LOC'] [entity='I-LOC']*
 
-- name: fertilizer-values-from-lexicon
+- name: fertilizer-values-from-lexicon-vars
   priority: ${rulepriority}
   label: Fertilizer
   type: token
   pattern: |
     [entity='B-FERTILIZER'] [entity='I-FERTILIZER']*
 
-- name: crop-values-from-lexicon
+- name: crop-values-from-lexicon-vars
   priority: ${rulepriority}
   label: Crop
   type: token
