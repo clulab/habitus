@@ -877,11 +877,11 @@ class TestVariableReader extends FlatSpec with Matchers {
     }
   }
 
-  // TODO: needs fix in processors for "before mid-July" 
+  // FIXME: "before mid-July" is tokenized weird
   val sent21_7 = "Overall, it is noted that 65% of the areas are developed beyond September 15, 2020 (late sowing), the areas sown during the recommended period (between July 15 and August 15) cover 34% of the plantings and early sowing (before mid-July) represents 1% of the total development."
   sent21_7 should "recognize 3 ranges in the same sentences" in {
     val mentions = getMentions(sent21_7)
-    mentions.filter(_.label matches "Assignment") should have size (2)
+    mentions.filter(_.label matches "Assignment") should have size (3)
     var count = 0
     for (m <- mentions.filter(_.label matches "Assignment")) {
       if(count == 1) {
@@ -892,6 +892,10 @@ class TestVariableReader extends FlatSpec with Matchers {
         m.arguments("variable").head.text should be("sown")
         m.arguments("value").head.text should equal("between July 15 and August 15")
         m.arguments("value").head.norms.get(0) should equal("XXXX-07-15 -- XXXX-08-15")
+      } else if (count == 2) {
+        m.arguments("variable").head.text should be("early sowing")
+        m.arguments("value").head.text should equal("beforemid July")
+        m.arguments("value").head.norms.get(0) should equal("XXXX-XX-XX -- XXXX-07-15")
       }
       count += 1
     }

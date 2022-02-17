@@ -15,10 +15,11 @@ class TestPrinting extends Test {
   val threads = 2
   val jsonOutputFile = "./mentions.json"
   val jsonlOutputFile = "./mentions.jsonl"
+  val masterResource = "./src/main/resources/variables/master.yml"
 
   new File(jsonOutputFile).delete()
   new File(jsonlOutputFile).delete()
-  VariableReader.run(inputDir, outputDir, threads)
+  VariableReader.run(inputDir, outputDir, threads, masterResource)
 
   behavior of "JsonPrinter"
 

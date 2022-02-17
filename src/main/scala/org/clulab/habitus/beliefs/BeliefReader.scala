@@ -43,7 +43,7 @@ object BeliefReader {
           val printVars = PrintVariables("Belief", "believer", "belief")
           val context = mutable.Map.empty[Int, ContextDetails]
 
-          multiPrinter.outputMentions(mentions, doc, context, filename, printVars)
+          multiPrinter.outputMentions(mentions, doc, filename, printVars)
         }
         catch {
           case e: Exception => e.printStackTrace()

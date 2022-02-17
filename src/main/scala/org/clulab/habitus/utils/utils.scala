@@ -91,6 +91,13 @@ package object utils {
         displayArguments(rel)
       case _ => ()
     }
+
+    if (mention.attachments.nonEmpty) {
+      println(s"$boundary\nAttachments:")
+      for (att <- mention.attachments) {
+        println(att)
+      }
+    }
     println(s"$boundary\n")
   }
 

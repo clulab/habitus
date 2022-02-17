@@ -9,9 +9,10 @@ import java.io.{File, PrintWriter}
 object InterviewsReader {
 
   def main(args: Array[String]): Unit = {
-    val inputDir = "path/to/input/dir"
-    val outputDir = "path/to/output/dir"
-    val threads = 1
+    val props = StringUtils.argsToMap(args)
+    val inputDir = props("in")
+    val outputDir = props("out")
+    val threads = props.get("threads").map(_.toInt).getOrElse(1)
 
     run(inputDir, outputDir, threads)
   }

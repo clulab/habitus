@@ -8,9 +8,11 @@ import org.clulab.utils.Menu
 import org.clulab.utils.ReloadableShell
 import org.clulab.utils.SafeDefaultMenuItem
 import org.clulab.utils.SafeMainMenuItem
+import org.clulab.utils.StringUtils
 
-class ReloadableVariableProcessor() {
-  protected var variableProcessor: VariableProcessor = VariableProcessor()
+class ReloadableVariableProcessor(val masterResource: String) {
+  protected var variableProcessor: VariableProcessor = 
+    VariableProcessor(masterResource)
 
   def get: VariableProcessor = variableProcessor
 
@@ -18,11 +20,11 @@ class ReloadableVariableProcessor() {
 }
 
 /** Interactive shell for variable reading */
-class VariableShell() extends ReloadableShell {
+class VariableShell(val masterResource: String) extends ReloadableShell {
   println("Creating VariableProcessor...\n")
-  private val vp: ReloadableVariableProcessor = new ReloadableVariableProcessor()
+  private val vp: ReloadableVariableProcessor = new ReloadableVariableProcessor(masterResource)
 
-    override def reload(): Unit = {
+  override def reload(): Unit = {
     println("Reloading VariableProcessor...")
     try {
       vp.reload()
@@ -36,8 +38,9 @@ class VariableShell() extends ReloadableShell {
 
   override def work(text: String): Unit = {
     // the actual reading
-    val (doc, mentions, _, _) = vp.get.parse(text)
+    val (doc, mentions, contentMentions, _) = vp.get.parse(text)
 
+    // note: to see attachment, display contentMentions
     // debug display the mentions
     displayMentions(mentions, doc)
   }
@@ -57,5 +60,8 @@ class VariableShell() extends ReloadableShell {
 }
 
 object VariableShell extends App {
-  new VariableShell().shell()
+  val props = StringUtils.argsToMap(args)
+  val masterResource = props.getOrElse("grammar", "/variables/master-areas.yml")
+  
+  new VariableShell(masterResource).shell()
 }

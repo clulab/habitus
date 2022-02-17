@@ -1,0 +1,22 @@
+
+taxonomy:
+  - Entity:
+    - Variable
+    - Value
+    - Date
+    - Location
+    - Fertilizer
+    - Crop
+  - Event:
+    - Assignment
+
+rules:
+  - import: variables/entities-areas.yml
+    vars:
+      rulepriority: "2"
+
+  - import: variables/events-areas.yml
+    vars:
+      label: Assignment
+      rulepriority: "3+"
+
