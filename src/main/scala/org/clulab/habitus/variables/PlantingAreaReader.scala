@@ -50,8 +50,7 @@ object PlantingAreaReader {
   }
 
   def filterNegativeValues(mentions: Seq[Mention]): Seq[Mention] = {
-    for (m <- mentions
-      if !m.arguments("value").head.norms.head.head.startsWith("-"))
-      yield m
+    mentions.filterNot(_.arguments("value").head.norms.head.head.startsWith("-"))
   }
+
 }

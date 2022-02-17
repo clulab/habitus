@@ -4,7 +4,8 @@ import org.clulab.odin.Mention
 import org.clulab.processors.Document
 import org.clulab.serialization.json.stringify
 import org.clulab.utils.FileUtils
-import org.json4s.JsonAST.JObject
+import org.json4s.JLong
+import org.json4s.JsonAST.{JField, JInt, JObject, JString}
 import org.json4s.JsonDSL._
 
 import java.io.PrintWriter
@@ -37,18 +38,16 @@ class JsonlPrinter(outputFilename: String) extends Printer {
 
     var jObject: JObject =
       ("variableText" -> variableText) ~
-      ("valueText" -> valueText) ~
-      ("valueNorm" -> valueNorm) ~
-      ("sentenceText" -> sentenceText) ~
-      ("inputFilename" -> inputFilename)
+        ("valueText" -> valueText) ~
+        ("valueNorm" -> valueNorm) ~
+        ("sentenceText" -> sentenceText) ~
+        ("inputFilename" -> inputFilename)
 
-    // add key-value pairs from the context attachment
-    mention.attachments.head.asInstanceOf[Context].getArgValuePairs()
-      .foreach {
-        i =>
-          jObject = jObject ~ (i._1 -> i._2.toString)
-      }
-
+    // make an obj from key-value pairs from the context attachment
+    val argJObject: JObject = toJObject(mention.attachments.head.asInstanceOf[Context].getArgValuePairs())
+    for (value <- argJObject.obj) {
+      jObject = jObject ~ (value._1 -> value._2)
+    }
     val json = stringify(jObject, pretty = false)
     val jsonl = json.replace('\n', ' ') // just in case
 
@@ -70,4 +69,15 @@ class JsonlPrinter(outputFilename: String) extends Printer {
         }
     printWriter.flush()
   }
+
+  def toJObject(argValuePairs: List[(String, AnyRef)]): JObject = {
+    new JObject(argValuePairs.map { case (arg, value) => JField(arg,
+      value match {
+        case l: java.lang.Long => JLong(l)
+        case i: java.lang.Integer => JInt(BigInt(i))
+        case s: String => JString(s)
+      }
+    )})
+  }
+
 }

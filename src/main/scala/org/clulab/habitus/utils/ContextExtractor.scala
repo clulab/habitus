@@ -71,20 +71,20 @@ trait ContextExtractor {
 
   def getContext(m: Mention, contextType: String, contextRelevantMentions: Seq[Mention], allMentions: Seq[Mention]): String = {
     // if no relevant context mentions in sentence, use the most freq one in sentence window equal to +/- maxContextWindow
-    val date = contextRelevantMentions.length match {
+    val context = contextRelevantMentions.length match {
       case 0 => getMostFrequentInContext(m, contextType, maxContextWindow, allMentions)
-      case 1 => contextRelevantMentions.head.text
+      case 1 => contextRelevantMentions.head.text.toLowerCase()
       case _ => {
         contextType match {
           case "Location" => {
             val nextLoc = findClosestNextLocation(m, contextRelevantMentions)
-            if (nextLoc != null) nextLoc.text else NA
+            if (nextLoc.isDefined) nextLoc.get.text else NA
           }
-          case _ => findClosest(m, contextRelevantMentions).text
+          case _ => findClosest(m, contextRelevantMentions).text.toLowerCase()
         }
       }
     }
-    date
+    context
   }
 
   def getSentIDsInSpan(m: Mention, sentenceSpan: Int): Interval = {
@@ -108,17 +108,17 @@ trait ContextExtractor {
       val contextSentences = getSentIDsInSpan(mention, windowSize)
       val instances = getInstancesInContext(contextType, contextSentences, allMentions)
       if (instances.nonEmpty) {
-        return instances.groupBy(identity).map(i => i._1 -> i._2.length).max._1
+        return instances.groupBy(identity).map(i => i._1 -> i._2.length).max._1.toLowerCase()
       }
      }
     NA
   }
 
-  def findClosestNextLocation(mention: Mention, locations: Seq[Mention]): Mention = {
-    if (locations.length == 1) return locations.head
+  def findClosestNextLocation(mention: Mention, locations: Seq[Mention]): Option[Mention] = {
+    if (locations.length == 1) return Some(locations.head)
     val nextLocations = locations.filter(_.tokenInterval.start > mention.arguments("value").head.tokenInterval.start)
-    if (nextLocations.nonEmpty) nextLocations.minBy(_.tokenInterval)
-    else null
+    if (nextLocations.nonEmpty) Some(nextLocations.minBy(_.tokenInterval))
+    else None
   }
 
   def getDistance(m1: Mention, m2: Mention): Int = {

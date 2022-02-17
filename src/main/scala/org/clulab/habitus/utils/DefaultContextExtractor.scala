@@ -27,7 +27,7 @@ class DefaultContextExtractor extends ContextExtractor {
           getContext(m, "Location", thisSentLocs, mentions),
           getProcess(m),
 //          getCropContext(m, frequencyContext),
-          getContext(m, "Crop", thisSentCrops, mentions).toLowerCase(),
+          getContext(m, "Crop", thisSentCrops, mentions),
           getContext(m, "Fertilizer", thisSentFerts, mentions),
 //          getContextFromHistogramInWindow(m, "Fertilizer", maxContextWindow, entityHistogram),
           getComparative(m)
