@@ -3,9 +3,7 @@
   label: Value
   type: token
   pattern: |
-    (?<=[entity='B-MEASUREMENT' & word = "-"]) [entity='I-MEASUREMENT']+ [entity='I-MEASUREMENT' & word = /^(ha|he)/]+
-    |
-    [entity='B-MEASUREMENT' & !word = "-"] [entity='I-MEASUREMENT']* [entity='I-MEASUREMENT' & word = /^(ha|he)/]+
+    (?<![word = /^vs\.?|against|compared|^forecast/][word=/\w*/]{0,3}) [entity='B-MEASUREMENT' & !word = "-"] [entity='I-MEASUREMENT']* [entity='I-MEASUREMENT' & word = /^(ha|he)/]+
 
 - name: value-from-areas-percentage
   priority: ${rulepriority}
@@ -37,6 +35,13 @@
   type: token
   pattern: |
     [entity='B-DATE'] [entity='I-DATE']*
+
+- name: date-two-years
+  priority: ${rulepriority}
+  label: Date
+  type: token
+  pattern: |
+    [word = /(\d\d){1,2}(\/|_)(\d\d){1,2}/]
 
 - name: location-areas
   priority: ${rulepriority}

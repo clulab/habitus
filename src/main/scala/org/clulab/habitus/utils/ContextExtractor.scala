@@ -32,32 +32,41 @@ trait ContextExtractor {
   val NA = "N/A"
   val maxContextWindow = 2
 
+  val plantingLemmas = Seq("plant", "sow", "cover", "cultivate", "grow")
+  val creditLemmas = Seq("credit", "finance", "value", "correspond")
+  val harvestLemmas = Seq("harvest")
+  val disasterLemmas = Seq("flood", "bird", "attack")
+
   def getContextPerMention(mentions: Seq[Mention], entityHistogram: Seq[EntityDistFreq], doc: Document, label: String): Seq[Mention]
 
   def getProcess(mention: Mention): String = {
-    val stopVerbs = Seq("be", "go")
-    val sentVerbs = new ArrayBuffer[String]()
-    val sentLemmas = mention.sentenceObj.lemmas.get
-    for ((tag, i) <- mention.tags.get.zipWithIndex) {
-//      println(tag + " " + sentLemmas(i))
-      if (tag.startsWith("V")) {
-        sentVerbs.append(sentLemmas(i))
-      }
-    }
+
+    // for checking verbal triggers
+//    val stopVerbs = Seq("be", "go")
+//    val sentVerbs = new ArrayBuffer[String]()
+//    val sentLemmas = mention.sentenceObj.lemmas.get
+//    for ((tag, i) <- mention.sentenceObj.tags.get.zipWithIndex) {
+//      if (tag.startsWith("VB")) {
+//        sentVerbs.append(sentLemmas(i))
+//      }
+//    }
+
     val lemmas = mention.sentenceObj.lemmas.get
-    val process = if (lemmas.contains("plant") || lemmas.contains("sow")) {
+    val process = if (lemmas.exists(l => plantingLemmas.contains(l))) {
       "planting"
-    } else if (lemmas.contains("harvest")) {
+    } else if (lemmas.exists(l => harvestLemmas.contains(l))) {
       "harvesting"
-    } else if (lemmas.contains("credit")) {
+    } else if (lemmas.exists(l => creditLemmas.contains(l))) {
       "credit"
-    } else sentVerbs.filter(w => !stopVerbs.contains(w)).mkString("::")
+    } else if (lemmas.exists(l => disasterLemmas.contains(l))) {
+      "natural_disaster"
+    } else "planting" // for now assume anything else is planting //sentVerbs.filter(w => !stopVerbs.contains(w)).mkString("::") // for checking verbal triggers
     process
   }
 
   def getComparative(mention: Mention): Int = {
     val relative = Seq("vs", "vs.", "respectively")
-    if (mention.sentenceObj.words.intersect(relative).nonEmpty) 1 else 0
+    if (relative.exists(mention.sentenceObj.words.contains(_))) 1 else 0
   }
 
   def getContext(m: Mention, contextType: String, contextRelevantMentions: Seq[Mention], allMentions: Seq[Mention]): String = {
