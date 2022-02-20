@@ -5,9 +5,11 @@
   action: splitIfTwoValues
   type: token
   pattern: |
-    @variable:Variable ( [word=/.+/]{, 10}) @value:Value ( [word=/.+/]{, 10}) @value:Value
+    @variable:Variable ( [word=/.+/]{, 17}) @value:Value ( [word=/.+/]{, 17}) @value:Value
     |
-    @variable:Variable ( [word=/.+/]{, 10} @value:Value )+  
+    @variable:Variable ( [word=/.+/]{, 17} @value:Value )+  
+    |
+    @variable:Variable of @value:Value
 
 - name: ${label}-val-var
   priority: ${rulepriority} 

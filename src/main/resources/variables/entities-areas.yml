@@ -3,9 +3,7 @@
   label: Value
   type: token
   pattern: |
-    (?<=[entity='B-MEASUREMENT' & word = "-"]) [entity='I-MEASUREMENT']+ [entity='I-MEASUREMENT' & word = /^(ha|he)/]+
-    |
-    [entity='B-MEASUREMENT' & !word = "-"] [entity='I-MEASUREMENT']* [entity='I-MEASUREMENT' & word = /^(ha|he)/]+
+    (?<![word = /^vs\.?|against|compared|^forecast/][word=/\w*/]{0,3}) [entity='B-MEASUREMENT' & !word = "-"] [entity='I-MEASUREMENT']* [entity='I-MEASUREMENT' & word = /^(ha|he)/]+
 
 - name: value-from-areas-percentage
   priority: ${rulepriority}
@@ -28,16 +26,40 @@
   pattern: |
     [entity='B-DATE-RANGE'] [entity='I-DATE-RANGE']*
 
-- name: date-standalone
+
+
+### Used for context extraction###
+- name: date-standalone-areas
   priority: ${rulepriority}
   label: Date
   type: token
   pattern: |
     [entity='B-DATE'] [entity='I-DATE']*
 
-- name: location
+- name: date-two-years
+  priority: ${rulepriority}
+  label: Date
+  type: token
+  pattern: |
+    [word = /(\d\d){1,2}(\/|_)(\d\d){1,2}/]
+
+- name: location-areas
   priority: ${rulepriority}
   label: Location
   type: token
   pattern: |
     [entity='B-LOC'] [entity='I-LOC']*
+
+- name: fertilizer-values-from-lexicon-areas
+  priority: ${rulepriority}
+  label: Fertilizer
+  type: token
+  pattern: |
+    [entity='B-FERTILIZER'] [entity='I-FERTILIZER']*
+
+- name: crop-values-from-lexicon-areas
+  priority: ${rulepriority}
+  label: Crop
+  type: token
+  pattern: |
+    [entity='B-CROP'] [entity='I-CROP']*

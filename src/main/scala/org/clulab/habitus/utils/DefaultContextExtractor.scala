@@ -11,10 +11,6 @@ class DefaultContextExtractor extends ContextExtractor {
 
   def getContextPerMention(mentions: Seq[Mention], entityHistogram: Seq[EntityDistFreq], doc: Document, label: String): Seq[Mention] = {
     val toReturn = new ArrayBuffer[Mention]()
-    val frequencyContext = {
-      if (entityHistogram.isEmpty) mutable.Map.empty[Int, ContextDetails]
-      else compressContext(doc, mentions, entityHistogram)
-    }.toMap
     val mentionsBySentence = mentions groupBy (_.sentence) mapValues (_.sortBy(_.start)) withDefaultValue Nil
     for ((s, i) <- doc.sentences.zipWithIndex) {
 
@@ -22,14 +18,18 @@ class DefaultContextExtractor extends ContextExtractor {
       val contentMentions = thisSentMentions.filter(_.label matches label)
       val thisSentDates = thisSentMentions.filter(_.label == "Date")
       val thisSentLocs = thisSentMentions.filter(_.label == "Location")
-
+      val thisSentCrops = thisSentMentions.filter(_.label == "Crop")
+      val thisSentFerts = thisSentMentions.filter(_.label == "Fertilizer")
       // to keep only mention labelled as Assignment (these labels are associated with .yml files, e.g. Variable, Value)
       for (m <- contentMentions) {
         val context = DefaultContext(
-          getDate(m, thisSentDates, frequencyContext),
-          getLocation(m, thisSentLocs, frequencyContext),
-          getCropContext(m, frequencyContext),
-          getFertilizerContext(m, frequencyContext),
+          getContext(m, "Date", thisSentDates, mentions),
+          getContext(m, "Location", thisSentLocs, mentions),
+          getProcess(m),
+//          getCropContext(m, frequencyContext),
+          getContext(m, "Crop", thisSentCrops, mentions),
+          getContext(m, "Fertilizer", thisSentFerts, mentions),
+//          getContextFromHistogramInWindow(m, "Fertilizer", maxContextWindow, entityHistogram),
           getComparative(m)
         )
 

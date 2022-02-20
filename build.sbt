@@ -1,6 +1,6 @@
 name := "habitus"
 organization := "org.clulab"
-scalaVersion := "2.12.10"
+scalaVersion := "2.12.15"
 
 lazy val core: Project = (project in file("."))
     .enablePlugins(JavaAppPackaging, DockerPlugin)
@@ -10,12 +10,12 @@ pomIncludeRepository := { (repo: MavenRepository) =>
 }
 
 // for processors-models
-resolvers += "Artifactory" at "http://artifactory.cs.arizona.edu:8081/artifactory/sbt-release"
+resolvers += ("Artifactory" at "http://artifactory.cs.arizona.edu:8081/artifactory/sbt-release").withAllowInsecureProtocol(true)
 // for ontologies related to eidos
 resolvers += "jitpack" at "https://jitpack.io"
 
 libraryDependencies ++= {
-  val procVer = "8.4.8-SNAPSHOT"
+  val procVer = "8.4.8"
 
   Seq(
     "ai.lum"        %% "odinson-core"        % "0.4.0",
@@ -31,3 +31,8 @@ libraryDependencies ++= {
 }
 
 addCommandAlias("dockerize", ";compile;test;docker:publishLocal")
+
+// This with true seems to help with Ctrl+C processing.
+// run / fork := true
+// However, it has the side-effect of causing the BeliefShell to fall through and exit. 
+run / fork := false

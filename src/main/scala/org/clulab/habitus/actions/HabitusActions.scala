@@ -28,11 +28,12 @@ class HabitusActions extends Actions {
   /** Global action for the numeric grammar */
   def cleanupAction(mentions: Seq[Mention], state: State): Seq[Mention] =
     cleanupAction(mentions)
+      // sorting to make sure tests that rely on mention order pass
       .sortBy(_.sentence)
       .sortBy(_.tokenInterval)
 
   def cleanupAction(mentions: Seq[Mention]): Seq[Mention] = {
-    val r1 = keepLongestMentions(mentions)
+    val r1 = removeRedundantVariableMentions(keepLongestMentions(mentions))
     r1
   }
 
@@ -53,6 +54,7 @@ class HabitusActions extends Actions {
     }
     keepOneOfSameSpan(uniqueArguments(filteredBeliefs ++ nonBeliefs))
   }
+
 
   def copyWithArgs(orig: Mention, newArgs: Map[String, Seq[Mention]]): Mention = {
     val newTokInt = mkTokenInterval(newArgs)
@@ -81,6 +83,32 @@ class HabitusActions extends Actions {
     toReturn ++ other
   }
 
+  def removeRedundantVariableMentions(mentions: Seq[Mention]): Seq[Mention] = {
+    // if there are multiple mentions of with the same value, pick one
+    val toReturn = new ArrayBuffer[Mention]()
+    val (targetMentions, other) = mentions.partition(_.label == "Assignment")
+    val groupedBySent = targetMentions.groupBy(_.sentence)
+    for (sentGroup <- groupedBySent) {
+        val groupedByValue = sentGroup._2.groupBy(_.arguments("value").head.text)
+        for (valueGroup <- groupedByValue) {
+          // pick the one where the variable is closest to the value
+          val menToKeep = closestVar(valueGroup._2)
+          toReturn.append(menToKeep)
+        }
+      }
+    toReturn ++ other
+  }
+
+  def distanceBetweenTwoArgs(mention: Mention, arg1: String, arg2: String): Int = {
+    // assumes one arg of each type
+    val sortedArgs = mention.arguments.map(_._2.head).toSeq.sortBy(_.tokenInterval.start)
+    sortedArgs.last.start - sortedArgs.head.end
+  }
+  def closestVar(mentions: Seq[Mention]): Mention = {
+    // given several var-val mentions with the same value, will keep the mention that has the variable argument
+    // closest to the value
+    mentions.minBy(m => distanceBetweenTwoArgs(m, "variable", "value"))
+  }
 
   def keepOneOfSameSpan(mentions: Seq[Mention]): Seq[Mention] = {
     // if there are two mentions of same span and label, keep one

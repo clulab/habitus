@@ -5,6 +5,8 @@ taxonomy:
     - Value
     - Date
     - Location
+    - Fertilizer
+    - Crop
   - Event:
     - Assignment
 
