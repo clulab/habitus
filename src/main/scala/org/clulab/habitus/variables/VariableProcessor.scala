@@ -63,6 +63,7 @@ object VariableProcessor {
   }
 
   // Custom NER for variable reading
+  // Custom NER for variable reading
   def newLexiconNer(): LexiconNER = {
     val kbs = Seq(
       "lexicons/FERTILIZER.tsv",
