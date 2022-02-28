@@ -31,3 +31,4 @@ libraryDependencies ++= {
 }
 
 addCommandAlias("dockerize", ";compile;test;docker:publishLocal")
+cancelable in Global := true

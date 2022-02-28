@@ -1,5 +1,6 @@
 package org.clulab.habitus.variables
 
+import org.clulab.processors.fastnlp.FastNLPProcessor
 import org.clulab.dynet.Utils
 import org.clulab.odin.EventMention
 import org.clulab.odin.ExtractorEngine
@@ -151,6 +152,7 @@ class EntityHistogramExtractor(val processor: Processor, val extractor: Extracto
         entityCounter = entityCounter + 1
       }
     }
+    println(s"entities in this file are: ${entityTagTracker.mkString(",")}")
     //calculate frequency across all sentences, return as entityAbsDistFreq (e.g.,{Senegal, LOC, {[1, 1], [4, 2]}})
     mapEntityToFreq(entitySentFreq)
   }
@@ -170,7 +172,8 @@ object EntityHistogramExtractor {
 
     // create the processor
     Utils.initializeDyNet()
-    val processor: Processor = new CluProcessor(optionalNER = Some(lexiconNer))
+    //val processor: Processor = new CluProcessor(optionalNER = Some(lexiconNer))
+    val processor: Processor = new FastNLPProcessor()
     // read rules from yml file in resources
     val rules = FileUtils.getTextFromResource("/variables/master.yml")
     // creates an extractor engine using the rules and the default actions

@@ -3,15 +3,18 @@ package org.clulab.habitus.variables
 import org.clulab.odin.{EventMention, ExtractorEngine, Mention}
 import org.clulab.processors.Document
 import org.clulab.processors.clu.CluProcessor
+import org.clulab.processors.fastnlp.FastNLPProcessor
 
-class EntityProcessor(val processor: CluProcessor, val extractor: ExtractorEngine) {
+
+class EntityProcessor(val processor: FastNLPProcessor, val extractor: ExtractorEngine) {
 
   def reloaded: EntityProcessor = {
     val newLexiconNer = VariableProcessor.newLexiconNer()
-    val newProcessor = processor.copy(optionalNEROpt = Some(Some(newLexiconNer)))
+    //val newProcessor = processor.copy(optionalNEROpt = Some(Some(newLexiconNer)))
+
     val newExtractorEngine = VariableProcessor.newExtractorEngine()
 
-    new EntityProcessor(newProcessor, newExtractorEngine)
+    new EntityProcessor(processor, newExtractorEngine)
   }
 
 
