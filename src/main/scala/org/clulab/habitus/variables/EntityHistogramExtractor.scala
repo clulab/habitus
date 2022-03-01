@@ -109,12 +109,15 @@ class EntityHistogramExtractor(val processor: Processor, val extractor: Extracto
     //for each sentence how many times does this entity occur
     val entitySentFreq = mutable.Map.empty[Entity, Int]
     val entityTagTracker = mutable.Map.empty[String, String]
+    val tokenNERTag = ArrayBuffer[(String,String)]()
+    val indicesToSkip = ArrayBuffer[Int]()
     for ((s, i) <- doc.sentences.zipWithIndex) {
       var entityCounter = 0
       //some indices have to be skipped if the entity has multiple tokens e.g.,"United States of America"
       val indicesToSkip = ArrayBuffer[Int]()
       for ((nerTag, word, norm) <- (s.entities.get, s.words, s.norms.get).zipped) {
         var EntityNameIndex: Option[Entity] = None
+        tokenNERTag += ((word,nerTag))
         if (!indicesToSkip.contains(entityCounter)) {
           var namedEntityTag = ""
           var entityName = word.toLowerCase
@@ -152,7 +155,8 @@ class EntityHistogramExtractor(val processor: Processor, val extractor: Extracto
         entityCounter = entityCounter + 1
       }
     }
-    println(s"entities in this file are: ${entityTagTracker.mkString(",")}")
+   // println(s"entities in this file are: ${entityTagTracker.mkString(",")}")
+    println(tokenNERTag.mkString("\n"))
     //calculate frequency across all sentences, return as entityAbsDistFreq (e.g.,{Senegal, LOC, {[1, 1], [4, 2]}})
     mapEntityToFreq(entitySentFreq)
   }
@@ -172,8 +176,8 @@ object EntityHistogramExtractor {
 
     // create the processor
     Utils.initializeDyNet()
-    //val processor: Processor = new CluProcessor(optionalNER = Some(lexiconNer))
-    val processor: Processor = new FastNLPProcessor()
+    val processor: Processor = new CluProcessor(optionalNER = Some(lexiconNer))
+    //val processor: Processor = new FastNLPProcessor()
     // read rules from yml file in resources
     val rules = FileUtils.getTextFromResource("/variables/master.yml")
     // creates an extractor engine using the rules and the default actions
