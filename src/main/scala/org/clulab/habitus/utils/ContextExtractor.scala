@@ -4,6 +4,7 @@ import org.clulab.habitus.variables.EntityDistFreq
 import org.clulab.odin.{Attachment, Mention}
 import org.clulab.processors.{Document, Sentence}
 import org.clulab.struct.Interval
+import org.clulab.factuality.Factuality
 import scala.util.control.Breaks._
 
 import scala.collection.{breakOut, mutable}
@@ -72,15 +73,23 @@ trait ContextExtractor {
 
   def getFactualityScore(m: Mention): Int = {
     // if no relevant context mentions in sentence, use the most freq one in sentence window equal to +/- maxContextWindow
-val token =1
+val factualityScore =1
     for ((tag, i) <- m.tags.zipWithIndex) {
-
+var token=""
       if (tag.head == "VB") {
-        val token = m.words(i)
+         token = m.words(i)
       }
+      // This particular model is provided in the library dependency.
+      val factuality = Factuality("org/clulab/factuality/models/FTrainFDevScim3")
+
+      val predicateIndex = 1 // induced
+      val prediction: Float = factuality.predict(token, predicateIndex)
+
+      println(s"Prediction: $prediction")
+
 
     }
-    token
+    factualityScore
   }
 
   def getContext(m: Mention, contextType: String, contextRelevantMentions: Seq[Mention], allMentions: Seq[Mention]): String = {

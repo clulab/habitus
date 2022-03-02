@@ -14,14 +14,19 @@ class DefaultContextExtractor extends ContextExtractor {
     val mentionsBySentence = mentions groupBy (_.sentence) mapValues (_.sortBy(_.start)) withDefaultValue Nil
     for ((s, i) <- doc.sentences.zipWithIndex) {
       val words=doc.sentences(i).words.mkString(" ")
+      println(words)
+      println(doc.sentences(i).tags)
       val thisSentMentions = mentionsBySentence(i).distinct
       val contentMentions = thisSentMentions.filter(_.label matches label)
       val thisSentDates = thisSentMentions.filter(_.label == "Date")
       val thisSentLocs = thisSentMentions.filter(_.label == "Location")
       val thisSentCrops = thisSentMentions.filter(_.label == "Crop")
       val thisSentFerts = thisSentMentions.filter(_.label == "Fertilizer")
+
       // to keep only mention labelled as Assignment (these labels are associated with .yml files, e.g. Variable, Value)
       for (m <- contentMentions) {
+        println(m.words)
+        println(m.tags)
         //get pos tags here for factuality
         // check inside the mention
         // if not check the sentence object.
