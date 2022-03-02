@@ -13,7 +13,7 @@ class DefaultContextExtractor extends ContextExtractor {
     val toReturn = new ArrayBuffer[Mention]()
     val mentionsBySentence = mentions groupBy (_.sentence) mapValues (_.sortBy(_.start)) withDefaultValue Nil
     for ((s, i) <- doc.sentences.zipWithIndex) {
-
+      val words=doc.sentences(i).words.mkString(" ")
       val thisSentMentions = mentionsBySentence(i).distinct
       val contentMentions = thisSentMentions.filter(_.label matches label)
       val thisSentDates = thisSentMentions.filter(_.label == "Date")
@@ -26,7 +26,6 @@ class DefaultContextExtractor extends ContextExtractor {
         // check inside the mention
         // if not check the sentence object.
         val context = DefaultContext(
-          //add the factuality as yet another field here
           getContext(m, "Date", thisSentDates, mentions),
           getContext(m, "Location", thisSentLocs, mentions),
           getProcess(m),
@@ -34,7 +33,8 @@ class DefaultContextExtractor extends ContextExtractor {
           getContext(m, "Crop", thisSentCrops, mentions),
           getContext(m, "Fertilizer", thisSentFerts, mentions),
 //          getContextFromHistogramInWindow(m, "Fertilizer", maxContextWindow, entityHistogram),
-          getComparative(m)
+          getComparative(m),
+          getFactualityScore(m)
         )
 
         // store context as a mention attachment
