@@ -73,19 +73,22 @@ trait ContextExtractor {
 
   def getFactualityScore(m: Mention): Int = {
     // if no relevant context mentions in sentence, use the most freq one in sentence window equal to +/- maxContextWindow
-val factualityScore =1
-    for ((tag, i) <- m.tags.zipWithIndex) {
-var token=""
-      if (tag.head == "VB") {
-         token = m.words(i)
+    val factualityScore = 1
+    var token = ""
+    for ((postags) <- m.tags) {
+      for ((tag,i) <- postags.zipWithIndex) {
+        if (tag.contains("VB")) {
+          token = m.words(i)
+        }
       }
+      println(token)
       // This particular model is provided in the library dependency.
-//      val factuality = Factuality("org/clulab/factuality/models/FTrainFDevScim3")
-//
-//      val predicateIndex = 1 // induced
-//      val prediction: Float = factuality.predict(token, predicateIndex)
-//
-//      println(s"Prediction: $prediction")
+      //      val factuality = Factuality("org/clulab/factuality/models/FTrainFDevScim3")
+      //
+      //      val predicateIndex = 1 // induced
+      //      val prediction: Float = factuality.predict(token, predicateIndex)
+      //
+      //      println(s"Prediction: $prediction")
 
 
     }

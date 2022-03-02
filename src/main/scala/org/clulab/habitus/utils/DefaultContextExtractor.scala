@@ -25,8 +25,7 @@ class DefaultContextExtractor extends ContextExtractor {
 
       // to keep only mention labelled as Assignment (these labels are associated with .yml files, e.g. Variable, Value)
       for (m <- contentMentions) {
-        println(m.words)
-        println(m.tags)
+
         //get pos tags here for factuality
         // check inside the mention
         // if not check the sentence object.
