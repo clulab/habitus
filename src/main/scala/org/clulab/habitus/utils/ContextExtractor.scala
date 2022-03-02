@@ -25,7 +25,8 @@ trait Context extends Attachment {
   }
 }
 
-case class DefaultContext(location: String, date: String, process: String, crop: String, fertilizer: String, comparative: Int) extends Context
+case class DefaultContext(location: String, date: String, process: String, crop: String, fertilizer: String, comparative: Int//factuality:Float
+ ) extends Context
 
 trait ContextExtractor {
 
@@ -67,6 +68,27 @@ trait ContextExtractor {
   def getComparative(mention: Mention): Int = {
     val relative = Seq("vs", "vs.", "respectively")
     if (relative.exists(mention.sentenceObj.words.contains(_))) 1 else 0
+  }
+
+
+  def getFactualityScore(m: Mention, contextType: String, contextRelevantMentions: Seq[Mention], allMentions: Seq[Mention]): String = {
+    // if no relevant context mentions in sentence, use the most freq one in sentence window equal to +/- maxContextWindow
+
+    m.words
+    val context = contextRelevantMentions.length match {
+      case 0 => getMostFrequentInContext(m, contextType, maxContextWindow, allMentions)
+      case 1 => contextRelevantMentions.head.text.toLowerCase()
+      case _ => {
+        contextType match {
+          case "Location" => {
+            val nextLoc = findClosestNextLocation(m, contextRelevantMentions)
+            if (nextLoc.isDefined) nextLoc.get.text else NA
+          }
+          case _ => findClosest(m, contextRelevantMentions).text.toLowerCase()
+        }
+      }
+    }
+    context
   }
 
   def getContext(m: Mention, contextType: String, contextRelevantMentions: Seq[Mention], allMentions: Seq[Mention]): String = {

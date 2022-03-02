@@ -22,11 +22,15 @@ class DefaultContextExtractor extends ContextExtractor {
       val thisSentFerts = thisSentMentions.filter(_.label == "Fertilizer")
       // to keep only mention labelled as Assignment (these labels are associated with .yml files, e.g. Variable, Value)
       for (m <- contentMentions) {
+        //get pos tags here for factuality
+        // check inside the mention
+        // if not check the sentence object.
         val context = DefaultContext(
+          //add the factuality as yet another field here
           getContext(m, "Date", thisSentDates, mentions),
           getContext(m, "Location", thisSentLocs, mentions),
           getProcess(m),
-//          getCropContext(m, frequencyContext),
+//        getCropContext(m, frequencyContext),
           getContext(m, "Crop", thisSentCrops, mentions),
           getContext(m, "Fertilizer", thisSentFerts, mentions),
 //          getContextFromHistogramInWindow(m, "Fertilizer", maxContextWindow, entityHistogram),
