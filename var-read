@@ -4,7 +4,8 @@
 # Parses all .txt files stored in the directory "in", and saves the output in the directory "out"
 #
 
-#sbt 'runMain org.clulab.habitus.variables.VariableReader -in in -out out -grammar /variables/master-areas.yml'
+#sbt 'runMain org.clulab.habitus.variables.VariableReader -in in -out out -grammar /variables/master.yml'
 
 #Note: uncomment this for extracting planting areas
+#Todo: eventually make this both run from same class
 sbt 'runMain org.clulab.habitus.variables.PlantingAreaReader -in in -out out -grammar /variables/master-areas.yml'
