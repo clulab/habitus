@@ -29,8 +29,8 @@ libraryDependencies ++= {
 
     "org.scalatest" %% "scalatest" % "3.0.5" % "test",
 
-//    "org.clulab" %% "factuality" % "1.0.0",
-//    "org.clulab" % "factuality-models" % "0.2.0"
+    "org.clulab" %% "factuality" % "1.0.0",
+    "org.clulab" % "factuality-models" % "0.2.0"
   )
 }
 
