@@ -2,19 +2,15 @@
 - name: ${label}-var-val
   priority: ${rulepriority} 
   label: ${label}
-  action: splitIfTwoValues
+  action: areaVarActionFlow
   type: token
   pattern: |
-    @variable:Variable ( [word=/.+/]{, 17}) @value:Value ( [word=/.+/]{, 17}) @value:Value
-    |
-    @variable:Variable ( [word=/.+/]{, 17} @value:Value )+  
-    |
-    @variable:Variable of @value:Value
+    @variable:Variable ( []+? @value:Value )+
 
 - name: ${label}-val-var
   priority: ${rulepriority} 
   label: ${label}
-  action: splitIfTwoValues
+  action: areaVarActionFlow
   type: token
   pattern: |
-    ( @value:Value [word=/.+/]{, 10} )+ @variable:Variable  
+    ( @value:Value []+? )+ @variable:Variable  

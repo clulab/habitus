@@ -38,10 +38,10 @@ class TestAreaReader extends FlatSpec with Matchers {
 
   }
 
-  val sent3 = "Harvests have started in some production areas of the valley, to date an area estimated at 843 ha is already harvested in  the Delta, 199 ha in Matam and 31 ha in Bakel."
+  val sent3 = "Harvests have started in some production areas of the valley, to date an area estimated at 843 ha is already harvested in  the Delta, 199 ha in Matam, 31 ha in Bakel, and 23 ha in Dagana."
   sent3 should "recognize area sizes" in {
     val areaMentions = getMentions(sent3).filter(_.label matches "Assignment")
-    areaMentions should have size (3)
+    areaMentions should have size (3) // excluding "23 ha in Dagana" - with this, we are testing exclusion of excessive var-val distances
     areaMentions.foreach({ m =>
       m.arguments("variable").head.text should include ("area") // fixme: 843 still attaches to areas because "area estimated at 843 ha" has not been extracted
     })

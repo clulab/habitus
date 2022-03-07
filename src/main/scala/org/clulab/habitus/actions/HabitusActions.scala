@@ -66,6 +66,29 @@ class HabitusActions extends Actions {
     }
   }
 
+
+  def areaVarActionFlow(mentions: Seq[Mention]): Seq[Mention] = {
+    // applies within a rule
+    // split mentions with mult args into binary mentions
+    val split = splitIfTwoValues(mentions)
+    // filter out the ones where var and val are too far
+    limitVarValSpan(split)
+  }
+
+  def limitVarValSpan(mentions: Seq[Mention]): Seq[Mention] = {
+    val toReturn = new ArrayBuffer[Mention]()
+    for (m <- mentions) {
+      // at this point, the mentions are already binary (one var and one val)
+      val args = m.arguments.map(_._2.head).toSeq
+      val sortedArgs = args.sortBy(_.tokenInterval)
+      val distance = sortedArgs.last.start -  sortedArgs.head.end
+      if (distance <= 17) {
+        toReturn.append(m)
+      }
+    }
+    toReturn
+  }
+
   def splitIfTwoValues(mentions: Seq[Mention]): Seq[Mention] = {
     // for area rules; if there is an extraction with multiple value args,
     // split it into binary var-value mentions
