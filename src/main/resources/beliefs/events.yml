@@ -8,130 +8,122 @@ vars: beliefs/triggers.yml
 
 rules:
 
-# Note: prop vs entity rule pairs may be redundant; todo: compare extractions, eliminate prop rules if redundant
-- name: ${label}-believe-active-believer-prop
-  priority: ${rulepriority}
-  label: ${label}
-  graph: "hybrid"
-  pattern: |
-    trigger = [lemma=/${active_believer_triggers}/ & tag=/^V|^J/] (?![word="tank"])
-    believer:Agent = /nsubj|A0/
-    belief:Proposition = /ccomp|A1|dobj|xcomp|advcl/
+  # Note: prop vs entity rule pairs may be redundant, but the prop rules seem to capture some more complete beliefs than entity rules
+  - name: ${label}-believe-active-believer-prop
+    priority: ${rulepriority}
+    label: ${label}
+    graph: "hybrid"
+    pattern: |
+      trigger = [lemma=/${active_believer_triggers}/ & tag=/^V|^J/] (?![word="tank"])
+      believer:Agent = /nsubj|A0/
+      belief:Proposition = /ccomp|A1|dobj|xcomp|advcl/
 
-- name: ${label}-believe-active-believer-entity
-  priority: ${rulepriority}
-  label: ${label}
-  graph: "hybrid"
-  pattern: |
-    trigger = [lemma=/${active_believer_triggers}/ & tag=/^V|^J/] (?![word="tank"])
-    believer:Agent = /nsubj$|A0/
-    belief:Entity = /ccomp|A1|dobj|xcomp|advcl|nmod_about/
+  - name: ${label}-consider-active-believer
+    priority: ${rulepriority}
+    label: ${label}
+    graph: "hybrid"
+    pattern: |
+      trigger = [lemma=/consider/ & tag=/^V|^J/] 
+      believer:Agent = /nsubj|A0/
+      belief:Proposition = /xcomp/
 
-- name: ${label}-believe-impersonal-believer-prop
-  priority: ${rulepriority}
-  label: ${label}
-  graph: "hybrid"
-  pattern: |
-    trigger = [lemma=/${impersonal_belief_triggers}/ & tag=/^J|VBG|VBN/]
-    believer:Entity = /nsubj|nsubjpass|A0/ [word=/(?i)it/]
-    belief:Proposition = /ccomp|A1|dobj|xcomp|advcl|nmod_about/
+  - name: ${label}-believe-active-believer-entity
+    priority: ${rulepriority}
+    label: ${label}
+    graph: "hybrid"
+    pattern: |
+      trigger = [lemma=/${active_believer_triggers}/ & tag=/^V|^J/] (?![word="tank"])
+      believer:Agent = /nsubj$|A0/
+      belief:Entity = /ccomp|A1|dobj|xcomp|advcl|nmod_about/
 
-- name: ${label}-believe-impersonal-believer-ent
-  priority: ${rulepriority}
-  label: ${label}
-  graph: "hybrid"
-  pattern: |
-    trigger = [lemma=/${impersonal_belief_triggers}/ & tag=/^J|VBG|VBN/]
-    believer:Entity = /nsubj|nsubjpass/  [word=/(?i)it/]
-    belief:Entity = /ccomp|A1|dobj|xcomp|advcl|nmod_about/
+  - name: ${label}-believe-participle
+    priority: ${rulepriority}
+    label: ${label}
+    graph: "hybrid"
+    example: "We are all worried about global warming"
+    pattern: |
+      trigger = [lemma=/${participial_belief_triggers}/ & tag=/^VBN/]
+      believer:Entity = /nsubjpass|A0/
+      belief:Entity = /nmod_about/
 
-- name: ${label}-believe-participle
-  priority: ${rulepriority}
-  label: ${label}
-  graph: "hybrid"
-  example: "We are all worried about global warming"
-  pattern: |
-    trigger = [lemma=/${participial_belief_triggers}/ & tag=/^VBN/]
-    believer:Entity = /nsubjpass|A0/
-    belief:Entity = /nmod_about/
+  - name: ${label}-believe-split-belief
+    priority: ${rulepriority}
+    label: ${label}
+    graph: "hybrid"
+    example: "Trump is believed to be a narcissist" # doesn't work: The rainy season starting date and seasonal forecasts are considered by farmers as the most important type of information .
+    pattern: |
+      trigger = [lemma=/think|believe|expect|consider/ & tag=/^VBN/]
+      beliefTheme:Entity = /nsubjpass|A1/
+      belief:Entity = /xcomp| nmod_as/
 
-- name: ${label}-believe-split-belief
-  priority: ${rulepriority}
-  label: ${label}
-  graph: "hybrid"
-  example: "Trump is believed to be a narcissist"
-  pattern: |
-    trigger = [lemma=/think|believe|expect/ & tag=/^VBN/]
-    beliefTheme:Entity = /nsubjpass|A1/
-    belief:Entity = /xcomp/
+  - name: ${label}-believe-impersonal-it
+    priority: ${rulepriority}
+    label: ${label}
+    graph: "hybrid"
+    pattern: |
+      trigger = [lemma=/^trust|believe/ & tag=/^V/]
+      believer:Entity = /nsubj|nsubjpass/  [word=/(?i)it/]
+      belief:Entity = /xcomp/
 
-- name: ${label}-believe-impersonal-it
-  priority: ${rulepriority}
-  label: ${label}
-  graph: "hybrid"
-  pattern: |
-    trigger = [lemma=/^trust/ & tag=/^V/]
-    believer:Entity = /nsubj|nsubjpass/  [word=/(?i)it/]
-    belief:Entity = /xcomp/
+  - name: ${label}-believe-control
+    priority: ${rulepriority}
+    label: ${label}
+    graph: "hybrid"
+    example: "I expect my investments to do well."
+    pattern: |
+      trigger = [lemma=/expect/]
+      believer:Entity = /nsubj/
+      belief:Entity = dobj| xcomp | nsubj /xsubj$/ A3
 
-- name: ${label}-believe-control
-  priority: ${rulepriority}
-  label: ${label}
-  graph: "hybrid"
-  example: "I expect my investments to do well."
-  pattern: |
-    trigger = [lemma=/expect/]
-    believer:Entity = /nsubj/
-    belief:Entity = dobj| xcomp | nsubj /xsubj$/ A3
+  - name: ${label}-believe-willingness
+    priority: ${rulepriority}
+    label: ${label}
+    graph: "hybrid"
+    example: "Despite farmers' willingness to diversify crop production, growing new crops is risky and self-financed."
+    pattern: |
+      trigger = [lemma=/willingness/]
+      believer:Agent = "nmod:poss"
+      belief:Entity = acl
 
-- name: ${label}-believe-willingness
-  priority: ${rulepriority}
-  label: ${label}
-  graph: "hybrid"
-  example: "Despite farmers' willingness to diversify crop production, growing new crops is risky and self-financed."
-  pattern: |
-    trigger = [lemma=/willingness/]
-    believer:Agent = "nmod:poss"
-    belief:Entity = acl
+  - name: ${label}-believe-recognize
+    priority: ${rulepriority}
+    label: ${label}
+    graph: "hybrid"
+    example: "The networks recognized the importance of maintaining extension services to ensure that their farmer members applied best practices."
+    pattern: |
+      trigger = [lemma=/recognize/] (?= [word = "the"] [word="importance"])
+      believer:Entity = nsubj
+      belief:Entity = dobj acl
 
-- name: ${label}-believe-recognize
-  priority: ${rulepriority}
-  label: ${label}
-  graph: "hybrid"
-  example: "The networks recognized the importance of maintaining extension services to ensure that their farmer members applied best practices."
-  pattern: |
-    trigger = [lemma=/recognize/] (?= [word = "the"] [word="importance"])
-    believer:Entity = nsubj
-    belief:Entity = dobj acl
+  - name: ${label}-believe-stigma
+    priority: ${rulepriority}
+    label: ${label}
+    graph: "hybrid"
+    example: "However, FEPROMAS detected a cultural norm of negative stigma attached with receiving food aid."
+    pattern: |
+      trigger = [lemma=/stigma/]
+      belief:Entity = A1 | acl advcl
 
-- name: ${label}-believe-stigma
-  priority: ${rulepriority}
-  label: ${label}
-  graph: "hybrid"
-  example: "However, FEPROMAS detected a cultural norm of negative stigma attached with receiving food aid."
-  pattern: |
-    trigger = [lemma=/stigma/]
-    belief:Entity = A1 | acl advcl
-  #
-- name: ${label}-believe-impersonal-adj
-  priority: ${rulepriority}
-  label: ${label}
-  graph: "hybrid"
-  pattern: |
-    trigger = [lemma=/hard|easy/] [word = "to"] [word="see"]
-    believer:Entity = /nsubj|expl/ [word=/(?i)it/]
-    belief:Entity = /ccomp|A1|dobj|xcomp/
+  - name: ${label}-popular
+    priority: ${rulepriority}
+    label: ${label}
+    type: "token"
+    example: "manual threshing is popular"
+    pattern: |
+      @beliefTheme:NounPhrase (?<trigger> [lemma = "be"]) (?<belief> [word = "popular"])
 
-- name: ${label}-believe-likely
-  priority: ${rulepriority}
-  label: ${label}
-  graph: "hybrid"
-  pattern: |
-    trigger = [lemma=/likely|unlikely/]
-    beliefTheme:Entity = /nsubj/ [!word=/(?i)(it|this)/]
-    belief:Entity = /ccomp|xcomp/
+  - name: ${label}-prefer
+    priority: ${rulepriority}
+    label: ${label}
+    graph: "hybrid"
+    example: "Abduland Salin (2005) reported that farmers preferred the modified pedal thresher to the unmodified model"
+    pattern: |
+      trigger = [lemma=/expect|want|prefer|hope/]
+      believer:Agent = nsubj
+      belief:Entity = /dobj|xcomp/
+   
 
-# Temporarily disabled, to review
+# Temporarily disabled, to review (mainly author beliefs)
 
 #- name: ${label}-believe-1
 #  priority: ${rulepriority}
@@ -181,3 +173,42 @@ rules:
 #    trigger = [lemma=/positive/]
 #    believer:Entity = /nsubj/ [word=/(?i)it/]
 #    belief:Entity = ccomp
+
+  # these are for author beliefs
+  #- name: ${label}-believe-impersonal-believer-prop
+  #  priority: ${rulepriority}
+  #  label: ${label}
+  #  graph: "hybrid"
+  #  pattern: |
+  #    trigger = [lemma=/${impersonal_belief_triggers}/ & tag=/^J|VBG|VBN/]
+  #    believer:Entity = /nsubj|nsubjpass|A0/ [word=/(?i)it/]
+  #    belief:Proposition = /ccomp|A1|dobj|xcomp|advcl|nmod_about/
+
+  #- name: ${label}-believe-impersonal-believer-ent
+  #  priority: ${rulepriority}
+  #  label: ${label}
+  #  graph: "hybrid"
+  #  pattern: |
+  #    trigger = [lemma=/${impersonal_belief_triggers}/ & tag=/^J|VBG|VBN/]
+  #    believer:Entity = /nsubj|nsubjpass/  [word=/(?i)it/]
+  #    belief:Entity = /ccomp|A1|dobj|xcomp|advcl|nmod_about/
+
+
+#- name: ${label}-believe-impersonal-adj
+#  priority: ${rulepriority}
+#  label: ${label}
+#  graph: "hybrid"
+#  pattern: |
+#    trigger = [lemma=/hard|easy/] [word = "to"] [word="see"]
+#    believer:Entity = /nsubj|expl/ [word=/(?i)it/]
+#    belief:Entity = /ccomp|A1|dobj|xcomp/
+
+# this is author's belief; even in "famers are likely to plant ...", it's the belief of the author
+#- name: ${label}-believe-likely
+#  priority: ${rulepriority}
+#  label: ${label}
+#  graph: "hybrid"
+#  pattern: |
+#    trigger = [lemma=/likely|unlikely/]
+#    beliefTheme:Entity = /nsubj/ [!word=/(?i)(it|this)/]
+#    belief:Entity = /ccomp|xcomp/

@@ -2,39 +2,53 @@ vars: beliefs/triggers.yml
 
 rules:
 
-# proposition rules are intended to help capture more complete propositions/assist with expansion
+  # proposition rules are intended to help capture more complete propositions/assist with expansion
 
-- name: proposition-rule-cop
-  label: Proposition
-  priority: ${priority}
-  type: dependency
-  pattern: |
-    trigger = [lemma = "be"]
-    subj:NounPhrase = <cop nsubj
-    obj:NounPhrase = <cop
+  - name: proposition-rule-inf-nom-pred
+    label: Proposition
+    priority: ${priority}
+    type: token
+    pattern: |
+      @NounPhrase "to" "be" @AdjPhrase | @NounPhrase "to" "be" [tag = "DT"]? @NounPhrase
 
-- name: proposition-rule-expl
-  label: Proposition
-  priority: ${priority}
-  type: dependency
-  pattern: |
-    trigger = [word="there"] [lemma = "be"]
-    subj:NounPhrase = nsubj
+  - name: proposition-rule-inf-verb-pred
+    label: Proposition
+    priority: ${priority}
+    type: token
+    pattern: |
+      @NounPhrase "to" @VerbPhrase
 
-- name: proposition-rule-verb
-  label: Proposition
-  priority: ${priority}
-  type: dependency
-  pattern: |
-    trigger = (?<![word="there"]) [tag = /VB/]
-    subj:NounPhrase = nsubj
-    obj:NounPhrase? = dobj
+  - name: proposition-rule-cop
+    label: Proposition
+    priority: ${priority}
+    type: dependency
+    pattern: |
+      trigger = [lemma = "be"]
+      subj:NounPhrase = <cop nsubj
+      obj:NounPhrase = <cop
 
-- name: nested-proposition-rule
-  label: Proposition
-  priority: ${nestedPriority}
-  type: dependency
-  pattern: |
-    trigger = [lemma = "be"]
-    subj:NounPhrase = nsubj
-    obj: Proposition = ccomp
+  - name: proposition-rule-expl
+    label: Proposition
+    priority: ${priority}
+    type: dependency
+    pattern: |
+      trigger = [word="there"] [lemma = "be"]
+      subj:NounPhrase = nsubj
+
+  - name: proposition-rule-verb
+    label: Proposition
+    priority: ${priority}
+    type: dependency
+    pattern: |
+      trigger = (?<![word="there"]) [tag = /VB/]
+      subj:NounPhrase = nsubj
+      obj:NounPhrase? = dobj
+
+  - name: nested-proposition-rule
+    label: Proposition
+    priority: ${nestedPriority}
+    type: dependency
+    pattern: |
+      trigger = [lemma = "be"]
+      subj:NounPhrase = nsubj
+      obj: Proposition = ccomp
