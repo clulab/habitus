@@ -145,7 +145,7 @@ class TestBeliefReader extends Test {
   }
 
   val sent10_3 = "It's inconceivable that anyone would hate The Princess Bride"
-  ignore should s"contain one beliefin ${sent10_3}" in {
+  ignore should s"contain one belief in ${sent10_3}" in {
     val mentions = getMentions(sent10_3)
     mentions should have size(1)
 
@@ -165,7 +165,7 @@ class TestBeliefReader extends Test {
   }
 
   val sent10_5 = "It's plausible that Rudy Giuliani broke the law"
-  ignore should s"contain one beliefin ${sent10_5}" in {
+  ignore should s"contain one belief in ${sent10_5}" in {
     val mentions = getMentions(sent10_5)
     mentions should have size(1)
 
@@ -175,7 +175,7 @@ class TestBeliefReader extends Test {
   }
 
   val sent10_6 = "It's questionable that anyone would hate The Princess Bride"
-  ignore should s"contain one beliefin ${sent10_6}" in {
+  ignore should s"contain one belief in ${sent10_6}" in {
     val mentions = getMentions(sent10_6)
     mentions should have size(1)
 
@@ -185,7 +185,7 @@ class TestBeliefReader extends Test {
   }
 
  val sent10_7 = "It's dubious that anyone would hate The Princess Bride"
-  ignore should s"contain one beliefin ${sent10_7}" in {
+  ignore should s"contain one belief in ${sent10_7}" in {
     val mentions = getMentions(sent10_7)
     mentions should have size(1)
 
@@ -205,7 +205,7 @@ class TestBeliefReader extends Test {
   }
 
   val sent10_9 = "It's conclusive that anyone would hate The Princess Bride"
-  ignore should s"contain one beliefin ${sent10_9}" in {
+  ignore should s"contain one belief in ${sent10_9}" in {
     val mentions = getMentions(sent10_9)
     mentions should have size(1)
 
