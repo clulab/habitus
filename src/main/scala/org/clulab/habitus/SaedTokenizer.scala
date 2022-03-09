@@ -52,6 +52,7 @@ object SaedTokenizer {
         println(s"going to parse input file: $filename")
         val doc = proc.mkDocument(text, keepText = true)
         for (s <- doc.sentences) {
+          fw.write("\n")
           for (word <- s.words) {
             fw.write(word+"\n")
           }
