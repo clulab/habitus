@@ -87,7 +87,6 @@ trait ContextExtractor {
           assert(factualityScore < 999)
           assert(predicateIndex < 999)
         }
-
       }
     }
     factualityScore
