@@ -1,5 +1,6 @@
 package org.clulab.habitus.utils
 
+import org.clulab.factuality.Factuality
 import org.clulab.habitus.variables.EntityDistFreq
 import org.clulab.odin.{Attachment, Mention}
 import org.clulab.processors.{Document, Sentence}
@@ -26,7 +27,7 @@ trait Context extends Attachment {
   }
 }
 
-case class DefaultContext(location: String, date: String, process: String, crop: String, fertilizer: String, comparative: Int, factuality:Int) extends Context
+case class DefaultContext(location: String, date: String, process: String, crop: String, fertilizer: String, comparative: Int, factuality:Double) extends Context
 
 trait ContextExtractor {
 
@@ -71,26 +72,23 @@ trait ContextExtractor {
   }
 
 
-  def getFactualityScore(m: Mention): Int = {
+  def getFactualityScore(m: Mention): Double = {
     // if no relevant context mentions in sentence, use the most freq one in sentence window equal to +/- maxContextWindow
-    val factualityScore = 1
+    var factualityScore = 0.00
+    var predicateIndex = 999
     var token = ""
     for ((postags) <- m.tags) {
-      for ((tag,i) <- postags.zipWithIndex) {
+      for ((tag, i) <- postags.zipWithIndex) {
         if (tag.contains("VB")) {
-          token = m.words(i)
+          predicateIndex = i
+          val factuality = Factuality("org/clulab/factuality/models/FTrainFDevScim3")
+          factualityScore = factuality.predict(m.words.toArray, predicateIndex)
+          println(s"factualityScore: $factualityScore")
+          assert(factualityScore < 999)
+          assert(predicateIndex < 999)
         }
+
       }
-      println(token)
-      // This particular model is provided in the library dependency.
-      //      val factuality = Factuality("org/clulab/factuality/models/FTrainFDevScim3")
-      //
-      //      val predicateIndex = 1 // induced
-      //      val prediction: Float = factuality.predict(token, predicateIndex)
-      //
-      //      println(s"Prediction: $prediction")
-
-
     }
     factualityScore
   }
