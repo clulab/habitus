@@ -84,8 +84,8 @@ trait ContextExtractor {
           val factuality = Factuality("org/clulab/factuality/models/FTrainFDevScim3")
           factualityScore = factuality.predict(m.words.toArray, predicateIndex)
           println(s"factualityScore: $factualityScore")
-          assert(factualityScore < 999)
-          assert(predicateIndex < 999)
+          assert(factualityScore >= 0.0)
+          assert(predicateIndex >= 0.0)
         }
       }
     }

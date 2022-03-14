@@ -14,8 +14,6 @@ class DefaultContextExtractor extends ContextExtractor {
     val mentionsBySentence = mentions groupBy (_.sentence) mapValues (_.sortBy(_.start)) withDefaultValue Nil
     for ((s, i) <- doc.sentences.zipWithIndex) {
       val words=doc.sentences(i).words.mkString(" ")
-      println(words)
-      println(doc.sentences(i).tags)
       val thisSentMentions = mentionsBySentence(i).distinct
       val contentMentions = thisSentMentions.filter(_.label matches label)
       val thisSentDates = thisSentMentions.filter(_.label == "Date")
