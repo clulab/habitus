@@ -15,7 +15,7 @@ resolvers += ("Artifactory" at "http://artifactory.cs.arizona.edu:8081/artifacto
 resolvers += "jitpack" at "https://jitpack.io"
 
 libraryDependencies ++= {
-  val procVer = "8.4.8"
+  val procVer = "8.4.8-SNAPSHOT"
 
   Seq(
     "ai.lum"        %% "odinson-core"        % "0.4.0",

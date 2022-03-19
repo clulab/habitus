@@ -1,3 +1,5 @@
 #!/bin/bash
 
-sbt 'runMain org.clulab.habitus.entitynetworks.LexiconNer in.txt'
+# Processes all .txt files in the in/ directory and saves all outputs in the out/ directory
+
+sbt 'runMain org.clulab.habitus.entitynetworks.LexiconNer -in in -out out'

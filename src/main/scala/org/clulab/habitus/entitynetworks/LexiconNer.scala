@@ -6,6 +6,8 @@ import org.clulab.sequences.LexiconNER
 
 import java.io.{File, PrintWriter}
 import scala.collection.mutable.ArrayBuffer
+import org.clulab.utils.StringUtils
+import org.clulab.utils.FileUtils
 
 object LexiconNer extends App {
   def mkLexiconNer(): LexiconNER = {
@@ -28,8 +30,8 @@ object LexiconNer extends App {
     lexiconNer
   }
 
-  def parseAndPrint(sentence: ArrayBuffer[String], pw: PrintWriter): Unit = {
-    val doc = processor.mkDocumentFromTokens(List(sentence))
+  def parseAndPrint(text: String, pw: PrintWriter): Unit = {
+    val doc = processor.mkDocument(text)
     GivenConstEmbeddingsAttachment(doc).perform {
       processor.tagPartsOfSpeech(doc)
       processor.recognizeNamedEntities(doc)
@@ -46,26 +48,25 @@ object LexiconNer extends App {
     }
   }
 
+  val props = StringUtils.argsToMap(args)
+  val inputDir = props("in")
+  val outputDir = props("out")
+
   val lexiconNer = mkLexiconNer()
   val processor = new CluProcessor(optionalNER = Some(lexiconNer))
   Utils.initializeDyNet()
 
-  val inputFileName = args(0)
-  val outputFileName = args(0) + ".out"
+  new File(outputDir).mkdir()
+  val files = FileUtils.findFiles(inputDir, ".txt")
 
-  val pw = new PrintWriter(outputFileName)
-  var sentence = new ArrayBuffer[String]() // tokens in the current sentence
-  for(line <- io.Source.fromFile(new File(inputFileName)).getLines()) {
-    if(line.trim.isEmpty) {
-      parseAndPrint(sentence, pw)
-      sentence = new ArrayBuffer[String]()
-    } else {
-      val bits = line.trim.split("\\s+")
-      sentence += bits(0)
+  for(file <- files) {
+    val pw = new PrintWriter(outputDir + File.separator + file.getName() + ".tsv")
+    try {
+      val text = FileUtils.getTextFromFile(file)
+      parseAndPrint(text, pw)
+    } catch {
+      case e: Exception => e.printStackTrace()
     }
-  }
-  if(sentence.nonEmpty) {
-    parseAndPrint(sentence, pw)
-  }
-  pw.close()
+    pw.close()
+  }  
 }
