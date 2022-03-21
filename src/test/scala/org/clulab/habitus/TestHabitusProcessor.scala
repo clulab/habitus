@@ -11,7 +11,7 @@ class TestHabitusProcessor extends Test {
     val variableProcessor = VariableProcessor().reloaded // now uses a HabitusProcessor
     val text = HabitusTokenizer.endash + "1"
 
-    val (doc, _, _, _) = variableProcessor.parse(text)
+    val (doc, _, _) = variableProcessor.parse(text)
     val words = doc.sentences.head.words
     val raw = doc.sentences.head.raw
 

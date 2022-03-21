@@ -14,7 +14,7 @@ class InterviewsShell extends Shell {
 
   override def work(text: String): Unit = {
     // the actual reading
-    val (doc, mentions) = bp.parse(text)
+    val (doc, _, mentions) = bp.parse(text)
 
     // debug display the mentions
     displayMentions(mentions, doc)

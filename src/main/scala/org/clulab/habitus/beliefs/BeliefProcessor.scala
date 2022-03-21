@@ -3,7 +3,7 @@ package org.clulab.habitus.beliefs
 import com.typesafe.config.{ConfigFactory, ConfigValueFactory}
 import org.apache.commons.io.FileUtils
 import org.clulab.dynet.Utils
-import org.clulab.habitus.HabitusProcessor
+import org.clulab.habitus.{GenericProcessor, HabitusProcessor}
 import org.clulab.habitus.actions.HabitusActions
 import org.clulab.habitus.utils.ArrayView
 import org.clulab.habitus.variables.VariableProcessor.resourceDir
@@ -21,7 +21,7 @@ import scala.collection.mutable.ArrayBuffer
 
 class BeliefProcessor(val processor: Processor,
                       val entityFinder: CustomizableRuleBasedFinder,
-                      val extractor: ExtractorEngine) {
+                      val extractor: ExtractorEngine) extends GenericProcessor {
 
   // fixme: you prob want this to be from a config
   val maxHops: Int = 5
@@ -41,7 +41,7 @@ class BeliefProcessor(val processor: Processor,
     }
   }
 
-  def parse(text: String): (Document, Seq[Mention]) = {
+  def parse(text: String): (Document, Seq[Mention], Seq[Mention]) = {
     // pre-processing
     val doc = processor.annotate(text, keepText = false)
 
@@ -58,7 +58,7 @@ class BeliefProcessor(val processor: Processor,
     val propBeliefMentions = expandedMentions.filter(m => containsPropositionBelief(m) || containsPropositionBeliefWithTheme(m) || m.arguments.size > 2)
     val triggerFilered = triggerBetweenBelieverAndBelief(propBeliefMentions)
 
-    (doc, triggerFilered.distinct)
+    (doc, expandedMentions, triggerFilered.distinct)
   }
 
 

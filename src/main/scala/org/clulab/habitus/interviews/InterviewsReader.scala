@@ -35,7 +35,7 @@ object InterviewsReader {
             " ").replace("- ", "")
           val filename = StringUtils.afterLast(file.getName, '/')
           println(s"going to parse input file: $filename")
-          val (_, mentions) = interviewReader.parse(text)
+          val (_, expandedMentions, mentions) = interviewReader.parse(text)
           val contentMentions = mentions.filter(m => m.labels.contains("Event") & !m.isInstanceOf[TextBoundMention])
           for (m <- contentMentions) {
             pw.print(s"${filename}\t${m.label}\t${m.foundBy}\t${m.sentenceObj.getSentenceText}\t${m.text}")

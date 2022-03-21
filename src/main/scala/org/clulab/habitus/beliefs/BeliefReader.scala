@@ -39,11 +39,11 @@ object BeliefReader {
             " ").replace("- ", "")
           val filename = StringUtils.afterLast(file.getName, '/')
           println(s"going to parse input file: $filename")
-          val (doc, mentions) = vp.parse(text)
+          val (doc, expandedMentions, beliefMentions) = vp.parse(text)
           val printVars = PrintVariables("Belief", "believer", "belief")
           val context = mutable.Map.empty[Int, ContextDetails]
 
-          multiPrinter.outputMentions(mentions, doc, filename, printVars)
+          multiPrinter.outputMentions(beliefMentions, doc, filename, printVars)
         }
         catch {
           case e: Exception => e.printStackTrace()

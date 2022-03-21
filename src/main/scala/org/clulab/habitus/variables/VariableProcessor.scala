@@ -1,10 +1,10 @@
 package org.clulab.habitus.variables
 
 import org.clulab.dynet.Utils
-import org.clulab.habitus.HabitusProcessor
+import org.clulab.habitus.{GenericProcessor, HabitusProcessor}
 import org.clulab.habitus.actions.HabitusActions
 import org.clulab.habitus.utils.{ContextExtractor, DefaultContextExtractor}
-import org.clulab.odin.{EventMention, ExtractorEngine, Mention}
+import org.clulab.odin.{EventMention, ExtractorEngine, Mention, TextBoundMention}
 import org.clulab.processors.Document
 import org.clulab.processors.clu.CluProcessor
 import org.clulab.sequences.LexiconNER
@@ -15,7 +15,7 @@ import java.io.File
 class VariableProcessor(val processor: CluProcessor, 
   val extractor: ExtractorEngine,
   val contextExtractor: DefaultContextExtractor,
-  val masterResource: String) {
+  val masterResource: String) extends GenericProcessor {
 
   def reloaded: VariableProcessor = {
     val newLexiconNer = VariableProcessor.newLexiconNer()
@@ -26,7 +26,7 @@ class VariableProcessor(val processor: CluProcessor,
   }
 
 
-  def parse(text: String): (Document, Seq[Mention], Seq[Mention], Seq[EntityDistFreq]) = {
+  def parse(text: String): (Document, Seq[Mention], Seq[Mention]) = {
     // pre-processing
     val doc = processor.annotate(text, keepText = false)
     val actions = new HabitusActions
@@ -34,25 +34,32 @@ class VariableProcessor(val processor: CluProcessor,
     val mentions = extractor.extractFrom(doc).sortBy(m => (m.sentence, m.getClass.getSimpleName))
 
     //get histogram of all entities:
-    val ce = EntityHistogramExtractor()
-    val (allEventMentions, histogram) = ce.extractHistogramEventMentions(doc, mentions)
-    val contentMentionsWithContexts = contextExtractor.getContextPerMention(mentions, histogram, doc, "Assignment")
+//    val ce = EntityHistogramExtractor()
+//    val (allEventMentions, histogram) = ce.extractHistogramEventMentions(doc, mentions)
+    val contentMentionsWithContexts = contextExtractor.getContextPerMention(mentions, doc, "Assignment")
+    val withoutNegValues = filterNegativeValues(contentMentionsWithContexts)
 
-    (doc, mentions.distinct, contentMentionsWithContexts, histogram)
+    (doc, mentions.distinct, withoutNegValues)
   }
 
-  def parse(doc: Document): (Document, Seq[Mention], Seq[Mention], Seq[EntityDistFreq]) = {
+  def parse(doc: Document): (Document, Seq[Mention], Seq[Mention]) = {
     // pre-processing
     val actions = new HabitusActions
     // extract mentions from annotated document
     val mentions = extractor.extractFrom(doc).sortBy(m => (m.sentence, m.getClass.getSimpleName))
 
     //get histogram of all entities:
-    val ce = EntityHistogramExtractor()
-    val (allEventMentions, histogram) = ce.extractHistogramEventMentions(doc, mentions)
-    val contentMentionsWithContexts = contextExtractor.getContextPerMention(mentions, histogram, doc, "Assignment")
+//    val ce = EntityHistogramExtractor()
+//    val (allEventMentions, histogram) = ce.extractHistogramEventMentions(doc, mentions)
+    val contentMentionsWithContexts = contextExtractor.getContextPerMention(mentions, doc, "Assignment")
+    val withoutNegValues = filterNegativeValues(contentMentionsWithContexts)
 
-    (doc, mentions, contentMentionsWithContexts, histogram)
+    (doc, mentions, withoutNegValues)
+  }
+
+  //todo: this should go in the processor?
+  def filterNegativeValues(mentions: Seq[Mention]): Seq[Mention] = {
+    mentions.filterNot(_.arguments("value").head.norms.head.head.startsWith("-"))
   }
 }
 

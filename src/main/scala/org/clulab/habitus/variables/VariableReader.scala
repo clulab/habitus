@@ -38,7 +38,7 @@ object VariableReader {
           val text = FileUtils.getTextFromFile(file)
           val filename = StringUtils.afterLast(file.getName, '/')
           println(s"going to parse input file: $filename")
-          val (doc, mentions, allEventMentions, entityHistogram) = vp.parse(text)
+          val (doc, mentions, allEventMentions) = vp.parse(text)
 
 
           val printVars = PrintVariables("Assignment", "variable", "value")

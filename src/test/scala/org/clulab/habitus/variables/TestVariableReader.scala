@@ -9,7 +9,7 @@ class TestVariableReader extends FlatSpec with Matchers {
   val vp = VariableProcessor()
 
   def getMentions(text: String): Seq[Mention] = {
-    val (_, mentions, _, _) = vp.parse(text)
+    val (_, mentions, _) = vp.parse(text)
     mentions
   }
 
