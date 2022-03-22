@@ -27,14 +27,16 @@ class HabitusActions extends Actions {
 
   /** Global action for the numeric grammar */
   def cleanupAction(mentions: Seq[Mention], state: State): Seq[Mention] =
-    cleanupAction(mentions)
-      // sorting to make sure tests that rely on mention order pass
-      .sortBy(_.sentence)
-      .sortBy(_.tokenInterval)
+    mentions
+//    cleanupAction(mentions)
+//      // sorting to make sure tests that rely on mention order pass
+//      .sortBy(_.sentence)
+//      .sortBy(_.tokenInterval)
 
   def cleanupAction(mentions: Seq[Mention]): Seq[Mention] = {
-    val r1 = removeRedundantVariableMentions(keepLongestMentions(mentions))
-    r1
+    mentions
+//    val r1 = removeRedundantVariableMentions(keepLongestMentions(mentions))
+//    r1
   }
 
   private def isBelief(m: Mention): Boolean = {

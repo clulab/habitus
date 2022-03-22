@@ -52,13 +52,13 @@ class BeliefProcessor(val processor: Processor,
     val initialState = State(entityMentions)
     val eventMentions = extractor.extractFrom(doc, initialState).sortBy(m => (m.sentence, m.getClass.getSimpleName))
     // expand the arguments, don't allow to cross the trigger
-    val eventTriggers = eventMentions.collect { case em: EventMention => em.trigger }
-    val expandedMentions = eventMentions.map(expandArgs(_, State(eventTriggers)))
+//    val eventTriggers = eventMentions.collect { case em: EventMention => em.trigger }
+//    val expandedMentions = eventMentions.map(expandArgs(_, State(eventTriggers)))
     // keep only beliefs that look like propositions
-    val propBeliefMentions = expandedMentions.filter(m => containsPropositionBelief(m) || containsPropositionBeliefWithTheme(m) || m.arguments.size > 2)
-    val triggerFilered = triggerBetweenBelieverAndBelief(propBeliefMentions)
+//    val propBeliefMentions = expandedMentions.filter(m => containsPropositionBelief(m) || containsPropositionBeliefWithTheme(m) || m.arguments.size > 2)
+//    val triggerFilered = triggerBetweenBelieverAndBelief(propBeliefMentions)
 
-    (doc, triggerFilered.distinct)
+    (doc, eventMentions)//triggerFilered.distinct)
   }
 
 
