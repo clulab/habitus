@@ -73,7 +73,6 @@ trait ContextExtractor {
 
 
   def getFactualityScore(m: Mention): (Double, String) = {
-    // if no relevant context mentions in sentence, use the most freq one in sentence window equal to +/- maxContextWindow
     var factualityScore = 0.00
     var predicateIndex = 999
     var token = ""
