@@ -27,6 +27,7 @@ class DefaultContextExtractor extends ContextExtractor {
         //get pos tags here for factuality
         // check inside the mention
         // if not check the sentence object.
+        val (fscore, fverb)=getFactualityScore(m)
         val context = DefaultContext(
           getContext(m, "Date", thisSentDates, mentions),
           getContext(m, "Location", thisSentLocs, mentions),
@@ -36,7 +37,8 @@ class DefaultContextExtractor extends ContextExtractor {
           getContext(m, "Fertilizer", thisSentFerts, mentions),
 //          getContextFromHistogramInWindow(m, "Fertilizer", maxContextWindow, entityHistogram),
           getComparative(m),
-          getFactualityScore(m)
+          fscore,
+          fverb
         )
 
         // store context as a mention attachment

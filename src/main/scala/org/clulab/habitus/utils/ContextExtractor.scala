@@ -27,7 +27,7 @@ trait Context extends Attachment {
   }
 }
 
-case class DefaultContext(location: String, date: String, process: String, crop: String, fertilizer: String, comparative: Int, factuality:Double) extends Context
+case class DefaultContext(location: String, date: String, process: String, crop: String, fertilizer: String, comparative: Int, factuality_score:Double, factuality_verb:String) extends Context
 
 trait ContextExtractor {
 
@@ -72,7 +72,7 @@ trait ContextExtractor {
   }
 
 
-  def getFactualityScore(m: Mention): Double = {
+  def getFactualityScore(m: Mention): (Double, String) = {
     // if no relevant context mentions in sentence, use the most freq one in sentence window equal to +/- maxContextWindow
     var factualityScore = 0.00
     var predicateIndex = 999
@@ -81,15 +81,15 @@ trait ContextExtractor {
       for ((tag, i) <- postags.zipWithIndex) {
         if (tag.contains("VB")) {
           predicateIndex = i
+          token=m.words(i)
           val factuality = Factuality("org/clulab/factuality/models/FTrainFDevScim3")
           factualityScore = factuality.predict(m.words.toArray, predicateIndex)
-          println(s"factualityScore: $factualityScore")
           assert(factualityScore >= 0.0)
           assert(predicateIndex >= 0.0)
         }
       }
     }
-    factualityScore
+    (factualityScore,token)
   }
 
   def getContext(m: Mention, contextType: String, contextRelevantMentions: Seq[Mention], allMentions: Seq[Mention]): String = {
