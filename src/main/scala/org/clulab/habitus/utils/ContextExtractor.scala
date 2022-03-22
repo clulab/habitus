@@ -87,12 +87,11 @@ trait ContextExtractor {
             factualityScore = factuality.predict(m.words.toArray, predicateIndex)
             assert(factualityScore >= 0.0)
             assert(predicateIndex >= 0.0)
-            return (factualityScore,token)
           }
         }
       }
     }
-
+    (factualityScore,token)
   }
 
   def getContext(m: Mention, contextType: String, contextRelevantMentions: Seq[Mention], allMentions: Seq[Mention]): String = {
