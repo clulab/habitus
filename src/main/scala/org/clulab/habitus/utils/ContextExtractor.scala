@@ -80,16 +80,19 @@ trait ContextExtractor {
     for ((postags) <- m.tags) {
       for ((tag, i) <- postags.zipWithIndex) {
         if (tag.contains("VB")) {
-          predicateIndex = i
-          token=m.words(i)
-          val factuality = Factuality("org/clulab/factuality/models/FTrainFDevScim3")
-          factualityScore = factuality.predict(m.words.toArray, predicateIndex)
-          assert(factualityScore >= 0.0)
-          assert(predicateIndex >= 0.0)
+          if (!m.words(i).equals("vs") && (!m.lemmas.get(i).equals("be")) && (!m.lemmas.get(i).equals("have")) ){
+            predicateIndex = i
+            token = m.words(i)
+            val factuality = Factuality("org/clulab/factuality/models/FTrainFDevScim3")
+            factualityScore = factuality.predict(m.words.toArray, predicateIndex)
+            assert(factualityScore >= 0.0)
+            assert(predicateIndex >= 0.0)
+            return (factualityScore,token)
+          }
         }
       }
     }
-    (factualityScore,token)
+
   }
 
   def getContext(m: Mention, contextType: String, contextRelevantMentions: Seq[Mention], allMentions: Seq[Mention]): String = {
