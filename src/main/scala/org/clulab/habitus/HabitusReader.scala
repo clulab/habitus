@@ -20,17 +20,17 @@ class HabitusReader() extends App {
   val factuality: Boolean = config[Boolean]("factuality")
 
 
-  def run(processor: Any, inputDir: String, outputDir: String, threads: Int, masterResource: String, printVariables: PrintVariables): Unit = {
+  def run(processor: GenericProcessor, inputDir: String, outputDir: String, threads: Int, masterResource: String, printVariables: PrintVariables): Unit = {
     new File(outputDir).mkdir()
 
     def mkOutputFile(extension: String): String = outputDir + "/mentions" + extension
 
-    val selectedProcessor = processor match {
-      case VariableProcessor => VariableProcessor(masterResource)
-      case BeliefProcessor => BeliefProcessor()
-      case InterviewsProcessor => InterviewsProcessor()
-      case _ => ???
-    }
+//    val selectedProcessor = processor match {
+//      case VariableProcessor => VariableProcessor(masterResource)
+//      case BeliefProcessor => BeliefProcessor()
+//      case InterviewsProcessor => InterviewsProcessor()
+//      case _ => ???
+//    }
 //    val processor = VariableProcessor()
     val files = FileUtils.findFiles(inputDir, ".txt")
     val parFiles = if (threads > 1) ThreadUtils.parallelize(files, threads) else files
@@ -44,7 +44,7 @@ class HabitusReader() extends App {
           val text = FileUtils.getTextFromFile(file)
           val filename = StringUtils.afterLast(file.getName, '/')
           println(s"going to parse input file: $filename")
-          val (doc, mentions, allEventMentions) = selectedProcessor.parse(text)
+          val (doc, mentions, allEventMentions) = processor.parse(text)
           multiPrinter.outputMentions(allEventMentions, doc, filename, printVariables)
         }
         catch {

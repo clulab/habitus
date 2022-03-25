@@ -3,12 +3,16 @@ package org.clulab.habitus
 import org.clulab.odin.{EventMention, Mention, RelationMention, TextBoundMention}
 import org.clulab.processors.{Document, Sentence}
 
+import scala.beans.BeanProperty
 import scala.collection.mutable
 import scala.collection.mutable.ArrayBuffer
 
 package object utils {
 
-  case class PrintVariables(mentionLabel: String, mentionType: String, mentionExtractor: String)
+//  case class PrintVariables(mentionLabel: String, mentionType: String, mentionExtractor: String)
+case class PrintVariables(@BeanProperty var mentionLabel: String, @BeanProperty var mentionType: String, @BeanProperty var mentionExtractor: String) {
+  def this() = this("", "", "")
+}
 
   def displayMentions(mentions: Seq[Mention], doc: Document): Unit = {
     val mentionsBySentence = mentions groupBy (_.sentence) mapValues (_.sortBy(_.start)) withDefaultValue Nil
