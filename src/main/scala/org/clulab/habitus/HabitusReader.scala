@@ -20,18 +20,11 @@ class HabitusReader() extends App {
   val factuality: Boolean = config[Boolean]("factuality")
 
 
-  def run(processor: GenericProcessor, inputDir: String, outputDir: String, threads: Int, masterResource: String, printVariables: PrintVariables): Unit = {
+  def run(processor: GenericProcessor, inputDir: String, outputDir: String, threads: Int, printVariables: PrintVariables): Unit = {
     new File(outputDir).mkdir()
 
     def mkOutputFile(extension: String): String = outputDir + "/mentions" + extension
 
-//    val selectedProcessor = processor match {
-//      case VariableProcessor => VariableProcessor(masterResource)
-//      case BeliefProcessor => BeliefProcessor()
-//      case InterviewsProcessor => InterviewsProcessor()
-//      case _ => ???
-//    }
-//    val processor = VariableProcessor()
     val files = FileUtils.findFiles(inputDir, ".txt")
     val parFiles = if (threads > 1) ThreadUtils.parallelize(files, threads) else files
 
@@ -41,7 +34,10 @@ class HabitusReader() extends App {
     ).autoClose { multiPrinter =>
       for (file <- parFiles) {
         try {
-          val text = FileUtils.getTextFromFile(file)
+          val unfiltered = FileUtils.getTextFromFile(file)
+          // fixme: temporary, simple text cleanup
+          val text = unfiltered.replace("\n",
+            " ").replace("- ", "")
           val filename = StringUtils.afterLast(file.getName, '/')
           println(s"going to parse input file: $filename")
           val parsingResults = processor.parse(text)
