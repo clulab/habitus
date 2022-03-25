@@ -34,11 +34,12 @@ class TsvPrinter(outputFilename: String) extends Printer {
         // ``variable`` and ``value`` we access the two through ``arguments`` attribute of the Mention class.
         m =>
            {
-            val varText = m.arguments(printVars.mentionType).head.text
-            val value = m.arguments(printVars.mentionExtractor).head
-            val valText = value.text
+            val variable = m.arguments(printVars.mentionType).headOption
+            val varText = if (variable.isDefined) variable.head.text else na
+            val value = m.arguments(printVars.mentionExtractor).headOption
+            val valText = if (value.isDefined) value.head.text else na
             val sentText = m.sentenceObj.getSentenceText
-            val valNorms = value.norms
+            val valNorms = if (value.isDefined) value.get.norms else None
             val norm = {
               if (valNorms.isDefined && valNorms.get.size >= 2) {
                 valNorms.filter(_.length >= 2).get(0)
@@ -48,10 +49,10 @@ class TsvPrinter(outputFilename: String) extends Printer {
                 //   For example, DATEs have norms, but CROPs do not
                 // in the latter case, we revert to the lemmas or to the actual text as a backoff
                 //
-                if (value.words.nonEmpty) {
-                  value.words.mkString(" ")
+                if (value.get.words.nonEmpty) {
+                  value.get.words.mkString(" ")
                 } else {
-                  value.text
+                  value.get.text
                 }
               }
             }
