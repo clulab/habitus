@@ -44,8 +44,10 @@ class HabitusReader() extends App {
           val text = FileUtils.getTextFromFile(file)
           val filename = StringUtils.afterLast(file.getName, '/')
           println(s"going to parse input file: $filename")
-          val (doc, mentions, allEventMentions) = processor.parse(text)
-          multiPrinter.outputMentions(allEventMentions, doc, filename, printVariables)
+          val parsingResults = processor.parse(text)
+          val doc = parsingResults.document
+          val targetMentions = parsingResults.targetMentions
+          multiPrinter.outputMentions(targetMentions, doc, filename, printVariables)
         }
         catch {
           case e: Exception => e.printStackTrace()

@@ -14,10 +14,12 @@ class BeliefShell extends Shell {
 
   override def work(text: String): Unit = {
     // the actual reading
-    val (doc, _, mentions) = bp.parse(text)
+    val parsingResults = bp.parse(text)
+    val doc = parsingResults.document
+    val targetMentions = parsingResults.targetMentions
 
     // debug display the mentions
-    displayMentions(mentions, doc)
+    displayMentions(targetMentions, doc)
   }
 
   override def mkMenu(): Menu = {

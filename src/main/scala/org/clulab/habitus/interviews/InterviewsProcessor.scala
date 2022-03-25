@@ -3,7 +3,7 @@ package org.clulab.habitus.interviews
 import com.typesafe.config.{ConfigFactory, ConfigValueFactory}
 import org.apache.commons.io.FileUtils
 import org.clulab.dynet.Utils
-import org.clulab.habitus.{GenericProcessor, HabitusProcessor}
+import org.clulab.habitus.{GenericProcessor, HabitusProcessor, ParsingResult}
 import org.clulab.habitus.actions.HabitusActions
 import org.clulab.habitus.variables.VariableProcessor.resourceDir
 import org.clulab.odin._
@@ -40,7 +40,7 @@ class InterviewsProcessor(val processor: Processor,
     }
   }
 
-  def parse(text: String): (Document, Seq[Mention], Seq[Mention]) = {
+  def parse(text: String): ParsingResult = {
     // pre-processing
     val doc = processor.annotate(text, keepText = true)
 
@@ -54,7 +54,7 @@ class InterviewsProcessor(val processor: Processor,
     val eventTriggers = eventMentions.collect { case em: EventMention => em.trigger }
     val expandedMentions = eventMentions.map(expandArgs(_, State(eventTriggers)))
     val causalMentions = causationExtractor.extractFromDoc(doc).allOdinMentions
-    (doc, expandedMentions, (expandedMentions ++ causalMentions).distinct)
+    ParsingResult(doc, entityMentions ++ expandedMentions, (expandedMentions ++ causalMentions).distinct)
   }
 
 

@@ -7,9 +7,9 @@ class TestBeliefReader extends Test {
   val bp = BeliefProcessor()
 
   def getMentions(text: String): Seq[Mention] = {
-    val (_, _, mentions) = bp.parse(text)
+    val parsingResults = bp.parse(text)
     // check all labels for Belief to account for LikelyFact beliefs
-    mentions.filter(_.labels contains "Belief")
+    parsingResults.targetMentions//.filter(_.labels contains "Belief")
   }
 
   val sent1 = "farmers believe that loans are useful."

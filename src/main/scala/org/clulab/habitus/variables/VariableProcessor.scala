@@ -1,7 +1,7 @@
 package org.clulab.habitus.variables
 
 import org.clulab.dynet.Utils
-import org.clulab.habitus.{GenericProcessor, HabitusProcessor}
+import org.clulab.habitus.{GenericProcessor, HabitusProcessor, ParsingResult}
 import org.clulab.habitus.actions.HabitusActions
 import org.clulab.habitus.utils.{ContextExtractor, DefaultContextExtractor}
 import org.clulab.odin.{EventMention, ExtractorEngine, Mention, TextBoundMention}
@@ -26,38 +26,22 @@ class VariableProcessor(val processor: CluProcessor,
   }
 
 
-  def parse(text: String): (Document, Seq[Mention], Seq[Mention]) = {
+  def parse(text: String): ParsingResult = {
     // pre-processing
     val doc = processor.annotate(text, keepText = false)
-    val actions = new HabitusActions
+    // extract mentions from annotated document
+    parse(doc)
+  }
+
+  def parse(doc: Document): ParsingResult = {
     // extract mentions from annotated document
     val mentions = extractor.extractFrom(doc).sortBy(m => (m.sentence, m.getClass.getSimpleName))
-
-    //get histogram of all entities:
-//    val ce = EntityHistogramExtractor()
-//    val (allEventMentions, histogram) = ce.extractHistogramEventMentions(doc, mentions)
     val contentMentionsWithContexts = contextExtractor.getContextPerMention(mentions, doc, "Assignment")
     val withoutNegValues = filterNegativeValues(contentMentionsWithContexts)
 
-    (doc, mentions.distinct, withoutNegValues)
+    ParsingResult(doc, mentions, withoutNegValues)
   }
 
-  def parse(doc: Document): (Document, Seq[Mention], Seq[Mention]) = {
-    // pre-processing
-    val actions = new HabitusActions
-    // extract mentions from annotated document
-    val mentions = extractor.extractFrom(doc).sortBy(m => (m.sentence, m.getClass.getSimpleName))
-
-    //get histogram of all entities:
-//    val ce = EntityHistogramExtractor()
-//    val (allEventMentions, histogram) = ce.extractHistogramEventMentions(doc, mentions)
-    val contentMentionsWithContexts = contextExtractor.getContextPerMention(mentions, doc, "Assignment")
-    val withoutNegValues = filterNegativeValues(contentMentionsWithContexts)
-
-    (doc, mentions, withoutNegValues)
-  }
-
-  //todo: this should go in the processor?
   def filterNegativeValues(mentions: Seq[Mention]): Seq[Mention] = {
     mentions.filterNot(_.arguments("value").head.norms.head.head.startsWith("-"))
   }

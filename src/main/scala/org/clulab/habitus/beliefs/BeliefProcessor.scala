@@ -3,7 +3,7 @@ package org.clulab.habitus.beliefs
 import com.typesafe.config.{ConfigFactory, ConfigValueFactory}
 import org.apache.commons.io.FileUtils
 import org.clulab.dynet.Utils
-import org.clulab.habitus.{GenericProcessor, HabitusProcessor}
+import org.clulab.habitus.{GenericProcessor, HabitusProcessor, ParsingResult}
 import org.clulab.habitus.actions.HabitusActions
 import org.clulab.habitus.utils.ArrayView
 import org.clulab.habitus.variables.VariableProcessor.resourceDir
@@ -41,7 +41,7 @@ class BeliefProcessor(val processor: Processor,
     }
   }
 
-  def parse(text: String): (Document, Seq[Mention], Seq[Mention]) = {
+  def parse(text: String): ParsingResult = {
     // pre-processing
     val doc = processor.annotate(text, keepText = false)
 
@@ -58,7 +58,7 @@ class BeliefProcessor(val processor: Processor,
     val propBeliefMentions = expandedMentions.filter(m => containsPropositionBelief(m) || containsPropositionBeliefWithTheme(m) || m.arguments.size > 2)
     val triggerFilered = triggerBetweenBelieverAndBelief(propBeliefMentions)
 
-    (doc, expandedMentions, triggerFilered.distinct)
+    ParsingResult(doc, entityMentions ++ expandedMentions, triggerFilered.distinct)
   }
 
 
