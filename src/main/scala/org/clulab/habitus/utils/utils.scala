@@ -9,7 +9,6 @@ import scala.collection.mutable.ArrayBuffer
 
 package object utils {
 
-//  case class PrintVariables(mentionLabel: String, mentionType: String, mentionExtractor: String)
 case class PrintVariables(@BeanProperty var mentionLabel: String, @BeanProperty var mentionType: String, @BeanProperty var mentionExtractor: String) {
   def this() = this("", "", "")
 }
