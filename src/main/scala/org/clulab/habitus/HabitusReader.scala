@@ -1,11 +1,8 @@
 package org.clulab.habitus
 
 import ai.lum.common.ConfigUtils._
-import com.typesafe.config.{Config, ConfigFactory}
-import org.clulab.habitus.beliefs.BeliefProcessor
-import org.clulab.habitus.interviews.InterviewsProcessor
+import com.typesafe.config.ConfigFactory
 import org.clulab.habitus.utils._
-import org.clulab.habitus.variables.VariableProcessor
 import org.clulab.utils.Closer.AutoCloser
 import org.clulab.utils.{FileUtils, StringUtils, ThreadUtils}
 
