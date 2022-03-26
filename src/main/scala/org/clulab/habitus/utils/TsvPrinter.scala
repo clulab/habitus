@@ -56,8 +56,11 @@ class TsvPrinter(outputFilename: String) extends Printer {
                 }
               }
             }
-              val contextString = m.attachments.head.asInstanceOf[Context].getTSVContextString
-            pw.println(s"$varText\t$valText\t$norm\t$sentText\t$filename\t$contextString")
+             // this is for cases when there is no norm
+            val normString = if (norm.nonEmpty) norm + "\t" else ""
+            val context = m.attachments.headOption
+            val contextString = if (context.isDefined) context.get.asInstanceOf[Context].getTSVContextString else ""
+            pw.println(s"$varText\t$valText\t$normString$sentText\t$filename\t$contextString")
 
           }
       }

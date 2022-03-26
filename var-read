@@ -4,4 +4,4 @@
 # Parses all .txt files stored in the directory "in", and saves the output in the directory "out"
 #
 
-sbt 'runMain org.clulab.habitus.variables.VariableReader -in in -out out -grammar /variables/master.yml'
+sbt 'runMain org.clulab.habitus.variables.PlantingAreaReader' # or VariableReader for just dates
