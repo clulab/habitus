@@ -23,9 +23,10 @@ class DefaultContextExtractor extends ContextExtractor {
 
       // to keep only mention labelled as Assignment (these labels are associated with .yml files, e.g. Variable, Value)
       for (m <- contentMentions) {
-
-        val (fscore, fverb) = getFactualityScore(m)
-
+        val fscoreAndFverbOpt = getFactualityScore(m)
+        val (fscore, fverb) = fscoreAndFverbOpt.map { case (fscore, fverb) =>
+          (fscore.toString, fverb)
+        }.getOrElse(("", ""))
 
         val context = DefaultContext(
           getContext(m, "Date", thisSentDates, mentions),

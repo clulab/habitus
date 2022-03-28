@@ -27,7 +27,7 @@ trait Context extends Attachment {
   }
 }
 
-case class DefaultContext(location: String, date: String, process: String, crop: String, fertilizer: String, comparative: Int, factuality_score:Double, factuality_verb:String) extends Context
+case class DefaultContext(location: String, date: String, process: String, crop: String, fertilizer: String, comparative: Int, factuality_score:Any, factuality_verb:Any) extends Context
 
 trait ContextExtractor {
 
@@ -72,25 +72,25 @@ trait ContextExtractor {
   }
 
 
-  def getFactualityScore(m: Mention): (Double, String) = {
-    var factualityScore = 0.00
-    var predicateIndex = 999
-    var token = ""
+  def getFactualityScore(m: Mention): Option[(Float,String)] = {
     for ((postags) <- m.tags) {
       for ((tag, i) <- postags.zipWithIndex) {
         if (tag.contains("VB")) {
-          if (!m.words(i).equals("vs") && (!m.lemmas.get(i).equals("be")) && (!m.lemmas.get(i).equals("have")) ){
-            predicateIndex = i
-            token = m.words(i)
+          if (!m.words(i).equals("vs") && (!m.lemmas.get(i).equals("be")) && (!m.lemmas.get(i).equals("have"))) {
+            val token = m.words(i)
             val factuality = Factuality("org/clulab/factuality/models/FTrainFDevScim3")
-            factualityScore = factuality.predict(m.words.toArray, predicateIndex)
-            assert(factualityScore >= 0.0)
-            assert(predicateIndex >= 0.0)
+            val factualityScore = factuality.predict(m.words.toArray, i)
+            //              assert(factualityScore.get >= 0.0)
+            //              assert(predicateIndex >= 0.0)
+            return Some((factualityScore, token))
           }
         }
       }
     }
-    (factualityScore,token)
+    None
+    // if you get none here, i.e there are no verbs in the mention, do a +-  window for(m.sentences.word start-5 and end +5 - math. min or max/past or end of
+    // sentence. if sentences has less than +k) check factulaity score.
+
   }
 
   def getContext(m: Mention, contextType: String, contextRelevantMentions: Seq[Mention], allMentions: Seq[Mention]): String = {
