@@ -3,5 +3,5 @@
 #
 # Parses all .txt files stored in the directory "in", and saves the output in the directory "out"
 #
-sbt 'runMain org.clulab.habitus.beliefs.BeliefReader -in in -out out'
+sbt 'runMain org.clulab.habitus.beliefs.BeliefReader'
 

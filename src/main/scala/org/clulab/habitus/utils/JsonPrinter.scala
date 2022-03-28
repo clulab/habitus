@@ -48,11 +48,12 @@ class JsonPrinter(outputFilename: String) extends Printer {
         ("sentenceText" -> sentenceText) ~
         ("inputFilename" -> inputFilename)
 
-    // make an obj from key-value pairs from the context attachment
-    val argJObject: JObject = toJObject(mention.attachments.head.asInstanceOf[Context].getArgValuePairs())
-
-    for (value <- argJObject.obj) {
-      jObject = jObject ~ (value._1 -> value._2)
+    val context = mention.attachments.headOption
+    val argJObject: Option[JObject] = if (context.isDefined) Some(toJObject(context.get.asInstanceOf[Context].getArgValuePairs())) else None
+    if (argJObject.isDefined) {
+      for (value <- argJObject.get.obj) {
+        jObject = jObject ~ (value._1 -> value._2)
+      }
     }
 
     val json = stringify(jObject, pretty = true)

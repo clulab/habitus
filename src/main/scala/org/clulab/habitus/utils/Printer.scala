@@ -7,6 +7,8 @@ import scala.collection.mutable
 
 trait Printer {
 
+  val na = "N/A"
+
   def outputMentions(
     mentions: Seq[Mention],
     doc: Document,

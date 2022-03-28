@@ -1,6 +1,6 @@
 package org.clulab.habitus.variables
 
-import org.clulab.habitus.utils.Test
+import org.clulab.habitus.utils.{PrintVariables, Test}
 import org.clulab.utils.FileUtils
 import org.json4s.{DefaultFormats, JArray, JObject}
 import org.json4s.jackson.JsonMethods
@@ -16,10 +16,11 @@ class TestPrinting extends Test {
   val jsonOutputFile = "./mentions.json"
   val jsonlOutputFile = "./mentions.jsonl"
   val masterResource = "./src/main/resources/variables/master.yml"
+  val printVariables = PrintVariables("Assignment", "variable", "value")
 
   new File(jsonOutputFile).delete()
   new File(jsonlOutputFile).delete()
-  VariableReader.run(inputDir, outputDir, threads, masterResource)
+  VariableReader.run(VariableProcessor(), inputDir, outputDir, threads, printVariables)
 
   behavior of "JsonPrinter"
 

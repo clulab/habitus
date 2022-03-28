@@ -9,7 +9,7 @@ import scala.collection.mutable.ArrayBuffer
 
 class DefaultContextExtractor extends ContextExtractor {
 
-  def getContextPerMention(mentions: Seq[Mention], entityHistogram: Seq[EntityDistFreq], doc: Document, label: String): Seq[Mention] = {
+  def getContextPerMention(mentions: Seq[Mention], doc: Document, label: String): Seq[Mention] = {
     val toReturn = new ArrayBuffer[Mention]()
     val mentionsBySentence = mentions groupBy (_.sentence) mapValues (_.sortBy(_.start)) withDefaultValue Nil
     for ((s, i) <- doc.sentences.zipWithIndex) {
@@ -29,7 +29,6 @@ class DefaultContextExtractor extends ContextExtractor {
 //          getCropContext(m, frequencyContext),
           getContext(m, "Crop", thisSentCrops, mentions),
           getContext(m, "Fertilizer", thisSentFerts, mentions),
-//          getContextFromHistogramInWindow(m, "Fertilizer", maxContextWindow, entityHistogram),
           getComparative(m)
         )
 

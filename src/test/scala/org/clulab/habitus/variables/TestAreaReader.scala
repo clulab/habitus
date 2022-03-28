@@ -8,8 +8,8 @@ class TestAreaReader extends FlatSpec with Matchers {
   val vp = VariableProcessor("/variables/master-areas.yml")
 
   def getMentions(text: String): Seq[Mention] = {
-    val (_, mentions, _, _) = vp.parse(text)
-    mentions
+    val parsingResults = vp.parse(text)
+    parsingResults.targetMentions
   }
 
   behavior of "AreaReader"

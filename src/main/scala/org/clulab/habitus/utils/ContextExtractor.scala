@@ -37,7 +37,7 @@ trait ContextExtractor {
   val harvestLemmas = Seq("harvest")
   val disasterLemmas = Seq("flood", "bird", "attack")
 
-  def getContextPerMention(mentions: Seq[Mention], entityHistogram: Seq[EntityDistFreq], doc: Document, label: String): Seq[Mention]
+  def getContextPerMention(mentions: Seq[Mention], doc: Document, label: String): Seq[Mention]
 
   def getProcess(mention: Mention): String = {
 

@@ -9,8 +9,8 @@ class TestVariableReader extends FlatSpec with Matchers {
   val vp = VariableProcessor()
 
   def getMentions(text: String): Seq[Mention] = {
-    val (_, mentions, _, _) = vp.parse(text)
-    mentions
+    val parsingResults = vp.parse(text)
+    parsingResults.targetMentions
   }
 
   behavior of "VariableReader"
@@ -880,15 +880,15 @@ class TestVariableReader extends FlatSpec with Matchers {
   // FIXME: "before mid-July" is tokenized weird
   val sent21_7 = "Overall, it is noted that 65% of the areas are developed beyond September 15, 2020 (late sowing), the areas sown during the recommended period (between July 15 and August 15) cover 34% of the plantings and early sowing (before mid-July) represents 1% of the total development."
   sent21_7 should "recognize 3 ranges in the same sentences" in {
-    val mentions = getMentions(sent21_7)
+    val mentions = getMentions(sent21_7).sortBy(_.tokenInterval)
     mentions.filter(_.label matches "Assignment") should have size (3)
     var count = 0
     for (m <- mentions.filter(_.label matches "Assignment")) {
-      if(count == 1) {
+      if(count == 0) {
         m.arguments("variable").head.text should be("late sowing")
         m.arguments("value").head.text should equal("beyond September 15, 2020")
         m.arguments("value").head.norms.get(0) should equal("2020-09-15 -- XXXX-XX-XX")
-      } else if(count == 0) {
+      } else if(count == 1) {
         m.arguments("variable").head.text should be("sown")
         m.arguments("value").head.text should equal("between July 15 and August 15")
         m.arguments("value").head.norms.get(0) should equal("XXXX-07-15 -- XXXX-08-15")
@@ -927,19 +927,19 @@ class TestVariableReader extends FlatSpec with Matchers {
 
   val sent21_10 = "To date , the distribution according to the cropping calendar , of the sowing carried out at the level of the Dagana delegation is as follows : - - - 9 % of the areas currently cultivated are sown before February 15 , 2020 , i.e. 3,146.92 ha ; Between the date of February 15 to March 15 , 2020 , are sown 66 % areas developed , i.e. 21,900.73 ha ; Areas sown beyond March 15 , 2020 cover 25 % of the entire development , i.e. 8,278.18 ha"
   sent21_10 should "recognize three sowing dates" in {
-    val mentions = getMentions(sent21_10)
+    val mentions = getMentions(sent21_10).sortBy(_.tokenInterval)
     mentions.filter(_.label matches "Assignment") should have size (3)
     var count = 0
     for (m <- mentions.filter(_.label matches "Assignment")) {
-      if(count == 2) {
+      if(count == 0) {
         m.arguments("variable").head.text should be("sown")
         m.arguments("value").head.text should equal("before February 15 , 2020")
         m.arguments("value").head.norms.get(0) should equal("XXXX-XX-XX -- 2020-02-15")
-      } else if(count == 0) {
+      } else if(count == 1) {
         m.arguments("variable").head.text should be("sown")
         m.arguments("value").head.text should equal("February 15 to March 15 , 2020")
         m.arguments("value").head.norms.get(0) should equal("2020-02-15 -- 2020-03-15")
-      } else if(count == 1) {
+      } else if(count == 2) {
         m.arguments("variable").head.text should be("sown")
         m.arguments("value").head.text should equal("beyond March 15 , 2020")
         m.arguments("value").head.norms.get(0) should equal("2020-03-15 -- XXXX-XX-XX")
