@@ -11,6 +11,7 @@ import scala.util.control.Breaks._
 import scala.collection.{breakOut, mutable}
 import scala.collection.mutable.ArrayBuffer
 
+// TODO: These were added for testing.  Remove afterwards!
 class Factuality(path: String) {
 
   def predict(words: Array[String], pos: Int): Float = 0.5f
@@ -21,11 +22,14 @@ object Factuality {
 }
 
 trait Context extends Attachment {
-  def getArgValuePairs() = this.getClass.getDeclaredFields.toList
-    .map(arg => {
+  def getArgValuePairs(): List[(String, AnyRef)] = this.getClass.getDeclaredFields.toList
+    .flatMap { arg =>
       arg.setAccessible(true)
-      (arg.getName, arg.get(this))
-    })
+      val name = arg.getName
+
+      if (name.startsWith("$")) None // Avoid inherited superclass and such.
+      else Some((arg.getName, arg.get(this)))
+    }
 
   def getTSVContextHeader() = {
     getArgValuePairs().map(_._1).mkString("\t")

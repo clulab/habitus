@@ -94,7 +94,7 @@ class JsonPrinter(outputFilename: String) extends Printer {
         case l: java.lang.Long => JLong(l)
         case i: java.lang.Integer => JInt(BigInt(i))
         case s: String => JString(s)
-        case x => JNothing
+        case x => throw new RuntimeException(s"Cannot serialize something of type ${value.getClass.getName}!")
       }
     )})
   }
