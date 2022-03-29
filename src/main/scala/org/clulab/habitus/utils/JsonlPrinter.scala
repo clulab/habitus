@@ -4,8 +4,8 @@ import org.clulab.odin.Mention
 import org.clulab.processors.Document
 import org.clulab.serialization.json.stringify
 import org.clulab.utils.FileUtils
-import org.json4s.{JDouble, JLong}
-import org.json4s.JsonAST.{JField, JInt, JObject, JString}
+import org.json4s.{DefaultFormats, Extraction, Formats}
+import org.json4s.JsonAST.{JField, JObject}
 import org.json4s.JsonDSL._
 
 import java.io.PrintWriter
@@ -71,14 +71,9 @@ class JsonlPrinter(outputFilename: String) extends Printer {
   }
 
   def toJObject(argValuePairs: List[(String, AnyRef)]): JObject = {
-    new JObject(argValuePairs.map { case (arg, value) => JField(arg,
-      value match {
-        case l: java.lang.Long => JLong(l)
-        case d: java.lang.Double => JDouble(d)
-        case i: java.lang.Integer => JInt(BigInt(i))
-        case s: String => JString(s)
-      }
-    )})
-  }
+    implicit val formats: Formats = DefaultFormats
+    val jFields = argValuePairs.map { pair => JField(pair._1, Extraction.decompose(pair._2)) }
 
+    JObject(jFields)
+  }
 }

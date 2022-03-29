@@ -1,6 +1,6 @@
 package org.clulab.habitus.utils
 
-import org.clulab.factuality.Factuality
+//import org.clulab.factuality.Factuality
 import org.clulab.habitus.variables.EntityDistFreq
 import org.clulab.odin.{Attachment, Mention}
 import org.clulab.processors.{Document, Sentence}
@@ -11,23 +11,45 @@ import scala.util.control.Breaks._
 import scala.collection.{breakOut, mutable}
 import scala.collection.mutable.ArrayBuffer
 
+// TODO: These were added for testing.  Remove afterwards!
+class Factuality(path: String) {
+
+  def predict(words: Array[String], pos: Int): Float = 0.5f
+}
+
+object Factuality {
+  def apply(path: String): Factuality = new Factuality(path)
+}
+
 trait Context extends Attachment {
-  def getArgValuePairs() = this.getClass.getDeclaredFields.toList
-    .map(arg => {
+  def getArgValuePairs(): List[(String, AnyRef)] = this.getClass.getDeclaredFields.toList
+    .flatMap { arg =>
       arg.setAccessible(true)
-      (arg.getName, arg.get(this))
-    })
+      val name = arg.getName
+
+      if (name.startsWith("$")) None // Avoid inherited superclass and such.
+      else Some((arg.getName, arg.get(this)))
+    }
 
   def getTSVContextHeader() = {
     getArgValuePairs().map(_._1).mkString("\t")
   }
 
   def getTSVContextString() = {
-    getArgValuePairs().map(_._2).mkString("\t")
+    getArgValuePairs().map(_._2).map { value =>
+      value match {
+        case None => ""
+        case Some(x) => x.toString
+        case x => x.toString
+      }
+    }
+    .mkString("\t")
   }
 }
 
-case class DefaultContext(location: String, date: String, process: String, crop: String, fertilizer: String, comparative: Int, factuality_score:Any, factuality_verb:Any) extends Context
+// Some of these variables are in Python format because they get serialized to JSON automatically.
+case class DefaultContext(location: String, date: String, process: String, crop: String, fertilizer: String, comparative: Int,
+    factuality_score: Option[Float], factuality_verb: Option[String]) extends Context
 
 trait ContextExtractor {
 
