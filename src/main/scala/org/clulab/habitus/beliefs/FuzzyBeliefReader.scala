@@ -1,6 +1,7 @@
 package org.clulab.habitus.beliefs
 
 import org.clulab.habitus.utils._
+import org.clulab.odin.EventMention
 import org.clulab.utils.Closer.AutoCloser
 import org.clulab.utils.{FileUtils, StringUtils, ThreadUtils}
 
@@ -47,7 +48,27 @@ object FuzzyBeliefReader {
 //          multiPrinter.outputMentions(mentions, doc, filename, printVars)
           val beliefMentions = mentions.filter(_.label matches "Belief")
           for (b <- beliefMentions) {
-            pw.println(s"${b.sentenceObj.getSentenceText}\t${b.text}")
+
+            if (b.sentence > 1) {
+              val prevSent = b.document.sentences(b.sentence-2).getSentenceText
+              pw.println(s"cur - 2\t$prevSent\t\t\t")
+            }
+            if (b.sentence > 0) {
+              val prevSent = b.document.sentences(b.sentence-1).getSentenceText
+              pw.println(s"cur - 1\t$prevSent\t\t")
+            }
+            pw.println(s"current\t${b.sentenceObj.getSentenceText}\t${b.asInstanceOf[EventMention].trigger.text}\t${b.text}")
+            if (b.sentence + 1 < b.document.sentences.length) {
+              val nextSent = b.document.sentences(b.sentence + 1).getSentenceText
+              pw.println(s"cur + 1\t$nextSent\t\t")
+
+            }
+            if (b.sentence + 2 < b.document.sentences.length) {
+              val nextSent = b.document.sentences(b.sentence + 2).getSentenceText
+              pw.println(s"cur + 2\t$nextSent\t\t")
+
+            }
+
           }
         }
         catch {

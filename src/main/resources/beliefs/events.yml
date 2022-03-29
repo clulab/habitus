@@ -13,14 +13,14 @@ rules:
     label: ${label}
     type: "token"
     pattern: |
-      [word = /.*/] [lemma = /say|claim|know|think|find|consider|guess|doubt|feel|believe|trust$|fear|skeptical|pessimistic|optimistic|hopeful|worry|^sure$|^unsure$|convinced|confident|positive|hesitant|suppose|suspect|perceive|consider|popular|expect|recognize|want|prefer|hope/ & tag = /^VB|JJ/] [word = /.*/] 
+      [word = /.*/]{,3} (?<trigger>[lemma = /say|claim|know|think|find|consider|guess|doubt|feel|believe|trust$|fear|skeptical|pessimistic|optimistic|hopeful|worry|^sure$|^unsure$|convinced|confident|positive|hesitant|suppose|suspect|perceive|consider|popular|expect|recognize|want|prefer|hope/ & tag = /^VB|JJ/]) [word = /.*/]{,10}
 
   - name: ${label}-nom
     priority: ${rulepriority}
     label: ${label}
     type: "token"
     pattern: |
-      [word = /.*/] [lemma = /stigma|willingness/ & tag = /^NN/] [word = /.*/]
+      [word = /.*/]{,3} (?<trigger>[lemma = /stigma|willingness/ & tag = /^NN/]) [word = /.*/]{,10}
 
   # Note: prop vs entity rule pairs may be redundant, but the prop rules seem to capture some more complete beliefs than entity rules
 #  - name: ${label}-believe-active-believer-prop
