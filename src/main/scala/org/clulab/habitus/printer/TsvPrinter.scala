@@ -33,28 +33,23 @@ class TsvPrinter(outputFilename: String) extends Printer {
       // \t Most frequent X within 0 sentences \t Most frequent X within 1 sentences.\t Most frequent X anywhere in the doc.\n
       // Since we only focus on the Assignment mention which includes two submentions in the same format called
       // ``variable`` and ``value`` we access the two through ``arguments`` attribute of the Mention class.
-      val variable = m.arguments(printVars.mentionType).headOption
-      val varText = if (variable.isDefined) variable.head.text else na
-      val value = m.arguments(printVars.mentionExtractor).headOption
-      val valText = if (value.isDefined) value.head.text else na
+      val variableOpt = m.arguments(printVars.mentionType).headOption
+      val varText = if (variableOpt.isDefined) variableOpt.head.text else na
+      val valueOpt = m.arguments(printVars.mentionExtractor).headOption
+      val valText = if (valueOpt.isDefined) valueOpt.head.text else na
       val sentText = m.sentenceObj.getSentenceText
-      val valNorms = if (value.isDefined) value.get.norms else None
-      val norm = {
-        if (valNorms.isDefined && valNorms.get.size >= 2) {
-          valNorms.filter(_.length >= 2).get(0)
-        } else {
-          //
-          // not all NEs have meaningful norms set
-          //   For example, DATEs have norms, but CROPs do not
-          // in the latter case, we revert to the lemmas or to the actual text as a backoff
-          //
-          if (value.get.words.nonEmpty) {
-            value.get.words.mkString(" ")
-          } else {
-            value.get.text
-          }
-        }
-      }
+      val valNorms = if (valueOpt.isDefined) valueOpt.get.norms else None
+      val norm =
+          if (valNorms.isDefined && valNorms.get.size >= 2)
+            valNorms.filter(_.length >= 2).get(0)
+          else if (valueOpt.get.words.nonEmpty)
+            // not all NEs have meaningful norms set
+            //   For example, DATEs have norms, but CROPs do not
+            // in the latter case, we revert to the lemmas or to the actual text as a backoff
+            //
+            valueOpt.get.words.mkString(" ")
+          else
+            valueOpt.get.text
        // this is for cases when there is no norm
       val normString = if (norm.nonEmpty) norm + "\t" else ""
       val context = m.attachments.headOption

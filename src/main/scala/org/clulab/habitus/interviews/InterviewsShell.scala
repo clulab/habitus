@@ -5,16 +5,16 @@ import org.clulab.utils._
 
 class InterviewsShell extends Shell {
   println("Creating InterviewsProcessor...\n")
-  private var bp: InterviewsProcessor = InterviewsProcessor()
+  private var interviewsProcessor: InterviewsProcessor = InterviewsProcessor()
 
   def reload(): Unit = {
     println("Reloading InterviewsProcessor...")
-    bp = InterviewsProcessor(bp.processor, bp.entityFinder)
+    interviewsProcessor = InterviewsProcessor(interviewsProcessor.processor, interviewsProcessor.entityFinder)
   }
 
   override def work(text: String): Unit = {
     // the actual reading
-    val parsingResults = bp.parse(text)
+    val parsingResults = interviewsProcessor.parse(text)
     val doc = parsingResults.document
     val targetMentions = parsingResults.targetMentions
 

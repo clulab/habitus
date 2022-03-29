@@ -6,11 +6,10 @@ import org.clulab.habitus.HabitusReader
 import org.clulab.habitus.utils._
 
 object PlantingAreaReader extends HabitusReader {
-
   val localConfig: Config = config[Config]("PlantingAreaReader")
   val masterResource: String = localConfig[String]("masterResource")
   val printVariables = ConfigBeanFactory.create(localConfig.getConfig("printVariables"), classOf[PrintVariables])
   val processor = VariableProcessor(masterResource)
-  run(processor, inputDir, outputDir, threads, printVariables)
 
+  run(processor, inputDir, outputDir, threads, printVariables)
 }

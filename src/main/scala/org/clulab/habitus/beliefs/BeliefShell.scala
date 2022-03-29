@@ -5,16 +5,16 @@ import org.clulab.habitus.utils.displayMentions
 
 class BeliefShell extends Shell {
   println("Creating BeliefProcessor...\n")
-  private var bp: BeliefProcessor = BeliefProcessor()
+  private var beliefProcessor: BeliefProcessor = BeliefProcessor()
 
   def reload(): Unit = {
     println("Reloading VariableProcessor...")
-    bp = BeliefProcessor(bp.processor, bp.entityFinder)
+    beliefProcessor = BeliefProcessor(beliefProcessor.processor, beliefProcessor.entityFinder)
   }
 
   override def work(text: String): Unit = {
     // the actual reading
-    val parsingResults = bp.parse(text)
+    val parsingResults = beliefProcessor.parse(text)
     val doc = parsingResults.document
     val targetMentions = parsingResults.targetMentions
 
