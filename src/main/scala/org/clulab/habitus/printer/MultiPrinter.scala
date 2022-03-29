@@ -1,23 +1,8 @@
-package org.clulab.habitus.utils
+package org.clulab.habitus.printer
 
+import org.clulab.habitus.utils.{Lazy, MultiCloser, PrintVariables}
 import org.clulab.odin.Mention
 import org.clulab.processors.Document
-
-import scala.collection.mutable
-
-trait Printer {
-
-  val na = "N/A"
-
-  def outputMentions(
-    mentions: Seq[Mention],
-    doc: Document,
-    inputFilename: String,
-    printVars: PrintVariables
-  ): Unit
-
-  def close(): Unit
-}
 
 class MultiPrinter(lazies: Lazy[Printer]*) extends MultiCloser[Printer](lazies: _*) with Printer {
   val printers: Array[Printer] = values
