@@ -1,6 +1,5 @@
 package org.clulab.habitus.printer
 
-import org.clulab.habitus.utils.PrintVariables
 import org.clulab.odin.Mention
 import org.clulab.processors.Document
 import org.clulab.serialization.json.stringify
@@ -22,7 +21,6 @@ class JsonPrinter(outputFilename: String) extends JsonicPrinter(outputFilename) 
     inputFilename: String,
     printVars: PrintVariables
   ): Unit = {
-
     val jObject = toJObject(mention, doc, inputFilename, printVars)
     val json = stringify(jObject, pretty = true)
     val indentedJson = "  " + json.replace("\n", "\n  ")

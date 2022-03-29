@@ -3,7 +3,7 @@ package org.clulab.habitus.variables
 import ai.lum.common.ConfigUtils._
 import com.typesafe.config.{Config, ConfigBeanFactory}
 import org.clulab.habitus.HabitusReader
-import org.clulab.habitus.utils._
+import org.clulab.habitus.printer.PrintVariables
 
 object VariableReader extends HabitusReader {
   val localConfig: Config = config[Config]("VarDatesReader")

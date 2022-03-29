@@ -1,6 +1,5 @@
 package org.clulab.habitus.printer
 
-import org.clulab.habitus.utils.PrintVariables
 import org.clulab.odin.Mention
 import org.clulab.processors.Document
 import org.clulab.serialization.json.stringify

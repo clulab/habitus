@@ -1,6 +1,6 @@
 package org.clulab.habitus.printer
 
-import org.clulab.habitus.utils.{Lazy, MultiCloser, PrintVariables}
+import org.clulab.habitus.utils.{Lazy, MultiCloser}
 import org.clulab.odin.Mention
 import org.clulab.processors.Document
 

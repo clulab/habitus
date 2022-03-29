@@ -1,6 +1,6 @@
 package org.clulab.habitus.printer
 
-import org.clulab.habitus.utils.{Context, PrintVariables}
+import org.clulab.habitus.utils.Context
 import org.clulab.odin.Mention
 import org.clulab.processors.Document
 import org.clulab.utils.FileUtils
