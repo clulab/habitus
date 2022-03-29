@@ -25,9 +25,8 @@ class DefaultContextExtractor extends ContextExtractor {
       for (m <- contentMentions) {
         val fscoreAndFverbOpt = getFactualityScore(m)
         // Translate from Option of Tuple2 to Tuple2 of Option.
-        val (fscoreOpt, fverbOpt) = fscoreAndFverbOpt.map { case (fscore, fverb) =>
-          (Some(fscore), Some(fverb))
-        }.getOrElse((None, None))
+        val (fscore, fverb) = fscoreAndFverbOpt
+            .getOrElse((DefaultContextExtractor.noFscore, DefaultContextExtractor.noFverb))
 
         val context = DefaultContext(
           getContext(m, "Date", thisSentDates, mentions),
@@ -38,8 +37,8 @@ class DefaultContextExtractor extends ContextExtractor {
           getContext(m, "Fertilizer", thisSentFerts, mentions),
           //          getContextFromHistogramInWindow(m, "Fertilizer", maxContextWindow, entityHistogram),
           getComparative(m),
-          fscoreOpt,
-          fverbOpt
+          Some(fscore),
+          Some(fverb)
         )
 
         // store context as a mention attachment
@@ -49,4 +48,9 @@ class DefaultContextExtractor extends ContextExtractor {
     }
     toReturn.distinct
   }
+}
+
+object DefaultContextExtractor {
+  val noFscore = -100f
+  val noFverb = "N/A"
 }
