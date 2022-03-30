@@ -15,13 +15,13 @@ rules:
       priority: "2"
       nestedPriority: "3"
 
-  - import: interviews/interactionEvents.yml
+  - import: interviews/events.yml
     vars:
       sampleLabel: Statement
       anotherSampleLabel: Query
       rulepriority: "4"
 
-  - import: interviews/associationEvents.yml
-    vars:
-      sampleLabel: Association
-      rulepriority: "4" # priority can increase or not increase depending on whether the set of rules uses mentions extracted using a different set of rules
+#  - import: interviews/associationEvents.yml
+#    vars:
+#      sampleLabel: Association
+#      rulepriority: "4" # priority can increase or not increase depending on whether the set of rules uses mentions extracted using a different set of rules

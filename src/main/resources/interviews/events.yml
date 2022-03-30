@@ -1,0 +1,21 @@
+vars: interviews/triggers.yml
+
+
+rules:
+
+  - name: if-rule-1
+    priority: ${rulepriority}
+    label: ${sampleLabel}
+    example: "You have to ask if you have equipment ready to harvest."
+    type: token
+    pattern: |
+      (?<trigger> [word = "if"]) (?<cause> [lemma = /.*/]+) "," (?<effect> [lemma = /.*/]+)
+
+
+  - name: so-rule
+    priority: ${rulepriority}
+    label: ${sampleLabel}
+    example: "You have to ask if you have equipment ready to harvest."
+    type: token
+    pattern: |
+      (?<cause> [lemma = /.*/]+) "," (?<trigger> [word = "so"])   (?<effect> [lemma = /.*/ & !tag = /^JJ/][lemma = /.*/]+)
