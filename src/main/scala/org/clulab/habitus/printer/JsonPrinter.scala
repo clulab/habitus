@@ -19,9 +19,9 @@ class JsonPrinter(outputFilename: String) extends JsonicPrinter(outputFilename) 
     mention: Mention,
     doc: Document,
     inputFilename: String,
-    printVars: PrintVariables
+    printVariables: PrintVariables
   ): Unit = {
-    val jObject = toJObject(mention, doc, inputFilename, printVars)
+    val jObject = toJObject(mention, doc, inputFilename, printVariables)
     val json = stringify(jObject, pretty = true)
     val indentedJson = "  " + json.replace("\n", "\n  ")
 

@@ -4,8 +4,8 @@ import org.clulab.habitus.utils.{Lazy, MultiCloser}
 import org.clulab.odin.Mention
 import org.clulab.processors.Document
 
-class MultiPrinter(lazies: Lazy[Printer]*) extends MultiCloser[Printer](lazies: _*) with Printer {
-  val printers: Array[Printer] = values
+class MultiPrinter(lazies: Lazy[Printing]*) extends MultiCloser[Printing](lazies: _*) with Printing {
+  val printers: Array[Printing] = values
 
   def outputMentions(
     mentions: Seq[Mention],
