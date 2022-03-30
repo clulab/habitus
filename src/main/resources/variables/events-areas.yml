@@ -14,3 +14,4 @@
   type: token
   pattern: |
     ( @value:Value []+? )+ @variable:Variable  
+

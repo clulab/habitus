@@ -1,23 +1,23 @@
-vars: interviews/triggers.yml
-
-rules:
-
-# Note: prop vs entity rule pairs may be redundant; todo: compare extractions, eliminate prop rules if redundant
-- name: statement-rule-1
-  priority: ${rulepriority}
-  label: ${sampleLabel}
-  example: "The interviewee said she does not know."
-  graph: "hybrid"
-  pattern: |
-    trigger = [lemma=/${statement_triggers}/ & tag=/^V|^J/]
-    interviewee:Agent = /nsubj|A0/
-    statement:Proposition = /ccomp|A1|dobj|xcomp|advcl/
-
-- name: query-rule-1
-  priority: ${rulepriority}
-  label: ${anotherSampleLabel}
-  graph: "hybrid"
-  pattern: |
-    trigger = [lemma=/${query_triggers}/ & tag=/^V|^J/]
-    interviewee:Agent = /nsubj$|A0/
-    query:Proposition = /ccomp|A1|dobj|xcomp|advcl|nmod_about/
+#vars: interviews/triggers.yml
+#
+#rules:
+#
+## Note: prop vs entity rule pairs may be redundant; todo: compare extractions, eliminate prop rules if redundant
+#- name: statement-rule-1
+#  priority: ${rulepriority}
+#  label: ${sampleLabel}
+#  example: "The interviewee said she does not know."
+#  graph: "hybrid"
+#  pattern: |
+#    trigger = [lemma=/${statement_triggers}/ & tag=/^V|^J/]
+#    interviewee:Agent = /nsubj|A0/
+#    statement:Proposition = /ccomp|A1|dobj|xcomp|advcl/
+#
+#- name: query-rule-1
+#  priority: ${rulepriority}
+#  label: ${anotherSampleLabel}
+#  graph: "hybrid"
+#  pattern: |
+#    trigger = [lemma=/${query_triggers}/ & tag=/^V|^J/]
+#    interviewee:Agent = /nsubj$|A0/
+#    query:Proposition = /ccomp|A1|dobj|xcomp|advcl|nmod_about/
