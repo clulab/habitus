@@ -12,14 +12,10 @@ object ArgumentInfo {
     val valueText = valueMention.text
     val valueNormsOpt = valueMention.norms
     val valueNorm =
-        if (valueNormsOpt.isDefined && valueNormsOpt.get.length >= 2)
+        // Not all NEs have meaningful norms set.  For example, DATEs have norms, but CROPs do not.
+        if (valueNormsOpt.isDefined && valueNormsOpt.get.length >= 2 && valueNormsOpt.get.head.nonEmpty)
           valueNormsOpt.get.head
-        else if (valueMention.words.nonEmpty)
-          // Not all NEs have meaningful norms set.  For example, DATEs have norms, but CROPs do not.
-          // In the latter case, we revert to the lemmas or to the actual text as a backoff.
-          valueMention.words.mkString(" ")
-        else
-          valueText
+        else "N/A"
 
     new ArgumentInfo(variableText, valueText, valueNorm)
   }
