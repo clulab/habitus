@@ -10,9 +10,9 @@ object InterviewsReader {
 
   def main(args: Array[String]): Unit = {
     val props = StringUtils.argsToMap(args)
-    val inputDir = props("in")
-    val outputDir = props("out")
-    val threads = props.get("threads").map(_.toInt).getOrElse(1)
+    val inputDir = "/home/alexeeva/Desktop/habitus_related/data/interviews"
+    val outputDir = "/home/alexeeva/Desktop/habitus_related/data/interviews/new_rule_output"
+    val threads = 1//props.get("threads").map(_.toInt).getOrElse(1)
 
     run(inputDir, outputDir, threads)
   }

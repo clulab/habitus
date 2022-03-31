@@ -5,16 +5,66 @@ rules:
   - name: if-rule-1
     priority: ${rulepriority}
     label: ${sampleLabel}
-    example: "You have to ask if you have equipment ready to harvest."
+    example: "if you get the loan, you can start planting."
     type: token
     pattern: |
-      (?<trigger> [word = "if"]) (?<cause> [lemma = /.*/]+) "," (?<effect> [lemma = /.*/]+)
+      (?<! [lemma = /ask|wonder|see|even/]) (?<trigger> [lemma = /^if$|^when$|^since$/]) (?<cause> [lemma = /.*/]{3,}) "," [word = "then"]? (?<effect> [lemma = /.*/ & !word = /if|\?/]{3,}) [tag = /\.|,/ & !word = "?"] 
 
+  - name: if-rule-2
+    priority: ${rulepriority}
+    label: ${sampleLabel}
+    example: "if you get the loan, you can start planting."
+    type: token
+    pattern: |
+      (?<effect> [lemma = /.*/ & !word = "if"]{3,}) (?<! [lemma = /ask|wonder|see|even/]) (?<trigger> [lemma = /^if$|^when$|^since$/]) (?<cause> [lemma = /.*/]{3,}) [tag = /\.|,/ & !word = "?"] 
 
   - name: so-rule
     priority: ${rulepriority}
     label: ${sampleLabel}
-    example: "You have to ask if you have equipment ready to harvest."
+    example: "He did not get the loan, so he could not start planting."
     type: token
     pattern: |
-      (?<cause> [lemma = /.*/]+) "," (?<trigger> [word = "so"])   (?<effect> [lemma = /.*/ & !tag = /^JJ/][lemma = /.*/]+)
+      (?<cause> [lemma = /.*/]{3,}) "," (?<trigger> [word = "so"])   (?<effect> [lemma = /.*/ & !tag = /^JJ/][lemma = /.*/]{2,})
+
+  - name: because-rule1
+    priority: ${rulepriority}
+    label: ${sampleLabel}
+    example: "The field agents try to come first because farmers have a lot of loans, and the person who comes first is prioritized/more likely to actually be repaid."
+    type: token
+    pattern: |
+      (?<effect> [lemma = /.*/]{3,}) (?<trigger> [word = "because"])   (?<cause> [lemma = /.*/ & !tag = /^JJ/][lemma = /.*/]{3,}) [tag = /\.|,/ & !word = "?"] 
+
+  - name: because-rule2
+    priority: ${rulepriority}
+    label: ${sampleLabel}
+    example: "Because farmers have a lot of loans, the field agents try to come first."
+    type: token
+    pattern: |
+       (?<trigger> [lemma = "because"])   (?<cause> [lemma = /.*/ & !tag = /^JJ/][lemma = /.*/]{2,}) "," (?<effect> [lemma = /.*/]{3,}) [tag = /\.|,/ & !word = "?"] 
+
+  - name: causation-rule
+    priority: ${rulepriority}
+    label: ${sampleLabel}
+    graph: "hybrid"
+    example: "Loan issues induce conflict within cooperatives"
+    pattern: |
+      trigger = [lemma=/shorten|induce|decrease|increase|facilitate|promote|boost|deminish|impair|inhibit|hinder|limit|lower|reduce|improve|affect|impact|influence/ & tag = /^VB/] (?! [tag = "RB"])
+      cause:Entity = /nsubj$/ 
+      effect:Entity = /dobj|xcomp/
+
+  - name: to-purpose-rule
+    priority: ${rulepriority}
+    label: ${sampleLabel}
+    type: token
+    example: "Some industries are using the byproduct to produce charcoal and electricity — but in that case the industries come to glean it for free.; neg example: Seed producers want to produce the cultivars that are interesting to farmers ."
+    pattern: |
+      (?<cause> [lemma = /.*/]+ [!tag = /^VB/]) (?<trigger> [word = "to"])   (?<effect> [tag = "VB"] [lemma = /.*/]+) [tag = /\.|,/ & !word = "?"] 
+      # here, the cause cant end in a verb to avoid things like "want to go", which is not a purpose
+
+  - name: who-can-rule
+    priority: ${rulepriority}
+    label: ${sampleLabel}
+    type: token
+    example: "Farmers who plant early and harvest early in one season can double crop ."
+    pattern: |
+      @Agent "who" (?<cause> [lemma = /.*/]{3,}) (?<trigger> [word = "can"])   (?<effect> [tag = "VB"] [lemma = /.*/]{3,}) [tag = /\.|,/ & !word = "?"]
