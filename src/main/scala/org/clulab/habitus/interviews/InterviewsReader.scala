@@ -18,10 +18,14 @@ object InterviewsReader {
   }
 
   def run(inputDir: String, outputDir: String, threads: Int): Unit = {
-    new File(outputDir).mkdir()
+    new File(outputDir).mkdirs()
 
-    val interviewReader = InterviewsProcessor()
+    // fixme: temporary, simple text cleanup
+    def cleanText(text: String): String = text
+        .replace("\n", " ")
+        .replace("- ", "")
 
+    val interviewsProcessor = InterviewsProcessor()
     val files = FileUtils.findFiles(inputDir, ".txt")
     val parFiles = if (threads > 1) ThreadUtils.parallelize(files, threads) else files
 
@@ -30,12 +34,10 @@ object InterviewsReader {
       for (file <- parFiles) {
         try {
           val unfiltered = FileUtils.getTextFromFile(file)
-          // fixme: temporary, simple text cleanup
-          val text = unfiltered.replace("\n",
-            " ").replace("- ", "")
+          val text = cleanText(unfiltered)
           val filename = StringUtils.afterLast(file.getName, '/')
           println(s"going to parse input file: $filename")
-          val parsingResults = interviewReader.parse(text)
+          val parsingResults = interviewsProcessor.parse(text)
           val targetMentions = parsingResults.targetMentions
           val contentMentions = targetMentions.filter(m => m.labels.contains("Event") & !m.isInstanceOf[TextBoundMention])
           for (m <- contentMentions) {

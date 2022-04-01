@@ -1,6 +1,7 @@
 package org.clulab.habitus.variables
 
-import org.clulab.habitus.utils.{PrintVariables, Test}
+import org.clulab.habitus.printer.PrintVariables
+import org.clulab.habitus.utils.Test
 import org.clulab.utils.FileUtils
 import org.json4s.{DefaultFormats, JArray, JObject}
 import org.json4s.jackson.JsonMethods
