@@ -30,7 +30,6 @@ class TestTsvPrinter extends Test {
         "name", "text", "norm"
       ).mkString("\t")
       val expectedOutput = Seq(headerOutput, valueOutput).mkString("", "\n", "\n")
-
       val actualOutput = FileUtils.getTextFromFile(tempFile.file)
 
       actualOutput should be (expectedOutput)
@@ -60,7 +59,6 @@ class TestTsvPrinter extends Test {
         "name2", "text2", "norm2",
       ).mkString("\t")
       val expectedOutput = Seq(headerOutput, valueOutput).mkString("", "\n", "\n")
-
       val actualOutput = FileUtils.getTextFromFile(tempFile.file)
 
       actualOutput should be (expectedOutput)
