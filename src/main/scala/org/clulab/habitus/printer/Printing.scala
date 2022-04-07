@@ -7,9 +7,7 @@ trait Printing {
 
   def outputMentions(
     mentions: Seq[Mention],
-    doc: Document,
-    inputFilename: String,
-    printVars: PrintVariables
+    inputFilename: String
   ): Unit
 
   def close(): Unit

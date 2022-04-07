@@ -9,21 +9,7 @@ import scala.util.control.Breaks._
 import scala.collection.{breakOut, mutable}
 import scala.collection.mutable.ArrayBuffer
 
-trait Context extends Attachment {
-  def getArgValuePairs() = this.getClass.getDeclaredFields.toList
-    .map(arg => {
-      arg.setAccessible(true)
-      (arg.getName, arg.get(this))
-    })
-
-  def getTSVContextHeader() = {
-    getArgValuePairs().map(_._1).mkString("\t")
-  }
-
-  def getTSVContextString() = {
-    getArgValuePairs().map(_._2).mkString("\t")
-  }
-}
+trait Context extends Attachment with Pairable
 
 case class DefaultContext(location: String, date: String, process: String, crop: String, fertilizer: String, comparative: Int) extends Context
 

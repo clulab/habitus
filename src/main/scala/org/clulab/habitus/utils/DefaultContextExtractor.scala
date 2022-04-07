@@ -1,10 +1,8 @@
 package org.clulab.habitus.utils
 
-import org.clulab.habitus.variables.EntityDistFreq
 import org.clulab.odin.Mention
 import org.clulab.processors.Document
 
-import scala.collection.mutable
 import scala.collection.mutable.ArrayBuffer
 
 class DefaultContextExtractor extends ContextExtractor {

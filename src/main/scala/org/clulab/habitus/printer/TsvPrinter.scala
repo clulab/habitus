@@ -1,17 +1,46 @@
 package org.clulab.habitus.printer
 
 import org.clulab.habitus.utils.Context
-import org.clulab.odin.Mention
-import org.clulab.processors.Document
+import org.clulab.wm.eidoscommon.utils.TsvWriter
 
-class TsvPrinter(outputFilename: String) extends Printer(outputFilename) {
+import java.io.File
 
-  protected def outputMention(mention: Mention, doc: Document, inputFilename: String, printVariables: PrintVariables): Unit = {
-    val sentenceText = mention.sentenceObj.getSentenceText
-    val argumentInfo = ArgumentInfo(mention, printVariables)
-    val contextString = mention.attachments.headOption.map(_.asInstanceOf[Context].getTSVContextString).getOrElse("")
+class TsvPrinter(outputFile: File) extends Printer(outputFile) {
 
-    printWriter.print(s"${argumentInfo.variableText}\t${argumentInfo.valueText}\t${argumentInfo.valueNorm}\t$sentenceText\t$inputFilename\t")
-    printWriter.println(contextString)
+  def this(outputFilename: String) = this (new File(outputFilename))
+
+  protected var clean = true
+  protected var tsvWriter = new TsvWriter(printWriter)
+
+  // keep track of order of arguments
+
+  protected def outputHeaders(mentionInfo: MentionInfo, contextInfo: Context): Unit = {
+    val mentionNames = mentionInfo.getNames
+    val contextNames = contextInfo.getNames
+    val argumentNames = Seq("arg0_name", "arg0_text", "arg0_norm", "...")
+
+    tsvWriter.println(mentionNames ++ contextNames ++ argumentNames)
+  }
+
+  def outputInfos(
+     mentionInfo: MentionInfo,
+     contextInfo: Context,
+     argumentInfos: Seq[ArgumentInfo]
+  ): Unit = {
+    if (clean) {
+      clean = false
+      outputHeaders(mentionInfo, contextInfo)
+    }
+    val mentionValues = mentionInfo.getValues
+    val contextValues = contextInfo.getValues
+    // TODO: Keep these in the right order, fill in empties
+    // TODO: Maybe skip None or Some
+    val argumentValues = argumentInfos.flatMap { argumentInfo =>
+      val pairs = argumentInfo.getPairs
+
+      pairs.map(_._2)
+    }
+
+    tsvWriter.println(mentionValues ++ contextValues ++ argumentValues)
   }
 }
