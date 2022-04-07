@@ -4,6 +4,7 @@ import org.clulab.habitus.utils.Context
 import org.clulab.wm.eidoscommon.utils.TsvWriter
 
 import java.io.File
+import scala.collection.mutable
 
 class TsvPrinter(outputFile: File) extends Printer(outputFile) {
 
@@ -11,8 +12,7 @@ class TsvPrinter(outputFile: File) extends Printer(outputFile) {
 
   protected var clean = true
   protected var tsvWriter = new TsvWriter(printWriter)
-
-  // keep track of order of arguments
+  protected val nameToColumnMap: mutable.Map[String, Int] = mutable.Map.empty
 
   protected def outputHeaders(mentionInfo: MentionInfo, contextInfo: Context): Unit = {
     val mentionNames = mentionInfo.getNames
@@ -33,14 +33,21 @@ class TsvPrinter(outputFile: File) extends Printer(outputFile) {
     }
     val mentionValues = mentionInfo.getValues
     val contextValues = contextInfo.getValues
-    // TODO: Keep these in the right order, fill in empties
-    // TODO: Maybe skip None or Some
-    val argumentValues = argumentInfos.flatMap { argumentInfo =>
-      val pairs = argumentInfo.getPairs
+    val columnToValuesMap = argumentInfos.map { argumentInfo =>
+      val column = nameToColumnMap.getOrElseUpdate(argumentInfo.name, nameToColumnMap.size)
+      val values = argumentInfo.getValues.map(_.toString)
 
-      pairs.map(_._2)
+      column -> values
+    }.toMap.withDefaultValue(TsvPrinter.emptyColumnInfo)
+    val maxColumn = if (columnToValuesMap.nonEmpty) columnToValuesMap.keys.max else -1
+    val argumentValues = Range.inclusive(0, maxColumn).flatMap { column =>
+      columnToValuesMap(column)
     }
 
     tsvWriter.println(mentionValues ++ contextValues ++ argumentValues)
   }
+}
+
+object TsvPrinter {
+  val emptyColumnInfo: Seq[String] = Array.fill(ArgumentInfo.width)("")
 }

@@ -25,7 +25,7 @@ class JsonPrinter(outputFile: File) extends JsonicPrinter(outputFile) {
     argumentInfos: Seq[ArgumentInfo]
   ): Unit = {
     val jObject = toJObject(mentionInfo, contextInfo, argumentInfos)
-    val json = stringify(jObject, pretty = true)
+    val json = stringify(jObject, pretty = true).replace("\r\n", "\n")
     val indentedJson = "  " + json.replace("\n", "\n  ")
 
     // Each JSON element in the array needs to be separated from the others.
