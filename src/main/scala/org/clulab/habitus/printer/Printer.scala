@@ -26,10 +26,7 @@ abstract class Printer(outputFile: File) extends Printing {
     printWriter.close()
   }
 
-  def outputMentions(
-    mentions: Seq[Mention],
-    inputFilename: String
-  ): Unit = {
+  def outputMentions(mentions: Seq[Mention], inputFilename: String): Unit = {
     println(s"Writing mentions from doc $inputFilename to ${outputFile.getName}")
     mentions
         .filter { mention => mention.attachments.nonEmpty && mention.attachments.head.isInstanceOf[Context] }

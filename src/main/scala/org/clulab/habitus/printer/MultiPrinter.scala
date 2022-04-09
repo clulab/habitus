@@ -7,10 +7,7 @@ import org.clulab.processors.Document
 class MultiPrinter(lazies: Lazy[Printing]*) extends MultiCloser[Printing](lazies: _*) with Printing {
   val printers: Array[Printing] = values
 
-  def outputMentions(
-    mentions: Seq[Mention],
-    inputFilename: String
-  ): Unit = synchronized {
+  def outputMentions(mentions: Seq[Mention], inputFilename: String): Unit = synchronized {
     // Prevent not only overlapping output within a printer,
     // but ensure each printer has the same order of output.
     printers.foreach { printer =>
