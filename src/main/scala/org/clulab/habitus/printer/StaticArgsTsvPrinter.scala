@@ -6,19 +6,20 @@ import org.clulab.wm.eidoscommon.utils.TsvWriter
 import java.io.File
 import scala.collection.mutable
 
-class TsvPrinter(outputFile: File) extends Printer(outputFile) {
+class StaticArgsTsvPrinter(outputFile: File) extends Printer(outputFile) {
 
   def this(outputFilename: String) = this (new File(outputFilename))
 
-  protected var clean = true
+  protected var argsOpt: Option[Seq[String]] = None
   protected val tsvWriter = new TsvWriter(printWriter)
   protected val nameToColumnMap: mutable.Map[String, Int] = mutable.Map.empty
 
-  protected def outputHeaders(mentionInfo: MentionInfo, contextInfo: Context): Unit = {
+  protected def outputHeaders(mentionInfo: MentionInfo, contextInfo: Context, argumentInfos: Seq[ArgumentInfo]): Unit = {
     val mentionNames = mentionInfo.getNames
     val contextNames = contextInfo.getNames
-    val argumentNames = Seq("arg0_name", "arg0_text", "arg0_norm", "...")
-
+    val argumentNames = argumentInfos.flatMap { argumentInfo =>
+      Seq(s"${argumentInfo.name}_text", s"${argumentInfo.name}_norm")
+    }
     tsvWriter.println(mentionNames ++ contextNames ++ argumentNames)
   }
 
@@ -27,18 +28,21 @@ class TsvPrinter(outputFile: File) extends Printer(outputFile) {
      contextInfo: Context,
      argumentInfos: Seq[ArgumentInfo]
   ): Unit = {
-    if (clean) {
-      clean = false
-      outputHeaders(mentionInfo, contextInfo)
+    if (argsOpt.isEmpty) {
+      argsOpt = Some(argumentInfos.map(_.name))
+      outputHeaders(mentionInfo, contextInfo, argumentInfos)
     }
+    else
+      require(argsOpt.get == argumentInfos.map(_.name))
+
     val mentionValues = mentionInfo.getValues
     val contextValues = contextInfo.getValues
     val columnToValuesMap = argumentInfos.map { argumentInfo =>
       val column = nameToColumnMap.getOrElseUpdate(argumentInfo.name, nameToColumnMap.size)
-      val values = argumentInfo.getValues.map(_.toString)
+      val values = argumentInfo.getValues.drop(1).map(_.toString) // Skip the name.
 
       column -> values
-    }.toMap.withDefaultValue(TsvPrinter.emptyColumnInfo)
+    }.toMap.withDefaultValue(StaticArgsTsvPrinter.emptyColumnInfo)
     val maxColumn = if (columnToValuesMap.nonEmpty) columnToValuesMap.keys.max else -1
     val argumentValues = Range.inclusive(0, maxColumn).flatMap { column =>
       columnToValuesMap(column)
@@ -48,6 +52,6 @@ class TsvPrinter(outputFile: File) extends Printer(outputFile) {
   }
 }
 
-object TsvPrinter {
+object StaticArgsTsvPrinter {
   val emptyColumnInfo: Seq[String] = Array.fill(ArgumentInfo.width)("")
 }
