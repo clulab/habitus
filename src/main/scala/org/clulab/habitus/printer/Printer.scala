@@ -34,7 +34,7 @@ abstract class Printer(outputFile: File) extends Printing {
         .foreach { mention =>
           val mentionInfo = MentionInfo(mention, inputFilename)
           val contextInfo = mention.attachments.head.asInstanceOf[Context]
-          val argumentKeys = mention.arguments.keys.toSeq.sorted.filter(mention.arguments(_).nonEmpty)
+          val argumentKeys = getArgumentKeys(mention)
           val argumentInfos = argumentKeys.map { argumentKey =>
             val mentions = mention.arguments(argumentKey)
             val length = mentions.length
