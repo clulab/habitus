@@ -7,7 +7,7 @@ import java.io.File
 
 class JsonPrinter(outputFile: File) extends JsonicPrinter(outputFile) {
 
-  def this(outputFilename: String) = this (new File(outputFilename))
+  def this(outputFilename: String) = this(new File(outputFilename))
 
   protected var dirty = false
   printWriter.println("[")

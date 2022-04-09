@@ -8,7 +8,7 @@ import scala.collection.mutable
 
 class TsvPrinter(outputFile: File) extends Printer(outputFile) {
 
-  def this(outputFilename: String) = this (new File(outputFilename))
+  def this(outputFilename: String) = this(new File(outputFilename))
 
   protected var clean = true
   protected val tsvWriter = new TsvWriter(printWriter)

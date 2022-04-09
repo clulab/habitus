@@ -15,9 +15,10 @@ class HabitusReader() extends App {
   val outputDir: String = config[String]("outputDir")
   val threads: Int = config[Int]("threads")
   val factuality: Boolean = config[Boolean]("factuality")
-  val mentions = "/mentions"
 
   def run(processor: GenericProcessor, inputDir: String, outputDir: String, threads: Int): Unit = {
+    val mentions = "/mentions"
+
     new File(outputDir).mkdirs()
 
     def mkOutputFile(extension: String): String = outputDir + mentions + extension
