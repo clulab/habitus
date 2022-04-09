@@ -2,7 +2,7 @@ package org.clulab.habitus
 
 import ai.lum.common.ConfigUtils._
 import com.typesafe.config.ConfigFactory
-import org.clulab.habitus.printer.{JsonlPrinter, MultiPrinter, TsvPrinter}
+import org.clulab.habitus.printer.{DynamicArgsTsvPrinter, JsonlPrinter, MultiPrinter, TsvPrinter}
 import org.clulab.habitus.utils._
 import org.clulab.utils.Closer.AutoCloser
 import org.clulab.utils.{FileUtils, StringUtils, ThreadUtils}
@@ -15,11 +15,12 @@ class HabitusReader() extends App {
   val outputDir: String = config[String]("outputDir")
   val threads: Int = config[Int]("threads")
   val factuality: Boolean = config[Boolean]("factuality")
+  val mentions = "/mentions"
 
   def run(processor: GenericProcessor, inputDir: String, outputDir: String, threads: Int): Unit = {
     new File(outputDir).mkdirs()
 
-    def mkOutputFile(extension: String): String = outputDir + "/mentions" + extension
+    def mkOutputFile(extension: String): String = outputDir + mentions + extension
 
     // fixme: temporary, simple text cleanup
     def cleanText(text: String): String = text
@@ -31,7 +32,8 @@ class HabitusReader() extends App {
 
     new MultiPrinter(
       Lazy{new TsvPrinter(mkOutputFile(".tsv"))},
-      Lazy(new JsonlPrinter(mkOutputFile(".jsonl")))
+      Lazy(new JsonlPrinter(mkOutputFile(".jsonl"))),
+      Lazy(new DynamicArgsTsvPrinter(outputDir + mentions + "-", ".tsv"))
     ).autoClose { multiPrinter =>
       for (file <- parFiles) {
         try {
