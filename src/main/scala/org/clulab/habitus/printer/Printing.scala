@@ -1,16 +1,13 @@
 package org.clulab.habitus.printer
 
 import org.clulab.odin.Mention
-import org.clulab.processors.Document
 
 trait Printing {
 
-  def outputMentions(
-    mentions: Seq[Mention],
-    doc: Document,
-    inputFilename: String,
-    printVars: PrintVariables
-  ): Unit
+  def outputMentions(mentions: Seq[Mention], inputFilename: String): Unit
 
   def close(): Unit
+
+  def getArgumentKeys(mention: Mention): Seq[String] =
+      mention.arguments.keys.toSeq.filter(mention.arguments(_).nonEmpty).sorted
 }

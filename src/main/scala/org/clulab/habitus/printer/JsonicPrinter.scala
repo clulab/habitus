@@ -1,50 +1,28 @@
 package org.clulab.habitus.printer
 
 import org.clulab.habitus.utils.Context
-import org.clulab.odin.{Attachment, Mention}
-import org.clulab.processors.Document
-import org.json4s.JLong
-import org.json4s.JsonAST.{JField, JInt, JObject, JString}
+import org.json4s.{DefaultFormats, Extraction, Formats}
+import org.json4s.JsonAST.{JArray, JObject}
 import org.json4s.JsonDSL._
 
-abstract class JsonicPrinter(outputFilename: String) extends Printer(outputFilename) {
+import java.io.File
 
-  protected def outputMention(
-    mention: Mention,
-    doc: Document,
-    inputFilename: String,
-    printVariables: PrintVariables
-  ): Unit
+abstract class JsonicPrinter(outputFile: File) extends Printer(outputFile) {
+  implicit val formats: Formats = DefaultFormats
 
-  def toJObject(argValuePairs: List[(String, AnyRef)]): JObject = {
-    new JObject(argValuePairs.map { case (arg, value) => JField(arg,
-        value match {
-          case l: java.lang.Long => JLong(l)
-          case i: java.lang.Integer => JInt(BigInt(i))
-          case s: String => JString(s)
-        }
-    )})
-  }
+  protected def toJObject(
+    mentionInfo: MentionInfo,
+    contextInfo: Context,
+    argumentInfos: Seq[ArgumentInfo]
+  ): JObject = {
+    val mention = Extraction.decompose(mentionInfo).asInstanceOf[JObject]
+    val context = Extraction.decompose(contextInfo).asInstanceOf[JObject]
+    val arguments = JArray(argumentInfos.toList.map { argumentInfo =>
+      Extraction.decompose(argumentInfo)
+    })
 
-  def toJObject(attachment: Attachment): JObject =
-      toJObject(attachment.asInstanceOf[Context].getArgValuePairs())
-
-  protected def toJObject(mention: Mention, doc: Document, inputFilename: String, printVariables: PrintVariables): JObject = {
-    val sentenceText = doc.sentences(mention.sentence).getSentenceText
-    val argumentInfo = ArgumentInfo(mention, printVariables)
-    val argJObjectOpt = mention.attachments.headOption.map(toJObject)
-    var jObject: JObject =
-        ("variableText" -> argumentInfo.variableText) ~
-        ("valueText" -> argumentInfo.valueText) ~
-        ("valueNorm" -> argumentInfo.valueNorm) ~
-        ("sentenceText" -> sentenceText) ~
-        ("inputFilename" -> inputFilename)
-
-    argJObjectOpt.foreach { argJObject =>
-      for (value <- argJObject.obj) {
-        jObject = jObject ~ (value._1 -> value._2)
-      }
-    }
-    jObject
+    mention ~
+        ("context" -> context) ~
+        ("arguments" -> arguments)
   }
 }

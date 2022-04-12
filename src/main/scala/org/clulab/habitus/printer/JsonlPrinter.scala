@@ -1,18 +1,20 @@
 package org.clulab.habitus.printer
 
-import org.clulab.odin.Mention
-import org.clulab.processors.Document
+import org.clulab.habitus.utils.Context
 import org.clulab.serialization.json.stringify
 
-class JsonlPrinter(outputFilename: String) extends JsonicPrinter(outputFilename) {
+import java.io.File
 
-  protected def outputMention(
-    mention: Mention,
-    doc: Document,
-    inputFilename: String,
-    printVariables: PrintVariables
+class JsonlPrinter(outputFile: File) extends JsonicPrinter(outputFile) {
+
+  def this(outputFilename: String) = this(new File(outputFilename))
+
+  def outputInfos(
+    mentionInfo: MentionInfo,
+    contextInfo: Context,
+    argumentInfos: Seq[ArgumentInfo]
   ): Unit = {
-    val jObject = toJObject(mention, doc, inputFilename, printVariables)
+    val jObject = toJObject(mentionInfo, contextInfo, argumentInfos)
     val json = stringify(jObject, pretty = false)
     val jsonl = json.replace('\n', ' ') // just in case
 
