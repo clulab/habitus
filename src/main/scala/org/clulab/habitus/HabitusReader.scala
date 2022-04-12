@@ -4,6 +4,7 @@ import ai.lum.common.ConfigUtils._
 import com.typesafe.config.ConfigFactory
 import org.clulab.habitus.printer.{DynamicArgsTsvPrinter, JsonlPrinter, MultiPrinter, TsvPrinter}
 import org.clulab.habitus.utils._
+import org.clulab.odin.Attachment
 import org.clulab.utils.Closer.AutoCloser
 import org.clulab.utils.{FileUtils, StringUtils, ThreadUtils}
 

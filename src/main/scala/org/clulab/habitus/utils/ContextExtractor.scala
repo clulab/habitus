@@ -13,6 +13,8 @@ trait Context extends Attachment with Pairable
 
 case class DefaultContext(location: String, date: String, process: String, crop: String, fertilizer: String, comparative: Int) extends Context
 
+case class BeliefContext(context: String) extends Context
+
 trait ContextExtractor {
 
   val NA = "N/A"
