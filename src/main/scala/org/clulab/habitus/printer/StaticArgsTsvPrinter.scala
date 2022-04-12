@@ -9,7 +9,6 @@ import scala.collection.mutable
 class StaticArgsTsvPrinter(outputFile: File) extends Printer(outputFile) {
 
   def this(outputFilename: String) = this (new File(outputFilename))
-
   protected var argsOpt: Option[Seq[String]] = None
   protected val tsvWriter = new TsvWriter(printWriter)
   protected val nameToColumnMap: mutable.Map[String, Int] = mutable.Map.empty

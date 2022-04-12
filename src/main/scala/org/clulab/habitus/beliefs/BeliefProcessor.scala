@@ -5,7 +5,7 @@ import org.apache.commons.io.FileUtils
 import org.clulab.dynet.Utils
 import org.clulab.habitus.{GenericProcessor, HabitusProcessor, ParsingResult}
 import org.clulab.habitus.actions.HabitusActions
-import org.clulab.habitus.utils.ArrayView
+import org.clulab.habitus.utils.{ArrayView, BeliefContext}
 import org.clulab.habitus.variables.VariableProcessor.resourceDir
 import org.clulab.odin.{EventMention, ExtractorEngine, Mention, RelationMention, State, TextBoundMention}
 import org.clulab.openie.entities.CustomizableRuleBasedFinder
@@ -57,8 +57,9 @@ class BeliefProcessor(val processor: Processor,
     // keep only beliefs that look like propositions
     val propBeliefMentions = expandedMentions.filter(m => containsPropositionBelief(m) || containsPropositionBeliefWithTheme(m) || m.arguments.size > 2)
     val triggerFilered = triggerBetweenBelieverAndBelief(propBeliefMentions)
+    val withAttachment = triggerFilered.map(_.withAttachment(BeliefContext("N/A")))
 
-    ParsingResult(doc, entityMentions ++ expandedMentions, triggerFilered.distinct)
+    ParsingResult(doc, entityMentions ++ expandedMentions, withAttachment.distinct)
   }
 
 

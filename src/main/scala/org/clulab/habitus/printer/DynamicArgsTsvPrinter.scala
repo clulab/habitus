@@ -13,11 +13,9 @@ class DynamicArgsTsvPrinter(prefix: String, suffix: String) extends Printing {
       val argumentKeys = getArgumentKeys(mention)
       val printer = argumentKeysToPrinterMap.getOrElseUpdate(argumentKeys, {
         val outputFilename = prefix + argumentKeys.mkString("_") + suffix
-
         new StaticArgsTsvPrinter(outputFilename)
       })
-
-      printer.outputMentions(mentions, inputFilename)
+      printer.outputMentions(Seq(mention), inputFilename)
     }
   }
 
