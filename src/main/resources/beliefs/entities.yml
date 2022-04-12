@@ -34,12 +34,19 @@ rules:
     priority: 1
     type: token
     pattern: |
-      [entity=/B-ACTOR|B-ORG/ & !mention=Avoid] [entity=/I-ACTOR|I-ORG/ & !mention=Avoid]?
+      [entity=/B-ACTOR|B-ORG/ & !mention=Avoid & !word="we"] [entity=/I-ACTOR|I-ORG/ & !mention=Avoid & !word="we"]?
 
-  - name: generic-agent-rule
+#  - name: generic-agent-rule
+#    label: Agent
+#    priority: 1
+#    type: token
+#    pattern: |
+#      [word=/(?i)^(I|he|she|they|we)$/]
+
+  - name: generic-not-first-person-agent-rule
     label: Agent
     priority: 1
     type: token
     pattern: |
-      [word=/(?i)^(I|he|she|they|we)$/]
+      [word=/(?i)^(he|she|they)$/]
 

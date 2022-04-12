@@ -13,14 +13,60 @@ rules:
     label: ${label}
     type: "token"
     pattern: |
-      [word = /.*/]{,3} (?<trigger>[lemma = /say|claim|know|think|find|consider|guess|doubt|feel|believe|trust$|fear|skeptical|pessimistic|optimistic|hopeful|worry|^sure$|^unsure$|convinced|confident|positive|hesitant|suppose|suspect|perceive|consider|popular|expect|recognize|want|prefer|hope/ & tag = /^VB|JJ/]) [word = /.*/]{,10}
+      [word = /.*/]{,2} [!word = "I" & !lemma = /\bwe\b/] (?<trigger>[lemma = /\b(say|claim|think|guess|doubt|feel|believe|trust|fear|worry|suppose|suspect|perceive|expect|want|prefer|hope)\b/ & tag = /^VB/]) [word = /.*/]{,10}
 
   - name: ${label}-nom
     priority: ${rulepriority}
     label: ${label}
     type: "token"
     pattern: |
-      [word = /.*/]{,3} (?<trigger>[lemma = /stigma|willingness/ & tag = /^NN/]) [word = /.*/]{,10}
+      [word = /.*/]{,3} (?<trigger>[lemma = /\b(stigma|willingness|popular)\b/ & tag = /^NN|^JJ/]) [word = /.*/]{,10}
+      
+
+#  - name: ${label}-verbs-with-agents
+#    priority: ${rulepriority}
+#    label: ${label}
+#    type: "token"
+#    pattern: |
+#      (?<= @Agent) [word = /.*/ & !word = /\bwe\b|\bI\b/]{,3} (?<trigger>) [word = /.*/]{,10}
+
+
+  - name: ${label}-verbs-with-agents
+    priority: ${rulepriority}
+    label: ${label}
+    graph: "hybrid"
+    pattern: |
+      trigger = [lemma = /consider|find|value|describe|recognize/ & tag = /^VB|^JJ/]
+      believer:Agent = /nsubj$|A0/ [!word = /\bwe\b|\bI\b/]
+
+#  - name: ${label}-adjs-with-agents
+#    priority: ${rulepriority}
+#    label: ${label}
+#    graph: "hybrid"
+#    pattern: |
+#      (?<= @Agent) [word = /.*/]{,3} (?<trigger>) [word = /.*/]{,10}
+
+  - name: ${label}-adjs-with-agents
+    priority: ${rulepriority}
+    label: ${label}
+    graph: "hybrid"
+    pattern: |
+      trigger = [word = /\b(optimistic|pessimistic|hopeful|sure|unsure|convinced|confident|positive|hesitant)\b/ & tag = /VBN|^JJ/]
+      believer:Agent = /nsubj$|A0/
+
+  - name: ${label}-consider-passive
+    priority: ${rulepriority}
+    label: ${label}
+    type: "token"
+    pattern: |
+      [word = /.*/]{,3} (?<trigger>[word = "considered" & tag = /^VBN/]) [word = /.*/]{,10}
+
+  - name: ${label}-place-emphasis
+    priority: ${rulepriority}
+    label: ${label}
+    type: "token"
+    pattern: |
+      [word = /.*/]{,3} [lemma = "place" & tag = /^VB/] [word = /.*/]{,3} (?<trigger>[word = "emphasis"]) [word = /.*/]{,10}
 
   # Note: prop vs entity rule pairs may be redundant, but the prop rules seem to capture some more complete beliefs than entity rules
 #  - name: ${label}-believe-active-believer-prop
