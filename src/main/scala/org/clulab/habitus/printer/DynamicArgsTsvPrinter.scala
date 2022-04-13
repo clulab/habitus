@@ -9,13 +9,13 @@ class DynamicArgsTsvPrinter(prefix: String, suffix: String) extends Printing {
   protected val argumentKeysToPrinterMap: mutable.Map[Seq[String], Printer] = new mutable.HashMap()
 
   def outputMentions(mentions: Seq[Mention], inputFilename: String): Unit = {
-    mentions.foreach { mention =>
-      val argumentKeys = getArgumentKeys(mention)
+    val argumentKeysAndMentions = mentions.groupBy(getArgumentKeys)
+    argumentKeysAndMentions.foreach { case (argumentKeys, mentions) =>
       val printer = argumentKeysToPrinterMap.getOrElseUpdate(argumentKeys, {
         val outputFilename = prefix + argumentKeys.mkString("_") + suffix
         new StaticArgsTsvPrinter(outputFilename)
       })
-      printer.outputMentions(Seq(mention), inputFilename)
+      printer.outputMentions(mentions, inputFilename)
     }
   }
 
