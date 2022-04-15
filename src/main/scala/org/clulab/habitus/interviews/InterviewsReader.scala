@@ -1,6 +1,6 @@
 package org.clulab.habitus.interviews
 
-import org.clulab.odin.TextBoundMention
+import org.clulab.odin.{EventMention, TextBoundMention}
 import org.clulab.utils.Closer.AutoCloser
 import org.clulab.utils.{FileUtils, StringUtils, ThreadUtils}
 
@@ -10,8 +10,8 @@ object InterviewsReader {
 
   def main(args: Array[String]): Unit = {
     val props = StringUtils.argsToMap(args)
-    val inputDir = "/home/alexeeva/Desktop/habitus_related/data/interviews"
-    val outputDir = "/home/alexeeva/Desktop/habitus_related/data/interviews/new_rule_output"
+    val inputDir = "/home/alexeeva/Desktop/habitus_related/data/test-habitus-main/input"
+    val outputDir = "/home/alexeeva/Desktop/habitus_related/data/test-habitus-main/output"
     val threads = 1//props.get("threads").map(_.toInt).getOrElse(1)
 
     run(inputDir, outputDir, threads)
@@ -26,7 +26,7 @@ object InterviewsReader {
     val parFiles = if (threads > 1) ThreadUtils.parallelize(files, threads) else files
 
     new PrintWriter(new File(outputDir + "/mentions.tsv")).autoClose { pw =>
-      pw.println("filename\tmention type\tfound by\tsentence\tmention text\targs in all next columns (argType: argText)")
+      pw.println("filename\tmention type\tfound by\tsentence\tmention text\trelation_direction\targs in all next columns (argType: argText)")
       for (file <- parFiles) {
         try {
           val unfiltered = FileUtils.getTextFromFile(file)
@@ -39,7 +39,13 @@ object InterviewsReader {
           val targetMentions = parsingResults.targetMentions
           val contentMentions = targetMentions.filter(m => m.labels.contains("Event") & !m.isInstanceOf[TextBoundMention])
           for (m <- contentMentions) {
-            pw.print(s"${filename}\t${m.label}\t${m.foundBy}\t${m.sentenceObj.getSentenceText}\t${m.text}")
+            val direction = if (m.isInstanceOf[EventMention]) {
+              val trigger = m.asInstanceOf[EventMention].trigger.text
+              if (trigger.contains("increas")) "increase"
+              else if (trigger.contains("decreas")) "decrease"
+              else "N/A"
+            } else "N/A"
+            pw.print(s"${filename}\t${m.label}\t${m.foundBy}\t${m.sentenceObj.getSentenceText}\t${m.text}\t${direction}")
             for ((key, values) <- m.arguments) {
               if (values.nonEmpty) {
                 // multiple args of same type are "::"-separated

@@ -49,8 +49,8 @@ rules:
     example: "Loan issues induce conflict within cooperatives"
     pattern: |
       trigger = [lemma=/shorten|induce|decrease|increase|facilitate|promote|boost|deminish|impair|inhibit|hinder|limit|lower|reduce|improve|affect|impact|influence/ & tag = /^VB/] (?! [tag = "RB"])
-      cause:Entity = /nsubj$/ 
-      effect:Entity = /dobj|xcomp/
+      cause:Entity = /csubj|nsubj$|A1/ 
+      effect:Entity = /dobj|xcomp|nmod_as|nmod_of/
 
   - name: to-purpose-rule
     priority: ${rulepriority}

@@ -23,5 +23,5 @@ rules:
 
   - import: interviews/influenceLinks.yml
     vars:
-      sampleLabel: Association
+      sampleLabel: Influence
       rulepriority: "4" # priority can increase or not increase depending on whether the set of rules uses mentions extracted using a different set of rules
