@@ -39,12 +39,12 @@ object InterviewsReader {
           val targetMentions = parsingResults.targetMentions
           val contentMentions = targetMentions.filter(m => m.labels.contains("Event") & !m.isInstanceOf[TextBoundMention])
           for (m <- contentMentions) {
-            val direction = if (m.isInstanceOf[EventMention]) {
-              val trigger = m.asInstanceOf[EventMention].trigger.text
-              if (trigger.contains("increas")) "increase"
-              else if (trigger.contains("decreas")) "decrease"
-              else "N/A"
-            } else "N/A"
+            val direction = m.label match {
+              case "Decrease" => "decrease"
+              case "Increase" => "increase"
+              case "Influence" => "influence"
+              case _ => "N/A"
+            }
             pw.print(s"${filename}\t${m.label}\t${m.foundBy}\t${m.sentenceObj.getSentenceText}\t${m.text}\t${direction}")
             for ((key, values) <- m.arguments) {
               if (values.nonEmpty) {

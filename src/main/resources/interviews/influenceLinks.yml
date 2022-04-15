@@ -42,15 +42,53 @@ rules:
     pattern: |
        (?<trigger> [lemma = "because"])   (?<cause> [lemma = /.*/ & !tag = /^JJ/][lemma = /.*/]{2,}) "," (?<effect> [lemma = /.*/]{3,}) [tag = /\.|,/ & !word = "?"] 
 
-  - name: causation-rule
+  - name: causation-rule-increase
+    priority: ${rulepriority}
+    label: Increase
+    graph: "hybrid"
+    example: ""
+    pattern: |
+      trigger = [lemma=/increase|facilitate|promote|boost/ & tag = /^VB/] (?! [tag = "RB"])
+      cause:Entity = /csubj|nsubj$|A1/ 
+      effect:Entity = /dobj|xcomp|nmod_as|nmod_of/
+
+  - name: influence-trigger-rule
     priority: ${rulepriority}
     label: ${sampleLabel}
     graph: "hybrid"
-    example: "Loan issues induce conflict within cooperatives"
+    example: ""
     pattern: |
-      trigger = [lemma=/shorten|induce|decrease|increase|facilitate|promote|boost|deminish|impair|inhibit|hinder|limit|lower|reduce|improve|affect|impact|influence/ & tag = /^VB/] (?! [tag = "RB"])
+      trigger = [lemma=/induce|improve|affect|impact|influence/ & tag = /^VB/] (?! [tag = "RB"])
       cause:Entity = /csubj|nsubj$|A1/ 
       effect:Entity = /dobj|xcomp|nmod_as|nmod_of/
+
+  - name: influence-lead-to
+    priority: ${rulepriority}
+    label: ${sampleLabel}
+    graph: "hybrid"
+    example: ""
+    pattern: |
+      trigger = [lemma=/lead/ & tag = /^VB/] [word = "to"]
+      cause:Entity = /csubj|nsubj$|A1/ 
+      effect:Entity = /nmod_to/
+
+  - name: causation-rule-decrease
+    priority: ${rulepriority}
+    label: Decrease
+    graph: "hybrid"
+    example: ""
+    pattern: |
+      trigger = [lemma=/shorten|decrease|deminish|impair|inhibit|hinder|limit|lower|reduce/ & tag = /^VB/] (?! [tag = "RB"]) (?! "as" "a" "result" "of")
+      cause:Entity = /csubj|nsubj$|A1/ 
+      effect:Entity = /dobj|xcomp|nmod_as|nmod_of/
+
+  - name: influence-result-of
+    priority: ${rulepriority}
+    label: ${sampleLabel}
+    type: token
+    example: ""
+    pattern: |
+      @effect:Proposition [word="as"] [word="a"] (?<trigger>  [word = "result"] ) [word="of"] @cause:Entity
 
   - name: to-purpose-rule
     priority: ${rulepriority}
