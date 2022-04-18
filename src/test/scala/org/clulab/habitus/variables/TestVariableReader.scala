@@ -953,4 +953,12 @@ class TestVariableReader extends FlatSpec with Matchers {
     val mentions = getMentions(sent21_11)
     mentions.filter(_.label matches "Assignment") should have size (0)
   }
+
+
+  val sent21_12 = "These correspond to the dry season (from February/March to June/July)."
+  ignore should "recognize the date range that describes dry season" in {
+    //todo: write a test here that will check that there is one Assignment event extracted
+    // that has two args: var - dry season and value the date range
+
+  }
 }
