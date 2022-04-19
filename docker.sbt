@@ -34,3 +34,5 @@ dockerCommands := dockerCommands.value.flatMap { dockerCommand: CmdLike =>
     case _ => Seq(dockerCommand)
   }
 }
+
+Global / excludeLintKeys += Docker / dockerBaseImage
