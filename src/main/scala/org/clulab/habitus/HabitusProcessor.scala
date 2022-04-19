@@ -17,6 +17,13 @@ class HabitusProcessor(lexiconNer: Option[LexiconNER]) extends CluProcessor(opti
     removeBadSentences(doc)
   }
 
+  def mkDocumentWithRestoreCase(text: String, keepText: Boolean = false): Document = {
+    val doc = super.mkDocument(text, keepText)
+    removeBadSentences(doc)
+    restoreCase(doc)
+    doc
+  }
+
   private def removeBadSentences(doc: Document): Document = {
     val cleanSents = doc.sentences.filterNot(isBadSentence)
     val cleanDoc = new Document(cleanSents)
