@@ -1,83 +1,81 @@
 package org.clulab.habitus.variables
 
-import org.clulab.odin.{ExtractorEngine, Mention}
-import org.clulab.processors.clu.CluProcessor
-import org.clulab.processors.fastnlp.FastNLPProcessor
-import org.scalatest.{FlatSpec, Matchers}
+import org.clulab.habitus.utils.Test
+import org.clulab.odin.Mention
 
-class TestVariableReader extends FlatSpec with Matchers {
-  val vp = VariableProcessor()
+class TestVariableReader extends Test {
+  val vp: VariableProcessor = VariableProcessor()
 
   def getMentions(text: String): Seq[Mention] = {
     val parsingResults = vp.parse(text)
     parsingResults.targetMentions
   }
 
-  behavior of "VariableReader"
+  type Variable = (String, Seq[(String, String)])
 
-  // the Clu parser breaks on this one, but the SRL works fine!
-  val sent1 = "Farmers’ sowing dates ranged from 14 to 31 July for the WS and from 3 to 11 March for the DS."
-  sent1 should "recognize range" in {
-    val mentions = getMentions(sent1)
-    mentions.filter(_.label matches "Assignment") should have size (2)
-    var count = 0
-    for (m <- mentions.filter(_.label matches "Assignment")) {
-      if (count == 0) {
-        m.arguments("variable").head.text should be("sowing dates")
-        m.arguments("value").head.text should equal("from 3 to 11 March")
-        m.arguments("value").head.norms.get(0) should equal("XXXX-03-03 -- XXXX-03-11")
-      } else {
-        m.arguments("variable").head.text should be("sowing dates")
-        m.arguments("value").head.text should equal("from 14 to 31 July")
-        m.arguments("value").head.norms.get(0) should equal("XXXX-07-14 -- XXXX-07-31")
+  case class SimpleTest(
+     name: String, text: String,
+     reason: String,
+     variables: Seq[Variable]
+   ) {
+
+    def test(): Unit = {
+      it should name in {
+        val mentions = getMentions(text).filter(_.label matches "Assignment")
+
+        mentions should have size (variables.length)
+
+        variables.zip(mentions).foreach { case (variable, mention) =>
+          mention.arguments("variable").head.text should be(variable._1)
+
+          val values = variable._2
+          val arguments = mention.arguments("value")
+
+          arguments should have size (values.length)
+          values.zip(arguments).foreach { case (value, argument) =>
+            argument.text should be (value._1)
+            argument.norms.get.head should be (value._2)
+          }
+        }
       }
-      count += 1
     }
   }
 
-  val sent2 = "Sowing between October 4 and October 14 was optimal."
-  sent2 should "recognize sowing date with range Month followed by day" in {
-    val mentions = getMentions(sent2)
-    mentions.filter(_.label matches "Assignment") should have size (1)
-    mentions.filter(_.label matches "Assignment").foreach({ m =>
-      m.arguments("variable").head.text should be("Sowing")
-      m.arguments("value").head.text should equal("between October 4 and October 14")
-      m.arguments("value").head.norms.get(0) should equal("XXXX-10-04 -- XXXX-10-14")
-    })
-  }
+  behavior of "VariableReader"
 
-  val sent3 = "Sowing date was October 7, 2019 ."
-  sent3 should "recognize sowing date was a Month followed by day, year" in {
-    val mentions = getMentions(sent3)
-    mentions.filter(_.label matches "Assignment") should have size (1)
-    mentions.filter(_.label matches "Assignment").foreach({ m =>
-      m.arguments("variable").head.text should be("Sowing date")
-      m.arguments("value").head.text should equal("October 7, 2019")
-      m.arguments("value").head.norms.get(0) should equal("2019-10-07")
-    })
-  }
+  // the Clu parser breaks on this one, but the SRL works fine!
+  SimpleTest(
+    "sent1", "Farmers’ sowing dates ranged from 14 to 31 July for the WS and from 3 to 11 March for the DS.",
+    "recognize range",
+    Seq(
+      ("sowing dates", Seq(("from 3 to 11 March", "XXXX-03-03 -- XXXX-03-11"))),
+      ("sowing dates", Seq(("from 14 to 31 July", "XXXX-07-14 -- XXXX-07-31")))
+    )
+  ).test()
 
-  val sent4 = "Sowing between October 4 and October 14 of 2020 was optimal."
-  sent4 should "recognize sowing date with range Month followed by 4 of year"  in {
-    val mentions = getMentions(sent4)
-    mentions.filter(_.label matches "Assignment") should have size (1)
-    mentions.filter(_.label matches "Assignment").foreach({ m =>
-      m.arguments("variable").head.text should be("Sowing")
-      m.arguments("value").head.text should equal("between October 4 and October 14 of 2020")
-      m.arguments("value").head.norms.get(0) should equal("2020-10-04 -- 2020-10-14")
-    })
-  }
+  SimpleTest(
+    "sent2", "Sowing between October 4 and October 14 was optimal.",
+    "recognize sowing date with range Month followed by day",
+    Seq(("Sowing", Seq(("between October 4 and October 14", "XXXX-10-04 -- XXXX-10-14"))))
+  ).test()
 
-  val sent5 = "Planting date was October 1."
-  sent5 should "recognize sowing date with a date consisting a month followed by 4" in {
-    val mentions = getMentions(sent5)
-    mentions.filter(_.label matches "Assignment") should have size (1)
-    mentions.filter(_.label matches "Assignment").foreach({ m =>
-      m.arguments("variable").head.text should be("Planting date")
-      m.arguments("value").head.text should equal("October 1")
-      m.arguments("value").head.norms.get(0) should equal("XXXX-10-01")
-    })
-  }
+  SimpleTest(
+    "sent3", "Sowing date was October 7, 2019 .",
+    "recognize sowing date was a Month followed by day, year",
+    Seq(("Sowing date", Seq(("October 7, 2019", "2019-10-07"))))
+  ).test()
+
+  SimpleTest(
+    "sent4", "Sowing between October 4 and October 14 of 2020 was optimal.",
+    "recognize sowing date with range Month followed by 4 of year",
+    Seq(("Sowing", Seq(("between October 4 and October 14 of 2020", "2020-10-04 -- 2020-10-14"))))
+  ).test()
+
+  SimpleTest(
+    "sent5", "Planting date was October 1.",
+    "recognize sowing date with a date consisting a month followed by 4",
+    Seq(("Planting date", Seq(("October 1", "XXXX-10-01"))))
+  ).test()
 
   val sent6 = "Planting date was October 1 of 2021."
   sent6 should "recognize sowing date with a date consisting a month followed by day then [of a year]"  in {
@@ -453,32 +451,17 @@ class TestVariableReader extends FlatSpec with Matchers {
     })
   }
 
-  val sent16_3_1 = "Other crops cultivated include millet, sorghum, maize, cowpea and vegetables"
-  sent16_3_1 should "recognize comma separated crops" in {
-    val mentions = getMentions(sent16_3_1)
-    mentions.filter(_.label matches "Assignment") should have size (5)
-    var count = 0
-
-    for (m <- mentions.filter(_.label matches "Assignment")) {
-      if (count == 0) {
-        m.arguments("variable").head.text should be("crops")
-        m.arguments("value").head.text should equal("millet")
-      } else if (count == 1) {
-        m.arguments("variable").head.text should be("crops")
-        m.arguments("value").head.text should equal("sorghum")
-      } else if (count == 2) {
-        m.arguments("variable").head.text should be("crops")
-        m.arguments("value").head.text should equal("maize")
-      } else if (count == 3) {
-        m.arguments("variable").head.text should be("crops")
-        m.arguments("value").head.text should equal("cowpea")
-      } else {
-        m.arguments("variable").head.text should be("crops")
-        m.arguments("value").head.text should equal("vegetables")
-      }
-      count += 1
-    }
-  }
+  SimpleTest(
+    "sent16_3_1", "Other crops cultivated include millet, sorghum, maize, cowpea and vegetables",
+    "recognize comma separated crops",
+    Seq(
+      ("crops", Seq(("millet", ""))),
+      ("crops", Seq(("sorghum", ""))),
+      ("crops", Seq(("maize", ""))),
+      ("crops", Seq(("cowpea", ""))),
+      ("crops", Seq(("vegetables", "")))
+    )
+  ).test()
 
   val sent16_4 = "In the 1998WS, farmers sowed Jaya between 20 June and 1 July"
   sent16_4 should "recognize crop attached to var" in {
@@ -512,111 +495,52 @@ class TestVariableReader extends FlatSpec with Matchers {
     })
   }
 
-  val sent16_4_2 = "In the SRV, farmers plant Sahel 108, Sahel 150, Sahel 154, Sahel 134, Nerica"
-  sent16_4_2 should "recognize crop [attached to dates]" in {
-    val mentions = getMentions(sent16_4_2)
-    mentions.filter(_.label matches "Assignment") should have size (1)
-    mentions.filter(_.label matches "Assignment").foreach({ m =>
-      var count = 0
-      m.arguments("value") should have size (5)
+  SimpleTest(
+    "sent16_4_2", "In the SRV, farmers plant Sahel 108, Sahel 150, Sahel 154, Sahel 134, Nerica",
+    "recognize crop [attached to dates]",
+    Seq(("plant",
+      Seq(("Sahel 108", ""), ("Sahel 150", ""), ("Sahel 154", ""), ("Sahel 134", ""), ("Nerica", ""))
+    ))
+  ).test()
 
-      for (v <- m.arguments("value")) {
-        if (count == 0) {
-          v.text should equal("Sahel 108")
-        } else if (count == 1) {
-          v.text should equal("Sahel 150")
-        } else if (count == 2) {
-          v.text should equal("Sahel 154")
-        } else if (count == 3) {
-          v.text should equal("Sahel 134")
-        } else {
-          v.text should equal("Nerica")
-        }
-        count += 1
-      }
-    })
-  }
+  SimpleTest(
+    "sent17_1", "Peanut, sugarcane and cotton are important cash crops.",
+    "recognize crops comma separated",
+    Seq(
+      ("crops", Seq(("Peanut", ""))),
+      ("crops", Seq(("sugarcane", ""))),
+      ("crops", Seq(("cotton", "")))
+    )
+  ).test()
 
-  val sent17_1 = "Peanut, sugarcane and cotton are important cash crops."
-  sent17_1 should "recognize crops comma separated" in {
-    val mentions = getMentions(sent17_1)
-    mentions.filter(_.label matches "Assignment") should have size (3)
-    var count = 0
+  SimpleTest(
+    "sent17_2", "Millet, rice, corn and sorghum are the primary food crops grown in Senegal.",
+    "recognize comma separated crops",
+    Seq(
+      ("crops", Seq(("Millet", ""))),
+      ("crops", Seq(("rice", ""))),
+      ("crops", Seq(("corn", ""))),
+      ("crops", Seq(("sorghum", "")))
+    )
+  ).test()
 
-    for (m <- mentions.filter(_.label matches "Assignment")) {
-      if (count == 0) {
-        m.arguments("variable").head.text should be("crops")
-        m.arguments("value").head.text should equal("Peanut")
-      } else if (count == 1) {
-        m.arguments("variable").head.text should be("crops")
-        m.arguments("value").head.text should equal("sugarcane")
-      } else {
-        m.arguments("variable").head.text should be("crops")
-        m.arguments("value").head.text should equal("cotton")
-      }
-      count += 1
-    }
-  }
+  SimpleTest(
+    "sent17_3", "Tomato or onion were the two most labour-consuming crops",
+    "recognize OR linked crops",
+    Seq(
+      ("crops", Seq(("Tomato", ""))),
+      ("crops", Seq(("onion", "")))
+    )
+  ).test()
 
-  val sent17_2 = "Millet, rice, corn and sorghum are the primary food crops grown in Senegal."
-  sent17_2 should "recognize comma separated crops" in {
-    val mentions = getMentions(sent17_2)
-    mentions.filter(_.label matches "Assignment") should have size (4)
-    var count = 0
-
-    for (m <- mentions.filter(_.label matches "Assignment")) {
-      if (count == 0) {
-        m.arguments("variable").head.text should be("crops")
-        m.arguments("value").head.text should equal("Millet")
-      } else if (count == 1) {
-        m.arguments("variable").head.text should be("crops")
-        m.arguments("value").head.text should equal("rice")
-      } else if (count == 2) {
-        m.arguments("variable").head.text should be("crops")
-        m.arguments("value").head.text should equal("corn")
-      } else {
-        m.arguments("variable").head.text should be("crops")
-        m.arguments("value").head.text should equal("sorghum")
-      }
-      count += 1
-    }
-  }
-
-  val sent17_3 = "Tomato or onion were the two most labour-consuming crops"
-  sent17_3 should "recognize OR linked crops" in {
-    val mentions = getMentions(sent17_3)
-    mentions.filter(_.label matches "Assignment") should have size (2)
-    var count = 0
-
-    for (m <- mentions.filter(_.label matches "Assignment")) {
-      if (count == 0) {
-        m.arguments("variable").head.text should be("crops")
-        m.arguments("value").head.text should equal("Tomato")
-      } else {
-        m.arguments("variable").head.text should be("crops")
-        m.arguments("value").head.text should equal("onion")
-      }
-      count += 1
-    }
-  }
-
-  val sent17_4 = "Onion and tomato were the most profitable crops."
-  sent17_4 should "recognize AND separated crops" in {
-    val mentions = getMentions(sent17_4)
-    mentions.filter(_.label matches "Assignment") should have size (2)
-    var count = 0
-
-    for (m <- mentions.filter(_.label matches "Assignment")) {
-      if (count == 0) {
-        m.arguments("variable").head.text should be("crops")
-        m.arguments("value").head.text should equal("Onion")
-      } else {
-        m.arguments("variable").head.text should be("crops")
-        m.arguments("value").head.text should equal("tomato")
-      }
-      count += 1
-    }
-  }
+  SimpleTest(
+    "sent17_4", "Onion and tomato were the most profitable crops.",
+    "recognize AND separated crops",
+    Seq(
+      ("crops", Seq(("Onion", ""))),
+      ("crops", Seq(("tomato", "")))
+    )
+  ).test()
 
   // Tests for Fertilizer var-val reading
 
@@ -670,47 +594,21 @@ class TestVariableReader extends FlatSpec with Matchers {
     })
   }
 
-  val sent_20_5 = "The most widely used solid inorganic fertilizers are diammonium phosphate, urea and potassium chloride"
-  sent_20_5 should "recognize fertilizer [attached to be verb]" in {
-    val mentions = getMentions(sent_20_5)
-    mentions.filter(_.label matches "Assignment") should have size (1)
-    mentions.filter(_.label matches "Assignment").foreach({ m =>
-      var count = 0
-      m.arguments("value") should have size (3)
+  SimpleTest(
+    "sent_20_5", "The most widely used solid inorganic fertilizers are diammonium phosphate, urea and potassium chloride",
+    "recognize fertilizer [attached to be verb]",
+    Seq(("fertilizers",
+      Seq(("diammonium phosphate", ""), ("urea", ""), ("potassium chloride", ""))
+    ))
+  ).test()
 
-      for (v <- m.arguments("value")) {
-        if (count == 0) {
-          v.text should equal("diammonium phosphate")
-        } else if (count == 1) {
-          v.text should equal("urea")
-        } else {
-          v.text should equal("potassium chloride")
-        }
-        count += 1
-      }
-    })
-  }
-
-  val sent_20_5_1 = "The main nutrient elements present in the fertilizers are nitrogen, phosphorus, and potassium"
-  sent_20_5_1 should "recognize fertilizer [attached to be verb]" in {
-    val mentions = getMentions(sent_20_5_1)
-    mentions.filter(_.label matches "Assignment") should have size (1)
-    mentions.filter(_.label matches "Assignment").foreach({ m =>
-      var count = 0
-      m.arguments("value") should have size (3)
-
-      for (v <- m.arguments("value")) {
-        if (count == 0) {
-          v.text should equal("nitrogen")
-        } else if (count == 1) {
-          v.text should equal("phosphorus")
-        } else {
-          v.text should equal("potassium")
-        }
-        count += 1
-      }
-    })
-  }
+  SimpleTest(
+    "sent_20_5_1", "The main nutrient elements present in the fertilizers are nitrogen, phosphorus, and potassium",
+    "recognize fertilizer [attached to be verb]",
+    Seq(("fertilizers",
+      Seq(("nitrogen", ""), ("phosphorus", ""), ("potassium", ""))
+    ))
+  ).test()
 
   val sent_20_5_2 = "The nitrogenous chemical fertilizers are urea, calcium, ammonium nitrate, ammonium sulfate, basic calcium nitrate, calcium cyanamide"
   sent_20_5_2 should "recognize fertilizer [attached to be verb]" in {
