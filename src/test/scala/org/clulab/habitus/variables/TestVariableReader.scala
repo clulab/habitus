@@ -1,11 +1,11 @@
 package org.clulab.habitus.variables
 
+import org.clulab.habitus.utils.Test
 import org.clulab.odin.{ExtractorEngine, Mention}
 import org.clulab.processors.clu.CluProcessor
 import org.clulab.processors.fastnlp.FastNLPProcessor
-import org.scalatest.{FlatSpec, Matchers}
 
-class TestVariableReader extends FlatSpec with Matchers {
+class TestVariableReader extends Test {
   val vp = VariableProcessor()
 
   def getMentions(text: String): Seq[Mention] = {
