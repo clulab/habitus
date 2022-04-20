@@ -1,0 +1,92 @@
+<configuration>
+    <!-- Suppress reports about there being multiple logback.xml files. -->
+    <!-- https://stackoverflow.com/questions/3401051/suppress-all-logback-output-to-console -->
+    <statusListener class="ch.qos.logback.core.status.NopStatusListener" />
+
+    <property name="clulab:pattern" value="%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n" />
+
+    <appender name="clulab:stderr" class="ch.qos.logback.core.ConsoleAppender">
+        <target>System.err</target>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>TRACE</level>
+            <onMatch>DENY</onMatch>
+        </filter>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>DEBUG</level>
+            <onMatch>DENY</onMatch>
+        </filter>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>INFO</level>
+            <onMatch>DENY</onMatch>
+        </filter>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>WARN</level>
+            <onMatch>DENY</onMatch>
+        </filter>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>ERROR</level>
+            <onMatch>ACCEPT</onMatch>
+        </filter>
+        <encoder>
+            <pattern>${clulab:pattern}</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="clulab:stdout" class="ch.qos.logback.core.ConsoleAppender">
+        <target>System.out</target>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>TRACE</level>
+            <onMatch>ACCEPT</onMatch>
+        </filter>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>DEBUG</level>
+            <onMatch>ACCEPT</onMatch>
+        </filter>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>INFO</level>
+            <onMatch>ACCEPT</onMatch>
+        </filter>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>WARN</level>
+            <onMatch>ACCEPT</onMatch>
+        </filter>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>ERROR</level>
+            <onMatch>DENY</onMatch>
+        </filter>
+        <encoder>
+            <pattern>${clulab:pattern}</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="clulab:habitus" class="ch.qos.logback.core.FileAppender">
+        <param name="Append" value="true" />
+        <file>${HOSTNAME}-habitus.log</file>
+        <encoder>
+            <pattern>${clulab:pattern}</pattern>
+        </encoder>
+    </appender>
+
+    <!-- This accounts for anything coming from the habitus core project. -->
+    <!-- ALL TRACE DEBUG INFO WARN ERROR FATAL OFF -->
+    <logger name="org.clulab.habitus" level="all" additivity="false">
+        <appender-ref ref="clulab:stderr"/>
+        <appender-ref ref="clulab:stdout"/>
+        <appender-ref ref="clulab:habitus"/>
+    </logger>
+
+    <!-- This handles anything that we probably already know about from clulab. -->
+    <!-- It will be recorded in the file, but not shown on screen. -->
+    <logger name="org.clulab" level="all" additivity="false">
+        <!--appender-ref ref="clulab:stderr"/-->
+        <!--appender-ref ref="clulab:stdout"/-->
+        <appender-ref ref="clulab:habitus"/>
+    </logger>
+
+    <!-- This handles anything from outside of habitus that isn't configured otherwise. -->
+    <root level="all">
+        <appender-ref ref="clulab:stderr"/>
+        <appender-ref ref="clulab:stdout"/>
+        <appender-ref ref="clulab:habitus"/>
+    </root>
+</configuration>
