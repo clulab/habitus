@@ -13,7 +13,7 @@ class TestVariableReader extends Test {
 
   type Variable = (String, Seq[(String, String)])
 
-  case class SimpleTest(
+  case class VariableTest(
      name: String, text: String,
      reason: String,
      variables: Seq[Variable]
@@ -44,7 +44,7 @@ class TestVariableReader extends Test {
   behavior of "VariableReader"
 
   // the Clu parser breaks on this one, but the SRL works fine!
-  SimpleTest(
+  VariableTest(
     "sent1", "Farmers’ sowing dates ranged from 14 to 31 July for the WS and from 3 to 11 March for the DS.",
     "recognize range",
     Seq(
@@ -53,25 +53,25 @@ class TestVariableReader extends Test {
     )
   ).test()
 
-  SimpleTest(
+  VariableTest(
     "sent2", "Sowing between October 4 and October 14 was optimal.",
     "recognize sowing date with range Month followed by day",
     Seq(("Sowing", Seq(("between October 4 and October 14", "XXXX-10-04 -- XXXX-10-14"))))
   ).test()
 
-  SimpleTest(
+  VariableTest(
     "sent3", "Sowing date was October 7, 2019 .",
     "recognize sowing date was a Month followed by day, year",
     Seq(("Sowing date", Seq(("October 7, 2019", "2019-10-07"))))
   ).test()
 
-  SimpleTest(
+  VariableTest(
     "sent4", "Sowing between October 4 and October 14 of 2020 was optimal.",
     "recognize sowing date with range Month followed by 4 of year",
     Seq(("Sowing", Seq(("between October 4 and October 14 of 2020", "2020-10-04 -- 2020-10-14"))))
   ).test()
 
-  SimpleTest(
+  VariableTest(
     "sent5", "Planting date was October 1.",
     "recognize sowing date with a date consisting a month followed by 4",
     Seq(("Planting date", Seq(("October 1", "XXXX-10-01"))))
@@ -315,7 +315,7 @@ class TestVariableReader extends Test {
       m.arguments("value").head.norms.get(0) should equal("XXXX-08-15 -- XXXX-XX-XX")
     })
   }
-  
+
   val sent16_7 = "sowing was done on 25th October"
   sent16_7 should "recognize sowing on [be verb in PP]"  in {
     val mentions = getMentions(sent16_7)
@@ -360,7 +360,7 @@ class TestVariableReader extends Test {
   }
 
 
-  // Tests for CULTIVARS 
+  // Tests for CULTIVARS
 
   val sent16 = "The most important planted cash crop is peanut in the SRV."
   sent16 should "recognize crop attached to be verb " in {
@@ -451,7 +451,7 @@ class TestVariableReader extends Test {
     })
   }
 
-  SimpleTest(
+  VariableTest(
     "sent16_3_1", "Other crops cultivated include millet, sorghum, maize, cowpea and vegetables",
     "recognize comma separated crops",
     Seq(
@@ -495,7 +495,7 @@ class TestVariableReader extends Test {
     })
   }
 
-  SimpleTest(
+  VariableTest(
     "sent16_4_2", "In the SRV, farmers plant Sahel 108, Sahel 150, Sahel 154, Sahel 134, Nerica",
     "recognize crop [attached to dates]",
     Seq(("plant",
@@ -503,7 +503,7 @@ class TestVariableReader extends Test {
     ))
   ).test()
 
-  SimpleTest(
+  VariableTest(
     "sent17_1", "Peanut, sugarcane and cotton are important cash crops.",
     "recognize crops comma separated",
     Seq(
@@ -513,7 +513,7 @@ class TestVariableReader extends Test {
     )
   ).test()
 
-  SimpleTest(
+  VariableTest(
     "sent17_2", "Millet, rice, corn and sorghum are the primary food crops grown in Senegal.",
     "recognize comma separated crops",
     Seq(
@@ -524,7 +524,7 @@ class TestVariableReader extends Test {
     )
   ).test()
 
-  SimpleTest(
+  VariableTest(
     "sent17_3", "Tomato or onion were the two most labour-consuming crops",
     "recognize OR linked crops",
     Seq(
@@ -533,7 +533,7 @@ class TestVariableReader extends Test {
     )
   ).test()
 
-  SimpleTest(
+  VariableTest(
     "sent17_4", "Onion and tomato were the most profitable crops.",
     "recognize AND separated crops",
     Seq(
@@ -594,7 +594,7 @@ class TestVariableReader extends Test {
     })
   }
 
-  SimpleTest(
+  VariableTest(
     "sent_20_5", "The most widely used solid inorganic fertilizers are diammonium phosphate, urea and potassium chloride",
     "recognize fertilizer [attached to be verb]",
     Seq(("fertilizers",
@@ -602,7 +602,7 @@ class TestVariableReader extends Test {
     ))
   ).test()
 
-  SimpleTest(
+  VariableTest(
     "sent_20_5_1", "The main nutrient elements present in the fertilizers are nitrogen, phosphorus, and potassium",
     "recognize fertilizer [attached to be verb]",
     Seq(("fertilizers",
