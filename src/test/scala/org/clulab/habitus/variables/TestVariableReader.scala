@@ -6,11 +6,14 @@ import org.clulab.odin.Mention
 class TestVariableReader extends Test {
   val vp: VariableProcessor = VariableProcessor()
 
+  // (variableText, Seq[(valueText, valueNorm)])
+  // So if one mention has multiple values, use Seq((valueText1, valueNorm1), (valueText2, valueNorm2), ...)
   type Variable = (String, Seq[(String, String)])
 
   case class VariableTest(
      name: String, text: String,
      reason: String,
+     // If there are multiple "Assignment" mentions, use one variable for each.
      variables: Seq[Variable]
    ) {
 
