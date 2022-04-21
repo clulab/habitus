@@ -3,8 +3,8 @@ package org.clulab.habitus.entitynetworks
 import org.clulab.dynet.Utils
 import org.clulab.habitus.HabitusProcessor
 import org.clulab.processors.Document
-import org.clulab.utils.FileUtils
 import org.clulab.utils.Closer.AutoCloser
+import org.clulab.utils.FileUtils
 
 import java.io.PrintWriter
 
