@@ -13,15 +13,16 @@ class HabitusProcessor(lexiconNer: Option[LexiconNER]) extends CluProcessor(opti
 
   /** Our own mkDocument, which removes some malformed sentences */
   override def mkDocument(text: String, keepText: Boolean = false): Document = {
-    val doc = super.mkDocument(text, keepText)
-    removeBadSentences(doc)
+    val oldDoc = super.mkDocument(text, keepText)
+    val newDoc = removeBadSentences(oldDoc)
+    newDoc
   }
 
   def mkDocumentWithRestoreCase(text: String, keepText: Boolean = false): Document = {
-    val doc = super.mkDocument(text, keepText)
-    removeBadSentences(doc)
-    restoreCase(doc)
-    doc
+    val oldDoc = super.mkDocument(text, keepText)
+    val newDoc = removeBadSentences(oldDoc)
+    restoreCase(newDoc)
+    newDoc
   }
 
   private def removeBadSentences(doc: Document): Document = {
