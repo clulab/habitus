@@ -57,7 +57,7 @@
   label: Yield
   type: token
   pattern: |
-    /(?i)(average)/? /yield/
+    /(?i)(average|grain)/? /yield/
 
 # for extracting yield measurements
 - name: value-yield-amount

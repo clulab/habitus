@@ -957,7 +957,7 @@ class TestVariableReader extends Test {
   val sent21_12 = "These correspond to the dry season (from February/March to June/July)."
   ignore should "recognize the date range that describes dry season" in {
     //todo: write a test here that will check that there is one Assignment event extracted
-    // that has two args: var - dry season and value the date range
+    // that has two args: var - dry season and val the date range
     val mentions = getMentions(sent21_12)
     mentions.filter(_.label matches "Assignment") should have size(1)
     for (m <- mentions.filter(_.label matches "Assignment")) {
@@ -969,7 +969,7 @@ class TestVariableReader extends Test {
   val sent21_13 = "with an average yield over years and seasons of 5 t ha-1"
   ignore should "recognize average yield amount" in {
     //todo: write a test here that will check that there is one Assignment event extracted
-    // that has two args: var - dry season and value the date range
+    // that has two args: var - yield and val the yield amount
     val mentions = getMentions(sent21_13)
     mentions.filter(_.label matches "Assignment") should have size(1)
     for (m <- mentions.filter(_.label matches "Assignment")) {
@@ -977,5 +977,45 @@ class TestVariableReader extends Test {
       m.arguments("value").head.norms.head should equal("5.0 t/ha")
     }
   }
+
+  val sent21_14 = "double cropping (growing rice iin the wet and dry seasons on the same field) is possible"
+  ignore should "identify yield amount" in {
+    //todo: write a test here that will check that there is one Assignment event extracted
+    // that has two args: var - growing and val rice
+    val mentions = getMentions(sent21_14)
+    mentions.filter(_.label matches "Assignment") should have size(1)
+    for (m <- mentions.filter(_.label matches "Assignment")) {
+      m.arguments("variable").head.label should be("growing")
+      m.arguments("value").head.norms.head should equal("rice")
+    }
+  }
+
+
+  val sent21_15 = "The potential grain yield that can be obtained ranges from 8 to 9 t ha-1 in the wet season and from 6 to 11 t ha-1 in the dry season"
+  ignore should "recognize two different average yield amount" in {
+    //todo: write a test here that will check that there two Assignments event extracted
+    // that have two args: var - grain  yield and val yield amount
+    val mentions = getMentions(sent21_15)
+    mentions.filter(_.label matches "Assignment") should have size(2)
+    var count = 0
+    for (m <- mentions.filter(_.label matches "Assignment")) {
+      if(count == 0) {
+        m.arguments("variable").head.text should be("grain yield")
+        m.arguments("value").head.text should equal("8.0 -- 9.0 t/ha")
+      } else if(count == 1) {
+        m.arguments("variable").head.text should be("grain yield")
+        m.arguments("value").head.text should equal("6.0 -- 11.0 t/ha")
+      }
+      count += 1
+    }
+  }
+
+
+
+
+
+
+
+
 
 }

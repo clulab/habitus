@@ -78,7 +78,6 @@
 
 #
 # VALUE ( VARIABLE )
-#   beyond September 15, 2020 (late sowing)
 #
 - name: ${label}-complex-date
   priority: ${rulepriority}
@@ -127,13 +126,15 @@
     @value:Value ","? (?<trigger> [lemma=be]) @variable:Variable
 
   # VARIABLE - VALUE, --> Yield: yield-amount.
-- name: ${label}-yield
-  priority: ${rulepriority}
-  Example: "with an average yield over years and seasons of 5 t ha-1"
-  label: ${label}
-  type: token
-  pattern: |
-    @variable:Variable ([lemma="yield"]) @value:Value
+#- name: ${label}-yield
+#  priority: ${rulepriority}
+#  Example: "with an average yield over years and seasons of 5 t ha-1"
+#  label: ${label}
+#  type: token
+#  pattern: |
+#    trigger = [lemma=yield] [tag = JJ]
+#    @variable:Yield
+#    @value:Value  [entity='B-MEASUREMENT'] [entity='I-MEASUREMENT']*
 
 
 
