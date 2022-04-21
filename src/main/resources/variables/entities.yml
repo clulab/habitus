@@ -52,6 +52,38 @@
   pattern: |
     /(?i)(fertilizer|input)/ /use|usage|application/?
 
+- name: variable-yield
+  priority: ${rulepriority}
+  label: Yield
+  type: token
+  pattern: |
+    /(?i)(average)/? /yield/
+
+# for extracting yield measurements
+- name: value-yield-amount
+  priority: ${rulepriority}
+  label: Value
+  type: token
+  pattern: |
+    [entity='B-MEASUREMENT'] [entity='I-MEASUREMENT']*
+    
+# for season extraction
+- name: farming-season
+  priority: ${rulepriority}
+  label: Variable
+  type: token
+  pattern: |
+    /(?i)(dry|wet|rainy|)/   [lemma = /\bseason\b/]
+
+  # for complex date extraction
+- name: complex-date
+  priority: ${higherpriority}
+  label: Value
+  type: token
+  pattern: |
+    @Value "/" @Value ("/" @Value)?
+
+
 - name: variable-crop
   priority: ${rulepriority}
   label: Variable

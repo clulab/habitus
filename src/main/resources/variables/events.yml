@@ -80,7 +80,7 @@
 # VALUE ( VARIABLE )
 #   beyond September 15, 2020 (late sowing)
 #
-- name: ${label}-parenthesis-2
+- name: ${label}-complex-date
   priority: ${rulepriority}
   label: ${label}
   type: token
@@ -125,6 +125,15 @@
   type: token
   pattern: |
     @value:Value ","? (?<trigger> [lemma=be]) @variable:Variable
+
+  # VARIABLE - VALUE, --> Yield: yield-amount.
+- name: ${label}-yield
+  priority: ${rulepriority}
+  Example: "with an average yield over years and seasons of 5 t ha-1"
+  label: ${label}
+  type: token
+  pattern: |
+    @variable:Variable ([lemma="yield"]) @value:Value
 
 
 
