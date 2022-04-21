@@ -27,34 +27,35 @@ class TestBeliefReader extends Test {
       parsingResults.targetMentions.filter(_.labels contains "Belief")
     }
 
+    def innerTest(index: Int): Unit = {
+      if (index == -1)
+        println("Put a breakpoint here to observe a particular test.")
+
+      val mentions = getMentions(text)
+      mentions should have size beliefs.length
+
+      mentions.zip(beliefs).zipWithIndex.foreach { case ((mention, belief), beliefIndex) =>
+        if (belief._1.nonEmpty) {
+          val believerMentions = mention.arguments(believerKey)
+          (beliefIndex, believerMentions.size) should be (beliefIndex, 1)
+          (beliefIndex, believerMentions.head.text) should be ((beliefIndex, belief._1))
+        }
+
+        val beliefMentions = mention.arguments("belief")
+        (beliefIndex, beliefMentions.size) should be ((beliefIndex, 1))
+        (beliefIndex, beliefMentions.head.text) should be ((beliefIndex, belief._2))
+      }
+    }
+
     def test(index: Int): Unit = {
       val title = s"process $index-$name correctly"
-      val code = () => {
-        if (index == 0)
-          println("Put a breakpoint here to observe a particular test.")
-
-        val mentions = getMentions(text)
-        mentions should have size beliefs.length
-
-        mentions.zip(beliefs).zipWithIndex.foreach { case ((mention, belief), beliefIndex) =>
-          if (belief._1.nonEmpty) {
-            val believerMentions = mention.arguments(believerKey)
-            (beliefIndex, believerMentions.size) should be (beliefIndex, 1)
-            (beliefIndex, believerMentions.head.text) should be ((beliefIndex, belief._1))
-          }
-
-          val beliefMentions = mention.arguments("belief")
-          (beliefIndex, beliefMentions.size) should be ((beliefIndex, 1))
-          (beliefIndex, beliefMentions.head.text) should be ((beliefIndex, belief._2))
-        }
-      }
 
       mode match {
-        case FAIL => failingTest should title in code()
-        case PASS => passingTest should title in code()
-        case IGNORE => ignore should title in code()
-        case DISCUSS => toDiscuss should title in code()
-        case BROKEN_SYNTAX => brokenSyntaxTest should title in code()
+        case FAIL => failingTest should title in innerTest(index)
+        case PASS => passingTest should title in innerTest(index)
+        case IGNORE => ignore should title in innerTest(index)
+        case DISCUSS => toDiscuss should title in innerTest(index)
+        case BROKEN_SYNTAX => brokenSyntaxTest should title in innerTest(index)
         case COMMENTED_OUT =>
         case _ => it should title in {
           throw new RuntimeException(s"The mode '$mode' is unrecognized.")
