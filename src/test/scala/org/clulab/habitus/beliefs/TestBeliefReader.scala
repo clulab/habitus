@@ -64,20 +64,14 @@ class TestBeliefReader extends Test {
     }
   }
 
-  class BelieverTest(mode: Int, name: String, text: String, beliefs: Seq[Belief])
-      extends BeliefTest(mode, name, text, beliefs, "believer")
-
   object BelieverTest {
-    def apply(mode: Int, name: String, text: String, beliefs: Seq[Belief]): BelieverTest =
-      new BelieverTest(mode, name, text, beliefs)
+    def apply(mode: Int, name: String, text: String, beliefs: Seq[Belief]): BeliefTest =
+        BeliefTest(mode, name, text, beliefs, "believer")
   }
 
-  class BeliefThemeTest(mode: Int, name: String, text: String, beliefs: Seq[Belief])
-      extends BeliefTest(mode, name, text, beliefs, "beliefTheme")
-
   object BeliefThemeTest {
-    def apply(mode: Int, name: String, text: String, beliefs: Seq[Belief]): BeliefThemeTest =
-      new BeliefThemeTest(mode, name, text, beliefs)
+    def apply(mode: Int, name: String, text: String, beliefs: Seq[Belief]): BeliefTest =
+        BeliefTest(mode, name, text, beliefs, "beliefTheme")
   }
 
   val beliefTests: Array[BeliefTest] = Array(
