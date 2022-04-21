@@ -87,6 +87,15 @@
     @value:Value (?<trigger> [lemma="("]) @variable:Variable [lemma=")"]
 
 
+##   planting season
+- name: ${label}-planting-season
+  priority: ${rulepriority}
+  label: ${label}
+  type: token
+  pattern: |
+    @variable:Variable (?<trigger> [lemma="("]) @value:Value [lemma= ")"]
+
+
 #
 # VARIABLE ranged|occurred from|between VALUE and VALUE
 # This is a syntactic/semantic pattern. Try to use such rules when you can. They generalize better!
@@ -125,16 +134,14 @@
   pattern: |
     @value:Value ","? (?<trigger> [lemma=be]) @variable:Variable
 
-  # VARIABLE - VALUE, --> Yield: yield-amount.
-#- name: ${label}-yield
-#  priority: ${rulepriority}
-#  Example: "with an average yield over years and seasons of 5 t ha-1"
-#  label: ${label}
-#  type: token
-#  pattern: |
-#    trigger = [lemma=yield] [tag = JJ]
-#    @variable:Yield
-#    @value:Value  [entity='B-MEASUREMENT'] [entity='I-MEASUREMENT']*
+# VARIABLE - VALUE, --> Yield: yield-amount.
+- name: ${label}-yield
+  priority: ${rulepriority}
+  Example: "with an average yield over years and seasons of 5 t ha-1"
+  label: ${label}
+  type: token
+  pattern: |
+    @variable:Yield  []+    @value:Value  
 
 
 
