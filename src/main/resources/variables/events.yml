@@ -128,7 +128,12 @@
 
 
 
-
+- name: ${label}-yield-event
+  priority: ${rulepriority}
+  label: ${label}
+  type: token
+  pattern: |
+    @variable:Yield []+ @value:Value
 
 
 

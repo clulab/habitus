@@ -59,6 +59,21 @@
   pattern: |
     /(?i)(crop|cultivar|cultivation|seed|sowed|sown|^plant|grown|growing|variety|varieties)/
 
+
+- name: measurement-rule
+  priority: ${rulepriority}
+  label: Value
+  type: token
+  pattern: |
+    [entity='B-MEASUREMENT'] [entity = 'I-MEASUREMENT']*
+
+- name: yield-rule
+  priority: ${rulepriority}
+  label: Yield
+  type: token
+  pattern: |
+    [lemma = "yield" & tag = /^NN/]
+
 ### Used for context extraction###
 - name: date-standalone-vars
   priority: ${rulepriority}
