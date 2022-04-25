@@ -3,6 +3,8 @@ package org.clulab.habitus.variables
 import org.clulab.habitus.utils.Test
 import org.clulab.odin.Mention
 
+import scala.collection
+
 class TestVariableReader extends Test {
   val vp: VariableProcessor = VariableProcessor()
 
@@ -48,70 +50,68 @@ class TestVariableReader extends Test {
 
   behavior of "VariableReader"
 
-<<<<<<< HEAD
-  val sent21_11 = "2 Others : cassava , melon , peanuts , eggplant , watermelon , pepper , carrot , cabbage , jaxatu , beans , bissap , banana plantation , fruit trees , white onion , cucumber , squash …"
-  sent21_11 should "not contain and events" in {
-    val mentions = getMentions(sent21_11)
-    mentions.filter(_.label matches "Assignment") should have size (0)
-  }
-
-  val sent21_12 = "These correspond to the dry season (from February/March to June/July)."
-  ignore should "recognize the date range that describes dry season" in {
-    //todo: write a test here that will check that there is one Assignment event extracted
-    // that has two args: var - dry season and val the date range
-    val mentions = getMentions(sent21_12)
-    mentions.filter(_.label matches "Assignment") should have size(1)
-    for (m <- mentions.filter(_.label matches "Assignment")) {
-      m.arguments("variable").head.label should be("DrySeason")
-      m.arguments("value").head.text should equal("from February/March to June/July")
-    }
-  }
-
-  val sent21_13 = "with an average yield over years and seasons of 5 t ha-1"
-  ignore should "recognize average yield amount" in {
-    //todo: write a test here that will check that there is one Assignment event extracted
-    // that has two args: var - yield and val the yield amount
-    val mentions = getMentions(sent21_13)
-    mentions.filter(_.label matches "Assignment") should have size(1)
-    for (m <- mentions.filter(_.label matches "Assignment")) {
-      m.arguments("variable").head.label should be("Yield")
-      m.arguments("value").head.norms.head should equal("5.0 t/ha")
-    }
-  }
-
-  val sent21_14 = "double cropping (growing rice iin the wet and dry seasons on the same field) is possible"
-  ignore should "identify yield amount" in {
-    //todo: write a test here that will check that there is one Assignment event extracted
-    // that has two args: var - growing and val rice
-    val mentions = getMentions(sent21_14)
-    mentions.filter(_.label matches "Assignment") should have size(1)
-    for (m <- mentions.filter(_.label matches "Assignment")) {
-      m.arguments("variable").head.label should be("growing")
-      m.arguments("value").head.norms.head should equal("rice")
-    }
-  }
-
-
-  val sent21_15 = "The potential grain yield that can be obtained ranges from 8 to 9 t ha-1 in the wet season and from 6 to 11 t ha-1 in the dry season"
-  ignore should "recognize two different average yield amount" in {
-    //todo: write a test here that will check that there two Assignments event extracted
-    // that have two args: var - grain  yield and val yield amount
-    val mentions = getMentions(sent21_15)
-    mentions.filter(_.label matches "Assignment") should have size(2)
-    var count = 0
-    for (m <- mentions.filter(_.label matches "Assignment")) {
-      if(count == 0) {
-        m.arguments("variable").head.text should be("grain yield")
-        m.arguments("value").head.text should equal("8.0 -- 9.0 t/ha")
-      } else if(count == 1) {
-        m.arguments("variable").head.text should be("grain yield")
-        m.arguments("value").head.text should equal("6.0 -- 11.0 t/ha")
-      }
-      count += 1
-    }
-  }
-
-
+//<<<<<<< HEAD
+//  val sent21_11 = "2 Others : cassava , melon , peanuts , eggplant , watermelon , pepper , carrot , cabbage , jaxatu , beans , bissap , banana plantation , fruit trees , white onion , cucumber , squash …"
+//  sent21_11 should "not contain and events" in {
+//    val mentions = getMentions(sent21_11)
+//    mentions.filter(_.label matches "Assignment") should have size (0)
+//  }
+//
+//  val sent21_12 = "These correspond to the dry season (from February/March to June/July)."
+//  ignore should "recognize the date range that describes dry season" in {
+//    //todo: write a test here that will check that there is one Assignment event extracted
+//    // that has two args: var - dry season and val the date range
+//    val mentions = getMentions(sent21_12)
+//    mentions.filter(_.label matches "Assignment") should have size(1)
+//    for (m <- mentions.filter(_.label matches "Assignment")) {
+//      m.arguments("variable").head.label should be("DrySeason")
+//      m.arguments("value").head.text should equal("from February/March to June/July")
+//    }
+//  }
+//
+//  val sent21_13 = "with an average yield over years and seasons of 5 t ha-1"
+//  ignore should "recognize average yield amount" in {
+//    //todo: write a test here that will check that there is one Assignment event extracted
+//    // that has two args: var - yield and val the yield amount
+//    val mentions = getMentions(sent21_13)
+//    mentions.filter(_.label matches "Assignment") should have size(1)
+//    for (m <- mentions.filter(_.label matches "Assignment")) {
+//      m.arguments("variable").head.label should be("Yield")
+//      m.arguments("value").head.norms.head should equal("5.0 t/ha")
+//    }
+//  }
+//
+//  val sent21_14 = "double cropping (growing rice iin the wet and dry seasons on the same field) is possible"
+//  ignore should "identify yield amount" in {
+//    //todo: write a test here that will check that there is one Assignment event extracted
+//    // that has two args: var - growing and val rice
+//    val mentions = getMentions(sent21_14)
+//    mentions.filter(_.label matches "Assignment") should have size(1)
+//    for (m <- mentions.filter(_.label matches "Assignment")) {
+//      m.arguments("variable").head.label should be("growing")
+//      m.arguments("value").head.norms.head should equal("rice")
+//    }
+//  }
+//
+//
+//  val sent21_15 = "The potential grain yield that can be obtained ranges from 8 to 9 t ha-1 in the wet season and from 6 to 11 t ha-1 in the dry season"
+//  ignore should "recognize two different average yield amount" in {
+//    //todo: write a test here that will check that there two Assignments event extracted
+//    // that have two args: var - grain  yield and val yield amount
+//    val mentions = getMentions(sent21_15)
+//    mentions.filter(_.label matches "Assignment") should have size(2)
+//    var count = 0
+//    for (m <- mentions.filter(_.label matches "Assignment")) {
+//      if(count == 0) {
+//        m.arguments("variable").head.text should be("grain yield")
+//        m.arguments("value").head.text should equal("8.0 -- 9.0 t/ha")
+//      } else if(count == 1) {
+//        m.arguments("variable").head.text should be("grain yield")
+//        m.arguments("value").head.text should equal("6.0 -- 11.0 t/ha")
+//      }
+//      count += 1
+//    }
+//  }
 
 
 
@@ -119,7 +119,9 @@ class TestVariableReader extends Test {
 
 
 
-=======
+
+
+//=======
   val variableTests: Array[VariableTest] = Array(
     // The CLU parser breaks on this one, but the SRL works fine!
     VariableTest(
@@ -454,9 +456,26 @@ class TestVariableReader extends Test {
     VariableTest(
       "sent21_11", "2 Others : cassava , melon , peanuts , eggplant , watermelon , pepper , carrot , cabbage , jaxatu , beans , bissap , banana plantation , fruit trees , white onion , cucumber , squash …",
       Seq.empty
-    )
+    ),
+    VariableTest(
+      "sent21_12", "These correspond to the dry season (from February/March to June/July).",
+      Seq(
+        ("dry season", Seq(("from February/March to June/July", "XXXX-02-XX -- ref-date"))),
+        ("dry season", Seq(("from February", "XXXX-02-XX -- ref-date"))),
+      )
+    ),
+    // entity test
+//    VariableTest(
+//      "sent21_13", "There has been high yield even in the dry season of every leap year",
+//      Seq(
+//        ("variable", Seq(("dry season", ""))),
+//        ("yield", Seq(("yield", "")))
+//      )
+//    )
+
   )
 
+
   variableTests.zipWithIndex.foreach { case (variableTest, index) => variableTest.test(index) }
->>>>>>> main
+//>>>>>>> main
 }
