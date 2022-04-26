@@ -58,6 +58,12 @@ class TestVariableReaderLabelBased extends Test {
       Seq(
         ("Yield", Seq(("5 t ha-1", "5.0 t/ha")))
       )
+    ),
+    VariableTest(
+      "sent2", "Farmers’ yields are on average between 4 and 5 t ha-1, and, therefore, far below potential yields. ",
+      Seq(
+        ("Yield", Seq(("between 4 and 5 t ha-1", "4.0 -- 5.0 t/ha")))
+      )
     )
   )
 

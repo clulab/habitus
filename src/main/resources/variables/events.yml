@@ -76,6 +76,7 @@
   pattern: |
     @variable:Variable [! (mention = "Value")]{, 4} (?<trigger> [lemma="("]) @value:Value (("," | "and")* @value:Value)*
 
+#Todo: Some event rule for assigning wet/dry seasons period to the respective labels.
 #
 # VALUE ( VARIABLE )
 #   beyond September 15, 2020 (late sowing)

@@ -12,6 +12,8 @@ taxonomy:
     - Fertilizer
     - Crop
     - Yield
+    - DrySeason
+    - WetSeason
   - Event:
     - Assignment
 
