@@ -108,7 +108,7 @@
   label: WetSeason
   type: token
   pattern: |
-    /(?i)(wet|rainy)/   [lemma = /\bseason\b/]
+    /(?i)(wet|rainy )/  [lemma = /\bseason\b/]
 
 - name: dry-season
   priority: ${rulepriority}

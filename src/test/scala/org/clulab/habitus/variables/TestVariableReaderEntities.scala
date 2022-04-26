@@ -42,12 +42,15 @@ class TestVariableReaderEntities extends Test {
     targetMentions.head.text should equal("Sahel 108")
   }
 
-//  val sent3 = "These correspond to the dry season (from February/March to June/July)."
-//  ignore should "recognize a complex date range" in {
-//    //todo: write a test here that will make sure that the date range "February/March to June/July" is extracted
-//    //(Note: since we will construct this range from smaller date text bound mentions, this range does not have to be the only one extracted
-//    //targetMention.head.text should equal ("some text")
-//  }
+  val sent3 = "These correspond to the dry season (from February/March to June/July)."
+  passingTest should "recognize dry season" in {
+    val mention = getMentions(sent3)
+    val targetMention = mention.filter(_.label matches "DrySeason")
+    targetMention should have size(1)
+    //todo: write a test here that will make sure that the date range "February/March to June/July" is extracted
+    //(Note: since we will construct this range from smaller date text bound mentions, this range does not have to be the only one extracted
+    targetMention.head.text should equal ("dry season")
+  }
 
   val sent4 = "Farmers’ yields are on average between 4 and 5 t ha-1, and, therefore, far below potential. "
   passingTest should "recognize a yield" in {
@@ -69,10 +72,60 @@ class TestVariableReaderEntities extends Test {
     }
     val targetMentionsLabelTexts = mentions.map(_.text)
     val desiredLabelTexts = Seq("yield", "wet season", "dry season")
-    desiredLabelTexts.foreach(d => targetMentionsLabelTexts should contain(d))
-
-
+    desiredLabelTexts.foreach(text => targetMentionsLabelTexts should contain(text))
   }
 
+  val sent6 = "Double cropping (growing rice in the wet season and dry season on the same field) is possible."
+  passingTest should "recognize two seasons" in {
+    val mentions = getMentions(sent6)
 
+    val targetLabels = Array("WetSeason", "DrySeason")
+    for (label <- targetLabels){
+      val targetMentions = mentions.filter(_.label ==  label)
+      targetMentions should have size (1)
+    }
+    val targetMentionsLabelTexts = mentions.map(_.text)
+    val desiredLabelTexts = Seq("wet season", "dry season")
+    desiredLabelTexts.foreach(text => targetMentionsLabelTexts should contain(text))
+  }
+
+  val sent7 = "irrigation rules resulted in great variability of irrigation frequency between fields, and sub-optimal timing of nitrogen fertilizer application resulted in yield losses"
+  passingTest should "identify yield" in {
+    val mentions = getMentions(sent7)
+    val targetMention = mentions.filter(_.label == "Yield")
+    //check the size of the mention
+    targetMention should have size(1)
+    // confirm extraction
+    targetMention.head.text should equal("yield")
+  }
+
+  val sent8 = "The potential yields of these three cultivars are similar and are on average about 8 to 9 t ha-1 in the wet season"
+  passingTest should "recognize yields and wet season" in {
+    val mentions = getMentions(sent8)
+
+    val targetLabels = Array("Yield", "WetSeason")
+    for (label <- targetLabels) {
+      val targetMentions = mentions.filter(_.label == label)
+      targetMentions should have size (1)
+    }
+    val targetMentionsLabelTexts = mentions.map(_.text)
+    val desiredLabelTexts = Seq("yields", "wet season")
+    desiredLabelTexts.foreach(text => targetMentionsLabelTexts should contain(text))
+  }
+
+  val sent9 = "in the 1999WS, with an average grain yield of 7.2 t ha–1. In the 2000WS"
+  passingTest should "find yield" in {
+    val mentions = getMentions(sent9)
+    val targetMention = mentions.filter(_.label matches "Yield")
+    targetMention should have size(1)
+    targetMention.head.text should equal("yield")
+  }
+
+  val sent10 = "the average grain yield was 8.2 t ha–1"
+  passingTest should "be able to find yield" in {
+    val mentions = getMentions(sent10)
+    val targetMention = mentions.filter(_.label matches "Yield")
+    targetMention should have size(1)
+    targetMention.head.text should equal("yield")
+  }
 }
