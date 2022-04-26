@@ -37,7 +37,7 @@ object RestoreCase extends App {
         }
         pw.print(sent.words(i))
       }
-      pw.println()
+      pw.println("\n")
     }
   }
 }
