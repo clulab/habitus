@@ -24,9 +24,10 @@ rules:
       # Here we make use of the ${rulepriority} variable
       # used in the entities.yml rules
       rulepriority: "2"
+      higherpriority: "3"
 
   - import: variables/events.yml
     vars:
       label: Assignment
-      rulepriority: "3+"
+      rulepriority: "4+"
 

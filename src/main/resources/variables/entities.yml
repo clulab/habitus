@@ -117,4 +117,11 @@
   pattern: |
     /(?i)(dry|hot)/  [lemma = /\bseason\b/]
 
+- name: complex-date
+  priority: ${higherpriority}
+  label: Value
+  type: token
+  pattern: |
+    @Value "/" @Value ("/" @Value)?
+
 

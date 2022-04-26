@@ -64,7 +64,25 @@ class TestVariableReaderLabelBased extends Test {
       Seq(
         ("Yield", Seq(("between 4 and 5 t ha-1", "4.0 -- 5.0 t/ha")))
       )
-    )
+    ),
+    VariableTest(
+      "sent3", "the average grain yield was 8.2 t ha–1",
+      Seq(
+        ("Yield", Seq(("8.2 t ha–1", "8.2 t/ha")))
+      )
+    ),
+    VariableTest(
+      "sent4", "in the 1999WS, with an average grain yield of 7.2 t ha–1. In the 2000WS",
+      Seq(
+        ("Yield", Seq(("7.2 t ha–1", "7.2 t/ha")))
+      )
+    ),
+//    VariableTest(
+//      "sent5", "These correspond to the dry season (from February/March to June/July)",
+//      Seq(
+//        ("DrySeason", Seq(("July", "XXXX-07-XX")))
+//      )
+//    )
   )
 
   variableTests.zipWithIndex.foreach { case (variableTest, index) => variableTest.test(index) }

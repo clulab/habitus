@@ -76,7 +76,6 @@
   pattern: |
     @variable:Variable [! (mention = "Value")]{, 4} (?<trigger> [lemma="("]) @value:Value (("," | "and")* @value:Value)*
 
-#Todo: Some event rule for assigning wet/dry seasons period to the respective labels.
 #
 # VALUE ( VARIABLE )
 #   beyond September 15, 2020 (late sowing)
@@ -127,8 +126,6 @@
   pattern: |
     @value:Value ","? (?<trigger> [lemma=be]) @variable:Variable
 
-
-
 - name: ${label}-yield-event
   priority: ${rulepriority}
   label: ${label}
@@ -136,5 +133,17 @@
   pattern: |
     @variable:Yield []+ @value:Value
 
+#Todo: Some event rule for assigning wet/dry seasons period to the respective labels.
+- name: ${label}-dry-season-event
+  priority: ${rulepriority}
+  label: ${label}
+  type: token
+  pattern: |
+    @variable:DrySeason []+? @value:Value
 
-
+- name: ${label}-wet-season-event
+  priority: ${rulepriority}
+  label: ${label}
+  type: token
+  pattern: |
+    @variable:WetSeason []+? @value:Value
