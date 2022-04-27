@@ -83,7 +83,39 @@ class TestVariableReaderLabelBased extends Test {
 //        ("DrySeason", Seq(("July", "XXXX-07-XX")))
 //      )
 //    )
+    VariableTest(
+      "sent5", "Potential rice grain yields (limited by solar radiation and temperature only) are on average about 9 t ha–1 in the wet growing season from July to November",
+      Seq(
+        ("Yield", Seq(("9 t ha–1", "9.0 t/ha"))),
+        ("WetSeason", Seq(("from July to November", "XXXX-07-XX -- XXXX-11-XX")))
+      )
+    ),
+    VariableTest(
+      "sent6", "actual average farmer yields are about 5 t ha–1 ",
+      Seq(
+        ("Yield", Seq(("5 t ha–1", "5.0 t/ha")))
+      )
+    ),
+    VariableTest(
+      "sent7", "The potential yields of these three cultivars are similar and are on average about 8 to 9 t ha-1 in the wet season",
+      Seq(
+        ("Yield", Seq(("5 t ha–1", "8.0 -- 9.0 t/ha")))
+      )
+    ),
+    VariableTest(
+      "sent8", "The potential grain yield that can be obtained ranges from 8 to 9 t ha-1 in the wet season (July sowing) and from 6 to 11 t ha-1 in the dry season (February sowing)",
+      Seq(
+        ("Yield", Seq(("8 to 9 t ha-1", "8.0 -- 9.0 t/ha"))),
+        ("Yield", Seq(("6 to 11 t ha-1", "6.0 -- 11.0 t/ha"))),
+        ("DrySeason", Seq(("February", "XXXX-02-XX"))),
+        ("WetSeason", Seq(("July", "XXXX-07-XX")))
+      )
+    )
+
+
+
   )
+
 
   variableTests.zipWithIndex.foreach { case (variableTest, index) => variableTest.test(index) }
 }

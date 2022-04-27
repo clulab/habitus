@@ -131,7 +131,7 @@
   label: ${label}
   type: token
   pattern: |
-    @variable:Yield []+ @value:Value
+    @variable:Yield []*? @value:Value
 
 #Todo: Some event rule for assigning wet/dry seasons period to the respective labels.
 - name: ${label}-dry-season-event
@@ -139,11 +139,12 @@
   label: ${label}
   type: token
   pattern: |
-    @variable:DrySeason []+? @value:Value
+    @variable:DrySeason []*? @value:Value
 
 - name: ${label}-wet-season-event
   priority: ${rulepriority}
   label: ${label}
   type: token
   pattern: |
-    @variable:WetSeason []+? @value:Value
+    @variable:WetSeason []*? @value:Value
+# using the []+ doesn't work for other cases.

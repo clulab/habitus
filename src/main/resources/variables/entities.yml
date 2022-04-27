@@ -108,14 +108,14 @@
   label: WetSeason
   type: token
   pattern: |
-    /(?i)(wet|rainy )/  [lemma = /\bseason\b/]
+    /(?i)(wet|rainy )/ []*? [lemma = /\bseason\b/]
 
 - name: dry-season
   priority: ${rulepriority}
   label: DrySeason
   type: token
   pattern: |
-    /(?i)(dry|hot)/  [lemma = /\bseason\b/]
+    /(?i)(dry|hot)/ []*? [lemma = /\bseason\b/]
 
 - name: complex-date
   priority: ${higherpriority}

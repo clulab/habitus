@@ -128,4 +128,25 @@ class TestVariableReaderEntities extends Test {
     targetMention should have size(1)
     targetMention.head.text should equal("yield")
   }
+  val sent11 = "irrigation rules resulted in great variability of irrigation frequency between fields, and sub-optimal timing of nitrogen fertilizer application resulted in yield losses"
+  passingTest should "be able identify yield" in {
+    val mentions = getMentions(sent11)
+    val targetMention = mentions.filter(_.label matches "Yield")
+    targetMention should have size(1)
+    targetMention.head.text should equal("yield")
+  }
+  val sent12 = "Average yield reached 7.2 t ha–1 in 1999 and 8.2 t ha–1 in 2000"
+  passingTest should "locate yield" in {
+    val mentions = getMentions(sent12)
+    val targetMention = mentions.filter(_.label matches "Yield")
+    targetMention should have size(1)
+    targetMention.head.text should equal("yield")
+  }
+  val sent13 = "Potential rice grain yields (limited by solar radiation and temperature only) are on average about 9 t ha–1 in the wet growing season from July to November"
+  passingTest should "locate yield" in {
+    val mentions = getMentions(sent13)
+    val targetMention = mentions.filter(_.label matches "Yield")
+    targetMention should have size (1)
+    targetMention.head.text should equal("yield")
+  }
 }
