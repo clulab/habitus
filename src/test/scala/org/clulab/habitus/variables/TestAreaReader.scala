@@ -1,10 +1,9 @@
 package org.clulab.habitus.variables
 
-import org.scalatest.FlatSpec
-import org.scalatest.Matchers
+import org.clulab.habitus.utils.Test
 import org.clulab.odin.Mention
 
-class TestAreaReader extends FlatSpec with Matchers {
+class TestAreaReader extends Test {
   val vp = VariableProcessor("/variables/master-areas.yml")
 
   def getMentions(text: String): Seq[Mention] = {
