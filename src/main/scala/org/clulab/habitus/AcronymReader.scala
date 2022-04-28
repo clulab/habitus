@@ -9,44 +9,6 @@ object AcronymReader extends App {
   val processor: HabitusProcessor = new HabitusProcessor(None)
   val files = FileUtils.findFiles(inputDir, ".txt")
 
-  trait Acronym {
-    def is(word: String): Boolean
-    def mk(word: String): String
-  }
-
-  object AllUpperAcronym extends Acronym {
-
-    def is(word: String): Boolean = {
-      // This will skip words with non-letters.
-      word.forall { letter => letter.isLetter && letter.isUpper }
-    }
-
-    def mk(word: String): String = {
-      word.toUpperCase
-    }
-  }
-
-  object OneUpperAcronym extends Acronym {
-
-    def is(word: String): Boolean = {
-      word.zipWithIndex.forall { case (char, index) =>
-        char.isLetter && ((index == 0 && char.isUpper) || (index != 0 && char.isLower))
-      }
-    }
-
-    def mk(word: String): String = {
-      val letters = word.zipWithIndex.map { case (char, index) =>
-        if (!char.isLetter)
-          char
-        else if (index == 0)
-          char.toUpper
-        else char.toLower
-      }
-
-      "" ++ letters
-    }
-  }
-
   def getAcronyms(acronym: Acronym, processor: Processor, text: String): Seq[(String, Int)] = {
     val document = processor.mkDocument(text)
     val wordsAndValids = document.sentences.flatMap { sentence =>
@@ -86,5 +48,43 @@ object AcronymReader extends App {
     oneUpperAndCount.foreach { case (allUpper, count) =>
       println(s"$allUpper\t$count")
     }
+  }
+}
+
+trait Acronym {
+  def is(word: String): Boolean
+  def mk(word: String): String
+}
+
+object AllUpperAcronym extends Acronym {
+
+  def is(word: String): Boolean = {
+    // This will skip words with non-letters.
+    word.forall { letter => letter.isLetter && letter.isUpper }
+  }
+
+  def mk(word: String): String = {
+    word.toUpperCase
+  }
+}
+
+object OneUpperAcronym extends Acronym {
+
+  def is(word: String): Boolean = {
+    word.zipWithIndex.forall { case (char, index) =>
+      char.isLetter && ((index == 0 && char.isUpper) || (index != 0 && char.isLower))
+    }
+  }
+
+  def mk(word: String): String = {
+    val letters = word.zipWithIndex.map { case (char, index) =>
+      if (!char.isLetter)
+        char
+      else if (index == 0)
+        char.toUpper
+      else char.toLower
+    }
+
+    "" ++ letters
   }
 }
