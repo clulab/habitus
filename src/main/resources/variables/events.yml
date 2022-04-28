@@ -131,7 +131,7 @@
   label: ${label}
   type: token
   pattern: |
-    @variable:Yield []*? @value:Value
+    @variable:Yield []*? @value:Value  ([]+? (","|"and") @value:Value)*
 
 #Todo: Some event rule for assigning wet/dry seasons period to the respective labels.
 - name: ${label}-dry-season-event

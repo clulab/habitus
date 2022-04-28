@@ -105,10 +105,9 @@ class TestVariableReaderLabelBased extends Test {
     VariableTest(
       "sent8", "The potential grain yield that can be obtained ranges from 8 to 9 t ha-1 in the wet season (July sowing) and from 6 to 11 t ha-1 in the dry season (February sowing)",
       Seq(
-        ("Yield", Seq(("8 to 9 t ha-1", "8.0 -- 9.0 t/ha"))),
-        ("Yield", Seq(("6 to 11 t ha-1", "6.0 -- 11.0 t/ha"))),
-        ("DrySeason", Seq(("February", "XXXX-02-XX"))),
-        ("WetSeason", Seq(("July", "XXXX-07-XX")))
+        ("Yield", Seq(("8 to 9 t ha-1", "8.0 -- 9.0 t/ha"), ("6 to 11 t ha-1", "6.0 -- 11.0 t/ha"))),
+        ("WetSeason", Seq(("July", "XXXX-07-XX"))),
+        ("DrySeason", Seq(("February", "XXXX-02-XX")))
       )
     )
 
