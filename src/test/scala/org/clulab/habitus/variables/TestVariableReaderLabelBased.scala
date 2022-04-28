@@ -109,7 +109,26 @@ class TestVariableReaderLabelBased extends Test {
         ("WetSeason", Seq(("July", "XXXX-07-XX"))),
         ("DrySeason", Seq(("February", "XXXX-02-XX")))
       )
-    )
+    ),
+    VariableTest(
+      "sent9", "The first rice crop is sown during the hot dry season (mostly in February) and the second crop during the wet season (mostly in July).",
+      Seq(
+        ("DrySeason", Seq(("February", "XXXX-02-XX"))),
+        ("WetSeason", Seq(("July", "XXXX-07-XX"))),
+      )
+    ),
+    VariableTest(
+      "sent10", "The average total amount of N applied was 141 kg ha-1",
+      Seq(
+        ("Fertilizer", Seq(("141 kg ha-1", "141.0 kg/ha"))),
+      )
+    ),
+    VariableTest(
+      "sent11", "Average yield was 4.8 t ha–1; ",
+      Seq(
+        ("Yield", Seq((" 4.8 t", "4.8 t/ha"))),
+      )
+    ),
 
 
 

@@ -148,3 +148,10 @@
   pattern: |
     @variable:WetSeason []*? @value:Value
 # using the []+ doesn't work for other cases.
+
+- name: ${label}-fertilizer-event
+  priority: ${rulepriority}
+  label: ${label}
+  type: token
+  pattern: |
+    @variable:Fertilizer []*? @value:Value
