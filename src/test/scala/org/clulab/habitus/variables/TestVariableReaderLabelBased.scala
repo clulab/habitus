@@ -129,6 +129,63 @@ class TestVariableReaderLabelBased extends Test {
         ("Yield", Seq((" 4.8 t", "4.8 t/ha"))),
       )
     ),
+    VariableTest(
+      "sent12", "Average yield reached 7.2 t ha–1 in 1999 and 8.2 t ha–1 in 2000",
+      Seq(
+        ("Yield", Seq(("7.2 t ha-1", "7.2 t/ha"), ("8.2 t ha-1", "8.2 t/ha")))
+      )
+    ),
+    VariableTest(
+      "sent13", "in the 1999WS, with an average grain yield of 7.2 t ha–1. In the 2000WS",
+      Seq(
+        ("Yield", Seq(("7.2 t ha-1", "7.2 t/ha")))
+      )
+    ),
+    VariableTest(
+      "sent14", "and potential yield was taken as 8 t/ha for both seasons in the middle valley",
+      Seq(
+        ("Yield", Seq(("8 t/ha", "8.0 t/ha")))
+      )
+    ),
+    VariableTest(
+      "sent15", "Seeding dates ranged from 22 August to 26 September in 2011WS, from 29 February to 1 April in the 2012DS, and from 5 to 23 March in the 2013DS",
+      Seq(
+        ("Variable", Seq(("from 29 February to 1 April", "XXXX-02-29 -- XXXX-04-01"))),
+        ("Variable", Seq(("from 5 to 23 March", "XXXX-03-05 -- XXXX-03-23"))),
+        ("Variable", Seq(("from 22 August to 26 September", "XXXX-08-22 -- XXXX-09-26")))
+      )
+    ),
+    VariableTest(
+      "sent16", "WS sowing in July and about 9–10 t ha−1 for dry season (DS) sowing in February in the Senegal River delta.",
+      Seq(
+        ("Variable", Seq(("July", "XXXX-07-XX"))),
+        ("Variable", Seq(("February", "XXXX-02-XX")))
+      )
+    ),
+    VariableTest(
+      "sent17", "Average WS T0 yield was high, i.e. 7.3 ha−1 (ranging from 5.0 to 9.4 t ha−1),",
+      Seq(
+        ("Yield", Seq(("7.3 ha", "7.3 ha"))),
+      )
+    ),
+    VariableTest(
+      "sent18", "considering the region’s potential yield of about 9 t ha−1.",
+      Seq(
+        ("Yield", Seq(("9 t", "9.0 t"))),
+      )
+    ),
+    VariableTest(
+      "sent19", "Average DS T0 yield was relatively low, i.e. 4.4 t ha− 1 (ranging from 2.5 to 6.0 t ha− 1)",
+      Seq(
+        ("Yield", Seq(("4.4 t", "4.4 t"))),
+      )
+    ),
+    VariableTest(
+      "sent20", "Average yields in SRV theoretically range between 5.0 and 6.0 t ha− 1 in the rainy season and between 6.5 and 7.5 t ha− 1 in the dry season",
+      Seq(
+        ("Yield", Seq(("between 5.0 and 6.0 t", "5.0 -- 6.0 t"), ("between 6.5 and 7.5 t", "6.5 -- 7.5 t"))),
+      )
+    ),
 
 
 

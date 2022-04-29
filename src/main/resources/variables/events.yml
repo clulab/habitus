@@ -139,7 +139,7 @@
   label: ${label}
   type: token
   pattern: |
-    @variable:DrySeason []*? @value:Value
+    @variable:DrySeason ([]*? @value:Value)
 
 - name: ${label}-wet-season-event
   priority: ${rulepriority}
