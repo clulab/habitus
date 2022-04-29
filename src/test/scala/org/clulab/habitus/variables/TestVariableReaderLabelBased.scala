@@ -186,6 +186,18 @@ class TestVariableReaderLabelBased extends Test {
         ("Yield", Seq(("between 5.0 and 6.0 t", "5.0 -- 6.0 t"), ("between 6.5 and 7.5 t", "6.5 -- 7.5 t"))),
       )
     ),
+    VariableTest(
+      "sent21", "seeds of the rice variety Sahel 108 are sown, a short- cycle variety (around 125 days) ",
+      Seq(
+        ("Variable", Seq(("Sahel 108", ""))),
+      )
+    ),
+    VariableTest(
+      "sent22", "average yields for the two seasons assessed of 4832 kg ha− 1 and 7425 kg ha− 1 for the areas under CONV and INT management, respectively.",
+      Seq(
+        ("Yield", Seq(("4832 kg", "4832.0 kg"), ("7425 kg", "7425.0 kg"))),
+      )
+    ),
 
 
 
