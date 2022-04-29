@@ -12,6 +12,10 @@ object AcronymReader extends App {
   def getAcronyms(acronym: Acronym, processor: Processor, text: String): Seq[(String, Int)] = {
     val document = processor.mkDocument(text)
     val wordsAndValids = document.sentences.flatMap { sentence =>
+      // Find the first and all subsequent words that start with a lowercase letter
+      // which indicates they are in a valid environment and showing their true case.
+      // This doesn't work in a heading in which prepositions are not capitalized,
+      // for instance.  One could skip over them.  One might also skip "a" and "the".
       val valids = sentence.words.scanLeft(false) { case (lowerSeen, word) =>
         lowerSeen || (word.head.isLetter && word.head.isLower)
       }.drop(1)
