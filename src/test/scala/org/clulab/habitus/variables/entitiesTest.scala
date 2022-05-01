@@ -4,19 +4,18 @@ import org.clulab.habitus.utils.Test
 import org.clulab.odin.Mention
 
 class entitiesTest extends Test {
-  // checks Assignment mentions:
+  // checks entity mentions:
   // the variable argument should be a text bound mention of the correct label
-  // the value argument should have a correct norm
+  // the value argument should have the correct expected extraction.
   val vp: VariableProcessor = VariableProcessor()
 
-  // (variableLabel, Seq[(valueText, valueNorm)])
-  // So if one mention has multiple values, write Seq((valueText1, valueNorm1), (valueText2, valueNorm2), ...)
-//  type Variable = (String, Seq[String])
-
   case class VariableTest(
-                           name: String, text: String, labelExpected: Array[String],
-                           // If there are multiple "Assignment" mentions, use one variable for each and multiple lines.
-//                           variables: Seq[Variable]
+                           name: String,
+                         // Text for extraction
+                           text: String,
+                         // Expected label extraction; a text can have multiple extractions for multiple labels.
+                           labelExpected: Array[String],
+                          // Expected values from text extraction.
                           expectedTextValue: Array[String]
                          ) {
 
@@ -31,30 +30,22 @@ class entitiesTest extends Test {
       it should s"process $index-$name correctly" in {
         if (index == -1)
           println("Put a breakpoint here to observe a particular test.")
+
+        // get all mentions from text
         val mentions = getMentions(text)
+
+        // filter mentions by expected labels
         for (label <- labelExpected){
           val targetMentions =  mentions.filter(_.label matches  label)
           targetMentions should have size (1)
         }
+        // I think I would need a better way to map ONLY extracted values. For now, here is what I am able to do.
+        // I do not know how to use "append" like in python, I could have append ONLY extracted
+        // entities to `targetMentionsLabelTexts` from the `for loop above` and check for their existence in the last line.
         val targetMentionsLabelTexts = mentions.map(_.text)
         val desiredLabelTexts = expectedTextValue
         desiredLabelTexts.foreach(text => targetMentionsLabelTexts should contain(text))
 
-
-//        mentions should have size variables.length
-//
-//        variables.zip(mentions).zipWithIndex.foreach { case ((variable, mention), variableIndex) =>
-//          (variableIndex, mention.arguments("variable").head.label) should be((variableIndex, variable._1))
-//
-//          val values = variable._2
-//          val arguments = mention.arguments("value")
-//
-//          arguments should have size values.length
-//          values.zip(arguments).zipWithIndex.foreach { case ((value, argument), valueIndex) =>
-//            // not checking text right now, just the norm
-//            //            (variableIndex, valueIndex, argument.text) should be ((variableIndex, valueIndex, value._1))
-//            (variableIndex, valueIndex, argument.norms.get.head) should be ((variableIndex, valueIndex, value._2))
-//          }
         }
       }
   }
@@ -67,7 +58,26 @@ class entitiesTest extends Test {
       "with an average yield over years and seasons of 5 t ha-1",
       Array("Yield"),
       Array("yield")
-    )
+    ),
+    VariableTest(
+      "sent2",
+      "The potential grain yield that can be obtained ranges from 8 to 9 t ha-1 in the wet season (July sowing) and from 6 to 11 t ha-1 in the dry season (February sowing)",
+      Array("Yield","WetSeason", "DrySeason"),
+      Array("yield", "wet season", "dry season")
+    ),
+    VariableTest(
+      "sent3",
+      "Double cropping (growing rice in the wet season and dry season on the same field) is possible.",
+      Array("WetSeason", "DrySeason"),
+      Array("wet season", "dry season")
+    ),
+    VariableTest(
+      "sent4",
+      "irrigation rules resulted in great variability of irrigation frequency between fields, and sub-optimal timing of nitrogen fertilizer application resulted in yield losses",
+      Array("Yield"),
+      Array("yield")
+    ),
+
 
 
   )
