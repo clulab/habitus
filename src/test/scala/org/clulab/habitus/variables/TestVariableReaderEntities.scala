@@ -18,7 +18,7 @@ class TestVariableReaderEntities extends Test {
 
   val sent1 = "The Senegal River Valley, located in Sahel zone, is one of the major irrigated rice-producing areas in Senegal. "
   passingTest should "recognize three locations" in {
-    // extractio mentions
+    // extraction mentions
     val mentions = getMentions(sent1)
     // get mentions that we are interested in in this test based on the label ("Location")
     val targetMentions = mentions.filter(_.label matches "Location")
