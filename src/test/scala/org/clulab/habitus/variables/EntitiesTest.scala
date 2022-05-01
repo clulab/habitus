@@ -3,7 +3,7 @@ package org.clulab.habitus.variables
 import org.clulab.habitus.utils.Test
 import org.clulab.odin.Mention
 
-class entitiesTest extends Test {
+class EntitiesTest extends Test {
   // checks entity mentions:
   // the variable argument should be a text bound mention of the correct label
   // the value argument should have the correct expected extraction.
@@ -11,12 +11,12 @@ class entitiesTest extends Test {
 
   case class VariableTest(
                            name: String,
-                         // Text for extraction
+                           // Text for extraction
                            text: String,
-                         // Expected label extraction; a text can have multiple extractions for multiple labels.
+                           // Expected label extraction; a text can have multiple extractions for multiple labels.
                            labelExpected: Array[String],
-                          // Expected values from text extraction.
-                          expectedTextValue: Array[String]
+                           // Expected values from text extraction.
+                           expectedTextValue: Array[String]
                          ) {
 
     def getMentions(text: String): Seq[Mention] = {
@@ -46,8 +46,8 @@ class entitiesTest extends Test {
         val desiredLabelTexts = expectedTextValue
         desiredLabelTexts.foreach(text => targetMentionsLabelTexts should contain(text))
 
-        }
       }
+    }
   }
 
   behavior of "VariableReader Entities"
