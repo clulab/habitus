@@ -19,40 +19,41 @@
 
 - name: variable-sowing
   priority: ${rulepriority}
-  label: Variable
+  label: Planting
   type: token
   pattern: |
     ([lemma=/early|late/])? /(?i)(^planting|sowing|seeding)/ /date|season|time|timing/?
 
 - name: variable-bird-attacks
   priority: ${rulepriority}
-  label: Variable
+  label: BirdAttack
   type: token
   pattern: |
     /(?i)(^bird|avian)/ [lemma=/attack/]
 
 - name: fertilizer-values-from-lexicon
   priority: ${rulepriority}
-  label: Value
+  label: Fertilizer
   type: token
   pattern: |
     [entity='B-FERTILIZER'] [entity='I-FERTILIZER']*
 
-# this will be removed
-- name: crop-values-from-lexicon
-  priority: ${rulepriority}
-  label: Value
-  type: token
-  pattern: |
-    [entity='B-CROP'] [entity='I-CROP']*
+# this will be removed - already have an event like this below
+#- name: crop-values-from-lexicon
+#  priority: ${rulepriority}
+#  label: Crop
+#  type: token
+#  pattern: |
+#    [entity='B-CROP'] [entity='I-CROP']*
 
 - name: variable-fertilizer
   priority: ${rulepriority}
-  label: Variable
+  label: FertilizerUse
   type: token
   pattern: |
     /(?i)(fertilizer|input)/ /use|usage|application/?
 
+# todo: unclear what to do with this; at least split
 - name: variable-crop
   priority: ${rulepriority}
   label: Variable
@@ -75,7 +76,6 @@
   pattern: |
     [lemma = "yield" & tag = /^NN/]
 
-### Used for context extraction###
 - name: date-standalone-vars
   priority: ${rulepriority}
   label: Date

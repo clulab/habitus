@@ -2,19 +2,26 @@
 # VARIABLE is VALUE
 # This is a token pattern. Try not to use them. But they are simpler for copulative verbs ("be" verbs)
 #
+#- name: ${label}-cop-1
+#  priority: ${rulepriority}
+#  label: ${label}
+#  type: token
+#  pattern: |
+#    @variable:Entity [tag=/VBN|IN/]? (?<trigger> [lemma=be]) (","? @value:Value)+ ","? ("and" @value:Value)?
+
 - name: ${label}-cop-1
-  priority: ${rulepriority} 
-  label: ${label} 
+  priority: ${rulepriority}
+  label: PlantingDate
   type: token
   pattern: |
-    @variable:Variable [tag=/VBN|IN/]? (?<trigger> [lemma=be]) (","? @value:Value)+ ","? ("and" @value:Value)?
+    @variable:Entity [tag=/VBN|IN/]? (?<trigger> [lemma=be]) (","? @value:Value)+ ","? ("and" @value:Value)?
 
 - name: ${label}-cop-2
   priority: ${rulepriority}
-  label: ${label}
+  label: PlantingDate
   type: token
   pattern: |
-    (?<trigger> [lemma=with])? @variable:Variable (("," | "and")* @value:Value)+
+    (?<trigger> [lemma=with])? @variable:Entity (("," | "and")* @value:Value)+
 
 #                              
 # VARIABLE ranged|occurred on VALUE
@@ -25,7 +32,7 @@
   graph: "hybrid"
   pattern: |
     trigger = [lemma=/range|occur|use|contain|be|happen|start/ & tag=/^V|^J/]
-    variable:Variable = /nsubj|dobj|nsubjpass|nmod_as/
+    variable:Entity = /nsubj|dobj|nsubjpass|nmod_as/
     value:Value = /nmod_on|nmod_in|nmod_such_as|nmod_than|nmod_like|Ax_on|Ax_in/
 
 #
@@ -37,7 +44,7 @@
   label: ${label}
   type: token
   pattern: |
-    @variable:Variable (?<trigger> [lemma=/on|in/]) @value:Value
+    @variable:Entity (?<trigger> [lemma=/on|in/]) @value:Value
 
 
 
@@ -50,7 +57,7 @@
   graph: "hybrid"
   pattern: |
     trigger = [lemma=be]
-    variable:Variable = <cop
+    variable:Entity = <cop
     value:Value = <cop nsubj
 
 
@@ -60,7 +67,7 @@
   graph: "hybrid"
   pattern: |
     trigger = [lemma=/include|be/]
-    variable:Variable = /nsubj/
+    variable:Entity = /nsubj/
     value:Value = /dobj/
 
 
@@ -71,10 +78,10 @@
 #
 - name: ${label}-parenthesis-1
   priority: ${rulepriority}
-  label: ${label}
+  label: PlantingDate
   type: token
   pattern: |
-    @variable:Variable [! (mention = "Value")]{, 4} (?<trigger> [lemma="("]) @value:Value (("," | "and")* @value:Value)*
+    @variable:Entity [! (mention = "Value")]{, 4} (?<trigger> [lemma="("]) @value:Value (("," | "and")* @value:Value)*
 
 #
 # VALUE ( VARIABLE )
@@ -85,7 +92,7 @@
   label: ${label}
   type: token
   pattern: |
-    @value:Value (?<trigger> [lemma="("]) @variable:Variable [lemma=")"]
+    @value:Value (?<trigger> [lemma="("]) @variable:Entity [lemma=")"]
 
 
 #
@@ -98,7 +105,7 @@
   graph: "hybrid"
   pattern: |
     trigger = [lemma=/range|occur|be/ & tag=/^V|^J/]
-    variable:Variable = /nsubj|dobj/
+    variable:Entity = /nsubj|dobj/
     value:Value = /nmod_from|nmod_between|nmod_like|Ax_from|Ax_between/
 
 # 
@@ -112,7 +119,7 @@
   Example: sowing was done on 25th October
   type: token
   pattern: |
-    @variable:Variable (?<trigger> [lemma=be]) [tag=/VBN|IN/] ("on"? @value:Value)+ 
+    @variable:Entity (?<trigger> [lemma=be]) [tag=/VBN|IN/] ("on"? @value:Value)+ 
 
 
 #
@@ -124,7 +131,7 @@
   Example: "Between the date of February 15 to March 15 , 2020 , are sown 66 % areas developed"
   type: token
   pattern: |
-    @value:Value ","? (?<trigger> [lemma=be]) @variable:Variable
+    @value:Value ","? (?<trigger> [lemma=be]) @variable:Entity
 
 
 

@@ -10,10 +10,19 @@ taxonomy:
     - Date
     - Location
     - Fertilizer
+    - FertilizerUse
     - Crop
     - Yield
+    - Planting
+    - BirdAttack
   - Event:
     - Assignment
+    - BirdAttackEvent
+    - CropAssignment
+    - FertilizerAssignment
+    - PlantingEvent
+    - PlantingDate
+
 
 rules:
   - import: variables/entities.yml
