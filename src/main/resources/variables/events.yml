@@ -26,7 +26,7 @@
   pattern: |
     trigger = [lemma=/range|occur|use|contain|be|happen|start/ & tag=/^V|^J/]
     variable:Variable = /nsubj|dobj|nsubjpass|nmod_as/
-    value:Value = /nmod_on|nmod_in|nmod_such_as|nmod_than|nmod_like|Ax_on|Ax_in/
+    value:Value = /dobj/? /nmod_on|nmod_in|nmod_such_as|nmod_than|nmod_like|Ax_on|Ax_in/
 
 #
 # VARIABLE on|in VALUE
