@@ -1,3 +1,21 @@
+
+- name: ${label}-cop-2
+  priority: ${rulepriority}
+  label: PlantingDate
+  type: token
+  pattern: |
+    (?<trigger> [lemma=with])? @variable:Entity (("," | "and")* @value:Value)+
+
+
+- name: ${label}-range-1
+  priority: ${rulepriority}
+  label: PlantingDate
+  graph: "hybrid"
+  pattern: |
+    trigger = [lemma=/range|occur|be/ & tag=/^V|^J/]
+    variable:Entity = /nsubj|dobj/
+    value:Value = /nmod_from|nmod_between|nmod_like|Ax_from|Ax_between/
+
 #
 # VARIABLE is VALUE
 # This is a token pattern. Try not to use them. But they are simpler for copulative verbs ("be" verbs)
@@ -8,139 +26,139 @@
 #  type: token
 #  pattern: |
 #    @variable:Entity [tag=/VBN|IN/]? (?<trigger> [lemma=be]) (","? @value:Value)+ ","? ("and" @value:Value)?
-
-- name: ${label}-cop-1
-  priority: ${rulepriority}
-  label: PlantingDate
-  type: token
-  pattern: |
-    @variable:Entity [tag=/VBN|IN/]? (?<trigger> [lemma=be]) (","? @value:Value)+ ","? ("and" @value:Value)?
-
-- name: ${label}-cop-2
-  priority: ${rulepriority}
-  label: PlantingDate
-  type: token
-  pattern: |
-    (?<trigger> [lemma=with])? @variable:Entity (("," | "and")* @value:Value)+
-
-#                              
-# VARIABLE ranged|occurred on VALUE
 #
-- name: ${label}-cop-3
-  priority: ${rulepriority}
-  label: ${label}
-  graph: "hybrid"
-  pattern: |
-    trigger = [lemma=/range|occur|use|contain|be|happen|start/ & tag=/^V|^J/]
-    variable:Entity = /nsubj|dobj|nsubjpass|nmod_as/
-    value:Value = /nmod_on|nmod_in|nmod_such_as|nmod_than|nmod_like|Ax_on|Ax_in/
-
+#- name: ${label}-cop-1
+#  priority: ${rulepriority}
+#  label: PlantingDate
+#  type: token
+#  pattern: |
+#    @variable:Entity [tag=/VBN|IN/]? (?<trigger> [lemma=be]) (","? @value:Value)+ ","? ("and" @value:Value)?
 #
-# VARIABLE on|in VALUE
-# This is a token pattern. Try not to use them. But they are simpler for copulative verbs ("be" verbs)
+#- name: ${label}-cop-2
+#  priority: ${rulepriority}
+#  label: PlantingDate
+#  type: token
+#  pattern: |
+#    (?<trigger> [lemma=with])? @variable:Entity (("," | "and")* @value:Value)+
 #
-- name: ${label}-cop-4
-  priority: ${rulepriority}
-  label: ${label}
-  type: token
-  pattern: |
-    @variable:Entity (?<trigger> [lemma=/on|in/]) @value:Value
-
-
-
+##
+## VARIABLE ranged|occurred on VALUE
+##
+#- name: ${label}-cop-3
+#  priority: ${rulepriority}
+#  label: ${label}
+#  graph: "hybrid"
+#  pattern: |
+#    trigger = [lemma=/range|occur|use|contain|be|happen|start/ & tag=/^V|^J/]
+#    variable:Entity = /nsubj|dobj|nsubjpass|nmod_as/
+#    value:Value = /nmod_on|nmod_in|nmod_such_as|nmod_than|nmod_like|Ax_on|Ax_in/
 #
-# Syntactic rule for crops 
+##
+## VARIABLE on|in VALUE
+## This is a token pattern. Try not to use them. But they are simpler for copulative verbs ("be" verbs)
+##
+#- name: ${label}-cop-4
+#  priority: ${rulepriority}
+#  label: ${label}
+#  type: token
+#  pattern: |
+#    @variable:Entity (?<trigger> [lemma=/on|in/]) @value:Value
 #
-- name: ${label}-cop-5                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
-  priority: ${rulepriority}
-  label: ${label}
-  graph: "hybrid"
-  pattern: |
-    trigger = [lemma=be]
-    variable:Entity = <cop
-    value:Value = <cop nsubj
-
-
-- name: ${label}-cop-6
-  priority: ${rulepriority}
-  label: ${label}
-  graph: "hybrid"
-  pattern: |
-    trigger = [lemma=/include|be/]
-    variable:Entity = /nsubj/
-    value:Value = /dobj/
-
-
 #
-# VARIABLE ( VALUE
-#   sowing (before Aug 15
-#   crops (maize, millet, and sorghum)
 #
-- name: ${label}-parenthesis-1
-  priority: ${rulepriority}
-  label: PlantingDate
-  type: token
-  pattern: |
-    @variable:Entity [! (mention = "Value")]{, 4} (?<trigger> [lemma="("]) @value:Value (("," | "and")* @value:Value)*
-
+##
+## Syntactic rule for crops
+##
+#- name: ${label}-cop-5
+#  priority: ${rulepriority}
+#  label: ${label}
+#  graph: "hybrid"
+#  pattern: |
+#    trigger = [lemma=be]
+#    variable:Entity = <cop
+#    value:Value = <cop nsubj
 #
-# VALUE ( VARIABLE )
-#   beyond September 15, 2020 (late sowing)
 #
-- name: ${label}-parenthesis-2
-  priority: ${rulepriority}
-  label: ${label}
-  type: token
-  pattern: |
-    @value:Value (?<trigger> [lemma="("]) @variable:Entity [lemma=")"]
-
-
+#- name: ${label}-cop-6
+#  priority: ${rulepriority}
+#  label: ${label}
+#  graph: "hybrid"
+#  pattern: |
+#    trigger = [lemma=/include|be/]
+#    variable:Entity = /nsubj/
+#    value:Value = /dobj/
 #
-# VARIABLE ranged|occurred from|between VALUE and VALUE
-# This is a syntactic/semantic pattern. Try to use such rules when you can. They generalize better!
 #
-- name: ${label}-range-1
-  priority: ${rulepriority}
-  label: ${label}
-  graph: "hybrid"
-  pattern: |
-    trigger = [lemma=/range|occur|be/ & tag=/^V|^J/]
-    variable:Entity = /nsubj|dobj/
-    value:Value = /nmod_from|nmod_between|nmod_like|Ax_from|Ax_between/
-
-# 
-# VARIABLE be[past participle] on VALUE
-# This is a token pattern.
+##
+## VARIABLE ( VALUE
+##   sowing (before Aug 15
+##   crops (maize, millet, and sorghum)
+##
+#- name: ${label}-parenthesis-1
+#  priority: ${rulepriority}
+#  label: PlantingDate
+#  type: token
+#  pattern: |
+#    @variable:Entity [! (mention = "Value")]{, 4} (?<trigger> [lemma="("]) @value:Value (("," | "and")* @value:Value)*
 #
-
-- name: ${label}-cop-8
-  priority: ${rulepriority} 
-  label: ${label} 
-  Example: sowing was done on 25th October
-  type: token
-  pattern: |
-    @variable:Entity (?<trigger> [lemma=be]) [tag=/VBN|IN/] ("on"? @value:Value)+ 
-
-
+##
+## VALUE ( VARIABLE )
+##   beyond September 15, 2020 (late sowing)
+##
+#- name: ${label}-parenthesis-2
+#  priority: ${rulepriority}
+#  label: ${label}
+#  type: token
+#  pattern: |
+#    @value:Value (?<trigger> [lemma="("]) @variable:Entity [lemma=")"]
 #
-# VALUE , be VARIABLE
 #
-- name: ${label}-cop-9
-  priority: ${rulepriority} 
-  label: ${label} 
-  Example: "Between the date of February 15 to March 15 , 2020 , are sown 66 % areas developed"
-  type: token
-  pattern: |
-    @value:Value ","? (?<trigger> [lemma=be]) @variable:Entity
-
-
-
-- name: ${label}-yield-event
-  priority: ${rulepriority}
-  label: ${label}
-  type: token
-  pattern: |
-    @variable:Yield []+ @value:Value
-
-
-
+##
+## VARIABLE ranged|occurred from|between VALUE and VALUE
+## This is a syntactic/semantic pattern. Try to use such rules when you can. They generalize better!
+##
+#- name: ${label}-range-1
+#  priority: ${rulepriority}
+#  label: ${label}
+#  graph: "hybrid"
+#  pattern: |
+#    trigger = [lemma=/range|occur|be/ & tag=/^V|^J/]
+#    variable:Entity = /nsubj|dobj/
+#    value:Value = /nmod_from|nmod_between|nmod_like|Ax_from|Ax_between/
+#
+##
+## VARIABLE be[past participle] on VALUE
+## This is a token pattern.
+##
+#
+#- name: ${label}-cop-8
+#  priority: ${rulepriority}
+#  label: ${label}
+#  Example: sowing was done on 25th October
+#  type: token
+#  pattern: |
+#    @variable:Entity (?<trigger> [lemma=be]) [tag=/VBN|IN/] ("on"? @value:Value)+
+#
+#
+##
+## VALUE , be VARIABLE
+##
+#- name: ${label}-cop-9
+#  priority: ${rulepriority}
+#  label: ${label}
+#  Example: "Between the date of February 15 to March 15 , 2020 , are sown 66 % areas developed"
+#  type: token
+#  pattern: |
+#    @value:Value ","? (?<trigger> [lemma=be]) @variable:Entity
+#
+#
+#
+#- name: ${label}-yield-event
+#  priority: ${rulepriority}
+#  label: ${label}
+#  type: token
+#  pattern: |
+#    @variable:Yield []+ @value:Value
+#
+#
+#

@@ -109,15 +109,24 @@ class HabitusActions extends Actions {
   def removeRedundantVariableMentions(mentions: Seq[Mention]): Seq[Mention] = {
     // if there are multiple mentions of with the same value, pick one
     val toReturn = new ArrayBuffer[Mention]()
-    val (targetMentions, other) = mentions.partition(_.label == "Assignment")
+//    val (targetMentions, other) = mentions.partition(_.label == "Assignment")
+    // the action applies to mentions extracted with var reader relation/event rules, so we exclude tbms and include a value argument
+    val (targetMentions, other) = mentions.partition(m => !m.isInstanceOf[TextBoundMention] & m.arguments.keys.toList.contains("value"))
+
+
     val groupedBySent = targetMentions.groupBy(_.sentence)
     for (sentGroup <- groupedBySent) {
-        val groupedByValue = sentGroup._2.groupBy(_.arguments("value").head.text)
+      // only pick out of those with the same label
+      val groupedByLabel = sentGroup._2.groupBy(_.label)
+      for (labelGroup <- groupedByLabel) {
+        val groupedByValue = labelGroup._2.groupBy(_.arguments("value").head.text)
         for (valueGroup <- groupedByValue) {
           // pick the one where the variable is closest to the value
           val menToKeep = closestVar(valueGroup._2)
           toReturn.append(menToKeep)
+          }
         }
+
       }
     toReturn ++ other
   }
