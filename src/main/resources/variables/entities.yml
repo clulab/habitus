@@ -38,6 +38,7 @@
   pattern: |
     [entity='B-FERTILIZER'] [entity='I-FERTILIZER']*
 
+# this will be removed
 - name: crop-values-from-lexicon
   priority: ${rulepriority}
   label: Value
