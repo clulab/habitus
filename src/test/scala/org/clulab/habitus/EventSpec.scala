@@ -1,9 +1,9 @@
 package org.clulab.habitus
 
-import org.scalatest._
 import ai.lum.odinson._
+import org.clulab.habitus.utils.Test
 
-class EventSpec extends FlatSpec with Matchers {
+class EventSpec extends Test {
 
   def testEventTrigger(m: OdinsonMatch, start: Int, end: Int): Unit = {
     val trigger = m match {
