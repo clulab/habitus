@@ -30,6 +30,7 @@ out/
 mentions.json
 mentions.jsonl
 mentions.tsv
+mentions-value_variable.tsv
 
 # docker
 docker/bin/
