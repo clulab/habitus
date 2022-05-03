@@ -29,23 +29,18 @@ class EntitiesTest extends Test {
     }
 
     def test(index: Int): Unit = {
-      it should s"process $index-$name correctly" in {
+      it should s"filter by correct label(s) and value size of sent $index-$name correctly" in {
         if (index == -1)
           println("Put a breakpoint here to observe a particular test.")
 
         // get all mentions from text
         val mentions = getMentions(text)
 
-        // filter mentions by expected labels
-//        for (label <- labelExpected){
-//          val targetMentions =  mentions.filter(_.label matches  label)
-//          targetMentions should have size (1)
-//        }
         // zip label with expected sizes.
-        val labelTextSize = labelExpected zip requiredSize
+        val labelSizeCouple = labelExpected zip requiredSize
 
-        for ( (label, size) <- labelTextSize){
-          // Get an empty list
+        for ( (label, size) <- labelSizeCouple){
+          // Create an empty list for new mentions.
           val newMentions = new ArrayBuffer[String]()
 
           // loop through all mentions and map text to required labels
@@ -60,21 +55,6 @@ class EntitiesTest extends Test {
           // check existence of required text in newMention
           newMentions.foreach(text => newMentions should contain(text))
         }
-//        val mentionText = mentions.map(_.text)
-//        val mentionText = mentions.map(m => m.text)
-//        val newMentions = new ArrayBuffer[String]()
-//        for (m <- mentions){
-//          if (m.label == "Crop")
-//            newMentions.append(m.text)
-//        }
-
-        // I think I would need a better way to map ONLY extracted values. For now, here is what I am able to do.
-        // I do not know how to use "append" like in python, I could have append ONLY extracted
-        // entities to `targetMentionsLabelTexts` from the `for loop above` and check for their existence in the last line.
-//        val targetMentionsLabelTexts = mentions.map(_.text)
-//        val desiredLabelTexts = expectedTextValue
-//        desiredLabelTexts.foreach(text => targetMentionsLabelTexts should contain(text))
-
       }
     }
   }
@@ -103,10 +83,63 @@ class EntitiesTest extends Test {
     VariableTest(
       "sent4",
       "irrigation rules resulted in great variability of irrigation frequency between fields, and sub-optimal timing of nitrogen fertilizer application resulted in yield losses",
-      Array("Yield"),
-      Array(1)
+      Array("Value", "Yield", "Fertilizer", "Variable"),
+      Array(1, 1, 1, 1)
     ),
-
+    VariableTest(
+      "sent5",
+      "The potential yields of these three cultivars are similar and are on average about 8 to 9 t ha-1 in the wet season",
+      Array("Value","Variable", "WetSeason", "Yield"),
+      Array(1, 1, 1, 1)
+    ),
+    VariableTest(
+      "sent6",
+      "in the 1999WS, with an average grain yield of 7.2 t ha–1. In the 2000WS",
+      Array("Value", "Yield"),
+      Array(1, 1)
+    ),
+    VariableTest(
+      "sent7",
+      "the average grain yield was 8.2 t ha–1",
+      Array("Value", "Yield"),
+      Array(1, 1)
+    ),
+    VariableTest(
+      "sent8",
+      "Average yield reached 7.2 t ha–1 in 1999 and 8.2 t ha–1 in 2000",
+      Array("Value", "Yield"),
+      Array(4, 1)
+    ),
+    VariableTest(
+      "sent9",
+      "Potential rice grain yields (limited by solar radiation and temperature only) are on average about 9 t ha–1 in the wet growing season from July to November",
+      Array("Value", "Yield", "Variable", "WetSeason"),
+      Array(3, 1, 1, 1)
+    ),
+    VariableTest(
+      "sent10",
+      "The Senegal River Valley, located in Sahel zone, is one of the major irrigated rice-producing areas in Senegal.",
+      Array("Location"),
+      Array(3)
+    ),
+    VariableTest(
+      "sent11",
+      "In all scenarios, Sahel 108 variety is sown.",
+      Array("Value", "Variable"),
+      Array(1, 2)
+    ),
+    VariableTest(
+      "sent12",
+      "These correspond to the dry season (from February/March to June/July).",
+      Array("Value", "Date", "DrySeason"),
+      Array(5, 1, 1)
+    ),
+    VariableTest(
+      "sent13",
+      "Farmers’ yields are on average between 4 and 5 t ha-1, and, therefore, far below potential.",
+      Array("Value", "Yield"),
+      Array(1, 1)
+    ),
 
 
   )
