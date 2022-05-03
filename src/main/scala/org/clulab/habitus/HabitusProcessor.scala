@@ -13,8 +13,16 @@ class HabitusProcessor(lexiconNer: Option[LexiconNER]) extends CluProcessor(opti
 
   /** Our own mkDocument, which removes some malformed sentences */
   override def mkDocument(text: String, keepText: Boolean = false): Document = {
-    val doc = super.mkDocument(text, keepText)
-    removeBadSentences(doc)
+    val oldDoc = super.mkDocument(text, keepText)
+    val newDoc = removeBadSentences(oldDoc)
+    newDoc
+  }
+
+  def mkDocumentWithRestoreCase(text: String, keepText: Boolean = false): Document = {
+    val oldDoc = super.mkDocument(text, keepText)
+    val newDoc = removeBadSentences(oldDoc)
+    restoreCase(newDoc)
+    newDoc
   }
 
   private def removeBadSentences(doc: Document): Document = {
@@ -33,7 +41,10 @@ class HabitusProcessor(lexiconNer: Option[LexiconNER]) extends CluProcessor(opti
     * malformed= either > 150 tokens or
     * more than 50% of tokens are numbers */
   private def isBadSentence(sentence: Sentence): Boolean = {
-    val isBad = sentence.words.length > 150 || getAlphaCount(sentence) < sentence.words.length / 2
+    val isBad =
+        sentence.words.length <= 2 ||
+        150 < sentence.words.length ||
+        getAlphaCount(sentence) < sentence.words.length / 2
     // println(s"isBad = $isBad")
     isBad
   }

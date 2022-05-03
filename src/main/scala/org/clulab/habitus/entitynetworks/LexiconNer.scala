@@ -42,7 +42,7 @@ object LexiconNer extends App {
       for(i <- words.indices) {
         pw.println(words(i) + "\t" + entities(i))
       }
-      pw.println()
+      pw.println("\n")
     }
   }
 
@@ -61,7 +61,7 @@ object LexiconNer extends App {
       sentence = new ArrayBuffer[String]()
     } else {
       val bits = line.trim.split("\\s+")
-      sentence += bits(0)
+      sentence ++= bits
     }
   }
   if(sentence.nonEmpty) {
