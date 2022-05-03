@@ -2,6 +2,19 @@
 #
 # rules for the variables and values
 #
+- name: noun-rule
+  priority: ${lowpriority}
+  label: Noun
+  type: token
+  pattern: |
+    [tag=/^NN/]
+
+- name: noun-phrase-rule
+  priority: ${lowpriority}
+  label: NounPhrase
+  type: token
+  pattern: |
+    [chunk = /B-NP/] [chunk = /I-NP/]+
 
 - name: value-from-daterange
   priority: ${rulepriority}
@@ -17,12 +30,19 @@
   pattern: |
     [entity='B-DATE'] [entity='I-DATE']*
 
-- name: variable-sowing
+- name: nominal-sowing
   priority: ${rulepriority}
   label: Planting
   type: token
   pattern: |
     ([lemma=/early|late/])? /(?i)(^planting|sowing|seeding)/ /date|season|time|timing/?
+
+- name: verbal-sowing
+  priority: ${rulepriority}
+  label: Planting
+  type: token
+  pattern: |
+    [lemma = /(plant|sow|seed)/  & tag = /^VB/] 
 
 - name: variable-bird-attacks
   priority: ${rulepriority}
@@ -46,6 +66,8 @@
 #  pattern: |
 #    [entity='B-CROP'] [entity='I-CROP']*
 
+
+
 - name: variable-fertilizer
   priority: ${rulepriority}
   label: FertilizerUse
@@ -54,13 +76,26 @@
     /(?i)(fertilizer|input)/ /use|usage|application/?
 
 # todo: unclear what to do with this; at least split
-- name: variable-crop
+#- name: variable-crop
+#  priority: ${rulepriority}
+#  label: Variable
+#  type: token
+#  pattern: |
+#    /(?i)(crop|cultivar|cultivation|seed|sowed|sown|^plant|grown|growing|variety|varieties)/
+
+- name: generic-crop-rule
   priority: ${rulepriority}
-  label: Variable
+  label: GenericCrop
   type: token
   pattern: |
-    /(?i)(crop|cultivar|cultivation|seed|sowed|sown|^plant|grown|growing|variety|varieties)/
+    /(?i)(crop|cultivar|seed|variety|varieties)/
 
+- name: generic-fertilizer-rule
+  priority: ${rulepriority}
+  label: GenericFertilizer
+  type: token
+  pattern: |
+    /(?i)fertilizer/
 
 - name: measurement-rule
   priority: ${rulepriority}

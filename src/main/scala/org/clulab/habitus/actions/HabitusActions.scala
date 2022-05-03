@@ -1,6 +1,8 @@
 package org.clulab.habitus.actions
 
-import org.clulab.odin.{Actions, EventMention, Mention, RelationMention, State, TextBoundMention, mkTokenInterval}
+import org.clulab.odin.{Actions, Attachment, EventMention, Mention, RelationMention, State, SynPath, TextBoundMention, mkTokenInterval}
+import org.clulab.processors.Document
+import org.clulab.struct.Interval
 
 import scala.collection.mutable.ArrayBuffer
 
@@ -161,4 +163,28 @@ class HabitusActions extends Actions {
     }
     toReturn
   }
+
+  def FertilizerEventToRelation(mentions: Seq[Mention]): Seq[Mention] = {
+    val toReturn = new ArrayBuffer[Mention]()
+    for (m <- mentions) {
+      val variableArg = m.asInstanceOf[EventMention].trigger
+      val valueArg = m.arguments("value").head
+      val sortedArgs = Seq(variableArg, valueArg).sortBy(_.tokenInterval)
+      val newTokenInterval = Interval(sortedArgs.head.tokenInterval.start, sortedArgs.last.tokenInterval.end)
+      val newMention = new RelationMention(
+        labels = m.labels,
+        tokenInterval = newTokenInterval,
+        arguments = Map("variable" -> Seq(variableArg), "value" -> Seq(valueArg)),
+        paths = m.paths,
+        sentence = m.sentence,
+        document = m.document,
+        keep = m.keep,
+        foundBy = m.foundBy,
+        attachments = Set.empty
+      )
+      toReturn.append(newMention)
+    }
+    toReturn
+  }
+
 }

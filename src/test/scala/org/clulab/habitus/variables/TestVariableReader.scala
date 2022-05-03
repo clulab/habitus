@@ -25,9 +25,11 @@ class TestVariableReader extends Test {
     def test(index: Int): Unit = {
       it should s"process $index-$name correctly" in {
         if (index == -1)
+
           println("Put a breakpoint here to observe a particular test.")
 
-        val mentions = getMentions(text).filter(_.label matches label)
+        val allmentions = getMentions(text)
+        val mentions = allmentions.filter(_.label matches label)
         if (label == "None") {
           // get only relations and events
           val nonTextBoundMentions = mentions.filter(m => !m.isInstanceOf[TextBoundMention])
@@ -94,7 +96,7 @@ class TestVariableReader extends Test {
     VariableTest(
       "sent7", "Planting occurred on October 2.",
       "PlantingDate",
-      Seq(("PlantingEvent", Seq(("October 2", "XXXX-10-02"))))
+      Seq(("Planting", Seq(("October 2", "XXXX-10-02"))))
     ),
     VariableTest(
       "sent8", "Planting date was October 4, 2019",
@@ -227,11 +229,11 @@ class TestVariableReader extends Test {
       "CropAssignment",
       Seq(("plant", Seq(("Sahel 108", ""))))
     ),
-    // todo: move to entity test, just check if crops are extracted as Crop
+    // checking extraction of crop not in the lexicon
     VariableTest(
-      "sent16_1", "Some farmers use variety like Sahel 108",
+      "sent16_1", "Some farmers use variety like buckwheat",
       "CropAssignment",
-      Seq(("variety", Seq(("Sahel 108", ""))))
+      Seq(("variety", Seq(("buckwheat", ""))))
     ),
     // todo: move to entity test, just check if crops are extracted as Crop
     VariableTest(
@@ -259,9 +261,9 @@ class TestVariableReader extends Test {
     ),
     // todo: move to entity test, just check if crops are extracted as Crop
     VariableTest(
-      "sent16_2_3", "Farmers preferred to use short duration rice varieties like Sahel 108",
+      "sent16_2_3", "Farmers preferred to use short duration varieties like buckwheat",
       "CropAssignment",
-      Seq(("varieties", Seq(("Sahel 108", ""))))
+      Seq(("varieties", Seq(("buckwheat", ""))))
     ),
     // todo: move to entity test, just check if crops are extracted as Crop
     VariableTest(
@@ -349,7 +351,7 @@ class TestVariableReader extends Test {
     VariableTest(
       "sent20", "One of the most important farming input is mineral fertilizer",
       "FertilizerAssignment",
-      Seq(("input", Seq(("mineral", ""))))
+      Seq(("fertilizer", Seq(("mineral", ""))))
     ),
     // todo: test for Fertilizer Entity
     VariableTest(
@@ -396,7 +398,7 @@ class TestVariableReader extends Test {
     VariableTest(
       "sent20_6", "Total fertilizer usage was ammonium poly-phosphate on average 152 kg ha-1 in the 1999 and 2000WS",
       "FertilizerUse",
-      Seq(("fertilizer usage", Seq(("ammonium poly-phosphate", ""))))
+      Seq(("fertilizer", Seq(("ammonium poly-phosphate", ""))))
     ),
     // todo: entity test
     VariableTest(

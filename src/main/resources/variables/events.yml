@@ -1,22 +1,191 @@
 
-- name: ${label}-cop-2
+### Crop assignment rules
+# used for finding crops that are not in the lexicon
+
+- name: crop-assignment-cop-1
+  priority: ${rulepriority}
+  label: CropAssignment
+  graph: "hybrid"
+  example: "The most important crop is buckwheat"
+  pattern: |
+    trigger = [lemma = "be"]
+    variable:GenericCrop = <cop /nsubj/
+    value:Noun = <cop 
+
+- name: crop-assignment-cop-2
+  priority: ${rulepriority}
+  label: CropAssignment
+  graph: "hybrid"
+  example: "Buckwheat is the most important crop"
+  pattern: |
+    trigger = [lemma = "be"]
+    variable:GenericCrop = <cop 
+    value:Noun = <cop /nsubj/
+
+- name: crop-assignment-cop-3
+  priority: ${rulepriority}
+  label: CropAssignment
+  example: "Some farmers use variety like buckwheat. They chose furthermore to grow only one cultivar buckwheat."
+  graph: "hybrid"
+  pattern: |
+    trigger = [lemma=/use|plant|grow|harvest/ & tag=/^V/]
+    variable:GenericCrop = /dobj/ 
+    value:Noun = /nmod_such_as|nmod_like/ 
+
+# These are a little less useful since they only work if the crop has been previously extracted
+- name: crop-assignment-verb
+  priority: ${rulepriority}
+  label: CropAssignment
+  example: "Most farmers in the SRV plant Sahel 108"
+  type: token
+  pattern: |
+    (?<variable>[lemma = /plant|grow/]) /.*/{3} @value:Crop
+
+- name: crop-assignment-cop-4
+  priority: ${rulepriority}
+  label: CropAssignment
+  example: "Other crops cultivated include millet"
+  graph: "hybrid"
+  pattern: |
+    trigger = [lemma=/include|be/]
+    variable:GenericCrop = /nsubj/
+    value:Crop = /dobj/
+
+- name: crop-assignment-cop-5
+  priority: ${rulepriority}
+  label: ${label}
+  type: token
+  pattern: |
+    @variable:GenericCrop (?<trigger> [lemma=/on|in|beyond/])? @value:Crop
+
+### Planting date rules
+
+- name: planting-date-cop-1
   priority: ${rulepriority}
   label: PlantingDate
   type: token
   pattern: |
-    (?<trigger> [lemma=with])? @variable:Entity (("," | "and")* @value:Value)+
+    @variable:Planting [tag=/VBN|IN/]? (?<trigger> [lemma=be]) (","? @value:Value)+ ","? ("and" @value:Value)?
 
+- name: planting-date-cop-3
+  priority: ${rulepriority}
+  label: PlantingDate
+  graph: "hybrid"
+  pattern: |
+    trigger = [lemma=/range|occur|use|contain|be|happen|start/ & tag=/^V|^J/]
+    variable:Planting = /nsubj|dobj|nsubjpass|nmod_as/
+    value:Value = /nmod_on|nmod_in|nmod_such_as|nmod_than|nmod_like|Ax_on|Ax_in/
 
-- name: ${label}-range-1
+- name: planting-date-cop-4
+  priority: ${rulepriority}
+  label: PlantingDate
+  type: token
+  pattern: |
+    @variable:Planting (?<trigger> [lemma=/on|in/])? @value:Value
+
+- name: planting-date-cop-8
+  priority: ${rulepriority}
+  label: PlantingDate
+  Example: sowing was done on 25th October
+  type: token
+  pattern: |
+    @variable:Planting (?<trigger> [lemma=be]) [tag=/VBN|IN/] ("on"? @value:Value)+
+
+- name: planting-date-parenthesis-1
+  priority: ${rulepriority}
+  label: PlantingDate
+  type: token
+  pattern: |
+    @variable:Planting [! (mention = "Value")]{, 4} (?<trigger> [lemma="("]) @value:Value (("," | "and")* @value:Value)*
+
+- name: planting-date-parenthesis-2
+  priority: ${rulepriority}
+  label: PlantingDate
+  type: token
+  pattern: |
+    @value:Value (?<trigger> [lemma="("]) @variable:Planting [lemma=")"]
+
+- name: planting-date-range-1
   priority: ${rulepriority}
   label: PlantingDate
   graph: "hybrid"
   pattern: |
     trigger = [lemma=/range|occur|be/ & tag=/^V|^J/]
-    variable:Entity = /nsubj|dobj/
+    variable:Planting = /nsubj|dobj/
     value:Value = /nmod_from|nmod_between|nmod_like|Ax_from|Ax_between/
 
-#
+
+### Planting Events (incl crop and possibly time)
+
+- name: planting-event
+  priority: ${rulepriority}
+  label: PlantingEvent
+  example: "In the 1998WS , farmers sowed Jaya between 20 June and 1 July"
+  type: token
+  pattern: |
+    @variable:Planting @value:Crop @value:Value?
+    
+
+### Bird attack events
+
+- name: bird-attach
+  priority: ${rulepriority}
+  label: BirdAttackEvent
+  graph: "hybrid"
+  pattern: |
+    trigger = [lemma=/happen|occur|be/ & tag=/^V/]
+    variable:BirdAttack = /nsubj|dobj/
+    value:Value = /nmod_from|nmod_between|Ax_from|Ax_between|nmod_on|nmod_in/  
+
+### Ferilizer events
+
+- name: fertilizer-cop-1
+  priority: ${rulepriority}
+  label: FertilizerAssignment
+  type: token
+  example: "The nitrogenous chemical fertilizers are urea , calcium , ammonium nitrate , ammonium sulfate , basic calcium nitrate , calcium cyanamide"
+  pattern: |
+    @variable:GenericFertilizer [tag=/VBN|IN/]? (?<trigger> [lemma=be]) (","? @value:Fertilizer)+ ","? ("and" @value:Fertilizer)?
+
+- name: fertilizer-nnp
+  priority: ${rulepriority}
+  label: FertilizerAssignment
+  type: token
+  example: "In fact , use of fertilizer P has declined steadily since 1995"
+  pattern: |
+    @variable:GenericFertilizer (?<value> [tag = "NNP"])
+
+- name: fertilizer-compound
+  priority: ${rulepriority}
+  label: FertilizerAssignment
+  graph: "hybrid"
+  example: "In fact , use of fertilizer P has declined steadily since 1995. One of the most important farming input is mineral fertilizer."
+  action: FertilizerEventToRelation
+  pattern: |
+    trigger = @GenericFertilizer
+    value:Noun = (</compound/ | /compound/) [!lemma = /usage/]
+
+- name: fertilizer-cop-2
+  priority: ${rulepriority}
+  label: FertilizerAssignment
+  graph: "hybrid"
+  example: "Phosphorus , potassium and NPK are important inorganic fertilizers."
+  pattern: |
+    trigger = [lemma=be]
+    variable:GenericFertilizer = <cop
+    value:Fertilizer = <cop nsubj
+
+- name: fertilizer-cop-3
+  priority: ${rulepriority}
+  label: FertilizerAssignment
+  example: "Some organic fertilizers include nitrogen , phosphorus , and potassium as the three most important elements for plant nutrition"
+  graph: "hybrid"
+  pattern: |
+    trigger = [lemma=/include|be/]
+    variable:GenericFertilizer = /nsubj/
+    value:Fertilizer = /dobj/
+
+
 # VARIABLE is VALUE
 # This is a token pattern. Try not to use them. But they are simpler for copulative verbs ("be" verbs)
 #
