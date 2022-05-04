@@ -1,7 +1,9 @@
 
 #
 # rules for the variables and values
-#
+
+# can be used to extract entities (e.g., crops and fertilizers) not in the lexicon
+# using nouns instead of noun phrases to avoid capturing modifiers; downside: missing parts of compound entities
 - name: noun-rule
   priority: ${lowpriority}
   label: Noun
@@ -9,26 +11,20 @@
   pattern: |
     [tag=/^NN/]
 
-- name: noun-phrase-rule
-  priority: ${lowpriority}
-  label: NounPhrase
-  type: token
-  pattern: |
-    [chunk = /B-NP/] [chunk = /I-NP/]+
-
-- name: value-from-daterange
+### These will act as variables in various assignment events ###
+- name: generic-crop-rule
   priority: ${rulepriority}
-  label: Value
+  label: GenericCrop
   type: token
   pattern: |
-    [entity='B-DATE-RANGE'] [entity='I-DATE-RANGE']*
+    /(?i)(crop|cultivar|cultivation|seed|variety|varieties)/
 
-- name: value-from-date
+- name: generic-fertilizer-rule
   priority: ${rulepriority}
-  label: Value
+  label: GenericFertilizer
   type: token
   pattern: |
-    [entity='B-DATE'] [entity='I-DATE']*
+    /(?i)fertilizer/
 
 - name: nominal-sowing
   priority: ${rulepriority}
@@ -44,70 +40,12 @@
   pattern: |
     [lemma = /plant|sow|seed/  & tag = /^VB/] 
 
-- name: variable-bird-attacks
-  priority: ${rulepriority}
-  label: BirdAttack
-  type: token
-  pattern: |
-    /(?i)(^bird|avian)/ [lemma=/attack/]
-
-- name: fertilizer-values-from-lexicon
-  priority: ${rulepriority}
-  label: Fertilizer
-  type: token
-  pattern: |
-    [entity='B-FERTILIZER'] [entity='I-FERTILIZER']*
-
-# this will be removed - already have an event like this below
-#- name: crop-values-from-lexicon
-#  priority: ${rulepriority}
-#  label: Crop
-#  type: token
-#  pattern: |
-#    [entity='B-CROP'] [entity='I-CROP']*
-
-- name: crop-values-from-lexicon
-  priority: ${rulepriority}
-  label: Value
-  type: token
-  pattern: |
-    [entity='B-CROP'] [entity='I-CROP']*
-
 - name: variable-fertilizer
   priority: ${rulepriority}
   label: FertilizerUse
   type: token
   pattern: |
     /(?i)(fertilizer|input)/ /use|usage|application/?
-
-# todo: unclear what to do with this; at least split
-#- name: variable-crop
-#  priority: ${rulepriority}
-#  label: Variable
-#  type: token
-#  pattern: |
-#    /(?i)(crop|cultivar|cultivation|seed|sowed|sown|^plant|grown|growing|variety|varieties)/
-
-- name: generic-crop-rule
-  priority: ${rulepriority}
-  label: GenericCrop
-  type: token
-  pattern: |
-    /(?i)(crop|cultivar|seed|variety|varieties)/
-
-- name: generic-fertilizer-rule
-  priority: ${rulepriority}
-  label: GenericFertilizer
-  type: token
-  pattern: |
-    /(?i)fertilizer/
-
-- name: measurement-rule
-  priority: ${rulepriority}
-  label: Value
-  type: token
-  pattern: |
-    [entity='B-MEASUREMENT'] [entity = 'I-MEASUREMENT']*
 
 - name: yield-rule
   priority: ${rulepriority}
@@ -116,6 +54,53 @@
   pattern: |
     [lemma = "yield" & tag = /^NN/]
 
+- name: variable-bird-attacks
+  priority: ${rulepriority}
+  label: BirdAttack
+  type: token
+  pattern: |
+    /(?i)(^bird|avian)/ [lemma=/attack/]
+
+### Values ###
+# todo: make values more specific, e.g., Date, Amount?
+- name: value-from-date
+  priority: ${rulepriority}
+  label: Value
+  type: token
+  pattern: |
+    [entity='B-DATE'] [entity='I-DATE']*
+
+- name: value-from-daterange
+  priority: ${rulepriority}
+  label: Value
+  type: token
+  pattern: |
+    [entity='B-DATE-RANGE'] [entity='I-DATE-RANGE']*
+
+- name: measurement-rule
+  priority: ${rulepriority}
+  label: Value
+  type: token
+  pattern: |
+    [entity='B-MEASUREMENT'] [entity = 'I-MEASUREMENT']*
+
+
+### These are not Value tbms, but they will be used as value args in assignment events
+- name: fertilizer-values-from-lexicon
+  priority: ${rulepriority}
+  label: Fertilizer
+  type: token
+  pattern: |
+    [entity='B-FERTILIZER'] [entity='I-FERTILIZER']*
+
+- name: crop-values-from-lexicon-vars
+  priority: ${rulepriority}
+  label: Crop
+  type: token
+  pattern: |
+    [entity='B-CROP'] [entity='I-CROP']*
+
+### These are used for identifying context
 - name: date-standalone-vars
   priority: ${rulepriority}
   label: Date
@@ -129,20 +114,6 @@
   type: token
   pattern: |
     [entity='B-LOC'] [entity='I-LOC']*
-
-- name: fertilizer-values-from-lexicon-vars
-  priority: ${rulepriority}
-  label: Fertilizer
-  type: token
-  pattern: |
-    [entity='B-FERTILIZER'] [entity='I-FERTILIZER']*
-
-- name: crop-values-from-lexicon-vars
-  priority: ${rulepriority}
-  label: Crop
-  type: token
-  pattern: |
-    [entity='B-CROP'] [entity='I-CROP']*
 
 
 

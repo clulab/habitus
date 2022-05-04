@@ -30,17 +30,13 @@ class TestVariableReader extends Test {
 
         val allmentions = getMentions(text)
         val mentions = allmentions.filter(_.label matches label).sortBy(_.tokenInterval)
-        if (label == "None") {
+        if (variables.isEmpty) {
           // get only relations and events
           val nonTextBoundMentions = mentions.filter(m => !m.isInstanceOf[TextBoundMention])
           // there should be none
           nonTextBoundMentions.length should be (0)
         } else {
-          if (name == "sent20_5_2") { //sent16_4_2
-            for (m <- mentions) {
-              println("m: " + m.label + " " + m.text + " " + m + " " + m.foundBy)
-            }
-          }
+
           mentions should have size variables.length
 
           variables.zip(mentions).zipWithIndex.foreach { case ((variable, mention), variableIndex) =>
@@ -220,63 +216,51 @@ class TestVariableReader extends Test {
       Seq(("Sowing", Seq(("after July 15", "XXXX-07-15 -- XXXX-XX-XX"))))
     ),
     // Tests for CULTIVARS
-    // todo: this should be an entity test for peanut to be extracted as a Crop; if we write rules for extracting new (non-lexicon-ed) crops as events
-    //  and then converting them to TBMs, then we will want to have more crop tbm texts with different relevant syntax and with some crop that is not in
-    // the lexicon, e.g., buckwheat (same thing for all crop and fertilizer entity-like tests in this file)
     VariableTest(
       "sent16", "The most important planted cash crop is peanut in the SRV.",
       "CropAssignment",
       Seq(("crop", Seq(("peanut", ""))))
     ),
-    // todo: move to entity test, just check if crops are extracted as Crop
     VariableTest(
       "sent16_0", "Most farmers in the SRV plant Sahel 108",
       "CropAssignment",
       Seq(("plant", Seq(("Sahel 108", ""))))
     ),
-    // checking extraction of crop not in the lexicon
     VariableTest(
-      "sent16_1", "Some farmers use variety like buckwheat",
+      "sent16_1", "Some farmers use variety like Sahel 108",
       "CropAssignment",
-      Seq(("variety", Seq(("buckwheat", ""))))
+      Seq(("variety", Seq(("Sahel 108", ""))))
     ),
-    // todo: move to entity test, just check if crops are extracted as Crop
     VariableTest(
       "sent16_2", "The productivity of a range of agricultural crops beyond rice",
       "CropAssignment",
       Seq(("crops", Seq(("rice", ""))))
     ),
-    // todo: move to entity test, just check if crops are extracted as Crop
     VariableTest(
       "sent16_3", "In the SRV where irrigated rice is the most common grown crop",
       "CropAssignment",
       Seq(("crop", Seq(("rice", ""))))
     ),
-    // todo: move to entity test, just check if crops are extracted as Crop
     VariableTest(
       "sent16_2_1", "Farmers use cultivar such as sugarcane which are planted on 80 and 20 percent of total area",
       "CropAssignment",
       Seq(("cultivar", Seq(("sugarcane", ""))))
     ),
-    // todo: move to entity test, just check if crops are extracted as Crop
     VariableTest(
       "sent16_2_2", "AfricaRice, a CGIAR research center, developed the seed Sahel 108",
       "CropAssignment",
       Seq(("seed", Seq(("Sahel 108", ""))))
     ),
-    // todo: move to entity test, just check if crops are extracted as Crop
     VariableTest(
-      "sent16_2_3", "Farmers preferred to use short duration varieties like buckwheat",
+      "sent16_2_3", "Farmers preferred to use short duration varieties like Sahel 108",
       "CropAssignment",
-      Seq(("varieties", Seq(("buckwheat", ""))))
+      Seq(("varieties", Seq(("Sahel 108", ""))))
     ),
-    // todo: move to entity test, just check if crops are extracted as Crop
     VariableTest(
       "sent16_2_4", "Other crops cultivated include millet",
       "CropAssignment",
       Seq(("crops", Seq(("millet", ""))))
     ),
-    // todo: move to entity test, just check if crops are extracted as Crop
     VariableTest(
       "sent16_3_1", "Other crops cultivated include millet, sorghum, maize, cowpea and vegetables",
       "CropAssignment",
@@ -299,7 +283,6 @@ class TestVariableReader extends Test {
       "BirdAttackEvent",
       Seq(("Bird attacks", Seq(("between July 1st and August 31st", "XXXX-07-01 -- XXXX-08-31"))))
     ),
-    // todo: should be entity test for groundnut (but if we are checking if crop was extracted through event rule, use a crop that's not in the lexicon, e.g. buckwheat)
     VariableTest(
       "sent16_4_1", "They chose furthermore to grow only one cultivar groundnut",
       "CropAssignment",
@@ -312,7 +295,6 @@ class TestVariableReader extends Test {
         Seq(("Sahel 108", ""), ("Sahel 150", ""), ("Sahel 154", ""), ("Sahel 134", ""), ("Nerica", ""))
       ))
     ),
-    // todo: make into entity rule with unusual crops
     VariableTest(
       "sent17_1", "Peanut, sugarcane and cotton are important cash crops.",
       "CropAssignment",
@@ -322,7 +304,6 @@ class TestVariableReader extends Test {
         ("crops", Seq(("cotton", "")))
       )
     ),
-    // todo: make into entity rule with unusual crops
     VariableTest(
       "sent17_2", "Millet, rice, corn and sorghum are the primary food crops grown in Senegal.",
       "CropAssignment",
@@ -333,7 +314,6 @@ class TestVariableReader extends Test {
         ("crops", Seq(("sorghum", "")))
       )
     ),
-    // todo: make into entity rule with unusual crops
     VariableTest(
       "sent17_3", "Tomato or onion were the two most labour-consuming crops",
       "CropAssignment",
@@ -342,7 +322,6 @@ class TestVariableReader extends Test {
         ("crops", Seq(("onion", "")))
       )
     ),
-    // todo: make into entity rule with unusual crops
     VariableTest(
       "sent17_4", "Onion and tomato were the most profitable crops.",
       "CropAssignment",
@@ -352,56 +331,47 @@ class TestVariableReader extends Test {
       )
     ),
     // Tests for Fertilizer var-val reading
-    // todo: test for Fertilizer Entity
     VariableTest(
       "sent20", "One of the most important farming input is mineral fertilizer",
       "FertilizerAssignment",
       Seq(("fertilizer", Seq(("mineral", ""))))
     ),
-    // todo: test for Fertilizer Entity
     VariableTest(
       "sent20_1", "Fertilizer nitrogen (N) has been applied at two or more levels",
       "FertilizerAssignment",
       Seq(("Fertilizer", Seq(("nitrogen", ""))))
     ),
-    // todo: test for Fertilizer Entity
     VariableTest(
       "sent20_2", "In fact, use of fertilizer P has declined steadily since 1995",
       "FertilizerAssignment",
       Seq(("fertilizer", Seq(("P", ""))))
     ),
-    // todo: test for Fertilizer Entity
     VariableTest(
       "sent20_3", "The amount of fertilizer N required was averaged at 52 kg ha-1",
       "FertilizerAssignment",
       Seq(("fertilizer", Seq(("N", ""))))
     ),
-    // todo: test for Fertilizer Entity
     VariableTest(
       "sent20_4", "The most widely used solid inorganic fertilizers are urea, diammonium phosphate and potassium chloride",
       "FertilizerAssignment",
       Seq(("fertilizers", Seq(("urea", ""), ("diammonium phosphate", ""), ("potassium chloride", ""))))
     ),
-    // todo: test for Fertilizer Entity
     VariableTest(
       "sent20_5", "The most widely used solid inorganic fertilizers are diammonium phosphate, urea and potassium chloride",
       "FertilizerAssignment",
       Seq(("fertilizers", Seq(("diammonium phosphate", ""), ("urea", ""), ("potassium chloride", ""))))
     ),
-    // todo: test for Fertilizer Entity
     VariableTest(
       "sent20_5_1", "The main nutrient elements present in the fertilizers are nitrogen, phosphorus, and potassium",
       "FertilizerAssignment",
       Seq(("fertilizers", Seq(("nitrogen", ""), ("phosphorus", ""), ("potassium", ""))))
     ),
-    // todo: test for Fertilizer Entity
     VariableTest(
       "sent20_5_2", "The nitrogenous chemical fertilizers are urea, calcium, ammonium nitrate, ammonium sulfate, basic calcium nitrate, calcium cyanamide",
       "FertilizerAssignment",
       Seq(
-        ("fertilizers", Seq(("chemical", ""))),
+        ("fertilizers", Seq(("chemical", ""))), // todo: similar to `mineral fertilizer` in sent20
         ("fertilizers", Seq(("urea", ""), ("calcium", ""), ("ammonium nitrate", ""), ("ammonium sulfate", ""), ("basic calcium nitrate", ""), ("calcium cyanamide", "")))
-
       )
     ),
     VariableTest(
@@ -409,13 +379,11 @@ class TestVariableReader extends Test {
       "FertilizerAssignment",
       Seq(("fertilizer", Seq(("ammonium poly-phosphate", ""))))
     ),
-    // todo: entity test
     VariableTest(
       "sent20_7", "However, the most unvalable fertilizer was diammonium-phosphate",
       "FertilizerAssignment",
       Seq(("fertilizer", Seq(("diammonium-phosphate", ""))))
     ),
-    // todo: entity test
     VariableTest(
       "sent20_8", "Phosphorus, potassium and NPK are important inorganic fertilizers.",
       "FertilizerAssignment",
@@ -425,7 +393,6 @@ class TestVariableReader extends Test {
         ("fertilizers", Seq(("NPK", "")))
       )
     ),
-    // todo: entity test
     VariableTest(
       "sent20_9", "Some organic fertilizers include nitrogen, phosphorus, and potassium as the three most important elements for plant nutrition",
       "FertilizerAssignment",

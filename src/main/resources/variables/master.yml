@@ -27,6 +27,7 @@ taxonomy:
     - FertilizerAssignment
     - PlantingEvent
     - PlantingDate
+    - YieldAmount
 
 
 rules:
