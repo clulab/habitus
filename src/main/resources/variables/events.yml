@@ -39,7 +39,7 @@
   example: "Most farmers in the SRV plant Sahel 108"
   type: token
   pattern: |
-    (?<variable>[lemma = /plant|grow/]) /.*/{3} @value:Crop
+    (?<variable>[lemma = /plant|grow/]) /.*/{,3} @value:Crop
 
 - name: crop-assignment-cop-4
   priority: ${rulepriority}
@@ -53,10 +53,18 @@
 
 - name: crop-assignment-cop-5
   priority: ${rulepriority}
-  label: ${label}
+  label: CropAssignment
   type: token
   pattern: |
     @variable:GenericCrop (?<trigger> [lemma=/on|in|beyond/])? @value:Crop
+
+- name: crop-assignment-cop-6
+  priority: ${rulepriority}
+  label: PlantingDate
+  type: token
+  pattern: |
+    (?<variable> [lemma = /plant|grow/]) (("," | "and")* @value:Value)+
+
 
 ### Planting date rules
 
@@ -90,6 +98,14 @@
   type: token
   pattern: |
     @variable:Planting (?<trigger> [lemma=be]) [tag=/VBN|IN/] ("on"? @value:Value)+
+
+- name: planting-date-cop-9
+  priority: ${rulepriority}
+  label: PlantingDate
+  Example: "Between the date of February 15 to March 15 , 2020 , are sown 66 % areas developed"
+  type: token
+  pattern: |
+    @value:Value ","? (?<trigger> [lemma=be]) @variable:Entity
 
 - name: planting-date-parenthesis-1
   priority: ${rulepriority}
@@ -145,7 +161,14 @@
   type: token
   example: "The nitrogenous chemical fertilizers are urea , calcium , ammonium nitrate , ammonium sulfate , basic calcium nitrate , calcium cyanamide"
   pattern: |
-    @variable:GenericFertilizer [tag=/VBN|IN/]? (?<trigger> [lemma=be]) (","? @value:Fertilizer)+ ","? ("and" @value:Fertilizer)?
+    @variable:GenericFertilizer [tag=/VBN|IN|NN/]? (?<trigger> [lemma=be]) (","? @value:Fertilizer)+ ","? ("and" @value:Fertilizer)?
+
+- name: fertilizer-cop-2
+  priority: ${rulepriority}
+  label: FertilizerAssignment
+  type: token
+  pattern: |
+    (?<trigger> [lemma=with])? @variable:GenericFertilizer (("," | "and")* @value:Fertilizer)+
 
 - name: fertilizer-nnp
   priority: ${rulepriority}
@@ -165,7 +188,7 @@
     trigger = @GenericFertilizer
     value:Noun = (</compound/ | /compound/) [!lemma = /usage/]
 
-- name: fertilizer-cop-2
+- name: fertilizer-cop-3
   priority: ${rulepriority}
   label: FertilizerAssignment
   graph: "hybrid"
@@ -175,7 +198,7 @@
     variable:GenericFertilizer = <cop
     value:Fertilizer = <cop nsubj
 
-- name: fertilizer-cop-3
+- name: fertilizer-cop-4
   priority: ${rulepriority}
   label: FertilizerAssignment
   example: "Some organic fertilizers include nitrogen , phosphorus , and potassium as the three most important elements for plant nutrition"

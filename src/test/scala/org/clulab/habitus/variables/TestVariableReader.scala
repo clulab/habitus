@@ -29,7 +29,7 @@ class TestVariableReader extends Test {
           println("Put a breakpoint here to observe a particular test.")
 
         val allmentions = getMentions(text)
-        val mentions = allmentions.filter(_.label matches label)
+        val mentions = allmentions.filter(_.label matches label).sortBy(_.tokenInterval)
         if (label == "None") {
           // get only relations and events
           val nonTextBoundMentions = mentions.filter(m => !m.isInstanceOf[TextBoundMention])
@@ -64,8 +64,8 @@ class TestVariableReader extends Test {
       "sent1", "Farmers’ sowing dates ranged from 14 to 31 July for the WS and from 3 to 11 March for the DS.",
       "PlantingDate",
       Seq(
-        ("sowing dates", Seq(("from 3 to 11 March", "XXXX-03-03 -- XXXX-03-11"))),
-        ("sowing dates", Seq(("from 14 to 31 July", "XXXX-07-14 -- XXXX-07-31")))
+        ("sowing dates", Seq(("from 14 to 31 July", "XXXX-07-14 -- XXXX-07-31"))),
+        ("sowing dates", Seq(("from 3 to 11 March", "XXXX-03-03 -- XXXX-03-11")))
       )
     ),
     VariableTest(
@@ -397,7 +397,7 @@ class TestVariableReader extends Test {
     ),
     VariableTest(
       "sent20_6", "Total fertilizer usage was ammonium poly-phosphate on average 152 kg ha-1 in the 1999 and 2000WS",
-      "FertilizerUse",
+      "FertilizerAssignment",
       Seq(("fertilizer", Seq(("ammonium poly-phosphate", ""))))
     ),
     // todo: entity test
