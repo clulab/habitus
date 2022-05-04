@@ -60,10 +60,10 @@
 
 - name: crop-assignment-cop-6
   priority: ${rulepriority}
-  label: PlantingDate
+  label: PlantingEvent
   type: token
   pattern: |
-    (?<variable> [lemma = /plant|grow/]) (("," | "and")* @value:Value)+
+    (?<variable> [lemma = /plant|grow/]) (("," | "and")* @value:Crop)+
 
 
 ### Planting date rules
@@ -133,20 +133,20 @@
 
 ### Planting Events (incl crop and possibly time)
 
-- name: planting-event
-  priority: ${rulepriority}
-  label: PlantingEvent
-  example: "In the 1998WS , farmers sowed Jaya between 20 June and 1 July"
-  type: token
-  pattern: |
-    @variable:Planting @value:Crop @value:Value?
+#- name: planting-event
+#  priority: ${rulepriority}
+#  label: PlantingEvent
+#  example: "In the 1998WS , farmers sowed Jaya between 20 June and 1 July"
+#  type: token
+#  pattern: |
+#    @variable:Planting @value:Crop @value:Value?
     
 - name: planting-event-cop-2
   priority: ${rulepriority}
   label: PlantingEvent
   type: token
   pattern: |
-    (?<trigger> [lemma=with])? @variable:Variable (("," | "and")* @value:Value)+
+    (?<trigger> [lemma=with])? @variable:Planting (("," | "and")* @value:Crop)+ @value:Value?
 
 
 ### Bird attack events

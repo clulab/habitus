@@ -36,7 +36,7 @@ class TestVariableReader extends Test {
           // there should be none
           nonTextBoundMentions.length should be (0)
         } else {
-          if (name == "sent16_4_2") { //sent16_4_2
+          if (name == "sent20_5_2") { //sent16_4_2
             for (m <- mentions) {
               println("m: " + m.label + " " + m.text + " " + m + " " + m.foundBy)
             }
@@ -399,8 +399,8 @@ class TestVariableReader extends Test {
       "sent20_5_2", "The nitrogenous chemical fertilizers are urea, calcium, ammonium nitrate, ammonium sulfate, basic calcium nitrate, calcium cyanamide",
       "FertilizerAssignment",
       Seq(
-        ("fertilizers", Seq(("urea", ""), ("calcium", ""), ("ammonium nitrate", ""), ("ammonium sulfate", ""), ("basic calcium nitrate", ""), ("calcium cyanamide", ""))),
-        ("fertilizers", Seq(("chemical", "")))
+        ("fertilizers", Seq(("chemical", ""))),
+        ("fertilizers", Seq(("urea", ""), ("calcium", ""), ("ammonium nitrate", ""), ("ammonium sulfate", ""), ("basic calcium nitrate", ""), ("calcium cyanamide", "")))
 
       )
     ),
