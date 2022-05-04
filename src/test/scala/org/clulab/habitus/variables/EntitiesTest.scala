@@ -69,18 +69,28 @@ class EntitiesTest extends Test {
             Seq("Yield" -> Seq("yield", "yields"),
                 "Value" -> Seq("5 t ha-1"))
           ),
-//          VariableTest(
-//            "sent2",
-//            "The potential grain yield that can be obtained ranges from 8 to 9 t ha-1 in the wet season (July sowing) and from 6 to 11 t ha-1 in the dry season (February sowing)",
-//            Array("Yield","WetSeason", "DrySeason"),
-//            Array(1, 1, 1)
-//          ),
-//          VariableTest(
-//            "sent3",
-//            "Double cropping (growing rice in the wet season and dry season on the same field) is possible.",
-//            Array("WetSeason", "DrySeason"),
-//            Array(1, 1)
-//          ),
+          VariableTest(
+            "sent2",
+            "The potential grain yield that can be obtained ranges from 8 to 9 t ha-1 in the wet season (July sowing) and from 6 to 11 t ha-1 in the dry season (February sowing)",
+            Seq("Yield" -> Seq("yield"),
+              "Value" -> Seq("from 8 to 9 t ha-1", "from 6 to 11 t ha-1", "July", "February"),
+              "WetSeason"-> Seq("wet season"),
+              "DrySeason"-> Seq("dry season"),
+              "Variable"-> Seq("sowing", "sowing"),
+              "Date"-> Seq("July", "February")
+            )
+          ),
+          VariableTest(
+            "sent3",
+            "Double cropping (growing rice in the wet season and dry season on the same field) is possible.",
+            Seq(
+              "Crop" -> Seq("rice"), // rice extracted both as `Crop` and
+              "Value" -> Seq("rice"), // `Value` value.
+              "WetSeason"-> Seq("wet season"),
+              "DrySeason"-> Seq("dry season"),
+              "Variable"-> Seq("growing", "cropping")
+            )
+          ),
 //          VariableTest(
 //            "sent4",
 //            "irrigation rules resulted in great variability of irrigation frequency between fields, and sub-optimal timing of nitrogen fertilizer application resulted in yield losses",
