@@ -42,7 +42,7 @@
   label: Planting
   type: token
   pattern: |
-    [lemma = /(plant|sow|seed)/  & tag = /^VB/] 
+    [lemma = /plant|sow|seed/  & tag = /^VB/] 
 
 - name: variable-bird-attacks
   priority: ${rulepriority}

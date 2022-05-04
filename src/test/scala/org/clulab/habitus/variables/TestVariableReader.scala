@@ -36,6 +36,11 @@ class TestVariableReader extends Test {
           // there should be none
           nonTextBoundMentions.length should be (0)
         } else {
+          if (name == "sent16_4_2") { //sent16_4_2
+            for (m <- mentions) {
+              println("m: " + m.label + " " + m.text + " " + m + " " + m.foundBy)
+            }
+          }
           mentions should have size variables.length
 
           variables.zip(mentions).zipWithIndex.foreach { case ((variable, mention), variableIndex) =>
@@ -393,7 +398,11 @@ class TestVariableReader extends Test {
     VariableTest(
       "sent20_5_2", "The nitrogenous chemical fertilizers are urea, calcium, ammonium nitrate, ammonium sulfate, basic calcium nitrate, calcium cyanamide",
       "FertilizerAssignment",
-      Seq(("fertilizers", Seq(("urea", ""), ("calcium", ""), ("ammonium nitrate", ""), ("ammonium sulfate", ""), ("basic calcium nitrate", ""), ("calcium cyanamide", ""))))
+      Seq(
+        ("fertilizers", Seq(("urea", ""), ("calcium", ""), ("ammonium nitrate", ""), ("ammonium sulfate", ""), ("basic calcium nitrate", ""), ("calcium cyanamide", ""))),
+        ("fertilizers", Seq(("chemical", "")))
+
+      )
     ),
     VariableTest(
       "sent20_6", "Total fertilizer usage was ammonium poly-phosphate on average 152 kg ha-1 in the 1999 and 2000WS",

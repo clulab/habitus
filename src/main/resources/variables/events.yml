@@ -141,6 +141,13 @@
   pattern: |
     @variable:Planting @value:Crop @value:Value?
     
+- name: planting-event-cop-2
+  priority: ${rulepriority}
+  label: PlantingEvent
+  type: token
+  pattern: |
+    (?<trigger> [lemma=with])? @variable:Planting (("," | "and")* @value:Crop)+
+
 
 ### Bird attack events
 
