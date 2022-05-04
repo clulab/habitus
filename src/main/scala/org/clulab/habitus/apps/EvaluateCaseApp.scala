@@ -89,7 +89,7 @@ object EvaluateCaseApp extends App {
     val allUpperCount = countWordType(WordTypes.AllUpper)
     val allLowerCount = countWordType(WordTypes.AllLower)
     val percentNotLower = (wordCount - allLowerCount).toFloat / wordCount * 100
-    val improved = if (stage == PRESERVED) "-" else "?"
+    val improved = if (stage == PRESERVED) "?" else "-"
     val text = getText(sentence)
 
     tsvWriter.println(index.toString, stage, wordCount.toString, nonWordCount.toString, initialUpperCount.toString,
