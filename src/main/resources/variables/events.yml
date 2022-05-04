@@ -146,7 +146,7 @@
   label: PlantingEvent
   type: token
   pattern: |
-    (?<trigger> [lemma=with])? @variable:Planting (("," | "and")* @value:Crop)+
+    (?<trigger> [lemma=with])? @variable:Variable (("," | "and")* @value:Value)+
 
 
 ### Bird attack events

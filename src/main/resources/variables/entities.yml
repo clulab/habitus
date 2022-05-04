@@ -66,6 +66,19 @@
 #  pattern: |
 #    [entity='B-CROP'] [entity='I-CROP']*
 
+- name: crop-values-from-lexicon
+  priority: ${rulepriority}
+  label: Value
+  type: token
+  pattern: |
+    [entity='B-CROP'] [entity='I-CROP']*
+
+- name: variable-crop
+  priority: ${rulepriority}
+  label: Variable
+  type: token
+  pattern: |
+    /(?i)(crop|cultivar|cultivation|seed|sowed|sown|^plant|grown|growing|variety|varieties)/
 
 
 - name: variable-fertilizer
