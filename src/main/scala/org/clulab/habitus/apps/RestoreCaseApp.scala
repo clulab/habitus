@@ -1,4 +1,4 @@
-package org.clulab.habitus.entitynetworks
+package org.clulab.habitus.apps
 
 import org.clulab.dynet.Utils
 import org.clulab.habitus.HabitusProcessor
@@ -9,7 +9,7 @@ import org.clulab.utils.FileUtils
 import java.io.PrintWriter
 
 /** Restores the case for words in a provided free text document */
-object RestoreCase extends App {
+object RestoreCaseApp extends App {
   val inputFileName = args(0)
 
   Utils.initializeDyNet()
