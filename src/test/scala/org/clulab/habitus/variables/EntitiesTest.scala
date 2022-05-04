@@ -91,12 +91,17 @@ class EntitiesTest extends Test {
               "Variable"-> Seq("growing", "cropping")
             )
           ),
-//          VariableTest(
-//            "sent4",
-//            "irrigation rules resulted in great variability of irrigation frequency between fields, and sub-optimal timing of nitrogen fertilizer application resulted in yield losses",
-//            Array("Value", "Yield", "Fertilizer", "Variable"),
-//            Array(1, 1, 1, 1)
-//          ),
+          VariableTest(
+            "sent4",
+            "irrigation rules resulted in great variability of irrigation frequency between fields, and sub-optimal timing of nitrogen fertilizer application resulted in yield losses",
+            Seq("Yield" -> Seq("yield"),
+              "Value" -> Seq("from 8 to 9 t ha-1", "from 6 to 11 t ha-1", "July", "February"),
+              "WetSeason"-> Seq("wet season"),
+              "DrySeason"-> Seq("dry season"),
+              "Variable"-> Seq("fertilizer application", "sowing"),
+              "Date"-> Seq("July", "February")
+            )
+          ),
 //          VariableTest(
 //            "sent5",
 //            "The potential yields of these three cultivars are similar and are on average about 8 to 9 t ha-1 in the wet season",
