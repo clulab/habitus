@@ -36,7 +36,7 @@ object EvaluateCaseApp extends App {
     new PrintWriter(outputFilename).autoClose { pw =>
       val tsvWriter = new TsvWriter(pw)
 
-      tsvWriter.println("Sentence#", "Stage", "WordCount", "NonWordCount", "InitialUpper", "AllUpper", "AllLower", "%AllLower", "Improved", "Text")
+      tsvWriter.println("Sentence#", "Stage", "WordCount", "NonWordCount", "InitialUpper", "AllUpper", "AllLower", "%NotAllLower", "Improved", "Text")
       assert(preservedDoc.sentences.length == restoredDoc.sentences.length)
       preservedDoc.sentences.indices.foreach { index =>
         saveOutput(tsvWriter, index, PRESERVED, preservedDoc.sentences(index))
@@ -88,11 +88,11 @@ object EvaluateCaseApp extends App {
     val initialUpperCount = countWordType(WordTypes.InitialUpper)
     val allUpperCount = countWordType(WordTypes.AllUpper)
     val allLowerCount = countWordType(WordTypes.AllLower)
-    val percentLower = (allLowerCount.toFloat) / wordCount * 100
+    val percentNotLower = (wordCount - allLowerCount).toFloat / wordCount * 100
     val improved = if (stage == PRESERVED) "-" else "?"
     val text = getText(sentence)
 
     tsvWriter.println(index.toString, stage, wordCount.toString, nonWordCount.toString, initialUpperCount.toString,
-        allUpperCount.toString, allLowerCount.toString, f"$percentLower%.1f", improved, text)
+        allUpperCount.toString, allLowerCount.toString, f"$percentNotLower%.1f%%", improved, text)
   }
 }
