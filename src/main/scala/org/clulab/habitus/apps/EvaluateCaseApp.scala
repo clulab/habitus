@@ -2,7 +2,7 @@ package org.clulab.habitus.apps
 
 import org.clulab.dynet.Utils
 import org.clulab.habitus.HabitusProcessor
-import org.clulab.habitus.apps.utils.SentenceUtils
+import org.clulab.habitus.apps.utils.{SentenceUtils, WordTypes}
 import org.clulab.processors.{Document, Sentence}
 import org.clulab.utils.Closer.AutoCloser
 import org.clulab.utils.FileUtils
@@ -19,29 +19,6 @@ object EvaluateCaseApp extends App {
     override def isBadSentence(sentence: Sentence): Boolean = false
   }
 
-  object WordTypes extends Enumeration {
-    type WordType = Value
-    val AllLower, AllUpper, InitialUpper, NonWord, Other = Value
-
-    def apply(word: String): WordType = {
-      require(word.nonEmpty)
-
-      val letterCount = word.count(_.isLetter)
-      val lowerCount = word.count { char => char.isLetter && char.isLower }
-      val upperCount = word.count { char => char.isLetter && char.isUpper }
-
-      if (letterCount == 0)
-        NonWord
-      else if (lowerCount == letterCount)
-        AllLower
-      else if (upperCount == letterCount)
-        AllUpper
-      else if (word.head.isUpper && upperCount == 1)
-        InitialUpper
-      else Other
-    }
-  }
-
   val inputFileName = args(0)
 
   Utils.initializeDyNet()
@@ -52,8 +29,8 @@ object EvaluateCaseApp extends App {
   saveOutput(inputFileName + ".evaluated.tsv", proc.mkDocument(text), proc.mkDocumentWithRestoreCase(text))
 
   def saveOutput(outputFilename: String, preservedDoc: Document, restoredDoc: Document): Unit = {
-    new PrintWriter(outputFilename).autoClose { pw =>
-      val tsvWriter = new TsvWriter(pw)
+    new PrintWriter(outputFilename).autoClose { printWriter =>
+      val tsvWriter = new TsvWriter(printWriter)
 
       tsvWriter.println("Sentence#", "Stage", "WordCount", "NonWordCount", "InitialUpper", "AllUpper", "AllLower", "%NotAllLower", "Improved", "Text")
       assert(preservedDoc.sentences.length == restoredDoc.sentences.length)
