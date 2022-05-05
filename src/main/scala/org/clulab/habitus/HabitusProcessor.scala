@@ -25,12 +25,18 @@ class HabitusProcessor(lexiconNer: Option[LexiconNER]) extends CluProcessor(opti
     newDoc
   }
 
+  def copyDoc(oldDoc: Document, newSentences: Array[Sentence]): Document = {
+    val newDoc = new Document(newSentences)
+
+    newDoc.id = oldDoc.id
+    newDoc.text = oldDoc.text
+    newDoc
+  }
+
   private def removeBadSentences(doc: Document): Document = {
     val cleanSents = doc.sentences.filterNot(isBadSentence)
-    val cleanDoc = new Document(cleanSents)
-    cleanDoc.id = doc.id
-    cleanDoc.text = doc.text
-    cleanDoc
+
+    copyDoc(doc, cleanSents)
   }
 
   private def getAlphaCount(sentence: Sentence): Int = {

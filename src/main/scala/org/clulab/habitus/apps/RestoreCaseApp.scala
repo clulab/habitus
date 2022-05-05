@@ -2,7 +2,8 @@ package org.clulab.habitus.apps
 
 import org.clulab.dynet.Utils
 import org.clulab.habitus.HabitusProcessor
-import org.clulab.processors.Document
+import org.clulab.habitus.apps.utils.SentenceUtils
+import org.clulab.processors.{Document, Sentence}
 import org.clulab.utils.Closer.AutoCloser
 import org.clulab.utils.FileUtils
 
@@ -22,22 +23,16 @@ object RestoreCaseApp extends App {
 
   private def saveOutput(outputFilename: String, doc: Document): Unit = {
     new PrintWriter(outputFilename).autoClose { pw =>
-      saveOutput(pw, doc)
+      doc.sentences.foreach { sentence =>
+        saveOutput(pw, sentence)
+      }
     }
   }
 
-  private def saveOutput(pw: PrintWriter, doc: Document): Unit = {
-    for (sent <- doc.sentences) {
-      for (i <- sent.indices) {
-        if (i > 0) {
-          val numberOfSpaces = sent.startOffsets(i) - sent.endOffsets(i - 1)
-          for (j <- 0 until numberOfSpaces) {
-            pw.print(" ")
-          }
-        }
-        pw.print(sent.words(i))
-      }
-      pw.println("\n")
-    }
+  private def saveOutput(pw: PrintWriter, sentence: Sentence): Unit = {
+    val text = SentenceUtils.getText(sentence)
+
+    pw.println(text)
+    pw.println()
   }
 }
