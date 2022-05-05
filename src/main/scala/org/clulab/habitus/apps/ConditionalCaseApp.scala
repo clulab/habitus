@@ -9,14 +9,16 @@ import org.clulab.utils.FileUtils
 
 import java.io.PrintWriter
 
-/** Compare case when preserved and restored */
-object CompareCaseApp extends App {
+/** Restore the case conditionally, and compare preserved and restored versions. */
+object ConditionalCaseApp extends App {
+  val cutoffOpt = Some(67.5f)
+  val removeBad = true
 
-  class AllGoodHabitusProcessor extends HabitusProcessor(None) {
-    // val cutoff = 0.0f // for always restore
-    val cutoff = 67.5f
+  class ConditionalHabitusProcessor(cutoffOpt: Option[Float] = None, removeBad: Boolean = true) extends HabitusProcessor(None) {
 
-    override def isBadSentence(sentence: Sentence): Boolean = false
+    override def isBadSentence(sentence: Sentence): Boolean =
+        if (removeBad) super.isBadSentence(sentence)
+        else false
 
     def getPercentNotLower(sentence: Sentence): Float = {
 
@@ -31,16 +33,22 @@ object CompareCaseApp extends App {
     }
 
     override def mkDocumentWithRestoreCase(text: String, keepText: Boolean = false): Document = {
-      val preservedDocument = mkDocument(text)
-      val restoredDocument = super.mkDocumentWithRestoreCase(text)
-      val mixedSentences = preservedDocument.sentences.zip(restoredDocument.sentences).map { case (preservedSentence, restoredSentence) =>
-        val percentNotLower = getPercentNotLower(preservedSentence)
+      if (cutoffOpt.isDefined) {
+        val cutoff = cutoffOpt.get
+        val preservedDocument = mkDocument(text)
+        val restoredDocument = super.mkDocumentWithRestoreCase(text)
+        val mixedSentences = preservedDocument.sentences.zip(restoredDocument.sentences).map { case (preservedSentence, restoredSentence) =>
+          val percentNotLower = getPercentNotLower(preservedSentence)
 
-        if (percentNotLower >= cutoff) restoredSentence
-        else preservedSentence
+          if (percentNotLower >= cutoff) restoredSentence
+          else preservedSentence
+        }
+
+        copyDoc(preservedDocument, mixedSentences)
       }
-
-      copyDoc(preservedDocument, mixedSentences)
+      else
+        // There is no cutoff, so restore everything.
+        super.mkDocumentWithRestoreCase(text)
     }
   }
 
@@ -48,7 +56,7 @@ object CompareCaseApp extends App {
 
   Utils.initializeDyNet()
 
-  val proc = new AllGoodHabitusProcessor()
+  val proc = new ConditionalHabitusProcessor(cutoffOpt, removeBad)
   val text = FileUtils.getTextFromFile(inputFileName)
 
   saveOutput(inputFileName + ".preserved", proc.mkDocument(text))
