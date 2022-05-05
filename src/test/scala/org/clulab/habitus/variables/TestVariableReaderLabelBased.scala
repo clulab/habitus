@@ -1,7 +1,7 @@
 package org.clulab.habitus.variables
 
 import org.clulab.habitus.utils.Test
-import org.clulab.odin.Mention
+import org.clulab.odin.{Mention, TextBoundMention}
 
 class TestVariableReaderLabelBased extends Test {
   // checks Assignment mentions:
@@ -16,12 +16,13 @@ class TestVariableReaderLabelBased extends Test {
   case class VariableTest(
      name: String, text: String,
      // If there are multiple "Assignment" mentions, use one variable for each and multiple lines.
+     label: String,
      variables: Seq[Variable]
    ) {
 
     def getMentions(text: String): Seq[Mention] = {
       val parsingResults = vp.parse(text)
-      parsingResults.targetMentions
+      parsingResults.allMentions
     }
 
     def test(index: Int): Unit = {
@@ -29,21 +30,30 @@ class TestVariableReaderLabelBased extends Test {
         if (index == -1)
           println("Put a breakpoint here to observe a particular test.")
 
-        val mentions = getMentions(text).filter(_.label matches "Assignment")
+        val allMentions = getMentions(text)
+        val mentions = allMentions.filter(_.label matches label).sortBy(_.tokenInterval)
 
-        mentions should have size variables.length
+        if (variables.isEmpty) {
+          // get only relations and events
+          val nonTextBoundMentions = mentions.filterNot(m => m.isInstanceOf[TextBoundMention])
+          // there should be none
+          nonTextBoundMentions.length should be (0)
+        } else {
 
-        variables.zip(mentions).zipWithIndex.foreach { case ((variable, mention), variableIndex) =>
-          (variableIndex, mention.arguments("variable").head.label) should be((variableIndex, variable._1))
+          mentions should have size variables.length
 
-          val values = variable._2
-          val arguments = mention.arguments("value")
+          variables.zip(mentions).zipWithIndex.foreach { case ((variable, mention), variableIndex) =>
+            (variableIndex, mention.arguments("variable").head.label) should be((variableIndex, variable._1))
 
-          arguments should have size values.length
-          values.zip(arguments).zipWithIndex.foreach { case ((value, argument), valueIndex) =>
-            // not checking text right now, just the norm
-//            (variableIndex, valueIndex, argument.text) should be ((variableIndex, valueIndex, value._1))
-            (variableIndex, valueIndex, argument.norms.get.head) should be ((variableIndex, valueIndex, value._2))
+            val values = variable._2
+            val arguments = mention.arguments("value")
+
+            arguments should have size values.length
+            values.zip(arguments).zipWithIndex.foreach { case ((value, argument), valueIndex) =>
+              // not checking text right now, just the norm
+              //            (variableIndex, valueIndex, argument.text) should be ((variableIndex, valueIndex, value._1))
+              (variableIndex, valueIndex, argument.norms.get.head) should be((variableIndex, valueIndex, value._2))
+            }
           }
         }
       }
@@ -55,9 +65,15 @@ class TestVariableReaderLabelBased extends Test {
   val variableTests: Array[VariableTest] = Array(
     VariableTest(
       "sent1", "with an average yield over years and seasons of 5 t ha-1",
+      "YieldAmount",
       Seq(
         ("Yield", Seq(("5 t ha-1", "5.0 t/ha")))
       )
+    ),
+    VariableTest(
+      "negTestSent", "This is a sample negative test. There should be no assignments extracted",
+      "None",
+      Seq.empty
     )
   )
 

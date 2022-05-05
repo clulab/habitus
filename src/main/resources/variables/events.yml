@@ -1,139 +1,220 @@
-#
-# VARIABLE is VALUE
-# This is a token pattern. Try not to use them. But they are simpler for copulative verbs ("be" verbs)
-#
-- name: ${label}-cop-1
-  priority: ${rulepriority} 
-  label: ${label} 
-  type: token
-  pattern: |
-    @variable:Variable [tag=/VBN|IN/]? (?<trigger> [lemma=be]) (","? @value:Value)+ ","? ("and" @value:Value)?
 
-- name: ${label}-cop-2
-  priority: ${rulepriority}
-  label: ${label}
-  type: token
-  pattern: |
-    (?<trigger> [lemma=with])? @variable:Variable (("," | "and")* @value:Value)+
+### Crop assignment rules
 
-#                              
-# VARIABLE ranged|occurred on VALUE
-#
-- name: ${label}-cop-3
+# used for finding crops that are not in the lexicon #todo: add tests for this
+- name: crop-assignment-cop-1
   priority: ${rulepriority}
-  label: ${label}
+  label: CropAssignment
+  graph: "hybrid"
+  example: "The most important crop is buckwheat"
+  pattern: |
+    trigger = [lemma = "be"]
+    variable:GenericCrop = <cop /nsubj/
+    value:Noun = <cop 
+
+- name: crop-assignment-cop-2
+  priority: ${rulepriority}
+  label: CropAssignment
+  graph: "hybrid"
+  example: "Buckwheat is the most important crop"
+  pattern: |
+    trigger = [lemma = "be"]
+    variable:GenericCrop = <cop 
+    value:Noun = <cop /nsubj/
+
+# Assignments for crops extracted with a lexicon
+
+- name: crop-assignment-cop-3
+  priority: ${rulepriority}
+  label: CropAssignment
+  example: "Some farmers use variety like Sahel 108. They chose furthermore to grow only one cultivar Sahel 108."#Some farmers use cultivar such as Sahel 108.
   graph: "hybrid"
   pattern: |
-    trigger = [lemma=/range|occur|use|contain|be|happen|start/ & tag=/^V|^J/]
-    variable:Variable = /nsubj|dobj|nsubjpass|nmod_as/
-    value:Value = /dobj/? /nmod_on|nmod_in|nmod_such_as|nmod_than|nmod_like|Ax_on|Ax_in/
+    trigger = [lemma=/use|plant|grow|harvest/ & tag=/^V/]
+    variable:GenericCrop = dobj
+    value:Crop = dobj? /nmod_such_as|nmod_like/
 
-#
-# VARIABLE on|in VALUE
-# This is a token pattern. Try not to use them. But they are simpler for copulative verbs ("be" verbs)
-#
-- name: ${label}-cop-4
+- name: crop-assignment-verb
   priority: ${rulepriority}
-  label: ${label}
+  label: CropAssignment
+  example: "Most farmers in the SRV plant Sahel 108"
   type: token
   pattern: |
-    @variable:Variable (?<trigger> [lemma=/on|in/]) @value:Value
+    (?<variable>[lemma = /plant|grow/]) /.*/{,3} @value:Crop
 
-
-
-#
-# Syntactic rule for crops 
-#
-- name: ${label}-cop-5                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+- name: crop-assignment-cop-4
   priority: ${rulepriority}
-  label: ${label}
-  graph: "hybrid"
-  pattern: |
-    trigger = [lemma=be]
-    variable:Variable = <cop
-    value:Value = <cop nsubj
-
-
-- name: ${label}-cop-6
-  priority: ${rulepriority}
-  label: ${label}
+  label: CropAssignment
+  example: "Other crops cultivated include millet"
   graph: "hybrid"
   pattern: |
     trigger = [lemma=/include|be/]
-    variable:Variable = /nsubj/
-    value:Value = /dobj/
+    variable:GenericCrop = /nsubj/
+    value:Crop = /dobj/
 
-
-#
-# VARIABLE ( VALUE
-#   sowing (before Aug 15
-#   crops (maize, millet, and sorghum)
-#
-- name: ${label}-parenthesis-1
+- name: crop-assignment-cop-5
   priority: ${rulepriority}
-  label: ${label}
+  label: CropAssignment
   type: token
   pattern: |
-    @variable:Variable [! (mention = "Value")]{, 4} (?<trigger> [lemma="("]) @value:Value (("," | "and")* @value:Value)*
+    @variable:GenericCrop (?<trigger> [lemma=/on|in|beyond/])? @value:Crop
 
-#
-# VALUE ( VARIABLE )
-#   beyond September 15, 2020 (late sowing)
-#
-- name: ${label}-parenthesis-2
+- name: crop-assignment-cop-6
   priority: ${rulepriority}
-  label: ${label}
+  label: PlantingEvent
   type: token
   pattern: |
-    @value:Value (?<trigger> [lemma="("]) @variable:Variable [lemma=")"]
+    (?<variable> [lemma = /plant|grow/]) (("," | "and")* @value:Crop)+
 
 
-#
-# VARIABLE ranged|occurred from|between VALUE and VALUE
-# This is a syntactic/semantic pattern. Try to use such rules when you can. They generalize better!
-#
-- name: ${label}-range-1
+### Planting date rules
+
+- name: planting-date-cop-1
   priority: ${rulepriority}
-  label: ${label}
+  label: PlantingDate
+  type: token
+  pattern: |
+    @variable:Planting [tag=/VBN|IN/]? (?<trigger> [lemma=be]) (","? @value:Date)+ ","? ("and" @value:Date)?
+
+- name: planting-date-cop-3
+  priority: ${rulepriority}
+  label: PlantingDate
   graph: "hybrid"
   pattern: |
-    trigger = [lemma=/range|occur|be/ & tag=/^V|^J/]
-    variable:Variable = /nsubj|dobj/
-    value:Value = /nmod_from|nmod_between|nmod_like|Ax_from|Ax_between/
+    trigger = [lemma=/range|occur|use|contain|be|happen|start/ & tag=/^V|^J/]
+    variable:Planting = /nsubj|dobj|nsubjpass|nmod_as/
+    value:Date = /nmod_on|nmod_in|nmod_such_as|nmod_than|nmod_like|Ax_on|Ax_in/
 
-# 
-# VARIABLE be[past participle] on VALUE
-# This is a token pattern.
-#
+- name: planting-date-cop-4
+  priority: ${rulepriority}
+  label: PlantingDate
+  type: token
+  pattern: |
+    @variable:Planting (?<trigger> [lemma=/on|in/])? @value:Date
 
-- name: ${label}-cop-8
-  priority: ${rulepriority} 
-  label: ${label} 
+- name: planting-date-cop-8
+  priority: ${rulepriority}
+  label: PlantingDate
   Example: sowing was done on 25th October
   type: token
   pattern: |
-    @variable:Variable (?<trigger> [lemma=be]) [tag=/VBN|IN/] ("on"? @value:Value)+ 
+    @variable:Planting (?<trigger> [lemma=be]) [tag=/VBN|IN/] ("on"? @value:Date)+
 
-
-#
-# VALUE , be VARIABLE
-#
-- name: ${label}-cop-9
-  priority: ${rulepriority} 
-  label: ${label} 
+- name: planting-date-cop-9
+  priority: ${rulepriority}
+  label: PlantingDate
   Example: "Between the date of February 15 to March 15 , 2020 , are sown 66 % areas developed"
   type: token
   pattern: |
-    @value:Value ","? (?<trigger> [lemma=be]) @variable:Variable
+    @value:Date ","? (?<trigger> [lemma=be]) @variable:Entity
+
+- name: planting-date-parenthesis-1
+  priority: ${rulepriority}
+  label: PlantingDate
+  type: token
+  pattern: |
+    @variable:Planting [! (mention = "Date")]{, 4} (?<trigger> [lemma="("]) @value:Date (("," | "and")* @value:Date)*
+
+- name: planting-date-parenthesis-2
+  priority: ${rulepriority}
+  label: PlantingDate
+  type: token
+  pattern: |
+    @value:Date (?<trigger> [lemma="("]) @variable:Planting [lemma=")"]
+
+- name: planting-date-range-1
+  priority: ${rulepriority}
+  label: PlantingDate
+  graph: "hybrid"
+  pattern: |
+    trigger = [lemma=/range|occur|be/ & tag=/^V|^J/]
+    variable:Planting = /nsubj|dobj/
+    value:Date = /nmod_from|nmod_between|nmod_like|Ax_from|Ax_between/
+    
+    
+    ### Planting Events (incl crop and possibly time as values)
+
+- name: planting-event-cop-2
+  priority: ${rulepriority}
+  label: PlantingEvent
+  type: token
+  pattern: |
+    (?<trigger> [lemma=with])? @variable:Planting (("," | "and")* @value:Crop)+ @value:Date?
 
 
+### Bird attack events
+
+- name: bird-attach
+  priority: ${rulepriority}
+  label: BirdAttackEvent
+  graph: "hybrid"
+  pattern: |
+    trigger = [lemma=/happen|occur|be/ & tag=/^V/]
+    variable:BirdAttack = /nsubj|dobj/
+    value:Date = /nmod_from|nmod_between|Ax_from|Ax_between|nmod_on|nmod_in/  
+
+### Ferilizer events
+
+# assignments for ner-found ferilizers
+- name: fertilizer-cop-1
+  priority: ${rulepriority}
+  label: FertilizerAssignment
+  type: token
+  example: "The nitrogenous chemical fertilizers are urea , calcium , ammonium nitrate , ammonium sulfate , basic calcium nitrate , calcium cyanamide"
+  pattern: |
+    @variable:GenericFertilizer [tag=/VBN|IN|NN/]? (?<trigger> [lemma=be]) (","? @value:Fertilizer)+ ","? ("and" @value:Fertilizer)?
+
+- name: fertilizer-cop-2
+  priority: ${rulepriority}
+  label: FertilizerAssignment
+  type: token
+  pattern: |
+    (?<trigger> [lemma=with])? @variable:GenericFertilizer (("," | "and")* @value:Fertilizer)+
+
+
+- name: fertilizer-cop-3
+  priority: ${rulepriority}
+  label: FertilizerAssignment
+  graph: "hybrid"
+  example: "Phosphorus , potassium and NPK are important inorganic fertilizers."
+  pattern: |
+    trigger = [lemma=be]
+    variable:GenericFertilizer = <cop
+    value:Fertilizer = <cop nsubj
+
+- name: fertilizer-cop-4
+  priority: ${rulepriority}
+  label: FertilizerAssignment
+  example: "Some organic fertilizers include nitrogen , phosphorus , and potassium as the three most important elements for plant nutrition"
+  graph: "hybrid"
+  pattern: |
+    trigger = [lemma=/include|be/]
+    variable:GenericFertilizer = /nsubj/
+    value:Fertilizer = /dobj/
+
+# these can found new fertilizers
+- name: fertilizer-nnp
+  priority: ${rulepriority}
+  label: FertilizerAssignment
+  type: token
+  example: "In fact , use of fertilizer P has declined steadily since 1995"
+  pattern: |
+    @variable:GenericFertilizer (?<value> [tag = "NNP"])
+
+
+- name: fertilizer-compound
+  priority: ${rulepriority}
+  label: FertilizerAssignment
+  graph: "hybrid"
+  example: "In fact , use of fertilizer P has declined steadily since 1995. One of the most important farming input is mineral fertilizer."
+  action: fertilizerEventToRelation
+  pattern: |
+    trigger = @GenericFertilizer
+    value:Noun = (</compound/ | /compound/) [!lemma = /usage/]
 
 - name: ${label}-yield-event
   priority: ${rulepriority}
-  label: ${label}
+  label: YieldAmount
   type: token
   pattern: |
-    @variable:Yield []+ @value:Value
-
-
-
+    @variable:Yield []+ @value:Quantity
