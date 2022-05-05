@@ -165,6 +165,7 @@ class HabitusActions extends Actions {
   }
 
   def FertilizerEventToRelation(mentions: Seq[Mention]): Seq[Mention] = {
+    // creates a binary fertilizer event from a rule where the trigger was a token that should also serve as a variable in an assignment event
     val toReturn = new ArrayBuffer[Mention]()
     for (m <- mentions) {
       val variableArg = m.asInstanceOf[EventMention].trigger

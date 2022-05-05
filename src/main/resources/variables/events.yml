@@ -155,6 +155,7 @@
 
 ### Ferilizer events
 
+# assignments for ner-found ferilizers
 - name: fertilizer-cop-1
   priority: ${rulepriority}
   label: FertilizerAssignment
@@ -170,23 +171,6 @@
   pattern: |
     (?<trigger> [lemma=with])? @variable:GenericFertilizer (("," | "and")* @value:Fertilizer)+
 
-- name: fertilizer-nnp
-  priority: ${rulepriority}
-  label: FertilizerAssignment
-  type: token
-  example: "In fact , use of fertilizer P has declined steadily since 1995"
-  pattern: |
-    @variable:GenericFertilizer (?<value> [tag = "NNP"])
-
-- name: fertilizer-compound
-  priority: ${rulepriority}
-  label: FertilizerAssignment
-  graph: "hybrid"
-  example: "In fact , use of fertilizer P has declined steadily since 1995. One of the most important farming input is mineral fertilizer."
-  action: FertilizerEventToRelation
-  pattern: |
-    trigger = @GenericFertilizer
-    value:Noun = (</compound/ | /compound/) [!lemma = /usage/]
 
 - name: fertilizer-cop-3
   priority: ${rulepriority}
@@ -207,6 +191,26 @@
     trigger = [lemma=/include|be/]
     variable:GenericFertilizer = /nsubj/
     value:Fertilizer = /dobj/
+
+# these can found new fertilizers
+- name: fertilizer-nnp
+  priority: ${rulepriority}
+  label: FertilizerAssignment
+  type: token
+  example: "In fact , use of fertilizer P has declined steadily since 1995"
+  pattern: |
+    @variable:GenericFertilizer (?<value> [tag = "NNP"])
+
+
+- name: fertilizer-compound
+  priority: ${rulepriority}
+  label: FertilizerAssignment
+  graph: "hybrid"
+  example: "In fact , use of fertilizer P has declined steadily since 1995. One of the most important farming input is mineral fertilizer."
+  action: FertilizerEventToRelation
+  pattern: |
+    trigger = @GenericFertilizer
+    value:Noun = (</compound/ | /compound/) [!lemma = /usage/]
 
 - name: ${label}-yield-event
   priority: ${rulepriority}

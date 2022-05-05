@@ -252,7 +252,7 @@ class TestVariableReader extends Test {
       Seq(("seed", Seq(("Sahel 108", ""))))
     ),
     VariableTest(
-      "sent16_2_3", "Farmers preferred to use short duration varieties like Sahel 108",
+      "sent16_2_3", "Farmers preferred to use short duration rice varieties like Sahel 108",
       "CropAssignment",
       Seq(("varieties", Seq(("Sahel 108", ""))))
     ),
@@ -370,7 +370,7 @@ class TestVariableReader extends Test {
       "sent20_5_2", "The nitrogenous chemical fertilizers are urea, calcium, ammonium nitrate, ammonium sulfate, basic calcium nitrate, calcium cyanamide",
       "FertilizerAssignment",
       Seq(
-        ("fertilizers", Seq(("chemical", ""))), // todo: similar to `mineral fertilizer` in sent20
+        ("fertilizers", Seq(("chemical", ""))), // note: similar to `mineral fertilizer` in sent20
         ("fertilizers", Seq(("urea", ""), ("calcium", ""), ("ammonium nitrate", ""), ("ammonium sulfate", ""), ("basic calcium nitrate", ""), ("calcium cyanamide", "")))
       )
     ),
