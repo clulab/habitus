@@ -35,7 +35,7 @@ class TestVariableReaderLabelBased extends Test {
 
         if (variables.isEmpty) {
           // get only relations and events
-          val nonTextBoundMentions = mentions.filter(m => !m.isInstanceOf[TextBoundMention])
+          val nonTextBoundMentions = mentions.filterNot(m => m.isInstanceOf[TextBoundMention])
           // there should be none
           nonTextBoundMentions.length should be (0)
         } else {

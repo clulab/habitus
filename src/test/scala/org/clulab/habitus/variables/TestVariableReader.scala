@@ -32,7 +32,7 @@ class TestVariableReader extends Test {
         val mentions = allmentions.filter(_.label matches label).sortBy(_.tokenInterval)
         if (variables.isEmpty) {
           // get only relations and events
-          val nonTextBoundMentions = mentions.filter(m => !m.isInstanceOf[TextBoundMention])
+          val nonTextBoundMentions = mentions.filterNot(m => m.isInstanceOf[TextBoundMention])
           // there should be none
           nonTextBoundMentions.length should be (0)
         } else {

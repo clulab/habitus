@@ -207,7 +207,7 @@
   label: FertilizerAssignment
   graph: "hybrid"
   example: "In fact , use of fertilizer P has declined steadily since 1995. One of the most important farming input is mineral fertilizer."
-  action: FertilizerEventToRelation
+  action: fertilizerEventToRelation
   pattern: |
     trigger = @GenericFertilizer
     value:Noun = (</compound/ | /compound/) [!lemma = /usage/]

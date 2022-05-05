@@ -109,28 +109,13 @@ class HabitusActions extends Actions {
   }
 
   def removeRedundantVariableMentions(mentions: Seq[Mention]): Seq[Mention] = {
-    // if there are multiple mentions of with the same value, pick one
-    val toReturn = new ArrayBuffer[Mention]()
-//    val (targetMentions, other) = mentions.partition(_.label == "Assignment")
-    // the action applies to mentions extracted with var reader relation/event rules, so we exclude tbms and include a value argument
-    val (targetMentions, other) = mentions.partition(m => !m.isInstanceOf[TextBoundMention] & m.arguments.keys.toList.contains("value"))
+    // The action applies to mentions extracted with var reader relation/event rules, so we exclude TBMs and include a value argument.
+    val (targetMentions, otherMentions) = mentions.partition(m => !m.isInstanceOf[TextBoundMention] && m.arguments.contains("value"))
+    val targetMentionGroups = targetMentions.groupBy { m => (m.sentence, m.label, m.arguments("value").head.text) }
+    // If there are multiple mentions in the same group, pick the "closest" one.
+    val closestTargetMentions = targetMentionGroups.toSeq.map { case (_, ms) => closestVar(ms) }
 
-
-    val groupedBySent = targetMentions.groupBy(_.sentence)
-    for (sentGroup <- groupedBySent) {
-      // only pick out of those with the same label
-      val groupedByLabel = sentGroup._2.groupBy(_.label)
-      for (labelGroup <- groupedByLabel) {
-        val groupedByValue = labelGroup._2.groupBy(_.arguments("value").head.text)
-        for (valueGroup <- groupedByValue) {
-          // pick the one where the variable is closest to the value
-          val menToKeep = closestVar(valueGroup._2)
-          toReturn.append(menToKeep)
-          }
-        }
-
-      }
-    toReturn ++ other
+    closestTargetMentions ++ otherMentions
   }
 
   def distanceBetweenTwoArgs(mention: Mention, arg1: String, arg2: String): Int = {
@@ -164,15 +149,14 @@ class HabitusActions extends Actions {
     toReturn
   }
 
-  def FertilizerEventToRelation(mentions: Seq[Mention]): Seq[Mention] = {
+  def fertilizerEventToRelation(mentions: Seq[Mention]): Seq[Mention] = {
     // creates a binary fertilizer event from a rule where the trigger was a token that should also serve as a variable in an assignment event
-    val toReturn = new ArrayBuffer[Mention]()
-    for (m <- mentions) {
+    mentions.map { m =>
       val variableArg = m.asInstanceOf[EventMention].trigger
       val valueArg = m.arguments("value").head
       val sortedArgs = Seq(variableArg, valueArg).sortBy(_.tokenInterval)
       val newTokenInterval = Interval(sortedArgs.head.tokenInterval.start, sortedArgs.last.tokenInterval.end)
-      val newMention = new RelationMention(
+      new RelationMention(
         labels = m.labels,
         tokenInterval = newTokenInterval,
         arguments = Map("variable" -> Seq(variableArg), "value" -> Seq(valueArg)),
@@ -183,9 +167,7 @@ class HabitusActions extends Actions {
         foundBy = m.foundBy,
         attachments = Set.empty
       )
-      toReturn.append(newMention)
     }
-    toReturn
   }
 
 }
