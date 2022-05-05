@@ -49,7 +49,7 @@ class EntitiesTest extends Test {
 
 
           val targetMentionTexts = targetMentions.map(_.text)
-          println(targetMentionTexts)
+//          println(targetMentionTexts)
 
           //check if the required texts were extracted
           values.foreach(text => targetMentionTexts should contain(text))
@@ -127,7 +127,7 @@ class EntitiesTest extends Test {
             "sent8",
             "Average yield reached 7.2 t ha–1 in 1999 and 8.2 t ha–1 in 2000",
             Seq("Yield" -> Seq("yield"),
-              "Value" -> Seq("7.2 t ha–1", "8.2 t ha–1", "1999", "2000")
+              "Value" -> Seq("7.2 t ha-1", "8.2 t ha-1", "1999", "2000")
             )
           ),
           VariableTest(
@@ -135,35 +135,40 @@ class EntitiesTest extends Test {
             "Potential rice grain yields (limited by solar radiation and temperature only) are on average about 9 t ha–1 in the wet growing season from July to November",
             Seq("Yield" -> Seq("yields"),
               "Crop" -> Seq("rice"),
-              "Value" -> Seq("rice", "9 t ha–1", "from July to November"),
+              "Value" -> Seq("rice", "9 t ha-1", "from July to November"),
               "Variable" -> Seq("growing"),
               "WetSeason" -> Seq("wet growing season")
             )
           ),
-//          VariableTest(
-//            "sent10",
-//            "The Senegal River Valley, located in Sahel zone, is one of the major irrigated rice-producing areas in Senegal.",
-//            Array("Location"),
-//            Array(3)
-//          ),
-//          VariableTest(
-//            "sent11",
-//            "In all scenarios, Sahel 108 variety is sown.",
-//            Array("Value", "Variable"),
-//            Array(1, 2)
-//          ),
-//          VariableTest(
-//            "sent12",
-//            "These correspond to the dry season (from February/March to June/July).",
-//            Array("Value", "Date", "DrySeason"),
-//            Array(5, 1, 1)
-//          ),
-//          VariableTest(
-//            "sent13",
-//            "Farmers’ yields are on average between 4 and 5 t ha-1, and, therefore, far below potential.",
-//            Array("Value", "Yield"),
-//            Array(1, 1)
-//          ),
+          VariableTest(
+            "sent10",
+            "The Senegal River Valley, located in Sahel zone, is one of the major irrigated rice-producing areas in Senegal.",
+            Seq("Location" -> Seq("Senegal", "Sahel", "Senegal River Valley"),
+            )
+          ),
+          VariableTest(
+            "sent11",
+            "In all scenarios, Sahel 108 variety is sown.",
+            Seq("Crop" -> Seq("Sahel 108"),
+              "Value" -> Seq("Sahel 108"),
+              "Variable" -> Seq("variety", "sown")
+            )
+          ),
+          VariableTest(
+            "sent12",
+            "These correspond to the dry season (from February/March to June/July).",
+            Seq("DrySeason" -> Seq("dry season"),
+              "Value" -> Seq("July", "March to June/July", "March to June", "from February", "from February/March to June/July"),
+              "Date" -> Seq("July")
+            )
+          ),
+          VariableTest(
+            "sent13",
+            "Farmers’ yields are on average between 4 and 5 t ha-1, and, therefore, far below potential.",
+            Seq("Yield" -> Seq("yields"),
+              "Value" -> Seq("between 4 and 5 t ha-1")
+            )
+          ),
 
 
   )
@@ -171,3 +176,4 @@ class EntitiesTest extends Test {
 
   variableTests.zipWithIndex.foreach { case (variableTest, index) => variableTest.test(index) }
 }
+
