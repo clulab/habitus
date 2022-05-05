@@ -10,13 +10,15 @@ taxonomy:
   - Entity:
     - Variable
     - Value
-    - Date
+    - Date:
+        -  DateRange
     - Location
     - Fertilizer
     - FertilizerUse
     - Crop
     - Yield
     - Planting
+    - Quantity
     - BirdAttack
     - GenericCrop
     - GenericFertilizer

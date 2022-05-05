@@ -74,7 +74,7 @@
   label: PlantingDate
   type: token
   pattern: |
-    @variable:Planting [tag=/VBN|IN/]? (?<trigger> [lemma=be]) (","? @value:Value)+ ","? ("and" @value:Value)?
+    @variable:Planting [tag=/VBN|IN/]? (?<trigger> [lemma=be]) (","? @value:Date)+ ","? ("and" @value:Date)?
 
 - name: planting-date-cop-3
   priority: ${rulepriority}
@@ -83,14 +83,14 @@
   pattern: |
     trigger = [lemma=/range|occur|use|contain|be|happen|start/ & tag=/^V|^J/]
     variable:Planting = /nsubj|dobj|nsubjpass|nmod_as/
-    value:Value = /nmod_on|nmod_in|nmod_such_as|nmod_than|nmod_like|Ax_on|Ax_in/
+    value:Date = /nmod_on|nmod_in|nmod_such_as|nmod_than|nmod_like|Ax_on|Ax_in/
 
 - name: planting-date-cop-4
   priority: ${rulepriority}
   label: PlantingDate
   type: token
   pattern: |
-    @variable:Planting (?<trigger> [lemma=/on|in/])? @value:Value
+    @variable:Planting (?<trigger> [lemma=/on|in/])? @value:Date
 
 - name: planting-date-cop-8
   priority: ${rulepriority}
@@ -98,7 +98,7 @@
   Example: sowing was done on 25th October
   type: token
   pattern: |
-    @variable:Planting (?<trigger> [lemma=be]) [tag=/VBN|IN/] ("on"? @value:Value)+
+    @variable:Planting (?<trigger> [lemma=be]) [tag=/VBN|IN/] ("on"? @value:Date)+
 
 - name: planting-date-cop-9
   priority: ${rulepriority}
@@ -106,21 +106,21 @@
   Example: "Between the date of February 15 to March 15 , 2020 , are sown 66 % areas developed"
   type: token
   pattern: |
-    @value:Value ","? (?<trigger> [lemma=be]) @variable:Entity
+    @value:Date ","? (?<trigger> [lemma=be]) @variable:Entity
 
 - name: planting-date-parenthesis-1
   priority: ${rulepriority}
   label: PlantingDate
   type: token
   pattern: |
-    @variable:Planting [! (mention = "Value")]{, 4} (?<trigger> [lemma="("]) @value:Value (("," | "and")* @value:Value)*
+    @variable:Planting [! (mention = "Date")]{, 4} (?<trigger> [lemma="("]) @value:Date (("," | "and")* @value:Date)*
 
 - name: planting-date-parenthesis-2
   priority: ${rulepriority}
   label: PlantingDate
   type: token
   pattern: |
-    @value:Value (?<trigger> [lemma="("]) @variable:Planting [lemma=")"]
+    @value:Date (?<trigger> [lemma="("]) @variable:Planting [lemma=")"]
 
 - name: planting-date-range-1
   priority: ${rulepriority}
@@ -129,7 +129,7 @@
   pattern: |
     trigger = [lemma=/range|occur|be/ & tag=/^V|^J/]
     variable:Planting = /nsubj|dobj/
-    value:Value = /nmod_from|nmod_between|nmod_like|Ax_from|Ax_between/
+    value:Date = /nmod_from|nmod_between|nmod_like|Ax_from|Ax_between/
     
     
     ### Planting Events (incl crop and possibly time as values)
@@ -139,7 +139,7 @@
   label: PlantingEvent
   type: token
   pattern: |
-    (?<trigger> [lemma=with])? @variable:Planting (("," | "and")* @value:Crop)+ @value:Value?
+    (?<trigger> [lemma=with])? @variable:Planting (("," | "and")* @value:Crop)+ @value:Date?
 
 
 ### Bird attack events
@@ -151,7 +151,7 @@
   pattern: |
     trigger = [lemma=/happen|occur|be/ & tag=/^V/]
     variable:BirdAttack = /nsubj|dobj/
-    value:Value = /nmod_from|nmod_between|Ax_from|Ax_between|nmod_on|nmod_in/  
+    value:Date = /nmod_from|nmod_between|Ax_from|Ax_between|nmod_on|nmod_in/  
 
 ### Ferilizer events
 
@@ -217,4 +217,4 @@
   label: YieldAmount
   type: token
   pattern: |
-    @variable:Yield []+ @value:Value
+    @variable:Yield []+ @value:Quantity

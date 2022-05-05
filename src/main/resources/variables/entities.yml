@@ -62,24 +62,24 @@
     /(?i)(^bird|avian)/ [lemma=/attack/]
 
 ### Values ###
-# todo: make values more specific, e.g., Date, Amount?
+
 - name: value-from-date
   priority: ${rulepriority}
-  label: Value
+  label: Date
   type: token
   pattern: |
     [entity='B-DATE'] [entity='I-DATE']*
 
 - name: value-from-daterange
   priority: ${rulepriority}
-  label: Value
+  label: DateRange
   type: token
   pattern: |
     [entity='B-DATE-RANGE'] [entity='I-DATE-RANGE']*
 
 - name: measurement-rule
   priority: ${rulepriority}
-  label: Value
+  label: Quantity
   type: token
   pattern: |
     [entity='B-MEASUREMENT'] [entity = 'I-MEASUREMENT']*
@@ -101,12 +101,6 @@
     [entity='B-CROP'] [entity='I-CROP']*
 
 ### These are used for identifying context
-- name: date-standalone-vars
-  priority: ${rulepriority}
-  label: Date
-  type: token
-  pattern: |
-    [entity='B-DATE'] [entity='I-DATE']*
 
 - name: location-vars
   priority: ${rulepriority}
