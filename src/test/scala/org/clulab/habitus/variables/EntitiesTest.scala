@@ -95,43 +95,51 @@ class EntitiesTest extends Test {
             "sent4",
             "irrigation rules resulted in great variability of irrigation frequency between fields, and sub-optimal timing of nitrogen fertilizer application resulted in yield losses",
             Seq("Yield" -> Seq("yield"),
-              "Value" -> Seq("from 8 to 9 t ha-1", "from 6 to 11 t ha-1", "July", "February"),
-              "WetSeason"-> Seq("wet season"),
-              "DrySeason"-> Seq("dry season"),
-              "Variable"-> Seq("fertilizer application", "sowing"),
-              "Date"-> Seq("July", "February")
+              "Fertilizer" -> Seq("nitrogen"),
+              "Value" -> Seq("nitrogen"),
+              "Variable"-> Seq("fertilizer application")
             )
           ),
-//          VariableTest(
-//            "sent5",
-//            "The potential yields of these three cultivars are similar and are on average about 8 to 9 t ha-1 in the wet season",
-//            Array("Value","Variable", "WetSeason", "Yield"),
-//            Array(1, 1, 1, 1)
-//          ),
-//          VariableTest(
-//            "sent6",
-//            "in the 1999WS, with an average grain yield of 7.2 t ha–1. In the 2000WS",
-//            Array("Value", "Yield"),
-//            Array(1, 1)
-//          ),
-//          VariableTest(
-//            "sent7",
-//            "the average grain yield was 8.2 t ha–1",
-//            Array("Value", "Yield"),
-//            Array(1, 1)
-//          ),
-//          VariableTest(
-//            "sent8",
-//            "Average yield reached 7.2 t ha–1 in 1999 and 8.2 t ha–1 in 2000",
-//            Array("Value", "Yield"),
-//            Array(4, 1)
-//          ),
-//          VariableTest(
-//            "sent9",
-//            "Potential rice grain yields (limited by solar radiation and temperature only) are on average about 9 t ha–1 in the wet growing season from July to November",
-//            Array("Value", "Yield", "Variable", "WetSeason"),
-//            Array(3, 1, 1, 1)
-//          ),
+          VariableTest(
+            "sent5",
+            "The potential yields of these three cultivars are similar and are on average about 8 to 9 t ha-1 in the wet season",
+            Seq("Yield" -> Seq("yields"),
+              "WetSeason" -> Seq("wet season"),
+              "Value" -> Seq("8 to 9 t ha-1"),
+              "Variable"-> Seq("cultivars")
+            )
+          ),
+          VariableTest(
+            "sent6",
+            "in the 1999WS, with an average grain yield of 7.2 t ha–1. In the 2000WS",
+            Seq("Yield" -> Seq("yield"),
+              "Value" -> Seq("7.2 t ha-1"),
+            )
+          ),
+          VariableTest(
+            "sent7",
+            "the average grain yield was 8.2 t ha–1",
+            Seq("Yield" -> Seq("yield"),
+              "Value" -> Seq("8.2 t ha-1"),
+            )
+          ),
+          VariableTest(
+            "sent8",
+            "Average yield reached 7.2 t ha–1 in 1999 and 8.2 t ha–1 in 2000",
+            Seq("Yield" -> Seq("yield"),
+              "Value" -> Seq("7.2 t ha–1", "8.2 t ha–1", "1999", "2000")
+            )
+          ),
+          VariableTest(
+            "sent9",
+            "Potential rice grain yields (limited by solar radiation and temperature only) are on average about 9 t ha–1 in the wet growing season from July to November",
+            Seq("Yield" -> Seq("yields"),
+              "Crop" -> Seq("rice"),
+              "Value" -> Seq("rice", "9 t ha–1", "from July to November"),
+              "Variable" -> Seq("growing"),
+              "WetSeason" -> Seq("wet growing season")
+            )
+          ),
 //          VariableTest(
 //            "sent10",
 //            "The Senegal River Valley, located in Sahel zone, is one of the major irrigated rice-producing areas in Senegal.",
