@@ -15,7 +15,7 @@ resolvers += ("Artifactory" at "http://artifactory.cs.arizona.edu:8081/artifacto
 resolvers += "jitpack" at "https://jitpack.io"
 
 libraryDependencies ++= {
-  val procVer = "8.4.8"
+  val procVer = "8.5.0"
 
   Seq(
     "ai.lum"        %% "odinson-core"        % "0.4.0",
@@ -24,7 +24,7 @@ libraryDependencies ++= {
     "org.clulab"    %% "processors-openie"   % procVer,
     "org.clulab"    %% "processors-corenlp"  % procVer,
 
-    "org.clulab"    %% "eidos"               % "1.5.1",
+    "org.clulab"    %% "eidos"               % "1.7.0",
 
     "org.scalatest" %% "scalatest"           % "3.0.5" % "test"
   )

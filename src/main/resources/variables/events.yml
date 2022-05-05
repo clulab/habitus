@@ -27,12 +27,12 @@
 - name: crop-assignment-cop-3
   priority: ${rulepriority}
   label: CropAssignment
-  example: "Some farmers use variety like Sahel 108. They chose furthermore to grow only one cultivar Sahel 108."
+  example: "Some farmers use variety like Sahel 108. They chose furthermore to grow only one cultivar Sahel 108."#Some farmers use cultivar such as Sahel 108.
   graph: "hybrid"
   pattern: |
     trigger = [lemma=/use|plant|grow|harvest/ & tag=/^V/]
-    variable:GenericCrop = /dobj/ 
-    value:Crop = /nmod_such_as|nmod_like/ 
+    variable:GenericCrop = dobj
+    value:Crop = dobj? /nmod_such_as|nmod_like/
 
 - name: crop-assignment-verb
   priority: ${rulepriority}
@@ -130,10 +130,10 @@
     trigger = [lemma=/range|occur|be/ & tag=/^V|^J/]
     variable:Planting = /nsubj|dobj/
     value:Value = /nmod_from|nmod_between|nmod_like|Ax_from|Ax_between/
-
-
-### Planting Events (incl crop and possibly time as values)
     
+    
+    ### Planting Events (incl crop and possibly time as values)
+
 - name: planting-event-cop-2
   priority: ${rulepriority}
   label: PlantingEvent

@@ -114,6 +114,3 @@
   type: token
   pattern: |
     [entity='B-LOC'] [entity='I-LOC']*
-
-
-
