@@ -4,18 +4,38 @@
 #
 
 taxonomy:
+  - GrammaticalCategory:
+    - Noun
+    - NounPhrase
   - Entity:
     - Variable
     - Value
-    - Date
+    - Date:
+      -  DateRange
     - Location
     - Fertilizer
+    - FertilizerUse
     - Crop
     - Yield
     - DrySeason
     - WetSeason
+    - Planting
+    - Quantity
+    - BirdAttack
+    - GenericCrop
+    - GenericFertilizer
   - Event:
     - Assignment
+    - BirdAttackEvent
+    - CropAssignment
+    - FertilizerAssignment
+    - PlantingEvent
+    - PlantingDate
+    - YieldAmount
+    - WetSeasonAssignment
+    - DrySeasonAssignment
+    - FertilizerQuantity
+
 
 rules:
   - import: variables/entities.yml
@@ -23,6 +43,7 @@ rules:
       # We need our entities before we can match events
       # Here we make use of the ${rulepriority} variable
       # used in the entities.yml rules
+      lowpriority: "1"
       rulepriority: "2"
       higherpriority: "3"
 
