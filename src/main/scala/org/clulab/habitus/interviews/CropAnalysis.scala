@@ -6,12 +6,12 @@ import org.clulab.utils.{FileUtils, StringUtils, ThreadUtils}
 
 import java.io.{File, PrintWriter}
 
-object InterviewsReader {
+object CropAnalysis {
 
   def main(args: Array[String]): Unit = {
     val props = StringUtils.argsToMap(args)
-    val inputDir = props("in")
-    val outputDir = props("out")
+    val inputDir = "/Users/ika/Downloads/icrisat/test"
+    val outputDir = "/Users/ika/Downloads/icrisat/testoutput"
     val threads = props.get("threads").map(_.toInt).getOrElse(1)
 
     run(inputDir, outputDir, threads)
@@ -25,7 +25,7 @@ object InterviewsReader {
         .replace("\n", " ")
         .replace("- ", "")
 
-    val interviewsProcessor = VariableProcessor()
+    val processor = VariableProcessor()
     val files = FileUtils.findFiles(inputDir, ".txt")
     val parFiles = if (threads > 1) ThreadUtils.parallelize(files, threads) else files
 
@@ -37,16 +37,18 @@ object InterviewsReader {
           val text = cleanText(unfiltered)
           val filename = StringUtils.afterLast(file.getName, '/')
           println(s"going to parse input file: $filename")
-          val parsingResults = interviewsProcessor.parse(text)
-          val targetMentions = parsingResults.targetMentions
-          val contentMentions = targetMentions.filter(m => m.labels.contains("Event") & !m.isInstanceOf[TextBoundMention])
+          val parsingResults = processor.parse(text)
+          val targetMentions = parsingResults.allMentions
+          val contentMentions = targetMentions.filter(_.label == "CropAssignment") ++  targetMentions.filter(_.label == "Crop")
           for (m <- contentMentions) {
             pw.print(s"${filename}\t${m.label}\t${m.foundBy}\t${m.sentenceObj.getSentenceText}\t${m.text}")
-            for ((key, values) <- m.arguments) {
-              if (values.nonEmpty) {
-                // multiple args of same type are "::"-separated
-                val value = values.map(_.text.trim().replace("\t", "")).mkString("::")
-                pw.print(s"\t$key:\t$value")
+            if (!m.isInstanceOf[TextBoundMention]){
+              for ((key, values) <- m.arguments) {
+                if (values.nonEmpty) {
+                  // multiple args of same type are "::"-separated
+                  val value = values.map(_.text.trim().replace("\t", "")).mkString("::")
+                  pw.print(s"\t$key:\t$value")
+                }
               }
             }
             pw.println()

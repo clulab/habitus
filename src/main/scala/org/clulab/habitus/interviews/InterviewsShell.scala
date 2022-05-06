@@ -5,11 +5,11 @@ import org.clulab.utils._
 
 class InterviewsShell extends Shell {
   println("Creating InterviewsProcessor...\n")
-  private var interviewsProcessor: InterviewsProcessor = InterviewsProcessor()
+  private var interviewsProcessor: VariableProcessor = VariableProcessor()
 
   def reload(): Unit = {
     println("Reloading InterviewsProcessor...")
-    interviewsProcessor = InterviewsProcessor(interviewsProcessor.processor, interviewsProcessor.entityFinder)
+    interviewsProcessor = VariableProcessor(interviewsProcessor.processor, interviewsProcessor.entityFinder)
   }
 
   override def work(text: String): Unit = {
