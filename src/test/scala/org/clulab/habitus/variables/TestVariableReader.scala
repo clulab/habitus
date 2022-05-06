@@ -277,9 +277,11 @@ class TestVariableReader extends Test {
       "sent20", "One of the most important farming input is mineral fertilizer",
       Seq(("input", Seq(("mineral", ""))))
     ),
+    //
     VariableTest(
       "sent20_1", "Fertilizer nitrogen (N) has been applied at two or more levels",
-      Seq(("Fertilizer", Seq(("nitrogen", ""))))
+      Seq( ("Fertilizer", Seq(("nitrogen", ""))),
+        ("nitrogen", Seq(("N", ""))))
     ),
     VariableTest(
       "sent20_2", "In fact, use of fertilizer P has declined steadily since 1995",
