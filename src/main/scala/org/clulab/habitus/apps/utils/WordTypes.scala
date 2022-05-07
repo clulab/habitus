@@ -5,10 +5,14 @@ object WordTypes extends Enumeration {
   val AllLower, AllUpper, InitialUpper, NonWord, Other = Value
 
   def apply(word: String): WordType = {
+    require(word.nonEmpty)
+
     val letterCount = word.count(_.isLetter)
     // isLower and isUpper on non-letters will both be false.
     val lowerCount = word.count(_.isLower)
     val upperCount = word.count(_.isUpper)
+    if (word.isEmpty)
+      println(word)
 
     if (letterCount == 0) // This also accounts for word.isEmpty.
       NonWord
