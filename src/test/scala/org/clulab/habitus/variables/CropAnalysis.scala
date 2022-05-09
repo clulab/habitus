@@ -10,8 +10,8 @@ object CropAnalysis {
 
   def main(args: Array[String]): Unit = {
     val props = StringUtils.argsToMap(args)
-    val inputDir = "/Users/ika/Downloads/icrisat/test"
-    val outputDir = "/Users/ika/Downloads/icrisat/testoutput"
+    val inputDir = ""
+    val outputDir = ""
     val threads = props.get("threads").map(_.toInt).getOrElse(1)
 
     run(inputDir, outputDir, threads)
