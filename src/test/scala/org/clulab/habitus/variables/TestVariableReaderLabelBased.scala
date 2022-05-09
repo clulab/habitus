@@ -260,8 +260,80 @@ class TestVariableReaderLabelBased extends Test {
       "negTestSent", "This is a sample negative test. There should be no assignments extracted",
       "None",
       Seq.empty
-    )
+    ),
+    VariableTest(
+      "sent23", "timing of basal fertilizer application was on average 26 , 33 , and 26 days after sowing ( DAS ) in 2011WS , 2012DS , and 2013DS ,",
+      "FertilizerAssignment",
+      Seq(
+        ("FertilizerAssignment", Seq(("fertilizer application", "")))
+        )
+      ),
+    VariableTest(
+      "sent24", "Rice yields were 6.4, 6.4, and 5.1 t/ha in 2011WS, 2012DS, and 2013DS, respectively",
+      "YieldAmount",
+      Seq(
+        ("Yield", Seq(("5.1 t/ha", "5.1 t/ha")))
+      )
+    ),
+    VariableTest(
+      "sent25", "Most farmers in the Senegal River valley apply N fertilizer only twice, i.e. roughly at the start of tillering and panicle initiation (PI).",
+      "FertilizerAssignment",
+      Seq(
+        ("FertilizerAssignment", Seq(("N fertilizer", "")))
+      )
+    ),
+    VariableTest(
+      "sent26", "Farmers applied N fertilizer twice, i.e. at the start of tillering and at PI,",
+      "FertilizerAssignment",
+      Seq(
+        ("FertilizerAssignment", Seq(("N fertilizer", "")))
+      )
+    ),
+    VariableTest(
+      "sent27", "Farmers used two rice cultivars (IR1529 and Jaya) during the 1997 WS, and exclusively IR13240-108-2-2-3 (released as Sahel 108 in Sene- gal in 1994) during the 1998 DS. All rice was direct-seeded.",
+      "CropAssignment",
+      Seq(
+        ("GenericCrop", Seq(("rice was direct-seeded", "")))
+      )
+    ),
+      VariableTest(
+      "sent28", "Average yields in SRV theoretically range between 5.0 and 6.0 t ha− 1 in the rainy season and between 6.5 and 7.5 t ha− 1 in the dry season (SAED, 2019; USDA-GAIN, 2021)",
+      "DrySeasonAssignment",
+      Seq(
+        ("DrySeason", Seq(("2019", "2019-XX-XX")))
+      )
+    ),
+    VariableTest(
+      "sent28_1", "Average yields in SRV theoretically range between 5.0 and 6.0 t ha− 1 in the rainy season and between 6.5 and 7.5 t ha− 1 in the dry season (SAED, 2019; USDA-GAIN, 2021)",
+      "YieldAmount",
+      Seq(
+        ("Yield", Seq(("between 5.0 and 6.0 t", "5.0 -- 6.0 t"), ("between 6.5 and 7.5 t", "6.5 -- 7.5 t")))
+      )
+    ),
+    VariableTest(
+      "sent29", "In plots receiving fertilizer, DAP was applied basally (19.3 and 21.5 kg N and P ha−1 ),",
+      "FertilizerAssignment",
+      Seq(
+        ("GenericFertilizer", Seq(("fertilizer, DAP", "")))
+      )
+    ),
+    VariableTest(
+      "sent29_2", "In plots receiving fertilizer, DAP was applied basally (19.3 and 21.5 kg N and P ha−1 ),",
+      "FertilizerQuantity",
+      Seq(
+        ("Fertilizer", Seq(("21.5 kg", "21.5 kg")))
+      )
+    ),
+    VariableTest(
+      "sent30", "Transplanting for both management systems took place on 7 (2007 and 2008 wet season) and 25 (2009 wet season) August and on 19 March (2008 and 2009 dry season).",
+      "WetSeasonAssignment",
+      Seq(
+        ("WetSeason", Seq(("2009", "2009-XX-XX"))),
+        ("WetSeason", Seq(("August", "XXXX-08-XX")))
+      )
+    ),
   )
+
 
 
   variableTests.zipWithIndex.foreach { case (variableTest, index) => variableTest.test(index) }
