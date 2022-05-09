@@ -1,5 +1,5 @@
 package org.clulab.habitus.variables
-
+import org.clulab.utils.Closer.AutoCloser
 import org.clulab.odin.TextBoundMention
 import org.clulab.utils.{FileUtils, StringUtils, ThreadUtils}
 
