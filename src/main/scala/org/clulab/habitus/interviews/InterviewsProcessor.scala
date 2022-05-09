@@ -17,10 +17,10 @@ import java.nio.charset.StandardCharsets
 import scala.collection.JavaConverters.{asJavaIterableConverter, asScalaBufferConverter}
 
 
-class VariableProcessor(val processor: Processor,
-                        val entityFinder: CustomizableRuleBasedFinder,
-                        val extractor: ExtractorEngine,
-                        val causationExtractor: EidosSystem) extends GenericProcessor {
+class InterviewsProcessor(val processor: Processor,
+                          val entityFinder: CustomizableRuleBasedFinder,
+                          val extractor: ExtractorEngine,
+                          val causationExtractor: EidosSystem) extends GenericProcessor {
 
   // fixme: you prob want this to be from a config
   val maxHops: Int = 5
@@ -63,7 +63,7 @@ class VariableProcessor(val processor: Processor,
 }
 
 
-object VariableProcessor {
+object InterviewsProcessor {
 
   // Custom NER for variable reading
   def newLexiconNer(): LexiconNER = {
@@ -82,7 +82,7 @@ object VariableProcessor {
     lexiconNer
   }
 
-  def apply(): VariableProcessor = {
+  def apply(): InterviewsProcessor = {
     // create the processor
     Utils.initializeDyNet()
     val lexiconNER = newLexiconNer()
@@ -110,10 +110,10 @@ object VariableProcessor {
       )
     )
 
-    VariableProcessor(processor, finder)
+    InterviewsProcessor(processor, finder)
   }
 
-  def apply(processor: Processor, finder: CustomizableRuleBasedFinder): VariableProcessor = {
+  def apply(processor: Processor, finder: CustomizableRuleBasedFinder): InterviewsProcessor = {
     // get current working directory
     val cwd = new File(System.getProperty("user.dir"))
     // Find resource dir from project root.
@@ -128,7 +128,7 @@ object VariableProcessor {
       // creates an extractor engine using the rules and the default actions
       val extractor = ExtractorEngine(rules, actions, actions.cleanupAction) // , path = Some(resourceDir)) // TODO: do we still need this?
       val causationExtractor = SimpleEidos(useGeoNorm = false, useTimeNorm = false)
-      new VariableProcessor(processor, finder, extractor, causationExtractor)
+      new InterviewsProcessor(processor, finder, extractor, causationExtractor)
     } else {
       // read rules from yml file in resources
       val source = io.Source.fromURL(getClass.getResource("/interviews/master.yml"))
@@ -137,7 +137,7 @@ object VariableProcessor {
       // creates an extractor engine using the rules and the default actions
       val extractor = ExtractorEngine(rules, actions, actions.cleanupAction)
       val causationExtractor = SimpleEidos(useGeoNorm = false, useTimeNorm = false)
-      new VariableProcessor(processor, finder, extractor, causationExtractor)
+      new InterviewsProcessor(processor, finder, extractor, causationExtractor)
     }
   }
 
