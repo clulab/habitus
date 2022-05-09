@@ -25,7 +25,7 @@ object InterviewsReader {
         .replace("\n", " ")
         .replace("- ", "")
 
-    val interviewsProcessor = VariableProcessor()
+    val interviewsProcessor = InterviewsProcessor()
     val files = FileUtils.findFiles(inputDir, ".txt")
     val parFiles = if (threads > 1) ThreadUtils.parallelize(files, threads) else files
 
