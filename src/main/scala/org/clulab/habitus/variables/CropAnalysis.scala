@@ -1,7 +1,6 @@
 package org.clulab.habitus.variables
 
 import org.clulab.odin.TextBoundMention
-import org.clulab.utils.Closer.AutoCloser
 import org.clulab.utils.{FileUtils, StringUtils, ThreadUtils}
 
 import java.io.{File, PrintWriter}
@@ -22,8 +21,8 @@ object CropAnalysis {
 
     // fixme: temporary, simple text cleanup
     def cleanText(text: String): String = text
-        .replace("\n", " ")
-        .replace("- ", "")
+      .replace("\n", " ")
+      .replace("- ", "")
 
     val processor = VariableProcessor()
     val files = FileUtils.findFiles(inputDir, ".txt")
