@@ -216,7 +216,8 @@ class TestVariableReaderLabelBased extends Test {
       "sent17", "Average WS T0 yield was high, i.e. 7.3 ha−1 (ranging from 5.0 to 9.4 t ha−1),",
       "YieldAmount",
       Seq(
-        ("Yield", Seq(("7.3 ha", "7.3 ha"), ("from 5.0 to 9.4 t", "5.0 -- 9.4 t")))
+        ("Yield", Seq(("7.3 ha", "7.3 ha"))),
+        ("Yield",  Seq(("from 5.0 to 9.4 t", "5.0 -- 9.4 t")))
       )
     ),
     VariableTest(
@@ -230,7 +231,8 @@ class TestVariableReaderLabelBased extends Test {
       "sent19", "Average DS T0 yield was relatively low, i.e. 4.4 t ha− 1 (ranging from 2.5 to 6.0 t ha− 1)",
       "YieldAmount",
       Seq(
-        ("Yield", Seq(("from 2.5 to 6.0 t", "2.5 -- 6.0 t"),("4.4 t", "4.4 t")))
+        ("Yield", Seq(("4.4 t", "4.4 t"))),
+        ("Yield", Seq(("from 2.5 to 6.0 t", "2.5 -- 6.0 t")))
       )
     ),
     VariableTest(
