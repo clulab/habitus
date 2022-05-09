@@ -19,14 +19,10 @@ class LexiconNerBase() {
       val cwd = new File(System.getProperty("user.dir"))
       new File(cwd, "src/main/resources")
     }
-    val kbs = Seq(
-      "lexicons/ACRONYM.tsv"
-    )
+    val kbs = Seq("lexicons/ACRONYM.tsv")
     val isLocal = kbs.forall(new File(resourceDir, _).exists)
     val lexiconNer = LexiconNER(kbs,
-      Seq(
-        false // case insensitive match for fertilizers
-      ),
+      Seq(false), // case insensitive match for fertilizers
       if (isLocal) Some(resourceDir) else None
     )
 
@@ -40,8 +36,8 @@ class LexiconNerBase() {
       processor.tagPartsOfSpeech(doc)
       processor.recognizeNamedEntities(doc)
     }
-    for (sent <- doc.sentences) {
-      sent.words.zip(sent.entities.get).foreach { case (word, entity) =>
+    for (sentence <- doc.sentences) {
+      sentence.words.zip(sentence.entities.get).foreach { case (word, entity) =>
         printWriter.println(s"$word\t$entity")
       }
       printWriter.println("\n")
