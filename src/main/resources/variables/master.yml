@@ -11,12 +11,14 @@ taxonomy:
     - Variable
     - Value
     - Date:
-        -  DateRange
+      -  DateRange
     - Location
     - Fertilizer
     - FertilizerUse
     - Crop
     - Yield
+    - DrySeason
+    - WetSeason
     - Planting
     - Quantity
     - BirdAttack
@@ -30,6 +32,9 @@ taxonomy:
     - PlantingEvent
     - PlantingDate
     - YieldAmount
+    - WetSeasonAssignment
+    - DrySeasonAssignment
+    - FertilizerQuantity
 
 
 rules:
@@ -40,9 +45,10 @@ rules:
       # used in the entities.yml rules
       lowpriority: "1"
       rulepriority: "2"
+      higherpriority: "3"
 
   - import: variables/events.yml
     vars:
       label: Assignment
-      rulepriority: "3+"
+      rulepriority: "4+"
 

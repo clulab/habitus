@@ -212,9 +212,38 @@
     trigger = @GenericFertilizer
     value:Noun = (</compound/ | /compound/) [!lemma = /usage/]
 
-- name: ${label}-yield-event
+- name: ${label}-yield-event-1
   priority: ${rulepriority}
   label: YieldAmount
   type: token
   pattern: |
     @variable:Yield []+ @value:Quantity
+    
+- name: ${label}-yield-event
+  priority: ${rulepriority}
+  label: YieldAmount
+  type: token
+  pattern: |
+    @variable:Yield []*? @value:Quantity  ([]+? (","|"and") @value:Quantity)*
+
+#Todo: Some event rule for assigning wet/dry seasons period to the respective labels.
+- name: ${label}-dry-season-event
+  priority: ${rulepriority}
+  label: DrySeasonAssignment
+  type: token
+  pattern: |
+    @variable:DrySeason ([]*? @value:Date)
+
+- name: ${label}-wet-season-event
+  priority: ${rulepriority}
+  label: WetSeasonAssignment
+  type: token
+  pattern: |
+    @variable:WetSeason []*? @value:Date
+
+- name: ${label}-fertilizer-event
+  priority: ${rulepriority}
+  label: FertilizerQuantity
+  type: token
+  pattern: |
+    @variable:Fertilizer []*? @value:Quantity

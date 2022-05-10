@@ -336,10 +336,12 @@ class TestVariableReader extends Test {
       "FertilizerAssignment",
       Seq(("fertilizer", Seq(("mineral", ""))))
     ),
+    //
     VariableTest(
       "sent20_1", "Fertilizer nitrogen (N) has been applied at two or more levels",
       "FertilizerAssignment",
       Seq(("Fertilizer", Seq(("nitrogen", ""))))
+
     ),
     VariableTest(
       "sent20_2", "In fact, use of fertilizer P has declined steadily since 1995",

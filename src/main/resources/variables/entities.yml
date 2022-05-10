@@ -100,6 +100,27 @@
   pattern: |
     [entity='B-CROP'] [entity='I-CROP']*
 
+- name: wet-season
+  priority: ${rulepriority}
+  label: WetSeason
+  type: token
+  pattern: |
+    /(?i)(wet|rainy )/ []*? [lemma = /\bseason\b/]
+
+- name: dry-season
+  priority: ${rulepriority}
+  label: DrySeason
+  type: token
+  pattern: |
+    /(?i)(dry|hot)/ []*? [lemma = /\bseason\b/]
+
+- name: complex-date
+  priority: ${higherpriority}
+  label: DateRange
+  type: token
+  pattern: |
+    @Value "/" @Value ("/" @Value)?
+
 ### These are used for identifying context
 
 - name: location-vars
