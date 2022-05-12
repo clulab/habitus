@@ -9,8 +9,8 @@ object CropAnalysis {
 
   def main(args: Array[String]): Unit = {
     val props = StringUtils.argsToMap(args)
-    val inputDir = ""
-    val outputDir = ""
+    val inputDir = "/Users/ika/Downloads/icrisat/txt 2"
+    val outputDir = "/Users/ika/Downloads/icrisat/testoutput"
     val threads = props.get("threads").map(_.toInt).getOrElse(1)
 
     run(inputDir, outputDir, threads)
@@ -38,7 +38,7 @@ object CropAnalysis {
           println(s"going to parse input file: $filename")
           val parsingResults = processor.parse(text)
           val targetMentions = parsingResults.allMentions
-          val contentMentions = targetMentions.filter(m => m.label == "CropAssignment" || m.label == "Crop")
+          val contentMentions = targetMentions //.filter(m => m.label == "CropAssignment" || m.label == "Crop")
           for (m <- contentMentions) {
             pw.print(s"${filename}\t${m.label}\t${m.foundBy}\t${m.sentenceObj.getSentenceText}\t${m.text}")
             if (!m.isInstanceOf[TextBoundMention]) {

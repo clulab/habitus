@@ -167,6 +167,225 @@ class TestEntities extends Test {
         "Quantity" -> Seq("between 4 and 5 t ha-1")
       )
     ),
+    VariableTest(
+      "sent14",
+      "identified sub-optimal timing of crop management interventions (i.e. date of sowing or trans- planting, herbicide and fertilizer applications, and harvest and post-harvest activities) as major constraints",
+      Seq(
+        "Planting" -> Seq("sowing", "planting"),
+        "GenericFertilizer" -> Seq("fertilizer"),
+        "GenericCrop" -> Seq("crop"),
+        "FertilizerUse" -> Seq("fertilizer applications")
+      )
+    ),
+    VariableTest(
+      "sent15",
+      "Farmers generally did not follow recommended sowing time, fertilizer rates, and timings – they generally sowed late, applied late and in excess.",
+      Seq(
+        "Planting" -> Seq("sowing time", "sowed"),
+        "GenericFertilizer" -> Seq("fertilizer"),
+        "FertilizerUse" -> Seq("fertilizer")
+      )
+    ),
+    VariableTest(
+      "sent16",
+      "recommended N rates by Société Nationale d’Aménagement et d’Exploitation des Terres du Delta du fleuve Sénégal et des Vallées du fleuve Sénégal (SAED) range from 133 to 179 kg/ha, applied as di-ammonium phosphate (DAP) at around sowing or transplanting, and three splits of urea (at early tillering, panicle initiation, and booting)",
+      Seq(
+        "Fertilizer" -> Seq("phosphate", "DAP", "urea", "N", "S", "S"),
+        "Planting" -> Seq("sowing", "transplanting"),
+        "Quantity" -> Seq("from 133 to 179 kg/ha"),
+      )
+    ),
+    VariableTest(
+      "sent17",
+      "The recommended rate is higher in the dry season (Haefele and Wopereis, 2004), and higher in the Senegal River delta than in the middle valley, where extreme tem- peratures tend to occur and affect potential yield.",
+      Seq(
+        "Date" -> Seq("2004"),
+        "DrySeason" -> Seq("dry season"),
+        "Location" -> Seq("Senegal River"),
+        "Yield" -> Seq("yield")
+      )
+    ),
+    VariableTest(
+      "sent18",
+      "Seeding dates ranged from 22 August to 26 September in 2011WS, from 29 February to 1 April in the 2012DS, and from 5 to 23 March in the 2013DS.",
+      Seq(
+        "DateRange" -> Seq("from 22 August to 26 September", "from 29 February to 1 April", "from 5 to 23 March"),
+        "GenericCrop" -> Seq("Seeding"),
+        "Planting" -> Seq("Seeding dates"),
+      )
+    ),
+    VariableTest(
+      "sent19",
+      "In transplanted rice, seedling age at transplanting was between 26 and 35 days. All farmers grew improved varieties",
+      Seq(
+        "GenericCrop" -> Seq("varieties", "seedling"),
+        "Crop" -> Seq("rice"),
+        "Quantity" -> Seq("between 26 and 35 days"),
+        "Planting" -> Seq("transplanted")
+      )
+    ),
+    VariableTest(
+      "sent20",
+      "Popular varieties in the wet season were Sahel 202 (65% of farmers) and Sahel 201 (30%), while 60% and 92% grew Sahel 108 in 2012DS and 2013DS, respectively.",
+      Seq(
+        "Crop" -> Seq("Sahel", "Sahel 202", "Sahel 201"),
+        "GenericCrop" -> Seq("varieties"),
+        // FIXME, not exactly an ammount!
+        "Quantity" -> Seq("108 in"),
+        "WetSeason" -> Seq("wet season")
+      )
+    ),
+    VariableTest(
+      "sent21",
+      "timing of basal fertilizer application was on average 26, 33, and 26 days after sowing (DAS) in 2011WS, 2012DS, and 2013DS",
+      Seq(
+        "FertilizerUse" -> Seq("fertilizer application"),
+        "Quantity" -> Seq("26 days"),
+        "Planting" -> Seq("sowing"),
+        "GenericFertilizer" -> Seq("fertilizer")
+      )
+    ),
+    VariableTest(
+      "sent22",
+      "timing of first top-dressing of N on average for each season was 59–61 DAS",
+      Seq(
+        "Fertilizer" -> Seq("N")
+      )
+    ),
+    VariableTest(
+      "sent23",
+      "WS sowing in July and about 9–10 t ha−1 for dry season (DS) sowing in February in the Senegal River delta.",
+      Seq(
+        "Quantity" -> Seq("–10 t"),
+        "Planting" -> Seq("sowing", "sowing"),
+        "Location" -> Seq("Senegal River"),
+        "DrySeason" -> Seq("dry season"),
+        "Date" -> Seq("February", "July"),
+      )
+    ),
+    VariableTest(
+      "sent24",
+      "Major biophysical constraints included phosphorus (P) deficient soils, weed competition, relatively low nitrogen (N) application rates and sub-optimal timing of N application.",
+      Seq(
+        "Fertilizer" -> Seq("N", "N", "phosphorus", "P", "nitrogen")
+      )
+    ),
+    VariableTest(
+      "sent25",
+      "Most farmers in the Senegal River valley apply N fertilizer only twice, i.e. roughly at the start of tillering and panicle initiation (PI).",
+      Seq(
+        "Location" -> Seq("Senegal River"),
+        "GenericFertilizer" -> Seq("fertilizer"),
+        "FertilizerUse" -> Seq("fertilizer"),
+        "Fertilizer" -> Seq("N")
+      )
+    ),
+  VariableTest(
+    "sent26",
+    "Farmers applied N fertilizer twice, i.e. at the start of tillering and at PI,",
+    Seq(
+      "Location" -> Seq("PI"),
+      "GenericFertilizer" -> Seq("fertilizer"),
+      "FertilizerUse" -> Seq("fertilizer"),
+      "Fertilizer" -> Seq("N")
+    )
+  ),
+    VariableTest(
+      "sent27",
+      "Farmers used two rice cultivars (IR1529 and Jaya) during the 1997 WS, and exclusively IR13240-108-2-2-3 (released as Sahel 108 in Senegal in 1994) during the 1998 DS. All rice was direct-seeded.",
+      Seq(
+        "GenericCrop" -> Seq("direct-seeded", "cultivars"),
+        "Crop" -> Seq("rice", "Sahel", "Jaya", "rice"),
+        "Quantity" -> Seq("108 in", "1998 DS"),
+        "Location" -> Seq("Senegal"),
+        "Date" -> Seq("1994", "1997")
+
+      )
+    ),
+    VariableTest(
+      "sent27",
+      "Average WS T0 yield was high, i.e. 7.3 ha−1 (ranging from 5.0 to 9.4 t ha−1), considering the region’s potential yield of about 9 t ha−1.",
+      Seq(
+        "Yield" -> Seq("yield", "yield"),
+        "Quantity" -> Seq("9 t", "from 5.0 to 9.4 t", "7.3 ha")
+      )
+    ),
+    VariableTest(
+      "sent28",
+      "Average DS T0 yield was relatively low, i.e. 4.4 t ha− 1 (ranging from 2.5 to 6.0 t ha− 1)",
+      Seq(
+        "Yield" -> Seq("yield"),
+        "Quantity" -> Seq("4.4 t", "from 2.5 to 6.0 t")
+      )
+    ),
+    VariableTest(
+      "sent29",
+      "The favourable climate conditions and the adoption of varieties with shorter cropping cycles allow for two rice harvests per year, namel in the dry and rainy seasons (Van Oort et al., 2016).",
+      Seq(
+        "GenericCrop" -> Seq("varieties", "cropping"),
+        //FIXME; seasons separated by 'and' extracted as one entity.
+        "DrySeason" -> Seq("dry and rainy seasons"),
+        "Crop" -> Seq("rice"),
+        "Date" -> Seq("2016")
+      )
+    ),
+    VariableTest(
+      "sent30",
+      "In the SRV, production areas are typically larger in the dry season, which brings fewer problems with pests and birds (Tanaka et al., 2015; USDA-GAIN, 2018).",
+      Seq(
+        "DrySeason" -> Seq("dry season"),
+        "Date" -> Seq("2015", "2018")
+      )
+    ),
+    VariableTest(
+      "sent31",
+      "Average yields in SRV theoretically range between 5.0 and 6.0 t ha− 1 in the rainy season and between 6.5 and 7.5 t ha− 1 in the dry season (SAED, 2019; USDA-GAIN, 2021)",
+      Seq(
+        "Yield" -> Seq("yields"),
+        "DrySeason" -> Seq("dry season"),
+        "Date" -> Seq("2021", "2019"),
+        "Quantity" -> Seq("− 1 in", "between 6.5 and 7.5 t", "− 1 in", "between 5.0 and 6.0 t"),
+        // FIXME; this is not  a location, i think.
+        "Location" -> Seq("USDA-GAIN")
+      )
+    ),
+    VariableTest(
+      "sent32",
+      "seeds of the rice variety Sahel 108 are sown, a short- cycle variety (around 125 days)",
+      Seq(
+        "Quantity" -> Seq("125 days"),
+        "Planting" -> Seq("sown"),
+        "GenericCrop" -> Seq("variety", "variety", "seeds"),
+        "Crop" -> Seq("rice", "Sahel 108")
+      )
+    ),
+    VariableTest(
+      "sent33",
+      "Broadcast seeding is carried out by hand on irrigated plots with a 2–5 cm depth sheet of water",
+      Seq(
+        //FIXME; range instead of -5 cm
+        "Quantity" -> Seq("–5 cm"),
+        "Planting" -> Seq("seeding"),
+        "GenericCrop" -> Seq("seeding")
+      )
+    ),
+    VariableTest(
+      "sent34",
+      "only two top dressings are applied in the CONV scenario ( the first one with urea and dia- mmonium phosphate (DAP) at the beginning of tillering; and the second only with urea at panicle initiation.",
+      Seq(
+        //FIXME; not a location
+        "Location" -> Seq("CONV"),
+        "Fertilizer" -> Seq("urea", "DAP", "phosphate", "urea"),
+      )
+    ),
+    VariableTest(
+      "sent35",
+      "In INT, a basic dressing is firstly applied with urea and DAP, followed by two top-dressing applications with urea.",
+      Seq(
+        "Fertilizer" -> Seq("urea", "DAP", "urea"),
+      )
+    ),
+
 
 
   )
