@@ -48,7 +48,7 @@ class TestEntities extends Test {
           targetMentions.length should equal(values.length)
 
 
-          val targetMentionTexts = targetMentions.map(_.text)
+          val targetMentionTexts = targetMentions.map(_.text) // text of similar kinds but for norms(
           //          println(targetMentionTexts)
 
           //check if the required texts were extracted
@@ -230,8 +230,7 @@ class TestEntities extends Test {
       Seq(
         "Crop" -> Seq("Sahel", "Sahel 202", "Sahel 201"),
         "GenericCrop" -> Seq("varieties"),
-        // FIXME, not exactly an ammount!
-        "Quantity" -> Seq("108 in"),
+        // FIXME, not exactly an amount! -->  "Quantity" -> Seq("108 in"),
         "WetSeason" -> Seq("wet season")
       )
     ),
@@ -256,7 +255,7 @@ class TestEntities extends Test {
       "sent23",
       "WS sowing in July and about 9–10 t ha−1 for dry season (DS) sowing in February in the Senegal River delta.",
       Seq(
-        "Quantity" -> Seq("–10 t"),
+         "Quantity" -> Seq("9–10 t ha-1"),
         "Planting" -> Seq("sowing", "sowing"),
         "Location" -> Seq("Senegal River"),
         "DrySeason" -> Seq("dry season"),
@@ -361,10 +360,10 @@ class TestEntities extends Test {
     ),
     VariableTest(
       "sent33",
-      "Broadcast seeding is carried out by hand on irrigated plots with a 2–5 cm depth sheet of water",
+      "Broadcast seeding is carried out by hand on irrigated plots with a 2-5 cm depth sheet of water",
       Seq(
         //FIXME; range instead of -5 cm
-        "Quantity" -> Seq("–5 cm"),
+        "Quantity" -> Seq("2-5 cm"),
         "Planting" -> Seq("seeding"),
         "GenericCrop" -> Seq("seeding")
       )
