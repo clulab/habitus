@@ -289,13 +289,13 @@ class TestVariableReaderLabelBased extends Test {
         ("FertilizerAssignment", Seq(("N fertilizer", "")))
       )
     ),
-    VariableTest(
-      "sent27", "Farmers used two rice cultivars (IR1529 and Jaya) during the 1997 WS, and exclusively IR13240-108-2-2-3 (released as Sahel 108 in Sene- gal in 1994) during the 1998 DS. All rice was direct-seeded.",
-      "CropAssignment",
-      Seq(
-        ("GenericCrop", Seq(("rice was direct-seeded", "")))
-      )
-    ),
+//    VariableTest(
+//      "sent27", "Farmers used two rice cultivars (IR1529 and Jaya) during the 1997 WS, and exclusively IR13240-108-2-2-3 (released as Sahel 108 in Senegal in 1994) during the 1998 DS. All rice was direct-seeded.",
+//      "CropAssignment",
+//      Seq(
+//        ("GenericCrop", Seq(("rice was direct-seeded", ""))) fixme: if we keep CropAssignments, there should be an assignment between cultivar and rice, cultivar and IR1528, and cultivar and Jaya ('cultivar' with the GenericCrop label); we do not need assignment that includes 'direct-seeded'
+//      )
+//    ),
       VariableTest(
       "sent28", "Average yields in SRV theoretically range between 5.0 and 6.0 t ha− 1 in the rainy season and between 6.5 and 7.5 t ha− 1 in the dry season (SAED, 2019; USDA-GAIN, 2021)",
       "DrySeasonAssignment",
