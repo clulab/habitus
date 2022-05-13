@@ -386,6 +386,79 @@ class TestEntities extends Test {
       )
     ),
 
+    VariableTest(
+      "sent36",
+      "average yields for the two seasons assessed of 4832 kg ha− 1 and 7425 kg ha− 1 for the areas under CONV and INT management, respectively.",
+      Seq(
+        "Yield" -> Seq("yields"),
+        "Quantity" -> Seq("4832 kg", "7425 kg")
+      )
+    ),
+    VariableTest(
+      "sent37",
+      "Agricultural inputs, machinery operations and yields considered in the four scenarios evaluated: conventional (CONV), intensive (INT), and the two refer- ence scenarios SAED_2td and SAED_3td. DAP: Diammonium phosphate.",
+      Seq(
+        "FertilizerUse" -> Seq("inputs"),
+        "Yield" -> Seq("yields"),
+        "Fertilizer" -> Seq("DAP", "Diammonium phosphate")
+      )
+    ),
+    VariableTest(
+      "sent38",
+      "Fertilisers considered and associated nutrients in the four scenarios evaluated: conventional (CONV), intensive (INT), and the two reference scenarios SAED_2td and SAED_3td. DAP: diammonium phosphate.",
+      Seq(
+        "Fertilizer" -> Seq("DAP", "diammonium phosphate")
+      )
+    ),
+    VariableTest(
+      "sent39",
+      "In plots receiving fertilizer, DAP was applied basally (19.3 and 21.5 kg N and P ha−1 ), and three urea splits were broadcasted into 1–5 cm of water (101.3 kg N ha−1 ; 40% at early-tillering, 40% at pan- icle initiation, and 20% at heading)",
+      Seq(
+        "Fertilizer" -> Seq("DAP", "N", "P", "urea", "N"),
+        "Quantity" -> Seq("101.3 kg", "–5 cm", "21.5 kg"),
+        "GenericFertilizer" -> Seq("fertilizer"),
+        "FertilizerUse" -> Seq("fertilizer"),
+        "Fertilizer" -> Seq("N", "urea", "P", "N", "DAP")
+      )
+    ),
+    VariableTest(
+      "sent39",
+      "The short-duration O. sativa cultivar Sahel-108 (IR-13240-108- 2-2-3) was grown during all seasons.",
+      Seq(
+        // FIXME; Sahel-108 not extracting here;
+        "GenericCrop" -> Seq("cultivar"),
+      )
+    ),
+    VariableTest(
+      "sent39",
+      "Transplanting for both management systems took place on 7 (2007 and 2008 wet season) and 25 (2009 wet season) August and on 19 March (2008 and 2009 dry season).",
+      Seq(
+        "Date" -> Seq("2007", "2008", "2009", "August", "19 March", "2008", "2009"),
+        "DrySeason" -> Seq("dry season"),
+        "Planting" -> Seq("Transplanting"),
+        "WetSeason" -> Seq("wet season", "wet season")
+      )
+    ),
+    VariableTest(
+      "sent40",
+      "Year, site, crop management, soil properties, and rainfall distribution in the experiments in Senegal used for DSSAT calibration and validation.",
+      Seq(
+        "Location" -> Seq("Senegal"),
+        "GenericCrop" -> Seq("crop")
+      )
+    ),
+    VariableTest(
+      "sent41",
+      "das days after sowing, Fert fertilizer treatment, with F1: recommended dose (80 kg N ha−1), i.e., 200 kg ha−1 NPK (15.15.15) at sowing + 100 kg ha−1 urea at 20 das + 50 kg ha−1 urea at 50 das. F2: F1/4 (20 kg N ha−1);",
+      Seq(
+        "Fertilizer" -> Seq("N", "NPK", "urea", "urea" ),
+        "FertilizerUse" -> Seq("fertilizer"),
+        "GenericFertilizer" -> Seq("fertilizer"),
+        "Planting" -> Seq("sowing", "sowing"),
+        "Quantity" -> Seq("80 kg", "200 kg", "+ 100 kg", "+ 50 kg")
+      )
+    ),
+
 
 
   )
