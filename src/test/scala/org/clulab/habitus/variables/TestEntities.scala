@@ -283,7 +283,7 @@ class TestEntities extends Test {
     "sent26",
     "Farmers applied N fertilizer twice, i.e. at the start of tillering and at PI,",
     Seq(
-      "Location" -> Seq("PI"),
+      // FIXME is "PI" a location? no?      "Location" -> Seq("PI"),
       "GenericFertilizer" -> Seq("fertilizer"),
       "FertilizerUse" -> Seq("fertilizer"),
       "Fertilizer" -> Seq("N")
@@ -343,9 +343,9 @@ class TestEntities extends Test {
         "Yield" -> Seq("yields"),
         "DrySeason" -> Seq("dry season"),
         "Date" -> Seq("2021", "2019"),
-        "Quantity" -> Seq("− 1 in", "between 6.5 and 7.5 t", "− 1 in", "between 5.0 and 6.0 t"),
-        // FIXME; this is not  a location, i think.
-        "Location" -> Seq("USDA-GAIN")
+        //FIXME -- Extraction of undesired "-1"
+        "Quantity" -> Seq("between 6.5 and 7.5 t", "between 5.0 and 6.0 t")
+        // FIXME; this is not  a location, i think. "Location" -> Seq("USDA-GAIN")
       )
     ),
     VariableTest(
@@ -372,8 +372,7 @@ class TestEntities extends Test {
       "sent34",
       "only two top dressings are applied in the CONV scenario ( the first one with urea and dia- mmonium phosphate (DAP) at the beginning of tillering; and the second only with urea at panicle initiation.",
       Seq(
-        //FIXME; not a location
-        "Location" -> Seq("CONV"),
+        //FIXME; not a location "Location" -> Seq("CONV"),
         "Fertilizer" -> Seq("urea", "DAP", "phosphate", "urea"),
       )
     ),
@@ -414,7 +413,7 @@ class TestEntities extends Test {
       "In plots receiving fertilizer, DAP was applied basally (19.3 and 21.5 kg N and P ha−1 ), and three urea splits were broadcasted into 1–5 cm of water (101.3 kg N ha−1 ; 40% at early-tillering, 40% at pan- icle initiation, and 20% at heading)",
       Seq(
         "Fertilizer" -> Seq("DAP", "N", "P", "urea", "N"),
-        "Quantity" -> Seq("101.3 kg", "–5 cm", "21.5 kg"),
+        "Quantity" -> Seq("101.3 kg", "1–5 cm", "21.5 kg"),
         "GenericFertilizer" -> Seq("fertilizer"),
         "FertilizerUse" -> Seq("fertilizer"),
         "Fertilizer" -> Seq("N", "urea", "P", "N", "DAP")
@@ -454,7 +453,7 @@ class TestEntities extends Test {
         "FertilizerUse" -> Seq("fertilizer"),
         "GenericFertilizer" -> Seq("fertilizer"),
         "Planting" -> Seq("sowing", "sowing"),
-        "Quantity" -> Seq("80 kg", "200 kg", "+ 100 kg", "+ 50 kg")
+        "Quantity" -> Seq("80 kg", "200 kg", "100 kg ha−1", "50 kg ha−1")
       )
     ),
 
