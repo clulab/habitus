@@ -129,3 +129,17 @@
   type: token
   pattern: |
     [entity='B-LOC'] [entity='I-LOC']*
+
+- name: duration-property
+  priority: ${rulepriority}
+  label: Duration
+  type: token
+  pattern: |
+    /(?i)(^short|medium)/ [lemma=/duration/]
+
+- name: grain-property
+  priority: ${rulepriority}
+  label: GrainProperty
+  type: token
+  pattern: |
+    /(?i)(^bold|slender)/ [lemma=/grain/]

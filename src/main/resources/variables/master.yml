@@ -24,6 +24,8 @@ taxonomy:
     - BirdAttack
     - GenericCrop
     - GenericFertilizer
+    - Duration
+    - GrainProperty
   - Event:
     - Assignment
     - BirdAttackEvent
@@ -35,6 +37,7 @@ taxonomy:
     - WetSeasonAssignment
     - DrySeasonAssignment
     - FertilizerQuantity
+    - PropertyAssignment
 
 
 rules:
