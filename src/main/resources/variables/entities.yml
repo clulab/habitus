@@ -17,7 +17,7 @@
   label: GenericCrop
   type: token
   pattern: |
-    /(?i)(crop|cultivar|cultivation|seed|variety|varieties)/
+    [lemma = /(?i)\b(crop|cultivar|cultivation|seed|variety|varieties)\b/]
 
 - name: generic-fertilizer-rule
   priority: ${rulepriority}
@@ -45,7 +45,7 @@
   label: FertilizerUse
   type: token
   pattern: |
-    /(?i)(fertilizer|input)/ /use|usage|application/?
+    /(?i)fertilizer/ /use|usage|application/? | /(?i)input/
 
 - name: yield-rule
   priority: ${rulepriority}
