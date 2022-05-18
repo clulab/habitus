@@ -289,7 +289,7 @@ class TestEntities extends Test {
     VariableTest(
       failingTest,
       "sent23",
-      "WS sowing in July and about 9–10 t ha−1 for dry season (DS) sowing in February in the Senegal River delta.",
+      "WS sowing in July and about 9-10 t ha-1 for dry season (DS) sowing in February in the Senegal River delta.",
       Seq(
         "Quantity" -> Seq("9–10 t ha-1"), //fixme: need measurement in processors
         "Planting" -> Seq("sowing", "sowing"),

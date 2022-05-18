@@ -12,6 +12,7 @@ class TestEntitiesNorms extends Test {
   val vp: VariableProcessor = VariableProcessor()
 
   case class VariableTest(
+                           shouldable: Shouldable,
                            name: String,
                            // Text for extraction
                            text: String,
@@ -31,7 +32,7 @@ class TestEntitiesNorms extends Test {
 
 
     def test(index: Int): Unit = {
-      it should s"filter by correct label(s) and value size of sent $index-$name correctly" in {
+      shouldable should s"filter by correct label(s) and value size of sent $name correctly" in {
         if (index == -1)
           println("Put a breakpoint here to observe a particular test.")
 
@@ -69,11 +70,13 @@ class TestEntitiesNorms extends Test {
 
   val variableTests: Array[VariableTest] = Array(
     VariableTest(
+      passingTest,
       "sent1",
       "with an average yield over years yields and seasons of 5 t ha-1",
       Seq("Quantity" -> Seq(("5 t ha-1","5.0 t/ha")) )
     ),
     VariableTest(
+      passingTest,
       "sent2",
       "The potential grain yield that can be obtained ranges from 8 to 9 t ha-1 in the wet season (July sowing) and from 6 to 11 t ha-1 in the dry season (February sowing)",
       Seq("Date"-> Seq(("July", "XXXX-07-XX"), ("February", "XXXX-02-XX")),
@@ -82,6 +85,7 @@ class TestEntitiesNorms extends Test {
     ),
 
     VariableTest(
+      passingTest,
       "sent3",
       "The potential yields of these three cultivars are similar and are on average about 8 to 9 t ha-1 in the wet season",
       Seq(
@@ -89,6 +93,7 @@ class TestEntitiesNorms extends Test {
       )
     ),
     VariableTest(
+      passingTest,
       "sent4",
       "in the 1999WS, with an average grain yield of 7.2 t ha–1. In the 2000WS",
       Seq(
@@ -96,6 +101,7 @@ class TestEntitiesNorms extends Test {
       )
     ),
     VariableTest(
+      passingTest,
       "sent5",
       "the average grain yield was 8.2 t ha–1",
       Seq(
@@ -103,6 +109,7 @@ class TestEntitiesNorms extends Test {
       )
     ),
     VariableTest(
+      passingTest,
       "sent6",
       "Average yield reached 7.2 t ha–1 in 1999 and 8.2 t ha–1 in 2000",
       Seq(
@@ -110,6 +117,7 @@ class TestEntitiesNorms extends Test {
       )
     ),
     VariableTest(
+      passingTest,
       "sent7",
       "Potential rice grain yields (limited by solar radiation and temperature only) are on average about 9 t ha–1 in the wet growing season from July to November",
       Seq(
@@ -117,15 +125,16 @@ class TestEntitiesNorms extends Test {
         "DateRange" -> Seq(("from July to November", "XXXX-07-XX -- XXXX-11-XX")),
       )
     ),
-//    VariableTest(
-//      "sent8",
-//      "These correspond to the dry season (from February/March to June/July).",
-//      Seq(
-//        "DateRange" -> Seq("March to June", "from February"),
-//        "Date" -> Seq("July")
-//      )
-//    ),
     VariableTest(
+      failingTest,
+      "sent8",
+      "These correspond to the dry season (from February/March to June/July).",
+      Seq(
+        "DateRange" -> Seq(("", ""))
+      )
+    ),
+    VariableTest(
+      passingTest,
       "sent9",
       "Farmers’ yields are on average between 4 and 5 t ha-1, and, therefore, far below potential.",
       Seq(
@@ -133,6 +142,7 @@ class TestEntitiesNorms extends Test {
       )
     ),
     VariableTest(
+      passingTest,
       "sent10",
       "recommended N rates by Société Nationale d’Aménagement et d’Exploitation des Terres du Delta du fleuve Sénégal et des Vallées du fleuve Sénégal (SAED) range from 133 to 179 kg/ha, applied as di-ammonium phosphate (DAP) at around sowing or transplanting, and three splits of urea (at early tillering, panicle initiation, and booting)",
       Seq(
@@ -140,6 +150,7 @@ class TestEntitiesNorms extends Test {
       )
     ),
     VariableTest(
+      passingTest,
       "sent11",
       "The recommended rate is higher in the dry season (Haefele and Wopereis, 2004), and higher in the Senegal River delta than in the middle valley, where extreme tem- peratures tend to occur and affect potential yield.",
       Seq(
@@ -147,6 +158,7 @@ class TestEntitiesNorms extends Test {
       )
     ),
     VariableTest(
+      passingTest,
       "sent12",
       "Seeding dates ranged from 22 August to 26 September in 2011WS, from 29 February to 1 April in the 2012DS, and from 5 to 23 March in the 2013DS.",
       Seq(
@@ -156,6 +168,7 @@ class TestEntitiesNorms extends Test {
       )
     ),
     VariableTest(
+      passingTest,
       "sent13",
       "In transplanted rice, seedling age at transplanting was between 26 and 35 days. All farmers grew improved varieties",
       Seq(
@@ -163,6 +176,7 @@ class TestEntitiesNorms extends Test {
       )
     ),
     VariableTest(
+      passingTest,
       "sent14",
       "timing of basal fertilizer application was on average 26, 33, and 26 days after sowing (DAS) in 2011WS, 2012DS, and 2013DS",
       Seq(
@@ -170,6 +184,7 @@ class TestEntitiesNorms extends Test {
       )
     ),
     VariableTest(
+      failingTest,
       "sent15",
       "WS sowing in July and about 9–10 t ha−1 for dry season (DS) sowing in February in the Senegal River delta.",
       Seq(
@@ -179,6 +194,7 @@ class TestEntitiesNorms extends Test {
       )
     ),
     VariableTest(
+      passingTest,
       "sent16",
       "Farmers used two rice cultivars (IR1529 and Jaya) during the 1997 WS, and exclusively IR13240-108-2-2-3 (released as Sahel 108 in Senegal in 1994) during the 1998 DS. All rice was direct-seeded.",
       Seq(
@@ -186,6 +202,7 @@ class TestEntitiesNorms extends Test {
       )
     ),
     VariableTest(
+      failingTest,
       //FIXME; Discuss with Masha, clarification for the norm of `from 5.0 to 9.4 t ha-1` ---> 5.0 -- 9.4 t or 5.0 -- 9.0 t/ha?
       "sent17",
       "Average WS T0 yield was high, i.e. 7.3 ha−1 (ranging from 5.0 to 9.4 t ha−1), considering the region’s potential yield of about 9 t ha−1.",
@@ -194,6 +211,7 @@ class TestEntitiesNorms extends Test {
       )
     ),
     VariableTest(
+      failingTest,
       // FIXME; just like above sentence.
       "sent18",
       "Average DS T0 yield was relatively low, i.e. 4.4 t ha− 1 (ranging from 2.5 to 6.0 t ha− 1)",
@@ -202,6 +220,7 @@ class TestEntitiesNorms extends Test {
       )
     ),
     VariableTest(
+      passingTest,
       "sent19",
       "The favourable climate conditions and the adoption of varieties with shorter cropping cycles allow for two rice harvests per year, namel in the dry and rainy seasons (Van Oort et al., 2016).",
       Seq(
@@ -209,6 +228,7 @@ class TestEntitiesNorms extends Test {
       )
     ),
     VariableTest(
+      passingTest,
       "sent20",
       "In the SRV, production areas are typically larger in the dry season, which brings fewer problems with pests and birds (Tanaka et al., 2015; USDA-GAIN, 2018).",
       Seq(
@@ -216,6 +236,7 @@ class TestEntitiesNorms extends Test {
       )
     ),
     VariableTest(
+      failingTest,
       "sent21",
       "Average yields in SRV theoretically range between 5.0 and 6.0 t ha− 1 in the rainy season and between 6.5 and 7.5 t ha− 1 in the dry season (SAED, 2019; USDA-GAIN, 2021)",
       Seq(
@@ -225,6 +246,7 @@ class TestEntitiesNorms extends Test {
       )
     ),
     VariableTest(
+      passingTest,
       "sent22",
       "seeds of the rice variety Sahel 108 are sown, a short- cycle variety (around 125 days)",
       Seq(
@@ -232,6 +254,7 @@ class TestEntitiesNorms extends Test {
       )
     ),
     VariableTest(
+      failingTest,
       "sent23",
       "Broadcast seeding is carried out by hand on irrigated plots with a 2-5 cm depth sheet of water",
       Seq(
@@ -240,6 +263,7 @@ class TestEntitiesNorms extends Test {
       )
     ),
     VariableTest(
+      passingTest,
       "sent24",
       "average yields for the two seasons assessed of 4832 kg ha− 1 and 7425 kg ha− 1 for the areas under CONV and INT management, respectively.",
       Seq(
@@ -247,6 +271,7 @@ class TestEntitiesNorms extends Test {
       )
     ),
     VariableTest(
+      failingTest,
       "sent25",
       "In plots receiving fertilizer, DAP was applied basally (19.3 and 21.5 kg N and P ha−1 ), and three urea splits were broadcasted into 1–5 cm of water (101.3 kg N ha−1 ; 40% at early-tillering, 40% at pan- icle initiation, and 20% at heading)",
       Seq(
@@ -255,6 +280,7 @@ class TestEntitiesNorms extends Test {
       )
     ),
     VariableTest(
+      passingTest,
       "sent39",
       "Transplanting for both management systems took place on 7 (2007 and 2008 wet season) and 25 (2009 wet season) August and on 19 March (2008 and 2009 dry season).",
       Seq(
@@ -263,6 +289,7 @@ class TestEntitiesNorms extends Test {
       )
     ),
     VariableTest(
+      failingTest,
       "sent41",
       "das days after sowing, Fert fertilizer treatment, with F1: recommended dose (80 kg N ha−1), i.e., 200 kg ha−1 NPK (15.15.15) at sowing + 100 kg ha−1 urea at 20 das + 50 kg ha−1 urea at 50 das. F2: F1/4 (20 kg N ha−1);",
       Seq(
