@@ -15,8 +15,10 @@ object FuzzyBeliefReader {
   def main(args: Array[String]): Unit = {
     val props = StringUtils.argsToMap(args)
 //    val inputDir = "/home/alexeeva/Desktop/habitus_related/data/fuzzyBeliefs/senegal-agriculture-post-processed-science-parse/input"
-    val inputDir = "/home/alexeeva/Desktop/habitus_related/data/testingCluPDF2txt/inputForFuzzy/senegal-agriculture-txt-incl-short-paragraphs"
-    val outputDir = "/home/alexeeva/Desktop/habitus_related/data/fuzzyBeliefs/senegal-agriculture-post-processed-science-parse/output-short-paragraphs/"
+//    val inputDir = "/home/alexeeva/Desktop/habitus_related/data/testingCluPDF2txt/inputForFuzzy/senegal-agriculture-txt-incl-short-paragraphs"
+    val inputDir = "/home/alexeeva/Desktop/habitus_related/data/query_results/uganda_vs_5_others/science-parsed-txt"
+//    val outputDir = "/home/alexeeva/Desktop/habitus_related/data/fuzzyBeliefs/senegal-agriculture-post-processed-science-parse/output-short-paragraphs/"
+    val outputDir = "/home/alexeeva/Desktop/habitus_related/data/query_results/uganda_vs_5_others/fuzzy-beliefs/"
     val threads = 1//props.get("threads").map(_.toInt).getOrElse(1)
 
     run(inputDir, outputDir, threads)
@@ -39,7 +41,10 @@ object FuzzyBeliefReader {
 
 
       for (file <- parFiles) {
-        val pw = new PrintWriter(outputDir + file.getName.replace(".txt", ".tsv"))
+        val outFileName = outputDir + file.getName.replace(".txt", ".tsv")
+//        print("ofn: " + outFileName)
+        val pw = new PrintWriter(outFileName)
+//        print(pw + "<<")
         try {
           val unfiltered = FileUtils.getTextFromFile(file)
           // fixme: temporary, simple text cleanup
@@ -61,50 +66,55 @@ object FuzzyBeliefReader {
             //          multiPrinter.outputMentions(mentions, doc, filename, printVars)
             val beliefMentions = mentions.filter(_.label matches "Belief")
             for (b <- beliefMentions) {
-
-              if (b.sentence > 1) {
-                val sentIdx = b.sentence-2
-                val prevSent = b.document.sentences(sentIdx)
-                if (!doneSents.contains(sentIdx) & prevSent.words.length > 5){
-                  val prevSentText = prevSent.getSentenceText
-                  pw.println(s"$filename\tcur - 2\t$prevSentText\t\t\t$cleanText\t")
-                  doneSents.append(sentIdx)
-                }
-
-              }
-              if (b.sentence > 0) {
-                val sentIdx = b.sentence -1
-                val prevSent = b.document.sentences(sentIdx)
-                if (!doneSents.contains(sentIdx) & prevSent.words.length > 5) {
-                  val prevSentText = prevSent.getSentenceText
-                  pw.println(s"$filename\tcur - 1\t$prevSentText\t\t\t$cleanText\t")
-                  doneSents.append(sentIdx)
-                }
-              }
               pw.println(s"$filename\tcurrent\t${b.sentenceObj.getSentenceText}\t${b.asInstanceOf[EventMention].trigger.text}\t${b.text}\t$cleanText\t")
-              doneSents.append(b.sentence)
-              if (b.sentence + 1 < b.document.sentences.length) {
-                val sentIdx = b.sentence + 1
-                val nextSent = b.document.sentences(sentIdx)
-                if (!doneSents.contains(sentIdx) & nextSent.words.length > 5) {
-                  val nextSentText = nextSent.getSentenceText
-                  pw.println(s"$filename\tcur + 1\t$nextSentText\t\t\t$cleanText\t")
-                  doneSents.append(sentIdx)
-                }
-
-              }
-              if (b.sentence + 2 < b.document.sentences.length) {
-                val sentIdx = b.sentence + 2
-                val nextSent = b.document.sentences(sentIdx)
-                if (!doneSents.contains(sentIdx) & nextSent.words.length > 5) {
-                  val nextSentText = nextSent.getSentenceText
-                  pw.println(s"$filename\tcur + 2\t$nextSentText\t\t\t$cleanText\t")
-                  doneSents.append(sentIdx)
-                }
-
-              }
-
+//              doneSents.append(b.sentence)
             }
+//            println("beliefs: ", beliefMentions.length)
+//            for (b <- beliefMentions) {
+//
+//              if (b.sentence > 1) {
+//                val sentIdx = b.sentence-2
+//                val prevSent = b.document.sentences(sentIdx)
+//                if (!doneSents.contains(sentIdx) & prevSent.words.length > 5){
+//                  val prevSentText = prevSent.getSentenceText
+//                  pw.println(s"$filename\tcur - 2\t$prevSentText\t\t\t$cleanText\t")
+//                  doneSents.append(sentIdx)
+//                }
+//
+//              }
+//              if (b.sentence > 0) {
+//                val sentIdx = b.sentence -1
+//                val prevSent = b.document.sentences(sentIdx)
+//                if (!doneSents.contains(sentIdx) & prevSent.words.length > 5) {
+//                  val prevSentText = prevSent.getSentenceText
+//                  pw.println(s"$filename\tcur - 1\t$prevSentText\t\t\t$cleanText\t")
+//                  doneSents.append(sentIdx)
+//                }
+//              }
+//              pw.println(s"$filename\tcurrent\t${b.sentenceObj.getSentenceText}\t${b.asInstanceOf[EventMention].trigger.text}\t${b.text}\t$cleanText\t")
+//              doneSents.append(b.sentence)
+//              if (b.sentence + 1 < b.document.sentences.length) {
+//                val sentIdx = b.sentence + 1
+//                val nextSent = b.document.sentences(sentIdx)
+//                if (!doneSents.contains(sentIdx) & nextSent.words.length > 5) {
+//                  val nextSentText = nextSent.getSentenceText
+//                  pw.println(s"$filename\tcur + 1\t$nextSentText\t\t\t$cleanText\t")
+//                  doneSents.append(sentIdx)
+//                }
+//
+//              }
+//              if (b.sentence + 2 < b.document.sentences.length) {
+//                val sentIdx = b.sentence + 2
+//                val nextSent = b.document.sentences(sentIdx)
+//                if (!doneSents.contains(sentIdx) & nextSent.words.length > 5) {
+//                  val nextSentText = nextSent.getSentenceText
+//                  pw.println(s"$filename\tcur + 2\t$nextSentText\t\t\t$cleanText\t")
+//                  doneSents.append(sentIdx)
+//                }
+//
+//              }
+//
+//            }
 
           }
         }
