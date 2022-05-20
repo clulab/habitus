@@ -333,7 +333,7 @@ class TestEntities extends Test {
       Seq(
 //        "GenericCrop" -> Seq("direct-seeded", "cultivars"),
         "GenericCrop" -> Seq("cultivars"),
-        "Crop" -> Seq("rice", "Sahel", "Jaya", "rice"),
+        "Crop" -> Seq("rice", "Sahel", "Jaya", "rice", "IR1529"),
         "Quantity" -> Seq("108 in", "1998 DS"),
         "Location" -> Seq("Senegal"),
         "Date" -> Seq("1994", "1997")
