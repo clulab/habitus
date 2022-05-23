@@ -13,7 +13,7 @@ rules:
     label: ${label}
     type: "token"
     pattern: |
-      [word = /.*/]{,2}  [!word = "I" & !lemma = /\bwe\b/] (?<! /can|could|should|may|might|we|We|I|i/ [tag = /^VB/]?) (?<trigger>[lemma = /\b(say|claim|think|guess|doubt|feel|believe|trust|fear|worry|suppose|suspect|perceive|expect|want|prefer|hope|overestimate|underestimate)\b/ & tag = /^VB/]) [word = /.*/]{,10}
+      [word = /.*/]{,2}  [!word = "I" & !lemma = /\bwe\b/] (?<! /can|could|should|may|might|we|We|I|i/ [tag = /^VB/]?) (?<trigger>[lemma = /\b(say|think|guess|doubt|feel|believe|trust|fear|worry|suppose|suspect|perceive|expect|want|prefer|hope|overestimate|underestimate)\b/ & tag = /^VB/]) [word = /.*/]{,10}
 
   - name: ${label}-nom
     priority: ${rulepriority}
@@ -28,7 +28,7 @@ rules:
     label: ${label}
     type: "token"
     pattern: |
-      [word = /.*/]{,3} (?<! /can|could|should|may|might|we|We|I|i/ [tag = /^VB/]?) (?<trigger>[word = /\b(traditionally|customarily|customary)\b/ & tag = /^NN|^JJ/]) [word = /.*/]{,10}
+      [word = /.*/]{,3} (?<! /can|could|should|may|might|we|We|I|i/ [tag = /^VB/]?) (?<trigger>[word = /\b(traditionally|customarily)\b/ & tag = /^NN|^JJ/]) [word = /.*/]{,10}
 #  - name: ${label}-verbs-with-agents
 #    priority: ${rulepriority}
 #    label: ${label}
