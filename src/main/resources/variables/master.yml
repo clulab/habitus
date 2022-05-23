@@ -24,11 +24,15 @@ taxonomy:
     - BirdAttack
     - GenericCrop
     - GenericFertilizer
+    - Area
+    - AreaSize
+    - Percentage
   - Event:
     - Assignment
     - BirdAttackEvent
     - CropAssignment
     - FertilizerAssignment
+    - PlantingArea
     - PlantingEvent
     - PlantingDate
     - YieldAmount
