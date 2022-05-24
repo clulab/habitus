@@ -8,8 +8,8 @@ import scala.collection.mutable.ArrayBuffer
 class DefaultContextExtractor extends ContextExtractor {
 
   def getContextPerMention(mentions: Seq[Mention], doc: Document): Seq[Mention] = {
-    // TODO: ALL mentions have to be passed here to get location/date tbms
-    //TODO: write a couple of context tests
+    // all mentions (tbms and relations/events) have to be passed here because context info comes from tbms;
+    // only return contextualized relation and event mentions
     val toReturn = new ArrayBuffer[Mention]()
     val mentionsBySentence = mentions groupBy (_.sentence) mapValues (_.sortBy(_.start)) withDefaultValue Nil
     for ((s, i) <- doc.sentences.zipWithIndex) {
@@ -20,7 +20,6 @@ class DefaultContextExtractor extends ContextExtractor {
       val thisSentLocs = thisSentTBMs.filter(_.label == "Location")
       val thisSentCrops = thisSentTBMs.filter(_.label == "Crop")
       val thisSentFerts = thisSentTBMs.filter(_.label == "Fertilizer")
-      // to keep only mention labelled as Assignment (these labels are associated with .yml files, e.g. Variable, Value)
       for (m <- thisSentEvents) {
         val context = DefaultContext(
           getContext(m, "Location", thisSentLocs, mentions),

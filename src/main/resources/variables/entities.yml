@@ -84,11 +84,12 @@
   pattern: |
     [entity='B-DATE-RANGE'] [entity='I-DATE-RANGE']*
 
-# fixme: find example + should be handled in processors
+# fixme: should be handled in processors
 - name: date-two-years
   priority: ${rulepriority}
   label: Date
   type: token
+  example: "The areas sown for this 2021/2022 wintering campaign are..."
   pattern: |
     [word = /(\d\d){1,2}(\/|_)(\d\d){1,2}/]
 
