@@ -8,6 +8,14 @@ class TestDefaultContextAttachment extends Test {
   // each test is supposed to have only one target mention extracted
   val vp: VariableProcessor = VariableProcessor()
 
+  val LOCATION = "location"
+  val DATE = "date"
+  val PROCESS = "process"
+  val CROP = "crop"
+  val FERTILIZER = "fertilizer"
+  val COMPARATIVE = "comparative"
+  val NA = "N/A"
+
   case class DefaultContextAttachmentTest(
                            name: String,
                            // Text for extraction
@@ -56,12 +64,12 @@ class TestDefaultContextAttachment extends Test {
       "The area sown with rice and fertilized with urea for this 2021/2022 wintering campaign is 28,223 ha in wintering in Senegal.",
       "PlantingArea",
       Map(
-        "location" -> "Senegal",
-        "date" -> "2021/2022",
-        "process" -> "planting",
-        "crop" -> "rice",
-        "fertilizer" -> "urea",
-        "comparative" -> "0"
+        LOCATION -> "Senegal",
+        DATE -> "2021/2022",
+        PROCESS -> "planting",
+        CROP -> "rice",
+        FERTILIZER -> "urea",
+        COMPARATIVE -> "0"
       )
     ),
       DefaultContextAttachmentTest(
@@ -72,12 +80,12 @@ class TestDefaultContextAttachment extends Test {
       "This is a sentence about Senegal. The area sown for this 2021/2022 wintering campaign is 28,223 ha in wintering. All of this happened in Senegal, not the U.S.",
       "PlantingArea",
       Map(
-        "location" -> "Senegal",
-        "date" -> "2021/2022",
-        "process" -> "planting",
-        "crop" -> "N/A",
-        "fertilizer" -> "N/A",
-        "comparative" -> "0"
+        LOCATION -> "Senegal",
+        DATE -> "2021/2022",
+        PROCESS -> "planting",
+        CROP -> NA,
+        FERTILIZER -> NA,
+        COMPARATIVE -> "0"
       )
     ),
     DefaultContextAttachmentTest(
@@ -88,12 +96,12 @@ class TestDefaultContextAttachment extends Test {
       "The areas sown for this 2021/2022 wintering campaign are 28,223 ha in Senegal vs 35,065 ha in the U.S.",
       "PlantingArea",
       Map(
-        "location" -> "Senegal",
-        "date" -> "2021/2022",
-        "process" -> "planting",
-        "crop" -> "N/A",
-        "fertilizer" -> "N/A",
-        "comparative" -> "1"
+        LOCATION -> "Senegal",
+        DATE -> "2021/2022",
+        PROCESS -> "planting",
+        CROP -> NA,
+        FERTILIZER -> NA,
+        COMPARATIVE -> "1"
       )
     )
   )

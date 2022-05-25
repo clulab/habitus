@@ -45,7 +45,7 @@
   label: Area
   type: token
   pattern: |
-    ([lemma=/cultivate|plant|sown/])? [lemma=/area/] ([lemma=/sown/])?
+    ([lemma=/cultivate|plant|sow/])? [lemma=/area/] ([lemma=/sow/])?
 
 - name: variable-fertilizer
   priority: ${rulepriority}
