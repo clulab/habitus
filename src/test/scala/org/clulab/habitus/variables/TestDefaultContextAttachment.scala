@@ -8,20 +8,16 @@ class TestDefaultContextAttachment extends Test {
   // each test is supposed to have only one target mention extracted
   val vp: VariableProcessor = VariableProcessor()
 
-  val LOCATION = "location"
-  val DATE = "date"
-  val PROCESS = "process"
-  val CROP = "crop"
-  val FERTILIZER = "fertilizer"
-  val COMPARATIVE = "comparative"
   val NA = "N/A"
+
+  case class Desired(location: String = NA, date: String = NA, process: String = NA, crop: String = NA, fertilizer: String = NA, comparative: String = NA)
 
   case class DefaultContextAttachmentTest(
                            name: String,
                            // Text for extraction
                            text: String,
                            label: String,
-                           desired: Map[String, String]
+                           desired: Desired
                            // Expected attachment fields and values
                          ) {
 
@@ -46,12 +42,12 @@ class TestDefaultContextAttachment extends Test {
         // there should be one attachment per target mention
         attachments.toList.length should be (1)
         val attachment = attachments.head.asInstanceOf[DefaultContext]
-        attachment.location should be (desired("location"))
-        attachment.date should equal (desired("date"))
-        attachment.process should equal (desired("process"))
-        attachment.crop should equal (desired("crop"))
-        attachment.fertilizer should equal (desired("fertilizer"))
-        attachment.comparative.toString should equal (desired("comparative"))
+        attachment.location should be (desired.location)
+        attachment.date should equal (desired.date)
+        attachment.process should equal (desired.process)
+        attachment.crop should equal (desired.crop)
+        attachment.fertilizer should equal (desired.fertilizer)
+        attachment.comparative.toString should equal (desired.comparative)
       }
     }
   }
@@ -63,13 +59,13 @@ class TestDefaultContextAttachment extends Test {
       "sent-1",
       "The area sown with rice and fertilized with urea for this 2021/2022 wintering campaign is 28,223 ha in wintering in Senegal.",
       "PlantingArea",
-      Map(
-        LOCATION -> "Senegal",
-        DATE -> "2021/2022",
-        PROCESS -> "planting",
-        CROP -> "rice",
-        FERTILIZER -> "urea",
-        COMPARATIVE -> "0"
+      Desired(
+        location = "Senegal",
+        date = "2021/2022",
+        process = "planting",
+        crop = "rice",
+        fertilizer =  "urea",
+        comparative =  "0"
       )
     ),
       DefaultContextAttachmentTest(
@@ -79,13 +75,11 @@ class TestDefaultContextAttachment extends Test {
       "sent-2",
       "This is a sentence about Senegal. The area sown for this 2021/2022 wintering campaign is 28,223 ha in wintering. All of this happened in Senegal, not the U.S.",
       "PlantingArea",
-      Map(
-        LOCATION -> "Senegal",
-        DATE -> "2021/2022",
-        PROCESS -> "planting",
-        CROP -> NA,
-        FERTILIZER -> NA,
-        COMPARATIVE -> "0"
+      Desired(
+        location = "Senegal",
+        date = "2021/2022",
+        process = "planting",
+        comparative = "0"
       )
     ),
     DefaultContextAttachmentTest(
@@ -95,13 +89,11 @@ class TestDefaultContextAttachment extends Test {
       "sent-3",
       "The areas sown for this 2021/2022 wintering campaign are 28,223 ha in Senegal vs 35,065 ha in the U.S.",
       "PlantingArea",
-      Map(
-        LOCATION -> "Senegal",
-        DATE -> "2021/2022",
-        PROCESS -> "planting",
-        CROP -> NA,
-        FERTILIZER -> NA,
-        COMPARATIVE -> "1"
+      Desired(
+        location = "Senegal",
+        date = "2021/2022",
+        process = "planting",
+        comparative = "1"
       )
     )
   )
