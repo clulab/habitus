@@ -40,6 +40,13 @@
   pattern: |
     [lemma = /plant|sow|seed/  & tag = /^VB/] 
 
+- name: variable-area
+  priority: ${rulepriority}
+  label: Area
+  type: token
+  pattern: |
+    ([lemma=/cultivate|plant|sow/])? [lemma=/area/] ([lemma=/sow/])?
+
 - name: variable-fertilizer
   priority: ${rulepriority}
   label: FertilizerUse
@@ -77,6 +84,15 @@
   pattern: |
     [entity='B-DATE-RANGE'] [entity='I-DATE-RANGE']*
 
+# fixme: should be handled in processors
+- name: date-two-years
+  priority: ${rulepriority}
+  label: Date
+  type: token
+  example: "The areas sown for this 2021/2022 wintering campaign are..."
+  pattern: |
+    [word = /(\d\d){1,2}(\/|_)(\d\d){1,2}/]
+
 - name: measurement-rule
   priority: ${rulepriority}
   label: Quantity
@@ -84,6 +100,19 @@
   pattern: |
     [entity='B-MEASUREMENT'] [entity = 'I-MEASUREMENT']*
 
+- name: area-size-entity-rule
+  priority: ${rulepriority}
+  label: AreaSize
+  type: token
+  pattern: |
+    (?<![word = /^vs\.?|against|compared|^forecast/][word=/\w*/]{0,3}) [entity='B-MEASUREMENT' & !word = "-"] [entity='I-MEASUREMENT']* [entity='I-MEASUREMENT' & word = /^(ha|he)/]+
+
+- name: percentage-rule
+  priority: ${rulepriority}
+  label: Percentage
+  type: token
+  pattern: |
+    [entity='B-PERCENTAGE'] [entity='I-PERCENTAGE']* 
 
 ### These are not Value tbms, but they will be used as value args in assignment events
 - name: fertilizer-values-from-lexicon
