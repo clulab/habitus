@@ -19,6 +19,7 @@
   pattern: |
     [lemma = /(?i)\b(crop|cultivar|cultivation|seed|variety|varieties)\b/]
 
+# manure --> can be added for generic fertilizer.
 - name: generic-fertilizer-rule
   priority: ${rulepriority}
   label: GenericFertilizer
