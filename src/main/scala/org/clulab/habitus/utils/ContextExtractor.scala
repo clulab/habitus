@@ -58,17 +58,18 @@ trait ContextExtractor {
   }
 
   def getContext(m: Mention, contextType: String, contextRelevantMentions: Seq[Mention], allMentions: Seq[Mention]): String = {
+    // for locations, take the closest next location; for the rest,
     // if no relevant context mentions in sentence, use the most freq one in sentence window equal to +/- maxContextWindow
     val context = contextRelevantMentions.length match {
       case 0 => getMostFrequentInContext(m, contextType, maxContextWindow, allMentions)
-      case 1 => contextRelevantMentions.head.text.toLowerCase()
+      case 1 => contextRelevantMentions.head.text
       case _ => {
         contextType match {
           case "Location" => {
             val nextLoc = findClosestNextLocation(m, contextRelevantMentions)
             if (nextLoc.isDefined) nextLoc.get.text else NA
           }
-          case _ => findClosest(m, contextRelevantMentions).text.toLowerCase()
+          case _ => findClosest(m, contextRelevantMentions).text
         }
       }
     }
@@ -96,7 +97,7 @@ trait ContextExtractor {
       val contextSentences = getSentIDsInSpan(mention, windowSize)
       val instances = getInstancesInContext(contextType, contextSentences, allMentions)
       if (instances.nonEmpty) {
-        return instances.groupBy(identity).map(i => i._1 -> i._2.length).max._1.toLowerCase()
+        return instances.groupBy(identity).map(i => i._1 -> i._2.length).maxBy(_._2)._1
       }
      }
     NA

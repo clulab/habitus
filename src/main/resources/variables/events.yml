@@ -132,7 +132,7 @@
     value:Date = /nmod_from|nmod_between|nmod_like|Ax_from|Ax_between/
     
     
-    ### Planting Events (incl crop and possibly time as values)
+### Planting Events (incl crop and possibly time as values)
 
 - name: planting-event-cop-2
   priority: ${rulepriority}
@@ -141,6 +141,23 @@
   pattern: |
     (?<trigger> [lemma=with])? @variable:Planting (("," | "and")* @value:Crop)+ @value:Date?
 
+### Planting Area Events
+
+- name: area-size-rule1
+  priority: ${rulepriority}
+  label: PlantingArea
+  action: areaVarActionFlow
+  type: token
+  pattern: |
+    @variable:Area ( []+? @value:AreaSize )+ | @variable:Area ( []+? @value:Percentage )+ 
+
+- name: area-size-rule2
+  priority: ${rulepriority}
+  label: PlantingArea
+  action: areaVarActionFlow
+  type: token
+  pattern: |
+    ( @value:AreaSize []+? )+ @variable:Area | ( @value:Percentage []+? )+ @variable:Area 
 
 ### Bird attack events
 

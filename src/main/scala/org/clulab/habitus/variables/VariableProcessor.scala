@@ -38,8 +38,9 @@ class VariableProcessor(val processor: CluProcessor,
     val mentions = extractor.extractFrom(doc).sortBy(m => (m.sentence, m.getClass.getSimpleName))
 
     val (tbms, relsAndEvents) = mentions.partition(_.isInstanceOf[TextBoundMention])
-    // context will only be created for relations and events
-    val contentMentionsWithContexts = contextExtractor.getContextPerMention(relsAndEvents, doc)
+    // both events and text bound mentions have to be passed to the method because context info comes from tbms,
+    // but only event/relation mentions are returned
+    val contentMentionsWithContexts = contextExtractor.getContextPerMention(mentions, doc)
     val withoutNegValues = filterNegativeValues(contentMentionsWithContexts)
     val allMentions = tbms ++ withoutNegValues
     // withoutNegValues are only relations and events
