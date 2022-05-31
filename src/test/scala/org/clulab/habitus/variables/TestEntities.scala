@@ -327,14 +327,13 @@ class TestEntities extends Test {
     )
   ),
     VariableTest(
-      passingTest,
+      failingTest,
       "sent27",
       "Farmers used two rice cultivars (IR1529 and Jaya) during the 1997 WS, and exclusively IR13240-108-2-2-3 (released as Sahel 108 in Senegal in 1994) during the 1998 DS. All rice was direct-seeded.",
       Seq(
-//        "GenericCrop" -> Seq("direct-seeded", "cultivars"),
         "GenericCrop" -> Seq("cultivars"),
-        "Crop" -> Seq("rice", "Sahel", "Jaya", "rice", "IR1529"),
-        "Quantity" -> Seq("108 in", "1998 DS"),
+        // `Sahel 108` getting extracted as `Sahel` only.
+        "Crop" -> Seq("rice", "Sahel 108", "Jaya", "rice", "IR1529"),
         "Location" -> Seq("Senegal"),
         "Date" -> Seq("1994", "1997")
 
@@ -350,12 +349,12 @@ class TestEntities extends Test {
       )
     ),
     VariableTest(
-      failingTest,
+      passingTest,
       "sent29",
-      "Average DS T0 yield was relatively low, i.e. 4.4 t ha−1 (ranging from 2.5 to 6.0 t ha−1)",
+      "Average DS T0 yield was relatively low, i.e. 4.4 t ha-1 (ranging from 2.5 to 6.0 t ha-1)",
       Seq(
         "Yield" -> Seq("yield"),
-        "Quantity" -> Seq("4.4 t ha−1", "from 2.5 to 6.0 t ha−1") // fixme: need processors adjustment
+        "Quantity" -> Seq("4.4 t ha-1", "from 2.5 to 6.0 t ha-1") // fixme: need processors adjustment
       )
     ),
     VariableTest(

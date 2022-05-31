@@ -186,7 +186,7 @@ class TestEntitiesNorms extends Test {
     VariableTest(
       failingTest,
       "sent15",
-      "WS sowing in July and about 9–10 t ha−1 for dry season (DS) sowing in February in the Senegal River delta.",
+      "WS sowing in July and about 9-10 t ha-1 for dry season (DS) sowing in February in the Senegal River delta.",
       Seq(
         //FIXME, wrong extraction of the range `9-10 t ha-1`
         "Quantity" -> Seq(("9–10 t ha-1", "9.0 -- 10.0 t/ha")),
@@ -238,11 +238,10 @@ class TestEntitiesNorms extends Test {
     VariableTest(
       failingTest,
       "sent21",
-      "Average yields in SRV theoretically range between 5.0 and 6.0 t ha− 1 in the rainy season and between 6.5 and 7.5 t ha− 1 in the dry season (SAED, 2019; USDA-GAIN, 2021)",
+      "Average yields in SRV theoretically range between 5.0 and 6.0 t ha-1 in the rainy season and between 6.5 and 7.5 t ha-1 in the dry season (SAED, 2019; USDA-GAIN, 2021)",
       Seq(
         "Date" -> Seq(("2021", "2021-XX-XX"), ("2019", "2019-XX-XX")),
-        //FIXME -- Extraction of undesired "-1"
-        "Quantity" -> Seq(("between 6.5 and 7.5 t", "6.5 -- 7.5 t/ha"), ("between 5.0 and 6.0 t", "5.0 -- 6.0 t/ha"))
+        "Quantity" -> Seq(("between 6.5 and 7.5 t ha-1", "6.5 -- 7.5 t/ha"), ("between 5.0 and 6.0 t ha-1", "5.0 -- 6.0 t/ha"))
       )
     ),
     VariableTest(

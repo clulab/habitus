@@ -467,7 +467,9 @@ class TestVariableReader extends Test {
       "sent21_11", "2 Others : cassava , melon , peanuts , eggplant , watermelon , pepper , carrot , cabbage , jaxatu , beans , bissap , banana plantation , fruit trees , white onion , cucumber , squash …",
       "None",
       Seq.empty
-    )
+    ),
+
+
   )
 
   variableTests.zipWithIndex.foreach { case (variableTest, index) => variableTest.test(index) }
