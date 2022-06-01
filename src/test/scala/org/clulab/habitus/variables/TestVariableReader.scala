@@ -468,6 +468,20 @@ class TestVariableReader extends Test {
       "None",
       Seq.empty
     ),
+    VariableTest(
+      "sent27", "Farmers used two rice cultivars (IR1529 and Jaya) during the 1997 WS, and exclusively IR13240-108-2-2-3 (released as Sahel 108 in Senegal in 1994) during the 1998 DS. All rice was direct-seeded.",
+      "PropertyAssignment",
+      Seq(
+        ("GrainProperty", Seq(("Aiwu (short duration, slender grain", ""),
+                              ("I Kong Pao (short duration, bold grain",""),
+                              ("IR1529 and Jaya (medium duration, slender grain", ""),
+                              ("Jaya (medium duration, slender grain", ""))),
+        ("Duration", Seq(("Aiwu (short duration", ""),
+                        ("I Kong Pao (short duration", ""),
+                        ("IR1529 and Jaya (medium duration",""),
+                        ("Jaya (medium duration","")))
+      )
+    ),
 
 
   )
