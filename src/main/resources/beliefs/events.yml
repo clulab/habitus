@@ -13,14 +13,14 @@ rules:
     label: ${label}
     type: "token"
     pattern: |
-      [word = /.*/]{,2}  [!word = "I" & !lemma = /\bwe\b/] (?<! /can|could|should|may|might|we|We|I|i/ [tag = /^VB/]?) (?<trigger>[lemma = /\b(say|think|guess|doubt|feel|believe|trust|fear|worry|suppose|suspect|perceive|expect|want|prefer|hope|overestimate|underestimate)\b/ & tag = /^VB/]) [word = /.*/]{,10}
+      [word = /.*/]{,2}  [!word = "I" & !lemma = /\bwe\b/] (?<! /can|could|should|may|might|must|we|We|I|i/ [tag = /^VB/]?) (?<trigger>[lemma = /\b(say|think|guess|doubt|feel|believe|trust|fear|worry|suspect|perceive|expect|want|prefer|hope|overestimate|underestimate)\b/ & tag = /^VB/]) [word = /.*/]{2,10}
 
   - name: ${label}-nom
     priority: ${rulepriority}
     label: ${label}
     type: "token"
     pattern: |
-      [word = /.*/]{,2} (?<! /\b(can|could|should|may|might|I|We|we)\b/ [tag = /^VB/]?) (?<trigger>[lemma = /\b(stigma|willingness|popular)\b/ & tag = /^NN|^JJ/]) [word = /.*/]{,10}
+      [word = /.*/]{,2} (?<! /\b(can|could|should|may|might|must|I|We|we)\b/ [tag = /^VB/]?) (?<trigger>[lemma = /\b(stigma|willingness|popular)\b/ & tag = /^NN|^JJ/]) [word = /.*/]{,10}
     # (?<! /can|could|should|may|might|we|We|I|i/ [tag = /^VB/]?)
       
   - name: ${label}-adverbs
@@ -28,7 +28,7 @@ rules:
     label: ${label}
     type: "token"
     pattern: |
-      [word = /.*/]{,3} (?<! /can|could|should|may|might|we|We|I|i/ [tag = /^VB/]?) (?<trigger>[word = /\b(traditionally|customarily)\b/ & tag = /^NN|^JJ/]) [word = /.*/]{,10}
+      [word = /.*/]{,3} (?<! /can|could|should|may|might|must|we|We|I|i/ [tag = /^VB/]?) (?<trigger>[word = /\b(traditionally|customarily)\b/ & tag = /^NN|^JJ/]) [word = /.*/]{,10}
 #  - name: ${label}-verbs-with-agents
 #    priority: ${rulepriority}
 #    label: ${label}
@@ -42,7 +42,7 @@ rules:
     label: ${label}
     graph: "hybrid"
     pattern: |
-      trigger = (?<! /can|could|should|may|might|we|We|I|i/ [tag = /^VB/]?) [lemma = /\b(consider|find|value|describe|recognize|like|eager|regard|appreciate)\b/ & tag = /^VB|^JJ/]
+      trigger = (?<! /can|could|should|may|might|must|we|We|I|i/ [tag = /^VB/]?) [lemma = /\b(consider|find|value|describe|recognize|like|eager|regard|appreciate)\b/ & tag = /^VB|^JJ/]
       believer:Agent = /nsubj$|A0/ [!word = /\bwe\b|\bI\b/]
 
   - name: ${label}-interest-jj
@@ -50,7 +50,7 @@ rules:
     label: ${label}
     graph: "hybrid"
     pattern: |
-      trigger = (?<! /can|could|should|may|might|we|We|I|i/ [tag = /^VB/]?) [lemma = /\binterest\b/] /in|to/
+      trigger = (?<! /can|could|should|may|might|must|we|We|I|i/ [tag = /^VB/]?) [lemma = /\binterest\b/] /^(in|to)$/
       believer:Agent = /nsubj$|A0/ [!word = /\bwe\b|\bI\b/]
 
 #  - name: ${label}-adjs-with-agents
@@ -65,7 +65,7 @@ rules:
     label: ${label}
     graph: "hybrid"
     pattern: |
-      trigger = (?<! /can|could|should|may|might|we|We|I|i/ [tag = /^VB/]?) [word = /\b(optimistic|pessimistic|hopeful|sure|unsure|convinced|confident|positive|hesitant)\b/ & tag = /VBN|^JJ/]
+      trigger = (?<! /can|could|should|may|might|must|we|We|I|i/ [tag = /^VB/]?) [word = /\b(optimistic|pessimistic|hopeful|sure|unsure|convinced|confident|positive|hesitant)\b/ & tag = /VBN|^JJ/]
       believer:Agent = /nsubj$|A0/
 
   - name: ${label}-consider-passive
@@ -73,14 +73,14 @@ rules:
     label: ${label}
     type: "token"
     pattern: |
-      [word = /.*/]{,3} (?<! /can|could|should|may|might|we|We|I|i/ [tag = /^VB/]?) (?<trigger>[word = "considered" & tag = /^VBN/]) (?! [word = /\.|:|,/]) [word = /.*/]{,10}
+      [word = /.*/]{,3} (?<! /can|could|should|may|might|must|we|We|I|i/ [tag = /^VB/]?) (?<trigger>[word = "considered" & tag = /^VBN/]) (?! [word = /\.|:|,/]) [word = /.*/]{,10}
 
   - name: ${label}-place-emphasis
     priority: ${rulepriority}
     label: ${label}
     type: "token"
     pattern: |
-      [word = /.*/]{,3} (?<! /can|could|should|may|might|we|We|I|i/ [tag = /^VB/]?) [lemma = "place" & tag = /^VB/] [word = /.*/]{,3} (?<trigger>[word = "emphasis"]) [word = /.*/]{,10}
+      [word = /.*/]{,3} (?<! /can|could|should|may|might|must|we|We|I|i/ [tag = /^VB/]?) [lemma = "place" & tag = /^VB/] [word = /.*/]{,3} (?<trigger>[word = "emphasis"]) [word = /.*/]{,10}
 
   # Note: prop vs entity rule pairs may be redundant, but the prop rules seem to capture some more complete beliefs than entity rules
 #  - name: ${label}-believe-active-believer-prop
