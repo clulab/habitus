@@ -199,7 +199,7 @@ class TestVariableReaderLabelBased extends Test {
       "sent15", "Seeding dates ranged from 22 August to 26 September in 2011WS, from 29 February to 1 April in the 2012DS, and from 5 to 23 March in the 2013DS",
       "PlantingDate",
       Seq(
-        ("Planting", Seq(("from 22 August to 26 September", "XXXX-08-22 -- XXXX-09-26"))),
+        ("Planting", Seq(("from 22 August to 26 September", "2011-08-22 -- 2011-09-26"))),
         ("Planting", Seq(("from 29 February to 1 April", "XXXX-02-29 -- XXXX-04-01"))),
         ("Planting", Seq(("from 5 to 23 March", "XXXX-03-05 -- XXXX-03-23")))
       )
