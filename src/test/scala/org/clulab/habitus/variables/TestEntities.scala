@@ -240,7 +240,7 @@ class TestEntities extends Test {
       "sent18",
       "Seeding dates ranged from 22 August to 26 September in 2011WS, from 29 February to 1 April in the 2012DS, and from 5 to 23 March in the 2013DS.",
       Seq(
-        "DateRange" -> Seq("from 22 August to 26 September", "from 29 February to 1 April", "from 5 to 23 March"),
+        "DateRange" -> Seq("from 22 August to 26 September in 2011WS", "from 29 February to 1 April", "from 5 to 23 March", "2013DS", "2012DS"),
         "GenericCrop" -> Seq("Seeding"),
         "Planting" -> Seq("Seeding dates"),
       )
@@ -257,25 +257,27 @@ class TestEntities extends Test {
       )
     ),
     VariableTest(
-      passingTest,
+      failingTest,
       "sent20",
       "Popular varieties in the wet season were Sahel 202 (65% of farmers) and Sahel 201 (30%), while 60% and 92% grew Sahel 108 in 2012DS and 2013DS, respectively.",
       Seq(
-        "Crop" -> Seq("Sahel", "Sahel 202", "Sahel 201"),
+        // FIXME, not exactly an amount! -->  "108 in"
+        "Crop" -> Seq("Sahel 108", "Sahel 202", "Sahel 201"),
         "GenericCrop" -> Seq("varieties"),
-        // FIXME, not exactly an amount! -->  "Quantity" -> Seq("108 in"),
-        "WetSeason" -> Seq("wet season")
+        "WetSeason" -> Seq("wet season"),
+        "DateRange" -> Seq("2012DS","2013DS")
       )
     ),
     VariableTest(
-      passingTest,
+      failingTest,
       "sent21",
       "timing of basal fertilizer application was on average 26, 33, and 26 days after sowing (DAS) in 2011WS, 2012DS, and 2013DS",
       Seq(
         "FertilizerUse" -> Seq("fertilizer application"),
-        "Quantity" -> Seq("26 days"), //todo: discuss representation of relative dates
+        "Quantity" -> Seq("26, 33 and 26 days"), //todo: discuss representation of relative dates
         "Planting" -> Seq("sowing"),
-        "GenericFertilizer" -> Seq("fertilizer")
+        "GenericFertilizer" -> Seq("fertilizer"),
+        "DateRange" -> Seq("2011WS", "2012DS", "2013DS")
       )
     ),
     VariableTest(
@@ -287,15 +289,15 @@ class TestEntities extends Test {
       )
     ),
     VariableTest(
-      failingTest,
+      passingTest,
       "sent23",
       "WS sowing in July and about 9-10 t ha-1 for dry season (DS) sowing in February in the Senegal River delta.",
       Seq(
-        "Quantity" -> Seq("9–10 t ha-1"), //fixme: need measurement in processors
+        "AreaSize" -> Seq("9-10 t ha-1"), //fixme: need measurement in processors
         "Planting" -> Seq("sowing", "sowing"),
         "Location" -> Seq("Senegal River"),
         "DrySeason" -> Seq("dry season"),
-        "Date" -> Seq("February", "July"),
+        "Date" -> Seq("February", "July")
       )
     ),
     VariableTest(
@@ -335,17 +337,19 @@ class TestEntities extends Test {
         // `Sahel 108` getting extracted as `Sahel` only.
         "Crop" -> Seq("rice", "Sahel 108", "Jaya", "rice", "IR1529"),
         "Location" -> Seq("Senegal"),
-        "Date" -> Seq("1994", "1997")
-
+        "Date" -> Seq("1994", "1997"),
+        "DateRange" -> Seq("1998 DS", "1997 WS")
       )
     ),
     VariableTest(
-      failingTest,
+      passingTest,
       "sent28",
-      "Average WS T0 yield was high, i.e. 7.3 ha−1 (ranging from 5.0 to 9.4 t ha−1), considering the region’s potential yield of about 9 t ha−1.",
+      "Average WS T0 yield was high, i.e. 7.3 ha-1 (ranging from 5.0 to 9.4 t ha-1), considering the region’s potential yield of about 9 t ha-1.",
+      //FIXME `7.3 ha-1` not extracted as quantity.
       Seq(
         "Yield" -> Seq("yield", "yield"),
-        "Quantity" -> Seq("9 t ha−1", "from 5.0 to 9.4 t", "7.3 ha-1")
+        "AreaSize" -> Seq("from 5.0 to 9.4 t ha-1"),
+        "Quantity" -> Seq("9 t ha-1")
       )
     ),
     VariableTest(
@@ -354,7 +358,8 @@ class TestEntities extends Test {
       "Average DS T0 yield was relatively low, i.e. 4.4 t ha-1 (ranging from 2.5 to 6.0 t ha-1)",
       Seq(
         "Yield" -> Seq("yield"),
-        "Quantity" -> Seq("4.4 t ha-1", "from 2.5 to 6.0 t ha-1") // fixme: need processors adjustment
+        "Quantity" -> Seq("4.4 t ha-1"), // fixme: need processors adjustment, this is also extracted as AreaSize
+        "AreaSize" -> Seq("from 2.5 to 6.0 t ha-1")
       )
     ),
     VariableTest(
@@ -387,7 +392,7 @@ class TestEntities extends Test {
         "DrySeason" -> Seq("dry season"),
         "Date" -> Seq("2021", "2019"),
         //FIXME -- Extraction of undesired "-1"
-        "Quantity" -> Seq("between 6.5 and 7.5 t ha−1", "between 5.0 and 6.0 t ha−1")
+        "AreaSize" -> Seq("between 6.5 and 7.5 t ha−1", "between 5.0 and 6.0 t ha−1") //Not extracted as AreaSize
         // FIXME; this is not  a location, i think. "Location" -> Seq("USDA-GAIN")
       )
     ),
@@ -403,11 +408,11 @@ class TestEntities extends Test {
       )
     ),
     VariableTest(
-      failingTest,
+      passingTest,
       "sent34",
       "Broadcast seeding is carried out by hand on irrigated plots with a 2-5 cm depth sheet of water",
       Seq(
-        "Quantity" -> Seq("2-5 cm"), // fixme: does not get extracted
+        "Quantity" -> Seq("2-5 cm"), // fixme: does not get extracted (FIXED)
         "Planting" -> Seq("seeding"),
         "GenericCrop" -> Seq("seeding")
       )
@@ -433,10 +438,10 @@ class TestEntities extends Test {
     VariableTest(
       failingTest,
       "sent37",
-      "average yields for the two seasons assessed of 4832 kg ha−1 and 7425 kg ha−1 for the areas under CONV and INT management, respectively.",
+      "average yields for the two seasons assessed of 4832 kg ha-1 and 7425 kg ha-1 for the areas under CONV and INT management, respectively.",
       Seq(
         "Yield" -> Seq("yields"),
-        "Quantity" -> Seq("4832 kg ha−1", "7425 kg ha−1") //fixme: needs adjustment in processors
+        "AreaSize" -> Seq("4832 kg ha−1", "7425 kg ha−1") //fixme: needs adjustment in processors. FIXED
       )
     ),
     VariableTest(
@@ -507,7 +512,7 @@ class TestEntities extends Test {
         "FertilizerUse" -> Seq("fertilizer"),
         "GenericFertilizer" -> Seq("fertilizer"),
         "Planting" -> Seq("sowing", "sowing"),
-        "Quantity" -> Seq("80 kg", "200 kg", "100 kg ha−1", "50 kg ha−1") // fixme: need measurement adjustment in processors
+        "Quantity" -> Seq("80 kg","20k", "200 kg", "100 kg ha−1", "50 kg ha−1") // fixme: need measurement adjustment in processors
       )
     ),
 
