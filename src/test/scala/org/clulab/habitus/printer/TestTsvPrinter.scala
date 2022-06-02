@@ -12,7 +12,7 @@ class TestTsvPrinter extends Test {
   it should "print one Mention with one argument" in {
     new TempFile().autoClose { tempFile =>
       new TsvPrinter(tempFile.file).autoClose { printer =>
-        val mentionInfo = new MentionInfo("This is the text of the sentence.", "It came from a file.")
+        val mentionInfo = new MentionInfo("This is the text of the sentence.", "It came from a file.", "The mention has this label.")
         val contextInfo = DefaultContext("location", "date", "process", "crop", "fertilizer", 0)
         val argumentInfos = Seq(
           ArgumentInfo("name", "text", "norm")
@@ -20,12 +20,12 @@ class TestTsvPrinter extends Test {
         printer.outputInfos(mentionInfo, contextInfo, argumentInfos)
       }
       val headerOutput = Seq(
-        "sentenceText", "inputFilename",
+        "sentenceText", "inputFilename", "label",
         "location", "date", "process", "crop", "fertilizer", "comparative",
         "arg0_name", "arg0_text", "arg0_norm", "..."
       ).mkString("\t")
       val valueOutput = Seq(
-        "This is the text of the sentence.", "It came from a file.",
+        "This is the text of the sentence.", "It came from a file.", "The mention has this label.",
         "location", "date", "process", "crop", "fertilizer", "0",
         "name", "text", "norm"
       ).mkString("\t")
@@ -39,7 +39,7 @@ class TestTsvPrinter extends Test {
   it should "print one Mention with two arguments" in {
     new TempFile().autoClose { tempFile =>
       new TsvPrinter(tempFile.file).autoClose { printer =>
-        val mentionInfo = new MentionInfo("This is the text of the sentence.", "It came from a file.")
+        val mentionInfo = new MentionInfo("This is the text of the sentence.", "It came from a file.", "The mention has this label.")
         val contextInfo = DefaultContext("location", "date", "process", "crop", "fertilizer", 0)
         val argumentInfos = Seq(
           ArgumentInfo("name1", "text1", "norm1"),
@@ -48,12 +48,12 @@ class TestTsvPrinter extends Test {
         printer.outputInfos(mentionInfo, contextInfo, argumentInfos)
       }
       val headerOutput = Seq(
-        "sentenceText", "inputFilename",
+        "sentenceText", "inputFilename", "label",
         "location", "date", "process", "crop", "fertilizer", "comparative",
         "arg0_name", "arg0_text", "arg0_norm", "..."
       ).mkString("\t")
       val valueOutput = Seq(
-        "This is the text of the sentence.", "It came from a file.",
+        "This is the text of the sentence.", "It came from a file.", "The mention has this label.",
         "location", "date", "process", "crop", "fertilizer", "0",
         "name1", "text1", "norm1",
         "name2", "text2", "norm2",
@@ -68,7 +68,7 @@ class TestTsvPrinter extends Test {
   it should "print two Mentions" in {
     new TempFile().autoClose { tempFile =>
       new TsvPrinter(tempFile.file).autoClose { printer =>
-        val mentionInfo = new MentionInfo("This is the text of the sentence.", "It came from a file.")
+        val mentionInfo = new MentionInfo("This is the text of the sentence.", "It came from a file.", "The mention has this label.")
         val contextInfo = DefaultContext("location", "date", "process", "crop", "fertilizer", 0)
         val argumentInfos1 = Seq(
           ArgumentInfo("name1", "text1", "norm1")
@@ -80,17 +80,17 @@ class TestTsvPrinter extends Test {
         printer.outputInfos(mentionInfo, contextInfo, argumentInfos2)
       }
       val headerOutput = Seq(
-        "sentenceText", "inputFilename",
+        "sentenceText", "inputFilename", "label",
         "location", "date", "process", "crop", "fertilizer", "comparative",
         "arg0_name", "arg0_text", "arg0_norm", "..."
       ).mkString("\t")
       val valueOutput1 = Seq(
-        "This is the text of the sentence.", "It came from a file.",
+        "This is the text of the sentence.", "It came from a file.", "The mention has this label.",
         "location", "date", "process", "crop", "fertilizer", "0",
         "name1", "text1", "norm1"
       ).mkString("\t")
       val valueOutput2 = Seq(
-        "This is the text of the sentence.", "It came from a file.",
+        "This is the text of the sentence.", "It came from a file.", "The mention has this label.",
         "location", "date", "process", "crop", "fertilizer", "0",
         "", "", "", // This is the important part.  Skip these.
         "name2", "text2", "norm2",
