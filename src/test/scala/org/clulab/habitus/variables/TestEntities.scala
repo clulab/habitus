@@ -179,6 +179,7 @@ class TestEntities extends Test {
       passingTest,
       "sent12",
       "These correspond to the dry season (from February/March to June/July).",
+
       Seq(
         "DrySeason" -> Seq("dry season"),
         "DateRange" -> Seq("from February/March to June/July")
