@@ -469,21 +469,18 @@ class TestVariableReader extends Test {
       Seq.empty
     ),
     VariableTest(
-      "sent27", "Farmers used two rice cultivars (IR1529 and Jaya) during the 1997 WS, and exclusively IR13240-108-2-2-3 (released as Sahel 108 in Senegal in 1994) during the 1998 DS. All rice was direct-seeded.",
+      "sent21_12", "Farmers used four indica cultivars: Aiwu (short duration, slender grain), I Kong Pao (short duration, bold grain) and IR1529 and Jaya (medium duration, slender grain).",
       "PropertyAssignment",
-      Seq(
-        ("GrainProperty", Seq(("Aiwu (short duration, slender grain", ""),
-                              ("I Kong Pao (short duration, bold grain",""),
-                              ("IR1529 and Jaya (medium duration, slender grain", ""),
-                              ("Jaya (medium duration, slender grain", ""))),
-        ("Duration", Seq(("Aiwu (short duration", ""),
-                        ("I Kong Pao (short duration", ""),
-                        ("IR1529 and Jaya (medium duration",""),
-                        ("Jaya (medium duration","")))
+      Seq( ("Aiwu", Seq(("short duration", ""))),
+        ("Aiwu", Seq(("slender grain", ""))),
+        ("I Kong Pao", Seq(("short duration", ""))),
+        ("I Kong Pao", Seq(("bold grain", ""))),
+        ("IR1529", Seq(("medium duration", ""))),
+        ("IR1529", Seq(("slender grain", ""))),
+          ("Jaya", Seq(("medium duration", ""))),
+        ("Jaya", Seq(("slender grain", "")))
       )
-    ),
-
-
+    )
   )
 
   variableTests.zipWithIndex.foreach { case (variableTest, index) => variableTest.test(index) }

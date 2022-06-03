@@ -106,7 +106,7 @@
   label: AreaSize
   type: token
   pattern: |
-    (?<![word = /^vs\.?|against|compared|^forecast/][word=/\w*/]{0,3}) [entity='B-MEASUREMENT' & !word = "-"] [entity='I-MEASUREMENT']* [entity='I-MEASUREMENT' & word = /^(ha|he)/]+
+    (?<![word = /^vs\.?|against|compared|^forecast/][word=/\w*/]{0,3}) [entity='B-MEASUREMENT' & !word = "-"]  [entity='I-MEASUREMENT' & word = /^(ha|he)/]+
 
 - name: percentage-rule
   priority: ${rulepriority}

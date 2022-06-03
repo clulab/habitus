@@ -67,41 +67,42 @@ class TestVariableReaderLabelBased extends Test {
       "sent1", "with an average yield over years and seasons of 5 t ha-1",
       "YieldAmount",
       Seq(
-        ("Quantity", Seq(("5 t ha-1", "5.0 t/ha"))) //FIXME, should the assignment for yield then be attachments from `AreaSize`?
+        ("Yield", Seq(("5 t ha-1", "5.0 t/ha")))
       )
     ),
     VariableTest(
       "sent2", "Farmers’ yields are on average between 4 and 5 t ha-1, and, therefore, far below potential yields.",
       "YieldAmount",
       Seq(
-        ("Yield", Seq(("between 4 and 5 t ha-1", "4.0 -- 5.0 t/ha"))) //FIXME same here.
+        ("Yield", Seq(("between 4 and 5 t ha-1", "4.0 -- 5.0 t/ha")))
       )
     ),
     VariableTest(
       "sent3", "the average grain yield was 8.2 t ha–1",
       "YieldAmount",
       Seq(
-        ("Yield", Seq(("8.2 t ha–1", "8.2 t/ha"))) //FIXME same here
+        ("Yield", Seq(("8.2 t ha–1", "8.2 t/ha")))
       )
     ),
     VariableTest(
       "sent4", "in the 1999WS, with an average grain yield of 7.2 t ha–1. In the 2000WS",
       "YieldAmount",
       Seq(
-        ("Yield", Seq(("7.2 t ha–1", "7.2 t/ha"))) //FIXME same here
+        ("Yield", Seq(("7.2 t ha–1", "7.2 t/ha")))
       )
     ),
-//    VariableTest(
-//      "sent5", "These correspond to the dry season (from February/March to June/July)",
-//      Seq(
-//        ("DrySeason", Seq(("July", "XXXX-07-XX")))
-//      )
-//    )
+    VariableTest(
+      "sent5", "These correspond to the dry season (from February/March to June/July)",
+      "DrySeasonAssignment",
+      Seq(
+        ("DrySeason", Seq(("from February/March to June/July", "XXXX-02-XX -- XXXX-07-XX")))
+      )
+    ),
     VariableTest(
       "sent5", "Potential rice grain yields (limited by solar radiation and temperature only) are on average about 9 t ha–1 in the wet growing season from July to November",
       "YieldAmount",
       Seq(
-        ("Yield", Seq(("9 t ha–1", "9.0 t/ha"))) //FIXME same here
+        ("Yield", Seq(("9 t ha–1", "9.0 t/ha")))
       )
     ),
     VariableTest(
@@ -115,21 +116,21 @@ class TestVariableReaderLabelBased extends Test {
       "sent6", "actual average farmer yields are about 5 t ha–1 ",
       "YieldAmount",
       Seq(
-        ("Yield", Seq(("5 t ha–1", "5.0 t/ha"))) //FIXME same here
+        ("Yield", Seq(("5 t ha–1", "5.0 t/ha")))
       )
     ),
     VariableTest(
       "sent7", "The potential yields of these three cultivars are similar and are on average about 8 to 9 t ha-1 in the wet season",
       "YieldAmount",
       Seq(
-        ("Yield", Seq(("5 t ha–1", "8.0 -- 9.0 t/ha"))) //FIXME same here
+        ("Yield", Seq(("5 t ha–1", "8.0 -- 9.0 t/ha")))
       )
     ),
     VariableTest(
       "sent8", "The potential grain yield that can be obtained ranges from 8 to 9 t ha-1 in the wet season (July sowing) and from 6 to 11 t ha-1 in the dry season (February sowing)",
       "YieldAmount",
       Seq(
-        ("Yield", Seq(("8 to 9 t ha-1", "8.0 -- 9.0 t/ha"), ("6 to 11 t ha-1", "6.0 -- 11.0 t/ha"))) //FIXME same here
+        ("Yield", Seq(("8 to 9 t ha-1", "8.0 -- 9.0 t/ha"), ("6 to 11 t ha-1", "6.0 -- 11.0 t/ha")))
       )
     ),
     VariableTest(
@@ -143,7 +144,7 @@ class TestVariableReaderLabelBased extends Test {
       "sent8_2", "The potential grain yield that can be obtained ranges from 8 to 9 t ha-1 in the wet season (July sowing) and from 6 to 11 t ha-1 in the dry season (February sowing)",
       "DrySeasonAssignment",
       Seq(
-        ("DrySeason", Seq(("February", "XXXX-02-XX"))) //FIXME same here
+        ("DrySeason", Seq(("February", "XXXX-02-XX")))
       )
     ),
     VariableTest(
@@ -168,28 +169,28 @@ class TestVariableReaderLabelBased extends Test {
       )
     ),
     VariableTest(
-      "sent11", "Average yield was 4.8 t ha-1; ", //FIXME same here
+      "sent11", "Average yield was 4.8 t ha-1; ",
       "YieldAmount",
       Seq(
         ("Yield", Seq((" 4.8 t", "4.8 t/ha"))),
       )
     ),
     VariableTest(
-      "sent12", "Average yield reached 7.2 t ha-1 in 1999 and 8.2 t ha-1 in 2000", //FIXME same here
+      "sent12", "Average yield reached 7.2 t ha-1 in 1999 and 8.2 t ha-1 in 2000",
       "YieldAmount",
       Seq(
         ("Yield", Seq(("7.2 t ha-1", "7.2 t/ha"), ("8.2 t ha-1", "8.2 t/ha")))
       )
     ),
     VariableTest(
-      "sent13", "in the 1999WS, with an average grain yield of 7.2 t ha-1. In the 2000WS", //FIXME same here
+      "sent13", "in the 1999WS, with an average grain yield of 7.2 t ha-1. In the 2000WS",
       "YieldAmount",
       Seq(
         ("Yield", Seq(("7.2 t ha-1", "7.2 t/ha")))
       )
     ),
     VariableTest(
-      "sent14", "and potential yield was taken as 8 t/ha for both seasons in the middle valley", //FIXME same here
+      "sent14", "and potential yield was taken as 8 t/ha for both seasons in the middle valley",
       "YieldAmount",
       Seq(
         ("Yield", Seq(("8 t/ha", "8.0 t/ha")))
@@ -199,7 +200,7 @@ class TestVariableReaderLabelBased extends Test {
       "sent15", "Seeding dates ranged from 22 August to 26 September in 2011WS, from 29 February to 1 April in the 2012DS, and from 5 to 23 March in the 2013DS",
       "PlantingDate",
       Seq(
-        ("Planting", Seq(("from 22 August to 26 September", "XXXX-08-22 -- XXXX-09-26"))),
+        ("Planting", Seq(("from 22 August to 26 September", "2011-08-22 -- 2011-09-26"))),
         ("Planting", Seq(("from 29 February to 1 April", "XXXX-02-29 -- XXXX-04-01"))),
         ("Planting", Seq(("from 5 to 23 March", "XXXX-03-05 -- XXXX-03-23")))
       )
@@ -213,33 +214,32 @@ class TestVariableReaderLabelBased extends Test {
       )
     ),
     VariableTest(
-      "sent17", "Average WS T0 yield was high, i.e. 7.3 ha-1 (ranging from 5.0 to 9.4 t ha-1)", //FIXME same here
+      "sent17", "Average WS T0 yield was high, i.e. 7.3 ha-1 (ranging from 5.0 to 9.4 t ha-1)",
       "YieldAmount",
       Seq(
-        ("Yield", Seq(("7.3 ha", "7.3 ha"))),
-        ("Yield",  Seq(("from 5.0 to 9.4 t", "5.0 -- 9.4 t")))
+        ("Yield",  Seq(("from 5.0 to 9.4 t ha-1", "5.0 -- 9.4 t/ha")))
       )
     ),
     VariableTest(
-      "sent18", "considering the region’s potential yield of about 9 t ha-1.", //FIXME same here
+      "sent18", "considering the region’s potential yield of about 9 t ha-1.",
       "YieldAmount",
       Seq(
-        ("Yield", Seq(("9 t", "9.0 t"))),
+        ("Yield", Seq(("9 t ha-1", "9.0 t/ha"))),
       )
     ),
     VariableTest(
-      "sent19", "Average DS T0 yield was relatively low, i.e. 4.4 t ha-1 (ranging from 2.5 to 6.0 t ha-1)", //FIXME same here
+      "sent19", "Average DS T0 yield was relatively low, i.e. 4.4 t ha-1 (ranging from 2.5 to 6.0 t ha-1)",
       "YieldAmount",
       Seq(
-        ("Yield", Seq(("4.4 t", "4.4 t"))),
-        ("Yield", Seq(("from 2.5 to 6.0 t", "2.5 -- 6.0 t")))
+        ("Yield", Seq(("4.4 t ha-1", "4.4 t/ha"))),
+        ("Yield", Seq(("from 2.5 to 6.0 t ha-1", "2.5 -- 6.0 t/ha")))
       )
     ),
     VariableTest(
       "sent20", "Average yields in SRV theoretically range between 5.0 and 6.0 t ha-1 in the rainy season and between 6.5 and 7.5 t ha-1 in the dry season",
       "YieldAmount",
       Seq(
-        ("Yield", Seq(("between 5.0 and 6.0 t ha-1", "5.0 -- 6.0 t/ha"), ("between 6.5 and 7.5 t ha-1", "6.5 -- 7.5 t/ha"))), //FIXME same here
+        ("Yield", Seq(("between 5.0 and 6.0 t ha-1", "5.0 -- 6.0 t/ha"), ("between 6.5 and 7.5 t ha-1", "6.5 -- 7.5 t/ha")))
       )
     ),
     VariableTest(
@@ -253,7 +253,8 @@ class TestVariableReaderLabelBased extends Test {
       "sent22", "average yields for the two seasons assessed of 4832 kg ha-1 and 7425 kg ha-1 for the areas under CONV and INT management, respectively.",
       "YieldAmount",
       Seq(
-        ("Yield", Seq(("4832 kg", "4832.0 kg"), ("7425 kg", "7425.0 kg"))) //FIXME same here
+        ("Yield", Seq(("4832 kg", "4832.0 kg/ha"))),
+        ("Yield", Seq(("7425 kg", "7425.0 kg/ha")))
       )
     ),
     VariableTest(
@@ -272,7 +273,7 @@ class TestVariableReaderLabelBased extends Test {
       "sent24", "Rice yields were 6.4, 6.4, and 5.1 t/ha in 2011WS, 2012DS, and 2013DS, respectively",
       "YieldAmount",
       Seq(
-        ("Yield", Seq(("5.1 t/ha", "5.1 t/ha"))) // FIXME same here?
+        ("Yield", Seq(("5.1 t/ha", "5.1 t/ha")))
       )
     ),
     VariableTest(
@@ -300,7 +301,7 @@ class TestVariableReaderLabelBased extends Test {
       "sent28_1", "Average yields in SRV theoretically range between 5.0 and 6.0 t ha-1 in the rainy season and between 6.5 and 7.5 t ha-1 in the dry season (SAED, 2019; USDA-GAIN, 2021)",
       "YieldAmount",
       Seq(
-        ("Yield", Seq(("between 5.0 and 6.0 t ha-1", "5.0 -- 6.0 t"), ("between 6.5 and 7.5 t ha-1", "6.5 -- 7.5 t"))) //FIXME same here?
+        ("Yield", Seq(("between 5.0 and 6.0 t ha-1", "5.0 -- 6.0 t/ha"), ("between 6.5 and 7.5 t ha-1", "6.5 -- 7.5 t/ha")))
       )
     ),
     VariableTest(

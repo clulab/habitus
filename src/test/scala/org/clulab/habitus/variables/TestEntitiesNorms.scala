@@ -95,7 +95,7 @@ class TestEntitiesNorms extends Test {
     VariableTest(
       passingTest,
       "sent4",
-      "in the 1999WS, with an average grain yield of 7.2 t ha–1. In the 2000WS",
+      "in the 1999WS, with an average grain yield of 7.2 t ha-1. In the 2000WS",
       Seq(
         "Quantity" -> Seq(("7.2 t ha-1", "7.2 t/ha")),
       )
@@ -103,7 +103,7 @@ class TestEntitiesNorms extends Test {
     VariableTest(
       passingTest,
       "sent5",
-      "the average grain yield was 8.2 t ha–1",
+      "the average grain yield was 8.2 t ha-1",
       Seq(
         "Quantity" -> Seq(("8.2 t ha-1", "8.2 t/ha")),
       )
@@ -111,7 +111,7 @@ class TestEntitiesNorms extends Test {
     VariableTest(
       passingTest,
       "sent6",
-      "Average yield reached 7.2 t ha–1 in 1999 and 8.2 t ha–1 in 2000",
+      "Average yield reached 7.2 t ha-1 in 1999 and 8.2 t ha–1 in 2000",
       Seq(
         "Quantity" -> Seq(("7.2 t ha-1", "7.2 t/ha"), ("8.2 t ha-1", "8.2 t/ha"))
       )
@@ -119,18 +119,18 @@ class TestEntitiesNorms extends Test {
     VariableTest(
       passingTest,
       "sent7",
-      "Potential rice grain yields (limited by solar radiation and temperature only) are on average about 9 t ha–1 in the wet growing season from July to November",
+      "Potential rice grain yields (limited by solar radiation and temperature only) are on average about 9 t ha-1 in the wet growing season from July to November",
       Seq(
         "Quantity" -> Seq(("9 t ha-1", "9.0 t/ha")),
         "DateRange" -> Seq(("from July to November", "XXXX-07-XX -- XXXX-11-XX")),
       )
     ),
     VariableTest(
-      failingTest,
+      passingTest,
       "sent8",
       "These correspond to the dry season (from February/March to June/July).",
       Seq(
-        "DateRange" -> Seq(("", ""))
+        "DateRange" -> Seq(("from February/March to June/July", "XXXX-02-XX -- XXXX-07-XX"))
       )
     ),
     VariableTest(
@@ -162,9 +162,11 @@ class TestEntitiesNorms extends Test {
       "sent12",
       "Seeding dates ranged from 22 August to 26 September in 2011WS, from 29 February to 1 April in the 2012DS, and from 5 to 23 March in the 2013DS.",
       Seq(
-        "DateRange" -> Seq(("from 22 August to 26 September", "XXXX-08-22 -- XXXX-09-26"),
+        "DateRange" -> Seq(("from 22 August to 26 September in 2011WS","2011-08-22 -- 2011-09-26"),
                             ("from 29 February to 1 April", "XXXX-02-29 -- XXXX-04-01"),
-                            ("from 5 to 23 March", "XXXX-03-05 -- XXXX-03-23")),
+                            ("from 5 to 23 March", "XXXX-03-05 -- XXXX-03-23"),
+                            ("2012DS","2012-XX-XX -- 2012-XX-XX"),
+                            ("2013DS","2013-XX-XX -- 2013-XX-XX"))
       )
     ),
     VariableTest(
@@ -184,12 +186,11 @@ class TestEntitiesNorms extends Test {
       )
     ),
     VariableTest(
-      failingTest,
+      passingTest,
       "sent15",
       "WS sowing in July and about 9-10 t ha-1 for dry season (DS) sowing in February in the Senegal River delta.",
       Seq(
-        //FIXME, wrong extraction of the range `9-10 t ha-1`
-        "Quantity" -> Seq(("9–10 t ha-1", "9.0 -- 10.0 t/ha")),
+        "Quantity" -> Seq(("9-10 t ha-1","9.0 -- 10.0 t/ha")),
         "Date" -> Seq(("February", "XXXX-02-XX"), ("July", "XXXX-07-XX")),
       )
     ),
@@ -198,25 +199,26 @@ class TestEntitiesNorms extends Test {
       "sent16",
       "Farmers used two rice cultivars (IR1529 and Jaya) during the 1997 WS, and exclusively IR13240-108-2-2-3 (released as Sahel 108 in Senegal in 1994) during the 1998 DS. All rice was direct-seeded.",
       Seq(
-        "Date" -> Seq(("1994", "1994-XX-XX"), ("1997", "1997-XX-XX"))
+        "Date" -> Seq(("1994", "1994-XX-XX")),
+        "DateRange" -> Seq( ("1997 WS", "1997-XX-XX -- 1997-XX-XX"),("1998 DS", "1998-XX-XX -- 1998-XX-XX") )
       )
     ),
     VariableTest(
       failingTest,
-      //FIXME; Discuss with Masha, clarification for the norm of `from 5.0 to 9.4 t ha-1` ---> 5.0 -- 9.4 t or 5.0 -- 9.0 t/ha?
+      //FIXME; AREA SIZE not extracted
       "sent17",
-      "Average WS T0 yield was high, i.e. 7.3 ha−1 (ranging from 5.0 to 9.4 t ha−1), considering the region’s potential yield of about 9 t ha−1.",
+      "Average WS T0 yield was high, i.e. 7.3 ha-1 (ranging from 5.0 to 9.4 t ha-1), considering the region’s potential yield of about 9 t ha-1.",
       Seq(
-        "Quantity" -> Seq(("9 t ha-1", "9.0 t/ha"), ("from 5.0 to 9.4 t", "5.0 -- 9.0 t/ha"), ("7.3 ha-1", "7.3 ha"))
+        "Quantity" -> Seq(("9 t ha-1", "9.0 t/ha"), ("from 5.0 to 9.4 t ha-1","5.0 -- 9.4 t/ha")),
+        "AreaSize" -> Seq(("7.3 ha-1", "7.3 ha"))
       )
     ),
     VariableTest(
-      failingTest,
-      // FIXME; just like above sentence.
+      passingTest,
       "sent18",
-      "Average DS T0 yield was relatively low, i.e. 4.4 t ha− 1 (ranging from 2.5 to 6.0 t ha− 1)",
+      "Average DS T0 yield was relatively low, i.e. 4.4 t ha-1 (ranging from 2.5 to 6.0 t ha-1)",
       Seq(
-        "Quantity" -> Seq(("4.4 t ha-1", "4.4 t/ha"), ("from 2.5 to 6.0 t", "2.5 -- 6.0 t/ha"))
+        "Quantity" -> Seq(("4.4 t ha-1", "4.4 t/ha"), ("from 2.5 to 6.0 t ha-1", "2.5 -- 6.0 t/ha"))
       )
     ),
     VariableTest(
@@ -236,7 +238,7 @@ class TestEntitiesNorms extends Test {
       )
     ),
     VariableTest(
-      failingTest,
+      passingTest,
       "sent21",
       "Average yields in SRV theoretically range between 5.0 and 6.0 t ha-1 in the rainy season and between 6.5 and 7.5 t ha-1 in the dry season (SAED, 2019; USDA-GAIN, 2021)",
       Seq(
@@ -253,11 +255,10 @@ class TestEntitiesNorms extends Test {
       )
     ),
     VariableTest(
-      failingTest,
+      passingTest,
       "sent23",
       "Broadcast seeding is carried out by hand on irrigated plots with a 2-5 cm depth sheet of water",
       Seq(
-        //FIXME; range instead of -5 cm
         "Quantity" -> Seq(("2-5 cm", "2.0 -- 5.0 cm")),
       )
     ),
@@ -274,13 +275,13 @@ class TestEntitiesNorms extends Test {
       "sent25",
       "In plots receiving fertilizer, DAP was applied basally (19.3 and 21.5 kg N and P ha−1 ), and three urea splits were broadcasted into 1–5 cm of water (101.3 kg N ha−1 ; 40% at early-tillering, 40% at pan- icle initiation, and 20% at heading)",
       Seq(
-        // FIXME; `19.3 and 21.5 kg` not extracted fully (without 19.3). Discuss with Masha.
+        // FIXME; `19.3 and 21.5 kg` not extracted fully (without 19.3). Also some wrong Quantity extractions. Discuss with Masha.
         "Quantity" -> Seq(("101.3 kg", "101.3 kg"), ("1–5 cm", "1.0 -- 5.0 cm"), ("21.5 kg", "21.5 kg")),
       )
     ),
     VariableTest(
       passingTest,
-      "sent39",
+      "sent26",
       "Transplanting for both management systems took place on 7 (2007 and 2008 wet season) and 25 (2009 wet season) August and on 19 March (2008 and 2009 dry season).",
       Seq(
         "Date" -> Seq(("2007", "2007-XX-XX"), ("2008", "2008-XX-XX"), ("2009", "2009-XX-XX"),
@@ -290,11 +291,11 @@ class TestEntitiesNorms extends Test {
     VariableTest(
       failingTest,
       "sent41",
-      "das days after sowing, Fert fertilizer treatment, with F1: recommended dose (80 kg N ha−1), i.e., 200 kg ha−1 NPK (15.15.15) at sowing + 100 kg ha−1 urea at 20 das + 50 kg ha−1 urea at 50 das. F2: F1/4 (20 kg N ha−1);",
+      "das days after sowing, Fert fertilizer treatment, with F1: recommended dose (80 kg N ha-1), i.e., 200 kg ha-1 NPK (15.15.15) at sowing + 100 kg ha-1 urea at 20 das + 50 kg ha-1 urea at 50 das. F2: F1/4 (20 kg N ha-1);",
       Seq(
         // FIXME; Extraction of quantities with `+` signs here.
-        "Quantity" -> Seq(("80 kg", "80.0 kg"), ("200 kg", "200.0 kg"),
-                          ("100 kg ha−1", "100.0 kg"), ("50 kg ha−1", "50.0 kg"))
+        "Quantity" -> Seq(("80 kg N ha-1", "80.0 kg n ha-1"), ("200 kg ha-1", "200.0 kg/ha"),
+                          ("100 kg ha−1", "100.0 kg/ha"), ("50 kg ha−1", "50.0 kg/ha"), (" 20 kg N ha-1", "20.0 kg n ha-1"))
       )
     ),
   )
