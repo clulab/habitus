@@ -11,7 +11,7 @@ class TestJsonlPrinter extends Test {
   it should "print one Mention with one argument" in {
     new TempFile().autoClose { tempFile =>
       new JsonlPrinter(tempFile.file).autoClose { printer =>
-        val mentionInfo = new MentionInfo("This is the text of the sentence.", "It came from a file.")
+        val mentionInfo = new MentionInfo("This is the text of the sentence.", "It came from a file.", "The mention has this label.")
         val contextInfo = DefaultContext("location", "date", "process", "crop", "fertilizer", 0)
         val argumentInfos = Seq(
           ArgumentInfo("name", "text", "norm")
@@ -22,6 +22,7 @@ class TestJsonlPrinter extends Test {
           "{" +
             """"sentenceText":"This is the text of the sentence.",""" +
             """"inputFilename":"It came from a file.",""" +
+            """"label":"The mention has this label.",""" +
             """"context":{""" +
               """"location":"location",""" +
               """"date":"date",""" +
@@ -45,7 +46,7 @@ class TestJsonlPrinter extends Test {
   it should "print one Mention with two arguments" in {
     new TempFile().autoClose { tempFile =>
       new JsonlPrinter(tempFile.file).autoClose { printer =>
-        val mentionInfo = new MentionInfo("This is the text of the sentence.", "It came from a file.")
+        val mentionInfo = new MentionInfo("This is the text of the sentence.", "It came from a file.", "The mention has this label.")
         val contextInfo = DefaultContext("location", "date", "process", "crop", "fertilizer", 0)
         val argumentInfos = Seq(
           ArgumentInfo("name1", "text1", "norm1"),
@@ -57,6 +58,7 @@ class TestJsonlPrinter extends Test {
           "{" +
             """"sentenceText":"This is the text of the sentence.",""" +
             """"inputFilename":"It came from a file.",""" +
+            """"label":"The mention has this label.",""" +
             """"context":{""" +
               """"location":"location",""" +
               """"date":"date",""" +
@@ -84,7 +86,7 @@ class TestJsonlPrinter extends Test {
   it should "print two Mentions" in {
     new TempFile().autoClose { tempFile =>
       new JsonlPrinter(tempFile.file).autoClose { printer =>
-        val mentionInfo = new MentionInfo("This is the text of the sentence.", "It came from a file.")
+        val mentionInfo = new MentionInfo("This is the text of the sentence.", "It came from a file.", "The mention has this label.")
         val contextInfo = DefaultContext("location", "date", "process", "crop", "fertilizer", 0)
         val argumentInfos1 = Seq(
           ArgumentInfo("name1", "text1", "norm1")
@@ -99,6 +101,7 @@ class TestJsonlPrinter extends Test {
           "{" +
             """"sentenceText":"This is the text of the sentence.",""" +
             """"inputFilename":"It came from a file.",""" +
+            """"label":"The mention has this label.",""" +
             """"context":{""" +
               """"location":"location",""" +
               """"date":"date",""" +
@@ -117,6 +120,7 @@ class TestJsonlPrinter extends Test {
           "{" +
             """"sentenceText":"This is the text of the sentence.",""" +
             """"inputFilename":"It came from a file.",""" +
+            """"label":"The mention has this label.",""" +
             """"context":{""" +
               """"location":"location",""" +
               """"date":"date",""" +

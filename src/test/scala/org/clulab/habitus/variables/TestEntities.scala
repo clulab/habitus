@@ -156,8 +156,7 @@ class TestEntities extends Test {
       "sent12",
       "These correspond to the dry season (from February/March to June/July).",
       Seq("DrySeason" -> Seq("dry season"),
-        "DateRange" -> Seq("March to June", "from February"),
-        "Date" -> Seq("July")
+        "DateRange" -> Seq("from February/March to June/July")
       )
     ),
     VariableTest(
