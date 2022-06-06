@@ -205,7 +205,7 @@ class TestEntitiesNorms extends Test {
       )
     ),
     VariableTest(
-      failingTest,
+      passingTest,
       "sent17",
       "Average WS T0 yield was high, i.e. 7.3 t ha-1 (ranging from 5.0 to 9.4 t ha-1), considering the region’s potential yield of about 9 t ha-1.",
       Seq(
