@@ -266,7 +266,7 @@ class TestEntitiesNorms extends Test {
       "sent24",
       "average yields for the two seasons assessed of 4832 kg ha-1 and 7425 kg ha-1 for the areas under CONV and INT management, respectively.",
       Seq(
-        "Quantity" -> Seq(("4832 kg ha-1", "4832.0 kg ha-1"), ("7425 kg", "7425.0 kg"))
+        "Quantity" -> Seq(("4832 kg ha-1", "4832.0 kg/ha"), ("7425 kg ha-1","7425.0 kg/ha"))
       )
     ),
     VariableTest(
@@ -289,7 +289,7 @@ class TestEntitiesNorms extends Test {
     ),
     VariableTest(
       failingTest,
-      "sent41",
+      "sent27",
       "das days after sowing, Fert fertilizer treatment, with F1: recommended dose (80 kg N ha-1), i.e., 200 kg ha-1 NPK (15.15.15) at sowing + 100 kg ha-1 urea at 20 das + 50 kg ha-1 urea at 50 das. F2: F1/4 (20 kg N ha-1);",
       Seq(
         // FIXME; Extraction of quantities with `+` signs here.
