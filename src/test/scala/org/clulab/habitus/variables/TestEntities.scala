@@ -211,16 +211,15 @@ class TestEntities extends Test {
       "Farmers generally did not follow recommended sowing time, fertilizer rates, and timings – they generally sowed late, applied late and in excess.",
       Seq(
         "Planting" -> Seq("sowing time", "sowed"),
-        "GenericFertilizer" -> Seq("fertilizer"),
-        "FertilizerUse" -> Seq("fertilizer")
+        "GenericFertilizer" -> Seq("fertilizer")
       )
     ),
     VariableTest(
-      passingTest,
+      failingTest,
       "sent16",
       "recommended N rates by Société Nationale d’Aménagement et d’Exploitation des Terres du Delta du fleuve Sénégal et des Vallées du fleuve Sénégal (SAED) range from 133 to 179 kg/ha, applied as di-ammonium phosphate (DAP) at around sowing or transplanting, and three splits of urea (at early tillering, panicle initiation, and booting)",
       Seq(
-        "Fertilizer" -> Seq("phosphate", "DAP", "urea", "N", "S", "S"),
+        "Fertilizer" -> Seq("phosphate", "DAP", "urea", "N"),
         "Planting" -> Seq("sowing", "transplanting"),
         "Quantity" -> Seq("from 133 to 179 kg/ha"),
       )

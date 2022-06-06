@@ -158,6 +158,7 @@ class TestEntitiesNorms extends Test {
       )
     ),
     VariableTest(
+      // fixme: will need to adjust vague season rules in processors to allow for the definite article
       passingTest,
       "sent12",
       "Seeding dates ranged from 22 August to 26 September in 2011WS, from 29 February to 1 April in the 2012DS, and from 5 to 23 March in the 2013DS.",
@@ -205,12 +206,10 @@ class TestEntitiesNorms extends Test {
     ),
     VariableTest(
       failingTest,
-      //FIXME; AREA SIZE not extracted
       "sent17",
-      "Average WS T0 yield was high, i.e. 7.3 ha-1 (ranging from 5.0 to 9.4 t ha-1), considering the region’s potential yield of about 9 t ha-1.",
+      "Average WS T0 yield was high, i.e. 7.3 t ha-1 (ranging from 5.0 to 9.4 t ha-1), considering the region’s potential yield of about 9 t ha-1.",
       Seq(
-        "Quantity" -> Seq(("9 t ha-1", "9.0 t/ha"), ("from 5.0 to 9.4 t ha-1","5.0 -- 9.4 t/ha")),
-        "AreaSize" -> Seq(("7.3 ha-1", "7.3 ha"))
+        "Quantity" -> Seq(("9 t ha-1", "9.0 t/ha"), ("from 5.0 to 9.4 t ha-1","5.0 -- 9.4 t/ha"), ("7.3 t ha-1", "7.3 t/ha")),
       )
     ),
     VariableTest(
@@ -265,9 +264,9 @@ class TestEntitiesNorms extends Test {
     VariableTest(
       passingTest,
       "sent24",
-      "average yields for the two seasons assessed of 4832 kg ha− 1 and 7425 kg ha− 1 for the areas under CONV and INT management, respectively.",
+      "average yields for the two seasons assessed of 4832 kg ha-1 and 7425 kg ha-1 for the areas under CONV and INT management, respectively.",
       Seq(
-        "Quantity" -> Seq(("4832 kg", "4832.0 kg"), ("7425 kg", "7425.0 kg"))
+        "Quantity" -> Seq(("4832 kg ha-1", "4832.0 kg ha-1"), ("7425 kg", "7425.0 kg"))
       )
     ),
     VariableTest(

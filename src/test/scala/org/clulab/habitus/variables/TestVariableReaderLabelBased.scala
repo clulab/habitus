@@ -253,8 +253,8 @@ class TestVariableReaderLabelBased extends Test {
       "sent22", "average yields for the two seasons assessed of 4832 kg ha-1 and 7425 kg ha-1 for the areas under CONV and INT management, respectively.",
       "YieldAmount",
       Seq(
-        ("Yield", Seq(("4832 kg", "4832.0 kg/ha"))),
-        ("Yield", Seq(("7425 kg", "7425.0 kg/ha")))
+        ("Yield", Seq(("4832 kg ha-1", "4832.0 kg/ha"))),
+        ("Yield", Seq(("7425 kg ha-1", "7425.0 kg/ha")))
       )
     ),
     VariableTest(

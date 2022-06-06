@@ -53,7 +53,7 @@
   label: FertilizerUse
   type: token
   pattern: |
-    /(?i)fertilizer/ /use|usage|application/? | /(?i)input/
+    /(?i)fertilizer/ /use|usage|application/ | /(?i)input/
 
 - name: yield-rule
   priority: ${rulepriority}
