@@ -169,5 +169,22 @@ class HabitusActions extends Actions {
       )
     }
   }
+  def splitIntoBinary(mentions: Seq[Mention]): Seq[Mention] = {
+    val toReturn = new ArrayBuffer[Mention]()
+    val (target, other) = mentions.partition( m => {
+      val valueLabels = m.arguments("value").map(_.label)
+      valueLabels.length > 1 &&
+      valueLabels.distinct.length == 1
+    }
+    )
+    for (m <- target) {
+      for (v <- m.arguments("value")) {
+        val newArgs = Map("variable" -> m.arguments("variable"), "value" -> Seq(v))
+        val newMention = copyWithArgs(m, newArgs = newArgs)
+        toReturn.append(newMention)
+      }
+    }
+    toReturn ++ other
+  }
 
 }
