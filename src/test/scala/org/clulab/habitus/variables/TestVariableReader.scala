@@ -467,6 +467,19 @@ class TestVariableReader extends Test {
       "sent21_11", "2 Others : cassava , melon , peanuts , eggplant , watermelon , pepper , carrot , cabbage , jaxatu , beans , bissap , banana plantation , fruit trees , white onion , cucumber , squash …",
       "None",
       Seq.empty
+    ),
+    VariableTest(
+      "sent21_12", "Farmers used four indica cultivars: Aiwu (short duration, slender grain), I Kong Pao (short duration, bold grain) and IR1529 and Jaya (medium duration, slender grain).",
+      "PropertyAssignment",
+      Seq( ("Aiwu", Seq(("short duration", ""))),
+        ("Aiwu", Seq(("slender grain", ""))),
+        ("I Kong Pao", Seq(("short duration", ""))),
+        ("I Kong Pao", Seq(("bold grain", ""))),
+        ("IR1529", Seq(("medium duration", ""))),
+        ("IR1529", Seq(("slender grain", ""))),
+          ("Jaya", Seq(("medium duration", ""))),
+        ("Jaya", Seq(("slender grain", "")))
+      )
     )
   )
 

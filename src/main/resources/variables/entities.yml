@@ -17,8 +17,9 @@
   label: GenericCrop
   type: token
   pattern: |
-    /(?i)(crop|cultivar|cultivation|seed|variety|varieties)/
+    [lemma = /(?i)\b(crop|cultivar|cultivation|seed|variety|varieties)\b/]
 
+# manure --> can be added for generic fertilizer.
 - name: generic-fertilizer-rule
   priority: ${rulepriority}
   label: GenericFertilizer
@@ -52,7 +53,7 @@
   label: FertilizerUse
   type: token
   pattern: |
-    /(?i)(fertilizer|input)/ /use|usage|application/?
+    /(?i)fertilizer/ /use|usage|application/ | /(?i)input/
 
 - name: yield-rule
   priority: ${rulepriority}
@@ -105,7 +106,7 @@
   label: AreaSize
   type: token
   pattern: |
-    (?<![word = /^vs\.?|against|compared|^forecast/][word=/\w*/]{0,3}) [entity='B-MEASUREMENT' & !word = "-"] [entity='I-MEASUREMENT']* [entity='I-MEASUREMENT' & word = /^(ha|he)/]+
+    (?<![word = /^vs\.?|against|compared|^forecast/][word=/\w*/]{0,3}) [entity='B-MEASUREMENT' & !word = "-"]  [entity='I-MEASUREMENT' & word = /^(ha|he)/]+
 
 - name: percentage-rule
   priority: ${rulepriority}
@@ -158,3 +159,17 @@
   type: token
   pattern: |
     [entity='B-LOC'] [entity='I-LOC']*
+
+- name: duration-property
+  priority: ${rulepriority}
+  label: Duration
+  type: token
+  pattern: |
+    /(?i)(^short|medium)/ [lemma=/duration/]
+
+- name: grain-property
+  priority: ${rulepriority}
+  label: GrainProperty
+  type: token
+  pattern: |
+    /(?i)(^bold|slender)/ [lemma=/grain/]

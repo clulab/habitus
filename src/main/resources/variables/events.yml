@@ -264,3 +264,17 @@
   type: token
   pattern: |
     @variable:Fertilizer []*? @value:Quantity
+
+- name: ${label}-crop-property-event
+  priority: ${rulepriority}
+  label: PropertyAssignment
+  type: token
+  pattern: |
+    @variable:Crop []+?  @value:Duration
+
+- name: ${label}-grain-property-event
+  priority: ${rulepriority}
+  label: PropertyAssignment
+  type: token
+  pattern: |
+    @variable:Crop  []+?  @value:GrainProperty

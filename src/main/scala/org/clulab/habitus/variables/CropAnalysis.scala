@@ -38,7 +38,7 @@ object CropAnalysis {
           println(s"going to parse input file: $filename")
           val parsingResults = processor.parse(text)
           val targetMentions = parsingResults.allMentions
-          val contentMentions = targetMentions.filter(m => m.label == "CropAssignment" || m.label == "Crop")
+          val contentMentions = targetMentions //.filter(m => m.label == "CropAssignment" || m.label == "Crop")
           for (m <- contentMentions) {
             pw.print(s"${filename}\t${m.label}\t${m.foundBy}\t${m.sentenceObj.getSentenceText}\t${m.text}")
             if (!m.isInstanceOf[TextBoundMention]) {
