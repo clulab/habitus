@@ -97,6 +97,7 @@
   priority: ${rulepriority}
   label: Quantity
   type: token
+  action: appropriateMeasurement
   pattern: |
     [entity='B-MEASUREMENT'] [entity = 'I-MEASUREMENT']*
 

@@ -187,4 +187,27 @@ class HabitusActions extends Actions {
     toReturn ++ other
   }
 
+  def listStringOverlap(string: String, list: Seq[String]): Boolean = {
+    for (item <- list) {
+      if (string.contains(item)) return true
+    }
+    false
+  }
+
+  def measurementIsAppropriate(m: Mention): Boolean = {
+    val norm = m.norms.get.head
+    val appropriateUnits = m.label match {
+      case "Quantity" => Seq("t/ha", "kg")
+      case "AreaSize" => Seq("ha")
+    }
+    listStringOverlap(norm, appropriateUnits)
+  }
+
+  def appropriateMeasurement(mentions: Seq[Mention]): Seq[Mention] = {
+    for {
+      m <- mentions
+      if measurementIsAppropriate(m)
+    } yield m
+  }
+
 }
