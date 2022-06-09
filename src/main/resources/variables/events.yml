@@ -63,6 +63,7 @@
   priority: ${rulepriority}
   label: PlantingEvent
   type: token
+  action: splitIntoBinary
   pattern: |
     (?<variable> [lemma = /plant|grow/]) (("," | "and")* @value:Crop)+
 
@@ -138,6 +139,7 @@
   priority: ${rulepriority}
   label: PlantingEvent
   type: token
+  action: splitIntoBinary
   pattern: |
     (?<trigger> [lemma=with])? @variable:Planting (("," | "and")* @value:Crop)+ @value:Date?
 
@@ -177,6 +179,7 @@
   priority: ${rulepriority}
   label: FertilizerAssignment
   type: token
+  action: splitIntoBinary
   example: "The nitrogenous chemical fertilizers are urea , calcium , ammonium nitrate , ammonium sulfate , basic calcium nitrate , calcium cyanamide"
   pattern: |
     @variable:GenericFertilizer [tag=/VBN|IN|NN/]? (?<trigger> [lemma=be]) (","? @value:Fertilizer)+ ","? ("and" @value:Fertilizer)?
@@ -185,6 +188,7 @@
   priority: ${rulepriority}
   label: FertilizerAssignment
   type: token
+  action: splitIntoBinary
   pattern: |
     (?<trigger> [lemma=with])? @variable:GenericFertilizer (("," | "and")* @value:Fertilizer)+
 
@@ -240,6 +244,7 @@
   priority: ${rulepriority}
   label: YieldAmount
   type: token
+  action: splitIntoBinary
   pattern: |
     @variable:Yield []*? @value:Quantity  ([]+? (","|"and") @value:Quantity)*
 

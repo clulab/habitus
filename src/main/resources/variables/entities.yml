@@ -98,6 +98,7 @@
   priority: ${rulepriority}
   label: Quantity
   type: token
+  action: appropriateMeasurement
   pattern: |
     [entity='B-MEASUREMENT'] [entity = 'I-MEASUREMENT']*
 
@@ -105,8 +106,10 @@
   priority: ${rulepriority}
   label: AreaSize
   type: token
+  action: appropriateMeasurement
   pattern: |
-    (?<![word = /^vs\.?|against|compared|^forecast/][word=/\w*/]{0,3}) [entity='B-MEASUREMENT' & !word = "-"]  [entity='I-MEASUREMENT' & word = /^(ha|he)/]+
+    (?<![word = /^vs\.?|against|compared|^forecast/][word=/\w*/]{0,3}) [entity='B-MEASUREMENT' & !word = "-"] [entity='I-MEASUREMENT']*
+
 
 - name: percentage-rule
   priority: ${rulepriority}

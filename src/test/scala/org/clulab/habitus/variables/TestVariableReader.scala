@@ -291,9 +291,13 @@ class TestVariableReader extends Test {
     VariableTest(
       "sent16_4_2", "In the SRV, farmers plant Sahel 108, Sahel 150, Sahel 154, Sahel 134, Nerica",
       "PlantingEvent",
-      Seq(("plant",
-        Seq(("Sahel 108", ""), ("Sahel 150", ""), ("Sahel 154", ""), ("Sahel 134", ""), ("Nerica", ""))
-      ))
+      Seq(
+        ("plant", Seq(("Sahel 108", ""))),
+        ("plant", Seq(("Sahel 150", ""))),
+        ("plant", Seq(("Sahel 154", ""))),
+        ("plant", Seq(("Sahel 134", ""))),
+        ("plant", Seq(("Nerica", "")))
+      )
     ),
     VariableTest(
       "sent17_1", "Peanut, sugarcane and cotton are important cash crops.",
@@ -356,24 +360,41 @@ class TestVariableReader extends Test {
     VariableTest(
       "sent20_4", "The most widely used solid inorganic fertilizers are urea, diammonium phosphate and potassium chloride",
       "FertilizerAssignment",
-      Seq(("fertilizers", Seq(("urea", ""), ("diammonium phosphate", ""), ("potassium chloride", ""))))
+      Seq(
+        ("fertilizers", Seq(("urea", ""))),
+        ("fertilizers", Seq(("diammonium phosphate", ""))),
+        ("fertilizers", Seq(("potassium chloride", "")))
+      )
     ),
     VariableTest(
       "sent20_5", "The most widely used solid inorganic fertilizers are diammonium phosphate, urea and potassium chloride",
       "FertilizerAssignment",
-      Seq(("fertilizers", Seq(("diammonium phosphate", ""), ("urea", ""), ("potassium chloride", ""))))
+      Seq(
+        ("fertilizers", Seq(("diammonium phosphate", ""))),
+        ("fertilizers", Seq(("urea", ""))),
+        ("fertilizers", Seq(("potassium chloride", "")))
+      )
     ),
     VariableTest(
       "sent20_5_1", "The main nutrient elements present in the fertilizers are nitrogen, phosphorus, and potassium",
       "FertilizerAssignment",
-      Seq(("fertilizers", Seq(("nitrogen", ""), ("phosphorus", ""), ("potassium", ""))))
+      Seq(
+        ("fertilizers", Seq(("nitrogen", ""))),
+        ("fertilizers", Seq(("phosphorus", ""))),
+        ("fertilizers", Seq(("potassium", "")))
+      )
     ),
     VariableTest(
       "sent20_5_2", "The nitrogenous chemical fertilizers are urea, calcium, ammonium nitrate, ammonium sulfate, basic calcium nitrate, calcium cyanamide",
       "FertilizerAssignment",
       Seq(
         ("fertilizers", Seq(("chemical", ""))), // note: similar to `mineral fertilizer` in sent20
-        ("fertilizers", Seq(("urea", ""), ("calcium", ""), ("ammonium nitrate", ""), ("ammonium sulfate", ""), ("basic calcium nitrate", ""), ("calcium cyanamide", "")))
+        ("fertilizers", Seq(("urea", ""))),
+        ("fertilizers", Seq(("calcium", ""))),
+        ("fertilizers", Seq(("ammonium nitrate", ""))),
+        ("fertilizers", Seq(("ammonium sulfate", ""))),
+        ("fertilizers", Seq(("basic calcium nitrate", ""))),
+        ("fertilizers", Seq(("calcium cyanamide", "")))
       )
     ),
     VariableTest(

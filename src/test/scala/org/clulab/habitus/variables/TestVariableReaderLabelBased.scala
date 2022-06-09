@@ -130,7 +130,8 @@ class TestVariableReaderLabelBased extends Test {
       "sent8", "The potential grain yield that can be obtained ranges from 8 to 9 t ha-1 in the wet season (July sowing) and from 6 to 11 t ha-1 in the dry season (February sowing)",
       "YieldAmount",
       Seq(
-        ("Yield", Seq(("8 to 9 t ha-1", "8.0 -- 9.0 t/ha"), ("6 to 11 t ha-1", "6.0 -- 11.0 t/ha")))
+        ("Yield", Seq(("8 to 9 t ha-1", "8.0 -- 9.0 t/ha"))),
+        ("Yield", Seq(("6 to 11 t ha-1", "6.0 -- 11.0 t/ha")))
       )
     ),
     VariableTest(
@@ -172,14 +173,15 @@ class TestVariableReaderLabelBased extends Test {
       "sent11", "Average yield was 4.8 t ha-1; ",
       "YieldAmount",
       Seq(
-        ("Yield", Seq((" 4.8 t", "4.8 t/ha"))),
+        ("Yield", Seq(("4.8 t", "4.8 t/ha"))),
       )
     ),
     VariableTest(
       "sent12", "Average yield reached 7.2 t ha-1 in 1999 and 8.2 t ha-1 in 2000",
       "YieldAmount",
       Seq(
-        ("Yield", Seq(("7.2 t ha-1", "7.2 t/ha"), ("8.2 t ha-1", "8.2 t/ha")))
+        ("Yield", Seq(("7.2 t ha-1", "7.2 t/ha"))),
+        ("Yield", Seq(("8.2 t ha-1", "8.2 t/ha")))
       )
     ),
     VariableTest(
@@ -214,10 +216,11 @@ class TestVariableReaderLabelBased extends Test {
       )
     ),
     VariableTest(
-      "sent17", "Average WS T0 yield was high, i.e. 7.3 ha-1 (ranging from 5.0 to 9.4 t ha-1)",
+      "sent17", "Average WS T0 yield was high, i.e. 7.3 t ha-1 (ranging from 5.0 to 9.4 t ha-1),",
       "YieldAmount",
       Seq(
-        ("Yield",  Seq(("from 5.0 to 9.4 t ha-1", "5.0 -- 9.4 t/ha")))
+        ("Yield", Seq(("7.3 t ha-1", "7.3 t/ha"))),
+        ("Yield",  Seq(("from 5.0 to 9.4 ha-1", "5.0 -- 9.4 t/ha")))
       )
     ),
     VariableTest(
@@ -239,7 +242,8 @@ class TestVariableReaderLabelBased extends Test {
       "sent20", "Average yields in SRV theoretically range between 5.0 and 6.0 t ha-1 in the rainy season and between 6.5 and 7.5 t ha-1 in the dry season",
       "YieldAmount",
       Seq(
-        ("Yield", Seq(("between 5.0 and 6.0 t ha-1", "5.0 -- 6.0 t/ha"), ("between 6.5 and 7.5 t ha-1", "6.5 -- 7.5 t/ha")))
+        ("Yield", Seq(("between 5.0 and 6.0 t ha-1", "5.0 -- 6.0 t/ha"))),
+        ("Yield", Seq(("between 6.5 and 7.5 t ha-1", "6.5 -- 7.5 t/ha")))
       )
     ),
     VariableTest(
@@ -301,7 +305,8 @@ class TestVariableReaderLabelBased extends Test {
       "sent28_1", "Average yields in SRV theoretically range between 5.0 and 6.0 t ha-1 in the rainy season and between 6.5 and 7.5 t ha-1 in the dry season (SAED, 2019; USDA-GAIN, 2021)",
       "YieldAmount",
       Seq(
-        ("Yield", Seq(("between 5.0 and 6.0 t ha-1", "5.0 -- 6.0 t/ha"), ("between 6.5 and 7.5 t ha-1", "6.5 -- 7.5 t/ha")))
+        ("Yield", Seq(("between 5.0 and 6.0 t ha-1", "5.0 -- 6.0 t/ha"))),
+        ("Yield", Seq(("between 6.5 and 7.5 t ha-1", "6.5 -- 7.5 t/ha")))
       )
     ),
     VariableTest(

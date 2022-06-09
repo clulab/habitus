@@ -22,7 +22,7 @@ trait ContextExtractor {
 
   val plantingLemmas = Seq("plant", "sow", "cover", "cultivate", "grow")
   val creditLemmas = Seq("credit", "finance", "value", "correspond")
-  val harvestLemmas = Seq("harvest")
+  val harvestLemmas = Seq("harvest", "yield")
   val disasterLemmas = Seq("flood", "bird", "attack")
 
   def getContextPerMention(mentions: Seq[Mention], doc: Document): Seq[Mention]

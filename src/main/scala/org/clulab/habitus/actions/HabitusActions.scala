@@ -170,5 +170,36 @@ class HabitusActions extends Actions {
       )
     }
   }
+  def splitIntoBinary(mentions: Seq[Mention]): Seq[Mention] = {
+    val (targets, other) = mentions.partition( m => {
+      val valueLabels = m.arguments("value").map(_.label)
+      valueLabels.length > 1 &&
+      valueLabels.distinct.length == 1
+      }
+    )
+    val splitTargets = for {
+      m <- targets
+      value <- m.arguments("value")
+      newArgs = Map("variable" -> m.arguments("variable"), "value" -> Seq(value))
+    } yield copyWithArgs(m, newArgs)
+    splitTargets ++ other
+  }
+
+  val labelToAppropriateUnits = Map(
+    "Quantity" -> Set("t/ha", "kg/ha", "kg", "d", "cm"),
+    "AreaSize" -> Set("ha")
+  )
+
+  def measurementIsAppropriate(m: Mention): Boolean = {
+    // check if any of the possible units shows up in the norm
+    val probablyUnit = m.norms.get.head.split("\\s").last // e.g., get "m2" from "6 m2"; assume value is separated from unit with a space and unit is one token
+    labelToAppropriateUnits
+      .getOrElse(m.label, throw new RuntimeException(s"Unknown measurement label ${m.label}"))(probablyUnit)
+  }
+
+  def appropriateMeasurement(mentions: Seq[Mention]): Seq[Mention] = {
+    // applies to individual rules to check if the measurement is appropriate for the mention label
+    mentions.filter(measurementIsAppropriate)
+  }
 
 }
