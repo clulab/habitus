@@ -185,12 +185,12 @@ class HabitusActions extends Actions {
     splitTargets ++ other
   }
 
+  val labelToAppropriateUnits = Map(
+    "Quantity" -> Set("t/ha", "kg/ha", "kg", "d", "cm"),
+    "AreaSize" -> Set("ha")
+  )
 
   def measurementIsAppropriate(m: Mention): Boolean = {
-    val labelToAppropriateUnits = Map(
-      "Quantity" -> Set("t/ha", "kg/ha", "kg", "d", "cm"),
-      "AreaSize" -> Set("ha")
-    )
     // check if any of the possible units shows up in the norm
     val probablyUnit = m.norms.get.head.split("\\s").last // e.g., get "m2" from "6 m2"; assume value is separated from unit with a space and unit is one token
     labelToAppropriateUnits
