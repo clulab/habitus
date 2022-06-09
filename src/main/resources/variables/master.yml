@@ -24,6 +24,8 @@ taxonomy:
     - BirdAttack
     - GenericCrop
     - GenericFertilizer
+    - Duration
+    - GrainProperty
     - Area
     - AreaSize
     - Percentage
@@ -39,6 +41,7 @@ taxonomy:
     - WetSeasonAssignment
     - DrySeasonAssignment
     - FertilizerQuantity
+    - PropertyAssignment
 
 
 rules:
