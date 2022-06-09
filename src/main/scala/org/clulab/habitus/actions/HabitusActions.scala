@@ -189,14 +189,11 @@ class HabitusActions extends Actions {
   }
 
   def listStringOverlap(string: String, list: Seq[String]): Boolean = {
-//    println("str: " + string)
-//    println("list: " + list.mkString("|"))
     list.contains(string)
   }
 
   def measurementIsAppropriate(m: Mention): Boolean = {
     // check if any of the possible units shows up in the norm
-//    println("norm: " + m.norms.get.head)
     val probablyUnit = m.norms.get.head.split("\\s").last // e.g., get "m2" from "6 m2"; assume value is separated from unit with a space and unit is one token
     val appropriateUnits = m.label match {
       case "Quantity" => Seq("t/ha", "kg/ha", "kg", "d", "cm") // fixme: added d and cm for now to make sure tests pass, but do we want days and cm to be quantities?
