@@ -171,44 +171,35 @@ class HabitusActions extends Actions {
     }
   }
   def splitIntoBinary(mentions: Seq[Mention]): Seq[Mention] = {
-    val toReturn = new ArrayBuffer[Mention]()
-    val (target, other) = mentions.partition( m => {
+    val (targets, other) = mentions.partition( m => {
       val valueLabels = m.arguments("value").map(_.label)
       valueLabels.length > 1 &&
       valueLabels.distinct.length == 1
-    }
-    )
-    for (m <- target) {
-      for (v <- m.arguments("value")) {
-        val newArgs = Map("variable" -> m.arguments("variable"), "value" -> Seq(v))
-        val newMention = copyWithArgs(m, newArgs = newArgs)
-        toReturn.append(newMention)
       }
-    }
-    toReturn ++ other
+    )
+    val splitTargets = for {
+      m <- targets
+      value <- m.arguments("value")
+      newArgs = Map("variable" -> m.arguments("variable"), "value" -> Seq(value))
+    } yield copyWithArgs(m, newArgs)
+    splitTargets ++ other
   }
 
-  def listStringOverlap(string: String, list: Seq[String]): Boolean = {
-    list.contains(string)
-  }
 
   def measurementIsAppropriate(m: Mention): Boolean = {
+    val labelToAppropriateUnits = Map(
+      "Quantity" -> Set("t/ha", "kg/ha", "kg", "d", "cm"),
+      "AreaSize" -> Set("ha")
+    )
     // check if any of the possible units shows up in the norm
     val probablyUnit = m.norms.get.head.split("\\s").last // e.g., get "m2" from "6 m2"; assume value is separated from unit with a space and unit is one token
-    val appropriateUnits = m.label match {
-      case "Quantity" => Seq("t/ha", "kg/ha", "kg", "d", "cm") // fixme: added d and cm for now to make sure tests pass, but do we want days and cm to be quantities?
-      case "AreaSize" => Seq("ha")
-      case _ => ???
-    }
-    listStringOverlap(probablyUnit, appropriateUnits)
+    labelToAppropriateUnits
+      .getOrElse(m.label, throw new RuntimeException(s"Unknown measurement label ${m.label}"))(probablyUnit)
   }
 
   def appropriateMeasurement(mentions: Seq[Mention]): Seq[Mention] = {
     // applies to individual rules to check if the measurement is appropriate for the mention label
-    for {
-      m <- mentions
-      if measurementIsAppropriate(m)
-    } yield m
+    mentions.filter(measurementIsAppropriate)
   }
 
 }
