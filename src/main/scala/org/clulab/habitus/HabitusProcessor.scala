@@ -43,15 +43,30 @@ class HabitusProcessor(lexiconNer: Option[LexiconNER]) extends CluProcessor(opti
     sentence.words.count(_.exists(_.isLetter))
   }
 
+  def mostSingleLettersInARow(sentence: Sentence): Int = {
+    // This could be sentence.words instead of raw.
+    val (count, max) = sentence.raw.foldLeft((0, 0)) { case ((count, max), raw) =>
+      if (raw.length == 1) (count + 1, math.max(count + 1, max))
+      else (0, max)
+    }
+    max
+  }
+
   /** Returns true if this is a malformed sentence
     * malformed= either > 150 tokens or
     * more than 50% of tokens are numbers */
   def isBadSentence(sentence: Sentence): Boolean = {
-    val isBad =
-        sentence.words.length <= 2 ||
-        150 < sentence.words.length ||
-        getAlphaCount(sentence) < sentence.words.length / 2
+    val isBad = {
+        !HabitusProcessor.wordCountRange.contains(sentence.words.length) ||
+        getAlphaCount(sentence) < sentence.words.length / 2 ||
+        HabitusProcessor.singleLetterLimit < mostSingleLettersInARow(sentence)
+    }
     // println(s"isBad = $isBad")
     isBad
   }
+}
+
+object HabitusProcessor {
+  val wordCountRange = Range.inclusive(3, 150)
+  val singleLetterLimit = 15
 }
