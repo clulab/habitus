@@ -501,7 +501,22 @@ class TestVariableReader extends Test {
           ("Jaya", Seq(("medium duration", ""))),
         ("Jaya", Seq(("slender grain", "")))
       )
-    )
+    ),
+    //FIXME; Wrong assignment issues.
+    VariableTest(
+      "fix1", "Rice cultivation and management are autosufficient in terms of seed supply , irrigation and rice grain milling .",
+      "CropAssignment",
+      Seq.empty
+    ),
+    VariableTest(
+      "fix2", "Rice yields derived by NMR were compared with yields obtained with farmers ' fertilizer practices ( FFP ) in 20 , 58 , and 24 on-farm trials in the 2011 wet season , 2012 dry season , and 2013 dry season , respectively ( referred to as 2011WS , 2012DS , and 2103DS ) .",
+      "DrySeasonAssignment",
+      Seq(
+        ("DrySeason", Seq(("2012DS", ""))),
+        ("DrySeason", Seq(("2013DS", "")))
+      )
+    ),
+
   )
 
   variableTests.zipWithIndex.foreach { case (variableTest, index) => variableTest.test(index) }

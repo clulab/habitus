@@ -1,30 +1,29 @@
 
 ### Crop assignment rules
 
-# used for finding crops that are not in the lexicon #todo: add tests for this
 - name: crop-assignment-cop-1
   priority: ${rulepriority}
   label: CropAssignment
   graph: "hybrid"
-  example: "The most important crop is buckwheat"
+  example: "The most important crop is rice"
   pattern: |
     trigger = [lemma = "be"]
     variable:GenericCrop = <cop /nsubj/
-    value:Noun = <cop 
+    value:Crop = <cop 
 
 - name: crop-assignment-cop-2
   priority: ${rulepriority}
   label: CropAssignment
   graph: "hybrid"
-  example: "Buckwheat is the most important crop"
+  example: "rice is the most important crop"
   pattern: |
     trigger = [lemma = "be"]
     variable:GenericCrop = <cop 
-    value:Noun = <cop /nsubj/
+    value:Crop = <cop /nsubj/
 
 # Assignments for crops extracted with a lexicon
 
-- name: crop-assignment-cop-3
+- name: crop-assignment-verb-1
   priority: ${rulepriority}
   label: CropAssignment
   example: "Some farmers use variety like Sahel 108. They chose furthermore to grow only one cultivar Sahel 108."#Some farmers use cultivar such as Sahel 108.
@@ -34,7 +33,7 @@
     variable:GenericCrop = dobj
     value:Crop = dobj? /nmod_such_as|nmod_like/
 
-- name: crop-assignment-verb
+- name: crop-assignment-verb-2
   priority: ${rulepriority}
   label: CropAssignment
   example: "Most farmers in the SRV plant Sahel 108"
@@ -42,7 +41,7 @@
   pattern: |
     (?<variable>[lemma = /plant|grow/]) /.*/{,3} @value:Crop
 
-- name: crop-assignment-cop-4
+- name: crop-assignment-cop-3
   priority: ${rulepriority}
   label: CropAssignment
   example: "Other crops cultivated include millet"
@@ -52,14 +51,14 @@
     variable:GenericCrop = /nsubj/
     value:Crop = /dobj/
 
-- name: crop-assignment-cop-5
+- name: crop-assignment-cop-4
   priority: ${rulepriority}
   label: CropAssignment
   type: token
   pattern: |
     @variable:GenericCrop (?<trigger> [lemma=/on|in|beyond/])? @value:Crop
 
-- name: crop-assignment-cop-6
+- name: crop-assignment-verb-3
   priority: ${rulepriority}
   label: PlantingEvent
   type: token
@@ -231,7 +230,7 @@
   action: fertilizerEventToRelation
   pattern: |
     trigger = @GenericFertilizer
-    value:Noun = (</compound/ | /compound/) [!lemma = /usage/]
+    value:Fertilizer = (</compound/ | /compound/) [!lemma = /usage/]
 
 - name: ${label}-yield-event-1
   priority: ${rulepriority}

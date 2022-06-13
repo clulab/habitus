@@ -514,6 +514,91 @@ class TestEntities extends Test {
       )
     ),
 
+    // Following the text extraction analyses.
+    VariableTest(
+    failingTest,
+    "Fix1",
+      // FIXME; yield range not extracted
+    "Rice grain yield measured at maturity ranged from 2.7 t ha-1 to 7.1 t ha-1 , with an average of 4.8 t ha-1 .",
+      Seq(
+        "Quantity" -> Seq("from 2.7 t ha-1 to 7.1 t ha-1", "4.8 t ha-1")
+      )
+    ),
+    VariableTest(
+      failingTest,
+      "Fix2",
+      // FIXME; 9.2 t ha-1 getting missed.
+      "Diagnosis of the 1999 and 2000 wet seasons In the 1999 and 2000 wet seasons , the potential rice grain yields were between 8.8 t ha-1 and 9.2 t ha-1 ( i.e. about 1 t ha-1 more than in the 1998WS ) whilst the average of the actual yield increased greatly ( Tab .",
+      Seq(
+        "Quantity" -> Seq("between 8.8 t ha-1 and 9.2 t ha-1", "1 t ha-1")
+      )
+    ),
+    VariableTest(
+      failingTest,
+      "Fix3",
+      // FIXME; maybe wrong parsing here and hence getting wrong extraction.
+      "The highest yield ( 9.3 t ha1 ) is obtained by Brodt et al. ( 2014 ) in California with only 170 kg N ha1 ; followed by Xu et al. ( 2020 ) and Zhang et al. ( 2021 ) , both with yields > 8 t ha1 in Hubei Province ( China ) .",
+      Seq(
+        "Quantity" -> Seq("9.3 t ha-1", "8 t ha-1")
+      )
+    ),
+    VariableTest(
+      failingTest,
+      "Fix4",
+      // FIXME; the range 9 and 10  not captured, but 10 t/ha and 8 t/ha get extracted.
+      "Potential yield of all the varieties in the Senegal River delta was estimated at 9 and 10 t / ha in wet and dry seasons , respectively , and potential yield was taken as 8 t / ha for both seasons in the middle valley .",
+      Seq(
+        "Quantity" -> Seq("9 and 10 t / ha", "8 t / ha")
+      )
+    ),
+    VariableTest(
+      failingTest,
+      "Fix5",
+      // FIXME; maybe wrong parsing here and hence getting wrong extraction.
+      "Target yields on average were set to 6.4 , 7.9 , and 7.1 t / ha in 2011WS , 2012DS , and 2013DS , respectively ( Table 1 ) .",
+      Seq(
+        "Quantity" -> Seq("6.4 , 7.9 , and 7.1 t / ha")
+      )
+    ),
+    VariableTest(
+      failingTest,
+      "Fix6",
+      // FIXME; Not so sure what to text to put for this for extraction. 3600 does not extract.
+      "With RCP2.6 and consideration of CO2 effect , rice yield will increase from 3600 in 2000-2009 to 4500 kg ha-1 in 2090-2099 ( Fig. 4a ) .",
+      Seq(
+        "Quantity" -> Seq("from 3600 in 2000-2009 to 4500 kg ha-1")
+      )
+    ),
+    VariableTest(
+      failingTest,
+      "Fix7",
+      // FIXME; Not so sure what to text to put for this for extraction. 2700-2800 does not extract.
+      "With ME and BC climate models , the crop model simulated an increase in yield from 2700-2800 in 2000s to 3200-3500 kg ha-1in the 2050s , while it predicted a large decrease ( below 2000 kg ha-1 ) with the other climate models .",
+      Seq(
+        "Quantity" -> Seq("from 2700-2800 in 2000s to 3200-3500 kg ha-1")
+      )
+    ),
+    VariableTest(
+      failingTest,
+      "Fix8",
+      // FIXME; would explain more here.
+      "Rice cultivation and management are autosufficient in terms of seed supply , irrigation and rice grain milling .",
+      Seq(
+        "Crop" -> Seq("rice")
+      )
+    ),
+    VariableTest(
+      failingTest,
+      "Fix8",
+      // FIXME; would explain.
+      "The 21 cultivars used in the experiment were either hybrids , japonica , or indica type and came from various breeding centers ( Table 2 ) .",
+      Seq(
+        "Crop" -> Seq("")
+      )
+    ),
+
+
+
   )
 
 
