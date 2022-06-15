@@ -561,6 +561,28 @@ class TestVariableReader extends Test {
         ("DrySeason", Seq(("2013", "2013--XX--XX")))
       )
     ),
+    VariableTest(
+      "fix8", "In plots receiving fertilizer , DAP was applied basally ( 19.3 and 21.5 kg N and P ha-1 ) , and three urea splits were broadcasted into 1-5 cm of water ( 101.3 kg N ha-1 ; 40 % at early-tillering , 40 % at panicle initiation , and 20 % at heading ) .",
+      "FertilizerQuantity",
+      Seq(
+        ("Quantity", Seq(("1-5 cm", "1.0 -- 5.0 cm"))),
+        ("Quantity", Seq(("101.3 kg N ha-1", "101.3 kg/ha"))),
+      ) // FIXME; I suppose this text should have this norm; "101.3 kg/ha"
+    ),
+    VariableTest(
+      "fix9", "Mean irrigation , flood and rainwater mineral N oncentrations were 1.3 , 1.7 and 3.6 mg l-1 , respectively .",
+      "FertilizerQuantity",
+      Seq(
+        ("Quantity", Seq(("1.3", "1.3 mh/h"))),
+        ("Quantity", Seq(("1.7", "1.7 mh/h"))),
+        ("Quantity", Seq(("3.6 mh l-1", "3.6 mh/h"))),
+      )
+    ),
+    VariableTest(
+      "fix10", "Grain yield In the first three experimental seasons , the only significant yield effect was in response to fertilizer application ( P < 0.001 for seasons 1-3 ) , which increased yields by an average of 1.7 ( 2007 wet season ) , 3.4 ( 2008 dry season ) and 2.6 t ha-1 ( 2008 wet season ) across management systems ( Fig. 2 ) .",
+      "FertilizerQuantity",
+      Seq.empty
+    ),
 
 
   )
