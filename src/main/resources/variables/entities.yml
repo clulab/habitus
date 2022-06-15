@@ -145,7 +145,7 @@
   label: DrySeason
   type: token
   pattern: |
-    /(?i)(dry|hot)/ []*? [lemma = /\bseason\b/]
+    /(?i)(dry|hot|cold)/ []*? [lemma = /\bseason\b/]
 
 - name: complex-date
   priority: ${higherpriority}

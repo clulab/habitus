@@ -516,6 +516,52 @@ class TestVariableReader extends Test {
         ("DrySeason", Seq(("2013DS", "")))
       )
     ),
+    VariableTest(
+      "fix3", "Diagnosis of the 1999 and 2000 wet seasons In the 1999 and 2000 wet seasons , the potential rice grain yields were between 8.8 t ha-1 and 9.2 t ha-1 ( i.e. about 1 t ha-1 more than in the 1998WS ) whilst the average of the actual yield increased greatly ( Tab .",
+      "WetSeasonAssignment",
+      Seq(
+        ("WetSeason", Seq(("1998WS", "1998-XX-XX -- 1998-XX-XX"))),
+        ("WetSeason", Seq(("1999", "1999--XX-XX")))
+      )
+    ),
+    VariableTest(
+      "fix3_1", "Diagnosis of the 1999 and 2000 wet seasons In the 1999 and 2000 wet seasons , the potential rice grain yields were between 8.8 t ha-1 and 9.2 t ha-1 ( i.e. about 1 t ha-1 more than in the 1998WS ) whilst the average of the actual yield increased greatly ( Tab .",
+      "YieldAmount",
+      Seq(
+        ("Quantity", Seq(("1 t ha-1", "1.0 t/ha"))),
+        ("Quantity", Seq(("8.8 t ha-1 and 9.2 t ha-1", "8.8 -- 9.2 t/ha")))
+        //FIXME; this is a failing test because the range doesn't extract except the 8.8 t ha-1
+      )
+    ),
+    VariableTest(
+      "fix4", "With ME and BC climate models , the crop model simulated an increase in yield from 2700-2800 in 2000s to 3200-3500 kg ha-1 in the 2050s , while it predicted a large decrease ( below 2000 kg ha-1 ) with the other climate models .",
+      "YieldAmount",
+      Seq(
+        ("Quantity", Seq(("2000 kg ha-1", "2000.0 kg/ha"))),
+        ("Quantity", Seq(("3200-3500 kg ha-1", "3200.0 -- 3500.0 kg/ha")))
+      )
+    ),
+    VariableTest(
+      "fix5", "Due to lack of records , irrigation water had to be estimated in a representative plot during the dry season of 2017 , based on the number of waterings made , their duration , and the pump 's flow rate .",
+      "DrySeasonAssignment",
+      Seq.empty
+    ),
+    VariableTest(
+      "fix6", "In the SRV , production areas are typically larger in the dry season , which brings fewer problems with pests and birds ( Tanaka et al ., 2015 ; USDA-GAIN , 2018 ) .",
+      "DrySeasonAssignment",
+      Seq.empty
+    ),
+    VariableTest(
+      "fix7", "Rice yields derived by NMR were compared with yields obtained with farmers ' fertilizer practices ( FFP ) in 20 , 58 , and 24 on-farm trials in the 2011 wet season , 2012 dry season , and 2013 dry season , respectively ( referred to as 2011WS , 2012DS , and 2103DS ) .",
+      "DrySeasonAssignment",
+      //FIXME: `2103DS`, my guess is 2013DS, does it matter? As in should it be corrected?
+      Seq(
+        ("DrySeason", Seq(("2012", "2012--XX--XX"))),
+        ("DrySeason", Seq(("2012DS", "2012--XX--XX -- 2012--XX--XX"))),
+        ("DrySeason", Seq(("2013", "2013--XX--XX")))
+      )
+    ),
+
 
   )
 

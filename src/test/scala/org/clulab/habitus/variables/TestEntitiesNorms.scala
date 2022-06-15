@@ -272,7 +272,7 @@ class TestEntitiesNorms extends Test {
     VariableTest(
       failingTest,
       "sent25",
-      "In plots receiving fertilizer, DAP was applied basally (19.3 and 21.5 kg N and P ha−1 ), and three urea splits were broadcasted into 1–5 cm of water (101.3 kg N ha−1 ; 40% at early-tillering, 40% at pan- icle initiation, and 20% at heading)",
+      "In plots receiving fertilizer, DAP was applied basally (19.3 and 21.5 kg N and P ha-1 ), and three urea splits were broadcasted into 1–5 cm of water (101.3 kg N ha-1 ; 40% at early-tillering, 40% at pan- icle initiation, and 20% at heading)",
       Seq(
         // FIXME; `19.3 and 21.5 kg` not extracted fully (without 19.3). Also some wrong Quantity extractions. Discuss with Masha.
         "Quantity" -> Seq(("101.3 kg", "101.3 kg"), ("1–5 cm", "1.0 -- 5.0 cm"), ("21.5 kg", "21.5 kg")),
@@ -294,7 +294,7 @@ class TestEntitiesNorms extends Test {
       Seq(
         // FIXME; Extraction of quantities with `+` signs here.
         "Quantity" -> Seq(("80 kg N ha-1", "80.0 kg n ha-1"), ("200 kg ha-1", "200.0 kg/ha"),
-                          ("100 kg ha−1", "100.0 kg/ha"), ("50 kg ha−1", "50.0 kg/ha"), (" 20 kg N ha-1", "20.0 kg n ha-1"))
+                          ("100 kg ha-1", "100.0 kg/ha"), ("50 kg ha-1", "50.0 kg/ha"), (" 20 kg N ha-1", "20.0 kg n ha-1"))
       )
     ),
   )

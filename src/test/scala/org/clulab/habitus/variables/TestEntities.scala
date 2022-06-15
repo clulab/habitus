@@ -341,14 +341,12 @@ class TestEntities extends Test {
       )
     ),
     VariableTest(
-      failingTest,
+      passingTest,
       "sent28",
-      "Average WS T0 yield was high, i.e. 7.3 ha-1 (ranging from 5.0 to 9.4 t ha-1), considering the region’s potential yield of about 9 t ha-1.",
-      //FIXME `7.3 ha-1` not extracted as area size.
+      "Average WS T0 yield was high, i.e. 7.3 t ha-1 (ranging from 5.0 to 9.4 t ha-1), considering the region’s potential yield of about 9 t ha-1.",
       Seq(
         "Yield" -> Seq("yield", "yield"),
-        "Quantity" -> Seq("from 5.0 to 9.4 t ha-1", "9 t ha-1"),
-        "AreaSize" -> Seq("7.3 ha-1")
+        "Quantity" -> Seq("from 5.0 to 9.4 t ha-1", "9 t ha-1", "7.3 t ha-1"),
       )
     ),
     VariableTest(
@@ -462,7 +460,7 @@ class TestEntities extends Test {
     VariableTest(
       failingTest,
       "sent40",
-      "In plots receiving fertilizer, DAP was applied basally (19.3 and 21.5 kg N and P ha−1 ), and three urea splits were broadcasted into 1–5 cm of water (101.3 kg N ha−1 ; 40% at early-tillering, 40% at panicle initiation, and 20% at heading)",
+      "In plots receiving fertilizer, DAP was applied basally (19.3 and 21.5 kg N and P ha-1 ), and three urea splits were broadcasted into 1–5 cm of water (101.3 kg N ha-1 ; 40% at early-tillering, 40% at panicle initiation, and 20% at heading)",
       Seq(
         "Fertilizer" -> Seq("DAP", "N", "P", "urea", "N"),
         "Quantity" -> Seq("101.3 kg", "1–5 cm", "21.5 kg"), //fixme: should include 19.3
@@ -503,13 +501,13 @@ class TestEntities extends Test {
     VariableTest(
       failingTest,
       "sent44",
-      "das days after sowing, Fert fertilizer treatment, with F1: recommended dose (80 kg N ha−1), i.e., 200 kg ha−1 NPK (15.15.15) at sowing + 100 kg ha−1 urea at 20 das + 50 kg ha−1 urea at 50 das. F2: F1/4 (20 kg N ha−1);",
+      "das days after sowing, Fert fertilizer treatment, with F1: recommended dose (80 kg N ha-1), i.e., 200 kg ha-1 NPK (15.15.15) at sowing + 100 kg ha-1 urea at 20 das + 50 kg ha-1 urea at 50 das. F2: F1/4 (20 kg N ha-1);",
       Seq(
         "Fertilizer" -> Seq("N", "NPK", "urea", "urea" ),
         "FertilizerUse" -> Seq("fertilizer"),
         "GenericFertilizer" -> Seq("fertilizer"),
         "Planting" -> Seq("sowing", "sowing"),
-        "Quantity" -> Seq("80 kg","20k", "200 kg", "100 kg ha−1", "50 kg ha−1")
+        "Quantity" -> Seq("80 kg","20k", "200 kg", "100 kg ha-1", "50 kg ha-1")
         // fixme: need measurement adjustment in processors; some measurement issues here.
       )
     ),
@@ -536,10 +534,10 @@ class TestEntities extends Test {
     VariableTest(
       failingTest,
       "Fix3",
-      // FIXME; maybe wrong parsing here and hence getting wrong extraction.
-      "The highest yield ( 9.3 t ha1 ) is obtained by Brodt et al. ( 2014 ) in California with only 170 kg N ha1 ; followed by Xu et al. ( 2020 ) and Zhang et al. ( 2021 ) , both with yields > 8 t ha1 in Hubei Province ( China ) .",
+      "The highest yield ( 9.3 t ha-1 ) is obtained by Brodt et al. ( 2014 ) in California with only 170 kg N ha1 ; followed by Xu et al. ( 2020 ) and Zhang et al. ( 2021 ) , both with yields > 8 t ha-1 in Hubei Province ( China ) .",
       Seq(
         "Quantity" -> Seq("9.3 t ha-1", "8 t ha-1")
+        // FIXME; Will check this out later, found that `8 t ha-1` getting extracted as fertilizerQuantity inn event test..
       )
     ),
     VariableTest(
@@ -563,7 +561,7 @@ class TestEntities extends Test {
     VariableTest(
       failingTest,
       "Fix6",
-      // FIXME; Not so sure what to text to put for this for extraction. 3600 does not extract.
+      // FIXME; Not so sure what text to put for this for extraction; 3600 does not extract.
       "With RCP2.6 and consideration of CO2 effect , rice yield will increase from 3600 in 2000-2009 to 4500 kg ha-1 in 2090-2099 ( Fig. 4a ) .",
       Seq(
         "Quantity" -> Seq("from 3600 in 2000-2009 to 4500 kg ha-1")
@@ -572,16 +570,14 @@ class TestEntities extends Test {
     VariableTest(
       failingTest,
       "Fix7",
-      // FIXME; Not so sure what to text to put for this for extraction. 2700-2800 does not extract.
       "With ME and BC climate models , the crop model simulated an increase in yield from 2700-2800 in 2000s to 3200-3500 kg ha-1in the 2050s , while it predicted a large decrease ( below 2000 kg ha-1 ) with the other climate models .",
       Seq(
-        "Quantity" -> Seq("from 2700-2800 in 2000s to 3200-3500 kg ha-1")
+        "Quantity" -> Seq("2700-2800 kg ha-1", "3200-3500 kg ha-1")
       )
     ),
     VariableTest(
-      failingTest,
+      passingTest,
       "Fix8",
-      // FIXME; would explain more here.
       "Rice cultivation and management are autosufficient in terms of seed supply , irrigation and rice grain milling .",
       Seq(
         "Crop" -> Seq("rice")
@@ -590,10 +586,9 @@ class TestEntities extends Test {
     VariableTest(
       failingTest,
       "Fix8",
-      // FIXME; would explain.
       "The 21 cultivars used in the experiment were either hybrids , japonica , or indica type and came from various breeding centers ( Table 2 ) .",
       Seq(
-        "Crop" -> Seq("")
+        "Crop" -> Seq("japonica", "indica")
       )
     ),
 
