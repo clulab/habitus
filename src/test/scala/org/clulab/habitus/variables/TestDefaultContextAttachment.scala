@@ -95,6 +95,24 @@ class TestDefaultContextAttachment extends Test {
         process = "planting",
         comparative = "1"
       )
+    ),
+//    DefaultContextAttachmentTest(
+//      // FIXME: irrigation should win here; need more sophisticated procedure for picking process
+//      "sent-4",
+//      "This type of irrigation scheme ( or perimeter ) , with an area of below 50 ha and cultivated by farmers from a single village , covers about 25 % of the irrigated area on the two banks of the Senegal River ( SAED , 1997 ; SONADER , 1998 ) .",
+//      "PlantingArea",
+//      Desired(
+//        process = "irrigation"
+//      )
+//    ),
+    DefaultContextAttachmentTest(
+      "sent-4",
+      "In the 2000WS, they used cultivar Sahel 202",
+      "PlantingArea",
+      Desired(
+        date = "2000WS",
+        process = "planting"
+      )
     )
   )
 
