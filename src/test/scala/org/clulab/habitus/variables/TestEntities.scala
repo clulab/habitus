@@ -585,7 +585,8 @@ class TestEntities extends Test {
     ),
     VariableTest(
       failingTest,
-      "Fix8",
+      "Fix9",
+      // FIXME; would explain.
       "The 21 cultivars used in the experiment were either hybrids , japonica , or indica type and came from various breeding centers ( Table 2 ) .",
       Seq(
         "Crop" -> Seq("japonica", "indica")

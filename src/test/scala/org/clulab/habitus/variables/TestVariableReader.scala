@@ -388,7 +388,7 @@ class TestVariableReader extends Test {
       "sent20_5_2", "The nitrogenous chemical fertilizers are urea, calcium, ammonium nitrate, ammonium sulfate, basic calcium nitrate, calcium cyanamide",
       "FertilizerAssignment",
       Seq(
-        ("fertilizers", Seq(("chemical", ""))), // note: similar to `mineral fertilizer` in sent20
+//        ("fertilizers", Seq(("chemical", ""))), // note: similar to `mineral fertilizer` in sent20
         ("fertilizers", Seq(("urea", ""))),
         ("fertilizers", Seq(("calcium", ""))),
         ("fertilizers", Seq(("ammonium nitrate", ""))),
@@ -490,6 +490,7 @@ class TestVariableReader extends Test {
       Seq.empty
     ),
     VariableTest(
+      // fixme: fails because indica was added as a crop; check if it should be in the crop lexicon; if yes, need to add constrains (e.g., interfering token limits) in propery rules)
       "sent21_12", "Farmers used four indica cultivars: Aiwu (short duration, slender grain), I Kong Pao (short duration, bold grain) and IR1529 and Jaya (medium duration, slender grain).",
       "PropertyAssignment",
       Seq( ("Aiwu", Seq(("short duration", ""))),
@@ -509,6 +510,8 @@ class TestVariableReader extends Test {
       Seq.empty
     ),
     VariableTest(
+      // fixme: there should be no dry season assignments here because there is no explanation here about what part of the year is dry season
+      // fixme: adjust rules to extract dry season assignments when dry season is defined in terms of dates
       "fix2", "Rice yields derived by NMR were compared with yields obtained with farmers ' fertilizer practices ( FFP ) in 20 , 58 , and 24 on-farm trials in the 2011 wet season , 2012 dry season , and 2013 dry season , respectively ( referred to as 2011WS , 2012DS , and 2103DS ) .",
       "DrySeasonAssignment",
       Seq(

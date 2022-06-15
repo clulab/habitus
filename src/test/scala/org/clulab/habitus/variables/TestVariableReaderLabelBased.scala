@@ -60,7 +60,7 @@ class TestVariableReaderLabelBased extends Test {
     }
   }
 
-  behavior of "VariableReader"
+  behavior of "VariableReader Label Based"
 
   val variableTests: Array[VariableTest] = Array(
     VariableTest(
@@ -269,9 +269,7 @@ class TestVariableReaderLabelBased extends Test {
     VariableTest(
       "sent23", "timing of basal fertilizer application was on average 26, 33, and 26 days after sowing ( DAS ) in 2011WS, 2012DS, and 2013DS,",
       "FertilizerAssignment",
-      Seq(
-        ("FertilizerAssignment", Seq(("fertilizer application", "")))
-        )
+      Seq.empty
       ),
     VariableTest(
       "sent24", "Rice yields were 6.4, 6.4, and 5.1 t/ha in 2011WS, 2012DS, and 2013DS, respectively",

@@ -92,7 +92,7 @@
   type: token
   example: "The areas sown for this 2021/2022 wintering campaign are..."
   pattern: |
-    [word = /(\d\d){1,2}(\/|_)(\d\d){1,2}/]
+    [word = /^(\d\d){1,2}(\/|_)(\d\d){1,2}$/]
 
 - name: measurement-rule
   priority: ${rulepriority}
