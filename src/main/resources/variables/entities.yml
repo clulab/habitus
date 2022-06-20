@@ -78,6 +78,13 @@
   pattern: |
     [entity='B-DATE'] [entity='I-DATE']*
 
+- name: value-from-date-2
+  priority: ${rulepriority}
+  label: Months
+  type: token
+  pattern: |
+    [entity='B-DATE' & !word=/^1\d\d\d|2\d\d\d/] [entity='I-DATE' & !word=/^1\d\d\d|2\d\d\d/]* | [entity='B-DATE-RANGE' & !word=/^1\d\d\d|2\d\d\d/] [entity='I-DATE-RANGE' & !word=/^1\d\d\d|2\d\d\d/]*
+
 - name: value-from-daterange
   priority: ${rulepriority}
   label: DateRange

@@ -253,14 +253,14 @@
   label: DrySeasonAssignment
   type: token
   pattern: |
-    @variable:DrySeason ([]*? @value:Date)
+    @variable:DrySeason ([]*? @value:Months)
 
 - name: ${label}-wet-season-event
   priority: ${rulepriority}
   label: WetSeasonAssignment
   type: token
   pattern: |
-    @variable:WetSeason []*? @value:Date
+    @variable:WetSeason []*? @value:Months
 
 - name: ${label}-fertilizer-event
   priority: ${rulepriority}

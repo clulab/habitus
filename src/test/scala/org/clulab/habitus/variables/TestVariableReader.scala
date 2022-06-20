@@ -514,10 +514,7 @@ class TestVariableReader extends Test {
       // fixme: adjust rules to extract dry season assignments when dry season is defined in terms of dates
       "fix2", "Rice yields derived by NMR were compared with yields obtained with farmers ' fertilizer practices ( FFP ) in 20 , 58 , and 24 on-farm trials in the 2011 wet season , 2012 dry season , and 2013 dry season , respectively ( referred to as 2011WS , 2012DS , and 2103DS ) .",
       "DrySeasonAssignment",
-      Seq(
-        ("DrySeason", Seq(("2012DS", ""))),
-        ("DrySeason", Seq(("2013DS", "")))
-      )
+      Seq.empty
     ),
     VariableTest(
       "fix3", "Diagnosis of the 1999 and 2000 wet seasons In the 1999 and 2000 wet seasons , the potential rice grain yields were between 8.8 t ha-1 and 9.2 t ha-1 ( i.e. about 1 t ha-1 more than in the 1998WS ) whilst the average of the actual yield increased greatly ( Tab .",
@@ -558,11 +555,7 @@ class TestVariableReader extends Test {
       "fix7", "Rice yields derived by NMR were compared with yields obtained with farmers ' fertilizer practices ( FFP ) in 20 , 58 , and 24 on-farm trials in the 2011 wet season , 2012 dry season , and 2013 dry season , respectively ( referred to as 2011WS , 2012DS , and 2103DS ) .",
       "DrySeasonAssignment",
       //FIXME: `2103DS`, my guess is 2013DS, does it matter? As in should it be corrected?
-      Seq(
-        ("DrySeason", Seq(("2012", "2012--XX--XX"))),
-        ("DrySeason", Seq(("2012DS", "2012--XX--XX -- 2012--XX--XX"))),
-        ("DrySeason", Seq(("2013", "2013--XX--XX")))
-      )
+      Seq.empty
     ),
     VariableTest(
       "fix8", "In plots receiving fertilizer , DAP was applied basally ( 19.3 and 21.5 kg N and P ha-1 ) , and three urea splits were broadcasted into 1-5 cm of water ( 101.3 kg N ha-1 ; 40 % at early-tillering , 40 % at panicle initiation , and 20 % at heading ) .",
@@ -584,6 +577,11 @@ class TestVariableReader extends Test {
     VariableTest(
       "fix10", "Grain yield In the first three experimental seasons , the only significant yield effect was in response to fertilizer application ( P < 0.001 for seasons 1-3 ) , which increased yields by an average of 1.7 ( 2007 wet season ) , 3.4 ( 2008 dry season ) and 2.6 t ha-1 ( 2008 wet season ) across management systems ( Fig. 2 ) .",
       "FertilizerQuantity",
+      Seq.empty
+    ),
+    VariableTest(
+      "fix11", "Current average rainfall from June to October is 500-600 mm , 600-700 mm , 600-700 mm , 700-800 mm , 900-1000 mm , and 1000-1100 mm in the different sites , respectively .",
+      "PlantingDate",
       Seq.empty
     ),
 

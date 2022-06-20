@@ -29,6 +29,7 @@ taxonomy:
     - Area
     - AreaSize
     - Percentage
+    - Months
   - Event:
     - Assignment
     - BirdAttackEvent

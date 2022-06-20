@@ -297,6 +297,15 @@ class TestEntitiesNorms extends Test {
                           ("100 kg ha-1", "100.0 kg/ha"), ("50 kg ha-1", "50.0 kg/ha"), (" 20 kg N ha-1", "20.0 kg n ha-1"))
       )
     ),
+    VariableTest(
+      failingTest,
+      "sent28",
+      "Soil properties before the experiment were 0.87 g total N kg-1 and 9.6 g total C kg-1 ( analysis with a Vario Max Dry Combustion Analyzer , Elementar Americas , Mt. Laurel , NJ following the IOS ( 1998 ) ) , 5.81 kg P-Olsen kg-1 ( measured following extraction in 0.5 M NaHCO3 at pH 8.5 ( Olsen et al ., 1954 ) ) , 0.47 cmol exchangeable K kg-1 ( atomic absorption spectroscopy after extraction in 1 M NH4OAc at pH 7 ) , pH of 4.76 ( 1:2.5 H20 saturated paste ) and EC 0.33 dS m-1 ( 1:5 H20 saturated paste ) .",
+      Seq(
+        "Quantity" -> Seq(("0.87 g N kh-1", "0.87 g/kg"), ("9.6 g C kg-1", "9.6 g/kg"),
+          ("5.81 kg P-Olsen kg-1", "5.81 kg"))
+      )
+    ),
   )
 
 
