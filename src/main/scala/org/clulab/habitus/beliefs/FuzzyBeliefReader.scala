@@ -18,11 +18,13 @@ object FuzzyBeliefReader {
 //    val inputDir = "/home/alexeeva/Desktop/habitus_related/data/testingCluPDF2txt/inputForFuzzy/senegal-agriculture-txt-incl-short-paragraphs"
 //    val inputDir = "/home/alexeeva/Desktop/habitus_related/data/query_results/habitus_rice_growing_senegal/txt"
 //    val inputDir = "/home/alexeeva/Desktop/habitus_related/data/query_results/habitus_rice_trade_crops_actors_senegal/txt"
-    val inputDir = "/home/alexeeva/Desktop/habitus_related/data/Rice_growing_in_Senegal_River_Valley/pdf2txt-clean-science-parse"
+//    val inputDir = "/home/alexeeva/Desktop/habitus_related/data/Rice_growing_in_Senegal_River_Valley/pdf2txt-clean-science-parse"
+    val inputDir = "/home/alexeeva/Desktop/habitus_related/data/fuzzyBeliefs/uganda_vs_5_others/regular-science-parse-txt/science-parsed-txt"
 //    val outputDir = "/home/alexeeva/Desktop/habitus_related/data/fuzzyBeliefs/senegal-agriculture-post-processed-science-parse/output-short-paragraphs/"
 //    val outputDir = "/home/alexeeva/Desktop/habitus_related/data/query_results/habitus_rice_growing_senegal/fuzzy-beliefs/"
 //    val outputDir = "/home/alexeeva/Desktop/habitus_related/data/query_results/habitus_rice_trade_crops_actors_senegal/fuzzy-beliefs"
-    val outputDir = "/home/alexeeva/Desktop/habitus_related/data/fuzzyBeliefs/Rice_growing_in_Senegal_River_Valley/fuzzy_mentions_jun13/"
+//    val outputDir = "/home/alexeeva/Desktop/habitus_related/data/fuzzyBeliefs/Rice_growing_in_Senegal_River_Valley/fuzzy_mentions_jun13/"
+    val outputDir = "/home/alexeeva/Desktop/habitus_related/data/fuzzyBeliefs/uganda_vs_5_others/fuzzy-beliefs-from-regular-science-parse-june17"
     val threads = 1//props.get("threads").map(_.toInt).getOrElse(1)
 
     run(inputDir, outputDir, threads)
