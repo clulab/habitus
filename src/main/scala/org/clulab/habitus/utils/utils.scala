@@ -3,7 +3,6 @@ package org.clulab.habitus
 import org.clulab.odin.{EventMention, Mention, RelationMention, TextBoundMention}
 import org.clulab.processors.{Document, Sentence}
 
-import scala.beans.BeanProperty
 import scala.collection.mutable
 import scala.collection.mutable.ArrayBuffer
 

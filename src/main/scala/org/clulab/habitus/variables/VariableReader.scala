@@ -1,7 +1,7 @@
 package org.clulab.habitus.variables
 
 import ai.lum.common.ConfigUtils._
-import com.typesafe.config.{Config, ConfigBeanFactory}
+import com.typesafe.config.Config
 import org.clulab.habitus.HabitusReader
 
 object VariableReader extends HabitusReader {
