@@ -683,6 +683,15 @@ class TestVariableReader extends Test {
       "PlantingDate",
       Seq.empty
     ),
+    VariableTest(
+      failingTest,
+      "fix12", "P and K concentrations in irrigation and floodwater were estimated at 0.1 mg P l-1 and 3.2 mg K l-1 .",
+      "FertilizerQuantity",
+      Seq(
+        ("P", Seq(("0.1 mg P l-1", "0.1 mg/l"))),
+        ("K", Seq(("3.2 mg K l-1", "3.2 mg/l")))
+      )
+    )
 
   )
 
