@@ -580,7 +580,7 @@ class TestEntities extends Test {
       "Fix8",
       "Rice cultivation and management are autosufficient in terms of seed supply , irrigation and rice grain milling .",
       Seq(
-        "Crop" -> Seq("rice")
+        "Crop" -> Seq("Rice", "rice")
       )
     ),
     VariableTest(

@@ -186,7 +186,7 @@ class HabitusActions extends Actions {
   }
 
   val labelToAppropriateUnits = Map(
-    "Quantity" -> Set("t/ha", "kg/ha", "kg", "d", "cm"),
+    "Quantity" -> Set("t/ha", "kg/ha", "kg", "d", "cm", "mg/l"),
     "AreaSize" -> Set("ha")
   )
 
