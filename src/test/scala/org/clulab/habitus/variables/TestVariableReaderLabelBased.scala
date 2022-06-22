@@ -14,6 +14,7 @@ class TestVariableReaderLabelBased extends Test {
   type Variable = (String, Seq[(String, String)])
 
   case class VariableTest(
+     shouldable: Shouldable,
      name: String, text: String,
      // If there are multiple "Assignment" mentions, use one variable for each and multiple lines.
      label: String,
@@ -26,7 +27,7 @@ class TestVariableReaderLabelBased extends Test {
     }
 
     def test(index: Int): Unit = {
-      it should s"process $index-$name correctly" in {
+      shouldable should s"process $index-$name correctly" in {
         if (index == -1)
           println("Put a breakpoint here to observe a particular test.")
 
@@ -64,6 +65,7 @@ class TestVariableReaderLabelBased extends Test {
 
   val variableTests: Array[VariableTest] = Array(
     VariableTest(
+      passingTest,
       "sent1", "with an average yield over years and seasons of 5 t ha-1",
       "YieldAmount",
       Seq(
@@ -71,6 +73,7 @@ class TestVariableReaderLabelBased extends Test {
       )
     ),
     VariableTest(
+      passingTest,
       "sent2", "Farmers’ yields are on average between 4 and 5 t ha-1, and, therefore, far below potential yields.",
       "YieldAmount",
       Seq(
@@ -78,6 +81,7 @@ class TestVariableReaderLabelBased extends Test {
       )
     ),
     VariableTest(
+      passingTest,
       "sent3", "the average grain yield was 8.2 t ha–1",
       "YieldAmount",
       Seq(
@@ -85,6 +89,7 @@ class TestVariableReaderLabelBased extends Test {
       )
     ),
     VariableTest(
+      passingTest,
       "sent4", "in the 1999WS, with an average grain yield of 7.2 t ha–1. In the 2000WS",
       "YieldAmount",
       Seq(
@@ -92,6 +97,7 @@ class TestVariableReaderLabelBased extends Test {
       )
     ),
     VariableTest(
+      passingTest,
       "sent5", "These correspond to the dry season (from February/March to June/July)",
       "DrySeasonAssignment",
       Seq(
@@ -99,6 +105,7 @@ class TestVariableReaderLabelBased extends Test {
       )
     ),
     VariableTest(
+      passingTest,
       "sent5", "Potential rice grain yields (limited by solar radiation and temperature only) are on average about 9 t ha–1 in the wet growing season from July to November",
       "YieldAmount",
       Seq(
@@ -106,6 +113,7 @@ class TestVariableReaderLabelBased extends Test {
       )
     ),
     VariableTest(
+      passingTest,
       "sent5_1", "Potential rice grain yields (limited by solar radiation and temperature only) are on average about 9 t ha–1 in the wet growing season from July to November",
       "WetSeasonAssignment",
       Seq(
@@ -113,6 +121,7 @@ class TestVariableReaderLabelBased extends Test {
       )
     ),
     VariableTest(
+      passingTest,
       "sent6", "actual average farmer yields are about 5 t ha–1 ",
       "YieldAmount",
       Seq(
@@ -120,6 +129,7 @@ class TestVariableReaderLabelBased extends Test {
       )
     ),
     VariableTest(
+      passingTest,
       "sent7", "The potential yields of these three cultivars are similar and are on average about 8 to 9 t ha-1 in the wet season",
       "YieldAmount",
       Seq(
@@ -127,6 +137,7 @@ class TestVariableReaderLabelBased extends Test {
       )
     ),
     VariableTest(
+      passingTest,
       "sent8", "The potential grain yield that can be obtained ranges from 8 to 9 t ha-1 in the wet season (July sowing) and from 6 to 11 t ha-1 in the dry season (February sowing)",
       "YieldAmount",
       Seq(
@@ -135,6 +146,7 @@ class TestVariableReaderLabelBased extends Test {
       )
     ),
     VariableTest(
+      passingTest,
       "sent8_1", "The potential grain yield that can be obtained ranges from 8 to 9 t ha-1 in the wet season (July sowing) and from 6 to 11 t ha-1 in the dry season (February sowing)",
       "WetSeasonAssignment",
       Seq(
@@ -142,6 +154,7 @@ class TestVariableReaderLabelBased extends Test {
       )
     ),
     VariableTest(
+      passingTest,
       "sent8_2", "The potential grain yield that can be obtained ranges from 8 to 9 t ha-1 in the wet season (July sowing) and from 6 to 11 t ha-1 in the dry season (February sowing)",
       "DrySeasonAssignment",
       Seq(
@@ -149,6 +162,7 @@ class TestVariableReaderLabelBased extends Test {
       )
     ),
     VariableTest(
+      passingTest,
       "sent9", "The first rice crop is sown during the hot dry season (mostly in February) and the second crop during the wet season (mostly in July).",
       "DrySeasonAssignment",
       Seq(
@@ -156,6 +170,7 @@ class TestVariableReaderLabelBased extends Test {
       )
     ),
     VariableTest(
+      passingTest,
       "sent9_1", "The first rice crop is sown during the hot dry season (mostly in February) and the second crop during the wet season (mostly in July).",
       "WetSeasonAssignment",
       Seq(
@@ -163,6 +178,7 @@ class TestVariableReaderLabelBased extends Test {
       )
     ),
     VariableTest(
+      passingTest,
       "sent10", "The average total amount of N applied was 141 kg ha-1",
       "FertilizerQuantity",
       Seq(
@@ -170,6 +186,7 @@ class TestVariableReaderLabelBased extends Test {
       )
     ),
     VariableTest(
+      passingTest,
       "sent11", "Average yield was 4.8 t ha-1; ",
       "YieldAmount",
       Seq(
@@ -177,6 +194,7 @@ class TestVariableReaderLabelBased extends Test {
       )
     ),
     VariableTest(
+      passingTest,
       "sent12", "Average yield reached 7.2 t ha-1 in 1999 and 8.2 t ha-1 in 2000",
       "YieldAmount",
       Seq(
@@ -185,6 +203,7 @@ class TestVariableReaderLabelBased extends Test {
       )
     ),
     VariableTest(
+      passingTest,
       "sent13", "in the 1999WS, with an average grain yield of 7.2 t ha-1. In the 2000WS",
       "YieldAmount",
       Seq(
@@ -192,6 +211,7 @@ class TestVariableReaderLabelBased extends Test {
       )
     ),
     VariableTest(
+      passingTest,
       "sent14", "and potential yield was taken as 8 t/ha for both seasons in the middle valley",
       "YieldAmount",
       Seq(
@@ -199,6 +219,7 @@ class TestVariableReaderLabelBased extends Test {
       )
     ),
     VariableTest(
+      passingTest,
       "sent15", "Seeding dates ranged from 22 August to 26 September in 2011WS, from 29 February to 1 April in the 2012DS, and from 5 to 23 March in the 2013DS",
       "PlantingDate",
       Seq(
@@ -208,6 +229,7 @@ class TestVariableReaderLabelBased extends Test {
       )
     ),
     VariableTest(
+      passingTest,
       "sent16", "WS sowing in July and about 9–10 t ha−1 for dry season (DS) sowing in February in the Senegal River delta.",
       "PlantingDate",
       Seq(
@@ -216,6 +238,7 @@ class TestVariableReaderLabelBased extends Test {
       )
     ),
     VariableTest(
+      passingTest,
       "sent17", "Average WS T0 yield was high, i.e. 7.3 t ha-1 (ranging from 5.0 to 9.4 t ha-1),",
       "YieldAmount",
       Seq(
@@ -224,6 +247,7 @@ class TestVariableReaderLabelBased extends Test {
       )
     ),
     VariableTest(
+      passingTest,
       "sent18", "considering the region’s potential yield of about 9 t ha-1.",
       "YieldAmount",
       Seq(
@@ -231,6 +255,7 @@ class TestVariableReaderLabelBased extends Test {
       )
     ),
     VariableTest(
+      passingTest,
       "sent19", "Average DS T0 yield was relatively low, i.e. 4.4 t ha-1 (ranging from 2.5 to 6.0 t ha-1)",
       "YieldAmount",
       Seq(
@@ -239,6 +264,7 @@ class TestVariableReaderLabelBased extends Test {
       )
     ),
     VariableTest(
+      passingTest,
       "sent20", "Average yields in SRV theoretically range between 5.0 and 6.0 t ha-1 in the rainy season and between 6.5 and 7.5 t ha-1 in the dry season",
       "YieldAmount",
       Seq(
@@ -247,6 +273,7 @@ class TestVariableReaderLabelBased extends Test {
       )
     ),
     VariableTest(
+      passingTest,
       "sent21", "seeds of the rice variety Sahel 108 are sown, a short- cycle variety (around 125 days) ",
       "CropAssignment",
       Seq(
@@ -254,6 +281,7 @@ class TestVariableReaderLabelBased extends Test {
       )
     ),
     VariableTest(
+      passingTest,
       "sent22", "average yields for the two seasons assessed of 4832 kg ha-1 and 7425 kg ha-1 for the areas under CONV and INT management, respectively.",
       "YieldAmount",
       Seq(
@@ -262,16 +290,19 @@ class TestVariableReaderLabelBased extends Test {
       )
     ),
     VariableTest(
+      passingTest,
       "negTestSent", "This is a sample negative test. There should be no assignments extracted",
       "None",
       Seq.empty
     ),
     VariableTest(
+      passingTest,
       "sent23", "timing of basal fertilizer application was on average 26, 33, and 26 days after sowing ( DAS ) in 2011WS, 2012DS, and 2013DS,",
       "FertilizerAssignment",
       Seq.empty
       ),
     VariableTest(
+      passingTest,
       "sent24", "Rice yields were 6.4, 6.4, and 5.1 t/ha in 2011WS, 2012DS, and 2013DS, respectively",
       "YieldAmount",
       Seq(
@@ -279,6 +310,7 @@ class TestVariableReaderLabelBased extends Test {
       )
     ),
     VariableTest(
+      passingTest,
       "sent25", "Most farmers in the Senegal River valley apply N fertilizer only twice, i.e. roughly at the start of tillering and panicle initiation (PI).",
       "FertilizerAssignment",
       Seq(
@@ -286,6 +318,7 @@ class TestVariableReaderLabelBased extends Test {
       )
     ),
     VariableTest(
+      passingTest,
       "sent26", "Farmers applied N fertilizer twice, i.e. at the start of tillering and at PI,",
       "FertilizerAssignment",
       Seq(
@@ -293,13 +326,13 @@ class TestVariableReaderLabelBased extends Test {
       )
     ),
       VariableTest(
-      "sent28", "Average yields in SRV theoretically range between 5.0 and 6.0 t ha-1 in the rainy season and between 6.5 and 7.5 t ha-1 in the dry season (SAED, 2019; USDA-GAIN, 2021)",
+      passingTest,
+      "sent28", "Average yields in SRV theoretically range between 5.0 and 6.0 t ha-1 in the rainy season and between 6.5 and 7.5 t ha-1 in the dry season (SAED, 2019; USDA-GAIN, 2021)", // fixme: I think here, 2019 is the citation, not dry season
       "DrySeasonAssignment",
-      Seq(
-        ("DrySeason", Seq(("2019", "2019-XX-XX")))
-      )
+      Seq.empty
     ),
     VariableTest(
+      passingTest,
       "sent28_1", "Average yields in SRV theoretically range between 5.0 and 6.0 t ha-1 in the rainy season and between 6.5 and 7.5 t ha-1 in the dry season (SAED, 2019; USDA-GAIN, 2021)",
       "YieldAmount",
       Seq(
@@ -308,6 +341,7 @@ class TestVariableReaderLabelBased extends Test {
       )
     ),
     VariableTest(
+      passingTest,
       "sent29", "In plots receiving fertilizer, DAP was applied basally (19.3 and 21.5 kg N and P ha−1 ),",
       "FertilizerAssignment",
       Seq(
@@ -315,6 +349,7 @@ class TestVariableReaderLabelBased extends Test {
       )
     ),
     VariableTest(
+      passingTest,
       "sent29_2", "In plots receiving fertilizer, DAP was applied basally (19.3 and 21.5 kg N and P ha-1 ),",
       "FertilizerQuantity",
       Seq(
@@ -322,26 +357,29 @@ class TestVariableReaderLabelBased extends Test {
       )
     ),
     VariableTest(
+      passingTest, // fixme: if we extract August as wet season here, should we extract March as dry season?
       "sent30", "Transplanting for both management systems took place on 7 (2007 and 2008 wet season) and 25 (2009 wet season) August and on 19 March (2008 and 2009 dry season).",
       "WetSeasonAssignment",
       Seq(
-        ("WetSeason", Seq(("2009", "2009-XX-XX"))),
         ("WetSeason", Seq(("August", "XXXX-08-XX")))
       )
     ),
     VariableTest(
+      passingTest,
       "sent21_11", "28,223 ha vs 35,065 ha were used as sown areas.",
       "PlantingArea",
       Seq(("Area", Seq(("28,223 ha", "28223.0 ha"))))
       //note: currently not extracting values after vs.
     ),
     VariableTest(
+      passingTest,
       "sent21_12", "The areas sown for this 2021/2022 wintering campaign are 28,223 ha vs 35,065 ha in wintering.",
       "PlantingArea",
       Seq(("Area", Seq(("28,223 ha", "28223.0 ha"))))
       //note: currently not extracting values after vs.
     ),
     VariableTest(
+      passingTest,
       "sent21_13", "Harvests have started in some production areas of the valley, to date an area estimated at 843 ha is already harvested in  the Delta, 199 ha in Matam, 31 ha in Bakel, and 23 ha in Dagana.",
       "PlantingArea",
       Seq(("Area", Seq(("843 ha", "843.0 ha"), ("199 ha", "199.0 ha"), ("31 ha", "31.0 ha"), ("23 ha", "23.0 ha"))))

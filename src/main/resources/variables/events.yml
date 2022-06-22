@@ -267,18 +267,18 @@
   label: FertilizerQuantity
   type: token
   pattern: |
-    @variable:Fertilizer []*? @value:Quantity
+    @variable:Fertilizer []{,10} @value:Quantity
 
 - name: ${label}-crop-property-event
   priority: ${rulepriority}
   label: PropertyAssignment
   type: token
   pattern: |
-    @variable:Crop []+?  @value:Duration
+    @variable:Crop []{,7}  @value:Duration
 
 - name: ${label}-grain-property-event
   priority: ${rulepriority}
   label: PropertyAssignment
   type: token
   pattern: |
-    @variable:Crop  []+?  @value:GrainProperty
+    @variable:Crop  []{,7} @value:GrainProperty

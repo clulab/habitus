@@ -108,10 +108,12 @@ class TestDefaultContextAttachment extends Test {
     DefaultContextAttachmentTest(
       "sent-4",
       "In the 2000WS, they used cultivar Sahel 202",
-      "PlantingArea",
+      "CropAssignment",
       Desired(
         date = "2000WS",
-        process = "planting"
+        process = "UNK",
+        crop = "Sahel 202",
+        comparative = "0"
       )
     )
   )
