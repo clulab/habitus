@@ -381,26 +381,26 @@ class TestVariableReaderLabelBased extends Test {
     ),
     VariableTest(
       passingTest,
-      "sent24", "The highest yield ( 9.3 t ha-1 ) is obtained by Brodt et al. ( 2014 ) in California with only 170 kg N ha-1 ; followed by Xu et al. ( 2020 ) and Zhang et al. ( 2021 ) , both with yields > 8 t ha-1 in Hubei Province ( China ) .",
+      "sent31", "The highest yield ( 9.3 t ha-1 ) is obtained by Brodt et al. ( 2014 ) in California with only 170 kg N ha-1 ; followed by Xu et al. ( 2020 ) and Zhang et al. ( 2021 ) , both with yields > 8 t ha-1 in Hubei Province ( China ) .",
       "YieldAmount",
       Seq(
         ("Yield", Seq(("9.3 t ha-1", "9.3 t/ha"))),
-        ("Yield", Seq(("8 t ha-1", "8 t/ha")))
+        ("Yield", Seq(("8 t ha-1", "8.0 t/ha")))
       )
     ),
     VariableTest(
-      passingTest,
-      "sent24", "Potential yield of all the varieties in the Senegal River delta was estimated at 9 and 10 t/ha in wet and dry seasons , respectively , and potential yield was taken as 8 t/ha for both seasons in the middle valley .",
+      failingTest,
+      "sent32", "Potential yield of all the varieties in the Senegal River delta was estimated at 9 and 10 t/ha in wet and dry seasons , respectively , and potential yield was taken as 8 t/ha for both seasons in the middle valley .",
       "YieldAmount",
       Seq(
-        ("Yield", Seq(("9", "9 t/ha"))),
-        ("Yield", Seq(("10 t/ha", "10 t/ha"))),
-        ("Yield", Seq(("8 t/ha", "8 t/ha")))
+        ("Yield", Seq(("9", "9.0 t/ha"))),
+        ("Yield", Seq(("10 t/ha", "10.0 t/ha"))),
+        ("Yield", Seq(("8 t/ha", "8.0 t/ha")))
       )
     ),
     VariableTest(
-      passingTest,
-      "sent24", "With RCP2.6 and consideration of CO2 effect , rice yield will increase from 3600 in 2000-2009 to 4500 kg ha-1 in 2090-2099 ( Fig. 4a ) .",
+      failingTest,
+      "sent33", "With RCP2.6 and consideration of CO2 effect , rice yield will increase from 3600 in 2000-2009 to 4500 kg ha-1 in 2090-2099 ( Fig. 4a ) .",
       "YieldAmount",
       Seq(
         ("Yield", Seq(("3600", "3600.0 kg ha-1"))),
