@@ -4,7 +4,7 @@ import org.clulab.habitus.utils.Test
 import org.clulab.odin.{Mention, TextBoundMention}
 
 class TestVariableReader extends Test {
-  val vp: VariableProcessor = VariableProcessor()
+  val vp: VariableProcessor = VariableProcessor(filter = false)
 
   // (variableText, Seq[(valueText, valueNorm)])
   // So if one mention has multiple values, write Seq((valueText1, valueNorm1), (valueText2, valueNorm2), ...)

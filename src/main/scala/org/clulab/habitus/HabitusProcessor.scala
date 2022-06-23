@@ -6,7 +6,7 @@ import org.clulab.processors.clu.CluProcessor
 import org.clulab.processors.clu.tokenizer.Tokenizer
 import org.clulab.sequences.LexiconNER
 
-class HabitusProcessor(lexiconNer: Option[LexiconNER]) extends CluProcessor(optionalNER = lexiconNer) {
+class HabitusProcessor(lexiconNer: Option[LexiconNER], filter: Boolean = true) extends CluProcessor(optionalNER = lexiconNer) {
   /** Our own tokenizer to clean up some nasty characters */
   lazy val habitusTokenizer: HabitusTokenizer = new HabitusTokenizer(localTokenizer)
   override lazy val tokenizer: Tokenizer = habitusTokenizer
@@ -14,13 +14,13 @@ class HabitusProcessor(lexiconNer: Option[LexiconNER]) extends CluProcessor(opti
   /** Our own mkDocument, which removes some malformed sentences */
   override def mkDocument(text: String, keepText: Boolean = false): Document = {
     val oldDoc = super.mkDocument(text, keepText)
-    val newDoc = removeBadSentences(oldDoc)
+    val newDoc = if (filter) removeBadSentences(oldDoc) else oldDoc
     newDoc
   }
 
-  def mkDocumentWithRestoreCase(text: String, keepText: Boolean = false): Document = {
+  def mkDocumentWithRestoreCase(text: String, keepText: Boolean = true): Document = {
     val oldDoc = super.mkDocument(text, keepText)
-    val newDoc = removeBadSentences(oldDoc)
+    val newDoc = if (filter) removeBadSentences(oldDoc) else oldDoc
     restoreCase(newDoc)
     newDoc
   }
