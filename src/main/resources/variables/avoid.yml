@@ -2,19 +2,9 @@ taxonomy: org/clulab/openie/entities/grammar/taxonomy.yml
 
 rules:
 
-  - name: "coordinations"
-    label: Number
-    priority: 1
-    type: token
-    pattern: |
-      # avoid coordinations
-      # we want any coordinated entities we might encounter to be split
-      [tag=CD]
-
-  - name: "exclude-date-pred-people"
+  - name: "publication-year"
     label: Avoid
-    priority: 3
+    priority: ${rulepriority}
     type: token
     pattern: |
-      # avoid xrefs
-      "("[tag=NNP] []+ @value:Date ")" 
+      (?<=[tag=NNP] "et" /al|al./ "("? ) /[12]\d\d\d/ 

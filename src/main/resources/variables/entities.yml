@@ -76,7 +76,7 @@
   label: Date
   type: token
   pattern: |
-    [entity='B-DATE'] [entity='I-DATE']*
+    [entity='B-DATE' & !mention=Avoid] [entity='I-DATE']* 
 
 - name: value-from-date-2
   priority: ${rulepriority}

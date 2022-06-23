@@ -401,6 +401,14 @@ class TestEntitiesNorms extends Test {
           ("3200-3500 kg ha-1", "3200 -- 2500 kg/ha")
           )
         )
+    ),
+    VariableTest(
+      passingTest,
+      "Fix8", // 2009 is the year of publication
+      "In another study in the same location , RI yields as high as 9.9 t ha-1 were recorded , though rather than ttributing them to SRI per se , Tsujimoto et al. ( 2009 ) suggested hey resulted from repetitive , deep tillage and incorporation of up o 35 t compost ha-1 ( dry weight equivalent ).",
+      Seq(
+        "Date" -> Seq.empty
+      )
     )
   )
 
