@@ -109,6 +109,14 @@
   pattern: |
     [entity='B-MEASUREMENT'] [entity = 'I-MEASUREMENT']*
 
+- name: measurement-rule-mg
+  priority: ${rulepriority}
+  label: Quantity
+  type: token
+  example: "The areas sown for this 2021/2022 wintering campaign are..."
+  pattern: |
+    [word = /^(\d\d){1,2}(-)(\d\d){1,2}$/]
+
 - name: area-size-entity-rule
   priority: ${rulepriority}
   label: AreaSize

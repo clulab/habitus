@@ -560,21 +560,21 @@ class TestVariableReader extends Test {
       "None",
       Seq.empty // what is this testing for?
     ),
-    VariableTest(
-      passingTest, // this is a toy example to check for property assignments
-      "sent21_12_1", "We use Aiwu (short duration, slender grain), I Kong Pao (short duration, bold grain) and IR1529 and Jaya (medium duration, slender grain).",
-      "PropertyAssignment",
-      Seq(
-        ("Aiwu", Seq(("short duration", ""))),
-        ("Aiwu", Seq(("slender grain", ""))),
-        ("I Kong Pao", Seq(("short duration", ""))),
-        ("I Kong Pao", Seq(("bold grain", ""))),
-        ("IR1529", Seq(("medium duration", ""))),
-        ("IR1529", Seq(("slender grain", ""))),
-        ("Jaya", Seq(("medium duration", ""))),
-        ("Jaya", Seq(("slender grain", "")))
-      )
-    ),
+//    VariableTest(
+//      passingTest, // this is a toy example to check for property assignments
+//      "sent21_12_1", "We use Aiwu (short duration, slender grain), I Kong Pao (short duration, bold grain) and IR1529 and Jaya (medium duration, slender grain).",
+//      "PropertyAssignment",
+//      Seq(
+//        ("Aiwu", Seq(("short duration", ""))),
+//        ("Aiwu", Seq(("slender grain", ""))),
+//        ("I Kong Pao", Seq(("short duration", ""))),
+//        ("I Kong Pao", Seq(("bold grain", ""))),
+//        ("IR1529", Seq(("medium duration", ""))),
+//        ("IR1529", Seq(("slender grain", ""))),
+//        ("Jaya", Seq(("medium duration", ""))),
+//        ("Jaya", Seq(("slender grain", "")))
+//      )
+//    ),
     VariableTest(
       failingTest,
       // this is a real sentence corresponding to the toy sentence in 21_12_1
@@ -608,7 +608,9 @@ class TestVariableReader extends Test {
       passingTest,
       "fix3", "Diagnosis of the 1999 and 2000 wet seasons In the 1999 and 2000 wet seasons , the potential rice grain yields were between 8.8 t ha-1 and 9.2 t ha-1 ( i.e. about 1 t ha-1 more than in the 1998WS ) whilst the average of the actual yield increased greatly",
       "WetSeasonAssignment",
-      Seq.empty // todo: add a DateRange mention type to capture 2000 wet season with a norm 2000-XX-XX -- 2000-XX-XX
+      Seq(
+        ("wet season", Seq(("2000", "2000-XX-XX -- 2000-XX-XX")))
+      ) // todo: add a DateRange mention type to capture 2000 wet season with a norm 2000-XX-XX -- 2000-XX-XX
     ),
     VariableTest(
       failingTest,
@@ -642,14 +644,14 @@ class TestVariableReader extends Test {
       "DrySeasonAssignment",
       Seq.empty
     ),
-    VariableTest(
-      passingTest,
-      "fix7", "Rice yields derived by NMR were compared with yields obtained with farmers ' fertilizer practices ( FFP ) in 20 , 58 , and 24 on-farm trials in the 2011 wet season , 2012 dry season , and 2013 dry season , respectively ( referred to as 2011WS , 2012DS , and 2103DS ) .",
-      "DrySeasonAssignment",
-      //FIXME: `2103DS`, my guess is 2013DS, does it matter? As in should it be corrected?
-      // todo: I think this test is redundant - checks same thing as several other test (basically checks that `2012 dry season` and the other similar ones are not extracted as DrySeasonAssignment; remove redundant tests (keep the ones with other patterns)
-      Seq.empty
-    ),
+//    VariableTest(
+//      passingTest,
+//      "fix7", "Rice yields derived by NMR were compared with yields obtained with farmers ' fertilizer practices ( FFP ) in 20 , 58 , and 24 on-farm trials in the 2011 wet season , 2012 dry season , and 2013 dry season , respectively ( referred to as 2011WS , 2012DS , and 2103DS ) .",
+//      "DrySeasonAssignment",
+//      //FIXME: `2103DS`, my guess is 2013DS, does it matter? As in should it be corrected?
+//      // todo: I think this test is redundant - checks same thing as several other test (basically checks that `2012 dry season` and the other similar ones are not extracted as DrySeasonAssignment; remove redundant tests (keep the ones with other patterns)
+//      Seq.empty
+//    ),
     VariableTest(
       failingTest,
       "fix8", "In plots receiving fertilizer , DAP was applied basally ( 19.3 and 21.5 kg N and P ha-1 ) , and three urea splits were broadcasted into 1-5 cm of water ( 101.3 kg N ha-1 ; 40 % at early-tillering , 40 % at panicle initiation , and 20 % at heading ) .",
