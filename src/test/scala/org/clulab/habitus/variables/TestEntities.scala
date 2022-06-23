@@ -26,6 +26,7 @@ class TestEntities extends Test {
       val parsingResults = vp.parse(text)
       // in this tester, we want to get all mentions, including entity ones, so use parsingResults.allMentions
       // instead of parsingResults.targetMentions
+      for (m <- parsingResults.allMentions) println("EM: " + m.label + " " + m.text)
       parsingResults.allMentions
     }
 
@@ -492,6 +493,14 @@ class TestEntities extends Test {
       "The 21 cultivars used in the experiment were either hybrids, japonica, or indica type and came from various breeding centers ( Table 2 ) .",
       Seq(
         "Crop" -> Seq("japonica", "indica")
+      )
+    ),
+    VariableTest(
+      passingTest,
+      "Fix10",
+      "Target yields on average were set to 6.4 and 7.1 t/ha in 2011WS , 2012DS , and 2013DS , respectively ( Table 1 ) .",
+      Seq(
+        "Crop" -> Seq("Rice", "rice")
       )
     )
   )
