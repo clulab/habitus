@@ -555,12 +555,6 @@ class TestVariableReader extends Test {
       )
     ),
     VariableTest(
-      passingTest,
-      "sent21_11", "2 Others : cassava , melon , peanuts , eggplant , watermelon , pepper , carrot , cabbage , jaxatu , beans , bissap , banana plantation , fruit trees , white onion , cucumber , squash …",
-      "None",
-      Seq.empty // what is this testing for?
-    ),
-    VariableTest(
       passingTest, // this is a toy example to check for property assignments
       "sent21_12_1", "We use Aiwu (short duration, slender grain), I Kong Pao (short duration, bold grain) and IR1529 and Jaya (medium duration, slender grain).",
       "PropertyAssignment",

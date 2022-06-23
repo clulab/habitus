@@ -51,8 +51,7 @@ class TestVariableReaderLabelBased extends Test {
 
             arguments should have size values.length
             values.zip(arguments).zipWithIndex.foreach { case ((value, argument), valueIndex) =>
-              // not checking text right now, just the norm
-              //            (variableIndex, valueIndex, argument.text) should be ((variableIndex, valueIndex, value._1))
+              (variableIndex, valueIndex, argument.text) should be ((variableIndex, valueIndex, value._1))
               (variableIndex, valueIndex, argument.norms.get.head) should be((variableIndex, valueIndex, value._2))
             }
           }
@@ -82,18 +81,18 @@ class TestVariableReaderLabelBased extends Test {
     ),
     VariableTest(
       passingTest,
-      "sent3", "the average grain yield was 8.2 t ha–1",
+      "sent3", "the average grain yield was 8.2 t ha-1",
       "YieldAmount",
       Seq(
-        ("Yield", Seq(("8.2 t ha–1", "8.2 t/ha")))
+        ("Yield", Seq(("8.2 t ha-1", "8.2 t/ha")))
       )
     ),
     VariableTest(
       passingTest,
-      "sent4", "in the 1999WS, with an average grain yield of 7.2 t ha–1. In the 2000WS",
+      "sent4", "in the 1999WS, with an average grain yield of 7.2 t ha-1. In the 2000WS",
       "YieldAmount",
       Seq(
-        ("Yield", Seq(("7.2 t ha–1", "7.2 t/ha")))
+        ("Yield", Seq(("7.2 t ha-1", "7.2 t/ha")))
       )
     ),
     VariableTest(
@@ -106,15 +105,15 @@ class TestVariableReaderLabelBased extends Test {
     ),
     VariableTest(
       passingTest,
-      "sent5", "Potential rice grain yields (limited by solar radiation and temperature only) are on average about 9 t ha–1 in the wet growing season from July to November",
+      "sent5", "Potential rice grain yields (limited by solar radiation and temperature only) are on average about 9 t ha-1 in the wet growing season from July to November",
       "YieldAmount",
       Seq(
-        ("Yield", Seq(("9 t ha–1", "9.0 t/ha")))
+        ("Yield", Seq(("9 t ha-1", "9.0 t/ha")))
       )
     ),
     VariableTest(
       passingTest,
-      "sent5_1", "Potential rice grain yields (limited by solar radiation and temperature only) are on average about 9 t ha–1 in the wet growing season from July to November",
+      "sent5_1", "Potential rice grain yields (limited by solar radiation and temperature only) are on average about 9 t ha-1 in the wet growing season from July to November",
       "WetSeasonAssignment",
       Seq(
         ("WetSeason", Seq(("from July to November", "XXXX-07-XX -- XXXX-11-XX")))
@@ -122,10 +121,10 @@ class TestVariableReaderLabelBased extends Test {
     ),
     VariableTest(
       passingTest,
-      "sent6", "actual average farmer yields are about 5 t ha–1 ",
+      "sent6", "actual average farmer yields are about 5 t ha-1 ",
       "YieldAmount",
       Seq(
-        ("Yield", Seq(("5 t ha–1", "5.0 t/ha")))
+        ("Yield", Seq(("5 t ha-1", "5.0 t/ha")))
       )
     ),
     VariableTest(
@@ -133,7 +132,7 @@ class TestVariableReaderLabelBased extends Test {
       "sent7", "The potential yields of these three cultivars are similar and are on average about 8 to 9 t ha-1 in the wet season",
       "YieldAmount",
       Seq(
-        ("Yield", Seq(("5 t ha–1", "8.0 -- 9.0 t/ha")))
+        ("Yield", Seq(("8 to 9 t ha-1", "8.0 -- 9.0 t/ha")))
       )
     ),
     VariableTest(
@@ -141,8 +140,8 @@ class TestVariableReaderLabelBased extends Test {
       "sent8", "The potential grain yield that can be obtained ranges from 8 to 9 t ha-1 in the wet season (July sowing) and from 6 to 11 t ha-1 in the dry season (February sowing)",
       "YieldAmount",
       Seq(
-        ("Yield", Seq(("8 to 9 t ha-1", "8.0 -- 9.0 t/ha"))),
-        ("Yield", Seq(("6 to 11 t ha-1", "6.0 -- 11.0 t/ha")))
+        ("Yield", Seq(("from 8 to 9 t ha-1", "8.0 -- 9.0 t/ha"))),
+        ("Yield", Seq(("from 6 to 11 t ha-1", "6.0 -- 11.0 t/ha")))
       )
     ),
     VariableTest(
@@ -190,7 +189,7 @@ class TestVariableReaderLabelBased extends Test {
       "sent11", "Average yield was 4.8 t ha-1; ",
       "YieldAmount",
       Seq(
-        ("Yield", Seq(("4.8 t", "4.8 t/ha"))),
+        ("Yield", Seq(("4.8 t ha-1", "4.8 t/ha"))),
       )
     ),
     VariableTest(
@@ -219,18 +218,18 @@ class TestVariableReaderLabelBased extends Test {
       )
     ),
     VariableTest(
-      passingTest,
+      failingTest, // fixme: this will pass with the new version of processors
       "sent15", "Seeding dates ranged from 22 August to 26 September in 2011WS, from 29 February to 1 April in the 2012DS, and from 5 to 23 March in the 2013DS",
       "PlantingDate",
       Seq(
-        ("Planting", Seq(("from 22 August to 26 September", "2011-08-22 -- 2011-09-26"))),
-        ("Planting", Seq(("from 29 February to 1 April", "XXXX-02-29 -- XXXX-04-01"))),
-        ("Planting", Seq(("from 5 to 23 March", "XXXX-03-05 -- XXXX-03-23")))
+        ("Planting", Seq(("from 22 August to 26 September in 2011WS", "2011-08-22 -- 2011-09-26"))),
+        ("Planting", Seq(("from 29 February to 1 April in the 2012DS", "2012-02-29 -- 2012-04-01"))),
+        ("Planting", Seq(("from 5 to 23 March in the 2013DS", "2013-03-05 -- 2013-03-23")))
       )
     ),
     VariableTest(
       passingTest,
-      "sent16", "WS sowing in July and about 9–10 t ha−1 for dry season (DS) sowing in February in the Senegal River delta.",
+      "sent16", "WS sowing in July and about 9-10 t ha−1 for dry season (DS) sowing in February in the Senegal River delta.",
       "PlantingDate",
       Seq(
         ("Planting", Seq(("July", "XXXX-07-XX"))),
@@ -243,7 +242,7 @@ class TestVariableReaderLabelBased extends Test {
       "YieldAmount",
       Seq(
         ("Yield", Seq(("7.3 t ha-1", "7.3 t/ha"))),
-        ("Yield",  Seq(("from 5.0 to 9.4 ha-1", "5.0 -- 9.4 t/ha")))
+        ("Yield",  Seq(("from 5.0 to 9.4 t ha-1", "5.0 -- 9.4 t/ha")))
       )
     ),
     VariableTest(
@@ -291,21 +290,17 @@ class TestVariableReaderLabelBased extends Test {
     ),
     VariableTest(
       passingTest,
-      "negTestSent", "This is a sample negative test. There should be no assignments extracted",
-      "None",
-      Seq.empty
-    ),
-    VariableTest(
-      passingTest,
       "sent23", "timing of basal fertilizer application was on average 26, 33, and 26 days after sowing ( DAS ) in 2011WS, 2012DS, and 2013DS,",
       "FertilizerAssignment",
       Seq.empty
       ),
     VariableTest(
-      passingTest,
+      failingTest,
       "sent24", "Rice yields were 6.4, 6.4, and 5.1 t/ha in 2011WS, 2012DS, and 2013DS, respectively",
       "YieldAmount",
       Seq(
+        ("Yield", Seq(("6.4", "6.4 t/ha"))),
+        ("Yield", Seq(("6.4", "6.4 t/ha"))),
         ("Yield", Seq(("5.1 t/ha", "5.1 t/ha")))
       )
     ),
@@ -314,15 +309,15 @@ class TestVariableReaderLabelBased extends Test {
       "sent25", "Most farmers in the Senegal River valley apply N fertilizer only twice, i.e. roughly at the start of tillering and panicle initiation (PI).",
       "FertilizerAssignment",
       Seq(
-        ("FertilizerAssignment", Seq(("N fertilizer", "")))
+        ("FertilizerAssignment", Seq(("N", "")))
       )
     ),
-    VariableTest(
+    VariableTest( //todo: remove: it's the same as previous
       passingTest,
       "sent26", "Farmers applied N fertilizer twice, i.e. at the start of tillering and at PI,",
       "FertilizerAssignment",
       Seq(
-        ("FertilizerAssignment", Seq(("N fertilizer", "")))
+        ("FertilizerAssignment", Seq(("N", "")))
       )
     ),
       VariableTest(
@@ -345,10 +340,10 @@ class TestVariableReaderLabelBased extends Test {
       "sent29", "In plots receiving fertilizer, DAP was applied basally (19.3 and 21.5 kg N and P ha−1 ),",
       "FertilizerAssignment",
       Seq(
-        ("GenericFertilizer", Seq(("fertilizer, DAP", "")))
+        ("GenericFertilizer", Seq(("DAP", "")))
       )
     ),
-    VariableTest(
+    VariableTest( //todo: remove: just checking for label of the variable is not enough here because there are multiple fertilizers mentioned and there is a text-based test for this
       passingTest,
       "sent29_2", "In plots receiving fertilizer, DAP was applied basally (19.3 and 21.5 kg N and P ha-1 ),",
       "FertilizerQuantity",
@@ -384,7 +379,34 @@ class TestVariableReaderLabelBased extends Test {
       "PlantingArea",
       Seq(("Area", Seq(("843 ha", "843.0 ha"), ("199 ha", "199.0 ha"), ("31 ha", "31.0 ha"), ("23 ha", "23.0 ha"))))
     ),
-
+    VariableTest(
+      passingTest,
+      "sent24", "The highest yield ( 9.3 t ha-1 ) is obtained by Brodt et al. ( 2014 ) in California with only 170 kg N ha-1 ; followed by Xu et al. ( 2020 ) and Zhang et al. ( 2021 ) , both with yields > 8 t ha-1 in Hubei Province ( China ) .",
+      "YieldAmount",
+      Seq(
+        ("Yield", Seq(("9.3 t ha-1", "9.3 t/ha"))),
+        ("Yield", Seq(("8 t ha-1", "8 t/ha")))
+      )
+    ),
+    VariableTest(
+      passingTest,
+      "sent24", "Potential yield of all the varieties in the Senegal River delta was estimated at 9 and 10 t/ha in wet and dry seasons , respectively , and potential yield was taken as 8 t/ha for both seasons in the middle valley .",
+      "YieldAmount",
+      Seq(
+        ("Yield", Seq(("9", "9 t/ha"))),
+        ("Yield", Seq(("10 t/ha", "10 t/ha"))),
+        ("Yield", Seq(("8 t/ha", "8 t/ha")))
+      )
+    ),
+    VariableTest(
+      passingTest,
+      "sent24", "With RCP2.6 and consideration of CO2 effect , rice yield will increase from 3600 in 2000-2009 to 4500 kg ha-1 in 2090-2099 ( Fig. 4a ) .",
+      "YieldAmount",
+      Seq(
+        ("Yield", Seq(("3600", "3600.0 kg ha-1"))),
+        ("Yield", Seq(("4500 kg ha-1", "4500.0 kg/ha")))
+      )
+    )
   )
 
 
