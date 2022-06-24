@@ -40,7 +40,7 @@ object TrainGloveApp extends App {
         process(file, printWriter)
       }
       catch {
-        case throwable => throwable.printStackTrace()
+        case throwable: Throwable => throwable.printStackTrace()
       }
     }
   }
