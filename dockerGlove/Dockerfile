@@ -2,8 +2,10 @@ FROM openjdk:8
 
 WORKDIR /app/
 
-COPY ./target/universal/bin /app/bin
-COPY ./target/universal/lib /app/lib
+COPY ./app/ /app
+COPY glove.sh /
 
-ENTRYPOINT ["/app/bin/variable-reader"]
-CMD ["-in", "/input", "-out", "/output", "-threads", "4"]
+# turn this into a script that first runs
+# this app, then starts the glove trainer
+ENTRYPOINT ["/glove.sh"]
+CMD ["/input", "/output"]

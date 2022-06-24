@@ -2,35 +2,18 @@
 
 ## build
 
-The image can be built with a single `sbt` command or a series of shell commands.
-
-### sbt
-
-This option uses no files from this directory, so it is independent of instructions in `Dockerfile`.  Instead, it uses `docker.sbt` from the main project directory.
-
-* To perform tests before containerization, execute `sbt dockerize`.
-* If you are in a hurry and don't need to (re)test, use `sbt docker:publishLocal`.
-
-This should result in images `habitus:[version]` and `habitus:latest`.  The version number is specified in `docker.sbt`.
-
-
-### shell
-
 To build the image, execute these commands:
 
 ```shell
 sbt dist
 cd target/universal
 unzip habitus*.zip
-cd habitus*/bin
-rm main main.bat
-rm variable-shell variable-shell.bat
-rm variable-reader.bat
-cd ../..
-mv habitus*/bin habitus*/lib .
-cd ../..
-docker build -f ./docker/Dockerfile -t habitus:[version] .
-docker image tag habitus:[version] habitus:latest
+mv habitus*/lib ../../dockerGlove/app
+mv habitus*/bin/train-glove-app ../../dockerGlove/app/bin
+cd ../../dockerGlove
+docker build -f ./Dockerfile -t habitusGlove:[version] .
+docker image tag habitusGlove:[version] habitusGlove:latest
+cd ..
 ```
 
 ## run
