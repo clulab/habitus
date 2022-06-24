@@ -15,12 +15,15 @@ set -e
 #  rm text8.zip
 #fi
 
-CORPUS=./output/glove.txt
-VOCAB_FILE=./output/vocab.txt
-COOCCURRENCE_FILE=./output/cooccurrence.bin
-COOCCURRENCE_SHUF_FILE=./output/cooccurrence.shuf.bin
-BUILDDIR=./app/bin
-SAVE_FILE=./output/vectors
+INPUT=./input
+OUTPUT=./output
+
+CORPUS=$OUTPUT/glove.txt
+VOCAB_FILE=$OUTPUT/vocab.txt
+COOCCURRENCE_FILE=$OUTPUT/cooccurrence.bin
+COOCCURRENCE_SHUF_FILE=$OUTPUT/cooccurrence.shuf.bin
+BUILDDIR=./bin
+SAVE_FILE=$OUTPUT/vectors
 VERBOSE=2
 MEMORY=4.0
 VOCAB_MIN_COUNT=10 # 5
@@ -38,8 +41,8 @@ X_MAX=10
 
 echo
 
-echo "$ $BUILDDIR/train-glove-app ./input ./output/glove.txt"
-$BUILDDIR/train-glove-app ./input ./output/glove.txt
+echo "$ $BUILDDIR/train-glove-app $INPUT $OUTPUT/glove.txt"
+$BUILDDIR/train-glove-app $INPUT $OUTPUT/glove.txt
 
 echo "$ $BUILDDIR/vocab_count -min-count $VOCAB_MIN_COUNT -verbose $VERBOSE < $CORPUS > $VOCAB_FILE"
 $BUILDDIR/vocab_count -min-count $VOCAB_MIN_COUNT -verbose $VERBOSE < $CORPUS > $VOCAB_FILE
