@@ -20,6 +20,8 @@ object TrainGloveApp extends App {
   val processor = new CluProcessor()
 
   def process(file: File, printWriter: PrintWriter): Unit = {
+    println(file.getName) // already synchronized
+
     val text = FileUtils.getTextFromFile(file)
     val document = processor.mkDocument(text)
     val sentenceTexts = document.sentences.map(_.words.mkString(" "))
