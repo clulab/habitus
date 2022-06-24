@@ -35,6 +35,8 @@ mentions-value_variable.tsv
 # docker
 docker/bin/
 docker/lib/
+dockerGlove/bin/
+dockerGlove/lib/
 
 # For MacOS filesystem
 .DS_Store
