@@ -98,13 +98,13 @@ object VariableProcessor {
     }
   }
 
-  def apply(masterResource: String = "/variables/master.yml"): VariableProcessor = {
+  def apply(masterResource: String = "/variables/master.yml", filter: Boolean = true): VariableProcessor = {
     assert(masterResource.startsWith("/"))
 
     // create the processor
     Utils.initializeDyNet()
     val lexiconNer = newLexiconNer()
-    val processor = new HabitusProcessor(Some(lexiconNer))
+    val processor = new HabitusProcessor(Some(lexiconNer), filter = filter)
     // val processor = new CluProcessor(optionalNER = Some(lexiconNer))
     VariableProcessor(processor, masterResource)
   }

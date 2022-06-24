@@ -4,7 +4,10 @@ import org.clulab.habitus.utils.Test
 import org.clulab.odin.{Mention, TextBoundMention}
 
 class TestVariableReader extends Test {
-  val vp: VariableProcessor = VariableProcessor()
+  // Set this filter to false only if necessary to test texts that would otherwise
+  // be filtered out and not considered to be a sentence.  It would be better to
+  // embed the text within a viable sentence if at all possible, however.
+  val vp: VariableProcessor = VariableProcessor(filter = true)
 
   // (variableText, Seq[(valueText, valueNorm)])
   // So if one mention has multiple values, write Seq((valueText1, valueNorm1), (valueText2, valueNorm2), ...)
@@ -498,7 +501,7 @@ class TestVariableReader extends Test {
         ("I Kong Pao", Seq(("bold grain", ""))),
         ("IR1529", Seq(("medium duration", ""))),
         ("IR1529", Seq(("slender grain", ""))),
-          ("Jaya", Seq(("medium duration", ""))),
+        ("Jaya", Seq(("medium duration", ""))),
         ("Jaya", Seq(("slender grain", "")))
       )
     )
