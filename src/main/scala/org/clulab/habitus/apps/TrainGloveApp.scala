@@ -4,6 +4,8 @@ import org.clulab.processors.clu.CluProcessor
 import org.clulab.utils.Closer.AutoCloser
 import org.clulab.utils.FileUtils
 
+import java.io.{File, PrintWriter}
+
 object TrainGloveApp extends App {
 
   def syntax(): String = {
@@ -17,16 +19,27 @@ object TrainGloveApp extends App {
 
   val processor = new CluProcessor()
 
+  def process(file: File, printWriter: PrintWriter): Unit = {
+    val text = FileUtils.getTextFromFile(file)
+    val document = processor.mkDocument(text)
+    val sentenceTexts = document.sentences.map(_.words.mkString(" "))
+    val documentText = sentenceTexts.mkString(" ")
+
+    printWriter.synchronized {
+      printWriter.println(documentText)
+    }
+  }
+
   FileUtils.printWriterFromFile(outputFileName).autoClose { printWriter =>
-    val files = FileUtils.findFiles(inputDirName,"txt")
+    val files = FileUtils.findFiles(inputDirName,"txt").par
 
     files.foreach { file =>
-      val text = FileUtils.getTextFromFile(file)
-      val document = processor.mkDocument(text)
-      val sentenceTexts = document.sentences.map(_.words.mkString(" "))
-      val documentText = sentenceTexts.mkString(" ")
-
-      printWriter.println(documentText)
+      try {
+        process(file, printWriter)
+      }
+      catch {
+        case throwable => throwable.printStackTrace()
+      }
     }
   }
 }
