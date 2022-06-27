@@ -2,7 +2,6 @@ package org.clulab.habitus.apps
 
 import org.clulab.dynet.Utils
 import org.clulab.habitus.HabitusProcessor
-import org.clulab.habitus.variables.VariableProcessor.resourceDir
 import org.clulab.processors.clu.CluProcessor
 import org.clulab.sequences.LexiconNER
 import org.clulab.struct.Counter
@@ -14,8 +13,11 @@ import java.io.File
 import scala.util.{Failure, Try}
 
 object ExportNamedEntitiesApp extends App {
-  val inputFileName = args.lift(0).getOrElse("../docs/animate_sent3.tsv")
-  val outputFileName = args.lift(1).getOrElse("../docs/animate_sent3.conll")
+  val inputFileName = args.lift(0).getOrElse("../docs/animate_sent_new.tsv")
+  val outputFileName = args.lift(1).getOrElse("../docs/animate_sent_new.conll")
+
+//  val inputFileName = args.lift(0).getOrElse("../docs/animate_sent3.tsv")
+//  val outputFileName = args.lift(1).getOrElse("../docs/animate_sent3.conll")
 
   val useHabitus = true
 
@@ -58,7 +60,7 @@ object ExportNamedEntitiesApp extends App {
     "bakel delegationii . 2 . development", // This text does not exist.
     "( year2 lm12 ) : forecasts",
     "source : weekly",
-    "bakel delegation iii . 2 . development", // This text does not exist.
+    "bakel delegationiii . 2 . development", // This text does not exist.
     "wintering campaign national company",
     "pete",
     "left bank of the senegal river",
@@ -117,7 +119,7 @@ object ExportNamedEntitiesApp extends App {
               }
               newEntities
             }
-            // == on Arrays doesn't seem to work.
+            // == on Arrays doesn't work.
             val changed = words.indices.exists { index => newEntities(index) != oldEntities(index) }
             if (changed) {
               words.indices.foreach { index =>
