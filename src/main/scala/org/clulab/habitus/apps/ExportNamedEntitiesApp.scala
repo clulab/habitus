@@ -21,32 +21,32 @@ object ExportNamedEntitiesApp extends App {
   }
   val badNamedEntities = Array(
     "ssc",
-    "tel",
-    // "agriculture and rural equipment", // This text does not exist!
+    "tel", // This text does not exist!
+    "agriculture and rural equipment", // This text does not exist!
     "however",
     "weekly monitoring",
     "north zone",
-    "( source : weekly tracking , matam delegation ) .", // development",
+    "( source : weekly tracking , matam delegation ) . development", // This text does not exist!
     "cold dry",
     "left bank of the senegal",
-    "fax",
-    "kollangal",
-    // "bakel delegationii . 2 . development", // This text does not exist.
-    // "( year2 lm12 ) : forecasts", // This text does not exist.
+    "fax", // This text does not exist!
+    "kollangal", // This text does not exist!
+    "bakel delegationii . 2 . development", // This text does not exist.
+    "( year2 lm12 ) : forecasts", // This text does not exist.
     "source : weekly",
-    // "bakel delegation iii . 2 . development", // This text does not exist.
-    // "wintering campaign national company", // This text does not exist.
+    "bakel delegation iii . 2 . development", // This text does not exist.
+    "wintering campaign national company", // This text does not exist.
     "pete",
     "left bank of the senegal river",
     "the cold dry",
     "drdr",
     "pos",
-    // "imv", // This text does not exist.
+    "imv", // This text does not exist.
     "dry season",
     // "dpv <- correct but unimportant",
-    "i",
+    "i", // This text does not exist!
     "( yr3 lm12 ) : development",
-    // "i . 2 development", // This text does not exist.
+    "i . 2 development", // This text does not exist.
     "financing of the agricultural production ( fpa )"
   )
   val badNamedEntityWords = badNamedEntities.map(_.split(' '))
