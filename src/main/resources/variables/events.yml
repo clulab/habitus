@@ -237,7 +237,7 @@
   label: YieldAmount
   type: token
   pattern: |
-    @variable:Yield []+ @value:Quantity
+    @variable:Yield []{,10} @value:Quantity
     
 - name: ${label}-yield-event
   priority: ${rulepriority}

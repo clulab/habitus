@@ -406,6 +406,16 @@ class TestVariableReaderLabelBased extends Test {
         ("Yield", Seq(("3600", "3600.0 kg ha-1"))),
         ("Yield", Seq(("4500 kg ha-1", "4500.0 kg/ha")))
       )
+    ),
+    VariableTest(
+      passingTest,
+      "fix5-event", "Target yields on average were set to 6.4, 7.9 and 7.1 t/ha in 2011WS , 2012DS , and 2013DS , respectively ( Table 1 ) .",
+      "YieldAmount",
+      Seq(
+        ("Yield", Seq(("6.4", "6.4 t/ha"))),
+        ("Yield", Seq(("7.9", "7.9 t/ha"))),
+        ("Yield", Seq(("7.1 t/ha", "7.1 t/ha")))
+      )
     )
   )
 
