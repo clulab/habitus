@@ -2,7 +2,9 @@ package org.clulab.habitus.apps
 
 import org.clulab.dynet.Utils
 import org.clulab.habitus.HabitusProcessor
+import org.clulab.habitus.variables.VariableProcessor.resourceDir
 import org.clulab.processors.clu.CluProcessor
+import org.clulab.sequences.LexiconNER
 import org.clulab.struct.Counter
 import org.clulab.utils.Closer.AutoCloser
 import org.clulab.utils.{FileUtils, Sourcer}
@@ -15,14 +17,36 @@ object ExportNamedEntitiesApp extends App {
   val inputFileName = args.lift(0).getOrElse("../docs/animate_sent3.tsv")
   val outputFileName = args.lift(1).getOrElse("../docs/animate_sent3.conll")
 
+  val useHabitus = true
+
+  def newLexiconNer(): LexiconNER = {
+    val kbs = Seq(
+      "lexicons/FERTILIZER.tsv", // VariableProcessor
+      "lexicons/CROP.tsv",       // VariableProcessor
+      "lexicons/ACTOR.tsv"       // BeliefProcessor & InterviewsProcessor
+    )
+    val lexiconNer = LexiconNER(kbs,
+      Seq(
+        true, // FERTILIZER is case insensitive.
+        true, // CROP
+        true  // ACTOR
+      ),
+      None
+    )
+
+    lexiconNer
+  }
+
   val processor = {
     Utils.initializeDyNet()
-    new CluProcessor() // new HabitusProcessor(None, filter = false)
+
+    if (useHabitus) new HabitusProcessor(Some(newLexiconNer()), filter = false)
+    else new CluProcessor()
   }
   val badNamedEntities = Array(
     "ssc",
     "tel", // This text does not exist!
-    "agriculture and rural equipment", // This text does not exist!
+    "agriculture and rural equipment",
     "however",
     "weekly monitoring",
     "north zone",
@@ -32,16 +56,16 @@ object ExportNamedEntitiesApp extends App {
     "fax", // This text does not exist!
     "kollangal", // This text does not exist!
     "bakel delegationii . 2 . development", // This text does not exist.
-    "( year2 lm12 ) : forecasts", // This text does not exist.
+    "( year2 lm12 ) : forecasts",
     "source : weekly",
     "bakel delegation iii . 2 . development", // This text does not exist.
-    "wintering campaign national company", // This text does not exist.
+    "wintering campaign national company",
     "pete",
     "left bank of the senegal river",
     "the cold dry",
     "drdr",
     "pos",
-    "imv", // This text does not exist.
+    "imv",
     "dry season",
     // "dpv <- correct but unimportant",
     "i", // This text does not exist!
