@@ -21,23 +21,19 @@ object ExportNamedEntitiesApp extends App {
 
   val useHabitus = true
 
-  def newLexiconNer(): LexiconNER = {
-    val kbs = Seq(
+  def newLexiconNer(): LexiconNER = LexiconNER(
+    Seq(
       "lexicons/FERTILIZER.tsv", // VariableProcessor
       "lexicons/CROP.tsv",       // VariableProcessor
       "lexicons/ACTOR.tsv"       // BeliefProcessor & InterviewsProcessor
-    )
-    val lexiconNer = LexiconNER(kbs,
-      Seq(
-        true, // FERTILIZER is case insensitive.
-        true, // CROP
-        true  // ACTOR
-      ),
-      None
-    )
-
-    lexiconNer
-  }
+    ),
+    Seq(
+      true, // FERTILIZER is case insensitive.
+      true, // CROP
+      true  // ACTOR
+    ),
+    None
+  )
 
   val processor = {
     Utils.initializeDyNet()
@@ -76,7 +72,7 @@ object ExportNamedEntitiesApp extends App {
     "financing of the agricultural production ( fpa )"
   )
   val badNamedEntityWords = badNamedEntities.map(_.split(' '))
-  val counter = new Counter[Seq[String]]()
+  val badNamedEntityCounts = new Counter[Seq[String]]()
 
   Sourcer.sourceFromFile(new File(inputFileName)).autoClose { source =>
     val tsvReader = new TsvReader()
@@ -102,8 +98,8 @@ object ExportNamedEntitiesApp extends App {
           val words = document.sentences.head.words
           val foundBadNamedEntityWords = badNamedEntityWords.filter(words.containsSlice(_))
 
-          foundBadNamedEntityWords.foreach(counter.incrementCount(_))
           if (foundBadNamedEntityWords.nonEmpty) {
+            foundBadNamedEntityWords.foreach(badNamedEntityCounts.incrementCount(_))
             processor.annotate(document)
             val oldEntities = document.sentences.head.entities.get
             val newEntities = {
@@ -121,6 +117,7 @@ object ExportNamedEntitiesApp extends App {
             }
             // == on Arrays doesn't work.
             val changed = words.indices.exists { index => newEntities(index) != oldEntities(index) }
+
             if (changed) {
               words.indices.foreach { index =>
                 printWriter.print(s"${words(index)}\t${newEntities(index)}\t${oldEntities(index)}\n")
@@ -134,7 +131,7 @@ object ExportNamedEntitiesApp extends App {
   }
   badNamedEntityWords.foreach { badNamedEntity =>
     val key = badNamedEntity
-    val value = counter.getCount(key)
+    val value = badNamedEntityCounts.getCount(key)
 
     println(s"${key.mkString(" ")}\t$value")
   }
