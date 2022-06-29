@@ -122,7 +122,8 @@ object ExportNamedEntitiesApp extends App {
 
             if (changed) {
               words.indices.foreach { index =>
-                printWriter.print(s"${words(index)}\t${oldEntities(index)}\t${newEntities(index)}\n")
+//                printWriter.print(s"${words(index)}\t${oldEntities(index)}\t${newEntities(index)}\n")
+                printWriter.print(s"${words(index)}\t${newEntities(index)}\n")
               }
               printWriter.print("\t\n")
             }
