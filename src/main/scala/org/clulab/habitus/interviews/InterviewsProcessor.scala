@@ -73,8 +73,7 @@ object InterviewsProcessor {
     val isLocal = kbs.forall(new File(resourceDir, _).exists)
     val lexiconNer = LexiconNER(kbs,
       Seq(
-        true, // case insensitive
-        true
+        true // case insensitive match for actors
       ),
       if (isLocal) Some(resourceDir) else None
     )
