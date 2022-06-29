@@ -2,7 +2,6 @@ package org.clulab.habitus.apps
 
 import org.clulab.dynet.Utils
 import org.clulab.habitus.HabitusProcessor
-import org.clulab.processors.clu.CluProcessor
 import org.clulab.sequences.LexiconNER
 import org.clulab.struct.Counter
 import org.clulab.utils.Closer.AutoCloser
@@ -13,33 +12,33 @@ import java.io.File
 import scala.util.{Failure, Try}
 
 object ExportNamedEntitiesApp extends App {
-  val inputFileName = args.lift(0).getOrElse("../docs/animate_sent_new.tsv")
-  val outputFileName = args.lift(1).getOrElse("../docs/animate_sent_new.conll")
+//  val inputFileName = args.lift(0).getOrElse("../docs/animate_sent_new.tsv")
+//  val outputFileName = args.lift(1).getOrElse("../docs/animate_sent_new.conll")
 
 //  val inputFileName = args.lift(0).getOrElse("../docs/animate_sent3.tsv")
 //  val outputFileName = args.lift(1).getOrElse("../docs/animate_sent3.conll")
 
-  val useHabitus = true
-
-  def newLexiconNer(): LexiconNER = LexiconNER(
-    Seq(
-      "lexicons/FERTILIZER.tsv", // VariableProcessor
-      "lexicons/CROP.tsv",       // VariableProcessor
-      "lexicons/ACTOR.tsv"       // BeliefProcessor & InterviewsProcessor
-    ),
-    Seq(
-      true, // FERTILIZER is case insensitive.
-      true, // CROP
-      true  // ACTOR
-    ),
-    None
-  )
+  // This one is a combination of the two above.
+  val inputFileName = args.lift(0).getOrElse("../docs/animate_sent_new_3.tsv")
+  val outputFileName = args.lift(1).getOrElse("../docs/animate_sent_new_3.conll")
 
   val processor = {
-    Utils.initializeDyNet()
+    val lexiconNER = LexiconNER(
+      Seq(
+        "lexicons/FERTILIZER.tsv", // VariableProcessor
+        "lexicons/CROP.tsv",       // VariableProcessor
+        "lexicons/ACTOR.tsv"       // BeliefProcessor & InterviewsProcessor
+      ),
+      Seq(
+        true, // FERTILIZER is case insensitive.
+        true, // CROP
+        true  // ACTOR
+      ),
+      None
+    )
 
-    if (useHabitus) new HabitusProcessor(Some(newLexiconNer()), filter = false)
-    else new CluProcessor()
+    Utils.initializeDyNet()
+    new HabitusProcessor(Some(lexiconNER), filter = false)
   }
   val badNamedEntities = Array(
     "ssc",
@@ -48,11 +47,11 @@ object ExportNamedEntitiesApp extends App {
     "however",
     "weekly monitoring",
     "north zone",
-    "( source : weekly tracking , matam delegation ) . development", // This text does not exist!
+    "( source : weekly tracking , matam delegation ) .", // development", // This text does not exist!
     "cold dry",
     "left bank of the senegal",
     "fax", // This text does not exist!
-    "kollangal", // This text does not exist!
+    "kollangal",
     "bakel delegationii . 2 . development", // This text does not exist.
     "( year2 lm12 ) : forecasts",
     "source : weekly",
@@ -65,14 +64,15 @@ object ExportNamedEntitiesApp extends App {
     "pos",
     "imv",
     "dry season",
-    // "dpv <- correct but unimportant",
-    "i", // This text does not exist!
+    "dpv",
+    "i",
     "( yr3 lm12 ) : development",
-    "i . 2 development", // This text does not exist.
+    "i.2 development",
     "financing of the agricultural production ( fpa )"
   )
   val badNamedEntityWords = badNamedEntities.map(_.split(' '))
-  val badNamedEntityCounts = new Counter[Seq[String]]()
+  val badNamedEntityFoundCounts = new Counter[Seq[String]]()
+  val badNamedEntityCorrectedCounts = new Counter[Seq[String]]()
 
   Sourcer.sourceFromFile(new File(inputFileName)).autoClose { source =>
     val tsvReader = new TsvReader()
@@ -82,7 +82,7 @@ object ExportNamedEntitiesApp extends App {
       source.getLines.drop(1).foreach { line =>
         println(line)
         val Array(_ /*animate*/, _ /*correct*/, _ /*ranking*/, _ /*comments*/, text) = tsvReader.readln(line)
-        val document = processor.mkDocument(text)
+        val document = processor.mkDocumentWithRestoreCase(text) // .mkDocument(text)
         val trial =
             if (document.sentences.length > 0) {
               val trial = Try { processor.annotate(document) }
@@ -95,11 +95,11 @@ object ExportNamedEntitiesApp extends App {
               Failure(new RuntimeException("There should be sentences."))
 
         if (trial.isSuccess && document.sentences.length == 1) {
-          val words = document.sentences.head.words
+          val words = document.sentences.head.words.map(_.toLowerCase) // because of restoreCase
           val foundBadNamedEntityWords = badNamedEntityWords.filter(words.containsSlice(_))
 
           if (foundBadNamedEntityWords.nonEmpty) {
-            foundBadNamedEntityWords.foreach(badNamedEntityCounts.incrementCount(_))
+            foundBadNamedEntityWords.foreach(badNamedEntityFoundCounts.incrementCount(_))
             processor.annotate(document)
             val oldEntities = document.sentences.head.entities.get
             val newEntities = {
@@ -107,10 +107,12 @@ object ExportNamedEntitiesApp extends App {
 
               foundBadNamedEntityWords.foreach { badNamedEntityWords =>
                 val index = words.indexOfSlice(badNamedEntityWords)
+                val range = Range(index, index + badNamedEntityWords.length)
+                val corrected = range.exists { index => oldEntities(index) != "O" }
 
-                index.until(index + badNamedEntityWords.length).foreach { index =>
-                  if (newEntities(index) != "O")
-                    newEntities(index) = "O"
+                if (corrected) {
+                  range.foreach { index => newEntities(index) = "O" }
+                  badNamedEntityCorrectedCounts.incrementCount(badNamedEntityWords)
                 }
               }
               newEntities
@@ -120,7 +122,7 @@ object ExportNamedEntitiesApp extends App {
 
             if (changed) {
               words.indices.foreach { index =>
-                printWriter.print(s"${words(index)}\t${newEntities(index)}\t${oldEntities(index)}\n")
+                printWriter.print(s"${words(index)}\t${oldEntities(index)}\t${newEntities(index)}\n")
               }
               printWriter.print("\t\n")
             }
@@ -129,10 +131,12 @@ object ExportNamedEntitiesApp extends App {
       }
     }
   }
+  println("key\tfound\tcorrected")
   badNamedEntityWords.foreach { badNamedEntity =>
     val key = badNamedEntity
-    val value = badNamedEntityCounts.getCount(key)
+    val found = badNamedEntityFoundCounts.getCount(key)
+    val corrected = badNamedEntityCorrectedCounts.getCount(key)
 
-    println(s"${key.mkString(" ")}\t$value")
+    println(s"${key.mkString(" ")}\t$found\t$corrected")
   }
 }
