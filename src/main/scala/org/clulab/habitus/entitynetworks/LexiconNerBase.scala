@@ -40,7 +40,7 @@ class LexiconNerBase() {
       sentence.words.zip(sentence.entities.get).foreach { case (word, entity) =>
         printWriter.println(s"$word\t$entity")
       }
-      printWriter.println("\n")
+      printWriter.println
     }
   }
 
