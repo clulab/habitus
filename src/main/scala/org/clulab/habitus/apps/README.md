@@ -6,7 +6,7 @@
 * **ConditionalCaseApp** - Take a single input `.txt` file of unstructured text and split it into `.txt.preserved` and `.txt.restored` which contain either the same text or the text after case restoration.  In the process, the unstructured text is reformatted to have one sentence per line.  The output is not in tokenized format.  An attempt is made to preserve the whitespace.  The case restoration is more than what `processors` alone provides.  There is a `ConditionalHabitusProcessor` with a cutoff value that determines whether the `processors` version is used or not.
 
 
-* **ConditionalCaseMultipleFileApp** - Do the same thing as the `ConsitionalCaseApp` except on an entire directory of `.txt` files.
+* **ConditionalCaseMultipleFileApp** - Do the same thing as the `ConditionalCaseApp` except on an entire directory of `.txt` files.
 
 
 * **EvaluateCaseApp** - From a single unstructured text file specified as a parameter, create a report with extension `.evaluated.tsv` detailing how many of the words in the text file have different kinds of capitalization conventions after they have been passed through `processors` both with and without case restoration.  The output is used to figure out the appropriate cutoff value for the `ConditionalCaseApps`.
