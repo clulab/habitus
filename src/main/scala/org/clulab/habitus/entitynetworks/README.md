@@ -5,7 +5,7 @@ Here's what the Apps in this directory do:
 
 * **LexiconNerMultipleFile** - Do the same thing as the above except on an entire directory of files with extension `.txt.restored`.  The pipeline for these files starting with the PDFs to retraining the NER is such:
 
-    1. Fetch the PDFs from Google Drive.  There are 50 and they should already have been translated to English.
+    1. Fetch the PDFs from Google Drive.  There are 100 and they should already have been translated to English.
     1. Convert them to text using the [pdf2txt project](https://github.com/clulab/pdf2txt).  Along with the input and output directories, specify `-converter scienceparse -case false`.  If you use the `jar` file, please note the version number used: it is displayed in response to the `--help` argument.  If you use `sbt`, note the `git` tag or commit hash so that the conversion can be repeated.
     1. Run the `ConditionalCaseMutlipleFileApp` which will correct the case and output a file with extension `.txt.restored` with one tokenized sentence per line.
     1. Use the `App` documented here, `LexiconNerMultipleFile`, to extract the entities.
