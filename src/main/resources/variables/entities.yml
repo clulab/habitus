@@ -113,9 +113,9 @@
   priority: ${rulepriority}
   label: Quantity
   type: token
-  example: "The areas sown for this 2021/2022 wintering campaign are..."
+  example: "P and K concentrations in irrigation and floodwater were estimated at 0.1 mg P l-1 and 3.2 mg K l-1"
   pattern: |
-    [word = /^(\d\d){1,2}(-)(\d\d){1,2}$/]
+    /(?i)(l-)/ [lemma=0-9]
 
 - name: area-size-entity-rule
   priority: ${rulepriority}
