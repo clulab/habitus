@@ -47,10 +47,10 @@ class LexiconNerBase() {
   def process(source: Source, printWriter: PrintWriter): Unit = {
     val tokensOnLines = source
       .getLines()
-      .map(_.trim.split("\\s+"))
+      .map(_.trim.split("\\s+")) // We need a real tokenizer here!
       .filter(_.nonEmpty)
-      .map(_.toIterable)
-      .toIterable
+      .map(_.toIterable) // It is otherwise an Array.
+      .toIterable // It is otherwise an Iterator
 
     parseAndPrint(tokensOnLines, printWriter)
   }
