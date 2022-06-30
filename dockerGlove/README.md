@@ -35,7 +35,7 @@ To replace the default arguments with your own, follow this template:
 docker run --env _JAVA_OPTIONS=[javaMemorySpec] --volume [hostInputDir]:[containerInputDir] --volume [hostOutputDir]:[containerOutputDir] --user [user] habitus:latest [containerInputDir] [containerOutputDir]
 ```
 
-Several output files are produced.  The most important is `vectors.txt`, because it contains the trained vectors.  Also of interest is `vocab.txt` which contains word counts which can be spot checked for problems.  `glove.txt` contains tokenized text for all the documents, so it should be treated as private and not returned.
+Several output files are produced.  The most important is `vectors.txt`, because it contains the trained vectors.  Also of interest is `vocab.txt` which contains word counts that can be spot checked for problems.  `glove.txt` contains tokenized text for all the documents, so it should be treated as private and not returned.
 
 
 
