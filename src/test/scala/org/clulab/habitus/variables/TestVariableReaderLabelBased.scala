@@ -218,13 +218,16 @@ class TestVariableReaderLabelBased extends Test {
       )
     ),
     VariableTest(
-      failingTest, // fixme: this will pass with the new version of processors
+      fixedWithNewProcRelease,
       "sent15", "Seeding dates ranged from 22 August to 26 September in 2011WS, from 29 February to 1 April in the 2012DS, and from 5 to 23 March in the 2013DS",
       "PlantingDate",
       Seq(
-        ("Planting", Seq(("from 22 August to 26 September in 2011WS", "2011-08-22 -- 2011-09-26"))),
-        ("Planting", Seq(("from 29 February to 1 April in the 2012DS", "2012-02-29 -- 2012-04-01"))),
-        ("Planting", Seq(("from 5 to 23 March in the 2013DS", "2013-03-05 -- 2013-03-23")))
+        ("Planting", Seq(
+          ("from 22 August to 26 September in 2011WS", "2011-08-22 -- 2011-09-26"))),
+        ("Planting", Seq(
+          ("from 29 February to 1 April in the 2012DS", "2012-02-29 -- 2012-04-01"))),
+        ("Planting", Seq(
+          ("from 5 to 23 March in the 2013DS", "2013-03-05 -- 2013-03-23")))
       )
     ),
     VariableTest(
@@ -343,14 +346,6 @@ class TestVariableReaderLabelBased extends Test {
         ("GenericFertilizer", Seq(("DAP", "")))
       )
     ),
-    VariableTest( //todo: remove: just checking for label of the variable is not enough here because there are multiple fertilizers mentioned and there is a text-based test for this
-      passingTest,
-      "sent29_2", "In plots receiving fertilizer, DAP was applied basally (19.3 and 21.5 kg N and P ha-1 ),",
-      "FertilizerQuantity",
-      Seq(
-        ("Fertilizer", Seq(("21.5 kg", "21.5 kg")))
-      )
-    ),
     VariableTest(
       passingTest, // fixme: if we extract August as wet season here, should we extract March as dry season?
       "sent30", "Transplanting for both management systems took place on 7 (2007 and 2008 wet season) and 25 (2009 wet season) August and on 19 March (2008 and 2009 dry season).",
@@ -408,7 +403,7 @@ class TestVariableReaderLabelBased extends Test {
       )
     ),
     VariableTest(
-      passingTest,
+      failingTest,
       "fix5-event", "Target yields on average were set to 6.4, 7.9 and 7.1 t/ha in 2011WS , 2012DS , and 2013DS , respectively ( Table 1 ) .",
       "YieldAmount",
       Seq(

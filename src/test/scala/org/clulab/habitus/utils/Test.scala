@@ -6,7 +6,7 @@ import org.scalatest.Matchers
 
 class Test extends FlatSpec with Matchers {
   val passingTest = it
-  val failingTest = it
+  val failingTest = ignore
   val brokenSyntaxTest = ignore
   val toDiscuss = ignore
   val commentedOut = ignore

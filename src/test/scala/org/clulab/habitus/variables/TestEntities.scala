@@ -244,11 +244,10 @@ class TestEntities extends Test {
       )
     ),
     VariableTest(
-      failingTest, //fixme: should be fixed after the new processors is released
+      fixedWithNewProcRelease,
       "sent20",
       "Popular varieties in the wet season were Sahel 202 (65% of farmers) and Sahel 201 (30%), while 60% and 92% grew Sahel 108 in 2012DS and 2013DS, respectively.",
       Seq(
-        // FIXME, not an amount! -->  "108 in"
         "Crop" -> Seq("Sahel 108", "Sahel 202", "Sahel 201"),
         "GenericCrop" -> Seq("varieties"),
         "WetSeason" -> Seq("wet season")
@@ -310,12 +309,11 @@ class TestEntities extends Test {
     )
   ),
     VariableTest(
-      failingTest,
+      fixedWithNewProcRelease,
       "sent27",
       "Farmers used two rice cultivars (IR1529 and Jaya) during the 1997 WS, and exclusively IR13240-108-2-2-3 (released as Sahel 108 in Senegal in 1994) during the 1998 DS. All rice was direct-seeded.",
       Seq(
         "GenericCrop" -> Seq("cultivars"),
-        // `Sahel 108` getting extracted as `Sahel` only.
         "Crop" -> Seq("rice", "Sahel 108", "Jaya", "rice", "IR1529"),
         "Location" -> Seq("Senegal")
       )
@@ -470,7 +468,7 @@ class TestEntities extends Test {
     VariableTest(
       failingTest,
       "sent44",
-      "das days after sowing, Fert fertilizer treatment, with F1: recommended dose (80 kg N ha-1), i.e., 200 kg ha-1 NPK (15.15.15) at sowing + 100 kg ha-1 urea at 20 das + 50 kg ha-1 urea at 50 das. F2: F1/4 (20 kg N ha-1);",
+      "das days after sowing, Fert fertilizer treatment, with F1: recommended dose (80 kg N ha-1), i.e., 200 kg ha-1 NPK (15.15.15) at sowing + 100 kg ha-1 urea at 20 das + 50 kg ha-1 urea at 50 das. F2: F1/4 (20 kg N ha-1); C/V/P calibration/validation/projection.",
       Seq(
         "Fertilizer" -> Seq("N", "NPK", "urea", "urea" ),
         "FertilizerUse" -> Seq("fertilizer"),
@@ -493,14 +491,6 @@ class TestEntities extends Test {
       "The 21 cultivars used in the experiment were either hybrids, japonica, or indica type and came from various breeding centers ( Table 2 ) .",
       Seq(
         "Crop" -> Seq("japonica", "indica")
-      )
-    ),
-    VariableTest(
-      passingTest,
-      "Fix10",
-      "Target yields on average were set to 6.4 and 7.1 t/ha in 2011WS , 2012DS , and 2013DS , respectively ( Table 1 ) .",
-      Seq(
-        "Crop" -> Seq("Rice", "rice")
       )
     )
   )

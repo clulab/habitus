@@ -181,7 +181,7 @@ class TestEntitiesNorms extends Test {
       )
     ),
     VariableTest(
-      failingTest,
+      fixedWithNewProcRelease,
       "sent14",
       "timing of basal fertilizer application was on average 26, 33, and 26 days after sowing (DAS) in 2011WS, 2012DS, and 2013DS",
       Seq(
@@ -320,7 +320,7 @@ class TestEntitiesNorms extends Test {
       )
     ),
     VariableTest(
-      failingTest,
+      fixedWithNewProcRelease,
       "sent29",
       "Rice grain yield measured at maturity ranged from 2.7 t ha-1 to 7.1 t ha-1 , with an average of 4.8 t ha-1 .",
       Seq(
