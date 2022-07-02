@@ -29,9 +29,6 @@ class TestEntities extends Test {
       parsingResults.allMentions
     }
 
-
-
-
     def test(index: Int): Unit = {
       shouldable should s"filter by correct label(s) and value size of $name correctly" in {
         if (index == -1)

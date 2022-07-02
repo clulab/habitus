@@ -292,13 +292,13 @@ class TestEntitiesNorms extends Test {
       )
     ),
     VariableTest(
-      passingTest,
+      fixedWithNewProcRelease,
       "sent27",
       "das days after sowing, Fert fertilizer treatment, with F1: recommended dose (80 kg N ha-1), i.e., 200 kg ha-1 NPK (15.15.15) at sowing + 100 kg ha-1 urea at 20 das + 50 kg ha-1 urea at 50 das. F2: F1/4 (20 kg N ha-1); C/V/P calibration/validation/projection.",
       Seq(
         "Quantity" -> Seq(
           ("80 kg N ha-1", "80.0 kg n ha-1"),
-          ("200 kg", "200.0 kg"),
+          ("200 kg", "200.0 kg"), // fixme: not currently solvable---handling a crucial case in processors resulted in the loss of ha-1 here
           ("+ 100 kg ha-1", "100.0 kg/ha"),
           ("+ 50 kg ha-1", "50.0 kg/ha"),
           ("20 kg N ha-1", "20.0 kg n ha-1")
