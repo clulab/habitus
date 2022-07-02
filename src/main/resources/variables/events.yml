@@ -232,21 +232,6 @@
     trigger = @GenericFertilizer
     value:Fertilizer = (</compound/ | /compound/) [!lemma = /usage/]
 
-#- name: ${label}-yield-event-1
-#  priority: ${rulepriority}
-#  label: YieldAmount
-#  type: token
-#  pattern: |
-#    @variable:Yield []{,15} @value:Quantity
-#
-#- name: ${label}-yield-event
-#  priority: ${rulepriority}
-#  label: YieldAmount
-#  type: token
-#  action: splitIntoBinary
-#  pattern: |
-#    @variable:Yield []{,15} @value:Quantity  ([]*? (","|"and") @value:Quantity)*
-
 - name: ${label}-yield-event-1
   priority: ${rulepriority}
   label: YieldAmount

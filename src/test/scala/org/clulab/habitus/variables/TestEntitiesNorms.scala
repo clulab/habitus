@@ -26,7 +26,6 @@ class TestEntitiesNorms extends Test {
       val parsingResults = vp.parse(text)
       // in this tester, we want to get all mentions, including entity ones, so use parsingResults.allMentions
       // instead of parsingResults.targetMentions
-      for (m <- parsingResults.allMentions) println("AM: " + m.label + " " + m.text)
       parsingResults.allMentions
     }
 
@@ -40,7 +39,6 @@ class TestEntitiesNorms extends Test {
 
         // get all mentions from text
         val mentions = getMentions(text)
-//        for (m <- mentions) println("m: " + m.label + " " + m.text )
 
         // iterate over label, value pairs
         for ((label, values) <- desired){

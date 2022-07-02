@@ -41,7 +41,6 @@ class VariableShell(val masterResource: String) extends ReloadableShell {
     val parsingResults = vp.get.parse(text)
     val doc = parsingResults.document
     val mentions = parsingResults.allMentions
-//    for (m <- mentions) println("shell m: " + m.label + " " + m.text + " " + m.norms.get.mkString("::"))
     val contentMentions = parsingResults.targetMentions
 
     // note: to see attachment, display contentMentions

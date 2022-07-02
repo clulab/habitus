@@ -26,7 +26,6 @@ class TestEntities extends Test {
       val parsingResults = vp.parse(text)
       // in this tester, we want to get all mentions, including entity ones, so use parsingResults.allMentions
       // instead of parsingResults.targetMentions
-      for (m <- parsingResults.allMentions) println("EM: " + m.label + " " + m.text)
       parsingResults.allMentions
     }
 

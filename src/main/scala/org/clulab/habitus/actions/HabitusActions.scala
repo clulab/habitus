@@ -171,27 +171,13 @@ class HabitusActions extends Actions {
     }
   }
   def splitIntoBinary(mentions: Seq[Mention]): Seq[Mention] = {
-    println("HERE " + mentions.length)
-    for (m <- mentions) {
-      println("MM: " + m.label + " " + m.text + " " + m.foundBy)
-      for (a <- m.arguments) {
-        for (aa <- a._2) println("\t" + a._1 + " " + aa.label + " " + aa.text + " " + m.foundBy)
-      }
-    }
+
     val (targets, other) = mentions.partition( m => {
       val valueLabels = m.arguments("value").map(_.label)
       valueLabels.length > 1 &&
       valueLabels.distinct.length == 1
       }
     )
-    println("LEN TARGETS: " + targets.length)
-
-    for (m <- targets) {
-      println("ME: " + m.label + " " + m.text)
-      for (a <- m.arguments) {
-        for (aa <- a._2) println(a._1 + " " + " " + aa.label +" " + aa.text )
-      }
-    }
     val splitTargets = for {
       m <- targets
       value <- m.arguments("value")

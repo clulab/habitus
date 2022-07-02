@@ -54,7 +54,7 @@ trait ContextExtractor {
       "weeds"
     } else if (lemmas.exists(l => disasterLemmas.contains(l))) {
       "natural_disaster"
-    } else "UNK" //sentVerbs.filter(w => !stopVerbs.contains(w)).mkString("::") // for checking verbal triggers
+    } else "UNK"
     process
   }
 
