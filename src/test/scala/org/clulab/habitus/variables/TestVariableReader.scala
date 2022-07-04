@@ -193,14 +193,12 @@ class TestVariableReader extends Test {
       Seq(("Sowing", Seq(("April 7, 2001", "2001-04-07"))))
     ),
     VariableTest(
-      passingTest,
+      fixedWithNewProcRelease,
       "sent15_4", "The first sowing dates started on July 1st in 2010 and on July 8th in 2011",
       "PlantingDate",
       Seq(
-        ("sowing dates", Seq(("July 1st", "XXXX-07-01"))),
-        ("sowing dates", Seq(("2010", "2010-XX-XX")))
-//        ("sowing dates", Seq(("July 8th", "XXXX-07-08"))),
-//        ("sowing dates", Seq(("2011", "2011-XX-XX")))
+        ("sowing dates", Seq(("July 1st in 2010", "2010-07-01"))),
+        ("sowing dates", Seq(("July 8th in 2011", "2011-07-08")))
       )
     ),
     VariableTest(
@@ -316,8 +314,9 @@ class TestVariableReader extends Test {
       passingTest,
       "sent16_4", "In the 1998WS, farmers sowed Jaya between 20 June and 1 July",
       "PlantingEvent",
-      // The second one of these wasn't initially tested.
-      Seq(("sowed",Seq(("Jaya", ""), ("between 20 June and 1 July", "XXXX-06-20 -- XXXX-07-01"))))
+      Seq(
+        ("sowed",Seq(("Jaya", ""),
+        ("between 20 June and 1 July", "XXXX-06-20 -- XXXX-07-01"))))
     ),
     VariableTest(
       passingTest,
@@ -555,26 +554,20 @@ class TestVariableReader extends Test {
       )
     ),
     VariableTest(
-      passingTest,
-      "sent21_11", "2 Others : cassava , melon , peanuts , eggplant , watermelon , pepper , carrot , cabbage , jaxatu , beans , bissap , banana plantation , fruit trees , white onion , cucumber , squash …",
-      "None",
-      Seq.empty // what is this testing for?
+      passingTest, // this is a toy example to check for property assignments
+      "sent21_12_1", "We use Aiwu (short duration, slender grain), I Kong Pao (short duration, bold grain) and IR1529 and Jaya (medium duration, slender grain).",
+      "PropertyAssignment",
+      Seq(
+        ("Aiwu", Seq(("short duration", ""))),
+        ("Aiwu", Seq(("slender grain", ""))),
+        ("I Kong Pao", Seq(("short duration", ""))),
+        ("I Kong Pao", Seq(("bold grain", ""))),
+        ("IR1529", Seq(("medium duration", ""))),
+        ("IR1529", Seq(("slender grain", ""))),
+        ("Jaya", Seq(("medium duration", ""))),
+        ("Jaya", Seq(("slender grain", "")))
+      )
     ),
-//    VariableTest(
-//      passingTest, // this is a toy example to check for property assignments
-//      "sent21_12_1", "We use Aiwu (short duration, slender grain), I Kong Pao (short duration, bold grain) and IR1529 and Jaya (medium duration, slender grain).",
-//      "PropertyAssignment",
-//      Seq(
-//        ("Aiwu", Seq(("short duration", ""))),
-//        ("Aiwu", Seq(("slender grain", ""))),
-//        ("I Kong Pao", Seq(("short duration", ""))),
-//        ("I Kong Pao", Seq(("bold grain", ""))),
-//        ("IR1529", Seq(("medium duration", ""))),
-//        ("IR1529", Seq(("slender grain", ""))),
-//        ("Jaya", Seq(("medium duration", ""))),
-//        ("Jaya", Seq(("slender grain", "")))
-//      )
-//    ),
     VariableTest(
       failingTest,
       // this is a real sentence corresponding to the toy sentence in 21_12_1
@@ -608,18 +601,15 @@ class TestVariableReader extends Test {
       passingTest,
       "fix3", "Diagnosis of the 1999 and 2000 wet seasons In the 1999 and 2000 wet seasons , the potential rice grain yields were between 8.8 t ha-1 and 9.2 t ha-1 ( i.e. about 1 t ha-1 more than in the 1998WS ) whilst the average of the actual yield increased greatly",
       "WetSeasonAssignment",
-      Seq(
-        ("wet season", Seq(("2000", "2000-XX-XX -- 2000-XX-XX")))
-      ) // todo: add a DateRange mention type to capture 2000 wet season with a norm 2000-XX-XX -- 2000-XX-XX
+      Seq.empty // todo: add a DateRange mention type to capture 2000 wet season with a norm 2000-XX-XX -- 2000-XX-XX
     ),
     VariableTest(
-      failingTest,
+      fixedWithNewProcRelease,
       "fix3_1", "Diagnosis of the 1999 and 2000 wet seasons In the 1999 and 2000 wet seasons , the potential rice grain yields were between 8.8 t ha-1 and 9.2 t ha-1 ( i.e. about 1 t ha-1 more than in the 1998WS ) whilst the average of the actual yield increased greatly ( Tab .",
       "YieldAmount",
       Seq(
-        ("yields", Seq(("1 t ha-1", "1.0 t/ha"))),
-        ("yields", Seq(("8.8 t ha-1 and 9.2 t ha-1", "8.8 -- 9.2 t/ha")))
-        //FIXME; this is a failing test because the range doesn't extract except the 8.8 t ha-1
+        ("yields", Seq(("between 8.8 t ha-1 and 9.2 t ha-1", "8.8 -- 9.2 t/ha"))),
+        ("yields", Seq(("1 t ha-1", "1.0 t/ha")))
       )
     ),
     VariableTest(

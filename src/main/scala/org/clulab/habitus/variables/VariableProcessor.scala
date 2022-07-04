@@ -37,7 +37,7 @@ class VariableProcessor(val processor: CluProcessor,
     // extract mentions from annotated document
     val mentions = extractor.extractFrom(doc).sortBy(m => (m.sentence, m.getClass.getSimpleName))
 
-    val (tbms, relsAndEvents) = mentions.partition(_.isInstanceOf[TextBoundMention])
+    val (tbms, _) = mentions.partition(_.isInstanceOf[TextBoundMention])
     // both events and text bound mentions have to be passed to the method because context info comes from tbms,
     // but only event/relation mentions are returned
     val contentMentionsWithContexts = contextExtractor.getContextPerMention(mentions, doc)

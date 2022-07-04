@@ -76,7 +76,7 @@
   label: Date
   type: token
   pattern: |
-    [entity='B-DATE'] [entity='I-DATE']*
+    [entity='B-DATE' & !mention=Avoid] [entity='I-DATE']* 
 
 - name: value-from-date-2
   priority: ${rulepriority}
@@ -109,13 +109,13 @@
   pattern: |
     [entity='B-MEASUREMENT'] [entity = 'I-MEASUREMENT']*
 
-- name: measurement-rule-mg
-  priority: ${rulepriority}
-  label: Quantity
-  type: token
-  example: "P and K concentrations in irrigation and floodwater were estimated at 0.1 mg P l-1 and 3.2 mg K l-1"
-  pattern: |
-    /(?i)(l-)/ [lemma=0-9]
+#- name: measurement-rule-mg
+#  priority: ${rulepriority}
+#  label: Quantity
+#  type: token
+#  example: "P and K concentrations in irrigation and floodwater were estimated at 0.1 mg P l-1 and 3.2 mg K l-1"
+#  pattern: |
+#    /(?i)(l-)/ [lemma=0-9]
 
 - name: area-size-entity-rule
   priority: ${rulepriority}
@@ -153,7 +153,7 @@
   label: WetSeason
   type: token
   pattern: |
-    /(?i)(wet|rainy )/ []*? [lemma = /\bseason\b/]
+    /(?i)(wet|rainy)/ []{,2}? [lemma = /\bseason\b/]
 
 - name: dry-season
   priority: ${rulepriority}

@@ -171,6 +171,7 @@ class HabitusActions extends Actions {
     }
   }
   def splitIntoBinary(mentions: Seq[Mention]): Seq[Mention] = {
+
     val (targets, other) = mentions.partition( m => {
       val valueLabels = m.arguments("value").map(_.label)
       valueLabels.length > 1 &&
@@ -186,13 +187,16 @@ class HabitusActions extends Actions {
   }
 
   val labelToAppropriateUnits = Map(
-    "Quantity" -> Set("t/ha", "kg/ha", "kg", "d", "cm", "mg/l"),
+    "Quantity" -> Set("t/ha", "kg/ha", "kg", "d", "cm", "mg/l", "kg n ha-1"),
     "AreaSize" -> Set("ha")
   )
 
+  def hasLetters(string: String): Boolean = {
+    string.exists(ch => ch.isLetter || ch.toString == "/" )
+  }
   def measurementIsAppropriate(m: Mention): Boolean = {
     // check if any of the possible units shows up in the norm
-    val probablyUnit = m.norms.get.head.split("\\s").last // e.g., get "m2" from "6 m2"; assume value is separated from unit with a space and unit is one token
+    val probablyUnit = m.norms.get.head.split("\\s").filter(hasLetters).mkString(" ")// e.g., get "m2" from "6 m2"
     labelToAppropriateUnits
       .getOrElse(m.label, throw new RuntimeException(s"Unknown measurement label ${m.label}"))(probablyUnit)
   }

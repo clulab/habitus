@@ -9,6 +9,7 @@ class TestEntitiesNorms extends Test {
   // checks entity mentions:
   // the variable argument should be a text bound mention of the correct label
   // the value argument should have the correct expected extraction.
+  // Here, we only test entities that have norms (numeric entities)
   val vp: VariableProcessor = VariableProcessor()
 
   case class VariableTest(
@@ -111,7 +112,7 @@ class TestEntitiesNorms extends Test {
     VariableTest(
       passingTest,
       "sent6",
-      "Average yield reached 7.2 t ha-1 in 1999 and 8.2 t ha–1 in 2000",
+      "Average yield reached 7.2 t ha-1 in 1999 and 8.2 t ha-1 in 2000",
       Seq(
         "Quantity" -> Seq(("7.2 t ha-1", "7.2 t/ha"), ("8.2 t ha-1", "8.2 t/ha"))
       )
@@ -158,16 +159,15 @@ class TestEntitiesNorms extends Test {
       )
     ),
     VariableTest(
-      // fixme: will need to adjust vague season rules in processors to allow for the definite article
-      passingTest,
+      fixedWithNewProcRelease,
       "sent12",
       "Seeding dates ranged from 22 August to 26 September in 2011WS, from 29 February to 1 April in the 2012DS, and from 5 to 23 March in the 2013DS.",
       Seq(
-        "DateRange" -> Seq(("from 22 August to 26 September in 2011WS","2011-08-22 -- 2011-09-26"),
-                            ("from 29 February to 1 April", "XXXX-02-29 -- XXXX-04-01"),
-                            ("from 5 to 23 March", "XXXX-03-05 -- XXXX-03-23"),
-                            ("2012DS","2012-XX-XX -- 2012-XX-XX"),
-                            ("2013DS","2013-XX-XX -- 2013-XX-XX"))
+        "DateRange" -> Seq(
+          ("from 22 August to 26 September in 2011WS","2011-08-22 -- 2011-09-26"),
+          ("from 29 February to 1 April in the 2012DS", "2012-02-29 -- 2012-04-01"),
+          ("from 5 to 23 March in the 2013DS", "2013-03-05 -- 2013-03-23")
+        )
       )
     ),
     VariableTest(
@@ -179,11 +179,11 @@ class TestEntitiesNorms extends Test {
       )
     ),
     VariableTest(
-      passingTest,
+      fixedWithNewProcRelease,
       "sent14",
       "timing of basal fertilizer application was on average 26, 33, and 26 days after sowing (DAS) in 2011WS, 2012DS, and 2013DS",
       Seq(
-        "Quantity" -> Seq(("26 days", "26.0 d"))
+        "Quantity" -> Seq(("26", "26.0 d"), ("33", "33.0 d"), ("26 days", "26.0 d"))
       )
     ),
     VariableTest(
@@ -272,10 +272,14 @@ class TestEntitiesNorms extends Test {
     VariableTest(
       failingTest,
       "sent25",
-      "In plots receiving fertilizer, DAP was applied basally (19.3 and 21.5 kg N and P ha-1 ), and three urea splits were broadcasted into 1–5 cm of water (101.3 kg N ha-1 ; 40% at early-tillering, 40% at pan- icle initiation, and 20% at heading)",
+      "In plots receiving fertilizer, DAP was applied basally (19.3 and 21.5 kg N and P ha-1 ), and three urea splits were broadcasted into 1-5 cm of water (101.3 kg N ha-1 ; 40% at early-tillering, 40% at panicle initiation, and 20% at heading)",
       Seq(
         // FIXME; `19.3 and 21.5 kg` not extracted fully (without 19.3). Also some wrong Quantity extractions. Discuss with Masha.
-        "Quantity" -> Seq(("101.3 kg", "101.3 kg"), ("1–5 cm", "1.0 -- 5.0 cm"), ("21.5 kg", "21.5 kg")),
+        "Quantity" -> Seq(
+          ("101.3 kg", "101.3 kg"),
+          ("1-5 cm", "1.0 -- 5.0 cm"),
+          ("21.5 kg", "21.5 kg")
+        )
       )
     ),
     VariableTest(
@@ -288,13 +292,17 @@ class TestEntitiesNorms extends Test {
       )
     ),
     VariableTest(
-      failingTest,
+      fixedWithNewProcRelease,
       "sent27",
-      "das days after sowing, Fert fertilizer treatment, with F1: recommended dose (80 kg N ha-1), i.e., 200 kg ha-1 NPK (15.15.15) at sowing + 100 kg ha-1 urea at 20 das + 50 kg ha-1 urea at 50 das. F2: F1/4 (20 kg N ha-1);",
+      "das days after sowing, Fert fertilizer treatment, with F1: recommended dose (80 kg N ha-1), i.e., 200 kg ha-1 NPK (15.15.15) at sowing + 100 kg ha-1 urea at 20 das + 50 kg ha-1 urea at 50 das. F2: F1/4 (20 kg N ha-1); C/V/P calibration/validation/projection.",
       Seq(
-        // FIXME; Extraction of quantities with `+` signs here.
-        "Quantity" -> Seq(("80 kg N ha-1", "80.0 kg n ha-1"), ("200 kg ha-1", "200.0 kg/ha"),
-                          ("100 kg ha-1", "100.0 kg/ha"), ("50 kg ha-1", "50.0 kg/ha"), (" 20 kg N ha-1", "20.0 kg n ha-1"))
+        "Quantity" -> Seq(
+          ("80 kg N ha-1", "80.0 kg n ha-1"),
+          ("200 kg", "200.0 kg"), // fixme: not currently solvable---handling a crucial case in processors resulted in the loss of ha-1 here
+          ("+ 100 kg ha-1", "100.0 kg/ha"),
+          ("+ 50 kg ha-1", "50.0 kg/ha"),
+          ("20 kg N ha-1", "20.0 kg n ha-1")
+        )
       )
     ),
     VariableTest(
@@ -302,10 +310,112 @@ class TestEntitiesNorms extends Test {
       "sent28",
       "Soil properties before the experiment were 0.87 g total N kg-1 and 9.6 g total C kg-1 ( analysis with a Vario Max Dry Combustion Analyzer , Elementar Americas , Mt. Laurel , NJ following the IOS ( 1998 ) ) , 5.81 kg P-Olsen kg-1 ( measured following extraction in 0.5 M NaHCO3 at pH 8.5 ( Olsen et al ., 1954 ) ) , 0.47 cmol exchangeable K kg-1 ( atomic absorption spectroscopy after extraction in 1 M NH4OAc at pH 7 ) , pH of 4.76 ( 1:2.5 H20 saturated paste ) and EC 0.33 dS m-1 ( 1:5 H20 saturated paste ) .",
       Seq(
-        "Quantity" -> Seq(("0.87 g N kh-1", "0.87 g/kg"), ("9.6 g C kg-1", "9.6 g/kg"),
-          ("5.81 kg P-Olsen kg-1", "5.81 kg"))
+        "Quantity" -> Seq(
+          ("0.87 g N kg-1", "0.87 g/kg"),
+          ("9.6 g C kg-1", "9.6 g/kg"),
+          ("5.81 kg P-Olsen kg-1", "5.81 kg/kg")
+        )
       )
     ),
+    VariableTest(
+      fixedWithNewProcRelease,
+      "sent29",
+      "Rice grain yield measured at maturity ranged from 2.7 t ha-1 to 7.1 t ha-1 , with an average of 4.8 t ha-1 .",
+      Seq(
+        "Quantity" -> Seq(
+          ("from 2.7 t ha-1 to 7.1 t ha-1", "2.7 -- 7.1 t/ha"),
+          ("4.8 t ha-1", "4.8 t/ha"))
+      )
+    ),
+    // Following the text extraction analyses.
+    VariableTest(
+      fixedWithNewProcRelease,
+      "Fix2",
+      "Diagnosis of the 1999 and 2000 wet seasons In the 1999 and 2000 wet seasons , the potential rice grain yields were between 8.8 t ha-1 and 9.2 t ha-1 ( i.e. about 1 t ha-1 more than in the 1998WS ) whilst the average of the actual yield increased greatly ( Tab .",
+      Seq(
+        "Quantity" -> Seq(
+          ("between 8.8 t ha-1 and 9.2 t ha-1", "8.8 -- 9.2 t/ha"),
+          ("1 t ha-1", "1.0 t/ha")
+        )
+      )
+    ),
+    VariableTest(
+      fixedWithNewProcRelease,
+      "Fix3",
+      "The highest yield ( 9.3 t ha-1 ) is obtained by Brodt et al. ( 2014 ) in California with only 170 kg N ha-1 ; followed by Xu et al. ( 2020 ) and Zhang et al. ( 2021 ) , both with yields > 8 t ha-1 in Hubei Province ( China ) .",
+      Seq(
+        "Quantity" -> Seq(
+          ("9.3 t ha-1", "9.3 t/ha"),
+          ("170 kg N ha-1", "170.0 kg n ha-1"), // fixme: check processors for why the norm is like this
+          ("8 t ha-1", "8.0 t/ha")
+        )
+      )
+    ),
+    VariableTest(
+      fixedWithNewProcRelease,
+      "Fix4",
+      "Potential yield of all the varieties in the Senegal River delta was estimated at 9 and 10 t/ha in wet and dry seasons , respectively , and potential yield was taken as 8 t/ha for both seasons in the middle valley .",
+      Seq(
+        "Quantity" -> Seq(
+          ("9", "9.0 t/ha"),
+          ("10 t/ha", "10.0 t/ha"),
+          ("8 t/ha", "8.0 t/ha")
+        )
+      )
+    ),
+    VariableTest(
+      fixedWithNewProcRelease,
+      "Fix5",
+      // FIXME; maybe wrong parsing here and hence getting wrong extraction.
+      "Target yields on average were set to 6.4, 7.9, and 7.1 t/ha in 2011WS , 2012DS , and 2013DS , respectively ( Table 1 ) .",
+      Seq(
+        "Quantity" -> Seq(
+          ("6.4", "6.4 t/ha"),
+          ("7.9", "7.9 t/ha"),
+          ("7.1 t/ha", "7.1 t/ha")
+        ),
+        "DateRange" -> Seq(
+          ("2011WS", "2011-XX-XX -- 2011-XX-XX"),
+          ("2012DS", "2012-XX-XX -- 2012-XX-XX"),
+          ("2013DS", "2013-XX-XX -- 2013-XX-XX")
+        )
+      )
+    ),
+    VariableTest(
+      fixedWithNewProcRelease,
+      "Fix6",
+      "With RCP2.6 and consideration of CO2 effect , rice yield will increase from 3600 in 2000-2009 to 4500 kg ha-1 in 2090-2099 ( Fig. 4a ) .",
+      Seq(
+        "Quantity" -> Seq(
+          ("3600", "3600.0 kg/ha"),
+          ("4500 kg ha-1", "4500.0 kg/ha")
+        ),
+        "DateRange" -> Seq(
+          ("2000-2009", "2000-XX-XX -- 2009-XX-XX"),
+          ("2090-2099", "2090-XX-XX -- 2099-XX-XX")
+        )
+      )
+    ),
+    VariableTest(
+      failingTest,
+      "Fix7",
+      "With ME and BC climate models , the crop model simulated an increase in yield from 2700-2800 in 2000s to 3200-3500 kg ha-1 in the 2050s , while it predicted a large decrease ( below 2000 kg ha-1 ) with the other climate models .",
+      Seq(
+        "Quantity" -> Seq(
+          ("2700-2800", "2700.0 -- 2800.0 kg/ha"), // fixme: issue in processors: 2700-2800 is extracted as a year
+          ("3200-3500 kg ha-1", "3200 -- 2500 kg/ha"),
+          ("2000 kg ha-1", "2000.0 kg/ha")
+          )
+        )
+    ),
+    VariableTest(
+      passingTest,
+      "Fix8", // 2009 is the year of publication
+      "In another study in the same location , RI yields as high as 9.9 t ha-1 were recorded , though rather than ttributing them to SRI per se , Tsujimoto et al. ( 2009 ) suggested hey resulted from repetitive , deep tillage and incorporation of up o 35 t compost ha-1 ( dry weight equivalent ).",
+      Seq(
+        "Date" -> Seq.empty
+      )
+    )
   )
 
 
