@@ -33,7 +33,7 @@ object TrainGloveApp extends App {
   }
 
   FileUtils.printWriterFromFile(outputFileName).autoClose { printWriter =>
-    val files = FileUtils.findFiles(inputDirName,"txt").par
+    val files = FileUtils.findFiles(inputDirName,"txt").sortBy(_.getName).par
 
     files.foreach { file =>
       try {
