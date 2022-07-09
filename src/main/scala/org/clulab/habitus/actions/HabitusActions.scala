@@ -188,7 +188,9 @@ class HabitusActions extends Actions {
 
   val labelToAppropriateUnits = Map(
     "Quantity" -> Set("t/ha", "kg/ha", "kg", "d", "cm", "mg/l", "kg n ha-1"),
-    "AreaSize" -> Set("ha")
+    "AreaSize" -> Set("ha"),
+    "YieldAmount" -> Set("t/ha-1"),
+    "FertilizerQuantity" -> Set("kg/ha", "t/ha")
   )
 
   def hasLetters(string: String): Boolean = {
