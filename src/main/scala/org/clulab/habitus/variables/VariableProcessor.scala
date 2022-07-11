@@ -4,6 +4,7 @@ import org.clulab.dynet.Utils
 import org.clulab.habitus.{GenericProcessor, HabitusProcessor, ParsingResult}
 import org.clulab.habitus.actions.HabitusActions
 import org.clulab.habitus.utils.{ContextExtractor, DefaultContextExtractor}
+import org.clulab.numeric.setLabelsAndNorms
 import org.clulab.odin.{EventMention, ExtractorEngine, Mention, TextBoundMention}
 import org.clulab.processors.Document
 import org.clulab.processors.clu.CluProcessor
@@ -47,6 +48,7 @@ class VariableProcessor(val processor: CluProcessor,
     // all mentions (argument 2 in ParsingResult) are all mentions including tbms---this can be used for
     // shell outputs to help rule debug
     // in most other cases, can just output targetMentions (arg 3 in ParsingResult) --- only relations and events
+    setLabelsAndNorms(doc, allMentions)
     ParsingResult(doc, allMentions, withoutNegValues)
   }
 

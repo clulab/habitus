@@ -1,9 +1,9 @@
 package org.clulab.habitus.actions
 
+import org.clulab.numeric.mentions.MeasurementMention
 import org.clulab.odin.{Actions, Attachment, EventMention, Mention, RelationMention, State, SynPath, TextBoundMention, mkTokenInterval}
 import org.clulab.processors.Document
 import org.clulab.struct.Interval
-
 import scala.collection.mutable.ArrayBuffer
 
 class HabitusActions extends Actions {
@@ -204,6 +204,47 @@ class HabitusActions extends Actions {
   def appropriateMeasurement(mentions: Seq[Mention]): Seq[Mention] = {
     // applies to individual rules to check if the measurement is appropriate for the mention label
     mentions.filter(measurementIsAppropriate)
+  }
+
+  def adjustQuantityNorm(m: Mention): Mention = {
+    println("orig m: " + m.label + " " + m.text + " " + m.foundBy)
+    val value = m.arguments("number").map(_.text)
+    val unit1 = m.arguments("unit1").map(_.text)
+    val unit2 = m.arguments("unit2").head.text.replace("-1", "")
+    val unit = unit1.mkString("") + "/" + unit2
+    println("UNIT " + unit)
+    val newMention = new MeasurementMention(
+      m.labels,
+      m.tokenInterval,
+      m.sentence,
+      m.document,
+      m.keep,
+      m.foundBy,
+      m.attachments,
+      Some(value),
+      Some(Seq(unit)),
+      false
+    )
+    println("new m: " + newMention.text + " " + newMention.norms.mkString("|"))
+    newMention
+//    val norm = value.mkString(" ") + unit
+//    newMention.norms.get.foreach(n => norm)
+  }
+
+  def adjustNorm1(mention: Mention): Mention = {
+    val text = mention.text
+    println("text: " + text)
+    val newMention = text match {
+      case text if text.endsWith("-1") => adjustQuantityNorm(mention)
+      case _ => throw new RuntimeException(s"No recommended normalization for the mention with text ${text}")
+    }
+    println("new men 1: " + newMention.text + " " + newMention.norms.mkString("|"))
+    newMention
+  }
+
+  def adjustNorm(mentions: Seq[Mention]): Seq[Mention] = {
+    // applies to individual rules to adjust norm
+    mentions.map(adjustNorm1)
   }
 
 }

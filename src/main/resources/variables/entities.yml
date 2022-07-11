@@ -109,13 +109,14 @@
   pattern: |
     [entity='B-MEASUREMENT'] [entity = 'I-MEASUREMENT']*
 
-#- name: measurement-rule-mg
-#  priority: ${rulepriority}
-#  label: Quantity
-#  type: token
-#  example: "P and K concentrations in irrigation and floodwater were estimated at 0.1 mg P l-1 and 3.2 mg K l-1"
-#  pattern: |
-#    /(?i)(l-)/ [lemma=0-9]
+- name: measurement-rule-mg
+  priority: ${rulepriority}
+  label: Quantity
+  type: token
+  action: adjustNorm
+  example: "P and K concentrations in irrigation and floodwater were estimated at 0.1 mg P l-1 and 3.2 mg K l-1"
+  pattern: |
+    (?<number>[entity='B-MEASUREMENT']) (?<unit1>[entity = 'I-MEASUREMENT']*) [entity = 'B-FERTILIZER'] (?<unit2>[word=/\w\-1/])
 
 - name: area-size-entity-rule
   priority: ${rulepriority}
