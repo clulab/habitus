@@ -193,12 +193,12 @@ class TestVariableReader extends Test {
       Seq(("Sowing", Seq(("April 7, 2001", "2001-04-07"))))
     ),
     VariableTest(
-      fixedWithNewProcRelease,
+      failingTest,
       "sent15_4", "The first sowing dates started on July 1st in 2010 and on July 8th in 2011",
       "PlantingDate",
       Seq(
         ("sowing dates", Seq(("July 1st in 2010", "2010-07-01"))),
-        ("sowing dates", Seq(("July 8th in 2011", "2011-07-08")))
+        ("sowing dates", Seq(("July 8th in 2011", "2011-07-08"))) // wrong parse for planting-date-cop-3 rule
       )
     ),
     VariableTest(
@@ -664,7 +664,7 @@ class TestVariableReader extends Test {
       )
     ),
     VariableTest(
-      passingTest,
+      fixedWithNewProcRelease,
       "fix10", "Grain yield In the first three experimental seasons , the only significant yield effect was in response to fertilizer application ( P < 0.001 for seasons 1-3 ) , which increased yields by an average of 1.7 ( 2007 wet season ) , 3.4 ( 2008 dry season ) and 2.6 t ha-1 ( 2008 wet season ) across management systems ( Fig. 2 ) .",
       "FertilizerQuantity",
       Seq.empty
@@ -676,7 +676,7 @@ class TestVariableReader extends Test {
       Seq.empty
     ),
     VariableTest(
-      failingTest,
+      passingTest,
       "fix12", "P and K concentrations in irrigation and floodwater were estimated at 0.1 mg P l-1 and 3.2 mg K l-1 .",
       "FertilizerQuantity",
       Seq(

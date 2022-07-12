@@ -1,9 +1,11 @@
 package org.clulab.habitus.actions
 
 import org.clulab.numeric.mentions.MeasurementMention
+import org.clulab.numeric.setLabelsAndNorms
 import org.clulab.odin.{Actions, Attachment, EventMention, Mention, RelationMention, State, SynPath, TextBoundMention, mkTokenInterval}
 import org.clulab.processors.Document
 import org.clulab.struct.Interval
+
 import scala.collection.mutable.ArrayBuffer
 
 class HabitusActions extends Actions {
@@ -33,6 +35,7 @@ class HabitusActions extends Actions {
       // sorting to make sure tests that rely on mention order pass
       .sortBy(_.sentence)
       .sortBy(_.tokenInterval)
+
 
   def cleanupAction(mentions: Seq[Mention]): Seq[Mention] = {
     val r1 = removeRedundantVariableMentions(keepLongestMentions(mentions))
@@ -204,10 +207,12 @@ class HabitusActions extends Actions {
   def appropriateMeasurement(mentions: Seq[Mention]): Seq[Mention] = {
     // applies to individual rules to check if the measurement is appropriate for the mention label
     mentions.filter(measurementIsAppropriate)
+
   }
 
-  def adjustQuantityNorm(m: Mention): Mention = {
+  def makeQuantityFromUnitSplitByFertilizer(m: Mention): Mention = {
     println("orig m: " + m.label + " " + m.text + " " + m.foundBy)
+    val fertilizer = m.arguments("fertilizer").head
     val value = m.arguments("number").map(_.text)
     val unit1 = m.arguments("unit1").map(_.text)
     val unit2 = m.arguments("unit2").head.text.replace("-1", "")
@@ -225,17 +230,31 @@ class HabitusActions extends Actions {
       Some(Seq(unit)),
       false
     )
+//    setLabelsAndNorms(m.document, Seq(m))
     println("new m: " + newMention.text + " " + newMention.norms.mkString("|"))
-    newMention
-//    val norm = value.mkString(" ") + unit
-//    newMention.norms.get.foreach(n => norm)
+    val newArgs = Map("variable" -> Seq(fertilizer), "value" -> Seq(newMention))
+    val newEvent = new RelationMention(
+      labels = Seq("FertilizerQuantity", "Event"),
+      tokenInterval = m.tokenInterval,
+      arguments = newArgs,
+      paths = m.paths,
+      sentence = m.sentence,
+      document = m.document,
+      keep = m.keep,
+      foundBy = m.foundBy + "++makeQuantityFromUnitSplitByFertilizer",
+      attachments = m.attachments
+    )
+    val norm = value.mkString(" ") + unit
+    newMention.norms.get.foreach(n => norm)
+    newEvent
+//    newMention
   }
 
   def adjustNorm1(mention: Mention): Mention = {
     val text = mention.text
     println("text: " + text)
     val newMention = text match {
-      case text if text.endsWith("-1") => adjustQuantityNorm(mention)
+      case text if text.endsWith("-1") => makeQuantityFromUnitSplitByFertilizer(mention)
       case _ => throw new RuntimeException(s"No recommended normalization for the mention with text ${text}")
     }
     println("new men 1: " + newMention.text + " " + newMention.norms.mkString("|"))

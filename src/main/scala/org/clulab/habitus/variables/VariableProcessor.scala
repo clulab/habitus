@@ -37,7 +37,6 @@ class VariableProcessor(val processor: CluProcessor,
   def parse(doc: Document): ParsingResult = {
     // extract mentions from annotated document
     val mentions = extractor.extractFrom(doc).sortBy(m => (m.sentence, m.getClass.getSimpleName))
-
     val (tbms, _) = mentions.partition(_.isInstanceOf[TextBoundMention])
     // both events and text bound mentions have to be passed to the method because context info comes from tbms,
     // but only event/relation mentions are returned
@@ -48,8 +47,15 @@ class VariableProcessor(val processor: CluProcessor,
     // all mentions (argument 2 in ParsingResult) are all mentions including tbms---this can be used for
     // shell outputs to help rule debug
     // in most other cases, can just output targetMentions (arg 3 in ParsingResult) --- only relations and events
-    setLabelsAndNorms(doc, allMentions)
+    setLabelsAndNormsInclArgs(doc, allMentions)
     ParsingResult(doc, allMentions, withoutNegValues)
+  }
+
+  def setLabelsAndNormsInclArgs(doc: Document, mentions: Seq[Mention]): Unit = {
+    // reassigns entity labels based on extractions (including arguments)
+    val args = mentions.flatMap(_.arguments.flatMap(_._2))
+    val mentionsAndArgs = mentions ++ args
+    setLabelsAndNorms(doc, mentionsAndArgs)
   }
 
   def filterNegativeValues(mentions: Seq[Mention]): Seq[Mention] = {
