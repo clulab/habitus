@@ -235,6 +235,7 @@
 - name: ${label}-yield-event-1
   priority: ${rulepriority}
   label: YieldAmount
+  action: appropriateMeasurement
   type: token
   pattern: |
     @variable:Yield []+ @value:Quantity
@@ -265,6 +266,7 @@
 - name: ${label}-fertilizer-event
   priority: ${rulepriority}
   label: FertilizerQuantity
+  action: appropriateMeasurement
   type: token
   pattern: |
     @variable:Fertilizer []{,10} @value:Quantity

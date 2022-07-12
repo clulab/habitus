@@ -83,7 +83,7 @@ class HabitusActions extends Actions {
       // at this point, the mentions are already binary (one var and one val)
       val args = m.arguments.map(_._2.head).toSeq
       val sortedArgs = args.sortBy(_.tokenInterval)
-      val distance = sortedArgs.last.start -  sortedArgs.head.end
+      val distance = sortedArgs.last.start - sortedArgs.head.end
       if (distance <= 17) {
         toReturn.append(m)
       }
@@ -124,6 +124,7 @@ class HabitusActions extends Actions {
     val sortedArgs = mention.arguments.map(_._2.head).toSeq.sortBy(_.tokenInterval.start)
     sortedArgs.last.start - sortedArgs.head.end
   }
+
   def closestVar(mentions: Seq[Mention]): Mention = {
     // given several var-val mentions with the same value, will keep the mention that has the variable argument
     // closest to the value
@@ -170,13 +171,14 @@ class HabitusActions extends Actions {
       )
     }
   }
+
   def splitIntoBinary(mentions: Seq[Mention]): Seq[Mention] = {
 
-    val (targets, other) = mentions.partition( m => {
+    val (targets, other) = mentions.partition(m => {
       val valueLabels = m.arguments("value").map(_.label)
       valueLabels.length > 1 &&
-      valueLabels.distinct.length == 1
-      }
+        valueLabels.distinct.length == 1
+    }
     )
     val splitTargets = for {
       m <- targets
@@ -189,23 +191,34 @@ class HabitusActions extends Actions {
   val labelToAppropriateUnits = Map(
     "Quantity" -> Set("t/ha", "kg/ha", "kg", "d", "cm", "mg/l", "kg n ha-1"),
     "AreaSize" -> Set("ha"),
-    "YieldAmount" -> Set("t/ha-1"),
-    "FertilizerQuantity" -> Set("kg/ha", "t/ha")
+    "YieldAmount" -> Set("t/ha", "kg/ha"),
+    "FertilizerQuantity" -> Set("kg/ha")
   )
 
   def hasLetters(string: String): Boolean = {
-    string.exists(ch => ch.isLetter || ch.toString == "/" )
+    string.exists(ch => ch.isLetter || ch.toString == "/")
   }
+
+  def getNormString(m: Mention): String = {
+    m.norms.get.head.split("\\s").filter(hasLetters).mkString(" ") // e.g., get "m2" from "6 m2"
+  }
+
+
   def measurementIsAppropriate(m: Mention): Boolean = {
+    // check mention type
+    val probableUnit = m match {
+      case tbm: TextBoundMention => getNormString(tbm)
+      case rm: RelationMention => getNormString(rm.arguments("value").head)
+      case em: EventMention => getNormString(em.arguments("value").head)
+      case _ => throw new RuntimeException(s"Unknown mention type ${m.getClass}")
+    }
     // check if any of the possible units shows up in the norm
-    val probablyUnit = m.norms.get.head.split("\\s").filter(hasLetters).mkString(" ")// e.g., get "m2" from "6 m2"
     labelToAppropriateUnits
-      .getOrElse(m.label, throw new RuntimeException(s"Unknown measurement label ${m.label}"))(probablyUnit)
+      .getOrElse(m.label, throw new RuntimeException(s"Unknown measurement label ${m.label}"))(probableUnit)
   }
 
   def appropriateMeasurement(mentions: Seq[Mention]): Seq[Mention] = {
     // applies to individual rules to check if the measurement is appropriate for the mention label
     mentions.filter(measurementIsAppropriate)
   }
-
 }
