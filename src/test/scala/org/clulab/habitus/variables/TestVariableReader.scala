@@ -683,6 +683,36 @@ class TestVariableReader extends Test {
         ("P", Seq(("0.1 mg P l-1", "0.1 mg/l"))),
         ("K", Seq(("3.2 mg K l-1", "3.2 mg/l")))
       )
+    ),
+    VariableTest(
+      passingTest,
+      "fix13", "The average yield for Jaya (5.5 t ha-1) was significantly higher (Student's test, P < 0.0001) than for Sahel 108 (4.0 t ha-1).",
+      "FertilizerQuantity",
+      Seq.empty // tests that the stat. significance P is not extracted as fertilizer
+    ),
+    VariableTest(
+      failingTest,
+      "fix14", "Cultivar yield varied widely, from 351 (DK17) to 1313 kg ha-1 (NE14).",
+      "YieldAmount",
+      Seq(
+        ("yield", Seq(("from 351 (DK17) to 1313 kg ha-1", "351.0 -- 1313.0 kg/ha"))) // fixme: correct Quantity is extracted, but so is a shorter one (1313 kg ha-1), and the shorter one is what attaches to the variable (same issue in fix15)
+      )
+    ),
+    VariableTest(
+      failingTest,
+      "fix15", "Where target yield is 6 t/ha, N fertilizer requirement ranged from 92 (slightly N-deficient fields) to 152 kg/ha ( highly N-deficient fields ) .",
+      "YieldAmount",
+      Seq(
+        ("yield", Seq(("from 92 (slightly N-deficient fields) to 152 kg/ha", "92.0 -- 152.0 kg/ha")))
+      )
+    ),
+    VariableTest(
+      passingTest,
+      "fix16", "Rice yields increased significantly as a result of an extra late N application on top of two N-dressings with a total of about 120 kg N ha-1 in farmer fields.",
+      "FertilizerQuantity",
+      Seq(
+        ("N", Seq(("120 kg N ha-1", "120.0 kg n ha-1")))
+      )
     )
 
   )

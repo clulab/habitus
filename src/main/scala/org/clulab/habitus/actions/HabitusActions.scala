@@ -210,14 +210,12 @@ class HabitusActions extends Actions {
 
   }
 
-  def makeQuantityFromUnitSplitByFertilizer(m: Mention): Mention = {
-    println("orig m: " + m.label + " " + m.text + " " + m.foundBy)
+  def makeEventFromUnitSplitByFertilizer(m: Mention): Mention = {
     val fertilizer = m.arguments("fertilizer").head
     val value = m.arguments("number").map(_.text)
     val unit1 = m.arguments("unit1").map(_.text)
     val unit2 = m.arguments("unit2").head.text.replace("-1", "")
     val unit = unit1.mkString("") + "/" + unit2
-    println("UNIT " + unit)
     val newMention = new MeasurementMention(
       m.labels,
       m.tokenInterval,
@@ -230,8 +228,6 @@ class HabitusActions extends Actions {
       Some(Seq(unit)),
       false
     )
-//    setLabelsAndNorms(m.document, Seq(m))
-    println("new m: " + newMention.text + " " + newMention.norms.mkString("|"))
     val newArgs = Map("variable" -> Seq(fertilizer), "value" -> Seq(newMention))
     val newEvent = new RelationMention(
       labels = Seq("FertilizerQuantity", "Event"),
@@ -244,26 +240,34 @@ class HabitusActions extends Actions {
       foundBy = m.foundBy + "++makeQuantityFromUnitSplitByFertilizer",
       attachments = m.attachments
     )
-    val norm = value.mkString(" ") + unit
-    newMention.norms.get.foreach(n => norm)
     newEvent
-//    newMention
   }
 
-  def adjustNorm1(mention: Mention): Mention = {
-    val text = mention.text
-    println("text: " + text)
-    val newMention = text match {
-      case text if text.endsWith("-1") => makeQuantityFromUnitSplitByFertilizer(mention)
-      case _ => throw new RuntimeException(s"No recommended normalization for the mention with text ${text}")
+  def adjustQuantityNorm(mentions: Seq[Mention]): Seq[Mention] = {
+    mentions.map { m =>
+      val value1 = m.arguments("value1").head.text.toFloat
+      val value2 = m.arguments("value2").head.text.toFloat
+      val unit = m.arguments("unit")
+      val valueRange = s"${value1} -- ${value2}"
+      new MeasurementMention(
+        m.labels,
+        m.tokenInterval,
+        m.sentence,
+        m.document,
+        m.keep,
+        m.foundBy,
+        m.attachments,
+        Some(Seq(valueRange)),
+        Some(unit.map(_.text)),
+        true
+      )
     }
-    println("new men 1: " + newMention.text + " " + newMention.norms.mkString("|"))
-    newMention
   }
 
-  def adjustNorm(mentions: Seq[Mention]): Seq[Mention] = {
+
+  def makeEventFromSplitUnit(mentions: Seq[Mention]): Seq[Mention] = {
     // applies to individual rules to adjust norm
-    mentions.map(adjustNorm1)
+    mentions.map(makeEventFromUnitSplitByFertilizer)
   }
 
 }
