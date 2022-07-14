@@ -174,11 +174,13 @@ class HabitusActions extends Actions {
   }
 
   def yieldAmountActionFlow(mentions: Seq[Mention]): Seq[Mention] = {
-    splitIntoBinary(mentions).filter(m => allowableTokenDistanceBetweenVarAndValue(m, 16))
+//    splitIntoBinary(mentions).filter(m => allowableTokenDistanceBetweenVarAndValue(m, 16))
+    appropriateMeasurement(splitIntoBinary(mentions).filter(m => allowableTokenDistanceBetweenVarAndValue(m, 16)))
   }
 
   def fertilizerQuantityActionFlow(mentions: Seq[Mention]): Seq[Mention] = {
-    splitIntoBinary(mentions).filter(m => allowableTokenDistanceBetweenVarAndValue(m, 12))
+//    splitIntoBinary(mentions).filter(m => allowableTokenDistanceBetweenVarAndValue(m, 12))
+    appropriateMeasurement(splitIntoBinary(mentions).filter(m => allowableTokenDistanceBetweenVarAndValue(m, 12)))
   }
 
   def allowableTokenDistanceBetweenVarAndValue(mention: Mention, maxDist: Int): Boolean = {
