@@ -1,7 +1,7 @@
 package org.clulab.habitus.actions
 
-import org.clulab.odin.{Actions, Attachment, EventMention, Mention, RelationMention, State, SynPath, TextBoundMention, mkTokenInterval}
-import org.clulab.processors.Document
+import org.clulab.numeric.mentions.MeasurementMention
+import org.clulab.odin.{Actions, EventMention, Mention, RelationMention, State, TextBoundMention, mkTokenInterval}
 import org.clulab.struct.Interval
 
 import scala.collection.mutable.ArrayBuffer
@@ -33,6 +33,7 @@ class HabitusActions extends Actions {
       // sorting to make sure tests that rely on mention order pass
       .sortBy(_.sentence)
       .sortBy(_.tokenInterval)
+
 
   def cleanupAction(mentions: Seq[Mention]): Seq[Mention] = {
     val r1 = removeRedundantVariableMentions(keepLongestMentions(mentions))
@@ -121,7 +122,7 @@ class HabitusActions extends Actions {
 
   def distanceBetweenTwoArgs(mention: Mention, arg1: String, arg2: String): Int = {
     // assumes one arg of each type
-    val sortedArgs = mention.arguments.map(_._2.head).toSeq.sortBy(_.tokenInterval.start)
+    val sortedArgs = Seq(mention.arguments(arg1).head, mention.arguments(arg2).head).sortBy(_.tokenInterval.start)
     sortedArgs.last.start - sortedArgs.head.end
   }
 
@@ -172,13 +173,28 @@ class HabitusActions extends Actions {
     }
   }
 
+  def yieldAmountActionFlow(mentions: Seq[Mention]): Seq[Mention] = {
+    splitIntoBinary(mentions).filter(m => allowableTokenDistanceBetweenVarAndValue(m, 16))
+  }
+
+  def fertilizerQuantityActionFlow(mentions: Seq[Mention]): Seq[Mention] = {
+    splitIntoBinary(mentions).filter(m => allowableTokenDistanceBetweenVarAndValue(m, 12))
+  }
+
+  def allowableTokenDistanceBetweenVarAndValue(mention: Mention, maxDist: Int): Boolean = {
+    val variable = mention.arguments("variable").head
+    val value = mention.arguments("value").head
+    val sorted = Seq(variable, value).sortBy(_.tokenInterval)
+    sorted.last.start - sorted.head.end <= maxDist
+  }
+
   def splitIntoBinary(mentions: Seq[Mention]): Seq[Mention] = {
 
     val (targets, other) = mentions.partition(m => {
       val valueLabels = m.arguments("value").map(_.label)
       valueLabels.length > 1 &&
-        valueLabels.distinct.length == 1
-    }
+      valueLabels.distinct.length == 1
+      }
     )
     val splitTargets = for {
       m <- targets
@@ -191,8 +207,8 @@ class HabitusActions extends Actions {
   val labelToAppropriateUnits = Map(
     "Quantity" -> Set("t/ha", "kg/ha", "kg", "d", "cm", "mg/l", "kg n ha-1"),
     "AreaSize" -> Set("ha"),
-    "YieldAmount" -> Set("t/ha", "kg/ha"),
-    "FertilizerQuantity" -> Set("kg/ha")
+    "YieldAmount" -> Set("t/ha", "kg/ha", "kg"),
+    "FertilizerQuantity" -> Set("kg/ha", "mg/l", "kg n ha-1")
   )
 
   def hasLetters(string: String): Boolean = {
@@ -220,5 +236,64 @@ class HabitusActions extends Actions {
   def appropriateMeasurement(mentions: Seq[Mention]): Seq[Mention] = {
     // applies to individual rules to check if the measurement is appropriate for the mention label
     mentions.filter(measurementIsAppropriate)
+  }
+
+  def makeEventFromUnitSplitByFertilizer(m: Mention): Mention = {
+    val fertilizer = m.arguments("fertilizer").head
+    val value = m.arguments("number").map(_.text)
+    val unit1 = m.arguments("unit1").map(_.text)
+    val unit2 = m.arguments("unit2").head.text.replace("-1", "")
+    val unit = unit1.mkString("") + "/" + unit2
+    val newMention = new MeasurementMention(
+      m.labels,
+      m.tokenInterval,
+      m.sentence,
+      m.document,
+      m.keep,
+      m.foundBy,
+      m.attachments,
+      Some(value),
+      Some(Seq(unit)),
+      false
+    )
+    val newArgs = Map("variable" -> Seq(fertilizer), "value" -> Seq(newMention))
+    val newEvent = new RelationMention(
+      labels = Seq("FertilizerQuantity", "Event"),
+      tokenInterval = m.tokenInterval,
+      arguments = newArgs,
+      paths = m.paths,
+      sentence = m.sentence,
+      document = m.document,
+      keep = m.keep,
+      foundBy = m.foundBy + "++makeQuantityFromUnitSplitByFertilizer",
+      attachments = m.attachments
+    )
+    newEvent
+  }
+
+  def adjustQuantityNorm(mentions: Seq[Mention]): Seq[Mention] = {
+    mentions.map { m =>
+      val value1 = m.arguments("value1").head.text.toFloat
+      val value2 = m.arguments("value2").head.text.toFloat
+      val unit = m.arguments("unit")
+      val valueRange = s"${value1} -- ${value2}"
+      new MeasurementMention(
+        m.labels,
+        m.tokenInterval,
+        m.sentence,
+        m.document,
+        m.keep,
+        m.foundBy,
+        m.attachments,
+        Some(Seq(valueRange)),
+        Some(unit.map(_.text)),
+        true
+      )
+    }
+  }
+
+  def makeEventFromSplitUnit(mentions: Seq[Mention]): Seq[Mention] = {
+    // applies to individual rules to adjust norm
+    mentions.map(makeEventFromUnitSplitByFertilizer)
   }
 }

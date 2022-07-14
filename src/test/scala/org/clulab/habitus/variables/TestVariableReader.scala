@@ -193,12 +193,12 @@ class TestVariableReader extends Test {
       Seq(("Sowing", Seq(("April 7, 2001", "2001-04-07"))))
     ),
     VariableTest(
-      fixedWithNewProcRelease,
+      failingTest,
       "sent15_4", "The first sowing dates started on July 1st in 2010 and on July 8th in 2011",
       "PlantingDate",
       Seq(
         ("sowing dates", Seq(("July 1st in 2010", "2010-07-01"))),
-        ("sowing dates", Seq(("July 8th in 2011", "2011-07-08")))
+        ("sowing dates", Seq(("July 8th in 2011", "2011-07-08"))) // wrong parse for planting-date-cop-3 rule
       )
     ),
     VariableTest(
@@ -654,7 +654,7 @@ class TestVariableReader extends Test {
       )
     ),
     VariableTest(
-      failingTest,
+      passingTest,
       "fix9", "Mean irrigation , flood and rainwater mineral N concentrations were 1.3, 1.7 and 3.6 mg l-1 , respectively .",
       "FertilizerQuantity",
       Seq(
@@ -664,7 +664,7 @@ class TestVariableReader extends Test {
       )
     ),
     VariableTest(
-      passingTest,
+      fixedWithNewProcRelease,
       "fix10", "Grain yield In the first three experimental seasons , the only significant yield effect was in response to fertilizer application ( P < 0.001 for seasons 1-3 ) , which increased yields by an average of 1.7 ( 2007 wet season ) , 3.4 ( 2008 dry season ) and 2.6 t ha-1 ( 2008 wet season ) across management systems ( Fig. 2 ) .",
       "FertilizerQuantity",
       Seq.empty
@@ -676,12 +676,42 @@ class TestVariableReader extends Test {
       Seq.empty
     ),
     VariableTest(
-      failingTest,
+      passingTest,
       "fix12", "P and K concentrations in irrigation and floodwater were estimated at 0.1 mg P l-1 and 3.2 mg K l-1 .",
       "FertilizerQuantity",
       Seq(
         ("P", Seq(("0.1 mg P l-1", "0.1 mg/l"))),
         ("K", Seq(("3.2 mg K l-1", "3.2 mg/l")))
+      )
+    ),
+    VariableTest(
+      passingTest,
+      "fix13", "The average yield for Jaya (5.5 t ha-1) was significantly higher (Student's test, P < 0.0001) than for Sahel 108 (4.0 t ha-1).",
+      "FertilizerQuantity",
+      Seq.empty // tests that the stat. significance P is not extracted as fertilizer
+    ),
+    VariableTest(
+      failingTest,
+      "fix14", "Cultivar yield varied widely, from 351 (DK17) to 1313 kg ha-1 (NE14).",
+      "YieldAmount",
+      Seq(
+        ("yield", Seq(("from 351 (DK17) to 1313 kg ha-1", "351.0 -- 1313.0 kg/ha"))) // fixme: correct Quantity is extracted, but so is a shorter one (1313 kg ha-1), and the shorter one is what attaches to the variable (same issue in fix15)
+      )
+    ),
+    VariableTest(
+      failingTest,
+      "fix15", "Where target yield is 6 t/ha, N fertilizer requirement ranged from 92 (slightly N-deficient fields) to 152 kg/ha ( highly N-deficient fields ) .",
+      "YieldAmount",
+      Seq(
+        ("yield", Seq(("from 92 (slightly N-deficient fields) to 152 kg/ha", "92.0 -- 152.0 kg/ha")))
+      )
+    ),
+    VariableTest(
+      passingTest,
+      "fix16", "Rice yields increased significantly as a result of an extra late N application on top of two N-dressings with a total of about 120 kg N ha-1 in farmer fields.",
+      "FertilizerQuantity",
+      Seq(
+        ("N", Seq(("120 kg N ha-1", "120.0 kg n ha-1")))
       )
     )
 

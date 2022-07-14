@@ -232,21 +232,24 @@
     trigger = @GenericFertilizer
     value:Fertilizer = (</compound/ | /compound/) [!lemma = /usage/]
 
-- name: ${label}-yield-event-1
-  priority: ${rulepriority}
-  label: YieldAmount
-  action: appropriateMeasurement
-  type: token
-  pattern: |
-    @variable:Yield []+ @value:Quantity
-
 - name: ${label}-yield-event
   priority: ${rulepriority}
   label: YieldAmount
   type: token
-  action: splitIntoBinary
+  action: yieldAmountActionFlow
   pattern: |
-    @variable:Yield []*? @value:Quantity  ([]+? (","|"and") @value:Quantity)*
+    @variable:Yield []+? @value:Quantity+ ([]*? (","|"and")? @value:Quantity)*
+
+# this one is pretty specific and is there to capture an unfortunate parse
+- name: planting-yield-amount
+  priority: ${rulepriority}
+  label: YieldAmount
+  graph: "hybrid"
+  example: "The potential grain yield that can be obtained ranges from 8 to 9 t ha-1 in the wet season (July sowing) and from 6 to 11 t ha-1 in the dry season (February sowing)"
+  pattern: |
+    trigger = [lemma=/range/]
+    variable:Yield = /A1/
+    value:Quantity = /Ax_from/ /nmod_in/ /conj_and/
 
 #Todo: Some event rule for assigning wet/dry seasons period to the respective labels.
 - name: ${label}-dry-season-event
@@ -266,10 +269,10 @@
 - name: ${label}-fertilizer-event
   priority: ${rulepriority}
   label: FertilizerQuantity
-  action: appropriateMeasurement
+  action: fertilizerQuantityActionFlow
   type: token
   pattern: |
-    @variable:Fertilizer []{,10} @value:Quantity
+    @variable:Fertilizer []+? @value:Quantity+ ([]*? (","|"and")? @value:Quantity)*
 
 - name: ${label}-crop-property-event
   priority: ${rulepriority}
@@ -284,3 +287,12 @@
   type: token
   pattern: |
     @variable:Crop  []{,7} @value:GrainProperty
+
+- name: measurement-rule-mg
+  priority: ${rulepriority}
+  label: Quantity
+  type: token
+  action: makeEventFromSplitUnit
+  example: "P and K concentrations in irrigation and floodwater were estimated at 0.1 mg P l-1 and 3.2 mg K l-1"
+  pattern: |
+    (?<number>[entity='B-MEASUREMENT']) (?<unit1>[entity = 'I-MEASUREMENT']*)  (?<fertilizer> [entity = 'B-FERTILIZER'])  (?<unit2>[word=/\w\-1/])

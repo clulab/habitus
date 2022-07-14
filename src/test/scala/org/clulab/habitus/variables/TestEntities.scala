@@ -305,12 +305,12 @@ class TestEntities extends Test {
     )
   ),
     VariableTest(
-      fixedWithNewProcRelease,
+      failingTest,
       "sent27",
       "Farmers used two rice cultivars (IR1529 and Jaya) during the 1997 WS, and exclusively IR13240-108-2-2-3 (released as Sahel 108 in Senegal in 1994) during the 1998 DS. All rice was direct-seeded.",
       Seq(
         "GenericCrop" -> Seq("cultivars"),
-        "Crop" -> Seq("rice", "Sahel 108", "Jaya", "rice", "IR1529"),
+        "Crop" -> Seq("rice", "Sahel 108", "Jaya", "rice", "IR1529"), //missing Sahel is missing 108
         "Location" -> Seq("Senegal")
       )
     ),
