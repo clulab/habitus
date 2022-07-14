@@ -232,20 +232,24 @@
     trigger = @GenericFertilizer
     value:Fertilizer = (</compound/ | /compound/) [!lemma = /usage/]
 
-- name: ${label}-yield-event-1
-  priority: ${rulepriority}
-  label: YieldAmount
-  type: token
-  pattern: |
-    @variable:Yield []{1,9} @value:Quantity
-
 - name: ${label}-yield-event
   priority: ${rulepriority}
   label: YieldAmount
   type: token
-  action: splitIntoBinary
+  action: yieldAmountActionFlow
   pattern: |
-    @variable:Yield []{,9} @value:Quantity  ([]+? (","|"and") @value:Quantity)*
+    @variable:Yield []+? @value:Quantity+ ([]*? (","|"and")? @value:Quantity)*
+
+# this one is pretty specific and is there to capture an unfortunate parse
+- name: planting-yield-amount
+  priority: ${rulepriority}
+  label: YieldAmount
+  graph: "hybrid"
+  example: "The potential grain yield that can be obtained ranges from 8 to 9 t ha-1 in the wet season (July sowing) and from 6 to 11 t ha-1 in the dry season (February sowing)"
+  pattern: |
+    trigger = [lemma=/range/]
+    variable:Yield = /A1/
+    value:Quantity = /Ax_from/ /nmod_in/ /conj_and/
 
 #Todo: Some event rule for assigning wet/dry seasons period to the respective labels.
 - name: ${label}-dry-season-event
@@ -265,9 +269,10 @@
 - name: ${label}-fertilizer-event
   priority: ${rulepriority}
   label: FertilizerQuantity
+  action: fertilizerQuantityActionFlow
   type: token
   pattern: |
-    @variable:Fertilizer []{,12} @value:Quantity
+    @variable:Fertilizer []+? @value:Quantity+ ([]*? (","|"and")? @value:Quantity)*
 
 - name: ${label}-crop-property-event
   priority: ${rulepriority}

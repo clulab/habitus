@@ -1,9 +1,7 @@
 package org.clulab.habitus.actions
 
 import org.clulab.numeric.mentions.MeasurementMention
-import org.clulab.numeric.setLabelsAndNorms
-import org.clulab.odin.{Actions, Attachment, EventMention, Mention, RelationMention, State, SynPath, TextBoundMention, mkTokenInterval}
-import org.clulab.processors.Document
+import org.clulab.odin.{Actions, EventMention, Mention, RelationMention, State, TextBoundMention, mkTokenInterval}
 import org.clulab.struct.Interval
 
 import scala.collection.mutable.ArrayBuffer
@@ -173,6 +171,22 @@ class HabitusActions extends Actions {
       )
     }
   }
+
+  def yieldAmountActionFlow(mentions: Seq[Mention]): Seq[Mention] = {
+    splitIntoBinary(mentions).filter(m => allowableTokenDistanceBetweenVarAndValue(m, 16))
+  }
+
+  def fertilizerQuantityActionFlow(mentions: Seq[Mention]): Seq[Mention] = {
+    splitIntoBinary(mentions).filter(m => allowableTokenDistanceBetweenVarAndValue(m, 12))
+  }
+
+  def allowableTokenDistanceBetweenVarAndValue(mention: Mention, maxDist: Int): Boolean = {
+    val variable = mention.arguments("variable").head
+    val value = mention.arguments("value").head
+    val sorted = Seq(variable, value).sortBy(_.tokenInterval)
+    sorted.last.start - sorted.head.end <= maxDist
+  }
+
   def splitIntoBinary(mentions: Seq[Mention]): Seq[Mention] = {
 
     val (targets, other) = mentions.partition( m => {

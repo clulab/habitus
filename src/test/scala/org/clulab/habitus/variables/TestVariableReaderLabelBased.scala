@@ -384,7 +384,7 @@ class TestVariableReaderLabelBased extends Test {
       )
     ),
     VariableTest(
-      failingTest,
+      fixedWithNewProcRelease,
       "sent32", "Potential yield of all the varieties in the Senegal River delta was estimated at 9 and 10 t/ha in wet and dry seasons , respectively , and potential yield was taken as 8 t/ha for both seasons in the middle valley .",
       "YieldAmount",
       Seq(
@@ -403,7 +403,7 @@ class TestVariableReaderLabelBased extends Test {
       )
     ),
     VariableTest(
-      failingTest,
+      fixedWithNewProcRelease,
       "fix5-event", "Target yields on average were set to 6.4, 7.9 and 7.1 t/ha in 2011WS , 2012DS , and 2013DS , respectively ( Table 1 ) .",
       "YieldAmount",
       Seq(

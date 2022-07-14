@@ -298,7 +298,7 @@ class TestEntitiesNorms extends Test {
       Seq(
         "Quantity" -> Seq(
           ("80 kg N ha-1", "80.0 kg n ha-1"),
-          ("200 kg", "200.0 kg"), // fixme: not currently solvable---handling a crucial case in processors resulted in the loss of ha-1 here
+          ("200 kg ha-1", "200.0 kg/ha"),
           ("+ 100 kg ha-1", "100.0 kg/ha"),
           ("+ 50 kg ha-1", "50.0 kg/ha"),
           ("20 kg N ha-1", "20.0 kg n ha-1")
