@@ -654,7 +654,7 @@ class TestVariableReader extends Test {
       )
     ),
     VariableTest(
-      passingTest,
+      fixedWithNewProcRelease,
       "fix9", "Mean irrigation , flood and rainwater mineral N concentrations were 1.3, 1.7 and 3.6 mg l-1 , respectively .",
       "FertilizerQuantity",
       Seq(
