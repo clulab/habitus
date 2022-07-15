@@ -215,7 +215,7 @@ class HabitusActions extends Actions {
   )
 
   def hasLetters(string: String): Boolean = {
-    string.exists(ch => ch.isLetter || ch == "/")
+    string.exists(ch => ch.isLetter || ch.toString == "/")
   }
 
   def getNormString(m: Mention): String = {
