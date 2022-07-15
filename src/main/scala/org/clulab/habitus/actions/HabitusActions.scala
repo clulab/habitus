@@ -276,10 +276,11 @@ class HabitusActions extends Actions {
 
   def adjustQuantityNorm(mentions: Seq[Mention]): Seq[Mention] = {
     mentions.map { m =>
+      // To be addressed later on handling decimal values.
       val value1 = m.arguments("value1").head.text.toFloat
       val value2 = m.arguments("value2").head.text.toFloat
       val unit = m.arguments("unit")
-      val valueRange = s"${value1} -- ${value2}"
+      val valueRange = f"${value1} -- ${value2}"
       new MeasurementMention(
         m.labels,
         m.tokenInterval,
