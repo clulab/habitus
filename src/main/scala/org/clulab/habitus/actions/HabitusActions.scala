@@ -151,18 +151,19 @@ class HabitusActions extends Actions {
     }
     toReturn
   }
-
+  val VALUE = "value"
+  val VARIABLE = "variable"
   def fertilizerEventToRelation(mentions: Seq[Mention]): Seq[Mention] = {
     // creates a binary fertilizer event from a rule where the trigger was a token that should also serve as a variable in an assignment event
     mentions.map { m =>
       val variableArg = m.asInstanceOf[EventMention].trigger
-      val valueArg = m.arguments("value").head
+      val valueArg = m.arguments(VALUE).head
       val sortedArgs = Seq(variableArg, valueArg).sortBy(_.tokenInterval)
       val newTokenInterval = Interval(sortedArgs.head.tokenInterval.start, sortedArgs.last.tokenInterval.end)
       new RelationMention(
         labels = m.labels,
         tokenInterval = newTokenInterval,
-        arguments = Map("variable" -> Seq(variableArg), "value" -> Seq(valueArg)),
+        arguments = Map(VARIABLE -> Seq(variableArg), VALUE -> Seq(valueArg)),
         paths = m.paths,
         sentence = m.sentence,
         document = m.document,
@@ -184,8 +185,8 @@ class HabitusActions extends Actions {
   }
 
   def allowableTokenDistanceBetweenVarAndValue(mention: Mention, maxDist: Int): Boolean = {
-    val variable = mention.arguments("variable").head
-    val value = mention.arguments("value").head
+    val variable = mention.arguments(VARIABLE).head
+    val value = mention.arguments(VALUE).head
     val sorted = Seq(variable, value).sortBy(_.tokenInterval)
     sorted.last.start - sorted.head.end <= maxDist
   }
@@ -193,15 +194,15 @@ class HabitusActions extends Actions {
   def splitIntoBinary(mentions: Seq[Mention]): Seq[Mention] = {
 
     val (targets, other) = mentions.partition(m => {
-      val valueLabels = m.arguments("value").map(_.label)
+      val valueLabels = m.arguments(VALUE).map(_.label)
       valueLabels.length > 1 &&
       valueLabels.distinct.length == 1
       }
     )
     val splitTargets = for {
       m <- targets
-      value <- m.arguments("value")
-      newArgs = Map("variable" -> m.arguments("variable"), "value" -> Seq(value))
+      value <- m.arguments(VALUE)
+      newArgs = Map(VARIABLE -> m.arguments(VARIABLE), VALUE -> Seq(value))
     } yield copyWithArgs(m, newArgs)
     splitTargets ++ other
   }
@@ -226,8 +227,8 @@ class HabitusActions extends Actions {
     // check mention type
     val probableUnit = m match {
       case tbm: TextBoundMention => getNormString(tbm)
-      case rm: RelationMention => getNormString(rm.arguments("value").head)
-      case em: EventMention => getNormString(em.arguments("value").head)
+      case rm: RelationMention => getNormString(rm.arguments(VALUE).head)
+      case em: EventMention => getNormString(em.arguments(VALUE).head)
       case _ => throw new RuntimeException(s"Unknown mention type ${m.getClass}")
     }
     // check if any of the possible units shows up in the norm
@@ -258,7 +259,7 @@ class HabitusActions extends Actions {
       Some(Seq(unit)),
       false
     )
-    val newArgs = Map("variable" -> Seq(fertilizer), "value" -> Seq(newMention))
+    val newArgs = Map(VARIABLE -> Seq(fertilizer), VALUE -> Seq(newMention))
     val newEvent = new RelationMention(
       labels = Seq("FertilizerQuantity", "Event"),
       tokenInterval = m.tokenInterval,
