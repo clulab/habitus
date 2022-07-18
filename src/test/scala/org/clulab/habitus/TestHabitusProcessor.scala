@@ -1,5 +1,6 @@
 package org.clulab.habitus
 
+import org.clulab.habitus.entitynetworks.LexiconNerBase
 import org.clulab.habitus.utils.Test
 import org.clulab.habitus.variables.VariableProcessor
 import org.clulab.processors.Sentence
@@ -72,5 +73,20 @@ class TestHabitusProcessor extends Test {
 
     test(controlText, false) // Don't throw them all out!
     texts.foreach { text => test(text, true) }
+  }
+
+  behavior of "acronym"
+
+  it should "not be placed in the middle of an existing BII sequence" in {
+    val text = "Saed.sn Saed BP."
+    val lexiconNer = new LexiconNerBase().mkLexiconNer()
+    val processor = new HabitusProcessor(Some(lexiconNer))
+    val document = processor.annotate(text)
+    val entities = document.sentences.head.entities.get.mkString(" ")
+
+    // This is the old, faulty behavior from processors 8.5.1.
+    entities should be ("B-ORG B-ACRONYM I-ORG O")
+    // This is the planned, new, correct behavior from processors 8.5.2.
+    // entities should be ("B-ORG I-ORG I-ORG O")
   }
 }
