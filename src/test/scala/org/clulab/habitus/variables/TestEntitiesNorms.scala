@@ -28,10 +28,6 @@ class TestEntitiesNorms extends Test {
       // instead of parsingResults.targetMentions
       parsingResults.allMentions
     }
-
-
-
-
     def test(index: Int): Unit = {
       shouldable should s"filter by correct label(s) and value size of sent $name correctly" in {
         if (index == -1)
@@ -68,7 +64,6 @@ class TestEntitiesNorms extends Test {
   }
 
   behavior of "VariableReader Entities"
-
   val variableTests: Array[VariableTest] = Array(
     VariableTest(
       passingTest,
@@ -84,7 +79,6 @@ class TestEntitiesNorms extends Test {
         "Quantity" -> Seq(("from 6 to 11 t ha-1","6.0 -- 11.0 t/ha"), ("from 8 to 9 t ha-1","8.0 -- 9.0 t/ha")),
       )
     ),
-
     VariableTest(
       passingTest,
       "sent3",
@@ -402,7 +396,7 @@ class TestEntitiesNorms extends Test {
       "With ME and BC climate models , the crop model simulated an increase in yield from 2700-2800 in 2000s to 3200-3500 kg ha-1 in the 2050s , while it predicted a large decrease ( below 2000 kg ha-1 ) with the other climate models .",
       Seq(
         "Quantity" -> Seq(
-          ("2700-2800", "2700.0 -- 2800.0 kg/ha"), // fixme: issue in processors: 2700-2800 is extracted as a year
+          ("2700-2800", "2700.0 -- 2800.0 kg/ha"),
           ("3200-3500 kg ha-1", "3200 -- 2500 kg/ha"),
           ("2000 kg ha-1", "2000.0 kg/ha")
           )
@@ -417,8 +411,6 @@ class TestEntitiesNorms extends Test {
       )
     )
   )
-
-
   variableTests.zipWithIndex.foreach { case (variableTest, index) => variableTest.test(index) }
 }
 

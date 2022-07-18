@@ -114,11 +114,9 @@
   label: Quantity
   type: token
   example: "from 92 ( slightly N-deficient fields ) to 152 kg / ha"
-#  action: appropriateMeasurement
   action: adjustQuantityNorm
   pattern: |
     "from" (?<value1>[tag = "CD"]) "(" []{1,3} ")" "to" (?<value2>[entity='B-MEASUREMENT'])  (?<unit>[entity = 'I-MEASUREMENT']+)
-
 
 - name: area-size-entity-rule
   priority: ${rulepriority}

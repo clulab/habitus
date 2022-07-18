@@ -21,12 +21,9 @@ class HabitusActions extends Actions {
     }
     toReturn
   }
-
-
   //
   // global actions below this points
   //
-
   /** Global action for the numeric grammar */
   def cleanupAction(mentions: Seq[Mention], state: State): Seq[Mention] =
     cleanupAction(mentions)
@@ -34,16 +31,13 @@ class HabitusActions extends Actions {
       .sortBy(_.sentence)
       .sortBy(_.tokenInterval)
 
-
   def cleanupAction(mentions: Seq[Mention]): Seq[Mention] = {
     val r1 = removeRedundantVariableMentions(keepLongestMentions(mentions))
     r1
   }
-
   private def isBelief(m: Mention): Boolean = {
     m.labels.contains("Belief")
   }
-
   /** Keeps a belief mention only if it is not contained in another */
   def keepLongestMentions(mentions: Seq[Mention]): Seq[Mention] = {
     val (beliefs, nonBeliefs) = mentions.partition(isBelief)
@@ -57,8 +51,6 @@ class HabitusActions extends Actions {
     }
     keepOneOfSameSpan(uniqueArguments(filteredBeliefs ++ nonBeliefs))
   }
-
-
   def copyWithArgs(orig: Mention, newArgs: Map[String, Seq[Mention]]): Mention = {
     val newTokInt = mkTokenInterval(newArgs)
     orig match {
@@ -68,8 +60,6 @@ class HabitusActions extends Actions {
       case _ => ???
     }
   }
-
-
   def areaVarActionFlow(mentions: Seq[Mention]): Seq[Mention] = {
     // applies within a rule
     // split mentions with mult args into binary mentions
@@ -77,7 +67,6 @@ class HabitusActions extends Actions {
     // filter out the ones where var and val are too far
     limitVarValSpan(split)
   }
-
   def limitVarValSpan(mentions: Seq[Mention]): Seq[Mention] = {
     val toReturn = new ArrayBuffer[Mention]()
     for (m <- mentions) {
@@ -92,46 +81,45 @@ class HabitusActions extends Actions {
     toReturn
   }
 
+  val VALUE = "value"
+  val VARIABLE = "variable"
+
   def splitIfTwoValues(mentions: Seq[Mention]): Seq[Mention] = {
     // for area rules; if there is an extraction with multiple value args,
     // split it into binary var-value mentions
     val (assignmentMentions, other) = mentions.partition(_ matches "Assignment")
     val toReturn = new ArrayBuffer[Mention]()
     for (am <- assignmentMentions) {
-      val valueArgs = am.arguments("value")
+      val valueArgs = am.arguments(VALUE)
       if (valueArgs.length > 1) {
         for (valueArg <- valueArgs) {
-          val newArgs = Map("variable" -> Seq(am.arguments("variable").head), "value" -> Seq(valueArg))
+          val newArgs = Map(VARIABLE -> Seq(am.arguments(VARIABLE).head), VALUE -> Seq(valueArg))
           toReturn.append(copyWithArgs(am, newArgs))
         }
       } else toReturn.append(am)
     }
     toReturn ++ other
   }
-
   def removeRedundantVariableMentions(mentions: Seq[Mention]): Seq[Mention] = {
     // The action makes sure there is one variable for every value in most assignment events/relations (those that have value args); we exclude property assignments from this because one property can apply to multiple variables (e.g., They planted crop1 and crop2 (short duration))
     // The action applies to mentions extracted with var reader relation/event rules, so we exclude TBMs and include a value argument.
-    val (targetMentions, otherMentions) = mentions.partition(m => !m.isInstanceOf[TextBoundMention] && m.arguments.contains("value") && m.label != "PropertyAssignment")
-    val targetMentionGroups = targetMentions.groupBy { m => (m.sentence, m.label, m.arguments("value").head.text) }
+    val (targetMentions, otherMentions) = mentions.partition(m => !m.isInstanceOf[TextBoundMention] && m.arguments.contains(VALUE) && m.label != "PropertyAssignment")
+    val targetMentionGroups = targetMentions.groupBy { m => (m.sentence, m.label, m.arguments(VALUE).head.text) }
     // If there are multiple mentions in the same group, pick the "closest" one.
     val closestTargetMentions = targetMentionGroups.toSeq.map { case (_, ms) => closestVar(ms) }
 
     closestTargetMentions ++ otherMentions
   }
-
   def distanceBetweenTwoArgs(mention: Mention, arg1: String, arg2: String): Int = {
     // assumes one arg of each type
     val sortedArgs = Seq(mention.arguments(arg1).head, mention.arguments(arg2).head).sortBy(_.tokenInterval.start)
     sortedArgs.last.start - sortedArgs.head.end
   }
-
   def closestVar(mentions: Seq[Mention]): Mention = {
     // given several var-val mentions with the same value, will keep the mention that has the variable argument
     // closest to the value
-    mentions.minBy(m => distanceBetweenTwoArgs(m, "variable", "value"))
+    mentions.minBy(m => distanceBetweenTwoArgs(m, VARIABLE, VALUE))
   }
-
   def keepOneOfSameSpan(mentions: Seq[Mention]): Seq[Mention] = {
     // if there are two mentions of same span and label, keep one
     val toReturn = new ArrayBuffer[Mention]()
@@ -151,8 +139,6 @@ class HabitusActions extends Actions {
     }
     toReturn
   }
-  val VALUE = "value"
-  val VARIABLE = "variable"
   def fertilizerEventToRelation(mentions: Seq[Mention]): Seq[Mention] = {
     // creates a binary fertilizer event from a rule where the trigger was a token that should also serve as a variable in an assignment event
     mentions.map { m =>
@@ -173,24 +159,18 @@ class HabitusActions extends Actions {
       )
     }
   }
-
   def yieldAmountActionFlow(mentions: Seq[Mention]): Seq[Mention] = {
-//    splitIntoBinary(mentions).filter(m => allowableTokenDistanceBetweenVarAndValue(m, 16))
     appropriateMeasurement(splitIntoBinary(mentions).filter(m => allowableTokenDistanceBetweenVarAndValue(m, 16)))
   }
-
   def fertilizerQuantityActionFlow(mentions: Seq[Mention]): Seq[Mention] = {
-//    splitIntoBinary(mentions).filter(m => allowableTokenDistanceBetweenVarAndValue(m, 12))
     appropriateMeasurement(splitIntoBinary(mentions).filter(m => allowableTokenDistanceBetweenVarAndValue(m, 12)))
   }
-
   def allowableTokenDistanceBetweenVarAndValue(mention: Mention, maxDist: Int): Boolean = {
     val variable = mention.arguments(VARIABLE).head
     val value = mention.arguments(VALUE).head
     val sorted = Seq(variable, value).sortBy(_.tokenInterval)
     sorted.last.start - sorted.head.end <= maxDist
   }
-
   def splitIntoBinary(mentions: Seq[Mention]): Seq[Mention] = {
 
     val (targets, other) = mentions.partition(m => {
@@ -206,23 +186,18 @@ class HabitusActions extends Actions {
     } yield copyWithArgs(m, newArgs)
     splitTargets ++ other
   }
-
   val labelToAppropriateUnits = Map(
     "Quantity" -> Set("t/ha", "kg/ha", "kg", "d", "cm", "mg/l", "kg n ha-1"),
     "AreaSize" -> Set("ha"),
     "YieldAmount" -> Set("t/ha", "kg/ha", "kg"),
     "FertilizerQuantity" -> Set("kg/ha", "mg/l", "kg n ha-1")
   )
-
   def hasLetters(string: String): Boolean = {
     string.exists(ch => ch.isLetter || ch == '/')
   }
-
   def getNormString(m: Mention): String = {
     m.norms.get.head.split("\\s").filter(hasLetters).mkString(" ") // e.g., get "m2" from "6 m2"
   }
-
-
   def measurementIsAppropriate(m: Mention): Boolean = {
     // check mention type
     val probableUnit = m match {
@@ -235,12 +210,10 @@ class HabitusActions extends Actions {
     labelToAppropriateUnits
       .getOrElse(m.label, throw new RuntimeException(s"Unknown measurement label ${m.label}"))(probableUnit)
   }
-
   def appropriateMeasurement(mentions: Seq[Mention]): Seq[Mention] = {
     // applies to individual rules to check if the measurement is appropriate for the mention label
     mentions.filter(measurementIsAppropriate)
   }
-
   def makeEventFromUnitSplitByFertilizer(m: Mention): Mention = {
     val fertilizer = m.arguments("fertilizer").head
     val value = m.arguments("number").map(_.text)
@@ -273,7 +246,6 @@ class HabitusActions extends Actions {
     )
     newEvent
   }
-
   def adjustQuantityNorm(mentions: Seq[Mention]): Seq[Mention] = {
     mentions.map { m =>
       // To be addressed later on handling decimal values.
@@ -295,7 +267,6 @@ class HabitusActions extends Actions {
       )
     }
   }
-
   def makeEventFromSplitUnit(mentions: Seq[Mention]): Seq[Mention] = {
     // applies to individual rules to adjust norm
     mentions.map(makeEventFromUnitSplitByFertilizer)
