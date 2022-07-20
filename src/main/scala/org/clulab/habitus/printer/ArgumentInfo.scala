@@ -16,7 +16,8 @@ object ArgumentInfo {
     val normsOpt = mention.norms
     val norm =
         // Not all NEs have meaningful norms set.  For example, DATEs have norms, but CROPs do not.
-        if (normsOpt.isDefined && normsOpt.get.length >= 2 && normsOpt.get.head.nonEmpty)
+        // allowing norms for as short as one token to account for norms of multiple values sharing a unit, e.g., the norm for token 3.6 in `3.6 and 4.7 t/ha` is `3.6 t/ha`
+        if (normsOpt.isDefined && normsOpt.get.nonEmpty && normsOpt.get.head.nonEmpty)
           normsOpt.get.head
         else "N/A"
 

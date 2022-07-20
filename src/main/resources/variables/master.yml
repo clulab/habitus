@@ -4,6 +4,7 @@
 #
 
 taxonomy:
+  - Avoid
   - GrammaticalCategory:
     - Noun
     - NounPhrase
@@ -29,6 +30,7 @@ taxonomy:
     - Area
     - AreaSize
     - Percentage
+    - Months
   - Event:
     - Assignment
     - BirdAttackEvent
@@ -45,17 +47,21 @@ taxonomy:
 
 
 rules:
+
+  - import: variables/avoid.yml
+    vars:
+      rulepriority: "1"
   - import: variables/entities.yml
     vars:
       # We need our entities before we can match events
       # Here we make use of the ${rulepriority} variable
       # used in the entities.yml rules
-      lowpriority: "1"
-      rulepriority: "2"
-      higherpriority: "3"
+      lowpriority: "2"
+      rulepriority: "3"
+      higherpriority: "4"
 
   - import: variables/events.yml
     vars:
       label: Assignment
-      rulepriority: "4+"
+      rulepriority: "5+"
 

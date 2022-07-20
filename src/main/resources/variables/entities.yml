@@ -25,7 +25,7 @@
   label: GenericFertilizer
   type: token
   pattern: |
-    /(?i)fertilizer/
+    /(?i)fertilizer|\w\-dressings?/
 
 - name: nominal-sowing
   priority: ${rulepriority}
@@ -76,7 +76,14 @@
   label: Date
   type: token
   pattern: |
-    [entity='B-DATE'] [entity='I-DATE']*
+    [entity='B-DATE' & !mention=Avoid] [entity='I-DATE']* 
+
+- name: value-from-date-2
+  priority: ${rulepriority}
+  label: Months
+  type: token
+  pattern: |
+    [entity='B-DATE' & !word=/^1\d\d\d|2\d\d\d/] [entity='I-DATE' & !word=/^1\d\d\d|2\d\d\d/]* | [entity='B-DATE-RANGE' & !word=/^1\d\d\d|2\d\d\d/] [entity='I-DATE-RANGE' & !word=/^1\d\d\d|2\d\d\d/]*
 
 - name: value-from-daterange
   priority: ${rulepriority}
@@ -92,7 +99,7 @@
   type: token
   example: "The areas sown for this 2021/2022 wintering campaign are..."
   pattern: |
-    [word = /(\d\d){1,2}(\/|_)(\d\d){1,2}/]
+    [word = /^(\d\d){1,2}(\/|_)(\d\d){1,2}$/]
 
 - name: measurement-rule
   priority: ${rulepriority}
@@ -102,6 +109,15 @@
   pattern: |
     [entity='B-MEASUREMENT'] [entity = 'I-MEASUREMENT']*
 
+- name: measurement-rule-constructed
+  priority: ${rulepriority}
+  label: Quantity
+  type: token
+  example: "from 92 ( slightly N-deficient fields ) to 152 kg / ha"
+  action: adjustQuantityNorm
+  pattern: |
+    "from" (?<value1>[tag = "CD"]) "(" []{1,3} ")" "to" (?<value2>[entity='B-MEASUREMENT'])  (?<unit>[entity = 'I-MEASUREMENT']+)
+
 - name: area-size-entity-rule
   priority: ${rulepriority}
   label: AreaSize
@@ -109,7 +125,6 @@
   action: appropriateMeasurement
   pattern: |
     (?<![word = /^vs\.?|against|compared|^forecast/][word=/\w*/]{0,3}) [entity='B-MEASUREMENT' & !word = "-"] [entity='I-MEASUREMENT']*
-
 
 - name: percentage-rule
   priority: ${rulepriority}
@@ -124,7 +139,7 @@
   label: Fertilizer
   type: token
   pattern: |
-    [entity='B-FERTILIZER'] [entity='I-FERTILIZER']*
+    [entity='B-FERTILIZER' & !mention=Avoid] [entity='I-FERTILIZER']*
 
 - name: crop-values-from-lexicon-vars
   priority: ${rulepriority}
@@ -138,14 +153,14 @@
   label: WetSeason
   type: token
   pattern: |
-    /(?i)(wet|rainy )/ []*? [lemma = /\bseason\b/]
+    /(?i)(wet|rainy)/ []{,2}? [lemma = /\bseason\b/]
 
 - name: dry-season
   priority: ${rulepriority}
   label: DrySeason
   type: token
   pattern: |
-    /(?i)(dry|hot)/ []*? [lemma = /\bseason\b/]
+    /(?i)(dry|hot|cold)/ []*? [lemma = /\bseason\b/]
 
 - name: complex-date
   priority: ${higherpriority}
