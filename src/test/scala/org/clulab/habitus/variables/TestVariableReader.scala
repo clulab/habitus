@@ -716,7 +716,16 @@ class TestVariableReader extends Test {
       Seq(
         ("N", Seq(("120 kg N ha-1", "120.0 kg n ha-1")))
       )
-    )
+    ),
+    VariableTest(
+      passingTest,
+      "fix17", "Following these findings , Haefele et al. ( 2000 , 2001 ) conducted on-farm trials and found that improved nutrient management increased yields by about 1 t / ha in farmers ' fields .",
+      "YieldIncrease",
+      Seq(
+        ("yields", Seq(("1 t / ha", "1.0 t/ha")))
+      )
+    ),
+
 
   )
 
