@@ -351,7 +351,5 @@ class TestVariableReaderLabelBased extends Test {
 
   )
 
-
-
   variableTests.zipWithIndex.foreach { case (variableTest, index) => variableTest.test(index) }
 }
