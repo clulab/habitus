@@ -20,9 +20,11 @@ trait ContextExtractor {
   val NA = "N/A"
   val maxContextWindow = 2
 
-  val plantingLemmas = Seq("plant", "sow", "cover", "cultivate", "grow")
-  val creditLemmas = Seq("credit", "finance", "value", "correspond")
+  val plantingLemmas = Seq("plant", "sow", "cultivate", "cultivation", "grow")
+  val creditLemmas = Seq("credit", "finance", "value")
   val harvestLemmas = Seq("harvest", "yield")
+  val irrigationLemmas = Seq("irrigation", "irrigate")
+  val weedsLemmas = Seq("weed")
   val disasterLemmas = Seq("flood", "bird", "attack")
 
   def getContextPerMention(mentions: Seq[Mention], doc: Document): Seq[Mention]
@@ -46,9 +48,13 @@ trait ContextExtractor {
       "harvesting"
     } else if (lemmas.exists(l => creditLemmas.contains(l))) {
       "credit"
+    } else if (lemmas.exists(l => irrigationLemmas.contains(l))) {
+      "irrigation"
+    } else if (lemmas.exists(l => weedsLemmas.contains(l))) {
+      "weeds"
     } else if (lemmas.exists(l => disasterLemmas.contains(l))) {
       "natural_disaster"
-    } else "planting" // for now assume anything else is planting //sentVerbs.filter(w => !stopVerbs.contains(w)).mkString("::") // for checking verbal triggers
+    } else "UNK"
     process
   }
 

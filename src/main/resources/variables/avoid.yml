@@ -1,0 +1,17 @@
+taxonomy: org/clulab/openie/entities/grammar/taxonomy.yml
+
+rules:
+
+  - name: "publication-year"
+    label: Avoid
+    priority: ${rulepriority}
+    type: token
+    pattern: |
+      (?<=[tag=NNP] "et" /al|al./ "("? ) /[12]\d\d\d/ 
+
+  - name: "statistical-significance-p"
+    label: Avoid
+    priority: ${rulepriority}
+    type: token
+    pattern: |
+      [word = /^(P|p)$/] (?=[word = "<"])

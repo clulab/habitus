@@ -1,30 +1,29 @@
 
 ### Crop assignment rules
 
-# used for finding crops that are not in the lexicon #todo: add tests for this
 - name: crop-assignment-cop-1
   priority: ${rulepriority}
   label: CropAssignment
   graph: "hybrid"
-  example: "The most important crop is buckwheat"
+  example: "The most important crop is rice"
   pattern: |
     trigger = [lemma = "be"]
     variable:GenericCrop = <cop /nsubj/
-    value:Noun = <cop 
+    value:Crop = <cop 
 
 - name: crop-assignment-cop-2
   priority: ${rulepriority}
   label: CropAssignment
   graph: "hybrid"
-  example: "Buckwheat is the most important crop"
+  example: "rice is the most important crop"
   pattern: |
     trigger = [lemma = "be"]
     variable:GenericCrop = <cop 
-    value:Noun = <cop /nsubj/
+    value:Crop = <cop /nsubj/
 
 # Assignments for crops extracted with a lexicon
 
-- name: crop-assignment-cop-3
+- name: crop-assignment-verb-1
   priority: ${rulepriority}
   label: CropAssignment
   example: "Some farmers use variety like Sahel 108. They chose furthermore to grow only one cultivar Sahel 108."#Some farmers use cultivar such as Sahel 108.
@@ -34,7 +33,7 @@
     variable:GenericCrop = dobj
     value:Crop = dobj? /nmod_such_as|nmod_like/
 
-- name: crop-assignment-verb
+- name: crop-assignment-verb-2
   priority: ${rulepriority}
   label: CropAssignment
   example: "Most farmers in the SRV plant Sahel 108"
@@ -42,7 +41,7 @@
   pattern: |
     (?<variable>[lemma = /plant|grow/]) /.*/{,3} @value:Crop
 
-- name: crop-assignment-cop-4
+- name: crop-assignment-cop-3
   priority: ${rulepriority}
   label: CropAssignment
   example: "Other crops cultivated include millet"
@@ -52,14 +51,14 @@
     variable:GenericCrop = /nsubj/
     value:Crop = /dobj/
 
-- name: crop-assignment-cop-5
+- name: crop-assignment-cop-4
   priority: ${rulepriority}
   label: CropAssignment
   type: token
   pattern: |
     @variable:GenericCrop (?<trigger> [lemma=/on|in|beyond/])? @value:Crop
 
-- name: crop-assignment-cop-6
+- name: crop-assignment-verb-3
   priority: ${rulepriority}
   label: PlantingEvent
   type: token
@@ -231,22 +230,26 @@
   action: fertilizerEventToRelation
   pattern: |
     trigger = @GenericFertilizer
-    value:Noun = (</compound/ | /compound/) [!lemma = /usage/]
+    value:Fertilizer = (</compound/ | /compound/) [!lemma = /usage/]
 
-- name: ${label}-yield-event-1
-  priority: ${rulepriority}
-  label: YieldAmount
-  type: token
-  pattern: |
-    @variable:Yield []+ @value:Quantity
-    
 - name: ${label}-yield-event
   priority: ${rulepriority}
   label: YieldAmount
   type: token
-  action: splitIntoBinary
+  action: yieldAmountActionFlow
   pattern: |
-    @variable:Yield []*? @value:Quantity  ([]+? (","|"and") @value:Quantity)*
+    @variable:Yield []+? @value:Quantity+ ([]*? (","|"and")? @value:Quantity)*
+
+# this one is pretty specific and is there to capture an unfortunate parse
+- name: planting-yield-amount
+  priority: ${rulepriority}
+  label: YieldAmount
+  graph: "hybrid"
+  example: "The potential grain yield that can be obtained ranges from 8 to 9 t ha-1 in the wet season (July sowing) and from 6 to 11 t ha-1 in the dry season (February sowing)"
+  pattern: |
+    trigger = [lemma=/range/]
+    variable:Yield = /A1/
+    value:Quantity = /Ax_from/ /nmod_in/ /conj_and/
 
 #Todo: Some event rule for assigning wet/dry seasons period to the respective labels.
 - name: ${label}-dry-season-event
@@ -254,32 +257,42 @@
   label: DrySeasonAssignment
   type: token
   pattern: |
-    @variable:DrySeason ([]*? @value:Date)
+    @variable:DrySeason ([]*? @value:Months)
 
 - name: ${label}-wet-season-event
   priority: ${rulepriority}
   label: WetSeasonAssignment
   type: token
   pattern: |
-    @variable:WetSeason []*? @value:Date
+    @variable:WetSeason []*? @value:Months
 
 - name: ${label}-fertilizer-event
   priority: ${rulepriority}
   label: FertilizerQuantity
+  action: fertilizerQuantityActionFlow
   type: token
   pattern: |
-    @variable:Fertilizer []*? @value:Quantity
+    @variable:Fertilizer []+? @value:Quantity+ ([]*? (","|"and")? @value:Quantity)*
 
 - name: ${label}-crop-property-event
   priority: ${rulepriority}
   label: PropertyAssignment
   type: token
   pattern: |
-    @variable:Crop []+?  @value:Duration
+    @variable:Crop []{,7}  @value:Duration
 
 - name: ${label}-grain-property-event
   priority: ${rulepriority}
   label: PropertyAssignment
   type: token
   pattern: |
-    @variable:Crop  []+?  @value:GrainProperty
+    @variable:Crop  []{,7} @value:GrainProperty
+
+- name: measurement-rule-mg
+  priority: ${rulepriority}
+  label: Quantity
+  type: token
+  action: makeEventFromSplitUnit
+  example: "P and K concentrations in irrigation and floodwater were estimated at 0.1 mg P l-1 and 3.2 mg K l-1"
+  pattern: |
+    (?<number>[entity='B-MEASUREMENT']) (?<unit1>[entity = 'I-MEASUREMENT']*)  (?<fertilizer> [entity = 'B-FERTILIZER'])  (?<unit2>[word=/\w\-1/])
