@@ -724,9 +724,7 @@ class TestVariableReader extends Test {
       Seq(
         ("yields", Seq(("1 t / ha", "1.0 t/ha")))
       )
-    ),
-
-
+    )
   )
 
   variableTests.zipWithIndex.foreach { case (variableTest, index) => variableTest.test(index) }
