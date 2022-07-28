@@ -105,7 +105,7 @@ package object utils {
     b.arguments foreach {
       case (argName, ms) =>
         ms foreach { v =>
-          println(s"\t$argName ${v.labels.mkString("(", ", ", ")")} => ${v.text} Norm ${v.norms.mkString("::")}")
+          println(s"\t$argName ${v.labels.mkString("(", ", ", ")")} => ${v.text}")
         }
     }
   }
