@@ -14,12 +14,11 @@ object MentionInfo {
   val windowSize: Int = config[Int]("VarDatesReader.contextWindowSize")
 
   def apply(mention: Mention, inputFilename: String): MentionInfo = {
-    val document = mention.document
     val sentences = mention.document.sentences
     val mentionRange = Interval(mention.sentence).indices
     val sentRange = Range(mentionRange.start - windowSize, mentionRange.end + windowSize).intersect(sentences.indices)
     val contextWindow = sentRange.map(sentences(_).getSentenceText).mkString(" ")
-    val sentenceText = document.sentences(mention.sentence).getSentenceText
+    val sentenceText = sentences(mention.sentence).getSentenceText
     val label = mention.label
     new MentionInfo(contextWindow, sentenceText, inputFilename, label)
   }
