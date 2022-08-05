@@ -238,7 +238,7 @@
   type: token
   action: yieldAmountActionFlow
   pattern: |
-    (?<![lemma =/^(increase|decrease)$/]) @variable:Yield [!lemma = /^(increase|decrease)$/]+? @value:Quantity+ ([]*? (","|"and")? @value:Quantity)* (?![word="more"])
+    (?<![lemma =/^(increase|decrease)$/]) @variable:Yield [!lemma = /^(increase|decrease)$/]+? @value:Quantity+ ([!lemma = /^(increase|decrease|yield)$/]*? (","|"and")? @value:Quantity)* (?![word="more"])
 
 - name: yield-increase-event
   priority: ${rulepriority}
