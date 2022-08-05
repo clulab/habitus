@@ -4,8 +4,9 @@ import org.clulab.habitus.variables.EntityDistFreq
 import org.clulab.odin.{Attachment, Mention}
 import org.clulab.processors.{Document, Sentence}
 import org.clulab.struct.Interval
-import scala.util.control.Breaks._
 
+import scala.collection.immutable.ListMap
+import scala.util.control.Breaks._
 import scala.collection.{breakOut, mutable}
 import scala.collection.mutable.ArrayBuffer
 
@@ -20,42 +21,61 @@ trait ContextExtractor {
   val NA = "N/A"
   val maxContextWindow = 2
 
-  val plantingLemmas = Seq("plant", "sow", "cultivate", "cultivation", "grow")
-  val creditLemmas = Seq("credit", "finance", "value")
-  val harvestLemmas = Seq("harvest", "yield")
-  val irrigationLemmas = Seq("irrigation", "irrigate")
-  val weedsLemmas = Seq("weed")
-  val disasterLemmas = Seq("flood", "bird", "attack")
+//  val plantingLemmas = Seq("plant", "sow", "cultivate", "cultivation", "grow")
+//  val creditLemmas = Seq("credit", "finance", "value")
+//  val harvestLemmas = Seq("harvest", "yield")
+//  val irrigationLemmas = Seq("irrigation", "irrigate")
+//  val weedsLemmas = Seq("weed")
+//  val disasterLemmas = Seq("flood", "bird", "attack")
+val processToLemmas = ListMap(
+  "planting"         -> Set("plant", "sow", "cultivate", "cultivation", "grow", "seed", "seeding", "seedling", "transplant", "cropping"),
+  "harvesting"       -> Set("harvest", "yield"),
+  "credit"           -> Set("credit", "finance", "value"),
+  "irrigation"       -> Set("irrigation", "irrigate"),
+  "weeds"            -> Set("weed"),
+  "natural_disaster" -> Set("flood", "bird", "attack", "floodwater")
+)
+
 
   def getContextPerMention(mentions: Seq[Mention], doc: Document): Seq[Mention]
 
   def getProcess(mention: Mention): String = {
 
     // for checking verbal triggers
-//    val stopVerbs = Seq("be", "go")
-//    val sentVerbs = new ArrayBuffer[String]()
-//    val sentLemmas = mention.sentenceObj.lemmas.get
-//    for ((tag, i) <- mention.sentenceObj.tags.get.zipWithIndex) {
-//      if (tag.startsWith("VB")) {
-//        sentVerbs.append(sentLemmas(i))
-//      }
-//    }
+    //    val stopVerbs = Seq("be", "go")
+    //    val sentVerbs = new ArrayBuffer[String]()
+    //    val sentLemmas = mention.sentenceObj.lemmas.get
+    //    for ((tag, i) <- mention.sentenceObj.tags.get.zipWithIndex) {
+    //      if (tag.startsWith("VB")) {
+    //        sentVerbs.append(sentLemmas(i))
+    //      }
+    //    }
 
-    val lemmas = mention.sentenceObj.lemmas.get
-    val process = if (lemmas.exists(l => plantingLemmas.contains(l))) {
-      "planting"
-    } else if (lemmas.exists(l => harvestLemmas.contains(l))) {
-      "harvesting"
-    } else if (lemmas.exists(l => creditLemmas.contains(l))) {
-      "credit"
-    } else if (lemmas.exists(l => irrigationLemmas.contains(l))) {
-      "irrigation"
-    } else if (lemmas.exists(l => weedsLemmas.contains(l))) {
-      "weeds"
-    } else if (lemmas.exists(l => disasterLemmas.contains(l))) {
-      "natural_disaster"
-    } else "UNK"
-    process
+
+//    val lemmaIntersectCount = processToLemmas.map(processlemmas => processlemmas._2.intersect(mention.lemmas.get.toSet).toList.length)
+
+
+
+    // get a wider window of lemmas here from sentenceObj
+    val mentionStartIndex = mention.tokenInterval.start
+    println(mentionStartIndex)
+    val mentionEndIndex = mention.tokenInterval.end
+    println(mentionEndIndex)
+    val windowSize = 10
+    val minusWindowStartIndex = mentionStartIndex - windowSize
+    println(minusWindowStartIndex)
+    val plusWindowStartIndex = mentionEndIndex + windowSize
+    println(plusWindowStartIndex)
+    val lemmas = mention.sentenceObj.lemmas.get.toSet.toList.slice(minusWindowStartIndex, plusWindowStartIndex)
+    println(lemmas)
+
+    var lemmaOverlapCounts = processToLemmas.map(p => (p._1, p._2.intersect(lemmas.toSet).toList.length))
+    println(lemmaOverlapCounts)
+    // find max overlap
+    val maxOverlap = lemmaOverlapCounts.map(_._2).max
+    println(maxOverlap)
+    // filter out processes in lemmaOverlapCounts that are less than maximum overlap
+    lemmaOverlapCounts.filter(_._2 == maxOverlap).map(_._1).mkString("::")
   }
 
   def getComparative(mention: Mention): Int = {
