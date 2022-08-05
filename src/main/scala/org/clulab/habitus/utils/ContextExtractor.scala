@@ -33,7 +33,8 @@ val processToLemmas = ListMap(
   "credit"           -> Set("credit", "finance", "value"),
   "irrigation"       -> Set("irrigation", "irrigate"),
   "weeds"            -> Set("weed"),
-  "natural_disaster" -> Set("flood", "bird", "attack", "floodwater")
+  "natural_disaster" -> Set("flood", "bird", "attack", "floodwater"),
+  "fertilizerApplication" -> Set("fertilizer", "application", "apply", "compost")
 )
 
 
