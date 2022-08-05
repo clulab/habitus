@@ -431,7 +431,15 @@ class TestVariableReaderLabelBased extends Test {
     ),
     VariableTest(
       passingTest,
-      "sent36", "Following these findings , Haefele et al. ( 2000 , 2001 ) conducted on-farm trials and found that improved nutrient management increased yields by about 1 t / ha in farmers ' fields .",
+      "sent36", " Haefele et al. ( 2000 , 2001 ) report that improved weed management practices resulted in yield increase of about 1 t / ha in the SRV .",
+      "YieldIncrease",
+      Seq(
+        ("Yield", Seq(("1 t / ha", "1.0 t/ha"))),
+      )
+    ),
+    VariableTest(
+      passingTest,
+      "sent37", "Following these findings , Haefele et al. ( 2000 , 2001 ) conducted on-farm trials and found that improved nutrient management increased yields by about 1 t / ha in farmers ' fields .",
       "YieldAmount",
       Seq.empty
     ),
