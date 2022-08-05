@@ -724,15 +724,6 @@ class TestVariableReader extends Test {
       Seq(
         ("yields", Seq(("1 t / ha", "1.0 t/ha")))
       )
-    ),
-    VariableTest(
-      passingTest,
-      "fix18", "III ) , the increase in irrigation frequency alone could not explain the increase in rice yield with the Jaya cultivar ( 1.7 t ha-1 in 1999 and 2.7 t ha-1 in 2000 ) .",
-      "YieldIncrease",
-      Seq(
-        ("yield", Seq(("1.7 t / ha-1", "1.7 t/ha"))),
-        ("yield", Seq(("2.7 t / ha-1", "2.7 t/ha")))
-      )
     )
   )
 
