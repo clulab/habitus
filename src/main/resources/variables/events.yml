@@ -142,23 +142,23 @@
   pattern: |
     (?<trigger> [lemma=with])? @variable:Planting (("," | "and")* @value:Crop)+ @value:Date?
 
-### Planting Area Events
+### Area Events
 
 - name: area-size-rule1
   priority: ${rulepriority}
-  label: PlantingArea
+  label: AreaSize
   action: areaVarActionFlow
   type: token
   pattern: |
-    @variable:Area ( []+? @value:AreaSize )+ | @variable:Area ( []+? @value:Percentage )+ 
+    @variable:GenericArea ( []+? @value:AreaSizeValue )+ | @variable:GenericArea ( []+? @value:Percentage )+ 
 
 - name: area-size-rule2
   priority: ${rulepriority}
-  label: PlantingArea
+  label: AreaSize
   action: areaVarActionFlow
   type: token
   pattern: |
-    ( @value:AreaSize []+? )+ @variable:Area | ( @value:Percentage []+? )+ @variable:Area 
+    ( @value:AreaSizeValue []+? )+ @variable:GenericArea | ( @value:Percentage []+? )+ @variable:GenericArea 
 
 ### Bird attack events
 

@@ -43,10 +43,11 @@
 
 - name: variable-area
   priority: ${rulepriority}
-  label: Area
+  label: GenericArea
   type: token
   pattern: |
-    ([lemma=/cultivate|plant|sow/])? [lemma=/area/] ([lemma=/sow/])?
+    [lemma=/area/]
+#    ([lemma=/cultivate|plant|sow/])? [lemma=/area/] ([lemma=/sow/])?
 
 - name: variable-fertilizer
   priority: ${rulepriority}
@@ -120,7 +121,7 @@
 
 - name: area-size-entity-rule
   priority: ${rulepriority}
-  label: AreaSize
+  label: AreaSizeValue
   type: token
   action: appropriateMeasurement
   pattern: |

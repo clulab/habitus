@@ -58,7 +58,7 @@ class TestDefaultContextAttachment extends Test {
     DefaultContextAttachmentTest(
       "sent-1",
       "The area sown with rice and fertilized with urea for this 2021/2022 wintering campaign is 28,223 ha in wintering in Senegal.",
-      "PlantingArea",
+      "AreaSize",
       Desired(
         location = "Senegal",
         date = "2021/2022",
@@ -74,7 +74,7 @@ class TestDefaultContextAttachment extends Test {
         // 2) absent contexts are stored as N/A
       "sent-2",
       "This is a sentence about Senegal. The area sown for this 2021/2022 wintering campaign is 28,223 ha in wintering. All of this happened in Senegal, not the U.S.",
-      "PlantingArea",
+      "AreaSize",
       Desired(
         location = "Senegal",
         date = "2021/2022",
@@ -88,7 +88,7 @@ class TestDefaultContextAttachment extends Test {
       // 2) comparative is present
       "sent-3",
       "The areas sown for this 2021/2022 wintering campaign are 28,223 ha in Senegal vs 35,065 ha in the U.S.",
-      "PlantingArea",
+      "AreaSize",
       Desired(
         location = "Senegal",
         date = "2021/2022",

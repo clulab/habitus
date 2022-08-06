@@ -357,22 +357,22 @@ class TestVariableReaderLabelBased extends Test {
     VariableTest(
       passingTest,
       "sent21_11", "28,223 ha vs 35,065 ha were used as sown areas.",
-      "PlantingArea",
-      Seq(("Area", Seq(("28,223 ha", "28223.0 ha"))))
+      "AreaSize",
+      Seq(("GenericArea", Seq(("28,223 ha", "28223.0 ha"))))
       //note: currently not extracting values after vs.
     ),
     VariableTest(
       passingTest,
       "sent21_12", "The areas sown for this 2021/2022 wintering campaign are 28,223 ha vs 35,065 ha in wintering.",
-      "PlantingArea",
-      Seq(("Area", Seq(("28,223 ha", "28223.0 ha"))))
+      "AreaSize",
+      Seq(("GenericArea", Seq(("28,223 ha", "28223.0 ha"))))
       //note: currently not extracting values after vs.
     ),
     VariableTest(
       passingTest,
       "sent21_13", "Harvests have started in some production areas of the valley, to date an area estimated at 843 ha is already harvested in  the Delta, 199 ha in Matam, 31 ha in Bakel, and 23 ha in Dagana.",
-      "PlantingArea",
-      Seq(("Area", Seq(("843 ha", "843.0 ha"), ("199 ha", "199.0 ha"), ("31 ha", "31.0 ha"), ("23 ha", "23.0 ha"))))
+      "AreaSize",
+      Seq(("GenericArea", Seq(("843 ha", "843.0 ha"), ("199 ha", "199.0 ha"), ("31 ha", "31.0 ha"), ("23 ha", "23.0 ha"))))
     ),
     VariableTest(
       passingTest,

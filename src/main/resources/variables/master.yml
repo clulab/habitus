@@ -27,8 +27,8 @@ taxonomy:
     - GenericFertilizer
     - Duration
     - GrainProperty
-    - Area
-    - AreaSize
+    - GenericArea
+    - AreaSizeValue
     - Percentage
     - Months
   - Event:
@@ -36,7 +36,7 @@ taxonomy:
     - BirdAttackEvent
     - CropAssignment
     - FertilizerAssignment
-    - PlantingArea
+    - AreaSize
     - PlantingEvent
     - PlantingDate
     - YieldAmount

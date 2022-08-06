@@ -328,7 +328,7 @@ class TestEntities extends Test {
       "Average DS T0 yield was relatively low, i.e. 4.4 t ha-1 (ranging from 2.5 to 6.0 t ha-1)",
       Seq(
         "Yield" -> Seq("yield"),
-        "AreaSize" -> Seq.empty
+        "AreaSizeValue" -> Seq.empty
       )
     ),
     VariableTest(
