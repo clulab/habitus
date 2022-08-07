@@ -115,6 +115,15 @@ class TestDefaultContextAttachment extends Test {
         crop = "Sahel 202",
         comparative = "0"
       )
+    ),
+    DefaultContextAttachmentTest(
+      "sent-5",
+      "We want to make a paragraph that has more than six sentences to test how a document level entity filter works. This is the second sentence. The next sentence contains the target mention. At PI , high levels of weed infestation ( weed cover / 10 % of the area ) was observed in 33 out the 50 direct-seeded plots and only 11 out the 37 transplanted plots. We want the acronym for `panicle initiation` to not be extracted as a location. This is sentence six. And finally, sentence seven.",
+      "AreaSize",
+      Desired(
+        process = "weeds",
+        comparative = "0"
+      )
     )
   )
 
