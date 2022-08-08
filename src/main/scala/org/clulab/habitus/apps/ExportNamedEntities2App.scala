@@ -1,50 +1,106 @@
 package org.clulab.habitus.apps
 
-import org.clulab.dynet.Utils
-import org.clulab.habitus.HabitusProcessor
-import org.clulab.sequences.LexiconNER
 import org.clulab.struct.Counter
 import org.clulab.utils.Closer.AutoCloser
 import org.clulab.utils.{FileUtils, Sourcer, StringUtils}
 import org.clulab.wm.eidoscommon.utils.TsvReader
 
-import java.io.File
-import scala.collection.mutable.ArrayBuffer
-import scala.util.{Failure, Try}
+import java.io.{File, PrintWriter}
 
 object ExportNamedEntities2App extends App {
   val inputFileName = args.lift(0).getOrElse("../corpora/SAED100/error_analysis/baseline_non_entities.csv")
-  val inputDirName = args.lift(1).getOrElse("../corpora/SAED100")
-  val outputFileName = args.lift(1).getOrElse("../docs/SAED100.conll")
+  val inputDirName = args.lift(1).getOrElse("../corpora/SAED100/SAED100-linux")
+  val correctedOutputFileName = args.lift(1).getOrElse("../corpora/SAED100/SAED100.conll")
+  val uncorrectedOutputFileName = correctedOutputFileName + ".uncorrected"
 
-  val processor = {
-    val lexiconNER = LexiconNER(
-      Seq(
-        "lexicons/FERTILIZER.tsv", // VariableProcessor
-        "lexicons/CROP.tsv",       // VariableProcessor
-        "lexicons/ACTOR.tsv"       // BeliefProcessor & InterviewsProcessor
-      ),
-      Seq(
-        true, // FERTILIZER is case insensitive.
-        true, // CROP
-        true  // ACTOR
-      ),
-      None
-    )
+  val badNamedEntityWords: Array[Array[String]] = new NonEntitiesFile(inputFileName).load()
+  val badNamedEntityFoundCounts = new Counter[Array[String]]()
+  val badNamedEntityCorrectedCounts = new Counter[Array[String]]()
+  val inputFiles = FileUtils.findFiles(inputDirName, ".txt.restored.out")
 
-    Utils.initializeDyNet()
-    new HabitusProcessor(Some(lexiconNER), filter = false)
+  new ConllFile(uncorrectedOutputFileName).autoClose { uncorrectedConllFile =>
+    new ConllFile(correctedOutputFileName).autoClose { conllFile =>
+      inputFiles.foreach { inputFile =>
+        Sourcer.sourceFromFile(inputFile).autoClose { source =>
+          val lines = source.getLines()
+
+          while ({
+            val sentenceLines = lines.takeWhile(_.nonEmpty).toArray
+            val (sentenceWords, entities) = {
+              val parts = sentenceLines.map(_.split('\t'))
+              val words = parts.map(_ (0))
+              val entities = parts.map(_ (1))
+
+              (words, entities)
+            }
+            val lowerSentenceWords = sentenceWords.map(_.toLowerCase)
+            val newEntities = entities.clone
+            val found = badNamedEntityWords.foldLeft(false) { (found, entityWords) =>
+              val sliceIndex = lowerSentenceWords.indexOfSlice(entityWords)
+
+              if (sliceIndex >= 0) {
+                val range = Range(sliceIndex, sliceIndex + entityWords.length)
+                val foundEntities = entities.slice(range.start, range.end)
+
+                badNamedEntityFoundCounts.incrementCount(entityWords)
+                if (foundEntities.exists(_ != "O")) {
+                  // Make sure first one corrected not I-
+                  // One after last corrected is not I-
+                  // Want only to change values that NER would have added, so LOC is OK?
+
+                  badNamedEntityCorrectedCounts.incrementCount(entityWords)
+                  range.foreach(newEntities(_) = "O")
+                }
+                true
+              }
+              else found
+            }
+
+            if (found) {
+              conllFile.save(sentenceWords, newEntities)
+              uncorrectedConllFile.save(sentenceWords, entities)
+            }
+            sentenceLines.nonEmpty
+          }) {}
+        }
+      }
+    }
   }
-  val badNamedEntities: Array[String] = loadNamedEntities(inputFileName)
-  val badNamedEntityWords: Array[Array[String]] = parseNamedEntities(badNamedEntities)
-  val badNamedEntityFoundCounts = new Counter[Seq[String]]()
-  val badNamedEntityCorrectedCounts = new Counter[Seq[String]]()
+  println("key\tfound\tcorrected")
+  badNamedEntityWords.foreach { badNamedEntity =>
+    val key = badNamedEntity
+    val found = badNamedEntityFoundCounts.getCount(key)
+    val corrected = badNamedEntityCorrectedCounts.getCount(key)
 
-  def loadNamedEntities(inputFileName: String): Array[String] = {
+    println(s"${key.mkString(" ")}\t$found\t$corrected")
+  }
+}
+
+class ConllFile(fileName: String) extends AutoCloseable {
+  val printWriter = {
+    val printWriter = FileUtils.printWriterFromFile(new File(fileName))
+
+    printWriter.print("-DOCSTART-\t0\n\t\n")
+    printWriter
+  }
+
+  def close(): Unit = printWriter.close()
+
+  def save(words: Array[String], entities: Array[String]): Unit = {
+    words.zip(entities).foreach { case (word, entity) =>
+      printWriter.print(s"$word\t$entity\n")
+    }
+    printWriter.print("\t\n")
+  }
+}
+
+class NonEntitiesFile(fileName: String) {
+
+  protected def loadNamedEntities(): Array[String] = {
 
     def isOdd(string: String): Boolean = string.count(_ == '"') % 2 != 0
 
-    val fields = Sourcer.sourceFromFile(new File(inputFileName)).autoClose { source =>
+    val fields = Sourcer.sourceFromFile(new File(fileName)).autoClose { source =>
       val lines = source.getLines().drop(1).toVector // skip header
       val recordIndexes = lines.zipWithIndex.scanLeft((-1, false, 0)) { case ((recordIndex: Int, inside: Boolean, _lineIndex: Int), (line: String, lineIndex: Int)) =>
         val odd = isOdd(line)
@@ -67,7 +123,7 @@ object ExportNamedEntities2App extends App {
     fields.toArray
   }
 
-  def parseNamedEntities(fields: Array[String]): Array[Array[String]] = {
+  protected def parseNamedEntities(fields: Array[String]): Array[Array[String]] = {
     val splitFields: Array[String] = fields.flatMap { field =>
       if (field.startsWith("\"")) {
         require(field.endsWith("\""))
@@ -87,70 +143,11 @@ object ExportNamedEntities2App extends App {
         .map(_.split(' '))
   }
 
-  Sourcer.sourceFromFile(new File(inputFileName)).autoClose { source =>
-    val tsvReader = new TsvReader()
 
-    FileUtils.printWriterFromFile(new File(outputFileName)).autoClose { printWriter =>
-      printWriter.print("-DOCSTART-\t0\n\t\n")
-      source.getLines.drop(1).foreach { line =>
-        println(line)
-        val Array(_ /*animate*/, _ /*correct*/, _ /*ranking*/, _ /*comments*/, text) = tsvReader.readln(line)
-        val document = processor.mkDocumentWithRestoreCase(text) // .mkDocument(text)
-        val trial =
-            if (document.sentences.length > 0) {
-              val trial = Try { processor.annotate(document) }
+  def load(): Array[Array[String]] = {
+    val badNamedEntities: Array[String] = loadNamedEntities()
+    val badNamedEntityWords: Array[Array[String]] = parseNamedEntities(badNamedEntities)
 
-              if (trial.isFailure)
-                println("Failed!")
-              trial
-            }
-            else
-              Failure(new RuntimeException("There should be sentences."))
-
-        if (trial.isSuccess && document.sentences.length == 1) {
-          val words = document.sentences.head.words.map(_.toLowerCase) // because of restoreCase
-          val foundBadNamedEntityWords = badNamedEntityWords.filter(words.containsSlice(_))
-
-          if (foundBadNamedEntityWords.nonEmpty) {
-            foundBadNamedEntityWords.foreach(badNamedEntityFoundCounts.incrementCount(_))
-            processor.annotate(document)
-            val oldEntities = document.sentences.head.entities.get
-            val newEntities = {
-              val newEntities = oldEntities.clone()
-
-              foundBadNamedEntityWords.foreach { badNamedEntityWords =>
-                val index = words.indexOfSlice(badNamedEntityWords)
-                val range = Range(index, index + badNamedEntityWords.length)
-                val corrected = range.exists { index => oldEntities(index) != "O" }
-
-                if (corrected) {
-                  range.foreach { index => newEntities(index) = "O" }
-                  badNamedEntityCorrectedCounts.incrementCount(badNamedEntityWords)
-                }
-              }
-              newEntities
-            }
-            // == on Arrays doesn't work.
-            val changed = words.indices.exists { index => newEntities(index) != oldEntities(index) }
-
-            if (changed) {
-              words.indices.foreach { index =>
-//                printWriter.print(s"${words(index)}\t${oldEntities(index)}\t${newEntities(index)}\n")
-                printWriter.print(s"${words(index)}\t${newEntities(index)}\n")
-              }
-              printWriter.print("\t\n")
-            }
-          }
-        }
-      }
-    }
-  }
-  println("key\tfound\tcorrected")
-  badNamedEntityWords.foreach { badNamedEntity =>
-    val key = badNamedEntity
-    val found = badNamedEntityFoundCounts.getCount(key)
-    val corrected = badNamedEntityCorrectedCounts.getCount(key)
-
-    println(s"${key.mkString(" ")}\t$found\t$corrected")
+    badNamedEntityWords
   }
 }
