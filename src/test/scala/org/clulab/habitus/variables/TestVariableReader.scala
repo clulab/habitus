@@ -714,7 +714,7 @@ class TestVariableReader extends Test {
       "fix16", "Rice yields increased significantly as a result of an extra late N application on top of two N-dressings with a total of about 120 kg N ha-1 in farmer fields.",
       "FertilizerQuantity",
       Seq(
-        ("N", Seq(("120 kg N ha-1", "120.0 kg n ha-1")))
+        ("N", Seq(("120 kg N ha-1", "120.0 kg/ha")))
       )
     ),
     VariableTest(
