@@ -284,7 +284,9 @@
   action: fertilizerQuantityActionFlow
   type: token
   pattern: |
-    @variable:Fertilizer []+? @value:Quantity+ ([]*? (","|"and")? @value:Quantity)*
+    @variable:Fertilizer []+? @value:Quantity+ ([]*? (","|"and")? @value:Quantity)* 
+    |
+    @value:Quantity "of" @variable:Fertilizer
 
 - name: ${label}-crop-property-event
   priority: ${rulepriority}

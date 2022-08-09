@@ -724,6 +724,19 @@ class TestVariableReader extends Test {
       Seq(
         ("yields", Seq(("1 t / ha", "1.0 t/ha")))
       )
+    ),
+    VariableTest(
+      passingTest,
+      "fix18", "In the 1999 and 2000WS , farmers ordered 3 tonnes of diammonium-phosphate ( 18 % N , 20 % P ) and 5.5 tonnes of urea ( 46 % N ) with planned application rates of 100 kg diammonium-phosphate ha-1 and 200 kg urea ha-1 , i.e. 20 kg P ha-1 and 110 kg N ha-1 .",
+      "FertilizerQuantity",
+      Seq(
+        ("diammonium-phosphate", Seq(("3 tonnes", "3.0 t"))),
+        ("urea", Seq(("5.5 tonnes", "5.5 t"))),
+        ("diammonium-phosphate", Seq(("100 kg diammonium-phosphate ha-1", "100.0 kg/ha"))),
+        ("urea", Seq(("200 kg urea ha-1", "200.0 kg/ha"))),
+        ("P", Seq(("20 kg P ha-1", "20.0 kg/ha"))),
+        ("N", Seq(("110 kg N ha-1", "110.0 kg/ha")))
+      )
     )
   )
   variableTests.zipWithIndex.foreach { case (variableTest, index) => variableTest.test(index) }
