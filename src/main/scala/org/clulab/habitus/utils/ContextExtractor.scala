@@ -42,25 +42,24 @@ val processToLemmas = ListMap(
   def getProcess(mention: Mention): String = {
 
 //    Getting process lemma from the mention
-//    val seasonLemmas = seasonToLemmas.map(seasonLemma => seasonLemma._2.intersect(mention.lemmas.get.toSet).toList)
-//    println(seasonLemmas)
-
-    // get a wider window of lemmas here from sentenceObj
-    val mentionStartIndex = mention.tokenInterval.start
-    val mentionEndIndex = mention.tokenInterval.end
-    val windowSize = 10
-    val minusWindowStartIndex = mentionStartIndex - windowSize
-    val plusWindowStartIndex = mentionEndIndex + windowSize
-    val lemmas = mention.sentenceObj.lemmas.get.toSet.toList.slice(minusWindowStartIndex, plusWindowStartIndex)
-    println(lemmas)
-
-    val lemmaOverlapCounts = processToLemmas.map(p => (p._1, p._2.intersect(lemmas.toSet).toList.length))
-    println(lemmaOverlapCounts)
-    // find max overlap
-    val maxOverlap = lemmaOverlapCounts.values.max
-    println(maxOverlap)
-    // filter out processes in lemmaOverlapCounts that are less than maximum overlap
-    lemmaOverlapCounts.filter(_._2 == maxOverlap).keys.mkString("::")
+    val mentionLemmas = mention.lemmas
+    val mensLemmaOverLap = processToLemmas.map(p => (p._1, p._2.intersect(mentionLemmas.get.toSet).toList.length))
+    if (mensLemmaOverLap.values.max != 0) {
+      mensLemmaOverLap.filter(_._2 == mensLemmaOverLap.values.max).keys.mkString("::")
+    } else {
+      // get a wider window of lemmas here from sentenceObj
+      val mentionStartIndex = mention.tokenInterval.start
+      val mentionEndIndex = mention.tokenInterval.end
+      val windowSize = 10
+      val minusWindowStartIndex = mentionStartIndex - windowSize
+      val plusWindowStartIndex = mentionEndIndex + windowSize
+      val lemmas = mention.sentenceObj.lemmas.get.toSet.toList.slice(minusWindowStartIndex, plusWindowStartIndex)
+      val lemmaOverlapCounts = processToLemmas.map(p => (p._1, p._2.intersect(lemmas.toSet).toList.length))
+      // find max overlap
+      val maxOverlap = lemmaOverlapCounts.values.max
+      // filter out processes in lemmaOverlapCounts that are less than maximum overlap
+      lemmaOverlapCounts.filter(_._2 == maxOverlap).keys.mkString("::")
+    }
   }
 
   def getComparative(mention: Mention): Int = {
