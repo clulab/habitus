@@ -11,7 +11,7 @@ class TestDefaultContextAttachment extends Test {
 
   val NA = "N/A"
 
-  case class Desired(location: String = NA, date: String = NA, process: String = NA, crop: String = NA, fertilizer: String = NA, comparative: String = NA)
+  case class Desired(location: String = NA, date: String = NA, process: String = NA, crop: String = NA, fertilizer: String = NA, wetSeason: String = NA, drySeason: String = NA,  comparative: String = NA)
 
   case class DefaultContextAttachmentTest(
                            name: String,
@@ -114,6 +114,25 @@ class TestDefaultContextAttachment extends Test {
         date = "2000WS",
         process = "UNK",
         crop = "Sahel 202",
+        comparative = "0"
+      )
+    ),
+//    DefaultContextAttachmentTest(
+//      "sent-5",
+//      "Average rice yield is generally high in both wet and dry seasons at 5.4 and 6.6 t / ha , respectively ; however , there is large variation among farmers ( e.g .",
+//      "Season",
+//      Desired(
+//        wetSeason = "wet season",
+//        drySeason = "dry season",
+//        comparative = "0"
+//      )
+//    )
+    DefaultContextAttachmentTest(
+      "sent-5",
+      "Diagnosis of the 1998 wet season In the 1998WS , farmers sowed Jaya between 20 June and 1 July ( Tab .",
+      "SeasonAssignment",
+      Desired(
+        wetSeason = "wet season",
         comparative = "0"
       )
     )

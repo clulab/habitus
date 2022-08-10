@@ -18,8 +18,9 @@ taxonomy:
     - FertilizerUse
     - Crop
     - Yield
-    - DrySeason
-    - WetSeason
+    - Season:
+      - DrySeason
+      - WetSeason
     - Planting
     - Quantity
     - BirdAttack
@@ -40,8 +41,9 @@ taxonomy:
     - PlantingEvent
     - PlantingDate
     - YieldAmount
-    - WetSeasonAssignment
-    - DrySeasonAssignment
+    - SeasonAssignment:
+      - WetSeasonAssignment
+      - DrySeasonAssignment
     - FertilizerQuantity
     - PropertyAssignment
 

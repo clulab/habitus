@@ -20,6 +20,7 @@ class DefaultContextExtractor extends ContextExtractor {
       val thisSentLocs = thisSentTBMs.filter(_.label == "Location")
       val thisSentCrops = thisSentTBMs.filter(_.label == "Crop")
       val thisSentFerts = thisSentTBMs.filter(_.label == "Fertilizer")
+      val thisSentSeason = thisSentTBMs.filter(_.label == "Season")
       for (m <- thisSentEvents) {
         val context = DefaultContext(
           getContext(m, "Location", thisSentLocs, mentions),
@@ -27,6 +28,7 @@ class DefaultContextExtractor extends ContextExtractor {
           getProcess(m),
           getContext(m, "Crop", thisSentCrops, mentions),
           getContext(m, "Fertilizer", thisSentFerts, mentions),
+          getContext(m, "Season", thisSentSeason, mentions),
           getComparative(m)
         )
 

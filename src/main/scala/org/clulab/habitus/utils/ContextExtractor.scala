@@ -12,7 +12,7 @@ import scala.collection.mutable.ArrayBuffer
 
 trait Context extends Attachment with Pairable
 
-case class DefaultContext(location: String, date: String, process: String, crop: String, fertilizer: String, comparative: Int) extends Context
+case class DefaultContext(location: String, date: String, process: String, crop: String, fertilizer: String, season:String, comparative: Int) extends Context
 
 case class BeliefContext(context: String) extends Context
 
@@ -28,7 +28,7 @@ trait ContextExtractor {
 //  val weedsLemmas = Seq("weed")
 //  val disasterLemmas = Seq("flood", "bird", "attack")
 val processToLemmas = ListMap(
-  "planting"         -> Set("plant", "sow", "cultivate", "cultivation", "grow", "seed", "seeding", "seedling", "transplant", "cropping"),
+  "planting"         -> Set("plant", "sow", "cultivate", "cultivation", "grow", "seed", "seeding", "seedling", "transplant", "cropping", "variety"),
   "harvesting"       -> Set("harvest", "yield"),
   "credit"           -> Set("credit", "finance", "value"),
   "irrigation"       -> Set("irrigation", "irrigate"),
@@ -37,46 +37,30 @@ val processToLemmas = ListMap(
   "fertilizerApplication" -> Set("fertilizer", "application", "apply", "compost")
 )
 
-
   def getContextPerMention(mentions: Seq[Mention], doc: Document): Seq[Mention]
 
   def getProcess(mention: Mention): String = {
 
-    // for checking verbal triggers
-    //    val stopVerbs = Seq("be", "go")
-    //    val sentVerbs = new ArrayBuffer[String]()
-    //    val sentLemmas = mention.sentenceObj.lemmas.get
-    //    for ((tag, i) <- mention.sentenceObj.tags.get.zipWithIndex) {
-    //      if (tag.startsWith("VB")) {
-    //        sentVerbs.append(sentLemmas(i))
-    //      }
-    //    }
-
-
-//    val lemmaIntersectCount = processToLemmas.map(processlemmas => processlemmas._2.intersect(mention.lemmas.get.toSet).toList.length)
-
-
+//    Getting process lemma from the mention
+//    val seasonLemmas = seasonToLemmas.map(seasonLemma => seasonLemma._2.intersect(mention.lemmas.get.toSet).toList)
+//    println(seasonLemmas)
 
     // get a wider window of lemmas here from sentenceObj
     val mentionStartIndex = mention.tokenInterval.start
-    println(mentionStartIndex)
     val mentionEndIndex = mention.tokenInterval.end
-    println(mentionEndIndex)
     val windowSize = 10
     val minusWindowStartIndex = mentionStartIndex - windowSize
-    println(minusWindowStartIndex)
     val plusWindowStartIndex = mentionEndIndex + windowSize
-    println(plusWindowStartIndex)
     val lemmas = mention.sentenceObj.lemmas.get.toSet.toList.slice(minusWindowStartIndex, plusWindowStartIndex)
     println(lemmas)
 
-    var lemmaOverlapCounts = processToLemmas.map(p => (p._1, p._2.intersect(lemmas.toSet).toList.length))
+    val lemmaOverlapCounts = processToLemmas.map(p => (p._1, p._2.intersect(lemmas.toSet).toList.length))
     println(lemmaOverlapCounts)
     // find max overlap
-    val maxOverlap = lemmaOverlapCounts.map(_._2).max
+    val maxOverlap = lemmaOverlapCounts.values.max
     println(maxOverlap)
     // filter out processes in lemmaOverlapCounts that are less than maximum overlap
-    lemmaOverlapCounts.filter(_._2 == maxOverlap).map(_._1).mkString("::")
+    lemmaOverlapCounts.filter(_._2 == maxOverlap).keys.mkString("::")
   }
 
   def getComparative(mention: Mention): Int = {
@@ -113,7 +97,7 @@ val processToLemmas = ListMap(
   }
   def getInstancesInContext(contextType: String, contextSentences: Interval, allMentions: Seq[Mention]): Seq[String] = {
     val instances = {
-        val relevantContextMentions = allMentions.filter(_.label == contextType)
+        val relevantContextMentions = allMentions.filter(_.labels.contains(contextType))
         relevantContextMentions.filter(m => contextSentences.intersect(Seq(m.sentence)).nonEmpty).map(_.text)
       }
     instances
@@ -147,5 +131,3 @@ val processToLemmas = ListMap(
   }
 
 }
-
-
