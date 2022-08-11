@@ -3,9 +3,8 @@ package org.clulab.habitus.apps
 import org.clulab.struct.Counter
 import org.clulab.utils.Closer.AutoCloser
 import org.clulab.utils.{FileUtils, Sourcer, StringUtils}
-import org.clulab.wm.eidoscommon.utils.TsvReader
 
-import java.io.{File, PrintWriter}
+import java.io.File
 
 object ExportNamedEntities2App extends App {
   val inputFileName = args.lift(0).getOrElse("../corpora/SAED100/error_analysis/baseline_non_entities.csv")
@@ -14,6 +13,7 @@ object ExportNamedEntities2App extends App {
   val uncorrectedOutputFileName = correctedOutputFileName + ".uncorrected"
 
   val badNamedEntityWords: Array[Array[String]] = new NonEntitiesFile(inputFileName).load()
+  badNamedEntityWords.foreach { words => println(words.mkString(" ")) }
   val badNamedEntityFoundCounts = new Counter[Array[String]]()
   val badNamedEntityCorrectedCounts = new Counter[Array[String]]()
   val inputFiles = FileUtils.findFiles(inputDirName, ".txt.restored.out")
@@ -21,35 +21,22 @@ object ExportNamedEntities2App extends App {
   new ConllFile(uncorrectedOutputFileName).autoClose { uncorrectedConllFile =>
     new ConllFile(correctedOutputFileName).autoClose { conllFile =>
       inputFiles.foreach { inputFile =>
-        Sourcer.sourceFromFile(inputFile).autoClose { source =>
-          val lines = source.getLines()
-
+        new InputFile(inputFile).autoClose { inputFile =>
           while ({
-            val sentenceLines = lines.takeWhile(_.nonEmpty).toArray
-            val (sentenceWords, entities) = {
-              val parts = sentenceLines.map(_.split('\t'))
-              val words = parts.map(_ (0))
-              val entities = parts.map(_ (1))
-
-              (words, entities)
-            }
+            val (sentenceWords, sentenceEntities) = inputFile.getSentenceWordsAndEntities
             val lowerSentenceWords = sentenceWords.map(_.toLowerCase)
-            val newEntities = entities.clone
+            val newEntities = sentenceEntities.clone
             val found = badNamedEntityWords.foldLeft(false) { (found, entityWords) =>
               val sliceIndex = lowerSentenceWords.indexOfSlice(entityWords)
 
               if (sliceIndex >= 0) {
                 val range = Range(sliceIndex, sliceIndex + entityWords.length)
-                val foundEntities = entities.slice(range.start, range.end)
+                val foundEntities = sentenceEntities.slice(range.start, range.end)
 
                 badNamedEntityFoundCounts.incrementCount(entityWords)
-                if (foundEntities.exists(_ != "O")) {
-                  // Make sure first one corrected not I-
-                  // One after last corrected is not I-
-                  // Want only to change values that NER would have added, so LOC is OK?
-
+                if (NamedEntity.isComplete(sentenceEntities, range)) {
                   badNamedEntityCorrectedCounts.incrementCount(entityWords)
-                  range.foreach(newEntities(_) = "O")
+                  range.foreach(newEntities(_) = NamedEntity.OUTSIDE)
                 }
                 true
               }
@@ -58,9 +45,9 @@ object ExportNamedEntities2App extends App {
 
             if (found) {
               conllFile.save(sentenceWords, newEntities)
-              uncorrectedConllFile.save(sentenceWords, entities)
+              uncorrectedConllFile.save(sentenceWords, sentenceEntities)
             }
-            sentenceLines.nonEmpty
+            sentenceWords.nonEmpty
           }) {}
         }
       }
@@ -73,6 +60,26 @@ object ExportNamedEntities2App extends App {
     val corrected = badNamedEntityCorrectedCounts.getCount(key)
 
     println(s"${key.mkString(" ")}\t$found\t$corrected")
+  }
+}
+
+class InputFile(file: File) extends AutoCloseable{
+  val source = Sourcer.sourceFromFile(file)
+  val lines = source.getLines()
+
+  def close(): Unit = source.close()
+
+  def getSentenceWordsAndEntities: (Array[String], Array[String]) = {
+    val sentenceLines = lines.takeWhile(_.nonEmpty).toArray
+    val (words, entities) = {
+      val parts = sentenceLines.map(_.split('\t'))
+      val words = parts.map(_ (0))
+      val entities = parts.map(_ (1))
+
+      (words, entities)
+    }
+
+    (words, entities)
   }
 }
 
@@ -149,5 +156,18 @@ class NonEntitiesFile(fileName: String) {
     val badNamedEntityWords: Array[Array[String]] = parseNamedEntities(badNamedEntities)
 
     badNamedEntityWords
+  }
+}
+
+object NamedEntity {
+  val BEGIN = "B-"
+  val INSIDE = "I-"
+  val OUTSIDE = "O"
+  def isComplete(bioLabels: Array[String], range: Range): Boolean = {
+    val complete = bioLabels(range.head).startsWith(BEGIN) &&
+        range.tail.forall(bioLabels(_).startsWith(INSIDE)) &&
+        !bioLabels.lift(range.end).exists(_.startsWith(INSIDE))
+
+    complete
   }
 }
