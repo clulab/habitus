@@ -4,7 +4,8 @@ import org.clulab.struct.Counter
 import org.clulab.utils.Closer.AutoCloser
 import org.clulab.utils.{FileUtils, Sourcer, StringUtils}
 
-import java.io.File
+import java.io.{File, PrintWriter}
+import scala.io.BufferedSource
 
 object ExportNamedEntities2App extends App {
   val inputFileName = args.lift(0).getOrElse("../corpora/SAED100/error_analysis/baseline_non_entities.csv")
@@ -31,7 +32,6 @@ object ExportNamedEntities2App extends App {
 
               if (sliceIndex >= 0) {
                 val range = Range(sliceIndex, sliceIndex + entityWords.length)
-                val foundEntities = sentenceEntities.slice(range.start, range.end)
 
                 badNamedEntityFoundCounts.incrementCount(entityWords)
                 if (NamedEntity.isComplete(sentenceEntities, range)) {
@@ -64,8 +64,8 @@ object ExportNamedEntities2App extends App {
 }
 
 class InputFile(file: File) extends AutoCloseable{
-  val source = Sourcer.sourceFromFile(file)
-  val lines = source.getLines()
+  protected val source: BufferedSource = Sourcer.sourceFromFile(file)
+  protected val lines: Iterator[String] = source.getLines()
 
   def close(): Unit = source.close()
 
@@ -84,7 +84,7 @@ class InputFile(file: File) extends AutoCloseable{
 }
 
 class ConllFile(fileName: String) extends AutoCloseable {
-  val printWriter = {
+  val printWriter: PrintWriter = {
     val printWriter = FileUtils.printWriterFromFile(new File(fileName))
 
     printWriter.print("-DOCSTART-\t0\n\t\n")
@@ -123,7 +123,7 @@ class NonEntitiesFile(fileName: String) {
 
         record.mkString("\n")
       }
-      val fields = records.map(StringUtils.afterFirst(_, ',', false))
+      val fields = records.map(StringUtils.afterFirst(_, ',', all = false))
 
       fields
     }
