@@ -29,8 +29,8 @@ class LexiconNerBase() {
     lexiconNer
   }
 
-  def parseAndPrint(sentence: Array[String], printWriter: PrintWriter): Unit = {
-    val doc = processor.mkDocumentFromTokens(List(sentence))
+  def parseAndPrint(sentences: Iterable[Iterable[String]], printWriter: PrintWriter): Unit = {
+    val doc = processor.mkDocumentFromTokens(sentences)
 
     GivenConstEmbeddingsAttachment(doc).perform {
       processor.tagPartsOfSpeech(doc)
@@ -40,19 +40,19 @@ class LexiconNerBase() {
       sentence.words.zip(sentence.entities.get).foreach { case (word, entity) =>
         printWriter.println(s"$word\t$entity")
       }
-      printWriter.println("\n")
+      printWriter.println
     }
   }
 
   def process(source: Source, printWriter: PrintWriter): Unit = {
-    val lines = source.getLines().map(_.trim)
+    val tokensOnLines = source
+      .getLines()
+      .map(_.trim.split("\\s+")) // We need a real tokenizer here!
+      .filter(_.nonEmpty)
+      .map(_.toIterable) // It is otherwise an Array.
+      .toIterable // It is otherwise an Iterator
 
-    while (lines.hasNext) {
-      val sentence = lines.takeWhile(_.nonEmpty).flatMap(_.split("\\s+")).toArray
-
-      if (sentence.nonEmpty)
-        parseAndPrint(sentence, printWriter)
-    }
+    parseAndPrint(tokensOnLines, printWriter)
   }
 
   def parseFile(inputFile: File): Unit = {

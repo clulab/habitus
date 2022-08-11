@@ -15,6 +15,9 @@
 * **ExportNamedEntitiesApp** - Read a specific `.tsv` file that contains example sentences containing named entities that have in the past been misidentified and output a file in `BIO` notation that has turned the named entities into `O` entries.  This will be used to help the entities be unlearned.  The input `.tsv` file is not assumed to have been tokenized or corrected for case.
 
 
+* **ExportNamedEntitiesApp2** - In contrast to the App above, read an entire directory of files previously annotated with named entities by `LexiconNerMultipleFile` and combine them with a list of false positive named entities resulting from a complicated [process](https://github.com/clulab/habitus/wiki/PDF-to-NER-Update) involving the [Habitus-SRE](https://github.com/picsolab/Habitus-SRE/) project.  Write out the corrected corpus in CONLL format for retraining of the NER in processors.
+
+
 * **RestoreCaseApp** - This is a simpler version of the `ConditionalCaseApp` which always restores the case rather than doing it only conditionally.  It takes a single input filename specifying an unstructured text file and splits it into the `.preserved` and `.restored` versions.  An attempt is made to preserve whitespace, so output is not tokenized.
 
 
