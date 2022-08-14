@@ -149,7 +149,7 @@ class TestEntitiesNorms extends Test {
       "sent11",
       "The recommended rate is higher in the dry season (Haefele and Wopereis, 2004), and higher in the Senegal River delta than in the middle valley, where extreme tem- peratures tend to occur and affect potential yield.",
       Seq(
-        "Date" -> Seq(("2004", "2004-XX-XX"))
+        "Date" -> Seq.empty
       )
     ),
     VariableTest(
@@ -219,7 +219,7 @@ class TestEntitiesNorms extends Test {
       "sent19",
       "The favourable climate conditions and the adoption of varieties with shorter cropping cycles allow for two rice harvests per year, namel in the dry and rainy seasons (Van Oort et al., 2016).",
       Seq(
-        "Date" -> Seq(("2016", "2016-XX-XX"))
+        "Date" -> Seq.empty
       )
     ),
     VariableTest(
@@ -227,7 +227,7 @@ class TestEntitiesNorms extends Test {
       "sent20",
       "In the SRV, production areas are typically larger in the dry season, which brings fewer problems with pests and birds (Tanaka et al., 2015; USDA-GAIN, 2018).",
       Seq(
-        "Date" -> Seq(("2015", "2015-XX-XX"), ("2018","2018-XX-XX"))
+        "Date" -> Seq.empty
       )
     ),
     VariableTest(
@@ -235,7 +235,7 @@ class TestEntitiesNorms extends Test {
       "sent21",
       "Average yields in SRV theoretically range between 5.0 and 6.0 t ha-1 in the rainy season and between 6.5 and 7.5 t ha-1 in the dry season (SAED, 2019; USDA-GAIN, 2021)",
       Seq(
-        "Date" -> Seq(("2021", "2021-XX-XX"), ("2019", "2019-XX-XX")),
+        "Date" -> Seq.empty,
         "Quantity" -> Seq(("between 6.5 and 7.5 t ha-1", "6.5 -- 7.5 t/ha"), ("between 5.0 and 6.0 t ha-1", "5.0 -- 6.0 t/ha"))
       )
     ),

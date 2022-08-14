@@ -483,10 +483,18 @@ class TestEntities extends Test {
     VariableTest(
       passingTest,
       "Fix9",
-      // FIXME; would explain.
       "The 21 cultivars used in the experiment were either hybrids, japonica, or indica type and came from various breeding centers ( Table 2 ) .",
       Seq(
         "Crop" -> Seq("japonica", "indica")
+      )
+    ),
+    VariableTest(
+      passingTest,
+      "sent45",
+      "...but hardly practised in the Senegal River valley ( Le Gal and Papy , 1998 ), i.e. by 13 % in 2027 ( OECD-FAO , 2018 ; USDA , 2017 ) .",
+      Seq(
+        "Date" -> Seq("2027"),
+        "Avoid" -> Seq("1998", "2018", "2017")
       )
     )
   )
