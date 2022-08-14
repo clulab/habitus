@@ -75,6 +75,7 @@ trait ContextExtractor {
             val nextLoc = findClosestNextLocation(m, contextRelevantMentions)
             if (nextLoc.isDefined) nextLoc.get.text else NA
           }
+          case "Date" => findClosestNotOverlapping(m, contextRelevantMentions).text
           case _ => findClosest(m, contextRelevantMentions).text
         }
       }
@@ -123,6 +124,17 @@ trait ContextExtractor {
 
   def findClosest(mention: Mention, mentions: Seq[Mention]): Mention = {
     mentions.map(m => (m, getDistance(mention, m))).minBy(_._2)._1
+  }
+
+  def findClosestNotOverlapping(mention: Mention, mentions: Seq[Mention]): Mention = {
+    // check if there are years that don't overlap with the mention itself and if yes, pick closest of those
+    // if there are no non-intersecting mentions, just pick any nearest one
+    val nonIntersecting = mentions.filter(m => m.tokenInterval.intersect(mention.tokenInterval).isEmpty)
+    if (nonIntersecting.nonEmpty) {
+      nonIntersecting.map(m => (m, getDistance(mention, m))).minBy(_._2)._1
+    } else {
+      mentions.map(m => (m, getDistance(mention, m))).minBy(_._2)._1
+    }
   }
 
 }
