@@ -13,7 +13,7 @@ class TestTsvPrinter extends Test {
     new TempFile().autoClose { tempFile =>
       new TsvPrinter(tempFile.file).autoClose { printer =>
         val mentionInfo = new MentionInfo("This is the text of the sentence before the current one. This is the text of the sentence. This is the text of the sentence after the current one.","This is the text of the sentence.", "It came from a file.", "The mention has this label.")
-        val contextInfo = DefaultContext("location", "date", "process", "crop", "fertilizer", "Season", 0)
+        val contextInfo = DefaultContext("location", "date", "process", "crop", "fertilizer", "season", 0)
         val argumentInfos = Seq(
           ArgumentInfo("name", "text", "norm")
         )
@@ -21,13 +21,13 @@ class TestTsvPrinter extends Test {
       }
       val headerOutput = Seq(
         "contextWindow", "sentenceText", "inputFilename", "label",
-        "location", "date", "process", "crop", "fertilizer", "comparative",
+        "location", "date", "process", "crop", "fertilizer", "season", "comparative",
         "arg0_name", "arg0_text", "arg0_norm", "..."
       ).mkString("\t")
       val valueOutput = Seq(
         "This is the text of the sentence before the current one. This is the text of the sentence. This is the text of the sentence after the current one.",
         "This is the text of the sentence.", "It came from a file.", "The mention has this label.",
-        "location", "date", "process", "crop", "fertilizer", "0",
+        "location", "date", "process", "crop", "fertilizer", "season", "0",
         "name", "text", "norm"
       ).mkString("\t")
       val expectedOutput = Seq(headerOutput, valueOutput).mkString("", "\n", "\n")
