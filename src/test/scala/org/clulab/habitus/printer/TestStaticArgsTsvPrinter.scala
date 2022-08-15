@@ -12,7 +12,7 @@ class TestStaticArgsTsvPrinter extends Test {
     new TempFile().autoClose { tempFile =>
       new StaticArgsTsvPrinter(tempFile.file).autoClose { printer =>
         val mentionInfo = new MentionInfo("This is the text of the sentence before the current one. This is the text of the sentence. This is the text of the sentence after the current one.", "This is the text of the sentence.", "It came from a file.", "The mention has this label.")
-        val contextInfo = DefaultContext("location", "date", "process", "crop", "fertilizer", 0)
+        val contextInfo = DefaultContext("location", "date", "process", "crop", "fertilizer", "Season", 0)
         val argumentInfos = Seq(
           ArgumentInfo("name", "text", "norm")
         )
@@ -40,7 +40,7 @@ class TestStaticArgsTsvPrinter extends Test {
     new TempFile().autoClose { tempFile =>
       new StaticArgsTsvPrinter(tempFile.file).autoClose { printer =>
         val mentionInfo = new MentionInfo("This is the text of the sentence before the current one. This is the text of the sentence. This is the text of the sentence after the current one.","This is the text of the sentence.", "It came from a file.", "The mention has this label.")
-        val contextInfo = DefaultContext("location", "date", "process", "crop", "fertilizer", 0)
+        val contextInfo = DefaultContext("location", "date", "process", "crop", "fertilizer", "Season", 0)
         val argumentInfos = Seq(
           ArgumentInfo("name1", "text1", "norm1"),
           ArgumentInfo("name2", "text2", "norm2"),
@@ -70,7 +70,7 @@ class TestStaticArgsTsvPrinter extends Test {
     new TempFile().autoClose { tempFile =>
       new StaticArgsTsvPrinter(tempFile.file).autoClose { printer =>
         val mentionInfo = new MentionInfo("This is the text of the sentence before the current one. This is the text of the sentence. This is the text of the sentence after the current one.","This is the text of the sentence.", "It came from a file.", "The mention has this label.")
-        val contextInfo = DefaultContext("location", "date", "process", "crop", "fertilizer", 0)
+        val contextInfo = DefaultContext("location", "date", "process", "crop", "fertilizer", "Season", 0)
         val argumentInfos1 = Seq(
           ArgumentInfo("name", "text1", "norm1")
         )
@@ -110,7 +110,7 @@ class TestStaticArgsTsvPrinter extends Test {
     new TempFile().autoClose { tempFile =>
       new StaticArgsTsvPrinter(tempFile.file).autoClose { printer =>
         val mentionInfo = new MentionInfo("This is the text of the sentence before the current one. This is the text of the sentence. This is the text of the sentence after the current one.","This is the text of the sentence.", "It came from a file.", "The mention has this label.")
-        val contextInfo = DefaultContext("location", "date", "process", "crop", "fertilizer", 0)
+        val contextInfo = DefaultContext("location", "date", "process", "crop", "fertilizer", "Season", 0)
         val argumentInfos1 = Seq(
           ArgumentInfo("name1", "text1", "norm1")
         )
