@@ -293,14 +293,14 @@
   label: PropertyAssignment
   type: token
   pattern: |
-    @variable:Crop []{,7}  @value:Duration
+    @variable:Crop []{,9}  @value:Duration
 
 - name: ${label}-grain-property-event
   priority: ${rulepriority}
   label: PropertyAssignment
   type: token
   pattern: |
-    @variable:Crop  []{,7} @value:GrainProperty
+    @variable:Crop  []{,9} @value:GrainProperty
 
 - name: measurement-rule-mg
   priority: ${rulepriority}

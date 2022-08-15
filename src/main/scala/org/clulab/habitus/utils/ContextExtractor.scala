@@ -76,6 +76,7 @@ trait ContextExtractor {
             if (nextLoc.isDefined) nextLoc.get.text else NA
           }
           case "Date" => findClosestNotOverlapping(m, contextRelevantMentions).text
+//          case "Crop" => findClosestNotOverlapping(m, contextRelevantMentions).text
           case _ => findClosest(m, contextRelevantMentions).text
         }
       }
