@@ -11,7 +11,7 @@ class TestJsonlPrinter extends Test {
   it should "print one Mention with one argument" in {
     new TempFile().autoClose { tempFile =>
       new JsonlPrinter(tempFile.file).autoClose { printer =>
-        val mentionInfo = new MentionInfo("This is the text of the sentence.", "It came from a file.", "The mention has this label.")
+        val mentionInfo = new MentionInfo("This is the text of the sentence before the current one. This is the text of the sentence. This is the text of the sentence after the current one.", "This is the text of the sentence.", "It came from a file.", "The mention has this label.")
         val contextInfo = DefaultContext("location", "date", "process", "crop", "fertilizer", 0)
         val argumentInfos = Seq(
           ArgumentInfo("name", "text", "norm")
@@ -20,6 +20,7 @@ class TestJsonlPrinter extends Test {
       }
       val expectedOutput =
           "{" +
+            """"contextWindow":"This is the text of the sentence before the current one. This is the text of the sentence. This is the text of the sentence after the current one.",""" +
             """"sentenceText":"This is the text of the sentence.",""" +
             """"inputFilename":"It came from a file.",""" +
             """"label":"The mention has this label.",""" +
@@ -46,7 +47,7 @@ class TestJsonlPrinter extends Test {
   it should "print one Mention with two arguments" in {
     new TempFile().autoClose { tempFile =>
       new JsonlPrinter(tempFile.file).autoClose { printer =>
-        val mentionInfo = new MentionInfo("This is the text of the sentence.", "It came from a file.", "The mention has this label.")
+        val mentionInfo = new MentionInfo("This is the text of the sentence before the current one. This is the text of the sentence. This is the text of the sentence after the current one.", "This is the text of the sentence.", "It came from a file.", "The mention has this label.")
         val contextInfo = DefaultContext("location", "date", "process", "crop", "fertilizer", 0)
         val argumentInfos = Seq(
           ArgumentInfo("name1", "text1", "norm1"),
@@ -56,6 +57,7 @@ class TestJsonlPrinter extends Test {
       }
       val expectedOutput =
           "{" +
+            """"contextWindow":"This is the text of the sentence before the current one. This is the text of the sentence. This is the text of the sentence after the current one.",""" +
             """"sentenceText":"This is the text of the sentence.",""" +
             """"inputFilename":"It came from a file.",""" +
             """"label":"The mention has this label.",""" +
@@ -86,7 +88,7 @@ class TestJsonlPrinter extends Test {
   it should "print two Mentions" in {
     new TempFile().autoClose { tempFile =>
       new JsonlPrinter(tempFile.file).autoClose { printer =>
-        val mentionInfo = new MentionInfo("This is the text of the sentence.", "It came from a file.", "The mention has this label.")
+        val mentionInfo = new MentionInfo("This is the text of the sentence before the current one. This is the text of the sentence. This is the text of the sentence after the current one.", "This is the text of the sentence.", "It came from a file.", "The mention has this label.")
         val contextInfo = DefaultContext("location", "date", "process", "crop", "fertilizer", 0)
         val argumentInfos1 = Seq(
           ArgumentInfo("name1", "text1", "norm1")
@@ -99,6 +101,7 @@ class TestJsonlPrinter extends Test {
       }
       val expectedOutput1 =
           "{" +
+            """"contextWindow":"This is the text of the sentence before the current one. This is the text of the sentence. This is the text of the sentence after the current one.",""" +
             """"sentenceText":"This is the text of the sentence.",""" +
             """"inputFilename":"It came from a file.",""" +
             """"label":"The mention has this label.",""" +
@@ -118,6 +121,7 @@ class TestJsonlPrinter extends Test {
           "}"
       val expectedOutput2 =
           "{" +
+            """"contextWindow":"This is the text of the sentence before the current one. This is the text of the sentence. This is the text of the sentence after the current one.",""" +
             """"sentenceText":"This is the text of the sentence.",""" +
             """"inputFilename":"It came from a file.",""" +
             """"label":"The mention has this label.",""" +
