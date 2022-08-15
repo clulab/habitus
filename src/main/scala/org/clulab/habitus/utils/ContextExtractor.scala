@@ -36,7 +36,17 @@ val processToLemmas = ListMap(
   "natural_disaster" -> Set("flood", "bird", "attack", "floodwater"),
   "fertilizerApplication" -> Set("fertilizer", "application", "apply", "compost")
 )
+//val reverseProcessToLemma: ListMap[Set[String], String] = for ((k, v) <- processToLemmas) yield (v, k)
+//println(reverseProcessToLemma)
+var reverseProcessToLemma: Map[String, String] = Map()
+for ( (keys, values) <- processToLemmas){
+  for (vals <- values){
+    reverseProcessToLemma += (vals -> keys)
+  }
+}
+println(reverseProcessToLemma)
 
+//
   def getContextPerMention(mentions: Seq[Mention], doc: Document): Seq[Mention]
 
   def getProcess(mention: Mention): String = {
