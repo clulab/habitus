@@ -38,13 +38,24 @@ val processToLemmas = ListMap(
 )
 //val reverseProcessToLemma: ListMap[Set[String], String] = for ((k, v) <- processToLemmas) yield (v, k)
 //println(reverseProcessToLemma)
-var reverseProcessToLemma: Map[String, String] = Map()
-for ( (keys, values) <- processToLemmas){
-  for (vals <- values){
-    reverseProcessToLemma += (vals -> keys)
+//var reverseProcessToLemma: Map[String, String] = Map()
+//for ( (keys, values) <- processToLemmas){
+//  for (vals <- values){
+//    reverseProcessToLemma += (vals -> keys)
+//  }
+//}
+  def reverseProcessToLemma(processToLemma: ListMap[String, Set[String]]): Map[String, String] = {
+    val lemmaToProcess = collection.mutable.Map[String, String]()
+    for ( (keys, values) <- processToLemma){
+      for (vals <- values){
+        lemmaToProcess += (vals -> keys)
+      }
+    }
+    lemmaToProcess.toMap
   }
-}
-println(reverseProcessToLemma)
+
+  val lemmaToProcess: Map[String, String] = reverseProcessToLemma(processToLemmas)
+println(lemmaToProcess)
 
 //
   def getContextPerMention(mentions: Seq[Mention], doc: Document): Seq[Mention]
