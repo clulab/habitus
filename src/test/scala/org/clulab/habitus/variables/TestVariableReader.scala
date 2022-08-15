@@ -589,6 +589,15 @@ class TestVariableReader extends Test {
       )
     ),
     VariableTest(
+      failingTest,
+      "sent21_12_3", "In all scenarios , seeds of the rice variety Sahel 108 are sown , a shortcycle variety ( around 125 days ) especially developed by the International Rice Research Institute to succeed under extreme conditions in the African Sahel .",
+      "PropertyAssignment",
+      Seq(
+        ("Sahel 108", Seq(("shortcycle", ""))),
+        ("Sahel 108", Seq(("125 days", "125.0 d")))
+      )
+    ),
+    VariableTest(
       passingTest,
       "fix1", "Rice cultivation and management are autosufficient in terms of seed supply , irrigation and rice grain milling .",
       "CropAssignment",
