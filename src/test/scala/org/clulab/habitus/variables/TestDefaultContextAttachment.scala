@@ -106,17 +106,17 @@ class TestDefaultContextAttachment extends Test {
 //        process = "irrigation"
 //      )
 //    ),
-    DefaultContextAttachmentTest(
-      "sent-4",
-      "In the 2000WS, they used cultivar Sahel 202",
-      "CropAssignment",
-      Desired(
-        date = "2000WS",
-        process = "UNK",
-        crop = "Sahel 202",
-        comparative = "0"
-      )
-    ),
+//    DefaultContextAttachmentTest(
+//      "sent-4",
+//      "In the 2000WS, they used cultivar Sahel 202",
+//      "CropAssignment",
+//      Desired(
+//        date = "2000WS",
+//        process = "UNK",
+//        crop = "Sahel 202",
+//        comparative = "0"
+//      )
+//    ),
 //    DefaultContextAttachmentTest(
 //      "sent-5",
 //      "Average rice yield is generally high in both wet and dry seasons at 5.4 and 6.6 t / ha , respectively ; however , there is large variation among farmers ( e.g .",
@@ -127,15 +127,15 @@ class TestDefaultContextAttachment extends Test {
 //        comparative = "0"
 //      )
 //    )
-    DefaultContextAttachmentTest(
-      "sent-5",
-      "Diagnosis of the 1998 wet season In the 1998WS , farmers sowed Jaya between 20 June and 1 July ( Tab .",
-      "SeasonAssignment",
-      Desired(
-        wetSeason = "wet season",
-        comparative = "0"
-      )
-    )
+//    DefaultContextAttachmentTest(
+//      "sent-5",
+//      "Diagnosis of the 1998 wet season In the 1998WS , farmers sowed Jaya between 20 June and 1 July ( Tab .",
+//      "SeasonAssignment",
+//      Desired(
+//        wetSeason = "wet season",
+//        comparative = "0"
+//      )
+//    )
   )
 
   variableTests.zipWithIndex.foreach { case (variableTest, index) => variableTest.test(index) }

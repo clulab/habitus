@@ -55,7 +55,7 @@ val processToLemmas = ListMap(
   }
 
   val lemmaToProcess: Map[String, String] = reverseProcessToLemma(processToLemmas)
-println(lemmaToProcess)
+//println(lemmaToProcess)
 
 //
   def getContextPerMention(mentions: Seq[Mention], doc: Document): Seq[Mention]
@@ -142,9 +142,7 @@ println(lemmaToProcess)
   }
 
   def getDistance(m1: Mention, m2: Mention): Int = {
-    println(s"Here is  m1$m1")
     val sorted = Seq(m1, m2).sortBy(_.tokenInterval)
-    println(s"Here is the sorted m1$sorted")
     sorted.last.tokenInterval.start - sorted.head.tokenInterval.end
   }
 
