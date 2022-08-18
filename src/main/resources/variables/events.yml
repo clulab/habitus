@@ -238,7 +238,7 @@
   type: token
   action: yieldAmountActionFlow
   pattern: |
-    (?<![lemma =/^(increase|decrease)$/]) @variable:Yield [!lemma = /^(increase|decrease)$/]+? @value:Quantity+ ([!lemma = /^(increase|decrease|yield)$/]*? (","|"and")? @value:Quantity)* (?![word="more"])
+    (?<![lemma =/^(increase|decrease)$/]) @variable:Yield [!lemma = /^(increase|decrease|gain|emissions|application)$/]+? @value:Quantity+ ([!lemma = /^(increase|decrease|yield)$/]*? (","|"and")? @value:Quantity)* (?![word="more"])
 
 - name: yield-increase-event
   priority: ${rulepriority}
@@ -250,7 +250,7 @@
     |
     @variable:Yield []+? @value:Quantity+ [word = "more"]
     |
-    (?<= [lemma=/^(increase|decrease)$/]) @variable:Yield []+? @value:Quantity+
+    (?<= [lemma=/^(increase|decrease)$/]) []{,2}? @variable:Yield []+? @value:Quantity+
 
 # this one is pretty specific and is there to capture an unfortunate parse
 - name: planting-yield-amount

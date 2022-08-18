@@ -448,7 +448,16 @@ class TestVariableReaderLabelBased extends Test {
       "sent38", "Yield gain due to the third N application was relatively small , i.e. about 0.4 t ha-1",
       "YieldIncrease",
       Seq(
-        ("Yield", Seq(("0.4 t ha-1", "0.4 t/ha"))),
+        ("Yield", Seq(("0.4 t ha-1", "0.4 t/ha")))
+      )
+    ),
+    VariableTest(
+      passingTest,
+      "sent39", "the increase in irrigation frequency alone could not explain the increase in rice yield with the Jaya cultivar ( 1.7 t ha-1 in 1999 and 2.7 t ha-1 in 2000 ) .",
+      "YieldIncrease",
+      Seq(
+        ("Yield", Seq(("1.7 t ha-1", "1.7 t/ha"))),
+        ("Yield", Seq(("2.7 t ha-1", "2.7 t/ha")))
       )
     )
   )
