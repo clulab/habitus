@@ -255,7 +255,7 @@ class TestEntities extends Test {
       "timing of basal fertilizer application was on average 26, 33, and 26 days after sowing (DAS) in 2011WS, 2012DS, and 2013DS",
       Seq(
         "FertilizerUse" -> Seq("fertilizer application"),
-        "Planting" -> Seq("sowing"),
+        "Planting" -> Seq.empty, // note: excluding sowing here because it is there to indicate timing of fertilizer application, not to signal a planting event
         "GenericFertilizer" -> Seq("fertilizer")
       )
     ),

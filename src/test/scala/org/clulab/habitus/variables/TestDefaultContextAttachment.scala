@@ -182,6 +182,92 @@ class TestDefaultContextAttachment extends Test {
           comparative = "0"
         )
       )
+    ),
+    DefaultContextAttachmentTest(
+      "sent-8",
+      "and average of potential yield calculated with the model ORYZAS was 8.7 t ha-1 for Jaya and 8.2 t ha-1 for Sahel 108 .",
+      "YieldAmount",
+      Seq(
+        Desired(
+          mentionText = "yield calculated with the model ORYZAS was 8.7 t ha-1",
+          crop = "Jaya",
+          process = "harvesting",
+          comparative = "0"
+        ),
+        Desired(
+          mentionText = "yield calculated with the model ORYZAS was 8.7 t ha-1 for Jaya and 8.2 t ha-1",
+          crop = "Sahel 108",
+          process = "harvesting",
+          comparative = "0"
+        )
+      )
+    ),
+    DefaultContextAttachmentTest(
+      "sent-9",
+      "Popular varieties in the wet season were Sahel 202 ( 65 % of farmers ) and Sahel 201 ( 30 % ) , while 60 % and 92 % grew Sahel-108 in 2012DS and 2013DS , respectively.",
+      "CropAssignment",
+      Seq(
+        Desired(
+          mentionText = "varieties in the wet season were Sahel 202",
+          crop = "Sahel 202",
+          date = "2012DS", // fixme: unclear if this is the best date for this sentence
+          process = "planting",
+          comparative = "1"
+        ),
+        Desired(
+          mentionText = "grew Sahel-108",
+          crop = "Sahel-108",
+          date = "2012DS",
+          process = "planting",
+          comparative = "1"
+        )
+      )
+    ),
+    DefaultContextAttachmentTest(
+      "sent-10",
+      "Popular varieties in the wet season were Sahel 202 ( 65 % of farmers ) and Sahel 201 ( 30 % ) , while 60 % and 92 % grew Sahel-108 in 2012DS and 2013DS , respectively.",
+      "PlantingEvent",
+      Seq(
+        Desired(
+          mentionText = "grew Sahel-108",
+          crop = "Sahel-108",
+          date = "2012DS",
+          process = "planting",
+          comparative = "1"
+        )
+      )
+    ),
+    DefaultContextAttachmentTest(
+      "sent-11",
+      " Plots with higher K2O fertilizer showed small yield advantage ( on average 0.3 t / ha ) , although there was no statistical difference in yield between the K2O rates .",
+      "YieldAmount",
+      Seq(
+        Desired(
+          mentionText = "yield advantage ( on average 0.3 t / ha",
+          fertilizer = "K2O",
+          process = "harvesting",
+          comparative = "0"
+        )
+      )
+    ),
+    DefaultContextAttachmentTest(
+      "sent-12",
+      "P and K concentrations in irrigaion and floodwater were estimated at 0.1 mg P l-1 and 3.2 mg K l-1 .",
+      "FertilizerQuantity",
+      Seq(
+        Desired(
+          mentionText = "0.1 mg P l-1",
+          fertilizer = "P",
+          process = "UNK", //fixme: fertilization process to be added as a separate pr
+          comparative = "0"
+        ),
+        Desired(
+          mentionText = "3.2 mg K l-1",
+          fertilizer = "K",
+          process = "UNK",
+          comparative = "0"
+        )
+      )
     )
   )
 

@@ -246,7 +246,7 @@
   type: token
   example: "In 2012WS yield increased for about 1.5 t ha-1 after the application of xyz fertilizer"
   pattern: |
-    @variable:Yield []*? [lemma=/^(increase|decrease)$/] []+? @value:Quantity+
+    @variable:Yield []*? [lemma=/^(increase|decrease|gain)$/] []+? @value:Quantity+
     |
     @variable:Yield []+? @value:Quantity+ [word = "more"]
     |

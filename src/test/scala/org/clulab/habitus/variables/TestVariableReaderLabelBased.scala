@@ -443,6 +443,14 @@ class TestVariableReaderLabelBased extends Test {
       "YieldAmount",
       Seq.empty
     ),
+    VariableTest(
+      passingTest,
+      "sent38", "Yield gain due to the third N application was relatively small , i.e. about 0.4 t ha-1",
+      "YieldIncrease",
+      Seq(
+        ("Yield", Seq(("0.4 t ha-1", "0.4 t/ha"))),
+      )
+    )
   )
 
   variableTests.zipWithIndex.foreach { case (variableTest, index) => variableTest.test(index) }
