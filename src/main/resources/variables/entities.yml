@@ -185,6 +185,13 @@
   pattern: |
     /(?i)(^short|medium)/ [lemma=/duration/]
 
+- name: emission-vars
+  priority: ${rulepriority}
+  label: Emission
+  type: token
+  pattern: |
+    /(?i)(^CH4|CO2|N)/ [lemma=/emission/]
+
 - name: grain-property
   priority: ${rulepriority}
   label: GrainProperty

@@ -34,7 +34,7 @@ val processToLemmas = ListMap(
   "irrigation"       -> Set("irrigation", "irrigate"),
   "weeds"            -> Set("weed"),
   "natural_disaster" -> Set("flood", "bird", "attack", "floodwater"),
-  "fertilizerApplication" -> Set("fertilizer", "application", "apply", "compost")
+  "fertilizerApplication" -> Set("fertilizer", "application", "apply", "compost", "rate")
 )
 //val reverseProcessToLemma: ListMap[Set[String], String] = for ((k, v) <- processToLemmas) yield (v, k)
 //println(reverseProcessToLemma)
@@ -64,10 +64,15 @@ val processToLemmas = ListMap(
 
 //    Getting process lemma from the mention
     val mentionLemmas = mention.lemmas
+    println(s"Here are the lemmas of the mention: $mentionLemmas")
     val mensLemmaOverLap = processToLemmas.map(p => (p._1, p._2.intersect(mentionLemmas.get.toSet).toList.length))
+    println(s"Maximum overlap is $mensLemmaOverLap")
     if (mensLemmaOverLap.values.max != 0) {
       mensLemmaOverLap.filter(_._2 == mensLemmaOverLap.values.max).keys.mkString("::")
-    } else {
+    } else if (mensLemmaOverLap.values.max == 0) {
+      "N/A"
+    }
+    else {
       // get a wider window of lemmas here from sentenceObj
       val mentionStartIndex = mention.tokenInterval.start
       val mentionEndIndex = mention.tokenInterval.end

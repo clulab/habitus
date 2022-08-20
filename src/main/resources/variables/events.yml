@@ -33,6 +33,24 @@
     variable:GenericCrop = dobj
     value:Crop = dobj? /nmod_such_as|nmod_like/
 
+- name: fertilizer-vj-dep
+  priority: ${rulepriority}
+  label: FertilizerAssignment
+  example: "Recommended P2O5 and K2O rates are 46 and 0 kg / ha , respectively ."
+  pattern: |
+    trigger = [lemma = "be"]
+    variable:Fertilizer = nsubj [tag = NNP]
+    value:Quantity = dobj? [tag = CD]
+
+- name: emmission-vj-dep
+  priority: ${rulepriority}
+  label: EmissionAssignment
+  example: " yields , CH4 emissions per kg of rice are estimated at 2.7 103 kg"
+  pattern: |
+    trigger = [lemma = "be"]
+    variable:Emission = nsubj [tag = NN]
+    value:Quantity = dobj? [tag = CD]
+
 - name: crop-assignment-verb-2
   priority: ${rulepriority}
   label: CropAssignment
