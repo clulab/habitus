@@ -214,6 +214,7 @@ class HabitusActions extends Actions {
     "Quantity" -> Set("t", "t/ha", "kg/ha", "kg", "d", "cm", "mg/l", "kg n ha-1"),
     "AreaSizeValue" -> Set("ha", "m2"),
     "YieldAmount" -> Set("t/ha", "kg/ha", "kg"),
+    "YieldIncrease" -> Set("t/ha", "kg/ha", "kg"),
     "FertilizerQuantity" -> Set("t", "kg/ha", "mg/l", "kg n ha-1")
   )
   def hasLetters(string: String): Boolean = {

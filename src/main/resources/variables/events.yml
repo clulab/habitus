@@ -238,19 +238,22 @@
   type: token
   action: yieldAmountActionFlow
   pattern: |
-    (?<![lemma =/^(increase|decrease)$/]) @variable:Yield [!lemma = /^(increase|decrease|gain|emissions|application)$/]+? @value:Quantity+ ([!lemma = /^(increase|decrease|yield)$/]*? (","|"and")? @value:Quantity)* (?![word="more"])
+    (?<![lemma =/^(increase|decrease)$/][]{,2}) @variable:Yield [!lemma = /^(increase|decrease|gain|emissions|application)$/]+? @value:Quantity+ ([!lemma = /^(increase|decrease|yield)$/]*? (","|"and")? @value:Quantity)* (?![word="more"])
 
 - name: yield-increase-event
   priority: ${rulepriority}
   label: YieldIncrease
   type: token
+  action: yieldAmountActionFlow
   example: "In 2012WS yield increased for about 1.5 t ha-1 after the application of xyz fertilizer"
   pattern: |
     @variable:Yield []*? [lemma=/^(increase|decrease|gain)$/] []+? @value:Quantity+
     |
     @variable:Yield []+? @value:Quantity+ [word = "more"]
     |
-    (?<= [lemma=/^(increase|decrease)$/]) []{,2}? @variable:Yield []+? @value:Quantity+
+    (?<= [lemma=/^(increase|decrease)$/]) []{,2} @variable:Yield []+? @value:Quantity+ []{1,4}? @value:Quantity+
+    |
+    (?<= [lemma=/^(increase|decrease)$/]) []{,2} @variable:Yield []+? @value:Quantity+ 
 
 # this one is pretty specific and is there to capture an unfortunate parse
 - name: planting-yield-amount
