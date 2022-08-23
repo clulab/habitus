@@ -32,21 +32,22 @@
   label: Planting
   type: token
   pattern: |
-    ([lemma=/early|late/])? /(?i)(^planting|sowing|seeding)/ /date|season|time|timing/?
+    (?<! [lemma = "after"]) ([lemma=/early|late/])? /(?i)(^planting|sowing|seeding)/ /date|season|time|timing/?
 
 - name: verbal-sowing
   priority: ${rulepriority}
   label: Planting
   type: token
   pattern: |
-    [lemma = /plant|sow|seed/  & tag = /^VB/] 
+    (?<! [lemma = "after"]) [lemma = /plant|sow|seed/  & tag = /^VB/] 
 
 - name: variable-area
   priority: ${rulepriority}
-  label: Area
+  label: GenericArea
   type: token
   pattern: |
-    ([lemma=/cultivate|plant|sow/])? [lemma=/area/] ([lemma=/sow/])?
+    [lemma=/area/]
+#    ([lemma=/cultivate|plant|sow/])? [lemma=/area/] ([lemma=/sow/])?
 
 - name: variable-fertilizer
   priority: ${rulepriority}
@@ -120,7 +121,7 @@
 
 - name: area-size-entity-rule
   priority: ${rulepriority}
-  label: AreaSize
+  label: AreaSizeValue
   type: token
   action: appropriateMeasurement
   pattern: |
@@ -154,6 +155,8 @@
   type: token
   pattern: |
     /(?i)(wet|rainy)/ []{,2}? [lemma = /\bseason\b/]
+    |
+    /\d{4}WS/
 
 - name: dry-season
   priority: ${rulepriority}
@@ -161,6 +164,8 @@
   type: token
   pattern: |
     /(?i)(dry|hot|cold)/ []*? [lemma = /\bseason\b/]
+    |
+    /\d{4}DS/
 
 - name: complex-date
   priority: ${higherpriority}
@@ -183,7 +188,11 @@
   label: Duration
   type: token
   pattern: |
-    /(?i)(^short|medium)/ [lemma=/duration/]
+    /(?i)(^short|medium|long)/ [lemma=/duration/] 
+    | 
+    /shortcycle|(short-|long-|medium-)duration/
+    |
+    /\d{1,3}/ [lemma = /^day$/]
 
 - name: emission-vars
   priority: ${rulepriority}

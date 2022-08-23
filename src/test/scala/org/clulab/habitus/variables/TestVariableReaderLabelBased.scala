@@ -357,22 +357,22 @@ class TestVariableReaderLabelBased extends Test {
     VariableTest(
       passingTest,
       "sent21_11", "28,223 ha vs 35,065 ha were used as sown areas.",
-      "PlantingArea",
-      Seq(("Area", Seq(("28,223 ha", "28223.0 ha"))))
+      "AreaSize",
+      Seq(("GenericArea", Seq(("28,223 ha", "28223.0 ha"))))
       //note: currently not extracting values after vs.
     ),
     VariableTest(
       passingTest,
       "sent21_12", "The areas sown for this 2021/2022 wintering campaign are 28,223 ha vs 35,065 ha in wintering.",
-      "PlantingArea",
-      Seq(("Area", Seq(("28,223 ha", "28223.0 ha"))))
+      "AreaSize",
+      Seq(("GenericArea", Seq(("28,223 ha", "28223.0 ha"))))
       //note: currently not extracting values after vs.
     ),
     VariableTest(
       passingTest,
       "sent21_13", "Harvests have started in some production areas of the valley, to date an area estimated at 843 ha is already harvested in  the Delta, 199 ha in Matam, 31 ha in Bakel, and 23 ha in Dagana.",
-      "PlantingArea",
-      Seq(("Area", Seq(("843 ha", "843.0 ha"), ("199 ha", "199.0 ha"), ("31 ha", "31.0 ha"), ("23 ha", "23.0 ha"))))
+      "AreaSize",
+      Seq(("GenericArea", Seq(("843 ha", "843.0 ha"), ("199 ha", "199.0 ha"), ("31 ha", "31.0 ha"), ("23 ha", "23.0 ha"))))
     ),
     VariableTest(
       passingTest,
@@ -410,6 +410,54 @@ class TestVariableReaderLabelBased extends Test {
         ("Yield", Seq(("6.4", "6.4 t/ha"))),
         ("Yield", Seq(("7.9", "7.9 t/ha"))),
         ("Yield", Seq(("7.1 t/ha", "7.1 t/ha")))
+      )
+    ),
+    VariableTest(
+      passingTest,
+      "sent34", "the potential rice grain yields were between 8.8 t ha-1 and 9.2 t ha-1 ( i.e. about 1 t ha-1 more than in the 1998WS ) whilst the average of the actual yield increased greatly",
+      "YieldAmount",
+      Seq(
+        ("Yield", Seq(("8.8 t ha-1", "8.8 t/ha"))),
+        ("Yield", Seq(("9.2 t ha-1", "9.2 t/ha"))),
+      )
+    ),
+    VariableTest(
+      passingTest,
+      "sent35", "the potential rice grain yields were between 8.8 t ha-1 and 9.2 t ha-1 ( i.e. about 1 t ha-1 more than in the 1998WS ) whilst the average of the actual yield increased greatly",
+      "YieldIncrease",
+      Seq(
+        ("Yield", Seq(("1 t ha-1", "1.0 t/ha"))),
+      )
+    ),
+    VariableTest(
+      passingTest,
+      "sent36", " Haefele et al. ( 2000 , 2001 ) report that improved weed management practices resulted in yield increase of about 1 t / ha in the SRV .",
+      "YieldIncrease",
+      Seq(
+        ("Yield", Seq(("1 t / ha", "1.0 t/ha"))),
+      )
+    ),
+    VariableTest(
+      passingTest,
+      "sent37", "Following these findings , Haefele et al. ( 2000 , 2001 ) conducted on-farm trials and found that improved nutrient management increased yields by about 1 t / ha in farmers ' fields .",
+      "YieldAmount",
+      Seq.empty
+    ),
+    VariableTest(
+      passingTest,
+      "sent38", "Yield gain due to the third N application was relatively small , i.e. about 0.4 t ha-1",
+      "YieldIncrease",
+      Seq(
+        ("Yield", Seq(("0.4 t ha-1", "0.4 t/ha")))
+      )
+    ),
+    VariableTest(
+      passingTest,
+      "sent39", "the increase in irrigation frequency alone could not explain the increase in rice yield with the Jaya cultivar ( 1.7 t ha-1 in 1999 and 2.7 t ha-1 in 2000 ) .",
+      "YieldIncrease",
+      Seq(
+        ("Yield", Seq(("1.7 t ha-1", "1.7 t/ha"))),
+        ("Yield", Seq(("2.7 t ha-1", "2.7 t/ha")))
       )
     )
   )

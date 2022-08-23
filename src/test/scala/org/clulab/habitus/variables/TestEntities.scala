@@ -255,7 +255,7 @@ class TestEntities extends Test {
       "timing of basal fertilizer application was on average 26, 33, and 26 days after sowing (DAS) in 2011WS, 2012DS, and 2013DS",
       Seq(
         "FertilizerUse" -> Seq("fertilizer application"),
-        "Planting" -> Seq("sowing"),
+        "Planting" -> Seq.empty, // note: excluding sowing here because it is there to indicate timing of fertilizer application, not to signal a planting event
         "GenericFertilizer" -> Seq("fertilizer")
       )
     ),
@@ -328,7 +328,7 @@ class TestEntities extends Test {
       "Average DS T0 yield was relatively low, i.e. 4.4 t ha-1 (ranging from 2.5 to 6.0 t ha-1)",
       Seq(
         "Yield" -> Seq("yield"),
-        "AreaSize" -> Seq.empty
+        "AreaSizeValue" -> Seq.empty
       )
     ),
     VariableTest(
@@ -483,10 +483,18 @@ class TestEntities extends Test {
     VariableTest(
       passingTest,
       "Fix9",
-      // FIXME; would explain.
       "The 21 cultivars used in the experiment were either hybrids, japonica, or indica type and came from various breeding centers ( Table 2 ) .",
       Seq(
         "Crop" -> Seq("japonica", "indica")
+      )
+    ),
+    VariableTest(
+      passingTest,
+      "sent45",
+      "...but hardly practised in the Senegal River valley ( Le Gal and Papy , 1998 ), i.e. by 13 % in 2027 ( OECD-FAO , 2018 ; USDA , 2017 ) .",
+      Seq(
+        "Date" -> Seq("2027"),
+        "Avoid" -> Seq("1998", "2018", "2017")
       )
     )
   )

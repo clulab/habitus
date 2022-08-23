@@ -22,12 +22,18 @@ class DefaultContextExtractor extends ContextExtractor {
       val thisSentFerts = thisSentTBMs.filter(_.label == "Fertilizer")
       val thisSentSeason = thisSentTBMs.filter(_.label == "Season")
       for (m <- thisSentEvents) {
+        // make a map of arg labels and texts for automatic context field assignment in cases where context is part of the mention itself
+        val menArgLabels = m.arguments
+          .flatMap(a => a._2)
+          .map(men => men.label -> men.text).toMap
         val context = DefaultContext(
           getContext(m, "Location", thisSentLocs, mentions),
           getContext(m, "Date", thisSentDates, mentions),
           getProcess(m),
-          getContext(m, "Crop", thisSentCrops, mentions),
-          getContext(m, "Fertilizer", thisSentFerts, mentions),
+          // with crops and fertilizer (and maybe later other types of context), if a crop or fertilizer is one of the arguments,
+          // ...just pick those to fill the context fields
+          if (menArgLabels.contains("Crop")) menArgLabels("Crop") else getContext(m, "Crop", thisSentCrops, mentions),
+          if (menArgLabels.contains("Fertilizer")) menArgLabels("Fertilizer") else getContext(m, "Fertilizer", thisSentFerts, mentions),
           getContext(m, "Season", thisSentSeason, mentions),
           getComparative(m)
         )

@@ -32,9 +32,33 @@ class HabitusActions extends Actions {
       .sortBy(_.tokenInterval)
 
   def cleanupAction(mentions: Seq[Mention]): Seq[Mention] = {
-    val r1 = removeRedundantVariableMentions(keepLongestMentions(mentions))
+    // do the entity check: only use entities that occur more than once within the text---doing this to avoid location/fertilizer false pos;
+    // only apply the check to documents of more than 6 sentences (paragraph length-ish?) - if we run the shell or tests,
+    // there won't be enough text to do the check
+    val afterEntityUniquenessCheck = if (mentions.nonEmpty && mentions.head.document.sentences.length > 6) doEntityUniquenessCheck(mentions) else mentions
+    val r1 = removeRedundantVariableMentions(keepLongestMentions(afterEntityUniquenessCheck))
     r1
   }
+
+  def doEntityUniquenessCheck(mentions: Seq[Mention]): Seq[Mention] = {
+    val (entitiesToDoubleCheck, other) = mentions.partition(m =>
+      m.isInstanceOf[TextBoundMention]
+        && (m.label == "Location" || m.label == "Fertilizer"))
+    val doubleCheckedEntities = if (entitiesToDoubleCheck.nonEmpty) returnNonUniqueEntities(entitiesToDoubleCheck) else Seq.empty
+    doubleCheckedEntities ++ other
+  }
+
+  def returnNonUniqueEntities(mentions: Seq[Mention]): Seq[Mention] = {
+    val groupedByLabel = mentions.groupBy(_.label)
+    groupedByLabel.flatMap(gr => filterUniqTextMentionsOfSameLabel(gr._2)).toSeq
+  }
+
+  def filterUniqTextMentionsOfSameLabel(mentions: Seq[Mention]): Seq[Mention] = {
+    // in this method, all mentions already have the same label
+    val uniqTexts = mentions.groupBy(_.text).filter(_._2.length == 1).keys.toSeq
+    mentions.filterNot(m => uniqTexts.contains(m.text))
+  }
+
   private def isBelief(m: Mention): Boolean = {
     m.labels.contains("Belief")
   }
@@ -187,10 +211,11 @@ class HabitusActions extends Actions {
     splitTargets ++ other
   }
   val labelToAppropriateUnits = Map(
-    "Quantity" -> Set("t/ha", "kg/ha", "kg", "d", "cm", "mg/l", "kg n ha-1"),
-    "AreaSize" -> Set("ha"),
+    "Quantity" -> Set("t", "t/ha", "kg/ha", "kg", "d", "cm", "mg/l", "kg n ha-1"),
+    "AreaSizeValue" -> Set("ha", "m2"),
     "YieldAmount" -> Set("t/ha", "kg/ha", "kg"),
-    "FertilizerQuantity" -> Set("kg/ha", "mg/l", "kg n ha-1")
+    "YieldIncrease" -> Set("t/ha", "kg/ha", "kg"),
+    "FertilizerQuantity" -> Set("t", "kg/ha", "mg/l", "kg n ha-1")
   )
   def hasLetters(string: String): Boolean = {
     string.exists(ch => ch.isLetter || ch == '/')
@@ -215,7 +240,7 @@ class HabitusActions extends Actions {
     mentions.filter(measurementIsAppropriate)
   }
   def makeEventFromUnitSplitByFertilizer(m: Mention): Mention = {
-    val fertilizer = m.arguments("fertilizer").head
+    val fertilizer = m.arguments("fertilizer").head.asInstanceOf[TextBoundMention].copy(labels = "Fertilizer" +: m.labels.tail)
     val value = m.arguments("number").map(_.text)
     val unit1 = m.arguments("unit1").map(_.text)
     val unit2 = m.arguments("unit2").head.text.replace("-1", "")

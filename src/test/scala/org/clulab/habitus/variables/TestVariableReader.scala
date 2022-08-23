@@ -589,6 +589,15 @@ class TestVariableReader extends Test {
       )
     ),
     VariableTest(
+      failingTest,
+      "sent21_12_3", "In all scenarios , seeds of the rice variety Sahel 108 are sown , a shortcycle variety ( around 125 days ) especially developed by the International Rice Research Institute to succeed under extreme conditions in the African Sahel .",
+      "PropertyAssignment",
+      Seq(
+        ("Sahel 108", Seq(("shortcycle", ""))),
+        ("Sahel 108", Seq(("125 days", "125.0 d")))
+      )
+    ),
+    VariableTest(
       passingTest,
       "fix1", "Rice cultivation and management are autosufficient in terms of seed supply , irrigation and rice grain milling .",
       "CropAssignment",
@@ -714,11 +723,30 @@ class TestVariableReader extends Test {
       "fix16", "Rice yields increased significantly as a result of an extra late N application on top of two N-dressings with a total of about 120 kg N ha-1 in farmer fields.",
       "FertilizerQuantity",
       Seq(
-        ("N", Seq(("120 kg N ha-1", "120.0 kg n ha-1")))
+        ("N", Seq(("120 kg N ha-1", "120.0 kg/ha")))
+      )
+    ),
+    VariableTest(
+      passingTest,
+      "fix17", "Following these findings , Haefele et al. ( 2000 , 2001 ) conducted on-farm trials and found that improved nutrient management increased yields by about 1 t / ha in farmers ' fields .",
+      "YieldIncrease",
+      Seq(
+        ("yields", Seq(("1 t / ha", "1.0 t/ha")))
+      )
+    ),
+    VariableTest(
+      passingTest,
+      "fix18", "In the 1999 and 2000WS , farmers ordered 3 tonnes of diammonium-phosphate ( 18 % N , 20 % P ) and 5.5 tonnes of urea ( 46 % N ) with planned application rates of 100 kg diammonium-phosphate ha-1 and 200 kg urea ha-1 , i.e. 20 kg P ha-1 and 110 kg N ha-1 .",
+      "FertilizerQuantity",
+      Seq(
+        ("diammonium-phosphate", Seq(("3 tonnes", "3.0 t"))),
+        ("urea", Seq(("5.5 tonnes", "5.5 t"))),
+        ("diammonium-phosphate", Seq(("100 kg diammonium-phosphate ha-1", "100.0 kg/ha"))),
+        ("urea", Seq(("200 kg urea ha-1", "200.0 kg/ha"))),
+        ("P", Seq(("20 kg P ha-1", "20.0 kg/ha"))),
+        ("N", Seq(("110 kg N ha-1", "110.0 kg/ha")))
       )
     )
-
   )
-
   variableTests.zipWithIndex.foreach { case (variableTest, index) => variableTest.test(index) }
 }

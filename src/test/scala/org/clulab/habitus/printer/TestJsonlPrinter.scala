@@ -30,7 +30,7 @@ class TestJsonlPrinter extends Test {
               """"process":"process",""" +
               """"crop":"crop",""" +
               """"fertilizer":"fertilizer",""" +
-              """"season": season","""+
+              """"season":"season","""+
               """"comparative":0""" +
             "}," +
             """"arguments":[{""" +
@@ -68,7 +68,7 @@ class TestJsonlPrinter extends Test {
               """"process":"process",""" +
               """"crop":"crop",""" +
               """"fertilizer":"fertilizer",""" +
-            """"season": season","""+
+            """"season":"season","""+
               """"comparative":0""" +
             "}," +
             """"arguments":[{""" +
@@ -113,7 +113,7 @@ class TestJsonlPrinter extends Test {
               """"process":"process",""" +
               """"crop":"crop",""" +
               """"fertilizer":"fertilizer",""" +
-            """"season": season","""+
+            """"season":"season","""+
               """"comparative":0""" +
             "}," +
             """"arguments":[{""" +
@@ -134,7 +134,7 @@ class TestJsonlPrinter extends Test {
               """"process":"process",""" +
               """"crop":"crop",""" +
               """"fertilizer":"fertilizer",""" +
-            """"season": season","""+
+            """"season":"season","""+
               """"comparative":0""" +
             "}," +
             """"arguments":[{""" +

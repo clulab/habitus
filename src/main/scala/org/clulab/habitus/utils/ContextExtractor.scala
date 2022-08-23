@@ -20,30 +20,17 @@ trait ContextExtractor {
 
   val NA = "N/A"
   val maxContextWindow = 2
+  val processToLemmas = ListMap(
+    "planting"         -> Set("plant", "sow", "cultivate", "cultivation", "grow", "seed", "seeding", "seedling", "transplant", "cropping", "variety"),
+    "harvesting"       -> Set("harvest", "yield"),
+    "credit"           -> Set("credit", "finance", "value"),
+    "irrigation"       -> Set("irrigation", "irrigate"),
+    "weeds"            -> Set("weed"),
+    "natural_disaster" -> Set("flood", "bird", "attack", "floodwater"),
+    "fertilizerApplication" -> Set("fertilizer", "application", "apply", "compost", "rate", "concentration"),
+    NA -> Set("N/A")
+  )
 
-//  val plantingLemmas = Seq("plant", "sow", "cultivate", "cultivation", "grow")
-//  val creditLemmas = Seq("credit", "finance", "value")
-//  val harvestLemmas = Seq("harvest", "yield")
-//  val irrigationLemmas = Seq("irrigation", "irrigate")
-//  val weedsLemmas = Seq("weed")
-//  val disasterLemmas = Seq("flood", "bird", "attack")
-val processToLemmas = ListMap(
-  "planting"         -> Set("plant", "sow", "cultivate", "cultivation", "grow", "seed", "seeding", "seedling", "transplant", "cropping", "variety"),
-  "harvesting"       -> Set("harvest", "yield"),
-  "credit"           -> Set("credit", "finance", "value"),
-  "irrigation"       -> Set("irrigation", "irrigate"),
-  "weeds"            -> Set("weed"),
-  "natural_disaster" -> Set("flood", "bird", "attack", "floodwater"),
-  "fertilizerApplication" -> Set("fertilizer", "application", "apply", "compost", "rate")
-)
-//val reverseProcessToLemma: ListMap[Set[String], String] = for ((k, v) <- processToLemmas) yield (v, k)
-//println(reverseProcessToLemma)
-//var reverseProcessToLemma: Map[String, String] = Map()
-//for ( (keys, values) <- processToLemmas){
-//  for (vals <- values){
-//    reverseProcessToLemma += (vals -> keys)
-//  }
-//}
   def reverseProcessToLemma(processToLemma: ListMap[String, Set[String]]): Map[String, String] = {
     val lemmaToProcess = collection.mutable.Map[String, String]()
     for ( (process, lemmaValues) <- processToLemma){
@@ -55,37 +42,26 @@ val processToLemmas = ListMap(
   }
 
   val lemmaToProcess: Map[String, String] = reverseProcessToLemma(processToLemmas)
-//println(lemmaToProcess)
 
-//
   def getContextPerMention(mentions: Seq[Mention], doc: Document): Seq[Mention]
 
   def getProcess(mention: Mention): String = {
+    val argLabels = mention.arguments.flatMap(_._2).map(_.label).toSeq
+    if (argLabels.contains("Fertilizer")) {
+      "fertilizerApplication"
+    } else {
+      //    Getting process lemma from the mention
+      val mentionLemmas = mention.lemmas
+      val mensLemmaOverLap = processToLemmas.map(p => (p._1, p._2.intersect(mentionLemmas.get.toSet).toList.length))
+      if (mensLemmaOverLap.values.max != 0) {
+        mensLemmaOverLap.filter(_._2 == mensLemmaOverLap.values.max).keys.mkString("::")
+      } else {
+        val closestLemma = findClosestProcessLemma(mention)
+        lemmaToProcess(closestLemma)
 
-//    Getting process lemma from the mention
-    val mentionLemmas = mention.lemmas
-    println(s"Here are the lemmas of the mention: $mentionLemmas")
-    val mensLemmaOverLap = processToLemmas.map(p => (p._1, p._2.intersect(mentionLemmas.get.toSet).toList.length))
-    println(s"Maximum overlap is $mensLemmaOverLap")
-    if (mensLemmaOverLap.values.max != 0) {
-      mensLemmaOverLap.filter(_._2 == mensLemmaOverLap.values.max).keys.mkString("::")
-    } else if (mensLemmaOverLap.values.max == 0) {
-      "N/A"
+      }
     }
-    else {
-      // get a wider window of lemmas here from sentenceObj
-      val mentionStartIndex = mention.tokenInterval.start
-      val mentionEndIndex = mention.tokenInterval.end
-      val windowSize = 10
-      val minusWindowStartIndex = mentionStartIndex - windowSize
-      val plusWindowStartIndex = mentionEndIndex + windowSize
-      val lemmas = mention.sentenceObj.lemmas.get.toSet.toList.slice(minusWindowStartIndex, plusWindowStartIndex)
-      val lemmaOverlapCounts = processToLemmas.map(p => (p._1, p._2.intersect(lemmas.toSet).toList.length))
-      // find max overlap
-      val maxOverlap = lemmaOverlapCounts.values.max
-      // filter out processes in lemmaOverlapCounts that are less than maximum overlap
-      lemmaOverlapCounts.filter(_._2 == maxOverlap).keys.mkString("::")
-    }
+
   }
 
   def getComparative(mention: Mention): Int = {
@@ -105,6 +81,8 @@ val processToLemmas = ListMap(
             val nextLoc = findClosestNextLocation(m, contextRelevantMentions)
             if (nextLoc.isDefined) nextLoc.get.text else NA
           }
+          case "Date" => findClosestNotOverlapping(m, contextRelevantMentions).text
+          case "Crop" => findClosestNotOverlapping(m, contextRelevantMentions).text
           case _ => findClosest(m, contextRelevantMentions).text
         }
       }
@@ -151,8 +129,35 @@ val processToLemmas = ListMap(
     sorted.last.tokenInterval.start - sorted.head.tokenInterval.end
   }
 
+  def getDistance(mention: Mention, lemmaIdx: (String, Int)): Int = {
+    val lemmaTokInt = Interval(lemmaIdx._2, lemmaIdx._2 + 1)
+    val sorted = Seq(mention.tokenInterval, lemmaTokInt).sorted
+    val dist = sorted.last.start - sorted.head.end
+    dist
+  }
+
   def findClosest(mention: Mention, mentions: Seq[Mention]): Mention = {
     mentions.map(m => (m, getDistance(mention, m))).minBy(_._2)._1
+  }
+
+  def findClosestProcessLemma(mention: Mention): String = {
+    val lemmasWithIndices = mention.sentenceObj.lemmas.get.zipWithIndex.filter(li => lemmaToProcess.contains(li._1))
+    val lemmasWithDistances = lemmasWithIndices.map(tup => (tup._1, getDistance(mention, tup)))
+      if (lemmasWithDistances.nonEmpty) {
+        lemmasWithDistances.minBy(_._2)._1
+      } else NA
+  }
+
+
+  def findClosestNotOverlapping(mention: Mention, mentions: Seq[Mention]): Mention = {
+    // check if there are context mentions (e.g., date or crop) that don't overlap with the mention itself and if yes, pick closest of those
+    // if there are no non-intersecting mentions, just pick any nearest one
+    val nonIntersecting = mentions.filter(m => m.tokenInterval.intersect(mention.tokenInterval).isEmpty)
+    if (nonIntersecting.nonEmpty) {
+      nonIntersecting.map(m => (m, getDistance(mention, m))).minBy(_._2)._1
+    } else {
+      mentions.map(m => (m, getDistance(mention, m))).minBy(_._2)._1
+    }
   }
 
 }
