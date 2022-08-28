@@ -73,7 +73,9 @@ object VariableProcessor {
   def newLexiconNer(): LexiconNER = {
     val kbs = Seq(
       "lexicons/FERTILIZER.tsv",
-      "lexicons/CROP.tsv"
+      "lexicons/CROP.tsv",
+      "lexicons/NONENTITY.tsv"
+
     )
     val isLocal = kbs.forall(new File(resourceDir, _).exists)
     val lexiconNer = LexiconNER(kbs,

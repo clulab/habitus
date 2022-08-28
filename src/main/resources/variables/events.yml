@@ -82,7 +82,7 @@
   type: token
   action: splitIntoBinary
   pattern: |
-    (?<variable> [lemma = /plant|grow/]) (("," | "and")* @value:Crop)+
+    (?<variable> [lemma = /^(plant|grow)/]) (("," | "and")* @value:Crop)+
 
 
 ### Planting date rules
