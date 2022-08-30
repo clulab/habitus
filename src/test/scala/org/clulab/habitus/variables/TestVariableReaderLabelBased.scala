@@ -27,36 +27,40 @@ class TestVariableReaderLabelBased extends Test {
     }
 
     def test(index: Int): Unit = {
-      shouldable should s"process $index-$name correctly" in {
-        if (index == -1)
-          println("Put a breakpoint here to observe a particular test.")
+      if (name == "sent5_0") // "sent5_0" "sent7" "sent35"
+        Range(0, 1).foreach { loop =>
+          // Force new compile.
+          //        println("Put a breakpoint here to observe a particular test.")
+          shouldable should s"process $index-$name-$loop correctly" in {
 
-        val allMentions = getMentions(text)
-        val mentions = allMentions.filter(_.label matches label).sortBy(_.tokenInterval)
+            val allMentions = getMentions(text)
+            val mentions = allMentions.filter(_.label matches label).sortBy(_.tokenInterval)
 
-        if (variables.isEmpty) {
-          // get only relations and events
-          val nonTextBoundMentions = mentions.filterNot(m => m.isInstanceOf[TextBoundMention])
-          // there should be none
-          nonTextBoundMentions.length should be (0)
-        } else {
+            if (variables.isEmpty) {
+              // get only relations and events
+              val nonTextBoundMentions = mentions.filterNot(m => m.isInstanceOf[TextBoundMention])
+              // there should be none
+              nonTextBoundMentions.length should be(0)
+            } else {
+              if (mentions.size != variables.length)
+                println("It's going to fail!")
+              mentions should have size variables.length
 
-          mentions should have size variables.length
+              variables.zip(mentions).zipWithIndex.foreach { case ((variable, mention), variableIndex) =>
+                (variableIndex, mention.arguments("variable").head.label) should be((variableIndex, variable._1))
 
-          variables.zip(mentions).zipWithIndex.foreach { case ((variable, mention), variableIndex) =>
-            (variableIndex, mention.arguments("variable").head.label) should be((variableIndex, variable._1))
+                val values = variable._2
+                val arguments = mention.arguments("value")
 
-            val values = variable._2
-            val arguments = mention.arguments("value")
-
-            arguments should have size values.length
-            values.zip(arguments).zipWithIndex.foreach { case ((value, argument), valueIndex) =>
-              (variableIndex, valueIndex, argument.text) should be ((variableIndex, valueIndex, value._1))
-              (variableIndex, valueIndex, argument.norms.get.head) should be((variableIndex, valueIndex, value._2))
+                arguments should have size values.length
+                values.zip(arguments).zipWithIndex.foreach { case ((value, argument), valueIndex) =>
+                  (variableIndex, valueIndex, argument.text) should be((variableIndex, valueIndex, value._1))
+                  (variableIndex, valueIndex, argument.norms.get.head) should be((variableIndex, valueIndex, value._2))
+                }
+              }
             }
           }
         }
-      }
     }
   }
 
@@ -105,7 +109,7 @@ class TestVariableReaderLabelBased extends Test {
     ),
     VariableTest(
       passingTest,
-      "sent5", "Potential rice grain yields (limited by solar radiation and temperature only) are on average about 9 t ha-1 in the wet growing season from July to November",
+      "sent5_0", "Potential rice grain yields (limited by solar radiation and temperature only) are on average about 9 t ha-1 in the wet growing season from July to November",
       "YieldAmount",
       Seq(
         ("Yield", Seq(("9 t ha-1", "9.0 t/ha")))

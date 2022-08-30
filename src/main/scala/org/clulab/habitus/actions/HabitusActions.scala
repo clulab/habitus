@@ -25,11 +25,15 @@ class HabitusActions extends Actions {
   // global actions below this points
   //
   /** Global action for the numeric grammar */
-  def cleanupAction(mentions: Seq[Mention], state: State): Seq[Mention] =
-    cleanupAction(mentions)
+  def cleanupAction(mentions: Seq[Mention], state: State): Seq[Mention] = {
+    val result = cleanupAction(mentions)
       // sorting to make sure tests that rely on mention order pass
       .sortBy(_.sentence)
       .sortBy(_.tokenInterval)
+    if (mentions.nonEmpty && result.isEmpty)
+      println("WARNING: Action cleanupAction did away with all mentions.")
+    result
+  }
 
   def cleanupAction(mentions: Seq[Mention]): Seq[Mention] = {
     val r1 = removeRedundantVariableMentions(keepLongestMentions(mentions))
@@ -160,12 +164,18 @@ class HabitusActions extends Actions {
     }
   }
   def yieldAmountActionFlow(mentions: Seq[Mention]): Seq[Mention] = {
+    if (mentions.isEmpty)
+      println("This shouldn't happen!")
     appropriateMeasurement(splitIntoBinary(mentions).filter(m => allowableTokenDistanceBetweenVarAndValue(m, 16)))
   }
   def fertilizerQuantityActionFlow(mentions: Seq[Mention]): Seq[Mention] = {
     appropriateMeasurement(splitIntoBinary(mentions).filter(m => allowableTokenDistanceBetweenVarAndValue(m, 12)))
   }
   def allowableTokenDistanceBetweenVarAndValue(mention: Mention, maxDist: Int): Boolean = {
+    if (mention.arguments(VARIABLE).size != 1)
+      println("Wrong!")
+    if (mention.arguments(VALUE).size != 1)
+      println("Wrong again!")
     val variable = mention.arguments(VARIABLE).head
     val value = mention.arguments(VALUE).head
     val sorted = Seq(variable, value).sortBy(_.tokenInterval)
@@ -202,13 +212,24 @@ class HabitusActions extends Actions {
     // check mention type
     val probableUnit = m match {
       case tbm: TextBoundMention => getNormString(tbm)
-      case rm: RelationMention => getNormString(rm.arguments(VALUE).head)
-      case em: EventMention => getNormString(em.arguments(VALUE).head)
+      case rm: RelationMention =>
+        val arguments = rm.arguments(VALUE)
+        if (arguments.length > 1)
+          println("This shouldn't happen!")
+        getNormString(rm.arguments(VALUE).head)
+      case em: EventMention =>
+        val arguments = em.arguments(VALUE)
+        if (arguments.length > 1)
+          println("This shouldn't happen!")
+        getNormString(em.arguments(VALUE).head)
       case _ => throw new RuntimeException(s"Unknown mention type ${m.getClass}")
     }
     // check if any of the possible units shows up in the norm
-    labelToAppropriateUnits
+    val result = labelToAppropriateUnits
       .getOrElse(m.label, throw new RuntimeException(s"Unknown measurement label ${m.label}"))(probableUnit)
+    if (!result)
+      println(s"$probableUnit results in false!")
+    result
   }
   def appropriateMeasurement(mentions: Seq[Mention]): Seq[Mention] = {
     // applies to individual rules to check if the measurement is appropriate for the mention label
