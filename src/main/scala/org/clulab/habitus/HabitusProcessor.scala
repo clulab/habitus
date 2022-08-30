@@ -8,7 +8,7 @@ import org.clulab.sequences.LexiconNER
 
 class HabitusProcessor(lexiconNer: Option[LexiconNER], filter: Boolean = true) extends CluProcessor(optionalNER = lexiconNer) {
   /** Our own tokenizer to clean up some nasty characters */
-  lazy val habitusTokenizer: HabitusTokenizer = new HabitusTokenizer(localTokenizer)
+  lazy val habitusTokenizer: HabitusTokenizer = new HabitusTokenizer(lazyTokenizer.value)
   override lazy val tokenizer: Tokenizer = habitusTokenizer
 
   /** Our own mkDocument, which removes some malformed sentences */
