@@ -42,14 +42,14 @@
     variable:Fertilizer = nsubj [tag = NNP]
     value:Quantity = dobj? [tag = CD]
 
-- name: emmission-vj-dep
-  priority: ${rulepriority}
-  label: EmissionAssignment
-  example: " yields , CH4 emissions per kg of rice are estimated at 2.7 103 kg"
-  pattern: |
-    trigger = [lemma = "be"]
-    variable:Emission = nsubj [tag = NN]
-    value:Quantity = dobj? [tag = CD]
+#- name: emmission-vj-dep
+#  priority: ${rulepriority}
+#  label: EmissionAssignment
+#  example: "Due to differences in yields , CH4 emissions per kg of rice are estimated at 2.7 103 kg in CONV , 1.7 103 kg in INT and 1.8 103 kg in the two SAED scenarios ."
+#  pattern: |
+#    trigger = [lemma = /emission/]
+#    variable:Entity = compound [tag = /^NN/]
+#    value:Quantity = nmod_per nmod_of
 
 - name: crop-assignment-verb-2
   priority: ${rulepriority}
@@ -256,7 +256,7 @@
   type: token
   action: yieldAmountActionFlow
   pattern: |
-    (?<![lemma =/^(increase|decrease)$/][]{,2}) @variable:Yield [!lemma = /^(increase|decrease|gain|emissions|application)$/]{1,15}? @value:Quantity+ ([!lemma = /^(increase|decrease|yield)$/]{,10}? (","|"and")? @value:Quantity)* (?![word="more"])
+    (?<![lemma =/^(increase|decrease)$/][]{,2}) @variable:Yield [!lemma = /^(increase|decrease|gain|emission|application)$/]{1,15}? @value:Quantity+ ([!lemma = /^(increase|decrease|yield)$/]{,10}? (","|"and")? @value:Quantity)* (?![word="more"])
 #    (?<![lemma =/^(increase|decrease)$/][]{,2}) @variable:Yield [!lemma = /^(increase|decrease|gain|emissions|application)$/]+? @value:Quantity+ ([!lemma = /^(increase|decrease|yield)$/]*? (","|"and")? @value:Quantity)* (?![word="more"])
 
 
@@ -268,9 +268,9 @@
   action: yieldAmountActionFlow
   example: "In 2012WS yield increased for about 1.5 t ha-1 after the application of xyz fertilizer"
   pattern: |
-    @variable:Yield []{,10}? [lemma=/^(increase|decrease|gain)$/] []{1,13}? @value:Quantity+
+    @variable:Yield []{,10}? [lemma=/^(increase|decrease|gain)$/] []{1,14}? @value:Quantity+
     |
-    @variable:Yield []{1,14} @value:Quantity+ [word = "more"]
+    @variable:Yield []{1,15} @value:Quantity+ [word = "more"]
     |
     (?<= [lemma=/^(increase|decrease)$/]) []{,2} @variable:Yield []{1,10}? @value:Quantity+ []{1,4}? @value:Quantity+
     |
@@ -344,4 +344,4 @@
   pattern: |
     (?<number>[entity='B-MEASUREMENT']) (?<unit1>[entity = 'I-MEASUREMENT']*)  (?<fertilizer> [entity = 'B-FERTILIZER'])  (?<unit2>[word=/\w\-1/])
     |
-    (?<number>[entity='B-MEASUREMENT']) (?<unit1>[entity = 'I-MEASUREMENT'])  (?<fertilizer> [tag = /^NN/] )  (?<unit2>[word=/\w\-1/])
+    (?<number>[entity='B-MEASUREMENT' & tag = "CD"]) (?<unit1>[entity = 'I-MEASUREMENT'])  (?<fertilizer> [tag = /^NN/] )  (?<unit2>[word=/\w\-1/])

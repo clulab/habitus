@@ -142,7 +142,8 @@ class TestDefaultContextAttachment extends Test {
           mentionText = "cultivar Sahel 202",
           date = "2000WS",
           crop = "Sahel 202",
-          comparative = "0"
+          comparative = "0",
+          process = "planting"
         )
       )
     ),
@@ -286,20 +287,6 @@ class TestDefaultContextAttachment extends Test {
           mentionText = "3.2 mg K l-1",
           fertilizer = "K",
           process = "fertilizerApplication",
-          comparative = "0"
-        )
-      )
-    ),
-    DefaultContextAttachmentTest(
-      passingTest,
-      "sent-14",
-      "In the 2000WS, they used cultivar Sahel 202",
-      "CropAssignment",
-      Seq(
-        Desired(
-          mentionText = "cultivar Sahel 202",
-          date = "2000WS",
-          crop = "Sahel 202",
           comparative = "0"
         )
       )

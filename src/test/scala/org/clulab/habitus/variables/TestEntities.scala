@@ -274,7 +274,7 @@ class TestEntities extends Test {
       Seq(
         "Planting" -> Seq("sowing", "sowing"),
         "Location" -> Seq("Senegal River"),
-        "DrySeason" -> Seq("dry season")
+        "DrySeason" -> Seq("dry season", "DS")
       )
     ),
     VariableTest(

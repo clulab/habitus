@@ -77,7 +77,7 @@
   label: Date
   type: token
   pattern: |
-    [entity='B-DATE' & !mention=Avoid] [entity='I-DATE']* 
+    [entity='B-DATE' & !mention=Avoid] [entity='I-DATE']* | [word=/^(1\d\d\d|2\d\d\d)$/ & !mention="Avoid"] (?! [word = /^(DS|WS)$/])
 
 - name: value-from-date-2
   priority: ${rulepriority}
@@ -157,6 +157,8 @@
     /(?i)(wet|rainy)/ []{,2}? [lemma = /\bseason\b/]
     |
     /\d{4}WS/
+    |
+    /^WS$/
 
 - name: dry-season
   priority: ${rulepriority}
@@ -166,6 +168,8 @@
     /(?i)(dry|hot|cold)/ []*? [lemma = /\bseason\b/]
     |
     /\d{4}DS/
+    |
+    /^DS$/
 
 - name: complex-date
   priority: ${higherpriority}
@@ -181,7 +185,7 @@
   label: Location
   type: token
   pattern: |
-    [entity='B-LOC'] [entity='I-LOC']*
+    [entity='B-LOC' & !mention="Avoid"] [entity='I-LOC']*
 
 - name: duration-property
   priority: ${rulepriority}

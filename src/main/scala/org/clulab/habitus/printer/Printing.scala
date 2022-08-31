@@ -2,7 +2,7 @@ package org.clulab.habitus.printer
 
 import org.clulab.odin.Mention
 
-trait Printing {
+trait Printing extends AutoCloseable {
 
   def outputMentions(mentions: Seq[Mention], inputFilename: String): Unit
 

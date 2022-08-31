@@ -372,7 +372,12 @@ class TestVariableReaderLabelBased extends Test {
       passingTest,
       "sent21_13", "Harvests have started in some production areas of the valley, to date an area estimated at 843 ha is already harvested in  the Delta, 199 ha in Matam, 31 ha in Bakel, and 23 ha in Dagana.",
       "AreaSize",
-      Seq(("GenericArea", Seq(("843 ha", "843.0 ha"), ("199 ha", "199.0 ha"), ("31 ha", "31.0 ha"), ("23 ha", "23.0 ha"))))
+      Seq(
+        ("GenericArea", Seq(("843 ha", "843.0 ha"))),
+          ("GenericArea", Seq(("199 ha", "199.0 ha"))),
+            ("GenericArea", Seq(("31 ha", "31.0 ha"))),
+              ("GenericArea", Seq(("23 ha", "23.0 ha")))
+        )
     ),
     VariableTest(
       passingTest,
@@ -417,8 +422,7 @@ class TestVariableReaderLabelBased extends Test {
       "sent34", "the potential rice grain yields were between 8.8 t ha-1 and 9.2 t ha-1 ( i.e. about 1 t ha-1 more than in the 1998WS ) whilst the average of the actual yield increased greatly",
       "YieldAmount",
       Seq(
-        ("Yield", Seq(("8.8 t ha-1", "8.8 t/ha"))),
-        ("Yield", Seq(("9.2 t ha-1", "9.2 t/ha"))),
+        ("Yield", Seq(("between 8.8 t ha-1 and 9.2 t ha-1", "8.8 -- 9.2 t/ha")))
       )
     ),
     VariableTest(

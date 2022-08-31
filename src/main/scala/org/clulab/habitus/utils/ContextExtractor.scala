@@ -21,7 +21,7 @@ trait ContextExtractor {
   val NA = "N/A"
   val maxContextWindow = 2
   val processToLemmas = ListMap(
-    "planting"         -> Set("plant", "sow", "cultivate", "cultivation", "grow", "seed", "seeding", "seedling", "transplant", "cropping", "variety"),
+    "planting"         -> Set("plant", "sow", "cultivate", "cultivation", "grow", "seed", "seeding", "seedling", "transplant", "cropping", "variety", "use"),
     "harvesting"       -> Set("harvest", "yield"),
     "credit"           -> Set("credit", "finance", "value"),
     "irrigation"       -> Set("irrigation", "irrigate"),

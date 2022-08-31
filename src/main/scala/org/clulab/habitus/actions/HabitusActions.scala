@@ -87,7 +87,7 @@ class HabitusActions extends Actions {
   def areaVarActionFlow(mentions: Seq[Mention]): Seq[Mention] = {
     // applies within a rule
     // split mentions with mult args into binary mentions
-    val split = splitIfTwoValues(mentions)
+    val split = splitIntoBinary(mentions)
     // filter out the ones where var and val are too far
     limitVarValSpan(split)
   }
@@ -98,7 +98,7 @@ class HabitusActions extends Actions {
       val args = m.arguments.map(_._2.head).toSeq
       val sortedArgs = args.sortBy(_.tokenInterval)
       val distance = sortedArgs.last.start - sortedArgs.head.end
-      if (distance <= 17) {
+      if (distance <= 23) {
         toReturn.append(m)
       }
     }
@@ -213,10 +213,11 @@ class HabitusActions extends Actions {
   val labelToAppropriateUnits = Map(
     "Quantity" -> Set("t", "t/ha", "kg/ha", "kg", "d", "cm", "mg/l", "kg n ha-1"),
     "AreaSizeValue" -> Set("ha", "m2"),
-    "YieldAmount" -> Set("t/ha", "kg/ha", "kg"),
+    "YieldAmount" -> Set("t/ha", "kg/ha", "kg", "kg ha1"),
     "YieldIncrease" -> Set("t/ha", "kg/ha", "kg"),
     "FertilizerQuantity" -> Set("t", "kg/ha", "mg/l", "kg n ha-1")
   )
+
   def hasLetters(string: String): Boolean = {
     string.exists(ch => ch.isLetter || ch == '/')
   }
@@ -271,6 +272,7 @@ class HabitusActions extends Actions {
     )
     newEvent
   }
+
   def adjustQuantityNorm(mentions: Seq[Mention]): Seq[Mention] = {
     mentions.map { m =>
       // To be addressed later on handling decimal values.
@@ -292,6 +294,7 @@ class HabitusActions extends Actions {
       )
     }
   }
+
   def makeEventFromSplitUnit(mentions: Seq[Mention]): Seq[Mention] = {
     // applies to individual rules to adjust norm
     mentions.map(makeEventFromUnitSplitByFertilizer)

@@ -17,3 +17,10 @@ rules:
     type: token
     pattern: |
       [word = /^(P|p)$/] (?=[word = "<"])
+
+  - name: "non-entities"
+    label: Avoid
+    priority: ${rulepriority}
+    type: token
+    pattern: |
+      [word = /^(Europ|PA|PI|T1|SAED|Fig.|Fig|Elementar)$/]
