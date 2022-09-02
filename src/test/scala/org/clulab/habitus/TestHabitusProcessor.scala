@@ -85,8 +85,8 @@ class TestHabitusProcessor extends Test {
     val entities = document.sentences.head.entities.get.mkString(" ")
 
     // This is the old, faulty behavior from processors 8.5.1.
-    entities should be ("B-ORG B-ACRONYM I-ORG O")
+    // entities should be ("B-ORG B-ACRONYM I-ORG O")
     // This is the planned, new, correct behavior from processors 8.5.2.
-    // entities should be ("B-ORG I-ORG I-ORG O")
+    entities should be ("B-ORG I-ORG I-ORG O")
   }
 }
