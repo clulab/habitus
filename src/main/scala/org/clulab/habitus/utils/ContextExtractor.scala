@@ -21,13 +21,15 @@ trait ContextExtractor {
   val NA = "N/A"
   val maxContextWindow = 2
   val processToLemmas = ListMap(
-    "planting"         -> Set("plant", "sow", "cultivate", "cultivation", "grow", "seed", "seeding", "seedling", "transplant", "cropping", "variety", "use"),
+    "planting"         -> Set("plant", "sow", "cultivate", "cultivation", "grow", "seed", "seeding", "seedling", "transplant", "cropping", "variety", "use", "growth"),
     "harvesting"       -> Set("harvest", "yield"),
     "credit"           -> Set("credit", "finance", "value"),
     "irrigation"       -> Set("irrigation", "irrigate"),
     "weeds"            -> Set("weed"),
     "natural_disaster" -> Set("flood", "bird", "attack", "floodwater"),
     "fertilizerApplication" -> Set("fertilizer", "application", "apply", "compost", "rate", "concentration"),
+    "climate" -> Set("climate"),
+    "agriculture" -> Set("agriculture"),
     NA -> Set("N/A")
   )
 
@@ -79,10 +81,13 @@ trait ContextExtractor {
         contextType match {
           case "Location" => {
             val nextLoc = findClosestNextLocation(m, contextRelevantMentions)
-            if (nextLoc.isDefined) nextLoc.get.text else NA
+            if (nextLoc.isDefined) nextLoc.get.text else findClosestNotOverlapping(m, contextRelevantMentions).text
           }
           case "Date" => findClosestNotOverlapping(m, contextRelevantMentions).text
-          case "Crop" => findClosestNotOverlapping(m, contextRelevantMentions).text
+          case "Crop" => if (m.foundBy.endsWith("splitIntoBinary")) {
+            findClosestNotOverlapping(m, contextRelevantMentions).text
+          } else findOverlappingOrClosestNotOverlapping(m, contextRelevantMentions).text
+
           case _ => findClosest(m, contextRelevantMentions).text
         }
       }
@@ -158,6 +163,15 @@ trait ContextExtractor {
     } else {
       mentions.map(m => (m, getDistance(mention, m))).minBy(_._2)._1
     }
+  }
+  def findOverlappingOrClosestNotOverlapping(mention: Mention, mentions: Seq[Mention]): Mention = {
+    // check if there are context mentions (e.g., date or crop) that don't overlap with the mention itself and if yes, pick closest of those
+    // if there are no non-intersecting mentions, just pick any nearest one
+    val overlapping = mentions.filter(m => m.tokenInterval.intersect(mention.tokenInterval).nonEmpty)
+    if (overlapping.nonEmpty) {
+      return overlapping.head
+    } else findClosestNotOverlapping(mention, mentions)
+
   }
 
 }

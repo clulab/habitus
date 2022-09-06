@@ -28,7 +28,7 @@ class DefaultContextExtractor extends ContextExtractor {
           .map(men => men.label -> men.text).toMap
         val context = DefaultContext(
           getContext(m, "Location", thisSentLocs, mentions),
-          getContext(m, "Date", thisSentDates, mentions),
+          if (menArgLabels.exists(_._1 contains "Date")) menArgLabels.filter(_._1 contains "Date").head._2 else  getContext(m, "Date", thisSentDates, mentions),
           getProcess(m),
           // with crops and fertilizer (and maybe later other types of context), if a crop or fertilizer is one of the arguments,
           // ...just pick those to fill the context fields

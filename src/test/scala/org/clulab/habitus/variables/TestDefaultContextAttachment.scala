@@ -334,7 +334,7 @@ class TestDefaultContextAttachment extends Test {
       Seq(
         Desired(
           mentionText = "sowed Jaya between 20 June and 1 July",
-          date = "1998WS",
+          date = "between 20 June and 1 July",
           process = "planting",
           crop = "Jaya",
           season = "1998WS",

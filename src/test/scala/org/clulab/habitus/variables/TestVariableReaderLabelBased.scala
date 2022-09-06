@@ -97,7 +97,7 @@ class TestVariableReaderLabelBased extends Test {
     ),
     VariableTest(
       passingTest,
-      "sent5", "These correspond to the dry season (from February/March to June/July)",
+      "sent5_0", "These correspond to the dry season (from February/March to June/July)",
       "DrySeasonAssignment",
       Seq(
         ("DrySeason", Seq(("from February/March to June/July", "XXXX-02-XX -- XXXX-07-XX")))

@@ -3,6 +3,7 @@ package org.clulab.habitus.actions
 import org.clulab.numeric.mentions.MeasurementMention
 import org.clulab.odin.{Actions, EventMention, Mention, RelationMention, State, TextBoundMention, mkTokenInterval}
 import org.clulab.struct.Interval
+import org.clulab.wm.eidos.expansion.TextBoundExpander
 
 import scala.collection.mutable.ArrayBuffer
 
@@ -75,12 +76,12 @@ class HabitusActions extends Actions {
     }
     keepOneOfSameSpan(uniqueArguments(filteredBeliefs ++ nonBeliefs))
   }
-  def copyWithArgs(orig: Mention, newArgs: Map[String, Seq[Mention]]): Mention = {
+  def copyWithArgs(orig: Mention, newArgs: Map[String, Seq[Mention]], foundBy: String): Mention = {
     val newTokInt = mkTokenInterval(newArgs)
     orig match {
       case tb: TextBoundMention => ???
-      case rm: RelationMention => rm.copy(arguments = newArgs, tokenInterval = newTokInt)
-      case em: EventMention => em.copy(arguments = newArgs, tokenInterval = newTokInt)
+      case rm: RelationMention => rm.copy(arguments = newArgs, tokenInterval = newTokInt, foundBy = foundBy)
+      case em: EventMention => em.copy(arguments = newArgs, tokenInterval = newTokInt, foundBy = foundBy)
       case _ => ???
     }
   }
@@ -108,22 +109,22 @@ class HabitusActions extends Actions {
   val VALUE = "value"
   val VARIABLE = "variable"
 
-  def splitIfTwoValues(mentions: Seq[Mention]): Seq[Mention] = {
-    // for area rules; if there is an extraction with multiple value args,
-    // split it into binary var-value mentions
-    val (assignmentMentions, other) = mentions.partition(_ matches "Assignment")
-    val toReturn = new ArrayBuffer[Mention]()
-    for (am <- assignmentMentions) {
-      val valueArgs = am.arguments(VALUE)
-      if (valueArgs.length > 1) {
-        for (valueArg <- valueArgs) {
-          val newArgs = Map(VARIABLE -> Seq(am.arguments(VARIABLE).head), VALUE -> Seq(valueArg))
-          toReturn.append(copyWithArgs(am, newArgs))
-        }
-      } else toReturn.append(am)
-    }
-    toReturn ++ other
-  }
+//  def splitIfTwoValues(mentions: Seq[Mention]): Seq[Mention] = {
+//    // for area rules; if there is an extraction with multiple value args,
+//    // split it into binary var-value mentions
+//    val (assignmentMentions, other) = mentions.partition(_ matches "Assignment")
+//    val toReturn = new ArrayBuffer[Mention]()
+//    for (am <- assignmentMentions) {
+//      val valueArgs = am.arguments(VALUE)
+//      if (valueArgs.length > 1) {
+//        for (valueArg <- valueArgs) {
+//          val newArgs = Map(VARIABLE -> Seq(am.arguments(VARIABLE).head), VALUE -> Seq(valueArg))
+//          toReturn.append(copyWithArgs(am, newArgs))
+//        }
+//      } else toReturn.append(am)
+//    }
+//    toReturn ++ other
+//  }
   def removeRedundantVariableMentions(mentions: Seq[Mention]): Seq[Mention] = {
     // The action makes sure there is one variable for every value in most assignment events/relations (those that have value args); we exclude property assignments from this because one property can apply to multiple variables (e.g., They planted crop1 and crop2 (short duration))
     // The action applies to mentions extracted with var reader relation/event rules, so we exclude TBMs and include a value argument.
@@ -207,7 +208,7 @@ class HabitusActions extends Actions {
       m <- targets
       value <- m.arguments(VALUE)
       newArgs = Map(VARIABLE -> m.arguments(VARIABLE), VALUE -> Seq(value))
-    } yield copyWithArgs(m, newArgs)
+    } yield copyWithArgs(m, newArgs, m.foundBy + "++splitIntoBinary")
     splitTargets ++ other
   }
   val labelToAppropriateUnits = Map(
@@ -298,5 +299,29 @@ class HabitusActions extends Actions {
   def makeEventFromSplitUnit(mentions: Seq[Mention]): Seq[Mention] = {
     // applies to individual rules to adjust norm
     mentions.map(makeEventFromUnitSplitByFertilizer)
+  }
+
+  def varietyToTBM(mentions: Seq[Mention]): Seq[Mention] = {
+    mentions.flatMap(m =>
+      // get all variety args
+      m.arguments("variety")
+        .map (am =>
+          // make a standalone Crop mention from each variety arg
+          am.asInstanceOf[TextBoundMention]
+            .copy(
+              labels = Seq("Crop", "Entity"),
+              foundBy = m.foundBy + "++varietyToTBM"
+              )
+            )
+          )
+  }
+
+  def copyWithFoundBy(mention: Mention, foundBy: String): Mention = {
+    mention match {
+      case tbm: TextBoundMention => tbm.copy(foundBy = foundBy)
+      case rm: RelationMention => rm.copy(foundBy = foundBy)
+      case em: EventMention => em.copy(foundBy = foundBy)
+      case _ => throw new RuntimeException(s"Unknown mention type ${mention.getClass}")
+    }
   }
 }

@@ -8,6 +8,7 @@ taxonomy:
   - GrammaticalCategory:
     - Noun
     - NounPhrase
+    - PersonalNounPhrase
   - Entity:
     - Variable
     - Value
@@ -32,7 +33,7 @@ taxonomy:
     - GenericArea
     - AreaSizeValue
     - Percentage
-    - Months
+    - Month
   - Event:
     - Assignment
     - BirdAttackEvent
@@ -70,4 +71,5 @@ rules:
     vars:
       label: Assignment
       rulepriority: "5+"
+      higherpriority: "6+"
 

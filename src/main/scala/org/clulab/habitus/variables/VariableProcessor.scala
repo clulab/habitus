@@ -59,7 +59,8 @@ class VariableProcessor(val processor: CluProcessor,
   }
 
   def filterNegativeValues(mentions: Seq[Mention]): Seq[Mention] = {
-    mentions.filterNot(_.arguments("value").head.norms.head.head.startsWith("-"))
+    val (withVals, other) = mentions.partition(_.arguments.contains("value"))
+    withVals.filterNot(_.arguments("value").head.norms.head.head.startsWith("-")) ++ other
   }
 }
 

@@ -10,6 +10,9 @@ rules:
       (?<=[tag=NNP] "et" /al|al./ /\(|,/? ) /[12]\d\d\d/ 
       |
       (?<= /\(|;/ ([tag=NNP]{1,2} [word = /,|and/]?)+) /[12]\d\d\d/
+      |
+      (?<=[word = "Accepted"] []{,3}) [entity='B-DATE']+
+      
 
   - name: "statistical-significance-p"
     label: Avoid

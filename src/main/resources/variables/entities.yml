@@ -11,6 +11,60 @@
   pattern: |
     [tag=/^NN/]
 
+- name: np-rule
+  priority: ${lowpriority}
+  label: NounPhrase
+  type: token
+  pattern: |
+    [chunk="B-NP" & !tag = "CD"] [chunk = "I-NP"]
+
+- name: pnp-rule
+  priority: ${lowpriority}
+  label: PersonalNounPhrase
+  type: token
+  pattern: |
+    [chunk="B-NP" & tag = "NNP"] [chunk = "I-NP" & !word = "and"]+
+    |
+    [chunk = "I-NP" & tag = "NNP" & !word = "and"]+
+
+### These will act as variables in various assignment events ###
+
+- name: crop-values-from-lexicon-vars
+  priority: ${lowpriority}
+  label: Crop
+  type: token
+  pattern: |
+    [entity='B-CROP'] [entity='I-CROP']*
+
+- name: variety-rule
+  priority: ${rulepriority}
+  label: Crop
+  type: dependency
+  action: varietyToTBM
+  example: " Mutants such as Huayu 22 and Fu 22"
+  pattern: |
+    trigger = [lemma = /^(variety|landrace|mutant)$/]
+    variety: PersonalNounPhrase+ = nmod_such_as | nmod_such_as conj_and
+#    (?<= [lemma = /^(variety|landrace|mutant)$/] "("? [word = /e.g.|such/] [word = "as"]?) @variety:PersonalNounPhrase+
+
+- name: variety-tok-rule-1
+  priority: ${rulepriority}
+  label: Crop
+  type: token
+  action: varietyToTBM
+  pattern: |
+    (?<= [lemma = /^(variety|landrace|mutant)$/] "("? [lemma = /^eg$/] [word = "."]?) @variety:PersonalNounPhrase+? ([lemma = /^(\,|and)$/]? @variety:PersonalNounPhrase)+?
+    |
+    (?<=[word = "variety"] ","?) (?<variety> [tag = "NNP" & !mention = "Crop"] [tag = "CD"])
+    | 
+    @variety:PersonalNounPhrase (?=[word = "variety"])
+    | 
+    (?<variety> [tag = "NNP" & !mention = "Crop"] [tag = "CD"]) (?=[word = "variety"])
+    |
+    (?<= [tag = "CD"] [] [lemma = /^variety$/] [word = /^\,|\(/]?) @variety:PersonalNounPhrase+? ([lemma = /^(,|and)$/]? @variety:PersonalNounPhrase)+?
+  #    |
+#    (?<=[word = "variety"] ","?) @variety: PersonalNounPhrase
+
 ### These will act as variables in various assignment events ###
 - name: generic-crop-rule
   priority: ${rulepriority}
@@ -18,6 +72,8 @@
   type: token
   pattern: |
     [lemma = /(?i)\b(crop|cultivar|cultivation|seed|variety|varieties)\b/]
+    
+    
 
 # manure --> can be added for generic fertilizer.
 - name: generic-fertilizer-rule
@@ -46,7 +102,7 @@
   label: GenericArea
   type: token
   pattern: |
-    [lemma=/area/]
+    [lemma=/area|land/]
 #    ([lemma=/cultivate|plant|sow/])? [lemma=/area/] ([lemma=/sow/])?
 
 - name: variable-fertilizer
@@ -77,14 +133,17 @@
   label: Date
   type: token
   pattern: |
-    [entity='B-DATE' & !mention=Avoid] [entity='I-DATE']* | [word=/^(1\d\d\d|2\d\d\d)$/ & !mention="Avoid"] (?! [word = /^(DS|WS)$/])
+    [entity='B-DATE' & !mention=Avoid & !word = /19[0-6]\d/] [entity='I-DATE']* | [word=/^(19[7-9]\d|2\d\d\d)$/ & !mention="Avoid"] (?! [word = /^(DS|WS)$/])
+  # limiting allowable year range to be after 1970s...
 
 - name: value-from-date-2
   priority: ${rulepriority}
-  label: Months
+  label: Month
   type: token
   pattern: |
-    [entity='B-DATE' & !word=/^1\d\d\d|2\d\d\d/] [entity='I-DATE' & !word=/^1\d\d\d|2\d\d\d/]* | [entity='B-DATE-RANGE' & !word=/^1\d\d\d|2\d\d\d/] [entity='I-DATE-RANGE' & !word=/^1\d\d\d|2\d\d\d/]*
+    [entity = /.\-DATE$/ & word = /[A-Z][a-z]/]+
+    |
+    [entity='B-DATE' & !word=/^1\d\d\d|2\d\d\d/] [entity='I-DATE' & !word=/^1\d\d\d|2\d\d\d/]+ | [entity='B-DATE-RANGE' & !word=/^1\d\d\d|2\d\d\d/] [entity='I-DATE-RANGE' & !word=/^1\d\d\d|2\d\d\d/]+
 
 - name: value-from-daterange
   priority: ${rulepriority}
@@ -108,7 +167,7 @@
   type: token
   action: appropriateMeasurement
   pattern: |
-    [entity='B-MEASUREMENT'] [entity = 'I-MEASUREMENT']*
+    [entity='B-MEASUREMENT' & !word = /19[0-6]\d/] [entity = 'I-MEASUREMENT' & !word = /19[0-6]\d/]*
 
 - name: measurement-rule-constructed
   priority: ${rulepriority}
@@ -142,12 +201,7 @@
   pattern: |
     [entity='B-FERTILIZER' & !mention=Avoid] [entity='I-FERTILIZER']*
 
-- name: crop-values-from-lexicon-vars
-  priority: ${rulepriority}
-  label: Crop
-  type: token
-  pattern: |
-    [entity='B-CROP'] [entity='I-CROP']*
+
 
 - name: wet-season
   priority: ${rulepriority}
