@@ -20,12 +20,14 @@
 
 - name: pnp-rule
   priority: ${lowpriority}
-  label: PersonalNounPhrase
+  label: PossibleNewVariety
   type: token
   pattern: |
-    [chunk="B-NP" & tag = "NNP"] [chunk = "I-NP" & !word = "and"]+
+    [chunk="B-NP" & tag = "NNP" & !mention = "Avoid"] [chunk = "I-NP" & !word = "and" & !mention = "Avoid"]+ [tag = "CD"]?
     |
-    [chunk = "I-NP" & tag = "NNP" & !word = "and"]+
+    [chunk = "I-NP" & tag = "NNP" & !word = "and" & !mention = "Avoid"]+ [tag = "CD"]?
+    |
+    [word = /^\d+\D\d*$/]
 
 ### These will act as variables in various assignment events ###
 
@@ -36,34 +38,46 @@
   pattern: |
     [entity='B-CROP'] [entity='I-CROP']*
 
+- name: generic-variety-rule
+  priority: ${lowpriority}
+  label: GenericVariety
+  type: token
+  pattern: |
+    [lemma = /variety|varieties|landrace|mutant/]
+
 - name: variety-rule
   priority: ${rulepriority}
   label: Crop
   type: dependency
   action: varietyToTBM
-  example: " Mutants such as Huayu 22 and Fu 22"
+  example: "Mutants such as Huayu 22 and Fu 22"
   pattern: |
     trigger = [lemma = /^(variety|landrace|mutant)$/]
-    variety: PersonalNounPhrase+ = nmod_such_as | nmod_such_as conj_and
-#    (?<= [lemma = /^(variety|landrace|mutant)$/] "("? [word = /e.g.|such/] [word = "as"]?) @variety:PersonalNounPhrase+
+    variety: PossibleNewVariety+ = nmod_such_as | nmod_such_as conj_and
+#    (?<= [lemma = /^(variety|landrace|mutant)$/] "("? [word = /e.g.|such/] [word = "as"]?) @variety:ProperNounPhrase+
 
 - name: variety-tok-rule-1
   priority: ${rulepriority}
   label: Crop
   type: token
   action: varietyToTBM
+  example:
   pattern: |
-    (?<= [lemma = /^(variety|landrace|mutant)$/] "("? [lemma = /^eg$/] [word = "."]?) @variety:PersonalNounPhrase+? ([lemma = /^(\,|and)$/]? @variety:PersonalNounPhrase)+?
+    @variable:GenericVariety ([]{,10} @variety:PossibleNewVariety)+
     |
-    (?<=[word = "variety"] ","?) (?<variety> [tag = "NNP" & !mention = "Crop"] [tag = "CD"])
-    | 
-    @variety:PersonalNounPhrase (?=[word = "variety"])
-    | 
-    (?<variety> [tag = "NNP" & !mention = "Crop"] [tag = "CD"]) (?=[word = "variety"])
-    |
-    (?<= [tag = "CD"] [] [lemma = /^variety$/] [word = /^\,|\(/]?) @variety:PersonalNounPhrase+? ([lemma = /^(,|and)$/]? @variety:PersonalNounPhrase)+?
+    @variety:PossibleNewVariety @variable:GenericVariety
+
+#    (?<= [lemma = /^(variety|landrace|mutant)$/] "("? [lemma = /^eg$/] [word = "."]?) @variety:ProperNounPhrase+? ([lemma = /^(\,|and)$/]? @variety:ProperNounPhrase)+?
+#    |
+#    (?<=[word = "variety"] ","?) (?<variety> [tag = "NNP" & !mention = "Crop"] [tag = "CD"])
+#    |
+#    @variety:ProperNounPhrase (?=[word = "variety"])
+#    |
+#    (?<variety> [tag = "NNP" & !mention = "Crop"] [tag = "CD"]) (?=[word = "variety"])
+#    |
+#    (?<= [tag = "CD"] [] [lemma = /^variety$/] [word = /^\,|\(/]?) @variety:ProperNounPhrase+? ([lemma = /^(,|and)$/]? @variety:ProperNounPhrase)+?
   #    |
-#    (?<=[word = "variety"] ","?) @variety: PersonalNounPhrase
+#    (?<=[word = "variety"] ","?) @variety: ProperNounPhrase
 
 ### These will act as variables in various assignment events ###
 - name: generic-crop-rule
@@ -117,7 +131,7 @@
   label: Yield
   type: token
   pattern: |
-    [lemma = "yield" & tag = /^NN/]
+    [lemma = "yield" & tag = /^(NN|VB)/]
 
 - name: variable-bird-attacks
   priority: ${rulepriority}

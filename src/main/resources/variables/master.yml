@@ -8,7 +8,6 @@ taxonomy:
   - GrammaticalCategory:
     - Noun
     - NounPhrase
-    - PersonalNounPhrase
   - Entity:
     - Variable
     - Value
@@ -17,7 +16,9 @@ taxonomy:
     - Location
     - Fertilizer
     - FertilizerUse
-    - Crop
+    - Crop:
+        - NewCrop
+        - PossibleNewVariety
     - Yield
     - Emission
     - Season:
@@ -27,6 +28,7 @@ taxonomy:
     - Quantity
     - BirdAttack
     - GenericCrop
+    - GenericVariety
     - GenericFertilizer
     - Duration
     - GrainProperty
