@@ -341,6 +341,54 @@ class TestDefaultContextAttachment extends Test {
           comparative = "0"
         )
       )
+    ),
+    DefaultContextAttachmentTest(
+      // checks for pairwise crop context alignment
+      passingTest,
+      "sent-18",
+      "The groundnut and the Fleur 11 gave higher yield in DELTA with 4.5 and 4.2 t ha-1 , respectively ( Table 4 ) .",
+      "YieldAmount",
+      Seq(
+        Desired(
+          mentionText = "yield in DELTA with 4.5",
+          process = "harvesting",
+          crop = "groundnut",
+          comparative = "0"
+        ),
+        Desired(
+          mentionText = "yield in DELTA with 4.5 and 4.2 t ha-1",
+          process = "harvesting",
+          crop = "Fleur 11",
+          comparative = "0"
+        )
+      )
+    ),
+    DefaultContextAttachmentTest(
+      // checks for pairwise location context alignment
+      passingTest,
+      "sent-18",
+      "The yield environmental index was 3.7 , 2.5 and 1.7 t ha-1 in Delta , MVZ and GLZ , respectively .",
+      "YieldAmount",
+      Seq(
+        Desired(
+          mentionText = "yield environmental index was 3.7",
+          process = "harvesting",
+          location = "Delta",
+          comparative = "1"
+        ),
+        Desired(
+          mentionText = "yield environmental index was 3.7 , 2.5",
+          process = "harvesting",
+          location = "MVZ",
+          comparative = "1"
+        ),
+        Desired(
+          mentionText = "yield environmental index was 3.7 , 2.5 and 1.7 t ha-1",
+          process = "harvesting",
+          location = "GLZ",
+          comparative = "1"
+        )
+      )
     )
   )
 
