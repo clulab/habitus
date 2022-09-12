@@ -11,8 +11,19 @@ rules:
       |
       (?<= /\(|;/ ([tag=NNP]{1,2} [word = /,|and/]?)+) /[12]\d\d\d/
       |
-      (?<=[word = "Accepted"] []{,3}) [entity='B-DATE']+
-      
+      (?<=[word = /Accepted|^FAO$/] []{,3}) [entity='B-DATE']+
+
+  - name: "publishing-avoids"
+    label: Avoid
+    priority: ${rulepriority}
+    type: token
+    example: "peanut growth to drought ( Annerose , 1985 ; Annerose , 1990 ).  ( Dia et al. 1998 )"
+    pattern: |
+      [word = /^(Table|Reference|Fig.|Fig)$/]
+      |
+      [tag=NNP] "et" /al|al./ 
+      |
+      "(" [tag = "NNP"] "," [word = /^[12][09]\d\d$/] /;|\)/ 
 
   - name: "statistical-significance-p"
     label: Avoid
@@ -26,4 +37,11 @@ rules:
     priority: ${rulepriority}
     type: token
     pattern: |
-      [word = /^(Europ|PA|PI|T1|SAED|Fig.|Fig|Elementar)$/]
+      [word = /^(Europ|PA|PI|T1|SAED|Elementar|As|vs)$/]
+
+  - name: "misc-avoids"
+    label: Avoid
+    priority: ${rulepriority}
+    type: token
+    pattern: |
+      [word = /^(\[|\]|\(|\)|\{|\}|>|<|=)$/]

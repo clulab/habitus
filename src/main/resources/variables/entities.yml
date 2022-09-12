@@ -23,11 +23,11 @@
   label: PossibleNewVariety
   type: token
   pattern: |
-    [chunk="B-NP" & tag = "NNP" & !mention = "Avoid"] [chunk = "I-NP" & !word = "and" & !mention = "Avoid"]+ [tag = "CD"]?
+    [chunk="B-NP" & tag = "NNP" & !mention = "Avoid" & !entity = /.\-ACRONYM|.\-FERTILIZER/] [chunk = "I-NP" & !word = "and" & !mention = "Avoid"]+ [tag = "CD"]
     |
-    [chunk = "I-NP" & tag = "NNP" & !word = "and" & !mention = "Avoid"]+ [tag = "CD"]?
+    [chunk = "I-NP" & tag = "NNP" & !word = "and" & !mention = "Avoid" & !entity = /.\-ACRONYM|.\-FERTILIZER/]+ [tag = "CD"]
     |
-    [word = /^\d+\D\d*$/]
+    [word = /^\d+(\-\d+)+$/ & !entity =/.\-MEASUREMENT/]
 
 ### These will act as variables in various assignment events ###
 
@@ -54,7 +54,6 @@
   pattern: |
     trigger = [lemma = /^(variety|landrace|mutant)$/]
     variety: PossibleNewVariety+ = nmod_such_as | nmod_such_as conj_and
-#    (?<= [lemma = /^(variety|landrace|mutant)$/] "("? [word = /e.g.|such/] [word = "as"]?) @variety:ProperNounPhrase+
 
 - name: variety-tok-rule-1
   priority: ${rulepriority}
@@ -116,7 +115,7 @@
   label: GenericArea
   type: token
   pattern: |
-    [lemma=/area|land/]
+    [lemma=/^(area|land)$/] | "land" "area"
 #    ([lemma=/cultivate|plant|sow/])? [lemma=/area/] ([lemma=/sow/])?
 
 - name: variable-fertilizer
@@ -147,7 +146,9 @@
   label: Date
   type: token
   pattern: |
-    [entity='B-DATE' & !mention=Avoid & !word = /19[0-6]\d/] [entity='I-DATE']* | [word=/^(19[7-9]\d|2\d\d\d)$/ & !mention="Avoid"] (?! [word = /^(DS|WS)$/])
+    [entity='B-DATE' & !mention="Avoid" & !word = /(19[0-6]\d|2[1-9]\d\d)/ & !mention = /^Crop$|PossibleNewVariety/] [entity='I-DATE']* 
+    | 
+    [word=/^(19[7-9]\d|20\d\d)$/ & !mention="Avoid"] (?! [word = /^(DS|WS)$/])
   # limiting allowable year range to be after 1970s...
 
 - name: value-from-date-2
@@ -213,9 +214,7 @@
   label: Fertilizer
   type: token
   pattern: |
-    [entity='B-FERTILIZER' & !mention=Avoid] [entity='I-FERTILIZER']*
-
-
+    [entity='B-FERTILIZER' & !mention=Avoid & !entity=/.-NONENTITY/] [entity='I-FERTILIZER']*
 
 - name: wet-season
   priority: ${rulepriority}
@@ -233,7 +232,7 @@
   label: DrySeason
   type: token
   pattern: |
-    /(?i)(dry|hot|cold)/ []*? [lemma = /\bseason\b/]
+    /(?i)(dry|hot|cold)/ []{,2}? [lemma = /\bseason\b/]
     |
     /\d{4}DS/
     |

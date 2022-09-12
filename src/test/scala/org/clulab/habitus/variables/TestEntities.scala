@@ -494,7 +494,23 @@ class TestEntities extends Test {
       "...but hardly practised in the Senegal River valley ( Le Gal and Papy , 1998 ), i.e. by 13 % in 2027 ( OECD-FAO , 2018 ; USDA , 2017 ) .",
       Seq(
         "Date" -> Seq("2027"),
-        "Avoid" -> Seq("1998", "2018", "2017")
+        "Avoid" -> Seq("1998", "2018", "2017", "( OECD-FAO , 2018 ;", "(", ")", "(", ")")
+      )
+    ),
+    VariableTest(
+      passingTest,
+      "sent46",
+      "As a result , groundnut planting is frequently delayed",
+      Seq(
+        "Fertilizer" -> Seq.empty
+      )
+    ),
+    VariableTest(
+      passingTest,
+      "sent47",
+      "Vaghasia et al. ( 2010 ) established that the stress at flowering stage ( 25-47 days after sowing ) and pod development stage ( 50-72 days after sowing ) gave 18.45 % and 30.63 % reduction in pod yield than no water stress treatment , respectively .",
+      Seq(
+        "Crop" -> Seq.empty // this mainly checks that 25-47 is not found as a crop variety
       )
     )
   )

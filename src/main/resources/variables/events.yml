@@ -319,7 +319,7 @@
   action: fertilizerQuantityActionFlow
   type: token
   pattern: |
-    @variable:Fertilizer []+? @value:Quantity+ ([]*? (","|"and")? @value:Quantity)* 
+    @variable:Fertilizer []+? @value:Quantity+ ([]*? (","|"and")? @value:Quantity)* (?!"of")
     |
     @value:Quantity "of" @variable:Fertilizer
 
