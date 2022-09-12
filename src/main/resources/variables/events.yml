@@ -168,7 +168,7 @@
   action: areaVarActionFlow
   type: token
   pattern: |
-    @variable:GenericArea  ([!word = "and"] []*? @value:AreaSizeValue )+ | @variable:GenericArea ( [!word = "and"] []*? @value:Percentage )+ 
+    @variable:GenericArea  ([]{,10}? @value:AreaSizeValue )+ (?! "of") | @variable:GenericArea ([]*? @value:Percentage )+ (?! "of")
 
 - name: area-size-rule2
   priority: ${rulepriority}
@@ -176,7 +176,7 @@
   action: areaVarActionFlow
   type: token
   pattern: |
-    ( @value:AreaSizeValue [!lemma = /population/]+? )+ @variable:GenericArea | ( @value:Percentage [!lemma = /population/]+? )+ @variable:GenericArea 
+    ( @value:AreaSizeValue [!lemma = /population/]+? )+ @variable:GenericArea | ( @value:Percentage [!lemma = /population/]+? )+ @variable:GenericArea
 
 ### Bird attack events
 
