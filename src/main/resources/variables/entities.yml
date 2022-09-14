@@ -27,7 +27,7 @@
     |
     [chunk = "I-NP" & tag = "NNP" & !word = "and" & !mention = "Avoid" & !entity = /.\-ACRONYM|.\-FERTILIZER/]+ [tag = "CD"]
     |
-    [word = /^\d+(\-\d+)+$/ & !entity =/.\-MEASUREMENT/]
+    [word = /^\d+(\-\d+)+$/ & !entity =/.\-MEASUREMENT|.-DATE-RANGE/]
 
 ### These will act as variables in various assignment events ###
 

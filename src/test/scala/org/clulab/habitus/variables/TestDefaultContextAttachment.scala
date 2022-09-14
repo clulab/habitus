@@ -53,6 +53,7 @@ class TestDefaultContextAttachment extends Test {
           attachment.crop should equal (desired.crop)
           attachment.fertilizer should equal (desired.fertilizer)
           attachment.comparative.toString should equal (desired.comparative)
+          attachment.season should equal (desired.season)
         }
 
       }
@@ -143,6 +144,7 @@ class TestDefaultContextAttachment extends Test {
           date = "2000WS",
           crop = "Sahel 202",
           comparative = "0",
+          season = "2000WS",
           process = "planting"
         )
       )
@@ -190,13 +192,15 @@ class TestDefaultContextAttachment extends Test {
           mentionText = "30 ha corresponding to seven GIEs ; whereas , in 2017 , the overall area",
           date = "2016",
           process = "planting",
-          comparative = "0"
+          comparative = "0",
+          season = "dry season"
         ),
         Desired(
           mentionText = "area managed by the NGO was 15 ha",
           date = "2017",
           process = "planting",
-          comparative = "0"
+          comparative = "0",
+          season = "dry season"
         )
       )
     ),
@@ -221,7 +225,8 @@ class TestDefaultContextAttachment extends Test {
       )
     ),
     DefaultContextAttachmentTest(
-      passingTest,
+      // fixme: this might be able to pass but needs to be adjusted to incorporate new stuff
+      failingTest,
       "sent-10",
       "Popular varieties in the wet season were Sahel 202 ( 65 % of farmers ) and Sahel 201 ( 30 % ) , while 60 % and 92 % grew Sahel-108 in 2012DS and 2013DS , respectively.",
       "CropAssignment",
@@ -231,13 +236,15 @@ class TestDefaultContextAttachment extends Test {
           crop = "Sahel 202",
           date = "2012DS", // fixme: unclear if this is the best date for this sentence
           process = "planting",
+          season = "2012DS",
           comparative = "1"
         ),
         Desired(
           mentionText = "grew Sahel-108",
           crop = "Sahel-108",
-          date = "2012DS",
+          date = "2013DS",
           process = "planting",
+          season = "2013DS",
           comparative = "1"
         )
       )
@@ -253,6 +260,7 @@ class TestDefaultContextAttachment extends Test {
           crop = "Sahel-108",
           date = "2012DS",
           process = "planting",
+          season = "2012DS",
           comparative = "1"
         )
       )
@@ -298,15 +306,20 @@ class TestDefaultContextAttachment extends Test {
       "YieldAmount",
       Seq(
         Desired(
-          mentionText = "yield is generally high in both wet and dry seasons at 5.4 and 6.6 t / ha",
-          season = "dry season",
-          comparative = "0"
-        ),
-        Desired(
           mentionText = "yield is generally high in both wet and dry seasons at 5.4",
           season = "wet season",
-          comparative = "0"
+          process = "harvesting",
+          crop = "rice",
+          comparative = "1"
+        ),
+        Desired(
+          mentionText = "yield is generally high in both wet and dry seasons at 5.4 and 6.6 t / ha",
+          season = "dry season",
+          process = "harvesting",
+          crop = "rice",
+          comparative = "1"
         )
+
       )
     ),
     DefaultContextAttachmentTest(
@@ -353,20 +366,20 @@ class TestDefaultContextAttachment extends Test {
           mentionText = "yield in DELTA with 4.5",
           process = "harvesting",
           crop = "groundnut",
-          comparative = "0"
+          comparative = "1"
         ),
         Desired(
           mentionText = "yield in DELTA with 4.5 and 4.2 t ha-1",
           process = "harvesting",
           crop = "Fleur 11",
-          comparative = "0"
+          comparative = "1"
         )
       )
     ),
     DefaultContextAttachmentTest(
       // checks for pairwise location context alignment
       passingTest,
-      "sent-18",
+      "sent-19",
       "The yield environmental index was 3.7 , 2.5 and 1.7 t ha-1 in Delta , MVZ and GLZ , respectively .",
       "YieldAmount",
       Seq(

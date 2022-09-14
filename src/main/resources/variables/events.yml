@@ -168,7 +168,7 @@
   action: areaVarActionFlow
   type: token
   pattern: |
-    @variable:GenericArea  ([]{,10}? @value:AreaSizeValue )+ (?! "of") | @variable:GenericArea ([]*? @value:Percentage )+ (?! "of")
+    @variable:GenericArea  ([]{,15}? @value:AreaSizeValue )+ (?! "of") | @variable:GenericArea ([]*? @value:Percentage )+ (?! "of")
 
 - name: area-size-rule2
   priority: ${rulepriority}

@@ -13,18 +13,28 @@ class DefaultContextExtractor extends ContextExtractor {
     //get mentions that are not separated from the current one by sentence-break lemmas
 
     mentions.filter(m => {
-      val interval = Seq(current, m).sortBy(_.tokenInterval).map(_.tokenInterval.start)
-      current.sentenceObj.lemmas.get.slice(interval.head, interval.last).intersect(likelyClauseBreak).isEmpty
+//      println("cm: " + current.text + " m: " + m.text)
+      val interval = Seq(current, m).sortBy(_.tokenInterval)
+//      println("Interval: " + interval)
+      current.sentenceObj.lemmas.get.slice(interval.head.start, interval.last.end).intersect(likelyClauseBreak).isEmpty
     })
   }
 
   def contextPairedWithMention(current: Mention, relevantContextMentions: Seq[Mention], thisSentMentions: Seq[Mention]): Boolean = {
-    val sameMentionTypeCount = thisSentMentions.count(_.label == current.label)
+    println("CONTEXT:")
+    if (relevantContextMentions.nonEmpty) println(relevantContextMentions.head.label)
+    val sameClauseMentions = getMentionsWithinClause(current, thisSentMentions)
+    println("scm: " + sameClauseMentions.length)
+    val sameClauseContextMentions = getMentionsWithinClause(current, relevantContextMentions)
+    println("sccm: " + sameClauseContextMentions.length)
+
+
+    val sameMentionTypeCount = sameClauseMentions.count(_.label == current.label)
     // if there are more than one mention of this type and the number of context mentions of a given type match,
     // then there is a reason to believe that 'respectively' refered to that context type for this mention
 
-    val result = sameMentionTypeCount > 1 && sameMentionTypeCount == relevantContextMentions.length
-    println("RES: " + result + " " + sameMentionTypeCount + " " + relevantContextMentions.length)
+    val result = sameMentionTypeCount > 1 && sameMentionTypeCount == sameClauseContextMentions.length
+    println("RES: " + result + " " + sameMentionTypeCount + " " + sameClauseContextMentions.length)
     result
 
   }
