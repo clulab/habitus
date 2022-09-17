@@ -13,8 +13,10 @@ object BeliefReader {
     val props = StringUtils.argsToMap(args)
 //    val inputDir = "/home/alexeeva/Desktop/habitus_related/data/Rice_growing_in_Senegal_River_Valley/txt"//props("in")
 //    val outputDir = "/home/alexeeva/Desktop/habitus_related/data/Rice_growing_in_Senegal_River_Valley/output"//props("out")
-    val inputDir = "/home/alexeeva/Desktop/habitus_related/data/interviews"
-    val outputDir = "/home/alexeeva/Desktop/habitus_related/data/interviews/output"
+//    val inputDir = "/home/alexeeva/Desktop/habitus_related/data/interviews"
+//    val outputDir = "/home/alexeeva/Desktop/habitus_related/data/interviews/output"
+    val inputDir = "/home/alexeeva/Desktop/habitus_related/data/bangladesh-vs-5others-processed-by-ik/txt"
+    val outputDir = "/home/alexeeva/Desktop/habitus_related/data/bangladesh-vs-5others-processed-by-ik/output"
 
     val threads = 1 //props.get("threads").map(_.toInt).getOrElse(1)
 
@@ -29,9 +31,10 @@ object BeliefReader {
     val vp = BeliefProcessor()
     val files = FileUtils.findFiles(inputDir, ".txt")
     val parFiles = if (threads > 1) ThreadUtils.parallelize(files, threads) else files
-    new PrintWriter(new File(outputDir + "/mentions.tsv")).autoClose { pw =>
-      pw.println("filename\tmention type\tfound by\tsentence\tmention text\targs in all next columns (argType: argText)")
+//    new PrintWriter(new File(outputDir + "/mentions.tsv")).autoClose { pw =>
+//      pw.println("filename\tmention type\tfound by\tsentence\tmention text\targs in all next columns (argType: argText)")
       for (file <- parFiles) {
+        val pw = new PrintWriter(new File(outputDir + "/mentions-" + file.getName + ".tsv"))
         try {
           val unfiltered = FileUtils.getTextFromFile(file)
           // fixme: temporary, simple text cleanup
@@ -42,7 +45,7 @@ object BeliefReader {
           val (_, mentions) = vp.parse(text)
           val contentMentions = mentions.filter(m => m.label matches "Belief")//m.labels.contains("Event") & !m.isInstanceOf[TextBoundMention])
           for (m <- contentMentions) {
-            println(m.label + " " + m.text)
+            println(m.label + " " + m.text + " " + m.foundBy)
             pw.print(s"${filename}\t${m.label}\t${m.foundBy}\t${m.sentenceObj.getSentenceText}\t${m.text}")
             for ((key, values) <- m.arguments) {
               if (values.nonEmpty) {
@@ -57,6 +60,7 @@ object BeliefReader {
         catch {
           case e: Exception => e.printStackTrace()
         }
+        pw.close()
       }
     }
 //    new MultiPrinter(
@@ -82,5 +86,5 @@ object BeliefReader {
 //        }
 //      }
 //    }
-  }
+
 }
