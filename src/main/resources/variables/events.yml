@@ -168,7 +168,7 @@
   action: areaVarActionFlow
   type: token
   pattern: |
-    @variable:GenericArea  ([]{,15}? @value:AreaSizeValue )+ (?! "of") | @variable:GenericArea ([]*? @value:Percentage )+ (?! "of")
+    @variable:GenericArea  ([]{,16}? @value:AreaSizeValue )+ (?! "of") | @variable:GenericArea ([]*? @value:Percentage )+ (?! "of")
 
 - name: area-size-rule2
   priority: ${rulepriority}
@@ -256,7 +256,7 @@
   type: token
   action: yieldAmountActionFlow
   pattern: |
-    (?<![lemma =/^(increase|decrease)$/][]{,2}) @variable:Yield [!word="and"] [!lemma = /^(increase|decrease|gain|emission|application)$/]{,17}? @value:Quantity+ ([!lemma = /^(increase|decrease|yield)$/]{,10}? (",")? @value:Quantity)* (?![word="more"])
+    (?<![lemma =/^(increase|decrease)$/][]{,2}) @variable:Yield (?![word="and"]) [!lemma = /^(increase|decrease|gain|emission|application)$/]*? @value:Quantity+ ([!lemma = /^(increase|decrease|yield)$/]*? (",")? @value:Quantity)* (?![word="more"])
     |
     @variable:Yield []{,3} [lemma =/^(increase|decrease)$/] "to" @value:Quantity
   # "and" is there after yield to avoid capturing 40 kg/ha as yield (expected to generalize): reported a quadratic relationship between yield and N rate , where above 40 kg / ha did not substantially improve sorghum yield .
@@ -270,7 +270,7 @@
   action: yieldAmountActionFlow
   example: "In 2012WS yield increased for about 1.5 t ha-1 after the application of xyz fertilizer"
   pattern: |
-    @variable:Yield []{,10}? [lemma=/^(increase|decrease|gain)$/] []{,14}? [!word = "to"] @value:Quantity+
+    @variable:Yield []{,10}? [lemma=/^(increase|decrease|gain)$/] []{,15}? [!word = "to"] @value:Quantity+
     |
     @variable:Yield []{1,15} @value:Quantity+ [word = "more"]
     |

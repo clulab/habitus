@@ -148,8 +148,8 @@
   pattern: |
     [entity='B-DATE' & !mention="Avoid" & !word = /(19[0-6]\d|2[1-9]\d\d)/ & !mention = /^Crop$|PossibleNewVariety/] [entity='I-DATE']* 
     | 
-    [word=/^(19[7-9]\d|20\d\d)$/ & !mention="Avoid"] (?! [word = /^(DS|WS)$/])
-  # limiting allowable year range to be after 1970s...
+    [word=/^(19[7-9]\d|20\d\d)$/ & !mention="Avoid" & !entity = /I-DATE/] (?! [word = /^(DS|WS)$/])
+  # limiting allowable year range to be after 1970s; standalone year can't be an inside of an entity
 
 - name: value-from-date-2
   priority: ${rulepriority}

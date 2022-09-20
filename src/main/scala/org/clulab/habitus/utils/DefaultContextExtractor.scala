@@ -21,12 +21,9 @@ class DefaultContextExtractor extends ContextExtractor {
   }
 
   def contextPairedWithMention(current: Mention, relevantContextMentions: Seq[Mention], thisSentMentions: Seq[Mention]): Boolean = {
-    println("CONTEXT:")
     if (relevantContextMentions.nonEmpty) println(relevantContextMentions.head.label)
     val sameClauseMentions = getMentionsWithinClause(current, thisSentMentions)
-    println("scm: " + sameClauseMentions.length)
     val sameClauseContextMentions = getMentionsWithinClause(current, relevantContextMentions)
-    println("sccm: " + sameClauseContextMentions.length)
 
 
     val sameMentionTypeCount = sameClauseMentions.count(_.label == current.label)
@@ -34,7 +31,6 @@ class DefaultContextExtractor extends ContextExtractor {
     // then there is a reason to believe that 'respectively' refered to that context type for this mention
 
     val result = sameMentionTypeCount > 1 && sameMentionTypeCount == sameClauseContextMentions.length
-    println("RES: " + result + " " + sameMentionTypeCount + " " + sameClauseContextMentions.length)
     result
 
   }

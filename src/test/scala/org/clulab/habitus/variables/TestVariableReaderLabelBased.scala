@@ -466,5 +466,7 @@ class TestVariableReaderLabelBased extends Test {
     )
   )
 
+  // todo: add Yield amount test: Hative de Sefa and Fleur 11 performed well in GLZ , where they yielded 2.4 and 2.1 t ha-1 , respectively . AND Is 2.4 extracted Hative de Sefa gave moderate yield of 3.6 and 2.0 t ha-1 in the Delta and MVZ , respectively , with however the best response in unfavourable zone ( 2.4 t ha-1 ).
+
   variableTests.zipWithIndex.foreach { case (variableTest, index) => variableTest.test(index) }
 }
