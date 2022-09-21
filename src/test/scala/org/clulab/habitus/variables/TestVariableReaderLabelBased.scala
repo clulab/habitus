@@ -96,7 +96,7 @@ class TestVariableReaderLabelBased extends Test {
       )
     ),
     VariableTest(
-      passingTest,
+      unreliableTest,
       "sent5", "These correspond to the dry season (from February/March to June/July)",
       "DrySeasonAssignment",
       Seq(
@@ -104,8 +104,8 @@ class TestVariableReaderLabelBased extends Test {
       )
     ),
     VariableTest(
-      passingTest,
-      "sent5", "Potential rice grain yields (limited by solar radiation and temperature only) are on average about 9 t ha-1 in the wet growing season from July to November",
+      unreliableTest,
+      "sent5_0", "Potential rice grain yields (limited by solar radiation and temperature only) are on average about 9 t ha-1 in the wet growing season from July to November",
       "YieldAmount",
       Seq(
         ("Yield", Seq(("9 t ha-1", "9.0 t/ha")))
@@ -128,7 +128,7 @@ class TestVariableReaderLabelBased extends Test {
       )
     ),
     VariableTest(
-      passingTest,
+      unreliableTest,
       "sent7", "The potential yields of these three cultivars are similar and are on average about 8 to 9 t ha-1 in the wet season",
       "YieldAmount",
       Seq(
@@ -411,7 +411,39 @@ class TestVariableReaderLabelBased extends Test {
         ("Yield", Seq(("7.9", "7.9 t/ha"))),
         ("Yield", Seq(("7.1 t/ha", "7.1 t/ha")))
       )
-    )
+    ),
+    VariableTest(
+      unreliableTest,
+      "sent34", "the potential rice grain yields were between 8.8 t ha-1 and 9.2 t ha-1 ( i.e. about 1 t ha-1 more than in the 1998WS ) whilst the average of the actual yield increased greatly",
+      "YieldAmount",
+      Seq(
+        ("Yield", Seq(("8.8 t ha-1", "8.8 t/ha"))),
+        ("Yield", Seq(("9.2 t ha-1", "9.2 t/ha"))),
+      )
+    ),
+    VariableTest(
+      unreliableTest,
+      "sent35", "the potential rice grain yields were between 8.8 t ha-1 and 9.2 t ha-1 ( i.e. about 1 t ha-1 more than in the 1998WS ) whilst the average of the actual yield increased greatly",
+      "YieldIncrease",
+      Seq(
+        ("Yield", Seq(("1 t ha-1", "1.0 t/ha"))),
+      )
+    ),
+    VariableTest(
+      passingTest,
+      "sent36", " Haefele et al. ( 2000 , 2001 ) report that improved weed management practices resulted in yield increase of about 1 t / ha in the SRV .",
+      "YieldIncrease",
+      Seq(
+        ("Yield", Seq(("1 t / ha", "1.0 t/ha"))),
+      )
+    ),
+    VariableTest(
+      passingTest,
+      "sent37", "Following these findings , Haefele et al. ( 2000 , 2001 ) conducted on-farm trials and found that improved nutrient management increased yields by about 1 t / ha in farmers ' fields .",
+      "YieldAmount",
+      Seq.empty
+    ),
   )
+
   variableTests.zipWithIndex.foreach { case (variableTest, index) => variableTest.test(index) }
 }
