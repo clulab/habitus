@@ -104,7 +104,7 @@ class TestVariableReaderLabelBased extends Test {
       )
     ),
     VariableTest(
-      passingTest,
+      unreliableTest,
       "sent5_0", "Potential rice grain yields (limited by solar radiation and temperature only) are on average about 9 t ha-1 in the wet growing season from July to November",
       "YieldAmount",
       Seq(
@@ -413,7 +413,7 @@ class TestVariableReaderLabelBased extends Test {
       )
     ),
     VariableTest(
-      passingTest,
+      unreliableTest,
       "sent34", "the potential rice grain yields were between 8.8 t ha-1 and 9.2 t ha-1 ( i.e. about 1 t ha-1 more than in the 1998WS ) whilst the average of the actual yield increased greatly",
       "YieldAmount",
       Seq(
