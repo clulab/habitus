@@ -240,7 +240,7 @@ class TestEntities extends Test {
       )
     ),
     VariableTest(
-      fixedWithNewProcRelease,
+      passingTest,
       "sent20",
       "Popular varieties in the wet season were Sahel 202 (65% of farmers) and Sahel 201 (30%), while 60% and 92% grew Sahel 108 in 2012DS and 2013DS, respectively.",
       Seq(

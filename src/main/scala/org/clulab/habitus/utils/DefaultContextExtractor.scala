@@ -21,7 +21,6 @@ class DefaultContextExtractor extends ContextExtractor {
   }
 
   def contextPairedWithMention(current: Mention, relevantContextMentions: Seq[Mention], thisSentMentions: Seq[Mention]): Boolean = {
-    if (relevantContextMentions.nonEmpty) println(relevantContextMentions.head.label)
     val sameClauseMentions = getMentionsWithinClause(current, thisSentMentions)
     val sameClauseContextMentions = getMentionsWithinClause(current, relevantContextMentions)
 
@@ -39,7 +38,6 @@ class DefaultContextExtractor extends ContextExtractor {
     // get index of current mention among mention of the same type
     // pick a corresponding index context
     val orderOfCurrentMentionAmongEquals = thisSentMentions.filter(_.label == current.label).sortBy(_.tokenInterval).zipWithIndex.filter(mz => mz._1.tokenInterval == current.tokenInterval).head._2
-    println("order: " + orderOfCurrentMentionAmongEquals)
     relevantContextMentions.sortBy(_.tokenInterval).zipWithIndex.filter(_._2 == orderOfCurrentMentionAmongEquals).head._1.text
   }
 

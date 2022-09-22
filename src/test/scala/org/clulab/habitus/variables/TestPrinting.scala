@@ -35,7 +35,7 @@ class TestPrinting extends Test {
 
   behavior of "JsonPrinter"
 
-  ignore should "print something valid and non-empty" in {
+  failingTest should "print something valid and non-empty" in {
     val json = FileUtils.getTextFromFile(jsonOutputFile)
     val jValue = JsonMethods.parse(json)
     val jValues = jValue.extract[JArray].arr

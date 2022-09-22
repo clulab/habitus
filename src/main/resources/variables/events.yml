@@ -168,7 +168,7 @@
   action: areaVarActionFlow
   type: token
   pattern: |
-    @variable:GenericArea  ([]{,16}? @value:AreaSizeValue )+ (?! "of") | @variable:GenericArea ([]*? @value:Percentage )+ (?! "of")
+    @variable:GenericArea  ([]{,17}? @value:AreaSizeValue )+ (?! "of") | @variable:GenericArea ([]*? @value:Percentage )+ (?! "of")
 
 - name: area-size-rule2
   priority: ${rulepriority}
@@ -277,15 +277,6 @@
     (?<= [lemma=/^(increase|decrease)$/]) []{,2} @variable:Yield []{,10}? [!word = "to"] @value:Quantity+ []{1,4}? @value:Quantity+
     |
     (?<= [lemma=/^(increase|decrease)$/]) []{,2} @variable:Yield []{,10}? [!word = "to"] @value:Quantity+
-
-#
-#    @variable:Yield []*? [lemma=/^(increase|decrease|gain)$/] []+? @value:Quantity+
-#    |
-#    @variable:Yield []+? @value:Quantity+ [word = "more"]
-#    |
-#    (?<= [lemma=/^(increase|decrease)$/]) []{,2} @variable:Yield []+? @value:Quantity+ []{1,4}? @value:Quantity+
-#    |
-#    (?<= [lemma=/^(increase|decrease)$/]) []{,2} @variable:Yield []+? @value:Quantity+
 
 # this one is pretty specific and is there to capture an unfortunate parse
 - name: planting-yield-amount

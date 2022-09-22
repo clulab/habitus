@@ -525,11 +525,11 @@ class TestVariableReader extends Test {
       Seq(("late sowing", Seq(("beyond March 17", "XXXX-03-17 -- XXXX-XX-XX"))))
     ),
     VariableTest(
-      failingTest,
+      passingTest,
       "sent21_7", "Overall, it is noted that 65% of the areas are developed beyond September 15, 2020 (late sowing), the areas sown during the recommended period (between July 15 and August 15) cover 34% of the plantings and early sowing (before mid-July) represents 1% of the total development.",
       "PlantingDate",
       Seq(
-        ("late sowing", Seq(("beyond September 15, 2020", "2020-09-15 -- XXXX-XX-XX"))), // ended up with late sowing -> 2020; fixme: take one of overlapping of same label?
+        ("late sowing", Seq(("beyond September 15, 2020", "2020-09-15 -- XXXX-XX-XX"))),
         ("sown", Seq(("between July 15 and August 15", "XXXX-07-15 -- XXXX-08-15"))),
         ("early sowing", Seq(("before mid July", "XXXX-XX-XX -- XXXX-07-15")))
       )
@@ -616,12 +616,11 @@ class TestVariableReader extends Test {
       Seq.empty // todo: add a DateRange mention type to capture 2000 wet season with a norm 2000-XX-XX -- 2000-XX-XX
     ),
     VariableTest(
-      fixedWithNewProcRelease,
+      passingTest,
       "fix3_1", "Diagnosis of the 1999 and 2000 wet seasons In the 1999 and 2000 wet seasons , the potential rice grain yields were between 8.8 t ha-1 and 9.2 t ha-1 ( i.e. about 1 t ha-1 more than in the 1998WS ) whilst the average of the actual yield increased greatly ( Tab .",
       "YieldAmount",
       Seq(
-        ("yields", Seq(("between 8.8 t ha-1 and 9.2 t ha-1", "8.8 -- 9.2 t/ha"))),
-        ("yields", Seq(("1 t ha-1", "1.0 t/ha")))
+        ("yields", Seq(("between 8.8 t ha-1 and 9.2 t ha-1", "8.8 -- 9.2 t/ha")))
       )
     ),
     VariableTest(
@@ -666,7 +665,7 @@ class TestVariableReader extends Test {
       )
     ),
     VariableTest(
-      fixedWithNewProcRelease,
+      passingTest,
       "fix9", "Mean irrigation , flood and rainwater mineral N concentrations were 1.3, 1.7 and 3.6 mg l-1 , respectively .",
       "FertilizerQuantity",
       Seq(
@@ -676,7 +675,7 @@ class TestVariableReader extends Test {
       )
     ),
     VariableTest(
-      fixedWithNewProcRelease,
+      passingTest,
       "fix10", "Grain yield In the first three experimental seasons , the only significant yield effect was in response to fertilizer application ( P < 0.001 for seasons 1-3 ) , which increased yields by an average of 1.7 ( 2007 wet season ) , 3.4 ( 2008 dry season ) and 2.6 t ha-1 ( 2008 wet season ) across management systems ( Fig. 2 ) .",
       "FertilizerQuantity",
       Seq.empty
