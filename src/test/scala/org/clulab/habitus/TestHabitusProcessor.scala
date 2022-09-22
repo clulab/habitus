@@ -83,7 +83,6 @@ class TestHabitusProcessor extends Test {
     val processor = new HabitusProcessor(Some(lexiconNer))
     val document = processor.annotate(text)
     val entities = document.sentences.head.entities.get.mkString(" ")
-
     entities should be ("B-ORG I-ORG I-ORG O O O O O O")
   }
 }
