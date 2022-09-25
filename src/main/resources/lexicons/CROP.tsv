@@ -182,6 +182,9 @@ aiwu
 i kong pao
 japonica
 indica
+
+// The following are varieties of rice:
+
 INARIS 88
 BRIZ-2P
 BRIZ-4P 
@@ -231,7 +234,7 @@ FKR 1
 FKR 5
 FKR 7
 FKR 19
-FKR 58N
+FKR 58 N
 FKR 28
 FKR 55
 FKR 82
@@ -239,11 +242,11 @@ FKR 78
 FKR 74 ARICA 1
 FKR 70
 FKR 68
-FKR 45N
+FKR 45 N
 FKR 61
 FKR 43
 FKR 48
-FKR 60N
+FKR 60 N
 FKR 56 N
 FKR 52
 FKR 41
@@ -561,11 +564,11 @@ ROK 30
 ROK 32
 ROK 34
 NERICA 18
-NERICA15
+NERICA 15
 NERICA 3
 ROK 35
 ROK 37
-NERICAL19
+NERICAL 19
 ROK 10
 ROK 16
 ROK 23
@@ -595,6 +598,9 @@ TGR 203
 TGR 405
 WAS 161-B-9-2
 NERICA 8
+
+// The following are varieties of maize:
+
 Kugnaayi
 8321-18
 8425-8
@@ -870,8 +876,12 @@ AB 11
 AMEN
 Ikenne 9449 SR (Ikenne)
 ACR 97 TZL Comp.1-W (ACR; TZL)
-TZEE W pop STR QPM (TZE)Obatanpa
+TZEE W pop STR QPM (TZE)
+Obatanpa
 Sotubaka
+
+// The following are varieties of sorghum:
+
 NATISSOYA
 CHABICOUMA
 GRINKAN BENIN
@@ -907,7 +917,7 @@ Sariaso 2
 Sariaso 3
 Sariaso 4
 Sariaso 5
-Sariaso 7
+Sariaso 6
 Sariaso 7
 Sariaso 8
 Sariaso 9
@@ -999,26 +1009,692 @@ SSD-35
 Mota-Maradi
 NAD-1
 MDK
+SRN-39
+SEPON-82
+IRAT-204 (BK 16)
+SAMSORG 40
+SAMSORG 41
+SAMSORG H3
+SAMSORG H4
+SAMSORG 14
+SAMSORG 3
+SAMSORG 16
+SAMSORG 17
+SAMSORG 42
+SAMSORG 43
+SAMSORG 44
+PD86W15
+PD87W16
+PRADHAN
+MLSH 296 GOLD 
+MLSH 151
+SAMSORG 45
+SAMSORG 46
+Darou
+Nganda
+Faourou
+Nguinthe
+F2-20
+CE196-7-2-1
+CE 180-33
+CE 151-262
+CE 145-66
+Payenne
+IRAT-204
+S35
+CS 61
+Zouaye
+KOLMON JAUNE
+KOLMON ROUGE
+K3R
+GWS
+DJERESSE JAUNE
+DJERESSE ROUGE
+DJERESSE blanc
+SORVATO 1
+SORVATO 28
 
+// The following are varieties of millet:
 
+ANKOUADI
+ZATIB
+CIVT
+IKMP 5
+IKMV 8201
+MISARI-1
+HKP
+IBMV 8402
+ICMV IS 89305
+SOSAT C-88
+ZATIB
+MISSARI-1
+MISARI-2
+Ex-Hassum Nyang
+Ex- Daru
+Ex Labie
+Ex Pakaliba
+AKAD-KOM
+KAANATI
+NAAD-KOHBLUG
+AFRIBEH-NAARA
+WAAPP-NAARA
+KONOBALI
+ICMP 87703
+DJIGUIFA
+COMPOSITE SOUNA X SANIO TC-88
+BENKADINIO (ICMVIS 88 102)
+TORONIOU C1
+Composite SOxSATC-88
+GUEFOUE 16
+Indiana 05
+SANIOBA 03
+CMDT 17X ICMV 8104
+CiINZANA Mil ARISTE
+HKP Hybride Top
+Lignée pure Cross
+Maïwa Hybride Top Cross
+TORONIOU C1 arsite HYBRIDE TOP CROSS
+M9 D3
+BENKADINIO
+Sanioba 23
+Sanioteli-53
+NBB
+M9D3
+M12D1
+Mangakoloee
+3/4 HK
+H80-10GR
+ICMV IS 99001
+ITMV 8001
+ANK P1
+ANK P1
+BA-ANGOURE
+MTDO-92
+CEV
+MTTY-92
+CAR
+P3Kollo
+SOSAT-C88
+Souna III
+T18-L
+ZONGO
+ITMV 8304
+ICMV IS 94206
+ICMV IS 92222
+ICMV IS 90311
+ICMV IS 85333
+HKP3
+HKB-P1
+HKB TIF
+GR-P1
+GB-8735
+DG-P1
+CT-6
+CT-3
+HPK
+ICMV IS 89305
+CIVT
+ZATIB
+LCICMV-1
+LCICMV-2
+LCICMV-3
+LCICMV-4
+LCICMH-1
+IBV 8001
+IBV 8004
+IBMV8402
+ISMI 9507
+Gawane
+Thialack 2
+Souna3
+SOSAT C 88
+GB87-35
+LCIC 9702
+DBS3
+DBS5
+S42
 
+// The following are varieties of peanut:
 
+47-10
+55-437 N
+RMP 12
+RMP 91
+TS 32-1
+EH 33-35
+69-101
+CN 94C
+KH 149-A
+KH 241-D
+ICGV-SM 85045
+ICGV 88274
+Virginia
+GH 119-20
+CN 94 C
+RMP 12
+QH 243 C
+KH 149-A
+RMP 91
+SH 470 P
+SH 67 A
+Te.3
+TS 32-1
+CGSE (104)
+Fleur 11
+Obolo
+Otuhia
+Oboshie
+Yenyawoso
+AK 10
+AK 11
+AK 13
+Maressi
+28-206
+73-33
+55-437
+JL 24
+J 11
+Fleur 11 
+CGV 86024
+ICGV 86015
+ICIAR 19BT
+ICGV 92099
+ICGV 86024
+ICGV 86124
+Baroueli
+Diakandape
+TX 903656
+Kaarta tiga
+Dembanyuma
+Waliyare tiga
+Mossi tiga
+Sameke
+Kalossabani
+Allah son
+Niakhali tiga
+Samoko
+Kolofa
+Grin grin
+ICG (FDRS) 10
+28-206
+55-437
+Guerte
+RMP 91
+73-33
+55-437
+796
+ICG-9346
+JL 24
+O-20
+RRB
+T169-83
+T177-83
+T181-83
+TS 32-1
+SAMNUT 24
+SAMNUT 25
+SAMNUT 26
+H 75-0
+PC 79-79
+GH 119-20
+73-9-11
+SRV 1-19
+55-33
+78-937
+GC 8-35
+73-30
+73-28
+73-27
+69-101
+57-422
+756-A
+55-437
+73-33
+57-313
+Slinut 1
+55-437
+73-33
+57-313
+Slinut 1
+Delave
+rose de Deli
+ICIAR 19BT
+ICGV 01276
 
+// The following are varieties of cowpea:
 
+IT 82 E 32
+IT 84 D513
+KPODJIGUEGUE
+TN 88-63 BENIN
+TVX 1850-01 F 
+TVX 32 36
+VITA-5
+TN 61 
+IT 99 K-494-6
+IT K-568-18
+IT 98 K-131-2
+IT 98 D-1399
+KVx 396-4-4
+KVx 414-22-2
+KVx 414-22-72
+KVx 442-22-2
+KVx 396-4-5-2D
+KVx 442-3-25SH
+KVx 61-1
+KVx 745-11P
+KVx 771-10G
+KVx 775-33-2G
+Melakh
+Nilzwè
+Telma (niébé récolté en vert)
+TVx 3236
+Yiisyandé
+KVx 404-8-1
+KVx 402-5-2
+Kvx30-309-6G
+Hewale
+IT 87 S-1393
+Asontem Red
+Mouride
+IT07K-229-4
+IT06K-91-11-1
+Mougne
+Pakaw
+Bambey 21
+KVX 414
+Pli-plolom
+Bula 86
+IT 82 D 889
+ACAR 1
+CZ06-2-17
+CZ06-1-12
+CZ06-4-16
+CZ06-1-05
+Sanoudaoulen
+Hawaba
+M'Barawa
+Cinzana telimani
+Jiguiya
+Ireko
+Nabarou
+Shossa
+GANA SHÖNI
+GANA SHOBA
+FAKSON
+WILIBALI
+SANGARAKA
+KOROBALEN
+DOUNAN FANA
+DJEMANI
+Yerewolo
+Amary Sho
+IAR 1696
+Niban
+Gormm-gorom
+Mougne
+TN121-80
+TN256-87
+TN27-80
+TN28-87
+TN3-78
+TN5-78
+TN88-63
+HTR
+IT89KD-374-57
+IT90-372-1-2
+IT96D-610
+IT97K499-38
+IT97K499-35
+IT98K205-8
+IT99K-573-1-1
+KVX 30-309-6G
+Ife 98-12
+Ife Bimpe
+Ife Brown
+SAMPEA 1
+SAMPEA 2
+SAMPEA 3
+SAMPEA 4
+SAMPEA 5
+SAMPEA 6
+SAMPEA 7
+SAMPEA 8
+SAMPEA 9
+SAMPEA 10
+SAMPEA 11
+SAMPEA 14
+SAMPEA 15
+SAMPEA 16
+SAMPEA 17
+Lisard
+Thieye
+Léona
+Kelle
+Sam
+66-35 F
+58-57
+Pakaw
+Bambey 21
+58-74 f
+Mougne
+Mélakh
+Yacine
+Mouride
+Ndiambour
+SLIPEA 4
+SLIPEA 5
+SLIPEA 3
+Vita 5
+Vya
+IT99-573-1-1
+IT 81 D994
+LORI 24-130
+TN 88-63
+TN 5-78
+Vitoco
+TVX 1850-01E
 
+// The following are varieties of cassava:
 
+Obaïlè
+Oloubokpo
+Sèhouan
+Igbèkokpa
+Odongbo
+Adoborou
+Ahotonon
+Kpaki Swan
+Oko-Yawo
+Ina doux
+TMS 30572
+RB 89509
+Ina Premier
+INA-H
+MR-67
+MANINA-91
+BEN 86052
+4(2) 1425
+92/0067
+TMS 98/0505
+92/0325
+D2 SD
+92/0427
+94/0102
+94/0270
+TMS30572
+Amala
+Bocou 1
+Bocou 2
+Bocou 3
+TMS4(2)1425
+TMS 91/02312
+CAPEVARS BANKYE
+BANKYE BOTAN
+CRI-AGRA Bankye
+CRI-Dudze
+CRI-Duade Kpakpa
+CRI-Amansan Bankye
+CRI-Abrabopa
+TOKOUMBO
+CRI-Lamesese
+98/0581
+TME 419
+Samuia
+Colio
+Managbolu
+Sare Djobo
+TMS 4 (2) 1425
+Aruth
+Bentenlay
+CARI-25
+CARICASS 1
+CARICASS 2
+CARICASS 3
+Yarlagbor
+91/02324
+98/0583
+M85/01887
+Ouatta Oukou
+92/0067
+NICASS 10
+NICASS 12
+NICASS 14
+NICASS 13
+NICASS 16
+NICASS 1
+NICASS 24
+NICASS 28
+NICASS 21
+NICASS 31
+NICASS 22
+NICASS 20
+UMUCASS 32
+UMUCASS 33
+UMUCASS 34
+UMUCASS 36
+UMUCASS 37
+UMUCASS 38
+UMUCASS 39
+UMUCASS 40
+UMUCASS 41
+UMUCASS 44
+UMUCASS 45
+UMUCASS 46
+SLICASS 8
+SLICASS 9
+SLICASS 10
+SLICASS 11
+SLICASS 12
+SLICASS 13
+SLICASS 14
+SLICASS 2
+SLICASS 1
+SLICASS 5
+94/D66
+95/D54
+TME
+Gbazékouté
+TMS 96/0409
+TMS 95/0166
+TMS 92/0326
 
+// The following are varieties of yam:
 
+BDr 80-001
+TDr 747-RB
+TDr 179
+TDr89/00665
+TDr95/19158
+Florido-Bénin
+TDa98/01176
+TDa01/00012
+TDa98/01166
+TDa01/00090
+TDa99/01169
+Moroko
+Danwari
+Ahimon
+Guirissi Baka
+Kokoro Gbanou
+Tabané
+Singou
+Yakanougo
+Soussou
+Tantoumani
+Agogo
+Douba Yessirou
+Tara
+Tikénianti
+Koussoussouka
+Guiwa
+TDa 00/00194
+TDa 00/00104
+TDr 95/19158
+TDr 89/02602
+TDr 89/02660
+TDa 98/01176
+TDa 98/01168
+TDa 98/01166
+UMUDa-4
+UMUDr-17
+UMUDr-18
+TDr 89/02677
+TDr 89/2565
+TDr 89/02461
+TDr 89/01213
+TDr 89/01438
+TDr 95/01924
+DRN 200/4/2
+TDr 89/02665
+kratsi
+Laboco
+Hé-Abalou
+Koukou
+TDr 747
+TDr 89/02665
+Monia
+Florido
 
+// The following are varieties of potato:
 
+Elodie
+Justine
+Lola
+Nicola
+Ostara
+Rubis
+Sirtema
+Safrane
+Aïda
+Atlas
+Claustar
+Desirée
+Pamina
+Sahel
+Spunta
+Togo
+Liseta
+Derby
+Bartina
+Red Scarlet
+Platina
+Ronaldo
+Évora
+Spunta
+Bintje
+Marabel
+Rumba
+Jelly
+Spunta
+Claustar
 
+// The following are varieties of tomato:
 
+BENTO-01
+BENTO-02
+BENTO-03
+BENTO-04
+BENTO-05
+FBT 1
+FBT 2
+FBT 3
+FBT 4
+FBT 5
+Prestígia
+Calor
+Vyta
+Nativa
+Rossol
+Super Marmande
+Produtor
+KARAKOLY F1
+CALINAGO F1
+MONGAL F1
+Merveille marché
+ROMAVF TECHI
+Calypso
+Roma
+Mongol
+Heinz
+Hermendo
+Xina GB
+Rossol 1
+ROMA VF ML
+Formosa
+ESTRELA
+C 20-5
+SF 83-61
+CARAIBO
+CARIOCA
+Bèbi yérèyé
+Kénéya
+Nayéli
+Konica
+XINA MR
+HEINTZ 1370
+ROMA VF
+XINA NE
+Méru
+Tengeru 97
+Kilele
+CHIBLI
+TYLKA
+Xine pf
+Xina gf
+F1 Ganila
+F1 Jaguar
+F1 Nadira
+F1 Ninja
+F1 Sumo
+F1 Thorgal
+F1 Xewel
+F1 Lindo
+F1 Mongal
 
+// The following are varieties of onion:
 
-
-
-
-
+BENOI-01
+12BF/FB01
+11BF
+10BF
+FBO3
+FBO5
+FBO6
+FBO7
+Violet de Galm 20
+Texas précoce Grano 502
+SIVAN (HA 202)
+VIOLET DE GALMY
+Rouge Creol
+Texas précoce Grano
+Violet de Galomi
+VIOLET DE GALMI
+LAFIA (AVON1073)
+FOUNOU-FOUNOU (AVON 1074)
+MARENA
+KHASSO
+ANTEME JABA
+OGOUNAYE JABA
+GAOUPILI
+KAMA SEGUE
+NIONO JABA
+OLE JABA
+JABA TOLO
+Violet de Galmi MR
+IRAT 69 MR
+BLANC DE GALMI
+Noflaye
+Gandiol
+Gao
+Solara
+Sirocco
+Julio
+Damani
+Belami
+Alizé
+Blanc de Soumaran
+Violet de Galmi
 
 
 
