@@ -20,12 +20,12 @@ trait ContextExtractor {
   val NA = "N/A"
   val maxContextWindow = 2
 
-  val plantingLemmas = Seq("plant", "sow", "cultivate", "cultivation", "grow")
-  val creditLemmas = Seq("credit", "finance", "value")
-  val harvestLemmas = Seq("harvest", "yield")
-  val irrigationLemmas = Seq("irrigation", "irrigate")
-  val weedsLemmas = Seq("weed")
-  val disasterLemmas = Seq("flood", "bird", "attack")
+  val plantingLemmas: Seq[String] = Seq("plant", "sow", "cultivate", "cultivation", "grow")
+  val creditLemmas: Seq[String] = Seq("credit", "finance", "value")
+  val harvestLemmas: Seq[String] = Seq("harvest", "yield")
+  val irrigationLemmas: Seq[String] = Seq("irrigation", "irrigate")
+  val weedsLemmas: Seq[String] = Seq("weed")
+  val disasterLemmas: Seq[String] = Seq("flood", "bird", "attack")
 
   def getContextPerMention(mentions: Seq[Mention], doc: Document): Seq[Mention]
 

@@ -40,6 +40,7 @@ taxonomy:
     - PlantingEvent
     - PlantingDate
     - YieldAmount
+    - YieldIncrease
     - WetSeasonAssignment
     - DrySeasonAssignment
     - FertilizerQuantity
