@@ -16,11 +16,10 @@ taxonomy:
     - Location
     - Fertilizer
     - FertilizerUse
-    - Crop:
-        - NewCrop
-        - PossibleNewVariety
+    - Crop
+    - PossibleNewVariety # this should not be under Crop to avoid it participating in events - it is there to be switched to Crop if there are
     - Yield
-    - Emission
+#    - Emission # not currently maintained
     - Season:
       - DrySeason
       - WetSeason
@@ -42,7 +41,7 @@ taxonomy:
     - CropAssignment
     - FertilizerAssignment
     - AreaSize
-    - EmissionAssignment
+#    - EmissionAssignment # not currently maintained
     - PlantingArea
     - PlantingEvent
     - PlantingDate

@@ -109,22 +109,6 @@ class HabitusActions extends Actions {
   val VALUE = "value"
   val VARIABLE = "variable"
 
-//  def splitIfTwoValues(mentions: Seq[Mention]): Seq[Mention] = {
-//    // for area rules; if there is an extraction with multiple value args,
-//    // split it into binary var-value mentions
-//    val (assignmentMentions, other) = mentions.partition(_ matches "Assignment")
-//    val toReturn = new ArrayBuffer[Mention]()
-//    for (am <- assignmentMentions) {
-//      val valueArgs = am.arguments(VALUE)
-//      if (valueArgs.length > 1) {
-//        for (valueArg <- valueArgs) {
-//          val newArgs = Map(VARIABLE -> Seq(am.arguments(VARIABLE).head), VALUE -> Seq(valueArg))
-//          toReturn.append(copyWithArgs(am, newArgs))
-//        }
-//      } else toReturn.append(am)
-//    }
-//    toReturn ++ other
-//  }
   def removeRedundantVariableMentions(mentions: Seq[Mention]): Seq[Mention] = {
     // The action makes sure there is one variable for every value in most assignment events/relations (those that have value args); we exclude property assignments from this because one property can apply to multiple variables (e.g., They planted crop1 and crop2 (short duration))
     // The action applies to mentions extracted with var reader relation/event rules, so we exclude TBMs and include a value argument.
@@ -302,6 +286,7 @@ class HabitusActions extends Actions {
   }
 
   def varietyToTBM(mentions: Seq[Mention]): Seq[Mention] = {
+    // turns possible crop varieties into Crop mentions if they are assigned to crop variety-related variables, e.g., variety and mutant
     mentions.flatMap(m =>
       // get all variety args
       m.arguments("variety")

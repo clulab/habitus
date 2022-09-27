@@ -64,7 +64,7 @@ class TestDefaultContextAttachment extends Test {
 
   val variableTests: Array[DefaultContextAttachmentTest] = Array(
     DefaultContextAttachmentTest(
-      passingTest,
+      unreliableTest,
       "sent-1",
       "The area sown with rice and fertilized with urea for this 2021/2022 wintering campaign is 28,223 ha in wintering in Senegal.",
       "AreaSize",

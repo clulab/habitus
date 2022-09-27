@@ -374,9 +374,9 @@ class TestVariableReaderLabelBased extends Test {
       "AreaSize",
       Seq(
         ("GenericArea", Seq(("843 ha", "843.0 ha"))),
-          ("GenericArea", Seq(("199 ha", "199.0 ha"))),
-            ("GenericArea", Seq(("31 ha", "31.0 ha"))),
-              ("GenericArea", Seq(("23 ha", "23.0 ha")))
+        ("GenericArea", Seq(("199 ha", "199.0 ha"))),
+        ("GenericArea", Seq(("31 ha", "31.0 ha"))),
+        ("GenericArea", Seq(("23 ha", "23.0 ha")))
         )
     ),
     VariableTest(
@@ -463,10 +463,27 @@ class TestVariableReaderLabelBased extends Test {
         ("Yield", Seq(("1.7 t ha-1", "1.7 t/ha"))),
         ("Yield", Seq(("2.7 t ha-1", "2.7 t/ha")))
       )
+    ),
+    VariableTest(
+      passingTest,
+      "sent40", "Hative de Sefa and Fleur 11 performed well in GLZ , where they yielded 2.4 and 2.1 t ha-1 , respectively .",
+      "YieldAmount",
+      Seq(
+        ("Yield", Seq(("2.4", "2.4 t/ha"))),
+        ("Yield", Seq(("2.1 t ha-1", "2.1 t/ha")))
+      )
+    ),
+    VariableTest(
+      passingTest,
+      "sent41", "Hative de Sefa gave moderate yield of 3.6 and 2.0 t ha-1 in the Delta and MVZ , respectively , with however the best response in unfavourable zone ( 2.4 t ha-1 ).",
+      "YieldAmount",
+      Seq(
+        ("Yield", Seq(("3.6", "3.6 t/ha"))),
+        ("Yield", Seq(("2.0 t ha-1", "2.0 t/ha"))),
+        ("Yield", Seq(("2.4 t ha-1", "2.4 t/ha")))
+      )
     )
   )
-
-  // todo: add Yield amount test: Hative de Sefa and Fleur 11 performed well in GLZ , where they yielded 2.4 and 2.1 t ha-1 , respectively . AND Is 2.4 extracted Hative de Sefa gave moderate yield of 3.6 and 2.0 t ha-1 in the Delta and MVZ , respectively , with however the best response in unfavourable zone ( 2.4 t ha-1 ).
 
   variableTests.zipWithIndex.foreach { case (variableTest, index) => variableTest.test(index) }
 }

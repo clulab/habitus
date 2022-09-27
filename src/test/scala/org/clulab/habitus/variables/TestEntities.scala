@@ -33,28 +33,18 @@ class TestEntities extends Test {
       shouldable should s"filter by correct label(s) and value size of $name correctly" in {
         if (index == -1)
           println("Put a breakpoint here to observe a particular test.")
-
         // get all mentions from text
         val mentions = getMentions(text)
-
         // iterate over label, value pairs
         for ((label, values) <- desired){
-
           // filter mentions by label
           val targetMentions = mentions.filter(_.label == label)
-
           //check size of filtered mentions with the values
           targetMentions.length should equal(values.length)
-
-
           val targetMentionTexts = targetMentions.map(_.text) // text of similar kinds but for norms(
-          //          println(targetMentionTexts)
-
           //check if the required texts were extracted
           values.foreach(text => targetMentionTexts should contain(text))
-
         }
-
       }
     }
   }
@@ -519,6 +509,15 @@ class TestEntities extends Test {
       "Vaghasia et al. ( 2010 ) established that the stress at flowering stage ( 25-47 days after sowing ) and pod development stage ( 50-72 days after sowing ) gave 18.45 % and 30.63 % reduction in pod yield than no water stress treatment , respectively .",
       Seq(
         "Crop" -> Seq.empty // this mainly checks that 25-47 is not found as a crop variety
+      )
+    ),
+    VariableTest(
+      passingTest,
+      "sent48",
+      "Mutants such as New 22 and New 23",
+      Seq(
+        "PossibleNewVariety" -> Seq("New 22", "New 23"),
+        "Crop" -> Seq("New 22", "New 23")
       )
     )
   )

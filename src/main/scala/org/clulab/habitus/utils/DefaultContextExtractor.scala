@@ -11,11 +11,8 @@ class DefaultContextExtractor extends ContextExtractor {
 
   def getMentionsWithinClause(current: Mention, mentions: Seq[Mention]): Seq[Mention] = {
     //get mentions that are not separated from the current one by sentence-break lemmas
-
     mentions.filter(m => {
-//      println("cm: " + current.text + " m: " + m.text)
       val interval = Seq(current, m).sortBy(_.tokenInterval)
-//      println("Interval: " + interval)
       current.sentenceObj.lemmas.get.slice(interval.head.start, interval.last.end).intersect(likelyClauseBreak).isEmpty
     })
   }

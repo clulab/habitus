@@ -23,9 +23,9 @@
   label: PossibleNewVariety
   type: token
   pattern: |
-    [chunk="B-NP" & tag = "NNP" & !mention = "Avoid" & !entity = /.\-ACRONYM|.\-FERTILIZER/] [chunk = "I-NP" & !word = "and" & !mention = "Avoid"]+ [tag = "CD"]
+    [chunk="B-NP" & tag = "NNP" & !mention = "Avoid" & !entity = /.\-ACRONYM|.\-FERTILIZER|.\-DATE/] [chunk = "I-NP" & !word = "and" & !mention = "Avoid"]* [tag = "CD"]
     |
-    [chunk = "I-NP" & tag = "NNP" & !word = "and" & !mention = "Avoid" & !entity = /.\-ACRONYM|.\-FERTILIZER|.\-NONENTITY/]+ [tag = "CD"]
+    [chunk = "I-NP" & tag = "NNP" & !word = "and" & !mention = "Avoid" & !entity = /.\-ACRONYM|.\-DATE|.\-FERTILIZER|.\-NONENTITY/]+ [tag = "CD"]
     |
     [word = /^\d+(\-\d+)+$/ & !entity =/.\-MEASUREMENT|.-DATE-RANGE/]
 
@@ -45,6 +45,8 @@
   pattern: |
     [lemma = /variety|varieties|landrace|mutant/]
 
+
+# The next two rules are to capture crops that are not in the lexicon
 - name: variety-rule
   priority: ${rulepriority}
   label: Crop
@@ -251,12 +253,13 @@
     |
     /\d{1,3}/ [lemma = /^day$/]
 
-- name: emission-vars
-  priority: ${rulepriority}
-  label: Emission
-  type: token
-  pattern: |
-    /(?i)(^CH4|CO2|N)/ [lemma=/emission/]
+# not currently used, but keeping for future
+#- name: emission-vars
+#  priority: ${rulepriority}
+#  label: Emission
+#  type: token
+#  pattern: |
+#    /(?i)(^CH4|CO2|N)/ [lemma=/emission/]
 
 - name: grain-property
   priority: ${rulepriority}
