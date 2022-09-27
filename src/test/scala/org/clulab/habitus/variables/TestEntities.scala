@@ -494,7 +494,7 @@ class TestEntities extends Test {
       "...but hardly practised in the Senegal River valley ( Le Gal and Papy , 1998 ), i.e. by 13 % in 2027 ( OECD-FAO , 2018 ; USDA , 2017 ) .",
       Seq(
         "Date" -> Seq("2027"),
-        "Avoid" -> Seq("1998", "2018", "2017", "( OECD-FAO , 2018 ;", "(", ")", "(", ")")
+        "Avoid" -> Seq("1998", "2018", "2017", "( OECD-FAO , 2018 ;", "(", ")", "(", ")", "and")
       )
     ),
     VariableTest(
@@ -503,6 +503,14 @@ class TestEntities extends Test {
       "As a result , groundnut planting is frequently delayed",
       Seq(
         "Fertilizer" -> Seq.empty
+      )
+    ),
+    VariableTest(
+      passingTest,
+      "sent46a",
+      " less than 10 % ; between 10 and 30 % ; and more than J.C. Poussin et al. / Europ.",
+      Seq(
+        "Location" -> Seq.empty
       )
     ),
     VariableTest(

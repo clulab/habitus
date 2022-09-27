@@ -72,18 +72,17 @@ object VariableProcessor {
 
   // Custom NER for variable reading
   def newLexiconNer(): LexiconNER = {
+    // note: if adding a new lexicon, add another Bool value in the sequence that is an argument to LexiconNER a few lines down in this method
     val kbs = Seq(
+      "lexicons/NONENTITY.tsv",
       "lexicons/FERTILIZER.tsv",
       "lexicons/CROP.tsv"
-//      ,
-//      "lexicons/NONENTITY.tsv"
-
-
     )
     val isLocal = kbs.forall(new File(resourceDir, _).exists)
     val lexiconNer = LexiconNER(kbs,
       Seq(
         true, // case insensitive match for fertilizers
+        true,
         true
       ),
       if (isLocal) Some(resourceDir) else None

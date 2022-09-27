@@ -1,14 +1,11 @@
 package org.clulab.habitus.utils
 
-import org.clulab.habitus.variables.EntityDistFreq
 import org.clulab.odin.{Attachment, Mention}
 import org.clulab.processors.{Document, Sentence}
 import org.clulab.struct.Interval
 
 import scala.collection.immutable.ListMap
-import scala.util.control.Breaks._
-import scala.collection.{breakOut, mutable}
-import scala.collection.mutable.ArrayBuffer
+
 
 trait Context extends Attachment with Pairable
 

@@ -25,7 +25,7 @@
   pattern: |
     [chunk="B-NP" & tag = "NNP" & !mention = "Avoid" & !entity = /.\-ACRONYM|.\-FERTILIZER/] [chunk = "I-NP" & !word = "and" & !mention = "Avoid"]+ [tag = "CD"]
     |
-    [chunk = "I-NP" & tag = "NNP" & !word = "and" & !mention = "Avoid" & !entity = /.\-ACRONYM|.\-FERTILIZER/]+ [tag = "CD"]
+    [chunk = "I-NP" & tag = "NNP" & !word = "and" & !mention = "Avoid" & !entity = /.\-ACRONYM|.\-FERTILIZER|.\-NONENTITY/]+ [tag = "CD"]
     |
     [word = /^\d+(\-\d+)+$/ & !entity =/.\-MEASUREMENT|.-DATE-RANGE/]
 
@@ -66,18 +66,6 @@
     |
     @variety:PossibleNewVariety @variable:GenericVariety
 
-#    (?<= [lemma = /^(variety|landrace|mutant)$/] "("? [lemma = /^eg$/] [word = "."]?) @variety:ProperNounPhrase+? ([lemma = /^(\,|and)$/]? @variety:ProperNounPhrase)+?
-#    |
-#    (?<=[word = "variety"] ","?) (?<variety> [tag = "NNP" & !mention = "Crop"] [tag = "CD"])
-#    |
-#    @variety:ProperNounPhrase (?=[word = "variety"])
-#    |
-#    (?<variety> [tag = "NNP" & !mention = "Crop"] [tag = "CD"]) (?=[word = "variety"])
-#    |
-#    (?<= [tag = "CD"] [] [lemma = /^variety$/] [word = /^\,|\(/]?) @variety:ProperNounPhrase+? ([lemma = /^(,|and)$/]? @variety:ProperNounPhrase)+?
-  #    |
-#    (?<=[word = "variety"] ","?) @variety: ProperNounPhrase
-
 ### These will act as variables in various assignment events ###
 - name: generic-crop-rule
   priority: ${rulepriority}
@@ -85,8 +73,6 @@
   type: token
   pattern: |
     [lemma = /(?i)\b(crop|cultivar|cultivation|seed|variety|varieties)\b/]
-    
-    
 
 # manure --> can be added for generic fertilizer.
 - name: generic-fertilizer-rule

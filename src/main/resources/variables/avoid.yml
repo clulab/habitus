@@ -32,16 +32,9 @@ rules:
     pattern: |
       [word = /^(P|p)$/] (?=[word = "<"])
 
-  - name: "non-entities"
-    label: Avoid
-    priority: ${rulepriority}
-    type: token
-    pattern: |
-      [word = /^(Europ|PA|PI|T1|SAED|Elementar|As|vs)$/]
-
   - name: "misc-avoids"
     label: Avoid
     priority: ${rulepriority}
     type: token
     pattern: |
-      [word = /^(\[|\]|\(|\)|\{|\}|>|<|=)$/]
+      [word = /^(\[|\]|\(|\)|\{|\}|>|<|=|and|vs)$/]
