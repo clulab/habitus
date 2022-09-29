@@ -3,6 +3,7 @@ package org.clulab.habitus.variables
 import org.clulab.dynet.Utils
 import org.clulab.habitus.{GenericProcessor, HabitusProcessor, ParsingResult}
 import org.clulab.habitus.actions.HabitusActions
+import org.clulab.habitus.document.attachments.YearDocumentAttachment
 import org.clulab.habitus.utils.{ContextExtractor, DefaultContextExtractor}
 import org.clulab.numeric.setLabelsAndNorms
 import org.clulab.odin.{EventMention, ExtractorEngine, Mention, TextBoundMention}
@@ -26,15 +27,15 @@ class VariableProcessor(val processor: CluProcessor,
     new VariableProcessor(newProcessor, newExtractorEngine, contextExtractor, masterResource)
   }
 
-
-  def parse(text: String): ParsingResult = {
+  def parse(text: String, yearOpt: Option[Int] = None): ParsingResult = {
     // pre-processing
     val doc = processor.annotate(text, keepText = false)
+    setYear(doc, yearOpt)
     // extract mentions from annotated document
-    parse(doc)
+    parseDoc(doc)
   }
 
-  def parse(doc: Document): ParsingResult = {
+  def parseDoc(doc: Document): ParsingResult = {
     // extract mentions from annotated document
     val mentions = extractor.extractFrom(doc).sortBy(m => (m.sentence, m.getClass.getSimpleName))
     val tbms = mentions.filter(_.isInstanceOf[TextBoundMention])

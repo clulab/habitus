@@ -1,7 +1,11 @@
 package org.clulab.habitus.variables
 
+import org.clulab.habitus.document.attachments.YearDocumentAttachment
 import org.clulab.habitus.utils.Test
 import org.clulab.odin.{Mention, TextBoundMention}
+import org.clulab.serialization.DocumentSerializer
+import org.clulab.serialization.json._
+import org.json4s.jackson.{parseJson, prettyJson, renderJValue}
 
 class TestVariableReader extends Test {
   // Set this filter to false only if necessary to test texts that would otherwise
@@ -62,6 +66,39 @@ class TestVariableReader extends Test {
   }
 
   behavior of "VariableReader"
+
+  it should "remember a year" in {
+    val expectedYear = 1984
+    val doc = vp.parse("This is a test", Some(expectedYear)).document
+    val actualYear = YearDocumentAttachment.getYear(doc).get
+
+    actualYear should be (expectedYear)
+  }
+
+  it should "serialize YearDocumentAttachment as text" in {
+    val expectedYear = 2022
+    val doc = vp.parse("This is a test", Some(expectedYear)).document
+
+    val documentSerializer = new DocumentSerializer()
+    val documentString = documentSerializer.save(doc)
+
+    val newDoc = documentSerializer.load(documentString)
+    val actualYear = YearDocumentAttachment.getYear(newDoc).get
+
+    actualYear should be (expectedYear)
+  }
+
+  it should "serialize YearDocumentAttachment as json" in {
+    val expectedYear = 1166
+    val doc = vp.parse("This is a test", Some(expectedYear)).document
+
+    val documentString = prettyJson(renderJValue(doc.jsonAST))
+
+    val newDoc = JSONSerializer.toDocument(parseJson(documentString))
+    val actualYear = YearDocumentAttachment.getYear(newDoc).get
+
+    actualYear should be(expectedYear)
+  }
 
   val variableTests: Array[VariableTest] = Array(
     // The CLU parser breaks on this one, but the SRL works fine!
