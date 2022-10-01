@@ -30,14 +30,11 @@ trait ContextExtractor {
     NA -> Set("N/A")
   )
 
-  def reverseProcessToLemma(processToLemma: ListMap[String, Set[String]]): Map[String, String] = {
-    val lemmaToProcess = collection.mutable.Map[String, String]()
-    for ( (process, lemmaValues) <- processToLemma){
-      for (lemmaValue <- lemmaValues){
-        lemmaToProcess += (lemmaValue -> process)
-      }
-    }
-    lemmaToProcess.toMap
+  def reverseProcessToLemma(processToLemmas: ListMap[String, Set[String]]): Map[String, String] = {
+    processToLemmas
+      .map { case (process, lemmas) => lemmas.map { lemma => lemma -> process } }
+      .flatten
+      .toMap
   }
 
   val lemmaToProcess: Map[String, String] = reverseProcessToLemma(processToLemmas)
@@ -45,22 +42,24 @@ trait ContextExtractor {
   def getContextPerMention(mentions: Seq[Mention], doc: Document): Seq[Mention]
 
   def getProcess(mention: Mention): String = {
-    val argLabels = mention.arguments.flatMap(_._2).map(_.label).toSeq
-    if (argLabels.contains("Fertilizer")) {
+    val argLabels = mention.arguments.values.flatten.map(_.label).toSeq
+    if (argLabels.contains("Fertilizer"))
       "fertilizerApplication"
-    } else {
-      //    Getting process lemma from the mention
-      val mentionLemmas = mention.lemmas
-      val mensLemmaOverLap = processToLemmas.map(p => (p._1, p._2.intersect(mentionLemmas.get.toSet).toList.length))
-      if (mensLemmaOverLap.values.max != 0) {
-        mensLemmaOverLap.filter(_._2 == mensLemmaOverLap.values.max).keys.mkString("::")
-      } else {
+    else {
+      // Getting process lemma from the mention
+      val mentionLemmas = mention.lemmas.get.toSet
+      val mensLemmaOverLap = processToLemmas.map { case (process, lemmas) =>
+        val intersectCount = lemmas.intersect(mentionLemmas).size
+        process -> intersectCount
+      }
+      val max = mensLemmaOverLap.values.max
+      if (max != 0)
+        mensLemmaOverLap.filter(_._2 == max).keys.mkString("::")
+      else {
         val closestLemma = findClosestProcessLemma(mention)
         lemmaToProcess(closestLemma)
-
       }
     }
-
   }
 
   def getComparative(mention: Mention): Int = {
@@ -78,7 +77,7 @@ trait ContextExtractor {
         contextType match {
           case "Location" => {
             val nextLoc = findClosestNextLocation(m, contextRelevantMentions)
-            if (nextLoc.isDefined) nextLoc.get.text else findClosestNotOverlapping(m, contextRelevantMentions).text
+            nextLoc.getOrElse(findClosestNotOverlapping(m, contextRelevantMentions)).text
           }
           case "Date" => findClosestNotOverlapping(m, contextRelevantMentions).text
           case "Crop" => if (m.foundBy.endsWith("splitIntoBinary")) {
@@ -145,9 +144,9 @@ trait ContextExtractor {
   def findClosestProcessLemma(mention: Mention): String = {
     val lemmasWithIndices = mention.sentenceObj.lemmas.get.zipWithIndex.filter(li => lemmaToProcess.contains(li._1))
     val lemmasWithDistances = lemmasWithIndices.map(tup => (tup._1, getDistance(mention, tup)))
-      if (lemmasWithDistances.nonEmpty) {
-        lemmasWithDistances.minBy(_._2)._1
-      } else NA
+    if (lemmasWithDistances.nonEmpty) {
+      lemmasWithDistances.minBy(_._2)._1
+    } else NA
   }
 
 

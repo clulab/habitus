@@ -11,7 +11,7 @@ case class MentionInfo(contextWindow: String, sentenceText: String, inputFilenam
 object MentionInfo {
 
   val config = ConfigFactory.load()
-  val windowSize: Int = config[Int]("VarDatesReader.contextWindowSize")
+  val windowSize: Int = config[Int]("VarReader.contextWindowSize")
 
   def apply(mention: Mention, inputFilename: String): MentionInfo = {
     val sentences = mention.document.sentences

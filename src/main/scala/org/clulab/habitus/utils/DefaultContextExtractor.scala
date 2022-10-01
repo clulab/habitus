@@ -54,8 +54,7 @@ class DefaultContextExtractor extends ContextExtractor {
       val thisSentSeason = thisSentTBMs.filter(_.label == "Season")
       for (m <- thisSentEvents) {
         // make a map of arg labels and texts for automatic context field assignment in cases where context is part of the mention itself
-        val menArgLabels = m.arguments
-          .flatMap(a => a._2)
+        val menArgLabels = m.arguments.values.flatten
           .map(men => men.label -> men.text).toMap
         val context = if (sentLemmas.contains("respectively")) {
           // for context type

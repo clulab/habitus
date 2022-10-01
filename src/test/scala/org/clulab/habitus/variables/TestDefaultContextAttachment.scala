@@ -2,7 +2,6 @@ package org.clulab.habitus.variables
 
 import org.clulab.habitus.utils.{DefaultContext, Test}
 import org.clulab.odin.Mention
-import scala.collection.immutable.ListMap
 
 class TestDefaultContextAttachment extends Test {
   // make sure a relation/event attachment is correct

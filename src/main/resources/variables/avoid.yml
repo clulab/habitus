@@ -7,7 +7,7 @@ rules:
     priority: ${rulepriority}
     type: token
     pattern: |
-      (?<=[tag=NNP] "et" /al|al./ /\(|,/? ) /[12]\d\d\d/ 
+      (?<=[tag=NNP] "et" /al|al\./ /\(|,/? ) /[12]\d\d\d/ 
       |
       (?<= /\(|;/ ([tag=NNP]{1,2} [word = /,|and/]?)+) /[12]\d\d\d/
       |
@@ -21,7 +21,7 @@ rules:
     pattern: |
       [word = /^(Table|Reference|Fig.|Fig)$/]
       |
-      [tag=NNP] "et" /al|al./ 
+      [tag=NNP] "et" /al|al\./ 
       |
       "(" [tag = "NNP"] "," [word = /^[12][09]\d\d$/] /;|\)/ 
 

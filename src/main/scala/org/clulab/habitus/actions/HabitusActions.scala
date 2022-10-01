@@ -3,7 +3,6 @@ package org.clulab.habitus.actions
 import org.clulab.numeric.mentions.MeasurementMention
 import org.clulab.odin.{Actions, EventMention, Mention, RelationMention, State, TextBoundMention, mkTokenInterval}
 import org.clulab.struct.Interval
-import org.clulab.wm.eidos.expansion.TextBoundExpander
 
 import scala.collection.mutable.ArrayBuffer
 
@@ -32,20 +31,20 @@ class HabitusActions extends Actions {
       .sortBy(_.sentence)
       .sortBy(_.tokenInterval)
 
+  val paragraphLength = 6
   def cleanupAction(mentions: Seq[Mention]): Seq[Mention] = {
     // do the entity check: only use entities that occur more than once within the text---doing this to avoid location/fertilizer false pos;
-    // only apply the check to documents of more than 6 sentences (paragraph length-ish?) - if we run the shell or tests,
+    // only apply the check to documents of more than pre-defined number of sentences (paragraph length-ish?) - if we run the shell or tests,
     // there won't be enough text to do the check
-    val afterEntityUniquenessCheck = if (mentions.nonEmpty && mentions.head.document.sentences.length > 6) doEntityUniquenessCheck(mentions) else mentions
-    val r1 = removeRedundantVariableMentions(keepLongestMentions(afterEntityUniquenessCheck))
-    r1
+    val afterEntityUniquenessCheck = if (mentions.nonEmpty && mentions.head.document.sentences.length > paragraphLength) doEntityUniquenessCheck(mentions) else mentions
+    removeRedundantVariableMentions(keepLongestMentions(afterEntityUniquenessCheck))
   }
 
   def doEntityUniquenessCheck(mentions: Seq[Mention]): Seq[Mention] = {
     val (entitiesToDoubleCheck, other) = mentions.partition(m =>
       m.isInstanceOf[TextBoundMention]
         && (m.label == "Location" || m.label == "Fertilizer"))
-    val doubleCheckedEntities = if (entitiesToDoubleCheck.nonEmpty) returnNonUniqueEntities(entitiesToDoubleCheck) else Seq.empty
+    val doubleCheckedEntities = returnNonUniqueEntities(entitiesToDoubleCheck) //if (entitiesToDoubleCheck.nonEmpty) returnNonUniqueEntities(entitiesToDoubleCheck) else Seq.empty
     doubleCheckedEntities ++ other
   }
 
@@ -56,8 +55,7 @@ class HabitusActions extends Actions {
 
   def filterUniqTextMentionsOfSameLabel(mentions: Seq[Mention]): Seq[Mention] = {
     // in this method, all mentions already have the same label
-    val uniqTexts = mentions.groupBy(_.text).filter(_._2.length == 1).keys.toSeq
-    mentions.filterNot(m => uniqTexts.contains(m.text))
+    mentions.groupBy(_.text).filter(_._2.length > 1).flatMap(_._2).toSeq
   }
 
   private def isBelief(m: Mention): Boolean = {
@@ -92,6 +90,8 @@ class HabitusActions extends Actions {
     // filter out the ones where var and val are too far
     limitVarValSpan(split)
   }
+
+  val maxSpan = 23
   def limitVarValSpan(mentions: Seq[Mention]): Seq[Mention] = {
     val toReturn = new ArrayBuffer[Mention]()
     for (m <- mentions) {
@@ -99,7 +99,7 @@ class HabitusActions extends Actions {
       val args = m.arguments.map(_._2.head).toSeq
       val sortedArgs = args.sortBy(_.tokenInterval)
       val distance = sortedArgs.last.start - sortedArgs.head.end
-      if (distance <= 23) {
+      if (distance <= maxSpan) {
         toReturn.append(m)
       }
     }
