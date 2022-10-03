@@ -448,7 +448,7 @@ class TestVariableReaderLabelBased extends Test {
       Seq.empty
     ),
     VariableTest(
-      passingTest,
+      unreliableTest,
       "sent38", "Yield gain due to the third N application was relatively small , i.e. about 0.4 t ha-1",
       "YieldIncrease",
       Seq(
