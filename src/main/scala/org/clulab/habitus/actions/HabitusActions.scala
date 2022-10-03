@@ -31,12 +31,11 @@ class HabitusActions extends Actions {
       .sortBy(_.sentence)
       .sortBy(_.tokenInterval)
 
-  val paragraphLength = 6
   def cleanupAction(mentions: Seq[Mention]): Seq[Mention] = {
     // do the entity check: only use entities that occur more than once within the text---doing this to avoid location/fertilizer false pos;
     // only apply the check to documents of more than pre-defined number of sentences (paragraph length-ish?) - if we run the shell or tests,
     // there won't be enough text to do the check
-    val afterEntityUniquenessCheck = if (mentions.nonEmpty && mentions.head.document.sentences.length > paragraphLength) doEntityUniquenessCheck(mentions) else mentions
+    val afterEntityUniquenessCheck = if (mentions.nonEmpty && mentions.head.document.sentences.length > HabitusActions.paragraphLength) doEntityUniquenessCheck(mentions) else mentions
     removeRedundantVariableMentions(keepLongestMentions(afterEntityUniquenessCheck))
   }
 
@@ -44,7 +43,7 @@ class HabitusActions extends Actions {
     val (entitiesToDoubleCheck, other) = mentions.partition(m =>
       m.isInstanceOf[TextBoundMention]
         && (m.label == "Location" || m.label == "Fertilizer"))
-    val doubleCheckedEntities = returnNonUniqueEntities(entitiesToDoubleCheck) //if (entitiesToDoubleCheck.nonEmpty) returnNonUniqueEntities(entitiesToDoubleCheck) else Seq.empty
+    val doubleCheckedEntities = returnNonUniqueEntities(entitiesToDoubleCheck)
     doubleCheckedEntities ++ other
   }
 
@@ -91,7 +90,6 @@ class HabitusActions extends Actions {
     limitVarValSpan(split)
   }
 
-  val maxSpan = 23
   def limitVarValSpan(mentions: Seq[Mention]): Seq[Mention] = {
     val toReturn = new ArrayBuffer[Mention]()
     for (m <- mentions) {
@@ -99,7 +97,7 @@ class HabitusActions extends Actions {
       val args = m.arguments.map(_._2.head).toSeq
       val sortedArgs = args.sortBy(_.tokenInterval)
       val distance = sortedArgs.last.start - sortedArgs.head.end
-      if (distance <= maxSpan) {
+      if (distance <= HabitusActions.maxSpan) {
         toReturn.append(m)
       }
     }
@@ -309,4 +307,9 @@ class HabitusActions extends Actions {
       case _ => throw new RuntimeException(s"Unknown mention type ${mention.getClass}")
     }
   }
+}
+
+object HabitusActions {
+  val maxSpan = 23 // allowable tokens between var and value (applied with an action to some event mentions)
+  val paragraphLength = 6 // document length (in sentences) after which to start excluding unique entities (e.g., only count <some location> as Location if it occurs more than once in a document); the intent is to exclude false positive entities
 }
