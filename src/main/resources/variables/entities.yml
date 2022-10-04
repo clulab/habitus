@@ -11,6 +11,63 @@
   pattern: |
     [tag=/^NN/]
 
+- name: np-rule
+  priority: ${lowpriority}
+  label: NounPhrase
+  type: token
+  pattern: |
+    [chunk="B-NP" & !tag = "CD"] [chunk = "I-NP"]
+
+- name: pnp-rule
+  priority: ${lowpriority}
+  label: PossibleNewVariety
+  type: token
+  pattern: |
+    [chunk="B-NP" & tag = "NNP" & !mention = "Avoid" & !entity = /.\-ACRONYM|.\-FERTILIZER|.\-DATE/] [chunk = "I-NP" & !word = "and" & !mention = "Avoid"]* [tag = "CD"]
+    |
+    [chunk = "I-NP" & tag = "NNP" & !word = "and" & !mention = "Avoid" & !entity = /.\-ACRONYM|.\-DATE|.\-FERTILIZER|.\-NONENTITY/]+ [tag = "CD"]
+    |
+    [word = /^\d+(\-\d+)+$/ & !entity =/.\-MEASUREMENT|.-DATE-RANGE/]
+
+### These will act as variables in various assignment events ###
+
+- name: crop-values-from-lexicon-vars
+  priority: ${lowpriority}
+  label: Crop
+  type: token
+  pattern: |
+    [entity='B-CROP'] [entity='I-CROP']*
+
+- name: generic-variety-rule
+  priority: ${lowpriority}
+  label: GenericVariety
+  type: token
+  pattern: |
+    [lemma = /variety|varieties|landrace|mutant/]
+
+
+# The next two rules are to capture crops that are not in the lexicon
+- name: variety-rule
+  priority: ${rulepriority}
+  label: Crop
+  type: dependency
+  action: varietyToTBM
+  example: "Mutants such as Huayu 22 and Fu 22"
+  pattern: |
+    trigger = [lemma = /^(variety|landrace|mutant)$/]
+    variety: PossibleNewVariety+ = nmod_such_as | nmod_such_as conj_and
+
+- name: variety-tok-rule-1
+  priority: ${rulepriority}
+  label: Crop
+  type: token
+  action: varietyToTBM
+  example:
+  pattern: |
+    @variable:GenericVariety ([]{,10} @variety:PossibleNewVariety)+
+    |
+    @variety:PossibleNewVariety @variable:GenericVariety
+
 ### These will act as variables in various assignment events ###
 - name: generic-crop-rule
   priority: ${rulepriority}
@@ -32,21 +89,22 @@
   label: Planting
   type: token
   pattern: |
-    ([lemma=/early|late/])? /(?i)(^planting|sowing|seeding)/ /date|season|time|timing/?
+    (?<! [lemma = "after"]) ([lemma=/early|late/])? /(?i)(^planting|sowing|seeding)/ /date|season|time|timing/?
 
 - name: verbal-sowing
   priority: ${rulepriority}
   label: Planting
   type: token
   pattern: |
-    [lemma = /plant|sow|seed/  & tag = /^VB/] 
+    (?<! [lemma = "after"]) [lemma = /plant|sow|seed/  & tag = /^VB/] 
 
 - name: variable-area
   priority: ${rulepriority}
-  label: Area
+  label: GenericArea
   type: token
   pattern: |
-    ([lemma=/cultivate|plant|sow/])? [lemma=/area/] ([lemma=/sow/])?
+    [lemma=/^(area|land)$/] | "land" "area"
+#    ([lemma=/cultivate|plant|sow/])? [lemma=/area/] ([lemma=/sow/])?
 
 - name: variable-fertilizer
   priority: ${rulepriority}
@@ -60,7 +118,7 @@
   label: Yield
   type: token
   pattern: |
-    [lemma = "yield" & tag = /^NN/]
+    [lemma = "yield" & tag = /^(NN|VB)/]
 
 - name: variable-bird-attacks
   priority: ${rulepriority}
@@ -76,14 +134,19 @@
   label: Date
   type: token
   pattern: |
-    [entity='B-DATE' & !mention=Avoid] [entity='I-DATE']* 
+    [entity='B-DATE' & !mention="Avoid" & !word = /(19[0-6]\d|2[1-9]\d\d)/ & !mention = /^Crop$|PossibleNewVariety/] [entity='I-DATE']* 
+    | 
+    [word=/^(19[7-9]\d|20\d\d)$/ & !mention="Avoid" & !entity = /I-DATE/] (?! [word = /^(DS|WS)$/])
+  # limiting allowable year range to be after 1970s; standalone year can't be an inside of an entity
 
 - name: value-from-date-2
   priority: ${rulepriority}
-  label: Months
+  label: Month
   type: token
   pattern: |
-    [entity='B-DATE' & !word=/^1\d\d\d|2\d\d\d/] [entity='I-DATE' & !word=/^1\d\d\d|2\d\d\d/]* | [entity='B-DATE-RANGE' & !word=/^1\d\d\d|2\d\d\d/] [entity='I-DATE-RANGE' & !word=/^1\d\d\d|2\d\d\d/]*
+    [entity = /.\-DATE$/ & word = /[A-Z][a-z]/]+
+    |
+    [entity='B-DATE' & !word=/^1\d\d\d|2\d\d\d/] [entity='I-DATE' & !word=/^1\d\d\d|2\d\d\d/]+ | [entity='B-DATE-RANGE' & !word=/^1\d\d\d|2\d\d\d/] [entity='I-DATE-RANGE' & !word=/^1\d\d\d|2\d\d\d/]+
 
 - name: value-from-daterange
   priority: ${rulepriority}
@@ -107,7 +170,7 @@
   type: token
   action: appropriateMeasurement
   pattern: |
-    [entity='B-MEASUREMENT'] [entity = 'I-MEASUREMENT']*
+    [entity='B-MEASUREMENT' & !word = /19[0-6]\d/] [entity = 'I-MEASUREMENT' & !word = /19[0-6]\d/]*
 
 - name: measurement-rule-constructed
   priority: ${rulepriority}
@@ -120,7 +183,7 @@
 
 - name: area-size-entity-rule
   priority: ${rulepriority}
-  label: AreaSize
+  label: AreaSizeValue
   type: token
   action: appropriateMeasurement
   pattern: |
@@ -139,14 +202,7 @@
   label: Fertilizer
   type: token
   pattern: |
-    [entity='B-FERTILIZER' & !mention=Avoid] [entity='I-FERTILIZER']*
-
-- name: crop-values-from-lexicon-vars
-  priority: ${rulepriority}
-  label: Crop
-  type: token
-  pattern: |
-    [entity='B-CROP'] [entity='I-CROP']*
+    [entity='B-FERTILIZER' & !mention=Avoid & !entity=/.-NONENTITY/] [entity='I-FERTILIZER']*
 
 - name: wet-season
   priority: ${rulepriority}
@@ -154,13 +210,21 @@
   type: token
   pattern: |
     /(?i)(wet|rainy)/ []{,2}? [lemma = /\bseason\b/]
+    |
+    /\d{4}WS/
+    |
+    /^WS$/
 
 - name: dry-season
   priority: ${rulepriority}
   label: DrySeason
   type: token
   pattern: |
-    /(?i)(dry|hot|cold)/ []*? [lemma = /\bseason\b/]
+    /(?i)(dry|hot|cold)/ []{,2}? [lemma = /\bseason\b/]
+    |
+    /\d{4}DS/
+    |
+    /^DS$/
 
 - name: complex-date
   priority: ${higherpriority}
@@ -176,14 +240,26 @@
   label: Location
   type: token
   pattern: |
-    [entity='B-LOC'] [entity='I-LOC']*
+    [entity='B-LOC' & !mention="Avoid"] [entity='I-LOC']*
 
 - name: duration-property
   priority: ${rulepriority}
   label: Duration
   type: token
   pattern: |
-    /(?i)(^short|medium)/ [lemma=/duration/]
+    /(?i)(^short|medium|long)/ [lemma=/duration/] 
+    | 
+    /shortcycle|(short-|long-|medium-)duration/
+    |
+    /\d{1,3}/ [lemma = /^day$/]
+
+# not currently used, but keeping for future
+#- name: emission-vars
+#  priority: ${rulepriority}
+#  label: Emission
+#  type: token
+#  pattern: |
+#    /(?i)(^CH4|CO2|N)/ [lemma=/emission/]
 
 - name: grain-property
   priority: ${rulepriority}

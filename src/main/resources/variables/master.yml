@@ -17,32 +17,39 @@ taxonomy:
     - Fertilizer
     - FertilizerUse
     - Crop
+    - PossibleNewVariety # this should not be under Crop to avoid it participating in events - it is there to be switched to Crop if there are
     - Yield
-    - DrySeason
-    - WetSeason
+#    - Emission # not currently maintained
+    - Season:
+      - DrySeason
+      - WetSeason
     - Planting
     - Quantity
     - BirdAttack
     - GenericCrop
+    - GenericVariety
     - GenericFertilizer
     - Duration
     - GrainProperty
-    - Area
-    - AreaSize
+    - GenericArea
+    - AreaSizeValue
     - Percentage
-    - Months
+    - Month
   - Event:
     - Assignment
     - BirdAttackEvent
     - CropAssignment
     - FertilizerAssignment
+    - AreaSize
+#    - EmissionAssignment # not currently maintained
     - PlantingArea
     - PlantingEvent
     - PlantingDate
     - YieldAmount
     - YieldIncrease
-    - WetSeasonAssignment
-    - DrySeasonAssignment
+    - SeasonAssignment:
+      - WetSeasonAssignment
+      - DrySeasonAssignment
     - FertilizerQuantity
     - PropertyAssignment
 
@@ -65,4 +72,5 @@ rules:
     vars:
       label: Assignment
       rulepriority: "5+"
+      higherpriority: "6+"
 

@@ -13,7 +13,8 @@ class HabitusProcessor(lexiconNer: Option[LexiconNER], filter: Boolean = true) e
 
   /** Our own mkDocument, which removes some malformed sentences */
   override def mkDocument(text: String, keepText: Boolean = false): Document = {
-    val oldDoc = super.mkDocument(text, keepText)
+    val cleanedupText = text.replace("e.g. ", "e.g., ") // fixme: this needs to be handled elsewhere, but this issue results in bad sentence tokenization
+    val oldDoc = super.mkDocument(cleanedupText, keepText)
     val newDoc = if (filter) removeBadSentences(oldDoc) else oldDoc
     newDoc
   }
@@ -78,6 +79,11 @@ class HabitusProcessor(lexiconNer: Option[LexiconNER], filter: Boolean = true) e
     })
   }
 
+  def capitalizedWordPercentage(sentence: Sentence): Float = {
+    // Counts percentage of words in a sentence that are capitalized
+    sentence.words.count(_.head.isUpper).toFloat / sentence.words.length
+  }
+
   /** Returns true if this is a malformed sentence
     * malformed= either > 150 tokens or
     * more than 50% of tokens are numbers */
@@ -88,18 +94,21 @@ class HabitusProcessor(lexiconNer: Option[LexiconNER], filter: Boolean = true) e
         HabitusProcessor.nonAlphaCountLimit(length) < getNonAlphaCount(sentence) ||
         HabitusProcessor.singleLetterLimit < mostSingleLettersInARow(sentence) ||
         HabitusProcessor.customKernLimit < mostCustomKernsInARow(sentence) ||
-        HabitusProcessor.floatLimit < mostFloatsInARow(sentence)
+        HabitusProcessor.floatLimit < mostFloatsInARow(sentence) ||
+        HabitusProcessor.capitalizedWordLimit < capitalizedWordPercentage(sentence)
+
     // println(s"isBad = $isBad")
     isBad
   }
 }
 
 object HabitusProcessor {
-  val wordCountRange = Range.inclusive(3, 150)
+  val wordCountRange = Range.inclusive(3, 110)
   val nonAlphaLimit = 0.50
   val singleLetterLimit = 15
   val customKernLimit = 15
   val floatLimit = 5
+  val capitalizedWordLimit = 0.50 // allow up to 50% of words in a sentence to be capitalized (trying to eliminate headlines)
 
   def nonAlphaCountLimit(length: Int): Int = {
     // The integer arithmetic used here originally made use of truncation.

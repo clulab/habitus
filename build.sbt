@@ -15,6 +15,7 @@ resolvers += ("Artifactory" at "http://artifactory.cs.arizona.edu:8081/artifacto
 resolvers += "jitpack" at "https://jitpack.io"
 
 libraryDependencies ++= {
+
   val procVer = "8.5.2"
 
   Seq(

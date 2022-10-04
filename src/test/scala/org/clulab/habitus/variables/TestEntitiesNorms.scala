@@ -149,11 +149,11 @@ class TestEntitiesNorms extends Test {
       "sent11",
       "The recommended rate is higher in the dry season (Haefele and Wopereis, 2004), and higher in the Senegal River delta than in the middle valley, where extreme tem- peratures tend to occur and affect potential yield.",
       Seq(
-        "Date" -> Seq(("2004", "2004-XX-XX"))
+        "Date" -> Seq.empty
       )
     ),
     VariableTest(
-      fixedWithNewProcRelease,
+      passingTest,
       "sent12",
       "Seeding dates ranged from 22 August to 26 September in 2011WS, from 29 February to 1 April in the 2012DS, and from 5 to 23 March in the 2013DS.",
       Seq(
@@ -173,7 +173,7 @@ class TestEntitiesNorms extends Test {
       )
     ),
     VariableTest(
-      fixedWithNewProcRelease,
+      passingTest,
       "sent14",
       "timing of basal fertilizer application was on average 26, 33, and 26 days after sowing (DAS) in 2011WS, 2012DS, and 2013DS",
       Seq(
@@ -219,7 +219,7 @@ class TestEntitiesNorms extends Test {
       "sent19",
       "The favourable climate conditions and the adoption of varieties with shorter cropping cycles allow for two rice harvests per year, namel in the dry and rainy seasons (Van Oort et al., 2016).",
       Seq(
-        "Date" -> Seq(("2016", "2016-XX-XX"))
+        "Date" -> Seq.empty
       )
     ),
     VariableTest(
@@ -227,7 +227,7 @@ class TestEntitiesNorms extends Test {
       "sent20",
       "In the SRV, production areas are typically larger in the dry season, which brings fewer problems with pests and birds (Tanaka et al., 2015; USDA-GAIN, 2018).",
       Seq(
-        "Date" -> Seq(("2015", "2015-XX-XX"), ("2018","2018-XX-XX"))
+        "Date" -> Seq.empty
       )
     ),
     VariableTest(
@@ -235,7 +235,7 @@ class TestEntitiesNorms extends Test {
       "sent21",
       "Average yields in SRV theoretically range between 5.0 and 6.0 t ha-1 in the rainy season and between 6.5 and 7.5 t ha-1 in the dry season (SAED, 2019; USDA-GAIN, 2021)",
       Seq(
-        "Date" -> Seq(("2021", "2021-XX-XX"), ("2019", "2019-XX-XX")),
+        "Date" -> Seq.empty,
         "Quantity" -> Seq(("between 6.5 and 7.5 t ha-1", "6.5 -- 7.5 t/ha"), ("between 5.0 and 6.0 t ha-1", "5.0 -- 6.0 t/ha"))
       )
     ),
@@ -286,16 +286,16 @@ class TestEntitiesNorms extends Test {
       )
     ),
     VariableTest(
-      fixedWithNewProcRelease,
+      passingTest,
       "sent27",
       "das days after sowing, Fert fertilizer treatment, with F1: recommended dose (80 kg N ha-1), i.e., 200 kg ha-1 NPK (15.15.15) at sowing + 100 kg ha-1 urea at 20 das + 50 kg ha-1 urea at 50 das. F2: F1/4 (20 kg N ha-1); C/V/P calibration/validation/projection.",
       Seq(
         "Quantity" -> Seq(
-          ("80 kg N ha-1", "80.0 kg n ha-1"),
+          ("80 kg N ha-1", "80.0 kg/ha"),
           ("200 kg ha-1", "200.0 kg/ha"),
           ("+ 100 kg ha-1", "100.0 kg/ha"),
           ("+ 50 kg ha-1", "50.0 kg/ha"),
-          ("20 kg N ha-1", "20.0 kg n ha-1")
+          ("20 kg N ha-1", "20.0 kg/ha")
         )
       )
     ),
@@ -312,7 +312,7 @@ class TestEntitiesNorms extends Test {
       )
     ),
     VariableTest(
-      fixedWithNewProcRelease,
+      passingTest,
       "sent29",
       "Rice grain yield measured at maturity ranged from 2.7 t ha-1 to 7.1 t ha-1 , with an average of 4.8 t ha-1 .",
       Seq(
@@ -323,7 +323,7 @@ class TestEntitiesNorms extends Test {
     ),
     // Following the text extraction analyses.
     VariableTest(
-      fixedWithNewProcRelease,
+      passingTest,
       "Fix2",
       "Diagnosis of the 1999 and 2000 wet seasons In the 1999 and 2000 wet seasons , the potential rice grain yields were between 8.8 t ha-1 and 9.2 t ha-1 ( i.e. about 1 t ha-1 more than in the 1998WS ) whilst the average of the actual yield increased greatly ( Tab .",
       Seq(
@@ -334,19 +334,19 @@ class TestEntitiesNorms extends Test {
       )
     ),
     VariableTest(
-      fixedWithNewProcRelease,
+      passingTest,
       "Fix3",
       "The highest yield ( 9.3 t ha-1 ) is obtained by Brodt et al. ( 2014 ) in California with only 170 kg N ha-1 ; followed by Xu et al. ( 2020 ) and Zhang et al. ( 2021 ) , both with yields > 8 t ha-1 in Hubei Province ( China ) .",
       Seq(
         "Quantity" -> Seq(
           ("9.3 t ha-1", "9.3 t/ha"),
-          ("170 kg N ha-1", "170.0 kg n ha-1"), // fixme: check processors for why the norm is like this
+          ("170 kg N ha-1", "170.0 kg/ha"),
           ("8 t ha-1", "8.0 t/ha")
         )
       )
     ),
     VariableTest(
-      fixedWithNewProcRelease,
+      passingTest,
       "Fix4",
       "Potential yield of all the varieties in the Senegal River delta was estimated at 9 and 10 t/ha in wet and dry seasons , respectively , and potential yield was taken as 8 t/ha for both seasons in the middle valley .",
       Seq(
@@ -358,7 +358,7 @@ class TestEntitiesNorms extends Test {
       )
     ),
     VariableTest(
-      fixedWithNewProcRelease,
+      passingTest,
       "Fix5",
       // FIXME; maybe wrong parsing here and hence getting wrong extraction.
       "Target yields on average were set to 6.4, 7.9, and 7.1 t/ha in 2011WS , 2012DS , and 2013DS , respectively ( Table 1 ) .",
@@ -376,7 +376,7 @@ class TestEntitiesNorms extends Test {
       )
     ),
     VariableTest(
-      fixedWithNewProcRelease,
+      passingTest,
       "Fix6",
       "With RCP2.6 and consideration of CO2 effect , rice yield will increase from 3600 in 2000-2009 to 4500 kg ha-1 in 2090-2099 ( Fig. 4a ) .",
       Seq(

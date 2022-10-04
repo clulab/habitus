@@ -32,9 +32,31 @@ class HabitusActions extends Actions {
       .sortBy(_.tokenInterval)
 
   def cleanupAction(mentions: Seq[Mention]): Seq[Mention] = {
-    val r1 = removeRedundantVariableMentions(keepLongestMentions(mentions))
-    r1
+    // do the entity check: only use entities that occur more than once within the text---doing this to avoid location/fertilizer false pos;
+    // only apply the check to documents of more than pre-defined number of sentences (paragraph length-ish?) - if we run the shell or tests,
+    // there won't be enough text to do the check
+    val afterEntityUniquenessCheck = if (mentions.nonEmpty && mentions.head.document.sentences.length > HabitusActions.paragraphLength) doEntityUniquenessCheck(mentions) else mentions
+    removeRedundantVariableMentions(keepLongestMentions(afterEntityUniquenessCheck))
   }
+
+  def doEntityUniquenessCheck(mentions: Seq[Mention]): Seq[Mention] = {
+    val (entitiesToDoubleCheck, other) = mentions.partition(m =>
+      m.isInstanceOf[TextBoundMention]
+        && (m.label == "Location" || m.label == "Fertilizer"))
+    val doubleCheckedEntities = returnNonUniqueEntities(entitiesToDoubleCheck)
+    doubleCheckedEntities ++ other
+  }
+
+  def returnNonUniqueEntities(mentions: Seq[Mention]): Seq[Mention] = {
+    val groupedByLabel = mentions.groupBy(_.label)
+    groupedByLabel.flatMap(gr => filterUniqTextMentionsOfSameLabel(gr._2)).toSeq
+  }
+
+  def filterUniqTextMentionsOfSameLabel(mentions: Seq[Mention]): Seq[Mention] = {
+    // in this method, all mentions already have the same label
+    mentions.groupBy(_.text).filter(_._2.length > 1).flatMap(_._2).toSeq
+  }
+
   private def isBelief(m: Mention): Boolean = {
     m.labels.contains("Belief")
   }
@@ -51,22 +73,23 @@ class HabitusActions extends Actions {
     }
     keepOneOfSameSpan(uniqueArguments(filteredBeliefs ++ nonBeliefs))
   }
-  def copyWithArgs(orig: Mention, newArgs: Map[String, Seq[Mention]]): Mention = {
+  def copyWithArgs(orig: Mention, newArgs: Map[String, Seq[Mention]], foundBy: String): Mention = {
     val newTokInt = mkTokenInterval(newArgs)
     orig match {
       case tb: TextBoundMention => ???
-      case rm: RelationMention => rm.copy(arguments = newArgs, tokenInterval = newTokInt)
-      case em: EventMention => em.copy(arguments = newArgs, tokenInterval = newTokInt)
+      case rm: RelationMention => rm.copy(arguments = newArgs, tokenInterval = newTokInt, foundBy = foundBy)
+      case em: EventMention => em.copy(arguments = newArgs, tokenInterval = newTokInt, foundBy = foundBy)
       case _ => ???
     }
   }
   def areaVarActionFlow(mentions: Seq[Mention]): Seq[Mention] = {
     // applies within a rule
     // split mentions with mult args into binary mentions
-    val split = splitIfTwoValues(mentions)
+    val split = splitIntoBinary(mentions)
     // filter out the ones where var and val are too far
     limitVarValSpan(split)
   }
+
   def limitVarValSpan(mentions: Seq[Mention]): Seq[Mention] = {
     val toReturn = new ArrayBuffer[Mention]()
     for (m <- mentions) {
@@ -74,7 +97,7 @@ class HabitusActions extends Actions {
       val args = m.arguments.map(_._2.head).toSeq
       val sortedArgs = args.sortBy(_.tokenInterval)
       val distance = sortedArgs.last.start - sortedArgs.head.end
-      if (distance <= 17) {
+      if (distance <= HabitusActions.maxSpan) {
         toReturn.append(m)
       }
     }
@@ -84,22 +107,6 @@ class HabitusActions extends Actions {
   val VALUE = "value"
   val VARIABLE = "variable"
 
-  def splitIfTwoValues(mentions: Seq[Mention]): Seq[Mention] = {
-    // for area rules; if there is an extraction with multiple value args,
-    // split it into binary var-value mentions
-    val (assignmentMentions, other) = mentions.partition(_ matches "Assignment")
-    val toReturn = new ArrayBuffer[Mention]()
-    for (am <- assignmentMentions) {
-      val valueArgs = am.arguments(VALUE)
-      if (valueArgs.length > 1) {
-        for (valueArg <- valueArgs) {
-          val newArgs = Map(VARIABLE -> Seq(am.arguments(VARIABLE).head), VALUE -> Seq(valueArg))
-          toReturn.append(copyWithArgs(am, newArgs))
-        }
-      } else toReturn.append(am)
-    }
-    toReturn ++ other
-  }
   def removeRedundantVariableMentions(mentions: Seq[Mention]): Seq[Mention] = {
     // The action makes sure there is one variable for every value in most assignment events/relations (those that have value args); we exclude property assignments from this because one property can apply to multiple variables (e.g., They planted crop1 and crop2 (short duration))
     // The action applies to mentions extracted with var reader relation/event rules, so we exclude TBMs and include a value argument.
@@ -160,10 +167,10 @@ class HabitusActions extends Actions {
     }
   }
   def yieldAmountActionFlow(mentions: Seq[Mention]): Seq[Mention] = {
-    appropriateMeasurement(splitIntoBinary(mentions).filter(m => allowableTokenDistanceBetweenVarAndValue(m, 16)))
+    appropriateMeasurement(splitIntoBinary(mentions))
   }
   def fertilizerQuantityActionFlow(mentions: Seq[Mention]): Seq[Mention] = {
-    appropriateMeasurement(splitIntoBinary(mentions).filter(m => allowableTokenDistanceBetweenVarAndValue(m, 12)))
+    appropriateMeasurement(splitIntoBinary(mentions))
   }
   def allowableTokenDistanceBetweenVarAndValue(mention: Mention, maxDist: Int): Boolean = {
     val variable = mention.arguments(VARIABLE).head
@@ -183,15 +190,17 @@ class HabitusActions extends Actions {
       m <- targets
       value <- m.arguments(VALUE)
       newArgs = Map(VARIABLE -> m.arguments(VARIABLE), VALUE -> Seq(value))
-    } yield copyWithArgs(m, newArgs)
+    } yield copyWithArgs(m, newArgs, m.foundBy + "++splitIntoBinary")
     splitTargets ++ other
   }
   val labelToAppropriateUnits = Map(
-    "Quantity" -> Set("t/ha", "kg/ha", "kg", "d", "cm", "mg/l", "kg n ha-1"),
-    "AreaSize" -> Set("ha"),
-    "YieldAmount" -> Set("t/ha", "kg/ha", "kg"),
-    "FertilizerQuantity" -> Set("kg/ha", "mg/l", "kg n ha-1")
+    "Quantity" -> Set("t", "t/ha", "kg/ha", "kg", "d", "cm", "mg/l", "kg n ha-1"),
+    "AreaSizeValue" -> Set("ha", "m2"),
+    "YieldAmount" -> Set("t/ha", "kg/ha", "kg", "kg ha1"),
+    "YieldIncrease" -> Set("t/ha", "kg/ha", "kg"),
+    "FertilizerQuantity" -> Set("t", "kg/ha", "mg/l", "kg n ha-1")
   )
+
   def hasLetters(string: String): Boolean = {
     string.exists(ch => ch.isLetter || ch == '/')
   }
@@ -215,7 +224,7 @@ class HabitusActions extends Actions {
     mentions.filter(measurementIsAppropriate)
   }
   def makeEventFromUnitSplitByFertilizer(m: Mention): Mention = {
-    val fertilizer = m.arguments("fertilizer").head
+    val fertilizer = m.arguments("fertilizer").head.asInstanceOf[TextBoundMention].copy(labels = "Fertilizer" +: m.labels.tail)
     val value = m.arguments("number").map(_.text)
     val unit1 = m.arguments("unit1").map(_.text)
     val unit2 = m.arguments("unit2").head.text.replace("-1", "")
@@ -246,6 +255,7 @@ class HabitusActions extends Actions {
     )
     newEvent
   }
+
   def adjustQuantityNorm(mentions: Seq[Mention]): Seq[Mention] = {
     mentions.map { m =>
       // To be addressed later on handling decimal values.
@@ -267,8 +277,39 @@ class HabitusActions extends Actions {
       )
     }
   }
+
   def makeEventFromSplitUnit(mentions: Seq[Mention]): Seq[Mention] = {
     // applies to individual rules to adjust norm
     mentions.map(makeEventFromUnitSplitByFertilizer)
   }
+
+  def varietyToTBM(mentions: Seq[Mention]): Seq[Mention] = {
+    // turns possible crop varieties into Crop mentions if they are assigned to crop variety-related variables, e.g., variety and mutant
+    mentions.flatMap(m =>
+      // get all variety args
+      m.arguments("variety")
+        .map (am =>
+          // make a standalone Crop mention from each variety arg
+          am.asInstanceOf[TextBoundMention]
+            .copy(
+              labels = Seq("Crop", "Entity"),
+              foundBy = m.foundBy + "++varietyToTBM"
+              )
+            )
+          )
+  }
+
+  def copyWithFoundBy(mention: Mention, foundBy: String): Mention = {
+    mention match {
+      case tbm: TextBoundMention => tbm.copy(foundBy = foundBy)
+      case rm: RelationMention => rm.copy(foundBy = foundBy)
+      case em: EventMention => em.copy(foundBy = foundBy)
+      case _ => throw new RuntimeException(s"Unknown mention type ${mention.getClass}")
+    }
+  }
+}
+
+object HabitusActions {
+  val maxSpan = 23 // allowable tokens between var and value (applied with an action to some event mentions)
+  val paragraphLength = 6 // document length (in sentences) after which to start excluding unique entities (e.g., only count <some location> as Location if it occurs more than once in a document); the intent is to exclude false positive entities
 }

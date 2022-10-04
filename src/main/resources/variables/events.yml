@@ -33,6 +33,24 @@
     variable:GenericCrop = dobj
     value:Crop = dobj? /nmod_such_as|nmod_like/
 
+- name: fertilizer-vj-dep
+  priority: ${rulepriority}
+  label: FertilizerAssignment
+  example: "Recommended P2O5 and K2O rates are 46 and 0 kg / ha , respectively ."
+  pattern: |
+    trigger = [lemma = "be"]
+    variable:Fertilizer = nsubj [tag = NNP]
+    value:Quantity = dobj? [tag = CD]
+
+#- name: emmission-vj-dep
+#  priority: ${rulepriority}
+#  label: EmissionAssignment
+#  example: "Due to differences in yields , CH4 emissions per kg of rice are estimated at 2.7 103 kg in CONV , 1.7 103 kg in INT and 1.8 103 kg in the two SAED scenarios ."
+#  pattern: |
+#    trigger = [lemma = /emission/]
+#    variable:Entity = compound [tag = /^NN/]
+#    value:Quantity = nmod_per nmod_of
+
 - name: crop-assignment-verb-2
   priority: ${rulepriority}
   label: CropAssignment
@@ -64,7 +82,7 @@
   type: token
   action: splitIntoBinary
   pattern: |
-    (?<variable> [lemma = /plant|grow/]) (("," | "and")* @value:Crop)+
+    (?<variable> [lemma = /^(plant|grow)/]) (("," | "and")* @value:Crop)+
 
 
 ### Planting date rules
@@ -142,23 +160,23 @@
   pattern: |
     (?<trigger> [lemma=with])? @variable:Planting (("," | "and")* @value:Crop)+ @value:Date?
 
-### Planting Area Events
+### Area Events
 
 - name: area-size-rule1
   priority: ${rulepriority}
-  label: PlantingArea
+  label: AreaSize
   action: areaVarActionFlow
   type: token
   pattern: |
-    @variable:Area ( []+? @value:AreaSize )+ | @variable:Area ( []+? @value:Percentage )+ 
+    @variable:GenericArea  ([]{,17}? @value:AreaSizeValue )+ (?! "of") | @variable:GenericArea ([]*? @value:Percentage )+ (?! "of")
 
 - name: area-size-rule2
   priority: ${rulepriority}
-  label: PlantingArea
+  label: AreaSize
   action: areaVarActionFlow
   type: token
   pattern: |
-    ( @value:AreaSize []+? )+ @variable:Area | ( @value:Percentage []+? )+ @variable:Area 
+    ( @value:AreaSizeValue [!lemma = /population/]+? )+ @variable:GenericArea | ( @value:Percentage [!lemma = /population/]+? )+ @variable:GenericArea
 
 ### Bird attack events
 
@@ -238,19 +256,25 @@
   type: token
   action: yieldAmountActionFlow
   pattern: |
-    (?<![lemma =/^(increase|decrease)$/]) @variable:Yield [!lemma = /^(increase|decrease)$/]{1,15}? @value:Quantity+ ([!lemma = /^(increase|decrease|yield)$/]{,10}? (","|"and")? @value:Quantity)* (?![word="more"])
+    (?<![lemma =/^(increase|decrease)$/][]{,2}) @variable:Yield (?![word="and"]) [!lemma = /^(increase|decrease|gain|emission|application)$/]*? @value:Quantity+ ([!lemma = /^(increase|decrease|yield)$/]*? (",")? @value:Quantity)* (?![word="more"])
+    |
+    @variable:Yield []{,3} [lemma =/^(increase|decrease)$/] "to" @value:Quantity
+  # "and" is there after yield to avoid capturing 40 kg/ha as yield (expected to generalize): reported a quadratic relationship between yield and N rate , where above 40 kg / ha did not substantially improve sorghum yield .
 
 - name: yield-increase-event
   priority: ${rulepriority}
   label: YieldIncrease
   type: token
+  action: yieldAmountActionFlow
   example: "In 2012WS yield increased for about 1.5 t ha-1 after the application of xyz fertilizer. The potential rice grain yields were between 8.8 t ha-1 and 9.2 t ha-1 ( i.e. about 1 t ha-1 more than in the 1998WS ) whilst the average of the actual yield increased greatly"
   pattern: |
-    @variable:Yield []{,10}? [lemma=/^(increase|decrease)$/] []{1,10}? @value:Quantity+
+    @variable:Yield []{,10}? [lemma=/^(increase|decrease|gain)$/] []{,15}? [!word = "to"] @value:Quantity+
     |
-    @variable:Yield []{1,14} @value:Quantity+ [word = "more"]
+    @variable:Yield []{1,15} @value:Quantity+ [word = "more"]
     |
-    (?<= [lemma=/^(increase|decrease)$/]) @variable:Yield []{1,10}? @value:Quantity+
+    (?<= [lemma=/^(increase|decrease)$/]) []{,2} @variable:Yield []{,10}? [!word = "to"] @value:Quantity+ []{1,4}? @value:Quantity+
+    |
+    (?<= [lemma=/^(increase|decrease)$/]) []{,2} @variable:Yield []{,10}? [!word = "to"] @value:Quantity+
 
 # this one is pretty specific and is there to capture an unfortunate parse
 - name: planting-yield-amount
@@ -269,14 +293,14 @@
   label: DrySeasonAssignment
   type: token
   pattern: |
-    @variable:DrySeason ([]*? @value:Months)
+    @variable:DrySeason ([]*? @value:Month)
 
 - name: ${label}-wet-season-event
   priority: ${rulepriority}
   label: WetSeasonAssignment
   type: token
   pattern: |
-    @variable:WetSeason []*? @value:Months
+    @variable:WetSeason []*? @value:Month
 
 - name: ${label}-fertilizer-event
   priority: ${rulepriority}
@@ -284,21 +308,23 @@
   action: fertilizerQuantityActionFlow
   type: token
   pattern: |
-    @variable:Fertilizer []+? @value:Quantity+ ([]*? (","|"and")? @value:Quantity)*
+    @variable:Fertilizer []+? @value:Quantity+ ([]*? (","|"and")? @value:Quantity)* (?!"of")
+    |
+    @value:Quantity "of" @variable:Fertilizer
 
 - name: ${label}-crop-property-event
   priority: ${rulepriority}
   label: PropertyAssignment
   type: token
   pattern: |
-    @variable:Crop []{,7}  @value:Duration
+    @variable:Crop []{,9}  @value:Duration
 
 - name: ${label}-grain-property-event
   priority: ${rulepriority}
   label: PropertyAssignment
   type: token
   pattern: |
-    @variable:Crop  []{,7} @value:GrainProperty
+    @variable:Crop  []{,9} @value:GrainProperty
 
 - name: measurement-rule-mg
   priority: ${rulepriority}
@@ -308,3 +334,5 @@
   example: "P and K concentrations in irrigation and floodwater were estimated at 0.1 mg P l-1 and 3.2 mg K l-1"
   pattern: |
     (?<number>[entity='B-MEASUREMENT']) (?<unit1>[entity = 'I-MEASUREMENT']*)  (?<fertilizer> [entity = 'B-FERTILIZER'])  (?<unit2>[word=/\w\-1/])
+    |
+    (?<number>[entity='B-MEASUREMENT' & tag = "CD"]) (?<unit1>[entity = 'I-MEASUREMENT'])  (?<fertilizer> [tag = /^NN/] )  (?<unit2>[word=/\w\-1/])

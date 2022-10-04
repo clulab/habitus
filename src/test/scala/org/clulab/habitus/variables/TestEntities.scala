@@ -33,28 +33,18 @@ class TestEntities extends Test {
       shouldable should s"filter by correct label(s) and value size of $name correctly" in {
         if (index == -1)
           println("Put a breakpoint here to observe a particular test.")
-
         // get all mentions from text
         val mentions = getMentions(text)
-
         // iterate over label, value pairs
         for ((label, values) <- desired){
-
           // filter mentions by label
           val targetMentions = mentions.filter(_.label == label)
-
           //check size of filtered mentions with the values
           targetMentions.length should equal(values.length)
-
-
           val targetMentionTexts = targetMentions.map(_.text) // text of similar kinds but for norms(
-          //          println(targetMentionTexts)
-
           //check if the required texts were extracted
           values.foreach(text => targetMentionTexts should contain(text))
-
         }
-
       }
     }
   }
@@ -240,7 +230,7 @@ class TestEntities extends Test {
       )
     ),
     VariableTest(
-      fixedWithNewProcRelease,
+      passingTest,
       "sent20",
       "Popular varieties in the wet season were Sahel 202 (65% of farmers) and Sahel 201 (30%), while 60% and 92% grew Sahel 108 in 2012DS and 2013DS, respectively.",
       Seq(
@@ -255,7 +245,7 @@ class TestEntities extends Test {
       "timing of basal fertilizer application was on average 26, 33, and 26 days after sowing (DAS) in 2011WS, 2012DS, and 2013DS",
       Seq(
         "FertilizerUse" -> Seq("fertilizer application"),
-        "Planting" -> Seq("sowing"),
+        "Planting" -> Seq.empty, // note: excluding sowing here because it is there to indicate timing of fertilizer application, not to signal a planting event
         "GenericFertilizer" -> Seq("fertilizer")
       )
     ),
@@ -274,7 +264,7 @@ class TestEntities extends Test {
       Seq(
         "Planting" -> Seq("sowing", "sowing"),
         "Location" -> Seq("Senegal River"),
-        "DrySeason" -> Seq("dry season")
+        "DrySeason" -> Seq("dry season", "DS")
       )
     ),
     VariableTest(
@@ -328,7 +318,7 @@ class TestEntities extends Test {
       "Average DS T0 yield was relatively low, i.e. 4.4 t ha-1 (ranging from 2.5 to 6.0 t ha-1)",
       Seq(
         "Yield" -> Seq("yield"),
-        "AreaSize" -> Seq.empty
+        "AreaSizeValue" -> Seq.empty
       )
     ),
     VariableTest(
@@ -483,10 +473,51 @@ class TestEntities extends Test {
     VariableTest(
       passingTest,
       "Fix9",
-      // FIXME; would explain.
       "The 21 cultivars used in the experiment were either hybrids, japonica, or indica type and came from various breeding centers ( Table 2 ) .",
       Seq(
         "Crop" -> Seq("japonica", "indica")
+      )
+    ),
+    VariableTest(
+      passingTest,
+      "sent45",
+      "...but hardly practised in the Senegal River valley ( Le Gal and Papy , 1998 ), i.e. by 13 % in 2027 ( OECD-FAO , 2018 ; USDA , 2017 ) .",
+      Seq(
+        "Date" -> Seq("2027"),
+        "Avoid" -> Seq("1998", "2018", "2017", "( OECD-FAO , 2018 ;", "(", ")", "(", ")", "and")
+      )
+    ),
+    VariableTest(
+      passingTest,
+      "sent46",
+      "As a result , groundnut planting is frequently delayed",
+      Seq(
+        "Fertilizer" -> Seq.empty
+      )
+    ),
+    VariableTest(
+      passingTest,
+      "sent46a",
+      " less than 10 % ; between 10 and 30 % ; and more than J.C. Poussin et al. / Europ.",
+      Seq(
+        "Location" -> Seq.empty
+      )
+    ),
+    VariableTest(
+      passingTest,
+      "sent47",
+      "Vaghasia et al. ( 2010 ) established that the stress at flowering stage ( 25-47 days after sowing ) and pod development stage ( 50-72 days after sowing ) gave 18.45 % and 30.63 % reduction in pod yield than no water stress treatment , respectively .",
+      Seq(
+        "Crop" -> Seq.empty // this mainly checks that 25-47 is not found as a crop variety
+      )
+    ),
+    VariableTest(
+      passingTest,
+      "sent48",
+      "Mutants such as New 22 and New 23",
+      Seq(
+        "PossibleNewVariety" -> Seq("New 22", "New 23"),
+        "Crop" -> Seq("New 22", "New 23")
       )
     )
   )

@@ -589,6 +589,15 @@ class TestVariableReader extends Test {
       )
     ),
     VariableTest(
+      failingTest,
+      "sent21_12_3", "In all scenarios , seeds of the rice variety Sahel 108 are sown , a shortcycle variety ( around 125 days ) especially developed by the International Rice Research Institute to succeed under extreme conditions in the African Sahel .",
+      "PropertyAssignment",
+      Seq(
+        ("Sahel 108", Seq(("shortcycle", ""))),
+        ("Sahel 108", Seq(("125 days", "125.0 d")))
+      )
+    ),
+    VariableTest(
       passingTest,
       "fix1", "Rice cultivation and management are autosufficient in terms of seed supply , irrigation and rice grain milling .",
       "CropAssignment",
@@ -607,12 +616,11 @@ class TestVariableReader extends Test {
       Seq.empty // todo: add a DateRange mention type to capture 2000 wet season with a norm 2000-XX-XX -- 2000-XX-XX
     ),
     VariableTest(
-      fixedWithNewProcRelease,
+      passingTest,
       "fix3_1", "Diagnosis of the 1999 and 2000 wet seasons In the 1999 and 2000 wet seasons , the potential rice grain yields were between 8.8 t ha-1 and 9.2 t ha-1 ( i.e. about 1 t ha-1 more than in the 1998WS ) whilst the average of the actual yield increased greatly ( Tab .",
       "YieldAmount",
       Seq(
-        ("yields", Seq(("between 8.8 t ha-1 and 9.2 t ha-1", "8.8 -- 9.2 t/ha"))),
-        ("yields", Seq(("1 t ha-1", "1.0 t/ha")))
+        ("yields", Seq(("between 8.8 t ha-1 and 9.2 t ha-1", "8.8 -- 9.2 t/ha")))
       )
     ),
     VariableTest(
@@ -657,7 +665,7 @@ class TestVariableReader extends Test {
       )
     ),
     VariableTest(
-      fixedWithNewProcRelease,
+      passingTest,
       "fix9", "Mean irrigation , flood and rainwater mineral N concentrations were 1.3, 1.7 and 3.6 mg l-1 , respectively .",
       "FertilizerQuantity",
       Seq(
@@ -667,7 +675,7 @@ class TestVariableReader extends Test {
       )
     ),
     VariableTest(
-      fixedWithNewProcRelease,
+      passingTest,
       "fix10", "Grain yield In the first three experimental seasons , the only significant yield effect was in response to fertilizer application ( P < 0.001 for seasons 1-3 ) , which increased yields by an average of 1.7 ( 2007 wet season ) , 3.4 ( 2008 dry season ) and 2.6 t ha-1 ( 2008 wet season ) across management systems ( Fig. 2 ) .",
       "FertilizerQuantity",
       Seq.empty
@@ -714,7 +722,7 @@ class TestVariableReader extends Test {
       "fix16", "Rice yields increased significantly as a result of an extra late N application on top of two N-dressings with a total of about 120 kg N ha-1 in farmer fields.",
       "FertilizerQuantity",
       Seq(
-        ("N", Seq(("120 kg N ha-1", "120.0 kg n ha-1")))
+        ("N", Seq(("120 kg N ha-1", "120.0 kg/ha")))
       )
     ),
     VariableTest(
@@ -723,6 +731,19 @@ class TestVariableReader extends Test {
       "YieldIncrease",
       Seq(
         ("yields", Seq(("1 t / ha", "1.0 t/ha")))
+      )
+    ),
+    VariableTest(
+      passingTest,
+      "fix18", "In the 1999 and 2000WS , farmers ordered 3 tonnes of diammonium-phosphate ( 18 % N , 20 % P ) and 5.5 tonnes of urea ( 46 % N ) with planned application rates of 100 kg diammonium-phosphate ha-1 and 200 kg urea ha-1 , i.e. 20 kg P ha-1 and 110 kg N ha-1 .",
+      "FertilizerQuantity",
+      Seq(
+        ("diammonium-phosphate", Seq(("3 tonnes", "3.0 t"))),
+        ("urea", Seq(("5.5 tonnes", "5.5 t"))),
+        ("diammonium-phosphate", Seq(("100 kg diammonium-phosphate ha-1", "100.0 kg/ha"))),
+        ("urea", Seq(("200 kg urea ha-1", "200.0 kg/ha"))),
+        ("P", Seq(("20 kg P ha-1", "20.0 kg/ha"))),
+        ("N", Seq(("110 kg N ha-1", "110.0 kg/ha")))
       )
     )
   )

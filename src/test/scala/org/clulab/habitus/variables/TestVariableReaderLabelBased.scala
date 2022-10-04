@@ -218,7 +218,7 @@ class TestVariableReaderLabelBased extends Test {
       )
     ),
     VariableTest(
-      fixedWithNewProcRelease,
+      passingTest,
       "sent15", "Seeding dates ranged from 22 August to 26 September in 2011WS, from 29 February to 1 April in the 2012DS, and from 5 to 23 March in the 2013DS",
       "PlantingDate",
       Seq(
@@ -357,22 +357,27 @@ class TestVariableReaderLabelBased extends Test {
     VariableTest(
       passingTest,
       "sent21_11", "28,223 ha vs 35,065 ha were used as sown areas.",
-      "PlantingArea",
-      Seq(("Area", Seq(("28,223 ha", "28223.0 ha"))))
+      "AreaSize",
+      Seq(("GenericArea", Seq(("28,223 ha", "28223.0 ha"))))
       //note: currently not extracting values after vs.
     ),
     VariableTest(
       passingTest,
       "sent21_12", "The areas sown for this 2021/2022 wintering campaign are 28,223 ha vs 35,065 ha in wintering.",
-      "PlantingArea",
-      Seq(("Area", Seq(("28,223 ha", "28223.0 ha"))))
+      "AreaSize",
+      Seq(("GenericArea", Seq(("28,223 ha", "28223.0 ha"))))
       //note: currently not extracting values after vs.
     ),
     VariableTest(
       passingTest,
       "sent21_13", "Harvests have started in some production areas of the valley, to date an area estimated at 843 ha is already harvested in  the Delta, 199 ha in Matam, 31 ha in Bakel, and 23 ha in Dagana.",
-      "PlantingArea",
-      Seq(("Area", Seq(("843 ha", "843.0 ha"), ("199 ha", "199.0 ha"), ("31 ha", "31.0 ha"), ("23 ha", "23.0 ha"))))
+      "AreaSize",
+      Seq(
+        ("GenericArea", Seq(("843 ha", "843.0 ha"))),
+        ("GenericArea", Seq(("199 ha", "199.0 ha"))),
+        ("GenericArea", Seq(("31 ha", "31.0 ha"))),
+        ("GenericArea", Seq(("23 ha", "23.0 ha")))
+        )
     ),
     VariableTest(
       passingTest,
@@ -384,7 +389,7 @@ class TestVariableReaderLabelBased extends Test {
       )
     ),
     VariableTest(
-      fixedWithNewProcRelease,
+      passingTest,
       "sent32", "Potential yield of all the varieties in the Senegal River delta was estimated at 9 and 10 t/ha in wet and dry seasons , respectively , and potential yield was taken as 8 t/ha for both seasons in the middle valley .",
       "YieldAmount",
       Seq(
@@ -403,7 +408,7 @@ class TestVariableReaderLabelBased extends Test {
       )
     ),
     VariableTest(
-      fixedWithNewProcRelease,
+      passingTest,
       "fix5-event", "Target yields on average were set to 6.4, 7.9 and 7.1 t/ha in 2011WS , 2012DS , and 2013DS , respectively ( Table 1 ) .",
       "YieldAmount",
       Seq(
@@ -417,8 +422,7 @@ class TestVariableReaderLabelBased extends Test {
       "sent34", "the potential rice grain yields were between 8.8 t ha-1 and 9.2 t ha-1 ( i.e. about 1 t ha-1 more than in the 1998WS ) whilst the average of the actual yield increased greatly",
       "YieldAmount",
       Seq(
-        ("Yield", Seq(("8.8 t ha-1", "8.8 t/ha"))),
-        ("Yield", Seq(("9.2 t ha-1", "9.2 t/ha"))),
+        ("Yield", Seq(("between 8.8 t ha-1 and 9.2 t ha-1", "8.8 -- 9.2 t/ha")))
       )
     ),
     VariableTest(
@@ -443,6 +447,42 @@ class TestVariableReaderLabelBased extends Test {
       "YieldAmount",
       Seq.empty
     ),
+    VariableTest(
+      unreliableTest,
+      "sent38", "Yield gain due to the third N application was relatively small , i.e. about 0.4 t ha-1",
+      "YieldIncrease",
+      Seq(
+        ("Yield", Seq(("0.4 t ha-1", "0.4 t/ha")))
+      )
+    ),
+    VariableTest(
+      passingTest,
+      "sent39", "the increase in irrigation frequency alone could not explain the increase in rice yield with the Jaya cultivar ( 1.7 t ha-1 in 1999 and 2.7 t ha-1 in 2000 ) .",
+      "YieldIncrease",
+      Seq(
+        ("Yield", Seq(("1.7 t ha-1", "1.7 t/ha"))),
+        ("Yield", Seq(("2.7 t ha-1", "2.7 t/ha")))
+      )
+    ),
+    VariableTest(
+      passingTest,
+      "sent40", "Hative de Sefa and Fleur 11 performed well in GLZ , where they yielded 2.4 and 2.1 t ha-1 , respectively .",
+      "YieldAmount",
+      Seq(
+        ("Yield", Seq(("2.4", "2.4 t/ha"))),
+        ("Yield", Seq(("2.1 t ha-1", "2.1 t/ha")))
+      )
+    ),
+    VariableTest(
+      passingTest,
+      "sent41", "Hative de Sefa gave moderate yield of 3.6 and 2.0 t ha-1 in the Delta and MVZ , respectively , with however the best response in unfavourable zone ( 2.4 t ha-1 ).",
+      "YieldAmount",
+      Seq(
+        ("Yield", Seq(("3.6", "3.6 t/ha"))),
+        ("Yield", Seq(("2.0 t ha-1", "2.0 t/ha"))),
+        ("Yield", Seq(("2.4 t ha-1", "2.4 t/ha")))
+      )
+    )
   )
 
   variableTests.zipWithIndex.foreach { case (variableTest, index) => variableTest.test(index) }

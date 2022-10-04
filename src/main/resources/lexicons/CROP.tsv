@@ -115,6 +115,7 @@ cauliflower
 cabbage
 lettuce
 groundnut
+groundnuts
 spring onion
 plum
 celery
@@ -182,6 +183,25 @@ aiwu
 i kong pao
 japonica
 indica
+// added from peanut papers using new variety rules:
+Fu 22
+Huayu 22
+ICGV 91278
+DH 86
+TAG 24
+Fu 22
+SunOleic 95R
+GH 119-20
+Fleur 11
+Virginia
+La Fleur 11
+Hative de Sefa
+78-936
+73-33
+78-936
+55-437
+69-101
+GC8-35
 
 // The following are varieties of rice:
 
@@ -1695,8 +1715,3 @@ Belami
 Alizé
 Blanc de Soumaran
 Violet de Galmi
-
-
-
-
-

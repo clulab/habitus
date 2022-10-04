@@ -59,7 +59,8 @@ class VariableProcessor(val processor: CluProcessor,
   }
 
   def filterNegativeValues(mentions: Seq[Mention]): Seq[Mention] = {
-    mentions.filterNot(_.arguments("value").head.norms.head.head.startsWith("-"))
+    val (withVals, other) = mentions.partition(_.arguments.contains("value"))
+    withVals.filterNot(_.arguments("value").head.norms.head.head.startsWith("-")) ++ other
   }
 }
 
@@ -71,7 +72,9 @@ object VariableProcessor {
 
   // Custom NER for variable reading
   def newLexiconNer(): LexiconNER = {
+    // note: if adding a new lexicon, add another Bool value in the sequence that is an argument to LexiconNER a few lines down in this method
     val kbs = Seq(
+      "lexicons/NONENTITY.tsv",
       "lexicons/FERTILIZER.tsv",
       "lexicons/CROP.tsv"
     )
@@ -79,6 +82,7 @@ object VariableProcessor {
     val lexiconNer = LexiconNER(kbs,
       Seq(
         true, // case insensitive match for fertilizers
+        true,
         true
       ),
       if (isLocal) Some(resourceDir) else None
