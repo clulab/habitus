@@ -82,8 +82,10 @@ class DefaultContextExtractor extends ContextExtractor {
         }
         else {
           // make a map of arg labels and texts for automatic context field assignment in cases where context is part of the mention itself
-          val menArgLabels = m.arguments.values.flatten
-              .map(men => men.label -> men.text).toMap
+          val arguments = m.arguments.values.flatten.toSeq
+          val labels = arguments.map(_.label)
+          require(labels.length == labels.distinct.length, "Labels should be distinct in order to use them in keys of a  map.")
+          val menArgLabels = arguments.map(men => men.label -> men.text).toMap
           val location   = getIrrespectiveContext(m, "Location",   thisSentLocs,   None)
           val date       = getIrrespectiveContext(m, "Date",       thisSentDates,  Some(menArgLabels))
           // with crops and fertilizer (and maybe later other types of context), if a crop or fertilizer is one of the arguments,
