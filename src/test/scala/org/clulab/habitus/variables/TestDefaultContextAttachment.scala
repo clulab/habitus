@@ -10,7 +10,7 @@ class TestDefaultContextAttachment extends Test {
 
   val NA = "N/A"
 
-  case class Desired(mentionText: String, location: String = NA, date: String = NA, process: String = NA, crop: String = NA, fertilizer: String = NA, comparative: String = NA, season: String = NA)
+  case class Desired(mentionText: String, location: String = NA, country: String = NA, date: String = NA, process: String = NA, crop: String = NA, fertilizer: String = NA, comparative: String = NA, season: String = NA)
 
   case class DefaultContextAttachmentTest(
                            shouldable: Shouldable,

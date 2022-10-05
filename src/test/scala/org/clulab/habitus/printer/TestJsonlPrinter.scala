@@ -12,7 +12,7 @@ class TestJsonlPrinter extends Test {
     new TempFile().autoClose { tempFile =>
       new JsonlPrinter(tempFile.file).autoClose { printer =>
         val mentionInfo = new MentionInfo("This is the text of the sentence before the current one. This is the text of the sentence. This is the text of the sentence after the current one.", "This is the text of the sentence.", "It came from a file.", "The mention has this label.", "This is mention text")
-        val contextInfo = DefaultContext("location", "date", "process", "crop", "fertilizer", "season", 0)
+        val contextInfo = DefaultContext("location", "country", "date", "process", "crop", "fertilizer", "season", 0)
         val argumentInfos = Seq(
           ArgumentInfo("name", "text", "norm")
         )
@@ -27,6 +27,7 @@ class TestJsonlPrinter extends Test {
             """"mentionText":"This is mention text",""" +
             """"context":{""" +
               """"location":"location",""" +
+              """"country":"country",""" +
               """"date":"date",""" +
               """"process":"process",""" +
               """"crop":"crop",""" +
@@ -50,7 +51,7 @@ class TestJsonlPrinter extends Test {
     new TempFile().autoClose { tempFile =>
       new JsonlPrinter(tempFile.file).autoClose { printer =>
         val mentionInfo = new MentionInfo("This is the text of the sentence before the current one. This is the text of the sentence. This is the text of the sentence after the current one.", "This is the text of the sentence.", "It came from a file.", "The mention has this label.", "This is mention text")
-        val contextInfo = DefaultContext("location", "date", "process", "crop", "fertilizer", "season", 0)
+        val contextInfo = DefaultContext("location", "country", "date", "process", "crop", "fertilizer", "season", 0)
         val argumentInfos = Seq(
           ArgumentInfo("name1", "text1", "norm1"),
           ArgumentInfo("name2", "text2", "norm2")
@@ -66,6 +67,7 @@ class TestJsonlPrinter extends Test {
             """"mentionText":"This is mention text",""" +
             """"context":{""" +
               """"location":"location",""" +
+            """"country":"country",""" +
               """"date":"date",""" +
               """"process":"process",""" +
               """"crop":"crop",""" +
@@ -93,7 +95,7 @@ class TestJsonlPrinter extends Test {
     new TempFile().autoClose { tempFile =>
       new JsonlPrinter(tempFile.file).autoClose { printer =>
         val mentionInfo = new MentionInfo("This is the text of the sentence before the current one. This is the text of the sentence. This is the text of the sentence after the current one.", "This is the text of the sentence.", "It came from a file.", "The mention has this label.", "This is mention text")
-        val contextInfo = DefaultContext("location", "date", "process", "crop", "fertilizer", "season", 0)
+        val contextInfo = DefaultContext("location", "country", "date", "process", "crop", "fertilizer", "season", 0)
         val argumentInfos1 = Seq(
           ArgumentInfo("name1", "text1", "norm1")
         )
@@ -112,6 +114,7 @@ class TestJsonlPrinter extends Test {
             """"mentionText":"This is mention text",""" +
             """"context":{""" +
               """"location":"location",""" +
+              """"country":"country",""" +
               """"date":"date",""" +
               """"process":"process",""" +
               """"crop":"crop",""" +
@@ -134,6 +137,7 @@ class TestJsonlPrinter extends Test {
             """"mentionText":"This is mention text",""" +
             """"context":{""" +
               """"location":"location",""" +
+              """"country":"country",""" +
               """"date":"date",""" +
               """"process":"process",""" +
               """"crop":"crop",""" +

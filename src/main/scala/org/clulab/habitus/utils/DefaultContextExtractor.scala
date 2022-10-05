@@ -1,9 +1,15 @@
 package org.clulab.habitus.utils
 
+import ai.lum.common.ConfigFactory
+import ai.lum.common.ConfigUtils._
+import com.typesafe.config.Config
 import org.clulab.odin.{Mention, TextBoundMention}
 import org.clulab.processors.Document
+import org.clulab.utils.FileUtils
 
+import scala.collection.mutable
 import scala.collection.mutable.ArrayBuffer
+import scala.io.Source
 
 class DefaultContextExtractor extends ContextExtractor {
 
@@ -61,8 +67,11 @@ class DefaultContextExtractor extends ContextExtractor {
           // if number of given context type = number of mentions in the sentence of the same label,
           // then do pairwise context The groundnut and the Fleur 11 gave higher yield in DELTA with 4.5 and 4.2 t ha-1 , respectively ( Table 4 ) .
           // else do regular context
+          val locationContext = if (contextPairedWithMention(m, thisSentLocs, thisSentMentions)) doPairwiseContextMatching(m, thisSentLocs, thisSentMentions) else getContext(m, "Location", thisSentLocs, mentions)
+          val countryContext = DefaultContextExtractor.regionMap.getOrElse(locationContext, "N/A")// todo: lookup location in region-country map
           DefaultContext(
-            if (contextPairedWithMention(m, thisSentLocs, thisSentMentions)) doPairwiseContextMatching(m, thisSentLocs, thisSentMentions) else getContext(m, "Location", thisSentLocs, mentions),
+            locationContext,
+            countryContext,
             if (contextPairedWithMention(m, thisSentDates, thisSentMentions)) doPairwiseContextMatching(m, thisSentDates, thisSentMentions) else getContext(m, "Date", thisSentDates, mentions),
             getProcess(m),
             // with crops and fertilizer (and maybe later other types of context), if a crop or fertilizer is one of the arguments,
@@ -72,17 +81,22 @@ class DefaultContextExtractor extends ContextExtractor {
             if (contextPairedWithMention(m, thisSentSeason, thisSentMentions)) doPairwiseContextMatching(m, thisSentSeason, thisSentMentions) else getContext(m, "Season", thisSentSeason, mentions),
             getComparative(m)
           )
-        } else DefaultContext(
-          getContext(m, "Location", thisSentLocs, mentions),
-          if (menArgLabels.exists(_._1 contains "Date")) menArgLabels.filter(_._1 contains "Date").head._2 else  getContext(m, "Date", thisSentDates, mentions),
-          getProcess(m),
-          // with crops and fertilizer (and maybe later other types of context), if a crop or fertilizer is one of the arguments,
-          // ...just pick those to fill the context fields
-          if (menArgLabels.contains("Crop")) menArgLabels("Crop") else getContext(m, "Crop", thisSentCrops, mentions),
-          if (menArgLabels.contains("Fertilizer")) menArgLabels("Fertilizer") else getContext(m, "Fertilizer", thisSentFerts, mentions),
-          getContext(m, "Season", thisSentSeason, mentions),
-          getComparative(m)
-        )
+        } else {
+          val locationContext = getContext(m, "Location", thisSentLocs, mentions)
+          val countryContext = DefaultContextExtractor.regionMap.getOrElse(locationContext, "N/A")// todo: lookup location in region-country map
+          DefaultContext(
+            locationContext,
+            countryContext,
+            if (menArgLabels.exists(_._1 contains "Date")) menArgLabels.filter(_._1 contains "Date").head._2 else  getContext(m, "Date", thisSentDates, mentions),
+            getProcess(m),
+            // with crops and fertilizer (and maybe later other types of context), if a crop or fertilizer is one of the arguments,
+            // ...just pick those to fill the context fields
+            if (menArgLabels.contains("Crop")) menArgLabels("Crop") else getContext(m, "Crop", thisSentCrops, mentions),
+            if (menArgLabels.contains("Fertilizer")) menArgLabels("Fertilizer") else getContext(m, "Fertilizer", thisSentFerts, mentions),
+            getContext(m, "Season", thisSentSeason, mentions),
+            getComparative(m)
+          )
+        }
 
         // store context as a mention attachment
         val withAtt = m.withAttachment(context)
@@ -90,5 +104,22 @@ class DefaultContextExtractor extends ContextExtractor {
       }
     }
     toReturn.distinct
+  }
+}
+
+object DefaultContextExtractor {
+
+  val config = ConfigFactory.load()
+  val localConfig: Config = config[Config]("VarReader")
+  val inputDir: String = localConfig[String]("regionsLexicon")
+  val files = FileUtils.findFiles(inputDir, ".tsv")
+  val regionMap = mutable.Map[String, String]()
+  files.foreach { f =>
+    val source = Source.fromFile(f)
+    for (line <- source.getLines()) {
+      val split = line.trim.split("\t").tail
+      regionMap += (split.head -> split.last)
+
+    }
   }
 }
