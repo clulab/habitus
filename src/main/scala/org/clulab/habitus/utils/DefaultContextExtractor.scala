@@ -68,7 +68,7 @@ class DefaultContextExtractor extends ContextExtractor {
           // then do pairwise context The groundnut and the Fleur 11 gave higher yield in DELTA with 4.5 and 4.2 t ha-1 , respectively ( Table 4 ) .
           // else do regular context
           val locationContext = if (contextPairedWithMention(m, thisSentLocs, thisSentMentions)) doPairwiseContextMatching(m, thisSentLocs, thisSentMentions) else getContext(m, "Location", thisSentLocs, mentions)
-          val countryContext = DefaultContextExtractor.regionMap.getOrElse(locationContext, "N/A")// todo: lookup location in region-country map
+          val countryContext = DefaultContextExtractor.regionMap.getOrElse(locationContext, "N/A")
           DefaultContext(
             locationContext,
             countryContext,
@@ -83,7 +83,7 @@ class DefaultContextExtractor extends ContextExtractor {
           )
         } else {
           val locationContext = getContext(m, "Location", thisSentLocs, mentions)
-          val countryContext = DefaultContextExtractor.regionMap.getOrElse(locationContext, "N/A")// todo: lookup location in region-country map
+          val countryContext = DefaultContextExtractor.regionMap.getOrElse(locationContext, "N/A")
           DefaultContext(
             locationContext,
             countryContext,
