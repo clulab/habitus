@@ -65,7 +65,7 @@ class DefaultContextExtractor extends ContextExtractor {
       val sentLemmas = s.lemmas.getOrElse(Array.empty)
       val thisSentMentions = mentionsBySentence(i).distinct
       val (thisSentTBMs, thisSentEvents) = thisSentMentions.partition(_.isInstanceOf[TextBoundMention])
-      val thisSentDates = thisSentTBMs.filter(m => m.label == "Date" || m.label == "DateRange")
+      val thisSentDates = thisSentTBMs.filter(m => m.label == "Date")
       val thisSentLocs = thisSentTBMs.filter(_.label == "Location")
       val thisSentCrops = thisSentTBMs.filter(_.label == "Crop")
       val thisSentFerts = thisSentTBMs.filter(_.label == "Fertilizer")

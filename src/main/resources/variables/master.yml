@@ -11,8 +11,7 @@ taxonomy:
   - Entity:
     - Variable
     - Value
-    - Date:
-      -  DateRange
+    - Date
     - Location
     - Fertilizer
     - FertilizerUse
