@@ -86,8 +86,12 @@ class DefaultContextExtractor extends ContextExtractor {
           val labels = arguments.map(_.label)
           require(labels.length == labels.distinct.length, "Labels should be distinct in order to use them in keys of a  map.")
           val menArgLabels = arguments.map(men => men.label -> men.text).toMap
+          val useDateRange = menArgLabels
+              .find { case (key, _) => key.contains("Date") }
+              .exists { case (key, _) => key == "DateRange" }
+          val dateKey = if (useDateRange) "DateRange" else "Date"
           val location   = getIrrespectiveContext(m, "Location",   thisSentLocs,   None)
-          val date       = getIrrespectiveContext(m, "Date",       thisSentDates,  Some(menArgLabels))
+          val date       = getIrrespectiveContext(m, dateKey,      thisSentDates,  Some(menArgLabels))
           // with crops and fertilizer (and maybe later other types of context), if a crop or fertilizer is one of the arguments,
           // ...just pick those to fill the context fields
           val crop       = getIrrespectiveContext(m, "Crop",       thisSentCrops,  Some(menArgLabels))
