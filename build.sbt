@@ -16,7 +16,7 @@ resolvers += "jitpack" at "https://jitpack.io"
 
 libraryDependencies ++= {
 
-  val procVer = "8.5.2"
+  val procVer = "8.5.2.1-SNAPSHOT"
 
   Seq(
     "ai.lum"        %% "odinson-core"        % "0.4.0",
