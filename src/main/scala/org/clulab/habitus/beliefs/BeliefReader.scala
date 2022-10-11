@@ -15,8 +15,11 @@ object BeliefReader {
 //    val outputDir = "/home/alexeeva/Desktop/habitus_related/data/Rice_growing_in_Senegal_River_Valley/output"//props("out")
 //    val inputDir = "/home/alexeeva/Desktop/habitus_related/data/interviews"
 //    val outputDir = "/home/alexeeva/Desktop/habitus_related/data/interviews/output"
-    val inputDir = "/home/alexeeva/Desktop/habitus_related/data/bangladesh-vs-5others-processed-by-ik/txt"
-    val outputDir = "/home/alexeeva/Desktop/habitus_related/data/bangladesh-vs-5others-processed-by-ik/output"
+//    val inputDir = "/home/alexeeva/Desktop/habitus_related/data/bangladesh-vs-5others-processed-by-ik/txt"
+//    val outputDir = "/home/alexeeva/Desktop/habitus_related/data/bangladesh-vs-5others-processed-by-ik/output"
+
+    val inputDir = "/home/alexeeva/Repos/habitus-utils/end_to_end_google_api_scrapper/qatar-social-norms/plain_text"
+    val outputDir = "/home/alexeeva/Repos/habitus-utils/end_to_end_google_api_scrapper/qatar-social-norms/belief-mentions"
 
     val threads = 1 //props.get("threads").map(_.toInt).getOrElse(1)
 
