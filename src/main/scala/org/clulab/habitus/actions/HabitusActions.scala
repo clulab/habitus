@@ -194,11 +194,12 @@ class HabitusActions extends Actions {
     splitTargets ++ other
   }
   val labelToAppropriateUnits = Map(
-    "Quantity" -> Set("t", "t/ha", "kg/ha", "kg", "d", "cm", "mg/l", "kg n ha-1"),
-    "AreaSizeValue" -> Set("ha", "m2"),
-    "YieldAmount" -> Set("t/ha", "kg/ha", "kg", "kg ha1"),
-    "YieldIncrease" -> Set("t/ha", "kg/ha", "kg"),
-    "FertilizerQuantity" -> Set("t", "kg/ha", "mg/l", "kg n ha-1")
+    // These are alphabetized to facilitate sanity checking.
+    "AreaSizeValue"      -> Set(           "ha",                                       "m2"                     ),
+    "FertilizerQuantity" -> Set(                                 "kg n ha-1", "kg/ha",       "mg/l", "t"        ),
+    "Quantity"           -> Set("cm", "d",       "kg",           "kg n ha-1", "kg/ha",       "mg/l", "t", "t/ha"),
+    "YieldAmount"        -> Set(                 "kg", "kg ha1",              "kg/ha",                    "t/ha"),
+    "YieldIncrease"      -> Set(                 "kg",                        "kg/ha",                    "t/ha")
   )
 
   def hasLetters(string: String): Boolean = {

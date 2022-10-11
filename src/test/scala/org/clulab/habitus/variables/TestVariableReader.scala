@@ -613,7 +613,7 @@ class TestVariableReader extends Test {
       passingTest,
       "fix3", "Diagnosis of the 1999 and 2000 wet seasons In the 1999 and 2000 wet seasons , the potential rice grain yields were between 8.8 t ha-1 and 9.2 t ha-1 ( i.e. about 1 t ha-1 more than in the 1998WS ) whilst the average of the actual yield increased greatly",
       "WetSeasonAssignment",
-      Seq.empty // todo: add a DateRange mention type to capture 2000 wet season with a norm 2000-XX-XX -- 2000-XX-XX
+      Seq.empty // todo: add a Date mention type to capture 2000 wet season with a norm 2000-XX-XX -- 2000-XX-XX
     ),
     VariableTest(
       passingTest,

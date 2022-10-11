@@ -117,7 +117,7 @@ class TestEntitiesNorms extends Test {
       "Potential rice grain yields (limited by solar radiation and temperature only) are on average about 9 t ha-1 in the wet growing season from July to November",
       Seq(
         "Quantity" -> Seq(("9 t ha-1", "9.0 t/ha")),
-        "DateRange" -> Seq(("from July to November", "XXXX-07-XX -- XXXX-11-XX")),
+        "Date" -> Seq(("from July to November", "XXXX-07-XX -- XXXX-11-XX")),
       )
     ),
     VariableTest(
@@ -125,7 +125,7 @@ class TestEntitiesNorms extends Test {
       "sent8",
       "These correspond to the dry season (from February/March to June/July).",
       Seq(
-        "DateRange" -> Seq(("from February/March to June/July", "XXXX-02-XX -- XXXX-07-XX"))
+        "Date" -> Seq(("from February/March to June/July", "XXXX-02-XX -- XXXX-07-XX"))
       )
     ),
     VariableTest(
@@ -157,7 +157,7 @@ class TestEntitiesNorms extends Test {
       "sent12",
       "Seeding dates ranged from 22 August to 26 September in 2011WS, from 29 February to 1 April in the 2012DS, and from 5 to 23 March in the 2013DS.",
       Seq(
-        "DateRange" -> Seq(
+        "Date" -> Seq(
           ("from 22 August to 26 September in 2011WS","2011-08-22 -- 2011-09-26"),
           ("from 29 February to 1 April in the 2012DS", "2012-02-29 -- 2012-04-01"),
           ("from 5 to 23 March in the 2013DS", "2013-03-05 -- 2013-03-23")
@@ -194,8 +194,7 @@ class TestEntitiesNorms extends Test {
       "sent16",
       "Farmers used two rice cultivars (IR1529 and Jaya) during the 1997 WS, and exclusively IR13240-108-2-2-3 (released as Sahel 108 in Senegal in 1994) during the 1998 DS. All rice was direct-seeded.",
       Seq(
-        "Date" -> Seq(("1994", "1994-XX-XX")),
-        "DateRange" -> Seq( ("1997 WS", "1997-XX-XX -- 1997-XX-XX"),("1998 DS", "1998-XX-XX -- 1998-XX-XX") )
+        "Date" -> Seq(("1994", "1994-XX-XX"), ("1997 WS", "1997-XX-XX -- 1997-XX-XX"),("1998 DS", "1998-XX-XX -- 1998-XX-XX") )
       )
     ),
     VariableTest(
@@ -368,7 +367,7 @@ class TestEntitiesNorms extends Test {
           ("7.9", "7.9 t/ha"),
           ("7.1 t/ha", "7.1 t/ha")
         ),
-        "DateRange" -> Seq(
+        "Date" -> Seq(
           ("2011WS", "2011-XX-XX -- 2011-XX-XX"),
           ("2012DS", "2012-XX-XX -- 2012-XX-XX"),
           ("2013DS", "2013-XX-XX -- 2013-XX-XX")
@@ -384,7 +383,7 @@ class TestEntitiesNorms extends Test {
           ("3600", "3600.0 kg/ha"),
           ("4500 kg ha-1", "4500.0 kg/ha")
         ),
-        "DateRange" -> Seq(
+        "Date" -> Seq(
           ("2000-2009", "2000-XX-XX -- 2009-XX-XX"),
           ("2090-2099", "2090-XX-XX -- 2099-XX-XX")
         )
