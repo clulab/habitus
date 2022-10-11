@@ -13,7 +13,7 @@ class TestTsvPrinter extends Test {
     new TempFile().autoClose { tempFile =>
       new TsvPrinter(tempFile.file).autoClose { printer =>
         val mentionInfo = new MentionInfo("This is the text of the sentence before the current one. This is the text of the sentence. This is the text of the sentence after the current one.","This is the text of the sentence.", "It came from a file.", "The mention has this label.", "This is mention text")
-        val contextInfo = DefaultContext("location", "country", "date", "process", "crop", "fertilizer", "season", 0)
+        val contextInfo = DefaultContext("publicationYear", "location", "country", "date", "process", "crop", "fertilizer", "season", 0)
         val argumentInfos = Seq(
           ArgumentInfo("name", "text", "norm")
         )
@@ -21,13 +21,13 @@ class TestTsvPrinter extends Test {
       }
       val headerOutput = Seq(
         "contextWindow", "sentenceText", "inputFilename", "label", "mentionText",
-        "location", "country", "date", "process", "crop", "fertilizer", "season", "comparative",
+        "publicationYear", "location", "country", "date", "process", "crop", "fertilizer", "season", "comparative",
         "arg0_name", "arg0_text", "arg0_norm", "..."
       ).mkString("\t")
       val valueOutput = Seq(
         "This is the text of the sentence before the current one. This is the text of the sentence. This is the text of the sentence after the current one.",
         "This is the text of the sentence.", "It came from a file.", "The mention has this label.", "This is mention text",
-        "location", "country", "date", "process", "crop", "fertilizer", "season", "0",
+        "publicationYear", "location", "country", "date", "process", "crop", "fertilizer", "season", "0",
         "name", "text", "norm"
       ).mkString("\t")
       val expectedOutput = Seq(headerOutput, valueOutput).mkString("", "\n", "\n")
@@ -41,7 +41,7 @@ class TestTsvPrinter extends Test {
     new TempFile().autoClose { tempFile =>
       new TsvPrinter(tempFile.file).autoClose { printer =>
         val mentionInfo = new MentionInfo("This is the text of the sentence before the current one. This is the text of the sentence. This is the text of the sentence after the current one.","This is the text of the sentence.", "It came from a file.", "The mention has this label.", "This is mention text")
-        val contextInfo = DefaultContext("location", "country", "date", "process", "crop", "fertilizer", "season", 0)
+        val contextInfo = DefaultContext("publicationYear", "location", "country", "date", "process", "crop", "fertilizer", "season", 0)
         val argumentInfos = Seq(
           ArgumentInfo("name1", "text1", "norm1"),
           ArgumentInfo("name2", "text2", "norm2"),
@@ -50,13 +50,13 @@ class TestTsvPrinter extends Test {
       }
       val headerOutput = Seq(
         "contextWindow", "sentenceText", "inputFilename", "label", "mentionText",
-        "location", "country", "date", "process", "crop", "fertilizer", "season", "comparative",
+        "publicationYear", "location", "country", "date", "process", "crop", "fertilizer", "season", "comparative",
         "arg0_name", "arg0_text", "arg0_norm", "..."
       ).mkString("\t")
       val valueOutput = Seq(
         "This is the text of the sentence before the current one. This is the text of the sentence. This is the text of the sentence after the current one.",
         "This is the text of the sentence.", "It came from a file.", "The mention has this label.", "This is mention text",
-        "location", "country", "date", "process", "crop", "fertilizer", "season", "0",
+        "publicationYear", "location", "country", "date", "process", "crop", "fertilizer", "season", "0",
         "name1", "text1", "norm1",
         "name2", "text2", "norm2",
       ).mkString("\t")
@@ -71,7 +71,7 @@ class TestTsvPrinter extends Test {
     new TempFile().autoClose { tempFile =>
       new TsvPrinter(tempFile.file).autoClose { printer =>
         val mentionInfo = new MentionInfo("This is the text of the sentence before the current one. This is the text of the sentence. This is the text of the sentence after the current one.","This is the text of the sentence.", "It came from a file.", "The mention has this label.", "This is mention text")
-        val contextInfo = DefaultContext("location", "country", "date", "process", "crop", "fertilizer", "season", 0)
+        val contextInfo = DefaultContext("publicationYear", "location", "country", "date", "process", "crop", "fertilizer", "season", 0)
         val argumentInfos1 = Seq(
           ArgumentInfo("name1", "text1", "norm1")
         )
@@ -83,19 +83,19 @@ class TestTsvPrinter extends Test {
       }
       val headerOutput = Seq(
         "contextWindow", "sentenceText", "inputFilename", "label", "mentionText",
-        "location", "country", "date", "process", "crop", "fertilizer", "season", "comparative",
+        "publicationYear", "location", "country", "date", "process", "crop", "fertilizer", "season", "comparative",
         "arg0_name", "arg0_text", "arg0_norm", "..."
       ).mkString("\t")
       val valueOutput1 = Seq(
         "This is the text of the sentence before the current one. This is the text of the sentence. This is the text of the sentence after the current one.",
         "This is the text of the sentence.", "It came from a file.", "The mention has this label.", "This is mention text",
-        "location", "country", "date", "process", "crop", "fertilizer", "season","0",
+        "publicationYear", "location", "country", "date", "process", "crop", "fertilizer", "season","0",
         "name1", "text1", "norm1"
       ).mkString("\t")
       val valueOutput2 = Seq(
         "This is the text of the sentence before the current one. This is the text of the sentence. This is the text of the sentence after the current one.",
         "This is the text of the sentence.", "It came from a file.", "The mention has this label.", "This is mention text",
-        "location", "country", "date", "process", "crop", "fertilizer", "season","0",
+        "publicationYear", "location", "country", "date", "process", "crop", "fertilizer", "season","0",
         "", "", "", // This is the important part.  Skip these.
         "name2", "text2", "norm2",
       ).mkString("\t")

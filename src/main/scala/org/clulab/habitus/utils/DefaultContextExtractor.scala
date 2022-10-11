@@ -3,6 +3,7 @@ package org.clulab.habitus.utils
 import ai.lum.common.ConfigFactory
 import ai.lum.common.ConfigUtils._
 import com.typesafe.config.Config
+import org.clulab.habitus.document.attachments.YearDocumentAttachment
 import org.clulab.odin.{Mention, TextBoundMention}
 import org.clulab.processors.Document
 import org.clulab.utils.FileUtils
@@ -58,10 +59,13 @@ class DefaultContextExtractor extends ContextExtractor {
       val thisSentCrops = thisSentTBMs.filter(_.label == "Crop")
       val thisSentFerts = thisSentTBMs.filter(_.label == "Fertilizer")
       val thisSentSeason = thisSentTBMs.filter(_.label == "Season")
+
       for (m <- thisSentEvents) {
         // make a map of arg labels and texts for automatic context field assignment in cases where context is part of the mention itself
         val menArgLabels = m.arguments.values.flatten
           .map(men => men.label -> men.text).toMap
+
+        val publicationYear = yearToString(YearDocumentAttachment.getYear(m.document))
         val context = if (sentLemmas.contains("respectively")) {
           // for context type
           // if number of given context type = number of mentions in the sentence of the same label,
@@ -69,7 +73,9 @@ class DefaultContextExtractor extends ContextExtractor {
           // else do regular context
           val locationContext = if (contextPairedWithMention(m, thisSentLocs, thisSentMentions)) doPairwiseContextMatching(m, thisSentLocs, thisSentMentions) else getContext(m, "Location", thisSentLocs, mentions)
           val countryContext = DefaultContextExtractor.regionMap.getOrElse(locationContext, "N/A")
+
           DefaultContext(
+            publicationYear,
             locationContext,
             countryContext,
             if (contextPairedWithMention(m, thisSentDates, thisSentMentions)) doPairwiseContextMatching(m, thisSentDates, thisSentMentions) else getContext(m, "Date", thisSentDates, mentions),
@@ -85,6 +91,7 @@ class DefaultContextExtractor extends ContextExtractor {
           val locationContext = getContext(m, "Location", thisSentLocs, mentions)
           val countryContext = DefaultContextExtractor.regionMap.getOrElse(locationContext, "N/A")
           DefaultContext(
+            publicationYear,
             locationContext,
             countryContext,
             if (menArgLabels.exists(_._1 contains "Date")) menArgLabels.filter(_._1 contains "Date").head._2 else  getContext(m, "Date", thisSentDates, mentions),
@@ -105,6 +112,11 @@ class DefaultContextExtractor extends ContextExtractor {
     }
     toReturn.distinct
   }
+
+  def yearToString(yearOpt: Option[Int]): String = {
+    val year = yearOpt.getOrElse("N/A")
+    year.toString
+  }
 }
 
 object DefaultContextExtractor {
@@ -117,7 +129,7 @@ object DefaultContextExtractor {
   files.foreach { f =>
     val source = Source.fromFile(f)
     for (line <- source.getLines()) {
-      val split = line.trim.split("\t").tail
+      val split = line.trim.split("\t")
       regionMap += (split.head -> split.last)
 
     }

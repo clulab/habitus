@@ -10,7 +10,8 @@ import java.io.File
 class TestPrinting extends Test {
   implicit val formats: DefaultFormats.type = org.json4s.DefaultFormats
 
-  val inputDir = "./src/test/resources"
+  val inputDir = "./src/test/resources/txt"
+  val metaDir = "./src/test/resources/meta-jsons"
   val outputDir = "."
   val threads = 2
   val tsvOutputFile = "./mentions.tsv"
@@ -21,7 +22,7 @@ class TestPrinting extends Test {
   new File(tsvOutputFile).delete()
   new File(jsonOutputFile).delete()
   new File(jsonlOutputFile).delete()
-  VariableReader.run(VariableProcessor(), inputDir, outputDir, threads)
+  VariableReader.run(VariableProcessor(), inputDir, Some(metaDir), outputDir, threads)
 
   behavior of "TsvPrinter"
 
