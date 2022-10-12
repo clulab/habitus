@@ -17,24 +17,28 @@ trait ContextExtractor {
 
   val NA = "N/A"
   val maxContextWindow = 2
-  val processToLemmas = ListMap(
-    "planting"         -> Set("plant", "sow", "cultivate", "cultivation", "grow", "seed", "seeding", "seedling", "transplant", "cropping", "variety", "use", "growth"),
-    "harvesting"       -> Set("harvest", "yield"),
-    "credit"           -> Set("credit", "finance", "value"),
-    "irrigation"       -> Set("irrigation", "irrigate"),
-    "weeds"            -> Set("weed"),
-    "natural_disaster" -> Set("flood", "bird", "attack", "floodwater"),
+  val processToLemmas = ListMap( // The order of keys is significant here.
+    "planting"              -> Set("plant", "sow", "cultivate", "cultivation", "grow", "seed", "seeding", "seedling", "transplant", "cropping", "variety", "use", "growth"),
+    "harvesting"            -> Set("harvest", "yield"),
+    "credit"                -> Set("credit", "finance", "value"),
+    "irrigation"            -> Set("irrigation", "irrigate"),
+    "weeds"                 -> Set("weed"),
+    "natural_disaster"      -> Set("flood", "bird", "attack", "floodwater"),
     "fertilizerApplication" -> Set("fertilizer", "application", "apply", "compost", "rate", "concentration"),
-    "climate" -> Set("climate"),
-    "agriculture" -> Set("agriculture"),
-    NA -> Set("N/A")
+    "climate"               -> Set("climate"),
+    "agriculture"           -> Set("agriculture"),
+    NA                      -> Set("N/A")
   )
 
   def reverseProcessToLemma(processToLemmas: ListMap[String, Set[String]]): Map[String, String] = {
+    val countSeparate = processToLemmas.values.map(set => set.size).sum
+    val countTogether = processToLemmas.values.flatten.size
+    require(countSeparate == countTogether, "Lemmas should not (reverse) map to multiple processes!")
+
     processToLemmas
-      .map { case (process, lemmas) => lemmas.map { lemma => lemma -> process } }
-      .flatten
-      .toMap
+        .map { case (process, lemmas) => lemmas.map { lemma => lemma -> process } }
+        .flatten
+        .toMap
   }
 
   val lemmaToProcess: Map[String, String] = reverseProcessToLemma(processToLemmas)
@@ -164,10 +168,7 @@ trait ContextExtractor {
     // check if there are context mentions (e.g., date or crop) that don't overlap with the mention itself and if yes, pick closest of those
     // if there are no non-intersecting mentions, just pick any nearest one
     val overlapping = mentions.filter(m => m.tokenInterval.intersect(mention.tokenInterval).nonEmpty)
-    if (overlapping.nonEmpty) {
-      return overlapping.head
-    } else findClosestNotOverlapping(mention, mentions)
-
+    if (overlapping.nonEmpty) overlapping.head
+    else findClosestNotOverlapping(mention, mentions)
   }
-
 }

@@ -46,71 +46,75 @@ class DefaultContextExtractor extends ContextExtractor {
   }
 
   def getContextPerMention(mentions: Seq[Mention], doc: Document): Seq[Mention] = {
+
+    def getRespectiveContext(mention: Mention, label: String, labelMentions: Seq[Mention], sentMentions: Seq[Mention]): String = {
+      // for context type
+      // if number of given context type = number of mentions in the sentence of the same label,
+      // then do pairwise context The groundnut and the Fleur 11 gave higher yield in DELTA with 4.5 and 4.2 t ha-1 , respectively ( Table 4 ) .
+      // else do regular context
+      if (contextPairedWithMention(mention, labelMentions, sentMentions))
+        doPairwiseContextMatching(mention, labelMentions, sentMentions)
+      else
+        getContext(mention, label, labelMentions, mentions)
+    }
+
+    def getIrrespectiveContext(mention: Mention, label: String, labelMentions: Seq[Mention],
+        menArgLabelsOpt: Option[Map[String, String]]): String = {
+      menArgLabelsOpt
+          .flatMap(_.get(label)) // Try menArgLabels first if it is provided.
+          .getOrElse(getContext(mention, label, labelMentions, mentions))
+    }
+
     // all mentions (tbms and relations/events) have to be passed here because context info comes from tbms;
     // only return contextualized relation and event mentions
-    val toReturn = new ArrayBuffer[Mention]()
     val mentionsBySentence = mentions groupBy (_.sentence) mapValues (_.sortBy(_.start)) withDefaultValue Nil
-    for ((s, i) <- doc.sentences.zipWithIndex) {
+    val mentionsWithContext = doc.sentences.zipWithIndex.flatMap { case (s, i) =>
       val sentLemmas = s.lemmas.getOrElse(Array.empty)
       val thisSentMentions = mentionsBySentence(i).distinct
       val (thisSentTBMs, thisSentEvents) = thisSentMentions.partition(_.isInstanceOf[TextBoundMention])
-      val thisSentDates = thisSentTBMs.filter(m => m.label == "Date" || m.label == "DateRange")
+      val thisSentDates = thisSentTBMs.filter(m => m.label == "Date")
       val thisSentLocs = thisSentTBMs.filter(_.label == "Location")
       val thisSentCrops = thisSentTBMs.filter(_.label == "Crop")
       val thisSentFerts = thisSentTBMs.filter(_.label == "Fertilizer")
       val thisSentSeason = thisSentTBMs.filter(_.label == "Season")
-
-      for (m <- thisSentEvents) {
-        // make a map of arg labels and texts for automatic context field assignment in cases where context is part of the mention itself
-        val menArgLabels = m.arguments.values.flatten
-          .map(men => men.label -> men.text).toMap
-
+      val sentEventsWithContext = thisSentEvents.map { m =>
         val publicationYear = yearToString(YearDocumentAttachment.getYear(m.document))
+
         val context = if (sentLemmas.contains("respectively")) {
-          // for context type
-          // if number of given context type = number of mentions in the sentence of the same label,
-          // then do pairwise context The groundnut and the Fleur 11 gave higher yield in DELTA with 4.5 and 4.2 t ha-1 , respectively ( Table 4 ) .
-          // else do regular context
-          val locationContext = if (contextPairedWithMention(m, thisSentLocs, thisSentMentions)) doPairwiseContextMatching(m, thisSentLocs, thisSentMentions) else getContext(m, "Location", thisSentLocs, mentions)
-          val countryContext = DefaultContextExtractor.regionMap.getOrElse(locationContext, "N/A")
+          val location   = getRespectiveContext(m, "Location",   thisSentLocs,   thisSentMentions)
+          val country = DefaultContextExtractor.regionMap.getOrElse(location, "N/A")
+          val date       = getRespectiveContext(m, "Date",       thisSentDates,  thisSentMentions)
+          val crop       = getRespectiveContext(m, "Crop",       thisSentCrops,  thisSentMentions)
+          val fertilizer = getRespectiveContext(m, "Fertilizer", thisSentFerts,  thisSentMentions)
+          val season     = getRespectiveContext(m, "Season",     thisSentSeason, thisSentMentions)
 
-          DefaultContext(
-            publicationYear,
-            locationContext,
-            countryContext,
-            if (contextPairedWithMention(m, thisSentDates, thisSentMentions)) doPairwiseContextMatching(m, thisSentDates, thisSentMentions) else getContext(m, "Date", thisSentDates, mentions),
-            getProcess(m),
-            // with crops and fertilizer (and maybe later other types of context), if a crop or fertilizer is one of the arguments,
-            // ...just pick those to fill the context fields
-            if (contextPairedWithMention(m, thisSentCrops, thisSentMentions)) doPairwiseContextMatching(m, thisSentCrops, thisSentMentions) else getContext(m, "Crop", thisSentCrops, mentions),
-            if (contextPairedWithMention(m, thisSentFerts, thisSentMentions)) doPairwiseContextMatching(m, thisSentFerts, thisSentMentions) else getContext(m, "Fertilizer", thisSentFerts, mentions),
-            if (contextPairedWithMention(m, thisSentSeason, thisSentMentions)) doPairwiseContextMatching(m, thisSentSeason, thisSentMentions) else getContext(m, "Season", thisSentSeason, mentions),
-            getComparative(m)
-          )
-        } else {
-          val locationContext = getContext(m, "Location", thisSentLocs, mentions)
-          val countryContext = DefaultContextExtractor.regionMap.getOrElse(locationContext, "N/A")
-          DefaultContext(
-            publicationYear,
-            locationContext,
-            countryContext,
-            if (menArgLabels.exists(_._1 contains "Date")) menArgLabels.filter(_._1 contains "Date").head._2 else  getContext(m, "Date", thisSentDates, mentions),
-            getProcess(m),
-            // with crops and fertilizer (and maybe later other types of context), if a crop or fertilizer is one of the arguments,
-            // ...just pick those to fill the context fields
-            if (menArgLabels.contains("Crop")) menArgLabels("Crop") else getContext(m, "Crop", thisSentCrops, mentions),
-            if (menArgLabels.contains("Fertilizer")) menArgLabels("Fertilizer") else getContext(m, "Fertilizer", thisSentFerts, mentions),
-            getContext(m, "Season", thisSentSeason, mentions),
-            getComparative(m)
-          )
+          DefaultContext(publicationYear, location, country, date, getProcess(m), crop, fertilizer, season, getComparative(m))
         }
-
+        else {
+          // make a map of arg labels and texts for automatic context field assignment in cases where context is part of the mention itself
+          val arguments = m.arguments.values.flatten.toSeq
+          val labels = arguments.map(_.label)
+          require(labels.length == labels.distinct.length, "Labels should be distinct in order to use them in keys of a  map.")
+          val menArgLabels = arguments.map(men => men.label -> men.text).toMap
+          val location   = getIrrespectiveContext(m, "Location",   thisSentLocs,   None)
+          val country = DefaultContextExtractor.regionMap.getOrElse(location, "N/A")
+          val date       = getIrrespectiveContext(m, "Date",       thisSentDates,  Some(menArgLabels))
+          // with crops and fertilizer (and maybe later other types of context), if a crop or fertilizer is one of the arguments,
+          // ...just pick those to fill the context fields
+          val crop       = getIrrespectiveContext(m, "Crop",       thisSentCrops,  Some(menArgLabels))
+          val fertilizer = getIrrespectiveContext(m, "Fertilizer", thisSentFerts,  Some(menArgLabels))
+          val season     = getIrrespectiveContext(m, "Season",     thisSentSeason, None)
+          DefaultContext(publicationYear, location, country, date, getProcess(m), crop, fertilizer, season, getComparative(m))
+        }
         // store context as a mention attachment
         val withAtt = m.withAttachment(context)
-        toReturn.append(withAtt)
+
+        withAtt
       }
+
+      sentEventsWithContext
     }
-    toReturn.distinct
+    mentionsWithContext.distinct
   }
 
   def yearToString(yearOpt: Option[Int]): String = {
