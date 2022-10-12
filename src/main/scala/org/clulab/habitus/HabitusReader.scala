@@ -6,8 +6,10 @@ import org.clulab.habitus.printer.{DynamicArgsTsvPrinter, JsonlPrinter, MultiPri
 import org.clulab.habitus.utils._
 import org.clulab.utils.Closer.AutoCloser
 import org.clulab.utils.{FileUtils, StringUtils, ThreadUtils}
+import org.clulab.wm.eidoscommon.utils.FileEditor
 import org.json4s._
 import org.json4s.jackson.JsonMethods.parse
+
 import java.io.File
 
 class HabitusReader() extends App {
@@ -44,7 +46,7 @@ class HabitusReader() extends App {
           val unfiltered = FileUtils.getTextFromFile(file)
           val text = cleanText(unfiltered)
           val filename = StringUtils.afterLast(file.getName, '/')
-          val year = getYear(filename, metaFiles)
+          val year = getYear(file, metaFiles)
           println(s"going to parse input file: $filename")
           val parsingResults = processor.parse(text, year)
           val doc = parsingResults.document
@@ -57,10 +59,10 @@ class HabitusReader() extends App {
       }
     }
   }
-  def getYear(filename: String, metaFiles: Seq[File]): Option[Int] = {
+  def getYear(inputFile: File, metaFiles: Seq[File]): Option[Int] = {
     implicit val formats = DefaultFormats
-    val file = metaFiles.filter(_.getName.contains(filename.replace(".txt", ".json")))
-    val jsonStr = if (file.nonEmpty) FileUtils.getTextFromFile(file.head) else "{}"
+    val metaFile = FileEditor(inputFile).setDir(metaDir).setExt(".json").get
+    val jsonStr = if (metaFile.exists()) FileUtils.getTextFromFile(metaFile) else "{}"
     val json = parse(jsonStr)
     val year =  (json \ "year").extractOpt[Int]
     year
