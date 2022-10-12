@@ -265,11 +265,11 @@ class TestBeliefReader extends Test {
       Seq(("Kissal Patim manager", "percentage of severely food insecure households in Round 1 (76 percent) was not in fact higher due to the high level of vulnerability in her zone"))
     ),
     BelieverTest(
-      passingTest, "sent38", "However, FEPROMAS detected a cultural norm of negative stigma attached with receiving food aid, which may explain the disconnect between the high proportion of members who were experiencing moderate food insecurity but who said they did not need any food aid.",
+      unreliableTest, "sent38", "However, FEPROMAS detected a cultural norm of negative stigma attached with receiving food aid, which may explain the disconnect between the high proportion of members who were experiencing moderate food insecurity but who said they did not need any food aid.",
       Seq(("", "receiving food aid"))
     ),
     BelieverTest(
-      passingTest, "sent39", "most of their members who borrowed did not perceive that the original source of the credit was the banks.",
+      unreliableTest, "sent39", "most of their members who borrowed did not perceive that the original source of the credit was the banks.",
       Seq(("most of their members", "original source of the credit was the banks"))
     ),
     BelieverTest(
