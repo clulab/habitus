@@ -33,7 +33,6 @@ class HabitusReader() extends App {
         .replace("- ", "")
 
     val files = FileUtils.findFiles(inputDir, ".txt")
-    val metaFiles = if (metaDir.isDefined) FileUtils.findFiles(metaDir.get, "json") else Seq.empty
     val parFiles = if (threads > 1) ThreadUtils.parallelize(files, threads) else files
 
     new MultiPrinter(
@@ -46,7 +45,7 @@ class HabitusReader() extends App {
           val unfiltered = FileUtils.getTextFromFile(file)
           val text = cleanText(unfiltered)
           val filename = StringUtils.afterLast(file.getName, '/')
-          val year = getYear(file, metaFiles)
+          val year = if (metaDir.isDefined) getYear(file, metaDir.get) else None
           println(s"going to parse input file: $filename")
           val parsingResults = processor.parse(text, year)
           val doc = parsingResults.document
@@ -59,7 +58,7 @@ class HabitusReader() extends App {
       }
     }
   }
-  def getYear(inputFile: File, metaFiles: Seq[File]): Option[Int] = {
+  def getYear(inputFile: File, metaDir: String): Option[Int] = {
     implicit val formats = DefaultFormats
     val metaFile = FileEditor(inputFile).setDir(metaDir).setExt(".json").get
     val jsonStr = if (metaFile.exists()) FileUtils.getTextFromFile(metaFile) else "{}"
