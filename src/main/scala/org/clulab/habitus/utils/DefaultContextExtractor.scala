@@ -7,7 +7,7 @@ import org.clulab.habitus.document.attachments.YearDocumentAttachment
 import org.clulab.odin.{Mention, TextBoundMention}
 import org.clulab.processors.Document
 import org.clulab.utils.Closer.AutoCloser
-import org.clulab.utils.{FileUtils, Sourcer}
+import org.clulab.utils.Sourcer
 
 class DefaultContextExtractor extends ContextExtractor {
 
