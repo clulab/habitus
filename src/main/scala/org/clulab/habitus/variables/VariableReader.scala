@@ -9,5 +9,5 @@ object VariableReader extends HabitusReader {
   val masterResource: String = localConfig[String]("masterResource")
   val processor = VariableProcessor(masterResource)
 
-  run(processor, inputDir, outputDir, threads)
+  run(processor, inputDir, Some(metaDir), outputDir, threads)
 }

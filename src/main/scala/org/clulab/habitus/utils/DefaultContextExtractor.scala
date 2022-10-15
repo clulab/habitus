@@ -1,9 +1,13 @@
 package org.clulab.habitus.utils
 
+import ai.lum.common.ConfigFactory
+import ai.lum.common.ConfigUtils._
+import com.typesafe.config.Config
+import org.clulab.habitus.document.attachments.YearDocumentAttachment
 import org.clulab.odin.{Mention, TextBoundMention}
 import org.clulab.processors.Document
-
-import scala.collection.mutable.ArrayBuffer
+import org.clulab.utils.Closer.AutoCloser
+import org.clulab.utils.Sourcer
 
 class DefaultContextExtractor extends ContextExtractor {
 
@@ -71,14 +75,17 @@ class DefaultContextExtractor extends ContextExtractor {
       val thisSentFerts = thisSentTBMs.filter(_.label == "Fertilizer")
       val thisSentSeason = thisSentTBMs.filter(_.label == "Season")
       val sentEventsWithContext = thisSentEvents.map { m =>
+        val publicationYear = yearToString(YearDocumentAttachment.getYear(m.document))
+
         val context = if (sentLemmas.contains("respectively")) {
           val location   = getRespectiveContext(m, "Location",   thisSentLocs,   thisSentMentions)
+          val country = DefaultContextExtractor.regionMap.getOrElse(location, "N/A")
           val date       = getRespectiveContext(m, "Date",       thisSentDates,  thisSentMentions)
           val crop       = getRespectiveContext(m, "Crop",       thisSentCrops,  thisSentMentions)
           val fertilizer = getRespectiveContext(m, "Fertilizer", thisSentFerts,  thisSentMentions)
           val season     = getRespectiveContext(m, "Season",     thisSentSeason, thisSentMentions)
 
-          DefaultContext(location, date, getProcess(m), crop, fertilizer, season, getComparative(m))
+          DefaultContext(publicationYear, location, country, date, getProcess(m), crop, fertilizer, season, getComparative(m))
         }
         else {
           // make a map of arg labels and texts for automatic context field assignment in cases where context is part of the mention itself
@@ -87,14 +94,14 @@ class DefaultContextExtractor extends ContextExtractor {
           require(labels.length == labels.distinct.length, "Labels should be distinct in order to use them in keys of a  map.")
           val menArgLabels = arguments.map(men => men.label -> men.text).toMap
           val location   = getIrrespectiveContext(m, "Location",   thisSentLocs,   None)
+          val country = DefaultContextExtractor.regionMap.getOrElse(location, "N/A")
           val date       = getIrrespectiveContext(m, "Date",       thisSentDates,  Some(menArgLabels))
           // with crops and fertilizer (and maybe later other types of context), if a crop or fertilizer is one of the arguments,
           // ...just pick those to fill the context fields
           val crop       = getIrrespectiveContext(m, "Crop",       thisSentCrops,  Some(menArgLabels))
           val fertilizer = getIrrespectiveContext(m, "Fertilizer", thisSentFerts,  Some(menArgLabels))
           val season     = getIrrespectiveContext(m, "Season",     thisSentSeason, None)
-
-          DefaultContext(location, date, getProcess(m), crop, fertilizer, season, getComparative(m))
+          DefaultContext(publicationYear, location, country, date, getProcess(m), crop, fertilizer, season, getComparative(m))
         }
         // store context as a mention attachment
         val withAtt = m.withAttachment(context)
@@ -105,5 +112,29 @@ class DefaultContextExtractor extends ContextExtractor {
       sentEventsWithContext
     }
     mentionsWithContext.distinct
+  }
+
+  def yearToString(yearOpt: Option[Int]): String = {
+    val year = yearOpt.getOrElse("N/A")
+    year.toString
+  }
+}
+
+object DefaultContextExtractor {
+  val regionMap = {
+    val config = ConfigFactory.load()
+    val localConfig: Config = config[Config]("VarReader")
+    val resourceNames: List[String] = localConfig[List[String]]("regionLexicons")
+
+    resourceNames.flatMap { resourceName =>
+      Sourcer.sourceFromResource(resourceName).autoClose { source =>
+        source.getLines.map { line =>
+          println(line)
+          val Array(region, country) = line.trim.split("\t")
+
+          region -> country
+        }.toList
+      }
+    }.toMap
   }
 }

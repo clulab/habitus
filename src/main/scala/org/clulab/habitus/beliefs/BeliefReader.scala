@@ -8,5 +8,5 @@ object BeliefReader extends HabitusReader {
   val localConfig: Config = config[Config]("BeliefReader")
   val processor = BeliefProcessor()
 
-  run(processor, inputDir, outputDir, threads)
+  run(processor, inputDir, None, outputDir, threads)
 }

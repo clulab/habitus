@@ -137,6 +137,19 @@ Instantiate it with the `apply` method, e.g.: `val vp = VariableProcessor`. The 
 
 For an example on how these data structures are used, take a look at the method [`org.clulab.habitus.variables.VariableReader.run`](https://github.com/clulab/habitus/blob/main/src/main/scala/org/clulab/habitus/variables/VariableReader.scala#L25).
 
+### 2.4. Adding new regions
+
+To contextualize extracted mentions, we find locations most likely associated with them in text. In addition to outputting the name of a location provided directly in text, we attempt to provide the country the location is in. We do that by making use of [the GeoNames geographical database](https://download.geonames.org/export/dump/) files. With the database being quite extensive, we only add the countries we are working with in a given project.
+
+To add a new country file, follow these steps:
+
+- run the `get_essential_region_info_from_geonames.py` script in the `/python/processing_geonames/` directory to preprocess the new geonames files:
+
+```bash
+python get_essential_region_info_from_geonames.py <path/to/directory/containing/geonames/files> <path/to/output/directory>
+```
+- add the name of the new country with its country code to the resulting `.tsv` file in the following format: `country\tcode`, e.g., `Senegal SN`. The country code is the same as the file name for a given country, e.g., `SN` for `Senegal`.
+
 ## 3. Reading for propositional attitudes
 
 This component reads for statements such as WHO believes WHAT. TODO Mihai.

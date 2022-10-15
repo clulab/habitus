@@ -10,7 +10,7 @@ class TestDefaultContextAttachment extends Test {
 
   val NA = "N/A"
 
-  case class Desired(mentionText: String, location: String = NA, date: String = NA, process: String = NA, crop: String = NA, fertilizer: String = NA, comparative: String = NA, season: String = NA)
+  case class Desired(mentionText: String, location: String = NA, country: String = NA, date: String = NA, process: String = NA, crop: String = NA, fertilizer: String = NA, comparative: String = NA, season: String = NA)
 
   case class DefaultContextAttachmentTest(
                            shouldable: Shouldable,
@@ -47,6 +47,7 @@ class TestDefaultContextAttachment extends Test {
           attachments.toList.length should be (1)
           val attachment = attachments.head.asInstanceOf[DefaultContext]
           attachment.location should be (desired.location)
+          attachment.country should be (desired.country)
           attachment.date should equal (desired.date)
           attachment.process should equal (desired.process)
           attachment.crop should equal (desired.crop)
@@ -71,6 +72,7 @@ class TestDefaultContextAttachment extends Test {
         Desired(
           mentionText = "area sown with rice and fertilized with urea for this 2021/2022 wintering campaign is 28,223 ha",
           location = "Senegal",
+          country = "SN",
           date = "2021/2022",
           process = "planting",
           crop = "rice",
@@ -91,6 +93,7 @@ class TestDefaultContextAttachment extends Test {
         Desired(
           mentionText = "area sown for this 2021/2022 wintering campaign is 28,223 ha",
           location = "Senegal",
+          country = "SN",
           date = "2021/2022",
           process = "planting",
           comparative = "0"
@@ -109,6 +112,24 @@ class TestDefaultContextAttachment extends Test {
         Desired(
           mentionText = "areas sown for this 2021/2022 wintering campaign are 28,223 ha",
           location = "Senegal",
+          country = "SN",
+          date = "2021/2022",
+          process = "planting",
+          comparative = "1"
+        )
+      )
+    ),
+    DefaultContextAttachmentTest(
+      // same as previous test (sent-3), but tests the region -> country code mapping
+      passingTest,
+      "sent-3a",
+      "The areas sown for this 2021/2022 wintering campaign are 28,223 ha in Ile de Yoff vs 35,065 ha in the U.S.",
+      "AreaSize",
+      Seq(
+        Desired(
+          mentionText = "areas sown for this 2021/2022 wintering campaign are 28,223 ha",
+          location = "Ile de Yoff",
+          country = "SN",
           date = "2021/2022",
           process = "planting",
           comparative = "1"

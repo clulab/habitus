@@ -40,9 +40,10 @@ class InterviewsProcessor(val processor: Processor,
     }
   }
 
-  def parse(text: String): ParsingResult = {
+  def parse(text: String, yearOpt: Option[Int] = None): ParsingResult = {
     // pre-processing
     val doc = processor.annotate(text, keepText = true)
+    setYear(doc, yearOpt)
 
     // extract syntactic mentions, without expansion
     val entityMentions = entityFinder.extract(doc)

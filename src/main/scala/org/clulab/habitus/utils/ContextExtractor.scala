@@ -9,7 +9,7 @@ import scala.collection.immutable.ListMap
 
 trait Context extends Attachment with Pairable
 
-case class DefaultContext(location: String, date: String, process: String, crop: String, fertilizer: String, season:String, comparative: Int) extends Context
+case class DefaultContext(publicationYear: String, location: String, country: String, date: String, process: String, crop: String, fertilizer: String, season:String, comparative: Int) extends Context
 
 case class BeliefContext(context: String) extends Context
 
