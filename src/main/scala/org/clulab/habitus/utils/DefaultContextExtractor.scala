@@ -6,11 +6,8 @@ import com.typesafe.config.Config
 import org.clulab.habitus.document.attachments.YearDocumentAttachment
 import org.clulab.odin.{Mention, TextBoundMention}
 import org.clulab.processors.Document
-import org.clulab.utils.FileUtils
-
-import scala.collection.mutable
-import scala.collection.mutable.ArrayBuffer
-import scala.io.Source
+import org.clulab.utils.Closer.AutoCloser
+import org.clulab.utils.Sourcer
 
 class DefaultContextExtractor extends ContextExtractor {
 
@@ -124,18 +121,20 @@ class DefaultContextExtractor extends ContextExtractor {
 }
 
 object DefaultContextExtractor {
+  val regionMap = {
+    val config = ConfigFactory.load()
+    val localConfig: Config = config[Config]("VarReader")
+    val resourceNames: List[String] = localConfig[List[String]]("regionLexicons")
 
-  val config = ConfigFactory.load()
-  val localConfig: Config = config[Config]("VarReader")
-  val inputDir: String = localConfig[String]("regionsLexicon")
-  val files = FileUtils.findFiles(inputDir, ".tsv")
-  val regionMap = mutable.Map[String, String]()
-  files.foreach { f =>
-    val source = Source.fromFile(f)
-    for (line <- source.getLines()) {
-      val split = line.trim.split("\t")
-      regionMap += (split.head -> split.last)
+    resourceNames.flatMap { resourceName =>
+      Sourcer.sourceFromResource(resourceName).autoClose { source =>
+        source.getLines.map { line =>
+          println(line)
+          val Array(region, country) = line.trim.split("\t")
 
-    }
+          region -> country
+        }.toList
+      }
+    }.toMap
   }
 }
