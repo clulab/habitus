@@ -90,6 +90,7 @@
 - name: planting-date-cop-1
   priority: ${rulepriority}
   label: PlantingDate
+  action: splitIntoBinary
   type: token
   pattern: |
     @variable:Planting [tag=/VBN|IN/]? (?<trigger> [lemma=be]) (","? @value:Date)+ ","? ("and" @value:Date)?
@@ -113,6 +114,7 @@
 - name: planting-date-cop-8
   priority: ${rulepriority}
   label: PlantingDate
+  action: splitIntoBinary
   Example: sowing was done on 25th October
   type: token
   pattern: |
@@ -129,6 +131,7 @@
 - name: planting-date-parenthesis-1
   priority: ${rulepriority}
   label: PlantingDate
+  action: splitIntoBinary
   type: token
   pattern: |
     @variable:Planting [! (mention = "Date")]{, 4} (?<trigger> [lemma="("]) @value:Date (("," | "and")* @value:Date)*
