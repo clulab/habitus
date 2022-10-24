@@ -129,7 +129,6 @@ object DefaultContextExtractor {
     resourceNames.flatMap { resourceName =>
       Sourcer.sourceFromResource(resourceName).autoClose { source =>
         source.getLines.map { line =>
-          println(line)
           val Array(region, country) = line.trim.split("\t")
 
           region -> country
