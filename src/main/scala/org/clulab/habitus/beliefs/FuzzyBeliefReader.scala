@@ -19,12 +19,15 @@ object FuzzyBeliefReader {
 //    val inputDir = "/home/alexeeva/Desktop/habitus_related/data/query_results/habitus_rice_growing_senegal/txt"
 //    val inputDir = "/home/alexeeva/Desktop/habitus_related/data/query_results/habitus_rice_trade_crops_actors_senegal/txt"
 //    val inputDir = "/home/alexeeva/Desktop/habitus_related/data/Rice_growing_in_Senegal_River_Valley/pdf2txt-clean-science-parse"
-    val inputDir = "/home/alexeeva/Desktop/habitus_related/data/fuzzyBeliefs/uganda_vs_5_others/regular-science-parse-txt/science-parsed-txt"
+//    val inputDir = "/home/alexeeva/Desktop/habitus_related/data/fuzzyBeliefs/uganda_vs_5_others/regular-science-parse-txt/science-parsed-txt"
+    // from server data / for mechanical turk / mturk:
+    val inputDir = "/home/alexeeva/Desktop/habitus_related/data/fuzzyBeliefs/habitus_cross_countries_cgaps/bangladesh_vs_5_others/processed_on_server/out"
+    val outputDir = "/home/alexeeva/Desktop/habitus_related/data/fuzzyBeliefs/habitus_cross_countries_cgaps/bangladesh_vs_5_others/mentions_local_based_on_server_data/"
 //    val outputDir = "/home/alexeeva/Desktop/habitus_related/data/fuzzyBeliefs/senegal-agriculture-post-processed-science-parse/output-short-paragraphs/"
 //    val outputDir = "/home/alexeeva/Desktop/habitus_related/data/query_results/habitus_rice_growing_senegal/fuzzy-beliefs/"
 //    val outputDir = "/home/alexeeva/Desktop/habitus_related/data/query_results/habitus_rice_trade_crops_actors_senegal/fuzzy-beliefs"
 //    val outputDir = "/home/alexeeva/Desktop/habitus_related/data/fuzzyBeliefs/Rice_growing_in_Senegal_River_Valley/fuzzy_mentions_jun13/"
-    val outputDir = "/home/alexeeva/Desktop/habitus_related/data/fuzzyBeliefs/uganda_vs_5_others/fuzzy-beliefs-from-regular-science-parse-june17"
+//    val outputDir = "/home/alexeeva/Desktop/habitus_related/data/fuzzyBeliefs/uganda_vs_5_others/fuzzy-beliefs-from-regular-science-parse-june17"
     val threads = 1//props.get("threads").map(_.toInt).getOrElse(1)
 
     run(inputDir, outputDir, threads)
@@ -62,6 +65,7 @@ object FuzzyBeliefReader {
           val excludeVocab = Seq(" rape", "genital")
           // fixme: temporary, simple text cleanup
           val texts = unfiltered.split("\n\n").map(_.replace("\t", " ")).filter(_.length < 2300).filterNot(t => containsVocab(t, excludeVocab))
+          val inputDir = StringUtils.beforeLast(file.getPath, '/')
           val filename = StringUtils.afterLast(file.getName, '/')
           println(s"going to parse input file: $filename")
           for (text <- texts) {
@@ -79,7 +83,7 @@ object FuzzyBeliefReader {
             //          multiPrinter.outputMentions(mentions, doc, filename, printVars)
             val beliefMentions = mentions.filter(_.label matches "Belief")
             for (b <- beliefMentions) {
-              pw.println(s"$filename\tcurrent\t${b.sentenceObj.getSentenceText}\t${b.asInstanceOf[EventMention].trigger.text}\t${b.text}\t$cleanText\t")
+              pw.println(s"$inputDir\t$filename\tcurrent\t${b.sentenceObj.getSentenceText}\t${b.asInstanceOf[EventMention].trigger.text}\t${b.text}\t$cleanText\t")
 //              doneSents.append(b.sentence)
             }
 //            println("beliefs: ", beliefMentions.length)
