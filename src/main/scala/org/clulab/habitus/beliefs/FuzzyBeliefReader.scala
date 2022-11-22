@@ -22,7 +22,7 @@ object FuzzyBeliefReader {
 //    val inputDir = "/home/alexeeva/Desktop/habitus_related/data/fuzzyBeliefs/uganda_vs_5_others/regular-science-parse-txt/science-parsed-txt"
     // from server data / for mechanical turk / mturk:
     val inputDir = "/home/alexeeva/Desktop/habitus_related/data/fuzzyBeliefs/habitus_cross_countries_cgaps/bangladesh_vs_5_others/processed_on_server/out"
-    val outputDir = "/home/alexeeva/Desktop/habitus_related/data/fuzzyBeliefs/habitus_cross_countries_cgaps/bangladesh_vs_5_others/mentions_local_based_on_server_data/"
+    val outputDir = "/home/alexeeva/Desktop/habitus_related/data/fuzzyBeliefs/habitus_cross_countries_cgaps/bangladesh_vs_5_others/mentions_local_based_on_server_data_sentences_not_tokenized/"
 //    val outputDir = "/home/alexeeva/Desktop/habitus_related/data/fuzzyBeliefs/senegal-agriculture-post-processed-science-parse/output-short-paragraphs/"
 //    val outputDir = "/home/alexeeva/Desktop/habitus_related/data/query_results/habitus_rice_growing_senegal/fuzzy-beliefs/"
 //    val outputDir = "/home/alexeeva/Desktop/habitus_related/data/query_results/habitus_rice_trade_crops_actors_senegal/fuzzy-beliefs"
@@ -82,8 +82,18 @@ object FuzzyBeliefReader {
             // TODO: only doing reported beliefs, right?
             //          multiPrinter.outputMentions(mentions, doc, filename, printVars)
             val beliefMentions = mentions.filter(_.label matches "Belief")
+
+
             for (b <- beliefMentions) {
-              pw.println(s"$inputDir\t$filename\tcurrent\t${b.sentenceObj.getSentenceText}\t${b.asInstanceOf[EventMention].trigger.text}\t${b.text}\t$cleanText\t")
+//              val sentText = b.document.sentences(b.sentence)
+//              println("sent text: " + b.document.text.get)
+//              println("sent text2: " + sentText.getSentenceText)
+//              println("offsets: " + b.sentenceObj.startOffsets.head + ", " + b.sentenceObj.endOffsets.last)
+              val sentText =  b.document.text.get.slice(b.sentenceObj.startOffsets.head, b.sentenceObj.endOffsets.last + 1).mkString("")
+
+
+              //              val offs = b.sentenceObj.getSentenceText
+              pw.println(s"$inputDir\t$filename\tcurrent\t${sentText}\t${b.sentenceObj.getSentenceText}\t${b.asInstanceOf[EventMention].trigger.text}\t${b.text}\t$cleanText\t")
 //              doneSents.append(b.sentence)
             }
 //            println("beliefs: ", beliefMentions.length)

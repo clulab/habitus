@@ -43,7 +43,7 @@ class BeliefProcessor(val processor: Processor,
 
   def parse(text: String): (Document, Seq[Mention]) = {
     // pre-processing
-    val doc = processor.annotate(text, keepText = false)
+    val doc = processor.annotate(text, keepText = true)
 
     // extract syntactic mentions, without expansion
     val entityMentions = entityFinder.extract(doc)
