@@ -12,7 +12,6 @@ import scala.io.Source
 class LexiconNerBase() {
   val lexiconNer: LexiconNER = mkLexiconNer()
   val processor = new CluProcessor(optionalNER = Some(lexiconNer))
-  Utils.initializeDyNet()
 
   def mkLexiconNer(): LexiconNER = {
     val resourceDir: File = {

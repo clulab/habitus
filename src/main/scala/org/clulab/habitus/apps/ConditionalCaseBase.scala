@@ -66,8 +66,6 @@ class ConditionalCaseBase {
   }
 
   def process(files: Seq[File]): Unit = {
-    Utils.initializeDyNet()
-
     val processor = new ConditionalHabitusProcessor(cutoffOpt, removeBad)
 
     files.foreach { file =>

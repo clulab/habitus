@@ -115,7 +115,6 @@ object VariableProcessor {
     assert(masterResource.startsWith("/"))
 
     // create the processor
-    Utils.initializeDyNet()
     val lexiconNer = newLexiconNer()
     val processor = new HabitusProcessor(Some(lexiconNer), filter = filter)
     // val processor = new CluProcessor(optionalNER = Some(lexiconNer))

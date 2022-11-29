@@ -13,8 +13,6 @@ import java.io.PrintWriter
 object RestoreCaseApp extends App {
   val inputFileName = args(0)
 
-  Utils.initializeDyNet()
-
   val proc = new HabitusProcessor(None)
   val text = FileUtils.getTextFromFile(inputFileName)
 

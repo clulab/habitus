@@ -21,8 +21,6 @@ object EvaluateCaseApp extends App {
 
   val inputFileName = args(0)
 
-  Utils.initializeDyNet()
-
   val proc = new AllGoodHabitusProcessor()
   val text = FileUtils.getTextFromFile(inputFileName)
 

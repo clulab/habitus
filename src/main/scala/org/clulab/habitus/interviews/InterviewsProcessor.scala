@@ -84,7 +84,6 @@ object InterviewsProcessor {
 
   def apply(): InterviewsProcessor = {
     // create the processor
-    Utils.initializeDyNet()
     val lexiconNER = newLexiconNer()
     val processor: Processor = new HabitusProcessor(Some(lexiconNER))
 
