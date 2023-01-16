@@ -55,7 +55,8 @@ class TestBeliefReader extends Test {
 
   val beliefTests: Array[BeliefTest] = Array(
     BelieverTest(
-      passingTest, "sent1", "farmers believe that loans are useful.",
+      // This has only failed once, but the circumstances were suspicious.
+      unreliableTest, "sent1", "farmers believe that loans are useful.",
       Seq(("farmers", "loans are useful"))
     ),
     BelieverTest(
