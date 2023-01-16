@@ -336,6 +336,6 @@
   action: makeEventFromSplitUnit
   example: "P and K concentrations in irrigation and floodwater were estimated at 0.1 mg P l-1 and 3.2 mg K l-1"
   pattern: |
-    (?<number>[entity=/B-MEASUREMENT/]) (?<unit1>[entity = /I-MEASUREMENT/]*)  (?<fertilizer> [entity = 'B-FERTILIZER'])  (?<unit2>[word=/\w\-1/])
+    (?<number>[entity=/B-MEASUREMENT/]) (?<unit1>[entity = /I-MEASUREMENT/]*)  (?<fertilizer> [entity = /B-FERTILIZER/])  (?<unit2>[word=/\w\-1/])
     |
     (?<number>[entity=/B-MEASUREMENT/ & tag = "CD"]) (?<unit1>[entity = /I-MEASUREMENT/])  (?<fertilizer> [tag = /^NN/] )  (?<unit2>[word=/\w\-1/])
