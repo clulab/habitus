@@ -15,7 +15,7 @@ resolvers += "clulab" at "https://artifactory.clulab.org/artifactory/sbt-release
 resolvers += "jitpack" at "https://jitpack.io"
 
 libraryDependencies ++= {
-  val procVer = "8.5.3pre"
+  val procVer = "8.5.3-RC10"
 
   Seq(
     "ai.lum"        %% "odinson-core"        % "0.4.0",
