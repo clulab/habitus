@@ -11,7 +11,7 @@ class Test extends FlatSpec with Matchers {
   val toDiscuss = ignore
   val commentedOut = ignore
   val fixedWithNewProcRelease = ignore
-  val unreliableTest = ignore // to be diagnosed and fixed on short order
+  val unreliableTest = it // to be diagnosed and fixed on short order
 
   type Inable = { def in(testFun: => Any)(implicit pos: Position): Unit }
   type Shouldable = { def should(string: String): Inable }

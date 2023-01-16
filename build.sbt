@@ -6,17 +6,16 @@ lazy val core: Project = (project in file("."))
     .enablePlugins(JavaAppPackaging, DockerPlugin)
 
 pomIncludeRepository := { (repo: MavenRepository) =>
-  repo.root.startsWith("http://artifactory.cs.arizona.edu")
+  repo.root.startsWith("https://artifactory.clulab.org")
 }
 
 // for processors-models
-resolvers += ("Artifactory" at "http://artifactory.cs.arizona.edu:8081/artifactory/sbt-release").withAllowInsecureProtocol(true)
+resolvers += "clulab" at "https://artifactory.clulab.org/artifactory/sbt-release"
 // for ontologies related to eidos
 resolvers += "jitpack" at "https://jitpack.io"
 
 libraryDependencies ++= {
-
-  val procVer = "8.5.2"
+  val procVer = "8.5.3"
 
   Seq(
     "ai.lum"        %% "odinson-core"        % "0.4.0",

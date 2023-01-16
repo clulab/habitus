@@ -164,7 +164,6 @@ object EntityHistogramExtractor {
     )
 
     // create the processor
-    Utils.initializeDyNet()
     val processor: Processor = new CluProcessor(optionalNER = Some(lexiconNer))
     // read rules from yml file in resources
     val rules = FileUtils.getTextFromResource("/variables/master.yml")

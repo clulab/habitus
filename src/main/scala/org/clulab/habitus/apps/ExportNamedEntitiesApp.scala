@@ -37,7 +37,6 @@ object ExportNamedEntitiesApp extends App {
       None
     )
 
-    Utils.initializeDyNet()
     new HabitusProcessor(Some(lexiconNER), filter = false)
   }
   val badNamedEntities = Array(
