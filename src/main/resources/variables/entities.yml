@@ -170,7 +170,7 @@
   type: token
   action: appropriateMeasurement
   pattern: |
-    [entity='B-MEASUREMENT' & !word = /19[0-6]\d/] [entity = 'I-MEASUREMENT' & !word = /19[0-6]\d/]*
+    [entity=/B-MEASUREMENT/ & !word = /19[0-6]\d/] [entity = /I-MEASUREMENT/ & !word = /19[0-6]\d/]*
 
 - name: measurement-rule-constructed
   priority: ${rulepriority}
@@ -179,7 +179,7 @@
   example: "from 92 ( slightly N-deficient fields ) to 152 kg / ha"
   action: adjustQuantityNorm
   pattern: |
-    "from" (?<value1>[tag = "CD"]) "(" []{1,3} ")" "to" (?<value2>[entity='B-MEASUREMENT'])  (?<unit>[entity = 'I-MEASUREMENT']+)
+    "from" (?<value1>[tag = "CD"]) "(" []{1,3} ")" "to" (?<value2>[entity=/B-MEASUREMENT/])  (?<unit>[entity = /I-MEASUREMENT/]+)
 
 - name: area-size-entity-rule
   priority: ${rulepriority}
@@ -187,7 +187,7 @@
   type: token
   action: appropriateMeasurement
   pattern: |
-    (?<![word = /^vs\.?|against|compared|^forecast/][word=/\w*/]{0,3}) [entity='B-MEASUREMENT' & !word = "-"] [entity='I-MEASUREMENT']*
+    (?<![word = /^vs\.?|against|compared|^forecast/][word=/\w*/]{0,3}) [entity=/B-MEASUREMENT/ & !word = "-"] [entity=/I-MEASUREMENT/]*
 
 - name: percentage-rule
   priority: ${rulepriority}
