@@ -6,7 +6,7 @@ import org.clulab.habitus.utils.Pairable
 import org.clulab.odin.Mention
 import org.clulab.struct.Interval
 
-case class MentionInfo(contextWindow: String, sentenceText: String, inputFilename: String, label: String, mentionText: String) extends Pairable
+case class MentionInfo(contextWindow: String, sentenceText: String, inputFilename: String, rule: String, label: String, mentionText: String) extends Pairable
 
 object MentionInfo {
 
@@ -20,8 +20,9 @@ object MentionInfo {
     val contextWindow = sentRange.map(sentences(_).getSentenceText).mkString(" ")
     val sentenceText = sentences(mention.sentence).getSentenceText
     val label = mention.label
+    val rule = mention.foundBy
     val mentionText = mention.text
-    new MentionInfo(contextWindow, sentenceText, inputFilename, label, mentionText)
+    new MentionInfo(contextWindow, sentenceText, inputFilename, label, rule, mentionText)
   }
 }
 

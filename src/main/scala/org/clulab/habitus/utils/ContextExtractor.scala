@@ -27,6 +27,8 @@ trait ContextExtractor {
     "fertilizerApplication" -> Set("fertilizer", "application", "apply", "compost", "rate", "concentration"),
     "climate"               -> Set("climate"),
     "agriculture"           -> Set("agriculture"),
+    "woodland"              -> Set("woodland", "woody", "wood"),
+    "population"            -> Set("population", "occupy"),
     NA                      -> Set("N/A")
   )
 

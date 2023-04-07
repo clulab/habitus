@@ -77,12 +77,14 @@ object VariableProcessor {
     val kbs = Seq(
       "lexicons/NONENTITY.tsv",
       "lexicons/FERTILIZER.tsv",
-      "lexicons/CROP.tsv"
+      "lexicons/CROP.tsv",
+      "lexicons/ACTOR.tsv"
     )
     val isLocal = kbs.forall(new File(resourceDir, _).exists)
     val lexiconNer = LexiconNER(kbs,
       Seq(
         true, // case insensitive match for fertilizers
+        true,
         true,
         true
       ),
