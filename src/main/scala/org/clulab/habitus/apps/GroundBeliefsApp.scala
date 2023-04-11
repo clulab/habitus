@@ -4,6 +4,7 @@ import org.clulab.embeddings.{WordEmbeddingMap, WordEmbeddingMapPool}
 import org.clulab.processors.clu.CluProcessor
 import org.clulab.utils.Closer.AutoCloser
 import org.clulab.utils.{FileUtils, Sourcer}
+import org.clulab.wm.eidoscommon.EnglishTagSet
 import org.clulab.wm.eidoscommon.utils.TsvReader
 import zamblauskas.csv.parser._
 import zamblauskas.functional._
@@ -48,10 +49,35 @@ object GroundBeliefsApp extends App {
   val groundingFileName = args.lift(2).getOrElse("../grounding/training_beliefs.tsv")
   val processor = new CluProcessor()
   val wordEmbeddingMap = WordEmbeddingMapPool.getOrElseCreate("/org/clulab/glove/glove.840B.300d.10f", compact = true)
+  val tagSet = new EnglishTagSet()
+
+  def isCanonical(lemma: String, tag: String, ner: String): Boolean = {
+    tagSet.isOntologyContent(tag) // &&
+//      !stopwordManaging.containsStopwordStrict(lemma) &&
+//      !stopwordManaging.containsStopwordNer(ner)
+  }
 
   def calcGrounding(text: String): Array[Float] = {
-    // TODO: Make this more selective
-    val words = processor.mkDocument(text).sentences.flatMap(_.words)
+    val document = {
+      val document = processor.mkDocument(text)
+
+      processor.annotate(document)
+      document
+    }
+    val words = document.sentences.flatMap { sentence =>
+      val words = sentence.words
+      val lemmas = sentence.lemmas.get
+      val tags = sentence.tags.get
+      val ners = sentence.entities.get
+      val canonicalIndices = words.indices.filter { index =>
+        isCanonical(lemmas(index), tags(index), ners(index))
+      }
+      val canonicalWords =
+          if (canonicalIndices.nonEmpty) canonicalIndices.map(words).toArray
+          else words
+
+      canonicalWords
+    }
     val grounding = wordEmbeddingMap.makeCompositeVector(words)
 
     grounding
@@ -82,8 +108,14 @@ object GroundBeliefsApp extends App {
 
     beliefs
   }
-  val documentGroundings = documents.map { document => calcGrounding(document.readable) }
-  val beliefGroundings = beliefs.map { belief => calcGrounding(belief.belief) }
+  val documentGroundings = documents.zipWithIndex.map { case (document, index) =>
+    println(s"Grounding document $index.")
+    calcGrounding(document.readable)
+  }.toArray
+  val beliefGroundings = beliefs.zipWithIndex.map { case (belief, index) =>
+    println(s"Grounding belief $index.")
+    calcGrounding(belief.belief)
+  }.toArray
 
   FileUtils.printWriterFromFile(groundingFileName).autoClose { printWriter =>
     documentGroundings.map { case documentGrounding =>
@@ -95,6 +127,7 @@ object GroundBeliefsApp extends App {
       val sortedBeliefIndexAndDistanceTuples = beliefIndexAndDistanceTuples.sortBy(-_._2)
       val sortedBeliefIndexes = sortedBeliefIndexAndDistanceTuples.map(_._1)
 
+      println(sortedBeliefIndexAndDistanceTuples.mkString(", "))
       printWriter.println(sortedBeliefIndexes.mkString("\t"))
     }
   }
