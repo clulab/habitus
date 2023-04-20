@@ -20,6 +20,7 @@ debugpy==1.6.7
 decorator==5.1.1
 defusedxml==0.7.1
 executing==1.2.0
+faiss-cpu==1.7.3
 fastjsonschema==2.16.3
 filelock==3.12.0
 fqdn==1.5.1
@@ -62,6 +63,7 @@ notebook==6.5.4
 notebook_shim==0.2.2
 numpy==1.24.2
 packaging==23.1
+pandas==2.0.0
 pandocfilters==1.5.0
 parso==0.8.3
 pickleshare==0.7.5
@@ -76,6 +78,7 @@ Pygments==2.15.1
 pyrsistent==0.19.3
 python-dateutil==2.8.2
 python-json-logger==2.0.7
+pytz==2023.3
 pywin32==306
 pywinpty==2.0.10
 PyYAML==6.0
@@ -106,6 +109,7 @@ tqdm==4.65.0
 traitlets==5.9.0
 transformers==4.28.1
 typing_extensions==4.5.0
+tzdata==2023.3
 uri-template==1.2.0
 urllib3==1.26.15
 wcwidth==0.2.6
