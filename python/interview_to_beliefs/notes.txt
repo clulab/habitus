@@ -1,0 +1,18 @@
+for python things
+
+env/Scripts/activate
+
+pip install jupyterlab
+
+pip install -U sentence-transformers
+
+python -m pip install --upgrade pip
+
+cd jupyter
+
+jupyter lab
+
+pip install pandas
+
+pip install faiss-cpu
+
