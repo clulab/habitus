@@ -18,15 +18,16 @@ libraryDependencies ++= {
   val procVer = "8.5.3"
 
   Seq(
-    "ai.lum"        %% "odinson-core"        % "0.4.0",
+    "ai.lum"                %% "odinson-core"        % "0.4.0",
 
-    "org.clulab"    %% "processors-main"     % procVer,
-    "org.clulab"    %% "processors-openie"   % procVer,
-    "org.clulab"    %% "processors-corenlp"  % procVer,
+    "org.clulab"            %% "eidos"               % "1.7.0",
+    "org.clulab"            %% "processors-corenlp"  % procVer,
+    "org.clulab"            %% "processors-main"     % procVer,
+    "org.clulab"            %% "processors-openie"   % procVer,
 
-    "org.clulab"    %% "eidos"               % "1.7.0",
+    "io.github.zamblauskas" %% "scala-csv-parser"    % "0.13.1",
 
-    "org.scalatest" %% "scalatest"           % "3.0.5" % "test"
+    "org.scalatest"         %% "scalatest"           % "3.0.5" % "test"
   )
 }
 
