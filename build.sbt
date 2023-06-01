@@ -5,6 +5,8 @@ scalaVersion := "2.12.15"
 lazy val core: Project = (project in file("."))
     .enablePlugins(JavaAppPackaging, DockerPlugin)
 
+lazy val scraper = project
+
 pomIncludeRepository := { (repo: MavenRepository) =>
   repo.root.startsWith("https://artifactory.clulab.org")
 }
