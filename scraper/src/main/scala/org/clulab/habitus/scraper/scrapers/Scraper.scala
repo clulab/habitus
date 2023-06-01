@@ -10,11 +10,24 @@ import scala.util.Using
 
 abstract class Scraper(val domain: String) {
 
+  def scrape(browser: Browser, html: String): String
+
   def scrapeTo(browser: Browser, page: Page, baseDirName: String): Unit = {
-    // get the filename for the page and basedir
-    // read the text of the html file
-    // scrape to string
-    // save the result as .txt
+    val dirName = clean(domain)
+    val subDirName = s"$baseDirName/$dirName"
+    val path = clean(page.url.getPath)
+
+    val htmlFileName = path + ".html"
+    val htmlLocationName = s"$subDirName/$htmlFileName"
+    val html = FileUtils.getTextFromFile(htmlLocationName)
+
+    val txtFileName = path + ".txt"
+    val txtLocationName = s"$subDirName/$txtFileName"
+    val text = scrape(browser, html)
+
+    Using.resource(FileUtils.printWriterFromFile(txtLocationName)) { printWriter =>
+      printWriter.println(text)
+    }
   }
 
   def matches(page: Page): Boolean = {
@@ -30,16 +43,16 @@ abstract class Scraper(val domain: String) {
 
     Files.createDirectories(new File(subDirName).toPath)
 
-    val path = page.url.getPath
-    val fileName = clean(path)
-    val locationName = s"$subDirName/$fileName.html"
+    val path = clean(page.url.getPath)
+    val htmlFileName = path + ".html"
+    val htmlLocationName = s"$subDirName/$htmlFileName"
 
-    println(s"Downloading ${page.url.toString} to $locationName")
+    println(s"Downloading ${page.url.toString} to $htmlLocationName")
 
     val doc = browser.get(page.url.toString)
     val html = doc.toString
 
-    Using.resource(FileUtils.printWriterFromFile(locationName)) { printWriter =>
+    Using.resource(FileUtils.printWriterFromFile(htmlLocationName)) { printWriter =>
       printWriter.println(html)
     }
   }
