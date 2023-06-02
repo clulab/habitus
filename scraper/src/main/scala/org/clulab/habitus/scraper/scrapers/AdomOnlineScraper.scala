@@ -4,8 +4,6 @@ import net.ruippeixotog.scalascraper.browser.Browser
 import net.ruippeixotog.scalascraper.dsl.DSL._
 import net.ruippeixotog.scalascraper.scraper.ContentExtractors.elementList
 
-import scala.util.Try
-
 class AdomOnlineScraper extends Scraper("adomonline.com") {
 
   def scrape(browser: Browser, html: String): String = {
