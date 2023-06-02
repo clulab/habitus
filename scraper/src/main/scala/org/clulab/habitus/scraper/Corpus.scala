@@ -32,21 +32,21 @@ object Corpus {
     def pages = Seq(
       // 1.1 - 1.14
       // This first one doesn't work with the %e2%82%b5 copied and pasted directly from the browser.
-      Page("https://www.adomonline.com/galamseyer-fined-\u20B51-2-billion-for-illegal-mining/"),
-      Page("https://www.adomonline.com/galamsey-worsened-because-of-you-ashanti-chiefs-call-out-politicians-over-illegal-mining/"),
-      Page("https://www.adomonline.com/galamsey-14-regions-devastated-by-illegal-mining-activities-dr-solomon-owusu-reveals/"),
-      Page("https://www.adomonline.com/stop-illegal-mining-take-advantage-of-govts-employment-programs-okyenhene-to-galamseyers/"),
-      Page("https://www.adomonline.com/chinese-galamsey-queen-still-mining-illegally-inter-ministerial-taskforce-complains/"),
-
-      Page("https://www.adomonline.com/well-fight-galamseyers-with-bulletproof-vest-and-weapons-abu-jinapor/"),
-      Page("https://www.adomonline.com/small-scale-mining-fetched-ghana-almost-us1-2-billion-in-2022-minister/"),
-      Page("https://www.adomonline.com/galamsey-i-feel-the-pains-of-ghanaians-stonebwoy/"),
-      Page("https://www.adomonline.com/police-invite-frimpong-boateng-over-galamsey-report/"),
-      Page("https://www.adomonline.com/galamsey-accident-nadmo-gives-update-on-remaining-trapped-miners/"),
-      Page("https://www.adomonline.com/galamsey-pit-collapse-7-dead-only-5-rescued-alive-many-remain-trapped/"),
-      Page("https://www.adomonline.com/babies-in-galamsey-areas-are-being-born-with-one-eye-without-genitalia-pathologist/"),
-      Page("https://www.adomonline.com/galamsey-sub-chief-two-foreign-nationals-arrested-at-akyem-oda/"),
-      Page("https://www.adomonline.com/galamsey-im-available-if-my-ideas-are-still-needed-prof-frimpong-boateng/"),
+//      Page("https://www.adomonline.com/galamseyer-fined-\u20B51-2-billion-for-illegal-mining/"),
+//      Page("https://www.adomonline.com/galamsey-worsened-because-of-you-ashanti-chiefs-call-out-politicians-over-illegal-mining/"),
+//      Page("https://www.adomonline.com/galamsey-14-regions-devastated-by-illegal-mining-activities-dr-solomon-owusu-reveals/"),
+//      Page("https://www.adomonline.com/stop-illegal-mining-take-advantage-of-govts-employment-programs-okyenhene-to-galamseyers/"),
+//      Page("https://www.adomonline.com/chinese-galamsey-queen-still-mining-illegally-inter-ministerial-taskforce-complains/"),
+//
+//      Page("https://www.adomonline.com/well-fight-galamseyers-with-bulletproof-vest-and-weapons-abu-jinapor/"),
+//      Page("https://www.adomonline.com/small-scale-mining-fetched-ghana-almost-us1-2-billion-in-2022-minister/"),
+//      Page("https://www.adomonline.com/galamsey-i-feel-the-pains-of-ghanaians-stonebwoy/"),
+//      Page("https://www.adomonline.com/police-invite-frimpong-boateng-over-galamsey-report/"),
+//      Page("https://www.adomonline.com/galamsey-accident-nadmo-gives-update-on-remaining-trapped-miners/"),
+//      Page("https://www.adomonline.com/galamsey-pit-collapse-7-dead-only-5-rescued-alive-many-remain-trapped/"),
+//      Page("https://www.adomonline.com/babies-in-galamsey-areas-are-being-born-with-one-eye-without-genitalia-pathologist/"),
+//      Page("https://www.adomonline.com/galamsey-sub-chief-two-foreign-nationals-arrested-at-akyem-oda/"),
+//      Page("https://www.adomonline.com/galamsey-im-available-if-my-ideas-are-still-needed-prof-frimpong-boateng/"),
 
       // 2.1 - 2.10
       Page("https://citifmonline.com/2018/04/three-illegal-miners-die-galamsey-pit-bekwai/"),

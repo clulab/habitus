@@ -50,7 +50,7 @@ abstract class Scraper(val domain: String) {
     println(s"Downloading ${page.url.toString} to $htmlLocationName")
 
     val doc = browser.get(page.url.toString)
-    val html = doc.toString
+    val html = doc.toHtml
 
     Using.resource(FileUtils.printWriterFromFile(htmlLocationName)) { printWriter =>
       printWriter.println(html)
