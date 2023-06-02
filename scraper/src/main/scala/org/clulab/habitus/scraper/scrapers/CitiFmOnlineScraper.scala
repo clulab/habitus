@@ -45,9 +45,17 @@ class CitiFmOnlineScraper extends Scraper("citifmonline.com") {
         .getOrElse("[none]")
     val text = paragraphs
         .map { paragraph =>
-          paragraph.text.trim
+          val text = paragraph.text.trim
+          val regexMatchOpt = CitiFmOnlineScraper.contextlyRegex.findFirstMatchIn(text)
+
+          regexMatchOpt
+              .map { regexMatch =>
+                text.substring(regexMatch.end).trim
+              }
+              .getOrElse(text)
         }
         .filter { text =>
+          text.nonEmpty && // After the regex match it might be empty.
           text != "\u2013" &&
           !bylineOpt.exists(_.text == text)
         }
@@ -62,4 +70,5 @@ object CitiFmOnlineScraper {
     "Source: ",
     "By: "
   )
+  val contextlyRegex = "^\\[contextly_sidebar id=\u201D[^\u201D]+\u201D\\]".r
 }
