@@ -9,6 +9,4 @@ object ScraperApp extends App {
   val browser: Browser = JsoupBrowser()
 
   corpus.scrape(browser, baseDirName)
-
-  println("I got here!")
 }
