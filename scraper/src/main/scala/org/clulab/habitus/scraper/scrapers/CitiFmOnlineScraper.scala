@@ -3,6 +3,7 @@ package org.clulab.habitus.scraper.scrapers
 import net.ruippeixotog.scalascraper.browser.Browser
 import net.ruippeixotog.scalascraper.dsl.DSL._
 import net.ruippeixotog.scalascraper.scraper.ContentExtractors.elementList
+import org.clulab.habitus.scraper.{Page, Scrape}
 
 case class Byline(text: String, prefix: String) {
   val source = text.substring(prefix.length)
@@ -26,7 +27,7 @@ object Byline {
 
 class CitiFmOnlineScraper extends Scraper("citifmonline.com") {
 
-  def scrape(browser: Browser, html: String): String = {
+  def scrape(browser: Browser, page: Page, html: String): Scrape = {
     val doc = browser.parseString(html)
     val title = doc.title
     val timestamp = (doc >> elementList("div.jeg_meta_date")).head.text.trim
@@ -40,9 +41,8 @@ class CitiFmOnlineScraper extends Scraper("citifmonline.com") {
 
           Byline.fromTextOption(text)
         }
-    val source = bylineOpt
+    val sourceOpt = bylineOpt
         .map(_.source)
-        .getOrElse("[none]")
     val text = paragraphs
         .map { paragraph =>
           val text = paragraph.text.trim
@@ -61,7 +61,7 @@ class CitiFmOnlineScraper extends Scraper("citifmonline.com") {
         }
         .mkString("\n\n")
 
-    s"$title\n\n$timestamp\n\n$source\n\n\n$text"
+    Scrape(page.url, Some(title), Some(timestamp), sourceOpt, text)
   }
 }
 

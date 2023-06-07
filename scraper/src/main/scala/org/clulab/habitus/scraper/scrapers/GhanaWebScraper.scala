@@ -3,13 +3,14 @@ package org.clulab.habitus.scraper.scrapers
 import net.ruippeixotog.scalascraper.browser.Browser
 import net.ruippeixotog.scalascraper.dsl.DSL._
 import net.ruippeixotog.scalascraper.scraper.ContentExtractors.elementList
+import org.clulab.habitus.scraper.{Page, Scrape}
 import org.json4s.{DefaultFormats, JObject}
 import org.json4s.jackson.JsonMethods
 
 class GhanaWebScraper extends Scraper("ghanaweb.com") {
   implicit val formats: DefaultFormats.type = DefaultFormats
 
-  def scrape(browser: Browser, html: String): String = {
+  def scrape(browser: Browser, page: Page, html: String): Scrape = {
     val doc = browser.parseString(html)
     val title = doc.title
     val jObjectOpt = (doc >> elementList("script"))
@@ -25,9 +26,9 @@ class GhanaWebScraper extends Scraper("ghanaweb.com") {
     val timestamp = jObjectOpt.map { jObject =>
       ((jObject \ "@graph")(0) \ "datePublished").extract[String]
     }.get
-    val source = jObjectOpt.map { jObject =>
+    val sourceOpt = jObjectOpt.map { jObject =>
       ((jObject \ "@graph")(0) \ "publisher" \ "name").extract[String]
-    }.getOrElse("[none]")
+    }
     val paragraphs = doc >> elementList("p#article-123")
     val text = paragraphs
         .flatMap { paragraph =>
@@ -41,6 +42,6 @@ class GhanaWebScraper extends Scraper("ghanaweb.com") {
         .filter(_.nonEmpty)
         .mkString("\n\n")
 
-    s"$title\n\n$timestamp\n\n$source\n\n\n$text"
+    Scrape(page.url, Some(title), Some(timestamp), sourceOpt, text)
   }
 }

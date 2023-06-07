@@ -1,7 +1,7 @@
 package org.clulab.habitus.scraper.scrapers
 
 import net.ruippeixotog.scalascraper.browser.Browser
-import org.clulab.habitus.scraper.Page
+import org.clulab.habitus.scraper.{Page, Scrape}
 import org.clulab.utils.FileUtils
 
 import java.io.File
@@ -10,7 +10,7 @@ import scala.util.Using
 
 abstract class Scraper(val domain: String) {
 
-  def scrape(browser: Browser, html: String): String
+  def scrape(browser: Browser, page: Page, html: String): Scrape
 
   def scrapeTo(browser: Browser, page: Page, baseDirName: String): Unit = {
     val dirName = clean(domain)
@@ -23,7 +23,7 @@ abstract class Scraper(val domain: String) {
 
     val txtFileName = path + ".txt"
     val txtLocationName = s"$subDirName/$txtFileName"
-    val text = scrape(browser, html)
+    val text = scrape(browser, page, html).toText
 
     Using.resource(FileUtils.printWriterFromFile(txtLocationName)) { printWriter =>
       printWriter.println(text)
