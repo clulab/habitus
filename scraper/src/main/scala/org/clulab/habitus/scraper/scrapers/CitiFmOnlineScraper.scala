@@ -30,7 +30,7 @@ class CitiFmOnlineScraper extends Scraper("citifmonline.com") {
   def scrape(browser: Browser, page: Page, html: String): Scrape = {
     val doc = browser.parseString(html)
     val title = doc.title
-    val timestamp = (doc >> elementList("div.jeg_meta_date")).head.text.trim
+    val dateline = (doc >> elementList("div.jeg_meta_date")).head.text.trim
     val paragraphs = (doc >> elementList("div.content-inner > p"))
         // Sometimes there are empty paragraphs after the byline so that it
         // isn't last.  Remove the empty ones preventatively.
@@ -41,8 +41,6 @@ class CitiFmOnlineScraper extends Scraper("citifmonline.com") {
 
           Byline.fromTextOption(text)
         }
-    val sourceOpt = bylineOpt
-        .map(_.source)
     val text = paragraphs
         .map { paragraph =>
           val text = paragraph.text.trim
@@ -61,7 +59,7 @@ class CitiFmOnlineScraper extends Scraper("citifmonline.com") {
         }
         .mkString("\n\n")
 
-    Scrape(page.url, Some(title), Some(timestamp), sourceOpt, text)
+    Scrape(page.url, Some(title), Some(dateline), bylineOpt.map(_.source), text)
   }
 }
 

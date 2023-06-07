@@ -23,10 +23,10 @@ class GhanaWebScraper extends Scraper("ghanaweb.com") {
 
           jObject
         }
-    val timestamp = jObjectOpt.map { jObject =>
+    val dateline = jObjectOpt.map { jObject =>
       ((jObject \ "@graph")(0) \ "datePublished").extract[String]
     }.get
-    val sourceOpt = jObjectOpt.map { jObject =>
+    val bylineOpt = jObjectOpt.map { jObject =>
       ((jObject \ "@graph")(0) \ "publisher" \ "name").extract[String]
     }
     val paragraphs = doc >> elementList("p#article-123")
@@ -42,6 +42,6 @@ class GhanaWebScraper extends Scraper("ghanaweb.com") {
         .filter(_.nonEmpty)
         .mkString("\n\n")
 
-    Scrape(page.url, Some(title), Some(timestamp), sourceOpt, text)
+    Scrape(page.url, Some(title), Some(dateline), bylineOpt, text)
   }
 }

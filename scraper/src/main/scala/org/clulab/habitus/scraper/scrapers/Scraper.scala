@@ -21,12 +21,22 @@ abstract class Scraper(val domain: String) {
     val htmlLocationName = s"$subDirName/$htmlFileName"
     val html = FileUtils.getTextFromFile(htmlLocationName)
 
+    val scraped = scrape(browser, page, html)
+
     val txtFileName = path + ".txt"
     val txtLocationName = s"$subDirName/$txtFileName"
-    val text = scrape(browser, page, html).toText
+    val text = scraped.toText
+
+    val jsonFileName = path + ".json"
+    val jsonLocationName = s"$subDirName/$jsonFileName"
+    val json = scraped.toJson
 
     Using.resource(FileUtils.printWriterFromFile(txtLocationName)) { printWriter =>
       printWriter.println(text)
+    }
+
+    Using.resource(FileUtils.printWriterFromFile(jsonLocationName)) { printWriter =>
+      printWriter.println(json)
     }
   }
 

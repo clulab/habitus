@@ -1,15 +1,29 @@
 package org.clulab.habitus.scraper
 
+import org.json4s.{DefaultFormats, Formats}
+import org.json4s.JsonDSL._
+import org.json4s.jackson.{prettyJson, renderJValue}
+
 import java.net.URL
 
-case class Scrape(url: URL, titleOpt: Option[String], timestampOpt: Option[String], sourceOpt: Option[String], text: String) {
-  def toText: String = {
-    val source = sourceOpt.getOrElse("[none]")
+case class Scrape(url: URL, titleOpt: Option[String], datelineOpt: Option[String], bylineOpt: Option[String], text: String) {
+  implicit val formats: Formats = DefaultFormats
 
-    s"${titleOpt.get}\n\n${timestampOpt.get}\n\n$source\n\n\n$text"
+  def toText: String = {
+    val byline = bylineOpt.getOrElse("[none]")
+
+    s"${titleOpt.get}\n\n${datelineOpt.get}\n\n$byline\n\n\n$text"
   }
 
   def toJson: String = {
-    ???
+    val jObject =
+        ("url" -> url.toString) ~
+        ("title" -> titleOpt) ~
+        ("dateline" -> datelineOpt) ~
+        ("byline" -> bylineOpt) ~
+        ("text" -> text)
+    val json = prettyJson(renderJValue(jObject))
+
+    json
   }
 }

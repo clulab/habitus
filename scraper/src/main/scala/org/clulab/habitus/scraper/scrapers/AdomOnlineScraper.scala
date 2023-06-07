@@ -10,16 +10,17 @@ class AdomOnlineScraper extends Scraper("adomonline.com") {
   def scrape(browser: Browser, page: Page, html: String): Scrape = {
     val doc = browser.parseString(html)
     val title = doc.title
-    val timestamp = (doc >> elementList("time.entry-date")).head.text.trim
-    val sourceOpt = (doc >> elementList("div.td-post-source-via a")).headOption.map(_.text.trim)
+    val dateline = (doc >> elementList("time.entry-date")).head.text.trim
+    val bylineOpt = (doc >> elementList("div.td-post-source-via a")).headOption.map(_.text.trim)
     val paragraphs = doc >> elementList("div.td-post-content > p")
     val text = paragraphs
       .map { paragraph =>
         paragraph.text.trim
       }
       .filter(_.nonEmpty)
+      .filter(_ != "READ ALSO:")
       .mkString("\n\n")
 
-    Scrape(page.url, Some(title), Some(timestamp), sourceOpt, text)
+    Scrape(page.url, Some(title), Some(dateline), bylineOpt, text)
   }
 }
