@@ -1,13 +1,14 @@
-package org.clulab.habitus.scraper.scrapers
+package org.clulab.habitus.scraper.scrapers.article
 
 import net.ruippeixotog.scalascraper.browser.Browser
 import net.ruippeixotog.scalascraper.dsl.DSL._
 import net.ruippeixotog.scalascraper.scraper.ContentExtractors.elementList
-import org.clulab.habitus.scraper.{Page, Scrape}
+import org.clulab.habitus.scraper.Page
+import org.clulab.habitus.scraper.scrapes.ArticleScrape
 
-class AdomOnlineScraper extends Scraper("adomonline.com") {
+class AdomOnlineArticleScraper extends PageArticleScraper("adomonline.com") {
 
-  def scrape(browser: Browser, page: Page, html: String): Scrape = {
+  def scrape(browser: Browser, page: Page, html: String): ArticleScrape = {
     val doc = browser.parseString(html)
     val title = doc.title
     val dateline = (doc >> elementList("time.entry-date")).head.text.trim
@@ -21,6 +22,6 @@ class AdomOnlineScraper extends Scraper("adomonline.com") {
       .filter(_ != "READ ALSO:")
       .mkString("\n\n")
 
-    Scrape(page.url, Some(title), Some(dateline), bylineOpt, text)
+    ArticleScrape(page.url, Some(title), Some(dateline), bylineOpt, text)
   }
 }

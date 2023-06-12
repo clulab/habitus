@@ -1,8 +1,8 @@
-package org.clulab.habitus.scraper
+package org.clulab.habitus.scraper.scrapes
 
 import java.net.URL
 
-case class SearchScrape(url: URL) {
+case class IndexScrape(url: URL) {
 
   def toText: String = {
     url.toString

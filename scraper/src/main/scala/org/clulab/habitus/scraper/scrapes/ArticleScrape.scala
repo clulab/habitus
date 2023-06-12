@@ -1,12 +1,12 @@
-package org.clulab.habitus.scraper
+package org.clulab.habitus.scraper.scrapes
 
-import org.json4s.{DefaultFormats, Formats}
 import org.json4s.JsonDSL._
 import org.json4s.jackson.{prettyJson, renderJValue}
+import org.json4s.{DefaultFormats, Formats}
 
 import java.net.URL
 
-case class Scrape(url: URL, titleOpt: Option[String], datelineOpt: Option[String], bylineOpt: Option[String], text: String) {
+case class ArticleScrape(url: URL, titleOpt: Option[String], datelineOpt: Option[String], bylineOpt: Option[String], text: String) {
   implicit val formats: Formats = DefaultFormats
 
   def toText: String = {

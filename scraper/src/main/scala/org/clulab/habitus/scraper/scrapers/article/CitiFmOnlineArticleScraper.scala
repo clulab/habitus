@@ -1,9 +1,10 @@
-package org.clulab.habitus.scraper.scrapers
+package org.clulab.habitus.scraper.scrapers.article
 
 import net.ruippeixotog.scalascraper.browser.Browser
 import net.ruippeixotog.scalascraper.dsl.DSL._
 import net.ruippeixotog.scalascraper.scraper.ContentExtractors.elementList
-import org.clulab.habitus.scraper.{Page, Scrape}
+import org.clulab.habitus.scraper.Page
+import org.clulab.habitus.scraper.scrapes.ArticleScrape
 
 case class Byline(text: String, prefix: String) {
   val source = text.substring(prefix.length)
@@ -25,9 +26,9 @@ object Byline {
   }
 }
 
-class CitiFmOnlineScraper extends Scraper("citifmonline.com") {
+class CitiFmOnlineArticleScraper extends PageArticleScraper("citifmonline.com") {
 
-  def scrape(browser: Browser, page: Page, html: String): Scrape = {
+  def scrape(browser: Browser, page: Page, html: String): ArticleScrape = {
     val doc = browser.parseString(html)
     val title = doc.title
     val dateline = (doc >> elementList("div.jeg_meta_date")).head.text.trim
@@ -44,7 +45,7 @@ class CitiFmOnlineScraper extends Scraper("citifmonline.com") {
     val text = paragraphs
         .map { paragraph =>
           val text = paragraph.text.trim
-          val regexMatchOpt = CitiFmOnlineScraper.contextlyRegex.findFirstMatchIn(text)
+          val regexMatchOpt = CitiFmOnlineArticleScraper.contextlyRegex.findFirstMatchIn(text)
 
           regexMatchOpt
               .map { regexMatch =>
@@ -59,11 +60,11 @@ class CitiFmOnlineScraper extends Scraper("citifmonline.com") {
         }
         .mkString("\n\n")
 
-    Scrape(page.url, Some(title), Some(dateline), bylineOpt.map(_.source), text)
+    ArticleScrape(page.url, Some(title), Some(dateline), bylineOpt.map(_.source), text)
   }
 }
 
-object CitiFmOnlineScraper {
+object CitiFmOnlineArticleScraper {
   val bylinePrefixes = Seq(
     "Source: ",
     "By: "

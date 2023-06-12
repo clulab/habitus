@@ -1,16 +1,17 @@
-package org.clulab.habitus.scraper.scrapers
+package org.clulab.habitus.scraper.scrapers.article
 
 import net.ruippeixotog.scalascraper.browser.Browser
 import net.ruippeixotog.scalascraper.dsl.DSL._
 import net.ruippeixotog.scalascraper.scraper.ContentExtractors.elementList
-import org.clulab.habitus.scraper.{Page, Scrape}
-import org.json4s.{DefaultFormats, JObject}
+import org.clulab.habitus.scraper.Page
+import org.clulab.habitus.scraper.scrapes.ArticleScrape
 import org.json4s.jackson.JsonMethods
+import org.json4s.{DefaultFormats, JObject}
 
-class GhanaWebScraper extends Scraper("ghanaweb.com") {
+class GhanaWebArticleScraper extends PageArticleScraper("ghanaweb.com") {
   implicit val formats: DefaultFormats.type = DefaultFormats
 
-  def scrape(browser: Browser, page: Page, html: String): Scrape = {
+  def scrape(browser: Browser, page: Page, html: String): ArticleScrape = {
     val doc = browser.parseString(html)
     val title = doc.title
     val jObjectOpt = (doc >> elementList("script"))
@@ -42,6 +43,6 @@ class GhanaWebScraper extends Scraper("ghanaweb.com") {
         .filter(_.nonEmpty)
         .mkString("\n\n")
 
-    Scrape(page.url, Some(title), Some(dateline), bylineOpt, text)
+    ArticleScrape(page.url, Some(title), Some(dateline), bylineOpt, text)
   }
 }
