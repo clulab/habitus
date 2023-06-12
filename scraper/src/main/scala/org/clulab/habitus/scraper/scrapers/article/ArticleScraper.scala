@@ -8,7 +8,7 @@ import org.clulab.utils.FileUtils
 
 import scala.util.{Try, Using}
 
-abstract class PageArticleScraper(val domain: String) extends Scraper {
+abstract class PageArticleScraper(val domain: String) extends Scraper[ArticleScrape] {
   val cleaner = new Cleaner()
 
   def scrape(browser: Browser, page: Page, html: String): ArticleScrape
