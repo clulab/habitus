@@ -6,7 +6,9 @@ import org.clulab.habitus.scraper.{Corpus, CorpusDownloader}
 object ArticleDownloaderApp extends App {
 //  val corpusFileName = args.lift(0).getOrElse("./scraper/articlecorpus.txt")
 //  val corpusFileName = args.lift(0).getOrElse("./scraper/thechronicle_articlecorpus.txt")
-  val corpusFileName = args.lift(0).getOrElse("./scraper/threenews_articlecorpus.txt")
+//  val corpusFileName = args.lift(0).getOrElse("./scraper/threenews_articlecorpus.txt")
+//  val corpusFileName = args.lift(0).getOrElse("./scraper/etvghana_articlecorpus.txt")
+  val corpusFileName = args.lift(0).getOrElse("./scraper/restarticles.txt")
   val baseDirName = args.lift(1).getOrElse("../corpora/scraper/articles")
   val corpus = Corpus(corpusFileName)
   val downloader = new CorpusDownloader(corpus)

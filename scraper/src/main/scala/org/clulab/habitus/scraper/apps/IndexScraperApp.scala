@@ -13,10 +13,12 @@ import org.clulab.habitus.scraper.scrapers.index.{CorpusIndexScraper}
 object IndexScraperApp extends App {
 //  val corpusFileName = args.lift(0).getOrElse("./scraper/indexcorpus.txt")
 //  val corpusFileName = args.lift(0).getOrElse("./scraper/thechronicle_indexcorpus.txt")
-  val corpusFileName = args.lift(0).getOrElse("./scraper/threenews_indexcorpus.txt")
+//  val corpusFileName = args.lift(0).getOrElse("./scraper/threenews_indexcorpus.txt")
+  val corpusFileName = args.lift(0).getOrElse("./scraper/etvghana_indexcorpus.txt")
 //  val articleFileName = args.lift(1).getOrElse("./scraper/articlecorpus.txt")
 //  val articleFileName = args.lift(1).getOrElse("./scraper/thechronicle_articlecorpus.txt")
-  val articleFileName = args.lift(1).getOrElse("./scraper/threenews_articlecorpus.txt")
+//  val articleFileName = args.lift(1).getOrElse("./scraper/threenews_articlecorpus.txt")
+  val articleFileName = args.lift(1).getOrElse("./scraper/etvghana_articlecorpus.txt")
 
   val baseDirName = args.lift(1).getOrElse("../corpora/scraper/indexes")
   val corpus = Corpus(corpusFileName)
