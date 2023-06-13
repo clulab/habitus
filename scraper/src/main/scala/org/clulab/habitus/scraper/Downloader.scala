@@ -2,6 +2,8 @@ package org.clulab.habitus.scraper
 
 import net.ruippeixotog.scalascraper.browser.Browser
 import org.clulab.utils.FileUtils
+import org.jsoup.Jsoup
+import org.jsoup.nodes.DocumentType
 
 import java.io.File
 import java.nio.file.Files
@@ -21,13 +23,19 @@ class PageDownloader() {
     val htmlFileName = file + ".html"
     val htmlLocationName = s"$subDirName/$htmlFileName"
 
-    println(s"Downloading ${page.url.toString} to $htmlLocationName")
+    if (!new File(htmlLocationName).exists) {
+      println(s"Downloading ${page.url.toString} to $htmlLocationName")
 
-    val doc = browser.get(page.url.toString)
-    val html = doc.toHtml
+      val doc = Try(browser.get(page.url.toString)).getOrElse {
+        // Wait for 10 seconds if necessary.
+        // Jsoup.connect(page.url.toString).timeout(10 * 1000).get()
+        browser.get(page.url.toString)
+      }
+      val html = doc.toHtml
 
-    Using.resource(FileUtils.printWriterFromFile(htmlLocationName)) { printWriter =>
-      printWriter.println(html)
+      Using.resource(FileUtils.printWriterFromFile(htmlLocationName)) { printWriter =>
+        printWriter.println(html)
+      }
     }
   }
 }
