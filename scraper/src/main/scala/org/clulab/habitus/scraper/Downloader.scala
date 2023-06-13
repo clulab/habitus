@@ -45,11 +45,14 @@ class CorpusDownloader(val corpus: Corpus) {
 
   def download(browser: Browser, baseDirName: String): Unit = {
     corpus.lines.foreach { line =>
-      val page = Page(line)
-      val downloadTry = Try(pageDownloader.download(browser, page, baseDirName))
+      if (!line.contains("--")) {
+        val page = Page(line)
 
-      if (downloadTry.isFailure)
-        println(s"Download of ${page.url.toString} failed!")
+        val downloadTry = Try(pageDownloader.download(browser, page, baseDirName))
+
+        if (downloadTry.isFailure)
+          println(s"Download of ${page.url.toString} failed!")
+      }
     }
   }
 }
