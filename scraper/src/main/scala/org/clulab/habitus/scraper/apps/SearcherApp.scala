@@ -1,5 +1,6 @@
 package org.clulab.habitus.scraper.apps
 
-class IndexerApp {
+class SearcherApp extends App {
+
 
 }

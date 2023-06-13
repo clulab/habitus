@@ -40,7 +40,9 @@ abstract class PageIndexScraper(val domain: String) extends Scraper[IndexScrape]
 
 class CorpusIndexScraper(val corpus: Corpus) {
   val scrapers: Seq[PageIndexScraper] = Seq(
-    new GhanaWebIndexScraper()
+    new GhanaWebIndexScraper(),
+    new TheChronicleIndexScraper(),
+    new ThreeNewsIndexScraper()
   )
 
   def getPageScraper(page: Page): PageIndexScraper = {

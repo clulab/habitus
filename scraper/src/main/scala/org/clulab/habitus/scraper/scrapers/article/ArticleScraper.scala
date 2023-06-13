@@ -53,7 +53,9 @@ class CorpusArticleScraper(val corpus: Corpus) {
   val scrapers = Seq(
     new AdomOnlineArticleScraper(),
     new CitiFmOnlineArticleScraper(),
-    new GhanaWebArticleScraper()
+    new GhanaWebArticleScraper(),
+    new TheChronicleArticleScraper(),
+    new ThreeNewsArticleScraper()
   )
 
   def getPageScraper(page: Page): PageArticleScraper = {

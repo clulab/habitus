@@ -11,7 +11,7 @@ class PageDownloader() {
   val cleaner = new Cleaner()
 
   def download(browser: Browser, page: Page, baseDirName: String): Unit = {
-    val domain = page.url.getHost.split('.').takeRight(2).mkString(".") // Shorten to one .
+    val domain = page.url.getHost.split('.')/*.takeRight(2)*/.mkString(".") // Shorten to one .
     val dirName = cleaner.clean(domain)
     val subDirName = s"$baseDirName/$dirName"
 
@@ -23,10 +23,9 @@ class PageDownloader() {
 
     println(s"Downloading ${page.url.toString} to $htmlLocationName")
 
-//    val doc = browser.get(page.url.toString)
-//    val html = doc.toHtml
+    val doc = browser.get(page.url.toString)
+    val html = doc.toHtml
 
-    val html = "testing"
     Using.resource(FileUtils.printWriterFromFile(htmlLocationName)) { printWriter =>
       printWriter.println(html)
     }
