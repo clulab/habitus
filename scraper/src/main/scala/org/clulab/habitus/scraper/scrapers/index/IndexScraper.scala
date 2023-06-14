@@ -46,7 +46,8 @@ class CorpusIndexScraper(val corpus: Corpus) {
     new EtvGhanaIndexScraper(),
     new HappyGhanaIndexScraper(),
     new GnaIndexScraper(),
-    new AdomOnlineIndexScraper()
+    new AdomOnlineIndexScraper(),
+    new CitiFmOnlineIndexScraper()
   )
 
   def getPageScraper(page: Page): PageIndexScraper = {
