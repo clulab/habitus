@@ -1,18 +1,18 @@
-package org.clulab.habitus.scraper.scrapers.index
+package org.clulab.habitus.scraper.scrapers.search
 
 import net.ruippeixotog.scalascraper.browser.Browser
 import org.clulab.habitus.scraper.{Cleaner, Corpus, Page}
 import org.clulab.habitus.scraper.scrapers.Scraper
-import org.clulab.habitus.scraper.scrapes.IndexScrape
+import org.clulab.habitus.scraper.scrapes.SearchScrape
 import org.clulab.utils.FileUtils
 
 import java.io.PrintWriter
 import scala.util.{Try, Using}
 
-abstract class PageIndexScraper(val domain: String) extends Scraper[IndexScrape] {
+abstract class PageSearchScraper(val domain: String) extends Scraper[SearchScrape] {
   val cleaner = new Cleaner()
 
-  def scrape(browser: Browser, page: Page, html: String): IndexScrape
+  def scrape(browser: Browser, page: Page, html: String): SearchScrape
 
   def scrapeTo(browser: Browser, page: Page, baseDirName: String, printWriter: PrintWriter): Unit = {
     val dirName = cleaner.clean(domain)
@@ -25,8 +25,9 @@ abstract class PageIndexScraper(val domain: String) extends Scraper[IndexScrape]
 
     val scraped = scrape(browser, page, html)
 
-    scraped.links.foreach { link =>
-      printWriter.println(link)
+    // TODO Let the inquirer to this?
+    1.to(scraped.count).foreach { index =>
+      printWriter.println(s"${page.url.toString} - $index")
     }
   }
 
@@ -34,23 +35,24 @@ abstract class PageIndexScraper(val domain: String) extends Scraper[IndexScrape]
     val host = page.url.getHost
 
     // It is either the complete domain or a subdomain.
+    // TODO: Change this!
     host == domain || host.endsWith("." + domain)
   }
 }
 
-class CorpusIndexScraper(val corpus: Corpus) {
-  val scrapers: Seq[PageIndexScraper] = Seq(
-    new AdomOnlineIndexScraper(),
-    new CitiFmOnlineIndexScraper(),
-    new EtvGhanaIndexScraper(),
-    new GhanaWebIndexScraper(),
-    new GnaIndexScraper(),
-    new HappyGhanaIndexScraper(),
-    new TheChronicleIndexScraper(),
-    new ThreeNewsIndexScraper()
+class CorpusSearchScraper(val corpus: Corpus) {
+  val scrapers: Seq[PageSearchScraper] = Seq(
+    new AdomOnlineSearchScraper(),
+    new CitiFmOnlineSearchScraper(),
+    new EtvGhanaSearchScraper(),
+    new GhanaWebSearchScraper(),
+    new GnaSearchScraper(),
+    new HappyGhanaSearchScraper(),
+    new TheChronicleSearchScraper(),
+    new ThreeNewsSearchScraper()
   )
 
-  def getPageScraper(page: Page): PageIndexScraper = {
+  def getPageScraper(page: Page): PageSearchScraper = {
     val scraperOpt = scrapers.find(_.matches(page))
 
     scraperOpt.get
