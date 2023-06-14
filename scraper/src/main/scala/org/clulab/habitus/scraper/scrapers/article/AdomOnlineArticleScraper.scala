@@ -6,7 +6,7 @@ import net.ruippeixotog.scalascraper.scraper.ContentExtractors.elementList
 import org.clulab.habitus.scraper.Page
 import org.clulab.habitus.scraper.scrapes.ArticleScrape
 
-class AdomOnlineArticleScraper extends PageArticleScraper("adomonline.com") {
+class AdomOnlineArticleScraper extends PageArticleScraper("www.adomonline.com") {
 
   def scrape(browser: Browser, page: Page, html: String): ArticleScrape = {
     val doc = browser.parseString(html)

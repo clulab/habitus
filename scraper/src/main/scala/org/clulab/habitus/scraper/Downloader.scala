@@ -29,6 +29,7 @@ class PageDownloader() {
       val doc = Try(browser.get(page.url.toString)).getOrElse {
         // Wait for 10 seconds if necessary.
         // Jsoup.connect(page.url.toString).timeout(10 * 1000).get()
+        Thread.sleep(3000)
         browser.get(page.url.toString)
       }
       val html = doc.toHtml
