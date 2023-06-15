@@ -1,8 +1,8 @@
 package org.clulab.habitus.scraper.apps
 
 import net.ruippeixotog.scalascraper.browser.{Browser, JsoupBrowser}
-import org.clulab.habitus.scraper.CorpusDownloader
 import org.clulab.habitus.scraper.corpora.PageCorpus
+import org.clulab.habitus.scraper.downloaders.CorpusDownloader
 
 /**
   * Take the list of URLs in corpusFileName and download the pages into the

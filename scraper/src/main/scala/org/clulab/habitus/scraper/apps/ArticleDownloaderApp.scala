@@ -1,8 +1,8 @@
 package org.clulab.habitus.scraper.apps
 
 import net.ruippeixotog.scalascraper.browser.{Browser, JsoupBrowser}
-import org.clulab.habitus.scraper.CorpusDownloader
 import org.clulab.habitus.scraper.corpora.PageCorpus
+import org.clulab.habitus.scraper.downloaders.CorpusDownloader
 
 object ArticleDownloaderApp extends App {
 //  val corpusFileName = args.lift(0).getOrElse("./scraper/articlecorpus.txt")

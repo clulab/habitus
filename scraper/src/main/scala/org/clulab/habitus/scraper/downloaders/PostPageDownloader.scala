@@ -1,14 +1,14 @@
-package org.clulab.habitus.scraper
+package org.clulab.habitus.scraper.downloaders
 
 import net.ruippeixotog.scalascraper.browser.Browser
-import org.clulab.habitus.scraper.corpora.PageCorpus
+import org.clulab.habitus.scraper.{Cleaner, Page}
 import org.clulab.utils.FileUtils
 
 import java.io.File
 import java.nio.file.Files
 import scala.util.{Try, Using}
 
-class PageDownloader() {
+class PostPageDownloader() {
   val cleaner = new Cleaner()
 
   def download(browser: Browser, page: Page, baseDirName: String): Unit = {
@@ -37,26 +37,6 @@ class PageDownloader() {
       Using.resource(FileUtils.printWriterFromFile(htmlLocationName)) { printWriter =>
         printWriter.println(html)
       }
-    }
-  }
-}
-
-class CorpusDownloader(val corpus: PageCorpus) {
-  val pageDownloader = new PageDownloader()
-
-  def download(browser: Browser, baseDirName: String): Unit = {
-    // TODO: This exception needs to be somewhere else.
-    val validItems = corpus.items.filterNot { page =>
-      val urlName = page.url.toString
-
-      urlName.contains("--")
-    }
-
-    validItems.foreach { page =>
-      val downloadTry = Try(pageDownloader.download(browser, page, baseDirName))
-
-      if (downloadTry.isFailure)
-        println(s"Download of ${page.url.toString} failed!")
     }
   }
 }
