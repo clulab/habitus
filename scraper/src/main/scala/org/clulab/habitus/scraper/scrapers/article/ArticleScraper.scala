@@ -1,8 +1,9 @@
 package org.clulab.habitus.scraper.scrapers.article
 
 import net.ruippeixotog.scalascraper.browser.Browser
+import org.clulab.habitus.scraper.corpora.PageCorpus
 import org.clulab.habitus.scraper.scrapers.Scraper
-import org.clulab.habitus.scraper.{Cleaner, Corpus, Page}
+import org.clulab.habitus.scraper.{Cleaner, Page}
 import org.clulab.habitus.scraper.scrapes.ArticleScrape
 import org.clulab.utils.FileUtils
 
@@ -49,7 +50,7 @@ abstract class PageArticleScraper(val domain: String) extends Scraper[ArticleScr
   }
 }
 
-class CorpusArticleScraper(val corpus: Corpus) {
+class CorpusArticleScraper(val corpus: PageCorpus) {
   val scrapers = Seq(
     new AdomOnlineArticleScraper(),
     new CitiFmOnlineArticleScraper(),
@@ -68,8 +69,7 @@ class CorpusArticleScraper(val corpus: Corpus) {
   }
 
   def scrape(browser: Browser, baseDirName: String): Unit = {
-    corpus.lines.foreach { line =>
-      val page = Page(line)
+    corpus.items.foreach { page =>
       val scraper = getPageScraper(page)
       val scrapeTry = Try(scraper.scrapeTo(browser, page, baseDirName))
 

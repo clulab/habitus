@@ -1,9 +1,8 @@
 package org.clulab.habitus.scraper
 
 import net.ruippeixotog.scalascraper.browser.Browser
+import org.clulab.habitus.scraper.corpora.PageCorpus
 import org.clulab.utils.FileUtils
-import org.jsoup.Jsoup
-import org.jsoup.nodes.DocumentType
 
 import java.io.File
 import java.nio.file.Files
@@ -27,6 +26,7 @@ class PageDownloader() {
       println(s"Downloading ${page.url.toString} to $htmlLocationName")
 
       val doc = Try(browser.get(page.url.toString)).getOrElse {
+        // The Scala interface doesn't seem to allow access to this.
         // Wait for 10 seconds if necessary.
         // Jsoup.connect(page.url.toString).timeout(10 * 1000).get()
         Thread.sleep(3000)
@@ -41,19 +41,22 @@ class PageDownloader() {
   }
 }
 
-class CorpusDownloader(val corpus: Corpus) {
+class CorpusDownloader(val corpus: PageCorpus) {
   val pageDownloader = new PageDownloader()
 
   def download(browser: Browser, baseDirName: String): Unit = {
-    corpus.lines.foreach { line =>
-      if (!line.contains("--")) {
-        val page = Page(line)
+    // TODO: This exception needs to be somewhere else.
+    val validItems = corpus.items.filterNot { page =>
+      val urlName = page.url.toString
 
-        val downloadTry = Try(pageDownloader.download(browser, page, baseDirName))
+      urlName.contains("--")
+    }
 
-        if (downloadTry.isFailure)
-          println(s"Download of ${page.url.toString} failed!")
-      }
+    validItems.foreach { page =>
+      val downloadTry = Try(pageDownloader.download(browser, page, baseDirName))
+
+      if (downloadTry.isFailure)
+        println(s"Download of ${page.url.toString} failed!")
     }
   }
 }

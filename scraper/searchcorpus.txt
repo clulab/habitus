@@ -1,9 +1,9 @@
-https://www.adomonline.com/?s=Galamsey
-https://citifmonline.com/?s=galamsey
-https://www.etvghana.com/?s=Galamsey
+https://www.adomonline.com	galamsey
+https://citifmonline.com	galamsey
+https://www.etvghana.com	galamsey
 # This one doesn't work with a GET request.
-# https://www.ghanaweb.com/GhanaHomePage/search.php?page=2
-https://gna.org.gh/?s=Galamsey
-https://www.happyghana.com/?s=Galamsey
-https://thechronicle.com.gh/?s=Galamsey
-https://3news.com/?s=Galamsey
+# https://www.ghanaweb.com	galamsey
+https://gna.org.gh	galamsey
+https://www.happyghana.com	galamsey
+https://thechronicle.com.gh	galamsey
+https://3news.com	galamsey

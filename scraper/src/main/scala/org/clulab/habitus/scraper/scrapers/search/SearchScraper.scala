@@ -1,7 +1,9 @@
 package org.clulab.habitus.scraper.scrapers.search
 
 import net.ruippeixotog.scalascraper.browser.Browser
-import org.clulab.habitus.scraper.{Cleaner, Corpus, Page}
+import org.clulab.habitus.scraper.corpora.SearchCorpus
+import org.clulab.habitus.scraper.inquirers.{CorpusInquirer, PageInquirer}
+import org.clulab.habitus.scraper.{Cleaner, Page, Search}
 import org.clulab.habitus.scraper.scrapers.Scraper
 import org.clulab.habitus.scraper.scrapes.SearchScrape
 import org.clulab.utils.FileUtils
@@ -14,9 +16,10 @@ abstract class PageSearchScraper(val domain: String) extends Scraper[SearchScrap
 
   def scrape(browser: Browser, page: Page, html: String): SearchScrape
 
-  def scrapeTo(browser: Browser, page: Page, baseDirName: String, printWriter: PrintWriter): Unit = {
+  def scrapeTo(browser: Browser, inquirer: PageInquirer, search: Search, baseDirName: String, printWriter: PrintWriter): Unit = {
     val dirName = cleaner.clean(domain)
     val subDirName = s"$baseDirName/$dirName"
+    val page = inquirer.inquire(search.inquiry)
     val file = cleaner.clean(page.url.getFile)
 
     val htmlFileName = file + ".html"
@@ -25,9 +28,11 @@ abstract class PageSearchScraper(val domain: String) extends Scraper[SearchScrap
 
     val scraped = scrape(browser, page, html)
 
-    // TODO Let the inquirer to this?
     1.to(scraped.count).foreach { index =>
-      printWriter.println(s"${page.url.toString} - $index")
+      val page = inquirer.inquire(search.inquiry, Some(index))
+
+      // TODO: This might be some other instruction if the is no GET access.
+      printWriter.println(s"${page.url.toString}")
     }
   }
 
@@ -40,7 +45,7 @@ abstract class PageSearchScraper(val domain: String) extends Scraper[SearchScrap
   }
 }
 
-class CorpusSearchScraper(val corpus: Corpus) {
+class CorpusSearchScraper(val corpus: SearchCorpus) {
   val scrapers: Seq[PageSearchScraper] = Seq(
     new AdomOnlineSearchScraper(),
     new CitiFmOnlineSearchScraper(),
@@ -59,11 +64,15 @@ class CorpusSearchScraper(val corpus: Corpus) {
   }
 
   def scrape(browser: Browser, baseDirName: String, fileName: String): Unit = {
+    val corpusInquirer = new CorpusInquirer()
+
     Using.resource(FileUtils.printWriterFromFile(fileName)) { printWriter =>
-      corpus.lines.foreach { line =>
-        val page = Page(line)
+      corpus.items.foreach { search =>
+        val page = search.page
+        val inquiry = search.inquiry
         val scraper = getPageScraper(page)
-        val scrapeTry = Try(scraper.scrapeTo(browser, page, baseDirName, printWriter))
+        val inquirer = corpusInquirer.getPageInquirer(page)
+        val scrapeTry = Try(scraper.scrapeTo(browser, inquirer, search, baseDirName, printWriter))
 
         if (scrapeTry.isFailure)
           println(s"Scrape of ${page.url.toString} failed!")

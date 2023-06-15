@@ -1,6 +1,3 @@
 package org.clulab.habitus.scraper.inquirers
 
-class AdomOnlineInquirer(inquiry: String) extends PageInquirer {
-
-
-}
+class AdomOnlineInquirer extends PageInquirer("www.adomonline.com")

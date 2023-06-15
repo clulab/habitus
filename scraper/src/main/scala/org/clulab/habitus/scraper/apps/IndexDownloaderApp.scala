@@ -1,7 +1,8 @@
 package org.clulab.habitus.scraper.apps
 
 import net.ruippeixotog.scalascraper.browser.{Browser, JsoupBrowser}
-import org.clulab.habitus.scraper.{Corpus, CorpusDownloader}
+import org.clulab.habitus.scraper.CorpusDownloader
+import org.clulab.habitus.scraper.corpora.PageCorpus
 
 /**
   * Take the list of URLs in corpusFileName and download the pages into the
@@ -18,7 +19,7 @@ object IndexDownloaderApp extends App {
 //  val corpusFileName = args.lift(0).getOrElse("./scraper/adomonline_indexcorpus.txt")
   val corpusFileName = args.lift(0).getOrElse("./scraper/citifmonline_indexcorpus.txt")
   val baseDirName = args.lift(1).getOrElse("../corpora/scraper/indexes")
-  val corpus = Corpus(corpusFileName)
+  val corpus = PageCorpus(corpusFileName)
   val downloader = new CorpusDownloader(corpus)
   val browser: Browser = JsoupBrowser()
 
