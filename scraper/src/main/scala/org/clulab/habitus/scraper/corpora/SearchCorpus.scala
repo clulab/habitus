@@ -2,21 +2,22 @@ package org.clulab.habitus.scraper.corpora
 
 import org.clulab.habitus.scraper.Search
 
-class SearchCorpus(val fileName: String) extends Corpus[Search] {
-  override val items: Seq[Search] = {
-    val lines = getLines(fileName)
-    val searches = lines.map { line =>
-      val Array(url, term) = line.split('\t')
-
-      Search(url, term)
-    }
-    searches
-  }
+class SearchCorpus(override val items: Seq[Search]) extends Corpus[Search] {
 }
 
 object SearchCorpus {
 
   def apply(fileName: String): SearchCorpus = {
-    new SearchCorpus(fileName)
+    val items: Seq[Search] = {
+      val lines = Corpus.getLines(fileName)
+      val searches = lines.map { line =>
+        val Array(url, term) = line.split('\t')
+
+        Search(url, term)
+      }
+      searches
+    }
+
+    new SearchCorpus(items)
   }
 }

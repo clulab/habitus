@@ -1,0 +1,9 @@
+https://www.adomonline.com	illegal mining
+https://citifmonline.com	illegal mining
+https://www.etvghana.com	illegal mining
+# This one doesn't work with a GET request.
+# https://www.ghanaweb.com	illegal mining
+https://gna.org.gh	illegal mining
+https://www.happyghana.com	illegal mining
+https://thechronicle.com.gh	illegal mining
+https://3news.com	illegal mining

@@ -54,7 +54,6 @@ class CorpusSearchScraper(val corpus: SearchCorpus) {
     Using.resource(FileUtils.printWriterFromFile(fileName)) { printWriter =>
       corpus.items.foreach { search =>
         val page = search.page
-        val inquiry = search.inquiry
         val scraper = getPageScraper(page)
         val inquirer = corpusInquirer.getPageInquirer(page)
         val scrapeTry = Try(scraper.scrapeTo(browser, inquirer, search, baseDirName, printWriter))

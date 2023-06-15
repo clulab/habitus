@@ -8,6 +8,10 @@ trait Corpus[T] {
 
   def items: Seq[T]
 
+}
+
+object Corpus {
+
   def getLines(fileName: String): Seq[String] = {
     val lines = Using.resource(Sourcer.sourceFromFilename(fileName)) { source =>
       source
