@@ -4,9 +4,10 @@ import net.ruippeixotog.scalascraper.browser.Browser
 import net.ruippeixotog.scalascraper.dsl.DSL._
 import net.ruippeixotog.scalascraper.scraper.ContentExtractors.elementList
 import org.clulab.habitus.scraper.Page
+import org.clulab.habitus.scraper.domains.ThreeNewsDomain
 import org.clulab.habitus.scraper.scrapes.IndexScrape
 
-class ThreeNewsIndexScraper extends PageIndexScraper("3news.com") {
+class ThreeNewsIndexScraper extends PageIndexScraper(ThreeNewsDomain) {
 
   def scrape(browser: Browser, page: Page, html: String): IndexScrape = {
     val doc = browser.parseString(html)

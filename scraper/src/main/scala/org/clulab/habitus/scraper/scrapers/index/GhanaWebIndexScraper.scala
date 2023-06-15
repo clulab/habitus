@@ -4,9 +4,10 @@ import net.ruippeixotog.scalascraper.browser.Browser
 import net.ruippeixotog.scalascraper.dsl.DSL._
 import net.ruippeixotog.scalascraper.scraper.ContentExtractors.elementList
 import org.clulab.habitus.scraper.Page
+import org.clulab.habitus.scraper.domains.GhanaWebDomain
 import org.clulab.habitus.scraper.scrapes.IndexScrape
 
-class GhanaWebIndexScraper extends PageIndexScraper("ghanaweb.com") {
+class GhanaWebIndexScraper extends PageIndexScraper(GhanaWebDomain) {
   val subDirName = "GhanaHomePage"
 
   def scrape(browser: Browser, page: Page, html: String): IndexScrape = {

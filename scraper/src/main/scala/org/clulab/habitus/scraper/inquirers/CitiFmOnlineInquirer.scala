@@ -1,3 +1,5 @@
 package org.clulab.habitus.scraper.inquirers
 
-class CitiFmOnlineInquirer extends PageInquirer("citifmonline.com")
+import org.clulab.habitus.scraper.domains.CitiFmOnlineDomain
+
+class CitiFmOnlineInquirer extends PageInquirer(CitiFmOnlineDomain)

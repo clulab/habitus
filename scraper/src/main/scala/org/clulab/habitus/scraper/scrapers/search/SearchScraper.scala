@@ -2,6 +2,7 @@ package org.clulab.habitus.scraper.scrapers.search
 
 import net.ruippeixotog.scalascraper.browser.Browser
 import org.clulab.habitus.scraper.corpora.SearchCorpus
+import org.clulab.habitus.scraper.domains.Domain
 import org.clulab.habitus.scraper.inquirers.{CorpusInquirer, PageInquirer}
 import org.clulab.habitus.scraper.{Cleaner, Page, Search}
 import org.clulab.habitus.scraper.scrapers.Scraper
@@ -11,21 +12,13 @@ import org.clulab.utils.FileUtils
 import java.io.PrintWriter
 import scala.util.{Try, Using}
 
-abstract class PageSearchScraper(val domain: String) extends Scraper[SearchScrape] {
-  val cleaner = new Cleaner()
+abstract class PageSearchScraper(domain: Domain) extends Scraper[SearchScrape](domain) {
 
   def scrape(browser: Browser, page: Page, html: String): SearchScrape
 
   def scrapeTo(browser: Browser, inquirer: PageInquirer, search: Search, baseDirName: String, printWriter: PrintWriter): Unit = {
-    val dirName = cleaner.clean(domain)
-    val subDirName = s"$baseDirName/$dirName"
     val page = inquirer.inquire(search.inquiry)
-    val file = cleaner.clean(page.url.getFile)
-
-    val htmlFileName = file + ".html"
-    val htmlLocationName = s"$subDirName/$htmlFileName"
-    val html = FileUtils.getTextFromFile(htmlLocationName)
-
+    val (_, _, html) = readHtml(page, baseDirName)
     val scraped = scrape(browser, page, html)
 
     1.to(scraped.count).foreach { index =>
@@ -34,14 +27,6 @@ abstract class PageSearchScraper(val domain: String) extends Scraper[SearchScrap
       // TODO: This might be some other instruction if the is no GET access.
       printWriter.println(s"${page.url.toString}")
     }
-  }
-
-  def matches(page: Page): Boolean = {
-    val host = page.url.getHost
-
-    // It is either the complete domain or a subdomain.
-    // TODO: Change this!
-    host == domain || host.endsWith("." + domain)
   }
 }
 

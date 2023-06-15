@@ -1,10 +1,11 @@
 package org.clulab.habitus.scraper.inquirers
 
-import org.clulab.habitus.scraper.Page
+import org.clulab.habitus.scraper.domains.Domain
+import org.clulab.habitus.scraper.{DomainSpecific, Page}
 
 import java.net.{URI, URL}
 
-abstract class PageInquirer(val domain: String) {
+abstract class PageInquirer(domain: Domain) extends DomainSpecific(domain) {
   val scheme = "https"
   val fragment = null
 
@@ -14,18 +15,10 @@ abstract class PageInquirer(val domain: String) {
       case None => ("/", s"s=$escapedInquiry")
       case Some(index) => (s"/page/$index/", s"s=$escapedInquiry")
     }
-    val uri = new URI(scheme, domain, path, query, fragment)
+    val uri = new URI(scheme, domain.domain, path, query, fragment)
     val url = uri.toURL.toString
 
     Page(url)
-  }
-
-  def matches(page: Page): Boolean = {
-    val host = page.url.getHost
-
-    // It is either the complete domain or a subdomain.
-    // TODO: Change this!
-    host == domain || host.endsWith("." + domain)
   }
 }
 

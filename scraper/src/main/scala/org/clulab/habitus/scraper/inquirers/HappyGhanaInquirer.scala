@@ -1,3 +1,5 @@
 package org.clulab.habitus.scraper.inquirers
 
-class HappyGhanaInquirer extends PageInquirer("www.happyghana.com")
+import org.clulab.habitus.scraper.domains.HappyGhanaDomain
+
+class HappyGhanaInquirer extends PageInquirer(HappyGhanaDomain)

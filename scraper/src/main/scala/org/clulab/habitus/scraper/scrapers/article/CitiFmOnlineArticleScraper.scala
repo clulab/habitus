@@ -4,6 +4,7 @@ import net.ruippeixotog.scalascraper.browser.Browser
 import net.ruippeixotog.scalascraper.dsl.DSL._
 import net.ruippeixotog.scalascraper.scraper.ContentExtractors.elementList
 import org.clulab.habitus.scraper.Page
+import org.clulab.habitus.scraper.domains.CitiFmOnlineDomain
 import org.clulab.habitus.scraper.scrapes.ArticleScrape
 
 case class Byline(text: String, prefix: String) {
@@ -26,7 +27,7 @@ object Byline {
   }
 }
 
-class CitiFmOnlineArticleScraper extends PageArticleScraper("citifmonline.com") {
+class CitiFmOnlineArticleScraper extends PageArticleScraper(CitiFmOnlineDomain) {
 
   def scrape(browser: Browser, page: Page, html: String): ArticleScrape = {
     val doc = browser.parseString(html)

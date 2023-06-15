@@ -1,3 +1,5 @@
 package org.clulab.habitus.scraper.inquirers
 
-class ThreeNewsInquirer extends PageInquirer("3news.com")
+import org.clulab.habitus.scraper.domains.ThreeNewsDomain
+
+class ThreeNewsInquirer extends PageInquirer(ThreeNewsDomain)

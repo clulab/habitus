@@ -4,11 +4,12 @@ import net.ruippeixotog.scalascraper.browser.Browser
 import net.ruippeixotog.scalascraper.dsl.DSL._
 import net.ruippeixotog.scalascraper.scraper.ContentExtractors.elementList
 import org.clulab.habitus.scraper.Page
+import org.clulab.habitus.scraper.domains.EtvGhanaDomain
 import org.clulab.habitus.scraper.scrapes.ArticleScrape
 import org.json4s.jackson.JsonMethods
 import org.json4s.{DefaultFormats, JArray, JObject}
 
-class EtvGhanaArticleScraper extends PageArticleScraper("www.etvghana.com") {
+class EtvGhanaArticleScraper extends PageArticleScraper(EtvGhanaDomain) {
   implicit val formats: DefaultFormats.type = DefaultFormats
 
   def scrape(browser: Browser, page: Page, html: String): ArticleScrape = {

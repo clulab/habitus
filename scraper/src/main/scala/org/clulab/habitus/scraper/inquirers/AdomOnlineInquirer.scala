@@ -1,3 +1,5 @@
 package org.clulab.habitus.scraper.inquirers
 
-class AdomOnlineInquirer extends PageInquirer("www.adomonline.com")
+import org.clulab.habitus.scraper.domains.AdomOnlineDomain
+
+class AdomOnlineInquirer extends PageInquirer(AdomOnlineDomain)

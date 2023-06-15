@@ -1,3 +1,5 @@
 package org.clulab.habitus.scraper.inquirers
 
-class TheChronicleInquirer extends PageInquirer("thechronicle.com.gh")
+import org.clulab.habitus.scraper.domains.TheChronicleDomain
+
+class TheChronicleInquirer extends PageInquirer(TheChronicleDomain)

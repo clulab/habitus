@@ -1,3 +1,5 @@
 package org.clulab.habitus.scraper.inquirers
 
-class GnaInquirer extends PageInquirer("gna.org.gh")
+import org.clulab.habitus.scraper.domains.GnaDomain
+
+class GnaInquirer extends PageInquirer(GnaDomain)

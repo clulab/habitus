@@ -4,10 +4,11 @@ import net.ruippeixotog.scalascraper.browser.Browser
 import net.ruippeixotog.scalascraper.dsl.DSL._
 import net.ruippeixotog.scalascraper.scraper.ContentExtractors.elementList
 import org.clulab.habitus.scraper.Page
+import org.clulab.habitus.scraper.domains.AdomOnlineDomain
 import org.clulab.habitus.scraper.scrapes.SearchScrape
 import org.clulab.utils.StringUtils
 
-class AdomOnlineSearchScraper extends PageSearchScraper("www.adomonline.com") {
+class AdomOnlineSearchScraper extends PageSearchScraper(AdomOnlineDomain) {
 
   def scrape(browser: Browser, page: Page, html: String): SearchScrape = {
     val doc = browser.parseString(html)

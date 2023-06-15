@@ -2,6 +2,7 @@ package org.clulab.habitus.scraper.scrapers.article
 
 import net.ruippeixotog.scalascraper.browser.Browser
 import org.clulab.habitus.scraper.corpora.PageCorpus
+import org.clulab.habitus.scraper.domains.Domain
 import org.clulab.habitus.scraper.scrapers.Scraper
 import org.clulab.habitus.scraper.{Cleaner, Page}
 import org.clulab.habitus.scraper.scrapes.ArticleScrape
@@ -9,20 +10,12 @@ import org.clulab.utils.FileUtils
 
 import scala.util.{Try, Using}
 
-abstract class PageArticleScraper(val domain: String) extends Scraper[ArticleScrape] {
-  val cleaner = new Cleaner()
+abstract class PageArticleScraper(domain: Domain) extends Scraper[ArticleScrape](domain) {
 
   def scrape(browser: Browser, page: Page, html: String): ArticleScrape
 
   def scrapeTo(browser: Browser, page: Page, baseDirName: String): Unit = {
-    val dirName = cleaner.clean(domain)
-    val subDirName = s"$baseDirName/$dirName"
-    val file = cleaner.clean(page.url.getFile)
-
-    val htmlFileName = file + ".html"
-    val htmlLocationName = s"$subDirName/$htmlFileName"
-    val html = FileUtils.getTextFromFile(htmlLocationName)
-
+    val (subDirName, file, html) = readHtml(page, baseDirName)
     val scraped = scrape(browser, page, html)
 
     val txtFileName = file + ".txt"
@@ -40,13 +33,6 @@ abstract class PageArticleScraper(val domain: String) extends Scraper[ArticleScr
     Using.resource(FileUtils.printWriterFromFile(jsonLocationName)) { printWriter =>
       printWriter.println(json)
     }
-  }
-
-  def matches(page: Page): Boolean = {
-    val host = page.url.getHost
-
-    // It is either the complete domain or a subdomain.
-    host == domain || host.endsWith("." + domain)
   }
 }
 

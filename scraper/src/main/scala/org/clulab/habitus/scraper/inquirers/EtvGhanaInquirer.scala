@@ -1,3 +1,5 @@
 package org.clulab.habitus.scraper.inquirers
 
-class EtvGhanaInquirer extends PageInquirer("www.etvghana.com")
+import org.clulab.habitus.scraper.domains.EtvGhanaDomain
+
+class EtvGhanaInquirer extends PageInquirer(EtvGhanaDomain)
