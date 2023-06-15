@@ -11,7 +11,7 @@ class EtvGhanaIndexScraper extends PageIndexScraper("www.etvghana.com") {
   def scrape(browser: Browser, page: Page, html: String): IndexScrape = {
     val doc = browser.parseString(html)
     val links = (doc >> elementList("article h3 > a"))
-      .map(_.attr("href"))
+        .map(_.attr("href"))
     val scrape = IndexScrape(links)
 
     scrape

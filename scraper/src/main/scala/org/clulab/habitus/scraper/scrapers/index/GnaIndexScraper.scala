@@ -11,7 +11,7 @@ class GnaIndexScraper extends PageIndexScraper("gna.org.gh") {
   def scrape(browser: Browser, page: Page, html: String): IndexScrape = {
     val doc = browser.parseString(html)
     val links = (doc >> elementList("header.entry-header h2.entry-title > a"))
-      .map(_.attr("href"))
+        .map(_.attr("href"))
     val scrape = IndexScrape(links)
 
     scrape

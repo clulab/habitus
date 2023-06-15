@@ -11,11 +11,9 @@ class ThreeNewsIndexScraper extends PageIndexScraper("3news.com") {
   def scrape(browser: Browser, page: Page, html: String): IndexScrape = {
     val doc = browser.parseString(html)
     val links = (doc >> elementList("div#tdi_15 div.td-module-meta-info h3 a"))
-      .map(_.attr("href"))
-    val correctedLinks = links.map { link =>
-      link.replace("%c2%a2", "\u00A2")
-    }
-    val scrape = IndexScrape(correctedLinks)
+        .map(_.attr("href"))
+        .map(decode)
+    val scrape = IndexScrape(links)
 
     scrape
   }

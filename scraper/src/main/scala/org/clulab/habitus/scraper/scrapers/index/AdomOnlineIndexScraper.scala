@@ -11,14 +11,9 @@ class AdomOnlineIndexScraper extends PageIndexScraper("www.adomonline.com") {
   def scrape(browser: Browser, page: Page, html: String): IndexScrape = {
     val doc = browser.parseString(html)
     val links = (doc >> elementList("div.item-details > h3.entry-title > a"))
-      .map(_.attr("href"))
-    val correctedLinks = links.map { link =>
-      link
-          .replace("%c2%a2", "\u00A2")
-          .replace("%e2%82%b5", "\u20B5")
-          .replace("%ef%bb%bf", "\uFEFF")
-    }
-    val scrape = IndexScrape(correctedLinks)
+        .map(_.attr("href"))
+        .map(decode)
+    val scrape = IndexScrape(links)
 
     scrape
   }

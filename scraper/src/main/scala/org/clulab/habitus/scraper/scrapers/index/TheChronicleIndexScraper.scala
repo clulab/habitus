@@ -11,7 +11,7 @@ class TheChronicleIndexScraper extends PageIndexScraper("thechronicle.com.gh") {
   def scrape(browser: Browser, page: Page, html: String): IndexScrape = {
     val doc = browser.parseString(html)
     val links = (doc >> elementList("div.td_module_16 h3.entry-title > a"))
-      .map(_.attr("href"))
+        .map(_.attr("href"))
     val scrape = IndexScrape(links)
 
     scrape

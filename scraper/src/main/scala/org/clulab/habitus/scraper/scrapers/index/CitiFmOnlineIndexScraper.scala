@@ -11,12 +11,9 @@ class CitiFmOnlineIndexScraper extends PageIndexScraper("citifmonline.com") {
   def scrape(browser: Browser, page: Page, html: String): IndexScrape = {
     val doc = browser.parseString(html)
     val links = (doc >> elementList("div.jeg_postblock_content > h3.jeg_post_title > a"))
-      .map(_.attr("href"))
-    val correctedLinks = links.map { link =>
-      link
-          .replace("%c2%a2", "\u00A2")
-    }
-    val scrape = IndexScrape(correctedLinks)
+        .map(_.attr("href"))
+        .map(decode)
+    val scrape = IndexScrape(links)
 
     scrape
   }

@@ -8,12 +8,29 @@ import org.clulab.habitus.scraper.scrapes.IndexScrape
 import org.clulab.utils.FileUtils
 
 import java.io.PrintWriter
+import java.nio.charset.StandardCharsets
+import scala.util.matching.Regex
 import scala.util.{Try, Using}
 
 abstract class PageIndexScraper(val domain: String) extends Scraper[IndexScrape] {
   val cleaner = new Cleaner()
 
   def scrape(browser: Browser, page: Page, html: String): IndexScrape
+
+  def decode(text: String): String = {
+    val decoded = PageIndexScraper.utf8Pattern.replaceAllIn(text, { regexMatch: Regex.Match =>
+      val bytes = regexMatch
+          .group(0)
+          .split("%")
+          .filter(_.nonEmpty)
+          .map(Integer.parseInt(_, 16).toByte)
+      val string = new String(bytes, StandardCharsets.UTF_8)
+
+      string
+    })
+
+    decoded
+  }
 
   def scrapeTo(browser: Browser, page: Page, baseDirName: String, printWriter: PrintWriter): Unit = {
     val dirName = cleaner.clean(domain)
@@ -37,6 +54,10 @@ abstract class PageIndexScraper(val domain: String) extends Scraper[IndexScrape]
     // It is either the complete domain or a subdomain.
     host == domain || host.endsWith("." + domain)
   }
+}
+
+object PageIndexScraper {
+  val utf8Pattern = "(%[0123456789ABCDEFabcdef]{2})+".r
 }
 
 class CorpusIndexScraper(val corpus: PageCorpus) {
