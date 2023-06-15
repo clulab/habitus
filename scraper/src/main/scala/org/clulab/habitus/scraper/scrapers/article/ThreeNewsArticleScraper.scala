@@ -29,7 +29,7 @@ class ThreeNewsArticleScraper extends PageArticleScraper(ThreeNewsDomain) {
     val graph = (jObject \ "@graph").extract[JArray]
     val newsArticle = graph.arr
         .find { jValue =>
-          (jValue \ "@type").extract[String] == "NewsArticle"
+          (jValue \ "@type").extract[String] == "Article"
         }
         .get
     val dateline = (newsArticle \ "datePublished").extract[String]
@@ -42,9 +42,18 @@ class ThreeNewsArticleScraper extends PageArticleScraper(ThreeNewsDomain) {
         }
         .filter(_.nonEmpty)
         .mkString("\n\n")
+    val cleanText =
+        if (text.contains('<')) {
+          val html = s"<html><body><div>$text</div></body></html>"
+          val doc = browser.parseString(html)
+          val cleanText = (doc >> elementList("body > div")).head.text.replace("]]>", "").trim
 
-    if (text.contains('<'))
-      throw new RuntimeException("HTML was found in text!")
-    ArticleScrape(page.url, Some(title), Some(dateline), Some(byline), text)
+          if (cleanText.contains('<'))
+            throw new RuntimeException("HTML was found in text!")
+          cleanText
+        }
+        else text
+
+    ArticleScrape(page.url, Some(title), Some(dateline), Some(byline), cleanText)
   }
 }
