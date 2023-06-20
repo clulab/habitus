@@ -12,7 +12,7 @@ import scala.util.{Try, Using}
 class GetPageDownloader(domain: Domain) extends PageDownloader(domain) {
   val cleaner = new Cleaner()
 
-  def download(browser: Browser, page: Page, baseDirName: String): Unit = {
+  def download(browser: Browser, page: Page, baseDirName: String, inquiryOpt: Option[String] = None): Unit = {
     val domain = page.url.getHost.split('.')/*.takeRight(2)*/.mkString(".") // Shorten to one .
     val dirName = cleaner.clean(domain)
     val subDirName = s"$baseDirName/$dirName"
