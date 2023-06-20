@@ -1,14 +1,15 @@
 package org.clulab.habitus.scraper.downloaders
 
 import net.ruippeixotog.scalascraper.browser.Browser
-import org.clulab.habitus.scraper.{Cleaner, Page}
+import org.clulab.habitus.scraper.domains.Domain
+import org.clulab.habitus.scraper.{Cleaner, DomainSpecific, Page}
 import org.clulab.utils.FileUtils
 
 import java.io.File
 import java.nio.file.Files
 import scala.util.{Try, Using}
 
-class GetPageDownloader() {
+class GetPageDownloader(domain: Domain) extends PageDownloader(domain) {
   val cleaner = new Cleaner()
 
   def download(browser: Browser, page: Page, baseDirName: String): Unit = {
