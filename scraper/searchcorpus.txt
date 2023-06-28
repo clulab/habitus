@@ -1,0 +1,9 @@
+https://www.adomonline.com	galamsey
+https://citifmonline.com	galamsey
+https://www.etvghana.com	galamsey
+# This one doesn't work with a GET request.
+# https://www.ghanaweb.com	galamsey
+https://gna.org.gh	galamsey
+https://www.happyghana.com	galamsey
+https://thechronicle.com.gh	galamsey
+https://3news.com	galamsey
