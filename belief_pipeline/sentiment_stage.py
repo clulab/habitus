@@ -5,7 +5,7 @@ from transformers import pipeline
 class SentimentStage(InnerStage):
     def __init__(self, model_name: str) -> None:
         super().__init__()
-        self.sentiment_analysis = pipeline("sentiment-analysis", model=model_name, device_map="cpu") # device=0)
+        self.sentiment_analysis = pipeline("sentiment-analysis", model=model_name, device="cpu")
 
     def run(self, data_frame: DataFrame) -> DataFrame:
         sentiment_scores = []
