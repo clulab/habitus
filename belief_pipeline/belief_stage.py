@@ -2,7 +2,6 @@ from datasets import Dataset, DatasetDict
 from pandas import DataFrame
 from pipeline import InnerStage
 from transformers import AutoModelForSequenceClassification, AutoTokenizer, TrainingArguments, Trainer
-from typing import Tuple
 
 import numpy
 import torch

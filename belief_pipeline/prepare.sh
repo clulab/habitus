@@ -38,4 +38,4 @@ pip install transformers # already done above
 python -c 'from huggingface_hub import snapshot_download; snapshot_download(repo_id="hriaz/finetuned_beliefs_sentiment_classifier_experiment1")'
 
 # Run the program
-python belief_pipeline/main.py
+python belief_pipeline/main.py -i ../corpora/Galamsey-web-435 -o ../sample_output.tsv
