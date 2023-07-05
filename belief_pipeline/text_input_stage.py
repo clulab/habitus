@@ -83,6 +83,7 @@ class TextInputStage(InputStage):
     def run(self) -> DataFrame:
         all_file_names = [os.path.join(root, file) for root, _, files in os.walk(os.path.expanduser(self.dir_name)) for file in files]
         text_file_names = list(filter(lambda string: string.endswith(".txt"), all_file_names))
+        text_file_names.sort()
         all_full_records = []
         for file_name in text_file_names:
             document_record = self.get_document(file_name)
