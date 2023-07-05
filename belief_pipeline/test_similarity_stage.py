@@ -10,7 +10,7 @@ class SimilarityInputStage():
         self.file_name = file_name
 
     def run(self) -> DataFrame:
-        data_frame = pandas.read_csv(self.file_name, sep="\t", header=0, names=["belief", "belief_resolved", "title", "url", "date", "byline", "context"])
+        data_frame = pandas.read_csv(self.file_name, sep="\t", encoding="utf-8", header=0, names=["belief", "belief_resolved", "title", "url", "date", "byline", "context"])
         return data_frame
 
 if __name__ == "__main__":
