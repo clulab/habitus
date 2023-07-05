@@ -10,8 +10,5 @@ The pipeline incorporates code from Masha's [iBelieve](https://github.com/maxaal
     * [beliefs_sentiment_analysis](https://github.com/maxaalexeeva/iBelieve/blob/main/belief_sentiments/beliefs_sentiment_analysis.ipynb) from Haris along with
 
 * models
-    * [bert-base-cased-best-f1-0.6717557251908397](https://arizona.box.com/s/b75391vfxcve1qguzc0tf99aj87vfgp3) from Masha
-    * [finetuned_beliefs_sentiment_classifier_experiment1](https://huggingface.co/hriaz/finetuned_beliefs_sentiment_classifier_experiment1) and two from Haris
-    * [finetuned_beliefs_sentiment_classifier_experiment2](https://huggingface.co/hriaz/finetuned_beliefs_sentiment_classifier_experiment2)
-
-
+    * [belief-classifier_mturk_unmarked-trigger_bert-base-cased_2023-4-26-0-34](https://huggingface.co/maxaalexeeva/belief-classifier_mturk_unmarked-trigger_bert-base-cased_2023-4-26-0-34) from Masha and
+    * [finetuned_beliefs_sentiment_classifier_experiment1](https://huggingface.co/hriaz/finetuned_beliefs_sentiment_classifier_experiment1) from Haris

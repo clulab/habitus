@@ -8,12 +8,11 @@ from text_input_stage import TextInputStage
 from web_input_stage import WebInputStage
 
 if __name__ == "__main__":
-    # This is called from the top-level directory.
-    input_dir_name: str = "./corpora/Galamsey-web-435/"
-    output_file_name: str = "./sample_output.tsv"
-    belief_model_name: str = "./models/bert-base-cased-best-f1-0.6717557251908397"
-    locations_file_name: str = "./corpora/ghana_geonames/GH.tsv"
-    sentiment_model_name: str = "./models/finetuned_beliefs_sentiment_classifier_experiment1"
+    input_dir_name: str = "../corpora/Galamsey-web-435/"
+    output_file_name: str = "../sample_output.tsv"
+    belief_model_name: str = "maxaalexeeva/belief-classifier_mturk_unmarked-trigger_bert-base-cased_2023-4-26-0-34"
+    sentiment_model_name: str = "hriaz/finetuned_beliefs_sentiment_classifier_experiment1"
+    locations_file_name: str = "./belief_pipeline/GH.tsv"    
     pipeline = Pipeline(
         # WebInputStage(input_dir_name),
         TextInputStage(input_dir_name),
