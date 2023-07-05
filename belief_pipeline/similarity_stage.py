@@ -8,7 +8,7 @@ class SimilarityStage(InnerStage):
     def __init__(self) -> None:
         super().__init__()
         self.topics = "settlements, cities, towns, villages, mining, galamsey"
-        self.model = SentenceTransformer("all-mpnet-base-v2")
+        self.model = SentenceTransformer("all-mpnet-base-v2", device="cpu")
         self.topic_vector = self.model.encode(self.topics)
 
     def cosine_similarity(self, v1, v2) -> float:
