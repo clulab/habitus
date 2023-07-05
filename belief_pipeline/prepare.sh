@@ -1,3 +1,7 @@
+# Clone the repo.
+git clone https://github.com/clulab/habitus
+cd habitus
+
 # Create a virtual environment for Python and activate it.
 python3.9 -m venv venv
 source ./venv/bin/activate
@@ -26,8 +30,12 @@ python -c 'from sentence_transformers import SentenceTransformer; SentenceTransf
 pip install spacy
 # This will be downloaded to the site-packages directory of the Python venv, venv/lib/pythonX/site-packages.
 python -m spacy download en_core_web_sm
+# This list of locations in Ghana is now included in the github repo.
 
 # Sentiment 
 pip install transformers # already done above
 # This will be downloaded to a cache, ~/.cache/huggingface/hub/models--hriaz...
 python -c 'from huggingface_hub import snapshot_download; snapshot_download(repo_id="hriaz/finetuned_beliefs_sentiment_classifier_experiment1")'
+
+# Run the program
+python belief_pipeline/main.py
