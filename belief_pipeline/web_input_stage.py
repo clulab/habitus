@@ -101,6 +101,7 @@ class WebInputStage(InputStage):
         json_file_names.sort()
         all_full_records = []
         for file_name in json_file_names:
+            print(file_name)
             document_record = self.get_document(file_name)
             sentence_records = self.tokenize_text(document_record.text)
             some_full_records = [WebFullRecord(document_record, sentence_record) for sentence_record in sentence_records]

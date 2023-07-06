@@ -11,7 +11,7 @@ class SentimentInputStage():
         self.file_name = file_name
 
     def run(self) -> DataFrame:
-        data_frame = pandas.read_csv(self.file_name, sep="\t", encoding="utf-8", header=0, names=["belief", "title", "author", "year", "context", "just_belief"])
+        data_frame = pandas.read_csv(self.file_name, sep="\t", encoding="utf-8")
         return data_frame
 
 class SentimentOutputStage(OutputStage):
