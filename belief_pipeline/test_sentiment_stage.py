@@ -23,9 +23,9 @@ class SentimentOutputStage(OutputStage):
 
 if __name__ == "__main__":
     sentiment_model_name: str = "hriaz/finetuned_beliefs_sentiment_classifier_experiment1"
-    input_file_name: str = "./belief_pipeline/ghana_hr_queries_beliefs_0.97_conf_with_metadata_resolved_with_just_beliefs_column.tsv"
+    input_file_name: str = "../ghana_hr_queries_beliefs_0.97_conf_with_metadata_resolved_with_just_beliefs_column.tsv"
     # Compare this output file with the one straight from the Jupyter notebook.
-    output_file_name: str = "./belief_pipeline/ghana_hr_queries_beliefs_0.97_conf_with_metadata_resolved_with_just_beliefs_column-out.tsv"
+    output_file_name: str = "../ghana_hr_queries_beliefs_0.97_conf_with_metadata_resolved_with_just_beliefs_column-out.tsv"
     pipeline = Pipeline(
         SentimentInputStage(input_file_name),
         [
