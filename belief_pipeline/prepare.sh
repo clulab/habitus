@@ -34,6 +34,7 @@ python -m spacy download en_core_web_sm
 
 # Sentiment 
 pip install transformers # already done above
+pip install xformers
 # This will be downloaded to a cache, ~/.cache/huggingface/hub/models--hriaz...
 python -c 'from huggingface_hub import snapshot_download; snapshot_download(repo_id="hriaz/finetuned_beliefs_sentiment_classifier_experiment1")'
 

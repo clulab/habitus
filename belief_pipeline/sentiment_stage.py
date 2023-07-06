@@ -3,14 +3,15 @@ from pipeline import InnerStage
 from transformers import pipeline
 
 class SentimentStage(InnerStage):
-    def __init__(self, model_name: str) -> None:
+    def __init__(self, model_name: str, column_name: str = "belief") -> None:
         super().__init__()
         self.sentiment_analysis = pipeline("sentiment-analysis", model=model_name, device="cpu")
+        self.column_name = column_name
 
     def run(self, data_frame: DataFrame) -> DataFrame:
         sentiment_scores = []
         for _, row in data_frame.iterrows():
-            belief = row["belief"]
+            belief = row[self.column_name]
             sentiment_dict = self.sentiment_analysis(belief)
             label, score = sentiment_dict[0]["label"], sentiment_dict[0]["score"]
             if label == "NEGATIVE":
