@@ -1,10 +1,11 @@
 package org.clulab.habitus.apps
 
-import org.clulab.wm.eidoscommon.utils.Closer.AutoCloser
 import org.clulab.wm.eidoscommon.utils.{FileUtils, Logging}
 import org.json4s.DefaultFormats
 import org.json4s.{JArray, JObject, JValue}
 import org.json4s.jackson.JsonMethods
+
+import scala.util.Using
 
 object ExtractCausationFromDirectoryApp extends App with Logging {
   implicit val formats: DefaultFormats.type = org.json4s.DefaultFormats
@@ -14,7 +15,7 @@ object ExtractCausationFromDirectoryApp extends App with Logging {
 
   val files = FileUtils.findFiles(inputDir, "jsonld")
 
-  FileUtils.printWriterFromFile(outputFile).autoClose { printWriter =>
+  Using.resource(FileUtils.printWriterFromFile(outputFile)) { printWriter =>
 //    printWriter.println(s"file\tcausation")
     printWriter.println("causation")
     files.foreach { file =>
