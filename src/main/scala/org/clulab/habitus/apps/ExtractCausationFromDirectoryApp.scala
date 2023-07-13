@@ -1,6 +1,6 @@
 package org.clulab.habitus.apps
 
-import org.clulab.wm.eidoscommon.utils.{FileUtils, Logging}
+import org.clulab.wm.eidoscommon.utils.{FileUtils, Logging, TsvWriter}
 import org.json4s.DefaultFormats
 import org.json4s.{JArray, JObject, JValue}
 import org.json4s.jackson.JsonMethods
@@ -17,15 +17,19 @@ object ExtractCausationFromDirectoryApp extends App with Logging {
   val files = FileUtils.findFiles(inputDir, "jsonld")
 
   Using.resource(FileUtils.printWriterFromFile(outputFile)) { printWriter =>
-    printWriter.println(s"file\tcausation\tsentence\tcontext")
+    val tsvWriter = new TsvWriter(printWriter)
+
+    tsvWriter.println("file", "causation", "sentence", "context")
     files.foreach { file =>
       try {
         val json = FileUtils.getTextFromFile(file)
         val root = JsonMethods.parse(json).extract[JObject]
-        val documents = (root \ "documents").extract[JArray]
+        val documents = {
+          val documents = (root \ "documents").extract[JArray]
 
-        require(documents.arr.length == 1)
-
+          require(documents.arr.length == 1)
+          documents
+        }
         val sentences = (documents(0) \ "sentences").extractOpt[JArray]
             .map(_.arr)
             .getOrElse(List.empty[JValue])
@@ -44,10 +48,12 @@ object ExtractCausationFromDirectoryApp extends App with Logging {
         }
         val textSentenceContextTuples = causations.map { causation =>
           val text = (causation \ "text").extract[String]
-          val provenances = (causation \ "provenance").extract[JArray]
+          val provenances = {
+            val provenances = (causation \ "provenance").extract[JArray]
 
-          require(provenances.arr.length == 1)
-
+            require(provenances.arr.length == 1)
+            provenances
+          }
           val causationSentenceId = (provenances(0) \ "sentence" \ "@id").extract[String]
           val sentenceIndex = sentenceIdAndTextTuples.indexWhere { case (sentenceId, _) =>
             causationSentenceId == sentenceId
@@ -65,7 +71,7 @@ object ExtractCausationFromDirectoryApp extends App with Logging {
         }
 
         textSentenceContextTuples.foreach { case (text, sentence, context) =>
-          printWriter.println(s"${file.getName}\t$text\t$sentence\t$context")
+          tsvWriter.println(file.getName, text, sentence, context)
         }
       }
       catch {
