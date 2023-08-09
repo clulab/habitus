@@ -1,5 +1,6 @@
 package org.clulab.habitus.apps
 
+import org.clulab.wm.eidos.serialization.jsonld.{JLDDeserializer, JLDRelationCausation}
 import org.clulab.wm.eidoscommon.utils.{FileUtils, Logging, TsvWriter}
 import org.json4s.jackson.JsonMethods
 import org.json4s.{DefaultFormats, JArray, JObject, JValue}
@@ -17,60 +18,26 @@ object ExtractCausalSentencesFromDirectoryApp extends App with Logging {
 
   Using.resource(FileUtils.printWriterFromFile(outputFile)) { printWriter =>
     val tsvWriter = new TsvWriter(printWriter)
+    val deserializer = new JLDDeserializer()
 
-    tsvWriter.println("file", "causation", "sentence", "context")
+    tsvWriter.println("file", "sentence", "causal")
     files.foreach { file =>
       try {
         val json = FileUtils.getTextFromFile(file)
-        val root = JsonMethods.parse(json).extract[JObject]
-        val documents = {
-          val documents = (root \ "documents").extract[JArray]
+        val corpus = deserializer.deserialize(json)
+        val annotatedDocument = corpus.head
+        val document = annotatedDocument.document
+        val documentText = document.text.get
+        val sentences = document.sentences
+        val allMentions = annotatedDocument.allEidosMentions
+        val causalMentions = allMentions.filter(_.label == JLDRelationCausation.taxonomy)
+        val causalSentenceIndices = causalMentions.map(_.odinMention.sentence).toSet
 
-          require(documents.arr.length == 1)
-          documents
-        }
-        val sentences = (documents(0) \ "sentences").extractOpt[JArray]
-            .map(_.arr)
-            .getOrElse(List.empty[JValue])
-        val sentenceIdAndTextTuples = sentences.map { sentence =>
-          val id = (sentence \ "@id").extract[String]
-          val text = (sentence \ "text").extract[String]
+        sentences.zipWithIndex.foreach { case (sentence, sentenceIndex) =>
+          val causal = causalSentenceIndices(sentenceIndex)
+          val rawText = documentText.slice(sentence.startOffsets.head, sentence.endOffsets.last)
 
-          id -> text
-        }
-
-        val extractions = (root \ "extractions").extractOpt[JArray]
-            .map(_.arr)
-            .getOrElse(List.empty[JValue])
-        val causations = extractions.filter { extraction =>
-          (extraction \ "subtype").extract[String] == "causation"
-        }
-        val textSentenceContextTuples = causations.map { causation =>
-          val text = (causation \ "text").extract[String]
-          val provenances = {
-            val provenances = (causation \ "provenance").extract[JArray]
-
-            require(provenances.arr.length == 1)
-            provenances
-          }
-          val causationSentenceId = (provenances(0) \ "sentence" \ "@id").extract[String]
-          val sentenceIndex = sentenceIdAndTextTuples.indexWhere { case (sentenceId, _) =>
-            causationSentenceId == sentenceId
-          }
-          val sentence = sentenceIdAndTextTuples(sentenceIndex)._2
-          val contextRange = Range.inclusive(sentenceIndex - contextWindow, sentenceIndex + contextWindow)
-          val contextSentences = contextRange.flatMap { sentenceIndex =>
-            val lifted = sentenceIdAndTextTuples.lift(sentenceIndex).map { sth => sth._2 }
-
-            lifted
-          }
-          val context = contextSentences.mkString(" ")
-
-          (text, sentence, context)
-        }
-
-        textSentenceContextTuples.foreach { case (text, sentence, context) =>
-          tsvWriter.println(file.getName, text, sentence, context)
+          tsvWriter.println(file.getName, rawText, causal.toString)
         }
       }
       catch {
