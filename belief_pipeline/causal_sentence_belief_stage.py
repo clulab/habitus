@@ -57,14 +57,16 @@ class CausalSentenceBeliefStage(InnerStage):
         final_predictions = [numpy.argmax(prediction) for prediction in initial_predictions]
         return final_predictions, confidences
 
-    def filter_beliefs(self, dataset: Dataset, data_frame: DataFrame) -> Dataset:
+    def mk_beliefs(self, dataset: Dataset):
         predictions, confidences = self.predict_with_confidence(dataset)
         indexes = range(len(predictions))
         beliefs = [predictions[index] == 1 and confidences[index] >= self.confidence_threshold for index in indexes]
-        data_frame["belief"] = beliefs
-        return data_frame
+        beliefs = [bool(belief) for belief in beliefs]
+        return beliefs
 
     def run(self, data_frame: DataFrame) -> DataFrame:
         dataset = self.mk_dataset(data_frame, self.columns_to_keep)
-        filtered_data_frame = self.filter_beliefs(dataset, data_frame)
-        return filtered_data_frame
+        beliefs = self.mk_beliefs(dataset)
+        data_frame["belief"] = beliefs
+        new_data_frame = data_frame.drop(columns=["sentence_resolved"])
+        return new_data_frame
