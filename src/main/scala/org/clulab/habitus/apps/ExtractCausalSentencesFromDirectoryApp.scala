@@ -20,7 +20,7 @@ object ExtractCausalSentencesFromDirectoryApp extends App with Logging {
     val tsvWriter = new TsvWriter(printWriter)
     val deserializer = new JLDDeserializer()
 
-    tsvWriter.println("file", "sentence", "causal")
+    tsvWriter.println("file", "index", "sentence", "causal")
     files.foreach { file =>
       try {
         val json = FileUtils.getTextFromFile(file)
@@ -37,7 +37,7 @@ object ExtractCausalSentencesFromDirectoryApp extends App with Logging {
           val causal = causalSentenceIndices(sentenceIndex)
           val rawText = documentText.slice(sentence.startOffsets.head, sentence.endOffsets.last)
 
-          tsvWriter.println(file.getName, rawText, causal.toString)
+          tsvWriter.println(file.getName, sentenceIndex.toString, rawText, causal.toString)
         }
       }
       catch {
