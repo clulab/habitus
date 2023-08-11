@@ -36,8 +36,14 @@ object ExtractCausalSentencesFromDirectoryApp extends App with Logging {
         sentences.zipWithIndex.foreach { case (sentence, sentenceIndex) =>
           val causal = causalSentenceIndices(sentenceIndex)
           val rawText = documentText.slice(sentence.startOffsets.head, sentence.endOffsets.last)
+          val cleanText = rawText
+              .trim
+              .replaceAll("\r\n", " ")
+              .replaceAll("\n", " ")
+              .replaceAll("\r", " ")
+              .replaceAll("\t", " ")
 
-          tsvWriter.println(file.getName, sentenceIndex.toString, rawText, causal.toString)
+          tsvWriter.println(file.getName, sentenceIndex.toString, cleanText, causal.toString)
         }
       }
       catch {

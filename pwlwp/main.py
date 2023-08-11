@@ -50,7 +50,10 @@ if __name__ == "__main__":
 	sentence_transformer_name: str = "all-distilroberta-v1"
 	input_file_name: str = "../corpora/causalBeliefSentences.tsv"
 	# input_file_name, output_file_name = get_in_and_out()
-	data_frame = pandas.read_csv(input_file_name, sep="\t", encoding="utf-8")
+	data_frame = pandas.read_csv(input_file_name, sep="\t", encoding="utf-8", keep_default_na=False,
+		dtype={"file": str, "index": int, "sentence": str, "causal": bool, "belief": bool}
+	)
+
 	sentence_transformer = SentenceTransformer(sentence_transformer_name)
 	matcher = Matcher(sentence_transformer, data_frame, threshold)
 	scenario_match = matcher.match_scenario(scenario1)
