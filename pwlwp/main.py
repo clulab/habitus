@@ -7,7 +7,7 @@ from typing import Tuple
 
 import pandas
 
-def get_in_and_out() -> Tuple[str] # , str]:
+def get_in_and_out() -> str: # Tuple[str, str]:
 	argument_parser = ArgumentParser()
 	argument_parser.add_argument("-i", "--input", required=True, help="input directory name")
 	# argument_parser.add_argument("-o", "--output", required=True, help="output file name")
@@ -52,7 +52,8 @@ if __name__ == "__main__":
 	# input_file_name, output_file_name = get_in_and_out()
 	data_frame = pandas.read_csv(input_file_name, sep="\t", encoding="utf-8", keep_default_na=False,
 		dtype={"file": str, "index": int, "sentence": str, "causal": bool, "belief": bool}
-	)
+	)[:1000]
+	# truncated_data_frame = data_frame.truncate(100)
 
 	sentence_transformer = SentenceTransformer(sentence_transformer_name)
 	matcher = Matcher(sentence_transformer, data_frame, threshold)

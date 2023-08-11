@@ -28,6 +28,12 @@ class ChoiceMatch():
 		self.belief = sum([int(sentence_match.belief) for sentence_match in sentence_matches])
 		self.both   = sum([int(sentence_match.both)   for sentence_match in sentence_matches])
 
+	def __str__(self) -> str:
+		header = "all\tcausal\tbelief\tboth"
+		line = f"{self.all}\t{self.causal}\t{self.belief}\t{self.both}"
+		string = header + ("\n") + line
+		return string
+
 class ScenarioMatch():
 
 	def __init__(self, choice_matches: List[ChoiceMatch]) -> None:
@@ -36,6 +42,8 @@ class ScenarioMatch():
 				return numerator / denominator
 			else:
 				return 0.0
+			
+		self.choice_matches = choice_matches
 		self.length = len(choice_matches)
 		all_length    = numpy.linalg.norm([choice_match.all    for choice_match in choice_matches])
 		causal_length = numpy.linalg.norm([choice_match.causal for choice_match in choice_matches])
@@ -47,6 +55,8 @@ class ScenarioMatch():
 		self.both   = [quotient_or_zero(choice_match.both,   both_length)   for choice_match in choice_matches]
 
 	def __str__(self) -> str:
+		[print(choice_match) for choice_match in self.choice_matches]
+
 		header = "index\tall\tcausal\tbelief\tboth\n"
 		lines = [
 			f"{index}\t{self.all[index]}\t{self.causal[index]}\t{self.belief[index]}\t{self.both[index]}"
@@ -58,11 +68,16 @@ class ScenarioMatch():
 class Matcher():
 
 	def __init__(self, sentence_transformer, data_frame: DataFrame, threshold: float) -> None:
+		def doit(index, sentence):
+			print(index)
+			return sentence_transformer.encode(sentence)
+
 		super().__init__()
 		self.sentence_transformer = sentence_transformer
 		self.data_frame = data_frame
 		self.threshold = threshold
-		self.data_embeddings = [sentence_transformer.encode(sentence) for sentence in data_frame["sentence"]]
+		# sentence_transformer.encode(sentence)
+		self.data_embeddings = [doit(index, sentence) for index, sentence in enumerate(data_frame["sentence"])]
 		self.causal_column = self.data_frame["causal"]
 		self.belief_column = self.data_frame["belief"]
 	
