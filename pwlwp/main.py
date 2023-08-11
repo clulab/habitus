@@ -7,7 +7,7 @@ from typing import Tuple
 
 import pandas
 
-def get_in_and_out() -> Tuple[str, str]:
+def get_in_and_out() -> Tuple[str] # , str]:
 	argument_parser = ArgumentParser()
 	argument_parser.add_argument("-i", "--input", required=True, help="input directory name")
 	# argument_parser.add_argument("-o", "--output", required=True, help="output file name")

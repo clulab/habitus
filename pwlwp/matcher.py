@@ -3,13 +3,12 @@ from pandas import DataFrame
 from scenario import Scenario
 from typing import List
 
-import math
 import numpy
 import numpy.linalg
 
 class SentenceMatch():
 
-	def __init__(self, sentence_embedding, data_embedding, threshold, is_causal, is_belief) -> None:
+	def __init__(self, sentence_embedding, data_embedding, threshold: float, is_causal: bool, is_belief: bool) -> None:
 		similarity = self.similarity(sentence_embedding, data_embedding)
 		hit = threshold < similarity
 		self.all   =hit and True
@@ -31,13 +30,13 @@ class ChoiceMatch():
 
 class ScenarioMatch():
 
-	def __init__(self, choice_matches: List[ChoiceMatch]):
+	def __init__(self, choice_matches: List[ChoiceMatch]) -> None:
 		def quotient_or_zero(numerator, denominator) -> float:
 			if denominator:
 				return numerator / denominator
 			else:
 				return 0.0
-
+		self.length = len(choice_matches)
 		all_length    = numpy.linalg.norm([choice_match.all    for choice_match in choice_matches])
 		causal_length = numpy.linalg.norm([choice_match.causal for choice_match in choice_matches])
 		belief_length = numpy.linalg.norm([choice_match.belief for choice_match in choice_matches])
@@ -47,6 +46,15 @@ class ScenarioMatch():
 		self.belief = [quotient_or_zero(choice_match.belief, belief_length) for choice_match in choice_matches]
 		self.both   = [quotient_or_zero(choice_match.both,   both_length)   for choice_match in choice_matches]
 
+	def __str__(self) -> str:
+		header = "index\tall\tcausal\tbelief\tboth\n"
+		lines = [
+			f"{index}\t{self.all[index]}\t{self.causal[index]}\t{self.belief[index]}\t{self.both[index]}"
+			for index in range(self.length)
+		]
+		string = header + ("\n").join(lines)
+		return string
+	
 class Matcher():
 
 	def __init__(self, sentence_transformer, data_frame: DataFrame, threshold: float) -> None:
