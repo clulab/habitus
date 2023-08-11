@@ -67,17 +67,12 @@ class ScenarioMatch():
 	
 class Matcher():
 
-	def __init__(self, sentence_transformer, data_frame: DataFrame, threshold: float) -> None:
-		def doit(index, sentence):
-			print(index)
-			return sentence_transformer.encode(sentence)
-
+	def __init__(self, sentence_transformer, data_embeddings, data_frame: DataFrame, threshold: float) -> None:
 		super().__init__()
 		self.sentence_transformer = sentence_transformer
 		self.data_frame = data_frame
 		self.threshold = threshold
-		# sentence_transformer.encode(sentence)
-		self.data_embeddings = [doit(index, sentence) for index, sentence in enumerate(data_frame["sentence"])]
+		self.data_embeddings = data_embeddings
 		self.causal_column = self.data_frame["causal"]
 		self.belief_column = self.data_frame["belief"]
 	

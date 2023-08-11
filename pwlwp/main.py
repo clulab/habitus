@@ -5,14 +5,15 @@ from scenario import Scenario
 from sentence_transformers import SentenceTransformer
 from typing import Tuple
 
+import numpy
 import pandas
 
 def get_in_and_out() -> str: # Tuple[str, str]:
 	argument_parser = ArgumentParser()
-	argument_parser.add_argument("-i", "--input", required=True, help="input directory name")
-	# argument_parser.add_argument("-o", "--output", required=True, help="output file name")
+	argument_parser.add_argument("-ic", "--input-corpus", required=True, help="input corpus file name")
+	argument_parser.add_argument("-iv", "--input-vector", required=True, help="input vector file name")
 	args = argument_parser.parse_args()
-	return args.input #, args.output
+	return args.input_corpus, args.input_vector
 
 scenario1 = Scenario(
 	"In the current Ghanaian market, a pound of gold is worth $30,000.  However, an illegal gold miner sells it for about $420. Imagine that gold is discovered in a neighboring country in even greater quantities, shifting the mining industry and causing prices to plummet in Ghana. Now, illegal miners are only receiving $200 for a pound of gold. Illegal mining has started to decline across the country. This is likely because…",
@@ -48,14 +49,14 @@ scenario3 = Scenario(
 if __name__ == "__main__":
 	threshold = 0.3
 	sentence_transformer_name: str = "all-distilroberta-v1"
-	input_file_name: str = "../corpora/causalBeliefSentences.tsv"
-	# input_file_name, output_file_name = get_in_and_out()
-	data_frame = pandas.read_csv(input_file_name, sep="\t", encoding="utf-8", keep_default_na=False,
+	input_corpus_file_name: str = "../corpora/causalBeliefSentences.tsv"
+	input_vector_file_name: str = "../corpora/causalBeliefSentences.npy"
+	# input_corpus_file_name, input_vector_file_name = get_in_and_out()
+	input_vectors = numpy.load(input_vector_file_name)
+	data_frame = pandas.read_csv(input_corpus_file_name, sep="\t", encoding="utf-8", keep_default_na=False,
 		dtype={"file": str, "index": int, "sentence": str, "causal": bool, "belief": bool}
-	)[:1000]
-	# truncated_data_frame = data_frame.truncate(100)
-
+	) # [:100]
 	sentence_transformer = SentenceTransformer(sentence_transformer_name)
-	matcher = Matcher(sentence_transformer, data_frame, threshold)
+	matcher = Matcher(sentence_transformer, input_vectors, data_frame, threshold)
 	scenario_match = matcher.match_scenario(scenario1)
 	print(scenario_match)
