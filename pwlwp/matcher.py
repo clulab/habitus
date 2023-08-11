@@ -97,7 +97,7 @@ class Matcher():
 		return choice_match
 
 	def match_scenario(self, scenario: Scenario) -> ScenarioMatch:
-		# We're not doing anything with this right now.
+		# We're not doing anything with the introduction right now.
 		self.match_choice(scenario.introduction)
 		choice_matches = [
 			self.match_choice(choice)
