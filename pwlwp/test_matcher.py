@@ -76,8 +76,8 @@ def test_scenario_match():
 		])  # 3, 2, 2, 1
 	]
 	scenario_match = ScenarioMatch(choice_matches)
-	assert scenario_match.all == [2 / math.sqrt(13), 3 / math.sqrt(13)]
-	assert scenario_match.causal == [1 / math.sqrt(5), 2 / math.sqrt(5)]
+	assert scenario_match.all == [2 / 5, 3 / 5]
+	assert scenario_match.causal == [1 / 3, 2 / 3]
 	assert scenario_match.belief == [0.0, 1.0]
 	assert scenario_match.both == [0.0, 1.0]
 

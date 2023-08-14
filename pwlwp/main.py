@@ -47,7 +47,7 @@ scenario3 = Scenario(
 
 
 if __name__ == "__main__":
-	threshold = 0.3
+	threshold = 0.5
 	sentence_transformer_name: str = "all-distilroberta-v1"
 	input_corpus_file_name: str = "../corpora/causalBeliefSentences.tsv"
 	input_vector_file_name: str = "../corpora/causalBeliefSentences.npy"

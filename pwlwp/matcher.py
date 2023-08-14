@@ -45,10 +45,10 @@ class ScenarioMatch():
 			
 		self.choice_matches = choice_matches
 		self.length = len(choice_matches)
-		all_length    = numpy.linalg.norm([choice_match.all    for choice_match in choice_matches])
-		causal_length = numpy.linalg.norm([choice_match.causal for choice_match in choice_matches])
-		belief_length = numpy.linalg.norm([choice_match.belief for choice_match in choice_matches])
-		both_length   = numpy.linalg.norm([choice_match.both   for choice_match in choice_matches])
+		all_length    = sum([choice_match.all    for choice_match in choice_matches])
+		causal_length = sum([choice_match.causal for choice_match in choice_matches])
+		belief_length = sum([choice_match.belief for choice_match in choice_matches])
+		both_length   = sum([choice_match.both   for choice_match in choice_matches])
 		self.all    = [quotient_or_zero(choice_match.all,    all_length)    for choice_match in choice_matches]
 		self.causal = [quotient_or_zero(choice_match.causal, causal_length) for choice_match in choice_matches]
 		self.belief = [quotient_or_zero(choice_match.belief, belief_length) for choice_match in choice_matches]
