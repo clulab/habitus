@@ -27,9 +27,7 @@ class GetPageDownloader(domain: Domain) extends PageDownloader(domain) {
       println(s"Downloading ${page.url.toString} to $htmlLocationName")
 
       val doc = Try(browser.get(page.url.toString)).getOrElse {
-        // The Scala interface doesn't seem to allow access to this.
-        // Wait for 10 seconds if necessary.
-        // Jsoup.connect(page.url.toString).timeout(10 * 1000).get()
+        // Before retry, wait for 3 seconds, which seems to help.
         Thread.sleep(3000)
         browser.get(page.url.toString)
       }

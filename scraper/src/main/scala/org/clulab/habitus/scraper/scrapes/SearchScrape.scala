@@ -4,5 +4,5 @@ class SearchScrape(val count: Int)
 
 object SearchScrape {
 
-  def apply(count: Int): SearchScrape = new SearchScrape(math.min(5, count))
+  def apply(count: Int): SearchScrape = new SearchScrape(math.min(100, count))
 }
