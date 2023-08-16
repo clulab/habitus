@@ -4455,13 +4455,13 @@ https://gna.org.gh/2022/03/australian-high-commission-engages-women-in-mining/
 https://gna.org.gh/2022/03/upper-denkyira-east-assembly-to-engage-2000-youth-in-community-mining/
 https://gna.org.gh/2022/03/upper-denkyira-east-assembly-to-engage-2000-youth-in-community-mining/
 https://gna.org.gh/2022/03/adhere-to-responsible-mining-principles---ministry/
-https://gna.org.gh/2022/02/engage-chiefs-constantly-minerals-commission-tells-mining-companies   /
-https://gna.org.gh/2022/02/engage-chiefs-constantly-minerals-commission-tells-mining-companies   /
+https://gna.org.gh/2022/02/engage-chiefs-constantly-minerals-commission-tells-mining-companies/
+https://gna.org.gh/2022/02/engage-chiefs-constantly-minerals-commission-tells-mining-companies/
 https://gna.org.gh/2022/02/lands-minister-calls-for-responsible-mining-operations/
 https://gna.org.gh/2022/02/govt-wont-allow-traditional-authorities-to-frustrate-mining-investorsminerals-commission/
 https://gna.org.gh/2022/02/cocobod-decries-wanton-destruction-of-cocoa-farms-for-illegal-mining/
 https://gna.org.gh/2022/02/cocobod-decries-wanton-destruction-of-cocoa-farms-for-illegal-mining/
-https://gna.org.gh/2022/02/govt-unveils-$1034-million-project-to-restore-degraded-landscapes-sanitise-small-scale-mining-sector/
+# https://gna.org.gh/2022/02/govt-unveils-$1034-million-project-to-restore-degraded-landscapes-sanitise-small-scale-mining-sector/
 https://gna.org.gh/2022/02/kunsu-community-mining-scheme-to-create-5000-jobs-in-aha-ano-south-westmireku-duker/
 https://gna.org.gh/2022/02/community-mining-scheme-is-for-ghanaians-onlyabu-jinapor/
 https://gna.org.gh/2022/02/mining-companies-advised-to-adhere-to-epas-directives-on-explosives/
@@ -4670,7 +4670,7 @@ https://gna.org.gh/2023/08/high-court-restrains-angela-list-others-from-acting-a
 https://gna.org.gh/2023/08/anglogold-ashanti-fixes-1-4-kilometre-deplorable-portion-of-obuasi-dunkwa-road/
 https://gna.org.gh/2023/08/newmont-africa-builds-ghc500000-00-clinic-for-hwidiem-st-elizabeth-hospital/
 https://gna.org.gh/2023/08/gold-fields-commissions-instrumentation-training-rig-at-tarkwa-mine/
-https://gna.org.gh/2023/08/national-theatre-premiers-efu-p%c9%94nk%c9%94-august-25/
+# https://gna.org.gh/2023/08/national-theatre-premiers-efu-p%c9%94nk%c9%94-august-25/
 https://gna.org.gh/2023/08/africa-must-entrench-rule-of-law-for-peace-and-stability-president-akufo-addo/
 https://gna.org.gh/2023/07/british-international-investment-announces-us50-million-long-term-capital-for-ghanaian-business/
 https://gna.org.gh/2023/07/british-international-investment-announces-us50-million-long-term-capital-for-ghanaian-business-2/
@@ -4761,7 +4761,7 @@ https://gna.org.gh/2023/06/consider-women-with-land-rights-regional-minister/
 https://gna.org.gh/2023/06/court-prohibits-osp-from-declaring-charles-bissue-wanted/
 https://gna.org.gh/2023/06/court-orders-galamsey-queen-to-open-her-defence/
 https://gna.org.gh/2023/06/ghana-launches-third-phase-of-national-action-plan-against-child-labour/
-https://gna.org.gh/2023/06/bibiani-ndc-parliamentary-candidate-donates-gh%c2%a220000-towards-college-of-health-girls-dormitory-reconstruction/
+# https://gna.org.gh/2023/06/bibiani-ndc-parliamentary-candidate-donates-gh%c2%a220000-towards-college-of-health-girls-dormitory-reconstruction/
 https://gna.org.gh/2023/06/dont-sacrifice-african-indigeneity-to-global-partnerships/
 https://gna.org.gh/2023/06/anglogold-ashanti-equips-over-250-obuasi-youth-with-entrepreneurship-skills/
 https://gna.org.gh/2023/06/huaweis-partnership-with-bui-power-authority-exemplifies-how-ict-can-optimize-operations/
@@ -4912,7 +4912,7 @@ https://gna.org.gh/2023/03/newmont-pays-ghs-2-76-billion-taxes-to-government-in-
 https://gna.org.gh/2023/03/seventeen-aspirants-to-contest-in-ndc-primaries-in-western-north-region/
 https://gna.org.gh/2023/03/university-of-mines-and-technology-holds-14th-graduation/
 https://gna.org.gh/2023/03/paramount-chief-urges-youth-to-use-non-violent-means-in-addressing-their-grievances/
-https://gna.org.gh/2023/03/water-consumers-in-wa-township-owe-gwcl-gh%c2%a2200000/
+# https://gna.org.gh/2023/03/water-consumers-in-wa-township-owe-gwcl-gh%c2%a2200000/
 https://gna.org.gh/2023/03/newmont-ahafo-north-project-will-enhance-lives-of-local-people/
 https://gna.org.gh/2023/03/12-chinese-nationals-in-court-over-galamsey/
 https://gna.org.gh/2023/03/government-urged-to-prioritise-access-to-safe-drinking-water-in-schools-health-facilities/
@@ -4994,7 +4994,7 @@ https://gna.org.gh/2023/02/industry-fears-access-to-funding-over-ddep/
 https://gna.org.gh/2023/02/climate-crisis-ghana-pursuing-sustainable-ecotourism-as-solution/
 https://gna.org.gh/2023/02/green-shipping-global-framework-needed-for-improved-maritime-sector-imo-general-secretary/
 https://gna.org.gh/2023/02/ukraine-authorities-report-six-suspected-spy-balloons-over-kiev/
-https://gna.org.gh/2023/02/newmont-africas-akyem-mine-invests-gh%e2%82%b5-1-4-million-in-training-of-youth-in-host-community/
+# https://gna.org.gh/2023/02/newmont-africas-akyem-mine-invests-gh%e2%82%b5-1-4-million-in-training-of-youth-in-host-community/
 https://gna.org.gh/2023/02/humans-are-not-responsible-for-atewas-forest-destruction-witness/
 https://gna.org.gh/2023/02/researcher-calls-for-urgent-resettlement-of-two-fence-line-communities-in-ahafo/
 https://gna.org.gh/2023/02/government-must-take-urgent-steps-to-save-children-from-air-pollution-psg/
@@ -5122,7 +5122,7 @@ https://gna.org.gh/2022/11/ghanaians-urged-to-help-fight-environmental-degradati
 https://gna.org.gh/2022/11/azumah-resources-committed-to-promoting-community-development/
 https://gna.org.gh/2022/11/bridging-the-wash-gaps-a-necessary-tool-to-obtain-sdg-goals-in-ghana/
 https://gna.org.gh/2022/11/producer-price-inflation-rate-for-october-2022-surges-to-65-2-per-cent/
-https://gna.org.gh/2022/11/national-daily-minimum-wage-for-2023-increased-by-10-per-cent-now-gh%c2%a214-88/
+# https://gna.org.gh/2022/11/national-daily-minimum-wage-for-2023-increased-by-10-per-cent-now-gh%c2%a214-88/
 https://gna.org.gh/2022/11/foreign-secretaries-of-uk-belgium-joined-ilo-and-ituc-commending-qatar-workers-welfare-progress/
 https://gna.org.gh/2022/11/gaf-seizes-30-excavators-others-in-operation-halt-ii/
 https://gna.org.gh/2022/11/galamsey-reversing-climate-change-achievements-occupyghana/
@@ -5295,7 +5295,7 @@ https://gna.org.gh/2022/09/nfs-to-nominate-athletes-for-47th-swag-awards/
 https://gna.org.gh/2022/09/oguaa-needs-to-exploit-untapped-potentials-for-development-mensah-hagan/
 https://gna.org.gh/2022/09/religious-leaders-sensitised-on-child-protection-issues/
 https://gna.org.gh/2022/09/another-victim-of-appiatse-explosion-passes-on-at-okomfo-anokye/
-https://gna.org.gh/2022/09/newmont-releases-gh%c2%a21-million-to-train-youth-in-ahafo/
+# https://gna.org.gh/2022/09/newmont-releases-gh%c2%a21-million-to-train-youth-in-ahafo/
 https://gna.org.gh/2022/09/asian-shares-rise-after-powell-comments-record-ecb-rate-hike/
 https://gna.org.gh/2022/09/french-industrial-production-falls-for-first-time-in-three-months/
 https://gna.org.gh/2022/09/chamber-of-mines-lauds-newmont-for-asphalting-kenyasi-hwidiem-road/
@@ -5325,7 +5325,7 @@ https://gna.org.gh/2022/08/green-ghana-project-vital-government-step-requiring-e
 https://gna.org.gh/2022/08/kenya-election-raila-odinga-challenges-william-ruto-win-in-supreme-court/
 https://gna.org.gh/2022/08/two-groups-petition-president-otumfuo-over-anglogold-ashanti-concessions-invasion/
 https://gna.org.gh/2022/08/cape-three-points-a-rich-heritage-now-reduced-to-fetid-environment/
-https://gna.org.gh/2022/08/financial-sector-clean-up-eoco-asked-to-help-recover-gh%e2%82%b5116-million-untraceable-investments/
+# https://gna.org.gh/2022/08/financial-sector-clean-up-eoco-asked-to-help-recover-gh%e2%82%b5116-million-untraceable-investments/
 https://gna.org.gh/2022/08/minister-of-food-and-agriculture-inaugurates-twifo-oil-palm-plantation-board/
 https://gna.org.gh/2022/08/government-doing-its-best-for-appiatse/
 https://gna.org.gh/2022/08/nyinahin-police-taskforce-arrests-illegal-miners/
@@ -5384,9 +5384,9 @@ https://gna.org.gh/2022/07/us-ambassador-lauds-government-for-promoting-inclusiv
 https://gna.org.gh/2022/07/government-is-committed-to-aggressive-afforestation/
 https://gna.org.gh/2022/07/government-is-committed-to-aggressive-afforestation/
 https://gna.org.gh/2022/07/government-is-committed-to-aggressive-afforestation/
-https://gna.org.gh/2022/07/ghana-loses-ghs5-billion-to-corruption-in-2021 /
-https://gna.org.gh/2022/07/ghana-loses-ghs5-billion-to-corruption-in-2021 /
-https://gna.org.gh/2022/07/ghana-loses-ghs5-billion-to-corruption-in-2021 /
+https://gna.org.gh/2022/07/ghana-loses-ghs5-billion-to-corruption-in-2021/
+https://gna.org.gh/2022/07/ghana-loses-ghs5-billion-to-corruption-in-2021/
+https://gna.org.gh/2022/07/ghana-loses-ghs5-billion-to-corruption-in-2021/
 https://gna.org.gh/2022/07/bibiani-mine-demonstration-leaves-six-with-gunshot-wounds/
 https://gna.org.gh/2022/07/bibiani-mine-demonstration-leaves-six-with-gunshot-wounds/
 https://gna.org.gh/2022/07/bibiani-mine-demonstration-leaves-six-with-gunshot-wounds/
@@ -5487,8 +5487,8 @@ https://gna.org.gh/2022/06/president-commissions-mercury-free-gold-processing-eq
 https://gna.org.gh/2022/06/president-commissions-mercury-free-gold-processing-equipment/
 https://gna.org.gh/2022/06/world-environment-day-anglogold-partners-epa-to-clean-obuasi/
 https://gna.org.gh/2022/06/world-environment-day-anglogold-partners-epa-to-clean-obuasi/
-https://gna.org.gh/2022/06/report moscow-to-allow-grain-supplies-to-leave-port-of-odessa/
-https://gna.org.gh/2022/06/report moscow-to-allow-grain-supplies-to-leave-port-of-odessa/
+# https://gna.org.gh/2022/06/report moscow-to-allow-grain-supplies-to-leave-port-of-odessa/
+# https://gna.org.gh/2022/06/report moscow-to-allow-grain-supplies-to-leave-port-of-odessa/
 https://gna.org.gh/2022/06/ngo-wants-pupils-to-be-agents-of-environmental-protection/
 https://gna.org.gh/2022/06/ngo-wants-pupils-to-be-agents-of-environmental-protection/
 https://gna.org.gh/2022/06/australian-high-commissioner-to-ghana-applauds-government/
@@ -5514,7 +5514,7 @@ https://gna.org.gh/2022/05/president-directs-mmdas-to-clear-waterways-with-immed
 https://gna.org.gh/2022/05/non-availability-of-data-impeding-climate-change-researchscientists/
 https://gna.org.gh/2022/05/lets-focus-on-reclamation-as-responsible-minerssmall-scale-miners-urged/
 https://gna.org.gh/2022/05/werp-launched-for-30-beneficiaries-in-ahafo-north/
-https://gna.org.gh/2022/05/ghanas-public-debt-rises-to-gh₵3919-billion/
+# https://gna.org.gh/2022/05/ghanas-public-debt-rises-to-gh₵3919-billion/
 https://gna.org.gh/2022/05/aggrieved-farmers-in-newmont-ahafo-north-mines-enclave-besiege-sunyani-high-court/
 https://gna.org.gh/2022/05/aggrieved-farmers-in-newmont-ahafo-north-mines-enclave-besiege-sunyani-high-court/
 https://gna.org.gh/2022/05/aggrieved-farmers-in-newmont-ahafo-north-mines-enclave-besiege-sunyani-high-court/
@@ -5565,7 +5565,7 @@ https://gna.org.gh/2022/05/umat-inaugurates-student-volunteer-group/
 https://gna.org.gh/2022/05/employees-and-employers-must-commit-to-ethical-culture/
 https://gna.org.gh/2022/05/employees-and-employers-must-commit-to-ethical-culture/
 https://gna.org.gh/2022/05/e-levy-supreme-court--dismisses-injunction-on-implementation/
-https://gna.org.gh/2022/05/ghana-to-offer-oil-blocks-in-western-eastern-basinsdr-adam /
+https://gna.org.gh/2022/05/ghana-to-offer-oil-blocks-in-western-eastern-basinsdr-adam/
 https://gna.org.gh/2022/05/rocksure-international-to-process-bauxite-into-aluminadirector/
 https://gna.org.gh/2022/05/rocksure-international-to-process-bauxite-into-aluminadirector/
 https://gna.org.gh/2022/05/rocksure-international-to-process-bauxite-into-aluminadirector/
@@ -5573,7 +5573,7 @@ https://gna.org.gh/2022/04/migration-policy-makers-should-put-in-measures-to-har
 https://gna.org.gh/2022/04/migration-policy-makers-should-put-in-measures-to-harness-benefits/
 https://gna.org.gh/2022/04/migration-policy-makers-should-put-in-measures-to-harness-benefits/
 https://gna.org.gh/2022/04/appiatse-victims-to-move-into-temporary-structures-on-may-4/
-https://gna.org.gh/2022/04/government-urged-to-protect-rights-of-children /
+https://gna.org.gh/2022/04/government-urged-to-protect-rights-of-children/
 https://gna.org.gh/2022/04/anglogold-ashanti-iduapriem-mine-awards-scholarship-to-50-tertiary-students/
 https://gna.org.gh/2022/04/unipower-supports-three-communities-in-wassa-east-with-building-materials/
 https://gna.org.gh/2022/04/unipower-supports-three-communities-in-wassa-east-with-building-materials/
@@ -5607,7 +5607,7 @@ https://gna.org.gh/2022/04/new-board-of-ghana-bauxite-company-visits-mine-site-i
 https://gna.org.gh/privacy-policy-2/
 https://gna.org.gh/2022/04/house-to-house-audit-on-illegal-water-connection-to-commence-soon/
 https://gna.org.gh/2022/04/cdd-ghana-introduces-new-project-to-track-utilisation-of-mineral-revenues/
-https://gna.org.gh/2022/04/govt-invests-over-us$740-million-into-water-projects-to-improve-access/
+# https://gna.org.gh/2022/04/govt-invests-over-us$740-million-into-water-projects-to-improve-access/
 https://gna.org.gh/2022/04/ada-traditional-council-familiarise-itself-with-electrochems-redevelopment/
 https://gna.org.gh/2022/04/ghana-water-commended-for-extending-water-supply-to-rural-areas/
 https://gna.org.gh/2022/04/gwcl-struggles-to-extract-water-for-treatment-due-to-galamsey/
@@ -5632,7 +5632,7 @@ https://gna.org.gh/2022/04/umat-launches-70th-institutional-anniversary-celebrat
 https://gna.org.gh/2022/04/lands-and-natural-resources-minister-applauds-gold-fields/
 https://gna.org.gh/2022/04/inspector-general-of-police-visits-ellembelle-over-clashes-between-youth-and-police/
 https://gna.org.gh/2022/04/inspector-general-of-police-visits-ellembelle-over-clashes-between-youth-and-police/
-https://gna.org.gh/2022/04/shandong-gold-limited-donates-$50000-to-appiatse-support-fund/
+# https://gna.org.gh/2022/04/shandong-gold-limited-donates-$50000-to-appiatse-support-fund/
 https://gna.org.gh/2022/04/ellembelle-mp-calls-for-thorough-investigations-into-clashes-at-nkroful-magistrate-court/
 https://gna.org.gh/2022/03/indiscriminate-waste-disposal-polluting-water-bodies-in-bono-regiongwcl/
 https://gna.org.gh/2022/03/indiscriminate-waste-disposal-polluting-water-bodies-in-bono-regiongwcl/
@@ -5648,8 +5648,8 @@ https://gna.org.gh/2022/03/northern-stakeholders-attend-land-restoration-impleme
 https://gna.org.gh/2022/03/more-efforts-needed-to-protect-groundwater-from-pollution--university-lecturer/
 https://gna.org.gh/2022/03/miif-to-focus-interest-on-industrial-salt-productionceo/
 https://gna.org.gh/2022/03/gyem-urges-government-to-protect-ghanas-forests-from-destruction/
-https://gna.org.gh/2022/03/government-seeks-us$2billion-financing-arrangement-to-stem-cedi-depreciation/
-https://gna.org.gh/2022/03/government-seeks-us$2billion-financing-arrangement-to-stem-cedi-depreciation/
+# https://gna.org.gh/2022/03/government-seeks-us$2billion-financing-arrangement-to-stem-cedi-depreciation/
+# https://gna.org.gh/2022/03/government-seeks-us$2billion-financing-arrangement-to-stem-cedi-depreciation/
 https://gna.org.gh/2022/03/local-content-generates-one-billion-dollars-annually--samuel-jinapor/
 https://gna.org.gh/2022/03/time-to-support-the-government-is-nowrazak-opoku/
 https://gna.org.gh/2022/03/time-to-support-the-government-is-nowrazak-opoku/
@@ -5667,8 +5667,8 @@ https://gna.org.gh/2022/03/sand-winning--a-tortuous-environmental-crime-destroyi
 https://gna.org.gh/2022/03/iea-urges-govt-to-increase-mpr-to-stem-inflation/
 https://gna.org.gh/2022/03/iea-urges-govt-to-increase-mpr-to-stem-inflation/
 https://gna.org.gh/2022/03/galamsey-fightlands-ministers-scheduled-to-appear-before-parliament/
-https://gna.org.gh/2022/03/golden-star-wassa-donates-us$200000-to-appiatse-support-fund/
-https://gna.org.gh/2022/03/golden-star-wassa-donates-us$200000-to-appiatse-support-fund/
+# https://gna.org.gh/2022/03/golden-star-wassa-donates-us$200000-to-appiatse-support-fund/
+# https://gna.org.gh/2022/03/golden-star-wassa-donates-us$200000-to-appiatse-support-fund/
 https://gna.org.gh/2022/03/fon-calls-for-more-opportunities-for-women/
 https://gna.org.gh/2022/03/fon-calls-for-more-opportunities-for-women/
 https://gna.org.gh/2022/03/legitimacy-accountability-panacea-to-insurgency-in-africa-au-panel/
@@ -5695,14 +5695,14 @@ https://gna.org.gh/2022/03/family-of-dr-kwame-nkrumah-appeals-for-the-developmen
 https://gna.org.gh/2022/03/western-regional-minister-calls-for-resilience/
 https://gna.org.gh/2022/03/enact-policy-to-tackle-academia-industry-gapanamuah-mensah/
 https://gna.org.gh/2022/03/appiatse-explosion-ministry-awaiting-health-and-safety-committees-report/
-https://gna.org.gh/2022/03/world-wildlife-day-destruction-of-wildlife-threatening-human-survival- /
+# https://gna.org.gh/2022/03/world-wildlife-day-destruction-of-wildlife-threatening-human-survival- /
 https://gna.org.gh/2022/03/gold-fields-commence-apprenticeship-training-programme-for-host-communities/
 https://gna.org.gh/2022/03/vice-president-bawumia-unveils-pmmcs-digitised-national-assay-laboratory/
 https://gna.org.gh/2022/03/accord-priority-to-legislations-that-would-improve-law-practice-ag-to-law-reform-commission-board/
 https://gna.org.gh/2022/03/accord-priority-to-legislations-that-would-improve-law-practice-ag-to-law-reform-commission-board/
 https://gna.org.gh/2022/03/president-launches-second-edition-of-green-ghana-project/
 https://gna.org.gh/2022/03/president-launches-second-edition-of-green-ghana-project/
-https://gna.org.gh/2022/02/forestry-commission-presents-gh¢500000-to-appiatse-support-fund/
+# https://gna.org.gh/2022/02/forestry-commission-presents-gh¢500000-to-appiatse-support-fund/
 https://gna.org.gh/2022/02/ghacem-sandvik-support-rebuilding-of-appiatse-community/
 https://gna.org.gh/2022/02/lack-of-information-intelligence-sharing-bane-of-terrorism-fight-ecowas-commissioner/
 https://gna.org.gh/2022/02/ecowas-to-enhance-rapid-appropriate-responses/
@@ -5713,7 +5713,7 @@ https://gna.org.gh/2022/02/security-threats-ecowas-security-advisors-meet/
 https://gna.org.gh/2022/02/media-urged-to-lead-fight-against-modern-slavery/
 https://gna.org.gh/2022/02/media-urged-to-lead-fight-against-modern-slavery/
 https://gna.org.gh/2022/02/prof-jane-opoku-agyemang-calls-for-national-industrial-policy/
-https://gna.org.gh/2022/02/bono-minister-commends-navy-detachment-for-protecting-bui-dam  /
+https://gna.org.gh/2022/02/bono-minister-commends-navy-detachment-for-protecting-bui-dam/
 https://gna.org.gh/2022/02/udswacwisa-holds-conference-on-irrigation-agricultural-development/
 https://gna.org.gh/2022/02/udswacwisa-holds-conference-on-irrigation-agricultural-development/
 https://gna.org.gh/2022/02/sustainable-forest-monitoring-systems-for-the-takoradi-forest-district-project-launched/
@@ -5751,7 +5751,7 @@ https://gna.org.gh/2022/02/we-will-educate-children-to-acquire-21st-century-skil
 https://gna.org.gh/2022/02/we-will-educate-children-to-acquire-21st-century-skillsminister/
 https://gna.org.gh/2022/02/panways-ghana-signs-joint-venture-agreement-with-asic-group/
 https://gna.org.gh/2022/02/water-crisis-in-sekondi-takoradi-soars-as-gwcl-empathises-with-residents/
-https://gna.org.gh/2022/02/appiatse-disaster-maxam-agrees-to-pay-$6m-denies-wrongdoing/
+# https://gna.org.gh/2022/02/appiatse-disaster-maxam-agrees-to-pay-$6m-denies-wrongdoing/
 https://gna.org.gh/2022/02/appiatse-explosion-maxam-ghana-to-pay-six-million-us-dollars-to-govt/
 https://gna.org.gh/2022/02/appiatse-explosion-maxam-ghana-to-pay-six-million-us-dollars-to-govt/
 https://gna.org.gh/2022/02/pelangio-exploration-contributes-usd10000-to-appiatse-support-fund/
@@ -5780,17 +5780,17 @@ https://gna.org.gh/2022/01/newmont-ghana-supports-appiatse-explosion-victims/
 https://gna.org.gh/2022/01/750-residents-of-appiatse-relocated-to-temporary-camp-at-bogoso-kojokrom/
 https://gna.org.gh/2022/01/eyewear-must-meet-the-requirement-of-ones-occupationgoa/
 https://gna.org.gh/2022/01/eyewear-must-meet-the-requirement-of-ones-occupationgoa/
-https://gna.org.gh/2022/01/gold-fields-pays-$320m-to-government-in-taxes/
+# https://gna.org.gh/2022/01/gold-fields-pays-$320m-to-government-in-taxes/
 https://gna.org.gh/2022/01/water-situation-in-sekondi-takoradi-to-get-worse-if-rains-delaygwcl/
 https://gna.org.gh/2022/01/water-situation-in-sekondi-takoradi-to-get-worse-if-rains-delaygwcl/
-https://gna.org.gh/2022/01/president-donates-gh¢10000000-to-appiatse-explosion-support-fund/
-https://gna.org.gh/2022/01/president-donates-gh¢10000000-to-appiatse-explosion-support-fund/
+# https://gna.org.gh/2022/01/president-donates-gh¢10000000-to-appiatse-explosion-support-fund/
+# https://gna.org.gh/2022/01/president-donates-gh¢10000000-to-appiatse-explosion-support-fund/
 https://gna.org.gh/2022/01/appiatse-explosion-victims-will-suffer-long-term-effectsghs/
 https://gna.org.gh/2022/01/appiatse-explosion-victims-will-suffer-long-term-effectsghs/
 https://gna.org.gh/2022/01/appaitse-explosion-umat-offers-expertise-to-manage-recovery-process/
 https://gna.org.gh/2022/01/trcci-unhappy-with-exorbitant-fees-charged-by-minerals-commission/
 https://gna.org.gh/2022/01/ghana-must-maintain-fiscal-stability-to-drive-investment/
-https://gna.org.gh/2022/01/ghana-must-learn-from-appiatse-disaster--gold-fields /
+# https://gna.org.gh/2022/01/ghana-must-learn-from-appiatse-disaster--gold-fields /
 https://gna.org.gh/2022/01/appiatse-explosion-presbyterian-church-of-ghana-asks-pastors-to-provide-counselling-services-to-victims/
 https://gna.org.gh/2022/01/appiatse-explosion-all-western-rail-line-to-be-under-contract-by-end-of-2022/
 https://gna.org.gh/2022/01/appiatse-explosion-all-western-rail-line-to-be-under-contract-by-end-of-2022/
@@ -5818,9 +5818,9 @@ https://gna.org.gh/2022/01/appiatse-explosion-i-did-not-collide-with-trucktricyc
 https://gna.org.gh/2022/01/appiatse-victims-dont-want-to-be-discharged-from-hospital/
 https://gna.org.gh/2022/01/explosion-happened-over-30-minutes-after-collision---eye-witness/
 https://gna.org.gh/2022/01/appiatse-disaster-one-more-person-dies-at-tarkwa-hospital/
-https://gna.org.gh/2022/01/appiatse-explosion-how-a-pregnant-woman-escaped-death /
-https://gna.org.gh/2022/01/gold-fields-presents-items-worth-us$29000-to-appiatse-victims/
-https://gna.org.gh/2022/01/appiatse-explosion-govt-interdicts-chief-inspector-of-mines /
+https://gna.org.gh/2022/01/appiatse-explosion-how-a-pregnant-woman-escaped-death/
+# https://gna.org.gh/2022/01/gold-fields-presents-items-worth-us$29000-to-appiatse-victims/
+https://gna.org.gh/2022/01/appiatse-explosion-govt-interdicts-chief-inspector-of-mines/
 https://gna.org.gh/2022/01/ghana-chamber-of-mines-commends-emergency-services-in-bogoso-explosion/
 https://gna.org.gh/2022/01/anglogold-ashanti-and-giz-launch-community-management-programme-for-pandemics/
 https://gna.org.gh/2022/01/anglogold-ashanti-and-giz-launch-community-management-programme-for-pandemics/
@@ -5843,7 +5843,7 @@ https://gna.org.gh/2022/01/tragedy-at-appiatse-ten-confirmed-dead/
 https://gna.org.gh/2022/01/bogoso-explosion-police-activates-emergency-recovery-plan/
 https://gna.org.gh/2022/01/government-to-cut-expenditure-by-up-to-20-per-centfinance-minister/
 https://gna.org.gh/2022/01/price-inflation-rate-ends-december-2021-at-128-per-cent/
-https://gna.org.gh/2022/01/ecotoursim-contributes-$12-billion-to-gdp-in-2020/
+# https://gna.org.gh/2022/01/ecotoursim-contributes-$12-billion-to-gdp-in-2020/
 https://gna.org.gh/2022/01/anglican-bishop-urges-ghanaians-to-contribute-to-eradicating-corruption/
 https://gna.org.gh/2022/01/caf-dismisses-protest-from-tunisia/
 https://gna.org.gh/2022/01/location-of-sentuo-oil-refinery-problematic--epa/
@@ -5896,7 +5896,7 @@ https://gna.org.gh/2021/12/decision-soon-on-police-response-to-downing-street-pa
 https://gna.org.gh/2021/12/the-media-is-the-oxgyen-of-governance--abu-jinapor/
 https://gna.org.gh/2021/12/minority-keen-on-capping-govt-borrowing-next-year/
 https://gna.org.gh/2021/12/three-illegal-miners-arrested-at-sekyere-equipment-decommissioned/
-https://gna.org.gh/2021/12/the-evil-weeds-robbing-livelihoods-threatening ghanas energy-base/
+# https://gna.org.gh/2021/12/the-evil-weeds-robbing-livelihoods-threatening ghanas energy-base/
 https://gna.org.gh/2021/12/utag-rejects-government-research-allowance/
 https://gna.org.gh/2021/12/nab-azantinlow-calls-for-increased-police-presence-in-buluk/
 https://gna.org.gh/2021/12/anglogold-ashanti-obuasi-mines-contribution-to-local-economic-growth-laudablemoti/
@@ -5905,11 +5905,11 @@ https://gna.org.gh/2021/12/otumfuo-commends-abu-jinapor-for-exemplary-leadership
 https://gna.org.gh/2021/12/farmers-urged-to-seek-assistance-from-agric-extension-officers/
 https://gna.org.gh/2021/12/newmont-ghana-pays-ghc139-billion-to-govt/
 https://gna.org.gh/2021/12/lands-ministry-launches-award-to-celebrate-responsible-small-scale-miners/
-https://gna.org.gh/2021/12/govt-secures-$103-million-for-reclamation-of-degraded-lands-dr-kokofu/
+# https://gna.org.gh/2021/12/govt-secures-$103-million-for-reclamation-of-degraded-lands-dr-kokofu/
 https://gna.org.gh/2021/12/two-out-of-five-persons-live-in-slums-in-ghana-ndpc-report/
 https://gna.org.gh/2021/12/mandatory-vaccination-breaches-fundamental-rights-of-citizens---group/
 https://gna.org.gh/2021/12/atewa-forest-case-state-unable-to-file-witness-statements-case-adjourned-to-february-8-next-year/
-https://gna.org.gh/2021/12/france-commits-€75m-to-support-growth-of-ghanaian-msmes/
+# https://gna.org.gh/2021/12/france-commits-€75m-to-support-growth-of-ghanaian-msmes/
 https://gna.org.gh/2021/12/csir-forig-calls-for-urgent-action-to-halt-forest-degradation/
 https://gna.org.gh/2021/12/sichuan-china-building-six-giant-panda-corridors-to-restore-their-habitats/
 https://gna.org.gh/2021/12/britains-tories-fined-over-donation-for-renovating-johnsons-flat/
@@ -5944,7 +5944,7 @@ https://gna.org.gh/2021/11/western-region-mmdces-trained-on-conflict-management-
 https://gna.org.gh/2021/11/fiscal-consolidation-non-negotiable-in-2022---employers-association-tells-govt/
 https://gna.org.gh/2021/11/three-percent-withholding-tax-on-unprocessed-gold-slashed-to-15-percent-abu-jinapor/
 https://gna.org.gh/2021/11/newmont-signs-revised-csra-with-host-communities/
-https://gna.org.gh/2021/11/govt-spends-$10-million-to-procure-mercury--free-gold-extraction-machines/
+# https://gna.org.gh/2021/11/govt-spends-$10-million-to-procure-mercury--free-gold-extraction-machines/
 https://gna.org.gh/2021/11/e-levy-a-reasonable-way-to-expand-the-tax-net-but---pwc-ghana/
 https://gna.org.gh/2021/11/ghana-environmental-advocacy-group-urges-government-to-halt-galamsey-in-river-ankobra/
 https://gna.org.gh/2021/11/tax-court-commence-hearing-of-cases/
@@ -5966,7 +5966,7 @@ https://gna.org.gh/2021/11/gwiraman-traditional-council-and-stakeholders--chart-
 https://gna.org.gh/2021/11/2021-bece-begins-on-monday/
 https://gna.org.gh/2021/11/we-shall-continue-to-celebrate-rawlings-ndc/
 https://gna.org.gh/2021/11/lets-be-environmental-crusaders-for-tourism-to-thrive---mr-anane-nsiah/
-https://gna.org.gh/2021/11/catholic-bishops-rally-support-for-lgbtq+-bill/
+# https://gna.org.gh/2021/11/catholic-bishops-rally-support-for-lgbtq+-bill/
 https://gna.org.gh/2021/11/gpha-indirect-waste-management-payment-checks-on-waste-disposal/
 https://gna.org.gh/2021/11/bece-no-leakage-this-year--waec/
 https://gna.org.gh/2021/11/africa-education-watch-we-only-hope-for-a-leakage-free-bece-but-not-assured/
@@ -5978,11 +5978,11 @@ https://gna.org.gh/2021/11/eduwatch-2021-wassce-monitoring-report-full-of-inaccu
 https://gna.org.gh/2021/11/men-urged-to-stop-urinating-in-gutters/
 https://gna.org.gh/2021/11/nine-member-governing-board-of-engineering-council-inaugurated/
 https://gna.org.gh/2021/11/the-need-for-alternative-finance-for-small-and-medium-enterprises/
-https://gna.org.gh/2021/11/$15bn-pledge-to-support-congo-basin/
+# https://gna.org.gh/2021/11/$15bn-pledge-to-support-congo-basin/
 https://gna.org.gh/2021/11/ghana-needs-national-data-on-human-trafficking--fts/
 https://gna.org.gh/2021/11/court-throws-out-beauticians-appeal-in-nude-pictures-case/
 https://gna.org.gh/2021/11/ezor-was-loading-gun-powder-powdered-pepper-sedative-materials-into-explosive-device--witness/
-https://gna.org.gh/2021/11/chifeng-jilong-gold-to-acquire-golden-star-for-us$470-million/
+# https://gna.org.gh/2021/11/chifeng-jilong-gold-to-acquire-golden-star-for-us$470-million/
 https://gna.org.gh/2021/11/enrri-advocates-for-protected-forests-in-ghana/
 https://gna.org.gh/2021/10/traditional-ruler-advises-chiefs-and-queens-against-partisan-politics/
 https://gna.org.gh/2021/10/european-authorities-identify-12-members-of-global-cybercrime-gang/
@@ -5999,7 +5999,7 @@ https://gna.org.gh/2021/10/government-asked-to-release-common-fund-arrears/
 https://gna.org.gh/2021/10/ellembelle-mp-engages-fishermen-over-seaweed-invasion-menace/
 https://gna.org.gh/2021/10/limap-gh-partners-four-institutions-to-screen-women-in-tarkwa-for-cancer/
 https://gna.org.gh/2021/10/shangri-la-is-global-hotel-of-the-year/
-https://gna.org.gh/2021/10/reverend-lawrence-tetteh-i-am-disappointed-in-the-18-pro-lgbtqi+-prominent-persons/
+# https://gna.org.gh/2021/10/reverend-lawrence-tetteh-i-am-disappointed-in-the-18-pro-lgbtqi+-prominent-persons/
 https://gna.org.gh/2021/10/dr-dasmani-gets-100-percent-confirmation-as-mce-for-prestsea-huni-valley/
 https://gna.org.gh/2021/10/vocational-training-is-relevant-for-industrialization---yea/
 https://gna.org.gh/2021/10/wrong-bra-size-can-lead-to-many-health-problems-women-told/
@@ -6014,9 +6014,9 @@ https://gna.org.gh/2021/10/critically-appraise-electoral-systems-to-enhance-demo
 https://gna.org.gh/2021/10/ministry-of-sanitation-and-water-resources-revives-ghana-committee-for-unesco-ihp/
 https://gna.org.gh/2021/10/fifteen-member-governing-body-of-water-resources-commission-inaugurated/
 https://gna.org.gh/2021/10/giif-must-be-run-without-undue-political-interference---minister/
-https://gna.org.gh/2021/10/newmont-akyem-mine-presents-over-gh¢110-million-dividend-to-govt-for-2021-financial-year/
+# https://gna.org.gh/2021/10/newmont-akyem-mine-presents-over-gh¢110-million-dividend-to-govt-for-2021-financial-year/
 https://gna.org.gh/2021/10/operation-halt-has-freed-forest-reserves-of-illegal-miners--allotey/
-https://gna.org.gh/2021/10/chamber-of-mines-supports-green-ghana-project-with-more-than-gh¢70000000/
+# https://gna.org.gh/2021/10/chamber-of-mines-supports-green-ghana-project-with-more-than-gh¢70000000/
 https://gna.org.gh/2021/10/talensi-assembly-approves-presidents-nominee/
 https://gna.org.gh/2021/10/quiz-competition-interventions-designed-to-improve-educational-standards-at-obuasi/
 https://gna.org.gh/2021/10/czech-president-in-hospital-as-post-election-government-talks-start/
@@ -6054,7 +6054,7 @@ https://gna.org.gh/2021/09/ensure-efficient-utilisation-of-minerals-development-
 https://gna.org.gh/2021/09/farmers-encouraged-to-be-climate-sensitive/
 https://gna.org.gh/2021/09/miif-should-ensure-mineral-resources-benefit-the-people---asantehene/
 https://gna.org.gh/2021/09/institutions-must-develop-organizational-culture-to-manage-cybersecurity-risks/
-https://gna.org.gh/2021/09/ghana-bags-over-$65-billion-in-oil-revenue-in-10-years/
+# https://gna.org.gh/2021/09/ghana-bags-over-$65-billion-in-oil-revenue-in-10-years/
 https://gna.org.gh/2021/09/wrcc-holds-first-council-meeting/
 https://gna.org.gh/2021/09/more-children-in-ghana-exposed-to-lead-poisoning/
 https://gna.org.gh/2021/09/the-private-sector-can-drive-ghanas-economic-recovery-efforts---trade-minister/
@@ -6065,7 +6065,7 @@ https://gna.org.gh/2021/09/dvla-inaugurates-new-governing-board/
 https://gna.org.gh/2021/09/italian-manufacturing-company-to-partner-takoradi-technical-university/
 https://gna.org.gh/2021/09/president-akufo-addo-to-host-2021-presidential-business-summit/
 https://gna.org.gh/2021/09/ghanas-natural-resources-under-serious-attack---vc/
-https://gna.org.gh/2021/09/hybrid-solar-power-for-grande-côte-opérationss/
+# https://gna.org.gh/2021/09/hybrid-solar-power-for-grande-côte-opérationss/
 https://gna.org.gh/2021/09/leadership-of-gitfic-holds-discussions-with-muchanga/
 https://gna.org.gh/2021/09/air-pollution-in-accra-still-high---epa/
 https://gna.org.gh/2021/09/ghanas-economy-doing-well-despite-the-pandemic--president/
@@ -6078,7 +6078,7 @@ https://gna.org.gh/2021/09/tricycle-rider-gets-ten-years-imprisonment-for-robber
 https://gna.org.gh/2021/09/group-commends-mcdan-for-developmental-programmes/
 https://gna.org.gh/2021/09/wr-minister-engages-state-owned-media/
 https://gna.org.gh/2021/09/covid-19-over-22000-students-in-upper-west-fail-to-return-to-school/
-https://gna.org.gh/2021/08/world-bank-approves-$1034-million-to-reverse-ghanas-land-degradation/
+# https://gna.org.gh/2021/08/world-bank-approves-$1034-million-to-reverse-ghanas-land-degradation/
 https://gna.org.gh/2021/08/social-justice-leaders-want-prosecution-against-environmental-protesters-dropped/
 https://gna.org.gh/2021/08/covid-19-687-girls-return-to-school-with-pregnancy/
 https://gna.org.gh/2021/08/umat-holds-virtual-matriculation-for-postgraduate-students/
@@ -6096,14 +6096,14 @@ https://gna.org.gh/2021/08/thousands-of-indigenous-brazilians-in-protest-for-lan
 https://gna.org.gh/2021/08/duque-12-dead-after-explosion-at-colombian-mine/
 https://gna.org.gh/2021/08/lets-desist-from-activities-fast-tracking-climate-change---narsa/
 https://gna.org.gh/2021/08/government-working-with-small-scale-miners-to-sanitize-the-sector---duker/
-https://gna.org.gh/2021/08/road-contractor-granted-gh¢20000000-bail-over-gold-fraud/
+# https://gna.org.gh/2021/08/road-contractor-granted-gh¢20000000-bail-over-gold-fraud/
 https://gna.org.gh/2021/08/back-to-school-campaign-chalk-success-in-western-region/
 https://gna.org.gh/2021/08/presidential-adviser-lauds-okyenhenes-efforts-to-combat-climate-change/
 https://gna.org.gh/2021/08/address-the-high-lending-rates-by-commercial-banks--president-to-bog/
 https://gna.org.gh/2021/08/covid-drug-cocktail-used-by-trump-approved-for-use-in-uk/
 https://gna.org.gh/2021/08/sudan-to-train-young-engineers-at-umat--minister/
 https://gna.org.gh/2021/08/lets-resume-work-on-agyapa-now---acep/
-https://gna.org.gh/2021/08/un-supports-forest-okyeman-with-$23-million-dollar-grant/
+# https://gna.org.gh/2021/08/un-supports-forest-okyeman-with-$23-million-dollar-grant/
 https://gna.org.gh/2021/08/deputy-minister-of-lands-leads-delegation-from-sudan-to-western-region/
 https://gna.org.gh/2021/08/members-of-lands-ministry-advisory-board-inaugurated/
 https://gna.org.gh/2021/08/farmer-granted-bail-for-possession-of-firearm-without-lawful-authority/
@@ -6145,7 +6145,7 @@ https://gna.org.gh/2021/07/reduce-salaries-of-the-article-71-officeholders/
 https://gna.org.gh/2021/07/reports-italy-considering-compulsory-vaccination-for-teachers/
 https://gna.org.gh/2021/07/without-the-truth-citizens-would-not-have-decent-livelihood---bishop/
 https://gna.org.gh/2021/07/national-service-personnel-call-for-allowance-increment/
-https://gna.org.gh/2021/07/ghana-launches-engagement-principles-for-the-ghana-cocoa-forest-redd+-programme/
+# https://gna.org.gh/2021/07/ghana-launches-engagement-principles-for-the-ghana-cocoa-forest-redd+-programme/
 https://gna.org.gh/2021/07/monetary-policy-committee-maintains-policy-rate-at-13-5-percent/
 https://gna.org.gh/2021/07/nipda-to-support-estate-developers-to-prevent-slums/
 https://gna.org.gh/2021/07/council-of-state-engages-technocrats-and-assembly-heads-in-western-region/
@@ -6153,12 +6153,12 @@ https://gna.org.gh/2021/07/newmont-ahafo-north-mine-affected-farmers-demand-adeq
 https://gna.org.gh/2021/07/german-anti-cartel-body-probes-facebooks-obligation-to-declare-deal/
 https://gna.org.gh/2021/07/tokyo-olympics-opening-ceremony-starts/
 https://gna.org.gh/2021/07/send-ghana-calls-on-president-akufo-addo-to-create-safe-environment-for-journalists/
-https://gna.org.gh/2021/07/gcb-bank-presents-gh¢1415-million-dividend-to-government/
+# https://gna.org.gh/2021/07/gcb-bank-presents-gh¢1415-million-dividend-to-government/
 https://gna.org.gh/2021/07/council-of-state-will-not-give-armchair-advice-chairman/
 https://gna.org.gh/2021/07/climate-change-impact-stakeholders-dialogue-on-sustainable-agriculture/
 https://gna.org.gh/2021/07/musk-tesla-still-backs-bitcoin-spacex-does-too/
 https://gna.org.gh/2021/07/producer-price-inflation-for-june-2021-is-101-percent/
-https://gna.org.gh/2021/07/37-military-hospital-to-pay-over-gh¢1m-for-negligence/
+# https://gna.org.gh/2021/07/37-military-hospital-to-pay-over-gh¢1m-for-negligence/
 https://gna.org.gh/2021/07/imf-lauds-ghana-for-exiting-fatf-grey-list/
 https://gna.org.gh/2021/07/sege-police-command-gets-nissan-pick-up/
 https://gna.org.gh/2021/07/adzolakope-community-gets-potable-water-and-toilet-for-penyi-police/
@@ -6276,7 +6276,7 @@ https://gna.org.gh/2021/06/traditional-leaders-appeal-for-reclamation-bond-for-s
 https://gna.org.gh/2021/06/ghana-records-biggest-fall-in-gold-production-in-16-years/
 https://gna.org.gh/2021/06/i-felt-safe-in-ghana---out-going-israeli-ambassador/
 https://gna.org.gh/2021/06/we-are-poised-to-end-galamsey-in-western-region---darko-mensah/
-https://gna.org.gh/2021/06/national-daily-minimum-wage-for-2021-is-gh¢1253/
+# https://gna.org.gh/2021/06/national-daily-minimum-wage-for-2021-is-gh¢1253/
 https://gna.org.gh/2021/06/ghana-needs-more-exploration-investments-to-remain-in-pole-position/
 https://www.happyghana.com/im-not-involved-in-illegal-mining-trade-professor-frimpong-boateng-3/
 https://www.happyghana.com/im-not-involved-in-illegal-mining-trade-professor-frimpong-boateng-2/
@@ -6345,8 +6345,8 @@ https://www.happyghana.com/greater-accra-regional-minister-calls-for-ban-on-prag
 https://www.happyghana.com/ecowas-rejects-attempts-to-indict-ousted-niger-president/
 https://www.happyghana.com/niger-coup-former-president-mohamed-bazoum-faces-charges-of-high-treason/
 https://www.happyghana.com/over-600000-candidates-to-sit-for-2023-bece-starting-today/
-https://www.happyghana.com/more-than-7-70-tonnes-of-monetary-gold-added-to-bog-gold-reserve-governor-addison/
-https://www.happyghana.com/charles-bissue-turns-himself-in-to-the-osp/
+# https://www.happyghana.com/more-than-7-70-tonnes-of-monetary-gold-added-to-bog-gold-reserve-governor-addison/
+# https://www.happyghana.com/charles-bissue-turns-himself-in-to-the-osp/
 https://www.happyghana.com/happyfm-donewell-insurance-officially-launch-2023-annual-blood-donation-exercise-in-accra/
 https://www.happyghana.com/accra-to-london-by-road-cars-used-for-expedition-shipped-to-ghana/
 https://www.happyghana.com/greater-accra-regional-minister-calls-for-ban-on-pragyia/
@@ -6384,7 +6384,7 @@ https://www.happyghana.com/accra-to-london-by-road-cars-used-for-expedition-ship
 https://www.happyghana.com/greater-accra-regional-minister-calls-for-ban-on-pragyia/
 https://www.happyghana.com/pernod-ricard-ghanas-planting-of-10000-trees-begins-at-moree-3/
 https://www.happyghana.com/ghana-armwrestling-federation-receives-support-ahead-of-africa-armwrestling-championship-2/
-https://www.happyghana.com/ghana-armwrestling-federation-receives-support-ahead-of-africa-armwrestling-championship/
+# https://www.happyghana.com/ghana-armwrestling-federation-receives-support-ahead-of-africa-armwrestling-championship/
 https://www.happyghana.com/ghana-armwrestling-federation-receives-support-ahead-of-africa-armwrestling-championship-3/
 https://www.happyghana.com/full-text-akufo-addo-bawumia-must-start-preparing-handover-notes-mahama/
 https://www.happyghana.com/happyfm-donewell-insurance-officially-launch-2023-annual-blood-donation-exercise-in-accra/
@@ -6518,7 +6518,7 @@ https://www.happyghana.com/manhyia-shuts-down-oyerepa-radio-over-odikes-comments
 https://www.happyghana.com/happyfm-donewell-insurance-officially-launch-2023-annual-blood-donation-exercise-in-accra/
 https://www.happyghana.com/accra-to-london-by-road-cars-used-for-expedition-shipped-to-ghana/
 https://www.happyghana.com/greater-accra-regional-minister-calls-for-ban-on-pragyia/
-https://www.happyghana.com/cedi-hits-%c2%a210-to-a-dollar/
+# https://www.happyghana.com/cedi-hits-%c2%a210-to-a-dollar/
 https://www.happyghana.com/bog-to-close-down-forex-bureaus-flouting-foreign-exchange-law/
 https://www.happyghana.com/learn-to-accept-criticisms-jfk-to-npp/
 https://www.happyghana.com/ghanaian-waterways-to-be-monitored-with-speedboats-benito-owusu-bio/
@@ -6624,7 +6624,7 @@ https://www.happyghana.com/accra-to-london-by-road-cars-used-for-expedition-ship
 https://www.happyghana.com/greater-accra-regional-minister-calls-for-ban-on-pragyia/
 https://www.happyghana.com/cocobod-advises-sefwi-bekwai-farmers-against-signing-documents-from-genser-energy/
 https://www.happyghana.com/monopoly-of-waec-must-be-broken-clement-apaak/
-https://www.happyghana.com/pay-me-gh%e2%82%b520m-and-take-my-land-farmer-tells-genser-energy/
+# https://www.happyghana.com/pay-me-gh%e2%82%b520m-and-take-my-land-farmer-tells-genser-energy/
 https://www.happyghana.com/which-billionaires-are-donating-big-money/
 https://www.happyghana.com/one-shot-as-sand-winners-clash-with-okyeman-taskforce/
 https://www.happyghana.com/happyfm-donewell-insurance-officially-launch-2023-annual-blood-donation-exercise-in-accra/
@@ -7244,7 +7244,7 @@ https://thechronicle.com.gh/aisha-huang-investigators-evidence/
 https://thechronicle.com.gh/africas-growth-remains-low-world-bank/
 https://thechronicle.com.gh/judge-orders-opunis-trial-to-start-afresh-after-6yrs/
 https://thechronicle.com.gh/ndc-communicator-eyes-manso-nkwanta-seat/
-https://thechronicle.com.gh/nla-to-be-gh%c2%a290m-richer-this-year/
+# https://thechronicle.com.gh/nla-to-be-gh%c2%a290m-richer-this-year/
 https://thechronicle.com.gh/appollonia-chief-warns-public-against-purchase-of-land-from-unauthorised-persons/
 https://thechronicle.com.gh/chinese-spy-balloon-was-able-to-transmit-information-back-to-beijing/
 https://thechronicle.com.gh/opuni-pushes-for-trial-de-novo/
@@ -7254,8 +7254,8 @@ https://thechronicle.com.gh/editorial-prestea-hunni-valley-mp-deserves-commendat
 https://thechronicle.com.gh/cedi-climbs-as-lower-oil-price-eases-dollar-demand/
 https://thechronicle.com.gh/im-not-an-illegal-miner-mce/
 https://thechronicle.com.gh/us-govt-to-sanction-those-who-undermined-nigerias-polls/
-https://thechronicle.com.gh/beige-trial-entities-offer-insulting-monthly-payment-of-gh%c2%a2500-receiver/
-https://thechronicle.com.gh/appiatse-support-fund-rakes-in-gh%c2%a262m/
+# https://thechronicle.com.gh/beige-trial-entities-offer-insulting-monthly-payment-of-gh%c2%a2500-receiver/
+# https://thechronicle.com.gh/appiatse-support-fund-rakes-in-gh%c2%a262m/
 https://thechronicle.com.gh/akufo-addo-orders-police-probe-jubilee-house-galamsey-allegation/
 https://thechronicle.com.gh/beige-bank-operated-taking-from-peter-to-pay-paul-scheme-witness-beige-bank/
 https://thechronicle.com.gh/ill-wean-ghana-off-of-the-imf-akoto/
@@ -7280,13 +7280,13 @@ https://thechronicle.com.gh/ggf-hands-over-980k-360-bed-girls-dormitory-to-hunni
 https://thechronicle.com.gh/atewa-forest-does-not-generate-enough-income-for-ghana-a-g/
 https://thechronicle.com.gh/ggf-appoints-abdel-razak-executive-secretary-of-foundation/
 https://thechronicle.com.gh/summer-tide-coy-smokes-peace-pipe-with-akyem-abuakwa-traditional-council/
-https://thechronicle.com.gh/beige-banks-customer-receives-gh%c2%a2500k-despite-being-in-receivership-sory/
+# https://thechronicle.com.gh/beige-banks-customer-receives-gh%c2%a2500k-despite-being-in-receivership-sory/
 https://thechronicle.com.gh/globaldata-pares-back-us-economy-growth-to-0-3-in-2023/
 https://thechronicle.com.gh/chinese-balloon-sensors-recovered-from-ocean-says-us/
 https://thechronicle.com.gh/ato-forson-denies-ordering-lc-for-purchase-of-200-ambulances/
 https://thechronicle.com.gh/iduapriem-mine-holds-second-edition-of-start-right-end-well-mentorship-programme/
 https://thechronicle.com.gh/minister-lauds-mamponhene-for-fighting-against-galamsey/
-https://thechronicle.com.gh/newmonts-akyem-mine-pays-gh%c2%a2184-6m-dividend-to-govt/
+# https://thechronicle.com.gh/newmonts-akyem-mine-pays-gh%c2%a2184-6m-dividend-to-govt/
 https://thechronicle.com.gh/missing-radioactive-capsule-found-in-australia/
 https://thechronicle.com.gh/south-africa-not-abandoning-coal-yet-president/
 https://thechronicle.com.gh/feature-a-call-to-all-faiths/
@@ -7327,7 +7327,7 @@ https://thechronicle.com.gh/how-will-ghanas-debt-be-restructured/
 https://thechronicle.com.gh/elizabeth-fremah-emerges-obuasi-municipal-best-farmer/
 https://thechronicle.com.gh/shs-graduate-is-best-farmer-for-akrofuom-district/
 https://thechronicle.com.gh/farmers-urged-to-help-improve-economy-sustain-rural-livelihoods/
-https://thechronicle.com.gh/aisha-paid-me-gh%c2%a224000-after-destroying-my-farm-witness/
+# https://thechronicle.com.gh/aisha-paid-me-gh%c2%a224000-after-destroying-my-farm-witness/
 https://thechronicle.com.gh/editorial-okyenhene-has-set-the-pace/
 https://thechronicle.com.gh/elephants-destroy-farms-in-upper-east-food-shortages-loom/
 https://thechronicle.com.gh/take-good-advantage-of-social-media-ncce-boss-charges-youths/
@@ -7502,7 +7502,7 @@ https://thechronicle.com.gh/kon-to-judges-dont-spare-hooligans-who-attack-journa
 https://thechronicle.com.gh/western-north-region-declares-war-on-galamsey/
 https://thechronicle.com.gh/fani-kayodes-money-laundering-trial-stalled/
 https://thechronicle.com.gh/citi-fms-cedi-summit-assembles-business-gurus-in-accra/
-https://thechronicle.com.gh/i-kicked-against-ato-essiens-gh%c2%a227-5m-biz-promotion-fund-md/
+# https://thechronicle.com.gh/i-kicked-against-ato-essiens-gh%c2%a227-5m-biz-promotion-fund-md/
 https://thechronicle.com.gh/green-minerals-ghana-thinks-ahead-of-time/
 https://thechronicle.com.gh/feature-whats-all-that-jazz-about-achimota-forest/
 https://thechronicle.com.gh/chainsaw-operators-warned-against-illegal-activities/
