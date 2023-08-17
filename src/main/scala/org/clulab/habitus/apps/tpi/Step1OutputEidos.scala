@@ -13,8 +13,8 @@ import scala.util.Using
 object Step1OutputEidos extends App {
   implicit val formats: DefaultFormats.type = org.json4s.DefaultFormats
 
-  val baseDirectory = "../corpora/multi"
-  val files = new File(baseDirectory).listFilesByWildcard("*.json", recursive = true)
+  val baseDirectoryName = "../corpora/multi"
+  val files = new File(baseDirectoryName).listFilesByWildcard("*.json", recursive = true)
   val eidosSystem = new EidosSystem()
 
   files.zipWithIndex.par.foreach { case (file, index) =>

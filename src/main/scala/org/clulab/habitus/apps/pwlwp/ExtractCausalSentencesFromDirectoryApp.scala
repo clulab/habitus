@@ -29,6 +29,7 @@ object ExtractCausalSentencesFromDirectoryApp extends App with Logging {
         val documentText = document.text.get
         val sentences = document.sentences
         val allMentions = annotatedDocument.allEidosMentions
+        // TODO: Should also be an event mention?
         val causalMentions = allMentions.filter(_.label == JLDRelationCausation.taxonomy)
         val causalSentenceIndices = causalMentions.map(_.odinMention.sentence).toSet
 
