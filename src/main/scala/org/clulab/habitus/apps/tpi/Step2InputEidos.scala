@@ -71,7 +71,7 @@ object Step2InputEidos extends App with Logging {
   val jsonFiles: Seq[File] = {
     val allJsonFiles = new File(baseDirectory).listFilesByWildcard("*.json", recursive = true)
         // TODO remove take
-        .take(1000)
+        .take(10000)
     val jsonldFiles = new File(baseDirectory).listFilesByWildcard("*.jsonld", recursive = true).toSet
 
     allJsonFiles.filter { jsonFile => jsonldFiles(jsonFileToJsonld(jsonFile)) }
@@ -91,7 +91,8 @@ object Step2InputEidos extends App with Logging {
     val tsvWriter = new TsvWriter(printWriter)
 
     tsvWriter.println("url", "terms", "date", "sentenceIndex", "sentence", "causal",
-        "causalIndex", "increaseCount", "decreaseCount", "negationCount", "causeText", "effectText")
+        "causalIndex", "increaseCount", "decreaseCount", "positiveCount", "negativeCount", "negationCount",
+        "causeText", "effectText")
     jsonFileRecordTermsSeq.foreach { case (jsonFile, jsonRecord, terms) =>
       println(jsonFile.getPath)
       try {
@@ -118,28 +119,42 @@ object Step2InputEidos extends App with Logging {
             val causalMentionGroup = causalMentionGroups(sentenceIndex)
 
             causalMentionGroup.zipWithIndex.foreach { case (causalMention, causalIndex) =>
-              val causeText = causalMention.arguments("cause").head.text
-              val effectText = causalMention.arguments("effect").head.text
+              val causeMentions = causalMention.arguments("cause")
+              assert(causeMentions.length == 1)
+              val effectMentions = causalMention.arguments("effect")
+              assert(effectMentions.length == 1)
+
+              val causeMention = causeMentions.head
+              if (causeMention.attachments.nonEmpty)
+                println("What?")
+              assert(causeMention.attachments.isEmpty)
+              val effectMention = effectMentions.head
+              assert(effectMention.attachments.isEmpty)
+
+              val causeText = causalMention.text
+              val effectText = causalMention.text
               val increaseCount = causalMention.attachments.count(_.isInstanceOf[Increase])
               val decreaseCount = causalMention.attachments.count(_.isInstanceOf[Decrease])
+              val posCount =  causalMention.attachments.count(_.isInstanceOf[PosChange])
+              val negCount =  causalMention.attachments.count(_.isInstanceOf[NegChange])
               val negationCount = causalMention.attachments.count(_.isInstanceOf[Negation])
 
               tsvWriter.print(url, termsString, jsonRecord.datelineOpt.getOrElse(""), sentenceIndex.toString,
                 cleanText, causal.toString, "") // to be continued
               tsvWriter.println(causalIndex.toString, increaseCount.toString, decreaseCount.toString,
-                negationCount.toString, causeText, effectText)
+                  posCount.toString, negCount.toString, negationCount.toString, causeText, effectText)
             }
           }
           else {
             tsvWriter.print(url, termsString, jsonRecord.datelineOpt.getOrElse(""), sentenceIndex.toString,
               cleanText, causal.toString, "") // to be continued
-            tsvWriter.println("", "", "", "", "", "")
+            tsvWriter.println("", "", "", "", "", "", "", "")
           }
         }
       }
       catch {
-        case exception: Exception =>
-          logger.error(s"Exception for file $jsonFile", exception)
+        case throwable: Throwable =>
+          logger.error(s"Exception for file $jsonFile", throwable)
       }
     }
   }
