@@ -16,6 +16,8 @@ import scala.util.Using
 // See ArticleScrape
 case class JsonRecord(url: String, titleOpt: Option[String], datelineOpt: Option[String], bylineOpt: Option[String], text: String)
 
+case class AttributeCounts(increaseCount: Int, decreaseCount: Int, posChangeCount: Int, negChangeCount: Int, negatedCount: Int)
+
 object Step2InputEidos extends App with Logging {
   implicit val formats: DefaultFormats.type = org.json4s.DefaultFormats
   val baseDirectory = "../corpora/multi"
@@ -68,10 +70,28 @@ object Step2InputEidos extends App with Logging {
       .replaceAll("\r", " ")
       .replaceAll("\t", " ")
 
+  def mentionToAttributeCounts(mention: Mention): AttributeCounts = {
+    val increaseCount = mention.attachments.count(_.isInstanceOf[Increase])
+    val decreaseCount = mention.attachments.count(_.isInstanceOf[Decrease])
+    val posCount = mention.attachments.count(_.isInstanceOf[PosChange])
+    val negCount = mention.attachments.count(_.isInstanceOf[NegChange])
+    val negationCount = mention.attachments.count(_.isInstanceOf[Negation])
+
+    AttributeCounts(increaseCount, decreaseCount, posCount, negCount, negationCount)
+  }
+
+  def attributeCountsToTsvWriter(attributeCounts: AttributeCounts, tsvWriter: TsvWriter): Unit = {
+    tsvWriter.print(
+      attributeCounts.increaseCount.toString, attributeCounts.decreaseCount.toString,
+      attributeCounts.posChangeCount.toString, attributeCounts.negChangeCount.toString,
+      ""
+    )
+  }
+
   val jsonFiles: Seq[File] = {
     val allJsonFiles = new File(baseDirectory).listFilesByWildcard("*.json", recursive = true)
         // TODO remove take
-        .take(10000)
+        // .take(10000)
     val jsonldFiles = new File(baseDirectory).listFilesByWildcard("*.jsonld", recursive = true).toSet
 
     allJsonFiles.filter { jsonFile => jsonldFiles(jsonFileToJsonld(jsonFile)) }
@@ -90,9 +110,13 @@ object Step2InputEidos extends App with Logging {
   Using.resource(FileUtils.printWriterFromFile(outputFileName)) { printWriter =>
     val tsvWriter = new TsvWriter(printWriter)
 
-    tsvWriter.println("url", "terms", "date", "sentenceIndex", "sentence", "causal",
-        "causalIndex", "increaseCount", "decreaseCount", "positiveCount", "negativeCount", "negationCount",
-        "causeText", "effectText")
+    tsvWriter.println(
+      "url", "terms", "date", "sentenceIndex", "sentence",
+      "causal", "causalIndex", "negationCount",
+      "causeIncCount", "causeDecCount", "causePosCount", "causeNegCount",
+      "effectIncCount", "effectDecCount", "effectPosCount", "effectNegCount",
+      "causeText", "effectText"
+    )
     jsonFileRecordTermsSeq.foreach { case (jsonFile, jsonRecord, terms) =>
       println(jsonFile.getPath)
       try {
@@ -119,36 +143,42 @@ object Step2InputEidos extends App with Logging {
             val causalMentionGroup = causalMentionGroups(sentenceIndex)
 
             causalMentionGroup.zipWithIndex.foreach { case (causalMention, causalIndex) =>
+              val causalAttributeCounts = mentionToAttributeCounts(causalMention)
+              assert(causalAttributeCounts.increaseCount == 0)
+              assert(causalAttributeCounts.decreaseCount == 0)
+              assert(causalAttributeCounts.posChangeCount == 0)
+              assert(causalAttributeCounts.negChangeCount == 0)
+              // Negation seems to be long up here.
+
               val causeMentions = causalMention.arguments("cause")
               assert(causeMentions.length == 1)
               val effectMentions = causalMention.arguments("effect")
               assert(effectMentions.length == 1)
 
               val causeMention = causeMentions.head
-              if (causeMention.attachments.nonEmpty)
-                println("What?")
-              assert(causeMention.attachments.isEmpty)
               val effectMention = effectMentions.head
-              assert(effectMention.attachments.isEmpty)
 
-              val causeText = causalMention.text
-              val effectText = causalMention.text
-              val increaseCount = causalMention.attachments.count(_.isInstanceOf[Increase])
-              val decreaseCount = causalMention.attachments.count(_.isInstanceOf[Decrease])
-              val posCount =  causalMention.attachments.count(_.isInstanceOf[PosChange])
-              val negCount =  causalMention.attachments.count(_.isInstanceOf[NegChange])
-              val negationCount = causalMention.attachments.count(_.isInstanceOf[Negation])
+              val causeText = causeMention.text
+              val effectText = effectMention.text
 
-              tsvWriter.print(url, termsString, jsonRecord.datelineOpt.getOrElse(""), sentenceIndex.toString,
-                cleanText, causal.toString, "") // to be continued
-              tsvWriter.println(causalIndex.toString, increaseCount.toString, decreaseCount.toString,
-                  posCount.toString, negCount.toString, negationCount.toString, causeText, effectText)
+              val causeAttributeCounts = mentionToAttributeCounts(causeMention)
+              assert(causeAttributeCounts.negatedCount == 0)
+              val effectAttributeCounts = mentionToAttributeCounts(effectMention)
+              assert(effectAttributeCounts.negatedCount == 0)
+
+              tsvWriter.print(url, termsString, jsonRecord.datelineOpt.getOrElse(""), sentenceIndex.toString, cleanText, "")
+              tsvWriter.print(causal.toString, causalIndex.toString, causalAttributeCounts.negatedCount.toString, "")
+              attributeCountsToTsvWriter(causeAttributeCounts, tsvWriter)
+              attributeCountsToTsvWriter(effectAttributeCounts, tsvWriter)
+              tsvWriter.println(causeText, effectText)
             }
           }
           else {
-            tsvWriter.print(url, termsString, jsonRecord.datelineOpt.getOrElse(""), sentenceIndex.toString,
-              cleanText, causal.toString, "") // to be continued
-            tsvWriter.println("", "", "", "", "", "", "", "")
+            tsvWriter.print(url, termsString, jsonRecord.datelineOpt.getOrElse(""), sentenceIndex.toString, cleanText, "")
+            tsvWriter.print(causal.toString, "", "", "")
+            tsvWriter.print( "", "", "", "", "")
+            tsvWriter.print( "", "", "", "", "")
+            tsvWriter.println( "", "")
           }
         }
       }
