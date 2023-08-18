@@ -14,7 +14,7 @@ class TpiResolutionStage(InnerStage):
         return proportion
 
     def is_sentence(self, text: str) -> bool:
-        return text[0].isupper() and text.endswith(".") and self.get_alpha_proportion(text) >= self.alpha_proportion_cutoff
+        return text and text[0].isupper() and text.endswith(".") and self.get_alpha_proportion(text) >= self.alpha_proportion_cutoff
     
     def is_valid_sentence(self, sentence: str) -> bool:
         length = len(sentence)

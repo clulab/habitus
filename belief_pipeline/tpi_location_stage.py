@@ -68,5 +68,6 @@ class TpiLocationStage(InnerStage):
         sentence_locations = self.get_column_locations(data_frame["sentence"])
         context_locations = self.get_column_locations(data_frame["context"])
         data_frame["sent_locs"] = sentence_locations
-        data_frame["context_locs"] = context_locations      
+        data_frame["context_locs"] = context_locations   
+        data_frame.drop(columns=["context"], inplace=True)
         return data_frame

@@ -68,5 +68,5 @@ class TpiBeliefStage(InnerStage):
         dataset = self.mk_dataset(data_frame, self.columns_to_keep)
         beliefs = self.mk_beliefs(dataset)
         data_frame["belief"] = beliefs
-        new_data_frame = data_frame.drop(columns=["prevSentence", "sentence_resolved"])
-        return new_data_frame
+        data_frame.drop(columns=["prevSentence", "sentence_resolved"], inplace=True)
+        return data_frame

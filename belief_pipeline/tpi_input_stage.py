@@ -17,7 +17,7 @@ class TpiInputStage(InputStage):
             "sentence": str,
             "context": str,
             "causal": bool,
-            "causalIndex": "Int32",    # this allows for None
+            "causalIndex": "Int32", # this allows for None
             "negationCount": "Int32",
 
             "causeIncCount": "Int32",
@@ -34,9 +34,10 @@ class TpiInputStage(InputStage):
             "effectText": str,
             "prevSentence": str
         })
+        data_frame["prevSentence"].fillna("", inplace=True)
         return data_frame
 
     def run(self) -> DataFrame:
         data_frame = self.mk_data_frame(self.file_name)
-        data_frame = data_frame[0:10] # TODO: remove
+        data_frame = data_frame[0:1000] # TODO: remove
         return data_frame
