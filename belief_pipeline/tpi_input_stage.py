@@ -39,5 +39,5 @@ class TpiInputStage(InputStage):
 
     def run(self) -> DataFrame:
         data_frame = self.mk_data_frame(self.file_name)
-        data_frame = data_frame[0:1000] # TODO: remove
+        # data_frame = data_frame[0:1000] # TODO: remove
         return data_frame
