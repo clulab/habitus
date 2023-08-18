@@ -16,4 +16,4 @@ To download the web pages, run a `DownloaderApp`.
 
 To convert the html files to txt, run a `ScraperApp`.
 
-For GhanaWeb, which uses a POST for the queries, do each index page by hand.  Put them in the right index directory, www_ghanaweb_com, and add the pages to indexocrpus.txt.  From there the index pages can be scraped and the articles then downloaded.
+For GhanaWeb, which uses a POST for the queries, do each index page by hand.  Put them in the right index directory, www_ghanaweb_com, and add the pages to indexcorpus.txt.  From there the index pages can be scraped and the articles then downloaded.
