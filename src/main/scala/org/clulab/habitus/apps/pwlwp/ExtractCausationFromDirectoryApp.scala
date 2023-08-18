@@ -1,9 +1,8 @@
-package org.clulab.habitus.apps
+package org.clulab.habitus.apps.pwlwp
 
 import org.clulab.wm.eidoscommon.utils.{FileUtils, Logging, TsvWriter}
-import org.json4s.DefaultFormats
-import org.json4s.{JArray, JObject, JValue}
 import org.json4s.jackson.JsonMethods
+import org.json4s.{DefaultFormats, JArray, JObject, JValue}
 
 import scala.util.Using
 

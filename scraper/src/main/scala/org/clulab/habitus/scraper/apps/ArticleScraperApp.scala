@@ -1,6 +1,7 @@
 package org.clulab.habitus.scraper.apps
 
-import net.ruippeixotog.scalascraper.browser.{Browser, JsoupBrowser}
+import net.ruippeixotog.scalascraper.browser.Browser
+import org.clulab.habitus.scraper.browsers.HabitusBrowser
 import org.clulab.habitus.scraper.corpora.PageCorpus
 import org.clulab.habitus.scraper.scrapers.article.CorpusArticleScraper
 
@@ -16,7 +17,7 @@ object ArticleScraperApp extends App {
   val baseDirName = args.lift(1).getOrElse("../corpora/scraper-illegal-mining/articles")
   val corpus = PageCorpus(corpusFileName)
   val scraper = new CorpusArticleScraper(corpus)
-  val browser: Browser = JsoupBrowser()
+  val browser: Browser = new HabitusBrowser()
 
   scraper.scrape(browser, baseDirName)
 }
