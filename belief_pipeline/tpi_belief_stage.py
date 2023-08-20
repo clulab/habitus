@@ -6,7 +6,7 @@ from transformers import AutoModelForSequenceClassification, AutoTokenizer, Trai
 import numpy
 import torch
 
-class CausalSentenceBeliefStage(InnerStage):
+class TpiBeliefStage(InnerStage):
     def __init__(self, model_name: str) -> None:
         super().__init__()
         self.model_name = model_name
@@ -68,5 +68,5 @@ class CausalSentenceBeliefStage(InnerStage):
         dataset = self.mk_dataset(data_frame, self.columns_to_keep)
         beliefs = self.mk_beliefs(dataset)
         data_frame["belief"] = beliefs
-        data_frame.drop(columns=["sentence_resolved"], inplace=True)
+        data_frame.drop(columns=["prevSentence", "sentence_resolved"], inplace=True)
         return data_frame
