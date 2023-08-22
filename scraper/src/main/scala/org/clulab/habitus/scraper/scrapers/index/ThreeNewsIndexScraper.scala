@@ -11,7 +11,7 @@ class ThreeNewsIndexScraper extends PageIndexScraper(ThreeNewsDomain) {
 
   def scrape(browser: Browser, page: Page, html: String): IndexScrape = {
     val doc = browser.parseString(html)
-    val links = (doc >> elementList("div#tdi_15 div.td-module-meta-info h3 a"))
+    val links = (doc >> elementList("div#tdi_76 div.td-module-meta-info h3 a"))
         .map(_.attr("href"))
         .map(decode)
     val scrape = IndexScrape(links)
