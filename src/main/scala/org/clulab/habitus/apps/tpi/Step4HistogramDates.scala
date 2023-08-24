@@ -1,7 +1,6 @@
 package org.clulab.habitus.apps.tpi
 
-import org.clulab.utils.{FileUtils, Logging, Sourcer}
-import org.clulab.wm.eidoscommon.utils.TsvReader
+import org.clulab.utils.{Logging, Sourcer}
 
 import scala.util.Using
 
