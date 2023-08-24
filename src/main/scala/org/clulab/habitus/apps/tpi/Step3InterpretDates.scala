@@ -32,7 +32,7 @@ object Step3InterpretDates extends App with Logging {
         val monthDigits = monthMap(month)
         val dayDigits = f"$day%2s".replace(' ', '0')
 
-        f"${year}-${monthDigits}-${dayDigits}T"
+        f"${year}-${monthDigits}-${dayDigits}"
       case looseLongRegex(month, day, year, hour, minute, amOrPm) =>
         val monthDigits = monthMap(month)
         val dayDigits = f"$day%2s".replace(' ', '0')
