@@ -5,8 +5,8 @@ import org.clulab.utils.{FileUtils, Sourcer}
 import scala.util.Using
 
 object CheckColumnsApp extends App {
-  val inputFileName = "../corpora/multi/CausalBeliefsEven2.tsv"
-  val outputFileName = "../corpora/multi/CausalBeliefsEven3.tsv"
+  val inputFileName = "../corpora/multi/CausalBeliefs.tsv"
+  val outputFileName = "../corpora/multi/CausalBeliefsEven.tsv"
   val expectedColumnCount = 21
 
   Using.resource(Sourcer.sourceFromFilename(inputFileName)) { inputSource =>
