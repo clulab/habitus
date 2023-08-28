@@ -8,13 +8,35 @@ import numpy.linalg
 
 class SentenceMatch():
 
-	def __init__(self, sentence_embedding, data_embedding, threshold: float, is_causal: bool, is_belief: bool) -> None:
+	choice_str = ""
+
+	def __init__(self, choice_str, sentence_embedding, data_embedding, threshold: float, is_causal: bool, is_belief: bool) -> None:
 		similarity = self.similarity(sentence_embedding, data_embedding)
 		hit = threshold < similarity
 		self.all   =hit and True
 		self.causal=hit and is_causal
 		self.belief=hit and is_belief
 		self.both  =hit and is_causal and is_belief
+		self.choice_str = choice_str
+
+	def similarity(self, left_embedding, right_embedding) -> float:
+		result = numpy.dot(left_embedding, right_embedding) / numpy.linalg.norm(left_embedding) / numpy.linalg.norm(right_embedding)
+		return result
+
+class SentenceMatchFilter():
+
+	choice_str = ""
+
+	def __init__(self, choice_str, introduction_embedding, sentence_embedding, data_embedding, threshold1: float, threshold2: float, is_causal: bool, is_belief: bool) -> None:
+		similarity1 = self.similarity(introduction_embedding, data_embedding)
+		pass_first = threshold1 < similarity1
+		similarity2 = self.similarity(sentence_embedding, data_embedding)
+		hit = pass_first and (threshold2 < similarity2)
+		self.all   =hit and True
+		self.causal=hit and is_causal
+		self.belief=hit and is_belief
+		self.both  =hit and is_causal and is_belief
+		self.choice_str = choice_str
 
 	def similarity(self, left_embedding, right_embedding) -> float:
 		result = numpy.dot(left_embedding, right_embedding) / numpy.linalg.norm(left_embedding) / numpy.linalg.norm(right_embedding)
@@ -67,38 +89,106 @@ class ScenarioMatch():
 	
 class Matcher():
 
-	def __init__(self, sentence_transformer, data_embeddings, data_frame: DataFrame, threshold: float) -> None:
+	def __init__(self, sentence_transformer, data_embeddings, data_frame: DataFrame, threshold: float, threshold2: float) -> None:
 		super().__init__()
 		self.sentence_transformer = sentence_transformer
 		self.data_frame = data_frame
 		self.threshold = threshold
+		self.threshold2 = threshold2
 		self.data_embeddings = data_embeddings
 		self.causal_column = self.data_frame["causal"]
 		self.belief_column = self.data_frame["belief"]
 	
-	def match_choice(self, choice: str) -> ChoiceMatch:
-		choice_embedding = self.sentence_transformer.encode(choice)
-		sentence_matches = [
-			SentenceMatch(
-				choice_embedding,
-				self.data_embeddings[index],
-				self.threshold,
-				is_causal=bool(self.causal_column[index]),
-				is_belief=bool(self.belief_column[index])
-			)
-			for index in range(len(self.data_frame))
-		]
+	def match_choice(self, introduction: str, choice: str, to_print: bool, filter_first: bool) -> ChoiceMatch:
+
+		sentence_matches = []
+
+		if not filter_first:
+
+			initial_embedding = self.sentence_transformer.encode(choice)
+			introduction_embedding = self.sentence_transformer.encode(introduction)
+			choice_embedding = numpy.add(initial_embedding, introduction_embedding) / 2
+
+			sentence_matches = [
+				SentenceMatch(
+					choice,
+					choice_embedding,
+					self.data_embeddings[index],
+					self.threshold,
+					is_causal=bool(self.causal_column[index]),
+					is_belief=bool(self.belief_column[index])
+				)
+				for index in range(len(self.data_frame))
+			]
+
+		else:
+
+			initial_embedding = self.sentence_transformer.encode(choice)
+			introduction_embedding = self.sentence_transformer.encode(introduction)
+
+			sentence_matches = [
+				SentenceMatchFilter(
+					choice,
+					introduction_embedding,
+					initial_embedding,
+					self.data_embeddings[index],
+					self.threshold,
+					self.threshold2,
+					is_causal=bool(self.causal_column[index]),
+					is_belief=bool(self.belief_column[index])
+				)
+				for index in range(len(self.data_frame))
+			]
+
+		if to_print:
+			print("Causal matches: ")
+			print("")
+
+		for index in range(len(self.data_frame)):
+			if sentence_matches[index].causal:
+				if to_print:
+					print(self.data_frame["sentence"][index])
+					print("")
+
+		if to_print:
+			print("")
+			print("")
+			print("")
+			print("Belief matches: ")
+
+		for index in range(len(self.data_frame)):
+			if sentence_matches[index].belief:
+				if to_print:
+					print(self.data_frame["sentence"][index])
+					print("")
+
+		if to_print:
+			print("")
+			print("")
+			print("")
+			print("Both matches: ")
+
+		for index in range(len(self.data_frame)):
+			if sentence_matches[index].both:
+				if to_print:
+					print(self.data_frame["sentence"][index])
+					print("")
+
 		choice_match = ChoiceMatch(sentence_matches)
 		return choice_match
 
-	def match_scenario(self, scenario: Scenario) -> ScenarioMatch:
-		# TODO: Add amazing things somewhere nearby!
-		
-		# We're not doing anything with the introduction right now.
-		self.match_choice(scenario.introduction)
-		choice_matches = [
-			self.match_choice(choice)
-			for choice in scenario.choices
-		]
+	def match_scenario(self, scenario: Scenario, to_print: bool, filter_first: bool) -> ScenarioMatch:
+
+		if to_print:
+			print("Now matching: " + scenario.introduction)
+			print("")
+
+		choice_matches = []
+		for choice in scenario.choices:
+			if to_print:
+				print("Looking at choice: " + str(choice))
+				print("")
+			choice_matches.append(self.match_choice(scenario.introduction, choice, to_print, filter_first))
+
 		scenario_match = ScenarioMatch(choice_matches)
 		return scenario_match

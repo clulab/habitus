@@ -47,8 +47,24 @@ scenario3 = Scenario(
 
 
 if __name__ == "__main__":
-	threshold = 0.5
-	sentence_transformer_name: str = "all-distilroberta-v1"
+
+	# True if we first filter by the introduction and then choose by the choice
+	filter_first = True
+
+	# Choose if we want the sentences printed
+	print_sentences = True
+
+	# Use this if we combine the introducation and choice embeddings
+	threshold = 0.6
+
+	# Use this if we first filter by introduction and then by choice
+	threshold1 = 0.3
+	threshold2 = 0.6
+
+	if filter_first:
+		threshold = threshold1
+
+	sentence_transformer_name: str = "all-MiniLM-L6-v2"
 	input_corpus_file_name: str = "../corpora/causalBeliefSentences.tsv"
 	input_vector_file_name: str = "../corpora/causalBeliefSentences.npy"
 	# input_corpus_file_name, input_vector_file_name = get_in_and_out()
@@ -57,6 +73,27 @@ if __name__ == "__main__":
 		dtype={"file": str, "index": int, "sentence": str, "causal": bool, "belief": bool}
 	) # [:100]
 	sentence_transformer = SentenceTransformer(sentence_transformer_name)
-	matcher = Matcher(sentence_transformer, input_vectors, data_frame, threshold)
-	scenario_match = matcher.match_scenario(scenario1)
+
+	matcher = Matcher(sentence_transformer, input_vectors, data_frame, threshold, threshold2)
+
+	scenario_chosen = scenario1
+
+	scenario_match = matcher.match_scenario(scenario_chosen, print_sentences, filter_first)
+
+	final_probabilities = []
+
+	for index in range(scenario_match.length):
+		final_probabilities.append(scenario_match.all[index] * 0.25 + scenario_match.causal[index] * 0.25 +
+								   scenario_match.belief[index] * 0.25 + scenario_match.both[index] * 0.25)
+
+
+	index_chosen = final_probabilities.index(max(final_probabilities))
+
+	print("Our final choice is choice number " + str(index_chosen+1) + ": ")
+	print(str(scenario_chosen.choices[index_chosen]))
 	print(scenario_match)
+
+	#scenario_match = matcher.match_scenario(scenario2)
+	#print(scenario_match)
+	#scenario_match = matcher.match_scenario(scenario3)
+	#print(scenario_match)
