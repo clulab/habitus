@@ -52,7 +52,7 @@ if __name__ == "__main__":
 	filter_first = True
 
 	# Choose if we want the sentences printed
-	print_sentences = False
+	print_sentences = True
 
 	# Use this if we combine the introducation and choice embeddings
 	threshold = 0.6
