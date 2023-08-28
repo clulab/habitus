@@ -144,33 +144,27 @@ class Matcher():
 			print("Causal matches: ")
 			print("")
 
-		for index in range(len(self.data_frame)):
-			if sentence_matches[index].causal:
-				if to_print:
+			for index in range(len(self.data_frame)):
+				if sentence_matches[index].causal:
 					print(self.data_frame["sentence"][index])
 					print("")
 
-		if to_print:
 			print("")
 			print("")
 			print("")
 			print("Belief matches: ")
 
-		for index in range(len(self.data_frame)):
-			if sentence_matches[index].belief:
-				if to_print:
+			for index in range(len(self.data_frame)):
+				if sentence_matches[index].belief:
 					print(self.data_frame["sentence"][index])
 					print("")
-
-		if to_print:
 			print("")
 			print("")
 			print("")
 			print("Both matches: ")
 
-		for index in range(len(self.data_frame)):
-			if sentence_matches[index].both:
-				if to_print:
+			for index in range(len(self.data_frame)):
+				if sentence_matches[index].both:
 					print(self.data_frame["sentence"][index])
 					print("")
 
