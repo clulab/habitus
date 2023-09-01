@@ -4,10 +4,10 @@ import org.clulab.utils.{FileUtils, Sourcer}
 
 import scala.util.Using
 
-object CheckColumnsApp extends App {
-  val inputFileName = "../corpora/multi/CausalBeliefsEven2.tsv"
-  val outputFileName = "../corpora/multi/CausalBeliefsEven3.tsv"
-  val expectedColumnCount = 21
+object CheckCausalColumnsApp extends App {
+  val inputFileName = "../corpora/multi/Causal.tsv"
+  val outputFileName = "../corpora/multi/CausalEven.tsv"
+  val expectedColumnCount = 20
 
   Using.resource(Sourcer.sourceFromFilename(inputFileName)) { inputSource =>
     Using.resource(FileUtils.printWriterFromFile(outputFileName)) { printWriter =>

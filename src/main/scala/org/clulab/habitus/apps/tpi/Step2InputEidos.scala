@@ -23,7 +23,7 @@ object Step2InputEidos extends App with Logging {
   implicit val formats: DefaultFormats.type = org.json4s.DefaultFormats
   val contextWindow = 3
   val baseDirectory = "../corpora/multi"
-  val outputFileName = "../corpora/multi/outputCausal.tsv"
+  val outputFileName = "../corpora/multi/outputCheckForSpecials.tsv"
   val deserializer = new JLDDeserializer()
 
   def jsonFileToJsonld(jsonFile: File): File =
@@ -71,6 +71,11 @@ object Step2InputEidos extends App with Logging {
       .replaceAll("\n", " ")
       .replaceAll("\r", " ")
       .replaceAll("\t", " ")
+      .map { letter =>
+        if (letter.toInt < 32)
+          ' '
+        else letter
+      }
 
   def getSentenceText(document: Document, sentence: Sentence): String = {
     val rawText = document.text.get.slice(sentence.startOffsets.head, sentence.endOffsets.last)
@@ -104,7 +109,7 @@ object Step2InputEidos extends App with Logging {
     val jsonldFiles = new File(baseDirectory).listFilesByWildcard("*.jsonld", recursive = true).toSet
 
     allJsonFiles.filter { jsonFile => jsonldFiles(jsonFileToJsonld(jsonFile)) }
-  }.toSeq
+  }.toSeq.sorted
   val jsonFileRecordPairs: Seq[(File, JsonRecord)] = jsonFiles.map { jsonFile =>
     (jsonFile, jsonFileToRecord(jsonFile))
   }
@@ -175,7 +180,9 @@ object Step2InputEidos extends App with Logging {
               val effectMention = effectMentions.head
 
               val causeText = causeMention.text
+              val cleanCauseText = rawTextToCleanText(causeText)
               val effectText = effectMention.text
+              val cleanEffectText = rawTextToCleanText(effectText)
 
               val causeAttributeCounts = mentionToAttributeCounts(causeMention)
               assert(causeAttributeCounts.negatedCount == 0)
@@ -186,7 +193,7 @@ object Step2InputEidos extends App with Logging {
               tsvWriter.print(causal.toString, causalIndex.toString, causalAttributeCounts.negatedCount.toString, "")
               attributeCountsToTsvWriter(causeAttributeCounts, tsvWriter)
               attributeCountsToTsvWriter(effectAttributeCounts, tsvWriter)
-              tsvWriter.println(causeText, effectText, prevSentenceText)
+              tsvWriter.println(cleanCauseText, cleanEffectText, prevSentenceText)
             }
           }
           else {
