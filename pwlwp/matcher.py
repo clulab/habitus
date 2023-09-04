@@ -23,6 +23,26 @@ class SentenceMatch():
 		result = numpy.dot(left_embedding, right_embedding) / numpy.linalg.norm(left_embedding) / numpy.linalg.norm(right_embedding)
 		return result
 
+class SentenceMatchNoChoice():
+
+	choice_str = ""
+
+	def __init__(self, introduction_embedding, data_text, data_embedding, threshold1: float, is_causal: bool, is_belief: bool) -> None:
+		similarity1 = self.similarity(introduction_embedding, data_embedding)
+		#print("? " + str(threshold1))
+		hit = threshold1 < similarity1
+		self.is_hit = hit
+		self.all   =hit and True
+		self.causal=hit and is_causal
+		self.belief=hit and is_belief
+		self.both  =hit and is_causal and is_belief
+		self.data_text = data_text
+
+	def similarity(self, left_embedding, right_embedding) -> float:
+		result = numpy.dot(left_embedding, right_embedding) / numpy.linalg.norm(left_embedding) / numpy.linalg.norm(right_embedding)
+		return result
+
+
 class SentenceMatchFilter():
 
 	choice_str = ""
@@ -177,12 +197,28 @@ class Matcher():
 			print("Now matching: " + scenario.introduction)
 			print("")
 
-		choice_matches = []
-		for choice in scenario.choices:
-			if to_print:
-				print("Looking at choice: " + str(choice))
-				print("")
-			choice_matches.append(self.match_choice(scenario.introduction, choice, to_print, filter_first))
+		#choice_matches = []
+		#for choice in scenario.choices:
+	#		if to_print:
+	#			print("Looking at choice: " + str(choice))
+#				print("")
+		#	choice_matches.append(self.match_choice(scenario.introduction, choice, to_print, filter_first))
 
-		scenario_match = ScenarioMatch(choice_matches)
-		return scenario_match
+		introduction_embedding = self.sentence_transformer.encode(scenario.introduction)
+
+		sentence_matches = []
+
+		for index in range(len(self.data_frame)):
+			sentence_match = SentenceMatchNoChoice(
+				introduction_embedding,
+				self.data_frame["sentence"][index],
+				self.data_embeddings[index],
+				self.threshold,
+				is_causal=bool(self.causal_column[index]),
+				is_belief=bool(self.belief_column[index])
+			)
+			if sentence_match.is_hit:
+				sentence_matches.append(sentence_match.data_text)
+
+		#scenario_match = ScenarioMatch(scenario)
+		return "\n\n".join(sentence_matches)

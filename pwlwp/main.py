@@ -1,5 +1,8 @@
 
 from argparse import ArgumentParser
+
+import openai
+
 from matcher import Matcher
 from scenario import Scenario
 from sentence_transformers import SentenceTransformer
@@ -49,13 +52,13 @@ scenario3 = Scenario(
 if __name__ == "__main__":
 
 	# True if we first filter by the introduction and then choose by the choice
-	filter_first = True
+	filter_first = False
 
 	# Choose if we want the sentences printed
 	print_sentences = True
 
 	# Use this if we combine the introducation and choice embeddings
-	threshold = 0.6
+	threshold = 0.7
 
 	# Use this if we first filter by introduction and then by choice
 	threshold1 = 0.3
@@ -79,19 +82,39 @@ if __name__ == "__main__":
 	scenario_chosen = scenario1
 
 	scenario_match = matcher.match_scenario(scenario_chosen, print_sentences, filter_first)
+	scenario_match = scenario_match[4096:]
 
-	final_probabilities = []
+	#final_probabilities = []
 
-	for index in range(scenario_match.length):
-		final_probabilities.append(scenario_match.all[index] * 0.25 + scenario_match.causal[index] * 0.25 +
-								   scenario_match.belief[index] * 0.25 + scenario_match.both[index] * 0.25)
+	#for index in range(scenario_match.length):
+#		final_probabilities.append(scenario_match.all[index] * 0.25 + scenario_match.causal[index] * 0.25 +
+#								   scenario_match.belief[index] * 0.25 + scenario_match.both[index] * 0.25)
 
 
-	index_chosen = final_probabilities.index(max(final_probabilities))
+	#index_chosen = final_probabilities.index(max(final_probabilities))
 
-	print("Our final choice is choice number " + str(index_chosen+1) + ": ")
-	print(str(scenario_chosen.choices[index_chosen]))
-	print(scenario_match)
+	choices_str = ""
+
+	for index in range(len(scenario_chosen.choices)):
+		choices_str += str(index+1) + ") " + scenario_chosen.choices[index] + "\n\n"
+
+	final_sentence = "You have to look carefully at the following sentences and then rank several choices based on which" \
+					 "ones are most likely to be true. The sentences are: \n\n" + scenario_match + "\n\n Now rank the " \
+					 "following choices based on their likelyhood:\n\n" + choices_str
+
+	openai.api_key_path = "openai_key"
+
+	#models = openai.Model.list()
+	#print(str(models.data))
+
+	#print("THE INPUT: " + final_sentence)
+
+	chat_completion = openai.ChatCompletion.create(model="gpt-3.5-turbo",
+												   messages=[{"role": "user", "content": final_sentence}])
+
+	print("We rank the choices as:\n")
+
+	print(chat_completion.choices[0].message.content)
 
 	#scenario_match = matcher.match_scenario(scenario2)
 	#print(scenario_match)
