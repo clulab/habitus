@@ -58,11 +58,13 @@ if __name__ == "__main__":
 	print_sentences = True
 
 	# Use this if we combine the introducation and choice embeddings
-	threshold = 0.7
+	threshold = 0.6
 
 	# Use this if we first filter by introduction and then by choice
 	threshold1 = 0.3
 	threshold2 = 0.6
+
+	tokens_allowed = 3350
 
 	if filter_first:
 		threshold = threshold1
@@ -81,8 +83,8 @@ if __name__ == "__main__":
 
 	scenario_chosen = scenario1
 
-	scenario_match = matcher.match_scenario(scenario_chosen, print_sentences, filter_first)
-	scenario_match = scenario_match[4096:]
+	scenario_match = matcher.match_scenario(scenario_chosen, print_sentences, filter_first, tokens_allowed)
+	#scenario_match = scenario_match[4096:]
 
 	#final_probabilities = []
 
@@ -100,12 +102,16 @@ if __name__ == "__main__":
 
 	final_sentence = "You have to look carefully at the following sentences and then rank several choices based on which" \
 					 "ones are most likely to be true. The sentences are: \n\n" + scenario_match + "\n\n Now rank the " \
-					 "following choices based on their likelyhood:\n\n" + choices_str
+					 "following choices based on their likelyhood while also giving intuition behind the choices from" \
+					 "the context give above:\n\n" + choices_str
 
 	openai.api_key_path = "openai_key"
 
 	#models = openai.Model.list()
 	#print(str(models.data))
+
+	#print("LEN0: " + str(len(scenario_match)))
+	#print("LEN: " + str(len(final_sentence)))
 
 	#print("THE INPUT: " + final_sentence)
 

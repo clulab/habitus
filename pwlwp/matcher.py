@@ -37,6 +37,7 @@ class SentenceMatchNoChoice():
 		self.belief=hit and is_belief
 		self.both  =hit and is_causal and is_belief
 		self.data_text = data_text
+		self.similarity_num = similarity1
 
 	def similarity(self, left_embedding, right_embedding) -> float:
 		result = numpy.dot(left_embedding, right_embedding) / numpy.linalg.norm(left_embedding) / numpy.linalg.norm(right_embedding)
@@ -191,7 +192,7 @@ class Matcher():
 		choice_match = ChoiceMatch(sentence_matches)
 		return choice_match
 
-	def match_scenario(self, scenario: Scenario, to_print: bool, filter_first: bool) -> ScenarioMatch:
+	def match_scenario(self, scenario: Scenario, to_print: bool, filter_first: bool, tokens_allowed) -> str:
 
 		if to_print:
 			print("Now matching: " + scenario.introduction)
@@ -217,8 +218,19 @@ class Matcher():
 				is_causal=bool(self.causal_column[index]),
 				is_belief=bool(self.belief_column[index])
 			)
-			if sentence_match.is_hit:
-				sentence_matches.append(sentence_match.data_text)
+			sentence_matches.append([sentence_match.similarity_num, sentence_match.data_text])
+
+		final_matches = []
+		current_total = 0
+
+		sentence_matches = sorted(sentence_matches,	reverse=True)
+
+		for sentence in sentence_matches:
+			if sentence[0] < self.threshold:
+				break
+			if current_total + len(sentence[1]) <= tokens_allowed and sentence[1] not in final_matches:
+				final_matches.append(sentence[1])
+				current_total += len(sentence[1])
 
 		#scenario_match = ScenarioMatch(scenario)
-		return "\n\n".join(sentence_matches)
+		return "\n\n".join(final_matches)
