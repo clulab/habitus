@@ -192,7 +192,7 @@ class Matcher():
 		choice_match = ChoiceMatch(sentence_matches)
 		return choice_match
 
-	def match_scenario(self, scenario: Scenario, to_print: bool, filter_first: bool, tokens_allowed) -> str:
+	def match_scenario(self, scenario: Scenario, to_print: bool, filter_first: bool, tokens_allowed, only_belief, only_causal) -> str:
 
 		if to_print:
 			print("Now matching: " + scenario.introduction)
@@ -218,7 +218,8 @@ class Matcher():
 				is_causal=bool(self.causal_column[index]),
 				is_belief=bool(self.belief_column[index])
 			)
-			sentence_matches.append([sentence_match.similarity_num, sentence_match.data_text])
+			if(not only_belief or sentence_match.belief) and (not only_causal and sentence_match.causal):
+				sentence_matches.append([sentence_match.similarity_num, sentence_match.data_text])
 
 		final_matches = []
 		current_total = 0

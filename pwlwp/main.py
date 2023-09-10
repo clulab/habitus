@@ -77,9 +77,12 @@ def paraphrase(sentence):
 
 	result.insert(0, sentence)
 
-	print("Q " + str(result))
+	#print("Q " + str(result))
 
 	return result
+
+# type = 0 -> only nr_paraphrases combinations
+# type = 1 -> all possible combinations
 
 def rank_choices(introduction, context, choices):
 
@@ -92,25 +95,52 @@ def rank_choices(introduction, context, choices):
 
 	result = chat_completion.choices[0].message.content
 
-	print("X " + result)
+	#print("X " + str(result))
 
 	ranks = []
+	crr = 0
 
 	for choice in choices:
-		index = result.find(choice)-1
-		rank = -1
-		for i in range(10):
-			if '0' <= result[index] <= '9':
-				rank = ord(result[index]) - ord('0')
-				break
-			index -= 1
-		ranks.append(rank)
+		index = result.find(choice)
+		ranks.append([index, crr])
+		crr += 1
 
+	temp = sorted(ranks)
+	ranks = []
 
-
-	print(ranks)
+	for rank in temp:
+		ranks.append(rank[1])
 
 	return ranks
+
+def compute_ranking(paraphrases, introduction, context):
+
+	final_ranks = []
+
+	for i in range(number_of_paraphrases):
+		final_ranks.append(0)
+
+	for i in range(number_of_paraphrases):
+		choices_chosen = []
+		for choice_list in paraphrases:
+			choices_chosen.append(choice_list[i])
+		ranks = rank_choices(introduction, context, choices_chosen)
+		for i in range(len(ranks)):
+			final_ranks[i] += ranks[i]
+
+	print(final_ranks)
+
+	sum = 0
+
+	for rank in final_ranks:
+		sum += rank
+
+	probabilities = []
+
+	for rank in final_ranks:
+		probabilities.append(rank/sum)
+
+	print("The final probabilities for each choice are: " + str(probabilities))
 
 if __name__ == "__main__":
 
@@ -146,29 +176,17 @@ if __name__ == "__main__":
 
 	scenario_chosen = scenario1
 
-	scenario_match = matcher.match_scenario(scenario_chosen, print_sentences, filter_first, tokens_allowed)
-	#scenario_match = scenario_match[4096:]
-
-	#final_probabilities = []
-
-	#for index in range(scenario_match.length):
-#		final_probabilities.append(scenario_match.all[index] * 0.25 + scenario_match.causal[index] * 0.25 +
-#								   scenario_match.belief[index] * 0.25 + scenario_match.both[index] * 0.25)
-
-
-	#index_chosen = final_probabilities.index(max(final_probabilities))
+	scenario_match = matcher.match_scenario(scenario_chosen, print_sentences, filter_first, tokens_allowed, True, True)
 
 	choices_str = ""
 
 	for index in range(len(scenario_chosen.choices)):
 		choices_str += str(index+1) + ") " + scenario_chosen.choices[index] + "\n\n"
 
-	# TODO: ADD SCENARIO
-
-	final_sentence = "You have to look carefully at the following sentences and then rank several choices based on which" \
-					 "ones are most likely to be true. The sentences are: \n\n" + scenario_match + "\n\n Now rank the " \
-					 "following choices based on their likelyhood while also giving intuition behind the choices from" \
-					 "the context given above:\n\n" + choices_str
+	#final_sentence = "You have to look carefully at the following sentences and then rank several choices based on which" \
+#					 "ones are most likely to be true. The sentences are: \n\n" + scenario_match + "\n\n Now rank the " \
+#					 "following choices based on their likelyhood while also giving intuition behind the choices from" \
+#					 "the context given above:\n\n" + choices_str
 
 	#print(scenario_match)
 
@@ -187,26 +205,7 @@ if __name__ == "__main__":
 	for paraphrase in paraphrases:
 		choices_chosen.append(paraphrase[0])
 
-	rank_choices(scenario_chosen.introduction, scenario_match, choices_chosen)
-
-
-	#models = openai.Model.list()
-	#print(str(models.data))
-
-	#print("LEN0: " + str(len(scenario_match)))
-	#print("LEN: " + str(len(final_sentence)))
-
-	#print("THE INPUT: " + final_sentence)
-
-
-
-
-
-	#print("We rank the choices as:\n")
-
-	#print(chat_completion.choices[0].message.content)
-
-
+	compute_ranking(paraphrases, scenario_chosen.introduction, scenario_match)
 
 
 	#scenario_match = matcher.match_scenario(scenario2)
