@@ -51,9 +51,11 @@ scenario3 = Scenario(
 	]
 )
 
+number_of_paraphrases = 5
+
 def paraphrase(sentence):
 
-	text = "Paraphrase the following sentence " + sentence + " in 5 unique ways. The answer must only have the paraphrases one per row."
+	text = "Paraphrase the following sentence " + sentence + " in " + str(number_of_paraphrases-1) + " unique ways. The answer must only have the paraphrases one per row."
 
 	chat_completion = openai.ChatCompletion.create(model="gpt-3.5-turbo-16k",
 												   messages=[{"role": "user", "content": text}])
@@ -64,17 +66,51 @@ def paraphrase(sentence):
 
 	crr = 0
 
-	for str in result:
+	for strr in result:
 		index = 0
-		for i in range(len(str)):
-			if ('a' <= str[i] <= 'z') or ('A' <= str[i] <= 'Z'):
+		for i in range(len(strr)):
+			if ('a' <= strr[i] <= 'z') or ('A' <= strr[i] <= 'Z'):
 				index = i
 				break
-		result[crr] = str[index:]
+		result[crr] = strr[index:]
 		crr += 1
+
+	result.insert(0, sentence)
+
+	print("Q " + str(result))
 
 	return result
 
+def rank_choices(introduction, context, choices):
+
+	question = "You are given the following question " + introduction + " and context about the situation through the " \
+			   "following sentences: " + context + " \n\n " + " Use those sentences to rank the following from best to " \
+			   "worst without any explanation: \n" + "\n".join(choices)
+
+	chat_completion = openai.ChatCompletion.create(model="gpt-3.5-turbo-16k",
+												   messages=[{"role": "user", "content": question}])
+
+	result = chat_completion.choices[0].message.content
+
+	print("X " + result)
+
+	ranks = []
+
+	for choice in choices:
+		index = result.find(choice)-1
+		rank = -1
+		for i in range(10):
+			if '0' <= result[index] <= '9':
+				rank = ord(result[index]) - ord('0')
+				break
+			index -= 1
+		ranks.append(rank)
+
+
+
+	print(ranks)
+
+	return ranks
 
 if __name__ == "__main__":
 
@@ -91,7 +127,7 @@ if __name__ == "__main__":
 	threshold1 = 0.3
 	threshold2 = 0.6
 
-	tokens_allowed = 3350
+	tokens_allowed = 12000
 
 	if filter_first:
 		threshold = threshold1
@@ -134,13 +170,25 @@ if __name__ == "__main__":
 					 "following choices based on their likelyhood while also giving intuition behind the choices from" \
 					 "the context given above:\n\n" + choices_str
 
+	#print(scenario_match)
+
 	openai.api_key_path = "openai_key"
 
-	var1 = "There is political interference in the prosecution of both local and foreigner illegal miners. Whenever illegal miners were arrested, there are influential local people with political connections who get them release."
-	var2 = "Other jobs in Ghana now offer higher pay, causing those involved in illegal gold mining to seek opportunities elsewhere."
-	var3 = "None of the above."
+	paraphrases = []
 
-	paraphrase(var2)
+	for choice in scenario_chosen.choices:
+		result = paraphrase(choice)
+		paraphrases.append(result)
+		if len(result) != number_of_paraphrases:
+			print("ERROR we don't have " + str(number_of_paraphrases) + "paraphrases")
+
+	choices_chosen = []
+
+	for paraphrase in paraphrases:
+		choices_chosen.append(paraphrase[0])
+
+	rank_choices(scenario_chosen.introduction, scenario_match, choices_chosen)
+
 
 	#models = openai.Model.list()
 	#print(str(models.data))
