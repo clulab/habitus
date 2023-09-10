@@ -24,7 +24,8 @@ scenario1 = Scenario(
 		"The payoff of illegal gold mining no longer justifies the risk.",
 		"Other jobs in Ghana now offer higher pay, causing those involved in illegal gold mining to seek opportunities elsewhere.",
 		"Those involved in illegal gold mining are now moving abroad, where the value of gold is still higher.",
-		"Gold has lost its value overall, causing Ghanaians to lose interest in the industry."
+		"Gold has lost its value overall, causing Ghanaians to lose interest in the industry.",
+		"None of the above."
 	]
 )
 
@@ -35,6 +36,7 @@ scenario2 = Scenario(
 		"The illegal miners find more value in the money gained through illegal mining than the vegetation they can grow.",
 		"There is an assumption that the problem is temporary, and the government will step in.",
 		"There were problems with the soil and food shortages prior to the illegal mining industry consuming the country, so many people are numb to the difficulties."
+		"None of the above."
 	]
 )
 
@@ -45,8 +47,33 @@ scenario3 = Scenario(
 		"The security forces are taking bribes to release the arrested illegal miners.",
 		"There is political interference in the prosecution of both local and foreigner illegal miners. Whenever illegal miners were arrested, there are influential local people with political connections who get them release.",
 		"There is an increase in demand for gold leading to an increase in mining activity."
+		"None of the above."
 	]
 )
+
+def paraphrase(sentence):
+
+	text = "Paraphrase the following sentence " + sentence + " in 5 unique ways. The answer must only have the paraphrases one per row."
+
+	chat_completion = openai.ChatCompletion.create(model="gpt-3.5-turbo-16k",
+												   messages=[{"role": "user", "content": text}])
+
+	result = chat_completion.choices[0].message.content
+
+	result = result.split('\n')
+
+	crr = 0
+
+	for str in result:
+		index = 0
+		for i in range(len(str)):
+			if ('a' <= str[i] <= 'z') or ('A' <= str[i] <= 'Z'):
+				index = i
+				break
+		result[crr] = str[index:]
+		crr += 1
+
+	return result
 
 
 if __name__ == "__main__":
@@ -100,12 +127,20 @@ if __name__ == "__main__":
 	for index in range(len(scenario_chosen.choices)):
 		choices_str += str(index+1) + ") " + scenario_chosen.choices[index] + "\n\n"
 
+	# TODO: ADD SCENARIO
+
 	final_sentence = "You have to look carefully at the following sentences and then rank several choices based on which" \
 					 "ones are most likely to be true. The sentences are: \n\n" + scenario_match + "\n\n Now rank the " \
 					 "following choices based on their likelyhood while also giving intuition behind the choices from" \
-					 "the context give above:\n\n" + choices_str
+					 "the context given above:\n\n" + choices_str
 
 	openai.api_key_path = "openai_key"
+
+	var1 = "There is political interference in the prosecution of both local and foreigner illegal miners. Whenever illegal miners were arrested, there are influential local people with political connections who get them release."
+	var2 = "Other jobs in Ghana now offer higher pay, causing those involved in illegal gold mining to seek opportunities elsewhere."
+	var3 = "None of the above."
+
+	paraphrase(var2)
 
 	#models = openai.Model.list()
 	#print(str(models.data))
@@ -115,12 +150,16 @@ if __name__ == "__main__":
 
 	#print("THE INPUT: " + final_sentence)
 
-	chat_completion = openai.ChatCompletion.create(model="gpt-3.5-turbo",
-												   messages=[{"role": "user", "content": final_sentence}])
 
-	print("We rank the choices as:\n")
 
-	print(chat_completion.choices[0].message.content)
+
+
+	#print("We rank the choices as:\n")
+
+	#print(chat_completion.choices[0].message.content)
+
+
+
 
 	#scenario_match = matcher.match_scenario(scenario2)
 	#print(scenario_match)
