@@ -176,7 +176,7 @@ if __name__ == "__main__":
 
 	scenario_chosen = scenario1
 
-	scenario_match = matcher.match_scenario(scenario_chosen, print_sentences, filter_first, tokens_allowed, True, True)
+	scenario_match = matcher.match_scenario(scenario_chosen, print_sentences, filter_first, tokens_allowed, False, False)
 
 	choices_str = ""
 
