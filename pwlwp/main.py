@@ -35,7 +35,7 @@ scenario2 = Scenario(
 		"There's a lack of education around the correlation between illegal mining and the destruction of the soil.",
 		"The illegal miners find more value in the money gained through illegal mining than the vegetation they can grow.",
 		"There is an assumption that the problem is temporary, and the government will step in.",
-		"There were problems with the soil and food shortages prior to the illegal mining industry consuming the country, so many people are numb to the difficulties."
+		"There were problems with the soil and food shortages prior to the illegal mining industry consuming the country, so many people are numb to the difficulties.",
 		"None of the above."
 	]
 )
@@ -46,7 +46,7 @@ scenario3 = Scenario(
 		"There is no alternative, so miners are willing to take the risk.",
 		"The security forces are taking bribes to release the arrested illegal miners.",
 		"There is political interference in the prosecution of both local and foreigner illegal miners. Whenever illegal miners were arrested, there are influential local people with political connections who get them release.",
-		"There is an increase in demand for gold leading to an increase in mining activity."
+		"There is an increase in demand for gold leading to an increase in mining activity.",
 		"None of the above."
 	]
 )
@@ -75,7 +75,7 @@ def paraphrase(sentence):
 		result[crr] = strr[index:]
 		crr += 1
 
-	result.insert(0, sentence)
+	result.append(sentence)
 
 	#print("Q " + str(result))
 
@@ -109,7 +109,10 @@ def rank_choices(introduction, context, choices):
 	ranks = []
 
 	for rank in temp:
-		ranks.append(number_of_paraphrases - rank[1] - 1)
+		ranks.append(rank[1])
+
+	for i in range(len(ranks)):
+		ranks[i] = number_of_paraphrases - ranks[i] - 1
 
 	return ranks
 
@@ -117,7 +120,7 @@ def compute_ranking(paraphrases, introduction, context):
 
 	final_ranks = []
 
-	for i in range(number_of_paraphrases):
+	for i in range(len(paraphrases)):
 		final_ranks.append(0)
 
 	for i in range(number_of_paraphrases):
