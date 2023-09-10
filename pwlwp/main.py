@@ -109,7 +109,7 @@ def rank_choices(introduction, context, choices):
 	ranks = []
 
 	for rank in temp:
-		ranks.append(rank[1])
+		ranks.append(number_of_paraphrases - rank[1] - 1)
 
 	return ranks
 
