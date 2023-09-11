@@ -57,14 +57,14 @@ def paraphrase(sentence):
 
 	text = "Paraphrase the following sentence " + sentence + " in " + str(number_of_paraphrases-1) + " unique ways. The answer must only have the paraphrases one per row."
 
-	chat_completion = openai.ChatCompletion.create(model="gpt-3.5-turbo-16k",
+	chat_completion = openai.ChatCompletion.create(model="gpt-4",
 												   messages=[{"role": "user", "content": text}])
 
 	result = chat_completion.choices[0].message.content
 
 	result = result.split('\n')
 
-	crr = 0
+	final_result = []
 
 	for strr in result:
 		index = 0
@@ -72,14 +72,13 @@ def paraphrase(sentence):
 			if ('a' <= strr[i] <= 'z') or ('A' <= strr[i] <= 'Z'):
 				index = i
 				break
-		result[crr] = strr[index:]
-		crr += 1
+		if len(strr[index:]) < 2:
+			continue
+		final_result.append(strr[index:])
 
-	result.append(sentence)
+	final_result.append(sentence)
 
-	#print("Q " + str(result))
-
-	return result
+	return final_result
 
 # type = 0 -> only nr_paraphrases combinations
 # type = 1 -> all possible combinations
@@ -90,12 +89,10 @@ def rank_choices(introduction, context, choices):
 			   "following sentences: " + context + " \n\n " + " Use those sentences to rank the following from best to " \
 			   "worst without any explanation: \n" + "\n".join(choices)
 
-	chat_completion = openai.ChatCompletion.create(model="gpt-3.5-turbo-16k",
+	chat_completion = openai.ChatCompletion.create(model="gpt-4",
 												   messages=[{"role": "user", "content": question}])
 
 	result = chat_completion.choices[0].message.content
-
-	#print("X " + str(result))
 
 	ranks = []
 	crr = 0
@@ -179,7 +176,7 @@ if __name__ == "__main__":
 
 	scenario_chosen = scenario1
 
-	scenario_match = matcher.match_scenario(scenario_chosen, print_sentences, filter_first, tokens_allowed, False, False)
+	scenario_match = matcher.match_scenario(scenario_chosen, print_sentences, filter_first, tokens_allowed, True, True)
 
 	choices_str = ""
 
