@@ -87,12 +87,18 @@ def rank_choices(introduction, context, choices):
 
 	question = "You are given the following question " + introduction + " and context about the situation through the " \
 			   "following sentences: " + context + " \n\n " + " Use those sentences to rank the following from best to " \
-			   "worst without any explanation: \n" + "\n".join(choices)
+			   "worst with explanation based on the given context: \n" + "\n".join(choices)
 
 	chat_completion = openai.ChatCompletion.create(model="gpt-4",
 												   messages=[{"role": "user", "content": question}])
 
 	result = chat_completion.choices[0].message.content
+
+	print("CHOICES:")
+	print(choices)
+	print()
+	print("EXPLANATION:")
+	print(result)
 
 	ranks = []
 	crr = 0
