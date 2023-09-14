@@ -22,8 +22,8 @@ case class AttributeCounts(increaseCount: Int, decreaseCount: Int, posChangeCoun
 object Step2InputEidos extends App with Logging {
   implicit val formats: DefaultFormats.type = org.json4s.DefaultFormats
   val contextWindow = 3
-  val baseDirectory = "../corpora/multi"
-  val outputFileName = "../corpora/multi/outputCheckForSpecials.tsv"
+  val baseDirectory = "/home/kwa/data/Projects/habitus-project/corpora/multimix"
+  val outputFileName = "../corpora/multimix/step2.tsv"
   val deserializer = new JLDDeserializer()
 
   def jsonFileToJsonld(jsonFile: File): File =
@@ -71,9 +71,9 @@ object Step2InputEidos extends App with Logging {
       .replaceAll("\n", " ")
       .replaceAll("\r", " ")
       .replaceAll("\t", " ")
+      .replaceAll("\u2028", " ") // unicode line separator
       .map { letter =>
-        if (letter.toInt < 32)
-          ' '
+        if (letter.toInt < 32) ' '
         else letter
       }
 
@@ -105,7 +105,7 @@ object Step2InputEidos extends App with Logging {
   val jsonFiles: Seq[File] = {
     val allJsonFiles = new File(baseDirectory).listFilesByWildcard("*.json", recursive = true)
         // TODO remove take
-        // .take(10000)
+        // .take(1000)
     val jsonldFiles = new File(baseDirectory).listFilesByWildcard("*.jsonld", recursive = true).toSet
 
     allJsonFiles.filter { jsonFile => jsonldFiles(jsonFileToJsonld(jsonFile)) }
@@ -114,7 +114,7 @@ object Step2InputEidos extends App with Logging {
     (jsonFile, jsonFileToRecord(jsonFile))
   }
   val jsonFileRecordPairGroups: Seq[(String, Seq[(File, JsonRecord)])] = jsonFileRecordPairs.groupBy { jsonFileRecordPair => jsonFileRecordPair._2.url}.toSeq
-  val jsonFileRecordTermsSeq: Seq[(File, JsonRecord, Seq[String])] = jsonFileRecordPairGroups.map { case (url, jsonFileRecordPairs) =>
+  val jsonFileRecordTermsSeq: Seq[(File, JsonRecord, Seq[String])] = jsonFileRecordPairGroups.map { case (_, jsonFileRecordPairs) =>
     // Use just one jsonFile and jsonRecord, but combine search terms
     val terms = jsonFileRecordPairs.map { jsonFileRecordPair => jsonFileToTerm(jsonFileRecordPair._1) }
 
@@ -125,15 +125,15 @@ object Step2InputEidos extends App with Logging {
     val tsvWriter = new TsvWriter(printWriter)
 
     tsvWriter.println(
-      "url", "terms", "date", "sentenceIndex", "sentence", "context",
+      "url", "terms", "date", "sentenceIndex", "sentence", "context", // context is no longer needed
       "causal", "causalIndex", "negationCount",
       "causeIncCount", "causeDecCount", "causePosCount", "causeNegCount",
       "effectIncCount", "effectDecCount", "effectPosCount", "effectNegCount",
       "causeText", "effectText",
       "prevSentence"
     )
-    jsonFileRecordTermsSeq.foreach { case (jsonFile, jsonRecord, terms) =>
-      println(jsonFile.getPath)
+    jsonFileRecordTermsSeq.zipWithIndex.foreach { case ((jsonFile, jsonRecord, terms), index) =>
+      println(s"$index ${jsonFile.getPath}")
       try {
         val url = jsonRecord.url
         val termsString = terms.mkString(" ")
@@ -161,7 +161,7 @@ object Step2InputEidos extends App with Logging {
               .getOrElse("")
 
           if (causal) {
-            val causalMentionGroup = causalMentionGroups(sentenceIndex)
+            val causalMentionGroup = causalMentionGroups(sentenceIndex).sorted
 
             causalMentionGroup.zipWithIndex.foreach { case (causalMention, causalIndex) =>
               val causalAttributeCounts = mentionToAttributeCounts(causalMention)
