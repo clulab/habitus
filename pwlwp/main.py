@@ -1,5 +1,8 @@
 
 from argparse import ArgumentParser
+
+import openai
+
 from matcher import Matcher
 from scenario import Scenario
 from sentence_transformers import SentenceTransformer
@@ -21,7 +24,8 @@ scenario1 = Scenario(
 		"The payoff of illegal gold mining no longer justifies the risk.",
 		"Other jobs in Ghana now offer higher pay, causing those involved in illegal gold mining to seek opportunities elsewhere.",
 		"Those involved in illegal gold mining are now moving abroad, where the value of gold is still higher.",
-		"Gold has lost its value overall, causing Ghanaians to lose interest in the industry."
+		"Gold has lost its value overall, causing Ghanaians to lose interest in the industry.",
+		"None of the above."
 	]
 )
 
@@ -31,7 +35,8 @@ scenario2 = Scenario(
 		"There's a lack of education around the correlation between illegal mining and the destruction of the soil.",
 		"The illegal miners find more value in the money gained through illegal mining than the vegetation they can grow.",
 		"There is an assumption that the problem is temporary, and the government will step in.",
-		"There were problems with the soil and food shortages prior to the illegal mining industry consuming the country, so many people are numb to the difficulties."
+		"There were problems with the soil and food shortages prior to the illegal mining industry consuming the country, so many people are numb to the difficulties.",
+		"None of the above."
 	]
 )
 
@@ -41,14 +46,129 @@ scenario3 = Scenario(
 		"There is no alternative, so miners are willing to take the risk.",
 		"The security forces are taking bribes to release the arrested illegal miners.",
 		"There is political interference in the prosecution of both local and foreigner illegal miners. Whenever illegal miners were arrested, there are influential local people with political connections who get them release.",
-		"There is an increase in demand for gold leading to an increase in mining activity."
+		"There is an increase in demand for gold leading to an increase in mining activity.",
+		"None of the above."
 	]
 )
 
+number_of_paraphrases = 5
+
+def paraphrase(sentence):
+
+	text = "Paraphrase the following sentence " + sentence + " in " + str(number_of_paraphrases-1) + " unique ways. The answer must only have the paraphrases one per row."
+
+	chat_completion = openai.ChatCompletion.create(model="gpt-4",
+												   messages=[{"role": "user", "content": text}])
+
+	result = chat_completion.choices[0].message.content
+
+	result = result.split('\n')
+
+	final_result = []
+
+	for strr in result:
+		index = 0
+		for i in range(len(strr)):
+			if ('a' <= strr[i] <= 'z') or ('A' <= strr[i] <= 'Z'):
+				index = i
+				break
+		if len(strr[index:]) < 2:
+			continue
+		final_result.append(strr[index:])
+
+	final_result.append(sentence)
+
+	return final_result
+
+# type = 0 -> only nr_paraphrases combinations
+# type = 1 -> all possible combinations
+
+def rank_choices(introduction, context, choices):
+
+	question = "You are given the following question " + introduction + " and context about the situation through the " \
+			   "following sentences: " + context + " \n\n " + " Use those sentences to rank the following from best to " \
+			   "worst with explanation based on the given context: \n" + "\n".join(choices)
+
+	chat_completion = openai.ChatCompletion.create(model="gpt-4",
+												   messages=[{"role": "user", "content": question}])
+
+	result = chat_completion.choices[0].message.content
+
+	print("CHOICES:")
+	print(choices)
+	print()
+	print("EXPLANATION:")
+	print(result)
+
+	ranks = []
+	crr = 0
+
+	for choice in choices:
+		index = result.find(choice)
+		ranks.append([index, crr])
+		crr += 1
+
+	temp = sorted(ranks)
+	ranks = []
+
+	for rank in temp:
+		ranks.append(rank[1])
+
+	for i in range(len(ranks)):
+		ranks[i] = number_of_paraphrases - ranks[i] - 1
+
+	return ranks
+
+def compute_ranking(paraphrases, introduction, context):
+
+	final_ranks = []
+
+	for i in range(len(paraphrases)):
+		final_ranks.append(0)
+
+	for i in range(number_of_paraphrases):
+		choices_chosen = []
+		for choice_list in paraphrases:
+			choices_chosen.append(choice_list[i])
+		ranks = rank_choices(introduction, context, choices_chosen)
+		for i in range(len(ranks)):
+			final_ranks[i] += ranks[i]
+
+	print(final_ranks)
+
+	sum = 0
+
+	for rank in final_ranks:
+		sum += rank
+
+	probabilities = []
+
+	for rank in final_ranks:
+		probabilities.append(rank/sum)
+
+	print("The final probabilities for each choice are: " + str(probabilities))
 
 if __name__ == "__main__":
-	threshold = 0.5
-	sentence_transformer_name: str = "all-distilroberta-v1"
+
+	# True if we first filter by the introduction and then choose by the choice
+	filter_first = False
+
+	# Choose if we want the sentences printed
+	print_sentences = True
+
+	# Use this if we combine the introducation and choice embeddings
+	threshold = 0.6
+
+	# Use this if we first filter by introduction and then by choice
+	threshold1 = 0.3
+	threshold2 = 0.6
+
+	tokens_allowed = 12000
+
+	if filter_first:
+		threshold = threshold1
+
+	sentence_transformer_name: str = "all-MiniLM-L6-v2"
 	input_corpus_file_name: str = "../corpora/causalBeliefSentences.tsv"
 	input_vector_file_name: str = "../corpora/causalBeliefSentences.npy"
 	# input_corpus_file_name, input_vector_file_name = get_in_and_out()
@@ -57,6 +177,44 @@ if __name__ == "__main__":
 		dtype={"file": str, "index": int, "sentence": str, "causal": bool, "belief": bool}
 	) # [:100]
 	sentence_transformer = SentenceTransformer(sentence_transformer_name)
-	matcher = Matcher(sentence_transformer, input_vectors, data_frame, threshold)
-	scenario_match = matcher.match_scenario(scenario1)
-	print(scenario_match)
+
+	matcher = Matcher(sentence_transformer, input_vectors, data_frame, threshold, threshold2)
+
+	scenario_chosen = scenario1
+
+	scenario_match = matcher.match_scenario(scenario_chosen, print_sentences, filter_first, tokens_allowed, True, True)
+
+	choices_str = ""
+
+	for index in range(len(scenario_chosen.choices)):
+		choices_str += str(index+1) + ") " + scenario_chosen.choices[index] + "\n\n"
+
+	#final_sentence = "You have to look carefully at the following sentences and then rank several choices based on which" \
+#					 "ones are most likely to be true. The sentences are: \n\n" + scenario_match + "\n\n Now rank the " \
+#					 "following choices based on their likelyhood while also giving intuition behind the choices from" \
+#					 "the context given above:\n\n" + choices_str
+
+	#print(scenario_match)
+
+	openai.api_key_path = "openai_key"
+
+	paraphrases = []
+
+	for choice in scenario_chosen.choices:
+		result = paraphrase(choice)
+		paraphrases.append(result)
+		if len(result) != number_of_paraphrases:
+			print("ERROR we don't have " + str(number_of_paraphrases) + "paraphrases")
+
+	choices_chosen = []
+
+	for paraphrase in paraphrases:
+		choices_chosen.append(paraphrase[0])
+
+	compute_ranking(paraphrases, scenario_chosen.introduction, scenario_match)
+
+
+	#scenario_match = matcher.match_scenario(scenario2)
+	#print(scenario_match)
+	#scenario_match = matcher.match_scenario(scenario3)
+	#print(scenario_match)

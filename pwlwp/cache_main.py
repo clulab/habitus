@@ -20,7 +20,7 @@ def doit(index, sentence):
 	return sentence_transformer.encode(sentence)
 
 if __name__ == "__main__":
-	sentence_transformer_name: str = "all-distilroberta-v1"
+	sentence_transformer_name: str = "all-MiniLM-L6-v2"
 	input_file_name: str = "../corpora/causalBeliefSentences.tsv"
 	output_file_name: str = "../corpora/causalBeliefSentences.npy"
 	# input_file_name, output_file_name = get_in_and_out()
