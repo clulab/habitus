@@ -51,6 +51,28 @@ scenario3 = Scenario(
 	]
 )
 
+scenario4 = Scenario(
+	"In Ghana two systems of mining are in conflict: large-scale, regulated, corporate mining and widespread but small-scale, unregulated, illegal mining. The former has less of a negative impact on the environment but also provides less of a benefit to the surrounding communities than does the latter, which provides more jobs but wreaks havoc on the environment.  Imagine a third option: government-organized and regulated, community-scale operations conducted in partnership with corporate mines.  Government provides access to land and civil infrastructure; corporations, to equipment and world markets.  The main reason the third option will not succeed is because:",
+	[
+		"Government officials believe that any compromise makes them look weak so that they will not advance such an option.",
+		"The government is unable to enforce mining protocols for a distributed collection of mines in the same way it can for a single, large mine so that environmental benefits are not realized.",
+		"No role is provided for local chiefs, whose power will be diluted by this third possibility, making it unlikely that they come on board.",
+		"Galamseyers have a strike it rich, gold rush attitude and will not exchange it for the certain, but barely sufficient payout from other options.",
+		"None of the above."
+	]
+)
+
+scenario5 = Scenario(
+	"The destructive consequences of many mining operations are not directly related to the local disappearance of the mined material, but to the use of water in the extraction process.  Water is a shared resource that does not remain localized and must be used and reused multiple times by groups of people with competing needs and interests. In Ghana, deposits of minerals like bauxite are sometimes located in forested, mountainous areas which are sources of clean water for large populations.  The population will fear tainting of their water. Suggested construction of a bauxite mine in such a location is most likely to provoke what kind of reaction:",
+	[
+		"People will point out that proceeds from the sale of bauxite will more than pay for transport of clean water from elsewhere.",
+		"Yet unrealized and even more valuable uses for clean water will be explored, such as supporting a natural habitat attractive to ecotourism, which is successful in other parts of the country.",
+		"Farmers will point out that they cannot raise food in runoff from a bauxite mine and predict a consequent food shortage.",
+		"A plan will be devised to transport the bauxite downstream for processing with water that has already been used for agricultural purposes.",
+		"None of the above."
+	]
+)
+
 number_of_paraphrases = 5
 
 def paraphrase(sentence):
@@ -78,6 +100,10 @@ def paraphrase(sentence):
 
 	final_result.append(sentence)
 
+	if len(final_result) != number_of_paraphrases:
+		print("ERR paraphrases")
+		return paraphrase(sentence)
+
 	return final_result
 
 # type = 0 -> only nr_paraphrases combinations
@@ -87,18 +113,19 @@ def rank_choices(introduction, context, choices):
 
 	question = "You are given the following question " + introduction + " and context about the situation through the " \
 			   "following sentences: " + context + " \n\n " + " Use those sentences to rank the following from best to " \
-			   "worst with explanation based on the given context: \n" + "\n".join(choices)
+			   "worst while ONLY using the information given above and be careful to cite each information used" \
+															  ": \n" + "\n".join(choices)
 
 	chat_completion = openai.ChatCompletion.create(model="gpt-4",
 												   messages=[{"role": "user", "content": question}])
 
 	result = chat_completion.choices[0].message.content
 
-	print("CHOICES:")
-	print(choices)
-	print()
-	print("EXPLANATION:")
-	print(result)
+	#print("CHOICES:")
+	#print(choices)
+	#print()
+	#print("EXPLANATION:")
+	#print(result)
 
 	ranks = []
 	crr = 0
@@ -117,7 +144,45 @@ def rank_choices(introduction, context, choices):
 	for i in range(len(ranks)):
 		ranks[i] = number_of_paraphrases - ranks[i] - 1
 
-	return ranks
+	outputs = []
+
+	for i in range(1, len(ranks)+1):
+		first_split = result.split(str(i) + ".")
+		#print("I + " + str(i))
+		#print("X + " + str(first_split))
+		if len(first_split) >= 2:
+			first_split = first_split[1]
+		else:
+			first_split = first_split[0]
+		#print("Y + " + str(first_split))
+		first_split = first_split.split(str(i+1) + '.')[0]
+		#print("Z + " + str(first_split))
+		outputs.append(first_split)
+
+	#print(outputs)
+
+	if len(outputs) != len(ranks):
+		print("ERR Parsing")
+		return rank_choices(introduction, context, choices)
+
+	return ranks, outputs
+
+def one_explanation(outputs):
+
+	question = "You are given a sentence that is formulated and justified in several ways. Combine those justifications" \
+			   "into a single one for all the sentences while citing the original justifications: \n\n" + '\n\n'.join(outputs)
+
+	#print("XX " + question)
+
+	chat_completion = openai.ChatCompletion.create(model="gpt-4",
+												   messages=[{"role": "user", "content": question}])
+
+	result = chat_completion.choices[0].message.content
+
+	return result
+
+	#print("YY " + result)
+
 
 def compute_ranking(paraphrases, introduction, context):
 
@@ -126,27 +191,48 @@ def compute_ranking(paraphrases, introduction, context):
 	for i in range(len(paraphrases)):
 		final_ranks.append(0)
 
+	all_outputs = []
+
 	for i in range(number_of_paraphrases):
+		print("STARTING " + str(i))
 		choices_chosen = []
 		for choice_list in paraphrases:
 			choices_chosen.append(choice_list[i])
-		ranks = rank_choices(introduction, context, choices_chosen)
+		ranks, outputs = rank_choices(introduction, context, choices_chosen)
+		all_outputs.append(outputs)
 		for i in range(len(ranks)):
 			final_ranks[i] += ranks[i]
+
+	justifications = []
+
+	for i in range(len(final_ranks)):
+		to_send = []
+		for j in range(len(all_outputs)):
+			to_send.append(all_outputs[j][i])
+		#print("TT " + str(to_send))
+		justifications.append(one_explanation(to_send))
 
 	print(final_ranks)
 
 	sum = 0
 
 	for rank in final_ranks:
-		sum += rank
+		sum += numpy.exp(rank)
 
 	probabilities = []
 
 	for rank in final_ranks:
-		probabilities.append(rank/sum)
+		probabilities.append(numpy.exp(rank)/sum)
 
 	print("The final probabilities for each choice are: " + str(probabilities))
+	print("The per-choice explanations using the context are: ")
+	print("")
+
+	for i in range(len(ranks)):
+		print("Choice: " + str(paraphrases[i][number_of_paraphrases-1]))
+		print("Justification: " + str(justifications[i]))
+		print("Justification secondary: " + str(all_outputs[number_of_paraphrases-1][i]))
+		print("")
 
 if __name__ == "__main__":
 
@@ -156,8 +242,8 @@ if __name__ == "__main__":
 	# Choose if we want the sentences printed
 	print_sentences = True
 
-	# Use this if we combine the introducation and choice embeddings
-	threshold = 0.6
+	# Use this if we combine the introduction and choice embeddings
+	threshold = 0.4
 
 	# Use this if we first filter by introduction and then by choice
 	threshold1 = 0.3
@@ -180,9 +266,11 @@ if __name__ == "__main__":
 
 	matcher = Matcher(sentence_transformer, input_vectors, data_frame, threshold, threshold2)
 
-	scenario_chosen = scenario1
+	scenario_chosen = scenario4
 
-	scenario_match = matcher.match_scenario(scenario_chosen, print_sentences, filter_first, tokens_allowed, True, True)
+	scenario_match = matcher.match_scenario(scenario_chosen, print_sentences, filter_first, tokens_allowed, False, False)
+
+	print("CONTEXT: \n" + scenario_match)
 
 	choices_str = ""
 

@@ -224,7 +224,11 @@ class Matcher():
 		final_matches = []
 		current_total = 0
 
+		#print("Y " + str(len(sentence_matches)))
+
 		sentence_matches = sorted(sentence_matches,	reverse=True)
+
+		#print("X " + str(len(sentence_matches)))
 
 		for sentence in sentence_matches:
 			if sentence[0] < self.threshold:
@@ -232,6 +236,8 @@ class Matcher():
 			if current_total + len(sentence[1]) <= tokens_allowed and sentence[1] not in final_matches:
 				final_matches.append(sentence[1])
 				current_total += len(sentence[1])
+
+		print("Z " + str(len(final_matches)))
 
 		#scenario_match = ScenarioMatch(scenario)
 		return "\n\n".join(final_matches)
