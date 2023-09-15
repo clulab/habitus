@@ -73,7 +73,7 @@ scenario5 = Scenario(
 	]
 )
 
-number_of_paraphrases = 5
+number_of_paraphrases = 10
 
 def paraphrase(sentence):
 
