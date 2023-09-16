@@ -58,8 +58,8 @@ scenario3 = Scenario(
 scenario4 = Scenario(
 	"In Ghana two systems of mining are in conflict: large-scale, regulated, corporate mining and widespread but small-scale, unregulated, illegal mining. The former has less of a negative impact on the environment but also provides less of a benefit to the surrounding communities than does the latter, which provides more jobs but wreaks havoc on the environment.  Imagine a third option: government-organized and regulated, community-scale operations conducted in partnership with corporate mines.  Government provides access to land and civil infrastructure; corporations, to equipment and world markets.  The main reason the third option will not succeed is because:",
 	[
-		"The government is unable to enforce mining protocols for a distributed collection of mines in the same way it can for a single, large mine so that environmental benefits are not realized.",
 		"Government officials believe that any compromise makes them look weak so that they will not advance such an option.",
+		"The government is unable to enforce mining protocols for a distributed collection of mines in the same way it can for a single, large mine so that environmental benefits are not realized.",
 		"No role is provided for local chiefs, whose power will be diluted by this third possibility, making it unlikely that they come on board.",
 		"Galamseyers have a strike it rich, gold rush attitude and will not exchange it for the certain, but barely sufficient payout from other options.",
 		"None of the above."
@@ -73,6 +73,17 @@ scenario5 = Scenario(
 		"Yet unrealized and even more valuable uses for clean water will be explored, such as supporting a natural habitat attractive to ecotourism, which is successful in other parts of the country.",
 		"Farmers will point out that they cannot raise food in runoff from a bauxite mine and predict a consequent food shortage.",
 		"A plan will be devised to transport the bauxite downstream for processing with water that has already been used for agricultural purposes.",
+		"None of the above."
+	]
+)
+
+scenario6 = Scenario(
+	"In the current Ghanaian market, a pound of gold is worth $30,000.  However, an illegal gold miner sells it for about $420. Imagine that gold is discovered in a neighboring country in even greater quantities, shifting the mining industry and causing prices to plummet in Ghana. Now, illegal miners are only receiving $200 for a pound of gold. Illegal mining has started to decline across the country. This is likely because…",
+	[
+		"The payoff of illegal gold mining no longer justifies the risk.",
+		"This choice is not right.",
+		"Those involved in illegal gold mining are now moving abroad, where the value of gold is still higher.",
+		"This is the correct choice.",
 		"None of the above."
 	]
 )
@@ -216,8 +227,8 @@ if __name__ == "__main__":
 		threshold = threshold1
 
 	sentence_transformer_name: str = "all-MiniLM-L6-v2"
-	input_corpus_file_name: str = "../corpora/causalBeliefSentences.tsv"
-	input_vector_file_name: str = "../corpora/causalBeliefSentences.npy"
+	input_corpus_file_name: str = "../corpora/dataset55k.tsv"
+	input_vector_file_name: str = "../corpora/dataset55k.npy"
 	# input_corpus_file_name, input_vector_file_name = get_in_and_out()
 	input_vectors = numpy.load(input_vector_file_name)
 	data_frame = pandas.read_csv(input_corpus_file_name, sep="\t", encoding="utf-8", keep_default_na=False,
@@ -227,7 +238,7 @@ if __name__ == "__main__":
 
 	matcher = Matcher(sentence_transformer, input_vectors, data_frame, threshold, threshold2)
 
-	scenario_chosen = scenario1
+	scenario_chosen = scenario6
 
 	scenario_match = matcher.match_scenario(scenario_chosen, print_sentences, filter_first, tokens_allowed, False, False)
 
