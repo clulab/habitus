@@ -21,12 +21,12 @@ def doit(index, sentence):
 
 if __name__ == "__main__":
 	sentence_transformer_name: str = "all-MiniLM-L6-v2"
-	input_file_name: str = "../corpora/causalBeliefSentences.tsv"
-	output_file_name: str = "../corpora/causalBeliefSentences.npy"
+	input_file_name: str = "../corpora/multimix/dataset55k.tsv"
+	output_file_name: str = "../corpora/multimix/dataset55k.npy"
 	# input_file_name, output_file_name = get_in_and_out()
 	data_frame = pandas.read_csv(input_file_name, sep="\t", encoding="utf-8", keep_default_na=False,
 		dtype={"file": str, "index": int, "sentence": str, "causal": bool, "belief": bool}
-	) # [:100]
+	)#[:1000]
 	sentence_transformer = SentenceTransformer(sentence_transformer_name)
 
 	data_embeddings = [doit(index, sentence) for index, sentence in enumerate(data_frame["sentence"])]
