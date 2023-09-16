@@ -54,8 +54,8 @@ scenario3 = Scenario(
 scenario4 = Scenario(
 	"In Ghana two systems of mining are in conflict: large-scale, regulated, corporate mining and widespread but small-scale, unregulated, illegal mining. The former has less of a negative impact on the environment but also provides less of a benefit to the surrounding communities than does the latter, which provides more jobs but wreaks havoc on the environment.  Imagine a third option: government-organized and regulated, community-scale operations conducted in partnership with corporate mines.  Government provides access to land and civil infrastructure; corporations, to equipment and world markets.  The main reason the third option will not succeed is because:",
 	[
-		"Government officials believe that any compromise makes them look weak so that they will not advance such an option.",
 		"The government is unable to enforce mining protocols for a distributed collection of mines in the same way it can for a single, large mine so that environmental benefits are not realized.",
+		"Government officials believe that any compromise makes them look weak so that they will not advance such an option.",
 		"No role is provided for local chiefs, whose power will be diluted by this third possibility, making it unlikely that they come on board.",
 		"Galamseyers have a strike it rich, gold rush attitude and will not exchange it for the certain, but barely sufficient payout from other options.",
 		"None of the above."
@@ -132,19 +132,19 @@ def rank_choices(introduction, context, choices):
 
 	for choice in choices:
 		index = result.find(choice)
-		ranks.append([index, crr])
+		ranks.append([index, crr, crr])
 		crr += 1
 
 	temp = sorted(ranks)
 	ranks = []
 
 	for rank in temp:
-		ranks.append(rank[1])
+		ranks.append(rank)
 
-	for i in range(len(ranks)):
-		ranks[i] = number_of_paraphrases - ranks[i] - 1
+	#for i in range(len(ranks)):
+#		ranks[i][1] = number_of_paraphrases - ranks[i][1] - 1
 
-	outputs = []
+	outputs = ['' for _ in range(len(ranks))]
 
 	for i in range(1, len(ranks)+1):
 		first_split = result.split(str(i) + ".")
@@ -157,7 +157,8 @@ def rank_choices(introduction, context, choices):
 		#print("Y + " + str(first_split))
 		first_split = first_split.split(str(i+1) + '.')[0]
 		#print("Z + " + str(first_split))
-		outputs.append(first_split)
+		#print("ZZ + " + str(i) + " + " + str(ranks[i-1][2]) + " + " + str(len(outputs)) + " + " + str(len(ranks)))
+		outputs[ranks[i-1][2]] = first_split
 
 	#print(outputs)
 
@@ -165,6 +166,7 @@ def rank_choices(introduction, context, choices):
 		print("ERR Parsing")
 		return rank_choices(introduction, context, choices)
 
+	#return [ranks[i][1] for i in range(len(ranks))], outputs
 	return ranks, outputs
 
 def one_explanation(outputs):
@@ -201,16 +203,16 @@ def compute_ranking(paraphrases, introduction, context):
 		ranks, outputs = rank_choices(introduction, context, choices_chosen)
 		all_outputs.append(outputs)
 		for i in range(len(ranks)):
-			final_ranks[i] += ranks[i]
+			final_ranks[ranks[i][2]] += number_of_paraphrases - i - 1
 
-	justifications = []
+	#justifications = []
 
-	for i in range(len(final_ranks)):
-		to_send = []
-		for j in range(len(all_outputs)):
-			to_send.append(all_outputs[j][i])
-		#print("TT " + str(to_send))
-		justifications.append(one_explanation(to_send))
+	#for i in range(len(final_ranks)):
+	#	to_send = []
+	#	for j in range(len(all_outputs)):
+	#		to_send.append(all_outputs[j][i])
+	#	#print("TT " + str(to_send))
+	#	justifications.append(one_explanation(to_send))
 
 	print(final_ranks)
 
@@ -219,9 +221,11 @@ def compute_ranking(paraphrases, introduction, context):
 	for rank in final_ranks:
 		sum += numpy.exp(rank)
 
+	#probabilities = [0 for _ in range(len(final_ranks))]
 	probabilities = []
 
 	for rank in final_ranks:
+		#probabilities[]
 		probabilities.append(numpy.exp(rank)/sum)
 
 	print("The final probabilities for each choice are: " + str(probabilities))
@@ -230,8 +234,8 @@ def compute_ranking(paraphrases, introduction, context):
 
 	for i in range(len(ranks)):
 		print("Choice: " + str(paraphrases[i][number_of_paraphrases-1]))
-		print("Justification: " + str(justifications[i]))
-		print("Justification secondary: " + str(all_outputs[number_of_paraphrases-1][i]))
+		#print("Justification: " + str(justifications[i]))
+		print("Justification: " + str(all_outputs[number_of_paraphrases-1][i]))
 		print("")
 
 if __name__ == "__main__":
@@ -266,7 +270,7 @@ if __name__ == "__main__":
 
 	matcher = Matcher(sentence_transformer, input_vectors, data_frame, threshold, threshold2)
 
-	scenario_chosen = scenario4
+	scenario_chosen = scenario1
 
 	scenario_match = matcher.match_scenario(scenario_chosen, print_sentences, filter_first, tokens_allowed, False, False)
 
