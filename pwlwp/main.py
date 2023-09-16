@@ -1,15 +1,17 @@
 
 from argparse import ArgumentParser
 
-import openai
-
 from matcher import Matcher
 from scenario import Scenario
 from sentence_transformers import SentenceTransformer
-from typing import Tuple
 
 import numpy
 import pandas
+
+from chat import Chat
+
+import time
+
 
 def get_in_and_out() -> str: # Tuple[str, str]:
 	argument_parser = ArgumentParser()
@@ -17,6 +19,8 @@ def get_in_and_out() -> str: # Tuple[str, str]:
 	argument_parser.add_argument("-iv", "--input-vector", required=True, help="input vector file name")
 	args = argument_parser.parse_args()
 	return args.input_corpus, args.input_vector
+
+chat_gpt = Chat("gpt-4", "", time.strftime("%Y%m%d-%H%M%S"))
 
 scenario1 = Scenario(
 	"In the current Ghanaian market, a pound of gold is worth $30,000.  However, an illegal gold miner sells it for about $420. Imagine that gold is discovered in a neighboring country in even greater quantities, shifting the mining industry and causing prices to plummet in Ghana. Now, illegal miners are only receiving $200 for a pound of gold. Illegal mining has started to decline across the country. This is likely because…",
@@ -75,28 +79,26 @@ scenario5 = Scenario(
 
 number_of_paraphrases = 10
 
-def paraphrase(sentence):
+def paraphrase(sentence: str) -> list[str]:
 
 	text = "Paraphrase the following sentence " + sentence + " in " + str(number_of_paraphrases-1) + " unique ways. The answer must only have the paraphrases one per row."
 
-	chat_completion = openai.ChatCompletion.create(model="gpt-4",
-												   messages=[{"role": "user", "content": text}])
-
-	result = chat_completion.choices[0].message.content
+	chat_gpt.question = text
+	result = chat_gpt.calL_gpt()
 
 	result = result.split('\n')
 
 	final_result = []
 
-	for strr in result:
+	for string_temp in result:
 		index = 0
-		for i in range(len(strr)):
-			if ('a' <= strr[i] <= 'z') or ('A' <= strr[i] <= 'Z'):
+		for i in range(len(string_temp)):
+			if ('a' <= string_temp[i] <= 'z') or ('A' <= string_temp[i] <= 'Z'):
 				index = i
 				break
-		if len(strr[index:]) < 2:
+		if len(string_temp[index:]) < 2:
 			continue
-		final_result.append(strr[index:])
+		final_result.append(string_temp[index:])
 
 	final_result.append(sentence)
 
@@ -106,34 +108,26 @@ def paraphrase(sentence):
 
 	return final_result
 
-# type = 0 -> only nr_paraphrases combinations
+# type = 0 -> only number_paraphrases combinations
 # type = 1 -> all possible combinations
 
-def rank_choices(introduction, context, choices):
+def rank_choices(introduction: str, context: str, choices: list[str]) -> (list[tuple], list[str]):
 
 	question = "You are given the following question " + introduction + " and context about the situation through the " \
 			   "following sentences: " + context + " \n\n " + " Use those sentences to rank the following from best to " \
 			   "worst while ONLY using the information given above and be careful to cite each information used" \
 															  ": \n" + "\n".join(choices)
 
-	chat_completion = openai.ChatCompletion.create(model="gpt-4",
-												   messages=[{"role": "user", "content": question}])
-
-	result = chat_completion.choices[0].message.content
-
-	#print("CHOICES:")
-	#print(choices)
-	#print()
-	#print("EXPLANATION:")
-	#print(result)
+	chat_gpt.question = question
+	result = chat_gpt.calL_gpt()
 
 	ranks = []
-	crr = 0
+	current = 0
 
 	for choice in choices:
 		index = result.find(choice)
-		ranks.append([index, crr, crr])
-		crr += 1
+		ranks.append([index, current, current])
+		current += 1
 
 	temp = sorted(ranks)
 	ranks = []
@@ -141,78 +135,46 @@ def rank_choices(introduction, context, choices):
 	for rank in temp:
 		ranks.append(rank)
 
-	#for i in range(len(ranks)):
-#		ranks[i][1] = number_of_paraphrases - ranks[i][1] - 1
-
 	outputs = ['' for _ in range(len(ranks))]
 
 	for i in range(1, len(ranks)+1):
 		first_split = result.split(str(i) + ".")
-		#print("I + " + str(i))
-		#print("X + " + str(first_split))
 		if len(first_split) >= 2:
 			first_split = first_split[1]
 		else:
 			first_split = first_split[0]
-		#print("Y + " + str(first_split))
 		first_split = first_split.split(str(i+1) + '.')[0]
-		#print("Z + " + str(first_split))
-		#print("ZZ + " + str(i) + " + " + str(ranks[i-1][2]) + " + " + str(len(outputs)) + " + " + str(len(ranks)))
 		outputs[ranks[i-1][2]] = first_split
-
-	#print(outputs)
 
 	if len(outputs) != len(ranks):
 		print("ERR Parsing")
 		return rank_choices(introduction, context, choices)
 
-	#return [ranks[i][1] for i in range(len(ranks))], outputs
 	return ranks, outputs
 
-def one_explanation(outputs):
+def one_explanation(outputs: list[str]) -> str:
 
 	question = "You are given a sentence that is formulated and justified in several ways. Combine those justifications" \
 			   "into a single one for all the sentences while citing the original justifications: \n\n" + '\n\n'.join(outputs)
 
-	#print("XX " + question)
-
-	chat_completion = openai.ChatCompletion.create(model="gpt-4",
-												   messages=[{"role": "user", "content": question}])
-
-	result = chat_completion.choices[0].message.content
+	chat_gpt.question = question
+	result = chat_gpt.calL_gpt()
 
 	return result
 
-	#print("YY " + result)
+def compute_ranking(paraphrases: list[str], introduction: str, context: str):
 
-
-def compute_ranking(paraphrases, introduction, context):
-
-	final_ranks = []
-
-	for i in range(len(paraphrases)):
-		final_ranks.append(0)
+	final_ranks = [0] * len(paraphrases)
 
 	all_outputs = []
 
 	for i in range(number_of_paraphrases):
 		print("STARTING " + str(i))
-		choices_chosen = []
-		for choice_list in paraphrases:
-			choices_chosen.append(choice_list[i])
+		choices_chosen = [choice_list[i] for choice_list in paraphrases]
 		ranks, outputs = rank_choices(introduction, context, choices_chosen)
 		all_outputs.append(outputs)
 		for i in range(len(ranks)):
 			final_ranks[ranks[i][2]] += number_of_paraphrases - i - 1
-
-	#justifications = []
-
-	#for i in range(len(final_ranks)):
-	#	to_send = []
-	#	for j in range(len(all_outputs)):
-	#		to_send.append(all_outputs[j][i])
-	#	#print("TT " + str(to_send))
-	#	justifications.append(one_explanation(to_send))
 
 	print(final_ranks)
 
@@ -221,12 +183,7 @@ def compute_ranking(paraphrases, introduction, context):
 	for rank in final_ranks:
 		sum += numpy.exp(rank)
 
-	#probabilities = [0 for _ in range(len(final_ranks))]
-	probabilities = []
-
-	for rank in final_ranks:
-		#probabilities[]
-		probabilities.append(numpy.exp(rank)/sum)
+	probabilities = [numpy.exp(rank) / sum for rank in final_ranks]
 
 	print("The final probabilities for each choice are: " + str(probabilities))
 	print("The per-choice explanations using the context are: ")
@@ -288,8 +245,6 @@ if __name__ == "__main__":
 
 	#print(scenario_match)
 
-	openai.api_key_path = "openai_key"
-
 	paraphrases = []
 
 	for choice in scenario_chosen.choices:
@@ -304,9 +259,3 @@ if __name__ == "__main__":
 		choices_chosen.append(paraphrase[0])
 
 	compute_ranking(paraphrases, scenario_chosen.introduction, scenario_match)
-
-
-	#scenario_match = matcher.match_scenario(scenario2)
-	#print(scenario_match)
-	#scenario_match = matcher.match_scenario(scenario3)
-	#print(scenario_match)
