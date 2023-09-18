@@ -12,7 +12,7 @@ class AdomOnlineArticleScraper extends PageArticleScraper(AdomOnlineDomain) {
   def scrape(browser: Browser, page: Page, html: String): ArticleScrape = {
     val doc = browser.parseString(html)
     val title = doc.title
-    val dateline = (doc >> elementList("time.entry-date")).head.text.trim
+    val datelineOpt = (doc >> elementList("time.entry-date")).headOption.map(_.attr("datetime"))
     val bylineOpt = (doc >> elementList("div.td-post-source-via a")).headOption.map(_.text.trim)
     val paragraphs = doc >> elementList("div.td-post-content > p")
     val text = paragraphs
@@ -23,6 +23,6 @@ class AdomOnlineArticleScraper extends PageArticleScraper(AdomOnlineDomain) {
       .filter(_ != "READ ALSO:")
       .mkString("\n\n")
 
-    ArticleScrape(page.url, Some(title), Some(dateline), bylineOpt, text)
+    ArticleScrape(page.url, Some(title), datelineOpt, bylineOpt, text)
   }
 }

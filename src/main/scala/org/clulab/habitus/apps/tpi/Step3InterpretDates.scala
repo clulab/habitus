@@ -6,8 +6,8 @@ import org.clulab.wm.eidoscommon.utils.TsvReader
 import scala.util.Using
 
 object Step3InterpretDates extends App with Logging {
-  val inputFileName = "../corpora/multi/CausalBeliefsEven.tsv"
-  val outputFileName = "../corpora/multi/CausalBeliefsDate.tsv"
+  val inputFileName = "../corpora/multimix/step2a.tsv"
+  val outputFileName = "../corpora/multimix/step2b.tsv"
   val expectedColumnCount = 21
 
   val months = Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December")
