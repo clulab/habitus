@@ -5,29 +5,77 @@ import org.clulab.wm.eidoscommon.utils.TsvReader
 
 import scala.util.Using
 
-case class LineLocation(prevLocation: String, prevDistance: Int, nextLocation: String, nextDistance: Int) {
+case class LocationAndIndex(location: String, index: Int)
+
+case class LocationAndDistance(location: String, distance: Int) {
 
   override def toString: String = {
-    s"$prevLocation\t$prevDistance\t$nextLocation\t$nextDistance"
+    s"$location\t$distance"
   }
 }
 
-object LineLocation {
+case class LineLocationAndDistance(prevLocationAndDistanceOpt: Option[LocationAndDistance], nextLocationAndDistanceOpt: Option[LocationAndDistance]) {
+
+  override def toString: String = {
+    def toString(locationAndDistanceOpt: Option[LocationAndDistance]): String = {
+      locationAndDistanceOpt.map(_.toString).getOrElse("\t")
+    }
+
+    s"${toString(prevLocationAndDistanceOpt)}\t${toString(nextLocationAndDistanceOpt)}"
+  }
+}
+
+object LineLocationAndDistance {
   val header = "prevLocation\tprevDistance\tnextLocation\tnextDistance"
 }
 
 object Step5FindNearestLocation extends App with Logging {
-  val inputFileName = "../corpora/multimix/dataset100.tsv"
-  val outputFileName = "../corpora/multimix/dataset55knearest.tsv"
+
+  val inputFileName = "../corpora/multimix/dataset1000.tsv"
+  val outputFileName = "../corpora/multimix/dataset55knearest1000.tsv"
   val expectedColumnCount = 22
+  val tsvReader = new TsvReader()
 
+  def getLineLocationAndDistances(lines: Seq[String]): Seq[LineLocationAndDistance] = {
+    val locationAndIndexes = lines.map { line =>
+      val columns = tsvReader.readln(line)
+      val sentenceIndex = columns(3).toInt
+      val sentenceLocation = columns(19)
 
-  def getLineLocations(lines: Seq[String]): Seq[LineLocation] = {
-    val lineLocations = lines.map { line =>
-      LineLocation("one", 1, "two", 2)
+      LocationAndIndex(sentenceLocation, sentenceIndex)
+    }.toList
+
+    @annotation.tailrec
+    def getNearestLocationAndDistances(locationAndIndexes: List[LocationAndIndex], nearestLocationAndIndexOpt: Option[LocationAndIndex], nearestLocationAndDistanceOpts: List[Option[LocationAndDistance]]): List[Option[LocationAndDistance]] = {
+      if (locationAndIndexes.isEmpty)
+        nearestLocationAndDistanceOpts
+      else {
+        val locationAndIndex = locationAndIndexes.head
+
+        if (locationAndIndex.location.nonEmpty)
+          // There is a new nearest one.
+          getNearestLocationAndDistances(locationAndIndexes.tail, Some(locationAndIndex),
+              Some(LocationAndDistance(locationAndIndex.location, 0)) :: nearestLocationAndDistanceOpts)
+        else
+          // We need one in the current row.
+          if (nearestLocationAndIndexOpt.isDefined)
+            // We have one available.
+            getNearestLocationAndDistances(locationAndIndexes.tail, nearestLocationAndIndexOpt,
+                Some(LocationAndDistance(nearestLocationAndIndexOpt.get.location, math.abs(locationAndIndex.index - nearestLocationAndIndexOpt.get.index))) :: nearestLocationAndDistanceOpts)
+          else
+            // We need one, but there is none available.
+            getNearestLocationAndDistances(locationAndIndexes.tail, nearestLocationAndIndexOpt,
+                None :: nearestLocationAndDistanceOpts)
+      }
     }
 
-    lineLocations
+    val prevLocationAndDistanceOpts = getNearestLocationAndDistances(locationAndIndexes, None, List.empty).reverse
+    val nextLocationAndDistanceOpts = getNearestLocationAndDistances(locationAndIndexes.reverse, None, List.empty)
+    val lineLocationAndDistances = prevLocationAndDistanceOpts.zip(nextLocationAndDistanceOpts).map { case (prevLocationAndDistanceOpt, nextLocationAndDistanceOpt) =>
+      LineLocationAndDistance(prevLocationAndDistanceOpt, nextLocationAndDistanceOpt)
+    }
+
+    lineLocationAndDistances
   }
 
   def checkline(line: String): String = {
@@ -39,11 +87,10 @@ object Step5FindNearestLocation extends App with Logging {
 
   Using.resource(Sourcer.sourceFromFilename(inputFileName)) { inputSource =>
     Using.resource(FileUtils.printWriterFromFile(outputFileName)) { printWriter =>
-      val tsvReader = new TsvReader()
       val lines = inputSource.getLines.buffered
       val firstLine = checkline(lines.next)
 
-      printWriter.println(s"$firstLine\t${LineLocation.header}")
+      printWriter.println(s"$firstLine\t${LineLocationAndDistance.header}")
 
       while (lines.hasNext) {
         val headArticleLine = checkline(lines.next)
@@ -65,7 +112,7 @@ object Step5FindNearestLocation extends App with Logging {
         }
 
         val articleLines = takeArticleLines(List(headArticleLine)).reverse.toVector
-        val articleLocations = getLineLocations(articleLines)
+        val articleLocations = getLineLocationAndDistances(articleLines)
 
         articleLines.zip(articleLocations).foreach { case (line, locations) =>
           printWriter.println(s"$line\t$locations")
