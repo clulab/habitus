@@ -22,6 +22,81 @@ def get_in_and_out() -> str: # Tuple[str, str]:
 
 chat_gpt = Chat("gpt-4", "", time.strftime("%Y%m%d-%H%M%S"))
 
+scenario_official_1a = Scenario(
+	"Imagine the Ghanaian government implements reforms that change the time it takes for local residents to obtain a legal mining license, reducing the time from three years to three months. Suppose that within three months, the number of mining license applications received by the government tripled. This would have been most likely because…",
+	[
+		"Ghanaians that were participating in illegal mining felt comfortable applying for a license because of the shortened wait time",
+		"Ghanaians who were not previously mining now see it as a new economic opportunity",
+		"Ghanaians are influenced to seek mining licenses by their friends/family",
+		"None of the above"
+	]
+)
+
+scenario_official_1b = Scenario(
+	"Imagine the Ghanaian government implements reforms that change the time it takes for local residents to obtain a mining license – traditionally a big motivation for illegal mining. Instead of three years, they can now do it in three months. Suppose that a month after implementing the new reform, the number of mining licenses granted has remained the same. This would have been likely because…",
+	[
+		"Ghanaians involved in illegal mining do not trust the government and would prefer to operate without a license",
+		"Ghanaians who would like a license are unaware of the new, expedited licensing process",
+		"Ghanaians think three months is too long to obtain a mining license",
+		"Ghanaians involved in illegal mining do not want to risk being taxed by authorities, while Ghanaians that arenot involved in illegal mining are not interested in legal mining",
+		"None of the above"
+	]
+)
+scenario_official_2a = Scenario(
+	"Imagine that China has recently completed a mining infrastructure project in Brong Ahafo, Ghana. Galamseyers in the region have received an offer to work in the new mine. Additionally, imagine that the Chinese government has promoted the new large-scale mining effort as a source of legal employment for locals engaged in small-scale illegal mining. Suppose that farmers continue to engage in illegal mining at the same rate. This is because…",
+	[
+		"The Chinese galamseyers have taken all available jobs",
+		"The Chinese mining project is less lucrative than illegal mining",
+		"Ghanaians do not want to work for the Chinese",
+		"Ghanaians would prefer to have the option of farming and illegal mining than exclusively work for a Chinese mining company",
+		"None of the above"
+	]
+)
+
+scenario_official_2b = Scenario(
+	"Imagine that China has recently completed a mining infrastructure project in Brong Ahafo, Ghana. Chinese galamseyers in the region have received an offer to work in the new mine. Additionally, imagine that the Chinese government has promoted the new large-scale mining effort as a source of employment for locals engaged in small-scale illegal mining. Suppose that within a month, the Ghanaian government has seen a decrease in illegal mining activities in Brong Ahafo. This is because…",
+	[
+		"Those involved in illegal mining have begun working for the Chinese mining company",
+		"Those involved in illegal mining have sought other opportunities outside of the region because of the Chinese mine opening",
+		"Those involved in illegal mining have sought opportunities in small-scale agriculture because of the Chinese mine opening",
+		"Those involved in illegal mining have sought other opportunities within the region unrelated to agriculture",
+		"None of the above"
+	]
+)
+
+scenario_official_3 = Scenario(
+	"An area typically dedicated to small-scale agriculture has been overcome by illegal mining, destroying the land and taking up labor that would otherwise be involved in agriculture. This has resulted in mass protests and tensions. What impact would this have on illegal mining activities?",
+	[
+		"Those involved in illegal mining would listen to their friends and stop",
+		"Those involved in illegal mining would continue in secret",
+		"Those involved in illegal mining would not care about the opinions of their close friends or family",
+		"Those involved in illegal mining would relocate to a different region, where they would continue mining",
+		"None of the above"
+	]
+)
+
+scenario_official_4a = Scenario(
+	"Imagine there has been a U.S.-led effort to promote the agricultural sector in southern Ghana. Much of this effort is tied to sustainability and climate change. The U.S. committed $10 million to this new effort, boosting Ghanaian agribusiness and prospective job opportunities. Suppose that local governments then notice that farming activities recently doubled. The most likely reason for this would have been because…",
+	[
+		"Those previously involved in illegal mining have started to move back to farming",
+		"Those who were never engaged in mining or farming have decided to take advantage of the financial opportunity",
+		"Traditional farmers have increased output because of U.S.-led financing",
+		"Farmers from neighboring regions have immigrated to southern Ghana",
+		"None of the above"
+	]
+)
+
+scenario_official_4b = Scenario(
+	"Imagine there has been a U.S.-led effort to promote the agricultural sector in southern Ghana. Much of thiseffort is tied to sustainability and climate change. The U.S. committed $10 million to this new effort in hopes of boosting Ghanaian agribusiness and prospective job opportunities. Local governments notice, however, that farming activities have remained unchanged. The most likely reason for this would have been because…",
+	[
+		"Those working in illegal mining are skeptical of U.S. investments",
+		"Those working in illegal mining think they’re already making a good livelihood",
+		"Local authorities are diverting the U.S. investment away from agribusiness",
+		"The investment has attracted migrants from other regions who are not interested in farming but hope to find other economic opportunities",
+		"None of the above"
+	]
+)
+
 scenario1 = Scenario(
 	"In the current Ghanaian market, a pound of gold is worth $30,000.  However, an illegal gold miner sells it for about $420. Imagine that gold is discovered in a neighboring country in even greater quantities, shifting the mining industry and causing prices to plummet in Ghana. Now, illegal miners are only receiving $200 for a pound of gold. Illegal mining has started to decline across the country. This is likely because…",
 	[
@@ -238,7 +313,7 @@ if __name__ == "__main__":
 
 	matcher = Matcher(sentence_transformer, input_vectors, data_frame, threshold, threshold2)
 
-	scenario_chosen = scenario6
+	scenario_chosen = scenario_official_4b
 
 	scenario_match = matcher.match_scenario(scenario_chosen, print_sentences, filter_first, tokens_allowed, False, False)
 
