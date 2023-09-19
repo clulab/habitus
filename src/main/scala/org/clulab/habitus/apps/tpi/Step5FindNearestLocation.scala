@@ -5,36 +5,37 @@ import org.clulab.wm.eidoscommon.utils.TsvReader
 
 import scala.util.Using
 
-case class LocationAndIndex(location: String, index: Int)
-
-case class LocationAndDistance(location: String, distance: Int) {
-
-  override def toString: String = {
-    s"$location\t$distance"
-  }
-}
-
-case class LineLocationAndDistance(prevLocationAndDistanceOpt: Option[LocationAndDistance], nextLocationAndDistanceOpt: Option[LocationAndDistance]) {
-
-  override def toString: String = {
-    def toString(locationAndDistanceOpt: Option[LocationAndDistance]): String = {
-      locationAndDistanceOpt.map(_.toString).getOrElse("\t")
-    }
-
-    s"${toString(prevLocationAndDistanceOpt)}\t${toString(nextLocationAndDistanceOpt)}"
-  }
-}
-
-object LineLocationAndDistance {
-  val header = "prevLocation\tprevDistance\tnextLocation\tnextDistance"
-}
-
 object Step5FindNearestLocation extends App with Logging {
 
-  val inputFileName = "../corpora/multimix/dataset1000.tsv"
-  val outputFileName = "../corpora/multimix/dataset55knearest1000.tsv"
+  case class LocationAndIndex(location: String, index: Int)
+
+  case class LocationAndDistance(location: String, distance: Int) {
+
+    override def toString: String = {
+      s"$location\t$distance"
+    }
+  }
+
+  case class LineLocationAndDistance(prevLocationAndDistanceOpt: Option[LocationAndDistance], nextLocationAndDistanceOpt: Option[LocationAndDistance]) {
+
+    override def toString: String = {
+      def toString(locationAndDistanceOpt: Option[LocationAndDistance]): String = {
+        locationAndDistanceOpt.map(_.toString).getOrElse("\t")
+      }
+
+      s"${toString(prevLocationAndDistanceOpt)}\t${toString(nextLocationAndDistanceOpt)}"
+    }
+  }
+
+  object LineLocationAndDistance {
+    val header = "prevLocation\tprevDistance\tnextLocation\tnextDistance"
+  }
+
+  val inputFileName = "../corpora/multimix/dataset55k.tsv"
+  val outputFileName = "../corpora/multimix/dataset55kNearest.tsv"
   val expectedColumnCount = 22
   val tsvReader = new TsvReader()
+  var articleIndex = 0
 
   def getLineLocationAndDistances(lines: Seq[String]): Seq[LineLocationAndDistance] = {
     val locationAndIndexes = lines.map { line =>
@@ -95,6 +96,9 @@ object Step5FindNearestLocation extends App with Logging {
       while (lines.hasNext) {
         val headArticleLine = checkline(lines.next)
         val headArticleUrl = tsvReader.readln(headArticleLine, 1).head
+
+        println(s"$articleIndex\t$headArticleUrl")
+        articleIndex += 1
 
         @annotation.tailrec
         def takeArticleLines(articleLines: List[String]): List[String] = {
