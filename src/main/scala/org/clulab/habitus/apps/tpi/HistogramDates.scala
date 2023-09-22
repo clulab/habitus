@@ -4,8 +4,8 @@ import org.clulab.utils.{Logging, Sourcer}
 
 import scala.util.Using
 
-object Step4HistogramDates extends App with Logging {
-  val inputFileName = "../corpora/multi/CausalBeliefsDate.tsv"
+object HistogramDates extends App with Logging {
+  val inputFileName = "../corpora/multimix/dataset55k.tsv"
   val expectedColumnCount = 22
   val years = Using.resource(Sourcer.sourceFromFilename(inputFileName)) { inputSource =>
     val lines = inputSource.getLines
@@ -13,10 +13,20 @@ object Step4HistogramDates extends App with Logging {
     val years = lines.flatMap { line =>
       val columns = line.split('\t')
       assert(columns.length == expectedColumnCount)
-      val canonicalDate = columns.last
+      val causalIndex = columns(6)
 
-      if (canonicalDate.nonEmpty) Some(canonicalDate.take(4))
-      else None
+      if (causalIndex == "" || causalIndex == "0") {
+        val terms = columns(1).split(' ')
+        val canonicalDate = columns.last
+
+        // If there are multiple matching terms, add that many to the sequence so
+        // that we match file counts.
+        if (canonicalDate.nonEmpty)
+          Seq.fill(1)(canonicalDate.take(4))
+        else
+          Seq.empty
+      }
+      else Seq.empty
     }
 
     years.toVector
