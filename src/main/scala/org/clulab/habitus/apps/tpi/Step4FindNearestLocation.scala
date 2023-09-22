@@ -5,7 +5,7 @@ import org.clulab.wm.eidoscommon.utils.TsvReader
 
 import scala.util.Using
 
-object Step5FindNearestLocation extends App with Logging {
+object Step4FindNearestLocation extends App with Logging {
 
   case class LocationAndIndex(location: String, index: Int)
 

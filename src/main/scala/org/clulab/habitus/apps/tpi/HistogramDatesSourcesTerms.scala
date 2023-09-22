@@ -19,7 +19,7 @@ object HistogramDatesSourcesTerms extends App with Logging {
       .orElseBy(_.term)
   }
 
-  val inputFileName = "../corpora/multi/CausalBeliefsDate.tsv"
+  val inputFileName = "../corpora/multimix/dataset55k.tsv"
   val expectedColumnCount = 22
   val keys = Using.resource(Sourcer.sourceFromFilename(inputFileName)) { inputSource =>
     val lines = inputSource.getLines
