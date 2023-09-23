@@ -1,0 +1,32 @@
+[
+  {
+    "initial_id": 1,
+    "choice": "Ghanaians involved in unauthorized mining activities lack confidence in the government and would choose to function without a license.",
+    "rank": 1,
+    "justification": "This choice could be justified by the context that suggests a history of mistrust and dissatisfaction with the government's handling of the mining sector. For instance, the context mentions that 'The time has now come for Ghanaian society to seize the moment and end the impunity of the mining sector - in which fraudulently acquired rights resulting from corruption (payments of bribes?' This suggests that there is a perception of corruption and impunity in the sector, which could lead to a lack of confidence in the government's ability to fairly and effectively manage the sector. Additionally, the context mentions that 'The Ghanaian government has taken the issue of illegal mining seriously because apart from the impact on our economy, its impact on the environment is dire.' This suggests that the government's efforts to combat illegal mining may not have been well-received by those involved in such activities, further eroding their confidence in the government."
+  },
+  {
+    "initial_id": 2,
+    "choice": "The new, streamlined licensing process is not understood by Ghanaians who wish to obtain a license.",
+    "rank": 2,
+    "justification": "This choice could be justified by the context that suggests that the mining sector in Ghana is complex and has undergone many changes, which could lead to confusion and misunderstanding about the licensing process. For example, the context mentions that 'The sector Minister said because mining in Ghana had gone through many changes since the first Europeans arrived in the country in 1471, there was the need to adjust Ghana’s mining laws and policies to accommodate changing circumstances.' This suggests that the laws and policies governing the sector are complex and have evolved over time, which could make it difficult for Ghanaians to understand the new, streamlined licensing process."
+  },
+  {
+    "initial_id": 3,
+    "choice": "The three-month period to acquire a mining license is seen as too long in the eyes of Ghanaians.",
+    "rank": 3,
+    "justification": "This choice could be justified by the context that suggests that Ghanaians involved in mining are eager to start their operations and may view any delay as a hindrance. For instance, the context mentions that 'According to him, it is rather difficult for a Ghanaian to secure permits and licenses to operate mining firms, as opposed to foreigners, hence, forcing the Ghanaian youth to engage in illegal mining and its related activities.' This suggests that the lengthy process of acquiring a license could be a deterrent for Ghanaians, leading them to engage in illegal mining instead."
+  },
+  {
+    "initial_id": 4,
+    "choice": "Ghanaians who participate in illegal mining are unwilling to risk being taxed, while those who do not participate in such activities have no interest in legal mining.",
+    "rank": 4,
+    "justification": "This choice could be justified by the context that suggests that taxation could be a deterrent for Ghanaians involved in mining. For example, the context mentions that 'The revival of these two mines, the expansion of output by some existing mines, and the reduction of the withholding tax rate on unprocessed gold by small-scale miners, which was introduced in 2015, from three percent (3%) to one and a half percent (1.5%), have contributed significantly to Ghana’s new position on the continent.' This suggests that the reduction of the withholding tax rate was seen as a positive development, implying that higher tax rates could be a deterrent for Ghanaians involved in mining."
+  },
+  {
+    "initial_id": 5,
+    "choice": "None of the earlier discussed reasons are relevant.",
+    "rank": 5,
+    "justification": "This choice could be justified by the context that suggests that there are other factors at play that could explain why the number of mining licenses granted has remained the same despite the implementation of the new reform. For instance, the context mentions that 'Given that the small scale mining operation is capital intensive, the Ghanaians who do not have the upfront capital, albeit manage to secure the mining concessions, end up passing such licences to their Chinese counterparts.' This suggests that financial constraints could be a major factor preventing Ghanaians from obtaining mining licenses, regardless of the length of the licensing process."
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "initial_id": 1,
+    "choice": "Those Ghanaians who are engaged in unauthorized mining activities have a lack of trust in the government and would rather work without a license.",
+    "rank": 1,
+    "justification": "This choice could be justified by the context sentences that indicate a lack of trust in the government among Ghanaians, especially those involved in mining activities. For instance, one context sentence states, “Looking at the current situation, I think that the government is taking Ghanaians for granted.” This suggests a level of mistrust towards the government. Additionally, another context sentence mentions, “We see this development to be extremely serious breaches of Ghanaians’ trust, and in some cases breaches of administration procedures, guidelines and laws regarding mining in protected forest reserves by the Government of Ghana itself,” which further underscores the lack of trust in the government's handling of mining activities."
+  },
+  {
+    "initial_id": 2,
+    "choice": "The new, expedited licensing process is not known to Ghanaians who are seeking a license.",
+    "rank": 2,
+    "justification": "This choice could be justified by the context sentences that suggest a lack of communication or awareness about the changes in the mining licensing process. For instance, one context sentence states, “We hope that the Ghanaian government will pay due attention to this situation, take the necessary action to stop such things from happening again and guide the media to give an objective coverage on the illegal mining issue so as to create a good environment for further development of our bilateral exchanges and cooperation.” This implies that there might be a lack of effective communication about the new reforms, leading to a lack of awareness among Ghanaians seeking a license."
+  },
+  {
+    "initial_id": 3,
+    "choice": "Three months is considered too lengthy by Ghanaians to acquire a mining license.",
+    "rank": 3,
+    "justification": "This choice could be justified by the context sentences that suggest a sense of urgency and impatience among Ghanaians involved in mining activities. For instance, one context sentence states, “The Ghana National Association of Small Scale Miners, is unhappy about government’s decision to extend the ban on small-scale mining by three more months.” This suggests that even a three-month period is considered too long by some Ghanaians, which could explain why the same period might be considered too lengthy to acquire a mining license."
+  },
+  {
+    "initial_id": 4,
+    "choice": "Ghanaians engaged in unlawful mining are unwilling to face the risk of taxation by authorities, whereas those not participating in illegal mining have no interest in the legal version.",
+    "rank": 4,
+    "justification": "This choice could be justified by the context sentences that suggest a reluctance among Ghanaians to engage with the authorities due to the risk of taxation. For instance, one context sentence states, “Per this logic, it is therefore proper to allow foreigners to plunder our natural resources and give paltry sums in return, whilst the government wants the Ghanaian people to believe that it is ungodly to engage in small scale mining.” This suggests a perception that the government is more interested in taxing Ghanaians than in protecting their interests, which could discourage them from seeking a legal mining license."
+  },
+  {
+    "initial_id": 5,
+    "choice": "None of the previously mentioned reasons apply.",
+    "rank": 5,
+    "justification": "This choice could be justified if none of the context sentences provided any evidence or suggestion that could support the previous choices. However, as explained above, there are context sentences that could justify each of the previous choices, so this choice would not be justified based on the provided context sentences."
+  }
+]

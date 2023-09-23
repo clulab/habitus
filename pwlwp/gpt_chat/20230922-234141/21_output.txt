@@ -1,0 +1,26 @@
+[
+  {
+    "initial_id": 1,
+    "choice": "The reduced waiting period made Ghanaians participating in illegal mining more comfortable to apply for a license.",
+    "rank": 1,
+    "justification": "This choice is plausible because the context suggests that illegal mining is a significant issue in Ghana. The context states, \"The amended mining law of Ghana has stipulated a minimum of 15 years and maximum of 25 years for illegal miners (galamseyers), President Nana Akufo-Addo has said.\" This indicates that the government is taking serious measures to curb illegal mining. Therefore, reducing the waiting period for obtaining a legal mining license could encourage those involved in illegal mining to apply for a license instead. This is further supported by the context sentence, \"There is a fine and imprisonment between 15 and 25 years for each of the following crimes: buying or selling minerals without a license or authority; mining in breach of the law; abetting any breach of the mining law; contracting a non-Ghanaian to provide mining support services; abetting the breach of the mining laws by a foreigner; fabricating or manufacturing floating platforms or other equipment to be used for mining in our water bodies, and providing an excavator for an illegal mining operation.\" This suggests that the risks associated with illegal mining are high, making the option of obtaining a legal license more appealing."
+  },
+  {
+    "initial_id": 2,
+    "choice": "Ghanaians who were not previously involved in mining now perceive it as a new economic venture.",
+    "rank": 2,
+    "justification": "This choice is also plausible because the context suggests that mining is a significant economic activity in Ghana. The context states, \"Small scale mining license, he said, are only issued to Ghanaians who are 18 years and above, adding that even in such circumstances they are subject to conditions such as a maximum of 1.2 hectares of land allocated to one person or a group of persons not exceeding four (4) in number.\" This indicates that mining is accessible to a wide range of Ghanaians. Therefore, reducing the waiting period for obtaining a mining license could make mining more attractive as an economic venture to those who were not previously involved."
+  },
+  {
+    "initial_id": 3,
+    "choice": "The influence from their friends and family has led Ghanaians to seek mining licenses.",
+    "rank": 3,
+    "justification": "This choice is less plausible because the context does not provide any information about the influence of friends and family on Ghanaians' decisions to seek mining licenses. While it is possible that social influences could play a role in such decisions, the context does not provide any evidence to support this claim."
+  },
+  {
+    "initial_id": 4,
+    "choice": "None of the earlier discussed factors.",
+    "rank": 4,
+    "justification": "This choice is less plausible because the context provides evidence to support the first two choices. The context suggests that illegal mining is a significant issue in Ghana and that mining is a significant economic activity. Therefore, it is likely that the reduced waiting period for obtaining a mining license could have influenced Ghanaians' decisions to apply for a license."
+  }
+]

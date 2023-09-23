@@ -1,0 +1,7 @@
+Read the following question delimited with backticks ``` Imagine the Ghanaian government implements reforms that change the time it takes for local residents to obtain a mining license – traditionally a big motivation for illegal mining. Instead of three years, they can now do it in three months. Suppose that a month after implementing the new reform, the number of mining licenses granted has remained the same. This would have been likely because… ```. Use the following context sentences delimited with backticks as background knowledge ```  ```.
+      Provide long and thorough justifications for each of the choices independently, without referring to the other choices, while citing the context using quotes.:
+	```Ghanaians engaged in unlawful mining activities do not have confidence in the government and would prefer to carry out their operations without a license.
+Ghanaians in need of a license are oblivious to the new, expedited licensing process.
+It is thought by Ghanaians that three months is an overly long time to receive a mining license.
+Ghanaians participating in illegal mining activities are not ready to face the risk of being taxed, while those not participating in such activities are not attracted to legal mining.
+None of the previously stated reasons are pertinent.```

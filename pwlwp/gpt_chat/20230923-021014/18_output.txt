@@ -1,0 +1,32 @@
+[
+  {
+    "initial_id": 1,
+    "choice": "Ghanaians involved in illicit mining activities have no trust in the government and would prefer to work without a license.",
+    "rank": 1,
+    "justification": "This option suggests that the lack of change in the number of mining licenses granted after the reform could be due to a lack of trust in the government among Ghanaians involved in illegal mining activities. Even though the reform has significantly reduced the time it takes to obtain a mining license, these individuals may still prefer to work without a license due to their distrust in the government. This distrust could stem from past experiences or perceptions of corruption, inefficiency, or unfairness in the government's handling of mining licenses or other related issues. Therefore, despite the reform, they may not be willing to engage with the government to obtain a license, resulting in the number of licenses granted remaining the same."
+  },
+  {
+    "initial_id": 2,
+    "choice": "The new, hastened licensing process is not understood by Ghanaians who require a license.",
+    "rank": 2,
+    "justification": "This option suggests that the unchanged number of mining licenses granted could be due to a lack of understanding of the new licensing process among Ghanaians who require a license. The reform may have been implemented too quickly or without sufficient communication and education, leading to confusion or misunderstanding about how to apply for a license under the new system. As a result, even though the process is now faster, those who need a license may not be able to successfully navigate the process, leading to the number of licenses granted remaining the same."
+  },
+  {
+    "initial_id": 3,
+    "choice": "Ghanaians reckon that the three-month period for securing a mining license is too long.",
+    "rank": 3,
+    "justification": "This option suggests that the unchanged number of mining licenses granted could be due to Ghanaians considering the new three-month period for securing a mining license as still too long. Even though the reform has significantly reduced the time it takes to obtain a license, it may not have met the expectations or needs of those who require a license. They may need to start mining immediately for financial reasons, or they may simply be unwilling to wait for three months. As a result, they may continue to mine illegally without a license, leading to the number of licenses granted remaining the same."
+  },
+  {
+    "initial_id": 4,
+    "choice": "The prospect of being taxed by authorities is not enticing to Ghanaians involved in illegal mining, and those not involved in illegal mining are not drawn to legal mining.",
+    "rank": 4,
+    "justification": "This option suggests that the unchanged number of mining licenses granted could be due to two factors: the prospect of being taxed by authorities is not enticing to Ghanaians involved in illegal mining, and those not involved in illegal mining are not drawn to legal mining. For the former group, even though obtaining a license is now faster, the prospect of having to pay taxes may deter them from applying for a license. For the latter group, they may not be interested in mining, whether legal or illegal, due to factors such as the physical demands of the work, the risks involved, or the availability of other more attractive economic opportunities. As a result, the number of licenses granted remains the same."
+  },
+  {
+    "initial_id": 5,
+    "choice": "None of the earlier stated reasons are applicable.",
+    "rank": 5,
+    "justification": "This option suggests that none of the earlier stated reasons are applicable to the situation. This could mean that there are other factors not mentioned in the previous options that are causing the number of mining licenses granted to remain the same after the reform. These could include factors such as the cost of obtaining a license, the availability of mining equipment, the accessibility of mining sites, or the market demand for mined products. Without more specific information, it is not possible to determine what these other factors might be."
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "initial_id": 1,
+    "choice": "The shortened wait time made Ghanaians who were involved in illegal mining more willing to apply for a license.",
+    "rank": 1,
+    "justification": "This choice is plausible given the context. The context sentences indicate that illegal mining is a significant issue in Ghana, with harsh penalties for those caught engaging in it. For instance, \"The amended mining law of Ghana has stipulated a minimum of 15 years and maximum of 25 years for illegal miners (galamseyers), President Nana Akufo-Addo has said.\" and \"There is a fine and imprisonment between 15 and 25 years for each of the following crimes: buying or selling minerals without a license or authority; mining in breach of the law; abetting any breach of the mining law; contracting a non-Ghanaian to provide mining support services; abetting the breach of the mining laws by a foreigner; fabricating or manufacturing floating platforms or other equipment to be used for mining in our water bodies, and providing an excavator for an illegal mining operation.\" Therefore, the reduction in the time it takes to obtain a legal mining license from three years to three months could have made Ghanaians who were involved in illegal mining more willing to apply for a license to avoid these penalties."
+  },
+  {
+    "initial_id": 2,
+    "choice": "Ghanaians who were not previously part of the mining industry now regard it as a new economic prospect.",
+    "rank": 2,
+    "justification": "This choice is also plausible given the context. The context sentences indicate that mining is a significant industry in Ghana, with many Ghanaians involved in it. For instance, “There are about 3 million Ghanaians whose source of livelihood depends on small-scale mining across about 13 regions.\" and \"Given that the small scale mining operation is capital intensive, the Ghanaians who do not have the upfront capital, albeit manage to secure the mining concessions, end up passing such licences to their Chinese counterparts.\" Therefore, the reduction in the time it takes to obtain a legal mining license from three years to three months could have made Ghanaians who were not previously part of the mining industry regard it as a new economic prospect."
+  },
+  {
+    "initial_id": 3,
+    "choice": "Under the influence of their friends and family, Ghanaians have been encouraged to apply for mining licenses.",
+    "rank": 3,
+    "justification": "This choice is plausible but not directly supported by the context sentences. The context sentences do not provide any information about the influence of friends and family on Ghanaians' decisions to apply for mining licenses. However, it is reasonable to assume that friends and family could have an influence on such decisions, especially given the importance of the mining industry in Ghana and the potential economic benefits of obtaining a mining license."
+  },
+  {
+    "initial_id": 4,
+    "choice": "None of the earlier stated reasons.",
+    "rank": 4,
+    "justification": "This choice is not plausible given the context. The context sentences provide support for the first two choices, and the third choice is reasonable even though it is not directly supported by the context sentences. Therefore, it is unlikely that none of the earlier stated reasons would be the most likely cause of the tripling in the number of mining license applications received by the Ghanaian government."
+  }
+]

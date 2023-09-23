@@ -341,9 +341,10 @@ if __name__ == "__main__":
 
 	matcher = Matcher(sentence_transformer, input_vectors, data_frame, threshold, threshold2)
 
-	scenario_chosen = scenario_official_1a
+	scenario_chosen = scenario_official_1b
 
 	scenario_match = matcher.match_scenario(scenario_chosen, print_sentences, filter_first, tokens_allowed, False, False)
+	scenario_match = ""
 
 	choices_str = ""
 

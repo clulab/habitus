@@ -218,7 +218,7 @@ class Matcher():
 				is_causal=bool(self.causal_column[index]),
 				is_belief=bool(self.belief_column[index])
 			)
-			if(not only_belief or sentence_match.belief) and (not only_causal and sentence_match.causal):
+			if (not only_belief or sentence_match.belief) and (not only_causal or sentence_match.causal):
 				sentence_matches.append([sentence_match.similarity_num, sentence_match.data_text])
 
 		final_matches = []

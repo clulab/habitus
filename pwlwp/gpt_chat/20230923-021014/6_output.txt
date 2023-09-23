@@ -1,0 +1,32 @@
+[
+  {
+    "initial_id": 1,
+    "choice": "Those Ghanaians who are engaged in unauthorized mining activities have a lack of trust in the government and would rather work without a license.",
+    "rank": 2,
+    "justification": "This option suggests that the unchanged number of mining licenses granted after the reform could be due to a lack of trust in the government among Ghanaians engaged in unauthorized mining activities. Even though the government has reduced the time it takes to obtain a mining license, these individuals may still prefer to work without a license due to their distrust in the government. This distrust could stem from past experiences of corruption, inefficiency, or unfair treatment by the government. Therefore, despite the reform, they may not be motivated to apply for a license, resulting in the number of granted licenses remaining the same."
+  },
+  {
+    "initial_id": 2,
+    "choice": "The new, expedited licensing process is not known to Ghanaians who are seeking a license.",
+    "rank": 1,
+    "justification": "This option suggests that the unchanged number of mining licenses granted after the reform could be due to a lack of awareness about the new, expedited licensing process among Ghanaians seeking a license. If the government did not effectively communicate the reform to the public, those who are interested in obtaining a license may not know about the reduced waiting time. As a result, they may not apply for a license, thinking that it still takes three years to obtain one. This lack of awareness could explain why the number of granted licenses has not increased after the reform."
+  },
+  {
+    "initial_id": 3,
+    "choice": "Three months is considered too lengthy by Ghanaians to acquire a mining license.",
+    "rank": 4,
+    "justification": "This option suggests that the unchanged number of mining licenses granted after the reform could be due to Ghanaians considering three months too long to acquire a mining license. Even though the government has reduced the waiting time from three years to three months, this may still be seen as too lengthy by those seeking a license. They may need to start mining immediately to earn a living, and cannot afford to wait for three months. Therefore, they may choose to mine illegally instead of applying for a license, resulting in the number of granted licenses remaining the same."
+  },
+  {
+    "initial_id": 4,
+    "choice": "Ghanaians engaged in unlawful mining activities are unwilling to face taxation from authorities, whereas those not participating in such activities show no interest in legal mining.",
+    "rank": 3,
+    "justification": "This option suggests that the unchanged number of mining licenses granted after the reform could be due to two reasons. First, Ghanaians engaged in unlawful mining activities may be unwilling to face taxation from authorities. Even though the government has reduced the time it takes to obtain a mining license, these individuals may still prefer to work without a license to avoid paying taxes. Second, those not participating in such activities may show no interest in legal mining. They may have other sources of income and do not see the need to apply for a mining license. These two reasons could explain why the number of granted licenses has not increased after the reform."
+  },
+  {
+    "initial_id": 5,
+    "choice": "None of the previously mentioned reasons apply.",
+    "rank": 5,
+    "justification": "This option suggests that the unchanged number of mining licenses granted after the reform could be due to other reasons not mentioned in the previous options. For example, there could be other barriers to obtaining a license that the reform did not address, such as high application fees or complex application procedures. Alternatively, the demand for mining licenses may have naturally decreased due to factors such as a decline in the profitability of mining or an increase in job opportunities in other sectors. These other reasons could explain why the number of granted licenses has not increased after the reform."
+  }
+]

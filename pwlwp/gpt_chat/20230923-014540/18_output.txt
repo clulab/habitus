@@ -1,0 +1,32 @@
+[
+  {
+    "initial_id": 1,
+    "choice": "Ghanaians involved in illicit mining activities have no trust in the government and would prefer to work without a license.",
+    "rank": 1,
+    "justification": "This justification could be plausible given the context. The context sentences indicate that there is a significant problem with illegal mining in Ghana, with many Ghanaians engaging in these activities despite the risks and legal implications. For instance, one context sentence states, 'According to him, it is rather difficult for a Ghanaian to secure permits and licenses to operate mining firms, as opposed to foreigners, hence, forcing the Ghanaian youth to engage in illegal mining and its related activities.' This suggests a lack of trust in the government's ability to fairly distribute mining licenses, which could discourage Ghanaians from applying for licenses even after the reform."
+  },
+  {
+    "initial_id": 2,
+    "choice": "The new, hastened licensing process is not recognized by Ghanaians who are applying for a license.",
+    "rank": 2,
+    "justification": "This justification could be plausible given the context. The context sentences indicate that the Ghanaian government has implemented a new, hastened licensing process. However, it is possible that this new process is not recognized or understood by Ghanaians who are applying for a license. For instance, one context sentence states, 'The sector Minister said because mining in Ghana had gone through many changes since the first Europeans arrived in the country in 1471, there was the need to adjust Ghana’s mining laws and policies to accommodate changing circumstances.' This suggests that the changes in mining laws and policies, including the new licensing process, may not be well understood or recognized by Ghanaians."
+  },
+  {
+    "initial_id": 3,
+    "choice": "A three-month timeframe to secure a mining license is deemed too long by Ghanaians.",
+    "rank": 5,
+    "justification": "This justification seems less plausible given the context. The context sentences do not provide any indication that Ghanaians consider a three-month timeframe to secure a mining license as too long. In fact, one context sentence states, 'Instead of three years, they can now do it in three months.' This suggests that the new timeframe is significantly shorter than the previous one, and it is unlikely that Ghanaians would consider it too long."
+  },
+  {
+    "initial_id": 4,
+    "choice": "The fear of being taxed by authorities prevents Ghanaians involved in illegal mining, while those not involved in such activities are not attracted to legal mining.",
+    "rank": 3,
+    "justification": "This justification could be plausible given the context. The context sentences indicate that there are financial implications associated with legal mining, such as taxes, which could discourage Ghanaians from applying for mining licenses. For instance, one context sentence states, 'The revival of these two mines, the expansion of output by some existing mines, and the reduction of the withholding tax rate on unprocessed gold by small-scale miners, which was introduced in 2015, from three percent (3%) to one and a half percent (1.5%), have contributed significantly to Ghana’s new position on the continent.' This suggests that taxes could be a deterrent for Ghanaians involved in illegal mining, while those not involved in such activities may not be attracted to legal mining due to the financial implications."
+  },
+  {
+    "initial_id": 5,
+    "choice": "None of the earlier stated causes are applicable.",
+    "rank": 4,
+    "justification": "This justification could be plausible given the context. The context sentences provide several potential reasons why the number of mining licenses granted has remained the same despite the reform, including a lack of trust in the government, a lack of recognition or understanding of the new licensing process, and financial implications associated with legal mining. However, it is also possible that none of these reasons are applicable, and that there are other factors at play that are not mentioned in the context sentences."
+  }
+]

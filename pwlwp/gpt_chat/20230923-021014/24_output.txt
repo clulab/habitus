@@ -1,0 +1,32 @@
+[
+  {
+    "initial_id": 1,
+    "choice": "Ghanaians involved in illegal mining do not trust the government and would prefer to operate without a license",
+    "rank": 2,
+    "justification": "This could be a plausible reason for the number of mining licenses remaining the same even after the reform. If the local residents involved in illegal mining have a deep-seated mistrust of the government, they may choose to continue operating without a license, regardless of the changes in the licensing process. This mistrust could stem from past experiences of corruption, inefficiency, or perceived unfairness in the government's handling of mining licenses. Therefore, even though the time to obtain a license has been significantly reduced, these individuals may still prefer to avoid any interaction with the government. This could explain why the reform has not led to an increase in the number of mining licenses granted."
+  },
+  {
+    "initial_id": 2,
+    "choice": "Ghanaians who would like a license are unaware of the new, expedited licensing process",
+    "rank": 1,
+    "justification": "This could also be a valid reason for the unchanged number of mining licenses. If the government has not effectively communicated the changes in the licensing process to the local residents, those who would like a license may still be operating under the assumption that it takes three years to obtain one. This lack of awareness could deter them from applying for a license, as they may believe that the process is still too long and cumbersome. Therefore, despite the reform, the number of mining licenses granted remains the same because the intended beneficiaries are not aware of the changes."
+  },
+  {
+    "initial_id": 3,
+    "choice": "Ghanaians think three months is too long to obtain a mining license",
+    "rank": 4,
+    "justification": "This could potentially explain the unchanged number of mining licenses. If the local residents believe that three months is still too long to wait for a mining license, they may choose not to apply for one. This could be particularly true for those who rely on mining for their livelihood and cannot afford to wait for three months without income. Therefore, even though the time to obtain a license has been reduced from three years to three months, it may still be perceived as too long by those who need to start mining immediately to support themselves and their families."
+  },
+  {
+    "initial_id": 4,
+    "choice": "Ghanaians involved in illegal mining do not want to risk being taxed by authorities, while Ghanaians that are not involved in illegal mining are not interested in legal mining",
+    "rank": 3,
+    "justification": "This could be another plausible reason for the unchanged number of mining licenses. If those involved in illegal mining are avoiding obtaining a license to evade taxes, the reduction in the time to obtain a license may not incentivize them to apply for one. On the other hand, those who are not involved in illegal mining may simply not be interested in mining, whether legal or illegal. Therefore, the reform may not have led to an increase in the number of mining licenses granted because it does not address the main concerns of the potential licensees."
+  },
+  {
+    "initial_id": 5,
+    "choice": "None of the above",
+    "rank": 5,
+    "justification": "This option suggests that none of the provided reasons accurately explain why the number of mining licenses granted has remained the same after the reform. It implies that there may be other factors at play that were not considered in the given choices. For instance, it could be that the process of obtaining a license, even though expedited, is still too complex or costly for the local residents. Alternatively, it could be that the demand for mining licenses has naturally decreased due to factors such as a decline in the profitability of mining or an increase in alternative employment opportunities. Therefore, while the reform may have made it easier to obtain a license, it has not led to an increase in the number of licenses granted because of these other, unmentioned factors."
+  }
+]

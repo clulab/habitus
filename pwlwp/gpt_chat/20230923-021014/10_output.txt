@@ -1,0 +1,32 @@
+[
+  {
+    "initial_id": 1,
+    "choice": "Ghanaians who partake in illegal mining activities harbor distrust towards the government and would opt to operate without a license.",
+    "rank": 1,
+    "justification": "This choice suggests that the unchanged number of mining licenses granted after the reform could be due to a deep-seated distrust towards the government among Ghanaians who engage in illegal mining. Even though the reform has significantly reduced the time it takes to obtain a mining license, these individuals may still prefer to operate without a license due to their skepticism towards the government. They might believe that the government could still find ways to exploit or disadvantage them even with the new reform. This distrust could stem from past experiences or perceptions of corruption, inefficiency, or unfairness in the government's handling of mining licenses or other related issues. Therefore, despite the reform, they choose to continue their illegal mining activities without obtaining a license."
+  },
+  {
+    "initial_id": 2,
+    "choice": "The new, accelerated licensing process is unfamiliar to Ghanaians who want a license.",
+    "rank": 2,
+    "justification": "This choice suggests that the unchanged number of mining licenses granted after the reform could be due to the unfamiliarity of Ghanaians with the new, accelerated licensing process. Even though the reform has made it faster to obtain a mining license, Ghanaians who want a license may not be aware of this change or may not understand how the new process works. They might find the new process confusing, intimidating, or difficult to navigate, especially if they are used to the old process or if the new process involves new requirements or procedures that they are not familiar with. This lack of familiarity or understanding could discourage them from applying for a license, resulting in the same number of licenses being granted as before the reform."
+  },
+  {
+    "initial_id": 3,
+    "choice": "Ghanaians believe that a three-month period to get a mining license is excessive.",
+    "rank": 3,
+    "justification": "This choice suggests that the unchanged number of mining licenses granted after the reform could be due to Ghanaians' belief that a three-month period to get a mining license is still too long. Even though the reform has significantly reduced the time it takes to obtain a mining license, Ghanaians may still find this period excessive, especially if they need to start mining immediately for economic reasons or if they compare this period with the time it takes to obtain similar licenses in other countries or sectors. This perception could discourage them from applying for a license, leading to the same number of licenses being granted as before the reform."
+  },
+  {
+    "initial_id": 4,
+    "choice": "The risk of being taxed by authorities is not appealing to Ghanaians involved in illegal mining, and those not involved in illegal mining have no interest in legal mining.",
+    "rank": 4,
+    "justification": "This choice suggests that the unchanged number of mining licenses granted after the reform could be due to two factors. First, Ghanaians involved in illegal mining may be deterred by the risk of being taxed by authorities if they obtain a license. Even though the reform has made it faster to obtain a license, these individuals may prefer to avoid the financial burden of taxation by continuing their illegal mining activities without a license. Second, Ghanaians not involved in illegal mining may have no interest in legal mining, either because they are engaged in other economic activities or because they perceive mining as unprofitable, risky, or undesirable for other reasons. Therefore, despite the reform, the number of licenses granted remains the same."
+  },
+  {
+    "initial_id": 5,
+    "choice": "None of the prior stated causes are relevant.",
+    "rank": 5,
+    "justification": "This choice suggests that the unchanged number of mining licenses granted after the reform could be due to other factors not mentioned in the previous choices. These factors could include, for example, economic conditions, market demand for minerals, availability of mining resources, or other government policies affecting the mining sector. It could also be that the reform has not been effectively communicated to the public, or that there are other barriers to obtaining a license that the reform has not addressed. Therefore, despite the reform, the number of licenses granted remains the same."
+  }
+]

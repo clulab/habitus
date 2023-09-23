@@ -1,0 +1,32 @@
+[
+  {
+    "initial_id": 1,
+    "choice": "Ghanaians who are involved in illegal mining activities lack trust in the government and would rather proceed without a license.",
+    "rank": 1,
+    "justification": "This choice could be justified by the context that suggests a lack of trust between the Ghanaian government and the miners. For instance, the context states, “Looking at the current situation, I think that the government is taking Ghanaians for granted.” This suggests a level of mistrust and dissatisfaction with the government's handling of the mining sector. Additionally, the context also mentions, “We see this development to be extremely serious breaches of Ghanaians’ trust, and in some cases breaches of administration procedures, guidelines and laws regarding mining in protected forest reserves by the Government of Ghana itself,” which further emphasizes the lack of trust between the miners and the government. Therefore, even with the reform to hasten the licensing process, miners may still prefer to proceed without a license due to this lack of trust."
+  },
+  {
+    "initial_id": 2,
+    "choice": "The new, hastened licensing process is not recognized by Ghanaians who wish to obtain a license.",
+    "rank": 2,
+    "justification": "This choice could be justified by the context that suggests a lack of awareness or recognition of the new licensing process among Ghanaians. The context states, “The Minister of Science, Environment, Technology and Innovation also said the lifting of the ban on small-scale mining “does not mean foreign miners who are hiding in Ghana or escaped into neighbouring countries can come and continue their illegal activities.\" This suggests that there might be a lack of clear communication or understanding about the new licensing process among the miners, leading to its lack of recognition."
+  },
+  {
+    "initial_id": 3,
+    "choice": "The belief among Ghanaians is that three months is too extended a period to obtain a mining license.",
+    "rank": 3,
+    "justification": "This choice could be justified by the context that suggests a sense of urgency among Ghanaians involved in mining. The context states, “The Ghana National Association of Small Scale Miners, is unhappy about government’s decision to extend the ban on small-scale mining by three more months.” This suggests that miners may find a three-month period too long to wait for a license, especially considering the economic implications of not being able to mine during this period."
+  },
+  {
+    "initial_id": 4,
+    "choice": "Ghanaians who are engaged in illegal mining do not want to risk being taxed by the authorities, while those who are not engaged in such activities are not interested in legal mining.",
+    "rank": 4,
+    "justification": "This choice could be justified by the context that suggests a fear of taxation among illegal miners and a lack of interest in legal mining among those not engaged in illegal activities. The context states, “Per this logic, it is therefore proper to allow foreigners to plunder our natural resources and give paltry sums in return, whilst the government wants the Ghanaian people to believe that it is ungodly to engage in small scale mining.” This suggests that illegal miners may fear being taxed if they obtain a license, while those not engaged in illegal mining may not be interested in the sector due to the perceived unfairness in the distribution of mining benefits."
+  },
+  {
+    "initial_id": 5,
+    "choice": "None of the earlier mentioned possibilities are true.",
+    "rank": 5,
+    "justification": "This choice could be justified by the context that suggests other possible reasons for the unchanged number of mining licenses granted despite the reform. For instance, the context states, “According to him, the government of Ghana has not banned small scale mining as many thought however there is a ban on illegal mining.” This suggests that the unchanged number of licenses could be due to a misunderstanding about the status of small-scale mining in Ghana. Additionally, the context also mentions, “Illegal mining in the country has been a topical issue in the country for the past few years sparking major campaigns and outrage by Ghanaians especially over the negative impact on the activities on water bodies and lands.” This suggests that the unchanged number of licenses could also be due to a general disapproval of mining activities due to their environmental impact."
+  }
+]

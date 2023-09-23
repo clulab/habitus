@@ -1,0 +1,26 @@
+[
+  {
+    "initial_id": 1,
+    "choice": "The shortened wait time made it more appealing for Ghanaians involved in illegal mining to apply for a license.",
+    "rank": 1,
+    "justification": "The context provides several reasons why this could be the case. Firstly, the Ghanaian government has been taking the issue of illegal mining seriously due to its impact on the economy and the environment. This is evident from the quote, 'The Ghanaian government has taken the issue of illegal mining seriously because apart from the impact on our economy, its impact on the environment is dire.' Therefore, the reduction in the time it takes to obtain a legal mining license could have made it more appealing for those involved in illegal mining to apply for a license and operate legally. Additionally, the context mentions that the process of obtaining a mining license could be delayed due to disagreements among lawmakers, as stated in the quote, 'In Ghana, the process can take up to six months, and in most cases, it could delay due to disagreement among lawmakers.' The reduction in the wait time could have made the process less daunting and more appealing for those involved in illegal mining."
+  },
+  {
+    "initial_id": 2,
+    "choice": "For those Ghanaians who were not previously mining, it is now seen as a new economic chance.",
+    "rank": 2,
+    "justification": "The context suggests that mining is a capital-intensive operation, and many Ghanaians do not have the upfront capital to secure mining concessions. This is evident from the quote, 'Given that the small scale mining operation is capital intensive, the Ghanaians who do not have the upfront capital, albeit manage to secure the mining concessions, end up passing such licences to their Chinese counterparts.' Therefore, the reduction in the time it takes to obtain a mining license could have made it more feasible for those who were not previously mining to consider it as a new economic opportunity."
+  },
+  {
+    "initial_id": 3,
+    "choice": "Ghanaians are applying for mining licenses, influenced by their friends and family.",
+    "rank": 3,
+    "justification": "While the context does not directly mention the influence of friends and family on Ghanaians applying for mining licenses, it does suggest that mining is a significant part of the Ghanaian economy. For example, the quote, 'According to him, this type of mining has created over 1 million jobs for many Ghanaians across various communities,' suggests that mining is a common occupation in Ghana. Therefore, it is plausible that Ghanaians could be influenced by their friends and family who are involved in mining to apply for a license, especially with the shortened wait time."
+  },
+  {
+    "initial_id": 4,
+    "choice": "None of the previously discussed reasons.",
+    "rank": 4,
+    "justification": "This option suggests that none of the previously discussed reasons are why the number of mining license applications received by the government tripled within three months of implementing reforms that reduced the time it takes to obtain a license from three years to three months. However, the context provides several reasons why this could be the case, including the government's serious stance on illegal mining, the capital-intensive nature of mining operations, and the influence of friends and family. Therefore, this option seems unlikely based on the provided context."
+  }
+]

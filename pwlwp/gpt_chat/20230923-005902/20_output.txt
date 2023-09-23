@@ -1,0 +1,32 @@
+[
+  {
+    "initial_id": 1,
+    "choice": "Ghanaians who engage in unauthorized mining activities do not trust the government and would prefer to work without a license.",
+    "rank": 2,
+    "justification": "This option could be plausible given the historical context of mining in Ghana. The context sentences indicate that illegal mining has been a persistent issue in Ghana for over two decades, despite clear laws against it. This could suggest a lack of trust or confidence in the government's ability to manage the mining sector effectively. For instance, the context sentence 'Although Ghana’s laws are clear on illegal mining, the activity has been allowed to continue for more than two decades' suggests that the government has been unable to enforce its own laws, which could contribute to a lack of trust. Additionally, the context sentence 'The Minerals Commission of Ghana is, however considering a suspension of the issuance of new licenses for small-scale mining to spark an overhaul of the country’s mining sector and deal with the illegal mining menace' indicates that the government has been considering drastic measures to deal with the issue, which could further erode trust among miners."
+  },
+  {
+    "initial_id": 2,
+    "choice": "Ghanaians applying for a license are unaware of the new, streamlined licensing process.",
+    "rank": 1,
+    "justification": "This option could be plausible if there has been a lack of communication or awareness about the new licensing process. The context sentences do not provide specific information about how the new process was communicated to potential license applicants. However, the context sentence 'The Minerals Commission of Ghana is, however considering a suspension of the issuance of new licenses for small-scale mining to spark an overhaul of the country’s mining sector and deal with the illegal mining menace' suggests that the government has been considering changes to the licensing process, which could potentially cause confusion or uncertainty among potential applicants."
+  },
+  {
+    "initial_id": 3,
+    "choice": "Ghanaians regard the three-month period for acquiring a mining license as too lengthy.",
+    "rank": 4,
+    "justification": "This option seems less likely given the context sentences. Prior to the reform, it took three years to obtain a mining license, as indicated by the question. The new three-month process is significantly shorter. However, the context sentences do not provide any information to suggest that Ghanaians regard this new timeframe as too lengthy."
+  },
+  {
+    "initial_id": 4,
+    "choice": "Ghanaians who participate in illegal mining are not willing to risk taxation, while those who do not participate have no interest in legal mining.",
+    "rank": 3,
+    "justification": "This option could be plausible. The context sentences suggest that illegal mining is a significant issue in Ghana, and one potential reason for this could be a desire to avoid taxation. For instance, the context sentence 'Most of the licenses are issued to big companies out of Ghana and that is why everyone is turning to illegal mining' suggests that there may be financial incentives for engaging in illegal mining. However, the context sentences do not provide specific information about taxation or the attitudes of Ghanaians towards taxation in the mining sector."
+  },
+  {
+    "initial_id": 5,
+    "choice": "None of the previously mentioned scenarios are the case.",
+    "rank": 5,
+    "justification": "This option could be plausible if other factors not mentioned in the previous options are at play. The context sentences suggest a complex situation with multiple potential contributing factors, including issues with law enforcement, potential changes to the licensing process, and financial incentives for illegal mining. However, without more specific information, it is difficult to determine whether none of the previous scenarios are the case."
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "initial_id": 1,
+    "choice": "Due to the reduced waiting period, Ghanaians involved in illegal mining felt more at ease to apply for a license.",
+    "rank": 1,
+    "justification": "This choice suggests that the reduction in the waiting period for obtaining a mining license has made it more appealing for those involved in illegal mining to apply for a license. The justification for this is that the previous waiting period of three years might have been a deterrent for those involved in illegal mining to apply for a license. The long waiting period could have been seen as a risk, as they would have to cease their illegal activities for a long period of time while waiting for the license. However, with the waiting period reduced to three months, this risk is significantly reduced, making it more appealing for them to apply for a license. This could explain the tripling of the number of applications received by the government."
+  },
+  {
+    "initial_id": 2,
+    "choice": "It is now perceived as a fresh economic prospect by Ghanaians who had not been involved in mining before.",
+    "rank": 2,
+    "justification": "This choice suggests that the reduction in the waiting period for obtaining a mining license has made mining a more attractive economic prospect for Ghanaians who had not been involved in mining before. The justification for this is that the previous waiting period of three years might have been a deterrent for those not involved in mining to consider it as an economic prospect. The long waiting period could have been seen as a barrier to entry, as they would have to wait for a long time before they could start mining. However, with the waiting period reduced to three months, this barrier is significantly reduced, making mining a more attractive economic prospect. This could explain the tripling of the number of applications received by the government."
+  },
+  {
+    "initial_id": 3,
+    "choice": "The encouragement from friends and family has led Ghanaians to apply for mining licenses.",
+    "rank": 3,
+    "justification": "This choice suggests that the encouragement from friends and family has led Ghanaians to apply for mining licenses. The justification for this is that the reduction in the waiting period for obtaining a mining license might have led to more discussions about mining within social circles, leading to more encouragement from friends and family for Ghanaians to apply for a license. This increased encouragement, combined with the reduced waiting period, could have made mining a more attractive prospect, leading to an increase in the number of applications."
+  },
+  {
+    "initial_id": 4,
+    "choice": "None of the previously mentioned reasons.",
+    "rank": 4,
+    "justification": "This choice suggests that none of the previously mentioned reasons are responsible for the tripling of the number of mining license applications received by the government. The justification for this would be that there might be other factors not mentioned in the previous choices that are responsible for the increase. These could include factors such as changes in the economic environment, changes in government policies related to mining, or changes in the global demand for minerals."
+  }
+]

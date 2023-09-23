@@ -1,0 +1,32 @@
+[
+  {
+    "initial_id": 1,
+    "choice": "Ghanaians involved in illegal mining do not trust the government and would prefer to operate without a license",
+    "rank": 1,
+    "justification": "This option could be plausible given the historical context of mining in Ghana. The context sentences indicate that illegal mining has been a persistent issue in Ghana for over two decades, despite clear laws against it. This could suggest a lack of trust or confidence in the government's ability to manage the mining sector effectively. For instance, the context sentence 'Although Ghana’s laws are clear on illegal mining, the activity has been allowed to continue for more than two decades' suggests that illegal miners may not trust the government's commitment to enforcing its own laws. Additionally, the context sentence 'The Minerals Commission of Ghana is, however considering a suspension of the issuance of new licenses for small-scale mining to spark an overhaul of the country’s mining sector and deal with the illegal mining menace' indicates that the government's approach to dealing with illegal mining has been inconsistent, which could further erode trust."
+  },
+  {
+    "initial_id": 2,
+    "choice": "Ghanaians who would like a license are unaware of the new, expedited licensing process",
+    "rank": 2,
+    "justification": "This option could be plausible if there has been a lack of communication or awareness about the new licensing process. The context sentences do not provide specific information about how the new process was communicated to potential licensees. However, the context sentence 'We are reliably informed of plans by the government to amend the laws on small scale mining which allows only Ghanaians to acquire such license, to medium scale mining which will create an avenue for foreigners to also obtain such licenses' suggests that information about changes to mining laws and processes may not always be widely or reliably disseminated."
+  },
+  {
+    "initial_id": 3,
+    "choice": "Ghanaians think three months is too long to obtain a mining license",
+    "rank": 3,
+    "justification": "This option could be plausible if potential licensees perceive the three-month process as too lengthy or burdensome. The context sentences do not provide specific information about perceptions of the new licensing process. However, the context sentence 'Most of the licenses are issued to big companies out of Ghana and that is why everyone is turning to illegal mining' suggests that there may be perceptions of bias or unfairness in the licensing process, which could contribute to a belief that the process is too long or difficult."
+  },
+  {
+    "initial_id": 4,
+    "choice": "Ghanaians involved in illegal mining do not want to risk being taxed by authorities, while Ghanaians that are not involved in illegal mining are not interested in legal mining",
+    "rank": 4,
+    "justification": "This option could be plausible if potential licensees are deterred by the prospect of taxation or if there is a lack of interest in legal mining. The context sentence 'The amended mining law of Ghana has stipulated a minimum of 15 years and maximum of 25 years for illegal miners (galamseyers), President Nana Akufo-Addo has said' suggests that there are significant penalties for illegal mining, which could include taxation. Additionally, the context sentence 'In spite of the fact that Ghana’s laws are clear on illegal mining, the activity has been allowed to continue for more than two decades' suggests that there may be a lack of interest in legal mining, as illegal mining has persisted despite clear laws against it."
+  },
+  {
+    "initial_id": 5,
+    "choice": "None of the above",
+    "rank": 5,
+    "justification": "This option could be plausible if none of the other options accurately capture the reasons why the number of mining licenses granted has remained the same after the implementation of the new reform. The context sentences provide a range of potential factors that could influence the number of licenses granted, including perceptions of the licensing process, trust in the government, and attitudes towards illegal mining. However, without more specific information, it is difficult to determine which, if any, of these factors are most relevant."
+  }
+]

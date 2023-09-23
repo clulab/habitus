@@ -1,0 +1,32 @@
+[
+  {
+    "initial_id": 1,
+    "choice": "Those Ghanaians who are engaged in unauthorized mining activities have a lack of trust in the government and would rather work without a license.",
+    "rank": 1,
+    "justification": "This choice could be justified by the context that suggests a history of corruption and mistrust in the mining sector in Ghana. For instance, the context mentions 'the impunity of the mining sector - in which fraudulently acquired rights resulting from corruption (payments of bribes?' and 'the law makes it difficult to bring perpetrators to justice and, more crucially, because those in positions of authority sometimes participate in the malpractices.' This could lead to a lack of trust in the government and its reforms, making Ghanaians engaged in unauthorized mining activities prefer to work without a license."
+  },
+  {
+    "initial_id": 2,
+    "choice": "The new, expedited licensing process is not known to Ghanaians who are seeking a license.",
+    "rank": 2,
+    "justification": "This choice could be justified by the context that suggests that the government's communication and implementation of reforms may not be effective. For instance, the context mentions 'When a large number of Ghanaians are contemplating stopping small scale mining completely until the regulators and Ministry of Lands and Forestry are able to wrap their minds around the menace?' This suggests that there may be a disconnect between the government's intentions and the understanding of the public, which could mean that the new, expedited licensing process is not known to Ghanaians who are seeking a license."
+  },
+  {
+    "initial_id": 3,
+    "choice": "Three months is considered too lengthy by Ghanaians to acquire a mining license.",
+    "rank": 3,
+    "justification": "This choice could be justified by the context that suggests that the process of acquiring a mining license has traditionally been lengthy and difficult. For instance, the context mentions 'According to him, it is rather difficult for a Ghanaian to secure permits and licenses to operate mining firms, as opposed to foreigners, hence, forcing the Ghanaian youth to engage in illegal mining and its related activities.' This could mean that even a three-month process is considered too lengthy by Ghanaians to acquire a mining license."
+  },
+  {
+    "initial_id": 4,
+    "choice": "Ghanaians engaged in unlawful mining activities are unwilling to face taxation from authorities, whereas those not participating in illegal mining have no interest in the legal alternative.",
+    "rank": 4,
+    "justification": "This choice could be justified by the context that suggests that there may be financial incentives for Ghanaians to engage in unlawful mining activities. For instance, the context mentions 'The revival of these two mines, the expansion of output by some existing mines, and the reduction of the withholding tax rate on unprocessed gold by small-scale miners, which was introduced in 2015, from three percent (3%) to one and a half percent (1.5%), have contributed significantly to Ghana’s new position on the continent.' This could mean that Ghanaians engaged in unlawful mining activities are unwilling to face taxation from authorities, whereas those not participating in illegal mining have no interest in the legal alternative."
+  },
+  {
+    "initial_id": 5,
+    "choice": "None of the previously mentioned reasons apply.",
+    "rank": 5,
+    "justification": "This choice could be justified by the context that suggests that there may be other reasons why the number of mining licenses granted has remained the same. For instance, the context mentions 'Given that the small scale mining operation is capital intensive, the Ghanaians who do not have the upfront capital, albeit manage to secure the mining concessions, end up passing such licences to their Chinese counterparts.' This could mean that the issue is not with the licensing process or taxation, but with the capital-intensive nature of mining operations."
+  }
+]
