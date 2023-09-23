@@ -213,8 +213,6 @@ def rank_choices(introduction: str, context: str, choices: list[str]) -> (list[t
       Provide long and thorough justifications for each of the choices independently, without referring to the other choices, while citing the context using quotes.:
 	```{choices_str}```"""
 
-	print("X " + context)
-
 	chat_gpt.question = last_question
 	last_answer = chat_gpt.calL_gpt()
 
@@ -343,7 +341,7 @@ if __name__ == "__main__":
 
 	matcher = Matcher(sentence_transformer, input_vectors, data_frame, threshold, threshold2)
 
-	scenario_chosen = scenario5
+	scenario_chosen = scenario_official_1a
 
 	scenario_match = matcher.match_scenario(scenario_chosen, print_sentences, filter_first, tokens_allowed, False, False)
 
@@ -358,6 +356,9 @@ if __name__ == "__main__":
 #					 "the context given above:\n\n" + choices_str
 
 	#print(scenario_match)
+
+	print("CONTEXT SENTENCES:")
+	print(scenario_match)
 
 	paraphrases = []
 
