@@ -12,6 +12,8 @@ from chat import Chat
 
 import time
 
+import json
+
 
 def get_in_and_out() -> str: # Tuple[str, str]:
 	argument_parser = ArgumentParser()
@@ -165,9 +167,9 @@ scenario6 = Scenario(
 
 number_of_paraphrases = 10
 
-def paraphrase(sentence: str) -> list[str]:
+def paraphrase(sentence: str, context: str) -> list[str]:
 
-	text = "Paraphrase the following sentence " + sentence + " in " + str(number_of_paraphrases-1) + " unique ways. The answer must only have the paraphrases one per row."
+	text = "Paraphrase the following sentence ```" + sentence + "``` in " + str(number_of_paraphrases-1) + " unique ways based on the context ```" + context + "```. Only change word ordering, do not change the meaning at all. The answer must only have the paraphrases one per row."
 
 	chat_gpt.question = text
 	result = chat_gpt.calL_gpt()
@@ -199,44 +201,65 @@ def paraphrase(sentence: str) -> list[str]:
 
 def rank_choices(introduction: str, context: str, choices: list[str]) -> (list[tuple], list[str]):
 
-	question = "You are given the following question " + introduction + " and context about the situation through the " \
-			   "following sentences: " + context + " \n\n " + " Use those sentences to rank the following from best to " \
-			   "worst while ONLY using the information given above and be careful to cite each information used" \
-															  ": \n" + "\n".join(choices)
+	#question = "You are given the following question " + introduction + " and context about the situation through the " \
+	#		   "following sentences: " + context + " \n\n " + " Use those sentences to rank the following from best to " \
+	#		   "worst while ONLY using the information given above and be careful to cite each information used" \
+	#														  ": \n" + "\n".join(choices)
+
+	choices_str = "\n".join(choices)
+
+	last_question \
+= f"""Read the following question delimited with backticks ``` {introduction} ```. Use the following context sentences delimited with backticks as background knowledge ``` {context} ```.
+      Provide long and thorough justifications for each of the choices independently, without referring to the other choices, while citing the context using quotes.:
+	```{choices_str}```"""
+
+	print("X " + context)
+
+	chat_gpt.question = last_question
+	last_answer = chat_gpt.calL_gpt()
+
+	#print("@@@ " + str(last_answer))
+
+	question \
+= f"""Rank each choice and copy the justification as JSON format with the fields: (initial_id, choice, rank, justification)"""
+
+	#print("U " + question)
 
 	chat_gpt.question = question
-	result = chat_gpt.calL_gpt()
+	result = chat_gpt.calL_gpt_double(last_answer, last_question)
 
-	ranks = []
-	current = 0
+	#print("!!! " + str(result))
 
-	for choice in choices:
-		index = result.find(choice)
-		ranks.append([index, current, current])
-		current += 1
+	#ranks = []
+	#current = 0
 
-	temp = sorted(ranks)
-	ranks = []
+	#for choice in choices:
+	#	index = result.find(choice)
+	#	ranks.append([index, current, current])
+	#	current += 1
 
-	for rank in temp:
-		ranks.append(rank)
+	#temp = sorted(ranks)
+	#ranks = []
 
-	outputs = ['' for _ in range(len(ranks))]
+	#for rank in temp:
+	#	ranks.append(rank)
 
-	for i in range(1, len(ranks)+1):
-		first_split = result.split(str(i) + ".")
-		if len(first_split) >= 2:
-			first_split = first_split[1]
-		else:
-			first_split = first_split[0]
-		first_split = first_split.split(str(i+1) + '.')[0]
-		outputs[ranks[i-1][2]] = first_split
+	#outputs = ['' for _ in range(len(ranks))]
 
-	if len(outputs) != len(ranks):
-		print("ERR Parsing")
-		return rank_choices(introduction, context, choices)
+	#for i in range(1, len(ranks)+1):
+	#	first_split = result.split(str(i) + ".")
+	#	if len(first_split) >= 2:
+	#		first_split = first_split[1]
+	#	else:
+	#		first_split = first_split[0]
+	#	first_split = first_split.split(str(i+1) + '.')[0]
+	#	outputs[ranks[i-1][2]] = first_split
 
-	return ranks, outputs
+	#if len(outputs) != len(ranks):
+	#	print("ERR Parsing")
+	#	return rank_choices(introduction, context, choices)
+
+	return json.loads(result)
 
 def one_explanation(outputs: list[str]) -> str:
 
@@ -248,7 +271,7 @@ def one_explanation(outputs: list[str]) -> str:
 
 	return result
 
-def compute_ranking(paraphrases: list[str], introduction: str, context: str):
+def compute_ranking(paraphrases: list[str], introduction: str, context: str, gamma: float, scenario: Scenario):
 
 	final_ranks = [0] * len(paraphrases)
 
@@ -257,28 +280,32 @@ def compute_ranking(paraphrases: list[str], introduction: str, context: str):
 	for i in range(number_of_paraphrases):
 		print("STARTING " + str(i))
 		choices_chosen = [choice_list[i] for choice_list in paraphrases]
-		ranks, outputs = rank_choices(introduction, context, choices_chosen)
-		all_outputs.append(outputs)
-		for i in range(len(ranks)):
-			final_ranks[ranks[i][2]] += number_of_paraphrases - i - 1
+		json = rank_choices(introduction, context, choices_chosen)
+		all_outputs.append(json)
+		for item in json:
+			final_ranks[int(item["initial_id"])-1] += number_of_paraphrases - int(item["rank"])
 
 	print(final_ranks)
 
 	sum = 0
 
 	for rank in final_ranks:
-		sum += numpy.exp(rank)
+		sum += numpy.exp(rank*gamma)
 
-	probabilities = [numpy.exp(rank) / sum for rank in final_ranks]
+	probabilities = [(numpy.exp(rank*gamma)) / sum for rank in final_ranks]
 
 	print("The final probabilities for each choice are: " + str(probabilities))
 	print("The per-choice explanations using the context are: ")
 	print("")
 
-	for i in range(len(ranks)):
+	for i in range(len(scenario.choices)):
 		print("Choice: " + str(paraphrases[i][number_of_paraphrases-1]))
 		#print("Justification: " + str(justifications[i]))
-		print("Justification: " + str(all_outputs[number_of_paraphrases-1][i]))
+		correct_justification = ""
+		for item in json:
+			if int(item["initial_id"]) - 1 == i:
+				correct_justification = item["justification"]
+		print("Justification: " + str(correct_justification))
 		print("")
 
 if __name__ == "__main__":
@@ -295,6 +322,9 @@ if __name__ == "__main__":
 	# Use this if we first filter by introduction and then by choice
 	threshold1 = 0.3
 	threshold2 = 0.6
+
+	# Control softmax spiking
+	gamma = 0.2
 
 	tokens_allowed = 12000
 
@@ -313,11 +343,9 @@ if __name__ == "__main__":
 
 	matcher = Matcher(sentence_transformer, input_vectors, data_frame, threshold, threshold2)
 
-	scenario_chosen = scenario_official_4b
+	scenario_chosen = scenario5
 
 	scenario_match = matcher.match_scenario(scenario_chosen, print_sentences, filter_first, tokens_allowed, False, False)
-
-	print("CONTEXT: \n" + scenario_match)
 
 	choices_str = ""
 
@@ -334,7 +362,7 @@ if __name__ == "__main__":
 	paraphrases = []
 
 	for choice in scenario_chosen.choices:
-		result = paraphrase(choice)
+		result = paraphrase(choice, scenario_chosen.introduction)
 		paraphrases.append(result)
 		if len(result) != number_of_paraphrases:
 			print("ERROR we don't have " + str(number_of_paraphrases) + "paraphrases")
@@ -344,4 +372,4 @@ if __name__ == "__main__":
 	for paraphrase in paraphrases:
 		choices_chosen.append(paraphrase[0])
 
-	compute_ranking(paraphrases, scenario_chosen.introduction, scenario_match)
+	compute_ranking(paraphrases, scenario_chosen.introduction, scenario_match, gamma, scenario_chosen)
