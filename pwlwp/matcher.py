@@ -233,6 +233,8 @@ class Matcher():
 		for sentence in sentence_matches:
 			if sentence[0] < self.threshold:
 				break
+			if sentence[1] in final_matches:
+				continue
 			if current_total + len(sentence[1]) <= tokens_allowed and sentence[1] not in final_matches:
 				final_matches.append(sentence[1])
 				current_total += len(sentence[1])
