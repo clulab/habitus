@@ -293,12 +293,15 @@ def compute_ranking(paraphrases: list[str], introduction: str, context: str, gam
 	probabilities = [(numpy.exp(rank*gamma)) / sum for rank in final_ranks]
 
 	print("The final probabilities for each choice are: " + str(probabilities))
+
+	for i in range(len(probabilities)):
+		print("Probability for choice " + str(chr(ord('A') + i)) + " is " + str(round(probabilities[i]*100, 2)) + "%.")
+
 	print("The per-choice explanations using the context are: ")
 	print("")
 
 	for i in range(len(scenario.choices)):
-		print("Choice: " + str(paraphrases[i][number_of_paraphrases-1]))
-		#print("Justification: " + str(justifications[i]))
+		print("Choice " + str(chr(ord('A') + i)) + " (" + str(paraphrases[i][number_of_paraphrases-1]) + "):")
 		correct_justification = ""
 		for item in json:
 			if int(item["initial_id"]) - 1 == i:
@@ -307,6 +310,8 @@ def compute_ranking(paraphrases: list[str], introduction: str, context: str, gam
 		print("")
 
 if __name__ == "__main__":
+
+	print()
 
 	# True if we first filter by the introduction and then choose by the choice
 	filter_first = False
@@ -341,10 +346,10 @@ if __name__ == "__main__":
 
 	matcher = Matcher(sentence_transformer, input_vectors, data_frame, threshold, threshold2)
 
-	scenario_chosen = scenario_official_1b
+	scenario_chosen = scenario_official_4b
 
-	scenario_match = matcher.match_scenario(scenario_chosen, print_sentences, filter_first, tokens_allowed, False, False)
-	scenario_match = ""
+	scenario_match = matcher.match_scenario(scenario_chosen, print_sentences, filter_first, tokens_allowed, False, True)
+	#scenario_match = ""
 
 	choices_str = ""
 
@@ -357,9 +362,6 @@ if __name__ == "__main__":
 #					 "the context given above:\n\n" + choices_str
 
 	#print(scenario_match)
-
-	print("CONTEXT SENTENCES:")
-	print(scenario_match)
 
 	paraphrases = []
 
@@ -375,3 +377,11 @@ if __name__ == "__main__":
 		choices_chosen.append(paraphrase[0])
 
 	compute_ranking(paraphrases, scenario_chosen.introduction, scenario_match, gamma, scenario_chosen)
+
+
+	print("CONTEXT:")
+
+	print("")
+
+	print(scenario_match)
+
