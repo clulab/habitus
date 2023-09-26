@@ -40,7 +40,7 @@ scenario_official_1b = Scenario(
 		"Ghanaians involved in illegal mining do not trust the government and would prefer to operate without a license",
 		"Ghanaians who would like a license are unaware of the new, expedited licensing process",
 		"Ghanaians think three months is too long to obtain a mining license",
-		"Ghanaians involved in illegal mining do not want to risk being taxed by authorities, while Ghanaians that arenot involved in illegal mining are not interested in legal mining",
+		"Ghanaians involved in illegal mining do not want to risk being taxed by authorities, while Ghanaians that are not involved in illegal mining are not interested in legal mining",
 		"None of the above"
 	]
 )
@@ -89,7 +89,7 @@ scenario_official_4a = Scenario(
 )
 
 scenario_official_4b = Scenario(
-	"Imagine there has been a U.S.-led effort to promote the agricultural sector in southern Ghana. Much of thiseffort is tied to sustainability and climate change. The U.S. committed $10 million to this new effort in hopes of boosting Ghanaian agribusiness and prospective job opportunities. Local governments notice, however, that farming activities have remained unchanged. The most likely reason for this would have been because…",
+	"Imagine there has been a U.S.-led effort to promote the agricultural sector in southern Ghana. Much of this effort is tied to sustainability and climate change. The U.S. committed $10 million to this new effort in hopes of boosting Ghanaian agribusiness and prospective job opportunities. Local governments notice, however, that farming activities have remained unchanged. The most likely reason for this would have been because…",
 	[
 		"Those working in illegal mining are skeptical of U.S. investments",
 		"Those working in illegal mining think they’re already making a good livelihood",
@@ -358,7 +358,7 @@ if __name__ == "__main__":
 
 	#final_sentence = "You have to look carefully at the following sentences and then rank several choices based on which" \
 #					 "ones are most likely to be true. The sentences are: \n\n" + scenario_match + "\n\n Now rank the " \
-#					 "following choices based on their likelyhood while also giving intuition behind the choices from" \
+#					 "following choices based on their likelihood while also giving intuition behind the choices from" \
 #					 "the context given above:\n\n" + choices_str
 
 	#print(scenario_match)
