@@ -4,6 +4,7 @@ import net.ruippeixotog.scalascraper.browser.Browser
 import org.clulab.habitus.scraper.{DomainSpecific, Page}
 import org.clulab.habitus.scraper.corpora.{PageCorpus, SearchCorpus}
 import org.clulab.habitus.scraper.domains.Domain
+import org.clulab.utils.ProgressBar
 
 import scala.util.Try
 
@@ -66,8 +67,12 @@ class SearchCorpusDownloader(val corpus: SearchCorpus) {
   }
 
   def download(browser: Browser, baseDirName: String): Unit = {
-    corpus.items.foreach { search =>
+    val progressBar = ProgressBar("Downloader.download", corpus.items)
+
+    progressBar.foreach { search =>
       val page = search.page
+      progressBar.setExtraMessage(page.url.toString + " ")
+
       val downloader = getPageDownloader(page)
 
       // Avoid this error to make real download errors all the more obvious.

@@ -6,7 +6,7 @@ import org.clulab.habitus.scraper.domains.Domain
 import org.clulab.habitus.scraper.scrapers.Scraper
 import org.clulab.habitus.scraper.{Cleaner, Page}
 import org.clulab.habitus.scraper.scrapes.ArticleScrape
-import org.clulab.utils.FileUtils
+import org.clulab.utils.{FileUtils, ProgressBar}
 
 import scala.util.{Try, Using}
 
@@ -55,7 +55,11 @@ class CorpusArticleScraper(val corpus: PageCorpus) {
   }
 
   def scrape(browser: Browser, baseDirName: String): Unit = {
-    corpus.items.foreach { page =>
+    val progressBar = ProgressBar("CorpusArticleScraper.scrape", corpus.items)
+
+    progressBar.foreach { page =>
+      progressBar.setExtraMessage(page.url.toString)
+
       val scraper = getPageScraper(page)
       val scrapeTry = Try(scraper.scrapeTo(browser, page, baseDirName))
 

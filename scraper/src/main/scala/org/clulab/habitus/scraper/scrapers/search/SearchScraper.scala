@@ -7,7 +7,7 @@ import org.clulab.habitus.scraper.inquirers.{CorpusInquirer, PageInquirer}
 import org.clulab.habitus.scraper.{Cleaner, Page, Search}
 import org.clulab.habitus.scraper.scrapers.Scraper
 import org.clulab.habitus.scraper.scrapes.SearchScrape
-import org.clulab.utils.FileUtils
+import org.clulab.utils.{FileUtils, ProgressBar}
 
 import java.io.PrintWriter
 import scala.util.{Try, Using}
@@ -52,8 +52,12 @@ class CorpusSearchScraper(val corpus: SearchCorpus) {
     val corpusInquirer = new CorpusInquirer()
 
     Using.resource(FileUtils.printWriterFromFile(fileName)) { printWriter =>
-      corpus.items.foreach { search =>
+      val progressBar = ProgressBar("CorpusSearchScraper.scrape", corpus.items)
+
+      progressBar.foreach { search =>
         val page = search.page
+        progressBar.setExtraMessage(page.url.toString)
+
         val scraper = getPageScraper(page)
         val inquirer = corpusInquirer.getPageInquirer(page)
         val scrapeTry = Try(scraper.scrapeTo(browser, inquirer, search, baseDirName, printWriter))
