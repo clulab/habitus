@@ -24,7 +24,8 @@ class GetPageDownloader(domain: Domain) extends PageDownloader(domain) {
     val htmlLocationName = s"$subDirName/$htmlFileName"
 
     if (!new File(htmlLocationName).exists) {
-      println(s"Downloading ${page.url.toString} to $htmlLocationName")
+      // Use ProgressBar instead.
+      // println(s"Downloading ${page.url.toString} to $htmlLocationName")
 
       val doc = Try(browser.get(page.url.toString)).getOrElse {
         // Before retry, wait for 3 seconds, which seems to help.

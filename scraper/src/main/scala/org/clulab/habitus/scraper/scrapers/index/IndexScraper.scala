@@ -6,7 +6,7 @@ import org.clulab.habitus.scraper.domains.Domain
 import org.clulab.habitus.scraper.{Cleaner, Page}
 import org.clulab.habitus.scraper.scrapers.Scraper
 import org.clulab.habitus.scraper.scrapes.IndexScrape
-import org.clulab.utils.FileUtils
+import org.clulab.utils.{FileUtils, ProgressBar}
 
 import java.io.PrintWriter
 import java.nio.charset.StandardCharsets
@@ -66,7 +66,11 @@ class CorpusIndexScraper(val corpus: PageCorpus) {
 
   def scrape(browser: Browser, baseDirName: String, fileName: String): Unit = {
     Using.resource(FileUtils.printWriterFromFile(fileName)) { printWriter =>
-      corpus.items.foreach { page =>
+      val progressBar = ProgressBar("CorpusIndexScraper.scrape", corpus.items)
+
+      progressBar.foreach { page =>
+        progressBar.setExtraMessage(page.url.toString)
+
         val scraper = getPageScraper(page)
         val scrapeTry = Try(scraper.scrapeTo(browser, page, baseDirName, printWriter))
 
