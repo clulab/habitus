@@ -1,5 +1,6 @@
 from pandas import DataFrame
 from pipeline import InnerStage
+from tqdm import tqdm
 
 import itertools
 import pandas
@@ -59,14 +60,14 @@ class TpiLocationStage(InnerStage):
                 self.add_location(locations, entity)
         return sorted(list(set(locations)))
 
-    def get_column_locations(self, strings: list[str]) -> list[str]:
-        locations = [self.get_cell_locations(string) for string in strings]
+    def get_column_locations(self, strings: list[str], desc: str) -> list[str]:
+        locations = [self.get_cell_locations(string) for string in tqdm(strings, desc=f"Finding {desc} locations")]
         joined_locations = [", ".join(location) for location in locations]
         return joined_locations
 
     def run(self, data_frame: DataFrame) -> DataFrame:
-        sentence_locations = self.get_column_locations(data_frame["sentence"])
-        context_locations = self.get_column_locations(data_frame["context"])
+        sentence_locations = self.get_column_locations(data_frame["sentence"], "sentence")
+        context_locations = self.get_column_locations(data_frame["context"], "context")
         data_frame["sent_locs"] = sentence_locations
         data_frame["context_locs"] = context_locations   
         data_frame.drop(columns=["context"], inplace=True)

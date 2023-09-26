@@ -1,5 +1,6 @@
 from pandas import DataFrame
 from pipeline import InnerStage
+from tqdm import tqdm
 
 class TpiResolutionStage(InnerStage):
     def __init__(self) -> None:
@@ -38,6 +39,6 @@ class TpiResolutionStage(InnerStage):
     def run(self, data_frame: DataFrame) -> DataFrame:
         sentences = data_frame["sentence"]
         prev_sentences = data_frame["prevSentence"]
-        resolutions = [self.resolve_sentence(sentence, index, sentences, prev_sentences) for index, sentence in enumerate(sentences)]
+        resolutions = [self.resolve_sentence(sentence, index, sentences, prev_sentences) for index, sentence in enumerate(tqdm(sentences, desc="Resolving sentences"))]
         data_frame["sentence_resolved"] = resolutions
         return data_frame
