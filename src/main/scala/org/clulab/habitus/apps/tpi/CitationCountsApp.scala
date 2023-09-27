@@ -76,25 +76,15 @@ class MessyText(val messy: String) {
 object CitationCounts extends App {
   val inputDirName = args.lift(0).getOrElse("../corpora/chatgpt/report")
 
-  def betweenOrAfter(text: String, startText: String, endText: String, altStartText: String): String = {
-    val (start, end) =  {
-      if (text.indexOf(startText) >= 0) {
-        val start = text.indexOf(startText) + startText.length
-        val end = text.indexOf(endText)
+  def after(text: String, startText: String): String = {
+    val startish = text.indexOf(startText)
 
-        (start, end)
-      }
-      else if (text.indexOf(altStartText) >= 0) {
-        val start = text.indexOf(altStartText) + altStartText.length
-        val end = text.length
+    if (startish < 0) ""
+    else {
+      val start = startish + startText.length
 
-        (start, end)
-      }
-      else
-        (-1, -1)
+      text.substring(start).trim
     }
-
-    text.slice(start, end).trim
   }
 
   def toLines(text: String): Array[String] = {
@@ -111,7 +101,7 @@ object CitationCounts extends App {
   def process(file: File): Unit = {
     val text = FileUtils.getTextFromFile(file)
     val citations = {
-      val context = betweenOrAfter(text, "CONTEXT SENTENCES:", "ANSWER:", "CONTEXT:")
+      val context = after(text, "CONTEXT:")
       val citations = toLines(context).map(new MessyText(_)).filterNot(_.isEmpty)
       val distinct = citations.distinct
 
