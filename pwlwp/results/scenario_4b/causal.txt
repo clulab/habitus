@@ -1,0 +1,122 @@
+{'Those working in illegal mining are skeptical of U.S. investments': 4, 'Those working in illegal mining think they’re already making a good livelihood': 1, 'Local authorities are diverting the U.S. investment away from agribusiness': 14, 'The investment has attracted migrants from other regions who are not interested in farming but hope to find other economic opportunities': 11, 'None of the above': 20}
+The final probabilities for each choice are: [0.026648476133333408, 0.01462499378614732, 0.19690708510021512, 0.10806489953235474, 0.6537545454479494]
+Probability for choice A is 2.66%.
+Probability for choice B is 1.46%.
+Probability for choice C is 19.69%.
+Probability for choice D is 10.81%.
+Probability for choice E is 65.38%.
+The per-choice explanations using the context are: 
+Choice A (Those working in illegal mining are skeptical of U.S. investments):
+Justification: This choice could be plausible given the context. The context does not directly mention illegal mining, but it does discuss the challenges faced by the agricultural sector in Ghana, including lack of basic infrastructure, lack of access to markets, and climate change. These challenges could potentially make illegal mining a more attractive livelihood for some individuals, who might therefore be skeptical of U.S. investments in agriculture. However, without direct evidence of illegal mining activities or skepticism towards U.S. investments in the context, this justification remains speculative.
+
+Choice B (Those working in illegal mining think they’re already making a good livelihood):
+Justification: This choice could be plausible given the context. The context does not directly mention illegal mining, but it does discuss the challenges faced by the agricultural sector in Ghana, including lack of basic infrastructure, lack of access to markets, and climate change. These challenges could potentially make illegal mining a more attractive livelihood for some individuals. For instance, the context mentions that 'Ghana's agricultural productivity is significantly hampered as a result, exacerbating the challenges of food production and economic stability.' This could suggest that some individuals might turn to illegal mining as a more stable source of income. However, without direct evidence of illegal mining activities in the context, this justification remains speculative.
+
+Choice C (Local authorities are diverting the U.S. investment away from agribusiness):
+Justification: This choice could be plausible given the context. The context mentions that the U.S. has committed $10 million to promote the agricultural sector in southern Ghana, but farming activities have remained unchanged. This could suggest that the funds are not being used as intended. The context also mentions that 'there are many challenges to agriculture, such as climate change, lack of access to input and output markets, lack of basic infrastructure in rural areas, lack of extension services, and the lack of research and development facilities.' This could suggest that local authorities are not investing in these necessary areas, potentially diverting the funds elsewhere. However, without direct evidence of fund mismanagement in the context, this justification remains speculative.
+
+Choice D (The investment has attracted migrants from other regions who are not interested in farming but hope to find other economic opportunities):
+Justification: This choice could be plausible given the context. The context mentions that the U.S. has committed $10 million to promote the agricultural sector in southern Ghana, which could potentially attract migrants from other regions. However, if these migrants are not interested in farming, this could explain why farming activities have remained unchanged despite the investment. The context also mentions that 'urbanisation efforts in the country have also led to more non-farm jobs, and this has reduced Ghana’s agricultural competitiveness by increasing the need for imported foods.' This could suggest that migrants are more interested in non-farm jobs, potentially undermining the U.S. investment in agribusiness. However, without direct evidence of migration patterns in the context, this justification remains speculative.
+
+Choice E (None of the above):
+Justification: This choice could be plausible given the context. The context mentions a variety of challenges facing the agricultural sector in Ghana, including climate change, lack of access to markets, lack of basic infrastructure, and lack of extension services. These challenges could explain why farming activities have remained unchanged despite the U.S. investment. The context also mentions that 'the challenge is that Ghana is faced with a bitter reality – the decline in agricultural productivity continues to threaten the country’s economic development.' This suggests that the issues facing the agricultural sector are complex and multifaceted, and may not be fully addressed by the U.S. investment.
+
+CONTEXT:
+
+Even though the government of Ghana new initiative—Planting for Food and Jobs seeks to contribute to the modernization of the agriculture sector, thereby leading to structural transformation of national economy through food security, employment opportunities, and reduced poverty, there are many challenges to agriculture, such as climate change, lack of access to input and output markets, lack of basic infrastructure in rural areas, lack of extension services, and the lack of research and development facilities.
+
+Many factors contribute to the dwindling benefits of agriculture in Ghana, and amongst them are price volatility of agriculture products and farmers’ income, inadequate incentives to farmers, use of outmoded agricultural practices, market availability and many more.
+
+Ghana needs to contrite for the negative attitude we’ve exhibited on the agriculture sector and reinvigorate the sector to how our first president started it and envisaged it to be decades after and to annihilate being careless and the too much subsistence form of farming and encourage middle scale and large scale farming that would contribute immensely to total yield of agriculture produce to provide more food, employment and help reduce importation.
+
+The money, according to the USAID and Feed the Future Ghana, is to enable agricultural enterprises scale up production in areas such as seed acquisition, fertiliser procurement and processing, among others.
+
+The statement pointed out that a Climate Change –Responsive Planning and Budgeting by the NDA with strategic actions to promote climate-smart agriculture, Grass-for Charcoal technology, economic tree planting and growing, end bush burning, improve the quality of irrigational infrastructure dubbed, One Village, One Dam, increase investment on ground water resource management and promotion of farmer-managed natural regeneration (FMNR) practices will not only significantly contribute to the achievements of Ghana’s Nationally Determined Contribution (Ghana-NDCs) policy actions of
+
+This is because peasant farmers had become the focal point for agricultural policy advocacy in Ghana and there was the need for them to constantly undertake activities and innovations that would help increase crop yield and productivity to ensure food security in order to remain relevant in the agricultural transformation agenda.
+
+It added that urbanisation efforts in the country have also led to more non-farm jobs, and this has reduced Ghana’s agricultural competitiveness by increasing the need for imported foods.
+
+“The programme of Planting for Food and Jobs has led to the revival of Ghanaian agriculture, bringing in its wake a bumper-harvest in 2018 and exports of significant quantities of food crops to our neighbours.
+
+The challenge is that Ghana is faced with a bitter reality – the decline in agricultural productivity continues to threaten the country’s economic development.
+
+“The cost is very high, which has forced him to reduce the acres he is planting from 300 to 80, and the effects of this are that there could be famine in Ghana next year because the planting for food and jobs has failed,” he added.
+
+"We're grateful to EcoCare Ghana and the European Union for what they're doing; they have assisted us in growing more seedlings on our farmlands to combat climate change, trained us on new farming methods and supported us with alternative livelihood skills to take us away from poverty”.
+
+“The cost is very high, which has forced him to reduce the acres he is planting from 300 to 80, and the effects of this are that there could be famine in Ghana next year because the Planting for Food and Jobs has failed.
+
+According to Okyenhene, it is time Ghana revert to farming practices that are less injurious to the environment to help protect and conserve the ecosystem and promote quality environmental health.
+
+The Planting for Food and Job initiative was introduced by government to help address the declining growth of Ghana’s agricultural sector.
+
+“The additional financing will also help the government achieve its objectives under the Planting for Food and Jobs campaign by supporting commercial seed production, and this is in line with Ghana’s agricultural commercialisation and modernisation agenda,” said World Bank Director for Ghana, Henry K.G.
+
+This tends to make farming unattractive, and also inhibits efforts at ensuring food security while perpetuating poverty amongst a significant number of Ghanaian farmers.
+
+The Agric Minister further added that the Planting for Food and Job policy despite its challenges has enabled Ghana’s agriculture industry to be ahead of all the others in the ECOWAS region.
+
+Mrs Martha Kwayie Manu, the District Chief Executive said Ghana’s agriculture has shifted from small scale and primary production to farming-related commercial activities because the sector had created jobs, market expansion, and competition of goods and services.
+
+The effect of this is the loss of farm produce at the farm level, often resulting in loss of investment in the agricultural activities in Ghana.
+
+Speaking at the launch of the Agricbusiness Innovation and Technology Summit, the minister indicated that the essence of Planting for Food and Jobs is to increase agricultural productivity of Ghanaian farmers, which is at the heart of government’s policy.
+
+According to the report, the challenge is that Ghana is faced with a bitter reality – that a decline in agricultural productivity continues to threaten the country’s economic development.
+
+It said that would create more jobs, increase crop productivity and contribute to achieving the vision of “Ghana beyond aid”.
+
+As Ghana aims to boost agricultural productivity to increase output and incomes, the need to deploy modern seeds, greenhouse and irrigation technologies is critical, as this will result in more efficient agriculture and help transform the entire sector.
+
+This, he said, would help the government to reduce the cost of agricultural production in Ghana.
+
+Many Ghanaian farmers are reducing the size of their farms, or giving up farming altogether because they don’t believe they can get enough yield without the inorganic fertilizer which they cannot afford.
+
+Despite being an agric-based economy, Ghana’s performance in food production over the years has not been encouraging due to various factors, including poor land management, high cost of agric inputs, obsolete farming methods, lack of funds and investment, poor road networks and marketing, which lead to high post-harvest losses.
+
+In his view, there is a deliberate attempt to reduce agriculture output in Ghana due to the low investments in the sector.
+
+“The objective of the programme is to contribute to sustainable poverty reduction in rural Ghana ensuring that agribusiness including smallholders increase their profitability and resilience to climate change.
+
+The study – conducted by the Institute of Climate and Environmental Governance (ICEG) and titled ‘Effects of environmental degradation on agricultural production, livelihoods, welfare and climate change in the northern region of Ghana’ – revealed that for the majority of farmers other sources of credit, rather than the banking sector, are the most preferred.
+
+According to him, “today, through our flagship programme for the revival of Ghanaian agriculture, dubbed “Planting for Food and Jobs”, we have provided support to some 1 million smallholder farmers, who produced, last year, a bumper harvest.
+
+Looking ahead to the next 25 years, Mr Verghese added: “We will continue to live our ambition to re-imagine global agriculture and food systems by helping farmers to improve yields and quality for greater income; producing nutritionally sound low-cost foods for communities, and collaborating with government and civil society to re-generate Ghana’s landscapes.
+
+‘Its undeniable fact that every nation requires clear sustainable national policy which drives its sustainable development programs and it’s in this vain that we employ the government to look at national policy on agribusiness in Ghana.
+
+According to him, the situation occurs because Ghana is exposed externally due to the mono crop economy of the country, adding that administrative lapses also contribute to the problem.
+
+One thing we could take from here is that the programs that have been successful in Burkina Faso for instance have not been successful in Ghana so obviously there is something that we have not been doing right because for the same crop we have two different results.
+
+He noted that the strategic objective of transforming Ghana's agriculture and attaining sustainable food security has been difficult due to challenges related to financing, floods, drought, pest and disease, climate change variabilities, and post-harvest losses.
+
+Looking ahead to the next 25 years, Mr Verghese added: “We will continue to live our ambition to re-imagine global agriculture and food systems by helping farmers to improve yields and quality for greater income; producing nutritionally sound low cost foods for communities; and collaborating with government and civil society to re-generate Ghana’s landscapes.
+
+Their investment, he added, resulted in great crop yield that in turn reflected in the livelihoods of the Ghanaian farming population.
+
+Given the current economic crisis in Ghana, which is affecting the lack of fertilizer and seed inputs for farmers, strengthening the seed sector and increasing the use of improved seeds is expected to boost crop yields, and transform the food system that feeds the country, a statement from The Alliance for the Green Revolution in Africa (AGRA), which is spearheading the initiative said.
+
+“Ghana’s economy is led by the agricultural sector.
+
+"We now have evidence from different real farm settings that, if implemented well, organic agriculture can considerably boost productivity and farm incomes and thus contribute substantially to Ghana's agriculture transformation agenda," he said.
+
+“We have no doubt that given the requisite attention and support, the hardworking farmers in Ghana can and will be able to produce to meet local demand, industry and for export,” it said.
+
+This has reduced Ghana’s agricultural competitiveness by increasing the need for imported foods.
+
+Mr Yaw Frimpong Addo, the Deputy Minister of Food and Agriculture said the government’s attempt to make agriculture the driver of Ghana’s economy was being hampered by low farm productivity, lack of access to quality agro-input and the low adoption of agronomic practices due to limited access to extension services, among others.
+
+According to them, local farmers have produced enough to meet the demand for Ghana.
+
+Speaking on the theme ‘Climate change and its impact on sustainable agriculture and resilient agri-food systems in Ghana’, a senior law lecturer at the Ghana Institute of Management and Public Administration (GIMPA) Law School, John Darko, noted that though advanced countries have contributed to the menace of climate change and its impact on the environment and food production, government is partly to blame for its clear lack of commitment in implementing environmental policies to mitigate the crisis.
+
+Nature has blessed us with uncountable and enviable resources which harnessed wisely could have raised Ghana to be the beacon of the continent and the world and use it to finance effective education, healthcare, development and redistribution.
+
+How can the Ghana government be promoting regreening of the country but deliberately devastating our natural vegetation with rich biodiversity via galamsey operations in the face of global climate change?
+
+Ghana's agricultural productivity is significantly hampered as a result, exacerbating the challenges of food production and economic stability.
+
+The havoc caused has exposed the Ghana’s challenge in adapting to the changes – farmers are losing their investments in production, communities are helplessly being displaced and infrastructure, such as roads and buildings are collapsing.

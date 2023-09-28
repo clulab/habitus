@@ -1,0 +1,124 @@
+{'Those involved in illegal mining have begun working for the Chinese mining company': 20, 'Those involved in illegal mining have sought other opportunities outside of the region because of the Chinese mine opening': 11, 'Those involved in illegal mining have sought opportunities in small-scale agriculture because of the Chinese mine opening': 3, 'Those involved in illegal mining have sought other opportunities within the region unrelated to agriculture': 9, 'None of the above': 7}
+The final probabilities for each choice are: [0.7226744706267446, 0.1194572865407245, 0.024118010201662092, 0.080074613813271, 0.053675618817597866]
+Probability for choice A is 72.27%.
+Probability for choice B is 11.95%.
+Probability for choice C is 2.41%.
+Probability for choice D is 8.01%.
+Probability for choice E is 5.37%.
+The per-choice explanations using the context are: 
+Choice A (Those involved in illegal mining have begun working for the Chinese mining company):
+Justification: This choice is strongly supported by the context. The Chinese government has promoted the new large-scale mining effort as a source of employment for locals engaged in small-scale illegal mining. This suggests that those involved in illegal mining could have begun working for the Chinese mining company, leading to a decrease in illegal mining activities in the region. The context states that "the Chinese President assured President Akufo-Addo that his government will “co-operate with Ghana and tackle the problem,” and indicated his full acceptance of the enforcement of Ghanaian law in the area of illegal mining." This further supports the idea that those involved in illegal mining could have begun working for the Chinese mining company.
+
+Choice B (Those involved in illegal mining have sought other opportunities outside of the region because of the Chinese mine opening):
+Justification: This choice is plausible given the context. The Chinese government has promoted the new large-scale mining effort as a source of employment for locals engaged in small-scale illegal mining. This could have led to those involved in illegal mining seeking other opportunities outside of the region due to the opening of the Chinese mine. The context states that "the Chinese President assured President Akufo-Addo that his government will “co-operate with Ghana and tackle the problem,” and indicated his full acceptance of the enforcement of Ghanaian law in the area of illegal mining." This suggests that the Chinese government is committed to addressing the issue of illegal mining, which could have led to a decrease in such activities in the region.
+
+Choice C (Those involved in illegal mining have sought opportunities in small-scale agriculture because of the Chinese mine opening):
+Justification: This choice is not directly supported by the context provided. While it is possible that those involved in illegal mining could have sought opportunities in small-scale agriculture due to the opening of the Chinese mine, the context does not provide any information to suggest that this is the case. The context focuses on the issue of illegal mining and the efforts of the Chinese and Ghanaian governments to address this issue, but it does not mention anything about small-scale agriculture.
+
+Choice D (Those involved in illegal mining have sought other opportunities within the region unrelated to agriculture):
+Justification: This choice is plausible given the context. The Chinese government has promoted the new large-scale mining effort as a source of employment for locals engaged in small-scale illegal mining. This could have led to those involved in illegal mining seeking other opportunities within the region unrelated to agriculture due to the opening of the Chinese mine. The context states that "the Chinese President assured President Akufo-Addo that his government will “co-operate with Ghana and tackle the problem,” and indicated his full acceptance of the enforcement of Ghanaian law in the area of illegal mining." This suggests that the Chinese government is committed to addressing the issue of illegal mining, which could have led to a decrease in such activities in the region.
+
+Choice E (None of the above):
+Justification: This choice is not supported by the context provided. The context suggests that the decrease in illegal mining activities in Brong Ahafo could be due to the opening of the Chinese mine and the efforts of the Chinese and Ghanaian governments to address the issue of illegal mining. Therefore, it is likely that those involved in illegal mining have sought other opportunities either within or outside of the region due to the opening of the Chinese mine.
+
+CONTEXT:
+
+“As the Chinese ambassador in Ghana I should say I feel deeply sorry for this but you know illegal mining in Ghana is deep rooted even before Chinese nationals got involved in it.
+
+“We hope that the Ghanaian government will pay due attention to this situation, take the necessary action to stop such things from happening again and guide the media to give an objective coverage on the illegal mining issue so as to create a good environment for further development of our bilateral exchanges and cooperation.
+
+On the matter of illegal mining in Ghana, and the involvement of some Chinese nationals in the phenomenon, the Chinese President assured President Akufo-Addo that his government will “co-operate with Ghana and tackle the problem,” and indicated his full acceptance of the enforcement of Ghanaian law in the area of illegal mining.
+
+“According to him, China is happy with Ghana’s clamp- down on illegal mining, which has seen a significant number of Chinese nationals in Ghana arrested.
+
+He said while the China government acknowledged that there were some Chinese nationals engaged in illegal mining activities, they were undoubtedly being assisted by Ghanaians to perpetuate the crime.
+
+According to him, China is happy with Ghana’s clamp down on illegal mining, which has seen a significant number of Chinese nationals in Ghana arrested.
+
+“We highlight Ghana as the region's illegal mining hot spot in 2018 and expect illicit mining activity, locally known as ‘galamsey’, to continue rising in the country over the coming quarters.
+
+This is in contravention with the Ghana Chamber of Mines’ fear that the clampdown on illegal mining (galamsey) would affect Ghana’s gold export revenue.
+
+Despite the conventional knowledge in Ghana that the activities of some mining companies have severely impacted negatively on the environment, coupled with the notion that not enough is being done about this by sector regulators, this might not exactly be the situation in every circumstance.
+
+We hope that the Ghanaian government will pay due attention to this situation, take the necessary action to stop such things from happening again and guide the media to give an objective coverage on the illegal mining issue so as to create a good environment for further development of our bilateral exchanges and cooperation,” the mission said.
+
+I watched Newsfile on 9 October 2022 and could not believe what illegal mining has done and is doing to Ghana and Ghanaians.
+
+We hope that the Ghanaian government will pay due attention to this situation, take the necessary action to stop such things from happening again and guide the media to give an objective coverage on the illegal mining issue so as to create a good environment for further development of our bilateral exchanges and cooperation,” the letter said.
+
+The Chinese, with their “African Gold Invasion” policy, have heard of the booming small-scale turned medium scale mining in Ghana.
+
+We hope that the Ghanaian government will pay due attention to this situation, take the necessary action to stop such things from happening again and guide the media to give an objective coverage on the illegal mining issue so as to create a good environment for further development of our bilateral exchanges and cooperation.
+
+The results of the research also showed that 37% of Ghanaians are satisfied with government’s fight against illegal mining (galamsey), which is gradually restoring the purity of some of the water bodies lost to the illegal activities.
+
+The project manager also pointed out that three-fourths (74%) of Ghanaians say no citizen should be permitted to engage in illegal small-scale mining or “galamsey” for any reason while eight out of 10 Ghanaians (81%) approve of the government’s performance in clamping down on illegal small-scale mining.
+
+Sanctioning the moratorium on the operations of general small-scale mining activities in Ghana has brought untold hardship on us and most Ghanaians in the areas where the small-scale mining is based, it is practically our hope that, the vision that our President has will go a long way in vindicating the measures that are rolled out to propel the future of the small-scale mining industry”.
+
+At the onset of the new government’s anti-galamsey fight, the Chinese mission in Ghana expressed anger at the manner in which Ghana is dealing with the issue of illegal mining and criticized the media for targeting China in their reportage on the issue.
+
+The Chinese ambassador to Ghana, Mr Shi Ting Wang, insists Ghanaians must be blamed for the rise in illegal mining (galamsey) activities in Ghana.
+
+Despite the ban on illegal mining and the arrest of the four, Graphic Online understands some other Chinese nationals with the support of Ghanaians were busily mining in the area which belongs to the Volta Resources Company Limited.
+
+The Minister of Science, Environment, Technology and Innovation also said the lifting of the ban on small-scale mining “does not mean foreign miners who are hiding in Ghana or escaped into neighbouring countries can come and continue their illegal activities.
+
+There is already a sense of resentment for Chinese because of their involvement in illegal mining, especially in the Western Region.
+
+Illegal mining in the country has been a topical issue in the country for the past few years sparking major campaigns and outrage by Ghanaians especially over the negative impact on the activities on water bodies and lands.
+
+so, we have no quarrel with Chinese presence in Ghana but we do have a quarrel with those who get involved in this illegal mining and as far as it is concerned, I don’t intend to change my mind, no curve, no bend; I’m not changing my mind about this fight against galamsey”.
+
+Nana Asamoah Marfo, Aduanahene of Mampong, on his part, remarked that illegal mining had destroyed economic lives and activities in various communities across the country, and Mampong citizens would, therefore, not wait for a similar thing to happen to their communities.
+
+In his welcome address, Deputy Brong Ahafo Regional Minister, Evans Opoku Bobbie said the mining industry has been significant and important to the socio-economic development of the country as the largest revenue contributor through the payment of mineral royalties and taxes but observed the negative effects of illegal mining was a source of worry for Ghanaians and called for concerted efforts to address it.
+
+“They were the ones that provided the mining equipment, most of the Ghanaians left behind can’t continue their operations,” said one of the local residents, but many Ghanaians concerned about the health and environmental hazards lauded the government’s efforts to curb illegal mining.
+
+“We think it is very important that any operation against illegal mining should be carried out in line with Ghanaian laws and international recognized norms, the mass arrest and media hype should be minimized, the cases should be dealt with on individual base and the legitimate rights of the miners should be respected,” it said.
+
+Jubilee House insists: “The President’s commitment to fighting illegal mining is unassailable, and the Office of the President welcomes any information on illegal mining activities which provides a credible basis for investigations to be conducted by the Criminal Investigations Department of the Ghana Police Service.
+
+The Minister for Environment, Science and Technology, Professor Kwabena Frimpong-Boateng, has stressed the importance of ending illegal mining in Ghana.
+
+Ghana is fast becoming like how El-Salvador was before the ban on mining, but even though government is doing all it can to bring a complete halt to all such methods of mining, not only society, but some members of state institution like the Ghana Immigration Service and also some traditional leaders, do not support this.
+
+There are fears that Ghana’s renewed efforts to fight the menace of illegal mining (galamsey) might fail as there is the possibility of these ‘galamseyers’ overcoming the combined efforts of government and the citizenry.
+
+‘We shouldn’t think that mining is the only big thing in Ghana and even talking about the embargo, I think it’s a good thing that the government is doing so that at least we can reclaim some of the lands we have lost to unacceptable mining practices in the country,’ he added.
+
+Many Ghanaians who have reacted to this story claim that if it is true, then it undermines the commitment of the president to fighting illegal mining.
+
+Sharing his thoughts on the challenges with eradicating illegal mining (Galamsey) in Ghana, the Chairman said that although the government has shown some commitment in the fight against the menace, enough has not been done to effectively deal with the problem.
+
+Rejection of illegal small-scale mining is strongest in Central (92%), Brong Ahafo (87%), and Ashanti (79%) regions, as is approval for the government’s performance (96%, 93%, and 90%, respectively).
+
+The Chinese Ambassador to Ghana, Shi Ting Wang has said Chinese nationals who engage in illegal mining in Ghana popularly called galamsey do so with support and help of Ghanaians.
+
+Illegal mining activities are increasing in Ghana, despite moves by a Presidential taskforce to put down the unlawful trade, the Wassa Association of Communities Affected by Mining (WACAM), a non-governmental organization, has said.
+
+Nana Ansah Kwao IV, Chief of Akwamu Adumasa, has attributed the unending illegal mining—’galamsey’—activity to the continuous growth in the population size of the country.
+
+According to him, the government of Ghana has not banned small scale mining as many thought however there is a ban on illegal mining.
+
+Speaking in an interview with Bloomberg, Mr Boafo said these illegal mining activities also known as 'galamsey' are likely to worsen the outlook for Ghana’s cocoa harvest which is about 850,000 tons this year.
+
+However, the way small-scale mining sector is being managed in Ghana, it does not look favourable.
+
+Chairman Wontumi, however, indicated that the President hasn’t failed in his ‘galamsey’ fight but the Ghanaian populace must appreciate that the illegal mining has been with us since the Portuguese came to Ghana so it can’t be put to a stop easily.
+
+“we understand and realises the importance of the small scale mining sector to the economy of Ghana so, we do not have problem to that if government wants to allow the comeback of small scale miners into operation.
+
+Chinese involvement in illegal mining has become rampant over the last decade with some blaming them for the proliferation of heavy machinery in illegal small-scale mining and the escalation of pollution in major water bodies.
+
+The government must increase its stake in the mining industry and forcefully renegotiate existing and future contracts for the benefit of the country, the Ghana Mine Workers’ Union (GWMU) has said.
+
+The company says, “It is crucial that Government works with the company to resolve the current illegal occupation of the site by the illegal miners which they believe not only poses a direct threat to the safety of employees, their families and other community members, but also threatens the viability of Obuasi, and jeopardizes its long-term contribution to Ghana’s economy.
+
+Even though sanctioning the moratorium on the operations of general small scale mining activities in Ghana has brought untold hardship on us and most Ghanaians in the areas where the small scale mining are based, it is practically our hope that, the vision that our President has will go a long way in vindicating the measures that is rolled out to propel the future of the small scale mining industry.
+
+“We need to bridge the trust gap between government and the mining industry, which I think is not peculiar to Ghana alone.
+
+Due to the bad effects of illegal mining, many people and almost all Ghanaians have expressed disgust over the illegal mining activities and thrown their full support behind the President to take all necessary but stringent measures to remove illegal miners.

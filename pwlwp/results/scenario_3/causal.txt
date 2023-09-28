@@ -1,0 +1,160 @@
+{'Those involved in illegal mining would listen to their friends and stop': 5, 'Those involved in illegal mining would continue in secret': 18, 'Those involved in illegal mining would not care about the opinions of their close friends or family': 10, 'Those involved in illegal mining would relocate to a different region, where they would continue mining': 15, 'None of the above': 2}
+The final probabilities for each choice are: [0.039809095326536974, 0.5359792308869039, 0.10821234043351936, 0.2941516386154597, 0.021847694737579818]
+Probability for choice A is 3.98%.
+Probability for choice B is 53.6%.
+Probability for choice C is 10.82%.
+Probability for choice D is 29.42%.
+Probability for choice E is 2.18%.
+The per-choice explanations using the context are: 
+Choice A (Those involved in illegal mining would listen to their friends and stop):
+Justification: This choice is not directly supported by the context sentences. The context does not provide specific information about the personal relationships or motivations of those involved in illegal mining. However, given the persistence of illegal mining activities despite their negative impacts, it seems unlikely that those involved would easily be persuaded to stop by their friends. For instance, one sentence states, "Illegal mining is a primary source of livelihood for many people in the mining communities." This suggests that economic necessity may override personal relationships in the decision to engage in illegal mining.
+
+Choice B (Those involved in illegal mining would continue in secret):
+Justification: This choice is plausible given the context. The context sentences indicate that illegal mining has been a persistent issue despite its negative impacts on the environment and communities. For instance, one sentence states, "Despite a government ban on illegal mining, illegal miners have invaded forest reserves, destroyed cocoa farms, and polluted many water bodies, a development that has sparked public outrage." This suggests that illegal miners are willing to continue their activities in secret, even in the face of government bans and public outrage. Furthermore, another sentence mentions that "During the period that the ban on small scale mining was in force, more illegal miners, including Chinese gangs invaded our forest reserves with the help of government officials and caused unprecedented destruction to our forests, water bodies and environment." This further supports the idea that illegal miners may continue their activities in secret, even when faced with legal and societal pressures.
+
+Choice C (Those involved in illegal mining would not care about the opinions of their close friends or family):
+Justification: This choice is plausible but not directly supported by the context sentences. The context does not provide specific information about the personal relationships or motivations of those involved in illegal mining. However, given the persistence of illegal mining activities despite their negative impacts, it can be inferred that those involved may prioritize their economic interests over the opinions of their close friends or family. For instance, one sentence states, "Illegal mining is a primary source of livelihood for many people in the mining communities." This suggests that economic necessity may override personal relationships in the decision to engage in illegal mining.
+
+Choice D (Those involved in illegal mining would relocate to a different region, where they would continue mining):
+Justification: This choice is plausible given the context. The context sentences indicate that illegal mining activities have been widespread and have occurred in different regions. For instance, one sentence states, "The country has been battling with the upsurge in illegal mining across the country as the practice is depleting the land and destroying farm lands, forest reserves and water bodies." This suggests that illegal miners may be willing and able to relocate to different regions to continue their activities. Furthermore, another sentence mentions that "Today, illegal mining has become a major source of livelihood for persons living around legal mining communities, mainly due to the continuous rise of the price of the commodity on the world market." This further supports the idea that economic incentives may drive illegal miners to relocate and continue their activities in different regions.
+
+Choice E (None of the above):
+Justification: This choice is not supported by the context. The context sentences provide evidence that supports each of the other choices to varying degrees. Therefore, it is not accurate to say that none of the above choices would occur.
+
+CONTEXT:
+
+“Illegal mining has caused extensive damage to the environment, particularly water bodies, forest reserves, and farmland, and threatened food security with debilitating socio-economic consequences,” he said.
+
+Furthermore, the encroachment of illegal miners into agricultural lands has disrupted farming activities, destroying crops and undermining food security for the affected communities.
+
+The negative consequences of illegal mining, apart from lost revenue to the State, include adverse health effects, school dropout, poor school performance, pollution of our water bodies, less crop yields, decrease revenue from agricultural exports, lack of portable drinking water, needless deaths, among others.
+
+Activities of illegal miners in the region shot up in recent years and caused devastating damage to the environment including the pollution of water bodies and land vegetation, forcing officials to ban all forms of small-scale mining.
+
+“The effects of illegal mining on the environment threaten the survival of water bodies , farmlands, cocoa industry and even encouraging school dropouts, this undermins the revenue mobilsation drive in the country.
+
+It added that the activities of illegal miners have resulted in the destruction of forest reserves and farms.
+
+Activities of illegal miners in the region stepped up in recent years and caused devastating damage to the environment including; pollution of water bodies and land vegetation, forcing officials to ban the illegal acts.
+
+“The effects of illegal mining on the environment threatens the survival of water bodies, farmlands, cocoa industry and even encouraging school dropouts, this undermines the revenue mobilsation drive in the country.
+
+The negative effects of illegal mining threaten the livelihood of farmers; water bodies and the vegetative cover are also being destroyed resulting in soil infertility, soil erosion and eventually environmental degradation.
+
+Illegal mining has been a major challenge for successive governments over the years due to its enormous effects to lands, water bodies and forests.
+
+“The effects of illegal mining on the environment threaten the survival of water bodies, farmlands, cocoa industry and even encouraging school dropouts [and] this undermines the revenue mobilisation drive in the country,” he added.
+
+There have been destruction of farmlands and river bodies due to illegal mining in the area.
+
+“The effects of illegal mining on the environment threaten the survival of water bodies, farmlands, cocoa industry and even encouraging school dropouts, this undermines the revenue mobilsation drive in the country.
+
+“The effects of illegal mining on the environment threaten the survival of water bodies , farmlands, cocoa industry and even encouraging school dropouts, this undermines the revenue mobilsation drive in the country.
+
+The activities of these illegal, irresponsible miners caused destruction to large tracts of farms, water bodies and large forest vegetation.
+
+She indicated that despite the importance of mining, activities of mining have created land-based conflicts and impacted negatively on agriculture.
+
+The effects of illegal mining on the environment threaten the survival of water bodies, farmlands, cocoa industry and even encouraging school dropouts.
+
+Both of these outcomes further erode the viability of agriculture, leading to the local population’s deepening dependence on illegal mining for income.
+
+Illegal miners' activities have resulted in the contamination and destruction of the country's lands, forest reserves and water bodies.
+
+There was therefore the need to halt activities of illegal mining and introduce more sustainable and environmentally friendly practices that improved livelihoods in mining communities.
+
+The effects of illegal mining on the environment threaten the survival of water bodies, farmlands, cocoa industry and even encourage school dropouts.
+
+The area is also counted among mining communities in the country where illegal mining has caused serious devastation of lands and polluted water bodies.
+
+Many agricultural lands are being lost as a result of illegal mining activities.
+
+The upsurge in illegal small scale mining in the country over a decade [ago] led to several illegal miners, including foreign nationals, invading ...
+
+Rehabilitation and restoration of areas affected by illegal mining are critical to tackle menace.
+
+Despite a government ban on illegal mining, illegal miners have invaded forest reserves, destroyed cocoa farms, and polluted many water bodies, a development that has sparked public outrage.
+
+Illegal mining has taken on national significance due to evidence of the destruction of water bodies, forests and the environment in general.
+
+Supporting the development of sustainable alternatives such as agriculture or legal small-scale mining can help reduce dependency on illegal mining practices.
+
+I have read numerous times about how illegal mining has damaged many locations where the mining occurs, but it wasn't until I arrived at the Pra River that I truly realised the effects of illegal mining's destructive nature.
+
+He continued that the increase in mining activities had been contributing to a decrease in agricultural activities as agricultural lands are taken over for mining activities, thus creating a new challenge for agricultural production.
+
+Illegal mining does not only threaten the livelihood of legal mining operations, it also retards the economic potential of the environment, compromises the safety of individuals and communities.
+
+These practical interventions will help curb illegal mining and its effect on the environment.
+
+"Unlike illegal logging that takes away essential tree species which can regenerate after some time, illegal mining makes more devastating effects, it takes off the trees and the top soil that could aid replanting or regeneration, the land is destroyed and it goes all the way to affect our waterbodies.
+
+Illegal mining in the country has been a topical issue in the country for the past few years sparking major campaigns and outrage by Ghanaians especially over the negative impact on the activities on water bodies and lands.
+
+Illegal mining has been a menace in the country because of its attendant ills like environmental degradation, destruction of farmlands and farms, for that matter livelihoods, and even now the devastation of settlements believed to have gold under houses.
+
+The effects of illegal mining on the environment is a threat to water bodies, farmlands, and the cocoa industry and even encourage school dropouts as well as undermine the revenue mobilization drive of the country.
+
+The unregulated activities of the informal miners have led to undesirable effects including destruction of vegetation, pollution of water bodies as well as a marked reduction in agricultural production, among others.
+
+Illegal mining is a primary source of livelihood for many people in the mining communities.
+
+Illegal mining activities continues to destroy the country’s forest cover and degrade many farmlands and forest reserves as well as water bodies.
+
+Illegal mining has caused extensive damage to water bodies and the environment, a development that has prompted civil society groups, the Media Coalition Against Galamsey and the government to condemn the practice and begin a campaign against it.
+
+Illegal mining has been a thorn in political administrations but came to the spotlight with the media leading the crusade against the menace of illegal mining.
+
+The country has been battling with the upsurge in illegal mining across the country as the practice is depleting the land and destroying farm lands, forest rwsves and water bodies.
+
+“Mining is central to economic development; however, the destruction of our environment and river bodies due to the illegal act contradicts our duties as citizens.
+
+The government recently intensified its fight against illegal mining in the country.
+
+During the period that the ban on small scale mining was in force, more illegal miners, including Chinese gangs invaded our forest reserves with the help of government officials and caused unprecedented destruction to our forests, water bodies and environment.
+
+Distinguished ladies and gentlemen, as you may be aware, in years past activities of illegal mining was devastating as water bodies were polluted beyond the human imagination, and lands were irreparable due to their depleted nature.
+
+The MP emphasized that such actions would undermine the government’s efforts to combat illegal mining, which is causing significant damage to the environment and water bodies throughout the country.
+
+According to him, illegal mining threatens the very survival of the people within the community and made a passionate appeal to the chiefs and elders to help the government rise up against the menace.
+
+Though there have been lamentations everyday on the harmful effects of illegal mining, it has been complicit because it has benefited perpetrators.
+
+This has resulted in a renewed public discussion on illegal mining activities.
+
+Ban on illegal mining Large scale pollution of the country’s water bodies, farmlands and environmental degradation arising out of illegal mining forced the government in 2017 to ban the business which had been booming across the country.
+
+Today, illegal mining has become a major source of livelihood for persons living around legal mining communities, mainly due to the continuous rise of the price of the commodity on the world market.
+
+The effect of illegal mining on our environment has been the subject of many media reportage and concern to Ghanaians.
+
+The chief noted that not only has illegal mining activities destroyed the water bodies and degraded our forests, but has also adversely affected the livelihood of the good people.
+
+He said illegal mining activities had resulted in land degradation and pollution of river bodies among other things, which posed great threat to the lives of the millions of people who lived along those rivers.
+
+But four years later, the activities of illegal mining are causing devastation to the country’s water bodies and forest reserves and the government has admitted the fight is a difficult one.
+
+The activities of illegal miners are causing havoc both to the ecology, flora and fauna in the region.
+
+The government intensified its efforts to rid the country of illegal mining which has devastated many communities in six regions of the country.
+
+The Deputy Minister of Lands and Natural Resources, Mr Yaw Effa-Baafi says the on-going retrenchment by mining companies as a result of decline in gold prices will promote illegal mining activities in the country.
+
+Illegal mining in the river Anuru and wetlands in the area has devastated farmlands and threatened livelihoods there.
+
+the industry is also being challenged by land use especially in the Western Region, it is being challenged by illegal mining.
+
+However, illegal mining activities for the past one year have polluted the water body.As a result, large acreage of cocoa and vegetable farms are on the brink of destruction because of operations of the illegal miners.
+
+Several lands have been degraded because of the illegal mining activities in the area.
+
+Similarly, the mining activities might lead to the destruction of wildlife and the ecology, especially with the impeding effects of climate change, which would exacerbate the country’s climatic conditions.
+
+Although there were food deficit in the area due to the activities of illegal miners, some farmers have taken advantage of the situation to make profits.
+
+The illegal mining activities in the area were the major cause of these removals, according to him.
+
+The ban on illegal mining activities in parts of the Ashanti Region is said to be worsening the economic conditions of residents and affecting the revenue generated by government agencies for developmental projects.
+
+A major discourse in the country for the past month has been about the activities of illegal miners that are degrading the forests and polluting water bodies.

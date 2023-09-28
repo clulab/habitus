@@ -1,0 +1,26 @@
+{'Those working in illegal mining are skeptical of U.S. investments': 8, 'Those working in illegal mining think they’re already making a good livelihood': 8, 'Local authorities are diverting the U.S. investment away from agribusiness': 20, 'The investment has attracted migrants from other regions who are not interested in farming but hope to find other economic opportunities': 14, 'None of the above': 0}
+The final probabilities for each choice are: [0.06044052747634338, 0.06044052747634338, 0.6662465949107481, 0.200669618093331, 0.012202732043234027]
+Probability for choice A is 6.04%.
+Probability for choice B is 6.04%.
+Probability for choice C is 66.62%.
+Probability for choice D is 20.07%.
+Probability for choice E is 1.22%.
+The per-choice explanations using the context are: 
+Choice A (Those working in illegal mining are skeptical of U.S. investments):
+Justification: This choice suggests that the reason farming activities have remained unchanged is because those involved in illegal mining are skeptical of U.S. investments. This could mean that they do not trust the U.S. or its intentions, or they may doubt the effectiveness or sustainability of the investment. This skepticism could deter them from switching to farming or agribusiness, thus leaving farming activities unchanged. However, the context does not provide any information about illegal mining or the attitudes of those involved in it towards U.S. investments.
+
+Choice B (Those working in illegal mining think they’re already making a good livelihood):
+Justification: This choice suggests that the reason farming activities have remained unchanged is because those involved in illegal mining believe they are already earning a good living. This could mean that they do not see the need to switch to farming or agribusiness, despite the U.S. investment. They may perceive mining as more profitable or less risky than farming, or they may simply prefer it for other reasons. However, the context does not provide any information about illegal mining or the attitudes of those involved in it towards the U.S. investment or farming.
+
+Choice C (Local authorities are diverting the U.S. investment away from agribusiness):
+Justification: This choice suggests that the reason farming activities have remained unchanged is because local authorities are diverting the U.S. investment away from agribusiness. This could mean that the funds intended to boost agribusiness and job opportunities in this sector are being used for other purposes, thus failing to have the intended impact on farming activities. However, the context does not provide any information about the actions of local authorities or any potential misuse of the U.S. investment.
+
+Choice D (The investment has attracted migrants from other regions who are not interested in farming but hope to find other economic opportunities):
+Justification: This choice suggests that the reason farming activities have remained unchanged is because the U.S. investment has attracted migrants from other regions who are not interested in farming. This could mean that while the investment may have boosted the local economy and created job opportunities, these have not been in the agricultural sector. Instead, migrants may be pursuing other economic opportunities, leaving farming activities unchanged. However, the context does not provide any information about migration patterns or the interests of migrants in relation to farming.
+
+Choice E (None of the above):
+Justification: This choice suggests that none of the other options provided are the most likely reason for farming activities remaining unchanged. This could mean that the reason lies elsewhere, perhaps in factors not mentioned in the other choices, such as a lack of training or resources for farmers, poor infrastructure, or unfavorable market conditions. However, the context does not provide any information that would support or refute this choice.
+
+CONTEXT:
+
+

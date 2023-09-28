@@ -1,0 +1,138 @@
+{'Those working in illegal mining are skeptical of U.S. investments': 7, 'Those working in illegal mining think they’re already making a good livelihood': 4, 'Local authorities are diverting the U.S. investment away from agribusiness': 13, 'The investment has attracted migrants from other regions who are not interested in farming but hope to find other economic opportunities': 10, 'None of the above': 16}
+The final probabilities for each choice are: [0.07848865496291434, 0.04307548714501654, 0.2605915115852018, 0.14301565382529002, 0.4748286924815773]
+Probability for choice A is 7.85%.
+Probability for choice B is 4.31%.
+Probability for choice C is 26.06%.
+Probability for choice D is 14.3%.
+Probability for choice E is 47.48%.
+The per-choice explanations using the context are: 
+Choice A (Those working in illegal mining are skeptical of U.S. investments):
+Justification: This option could be plausible if there was evidence in the context sentences that those involved in illegal mining were skeptical of U.S. investments. However, there is no mention in the context sentences of illegal mining or of skepticism towards U.S. investments. Instead, the context sentences suggest that there is a focus on improving the agricultural sector in Ghana and on supporting Ghanaian farmers.
+
+Choice B (Those working in illegal mining think they’re already making a good livelihood):
+Justification: This option could be plausible if there was evidence in the context sentences that illegal mining was a significant issue in Ghana, and that those involved in it were making a good livelihood from it. However, there is no mention of illegal mining in the context sentences. The context sentences focus on the agricultural sector in Ghana, the challenges it faces, and the efforts being made to improve it.
+
+Choice C (Local authorities are diverting the U.S. investment away from agribusiness):
+Justification: This option could be plausible if there was evidence in the context sentences that local authorities were diverting U.S. investment away from agribusiness. However, there is no mention in the context sentences of any such diversion. Instead, the context sentences suggest that there is a strong focus on improving the agricultural sector in Ghana.
+
+Choice D (The investment has attracted migrants from other regions who are not interested in farming but hope to find other economic opportunities):
+Justification: This option could be plausible if there was evidence in the context sentences that the investment was attracting migrants from other regions who were not interested in farming. However, there is no mention in the context sentences of any such migration. Instead, the context sentences suggest that there is a focus on improving the agricultural sector in Ghana and on supporting Ghanaian farmers.
+
+Choice E (None of the above):
+Justification: This option could be plausible if none of the other options were supported by the context sentences. As discussed above, none of the other options are supported by the context sentences. Therefore, this option is plausible.
+
+CONTEXT:
+
+The reason I am writing this is because I think that: if politicians in Ghana came out with the truth about farming, Ghana could develop its agricultural potential and as a country, with much further strides than today.
+
+We believe this is the way to transform Ghana’s agriculture as we target to move away from subsistence to a business-centered approach to agriculture “.
+
+"We're grateful to EcoCare Ghana and the European Union for what they're doing; they have assisted us in growing more seedlings on our farmlands to combat climate change, trained us on new farming methods and supported us with alternative livelihood skills to take us away from poverty”.
+
+In other to do good with agriculture, we don’t see any reason why Ghana would be a less progressed than other countries in the world and you definitely think that Ghanaian farmers with the help of the Israeli companies and Israeli know-how and technologies be able to progress and export their yields and crops to the world.
+
+“We believe this is the way to transform Ghana’s agriculture as we target to move from subsistence to a business-centered approach to agriculture.
+
+The President has also stressed that, if Ghana is to see any meaningful change in the lives of her people, efforts must be directed at Agriculture.
+
+It is a recognised fact that small-scale farmers in Ghana are the backbone and the hope of any meaningful increase in food production.
+
+Many Ghanaian farmers are reducing the size of their farms, or giving up farming altogether because they don’t believe they can get enough yield without the inorganic fertilizer which they cannot afford.
+
+Ambassador Linda Thomas-Greenfield, United States (US) Representative to the United Nations has said that the US Government’s $2.5 million scheduled development assistance in Ghana is to support farmers to increase food production.
+
+The study – conducted by the Institute of Climate and Environmental Governance (ICEG) and titled ‘Effects of environmental degradation on agricultural production, livelihoods, welfare and climate change in the northern region of Ghana’ – revealed that for the majority of farmers other sources of credit, rather than the banking sector, are the most preferred.
+
+The truth is none of them did it because they love farming or farmers; the largest disappointment for me personally is that development partners have always supported Ghana and Ghanaian politicians as well on the same subject.
+
+Former US President, Thomas Jefferson, once said, “Agriculture is our wisest pursuit, because it will in the end contribute most to real wealth, good morals, and happiness” but in Ghana poor policies have made a lot of our young people turn their backs on Agriculture and whole society is suffering today.
+
+I strongly believe, Agriculture, will lift Ghana out of poverty and assure us not only of food and nutrition security, but also, generate the necessary resources for the development of the other sectors including Industry, Health, Education and Infrastructure in the medium to long term.
+
+Given the current economic crisis in Ghana, which is affecting the lack of fertilizer and seed inputs for farmers, strengthening the seed sector and increasing the use of improved seeds is expected to boost crop yields, and transform the food system that feeds the country, a statement from The Alliance for the Green Revolution in Africa (AGRA), which is spearheading the initiative said.
+
+We need to appreciate that until reforms in production go alongside with marketing reforms, it is going to be difficult to turn around the economic fortunes of Ghana through agriculture.
+
+It is hence not surprising to hear the president say the way to transform Ghana’s agriculture is to invite investment from the private sector.
+
+In a communiqué issued on the 10th Biennial National delegates congress of BONABOTO in Bolgatanga, on the theme: “Climate Change, Agriculture and Poverty Alleviation in Northern Ghana” the National President-elect, Dr. Andrew Akolaa, was optimistic that, farmer incentives and subsidized inputs can make the north the food basket of Ghana and alleviate poverty.
+
+I want to believe the Burkinabes are benefitting from the so-called planting for food and jobs more than Ghanaians.
+
+We have always been happy with the way you and your government have used Planting for Food and Jobs to transform the agriculture in Ghana”, Togbe said.
+
+Ghana is a signatory to the Comprehensive African Agricultural Development Programme of 2003 (Malabo Declaration), in which member-countries were expected to increase agricultural investment to 10 percent of annual budgets to culminate into, at least, six percent growth in the sector annually; but the country has failed to do that since.
+
+But let me stress that any eventual problems that may emerge should have a positive impact on the agric economy of Ghana, the immediate effect will be on the agric economy of Burkina Faso, so I think our farmers must rather take advantage of this.
+
+The US has also, in the last four years, through the United States Department of Agriculture (USDA), has invested more than US$50 million in support of Ghana’s poultry industry and that, the Deputy Secretary noted has shown that his country is not only interested in exports into Ghana but the gesture confirms the United States’ interest in boosting the agriculture sector here.
+
+Next year is expected to see bounty harvests in crop production and significant improvements in farming methods in Ghana due to huge investments made by the United States Agency for International Development (USAID)
+
+Therefore, the Ghanaian Times believes the move in the area of agricultural mechanisation would be implemented and sustained for increased food production.
+
+If all is well with Ghana’s Agric Sector as the NPP would want us believe:
+
+If all is well with Ghana’s Agric Sector as the NPP would want us to believe:
+
+They expect it from the government, from the importers, and from you reading this as a stakeholder in Ghana’s agricultural sector.
+
+The Agricultural Advisor with SNV Ghana, Mr. Wisdom Konwuruk, said the effects of climate on Agriculture was becoming very significant and a cause to worry about, hence the need for mitigative measures particularly in the agriculture sector to avert poor yields, low income and rather promote best practices that were environmentally friendly.
+
+Though the Akufo-Addo government implemented the Planting for Food and Jobs programme and other social interventions to solve this issue, some Ghanaians feel a lot more needs to be done.
+
+According to him, the impact of the policy in Ghana’s agricultural sector has been astounding and he’s hopeful the policy will continue yielding phenomenal results in the coming years.
+
+• He believes the next crop of entrepreneurs in Ghana can lead to a massive economic transformation
+
+Ghana’s agricultural sector has recorded an accelerated growth of 8.4 per cent in the year 2021, up from the 7.4 per cent in 2020, Dr. Owusu Afriyie Akoto, Minister of Food and Agriculture has said.
+
+The Agricultural Economist who served in the UN systems for 18 years believes Ghana could achieve more if the country prioritizes public funding in the agriculture sector, with a special focus on mechanized farming.
+
+Addressing the event, which was under the theme: ‘Planting for Food and Jobs – Consolidating Food Systems in Ghana’ the Chief Executive of Suame Municipal Assembly, Mr. Maxwell Ofosu-Boakye, expressed appreciation to all farmers within the Municipality, and urged the youth to take advantage of the agricultural policies the government had rolled out, citing the theme as a major agricultural policy which seeks to change the face of farming.
+
+Ghana will need to invest between US$9.3 and US$15.5billion to implement the 47 Nationally Determined Contributions (NDCs) as key measures to mitigate the impacts of climate change by 2030, the United States Department of Agriculture (USDA) has said in its 2023 Ghana Climate Change Report.
+
+The Planting for Food and Jobs initiative is expected to give incentives to prisons, colleges, universities and schools to setup farms while encouraging Ghanaians, both urban and rural, to take up farming as either a full or part-time activity.
+
+He said as long as the farmers longed for approved quality seeds, coupled with other agronomic activities, Ghana was assured of increased productivity, food and jobs for the ever-growing population.
+
+The new facility is being seen as one of the most important pivots in Ghana’s efforts to dramatically increase agricultural productivity and fully exploit the country’s huge but grossly under-utilized agricultural resources.
+
+I don’t think the mere bad farming practices of the Ghanaian farmer can contribute much to these adverse effects.
+
+“I want to urge the public, especially women and the youth, to venture into agriculture because there is so mush prospects in it, and indeed, I believe Ghana will be somewhere in the next five years in terms of agriculture.
+
+They have also planned to use smallholder farmers in Ghana on the farms and eventually employ their services as out-growers.
+
+Planting for Food and Jobs is recognized as the most outstanding programme, given its importance in Ghana’s economy.
+
+It is evident that there has been an improvement in production and Ghana is likely to meet its 2016/2017 crop season target of 900,000 metric tonnes.
+
+With the establishment of the Tree Crop Development Authority, the Minister was hopeful Ghana’s agriculture earnings could see an increase to $16 billion in the next 10 years.
+
+He also indicated that, there has been a positive change in Ghanaians as it is evident in their high demand of local produce, as well as their zeal in pushing the government’s 1District, 1Factory from all angles.
+
+Agriculture is generally regarded as a high-risk economic activity in Ghana.
+
+The Minister of Food and Agriculture has called on Ghanaians to continue to celebrate and reward Farmers with rising farm productivity and incomes as he recognized that the impressive performance of the agricultural sector is largely due to sacrifices and the tireless efforts of “our heroic Farmers”.
+
+Palgrave Boakye-Danquah opined that, the impact of the policy on Ghana’s agricultural sector has been astounding and he’s hopeful the policy will continue yielding phenomenal results in the coming years.
+
+“From what I have seen in six years managing the agricultural sector, I am confident that the Ghanaian farmer can deliver us forever from the clutches of the IMF.
+
+Ghanaian farmers get that even more now.
+
+As climate change stares at faces of farmers in one of the food basket areas of Ghana, farmers in Afram Plains want policymakers to invest in irrigation taken advantage of the abundant freshwater body that has surrounded the area to improve food security.
+
+The President of the Republic, Nana AddoDankwa Akufo-Addo has indicated that agriculture remains the fuel that powers all our activity in Ghana, and has assured farmers, food crop farmers, fish farmers and livestock farmers that they will all have the support and respect they deserve from his government.
+
+He stressed that when that is not done, agriculture which is the backbone of the Ghanaian economy will continue to suffer.
+
+The Minister also said the government has made sure that Ghanaians have food in abundance because of the planting for food and jobs initiative.
+
+Ghanaian farmers remain some of the most hardworking group of ‘professionals’ you will find anywhere in the world and I believe they deserve all the necessary support they can lay hands on.
+
+At Vodafone, we are proud of our contribution to agriculture through our technology-based engagement with farmers and after a year of success, we find it apt to acknowledge their indispensable contribution to Ghana’s economic growth”.
+
+Instead, farmers are supposed to be treated as part of the private sector in Ghana, but many are not recognized and respected, even at the highest level.

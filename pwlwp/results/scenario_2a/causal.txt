@@ -1,0 +1,136 @@
+{'The Chinese galamseyers have taken all available jobs': 5, 'The Chinese mining project is less lucrative than illegal mining': 15, 'Ghanaians do not want to work for the Chinese': 10, 'Ghanaians would prefer to have the option of farming and illegal mining than exclusively work for a Chinese mining company': 16, 'None of the above': 4}
+The final probabilities for each choice are: [0.04773023137483999, 0.35268135724363253, 0.12974422061437335, 0.430765982489045, 0.039078208278109074]
+Probability for choice A is 4.77%.
+Probability for choice B is 35.27%.
+Probability for choice C is 12.97%.
+Probability for choice D is 43.08%.
+Probability for choice E is 3.91%.
+The per-choice explanations using the context are: 
+Choice A (The Chinese galamseyers have taken all available jobs):
+Justification: This choice could be justified by the context statement that 'The arrival of Chinese migrants disrupted traditional small scale miners - both legal and illegal - soon out-competing them, only to later recruit many of their former competitors as Chinese mining operations became the only game in town in many communities throughout Ghana.' This suggests that Chinese miners may have taken over many of the available mining jobs, leaving fewer opportunities for locals. However, this does not explain why farmers would continue to engage in illegal mining at the same rate, as they could potentially find employment in the new Chinese mining project.
+
+Choice B (The Chinese mining project is less lucrative than illegal mining):
+Justification: This choice could be justified by the fact that illegal mining, or galamsey, is often a more profitable venture for locals than working in large-scale mining projects. As stated in the context, 'Given that the small scale mining operation is capital intensive, the Ghanaians who do not have the upfront capital, albeit manage to secure the mining concessions, end up passing such licences to their Chinese counterparts.' This suggests that Ghanaians may continue to engage in illegal mining because it provides a higher income than working in the Chinese mining project. Additionally, the context mentions that 'illegal mining has become a norm in recent times because societies are aggrieved that a chunk of revenue generated from natural resources within their respective locations go to the central government.' This indicates that locals may prefer illegal mining as it allows them to retain a larger share of the profits.
+
+Choice C (Ghanaians do not want to work for the Chinese):
+Justification: This choice could be justified by the resentment and mistrust towards the Chinese due to their involvement in illegal mining and exploitation of Ghana's natural resources. The context states, 'There is already a sense of resentment for Chinese because of their involvement in illegal mining, especially in the Western Region.' and 'In all that the Chinese are doing to us, spoiling the country’s ecosystem through unrestrained illegal surface mining (galamsey), obstructing the education of the youth in Central region by their mushrooming illegal gambling machines springing up in every corner of the region to entice the children not to go to school but to steal their parent’s money to do gambling, etc., Ghanaians still prostrate to them, rendering unqualified service to them in what is a reflection of the adorable Ghanaian hospitality.' These statements suggest that Ghanaians may be reluctant to work for the Chinese due to their negative experiences and perceptions.
+
+Choice D (Ghanaians would prefer to have the option of farming and illegal mining than exclusively work for a Chinese mining company):
+Justification: This choice could be justified by the fact that illegal mining and farming are traditional livelihoods for many Ghanaians, and they may prefer these options over working for a foreign company. The context states, 'The arrival of Chinese migrants disrupted traditional small scale miners - both legal and illegal - soon out-competing them, only to later recruit many of their former competitors as Chinese mining operations became the only game in town in many communities throughout Ghana.' This suggests that Ghanaians may prefer to maintain their traditional ways of life, including farming and illegal mining, rather than being employed by a Chinese mining company.
+
+Choice E (None of the above):
+Justification: This choice could be justified if none of the other options accurately reflect the reasons why farmers continue to engage in illegal mining at the same rate despite the Chinese mining project. The context does not provide clear evidence to support this choice, but it could be a valid option if other factors not mentioned in the context are influencing the farmers' decisions.
+
+CONTEXT:
+
+“We think, concerted efforts between China and Ghana is needed to address the illegal mining issue and strengthen the South control and also elevate transparency in mining sector to open more channels for legal and open business” Mrs. Baohong added.
+
+The arrest and detention of Asia Huang may seem as rule of law because foreign nationals are not allowed by law to engage in small scale mining in Ghana, the rationale behind this is understood, but what kind of law, in one vein does not allow Chinese to do galamsey whiles in another vein allow multinational mining corporations to exploit a country’s natural resources, make huge profit and then pay crumbs to the nation in taxes.
+
+For instance, whereas Ghanaian law prohibits foreigners from mining plots smaller than twenty-five acres, many Chinese galamsey miners reach informal deals with local landowners with the former mining the plot and sharing the proceeds with the latter.
+
+Eschewing the usual bland for which diplomats are noted, Mr. Zhu Jing observed that “The assertion that illegal mining [galamsey] is caused by Chinese [nationals] is a misconception, because the root cause of the menace lies in Ghana, and so any solution to it also lies in Ghana”.
+
+The government of China through its embassy in Ghana has on countless occasions stated its stance against the activities of illegal mining in the country purported by its nationals, which leads to the destruction of water and land resources.
+
+Solomon cannot fathom why the government should allow the Chinese foreigners to mine illegally in Ghana while the Ghanaian citizens with valid mining licences stay home unemployed.
+
+According to the NDC, the Akufo-Addo led administration, by this action gives Chinese nationals the freedom and encouragement to engage in illegal mining whilst Ghanaians are punished for the same crime.
+
+There is already a sense of resentment for Chinese because of their involvement in illegal mining, especially in the Western Region.
+
+This rather glaring loophole exists due to Ghana’s long history with local galamsey miners, many of whom are poor and resort to illegal mining to survive.
+
+The careless Chinese illegal miners then end up violating the laws which govern the small scale mining sector.
+
+Bringing heavy machinery, illegal Chinese gold miners precipitated economic and social instability as well as increases in gun violence, drug trafficking and corruption Ghana is working hard to fight against illegal mining – or galamsey – but widespread corruption has hamstrung government efforts.
+
+The careless Chinese illegal miners then end up violating the laws which govern the small-scale mining sector.
+
+In fact, small scale mining is stopped in Ghana, increasing unemployment and crime rates since these jobless individuals must survive by all means.
+
+QUOTE: “Illegal mining has caused terrible destruction to water and land in Ghana and appropriate measures must be put in place to deal with it.
+
+QUOTE: The Chinese Ambassador to Ghana, Mr Shi Ting Wang, said [on 17 April 2019] that to end illegal mining activities in Ghana, Ghanaians must first stop aiding foreigners, especially Chinese, [who are] involved in galamsey.
+
+The results of the research also showed that 37% of Ghanaians are satisfied with government’s fight against illegal mining (galamsey), which is gradually restoring the purity of some of the water bodies lost to the illegal activities.
+
+“The mining sector continues to generate employment for the people of Ghana providing livelihood for thousands across the country.
+
+In all that the Chinese are doing to us, spoiling the country’s ecosystem through unrestrained illegal surface mining (galamsey), obstructing the education of the youth in Central region by their mushrooming illegal gambling machines springing up in every corner of the region to entice the children not to go to school but to steal their parent’s money to do gambling, etc., Ghanaians still prostrate to them, rendering unqualified service to them in what is a reflection of the adorable Ghanaian hospitality.
+
+A research fellow at the Centre for Democratic Development (CDD-Ghana), Kojo Asante, has observed that illegal mining has become a norm in recent times because societies are aggrieved that a chunk of revenue generated from natural resources within their respective locations go to the central government.
+
+"Ghana has been championing the implementation of the Sustainable Development Goals (SDGs) therefore we will not allow the activities of illegal mining to derail the gains made so far," he said.
+
+It is important to note that the very existence of Ghana as a country is being threatened by illegal mining activities.
+
+The arrival of Chinese migrants disrupted traditional small scale miners - both legal and illegal - soon out-competing them, only to later recruit many of their former competitors as Chinese mining operations became the only game in town in many communities throughout Ghana.
+
+the industry is also being challenged by land use especially in the Western Region, it is being challenged by illegal mining.
+
+According to him, it is rather difficult for a Ghanaian to secure permits and licenses to operate mining firms, as opposed to foreigners, hence, forcing the Ghanaian youth to engage in illegal mining and its related activities.
+
+“Because illegal mining should not be allowed, there are some types of trades that should not be allowed so the best thing for them to do is to invest in who becomes the head of the country.
+
+And, illegal mining that has hurt and is hurting the country, has thrived because successive governments have refused, failed or neglected to regulate.
+
+“And this time around, it’s been done by the Chinese themselves contrary to mining regulations, because this area is reserved for Ghanaians and the Chinese are not supposed to even be there in the first place let alone drive excavators and be excavating land.
+
+Ms Gans-Lartey said from the study, it was discovered that, the illegal miners, whom were mostly Chinese nationals and claimed they had licences to operate, buy hectares of cocoa land at very low prices and end up taking more than they pay for.
+
+“Because illegal mining should not be allowed, there are some types of trades that should not be allowed, so, the best thing for them to do is to invest in who becomes the head of the country.
+
+Illegal mining in the country has been a topical issue in the country for the past few years sparking major campaigns and outrage by Ghanaians especially over the negative impact on the activities on water bodies and lands.
+
+The government recently intensified its fight against illegal mining in the country.
+
+The upsurge in illegal small scale mining in the country over a decade [ago] led to several illegal miners, including foreign nationals, invading ...
+
+Regardless of Ghana working hard to fight the phenomenon of illegal artisanal mining – known as galamsey, derived from the phrase “gather them and sell,” widespread corruption has hindered government efforts.
+
+Given that the small scale mining operation is capital intensive, the Ghanaians who do not have the upfront capital, albeit manage to secure the mining concessions, end up passing such licences to their Chinese counterparts.
+
+“I plan to do a lot of things in my constituency to get closer to the constituents but looking at the rising dangers of this illegal mining my focus has been shifted to putting a factory that would at least stop this galamsey thing depriving livelihoods of many Ghanaians.
+
+The Ghanaian government has taken the issue of illegal mining seriously because apart from the impact o on our economy, its impact on the environment is dire.
+
+He said Ghana for instance needs to take a critical look at the artisanal and small-scale gold mining sector, where illegal mining is causing massive destruction to lands and waterbodies.
+
+Mr Jing, however, noted that the root cause of illegal small-scale mining was in Ghana, likewise the solution.
+
+The country has been battling with the upsurge in illegal mining across the country as the practice is depleting the land and destroying farm lands, forest rwsves and water bodies.
+
+‘’As we speak now there are over one million Ghanaian small scale miners languishing at home because of the president’s selective fight on illegal mining.
+
+Given that the small-scale mining operation is capital intensive, the Ghanaians who do not have the upfront capital, albeit manage to secure the mining concessions, end up passing such licences to their Chinese counterparts.
+
+Speaking to the Ghana News Agency in Kumasi, he said illegal mining was causing serious devastation to the country’s forest and water bodies and there was the need for all to join the government to halt the menace.
+
+This is because the detrimental impact of illegal small-scale gold mining on Ghana's farmlands is a cause for great concern.
+
+It is absolutely true that millions of Ghanaian youth will most likely become jobless as a result of any ban on illegal mining.
+
+The Ambassador expressed worry that some of the Chinese participating in illegal mining were doing so because they enjoyed the cooperation of some local assemblies and chiefs, saying “this is the root and the problem
+
+Strangely, however, in spite of the fact that by law, only Ghanaians are allowed to obtain mining licenses for small-scale mining operations, “thousands” of Chinese and other foreigners are working in the small scale mining sector in Ghana.
+
+Supporting the development of sustainable alternatives such as agriculture or legal small-scale mining can help reduce dependency on illegal mining practices.
+
+“when the police and the soldiers get to these illegal mining areas we want them to operate in such a way that by the time they leave not even a drop of blood is shed on the ground but the only way we can achieve that is through the chiefs because when the Chiefs decide that we are stopping illegal mining with the security forces in two months I believe there won't be a single ‘galamsey’ in Ghana any longer,” he added
+
+“Ghana had a lot of tree canopies but because of illegal felling of trees, most of our forest has been turned to sites for illegal mining.
+
+The Chinese mission’s concerns came as civil society groups and the media have escalated campaigns against illegal mining, which is known to have a high volume of Chinese nationals engaged in it.
+
+Addressing participants at a national stakeholders’ workshop on how to control illegal mining in Ghana held at Tarkwa recently, Dr. Aubyn said the reasons why illegal mining was still in existence was because of its complexity, relatively high gold price, greed and to get wealth quick mentality.
+
+The Minister said Ghana’s laws did not allow foreigners to engage in small-scale mining, however, there had been instances where some Chinese nationals had been caught engaging in galamsey and subsequently arrested by the law enforcement authorities.
+
+The government must increase its stake in the mining industry and forcefully renegotiate existing and future contracts for the benefit of the country, the Ghana Mine Workers’ Union (GWMU) has said.
+
+If we don’t create an incentive for them to invest in those mining projects and actually benefit from it then there is all the incentive to support the illegality,” the research fellow explained.
+
+“The Shannxi Mining company has been put on suspension, the suspension was not because government don’t like the company, Ghana is not against Chinese doing business in Ghana but so long as you refuse to abide by the terms and regulations that mandates you to undertake mining activities, government will always be against you because we want things to be done in a more sustainable manner”.
+
+Government intends to make conscious efforts to integrate the mining industry with the rest of the local economy, thus making it possible for Ghanaian entrepreneurs to increase their participation in the mining industry, especialiy in the area of providing goods and services, Mr Asomah-Cheremeh added.

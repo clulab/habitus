@@ -1,0 +1,26 @@
+{'Those involved in illegal mining have begun working for the Chinese mining company': 20, 'Those involved in illegal mining have sought other opportunities outside of the region because of the Chinese mine opening': 12, 'Those involved in illegal mining have sought opportunities in small-scale agriculture because of the Chinese mine opening': 7, 'Those involved in illegal mining have sought other opportunities within the region unrelated to agriculture': 11, 'None of the above': 0}
+The final probabilities for each choice are: [0.6850325616707514, 0.1383056889142838, 0.05087981954861807, 0.11323512083976064, 0.01254680902658601]
+Probability for choice A is 68.5%.
+Probability for choice B is 13.83%.
+Probability for choice C is 5.09%.
+Probability for choice D is 11.32%.
+Probability for choice E is 1.25%.
+The per-choice explanations using the context are: 
+Choice A (Those involved in illegal mining have begun working for the Chinese mining company):
+Justification: This is the most plausible explanation given the context. The Chinese government has promoted the new large-scale mining effort as a source of employment for locals engaged in small-scale illegal mining. Therefore, it is likely that those involved in illegal mining have begun working for the Chinese mining company, leading to a decrease in illegal mining activities in Brong Ahafo. This option is directly supported by the context.
+
+Choice B (Those involved in illegal mining have sought other opportunities outside of the region because of the Chinese mine opening):
+Justification: This could be a plausible explanation for the decrease in illegal mining activities in Brong Ahafo. The opening of the Chinese mine might have led to a shift in the local economy, making other regions more attractive for those previously involved in illegal mining. The Chinese mine could have disrupted the local illegal mining industry, making it less profitable or more risky. As a result, illegal miners might have decided to seek other opportunities outside of the region. However, the context does not provide specific information to support this claim.
+
+Choice C (Those involved in illegal mining have sought opportunities in small-scale agriculture because of the Chinese mine opening):
+Justification: This could be another possible explanation. The opening of the Chinese mine might have led to a shift in the local economy, making agriculture a more attractive option for those previously involved in illegal mining. The Chinese mine could have disrupted the local illegal mining industry, making it less profitable or more risky. As a result, illegal miners might have decided to transition to small-scale agriculture. However, the context does not provide specific information to support this claim.
+
+Choice D (Those involved in illegal mining have sought other opportunities within the region unrelated to agriculture):
+Justification: This could be a plausible explanation for the decrease in illegal mining activities in Brong Ahafo. The opening of the Chinese mine might have led to a shift in the local economy, making other industries within the region more attractive for those previously involved in illegal mining. The Chinese mine could have disrupted the local illegal mining industry, making it less profitable or more risky. As a result, illegal miners might have decided to seek other opportunities within the region unrelated to agriculture. However, the context does not provide specific information to support this claim.
+
+Choice E (None of the above):
+Justification: This option suggests that none of the previous explanations are correct. It implies that the decrease in illegal mining activities in Brong Ahafo is due to other factors not mentioned in the previous options. However, the context does not provide specific information to support this claim.
+
+CONTEXT:
+
+
