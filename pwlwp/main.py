@@ -11,6 +11,10 @@ import json
 import numpy
 import pandas
 
+import os
+
+import time
+
 def get_in_and_out() -> str: # Tuple[str, str]:
 	argument_parser = ArgumentParser()
 	argument_parser.add_argument("-ic", "--input-corpus", required=True, help="input corpus file name")
@@ -266,7 +270,7 @@ def one_explanation(outputs: list[str]) -> str:
 
 	return result
 
-def compute_ranking(temporary_choices: list[list[str]], introduction: str, context: str, gamma: float, scenario: Scenario):
+def compute_ranking(temporary_choices: list[list[str]], introduction: str, context: str, gamma: float, scenario: Scenario, f):
 
 	final_rankings = {}
 
@@ -284,7 +288,7 @@ def compute_ranking(temporary_choices: list[list[str]], introduction: str, conte
 			final_rankings[item["choice"]] += len(temporary_choices[0]) - int(item["rank"])
 			#final_ranks[int(item["initial_id"])-1] += number_of_paraphrases - int(item["rank"]) - 1
 
-	print(final_rankings)
+	f.write(str(final_rankings) + "\n")
 
 	sum = 0
 
@@ -298,22 +302,32 @@ def compute_ranking(temporary_choices: list[list[str]], introduction: str, conte
 
 	#probabilities = [(numpy.exp(rank*gamma)) / sum for rank in final_ranks]
 
-	print("The final probabilities for each choice are: " + str(probabilities))
+	f.write("The final probabilities for each choice are: " + str(probabilities) + "\n")
 
 	for i in range(len(probabilities)):
-		print("Probability for choice " + str(chr(ord('A') + i)) + " is " + str(round(probabilities[i]*100, 2)) + "%.")
+		f.write("Probability for choice " + str(chr(ord('A') + i)) + " is " + str(round(probabilities[i]*100, 2)) + "%." + "\n")
 
-	print("The per-choice explanations using the context are: ")
-	print("")
+	f.write("The per-choice explanations using the context are: " + "\n")
+	f.write("")
 
 	for i in range(len(scenario.choices)):
-		print("Choice " + str(chr(ord('A') + i)) + " (" + str(scenario.choices[i]) + "):")
+		f.write("Choice " + str(chr(ord('A') + i)) + " (" + str(scenario.choices[i]) + "):" + "\n")
 		correct_justification = ""
 		for item in json:
 			if item["choice"] == scenario.choices[i]:
 				correct_justification = item["justification"]
-		print("Justification: " + str(correct_justification))
-		print("")
+		f.write("Justification: " + str(correct_justification) + "\n")
+		f.write("\n")
+
+def get_scenario_match(i: int):
+	if i == 0:
+		return matcher.match_scenario(scenario_chosen, print_sentences, filter_first, tokens_allowed, False, False)
+	if i == 1:
+		return matcher.match_scenario(scenario_chosen, print_sentences, filter_first, tokens_allowed, True, False)
+	if i == 2:
+		return matcher.match_scenario(scenario_chosen, print_sentences, filter_first, tokens_allowed, False, True)
+	if i == 3:
+		return ""
 
 if __name__ == "__main__":
 
@@ -352,27 +366,57 @@ if __name__ == "__main__":
 
 	matcher = Matcher(sentence_transformer, input_vectors, data_frame, threshold, threshold2)
 
-	scenario_chosen = scenario_official_2b
+	scenarios_list = [(scenario_official_1a, "scenario_1a"),
+					  (scenario_official_1b, "scenario_1b"),
+					  (scenario_official_2a, "scenario_2a"),
+					  (scenario_official_2b, "scenario_2b"),
+					  (scenario_official_3, "scenario_3"),
+					  (scenario_official_4a, "scenario_4a"),
+					  (scenario_official_4b, "scenario_4b")]
 
-	combinations = []
-	temporary_choices = []
+	for scenario in scenarios_list:
 
-	for i in range(len(scenario_chosen.choices)):
-		temporary_choices.append(numpy.roll(scenario_chosen.choices, i))
+	#scenario_chosen = scenario_official_2b
 
-	scenario_match = matcher.match_scenario(scenario_chosen, print_sentences, filter_first, tokens_allowed, False, False)
-	#scenario_match = ""
+		path = "results/" + scenario[1]
 
-	choices_str = ""
+		os.mkdir(path)
 
-	for index in range(len(scenario_chosen.choices)):
-		choices_str += str(index+1) + ") " + scenario_chosen.choices[index] + "\n\n"
+		scenario_chosen = scenario[0]
 
-	compute_ranking(temporary_choices, scenario_chosen.introduction, scenario_match, gamma, scenario_chosen)
+		for context_index in range(4):
 
-	print("CONTEXT:")
+			current_type = "all"
 
-	print("")
+			if context_index == 1:
+				current_type = "beliefs"
+			if context_index == 2:
+				current_type = "causal"
+			if context_index == 3:
+				current_type = "no_context"
 
-	print(scenario_match)
+			f = open(path + "/" + current_type + ".txt", "w")
+
+			combinations = []
+			temporary_choices = []
+
+			for i in range(len(scenario_chosen.choices)):
+				temporary_choices.append(numpy.roll(scenario_chosen.choices, i))
+
+			scenario_match = get_scenario_match(context_index)
+
+			choices_str = ""
+
+			for index in range(len(scenario_chosen.choices)):
+				choices_str += str(index+1) + ") " + scenario_chosen.choices[index] + "\n\n"
+
+			compute_ranking(temporary_choices, scenario_chosen.introduction, scenario_match, gamma, scenario_chosen, f)
+
+			f.write("CONTEXT:" + "\n")
+
+			f.write("\n")
+
+			f.write(scenario_match + "\n")
+
+			f.close()
 
