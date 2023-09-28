@@ -1,19 +1,15 @@
 
 from argparse import ArgumentParser
 
+from chat import Chat
 from matcher import Matcher
+from mock_chat import MockChat
 from scenario import Scenario
 from sentence_transformers import SentenceTransformer
 
+import json
 import numpy
 import pandas
-
-from chat import Chat
-
-import time
-
-import json
-
 
 def get_in_and_out() -> str: # Tuple[str, str]:
 	argument_parser = ArgumentParser()
@@ -23,6 +19,7 @@ def get_in_and_out() -> str: # Tuple[str, str]:
 	return args.input_corpus, args.input_vector
 
 chat_gpt = Chat("gpt-4", "", time.strftime("%Y%m%d-%H%M%S"))
+# chat_gpt = MockChat([f"./pwlwp/gpt_chat/20230923-021014/{index}_output.txt" for index in range(0, 25)])
 
 scenario_official_1a = Scenario(
 	"Imagine the Ghanaian government implements reforms that change the time it takes for local residents to obtain a legal mining license, reducing the time from three years to three months. Suppose that within three months, the number of mining license applications received by the government tripled. This would have been most likely because…",
