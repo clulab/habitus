@@ -1,0 +1,26 @@
+[
+  {
+    "initial_id": 1,
+    "choice": "The decrease in wait time made it more appealing for Ghanaians involved in illegal mining to apply for a license.",
+    "rank": 1,
+    "justification": "This choice is justified by the context that highlights the issues of illegal mining in Ghana. The context states that the government has been fighting against illegal mining, which has caused significant environmental damage and has been a source of public outrage. The government has implemented strict punishments for those engaging in illegal mining, including imprisonment and hefty fines. Therefore, the reduction in the time it takes to obtain a legal mining license from three years to three months could have made it more appealing for those involved in illegal mining to apply for a license. This would allow them to continue their mining activities without the risk of facing the severe penalties associated with illegal mining. As stated in the context, \"the government had enhanced the punishment regime and increased the punishment for people engaging in illegal mining to a minimum of 15 years imprisonment together with a fine of not less than 10, 000 penalty units for Ghanaians.\""
+  },
+  {
+    "initial_id": 2,
+    "choice": "It's now considered a new economic chance by Ghanaians who weren't previously engaged in mining.",
+    "rank": 2,
+    "justification": "This choice is justified by the context that discusses the economic opportunities associated with mining in Ghana. The context mentions that mining licenses are often granted to foreign companies and individuals, which suggests that there may be a lack of local participation in the mining industry. Therefore, the reduction in the time it takes to obtain a mining license could have been seen as a new economic opportunity by Ghanaians who weren't previously engaged in mining. This would allow them to enter the mining industry and potentially benefit from the economic opportunities it offers. As stated in the context, \"the Minister said the nation ought to aspire for more local participation in the mining industry.\""
+  },
+  {
+    "initial_id": 3,
+    "choice": "Friends and family have motivated Ghanaians to apply for mining licenses.",
+    "rank": 3,
+    "justification": "This choice is not directly justified by the context provided. The context does not mention any influence of friends and family on Ghanaians' decision to apply for mining licenses. However, it could be inferred that the reduction in the time it takes to obtain a mining license could have encouraged more Ghanaians to apply, potentially influenced by their friends and family who are already involved in the mining industry or who see the economic opportunities it offers."
+  },
+  {
+    "initial_id": 4,
+    "choice": "None of the previously stated explanations.",
+    "rank": 4,
+    "justification": "This choice suggests that none of the previous explanations are correct. However, based on the context provided, the first two explanations are plausible. The context highlights the issues of illegal mining in Ghana and the government's efforts to combat it, as well as the economic opportunities associated with mining. Therefore, the reduction in the time it takes to obtain a mining license could have made it more appealing for those involved in illegal mining to apply for a license and could have been seen as a new economic opportunity by Ghanaians who weren't previously engaged in mining."
+  }
+]

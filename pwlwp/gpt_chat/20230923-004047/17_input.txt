@@ -1,0 +1,1 @@
+Rank each choice and copy the justification as JSON format with the fields: (initial_id, choice, rank, justification)

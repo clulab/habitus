@@ -1,7 +1,5 @@
 
 from argparse import ArgumentParser
-from matcher import Matcher
-from scenario import Scenario
 from sentence_transformers import SentenceTransformer
 from typing import Tuple
 

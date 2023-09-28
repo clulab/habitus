@@ -218,20 +218,30 @@ class Matcher():
 				is_causal=bool(self.causal_column[index]),
 				is_belief=bool(self.belief_column[index])
 			)
-			if(not only_belief or sentence_match.belief) and (not only_causal and sentence_match.causal):
+			if (not only_belief or sentence_match.belief) and (not only_causal or sentence_match.causal):
 				sentence_matches.append([sentence_match.similarity_num, sentence_match.data_text])
 
 		final_matches = []
 		current_total = 0
 
+		#print("Y " + str(len(sentence_matches)))
+
 		sentence_matches = sorted(sentence_matches,	reverse=True)
+
+		#print("X " + str(len(sentence_matches)))
 
 		for sentence in sentence_matches:
 			if sentence[0] < self.threshold:
 				break
-			if current_total + len(sentence[1]) <= tokens_allowed and sentence[1] not in final_matches:
+			if sentence[1] in final_matches:
+				continue
+			if current_total + len(sentence[1]) > tokens_allowed:
+				break
+			if sentence[1] not in final_matches:
 				final_matches.append(sentence[1])
 				current_total += len(sentence[1])
+
+		print("Z " + str(len(final_matches)))
 
 		#scenario_match = ScenarioMatch(scenario)
 		return "\n\n".join(final_matches)

@@ -1,0 +1,26 @@
+[
+  {
+    "initial_id": 1,
+    "choice": "Ghanaians participating in illegal mining felt more comfortable to apply for a license due to the shortened wait time.",
+    "rank": 1,
+    "justification": "This choice is plausible given the context provided. The context sentences indicate that illegal mining has been a significant issue in Ghana, with the government implementing various measures to combat it. For instance, the context states, \"the government had enhanced the punishment regime and increased the punishment for people engaging in illegal mining to a minimum of 15 years imprisonment together with a fine of not less than 10, 000 penalty units for Ghanaians.\" This suggests that illegal mining is a risky activity with severe consequences. Therefore, the reduction in the time it takes to obtain a legal mining license from three years to three months could have encouraged those participating in illegal mining to apply for a license instead. This would allow them to continue mining but without the risk of severe punishment."
+  },
+  {
+    "initial_id": 2,
+    "choice": "Ghanaians who were not previously into mining now identify it as a new economic opening.",
+    "rank": 2,
+    "justification": "This choice is also plausible given the context provided. The context sentences indicate that mining is a significant industry in Ghana, with many Ghanaians involved in it. For instance, the context states, \"Despite the conventional knowledge in Ghana that the activities of some mining companies have severely impacted negatively on the environment, coupled with the notion that not enough is being done about this by sector regulators, this might not exactly be the situation in every circumstance.\" This suggests that mining can be a profitable activity, despite its potential negative impacts. Therefore, the reduction in the time it takes to obtain a legal mining license from three years to three months could have encouraged those who were not previously into mining to see it as a new economic opening and apply for a license."
+  },
+  {
+    "initial_id": 3,
+    "choice": "The urge to seek mining licenses among Ghanaians has been influenced by their friends and family.",
+    "rank": 3,
+    "justification": "This choice is plausible but less likely given the context provided. The context sentences do not provide any direct evidence that friends and family have influenced Ghanaians to seek mining licenses. However, it is possible that social networks and community influences could play a role in individuals' decisions to seek mining licenses. For instance, the context states, \"We believe that we have a responsibility to go round the country and brief the citizens on especially responsible and sustainable mining, because the mineral resources belong to each and everyone one of us, so generally the people of Ghana should understand the mining industry.\" This suggests that there is a collective responsibility and understanding of the mining industry in Ghana, which could potentially influence individuals' decisions to seek mining licenses."
+  },
+  {
+    "initial_id": 4,
+    "choice": "None of the earlier stated reasons.",
+    "rank": 4,
+    "justification": "This choice is unlikely given the context provided. The context sentences provide evidence that supports each of the earlier stated reasons to some extent. Therefore, it is unlikely that none of the earlier stated reasons would be the most likely cause of the tripling of mining license applications received by the government after the implementation of reforms that reduced the time it takes to obtain a legal mining license from three years to three months."
+  }
+]

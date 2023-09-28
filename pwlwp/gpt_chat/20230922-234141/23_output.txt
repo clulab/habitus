@@ -1,0 +1,26 @@
+[
+  {
+    "initial_id": 1,
+    "choice": "Ghanaians that were participating in illegal mining felt comfortable applying for a license because of the shortened wait time",
+    "rank": 1,
+    "justification": "This choice is plausible given the context provided. The context sentences indicate that illegal mining, also known as \"galamsey,\" is a significant issue in Ghana, with severe penalties for those caught participating in it. For instance, \"The amended mining law of Ghana has stipulated a minimum of 15 years and maximum of 25 years for illegal miners (galamseyers), President Nana Akufo-Addo has said.\" The reduction in the time it takes to obtain a legal mining license from three years to three months could have encouraged those participating in illegal mining to apply for a license instead, as it would significantly reduce the risk of facing these penalties."
+  },
+  {
+    "initial_id": 2,
+    "choice": "Ghanaians who were not previously mining now see it as a new economic opportunity",
+    "rank": 2,
+    "justification": "This choice is also plausible given the context provided. The context sentences indicate that mining is a significant industry in Ghana, with many Ghanaians involved in it. For instance, “There are about 3 million Ghanaians whose source of livelihood depends on small-scale mining across about 13 regions.\" The reduction in the time it takes to obtain a legal mining license could have encouraged more Ghanaians to see mining as a viable economic opportunity, leading to an increase in the number of applications."
+  },
+  {
+    "initial_id": 3,
+    "choice": "Ghanaians are influenced to seek mining licenses by their friends/family",
+    "rank": 3,
+    "justification": "This choice is not directly supported by the context sentences provided. While it is possible that Ghanaians could be influenced by their friends or family to seek mining licenses, there is no specific information in the context sentences that suggests this is the case."
+  },
+  {
+    "initial_id": 4,
+    "choice": "None of the above",
+    "rank": 4,
+    "justification": "This choice is not likely to be correct, as the context sentences provided do support the first two choices. The reduction in the time it takes to obtain a legal mining license could have encouraged both those participating in illegal mining and those not previously involved in mining to apply for a license, leading to an increase in the number of applications."
+  }
+]

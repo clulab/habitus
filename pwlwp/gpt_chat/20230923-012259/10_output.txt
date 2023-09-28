@@ -1,0 +1,32 @@
+[
+  {
+    "initial_id": 1,
+    "choice": "Ghanaians who partake in illegal mining activities harbor distrust towards the government and would opt to operate without a license.",
+    "rank": 1,
+    "justification": "This choice could be justified by the context that suggests a history of distrust and dissatisfaction among Ghanaians towards the government's handling of mining activities. For instance, the context states, 'Looking at the current situation, I think that the government is taking Ghanaians for granted.' and 'Illegal mining in the country has been a topical issue in the country for the past few years sparking major campaigns and outrage by Ghanaians especially over the negative impact on the activities on water bodies and lands.' This distrust could discourage illegal miners from seeking licenses, even with the new reforms."
+  },
+  {
+    "initial_id": 2,
+    "choice": "The new, accelerated licensing process is unfamiliar to Ghanaians who want a license.",
+    "rank": 2,
+    "justification": "This choice could be justified by the context that suggests that the mining industry in Ghana has been operating under a certain system for a long time, and sudden changes might be met with confusion or skepticism. For example, the context states, 'Whereas prior to 2013 many miners sought to establish long term operations in Ghana, after 2013 they began instead to follow a three year cycle.' This indicates that miners are used to a certain rhythm and might need time to adjust to the new licensing process."
+  },
+  {
+    "initial_id": 3,
+    "choice": "Ghanaians believe that a three-month period to get a mining license is excessive.",
+    "rank": 4,
+    "justification": "This choice is not directly supported by the context. However, it could be inferred from the context that suggests dissatisfaction with the government's handling of mining activities. For instance, the context states, 'Looking at the current situation, I think that the government is taking Ghanaians for granted.' This could imply that some Ghanaians might view the three-month period as another example of government inefficiency."
+  },
+  {
+    "initial_id": 4,
+    "choice": "Ghanaians participating in illegal mining activities are not willing to risk being taxed by the government, while those not participating in such activities are not interested in mining legally.",
+    "rank": 3,
+    "justification": "This choice could be justified by the context that suggests that illegal mining is a significant issue in Ghana, and those involved might be unwilling to expose themselves to government scrutiny and taxation by obtaining a license. For example, the context states, 'Illegal mining in the country has been a topical issue in the country for the past few years sparking major campaigns and outrage by Ghanaians especially over the negative impact on the activities on water bodies and lands.'"
+  },
+  {
+    "initial_id": 5,
+    "choice": "None of the prior stated causes are relevant.",
+    "rank": 5,
+    "justification": "This choice could be justified if one believes that the context does not provide sufficient evidence to support any of the other choices. For instance, the context does not directly address the reasons why the number of mining licenses granted has remained the same after the implementation of the new reform."
+  }
+]

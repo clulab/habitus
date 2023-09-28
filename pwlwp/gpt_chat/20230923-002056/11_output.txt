@@ -1,0 +1,26 @@
+[
+  {
+    "initial_id": 1,
+    "choice": "The reduced wait time made Ghanaians involved in illegal mining more inclined to apply for a license.",
+    "rank": 1,
+    "justification": "This explanation is plausible given the context provided. The context sentences indicate that illegal mining is a significant issue in Ghana, with many Ghanaians engaging in it due to the difficulty in securing permits and licenses for legal mining operations. For instance, one context sentence states, \"According to him, it is rather difficult for a Ghanaian to secure permits and licenses to operate mining firms, as opposed to foreigners, hence, forcing the Ghanaian youth to engage in illegal mining and its related activities.\" The reduction in wait time from three years to three months could have made the process of obtaining a legal mining license more accessible and appealing to Ghanaians involved in illegal mining, leading to a tripling in the number of applications received by the government."
+  },
+  {
+    "initial_id": 2,
+    "choice": "It is now considered a new economic venture by Ghanaians who were not previously engaged in mining.",
+    "rank": 2,
+    "justification": "This explanation is also plausible given the context provided. The context sentences indicate that mining is a capital-intensive operation, and many Ghanaians who manage to secure mining concessions end up passing such licenses to their foreign counterparts due to a lack of upfront capital. For instance, one context sentence states, \"Given that the small scale mining operation is capital intensive, the Ghanaians who do not have the upfront capital, albeit manage to secure the mining concessions, end up passing such licences to their Chinese counterparts.\" The reduction in wait time for obtaining a mining license could have made mining a more attractive economic venture to Ghanaians who were not previously engaged in it, leading to an increase in the number of applications."
+  },
+  {
+    "initial_id": 3,
+    "choice": "Friends and family have influenced Ghanaians to apply for mining licenses.",
+    "rank": 3,
+    "justification": "While this explanation is possible, there is no direct evidence in the context sentences to support it. The context sentences do not mention the role of friends and family in influencing Ghanaians to apply for mining licenses. However, it is conceivable that friends and family could have influenced Ghanaians to apply for mining licenses, especially given the reduction in wait time and the potential economic benefits of mining."
+  },
+  {
+    "initial_id": 4,
+    "choice": "None of the previously stated explanations.",
+    "rank": 4,
+    "justification": "This explanation suggests that none of the other explanations are correct. However, as discussed above, the first two explanations are plausible given the context provided. The third explanation is also possible, although there is no direct evidence in the context sentences to support it. Therefore, this explanation is not likely to be correct."
+  }
+]

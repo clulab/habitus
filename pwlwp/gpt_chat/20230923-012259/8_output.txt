@@ -1,0 +1,32 @@
+[
+  {
+    "initial_id": 1,
+    "choice": "Ghanaians participating in illicit mining activities have no faith in the government and would choose to function without a license.",
+    "rank": 1,
+    "justification": "This choice could be justified by the context that suggests a lack of trust and dissatisfaction among Ghanaians towards the government's handling of the mining sector. For instance, the context states, 'Looking at the current situation, I think that the government is taking Ghanaians for granted.' and 'We still have hope that the Government of Ghana has everything it takes to handle these Fulani herdsmen if it has been able to handle illegal mining to some extent.' These statements suggest that Ghanaians involved in illicit mining activities might have lost faith in the government's ability to manage the sector effectively and fairly, leading them to choose to operate without a license."
+  },
+  {
+    "initial_id": 2,
+    "choice": "Ghanaians desiring a license are not informed about the new, fast-tracked licensing process.",
+    "rank": 2,
+    "justification": "This choice could be justified by the context that suggests a lack of effective communication and awareness about the new reforms in the mining sector. For instance, the context states, 'The Minister of Science, Environment, Technology and Innovation also said the lifting of the ban on small-scale mining “does not mean foreign miners who are hiding in Ghana or escaped into neighbouring countries can come and continue their illegal activities.' This statement suggests that there might be a lack of awareness or misunderstanding about the new reforms among Ghanaians, leading to no change in the number of mining licenses granted."
+  },
+  {
+    "initial_id": 3,
+    "choice": "The period of three months to secure a mining license is viewed as too long by Ghanaians.",
+    "rank": 3,
+    "justification": "This choice could be justified by the context that suggests a sense of urgency and impatience among Ghanaians involved in the mining sector. For instance, the context states, 'The Ghana National Association of Small Scale Miners, is unhappy about government’s decision to extend the ban on small-scale mining by three more months.' This statement suggests that Ghanaians might view the three-month period to secure a mining license as too long, leading to no change in the number of mining licenses granted."
+  },
+  {
+    "initial_id": 4,
+    "choice": "Ghanaians who are part of illegal mining activities are not ready to take the risk of being taxed by the authorities, while those not involved in such activities show no interest in legal mining.",
+    "rank": 4,
+    "justification": "This choice could be justified by the context that suggests a fear of taxation and a lack of interest in legal mining among Ghanaians. For instance, the context states, 'Per this logic, it is therefore proper to allow foreigners to plunder our natural resources and give paltry sums in return, whilst the government wants the Ghanaian people to believe that it is ungodly to engage in small scale mining.' This statement suggests that Ghanaians involved in illegal mining activities might be unwilling to take the risk of being taxed by the authorities, while those not involved in such activities might show no interest in legal mining, leading to no change in the number of mining licenses granted."
+  },
+  {
+    "initial_id": 5,
+    "choice": "None of the aforementioned factors are applicable.",
+    "rank": 5,
+    "justification": "This choice could be justified by the context that suggests a complex and multifaceted situation in the mining sector in Ghana. For instance, the context states, 'Illegal mining in the country has been a topical issue in the country for the past few years sparking major campaigns and outrage by Ghanaians especially over the negative impact on the activities on water bodies and lands.' This statement suggests that the reasons for the unchanged number of mining licenses granted might be more complex and multifaceted than the aforementioned factors, involving a range of social, economic, and environmental issues."
+  }
+]

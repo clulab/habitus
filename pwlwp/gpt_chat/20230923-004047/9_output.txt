@@ -1,0 +1,26 @@
+[
+  {
+    "initial_id": 1,
+    "choice": "Ghanaians engaged in illegal mining felt encouraged to apply for a license due to the decreased wait time.",
+    "rank": 1,
+    "justification": "This choice suggests that the reduction in the time it takes to obtain a legal mining license encouraged those who were previously engaged in illegal mining to apply for a license. The justification for this is that the previous lengthy process of three years may have been a deterrent for those involved in illegal mining to legalize their operations. The reduction in wait time to three months makes the process more accessible and less time-consuming, thus encouraging those involved in illegal mining to apply for a license. This could explain the tripling of mining license applications received by the government within three months of implementing the reforms."
+  },
+  {
+    "initial_id": 2,
+    "choice": "Ghanaians who had not previously been involved in mining now view it as a novel economic possibility.",
+    "rank": 2,
+    "justification": "This choice suggests that the reduction in the time it takes to obtain a legal mining license has made mining a more attractive economic opportunity for Ghanaians who had not previously been involved in mining. The justification for this is that the previous lengthy process of three years may have been a deterrent for those considering mining as an economic opportunity. The reduction in wait time to three months makes the process more accessible and less time-consuming, thus encouraging those who had not previously considered mining to apply for a license. This could explain the tripling of mining license applications received by the government within three months of implementing the reforms."
+  },
+  {
+    "initial_id": 3,
+    "choice": "Friends and family often inspire Ghanaians to apply for mining licenses.",
+    "rank": 3,
+    "justification": "This choice suggests that the influence of friends and family often inspires Ghanaians to apply for mining licenses. While the context does not provide specific information about the role of friends and family in inspiring Ghanaians to apply for mining licenses, it is possible that the reduction in the time it takes to obtain a legal mining license has led to more friends and family encouraging others to apply. This could be because they see the reduced wait time as making the process more accessible and less time-consuming. This could explain the tripling of mining license applications received by the government within three months of implementing the reforms."
+  },
+  {
+    "initial_id": 4,
+    "choice": "None of the prior stated causes.",
+    "rank": 4,
+    "justification": "This choice suggests that none of the previously stated causes are responsible for the tripling of mining license applications received by the government within three months of implementing the reforms. The justification for this would be that other factors not mentioned in the choices are responsible for the increase in applications. These could include factors such as changes in the economic environment, increased awareness about the importance of legal mining, or changes in government policies related to mining. Without specific information about these other potential factors, it is difficult to determine their potential impact on the increase in mining license applications."
+  }
+]

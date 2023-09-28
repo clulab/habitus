@@ -1,0 +1,32 @@
+[
+  {
+    "initial_id": 1,
+    "choice": "Ghanaians who partake in illegal mining activities harbor distrust towards the government and would opt to operate without a license.",
+    "rank": 1,
+    "justification": "This choice could be justified by the context that suggests a history of corruption and difficulty in obtaining mining licenses, particularly for Ghanaians. The context states, 'According to him, it is rather difficult for a Ghanaian to secure permits and licenses to operate mining firms, as opposed to foreigners, hence, forcing the Ghanaian youth to engage in illegal mining and its related activities.' This suggests that there may be a level of distrust towards the government and its processes, leading to a preference for illegal mining activities. Additionally, the context mentions, 'The time has now come for Ghanaian society to seize the moment and end the impunity of the mining sector - in which fraudulently acquired rights resulting from corruption (payments of bribes?' This further suggests a history of corruption in the sector, which could contribute to the distrust."
+  },
+  {
+    "initial_id": 2,
+    "choice": "The new, faster licensing process is unknown to Ghanaians who want a license.",
+    "rank": 2,
+    "justification": "This choice could be justified by the context that suggests that changes in the mining sector may not be effectively communicated or understood by Ghanaians. The context states, 'This betrays a weak understanding of the mining sector in Ghana, where extant agreements are crafted to enable continuous renewal so long as gold is being discovered and commercially mined.' This suggests that there may be a lack of understanding or awareness about the changes in the licensing process, leading to a lack of increase in the number of licenses granted."
+  },
+  {
+    "initial_id": 3,
+    "choice": "Ghanaians believe that a three-month period to get a mining license is excessive.",
+    "rank": 3,
+    "justification": "This choice could be justified by the context that suggests that the process of obtaining a mining license has traditionally been difficult and time-consuming for Ghanaians. The context states, 'According to him, it is rather difficult for a Ghanaian to secure permits and licenses to operate mining firms, as opposed to foreigners, hence, forcing the Ghanaian youth to engage in illegal mining and its related activities.' This suggests that Ghanaians may perceive the three-month period as still being excessive, despite it being a reduction from the previous time frame."
+  },
+  {
+    "initial_id": 4,
+    "choice": "The risk of being taxed by authorities deters Ghanaians involved in illegal mining, while those not involved in such activities have no interest in pursuing legal mining.",
+    "rank": 4,
+    "justification": "This choice could be justified by the context that suggests that taxation and the risk of penalties may deter Ghanaians from pursuing legal mining. The context states, 'The revival of these two mines, the expansion of output by some existing mines, and the reduction of the withholding tax rate on unprocessed gold by small-scale miners, which was introduced in 2015, from three percent (3%) to one and a half percent (1.5%), have contributed significantly to Ghana’s new position on the continent.' This suggests that taxation has been a significant factor in the mining sector, and could potentially deter Ghanaians from pursuing legal mining."
+  },
+  {
+    "initial_id": 5,
+    "choice": "None of the prior stated causes are relevant.",
+    "rank": 5,
+    "justification": "This choice could be justified by the context that suggests that there may be other factors at play that are not covered by the prior stated causes. For example, the context mentions, 'The Ghanaian government has taken the issue of illegal mining seriously because apart from the impact on our economy, its impact on the environment is dire.' This suggests that environmental concerns may be a significant factor influencing the number of mining licenses granted. Additionally, the context states, 'The sector Minister said because mining in Ghana had gone through many changes since the first Europeans arrived in the country in 1471, there was the need to adjust Ghana’s mining laws and policies to accommodate changing circumstances.' This suggests that the changing circumstances and laws in the mining sector may also be influencing the number of licenses granted."
+  }
+]

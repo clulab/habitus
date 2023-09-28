@@ -1,0 +1,32 @@
+[
+  {
+    "initial_id": 1,
+    "choice": "Ghanaians participating in illegal mining do not believe in the government and would rather continue their operations without a license.",
+    "rank": 1,
+    "justification": "This choice could be justified by the context that suggests a lack of trust and dissatisfaction among Ghanaians towards the government's handling of the mining sector. For instance, one context sentence states, 'Looking at the current situation, I think that the government is taking Ghanaians for granted.' This sentiment could discourage illegal miners from seeking a license, as they may not trust the government's intentions or processes. Additionally, the context sentence, 'Illegal mining in the country has been a topical issue in the country for the past few years sparking major campaigns and outrage by Ghanaians especially over the negative impact on the activities on water bodies and lands,' suggests that illegal mining is a widespread issue, indicating that many miners may prefer to continue their operations without a license."
+  },
+  {
+    "initial_id": 2,
+    "choice": "Ghanaians aspiring for a license are uninformed about the new, expedited licensing system.",
+    "rank": 2,
+    "justification": "This choice could be justified by the context that suggests a lack of communication and transparency between the government and the public regarding mining regulations. For example, the context sentence, 'We hope that the Ghanaian government will pay due attention to this situation, take the necessary action to stop such things from happening again and guide the media to give an objective coverage on the illegal mining issue so as to create a good environment for further development of our bilateral exchanges and cooperation,' implies a desire for better communication from the government. If Ghanaians are not adequately informed about the new, expedited licensing system, they may not apply for a license, resulting in the number of granted licenses remaining the same."
+  },
+  {
+    "initial_id": 3,
+    "choice": "Ghanaians perceive the three-month duration to get a mining license as too prolonged.",
+    "rank": 3,
+    "justification": "This choice could be justified by the context that suggests a history of long waiting periods for mining licenses. The context sentence, 'Instead of three years, they can now do it in three months,' implies that the previous waiting period was three years. If Ghanaians perceive the new three-month duration as still too long, they may be discouraged from applying for a license, leading to the number of granted licenses remaining the same."
+  },
+  {
+    "initial_id": 4,
+    "choice": "Ghanaians who participate in illegal mining are not willing to risk being taxed by the authorities, while those who do not participate in such activities have no interest in legal mining.",
+    "rank": 4,
+    "justification": "This choice could be justified by the context that suggests a fear of taxation among illegal miners and a lack of interest in legal mining among non-miners. For example, the context sentence, 'The minister noted that with the support of the House, under the Minerals and Mining Amendment Act, 2019 (Act 995), the government had enhanced the punishment regime and increased the punishment for people engaging in illegal mining to a minimum of 15 years imprisonment together with a fine of not less than 10, 000 penalty units for Ghanaians,' suggests that illegal miners may fear being taxed or penalized by the authorities. Additionally, the context sentence, 'His frustration stems from the fact that the small-scale mining sector has enormous potentials that can easily change the economic fortunes of the country because “the mining law is explicit that it is only Ghanaians who can participate in that sector”,' suggests that many Ghanaians who do not participate in illegal mining may not be interested in legal mining."
+  },
+  {
+    "initial_id": 5,
+    "choice": "None of the previously discussed scenarios are accurate.",
+    "rank": 5,
+    "justification": "This choice could be justified if none of the context sentences support the previous scenarios. However, as discussed above, there are context sentences that provide support for each of the previous scenarios. Therefore, this choice is less likely to be accurate."
+  }
+]

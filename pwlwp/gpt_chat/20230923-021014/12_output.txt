@@ -1,0 +1,32 @@
+[
+  {
+    "initial_id": 1,
+    "choice": "Ghanaians engaged in unlawful mining activities do not have confidence in the government and would prefer to carry out their operations without a license.",
+    "rank": 2,
+    "justification": "This could be a plausible reason for the number of mining licenses remaining the same even after the reform. If the local residents engaged in illegal mining activities do not trust the government, they might prefer to continue their operations without a license. This lack of confidence could stem from past experiences of corruption, inefficiency, or perceived unfairness in the government's handling of mining licenses. Despite the reform, these individuals might believe that the process is still fraught with difficulties or that the government might not uphold its end of the bargain. Therefore, they choose to continue mining illegally, resulting in the number of granted licenses remaining unchanged."
+  },
+  {
+    "initial_id": 2,
+    "choice": "Ghanaians in need of a license are oblivious to the new, expedited licensing process.",
+    "rank": 1,
+    "justification": "This could be another plausible reason for the unchanged number of mining licenses. If the local residents who need a mining license are not aware of the new, expedited process, they would not apply for a license under the new system. The government's reform would be ineffective if the information about it does not reach the intended audience. This could be due to inadequate communication or outreach by the government, or due to the residents' lack of access to the channels through which the government disseminated the information. As a result, these individuals continue to operate without a license, keeping the number of granted licenses the same."
+  },
+  {
+    "initial_id": 3,
+    "choice": "It is thought by Ghanaians that three months is an overly long time to receive a mining license.",
+    "rank": 4,
+    "justification": "This could be a potential reason for the unchanged number of mining licenses. If the local residents believe that three months is still too long to wait for a mining license, they might choose not to apply for one. This perception could be due to the urgency of their economic needs, which illegal mining might meet more immediately. Alternatively, they might compare the waiting time with that in other countries or industries and find it excessive. Therefore, despite the reform, these individuals continue to mine illegally, resulting in the number of granted licenses remaining the same."
+  },
+  {
+    "initial_id": 4,
+    "choice": "Ghanaians participating in illegal mining activities are not ready to face the risk of being taxed, while those not participating in such activities are not attracted to legal mining.",
+    "rank": 3,
+    "justification": "This could be a plausible reason for the unchanged number of mining licenses. If the local residents engaged in illegal mining activities are unwilling to face the risk of being taxed, they might prefer to continue their operations without a license. The prospect of taxation could deter them from legalizing their operations, as it would reduce their earnings. On the other hand, those not engaged in illegal mining might not be attracted to legal mining, perhaps due to the risks, costs, or labor involved. Therefore, despite the reform, these individuals either continue to mine illegally or do not start mining at all, keeping the number of granted licenses the same."
+  },
+  {
+    "initial_id": 5,
+    "choice": "None of the previously stated reasons are pertinent.",
+    "rank": 5,
+    "justification": "This option suggests that none of the previously stated reasons are relevant to the situation. This could be the case if there are other factors at play that have not been mentioned. For example, there might be logistical issues in the application process, or the local residents might have other sources of income that are more lucrative or less risky than mining. Alternatively, the unchanged number of licenses might be due to a delay in the processing of applications submitted under the new system. Therefore, while the reform might eventually lead to an increase in the number of granted licenses, this increase has not yet been observed a month after the implementation of the reform."
+  }
+]
