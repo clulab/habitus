@@ -219,7 +219,7 @@ def rank_choices(introduction: str, context: str, choices: list[str]) -> (list[t
 	#print("@@@ " + str(last_answer))
 
 	question \
-= f"""Rank each choice and copy the justification as JSON format with the fields: (initial_id, choice, rank, justification)"""
+= f"""Rank each choice from most likely to be true to least likely and copy the justification as JSON format with the fields: (id, choice, rank, justification)"""
 
 	#print("U " + question)
 
@@ -269,28 +269,37 @@ def one_explanation(outputs: list[str]) -> str:
 
 	return result
 
-def compute_ranking(paraphrases: list[str], introduction: str, context: str, gamma: float, scenario: Scenario):
+def compute_ranking(temporary_choices: list[list[str]], introduction: str, context: str, gamma: float, scenario: Scenario):
 
-	final_ranks = [0] * len(paraphrases)
+	final_rankings = {}
+
+	for choice in temporary_choices[0]:
+		final_rankings[choice] = 0
 
 	all_outputs = []
 
-	for i in range(number_of_paraphrases):
+	for i in range(len(temporary_choices)):
 		print("STARTING " + str(i))
-		choices_chosen = [choice_list[i] for choice_list in paraphrases]
-		json = rank_choices(introduction, context, choices_chosen)
+		#choices_chosen = [choice_list[i] for choice_list in paraphrases]
+		json = rank_choices(introduction, context, temporary_choices[i])
 		all_outputs.append(json)
 		for item in json:
-			final_ranks[int(item["initial_id"])-1] += number_of_paraphrases - int(item["rank"])
+			final_rankings[item["choice"]] += len(temporary_choices[0]) - int(item["rank"])
+			#final_ranks[int(item["initial_id"])-1] += number_of_paraphrases - int(item["rank"]) - 1
 
-	print(final_ranks)
+	print(final_rankings)
 
 	sum = 0
 
-	for rank in final_ranks:
+	for rank in final_rankings.values():
 		sum += numpy.exp(rank*gamma)
 
-	probabilities = [(numpy.exp(rank*gamma)) / sum for rank in final_ranks]
+	probabilities = [0 for _ in range(len(scenario.choices))]
+
+	for i in range(len(scenario.choices)):
+		probabilities[i] = numpy.exp(final_rankings[scenario.choices[i]]*gamma) / sum
+
+	#probabilities = [(numpy.exp(rank*gamma)) / sum for rank in final_ranks]
 
 	print("The final probabilities for each choice are: " + str(probabilities))
 
@@ -301,10 +310,10 @@ def compute_ranking(paraphrases: list[str], introduction: str, context: str, gam
 	print("")
 
 	for i in range(len(scenario.choices)):
-		print("Choice " + str(chr(ord('A') + i)) + " (" + str(paraphrases[i][number_of_paraphrases-1]) + "):")
+		print("Choice " + str(chr(ord('A') + i)) + " (" + str(scenario.choices[i]) + "):")
 		correct_justification = ""
 		for item in json:
-			if int(item["initial_id"]) - 1 == i:
+			if item["choice"] == scenario.choices[i]:
 				correct_justification = item["justification"]
 		print("Justification: " + str(correct_justification))
 		print("")
@@ -346,9 +355,15 @@ if __name__ == "__main__":
 
 	matcher = Matcher(sentence_transformer, input_vectors, data_frame, threshold, threshold2)
 
-	scenario_chosen = scenario_official_4b
+	scenario_chosen = scenario_official_2b
 
-	scenario_match = matcher.match_scenario(scenario_chosen, print_sentences, filter_first, tokens_allowed, False, True)
+	combinations = []
+	temporary_choices = []
+
+	for i in range(len(scenario_chosen.choices)):
+		temporary_choices.append(numpy.roll(scenario_chosen.choices, i))
+
+	scenario_match = matcher.match_scenario(scenario_chosen, print_sentences, filter_first, tokens_allowed, False, False)
 	#scenario_match = ""
 
 	choices_str = ""
@@ -356,28 +371,7 @@ if __name__ == "__main__":
 	for index in range(len(scenario_chosen.choices)):
 		choices_str += str(index+1) + ") " + scenario_chosen.choices[index] + "\n\n"
 
-	#final_sentence = "You have to look carefully at the following sentences and then rank several choices based on which" \
-#					 "ones are most likely to be true. The sentences are: \n\n" + scenario_match + "\n\n Now rank the " \
-#					 "following choices based on their likelihood while also giving intuition behind the choices from" \
-#					 "the context given above:\n\n" + choices_str
-
-	#print(scenario_match)
-
-	paraphrases = []
-
-	for choice in scenario_chosen.choices:
-		result = paraphrase(choice, scenario_chosen.introduction)
-		paraphrases.append(result)
-		if len(result) != number_of_paraphrases:
-			print("ERROR we don't have " + str(number_of_paraphrases) + "paraphrases")
-
-	choices_chosen = []
-
-	for paraphrase in paraphrases:
-		choices_chosen.append(paraphrase[0])
-
-	compute_ranking(paraphrases, scenario_chosen.introduction, scenario_match, gamma, scenario_chosen)
-
+	compute_ranking(temporary_choices, scenario_chosen.introduction, scenario_match, gamma, scenario_chosen)
 
 	print("CONTEXT:")
 
