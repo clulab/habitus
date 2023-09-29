@@ -73,7 +73,7 @@ class MessyText(val messy: String) {
   }
 }
 
-object CitationCounts extends App {
+object CitationCountsApp extends App {
   val inputDirName = args.lift(0).getOrElse("../corpora/chatgpt/report")
 
   def after(text: String, startText: String): String = {
@@ -125,6 +125,8 @@ object CitationCounts extends App {
       val count = quotes.length
       val choice = ('A' + index).toChar
 
+      if (file.getPath == "../corpora/chatgpt/report/scenario_3/causal.txt")
+        println("Check this!")
       println(s"${file.getPath}\t$choice\t$count")
     }
   }
