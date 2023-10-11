@@ -9,7 +9,9 @@ object PageCorpus {
 
   def apply(fileName: String): PageCorpus = {
     val items: Seq[Page] = {
-      val lines = Corpus.getLines(fileName)
+      val lines = Corpus
+          .getLines(fileName)
+          .filterNot(_.startsWith("#"))
       val pages = lines.map(Page(_))
 
       pages
