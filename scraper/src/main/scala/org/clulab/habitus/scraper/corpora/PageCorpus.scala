@@ -11,6 +11,7 @@ object PageCorpus {
     val items: Seq[Page] = {
       val lines = Corpus
           .getLines(fileName)
+          .filterNot(_.isEmpty)
           .filterNot(_.startsWith("#"))
       val pages = lines.map(Page(_))
 
