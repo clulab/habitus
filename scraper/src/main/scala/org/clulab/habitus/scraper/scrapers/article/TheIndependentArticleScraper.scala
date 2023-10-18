@@ -15,7 +15,7 @@ class TheIndependentArticleScraper extends PageArticleScraper(TheIndependentDoma
     val doc = browser.parseString(html)
     val title = doc.title
     val dateLineOpt = (doc >> elementList("span.tie-date")).headOption.map(_.text.trim)
-    val paragraphs = doc >> elementList("div.entry > p")
+    val paragraphs = doc >> elementList("div.entry p")
     val byLineOpt = (doc >> elementList("span.post-meta-author")).headOption.map(_.text.trim)
         .orElse {
           val bylines = paragraphs.flatMap { paragraph =>

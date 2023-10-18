@@ -17,7 +17,13 @@ class TheObserverArticleScraper extends PageArticleScraper(TheObserverDomain) {
     val dateLineOpt = (doc >> elementList("ul > li > time")).headOption.map(_.attr("datetime").trim)
     val byLineOpt = (doc >> elementList("ul > li.createdby > span"))
         .filter(_.attr("itemprop") == "name").headOption.map(_.text.trim)
-    val paragraphs = doc >> elementList("div.itemBody p")
+    // Use any p or a div without a class.
+    val paragraphs = (doc >> elementList("div.itemBody p, div.itemBody div"))
+      .filter { element =>
+        element.tagName == "p" || (
+          element.tagName == "div" && !element.hasAttr("class") && element.children.forall(_.tagName != "div")
+        )
+      }
     val text = paragraphs
       .flatMap { paragraph =>
         val html = paragraph.innerHtml
