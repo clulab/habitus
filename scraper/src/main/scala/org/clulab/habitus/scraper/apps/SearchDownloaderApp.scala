@@ -10,8 +10,8 @@ import org.clulab.habitus.scraper.downloaders.SearchCorpusDownloader
   * directory structure under baseDirName.
   */
 object SearchDownloaderApp extends App {
-  val corpusFileName = args.lift(0).getOrElse("./scraper/corpora/multi2/livestock/searchcorpus.txt")
-  val baseDirName = args.lift(1).getOrElse("../corpora/multi2/livestock/searches")
+  val corpusFileName = args.lift(0).getOrElse("./scraper/corpora/uganda/karamoja/searchcorpus.txt")
+  val baseDirName = args.lift(1).getOrElse("../corpora/uganda/karamoja/searches")
   val searchCorpus = SearchCorpus(corpusFileName)
   val downloader = new SearchCorpusDownloader(searchCorpus)
   val browser: Browser = new HabitusBrowser()
