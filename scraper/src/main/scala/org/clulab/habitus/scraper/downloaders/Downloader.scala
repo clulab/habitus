@@ -27,7 +27,8 @@ class PageCorpusDownloader(val corpus: PageCorpus) {
     new ThreeNewsDownloader(),
     new TheIndependentDownloader(),
     new TheObserverDownloader(),
-    new KfmDownloader()
+    new KfmDownloader(),
+    new NbsDownloader()
   )
 
   def getPageDownloader(page: Page): PageDownloader = {
@@ -63,7 +64,8 @@ class SearchCorpusDownloader(val corpus: SearchCorpus) {
     new ThreeNewsDownloader(),
     new TheIndependentDownloader(),
     new TheObserverDownloader(),
-    new KfmDownloader()
+    new KfmDownloader(),
+    new NbsDownloader()
   )
 
   def getPageDownloader(page: Page): PageDownloader = {
