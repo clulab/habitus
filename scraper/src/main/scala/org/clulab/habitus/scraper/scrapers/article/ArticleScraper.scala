@@ -49,7 +49,8 @@ class CorpusArticleScraper(val corpus: PageCorpus) {
     new TheIndependentArticleScraper(),
     new TheObserverArticleScraper(),
     new KfmArticleScraper(),
-    new NbsArticleScraper()
+    new NbsArticleScraper(),
+    new AnkoleTimesArticleScraper()
   )
 
   def getPageScraper(page: Page): PageArticleScraper = {
