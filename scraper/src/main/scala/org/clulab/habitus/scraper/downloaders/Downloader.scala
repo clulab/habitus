@@ -29,7 +29,8 @@ class PageCorpusDownloader(val corpus: PageCorpus) {
     new TheObserverDownloader(),
     new KfmDownloader(),
     new NbsDownloader(),
-    new AnkoleTimesDownloader()
+    new AnkoleTimesDownloader(),
+    new NilePostDownloader()
   )
 
   def getPageDownloader(page: Page): PageDownloader = {
@@ -67,7 +68,8 @@ class SearchCorpusDownloader(val corpus: SearchCorpus) {
     new TheObserverDownloader(),
     new KfmDownloader(),
     new NbsDownloader(),
-    new AnkoleTimesDownloader()
+    new AnkoleTimesDownloader(),
+    new NilePostDownloader()
   )
 
   def getPageDownloader(page: Page): PageDownloader = {
