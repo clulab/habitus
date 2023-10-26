@@ -14,7 +14,7 @@ class NbsArticleScraper extends PageArticleScraper(NbsDomain) {
     val title = doc.title
     val datelineOpt = (doc >> elementList("div.main div.post-date")).headOption.map(_.text.trim)
     val bylineOpt = (doc >> elementList("div.main div.post-author")).headOption.map(_.text.trim)
-    val paragraphs = doc >> elementList("div.main div.article-content > p")
+    val paragraphs = doc >> elementList("div.main div.article-content > p, div.main div.article-content div.markdown > p")
     val text = paragraphs
       .map { paragraph =>
         paragraph.text.trim
