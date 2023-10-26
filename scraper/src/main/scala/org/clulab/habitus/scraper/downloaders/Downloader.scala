@@ -32,7 +32,9 @@ class PageCorpusDownloader(val corpus: PageCorpus) {
     new AnkoleTimesDownloader(),
     new NilePostDownloader(),
     new UgStandardDownloader(),
-    new CapitalRadioDownloader()
+    new CapitalRadioDownloader(),
+    new UbcDownloader(),
+    new DeltaDownloader()
   )
 
   def getPageDownloader(page: Page): PageDownloader = {
@@ -73,7 +75,9 @@ class SearchCorpusDownloader(val corpus: SearchCorpus) {
     new AnkoleTimesDownloader(),
     new NilePostDownloader(),
     new UgStandardDownloader(),
-    new CapitalRadioDownloader()
+    new CapitalRadioDownloader(),
+    new UbcDownloader(),
+    new DeltaDownloader()
   )
 
   def getPageDownloader(page: Page): PageDownloader = {
