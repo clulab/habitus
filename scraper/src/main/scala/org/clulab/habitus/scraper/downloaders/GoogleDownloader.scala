@@ -10,13 +10,23 @@ import sttp.client4.Response
 import sttp.model.Uri
 
 import java.io.{File, FileOutputStream}
-import java.net.URI
+import java.net.{URI, URL}
 import java.nio.file.Files
+import java.util.Properties
 import scala.util.{Try, Using}
 
 class GoogleDownloader extends GetPageDownloader(GoogleDomain) {
+  val (searchEngineId, apiKey) = {
+    val properties = new Properties()
+    Using.resource(FileUtils.newBufferedInputStream("../google/google.properties")) { bufferedInputStream =>
+      properties.load(bufferedInputStream)
+    }
 
-  override def download(browser: Browser, page: Page, baseDirName: String, inquiryOpt: Option[String] = None): Unit = {
+    (properties.getProperty(GoogleDownloader.SEARCH_ENGINE_ID), properties.getProperty(GoogleDownloader.API_KEY))
+  }
+
+  // This downloads the PDF pages from the external sites.
+  def downloadExtern(page: Page, baseDirName: String): Unit = {
     val domain = page.url.getHost.split('.') /*.takeRight(2)*/.mkString(".") // Shorten to one .
     val dirName = cleaner.clean(domain)
     val subDirName = s"$baseDirName/$dirName"
@@ -43,8 +53,6 @@ class GoogleDownloader extends GetPageDownloader(GoogleDomain) {
     if (!new File(pdfLocationName).exists) {
       // Use ProgressBar instead.
       // println(s"Downloading ${page.url.toString} to $htmlLocationName")
-
-      // Probably can't use Browser here.
       val pdf = Try(getPdf(dirtyFile)).getOrElse {
         // Before retry, wait for 3 seconds, which seems to help.
         Thread.sleep(3000)
@@ -56,4 +64,55 @@ class GoogleDownloader extends GetPageDownloader(GoogleDomain) {
       }
     }
   }
+
+  // This downloads the JSON search results from Google.
+  def downloadIntern(page: Page, baseDirName: String, inquiry: String): Unit = {
+    val domain = page.url.getHost.split('.') /*.takeRight(2)*/.mkString(".") // Shorten to one .
+    val dirName = cleaner.clean(domain)
+    val subDirName = s"$baseDirName/$dirName"
+
+    Files.createDirectories(new File(subDirName).toPath)
+
+    val dirtyFile = page.url.getFile.substring(1) // Remove initial /
+    val file = cleaner.clean(dirtyFile)
+    val jsonFileName = file + ".json"
+    val jsonLocationName = s"$subDirName/$jsonFileName"
+    val url = page.url.toString
+        .replace(s"$${${GoogleDownloader.SEARCH_ENGINE_ID}}", searchEngineId)
+        .replace(s"$${${GoogleDownloader.API_KEY}}", apiKey)
+
+    def getJson(url: String): String = {
+      val uri = Uri(new URI(url))
+      val response = quickRequest.get(uri).send()
+      val result = response.body
+
+      result
+    }
+
+    if (!new File(jsonLocationName).exists) {
+      // Use ProgressBar instead.
+      // println(s"Downloading ${page.url.toString} to $htmlLocationName")
+      val json = Try(getJson(url)).getOrElse {
+        // Before retry, wait for 3 seconds, which seems to help.
+        Thread.sleep(3000)
+        getJson(url)
+      }
+
+      // Find out how many to write here.
+      Using.resource(FileUtils.printWriterFromFile(jsonLocationName)) { printWriter =>
+        printWriter.println(json)
+      }
+    }
+  }
+
+  override def download(browser: Browser, page: Page, baseDirName: String, inquiryOpt: Option[String] = None): Unit = {
+    if (inquiryOpt.isEmpty) downloadExtern(page, baseDirName)
+    else downloadIntern(page, baseDirName, inquiryOpt.get)
+  }
+}
+
+object GoogleDownloader {
+  val SEARCH_ENGINE_ID = "SEARCH_ENGINE_ID"
+  val API_KEY = "API_KEY"
+  val LIMIT = 10
 }

@@ -1,11 +1,16 @@
-https://www.independent.co.ug/?s=karamoja	karamoja
-https://www.observer.ug/search?searchword=karamoja&searchphrase=all	karamoja
-https://www.kfm.co.ug/?s=karamoja	karamoja
-https://nbs.ug/?s=karamoja	karamoja
-https://ankoletimes.co.ug/?s=karamoja	karamoja
+#https://www.independent.co.ug/?s=karamoja	karamoja
+#https://www.observer.ug/search?searchword=karamoja&searchphrase=all	karamoja
+#https://www.kfm.co.ug/?s=karamoja	karamoja
+#https://nbs.ug/?s=karamoja	karamoja
+#https://ankoletimes.co.ug/?s=karamoja	karamoja
+
+# Skip this one
 # https://nilepost.co.ug/?s=karamoja	karamoja
-https://www.ugstandard.com/?s=karamoja	karamoja
-https://capitalradio.co.ug/search/?query=karamoja	karamoja
-https://ubc.go.ug/?s=karamoja	karamoja
-https://delta.ssoccom.ug/?s=karamoja	karamoja
+
+#https://www.ugstandard.com/?s=karamoja	karamoja
+#https://capitalradio.co.ug/search/?query=karamoja	karamoja
+#https://ubc.go.ug/?s=karamoja	karamoja
+#https://delta.ssoccom.ug/?s=karamoja	karamoja
+
 # https://www.google.com/?s=karamoja	karamoja
+https://customsearch.googleapis.com/customsearch/v1?cx=${SEARCH_ENGINE_ID}&fileType=pdf&hq=karamoja&q=uganda&key=${API_KEY}	karamoja
