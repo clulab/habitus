@@ -5,7 +5,7 @@ import org.clulab.habitus.scraper.Page
 import org.clulab.habitus.scraper.domains.GoogleDomain
 import org.clulab.habitus.scraper.scrapes.IndexScrape
 import org.clulab.utils.FileUtils
-import org.json4s.{DefaultFormats, JObject, JString}
+import org.json4s.{DefaultFormats, JObject}
 import org.json4s.jackson.JsonMethods
 
 import java.io.PrintWriter
@@ -18,7 +18,8 @@ class GoogleIndexScraper extends PageIndexScraper(GoogleDomain) {
     val links = (jObject \ "items").extract[Array[JObject]].array.map { jObject =>
       (jObject \ "link").extract[String]
     }
-    val googleLinks = links.map { link => "https://www.google.com/" + link}
+    val prefix = s"https://${domain.domain}/"
+    val googleLinks = links.map { link => prefix + link}
     val scrape = IndexScrape(googleLinks)
 
     scrape

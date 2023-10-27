@@ -16,7 +16,7 @@ abstract class PageSearchScraper(domain: Domain) extends Scraper[SearchScrape](d
 
   def scrape(browser: Browser, page: Page, html: String): SearchScrape
 
-  def scrapeTo(browser: Browser, inquirer: PageInquirer, search: Search, baseDirName: String, printWriter: PrintWriter): Unit = {
+  def scrapeTo(browser: Browser, page: Page, inquirer: PageInquirer, search: Search, baseDirName: String, printWriter: PrintWriter): Unit = {
     val page = inquirer.inquire(search.inquiry)
     val (_, _, html) = readHtml(page, baseDirName)
     val scraped = scrape(browser, page, html)
@@ -39,7 +39,8 @@ class CorpusSearchScraper(val corpus: SearchCorpus) {
     new GnaSearchScraper(),
     new HappyGhanaSearchScraper(),
     new TheChronicleSearchScraper(),
-    new ThreeNewsSearchScraper()
+    new ThreeNewsSearchScraper(),
+    new GoogleSearchScraper()
   )
 
   def getPageScraper(page: Page): PageSearchScraper = {
@@ -60,7 +61,7 @@ class CorpusSearchScraper(val corpus: SearchCorpus) {
 
         val scraper = getPageScraper(page)
         val inquirer = corpusInquirer.getPageInquirer(page)
-        val scrapeTry = Try(scraper.scrapeTo(browser, inquirer, search, baseDirName, printWriter))
+        val scrapeTry = Try(scraper.scrapeTo(browser, page, inquirer, search, baseDirName, printWriter))
 
         if (scrapeTry.isFailure)
           println(s"Scrape of ${page.url.toString} failed!")

@@ -33,12 +33,12 @@ class GoogleDownloader extends GetPageDownloader(GoogleDomain) {
 
     Files.createDirectories(new File(subDirName).toPath)
 
-    val dirtyFile = page.url.getFile.substring(1) // Remove initial /
-    val file = cleaner.clean(dirtyFile)
+    val file = cleaner.clean(page.url.getFile)
     val pdfFileName = file + ".pdf"
     val pdfLocationName = s"$subDirName/$pdfFileName"
 
-    def getPdf(url: String): Array[Byte] = {
+    def getPdf(page: Page): Array[Byte] = {
+      val url = page.url.getFile.substring(1) // Remove initial /
       val uri = Uri(new URI(url))
       val response = basicRequest.get(uri).response(asByteArray).send()
       val byteArrayEither = response.body
@@ -53,10 +53,11 @@ class GoogleDownloader extends GetPageDownloader(GoogleDomain) {
     if (!new File(pdfLocationName).exists) {
       // Use ProgressBar instead.
       // println(s"Downloading ${page.url.toString} to $htmlLocationName")
-      val pdf = Try(getPdf(dirtyFile)).getOrElse {
+      val pdfTry = Try(getPdf(page))
+      val pdf = pdfTry.getOrElse {
         // Before retry, wait for 3 seconds, which seems to help.
         Thread.sleep(3000)
-        getPdf(dirtyFile)
+        getPdf(page)
       }
 
       Using.resource(new FileOutputStream(pdfLocationName)) { fileOutputStream =>
@@ -106,13 +107,20 @@ class GoogleDownloader extends GetPageDownloader(GoogleDomain) {
   }
 
   override def download(browser: Browser, page: Page, baseDirName: String, inquiryOpt: Option[String] = None): Unit = {
-    if (inquiryOpt.isEmpty) downloadExtern(page, baseDirName)
-    else downloadIntern(page, baseDirName, inquiryOpt.get)
+    if (inquiryOpt.isEmpty) {
+      val file = page.url.getFile
+
+      if (file.startsWith("/http"))
+        downloadExtern(page, baseDirName)
+      else
+        downloadIntern(page, baseDirName, "")
+    }
+    else
+      downloadIntern(page, baseDirName, inquiryOpt.get)
   }
 }
 
 object GoogleDownloader {
   val SEARCH_ENGINE_ID = "SEARCH_ENGINE_ID"
   val API_KEY = "API_KEY"
-  val LIMIT = 10
 }

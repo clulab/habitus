@@ -9,7 +9,7 @@ abstract class PageInquirer(domain: Domain) extends DomainSpecific(domain) {
   val scheme = "https"
   val fragment = null
 
-  def inquire(inquiry: String, indexOpt: Option[Int] = None): Page = {
+  def inquire(inquiry: String, indexOpt: Option[Int] = None, templatePageOpt: Option[Page] = None): Page = {
     val escapedInquiry = inquiry.replace(" ", "+")
     val (path, query) = indexOpt match {
       case None => ("/", s"s=$escapedInquiry")
@@ -31,7 +31,8 @@ class CorpusInquirer {
     new GnaInquirer(),
     new HappyGhanaInquirer(),
     new TheChronicleInquirer(),
-    new ThreeNewsInquirer()
+    new ThreeNewsInquirer(),
+    new GoogleInquirer()
   )
 
   def getPageInquirer(page: Page): PageInquirer = {
