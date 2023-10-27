@@ -34,7 +34,8 @@ class PageCorpusDownloader(val corpus: PageCorpus) {
     new UgStandardDownloader(),
     new CapitalRadioDownloader(),
     new UbcDownloader(),
-    new DeltaDownloader()
+    new DeltaDownloader(),
+    new GoogleDownloader()
   )
 
   def getPageDownloader(page: Page): PageDownloader = {
