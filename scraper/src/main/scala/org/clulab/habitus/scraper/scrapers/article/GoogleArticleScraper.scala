@@ -8,7 +8,8 @@ import org.clulab.pdf2txt.Pdf2txt
 import org.clulab.pdf2txt.common.utils.MetadataHolder
 import org.clulab.pdf2txt.languageModel.GigawordLanguageModel
 import org.clulab.pdf2txt.preprocessor.{CasePreprocessor, LigaturePreprocessor, LineBreakPreprocessor, LinePreprocessor, NumberPreprocessor, ParagraphPreprocessor, UnicodePreprocessor, WordBreakByHyphenPreprocessor, WordBreakBySpacePreprocessor}
-import org.clulab.pdf2txt.scienceparse.ScienceParseConverter
+// import org.clulab.pdf2txt.scienceparse.ScienceParseConverter
+import org.clulab.pdf2txt.tika.TikaConverter
 import org.clulab.utils.FileUtils
 import org.json4s.DefaultFormats
 
@@ -62,7 +63,11 @@ class GoogleArticleScraper extends PageArticleScraper(GoogleDomain) {
 object GoogleArticleScraper {
   val loops = 1
   lazy val pdf2txt = {
-    val pdfConverter = new ScienceParseConverter()
+    // In order to use ScienceParse, the jars must be included directly in this project,
+    // in the lib directory, because they aren't published properly to maven.
+    // val pdfConverter = new ScienceParseConverter()
+    // On the other hand, Tika seems to require Java 11.
+    val pdfConverter = new TikaConverter()
     val languageModel = GigawordLanguageModel()
     val preprocessors = Array(
       new LinePreprocessor(),
