@@ -5,13 +5,16 @@ import org.clulab.habitus.scraper.Page
 import org.clulab.habitus.scraper.domains.GoogleDomain
 import org.clulab.habitus.scraper.scrapes.ArticleScrape
 import org.clulab.pdf2txt.Pdf2txt
-import org.clulab.pdf2txt.common.utils.MetadataHolder
 import org.clulab.pdf2txt.languageModel.GigawordLanguageModel
 import org.clulab.pdf2txt.preprocessor.{CasePreprocessor, LigaturePreprocessor, LineBreakPreprocessor, LinePreprocessor, NumberPreprocessor, ParagraphPreprocessor, UnicodePreprocessor, WordBreakByHyphenPreprocessor, WordBreakBySpacePreprocessor}
+import org.clulab.utils.StringUtils
+
+import scala.io.Codec
 // import org.clulab.pdf2txt.scienceparse.ScienceParseConverter
 import org.clulab.pdf2txt.tika.TikaConverter
 import org.clulab.utils.FileUtils
 import org.json4s.DefaultFormats
+import os
 
 import java.io.File
 import scala.util.Using
@@ -20,11 +23,29 @@ class GoogleArticleScraper extends PageArticleScraper(GoogleDomain) {
   implicit val formats: DefaultFormats.type = DefaultFormats
 
   def scrape(browser: Browser, page: Page, pdfLocationName: String): ArticleScrape = {
-    val metadataHolder = new MetadataHolder()
-    val rawText = GoogleArticleScraper.pdf2txt.read(new File(pdfLocationName), Some(metadataHolder))
+    val rawText = GoogleArticleScraper.pdf2txt.read(new File(pdfLocationName), None)
     val text = GoogleArticleScraper.pdf2txt.process(rawText, GoogleArticleScraper.loops)
+    val commandResult = os.proc("pdfinfo", "-isodates", pdfLocationName.replace('/', File.separatorChar)).call(check = false)
+    val (titleOpt, datelineOpt, bylineOpt) = {
+      if (commandResult.exitCode != 0)
+        (None, None, None)
+      else {
+        val metaText = commandResult.out.text(Codec.UTF8)
+        val lines = metaText.split('\n').map(_.trim)
+        val map = lines.map { line =>
+          val key = StringUtils.beforeFirst(line, ':', true)
+          val value = StringUtils.afterFirst(line, ':', false).trim
+          key -> value
+        }.toMap
+        val titleOpt = map.get("Title")
+        val datelineOpt = map.get("ModDate").orElse(map.get("CreationDate"))
+        val bylineOpt = map.get("Author")
 
-    ArticleScrape(page.url, titleOpt = None, datelineOpt = None, bylineOpt = None, text)
+        (titleOpt, datelineOpt, bylineOpt)
+      }
+    }
+
+    ArticleScrape(page.url, titleOpt, datelineOpt, bylineOpt, text)
   }
 
   def readPdf(page: Page, baseDirName: String): (String, String, String) = {
