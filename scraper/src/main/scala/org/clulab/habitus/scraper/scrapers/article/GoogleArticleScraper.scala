@@ -14,7 +14,7 @@ import scala.io.Codec
 import org.clulab.pdf2txt.tika.TikaConverter
 import org.clulab.utils.FileUtils
 import org.json4s.DefaultFormats
-import os
+import os.{proc => OSProc}
 
 import java.io.File
 import scala.util.Using
@@ -25,7 +25,7 @@ class GoogleArticleScraper extends PageArticleScraper(GoogleDomain) {
   def scrape(browser: Browser, page: Page, pdfLocationName: String): ArticleScrape = {
     val rawText = GoogleArticleScraper.pdf2txt.read(new File(pdfLocationName), None)
     val text = GoogleArticleScraper.pdf2txt.process(rawText, GoogleArticleScraper.loops)
-    val commandResult = os.proc("pdfinfo", "-isodates", pdfLocationName.replace('/', File.separatorChar)).call(check = false)
+    val commandResult = OSProc("pdfinfo", "-isodates", pdfLocationName.replace('/', File.separatorChar)).call(check = false)
     val (titleOpt, datelineOpt, bylineOpt) = {
       if (commandResult.exitCode != 0)
         (None, None, None)
