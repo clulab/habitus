@@ -1,0 +1,26 @@
+{'The Chinese galamseyers have taken all available jobs': 5, 'The Chinese mining project is less lucrative than illegal mining': 17, 'Ghanaians do not want to work for the Chinese': 10, 'Ghanaians would prefer to have the option of farming and illegal mining than exclusively work for a Chinese mining company': 18, 'None of the above': 0}
+The final probabilities for each choice are: [0.0349979824018521, 0.3857889329822066, 0.09513437959568401, 0.4712036668121359, 0.012875038208121322]
+Probability for choice A is 3.5%.
+Probability for choice B is 38.58%.
+Probability for choice C is 9.51%.
+Probability for choice D is 47.12%.
+Probability for choice E is 1.29%.
+The per-choice explanations using the context are: 
+Choice A (The Chinese galamseyers have taken all available jobs):
+Justification: This could be a plausible reason if the Chinese mining project has primarily employed Chinese workers, leaving few opportunities for locals. This could lead to a situation where, despite the presence of a large-scale mining project, locals are unable to find legal employment and thus continue to engage in illegal mining. However, this assumption would need to be validated with data on the employment practices of the Chinese mining project.
+
+Choice B (The Chinese mining project is less lucrative than illegal mining):
+Justification: This could be a plausible reason if the income generated from illegal mining is significantly higher than the wages offered by the Chinese mining project. Despite the risks and illegality associated with galamsey, or illegal mining, individuals might continue to engage in it if it provides a higher income. This could be especially true in a region like Brong Ahafo, Ghana, where economic opportunities might be limited and people are driven to maximize their income. However, this assumption would need to be validated with data on the income levels from both activities.
+
+Choice C (Ghanaians do not want to work for the Chinese):
+Justification: This could be a plausible reason if there is a significant level of anti-Chinese sentiment among the local population in Brong Ahafo, Ghana. This sentiment could be driven by a variety of factors, such as perceived economic exploitation, cultural differences, or historical tensions. If such sentiment exists, it could deter locals from accepting employment offers from the Chinese mining project, even if it provides a legal source of income. However, this assumption would need to be validated with data on local attitudes towards Chinese employers.
+
+Choice D (Ghanaians would prefer to have the option of farming and illegal mining than exclusively work for a Chinese mining company):
+Justification: This could be a plausible reason if the locals value the flexibility and independence associated with farming and illegal mining. Working for a large-scale mining project might involve fixed hours, less autonomy, and potentially more physically demanding work. Additionally, farming might have cultural or traditional significance for the locals, making them reluctant to abandon it for mining work. However, this assumption would need to be validated with data on local work preferences and attitudes towards farming and mining.
+
+Choice E (None of the above):
+Justification: This option suggests that none of the provided reasons accurately explain why farmers continue to engage in illegal mining at the same rate. It could be that other factors, not mentioned in the options, are influencing their decision. For example, they might lack awareness of the employment opportunities provided by the Chinese mining project, or there might be barriers to entry such as educational or skill requirements.
+
+CONTEXT:
+
+

@@ -1,0 +1,138 @@
+{'People will point out that proceeds from the sale of bauxite will more than pay for transport of clean water from elsewhere.': 10, 'Yet unrealized and even more valuable uses for clean water will be explored, such as supporting a natural habitat attractive to ecotourism, which is successful in other parts of the country.': 16, 'Farmers will point out that they cannot raise food in runoff from a bauxite mine and predict a consequent food shortage.': 18, 'A plan will be devised to transport the bauxite downstream for processing with water that has already been used for agricultural purposes.': 3, 'None of the above.': 3}
+The final probabilities for each choice are: [0.10239246889450306, 0.3399549687374152, 0.5071532184483418, 0.025249671959869834, 0.025249671959869834]
+Probability for choice A is 10.24%.
+Probability for choice B is 34.0%.
+Probability for choice C is 50.72%.
+Probability for choice D is 2.52%.
+Probability for choice E is 2.52%.
+The per-choice explanations using the context are: 
+Choice A (People will point out that proceeds from the sale of bauxite will more than pay for transport of clean water from elsewhere.):
+Justification: The context does not provide any information about people suggesting that the proceeds from the sale of bauxite could pay for the transport of clean water from elsewhere. The context does mention the government's intention to mine bauxite and establish an integrated aluminium industry in Ghana, which could potentially generate significant revenue. However, the focus is more on the potential negative impacts of mining on the water supply and biodiversity, rather than on the potential economic benefits of mining.
+
+Choice B (Yet unrealized and even more valuable uses for clean water will be explored, such as supporting a natural habitat attractive to ecotourism, which is successful in other parts of the country.):
+Justification: The context suggests that the clean water from the forested, mountainous areas is a valuable resource for the local population. However, there is no explicit mention of exploring other uses for this clean water, such as supporting a natural habitat for ecotourism. The context does highlight the importance of the water for biodiversity, as stated in the quote: 'To be clear, civil society’s concerns are over the location proposed for bauxite mining – that is, the mountain tops – as this is within Atewa’s legally protected area and is also the most critical for biodiversity and clean water.' However, the focus is more on the potential negative impacts of mining on the water supply and biodiversity, rather than exploring new uses for the water.
+
+Choice C (Farmers will point out that they cannot raise food in runoff from a bauxite mine and predict a consequent food shortage.):
+Justification: The context does not specifically mention farmers or the impact of bauxite mining on agriculture. However, it does highlight the destructive nature of bauxite mining, particularly the strip mining method, which 'removes all vegetation, habitats and topsoil, while the rock beneath is then broken up with explosives.' This could imply that farming in areas affected by mining runoff could be challenging. The context also mentions that water contamination from bauxite mining is extremely dangerous, which could further impact agricultural activities.
+
+Choice D (A plan will be devised to transport the bauxite downstream for processing with water that has already been used for agricultural purposes.):
+Justification: The context does not provide any information about a plan to transport bauxite downstream for processing with water that has already been used for agricultural purposes. The context does mention the government's intention to mine bauxite and establish an integrated aluminium industry in Ghana, but it does not provide details about the specific methods or plans for processing the bauxite.
+
+Choice E (None of the above.):
+Justification: Based on the provided context, none of the reactions mentioned in the other choices are explicitly stated or implied. The context primarily focuses on the potential negative impacts of bauxite mining on the water supply and biodiversity, as well as the concerns of environmentalists and residents about these impacts.
+
+CONTEXT:
+
+It is also a source of fresh water for about five million Ghanaians with government’s plan to mine bauxite in the area leaving many environmentalists and residents worried.
+
+Q. I further put it to you that no chemical is used in the mining of bauxite to contaminate any water in Sagyimase?
+
+We intend, for example, to mine, at long last, our bauxite deposits in order to establish an integrated aluminium industry in Ghana.
+
+A clear example of the destruction that is caused to forests by bauxite mining is Ghana’s existing bauxite mine at Awaso in the Western Region, now a desert of red mud that replaced once thick forest,” he stated.
+
+A statement signed by Daryl Bosu, Depuy National Coordinator of A Rocha Ghana in response said: “To be clear, civil society’s concerns are over the location proposed for bauxite mining – that is, the mountain tops – as this is within Atewa’s legally protected area and is also the most critical for biodiversity and clean water.
+
+A-Rocha Ghana fears that that water source will be polluted when the exploitation of bauxite begins.
+
+It said strip mining is the only way to mine Ghana’s bauxite due to its closeness to the surface and notes that this method removes all vegetation, habitats and topsoil, while the rock beneath is then broken up with explosives.
+
+We are not a group against mining bauxite per se, but we are particularly against mining bauxite because of the water provision services.
+
+They have been demonstrating their aversion to bauxite mining through many peaceful actions: they have walked 95km carrying precious clean water from the heart of the Atewa Forest to Ghana’s government to highlight the forest’s significance as a source of fresh water for Ghanaians.
+
+It said about 5 million people benefit from Atewa’s clean water every day, and water contamination from bauxite mining is extremely dangerous people are advised not even to touch it, let alone drink it, asking where will the 5 million people, especially the forest communities, get their clean water from when it is contaminated by bauxite mining?
+
+Nana Donkoh observed the decision by the government to mine the bauxite in the Atiwa Forest will not only displace thousands of people but cause destruction to water bodies serving as water sources for people in about five regions in the country.
+
+It said about 5 million people benefit from Atewa’s clean water every day and water contamination from bauxite mining is extremely dangerous and people are advised not even to touch it, let alone drink it, asking that where will the 5 million people, especially the forest communities, get their clean water from when it is contaminated by bauxite mining?
+
+Ghana’s mining laws require that mining companies treat the water used for mining activities before it is discharged into the environment, but for illegal miners, water bodies are the centre of their operations, a situation that makes communities living along rivers vulnerable to the effects of the dangerous chemicals used.
+
+Pollution and dangers Ghana’s mining laws require that mining companies treat the water used for mining activities before it is discharged into the environment, but for illegal miners, water bodies are the centre of their operations, a situation that makes communities living along rivers vulnerable to the effects of the dangerous chemicals used.
+
+The estimated impact of the bauxite in Nyinahin, Awaso, and Tabi Offin will not be as significantly damaging as mining in a watershed Atewa that provides water for 5 million Ghanaians.
+
+Mr. Speaker, we intend, also, to mine, at long last, our bauxite deposits in order to establish an integrated aluminium industry in Ghana.
+
+For him, mining Ghana’s bauxite, iron and manganese deposits, is the surest way for the country to create a steel industry for its development agenda, indicating that structures have been put in place for Ghana to exploit its bauxite resources.
+
+He noted that, bauxite mining is typically associated with acid sulfate soil which is highly acidic and when it comes into contact with water during the mining process, the outcome is always a substantial reduction in the pH of the water, where water becomes acidic.
+
+The bauxite reserves currently being considered for mining is estimated to be in the region of 900 million metric tons (MT), across the three bauxite reserves in Ghana namely Nyinahin in Ashanti Region, Kibi in the Eastern Region and Awaso in the Western Region.
+
+Critics have warned that the deal to exploit the about-$460 billion worth of bauxite in the area could potentially pollute water sources, like the River Birim, around the reserves, but speaking on the BBC’s Focus on Africa on Thursday, Mr. Osafo Maafo indicated that the bauxite could be exploited without harming the river.
+
+In response to civil society concerns over the irreversible damage that bauxite mining will cause in the Atewa Forest if permitted to go ahead, the Ghana government has promised it will only allow responsible, sustainable and ‘environmentally friendly mining practices’ to be used there.
+
+Bauxite ‘mortaging’: 5m Ghanaians to lose access to potable water – NGO
+
+The CONAMA statement revealed that some of this bauxite was in the forest reserves legally protected from mining and that even if the law permits it, we must question, "whether it is wise to mine the forests due to the extensive damage that would be caused to watersheds, ecosystem services, wildlife and natural resources exceeding any benefits gained for Ghana’s development.
+
+Bauxite mining is one destructive extractive industry in the world.
+
+According to the group, some three River bodies namely; Ayensu, Densu and Birim, that supply parts of the country including the capital city, Accra with water, will be affected if mining of bauxite is allowed in the forest.
+
+Over 82% of Ghana’s bauxite can be mined without compromising the existence of Atewa Range Forest,” Mr Kpebu points out in the notice to the Attorney-General, Gloria Akuffo.
+
+Strip mining is the only way to mine Ghana’s bauxite due to its closeness to the surface.
+
+Given the scale, duration, and potential significant and permanent impact of Ghana’s Integrated Bauxite Plan, on the Atewa Forest Reserve and water supply of over 5 million people, it is critical to evaluate a range of development and management options (including conservation, restoration, and other alternatives to mining) to protect drinking water and other ecosystem services.
+
+This move by the President, the Minister said, is to ensure that bauxite mined in Ghana is refined in Ghana, thereby helping to develop the downstream industry to provide employment, enhanced talent development, and to transform the economy.
+
+A member of the NGO, Darly Bosu, told Umaru Sanda Amadu on Eyewitness News that many Ghanaians will lose access to potable water if the government goes ahead to mine bauxite to repay the loan, while creating jobs out of it.
+
+The letter to the Attorney-General cites what it says is a clear example of the destruction that is caused to forests by bauxite mining in Ghana’s existing bauxite mine at Awaso in the Western Region, “now a desert of red mud that replaced a once thick forest.
+
+The Minerals Commission knows all the concessions in Ghana that have bauxite so if clearly there is a particular concession that is not possible to mine, the Minerals Commission will make that available to government and we will not be the first government to overstep the laws of the country to do something that is illegal.
+
+Speaking at the maiden national conference organised by the Faculty of Development Studies of the Presbyterian University College (PUC) at Akropong-Akuapem, Prof Danquah said Ghana risks suffering long-term disadvantages if it proceeds to mine bauxite in the Atewa Forest.
+
+The projects are aimed at ensuring the full utilisation of Ghana’s bauxite.
+
+“Nobody is saying that bauxite mining is not good or it won’t give employment or it won’t give Ghana government money,” he said, “but we believe that whatever we will get out of bauxite mining as at today, we equally beg that if we do the alternative, we will get several times what we will get and that will help Ghana today and Ghana tomorrow.
+
+It is also known for its high levels of endemism and great hydrological importance but these qualities risk depletion as government intends to mine bauxite in the forest
+
+“The threat posed by illegal mining to the quality of water resources in traditional area and for that matter Ghana has become a major public concern due to the closing down of some water treatment plants in the country”.
+
+Therefore, the overall objective of this study is to investigate into the prevailing health problems of mining on water bodies in seven selected regions in Ghana which include; Ashanti, Brong Ahafo, Central, Eastern, Upper East, Upper West and Western Regions.
+
+Ghana risks facing severe water crisis if it sacrifices its bauxite resources in the Atiwa Forest Reserve in Kyebi, to contract the $15 billion facility from the People’s Republic of China.
+
+“60% of our water bodies in Ghana we are told have been polluted by mining activities.
+
+Bauxite, a red ore, involves “surface level mining”, which can destroy large swaths of farmland.
+
+Ghana was looking to mine bauxite to in a barter deal with China’s Sinohydro Corp. Limited.
+
+If that is the case, we have its raw material that is bauxite in abundance in Ghana.
+
+“The Atewa Forest is the source of water for up to 5 million Ghanaians, with some in Accra, Eastern and Central Regions of Ghana and so Bauxite mining in the Forest would greatly endanger the water provisioning services and the large number of species in the forest that are already globally threatened with extinction.
+
+The Ghana government, through the Ghana Integrated Aluminium Development Corporation (GIADEC), is determined to mine a bauxite in the Atewa Forest, as part of a $2-billion infrastructure deal with China’s Sinohydro Corporation Limited.
+
+The organization has observed that water for five million people sourced from River Densu, Ayensu and Birim, fertile agricultural lands for cocoa and food production will be destroyed if the forest is mined for bauxite.
+
+As far as we are aware, no technology exists for mining bauxite in a way that does not disturb the forest or wildlife or damage the quality of life of communities dependent on the forest’s resources.
+
+“Water supply to some 5 million people is at stake and we cannot afford that because we want to do bauxite mining at all cost at every place, so whether it is good or bad, we will do it.
+
+Comparatively, our water bodies are comparatively clean, lands are not destroyed as it used to be and our gold resources are being left to Ghanaians to mine in that sector as required by law.
+
+Rather than the bauxite just being mined and taken away, we want to set integrated aluminum and bauxite industry in Ghana, so, we have a refinery and a smelter.
+
+The Western Region is most likely to battle acute water shortage if illegal mining continues on its water bodies as the Ghana Water Company Limited has already confirmed the difficulties they are encountering in providing potable water to residents.
+
+60% of our water bodies in Ghana we are told have been polluted by mining activities.
+
+Recently, environmental activists in both Ghana and International have been up in arms with the government for leveraging bauxite deposits in Atewa Forest Reserve for mining by Chinese firm-Sinohydro in a 2million dollar deal.
+
+Last year Ghana signed a memorandum with China to explore Ghana’s deposits of bauxite – the primary ore in aluminium.
+
+“Bauxite mining, unlike other mineral resources, takes up clay and carts away.
+
+“Though artisanal and small-scale mining immense holds potential for Ghana’s economy, its current practices pose extreme risks to water and forest resources.
+
+Mining, especially surface mining results in adverse environmental impacts on water bodies (rivers and streams) in Ghana through a release of effluents such as mercury, arsenic and solid suspensions.

@@ -1,0 +1,146 @@
+{'Those involved in illegal mining would listen to their friends and stop': 4, 'Those involved in illegal mining would continue in secret': 20, 'Those involved in illegal mining would not care about the opinions of their close friends or family': 9, 'Those involved in illegal mining would relocate to a different region, where they would continue mining': 14, 'None of the above': 3}
+The final probabilities for each choice are: [0.027428371654046903, 0.6728873558604437, 0.07455804425141686, 0.2026697768540719, 0.02245645138002059]
+Probability for choice A is 2.74%.
+Probability for choice B is 67.29%.
+Probability for choice C is 7.46%.
+Probability for choice D is 20.27%.
+Probability for choice E is 2.25%.
+The per-choice explanations using the context are: 
+Choice A (Those involved in illegal mining would listen to their friends and stop):
+Justification: This choice is less plausible given the context. The context suggests that illegal mining is driven by economic factors and that government efforts to stop these activities have not been entirely successful. For example, the context states, "Already, many feel the government’s fight against illegal mining has not been successful." This suggests that those involved in illegal mining may be unlikely to stop their activities based solely on the opinions of their friends. However, it's not entirely impossible, especially if their friends or family are directly affected by the negative impacts of illegal mining and can convince them to stop.
+
+Choice B (Those involved in illegal mining would continue in secret):
+Justification: This choice is plausible given the context provided. The context suggests that illegal mining is a widespread issue, with over 2,000 people estimated to be involved. Despite government efforts to ban these activities and the deployment of security forces to the most affected areas, the problem persists. This suggests that those involved in illegal mining may continue their activities in secret to avoid detection. For instance, the context states, "Despite the campaign against illegal mining, workers at the Mine say illegal miners have invaded the site and carrying out the illegality." This indicates that illegal miners are finding ways to continue their activities covertly.
+
+Choice C (Those involved in illegal mining would not care about the opinions of their close friends or family):
+Justification: This choice is also plausible based on the context. The context suggests that illegal mining is driven by economic factors, with many people relying on it for their livelihoods. For example, the context states, "It is acknowledged that while illegal mining supports livelihoods of many, it has equally caused severe damages to the environment in many parts of the district." This suggests that those involved in illegal mining may prioritize their economic needs over the opinions of their close friends or family.
+
+Choice D (Those involved in illegal mining would relocate to a different region, where they would continue mining):
+Justification: This choice is plausible given the context. The context suggests that illegal mining is a widespread issue that occurs in various parts of the country. For instance, the context states, "Illegal mining in the country has been a topical issue in the country for the past few years sparking major campaigns and outrage by Ghanaians especially over the negative impact on the activities on water bodies and lands." This suggests that those involved in illegal mining may relocate to different regions to continue their activities, especially if they face increased scrutiny or enforcement in their current location.
+
+Choice E (None of the above):
+Justification: This choice is not plausible given the context. The context provides evidence that supports each of the other choices, suggesting that they are all potential impacts of the described situation on illegal mining activities.
+
+CONTEXT:
+
+The sad thing about illegal mining and its attendant problems is that it does not affect people only in areas where the illegal activities take place.
+
+But with the over 2,000 persons estimated to be engaging in illegal mining, agriculture is likely to see a further decline.
+
+“Government in 2017 recognized serious effect of irresponsible mining on the country’s vegetation cover and river bodies thereby banning illegal mining activities across the country.
+
+He said since most of the youth are interested in illegal mining, it has affected the supply of labour in the agricultural sector.
+
+He said since most of the youth are interested in Illegal mining, it has affected the supply of labour in the agricultural sector.
+
+It is acknowledged that while illegal mining supports livelihoods of many, it has equally caused severe damages to the environment in many parts of the district.
+
+We still see the negative impact of mining especially the illegal mining on the environment, but more importantly, we realize that the law in its present position is also problematic.
+
+Illegal mining in the country has been a topical issue in the country for the past few years sparking major campaigns and outrage by Ghanaians especially over the negative impact on the activities on water bodies and lands.
+
+Illegal mining has been a menace in the country because of its attendant ills like environmental degradation, destruction of farmlands and farms, for that matter livelihoods, and even now the devastation of settlements believed to have gold under houses.
+
+Naana Quansah pointed out that illegal mining activities were known to adversely affect food security and biodiversity conservation in many mining communities.
+
+While recognising that those engaged in illegal mining and logging activities have livelihood concerns, we should equally recognise that their activities have adverse impact on farmers, on our food security, and on our common survival.
+
+Everyone acknowledges the devastating effects of illegal mining on the country.
+
+While recognizing that those engaged in illegal mining and logging activities have livelihood concerns, we should equally recognise that their activities have an adverse impact on farmers, on our food security, and on our common survival.
+
+The MP emphasized that such actions would undermine the government’s efforts to combat illegal mining, which is causing significant damage to the environment and water bodies throughout the country.
+
+However, it is feared that incessant disruptions such as encroachment on mining concessions by illegal miners and protests in certain mining communities could derail the country’s capacity to reach these production goals.
+
+The President said, the government had also initiated alternative livelihood programmes in the mining communities and it was expected that as the economies of those communities improved, many of the people in the illegal mining would be attracted to join other sectors of the economy.
+
+Illegal mining activities have polluted many water bodies, destroyed farm lands, degraded the environment, caused the death of people involved in it among others –mining pits are opened without being covered and even some small-scale miners who say they are involved in responsible mining are found wanting in ensuring safe environmental practices.
+
+this is the third time I am actually coming to this point and I think this place is very endemic with illegal [mining] activities,” he observed.
+
+The government’s resolve to end illegal mining received further impetus with the deployment of security men to three regions considered to be the most affected areas.
+
+He said apart from its negative environmental impact, illegal mining also affects the operations and employees of the chamber.
+
+Already, many feel the government’s fight against illegal mining has not been successful.
+
+The government’s resolve to end illegal mining was given impetus with the deployment of security men to the three regions – Ashanti, Eastern, Western – considered to be the most affected areas.
+
+The move is among others expected to sustain the gains recorded in the reduction of the illegal mining activities.
+
+He emphasized that government would intensify its initiatives for fighting illegal mining to bring to curb the menace in the small scale mining sector.
+
+The youth group also say the activities of the miners is destroying their farm crops and water bodies even though there is a ban on small scale mining in the country.
+
+They argue that mining activities in several communities in the country have proven disastrous and so they are worried that mining in the area will have similar effects on their fertile farmlands which they have been surviving on for years.
+
+Despite the campaign against illegal mining, workers at the Mine say illegal miners have invaded the site and carrying out the illegality.
+
+“We believe if we effectively implement the multi-sectorial mining integrated project, we will eradicate the illegalities in our small scale mining sector.
+
+He expressed worry about farmers leasing their land for illegal mining activities, and therefore, called on the government to put in more efforts in the fight against illegal mining as their action was negatively affecting the sector.
+
+The participants, contributing to the workshop organised by the Takoradi office of the Minerals Commission on the theme, "Mineral rights and the impact of illegal mining activities on the environment" at Daboase in the Wassa East district, expressed worry about the activities of illegal mining in the country which has heavily polluted many of the water bodies in the country.
+
+“It is well-known that the rise in illegal mining has, no doubt, been fueled not only by unemployment but also by the desire of the average community members to have a feel of the minerals.
+
+I also believe that formalising small-scale mining operations and providing miners with access to legal concessions, training, and financial assistance will curb the dangers of illegal mining.
+
+This is because the mining has affected farmer’s lands and also many young farmers were no longer interested in farming.
+
+The Minister for Lands and Natural Resources, John Peter Amewu, has said that all illegal miners will be engaged in tree planting and other reclamation programmes to help restore lands affected by the illegal activity.
+
+Chinese involvement in illegal mining has become rampant over the last decade with some blaming them for the proliferation of heavy machinery in illegal small-scale mining and the escalation of pollution in major water bodies.
+
+“We are all aware of the devastation illegal mining is causing to our environment, destroying water bodies, forest reserves, the soil and its biodiversity, food production and other adverse climatic conditions in the country, yet we seem not to care.
+
+It is an undeniable fact that illegal mining activities are seriously ongoing in most parts of the region and the respective chiefs are aware of the illegalities as well as the impunities in their areas of jurisdictions.
+
+It is worrying that the government while trying to fight illegal mining has in its wake ban all legal mining.
+
+President Nana Addo Danquah Akuffo-Addo has said the fight against illegal mining is a fight meant to protect the natural environment for posterity and that the necessary measures would be adopted to halt this negative practice.
+
+I strongly believe that the advocacy and the determination to make the illegal mining issue a priority in the country with all stakeholders, including Traditional Authorities, the media and political forces coming on board, is a good step towards winning the fight.
+
+The Eastern Regional Director of Environmental Protection Agency (EPA), Mr Addo Kyere said illegal mining among other things brought along increased population and increased pressure on social amenities.
+
+The Minister of Food and Agriculture, Dr Owusu Afriyie Akoto has said only two per cent of cocoa farm lands have been affected by illegal small scale mining (Galamsey) activities.
+
+Mr. Agyekum stressed that allowing mining and felling of trees illegally would affect human kind, and species would suffer the consequences.
+
+It is also feared that illegal mining activities could have serious repercussions for the safety of the formal mines and the environment as a whole.
+
+In spite of the ongoing efforts to clamp down on illegal mining activities in the country, the Minister of Lands and Natural Resources, Samuel Abu Jinapor, has said cases of illegal mining activities continue to be reported daily in some parts of the country.
+
+So personally I’m very excited about government’s decision to end illegal mining in the country, and I hope the situation will improve as the miners have left the areas.
+
+The Co-Principal Investigator on the University of York-UG’s Galamsey Research Team has said that illegal mining, also known as galamsey, is having adverse effects on farming in many communities across the country.
+
+“I am stating categorically that the high rate at which the illegal small scale mining activities are going in the various communities such as Sefwi Asawinso, Diaso, Wassa Jokwaa, Wassa Akropong, Hiawa Bekwai, Prestea, Pepoase, Gwira Wiaso Gwira Tumantu, Gwira Banso and Assuawuah is worrying.
+
+Officials at the Mankraso District Forestry say operations of the illegal miners, if not stopped immediately, could encourage the use of earth-moving machinery such as excavators and bulldozers for illegal mining activities at the reserve.
+
+We will work out with the government over the illegal mining because I think is a very complicated issue in this country and both sides needs to do the control and improve the way of things.
+
+Illegal mining activities are rife in the Dunkwa-on-Offin and Assin Foso areas in the Central Region, and calls on the Land and Natural Resources Ministry to turn attention to the region have not seen any clear response, hence the move by the Regional Police Command.
+
+Our major concern in the fight against illegal mining is that we believe that government officials and some members of the security agencies have not demonstrated that they are fighting against illegal miners but rather legal miners.
+
+“The sentiments we’re getting from the chiefs is that, they feel that the illegal mining has cost a lot to their jurisdiction, and that if the ban is to be lifted at all, then the programmes should be outlined properly for them to be seen.
+
+Mr. Amewu also noted that, the heightened campaign against illegal mining in the past month by the media, civil society and Ghanaians, is bearing some fruits, as seen in an apparent fall in small scale gold production.
+
+The Odikro of Obuasi Tutkai in the Ashanti Region, Nana Kwame Kwarteng I says banning illegal mining (galamsey) will be a disaster for the people of the area.
+
+Many have kicked against the idea of mining in the forest reserve stating that, mining in the area will pollute some major water bodies as well as endanger human and animal lives.
+
+Farmers in these areas also say they are happy because some illegal miners have started reclaiming some mined sites in the area.
+
+He expressed worry about how illegal mining was negatively impacting the cocoa industry and jeopardising farmers’ livelihoods.
+
+There have been suspicions that politicians, both in power and opposition, are involved in illegal mining.
+
+According to Suhuyini, the community members and chiefs in the affected areas were upset because the government had banned all forms of mining, yet some bigwigs and party people were given protection to mine in forest reserves.
+
+Speaking at the launch on Monday, 25th October 2021, at the auditorium of the George Grant University of Mines and Technology, Tarkwa, President Akufo-Addo acknowledged that the lives of several people, including women and children, depend on illegal mining.

@@ -1,0 +1,142 @@
+{'Government officials believe that any compromise makes them look weak so that they will not advance such an option.': 7, 'The government is unable to enforce mining protocols for a distributed collection of mines in the same way it can for a single, large mine so that environmental benefits are not realized.': 20, 'No role is provided for local chiefs, whose power will be diluted by this third possibility, making it unlikely that they come on board.': 9, 'Galamseyers have a strike it rich, gold rush attitude and will not exchange it for the certain, but barely sufficient payout from other options.': 14, 'None of the above.': 0}
+The final probabilities for each choice are: [0.04936477490723075, 0.6646343975077795, 0.07364359040010887, 0.20018403356709696, 0.012173203617783897]
+Probability for choice A is 4.94%.
+Probability for choice B is 66.46%.
+Probability for choice C is 7.36%.
+Probability for choice D is 20.02%.
+Probability for choice E is 1.22%.
+The per-choice explanations using the context are: 
+Choice A (Government officials believe that any compromise makes them look weak so that they will not advance such an option.):
+Justification: The context sentences do not provide direct evidence regarding the attitudes of government officials towards compromise. However, they do suggest that the government is committed to addressing the challenges associated with mining in Ghana. For example, one context sentence states, 'The government of Ghana has instituted measures to ensure that illegal mining ends across the country in order to protect the country’s forest and water bodies which have been destroyed with chemicals.' This suggests that the government is taking a strong stance against illegal mining. Another context sentence notes, 'Governments put forward several initiatives to address illegal mining in Ghana.' This indicates that the government is actively seeking solutions to the challenges associated with mining. Therefore, it is not clear from the context sentences whether government officials would view compromise as a sign of weakness.
+
+Choice B (The government is unable to enforce mining protocols for a distributed collection of mines in the same way it can for a single, large mine so that environmental benefits are not realized.):
+Justification: The context sentences provide evidence that the government of Ghana has struggled to enforce mining protocols, particularly in the small-scale and illegal mining sectors. For instance, one context sentence states, 'Irresponsible small-scale mining activities across mining communities in Ghana continue to have adverse impacts on lands and water resources and threaten human survival in mining areas.' This suggests that the government has been unable to effectively regulate these activities. Another context sentence notes, 'Most small-scale mining operations in Ghana are in remote areas which makes deployment of interventions to improve the sector very challenging.' This indicates that the geographical distribution of these mines poses a significant challenge to enforcement efforts. Therefore, it is plausible that the government would struggle to enforce mining protocols for a distributed collection of mines in the same way it can for a single, large mine, potentially preventing the realization of environmental benefits.
+
+Choice C (No role is provided for local chiefs, whose power will be diluted by this third possibility, making it unlikely that they come on board.):
+Justification: The context sentences do not provide direct evidence regarding the role of local chiefs in mining operations. However, they do suggest that local communities are significantly impacted by mining activities and that their involvement is crucial for sustainable mining practices. For example, one context sentence states, 'By embracing sustainable solutions, Ghana can pave the way for responsible mining practices that safeguard the environment, empower local communities, and fuel economic growth.' This suggests that the involvement of local communities, which would likely include local chiefs, is important for sustainable mining. Therefore, if the third option does not provide a role for local chiefs, it could potentially dilute their power and make it unlikely that they support this option.
+
+Choice D (Galamseyers have a strike it rich, gold rush attitude and will not exchange it for the certain, but barely sufficient payout from other options.):
+Justification: The context sentences suggest that illegal mining, often conducted by 'galamseyers,' is a significant problem in Ghana. For instance, one context sentence states, 'Illegal mining has become a menace that successive governments in Ghana have tried to put an end to but seem to fail at every opportunity.' This suggests that illegal miners may be motivated by the potential for significant financial gain, supporting the idea that they have a 'strike it rich, gold rush attitude.' Another context sentence notes, 'Low income, lack of regulatory enforcement, perverse incentives to avoid obtaining official land concessions for mining, as well as a lack of education on environmental issues has morphed into a very hazardous practice in Ghana’s mining sector.' This indicates that the potential for financial gain may outweigh the risks and challenges associated with illegal mining for these individuals, making it unlikely that they would exchange this for the certain, but potentially less lucrative, payout from other options.
+
+Choice E (None of the above.):
+Justification: This option is ranked last as it suggests that none of the other options are likely to be true. However, the justifications provided for the other options suggest that they could potentially be true based on the context sentences provided.
+
+CONTEXT:
+
+By leveraging these lessons and implementing effective policies, Ghana can transform its small-scale mining sector into a catalyst for economic development, environmental protection, and social progress.
+
+The tragedy of mining in Ghana is that, every part of the country is opened up for mining and it’s a problem with leadership, not the citizens.
+
+Above all, the media ought to find out precisely how many mining companies (large and small and legal and illegal) in Ghana currently meet all those requirements as we speak - and, on behalf of the good people of Ghana, demand that all categories of mining companies, local and foreign, must be prevented from further degrading the natural environment until all the above requirements - especially ratification by Parliament of mining licenses - are met.
+
+In the area of socioeconomic, once we begin to initiate policy decisions or permanent decision that will nationalize, organize and regulate our mining operations, we would be able to end illegal mining operations in Ghana.
+
+Artisanal and small-scale mining remains the major driver of environmental, safety, and health problems in most mining communities in Ghana.
+
+By embracing sustainable solutions, Ghana can pave the way for responsible mining practices that safeguard the environment, empower local communities, and fuel economic growth.
+
+Despite the conventional knowledge in Ghana that the activities of some mining companies have severely impacted negatively on the environment, coupled with the notion that not enough is being done about this by sector regulators, this might not exactly be the situation in every circumstance.
+
+Irresponsible small-scale mining activities across mining communities in Ghana continue to have adverse impacts on lands and water resources and threaten human survival in mining areas.
+
+Ladies and gentlemen, the focus of today’s engagement is on Ghana’s mining and extractive industry with critical lenses on the matters arising from the fight against small-scale mining, regulation of mining activities and the activities of multinational mining companies in the Ashanti Region.
+
+Illegal mining has become a menace that successive governments in Ghana have tried to put an end to but seem to fail at every opportunity.
+
+Speaking on the theme : The Legal Regime of the Mining sector in Ghana.
+
+Ghana’s vision is to become Africa’s mining hub
+
+Ghana over the years has been battling with illegal small- and large-scale mining which has rendered several of the nation’s river bodies unwholesome to human consumption.
+
+Ghana is reeling from the effects of illegal mining and weak regulation in the mining sector.
+
+This forms part of a broader vision of the Government to make Ghana the mining hub of Africa, where all mining related activities – exploration to downstream, production, innovation, research, would be centred.
+
+Illegal mining impact on Ghana’s Environmental
+
+Low income, lack of regulatory enforcement, perverse incentives to avoid obtaining official land concessions for mining, as well as a lack of education on environmental issues has morphed into a very hazardous practice in Ghana’s mining sector.
+
+Speaking to the press after an engagement with Parliament’s Mines and Energy Committee on Tuesday, he said: “Mining is playing a role in the economic development of Ghana, but there is so much potential that we can take advantage of, including that, as stakeholders, we work in a concerted manner to establish manufacturing bases and service delivery offices in Ghana that will serve not only the Ghana[ian] mining industry but the West Africa sub-region [too].
+
+He said although small-scale mining is the sole preserve of the citizenry, some Ghanaians agree with outsiders to use un-prescribed equipment to mine, leading to the destruction of the forest, water bodies and farmlands because regulatory bodies are not well-resourced to clamp down on their illegal activities.
+
+In the former Minister’s view, there is a policy problem with respect to managing small scale mining and fighting illegal mining in Ghana.
+
+The move, he said, is to allow Ghanaians to mine in a regulated and sustainable manner under the five-year multilateral mining integrated project.
+
+Government’s unbridled favoritism of Multinational mining companies in Ghana
+
+The government’s determination to encourage mining companies into Ghana and to make the country the mining hub of Africa is very disturbing.
+
+The government of Ghana has instituted measures to ensure that illegal mining ends across the country in order to protect the country’s forest and water bodies which have been destroyed with chemicals.
+
+We are working together with the Ghana government to stop illegal mining.
+
+This hinders efforts to ensure a transparent, equitable and optimal exploitation of mineral resources to underpin broad-based sustainable growth and socio-economic development in achieving the tenet of the Africa Mining Vision through the Ghana Country Mining Vision.
+
+According to the group in a statement copied to GhanaWeb, the inauguration of the two new community mining sites in the Western Region should rather focus their attention on genuinely solving the significant environmental problem that’s been caused by the disastrous management of mining in Ghana, especially in the Western Region.
+
+Ghana can explore the cooperative model to enhance the organization and governance of small-scale mining activities.
+
+Most small-scale mining operations in Ghana are in remote areas which makes deployment of interventions to improve the sector very challenging.
+
+Communities need to stand up for themselves and ask the Ghana Government to halt community mining projects until sustainable mining practices are taught prior to certification and licensing!
+
+Governments put forward several initiatives to address illegal mining in Ghana.
+
+According to him, whereas illegal mining is typified by reckless and wanton dissipation of Ghana’s rich mineral resources, Community Mining is a well-regulated mining initiative that poses little or no harm to the environment.
+
+Mining Benefits in Ghana
+
+“President Akufo-Addo and his government are not against mining in Ghana, neither are we against small scale mining; in fact, on the contrary, we want to promote small scale mining – and we want to do so on a regulated basis and in a responsible manner that does not compromise river/water-bodies and the environment,” he emphasised.
+
+We have developed a five year multilateral mining integrated project to improve the management of small scale mining to protect the environment, but at the same time to allow Ghanaians to mine in a regulated and sustainable manner under this five-year multilateral mining integrated project, we will be identifying prospective areas for small scale mining where we will then direct the small scale miners to those particular areas so that they are not just mining haphazardly.
+
+The illegal mining sector in Ghana is plagued by several environmental and health problems.
+
+In his 2017 book, 'Historical and Modern Artisanal Small-Scale Mining in Akyem Abuakwa, Ghana's historian Emmanuel Ababio Ofosu-Mensah argued: "The government's three primary tactics to combating the problem of negative environmental effects connected with small-scale mining have been formalization, military action, and alternative livelihood scheme".
+
+The Ghanaian government has taken the issue of illegal mining seriously because apart from the impact o on our economy, its impact on the environment is dire.
+
+“President Akufo-Addo and his government are not against mining in Ghana neither are we against small scale mining, In-fact on the contrary, we want to promote small scale mining and we want to do so on a regulated basis and a responsible manner that does not compromise the river bodies and the environment,’’ he emphasized.
+
+It also helps to reposition Ghana as the gateway for mining investment and business opportunities in West Africa and to connect mining companies with investors, suppliers, and government officials to explore the vast mining and development opportunities.
+
+Illegal mining in Ghana encompasses both surface mining and small-scale operations.
+
+The Government of Ghana is currently fighting illegal mining in the country in order to safeguard the country’s forest reserves and water bodies which have been destroyed by illegal mining.
+
+Require that the government and mining corporations/operators live up to their social responsibility under Ghana and International law to ensure any mining or industrial activities are done safely without any negative impact on the community/environment and use designated funds to improve these areas.
+
+Per Ghana's laws foreigners are not supposed to engage in small-scale mining but in reality citizens of different countries, have in collaboration with local counterparts are owning and illegally operating many mining sites across the country.
+
+QUOTE: “Illegal mining has caused terrible destruction to water and land in Ghana and appropriate measures must be put in place to deal with it.
+
+Developed a 5-Year Multilateral Mining Integrated Project to improve the management of small scale mining to protect the environment and allow Ghanaians to mine in a regulated and sustainable manner  .
+
+Ghanaian Authorities need to have systems in place to make sure that mining is well regulated.
+
+“We need to bridge the trust gap between government and the mining industry, which I think is not peculiar to Ghana alone.
+
+Ultimately, creating a more robust regulatory environment is seen as an important tactic in attracting major mining companies to invest in the country, to complement the contribution made by Ghana’s small-scale miners.
+
+“Our mission is to assist the Government of Ghana in implementing the Multi-Sectoral Mining Integrated Project, which is to address the illegal mining issue.
+
+“We think, concerted efforts between China and Ghana is needed to address the illegal mining issue and strengthen the South control and also elevate transparency in mining sector to open more channels for legal and open business” Mrs. Baohong added.
+
+Today, the government, individuals and the law do not support what is referred to as illegal mining in Ghana due to the several consequences it has on the environment.
+
+The disastrous effects of illegal mining on our water bodies, and on the very sources of human livelihood in Ghana, are unquantifiable, and the quest to maintain political power, should not be enough to make any regime relent in fighting it.
+
+There is perhaps no single industry in Ghana that has precipitated more disputes over land-use than mining.
+
+Artisanal and Small-Scale mining in Ghana
+
+“Now there’s no law in Ghana that warrants, mandates, authorises the burning of excavators in the small scale mining sector and specifically, the laws that deal with mining in Ghana is the Minerals and Mining Act and in the amendment to the act, we have detailed as a country about seven steps that can be taken to deal with illegal small-scale mining.
+
+Balancing the economic benefits with sustainable and responsible mining practices is crucial to ensure long-term economic growth while protecting the environment and promoting social well-being in Ghana.
+
+“Now there’s no law in Ghana that warrants, mandates, authorises the burning of excavators in the small scale mining sector and specifically, the laws that deal with mining in Ghana is the Minerals and Mining Act and in the amendment to the act, we have detailed as a country about seven steps that can be taken to deal with illegal small-scale mining”.
+
+"If we are committed to realising the full potential of the mining sector in Ghana's economy and in the lives of our people, we cannot relent on developing internal structures and equipping our institutions to ensure that investments in the minerals sector is a win-win situation for both the investor and host nation," he said.

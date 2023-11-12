@@ -1,27 +1,25 @@
-{'Ghanaians that were participating in illegal mining felt comfortable applying for a license because of the shortened wait time': 12, 'Ghanaians who were not previously mining now see it as a new economic opportunity': 8, 'Ghanaians are influenced to seek mining licenses by their friends/family': 4, 'None of the above': 0}
-The final probabilities for each choice are: [0.5740714535714136, 0.25794693156251086, 0.11590302755619888, 0.05207858730987663]
-Probability for choice A is 57.41%.
-Probability for choice B is 25.79%.
-Probability for choice C is 11.59%.
-Probability for choice D is 5.21%.
-
-The per-choice explanations using the context are:
-
+{'Ghanaians that were participating in illegal mining felt comfortable applying for a license because of the shortened wait time': 11, 'Ghanaians who were not previously mining now see it as a new economic opportunity': 9, 'Ghanaians are influenced to seek mining licenses by their friends/family': 3, 'None of the above': 1}
+The final probabilities for each choice are: [0.49811914016637016, 0.3338992449675543, 0.10056851994608182, 0.06741309491999367]
+Probability for choice A is 49.81%.
+Probability for choice B is 33.39%.
+Probability for choice C is 10.06%.
+Probability for choice D is 6.74%.
+The per-choice explanations using the context are: 
 Choice A (Ghanaians that were participating in illegal mining felt comfortable applying for a license because of the shortened wait time):
-Justification:
-This option is highly plausible given the context. The context mentions that 'Illegal mining has become a menace that successive governments in Ghana have tried to put an end to but seem to fail at every opportunity.' and 'Strangely, however, in spite of the fact that by law, only Ghanaians are allowed to obtain mining licenses for small-scale mining operations, “thousands” of Chinese and other foreigners are working in the small scale mining sector in Ghana.' These statements suggest that illegal mining is a significant issue in Ghana. The reduction in the time it takes to obtain a mining license could have encouraged those involved in illegal mining to apply for a license, as they would no longer have to wait for three years. This could explain why the number of applications tripled within three months.
+Justification: This option could be justified by the fact that the reduction in the time it takes to obtain a mining license could have made it more appealing for Ghanaians who were participating in illegal mining to apply for a license. The context mentions that 'The amended mining law of Ghana has stipulated a minimum of 15 years and maximum of 25 years for illegal miners (galamseyers)' and 'There is a fine and imprisonment between 15 and 25 years for each of the following crimes: buying or selling minerals without a license or authority; mining in breach of the law.' This suggests that there are severe penalties for illegal mining in Ghana. The reduction in the time it takes to obtain a license could therefore have made it more appealing for Ghanaians who were participating in illegal mining to apply for a license, as this would allow them to mine legally and avoid these penalties.
 
 Choice B (Ghanaians who were not previously mining now see it as a new economic opportunity):
-Justification: This option could be plausible given the context. The reduction in the time it takes to obtain a mining license from three years to three months could have made mining a more attractive economic opportunity for Ghanaians who were not previously involved in the sector. As stated in the context, 'Given that the small-scale mining operation is capital intensive, the Ghanaians who do not have the upfront capital, albeit manage to secure the mining concessions, end up passing such licences to their Chinese counterparts.' This suggests that the previous lengthy process could have been a deterrent for some Ghanaians who might have been interested in mining but lacked the necessary resources to sustain the process for three years. Therefore, the reduction in the time it takes to obtain a license could have encouraged more Ghanaians to venture into mining.
+Justification: This option could be justified by the fact that the reduction in the time it takes to obtain a mining license from three years to three months makes mining a more accessible economic opportunity for Ghanaians. The context mentions that 'Small scale mining license, he said, are only issued to Ghanaians who are 18 years and above' and 'We will make sure we give mining licenses to local Ghanaians.' This suggests that mining is an economic activity that is open to Ghanaians. The reduction in the time it takes to obtain a license could therefore have encouraged more Ghanaians who were not previously involved in mining to see it as a new economic opportunity.
 
 Choice C (Ghanaians are influenced to seek mining licenses by their friends/family):
-Justification: The context does not provide any direct evidence to support this option. There is no mention of Ghanaians being influenced by their friends or family to seek mining licenses. However, it is mentioned that 'There are about 3 million Ghanaians whose source of livelihood depends on small-scale mining across about 13 regions.' This could suggest that mining is a common occupation in Ghana, and it is possible that friends or family members could influence others to seek mining licenses. However, this is purely speculative and not directly supported by the context.
+Justification: There is no direct evidence in the context to support this option. The context does not mention anything about Ghanaians being influenced by their friends or family to seek mining licenses. Therefore, this option cannot be justified based on the provided context.
 
 Choice D (None of the above):
-Justification: This option cannot be justified without referring to the other choices. However, based on the context provided, it is clear that there are plausible reasons why the number of mining license applications could have tripled following the reduction in the time it takes to obtain a license. Therefore, this option is unlikely to be correct.
+Justification: This option cannot be justified based on the provided context. The context provides evidence to support the first option, that Ghanaians who were not previously mining now see it as a new economic opportunity due to the reduction in the time it takes to obtain a mining license.
 
+CONTEXT:
 
-CONTEXT:As a result, some Ghanaian licence holders would more often than not, go beyond the stated jurisdiction and involve the foreigners in the mining operations.
+As a result, some Ghanaian licence holders would more often than not, go beyond the stated jurisdiction and involve the foreigners in the mining operations.
 
 The amended mining law of Ghana has stipulated a minimum of 15 years and maximum of 25 years for illegal miners (galamseyers), President Nana Akufo-Addo has said.
 
