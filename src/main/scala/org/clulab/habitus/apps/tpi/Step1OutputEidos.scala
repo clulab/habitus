@@ -16,7 +16,7 @@ import scala.util.Using
 object Step1OutputEidos extends App {
   implicit val formats: DefaultFormats.type = org.json4s.DefaultFormats
 
-  val baseDirectoryName = args.lift(0).getOrElse("../corpora/multi3/crop")
+  val baseDirectoryName = args.lift(0).getOrElse("../corpora/uganda/karamoja")
   val files = new File(baseDirectoryName).listFilesByWildcard("*.json", recursive = true).toList
   val config =  EidosSystem.defaultConfig
       .withValue("ontologies.useGrounding", ConfigValueFactory.fromAnyRef(false))

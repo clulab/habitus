@@ -5,6 +5,7 @@ scalaVersion := "2.12.15"
 lazy val core: Project = (project in file("."))
     .enablePlugins(JavaAppPackaging, DockerPlugin)
 
+// NOTE: The scraper requires Java 11+ to run!
 lazy val scraper = project
 
 pomIncludeRepository := { (repo: MavenRepository) =>

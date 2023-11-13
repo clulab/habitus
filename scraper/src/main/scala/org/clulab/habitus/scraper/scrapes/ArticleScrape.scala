@@ -10,9 +10,11 @@ case class ArticleScrape(url: URL, titleOpt: Option[String], datelineOpt: Option
   implicit val formats: Formats = DefaultFormats
 
   def toText: String = {
-    val byline = bylineOpt.getOrElse("[none]")
+    val title = titleOpt.getOrElse(ArticleScrape.none)
+    val dateline = datelineOpt.getOrElse(ArticleScrape.none)
+    val byline = bylineOpt.getOrElse(ArticleScrape.none)
 
-    s"${titleOpt.get}\n\n${datelineOpt.get}\n\n$byline\n\n\n$text"
+    s"$title\n\n$dateline\n\n$byline\n\n\n$text"
   }
 
   def toJson: String = {
@@ -26,4 +28,8 @@ case class ArticleScrape(url: URL, titleOpt: Option[String], datelineOpt: Option
 
     json
   }
+}
+
+object ArticleScrape {
+  val none = "[none]"
 }

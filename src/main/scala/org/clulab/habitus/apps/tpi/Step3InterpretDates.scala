@@ -6,8 +6,8 @@ import org.clulab.wm.eidoscommon.utils.TsvReader
 import scala.util.Using
 
 object Step3InterpretDates extends App with Logging {
-  val inputFileName = "../corpora/multimix/step2a.tsv"
-  val outputFileName = "../corpora/multimix/step2b.tsv"
+  val inputFileName = "../corpora/uganda/uganda2a.tsv"
+  val outputFileName = "../corpora/uganda/uganda2b.tsv"
   val expectedColumnCount = 21
 
   val months = Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December")
@@ -23,9 +23,12 @@ object Step3InterpretDates extends App with Logging {
       case "" =>
         date
       case tightRegex(year, month, day, hour, minute, second, timezoneHour, timezoneMinute) =>
+        val tzHour = "03" // Match local time.
         val zero = "00"
 
-        assert(timezoneHour == zero)
+        if (timezoneHour != tzHour)
+          println(timezoneHour)
+        assert(timezoneHour == tzHour)
         assert(timezoneMinute == zero)
         s"${year}-${month}-${day}T${hour}:${minute}:${second}"
       case looseShortRegex(month, day, year) =>
