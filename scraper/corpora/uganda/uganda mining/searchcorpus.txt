@@ -1,3 +1,5 @@
 #https://www.observer.ug/search?searchword=uganda%20mining&ordering=newest&searchphrase=all&limit=20&areas[0]=content&periods[0]=2017&limitstart=0	uganda mining
 #https://www.independent.co.ug/?s=mining+uganda
 #https://nbs.ug/?s=uganda+mining
+#https://www.kfm.co.ug/?s=uganda+mining
+#https://ankoletimes.co.ug/?s=uganda+mining
