@@ -19,8 +19,8 @@ class GetPageDownloader(domain: Domain) extends PageDownloader(domain) {
 
     Files.createDirectories(new File(subDirName).toPath)
 
-    val file = cleaner.clean(page.url.getFile)
-    val htmlFileName = file + ".html"
+    val file = cleaner.clean(page.url.getFile) // This may automatically take off the #comment.
+    val htmlFileName = file + ".html" // This is added even if it already ended in .html.
     val htmlLocationName = s"$subDirName/$htmlFileName"
 
     if (!new File(htmlLocationName).exists) {
