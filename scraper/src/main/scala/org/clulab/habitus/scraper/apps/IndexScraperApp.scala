@@ -32,9 +32,9 @@ object IndexScraperApp extends App {
 //  val articleFileName = args.lift(1).getOrElse("./scraper/citifmonline_articlecorpus.txt")
 //  val articleFileName = args.lift(1).getOrElse("./scraper/articlecorpus-illegal-mining.txt")
 
-  val corpusFileName = args.lift(0).getOrElse("./scraper/corpora/uganda/transhumance/indexcorpus.txt")
-  val articleFileName = args.lift(1).getOrElse("./scraper/corpora/uganda/transhumance/articlecorpus.txt")
-  val baseDirName = args.lift(1).getOrElse("../corpora/uganda/transhumance/indexes")
+  val corpusFileName = args.lift(0).getOrElse("./scraper/corpora/uganda/uganda china/indexcorpus.txt")
+  val articleFileName = args.lift(1).getOrElse("./scraper/corpora/uganda/uganda china/articlecorpus.txt")
+  val baseDirName = args.lift(1).getOrElse("../corpora/uganda/uganda china/indexes")
 
   val corpus = PageCorpus(corpusFileName)
   val scraper = new CorpusIndexScraper(corpus)

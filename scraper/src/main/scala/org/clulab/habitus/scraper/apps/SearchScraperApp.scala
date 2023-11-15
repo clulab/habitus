@@ -12,9 +12,9 @@ import org.clulab.habitus.scraper.scrapers.search.CorpusSearchScraper
   */
 
 object SearchScraperApp extends App {
-  val corpusFileName = args.lift(0).getOrElse("./scraper/corpora/uganda/transhumance/searchcorpus.txt")
-  val articleFileName = args.lift(1).getOrElse("./scraper/corpora/uganda/transhumance/indexcorpus.txt")
-  val baseDirName = args.lift(2).getOrElse("../corpora/uganda/transhumance/searches")
+  val corpusFileName = args.lift(0).getOrElse("./scraper/corpora/uganda/uganda china/searchcorpus.txt")
+  val articleFileName = args.lift(1).getOrElse("./scraper/corpora/uganda/uganda china/indexcorpus.txt")
+  val baseDirName = args.lift(2).getOrElse("../corpora/uganda/uganda china/searches")
   val corpus = SearchCorpus(corpusFileName)
   val scraper = new CorpusSearchScraper(corpus)
   val browser: Browser = new HabitusBrowser()
