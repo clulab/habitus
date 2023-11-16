@@ -11,7 +11,7 @@ class AnkoleTimesIndexScraper extends PageIndexScraper(AnkoleTimesDomain) {
 
   def scrape(browser: Browser, page: Page, html: String): IndexScrape = {
     val doc = browser.parseString(html)
-    val links = (doc >> elementList("div#tdi_83 h3.entry-title > a"))
+    val links = (doc >> elementList("div#tdi_109 h3.entry-title > a"))
         .map(_.attr("href"))
         .map(decode)
     val scrape = IndexScrape(links)
