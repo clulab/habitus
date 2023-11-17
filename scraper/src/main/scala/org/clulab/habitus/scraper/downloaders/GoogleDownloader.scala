@@ -74,7 +74,7 @@ class GoogleDownloader extends GetPageDownloader(GoogleDomain) {
 
     Files.createDirectories(new File(subDirName).toPath)
 
-    val dirtyFile = page.url.getFile.substring(1) // Remove initial /
+    val dirtyFile = page.url.getFile // TODO: .substring(1) // Remove initial /
     val file = cleaner.clean(dirtyFile)
     val jsonFileName = file + ".json"
     val jsonLocationName = s"$subDirName/$jsonFileName"
