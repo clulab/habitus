@@ -6,4 +6,4 @@
 #https://www.ugstandard.com/?s=uganda+mining
 #https://capitalradio.co.ug/search/?query=uganda+mining
 #https://delta.ssoccom.ug/?s=uganda+mining&QXuENt=.Ff%40pTM69RuBAlq&E-IKmsZSfNuYbniA=2e%40d1jfG9&QXuENt=.Ff%40pTM69RuBAlq&E-IKmsZSfNuYbniA=2e%40d1jfG9
-https://customsearch.googleapis.com/customsearch/v1?cx=${SEARCH_ENGINE_ID}&fileType=pdf&hq=mining&q=uganda&key=${API_KEY}	karamoja
+https://customsearch.googleapis.com/customsearch/v1?cx=${SEARCH_ENGINE_ID}&fileType=pdf&hq=mining&q=uganda&key=${API_KEY}	uganda mining
