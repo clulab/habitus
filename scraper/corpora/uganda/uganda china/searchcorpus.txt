@@ -5,3 +5,4 @@
 #https://ankoletimes.co.ug/?s=uganda+china
 #https://www.ugstandard.com/?s=uganda+china
 #https://capitalradio.co.ug/search/?query=uganda+china
+https://customsearch.googleapis.com/customsearch/v1?cx=${SEARCH_ENGINE_ID}&fileType=pdf&hq=china&q=uganda&key=${API_KEY}	uganda china
