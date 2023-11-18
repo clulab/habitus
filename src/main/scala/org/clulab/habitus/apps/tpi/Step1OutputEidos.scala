@@ -16,31 +16,39 @@ import scala.util.Using
 object Step1OutputEidos extends App {
   implicit val formats: DefaultFormats.type = org.json4s.DefaultFormats
 
-  val baseDirectoryName = args.lift(0).getOrElse("../corpora/uganda/karamoja")
-  val files = new File(baseDirectoryName).listFilesByWildcard("*.json", recursive = true).toList
+  val baseDirectoryName = args.lift(0).getOrElse("../corpora/uganda")
+  val inAndOutFiles = new File(baseDirectoryName)
+      .listFilesByWildcard("*.json", recursive = true)
+      .map { inFile =>
+        val outFile = FileEditor(inFile.getCanonicalFile).setExt("jsonld").get
+
+        (inFile, outFile)
+      }
+      .filterNot { case (_, outFile) => outFile.exists }
+      .toVector
+      .sortBy { case (inFile, _) => inFile.length }
   val config =  EidosSystem.defaultConfig
       .withValue("ontologies.useGrounding", ConfigValueFactory.fromAnyRef(false))
   val eidosSystem = new EidosSystem(config)
   val count = new AtomicInteger()
-  val parFiles = ThreadUtils.parallelize(files, 8)
+  val parFiles = ThreadUtils.parallelize(inAndOutFiles, 5)
 
-  parFiles.foreach { file =>
+  parFiles.foreach { case (inFile, outFile) =>
     try {
-      val path = FileEditor(file.getCanonicalFile).setExt("jsonld").get
-      println(s"${count.getAndIncrement()} ${file.getCanonicalPath} -> ${path.getCanonicalPath}")
+      println(s"${count.getAndIncrement()}/${inAndOutFiles.length} ${inFile.getCanonicalPath} -> ${outFile.getCanonicalPath}")
 
-      val json = FileUtils.getTextFromFile(file)
+      val json = FileUtils.getTextFromFile(inFile)
       val jValue = JsonMethods.parse(json)
       val text = (jValue \ "text").extract[String]
       val annotatedDocument = eidosSystem.extractFromText(text)
 
-      Using.resource(FileUtils.printWriterFromFile(path)) { printWriter =>
+      Using.resource(FileUtils.printWriterFromFile(outFile)) { printWriter =>
         new JLDCorpus(annotatedDocument).serialize(printWriter, regrounding = false)
       }
     }
     catch {
       case throwable: Throwable =>
-        println(s"Processing of ${file.getCanonicalPath} failed: ${throwable.getMessage}")
+        println(s"Processing of ${inFile.getCanonicalPath} failed: ${throwable.getMessage}")
     }
   }
 }
