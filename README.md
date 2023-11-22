@@ -8,12 +8,12 @@ This repository contains CLU lab's NLP software for the DARPA HEURISTICS project
 ## 1. Requirements
 
 This software requires:
-- Java 8 
+- Java 8
 - sbt 1.x
 
 ## 2. Variable reading
 
-This component reads for values assigned to variables that are important for crop modeling such as planting date and fertilizer usage. For example, from the sentence *"Sowing between October 4 and October 14 was optimal."* our software extracts the variable *"sowing"* with the value being the date range *"between October 4 and October 14"*, which is normalized to *"XXXX-10-04 -- XXXX-10-14"*. 
+This component reads for values assigned to variables that are important for crop modeling such as planting date and fertilizer usage. For example, from the sentence *"Sowing between October 4 and October 14 was optimal."* our software extracts the variable *"sowing"* with the value being the date range *"between October 4 and October 14"*, which is normalized to *"XXXX-10-04 -- XXXX-10-14"*.
 
 This component can be used in three different ways, as described below.
 
@@ -110,7 +110,7 @@ The `mentions.json` file contains:
 ```
 
 The description of the columns in the `.tsv` file (or the equivalent fields in the `.json` file is as follows:
-- "variableText" : The trigger word/phrase in the sentence which created this extraction. 
+- "variableText" : The trigger word/phrase in the sentence which created this extraction.
  - valueText" : The part of sentence which was recognized to contain the intended output of the trigger.
  - "valueNorm" : The normalized values of the valueText. In case of of dates/date-ranges, the dates in text format is convert to the format YYYY-MM-DD
  -    "sentenceText" : The particular sentence in which this trigger was found.
@@ -149,6 +149,12 @@ To add a new country file, follow these steps:
 python get_essential_region_info_from_geonames.py <path/to/directory/containing/geonames/files> <path/to/output/directory>
 ```
 - add the name of the new country with its country code to the resulting `.tsv` file in the following format: `country\tcode`, e.g., `Senegal SN`. The country code is the same as the file name for a given country, e.g., `SN` for `Senegal`.
+
+Geonames files cover a lot of locations, but are not exhaustive. Some locations may need to be added to location tsv.
+
+For Uganda (UG.tsv), the list of locations was created based on a short list provided by a domain expert and a [document related to mining in Uganda](https://www.ugandainvest.go.ug/uia/images/Download_Center/SECTOR_PROFILE/Mining_Sector_Profile.pdf). The coordinates of some locations were added based on the location listing in https://mapcarta.com/, some were added based on the larger location unit that the given location is part of as listed in http://www.lcmt.org/ (e.g., Kaabong Tc is listed as part of Kaabong District, so for Kaabong Tc entry in the UG.tsv, Kaabong District coordinates are used), or based on text of documents related to the area (e.g., "Mica occurs at Morulem in Abim district; Lunya in Mukono district; Omwodulum in Lira district and Paimol, Parobong, Kacharalum, Agili, Akwanga, Achumo, Kukor, Labwordwong, Namokora, Naam and Okora in Pader district."---based on this text, we determine the district each unknown location is in and use the coordinates for that district).
+
+The procedure of adding coordinates may not be the same for different countries. Some locations (e.g., rivers) may not have coordinates in the file.
 
 ## 3. Reading for propositional attitudes
 
