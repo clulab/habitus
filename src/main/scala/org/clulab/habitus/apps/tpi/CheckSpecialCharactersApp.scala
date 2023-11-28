@@ -6,8 +6,8 @@ import scala.collection.mutable.{HashSet => MutableHashSet}
 import scala.util.Using
 
 object CheckSpecialCharactersApp extends App {
-  val inputFileName = "../corpora/multi/CausalBeliefsDate.tsv"
-  val outputFileName = "../corpora/multi/CausalBeliefsDateClean.tsv"
+  val inputFileName = "../corpora/uganda/uganda4.tsv"
+  val outputFileName = "../corpora/uganda/uganda4a.tsv"
   val badLetters = MutableHashSet[Char]()
 
   Using.resource(Sourcer.sourceFromFilename(inputFileName)) { inputSource =>
@@ -16,10 +16,11 @@ object CheckSpecialCharactersApp extends App {
 
       lines.foreach { line =>
         val fixedLine = line.map { letter =>
-          // Visual Studio Code does not like this letter, 0x2028.
-          // It is a line separator character.  I guess it is OK to
+          // Visual Studio Code does not like the letter 0x2028 (8232).
+          // It is a line separator (LS) character.  I guess it is OK to
           // leave it in the file until it is republished.
-          if (8232 <= letter.toInt && letter.toInt < 8233) {
+          // PS (paragraph separator), 0x2029 (8233) is also a problem.
+          if (8232 <= letter.toInt && letter.toInt < 8234) {
             badLetters += letter
             ' '
           }
