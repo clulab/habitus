@@ -23,7 +23,7 @@ object Step2InputEidos extends App with Logging {
   implicit val formats: DefaultFormats.type = org.json4s.DefaultFormats
   val contextWindow = 3
   val baseDirectory = "../corpora/uganda"
-  val outputFileName = "../corpora/uganda/uganda2.tsv"
+  val outputFileName = "../corpora/uganda/uganda.tsv"
   val deserializer = new JLDDeserializer()
 
   def jsonFileToJsonld(jsonFile: File): File =
@@ -72,10 +72,12 @@ object Step2InputEidos extends App with Logging {
       .replaceAll("\r", " ")
       .replaceAll("\t", " ")
       .replaceAll("\u2028", " ") // unicode line separator
+      .replaceAll("\u2029", " ") // unicode paragraph separator
       .map { letter =>
         if (letter.toInt < 32) ' '
         else letter
       }
+      .trim
 
   def getSentenceText(document: Document, sentence: Sentence): String = {
     val rawText = document.text.get.slice(sentence.startOffsets.head, sentence.endOffsets.last)
