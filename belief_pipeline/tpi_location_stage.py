@@ -10,9 +10,15 @@ import spacy
 class TpiLocationStage(InnerStage):
     def __init__(self, locations_file_name: str) -> None:
         super().__init__()
-        locations_data_frame = pandas.read_csv(locations_file_name, sep="\t", encoding="utf-8", names=[
+        # The Uganda locations file has an extra column of notes, but we are not using it, so it is not included
+        # in order to keep the code compatible with the Ghana locations.  The extra column causes confusion with
+        # identification of the index column, so that is explicitly turned off here.  You will see a warning
+        # message on the console about lost data, probably from the extra column that we're not using here:
+        # ParserWarning: Length of header or names does not match length of data. This leads to a loss of data
+        # with index_col=False.
+        locations_data_frame = pandas.read_csv(locations_file_name, sep="\t", encoding="utf-8", index_col=False, names=[
             "geonameid", "name", "asciiname", "alternatenames", "latitude", "longitude", "unk1", "unk2", "country_code",
-            "cc2", "unk3", "unk4", "unk5", "unk6", "population", "elevation", "unk7", "timezone", "unk8"
+            "cc2", "unk3", "unk4", "unk5", "unk6", "population", "elevation", "unk7", "timezone", "unk8" #, "notes"
         ])
         names = locations_data_frame["name"]
         ascii_names = locations_data_frame["asciiname"]
