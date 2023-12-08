@@ -14,4 +14,5 @@
 
 # https://www.google.com/?s=karamoja	karamoja
 # https://customsearch.googleapis.com/customsearch/v1?cx=${SEARCH_ENGINE_ID}&fileType=pdf&hq=karamoja&q=uganda&key=${API_KEY}	karamoja
-https://www.miningreview.com	karamoja
+#https://www.miningreview.com?s=karamoja	karamoja
+https://mining.com?s=karamoja	karamoja
