@@ -10,7 +10,7 @@ import org.clulab.habitus.scraper.downloaders.PageCorpusDownloader
   * directory structure under baseDirName.
   */
 object IndexDownloaderApp extends App {
-  val term = "uganda farming"
+  val term = "uganda mining"
   val corpusFileName = args.lift(0).getOrElse(s"./scraper/corpora/uganda/$term/indexcorpus.txt")
   val baseDirName = args.lift(1).getOrElse(s"../corpora/uganda/$term/indexes")
   val corpus = PageCorpus(corpusFileName)

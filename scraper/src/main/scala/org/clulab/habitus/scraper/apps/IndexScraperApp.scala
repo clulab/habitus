@@ -12,7 +12,7 @@ import org.clulab.habitus.scraper.scrapers.index.CorpusIndexScraper
   */
 
 object IndexScraperApp extends App {
-  val term = "uganda farming"
+  val term = "uganda mining"
   val corpusFileName = args.lift(0).getOrElse(s"./scraper/corpora/uganda/$term/indexcorpus.txt")
   val articleFileName = args.lift(1).getOrElse(s"./scraper/corpora/uganda/$term/articlecorpus.txt")
   val baseDirName = args.lift(1).getOrElse(s"../corpora/uganda/$term/indexes")
