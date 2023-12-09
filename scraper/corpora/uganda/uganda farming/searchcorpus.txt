@@ -6,4 +6,5 @@
 #https://www.ugstandard.com/?s=uganda+farming
 #https://capitalradio.co.ug/search/?query=uganda+farming
 #https://delta.ssoccom.ug/?s=uganda+farming
-https://customsearch.googleapis.com/customsearch/v1?cx=${SEARCH_ENGINE_ID}&fileType=pdf&hq=farming&q=uganda&key=${API_KEY}	uganda farming
+#https://customsearch.googleapis.com/customsearch/v1?cx=${SEARCH_ENGINE_ID}&fileType=pdf&hq=farming&q=uganda&key=${API_KEY}	uganda farming
+https://www.miningreview.com/?s=uganda+farming

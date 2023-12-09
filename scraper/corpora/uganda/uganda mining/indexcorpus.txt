@@ -1,10 +1,6 @@
-https://customsearch.googleapis.com/customsearch/v1?cx=${SEARCH_ENGINE_ID}&fileType=pdf&hq=mining&q=uganda&key=${API_KEY}&start=1
-https://customsearch.googleapis.com/customsearch/v1?cx=${SEARCH_ENGINE_ID}&fileType=pdf&hq=mining&q=uganda&key=${API_KEY}&start=11
-https://customsearch.googleapis.com/customsearch/v1?cx=${SEARCH_ENGINE_ID}&fileType=pdf&hq=mining&q=uganda&key=${API_KEY}&start=21
-https://customsearch.googleapis.com/customsearch/v1?cx=${SEARCH_ENGINE_ID}&fileType=pdf&hq=mining&q=uganda&key=${API_KEY}&start=31
-https://customsearch.googleapis.com/customsearch/v1?cx=${SEARCH_ENGINE_ID}&fileType=pdf&hq=mining&q=uganda&key=${API_KEY}&start=41
-https://customsearch.googleapis.com/customsearch/v1?cx=${SEARCH_ENGINE_ID}&fileType=pdf&hq=mining&q=uganda&key=${API_KEY}&start=51
-https://customsearch.googleapis.com/customsearch/v1?cx=${SEARCH_ENGINE_ID}&fileType=pdf&hq=mining&q=uganda&key=${API_KEY}&start=61
-https://customsearch.googleapis.com/customsearch/v1?cx=${SEARCH_ENGINE_ID}&fileType=pdf&hq=mining&q=uganda&key=${API_KEY}&start=71
-https://customsearch.googleapis.com/customsearch/v1?cx=${SEARCH_ENGINE_ID}&fileType=pdf&hq=mining&q=uganda&key=${API_KEY}&start=81
-https://customsearch.googleapis.com/customsearch/v1?cx=${SEARCH_ENGINE_ID}&fileType=pdf&hq=mining&q=uganda&key=${API_KEY}&start=91
+https://mining.com/?s=uganda+mining
+https://mining.com/page/2?s=uganda+mining
+https://mining.com/page/3?s=uganda+mining
+https://mining.com/page/4?s=uganda+mining
+https://mining.com/page/5?s=uganda+mining
+https://mining.com/page/6?s=uganda+mining

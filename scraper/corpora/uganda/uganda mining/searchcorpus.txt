@@ -1,9 +1,11 @@
 #https://www.observer.ug/search?searchword=uganda%20mining&ordering=newest&searchphrase=all&limit=20&areas[0]=content&periods[0]=2017&limitstart=0	uganda mining
-#https://www.independent.co.ug/?s=mining+uganda
-#https://nbs.ug/?s=uganda+mining
-#https://www.kfm.co.ug/?s=uganda+mining
-#https://ankoletimes.co.ug/?s=uganda+mining
-#https://www.ugstandard.com/?s=uganda+mining
-#https://capitalradio.co.ug/search/?query=uganda+mining
-#https://delta.ssoccom.ug/?s=uganda+mining&QXuENt=.Ff%40pTM69RuBAlq&E-IKmsZSfNuYbniA=2e%40d1jfG9&QXuENt=.Ff%40pTM69RuBAlq&E-IKmsZSfNuYbniA=2e%40d1jfG9
-https://customsearch.googleapis.com/customsearch/v1?cx=${SEARCH_ENGINE_ID}&fileType=pdf&hq=mining&q=uganda&key=${API_KEY}	uganda mining
+#https://www.independent.co.ug/?s=mining+uganda	uganda mining
+#https://nbs.ug/?s=uganda+mining	uganda mining
+#https://www.kfm.co.ug/?s=uganda+mining	uganda mining
+#https://ankoletimes.co.ug/?s=uganda+mining	uganda mining
+#https://www.ugstandard.com/?s=uganda+mining	uganda mining
+#https://capitalradio.co.ug/search/?query=uganda+mining	uganda mining
+#https://delta.ssoccom.ug/?s=uganda+mining&QXuENt=.Ff%40pTM69RuBAlq&E-IKmsZSfNuYbniA=2e%40d1jfG9&QXuENt=.Ff%40pTM69RuBAlq&E-IKmsZSfNuYbniA=2e%40d1jfG9	uganda mining
+#https://customsearch.googleapis.com/customsearch/v1?cx=${SEARCH_ENGINE_ID}&fileType=pdf&hq=mining&q=uganda&key=${API_KEY}	uganda mining
+#https://www.miningreview.com/?s=uganda+mining	uganda mining
+https://www.mining.com/?s=uganda+mining	uganda mining

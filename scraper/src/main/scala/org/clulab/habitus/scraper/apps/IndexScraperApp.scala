@@ -12,30 +12,10 @@ import org.clulab.habitus.scraper.scrapers.index.CorpusIndexScraper
   */
 
 object IndexScraperApp extends App {
-//  val corpusFileName = args.lift(0).getOrElse("./scraper/indexcorpus.txt")
-//  val corpusFileName = args.lift(0).getOrElse("./scraper/thechronicle_indexcorpus.txt")
-//  val corpusFileName = args.lift(0).getOrElse("./scraper/threenews_indexcorpus.txt")
-//  val corpusFileName = args.lift(0).getOrElse("./scraper/etvghana_indexcorpus.txt")
-//  val corpusFileName = args.lift(0).getOrElse("./scraper/happyghana_indexcorpus.txt")
-//  val corpusFileName = args.lift(0).getOrElse("./scraper/gna_indexcorpus.txt")
-//  val corpusFileName = args.lift(0).getOrElse("./scraper/adomonline_indexcorpus.txt")
-//  val corpusFileName = args.lift(0).getOrElse("./scraper/citifmonline_indexcorpus.txt")
-//  val corpusFileName = args.lift(0).getOrElse("./scraper/indexcorpus-illegal-mining.txt")
-//  val corpusFileName = args.lift(0).getOrElse("./scraper/corpora/multi2/livestock/indexcorpus.txt")
-//  val articleFileName = args.lift(1).getOrElse("./scraper/articlecorpus.txt")
-//  val articleFileName = args.lift(1).getOrElse("./scraper/thechronicle_articlecorpus.txt")
-//  val articleFileName = args.lift(1).getOrElse("./scraper/threenews_articlecorpus.txt")
-//  val articleFileName = args.lift(1).getOrElse("./scraper/etvghana_articlecorpus.txt")
-//  val articleFileName = args.lift(1).getOrElse("./scraper/happyghana_articlecorpus.txt")
-//  val articleFileName = args.lift(1).getOrElse("./scraper/gna_articlecorpus.txt")
-//  val articleFileName = args.lift(1).getOrElse("./scraper/adomonline_articlecorpus.txt")
-//  val articleFileName = args.lift(1).getOrElse("./scraper/citifmonline_articlecorpus.txt")
-//  val articleFileName = args.lift(1).getOrElse("./scraper/articlecorpus-illegal-mining.txt")
-
-  val corpusFileName = args.lift(0).getOrElse("./scraper/corpora/uganda/uganda farming/indexcorpus.txt")
-  val articleFileName = args.lift(1).getOrElse("./scraper/corpora/uganda/uganda farming/articlecorpus.txt")
-  val baseDirName = args.lift(1).getOrElse("../corpora/uganda/uganda farming/indexes")
-
+  val term = "uganda mining"
+  val corpusFileName = args.lift(0).getOrElse(s"./scraper/corpora/uganda/$term/indexcorpus.txt")
+  val articleFileName = args.lift(1).getOrElse(s"./scraper/corpora/uganda/$term/articlecorpus.txt")
+  val baseDirName = args.lift(1).getOrElse(s"../corpora/uganda/$term/indexes")
   val corpus = PageCorpus(corpusFileName)
   val scraper = new CorpusIndexScraper(corpus)
   val browser: Browser = new HabitusBrowser()
