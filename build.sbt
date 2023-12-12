@@ -23,6 +23,7 @@ libraryDependencies ++= {
   Seq(
     "ai.lum"                %% "odinson-core"        % "0.4.0",
 
+    "org.clulab"             % "deberta-embd-kryo"   % "1.0.0",
     "org.clulab"            %% "eidos"               % "1.7.0",
     "org.clulab"            %% "processors-corenlp"  % procVer,
     "org.clulab"            %% "processors-main"     % procVer,
