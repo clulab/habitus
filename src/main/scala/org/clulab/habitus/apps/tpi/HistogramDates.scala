@@ -5,8 +5,8 @@ import org.clulab.utils.{Logging, Sourcer}
 import scala.util.Using
 
 object HistogramDates extends App with Logging {
-  val inputFileName = "../corpora/uganda/uganda3.tsv"
-  val expectedColumnCount = 22
+  val inputFileName = "../corpora/uganda/uganda4.tsv"
+  val expectedColumnCount = 26
   val years = Using.resource(Sourcer.sourceFromFilename(inputFileName)) { inputSource =>
     val lines = inputSource.getLines
     val firstLine = lines.next

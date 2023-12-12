@@ -12,16 +12,19 @@ object HistogramLocations extends App with Logging {
     val _ = lines.next
     val locations = lines.flatMap { line =>
       val columns = line.split('\t')
-      assert(columns.length == expectedColumnCount)
-      val location = columns(19)
+//      assert(columns.length == expectedColumnCount)
+      if (columns.length > 19) {
+        val location = columns(19)
 
-      if (location.isEmpty) Seq.empty
-      else {
-        val recoded = location.replaceAllLiterally("), ", ");")
-        val split = recoded.split(';')
+        if (location.isEmpty) Seq.empty
+        else {
+          val recoded = location.replaceAllLiterally("), ", ");")
+          val split = recoded.split(';')
 
-        split.toSeq
+          split.toSeq
+        }
       }
+      else Seq.empty
     }
 
     locations.toVector
