@@ -12,12 +12,12 @@ object HistogramDates extends App with Logging {
     val firstLine = lines.next
     val years = lines.flatMap { line =>
       val columns = line.split('\t')
-      assert(columns.length == expectedColumnCount)
+//      assert(columns.length == expectedColumnCount)
       val causalIndex = columns(6)
 
       if (causalIndex == "" || causalIndex == "0") {
         val terms = columns(1).split(' ')
-        val canonicalDate = columns.last
+        val canonicalDate = columns(21) // .last
 
         // If there are multiple matching terms, add that many to the sequence so
         // that we match file counts.

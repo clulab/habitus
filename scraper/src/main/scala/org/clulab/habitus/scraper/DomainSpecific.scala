@@ -6,7 +6,8 @@ class DomainSpecific(val domain: Domain) {
 
   def matches(page: Page): Boolean = {
     val host = page.url.getHost
+    val protocol = page.url.getProtocol
 
-    host.endsWith(domain.domain)
+    host.endsWith(domain.domain) && protocol.startsWith(domain.protocol)
   }
 }

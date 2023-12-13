@@ -25,27 +25,9 @@ class GoogleArticleScraper extends PageArticleScraper(GoogleDomain) {
   def scrape(browser: Browser, page: Page, pdfLocationName: String): ArticleScrape = {
     val rawText = GoogleArticleScraper.pdf2txt.read(new File(pdfLocationName), None)
     val text = GoogleArticleScraper.pdf2txt.process(rawText, GoogleArticleScraper.loops)
-    val commandResult = OSProc("pdfinfo", "-isodates", pdfLocationName.replace('/', File.separatorChar)).call(check = false)
-    val (titleOpt, datelineOpt, bylineOpt) = {
-      if (commandResult.exitCode != 0)
-        (None, None, None)
-      else {
-        val metaText = commandResult.out.text(Codec.UTF8)
-        val lines = metaText.split('\n').map(_.trim)
-        val map = lines.map { line =>
-          val key = StringUtils.beforeFirst(line, ':', true)
-          val value = StringUtils.afterFirst(line, ':', false).trim
-          key -> value
-        }.toMap
-        val titleOpt = map.get("Title")
-        val datelineOpt = map.get("ModDate").orElse(map.get("CreationDate"))
-        val bylineOpt = map.get("Author")
+    val pdfMetadata = GoogleArticleScraper.readPdfMetadata(pdfLocationName)
 
-        (titleOpt, datelineOpt, bylineOpt)
-      }
-    }
-
-    ArticleScrape(page.url, titleOpt, datelineOpt, bylineOpt, text)
+    ArticleScrape(page.url, pdfMetadata.titleOpt, pdfMetadata.datelineOpt, pdfMetadata.bylineOpt, text)
   }
 
   def readPdf(page: Page, baseDirName: String): (String, String, String) = {
@@ -81,6 +63,8 @@ class GoogleArticleScraper extends PageArticleScraper(GoogleDomain) {
   }
 }
 
+case class PdfMetadata(titleOpt: Option[String], datelineOpt: Option[String], bylineOpt: Option[String])
+
 object GoogleArticleScraper {
   val loops = 1
   lazy val pdf2txt = {
@@ -104,5 +88,29 @@ object GoogleArticleScraper {
     val pdf2txt = new Pdf2txt(pdfConverter, preprocessors)
 
     pdf2txt
+  }
+
+  def readPdfMetadata(pdfLocationName: String): PdfMetadata = {
+    val commandResult = OSProc("pdfinfo", "-isodates", pdfLocationName.replace('/', File.separatorChar)).call(check = false)
+    val pdfMetadata = {
+      if (commandResult.exitCode != 0)
+        PdfMetadata(None, None, None)
+      else {
+        val metaText = commandResult.out.text(Codec.UTF8)
+        val lines = metaText.split('\n').map(_.trim)
+        val map = lines.map { line =>
+          val key = StringUtils.beforeFirst(line, ':', true)
+          val value = StringUtils.afterFirst(line, ':', false).trim
+          key -> value
+        }.toMap
+        val titleOpt = map.get("Title")
+        val datelineOpt = map.get("ModDate").orElse(map.get("CreationDate"))
+        val bylineOpt = map.get("Author")
+
+        PdfMetadata(titleOpt, datelineOpt, bylineOpt)
+      }
+    }
+
+    pdfMetadata
   }
 }
