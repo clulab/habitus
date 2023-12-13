@@ -25,6 +25,8 @@ class HabitusGrounder(wordEmbeddingMap: WordEmbeddingMap, tokenizer: Tokenizer) 
 }
 
 object HabitusGrounder {
+  // TODO: A simple "deberta-base" fails!  With v3, the special character is incorrect.
+  // Do we need to skip [CLS] because it has undue influence?
   lazy val defaultTokenizer: ScalaJniTokenizer = ScalaJniTokenizer("microsoft/deberta-v3-base")
   lazy val defaultWordEmbeddingMap: WordEmbeddingMap = WordEmbeddingMapPool.getOrElseCreate(
     "deberta_embd",
