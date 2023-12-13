@@ -25,27 +25,9 @@ class PdfFileArticleScraper extends PageArticleScraper(FileDomain) {
   def scrape(browser: Browser, page: Page, pdfLocationName: String): ArticleScrape = {
     val rawText = GoogleArticleScraper.pdf2txt.read(new File(pdfLocationName), None)
     val text = GoogleArticleScraper.pdf2txt.process(rawText, GoogleArticleScraper.loops)
-    val commandResult = OSProc("pdfinfo", "-isodates", pdfLocationName.replace('/', File.separatorChar)).call(check = false)
-    val (titleOpt, datelineOpt, bylineOpt) = {
-      if (commandResult.exitCode != 0)
-        (None, None, None)
-      else {
-        val metaText = commandResult.out.text(Codec.UTF8)
-        val lines = metaText.split('\n').map(_.trim)
-        val map = lines.map { line =>
-          val key = StringUtils.beforeFirst(line, ':', true)
-          val value = StringUtils.afterFirst(line, ':', false).trim
-          key -> value
-        }.toMap
-        val titleOpt = map.get("Title")
-        val datelineOpt = map.get("ModDate").orElse(map.get("CreationDate"))
-        val bylineOpt = map.get("Author")
+    val pdfMetadata = GoogleArticleScraper.readPdfMetadata(pdfLocationName)
 
-        (titleOpt, datelineOpt, bylineOpt)
-      }
-    }
-
-    ArticleScrape(page.url, titleOpt, datelineOpt, bylineOpt, text)
+    ArticleScrape(page.url, pdfMetadata.titleOpt, pdfMetadata.datelineOpt, pdfMetadata.bylineOpt, text)
   }
 
   def readPdf(page: Page, baseDirName: String): (String, String, String) = {
@@ -78,31 +60,5 @@ class PdfFileArticleScraper extends PageArticleScraper(FileDomain) {
     Using.resource(FileUtils.printWriterFromFile(jsonLocationName)) { printWriter =>
       printWriter.println(json)
     }
-  }
-}
-
-object PdfFileArticleScraper {
-  val loops = 1
-  lazy val pdf2txt = {
-    // In order to use ScienceParse, the jars must be included directly in this project,
-    // in the lib directory, because they aren't published properly to maven.
-    // val pdfConverter = new ScienceParseConverter()
-    // On the other hand, Tika seems to require Java 11.
-    val pdfConverter = new TikaConverter()
-    val languageModel = GigawordLanguageModel()
-    val preprocessors = Array(
-      new LinePreprocessor(),
-      new ParagraphPreprocessor(),
-      new UnicodePreprocessor(),
-      new CasePreprocessor(),
-      new NumberPreprocessor(),
-      new LigaturePreprocessor(languageModel),
-      new LineBreakPreprocessor(languageModel),
-      new WordBreakByHyphenPreprocessor(),
-      new WordBreakBySpacePreprocessor()
-    )
-    val pdf2txt = new Pdf2txt(pdfConverter, preprocessors)
-
-    pdf2txt
   }
 }
