@@ -7,37 +7,40 @@ import org.clulab.scala_transformers.tokenizer.jni.ScalaJniTokenizer
 // In this very simple grounder, a Seq of words is being matched with the
 // single word in the embedding map keys that most closely summarizes or
 // approximates them.  Perhaps "male ruler" results in "king".
-class HabitusGrounder(wordEmbeddingMap: WordEmbeddingMap, tokenizer: Tokenizer) {
+class HabitusGrounder(wordEmbeddingMap: WordEmbeddingMap, tokenizer: Tokenizer, specialCharOpt: Option[Char]) {
 
   def ground(words: Array[String]): String = {
     val tokens = tokenizer.tokenize(words).tokens
-    val compositeVector = wordEmbeddingMap.makeCompositeVector(tokens)
+    val middleTokens = tokens.drop(1).dropRight(1) // Skip the [CLS] and [SEP].
+    val compositeVector = wordEmbeddingMap.makeCompositeVector(middleTokens)
     val grounding = wordEmbeddingMap.keys.maxBy { key =>
       val vector = wordEmbeddingMap.get(key).get
       val similarity = WordEmbeddingMap.dotProduct(compositeVector, vector)
 
-      println(s"$key\t$similarity")
+//      println(s"$key\t$similarity")
       similarity
     }
 
-    grounding
+    if (specialCharOpt.isEmpty || specialCharOpt.get != grounding.head) grounding
+    else grounding.drop(1)
   }
 }
 
 object HabitusGrounder {
-  // TODO: A simple "deberta-base" fails!  With v3, the special character is incorrect.
-  // Do we need to skip [CLS] because it has undue influence?
-  lazy val defaultTokenizer: ScalaJniTokenizer = ScalaJniTokenizer("microsoft/deberta-v3-base")
+  val defaultAddPrefixSpace: Boolean = true
+  val defaultSpecialCharOpt: Option[Char] = if (defaultAddPrefixSpace) Some('\u0120') else None
+  lazy val defaultTokenizer: ScalaJniTokenizer = ScalaJniTokenizer("microsoft/deberta-base", addPrefixSpace = defaultAddPrefixSpace)
   lazy val defaultWordEmbeddingMap: WordEmbeddingMap = WordEmbeddingMapPool.getOrElseCreate(
     "deberta_embd",
     compact = true,
     resourceLocation = "/org/clulab/scala_transformers/embeddings/"
   )
 
-  def apply(wordEmbeddingMap: WordEmbeddingMap, tokenizer: Tokenizer): HabitusGrounder =
-      new HabitusGrounder(wordEmbeddingMap, tokenizer)
+  def apply(wordEmbeddingMap: WordEmbeddingMap, tokenizer: Tokenizer, specialCharOpt: Option[Char]): HabitusGrounder =
+      new HabitusGrounder(wordEmbeddingMap, tokenizer, specialCharOpt)
 
-  def apply(wordEmbeddingMap: WordEmbeddingMap): HabitusGrounder = apply(wordEmbeddingMap, defaultTokenizer)
+  def apply(wordEmbeddingMap: WordEmbeddingMap): HabitusGrounder =
+      apply(wordEmbeddingMap, defaultTokenizer, defaultSpecialCharOpt)
 
   def apply(): HabitusGrounder = apply(defaultWordEmbeddingMap)
 }
