@@ -22,7 +22,7 @@ case class AttributeCounts(increaseCount: Int, decreaseCount: Int, posChangeCoun
 object Step2InputEidos extends App with Logging {
   implicit val formats: DefaultFormats.type = org.json4s.DefaultFormats
   val contextWindow = 3
-  val baseDirectory = "../corpora/uganda"
+  val baseDirectory = "../corpora/uganda/unknown"
   val outputFileName = "../corpora/uganda/uganda.tsv"
   val deserializer = new JLDDeserializer()
 

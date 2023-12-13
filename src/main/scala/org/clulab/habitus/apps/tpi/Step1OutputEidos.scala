@@ -31,7 +31,7 @@ object Step1OutputEidos extends App {
       .withValue("ontologies.useGrounding", ConfigValueFactory.fromAnyRef(false))
   val eidosSystem = new EidosSystem(config)
   val count = new AtomicInteger()
-  val parFiles = ThreadUtils.parallelize(inAndOutFiles, 5)
+  val parFiles = inAndOutFiles // ThreadUtils.parallelize(inAndOutFiles, 2)
 
   parFiles.foreach { case (inFile, outFile) =>
     try {
