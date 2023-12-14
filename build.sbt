@@ -19,16 +19,21 @@ resolvers += "jitpack" at "https://jitpack.io"
 
 libraryDependencies ++= {
   val procVer = "8.5.3"
+  val luceneVer = "6.6.6"
 
   Seq(
     "ai.lum"                %% "odinson-core"        % "0.4.0",
+
+    "io.github.zamblauskas" %% "scala-csv-parser"    % "0.13.1",
 
     "org.clulab"            %% "eidos"               % "1.7.0",
     "org.clulab"            %% "processors-corenlp"  % procVer,
     "org.clulab"            %% "processors-main"     % procVer,
     "org.clulab"            %% "processors-openie"   % procVer,
 
-    "io.github.zamblauskas" %% "scala-csv-parser"    % "0.13.1",
+    "org.apache.lucene"      % "lucene-core"             % luceneVer,
+    "org.apache.lucene"      % "lucene-analyzers-common" % luceneVer,
+    "org.apache.lucene"      % "lucene-queryparser"      % luceneVer,
 
     "org.scalatest"         %% "scalatest"           % "3.0.5" % "test"
   )
