@@ -328,6 +328,8 @@ def get_scenario_match(i: int):
 		return matcher.match_scenario(scenario_chosen, print_sentences, filter_first, tokens_allowed, False, True)
 	if i == 3:
 		return ""
+	if i == 4:
+		return matcher.match_scenario(scenario_chosen, print_sentences, filter_first, tokens_allowed, True, True)
 
 if __name__ == "__main__":
 
@@ -380,11 +382,11 @@ if __name__ == "__main__":
 
 		path = "results/" + scenario[1]
 
-		os.mkdir(path)
+		#os.mkdir(path)
 
 		scenario_chosen = scenario[0]
 
-		for context_index in range(4):
+		for context_index in range(5):
 
 			current_type = "all"
 
@@ -394,6 +396,8 @@ if __name__ == "__main__":
 				current_type = "causal"
 			if context_index == 3:
 				current_type = "no_context"
+			if context_index == 4:
+				current_type = "beliefpluscausal"
 
 			f = open(path + "/" + current_type + ".txt", "w")
 
@@ -404,6 +408,16 @@ if __name__ == "__main__":
 				temporary_choices.append(numpy.roll(scenario_chosen.choices, i))
 
 			scenario_match = get_scenario_match(context_index)
+
+			f.write(f"Use the following context sentences delimited with backticks as background knowledge ``` {scenario_match} ``` to explain the most likely answer to the question ``` {scenario_chosen.introduction} ```. Provide long and thorough justifications, while citing the context using quotes.")
+
+			#f.write("\n")
+
+			#f.write(scenario_match + "\n")
+
+			f.close()
+
+			continue
 
 			choices_str = ""
 
