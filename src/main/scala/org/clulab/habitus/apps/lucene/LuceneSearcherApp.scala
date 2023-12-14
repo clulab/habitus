@@ -44,7 +44,8 @@ object LuceneSearcherApp extends App {
 
   results.foreach { case (score, document) =>
     val url = document.get("url")
+    val year = document.get("year")
 
-    println(s"$score\t$url")
+    println(s"$score\t$year\t$url")
   }
 }

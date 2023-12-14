@@ -2,9 +2,11 @@ package org.clulab.habitus.apps.lucene
 
 import ai.lum.common.FileUtils._
 import org.apache.lucene.analysis.standard.StandardAnalyzer
-import org.apache.lucene.document.{Document, Field, StoredField, StringField, TextField}
+import org.apache.lucene.document.{Document, Field, IntPoint, StoredField, StringField, TextField}
 import org.apache.lucene.index.{IndexWriter, IndexWriterConfig}
 import org.apache.lucene.store.FSDirectory
+import org.clulab.habitus.apps.tpi.Step3InterpretDates
+import org.clulab.habitus.apps.utils.DateString
 import org.clulab.utils.StringUtils
 import org.clulab.wm.eidoscommon.utils.{FileEditor, FileUtils}
 import org.json4s.DefaultFormats
@@ -18,8 +20,8 @@ import scala.util.Using
 object LuceneIndexerApp extends App {
   implicit val formats: DefaultFormats.type = org.json4s.DefaultFormats
   val luceneDirname = "../lucene"
-//  val baseDirname = "../corpora/uganda-local/karamoja"
-  val baseDirname = "/home/kwa/data/Projects/habitus-project/corpora/uganda-pdfs"
+  val baseDirname = "../corpora/uganda-local/karamoja"
+//  val baseDirname = "/home/kwa/data/Projects/habitus-project/corpora/uganda-pdfs"
   val country = "Uganda" // "Ghana"
   val googlePrefix = "https://customsearch.googleapis.com/"
 
@@ -33,6 +35,13 @@ object LuceneIndexerApp extends App {
     new IndexWriter(index, config)
   }
 
+  def datelineToYear(dateline: String): Int = {
+    val canonicalDate = DateString(dateline).canonicalize
+    val year = StringUtils.beforeFirst(canonicalDate, '-')
+
+    year.toInt
+  }
+
   def newDocument(
     url: URL,
     titleOpt: Option[String],
@@ -43,16 +52,27 @@ object LuceneIndexerApp extends App {
     terms: Seq[String]
   ): Document = {
     val document = new Document()
+    val yearOpt = datelineOpt.map(datelineToYear)
 
     // We can search the text, country, terms, and maybe date fields.
     // These are the non-StoredFields with Field.Store.YES.
     document.add(new StoredField("url", url.toString))
-    document.add(new StoredField("title", titleOpt.getOrElse("")))
-    document.add(new StoredField("dateline", datelineOpt.getOrElse("")))
-    document.add(new StoredField("byline", bylineOpt.getOrElse("")))
+    titleOpt.foreach { title =>
+      document.add(new StoredField("title", title))
+    }
+    datelineOpt.foreach { dateline =>
+      document.add(new StoredField("dateline", dateline))
+    }
+    bylineOpt.foreach { byline =>
+      document.add(new StoredField("byline", byline))
+    }
     document.add(new TextField("text", text, Field.Store.YES))
     document.add(new StringField("country", country, Field.Store.YES))
     document.add(new StringField("terms", terms.mkString("\t"), Field.Store.YES))
+    yearOpt.foreach { year =>
+      document.add(new IntPoint("date", year))
+      document.add(new StoredField("year", year.toString))
+    }
     document
   }
 
