@@ -382,7 +382,7 @@ if __name__ == "__main__":
 
 		path = "results/" + scenario[1]
 
-		#os.mkdir(path)
+		os.mkdir(path)
 
 		scenario_chosen = scenario[0]
 
