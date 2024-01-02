@@ -2,24 +2,16 @@ package org.clulab.habitus.scraper.scrapers.article
 
 import net.ruippeixotog.scalascraper.browser.Browser
 import org.clulab.habitus.scraper.Page
-import org.clulab.habitus.scraper.domains.FileDomain
+import org.clulab.habitus.scraper.domains.PdfDomain
 import org.clulab.habitus.scraper.scrapes.ArticleScrape
-import org.clulab.pdf2txt.Pdf2txt
-import org.clulab.pdf2txt.languageModel.GigawordLanguageModel
-import org.clulab.pdf2txt.preprocessor._
-import org.clulab.utils.StringUtils
 
-import scala.io.Codec
-// import org.clulab.pdf2txt.scienceparse.ScienceParseConverter
-import org.clulab.pdf2txt.tika.TikaConverter
 import org.clulab.utils.FileUtils
 import org.json4s.DefaultFormats
-import os.{proc => OSProc}
 
 import java.io.File
 import scala.util.Using
 
-class PdfFileArticleScraper extends PageArticleScraper(FileDomain) {
+class PdfFileArticleScraper extends PageArticleScraper(PdfDomain) {
   implicit val formats: DefaultFormats.type = DefaultFormats
 
   def scrape(browser: Browser, page: Page, pdfLocationName: String): ArticleScrape = {
