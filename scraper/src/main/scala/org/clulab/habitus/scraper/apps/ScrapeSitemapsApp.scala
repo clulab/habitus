@@ -2,16 +2,17 @@ package org.clulab.habitus.scraper.apps
 
 import org.clulab.utils.{FileUtils, StringUtils}
 import sttp.client4.quick._
-import sttp.model.{MediaType, Uri}
+import sttp.model.{Header, HeaderNames, MediaType, Uri}
 
 import java.io.PrintWriter
+import java.net.URL
 import scala.io.Source
 import scala.util.Using
 import scala.xml.{Elem, XML, Source => XMLSource}
 
 object ScrapeSitemapsApp extends App {
-  val urlString = args.lift(0).getOrElse("https://3news.com")
-  val outFileName = args.lift(1).getOrElse(StringUtils.afterLast(urlString, '/') + ".pages")
+  val urlString = args.lift(0).getOrElse("https://miningreview.com")
+  val outFileName = args.lift(1).getOrElse("../sitemaps/" + StringUtils.afterLast(urlString, '/') + ".pages")
 
   val robotsString = urlString + "/robots.txt"
   val sitemapIndexString = urlString + "/sitemap_index.xml"
@@ -21,6 +22,7 @@ object ScrapeSitemapsApp extends App {
     val header = "Sitemap:"
     val response = quickRequest
         .get(Uri.unsafeParse(robotsString))
+        // .header(Header(HeaderNames.UserAgent, "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0"))
         .contentType(MediaType.TextPlain)
         .send()
 
@@ -110,7 +112,17 @@ object ScrapeSitemapsApp extends App {
 
     println("Sitemap indexes:\n")
     val sitemapIndexes = {
-      val sitemapIndexes = getSitemapIndexesFromRobots(robotsString)
+      val sitemapIndexes = {
+        val sitemapIndexes = getSitemapIndexesFromRobots(robotsString)
+
+        sitemapIndexes.map { sitemapIndex =>
+          val url = new URL(sitemapIndex)
+          val path = url.getPath
+
+          if (path == "/.xml") StringUtils.beforeLast(sitemapIndex, '/') + "/sitemap.xml"
+          else path
+        }
+      }
       sitemapIndexes.foreach(println)
       val distinctSitemapIndexes = (sitemapIndexes :+ sitemapIndexString).distinct
 
