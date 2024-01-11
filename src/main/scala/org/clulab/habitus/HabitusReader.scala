@@ -4,13 +4,13 @@ import ai.lum.common.ConfigUtils._
 import com.typesafe.config.ConfigFactory
 import org.clulab.habitus.printer.{DynamicArgsTsvPrinter, JsonlPrinter, MultiPrinter, TsvPrinter}
 import org.clulab.habitus.utils._
-import org.clulab.utils.Closer.AutoCloser
 import org.clulab.utils.{FileUtils, StringUtils, ThreadUtils}
 import org.clulab.wm.eidoscommon.utils.FileEditor
 import org.json4s._
 import org.json4s.jackson.JsonMethods.parse
 
 import java.io.File
+import scala.util.Using
 
 class HabitusReader() extends App {
   val config = ConfigFactory.load()
@@ -35,11 +35,11 @@ class HabitusReader() extends App {
     val files = FileUtils.findFiles(inputDir, ".txt")
     val parFiles = if (threads > 1) ThreadUtils.parallelize(files, threads) else files
 
-    new MultiPrinter(
+    Using.resource(new MultiPrinter(
       Lazy{new TsvPrinter(mkOutputFile(".tsv"))},
       Lazy(new JsonlPrinter(mkOutputFile(".jsonl"))),
       Lazy(new DynamicArgsTsvPrinter(outputDir + mentions + "-", ".tsv"))
-    ).autoClose { multiPrinter =>
+    )) { multiPrinter =>
       for (file <- parFiles) {
         try {
           val unfiltered = FileUtils.getTextFromFile(file)

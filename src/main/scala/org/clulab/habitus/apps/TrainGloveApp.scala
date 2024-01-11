@@ -1,10 +1,10 @@
 package org.clulab.habitus.apps
 
 import org.clulab.processors.clu.CluProcessor
-import org.clulab.utils.Closer.AutoCloser
 import org.clulab.utils.FileUtils
 
 import java.io.{File, PrintWriter}
+import scala.util.Using
 
 object TrainGloveApp extends App {
 
@@ -32,7 +32,7 @@ object TrainGloveApp extends App {
     }
   }
 
-  FileUtils.printWriterFromFile(outputFileName).autoClose { printWriter =>
+  Using.resource(FileUtils.printWriterFromFile(outputFileName)) { printWriter =>
     val files = FileUtils.findFiles(inputDirName,"txt").sortBy(_.getName).par
 
     files.foreach { file =>

@@ -1,10 +1,10 @@
 package org.clulab.habitus.interviews
 
 import org.clulab.odin.TextBoundMention
-import org.clulab.utils.Closer.AutoCloser
 import org.clulab.utils.{FileUtils, StringUtils, ThreadUtils}
 
 import java.io.{File, PrintWriter}
+import scala.util.Using
 
 object InterviewsReader {
 
@@ -29,7 +29,7 @@ object InterviewsReader {
     val files = FileUtils.findFiles(inputDir, ".txt")
     val parFiles = if (threads > 1) ThreadUtils.parallelize(files, threads) else files
 
-    new PrintWriter(new File(outputDir + "/mentions.tsv")).autoClose { pw =>
+    Using.resource(new PrintWriter(new File(outputDir + "/mentions.tsv"))) { pw =>
       pw.println("filename\tmention type\tfound by\tsentence\tmention text\targs in all next columns (argType: argText)")
       for (file <- parFiles) {
         try {

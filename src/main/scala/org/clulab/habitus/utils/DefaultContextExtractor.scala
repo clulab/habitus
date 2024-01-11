@@ -6,8 +6,9 @@ import com.typesafe.config.Config
 import org.clulab.habitus.document.attachments.YearDocumentAttachment
 import org.clulab.odin.{Mention, TextBoundMention}
 import org.clulab.processors.Document
-import org.clulab.utils.Closer.AutoCloser
 import org.clulab.utils.Sourcer
+
+import scala.util.Using
 
 class DefaultContextExtractor extends ContextExtractor {
 
@@ -127,7 +128,7 @@ object DefaultContextExtractor {
     val resourceNames: List[String] = localConfig[List[String]]("regionLexicons")
 
     resourceNames.flatMap { resourceName =>
-      Sourcer.sourceFromResource(resourceName).autoClose { source =>
+      Using.resource(Sourcer.sourceFromResource(resourceName)) { source =>
         source.getLines.map { line =>
           val Array(region, country) = line.trim.split("\t")
 
