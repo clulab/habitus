@@ -11,7 +11,7 @@ import scala.util.Using
 import scala.xml.{Elem, XML, Source => XMLSource}
 
 object ScrapeSitemapsApp extends App {
-  val urlString = args.lift(0).getOrElse("https://miningreview.com")
+  val urlString = args.lift(0).getOrElse("https://www.mining.com")
   val outFileName = args.lift(1).getOrElse("../sitemaps/" + StringUtils.afterLast(urlString, '/') + ".pages")
 
   val robotsString = urlString + "/robots.txt"
@@ -22,7 +22,7 @@ object ScrapeSitemapsApp extends App {
     val header = "Sitemap:"
     val response = quickRequest
         .get(Uri.unsafeParse(robotsString))
-        // .header(Header(HeaderNames.UserAgent, "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0"))
+        .header(Header(HeaderNames.UserAgent, "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0"))
         .contentType(MediaType.TextPlain)
         .send()
 
@@ -30,12 +30,20 @@ object ScrapeSitemapsApp extends App {
       Seq.empty
     else {
       val body = response.body
-      val sitemapIndexes = Source.fromString(body).getLines().flatMap { line =>
-        if (line.startsWith(header))
-          Some(line.drop(header.length).trim)
-        else
-          None
-      }.toVector
+      val sitemapIndexes = Source
+          .fromString(body).getLines().flatMap { line =>
+            if (line.startsWith(header))
+              Some(line.drop(header.length).trim)
+            else
+              None
+          }
+          .toVector
+          .map { sitemapIndex =>
+              sitemapIndex.replaceAll("/www.gna.org.gh/", "/gna.org.gh/")
+          }
+          .map { sitemapIndex =>
+            sitemapIndex.replaceAll("/.xml", "/sitemap.xml")
+          }
 
       sitemapIndexes
     }
@@ -63,7 +71,7 @@ object ScrapeSitemapsApp extends App {
     if (!response.isSuccess)
       Seq.empty
     else {
-      val body = response.body
+      val body = response.body.trim
       val xml = XML.load(XMLSource.fromString(body))
 
       if (isSitemap(xml))
@@ -75,9 +83,9 @@ object ScrapeSitemapsApp extends App {
     }
   }
 
-  def getSitesFromSitemap(sitemapString: String): Seq[String] = {
+  def getPagesFromSitemap(sitemapString: String): Seq[String] = {
 
-    def getSitesFromElem(elem: Elem): Seq[String] = {
+    def getPagesFromElem(elem: Elem): Seq[String] = {
       val sites = (elem \\ "url" \\ "loc").map { elem =>
         elem.text
       }
@@ -93,13 +101,13 @@ object ScrapeSitemapsApp extends App {
     if (!response.isSuccess)
       Seq.empty
     else {
-      val body = response.body
+      val body = response.body.trim
       val xml = XML.load(XMLSource.fromString(body))
 
       if (!isSitemap(xml))
         Seq.empty
       else
-        getSitesFromElem(xml)
+        getPagesFromElem(xml)
     }
   }
 
@@ -120,11 +128,12 @@ object ScrapeSitemapsApp extends App {
           val path = url.getPath
 
           if (path == "/.xml") StringUtils.beforeLast(sitemapIndex, '/') + "/sitemap.xml"
-          else path
+          else sitemapIndex
         }
       }
       sitemapIndexes.foreach(println)
-      val distinctSitemapIndexes = (sitemapIndexes :+ sitemapIndexString).distinct
+      // Add sitemapString in case it is misclassified.
+      val distinctSitemapIndexes = (sitemapIndexes :+ sitemapIndexString :+ sitemapString).distinct
 
       distinctSitemapIndexes
     }
@@ -141,16 +150,16 @@ object ScrapeSitemapsApp extends App {
       distinctSitemaps
     }
     println("\n")
-    println("Sites:\n")
-    val sites = {
-      val sites = sitemaps.flatMap { sitemap =>
-        val sites = getSitesFromSitemap(sitemap)
-        sites.foreach(println)
-        sites
+    println("Pages:\n")
+    val pages = {
+      val pages = sitemaps.flatMap { sitemap =>
+        val pages = getPagesFromSitemap(sitemap)
+        pages.foreach(println)
+        pages
       }
-      val distinctSites = sites.distinct
+      val distinctPages = pages.distinct
 
-      distinctSites
+      distinctPages
     }
     println("\n")
     println("Finished!")
