@@ -1,11 +1,12 @@
 package org.clulab.habitus.scraper.apps
 
 import org.clulab.pdf2txt.common.utils.FileEditor
-import org.clulab.utils.Closer.AutoCloser
 import org.clulab.utils.FileUtils
 import org.json4s.JObject
 import org.json4s.JsonDSL._
 import org.json4s.jackson.JsonMethods
+
+import scala.util.Using
 
 object TranslateApp extends App {
   val dir = args.lift(0).getOrElse("../corpora/uganda/uganda china/articles/nbs_ug/Lugandan")
@@ -42,7 +43,7 @@ object TranslateApp extends App {
     val newJson = JsonMethods.pretty(newJObject)
     val newJsonFile = FileEditor(jsonFile).setExt("json2").get
 
-    FileUtils.printWriterFromFile(newJsonFile).autoClose { printWriter =>
+    Using.resource(FileUtils.printWriterFromFile(newJsonFile)) { printWriter =>
       printWriter.println(newJson)
     }
   }

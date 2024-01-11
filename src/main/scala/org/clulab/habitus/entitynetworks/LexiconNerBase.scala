@@ -3,11 +3,11 @@ package org.clulab.habitus.entitynetworks
 import org.clulab.dynet.Utils
 import org.clulab.processors.clu.{CluProcessor, GivenConstEmbeddingsAttachment}
 import org.clulab.sequences.LexiconNER
-import org.clulab.utils.Closer.AutoCloser
 import org.clulab.utils.Sourcer
 
 import java.io.{File, PrintWriter}
 import scala.io.Source
+import scala.util.Using
 
 class LexiconNerBase() {
   val lexiconNer: LexiconNER = mkLexiconNer()
@@ -57,8 +57,8 @@ class LexiconNerBase() {
   def parseFile(inputFile: File): Unit = {
     val outputFileName = inputFile + ".out"
 
-    new PrintWriter(outputFileName).autoClose { printWriter =>
-      Sourcer.sourceFromFile(inputFile).autoClose { source =>
+    Using.resource(new PrintWriter(outputFileName)) { printWriter =>
+      Using.resource(Sourcer.sourceFromFile(inputFile)) { source =>
         process(source, printWriter)
       }
     }

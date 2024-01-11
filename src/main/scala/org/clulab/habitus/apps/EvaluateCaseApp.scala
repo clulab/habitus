@@ -4,11 +4,11 @@ import org.clulab.dynet.Utils
 import org.clulab.habitus.HabitusProcessor
 import org.clulab.habitus.apps.utils.{SentenceUtils, WordTypes}
 import org.clulab.processors.{Document, Sentence}
-import org.clulab.utils.Closer.AutoCloser
 import org.clulab.utils.FileUtils
 import org.clulab.wm.eidoscommon.utils.TsvWriter
 
 import java.io.PrintWriter
+import scala.util.Using
 
 /** Evaluate the cutoff point for case restoration */
 object EvaluateCaseApp extends App {
@@ -27,7 +27,7 @@ object EvaluateCaseApp extends App {
   saveOutput(inputFileName + ".evaluated.tsv", proc.mkDocument(text), proc.mkDocumentWithRestoreCase(text))
 
   def saveOutput(outputFilename: String, preservedDoc: Document, restoredDoc: Document): Unit = {
-    new PrintWriter(outputFilename).autoClose { printWriter =>
+    Using.resource(new PrintWriter(outputFilename)) { printWriter =>
       val tsvWriter = new TsvWriter(printWriter)
 
       tsvWriter.println("Sentence#", "Stage", "WordCount", "NonWordCount", "InitialUpper", "AllUpper", "AllLower", "%NotAllLower", "Improved", "Text")

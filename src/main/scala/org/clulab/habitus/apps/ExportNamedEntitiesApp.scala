@@ -4,12 +4,11 @@ import org.clulab.dynet.Utils
 import org.clulab.habitus.HabitusProcessor
 import org.clulab.sequences.LexiconNER
 import org.clulab.struct.Counter
-import org.clulab.utils.Closer.AutoCloser
 import org.clulab.utils.{FileUtils, Sourcer}
 import org.clulab.wm.eidoscommon.utils.TsvReader
 
 import java.io.File
-import scala.util.{Failure, Try}
+import scala.util.{Failure, Try, Using}
 
 object ExportNamedEntitiesApp extends App {
 //  val inputFileName = args.lift(0).getOrElse("../docs/animate_sent_new.tsv")
@@ -73,10 +72,10 @@ object ExportNamedEntitiesApp extends App {
   val badNamedEntityFoundCounts = new Counter[Seq[String]]()
   val badNamedEntityCorrectedCounts = new Counter[Seq[String]]()
 
-  Sourcer.sourceFromFile(new File(inputFileName)).autoClose { source =>
+  Using.resource(Sourcer.sourceFromFile(new File(inputFileName))) { source =>
     val tsvReader = new TsvReader()
 
-    FileUtils.printWriterFromFile(new File(outputFileName)).autoClose { printWriter =>
+    Using.resource(FileUtils.printWriterFromFile(new File(outputFileName))) { printWriter =>
       printWriter.print("-DOCSTART-\t0\n\t\n")
       source.getLines.drop(1).foreach { line =>
         println(line)

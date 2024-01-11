@@ -4,10 +4,10 @@ import org.clulab.dynet.Utils
 import org.clulab.habitus.HabitusProcessor
 import org.clulab.habitus.apps.utils.WordTypes
 import org.clulab.processors.{Document, Sentence}
-import org.clulab.utils.Closer.AutoCloser
 import org.clulab.utils.FileUtils
 
 import java.io.{File, PrintWriter}
+import scala.util.Using
 
 class ConditionalCaseBase {
   val cutoffOpt: Option[Float] = Some(67.5f)
@@ -52,7 +52,7 @@ class ConditionalCaseBase {
   }
 
   protected def saveOutput(outputFilename: String, doc: Document): Unit = {
-    new PrintWriter(outputFilename).autoClose { printWriter =>
+    Using.resource(new PrintWriter(outputFilename)) { printWriter =>
       doc.sentences.foreach { sentence =>
         saveOutput(printWriter, sentence)
       }
