@@ -1,0 +1,41 @@
+package org.clulab.cluster
+
+import org.clulab.cluster.Types.{Clusters, Documents, MatrixOfDouble, MatrixOfInt}
+
+import scala.util.Random
+
+class Surdeanu2005(corpus: Corpus, linguist: Linguist, seed: Int = 0) extends ClusterGenerator(corpus, linguist) {
+  val qualityNames: Array[String] = Array("w", "wb", "wn", "gw", "gwb", "gwn")
+  val allowedSeedSize: Double = 0.05
+  val soft: Double = 0.2
+  val numLoops: Int = 10
+  val rndgen: Random = new Random(seed)
+
+  protected def generateClusters(documents: Documents): Seq[(Double, Documents)] = {
+    val (clusters, siblings) = Mathematician.generateClusters(documents, corpus.docDistances)
+    val sortedQualities = Mathematician.qualityScores(clusters, siblings, documents, corpus.docDistances)
+
+    sortedQualities
+  }
+
+
+  def generate(documents: Documents, k: Int, frozenDocumentClusters: Clusters = emptyClusters,
+      seededDocumentClusters: Clusters = emptyClusters, frozenDocuments: Documents = emptyDocuments):
+      (MatrixOfInt, Int, MatrixOfDouble) = {
+   val kOpt = Some(k)
+    val sortedQualities = generateClusters(documents)
+    val modifiedClusters = frozenDocumentClusters ++ seededDocumentClusters
+
+    val (_, _, bestInitialModel) =
+        if (kOpt.isEmpty)
+          Mathematician.getBestInitialModel(documents, sortedQualities, qualityNames, modifiedClusters)
+        else
+          Mathematician.getBestInitialModelK(kOpt.get, documents, corpus.docDistances, sortedQualities, qualityNames, allowedSeedSize = allowedSeedSize, modifiedClusters = modifiedClusters)
+    val categories = bestInitialModel.slice(frozenDocuments.length, bestInitialModel.length)
+    val labels = Mathematician.runExpectMax(documents, seededDocumentClusters, categories,
+        corpus.words, corpus.wordIndices, corpus.wordsInDocs, linguist.wordVectorizer,
+        corpus.counts, rndgen, soft, numLoops)
+
+    (labels, categories.length, null)
+  }
+}
