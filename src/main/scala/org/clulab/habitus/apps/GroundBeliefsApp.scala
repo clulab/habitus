@@ -2,7 +2,6 @@ package org.clulab.habitus.apps
 
 import org.clulab.embeddings.{WordEmbeddingMap, WordEmbeddingMapPool}
 import org.clulab.processors.clu.CluProcessor
-import org.clulab.utils.Closer.AutoCloser
 import org.clulab.utils.{FileUtils, Sourcer}
 import org.clulab.wm.eidoscommon.EnglishTagSet
 import org.clulab.wm.eidoscommon.utils.TsvReader
@@ -10,6 +9,7 @@ import zamblauskas.csv.parser._
 import zamblauskas.functional._
 
 import java.io.File
+import scala.util.Using
 
 case class GridDocument(
   readable: String,
@@ -98,7 +98,7 @@ object GroundBeliefsApp extends App {
   }
   val beliefs: Seq[Belief] = {
     val tsvReader = new TsvReader()
-    val beliefs = Sourcer.sourceFromFile(new File(beliefsFileName)).autoClose { source =>
+    val beliefs = Using.resource(Sourcer.sourceFromFile(new File(beliefsFileName))) { source =>
       source.getLines().drop(1).map { line =>
         val Array(index, belief, title, author, year) = tsvReader.readln(line, 5)
 
@@ -117,7 +117,7 @@ object GroundBeliefsApp extends App {
     calcGrounding(belief.belief)
   }.toArray
 
-  FileUtils.printWriterFromFile(groundingFileName).autoClose { printWriter =>
+  Using.resource(FileUtils.printWriterFromFile(groundingFileName)) { printWriter =>
     documentGroundings.map { case documentGrounding =>
       val beliefIndexAndDistanceTuples = beliefGroundings.zipWithIndex.map { case (beliefGrounding, beliefIndex) =>
         val distance = calcDistance(documentGrounding, beliefGrounding)

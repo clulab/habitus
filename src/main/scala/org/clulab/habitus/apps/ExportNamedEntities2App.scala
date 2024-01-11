@@ -1,11 +1,11 @@
 package org.clulab.habitus.apps
 
 import org.clulab.struct.Counter
-import org.clulab.utils.Closer.AutoCloser
 import org.clulab.utils.{FileUtils, Sourcer, StringUtils}
 
 import java.io.{File, PrintWriter}
 import scala.io.BufferedSource
+import scala.util.Using
 
 object ExportNamedEntities2App extends App {
   val inputFileName = args.lift(0).getOrElse("../corpora/SAED100/error_analysis/baseline_non_entities.csv")
@@ -19,10 +19,10 @@ object ExportNamedEntities2App extends App {
   val badNamedEntityCorrectedCounts = new Counter[Array[String]]()
   val inputFiles = FileUtils.findFiles(inputDirName, ".txt.restored.out")
 
-  new ConllFile(uncorrectedOutputFileName).autoClose { uncorrectedConllFile =>
-    new ConllFile(correctedOutputFileName).autoClose { conllFile =>
+  Using.resource(new ConllFile(uncorrectedOutputFileName)) { uncorrectedConllFile =>
+    Using.resource(new ConllFile(correctedOutputFileName)) { conllFile =>
       inputFiles.foreach { inputFile =>
-        new InputFile(inputFile).autoClose { inputFile =>
+        Using.resource(new InputFile(inputFile)) { inputFile =>
           while ({
             val (sentenceWords, sentenceEntities) = inputFile.getSentenceWordsAndEntities
             val lowerSentenceWords = sentenceWords.map(_.toLowerCase)
@@ -107,7 +107,7 @@ class NonEntitiesFile(fileName: String) {
 
     def isOdd(string: String): Boolean = string.count(_ == '"') % 2 != 0
 
-    val fields = Sourcer.sourceFromFile(new File(fileName)).autoClose { source =>
+    val fields = Using.resource(Sourcer.sourceFromFile(new File(fileName))) { source =>
       val lines = source.getLines().drop(1).toVector // skip header
       val recordIndexes = lines.zipWithIndex.scanLeft((-1, false, 0)) { case ((recordIndex: Int, inside: Boolean, _lineIndex: Int), (line: String, lineIndex: Int)) =>
         val odd = isOdd(line)

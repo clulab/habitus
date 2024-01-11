@@ -2,16 +2,17 @@ package org.clulab.habitus.printer
 
 import org.clulab.habitus.utils.DefaultContext
 import org.clulab.habitus.utils.{TempFile, Test}
-import org.clulab.utils.Closer.AutoCloser
 import org.clulab.utils.FileUtils
+
+import scala.util.Using
 
 class TestTsvPrinter extends Test {
 
   behavior of "TsvPrinter"
 
   it should "print one Mention with one argument" in {
-    new TempFile().autoClose { tempFile =>
-      new TsvPrinter(tempFile.file).autoClose { printer =>
+    Using.resource(new TempFile()) { tempFile =>
+      Using.resource(new TsvPrinter(tempFile.file)) { printer =>
         val mentionInfo = new MentionInfo("This is the text of the sentence before the current one. This is the text of the sentence. This is the text of the sentence after the current one.","This is the text of the sentence.", "It came from a file.", "The mention has this label.", "This is mention text")
         val contextInfo = DefaultContext("publicationYear", "location", "country", "date", "process", "crop", "fertilizer", "season", 0)
         val argumentInfos = Seq(
@@ -38,8 +39,8 @@ class TestTsvPrinter extends Test {
   }
 
   it should "print one Mention with two arguments" in {
-    new TempFile().autoClose { tempFile =>
-      new TsvPrinter(tempFile.file).autoClose { printer =>
+    Using.resource(new TempFile()) { tempFile =>
+      Using.resource(new TsvPrinter(tempFile.file)) { printer =>
         val mentionInfo = new MentionInfo("This is the text of the sentence before the current one. This is the text of the sentence. This is the text of the sentence after the current one.","This is the text of the sentence.", "It came from a file.", "The mention has this label.", "This is mention text")
         val contextInfo = DefaultContext("publicationYear", "location", "country", "date", "process", "crop", "fertilizer", "season", 0)
         val argumentInfos = Seq(
@@ -68,8 +69,8 @@ class TestTsvPrinter extends Test {
   }
 
   it should "print two Mentions" in {
-    new TempFile().autoClose { tempFile =>
-      new TsvPrinter(tempFile.file).autoClose { printer =>
+    Using.resource(new TempFile()) { tempFile =>
+      Using.resource(new TsvPrinter(tempFile.file)) { printer =>
         val mentionInfo = new MentionInfo("This is the text of the sentence before the current one. This is the text of the sentence. This is the text of the sentence after the current one.","This is the text of the sentence.", "It came from a file.", "The mention has this label.", "This is mention text")
         val contextInfo = DefaultContext("publicationYear", "location", "country", "date", "process", "crop", "fertilizer", "season", 0)
         val argumentInfos1 = Seq(
