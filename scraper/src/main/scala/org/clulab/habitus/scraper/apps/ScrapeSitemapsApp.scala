@@ -12,7 +12,7 @@ import scala.xml.{Elem, XML, Source => XMLSource}
 
 object ScrapeSitemapsApp extends App {
   val urlString = args.lift(0).getOrElse("https://www.miningreview.com")
-  val outFileName = args.lift(1).getOrElse("../sitemaps/" + StringUtils.afterLast(urlString, '/') + ".pages")
+  val outFileName = args.lift(1).getOrElse("../corpora/sitemaps/" + StringUtils.afterLast(urlString, '/') + ".pages")
 
   val robotsString = urlString + "/robots.txt"
   val sitemapIndexString = urlString + "/sitemap_index.xml"
