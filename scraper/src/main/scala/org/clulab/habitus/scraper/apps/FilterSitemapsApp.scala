@@ -5,9 +5,9 @@ import org.clulab.utils.{FileUtils, Sourcer, StringUtils}
 import scala.util.Using
 
 object FilterSitemapsApp extends App {
-  val urlString = args.lift(0).getOrElse("https://3news.com")
+  val urlString = args.lift(0).getOrElse("https://adomonline.com")
   val inFileName = args.lift(1).getOrElse("../corpora/pages/" + StringUtils.afterLast(urlString, '/') + ".pages")
-  val outFileName = inFileName + ".out"
+  val outFileName = inFileName + "-1000.out"
 
   def adomOnlineFilter(line: String): Boolean = { true &&
     line.endsWith("/") && // Articles look like a directory.
@@ -55,11 +55,13 @@ object FilterSitemapsApp extends App {
     Sourcer.sourceFromFilename(inFileName)
   ) { (printWriter, source) =>
     val lines = source.getLines
-    val filteredLines = lines.filter(threeNewsFilter)
+    val filteredLines = lines.filter(adomOnlineFilter).take(1000)
 
     filteredLines.foreach { line =>
-      printWriter.println(line)
-      println(line)
+      val newLine = line.dropRight(1)
+
+      printWriter.println(newLine)
+      println(newLine)
     }
   }
 }
