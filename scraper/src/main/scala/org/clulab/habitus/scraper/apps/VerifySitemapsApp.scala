@@ -8,14 +8,21 @@ import java.nio.charset.StandardCharsets
 import scala.util.Using
 
 object VerifySitemapsApp extends App {
-  val urlString = args.lift(0).getOrElse("https://adomonline.com")
+
+  def extractFile(line: String): String = {
+    val url = new URL(line.dropRight(1))
+
+    url.getFile()
+  }
+
+  val urlString = args.lift(0).getOrElse("https://3news.com")
   val sitemapFileName = args.lift(1).getOrElse("../corpora/pages/" + StringUtils.afterLast(urlString, '/') + ".pages")
   val corpusFileName = "../corpora/ghana/dataset55k.tsv"
   val tsvReader = new TsvReader()
-  val urlStart = "https://www.adomonline.com/"
+  val urlStart = "https://3news.com/"
 
   val sitemapUrls = Using.resource(Sourcer.sourceFromFilename(sitemapFileName)) { source =>
-    source.getLines.toSet
+    source.getLines.map(extractFile).toSet
   }
 
   Using.resource(Sourcer.sourceFromFilename(corpusFileName)) { source =>
@@ -29,16 +36,14 @@ object VerifySitemapsApp extends App {
           letter.toString
       }
 
-      encoded
-    }
+      extractFile(encoded)
+    }.toVector
     val missingUrls = urls.filter { url =>
       url.startsWith(urlStart) && !sitemapUrls(url) && {
-        !url.startsWith("https://www.adomonline.com/__trashed") // &&
-        // !url.contains('%')
+        true
       }
     }.toVector.distinct
 
-    // The one file shown now gives a 404 at the site.
     missingUrls.foreach(println)
   }
 }
