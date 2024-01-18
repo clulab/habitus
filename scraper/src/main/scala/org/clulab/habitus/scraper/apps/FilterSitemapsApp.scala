@@ -16,7 +16,8 @@ object FilterSitemapsApp extends App {
     !line.startsWith("https://www.adomonline.com/category/") && // Ditto with categories.
     (line.count(_ == '/') == 4) && // We need no subdirectory at all.  TODO: this works for many
     (line != "https://www.adomonline.com/") && // Skip the home page.
-    !line.startsWith("https://www.adomonline.com/__trashed") && // These appear to have been deleted.
+    // These files can actually be returned in a search, so keep them.
+    // !line.startsWith("https://www.adomonline.com/__trashed") && // These appear to have been deleted.
     !line.endsWith("-fm/") &&
     !line.endsWith("-fm-live/") &&
     !line.endsWith("-live-radio/") &&
