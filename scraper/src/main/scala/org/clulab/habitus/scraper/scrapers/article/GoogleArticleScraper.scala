@@ -10,7 +10,7 @@ import org.clulab.pdf2txt.preprocessor.{CasePreprocessor, LigaturePreprocessor, 
 import org.clulab.utils.StringUtils
 
 import scala.io.Codec
-// import org.clulab.pdf2txt.scienceparse.ScienceParseConverter
+import org.clulab.pdf2txt.scienceparse.ScienceParseConverter
 import org.clulab.pdf2txt.tika.TikaConverter
 import org.clulab.utils.FileUtils
 import org.json4s.DefaultFormats
@@ -68,11 +68,8 @@ case class PdfMetadata(titleOpt: Option[String], datelineOpt: Option[String], by
 object GoogleArticleScraper {
   val loops = 1
   lazy val pdf2txt = {
-    // In order to use ScienceParse, the jars must be included directly in this project,
-    // in the lib directory, because they aren't published properly to maven.
-    // val pdfConverter = new ScienceParseConverter()
-    // On the other hand, Tika seems to require Java 11.
-    val pdfConverter = new TikaConverter()
+    val pdfConverter = new ScienceParseConverter()
+    // val pdfConverter = new TikaConverter()
     val languageModel = GigawordLanguageModel()
     val preprocessors = Array(
       new LinePreprocessor(),
