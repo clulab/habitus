@@ -4,7 +4,7 @@ import org.clulab.habitus.scraper.scrapers.article.GoogleArticleScraper
 
 import java.io.File
 
-object ScrapePdf extends App {
+object ScrapePdfApp extends App {
   val pdfFileName = args.lift(0).getOrElse("../corpora/test/test.pdf")
   val pdfFile = new File(pdfFileName)
 
