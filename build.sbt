@@ -1,3 +1,5 @@
+import org.clulab.sbt.BuildUtils
+
 name := "habitus"
 organization := "org.clulab"
 scalaVersion := "2.12.15"
@@ -18,7 +20,6 @@ resolvers += "clulab" at "https://artifactory.clulab.org/artifactory/sbt-release
 resolvers += "jitpack" at "https://jitpack.io"
 
 libraryDependencies ++= {
-  val procVer = "8.5.4"
   val luceneVer = "6.6.6"
 
   Seq(
@@ -26,10 +27,10 @@ libraryDependencies ++= {
 
     "io.github.zamblauskas" %% "scala-csv-parser"    % "0.13.1",
 
-    "org.clulab"            %% "eidos"               % "1.7.0",
-    "org.clulab"            %% "processors-corenlp"  % procVer,
-    "org.clulab"            %% "processors-main"     % procVer,
-    "org.clulab"            %% "processors-openie"   % procVer,
+    "org.clulab"            %% "eidos"               % BuildUtils.eidosVer,
+    "org.clulab"            %% "processors-corenlp"  % BuildUtils.procVer,
+    "org.clulab"            %% "processors-main"     % BuildUtils.procVer,
+    "org.clulab"            %% "processors-openie"   % BuildUtils.procVer,
 
     "org.apache.lucene"      % "lucene-core"             % luceneVer,
     "org.apache.lucene"      % "lucene-analyzers-common" % luceneVer,
