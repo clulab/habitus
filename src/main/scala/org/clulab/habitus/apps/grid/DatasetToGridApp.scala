@@ -1,6 +1,6 @@
 package org.clulab.habitus.apps.grid
 
-import org.clulab.utils.{FileUtils, Sourcer}
+import org.clulab.utils.{FileUtils, Sourcer, StringUtils}
 import org.clulab.wm.eidoscommon.utils.{CsvWriter, TsvReader, TsvWriter}
 
 import scala.util.{Random, Using}
@@ -33,7 +33,8 @@ object DatasetToGridApp extends App {
         else None
       }
 
-      if (locationOpt.isDefined && dateOpt.isDefined)
+      // Use only whole sentences that end in a period or else the grid combine lines.
+      if (locationOpt.isDefined && dateOpt.isDefined && text.endsWith("."))
         Some(Record(text, dateOpt.get, locationOpt.get))
       else
         None
@@ -55,13 +56,13 @@ object DatasetToGridApp extends App {
       locationMap.toMap
     }
 
-
     (dateMap, locationMap)
   }
 
   Seq(dateMap, locationMap). foreach { map =>
     map.foreach { case (key, records) =>
-      val fileName = s"$gridFileNamePrefix$key$gridFileNameSuffix"
+      val shortKey = StringUtils.beforeFirst(key, ' ', all = true)
+      val fileName = s"$gridFileNamePrefix$shortKey$gridFileNameSuffix"
 
       Using.resource(FileUtils.printWriterFromFile(fileName)) { printWriter =>
         records.foreach { record =>
