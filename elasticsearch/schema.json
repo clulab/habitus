@@ -1,0 +1,82 @@
+{
+  "properties": {
+    "url": {
+
+    },
+    "terms": {
+
+    },
+    "date": {
+
+    },
+    "sentenceIndex": {
+
+    },
+    "sentence": {
+
+    },
+    "causal": {
+
+    },
+    "causalIndex": {
+
+    },
+    "negationCount": {
+
+    },
+    "causeIncCount": {
+
+    },
+    "causeDecCount": {
+
+    },
+    "causePosCount": {
+
+    },
+    "causeNegCount": {
+
+    },
+    "effectIncCount": {
+      
+    },
+    "effectDecCount": {
+
+    },
+    "effectPosCount": {
+
+    },
+    "effectNegCount": {
+
+    },
+    "causeText": {
+
+    },
+    "effectText": {
+
+    },
+    "belief": {
+
+    },
+    "sent_locs": {
+
+    },
+    "context_locs": {
+
+    },
+    "canonicalDate": {
+
+    },
+    "prevLocation": {
+
+    },
+    "prevDistance": {
+
+    },
+    "nextLocation": {
+
+    },
+    "nextDistance": {
+
+    }
+  }
+}
