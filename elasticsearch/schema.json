@@ -1,12 +1,27 @@
 {
   "properties": {
+    "dataset": {
+      "type": "keyword"
+    },
+    "region": {
+      "type": "keyword"
+    },
     "url": {
       "type": "keyword"
+    },
+    "title": {
+      "type": "text"
     },
     "terms": {
       "type": "keyword"
     },
+    "dateline": {
+      "type": "keyword"
+    },
     "date": {
+      "type": "date"
+    },
+    "byline": {
       "type": "keyword"
     },
     "sentenceIndex": {
@@ -15,65 +30,122 @@
     "sentence": {
       "type": "text"
     },
-    "causal": {
+    "causalRelations": {
+      "type": "nested",
+      "properties": {
+        "index": {
+          "type": "integer"
+        },
+        "negationCount": {
+          "type": "integer"
+        },
+        "relations": {
+          "type": "nested",
+          "properties": {
+            "cause": {
+              "type": "nested",
+              "properties": {
+                "text": {
+                  "type": "text"
+                },
+                "incCount": {
+                  "type": "integer"
+                },
+                "decCount": {
+                  "type": "integer"
+                },
+                "posCount": {
+                  "type": "integer"
+                },
+                "negCount": {
+                  "type": "integer"
+                }
+              }
+            },
+            "effect": {
+              "type": "nested",
+              "properties": {
+                "text": {
+                  "type": "text"
+                },
+                "incCount": {
+                  "type": "integer"
+                },
+                "decCount": {
+                  "type": "integer"
+                },
+                "posCount": {
+                  "type": "integer"
+                },
+                "negCount": {
+                  "type": "integer"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "isBelief": {
       "type": "boolean"
     },
-    "causalIndex": {
-      "type": "integer"
-    },
-    "negationCount": {
-      "type": "integer"
-    },
-    "causeIncCount": {
-      "type": "integer"
-    },
-    "causeDecCount": {
-      "type": "integer"
-    },
-    "causePosCount": {
-      "type": "integer"
-    },
-    "causeNegCount": {
-      "type": "integer"
-    },
-    "effectIncCount": {
-      "type": "integer"
-    },
-    "effectDecCount": {
-      "type": "integer"
-    },
-    "effectPosCount": {
-      "type": "integer"
-    },
-    "effectNegCount": {
-      "type": "integer"
-    },
-    "causeText": {
-      "type": "text"
-    },
-    "effectText": {
-      "type": "text"
-    },
-    "belief": {
-      "type": "boolean"
-    },
-    "sent_locs": {
+    "sentiment": {
       "type": "keyword"
     },
-    "context_locs": {
-      "type": "keyword"
+    "sentenceLocations": {
+      "type": "nested",
+      "properties": {
+        "name": {
+          "type": "keyword"
+        },
+        "location": {
+          "type": "geo_point"
+        }
+      }
     },
-    "canonicalDate": {
-      "type": "date"
+    "contextBefore": {
+      "type": "text",
+      "index": false
     },
-    "prevLocation": {
-      "type": "keyword"
+    "contextAfter": {
+      "type": "text",
+      "index": false
+    },
+    "contextLocations": {
+      "type": "nested",
+      "properties": {
+        "name": {
+          "type": "keyword"
+        },
+        "location": {
+          "type": "geo_point"
+        }
+      }
+    },
+    "prevLocations": {
+      "type": "nested",
+      "properties": {
+        "name": {
+          "type": "keyword"
+        },
+        "location": {
+          "type": "geo_point"
+        }
+      }
     },
     "prevDistance": {
       "type": "integer"
     },
-    "nextLocation": {
-      "type": "keyword"
+    "nextLocations": {
+      "type": "nested",
+      "properties": {
+        "name": {
+          "type": "keyword"
+        },
+        "location": {
+          "type": "geo_point"
+        }
+      }
     },
     "nextDistance": {
       "type": "integer"
