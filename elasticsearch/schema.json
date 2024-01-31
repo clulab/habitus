@@ -1,82 +1,82 @@
 {
   "properties": {
     "url": {
-
+      "type": "keyword"
     },
     "terms": {
-
+      "type": "keyword"
     },
     "date": {
-
+      "type": "keyword"
     },
     "sentenceIndex": {
-
+      "type": "integer"
     },
     "sentence": {
-
+      "type": "text"
     },
     "causal": {
-
+      "type": "boolean"
     },
     "causalIndex": {
-
+      "type": "integer"
     },
     "negationCount": {
-
+      "type": "integer"
     },
     "causeIncCount": {
-
+      "type": "integer"
     },
     "causeDecCount": {
-
+      "type": "integer"
     },
     "causePosCount": {
-
+      "type": "integer"
     },
     "causeNegCount": {
-
+      "type": "integer"
     },
     "effectIncCount": {
-      
+      "type": "integer"
     },
     "effectDecCount": {
-
+      "type": "integer"
     },
     "effectPosCount": {
-
+      "type": "integer"
     },
     "effectNegCount": {
-
+      "type": "integer"
     },
     "causeText": {
-
+      "type": "text"
     },
     "effectText": {
-
+      "type": "text"
     },
     "belief": {
-
+      "type": "boolean"
     },
     "sent_locs": {
-
+      "type": "keyword"
     },
     "context_locs": {
-
+      "type": "keyword"
     },
     "canonicalDate": {
-
+      "type": "date"
     },
     "prevLocation": {
-
+      "type": "keyword"
     },
     "prevDistance": {
-
+      "type": "integer"
     },
     "nextLocation": {
-
+      "type": "keyword"
     },
     "nextDistance": {
-
+      "type": "integer"
     }
   }
 }
