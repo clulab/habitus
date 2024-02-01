@@ -6,7 +6,7 @@ import co.elastic.clients.elasticsearch.cat.{IndicesRequest, IndicesResponse}
 import co.elastic.clients.elasticsearch.core.{IndexRequest, IndexResponse, SearchRequest, SearchResponse}
 import co.elastic.clients.json.jackson.JacksonJsonpMapper
 import co.elastic.clients.elasticsearch.indices.{CreateIndexRequest, CreateIndexResponse, ElasticsearchIndicesClient}
-import co.elastic.clients.json.{JsonpMapper, JsonpSerializer}
+import co.elastic.clients.json.{JsonData, JsonpMapper, JsonpSerializer}
 import co.elastic.clients.transport.ElasticsearchTransport
 import co.elastic.clients.transport.rest_client.RestClientTransport
 import jakarta.json.stream.JsonGenerator
@@ -19,6 +19,7 @@ import org.elasticsearch.client.{Request, RestClient}
 import org.elasticsearch.client.RestClientBuilder.HttpClientConfigCallback
 
 import java.io.{File, FileInputStream}
+import java.util.HashMap
 import java.util.Properties
 import scala.util.Using
 
@@ -30,14 +31,14 @@ case class CauseOrEffect(
   negCount: Int
 ) {
 
-  def serialize(generator: JsonGenerator, mapper: JsonpMapper): Unit = {
+  def serialize(): HashMap[String, AnyRef] = {
     ???
   }
 }
 
 case class Relation(cause: CauseOrEffect, effect: CauseOrEffect) {
 
-  def serialize(generator: JsonGenerator, mapper: JsonpMapper): Unit = {
+  def serialize(): HashMap[String, AnyRef] = {
     ???
   }
 }
@@ -48,14 +49,14 @@ case class CausalRelation(
   relations: Array[Relation]
 ) {
 
-  def serialize(generator: JsonGenerator, mapper: JsonpMapper): Unit = {
+  def serialize(): HashMap[String, AnyRef] = {
     ???
   }
 }
 
 case class LatLon(lat: Float, lon: Float) {
 
-  def serialize(generator: JsonGenerator, mapper: JsonpMapper): Unit = {
+  def serialize(): HashMap[String, AnyRef] = {
     ???
   }
 }
@@ -65,7 +66,7 @@ case class Location(
   val latLon: LatLon
 ) {
 
-  def serialize(generator: JsonGenerator, mapper: JsonpMapper): Unit = {
+  def serialize(): HashMap[String, AnyRef] = {
     ???
   }
 }
@@ -95,21 +96,14 @@ case class DatasetRecord(
   nextDistance: Int
 ) {
 
-  def serialize(generator: JsonGenerator, mapper: JsonpMapper): Unit = {
-    generator
-        .write("dataset", dataset)
-        .write("region", region)
-        .write("url", url)
-        .write("title", title)
+  def serialize(): HashMap[String, AnyRef] = {
+    val map = new HashMap[String, AnyRef]()
 
-    generator.close()
-  }
-}
-
-class DatasetRecordSerializer extends JsonpSerializer[DatasetRecord] {
-
-  override def serialize(value: DatasetRecord, generator: JsonGenerator, mapper: JsonpMapper): Unit = {
-    value.serialize(generator, mapper)
+    map.put("dataset", dataset)
+    map.put("region", region)
+    map.put("url", url)
+    map.put("title", title)
+    map
   }
 }
 
@@ -183,11 +177,14 @@ object DatasetToElasticsearchApp extends App {
     createIndexResponse
   }
 
-  def runIndex(elasticsearchClient: ElasticsearchClient, indexName: String, datasetRow: DatasetRecord): IndexResponse = {
+  def runIndex(elasticsearchClient: ElasticsearchClient, indexName: String, datasetRecord: DatasetRecord): IndexResponse = {
     val indexRequest = new IndexRequest.Builder()
         .index(indexName)
-        .document(datasetRow)
-        .tDocumentSerializer(new DatasetRecordSerializer)
+        // .withJson()
+        // .document(datasetRecord)
+        // .document(JsonData.of(datasetRecord)) try this
+        .document(JsonData.of(datasetRecord.serialize))
+        // .tDocumentSerializer(new DatasetRecordSerializer)
         .build()
     val indexResponse = elasticsearchClient.index(indexRequest)
     println(indexResponse)
