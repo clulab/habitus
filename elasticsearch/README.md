@@ -39,13 +39,13 @@ POST habitus/_doc/
 To query for all records, use
 
 ```json
-GET habitus
+GET habitus/_search
 
 ```
 
 Delete a document with
 ```json
-DELETE /habitus/_doc/<id>
+DELETE habitus/_doc/<id>
 ```
 
 Remove everything with
