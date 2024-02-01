@@ -6,6 +6,7 @@ import co.elastic.clients.elasticsearch.cat.{IndicesRequest, IndicesResponse}
 import co.elastic.clients.elasticsearch.core.{IndexRequest, IndexResponse, SearchRequest, SearchResponse}
 import co.elastic.clients.json.jackson.JacksonJsonpMapper
 import co.elastic.clients.elasticsearch.indices.{CreateIndexRequest, CreateIndexResponse, ElasticsearchIndicesClient}
+import co.elastic.clients.transport.ElasticsearchTransport
 import co.elastic.clients.transport.rest_client.RestClientTransport
 import org.apache.http.HttpHost
 import org.apache.http.auth.{AuthScope, UsernamePasswordCredentials}
@@ -123,13 +124,18 @@ object DatasetToElasticsearchApp extends App {
     restClient
   }
 
-  def mkElasticsearchClient(credentialsFilename: String): ElasticsearchClient = {
-    val restClient = mkRestClient(credentialsFilename)
-    val jsonpMapper = new JacksonJsonpMapper()
-    val elasticsearchTransport = new RestClientTransport(restClient, jsonpMapper)
+  def mkElasticsearchClient(elasticsearchTransport: ElasticsearchTransport): ElasticsearchClient = {
     val elasticsearchClient = new ElasticsearchClient(elasticsearchTransport)
 
     elasticsearchClient
+  }
+
+  def mkElasticsearchTransport(credentialsFilename: String): ElasticsearchTransport = {
+    val restClient = mkRestClient(credentialsFilename)
+    val jsonpMapper = new JacksonJsonpMapper()
+    val elasticsearchTransport = new RestClientTransport(restClient, jsonpMapper)
+
+    elasticsearchTransport
   }
 
   def runCreateIndex(elasticsearchClient: ElasticsearchClient, indexName: String): CreateIndexResponse = {
@@ -302,27 +308,27 @@ object DatasetToElasticsearchApp extends App {
     val idsQuery: IdsQuery = new IdsQuery.Builder().values(docId).build()
     val query: Query = new Query.Builder().ids(idsQuery).build() // What does this have to look like?
     val searchRequest = new SearchRequest.Builder().index(indexName).query(query).build()
-    val searchResponse = elasticsearchClient.search(searchRequest, classOf[String])
+    val searchResponse = elasticsearchClient.search(searchRequest, classOf[DatasetRow])
     val searchResponseString = searchResponse.toString
 
     println(searchResponseString)
     searchResponseString
   }
 
-  def run(): Unit = {
-    val elasticsearchClient = mkElasticsearchClient(credentialsFilename)
+  def run(elasticsearchTransport: ElasticsearchTransport): Unit = {
+    val elasticsearchClient = mkElasticsearchClient(elasticsearchTransport)
 
     // runCreateIndex(elasticsearchClient, indexName)
     // runIndices(elasticsearchClient)
     // runIndex(elasticsearchClient, indexName, mkDatasetRow())
-    runSearch(elasticsearchClient, indexName, "pydJYo0BaDron0AvRCXx")
-
-    println("Goodbye")
+    // runSearch(elasticsearchClient, indexName, "pydJYo0BaDron0AvRCXx")
   }
 
   try {
-    // How can the process be make to stop?
-    run()
+    Using.resource(mkElasticsearchTransport(credentialsFilename)) { elasticsearchTransport =>
+      run(elasticsearchTransport)
+    }
+    println("Goodbye")
   }
   catch {
     case throwable: Throwable =>
