@@ -12,7 +12,8 @@ import org.apache.http.HttpHost
 import org.apache.http.auth.{AuthScope, UsernamePasswordCredentials}
 import org.apache.http.impl.client.BasicCredentialsProvider
 import org.apache.http.impl.nio.client.HttpAsyncClientBuilder
-import org.elasticsearch.client.RestClient
+import org.apache.http.util.EntityUtils
+import org.elasticsearch.client.{Request, RestClient}
 import org.elasticsearch.client.RestClientBuilder.HttpClientConfigCallback
 
 import java.io.{File, FileInputStream}
@@ -110,32 +111,32 @@ object DatasetToElasticsearchApp extends App {
     credentialsProvider
   }
 
-  def mkRestClient(credentialsFilename: String): RestClient = {
-    val restClient = RestClient
-        .builder(new HttpHost("localhost", 9200))
-        // .builder(new HttpHost("elasticsearch.keithalcock.com", 443, "https"))
-        .setHttpClientConfigCallback(new HttpClientConfigCallback() {
-          def customizeHttpClient(httpClientBuilder: HttpAsyncClientBuilder): HttpAsyncClientBuilder = {
-            httpClientBuilder.setDefaultCredentialsProvider(mkCredentialsProvider(credentialsFilename))
-          }
-        })
-        .build()
+  def mkElasticsearchTransport(restClient: RestClient): ElasticsearchTransport = {
+    val jsonpMapper = new JacksonJsonpMapper()
+    val elasticsearchTransport = new RestClientTransport(restClient, jsonpMapper)
 
-    restClient
+    elasticsearchTransport
   }
 
-  def mkElasticsearchClient(elasticsearchTransport: ElasticsearchTransport): ElasticsearchClient = {
+  def mkElasticsearchClient(restClient: RestClient): ElasticsearchClient = {
+    val elasticsearchTransport = mkElasticsearchTransport(restClient)
     val elasticsearchClient = new ElasticsearchClient(elasticsearchTransport)
 
     elasticsearchClient
   }
 
-  def mkElasticsearchTransport(credentialsFilename: String): ElasticsearchTransport = {
-    val restClient = mkRestClient(credentialsFilename)
-    val jsonpMapper = new JacksonJsonpMapper()
-    val elasticsearchTransport = new RestClientTransport(restClient, jsonpMapper)
+  def mkRestClient(credentialsFilename: String): RestClient = {
+    val restClient = RestClient
+      .builder(new HttpHost("localhost", 9200))
+      // .builder(new HttpHost("elasticsearch.keithalcock.com", 443, "https"))
+      .setHttpClientConfigCallback(new HttpClientConfigCallback() {
+        def customizeHttpClient(httpClientBuilder: HttpAsyncClientBuilder): HttpAsyncClientBuilder = {
+          httpClientBuilder.setDefaultCredentialsProvider(mkCredentialsProvider(credentialsFilename))
+        }
+      })
+      .build()
 
-    elasticsearchTransport
+    restClient
   }
 
   def runCreateIndex(elasticsearchClient: ElasticsearchClient, indexName: String): CreateIndexResponse = {
@@ -315,18 +316,30 @@ object DatasetToElasticsearchApp extends App {
     searchResponseString
   }
 
-  def run(elasticsearchTransport: ElasticsearchTransport): Unit = {
-    val elasticsearchClient = mkElasticsearchClient(elasticsearchTransport)
+  def runSearchLow(restClient: RestClient, indexName: String): String = {
+    val request = new Request("GET", indexName)
+    request.addParameter("pretty", "true")
+    val response = restClient.performRequest(request)
+    val statusCode = response.getStatusLine.getStatusCode
+    val responseBody = EntityUtils.toString(response.getEntity)
+
+    println(responseBody)
+    responseBody
+  }
+
+  def run(restClient: RestClient): Unit = {
+    val elasticsearchClient = mkElasticsearchClient(restClient)
 
     // runCreateIndex(elasticsearchClient, indexName)
     // runIndices(elasticsearchClient)
     // runIndex(elasticsearchClient, indexName, mkDatasetRow())
     // runSearch(elasticsearchClient, indexName, "pydJYo0BaDron0AvRCXx")
+    runSearchLow(restClient, indexName)
   }
 
   try {
-    Using.resource(mkElasticsearchTransport(credentialsFilename)) { elasticsearchTransport =>
-      run(elasticsearchTransport)
+    Using.resource(mkRestClient(credentialsFilename)) { restClient =>
+      run(restClient)
     }
     println("Goodbye")
   }
