@@ -46,12 +46,21 @@ case class CausalRelation(
     map.put("index", index.asInstanceOf[JInteger])
     map.put("negationCount", index.asInstanceOf[JInteger])
     if (relations.nonEmpty)
-      map.put("relations", relations.map(_.serialize))
+      map.put("relations", relations.map(_.serialize()))
     map
   }
 }
 
-case class LatLon(lat: Float, lon: Float)
+case class LatLon(lat: Float, lon: Float) {
+
+  def serialize(): HashMap[String, AnyRef] = {
+    val map = new HashMap[String, AnyRef]()
+
+    map.put("lat", lat.asInstanceOf[JFloat])
+    map.put("lon", lon.asInstanceOf[JFloat])
+    map
+  }
+}
 
 case class Location(
   val name: String,
@@ -62,7 +71,7 @@ case class Location(
     val map = new HashMap[String, AnyRef]()
 
     map.put("name", name)
-    map.put("location", Array(latLon.lat, latLon.lon))
+    map.put("location", latLon.serialize())
     map
   }
 }
@@ -96,6 +105,7 @@ case class DatasetRecord(
   def serialize(): HashMap[String, AnyRef] = {
     val map = new HashMap[String, AnyRef]()
 
+    // map.put("location", LatLon(1f, 2f).serialize())
     map.put("dataset", dataset)
     map.put("region", region)
     map.put("url", url)
@@ -108,20 +118,20 @@ case class DatasetRecord(
     map.put("sentenceIndex", sentenceIndex.asInstanceOf[JInteger])
     map.put("sentence", sentence)
     if (causalRelations.nonEmpty)
-      map.put("causalRelations", causalRelations.map(_.serialize))
+      map.put("causalRelations", causalRelations.map(_.serialize()))
     map.put("isBelief", isBelief.asInstanceOf[JBoolean])
     map.put("sentiment", sentiment)
     if (sentenceLocations.nonEmpty)
-      map.put("sentenceLocations", sentenceLocations.map(_.serialize))
+      map.put("sentenceLocations", sentenceLocations.map(_.serialize()))
     map.put("contextBefore", contextBefore)
     map.put("contextAfter", contextAfter)
     if (contextLocations.nonEmpty)
-      map.put("contextLocations", contextLocations.map(_.serialize))
+      map.put("contextLocations", contextLocations.map(_.serialize()))
     if (prevLocations.nonEmpty)
-      map.put("prevLocations", prevLocations.map(_.serialize))
+      map.put("prevLocations", prevLocations.map(_.serialize()))
     map.put("prevDistance", prevDistance.asInstanceOf[JInteger])
     if (nextLocations.nonEmpty)
-      map.put("nextLocations", nextLocations.map(_.serialize))
+      map.put("nextLocations", nextLocations.map(_.serialize()))
     map.put("nextDistance", nextDistance.asInstanceOf[JInteger])
     map
   }

@@ -16,6 +16,30 @@ GET habitus/_search
 
 GET habitus/_search
 {
+  "_source": false,
+  "query": {
+    "wildcard": {
+      "url": {
+        "value": "*clulab*"
+      }
+    }
+  },
+  "fields": [ "sentence", "title"]
+}
+
+GET habitus/_search
+{
+  "query": {
+    "wildcard": {
+      "url": {
+        "value": "*clulab*"
+      }
+    }
+  }
+}
+
+GET habitus/_search
+{
   "query": {
     "range": { "date": {
       "gt": "1997-01-01",
@@ -93,6 +117,26 @@ GET habitus/_search
         "terms": ["mining", "galamsey"],
         "minimum_should_match_script": {
           "source": "2.0"
+        }
+      }
+    }
+  }
+}
+
+GET habitus/_search
+{
+  "query": {
+    "bool": {
+      "must": {
+        "match_all": {}
+      },
+      "filter": {
+        "geo_distance": {
+          "distance": "1000km",
+          "location": {
+            "lat": 1.1,
+            "lon": 2.0
+          }
         }
       }
     }

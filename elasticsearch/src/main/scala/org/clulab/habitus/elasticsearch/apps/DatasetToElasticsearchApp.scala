@@ -56,8 +56,8 @@ object DatasetToElasticsearchApp extends App {
 
   def mkRestClient(credentialsFilename: String): RestClient = {
     val restClient = RestClient
-      .builder(new HttpHost("localhost", 9200))
-      // .builder(new HttpHost("elasticsearch.keithalcock.com", 443, "https"))
+//      .builder(new HttpHost("localhost", 9200))
+      .builder(new HttpHost("elasticsearch.keithalcock.com", -1, "https"))
       .setHttpClientConfigCallback(new HttpClientConfigCallback() {
         def customizeHttpClient(httpClientBuilder: HttpAsyncClientBuilder): HttpAsyncClientBuilder = {
           httpClientBuilder.setDefaultCredentialsProvider(mkCredentialsProvider(credentialsFilename))
@@ -108,7 +108,7 @@ object DatasetToElasticsearchApp extends App {
   }
 
   def runSearchLow(restClient: RestClient, indexName: String): String = {
-    val request = new Request("GET", indexName)
+    val request = new Request("GET", s"/$indexName/_search")
     request.addParameter("pretty", "true")
     val response = restClient.performRequest(request)
     val statusCode = response.getStatusLine.getStatusCode
@@ -123,9 +123,9 @@ object DatasetToElasticsearchApp extends App {
 
     // runCreateIndex(elasticsearchClient, indexName)
     // runIndices(elasticsearchClient)
-    runIndex(elasticsearchClient, indexName, DatasetRecord.default)
+    // runIndex(elasticsearchClient, indexName, DatasetRecord.default)
     // runSearch(elasticsearchClient, indexName, "pydJYo0BaDron0AvRCXx")
-    // runSearchLow(restClient, indexName)
+    runSearchLow(restClient, indexName)
   }
 
   try {
