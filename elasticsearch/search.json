@@ -6,3 +6,95 @@ GET habitus/_search
     "match": { "region", "uganda" }
   }
 }
+
+GET habitus/_search
+{
+  "query": {
+    "match_phrase": { "sentence": "fox jumped" }
+  }
+}
+
+GET habitus/_search
+{
+  "query": {
+    "range": { "date": {
+      "gt": "1997-01-01",
+      "lt": "2022-01-01"
+    }}
+  }
+}
+
+GET habitus/_search
+{
+  "query": {
+    "nested": {
+      "path": "sentenceLocations",
+      "query": {
+        "match": { "sentenceLocations.name": "sentenceLocation1" }
+      }
+    }
+  }
+}
+
+GET habitus/_search
+{
+  "query": {
+    "match": { "terms": {
+      "query": ["galamsey", "nothing"],
+      "operator": "OR"
+    }}
+  }
+}
+
+GET habitus/_search
+{
+  "query": {
+    "query_string": {
+      "query": "article",
+      "default_field": "*"
+    }
+  }
+}
+
+GET habitus/_search
+{
+  "query": {
+    "regexp": {
+      "region": "ug"
+    }
+  }
+}
+
+GET habitus/_search
+{
+  "query": {
+    "wildcard": {
+      "region": "*ug*"
+    }
+  }
+}
+
+
+GET habitus/_search
+{
+  "query": {
+    "terms": {
+      "terms": ["mining", "galamsey"],
+      "boost": 1.0
+    }
+  }
+}
+
+GET habitus/_search
+{
+  "query": {
+    "terms_set": {
+      "terms": {
+        "terms": ["mining", "galamsey"],
+        "minimum_should_match_script": {
+          "source": "2.0"
+        }
+      }
+    }
+  }
+}

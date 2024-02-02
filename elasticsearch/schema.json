@@ -1,4 +1,7 @@
 {
+  "settings": {
+    "index.query.default_field": "sentence"
+  },
   "properties": {
     "dataset": {
       "type": "keyword"
@@ -7,7 +10,7 @@
       "type": "keyword"
     },
     "url": {
-      "type": "keyword"
+      "type": "wildcard"
     },
     "title": {
       "type": "text"
@@ -16,13 +19,13 @@
       "type": "keyword"
     },
     "dateline": {
-      "type": "keyword"
+      "type": "wildcard"
     },
     "date": {
       "type": "date"
     },
     "byline": {
-      "type": "keyword"
+      "type": "wildcard"
     },
     "sentenceIndex": {
       "type": "integer"
@@ -96,7 +99,7 @@
       "type": "nested",
       "properties": {
         "name": {
-          "type": "keyword"
+          "type": "wildcard"
         },
         "location": {
           "type": "geo_point"
@@ -115,7 +118,7 @@
       "type": "nested",
       "properties": {
         "name": {
-          "type": "keyword"
+          "type": "wildcard"
         },
         "location": {
           "type": "geo_point"
@@ -126,7 +129,7 @@
       "type": "nested",
       "properties": {
         "name": {
-          "type": "keyword"
+          "type": "wildcard"
         },
         "location": {
           "type": "geo_point"
@@ -140,7 +143,7 @@
       "type": "nested",
       "properties": {
         "name": {
-          "type": "keyword"
+          "type": "wildcard"
         },
         "location": {
           "type": "geo_point"
