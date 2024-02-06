@@ -76,7 +76,6 @@ case class Location(
   }
 }
 
-// TODO: almost all of these are optional
 case class DatasetRecord(
   dataset: String,
   region: String,
@@ -96,9 +95,9 @@ case class DatasetRecord(
   contextAfter: String,
   contextLocations: Array[Location],
   prevLocations: Array[Location],
-  prevDistance: Int,
+  prevDistanceOpt: Option[Int],
   nextLocations: Array[Location],
-  nextDistance: Int
+  nextDistanceOpt: Option[Int]
 ) {
 
   // See advice at https://discuss.elastic.co/t/ways-to-build-json-doc-in-es8-java-api-client/314459.
@@ -113,7 +112,7 @@ case class DatasetRecord(
     if (terms.nonEmpty)
       map.put("terms", terms)
     datelineOpt.foreach(map.put("dateline", _))
-    map.put("date", date)
+    dateOpt.foreach(map.put("date", _))
     bylineOpt.foreach(map.put("byline", _))
     map.put("sentenceIndex", sentenceIndex.asInstanceOf[JInteger])
     map.put("sentence", sentence)
@@ -130,10 +129,10 @@ case class DatasetRecord(
       map.put("contextLocations", contextLocations.map(_.serialize()))
     if (prevLocations.nonEmpty)
       map.put("prevLocations", prevLocations.map(_.serialize()))
-    map.put("prevDistance", prevDistance.asInstanceOf[JInteger])
+    prevDistanceOpt.foreach { prevDistance => map.put("prevDistance", prevDistance.asInstanceOf[JInteger]) }
     if (nextLocations.nonEmpty)
       map.put("nextLocations", nextLocations.map(_.serialize()))
-    map.put("nextDistance", nextDistance.asInstanceOf[JInteger])
+    nextDistanceOpt.foreach { nextDistance => map.put("nextDistance", nextDistance.asInstanceOf[JInteger]) }
     map
   }
 }
