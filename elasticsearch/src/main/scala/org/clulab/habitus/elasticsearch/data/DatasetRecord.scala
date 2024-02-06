@@ -81,16 +81,16 @@ case class DatasetRecord(
   dataset: String,
   region: String,
   url: String,
-  title: String,
+  titleOpt: Option[String],
   terms: Array[String],
-  dateline: String,
-  date: String,
-  byline: String,
+  datelineOpt: Option[String],
+  dateOpt: Option[String],
+  bylineOpt: Option[String],
   sentenceIndex: Int,
   sentence: String,
   causalRelations: Array[CausalRelation],
   isBelief: Boolean,
-  sentiment: String,
+  sentiment: Option[Float],
   sentenceLocations: Array[Location],
   contextBefore: String,
   contextAfter: String,
@@ -109,12 +109,12 @@ case class DatasetRecord(
     map.put("dataset", dataset)
     map.put("region", region)
     map.put("url", url)
-    map.put("title", title)
+    titleOpt.foreach(map.put("title", _))
     if (terms.nonEmpty)
       map.put("terms", terms)
-    map.put("dateline", dateline)
+    datelineOpt.foreach(map.put("dateline", _))
     map.put("date", date)
-    map.put("byline", byline)
+    bylineOpt.foreach(map.put("byline", _))
     map.put("sentenceIndex", sentenceIndex.asInstanceOf[JInteger])
     map.put("sentence", sentence)
     if (causalRelations.nonEmpty)
@@ -123,7 +123,8 @@ case class DatasetRecord(
     map.put("sentiment", sentiment)
     if (sentenceLocations.nonEmpty)
       map.put("sentenceLocations", sentenceLocations.map(_.serialize()))
-    map.put("contextBefore", contextBefore)
+    if (contextBefore.nonEmpty)
+      map.put("contextBefore", contextBefore)
     map.put("contextAfter", contextAfter)
     if (contextLocations.nonEmpty)
       map.put("contextLocations", contextLocations.map(_.serialize()))

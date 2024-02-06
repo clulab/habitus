@@ -1,17 +1,23 @@
-package org.clulab.habitus.apps.tpi
+package org.clulab.habitus.apps.elasticsearch
 
 import ai.lum.common.FileUtils._
+import org.clulab.habitus.apps.tpi.AttributeCounts
+import org.clulab.habitus.apps.utils.DateString
+import org.clulab.habitus.elasticsearch.ElasticsearchIndexClient
+import org.clulab.habitus.elasticsearch.data.{CausalRelation, DatasetRecord, LatLon, Location}
+import org.clulab.habitus.elasticsearch.utils.Elasticsearch
 import org.clulab.odin.{EventMention, Mention}
 import org.clulab.processors.{Document, Sentence}
-import org.clulab.utils.StringUtils
+import org.clulab.utils.{Sourcer, StringUtils}
 import org.clulab.wm.eidos.attachments.{Decrease, Increase, NegChange, Negation, PosChange}
 import org.clulab.wm.eidos.document.AnnotatedDocument
 import org.clulab.wm.eidos.serialization.jsonld.{JLDDeserializer, JLDRelationCausation}
-import org.clulab.wm.eidoscommon.utils.{FileEditor, FileUtils, Logging, TsvWriter}
+import org.clulab.wm.eidoscommon.utils.{FileEditor, FileUtils, Logging, TsvReader, TsvWriter}
 import org.json4s.DefaultFormats
 import org.json4s.jackson.JsonMethods
 
 import java.io.File
+import java.net.URL
 import scala.util.Using
 
 // See ArticleScrape
@@ -19,12 +25,27 @@ case class JsonRecord(url: String, titleOpt: Option[String], datelineOpt: Option
 
 case class AttributeCounts(increaseCount: Int, decreaseCount: Int, posChangeCount: Int, negChangeCount: Int, negatedCount: Int)
 
-object Step2InputEidos extends App with Logging {
+case class TsvRecord(
+  sentenceIndex: Int,
+  sentence: String,
+  belief: Boolean,
+  sentimentScoreOpt: Option[Float],
+  sentenceLocations: Array[Location],
+  contextLocations: Array[Location]
+)
+
+object Step2InputEidos2 extends App with Logging {
   implicit val formats: DefaultFormats.type = org.json4s.DefaultFormats
   val contextWindow = 3
-  val baseDirectory = "../corpora/uganda/unknown"
-  val outputFileName = "../corpora/uganda/uganda.tsv"
+  val baseDirectory = "../corpora/uganda-mining"
+  val inputFilename = "../corpora/uganda-mining/uganda-2.tsv"
+  val credentialsFilename = "../credentials/credentials.properties"
   val deserializer = new JLDDeserializer()
+  val url = new URL("http://localhost:9200")
+  // val url = new URL("https://elasticsearch.keithalcock.com")
+  val indexName = "habitus"
+  val datasetName = "uganda-mining.tsv"
+  val regionName = "uganda"
 
   def jsonFileToJsonld(jsonFile: File): File =
       FileEditor(jsonFile).setExt("jsonld").get
@@ -86,6 +107,14 @@ object Step2InputEidos extends App with Logging {
     cleanText
   }
 
+  def attributeCountsToTsvWriter(attributeCounts: AttributeCounts, tsvWriter: TsvWriter): Unit = {
+    tsvWriter.print(
+      attributeCounts.increaseCount.toString, attributeCounts.decreaseCount.toString,
+      attributeCounts.posChangeCount.toString, attributeCounts.negChangeCount.toString,
+      ""
+    )
+  }
+
   def mentionToAttributeCounts(mention: Mention): AttributeCounts = {
     val increaseCount = mention.attachments.count(_.isInstanceOf[Increase])
     val decreaseCount = mention.attachments.count(_.isInstanceOf[Decrease])
@@ -94,14 +123,6 @@ object Step2InputEidos extends App with Logging {
     val negationCount = mention.attachments.count(_.isInstanceOf[Negation])
 
     AttributeCounts(increaseCount, decreaseCount, posCount, negCount, negationCount)
-  }
-
-  def attributeCountsToTsvWriter(attributeCounts: AttributeCounts, tsvWriter: TsvWriter): Unit = {
-    tsvWriter.print(
-      attributeCounts.increaseCount.toString, attributeCounts.decreaseCount.toString,
-      attributeCounts.posChangeCount.toString, attributeCounts.negChangeCount.toString,
-      ""
-    )
   }
 
   val jsonFiles: Seq[File] = {
@@ -123,22 +144,43 @@ object Step2InputEidos extends App with Logging {
     (jsonFileRecordPairs.head._1, jsonFileRecordPairs.head._2, terms)
   }
 
-  Using.resource(FileUtils.printWriterFromFile(outputFileName)) { printWriter =>
-    val tsvWriter = new TsvWriter(printWriter)
+  def parseLocations(locationString: String): Array[Location] = {
+    if (locationString.isEmpty) Array.empty
+    else {
+      val locations = locationString.split(')').map { nameAndLatLon =>
+        val Array(name, latLon) = nameAndLatLon.split('(').map(_.trim)
+        val Array(lat, lon) = latLon.split(",").map(_.trim.toFloat)
 
-    tsvWriter.println(
-      "url", "terms", "date", "sentenceIndex", "sentence", "context", // context is no longer needed
-      "causal", "causalIndex", "negationCount",
-      "causeIncCount", "causeDecCount", "causePosCount", "causeNegCount",
-      "effectIncCount", "effectDecCount", "effectPosCount", "effectNegCount",
-      "causeText", "effectText",
-      "prevSentence"
-    )
+        Location(name, LatLon(lat, lon))
+      }
+
+      locations
+    }
+  }
+
+  val urlSentenceIndexToTsvRecordMap = Using.resource(Sourcer.sourceFromFilename(inputFilename)) { source =>
+    val lines = source.getLines.drop(1)
+    val tsvReader = new TsvReader()
+
+    lines.map { line =>
+      val Array(url, sentenceIndexString, sentence, beliefString, sentimentScore, sentenceLocationsString, contextLocationsString) = tsvReader.readln(line, 7)
+      val sentenceIndex = sentenceIndexString.toInt
+      val belief = beliefString == "True"
+      val sentimentScoreOpt = if (sentimentScore.isEmpty) None else Some(sentimentScore.toFloat)
+      val sentenceLocations = parseLocations(sentenceLocationsString)
+      val contextLocations = parseLocations(contextLocationsString)
+
+      (url, sentenceIndex) -> new TsvRecord(sentenceIndex, sentence, belief, sentimentScoreOpt, sentenceLocations, contextLocations)
+    }.toMap
+  }
+
+  // TODO: Perhaps collect all datarecors so that can find nearest easier.
+
+  Using.resource(ElasticsearchIndexClient(url, credentialsFilename, indexName)) { elasticsearchIndexClient =>
     jsonFileRecordTermsSeq.zipWithIndex.foreach { case ((jsonFile, jsonRecord, terms), index) =>
       println(s"$index ${jsonFile.getPath}")
       try {
         val url = jsonRecord.url
-        val termsString = terms.mkString(" ")
         val jsonldFile = jsonFileToJsonld(jsonFile)
         val annotatedDocument = jsonldFileToAnnotatedDocument(jsonldFile)
         val document = annotatedDocument.document
@@ -149,6 +191,7 @@ object Step2InputEidos extends App with Logging {
         }
         val causalMentionGroups: Map[Int, Seq[Mention]] = causalMentions.groupBy(_.sentence)
         val sentences = document.sentences
+        val dateOpt = jsonRecord.datelineOpt.map(DateString(_).canonicalize)
 
         sentences.zipWithIndex.foreach { case (sentence, sentenceIndex) =>
           val causal = causalMentionGroups.contains(sentenceIndex)
@@ -161,6 +204,15 @@ object Step2InputEidos extends App with Logging {
               .lift(sentenceIndex - 1)
               .map(getSentenceText(document, _))
               .getOrElse("")
+          val tsvRecord = urlSentenceIndexToTsvRecordMap(url, sentenceIndex)
+          val contextBefore = sentences
+              .slice(sentenceIndex - contextWindow, sentenceIndex)
+              .map(getSentenceText(document,_))
+              .mkString(" ")
+          val contextAfter = sentences
+              .slice(sentenceIndex, sentenceIndex + contextWindow + 1)
+              .map(getSentenceText(document,_))
+              .mkString(" ")
 
           if (causal) {
             val causalMentionGroup = causalMentionGroups(sentenceIndex).sorted
@@ -171,7 +223,6 @@ object Step2InputEidos extends App with Logging {
               assert(causalAttributeCounts.decreaseCount == 0)
               assert(causalAttributeCounts.posChangeCount == 0)
               assert(causalAttributeCounts.negChangeCount == 0)
-              // Negation seems to belong up here.
 
               val causeMentions = causalMention.arguments("cause")
               assert(causeMentions.length == 1)
@@ -191,6 +242,11 @@ object Step2InputEidos extends App with Logging {
               val effectAttributeCounts = mentionToAttributeCounts(effectMention)
               assert(effectAttributeCounts.negatedCount == 0)
 
+              val datasetRecord: DatasetRecord = null // DatasetRecord(
+              // )
+
+              elasticsearchIndexClient.index(datasetRecord)
+
               tsvWriter.print(url, termsString, jsonRecord.datelineOpt.getOrElse(""), sentenceIndex.toString, cleanText, context, "")
               tsvWriter.print(causal.toString, causalIndex.toString, causalAttributeCounts.negatedCount.toString, "")
               attributeCountsToTsvWriter(causeAttributeCounts, tsvWriter)
@@ -199,11 +255,31 @@ object Step2InputEidos extends App with Logging {
             }
           }
           else {
-            tsvWriter.print(url, termsString, jsonRecord.datelineOpt.getOrElse(""), sentenceIndex.toString, cleanText, context, "")
-            tsvWriter.print(causal.toString, "", "", "")
-            tsvWriter.print( "", "", "", "", "")
-            tsvWriter.print( "", "", "", "", "")
-            tsvWriter.println( "", "", prevSentenceText)
+            val datasetRecord: DatasetRecord = DatasetRecord(
+              datasetName,
+              regionName,
+              url,
+              jsonRecord.titleOpt,
+              terms.toArray,
+              jsonRecord.datelineOpt,
+              dateOpt,
+              jsonRecord.bylineOpt,
+              tsvRecord.sentenceIndex,
+              tsvRecord.sentence,
+              Array.empty[CausalRelation],
+              tsvRecord.belief,
+              tsvRecord.sentimentScoreOpt,
+              tsvRecord.sentenceLocations,
+              contextBefore,
+              contextAfter,
+              tsvRecord.contextLocations,
+              Array.empty, // prevLocations
+              5, // prevDistance,
+              Array.empty, // nextLocations
+              5 // nextDistance
+            )
+
+            elasticsearchIndexClient.index(datasetRecord)
           }
         }
       }
