@@ -192,15 +192,21 @@ object Step2InputEidos2 extends App with Logging {
 
   def getLocationsAndDistance(sentenceIndex: Int, range: Range, urlSentenceIndexToTsvRecordMap: Map[(String, Int),
       LocalTsvRecord], url: String): (Array[Location], Option[Int]) = {
-    val locationsIndexOpt = range.find { sentenceIndex =>
-      urlSentenceIndexToTsvRecordMap(url, sentenceIndex).sentenceLocations.nonEmpty
-    }
-    val locations = locationsIndexOpt.map { sentenceIndex =>
-      urlSentenceIndexToTsvRecordMap(url, sentenceIndex).sentenceLocations
-    }.getOrElse(Array.empty)
-    val distanceOpt = locationsIndexOpt.map { index => math.abs(sentenceIndex - index) }
+    val tsvRecord = urlSentenceIndexToTsvRecordMap(url, sentenceIndex)
 
-    (locations, distanceOpt)
+    if (tsvRecord.sentenceLocations.nonEmpty)
+      (tsvRecord.sentenceLocations, Some(0))
+    else {
+      val locationsIndexOpt = range.find { sentenceIndex =>
+        urlSentenceIndexToTsvRecordMap(url, sentenceIndex).sentenceLocations.nonEmpty
+      }
+      val locations = locationsIndexOpt.map { sentenceIndex =>
+        urlSentenceIndexToTsvRecordMap(url, sentenceIndex).sentenceLocations
+      }.getOrElse(Array.empty)
+      val distanceOpt = locationsIndexOpt.map { index => math.abs(sentenceIndex - index) }
+
+      (locations, distanceOpt)
+    }
   }
 
   val jsonFiles: Seq[File] = {
