@@ -1,7 +1,4 @@
 {
-  "settings": {
-    "index.query.default_field": "sentence"
-  },
   "properties": {
     "dataset": {
       "type": "keyword"
@@ -93,7 +90,7 @@
       "type": "boolean"
     },
     "sentiment": {
-      "type": "keyword"
+      "type": "float"
     },
     "sentenceLocations": {
       "type": "nested",

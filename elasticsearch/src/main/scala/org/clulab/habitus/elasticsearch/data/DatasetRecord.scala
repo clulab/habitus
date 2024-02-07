@@ -63,15 +63,15 @@ case class LatLon(lat: Float, lon: Float) {
 }
 
 case class Location(
-  val name: String,
-  val latLon: LatLon
+  name: String,
+  latLonOpt: Option[LatLon]
 ) {
 
   def serialize(): HashMap[String, AnyRef] = {
     val map = new HashMap[String, AnyRef]()
 
     map.put("name", name)
-    map.put("location", latLon.serialize())
+    latLonOpt.foreach { location => map.put("location", location.serialize()) }
     map
   }
 }
@@ -89,7 +89,7 @@ case class DatasetRecord(
   sentence: String,
   causalRelations: Array[CausalRelation],
   isBelief: Boolean,
-  sentiment: Option[Float],
+  sentimentOpt: Option[Float],
   sentenceLocations: Array[Location],
   contextBefore: String,
   contextAfter: String,
@@ -119,7 +119,7 @@ case class DatasetRecord(
     if (causalRelations.nonEmpty)
       map.put("causalRelations", causalRelations.map(_.serialize()))
     map.put("isBelief", isBelief.asInstanceOf[JBoolean])
-    map.put("sentiment", sentiment)
+    sentimentOpt.foreach { sentiment => map.put("sentiment", sentiment.asInstanceOf[JFloat]) }
     if (sentenceLocations.nonEmpty)
       map.put("sentenceLocations", sentenceLocations.map(_.serialize()))
     if (contextBefore.nonEmpty)
@@ -144,11 +144,11 @@ object DatasetRecord {
       dataset = "uganda.tsv",
       region = "uganda",
       url = "http://clulab.org",
-      title = "This article is about that",
+      titleOpt = Some("This article is about that"),
       terms = Array("mining", "galamsey"),
-      dateline = "September 2, 2023",
-      date = "2023-09-02",
-      byline = "Your local reporter",
+      datelineOpt = Some("September 2, 2023"),
+      dateOpt = Some("2023-09-02"),
+      bylineOpt = Some("Your local reporter"),
       sentenceIndex = 0,
       sentence = "The quick brown fox jumped over the lazy dog.",
       causalRelations = Array(
@@ -230,15 +230,15 @@ object DatasetRecord {
         )
       ),
       isBelief = true,
-      sentiment = "POSITIVE",
+      sentimentOpt = Some(4.5f),
       sentenceLocations = Array(
         Location(
           name = "sentenceLocation1",
-          latLon = LatLon(1f, 2f)
+          latLonOpt = Some(LatLon(1f, 2f))
         ),
         Location(
           name = "sentenceLocation2",
-          latLon = LatLon(3f, 4f)
+          latLonOpt = Some(LatLon(3f, 4f))
         )
       ),
       contextBefore = "This is what came before",
@@ -246,35 +246,35 @@ object DatasetRecord {
       contextLocations = Array(
         Location(
           name = "contextLocation1",
-          latLon = LatLon(5f, 6f)
+          latLonOpt = Some(LatLon(5f, 6f))
         ),
         Location(
           name = "contextLocation2",
-          latLon = LatLon(7f, 8f)
+          latLonOpt = Some(LatLon(7f, 8f))
         )
       ),
       prevLocations = Array(
         Location(
           name = "prevLocation1",
-          latLon = LatLon(9f, 10f)
+          latLonOpt = Some(LatLon(9f, 10f))
         ),
         Location(
           name = "prevLocation2",
-          latLon = LatLon(11f, 12f)
+          latLonOpt = Some(LatLon(11f, 12f))
         )
       ),
-      prevDistance = 4,
+      prevDistanceOpt = Some(4),
       nextLocations = Array(
         Location(
           name = "nextLocation1",
-          latLon = LatLon(13f, 14f)
+          latLonOpt = Some(LatLon(13f, 14f))
         ),
         Location(
           name = "nextLocation2",
-          latLon = LatLon(15f, 16f)
+          latLonOpt = Some(LatLon(15f, 16f))
         )
       ),
-      nextDistance = 5
+      nextDistanceOpt = Some(5)
     )
 
     datasetRecord

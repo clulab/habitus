@@ -1,7 +1,6 @@
 package org.clulab.habitus.apps.elasticsearch
 
 import ai.lum.common.FileUtils._
-import org.clulab.habitus.apps.tpi.AttributeCounts
 import org.clulab.habitus.apps.utils.DateString
 import org.clulab.habitus.elasticsearch.ElasticsearchIndexClient
 import org.clulab.habitus.elasticsearch.data.{CausalRelation, CauseOrEffect, DatasetRecord, LatLon, Location, Relation}
@@ -18,23 +17,19 @@ import org.json4s.jackson.JsonMethods
 
 import java.io.File
 import java.net.URL
-import scala.util.Using
-
-// See ArticleScrape
-case class JsonRecord(url: String, titleOpt: Option[String], datelineOpt: Option[String], bylineOpt: Option[String], text: String)
-
-case class AttributeCounts(increaseCount: Int, decreaseCount: Int, posChangeCount: Int, negChangeCount: Int, negatedCount: Int)
-
-case class TsvRecord(
-  sentenceIndex: Int,
-  sentence: String,
-  belief: Boolean,
-  sentimentScoreOpt: Option[Float],
-  sentenceLocations: Array[Location],
-  contextLocations: Array[Location]
-)
+import scala.util.{Try, Using}
 
 object Step2InputEidos2 extends App with Logging {
+
+  case class LocalTsvRecord(
+    sentenceIndex: Int,
+    sentence: String,
+    belief: Boolean,
+    sentimentScoreOpt: Option[Float],
+    sentenceLocations: Array[Location],
+    contextLocations: Array[Location]
+  )
+
   implicit val formats: DefaultFormats.type = org.json4s.DefaultFormats
   val contextWindow = 3
   val baseDirectory = "../corpora/uganda-mining"
@@ -60,7 +55,7 @@ object Step2InputEidos2 extends App with Logging {
     val text = (jValue \ "text").extract[String]
 
     // Don't use them all in order to save space.
-    JsonRecord(url, None, datelineOpt, None, "")
+    JsonRecord(url, titleOpt, datelineOpt, bylineOpt, "")
   }
 
   def jsonFileToTerm(jsonFile: File): String = {
@@ -137,13 +132,75 @@ object Step2InputEidos2 extends App with Logging {
     else {
       val locations = locationString.split(')').map { nameAndLatLon =>
         val Array(name, latLon) = nameAndLatLon.split('(').map(_.trim)
-        val Array(lat, lon) = latLon.split(",").map(_.trim.toFloat)
+        val Array(latString, lonString) = latLon.split(",").map(_.trim)
+        // Sometimes we have NaN for these.  We know it's a place, but not where.
+        val latOpt = Try(latString.toFloat).toOption
+        val lonOpt = Try(lonString.toFloat).toOption
+        val latLonOpt = latOpt.flatMap { lat =>
+          lonOpt.map { lon =>
+            LatLon(lat, lon)
+          }
+        }
 
-        Location(name, LatLon(lat, lon))
+        Location(name,latLonOpt)
       }
 
       locations
     }
+  }
+
+  def getCausalRelations(causalMentionGroup: Seq[Mention]): Array[CausalRelation] = {
+    val causalRelations = causalMentionGroup.zipWithIndex.map { case (causalMention, causalIndex) =>
+      val causalAttributeCounts = mentionToAttributeCounts(causalMention)
+      assert(causalAttributeCounts.increaseCount == 0)
+      assert(causalAttributeCounts.decreaseCount == 0)
+      assert(causalAttributeCounts.posChangeCount == 0)
+      assert(causalAttributeCounts.negChangeCount == 0)
+
+      val causeMentions = causalMention.arguments("cause")
+      assert(causeMentions.length == 1)
+      val effectMentions = causalMention.arguments("effect")
+      assert(effectMentions.length == 1)
+
+      val causeMention = causeMentions.head
+      val effectMention = effectMentions.head
+
+      val causeText = causeMention.text
+      val cleanCauseText = rawTextToCleanText(causeText)
+      val effectText = effectMention.text
+      val cleanEffectText = rawTextToCleanText(effectText)
+
+      val causeAttributeCounts = mentionToAttributeCounts(causeMention)
+      assert(causeAttributeCounts.negatedCount == 0)
+      val effectAttributeCounts = mentionToAttributeCounts(effectMention)
+      assert(effectAttributeCounts.negatedCount == 0)
+
+      val cause = newCauseOrEffect(cleanCauseText, causeAttributeCounts)
+      val effect = newCauseOrEffect(cleanEffectText, effectAttributeCounts)
+      val relation = Relation(cause, effect)
+      val causalRelation = CausalRelation(
+        causalIndex,
+        causalAttributeCounts.negatedCount,
+        Array(relation)
+      )
+
+      causalRelation
+    }
+
+    causalRelations.toArray
+  }
+
+  def getLocationsAndDistance(sentenceIndex: Int, range: Range, urlSentenceIndexToTsvRecordMap: Map[(String, Int),
+      LocalTsvRecord], url: String): (Array[Location], Option[Int]) = {
+    val locationsIndexOpt = range.find { sentenceIndex =>
+      urlSentenceIndexToTsvRecordMap(url, sentenceIndex).sentenceLocations.nonEmpty
+    }
+    val locations = locationsIndexOpt.map { sentenceIndex =>
+      urlSentenceIndexToTsvRecordMap(url, sentenceIndex).sentenceLocations
+    }.getOrElse(Array.empty)
+    val distanceOpt = locationsIndexOpt.map { index => math.abs(sentenceIndex - index) }
+
+    (locations, distanceOpt)
   }
 
   val jsonFiles: Seq[File] = {
@@ -164,7 +221,7 @@ object Step2InputEidos2 extends App with Logging {
 
     (jsonFileRecordPairs.head._1, jsonFileRecordPairs.head._2, terms)
   }
-  val urlSentenceIndexToTsvRecordMap = Using.resource(Sourcer.sourceFromFilename(inputFilename)) { source =>
+  val urlSentenceIndexToTsvRecordMap: Map[(String, Int), LocalTsvRecord] = Using.resource(Sourcer.sourceFromFilename(inputFilename)) { source =>
     val lines = source.getLines.drop(1)
     val tsvReader = new TsvReader()
 
@@ -176,11 +233,14 @@ object Step2InputEidos2 extends App with Logging {
       val sentenceLocations = parseLocations(sentenceLocationsString)
       val contextLocations = parseLocations(contextLocationsString)
 
-      (url, sentenceIndex) -> new TsvRecord(sentenceIndex, sentence, belief, sentimentScoreOpt, sentenceLocations, contextLocations)
+      (url, sentenceIndex) -> new LocalTsvRecord(sentenceIndex, sentence, belief, sentimentScoreOpt, sentenceLocations, contextLocations)
     }.toMap
   }
+  val restClient = Elasticsearch.mkRestClient(url, credentialsFilename)
 
-  Using.resource(ElasticsearchIndexClient(url, credentialsFilename, indexName)) { elasticsearchIndexClient =>
+  Using.resource(restClient) { restClient =>
+    val elasticsearchIndexClient = ElasticsearchIndexClient(restClient, indexName)
+
     jsonFileRecordTermsSeq.zipWithIndex.foreach { case ((jsonFile, jsonRecord, terms), index) =>
       println(s"$index ${jsonFile.getPath}")
       try {
@@ -188,10 +248,9 @@ object Step2InputEidos2 extends App with Logging {
         val jsonldFile = jsonFileToJsonld(jsonFile)
         val annotatedDocument = jsonldFileToAnnotatedDocument(jsonldFile)
         val document = annotatedDocument.document
-        val allMentions = annotatedDocument.allOdinMentions
+        val allMentions = annotatedDocument.allOdinMentions.toVector
         val causalMentions = allMentions.filter { mention =>
-          mention.isInstanceOf[EventMention] &&
-          mention.label == JLDRelationCausation.taxonomy
+          mention.isInstanceOf[EventMention] && mention.label == JLDRelationCausation.taxonomy
         }
         val causalMentionGroups: Map[Int, Seq[Mention]] = causalMentions.groupBy(_.sentence)
         val sentences = document.sentences
@@ -200,90 +259,22 @@ object Step2InputEidos2 extends App with Logging {
         sentences.zipWithIndex.foreach { case (sentence, sentenceIndex) =>
           val causal = causalMentionGroups.contains(sentenceIndex)
           val cleanText = getSentenceText(document, sentence)
-          val context = sentences
-              .slice(sentenceIndex - contextWindow, sentenceIndex + contextWindow + 1)
-              .map(getSentenceText(document,_))
-              .mkString(" ")
-          val prevSentenceText = sentences
-              .lift(sentenceIndex - 1)
-              .map(getSentenceText(document, _))
-              .getOrElse("")
           val tsvRecord = urlSentenceIndexToTsvRecordMap(url, sentenceIndex)
           val contextBefore = sentences
               .slice(sentenceIndex - contextWindow, sentenceIndex)
-              .map(getSentenceText(document,_))
+              .map(getSentenceText(document, _))
               .mkString(" ")
           val contextAfter = sentences
               .slice(sentenceIndex + 1, sentenceIndex + contextWindow + 1)
-              .map(getSentenceText(document,_))
+              .map(getSentenceText(document, _))
               .mkString(" ")
-          val prevLocationsIndexOpt = Range(0, sentenceIndex).reverse.find { sentenceIndex =>
-            val tsvRecord = urlSentenceIndexToTsvRecordMap(url, sentenceIndex)
-
-            tsvRecord.sentenceLocations.nonEmpty
-          }
-          val prevLocations = prevLocationsIndexOpt.map { prevLocationsIndex =>
-            val tsvRecord = urlSentenceIndexToTsvRecordMap(url, prevLocationsIndex)
-
-            tsvRecord.sentenceLocations
-          }.getOrElse(Array.empty)
-          val prevDistanceOpt = prevLocationsIndexOpt.map(sentenceIndex - _)
-          val nextLocationsIndexOpt = Range(sentenceIndex + 1, document.sentences.length).find {sentenceIndex =>
-            val tsvRecord = urlSentenceIndexToTsvRecordMap(url, sentenceIndex)
-
-            tsvRecord.sentenceLocations.nonEmpty
-          }
-          val nextLocations = nextLocationsIndexOpt.map { nextLocationsIndex =>
-            val tsvRecord = urlSentenceIndexToTsvRecordMap(url, nextLocationsIndex)
-
-            tsvRecord.sentenceLocations
-          }.getOrElse(Array.empty)
-          val nextDistanceOpt = nextLocationsIndexOpt.map(sentenceIndex - _)
-
-          val causalRelations = if (causal) {
-            val causalMentionGroup = causalMentionGroups(sentenceIndex).sorted
-            val causalRelations = causalMentionGroup.zipWithIndex.map { case (causalMention, causalIndex) =>
-              val causalAttributeCounts = mentionToAttributeCounts(causalMention)
-              assert(causalAttributeCounts.increaseCount == 0)
-              assert(causalAttributeCounts.decreaseCount == 0)
-              assert(causalAttributeCounts.posChangeCount == 0)
-              assert(causalAttributeCounts.negChangeCount == 0)
-
-              // TODO: Keith restart here!
-              val causeMentions = causalMention.arguments("cause")
-              assert(causeMentions.length == 1)
-              val effectMentions = causalMention.arguments("effect")
-              assert(effectMentions.length == 1)
-
-              val causeMention = causeMentions.head
-              val effectMention = effectMentions.head
-
-              val causeText = causeMention.text
-              val cleanCauseText = rawTextToCleanText(causeText)
-              val effectText = effectMention.text
-              val cleanEffectText = rawTextToCleanText(effectText)
-
-              val causeAttributeCounts = mentionToAttributeCounts(causeMention)
-              assert(causeAttributeCounts.negatedCount == 0)
-              val effectAttributeCounts = mentionToAttributeCounts(effectMention)
-              assert(effectAttributeCounts.negatedCount == 0)
-
-              val cause = newCauseOrEffect(cleanCauseText, causeAttributeCounts)
-              val effect = newCauseOrEffect(cleanEffectText, effectAttributeCounts)
-              val relation = Relation(cause, effect)
-              val causalRelation = CausalRelation(
-                causalIndex,
-                0, // negationCount,
-                Array(relation)
-              )
-
-              Array(causalRelation)
-            }
-
-            causalRelations
-          }
-          else Array.empty[CausalRelation]
-
+          val (prevLocations, prevDistanceOpt) = getLocationsAndDistance(sentenceIndex,
+              Range(0, sentenceIndex).reverse, urlSentenceIndexToTsvRecordMap, url)
+          val (nextLocations, nextDistanceOpt) = getLocationsAndDistance(sentenceIndex,
+              Range(sentenceIndex + 1, document.sentences.length), urlSentenceIndexToTsvRecordMap, url)
+          val causalRelations =
+              if (causal) getCausalRelations(causalMentionGroups(sentenceIndex).sorted)
+              else Array.empty[CausalRelation]
           val datasetRecord: DatasetRecord = DatasetRecord(
             datasetName,
             regionName,
@@ -294,7 +285,7 @@ object Step2InputEidos2 extends App with Logging {
             dateOpt,
             jsonRecord.bylineOpt,
             tsvRecord.sentenceIndex,
-            tsvRecord.sentence,
+            cleanText,
             causalRelations,
             tsvRecord.belief,
             tsvRecord.sentimentScoreOpt,
@@ -308,8 +299,7 @@ object Step2InputEidos2 extends App with Logging {
             nextDistanceOpt
           )
 
-            elasticsearchIndexClient.index(datasetRecord)
-          }
+          elasticsearchIndexClient.index(datasetRecord)
         }
       }
       catch {

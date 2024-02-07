@@ -6,6 +6,7 @@ import co.elastic.clients.elasticsearch.indices.{CreateIndexRequest, CreateIndex
 import co.elastic.clients.json.JsonData
 import org.clulab.habitus.elasticsearch.data.DatasetRecord
 import org.clulab.habitus.elasticsearch.utils.Elasticsearch
+import org.elasticsearch.client.RestClient
 
 import java.net.URL
 
@@ -34,10 +35,15 @@ class ElasticsearchIndexClient(val indexName: String, elasticsearchClient: Elast
 
 object ElasticsearchIndexClient {
 
-  def apply(url: URL, credentialsFilename: String, indexName: String): ElasticsearchIndexClient = {
-    val restClient = Elasticsearch.mkRestClient(url, credentialsFilename)
+  def apply(restClient: RestClient, indexName: String): ElasticsearchIndexClient = {
     val elasticsearchClient = Elasticsearch.mkElasticsearchClient(restClient)
 
     new ElasticsearchIndexClient(indexName, elasticsearchClient)
+  }
+
+  def apply(url: URL, credentialsFilename: String, indexName: String): ElasticsearchIndexClient = {
+    val restClient = Elasticsearch.mkRestClient(url, credentialsFilename)
+
+    apply(restClient, indexName)
   }
 }
