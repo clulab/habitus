@@ -17,6 +17,7 @@ import java.io.File
 import java.nio.charset.StandardCharsets
 import scala.collection.JavaConverters.{asJavaIterableConverter, asScalaBufferConverter}
 import scala.collection.mutable.ArrayBuffer
+import scala.io.Source
 
 
 class BeliefProcessor(val processor: Processor,
@@ -188,7 +189,7 @@ object BeliefProcessor {
       new BeliefProcessor(processor, finder, extractor)
     } else {
       // read rules from yml file in resources
-      val source = io.Source.fromURL(getClass.getResource("/beliefs/master.yml"))
+      val source = Source.fromURL(getClass.getResource("/beliefs/master.yml"))
       val rules = source.mkString
       source.close()
       // creates an extractor engine using the rules and the default actions

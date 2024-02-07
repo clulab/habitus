@@ -15,6 +15,7 @@ import org.clulab.wm.eidos.{EidosSystem, SimpleEidos}
 import java.io.File
 import java.nio.charset.StandardCharsets
 import scala.collection.JavaConverters.{asJavaIterableConverter, asScalaBufferConverter}
+import scala.io.Source
 
 
 class InterviewsProcessor(val processor: Processor,
@@ -130,7 +131,7 @@ object InterviewsProcessor {
       new InterviewsProcessor(processor, finder, extractor, causationExtractor)
     } else {
       // read rules from yml file in resources
-      val source = io.Source.fromURL(getClass.getResource("/interviews/master.yml"))
+      val source = Source.fromURL(getClass.getResource("/interviews/master.yml"))
       val rules = source.mkString
       source.close()
       // creates an extractor engine using the rules and the default actions

@@ -1,0 +1,6 @@
+PUT habitus
+{
+  "settings": {
+    "index.query.default_field": "sentence"
+  }
+}
