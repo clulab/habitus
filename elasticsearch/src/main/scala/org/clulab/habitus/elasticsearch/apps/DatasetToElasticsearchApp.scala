@@ -10,7 +10,7 @@ import java.net.URL
 import scala.util.Using
 
 object DatasetToElasticsearchApp extends App {
-  val credentialsFilename = "../../credentials/credentials.properties"
+  val credentialsFilename = "../../credentials/elasticsearch-credentials.properties"
   val indexName = "habitus"
   val url = new URL("http://localhost:9200")
   // val url = new URL("https://elasticsearch.keithalcock.com")

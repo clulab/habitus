@@ -13,6 +13,8 @@ lazy val scraper = project
 
 lazy val elasticsearch = project
 
+lazy val sql = project
+
 pomIncludeRepository := { (repo: MavenRepository) =>
   repo.root.startsWith("https://artifactory.clulab.org")
 }
