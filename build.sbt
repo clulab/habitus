@@ -5,7 +5,7 @@ organization := "org.clulab"
 scalaVersion := "2.12.15"
 
 lazy val core: Project = (project in file("."))
-    .dependsOn(elasticsearch)
+    .dependsOn(elasticsearch, sql)
     .enablePlugins(JavaAppPackaging, DockerPlugin)
 
 // NOTE: The scraper requires Java 11+ to run!

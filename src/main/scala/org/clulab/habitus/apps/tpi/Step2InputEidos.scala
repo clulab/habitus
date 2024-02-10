@@ -1,6 +1,7 @@
 package org.clulab.habitus.apps.tpi
 
 import ai.lum.common.FileUtils._
+import org.clulab.habitus.apps.utils.{AttributeCounts, JsonRecord}
 import org.clulab.odin.{EventMention, Mention}
 import org.clulab.processors.{Document, Sentence}
 import org.clulab.utils.StringUtils
@@ -13,11 +14,6 @@ import org.json4s.jackson.JsonMethods
 
 import java.io.File
 import scala.util.Using
-
-// See ArticleScrape
-case class JsonRecord(url: String, titleOpt: Option[String], datelineOpt: Option[String], bylineOpt: Option[String], text: String)
-
-case class AttributeCounts(increaseCount: Int, decreaseCount: Int, posChangeCount: Int, negChangeCount: Int, negatedCount: Int)
 
 object Step2InputEidos extends App with Logging {
   implicit val formats: DefaultFormats.type = org.json4s.DefaultFormats

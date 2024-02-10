@@ -1,9 +1,8 @@
-package org.clulab.habitus.apps.elasticsearch
+package org.clulab.habitus.apps.mysql
 
 import ai.lum.common.FileUtils._
 import org.clulab.habitus.apps.utils.{AttributeCounts, DateString, JsonRecord}
-import org.clulab.habitus.elasticsearch.ElasticsearchIndexClient
-import org.clulab.habitus.elasticsearch.data.{CausalRelation, CauseOrEffect, DatasetRecord, LatLon, Location, Relation}
+import org.clulab.habitus.elasticsearch.data.{CausalRelation, CauseOrEffect, LatLon, Location, Relation}
 import org.clulab.habitus.elasticsearch.utils.Elasticsearch
 import org.clulab.odin.{EventMention, Mention}
 import org.clulab.processors.{Document, Sentence}
@@ -11,7 +10,7 @@ import org.clulab.utils.{Sourcer, StringUtils}
 import org.clulab.wm.eidos.attachments.{Decrease, Increase, NegChange, Negation, PosChange}
 import org.clulab.wm.eidos.document.AnnotatedDocument
 import org.clulab.wm.eidos.serialization.jsonld.{JLDDeserializer, JLDRelationCausation}
-import org.clulab.wm.eidoscommon.utils.{FileEditor, FileUtils, Logging, TsvReader, TsvWriter}
+import org.clulab.wm.eidoscommon.utils._
 import org.json4s.DefaultFormats
 import org.json4s.jackson.JsonMethods
 
@@ -34,10 +33,9 @@ object Step2InputEidos2 extends App with Logging {
   val contextWindow = 3
   val baseDirectory = "../corpora/uganda-mining"
   val inputFilename = "../corpora/uganda-mining/uganda-2.tsv"
-  val credentialsFilename = "../credentials/credentials.properties"
+  val credentialsFilename = "../credentials/mysql-credentials.properties"
   val deserializer = new JLDDeserializer()
-  val url = new URL("http://localhost:9200")
-  // val url = new URL("https://elasticsearch.keithalcock.com")
+  val url = s"jdbc:mysql://localhost:3306/$indexName?serverTimezone=UTC"
   val indexName = "habitus"
   val datasetName = "uganda-mining.tsv"
   val regionName = "uganda"

@@ -51,31 +51,6 @@ case class CausalRelation(
   }
 }
 
-case class LatLon(lat: Float, lon: Float) {
-
-  def serialize(): HashMap[String, AnyRef] = {
-    val map = new HashMap[String, AnyRef]()
-
-    map.put("lat", lat.asInstanceOf[JFloat])
-    map.put("lon", lon.asInstanceOf[JFloat])
-    map
-  }
-}
-
-case class Location(
-  name: String,
-  latLonOpt: Option[LatLon]
-) {
-
-  def serialize(): HashMap[String, AnyRef] = {
-    val map = new HashMap[String, AnyRef]()
-
-    map.put("name", name)
-    latLonOpt.foreach { location => map.put("location", location.serialize()) }
-    map
-  }
-}
-
 case class DatasetRecord(
   dataset: String,
   region: String,
