@@ -48,9 +48,10 @@ CREATE TABLE IF NOT EXISTS `document` (
 	`url` VARCHAR(255) COLLATE utf8_bin NULL DEFAULT NULL,
 	`title` VARCHAR(255) COLLATE utf8_bin NULL DEFAULT NULL,
 	`dateline` VARCHAR(45) COLLATE utf8_bin NULL DEFAULT NULL,
-	`byline` VARCHAR(45) COLLATE utf8_bin NULL DEFAULT NULL,
+	`byline` VARCHAR(63) COLLATE utf8_bin NULL DEFAULT NULL,
 	`date` DATETIME NULL DEFAULT NULL,
-    FOREIGN KEY (`datasetId`) REFERENCES `dataset`(`id`)
+    FOREIGN KEY (`datasetId`) REFERENCES `dataset`(`id`),
+    CONSTRAINT unique_document UNIQUE (datasetId, url)
 );
 -- -----------------------------------------------------
 -- Table `documentTerms`
