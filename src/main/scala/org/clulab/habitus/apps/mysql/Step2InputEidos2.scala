@@ -202,9 +202,26 @@ object Step2InputEidos2 extends App with Logging {
     val resultSet = preparedStatement.executeQuery()
     val datasetId =
         if (resultSet.next()) resultSet.getInt(1)
-        else throw new RuntimeException("Couldn't get regionId!")
+        else throw new RuntimeException("Couldn't get datasetId!")
 
     datasetId
+  }
+
+  def getRegionId(connection: Connection, regionName: String): Int = {
+    val preparedStatement = {
+      val preparedStatement = connection.prepareStatement(
+        "SELECT id FROM region WHERE name = ? LIMIT 1"
+      )
+
+      preparedStatement.setString(1, regionName)
+      preparedStatement
+    }
+    val resultSet = preparedStatement.executeQuery()
+    val regionId =
+      if (resultSet.next()) resultSet.getInt(1)
+      else throw new RuntimeException("Couldn't get regionId!")
+
+    regionId
   }
 
   def getDocumentId(connection: Connection, datasetId: Int, datasetRecord: DatasetRecord): Int = {
@@ -329,8 +346,49 @@ object Step2InputEidos2 extends App with Logging {
     newSentenceIdOpt
   }
 
+  def setLocation(connection: Connection, sentenceId: Int, regionId: Int, location: Location): Unit = {
+    val locationId = {
+      val preparedStatement = {
+        val preparedStatement = connection.prepareStatement(
+          "SELECT id FROM geo WHERE regionId = ? AND `name` = ? LIMIT 1"
+        )
+
+        preparedStatement.setInt(1, regionId)
+        preparedStatement.setString(2, location.name)
+        preparedStatement
+      }
+
+      val resultSet = preparedStatement.executeQuery()
+      val locationId =
+          if (resultSet.next) resultSet.getInt(1)
+          else throw new RuntimeException("Couldn't get locationId!")
+
+      locationId
+    }
+
+    {
+      val preparedStatement = {
+        val preparedStatement = connection.prepareStatement(
+          "INSERT IGNORE INTO sentenceLocations (sentenceId, locationId) " +
+          "VALUES (?, ?)"
+        )
+
+        preparedStatement.setInt(1, sentenceId)
+        preparedStatement.setInt(2, locationId)
+        preparedStatement
+      }
+
+      preparedStatement.execute()
+    }
+  }
+
+  def setCausalRelation(connection: Connection, sentenceId: Int, causalRelation: CausalRelation): Unit = {
+
+  }
+
   def runIndex(connection: Connection, datasetRecord: DatasetRecord): Unit = {
     try {
+      val regionId = getRegionId(connection, regionName)
       val datasetId = getDatasetId(connection)
       val documentId = getDocumentId(connection, datasetId, datasetRecord)
 
@@ -341,7 +399,12 @@ object Step2InputEidos2 extends App with Logging {
       val sentenceIdOpt = getNewSentenceIdOpt(connection, datasetId, datasetRecord)
 
       sentenceIdOpt.foreach { sentenceId =>
-        // Write the locations and causes and effects
+        datasetRecord.sentenceLocations.foreach { location =>
+          setLocation(connection, sentenceId, regionId, location)
+        }
+        datasetRecord.causalRelations.foreach { causalRelation =>
+          setCausalRelation(connection, sentenceId, causalRelation)
+        }
 
       }
 

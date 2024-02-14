@@ -76,6 +76,16 @@ CREATE TABLE IF NOT EXISTS `sentence` (
     FOREIGN KEY (`documentId`) REFERENCES `document`(`id`),
     CONSTRAINT `unique_sentence` UNIQUE (`documentId`, `index`)
 );
+-- -----------------------------------------------------
+-- Table `sentenceLocations`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `sentenceLocations` (
+	`sentenceId` INT NOT NULL,
+	`locationId` INT NOT NULL,
+    FOREIGN KEY (`sentenceId`) REFERENCES `sentence`(`id`),
+    FOREIGN KEY (`locationId`) REFERENCES `geo`(`id`),
+    CONSTRAINT `unique_sentence_location` UNIQUE (`sentenceId`, `locationId`)
+);
 
 
 
