@@ -51,7 +51,7 @@ CREATE TABLE IF NOT EXISTS `document` (
 	`byline` VARCHAR(63) COLLATE utf8_bin NULL DEFAULT NULL,
 	`date` DATETIME NULL DEFAULT NULL,
     FOREIGN KEY (`datasetId`) REFERENCES `dataset`(`id`),
-    CONSTRAINT unique_document UNIQUE (datasetId, url)
+    CONSTRAINT `unique_document` UNIQUE (`datasetId`, `url`)
 );
 -- -----------------------------------------------------
 -- Table `documentTerms`
@@ -60,13 +60,22 @@ CREATE TABLE IF NOT EXISTS `documentTerms` (
 	`documentId` INT,
 	`termId` INT,
     FOREIGN KEY (`documentId`) REFERENCES `document`(`id`),
-    FOREIGN KEY (`termId`) REFERENCES `term`(`id`)
+    FOREIGN KEY (`termId`) REFERENCES `term`(`id`),
+    CONSTRAINT `unique_document_term` UNIQUE (`documentId`, `termId`)
 );
-
-
-
-
-
+-- -----------------------------------------------------
+-- Table `sentence`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `sentence` (
+	`id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`documentId` INT,
+    `index` INT NOT NULL,
+    `text` VARCHAR(1024) COLLATE utf8_bin NOT NULL,
+    `isBelief` BOOL NOT NULL,
+    `sentiment` FLOAT NULL DEFAULT NULL,
+    FOREIGN KEY (`documentId`) REFERENCES `document`(`id`),
+    CONSTRAINT `unique_sentence` UNIQUE (`documentId`, `index`)
+);
 
 
 
