@@ -34,6 +34,7 @@ case class Relation(cause: CauseOrEffect, effect: CauseOrEffect) {
   }
 }
 
+// TODO: There should only be one relation here.
 case class CausalRelation(
   index: Int,
   negationCount: Int,

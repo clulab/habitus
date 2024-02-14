@@ -81,13 +81,47 @@ CREATE TABLE IF NOT EXISTS `sentence` (
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `sentenceLocations` (
 	`sentenceId` INT NOT NULL,
-	`locationId` INT NOT NULL,
+	`name` VARCHAR(45) COLLATE utf8_bin NOT NULL,
+	`lat` FLOAT NULL DEFAULT NULL,
+	`lon` FLOAT NULL DEFAULT NULL,
     FOREIGN KEY (`sentenceId`) REFERENCES `sentence`(`id`),
-    FOREIGN KEY (`locationId`) REFERENCES `geo`(`id`),
-    CONSTRAINT `unique_sentence_location` UNIQUE (`sentenceId`, `locationId`)
+    CONSTRAINT `unique_sentence_location` UNIQUE (`sentenceId`, `name`)
 );
+-- -----------------------------------------------------
+-- Table `sentenceCauseEffectPairs`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `sentenceCausalRelations` (
+	`id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`sentenceId` INT NOT NULL,
+    `index` INT NOT NULL,
+	`negationCount` INT NOT NULL,
 
 
+
+    FOREIGN KEY (`sentenceId`) REFERENCES `sentence`(`id`),
+    CONSTRAINT `unique_sentence_causal_relation` UNIQUE (`sentenceId`, `index`)
+);
+-- -----------------------------------------------------
+-- Table `causeEffect`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `causeEffect` (
+	`id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    `sentenceCausalRelationsId` INT,
+
+    `causeText` VARCHAR(1024) COLLATE utf8_bin NOT NULL,
+    `causeIncCount` INT NOT NULL,
+	`causeDecCount` INT NOT NULL,
+	`causePosCount` INT NOT NULL,
+	`causeNegCOUNT` INT NOT NULL,
+
+    `effectText` VARCHAR(1024) COLLATE utf8_bin NOT NULL,
+    `effectIncCount` INT NOT NULL,
+	`effectDecCount` INT NOT NULL,
+	`effectPosCount` INT NOT NULL,
+	`effectNegCOUNT` INT NOT NULL,
+
+    FOREIGN KEY (`sentenceCausalRelationsId`) REFERENCES `sentenceCausalRelations`(`id`),
+);
 
 -- -----------------------------------------------------
 -- Table `book`
