@@ -193,7 +193,7 @@ object Step2InputEidos2 extends App with Logging {
   def getDatasetId(connection: Connection): Int = {
     val preparedStatement = {
       val preparedStatement = connection.prepareStatement(
-        "SELECT id FROM dataset WHERE name = ? LIMIT 1"
+        "SELECT `id` FROM `dataset` WHERE `name` = ? LIMIT 1"
       )
 
       preparedStatement.setString(1, datasetName)
@@ -210,7 +210,7 @@ object Step2InputEidos2 extends App with Logging {
   def getRegionId(connection: Connection, regionName: String): Int = {
     val preparedStatement = {
       val preparedStatement = connection.prepareStatement(
-        "SELECT id FROM region WHERE name = ? LIMIT 1"
+        "SELECT `id` FROM `region` WHERE `name` = ? LIMIT 1"
       )
 
       preparedStatement.setString(1, regionName)
@@ -227,7 +227,7 @@ object Step2InputEidos2 extends App with Logging {
   def getDocumentId(connection: Connection, datasetId: Int, datasetRecord: DatasetRecord): Int = {
     val documentIdOpt = {
       val preparedStatement = connection.prepareStatement(
-        "SELECT id FROM document WHERE datasetId = ? AND url = ? LIMIT 1"
+        "SELECT `id` FROM `document` WHERE `datasetId` = ? AND `url` = ? LIMIT 1"
       )
 
       preparedStatement.setInt(1, datasetId)
@@ -243,7 +243,7 @@ object Step2InputEidos2 extends App with Logging {
     val documentId = documentIdOpt.getOrElse {
       val preparedStatement = {
         val preparedStatement = connection.prepareStatement(
-          "INSERT INTO document (datasetId, url, title, dateline, byline, date) " +
+          "INSERT INTO `document` (`datasetId`, `url`, `title`, `dateline`, `byline`, `date`) " +
           "VALUES (?, ?, ?, ?, ?, ?)", Statement.RETURN_GENERATED_KEYS
         )
         val localDateTimeOpt = datasetRecord.dateOpt.map(LocalDateTime.parse)
@@ -273,7 +273,7 @@ object Step2InputEidos2 extends App with Logging {
     val termId = {
       val preparedStatement = {
         val preparedStatement = connection.prepareStatement(
-          "SELECT id FROM term WHERE name = ? LIMIT 1"
+          "SELECT `id` FROM `term` WHERE `name` = ? LIMIT 1"
         )
 
         preparedStatement.setString(1, term)
@@ -289,11 +289,11 @@ object Step2InputEidos2 extends App with Logging {
     }
     val preparedStatement = {
       val preparedStatement = connection.prepareStatement(
-        "INSERT IGNORE INTO documentTerms (documentId, termId) VALUES (?, ?)"
+        "INSERT IGNORE INTO `documentTerms` (`termId`, `documentId`) VALUES (?, ?)"
       )
 
-      preparedStatement.setInt(1, documentId)
-      preparedStatement.setInt(2, termId)
+      preparedStatement.setInt(1, termId)
+      preparedStatement.setInt(2, documentId)
       preparedStatement
     }
 
@@ -304,7 +304,7 @@ object Step2InputEidos2 extends App with Logging {
   def getNewSentenceIdOpt(connection: Connection, documentId: Int, datasetRecord: DatasetRecord): Option[Int] = {
     val sentenceIdOpt = {
       val preparedStatement = connection.prepareStatement(
-        "SELECT id FROM sentence WHERE documentId = ? AND `index` = ? LIMIT 1"
+        "SELECT `id` FROM `sentence` WHERE `documentId` = ? AND `index` = ? LIMIT 1"
       )
 
       preparedStatement.setInt(1, documentId)
@@ -320,7 +320,7 @@ object Step2InputEidos2 extends App with Logging {
     val newSentenceIdOpt = if (sentenceIdOpt.isDefined) None else {
       val preparedStatement = {
         val preparedStatement = connection.prepareStatement(
-          "INSERT INTO sentence (documentId, `index`, `text`, isBelief, sentiment) " +
+          "INSERT INTO `sentence` (`documentId`, `index`, `text`, `isBelief`, `sentiment`) " +
           "VALUES (?, ?, ?, ?, ?)", Statement.RETURN_GENERATED_KEYS
         )
 
@@ -331,7 +331,7 @@ object Step2InputEidos2 extends App with Logging {
         if (datasetRecord.isBelief)
           preparedStatement.setFloat(5, datasetRecord.sentimentOpt.get)
         else
-          preparedStatement.setObject(5, null)
+          preparedStatement.setFloat(5, -1f)
         preparedStatement
       }
       preparedStatement.execute()
@@ -349,7 +349,7 @@ object Step2InputEidos2 extends App with Logging {
   def setLocation(connection: Connection, sentenceId: Int, location: Location): Unit = {
     val preparedStatement = {
       val preparedStatement = connection.prepareStatement(
-        "INSERT IGNORE INTO sentenceLocations (sentenceId, `name`, lat, lon) " +
+        "INSERT IGNORE INTO `sentenceLocations` (`sentenceId`, `name`, `lat`, `lon`) " +
         "VALUES (?, ?, ?, ?)"
       )
 
@@ -369,13 +369,44 @@ object Step2InputEidos2 extends App with Logging {
     preparedStatement.execute()
   }
 
-  def setCausalRelation(connection: Connection, sentenceId: Int, causalRelation: CausalRelation): Unit = {
+  def setCausalRelation(connection: Connection, sentenceId: Int, causalRelation: CausalRelation, index: Int): Unit = {
+    val preparedStatement = {
+      val preparedStatement = connection.prepareStatement(
+        "INSERT IGNORE INTO `sentenceCausalRelations` (`sentenceId`, `index`, `negationCount`, " +
+            " `causeText`,  `causeIncCount`,  `causeDecCount`,  `causePosCount`,  `causeNegCount`, " +
+            "`effectText`, `effectIncCount`, `effectDecCount`, `effectPosCount`, `effectNegCount`)" +
+        "VALUES (?, ?, ?, " + "?, ?, ?, ?, ?, " + "?, ?, ?, ?, ?)"
+      )
+      assert(causalRelation.relations.length == 1)
 
+      val  cause = causalRelation.relations.head.cause
+      val effect = causalRelation.relations.head.effect
+
+      preparedStatement.setInt(1, sentenceId)
+      preparedStatement.setInt(2, index)
+      preparedStatement.setInt(3, causalRelation.negationCount)
+
+      preparedStatement.setString(4, cause.text)
+      preparedStatement.setInt(5, cause.incCount)
+      preparedStatement.setInt(6, cause.decCount)
+      preparedStatement.setInt(7, cause.posCount)
+      preparedStatement.setInt(8, cause.negCount)
+
+      preparedStatement.setString(9, effect.text)
+      preparedStatement.setInt(10, effect.incCount)
+      preparedStatement.setInt(11, effect.decCount)
+      preparedStatement.setInt(12, effect.posCount)
+      preparedStatement.setInt(13, effect.negCount)
+
+      preparedStatement
+    }
+
+    preparedStatement.execute()
   }
 
   def runIndex(connection: Connection, datasetRecord: DatasetRecord): Unit = {
     try {
-      val regionId = getRegionId(connection, regionName)
+      // val regionId = getRegionId(connection, regionName)
       val datasetId = getDatasetId(connection)
       val documentId = getDocumentId(connection, datasetId, datasetRecord)
 
@@ -389,12 +420,9 @@ object Step2InputEidos2 extends App with Logging {
         datasetRecord.sentenceLocations.foreach { location =>
           setLocation(connection, sentenceId, location)
         }
-        datasetRecord.causalRelations.foreach { causalRelation =>
-          // do need to get the ID out
-
-          setCausalRelation(connection, sentenceId, causalRelation)
+        datasetRecord.causalRelations.zipWithIndex.foreach { case (causalRelation, index) =>
+          setCausalRelation(connection, sentenceId, causalRelation, index)
         }
-
       }
 
       connection.commit()
