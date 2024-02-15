@@ -19,18 +19,19 @@ class VectorSearcher():
             "num_candidates": k
         }
         # The maximum value for size is limited by the index's index.max_result_window.
+        # If more results are desired, they need to be paged.
         result = self.elasticsearch.search(index=index, knn=query, source=False, from_=0, size=k)
         hits = result.body["hits"]["hits"]
         ids_and_scores = [(hit["_id"], hit["_score"]) for hit in hits]
-        print(result)
         return ids_and_scores
 
 def run(username, password, k, text):
-    url = "http://localhost:9200/"
+    url = "https://elasticsearch.habitus.clulab.org/"
     model_name = "all-MiniLM-L6-v2"
     vector_searcher = VectorSearcher(url, username, password, model_name)
     ids_and_scores = vector_searcher.search(k, text)
-    print(ids_and_scores)
+    for index, (id, score) in enumerate(ids_and_scores):
+        print(index, id, score)
 
 def get_args():
     argument_parser = ArgumentParser()
