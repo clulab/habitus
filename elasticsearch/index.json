@@ -2,6 +2,7 @@ PUT habitus
 {
   "settings": {
     "index.query.default_field": "sentence",
-    "index.number_of_replicas": 0
+    "index.number_of_replicas": 0,
+    "index.max_result_window": 10000
   }
 }

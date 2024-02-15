@@ -18,7 +18,8 @@ class VectorSearcher():
             "k": k,
             "num_candidates": k
         }
-        result = self.elasticsearch.search(index=index, knn=query, source=False)
+        # The maximum value for size is limited by the index's index.max_result_window.
+        result = self.elasticsearch.search(index=index, knn=query, source=False, from_=0, size=k)
         hits = result.body["hits"]["hits"]
         ids_and_scores = [(hit["_id"], hit["_score"]) for hit in hits]
         print(result)
