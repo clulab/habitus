@@ -33,7 +33,7 @@
     "chatVector": {
       "type": "dense_vector",
       "dims": 384,
-      "similarity": "l2_norm"
+      "similarity": "dot_product"
     },
     "causalRelations": {
       "type": "nested",

@@ -15,8 +15,8 @@ def get_in_and_out() -> Tuple[str, str]:
 
 if __name__ == "__main__":
     vector_model_name: str = "all-MiniLM-L6-v2"
-    input_file_name: str = "../corpora/uganda-mining/uganda.tsv"
-    output_file_name: str = "../corpora/uganda-mining/uganda-vectors.tsv"
+    input_file_name: str = "../corpora/uganda-mining/uganda-2.tsv"
+    output_file_name: str = "../corpora/uganda-mining/uganda-2-vectors.tsv"
     # input_file_name, output_file_name = get_in_and_out()
     pipeline = Pipeline(
         VectorInputStage(input_file_name),

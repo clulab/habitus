@@ -27,20 +27,22 @@ object Step2InputEidos2 extends App with Logging {
     belief: Boolean,
     sentimentScoreOpt: Option[Float],
     sentenceLocations: Array[Location],
-    contextLocations: Array[Location]
+    contextLocations: Array[Location],
+    vector: Array[Float]
   )
 
   implicit val formats: DefaultFormats.type = org.json4s.DefaultFormats
   val contextWindow = 3
   val baseDirectory = "../corpora/uganda-mining"
-  val inputFilename = "../corpora/uganda-mining/uganda-2.tsv"
-  val credentialsFilename = "../credentials/credentials.properties"
+  val inputFilename = "../corpora/uganda-mining/uganda-2-vectors.tsv"
+  val credentialsFilename = "../credentials/elasticsearch-credentials.properties"
   val deserializer = new JLDDeserializer()
   val url = new URL("http://localhost:9200")
   // val url = new URL("https://elasticsearch.keithalcock.com")
-  val indexName = "habitus"
+  val indexName = "habitus2"
   val datasetName = "uganda-mining.tsv"
   val regionName = "uganda"
+  val alreadyNormalized = true
 
   def jsonFileToJsonld(jsonFile: File): File =
       FileEditor(jsonFile).setExt("jsonld").get
@@ -152,6 +154,24 @@ object Step2InputEidos2 extends App with Logging {
     }
   }
 
+  def parseVector(vectorString: String): Array[Float] = {
+    val values = vectorString.split(", ")
+    val floats = values.map(_.toFloat)
+
+    floats
+  }
+
+  def normalize(floats: Array[Float]): Array[Float] = {
+    if (alreadyNormalized) floats
+    else {
+      val sumSquare = floats.foldLeft(0f) { case (sum, float) => sum + float * float }
+      val divisor = math.sqrt(sumSquare)
+      val normalized = floats.map { float => (float / divisor).toFloat }
+
+      normalized
+    }
+  }
+
   def getCausalRelations(causalMentionGroup: Seq[Mention]): Array[CausalRelation] = {
     val causalRelations = causalMentionGroup.zipWithIndex.map { case (causalMention, causalIndex) =>
       val causalAttributeCounts = mentionToAttributeCounts(causalMention)
@@ -235,14 +255,15 @@ object Step2InputEidos2 extends App with Logging {
     val tsvReader = new TsvReader()
 
     lines.map { line =>
-      val Array(url, sentenceIndexString, sentence, beliefString, sentimentScore, sentenceLocationsString, contextLocationsString) = tsvReader.readln(line, 7)
+      val Array(url, sentenceIndexString, sentence, beliefString, sentimentScore, sentenceLocationsString, contextLocationsString, vectorString) = tsvReader.readln(line, 8)
       val sentenceIndex = sentenceIndexString.toInt
       val belief = beliefString == "True"
       val sentimentScoreOpt = if (sentimentScore.isEmpty) None else Some(sentimentScore.toFloat)
       val sentenceLocations = parseLocations(sentenceLocationsString)
       val contextLocations = parseLocations(contextLocationsString)
+      val vector = normalize(parseVector(vectorString))
 
-      (url, sentenceIndex) -> new LocalTsvRecord(sentenceIndex, sentence, belief, sentimentScoreOpt, sentenceLocations, contextLocations)
+      (url, sentenceIndex) -> new LocalTsvRecord(sentenceIndex, sentence, belief, sentimentScoreOpt, sentenceLocations, contextLocations, vector)
     }.toMap
   }
   val restClient = Elasticsearch.mkRestClient(url, credentialsFilename)
@@ -305,7 +326,8 @@ object Step2InputEidos2 extends App with Logging {
             prevLocations,
             prevDistanceOpt,
             nextLocations,
-            nextDistanceOpt
+            nextDistanceOpt,
+            tsvRecord.vector
           )
 
           elasticsearchIndexClient.index(datasetRecord)

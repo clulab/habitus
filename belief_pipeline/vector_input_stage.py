@@ -12,7 +12,10 @@ class VectorInputStage(InputStage):
         data_frame = pandas.read_csv(self.file_name, sep="\t", encoding="utf-8", na_values=[""], keep_default_na=False, dtype={
             "url": str,
             "sentenceIndex": int,
-            "sentence": str
+            "sentence": str,
+            "belief": bool,
+            "sent_locs": str,
+            "context_locs": str
         })
         return data_frame
 
