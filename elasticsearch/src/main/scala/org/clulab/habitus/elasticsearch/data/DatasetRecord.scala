@@ -73,7 +73,8 @@ case class DatasetRecord(
   prevLocations: Array[Location],
   prevDistanceOpt: Option[Int],
   nextLocations: Array[Location],
-  nextDistanceOpt: Option[Int]
+  nextDistanceOpt: Option[Int],
+  vector: Array[Float]
 ) {
 
   // See advice at https://discuss.elastic.co/t/ways-to-build-json-doc-in-es8-java-api-client/314459.
@@ -109,6 +110,7 @@ case class DatasetRecord(
     if (nextLocations.nonEmpty)
       map.put("nextLocations", nextLocations.map(_.serialize()))
     nextDistanceOpt.foreach { nextDistance => map.put("nextDistance", nextDistance.asInstanceOf[JInteger]) }
+    map.put("chatVector", vector)
     map
   }
 }
@@ -250,7 +252,8 @@ object DatasetRecord {
           latLonOpt = Some(LatLon(15f, 16f))
         )
       ),
-      nextDistanceOpt = Some(5)
+      nextDistanceOpt = Some(5),
+      vector = Array(0f, 1f, 2f)
     )
 
     datasetRecord

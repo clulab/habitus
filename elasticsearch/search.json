@@ -3,7 +3,7 @@ GET habitus/_search
 GET habitus/_search
 {
   "query": {
-    "match": { "region", "uganda" }
+    "match": { "region":  "uganda" }
   }
 }
 

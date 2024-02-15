@@ -550,7 +550,8 @@ object Step2InputEidos2 extends App with Logging {
             prevLocations,
             prevDistanceOpt,
             nextLocations,
-            nextDistanceOpt
+            nextDistanceOpt,
+            null // TODO
           )
 
           runIndex(connection, datasetRecord)
