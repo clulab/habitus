@@ -334,7 +334,7 @@ object Step2InputEidos2 extends App with Logging {
         if (datasetRecord.isBelief)
           preparedStatement.setFloat(5, datasetRecord.sentimentOpt.get)
         else
-          preparedStatement.setFloat(5, -1f)
+          preparedStatement.setObject(5, null)
         preparedStatement
       }
       preparedStatement.execute()
