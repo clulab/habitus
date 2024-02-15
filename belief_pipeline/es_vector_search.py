@@ -13,20 +13,22 @@ class VectorSearcher():
         # This vector is assumed to be normalized.
         vector = self.sentence_transformer.encode(text).tolist()
         query = {
+            "field": "chatVector",
             "query_vector": vector,
             "k": k,
             "num_candidates": k
         }
-        print(query)
         result = self.elasticsearch.knn_search(index=index, knn=query, source=False)
+        ids_and_scores = [(hit._id, hit._score) for hit in result["hits"]["hits"]]
         print(result)
+        return ids_and_scores
 
 def run(username, password, k, text):
     url = "http://localhost:9200/"
     model_name = "all-MiniLM-L6-v2"
     vector_searcher = VectorSearcher(url, username, password, model_name)
-    matches = vector_searcher.search(k, text)
-    return matches
+    ids_and_scores = vector_searcher.search(k, text)
+    print(ids_and_scores)
 
 def get_args():
     argument_parser = ArgumentParser()
