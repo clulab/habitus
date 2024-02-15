@@ -34,6 +34,7 @@ case class Relation(cause: CauseOrEffect, effect: CauseOrEffect) {
   }
 }
 
+// TODO: There should only be one relation here.
 case class CausalRelation(
   index: Int,
   negationCount: Int,
@@ -47,31 +48,6 @@ case class CausalRelation(
     map.put("negationCount", index.asInstanceOf[JInteger])
     if (relations.nonEmpty)
       map.put("relations", relations.map(_.serialize()))
-    map
-  }
-}
-
-case class LatLon(lat: Float, lon: Float) {
-
-  def serialize(): HashMap[String, AnyRef] = {
-    val map = new HashMap[String, AnyRef]()
-
-    map.put("lat", lat.asInstanceOf[JFloat])
-    map.put("lon", lon.asInstanceOf[JFloat])
-    map
-  }
-}
-
-case class Location(
-  name: String,
-  latLonOpt: Option[LatLon]
-) {
-
-  def serialize(): HashMap[String, AnyRef] = {
-    val map = new HashMap[String, AnyRef]()
-
-    map.put("name", name)
-    latLonOpt.foreach { location => map.put("location", location.serialize()) }
     map
   }
 }

@@ -5,13 +5,15 @@ organization := "org.clulab"
 scalaVersion := "2.12.15"
 
 lazy val core: Project = (project in file("."))
-    .dependsOn(elasticsearch)
+    .dependsOn(elasticsearch, sql)
     .enablePlugins(JavaAppPackaging, DockerPlugin)
 
 // NOTE: The scraper requires Java 11+ to run!
 lazy val scraper = project
 
 lazy val elasticsearch = project
+
+lazy val sql = project
 
 pomIncludeRepository := { (repo: MavenRepository) =>
   repo.root.startsWith("https://artifactory.clulab.org")
