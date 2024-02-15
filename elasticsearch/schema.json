@@ -30,6 +30,11 @@
     "sentence": {
       "type": "text"
     },
+    "chatVector": {
+      "type": "dense_vector",
+      "dims": 384,
+      "similarity": "l2_norm"
+    },
     "causalRelations": {
       "type": "nested",
       "properties": {
