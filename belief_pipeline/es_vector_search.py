@@ -18,8 +18,9 @@ class VectorSearcher():
             "k": k,
             "num_candidates": k
         }
-        result = self.elasticsearch.knn_search(index=index, knn=query, source=False)
-        ids_and_scores = [(hit._id, hit._score) for hit in result["hits"]["hits"]]
+        result = self.elasticsearch.search(index=index, knn=query, source=False)
+        hits = result.body["hits"]["hits"]
+        ids_and_scores = [(hit["_id"], hit["_score"]) for hit in hits]
         print(result)
         return ids_and_scores
 
