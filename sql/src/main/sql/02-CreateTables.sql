@@ -73,8 +73,8 @@ CREATE TABLE IF NOT EXISTS `sentence` (
     `text` VARCHAR(1024) COLLATE utf8_bin NOT NULL,
     `isBelief` BOOL NOT NULL,
     `sentiment` FLOAT NULL DEFAULT NULL,
-    FOREIGN KEY (`documentId`) REFERENCES `document`(`id`) -- ,
-    -- CONSTRAINT `unique_sentence` UNIQUE (`documentId`, `index`)
+    FOREIGN KEY (`documentId`) REFERENCES `document`(`id`),
+    CONSTRAINT `unique_sentence` UNIQUE (`documentId`, `index`)
 );
 -- -----------------------------------------------------
 -- Table `sentenceLocations`
