@@ -130,7 +130,10 @@ object Step2InputEidos2 extends App with Logging {
   def parseLocations(locationString: String): Array[Location] = {
     if (locationString.isEmpty) Array.empty
     else {
-      val locations = locationString.split(')').map { nameAndLatLon =>
+      val locations = locationString.split(')').map { commaAndNameAndLatLon =>
+        val trimmedCommaAndNameAndLatLon = commaAndNameAndLatLon.trim
+        val toDrop = if (trimmedCommaAndNameAndLatLon.startsWith(",")) 1 else 0
+        val nameAndLatLon = trimmedCommaAndNameAndLatLon.drop(toDrop)
         val Array(name, latLon) = nameAndLatLon.split('(').map(_.trim)
         val Array(latString, lonString) = latLon.split(",").map(_.trim)
         // Sometimes we have NaN for these.  We know it's a place, but not where.
