@@ -44,47 +44,42 @@
         "negationCount": {
           "type": "integer"
         },
-        "relations": {
+        "cause": {
           "type": "nested",
           "properties": {
-            "cause": {
-              "type": "nested",
-              "properties": {
-                "text": {
-                  "type": "text"
-                },
-                "incCount": {
-                  "type": "integer"
-                },
-                "decCount": {
-                  "type": "integer"
-                },
-                "posCount": {
-                  "type": "integer"
-                },
-                "negCount": {
-                  "type": "integer"
-                }
-              }
+            "text": {
+              "type": "text"
             },
-            "effect": {
-              "type": "nested",
-              "properties": {
-                "text": {
-                  "type": "text"
-                },
-                "incCount": {
-                  "type": "integer"
-                },
-                "decCount": {
-                  "type": "integer"
-                },
-                "posCount": {
-                  "type": "integer"
-                },
-                "negCount": {
-                  "type": "integer"
-                }
+            "incCount": {
+              "type": "integer"
+            },
+            "decCount": {
+              "type": "integer"
+            },
+            "posCount": {
+              "type": "integer"
+            },
+            "negCount": {
+              "type": "integer"
+            }
+          },
+          "effect": {
+            "type": "nested",
+            "properties": {
+              "text": {
+                "type": "text"
+              },
+              "incCount": {
+                "type": "integer"
+              },
+              "decCount": {
+                "type": "integer"
+              },
+              "posCount": {
+                "type": "integer"
+              },
+              "negCount": {
+                "type": "integer"
               }
             }
           }

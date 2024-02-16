@@ -3,7 +3,7 @@ package org.clulab.habitus.apps.elasticsearch
 import ai.lum.common.FileUtils._
 import org.clulab.habitus.apps.utils.{AttributeCounts, DateString, JsonRecord}
 import org.clulab.habitus.elasticsearch.ElasticsearchIndexClient
-import org.clulab.habitus.elasticsearch.data.{CausalRelation, CauseOrEffect, DatasetRecord, LatLon, Location, Relation}
+import org.clulab.habitus.elasticsearch.data.{CausalRelation, CauseOrEffect, DatasetRecord, LatLon, Location}
 import org.clulab.habitus.elasticsearch.utils.Elasticsearch
 import org.clulab.odin.{EventMention, Mention}
 import org.clulab.processors.{Document, Sentence}
@@ -200,11 +200,11 @@ object Step2InputEidos2 extends App with Logging {
 
       val cause = newCauseOrEffect(cleanCauseText, causeAttributeCounts)
       val effect = newCauseOrEffect(cleanEffectText, effectAttributeCounts)
-      val relation = Relation(cause, effect)
       val causalRelation = CausalRelation(
         causalIndex,
         causalAttributeCounts.negatedCount,
-        Array(relation)
+        cause,
+        effect
       )
 
       causalRelation
