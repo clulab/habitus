@@ -23,22 +23,12 @@ case class CauseOrEffect(
   }
 }
 
-case class Relation(cause: CauseOrEffect, effect: CauseOrEffect) {
-
-  def serialize(): HashMap[String, AnyRef] = {
-    val map = new HashMap[String, AnyRef]()
-
-    map.put("cause", cause.serialize())
-    map.put("effect", effect.serialize())
-    map
-  }
-}
-
 // TODO: There should only be one relation here.
 case class CausalRelation(
   index: Int,
   negationCount: Int,
-  relations: Array[Relation]
+  cause: CauseOrEffect,
+  effect: CauseOrEffect
 ) {
 
   def serialize(): HashMap[String, AnyRef] = {
@@ -46,8 +36,8 @@ case class CausalRelation(
 
     map.put("index", index.asInstanceOf[JInteger])
     map.put("negationCount", index.asInstanceOf[JInteger])
-    if (relations.nonEmpty)
-      map.put("relations", relations.map(_.serialize()))
+    map.put("cause", cause.serialize())
+    map.put("effect", effect.serialize())
     map
   }
 }
@@ -133,77 +123,37 @@ object DatasetRecord {
         CausalRelation(
           index = 1,
           negationCount = 1,
-          relations = Array(
-            Relation(
-              cause = CauseOrEffect(
-                text = "cause1-1",
-                incCount = 1,
-                decCount = 2,
-                posCount = 3,
-                negCount = 4
-              ),
-              effect = CauseOrEffect(
-                text = "effect1-1",
-                incCount = 2,
-                decCount = 3,
-                posCount = 4,
-                negCount = 5
-              )
-            ),
-            Relation(
-              cause = CauseOrEffect(
-                text = "cause1-2",
-                incCount = 1,
-                decCount = 2,
-                posCount = 3,
-                negCount = 4
-              ),
-              effect = CauseOrEffect(
-                text = "effect1-2",
-                incCount = 1,
-                decCount = 2,
-                posCount = 3,
-                negCount = 4
-              )
-            )
+          cause = CauseOrEffect(
+            text = "cause1",
+            incCount = 1,
+            decCount = 2,
+            posCount = 3,
+            negCount = 4
+          ),
+          effect = CauseOrEffect(
+            text = "effect1",
+            incCount = 2,
+            decCount = 3,
+            posCount = 4,
+            negCount = 5
           )
         ),
         CausalRelation(
           index = 2,
           negationCount = 1,
-          relations = Array(
-            Relation(
-              cause = CauseOrEffect(
-                text = "cause2-1",
-                incCount = 1,
-                decCount = 2,
-                posCount = 3,
-                negCount = 4
-              ),
-              effect = CauseOrEffect(
-                text = "effect2-1",
-                incCount = 2,
-                decCount = 3,
-                posCount = 4,
-                negCount = 5
-              )
-            ),
-            Relation(
-              cause = CauseOrEffect(
-                text = "cause2-2",
-                incCount = 1,
-                decCount = 2,
-                posCount = 3,
-                negCount = 4
-              ),
-              effect = CauseOrEffect(
-                text = "effect2-2",
-                incCount = 1,
-                decCount = 2,
-                posCount = 3,
-                negCount = 4
-              )
-            )
+          cause = CauseOrEffect(
+            text = "cause2",
+            incCount = 1,
+            decCount = 2,
+            posCount = 3,
+            negCount = 4
+          ),
+          effect = CauseOrEffect(
+            text = "effect2",
+            incCount = 2,
+            decCount = 3,
+            posCount = 4,
+            negCount = 5
           )
         )
       ),

@@ -2,7 +2,7 @@ package org.clulab.habitus.apps.mysql
 
 import ai.lum.common.FileUtils._
 import org.clulab.habitus.apps.utils.{AttributeCounts, DateString, JsonRecord}
-import org.clulab.habitus.elasticsearch.data.{CausalRelation, CauseOrEffect, DatasetRecord, LatLon, Location, Relation}
+import org.clulab.habitus.elasticsearch.data.{CausalRelation, CauseOrEffect, DatasetRecord, LatLon, Location}
 import org.clulab.habitus.mysql.apps.utils.Credentials
 import org.clulab.odin.{EventMention, Mention}
 import org.clulab.processors.{Document, Sentence}
@@ -180,11 +180,11 @@ object Step2InputEidos2 extends App with Logging {
 
       val cause = newCauseOrEffect(cleanCauseText, causeAttributeCounts)
       val effect = newCauseOrEffect(cleanEffectText, effectAttributeCounts)
-      val relation = Relation(cause, effect)
       val causalRelation = CausalRelation(
         causalIndex,
         causalAttributeCounts.negatedCount,
-        Array(relation)
+        cause,
+        effect
       )
 
       causalRelation
@@ -380,10 +380,9 @@ object Step2InputEidos2 extends App with Logging {
             "`effectText`, `effectIncCount`, `effectDecCount`, `effectPosCount`, `effectNegCount`)" +
         "VALUES (?, ?, ?, " + "?, ?, ?, ?, ?, " + "?, ?, ?, ?, ?)"
       )
-      assert(causalRelation.relations.length == 1)
 
-      val  cause = causalRelation.relations.head.cause
-      val effect = causalRelation.relations.head.effect
+      val  cause = causalRelation.cause
+      val effect = causalRelation.effect
 
       preparedStatement.setInt(1, sentenceId)
       preparedStatement.setInt(2, index)

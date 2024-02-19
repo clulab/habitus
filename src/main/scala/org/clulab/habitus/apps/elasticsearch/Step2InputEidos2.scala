@@ -3,7 +3,7 @@ package org.clulab.habitus.apps.elasticsearch
 import ai.lum.common.FileUtils._
 import org.clulab.habitus.apps.utils.{AttributeCounts, DateString, JsonRecord}
 import org.clulab.habitus.elasticsearch.ElasticsearchIndexClient
-import org.clulab.habitus.elasticsearch.data.{CausalRelation, CauseOrEffect, DatasetRecord, LatLon, Location, Relation}
+import org.clulab.habitus.elasticsearch.data.{CausalRelation, CauseOrEffect, DatasetRecord, LatLon, Location}
 import org.clulab.habitus.elasticsearch.utils.Elasticsearch
 import org.clulab.odin.{EventMention, Mention}
 import org.clulab.processors.{Document, Sentence}
@@ -33,14 +33,14 @@ object Step2InputEidos2 extends App with Logging {
 
   implicit val formats: DefaultFormats.type = org.json4s.DefaultFormats
   val contextWindow = 3
-  val baseDirectory = "../corpora/uganda-mining"
-  val inputFilename = "../corpora/uganda-mining/uganda-2-vectors.tsv"
+  val baseDirectory = "../corpora/uganda-local"
+  val inputFilename = "../corpora/uganda-local/uganda-2-vectors.tsv"
   val credentialsFilename = "../credentials/elasticsearch-credentials.properties"
   val deserializer = new JLDDeserializer()
   val url = new URL("http://localhost:9200")
   // val url = new URL("https://elasticsearch.keithalcock.com")
-  val indexName = "habitus2"
-  val datasetName = "uganda-mining.tsv"
+  val indexName = "habitus3"
+  val datasetName = "uganda.tsv"
   val regionName = "uganda"
   val alreadyNormalized = true
 
@@ -200,11 +200,11 @@ object Step2InputEidos2 extends App with Logging {
 
       val cause = newCauseOrEffect(cleanCauseText, causeAttributeCounts)
       val effect = newCauseOrEffect(cleanEffectText, effectAttributeCounts)
-      val relation = Relation(cause, effect)
       val causalRelation = CausalRelation(
         causalIndex,
         causalAttributeCounts.negatedCount,
-        Array(relation)
+        cause,
+        effect
       )
 
       causalRelation
