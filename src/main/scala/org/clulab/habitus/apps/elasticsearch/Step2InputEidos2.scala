@@ -33,14 +33,14 @@ object Step2InputEidos2 extends App with Logging {
 
   implicit val formats: DefaultFormats.type = org.json4s.DefaultFormats
   val contextWindow = 3
-  val baseDirectory = "../corpora/uganda-mining"
-  val inputFilename = "../corpora/uganda-mining/uganda-2-vectors.tsv"
+  val baseDirectory = "../corpora/uganda-local"
+  val inputFilename = "../corpora/uganda-local/uganda-2-vectors.tsv"
   val credentialsFilename = "../credentials/elasticsearch-credentials.properties"
   val deserializer = new JLDDeserializer()
   val url = new URL("http://localhost:9200")
   // val url = new URL("https://elasticsearch.keithalcock.com")
-  val indexName = "habitus2"
-  val datasetName = "uganda-mining.tsv"
+  val indexName = "habitus3"
+  val datasetName = "uganda.tsv"
   val regionName = "uganda"
   val alreadyNormalized = true
 
