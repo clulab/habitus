@@ -1,7 +1,7 @@
 Start `<elasticsearch>/bin/elasticsearch`
 and `<kibana>/bin/kibana`.
 
-Open kibana at `http://localhost:5601`.
+Open kibana at `http://localhost:5601` or possibly `http://192.168.1.111:5601`.
 
 To submit the schema, wrap it in
 
@@ -52,3 +52,5 @@ Remove everything with
 ```json
 DELETE habitus
 ```
+
+See other files like `index.json`, `schema.json`, `search.json` for more details.
