@@ -18,8 +18,8 @@ import scala.util.Using
 object Step2InputEidos extends App with Logging {
   implicit val formats: DefaultFormats.type = org.json4s.DefaultFormats
   val contextWindow = 3
-  val baseDirectory = "../corpora/uganda/unknown"
-  val outputFileName = "../corpora/uganda/uganda.tsv"
+  val baseDirectory = "../corpora/ghana-regulations/unknown"
+  val outputFileName = "../corpora/ghana-regulations/ghana-regulations.tsv"
   val deserializer = new JLDDeserializer()
 
   def jsonFileToJsonld(jsonFile: File): File =

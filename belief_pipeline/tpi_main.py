@@ -19,16 +19,16 @@ def get_in_and_out() -> Tuple[str, str]:
 if __name__ == "__main__":
     belief_model_name: str = "maxaalexeeva/belief-classifier_mturk_unmarked-trigger_bert-base-cased_2023-4-26-0-34"
     sentiment_model_name: str = "hriaz/finetuned_beliefs_sentiment_classifier_experiment1"
-    locations_file_name: str = "./belief_pipeline/UG.tsv"    
-    input_file_name: str = "../corpora/uganda-local/uganda.tsv"
-    output_file_name: str = "../corpora/uganda-local/uganda-2.tsv"
+    locations_file_name: str = "./belief_pipeline/GH.tsv"    
+    input_file_name: str = "../corpora/ghana-regulations/ghana-regulations.tsv"
+    output_file_name: str = "../corpora/ghana-regulations/ghana-regulations-2.tsv"
     # input_file_name, output_file_name = get_in_and_out()
     pipeline = Pipeline(
         TpiInputStage(input_file_name),
         [
             TpiResolutionStage(),
             TpiBeliefStage(belief_model_name),
-            TpiSentimentStage(sentiment_model_name),
+            # TpiSentimentStage(sentiment_model_name),
             TpiLocationStage(locations_file_name)
         ],
         PandasOutputStage(output_file_name)
