@@ -70,8 +70,8 @@ class CorpusArticleScraper(val corpus: PageCorpus) {
   def scrape(browser: Browser, baseDirName: String): Unit = {
     val progressBar = ProgressBar("CorpusArticleScraper.scrape", corpus.items)
 
-    progressBar.foreach { page =>
-      progressBar.setExtraMessage(page.url.toString)
+    corpus.items.foreach { page =>
+//      progressBar.setExtraMessage(page.url.toString)
 
       val scraper = getPageScraper(page)
       val scrapeTry = Try(scraper.scrapeTo(browser, page, baseDirName))
