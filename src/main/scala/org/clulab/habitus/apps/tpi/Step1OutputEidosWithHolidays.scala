@@ -2,6 +2,7 @@ package org.clulab.habitus.apps.tpi
 
 import ai.lum.common.FileUtils._
 import com.typesafe.config.ConfigValueFactory
+import org.clulab.utils.ThreadUtils
 import org.clulab.wm.eidos.EidosSystem
 import org.clulab.wm.eidos.serialization.jsonld.JLDCorpus
 import org.clulab.wm.eidoscommon.utils.{FileEditor, FileUtils}
@@ -44,7 +45,7 @@ object Step1OutputEidosWithHolidays extends App {
     }
   }
 
-  val baseDirectoryName = args.lift(0).getOrElse("../corpora/uganda")
+  val baseDirectoryName = args.lift(0).getOrElse("../corpora/ghana-regulations")
   val inAndOutFiles = new File(baseDirectoryName)
       .listFilesByWildcard("*.json", recursive = true)
       .map { inFile =>
@@ -59,9 +60,9 @@ object Step1OutputEidosWithHolidays extends App {
       .withValue("ontologies.useGrounding", ConfigValueFactory.fromAnyRef(false))
   val eidosSystem = new EidosSystem(config)
   val count = new AtomicInteger()
-//  val parFiles = ThreadUtils.parallelize(inAndOutFiles, 1)
+  val parFiles = ThreadUtils.parallelize(inAndOutFiles, 3)
 
-  inAndOutFiles.foreach { case (inFile, outFile) =>
+  parFiles.foreach { case (inFile, outFile) =>
     try {
       println(s"${count.getAndIncrement()}/${inAndOutFiles.length} (${inFile.length}) ${inFile.getCanonicalPath} -> ${outFile.getCanonicalPath}")
 

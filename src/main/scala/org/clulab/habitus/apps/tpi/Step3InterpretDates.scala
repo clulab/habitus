@@ -7,8 +7,8 @@ import org.clulab.wm.eidoscommon.utils.TsvReader
 import scala.util.Using
 
 object Step3InterpretDates extends App with Logging {
-  val inputFileName = "../corpora/uganda/uganda2.tsv"
-  val outputFileName = "../corpora/uganda/uganda3.tsv"
+  val inputFileName = "../corpora/ghana-regulations/ghana-regulations-2.tsv"
+  val outputFileName = "../corpora/ghana-regulations/ghana-regulations-3.tsv"
   val expectedColumnCount = 21
 
   Using.resource(Sourcer.sourceFromFilename(inputFileName)) { inputSource =>

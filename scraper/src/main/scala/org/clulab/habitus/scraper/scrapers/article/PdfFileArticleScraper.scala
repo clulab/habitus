@@ -25,7 +25,7 @@ class PdfFileArticleScraper extends PageArticleScraper(PdfDomain) {
   def readPdf(page: Page, baseDirName: String): (String, String, String) = {
     // val dirName = cleaner.clean(domain.domain)
     val subDirName = s"$baseDirName" // $dirName"
-    val file = page.url.getHost // cleaner.clean(page.url.getFile)
+    val file = page.url.getFile.drop(1) // cleaner.clean(page.url.getFile)
 
     val pdfFileName = file // + ".pdf"
     val pdfLocationName = s"$subDirName/$pdfFileName"
