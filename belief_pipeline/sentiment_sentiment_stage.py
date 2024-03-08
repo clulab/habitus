@@ -14,7 +14,7 @@ class SentimentSentimentStage(InnerStage):
 
     def run(self, data_frame: DataFrame) -> DataFrame:
         sentiment_scores = []
-        for _, row in tqdm(data_frame.iterrows(), desc=f"Calculating sentiment"):
+        for _, row in tqdm(data_frame.iterrows(), total=data_frame.shape[0], desc=f"Calculating sentiment"):
             belief = row[self.belief_column_name]
             if belief:
                 text = row[self.text_column_name]
