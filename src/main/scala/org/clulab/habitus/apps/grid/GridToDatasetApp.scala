@@ -17,17 +17,19 @@ object GridToDatasetApp extends App {
     column("col").as[String] and
     column("readable").as[String]
   )(GridRecord)
+  val controlCharacters = " ’✳–\"“”/…½é’€‘—£¬âãé™\u009D"
 
-  val inputDatasetFileName = args.lift(0).getOrElse("../corpora/grid/uganda.tsv")
-  val gridFileName = args.lift(1).getOrElse("../corpora/grid/location1_cells.csv")
-  val ouputDatasetFileName = args.lift(0).getOrElse("../corpora/grid/uganda-location.tsv")
+  val inputDatasetFileName = args.lift(0).getOrElse("../corpora/grid/uganda-all.tsv")
+  val gridFileName = args.lift(1).getOrElse("../corpora/grid/uq500/out2/uq500_zip_cells.csv")
+  val ouputDatasetFileName = args.lift(0).getOrElse("../corpora/grid/uq500/out2/uganda-uq500-rowcol.tsv")
 
   val gridRecords: Seq[GridRecord] = {
     val text = FileUtils.getTextFromFile(gridFileName)
     val result = Parser.parse[GridRecord](text)
     val rawGridRecords = result.toOption.get
     val documents = rawGridRecords.map { gridRecord =>
-      val text = StringUtils.afterFirst(gridRecord.readable, '.').drop(1).filter(_ != ' ')
+      val text = StringUtils.afterFirst(gridRecord.readable, '.').drop(1)
+        .filterNot(controlCharacters.contains(_))
 
       gridRecord.copy(readable = text)
     }
@@ -44,7 +46,7 @@ object GridToDatasetApp extends App {
     val datasetRecords = lines.flatMap { line =>
       val fields = tsvReader.readln(line)
       val text = fields.lift(4).get
-          .filterNot(" ’✳–“”/…½é’€‘—£¬âãé™\u009D".contains(_))
+          .filterNot(controlCharacters.contains(_))
       val dateOpt = {
         val date = fields(21)
 
@@ -59,11 +61,10 @@ object GridToDatasetApp extends App {
         else None
       }
 
-      if (locationOpt.isDefined)
-        // DatasetRecord(line, text, "uganda-" + dateOpt.get)
-        Some(DatasetRecord(line, text, "uganda-" + locationOpt.get))
-      else
-        None
+      // if (locationOpt.isDefined) Some(DatasetRecord(line, text, "uganda-" + dateOpt.get)) else None
+      // if (locationOpt.isDefined) Some(DatasetRecord(line, text, "uganda-" + locationOpt.get)) else None
+      // For these last ones there was not necessarily a location.
+      Some(DatasetRecord(line, text, "uq500"))
     }.toVector
     val gridAndDatasetRecordPairs = gridRecords.flatMap { gridRecord =>
       val datasetRecordOpt = datasetRecords.find { datasetRecord =>
