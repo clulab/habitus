@@ -7,6 +7,6 @@ client = Elasticsearch(
 
 # print(client.info())
 
-result = client.search(index="habitus", q="Karamoja")
+result = client.search(index="habitus3", q="Karamoja")
 
 print(result)
