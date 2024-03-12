@@ -1,12 +1,13 @@
 from elasticsearch import Elasticsearch
 
 client = Elasticsearch(
-  "http://localhost:9200/",
+  "https://elasticsearch.habitus.clulab.org/",
   basic_auth=("user", "password")
+  # api_key="..."
 )
 
 # print(client.info())
 
-result = client.search(index="habitus", q="Karamoja")
+result = client.search(index="habitus3", q="Karamoja")
 
 print(result)

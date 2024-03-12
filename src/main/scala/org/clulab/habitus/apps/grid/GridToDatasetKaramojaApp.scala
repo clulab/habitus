@@ -7,11 +7,12 @@ import zamblauskas.functional._
 
 import scala.util.Using
 
-case class GridRecord(row: String, col: String, readable: String)
+object GridToDatasetKaramojaApp extends App {
 
-case class DatasetRecord(line: String, text: String, row: String)
+  case class GridRecord(row: String, col: String, readable: String)
 
-object GridToDatasetApp extends App {
+  case class DatasetRecord(line: String, text: String, row: String)
+
   implicit val gridDocumentReads: ColumnReads[GridRecord] = (
     column("row").as[String] and
     column("col").as[String] and
@@ -19,9 +20,9 @@ object GridToDatasetApp extends App {
   )(GridRecord)
   val controlCharacters = " ’✳–\"“”/…½é’€‘—£¬âãé™\u009D"
 
-  val inputDatasetFileName = args.lift(0).getOrElse("../corpora/grid/uq500-karamoja/in/uq500-karamoja.tsv")
-  val gridFileName = args.lift(1).getOrElse("../corpora/grid/uq500-karamoja/out/uq500-karamoja_zip_cells.csv")
-  val ouputDatasetFileName = args.lift(0).getOrElse("../corpora/grid/uq500-karamoja/out/uganda-uq500-karamoja-rowcol.tsv")
+  val inputDatasetFileName = args.lift(0).getOrElse("../corpora/grid/uq500-only-karamoja/in/uq500-only-karamoja.tsv")
+  val gridFileName = args.lift(1).getOrElse("../corpora/grid/uq500-only-karamoja/out/uq500-only-karamoja_cells.csv")
+  val ouputDatasetFileName = args.lift(0).getOrElse("../corpora/grid/uq500-only-karamoja/out/uq500-only-karamoja-rowcol.tsv")
 
   val gridRecords: Seq[GridRecord] = {
     val text = FileUtils.getTextFromFile(gridFileName)
@@ -39,51 +40,39 @@ object GridToDatasetApp extends App {
 
     rowDocuments
   }
+  val header = Using.resource(Sourcer.sourceFromFilename(inputDatasetFileName)) { source =>
+    source.getLines.take(1).toArray.head
+  }
   val gridAndDatasetRecordPairs = Using.resource(Sourcer.sourceFromFilename(inputDatasetFileName)) { source =>
     val lines = source.getLines.drop(1)
     val tsvReader = new TsvReader()
 
     val datasetRecords = lines.flatMap { line =>
       val fields = tsvReader.readln(line)
-      val text = fields.lift(4).get
+      val text = fields.lift(7).get
           .filterNot(controlCharacters.contains(_))
-      val dateOpt = {
-        val date = fields(21)
 
-        if (date.nonEmpty) Some(date.take(4))
-        else None
-      }
-      val locationOpt = {
-        val location = fields(19)
-
-        // Use them only if they are a simple location.
-        if (location.count(_ == ',') == 1) Some(StringUtils.beforeFirst(location, ' ', true))
-        else None
-      }
-
-      // if (locationOpt.isDefined) Some(DatasetRecord(line, text, "uganda-" + dateOpt.get)) else None
-      // if (locationOpt.isDefined) Some(DatasetRecord(line, text, "uganda-" + locationOpt.get)) else None
-      // For these last ones there was not necessarily a location.
-      Some(DatasetRecord(line, text, "uq500-karamoja"))
+      Some(DatasetRecord(line, text, "uq500-only-karamoja"))
     }.toVector
-    val gridAndDatasetRecordPairs = gridRecords.flatMap { gridRecord =>
-      val datasetRecordOpt = datasetRecords.find { datasetRecord =>
+    val gridAndDatasetRecordPairs = datasetRecords.flatMap { datasetRecord =>
+      val gridRecordOpt = gridRecords.find { gridRecord =>
         gridRecord.row == datasetRecord.row &&
         datasetRecord.text.contains(gridRecord.readable)
       }
 
-      if (datasetRecordOpt.isEmpty) {
-        println(gridRecord.readable)
+      if (gridRecordOpt.isEmpty) {
+        println(datasetRecord.text)
         None
       }
-      else Some(gridRecord, datasetRecordOpt.get)
+      else Some(gridRecordOpt.get, datasetRecord)
     }
 
     gridAndDatasetRecordPairs
   }
 
   Using.resource(FileUtils.printWriterFromFile(ouputDatasetFileName)) { printWriter =>
-    printWriter.println("url\tterms\tdate\tsentenceIndex\tsentence\tcausal\tcausalIndex\tnegationCount\tcauseIncCount\tcauseDecCount\tcausePosCount\tcauseNegCount\teffectIncCount\teffectDecCount\teffectPosCount\teffectNegCount\tcauseText\teffectText\tbelief\tsent_locs\tcontext_locs\tcanonicalDate\tprevLocation\tprevDistance\tnextLocation\tnextDistance\trow\tcol")
+    printWriter.print(header)
+    printWriter.println("\trow\tcol")
     gridAndDatasetRecordPairs.foreach { case (gridRecord, datasetRecord) =>
       printWriter.print(datasetRecord.line)
       printWriter.print("\t" + gridRecord.row)
