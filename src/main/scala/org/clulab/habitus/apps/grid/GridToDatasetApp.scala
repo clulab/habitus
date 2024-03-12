@@ -19,9 +19,9 @@ object GridToDatasetApp extends App {
   )(GridRecord)
   val controlCharacters = " ’✳–\"“”/…½é’€‘—£¬âãé™\u009D"
 
-  val inputDatasetFileName = args.lift(0).getOrElse("../corpora/grid/uganda-all.tsv")
-  val gridFileName = args.lift(1).getOrElse("../corpora/grid/uq500/out2/uq500_zip_cells.csv")
-  val ouputDatasetFileName = args.lift(0).getOrElse("../corpora/grid/uq500/out2/uganda-uq500-rowcol.tsv")
+  val inputDatasetFileName = args.lift(0).getOrElse("../corpora/grid/uq500-karamoja/in/uq500-karamoja.tsv")
+  val gridFileName = args.lift(1).getOrElse("../corpora/grid/uq500-karamoja/out/uq500-karamoja_zip_cells.csv")
+  val ouputDatasetFileName = args.lift(0).getOrElse("../corpora/grid/uq500-karamoja/out/uganda-uq500-karamoja-rowcol.tsv")
 
   val gridRecords: Seq[GridRecord] = {
     val text = FileUtils.getTextFromFile(gridFileName)
@@ -64,7 +64,7 @@ object GridToDatasetApp extends App {
       // if (locationOpt.isDefined) Some(DatasetRecord(line, text, "uganda-" + dateOpt.get)) else None
       // if (locationOpt.isDefined) Some(DatasetRecord(line, text, "uganda-" + locationOpt.get)) else None
       // For these last ones there was not necessarily a location.
-      Some(DatasetRecord(line, text, "uq500"))
+      Some(DatasetRecord(line, text, "uq500-karamoja"))
     }.toVector
     val gridAndDatasetRecordPairs = gridRecords.flatMap { gridRecord =>
       val datasetRecordOpt = datasetRecords.find { datasetRecord =>

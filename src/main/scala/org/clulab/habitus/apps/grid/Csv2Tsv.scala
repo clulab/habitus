@@ -5,8 +5,11 @@ import org.clulab.utils.{FileUtils, Sourcer}
 import scala.util.Using
 
 object Csv2Tsv extends App {
-  val csvFilename = args.lift(0).getOrElse("../corpora/grid/uq500-karamoja/csvcheck.csv")
-  val tsvFilename = args.lift(1).getOrElse("../corpora/grid/uq500-karamoja/csvcheck.tsv")
+  val csvFilename = args.lift(0).getOrElse("../corpora/grid/uq500-karamoja/in/uq500-karamoja.csv")
+  val tsvFilename = args.lift(1).getOrElse("../corpora/grid/uq500-karamoja/in/uq500-karamoja.tsv")
+//  val csvFilename = args.lift(0).getOrElse("../corpora/grid/uq500-karamoja/csvcheck.csv")
+//  val tsvFilename = args.lift(1).getOrElse("../corpora/grid/uq500-karamoja/csvcheck.tsv")
+  val quoteUnnecessarily = true
 
   trait State
   object OutsideFieldState extends State
@@ -18,7 +21,8 @@ object Csv2Tsv extends App {
     '\n' -> "\\n",
     '\r' -> "\\r",
     '\t' -> "\\t",
-    '\\' -> "\\\\"
+    '\\' -> "\\\\",
+    '"' -> "\"\""
   )
 
   Using.resource(Sourcer.sourceFromFilename(csvFilename)) { source =>
@@ -49,8 +53,10 @@ object Csv2Tsv extends App {
               // I should only see a quote or some char that starts the field.
               val nextState = char match {
                 case '\n' | '\r' | '\t' | '\\' => throwChar(char, state)
-                case ','  => throwChar(char, state)
-                case '"'  => InsideQuotedFieldState
+                case ','  => printChar('\t'); OutsideFieldState // The field was empty.
+                case '"'  =>
+                  if (quoteUnnecessarily) { printChar(char); InsideQuotedFieldState }
+                  else InsideQuotedFieldState
                 case _    => printChar(char); InsideFieldState
               }
               nextState
@@ -76,8 +82,12 @@ object Csv2Tsv extends App {
               // I just saw a quote while InsideQuotedFieldState and need to decide what to do.
               val nextState = char match {
                 case '\n' | '\r' | '\t' | '\\' => throwChar(char, state)
-                case ','  => printChar('\t'); OutsideFieldState // We are now outside the field.
-                case '"'  => printChar('"'); InsideQuotedFieldState // It was a double quote and we're still inside the field.
+                case ','  =>
+                  if (quoteUnnecessarily) printChar('"')
+                  printChar('\t'); OutsideFieldState // We are now outside the field.
+                case '"'  =>
+                  if (quoteUnnecessarily) { printEscape(char); InsideQuotedFieldState } // It was a double quote and we're still inside the field.
+                  else { printChar(char); InsideQuotedFieldState } // It was a double quote and we're still inside the field.
                 case _    => throwChar(char, state)
               }
               nextState
@@ -89,7 +99,9 @@ object Csv2Tsv extends App {
           case OutsideFieldState => printLine(); OutsideFieldState
           case InsideFieldState => printLine(); OutsideFieldState
           case InsideQuotedFieldState => printEscape('\n'); InsideQuotedFieldState
-          case InsideQuotedQuoteState => printLine(); OutsideFieldState
+          case InsideQuotedQuoteState =>
+            if (quoteUnnecessarily) { printChar('"'); printLine(); OutsideFieldState }
+            else { printLine(); OutsideFieldState }
         }
       }
       // The file is finished.

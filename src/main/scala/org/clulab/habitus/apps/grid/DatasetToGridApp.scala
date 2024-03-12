@@ -8,7 +8,7 @@ import scala.util.{Random, Using}
 case class Record(text: String, date: String, location: String)
 
 object DatasetToGridApp extends App {
-  val datasetFileName = args.lift(0).getOrElse("../corpora/grid/uganda.tsv")
+  val datasetFileName = args.lift(0).getOrElse("../corpora/grid/uq500-karamoja/in/uq500-karamoja.tsv")
   val gridFileNamePrefix = args.lift(1).getOrElse("../corpora/grid/uganda-")
   val gridFileNameSuffix = args.lift(1).getOrElse(".txt")
   val random = new Random(0)
