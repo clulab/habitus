@@ -5,8 +5,8 @@ import org.clulab.utils.{FileUtils, Sourcer}
 import scala.util.Using
 
 object Csv2Tsv extends App {
-  val csvFilename = args.lift(0).getOrElse("../corpora/grid/uq500-karamoja/in/uq500-karamoja.csv")
-  val tsvFilename = args.lift(1).getOrElse("../corpora/grid/uq500-karamoja/in/uq500-karamoja.tsv")
+  val csvFilename = args.lift(0).getOrElse("../corpora/grid/uq500-only-karamoja/in/uq500_only_karamoja.csv")
+  val tsvFilename = args.lift(1).getOrElse("../corpora/grid/uq500-only-karamoja/in/uq500-only-karamoja.tsv")
 //  val csvFilename = args.lift(0).getOrElse("../corpora/grid/uq500-karamoja/csvcheck.csv")
 //  val tsvFilename = args.lift(1).getOrElse("../corpora/grid/uq500-karamoja/csvcheck.tsv")
   val quoteUnnecessarily = true
