@@ -14,14 +14,21 @@ object Csv2Tsv extends App {
   object InsideQuotedFieldState extends State
   object InsideQuotedQuoteState extends State
 
+  val escapes: Map[Char, String] = Map(
+    '\n' -> "\\n",
+    '\r' -> "\\r",
+    '\t' -> "\\t",
+    '\\' -> "\\\\"
+  )
+
   Using.resource(Sourcer.sourceFromFilename(csvFilename)) { source =>
     val lines = source.getLines
 
     Using.resource(FileUtils.printWriterFromFile(tsvFilename)) { printWriter =>
 
-      def printString(string: String): Unit = printWriter.print(string)
-
       def printChar(char: Char): Unit = printWriter.print(char)
+
+      def printEscape(char: Char): Unit = printWriter.print(escapes(char))
 
       def printLine(): Unit = printWriter.println
 
@@ -41,48 +48,36 @@ object Csv2Tsv extends App {
             case OutsideFieldState =>
               // I should only see a quote or some char that starts the field.
               val nextState = char match {
-                case '\n' => throwChar(char, state)
-                case '\r' => throwChar(char, state)
-                case '\t' => throwChar(char, state)
+                case '\n' | '\r' | '\t' | '\\' => throwChar(char, state)
                 case ','  => throwChar(char, state)
                 case '"'  => InsideQuotedFieldState
-                case '\\' => throwChar(char, state)
                 case _    => printChar(char); InsideFieldState
               }
               nextState
             case InsideFieldState =>
               // I need to escape special characters and watch for the looming comma.
               val nextState = char match {
-                case '\n' => printString("\\n"); InsideFieldState
-                case '\r' => printString("\\r"); InsideFieldState
-                case '\t' => printString("\\t"); InsideFieldState
+                case '\n' | '\r' | '\t' | '\\' => printEscape(char); InsideFieldState
                 case ','  => printChar('\t'); OutsideFieldState
                 case '"'  => throwChar(char, state)
-                case '\\' => printString("\\\\"); InsideFieldState
                 case _    => printChar(char); InsideFieldState
               }
               nextState
             case InsideQuotedFieldState =>
               // I need to escape special characters and watch for the looming end quote or doubled false alarms.
               val nextState = char match {
-                case '\n' => printString("\\n"); InsideQuotedFieldState
-                case '\r' => printString("\\r"); InsideQuotedFieldState
-                case '\t' => printString("\\t"); InsideQuotedFieldState
+                case '\n' | '\r' | '\t' | '\\' => printEscape(char); InsideQuotedFieldState
                 case ','  => printChar(char); InsideQuotedFieldState
                 case '"'  => InsideQuotedQuoteState
-                case '\\' => printString("\\\\"); InsideQuotedFieldState
                 case _    => printChar(char); InsideQuotedFieldState
               }
               nextState
             case InsideQuotedQuoteState =>
               // I just saw a quote while InsideQuotedFieldState and need to decide what to do.
               val nextState = char match {
-                case '\n' => throwChar(char, state)
-                case '\r' => throwChar(char, state)
-                case '\t' => throwChar(char, state)
+                case '\n' | '\r' | '\t' | '\\' => throwChar(char, state)
                 case ','  => printChar('\t'); OutsideFieldState // We are now outside the field.
                 case '"'  => printChar('"'); InsideQuotedFieldState // It was a double quote and we're still inside the field.
-                case '\\' => throwChar(char, state)
                 case _    => throwChar(char, state)
               }
               nextState
@@ -93,10 +88,9 @@ object Csv2Tsv extends App {
         nextState match {
           case OutsideFieldState => printLine(); OutsideFieldState
           case InsideFieldState => printLine(); OutsideFieldState
-          case InsideQuotedFieldState => printString("\\n"); InsideQuotedFieldState
+          case InsideQuotedFieldState => printEscape('\n'); InsideQuotedFieldState
           case InsideQuotedQuoteState => printLine(); OutsideFieldState
         }
-        nextState
       }
       // The file is finished.
       nextState match {
