@@ -1,8 +1,9 @@
 from elasticsearch import Elasticsearch
 
 client = Elasticsearch(
-  "http://localhost:9200/",
+  "https://elasticsearch.habitus.clulab.org/",
   basic_auth=("user", "password")
+  # api_key="..."
 )
 
 # print(client.info())
