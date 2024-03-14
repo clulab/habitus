@@ -19,7 +19,7 @@ import java.sql.{Connection, Date, DriverManager, Statement, Timestamp}
 import java.time.LocalDateTime
 import scala.util.{Try, Using}
 
-object Step2InputEidos2 extends App with Logging {
+object Step2InputEidos2App extends App with Logging {
 
   case class LocalTsvRecord(
     sentenceIndex: Int,

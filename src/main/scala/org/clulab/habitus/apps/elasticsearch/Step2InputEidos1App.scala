@@ -13,7 +13,7 @@ import org.json4s.jackson.JsonMethods
 import java.io.File
 import scala.util.Using
 
-object Step2InputEidos1 extends App with Logging {
+object Step2InputEidos1App extends App with Logging {
   implicit val formats: DefaultFormats.type = org.json4s.DefaultFormats
   val contextWindow = 3
   val baseDirectory = "../corpora/uganda-local"
