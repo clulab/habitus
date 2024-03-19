@@ -1,10 +1,9 @@
 package org.clulab.habitus.apps.elasticsearch
 
 import ai.lum.common.FileUtils._
-import org.clulab.habitus.apps.elasticsearch.VerifyGhanaApp.datasetFilename
 import org.clulab.habitus.apps.utils.{AttributeCounts, JsonRecord}
 import org.clulab.processors.{Document, Sentence}
-import org.clulab.utils.{Sourcer, StringUtils}
+import org.clulab.utils.Sourcer
 import org.clulab.wm.eidos.document.AnnotatedDocument
 import org.clulab.wm.eidos.serialization.jsonld.JLDDeserializer
 import org.clulab.wm.eidoscommon.utils.{FileEditor, FileUtils, Logging, TsvReader, TsvWriter}

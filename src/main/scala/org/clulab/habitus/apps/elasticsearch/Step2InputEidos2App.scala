@@ -263,7 +263,7 @@ object Step2InputEidos2App extends App with Logging {
       val contextLocations = parseLocations(contextLocationsString)
       val vector = normalize(parseVector(vectorString))
 
-      (url, sentenceIndex) -> new LocalTsvRecord(sentenceIndex, sentence, belief, sentimentScoreOpt, sentenceLocations, contextLocations, vector)
+      (url, sentenceIndex) -> LocalTsvRecord(sentenceIndex, sentence, belief, sentimentScoreOpt, sentenceLocations, contextLocations, vector)
     }.toMap
   }
   val restClient = Elasticsearch.mkRestClient(url, credentialsFilename)
