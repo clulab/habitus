@@ -7,12 +7,13 @@ import scala.util.Using
 
 object CombineDatasetsApp extends App {
   val inputFileNames = Seq(
-    "../corpora/grid/uganda.tsv",
-    "../corpora/grid/uganda-mining2.tsv",
-    "../corpora/grid/uganda-pdfs2.tsv",
-    "../corpora/grid/uganda-pdfs-karamoja2.tsv"
+    "../corpora/ghana-elasticsearch/ghana-elasticsearch-0.tsv",
+    "../corpora/ghana-elasticsearch/ghana-elasticsearch-1.tsv",
+    "../corpora/ghana-elasticsearch/ghana-elasticsearch-2.tsv",
+    "../corpora/ghana-elasticsearch/ghana-elasticsearch-3.tsv",
+    "../corpora/ghana-elasticsearch/ghana-elasticsearch-4.tsv"
   )
-  val ouputFileName = "../corpora/grid/uganda-all.tsv"
+  val ouputFileName = "../corpora/ghana-elasticsearch/combined.tsv"
 
   def copyLines(inputFileName: String, printWriter: PrintWriter, keepHeader: Boolean): Unit = {
     Using.resource(Sourcer.sourceFromFilename(inputFileName)) { source =>

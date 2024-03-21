@@ -3,22 +3,39 @@ package org.clulab.habitus.apps.elasticsearch
 import ai.lum.common.FileUtils._
 import org.clulab.habitus.apps.utils.{AttributeCounts, JsonRecord}
 import org.clulab.processors.{Document, Sentence}
-import org.clulab.utils.StringUtils
+import org.clulab.utils.Sourcer
 import org.clulab.wm.eidos.document.AnnotatedDocument
 import org.clulab.wm.eidos.serialization.jsonld.JLDDeserializer
-import org.clulab.wm.eidoscommon.utils.{FileEditor, FileUtils, Logging, TsvWriter}
+import org.clulab.wm.eidoscommon.utils.{FileEditor, FileUtils, Logging, TsvReader, TsvWriter}
 import org.json4s.DefaultFormats
 import org.json4s.jackson.JsonMethods
 
 import java.io.File
 import scala.util.Using
 
-object Step2InputEidos1 extends App with Logging {
+object Step2InputEidos1GhanaApp extends App with Logging {
   implicit val formats: DefaultFormats.type = org.json4s.DefaultFormats
   val contextWindow = 3
-  val baseDirectory = "../corpora/uganda-local"
-  val outputFileName = "../corpora/uganda-local/uganda.tsv"
+  val datasetFilename = "../corpora/ghana-elasticsearch/dataset55k.tsv"
+  val baseDirectory = "/home/kwa/data/Corpora/habitus-project/corpora/multimix"
+  val outputFileName = "../corpora/ghana-elasticsearch/ghana-elasticsearch.tsv"
   val deserializer = new JLDDeserializer()
+
+  def getDatasetUrls(): Set[String] = {
+    // TODO: Also get terms from here instead of from directory names.
+    val datasetUrls = Using.resource(Sourcer.sourceFromFilename(datasetFilename)) { source =>
+      val tsvReader = new TsvReader()
+      val datasetUrls = source.getLines.drop(1).map { line =>
+        val Array(url) = tsvReader.readln(line, 1)
+
+        url
+      }.toSet
+
+      datasetUrls
+    }
+
+    datasetUrls
+  }
 
   def jsonFileToJsonld(jsonFile: File): File =
       FileEditor(jsonFile).setExt("jsonld").get
@@ -33,22 +50,7 @@ object Step2InputEidos1 extends App with Logging {
     val text = (jValue \ "text").extract[String]
 
     // Don't use them all in order to save space.
-    JsonRecord(url, None, datelineOpt, None, "")
-  }
-
-  def jsonFileToTerm(jsonFile: File): String = {
-    val path = jsonFile.getPath
-    val term = StringUtils.afterLast(
-      StringUtils.beforeLast(
-        StringUtils.beforeLast(
-          StringUtils.beforeLast(
-            path, '/'
-          ), '/'
-        ), '/'
-      ), '/'
-    )
-
-    term
+    JsonRecord(url, None, None, None, "")
   }
 
   def jsonldFileToAnnotatedDocument(jsonldFile: File): AnnotatedDocument = {
@@ -88,33 +90,31 @@ object Step2InputEidos1 extends App with Logging {
     )
   }
 
-  val jsonFiles: Seq[File] = {
-    val allJsonFiles = new File(baseDirectory).listFilesByWildcard("*.json", recursive = true)
-        // TODO remove take
-        // .take(1000)
-    val jsonldFiles = new File(baseDirectory).listFilesByWildcard("*.jsonld", recursive = true).toSet
+  val datasetUrls: Set[String] = getDatasetUrls
+  val jsonFilesAndUrls: Seq[(File, String)] = {
+    val allJsonFiles = new File(baseDirectory).listFilesByWildcard("*.json", recursive = true).toVector
+    val jsonFilesWithJsonld = allJsonFiles.filter { jsonFile =>
+      jsonFileToJsonld(jsonFile).exists
+    }
+    val jsonFilesAndUrls: Seq[(File, String)] = jsonFilesWithJsonld.map { jsonFile =>
+      val record = jsonFileToRecord(jsonFile)
 
-    allJsonFiles.filter { jsonFile => jsonldFiles(jsonFileToJsonld(jsonFile)) }
-  }.toSeq.sorted
-  val jsonFileRecordPairs: Seq[(File, JsonRecord)] = jsonFiles.map { jsonFile =>
-    (jsonFile, jsonFileToRecord(jsonFile))
-  }
-  val jsonFileRecordPairGroups: Seq[(String, Seq[(File, JsonRecord)])] = jsonFileRecordPairs.groupBy { jsonFileRecordPair => jsonFileRecordPair._2.url}.toSeq
-  val jsonFileRecordTermsSeq: Seq[(File, JsonRecord, Seq[String])] = jsonFileRecordPairGroups.map { case (_, jsonFileRecordPairs) =>
-    // Use just one jsonFile and jsonRecord, but combine search terms
-    val terms = jsonFileRecordPairs.map { jsonFileRecordPair => jsonFileToTerm(jsonFileRecordPair._1) }
+      (jsonFile, record.url)
+    }
+    val headJsonFilesAndUrls = jsonFilesAndUrls.groupBy(_._2).map(_._2.head).toSeq
 
-    (jsonFileRecordPairs.head._1, jsonFileRecordPairs.head._2, terms)
+    headJsonFilesAndUrls
   }
 
   Using.resource(FileUtils.printWriterFromFile(outputFileName)) { printWriter =>
     val tsvWriter = new TsvWriter(printWriter)
 
     tsvWriter.println("url", "sentenceIndex", "sentence", "context", "prevSentence")
-    jsonFileRecordTermsSeq.zipWithIndex.foreach { case ((jsonFile, jsonRecord, terms), index) =>
+    datasetUrls.zipWithIndex.foreach { case (url, index) =>
+      val jsonFile = jsonFilesAndUrls.find(_._2 == url).get._1
+
       println(s"$index ${jsonFile.getPath}")
       try {
-        val url = jsonRecord.url
         val jsonldFile = jsonFileToJsonld(jsonFile)
         val annotatedDocument = jsonldFileToAnnotatedDocument(jsonldFile)
         val document = annotatedDocument.document
@@ -124,7 +124,7 @@ object Step2InputEidos1 extends App with Logging {
           val cleanText = getSentenceText(document, sentence)
           val context = sentences
               .slice(sentenceIndex - contextWindow, sentenceIndex + contextWindow + 1)
-              .map(getSentenceText(document,_))
+              .map(getSentenceText(document, _))
               .mkString(" ")
           val prevSentenceText = sentences
               .lift(sentenceIndex - 1)
@@ -134,7 +134,8 @@ object Step2InputEidos1 extends App with Logging {
           tsvWriter.println(url, sentenceIndex.toString, cleanText, context, prevSentenceText)
         }
       }
-      catch {
+      catch
+      {
         case throwable: Throwable =>
           logger.error(s"Exception for file $jsonFile", throwable)
       }
