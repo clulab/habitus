@@ -17,6 +17,7 @@ abstract class PageDownloader(domain: Domain) extends DomainSpecific(domain){
 
 class PageCorpusDownloader(val corpus: PageCorpus) {
   val downloaders = Seq(
+    new SitemapDownloader(), // For xml files
     new AdomOnlineDownloader(),
     new CitiFmOnlineDownloader(),
     new EtvGhanaDownloader(),
@@ -47,7 +48,12 @@ class PageCorpusDownloader(val corpus: PageCorpus) {
   }
 
   def download(browser: Browser, baseDirName: String): Unit = {
-    corpus.items.foreach { page =>
+    val distinctCorpusItems = corpus.items.distinct.toList
+    // This doesn't seem to work here!
+    val progressBar = ProgressBar("PageCorpusDownloader.download", distinctCorpusItems)
+
+    distinctCorpusItems.map { page =>
+      progressBar.setExtraMessage(page.url.toString + " ")
       val downloader = getPageDownloader(page)
 
       // Avoid this error to make real download errors all the more obvious.
@@ -93,7 +99,7 @@ class SearchCorpusDownloader(val corpus: SearchCorpus) {
   }
 
   def download(browser: Browser, baseDirName: String): Unit = {
-    val progressBar = ProgressBar("Downloader.download", corpus.items)
+    val progressBar = ProgressBar("SearchCorpusDownload.download", corpus.items)
 
     progressBar.foreach { search =>
       val page = search.page

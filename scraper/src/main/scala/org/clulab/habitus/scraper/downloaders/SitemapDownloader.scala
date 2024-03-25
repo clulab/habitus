@@ -2,7 +2,7 @@ package org.clulab.habitus.scraper.downloaders
 
 import net.ruippeixotog.scalascraper.browser.Browser
 import org.clulab.habitus.scraper.Page
-import org.clulab.habitus.scraper.domains.RobotsDomain
+import org.clulab.habitus.scraper.domains.SitemapDomain
 import org.clulab.habitus.scraper.scrapers.RobotsScraper
 import org.clulab.utils.{FileUtils, Sourcer}
 import sttp.client4.Response
@@ -14,7 +14,7 @@ import java.net.URL
 import java.nio.file.Files
 import scala.util.{Try, Using}
 
-class RobotsDownloader() extends GetPageDownloader(new RobotsDomain()) {
+class SitemapDownloader() extends GetPageDownloader(new SitemapDomain()) {
   val robotsScraper = new RobotsScraper()
 
   def getResponse(url: URL): Response[String] = {
@@ -68,21 +68,6 @@ class RobotsDownloader() extends GetPageDownloader(new RobotsDomain()) {
   }
 
   override def download(browser: Browser, page: Page, baseDirName: String, inquiryOpt: Option[String] = None): Unit = {
-    val urlString = page.url.toString
-    val robotsString = urlString + "/robots.txt"
-    val sitemapIndexString = urlString + "/sitemap_index.xml"
-    val sitemapString = urlString + "/sitemap.xml"
-
-    val robotsPage = new Page(new URL(robotsString))
-    val text = localDownload(robotsPage, baseDirName)
-    val sitemapIndexes = robotsScraper.scrape(browser, robotsPage, text).distinct
-
-    Seq(sitemapIndexString, sitemapString).foreach { siteString =>
-      if (!sitemapIndexes.contains(siteString))
-        Try(localDownload(Page(siteString), baseDirName))
-    }
-    sitemapIndexes.map { sitemapIndex =>
-      localDownload(Page(sitemapIndex), baseDirName)
-    }
+    localDownload(page, baseDirName)
   }
 }
