@@ -97,9 +97,12 @@ class SearchCorpusDownloader(val corpus: SearchCorpus) {
 
     progressBar.foreach { search =>
       val page = search.page
+      val inquiry = search.inquiry
       progressBar.setExtraMessage(page.url.toString + " ")
 
-      val downloader = getPageDownloader(page)
+      val downloader =
+          if (inquiry == "robots") new RobotsDownloader()
+          else getPageDownloader(page)
 
       // Avoid this error to make real download errors all the more obvious.
       if (downloader.isValidPage(page)) {
