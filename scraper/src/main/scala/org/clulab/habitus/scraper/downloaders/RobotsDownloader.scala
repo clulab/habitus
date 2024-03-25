@@ -26,7 +26,7 @@ class RobotsDownloader() extends GetPageDownloader(new RobotsDomain()) {
     response
   }
 
-  def localDownload(page: Page, baseDirName: String, inquiryOpt: Option[String] = None): String = {
+  def localDownload(page: Page, baseDirName: String): String = {
     val domain = page.url.getHost.split('.')/*.takeRight(2)*/.mkString(".") // Shorten to one .
     val dirName = cleaner.clean(domain)
     val subDirName = s"$baseDirName/$dirName"
@@ -67,13 +67,36 @@ class RobotsDownloader() extends GetPageDownloader(new RobotsDomain()) {
   }
 
   override def download(browser: Browser, page: Page, baseDirName: String, inquiryOpt: Option[String] = None): Unit = {
-    val robotsPage = new Page(new URL(s"${page.url}/robots.txt"))
+    val header = "Sitemap:"
+    val urlString = page.url.toString
+    val robotsString = urlString + "/robots.txt"
+    val sitemapIndexString = urlString + "/sitemap_index.xml"
+    val sitemapString = urlString + "/sitemap.xml"
 
-    // Download this, find the file and parse it.
-    // Then write file with list of all xml files found
-    val text = localDownload(robotsPage, baseDirName, inquiryOpt)
-    // TODO: continue to get strings out of it if there are any and download all those files
-    //
-    println(text)
+    val robotsPage = new Page(new URL(robotsString))
+    val text = localDownload(robotsPage, baseDirName)
+    val localSitemapIndexes = Source
+        .fromString(text).getLines().flatMap { line =>
+          if (line.startsWith(header))
+            Some(line.drop(header.length).trim)
+          else
+            None
+        }
+        .toVector
+        .map { sitemapIndex =>
+          sitemapIndex.replaceAll("/www.gna.org.gh/", "/gna.org.gh/")
+        }
+        .map { sitemapIndex =>
+          sitemapIndex.replaceAll("/.xml", "/sitemap.xml")
+        }
+    val sitemapIndexes = localSitemapIndexes.distinct
+
+    Seq(sitemapIndexString, sitemapString).foreach { siteString =>
+      if (!sitemapIndexes.contains(siteString))
+        Try(localDownload(Page(siteString), baseDirName))
+    }
+    sitemapIndexes.map { sitemapIndex =>
+      localDownload(Page(sitemapIndex), baseDirName)
+    }
   }
 }
