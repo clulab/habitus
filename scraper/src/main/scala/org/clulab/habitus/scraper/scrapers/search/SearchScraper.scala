@@ -6,6 +6,7 @@ import org.clulab.habitus.scraper.domains.Domain
 import org.clulab.habitus.scraper.inquirers.{CorpusInquirer, PageInquirer}
 import org.clulab.habitus.scraper.{Cleaner, Page, Search}
 import org.clulab.habitus.scraper.scrapers.Scraper
+import org.clulab.habitus.scraper.scrapers.xml.SitemapIndexScraper
 import org.clulab.habitus.scraper.scrapes.SearchScrape
 import org.clulab.utils.{FileUtils, ProgressBar}
 
@@ -57,9 +58,14 @@ class CorpusSearchScraper(val corpus: SearchCorpus) {
 
       progressBar.foreach { search =>
         val page = search.page
+        val inquiry = search.inquiry
+
         progressBar.setExtraMessage(page.url.toString)
 
-        val scraper = getPageScraper(page)
+        val scraper =
+            if (inquiry == "robots") new SitemapIndexScraper()
+            else getPageScraper(page)
+
         val inquirer = corpusInquirer.getPageInquirer(page)
         val scrapeTry = Try(scraper.scrapeTo(browser, page, inquirer, search, baseDirName, printWriter))
 

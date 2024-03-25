@@ -3,6 +3,7 @@ package org.clulab.habitus.scraper.downloaders
 import net.ruippeixotog.scalascraper.browser.Browser
 import org.clulab.habitus.scraper.Page
 import org.clulab.habitus.scraper.domains.RobotsDomain
+import org.clulab.habitus.scraper.scrapers.RobotsScraper
 import org.clulab.utils.{FileUtils, Sourcer}
 import sttp.client4.Response
 import sttp.client4.quick._
@@ -15,6 +16,7 @@ import scala.io.Source
 import scala.util.{Try, Using}
 
 class RobotsDownloader() extends GetPageDownloader(new RobotsDomain()) {
+  val robotsScraper = new RobotsScraper()
 
   def getResponse(url: URL): Response[String] = {
     val response = quickRequest
@@ -67,7 +69,6 @@ class RobotsDownloader() extends GetPageDownloader(new RobotsDomain()) {
   }
 
   override def download(browser: Browser, page: Page, baseDirName: String, inquiryOpt: Option[String] = None): Unit = {
-    val header = "Sitemap:"
     val urlString = page.url.toString
     val robotsString = urlString + "/robots.txt"
     val sitemapIndexString = urlString + "/sitemap_index.xml"
@@ -75,21 +76,7 @@ class RobotsDownloader() extends GetPageDownloader(new RobotsDomain()) {
 
     val robotsPage = new Page(new URL(robotsString))
     val text = localDownload(robotsPage, baseDirName)
-    val localSitemapIndexes = Source
-        .fromString(text).getLines().flatMap { line =>
-          if (line.startsWith(header))
-            Some(line.drop(header.length).trim)
-          else
-            None
-        }
-        .toVector
-        .map { sitemapIndex =>
-          sitemapIndex.replaceAll("/www.gna.org.gh/", "/gna.org.gh/")
-        }
-        .map { sitemapIndex =>
-          sitemapIndex.replaceAll("/.xml", "/sitemap.xml")
-        }
-    val sitemapIndexes = localSitemapIndexes.distinct
+    val sitemapIndexes = robotsScraper.scrape(browser, robotsPage, text).distinct
 
     Seq(sitemapIndexString, sitemapString).foreach { siteString =>
       if (!sitemapIndexes.contains(siteString))
