@@ -9,7 +9,7 @@ import org.clulab.habitus.scraper.scrapers.sitemap.RobotsScraper
 class SitemapDownloader() extends GetPageDownloader(new SitemapDomain()) with SiteDownloader {
   val robotsScraper = new RobotsScraper()
 
-  override def download(browser: Browser, page: Page, baseDirName: String, inquiryOpt: Option[String] = None): Unit = {
-    localDownload(page, baseDirName, cleaner)
+  override def download(browser: Browser, page: Page, baseDirName: String, inquiryOpt: Option[String] = None): Boolean = {
+    localDownload(page, baseDirName, cleaner)._2
   }
 }

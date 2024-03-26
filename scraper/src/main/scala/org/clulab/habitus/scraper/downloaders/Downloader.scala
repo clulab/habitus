@@ -11,7 +11,8 @@ import scala.util.{Random, Try}
 
 abstract class PageDownloader(domain: Domain) extends DomainSpecific(domain){
 
-  def download(browser: Browser, page: Page, baseDirName: String, inquiryOpt: Option[String] = None): Unit
+  // Return true if actual download happened, false if not.  For example, there may be a cached version.
+  def download(browser: Browser, page: Page, baseDirName: String, inquiryOpt: Option[String] = None): Boolean
 
   def isValidPage(page: Page): Boolean = true
 }
@@ -65,8 +66,10 @@ class PageCorpusDownloader(val corpus: PageCorpus) {
 
         if (downloadTry.isFailure)
           println(s"Download of ${page.url.toString} failed!")
-
-        Thread.sleep(1000 + random.nextInt(2000))
+        else if (downloadTry.get) {
+          // Only sleep if actually downloaded something rather than used cache.
+          Thread.sleep(100 + random.nextInt(200))
+        }
       }
     }
   }

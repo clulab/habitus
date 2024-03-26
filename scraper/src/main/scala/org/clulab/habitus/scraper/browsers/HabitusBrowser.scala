@@ -4,6 +4,7 @@ import net.ruippeixotog.scalascraper.browser.JsoupBrowser
 import net.ruippeixotog.scalascraper.browser.JsoupBrowser.JsoupDocument
 import org.jsoup.Connection
 
+import java.io.UnsupportedEncodingException
 import java.net.URLDecoder
 
 class HabitusBrowser extends JsoupBrowser {
@@ -12,7 +13,7 @@ class HabitusBrowser extends JsoupBrowser {
     val decodedUrl = URLDecoder.decode(url, "utf-8")
 
     if (url != decodedUrl)
-      println("Watch this!")
+      throw new UnsupportedEncodingException(s"Potential encoding problem.  Skip $url for now!")
     super.get(decodedUrl)
   }
 

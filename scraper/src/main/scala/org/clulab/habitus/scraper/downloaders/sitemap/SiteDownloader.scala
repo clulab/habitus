@@ -23,7 +23,7 @@ trait SiteDownloader {
     response
   }
 
-  def localDownload(page: Page, baseDirName: String, cleaner: Cleaner): String = {
+  def localDownload(page: Page, baseDirName: String, cleaner: Cleaner): (String, Boolean) = {
     val domain = page.url.getHost.split('.')/*.takeRight(2)*/.mkString(".") // Shorten to one .
     val dirName = cleaner.clean(domain)
     val subDirName = s"$baseDirName/$dirName"
@@ -34,7 +34,7 @@ trait SiteDownloader {
     val localLocationName = s"$subDirName/$localFileName"
 
     if (new File(localLocationName).exists)
-      FileUtils.getTextFromFile(localLocationName)
+      (FileUtils.getTextFromFile(localLocationName), false)
     else {
       // This will require Java 11.
       val response = getResponse(page.url)
@@ -55,7 +55,7 @@ trait SiteDownloader {
       Using.resource(FileUtils.printWriterFromFile(localLocationName)) { printWriter =>
         printWriter.println(text)
       }
-      text
+      (text, true)
     }
   }
 }

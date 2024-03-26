@@ -5,14 +5,14 @@ import org.clulab.habitus.scraper.domains.Domain
 import org.clulab.habitus.scraper.{Cleaner, DomainSpecific, Page}
 import org.clulab.utils.FileUtils
 
-import java.io.File
+import java.io.{File, UnsupportedEncodingException}
 import java.nio.file.Files
 import scala.util.{Try, Using}
 
 class GetPageDownloader(domain: Domain) extends PageDownloader(domain) {
   val cleaner = new Cleaner()
 
-  def download(browser: Browser, page: Page, baseDirName: String, inquiryOpt: Option[String] = None): Unit = {
+  def download(browser: Browser, page: Page, baseDirName: String, inquiryOpt: Option[String] = None): Boolean = {
     val domain = page.url.getHost.split('.')/*.takeRight(2)*/.mkString(".") // Shorten to one .
     val dirName = cleaner.clean(domain)
     val subDirName = s"$baseDirName/$dirName"
@@ -23,13 +23,21 @@ class GetPageDownloader(domain: Domain) extends PageDownloader(domain) {
     val htmlFileName = file + ".html" // This is added even if it already ended in .html.
     val htmlLocationName = s"$subDirName/$htmlFileName"
 
-    if (!new File(htmlLocationName).exists) {
+    if (new File(htmlLocationName).exists) false
+    else {
       // Use ProgressBar instead.
       // println(s"Downloading ${page.url.toString} to $htmlLocationName")
 
-      val doc = Try(browser.get(page.url.toString)).getOrElse {
-        // Before retry, wait for 3 seconds, which seems to help.
-        Thread.sleep(3000)
+      val tryDoc = Try(browser.get(page.url.toString))
+      val doc =
+        if (tryDoc.isSuccess) tryDoc.get
+        else {
+          // If failed with encoding error, then don't wait.
+          val throwable = tryDoc.failed.get
+
+          if (!throwable.isInstanceOf[UnsupportedEncodingException])
+            // Before retry, wait for 3 seconds, which seems to help.
+            Thread.sleep(3000)
         browser.get(page.url.toString)
       }
       val html = doc.toHtml
@@ -37,6 +45,7 @@ class GetPageDownloader(domain: Domain) extends PageDownloader(domain) {
       Using.resource(FileUtils.printWriterFromFile(htmlLocationName)) { printWriter =>
         printWriter.println(html)
       }
+      true
     }
   }
 }

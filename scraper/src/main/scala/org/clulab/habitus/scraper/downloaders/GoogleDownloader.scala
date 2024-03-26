@@ -26,7 +26,7 @@ class GoogleDownloader extends GetPageDownloader(GoogleDomain) {
   }
 
   // This downloads the PDF pages from the external sites.
-  def downloadExtern(page: Page, baseDirName: String): Unit = {
+  def downloadExtern(page: Page, baseDirName: String): Boolean = {
     val domain = page.url.getHost.split('.') /*.takeRight(2)*/.mkString(".") // Shorten to one .
     val dirName = cleaner.clean(domain)
     val subDirName = s"$baseDirName/$dirName"
@@ -50,7 +50,8 @@ class GoogleDownloader extends GetPageDownloader(GoogleDomain) {
       result
     }
 
-    if (!new File(pdfLocationName).exists) {
+    if (new File(pdfLocationName).exists) false
+    else {
       // Use ProgressBar instead.
       // println(s"Downloading ${page.url.toString} to $htmlLocationName")
       val pdfTry = Try(getPdf(page))
@@ -63,11 +64,12 @@ class GoogleDownloader extends GetPageDownloader(GoogleDomain) {
       Using.resource(new FileOutputStream(pdfLocationName)) { fileOutputStream =>
         fileOutputStream.write(pdf)
       }
+      true
     }
   }
 
   // This downloads the JSON search results from Google.
-  def downloadIntern(page: Page, baseDirName: String, inquiry: String): Unit = {
+  def downloadIntern(page: Page, baseDirName: String, inquiry: String): Boolean = {
     val domain = page.url.getHost.split('.') /*.takeRight(2)*/.mkString(".") // Shorten to one .
     val dirName = cleaner.clean(domain)
     val subDirName = s"$baseDirName/$dirName"
@@ -90,7 +92,8 @@ class GoogleDownloader extends GetPageDownloader(GoogleDomain) {
       result
     }
 
-    if (!new File(jsonLocationName).exists) {
+    if (new File(jsonLocationName).exists) false
+    else {
       // Use ProgressBar instead.
       // println(s"Downloading ${page.url.toString} to $htmlLocationName")
       val json = Try(getJson(url)).getOrElse {
@@ -103,10 +106,11 @@ class GoogleDownloader extends GetPageDownloader(GoogleDomain) {
       Using.resource(FileUtils.printWriterFromFile(jsonLocationName)) { printWriter =>
         printWriter.println(json)
       }
+      true
     }
   }
 
-  override def download(browser: Browser, page: Page, baseDirName: String, inquiryOpt: Option[String] = None): Unit = {
+  override def download(browser: Browser, page: Page, baseDirName: String, inquiryOpt: Option[String] = None): Boolean = {
     if (inquiryOpt.isEmpty) {
       val file = page.url.getFile
 
@@ -117,6 +121,7 @@ class GoogleDownloader extends GetPageDownloader(GoogleDomain) {
     }
     else
       downloadIntern(page, baseDirName, inquiryOpt.get)
+    true
   }
 }
 

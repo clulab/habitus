@@ -11,22 +11,24 @@ import scala.util.Try
 class RobotsDownloader() extends GetPageDownloader(new RobotsDomain()) with SiteDownloader {
   val robotsParser = new RobotsParser()
 
-  override def download(browser: Browser, page: Page, baseDirName: String, inquiryOpt: Option[String] = None): Unit = {
+  override def download(browser: Browser, page: Page, baseDirName: String, inquiryOpt: Option[String] = None): Boolean = {
     val urlString = page.url.toString
     val home = StringUtils.beforeLast(urlString, '/')
     val sitemapIndexString = s"$home/${Site.sitemapIndex}"
     val sitemapString = s"$home/${Site.sitemap}"
 
     val robotsPage = page
-    val text = localDownload(robotsPage, baseDirName, cleaner)
+    val (text, downloaded) = localDownload(robotsPage, baseDirName, cleaner)
     val sitemapIndexes = robotsParser.parse(text).distinct
 
     sitemapIndexes.map { sitemapIndex =>
-      localDownload(Page(sitemapIndex), baseDirName, cleaner)
+      localDownload(Page(sitemapIndex), baseDirName, cleaner)._2
     }
     Seq(sitemapIndexString, sitemapString).foreach { siteString =>
-      if (!sitemapIndexes.contains(siteString))
+      if (!sitemapIndexes.contains(siteString)) {
         Try(localDownload(Page(siteString), baseDirName, cleaner))
+      }
     }
+    downloaded
   }
 }

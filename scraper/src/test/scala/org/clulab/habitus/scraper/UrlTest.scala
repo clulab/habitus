@@ -9,8 +9,9 @@ class UrlTest extends Test {
   behavior of "BOM in URL"
 
   it should "download" in {
-    val url = "https://www.adomonline.com/%ef%bb%bfabout29-billion-needed-to-reclaim-degradable-land-minister/"
+//    val url = "https://www.adomonline.com/%ef%bb%bfabout29-billion-needed-to-reclaim-degradable-land-minister/"
 //    val url = "https://thechronicle.com.gh/former-banker-charged-with-gh%c2%a272750-fraud/"
+    val url = "https://thechronicle.com.gh/fidelity-bank-donates-gh%c2%a2110k-to-design-technology-institute/"
 //    val url = "https://thechronicle.com.gh/former-banker-charged-with-gh%25c2%25a272750-fraud/"
 //    val url = "https://www.adomonline.com/\ufeffabout29-billion-needed-to-reclaim-degradable-land-minister/"
     val browser: Browser = JsoupBrowser()
