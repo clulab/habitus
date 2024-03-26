@@ -60,10 +60,11 @@ class CorpusSearchScraper(val corpus: SearchCorpus) {
         val page = search.page
         val inquiry = search.inquiry
 
-        progressBar.setExtraMessage(page.url.toString)
+        // progressBar.setExtraMessage(page.url.toString)
 
         val scraper =
-            if (inquiry == "robots") new SitemapIndexScraper()
+            // TODO: Make this bettter.
+            if (inquiry == "sitemap") new SitemapIndexScraper()
             else getPageScraper(page)
 
         val inquirer = corpusInquirer.getPageInquirer(page)

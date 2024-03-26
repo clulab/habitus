@@ -51,8 +51,7 @@ class SitemapIndexScraper extends PageSearchScraper(new SitemapIndexDomain()) wi
       }
     }
     val distinctSitemapIndexes = (sitemapIndexes ++ otherIndexes).distinct
-
-    distinctSitemapIndexes.foreach { sitemapIndex =>
+    val sitemaps = distinctSitemapIndexes.flatMap { sitemapIndex =>
       if (sitemapIndex.endsWith(".xml")) {
 
         val file = cleaner.clean(Page(sitemapIndex).url.getFile)
@@ -63,20 +62,15 @@ class SitemapIndexScraper extends PageSearchScraper(new SitemapIndexDomain()) wi
         }
         val elem = toXml(text)
 
-        if (isSitemapIndex(elem)) {
-          val sitemaps = getSitemapsFromElem(elem)
-
-          sitemaps.foreach { sitemap =>
-            printWriter.println(sitemap)
-          }
-        }
-        else {
-          val sitemap = sitemapIndex
-
-          assert(isSitemap(elem))
-          printWriter.println(sitemap)
-        }
+        if (isSitemapIndex(elem))
+          getSitemapsFromElem(elem)
+        else
+          Seq(sitemapIndex)
       }
+      else Seq.empty
+    }
+    sitemaps.distinct.foreach { sitemap =>
+      printWriter.println
     }
   }
 }

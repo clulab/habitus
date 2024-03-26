@@ -7,7 +7,7 @@ import org.clulab.habitus.scraper.domains.Domain
 import org.clulab.habitus.scraper.downloaders.sitemap.{RobotsDownloader, SitemapDownloader}
 import org.clulab.utils.ProgressBar
 
-import scala.util.Try
+import scala.util.{Random, Try}
 
 abstract class PageDownloader(domain: Domain) extends DomainSpecific(domain){
 
@@ -49,12 +49,14 @@ class PageCorpusDownloader(val corpus: PageCorpus) {
   }
 
   def download(browser: Browser, baseDirName: String): Unit = {
-    val distinctCorpusItems = corpus.items.distinct.toList
-    // This doesn't seem to work here!
+    val random = new Random(42)
+    val distinctCorpusItems = random.shuffle(corpus.items.distinct)
+
     val progressBar = ProgressBar("PageCorpusDownloader.download", distinctCorpusItems)
 
-    distinctCorpusItems.map { page =>
-      progressBar.setExtraMessage(page.url.toString + " ")
+    progressBar.foreach { page =>
+      // progressBar.setExtraMessage(page.url.toString + " ")
+
       val downloader = getPageDownloader(page)
 
       // Avoid this error to make real download errors all the more obvious.
@@ -63,6 +65,8 @@ class PageCorpusDownloader(val corpus: PageCorpus) {
 
         if (downloadTry.isFailure)
           println(s"Download of ${page.url.toString} failed!")
+
+        Thread.sleep(1000 + random.nextInt(2000))
       }
     }
   }
@@ -106,10 +110,9 @@ class SearchCorpusDownloader(val corpus: SearchCorpus) {
     progressBar.foreach { search =>
       val page = search.page
 
-      progressBar.setExtraMessage(page.url.toString + " ")
+      // progressBar.setExtraMessage(page.url.toString + " ")
 
       val downloader = getPageDownloader(page)
-
 
       // Avoid this error to make real download errors all the more obvious.
       if (downloader.isValidPage(page)) {

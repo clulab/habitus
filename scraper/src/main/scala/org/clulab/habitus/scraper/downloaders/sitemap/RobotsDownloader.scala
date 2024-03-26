@@ -78,12 +78,12 @@ class RobotsDownloader() extends GetPageDownloader(new RobotsDomain()) {
     val text = localDownload(robotsPage, baseDirName)
     val sitemapIndexes = robotsScraper.scrape(browser, robotsPage, text).distinct
 
+    sitemapIndexes.map { sitemapIndex =>
+      localDownload(Page(sitemapIndex), baseDirName)
+    }
     Seq(sitemapIndexString, sitemapString).foreach { siteString =>
       if (!sitemapIndexes.contains(siteString))
         Try(localDownload(Page(siteString), baseDirName))
-    }
-    sitemapIndexes.map { sitemapIndex =>
-      localDownload(Page(sitemapIndex), baseDirName)
     }
   }
 }

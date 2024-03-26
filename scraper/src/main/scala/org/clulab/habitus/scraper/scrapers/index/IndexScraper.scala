@@ -81,8 +81,8 @@ class CorpusIndexScraper(val corpus: PageCorpus) {
     Using.resource(FileUtils.printWriterFromFile(fileName)) { printWriter =>
       val progressBar = ProgressBar("CorpusIndexScraper.scrape", corpus.items)
 
-      progressBar.toList.foreach { page =>
-        progressBar.setExtraMessage(page.url.toString)
+      progressBar.foreach { page =>
+        // progressBar.setExtraMessage(page.url.toString)
 
         val scraper = getPageScraper(page)
         val scrapeTry = Try(
