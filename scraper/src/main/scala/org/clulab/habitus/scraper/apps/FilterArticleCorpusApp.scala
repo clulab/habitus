@@ -8,7 +8,7 @@ object FilterArticleCorpusApp extends App {
   val term = "sitemap"
   val inFileName = args.lift(0).getOrElse(s"./scraper/corpora/ghana/$term/articlecorpus.txt")
   val outFileName = args.lift(1).getOrElse(s"./scraper/corpora/ghana/$term/articlecorpus-filtered.txt")
-  val filter = adomOnlineFilter _
+  val filter = theChronicleFilter _
 
   def adomOnlineFilter(line: String): Boolean = { true &&
     line.endsWith("/") && // Articles look like a directory.
@@ -46,16 +46,6 @@ object FilterArticleCorpusApp extends App {
     !line.startsWith("https://thechronicle.com.gh/category/") && // We're not interested in playlists.
     !line.startsWith("https://thechronicle.com.gh/author/") && // We're not interested in playlists.
     !line.startsWith("https://thechronicle.com.gh/checkout/") && // We're not interested in playlists.
-//    !line.startsWith("https://thechronicle.com.gh/tdb_templates/") &&
-//    !line.startsWith("https://thechronicle.com.gh/live/") &&
-//    !line.startsWith("https://thechronicle.com.gh/showbiz/") &&
-//    !line.startsWith("https://thechronicle.com.gh/video/") &&
-//    !line.startsWith("https://thechronicle.com.gh/sports/") &&
-//    !line.startsWith("https://thechronicle.com.gh/radio-tv/") &&
-//    !line.startsWith("https://thechronicle.com.gh/business/real-estate/") &&
-//    !line.startsWith("https://thechronicle.com.gh/news/odd-but-true/") &&
-//    (line.count(_ == '/') == 5) && // We need no subdirectory at all.  TODO: this works for many
-//    line.contains('-') &&
     !Seq(
       "https://thechronicle.com.gh/",
       "https://thechronicle.com.gh/coming-soon/",

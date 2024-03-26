@@ -1,15 +1,14 @@
 package org.clulab.habitus.scraper.scrapers.sitemap
 
 import net.ruippeixotog.scalascraper.browser.Browser
-import org.clulab.habitus.scraper.domains.{RobotsDomain, SitemapIndexDomain}
+import org.clulab.habitus.scraper.domains.RobotsDomain
 import org.clulab.habitus.scraper.inquirers.PageInquirer
 import org.clulab.habitus.scraper.scrapers.search.PageSearchScraper
 import org.clulab.habitus.scraper.scrapes.SearchScrape
 import org.clulab.habitus.scraper.{Page, RobotsParser, Search, Site}
-import org.clulab.utils.{FileUtils, Sourcer, StringUtils}
+import org.clulab.utils.StringUtils
 
 import java.io.{File, PrintWriter}
-import scala.util.Using
 import scala.xml.Elem
 
 class RobotsScraper extends PageSearchScraper(new RobotsDomain()) with SiteScraper {
@@ -35,17 +34,12 @@ class RobotsScraper extends PageSearchScraper(new RobotsDomain()) with SiteScrap
     val dirName = cleaner.clean(domain)
     val subDirName = s"$baseDirName/$dirName"
 
-    val file = cleaner.clean(page.url.getFile) // This may automatically take off the #comment.
-    val localFileName = file // This is added even if it already ended in .html.
-    val localLocationName = s"$subDirName/$localFileName"
-
-    val robotsText = FileUtils.getTextFromFile(localLocationName)
+    val robotsText = readPage(page, baseDirName, cleaner)
     val sitemapIndexes = robotsParser.parse(robotsText)
     val otherIndexes = Seq(sitemapIndexString, sitemapString).filter { siteString =>
       !sitemapIndexes.contains(siteString) && {
         val file = cleaner.clean(Page(siteString).url.getFile)
-        val localFileName = file
-        val localLocationName = s"$subDirName/$localFileName"
+        val localLocationName = s"$subDirName/$file"
 
         new File(localLocationName).exists
       }
@@ -53,14 +47,8 @@ class RobotsScraper extends PageSearchScraper(new RobotsDomain()) with SiteScrap
     val distinctSitemapIndexes = (sitemapIndexes ++ otherIndexes).distinct
     val sitemaps = distinctSitemapIndexes.flatMap { sitemapIndex =>
       if (sitemapIndex.endsWith(".xml")) {
-
-        val file = cleaner.clean(Page(sitemapIndex).url.getFile)
-        val localFileName = file
-        val localLocationName = s"$subDirName/$localFileName"
-        val text = Using.resource(Sourcer.sourceFromFilename(localLocationName)) { sourcer =>
-          sourcer.mkString
-        }
-        val elem = toXml(text)
+        val xml = readPage(Page(sitemapIndex), baseDirName, cleaner)
+        val elem = toXml(xml)
 
         if (isSitemapIndex(elem))
           getSitemapsFromElem(elem)
@@ -69,8 +57,7 @@ class RobotsScraper extends PageSearchScraper(new RobotsDomain()) with SiteScrap
       }
       else Seq.empty
     }
-    sitemaps.distinct.foreach { sitemap =>
-      printWriter.println
-    }
+
+    sitemaps.distinct.foreach(printWriter.println)
   }
 }

@@ -30,11 +30,12 @@ trait SiteDownloader {
 
     Files.createDirectories(new File(subDirName).toPath)
 
-    val file = cleaner.clean(page.url.getFile) // This may automatically take off the #comment.
-    val localFileName = file // This is added even if it already ended in .html.
+    val localFileName = cleaner.clean(page.url.getFile) // This may automatically take off the #comment.
     val localLocationName = s"$subDirName/$localFileName"
 
-    if (!new File(localLocationName).exists) {
+    if (new File(localLocationName).exists)
+      FileUtils.getTextFromFile(localLocationName)
+    else {
       // This will require Java 11.
       val response = getResponse(page.url)
       val text = {
@@ -55,11 +56,6 @@ trait SiteDownloader {
         printWriter.println(text)
       }
       text
-    }
-    else {
-      Using.resource(Sourcer.sourceFromFilename(localLocationName)) { sourcer =>
-        sourcer.mkString
-      }
     }
   }
 }
