@@ -4,6 +4,7 @@ import net.ruippeixotog.scalascraper.browser.Browser
 import org.clulab.habitus.scraper.{DomainSpecific, Page}
 import org.clulab.habitus.scraper.corpora.{PageCorpus, SearchCorpus}
 import org.clulab.habitus.scraper.domains.Domain
+import org.clulab.habitus.scraper.downloaders.sitemap.{RobotsDownloader, SitemapDownloader}
 import org.clulab.utils.ProgressBar
 
 import scala.util.Try
@@ -69,6 +70,7 @@ class PageCorpusDownloader(val corpus: PageCorpus) {
 
 class SearchCorpusDownloader(val corpus: SearchCorpus) {
   val downloaders = Seq(
+    new RobotsDownloader(),
     new AdomOnlineDownloader(),
     new CitiFmOnlineDownloader(),
     new EtvGhanaDownloader(),
@@ -103,12 +105,11 @@ class SearchCorpusDownloader(val corpus: SearchCorpus) {
 
     progressBar.foreach { search =>
       val page = search.page
-      val inquiry = search.inquiry
+
       progressBar.setExtraMessage(page.url.toString + " ")
 
-      val downloader =
-          if (inquiry == "robots") new RobotsDownloader()
-          else getPageDownloader(page)
+      val downloader = getPageDownloader(page)
+
 
       // Avoid this error to make real download errors all the more obvious.
       if (downloader.isValidPage(page)) {

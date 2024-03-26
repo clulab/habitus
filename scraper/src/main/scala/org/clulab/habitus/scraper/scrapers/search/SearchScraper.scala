@@ -6,7 +6,7 @@ import org.clulab.habitus.scraper.domains.Domain
 import org.clulab.habitus.scraper.inquirers.{CorpusInquirer, PageInquirer}
 import org.clulab.habitus.scraper.{Cleaner, Page, Search}
 import org.clulab.habitus.scraper.scrapers.Scraper
-import org.clulab.habitus.scraper.scrapers.xml.SitemapIndexScraper
+import org.clulab.habitus.scraper.scrapers.sitemap.SitemapIndexScraper
 import org.clulab.habitus.scraper.scrapes.SearchScrape
 import org.clulab.utils.{FileUtils, ProgressBar}
 

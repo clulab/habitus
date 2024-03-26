@@ -1,1 +1,1 @@
-https://3news.com	robots
+https://3news.com/robots.txt	sitemap
