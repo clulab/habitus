@@ -8,7 +8,7 @@ object FilterArticleCorpusApp extends App {
   val term = "sitemap"
   val inFileName = args.lift(0).getOrElse(s"./scraper/corpora/ghana/$term/articlecorpus.txt")
   val outFileName = args.lift(1).getOrElse(s"./scraper/corpora/ghana/$term/articlecorpus-filtered.txt")
-  val filter = theChronicleFilter _
+  val filter = citiFmFilter _
 
   def adomOnlineFilter(line: String): Boolean = { true &&
     line.endsWith("/") && // Articles look like a directory.
@@ -73,8 +73,21 @@ object FilterArticleCorpusApp extends App {
     !line.startsWith("https://3news.com/news/odd-but-true/") &&
     (line.count(_ == '/') == 5) && // We need no subdirectory at all.  TODO: this works for many
     line.contains('-') &&
+    !line.contains("/newspaper-headlines-") &&
     !Seq(
       "https://3news.com/showbiz/art-design/"
+    ).contains(line) &&
+    true
+  }
+
+  def citiFmFilter(line: String): Boolean = { true &&
+    line.endsWith("/") && // Articles look like a directory.
+    line.startsWith("https://citifmonline.com/") && // We're not interested in tags.
+    !line.startsWith("https://citifmonline.com/tag/") && // We're not interested in tags.
+    !line.startsWith("https://citifmonline.com/author/") && // We're not interested in playlists.
+    !line.startsWith("https://citifmonline.com/category/") && // We're not interested in playlists.
+//    line.contains('-') &&
+    !Seq(
     ).contains(line) &&
     true
   }

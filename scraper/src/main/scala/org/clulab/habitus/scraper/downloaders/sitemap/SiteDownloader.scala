@@ -14,10 +14,11 @@ import scala.util.Using
 trait SiteDownloader {
 
   def getResponse(url: URL): Response[String] = {
+    val isXml = url.getFile.endsWith(".xml")
     val response = quickRequest
         .get(Uri(url.toURI))
         .header(Header(HeaderNames.UserAgent, "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0"))
-        .contentType(MediaType.TextPlain)
+        .contentType(if (isXml) MediaType.ApplicationXml else MediaType.TextPlain)
         .send()
 
     response
