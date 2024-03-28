@@ -24,7 +24,7 @@ class GhanaWebDownloader extends PostPageDownloader(GhanaWebDomain) {
 
     if (new File(htmlLocationName).exists) false
     else {
-      println(s"Downloading ${page.url.toString} to $htmlLocationName")
+//      println(s"Downloading ${page.url.toString} to $htmlLocationName")
 
       val doc = if (inquiryOpt.isDefined) {
         val form: Map[String, String] = Map(

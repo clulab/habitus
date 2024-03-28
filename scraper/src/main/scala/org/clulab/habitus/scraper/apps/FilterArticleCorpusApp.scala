@@ -8,7 +8,7 @@ object FilterArticleCorpusApp extends App {
   val term = "sitemap"
   val inFileName = args.lift(0).getOrElse(s"./scraper/corpora/ghana/$term/articlecorpus.txt")
   val outFileName = args.lift(1).getOrElse(s"./scraper/corpora/ghana/$term/articlecorpus-filtered.txt")
-  val filter = citiFmFilter _
+  val filter = ghanaWebFilter _
 
   def adomOnlineFilter(line: String): Boolean = { true &&
     line.endsWith("/") && // Articles look like a directory.
@@ -41,7 +41,7 @@ object FilterArticleCorpusApp extends App {
 
   def theChronicleFilter(line: String): Boolean = { true &&
     line.endsWith("/") && // Articles look like a directory.
-    line.startsWith("https://thechronicle.com.gh/") && // We're not interested in tags.
+    line.startsWith("https://thechronicle.com.gh/") &&
     !line.startsWith("https://thechronicle.com.gh/tag/") && // We're not interested in tags.
     !line.startsWith("https://thechronicle.com.gh/category/") && // We're not interested in playlists.
     !line.startsWith("https://thechronicle.com.gh/author/") && // We're not interested in playlists.
@@ -60,7 +60,7 @@ object FilterArticleCorpusApp extends App {
 
   def threeNewsFilter(line: String): Boolean = { true &&
     line.endsWith("/") && // Articles look like a directory.
-    line.startsWith("https://3news.com/") && // We're not interested in tags.
+    line.startsWith("https://3news.com/") &&
     !line.startsWith("https://3news.com/tag/") && // We're not interested in tags.
     !line.startsWith("https://3news.com/playlist/") && // We're not interested in playlists.
     !line.startsWith("https://3news.com/tdb_templates/") &&
@@ -82,11 +82,30 @@ object FilterArticleCorpusApp extends App {
 
   def citiFmFilter(line: String): Boolean = { true &&
     line.endsWith("/") && // Articles look like a directory.
-    line.startsWith("https://citifmonline.com/") && // We're not interested in tags.
+    line.startsWith("https://citifmonline.com/") &&
     !line.startsWith("https://citifmonline.com/tag/") && // We're not interested in tags.
     !line.startsWith("https://citifmonline.com/author/") && // We're not interested in playlists.
     !line.startsWith("https://citifmonline.com/category/") && // We're not interested in playlists.
 //    line.contains('-') &&
+    !Seq(
+    ).contains(line) &&
+    true
+  }
+
+  def etvFilter(line: String): Boolean = { true &&
+    line.endsWith("/") && // Articles look like a directory.
+    line.startsWith("https://www.etvghana.com/") &&
+    !line.startsWith("https://www.etvghana.com/tag/") && // We're not interested in tags.
+    !line.startsWith("https://www.etvghana.com/author/") && // We're not interested in playlists.
+    !line.startsWith("https://www.etvghana.com/category/") && // We're not interested in playlists.
+    //    line.contains('-') &&
+    !Seq(
+    ).contains(line) &&
+    true
+  }
+
+  def ghanaWebFilter(line: String): Boolean = { true &&
+    line.startsWith("https://www.ghanaweb.com/") &&
     !Seq(
     ).contains(line) &&
     true
