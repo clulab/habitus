@@ -21,6 +21,7 @@ class AdomOnlineArticleScraper extends PageArticleScraper(AdomOnlineDomain) {
       }
       .filter(_.nonEmpty)
       .filter(_ != "READ ALSO:")
+      .filter(_ != "ALSO READ:")
       .mkString("\n\n")
 
     ArticleScrape(page.url, Some(title), datelineOpt, bylineOpt, text)
