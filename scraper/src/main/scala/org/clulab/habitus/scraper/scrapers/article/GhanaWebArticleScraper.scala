@@ -20,7 +20,7 @@ class GhanaWebArticleScraper extends PageArticleScraper(GhanaWebDomain) {
           element.hasAttr("type") && element.attr("type") == "application/ld+json"
         }
         .map { element =>
-          val json = element.innerHtml
+          val json = element.innerHtml.replace("\t", "  ")
           val jObject = JsonMethods.parse(json).asInstanceOf[JObject]
 
           jObject

@@ -51,7 +51,8 @@ class PageCorpusDownloader(val corpus: PageCorpus) {
 
   def download(browser: Browser, baseDirName: String): Unit = {
     val random = new Random(42)
-    val distinctCorpusItems = random.shuffle(corpus.items.distinct)
+//    val distinctCorpusItems = random.shuffle(corpus.items.distinct)
+    val distinctCorpusItems = corpus.items.distinct
 
     val progressBar = ProgressBar("PageCorpusDownloader.download", distinctCorpusItems)
 
