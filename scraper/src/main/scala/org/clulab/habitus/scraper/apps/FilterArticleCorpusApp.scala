@@ -8,7 +8,7 @@ object FilterArticleCorpusApp extends App {
   val term = "sitemap"
   val inFileName = args.lift(0).getOrElse(s"./scraper/corpora/ghana/$term/articlecorpus.txt")
   val outFileName = args.lift(1).getOrElse(s"./scraper/corpora/ghana/$term/articlecorpus-filtered.txt")
-  val filter = ghanaWebFilter _
+  val filter = happyGhanaFilter _
 
   def adomOnlineFilter(line: String): Boolean = { true &&
     line.endsWith("/") && // Articles look like a directory.
@@ -106,6 +106,18 @@ object FilterArticleCorpusApp extends App {
 
   def ghanaWebFilter(line: String): Boolean = { true &&
     line.startsWith("https://www.ghanaweb.com/") &&
+    !Seq(
+    ).contains(line) &&
+    true
+  }
+
+  def happyGhanaFilter(line: String): Boolean = { true &&
+    line.endsWith("/") && // Articles look like a directory.
+    line.startsWith("https://www.happyghana.com/") &&
+    !line.startsWith("https://www.happyghana.com/tag/") && // We're not interested in tags.
+    !line.startsWith("https://www.happyghana.com/author/") && // We're not interested in playlists.
+    !line.startsWith("https://www.happyghana.com/category/") && // We're not interested in playlists.
+    //    line.contains('-') &&
     !Seq(
     ).contains(line) &&
     true
