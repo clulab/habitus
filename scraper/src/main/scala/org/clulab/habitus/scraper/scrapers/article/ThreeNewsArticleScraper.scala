@@ -7,7 +7,7 @@ import org.clulab.habitus.scraper.Page
 import org.clulab.habitus.scraper.domains.ThreeNewsDomain
 import org.clulab.habitus.scraper.scrapes.ArticleScrape
 import org.json4s.jackson.JsonMethods
-import org.json4s.{DefaultFormats, JArray, JObject}
+import org.json4s.{DefaultFormats, JArray, JObject, JString, JValue}
 
 class ThreeNewsArticleScraper extends PageArticleScraper(ThreeNewsDomain) {
   implicit val formats: DefaultFormats.type = DefaultFormats
@@ -29,12 +29,22 @@ class ThreeNewsArticleScraper extends PageArticleScraper(ThreeNewsDomain) {
     val graph = (jObject \ "@graph").extract[JArray]
     val newsArticle = graph.arr
         .find { jValue =>
-          (jValue \ "@type").extract[String] == "Article"
+          val string = (jValue \ "@type").extract[String]
+
+          string == "Article" || string == "NewsArticle"
         }
         .get
-    val dateline = (newsArticle \ "datePublished").extract[String]
-    val byline = (newsArticle \ "author" \ "name").extract[String]
+    val personOpt = graph.arr
+      .find { jValue =>
+        val string = (jValue \ "@type").extract[String]
 
+        string == "Person"
+      }
+    val dateline = (newsArticle \ "datePublished").extract[String]
+    val bylineOpt: Option[String] = None
+        .orElse((newsArticle \ "author" \ "name").extractOpt[String])
+        .orElse(personOpt.map { person => (person \ "name").extract[String] })
+        .orElse((newsArticle \ "author" \ "@id").extractOpt[String])
     val paragraphs = doc >> elementList("div.td-main-content-wrap div.td-main-content div.td-post-content p")
     val text = paragraphs
         .map { paragraph =>
@@ -54,6 +64,6 @@ class ThreeNewsArticleScraper extends PageArticleScraper(ThreeNewsDomain) {
         }
         else text
 
-    ArticleScrape(page.url, Some(title), Some(dateline), Some(byline), cleanText)
+    ArticleScrape(page.url, Some(title), Some(dateline), bylineOpt, cleanText)
   }
 }

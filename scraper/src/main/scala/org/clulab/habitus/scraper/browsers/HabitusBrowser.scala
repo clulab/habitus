@@ -1,9 +1,21 @@
 package org.clulab.habitus.scraper.browsers
 
 import net.ruippeixotog.scalascraper.browser.JsoupBrowser
+import net.ruippeixotog.scalascraper.browser.JsoupBrowser.JsoupDocument
 import org.jsoup.Connection
 
+import java.io.UnsupportedEncodingException
+import java.net.URLDecoder
+
 class HabitusBrowser extends JsoupBrowser {
+
+  override def get(url: String): JsoupDocument = {
+    val decodedUrl = URLDecoder.decode(url, "utf-8")
+
+    if (url != decodedUrl)
+      throw new UnsupportedEncodingException(s"Potential encoding problem.  Skip $url for now!")
+    super.get(decodedUrl)
+  }
 
   override def requestSettings(conn: Connection) = conn
       .timeout(HabitusBrowser.customTimeout)

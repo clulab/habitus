@@ -4,19 +4,22 @@ import net.ruippeixotog.scalascraper.browser.Browser
 import org.clulab.habitus.scraper.{DomainSpecific, Page}
 import org.clulab.habitus.scraper.corpora.{PageCorpus, SearchCorpus}
 import org.clulab.habitus.scraper.domains.Domain
+import org.clulab.habitus.scraper.downloaders.sitemap.{RobotsDownloader, SitemapDownloader}
 import org.clulab.utils.ProgressBar
 
-import scala.util.Try
+import scala.util.{Random, Try}
 
 abstract class PageDownloader(domain: Domain) extends DomainSpecific(domain){
 
-  def download(browser: Browser, page: Page, baseDirName: String, inquiryOpt: Option[String] = None): Unit
+  // Return true if actual download happened, false if not.  For example, there may be a cached version.
+  def download(browser: Browser, page: Page, baseDirName: String, inquiryOpt: Option[String] = None): Boolean
 
   def isValidPage(page: Page): Boolean = true
 }
 
 class PageCorpusDownloader(val corpus: PageCorpus) {
   val downloaders = Seq(
+    new SitemapDownloader(), // For xml files
     new AdomOnlineDownloader(),
     new CitiFmOnlineDownloader(),
     new EtvGhanaDownloader(),
@@ -47,7 +50,15 @@ class PageCorpusDownloader(val corpus: PageCorpus) {
   }
 
   def download(browser: Browser, baseDirName: String): Unit = {
-    corpus.items.foreach { page =>
+    val random = new Random(42)
+//    val distinctCorpusItems = random.shuffle(corpus.items.distinct)
+    val distinctCorpusItems = corpus.items.distinct
+
+    val progressBar = ProgressBar("PageCorpusDownloader.download", distinctCorpusItems)
+
+    progressBar.foreach { page =>
+      // progressBar.setExtraMessage(page.url.toString + " ")
+
       val downloader = getPageDownloader(page)
 
       // Avoid this error to make real download errors all the more obvious.
@@ -56,6 +67,10 @@ class PageCorpusDownloader(val corpus: PageCorpus) {
 
         if (downloadTry.isFailure)
           println(s"Download of ${page.url.toString} failed!")
+        else if (downloadTry.get) {
+          // Only sleep if actually downloaded something rather than used cache.
+          Thread.sleep(100 + random.nextInt(200))
+        }
       }
     }
   }
@@ -63,6 +78,7 @@ class PageCorpusDownloader(val corpus: PageCorpus) {
 
 class SearchCorpusDownloader(val corpus: SearchCorpus) {
   val downloaders = Seq(
+    new RobotsDownloader(),
     new AdomOnlineDownloader(),
     new CitiFmOnlineDownloader(),
     new EtvGhanaDownloader(),
@@ -93,11 +109,12 @@ class SearchCorpusDownloader(val corpus: SearchCorpus) {
   }
 
   def download(browser: Browser, baseDirName: String): Unit = {
-    val progressBar = ProgressBar("Downloader.download", corpus.items)
+    val progressBar = ProgressBar("SearchCorpusDownload.download", corpus.items)
 
     progressBar.foreach { search =>
       val page = search.page
-      progressBar.setExtraMessage(page.url.toString + " ")
+
+      // progressBar.setExtraMessage(page.url.toString + " ")
 
       val downloader = getPageDownloader(page)
 

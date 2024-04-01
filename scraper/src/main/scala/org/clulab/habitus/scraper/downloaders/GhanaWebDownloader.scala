@@ -11,7 +11,7 @@ import scala.util.{Try, Using}
 
 class GhanaWebDownloader extends PostPageDownloader(GhanaWebDomain) {
 
-  override def download(browser: Browser, page: Page, baseDirName: String, inquiryOpt: Option[String] = None): Unit = {
+  override def download(browser: Browser, page: Page, baseDirName: String, inquiryOpt: Option[String] = None): Boolean = {
     val domain = page.url.getHost.split('.') /*.takeRight(2)*/ .mkString(".") // Shorten to one .
     val dirName = cleaner.clean(domain)
     val subDirName = s"$baseDirName/$dirName"
@@ -22,8 +22,9 @@ class GhanaWebDownloader extends PostPageDownloader(GhanaWebDomain) {
     val htmlFileName = file + ".html"
     val htmlLocationName = s"$subDirName/$htmlFileName"
 
-    if (!new File(htmlLocationName).exists) {
-      println(s"Downloading ${page.url.toString} to $htmlLocationName")
+    if (new File(htmlLocationName).exists) false
+    else {
+//      println(s"Downloading ${page.url.toString} to $htmlLocationName")
 
       val doc = if (inquiryOpt.isDefined) {
         val form: Map[String, String] = Map(
@@ -59,6 +60,7 @@ class GhanaWebDownloader extends PostPageDownloader(GhanaWebDomain) {
       Using.resource(FileUtils.printWriterFromFile(htmlLocationName)) { printWriter =>
         printWriter.println(html)
       }
+      true
     }
   }
 }

@@ -5,6 +5,7 @@ import org.clulab.habitus.scraper.corpora.PageCorpus
 import org.clulab.habitus.scraper.domains.Domain
 import org.clulab.habitus.scraper.{Cleaner, Page}
 import org.clulab.habitus.scraper.scrapers.Scraper
+import org.clulab.habitus.scraper.scrapers.sitemap.SitemapScraper
 import org.clulab.habitus.scraper.scrapes.IndexScrape
 import org.clulab.utils.{FileUtils, ProgressBar}
 
@@ -48,6 +49,7 @@ object PageIndexScraper {
 
 class CorpusIndexScraper(val corpus: PageCorpus) {
   val scrapers: Seq[PageIndexScraper] = Seq(
+    new SitemapScraper(),
     new AdomOnlineIndexScraper(),
     new CitiFmOnlineIndexScraper(),
     new EtvGhanaIndexScraper(),
@@ -80,10 +82,12 @@ class CorpusIndexScraper(val corpus: PageCorpus) {
       val progressBar = ProgressBar("CorpusIndexScraper.scrape", corpus.items)
 
       progressBar.foreach { page =>
-        progressBar.setExtraMessage(page.url.toString)
+        // progressBar.setExtraMessage(page.url.toString)
 
         val scraper = getPageScraper(page)
-        val scrapeTry = Try(scraper.scrapeTo(browser, page, baseDirName, printWriter))
+        val scrapeTry = Try(
+          scraper.scrapeTo(browser, page, baseDirName, printWriter)
+        )
 
         if (scrapeTry.isFailure)
           println(s"Scrape of ${page.url.toString} failed!")
