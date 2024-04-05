@@ -1,7 +1,7 @@
 [![Build Status](https://github.com/clulab/habitus/workflows/Habitus%20CI/badge.svg)](https://github.com/clulab/habitus/actions)
 [![Docker Version](https://shields.io/docker/v/clulab/habitus?sort=semver&label=docker&logo=docker)](https://hub.docker.com/r/clulab/habitus/tags)
 
-# HEURISTICS
+# HABITUS
 
 This repository contains CLU lab's NLP software for the DARPA HEURISTICS project, which is part of the [HABITUS program](https://www.darpa.mil/program/habitus).
 
