@@ -1,0 +1,6 @@
+file:/causes.txt
+file:/conditions.txt
+file:/decisions.txt
+file:/other.txt
+file:/processes.txt
+file:/proportions.txt
