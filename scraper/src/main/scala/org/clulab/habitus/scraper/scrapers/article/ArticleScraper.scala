@@ -38,6 +38,8 @@ abstract class PageArticleScraper(domain: Domain) extends Scraper[ArticleScrape]
 
 class CorpusArticleScraper(val corpus: PageCorpus) {
   val scrapers = Seq(
+    // new ExperimentArticleScraper(),
+    new SaedArticleScraper(),
     new AdomOnlineArticleScraper(),
     new CitiFmOnlineArticleScraper(),
     new EtvGhanaArticleScraper(),
