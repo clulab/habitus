@@ -1,5 +1,7 @@
 package org.clulab.habitus.apps.utils
 
+import java.nio.charset.StandardCharsets
+
 class DateString(text: String) {
 
   def canonicalize: String = DateString.canonicalizeDate(text)
@@ -17,14 +19,23 @@ object DateString {
   val   looseShortRegex = s"^$monthGroup (\\d\\d?), (\\d\\d\\d\\d)$$".r // August 21, 2016
   val    looseLongRegex = s"^$monthGroup (\\d\\d?), (\\d\\d\\d\\d) (\\d\\d?):(\\d\\d) ([ap]m)$$".r // July 5, 2023 3:26 pm
   val capitalRadioRegex = s"^(\\d\\d) $monthGroup (\\d\\d\\d\\d) - (\\d\\d):(\\d\\d)$$".r
+  val        slashRegex = s"^(\\d\\d)/(\\d\\d)/(\\d\\d\\d\\d) (\\d\\d):(\\d\\d):(\\d\\d)$$".r // 12/21/2010 16:16:46
+
+  // This happens for some bad PDFs.
+  val badString = new String(Array[Byte](-1, -3, -1, -3), StandardCharsets.UTF_16)
 
   def apply(text: String): DateString = new DateString(text)
 
   def canonicalizeDate(date: String): String = {
+
     date match {
       case "" =>
         date
+      case value if value == badString =>
+        ""
       case tightRegex(year, month, day, hour, minute, second, timezoneHour, timezoneMinute) =>
+        s"${year}-${month}-${day}T${hour}:${minute}:${second}"
+      case slashRegex(month, day, year, hour, minute, second) =>
         s"${year}-${month}-${day}T${hour}:${minute}:${second}"
       case tightShortTRegex(year, month, day, hour, minute, second, timezoneHour) =>
         s"${year}-${month}-${day}T${hour}:${minute}:${second}"
@@ -61,7 +72,7 @@ object DateString {
 
         s"${year}-${monthDigits}-${day}T${hour}:${minute}"
       case _ =>
-        throw new RuntimeException(s"#date is unmatched!")
+        throw new RuntimeException(s"$date is unmatched!")
     }
   }
 }
