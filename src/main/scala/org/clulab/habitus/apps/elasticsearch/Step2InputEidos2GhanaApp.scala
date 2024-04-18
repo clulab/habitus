@@ -40,9 +40,9 @@ object Step2InputEidos2GhanaApp extends App with Logging {
   val credentialsFilename = "../credentials/elasticsearch-credentials.properties"
   val deserializer = new JLDDeserializer()
   val url = new URL("http://localhost:9200")
-  // val url = new URL("https://elasticsearch.keithalcock.com")
+//   val url = new URL("https://elasticsearch.keithalcock.com")
   // val indexName = "habitus4"
-  val indexName = "dataset55k4"
+  val indexName = "dataset55ka4"
   val datasetName = "dataset55k.tsv"
   val regionName = "ghana"
   val alreadyNormalized = true
@@ -301,7 +301,10 @@ object Step2InputEidos2GhanaApp extends App with Logging {
         sentences.zipWithIndex.foreach { case (sentence, sentenceIndex) =>
           val causal = causalMentionGroups.contains(sentenceIndex)
           val cleanText = getSentenceText(document, sentence)
-          val tsvRecord = localTsvRecord
+          // This localTsvRecord is the first sentence of the document.
+          // We need to find the sentenceIndexth sentence instead.
+          // val tsvRecord = localTsvRecord
+          val tsvRecord = urlSentenceIndexToTsvRecordMap(url, sentenceIndex)
           val contextBefore = sentences
               .slice(sentenceIndex - contextWindow, sentenceIndex)
               .map(getSentenceText(document, _))
