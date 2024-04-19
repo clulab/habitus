@@ -166,6 +166,117 @@ scenario6 = Scenario(
 	]
 )
 
+
+scenario_legal_1a = Scenario(
+	"Imagine that the Ghanaian government implements a reform to put cash into the hands of Ghanaian youth involved in illegal small-scale mining or galamsey through alternative economic opportunities in an effort to provide livelihoods in areas where galamsey proliferates.  Suppose that within three months after the launch of the reform, illegal small-scale mining or galamsey in those areas has been reduced by half.  The most likely explanation for the success of the reform is because….",
+	[
+	]
+)
+
+scenario_legal_1b = Scenario(
+	"Imagine that the Ghanaian government implements a reform to put cash into the hands of Ghanaian youth involved in illegal small-scale mining or galamsey through alternative economic opportunities in an effort to provide livelihoods in areas where galamsey proliferates.  Suppose that within three months after the launch of the reform, illegal small-scale mining or galamsey in those areas has not changed.  The most likely explanation for the failure of the reform is because…",
+	[
+	]
+)
+scenario_legal_2a = Scenario(
+	"Imagine that the Ghanaian government used soldiers and police personnel to curb illegal small-scale mining or galamsey.  Military-style operations punished illegal small-scale mining or galamsey activity. They arrested many illegal miners or galamseyers and seized mining equipment. Suppose that within three months after the launch of the campaign, illegal small-scale mining or galamsey had decreased. The most likely explanation for the success of the operations is because…",
+	[
+	]
+)
+
+scenario_legal_2b = Scenario(
+	"Imagine that  the Ghanaian government used soldiers and police personnel to curb illegal small-scale mining or galamsey.  Military-style operations punished illegal small-scale mining or galamsey activity.  They arrested many illegal miners or galamseyers and seized mining equipment.  Suppose that within three months after the launch of the campaign, illegal small-scale mining or galamsey had not changed or in some areas had even increased.  The most likely explanation for the failure of the operation is because…",
+	[
+	]
+)
+
+scenario_legal_3a = Scenario(
+	"Imagine that the Ghanaian government attempted to formalize illegal small-scale mining or galamsey in Ashanti by introducing a new Minerals and Mining Act which has a provision for licenses for small-scale mining.  Suppose that within three months after the launch of the law,  illegal small-scale mining or galamsey has decreased.  Many illegal small-scale miners or galamseyers applied for small-scale mining licenses.  The most likely explanation for the success of the law is because…",
+	[
+	]
+)
+
+scenario_legal_3b = Scenario(
+	"Imagine that the Ghanaian government attempted to formalize illegal small-scale mining or galamsey in Ashanti by introducing a new Minerals and Mining Act which has a provision for licenses for small-scale mining.  Suppose that within three months after the launch of the law,  illegal small-scale mining or galamsey has not decreased.  The most likely explanation for the failure of the law is because…",
+	[
+	]
+)
+
+scenario_uganda_1a = Scenario(
+    "Imagine that the new Mining Act of 2022 has motivated local Karamoja people to obtain an artisanal mining license rather than operating illegally. Suppose that within three months the number of license applications received by the government increased three times. This is because...",
+    [
+        "Locals who were participating in artisanal mining without a license felt motivated to apply for a license",
+        "Locals who were not previously mining now see it as a new economic opportunity",
+        "Local authorities setup a system to help locals apply for an artisanal mining license",
+        "Locals are influenced by the arrival of non-Karamoja people who came to mine Karamoja minerals",
+        "None of the above"
+    ]
+)
+
+scenario_uganda_1b = Scenario(
+    "Imagine that the new Mining Act of 2022 has motivated local Karamoja people to obtain an artisanal mining license rather than operating illegally. Suppose that within three months the government did not receive any license applications. This is because...",
+    [
+        "Locals involved in illegal artisanal mining do not trust the government and would prefer to operate without a license",
+        "Locals who would like a license are unaware of the new Mining Act of 2022 which allows applying for an artisanal mining license",
+        "Locals who would like a license do not have financial means to pay license fees",
+        "Locals involved in illegal artisanal mining are unaware that it is illegal",
+        "None of the above"
+    ]
+)
+
+scenario_uganda_2a = Scenario(
+    "Imagine that China has recently opened a large-scale mining project in your area. Local artisanal miners have received an offer to work at this site. Suppose that local people continue to engage in artisanal mining without joining the Chinese mining project. This is because...",
+    [
+        "The Chinese mining project pays less and does not offer additional benefits to locals",
+        "Locals prefer to work for themselves",
+        "Locals prefer to have the option of farming and artisanal mining than working exclusively for a Chinese mining project",
+        "Locals do not trust Chinese",
+        "None of the above"
+    ]
+)
+
+scenario_uganda_2b = Scenario(
+    "Imagine that China has recently opened a large-scale mining project in your area. Local artisanal miners have received an offer to work at this site. Suppose that within a month the number of artisanal miners has decreased in the area. This is because...",
+    [
+        "Those involved in artisanal mining have begun working for the Chinese mining project",
+        "Those involved in artisanal mining were forced to leave the area because the Chinese took control of the mining area where they used to mine",
+        "Those involved in artisanal mining have sought other economic opportunities within the area",
+        "Those involved in artisanal mining went back to farming (growing crops or rearing livestock)",
+        "None of the above"
+    ]
+)
+
+scenario_uganda_3a = Scenario(
+    "Imagine there has been a U.S.-funded livelihoods project in Karamoja. The project aims to provide inputs and other supplies to increase crop and livestock production and create jobs for youth in Karamoja. Suppose that local government then notice that farming and livestock activities recently increased. This is because...",
+    [
+        "Those previously involved in artisanal mining have started to move back to farming and livestock",
+        "Those who were never engaged in mining decided to take advantage of opportunities offered by the project",
+        "Farmers from neighboring districts to Karamoja have moved to the area to participate in the project",
+        "None of the above"
+    ]
+)
+
+scenario_uganda_3b = Scenario(
+    "Imagine there has been a U.S.-funded livelihoods project in Karamoja. The project aims to provide inputs and other supplies to increase crop and livestock production and create jobs for youth in Karamoja. Suppose that local government then notice that farming or livestock activities have remained unchanged. This is because...",
+    [
+        "Those working in artisanal mining are skeptical of the U.S.-funded project",
+        "Those working in artisanal mining think they are already making a good livelihood and do not wish to change it",
+        "Those working in artisanal mining can both mine and participate in the U.S.-funded project",
+        "None of the above"
+    ]
+)
+
+scenario_uganda_4 = Scenario(
+    "An area which was typically allocated by LC1 for farming and livestock rearing has been taken away for mining, destroying the land and vegetation around it. This has resulted in community tensions with the mining operator. What impact would this have on mining activities?",
+    [
+        "Those involved in mining would continue mining",
+        "Those involved in mining would relocate to a different area where they would continue mining",
+        "Security (army) was moved to the area to maintain peace",
+        "Mining operator would offer benefits to the community to allow them to mine the area",
+        "None of the above"
+    ]
+)
+
 number_of_paraphrases = 10
 
 def paraphrase(sentence: str, context: str) -> list[str]:
@@ -211,7 +322,7 @@ def rank_choices(introduction: str, context: str, choices: list[str]) -> (list[t
 
 	last_question \
 = f"""Read the following question delimited with backticks ``` {introduction} ```. Use the following context sentences delimited with backticks as background knowledge ``` {context} ```.
-      Provide long and thorough justifications for each of the choices independently, without referring to the other choices, while citing the context using quotes.:
+      Provide long and thorough justifications for each of the choices independently, without referring to the other choices, while citing the context using quotes:
 	```{choices_str}```"""
 
 	chat_gpt.question = last_question
@@ -264,6 +375,17 @@ def one_explanation(outputs: list[str]) -> str:
 
 	question = "You are given a sentence that is formulated and justified in several ways. Combine those justifications" \
 			   "into a single one for all the sentences while citing the original justifications: \n\n" + '\n\n'.join(outputs)
+
+	chat_gpt.question = question
+	result = chat_gpt.calL_gpt()
+
+	return result
+
+
+
+def ask_gpt(to_ask: str) -> str:
+
+	question = to_ask
 
 	chat_gpt.question = question
 	result = chat_gpt.calL_gpt()
@@ -357,28 +479,57 @@ if __name__ == "__main__":
 		threshold = threshold1
 
 	sentence_transformer_name: str = "all-MiniLM-L6-v2"
-	input_corpus_file_name: str = "../corpora/dataset55k.tsv"
-	input_vector_file_name: str = "../corpora/dataset55k.npy"
+	input_corpus_file_name: str = "../corpora/uganda.tsv"
+	input_vector_file_name: str = "../corpora/uganda.npy"
 	# input_corpus_file_name, input_vector_file_name = get_in_and_out()
 	input_vectors = numpy.load(input_vector_file_name)
 	data_frame = pandas.read_csv(input_corpus_file_name, sep="\t", encoding="utf-8", keep_default_na=False,
 		dtype={"file": str, "index": int, "sentence": str, "causal": bool, "belief": bool}
 	) # [:100]
+	print(len(data_frame))
 	sentence_transformer = SentenceTransformer(sentence_transformer_name)
 
 	matcher = Matcher(sentence_transformer, input_vectors, data_frame, threshold, threshold2)
 
-	scenarios_list = [(scenario_official_1a, "scenario_1a"),
-					  (scenario_official_1b, "scenario_1b"),
-					  (scenario_official_2a, "scenario_2a"),
-					  (scenario_official_2b, "scenario_2b"),
-					  (scenario_official_3, "scenario_3"),
-					  (scenario_official_4a, "scenario_4a"),
-					  (scenario_official_4b, "scenario_4b")]
+	#scenarios_list = [(scenario_legal_1a, "scenario_legal_1a"),
+#					  (scenario_legal_1b, "scenario_legal_1b"),
+#					  (scenario_legal_2a, "scenario_legal_2a"),
+#					  (scenario_legal_2b, "scenario_legal_2b"),
+#					  (scenario_legal_3a, "scenario_legal_3a"),
+#					  (scenario_legal_3b, "scenario_legal_3b")]
+
+	#scenarios_list = [(scenario_official_1a, "scenario_official_1a")]
+
+	scenarios_list = [
+		#(scenario_uganda_1a, "scenario_uganda_1a"),
+		#(scenario_uganda_1b, "scenario_uganda_1b"),
+		(scenario_uganda_2a, "scenario_uganda_2a"),
+		(scenario_uganda_2b, "scenario_uganda_2b"),
+		(scenario_uganda_3a, "scenario_uganda_3a"),
+		(scenario_uganda_3b, "scenario_uganda_3b"),
+		(scenario_uganda_4, "scenario_uganda_4")
+	]
 
 	for scenario in scenarios_list:
 
 	#scenario_chosen = scenario_official_2b
+
+		print(scenario[1] + ":")
+
+		scenario_chosen = scenario[0]
+
+		print("Prompt:", scenario_chosen.introduction)
+		print("Choices:")
+
+		for choice in scenario_chosen.choices:
+			print(choice)
+
+		#print("Choices:", scenario_chosen.choices)
+
+		print()
+
+		#continue
+
 
 		path = "results/" + scenario[1]
 
@@ -399,7 +550,7 @@ if __name__ == "__main__":
 			if context_index == 4:
 				current_type = "beliefpluscausal"
 
-			f = open(path + "/" + current_type + ".txt", "w")
+			f = open(path + "/" + current_type + "_question.txt", "w", encoding='utf-8')
 
 			combinations = []
 			temporary_choices = []
@@ -409,15 +560,16 @@ if __name__ == "__main__":
 
 			scenario_match = get_scenario_match(context_index)
 
-			f.write(f"Use the following context sentences delimited with backticks as background knowledge ``` {scenario_match} ``` to explain the most likely answer to the question ``` {scenario_chosen.introduction} ```. Provide long and thorough justifications, while citing the context using quotes.")
+			# USE THIS FOR QUICK ANSWERING - SAME AS CHAT
+			#target = f"Use the following context sentences delimited with backticks as background knowledge ``` {scenario_match} ``` to explain the most likely answer to the question ``` {scenario_chosen.introduction} ```. Provide long and thorough justifications, while citing the context using quotes."
+			#f.write(target)
+			#f.close()
+			#answer_gpt = ask_gpt(target)
+			#f = open(path + "/" + current_type + "_answer.txt", "w")
+			#f.write(answer_gpt)
+			#f.close()
 
-			#f.write("\n")
-
-			#f.write(scenario_match + "\n")
-
-			f.close()
-
-			continue
+			#continue
 
 			choices_str = ""
 
