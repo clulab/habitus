@@ -48,6 +48,13 @@ class HappyGhanaArticleScraper extends PageArticleScraper(HappyGhanaDomain) {
         }
         .filter(_.nonEmpty)
         .filterNot(_.startsWith("READ MORE: "))
+        .filterNot(_ == "<-Advertisement->")
+//        .map { string =>
+//          string
+//              .replace("<https://", "http:")
+//              .replace(".html>", ".html")
+//              .replace("7204738/>", "7204738/")
+//        }
         .mkString("\n\n")
 
     if (text.contains('<'))
