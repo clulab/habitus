@@ -38,6 +38,7 @@ class TextWithPdfArticleScraper extends PageArticleScraper(TextWithPdfDomain) {
     val jsonLocationName = FileEditor(new File(textLocationName)).setExt("json").get
     val json = scraped.toJson
 
+    println(page)
     Using.resource(FileUtils.printWriterFromFile(jsonLocationName)) { printWriter =>
       printWriter.println(json)
     }

@@ -16,7 +16,7 @@ import scala.util.Using
 object Step1OutputEidos extends App {
   implicit val formats: DefaultFormats.type = org.json4s.DefaultFormats
 
-  val baseDirectoryName = args.lift(0).getOrElse("../corpora/ghana-stakeholders/stakeholders/articles")
+  val baseDirectoryName = args.lift(0).getOrElse("../corpora/ghana/sitemap/articles/www_adomonline_com")
   val inAndOutFiles = new File(baseDirectoryName)
       .listFilesByWildcard("*.json", recursive = true)
       .map { inFile =>
@@ -31,7 +31,7 @@ object Step1OutputEidos extends App {
       .withValue("ontologies.useGrounding", ConfigValueFactory.fromAnyRef(false))
   val eidosSystem = new EidosSystem(config)
   val count = new AtomicInteger()
-  val parFiles = inAndOutFiles // ThreadUtils.parallelize(inAndOutFiles, 2)
+  val parFiles = ThreadUtils.parallelize(inAndOutFiles, 5)
 
   parFiles.foreach { case (inFile, outFile) =>
     try {
