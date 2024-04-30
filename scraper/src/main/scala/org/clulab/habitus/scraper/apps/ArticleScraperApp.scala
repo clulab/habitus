@@ -6,9 +6,9 @@ import org.clulab.habitus.scraper.corpora.PageCorpus
 import org.clulab.habitus.scraper.scrapers.article.CorpusArticleScraper
 
 object ArticleScraperApp extends App {
-  val term = "set"
-  val corpusFileName = args.lift(0).getOrElse(s"./scraper/corpora/ghana-set/$term/articlecorpus.txt")
-  val baseDirName = args.lift(1).getOrElse(s"../corpora/ghana-set/$term/articles")
+  val term = "stakeholders"
+  val corpusFileName = args.lift(0).getOrElse(s"./scraper/corpora/ghana/$term/articlecorpus.txt")
+  val baseDirName = args.lift(1).getOrElse(s"../corpora/ghana-stakeholders/$term/articles")
   val corpus = PageCorpus(corpusFileName)
   val scraper = new CorpusArticleScraper(corpus)
   val browser: Browser = new HabitusBrowser()

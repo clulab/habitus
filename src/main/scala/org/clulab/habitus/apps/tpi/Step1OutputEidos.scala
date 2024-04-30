@@ -16,7 +16,7 @@ import scala.util.Using
 object Step1OutputEidos extends App {
   implicit val formats: DefaultFormats.type = org.json4s.DefaultFormats
 
-  val baseDirectoryName = args.lift(0).getOrElse("../corpora/ghana-set/set/articles")
+  val baseDirectoryName = args.lift(0).getOrElse("../corpora/ghana-stakeholders/stakeholders/articles")
   val inAndOutFiles = new File(baseDirectoryName)
       .listFilesByWildcard("*.json", recursive = true)
       .map { inFile =>
