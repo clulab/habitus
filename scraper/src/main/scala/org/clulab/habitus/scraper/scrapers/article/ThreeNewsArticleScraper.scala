@@ -31,7 +31,7 @@ class ThreeNewsArticleScraper extends PageArticleScraper(ThreeNewsDomain) {
         .find { jValue =>
           val string = (jValue \ "@type").extract[String]
 
-          string == "Article" || string == "NewsArticle"
+          string == "Article" || string == "NewsArticle" || string == "WebPage"
         }
         .get
     val personOpt = graph.arr
