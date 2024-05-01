@@ -57,8 +57,14 @@ class ThreeNewsArticleScraper extends PageArticleScraper(ThreeNewsDomain) {
           val html = s"<html><body><div>$text</div></body></html>"
           val doc = browser.parseString(html)
           val cleanText = (doc >> elementList("body > div")).head.text.replace("]]>", "").trim
-
-          if (cleanText.contains('<'))
+              .replace("""<blockquote class=”twitter-tweet”></blockquote> <script async src=”https://platform.twitter.com/widgets.js” charset=”utf-8″></script>""", "")
+              .replace("""<blockquoteclass=”twitter-tweet” data-lang=”en”>""", "")
+              .replaceAll("""<span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start">.</span>""", "")
+              .replaceAll("""<span style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" data-mce-type="bookmark" class="mce_SELRES_start">.</span>""", "")
+              .replaceAll("<blockquote .*?</blockquote> <script .*?</script>", "")
+              .replace("!<”", "!”")
+          if (cleanText.contains('<') && !(cleanText.contains("GII<") || cleanText.contains("< ~70") || cleanText.contains("<20") ||
+              cleanText.contains("< GHS") || cleanText.contains("assets < liabilities")) )
             throw new RuntimeException("HTML was found in text!")
           cleanText
         }
