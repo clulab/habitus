@@ -28,6 +28,7 @@ https://www.happyghana.com/post-sitemap27.xml
 https://www.happyghana.com/post-sitemap28.xml
 https://www.happyghana.com/post-sitemap29.xml
 https://www.happyghana.com/post-sitemap30.xml
+https://www.happyghana.com/page-sitemap.xml
 https://www.happyghana.com/category-sitemap.xml
 https://www.happyghana.com/post_tag-sitemap1.xml
 https://www.happyghana.com/post_tag-sitemap2.xml
