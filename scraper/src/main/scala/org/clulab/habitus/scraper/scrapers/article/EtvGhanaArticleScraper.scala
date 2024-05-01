@@ -46,10 +46,16 @@ class EtvGhanaArticleScraper extends PageArticleScraper(EtvGhanaDomain) {
         .map { paragraph =>
           paragraph.text.trim
         }
+        .map { text =>
+          text
+            .replaceAll("<iframe .*?</iframe>", "")
+            .replace("<div style=”position:relative;height:0;padding-bottom:58.33%”></div>", "")
+            .replaceAll("<blockquote .*?</blockquote> <script .*?</script>", "")
+        }
         .filter(_.nonEmpty)
         .mkString("\n\n")
 
-    if (text.contains('<'))
+    if (text.contains('<') && !(text.contains("<[email protected]>") || text.contains("<-Advertisement->")))
       throw new RuntimeException("HTML was found in text!")
     ArticleScrape(page.url, Some(title), Some(dateline), bylineOpt, text)
   }
