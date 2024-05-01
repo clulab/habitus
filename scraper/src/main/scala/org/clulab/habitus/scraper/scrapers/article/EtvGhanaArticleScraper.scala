@@ -29,7 +29,8 @@ class EtvGhanaArticleScraper extends PageArticleScraper(EtvGhanaDomain) {
     val graph = (jObject \ "@graph").extract[JArray]
     val newsArticle = graph.arr
         .find { jValue =>
-          (jValue \ "@type").extract[String] == "NewsArticle"
+          val typ = (jValue \ "@type").extract[String]
+          typ == "NewsArticle" | typ == "WebPage"
         }
         .get
     val dateline = (newsArticle \ "datePublished").extract[String]
