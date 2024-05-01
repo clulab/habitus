@@ -17,9 +17,4 @@ https://www.etvghana.com/post-sitemap16.xml
 https://www.etvghana.com/post-sitemap17.xml
 https://www.etvghana.com/post-sitemap18.xml
 https://www.etvghana.com/post-sitemap19.xml
-https://www.etvghana.com/page-sitemap.xml
-https://www.etvghana.com/category-sitemap.xml
-https://www.etvghana.com/post_tag-sitemap1.xml
-https://www.etvghana.com/post_tag-sitemap2.xml
-https://www.etvghana.com/post_tag-sitemap3.xml
-https://www.etvghana.com/author-sitemap.xml
+
