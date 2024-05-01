@@ -41,8 +41,13 @@ class EtvGhanaArticleScraper extends PageArticleScraper(EtvGhanaDomain) {
           case _ => false
         }
       }
-    val bylineOpt = personOpt.map { person => (person \ "name").extract[String] }
-    val paragraphs = doc >> elementList("div.content-inner > p")
+    val bylineOpt = personOpt.flatMap { person => (person \ "name").extractOpt[String] }
+    val paragraphs = {
+      val outerParagraphs = doc >> elementList("div.content-inner > p")
+
+      if (outerParagraphs.nonEmpty) outerParagraphs
+      else doc >> elementList("div.content-inner p")
+    }
     val text = paragraphs
         .map { paragraph =>
           paragraph.text.trim
