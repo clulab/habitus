@@ -9,6 +9,8 @@ import org.clulab.habitus.scraper.scrapes.ArticleScrape
 import org.json4s.jackson.JsonMethods
 import org.json4s.{DefaultFormats, JObject}
 
+import scala.util.Try
+
 class GhanaWebArticleScraper extends PageArticleScraper(GhanaWebDomain) {
   implicit val formats: DefaultFormats.type = DefaultFormats
 
@@ -21,9 +23,19 @@ class GhanaWebArticleScraper extends PageArticleScraper(GhanaWebDomain) {
         }
         .map { element =>
           val json = element.innerHtml.replace("\t", "  ")
-          val jObject = JsonMethods.parse(json).asInstanceOf[JObject]
 
-          jObject
+          val jObjectTry1 = Try { JsonMethods.parse(json).asInstanceOf[JObject] }
+          val jObjectTry2 = jObjectTry1.orElse(Try { JsonMethods.parse(json.filter(c => c >= 0x20)).asInstanceOf[JObject] })
+          val jObjectTry3 = jObjectTry2.orElse(Try { JsonMethods.parse(json.replace("\\", "\\\\")).asInstanceOf[JObject] })
+          val jObjectTry4 = jObjectTry3.orElse { Try {
+            val json2 = json
+              .replace("\\\",", "\",") // They have escaped the trailing quotes in the json
+              .replace("\\/", "/") // And forward slashes as well.
+
+            JsonMethods.parse(json2)
+          }}
+
+          jObjectTry4.get
         }
     val dateline = jObjectOpt.map { jObject =>
       ((jObject \ "@graph")(0) \ "datePublished").extract[String]
@@ -44,6 +56,8 @@ class GhanaWebArticleScraper extends PageArticleScraper(GhanaWebDomain) {
         .filter(_.nonEmpty)
         .mkString("\n\n")
 
+    if (text.isEmpty)
+      println("Why?")
     ArticleScrape(page.url, Some(title), Some(dateline), bylineOpt, text)
   }
 }

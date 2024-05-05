@@ -5,7 +5,7 @@ import org.clulab.utils.{FileUtils, Sourcer, StringUtils}
 import scala.util.Using
 
 object FilterLogApp extends App {
-  val inFileName = args.lift(0).getOrElse("/home/kwa/Projects/clulab/habitus-project/habitus/ArticleScraperApp-adomonline.log")
+  val inFileName = args.lift(0).getOrElse("/home/kwa/Projects/clulab/habitus-project/habitus/ArticleScraperApp-ghanaweb.log")
   val outFileName = args.lift(1).getOrElse("/home/kwa/Projects/clulab/habitus-project/habitus/articlecorpus.txt")
 
   Using.resources(
