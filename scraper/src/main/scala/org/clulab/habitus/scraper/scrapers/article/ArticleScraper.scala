@@ -74,7 +74,7 @@ class CorpusArticleScraper(val corpus: PageCorpus) {
 
   def scrape(browser: Browser, baseDirName: String): Unit = {
     // val progressBar = ProgressBar("CorpusArticleScraper.scrape", corpus.items)
-    val items = ThreadUtils.parallelize(corpus.items, 8)
+    val items = corpus.items // ThreadUtils.parallelize(corpus.items, 8)
     val index = new AtomicInteger(0)
 
     items.foreach { page =>

@@ -54,9 +54,9 @@ class PageCorpusDownloader(val corpus: PageCorpus) {
 //    val distinctCorpusItems = random.shuffle(corpus.items.distinct)
     val distinctCorpusItems = corpus.items.distinct
 
-    val progressBar = ProgressBar("PageCorpusDownloader.download", distinctCorpusItems)
+//    val progressBar = ProgressBar("PageCorpusDownloader.download", distinctCorpusItems)
 
-    progressBar.foreach { page =>
+    distinctCorpusItems.foreach { page =>
       // progressBar.setExtraMessage(page.url.toString + " ")
 
       val downloader = getPageDownloader(page)

@@ -85,9 +85,26 @@ class AdomOnlineArticleScraper extends PageArticleScraper(AdomOnlineDomain) {
         .orElse(getTextOptFromDoc("div.td-post-content > div.article-text"))
         .orElse(getTextOptFromDoc("div.td-post-content > div.option-bar"))
         .getOrElse("")
+    val text2 = if (text.isEmpty) {
+      val elements = doc >> elementList(AdomOnlineArticleScraper.specialDescription)
+      val text2 = getTextFromParagraphs(elements)
 
-    if (text.isEmpty)
-      throw new RuntimeException("There was no text in the article!")
-    ArticleScrape(page.url, Some(title), datelineOpt, bylineOpt, text)
+      if (text2.isEmpty)
+        throw new RuntimeException("There was no text in the article!")
+      text2
+    }
+    else text
+    ArticleScrape(page.url, Some(title), datelineOpt, bylineOpt, text2)
   }
+}
+
+object AdomOnlineArticleScraper {
+//  val specialClasses = Seq("article-body-item", "article__intro", "article__body", "post-single-content")
+  val specialDescription = "" +
+      "div.td-post-content > div, " +
+      "div.td-post-content > div.article-body-item, " +
+      "div.td-post-content > div.article__intro, " +
+      "div.td-post-content > div.article__body, " +
+      "div.td-post-content > div.post-single-content, " +
+      "div.td-page.content > p"
 }

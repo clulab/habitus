@@ -33,8 +33,6 @@ object Byline {
 class CitiFmOnlineArticleScraper extends PageArticleScraper(CitiFmOnlineDomain) {
   implicit val formats: DefaultFormats.type = DefaultFormats
 
-
-
   def scrape(browser: Browser, page: Page, html: String): ArticleScrape = {
     val doc = browser.parseString(html)
 
@@ -74,7 +72,15 @@ class CitiFmOnlineArticleScraper extends PageArticleScraper(CitiFmOnlineDomain) 
 
                 string == "Article" || string == "NewsArticle" || string == "WebPage"
               }
-              .get
+              .getOrElse {
+                val matchOpt = """<script type="application/ld\+json" class="yoast-schema-graph">(.*?)</script>""".r.findFirstMatchIn(html)
+                val jsonOpt = matchOpt.map(_.group(1))
+                val jObjectOpt = jsonOpt.map { json => JsonMethods.parse(json).asInstanceOf[JObject] }
+
+                println(jsonOpt)
+                println("What is wrong here?")
+                throw new RuntimeException("Something is wrong!")
+              }
           val personOpt = graph.arr
               .find { jValue =>
                 val string = (jValue \ "@type").extract[String]
@@ -84,8 +90,9 @@ class CitiFmOnlineArticleScraper extends PageArticleScraper(CitiFmOnlineDomain) 
           val dateline = (newsArticle \ "datePublished").extract[String]
           val bylineOpt: Option[String] = None
               .orElse((newsArticle \ "author" \ "name").extractOpt[String])
-              .orElse(personOpt.map { person => (person \ "name").extract[String] })
+              .orElse(personOpt.flatMap { person => (person \ "name").extractOpt[String] })
               .orElse((newsArticle \ "author" \ "@id").extractOpt[String])
+              .flatMap { byLine => if (byLine.nonEmpty) Some(byLine) else None }
 
           (Some(dateline), bylineOpt)
         }
