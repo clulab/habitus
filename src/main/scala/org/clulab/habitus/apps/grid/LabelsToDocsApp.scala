@@ -1,7 +1,7 @@
 package org.clulab.habitus.apps.grid
 
+import org.clulab.habitus.utils.TsvReader
 import org.clulab.utils.{FileUtils, Sourcer}
-import org.clulab.wm.eidoscommon.utils.TsvReader
 
 import scala.collection.mutable.ArrayBuffer
 import scala.util.Using

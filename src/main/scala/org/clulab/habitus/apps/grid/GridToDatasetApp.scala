@@ -1,7 +1,8 @@
 package org.clulab.habitus.apps.grid
 
+
+import org.clulab.habitus.utils.{CsvReader, CsvWriter, TsvReader, TsvWriter}
 import org.clulab.utils.{FileUtils, Sourcer, StringUtils}
-import org.clulab.wm.eidoscommon.utils.{CsvReader, CsvWriter, TsvReader, TsvWriter}
 import zamblauskas.csv.parser._
 import zamblauskas.functional._
 

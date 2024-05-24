@@ -1,6 +1,7 @@
 package org.clulab.habitus.apps.pwlwp
 
-import org.clulab.wm.eidoscommon.utils.{FileUtils, Logging, TsvWriter}
+import org.clulab.habitus.utils.TsvWriter
+import org.clulab.wm.eidoscommon.utils.{FileUtils, Logging}
 import org.json4s.jackson.JsonMethods
 import org.json4s.{DefaultFormats, JArray, JObject, JValue}
 

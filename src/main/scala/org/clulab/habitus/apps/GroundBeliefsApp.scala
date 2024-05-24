@@ -1,10 +1,10 @@
 package org.clulab.habitus.apps
 
 import org.clulab.embeddings.{WordEmbeddingMap, WordEmbeddingMapPool}
+import org.clulab.habitus.utils.TsvReader
 import org.clulab.processors.clu.CluProcessor
 import org.clulab.utils.{FileUtils, Sourcer}
 import org.clulab.wm.eidoscommon.EnglishTagSet
-import org.clulab.wm.eidoscommon.utils.TsvReader
 import zamblauskas.csv.parser._
 import zamblauskas.functional._
 

@@ -1,7 +1,8 @@
 package org.clulab.habitus.apps.pwlwp
 
+import org.clulab.habitus.utils.TsvWriter
 import org.clulab.wm.eidos.serialization.jsonld.{JLDDeserializer, JLDRelationCausation}
-import org.clulab.wm.eidoscommon.utils.{FileUtils, Logging, TsvWriter}
+import org.clulab.wm.eidoscommon.utils.{FileUtils, Logging}
 import org.json4s.DefaultFormats
 
 import scala.util.Using

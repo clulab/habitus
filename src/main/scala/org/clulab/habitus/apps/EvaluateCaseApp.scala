@@ -3,9 +3,9 @@ package org.clulab.habitus.apps
 import org.clulab.dynet.Utils
 import org.clulab.habitus.HabitusProcessor
 import org.clulab.habitus.apps.utils.{SentenceUtils, WordTypes}
+import org.clulab.habitus.utils.TsvWriter
 import org.clulab.processors.{Document, Sentence}
 import org.clulab.utils.FileUtils
-import org.clulab.wm.eidoscommon.utils.TsvWriter
 
 import java.io.PrintWriter
 import scala.util.Using

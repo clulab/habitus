@@ -1,7 +1,7 @@
 package org.clulab.habitus.printer
 
 import org.clulab.habitus.utils.Context
-import org.clulab.wm.eidoscommon.utils.TsvWriter
+import org.clulab.habitus.utils.TsvWriter
 
 import java.io.File
 import scala.collection.mutable

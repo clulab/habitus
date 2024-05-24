@@ -1,7 +1,7 @@
 package org.clulab.habitus.apps.grid
 
+import org.clulab.habitus.utils.{CsvWriter, TsvReader, TsvWriter}
 import org.clulab.utils.{FileUtils, Sourcer, StringUtils}
-import org.clulab.wm.eidoscommon.utils.{CsvWriter, TsvReader, TsvWriter}
 
 import scala.util.{Random, Using}
 

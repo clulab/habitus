@@ -1,7 +1,7 @@
 package org.clulab.habitus.scraper.apps
 
 import org.clulab.utils.{Sourcer, StringUtils}
-import org.clulab.wm.eidoscommon.utils.TsvReader
+import org.clulab.habitus.scraper.utils.TsvReader
 
 import java.net.{URL, URLEncoder}
 import java.nio.charset.StandardCharsets

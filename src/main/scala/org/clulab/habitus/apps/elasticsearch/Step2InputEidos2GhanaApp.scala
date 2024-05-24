@@ -5,13 +5,14 @@ import org.clulab.habitus.apps.utils.{AttributeCounts, DateString, JsonRecord}
 import org.clulab.habitus.elasticsearch.ElasticsearchIndexClient
 import org.clulab.habitus.elasticsearch.data.{CausalRelation, CauseOrEffect, DatasetRecord, LatLon, Location}
 import org.clulab.habitus.elasticsearch.utils.Elasticsearch
+import org.clulab.habitus.utils.{TsvReader, TsvWriter}
 import org.clulab.odin.{EventMention, Mention}
 import org.clulab.processors.{Document, Sentence}
 import org.clulab.utils.Sourcer
 import org.clulab.wm.eidos.attachments.{Decrease, Increase, NegChange, Negation, PosChange}
 import org.clulab.wm.eidos.document.AnnotatedDocument
 import org.clulab.wm.eidos.serialization.jsonld.{JLDDeserializer, JLDRelationCausation}
-import org.clulab.wm.eidoscommon.utils.{FileEditor, FileUtils, Logging, TsvReader, TsvWriter}
+import org.clulab.wm.eidoscommon.utils.{FileEditor, FileUtils, Logging}
 import org.json4s.DefaultFormats
 import org.json4s.jackson.JsonMethods
 

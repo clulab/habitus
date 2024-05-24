@@ -2,10 +2,10 @@ package org.clulab.habitus.apps
 
 import org.clulab.dynet.Utils
 import org.clulab.habitus.HabitusProcessor
+import org.clulab.habitus.utils.TsvReader
 import org.clulab.sequences.LexiconNER
 import org.clulab.struct.Counter
 import org.clulab.utils.{FileUtils, Sourcer}
-import org.clulab.wm.eidoscommon.utils.TsvReader
 
 import java.io.File
 import scala.util.{Failure, Try, Using}

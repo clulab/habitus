@@ -2,8 +2,9 @@ package org.clulab.habitus.apps.elasticsearch
 
 import ai.lum.common.FileUtils._
 import org.clulab.habitus.apps.utils.JsonRecord
+import org.clulab.habitus.utils.TsvWriter
 import org.clulab.wm.eidos.serialization.jsonld.JLDDeserializer
-import org.clulab.wm.eidoscommon.utils._
+import org.clulab.wm.eidoscommon.utils.{FileEditor, FileUtils, Logging, StringUtils}
 import org.json4s.DefaultFormats
 import org.json4s.jackson.JsonMethods
 
