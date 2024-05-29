@@ -1,6 +1,8 @@
 from pandas import DataFrame
+from numbers import Number
 from pipeline import InputStage
 
+import math
 import pandas
 
 class TpiInputStage(InputStage):
@@ -35,6 +37,13 @@ class TpiInputStage(InputStage):
             "prevSentence": str
         })
         data_frame["prevSentence"].fillna("", inplace=True)
+        # Sometimes a sentence can be trimmed to empty and considered nan.
+        # This is because of a mismatch in characters considered trimmable.
+        data_frame["sentence"].fillna("", inplace=True)
+        for index, sentence in enumerate(data_frame["sentence"]):
+            if sentence == "": # or (isinstance(sentence, Number) and math.isnan(sentence)):
+                print("There is an empty sentence!")
+                data_frame["sentence"][index] = "" # What should be done?
         return data_frame
 
     def run(self) -> DataFrame:

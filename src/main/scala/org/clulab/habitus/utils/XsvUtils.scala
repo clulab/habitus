@@ -2,16 +2,69 @@ package org.clulab.habitus.utils
 
 import java.io.{Closeable, PrintWriter}
 
-class EscapePair(char: Char, escaped: Char) {
-  val unescapedString: String = char.toString
-  val escapedString: String = "\\" + escaped
+// Be careful because this is copied in org.clulab.habitus.scraper.utils.
+class EscapePair(unescapedChar: Char, val escapedChar: Char) {
+  val unescapedString: String = unescapedChar.toString
+  val escapedString: String = EscapePair.escapementString + escapedChar
 
   def escape(string: String): String = string.replace(unescapedString, escapedString)
 
-  def unescape(string: String): String = string.replace(escapedString, unescapedString)
+  def unescape(string: String): String = {
+    val prev = string.replace(escapedString, unescapedString)
+    val next =
+      if (unescapedChar == EscapePair.escapementChar) {
+        val stringBuffer = new StringBuffer(string.length)
+        val isEscaped = string.foldLeft(false) {
+          case (true, char) if char == escapedChar =>
+            // Unescape the character.
+            stringBuffer.append(unescapedChar)
+            false
+          case (true, char @ _) =>
+            throw new RuntimeException("""Unexpected escaping of `$char` in "$string".""")
+          case (false, char) if char == EscapePair.escapementChar =>
+            true
+          case (false, char @ _) =>
+            stringBuffer.append(char)
+            false
+        }
+        if (isEscaped)
+          throw new RuntimeException("""Unexpected escapement at end of "$string".""")
+        stringBuffer.toString
+      }
+      else if (!string.contains(escapedString)) string // KISS
+      else {
+        // Change escaped to unescaped, but only if is there is an odd number of escapements before it.
+        val stringBuffer = new StringBuffer(string.length)
+        val isEscaped = string.foldLeft(false) {
+          case (true, char) if char == escapedChar =>
+            // Unescape the character.
+            stringBuffer.append(unescapedChar)
+            false
+          case (true, char @ _) =>
+            // It must have been some other escaped character.
+            stringBuffer.append(EscapePair.escapementChar)
+            stringBuffer.append(char)
+            false
+          case (false, char) if char == EscapePair.escapementChar =>
+            true
+          case (false, char @ _) =>
+            stringBuffer.append(char)
+            false
+        }
+        if (isEscaped)
+          stringBuffer.append(EscapePair.escapementChar)
+        stringBuffer.toString
+      }
+
+    if (prev != next)
+      println("Improvement!")
+    next
+  }
 }
 
 object EscapePair {
+  val escapementChar = '\\'
+  val escapementString = escapementChar.toString
 
   def apply(char: Char, escaped: Char) = new EscapePair(char, escaped)
 }
@@ -27,7 +80,7 @@ object XsvUtils {
   val backslashChar = '\\'
 
   val escapePairs = Seq(
-    EscapePair(XsvUtils.backslashChar, '\\'),
+    EscapePair(XsvUtils.backslashChar, '\\'), // This must come first.
     EscapePair(XsvUtils.nlChar, 'n'),
     EscapePair(XsvUtils.crChar, 'r'),
     EscapePair(XsvUtils.tabChar, 't')
