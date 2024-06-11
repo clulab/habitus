@@ -5,7 +5,7 @@ import org.clulab.utils.{FileUtils, Sourcer}
 import java.io.PrintWriter
 import scala.util.Using
 
-object CombineDatasetsApp extends App {
+object JoinDatasetsApp extends App {
   val inputFileNames = Seq(
     "../corpora/ghana-elasticsearch/ghana-elasticsearch-0.tsv",
     "../corpora/ghana-elasticsearch/ghana-elasticsearch-1.tsv",

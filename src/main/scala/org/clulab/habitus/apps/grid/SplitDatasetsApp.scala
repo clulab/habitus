@@ -15,8 +15,8 @@ object SplitDatasetsApp extends App {
     }
   }
 
-  val inputFileName = args.lift(0).getOrElse("../corpora/ghana-elasticsearch/ghana-elasticsearch.tsv")
-  val count = args.lift(1).getOrElse("300000").toInt
+  val inputFileName = args.lift(0).getOrElse("/home/kwa/data/Corpora/habitus-project/corpora/ghana-sitemap/articlesandeidos/www_ghanaweb_com.tsv")
+  val count = args.lift(1).getOrElse("3000000").toInt
   val outputFileNameFormatter = new FileNameFormatter(inputFileName)
 
   Using.resource(Sourcer.sourceFromFilename(inputFileName)) { source =>
