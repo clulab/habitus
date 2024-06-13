@@ -15,8 +15,8 @@ def get_in_and_out() -> Tuple[str, str]:
 
 if __name__ == "__main__":
     vector_model_name: str = "all-MiniLM-L6-v2"
-    input_file_name: str = "../corpora/ghana-elasticsearch/ghana-elasticsearch-4a.tsv"
-    output_file_name: str = "../corpora/ghana-elasticsearch/ghana-elasticsearch-4b.tsv"
+    input_file_name: str = "/home/kwa/Projects/clulab/habitus-project/corpora/ghana-set/set/set-a.tsv"
+    output_file_name: str = "/home/kwa/Projects/clulab/habitus-project/corpora/ghana-set/set/set-d.tsv"
 
     # input_file_name, output_file_name = get_in_and_out()
     pipeline = Pipeline(

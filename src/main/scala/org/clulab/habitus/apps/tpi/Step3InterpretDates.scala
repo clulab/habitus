@@ -7,8 +7,8 @@ import org.clulab.utils.{FileUtils, Logging, Sourcer}
 import scala.util.Using
 
 object Step3InterpretDates extends App with Logging {
-  val inputFileName = "../corpora/ghana-stakeholders/stakeholders/stakeholders-a.tsv"
-  val outputFileName = "../corpora/ghana-stakeholders/stakeholders/stakeholders-b.tsv"
+  val inputFileName = "/home/kwa/data/Corpora/habitus-project/corpora/ghana-sitemap/articlesandeidos/www_ghanaweb_com-3-a.tsv"
+  val outputFileName = "/home/kwa/data/Corpora/habitus-project/corpora/ghana-sitemap/articlesandeidos/www_ghanaweb_com-3-b.tsv"
   val expectedColumnCount = 22
 
   Using.resource(Sourcer.sourceFromFilename(inputFileName)) { inputSource =>
@@ -21,7 +21,9 @@ object Step3InterpretDates extends App with Logging {
       lines.foreach { line =>
         val columnCount = line.count(_ == '\t') + 1
         assert(columnCount == expectedColumnCount)
-        val Array(_, _, date) = tsvReader.readln(line, 3)
+        // They were written by Python and don't need to be escaped,
+        // especially since we aren't using most of the columns.
+        val Array(_, _, date) = tsvReader.readln(line, 3, false)
         val canonicalDate = DateString(date).canonicalize
 
         println(s"$date -> $canonicalDate")

@@ -14,9 +14,13 @@ class VectorInputStage(InputStage):
             "sentenceIndex": int,
             "sentence": str,
             "belief": bool,
+            "sentiment_scores": float,
             "sent_locs": str,
             "context_locs": str
-        })
+        }, usecols=[
+            "url", "sentenceIndex", "sentence", "belief", "sentiment_scores", "sent_locs", "context_locs"
+        ])
+        data_frame["sentence"].fillna("", inplace=True)
         return data_frame
 
     def run(self) -> DataFrame:

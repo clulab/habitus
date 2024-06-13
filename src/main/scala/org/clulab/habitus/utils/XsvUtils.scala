@@ -96,7 +96,9 @@ class TsvReader() extends XsvReader(XsvUtils.tabChar) {
     XsvUtils.escapePairs.reverse.foldLeft(string) { (string, escapePair) => escapePair.unescape(string) }
   }
 
-  def readln(line: String, length: Int = -1): Array[String] = {
+  def passthru(string: String): String = string
+
+  def readln(line: String, length: Int = -1, escaped: Boolean = true): Array[String] = {
     // Java will truncate unused columns from the back.  Therefore, add an extra,
     // used column at the end, but then remove the extra value that results.
     // The alternative is to split on a regular expression and include -1 as the
@@ -105,7 +107,7 @@ class TsvReader() extends XsvReader(XsvUtils.tabChar) {
     val values = (line + separatorChar + ' ')
       .split(separatorChar)
       .take(count)
-      .map(unescape)
+      .map(if (escaped) unescape else passthru)
 
     if (length >= 0) {
       if (length < values.length)

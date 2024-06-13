@@ -31,15 +31,17 @@ object Step4FindNearestLocation extends App with Logging {
     val header = "prevLocation\tprevDistance\tnextLocation\tnextDistance"
   }
 
-  val inputFileName = "../corpora/ghana-stakeholders/stakeholders/stakeholders-b.tsv"
-  val outputFileName = "../corpora/ghana-stakeholders/stakeholders/stakeholders-c.tsv"
+  val inputFileName = "/home/kwa/data/Corpora/habitus-project/corpora/ghana-sitemap/articlesandeidos/www_ghanaweb_com-3-b.tsv"
+  val outputFileName = "/home/kwa/data/Corpora/habitus-project/corpora/ghana-sitemap/articlesandeidos/www_ghanaweb_com-3-c.tsv"
   val expectedColumnCount = 23
   val tsvReader = new TsvReader()
   var articleIndex = 0
 
   def getLineLocationAndDistances(lines: Seq[String]): Seq[LineLocationAndDistance] = {
     val locationAndIndexes = lines.map { line =>
-      val columns = tsvReader.readln(line)
+      // They were written by Python and don't need to be escaped,
+      // especially since we aren't using most of the columns.
+      val columns = tsvReader.readln(line, escaped = false)
       val sentenceIndex = columns(3).toInt
       val sentenceLocation = columns(20)
 
@@ -95,7 +97,7 @@ object Step4FindNearestLocation extends App with Logging {
 
       while (lines.hasNext) {
         val headArticleLine = checkline(lines.next)
-        val headArticleUrl = tsvReader.readln(headArticleLine, 1).head
+        val headArticleUrl = tsvReader.readln(headArticleLine, 1, false).head
 
         println(s"$articleIndex\t$headArticleUrl")
         articleIndex += 1
@@ -105,7 +107,7 @@ object Step4FindNearestLocation extends App with Logging {
           if (
             lines.hasNext && {
               val tailArticleLine = checkline(lines.head)
-              val tailArticleUrl = tsvReader.readln(tailArticleLine, 1).head
+              val tailArticleUrl = tsvReader.readln(tailArticleLine, 1, false).head
 
               tailArticleUrl == headArticleUrl
             }

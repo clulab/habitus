@@ -71,6 +71,7 @@ object DateString {
         val monthDigits = monthMap(month)
 
         s"${year}-${monthDigits}-${day}T${hour}:${minute}"
+      case string if string.startsWith("-001") => ""
       case _ =>
         throw new RuntimeException(s"$date is unmatched!")
     }
