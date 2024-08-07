@@ -31,8 +31,8 @@ object Step4FindNearestLocation extends App with Logging {
     val header = "prevLocation\tprevDistance\tnextLocation\tnextDistance"
   }
 
-  val inputFileName = "/home/kwa/data/Corpora/habitus-project/corpora/ghana-sitemap/articlesandeidos/www_ghanaweb_com-3-b.tsv"
-  val outputFileName = "/home/kwa/data/Corpora/habitus-project/corpora/ghana-sitemap/articlesandeidos/www_ghanaweb_com-3-c.tsv"
+  val inputFileName = "../corpora/ghana-regulations/dataset/ghana-regulations-b.tsv"
+  val outputFileName = "../corpora/ghana-regulations/dataset/ghana-regulations-c.tsv"
   val expectedColumnCount = 23
   val tsvReader = new TsvReader()
   var articleIndex = 0

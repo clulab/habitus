@@ -36,16 +36,16 @@ object Step2InputEidos2aApp extends App with Logging {
 
   implicit val formats: DefaultFormats.type = org.json4s.DefaultFormats
   val contextWindow = 3
-  val baseDirectory = "../corpora/ghana-set/set/articles"
-  val inputFilename = "../corpora/ghana-set/set/set-d.tsv"
+  val baseDirectory = "/home/kwa/data/Corpora/habitus-project/corpora/ghana-sitemap/articlesandeidos/www_ghanaweb_com"
+  val inputFilename = "/home/kwa/data/Corpora/habitus-project/corpora/ghana-sitemap/articlesandeidos/citifmonline_com-0-d.tsv"
   val credentialsFilename = "../credentials/elasticsearch-credentials.properties"
   val deserializer = new JLDDeserializer()
   val url = new URL("http://localhost:9200")
   // val url = new URL("https://elasticsearch.keithalcock.com")
-  val indexName = "ghana-set"
-  val datasetName = "ghana-set.tsv"
+  val indexName = "www_ghanaweb_com-0" // This is temporary.
+  val datasetName = "ghana-sitemap.tsv"
   val regionName = "ghana"
-  val term = "set"
+  val term = "sitemap"
   val alreadyNormalized = true
 
   def jsonFileToJsonld(jsonFile: File): File =
@@ -293,7 +293,7 @@ object Step2InputEidos2aApp extends App with Logging {
         sentences.zipWithIndex.foreach { case (sentence, sentenceIndex) =>
           val causal = causalMentionGroups.contains(sentenceIndex)
           val cleanText = getSentenceText(document, sentence)
-          val tsvRecord = urlSentenceIndexToTsvRecordMap(url, sentenceIndex)
+          val tsvRecord = urlSentenceIndexToTsvRecordMap(url, sentenceIndex) // TODO: If this doesn't exist, then skip file!
           val contextBefore = sentences
               .slice(sentenceIndex - contextWindow, sentenceIndex)
               .map(getSentenceText(document, _))

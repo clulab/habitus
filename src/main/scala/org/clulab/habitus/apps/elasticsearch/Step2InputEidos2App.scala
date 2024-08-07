@@ -256,7 +256,16 @@ object Step2InputEidos2App extends App with Logging {
     val tsvReader = new TsvReader()
 
     lines.map { line =>
-      val Array(url, sentenceIndexString, sentence, beliefString, sentimentScore, sentenceLocationsString, contextLocationsString, vectorString) = tsvReader.readln(line, 8)
+      val Array(
+        url,
+        sentenceIndexString,
+        sentence,
+        beliefString,
+        sentimentScore,
+        sentenceLocationsString,
+        contextLocationsString,
+        vectorString
+      ) = tsvReader.readln(line, 8)
       val sentenceIndex = sentenceIndexString.toInt
       val belief = beliefString == "True"
       val sentimentScoreOpt = if (sentimentScore.isEmpty) None else Some(sentimentScore.toFloat)
