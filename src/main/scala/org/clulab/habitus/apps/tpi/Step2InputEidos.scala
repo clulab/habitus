@@ -19,8 +19,8 @@ import scala.util.Using
 object Step2InputEidos extends App with Logging {
   implicit val formats: DefaultFormats.type = org.json4s.DefaultFormats
   val contextWindow = 3
-  val baseDirectory = "../corpora/ghana-regulations/unknown/articles/local"
-  val outputFileName = "../corpora/ghana-regulations/dataset/ghana-regulations.tsv"
+  val baseDirectory = "../corpora/senegal/stakeholders/articles"
+  val outputFileName = "../corpora/senegal/stakeholders/senegal-stakeholders.tsv"
   val deserializer = new JLDDeserializer()
 
   def jsonFileToJsonld(jsonFile: File): File =
@@ -40,7 +40,7 @@ object Step2InputEidos extends App with Logging {
   }
 
   def jsonFileToTerm(jsonFile: File): String = {
-    "unknown"
+    "stakeholders"
 //    val path = jsonFile.getPath
 //    val term = StringUtils.afterLast(
 //      StringUtils.beforeLast(
