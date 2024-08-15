@@ -7,10 +7,11 @@ import org.clulab.habitus.scraper.Page
 import org.clulab.habitus.scraper.domains.DocxDomain
 import org.clulab.habitus.scraper.scrapes.ArticleScrape
 import org.clulab.utils.FileUtils
-import org.json4s.DefaultFormats
+import org.json4s.{DefaultFormats, JString}
 
 import java.io.{ByteArrayInputStream, File}
 import java.nio.file.{Files => JFiles}
+import scala.jdk.CollectionConverters._
 import scala.util.Using
 
 class DocxFileArticleScraper extends PageArticleScraper(DocxDomain) {
@@ -21,14 +22,39 @@ class DocxFileArticleScraper extends PageArticleScraper(DocxDomain) {
     val bytes = JFiles.readAllBytes(new File(docxLocationName).toPath)
     val mimeType = tika.detect(new ByteArrayInputStream(bytes))
 
-    require(mimeType == "application/x-tika-ooxml")
+    require(mimeType == "application/vnd.openxmlformats-officedocument.wordprocessingml.document")
+
+    def isDate(line: String): Boolean = {
+      line.forall { char => char.isDigit || char == '/' || char == ' '}
+    }
 
     val metadata = new Metadata()
     val text = tika.parseToString(new ByteArrayInputStream(bytes), metadata)
+    val byline = metadata.get("meta:last-author")
+    val dateline = metadata.get("dcterms:modified")
+    val title = new File(docxLocationName).getName.takeWhile(_ != '.')
+    val lines = text.lines().iterator().asScala.toVector
+    val lines1 = lines.dropWhile(_.isBlank)
+    assert(lines1.head.contains("Transcript"))
+    val lines2 = lines1.drop(1)
+    val lines3 =
+      if (isDate(lines2.head)) lines2.drop(1)
+      else {
+        val lines = lines2.drop(1)
 
-    println(metadata.names())
+        if (isDate(lines.head)) lines.drop(1)
+        else {
+          assert(false)
+          lines
+        }
+      }
+    val headless = lines3.dropWhile(_.isBlank)
+    val tailless = headless.reverse.dropWhile { line =>
+      line.isBlank || line.forall(_.isDigit) || line.contains("Page")
+    }.reverse
+    val patchedText = tailless.mkString("\n")
 
-    ArticleScrape(page.url, None, None, None, text)
+    ArticleScrape(page.url, Some(title), Some(dateline), Some(byline), patchedText)
   }
 
   def readDocx(page: Page, baseDirName: String): (String, String, String) = {
