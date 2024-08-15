@@ -42,6 +42,7 @@ class CorpusArticleScraper(val corpus: PageCorpus) {
     // new ExperimentArticleScraper(),
     // new SaedArticleScraper(),
     new TextWithPdfArticleScraper(),
+    new DocxFileArticleScraper(),
     new AdomOnlineArticleScraper(),
     new CitiFmOnlineArticleScraper(),
     new EtvGhanaArticleScraper(),
