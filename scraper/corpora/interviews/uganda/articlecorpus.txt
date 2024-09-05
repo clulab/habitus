@@ -1,0 +1,64 @@
+file:/Transcript UGA-E0001 (Makerere Univ).docx
+file:/Transcript UGA-E0002 (Makerere Univ).docx
+file:/Transcript_UGA-E0003 (Karamoja Mining Association).docx
+file:/Transcript_UGA-E0005 (Moroto FM reporter).docx
+file:/Transcript UGA-E0006 (NBS TV Karamoja).docx
+file:/Transcript UGA-E0007 (Makerere University).docx
+file:/Transcript UGA-E0008 (Uganda Ministry of Energy and Mining Development).docx
+file:/Transcript UGA-E0009 (Uganda Ministry of Energy and Mining Development).docx
+file:/Transcript UGA-E0011 (Amudat ex-DNRO).docx
+file:/Transcript UGA-E0067 (Uganda Ministry of Energy and Mining Development).docx
+file:/Amudat transcripts/Transcript UGA-E0011 (Amudat ex-DNRO).docx
+file:/Amudat transcripts/Transcript UGA-E0012 (Amudat DNRO).docx
+file:/Amudat transcripts/Transcript UGA-E0013 (Amudat CDO).docx
+file:/Amudat transcripts/Transcript UGA-E0014 (Amudat Chepkararat Gatekeeper).docx
+file:/Amudat transcripts/Transcript UGA-E0015 (Amudat Korenyang Gatekeeper).docx
+file:/Amudat transcripts/Transcript UGA-E0016 (Amudat Chepkararat Mixed FGD Community mapping).docx
+file:/Amudat transcripts/Transcript UGA-E0017 (Amudat Korenyang Men FGD Community Mapping).docx
+file:/Amudat transcripts/Transcript UGA-E0018 (Amudat Korenyang Women FGD Community mapping).docx
+file:/Amudat transcripts/Transcript UGA-E0019 (Amudat Korenyang Transect walk).docx
+file:/Amudat transcripts/Transcript UGA-E0020 (Amudat Chepkararat Transect walk).docx
+file:/Amudat transcripts/Transcript UGA-E0021 (Amudat Korenyang Mixed FGD Pairwise Ranking).docx
+file:/Amudat transcripts/Transcript UGA-E0022 (Amudat Chepkararat Men FGD Pairwise Ranking).docx
+file:/Amudat transcripts/Transcript UGA-E0023 (Amudat Chepkararat Women FGD Pairwise Ranking).docx
+file:/Kaabong transcripts/Transcript UGA-E0024 (Kaabong Mutunan Gatekeeper).docx
+file:/Kaabong transcripts/Transcript UGA-E0025 (Kaabong Lopedo Gatekeeper).docx
+file:/Kaabong transcripts/Transcript UGA-E0026 (Kaabong DNRO).docx
+file:/Kaabong transcripts/Transcript UGA-E0027 (Kaabong CDO).docx
+file:/Kaabong transcripts/Transcript UGA-E0028 (Kaabong Mutunan Mixed FGD Resource Mapping).docx
+file:/Kaabong transcripts/Transcript UGA-E0029 (Kaabong Lopedo Men FGD Resource Mapping).docx
+file:/Kaabong transcripts/Transcript UGA-E0030 (Kaabong Lopedo Women FGD Resource mapping).docx
+file:/Kaabong transcripts/Transcript UGA-E0031 (Kaabong Mutunan Transect).docx
+file:/Kaabong transcripts/Transcript UGA-E0032 (Kaabong Lopedo Transect walk).docx
+file:/Kaabong transcripts/Transcript UGA-E0033 (Kaabong Mutunan Mixed FGD Pairwise Ranking).docx
+file:/Kaabong transcripts/Transcript UGA-E0034 (Kaabong Lopedo Men FGD Pairwise Ranking).docx
+file:/Kaabong transcripts/Transcript UGA-E0035 (Kaabong Lopedo Women FGD Pairwise Ranking).docx
+file:/Moroto transcripts/Transcript UGA-E0004 RUCODET.docx
+file:/Moroto transcripts/Transcript UGA-E0048 Moroto Nanyidik Gatekeeper.docx
+file:/Moroto transcripts/Transcript UGA-E0049 Moroto Katikekile Gatekeeper.docx
+file:/Moroto transcripts/Transcript UGA-E0050 Moroto Lotongir Gatekeeper.docx
+file:/Moroto transcripts/Transcript UGA-E0051 Moroto DNRO.docx
+file:/Moroto transcripts/Transcript UGA-E0052 Moroto CDO.docx
+file:/Moroto transcripts/Transcript UGA-E0053 Moroto Resource Rights Africa.docx
+file:/Moroto transcripts/Transcript UGA-E0054 Moroto Nanyidik Mixed FGD Resource Mapping.docx
+file:/Moroto transcripts/Transcript UGA-E0055 Moroto Katikekile Men FGD Resouce Mapping.docx
+file:/Moroto transcripts/Transcript UGA-E0056 Moroto Katikekile Women FGD Resource Mapping.docx
+file:/Moroto transcripts/Transcript UGA-E0058 Moroto Lotongir Mixed FGD Resource Mapping.docx
+file:/Moroto transcripts/Transcript UGA-E0059 Moroto Katikekile Transect walk.docx
+file:/Moroto transcripts/Transcript UGA-E0060 Moroto Nanyidik Transect walk.docx
+file:/Moroto transcripts/Transcript UGA-E0061 Moroto Lotongir Transect walk.docx
+file:/Moroto transcripts/Transcript UGA-E0062 Moroto Nanyidik Mixed FGD Pairwise Ranking.docx
+file:/Moroto transcripts/Transcript UGA-E0063 Moroto Katikekile Men FGD Pairwise ranking.docx
+file:/Moroto transcripts/Transcript UGA-E0064 Moroto Katikekile Women FGD Pairwise Ranking.docx
+file:/Moroto transcripts/Transcript UGA-E0065 Moroto Lotongir Women FGD Pairwise Ranking.docx
+file:/Moroto transcripts/Transcript UGA-E0066 Moroto Lotongir Mixed FGD Pairwise Ranking.docx
+file:/Nakapiripirit transcripts/Transcript UGA-E0036 (Nakapiripirit Acerer Gatekeeper).docx
+file:/Nakapiripirit transcripts/Transcript UGA-E0037 (Nakapiripirit Kakomongole Gatekeeper).docx
+file:/Nakapiripirit transcripts/Transcript UGA-E0038 (Nakapiripirit DNRO).docx
+file:/Nakapiripirit transcripts/Transcript UGA-E0039 (Nakapiripirit DCDO).docx
+file:/Nakapiripirit transcripts/Transcript UGA-E0040 (Nakapiripirit Acerer Mixed FGD Resource Mapping).docx
+file:/Nakapiripirit transcripts/Transcript UGA-E0041 (Nakapiripiriti Nacheele Men FGD Resource mapping).docx
+file:/Nakapiripirit transcripts/Transcript UGA-E0042 (Nakapiripiriti Nacheele Women FGD Resource mapping).docx
+file:/Nakapiripirit transcripts/Transcript UGA-E0043 (Nakapiripirit Nacheele Men FGD Pairwise Ranking).docx
+file:/Nakapiripirit transcripts/Transcript UGA-E0044 (Nakapiripirit Nacheele Women FGD Pairwise Ranking).docx
+file:/Nakapiripirit transcripts/Transcript UGA-E0045 (Nakapiripirit Acerer Mixed FGD Pairwise ranking).docx

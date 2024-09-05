@@ -7,8 +7,8 @@ import org.clulab.utils.{FileUtils, Logging, Sourcer}
 import scala.util.Using
 
 object Step3InterpretDates extends App with Logging {
-  val inputFileName = "../corpora/senegal/stakeholders/senegal-stakeholders-a.tsv"
-  val outputFileName = "../corpora/senegal/stakeholders/senegal-stakeholders-b.tsv"
+  val inputFileName = "../corpora/interviews/uganda/uganda-interviews-a.tsv"
+  val outputFileName = "../corpora/interviews/uganda/uganda-interviews-b.tsv"
   val expectedColumnCount = 22
 
   Using.resource(Sourcer.sourceFromFilename(inputFileName)) { inputSource =>
