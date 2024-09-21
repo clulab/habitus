@@ -1,33 +1,33 @@
-file:/Transcript GHA-0001 Gatekeeper Binsere.docx
-file:/Transcript GHA-0002 Men FGD Community Mapping Binsere.docx
-file:/Transcript GHA-0003 Women FGD Community Mapping Binsere.docx
-file:/Transcript GHA-0005 Men FGD Pairwise Ranking Binsere.docx
-file:/Transcript GHA-0006 Women FGD Pairwise Ranking Binsere.docx
-file:/Transcript GHA-0007 Gatekeeper Mameriwa.docx
-file:/Transcript GHA-0008 Men FGD Community Mapping Mameriwa.docx
-file:/Transcript GHA-0009 Women FGD Community Mapping Mameriwa.docx
-file:/Transcript GHA-0011 Men FGD Pairwise Ranking Mameriwa.docx
-file:/Transcript GHA-0012 Women FGD Pairwise Ranking Mameriwa.docx
-file:/Transcript GHA-0013 Gatekeeper Manso Adubia.docx
-file:/Transcript GHA-0014 Men FGD Community Mapping Manso Abudia.docx
-file:/Transcript GHA-0015 Community Resource Mapping Women FGD Manso Adubia.docx
-file:/Transcript GHA-0017 Men FGD Pairwise Ranking Manso Adubia.docx
-file:/Transcript GHA-0018 Women FGD Pairwise Ranking Manso Adubia.docx
-file:/Transcript GHA-0019 Gatekeeper Essase Bontefufuo.docx
-file:/Transcript GHA-0020 Men FGD Community Map Essase Bontefufuo.docx
-file:/Transcript GHA-0021 Women FGD Community Mapping Essase Bontefufuo.docx
-file:/Transcript GHA-0023 Men FGD Pairwise Ranking Essase Bontefufuo.docx
-file:/Transcript GHA-0024 Women FGD Pairwise Ranking Essase Bontefufuo.docx
-file:/Transcript GHA-0025 Gatekeeper Dompoase.docx
-file:/Transcript GHA-0026 Men FGD Community Mapping Dompoase.docx
-file:/Transcript GHA-0027 Women FGD Community Mapping Dompoase.docx
-file:/Transcript GHA-0029 Men FGD Pairwise Dompoase.docx
-file:/Transcript GHA-0030 Women FGD Pairwise Dompoase.docx
-file:/Transcript GHA-E0001 National expert.docx
-file:/Transcript GHA-E0002 National expert (Univ of Ghana professor).docx
-file:/Transcript GHA-E0003 National expert (reporter).docx
-file:/Transcript GHA-E0004 Local Expert Obuasi Municipal.docx
-file:/Transcript GHA-E0008 Local Expert Adansi North.docx
-file:/Transcript GHA-E0009 Local Experts Adansi North.docx
-file:/Transcript GHA-E0010 Local Expert Kumasi Metro.docx
-file:/Transcript GHA-E0011 Local Expert Kumasi Metro.docx
+file:/Amansie South District (Manso Abudia)/Transcript GHA-0013 Gatekeeper Manso Adubia Amansie South.docx
+file:/Amansie South District (Manso Abudia)/Transcript GHA-0014 Men FGD Community Mapping Manso Abudia Amansie South.docx
+file:/Amansie South District (Manso Abudia)/Transcript GHA-0015 Community Resource Mapping Women FGD Manso Adubia Amansie South.docx
+file:/Amansie South District (Manso Abudia)/Transcript GHA-0017 Men FGD Pairwise Ranking Manso Adubia, Amansie South.docx
+file:/Amansie South District (Manso Abudia)/Transcript GHA-0018 Women FGD Pairwise Ranking Manso Adubia Amansie South.docx
+file:/Amansi North District (Dompoase)/Transcript GHA-0025 Gatekeeper Dompoase Adansi North.docx
+file:/Amansi North District (Dompoase)/Transcript GHA-0030 Women FGD Pairwise Dompoase, Adansi North.docx
+file:/Amansi North District (Dompoase)/Transcript GHA-0026 Men FGD Community Mapping Dompoase Adansi North.docx
+file:/Amansi North District (Dompoase)/Transcript GHA-E0008 Local Expert Adansi North.docx
+file:/Amansi North District (Dompoase)/Transcript GHA-0027 Women FGD Community Mapping Dompoase, Adansi North.docx
+file:/Amansi North District (Dompoase)/Transcript GHA-E0009 Local Experts Adansi North.docx
+file:/Amansi North District (Dompoase)/Transcript GHA-0029 Men FGD Pairwise Dompoase, Adansi North.docx
+file:/Amansi West District (Essase B.)/Transcript GHA-0019 Gatekeeper Essase Bontefufuo, Amansie West.docx
+file:/Amansi West District (Essase B.)/Transcript GHA-0020 Men FGD Community Map Essase Bontefufuo Amansie West.docx
+file:/Amansi West District (Essase B.)/Transcript GHA-0021 Women FGD Community Mapping Essase Bontefufuo Amansie West.docx
+file:/Amansi West District (Essase B.)/Transcript GHA-0023 Men FGD Pairwise Ranking Essase Bontefufuo Amansie West.docx
+file:/Amansi West District (Essase B.)/Transcript GHA-0024 Women FGD Pairwise Ranking Essase Bontefufuo Amansie West.docx
+file:/Kumasi/Transcript GHA-E0001 National expert Ashanti Region.docx
+file:/Kumasi/Transcript GHA-E0010 Local Expert Kumasi Metro Ashanti Region.docx
+file:/Kumasi/Transcript GHA-E0002 National expert (Univ of Ghana professor) Ashanti Region.docx
+file:/Kumasi/Transcript GHA-E0011 Local Expert Kumasi Metro Ashanti Region.docx
+file:/Kumasi/Transcript GHA-E0003 National expert (reporter) Ashanti Region.docx
+file:/Obuasi District (Binsere and Mameriva)/Transcript GHA-0001 Gatekeeper Binsere Obuasi.docx
+file:/Obuasi District (Binsere and Mameriva)/Transcript GHA-0008 Men FGD Community Mapping Mameriwa Obuasi.docx
+file:/Obuasi District (Binsere and Mameriva)/Transcript GHA-0002 Men FGD Community Mapping Binsere Obuasi.docx
+file:/Obuasi District (Binsere and Mameriva)/Transcript GHA-0009 Women FGD Community Mapping Mameriwa Obuasi.docx
+file:/Obuasi District (Binsere and Mameriva)/Transcript GHA-0003 Women FGD Community Mapping Binsere Obuasi.docx
+file:/Obuasi District (Binsere and Mameriva)/Transcript GHA-0011 Men FGD Pairwise Ranking Mameriwa Obuasi.docx
+file:/Obuasi District (Binsere and Mameriva)/Transcript GHA-0005 Men FGD Pairwise Ranking Binsere Obuasi.docx
+file:/Obuasi District (Binsere and Mameriva)/Transcript GHA-0012 Women FGD Pairwise Ranking Mameriwa Obuasi.docx
+file:/Obuasi District (Binsere and Mameriva)/Transcript GHA-0006 Women FGD Pairwise Ranking Binsere Obuasi.docx
+file:/Obuasi District (Binsere and Mameriva)/Transcript GHA-E0004 Local Expert Obuasi.docx
+file:/Obuasi District (Binsere and Mameriva)/Transcript GHA-0007 Gatekeeper Mameriwa Obuasi.docx
