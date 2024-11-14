@@ -1,8 +1,8 @@
 from pandas import DataFrame
 from pipeline import InnerStage
-from tqdm import tqdm
+# from tqdm import tqdm
 
-import itertools
+# import itertools
 import pandas
 import re
 import spacy
@@ -100,12 +100,22 @@ class LocationsPatch():
             names_to_values[name] = value
         return names_to_values
 
-    def add_location(self, locations: list[Location], entityWithIndices: str) -> None:
+    def add_location(self, locations: list[Location], entityWithIndices: TextWithIndices) -> None:
         # NER includes `the` in locations, but the location database file doesn't.
-        entityWithIndices = entityWithIndices.re_sub("^[Tt]he\s", "")
+        # TODO: what should be done if this is not the case?  There are some instances
+        # in the database.  Should both be checked?  Yes, they should indeed.
+        # However, they were not in the initial pass and we don't want to find locations
+        # that weren't there before, because that would necessitate reading every sentence
+        # just in case there was a new one.
+        # The canonical name should be the one in the database.
+        # Let's not find any new ones with this.
+        # entityWithIndices = entityWithIndices.re_sub("^[Tt]he\s", "")
+        entityWithIndices = entityWithIndices.re_sub("^the\s", "")
         if entityWithIndices.text in self.names_to_latitudes and not entityWithIndices.text in self.common_words and entityWithIndices.text[0].isupper():
             location = Location(entityWithIndices, self.names_to_latitudes[entityWithIndices.text], self.names_to_longitudes[entityWithIndices.text], self.names_to_canonical[entityWithIndices.text])
             locations.append(location)
+
+
 
     def get_cell_locations(self, textWithIndices: TextWithIndices) -> list[Location]:
         # Replace author citations where possible because they sometimes get labeled as locations.
@@ -133,10 +143,14 @@ def run():
     # Read input until EOF
     while True:
         line = sys.stdin.readline().strip()
-        if not line:
-            break
-        
-        locationsPatch.patch(line)
+
+        with open("debug.txt", "a") as file:
+            print(line, file=file)
+            locations = locationsPatch.patch(line)
+            for location in locations:
+                print(location, file=file)
+                print(location)
+            print("", flush=True)
 
 def test():
     locationsPatch = LocationsPatch("./belief_pipeline/GH.tsv")
@@ -150,12 +164,14 @@ def test():
     # sentence = "According to Smith, 2024, more people live in Yabonzue, the Tampielim, London, and Benu than in Damsa."
     # sentence = "The Bia River serves as a vital source of water for the residents of Bianouan in eastern Ivory Coast."
     # sentence = "Ivory Coast’s semi-public water distribution company, SODECI, recently shut down its water treatment plant in the area because of the level of pollution in the Bia River."
-    sentence = "According to Smith, 2024 and Jackson, 2022 more people live in Yabonzue, the Tampielim, London, and Benu than in Damsa."
+    # sentence = "According to Smith, 2024 and Jackson, 2022 more people live in Yabonzue, the Tampielim, London, and Benu than in Damsa."
+    # sentence = "We are staying at The Aknac Hotel in Ghana."
+    sentence = "We are staying at the Aknac Hotel in Ghana."
     locations = locationsPatch.patch(sentence)
     for location in locations:
         print(sentence, location)
 
 
 if __name__ == "__main__":
-    # run()
-    test()
+    run()
+    # test()
