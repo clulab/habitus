@@ -105,6 +105,7 @@ class LocationsPatch():
 
     def add_location(self, locations: list[Location], entityWithIndices: TextWithIndices) -> None:
         # NER includes `the` in locations, but the location database file doesn't.
+        # The above sentence is not true, so by removing "the" we could be missing locations.
         # TODO: what should be done if this is not the case?  There are some instances
         # in the database.  Should both be checked?  Yes, they should indeed.
         # However, they were not in the initial pass and we don't want to find locations
@@ -131,7 +132,9 @@ class LocationsPatch():
             entityWithIndicesList = entitiesWithIndices.split(", ")
             for entityWithIndices in entityWithIndicesList:
                 self.add_location(locations, entityWithIndices)
-        # TODO: Change the next line
+        # We need to keep track of multiple, matching locations now.
+        # However, they should have differing ranges, so the set operation is still OK.
+        # It would work if only they could actually be compared to each other.
         return locations # sorted(list(set(locations)))
     
     def patch(self, sentence: str) -> list[Location]:
@@ -147,13 +150,18 @@ def run():
     while True:
         line = sys.stdin.readline().strip()
 
-        with open("debug.txt", "a") as file:
-            print(line, file=file)
-            locations = locationsPatch.patch(line)
-            for location in locations:
-                print(location, file=file)
-                print(location)
-            print("", flush=True)
+        locations = locationsPatch.patch(line)
+        for location in locations:
+            print(location)
+        print("", flush=True)
+
+        # with open("debug.txt", "a") as file:
+        #     print(line, file=file)
+        #     locations = locationsPatch.patch(line)
+        #     for location in locations:
+        #         print(location, file=file)
+        #         print(location)
+        #     print("", flush=True)
 
 def test():
     locationsPatch = LocationsPatch("./belief_pipeline/GH.tsv")
@@ -170,7 +178,10 @@ def test():
     # sentence = "According to Smith, 2024 and Jackson, 2022 more people live in Yabonzue, the Tampielim, London, and Benu than in Damsa."
     # sentence = "We are staying at The Aknac Hotel in Ghana."
     # sentence = "We are staying at the Aknac Hotel in Ghana."
-    sentence = "How many people live in the Volta part of Ghana?"
+    # sentence = "How many people live in the Volta part of Ghana?"
+    # sentence = "We are staying at the Aknac Hotel in Ghana or the Aknac Hotel in Senegal."
+    # sentence = "We are staying at either the Fiesta Royale Hotel in Ghana or the Fiesta Royale Hotel in Senegal."
+    sentence = "We are staying at either The Fiesta Royale Hotel in Ghana or The Fiesta Royale Hotel in Senegal."
     locations = locationsPatch.patch(sentence)
     for location in locations:
         print(sentence, location)
