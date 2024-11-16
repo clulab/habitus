@@ -45,7 +45,7 @@ class TextWithIndices():
 
 
 class Location():
-    def __init__(self, textWithIndices: TextWithIndices, lat: float, lon: float, canonical: str):
+    def __init__(self, textWithIndices: TextWithIndices, lat: float, lon: float, canonical: str, geonameid: str):
         # Make sure indices are reasonable.
         if -1 in textWithIndices.indices:
             print("There is a -1 among the indices!")
@@ -56,9 +56,10 @@ class Location():
         self.lat = lat
         self.lon = lon
         self.canonical = canonical
+        self.geonameid = geonameid
 
     def __str__(self):
-        return f"{self.textWithIndices.text}\t{self.canonical}\t{self.textWithIndices.indices[0]}\t{self.textWithIndices.indices[-1] + 1}\t{self.lat}\t{self.lon}"
+        return f"{self.textWithIndices.text}\t{self.canonical}\t{self.geonameid}\t{self.textWithIndices.indices[0]}\t{self.textWithIndices.indices[-1] + 1}\t{self.lat}\t{self.lon}"
 
 class LocationsPatch():
     def __init__(self, locations_file_name: str) -> None:
@@ -78,9 +79,11 @@ class LocationsPatch():
         alternate_names = locations_data_frame["alternatenames"]
         latitudes = locations_data_frame["latitude"]
         longitudes = locations_data_frame["longitude"]
+        geonameids = locations_data_frame["geonameid"]
         self.names_to_canonical = self.get_names_to_values(names, ascii_names, alternate_names, names)
         self.names_to_latitudes = self.get_names_to_values(names, ascii_names, alternate_names, latitudes)
         self.names_to_longitudes = self.get_names_to_values(names, ascii_names, alternate_names, longitudes)
+        self.names_to_geonameids = self.get_names_to_values(names, ascii_names, alternate_names, geonameids)
         # These are real locations in the ghana locations file from geonames (https://download.geonames.org/export/dump/),
         # but they also happen to be frequent English words, so we exclude them from being identified as locations.
         self.common_words = ["We", "No", "To", "Some"]
@@ -112,7 +115,7 @@ class LocationsPatch():
         # entityWithIndices = entityWithIndices.re_sub("^[Tt]he\s", "")
         entityWithIndices = entityWithIndices.re_sub("^the\s", "")
         if entityWithIndices.text in self.names_to_latitudes and not entityWithIndices.text in self.common_words and entityWithIndices.text[0].isupper():
-            location = Location(entityWithIndices, self.names_to_latitudes[entityWithIndices.text], self.names_to_longitudes[entityWithIndices.text], self.names_to_canonical[entityWithIndices.text])
+            location = Location(entityWithIndices, self.names_to_latitudes[entityWithIndices.text], self.names_to_longitudes[entityWithIndices.text], self.names_to_canonical[entityWithIndices.text], self.names_to_geonameids[entityWithIndices.text])
             locations.append(location)
 
 
@@ -166,7 +169,8 @@ def test():
     # sentence = "Ivory Coast’s semi-public water distribution company, SODECI, recently shut down its water treatment plant in the area because of the level of pollution in the Bia River."
     # sentence = "According to Smith, 2024 and Jackson, 2022 more people live in Yabonzue, the Tampielim, London, and Benu than in Damsa."
     # sentence = "We are staying at The Aknac Hotel in Ghana."
-    sentence = "We are staying at the Aknac Hotel in Ghana."
+    # sentence = "We are staying at the Aknac Hotel in Ghana."
+    sentence = "How many people live in the Volta part of Ghana?"
     locations = locationsPatch.patch(sentence)
     for location in locations:
         print(sentence, location)

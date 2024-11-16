@@ -6,9 +6,9 @@ import org.clulab.utils.Sourcer
 import scala.util.Using
 
 object CheckLocationsApp extends App {
-//  val locationsFileName = "./belief_pipeline/GH.tsv"
+  val locationsFileName = "./belief_pipeline/GH.tsv"
 //  val locationsFileName = "./belief_pipeline/SN.tsv"
-  val locationsFileName = "./belief_pipeline/UG.tsv"
+//  val locationsFileName = "./belief_pipeline/UG.tsv"
   val tsvReader = new TsvReader()
 
   val nameAndAllNamesSeq = Using.resource(Sourcer.sourceFromFilename(locationsFileName)) { source =>
