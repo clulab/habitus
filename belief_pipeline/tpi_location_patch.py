@@ -72,8 +72,8 @@ class LocationsPatch():
         # with index_col=False.
         locations_data_frame = pandas.read_csv(locations_file_name, sep="\t", encoding="utf-8", index_col=False, names=[
             "geonameid", "name", "asciiname", "alternatenames", "latitude", "longitude", "unk1", "unk2", "country_code",
-            "cc2", "unk3", "unk4", "unk5", "unk6", "population", "elevation", "unk7", "timezone", "unk8" #, "notes"
-        ])
+            "cc2", "unk3", "unk4", "unk5", "unk6", "population", "elevation", "unk7", "timezone", "unk8", #, "notes"
+        ], dtype={"geonameid": str}) # geonameid needs to be a string or an integer.  It should not be a float or else -1.0.
         names = locations_data_frame["name"]
         ascii_names = locations_data_frame["asciiname"]
         alternate_names = locations_data_frame["alternatenames"]
@@ -144,7 +144,7 @@ def run():
     sys.stdin.reconfigure(encoding="utf-8")
 
     # Make sure the sentence is from the right dataset
-    locationsPatch = LocationsPatch("./belief_pipeline/GH.tsv")
+    locationsPatch = LocationsPatch("./belief_pipeline/UG.tsv")
 
     # Read input until EOF
     while True:
@@ -164,7 +164,7 @@ def run():
         #     print("", flush=True)
 
 def test():
-    locationsPatch = LocationsPatch("./belief_pipeline/GH.tsv")
+    locationsPatch = LocationsPatch("./belief_pipeline/UG.tsv")
     # sentence = "Where in Ghana is the town of Zugu, for the town of Zugu is unknown to me?" # This only gets the first.
     # sentence = "Lots of people live in Accra when I don't even know where Accra is located." # This also only gets the first.
     # sentence = "Do more people live in Accra or in Trume?" # This gets both.
@@ -181,7 +181,8 @@ def test():
     # sentence = "How many people live in the Volta part of Ghana?"
     # sentence = "We are staying at the Aknac Hotel in Ghana or the Aknac Hotel in Senegal."
     # sentence = "We are staying at either the Fiesta Royale Hotel in Ghana or the Fiesta Royale Hotel in Senegal."
-    sentence = "We are staying at either The Fiesta Royale Hotel in Ghana or The Fiesta Royale Hotel in Senegal."
+    # sentence = "We are staying at either The Fiesta Royale Hotel in Ghana or The Fiesta Royale Hotel in Senegal."
+    sentence = "Lots of people live in Karamoja."
     locations = locationsPatch.patch(sentence)
     for location in locations:
         print(sentence, location)

@@ -26771,60 +26771,60 @@
 12420819	Ripon Falls	Ripon Falls		0.43291	33.19157	H	FLLS	UG		E	33	7732228	8657707	0		1138	Africa/Kampala	2022-01-23	
 12541305	Kisoro Airport	Kisoro Airport	HUKI,KXO	-1.28344	29.71846	S	AIRP	UG		W	43	7874701	8658184	0		1989	Africa/Kampala	2023-06-21	
 12541311	Kajjansi Airfield	Kajjansi Airfield	HUKJ,KJJ	0.20034	32.54994	S	AIRP	UG		C	96	234053	8658010	0		1200	Africa/Kampala	2023-06-21	
-	Achumo	Achumo		2.00736	34.56843														
-	Agili	Agili		2.54961	34.63878														
-	Amboso River	Amboso River																	
-	Bjordal Mine	Bjordal Mine		-1.15	29.8														
-	Bukusu Complex	Bukusu Complex		0.87	34.27056														
-	Busia Tc	Busia Tc		0.4676	34.0905														coordinates for Busia
-	Buteraniro	Buteraniro		0.1202	30.62554														
-	Chilima	Chilima		-1.25991	29.9823														coordinates for the  Kabale district
-	Itega-Manengo	Itega-Manengo		-0.491	30.183														coordinates for the Bushenyi district
-	Kabatola	Kabatola		0.87097	34.27095														coordinates for Bukusu
-	Kacharalum	Kacharalum		2.956	32.8														coordinates for Pader district
-	Kafu River	Kafu River																	
-	Kahengyere	Kahengyere		-0.90494	30.44871														
-	Kakanena	Kakanena		-0.93702	30.30483														coordinates for Ntungamo district
-	Kalokwameri	Kalokwameri		2.05253	34.57341														coordinates for Nabilatuk
-	Kamalera	Kamalera		2.6389	34.64395														coordinates for Moroto district
-	Kamirambuzi	Kamirambuzi		-0.69077	29.87781														Hills, coordinates for Rukungiri district 
-	Kampono	Kampono		-0.5	30.6														coordinates for Mbarara District
-	Kanyambogo	Kanyambogo		-1.8326	31.59554														
-	Karamoja	Karamoja		2.53453	34.66659														coordinates for Moroto town, which the expert stated is considered the regional capital
-	Kasukengo	Kasukengo		-0.5	30.6														coordinates for Masaka district
-	Kazumu	Kazumu		-0.93702	30.30483														coordinates for Ntungamo district
-	Kibalya	Kibalya		0.17255	30.01446														
-	Kirwa	Kirwa		-1.1704	29.67437														
-	Kisai	Kisai		-0.7093	31.41309														coordinates for Rakai district
-	Kitahurira	Kitahurira		-1.11201	29.81967														
-	Kitomi Forest	Kitomi Forest		-1.246389	30.25														coordinates for Kasyoha-Kitomi Central Forest Reserve
-	Kukor	Kukor		2.956	32.8														coordinates for the Pader district
-	Kyanyamuzinda	Kyanyamuzinda		-1.20662	29.68113														coordinates for Kisoro district
-	Lolung-Moruamakale	Lolung-Moruamakale		2.6389	34.64395														coordinates for Moroto district
-	Loyoro Napore	Loyoro Napore		3.56534	33.69348														coordinates for Karenga
-	Lwamwire	Lwamwire		-0.93702	30.30483														coordinates for Ntungamo district
-	Matidi	Matidi		3.26852	33.05337														coordinates for Kitgum Matidi
-	Mbale Estate	Mbale Estate		1.0712	34.175														coordinates for Mbale the town
-	Mpororo	Mpororo		-0.72963	30.82065														
-	Mugyera	Mugyera		-0.4328	30.45239														
-	Murindi	Murindi		-1.22296	29.77341														
-	Mutaka	Mutaka		-1.10319	30.09801														
-	Muti	Muti		-0.3287	30.32488														coordinates for Buhweju district
-	Naam	Naam		2.956	32.8														coordinates for the Pader district
-	Nakobekobe	Nakobekobe		2.00736	34.56843														
-	Namekara Uganda Vermiculite Mine	Namekara Uganda Vermiculite Mine	Namekara Mine,Namekhara 	0.83972	34.25472														
-	Nampeyo	Nampeyo		0	32														
-	Nangalwe	Nangalwe																	
-	Napak Special Area	Napak Special Area		1.93333	34.45														coordinates for Nabilatuk
-	Natopojo	Natopojo		2.54961	34.63878														
-	Nyabakweri	Nyabakweri		-0.93702	30.30483														coordinates for Ntungamo district
-	Nyaituma	Nyaituma		1.47639	31.44056														coordinates for Bulindi
-	Nyinamaherere	Nyinamaherere		-0.93702	30.30483														coordinates for Ntungamo district
-	Okora	Okora		2.956	32.8														coordinates for the Pader district
-	Omwodulum	Omwodulum		2.274	32.953														coordinates for Lira district
-	Parobong	Parobong		2.956	32.8														coordinates for the Pader district
-	Rwakirenzi	Rwakirenzi		-0.93702	30.30483														coordinates for Ntungamo district
-	Rwamanyinya	Rwamanyinya																	
-	Rwenkanga	Rwenkanga		0.83733	31.31765														
-	Sikusi	Sikusi		0.95711	34.33992														
-	Surumbusa	Surumbusa		0.89711	34.25711														
+-6	Achumo	Achumo		2.00736	34.56843														
+-7	Agili	Agili		2.54961	34.63878														
+-8	Amboso River	Amboso River																	
+-9	Bjordal Mine	Bjordal Mine		-1.15	29.8														
+-10	Bukusu Complex	Bukusu Complex		0.87	34.27056														
+-11	Busia Tc	Busia Tc		0.4676	34.0905														coordinates for Busia
+-12	Buteraniro	Buteraniro		0.1202	30.62554														
+-13	Chilima	Chilima		-1.25991	29.9823														coordinates for the  Kabale district
+-14	Itega-Manengo	Itega-Manengo		-0.491	30.183														coordinates for the Bushenyi district
+-15	Kabatola	Kabatola		0.87097	34.27095														coordinates for Bukusu
+-16	Kacharalum	Kacharalum		2.956	32.8														coordinates for Pader district
+-17	Kafu River	Kafu River																	
+-18	Kahengyere	Kahengyere		-0.90494	30.44871														
+-19	Kakanena	Kakanena		-0.93702	30.30483														coordinates for Ntungamo district
+-20	Kalokwameri	Kalokwameri		2.05253	34.57341														coordinates for Nabilatuk
+-21	Kamalera	Kamalera		2.6389	34.64395														coordinates for Moroto district
+-22	Kamirambuzi	Kamirambuzi		-0.69077	29.87781														Hills, coordinates for Rukungiri district 
+-23	Kampono	Kampono		-0.5	30.6														coordinates for Mbarara District
+-24	Kanyambogo	Kanyambogo		-1.8326	31.59554														
+-1	Karamoja	Karamoja		2.53453	34.66659														coordinates for Moroto town, which the expert stated is considered the regional capital
+-25	Kasukengo	Kasukengo		-0.5	30.6														coordinates for Masaka district
+-26	Kazumu	Kazumu		-0.93702	30.30483														coordinates for Ntungamo district
+-5	Kibalya	Kibalya		0.17255	30.01446														
+-2	Kirwa	Kirwa		-1.1704	29.67437														
+-27	Kisai	Kisai		-0.7093	31.41309														coordinates for Rakai district
+-28	Kitahurira	Kitahurira		-1.11201	29.81967														
+-29	Kitomi Forest	Kitomi Forest		-1.246389	30.25														coordinates for Kasyoha-Kitomi Central Forest Reserve
+-30	Kukor	Kukor		2.956	32.8														coordinates for the Pader district
+-31	Kyanyamuzinda	Kyanyamuzinda		-1.20662	29.68113														coordinates for Kisoro district
+-32	Lolung-Moruamakale	Lolung-Moruamakale		2.6389	34.64395														coordinates for Moroto district
+-33	Loyoro Napore	Loyoro Napore		3.56534	33.69348														coordinates for Karenga
+-34	Lwamwire	Lwamwire		-0.93702	30.30483														coordinates for Ntungamo district
+-35	Matidi	Matidi		3.26852	33.05337														coordinates for Kitgum Matidi
+-36	Mbale Estate	Mbale Estate		1.0712	34.175														coordinates for Mbale the town
+-4	Mpororo	Mpororo		-0.72963	30.82065														
+-40	Mugyera	Mugyera		-0.4328	30.45239														
+-41	Murindi	Murindi		-1.22296	29.77341														
+-42	Mutaka	Mutaka		-1.10319	30.09801														
+-43	Muti	Muti		-0.3287	30.32488														coordinates for Buhweju district
+-44	Naam	Naam		2.956	32.8														coordinates for the Pader district
+-45	Nakobekobe	Nakobekobe		2.00736	34.56843														
+-46	Namekara Uganda Vermiculite Mine	Namekara Uganda Vermiculite Mine	Namekara Mine,Namekhara 	0.83972	34.25472														
+-47	Nampeyo	Nampeyo		0	32														
+-48	Nangalwe	Nangalwe																	
+-49	Napak Special Area	Napak Special Area		1.93333	34.45														coordinates for Nabilatuk
+-3	Natopojo	Natopojo		2.54961	34.63878														
+-50	Nyabakweri	Nyabakweri		-0.93702	30.30483														coordinates for Ntungamo district
+-51	Nyaituma	Nyaituma		1.47639	31.44056														coordinates for Bulindi
+-52	Nyinamaherere	Nyinamaherere		-0.93702	30.30483														coordinates for Ntungamo district
+-53	Okora	Okora		2.956	32.8														coordinates for the Pader district
+-54	Omwodulum	Omwodulum		2.274	32.953														coordinates for Lira district
+-55	Parobong	Parobong		2.956	32.8														coordinates for the Pader district
+-56	Rwakirenzi	Rwakirenzi		-0.93702	30.30483														coordinates for Ntungamo district
+-57	Rwamanyinya	Rwamanyinya																	
+-58	Rwenkanga	Rwenkanga		0.83733	31.31765														
+-59	Sikusi	Sikusi		0.95711	34.33992														
+-60	Surumbusa	Surumbusa		0.89711	34.25711														
