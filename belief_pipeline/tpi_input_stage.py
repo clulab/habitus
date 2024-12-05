@@ -1,9 +1,11 @@
-from pandas import DataFrame
+from io import StringIO
 from numbers import Number
+from pandas import DataFrame
 from pipeline import InputStage
 
 import math
 import pandas
+import sys
 
 class TpiInputStage(InputStage):
     def __init__(self, file_name: str) -> None:
@@ -45,8 +47,25 @@ class TpiInputStage(InputStage):
                 print("There is an empty sentence!")
                 data_frame["sentence"][index] = "" # What should be done?
         return data_frame
+    
+    def read(self) -> StringIO:
+        # In Python, the line separator is preserved.
+        nl_count = int(sys.stdin.readline().strip())
+        buffer = StringIO()
+        for i in range(0, nl_count):
+            line = sys.stdin.readline()
+            if i + 1 < nl_count:
+                buffer.write(line)
+            else:
+                # Remove trailing NL from last line.
+                buffer.write(line[:-1])
+        return buffer
 
     def run(self) -> DataFrame:
-        data_frame = self.mk_data_frame(self.file_name)
+        if self.file_name:
+            source = self.file_name
+        else:
+            source = self.read()
+        data_frame = self.mk_data_frame(source)
         # data_frame = data_frame[0:1000] # TODO: remove
         return data_frame

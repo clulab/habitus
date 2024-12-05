@@ -1,7 +1,4 @@
 from pandas import DataFrame
-
-# import os
-
 from pipeline import OutputStage
 
 class PandasOutputStage(OutputStage):
@@ -10,6 +7,15 @@ class PandasOutputStage(OutputStage):
         # if not os.path.exists(file_name):
         #     os.makedirs(file_name) # find the directory it's in, not use the entire file
 
+    def write(self, text):
+        nl_count = text.count("\n") + 1
+        print(str(nl_count))
+        print(text, flush=True)
+
     # keep track of conf_threshold, coref
     def run(self, data_frame: DataFrame) -> None:
-        data_frame.to_csv(self.file_name,  sep="\t", index=False, encoding="utf-8")
+        if self.file_name:
+            data_frame.to_csv(self.file_name,  sep="\t", index=False, encoding="utf-8")
+        else:
+            text = data_frame.to_csv(self.file_name,  sep="\t", index=False, encoding="utf-8")
+            self.write(text)
