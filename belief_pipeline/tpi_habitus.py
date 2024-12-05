@@ -10,28 +10,31 @@ from typing import Tuple
 
 import sys
 
-def get_locations() -> Tuple[str, str]:
+def get_arguments() -> Tuple[str, str, str]:
     argument_parser = ArgumentParser()
     argument_parser.add_argument("-l", "--location", required=True, help="location file name")
+    argument_parser.add_argument("-i", "--input", required=False, help="input file name")
+    argument_parser.add_argument("-o", "--output", required=False, help="output file name")
     args = argument_parser.parse_args()
-    return args.location
+    return (args.location, args.input, args.output)
 
 if __name__ == "__main__":
-    sys.stdin.reconfigure(encoding="utf-8", newline='\n') # just in case!
-    sys.stdout.reconfigure(encoding="utf-8", newline='\n') # just in case!
-
     belief_model_name: str = "maxaalexeeva/belief-classifier_mturk_unmarked-trigger_bert-base-cased_2023-4-26-0-34"
     sentiment_model_name: str = "hriaz/finetuned_beliefs_sentiment_classifier_experiment1"
-    locations_file_name: str = get_locations()
+    locations_file_name, input_file_name, output_file_name = get_arguments()
+    if not input_file_name:
+        sys.stdin.reconfigure(encoding="utf-8", newline='\n') # just in case!
+    if not output_file_name:
+        sys.stdout.reconfigure(encoding="utf-8", newline='\n') # just in case!
     pipeline = Pipeline(
-        TpiInputStage(None),
+        TpiInputStage(input_file_name),
         [
             TpiResolutionStage(),
             TpiBeliefStage(belief_model_name),
             TpiSentimentStage(sentiment_model_name),
             TpiLocationStage(locations_file_name)
         ],
-        PandasOutputStage(None)
+        PandasOutputStage(output_file_name)
     )
 
     while (True):

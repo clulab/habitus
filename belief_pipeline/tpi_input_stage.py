@@ -12,8 +12,8 @@ class TpiInputStage(InputStage):
         super().__init__(".")
         self.file_name = file_name
 
-    def mk_data_frame(self, file_name: str) -> DataFrame:
-        data_frame = pandas.read_csv(self.file_name, sep="\t", encoding="utf-8", na_values=[""], keep_default_na=False, dtype={
+    def mk_data_frame(self, file_name: str, sep: str) -> DataFrame:
+        data_frame = pandas.read_csv(file_name, sep=sep, encoding="utf-8", na_values=[""], keep_default_na=False, dtype={
             "url": str,
             "terms": str,
             "date": str,
@@ -59,13 +59,23 @@ class TpiInputStage(InputStage):
             else:
                 # Remove trailing NL from last line.
                 buffer.write(line[:-1])
-        return buffer
+        value = buffer.getvalue()
+        return StringIO(value)
+    
+    def read2(self) -> StringIO:
+        with open(self.file_name, "r", encoding="utf-8") as file:
+            file_content = file.read()
+        return StringIO(file_content)
 
     def run(self) -> DataFrame:
         if self.file_name:
             source = self.file_name
+            sep = "\t"
+            # source = self.read2()
+            # sep = ","
         else:
             source = self.read()
-        data_frame = self.mk_data_frame(source)
+            sep = ","
+        data_frame = self.mk_data_frame(source, sep)
         # data_frame = data_frame[0:1000] # TODO: remove
         return data_frame
