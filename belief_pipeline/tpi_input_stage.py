@@ -48,12 +48,19 @@ class TpiInputStage(InputStage):
                 data_frame["sentence"][index] = "" # What should be done?
         return data_frame
     
+    def log(self, message: str):
+        with open("input.txt", "a", encoding="utf-8", newline="\n") as file:
+            print(message, file=file)
+
     def read(self) -> StringIO:
         # In Python, the line separator is preserved.
-        nl_count = int(sys.stdin.readline().strip())
+        line = sys.stdin.readline()
+        self.log(line)
+        nl_count = int(line)
         buffer = StringIO()
         for i in range(0, nl_count):
             line = sys.stdin.readline()
+            self.log(line)
             if i + 1 < nl_count:
                 buffer.write(line)
             else:

@@ -1,3 +1,10 @@
+import os
+import sys
+
+print("Keith was here.", file=sys.stderr)
+print("The current directory is ", os.getcwd(), file=sys.stderr)
+
+
 from argparse import ArgumentParser
 from pandas_output_stage import PandasOutputStage
 from pipeline import Pipeline
@@ -12,11 +19,15 @@ import sys
 
 def get_arguments() -> Tuple[str, str, str]:
     argument_parser = ArgumentParser()
-    argument_parser.add_argument("-l", "--location", required=True, help="location file name")
-    argument_parser.add_argument("-i", "--input", required=False, help="input file name")
-    argument_parser.add_argument("-o", "--output", required=False, help="output file name")
+    argument_parser.add_argument("-l", "--location", required=True,  help="location file name")
+    argument_parser.add_argument("-i", "--input",    required=False, help="input file name")
+    argument_parser.add_argument("-o", "--output",   required=False, help="output file name")
     args = argument_parser.parse_args()
     return (args.location, args.input, args.output)
+
+def log(message: str):
+    with open("log.txt", "a", encoding="utf-8", newline="\n") as file:
+        print(message, file=file)
 
 if __name__ == "__main__":
     belief_model_name: str = "maxaalexeeva/belief-classifier_mturk_unmarked-trigger_bert-base-cased_2023-4-26-0-34"
@@ -26,6 +37,7 @@ if __name__ == "__main__":
         sys.stdin.reconfigure(encoding="utf-8", newline='\n') # just in case!
     if not output_file_name:
         sys.stdout.reconfigure(encoding="utf-8", newline='\n') # just in case!
+    # TODO: add a way to quiet the output, i.e., to suppress progress bars
     pipeline = Pipeline(
         TpiInputStage(input_file_name),
         [
@@ -37,5 +49,6 @@ if __name__ == "__main__":
         PandasOutputStage(output_file_name)
     )
 
+    log("The program started.")
     while (True):
         pipeline.run()
