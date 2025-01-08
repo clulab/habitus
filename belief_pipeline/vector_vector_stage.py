@@ -25,4 +25,5 @@ class VectorVectorStage(InnerStage):
     def run(self, data_frame: DataFrame) -> DataFrame:
         vectors = self.mk_vectors(data_frame)
         data_frame["vector"] = vectors
+        data_frame.drop(columns=["sentence"], inplace=True)
         return data_frame
