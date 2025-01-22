@@ -3,6 +3,7 @@ from pipeline import InnerStage
 from tqdm import tqdm
 
 import itertools
+import os
 import pandas
 import re
 import spacy
@@ -68,6 +69,9 @@ class TpiLocationStage(InnerStage):
         # message on the console about lost data, probably from the extra column that we're not using here:
         # ParserWarning: Length of header or names does not match length of data. This leads to a loss of data
         # with index_col=False.
+        self.log("locations_file_name " + locations_file_name)
+        self.log("working directory " + os.getcwd())
+
         locations_data_frame = pandas.read_csv(locations_file_name, sep="\t", encoding="utf-8", index_col=False, names=[
             "geonameid", "name", "asciiname", "alternatenames", "latitude", "longitude", "unk1", "unk2", "country_code",
             "cc2", "unk3", "unk4", "unk5", "unk6", "population", "elevation", "unk7", "timezone", "unk8" #, "notes"
