@@ -51,10 +51,6 @@ class TpiInputStage(InputStage):
                 print("There is an empty sentence!")
                 data_frame["sentence"][index] = "" # What should be done?
         return data_frame
-    
-    def log(self, message: str):
-        with open("input.txt", "a", encoding="utf-8", newline="\n") as file:
-            print(message, file=file)
 
     def read(self) -> StringIO:
         # In Python, the line separator is preserved.

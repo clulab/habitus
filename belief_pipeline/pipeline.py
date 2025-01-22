@@ -5,6 +5,13 @@ class PipelineStage():
     def _init__(self) -> None:
         pass
 
+    def log(self, message: str):
+        self.logToFile("log.txt", message)
+
+    def logToFile(self, filename: str, message: str):
+        with open(filename, "a", encoding="utf-8", newline="\n") as file:
+            print(message, file=file)
+
 class OuterStage(PipelineStage):
     def __init__(self) -> None:
         super().__init__()
@@ -17,6 +24,9 @@ class InputStage(OuterStage):
     def run(self) -> DataFrame:
         pass
 
+    def log(self, message: str):
+        self.logToFile("input.txt", message)
+
 class OutputStage(OuterStage):
     def __init__(self, file_name: str) -> None:
         super().__init__()
@@ -24,6 +34,9 @@ class OutputStage(OuterStage):
 
     def run(self, data_frame: DataFrame):
         pass
+
+    def log(self, message: str):
+        self.logToFile("output.txt", message)
 
 class InnerStage(PipelineStage):
     def __init__(self) -> None:
