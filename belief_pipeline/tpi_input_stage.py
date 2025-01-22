@@ -38,10 +38,14 @@ class TpiInputStage(InputStage):
             "effectText": str,
             "prevSentence": str
         })
-        data_frame["prevSentence"].fillna("", inplace=True)
+        # data_frame["prevSentence"].fillna("", inplace=True)
+        # data_frame["prevSentence"] = data_frame["prevSentence"].fillna("")
+        data_frame.fillna({"prevSentence": ""}, inplace=True)
         # Sometimes a sentence can be trimmed to empty and considered nan.
         # This is because of a mismatch in characters considered trimmable.
-        data_frame["sentence"].fillna("", inplace=True)
+        # data_frame["sentence"].fillna("", inplace=True)
+        # data_frame["sentence"] = data_frame["sentence"].fillna("")
+        data_frame.fillna({"sentence": ""}, inplace=True)
         for index, sentence in enumerate(data_frame["sentence"]):
             if sentence == "": # or (isinstance(sentence, Number) and math.isnan(sentence)):
                 print("There is an empty sentence!")
