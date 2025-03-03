@@ -64,7 +64,21 @@ class CorpusArticleScraper(val corpus: PageCorpus) {
     new MiningArticleScraper(),
     new PdfFileArticleScraper(),
     new MailFileArticleScraper(),
-    new InterviewFileArticleScraper()
+    new InterviewFileArticleScraper(),
+    new NorthPressAgencyArticleScraper(),
+    new SyriaDirectArticleScraper(),
+    new SanaArticleScraper(),
+    new SyrianObserverArticleScraper(),
+    new EnabBaladiArticleScraper(),
+    new SyriaReportArticleScraper(),
+    new SyriaTimesArticleScraper(),
+    new CeobsArticleScraper(),
+    new CoarGlobalArticleScraper(),
+    new GulfTimesArticleScraper(),
+    new ZamanaArticleScraper(),
+    new WorldHungerArticleScraper(),
+    new ABCArticleScraper(),
+    new MercyCorpsArticleScraper()
   )
 
   def getPageScraper(page: Page): PageArticleScraper = {

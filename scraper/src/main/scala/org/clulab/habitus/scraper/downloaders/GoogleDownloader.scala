@@ -18,7 +18,7 @@ import scala.util.{Try, Using}
 class GoogleDownloader extends GetPageDownloader(GoogleDomain) {
   val (searchEngineId, apiKey) = {
     val properties = new Properties()
-    Using.resource(FileUtils.newBufferedInputStream("../google/google.properties")) { bufferedInputStream =>
+    Using.resource(FileUtils.newBufferedInputStream("/Users/aaron/Vietnam/habitus/scraper/corpora/google/google.properties")) { bufferedInputStream =>
       properties.load(bufferedInputStream)
     }
 
